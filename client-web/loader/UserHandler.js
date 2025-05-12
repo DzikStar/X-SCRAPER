@@ -185,19 +185,19 @@
                         A = D(E),
                         C = (S && S.generalContext) || void 0,
                         Z = e.displayMode,
-                        O = (0, u.hC)("super_follow_android_web_subscription_enabled") && Z === a.Z.SubscribableUser ? l.dk : l.ET,
-                        g = s || O,
-                        T = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
+                        g = (0, u.hC)("super_follow_android_web_subscription_enabled") && Z === a.Z.SubscribableUser ? l.dk : l.ET,
+                        O = s || g,
+                        L = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
                     (0, c.q)(() => {
-                        if ("WhoToFollow" === T) {
+                        if ("WhoToFollow" === L) {
                             const e = I ? [n.Z.getUserItem(I)] : [];
                             I?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : I?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : I?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
                         }
                     });
-                    const L = d.useCallback(() => {
+                    const T = d.useCallback(() => {
                         r({ entry: i, triggerName: m.K.ON_FOLLOW });
                     }, [r, i]);
-                    return d.createElement(l.Z9, { cellClickable: t, decoration: g, displayMode: Z, isConcise: p, onClick: w, onFollowClick: L, promotedContent: A, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: C, style: p && _.isCarouselItem, userId: k, withFollowsYou: P, withLink: v });
+                    return d.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: Z, isConcise: p, onClick: w, onFollowClick: T, promotedContent: A, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: C, style: p && _.isCarouselItem, userId: k, withFollowsYou: P, withLink: v });
                 },
                 _ = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
                 I = M(d.memo(y)),
@@ -600,6 +600,19 @@
             s.metadata = { width: 24, height: 24 };
             const d = s;
         },
+        155353: (e, o, r) => {
+            r.r(o), r.d(o, { default: () => d });
+            var t = r(202784),
+                n = r(890601),
+                a = r(783427),
+                l = r(347101);
+            const s = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const d = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.d57e90ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.772fad7a.js.map

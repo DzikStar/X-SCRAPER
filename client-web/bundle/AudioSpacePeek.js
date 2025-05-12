@@ -814,6 +814,19 @@
             l.metadata = { width: 24, height: 24 };
             const d = l;
         },
+        155353: (e, o, t) => {
+            t.r(o), t.d(o, { default: () => d });
+            var r = t(202784),
+                n = t(890601),
+                a = t(783427),
+                s = t(347101);
+            const l = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const d = l;
+        },
         662678: (e, o, t) => {
             t.d(o, { G: () => n, Z: () => r });
             t(136728);
@@ -840,4 +853,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.544030fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.17e8a94a.js.map

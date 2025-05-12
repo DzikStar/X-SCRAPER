@@ -69,7 +69,7 @@
                 D = a(980407),
                 O = a(757700),
                 U = a(253493),
-                R = a(844907),
+                R = a(246134),
                 N = a(569999),
                 H = a(874111),
                 V = a(967934),
@@ -806,7 +806,7 @@
                 u = a(980407),
                 m = a(757700),
                 p = a(253493),
-                h = a(844907),
+                h = a(246134),
                 y = a(444677),
                 E = a(443781),
                 f = a(231035),
@@ -896,4 +896,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-dee3c9bb.16677dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-dee3c9bb.a00da63a.js.map

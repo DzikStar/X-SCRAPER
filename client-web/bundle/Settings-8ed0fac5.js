@@ -82,23 +82,23 @@
             const p = (0, d.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.10"),
-                            a.e("icons.21"),
-                            a.e("icons.16"),
-                            a.e("icons.1"),
-                            a.e("icons.19"),
-                            a.e("icons.0"),
+                            a.e("icons.7"),
                             a.e("icons.8"),
-                            a.e("icons.23"),
-                            a.e("icons.2"),
+                            a.e("icons.15"),
+                            a.e("icons.3"),
+                            a.e("icons.24"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.7"),
                             a.e("icons.9"),
-                            a.e("icons.15"),
-                            a.e("icons.24"),
-                            a.e("icons.3"),
-                            a.e("icons.28"),
+                            a.e("icons.22"),
+                            a.e("icons.12"),
+                            a.e("icons.5"),
+                            a.e("icons.6"),
+                            a.e("icons.14"),
+                            a.e("icons.18"),
+                            a.e("icons.2"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -109,12 +109,12 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.26"),
-                            a.e("icons.4"),
-                            a.e("icons.13"),
-                            a.e("icons.18"),
-                            a.e("icons.25"),
-                            a.e("icons.29"),
+                            a.e("icons.1"),
+                            a.e("icons.17"),
+                            a.e("icons.28"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -145,7 +145,7 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -195,9 +195,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -345,8 +343,8 @@
                 v = h().e3719c16,
                 I = h().b833bcde,
                 T = h().d5b646be,
-                B = h().jfe6a3a0,
-                x = h().add55c98,
+                x = h().jfe6a3a0,
+                B = h().add55c98,
                 N = h().e8c72272,
                 L = h().dba2cdd2,
                 R = h().d070244e,
@@ -388,7 +386,7 @@
                         b = window.matchMedia && window.matchMedia("(prefers-reduced-motion)").matches,
                         h = this._showAltTextPromptPreferenceSetting,
                         S = l ?? (0, f.i)();
-                    return n.createElement(D.Z, null, n.createElement(A.Z, { location: o, screenType: "secondaryDetail", title: v }, n.createElement(r.Z, { testID: P }, n.createElement(i.Z, { description: I }), n.createElement(s.Z, { text: T }), n.createElement(c.Z, { checked: a, helpText: L, label: N, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: B }), n.createElement(c.Z, { checked: d || b, disabled: b, helpText: b ? F : O, label: R, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: y.Z[S], disabled: t, label: V, link: "/settings/autoplay" })) : null, h ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: x }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === g.f.Prompt, helpText: H, label: z, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: U }), n.createElement(m.b, { label: G, link: j }))));
+                    return n.createElement(D.Z, null, n.createElement(A.Z, { location: o, screenType: "secondaryDetail", title: v }, n.createElement(r.Z, { testID: P }, n.createElement(i.Z, { description: I }), n.createElement(s.Z, { text: T }), n.createElement(c.Z, { checked: a, helpText: L, label: N, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: x }), n.createElement(c.Z, { checked: d || b, disabled: b, helpText: b ? F : O, label: R, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: y.Z[S], disabled: t, label: V, link: "/settings/autoplay" })) : null, h ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: B }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === g.f.Prompt, helpText: H, label: z, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: U }), n.createElement(m.b, { label: G, link: j }))));
                 }
             }
             W.contextType = S.rC;
@@ -560,8 +558,8 @@
                     .withAnalytics({ page: "settings", section: "your_twitter_data", component: "download_data" }),
                 I = s().f56af9cc,
                 T = s().b2ed92c4,
-                B = s().ce5d2c46,
-                x = s().bed6a87c,
+                x = s().ce5d2c46,
+                B = s().bed6a87c,
                 N = s().b24b4768,
                 L = s().a0c3f812,
                 R = s().ba2e82a1,
@@ -593,7 +591,7 @@
                     return n.createElement(_.Z, { location: a, title: I }, n.createElement(k.Z, { fetch: e, fetchStatus: t, renderChildren: this._render }));
                 }
                 _renderEmptyState() {
-                    return n.createElement(r.Z, { style: U.emptyState }, n.createElement(o.ZP, { size: "title4" }, x), n.createElement(o.ZP, { color: "gray700", style: U.emptyStateDescription }, L), n.createElement(d.ZP, { link: "/settings/download_your_data", size: "small", style: m.Z.narrowButton, type: "brandFilled" }, N));
+                    return n.createElement(r.Z, { style: U.emptyState }, n.createElement(o.ZP, { size: "title4" }, B), n.createElement(o.ZP, { color: "gray700", style: U.emptyStateDescription }, L), n.createElement(d.ZP, { link: "/settings/download_your_data", size: "small", style: m.Z.narrowButton, type: "brandFilled" }, N));
                 }
                 _renderDownloadButtons(e, t, a, d) {
                     const l = a + 1,
@@ -602,7 +600,7 @@
                     return n.createElement(r.Z, { key: `${l}`, style: [m.Z.narrowButtonRow, m.Z.bottomBorder, m.Z.labelContainer] }, n.createElement(r.Z, null, n.createElement(o.ZP, { weight: "bold" }, H({ currentIndex: l, count: i })), e.generated ? n.createElement(o.ZP, { color: "gray700" }, O({ date: R(new Date(e.generated)) })) : null, e.expires ? n.createElement(o.ZP, { color: "gray700" }, F({ date: R(new Date(e.expires)) })) : null, t.size_b ? n.createElement(o.ZP, { color: "gray700" }, z({ size: Z.getSizeLabel(t.size_b) })) : null), n.createElement(Z, { disabled: !s, onConfirm: this._handleConfirm(t), url: t }));
                 }
                 _renderUnavailableButton(e) {
-                    return n.createElement(r.Z, { style: [m.Z.narrowButtonRow, m.Z.bottomBorder, m.Z.labelContainer] }, n.createElement(o.ZP, { weight: "bold" }, H({ currentIndex: 1, count: 1 })), n.createElement(d.ZP, { disabled: !0, size: "small", style: m.Z.narrowButton, type: "brandFilled" }, "INPROGRESS" === e.status ? T : B));
+                    return n.createElement(r.Z, { style: [m.Z.narrowButtonRow, m.Z.bottomBorder, m.Z.labelContainer] }, n.createElement(o.ZP, { weight: "bold" }, H({ currentIndex: 1, count: 1 })), n.createElement(d.ZP, { disabled: !0, size: "small", style: m.Z.narrowButton, type: "brandFilled" }, "INPROGRESS" === e.status ? T : x));
                 }
             }
             V.contextType = c.rC;
@@ -826,8 +824,8 @@
                 "setting" === a ? e.push({ ...n, type: "setting" }) : "setting_group" === a && e.push({ ...n, type: "setting_group" });
             }
             const T = b().d94f12b6,
-                B = b().b92a21d9,
-                x = b().c170a564,
+                x = b().b92a21d9,
+                B = b().c170a564,
                 N = b().ba8f6f82,
                 L = { component: "search", element: "result" },
                 R = 500,
@@ -901,7 +899,7 @@
                     },
                     onQueryChange: H,
                     placeholder: N,
-                    renderEmptyState: ({ style: e }) => (f ? n.createElement(Z.Z, { header: B({ query: i }), message: x, style: e }) : n.createElement(o.Z, { style: [e, z.emptyState] }, n.createElement(c.ZP, { align: "center", color: "gray700" }, T))),
+                    renderEmptyState: ({ style: e }) => (f ? n.createElement(Z.Z, { header: x({ query: i }), message: B, style: e }) : n.createElement(o.Z, { style: [e, z.emptyState] }, n.createElement(c.ZP, { align: "center", color: "gray700" }, T))),
                     rounded: !0,
                     shouldRenderEmptyState: t && (!f || 0 === m.length),
                     source: P._4.SearchBox,
@@ -1018,14 +1016,14 @@
                         return (0, K.s)(t);
                     },
                     I = () => !!e.viewerUser,
-                    { fetchStatus: T, isDelegate: B, location: x } = e;
+                    { fetchStatus: T, isDelegate: x, location: B } = e;
                 return n.createElement(
                     f.Z,
                     { locationKey: "settingsRoot" },
                     n.createElement(
                         X.Z,
                         {
-                            location: x,
+                            location: B,
                             onBackClick: () => {
                                 const { history: t } = e;
                                 a ? d(!1) : t.goBack();
@@ -1039,7 +1037,7 @@
                                   onRequestRetry: () => {
                                       e.fetchPreferencesIfNeeded().catch(e.createLocalApiErrorHandler());
                                   },
-                                  render: t.viewerUserId ? (B ? () => n.createElement(n.Fragment, null, a ? null : n.createElement(o.Z, { role: "tablist" }, "Admin" === b && n.createElement(S.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }))) : () => n.createElement(n.Fragment, null, A(), a ? null : n.createElement(o.Z, { role: "tablist" }, n.createElement(S.Z, { label: me, link: "/settings/account", testID: ee.accountLink }), M(l), n.createElement(S.Z, { label: Ee, link: "/settings/monetization" }), k(), C(), n.createElement(S.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }), n.createElement(S.Z, { label: ne, link: "/settings/privacy_and_safety", testID: ee.privacyAndSafetyLink }), P(), n.createElement(S.Z, { label: de, link: "/settings/notifications", testID: ee.notificationsLink }), n.createElement(S.Z, { label: De, link: "/settings/accessibility_display_and_languages", testID: ee.accessibilityLink }), _(), n.createElement(S.Z, { label: ge, link: "/settings/about", testID: ee.aboutLink }), n.createElement(i.Z, { label: te, link: Me, testID: ee.helpCenterLink }), Z()))) : p,
+                                  render: t.viewerUserId ? (x ? () => n.createElement(n.Fragment, null, a ? null : n.createElement(o.Z, { role: "tablist" }, "Admin" === b && n.createElement(S.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }))) : () => n.createElement(n.Fragment, null, A(), a ? null : n.createElement(o.Z, { role: "tablist" }, n.createElement(S.Z, { label: me, link: "/settings/account", testID: ee.accountLink }), M(l), n.createElement(S.Z, { label: Ee, link: "/settings/monetization" }), k(), C(), n.createElement(S.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }), n.createElement(S.Z, { label: ne, link: "/settings/privacy_and_safety", testID: ee.privacyAndSafetyLink }), P(), n.createElement(S.Z, { label: de, link: "/settings/notifications", testID: ee.notificationsLink }), n.createElement(S.Z, { label: De, link: "/settings/accessibility_display_and_languages", testID: ee.accessibilityLink }), _(), n.createElement(S.Z, { label: ge, link: "/settings/about", testID: ee.aboutLink }), n.createElement(i.Z, { label: te, link: Me, testID: ee.helpCenterLink }), Z()))) : p,
                               })
                             : p(),
                     ),
@@ -1055,4 +1053,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-8ed0fac5.7141dc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-8ed0fac5.4427569a.js.map

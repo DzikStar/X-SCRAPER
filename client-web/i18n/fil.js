@@ -281,7 +281,7 @@
                 i("edf7f57e", "Maging verified para sa mga naka-boost na reply, analytics, pagba-browse na walang ads, at marami pang iba. I-upgrade ang profile mo ngayon."),
                 i("ba920d68", "I-boost ang influence mo gamit ang verification"),
                 i("ib79d0c2", "I-unlock ang mga feature ng VIP: i-verify ang account mo"),
-                i("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                i("c0d3bd82", "Nag-advertise ka sa X, pero wala kang subscription sa Mga Beripikadong Organisasyon"),
                 i("d7836d1e", "Mag-subscribe para makakuha ng hanggang $12,000 na libreng ad credit, gold verification, VIP support, at isang suite ng mga tool para sa pagpapalago."),
                 i("f528e369", function (a) {
                     return "Mag-subscribe sa " + a.tier + " para sumulat ng sarili mong Mga Article";
@@ -1283,7 +1283,7 @@
                     return 'Naghahanap para sa **"' + a.query + '"**';
                 }),
                 i("i2e0f4d7", function (a) {
-                    return "Browsing " + a.url + " for " + a.query;
+                    return "Nagba-browse sa " + a.url + " para sa " + a.query;
                 }),
                 i("acb9b845", function (a) {
                     return "Nagba-browse sa " + a.url + ' para sa **"' + a.query + '"**';
@@ -1292,7 +1292,7 @@
                     return "Naghahanap ng mga post ni @" + a.username;
                 }),
                 i("f7d9cfb9", function (a) {
-                    return "Searching posts by @" + a.username + " for " + a.query;
+                    return "Naghahanap ng mga post ni @" + a.username + " para sa " + a.query;
                 }),
                 i("bec7eb11", function (a) {
                     return "Naghahanap ng mga post ni @" + a.username + ' para sa **"' + a.query + '"**';
@@ -4327,10 +4327,10 @@
                 i("b52484b6", "Naghahanap..."),
                 i("a4d9dbfa", "Mga Pananaw"),
                 i("ib1c5475", function (a) {
-                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                    return "Nag-isip sa loob ng " + a.minutes + "m " + a.seconds + "s";
                 }),
                 i("a15d62db", function (a) {
-                    return "Thought for " + a.seconds + "s";
+                    return "Nag-isip sa loob ng " + a.seconds + "s";
                 }),
                 i("d7cb5408", "Mga nauugnay na Web Page"),
                 i("aa7c96bb", function (a) {
@@ -13229,4 +13229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.c3732eda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.5c4cf31a.js.map

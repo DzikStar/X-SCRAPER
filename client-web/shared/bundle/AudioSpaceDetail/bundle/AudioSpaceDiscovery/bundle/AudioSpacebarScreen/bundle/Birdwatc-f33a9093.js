@@ -103,7 +103,7 @@
                     Promise.all([
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.15"),
+                        r.e("icons.18"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -161,7 +161,7 @@
                     Promise.all([
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.15"),
+                        r.e("icons.18"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -476,4 +476,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.c8c0386a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.93e4f64a.js.map

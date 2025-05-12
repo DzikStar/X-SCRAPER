@@ -280,7 +280,7 @@
                 t("edf7f57e", "Bli verifisert for å få svarfremming, statistikk, en annonsefri brukeropplevelse og mye mer. Oppgrader profilen din nå."),
                 t("ba920d68", "Øk innflytelsen din med verifisering"),
                 t("ib79d0c2", "Få VIP-funksjoner ved å verifisere kontoen din"),
-                t("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                t("c0d3bd82", "Du har annonsert på X, men abonnerer ikke på Verifiserte organisasjoner"),
                 t("d7836d1e", "Abonner for å få opptil $ 12 000 i gratis annonsekreditt, gullverifisering, VIP-brukerstøtte og en rekke vekstfremmende verktøy."),
                 t("f528e369", function (e) {
                     return "Abonner på " + e.tier + " for å skrive dine egne artikler";
@@ -1282,7 +1282,7 @@
                     return "Søker etter **«" + e.query + "»**";
                 }),
                 t("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Slår opp " + e.url + " for " + e.query;
                 }),
                 t("acb9b845", function (e) {
                     return "Slår opp " + e.url + " for **«" + e.query + "»**";
@@ -1291,7 +1291,7 @@
                     return "Søker etter innlegg av @" + e.username;
                 }),
                 t("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Søker etter innlegg av @" + e.username + " for " + e.query;
                 }),
                 t("bec7eb11", function (e) {
                     return "Søker etter innlegg av @" + e.username + " for **«" + e.query + "»**";
@@ -4326,10 +4326,10 @@
                 t("b52484b6", "Søker …"),
                 t("a4d9dbfa", "Tanker"),
                 t("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Tenkte i " + e.minutes + " m " + e.seconds + " s";
                 }),
                 t("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Tenkte i " + e.seconds + " s";
                 }),
                 t("d7cb5408", "Relevante nettsider"),
                 t("aa7c96bb", function (e) {
@@ -7060,14 +7060,14 @@
                 t("f0ad5cc8", "år"),
                 t("a0dc6e4c", "Ikke tilgjengelig nå"),
                 t("jd8b2e66", "Abonner og betal"),
-                t("ca784c0c", "Subscribe & pay with Apple"),
+                t("ca784c0c", "Abonner og betal med Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                t("afd61c76", "Or, save up to 30%"),
+                t("afd61c76", "Eller spar opptil 30 %"),
                 t("i7fbacc4", "Bytt mellom de tilgjengelige abonnementsnivåene"),
                 t("c9cc122b", function (e) {
                     return e.feature + " er inkludert i " + e.title;
@@ -13215,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.cc02da2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.5a77768a.js.map

@@ -126,9 +126,7 @@
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -180,9 +178,7 @@
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -252,9 +248,7 @@
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -305,7 +299,7 @@
             const w = u().fbf83158,
                 A = u().jadeb4da,
                 f = u().bce3726a,
-                p = ({ entryPoint: e, originProduct: d }) => {
+                y = ({ entryPoint: e, originProduct: d }) => {
                     const a = (0, m.Z)(),
                         { origin: s } = D.ZP.get(),
                         t = (0, h.Z)({ returnUrl: `${s}/i/profile`, originProduct: d }),
@@ -318,12 +312,12 @@
                     }, [t, a, u, e]);
                     return n.createElement(r.Z, { style: k.cardBlock, testID: "paymentCardBlock" }, n.createElement(r.Z, { style: k.inner }, n.createElement(o.ZP, { size: "headline1", style: k.heading, weight: "heavy" }, n.createElement(i.default, { style: k.icon, testID: "errorIcon" }), w), n.createElement(o.ZP, { size: "body", style: k.subheading }, A), n.createElement(l.ZP, { onClick: c, style: k.button, type: "primaryFilled" }, f)));
                 },
-                y = ({ entryPoint: e }) => {
+                p = ({ entryPoint: e }) => {
                     const { featureSwitches: d } = (0, c.QZ)(),
                         { hasPremiumPaymentFailure: a, hasVerifiedOrgPaymentFailure: o } = (0, M.Z)(["VerifiedOrganization", "Premium"]);
-                    return (o && d.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (a && d.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? n.createElement(r.Z, { style: k.paddedContainer, testID: "paymentCardView" }, n.createElement(p, { entryPoint: e, originProduct: o ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
+                    return (o && d.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (a && d.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? n.createElement(r.Z, { style: k.paddedContainer, testID: "paymentCardView" }, n.createElement(y, { entryPoint: e, originProduct: o ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
                 },
-                g = ({ entryPoint: e }) => n.createElement(b.H, { errorConfig: { context: "payment_alert_card" } }, n.createElement(y, { entryPoint: e })),
+                g = ({ entryPoint: e }) => n.createElement(b.H, { errorConfig: { context: "payment_alert_card" } }, n.createElement(p, { entryPoint: e })),
                 k = s.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.red0, borderColor: e.colors.red100, borderWidth: "1px", borderRadius: e.borderRadii.medium, overflow: "hidden" }, inner: { padding: e.spaces.space16, maxWidth: "100%", gap: e.spaces.space8 }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { marginBottom: e.spaces.space8 }, subheading: { marginBottom: e.spaces.space8 }, icon: { color: s.default.theme.colors.red500, marginEnd: e.spaces.space4 }, paddedContainer: { paddingBottom: e.spaces.space16 } })),
                 I = n.memo(g);
         },
@@ -404,13 +398,13 @@
                 w = (a(136728), a(107267)),
                 A = a(530732),
                 f = a(992942),
-                p = a(823161),
-                y = a(366635),
+                y = a(823161),
+                p = a(366635),
                 g = a(451051),
                 k = a(379990);
             const I = u().ic1e826e,
                 P = ({ isFocused: e, isHovered: d, isPressed: a, onPress: r, style: l }) => n.createElement(o.Z, { "aria-label": I, onPress: r }, n.createElement(k.Z, { isFocused: e, isHovered: d, isPressed: a, style: l })),
-                S = ({ tweet: e }) => {
+                N = ({ tweet: e }) => {
                     const d = n.useRef(),
                         a = (0, w.useHistory)(),
                         r = n.useCallback(() => {
@@ -421,14 +415,14 @@
                     return l
                         ? n.createElement(
                               o.Z,
-                              { style: N.container },
-                              n.createElement(A.Z, { "aria-label": l.ext_alt_text, onClick: r, ref: d, role: "link", style: N.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: d, isPressed: a }) => n.createElement(n.Fragment, null, n.createElement(f.Z, { "aria-label": l?.ext_alt_text, role: "img", source: l?.media_url_https, style: N.backgroundImage }), n.createElement(o.Z, { style: N.innerContentContainer }, n.createElement(P, { isFocused: e, isHovered: d, isPressed: a, onPress: r, style: N.button })))),
-                              n.createElement(o.Z, { style: N.userRow }, n.createElement(p.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: N.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), n.createElement(y.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
+                              { style: S.container },
+                              n.createElement(A.Z, { "aria-label": l.ext_alt_text, onClick: r, ref: d, role: "link", style: S.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: d, isPressed: a }) => n.createElement(n.Fragment, null, n.createElement(f.Z, { "aria-label": l?.ext_alt_text, role: "img", source: l?.media_url_https, style: S.backgroundImage }), n.createElement(o.Z, { style: S.innerContentContainer }, n.createElement(P, { isFocused: e, isHovered: d, isPressed: a, onPress: r, style: S.button })))),
+                              n.createElement(o.Z, { style: S.userRow }, n.createElement(y.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: S.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), n.createElement(p.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
                               n.createElement(o.Z, null, n.createElement(g.Z, { color: "gray700", displayTextRange: e?.display_text_range, isCondensed: !0, numberOfLines: 2, size: "subtext2", text: e?.text })),
                           )
                         : null;
                 },
-                N = s.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
+                S = s.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
                 C = u().fce9ecce,
                 R = () => {
                     const e = (0, b.I0)(),
@@ -447,7 +441,7 @@
                                     .slice(0, A) || [],
                             [A, d?.content],
                         ),
-                        p = n.useCallback(
+                        y = n.useCallback(
                             () =>
                                 n.createElement(
                                     o.Z,
@@ -456,7 +450,7 @@
                                     n.createElement(
                                         o.Z,
                                         { style: [T.row, w && T.rowExpanded] },
-                                        f.map((e) => n.createElement(S, { key: e.id_str, tweet: e })),
+                                        f.map((e) => n.createElement(N, { key: e.id_str, tweet: e })),
                                     ),
                                 ),
                             [f, w],
@@ -470,7 +464,7 @@
                             onRequestRetry: function () {
                                 e((0, m.L8)());
                             },
-                            render: p,
+                            render: y,
                         })
                     );
                 },
@@ -489,7 +483,7 @@
                     Promise.all([
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.15"),
+                        a.e("icons.18"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -543,9 +537,7 @@
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -636,4 +628,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.1abe9f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.2fd7100a.js.map

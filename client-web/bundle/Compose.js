@@ -5,8 +5,8 @@
         625661: (e, t, i) => {
             i.d(t, { ZP: () => h });
             var a = i(202784),
-                r = i(614983),
-                o = i.n(r),
+                o = i(614983),
+                r = i.n(o),
                 n = i(325686),
                 s = i(370006),
                 d = i(786998),
@@ -20,7 +20,7 @@
                     super(...e),
                         (this._handleBackClick = () => {
                             const { history: e, onBackClick: t } = this.props;
-                            o()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
+                            r()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
                         }),
                         (this.goBack = () => {
                             const { backLocation: e, history: t } = this.props;
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: r, hideBackButton: o, isFullWidth: n, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: b, secondaryBar: m, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: C, withWideContainer: E } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: o, hideBackButton: r, isFullWidth: n, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: b, secondaryBar: m, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: C, withWideContainer: E } = this.props,
                         { isModal: D } = this.context,
-                        v = o ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        v = r ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         A = (function (e, t, i) {
                             return e && !(t && i);
                         })(!!C, D, !!m);
-                    return a.createElement(a.Fragment, null, a.createElement(d.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: l, leftControl: v, middleControl: h, position: u(p, D, r), rightControl: b, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: A, withWideContainer: E }), m || null);
+                    return a.createElement(a.Fragment, null, a.createElement(d.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: l, leftControl: v, middleControl: h, position: u(p, D, o), rightControl: b, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: A, withWideContainer: E }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -48,8 +48,8 @@
         980407: (e, t, i) => {
             i.d(t, { Z: () => m, w: () => p });
             var a = i(202784),
-                r = i(325686),
-                o = i(108362),
+                o = i(325686),
+                r = i(108362),
                 n = i(386802),
                 s = i(392237),
                 d = i(652904),
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: o, centerTitle: n, hideBackButton: s, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: m, rightControl: S, secondaryBar: f, subtitle: g, title: y } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: r, centerTitle: n, hideBackButton: s, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: m, rightControl: S, secondaryBar: f, subtitle: g, title: y } = this.props,
                                 { isModal: _ } = this.context;
-                            return a.createElement(r.Z, { style: _ ? [b.childViewAppBarRoot, b.appBarZindex] : b.appBarZindex }, a.createElement(c.ZP, { backButtonType: i || (_ ? "close" : "back"), backLocation: o, centerTitle: n, fixed: !_, hideBackButton: s, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: m, ref: e, rightControl: S, secondaryBar: f, style: [_ && b.appBarModal, t], subtitle: g, title: y, titleDomId: l.Q_ }));
+                            return a.createElement(o.Z, { style: _ ? [b.childViewAppBarRoot, b.appBarZindex] : b.appBarZindex }, a.createElement(c.ZP, { backButtonType: i || (_ ? "close" : "back"), backLocation: r, centerTitle: n, fixed: !_, hideBackButton: s, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: m, ref: e, rightControl: S, secondaryBar: f, style: [_ && b.appBarModal, t], subtitle: g, title: y, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -75,7 +75,7 @@
                     const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: n, documentTitle: s, isFullWidth: l, isLarge: c, renderHeader: p, title: m, withoutBottomBarMobile: S } = this.props,
                         { isModal: f } = this.context,
                         g = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return a.createElement(d.Z, null, a.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: m }), a.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [b.root, f && b.rootModal] }, !f && g, a.createElement(o.Z, { isFullWidth: l, isLarge: c, style: [b.container, f && b.containerModal, n] }, f ? a.createElement(h.Z, { style: b.viewport }, g, i) : i), t ? a.createElement(r.Z, { style: [b.bottomBarModal, !f && !S && b.bottomBarMobile] }, a.createElement(o.Z, { isFullWidth: l, isLarge: c }, t)) : null));
+                    return a.createElement(d.Z, null, a.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: m }), a.createElement(o.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [b.root, f && b.rootModal] }, !f && g, a.createElement(r.Z, { isFullWidth: l, isLarge: c, style: [b.container, f && b.containerModal, n] }, f ? a.createElement(h.Z, { style: b.viewport }, g, i) : i), t ? a.createElement(o.Z, { style: [b.bottomBarModal, !f && !S && b.bottomBarMobile] }, a.createElement(r.Z, { isFullWidth: l, isLarge: c }, t)) : null));
                 }
             }
             (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = n.Z);
@@ -85,8 +85,8 @@
         373554: (e, t, i) => {
             i.d(t, { Z: () => f, h: () => m });
             var a = i(807896),
-                r = i(202784),
-                o = i(449161),
+                o = i(202784),
+                r = i(449161),
                 n = i(392237),
                 s = i(674132),
                 d = i.n(s),
@@ -95,19 +95,19 @@
                 u = i(540387);
             const h = "fileInput",
                 p = d().b9960f32,
-                b = r.createElement(l.default, null),
+                b = o.createElement(l.default, null),
                 m = ({ acceptGifs: e, acceptImages: t = !0, acceptVideo: i }) => (t ? c.v5 : []).concat(e ? [c.Re] : []).concat(i ? u.jn : []);
             const S = n.default.create((e) => ({ root: { margin: `-${e.spaces.space12}` } })),
                 f = function ({ "aria-label": e = p, acceptGifs: t = !0, acceptImages: i = !0, acceptVideo: n = !0, customMimeTypes: s = [], icon: d = b, size: l = "medium", style: c, withIcon: u = !0, ...f }) {
                     const g = m({ acceptGifs: t, acceptImages: i, acceptVideo: n }).concat(s).join(",");
-                    return r.createElement(o.Z, (0, a.Z)({}, f, { accept: g, "aria-label": e, icon: u ? d : void 0, size: l, style: [S.root, c], testID: h }));
+                    return o.createElement(r.Z, (0, a.Z)({}, f, { accept: g, "aria-label": e, icon: u ? d : void 0, size: l, style: [S.root, c], testID: h }));
                 };
         },
         751170: (e, t, i) => {
             i.d(t, { A: () => b, Z: () => g });
             var a = i(202784),
-                r = i(325686),
-                o = i(167630),
+                o = i(325686),
+                r = i(167630),
                 n = i(992942),
                 s = i(392237),
                 d = i(674132),
@@ -151,7 +151,7 @@
                         u = i.needsProcessing || c,
                         h = [f.root, S[e], u && f.loadingBorder],
                         b = this._getImageSrc();
-                    return a.createElement(r.Z, { onClick: s, style: h }, u || !b ? a.createElement(o.Z, { "aria-label": p, style: f.activityIndicator }) : a.createElement(n.Z, { resizeMode: d, source: b, style: f.image }));
+                    return a.createElement(o.Z, { onClick: s, style: h }, u || !b ? a.createElement(r.Z, { "aria-label": p, style: f.activityIndicator }) : a.createElement(n.Z, { resizeMode: d, source: b, style: f.image }));
                 }
             }
             m.defaultProps = { borderRadius: b.NONE, enableGif: !0, resizeMode: "cover" };
@@ -162,8 +162,8 @@
         304059: (e, t, i) => {
             i.d(t, { Z: () => G });
             var a = i(202784),
-                r = i(325686),
-                o = i(537392),
+                o = i(325686),
+                r = i(537392),
                 n = i(336961),
                 s = i(659651),
                 d = i(154003),
@@ -193,9 +193,9 @@
                         });
                 }
                 render() {
-                    const { children: e, dataSaverMode: t, getVideoRef: i, style: r, variants: o, ...n } = this.props,
-                        s = (0, D.IM)((0, v.rD)(o), t);
-                    return (0, E.Z)("video", { ...n, children: [s.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
+                    const { children: e, dataSaverMode: t, getVideoRef: i, style: o, variants: r, ...n } = this.props,
+                        s = (0, D.IM)((0, v.rD)(r), t);
+                    return (0, E.Z)("video", { ...n, children: [s.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: o });
                 }
             }
             A.defaultProps = { dataSaverMode: !1, variants: [] };
@@ -206,13 +206,12 @@
             const Z = (0, R.Z)({
                     loader: () =>
                         Promise.all([
-                            i.e("icons.10"),
-                            i.e("icons.21"),
-                            i.e("icons.16"),
                             i.e("modules.common-e907d115"),
                             i.e("modules.common-e019dbda"),
-                            i.e("icons.24"),
-                            i.e("icons.28"),
+                            i.e("icons.9"),
+                            i.e("icons.5"),
+                            i.e("icons.14"),
+                            i.e("icons.2"),
                             i.e("modules.audio-6107ac1a"),
                             i.e("modules.audio-b953418a"),
                             i.e("modules.audio-7c51e6a7"),
@@ -223,9 +222,11 @@
                             i.e("modules.audio-e019dbda"),
                             i.e("modules.audio-262c94d4"),
                             i.e("modules.audio-c6fe4ea4"),
-                            i.e("icons.4"),
+                            i.e("icons.17"),
+                            i.e("icons.27"),
+                            i.e("icons.19"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
+                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -289,12 +290,12 @@
                             if (!a) return;
                             const {
                                     nativeEvent: {
-                                        layout: { height: r, width: o },
+                                        layout: { height: o, width: r },
                                     },
                                 } = e,
                                 { height: n, width: s } = a,
                                 d = s / n;
-                            Math.abs(d - o / r) > 0.05 && ("width" === i ? this.setState({ mediaContainerSizeStyle: { width: r * d } }) : "height" === i && this.setState({ mediaContainerSizeStyle: { height: o / d } }));
+                            Math.abs(d - r / o) > 0.05 && ("width" === i ? this.setState({ mediaContainerSizeStyle: { width: o * d } }) : "height" === i && this.setState({ mediaContainerSizeStyle: { height: r / d } }));
                         }),
                         (this._handleVideoOnPlay = (e) => {
                             this.setState({ isVideoPaused: !1 });
@@ -326,9 +327,9 @@
                         R = i.externalMediaDetails && i.externalMediaDetails.mediaType === f.Re,
                         P = R || (t && i.mediaFile && i.mediaFile.isGif),
                         Z = !!i.mediaFile?.isVideo;
-                    return a.createElement(o.ZP, null, ({ windowWidth: t }) => {
+                    return a.createElement(r.ZP, null, ({ windowWidth: t }) => {
                         const i = void 0 !== D ? D : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && a.createElement(n.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? a.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: O.editMedia }, C ? a.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? a.createElement(d.ZP, { "aria-label": k, icon: a.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(d.ZP, { "aria-label": I, icon: i ? a.createElement(m.default, null) : void 0, onPress: l, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : L) : null), w ? a.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: a.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return a.createElement(o.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && a.createElement(n.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? a.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(o.Z, { style: O.editMedia }, C ? a.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? a.createElement(d.ZP, { "aria-label": k, icon: a.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(d.ZP, { "aria-label": I, icon: i ? a.createElement(m.default, null) : void 0, onPress: l, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : L) : null), w ? a.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: a.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -338,30 +339,30 @@
                             i = e.externalMediaDetails.stillMediaUrl;
                         return this._renderGifPreview(t, i);
                     }
-                    return e.mediaFile?.isVideo ? this._renderVideoPreview(e.mediaFile.type, e.mediaFile.url, e.id, e.mediaFile) : a.createElement(r.Z, { style: l.default.absoluteFill }, this._renderImagePreview());
+                    return e.mediaFile?.isVideo ? this._renderVideoPreview(e.mediaFile.type, e.mediaFile.url, e.id, e.mediaFile) : a.createElement(o.Z, { style: l.default.absoluteFill }, this._renderImagePreview());
                 }
                 _renderGifPreview(e, t) {
                     const { playGif: i } = this.state,
-                        o = { uri: i ? e : t };
-                    return a.createElement(r.Z, { onClick: this._handleGifClick, style: l.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: o, style: O.video }));
+                        r = { uri: i ? e : t };
+                    return a.createElement(o.Z, { onClick: this._handleGifClick, style: l.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: r, style: O.video }));
                 }
                 _renderImagePreview() {
-                    const { borderRadius: e, enableGif: t, imageResizeMode: i, mediaItem: r, onClick: o } = this.props;
-                    return a.createElement(T.Z, { borderRadius: e, enableGif: t, mediaItem: r, onClick: o, resizeMode: i });
+                    const { borderRadius: e, enableGif: t, imageResizeMode: i, mediaItem: o, onClick: r } = this.props;
+                    return a.createElement(T.Z, { borderRadius: e, enableGif: t, mediaItem: o, onClick: r, resizeMode: i });
                 }
-                _renderVideoPreview(e, t, i, r) {
-                    const { mediaItem: o } = this.props,
-                        n = o.mediaMetadata?.subtitles;
-                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && r instanceof C.ZP) {
+                _renderVideoPreview(e, t, i, o) {
+                    const { mediaItem: r } = this.props,
+                        n = r.mediaMetadata?.subtitles;
+                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && o instanceof C.ZP) {
                         let n = [];
-                        (0, _.TO)(r.fileHandle) && (n = [{ src: t, type: e }]);
-                        const s = o.mediaMetadata?.subtitles,
-                            d = o?.trimData;
-                        return a.createElement(Z, { mediaFile: r, mediaId: String(i), mediaItem: o, subtitles: s, trimData: d, variants: n });
+                        (0, _.TO)(o.fileHandle) && (n = [{ src: t, type: e }]);
+                        const s = r.mediaMetadata?.subtitles,
+                            d = r?.trimData;
+                        return a.createElement(Z, { mediaFile: o, mediaId: String(i), mediaItem: r, subtitles: s, trimData: d, variants: n });
                     }
                     {
-                        const i = (0, _.TO)(r.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(A, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: r instanceof C.ZP ? r.thumbnail : "", style: O.video, variants: i }, n?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
+                        const i = (0, _.TO)(o.fileHandle) ? [{ content_type: e, url: t }] : [];
+                        return a.createElement(A, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: o instanceof C.ZP ? o.thumbnail : "", style: O.video, variants: i }, n?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
                     }
                 }
             }
@@ -372,8 +373,8 @@
         959587: (e, t, i) => {
             i.d(t, { AM: () => d, ZP: () => h, pX: () => l });
             var a = i(202784),
-                r = i(731708),
-                o = i(659651),
+                o = i(731708),
+                r = i(659651),
                 n = i(392237),
                 s = i(548721);
             const d = "animated_gif",
@@ -381,16 +382,16 @@
                 c = (e) => {
                     const { durationInMilliseconds: t, type: i } = e;
                     let n;
-                    if (i === d) n = a.createElement(r.ZP, { weight: "bold" }, "GIF");
+                    if (i === d) n = a.createElement(o.ZP, { weight: "bold" }, "GIF");
                     else if ("vine" === i) n = a.createElement(s.default, { "aria-label": "Vine", style: u.icon });
                     else if (i === l && t) {
                         const e = Math.trunc(t / 6e4).toString(),
                             i = Math.trunc((t % 6e4) / 1e3)
                                 .toString()
                                 .padStart(2, "0");
-                        n = a.createElement(r.ZP, { color: "white" }, `${e}:${i}`);
+                        n = a.createElement(o.ZP, { color: "white" }, `${e}:${i}`);
                     }
-                    return n ? a.createElement(o.Z, { align: "left" }, n) : null;
+                    return n ? a.createElement(r.Z, { align: "left" }, n) : null;
                 },
                 u = n.default.create((e) => ({ icon: { color: e.colors.white } })),
                 h = a.memo(c);
@@ -398,18 +399,16 @@
         231214: (e, t, i) => {
             i.d(t, { Z: () => a });
             i(202784);
-            const a = (0, i(523561).Z)({
-                loader: () => Promise.all([i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), i.e("ondemand.IntentPrompt")]).then(i.bind(i, 958679)),
-            });
+            const a = (0, i(523561).Z)({ loader: () => Promise.all([i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), i.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), i.e("ondemand.IntentPrompt")]).then(i.bind(i, 958679)) });
         },
         652904: (e, t, i) => {
             i.d(t, { Z: () => c });
             var a = i(202784),
-                r = i(500002),
-                o = i(668214),
+                o = i(500002),
+                r = i(668214),
                 n = i(997174),
                 s = i(118823);
-            const d = (0, o.Z)()
+            const d = (0, r.Z)()
                 .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: n.NH }))
                 .withAnalytics();
             class l extends a.Component {
@@ -420,16 +419,16 @@
                     const {
                             history: { location: t },
                             location: { pathname: i, search: a },
-                            locationKey: r,
+                            locationKey: o,
                         } = this.props,
                         {
-                            location: { pathname: o, search: n },
+                            location: { pathname: r, search: n },
                             locationKey: s,
                         } = e;
                     let d = !1;
                     t.pathname !== i ? (this._isInBackground = !0) : this._isInBackground && t.pathname === i && ((this._isInBackground = !1), (d = !0));
-                    const l = r || s;
-                    ((l && r !== s) || (!l && i !== o) || a !== n || d) && this._performPageUpdates(this.props);
+                    const l = o || s;
+                    ((l && o !== s) || (!l && i !== r) || a !== n || d) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -440,14 +439,14 @@
                 }
             }
             l.defaultProps = { children: null };
-            const c = (0, r.ZP)(d(l));
+            const c = (0, o.ZP)(d(l));
         },
         62857: (e, t, i) => {
             i.d(t, { Z: () => B });
             var a = i(807896),
-                r = i(202784),
-                o = i(476984),
-                n = i.n(o),
+                o = i(202784),
+                r = i(476984),
+                n = i.n(r),
                 s = i(674132),
                 d = i.n(s),
                 l = i(615656),
@@ -457,10 +456,10 @@
                 p = i(663550),
                 b = i(409438);
             const m = ({ displayMode: e = b.Z.UserDetailed, renderUserCell: t, userIds: i }) =>
-                r.createElement(
+                o.createElement(
                     u.Z,
                     { role: "list" },
-                    i.map((i, a) => (t ? t(i) : r.createElement(h.ZP, { decoration: h.ET, displayMode: e, isFakeButtonRoleWithListItem: !0, key: i, promotedItemType: p.bj.USER, userId: i, withFollowsYou: !0 }))),
+                    i.map((i, a) => (t ? t(i) : o.createElement(h.ZP, { decoration: h.ET, displayMode: e, isFakeButtonRoleWithListItem: !0, key: i, promotedItemType: p.bj.USER, userId: i, withFollowsYou: !0 }))),
                 );
             var S = i(312771),
                 f = i(71620),
@@ -487,10 +486,10 @@
                         availableUserIds: (0, g.Z)(C, (e) => e),
                         fetchStatus: (0, g.Z)(C, E, w, (e, t, i) => {
                             let a = S.ZP.LOADED;
-                            for (let r = 0; r < i.length; r++) {
-                                const o = i[r];
-                                if (-1 === e.indexOf(o)) {
-                                    const e = t[o] || S.ZP.LOADING;
+                            for (let o = 0; o < i.length; o++) {
+                                const r = i[o];
+                                if (-1 === e.indexOf(r)) {
+                                    const e = t[r] || S.ZP.LOADING;
                                     a = a === S.ZP.LOADED ? e : a;
                                 }
                                 if (a === S.ZP.LOADED) break;
@@ -500,13 +499,13 @@
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: _.ZP.fetchManyIfNeeded })),
                 v = d().f5b426c2;
-            class A extends r.Component {
+            class A extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
                         (this._renderContent = () => {
-                            const { availableUserIds: e, createLocalApiErrorHandler: t, fetchStatus: i, fetchUsersIfNeeded: o, filterPredicate: n, userIds: s, ...d } = this.props;
-                            return r.createElement(m, (0, a.Z)({}, d, { userIds: e }));
+                            const { availableUserIds: e, createLocalApiErrorHandler: t, fetchStatus: i, fetchUsersIfNeeded: r, filterPredicate: n, userIds: s, ...d } = this.props;
+                            return o.createElement(m, (0, a.Z)({}, d, { userIds: e }));
                         }),
                         (this._handleFetch = () => {
                             this._fetchUsersIfNeeded();
@@ -519,7 +518,7 @@
                     n()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return r.createElement(c.Z, { "aria-label": v, fetchStatus: this.state.allUsersUnavailable ? S.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return o.createElement(c.Z, { "aria-label": v, fetchStatus: this.state.allUsersUnavailable ? S.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: i, userIds: a } = this.props;
@@ -545,21 +544,21 @@
             const B = D(A);
         },
         492057: (e, t, i) => {
-            i.d(t, { BL: () => r, tc: () => o });
+            i.d(t, { BL: () => o, tc: () => r });
             var a = i(491963);
-            const r = (e, t) => {
+            const o = (e, t) => {
                     if (t.communityId) return a.ZP.select(e, t.communityId);
                 },
-                o = (e, t, i) => {
-                    const r = i || t.communityId;
-                    if (r) return a.ZP.selectFetchStatus(e, r);
+                r = (e, t, i) => {
+                    const o = i || t.communityId;
+                    if (o) return a.ZP.selectFetchStatus(e, o);
                 };
         },
         964917: (e, t, i) => {
             i.d(t, { FP: () => S, Hf: () => l, Q$: () => f, UD: () => m, V2: () => u, yD: () => b });
             var a = i(439058),
-                r = i(499627),
-                o = i(917799),
+                o = i(499627),
+                r = i(917799),
                 n = i(312771);
             const s = "scheduledTweets",
                 d = { fetchStatus: n.ZP.NONE, scheduledTweets: [] },
@@ -578,8 +577,8 @@
                     case c.REQUEST:
                         return { ...e, fetchStatus: n.ZP.LOADING };
                     case h.SUCCESS: {
-                        const { meta: r } = t;
-                        return r && r.deleteScheduledTweetId ? { ...e, scheduledTweets: ((i = r.deleteScheduledTweetId), (a = e.scheduledTweets), a.filter((e) => e.rest_id !== i)) } : e;
+                        const { meta: o } = t;
+                        return o && o.deleteScheduledTweetId ? { ...e, scheduledTweets: ((i = o.deleteScheduledTweetId), (a = e.scheduledTweets), a.filter((e) => e.rest_id !== i)) } : e;
                     }
                     default:
                         return e;
@@ -587,23 +586,23 @@
                 var i, a;
                 return e;
             }
-            r.Z.register({ [s]: p });
+            o.Z.register({ [s]: p });
             const b = (e) => e[s].scheduledTweets,
                 m = (e) => e[s].fetchStatus,
                 S =
                     () =>
                     (e, t, { api: i }) =>
-                        (0, o._O)(e, { request: i.withEndpoint(a.Z).fetchScheduledTweets, params: {} })({ actionTypes: c, context: l }).then(() => {}),
+                        (0, r._O)(e, { request: i.withEndpoint(a.Z).fetchScheduledTweets, params: {} })({ actionTypes: c, context: l }).then(() => {}),
                 f =
                     (e) =>
-                    (t, i, { api: r }) =>
-                        (0, o._O)(t, { request: r.withEndpoint(a.Z).deleteScheduledTweet, params: { scheduled_tweet_id: e } })({ actionTypes: h, context: u, meta: { deleteScheduledTweetId: e } });
+                    (t, i, { api: o }) =>
+                        (0, r._O)(t, { request: o.withEndpoint(a.Z).deleteScheduledTweet, params: { scheduled_tweet_id: e } })({ actionTypes: h, context: u, meta: { deleteScheduledTweetId: e } });
         },
         108304: (e, t, i) => {
             i.r(t), i.d(t, { PlacePickerScreen: () => q, default: () => j });
             var a = i(202784),
-                r = i(325686),
-                o = i(470397),
+                o = i(325686),
+                r = i(470397),
                 n = i(731708),
                 s = i(143670),
                 d = i(154003),
@@ -723,22 +722,22 @@
                             const { position: t, userCountry: i } = this.props,
                                 {
                                     place: {
-                                        attributes: { street_address: r },
+                                        attributes: { street_address: o },
                                         centroid: s,
                                     },
                                 } = e;
-                            if (r && s && 2 === s.length && t) {
+                            if (o && s && 2 === s.length && t) {
                                 const e = ((e, t) => {
                                     const i = e.lat * (Math.PI / 180),
                                         a = t.lat * (Math.PI / 180),
-                                        r = a - i,
-                                        o = (t.long - e.long) * (Math.PI / 180);
-                                    return 7917.6 * Math.asin(Math.sqrt(Math.sin(r / 2) * Math.sin(r / 2) + Math.cos(i) * Math.cos(a) * Math.sin(o / 2) * Math.sin(o / 2)));
+                                        o = a - i,
+                                        r = (t.long - e.long) * (Math.PI / 180);
+                                    return 7917.6 * Math.asin(Math.sqrt(Math.sin(o / 2) * Math.sin(o / 2) + Math.cos(i) * Math.cos(a) * Math.sin(r / 2) * Math.sin(r / 2)));
                                 })({ lat: t.coords.latitude, long: t.coords.longitude }, { lat: s[1], long: s[0] });
                                 return a.createElement(
-                                    o.Z,
+                                    r.Z,
                                     null,
-                                    a.createElement(n.ZP, null, r),
+                                    a.createElement(n.ZP, null, o),
                                     a.createElement(
                                         n.ZP,
                                         null,
@@ -765,14 +764,14 @@
                         (this._renderResults = () => {
                             const { query: e, showSearchForButton: t } = this.state,
                                 i = this._selectResults();
-                            return a.createElement(r.Z, null, this._renderPlaces(i), t ? a.createElement(s.Z, { actionText: z({ query: e }), onClick: this._handleSubmit, textColor: "primary" }) : null, this._renderAttributionIfNeeded());
+                            return a.createElement(o.Z, null, this._renderPlaces(i), t ? a.createElement(s.Z, { actionText: z({ query: e }), onClick: this._handleSubmit, textColor: "primary" }) : null, this._renderAttributionIfNeeded());
                         }),
-                        (this._renderRightControl = () => a.createElement(r.Z, { style: Q.actionButtonContainer }, a.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), a.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, L))),
+                        (this._renderRightControl = () => a.createElement(o.Z, { style: Q.actionButtonContainer }, a.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), a.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, L))),
                         (this._renderGeoPicker = () => {
                             const { history: e, initialFetchStatus: t, lastSearchFetchStatus: i } = this.props,
-                                { activeResultSet: r } = this.state,
-                                o = r === _.Z0.initial ? t : i;
-                            return a.createElement(g.Z, { appBarRef: this._appBarRef, history: e, onBackClick: this._handleBack, rightControl: this._renderRightControl(), title: W }, a.createElement(l.Z, { Icon: m.default, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSubmit, placeholder: G, style: Q.search, withClearButton: !0 }), a.createElement(f.Z, { fetchStatus: o === w.ZP.NONE ? w.ZP.LOADING : o, onRequestRetry: this._handleRetry, render: this._renderResults, retryMessage: H }));
+                                { activeResultSet: o } = this.state,
+                                r = o === _.Z0.initial ? t : i;
+                            return a.createElement(g.Z, { appBarRef: this._appBarRef, history: e, onBackClick: this._handleBack, rightControl: this._renderRightControl(), title: W }, a.createElement(l.Z, { Icon: m.default, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSubmit, placeholder: G, style: Q.search, withClearButton: !0 }), a.createElement(f.Z, { fetchStatus: r === w.ZP.NONE ? w.ZP.LOADING : r, onRequestRetry: this._handleRetry, render: this._renderResults, retryMessage: H }));
                         }),
                         (this._renderLocationDisabledPrompt = () => {
                             const { geoLocationError: e } = this.state;
@@ -798,8 +797,8 @@
         122421: (e, t, i) => {
             i.r(t), i.d(t, { Recipients: () => k, default: () => L });
             var a = i(202784),
-                r = i(325686),
-                o = i(420412),
+                o = i(325686),
+                r = i(420412),
                 n = i(844685),
                 s = i(96083),
                 d = i(731708),
@@ -854,12 +853,12 @@
                         B = (e) => {
                             if (!t) return null;
                             const { user: i } = t.retweeted_status || t,
-                                r = -1 !== y.indexOf(e),
-                                o = e === i.id_str,
-                                n = a.createElement(s.Z, { checked: !r, disabled: o, onChange: E(e) });
-                            return a.createElement(b.ZP, { bottomControl: A, cellClickable: !o, decoration: n, isFakeButtonRoleWithListItem: !o, key: e, onClick: E(e), promotedItemType: "users", userId: e, withLink: !1 });
+                                o = -1 !== y.indexOf(e),
+                                r = e === i.id_str,
+                                n = a.createElement(s.Z, { checked: !o, disabled: r, onChange: E(e) });
+                            return a.createElement(b.ZP, { bottomControl: A, cellClickable: !r, decoration: n, isFakeButtonRoleWithListItem: !r, key: e, onClick: E(e), promotedItemType: "users", userId: e, withLink: !1 });
                         };
-                    return a.createElement(f.nO, { namespace: I }, a.createElement(p.Z, { backLocation: "/compose/post", history: e, onBackClick: D, rightControl: a.createElement(l.ZP, { onPress: D, size: "xSmall", type: "brandFilled" }, R), title: T }, B(w.id_str), c.length ? a.createElement(r.Z, null, a.createElement(o.Z, null), a.createElement(n.Z, { rightControl: v(), text: P }), a.createElement(m.Z, { renderUserCell: B, userIds: c })) : null));
+                    return a.createElement(f.nO, { namespace: I }, a.createElement(p.Z, { backLocation: "/compose/post", history: e, onBackClick: D, rightControl: a.createElement(l.ZP, { onPress: D, size: "xSmall", type: "brandFilled" }, R), title: T }, B(w.id_str), c.length ? a.createElement(o.Z, null, a.createElement(r.Z, null), a.createElement(n.Z, { rightControl: v(), text: P }), a.createElement(m.Z, { renderUserCell: B, userIds: c })) : null));
                 },
                 L = B(k);
         },
@@ -867,8 +866,8 @@
             i.r(t), i.d(t, { Compose: () => Ne, default: () => Ge });
             i(136728);
             var a = i(202784),
-                r = i(360917),
-                o = i.n(r),
+                o = i(360917),
+                r = i.n(o),
                 n = i(928316),
                 s = i(325686),
                 d = i(154003),
@@ -886,19 +885,19 @@
                 const t = e - new Date().getTime(),
                     i = 1e3 * Math.round(t < 0 ? 0 : t / 1e3),
                     a = new Date(i).toLocaleString("default", { minute: "numeric", second: "numeric" }),
-                    [r, o] = a.split(":");
-                return { minutes: +r, seconds: +o, formatted: a };
+                    [o, r] = a.split(":");
+                return { minutes: +o, seconds: +r, formatted: a };
             }
-            const _ = ({ "aria-label": e, expiration: t, getAccessibilityLiveLabel: i, onTimeElapsed: r }) => {
-                    const o = a.useRef(i),
-                        n = a.useRef(r);
-                    (o.current = i), (n.current = r);
+            const _ = ({ "aria-label": e, expiration: t, getAccessibilityLiveLabel: i, onTimeElapsed: o }) => {
+                    const r = a.useRef(i),
+                        n = a.useRef(o);
+                    (r.current = i), (n.current = o);
                     const [d, l] = a.useState(() => y(+t)),
                         [c, u] = a.useState(() => i?.(d));
                     a.useEffect(() => {
                         const e = setInterval(() => {
                             const i = y(+t),
-                                a = o.current?.(i);
+                                a = r.current?.(i);
                             u(a), l(i), "00:00" === i.formatted && (clearInterval(e), n.current?.());
                         }, 500);
                         return () => clearInterval(e);
@@ -954,9 +953,9 @@
                     return i ? q.Z.selectHydrated(e, i) : void 0;
                 },
                 ae = (e, t) => t.location.pathname.indexOf("/intent/") > -1,
-                re = J((e) => e.defaultText),
-                oe = (e, t) => {
-                    const i = re(e, t);
+                oe = J((e) => e.defaultText),
+                re = (e, t) => {
+                    const i = oe(e, t);
                     return (0, x.Z)(t.location) || i;
                 },
                 ne = J((e) => e.quotedStatus),
@@ -970,19 +969,19 @@
                 be = J((e) => e.editableUntil);
             function me(e, t) {
                 const { previousPath: i, selectedCommunityId: a } = t.location.state || {};
-                let r;
-                const o = (0, O.br)(e);
-                if ((a ? (r = a) : i && i.includes("/home") && o.type === G.FO.COMMUNITY && (r = o.id), r)) {
-                    const t = (0, F.BL)(e, { communityId: r });
+                let o;
+                const r = (0, O.br)(e);
+                if ((a ? (o = a) : i && i.includes("/home") && r.type === G.FO.COMMUNITY && (o = r.id), o)) {
+                    const t = (0, F.BL)(e, { communityId: o });
                     if (t && "NonMember" !== t.role) return t;
                 }
             }
             function Se(e, t) {
                 const { previousPath: i, selectedCommunityId: a } = t.location.state || {},
-                    r = (0, O.br)(e);
-                let o;
-                if ((a ? (o = a) : i && i.includes("/home") && r.type === G.FO.COMMUNITY && (o = r.id), o)) {
-                    const t = (0, F.BL)(e, { communityId: o });
+                    o = (0, O.br)(e);
+                let r;
+                if ((a ? (r = a) : i && i.includes("/home") && o.type === G.FO.COMMUNITY && (r = o.id), r)) {
+                    const t = (0, F.BL)(e, { communityId: r });
                     return !(!t || "NonMember" !== t.role);
                 }
                 return !1;
@@ -1005,11 +1004,11 @@
                             (e, t, i, a) => (e ? (0, v.CB)(e, i, a) : t),
                         ),
                         broadcastCommunityTweet: K,
-                        composerData: (0, I.P1)(j, oe, se, N.gz, ae, (e, t, i, a, r) =>
-                            e.map((e, o) => {
+                        composerData: (0, I.P1)(j, re, se, N.gz, ae, (e, t, i, a, o) =>
+                            e.map((e, r) => {
                                 const n = (0, k.Z)(e.mediaIds || []),
                                     s = a.filter((e) => n.has(e.id));
-                                return { ...de(e), media: s, quotedStatus: 0 === o ? i : void 0, text: 0 === o && t && !r ? t : e.text };
+                                return { ...de(e), media: s, quotedStatus: 0 === r ? i : void 0, text: 0 === r && t && !o ? t : e.text };
                             }),
                         ),
                         composeSemanticCoreId: J((e) => e.composeSemanticCoreId),
@@ -1087,20 +1086,20 @@
                         (this._getScribeNamespace = () => (this.props.inReplyToStatus || this.props.inReplyToStatusId ? Ue : Fe)),
                         (this._getScribeData = () => {
                             const { activeUser: e, isIntentRoute: t } = this.props;
-                            return t && e ? Ve : o();
+                            return t && e ? Ve : r();
                         }),
                         (this._renderAppBarRightControl = () => {
                             const { isValid: e } = this.state,
                                 { isModal: t } = this.context,
-                                { activeUser: i, audienceControlsValue: r, composerData: o, inReplyToStatus: n, isEdit: l, isSelfThreadReply: c, isSending: u } = this.props,
-                                h = "all" === r.conversationControlsValue,
+                                { activeUser: i, audienceControlsValue: o, composerData: r, inReplyToStatus: n, isEdit: l, isSelfThreadReply: c, isSending: u } = this.props,
+                                h = "all" === o.conversationControlsValue,
                                 p = !e || u || !i || this.is_uploading;
-                            return a.createElement(s.Z, { style: Oe.rightControlContainer }, l ? this._renderCountdownTimer() : a.createElement(Z.Z, { disabled: p, isAudienceAll: h, isComposerValid: e, isEdit: !!l, isModal: t, isQuote: this.isQuoteTweet, isReply: !!n, isRetweet: !!this.isRetweet, isScheduled: this.isScheduled, isSelfThreadReply: !!c, isThread: this.isThread, onTweetWithBoostPress: this._handleSendTweetWithBoost, renderFallback: this._renderDraftsHeading, shouldShow: !t, tweetText: o[0].text, viewer: i }), t ? null : a.createElement(d.ZP, { disabled: p, onPress: this._handleSendTweet, size: "small", testID: Re, type: "brandFilled" }, (0, v.of)({ inReplyToStatus: !!n, isSelfThreadReply: !!c, isQuoteTweet: !!this.isQuoteTweet, isRetweet: !!this.isRetweet, isScheduled: !!this.isScheduled, isThread: this.isThread, isEdit: !!l })));
+                            return a.createElement(s.Z, { style: Oe.rightControlContainer }, l ? this._renderCountdownTimer() : a.createElement(Z.Z, { disabled: p, isAudienceAll: h, isComposerValid: e, isEdit: !!l, isModal: t, isQuote: this.isQuoteTweet, isReply: !!n, isRetweet: !!this.isRetweet, isScheduled: this.isScheduled, isSelfThreadReply: !!c, isThread: this.isThread, onTweetWithBoostPress: this._handleSendTweetWithBoost, renderFallback: this._renderDraftsHeading, shouldShow: !t, tweetText: r[0].text, viewer: i }), t ? null : a.createElement(d.ZP, { disabled: p, onPress: this._handleSendTweet, size: "small", testID: Re, type: "brandFilled" }, (0, v.of)({ inReplyToStatus: !!n, isSelfThreadReply: !!c, isQuoteTweet: !!this.isQuoteTweet, isRetweet: !!this.isRetweet, isScheduled: !!this.isScheduled, isThread: this.isThread, isEdit: !!l })));
                         }),
                         (this._renderHeaderWithProgressBar = (e) => {
                             const { isModal: t } = this.context,
-                                { isAutoSaving: i, isSending: r, sendingProgress: o } = this.props;
-                            return a.createElement(a.Fragment, null, a.createElement(l.Z, { progress: r && !i ? Math.max(o, 0.02) : 0, style: [Oe.progressBar, t && Oe.progressBarModal] }), e);
+                                { isAutoSaving: i, isSending: o, sendingProgress: r } = this.props;
+                            return a.createElement(a.Fragment, null, a.createElement(l.Z, { progress: o && !i ? Math.max(r, 0.02) : 0, style: [Oe.progressBar, t && Oe.progressBarModal] }), e);
                         }),
                         (this._renderDraftsHeading = () => {
                             const { hideUnsentTweetsButton: e } = this.props;
@@ -1131,9 +1130,9 @@
                         });
                 }
                 componentDidMount() {
-                    const { activeUser: e, broadcastCommunityTweet: t, createDraftTweetApiErrorHandler: i, createScheduledTweetApiErrorHandler: a, editableUntil: r, fetchDraftTweets: o, fetchScheduledTweets: n, history: s, inReplyToStatus: d, isEdit: l, location: c, selectedCommunity: u, selectedTrustedFriendsValue: h, updateAudienceControlsValue: p } = this.props;
-                    (this._unlockReload = B.Z.acquire()), s.setModalRouteBreakpoint(s.location), e && (n().catch(a()), o().catch(i())), u && (p({ _type: "community_members", communityIdValue: u.id_str, conversationControlsValue: "community_members", broadcast: t }, "modal"), s.replace({ pathname: c.pathname, state: (0, f.Z)(c.state || {}, "selectedCommunityId") })), h && (p({ _type: "trusted_friends_tweet", trustedFriendsValue: h, conversationControlsValue: "trusted_friends_tweet" }, "modal"), s.replace({ pathname: c.pathname, state: (0, f.Z)(c.state || {}, "trustedFriendsValue") })), d?.exclusivity_info ? p({ _type: "super_followers_exclusive", conversationControlsValue: "super_followers_exclusive", exclusivityControlValue: {} }) : d?.community_id_str ? p({ _type: "community_members", communityIdValue: d.community_id_str, conversationControlsValue: "community_members" }) : d?.trusted_friends_info && p({ _type: "trusted_friends_tweet", conversationControlsValue: "trusted_friends_tweet", trustedFriendsValue: { trusted_friends_list_id: "1482057446797373440" } });
-                    const b = +r;
+                    const { activeUser: e, broadcastCommunityTweet: t, createDraftTweetApiErrorHandler: i, createScheduledTweetApiErrorHandler: a, editableUntil: o, fetchDraftTweets: r, fetchScheduledTweets: n, history: s, inReplyToStatus: d, isEdit: l, location: c, selectedCommunity: u, selectedTrustedFriendsValue: h, updateAudienceControlsValue: p } = this.props;
+                    (this._unlockReload = B.Z.acquire()), s.setModalRouteBreakpoint(s.location), e && (n().catch(a()), r().catch(i())), u && (p({ _type: "community_members", communityIdValue: u.id_str, conversationControlsValue: "community_members", broadcast: t }, "modal"), s.replace({ pathname: c.pathname, state: (0, f.Z)(c.state || {}, "selectedCommunityId") })), h && (p({ _type: "trusted_friends_tweet", trustedFriendsValue: h, conversationControlsValue: "trusted_friends_tweet" }, "modal"), s.replace({ pathname: c.pathname, state: (0, f.Z)(c.state || {}, "trustedFriendsValue") })), d?.exclusivity_info ? p({ _type: "super_followers_exclusive", conversationControlsValue: "super_followers_exclusive", exclusivityControlValue: {} }) : d?.community_id_str ? p({ _type: "community_members", communityIdValue: d.community_id_str, conversationControlsValue: "community_members" }) : d?.trusted_friends_info && p({ _type: "trusted_friends_tweet", conversationControlsValue: "trusted_friends_tweet", trustedFriendsValue: { trusted_friends_list_id: "1482057446797373440" } });
+                    const b = +o;
                     l &&
                         !this._cancelEditTimeout &&
                         b >= 0 &&
@@ -1141,8 +1140,8 @@
                         (this._cancelEditTimeout = (function (e, t) {
                             const i = e - Date.now() - ve,
                                 a = (0, Ce.Z)(i, 0, 2147483647),
-                                r = setTimeout(t, a, e);
-                            return () => clearTimeout(r);
+                                o = setTimeout(t, a, e);
+                            return () => clearTimeout(o);
                         })(b, this._handleEditCountdownTimeout)));
                 }
                 componentWillUnmount() {
@@ -1150,7 +1149,7 @@
                     e.setModalRouteBreakpoint(e.location), this._unlockReload(), this._cancelEditTimeout?.();
                 }
                 render() {
-                    const { activeUser: e, composeHeader: t, composeSemanticCoreId: i, history: r, isEdit: o, isIntentRoute: n, location: s, quotedStatus: d, subtitle: l, title: h } = this.props,
+                    const { activeUser: e, composeHeader: t, composeSemanticCoreId: i, history: o, isEdit: r, isIntentRoute: n, location: s, quotedStatus: d, subtitle: l, title: h } = this.props,
                         p = n && !e,
                         { isModal: b } = this.context;
                     return a.createElement(
@@ -1159,7 +1158,7 @@
                         a.createElement(c.ZP, null, ({ containerWidth: n }) => {
                             const c = A.Z.shouldRenderAsModal(n),
                                 m = (p && c) || this.showCommunityNonMemberPrompt;
-                            return a.createElement(a.Fragment, null, this.showCommunityNonMemberPrompt ? a.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: ke, onAction: this._handleCloseModal, subtext: Le }) : null, p && a.createElement(E.Z, { history: r, location: s }), m ? null : a.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: o ? xe : h }, a.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: i, containerWidth: n, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
+                            return a.createElement(a.Fragment, null, this.showCommunityNonMemberPrompt ? a.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: ke, onAction: this._handleCloseModal, subtext: Le }) : null, p && a.createElement(E.Z, { history: o, location: s }), m ? null : a.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: o, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: r ? xe : h }, a.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: i, containerWidth: n, history: o, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
                         }),
                     );
                 }
@@ -1195,10 +1194,10 @@
         15038: (e, t, i) => {
             i.d(t, { ZP: () => c });
             var a = i(202784),
-                r = i(325686),
-                o = i(950822),
+                o = i(325686),
+                r = i(950822),
                 n = i(392237);
-            const s = (e) => (0, o.Z)("div", e);
+            const s = (e) => (0, r.Z)("div", e);
             class d extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -1221,10 +1220,10 @@
                         });
                 }
                 render() {
-                    const { activeStyle: e, allowDragDrop: t, children: i, style: o } = this.props,
+                    const { activeStyle: e, allowDragDrop: t, children: i, style: r } = this.props,
                         { active: n } = this.state,
                         d = t ? l.dragBorderValid : l.dragBorderInvalid;
-                    return a.createElement(s, { onDragEnter: this._handleDragEnter, onDragLeave: this._handleDragLeave, onDragOver: this._handleDragOver, onDrop: this._handleDragDrop, style: [l.root, o, n && d, n && e] }, a.createElement(r.Z, { style: l.inner }, "function" == typeof i ? i(n) : i));
+                    return a.createElement(s, { onDragEnter: this._handleDragEnter, onDragLeave: this._handleDragLeave, onDragOver: this._handleDragOver, onDrop: this._handleDragDrop, style: [l.root, r, n && d, n && e] }, a.createElement(o.Z, { style: l.inner }, "function" == typeof i ? i(n) : i));
                 }
                 _updateDragCount(e) {
                     (this._dragEnterCount = e), 0 === this._dragEnterCount ? this.setState({ active: !1 }) : this._dragEnterCount > 0 && this.setState({ active: !0 });
@@ -1237,15 +1236,15 @@
         449161: (e, t, i) => {
             i.d(t, { Z: () => b });
             var a = i(807896),
-                r = i(202784),
-                o = i(674132),
-                n = i.n(o),
+                o = i(202784),
+                r = i(674132),
+                n = i.n(r),
                 s = i(154003),
                 d = i(950822),
                 l = i(392237);
             const c = n().i5450bec,
                 u = n().f7432494;
-            class h extends r.Component {
+            class h extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handlePress = (e) => {
@@ -1263,9 +1262,9 @@
                         });
                 }
                 render() {
-                    const { accept: e, disabled: t, multiple: i, onChange: o, testID: n, ...l } = this.props,
+                    const { accept: e, disabled: t, multiple: i, onChange: r, testID: n, ...l } = this.props,
                         h = !(e?.includes("video") || e?.includes("gif"));
-                    return r.createElement(r.Fragment, null, r.createElement(s.ZP, (0, a.Z)({ hoverLabel: e ? { label: h ? u : c } : void 0 }, l, { disabled: t, onPress: this._handlePress })), (0, d.Z)("input", { accept: e, disabled: t, multiple: i, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: p.input, tabIndex: -1, testID: n, type: "file" }));
+                    return o.createElement(o.Fragment, null, o.createElement(s.ZP, (0, a.Z)({ hoverLabel: e ? { label: h ? u : c } : void 0 }, l, { disabled: t, onPress: this._handlePress })), (0, d.Z)("input", { accept: e, disabled: t, multiple: i, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: p.input, tabIndex: -1, testID: n, type: "file" }));
                 }
             }
             h.defaultProps = { disabled: !1, multiple: !1 };
@@ -1275,28 +1274,28 @@
         420412: (e, t, i) => {
             i.d(t, { Z: () => d });
             var a = i(202784),
-                r = i(325686),
-                o = i(235902),
+                o = i(325686),
+                r = i(235902),
                 n = i(885015),
                 s = i(392237);
             function d({ borderColor: e = "borderColor", isSlim: t = !1, label: i }) {
-                const { isWebRedesign: d } = o.ZP.useProps(),
+                const { isWebRedesign: d } = r.ZP.useProps(),
                     c = "borderColor" === e || "nestedBorderColor" === e ? l[e] : { backgroundColor: s.default.theme.colors[e] ?? s.default.theme.colors.borderColor };
-                return i ? a.createElement(n.Z, { style: !t && l.root, withGutter: !0 }, a.createElement(r.Z, { style: l.gapColumn }, a.createElement(r.Z, { style: [l.gap, c] })), a.createElement(r.Z, { style: l.gapText }, i), a.createElement(r.Z, { style: l.gapColumn }, a.createElement(r.Z, { style: [l.gap, c] }))) : a.createElement(r.Z, { style: [!t && l.root, d() && l.rootRedesign, l.gap, c] });
+                return i ? a.createElement(n.Z, { style: !t && l.root, withGutter: !0 }, a.createElement(o.Z, { style: l.gapColumn }, a.createElement(o.Z, { style: [l.gap, c] })), a.createElement(o.Z, { style: l.gapText }, i), a.createElement(o.Z, { style: l.gapColumn }, a.createElement(o.Z, { style: [l.gap, c] }))) : a.createElement(o.Z, { style: [!t && l.root, d() && l.rootRedesign, l.gap, c] });
             }
             const l = s.default.create((e) => ({ borderColor: { backgroundColor: s.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: s.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, i) => {
             i.d(t, { Z: () => l });
             var a = i(807896),
-                r = i(202784),
-                o = i(325686),
+                o = i(202784),
+                r = i(325686),
                 n = i(392237);
-            class s extends r.Component {
+            class s extends o.Component {
                 render() {
                     const { children: e, style: t, withGutter: i, ...n } = this.props,
-                        s = r.Children.map(e, (e) => e && r.cloneElement(e, { style: [e.props.style, d.column, i && d.withGutterColumn] }));
-                    return r.createElement(o.Z, (0, a.Z)({ style: [t, d.root, i && d.withGutter] }, n), s);
+                        s = o.Children.map(e, (e) => e && o.cloneElement(e, { style: [e.props.style, d.column, i && d.withGutterColumn] }));
+                    return o.createElement(r.Z, (0, a.Z)({ style: [t, d.root, i && d.withGutter] }, n), s);
                 }
             }
             s.defaultProps = { withGutter: !1 };
@@ -1305,4 +1304,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.6124c37a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.13d9a5da.js.map

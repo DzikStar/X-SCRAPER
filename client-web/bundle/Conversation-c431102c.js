@@ -15,8 +15,8 @@
                 return c(r), c(o), c(i), n.createElement(n.Fragment, null);
             }
         },
-        887742: (e, t, a) => {
-            a.d(t, { ZP: () => F });
+        564313: (e, t, a) => {
+            a.d(t, { ZP: () => D });
             var n = a(202784),
                 r = a(325686),
                 o = a(782261),
@@ -36,31 +36,24 @@
                 E = a(852657),
                 C = a(836255);
             const P = (e, t) => e.quickPromote.objective,
-                Z = (e, t) => C.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
-                S = (0, b.Z)()
-                    .propsFromState(() => ({ selectedObjective: P, tweet: Z }))
+                S = (e, t) => C.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
+                Z = (0, b.Z)()
+                    .propsFromState(() => ({ selectedObjective: P, tweet: S }))
                     .propsFromActions(() => ({ setObjective: E.mS }))
                     .withAnalytics(f.EP);
-            var w = a(992942),
-                k = a(173324);
-            function v() {
-                return n.createElement(w.Z, { "aria-label": "", source: k, style: c.default.absoluteFill });
-            }
-            var I = a(634171);
-            function L() {
-                return n.createElement(w.Z, { "aria-label": "", source: I, style: c.default.absoluteFill });
-            }
-            const x = d().fcc839b6,
-                T = (d().b679a538, d().cb19a2f0),
-                _ = d().a2d37164,
-                M = d().cefad302,
-                A = d().b614fad0,
-                D = c.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
-                [B, q] = [
-                    { label: (0, h.WF)(m.CH.Engagements), value: m.CH.Engagements, description: T, illustration: n.createElement(v, null), testID: y.Z.getObjective(m.CH.Engagements) },
-                    { label: (0, h.WF)(m.CH.WebsiteClicks), value: m.CH.WebsiteClicks, description: _, illustration: n.createElement(L, null), testID: y.Z.getObjective(m.CH.WebsiteClicks) },
+            var w = a(263070),
+                k = a(829077);
+            const v = d().fcc839b6,
+                I = (d().b679a538, d().cb19a2f0),
+                L = d().a2d37164,
+                x = d().cefad302,
+                T = d().b614fad0,
+                _ = c.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
+                [M, A] = [
+                    { label: (0, h.WF)(m.CH.Engagements), value: m.CH.Engagements, description: I, illustration: n.createElement(w.i, null), testID: y.Z.getObjective(m.CH.Engagements) },
+                    { label: (0, h.WF)(m.CH.WebsiteClicks), value: m.CH.WebsiteClicks, description: L, illustration: n.createElement(k.T, null), testID: y.Z.getObjective(m.CH.WebsiteClicks) },
                 ];
-            const F = S((e) => {
+            const D = Z((e) => {
                 const { analytics: t, selectedObjective: a, setObjective: c, tweet: l } = e,
                     d = l ? o.Z.getOriginalTweet(l) : l,
                     m = null != d?.entities?.media?.length && d?.entities?.media?.length > 0,
@@ -71,7 +64,7 @@
                 const b = n.useMemo(
                         () =>
                             (function ({ selectedObjective: e, tweetContainsLinks: t, tweetHasMedia: a }) {
-                                const r = [B, { ...q, disabled: !t, disabledInlineCallout: t ? void 0 : n.createElement(s.Z.Danger, { headline: A, text: M, withIcon: !0 }) }];
+                                const r = [M, { ...A, disabled: !t, disabledInlineCallout: t ? void 0 : n.createElement(s.Z.Danger, { headline: T, text: x, withIcon: !0 }) }];
                                 return r;
                             })({ tweetHasMedia: m, tweetContainsLinks: h, selectedObjective: a }),
                         [m, h, a],
@@ -82,7 +75,7 @@
                         },
                         [t, c],
                     );
-                return n.createElement(r.Z, { style: D.qpContainer, testID: y.Z.objectiveScreen }, n.createElement(g.O, { screenType: f.MN.Objective }), n.createElement(p.ZP, null, n.createElement(u.Y, { style: D.titleContainer, title: x }), n.createElement(i.Z, { name: "objective-picker", onChange: E, options: b, value: a })));
+                return n.createElement(r.Z, { style: _.qpContainer, testID: y.Z.objectiveScreen }, n.createElement(g.O, { screenType: f.MN.Objective }), n.createElement(p.ZP, null, n.createElement(u.Y, { style: _.titleContainer, title: v }), n.createElement(i.Z, { name: "objective-picker", onChange: E, options: b, value: a })));
             });
         },
         695823: (e, t, a) => {
@@ -107,11 +100,11 @@
                 E = a(836255);
             const C = (e, t) => t.match.params.statusId,
                 P = (e, t) => E.Z.selectHydrated(e, C(0, t)),
-                Z = (e, t) => E.Z.selectFetchStatus(e, C(0, t)),
-                S = (e, t) => e.quickPromote.account.adsAccount,
+                S = (e, t) => E.Z.selectFetchStatus(e, C(0, t)),
+                Z = (e, t) => e.quickPromote.account.adsAccount,
                 w = (e, t) => e.quickPromote.account.selectedFundingInstrument,
                 k = (0, h.Z)()
-                    .propsFromState(() => ({ fetchStatus: Z, tweet: P, adsAccount: S, fundingInstrument: w, selectedPaymentMethod: f.DY }))
+                    .propsFromState(() => ({ fetchStatus: S, tweet: P, adsAccount: Z, fundingInstrument: w, selectedPaymentMethod: f.DY }))
                     .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, p.zr)("QUICK_PROMOTE_PAYMENT_SCREEN"), fetchTweetIfNeeded: E.Z.fetchOneIfNeeded, scribeAction: y.n, savePlatformRedirectBackState: () => (0, b.oE)(e.match.params.quickPromotePlatform), fetchAdsAccountDataIfNeeded: b.Ek }))
                     .withAnalytics(g.EP);
             class v extends n.PureComponent {
@@ -200,8 +193,8 @@
                 E = a(379327),
                 C = a(250195),
                 P = a(401388),
-                Z = a(347720),
-                S = a(934878),
+                S = a(347720),
+                Z = a(934878),
                 w = a(953884),
                 k = a(457637),
                 v = a(363895),
@@ -257,7 +250,7 @@
                         selectedPaymentMethod: p,
                         setSelectedPaymentMethod: h,
                     } = e;
-                    (0, S.d)(v.MN.PaymentSelect);
+                    (0, Z.d)(v.MN.PaymentSelect);
                     const y = p ? p.id : "",
                         [f, b] = n.useState(!1),
                         [C, I] = n.useState(null),
@@ -286,7 +279,7 @@
                                 r.Z,
                                 { style: O.qpContainer, testID: k.Z.paymentMethodSelect },
                                 f ? n.createElement(o.Z, { indeterminate: !0 }) : null,
-                                n.createElement(w.ZP, null, n.createElement(Z.Y, { title: _ })),
+                                n.createElement(w.ZP, null, n.createElement(S.Y, { title: _ })),
                                 (0, w.$_)((e) => n.createElement(i.Z, { disabled: f, name: _, onChange: L, options: F(g, y, (e) => I(e), e), value: y })),
                                 (0, w.$_)((e) => n.createElement(r.Z, { style: O.addPaymentMethodContainer }, n.createElement(c.Z, { disabled: f, interactive: f, interactiveStyles: z, onPress: () => l.push(`${(0, v.WS)(u, m, d, v.MN.Payment)}?isAddingPayment=true`), style: [O.addPaymentMethodInteractiveContainer, e] }, n.createElement(E.default, { style: O.plusIcon }), n.createElement(s.ZP, { align: "left", color: "primary" }, M)))),
                                 C &&
@@ -355,8 +348,8 @@
                 E = a(443781),
                 C = a(163889),
                 P = a(315032),
-                Z = a(363895),
-                S = a(943245),
+                S = a(363895),
+                Z = a(943245),
                 w = a(125363),
                 k = a(71620),
                 v = a(668214),
@@ -393,16 +386,16 @@
                 H = a(516951);
             const U = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": a, checked: o, description: i, disabled: c, endContent: s, horizontal: d, illustration: u, label: m, name: g, onChange: p, pillText: h, pillType: y, reverseLabels: f, secondaryDescription: b, switchStyle: E, testID: C }) => {
                     const P = B.b(),
-                        Z = B.b(),
                         S = B.b(),
+                        Z = B.b(),
                         w = n.createElement(l.ZP, { color: E ? (o ? "text" : "gray700") : "text", id: P, role: "label", size: E ? "subtext1" : "headline2", testID: "headline-label", weight: "bold" }, m),
-                        k = !!i && n.createElement(l.ZP, { color: "gray700", id: Z, size: "subtext1", style: h ? z.descriptionWithPill : z.description, testID: "description-label" }, i),
+                        k = !!i && n.createElement(l.ZP, { color: "gray700", id: S, size: "subtext1", style: h ? z.descriptionWithPill : z.description, testID: "description-label" }, i),
                         v = n.createElement(l.ZP, { color: "gray700", role: "label", size: "subtext2", style: z.description }, b),
                         I = h ? n.createElement(q.ZP, { style: z.marginStart8, type: y }, h) : null,
                         L = n.createElement(n.Fragment, null, n.createElement(r.Z, { style: z.row }, f ? k : w, I), n.createElement(r.Z, { style: [z.row, f && z.marginTop4] }, f ? w : k), b ? v : null),
                         x = (a ? 100 / a : 100) + "%",
                         T = E ? [z.padding4, z.borderRadiusInfinite, o ? z.backgroundDefault : z.backgroundGrey] : [z.padding16, z.boxShadow, z.borderRadiusLarge, o ? z.checked : null, z.backgroundDefault];
-                    return n.createElement(F.Z, { disabled: c, style: [z.root, ...T, d ? { maxWidth: x, ...z.grow } : null, 1 === t || d ? null : z.withMarginTop, t !== a && d && z.withMarginEnd, !c && z.interactive], testID: C, withInteractiveStyling: !E }, !!u && n.createElement(r.Z, { style: z.iconContainer, testID: "illustration" }, u), n.createElement(r.Z, { style: [z.labelContainer, E && z.alignCenter] }, L), !!s && n.createElement(r.Z, { style: z.endContentContainer, testID: "endContent" }, s), n.createElement("input", { "aria-describedby": `${Z} ${S}`, "aria-label": e, "aria-labelledby": P, "aria-posinset": t, "aria-setsize": a, checked: o, disabled: c, name: g, onChange: o ? H.Z : p, style: O, type: "radio" }));
+                    return n.createElement(F.Z, { disabled: c, style: [z.root, ...T, d ? { maxWidth: x, ...z.grow } : null, 1 === t || d ? null : z.withMarginTop, t !== a && d && z.withMarginEnd, !c && z.interactive], testID: C, withInteractiveStyling: !E }, !!u && n.createElement(r.Z, { style: z.iconContainer, testID: "illustration" }, u), n.createElement(r.Z, { style: [z.labelContainer, E && z.alignCenter] }, L), !!s && n.createElement(r.Z, { style: z.endContentContainer, testID: "endContent" }, s), n.createElement("input", { "aria-describedby": `${S} ${Z}`, "aria-label": e, "aria-labelledby": P, "aria-posinset": t, "aria-setsize": a, checked: o, disabled: c, name: g, onChange: o ? H.Z : p, style: O, type: "radio" }));
                 },
                 z = h.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.elevatedBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding4: { padding: e.spaces.space4 }, boxShadow: { boxShadow: "0px 2px 12px rgba(15, 20, 25, 0.12)" }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 2 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column", flex: 3 }, row: { flexDirection: "row", alignItems: "center" }, marginStart8: { marginStart: e.spaces.space8 }, marginTop4: { marginTop: e.spaces.space4 } })),
                 O = { ...h.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
@@ -431,7 +424,7 @@
                     .withAnalytics(),
                 Y = f().i3656b52;
             function K(e, t, a) {
-                return e.toLocaleString((0, S.It)(t), { currency: a, style: "currency", maximumFractionDigits: 0, minimumFractionDigits: 0 });
+                return e.toLocaleString((0, Z.It)(t), { currency: a, style: "currency", maximumFractionDigits: 0, minimumFractionDigits: 0 });
             }
             const J = V(function (e) {
                     const { availableBudgets: t, currency: a, dailyBudget: o, getAudience: i, language: c, setDailyBudget: s } = e,
@@ -501,7 +494,7 @@
                         setBudgetDuration: R.g_,
                         setTargetedAgeBucket: R.l$,
                     }))
-                    .withAnalytics(Z.EP);
+                    .withAnalytics(S.EP);
             var ce = a(779610),
                 se = a(976145),
                 le = a(934878),
@@ -523,18 +516,18 @@
                 },
                 Ce = (e, t) => e.quickPromote.targeting.locationQuery,
                 Pe = (e, t) => e.quickPromote.targeting.targetedLocations,
-                Ze = (e, t) => e.quickPromote.account.campaigns,
-                Se = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
+                Se = (e, t) => e.quickPromote.account.campaigns,
+                Ze = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
                 we = (0, v.Z)()
-                    .propsFromState(() => ({ targetingLocationQuery: Ce, targetingLocations: be, targetedLocations: Pe, fetchStatus: Ee, userCountry: j.GG, campaigns: Ze, isHousingAndUrbanDevelopmentLimitations: Se }))
+                    .propsFromState(() => ({ targetingLocationQuery: Ce, targetingLocations: be, targetedLocations: Pe, fetchStatus: Ee, userCountry: j.GG, campaigns: Se, isHousingAndUrbanDevelopmentLimitations: Ze }))
                     .propsFromActions(() => ({ setTargetedLocations: R.hI, setAndFetchTargetingLocationQuery: R.sN, setTargetingLocationQuery: R.zu, createLocalApiErrorHandler: (0, k.zr)("QUICK_PROMOTE_TARGETING_LOCATION_SCREEN") }))
-                    .withAnalytics(Z.EP),
+                    .withAnalytics(S.EP),
                 ke = f().cc642518,
                 ve = f().i0e8c3c6,
                 Ie = f().deaf5b16,
                 Le = f().f69ad048,
                 xe = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
-                Te = Object.freeze({ [Z.cU.CurrentCountryMatch]: 0, [Z.cU.Match]: 1, [Z.cU.NoMatch]: 2 });
+                Te = Object.freeze({ [S.cU.CurrentCountryMatch]: 0, [S.cU.Match]: 1, [S.cU.NoMatch]: 2 });
             class _e extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -564,10 +557,10 @@
                         (this._getTargetingLocationOptions = () => {
                             const { isHousingAndUrbanDevelopmentLimitations: e, targetingLocationQuery: t, targetingLocations: a, userCountry: n } = this.props,
                                 r = a?.result?.[0]?.locations ?? [],
-                                o = (0, Z.Jy)(n || "US"),
+                                o = (0, S.Jy)(n || "US"),
                                 i = r.filter(({ country_code: a, localized_name: n, location_type: r }) => {
                                     if (e && "POSTAL_CODES" === r) return !1;
-                                    return o(n, a, t) !== Z.cU.NoMatch;
+                                    return o(n, a, t) !== S.cU.NoMatch;
                                 });
                             return (0, fe.Z)(
                                 i,
@@ -592,8 +585,8 @@
                             if (t) {
                                 this.setState({ errorMessage: null });
                                 const t = this._getTargetingLocationOptions().find(({ targeting_value: t }) => t === e);
-                                t ? ((0, Z.hq)(a)(Z.Ur.setTargetingLocation({ id: t.targeting_value, locationType: t.location_type, countryCode: t.country_code })), n([t]), this._handleGoBack()) : (0, C.ZP)(`Quick Promote: could not find "${e}" in list of targeting options`);
-                            } else (0, Z.hq)(a)(Z.Ur.targetingLocationInvalid()), this.setState({ errorMessage: Le });
+                                t ? ((0, S.hq)(a)(S.Ur.setTargetingLocation({ id: t.targeting_value, locationType: t.location_type, countryCode: t.country_code })), n([t]), this._handleGoBack()) : (0, C.ZP)(`Quick Promote: could not find "${e}" in list of targeting options`);
+                            } else (0, S.hq)(a)(S.Ur.targetingLocationInvalid()), this.setState({ errorMessage: Le });
                             r("");
                         }),
                         (this._renderSelected = () => {
@@ -616,19 +609,19 @@
                         (this._handleTargetingLocationChange = (e) => {
                             const t = e.target.value,
                                 { analytics: a, createLocalApiErrorHandler: n, setAndFetchTargetingLocationQuery: r } = this.props;
-                            (0, Z.hq)(a)(Z.Ur.targetingLocationSearch(t)), r(t).catch(n());
+                            (0, S.hq)(a)(S.Ur.targetingLocationSearch(t)), r(t).catch(n());
                         });
                 }
                 componentDidMount() {
                     const { analytics: e } = this.props;
-                    (0, Z.hq)(e)(Z.Ur.targetingLocationPageLoad());
+                    (0, S.hq)(e)(S.Ur.targetingLocationPageLoad());
                 }
                 componentWillUnmount() {
                     this._handleClear();
                 }
                 render() {
                     const { targetingLocationQuery: e } = this.props;
-                    return n.createElement(n.Fragment, null, n.createElement(le.O, { screenType: Z.MN.TargetingLocation }), e ? this._renderSearch() : this._renderSelected());
+                    return n.createElement(n.Fragment, null, n.createElement(le.O, { screenType: S.MN.TargetingLocation }), e ? this._renderSearch() : this._renderSelected());
                 }
             }
             _e.contextType = E.rC;
@@ -644,16 +637,16 @@
                 Oe = (0, v.Z)()
                     .propsFromState(() => ({ lang: j.VT, isHousingAndUrbanDevelopmentLimitations: Be, targetedLocations: qe, selectedGender: Fe, selectedAgeBucket: He, selectedKeywords: Ue, objective: ze }))
                     .propsFromActions(() => ({ setTargetedAgeBucket: R.l$ }))
-                    .withAnalytics(Z.EP);
+                    .withAnalytics(S.EP);
             class Ne extends n.PureComponent {
                 componentDidMount() {
                     const { analytics: e } = this.props;
-                    (0, Z.hq)(e)(Z.Ur.targetingPageLoad());
+                    (0, S.hq)(e)(S.Ur.targetingPageLoad());
                 }
                 render() {
                     const { inLocationScreen: e, setInLocationScreen: t, targetedLocations: a } = this.props,
                         o = (0, de.Un)({ numLocations: a.length });
-                    return n.createElement(r.Z, { style: Re.qpContainer, testID: ue.Z.targetingScreen }, n.createElement(le.O, { screenType: Z.MN.Targeting }), n.createElement(r.Z, { style: Re.targetingContainer }, e ? n.createElement(De, { onBack: () => t(!1) }) : n.createElement(ce.Z, { description: (0, se.Z)(a.map(({ localized_name: e }) => e)), label: n.createElement(l.ZP, { weight: "bold" }, o), onPress: () => t(!0), styleOverride: Re.locationPivot, testID: ue.Z.targetingLocationPivot })));
+                    return n.createElement(r.Z, { style: Re.qpContainer, testID: ue.Z.targetingScreen }, n.createElement(le.O, { screenType: S.MN.Targeting }), n.createElement(r.Z, { style: Re.targetingContainer }, e ? n.createElement(De, { onBack: () => t(!1) }) : n.createElement(ce.Z, { description: (0, se.Z)(a.map(({ localized_name: e }) => e)), label: n.createElement(l.ZP, { weight: "bold" }, o), onPress: () => t(!0), styleOverride: Re.locationPivot, testID: ue.Z.targetingLocationPivot })));
                 }
             }
             Ne.contextType = E.rC;
@@ -664,7 +657,7 @@
                 $e = f().h1fcb36c,
                 Ge = f().g61ac32a;
             const Ve = ie(function (e) {
-                    const { analytics: t, createLocalApiErrorHandler: a, fetchAdsAccountDataIfNeeded: h, fetchAvailableBudgetsIfNeeded: y, fetchCurrentTargetingLocationIfNeeded: S, fetchQuickPromoteEligibilityIfNeeded: w, handleFirstLoad: k, resetState: v, setBudgetDuration: I, setTargetedAgeBucket: L, statusId: x } = e,
+                    const { analytics: t, createLocalApiErrorHandler: a, fetchAdsAccountDataIfNeeded: h, fetchAvailableBudgetsIfNeeded: y, fetchCurrentTargetingLocationIfNeeded: Z, fetchQuickPromoteEligibilityIfNeeded: w, handleFirstLoad: k, resetState: v, setBudgetDuration: I, setTargetedAgeBucket: L, statusId: x } = e,
                         [T, _] = n.useState("main"),
                         [M, A] = n.useState(!1),
                         D = (0, o.useHistory)(),
@@ -673,13 +666,13 @@
                         H = B.isTrue("responsive_web_qp_new_payment_enabled"),
                         U = n.useCallback(() => {
                             q &&
-                                Promise.all([h(q, t), S(), w({ statusId: x })])
+                                Promise.all([h(q, t), Z(), w({ statusId: x })])
                                     .then(() => {
                                         y().catch(a());
                                     })
                                     .then(() => k())
                                     .catch(a());
-                        }, [t, a, h, y, S, w, k, x, q]);
+                        }, [t, a, h, y, Z, w, k, x, q]);
                     if (
                         (n.useEffect(() => {
                             v(), U();
@@ -699,8 +692,8 @@
                     function N() {
                         const a = e.viewerUser?.screen_name;
                         if (!a) return;
-                        (0, Z.hq)(t)(Z.Ur.boostCreationClick());
-                        const n = (0, Z.gC)(a, x);
+                        (0, S.hq)(t)(S.Ur.boostCreationClick());
+                        const n = (0, S.gC)(a, x);
                         e.createPromotion({ analytics: t, fromComposer: !0, history: D, statusId: x, nextPath: n });
                     }
                     function R() {
@@ -723,7 +716,7 @@
                                 render: function () {
                                     const { adsAccount: t, fundingInstrument: a, statusId: o } = e;
                                     if ("payment" === T) {
-                                        const e = H ? ((c = t?.id), (0, i.ju)(`https://x.com/i/payments/${parseInt(c, 10).toString(36)}/quick-promote/new`)) : (0, Z.lg)("quick_promote", t, o, a, !1).url;
+                                        const e = H ? ((c = t?.id), (0, i.ju)(`https://x.com/i/payments/${parseInt(c, 10).toString(36)}/quick-promote/new`)) : (0, S.lg)("quick_promote", t, o, a, !1).url;
                                         return n.createElement(s.Z, { allowForms: !0, onMessage: O, reportError: C.ZP, src: e, style: Ye.iframe, title: "Payment Form" });
                                     }
                                     var c;
@@ -743,4 +736,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.db1ea53a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.2e6a3d5a.js.map

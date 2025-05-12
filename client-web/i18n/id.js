@@ -280,7 +280,7 @@
                 i("edf7f57e", "Dapatkan verifikasi untuk mendapatkan pengutamaan balasan, analitik, penelusuran bebas iklan, dan banyak lagi. Tingkatkan profil Anda sekarang."),
                 i("ba920d68", "Perkuat pengaruh Anda dengan verifikasi"),
                 i("ib79d0c2", "Akses fitur-fitur VIP: verifikasi akun Anda"),
-                i("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                i("c0d3bd82", "Anda telah beriklan di X, tetapi tidak memiliki langganan Organisasi Terverifikasi"),
                 i("d7836d1e", "Berlangganan untuk mendapatkan kredit iklan gratis senilai hingga 12.000 USD, verifikasi emas, dukungan VIP, dan serangkaian alat untuk berkembang."),
                 i("f528e369", function (a) {
                     return "Berlangganan " + a.tier + " untuk menulis Artikel sendiri";
@@ -1282,7 +1282,7 @@
                     return 'Mencari **"' + a.query + '"**';
                 }),
                 i("i2e0f4d7", function (a) {
-                    return "Browsing " + a.url + " for " + a.query;
+                    return "Menjelajah " + a.query + " di " + a.url + " ";
                 }),
                 i("acb9b845", function (a) {
                     return 'Menjelajah **"' + a.query + '"** di ' + a.url;
@@ -1291,7 +1291,7 @@
                     return "Mencari postingan oleh @" + a.username;
                 }),
                 i("f7d9cfb9", function (a) {
-                    return "Searching posts by @" + a.username + " for " + a.query;
+                    return "Mencari postingan tentang " + a.query + " oleh @" + a.username + " ";
                 }),
                 i("bec7eb11", function (a) {
                     return "Mencari postingan oleh @" + a.username + ' untuk **"' + a.query + '"**';
@@ -4326,10 +4326,10 @@
                 i("b52484b6", "Mencari..."),
                 i("a4d9dbfa", "Pemikiran"),
                 i("ib1c5475", function (a) {
-                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                    return "Berpikir selama " + a.minutes + " mnt " + a.seconds + " dtk";
                 }),
                 i("a15d62db", function (a) {
-                    return "Thought for " + a.seconds + "s";
+                    return "Berpikir selama " + a.seconds + " dtk";
                 }),
                 i("d7cb5408", "Halaman Web yang Relevan"),
                 i("aa7c96bb", function (a) {
@@ -7060,14 +7060,14 @@
                 i("f0ad5cc8", "tahun"),
                 i("a0dc6e4c", "Saat ini tidak tersedia"),
                 i("jd8b2e66", "Berlangganan & bayar"),
-                i("ca784c0c", "Subscribe & pay with Apple"),
+                i("ca784c0c", "Berlangganan dan bayar dengan Apple"),
                 i("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 i("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
-                i("afd61c76", "Or, save up to 30%"),
+                i("afd61c76", "Atau, hemat hingga 30%"),
                 i("i7fbacc4", "Beralih antara tingkatan langganan yang tersedia"),
                 i("c9cc122b", function (a) {
                     return a.feature + " disertakan dalam " + a.title;
@@ -13215,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.e8c7ec4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.738b66ea.js.map
