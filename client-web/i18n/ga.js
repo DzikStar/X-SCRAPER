@@ -4103,11 +4103,6 @@
                 n("h7033cac", "Sheol tú glórphost"),
                 n("i34ec422", "Shared a post"),
                 n("a4939874", "You shared a post"),
-                n("a30a206e", "Tuigim!"),
-                n("ib4b1b86", "Comhráite a ghreamú á thabhairt isteach  "),
-                n("bd3ca2ef", function (e) {
-                    return "Roghnaigh roghchlár na ngníomhartha ar chomhrá ar bith chun é a ghreamú den bharr chun go mbeidh rochtain éasca agat air. Is féidir leat suas go dtí " + e.count + " c" + i(e.count, "", "", "h", "", "") + "omhrághreamú ag an am céanna. ";
-                }),
                 n("e1c9ec9c", "Greamaigh an comhrá"),
                 n("e3cfff7c", "Cuir an comhrá chun suain"),
                 n("f398722e", "Rinneadh an comhrá a chur chun suain"),
@@ -4936,11 +4931,11 @@
                 n("e41fffbc", "The total watch time of your videos."),
                 n("if2909ba", "Watch Time"),
                 n("i0e5bf4c", "Your videos"),
-                n("ed99baea", "Early Beta Access");
-            n("gf898b70", "Advanced Search"),
+                n("ed99baea", "Early Beta Access"),
+                n("gf898b70", "Advanced Search"),
                 n("d2a43a7a", 'contains both "ai" and "startup"'),
-                n("a8584698", "ai startup"),
-                n("jb6f9292", 'contains the exact phrase "ai startup"'),
+                n("a8584698", "ai startup");
+            n("jb6f9292", 'contains the exact phrase "ai startup"'),
                 n("j8ee77c4", '"ai startup"'),
                 n("d0480758", 'contains either "ai" or "startup" (or both)'),
                 n("f0048fa2", "ai OR startup"),
@@ -5902,11 +5897,11 @@
                 n("i0ed3f4e", "Íomhá na hócáide"),
                 n("cbae35fa", "Report Broadcast"),
                 n("fd12ab58", "Collection posts"),
-                n("a226497c", "Cruthaigh Pobal nua");
-            n("d7346632", "You haven’t joined any Communities yet"),
+                n("a226497c", "Cruthaigh Pobal nua"),
+                n("d7346632", "You haven’t joined any Communities yet"),
                 n("b732a4cc", "When you do, you’ll see their posts here."),
-                n("hff48914", "No posts could be found at this time."),
-                n("hb52cc4a", "Bain triail as arís níos déanaí."),
+                n("hff48914", "No posts could be found at this time.");
+            n("hb52cc4a", "Bain triail as arís níos déanaí."),
                 n("e50e1bb0", "Welcome to Communities"),
                 n("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 n("fc5c6914", "Meet others with your interests"),
@@ -6900,11 +6895,11 @@
                 n("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 n("iadf78e2", "Download videos"),
                 n("ee54c3de", "Save videos straight to your device"),
-                n("ae03594c", "Small reply boost");
-            n("e6bb08c0", "Increase the visibility of your replies"),
+                n("ae03594c", "Small reply boost"),
+                n("e6bb08c0", "Increase the visibility of your replies"),
                 n("bf2a6acc", "Large Reply Boost"),
-                n("c2059276", "Have your replies boosted."),
-                n("b023ec20", "Max Reply Boost"),
+                n("c2059276", "Have your replies boosted.");
+            n("b023ec20", "Max Reply Boost"),
                 n("g337328e", "Get the highest visibility for your replies."),
                 n("fa006202", "Background video playback"),
                 n("jf389778", "Watch while browsing or using other apps"),
@@ -7878,7 +7873,10 @@
                 n("ddfd6718", "Payment Failed"),
                 n("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 n("a62359e6", "Verified Organization Settings"),
-                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                n("i4dccc18", "Billing"),
+                n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                n("dac61c3c", "Account settings");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7917,10 +7915,7 @@
                     c(e, a)
                 );
             }
-            n("i4dccc18", "Billing"),
-                n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                n("dac61c3c", "Account settings"),
-                n("b6b5fd66", "Manage your X account including changing your username or password."),
+            n("b6b5fd66", "Manage your X account including changing your username or password."),
                 n("hb9c4a1c", "Questions, bug reports and feedback"),
                 n("c674f5b4", "Setup invoice payments"),
                 n("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8922,15 +8917,15 @@
                 }),
                 n("ae408b76", "You reposted"),
                 n("j355f008", "Pinned post"),
-                n("habf9678", "Pionnáilte ag an Údar");
-            n("db0798ed", function (e) {
-                return e.topicName + " Topaic";
-            }),
+                n("habf9678", "Pionnáilte ag an Údar"),
+                n("db0798ed", function (e) {
+                    return e.topicName + " Topaic";
+                }),
                 n("dc716ec9", function (e) {
                     return "Topaic Mholta: " + e.topicName;
                 }),
-                n("fbc2003c", "Críochnaithe"),
-                n("h5051dd8", "Canceled"),
+                n("fbc2003c", "Críochnaithe");
+            n("h5051dd8", "Canceled"),
                 n("bb5f91a3", function (e) {
                     return e.count + " in this Space";
                 }),
@@ -13233,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.450a695a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.794748aa.js.map

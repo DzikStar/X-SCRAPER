@@ -4087,11 +4087,6 @@
                 i("h7033cac", "Anda mengirim pesan suara"),
                 i("i34ec422", "Membagikan postingan"),
                 i("a4939874", "Anda membagikan postingan"),
-                i("a30a206e", "Oke!"),
-                i("ib4b1b86", "Memperkenalkan percakapan tersemat"),
-                i("bd3ca2ef", function (a) {
-                    return "Pilih menu tindakan pada percakapan mana pun untuk menyematkannya ke atas agar mudah diakses. Anda dapat menyematkan hingga " + a.count + " percakapan sekaligus.";
-                }),
                 i("e1c9ec9c", "Sematkan percakapan"),
                 i("e3cfff7c", "Tunda percakapan"),
                 i("f398722e", "Percakapan ditunda"),
@@ -4920,11 +4915,11 @@
                 i("e41fffbc", "Total waktu tonton video Anda."),
                 i("if2909ba", "Waktu Tonton"),
                 i("i0e5bf4c", "Video Anda"),
-                i("ed99baea", "Akses Beta Lebih Awal");
-            i("gf898b70", "Pencarian Lanjutan"),
+                i("ed99baea", "Akses Beta Lebih Awal"),
+                i("gf898b70", "Pencarian Lanjutan"),
                 i("d2a43a7a", 'berisi "ai" dan "startup"'),
-                i("a8584698", "startup ai"),
-                i("jb6f9292", 'berisi frasa yang sama persis dengan "startup ai"'),
+                i("a8584698", "startup ai");
+            i("jb6f9292", 'berisi frasa yang sama persis dengan "startup ai"'),
                 i("j8ee77c4", '"startup ai"'),
                 i("d0480758", 'berisi "ai" atau "startup" (atau keduanya)'),
                 i("f0048fa2", "startup OR ai"),
@@ -5886,11 +5881,11 @@
                 i("i0ed3f4e", "Gambar peristiwa"),
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Postingan koleksi"),
-                i("a226497c", "Buat Komunitas baru");
-            i("d7346632", "Anda belum bergabung dengan Komunitas apa pun"),
+                i("a226497c", "Buat Komunitas baru"),
+                i("d7346632", "Anda belum bergabung dengan Komunitas apa pun"),
                 i("b732a4cc", "Jika sudah, Anda akan melihat postingannya di sini."),
-                i("hff48914", "Tidak ada postingan yang dapat ditemukan saat ini."),
-                i("hb52cc4a", "Silakan coba lagi nanti."),
+                i("hff48914", "Tidak ada postingan yang dapat ditemukan saat ini.");
+            i("hb52cc4a", "Silakan coba lagi nanti."),
                 i("e50e1bb0", "Selamat datang di Komunitas"),
                 i("i6829daa", "Komunitas adalah kelompok diskusi dengan moderator yang memungkinkan orang-orang di X untuk saling mengenal dan berbagi."),
                 i("fc5c6914", "Bertemu orang lain dengan minat yang sama"),
@@ -6884,11 +6879,11 @@
                 i("e0198956", "Dapatkan bagi hasil pendapatan dari engagement akun terverifikasi dengan konten yang Anda posting di X."),
                 i("iadf78e2", "Unduh Video"),
                 i("ee54c3de", "Simpan video langsung ke perangkat Anda"),
-                i("ae03594c", "Boost kecil pada balasan");
-            i("e6bb08c0", "Tingkatkan visibilitas balasan Anda"),
+                i("ae03594c", "Boost kecil pada balasan"),
+                i("e6bb08c0", "Tingkatkan visibilitas balasan Anda"),
                 i("bf2a6acc", "Pengutamaan Tinggi pada Balasan"),
-                i("c2059276", "Boost balasan Anda."),
-                i("b023ec20", "Balasan yang Diutamakan Setinggi Mungkin"),
+                i("c2059276", "Boost balasan Anda.");
+            i("b023ec20", "Balasan yang Diutamakan Setinggi Mungkin"),
                 i("g337328e", "Dapatkan visibilitas tertinggi untuk balasan Anda."),
                 i("fa006202", "Pemutaran video latar belakang"),
                 i("jf389778", "Tonton sambil menjelajah atau menggunakan aplikasi lainnya"),
@@ -7862,7 +7857,10 @@
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
                 i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
-                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan.");
+                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
+                i("i4dccc18", "Penagihan"),
+                i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
+                i("dac61c3c", "Pengaturan akun");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7901,10 +7899,7 @@
                     d(a, n)
                 );
             }
-            i("i4dccc18", "Penagihan"),
-                i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
-                i("dac61c3c", "Pengaturan akun"),
-                i("b6b5fd66", "Kelola akun X Anda, termasuk mengubah nama pengguna atau kata sandi Anda."),
+            i("b6b5fd66", "Kelola akun X Anda, termasuk mengubah nama pengguna atau kata sandi Anda."),
                 i("hb9c4a1c", "Pertanyaan, laporan bug, dan umpan balik"),
                 i("c674f5b4", "Siapkan pembayaran faktur"),
                 i("i8237e66", "Beralih dari pembayaran kartu kredit ke penagihan melalui transfer bank."),
@@ -8906,15 +8901,15 @@
                 }),
                 i("ae408b76", "Anda memposting ulang"),
                 i("j355f008", "Postingan tersemat"),
-                i("habf9678", "Disematkan oleh Penulis");
-            i("db0798ed", function (a) {
-                return "Topik " + a.topicName;
-            }),
+                i("habf9678", "Disematkan oleh Penulis"),
+                i("db0798ed", function (a) {
+                    return "Topik " + a.topicName;
+                }),
                 i("dc716ec9", function (a) {
                     return "Topik yang Direkomendasikan: " + a.topicName;
                 }),
-                i("fbc2003c", "Berakhir"),
-                i("h5051dd8", "Dibatalkan"),
+                i("fbc2003c", "Berakhir");
+            i("h5051dd8", "Dibatalkan"),
                 i("bb5f91a3", function (a) {
                     return a.count + " dalam Space ini";
                 }),
@@ -13215,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.738b66ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.1f9e79ea.js.map

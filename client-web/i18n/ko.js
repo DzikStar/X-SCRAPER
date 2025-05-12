@@ -284,7 +284,7 @@
                 n("edf7f57e", "인증을 받으면 답글 부스트, 애널리틱스, 광고 없는 타임라인 등 다양한 기능을 이용할 수 있습니다. 지금 바로 프로필을 업그레이드하세요."),
                 n("ba920d68", "인증을 받고 내 영향력을 강화하세요"),
                 n("ib79d0c2", "계정 인증 등 VIP 기능을 확인하세요"),
-                n("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                n("c0d3bd82", "X에 광고를 게재했지만 인증된 조직에 가입하지 않으셨습니다"),
                 n("d7836d1e", "인증된 조직에 가입하면 최대 $12,000 상당의 무료 광고 크레딧을 포함해 금색 인증마크, VIP 지원을 받고 다양한 비즈니스 성장 도구를 이용할 수 있습니다."),
                 n("f528e369", function (e) {
                     return e.tier + " 구독을 시작하고 직접 아티클을 작성해 보세요";
@@ -1280,13 +1280,13 @@
                 n("c3f04d9c", "생각 중"),
                 n("cbdddb0a", "종료됨"),
                 n("e98cc293", function (e) {
-                    return e.query + " 사용자 검색 중";
+                    return '"' + e.query + '"에 대해 검색 중';
                 }),
                 n("b0d1e205", function (e) {
                     return '**"' + e.query + '"** 검색 중';
                 }),
                 n("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return e.url + '에서 "' + e.query + '" 탐색';
                 }),
                 n("acb9b845", function (e) {
                     return e.url + ' 탐색: **"' + e.query + '"**';
@@ -1295,7 +1295,7 @@
                     return "@" + e.username + " 님의 게시물 검색 중";
                 }),
                 n("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return '"' + e.query + '"에 대해 @' + e.username + " 님의 게시물 검색 중";
                 }),
                 n("bec7eb11", function (e) {
                     return '**"' + e.query + '"**에 대해 @' + e.username + " 님의 게시물 검색 중";
@@ -4091,11 +4091,6 @@
                 n("h7033cac", "음성 메시지를 보냈습니다"),
                 n("i34ec422", "게시물 공유함"),
                 n("a4939874", "게시물을 공유했습니다"),
-                n("a30a206e", "알겠습니다"),
-                n("ib4b1b86", "대화 메인에 올리기 소개"),
-                n("bd3ca2ef", function (e) {
-                    return "보다 쉽게 접근할 수 있도록 대화를 메인에 올리려면 대화에서 작업 메뉴를 선택하세요. 한 번에 " + e.count + " 대화개까지 메인에 올릴 수 있습니다.";
-                }),
                 n("e1c9ec9c", "대화 메인에 올리기"),
                 n("e3cfff7c", "대화 일시중지"),
                 n("f398722e", "대화 일시중지"),
@@ -4156,7 +4151,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "원하는 검색 모드 선택"),
                 n("i330e54c", "고급 검색 및 추론"),
-                n("fdcce108", "DeeperSearch"),
+                n("fdcce108", "보다 심층 검색"),
                 n("ac64b674", "확장 검색 및 더 많은 추론"),
                 n("j22655f2", "무엇이든 물어보세요"),
                 n("h0681e3e", "X의 AI 어시스턴트, Grok과 이야기하세요"),
@@ -4330,10 +4325,10 @@
                 n("b52484b6", "검색 중..."),
                 n("a4d9dbfa", "생각하기"),
                 n("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return e.minutes + "분 " + e.seconds + "초 동안 생각 ";
                 }),
                 n("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return e.seconds + "초 동안 생각 ";
                 }),
                 n("d7cb5408", "관련 웹페이지"),
                 n("aa7c96bb", function (e) {
@@ -4924,11 +4919,11 @@
                 n("e41fffbc", "내 동영상의 총 시청 시간입니다."),
                 n("if2909ba", "시청 시간"),
                 n("i0e5bf4c", "내 동영상"),
-                n("ed99baea", "사전 베타 체험");
-            n("gf898b70", "고급 검색"),
+                n("ed99baea", "사전 베타 체험"),
+                n("gf898b70", "고급 검색"),
                 n("d2a43a7a", '"AI" 및 "스타트업" 모두 포함'),
-                n("a8584698", "AI 스타트업"),
-                n("jb6f9292", '정확한 구문 "AI 스타트업" 포함'),
+                n("a8584698", "AI 스타트업");
+            n("jb6f9292", '정확한 구문 "AI 스타트업" 포함'),
                 n("j8ee77c4", '"AI 스타트업"'),
                 n("d0480758", '"AI" 또는 "스타트업" (또는 둘 다) 포함'),
                 n("f0048fa2", "AI OR 스타트업"),
@@ -5890,11 +5885,11 @@
                 n("i0ed3f4e", "이벤트 이미지"),
                 n("cbae35fa", "생방송 신고하기"),
                 n("fd12ab58", "컬렉션 게시물"),
-                n("a226497c", "새 커뮤니티 만들기");
-            n("d7346632", "아직 가입한 커뮤니티가 없습니다"),
+                n("a226497c", "새 커뮤니티 만들기"),
+                n("d7346632", "아직 가입한 커뮤니티가 없습니다"),
                 n("b732a4cc", "그러면 게시물이 여기에 표시됩니다."),
-                n("hff48914", "지금은 게시물을 찾을 수 없습니다."),
-                n("hb52cc4a", "잠시 후 다시 시도해 주세요."),
+                n("hff48914", "지금은 게시물을 찾을 수 없습니다.");
+            n("hb52cc4a", "잠시 후 다시 시도해 주세요."),
                 n("e50e1bb0", "커뮤니티에 오신 것을 환영합니다"),
                 n("i6829daa", "커뮤니티는 X 사용자들이 서로 교류하고 공유할 수 있는 중재된 토론 그룹입니다."),
                 n("fc5c6914", "나와 관심사가 비슷한 사람들을 만나 보세요"),
@@ -6888,11 +6883,11 @@
                 n("e0198956", "X에 게시한 콘텐츠에 인증된 계정이 참여할 때 발생하는 수익을 배분받으세요."),
                 n("iadf78e2", "동영상 다운로드"),
                 n("ee54c3de", "내 디바이스에서 바로 동영상을 저장하세요"),
-                n("ae03594c", "답글이 적은 게시물 부스트");
-            n("e6bb08c0", "답글의 노출도를 높이세요"),
+                n("ae03594c", "답글이 적은 게시물 부스트"),
+                n("e6bb08c0", "답글의 노출도를 높이세요"),
                 n("bf2a6acc", "답글 상위 표시"),
-                n("c2059276", "답글을 부스트하세요."),
-                n("b023ec20", "답글 부스트 극대화"),
+                n("c2059276", "답글을 부스트하세요.");
+            n("b023ec20", "답글 부스트 극대화"),
                 n("g337328e", "답글의 노출도를 최고로 높이세요"),
                 n("fa006202", "배경 동영상 재생"),
                 n("jf389778", "탐색하거나 다른 앱을 사용하는 중 동영상을 시청하세요"),
@@ -7064,14 +7059,14 @@
                 n("f0ad5cc8", "년"),
                 n("a0dc6e4c", "현재 이용할 수 없음"),
                 n("jd8b2e66", "구독 및 결제"),
-                n("ca784c0c", "Subscribe & pay with Apple"),
+                n("ca784c0c", "Apple로 구독 및 결제하기"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                n("afd61c76", "Or, save up to 30%"),
+                n("afd61c76", "또는 최대 30% 절약하기"),
                 n("i7fbacc4", "이용 가능한 구독 등급 간에 전환하기"),
                 n("c9cc122b", function (e) {
                     return e.title + "에는 " + e.feature + " 기능이 포함되어 있습니다";
@@ -7866,7 +7861,10 @@
                 n("ddfd6718", "결제 실패"),
                 n("i90ea7d2", "혜택을 계속 받으려면 지금 바로 결제 정보를 업데이트하세요."),
                 n("a62359e6", "인증된 조직 설정"),
-                n("ge221b7c", "인증된 조직 구독을 업그레이드하면 제휴 계정 기능을 이용하고 더 많은 광고 크레딧을 받을 수 있습니다.");
+                n("ge221b7c", "인증된 조직 구독을 업그레이드하면 제휴 계정 기능을 이용하고 더 많은 광고 크레딧을 받을 수 있습니다."),
+                n("i4dccc18", "결제"),
+                n("ec3cd6e4", "결제 방법을 관리하고, 결제 정보를 업데이트하고, 인보이스를 검토하세요."),
+                n("dac61c3c", "계정 설정");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7905,10 +7903,7 @@
                     d(e, c)
                 );
             }
-            n("i4dccc18", "결제"),
-                n("ec3cd6e4", "결제 방법을 관리하고, 결제 정보를 업데이트하고, 인보이스를 검토하세요."),
-                n("dac61c3c", "계정 설정"),
-                n("b6b5fd66", "사용자 아이디 또는 비밀번호 변경 등 내 X 계정을 관리합니다."),
+            n("b6b5fd66", "사용자 아이디 또는 비밀번호 변경 등 내 X 계정을 관리합니다."),
                 n("hb9c4a1c", "질문, 버그 신고 및 피드백"),
                 n("c674f5b4", "인보이스 결제 설정"),
                 n("i8237e66", "신용카드 결제에서 은행 송금을 통한 청구로 전환합니다."),
@@ -8910,15 +8905,15 @@
                 }),
                 n("ae408b76", "재게시했습니다"),
                 n("j355f008", "메인에 올린 게시물"),
-                n("habf9678", "작성자가 메인에 올렸습니다");
-            n("db0798ed", function (e) {
-                return e.topicName + " 토픽";
-            }),
+                n("habf9678", "작성자가 메인에 올렸습니다"),
+                n("db0798ed", function (e) {
+                    return e.topicName + " 토픽";
+                }),
                 n("dc716ec9", function (e) {
                     return "추천 토픽: " + e.topicName;
                 }),
-                n("fbc2003c", "종료됨"),
-                n("h5051dd8", "취소됨"),
+                n("fbc2003c", "종료됨");
+            n("h5051dd8", "취소됨"),
                 n("bb5f91a3", function (e) {
                     return e.count + " 이 스페이스";
                 }),
@@ -13235,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.c519310a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.00d1e77a.js.map

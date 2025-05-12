@@ -288,7 +288,7 @@
                 o("edf7f57e", "Provjerite svoju autentičnost kako biste ostvarili istaknute odgovore, analitiku, pregledavanje bez oglasa i još puno toga. Nadogradite svoj profil već sada."),
                 o("ba920d68", "Povećajte svoj utjecaj s provjerom autentičnosti"),
                 o("ib79d0c2", "Otključajte VIP značajke: potvrdite svoj račun"),
-                o("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                o("c0d3bd82", "Oglašavate se na platformi X, ali nemate pretplatu za Provjerene organizacije"),
                 o("d7836d1e", "Pretplatite se kako biste ostvarili do 12.000 USD besplatnih kredita za oglase, dobili zlatnu provjeru autentičnosti, VIP podršku i paket alata za razvoj."),
                 o("f528e369", function (a) {
                     return "Pretplatite se na " + a.tier + " da biste pisali vlastite članke";
@@ -1284,13 +1284,13 @@
                 o("c3f04d9c", "Razmišljam"),
                 o("cbdddb0a", "Završeno"),
                 o("e98cc293", function (a) {
-                    return "Searching for " + a.query;
+                    return "Pretraživanje za upit " + a.query;
                 }),
                 o("b0d1e205", function (a) {
                     return 'Traži se **"' + a.query + '"**';
                 }),
                 o("i2e0f4d7", function (a) {
-                    return "Browsing " + a.url + " for " + a.query;
+                    return "Pregledavanje " + a.url + " za upit " + a.query;
                 }),
                 o("acb9b845", function (a) {
                     return "Pregledava se " + a.url + ' za **"' + a.query + '"**';
@@ -1299,7 +1299,7 @@
                     return "Pretraživanje objava korisnika @" + a.username;
                 }),
                 o("f7d9cfb9", function (a) {
-                    return "Searching posts by @" + a.username + " for " + a.query;
+                    return "Pretraživanje objava korisnika/ce @" + a.username + " za upit " + a.query;
                 }),
                 o("bec7eb11", function (a) {
                     return "Pretraživanje objava korisnika @" + a.username + " za upit **„" + a.query + "”**";
@@ -4095,11 +4095,6 @@
                 o("h7033cac", "Poslali ste govornu poruku"),
                 o("i34ec422", "Podijelio/la je objavu"),
                 o("a4939874", "Podijelili ste objavu"),
-                o("a30a206e", "Shvaćam!"),
-                o("ib4b1b86", "Prikvačeni razgovori"),
-                o("bd3ca2ef", function (a) {
-                    return "Na nekom razgovoru odaberite izbornik s akcijama da biste ga, radi lakšeg pristupa, prikvačili na vrh. Odjednom možete prikvačiti najviše " + a.count + " razgovor" + n(a.count, "a", "", "a") + ".";
-                }),
                 o("e1c9ec9c", "Prikvačivanje razgovora"),
                 o("e3cfff7c", "Odgodi razgovor"),
                 o("f398722e", "Razgovor je odgođen"),
@@ -4334,10 +4329,10 @@
                 o("b52484b6", "Pretraživanje..."),
                 o("a4d9dbfa", "Misli"),
                 o("ib1c5475", function (a) {
-                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                    return "Razmišljanje je trajalo " + a.minutes + " min " + a.seconds + "s";
                 }),
                 o("a15d62db", function (a) {
-                    return "Thought for " + a.seconds + "s";
+                    return "Razmišljanje je trajalo " + a.seconds + " s";
                 }),
                 o("d7cb5408", "Relevantne web-stranice"),
                 o("aa7c96bb", function (a) {
@@ -4928,11 +4923,11 @@
                 o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa."),
                 o("if2909ba", "Vrijeme gledanja"),
                 o("i0e5bf4c", "Vaši videozapisi"),
-                o("ed99baea", "Rani pristup beta verziji");
-            o("gf898b70", "Napredno pretraživanje"),
+                o("ed99baea", "Rani pristup beta verziji"),
+                o("gf898b70", "Napredno pretraživanje"),
                 o("d2a43a7a", "sadrži i „ai” i „pokretanje”"),
-                o("a8584698", "AI pokretanje"),
-                o("jb6f9292", "sadrži točan izraz „ai pokretanje”"),
+                o("a8584698", "AI pokretanje");
+            o("jb6f9292", "sadrži točan izraz „ai pokretanje”"),
                 o("j8ee77c4", "„ai pokretanje”"),
                 o("d0480758", "sadrži ili „ai” ili „pokretanje” (ili oboje)"),
                 o("f0048fa2", "ai ILI pokretanje"),
@@ -5894,11 +5889,11 @@
                 o("i0ed3f4e", "Slika događaja"),
                 o("cbae35fa", "Prijavi prijenos uživo"),
                 o("fd12ab58", "Objave u Kolekciji"),
-                o("a226497c", "Stvaranje nove zajednice");
-            o("d7346632", "Niste se uključili ni u jednu Zajednicu."),
+                o("a226497c", "Stvaranje nove zajednice"),
+                o("d7346632", "Niste se uključili ni u jednu Zajednicu."),
                 o("b732a4cc", "Kada to učinite, vidjet ćete njegove/njezine objave ovdje."),
-                o("hff48914", "Trenutačno nije moguće pronaći nijednu objavu."),
-                o("hb52cc4a", "Pokušajte ponovno kasnije."),
+                o("hff48914", "Trenutačno nije moguće pronaći nijednu objavu.");
+            o("hb52cc4a", "Pokušajte ponovno kasnije."),
                 o("e50e1bb0", "Dobro došli u Zajednice"),
                 o("i6829daa", "Zajednice su moderirane grupe za raspravu u kojima se korisnici platforme X mogu povezivati i dijeliti sadržaj."),
                 o("fc5c6914", "Upoznajte druge osobe koje dijele vaše interese"),
@@ -6892,11 +6887,11 @@
                 o("e0198956", "Ostvarite udio u prihodu koji se generira kroz sudjelovanje provjerenih računa u sadržaju koji objavljujete na platformi X."),
                 o("iadf78e2", "Preuzimanje videozapisa"),
                 o("ee54c3de", "Spremite videozapise izravno na svoj uređaj"),
-                o("ae03594c", "Malo isticanje odgovora");
-            o("e6bb08c0", "Povećajte vidljivost odgovora"),
+                o("ae03594c", "Malo isticanje odgovora"),
+                o("e6bb08c0", "Povećajte vidljivost odgovora"),
                 o("bf2a6acc", "Veliko isticanje odgovora"),
-                o("c2059276", "Neka vaši odgovori budu istaknuti."),
-                o("b023ec20", "Maksimalno isticanje odgovora"),
+                o("c2059276", "Neka vaši odgovori budu istaknuti.");
+            o("b023ec20", "Maksimalno isticanje odgovora"),
                 o("g337328e", "Ostvarite najveću vidljivost svojih odgovora."),
                 o("fa006202", "Pozadinska reprodukcija videozapisa"),
                 o("jf389778", "Gledajte dok pregledavate ili upotrebljavate druge aplikacije"),
@@ -7068,14 +7063,14 @@
                 o("f0ad5cc8", "godišnje"),
                 o("a0dc6e4c", "Trenutačno nedostupno"),
                 o("jd8b2e66", "Pretplati se i plati"),
-                o("ca784c0c", "Subscribe & pay with Apple"),
+                o("ca784c0c", "Pretplatite se i plaćajte uz Apple"),
                 o("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 o("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
-                o("afd61c76", "Or, save up to 30%"),
+                o("afd61c76", "Ili uštedite do 30 %"),
                 o("i7fbacc4", "Prebacujte između dostupnih razina pretplate"),
                 o("c9cc122b", function (a) {
                     return "Značajka " + a.feature + " uključena je u " + a.title;
@@ -7870,7 +7865,10 @@
                 o("ddfd6718", "Plaćanje nije uspjelo"),
                 o("i90ea7d2", "Hitno ažurirajte podatke za naplatu da biste zadržali pogodnosti."),
                 o("a62359e6", "Postavke provjerenih organizacija"),
-                o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase.");
+                o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase."),
+                o("i4dccc18", "Naplata"),
+                o("ec3cd6e4", "Upravljajte načinom plaćanja, ažurirajte podatke za naplatu i pregledajte fakture."),
+                o("dac61c3c", "Postavke računa");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7909,10 +7907,7 @@
                     r(a, e)
                 );
             }
-            o("i4dccc18", "Naplata"),
-                o("ec3cd6e4", "Upravljajte načinom plaćanja, ažurirajte podatke za naplatu i pregledajte fakture."),
-                o("dac61c3c", "Postavke računa"),
-                o("b6b5fd66", "Upravljajte svojim računom za X, uključujući mijenjanje korisničkog imena i lozinke."),
+            o("b6b5fd66", "Upravljajte svojim računom za X, uključujući mijenjanje korisničkog imena i lozinke."),
                 o("hb9c4a1c", "Pitanja, izvješća o programskim pogreškama"),
                 o("c674f5b4", "Postavljanje plaćanja računa"),
                 o("i8237e66", "Prebacite se s plaćanja kreditnom karticom na plaćanja računa putem bankovnih transfera."),
@@ -8914,15 +8909,15 @@
                 }),
                 o("ae408b76", "Proslijedili ste objavu"),
                 o("j355f008", "Prikvačena objava"),
-                o("habf9678", "Prikvačio autor");
-            o("db0798ed", function (a) {
-                return "Tema " + a.topicName;
-            }),
+                o("habf9678", "Prikvačio autor"),
+                o("db0798ed", function (a) {
+                    return "Tema " + a.topicName;
+                }),
                 o("dc716ec9", function (a) {
                     return "Preporučena tema: " + a.topicName;
                 }),
-                o("fbc2003c", "Zatvoreno"),
-                o("h5051dd8", "Otkazano"),
+                o("fbc2003c", "Zatvoreno");
+            o("h5051dd8", "Otkazano"),
                 o("bb5f91a3", function (a) {
                     return a.count + " u ovom Prostoru";
                 }),
@@ -13238,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.0cc1755a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.b597bdfa.js.map

@@ -4088,11 +4088,6 @@
                 t("h7033cac", "Du hast eine Sprachnachricht gesendet"),
                 t("i34ec422", "Hat einen Post geteilt"),
                 t("a4939874", "Du hast einen Post geteilt"),
-                t("a30a206e", "Alles klar!"),
-                t("ib4b1b86", "Neu: Angeheftete Konversationen"),
-                t("bd3ca2ef", function (e) {
-                    return "Wenn du das Aktionsmenü für eine beliebige Konversation auswählst, kannst du sie oben anheften, damit sie leicht zugänglich wird. Du kannst bis zu " + e.count + " Konversation" + r(e.count, "", "en") + " gleichzeitig anheften.";
-                }),
                 t("e1c9ec9c", "Konversation anheften"),
                 t("e3cfff7c", "Konversation aussetzen"),
                 t("f398722e", "Konversation ausgesetzt"),
@@ -4921,11 +4916,11 @@
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
                 t("if2909ba", "Abspielzeit"),
                 t("i0e5bf4c", "Deine Videos"),
-                t("ed99baea", "Vorzeitiger Beta-Zugriff");
-            t("gf898b70", "Erweiterte Suche"),
+                t("ed99baea", "Vorzeitiger Beta-Zugriff"),
+                t("gf898b70", "Erweiterte Suche"),
                 t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
-                t("a8584698", "ai startup"),
-                t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
+                t("a8584698", "ai startup");
+            t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", "enthält „ai“ oder „startup“ (oder beide)"),
                 t("f0048fa2", "ai startup"),
@@ -5887,11 +5882,11 @@
                 t("i0ed3f4e", "Ereignisbild"),
                 t("cbae35fa", "Live-Video melden"),
                 t("fd12ab58", "Sammlungs-Posts"),
-                t("a226497c", "Neue Community erstellen");
-            t("d7346632", "Du bist noch keinen Communities beigetreten"),
+                t("a226497c", "Neue Community erstellen"),
+                t("d7346632", "Du bist noch keinen Communities beigetreten"),
                 t("b732a4cc", "Wenn es so weit ist, siehst du seine/ihre Posts hier."),
-                t("hff48914", "Zurzeit wurden keine Posts gefunden."),
-                t("hb52cc4a", "Bitte versuche es später erneut."),
+                t("hff48914", "Zurzeit wurden keine Posts gefunden.");
+            t("hb52cc4a", "Bitte versuche es später erneut."),
                 t("e50e1bb0", "Willkommen bei Communities"),
                 t("i6829daa", "Communities sind moderierte Diskussionsgruppen, in denen Leute auf X miteinander in Verbindung treten und sich austauschen können"),
                 t("fc5c6914", "Lerne andere mit den gleichen Interessen kennen"),
@@ -6885,11 +6880,11 @@
                 t("e0198956", "Erhalte einen Anteil an den Einnahmen aus der Interaktion verifizierter Accounts mit Inhalten, die du auf X postest."),
                 t("iadf78e2", "Videos herunterladen"),
                 t("ee54c3de", "Videos direkt auf deinem Gerät speichern"),
-                t("ae03594c", "Kleiner Boost für Antworten");
-            t("e6bb08c0", "Erhöhe die Sichtbarkeit deiner Antworten"),
+                t("ae03594c", "Kleiner Boost für Antworten"),
+                t("e6bb08c0", "Erhöhe die Sichtbarkeit deiner Antworten"),
                 t("bf2a6acc", "Großer Antwort-Boost"),
-                t("c2059276", "Lass deine Antworten boosten."),
-                t("b023ec20", "Maximaler Antwort-Boost"),
+                t("c2059276", "Lass deine Antworten boosten.");
+            t("b023ec20", "Maximaler Antwort-Boost"),
                 t("g337328e", "Höhere Sichtbarkeit für deine Antworten"),
                 t("fa006202", "Hintergrund-Videowiedergabe"),
                 t("jf389778", "Videos ansehen, während du blätterst oder andere Apps nutzt"),
@@ -7061,14 +7056,14 @@
                 t("f0ad5cc8", "Jahr"),
                 t("a0dc6e4c", "Derzeit nicht verfügbar"),
                 t("jd8b2e66", "Abonnieren und bezahlen"),
-                t("ca784c0c", "Subscribe & pay with Apple"),
+                t("ca784c0c", "Mit Apple abonnieren und zahlen"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                t("afd61c76", "Or, save up to 30%"),
+                t("afd61c76", "Oder bis zu 30 % sparen"),
                 t("i7fbacc4", "Zwischen den verfügbaren Abonnementstufen wechseln"),
                 t("c9cc122b", function (e) {
                     return e.feature + " ist in " + e.title + " enthalten";
@@ -7863,7 +7858,10 @@
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
                 t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
                 t("a62359e6", "Einstellungen für Verifizierte Organisation"),
-                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest.");
+                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
+                t("i4dccc18", "Rechnungsstellung"),
+                t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
+                t("dac61c3c", "Account-Einstellungen");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7902,10 +7900,7 @@
                     d(e, n)
                 );
             }
-            t("i4dccc18", "Rechnungsstellung"),
-                t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
-                t("dac61c3c", "Account-Einstellungen"),
-                t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
+            t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
                 t("hb9c4a1c", "Fragen stellen, Fehler melden, Feedback geben"),
                 t("c674f5b4", "Rechnungszahlungen einrichten"),
                 t("i8237e66", "Wechsle von Zahlungen per Kreditkarte zu Banküberweisungen."),
@@ -8907,15 +8902,15 @@
                 }),
                 t("ae408b76", "Du hast repostet"),
                 t("j355f008", "Angehefteter Post"),
-                t("habf9678", "Angeheftet von Autor*in");
-            t("db0798ed", function (e) {
-                return "Thema " + e.topicName;
-            }),
+                t("habf9678", "Angeheftet von Autor*in"),
+                t("db0798ed", function (e) {
+                    return "Thema " + e.topicName;
+                }),
                 t("dc716ec9", function (e) {
                     return "Empfohlenes Thema: " + e.topicName;
                 }),
-                t("fbc2003c", "Beendet"),
-                t("h5051dd8", "Storniert"),
+                t("fbc2003c", "Beendet");
+            t("h5051dd8", "Storniert"),
                 t("bb5f91a3", function (e) {
                     return e.count + " in diesem Space";
                 }),
@@ -13230,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.3956ddfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.212a234a.js.map

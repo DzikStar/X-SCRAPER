@@ -4092,11 +4092,6 @@
                 o("h7033cac", "آپ نے ایک صوتی پیغام بھیجا"),
                 o("i34ec422", "Shared a post"),
                 o("a4939874", "You shared a post"),
-                o("a30a206e", "ٹھیک ہے!"),
-                o("ib4b1b86", "پیش ہیں پِن کی گئی گفتگوئیں"),
-                o("bd3ca2ef", function (e) {
-                    return "آسان رسائی کے لیے کسی بھی گفتگو کو اوپری حصے میں پن کرنے کے لیے ایکشن مینو کو منتخب کریں۔ آپ ایک وقت میں " + e.count + " گفتگو" + n(e.count, "", "ؤں") + " تک کو پن کر سکتے ہیں۔";
-                }),
                 o("e1c9ec9c", "گقتگو کو پن کریں"),
                 o("e3cfff7c", "گفتگو کو اسنوز کریں"),
                 o("f398722e", "گفتگو کو اسنوز کر دیا گیا"),
@@ -4925,11 +4920,11 @@
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access");
-            o("gf898b70", "Advanced Search"),
+                o("ed99baea", "Early Beta Access"),
+                o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
-                o("a8584698", "ai startup"),
-                o("jb6f9292", 'contains the exact phrase "ai startup"'),
+                o("a8584698", "ai startup");
+            o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
                 o("d0480758", 'contains either "ai" or "startup" (or both)'),
                 o("f0048fa2", "ai OR startup"),
@@ -5891,11 +5886,11 @@
                 o("i0ed3f4e", "ایونٹ کی تصویر"),
                 o("cbae35fa", "نشریہ کی رپورٹ کریں"),
                 o("fd12ab58", "Collection posts"),
-                o("a226497c", "ایک نئی کمیونٹی بنائيں");
-            o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
+                o("a226497c", "ایک نئی کمیونٹی بنائيں"),
+                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
                 o("b732a4cc", "When you do, you’ll see their posts here."),
-                o("hff48914", "No posts could be found at this time."),
-                o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
+                o("hff48914", "No posts could be found at this time.");
+            o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
                 o("e50e1bb0", "Welcome to Communities"),
                 o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 o("fc5c6914", "اپنی جیسی دلچسپیوں والے دیگر افراد سے ملیں"),
@@ -6889,11 +6884,11 @@
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
                 o("ee54c3de", "Save videos straight to your device"),
-                o("ae03594c", "Small reply boost");
-            o("e6bb08c0", "Increase the visibility of your replies"),
+                o("ae03594c", "Small reply boost"),
+                o("e6bb08c0", "Increase the visibility of your replies"),
                 o("bf2a6acc", "Large Reply Boost"),
-                o("c2059276", "Have your replies boosted."),
-                o("b023ec20", "Max Reply Boost"),
+                o("c2059276", "Have your replies boosted.");
+            o("b023ec20", "Max Reply Boost"),
                 o("g337328e", "Get the highest visibility for your replies."),
                 o("fa006202", "Background video playback"),
                 o("jf389778", "Watch while browsing or using other apps"),
@@ -7867,7 +7862,10 @@
                 o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                o("i4dccc18", "Billing"),
+                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                o("dac61c3c", "Account settings");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7906,10 +7904,7 @@
                     c(e, t)
                 );
             }
-            o("i4dccc18", "Billing"),
-                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                o("dac61c3c", "Account settings"),
-                o("b6b5fd66", "Manage your X account including changing your username or password."),
+            o("b6b5fd66", "Manage your X account including changing your username or password."),
                 o("hb9c4a1c", "Questions, bug reports and feedback"),
                 o("c674f5b4", "Setup invoice payments"),
                 o("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8911,15 +8906,15 @@
                 }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
-                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا");
-            o("db0798ed", function (e) {
-                return e.topicName + " موضوع";
-            }),
+                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا"),
+                o("db0798ed", function (e) {
+                    return e.topicName + " موضوع";
+                }),
                 o("dc716ec9", function (e) {
                     return "تجویز کردہ موضوع: " + e.topicName;
                 }),
-                o("fbc2003c", "اختتام ہوا"),
-                o("h5051dd8", "Canceled"),
+                o("fbc2003c", "اختتام ہوا");
+            o("h5051dd8", "Canceled"),
                 o("bb5f91a3", function (e) {
                     return e.count + " اس Space میں";
                 }),
@@ -13225,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.f8fa32ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.f46a762a.js.map

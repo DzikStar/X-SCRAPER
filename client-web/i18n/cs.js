@@ -290,7 +290,7 @@
                 a("edf7f57e", "Získejte ověření pro lepší odpovědi, analýzy, prohlížení bez reklam a další. Upgradujte svůj profil nyní."),
                 a("ba920d68", "Zvyšte svůj vliv pomocí ověření"),
                 a("ib79d0c2", "Odemkněte funkce VIP: ověřte svůj účet"),
-                a("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                a("c0d3bd82", "Inzerovali jste na X, nemáte ale předplatné pro Ověřené organizace"),
                 a("d7836d1e", "Přihlaste se k odběru a získejte bezplatný kredit na reklamu ve výši až 12 000 USD, zlaté ověření, VIP podporu a sadu nástrojů pro růst."),
                 a("f528e369", function (e) {
                     return "Pokud chcete psát své vlastní články, přihlaste se k odběru " + e.tier;
@@ -1286,13 +1286,13 @@
                 a("c3f04d9c", "Přemýšlení"),
                 a("cbdddb0a", "Dokončeno"),
                 a("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Vyhledávání dotazu " + e.query;
                 }),
                 a("b0d1e205", function (e) {
                     return 'Vyhledávání **"' + e.query + '"**';
                 }),
                 a("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Procházení " + e.url + " na dotaz " + e.query;
                 }),
                 a("acb9b845", function (e) {
                     return "Procházení " + e.url + ' na dotaz **"' + e.query + '"**';
@@ -1301,7 +1301,7 @@
                     return "Vyhledávání postů uživatelem @" + e.username;
                 }),
                 a("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Vyhledávání postů uživatele @" + e.username + " na dotaz " + e.query;
                 }),
                 a("bec7eb11", function (e) {
                     return "Vyhledávání postů uživatele @" + e.username + ' pro **"' + e.query + '"**';
@@ -4097,11 +4097,6 @@
                 a("h7033cac", "Odeslali jste hlasovou zprávu"),
                 a("i34ec422", "Sdílel post"),
                 a("a4939874", "Sdíleli jste post"),
-                a("a30a206e", "Rozumím"),
-                a("ib4b1b86", "Představujeme připnuté konverzace"),
-                a("bd3ca2ef", function (e) {
-                    return "Výběrem nabídky akcí u libovolné konverzace ji můžete připnout nahoru, abyste k ní měli snadný přístup. Připnout můžete maximálně " + e.count + " konverzac" + n(e.count, "e", "í", "i", "í") + ".";
-                }),
                 a("e1c9ec9c", "Připnout konverzaci"),
                 a("e3cfff7c", "Ztišit konverzaci"),
                 a("f398722e", "Konverzace byla ztišena"),
@@ -4162,7 +4157,7 @@
                 a("f388a7ec", "DeepSearch"),
                 a("ab1eb384", "Vyberte si požadovaný režim vyhledávání"),
                 a("i330e54c", "Pokročilé vyhledávání a uvažování"),
-                a("fdcce108", "DeeperSearch"),
+                a("fdcce108", "Podrobnější hledání"),
                 a("ac64b674", "Rozšířené vyhledávání, hlubší uvažování"),
                 a("j22655f2", "Zeptejte se na cokoli"),
                 a("h0681e3e", "Promluvte si s Grokem, naším asistentem s umělou inteligencí"),
@@ -4336,10 +4331,10 @@
                 a("b52484b6", "Hledání..."),
                 a("a4d9dbfa", "Myšlenky"),
                 a("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Promýšleno po dobu " + e.minutes + " m " + e.seconds + " s";
                 }),
                 a("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Promýšleno po dobu " + e.seconds + " s";
                 }),
                 a("d7cb5408", "Relevantní webové stránky"),
                 a("aa7c96bb", function (e) {
@@ -4930,11 +4925,11 @@
                 a("e41fffbc", "Celkový čas sledování vašich videí."),
                 a("if2909ba", "Čas sledování"),
                 a("i0e5bf4c", "Vaše videa"),
-                a("ed99baea", "Brzký přístup k beta verzi");
-            a("gf898b70", "Pokročilé hledání"),
+                a("ed99baea", "Brzký přístup k beta verzi"),
+                a("gf898b70", "Pokročilé hledání"),
                 a("d2a43a7a", "obsahuje jak „ai“, tak i „startup“"),
-                a("a8584698", "ai startup"),
-                a("jb6f9292", "obsahuje přesně frázi „ai startup“"),
+                a("a8584698", "ai startup");
+            a("jb6f9292", "obsahuje přesně frázi „ai startup“"),
                 a("j8ee77c4", "„ai startup“"),
                 a("d0480758", "obsahuje „ai“ nebo „startup“ (nebo oboje)"),
                 a("f0048fa2", "ai NEBO startup"),
@@ -5896,11 +5891,11 @@
                 a("i0ed3f4e", "Obrázek události"),
                 a("cbae35fa", "Nahlásit vysílání"),
                 a("fd12ab58", "Posty v kolekci"),
-                a("a226497c", "Vytvoření nové komunity");
-            a("d7346632", "Zatím jste se nezapojili do žádných komunit"),
+                a("a226497c", "Vytvoření nové komunity"),
+                a("d7346632", "Zatím jste se nezapojili do žádných komunit"),
                 a("b732a4cc", "Až to uděláte, uvidíte jejich posty tady."),
-                a("hff48914", "Nepodařilo se najít žádné posty."),
-                a("hb52cc4a", "Zkuste to za chvíli."),
+                a("hff48914", "Nepodařilo se najít žádné posty.");
+            a("hb52cc4a", "Zkuste to za chvíli."),
                 a("e50e1bb0", "Vítají vás komunity"),
                 a("i6829daa", "Komunity představují moderované diskusní skupiny, ve kterých můžou lidé na platformě X konverzovat a sdílet obsah."),
                 a("fc5c6914", "Setkejte se s dalšími lidmi s podobnými zájmy"),
@@ -6894,11 +6889,11 @@
                 a("e0198956", "Získejte podíl na příjmech ze zapojení ověřených účtů s obsahem, který zveřejníte na X."),
                 a("iadf78e2", "Stáhnout videa"),
                 a("ee54c3de", "Uložte si videa přímo do vašeho zařízení"),
-                a("ae03594c", "Malé boostování odpovědi");
-            a("e6bb08c0", "Zvyšte viditelnost svých odpovědí"),
+                a("ae03594c", "Malé boostování odpovědi"),
+                a("e6bb08c0", "Zvyšte viditelnost svých odpovědí"),
                 a("bf2a6acc", "Velké zvýšení odpovědi"),
-                a("c2059276", "Nechte si své odpovědi boostovat."),
-                a("b023ec20", "Maximální zvýšení odpovědi"),
+                a("c2059276", "Nechte si své odpovědi boostovat.");
+            a("b023ec20", "Maximální zvýšení odpovědi"),
                 a("g337328e", "Získejte nejvyšší viditelnost svých odpovědí."),
                 a("fa006202", "Přehrávání videa na pozadí"),
                 a("jf389778", "Sledujte zatímco budete prohlížet nebo používat jiné aplikace"),
@@ -7070,14 +7065,14 @@
                 a("f0ad5cc8", "rok"),
                 a("a0dc6e4c", "Aktuálně nedostupné"),
                 a("jd8b2e66", "Odebírat a zaplatit"),
-                a("ca784c0c", "Subscribe & pay with Apple"),
+                a("ca784c0c", "Odebírejte a plaťte přes Apple"),
                 a("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 a("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                a("afd61c76", "Or, save up to 30%"),
+                a("afd61c76", "Nebo ušetřete až 30 %"),
                 a("i7fbacc4", "Přepínejte mezi dostupnými úrovněmi předplatného"),
                 a("c9cc122b", function (e) {
                     return e.feature + " je zahrnut v " + e.title;
@@ -7872,7 +7867,10 @@
                 a("ddfd6718", "Platba selhala"),
                 a("i90ea7d2", "Urychleně aktualizujte svoje vyúčtování, abyste si zachovali výhody."),
                 a("a62359e6", "Nastavení Ověřených organizací"),
-                a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů.");
+                a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů."),
+                a("i4dccc18", "Vyúčtování"),
+                a("ec3cd6e4", "Spravujte svůj způsob platby, aktualizujte fakturační údaje a kontrolujte své faktury."),
+                a("dac61c3c", "Nastavení účtu");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7911,10 +7909,7 @@
                     i(e, o)
                 );
             }
-            a("i4dccc18", "Vyúčtování"),
-                a("ec3cd6e4", "Spravujte svůj způsob platby, aktualizujte fakturační údaje a kontrolujte své faktury."),
-                a("dac61c3c", "Nastavení účtu"),
-                a("b6b5fd66", "Spravujte svůj účet X včetně změny uživatelského jména nebo hesla."),
+            a("b6b5fd66", "Spravujte svůj účet X včetně změny uživatelského jména nebo hesla."),
                 a("hb9c4a1c", "Otázky, zprávy o chybách a zpětná vazba"),
                 a("c674f5b4", "Nastavení plateb faktur"),
                 a("i8237e66", "Přejděte z plateb kartou na fakturaci bankovním převodem."),
@@ -8916,15 +8911,15 @@
                 }),
                 a("ae408b76", "Repostovali jste"),
                 a("j355f008", "Připnutý post"),
-                a("habf9678", "Připnuto autorem");
-            a("db0798ed", function (e) {
-                return "Téma " + e.topicName;
-            }),
+                a("habf9678", "Připnuto autorem"),
+                a("db0798ed", function (e) {
+                    return "Téma " + e.topicName;
+                }),
                 a("dc716ec9", function (e) {
                     return "Doporučované téma: " + e.topicName;
                 }),
-                a("fbc2003c", "Ukončen"),
-                a("h5051dd8", "Zrušeno"),
+                a("fbc2003c", "Ukončen");
+            a("h5051dd8", "Zrušeno"),
                 a("bb5f91a3", function (e) {
                     return e.count + " v tomto Prostoru";
                 }),
@@ -13228,4 +13223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.2c85e30a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.0febdb4a.js.map

@@ -4087,11 +4087,6 @@
                 o("h7033cac", "Enviaste un mensaje de voz"),
                 o("i34ec422", "Compartió un post"),
                 o("a4939874", "Compartiste un post"),
-                o("a30a206e", "¡Entendido!"),
-                o("ib4b1b86", "Presentamos las conversaciones fijadas"),
-                o("bd3ca2ef", function (e) {
-                    return "Selecciona el menú de acciones en cualquier conversación para fijarla a la parte superior y acceder a ella fácilmente. Puedes fijar hasta " + e.count + " conversaci" + r(e.count, "ón", "ones") + " simultáneamente.";
-                }),
                 o("e1c9ec9c", "Fijar conversación"),
                 o("e3cfff7c", "Aplazar conversación"),
                 o("f398722e", "Conversación aplazada"),
@@ -4920,11 +4915,11 @@
                 o("e41fffbc", "El tiempo total de reproducción de tus videos."),
                 o("if2909ba", "Tiempo de reproducción"),
                 o("i0e5bf4c", "Tus videos"),
-                o("ed99baea", "Acceso anticipado a la versión beta");
-            o("gf898b70", "Búsqueda avanzada"),
+                o("ed99baea", "Acceso anticipado a la versión beta"),
+                o("gf898b70", "Búsqueda avanzada"),
                 o("d2a43a7a", 'contiene "ai" y "startup"'),
-                o("a8584698", "ai startup"),
-                o("jb6f9292", 'contiene la frase exacta "ai startup"'),
+                o("a8584698", "ai startup");
+            o("jb6f9292", 'contiene la frase exacta "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
                 o("d0480758", 'contiene "ai" o "startup" (o ambos)'),
                 o("f0048fa2", "ai O startup"),
@@ -5886,11 +5881,11 @@
                 o("i0ed3f4e", "Imagen del evento"),
                 o("cbae35fa", "Denunciar transmisión"),
                 o("fd12ab58", "Posts de colección"),
-                o("a226497c", "Crear una Comunidad nueva");
-            o("d7346632", "Todavía no te uniste a ninguna Comunidad"),
+                o("a226497c", "Crear una Comunidad nueva"),
+                o("d7346632", "Todavía no te uniste a ninguna Comunidad"),
                 o("b732a4cc", "Cuando lo hagas, verás sus posts aquí."),
-                o("hff48914", "No se encontraron posts en este momento."),
-                o("hb52cc4a", "Por favor, inténtalo de nuevo más tarde."),
+                o("hff48914", "No se encontraron posts en este momento.");
+            o("hb52cc4a", "Por favor, inténtalo de nuevo más tarde."),
                 o("e50e1bb0", "Te damos la bienvenida a Comunidades"),
                 o("i6829daa", "Las Comunidades son grupos de conversación moderados, donde las personas en X pueden conectarse y compartir."),
                 o("fc5c6914", "Conoce a otras personas con tus mismos intereses"),
@@ -6884,11 +6879,11 @@
                 o("e0198956", "Obtén una cuota de los ingresos generados por las interacciones de cuentas verificadas con contenido que postees en X."),
                 o("iadf78e2", "Descargar videos"),
                 o("ee54c3de", "Guarda videos directamente en tu dispositivo"),
-                o("ae03594c", "Aplicación de boost a respuesta corta");
-            o("e6bb08c0", "Aumenta la visibilidad de tus respuestas."),
+                o("ae03594c", "Aplicación de boost a respuesta corta"),
+                o("e6bb08c0", "Aumenta la visibilidad de tus respuestas."),
                 o("bf2a6acc", "Gran boost en las respuestas"),
-                o("c2059276", "Tus respuestas recibirán boost."),
-                o("b023ec20", "Máximo boost en las respuestas"),
+                o("c2059276", "Tus respuestas recibirán boost.");
+            o("b023ec20", "Máximo boost en las respuestas"),
                 o("g337328e", "Consigue la máxima visibilidad para tus respuestas."),
                 o("fa006202", "Reproducción de video en segundo plano"),
                 o("jf389778", "Ve videos mientras navegas o usas otras apps"),
@@ -7862,7 +7857,10 @@
                 o("ddfd6718", "Error en el pago"),
                 o("i90ea7d2", "Actualiza tu facturación de inmediato para mantener tus beneficios."),
                 o("a62359e6", "Configuración de Organizaciones verificadas"),
-                o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios.");
+                o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios."),
+                o("i4dccc18", "Facturación"),
+                o("ec3cd6e4", "Administra tu forma de pago, actualiza la información de pago y revisa tus facturas."),
+                o("dac61c3c", "Configuración de la cuenta");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7901,10 +7899,7 @@
                     i(e, a)
                 );
             }
-            o("i4dccc18", "Facturación"),
-                o("ec3cd6e4", "Administra tu forma de pago, actualiza la información de pago y revisa tus facturas."),
-                o("dac61c3c", "Configuración de la cuenta"),
-                o("b6b5fd66", "Administra tu cuenta de X, incluido el cambio de nombre de usuario o contraseña."),
+            o("b6b5fd66", "Administra tu cuenta de X, incluido el cambio de nombre de usuario o contraseña."),
                 o("hb9c4a1c", "Preguntas, informes de errores y comentarios"),
                 o("c674f5b4", "Configurar el pago de facturas"),
                 o("i8237e66", "Pasa de los pagos con tarjeta de crédito a la facturación mediante transferencias bancarias."),
@@ -8906,15 +8901,15 @@
                 }),
                 o("ae408b76", "Reposteaste"),
                 o("j355f008", "Post fijado"),
-                o("habf9678", "Anclado por el autor");
-            o("db0798ed", function (e) {
-                return "Tema " + e.topicName;
-            }),
+                o("habf9678", "Anclado por el autor"),
+                o("db0798ed", function (e) {
+                    return "Tema " + e.topicName;
+                }),
                 o("dc716ec9", function (e) {
                     return "Tema recomendado: " + e.topicName;
                 }),
-                o("fbc2003c", "Finalizó"),
-                o("h5051dd8", "Cancelado"),
+                o("fbc2003c", "Finalizó");
+            o("h5051dd8", "Cancelado"),
                 o("bb5f91a3", function (e) {
                     return e.count + " en este Espacio";
                 }),
@@ -13228,4 +13223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.ba6d1aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.333bfaba.js.map

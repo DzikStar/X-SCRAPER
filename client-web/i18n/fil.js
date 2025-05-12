@@ -4088,11 +4088,6 @@
                 i("h7033cac", "Nagpadala ka ng voice message"),
                 i("i34ec422", "Nag-share ng post"),
                 i("a4939874", "Nag-share ka ng post"),
-                i("a30a206e", "Okay!"),
-                i("ib4b1b86", "Ipinakikilala ang mga naka-pin na usapan"),
-                i("bd3ca2ef", function (a) {
-                    return "Piliin ang menu ng mga pagkilos sa anumang usapan para i-pin ito sa itaas para sa mabilis na access. Puwede kang mag-pin ng hanggang " + a.count + " " + e(a.count, "", "(na) ") + "usapan sa bawat pagkakataon.";
-                }),
                 i("e1c9ec9c", "I-pin ang usapan"),
                 i("e3cfff7c", "I-snooze ang usapan"),
                 i("f398722e", "Na-snooze ang usapan"),
@@ -4921,11 +4916,11 @@
                 i("e41fffbc", "Ang kabuuang tagal ng panonood ng mga video mo."),
                 i("if2909ba", "Tagal ng Panonood"),
                 i("i0e5bf4c", "Mga video mo"),
-                i("ed99baea", "Maagang Beta Access");
-            i("gf898b70", "Advanced na Paghahanap"),
+                i("ed99baea", "Maagang Beta Access"),
+                i("gf898b70", "Advanced na Paghahanap"),
                 i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
-                i("a8584698", "ai startup"),
-                i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
+                i("a8584698", "ai startup");
+            i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
                 i("j8ee77c4", '"ai startup"'),
                 i("d0480758", 'naglalaman ng "ai" o "startup" (o pareho)'),
                 i("f0048fa2", "ai O startup"),
@@ -5887,11 +5882,11 @@
                 i("i0ed3f4e", "Larawan ng kaganapan"),
                 i("cbae35fa", "Iulat ang Broadcast"),
                 i("fd12ab58", "Mga post ng Koleksyon"),
-                i("a226497c", "Gumawa ng bagong Komunidad");
-            i("d7346632", "Wala ka pang sinasalihang anumang Komunidad"),
+                i("a226497c", "Gumawa ng bagong Komunidad"),
+                i("d7346632", "Wala ka pang sinasalihang anumang Komunidad"),
                 i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
-                i("hff48914", "Walang mahanap na post sa ngayon."),
-                i("hb52cc4a", "Subukan ulit mamaya."),
+                i("hff48914", "Walang mahanap na post sa ngayon.");
+            i("hb52cc4a", "Subukan ulit mamaya."),
                 i("e50e1bb0", "Welcome sa Mga Komunidad"),
                 i("i6829daa", "Mga mino-moderate na grupo ng talakayan ang Mga Komunidad kung saan puwedeng kumonekta at magbahagi ang mga tao sa X."),
                 i("fc5c6914", "Kilalanin ang ibang tao na kapareho mo ng mga interes"),
@@ -6885,11 +6880,11 @@
                 i("e0198956", "Makakuha ng share sa revenue na nakukuha mula sa pakikipag-ugnayan ng mga na-verify na account sa content na pino-post mo sa X."),
                 i("iadf78e2", "I-download ang mga video"),
                 i("ee54c3de", "I-save ang mga video sa mismong device mo"),
-                i("ae03594c", "Kaunting pag-boost ng reply");
-            i("e6bb08c0", "Pataasin ang visibilty ng mga reply mo"),
+                i("ae03594c", "Kaunting pag-boost ng reply"),
+                i("e6bb08c0", "Pataasin ang visibilty ng mga reply mo"),
                 i("bf2a6acc", "Malaking Pag-boost ng Reply"),
-                i("c2059276", "I-boost ang mga reply mo."),
-                i("b023ec20", "Max na Pag-boost ng Reply"),
+                i("c2059276", "I-boost ang mga reply mo.");
+            i("b023ec20", "Max na Pag-boost ng Reply"),
                 i("g337328e", "Makakuha ng pinakamataas na visibility para sa mga reply mo."),
                 i("fa006202", "Pag-playback ng video sa background"),
                 i("jf389778", "Manood habang nagba-browse o gamitin ang ibang app"),
@@ -7061,14 +7056,14 @@
                 i("f0ad5cc8", "taon"),
                 i("a0dc6e4c", "Hindi available sa ngayon"),
                 i("jd8b2e66", "Mag-subscribe at magbayad"),
-                i("ca784c0c", "Subscribe & pay with Apple"),
+                i("ca784c0c", "Mg-subscribe at magbayad gamit ang Apple"),
                 i("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 i("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
-                i("afd61c76", "Or, save up to 30%"),
+                i("afd61c76", "O, makatipid ng hanggang 30%"),
                 i("i7fbacc4", "Magpalipat-lipat sa mga available na subscription tier"),
                 i("c9cc122b", function (a) {
                     return "Kasama ang " + a.feature + " sa " + a.title;
@@ -7863,7 +7858,10 @@
                 i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
                 i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
                 i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
-                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. ");
+                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
+                i("i4dccc18", "Billing"),
+                i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
+                i("dac61c3c", "Mga setting ng account");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7902,10 +7900,7 @@
                     o(a, n)
                 );
             }
-            i("i4dccc18", "Billing"),
-                i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
-                i("dac61c3c", "Mga setting ng account"),
-                i("b6b5fd66", "Pamahalaan ang X account mo kasama ang pagpapalit ng username o password mo."),
+            i("b6b5fd66", "Pamahalaan ang X account mo kasama ang pagpapalit ng username o password mo."),
                 i("hb9c4a1c", "Mga tanong, bug report, at feedback"),
                 i("c674f5b4", "I-set up ang mga pagbabayad ng invoice"),
                 i("i8237e66", "Lumipat mula sa mga pagbabayad gamit ang credit card papunta sa pag-invoice gamit ang mga bank transfer."),
@@ -8907,15 +8902,15 @@
                 }),
                 i("ae408b76", "Nag-repost ka"),
                 i("j355f008", "Naka-pin na post"),
-                i("habf9678", "Na-pin ng Author");
-            i("db0798ed", function (a) {
-                return "Paksang " + a.topicName;
-            }),
+                i("habf9678", "Na-pin ng Author"),
+                i("db0798ed", function (a) {
+                    return "Paksang " + a.topicName;
+                }),
                 i("dc716ec9", function (a) {
                     return "Inirerekomendang Paksa: " + a.topicName;
                 }),
-                i("fbc2003c", "Tapos na"),
-                i("h5051dd8", "Kinansela"),
+                i("fbc2003c", "Tapos na");
+            i("h5051dd8", "Kinansela"),
                 i("bb5f91a3", function (a) {
                     return a.count + " sa Space na ito";
                 }),
@@ -13229,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.5c4cf31a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.0b59355a.js.map

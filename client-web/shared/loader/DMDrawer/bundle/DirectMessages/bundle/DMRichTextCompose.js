@@ -101,10 +101,6 @@
                     return a.createElement(i.Z, { role: "dialog", style: t ? v.flatCorners : v.roundCorners }, S ? a.createElement(s.Z, { Icon: d.default, actionSubText: y, actionText: n ? g : _, onClick: w, textColor: "red500" }) : null, T ? a.createElement(s.Z, { Icon: u.default, actionSubText: h, actionText: m({ screenName: E }), onClick: P }) : null, a.createElement(s.Z, { Icon: p.default, actionSubText: C, actionText: n ? b : f({ screenName: E }), onClick: I }), k ? a.createElement(r.ZP, { onPress: e, style: v.cancelButton, type: "primaryOutlined" }, x) : null);
                 };
         },
-        715913: (e, t, n) => {
-            n.d(t, { Z: () => a });
-            const a = n(202784).createContext({ isDrawer: !1 });
-        },
         716354: (e, t, n) => {
             n.d(t, { Z: () => m });
             var a = n(202784),
@@ -1027,4 +1023,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose.3b2bad2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose.6d6dd81a.js.map

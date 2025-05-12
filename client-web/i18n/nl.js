@@ -4088,11 +4088,6 @@
                 a("h7033cac", "Je hebt een spraakbericht verstuurd"),
                 a("i34ec422", "Heeft een post gedeeld"),
                 a("a4939874", "Je hebt een post gedeeld"),
-                a("a30a206e", "Ik snap het!"),
-                a("ib4b1b86", "Nieuw: vastgemaakte gesprekken"),
-                a("bd3ca2ef", function (e) {
-                    return "Selecteer het actiemenu op een gesprek om het bovenaan vast te maken zodat je er eenvoudig toegang hebt. Je kan maximaal " + e.count + " gesprek" + r(e.count, "", "ken") + " tegelijk vastmaken.";
-                }),
                 a("e1c9ec9c", "Gesprek vastmaken"),
                 a("e3cfff7c", "Gesprek op snooze zetten"),
                 a("f398722e", "Gesprek gesnoozed"),
@@ -4921,11 +4916,11 @@
                 a("e41fffbc", "De totale kijktijd van je video's."),
                 a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang");
-            a("gf898b70", "Geavanceerd zoeken"),
+                a("ed99baea", "Vroege bèta-toegang"),
+                a("gf898b70", "Geavanceerd zoeken"),
                 a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
-                a("a8584698", "ai start-up"),
-                a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
+                a("a8584698", "ai start-up");
+            a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
                 a("j8ee77c4", '"ai start-up"'),
                 a("d0480758", "bevat 'ai' of 'start-up' (of beide)"),
                 a("f0048fa2", "ai OR start-up"),
@@ -5887,11 +5882,11 @@
                 a("i0ed3f4e", "Afbeelding gebeurtenis"),
                 a("cbae35fa", "Uitzending rapporteren"),
                 a("fd12ab58", "Postverzameling"),
-                a("a226497c", "Een nieuwe Community maken");
-            a("d7346632", "Je bent nog geen lid geworden van community's"),
+                a("a226497c", "Een nieuwe Community maken"),
+                a("d7346632", "Je bent nog geen lid geworden van community's"),
                 a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
-                a("hff48914", "We kunnen nu geen posts vinden."),
-                a("hb52cc4a", "Probeer het later nog eens."),
+                a("hff48914", "We kunnen nu geen posts vinden.");
+            a("hb52cc4a", "Probeer het later nog eens."),
                 a("e50e1bb0", "Welkom bij Community's"),
                 a("i6829daa", "Community's zijn gemodereerde discussiegroepen waar mensen op X met elkaar in contact kunnen komen en dingen kunnen delen."),
                 a("fc5c6914", "Ontmoet anderen met dezelfde interesses"),
@@ -6885,11 +6880,11 @@
                 a("e0198956", "Ontvang een deel van de inkomsten die worden gegenereerd door interacties van geverifieerde accounts met content die jij op X plaatst."),
                 a("iadf78e2", "Video's downloaden"),
                 a("ee54c3de", "Sla video's rechtstreeks op je apparaat op"),
-                a("ae03594c", "Kleine Antwoordboost");
-            a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
+                a("ae03594c", "Kleine Antwoordboost"),
+                a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
                 a("bf2a6acc", "Grote Antwoordboost"),
-                a("c2059276", "Zorg dat je antwoorden worden geboost."),
-                a("b023ec20", "Maximale Antwoordboost"),
+                a("c2059276", "Zorg dat je antwoorden worden geboost.");
+            a("b023ec20", "Maximale Antwoordboost"),
                 a("g337328e", "Krijg de meeste zichtbaarheid van je antwoorden"),
                 a("fa006202", "Video afspelen in de achtergrond"),
                 a("jf389778", "Kijk terwijl je browset of andere apps gebruikt"),
@@ -7863,7 +7858,10 @@
                 a("ddfd6718", "Betaling mislukt"),
                 a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
                 a("a62359e6", "Instellingen Geverifieerde Organisaties"),
-                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed.");
+                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
+                a("i4dccc18", "Facturering"),
+                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
+                a("dac61c3c", "Accountinstellingen");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7902,10 +7900,7 @@
                     o(e, n)
                 );
             }
-            a("i4dccc18", "Facturering"),
-                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
-                a("dac61c3c", "Accountinstellingen"),
-                a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
+            a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
                 a("hb9c4a1c", "Vragen, meldingen van bugs en feedback"),
                 a("c674f5b4", "Factuurbetalingen instellen"),
                 a("i8237e66", "Schakel over van creditcardbetalingen naar facturering via bankoverschrijving."),
@@ -8907,15 +8902,15 @@
                 }),
                 a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
                 a("j355f008", "Vastgemaakte post"),
-                a("habf9678", "Vastgemaakt door auteur");
-            a("db0798ed", function (e) {
-                return "Onderwerp " + e.topicName;
-            }),
+                a("habf9678", "Vastgemaakt door auteur"),
+                a("db0798ed", function (e) {
+                    return "Onderwerp " + e.topicName;
+                }),
                 a("dc716ec9", function (e) {
                     return "Aanbevolen Onderwerp: " + e.topicName;
                 }),
-                a("fbc2003c", "Beëindigd"),
-                a("h5051dd8", "Geannuleerd"),
+                a("fbc2003c", "Beëindigd");
+            a("h5051dd8", "Geannuleerd"),
                 a("bb5f91a3", function (e) {
                     return e.count + " in deze Space";
                 }),
@@ -13230,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.83c7888a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.ad91da7a.js.map

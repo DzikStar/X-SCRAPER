@@ -305,6 +305,10 @@
                     );
                 });
         },
+        715913: (e, t, n) => {
+            n.d(t, { Z: () => a });
+            const a = n(202784).createContext({ isDrawer: !1 });
+        },
         386714: (e, t, n) => {
             n.d(t, { F: () => s });
             n(136728);
@@ -428,4 +432,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6c5c183a.1b6307ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6c5c183a.3c15c08a.js.map

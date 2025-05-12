@@ -4091,11 +4091,6 @@
                 o("h7033cac", "Ahots-mezu bat bidali duzu"),
                 o("i34ec422", "Shared a post"),
                 o("a4939874", "You shared a post"),
-                o("a30a206e", "Ados!"),
-                o("ib4b1b86", "Finkatutako elkarrizketak aurkezten"),
-                o("bd3ca2ef", function (e) {
-                    return "Hautatu ekintzen menua edozein elkarrizketatan goian finkatzeko, erraz sartzeko. Aldi berean, gehienez " + e.count + " elkarrizketa finkatzeko baimena duzu.";
-                }),
                 o("e1c9ec9c", "Finkatu elkarrizketa"),
                 o("e3cfff7c", "Utzi elkarrizketa geroko"),
                 o("f398722e", "Elkarrizketa errepikaria bihurtu da"),
@@ -4924,11 +4919,11 @@
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access");
-            o("gf898b70", "Advanced Search"),
+                o("ed99baea", "Early Beta Access"),
+                o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
-                o("a8584698", "ai startup"),
-                o("jb6f9292", 'contains the exact phrase "ai startup"'),
+                o("a8584698", "ai startup");
+            o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
                 o("d0480758", 'contains either "ai" or "startup" (or both)'),
                 o("f0048fa2", "ai OR startup"),
@@ -5890,11 +5885,11 @@
                 o("i0ed3f4e", "Gertaeraren irudia"),
                 o("cbae35fa", "Report Broadcast"),
                 o("fd12ab58", "Collection posts"),
-                o("a226497c", "Sortu komunitate berri bat");
-            o("d7346632", "You haven’t joined any Communities yet"),
+                o("a226497c", "Sortu komunitate berri bat"),
+                o("d7346632", "You haven’t joined any Communities yet"),
                 o("b732a4cc", "When you do, you’ll see their posts here."),
-                o("hff48914", "No posts could be found at this time."),
-                o("hb52cc4a", "Saiatu berriro geroago."),
+                o("hff48914", "No posts could be found at this time.");
+            o("hb52cc4a", "Saiatu berriro geroago."),
                 o("e50e1bb0", "Welcome to Communities"),
                 o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 o("fc5c6914", "Meet others with your interests"),
@@ -6888,11 +6883,11 @@
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
                 o("ee54c3de", "Save videos straight to your device"),
-                o("ae03594c", "Small reply boost");
-            o("e6bb08c0", "Increase the visibility of your replies"),
+                o("ae03594c", "Small reply boost"),
+                o("e6bb08c0", "Increase the visibility of your replies"),
                 o("bf2a6acc", "Large Reply Boost"),
-                o("c2059276", "Have your replies boosted."),
-                o("b023ec20", "Max Reply Boost"),
+                o("c2059276", "Have your replies boosted.");
+            o("b023ec20", "Max Reply Boost"),
                 o("g337328e", "Get the highest visibility for your replies."),
                 o("fa006202", "Background video playback"),
                 o("jf389778", "Watch while browsing or using other apps"),
@@ -7866,7 +7861,10 @@
                 o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                o("i4dccc18", "Billing"),
+                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                o("dac61c3c", "Account settings");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7905,10 +7903,7 @@
                     u(e, a)
                 );
             }
-            o("i4dccc18", "Billing"),
-                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                o("dac61c3c", "Account settings"),
-                o("b6b5fd66", "Manage your X account including changing your username or password."),
+            o("b6b5fd66", "Manage your X account including changing your username or password."),
                 o("hb9c4a1c", "Questions, bug reports and feedback"),
                 o("c674f5b4", "Setup invoice payments"),
                 o("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8910,15 +8905,15 @@
                 }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
-                o("habf9678", "Egileak finkatuta");
-            o("db0798ed", function (e) {
-                return "Gaia: " + e.topicName;
-            }),
+                o("habf9678", "Egileak finkatuta"),
+                o("db0798ed", function (e) {
+                    return "Gaia: " + e.topicName;
+                }),
                 o("dc716ec9", function (e) {
                     return "Gai gomendatua: " + e.topicName;
                 }),
-                o("fbc2003c", "Amaituta"),
-                o("h5051dd8", "Canceled"),
+                o("fbc2003c", "Amaituta");
+            o("h5051dd8", "Canceled"),
                 o("bb5f91a3", function (e) {
                     return e.count + " in this Space";
                 }),
@@ -13223,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.038d67da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.5a46984a.js.map

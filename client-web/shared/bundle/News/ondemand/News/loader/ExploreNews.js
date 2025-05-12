@@ -356,7 +356,7 @@
                 return { sentimentScores: n, totalNumPosts: l };
             }
             const g = s.default.theme.spaces.space8,
-                f = 5;
+                f = 15;
             function b({ articleId: e, chartData: t, containerStyle: n, hoveredStyle: i, onClick: s, question: l, size: c = "large", style: d, typeMetadata: b }) {
                 const x = (0, p.Z)(),
                     { sentimentScores: w, totalNumPosts: E } = y({ chartData: t, typeMetadata: b }),
@@ -381,7 +381,7 @@
                                     { style: C.scoreBarsContainer },
                                     w.map((e, t) => {
                                         const n = t === w.length - 1;
-                                        return a.createElement(o.Z, { key: `sentiment-bar-score-${e.type}`, style: [C.scoreBar, { flex: n ? 1 : void 0, width: n ? void 0 : `${e.value}%`, borderTopEndRadius: n ? g : 0, borderBottomEndRadius: n ? g : 0 }] }, a.createElement(o.Z, { style: [C.scoreBarBackground, { backgroundColor: e.color }] }), e.value > f && a.createElement(r.ZP, { style: C.scoreBarText }, `${e.value}%`));
+                                        return a.createElement(o.Z, { key: `sentiment-bar-score-${e.type}`, style: [C.scoreBar, { flex: n ? 1 : void 0, width: n ? void 0 : `${e.value}%`, borderTopEndRadius: n ? g : 0, borderBottomEndRadius: n ? g : 0 }] }, a.createElement(o.Z, { style: [C.scoreBarBackground, { backgroundColor: e.color }] }), e.value > f && a.createElement(r.ZP, { numberOfLines: 1, style: C.scoreBarText }, `${e.value}%`));
                                     }),
                                 ),
                             ),
@@ -394,7 +394,7 @@
                     ),
                 );
             }
-            const C = s.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext1, paddingStart: e.spaces.space12, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
+            const C = s.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
             var x = n(807896),
                 w = n(18205),
                 E = n(632908),
@@ -407,11 +407,11 @@
                 I = n(194504),
                 P = n(187669),
                 M = n(949626);
-            function T(e, t) {
+            function z(e, t) {
                 const { timeZone: n } = window.Intl.DateTimeFormat().resolvedOptions();
                 return new Intl.DateTimeFormat("en-US", { month: t && t.month ? "short" : void 0, day: t && t.day ? "numeric" : void 0, hour: t && t.hour ? "numeric" : void 0, minute: t && t.minute ? "numeric" : void 0, year: t && t.year ? "numeric" : void 0, timeZoneName: t && t.timeZoneName ? "short" : void 0, timeZone: t && t.timeZoneName ? n : void 0 }).format(e);
             }
-            function $({ active: e, label: t, payload: n }) {
+            function T({ active: e, label: t, payload: n }) {
                 if ((a.useEffect(() => {}, []), e && n && n.length)) {
                     const e = [];
                     n.forEach((t) => {
@@ -419,25 +419,25 @@
                         e.push({ label: t.payload[`${n}-label`], percentage: Number(t.payload[`${n}-value`]), color: t.payload[`${n}-color`], postId: t.payload[`${n}-post`], numPosts: Number(t.payload[`${n}-num-posts`]) });
                     });
                     const t = n[0].payload.timestamp,
-                        i = T(new Date(t), { year: !0, month: !0, day: !0, hour: !0, minute: !0 }),
+                        i = z(new Date(t), { year: !0, month: !0, day: !0, hour: !0, minute: !0 }),
                         s = e.sort((e, t) => t.percentage - e.percentage);
                     return a.createElement(
                         o.Z,
-                        { style: z.tooltip },
-                        a.createElement(r.ZP, { style: z.tooltipDate }, i),
+                        { style: $.tooltip },
+                        a.createElement(r.ZP, { style: $.tooltipDate }, i),
                         a.createElement(
                             o.Z,
-                            { style: z.percentages },
+                            { style: $.percentages },
                             s.map((e) => {
                                 const t = `${e.percentage}%`;
-                                return a.createElement(o.Z, { key: e.label, style: z.tooltipType }, a.createElement(o.Z, { style: { ...z.tooltipTypeColor, backgroundColor: e.color } }), a.createElement(r.ZP, { style: z.tooltipTypeLabel, weight: "bold" }, e.label), a.createElement(o.Z, null), a.createElement(r.ZP, { style: z.tooltipValue }, t), a.createElement(r.ZP, { style: z.tooltipDate }, `(${e.numPosts} post${e.numPosts > 1 ? "s" : ""})`));
+                                return a.createElement(o.Z, { key: e.label, style: $.tooltipType }, a.createElement(o.Z, { style: { ...$.tooltipTypeColor, backgroundColor: e.color } }), a.createElement(r.ZP, { style: $.tooltipTypeLabel, weight: "bold" }, e.label), a.createElement(o.Z, null), a.createElement(r.ZP, { style: $.tooltipValue }, t), a.createElement(r.ZP, { style: $.tooltipDate }, `(${e.numPosts} post${e.numPosts > 1 ? "s" : ""})`));
                             }),
                         ),
                     );
                 }
                 return null;
             }
-            const z = s.default.create((e) => ({ tooltip: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, percentages: { display: " flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8 }, tooltipType: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, tooltipTypeColor: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8 }, tooltipTypeLabel: { fontSize: "inherit", lineHeight: "inherit" }, tooltipValue: { fontSize: "inherit", lineHeight: "inherit" }, tooltipDate: { color: e.colors.gray700, fontSize: "inherit", lineHeight: "inherit" } }));
+            const $ = s.default.create((e) => ({ tooltip: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, percentages: { display: " flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8 }, tooltipType: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, tooltipTypeColor: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8 }, tooltipTypeLabel: { fontSize: "inherit", lineHeight: "inherit" }, tooltipValue: { fontSize: "inherit", lineHeight: "inherit" }, tooltipDate: { color: e.colors.gray700, fontSize: "inherit", lineHeight: "inherit" } }));
             function B({ color: e, cx: t, cy: n }) {
                 const r = 16;
                 return a.createElement("g", null, a.createElement("foreignObject", { height: r, width: r, x: t - 8, y: n - 8 }, a.createElement(o.Z, { style: [R.dotContainer, { width: r, height: r }] }, a.createElement(o.Z, { style: [R.dot, { backgroundColor: e, width: 8, height: 8 }] }), a.createElement(o.Z, { style: R.pulseContainer }, a.createElement(o.Z, { style: [R.pulse, { backgroundColor: l.Z.hexToCss(e, 0.5) }] })))));
@@ -469,7 +469,7 @@
                         },
                         [c],
                     ),
-                    g = a.useCallback((e) => T(new Date(e), { month: !0, day: !0, hour: !0 }), []),
+                    g = a.useCallback((e) => z(new Date(e), { month: !0, day: !0, hour: !0 }), []),
                     f = Object.keys(c);
                 return a.createElement(
                     o.Z,
@@ -497,7 +497,7 @@
                                     a.createElement(k.q, { fillOpacity: 0.6, horizontal: !0, stroke: s.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
                                     a.createElement(v.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: L.tick, tickFormatter: g, tickLine: !1, type: "number" }),
                                     a.createElement(Z.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: L.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
-                                    a.createElement(S.u, { content: a.createElement($, null), cursor: { stroke: s.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
+                                    a.createElement(S.u, { content: a.createElement(T, null), cursor: { stroke: s.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
                                     Object.keys(n).map((e) => (c[e] || 0 === f.length ? a.createElement(D.x, { activeDot: !0, connectNulls: !0, dataKey: `${n[e].idx}-value`, dot: !1, key: `line-chart-${e}`, stroke: n[e].color, strokeWidth: 2.5, type: "monotone" }) : null)),
                                     i.map((e) => (c[e.type] || 0 === f.length ? a.createElement(_.q, { alwaysShow: !0, isFront: !0, key: `sentiment-score-${e.type}`, shape: (t) => a.createElement(B, (0, x.Z)({}, t, { color: e.color })), x: e.timestamp, y: e.value }) : null)),
                                 ),
@@ -645,4 +645,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.1dcb495a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.d0d8a02a.js.map

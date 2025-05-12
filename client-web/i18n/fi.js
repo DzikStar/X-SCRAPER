@@ -281,7 +281,7 @@
                 e("edf7f57e", "Hankkimalla varmennetun tilin saat vastausten tehostuksen, tilastot, selailun ilman mainoksia ym. Päivitä profiilisi nyt."),
                 e("ba920d68", "Lisää vaikuttavuuttasi varmentautumalla"),
                 e("ib79d0c2", "Saa käyttöösi VIP-ominaisuudet: varmenna tilisi"),
-                e("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                e("c0d3bd82", "Olet mainostanut X:ssä, mutta sinulla ei ole Varmennetut organisaatiot ‑tilausta"),
                 e("d7836d1e", "Tilaamalla saat jopa 12 000 USD mainossaldoa, kultaisen varmennusmerkin, VIP-tuen ja työkaluja kasvuun."),
                 e("f528e369", function (a) {
                     return "Tilaa " + a.tier + " kirjoittaaksesi omia artikkeleita";
@@ -1277,13 +1277,13 @@
                 e("c3f04d9c", "Miettii"),
                 e("cbdddb0a", "Valmis"),
                 e("e98cc293", function (a) {
-                    return "Etsitään " + a.query;
+                    return "Haetaan hakusanalla " + a.query;
                 }),
                 e("b0d1e205", function (a) {
                     return 'Haetaan haulla **"' + a.query + '"**';
                 }),
                 e("i2e0f4d7", function (a) {
-                    return "Browsing " + a.url + " for " + a.query;
+                    return "Haetaan sivulta " + a.url + " hakusanalla " + a.query;
                 }),
                 e("acb9b845", function (a) {
                     return "Selataan " + a.url + ' haulla **"' + a.query + '"** ';
@@ -1292,7 +1292,7 @@
                     return "Haetaan käyttäjän @" + a.username + " julkaisuista";
                 }),
                 e("f7d9cfb9", function (a) {
-                    return "Searching posts by @" + a.username + " for " + a.query;
+                    return "Haetaan käyttäjän @" + a.username + " julkaisuista hakusanalla " + a.query;
                 }),
                 e("bec7eb11", function (a) {
                     return "Haetaan käyttäjän @" + a.username + " julkaisuista hakusanalla **”" + a.query + "”**";
@@ -4088,11 +4088,6 @@
                 e("h7033cac", "Lähetit ääniviestin"),
                 e("i34ec422", "Jakoi julkaisun"),
                 e("a4939874", "Jaoit julkaisun"),
-                e("a30a206e", "Selvä!"),
-                e("ib4b1b86", "Esittelyssä kiinnitetyt keskustelut"),
-                e("bd3ca2ef", function (a) {
-                    return "Valitse toimintovalikko keskustelussa kiinnittääksesi keskustelun kärkeen helposti saataville. Voit kiinnittää enintään " + a.count + " keskustelu" + n(a.count, "n", "a") + " kerrallaan.";
-                }),
                 e("e1c9ec9c", "Kiinnitetty keskustelu"),
                 e("e3cfff7c", "Vaienna keskustelu"),
                 e("f398722e", "Keskustelu vaiennettu"),
@@ -4327,10 +4322,10 @@
                 e("b52484b6", "Haetaan..."),
                 e("a4d9dbfa", "Mietteet"),
                 e("ib1c5475", function (a) {
-                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                    return "Mietti " + a.minutes + " min " + a.seconds + " s";
                 }),
                 e("a15d62db", function (a) {
-                    return "Thought for " + a.seconds + "s";
+                    return "Mietti " + a.seconds + " s";
                 }),
                 e("d7cb5408", "Asiaan liittyvät verkkosivut"),
                 e("aa7c96bb", function (a) {
@@ -4921,11 +4916,11 @@
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
                 e("if2909ba", "Katseluaika"),
                 e("i0e5bf4c", "Videosi"),
-                e("ed99baea", "Beta-ennakkokäyttö");
-            e("gf898b70", "Tarkennettu haku"),
+                e("ed99baea", "Beta-ennakkokäyttö"),
+                e("gf898b70", "Tarkennettu haku"),
                 e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
-                e("a8584698", "ai startup"),
-                e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
+                e("a8584698", "ai startup");
+            e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
                 e("j8ee77c4", '"ai startup"'),
                 e("d0480758", 'sisältää joko termin "ai" tai "startup" (tai molemmat)'),
                 e("f0048fa2", "ai OR startup"),
@@ -5887,11 +5882,11 @@
                 e("i0ed3f4e", "Tapahtumakuva"),
                 e("cbae35fa", "Ilmianna lähetys"),
                 e("fd12ab58", "Kokoelman julkaisut"),
-                e("a226497c", "Luo uusi Yhteisö");
-            e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön"),
+                e("a226497c", "Luo uusi Yhteisö"),
+                e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön"),
                 e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
-                e("hff48914", "Julkaisuja ei löydy tällä hetkellä."),
-                e("hb52cc4a", "Yritä myöhemmin uudelleen."),
+                e("hff48914", "Julkaisuja ei löydy tällä hetkellä.");
+            e("hb52cc4a", "Yritä myöhemmin uudelleen."),
                 e("e50e1bb0", "Tervetuloa Yhteisöihin"),
                 e("i6829daa", "Yhteisöt ovat moderoituja keskusteluryhmiä, joista X:n käyttäjät löytävät samanhenkistä väkeä."),
                 e("fc5c6914", "Tapaa muita samoista asioista kiinnostuneita"),
@@ -6885,11 +6880,11 @@
                 e("e0198956", "Saat osuutesi tuloista, joita muodostuu varmennettujen tilien osallistuessa X-julkaisuihisi."),
                 e("iadf78e2", "Videoiden lataus"),
                 e("ee54c3de", "Tallenna videoita suoraan laitteellesi"),
-                e("ae03594c", "Pieni vastausten tehostus");
-            e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
+                e("ae03594c", "Pieni vastausten tehostus"),
+                e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
                 e("bf2a6acc", "Suuri vastausten tehostus"),
-                e("c2059276", "Vastaustesi tehostus."),
-                e("b023ec20", "Suurin vastausten tehostus"),
+                e("c2059276", "Vastaustesi tehostus.");
+            e("b023ec20", "Suurin vastausten tehostus"),
                 e("g337328e", "Saa vastauksillesi paras näkyvyys."),
                 e("fa006202", "Videon toisto taustalla"),
                 e("jf389778", "Katsele selatessasi tai käyttäessäsi muita sovelluksia"),
@@ -7061,14 +7056,14 @@
                 e("f0ad5cc8", "vuosi"),
                 e("a0dc6e4c", "Ei saatavilla tällä hetkellä"),
                 e("jd8b2e66", "Tilaa ja maksa"),
-                e("ca784c0c", "Subscribe & pay with Apple"),
+                e("ca784c0c", "Tilaa ja maksa Applen kautta"),
                 e("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 e("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
-                e("afd61c76", "Or, save up to 30%"),
+                e("afd61c76", "Tai säästä jopa 30 %"),
                 e("i7fbacc4", "Vaihda tarjolla olevien tilaustasojen välillä"),
                 e("c9cc122b", function (a) {
                     return a.feature + " sisältyy tilaukseen " + a.title;
@@ -7863,7 +7858,10 @@
                 e("ddfd6718", "Maksu epäonnistui"),
                 e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
                 e("a62359e6", "Varmennetut organisaatiot"),
-                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä.");
+                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
+                e("i4dccc18", "Laskutus"),
+                e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
+                e("dac61c3c", "Tilin asetukset");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7902,10 +7900,7 @@
                     u(a, t)
                 );
             }
-            e("i4dccc18", "Laskutus"),
-                e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
-                e("dac61c3c", "Tilin asetukset"),
-                e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
+            e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
                 e("hb9c4a1c", "Kysymykset, bugi-ilmoitukset ja muu palaute"),
                 e("c674f5b4", "Ota laskutus käyttöön"),
                 e("i8237e66", "Vaihda luottokorttiveloitukset laskujen maksuun pankkitililtä."),
@@ -8907,15 +8902,15 @@
                 }),
                 e("ae408b76", "Uudelleenjulkaisit"),
                 e("j355f008", "Kiinnitetty julkaisu"),
-                e("habf9678", "Tekijän kiinnittämä");
-            e("db0798ed", function (a) {
-                return a.topicName + " aihe";
-            }),
+                e("habf9678", "Tekijän kiinnittämä"),
+                e("db0798ed", function (a) {
+                    return a.topicName + " aihe";
+                }),
                 e("dc716ec9", function (a) {
                     return "Suositeltu aihe: " + a.topicName;
                 }),
-                e("fbc2003c", "Päättynyt"),
-                e("h5051dd8", "Peruttu"),
+                e("fbc2003c", "Päättynyt");
+            e("h5051dd8", "Peruttu"),
                 e("bb5f91a3", function (a) {
                     return a.count + " tässä Huoneessa";
                 }),
@@ -13230,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4a0e680a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ee65d25a.js.map

@@ -281,7 +281,7 @@
                 s("edf7f57e", "Faça a verificação de respostas impulsionadas, estatísticas, navegação sem anúncios e muito mais. Atualize seu perfil agora."),
                 s("ba920d68", "Impulsione sua influência com a verificação"),
                 s("ib79d0c2", "Desbloqueie recursos VIP: verifique sua conta"),
-                s("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                s("c0d3bd82", "Você anunciou no X, mas não tem uma assinatura de Organizações Verificadas"),
                 s("d7836d1e", "Assine e receba até US$ 12.000 em crédito de anúncios grátis, verificação ouro, suporte VIP e um conjunto de ferramentas para fazer sua empresa crescer."),
                 s("f528e369", function (e) {
                     return "Assine o " + e.tier + " para escrever seus próprios Artigos";
@@ -1283,7 +1283,7 @@
                     return 'Pesquisando por **"' + e.query + '"**';
                 }),
                 s("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Procurando em " + e.url + " por " + e.query;
                 }),
                 s("acb9b845", function (e) {
                     return "Procurando " + e.url + ' por **"' + e.query + '"**';
@@ -1292,7 +1292,7 @@
                     return "Pesquisando posts por @" + e.username;
                 }),
                 s("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Buscando em posts de @" + e.username + " por " + e.query;
                 }),
                 s("bec7eb11", function (e) {
                     return "Buscando posts de @" + e.username + ' para **"' + e.query + '"**';
@@ -4088,11 +4088,6 @@
                 s("h7033cac", "Você enviou uma mensagem de voz"),
                 s("i34ec422", "Compartilhou um post"),
                 s("a4939874", "Você compartilhou um post"),
-                s("a30a206e", "Entendi!"),
-                s("ib4b1b86", "Apresentando as conversas fixadas"),
-                s("bd3ca2ef", function (e) {
-                    return "Selecione o menu de ações em qualquer conversa para fixá-lo no topo e facilitar o acesso. Você pode fixar até " + e.count + " conversa" + r(e.count, "", "s") + " por vez.";
-                }),
                 s("e1c9ec9c", "Fixar conversa"),
                 s("e3cfff7c", "Silenciar a conversa"),
                 s("f398722e", "Conversa suspensa"),
@@ -4181,7 +4176,7 @@
                 s("ff9dc268", "Editar prompt"),
                 s("acb2baa0", "Criar imagens"),
                 s("fe9ad897", function (e) {
-                    return "Edit Image" + e.ttc_grok_preset;
+                    return "Editar imagem" + e.ttc_grok_preset;
                 }),
                 s("h30fd372", "Experimente o Modo de Voz"),
                 s("e9fcdd0c", "Pedir ao Grok para fazer uma pesquisa profunda na web"),
@@ -4327,10 +4322,10 @@
                 s("b52484b6", "Buscando..."),
                 s("a4d9dbfa", "Pensamentos"),
                 s("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Pensamento por " + e.minutes + " min " + e.seconds + " s";
                 }),
                 s("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Pensamento por " + e.seconds + " s";
                 }),
                 s("d7cb5408", "Páginas Relevantes da Web"),
                 s("aa7c96bb", function (e) {
@@ -4921,11 +4916,11 @@
                 s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
                 s("if2909ba", "Tempo de exibição"),
                 s("i0e5bf4c", "Seus vídeos"),
-                s("ed99baea", "Acesso Beta Antecipado");
-            s("gf898b70", "Busca Avançada"),
+                s("ed99baea", "Acesso Beta Antecipado"),
+                s("gf898b70", "Busca Avançada"),
                 s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
-                s("a8584698", "ai startup"),
-                s("jb6f9292", 'contém a frase exata "ai startup"'),
+                s("a8584698", "ai startup");
+            s("jb6f9292", 'contém a frase exata "ai startup"'),
                 s("j8ee77c4", '"ai startup"'),
                 s("d0480758", 'contém "ai" ou "startup" (ou ambos)'),
                 s("f0048fa2", "ai OU startup"),
@@ -5887,11 +5882,11 @@
                 s("i0ed3f4e", "Imagem do evento"),
                 s("cbae35fa", "Denunciar Transmissão"),
                 s("fd12ab58", "Coleções de posts"),
-                s("a226497c", "Crie uma nova Comunidade");
-            s("d7346632", "Você ainda não entrou para nenhuma Comunidade"),
+                s("a226497c", "Crie uma nova Comunidade"),
+                s("d7346632", "Você ainda não entrou para nenhuma Comunidade"),
                 s("b732a4cc", "Quando fizer isso, poderá ver seus posts aqui."),
-                s("hff48914", "Não foi possível encontrar nenhum post no momento."),
-                s("hb52cc4a", "Por favor, tente novamente mais tarde."),
+                s("hff48914", "Não foi possível encontrar nenhum post no momento.");
+            s("hb52cc4a", "Por favor, tente novamente mais tarde."),
                 s("e50e1bb0", "Bem-vindo a Comunidades"),
                 s("i6829daa", "Comunidades são grupos de discussão com moderação em que as pessoas do X podem se conectar e compartilhar."),
                 s("fc5c6914", "Conheça outras pessoas com seus interesses"),
@@ -6885,11 +6880,11 @@
                 s("e0198956", "Receba uma parte da receita gerada pelo engajamento de contas verificadas com o conteúdo que você postar no X."),
                 s("iadf78e2", "Baixar vídeos"),
                 s("ee54c3de", "Salve vídeos diretamente no seu dispositivo"),
-                s("ae03594c", "Priorização básica de respostas");
-            s("e6bb08c0", "Aumente a visibilidade das suas respostas"),
+                s("ae03594c", "Priorização básica de respostas"),
+                s("e6bb08c0", "Aumente a visibilidade das suas respostas"),
                 s("bf2a6acc", "Priorização média de respostas"),
-                s("c2059276", "Tenha suas respostas impulsionadas."),
-                s("b023ec20", "Priorização máxima de respostas"),
+                s("c2059276", "Tenha suas respostas impulsionadas.");
+            s("b023ec20", "Priorização máxima de respostas"),
                 s("g337328e", "Garanta maior visibilidade para as suas respostas."),
                 s("fa006202", "Reprodução de vídeo em segundo plano"),
                 s("jf389778", "Assista enquanto navega ou usa outros aplicativos"),
@@ -7061,14 +7056,14 @@
                 s("f0ad5cc8", "ano"),
                 s("a0dc6e4c", "Atualmente indisponível"),
                 s("jd8b2e66", "Assinar e pagar"),
-                s("ca784c0c", "Subscribe & pay with Apple"),
+                s("ca784c0c", "Inscreva-se e pague com a Apple"),
                 s("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 s("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                s("afd61c76", "Or, save up to 30%"),
+                s("afd61c76", "Ou poupe até 30%"),
                 s("i7fbacc4", "Alternar entre os níveis de assinatura disponíveis"),
                 s("c9cc122b", function (e) {
                     return e.feature + " está incluído em " + e.title;
@@ -7863,7 +7858,10 @@
                 s("ddfd6718", "O pagamento falhou"),
                 s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios."),
                 s("a62359e6", "Configurações de Organizações Verificadas"),
-                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade.");
+                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
+                s("i4dccc18", "Cobrança"),
+                s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
+                s("dac61c3c", "Configurações da conta");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7902,10 +7900,7 @@
                     n(e, a)
                 );
             }
-            s("i4dccc18", "Cobrança"),
-                s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
-                s("dac61c3c", "Configurações da conta"),
-                s("b6b5fd66", "Gerencie sua conta do X, incluindo alteração do seu nome de usuário ou senha."),
+            s("b6b5fd66", "Gerencie sua conta do X, incluindo alteração do seu nome de usuário ou senha."),
                 s("hb9c4a1c", "Perguntas, relatórios de bugs e feedback"),
                 s("c674f5b4", "Configurar pagamentos da fatura"),
                 s("i8237e66", "Alternar de pagamentos com cartão de crédito para cobrança via transferência bancária."),
@@ -8907,15 +8902,15 @@
                 }),
                 s("ae408b76", "Você repostou"),
                 s("j355f008", "Post fixado"),
-                s("habf9678", "Fixado pelo autor");
-            s("db0798ed", function (e) {
-                return e.topicName + " Tópico";
-            }),
+                s("habf9678", "Fixado pelo autor"),
+                s("db0798ed", function (e) {
+                    return e.topicName + " Tópico";
+                }),
                 s("dc716ec9", function (e) {
                     return "Tópico recomendado: " + e.topicName;
                 }),
-                s("fbc2003c", "Encerrado"),
-                s("h5051dd8", "Cancelado"),
+                s("fbc2003c", "Encerrado");
+            s("h5051dd8", "Cancelado"),
                 s("bb5f91a3", function (e) {
                     return e.count + " neste Espaço";
                 }),
@@ -13217,4 +13212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.978e2a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.58138fea.js.map

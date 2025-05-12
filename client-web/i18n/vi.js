@@ -4087,11 +4087,6 @@
                 t("h7033cac", "Bạn đã gửi một tin nhắn thoại"),
                 t("i34ec422", "Đã chia sẻ một bài đăng"),
                 t("a4939874", "Bạn đã chia sẻ một bài đăng"),
-                t("a30a206e", "Đã hiểu!"),
-                t("ib4b1b86", "Giới thiệu các cuộc trò chuyện đã ghim"),
-                t("bd3ca2ef", function (n) {
-                    return "Chọn menu hành động trên bất cứ cuộc trò chuyện nào để ghim lên đầu cho dễ truy cập. Mỗi lần, bạn có thể ghim tối đa " + n.count + " cuộc trò chuyện.";
-                }),
                 t("e1c9ec9c", "Ghim cuộc trò chuyện"),
                 t("e3cfff7c", "Tạm ngừng cuộc trò chuyện"),
                 t("f398722e", "Cuộc trò chuyện tạm ngừng"),
@@ -4920,11 +4915,11 @@
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
                 t("if2909ba", "Thời gian xem"),
                 t("i0e5bf4c", "Video của bạn"),
-                t("ed99baea", "Quyền truy cập sớm vào bản beta");
-            t("gf898b70", "Tìm kiếm nâng cao"),
+                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
-                t("a8584698", "công ty khởi nghiệp ai"),
-                t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
+                t("a8584698", "công ty khởi nghiệp ai");
+            t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
                 t("j8ee77c4", '"công ty khởi nghiệp ai"'),
                 t("d0480758", 'chứa "ai" hoặc "công ty khởi nghiệp" (hoặc cả hai)'),
                 t("f0048fa2", "ai HOẶC công ty khởi nghiệp"),
@@ -5886,11 +5881,11 @@
                 t("i0ed3f4e", "Hình ảnh sự kiện"),
                 t("cbae35fa", "Báo cáo Nguồn phát"),
                 t("fd12ab58", "Bài đăng trong bộ sưu tập"),
-                t("a226497c", "Tạo một Cộng đồng mới");
-            t("d7346632", "Bạn chưa tham gia bất kỳ Cộng đồng nào"),
+                t("a226497c", "Tạo một Cộng đồng mới"),
+                t("d7346632", "Bạn chưa tham gia bất kỳ Cộng đồng nào"),
                 t("b732a4cc", "Khi làm vậy, bạn sẽ thấy bài đăng của họ ở đây."),
-                t("hff48914", "Hiện không tìm được bài đăng nào."),
-                t("hb52cc4a", "Vui lòng thử lại sau."),
+                t("hff48914", "Hiện không tìm được bài đăng nào.");
+            t("hb52cc4a", "Vui lòng thử lại sau."),
                 t("e50e1bb0", "Chào mừng bạn đến với Cộng đồng"),
                 t("i6829daa", "Cộng đồng là các nhóm thảo luận được kiểm duyệt, nơi mọi người trên X có thể kết nối và chia sẻ."),
                 t("fc5c6914", "Gặp gỡ những người khác có cùng mối quan tâm của bạn"),
@@ -6884,11 +6879,11 @@
                 t("e0198956", "Nhận một phần doanh thu được tạo ra từ hoạt động tương tác của các tài khoản đã xác nhận với nội dung bạn đăng trên X."),
                 t("iadf78e2", "Tải video xuống"),
                 t("ee54c3de", "Lưu video ngay vào thiết bị của bạn"),
-                t("ae03594c", "Quảng cáo câu trả lời loại nhỏ");
-            t("e6bb08c0", "Tăng mức độ hiển thị cho câu trả lời của bạn"),
+                t("ae03594c", "Quảng cáo câu trả lời loại nhỏ"),
+                t("e6bb08c0", "Tăng mức độ hiển thị cho câu trả lời của bạn"),
                 t("bf2a6acc", "Ưu tiên câu trả lời loại lớn"),
-                t("c2059276", "Ưu tiên câu trả lời của bạn."),
-                t("b023ec20", "Ưu tiên câu trả lời loại tối đa"),
+                t("c2059276", "Ưu tiên câu trả lời của bạn.");
+            t("b023ec20", "Ưu tiên câu trả lời loại tối đa"),
                 t("g337328e", "Nhận mức độ hiển thị cao nhất cho câu trả lời của bạn."),
                 t("fa006202", "Phát video trong nền"),
                 t("jf389778", "Xem trong khi duyệt nội dung hoặc sử dụng ứng dụng khác"),
@@ -7862,7 +7857,10 @@
                 t("ddfd6718", "Thanh toán không thành công"),
                 t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
                 t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
-                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo.");
+                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
+                t("i4dccc18", "Thanh toán"),
+                t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
+                t("dac61c3c", "Cài đặt tài khoản");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7901,10 +7899,7 @@
                     a(n, h)
                 );
             }
-            t("i4dccc18", "Thanh toán"),
-                t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
-                t("dac61c3c", "Cài đặt tài khoản"),
-                t("b6b5fd66", "Quản lý tài khoản X, trong đó có việc thay đổi tên người dùng hoặc mật khẩu của bạn."),
+            t("b6b5fd66", "Quản lý tài khoản X, trong đó có việc thay đổi tên người dùng hoặc mật khẩu của bạn."),
                 t("hb9c4a1c", "Câu hỏi, báo cáo lỗi và phản hồi"),
                 t("c674f5b4", "Thiết lập phương thức thanh toán hóa đơn"),
                 t("i8237e66", "Chuyển từ phương thức thanh toán bằng thẻ tín dụng sang lập hóa đơn qua chuyển khoản ngân hàng."),
@@ -8906,15 +8901,15 @@
                 }),
                 t("ae408b76", "Bạn đã đăng lại"),
                 t("j355f008", "Bài đăng đã ghim"),
-                t("habf9678", "Đã được Tác giả ghim");
-            t("db0798ed", function (n) {
-                return n.topicName + " Chủ đề";
-            }),
+                t("habf9678", "Đã được Tác giả ghim"),
+                t("db0798ed", function (n) {
+                    return n.topicName + " Chủ đề";
+                }),
                 t("dc716ec9", function (n) {
                     return "Chủ đề đề xuất: " + n.topicName;
                 }),
-                t("fbc2003c", "Đã kết thúc"),
-                t("h5051dd8", "Đã hủy"),
+                t("fbc2003c", "Đã kết thúc");
+            t("h5051dd8", "Đã hủy"),
                 t("bb5f91a3", function (n) {
                     return n.count + " ở Phòng này";
                 }),
@@ -13215,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.106d621a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.fbc2c8ba.js.map

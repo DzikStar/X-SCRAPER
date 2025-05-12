@@ -4088,11 +4088,6 @@
                 a("h7033cac", "[[226101]] You sent a voice message"),
                 a("i34ec422", "[[280505]] Shared a post"),
                 a("a4939874", "[[280512]] You shared a post"),
-                a("a30a206e", "[[248127]] Got it!"),
-                a("ib4b1b86", "[[248128]] Introducing pinned conversations"),
-                a("bd3ca2ef", function (e) {
-                    return "[[248129]] Select the actions menu on any conversation to pin it to the top for easy access. You can pin up to " + e.count + " conversation" + n(e.count, "", "s") + " at a time.";
-                }),
                 a("e1c9ec9c", "[[246450]] Pin conversation"),
                 a("e3cfff7c", "[[246183]] Snooze conversation"),
                 a("f398722e", "[[248795]] Conversation snoozed"),
@@ -4921,11 +4916,11 @@
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
                 a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
-                a("ed99baea", "[[289716]] Early Beta Access");
-            a("gf898b70", "[[289702]] Advanced Search"),
+                a("ed99baea", "[[289716]] Early Beta Access"),
+                a("gf898b70", "[[289702]] Advanced Search"),
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
-                a("a8584698", "[[289739]] ai startup"),
-                a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
+                a("a8584698", "[[289739]] ai startup");
+            a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '[[289700]] "ai startup"'),
                 a("d0480758", '[[289748]] contains either "ai" or "startup" (or both)'),
                 a("f0048fa2", "[[289746]] ai OR startup"),
@@ -5887,11 +5882,11 @@
                 a("i0ed3f4e", "[[187199]] Event image"),
                 a("cbae35fa", "[[271596]] Report Broadcast"),
                 a("fd12ab58", "[[282500]] Collection posts"),
-                a("a226497c", "[[243330]] Create a new Community");
-            a("d7346632", "[[238950]] You haven’t joined any Communities yet"),
+                a("a226497c", "[[243330]] Create a new Community"),
+                a("d7346632", "[[238950]] You haven’t joined any Communities yet"),
                 a("b732a4cc", "[[280509]] When you do, you’ll see their posts here."),
-                a("hff48914", "[[287368]] No posts could be found at this time."),
-                a("hb52cc4a", "[[233832]] Please try again later."),
+                a("hff48914", "[[287368]] No posts could be found at this time.");
+            a("hb52cc4a", "[[233832]] Please try again later."),
                 a("e50e1bb0", "[[282302]] Welcome to Communities"),
                 a("i6829daa", "[[282172]] Communities are moderated discussion groups where people on X can connect and share."),
                 a("fc5c6914", "[[238877]] Meet others with your interests"),
@@ -6885,11 +6880,11 @@
                 a("e0198956", "[[291023]] Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 a("iadf78e2", "[[289855]] Download videos"),
                 a("ee54c3de", "[[293151]] Save videos straight to your device"),
-                a("ae03594c", "[[289860]] Small reply boost");
-            a("e6bb08c0", "[[293230]] Increase the visibility of your replies"),
+                a("ae03594c", "[[289860]] Small reply boost"),
+                a("e6bb08c0", "[[293230]] Increase the visibility of your replies"),
                 a("bf2a6acc", "[[291024]] Large Reply Boost"),
-                a("c2059276", "[[291025]] Have your replies boosted."),
-                a("b023ec20", "[[291026]] Max Reply Boost"),
+                a("c2059276", "[[291025]] Have your replies boosted.");
+            a("b023ec20", "[[291026]] Max Reply Boost"),
                 a("g337328e", "[[293229]] Get the highest visibility for your replies."),
                 a("fa006202", "[[290021]] Background video playback"),
                 a("jf389778", "[[293153]] Watch while browsing or using other apps"),
@@ -7863,7 +7858,10 @@
                 a("ddfd6718", "[[293516]] Payment Failed"),
                 a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "[[289188]] Verified Organization Settings"),
-                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                a("i4dccc18", "[[274804]] Billing"),
+                a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
+                a("dac61c3c", "[[287561]] Account settings");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7902,10 +7900,7 @@
                     r(e, t)
                 );
             }
-            a("i4dccc18", "[[274804]] Billing"),
-                a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
-                a("dac61c3c", "[[287561]] Account settings"),
-                a("b6b5fd66", "[[287562]] Manage your X account including changing your username or password."),
+            a("b6b5fd66", "[[287562]] Manage your X account including changing your username or password."),
                 a("hb9c4a1c", "[[287563]] Questions, bug reports and feedback"),
                 a("c674f5b4", "[[287564]] Setup invoice payments"),
                 a("i8237e66", "[[287565]] Switch from credit card payments to invoicing via bank transfers."),
@@ -8907,15 +8902,15 @@
                 }),
                 a("ae408b76", "[[281811]] You reposted"),
                 a("j355f008", "[[281812]] Pinned post"),
-                a("habf9678", "[[263563]] Pinned by Author");
-            a("db0798ed", function (e) {
-                return "[[225547]] " + e.topicName + " Topic";
-            }),
+                a("habf9678", "[[263563]] Pinned by Author"),
+                a("db0798ed", function (e) {
+                    return "[[225547]] " + e.topicName + " Topic";
+                }),
                 a("dc716ec9", function (e) {
                     return "[[225548]] Recommended Topic: " + e.topicName;
                 }),
-                a("fbc2003c", "[[230210]] Ended"),
-                a("h5051dd8", "[[237297]] Canceled"),
+                a("fbc2003c", "[[230210]] Ended");
+            a("h5051dd8", "[[237297]] Canceled"),
                 a("bb5f91a3", function (e) {
                     return "[[266472]] " + e.count + " in this Space";
                 }),
@@ -13217,4 +13212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.3026059a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.8d632a6a.js.map

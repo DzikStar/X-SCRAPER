@@ -4091,11 +4091,6 @@
                 t("h7033cac", "Ka aika saƙon murya"),
                 t("i34ec422", "Shared a post"),
                 t("a4939874", "You shared a post"),
-                t("a30a206e", "Na fahimta!"),
-                t("ib4b1b86", "Ana gabatar da tattaunawa da aka sa wa fil"),
-                t("bd3ca2ef", function (a) {
-                    return "Zaɓi mashiga ta ayyuka a kan kowane taɗi don saka masa fil a sama don samun sauƙi iso. Kana iya sa fil har " + a.count + " conversation" + i(a.count, "", "s") + " a lokaci guda.";
-                }),
                 t("e1c9ec9c", "Sa fil a tattaunawa"),
                 t("e3cfff7c", "Sa tattaunawa shiru"),
                 t("f398722e", "Tattaunawa ta yi shiru"),
@@ -4924,11 +4919,11 @@
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access");
-            t("gf898b70", "Advanced Search"),
+                t("ed99baea", "Early Beta Access"),
+                t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
-                t("a8584698", "ai startup"),
-                t("jb6f9292", 'contains the exact phrase "ai startup"'),
+                t("a8584698", "ai startup");
+            t("jb6f9292", 'contains the exact phrase "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", 'contains either "ai" or "startup" (or both)'),
                 t("f0048fa2", "ai OR startup"),
@@ -5890,11 +5885,11 @@
                 t("i0ed3f4e", "Hoton taro"),
                 t("cbae35fa", "Watsa Bayanan Rahoto"),
                 t("fd12ab58", "Collection posts"),
-                t("a226497c", "Ƙirƙiri sabuwar Al'umma");
-            t("d7346632", "Ba ka shiga wasu Al'ummomi ba tukuna"),
+                t("a226497c", "Ƙirƙiri sabuwar Al'umma"),
+                t("d7346632", "Ba ka shiga wasu Al'ummomi ba tukuna"),
                 t("b732a4cc", "When you do, you’ll see their posts here."),
-                t("hff48914", "No posts could be found at this time."),
-                t("hb52cc4a", "Please try again later."),
+                t("hff48914", "No posts could be found at this time.");
+            t("hb52cc4a", "Please try again later."),
                 t("e50e1bb0", "Welcome to Communities"),
                 t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 t("fc5c6914", "Haɗu da wasu tare da abubuwan da kake sha'awa"),
@@ -6888,11 +6883,11 @@
                 t("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 t("iadf78e2", "Download videos"),
                 t("ee54c3de", "Save videos straight to your device"),
-                t("ae03594c", "Small reply boost");
-            t("e6bb08c0", "Increase the visibility of your replies"),
+                t("ae03594c", "Small reply boost"),
+                t("e6bb08c0", "Increase the visibility of your replies"),
                 t("bf2a6acc", "Large Reply Boost"),
-                t("c2059276", "Have your replies boosted."),
-                t("b023ec20", "Max Reply Boost"),
+                t("c2059276", "Have your replies boosted.");
+            t("b023ec20", "Max Reply Boost"),
                 t("g337328e", "Get the highest visibility for your replies."),
                 t("fa006202", "Background video playback"),
                 t("jf389778", "Watch while browsing or using other apps"),
@@ -7866,7 +7861,10 @@
                 t("ddfd6718", "Payment Failed"),
                 t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 t("a62359e6", "Verified Organization Settings"),
-                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                t("i4dccc18", "Billing"),
+                t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                t("dac61c3c", "Account settings");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7905,10 +7903,7 @@
                     u(a, e)
                 );
             }
-            t("i4dccc18", "Billing"),
-                t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                t("dac61c3c", "Account settings"),
-                t("b6b5fd66", "Manage your X account including changing your username or password."),
+            t("b6b5fd66", "Manage your X account including changing your username or password."),
                 t("hb9c4a1c", "Questions, bug reports and feedback"),
                 t("c674f5b4", "Setup invoice payments"),
                 t("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8910,15 +8905,15 @@
                 }),
                 t("ae408b76", "You reposted"),
                 t("j355f008", "Pinned post"),
-                t("habf9678", "Mawallafi ya kafa");
-            t("db0798ed", function (a) {
-                return "Batun " + a.topicName;
-            }),
+                t("habf9678", "Mawallafi ya kafa"),
+                t("db0798ed", function (a) {
+                    return "Batun " + a.topicName;
+                }),
                 t("dc716ec9", function (a) {
                     return "Recommended Topic: " + a.topicName;
                 }),
-                t("fbc2003c", "Ya ƙare"),
-                t("h5051dd8", "Canceled"),
+                t("fbc2003c", "Ya ƙare");
+            t("h5051dd8", "Canceled"),
                 t("bb5f91a3", function (a) {
                     return a.count + " a cikn wannan Sarari";
                 }),
@@ -13219,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.bb30943a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.607b970a.js.map

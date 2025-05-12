@@ -13,7 +13,7 @@
             const s = o.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         557707: (e, t, n) => {
-            n.d(t, { ZP: () => b });
+            n.d(t, { ZP: () => I });
             var i = n(807896),
                 r = n(202784),
                 o = n(466999),
@@ -29,27 +29,27 @@
                 p = n(365023),
                 w = n(292627),
                 f = n(537392),
-                _ = n(392237);
-            const E = l().af8fa2ae,
-                y = r.createElement(h.default, null);
+                E = n(392237);
+            const y = l().af8fa2ae,
+                _ = r.createElement(h.default, null);
             class T extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderAriaOnly = () => {
                             const { testID: e, text: t } = this.props;
-                            return r.createElement(a.Z, { role: "alert", style: _.default.visuallyHidden, testID: e }, r.createElement(o.Z, null, t));
+                            return r.createElement(a.Z, { role: "alert", style: E.default.visuallyHidden, testID: e }, r.createElement(o.Z, null, t));
                         }),
                         (this._renderIcon = () => {
                             const { variant: e } = this.props;
-                            return "jp-holiday-labor-thanksgiving" === e?.type && r.createElement(c.default, { style: I.icon });
+                            return "jp-holiday-labor-thanksgiving" === e?.type && r.createElement(c.default, { style: v.icon });
                         }),
                         (this._renderDecoration = () => {
                             const { variant: e } = this.props;
-                            return "jp-holiday-labor-thanksgiving" === e?.type && r.createElement(a.Z, null, r.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, e.payload.message), r.createElement(m.Z, { spacing: "space12", style: I.divider }));
+                            return "jp-holiday-labor-thanksgiving" === e?.type && r.createElement(a.Z, null, r.createElement(d.ZP, { color: "whiteOnColor", style: v.titleText }, e.payload.message), r.createElement(m.Z, { spacing: "space12", style: v.divider }));
                         }),
                         (this._renderContent = () => {
                             const { action: e, text: t, withAutoDismiss: n, withClearButton: i } = this.props;
-                            return r.createElement(r.Fragment, null, r.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, t), r.createElement(a.Z, { "aria-hidden": n, style: I.actionButtons }, e && this._renderActionLabel(e), i && r.createElement(u.ZP, { "aria-label": E, borderColor: "transparent", color: "white", icon: y, onPress: this._handleClose, style: I.closeButton })));
+                            return r.createElement(r.Fragment, null, r.createElement(d.ZP, { color: "whiteOnColor", style: v.titleText }, t), r.createElement(a.Z, { "aria-hidden": n, style: v.actionButtons }, e && this._renderActionLabel(e), i && r.createElement(u.ZP, { "aria-label": y, borderColor: "transparent", color: "white", icon: _, onPress: this._handleClose, style: v.closeButton })));
                         }),
                         (this._renderVariantContent = () => {
                             const { variant: e } = this.props;
@@ -57,7 +57,7 @@
                                 switch (e.type) {
                                     case "jp-holiday-labor-thanksgiving": {
                                         const e = this._renderContent();
-                                        return r.createElement(r.Fragment, null, this._renderIcon(), r.createElement(a.Z, { style: I.body }, this._renderDecoration(), r.createElement(a.Z, { style: I.content }, e)));
+                                        return r.createElement(r.Fragment, null, this._renderIcon(), r.createElement(a.Z, { style: v.body }, this._renderDecoration(), r.createElement(a.Z, { style: v.content }, e)));
                                     }
                                     case "jetfuel":
                                         return r.createElement(r.Fragment, null, e.payload.body);
@@ -69,9 +69,9 @@
                             if (e)
                                 switch (e.type) {
                                     case "jp-holiday-labor-thanksgiving":
-                                        return I.rootVariantJp;
+                                        return v.rootVariantJp;
                                     case "jetfuel":
-                                        return I.rootVariantJetfuel;
+                                        return v.rootVariantJetfuel;
                                 }
                             return null;
                         }),
@@ -84,14 +84,14 @@
                                 null,
                                 r.createElement(
                                     g.Z,
-                                    { style: I.noPointerEvents },
-                                    r.createElement(p.Z, { id: "Toast" }, (t, n) => r.createElement(a.Z, (0, i.Z)({ ref: t() }, n({ role: "alert", style: [I.root, s && this._getRootVariantStyle(), ...l, e > _.default.theme.breakpoints.medium && I.rootWide], testID: o })), h)),
+                                    { style: v.noPointerEvents },
+                                    r.createElement(p.Z, { id: "Toast" }, (t, n) => r.createElement(a.Z, (0, i.Z)({ ref: t() }, n({ role: "alert", style: [v.root, s && this._getRootVariantStyle(), ...l, e > E.default.theme.breakpoints.medium && v.rootWide], testID: o })), h)),
                                 ),
                             );
                         }),
                         (this._renderContentWithoutLayer = ({ windowWidth: e }) => {
                             const { testID: t } = this.props;
-                            return r.createElement(g.Z, null, r.createElement(a.Z, { role: "alert", style: [I.root, e > _.default.theme.breakpoints.medium && I.rootWide], testID: t }, this._renderContent()));
+                            return r.createElement(g.Z, null, r.createElement(a.Z, { role: "alert", style: [v.root, e > E.default.theme.breakpoints.medium && v.rootWide], testID: t }, this._renderContent()));
                         }),
                         (this._createTimer = () => {
                             const { action: e, autoDismissDelay: t, onClose: n, text: i, withAutoDismiss: r } = this.props;
@@ -121,7 +121,7 @@
                 }
                 _renderActionLabel(e) {
                     const { label: t, link: n } = e;
-                    return r.createElement(d.ZP, { children: t, color: "whiteOnColor", link: n, onClick: this._handleActionPress, style: [I.actionText, !n && I.actionMargin], weight: "bold", withInteractiveStyling: !0 });
+                    return r.createElement(d.ZP, { children: t, color: "whiteOnColor", link: n, onClick: this._handleActionPress, style: [v.actionText, !n && v.actionMargin], weight: "bold", withInteractiveStyling: !0 });
                 }
                 static calculateDismissDelay(e, t) {
                     const n = (1e3 * ("string" == typeof e ? e.split(" ").length : 0)) / 5 + 225;
@@ -132,8 +132,21 @@
                 }
             }
             T.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: w.Z.ModalToasts };
-            const I = _.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
-                b = T;
+            const v = E.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
+                I = T;
+        },
+        748138: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var i = n(202784),
+                r = n(890601),
+                o = n(783427),
+                a = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
         98440: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
@@ -510,7 +523,7 @@
                         });
         },
         653843: (e, t, n) => {
-            n.d(t, { Y7: () => g, ZP: () => T, m2: () => _ });
+            n.d(t, { Y7: () => g, ZP: () => T, m2: () => E });
             var i = n(19697),
                 r = n(790187),
                 o = n(549755),
@@ -553,21 +566,21 @@
                     const { height: n, left: i, top: r, width: o } = w(e, t);
                     return !(0 === r && 0 === i && o === e.width && n === e.height);
                 };
-            function _(e, t) {
+            function E(e, t) {
                 const { maxFileSize: n = c, maxDimension: i = d, cropData: r, jpgPixelsPerByteForResize: o } = t || {},
                     a = "image/jpeg" === e.type,
                     s = (e.width * e.height) / e.size;
                 return m(e) || p(e, n, i) || f(e, r) || (a && !!o && s < o);
             }
-            const E = (e, t) => {
+            const y = (e, t) => {
                     const { height: n, width: i } = e;
                     return i <= t && n <= t ? { width: i, height: n } : i > n ? { width: t, height: Math.round(n / (i / t)) } : { width: Math.round(i / (n / t)), height: t };
                 },
-                y = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
+                _ = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function T(e, t) {
                 const { maxFileSize: n = c, maxDimension: r = d, targetQuality: s = u, cropData: h } = t || {},
                     m = w(e, h);
-                if (!_(e, t)) return Promise.resolve(e.fileHandle);
+                if (!E(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, a.DS)(e)) {
                     const e = new o.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
@@ -581,8 +594,8 @@
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
                         const n = ({ height: n, width: r }) => (0, i.$i)(e, r, n, t, m);
-                        return y(e)
-                            .then(() => ((e) => e(E(m, r)))(n))
+                        return _(e)
+                            .then(() => ((e) => e(y(m, r)))(n))
                             .then(p);
                     })
                     .catch(() => {
@@ -593,4 +606,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.7f7eb77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.d5c1a1ea.js.map

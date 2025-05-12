@@ -3,7 +3,7 @@
     {
         804027: (e, t, r) => {
             "use strict";
-            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => j, CE: () => V, C_: () => L, D7: () => I, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => C, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => z });
+            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => I, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => C, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => j });
             var n = r(261214),
                 o = r(956056),
                 i = r(41065),
@@ -42,8 +42,8 @@
                 x = Object.freeze({ Checkbox: "checkbox", Follow: "follow" }),
                 M = Object.freeze({ Tile: "tile", List: "list", TileFollowButton: "tile_follow_btn" }),
                 Y = (Object.freeze({ Always: "always", Never: "never", Preprompt: "preprompt" }), Object.freeze({ Email: "email", Number: "number", Password: "password", Telephone: "telephone", Text: "text" })),
-                z = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
-                j = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
+                j = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
+                z = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
                 Z = Object.freeze({ Normal: "normal", Compact: "compact" }),
                 W = Object.freeze({ Username: "username", Password: "password", NewPassword: "new_password", Text: "text" }),
                 H = Object.freeze({ Mismatch: "mismatch" }),
@@ -55,7 +55,7 @@
         },
         118823: (e, t, r) => {
             "use strict";
-            r.d(t, { WP: () => oe, R2: () => ne, YW: () => q, Ig: () => te, n8: () => K, YU: () => se, Ai: () => ue, Lw: () => V, z_: () => X, qE: () => Q, tY: () => ie, iD: () => J, jv: () => Y, or: () => D, UD: () => L, cu: () => U, b: () => Z, Du: () => G, zj: () => z, W2: () => F, uz: () => x, Lg: () => B, li: () => M, $B: () => j, B7: () => N, aR: () => W, Wl: () => ae, YF: () => re, d7: () => ce, if: () => ee });
+            r.d(t, { WP: () => oe, R2: () => ne, YW: () => q, Ig: () => te, n8: () => K, YU: () => se, Ai: () => ue, Lw: () => V, z_: () => X, qE: () => Q, tY: () => ie, iD: () => J, jv: () => Y, or: () => D, UD: () => L, cu: () => U, b: () => Z, Du: () => G, zj: () => j, W2: () => F, uz: () => x, Lg: () => B, li: () => M, $B: () => z, B7: () => N, aR: () => W, Wl: () => ae, YF: () => re, d7: () => ce, if: () => ee });
             r(543673), r(240753), r(128399);
             var n = r(695003),
                 o = r.n(n),
@@ -175,8 +175,8 @@
                 x = (e) => e[g].shouldEndFlow,
                 M = (e) => e[g].submitFailed,
                 Y = (e) => e[g].currentSubtask,
-                z = (e) => e[g].previouslySubmittedSubtaskId,
-                j = (e) => e[g].subtaskInputs,
+                j = (e) => e[g].previouslySubmittedSubtaskId,
+                z = (e) => e[g].subtaskInputs,
                 Z = (e) => e[g].navigationContext,
                 W = (e) => e[g].verificationSendFailureMessage,
                 H = (e) => e[g].navigationStack,
@@ -219,7 +219,7 @@
                                     u = Y(s),
                                     c = U(s),
                                     l = N(s),
-                                    f = j(s),
+                                    f = z(s),
                                     h = $(l, f),
                                     d = { ...r, flow_token: c, subtask_inputs: h };
                                 return (0, p._O)(n, { params: d, request: e.task(i) })({ actionTypes: m, context: "SUBMIT_FLOW", meta: { isTaskNavigation: t } }).then((e) => {
@@ -485,7 +485,7 @@
                 b = (e) => e === i.h0.Boolean || e === i.h0.PreciseLocation,
                 y = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
         },
-        487606: (e, t, r) => {
+        42635: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, { default: () => u });
             var n = r(202784),
@@ -494,7 +494,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M2 4c1.66 0 3-1.34 3-3h1c0 1.66 1.34 3 3 3v1C7.34 5 6 6.34 6 8H5c0-1.66-1.34-3-3-3V4zm7.89 4.9C11.26 7.53 12 5.35 12 2h2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1zm7.32 3.1c-.97-.42-1.81-.97-2.53-1.69-.71-.71-1.27-1.56-1.68-2.52-.42.96-.98 1.81-1.69 2.52-.72.72-1.56 1.27-2.53 1.69.97.42 1.81.97 2.53 1.69.71.71 1.27 1.56 1.69 2.52.41-.96.97-1.81 1.68-2.52.72-.72 1.56-1.27 2.53-1.69z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.339 1.75 12S6.339 22.25 12 22.25 22.25 17.661 22.25 12 17.661 1.751 12 1.75zm.571 12.75v2.857L12 18.5l-.571-1.143V14.5H7.36l1.783-3.566V7.928c0-.789.64-1.429 1.429-1.429h2.857c.789 0 1.429.64 1.429 1.429v3.006l1.783 3.566h-4.069z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const u = s;
@@ -634,7 +634,7 @@
                         case "utf8":
                         case "utf-8":
                         case void 0:
-                            return z(e).length;
+                            return j(e).length;
                         case "ucs2":
                         case "ucs-2":
                         case "utf16le":
@@ -643,9 +643,9 @@
                         case "hex":
                             return r >>> 1;
                         case "base64":
-                            return j(e).length;
+                            return z(e).length;
                         default:
-                            if (n) return z(e).length;
+                            if (n) return j(e).length;
                             (t = ("" + t).toLowerCase()), (n = !0);
                     }
             }
@@ -739,7 +739,7 @@
                 return a;
             }
             function b(e, t, r, n) {
-                return Z(z(t, e.length - r), e, r, n);
+                return Z(j(t, e.length - r), e, r, n);
             }
             function y(e, t, r, n) {
                 return Z(
@@ -756,7 +756,7 @@
                 return y(e, t, r, n);
             }
             function S(e, t, r, n) {
-                return Z(j(t), e, r, n);
+                return Z(z(t), e, r, n);
             }
             function A(e, t, r, n) {
                 return Z(
@@ -1223,7 +1223,7 @@
                     var i;
                     if (((t >>>= 0), (r = void 0 === r ? this.length : r >>> 0), e || (e = 0), "number" == typeof e)) for (i = t; i < r; ++i) this[i] = e;
                     else {
-                        var a = u.isBuffer(e) ? e : z(new u(e, n).toString()),
+                        var a = u.isBuffer(e) ? e : j(new u(e, n).toString()),
                             s = a.length;
                         for (i = 0; i < r - t; ++i) this[i + t] = a[i % s];
                     }
@@ -1233,7 +1233,7 @@
             function Y(e) {
                 return e < 16 ? "0" + e.toString(16) : e.toString(16);
             }
-            function z(e, t) {
+            function j(e, t) {
                 var r;
                 t = t || 1 / 0;
                 for (var n = e.length, o = null, i = [], a = 0; a < n; ++a) {
@@ -1273,7 +1273,7 @@
                 }
                 return i;
             }
-            function j(e) {
+            function z(e) {
                 return n.toByteArray(
                     (function (e) {
                         if (
@@ -1394,4 +1394,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.710a43ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.d615b69a.js.map

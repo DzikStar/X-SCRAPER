@@ -4088,11 +4088,6 @@
                 a("h7033cac", "You sent a voice message"),
                 a("i34ec422", "Shared a post"),
                 a("a4939874", "You shared a post"),
-                a("a30a206e", "Got it!"),
-                a("ib4b1b86", "Introducing pinned conversations"),
-                a("bd3ca2ef", function (e) {
-                    return "Select the actions menu on any conversation to pin it to the top for easy access. You can pin up to " + e.count + " conversation" + n(e.count, "", "s") + " at a time.";
-                }),
                 a("e1c9ec9c", "Pin conversation"),
                 a("e3cfff7c", "Snooze conversation"),
                 a("f398722e", "Conversation snoozed"),
@@ -4921,11 +4916,11 @@
                 a("e41fffbc", "The total watch time of your videos."),
                 a("if2909ba", "Watch Time"),
                 a("i0e5bf4c", "Your videos"),
-                a("ed99baea", "Early Beta Access");
-            a("gf898b70", "Advanced Search"),
+                a("ed99baea", "Early Beta Access"),
+                a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
-                a("a8584698", "ai startup"),
-                a("jb6f9292", 'contains the exact phrase "ai startup"'),
+                a("a8584698", "ai startup");
+            a("jb6f9292", 'contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '"ai startup"'),
                 a("d0480758", 'contains either "ai" or "startup" (or both)'),
                 a("f0048fa2", "ai OR startup"),
@@ -5887,11 +5882,11 @@
                 a("i0ed3f4e", "Event image"),
                 a("cbae35fa", "Report Broadcast"),
                 a("fd12ab58", "Collection posts"),
-                a("a226497c", "Create a new Community");
-            a("d7346632", "You haven’t joined any Communities yet"),
+                a("a226497c", "Create a new Community"),
+                a("d7346632", "You haven’t joined any Communities yet"),
                 a("b732a4cc", "When you do, you’ll see their posts here."),
-                a("hff48914", "No posts could be found at this time."),
-                a("hb52cc4a", "Please try again later."),
+                a("hff48914", "No posts could be found at this time.");
+            a("hb52cc4a", "Please try again later."),
                 a("e50e1bb0", "Welcome to Communities"),
                 a("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 a("fc5c6914", "Meet others with your interests"),
@@ -6885,11 +6880,11 @@
                 a("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 a("iadf78e2", "Download videos"),
                 a("ee54c3de", "Save videos straight to your device"),
-                a("ae03594c", "Small reply boost");
-            a("e6bb08c0", "Increase the visibility of your replies"),
+                a("ae03594c", "Small reply boost"),
+                a("e6bb08c0", "Increase the visibility of your replies"),
                 a("bf2a6acc", "Large Reply Boost"),
-                a("c2059276", "Have your replies boosted."),
-                a("b023ec20", "Max Reply Boost"),
+                a("c2059276", "Have your replies boosted.");
+            a("b023ec20", "Max Reply Boost"),
                 a("g337328e", "Get the highest visibility for your replies."),
                 a("fa006202", "Background video playback"),
                 a("jf389778", "Watch while browsing or using other apps"),
@@ -7863,7 +7858,10 @@
                 a("ddfd6718", "Payment Failed"),
                 a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "Verified Organization Settings"),
-                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                a("i4dccc18", "Billing"),
+                a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                a("dac61c3c", "Account settings");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7902,10 +7900,7 @@
                     r(e, t)
                 );
             }
-            a("i4dccc18", "Billing"),
-                a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                a("dac61c3c", "Account settings"),
-                a("b6b5fd66", "Manage your X account including changing your username or password."),
+            a("b6b5fd66", "Manage your X account including changing your username or password."),
                 a("hb9c4a1c", "Questions, bug reports and feedback"),
                 a("c674f5b4", "Setup invoice payments"),
                 a("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8907,15 +8902,15 @@
                 }),
                 a("ae408b76", "You reposted"),
                 a("j355f008", "Pinned post"),
-                a("habf9678", "Pinned by Author");
-            a("db0798ed", function (e) {
-                return e.topicName + " Topic";
-            }),
+                a("habf9678", "Pinned by Author"),
+                a("db0798ed", function (e) {
+                    return e.topicName + " Topic";
+                }),
                 a("dc716ec9", function (e) {
                     return "Recommended Topic: " + e.topicName;
                 }),
-                a("fbc2003c", "Ended"),
-                a("h5051dd8", "Canceled"),
+                a("fbc2003c", "Ended");
+            a("h5051dd8", "Canceled"),
                 a("bb5f91a3", function (e) {
                     return e.count + " in this Space";
                 }),
@@ -13217,4 +13212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.29221ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.9f751c2a.js.map

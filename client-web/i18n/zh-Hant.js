@@ -280,7 +280,7 @@
                 n("edf7f57e", "獲得認證即可獲得提升的回覆、分析、無廣告瀏覽等。立即升級你的個人資料。"),
                 n("ba920d68", "透過認證提升你的影響力"),
                 n("ib79d0c2", "解鎖 VIP 功能：認證你的帳戶"),
-                n("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                n("c0d3bd82", "你已在 X 上投放廣告，但還沒有「已認證組織」訂閱"),
                 n("d7836d1e", "訂閱即可獲得高達 $12,000 的免費廣告抵用金、金色認證、VIP 支援以及一套業務拓展工具。"),
                 n("f528e369", function (e) {
                     return "訂閱 " + e.tier + " 以撰寫你自己的文章";
@@ -1276,13 +1276,13 @@
                 n("c3f04d9c", "思考中"),
                 n("cbdddb0a", "已結束"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "正在搜尋 " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return "正在搜尋**「" + e.query + "」**";
                 }),
                 n("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "正在瀏覽 " + e.url + " 以搜尋 " + e.query;
                 }),
                 n("acb9b845", function (e) {
                     return "正在瀏覽 " + e.url + " 以搜尋**「" + e.query + "」**";
@@ -1291,7 +1291,7 @@
                     return "正在搜尋 @" + e.username + " 的貼文";
                 }),
                 n("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "正在 @" + e.username + " 的貼文中搜尋 " + e.query;
                 }),
                 n("bec7eb11", function (e) {
                     return "正在 @" + e.username + " 的貼文中搜尋**「" + e.query + "」**";
@@ -4087,11 +4087,6 @@
                 n("h7033cac", "你已發送一則語音訊息"),
                 n("i34ec422", "已分享一則貼文"),
                 n("a4939874", "你已分享一則貼文"),
-                n("a30a206e", "知道了！"),
-                n("ib4b1b86", "為你介紹釘選的對話"),
-                n("bd3ca2ef", function (e) {
-                    return "在任何對話上選取動作選單，即可將其釘選到頂部以便於存取。你一次最多可釘選 " + e.count + " 個對話。";
-                }),
                 n("e1c9ec9c", "釘選對話"),
                 n("e3cfff7c", "延遲對話"),
                 n("f398722e", "對話已延遲"),
@@ -4326,10 +4321,10 @@
                 n("b52484b6", "搜尋中…"),
                 n("a4d9dbfa", "思維"),
                 n("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "思考了 " + e.minutes + " 分 " + e.seconds + " 秒";
                 }),
                 n("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "思考了 " + e.seconds + " 秒";
                 }),
                 n("d7cb5408", "個相關網頁"),
                 n("aa7c96bb", function (e) {
@@ -4920,11 +4915,11 @@
                 n("e41fffbc", "你影片的總觀看時間。"),
                 n("if2909ba", "觀看時間"),
                 n("i0e5bf4c", "你的影片"),
-                n("ed99baea", "搶先體驗 Beta 版");
-            n("gf898b70", "進階搜尋"),
+                n("ed99baea", "搶先體驗 Beta 版"),
+                n("gf898b70", "進階搜尋"),
                 n("d2a43a7a", '同時包含 "ai" 和 "啟動"'),
-                n("a8584698", "ai 啟動"),
-                n("jb6f9292", '包含確切詞組 "ai 啟動"'),
+                n("a8584698", "ai 啟動");
+            n("jb6f9292", '包含確切詞組 "ai 啟動"'),
                 n("j8ee77c4", '"ai 啟動"'),
                 n("d0480758", '包含 "ai" 或 "啟動" (或兩者)'),
                 n("f0048fa2", "ai OR 啟動"),
@@ -5886,11 +5881,11 @@
                 n("i0ed3f4e", "活動圖片"),
                 n("cbae35fa", "檢舉廣播"),
                 n("fd12ab58", "貼文收集"),
-                n("a226497c", "建立新的社群");
-            n("d7346632", "你尚未加入任何社群"),
+                n("a226497c", "建立新的社群"),
+                n("d7346632", "你尚未加入任何社群"),
                 n("b732a4cc", "如果有，你將在這裡看到他們的貼文。"),
-                n("hff48914", "目前找不到任何貼文。"),
-                n("hb52cc4a", "請稍後再試。"),
+                n("hff48914", "目前找不到任何貼文。");
+            n("hb52cc4a", "請稍後再試。"),
                 n("e50e1bb0", "歡迎使用社群"),
                 n("i6829daa", "社群是有人監管的討論群組，X 上的人可以在這裡相互連繫和分享。"),
                 n("fc5c6914", "認識與你志同道合的人"),
@@ -6884,11 +6879,11 @@
                 n("e0198956", "憑藉已認證帳戶與你在 X 上所發佈內容的互動，獲得產生的收益分成。"),
                 n("iadf78e2", "下載影片"),
                 n("ee54c3de", "將影片直接儲存至你的裝置"),
-                n("ae03594c", "小幅度的回覆提升");
-            n("e6bb08c0", "提高你的回覆可見度"),
+                n("ae03594c", "小幅度的回覆提升"),
+                n("e6bb08c0", "提高你的回覆可見度"),
                 n("bf2a6acc", "大幅度的回覆提升"),
-                n("c2059276", "提升你的回覆優先等級。"),
-                n("b023ec20", "最大的回覆提升"),
+                n("c2059276", "提升你的回覆優先等級。");
+            n("b023ec20", "最大的回覆提升"),
                 n("g337328e", "讓你的回覆獲得最高的可見度。"),
                 n("fa006202", "背景影片播放 "),
                 n("jf389778", "在瀏覽或使用其他應用程式時觀看"),
@@ -7060,14 +7055,14 @@
                 n("f0ad5cc8", "年"),
                 n("a0dc6e4c", "目前無法使用"),
                 n("jd8b2e66", "訂閱並付費"),
-                n("ca784c0c", "Subscribe & pay with Apple"),
+                n("ca784c0c", "透過 Apple 訂閱並付費"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                n("afd61c76", "Or, save up to 30%"),
+                n("afd61c76", "或者，享有最高 30% 折扣"),
                 n("i7fbacc4", "在可用的訂閱等級之間切換"),
                 n("c9cc122b", function (e) {
                     return e.feature + " 已包含在 " + e.title + " 中";
@@ -7862,7 +7857,10 @@
                 n("ddfd6718", "付款失敗"),
                 n("i90ea7d2", "請立即更新你的帳單資訊以保留你的權益。"),
                 n("a62359e6", "已認證組織設定"),
-                n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。");
+                n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。"),
+                n("i4dccc18", "帳單"),
+                n("ec3cd6e4", "管理你的付款方式、更新帳單資訊，並檢視你的發票。"),
+                n("dac61c3c", "帳戶設定");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7901,10 +7899,7 @@
                     r(e, c)
                 );
             }
-            n("i4dccc18", "帳單"),
-                n("ec3cd6e4", "管理你的付款方式、更新帳單資訊，並檢視你的發票。"),
-                n("dac61c3c", "帳戶設定"),
-                n("b6b5fd66", "管理你的 X 帳戶，包括變更使用者名稱或密碼。"),
+            n("b6b5fd66", "管理你的 X 帳戶，包括變更使用者名稱或密碼。"),
                 n("hb9c4a1c", "問題、程式錯誤回報和意見回饋"),
                 n("c674f5b4", "設定發票付款"),
                 n("i8237e66", "從信用卡付款切換為透過銀行轉帳開具發票。"),
@@ -8906,15 +8901,15 @@
                 }),
                 n("ae408b76", "你已轉發"),
                 n("j355f008", "釘選的貼文"),
-                n("habf9678", "已被作者釘選");
-            n("db0798ed", function (e) {
-                return e.topicName + " 主題";
-            }),
+                n("habf9678", "已被作者釘選"),
+                n("db0798ed", function (e) {
+                    return e.topicName + " 主題";
+                }),
                 n("dc716ec9", function (e) {
                     return "推薦的主題：" + e.topicName;
                 }),
-                n("fbc2003c", "已結束"),
-                n("h5051dd8", "已取消"),
+                n("fbc2003c", "已結束");
+            n("h5051dd8", "已取消"),
                 n("bb5f91a3", function (e) {
                     return e.count + " 人在此音訊空間中";
                 }),
@@ -13225,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.209eef8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0f1424ba.js.map

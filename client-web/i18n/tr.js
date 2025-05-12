@@ -280,7 +280,7 @@
                 n("edf7f57e", "Öne çıkarılan yanıtlar, analizler, reklamsız gezinme vb. gibi birçok ayrıcalık için onaylı hesap sahibi ol. Profilini hemen yükselt."),
                 n("ba920d68", "Onaylama ile etkini artır"),
                 n("ib79d0c2", "VIP özellikleri aç: hesabını onayla"),
-                n("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                n("c0d3bd82", "X'te reklam yayınladın ancak Onaylı Kuruluşlar aboneliğin yok"),
                 n("d7836d1e", "12.000 $'a varan ücretsiz reklam kredisi, altın rengi onaylama, VIP destek ve büyümeni sağlayacak bir dizi araçtan yararlanmak için abone ol."),
                 n("f528e369", function (e) {
                     return "Kendi Makalelerini yazmak için " + e.tier + " abonesi ol";
@@ -1282,7 +1282,7 @@
                     return '**"' + e.query + '"** için arama yapılıyor';
                 }),
                 n("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return e.query + " için " + e.url + " adresine göz atılıyor";
                 }),
                 n("acb9b845", function (e) {
                     return '**"' + e.query + '"** için ' + e.url + " adresine göz atılıyor";
@@ -1291,7 +1291,7 @@
                     return "@" + e.username + " adlı kullanıcının gönderileri aranıyor";
                 }),
                 n("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "@" + e.username + " adlı kullanıcının gönderilerinde " + e.query + " ifadesi aranıyor";
                 }),
                 n("bec7eb11", function (e) {
                     return "@" + e.username + ' adlı kullanıcının gönderilerinde **"' + e.query + '"** ifadesi aranıyor';
@@ -4087,11 +4087,6 @@
                 n("h7033cac", "Sesli mesaj gönderdin"),
                 n("i34ec422", "Bir gönderi paylaştı"),
                 n("a4939874", "Bir gönderi paylaştın"),
-                n("a30a206e", "Anlaşıldı!"),
-                n("ib4b1b86", "Sabitlenen sohbetler tanıtımı"),
-                n("bd3ca2ef", function (e) {
-                    return "Kolay erişim için en üste sabitlemek istediğin bir sohbette işlem menüsünü seç. Tek seferde en fazla " + e.count + " sohbet sabitleyebilirsin.";
-                }),
                 n("e1c9ec9c", "Sohbeti sabitle"),
                 n("e3cfff7c", "Sohbeti ertele"),
                 n("f398722e", "Sohbet ertelendi"),
@@ -4326,10 +4321,10 @@
                 n("b52484b6", "Aranıyor..."),
                 n("a4d9dbfa", "Düşünceler"),
                 n("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return e.minutes + " dakika " + e.seconds + " saniye düşünüldü";
                 }),
                 n("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return e.seconds + " saniye düşünüldü";
                 }),
                 n("d7cb5408", "Alakalı Web Sayfaları"),
                 n("aa7c96bb", function (e) {
@@ -4920,11 +4915,11 @@
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
                 n("if2909ba", "İzlenme Süresi"),
                 n("i0e5bf4c", "Videoların"),
-                n("ed99baea", "Erken Beta Erişimi");
-            n("gf898b70", "Gelişmiş Arama"),
+                n("ed99baea", "Erken Beta Erişimi"),
+                n("gf898b70", "Gelişmiş Arama"),
                 n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
-                n("a8584698", "ai girişimi"),
-                n("jb6f9292", '"ai girişimi" ifadesini tam olarak içerir'),
+                n("a8584698", "ai girişimi");
+            n("jb6f9292", '"ai girişimi" ifadesini tam olarak içerir'),
                 n("j8ee77c4", '"ai girişimi"'),
                 n("d0480758", '"ai" veya "girişimi" ifadesini (ya da her ikisi) içerir'),
                 n("f0048fa2", "ai OR girişimi"),
@@ -5886,11 +5881,11 @@
                 n("i0ed3f4e", "Etkinlik görseli"),
                 n("cbae35fa", "Yayını Bildir"),
                 n("fd12ab58", "Koleksiyon gönderileri"),
-                n("a226497c", "Yeni bir Topluluk oluştur");
-            n("d7346632", "Henüz hiçbir Topluluğa katılmadın."),
+                n("a226497c", "Yeni bir Topluluk oluştur"),
+                n("d7346632", "Henüz hiçbir Topluluğa katılmadın."),
                 n("b732a4cc", "Katıldığında onların gönderilerini burada göreceksin."),
-                n("hff48914", "Şu anda hiç gönderi bulunamadı."),
-                n("hb52cc4a", "Lütfen daha sonra tekrar dene."),
+                n("hff48914", "Şu anda hiç gönderi bulunamadı.");
+            n("hb52cc4a", "Lütfen daha sonra tekrar dene."),
                 n("e50e1bb0", "Topluluklara hoş geldin"),
                 n("i6829daa", "Topluluklar, kişilerin X'te bağlantı kurup paylaşım yapabileceği yönetilen tartışma gruplarıdır."),
                 n("fc5c6914", "Ortak ilgi alanlarına sahip kişilerle tanış"),
@@ -6884,11 +6879,11 @@
                 n("e0198956", "Onaylı hesapların, X'te yayınladığın içeriklerle etkileşimlerinden elde edilen gelirden pay al."),
                 n("iadf78e2", "Videoları indirme"),
                 n("ee54c3de", "Videoları doğrudan cihazına kaydet"),
-                n("ae03594c", "Küçük yanıt artışı");
-            n("e6bb08c0", "Yanıtlarının görünürlüğünü artır"),
+                n("ae03594c", "Küçük yanıt artışı"),
+                n("e6bb08c0", "Yanıtlarının görünürlüğünü artır"),
                 n("bf2a6acc", "Büyük Yanıt Öne Çıkarma"),
-                n("c2059276", "Yanıtlarını öne çıkar."),
-                n("b023ec20", "Maksimum Yanıt Öne Çıkarma"),
+                n("c2059276", "Yanıtlarını öne çıkar.");
+            n("b023ec20", "Maksimum Yanıt Öne Çıkarma"),
                 n("g337328e", "Yanıtların için en yüksek görünürlükten yararlan."),
                 n("fa006202", "Arka planda video oynatma"),
                 n("jf389778", "Gezinirken veya diğer uygulamaları kullanırken izle"),
@@ -7060,14 +7055,14 @@
                 n("f0ad5cc8", "yıl"),
                 n("a0dc6e4c", "Şu anda kullanılamıyor"),
                 n("jd8b2e66", "Abone ol ve ödeme yap"),
-                n("ca784c0c", "Subscribe & pay with Apple"),
+                n("ca784c0c", "Abone ol ve Apple ile öde"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                n("afd61c76", "Or, save up to 30%"),
+                n("afd61c76", "Alternatif olarak %30'a varan tasarruf et"),
                 n("i7fbacc4", "Kullanılabilir abonelik katmanları arasında geçiş yap"),
                 n("c9cc122b", function (e) {
                     return e.feature + ", " + e.title + " kapsamına dahildir";
@@ -7862,7 +7857,10 @@
                 n("ddfd6718", "Ödeme Başarısız Oldu"),
                 n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
                 n("a62359e6", "Onaylı Kuruluş Ayarları"),
-                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın.");
+                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
+                n("i4dccc18", "Faturalandırma"),
+                n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
+                n("dac61c3c", "Hesap ayarları");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7901,10 +7899,7 @@
                     t(e, a)
                 );
             }
-            n("i4dccc18", "Faturalandırma"),
-                n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
-                n("dac61c3c", "Hesap ayarları"),
-                n("b6b5fd66", "X hesabını yöneterek kullanıcı adını veya şifreni değiştirme gibi işlemleri yapabilirsin."),
+            n("b6b5fd66", "X hesabını yöneterek kullanıcı adını veya şifreni değiştirme gibi işlemleri yapabilirsin."),
                 n("hb9c4a1c", "Sorular, hata bildirimleri ve geri bildirim"),
                 n("c674f5b4", "Fatura ödemelerini ayarla"),
                 n("i8237e66", "Kredi kartıyla ödemeden banka transferiyle faturalamaya geçiş yap."),
@@ -8906,15 +8901,15 @@
                 }),
                 n("ae408b76", "Yeniden gönderi yayınladın"),
                 n("j355f008", "Sabitlenmiş gönderi"),
-                n("habf9678", "Yazar tarafından sabitlendi");
-            n("db0798ed", function (e) {
-                return e.topicName + " Konu";
-            }),
+                n("habf9678", "Yazar tarafından sabitlendi"),
+                n("db0798ed", function (e) {
+                    return e.topicName + " Konu";
+                }),
                 n("dc716ec9", function (e) {
                     return "Önerilen Konu: " + e.topicName;
                 }),
-                n("fbc2003c", "Sona Erdi"),
-                n("h5051dd8", "İptal edildi"),
+                n("fbc2003c", "Sona Erdi");
+            n("h5051dd8", "İptal edildi"),
                 n("bb5f91a3", function (e) {
                     return e.count + " bu Sohbet Odasında";
                 }),
@@ -13225,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.8b5f765a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5319e63a.js.map

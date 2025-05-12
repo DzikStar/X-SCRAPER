@@ -280,7 +280,7 @@
                 s("edf7f57e", "Légy ellenőrzött, és fellendítheted a válaszokat, elemzéseket kaphatsz, hirdetésektől mentesen böngészhetsz stb. Frissítsd a profilodat most!"),
                 s("ba920d68", "Lendítsd fel a befolyásodat ellenőrzéssel!"),
                 s("ib79d0c2", "Férj hozzá a VIP szolgáltatásokhoz: ellenőriztesd a fiókodat!"),
-                s("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                s("c0d3bd82", "Hirdetsz az X-en, de nincs Ellenőrzött szervezetek előfizetésed"),
                 s("d7836d1e", "Fizess elő, és akár 12 000 USD értékű ingyenes hirdetési kreditet kaphatsz, valamint arany minősítést, VIP támogatást és számos, a növekedést segítő eszközt."),
                 s("f528e369", function (e) {
                     return "Fizess elő a(z) " + e.tier + " csomagra, hogy saját Cikkeket írhass";
@@ -1282,7 +1282,7 @@
                     return "Keresés erre: **„" + e.query + "”**";
                 }),
                 s("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Böngészés a(z) " + e.url + " oldalon erre: " + e.query;
                 }),
                 s("acb9b845", function (e) {
                     return "A(z) " + e.url + " böngészése ezt keresve: **„" + e.query + "”**";
@@ -1291,7 +1291,7 @@
                     return "@" + e.username + " bejegyzéseinek keresése";
                 }),
                 s("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "@" + e.username + " bejegyzéseinek keresése ezzel kapcsolatban: " + e.query;
                 }),
                 s("bec7eb11", function (e) {
                     return "@" + e.username + " bejegyzéseinek keresése ezzel kapcsolatban: **„" + e.query + "”**";
@@ -4087,11 +4087,6 @@
                 s("h7033cac", "Hangüzenetet küldtél"),
                 s("i34ec422", "Megosztott egy bejegyzést"),
                 s("a4939874", "Megosztottál egy bejegyzést"),
-                s("a30a206e", "Rendben!"),
-                s("ib4b1b86", "A kitűzött beszélgetések bemutatása"),
-                s("bd3ca2ef", function (e) {
-                    return "Válaszd ki a műveletek menüt bármely beszélgetésen, hogy kitűzhesd fentre a könnyebb elérés érdekében. Max. " + e.count + " beszélgetést tűzhetsz ki egyszerre.";
-                }),
                 s("e1c9ec9c", "Beszélgetés kitűzése"),
                 s("e3cfff7c", "Beszélgetés szüneteltetése"),
                 s("f398722e", "A beszélgetés szüneteltetve"),
@@ -4326,10 +4321,10 @@
                 s("b52484b6", "Keresés folyamatban..."),
                 s("a4d9dbfa", "Gondolatok"),
                 s("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Gondolkodás " + e.minutes + " p " + e.seconds + " mp-ig";
                 }),
                 s("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Gondolkodás " + e.seconds + " mp-ig";
                 }),
                 s("d7cb5408", "Kapcsolód weboldalak"),
                 s("aa7c96bb", function (e) {
@@ -4920,11 +4915,11 @@
                 s("e41fffbc", "A videóid teljes megtekintési ideje."),
                 s("if2909ba", "Megtekintési idő"),
                 s("i0e5bf4c", "Saját videók"),
-                s("ed99baea", "Korai bétahozzáférés");
-            s("gf898b70", "Összetett keresés"),
+                s("ed99baea", "Korai bétahozzáférés"),
+                s("gf898b70", "Összetett keresés"),
                 s("d2a43a7a", "mind az „ai”, mind a „startup” szót tartalmazza"),
-                s("a8584698", "ai startup"),
-                s("jb6f9292", "pontosan tartalmazza az „ai startup” kiejezést"),
+                s("a8584698", "ai startup");
+            s("jb6f9292", "pontosan tartalmazza az „ai startup” kiejezést"),
                 s("j8ee77c4", "„ai startup”"),
                 s("d0480758", "vagy az „ai”, vagy a „startup” szót tartalmazza (vagy mindkettőt)"),
                 s("f0048fa2", "ai OR startup"),
@@ -5886,11 +5881,11 @@
                 s("i0ed3f4e", "Esemény képe"),
                 s("cbae35fa", "Közvetítés jelentése"),
                 s("fd12ab58", "Gyűjteménybejegyzések"),
-                s("a226497c", "Új Közösség létrehozása");
-            s("d7346632", "Még nem csatlakoztál egyetlen Közösséghez sem"),
+                s("a226497c", "Új Közösség létrehozása"),
+                s("d7346632", "Még nem csatlakoztál egyetlen Közösséghez sem"),
                 s("b732a4cc", "Ha így teszel, a bejegyzése itt lesz látható."),
-                s("hff48914", "Jelenleg nem találhatók bejegyzések."),
-                s("hb52cc4a", "Kérjük, próbáld meg újra később!"),
+                s("hff48914", "Jelenleg nem találhatók bejegyzések.");
+            s("hb52cc4a", "Kérjük, próbáld meg újra később!"),
                 s("e50e1bb0", "Üdvözöl a Közösségek!"),
                 s("i6829daa", "A Közösségek moderált beszélgetőcsoportok, amelyekben az X felhasználói kapcsolatba léphetnek egymással és megoszthatnak információkat"),
                 s("fc5c6914", "Ismerkedj meg hasonló érdeklődési körű emberekkel"),
@@ -6884,11 +6879,11 @@
                 s("e0198956", "Részesedést kaphatsz az ellenőrzött fiókok által az X-en közzétett tartalmaidra adott reakciókból származó bevételekből."),
                 s("iadf78e2", "Videók letöltése"),
                 s("ee54c3de", "Videók elmentése egyenesen az eszközödre"),
-                s("ae03594c", "Kisebb válaszfellendítés");
-            s("e6bb08c0", "Fokozd a válaszaid láthatóságát"),
+                s("ae03594c", "Kisebb válaszfellendítés"),
+                s("e6bb08c0", "Fokozd a válaszaid láthatóságát"),
                 s("bf2a6acc", "Nagyobb válaszfellendítés"),
-                s("c2059276", "Lendítsd fel a válaszaid!"),
-                s("b023ec20", "Válaszok maximális fellendítése"),
+                s("c2059276", "Lendítsd fel a válaszaid!");
+            s("b023ec20", "Válaszok maximális fellendítése"),
                 s("g337328e", "Érd el a válaszaid legnagyobb körű láthatóságát."),
                 s("fa006202", "Videó lejátszása a háttérben"),
                 s("jf389778", "Nézheted böngészés vagy más alkalmazások használata közben"),
@@ -7060,14 +7055,14 @@
                 s("f0ad5cc8", "év"),
                 s("a0dc6e4c", "Jelenleg nem elérhető"),
                 s("jd8b2e66", "Előfizetés és fizetés"),
-                s("ca784c0c", "Subscribe & pay with Apple"),
+                s("ca784c0c", "Fizess elő és fizess Apple-lel!"),
                 s("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 s("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                s("afd61c76", "Or, save up to 30%"),
+                s("afd61c76", "Vagy spórolj akár 30%-ot!"),
                 s("i7fbacc4", "Válts az elérhető előfizetési csomag között"),
                 s("c9cc122b", function (e) {
                     return "A(z) " + e.feature + " a(z) " + e.title + " előfizetés része";
@@ -7862,7 +7857,10 @@
                 s("ddfd6718", "A fizetés sikertelen"),
                 s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében."),
                 s("a62359e6", "Ellenőrzött szervezet beállításai"),
-                s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj.");
+                s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
+                s("i4dccc18", "Számlázás"),
+                s("ec3cd6e4", "A fizetési mód kezelése, a számlázási információk frissítése és a bevételek ellenőrzése."),
+                s("dac61c3c", "Fiókbeállítások");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7901,10 +7899,7 @@
                     z(e, t)
                 );
             }
-            s("i4dccc18", "Számlázás"),
-                s("ec3cd6e4", "A fizetési mód kezelése, a számlázási információk frissítése és a bevételek ellenőrzése."),
-                s("dac61c3c", "Fiókbeállítások"),
-                s("b6b5fd66", "Az X-fiókod kezelése, beleértve a felhasználónév és jelszó módosítását is."),
+            s("b6b5fd66", "Az X-fiókod kezelése, beleértve a felhasználónév és jelszó módosítását is."),
                 s("hb9c4a1c", "Kérdések, hibajelentések és visszajelzés"),
                 s("c674f5b4", "A számlák kifizetésének beállításai"),
                 s("i8237e66", "Bankkártyát fizetés helyett banki átutalásra váltás a számlák kifizetéséhez."),
@@ -8906,15 +8901,15 @@
                 }),
                 s("ae408b76", "Újraposztoltad"),
                 s("j355f008", "Kitűzött bejegyzés"),
-                s("habf9678", "Kitűzte a szerző");
-            s("db0798ed", function (e) {
-                return e.topicName + " témakör";
-            }),
+                s("habf9678", "Kitűzte a szerző"),
+                s("db0798ed", function (e) {
+                    return e.topicName + " témakör";
+                }),
                 s("dc716ec9", function (e) {
                     return "Ajánlott témakör: " + e.topicName;
                 }),
-                s("fbc2003c", "Vége"),
-                s("h5051dd8", "Visszavonva"),
+                s("fbc2003c", "Vége");
+            s("h5051dd8", "Visszavonva"),
                 s("bb5f91a3", function (e) {
                     return e.count + " ebben a Térben";
                 }),
@@ -13225,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.8aced62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.e0ff457a.js.map

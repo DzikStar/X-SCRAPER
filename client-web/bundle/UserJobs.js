@@ -36,34 +36,34 @@
                     const [u, d, m] = (0, o.Z)(),
                         [p, g] = n.useState(u.get("q") || ""),
                         y = (0, t.useHistory)(),
-                        b = n.useRef(!1);
+                        f = n.useRef(!1);
                     n.useEffect(
                         () => (
-                            (b.current = !0),
+                            (f.current = !0),
                             () => {
-                                b.current = !1;
+                                f.current = !1;
                             }
                         ),
                         [],
                     );
-                    const _ = n.useCallback(() => {
+                    const b = n.useCallback(() => {
                             g(""), y.replace(e);
                         }, [e, y]),
-                        f = n.useMemo(
+                        _ = n.useMemo(
                             () =>
                                 (0, i.Z)((e) => {
-                                    b.current && (e.length > 0 ? (a ? m({ q: e, p: "1" }) : d("q", e)) : _());
+                                    f.current && (e.length > 0 ? (a ? m({ q: e, p: "1" }) : d("q", e)) : b());
                                 }, 1e3),
-                            [_, d, m, a],
+                            [b, d, m, a],
                         ),
                         h = n.useCallback(
                             (e) => {
                                 const { value: l } = e.target;
-                                g(l), f(l);
+                                g(l), _(l);
                             },
-                            [f],
+                            [_],
                         );
-                    return n.createElement(r.Z, { Icon: s.default, autoComplete: "off", isCompact: l, leftAligned: !0, onChange: h, onClear: _, placeholder: "Search jobs", styleType: c || "pill", testID: "search-jobs-input", value: p, withClearButton: !0 });
+                    return n.createElement(r.Z, { Icon: s.default, autoComplete: "off", isCompact: l, leftAligned: !0, onChange: h, onClear: b, placeholder: "Search jobs", styleType: c || "pill", testID: "search-jobs-input", value: p, withClearButton: !0 });
                 },
                 u = n.memo(c);
         },
@@ -82,9 +82,9 @@
                 p = a(252021),
                 g = a(443781),
                 y = a(952793),
-                b = a(835546),
-                _ = a(615027),
-                f = a(771035),
+                f = a(835546),
+                b = a(615027),
+                _ = a(771035),
                 h = a(668214),
                 k = a(919022);
             const S = (e, l) => l.match.params.screenName || void 0,
@@ -95,31 +95,31 @@
                 E = (0, h.Z)()
                     .propsFromState(() => ({ screenName: S, user: F }))
                     .propsFromActions(() => ({ fetchOneUserByScreenNameIfNeeded: k.ZP.fetchOneByScreenNameIfNeeded }));
-            var v,
+            var x,
+                v,
                 C,
                 w,
                 Z,
-                K,
-                x,
-                I,
                 T,
+                K,
+                I,
                 L,
                 z,
                 j,
-                R,
                 P,
-                N,
-                D = a(807896),
+                R,
+                D,
+                N = a(807896),
                 J = {
                     fragment: {
-                        argumentDefinitions: [(v = { defaultValue: null, kind: "LocalArgument", name: "count" }), (C = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (w = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (Z = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        argumentDefinitions: [(x = { defaultValue: null, kind: "LocalArgument", name: "count" }), (v = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (C = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (w = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "UserJobListQueryScreenJobsQuery",
                         selections: [
                             {
                                 alias: "data",
-                                args: (K = [
+                                args: (Z = [
                                     { kind: "Variable", name: "rest_id", variableName: "userId" },
                                     { kind: "Literal", name: "s", value: "f3d8" },
                                 ]),
@@ -138,11 +138,11 @@
                                             name: "result",
                                             plural: !1,
                                             selections: [
-                                                (x = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                (T = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                 {
                                                     kind: "InlineFragment",
                                                     selections: [
-                                                        (I = { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null }),
+                                                        (K = { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null }),
                                                         { args: null, kind: "FragmentSpread", name: "UserAvatar_user" },
                                                         { args: null, kind: "FragmentSpread", name: "JobSearchListItem_user" },
                                                         {
@@ -153,7 +153,7 @@
                                                             name: "recruiting_organization_results",
                                                             plural: !1,
                                                             selections: [
-                                                                (T = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                                (I = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                                 {
                                                                     alias: null,
                                                                     args: null,
@@ -205,7 +205,7 @@
                                                     type: "User",
                                                     abstractKey: null,
                                                 },
-                                                (R = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
+                                                (P = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
                                             ],
                                             storageKey: null,
                                         },
@@ -220,13 +220,13 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [Z, v, C, w],
+                        argumentDefinitions: [w, x, v, C],
                         kind: "Operation",
                         name: "UserJobListQueryScreenJobsQuery",
                         selections: [
                             {
                                 alias: "data",
-                                args: K,
+                                args: Z,
                                 concreteType: "UserResults",
                                 kind: "LinkedField",
                                 name: "user_result_by_rest_id",
@@ -240,11 +240,11 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            x,
+                                            T,
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    I,
+                                                    K,
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -274,7 +274,7 @@
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
-                                                    T,
+                                                    I,
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -283,7 +283,7 @@
                                                         name: "recruiting_organization_results",
                                                         plural: !1,
                                                         selections: [
-                                                            T,
+                                                            I,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -292,13 +292,13 @@
                                                                 name: "result",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    x,
+                                                                    T,
                                                                     {
                                                                         kind: "InlineFragment",
                                                                         selections: [
                                                                             {
                                                                                 alias: null,
-                                                                                args: (P = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, L]),
+                                                                                args: (R = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, L]),
                                                                                 concreteType: "JobSearchSlice",
                                                                                 kind: "LinkedField",
                                                                                 name: "consumer_job_search",
@@ -312,8 +312,8 @@
                                                                                         name: "items_results",
                                                                                         plural: !0,
                                                                                         selections: [
-                                                                                            (N = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
-                                                                                            T,
+                                                                                            (D = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                                                            I,
                                                                                             {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -322,7 +322,7 @@
                                                                                                 name: "result",
                                                                                                 plural: !1,
                                                                                                 selections: [
-                                                                                                    x,
+                                                                                                    T,
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -350,7 +350,7 @@
                                                                                                                 ],
                                                                                                                 storageKey: null,
                                                                                                             },
-                                                                                                            N,
+                                                                                                            D,
                                                                                                         ],
                                                                                                         type: "ApiJob",
                                                                                                         abstractKey: null,
@@ -366,8 +366,8 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                             },
-                                                                            { alias: null, args: P, filters: ["search_params"], handle: "slice", key: "UserJobListQueryScreen_consumer_job_search_slice", kind: "LinkedHandle", name: "consumer_job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
-                                                                            N,
+                                                                            { alias: null, args: R, filters: ["search_params"], handle: "slice", key: "UserJobListQueryScreen_consumer_job_search_slice", kind: "LinkedHandle", name: "consumer_job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
+                                                                            D,
                                                                         ],
                                                                         type: "ApiRecruitingOrganization",
                                                                         abstractKey: null,
@@ -375,20 +375,20 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            N,
+                                                            D,
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    N,
+                                                    D,
                                                 ],
                                                 type: "User",
                                                 abstractKey: null,
                                             },
-                                            R,
+                                            P,
                                         ],
                                         storageKey: null,
                                     },
-                                    N,
+                                    D,
                                 ],
                                 storageKey: null,
                             },
@@ -402,8 +402,8 @@
             var O = a(38293),
                 B = a(652904),
                 A = a(736063),
-                H = a(943052),
-                M = a(293115),
+                M = a(943052),
+                H = a(293115),
                 V = a(127218),
                 q = {
                     argumentDefinitions: [],
@@ -475,23 +475,23 @@
                 pe = a(856438),
                 ge = a(910113),
                 ye = a(478414),
-                be = a(28135);
-            const _e = ({ fallbackName: e, user: l }) => {
+                fe = a(28135);
+            const be = ({ fallbackName: e, user: l }) => {
                     const a = Q()(ge.fR, l);
                     return a && a.legacy && a.legacy.name && a.legacy.screen_name ? n.createElement(te.Z, { avatarSize: "small", isVerified: a.verification?.verified ?? !1, name: a.legacy.name, nameSize: "subtext2", screenName: a.legacy.screen_name, screenNameSize: "subtext2", verifiedType: a.verification?.verified_type ?? void 0, weight: "normal" }) : e ? n.createElement(i.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
-                fe = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext2" },
+                _e = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext2" },
                 he = "user-job-list-item-short-description",
                 ke = c.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, itemRow: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, shortDescription: { color: e.colors.text }, timestamp: { fontSize: e.fontSizes.subtext3 }, lastRow: { marginTop: e.spaces.space4 } })),
-                Se = ({ allowShare: e = !1, companyName: l, createdAt: a, formattedSalary: r, isFeatured: s, isVerifiedOrg: o, jobId: c, jobTitle: u, location: d, onClick: m, profileId: p, redirectUrl: g, salaryInterval: y, shortDescription: b, user: _, withUserInfo: f = !1 }) => {
+                Se = ({ allowShare: e = !1, companyName: l, createdAt: a, formattedSalary: r, isFeatured: s, isVerifiedOrg: o, jobId: c, jobTitle: u, location: d, onClick: m, profileId: p, redirectUrl: g, salaryInterval: y, shortDescription: f, user: b, withUserInfo: _ = !1 }) => {
                     (0, de.q)(() => {
-                        (0, re.fH)((0, ye.yW)(he, fe), he);
+                        (0, re.fH)((0, ye.yW)(he, _e), he);
                     });
                     const h = n.useMemo(() => ({ label: u }), [u]),
-                        k = n.useMemo(() => se.Z.getContentStateFromRaw(b), [b]),
+                        k = n.useMemo(() => se.Z.getContentStateFromRaw(f), [f]),
                         S = n.useMemo(() => k && (0, ne.convertFromRaw)(k).hasText(), [k]),
                         F = n.useMemo(() => `/i/jobs/${c}`, [c]);
-                    return n.createElement(ie.Z, { interactive: !0, link: o ? { pathname: F, external: !0 } : g || "", onClick: m, style: ke.listContainer }, n.createElement(t.Z, { style: ke.items }, n.createElement(i.ZP, { hoverLabel: h, numberOfLines: 2, size: "subtext1", weight: "bold" }, u), f ? n.createElement(_e, { fallbackName: l, user: _ }) : null, n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, d), r ? n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, oe.M)(r, y)) : null, k && S ? n.createElement(t.Z, { style: ke.shortDescription }, n.createElement(me.Z, { className: he }, n.createElement(ce.Z, { contentState: k, paragraphFontSizeOverride: fe.paragraphFontSize }))) : null), n.createElement(t.Z, { style: ke.lastRow }, n.createElement(t.Z, { style: ke.itemRow }, n.createElement(t.Z, { style: ke.itemRow }, a ? n.createElement(ue.Z, { cutoff: "years", humanReadable: !0, style: ke.timestamp, timestamp: a }) : null, s ? n.createElement(pe.Z, null) : null), e ? n.createElement(be.Z, { iconSize: "small", jobId: c, jobUserId: p }) : null)));
+                    return n.createElement(ie.Z, { interactive: !0, link: o ? { pathname: F, external: !0 } : g || "", onClick: m, style: ke.listContainer }, n.createElement(t.Z, { style: ke.items }, n.createElement(i.ZP, { hoverLabel: h, numberOfLines: 2, size: "subtext1", weight: "bold" }, u), _ ? n.createElement(be, { fallbackName: l, user: b }) : null, n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, d), r ? n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, oe.M)(r, y)) : null, k && S ? n.createElement(t.Z, { style: ke.shortDescription }, n.createElement(me.Z, { className: he }, n.createElement(ce.Z, { contentState: k, paragraphFontSizeOverride: _e.paragraphFontSize }))) : null), n.createElement(t.Z, { style: ke.lastRow }, n.createElement(t.Z, { style: ke.itemRow }, n.createElement(t.Z, { style: ke.itemRow }, a ? n.createElement(ue.Z, { cutoff: "years", humanReadable: !0, style: ke.timestamp, timestamp: a }) : null, s ? n.createElement(pe.Z, null) : null), e ? n.createElement(fe.Z, { iconSize: "small", jobId: c, jobUserId: p }) : null)));
                 },
                 Fe = ae,
                 Ee = ({ isViewerFollowsUser: e, item: l, jobId: a, jobIndex: t, profileId: r, user: s }) => {
@@ -503,16 +503,16 @@
                         u = Boolean(s?.is_verified_organization);
                     return o && o.title && o.location ? n.createElement(Se, { allowShare: u, createdAt: o.created_at, formattedSalary: o.formatted_salary, isFeatured: Boolean(o.featured), isVerifiedOrg: s?.is_verified_organization, jobId: a, jobTitle: o.title, location: o.location, onClick: c, profileId: r, redirectUrl: o.redirect_url || "", salaryInterval: o.salary_interval, salaryMax: o.salary_max, salaryMin: o.salary_min, shortDescription: o.short_description, user: s }) : null;
                 },
-                ve = n.memo(Ee),
-                Ce = W,
-                we = (e) => e.rest_id,
-                Ze = ({ fetchNext: e, isViewerFollowsUser: l, profileId: a, slice: t, user: s }) => {
+                xe = n.memo(Ee),
+                ve = W,
+                Ce = (e) => e.rest_id,
+                we = ({ fetchNext: e, isViewerFollowsUser: l, profileId: a, slice: t, user: s }) => {
                     const i = (0, Y.z)(),
-                        o = Q()(Ce, t).items_results,
+                        o = Q()(ve, t).items_results,
                         c = n.useCallback(
                             (e) => {
                                 const t = e.result?.core;
-                                return t ? n.createElement(ve, { isViewerFollowsUser: l, item: t, jobId: e.rest_id, jobIndex: o.findIndex((l) => l.rest_id === e.rest_id), profileId: a, user: s }) : null;
+                                return t ? n.createElement(xe, { isViewerFollowsUser: l, item: t, jobId: e.rest_id, jobIndex: o.findIndex((l) => l.rest_id === e.rest_id), profileId: a, user: s }) : null;
                             },
                             [l, o, a, s],
                         ),
@@ -526,35 +526,35 @@
                             },
                             [i, u, l, a],
                         );
-                    return o ? (o.length ? n.createElement(X.Z, { cacheKey: "userJobList", footer: null, identityFunction: we, items: o, onItemsRendered: m, onNearEnd: e, renderer: c }) : n.createElement(r.Z, { header: "No jobs" })) : null;
+                    return o ? (o.length ? n.createElement(X.Z, { cacheKey: "userJobList", footer: null, identityFunction: Ce, items: o, onItemsRendered: m, onNearEnd: e, renderer: c }) : n.createElement(r.Z, { header: "No jobs" })) : null;
                 },
-                Ke = n.memo(Ze),
-                xe = { page: "jobs_list", section: "all" },
-                Ie = (e = "") => (e ? `Jobs created by ${e}` : "Jobs"),
-                Te = U,
+                Ze = n.memo(we),
+                Te = { page: "jobs_list", section: "all" },
+                Ke = (e = "") => (e ? `Jobs created by ${e}` : "Jobs"),
+                Ie = U,
                 Le = (e) => {
                     const { query: l, screenName: a, user: t } = e,
                         r = n.useMemo(() => {
                             const e = l?.keyword ? { keyword: l.keyword } : null;
                             return { userId: t.id_str, count: 50, cursor: null, searchParams: e };
                         }, [l, t.id_str]),
-                        { data: s, fetchNext: i } = (0, V.C)(Te, r),
+                        { data: s, fetchNext: i } = (0, V.C)(Ie, r),
                         o = s?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
-                    return o ? n.createElement(M.nO, { namespace: xe }, n.createElement(B.Z, null, n.createElement(n.Fragment, null, n.createElement(O.Z, { title: Ie(a) }), n.createElement(Ke, { fetchNext: i, isViewerFollowsUser: t.following, profileId: t.id_str, slice: o, user: s.data.result })))) : null;
+                    return o ? n.createElement(H.nO, { namespace: Te }, n.createElement(B.Z, null, n.createElement(n.Fragment, null, n.createElement(O.Z, { title: Ke(a) }), n.createElement(Ze, { fetchNext: i, isViewerFollowsUser: t.following, profileId: t.id_str, slice: o, user: s.data.result })))) : null;
                 },
                 ze = { context: "UserJobs" },
                 je = (e) => {
-                    const [l] = (0, H.Z)(),
+                    const [l] = (0, M.Z)(),
                         a = n.useMemo(() => ({ keyword: l.get("q") }), [l]);
-                    return n.createElement(A.H, { errorConfig: ze }, n.createElement(Le, (0, D.Z)({}, e, { query: a })));
+                    return n.createElement(A.H, { errorConfig: ze }, n.createElement(Le, (0, N.Z)({}, e, { query: a })));
                 },
-                Re = n.memo(je);
-            var Pe = a(138099),
-                Ne = a(154003),
-                De = a(466818),
+                Pe = n.memo(je);
+            var Re = a(138099),
+                De = a(154003),
+                Ne = a(466818),
                 Je = a(985124);
             const Ue = () => {
-                    const [e, l] = (0, H.Z)(),
+                    const [e, l] = (0, M.Z)(),
                         a = n.useCallback(
                             (e, a) => {
                                 l("t", e);
@@ -562,13 +562,13 @@
                             [l],
                         ),
                         t = n.useMemo(() => e.get("t") ?? "", [e]);
-                    return n.createElement(De.ZP, { label: "Job category", onChange: a, options: Je.pg, testID: "select-team", value: t, withEmptyOption: !0 });
+                    return n.createElement(Ne.ZP, { label: "Job category", onChange: a, options: Je.pg, testID: "select-team", value: t, withEmptyOption: !0 });
                 },
-                Oe = ({ onDismiss: e, screenName: l }) => n.createElement(Pe.Z, { onMaskClick: e, style: Be.modalContainer, type: "full", withMask: !0 }, n.createElement(t.Z, { style: Be.modalContent }, n.createElement(i.ZP, null, "Search jobs")), n.createElement(f.Z, { basePath: `/${l}/jobs` }), n.createElement(Ue, null), n.createElement(Ne.ZP, { onClick: e, type: "brandFilled" }, "Done")),
+                Oe = ({ onDismiss: e, screenName: l }) => n.createElement(Re.Z, { onMaskClick: e, style: Be.modalContainer, type: "full", withMask: !0 }, n.createElement(t.Z, { style: Be.modalContent }, n.createElement(i.ZP, null, "Search jobs")), n.createElement(_.Z, { basePath: `/${l}/jobs` }), n.createElement(Ue, null), n.createElement(De.ZP, { onClick: e, type: "brandFilled" }, "Done")),
                 Be = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", marginTop: e.spaces.space16 }, actions: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconActions: { display: "flex", flexDirection: "row" }, modalContainer: { display: "flex", gap: e.spaces.space32, padding: e.spacesPx.space32 }, modalContent: { display: "flex", gap: e.spaces.space16 }, modalActionsContainer: {} })),
                 Ae = n.memo(Oe),
-                He = d().b007440a,
-                Me = d().c5fb5a1a,
+                Me = d().b007440a,
+                He = d().c5fb5a1a,
                 Ve = c.default.create((e) => ({ rightControlContainer: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, searchContainer: { borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingVertical: e.spaces.space4, width: "100%" }, titleContent: { flexDirection: "row" }, sidebarRoot: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 } })),
                 qe = E((e) => {
                     const [l, a] = n.useState(!1),
@@ -580,23 +580,23 @@
                     n.useEffect(() => {
                         d && c(d);
                     }, [c, d]);
-                    const v = h?.id_str === k,
-                        C = !h || (h && (0, b.n5)({ isOwnProfile: v, isSoftBlockEnabled: E, user: h })),
-                        w = n.useCallback(() => {
+                    const x = h?.id_str === k,
+                        v = !h || (h && (0, f.n5)({ isOwnProfile: x, isSoftBlockEnabled: E, user: h })),
+                        C = n.useCallback(() => {
                             a(!1);
                         }, []);
                     if (d) {
                         const e = () => {
                             const e = "Business" === h?.verified_type || "Square" === h?.profile_image_shape ? "square" : "circle";
-                            return n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, null, h ? n.createElement(s.default, { screenName: d, shape: e, size: "large", uri: h.profile_image_url_https }) : n.createElement(s.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(t.Z, null, n.createElement(i.ZP, { size: "body", weight: "bold" }, He), n.createElement(o.Z, { screenName: d, size: "subtext1", style: { fontWeight: "normal" } })));
+                            return n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, null, h ? n.createElement(s.default, { screenName: d, shape: e, size: "large", uri: h.profile_image_url_https }) : n.createElement(s.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(t.Z, null, n.createElement(i.ZP, { size: "body", weight: "bold" }, Me), n.createElement(o.Z, { screenName: d, size: "subtext1", style: { fontWeight: "normal" } })));
                         };
-                        return C ? n.createElement(n.Fragment, null, n.createElement(p.Z, { backLocation: "/", history: u, primaryContent: h ? (!h?.protected || h?.following || v ? n.createElement(n.Fragment, null, S && d ? n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, { style: Ve.searchContainer }, n.createElement(f.Z, { basePath: `/${d}/jobs`, styleType: "selection" }))) : null, n.createElement(Re, { screenName: d, user: h })) : n.createElement(r.Z, { header: Me })) : null, primaryContentLabel: He, sidebarContent: F ? n.createElement(t.Z, { style: Ve.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), l ? n.createElement(Ae, { onDismiss: w, screenName: d }) : null) : n.createElement(_.Z, { to: `/${d}` });
+                        return v ? n.createElement(n.Fragment, null, n.createElement(p.Z, { backLocation: "/", history: u, primaryContent: h ? (!h?.protected || h?.following || x ? n.createElement(n.Fragment, null, S && d ? n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, { style: Ve.searchContainer }, n.createElement(_.Z, { basePath: `/${d}/jobs`, styleType: "selection" }))) : null, n.createElement(Pe, { screenName: d, user: h })) : n.createElement(r.Z, { header: He })) : null, primaryContentLabel: Me, sidebarContent: F ? n.createElement(t.Z, { style: Ve.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), l ? n.createElement(Ae, { onDismiss: C, screenName: d }) : null) : n.createElement(b.Z, { to: `/${d}` });
                     }
                     return null;
                 });
         },
         466818: (e, l, a) => {
-            a.d(l, { ZP: () => _ });
+            a.d(l, { ZP: () => b });
             var n = a(202784),
                 t = a(325686),
                 r = a(487552),
@@ -637,13 +637,13 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: l, errorText: a, hasError: c, helperText: g, options: y, style: _, testID: f, value: h, withEmptyOption: k } = this.props,
+                    const { "aria-describedby": e, disabled: l, errorText: a, hasError: c, helperText: g, options: y, style: b, testID: _, value: h, withEmptyOption: k } = this.props,
                         { isFocused: S } = this.state,
                         F = o.ZP.getLanguage(),
                         E = void 0 === c ? !!a : c,
-                        v = new Set();
-                    a && v.add(this._errorID), e && v.add(e), g && v.add(this._helperID);
-                    const C = v.size ? [...v].join(" ") : void 0;
+                        x = new Set();
+                    a && x.add(this._errorID), e && x.add(e), g && x.add(this._helperID);
+                    const v = x.size ? [...x].join(" ") : void 0;
                     return n.createElement(
                         n.Fragment,
                         null,
@@ -651,18 +651,18 @@
                             const o = "ja" === F ? d.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(F) ? d.default.theme.fontFamilies.rtl : d.default.theme.fontFamilies.normal;
                             return n.createElement(
                                 t.Z,
-                                { style: [i.Z.border, b.container, l && i.Z.disabled, S && i.Z.focusedBorderValid, E && i.Z.invalidBorderColor, S && E && i.Z.focusedBorderInvalid, _] },
+                                { style: [i.Z.border, f.container, l && i.Z.disabled, S && i.Z.focusedBorderValid, E && i.Z.invalidBorderColor, S && E && i.Z.focusedBorderInvalid, b] },
                                 this._renderLabel(),
                                 n.createElement(
                                     m,
-                                    { "aria-describedby": C, "aria-invalid": E, "aria-labelledby": this._labelID, disabled: l, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, l && i.Z.disabled], testID: f || "", value: h },
-                                    k ? n.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
+                                    { "aria-describedby": v, "aria-invalid": E, "aria-labelledby": this._labelID, disabled: l, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, l && i.Z.disabled], testID: _ || "", value: h },
+                                    k ? n.createElement(p, { disabled: !0, style: f.option, value: "" }) : null,
                                     y.map((e) => {
                                         const { disabled: l, label: a, value: t } = e;
-                                        return n.createElement(p, { disabled: l, key: `${a}-${t}`, style: b.option, value: t }, a);
+                                        return n.createElement(p, { disabled: l, key: `${a}-${t}`, style: f.option, value: t }, a);
                                     }),
                                 ),
-                                n.createElement(r.default, { style: [b.dropdownCaret, S && i.Z.validColor, !(!c && !a) && i.Z.invalidColor] }),
+                                n.createElement(r.default, { style: [f.dropdownCaret, S && i.Z.validColor, !(!c && !a) && i.Z.invalidColor] }),
                             );
                         }),
                         g ? this._renderHelperText() : null,
@@ -672,19 +672,101 @@
                 _renderLabel() {
                     const { errorText: e, hasError: l, label: a } = this.props,
                         { isFocused: t } = this.state;
-                    return n.createElement(o.ZP, { color: l || e ? "red500" : t ? "primary" : "gray700", id: this._labelID, role: "label", style: b.label }, a);
+                    return n.createElement(o.ZP, { color: l || e ? "red500" : t ? "primary" : "gray700", id: this._labelID, role: "label", style: f.label }, a);
                 }
                 _renderHelperText() {
-                    return n.createElement(t.Z, { "aria-live": "polite" }, n.createElement(o.ZP, { color: "gray700", id: this._helperID, style: b.helperText }, this.props.helperText));
+                    return n.createElement(t.Z, { "aria-live": "polite" }, n.createElement(o.ZP, { color: "gray700", id: this._helperID, style: f.helperText }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return n.createElement(t.Z, { "aria-live": "polite" }, n.createElement(o.ZP, { color: "red500", id: this._errorID, style: b.helperText }, this.props.errorText));
+                    return n.createElement(t.Z, { "aria-live": "polite" }, n.createElement(o.ZP, { color: "red500", id: this._errorID, style: f.helperText }, this.props.errorText));
                 }
             }
             y.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const b = d.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                _ = y;
+            const f = d.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                b = y;
+        },
+        280278: (e, l, a) => {
+            a.d(l, { ZP: () => y });
+            var n = a(202784),
+                t = a(325686),
+                r = a(827515),
+                s = a(461756),
+                i = a(731708),
+                o = a(392237);
+            const c = "up",
+                u = "down",
+                d = (e, l, a) => {
+                    a((a) => {
+                        const n = (0, r.Z)(e) ? (e > (a.count || 0) ? c : u) : c;
+                        return { ...a, count: e, oldText: a.text, pendingCount: null, pendingText: null, text: l, transitionDirection: n };
+                    });
+                },
+                m = {};
+            [c, u].forEach((e) => {
+                const l = "0.3s";
+                m[e] = { active: { transitionProperty: "transform", transitionDuration: l, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === c ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === c ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: l } };
+            });
+            const p = { position: "absolute" },
+                g = o.default.create({ root: { overflow: "hidden" } }),
+                y = (e) => {
+                    const { children: l, containerStyle: a, count: o, ...u } = e,
+                        [y, f] = n.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
+                        b = n.useRef(!1);
+                    return (
+                        n.useEffect(
+                            () => (
+                                (b.current = !0),
+                                function () {
+                                    b.current = !1;
+                                }
+                            ),
+                            [],
+                        ),
+                        n.useEffect(() => {
+                            if (b.current)
+                                if (s.Z.reducedMotionEnabled) f((a) => ({ ...a, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (l !== y.pendingText) {
+                                    l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? f((e) => ({ ...e, pendingCount: null, pendingText: null })) : (f((a) => ({ ...a, pendingCount: e.count, pendingText: l })), y.animating || d(e.count, l, f));
+                                }
+                        }, [l]),
+                        n.useEffect(() => {
+                            b.current &&
+                                !1 === y.animating &&
+                                (y.oldText
+                                    ? window.requestAnimationFrame(() =>
+                                          window.requestAnimationFrame(() => {
+                                              b.current && f((e) => ({ ...e, animating: !0 }));
+                                          }),
+                                      )
+                                    : y.pendingText && d(y.pendingCount, y.pendingText, f));
+                        }, [y.animating, y.oldText]),
+                        n.useMemo(() => {
+                            const e = m[y.transitionDirection],
+                                l = y.oldText && !s.Z.reducedMotionEnabled,
+                                r = !y.animating && y.oldText && !s.Z.reducedMotionEnabled,
+                                o = { ...p, ...(y.animating ? e.post : e.active) },
+                                c = { ...(r ? e.pre : e.active) };
+                            return n.createElement(
+                                t.Z,
+                                { style: [g.root, a] },
+                                l ? n.createElement("span", { style: o }, n.createElement(i.ZP, u, y.oldText)) : null,
+                                n.createElement(
+                                    "span",
+                                    {
+                                        "data-testid": "app-text-transition-container",
+                                        onTransitionEnd: () =>
+                                            ((e, l) => {
+                                                e && l((e) => ({ ...e, animating: !1, oldText: null }));
+                                            })(b.current, f),
+                                        style: c,
+                                    },
+                                    n.createElement(i.ZP, u, y.text),
+                                ),
+                            );
+                        }, [a, u, y, b, f])
+                    );
+                };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.44174e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.441b586a.js.map

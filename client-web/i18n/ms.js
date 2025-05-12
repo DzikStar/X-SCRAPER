@@ -280,7 +280,7 @@
                 i("edf7f57e", "Dapatkan pengesahan untuk balasan yang ditingkatkan, analitis, semak imbas bebas iklan, dan banyak lagi. Naik taraf profil anda sekarang."),
                 i("ba920d68", "Tingkatkan pengaruh anda dengan pengesahan"),
                 i("ib79d0c2", "Peroleh ciri VIP: sahkan akaun anda"),
-                i("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                i("c0d3bd82", "Anda telah mengiklan di X, tetapi tidak mempunyai langganan Organisasi Disahkan"),
                 i("d7836d1e", "Langgan untuk mendapatkan sehingga $12,000 dalam bentuk kredit iklan percuma, pengesahan emas, sokongan VIP dan kumpulan alatan untuk berkembang."),
                 i("f528e369", function (a) {
                     return "Langgan " + a.tier + " untuk menulis Artikel anda sendiri";
@@ -1276,13 +1276,13 @@
                 i("c3f04d9c", "Berfikir"),
                 i("cbdddb0a", "Selesai"),
                 i("e98cc293", function (a) {
-                    return "Mencari " + a.query;
+                    return "Mencari tentang " + a.query;
                 }),
                 i("b0d1e205", function (a) {
                     return 'Mencari tentang **"' + a.query + '"**';
                 }),
                 i("i2e0f4d7", function (a) {
-                    return "Browsing " + a.url + " for " + a.query;
+                    return "Menyemak imbas " + a.url + " untuk " + a.query;
                 }),
                 i("acb9b845", function (a) {
                     return "Menyemak imbas " + a.url + ' untuk **"' + a.query + '"**';
@@ -1291,7 +1291,7 @@
                     return "Mencari siaran mengikut @" + a.username;
                 }),
                 i("f7d9cfb9", function (a) {
-                    return "Searching posts by @" + a.username + " for " + a.query;
+                    return "Mencari siaran daripada @" + a.username + " untuk " + a.query;
                 }),
                 i("bec7eb11", function (a) {
                     return "Mencari siaran daripada @" + a.username + ' untuk **"' + a.query + '"**';
@@ -4087,11 +4087,6 @@
                 i("h7033cac", "Anda menghantar mesej suara"),
                 i("i34ec422", "Berkongsi siaran"),
                 i("a4939874", "Anda berkongsi siaran"),
-                i("a30a206e", "Faham!"),
-                i("ib4b1b86", "Memperkenalkan perbualan dipinkan"),
-                i("bd3ca2ef", function (a) {
-                    return "Pilih menu tindakan pada sebarang perbualan untuk dipinkan ke bahagian atas agar dapat diakses dengan mudah. Anda boleh mengepinkan sehingga " + a.count + " perbualan pada satu masa.";
-                }),
                 i("e1c9ec9c", "Pin perbualan"),
                 i("e3cfff7c", "Tunda perbualan"),
                 i("f398722e", "Perbualan ditunda"),
@@ -4326,10 +4321,10 @@
                 i("b52484b6", "Mencari..."),
                 i("a4d9dbfa", "Fikiran"),
                 i("ib1c5475", function (a) {
-                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                    return "Difikirkan selama " + a.minutes + "m " + a.seconds + "s";
                 }),
                 i("a15d62db", function (a) {
-                    return "Thought for " + a.seconds + "s";
+                    return "Difikirkan selama " + a.seconds + "s";
                 }),
                 i("d7cb5408", "Halaman Web Berkaitan"),
                 i("aa7c96bb", function (a) {
@@ -4920,11 +4915,11 @@
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
                 i("if2909ba", "Masa Tontonan"),
                 i("i0e5bf4c", "Video anda"),
-                i("ed99baea", "Akses Beta Awal");
-            i("gf898b70", "Carian Lanjutan"),
+                i("ed99baea", "Akses Beta Awal"),
+                i("gf898b70", "Carian Lanjutan"),
                 i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
-                i("a8584698", "pemula ai"),
-                i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
+                i("a8584698", "pemula ai");
+            i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
                 i("j8ee77c4", '"pemula ai"'),
                 i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
                 i("f0048fa2", "ai ATAU pemula"),
@@ -5886,11 +5881,11 @@
                 i("i0ed3f4e", "Imej acara"),
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Siaran koleksi"),
-                i("a226497c", "Cipta Komuniti baharu");
-            i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi"),
+                i("a226497c", "Cipta Komuniti baharu"),
+                i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi"),
                 i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
-                i("hff48914", "Tiada siaran dapat ditemukan pada masa ini."),
-                i("hb52cc4a", "Sila cuba lagi kemudian."),
+                i("hff48914", "Tiada siaran dapat ditemukan pada masa ini.");
+            i("hb52cc4a", "Sila cuba lagi kemudian."),
                 i("e50e1bb0", "Selamat datang ke Komuniti"),
                 i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
                 i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda"),
@@ -6884,11 +6879,11 @@
                 i("e0198956", "Dapatkan sebahagian hasil yang dijana daripada interaksi akaun disahkan dengan kandungan yang anda siarkan di X."),
                 i("iadf78e2", "Muat turun video"),
                 i("ee54c3de", "Simpan video terus ke peranti anda"),
-                i("ae03594c", "Peningkatan balasan yang kecil");
-            i("e6bb08c0", "Tingkatkan keterlihatan balasan anda"),
+                i("ae03594c", "Peningkatan balasan yang kecil"),
+                i("e6bb08c0", "Tingkatkan keterlihatan balasan anda"),
                 i("bf2a6acc", "Peningkatan Balasan yang Besar"),
-                i("c2059276", "Tingkatkan balasan anda."),
-                i("b023ec20", "Peningkatan Balasan Maksimum"),
+                i("c2059276", "Tingkatkan balasan anda.");
+            i("b023ec20", "Peningkatan Balasan Maksimum"),
                 i("g337328e", "Dapatkan keterlihatan yang tertinggi untuk balasan anda."),
                 i("fa006202", "Main semula video latar belakang"),
                 i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
@@ -7060,14 +7055,14 @@
                 i("f0ad5cc8", "tahun"),
                 i("a0dc6e4c", "Tidak tersedia pada masa ini"),
                 i("jd8b2e66", "Langgan & bayar"),
-                i("ca784c0c", "Subscribe & pay with Apple"),
+                i("ca784c0c", "Langgan & bayar dengan Apple"),
                 i("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 i("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
-                i("afd61c76", "Or, save up to 30%"),
+                i("afd61c76", "Atau jimat hingga 30%"),
                 i("i7fbacc4", "Bertukar antara peringkat langganan yang tersedia"),
                 i("c9cc122b", function (a) {
                     return a.feature + " disertakan dalam " + a.title;
@@ -7862,7 +7857,10 @@
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
                 i("a62359e6", "Tetapan Organisasi Disahkan"),
-                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan.");
+                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
+                i("i4dccc18", "Pengebilan"),
+                i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
+                i("dac61c3c", "Tetapan akaun");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7901,10 +7899,7 @@
                     d(a, n)
                 );
             }
-            i("i4dccc18", "Pengebilan"),
-                i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
-                i("dac61c3c", "Tetapan akaun"),
-                i("b6b5fd66", "Urus akaun X anda termasuk mengubah nama pengguna atau kata laluan anda."),
+            i("b6b5fd66", "Urus akaun X anda termasuk mengubah nama pengguna atau kata laluan anda."),
                 i("hb9c4a1c", "Pertanyaan, laporan pepijat dan maklum balas"),
                 i("c674f5b4", "Sediakan pembayaran invois"),
                 i("i8237e66", "Bertukar daripada pembayaran kad kredit kepada penginvoisan melalui pemindahan bank."),
@@ -8906,15 +8901,15 @@
                 }),
                 i("ae408b76", "Anda membuat siaran semula"),
                 i("j355f008", "Siaran yang dipinkan"),
-                i("habf9678", "Dipinkan oleh Pengarang");
-            i("db0798ed", function (a) {
-                return "Topik " + a.topicName;
-            }),
+                i("habf9678", "Dipinkan oleh Pengarang"),
+                i("db0798ed", function (a) {
+                    return "Topik " + a.topicName;
+                }),
                 i("dc716ec9", function (a) {
                     return "Topik Yang Disyorkan: " + a.topicName;
                 }),
-                i("fbc2003c", "Ditamatkan"),
-                i("h5051dd8", "Dibatalkan"),
+                i("fbc2003c", "Ditamatkan");
+            i("h5051dd8", "Dibatalkan"),
                 i("bb5f91a3", function (a) {
                     return a.count + " dalam Space ini";
                 }),
@@ -13215,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.aef7301a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.3195be6a.js.map

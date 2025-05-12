@@ -290,7 +290,7 @@
                 i("edf7f57e", "Uzyskaj weryfikację, aby móc korzystać m.in. z funkcji wzmacniania odpowiedzi, analiz i przeglądania bez reklam. Już teraz podnieś poziom swojego profilu."),
                 i("ba920d68", "Zwiększ swój wpływ dzięki weryfikacji"),
                 i("ib79d0c2", "Odblokuj funkcje dla VIP-ów: zweryfikuj swoje konto"),
-                i("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                i("c0d3bd82", "Reklamujesz się w serwisie X, ale nie masz subskrypcji Zweryfikowane Organizacje"),
                 i("d7836d1e", "Kup subskrypcję, aby otrzymać do 12 000 USD bezpłatnego kredytu reklamowego, weryfikację w postaci złotego znaczka, pomoc techniczną dla VIP-ów oraz pakiet narzędzi ułatwiających rozwój."),
                 i("f528e369", function (e) {
                     return "Korzystaj z subskrypcji " + e.tier + ", aby móc pisać artykuły";
@@ -1286,13 +1286,13 @@
                 i("c3f04d9c", "Myślenie"),
                 i("cbdddb0a", "Zakończony"),
                 i("e98cc293", function (e) {
-                    return "Wyszukiwanie " + e.query;
+                    return "Wyszukiwanie „" + e.query + "”";
                 }),
                 i("b0d1e205", function (e) {
                     return "Wyszukiwanie **„" + e.query + "”**";
                 }),
                 i("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Przeglądanie witryny " + e.url + " w poszukiwaniu „" + e.query + "”";
                 }),
                 i("acb9b845", function (e) {
                     return "Przeglądanie witryny " + e.url + " w poszukiwaniu **„" + e.query + "”**";
@@ -1301,7 +1301,7 @@
                     return "Wyszukiwanie wpisów użytkownika @" + e.username;
                 }),
                 i("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Wyszukiwanie terminu „" + e.query + "” we wpisach użytkownika @" + e.username;
                 }),
                 i("bec7eb11", function (e) {
                     return "Wyszukiwanie terminu **„" + e.query + "”** we wpisach użytkownika @" + e.username;
@@ -4097,11 +4097,6 @@
                 i("h7033cac", "Wysłałeś/aś wiadomość głosową"),
                 i("i34ec422", "Udostępniono wpis"),
                 i("a4939874", "Udostępniono wpis"),
-                i("a30a206e", "Rozumiem!"),
-                i("ib4b1b86", "Opcja przypinania rozmów"),
-                i("bd3ca2ef", function (e) {
-                    return "Wybierz menu akcji dowolnej rozmowy, aby przypiąć ją u góry dla ułatwienia dostępu. Jednocześnie możesz przypiąć maks. " + e.count + " rozm" + n(e.count, "owy", "ów", "owę", "ów") + ".";
-                }),
                 i("e1c9ec9c", "Przypnij rozmowę"),
                 i("e3cfff7c", "Wycisz rozmowę"),
                 i("f398722e", "Wyciszono rozmowę"),
@@ -4336,10 +4331,10 @@
                 i("b52484b6", "Wyszukiwanie..."),
                 i("a4d9dbfa", "Myśli"),
                 i("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Myślenie trwało " + e.minutes + " min " + e.seconds + " s";
                 }),
                 i("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Myślenie trwało " + e.seconds + " s";
                 }),
                 i("d7cb5408", "Odpowiednie strony internetowe"),
                 i("aa7c96bb", function (e) {
@@ -4930,11 +4925,11 @@
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
                 i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
-                i("ed99baea", "Wczesny dostęp do wersji Beta");
-            i("gf898b70", "Wyszukiwanie zaawansowane"),
+                i("ed99baea", "Wczesny dostęp do wersji Beta"),
+                i("gf898b70", "Wyszukiwanie zaawansowane"),
                 i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
-                i("a8584698", "startup ai"),
-                i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
+                i("a8584698", "startup ai");
+            i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
                 i("j8ee77c4", '"startup ai"'),
                 i("d0480758", 'zawiera wyraz „startup" lub „ai” (albo oba te wyrazy)'),
                 i("f0048fa2", "startup OR ai"),
@@ -5896,11 +5891,11 @@
                 i("i0ed3f4e", "Obrazek wydarzenia"),
                 i("cbae35fa", "Zgłoś transmisję"),
                 i("fd12ab58", "Wpisy w kolekcji"),
-                i("a226497c", "Utwórz nową Grupę dyskusyjną");
-            i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej"),
+                i("a226497c", "Utwórz nową Grupę dyskusyjną"),
+                i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej"),
                 i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
-                i("hff48914", "W tej chwili nie można znaleźć żadnego wpisu."),
-                i("hb52cc4a", "Spróbuj ponownie później."),
+                i("hff48914", "W tej chwili nie można znaleźć żadnego wpisu.");
+            i("hb52cc4a", "Spróbuj ponownie później."),
                 i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
                 i("i6829daa", "Grupy dyskusyjne to moderowane grupy na X, w ramach których użytkownicy mogą rozmawiać i udostępniać treści."),
                 i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach"),
@@ -6894,11 +6889,11 @@
                 i("e0198956", "Otrzymuj udział w dochodach powstających w wyniku interakcji zweryfikowanych kont z treścią Twojego wpisu w serwisie X."),
                 i("iadf78e2", "Pobieranie filmów"),
                 i("ee54c3de", "Zapisuj filmy bezpośrednio na swoim urządzeniu"),
-                i("ae03594c", "Małe wzmocnienie odpowiedzi");
-            i("e6bb08c0", "Zwiększ widoczność swoich odpowiedzi"),
+                i("ae03594c", "Małe wzmocnienie odpowiedzi"),
+                i("e6bb08c0", "Zwiększ widoczność swoich odpowiedzi"),
                 i("bf2a6acc", "Duże wzmocnienie odpowiedzi"),
-                i("c2059276", "Korzystaj z możliwości dodawania boosta do odpowiedzi."),
-                i("b023ec20", "Maksymalne wzmocnienie odpowiedzi"),
+                i("c2059276", "Korzystaj z możliwości dodawania boosta do odpowiedzi.");
+            i("b023ec20", "Maksymalne wzmocnienie odpowiedzi"),
                 i("g337328e", "Uzyskaj największą widoczność swoich odpowiedzi."),
                 i("fa006202", "Odtwarzanie filmów w tle"),
                 i("jf389778", "Oglądaj w trakcie przeglądania lub używania innych aplikacji"),
@@ -7070,14 +7065,14 @@
                 i("f0ad5cc8", "rok"),
                 i("a0dc6e4c", "Aktualnie niedostępne"),
                 i("jd8b2e66", "Subskrybuj i dokonaj płatności"),
-                i("ca784c0c", "Subscribe & pay with Apple"),
+                i("ca784c0c", "Zasubskrybuj i zapłać w usłudze Apple"),
                 i("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 i("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                i("afd61c76", "Or, save up to 30%"),
+                i("afd61c76", "Lub oszczędź do 30%"),
                 i("i7fbacc4", "Przełączaj się między dostępnymi poziomami subskrypcji"),
                 i("c9cc122b", function (e) {
                     return "Funkcja " + e.feature + " jest dostępna w ramach subskrypcji " + e.title;
@@ -7872,7 +7867,10 @@
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
                 i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
                 i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
-                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych.");
+                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
+                i("i4dccc18", "Rachunki"),
+                i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
+                i("dac61c3c", "Ustawienia konta");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7911,10 +7909,7 @@
                     c(e, a)
                 );
             }
-            i("i4dccc18", "Rachunki"),
-                i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
-                i("dac61c3c", "Ustawienia konta"),
-                i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
+            i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
                 i("hb9c4a1c", "Pytania, zgłoszenia usterek i opinie"),
                 i("c674f5b4", "Konfiguruj płatności faktur"),
                 i("i8237e66", "Zmień płatności kartą kredytową na fakturowanie za pośrednictwem przelewów bankowych."),
@@ -8916,15 +8911,15 @@
                 }),
                 i("ae408b76", "Podano dalej"),
                 i("j355f008", "Przypięty wpis"),
-                i("habf9678", "Przypięty przez autora");
-            i("db0798ed", function (e) {
-                return "Temat: " + e.topicName;
-            }),
+                i("habf9678", "Przypięty przez autora"),
+                i("db0798ed", function (e) {
+                    return "Temat: " + e.topicName;
+                }),
                 i("dc716ec9", function (e) {
                     return "Polecany temat: " + e.topicName;
                 }),
-                i("fbc2003c", "Zakończono"),
-                i("h5051dd8", "Anulowano"),
+                i("fbc2003c", "Zakończono");
+            i("h5051dd8", "Anulowano"),
                 i("bb5f91a3", function (e) {
                     return e.count + " w tym Pokoju";
                 }),
@@ -13230,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.1f060bda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.58130a8a.js.map

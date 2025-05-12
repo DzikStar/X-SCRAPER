@@ -28,7 +28,7 @@
             }
         },
         308192: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => $e });
+            r.r(t), r.d(t, { default: () => Be });
             var n = r(459643),
                 o = r(479506),
                 i = r(942893),
@@ -46,11 +46,11 @@
                 C = r(346252),
                 y = r(864479),
                 b = r(952793),
-                S = r(946409),
-                E = r(903019),
-                f = r(618566),
-                x = r(827922),
-                w = r(265196),
+                E = r(946409),
+                S = r(903019),
+                w = r(618566),
+                f = r(827922),
+                x = r(265196),
                 Z = r(421575),
                 T = r(988245),
                 I = r(927389),
@@ -59,26 +59,26 @@
                 P = r(470397),
                 M = r(628526),
                 D = r(378729),
-                F = r(366635),
-                A = r(854582),
-                z = r(868634),
-                H = r(741692),
+                z = r(366635),
+                F = r(854582),
+                H = r(868634),
+                A = r(741692),
                 L = r(686689);
             const R = ({ badge: e, groupedTrends: t, hasProminentSocialContext: r, linkColor: n, promotedContent: o, promotedTrendDescription: i, publisher: a, publisherTitleColor: s = "text", richContext: c, scoreEvent: d, shouldTruncateTitle: p, style: u, supportingText: h, textColor: g = "gray700", timeString: v, title: C, titleFontSize: y = "body", titleWeight: b = "bold" }) => {
-                    const S = k.Z.getTextDirection(C),
-                        E = r ? void 0 : B.title;
-                    return l.createElement(m.Z, { style: u }, l.createElement(_.ZP, { color: s, dir: S, numberOfLines: p ? 3 : void 0, size: y, style: E, weight: b, withHashflags: !0 }, C), r ? null : l.createElement(P.Z, { color: g, style: B.aboveTitle }, h ? l.createElement(_.ZP, { color: g, numberOfLines: 1, size: "subtext2" }, h) : null, a ? l.createElement(H.S3, { author: a, color: s, size: "subtext2" }) : null, e || v ? $(v, e, g) : null), l.createElement(M.Z, { groupedTrends: t, linkColor: n, textColor: g }), r ? l.createElement(m.Z, { style: B.belowTitle }, d ? V(d) : (e || v) && a ? O({ badge: e, publisher: a, textColor: g, timeString: v }) || $(v, e, g) : null) : null, o && o.advertiser ? l.createElement(l.Fragment, null, l.createElement(_.ZP, { color: g }, i), l.createElement(D.Z, { color: "white", promotedContent: o, style: B.promotedIndicator })) : null, c ? l.createElement(L.Z, { color: g, entities: c.entities, rtl: c.rtl, size: "subtext2", text: c.text }) : null);
+                    const E = k.Z.getTextDirection(C),
+                        S = r ? void 0 : $.title;
+                    return l.createElement(m.Z, { style: u }, l.createElement(_.ZP, { color: s, dir: E, numberOfLines: p ? 3 : void 0, size: y, style: S, weight: b, withHashflags: !0 }, C), r ? null : l.createElement(P.Z, { color: g, style: $.aboveTitle }, h ? l.createElement(_.ZP, { color: g, numberOfLines: 1, size: "subtext2" }, h) : null, a ? l.createElement(A.S3, { author: a, color: s, size: "subtext2" }) : null, e || v ? B(v, e, g) : null), l.createElement(M.Z, { groupedTrends: t, linkColor: n, textColor: g }), r ? l.createElement(m.Z, { style: $.belowTitle }, d ? O(d) : (e || v) && a ? V({ badge: e, publisher: a, textColor: g, timeString: v }) || B(v, e, g) : null) : null, o && o.advertiser ? l.createElement(l.Fragment, null, l.createElement(_.ZP, { color: g }, i), l.createElement(D.Z, { color: "white", promotedContent: o, style: $.promotedIndicator })) : null, c ? l.createElement(L.Z, { color: g, entities: c.entities, rtl: c.rtl, size: "subtext2", text: c.text }) : null);
                 },
-                O = ({ badge: e, publisher: t, textColor: r, timeString: n }) => {
-                    const o = l.createElement(F.Z, { isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, nameSize: "subtext2", profileImageUrl: t.profile_image_url_https });
-                    return l.createElement(P.Z, { style: B.publisherRow }, o, $(n, e, r));
+                V = ({ badge: e, publisher: t, textColor: r, timeString: n }) => {
+                    const o = l.createElement(z.Z, { isBlueVerified: t.is_blue_verified, isProtected: t.protected, isVerified: t.verified, name: t.name, nameSize: "subtext2", profileImageUrl: t.profile_image_url_https });
+                    return l.createElement(P.Z, { style: $.publisherRow }, o, B(n, e, r));
                 },
-                V = (e) => {
+                O = (e) => {
                     const { category: t, eventState: r, gameClock: n, gameClockPeriod: o, participants: i, startTimeMillis: a, winnerId: s } = e;
-                    return l.createElement(A.Z, { category: t, gameClock: n, gameClockPeriod: o, gameState: r, startTimeMillis: a, teams: i, winnerId: s, withCategory: !1 });
+                    return l.createElement(F.Z, { category: t, gameClock: n, gameClockPeriod: o, gameState: r, startTimeMillis: a, teams: i, winnerId: s, withCategory: !1 });
                 },
-                $ = (e, t, r) => (t && t.text ? l.createElement(z.ZP, { type: "live" }, t.text) : e ? l.createElement(m.Z, { style: B.timestamp }, l.createElement(_.ZP, { color: r, numberOfLines: 1, size: "subtext2" }, e)) : null),
-                B = v.default.create((e) => ({ aboveTitle: { alignItems: "center", flexDirection: "row" }, belowTitle: { marginTop: e.spaces.space4 }, promotedIndicator: { marginTop: e.spaces.space12 }, publisherRow: { alignItems: "center" }, timestamp: { maxWidth: "50%" }, title: { marginVertical: e.spaces.space2 } })),
+                B = (e, t, r) => (t && t.text ? l.createElement(H.ZP, { type: "live" }, t.text) : e ? l.createElement(m.Z, { style: $.timestamp }, l.createElement(_.ZP, { color: r, numberOfLines: 1, size: "subtext2" }, e)) : null),
+                $ = v.default.create((e) => ({ aboveTitle: { alignItems: "center", flexDirection: "row" }, belowTitle: { marginTop: e.spaces.space4 }, promotedIndicator: { marginTop: e.spaces.space12 }, publisherRow: { alignItems: "center" }, timestamp: { maxWidth: "50%" }, title: { marginVertical: e.spaces.space2 } })),
                 W = l.memo(R);
             var j = r(668214),
                 N = r(204744),
@@ -103,22 +103,22 @@
                     })
                     .propsFromActions(() => ({ saveAsRecentSearch: N.DI })),
                 K = (e) => {
-                    const { badge: t, dataSaverMode: r, feedbackItems: n, groupedTrends: i, hasProminentSocialContext: a, id: s, image: c, isInSidebar: d, link: g, onClick: v, onImpression: y, publisher: S, richContext: f, saveAsRecentSearch: x, scoreEvent: w, shouldStoreTypeaheadItem: Z, socialContext: T, supportingText: k, timeString: _, title: P, topic: M } = e,
+                    const { badge: t, dataSaverMode: r, feedbackItems: n, groupedTrends: i, hasProminentSocialContext: a, id: s, image: c, isInSidebar: d, link: g, onClick: v, onImpression: y, publisher: E, richContext: w, saveAsRecentSearch: f, scoreEvent: x, shouldStoreTypeaheadItem: Z, socialContext: T, supportingText: k, timeString: _, title: P, topic: M } = e,
                         D = (0, b.hC)("responsive_web_trends_ui_top_articles");
                     l.useEffect(() => {
                         y && y();
                     }, []);
-                    const F = l.useCallback(() => {
-                            v(), x && Z && Z(o.Z.ItemType.EVENT) && x({ event: { id: s, image: c || { url: "", height: 0, width: 0 }, supportText: k, title: P, type: E.g2.Event } });
-                        }, [s, c, v, x, Z, k, P]),
-                        A = l.useMemo(() => (n?.length ? l.createElement(I.Z, { feedbackItems: n }) : null), [n]);
-                    return l.createElement(p.$6, null, (e) => l.createElement(u.Z, { link: e.withAnchorless(g), onClick: F, style: te.rootLink, withDarkerInteractiveBackground: d }, a && T ? l.createElement(h.Z, { rightControl: A, style: te.socialContextRow }, l.createElement(ee, { socialContext: T, topic: M })) : null, l.createElement(m.Z, { style: te.row }, D && l.createElement(C.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: w, type: a ? "fixed" : void 0 }), l.createElement(W, { badge: t, groupedTrends: i, hasProminentSocialContext: a, publisher: S, richContext: f, scoreEvent: w, style: D ? te.detailsTrendUI : te.details, supportingText: k, timeString: _, title: P }), !D && l.createElement(C.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: w, type: a ? "fixed" : void 0 }))));
+                    const z = l.useCallback(() => {
+                            v(), f && Z && Z(o.Z.ItemType.EVENT) && f({ event: { id: s, image: c || { url: "", height: 0, width: 0 }, supportText: k, title: P, type: S.g2.Event } });
+                        }, [s, c, v, f, Z, k, P]),
+                        F = l.useMemo(() => (n?.length ? l.createElement(I.Z, { feedbackItems: n }) : null), [n]);
+                    return l.createElement(p.$6, null, (e) => l.createElement(u.Z, { link: e.withAnchorless(g), onClick: z, style: te.rootLink, withDarkerInteractiveBackground: d }, a && T ? l.createElement(h.Z, { rightControl: F, style: te.socialContextRow }, l.createElement(ee, { socialContext: T, topic: M })) : null, l.createElement(m.Z, { style: te.row }, D && l.createElement(C.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: x, type: a ? "fixed" : void 0 }), l.createElement(W, { badge: t, groupedTrends: i, hasProminentSocialContext: a, publisher: E, richContext: w, scoreEvent: x, style: D ? te.detailsTrendUI : te.details, supportingText: k, timeString: _, title: P }), !D && l.createElement(C.Z, { dataSaverMode: r, icon: "news", image: c, isCellWithProminentSocialContext: a, scoreEvent: x, type: a ? "fixed" : void 0 }))));
                 },
                 X = ({ socialContext: e, topic: t }) => {
                     const { contextType: r, landingUrl: n, text: o, topicContext: i } = e,
-                        a = i && (0, x.SJ)(i),
-                        s = l.useMemo(() => (t ? l.createElement(l.Fragment, null, l.createElement(g.Z, { style: te.topicMiddot }), l.createElement(w.ZP, { isTransparent: !0, size: "smallCompact", textMode: Z.q.FollowTopic, topic: t })) : null), [t]);
-                    return l.createElement(T.Z, { contextType: r, link: n ? (0, S.s9)(n) : void 0, rightControl: a ? s : void 0, text: o, topicData: t && i ? (0, f.P)(i) : void 0, weight: "bold", withLeftPadding: !1 });
+                        a = i && (0, f.SJ)(i),
+                        s = l.useMemo(() => (t ? l.createElement(l.Fragment, null, l.createElement(g.Z, { style: te.topicMiddot }), l.createElement(x.ZP, { isTransparent: !0, size: "smallCompact", textMode: Z.q.FollowTopic, topic: t })) : null), [t]);
+                    return l.createElement(T.Z, { contextType: r, link: n ? (0, E.s9)(n) : void 0, rightControl: a ? s : void 0, text: o, topicData: t && i ? (0, w.P)(i) : void 0, weight: "bold", withLeftPadding: !1 });
                 },
                 ee = l.memo(X),
                 te = v.default.create((e) => ({ detailsTrendUI: { flex: 1, marginStart: e.spaces.space12 }, details: { flex: 1, marginEnd: e.spaces.space12 }, topicMiddot: { alignSelf: "center", paddingEnd: 0 }, rootLink: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, row: { flexDirection: "row" }, socialContextRow: { justifyContent: "space-between", marginBottom: e.spaces.space4 } })),
@@ -186,60 +186,60 @@
                     const r = t.entry.content.media?.mediaEntity?.tweetMedia?.momentId;
                     return r ? ge.Z.select(e, r) : void 0;
                 },
-                Se = (e, t) => {
+                Ee = (e, t) => {
                     const r = t.entry.content.media?.mediaEntity?.tweetMedia?.tweetId;
                     return r ? ve.Z.select(e, r) : void 0;
                 },
-                Ee = (e, t) => {
+                Se = (e, t) => {
                     const r = t.entry.content.promotedMetadata?.advertiserId;
                     return r ? Ce.ZP.select(e, r) : void 0;
                 },
-                fe = (e, t) => {
+                we = (e, t) => {
                     const { mediaEntity: r, mediaKey: n } = t.entry.content.media ?? {};
                     if (n && null != r?.broadcast) return r?.broadcast;
                 },
-                xe = ({ eventSummary: e, tweet: t }) => {
+                fe = ({ eventSummary: e, tweet: t }) => {
                     if (t) {
                         const r = e.media?.mediaKey?.id;
                         return t.extended_entities?.media?.find((e) => e.id_str === r);
                     }
                 },
-                we = (0, j.Z)()
-                    .propsFromState(() => ({ advertiser: Ee, eventSummary: ye, moment: be, tweet: Se, broadcast: fe }))
+                xe = (0, j.Z)()
+                    .propsFromState(() => ({ advertiser: Se, eventSummary: ye, moment: be, tweet: Ee, broadcast: we }))
                     .adjustStateProps(({ advertiser: e, broadcast: t, eventSummary: r, moment: n, tweet: o }) => {
                         const { promotedMetadata: i } = r;
-                        return { coverMediaFromTweet: xe({ tweet: o, eventSummary: r }), manualCrops: (0, he.q8)(n), promotedContent: i ? { advertiser: { id_str: i.advertiserId }, advertiser_name: e ? e.name : void 0, impression_id: i.impressionId, disclosure_type: "NoDisclosure" } : void 0, promotedTrendDescription: i ? i.promotedTrendDescription : void 0, tweetId: o?.id_str, broadcast: t };
+                        return { coverMediaFromTweet: fe({ tweet: o, eventSummary: r }), manualCrops: (0, he.q8)(n), promotedContent: i ? { advertiser: { id_str: i.advertiserId }, advertiser_name: e ? e.name : void 0, impression_id: i.impressionId, disclosure_type: "NoDisclosure" } : void 0, promotedTrendDescription: i ? i.promotedTrendDescription : void 0, tweetId: o?.id_str, broadcast: t };
                     }),
                 Ze = "eventHero",
                 Te = "white",
                 Ie = (e) => {
-                    const { badge: t, broadcast: r, coverMediaFromTweet: n, feedbackItems: o, groupedTrends: i, image: a, link: s, manualCrops: c, onClick: d, onImpression: u, promotedContent: h, promotedTrendDescription: g, publisher: v, richContext: C, supportingText: y, timeString: S, title: E, tweetId: f } = e;
+                    const { badge: t, broadcast: r, coverMediaFromTweet: n, feedbackItems: o, groupedTrends: i, image: a, link: s, manualCrops: c, onClick: d, onImpression: u, promotedContent: h, promotedTrendDescription: g, publisher: v, richContext: C, supportingText: y, timeString: E, title: S, tweetId: w } = e;
                     l.useEffect(() => {
                         u && u();
                     }, []);
-                    const x = E.length > 80 ? "headline1" : "title4",
-                        w = (0, b.hC)("rweb_sourcemap_migration");
-                    return l.createElement(p.$6, null, (e) => l.createElement(l.Fragment, null, l.createElement(ne.Z, { link: e.withAnchorless(s), onClick: d, style: w && ke.containerRedesign, testID: Ze }, l.createElement(pe, { broadcast: r, coverMediaFromTweet: n, image: a, manualCrops: c, promotedContent: h, tweetId: f }), l.createElement(m.Z, { style: _e }, l.createElement(W, { badge: t, groupedTrends: i, linkColor: Te, promotedContent: h, promotedTrendDescription: g, publisher: v, publisherTitleColor: Te, richContext: C, shouldTruncateTitle: !0, supportingText: y, textColor: Te, timeString: S, title: E, titleFontSize: x, titleWeight: "heavy" }))), o?.length ? l.createElement(m.Z, { style: ke.menuContainer }, l.createElement(I.Z, { feedbackItems: o, isDisplayedOnMedia: !0 })) : null));
+                    const f = S.length > 80 ? "headline1" : "title4",
+                        x = (0, b.hC)("rweb_sourcemap_migration");
+                    return l.createElement(p.$6, null, (e) => l.createElement(l.Fragment, null, l.createElement(ne.Z, { link: e.withAnchorless(s), onClick: d, style: x && ke.containerRedesign, testID: Ze }, l.createElement(pe, { broadcast: r, coverMediaFromTweet: n, image: a, manualCrops: c, promotedContent: h, tweetId: w }), l.createElement(m.Z, { style: _e }, l.createElement(W, { badge: t, groupedTrends: i, linkColor: Te, promotedContent: h, promotedTrendDescription: g, publisher: v, publisherTitleColor: Te, richContext: C, shouldTruncateTitle: !0, supportingText: y, textColor: Te, timeString: E, title: S, titleFontSize: f, titleWeight: "heavy" }))), o?.length ? l.createElement(m.Z, { style: ke.menuContainer }, l.createElement(I.Z, { feedbackItems: o, isDisplayedOnMedia: !0 })) : null));
                 },
                 ke = v.default.create((e) => ({ containerRedesign: { marginHorizontal: e.spaces.space16 }, menuContainer: { position: "absolute", top: e.spaces.space12, end: e.spaces.space16 }, details: { justifyContent: "flex-end", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
                 _e = [v.default.absoluteFill, ke.details],
-                Pe = we(l.memo(Ie));
+                Pe = xe(l.memo(Ie));
             var Me = r(614983),
                 De = r.n(Me),
-                Fe = r(71620),
-                Ae = r(988566),
-                ze = r(694180);
-            const He = (e, t) => t.entry.content,
+                ze = r(71620),
+                Fe = r(988566),
+                He = r(694180);
+            const Ae = (e, t) => t.entry.content,
                 Le = (e, t) => {
-                    const r = He(0, t),
+                    const r = Ae(0, t),
                         n = r.socialContext && r.socialContext.topicContext && r.socialContext.topicContext.topicId;
                     return n ? Q.Z.select(e, n) : void 0;
                 },
                 Re = (e, t) => {
-                    const { publisherId: r } = He(0, t);
+                    const { publisherId: r } = Ae(0, t);
                     return r ? Ce.ZP.select(e, r) : void 0;
                 },
-                Oe = (e) => {
+                Ve = (e) => {
                     const { analytics: t, createLocalApiErrorHandler: r, logTrend: n, promotedMetadata: o, ...i } = e,
                         a = l.useCallback(
                             (e) => {
@@ -263,22 +263,22 @@
                             return null;
                     }
                 },
-                Ve = (0, j.Z)()
-                    .propsFromState(() => ({ eventSummary: He, publisher: Re, topic: Le }))
+                Oe = (0, j.Z)()
+                    .propsFromState(() => ({ eventSummary: Ae, publisher: Re, topic: Le }))
                     .adjustStateProps(({ eventSummary: e, publisher: t, topic: r }) => {
                         const { displayType: n, groupedTrends: o, promotedMetadata: i, richContext: a } = e,
-                            s = (0, S.s9)(e.url);
+                            s = (0, E.s9)(e.url);
                         De()(s, "link cannot be undefined in EventSummaryHero");
-                        const l = (0, Ae.Du)({ isCellWithProminentSocialContext: n === d.Z.CellWithProminentSocialContext, socialContext: e.socialContext, topic: r }),
-                            c = (o || []).map((e) => ({ name: e.name, link: (0, S.s9)(e.url) }));
+                        const l = (0, Fe.Du)({ isCellWithProminentSocialContext: n === d.Z.CellWithProminentSocialContext, socialContext: e.socialContext, topic: r }),
+                            c = (o || []).map((e) => ({ name: e.name, link: (0, E.s9)(e.url) }));
                         return { badge: e.badge, displayType: e.displayType, groupedTrends: c, image: e.image, link: s, promotedMetadata: i, publisher: t, richContext: a, socialContext: l, supportingText: e.supportingText, timeString: e.timeString, title: e.title };
                     })
-                    .propsFromActions(() => ({ logTrend: ze.dS, createLocalApiErrorHandler: (0, Fe.zr)("URT_EVENT_SUMMARY") }))
-                    .withAnalytics()(l.memo(Oe)),
-                $e = (e) =>
+                    .propsFromActions(() => ({ logTrend: He.dS, createLocalApiErrorHandler: (0, ze.zr)("URT_EVENT_SUMMARY") }))
+                    .withAnalytics()(l.memo(Ve)),
+                Be = (e) =>
                     a
                         .iH({
-                            component: Ve,
+                            component: Oe,
                             getScribeDataItem: (e) =>
                                 ((e) => {
                                     const { promotedMetadata: t } = e.content,
@@ -307,7 +307,7 @@
                 });
         },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => S, H$: () => p, OB: () => E, Ww: () => d, YB: () => m, hj: () => v, qF: () => y });
+            r.d(t, { DI: () => E, H$: () => p, OB: () => S, Ww: () => d, YB: () => m, hj: () => v, qF: () => y });
             r(901951);
             var n = r(499627),
                 o = r(390387);
@@ -364,7 +364,7 @@
                         return (0, o.Qb)(n) ? e(s(i)) : Promise.resolve();
                     },
                 b = "rweb/recentSearches/ADD_QUERY",
-                S =
+                E =
                     (e) =>
                     (t, r, { userPersistence: n }) => {
                         t({ payload: e, type: b });
@@ -372,7 +372,7 @@
                             a = d(i);
                         return (0, o.Qb)(i) ? t(s(a)) : Promise.resolve();
                     },
-                E =
+                S =
                     () =>
                     (e, t, { userPersistence: r }) => {
                         const n = t();
@@ -433,6 +433,19 @@
                     return o ? n.createElement(a.ZP, { color: r, numberOfLines: 2, size: "subtext2", style: p.root }, o) : null;
                 };
         },
+        748138: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
         784732: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
@@ -446,6 +459,19 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
+        258292: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.EventSummaryHandler.abeb7e2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.EventSummaryHandler.7ab1366a.js.map

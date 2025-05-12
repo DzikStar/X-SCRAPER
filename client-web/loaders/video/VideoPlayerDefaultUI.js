@@ -6,20 +6,20 @@
             r.d(t, { o: () => h, Z: () => g });
             var a = r(807896),
                 n = r(202784),
-                l = r(928316),
-                i = r(682474),
-                s = r(392237),
+                s = r(928316),
+                l = r(682474),
+                i = r(392237),
                 o = r(893164),
                 c = r(395367),
                 p = r(908478);
-            function d(e) {
-                let t = u(e);
+            function u(e) {
+                let t = d(e);
                 return (e) => {
-                    const r = u(e);
+                    const r = d(e);
                     return (0, p.Z)(t, r) || (t = r), t;
                 };
             }
-            function u(e) {
+            function d(e) {
                 if (!e || "object" != typeof e) return e;
                 const t = JSON.parse(JSON.stringify(e));
                 return delete t.dataUsageBytes, (t.tracks = t.tracks.map((e) => ("number" == typeof e.currentTimeMs && delete e.currentTimeMs, e))), t;
@@ -27,14 +27,14 @@
             function h({ children: e, periodic: t }) {
                 const r = t ? y.PeriodicContext.Consumer : y.Context.Consumer;
                 return n.createElement(r, null, (t) => {
-                    const { aspectRatio: r, containerRef: a, guestsState: n, playerApi: l, playerState: i } = t;
-                    return l && a && i ? e({ aspectRatio: r, guestsState: n, playerApi: l, playerState: i, containerRef: a }) : null;
+                    const { aspectRatio: r, containerRef: a, guestsState: n, playerApi: s, playerState: l } = t;
+                    return s && a && l ? e({ aspectRatio: r, guestsState: n, playerApi: s, playerState: l, containerRef: a }) : null;
                 });
             }
             class y extends n.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._cache = { stablePlayerState: d(null) }),
+                        (this._cache = { stablePlayerState: u(null) }),
                         (this.state = { hasError: null, guestsState: null, playerApi: null, playerState: null, stablePlayerState: null }),
                         (this._renderCustomOverlay = () => {
                             const { children: e, enablePiP: t } = this.props,
@@ -58,7 +58,7 @@
                 }
                 componentDidUpdate() {
                     if (!this._containerRef) {
-                        const e = l.findDOMNode(this);
+                        const e = s.findDOMNode(this);
                         e && e instanceof HTMLElement && (this._containerRef = e);
                     }
                 }
@@ -67,29 +67,29 @@
                     this.setState(() => ({ hasError: r }));
                 }
                 render() {
-                    const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: l } = this.state,
-                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: S, onApiReady: b, onScroll: E, onStateUpdate: f, playerId: C, size: v, ...P } = this.props,
-                        _ = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
-                        A = { ..._, playerState: l };
+                    const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: s } = this.state,
+                        { additionalBadges: i, aspectRatio: p, basePlayerClass: u, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: S, onApiReady: b, onScroll: E, onStateUpdate: f, playerId: P, size: C, ..._ } = this.props,
+                        A = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
+                        v = { ...A, playerState: s };
                     return n.createElement(
-                        i.Z,
-                        { isFullScreen: g, onScroll: E, ratio: p, style: [m.root, m[v]] },
+                        l.Z,
+                        { isFullScreen: g, onScroll: E, ratio: p, style: [m.root, m[C]] },
                         this.state.hasError
                             ? n.createElement(o.Z, { onReloadPress: this._handleReload })
                             : n.createElement(
                                   y.Context.Provider,
-                                  { value: A },
+                                  { value: v },
                                   n.createElement(
                                       y.PeriodicContext.Provider,
-                                      { value: _ },
-                                      n.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => n.createElement(d, (0, a.Z)({}, P, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: S }, setPlayerApi: this._handlePlayerApi(e) }))),
+                                      { value: A },
+                                      n.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => n.createElement(u, (0, a.Z)({}, _, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: S }, setPlayerApi: this._handlePlayerApi(e) }))),
                                   ),
                               ),
                     );
                 }
             }
-            (y.Consumer = h), (y.defaultProps = { aspectRatio: s.default.theme.aspectRatios.landscape, size: "fill" }), (y.Context = n.createContext({ aspectRatio: s.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null })), (y.PeriodicContext = n.createContext({ aspectRatio: s.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null }));
-            const m = s.default.create({ root: { position: "relative" }, fill: { width: "100%", height: "100%" }, small: { width: 480, height: 270 }, medium: { width: 640, height: 360 }, large: { width: 800, height: 450 } }),
+            (y.Consumer = h), (y.defaultProps = { aspectRatio: i.default.theme.aspectRatios.landscape, size: "fill" }), (y.Context = n.createContext({ aspectRatio: i.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null })), (y.PeriodicContext = n.createContext({ aspectRatio: i.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null }));
+            const m = i.default.create({ root: { position: "relative" }, fill: { width: "100%", height: "100%" }, small: { width: 480, height: 270 }, medium: { width: 640, height: 360 }, large: { width: 800, height: 450 } }),
                 g = y;
         },
         794294: (e, t, r) => {
@@ -97,18 +97,18 @@
             const a = r(392237).default.create((e) => ({ transitionTransform: { transitionProperty: "transform", transitionDuration: "400ms", transitionTimingFunction: "cubic-bezier(0.215, 0.610, 0.355, 1.000)" } }));
         },
         707816: (e, t, r) => {
-            r.d(t, { EO: () => a, M8: () => l, TN: () => n });
+            r.d(t, { EO: () => a, M8: () => s, TN: () => n });
             const a = () => (Math.random() > 0.5 ? 1 : -1);
             function n(e = 1, t = 0) {
                 return Math.random() * (e - t) + t;
             }
-            const l = (e) => ({ width: e, height: e });
+            const s = (e) => ({ width: e, height: e });
         },
         395367: (e, t, r) => {
-            r.d(t, { Z: () => i });
+            r.d(t, { Z: () => l });
             var a,
                 n = r(202784);
-            class l extends n.Component {
+            class s extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { playerApi: void 0, playerState: void 0, guestsState: void 0 }),
@@ -127,7 +127,7 @@
                     return this.props.children(this.state);
                 }
             }
-            class i extends n.Component {
+            class l extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { players: {} }),
@@ -158,38 +158,38 @@
                     this._mounted = !1;
                 }
                 render() {
-                    return n.createElement(i.RegistrationContext.Provider, { value: this._registrationContext }, n.createElement(i.ProviderContext.Provider, { value: this.state }, this.props.children));
+                    return n.createElement(l.RegistrationContext.Provider, { value: this._registrationContext }, n.createElement(l.ProviderContext.Provider, { value: this.state }, this.props.children));
                 }
             }
-            (a = i), (i.MetadataSubscriber = ({ children: e, playerId: t }) => n.createElement(a.ProviderContext.Consumer, null, ({ players: r }) => n.createElement(l, { playerApi: r && r[t] }, e))), (i.RegistrationContext = n.createContext({ registerPlayer: void 0 })), (i.ProviderContext = n.createContext({ players: {} }));
+            (a = l), (l.MetadataSubscriber = ({ children: e, playerId: t }) => n.createElement(a.ProviderContext.Consumer, null, ({ players: r }) => n.createElement(s, { playerApi: r && r[t] }, e))), (l.RegistrationContext = n.createContext({ registerPlayer: void 0 })), (l.ProviderContext = n.createContext({ players: {} }));
         },
         893164: (e, t, r) => {
             r.d(t, { Z: () => h });
             var a = r(202784),
                 n = r(325686),
-                l = r(674132),
-                i = r.n(l),
-                s = r(355830),
+                s = r(674132),
+                l = r.n(s),
+                i = r(355830),
                 o = r(731708),
                 c = r(154003),
                 p = r(992942),
-                d = r(392237);
-            const u = i().a9edea48;
+                u = r(392237);
+            const d = l().a9edea48;
             function h(e) {
-                const { displayBackgroundImage: t = !1, errorMessage: r, iconPlayError: l, imageSrc: i, onReloadPress: h } = e;
-                return a.createElement(n.Z, { style: [d.default.absoluteFill, t ? null : y.blankOverlay] }, t ? a.createElement(a.Fragment, null, a.createElement(n.Z, { style: y.backgroundImage }, i && a.createElement(p.Z, { resizeMode: "cover", source: i, style: d.default.absoluteFill })), a.createElement(n.Z, { style: y.overlay })) : null, a.createElement(n.Z, { style: y.errorContainer }, a.createElement(n.Z, null, l ? a.createElement(s.default, { style: y.playErrorIcon }) : null), a.createElement(n.Z, { focusable: !0 }, a.createElement(o.ZP, { style: t ? y.errorMsgTextWhite : y.errorMsgTextGray }, r)), h ? a.createElement(c.ZP, { onPress: h, style: y.buttonContainer, type: "brandFilled" }, u) : null));
+                const { displayBackgroundImage: t = !1, errorMessage: r, iconPlayError: s, imageSrc: l, onReloadPress: h } = e;
+                return a.createElement(n.Z, { style: [u.default.absoluteFill, t ? null : y.blankOverlay] }, t ? a.createElement(a.Fragment, null, a.createElement(n.Z, { style: y.backgroundImage }, l && a.createElement(p.Z, { resizeMode: "cover", source: l, style: u.default.absoluteFill })), a.createElement(n.Z, { style: y.overlay })) : null, a.createElement(n.Z, { style: y.errorContainer }, a.createElement(n.Z, null, s ? a.createElement(i.default, { style: y.playErrorIcon }) : null), a.createElement(n.Z, { focusable: !0 }, a.createElement(o.ZP, { style: t ? y.errorMsgTextWhite : y.errorMsgTextGray }, r)), h ? a.createElement(c.ZP, { onPress: h, style: y.buttonContainer, type: "brandFilled" }, d) : null));
             }
-            const y = d.default.create((e) => ({ backgroundImage: { ...d.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...d.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
+            const y = u.default.create((e) => ({ backgroundImage: { ...u.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...u.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
         472238: (e, t, r) => {
             r.d(t, { Z: () => p });
             var a = r(202784),
                 n = r(325686),
-                l = r(674132),
-                i = r.n(l),
-                s = r(154003),
+                s = r(674132),
+                l = r.n(s),
+                i = r(154003),
                 o = r(392237);
-            const c = i().f2d4e6f2;
+            const c = l().f2d4e6f2;
             class p extends a.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -202,23 +202,23 @@
                 }
                 render() {
                     const { playerState: e } = this.props;
-                    return e && e.tracksFinished ? a.createElement(n.Z, { onClick: this._handleOnClick, style: d.overlay }, a.createElement(s.ZP, { "aria-label": c, onPress: this._handleOnPress, type: "onMediaDominantColorFilled" }, c)) : null;
+                    return e && e.tracksFinished ? a.createElement(n.Z, { onClick: this._handleOnClick, style: u.overlay }, a.createElement(i.ZP, { "aria-label": c, onPress: this._handleOnPress, type: "onMediaDominantColorFilled" }, c)) : null;
                 }
             }
-            const d = o.default.create((e) => ({ overlay: { ...o.default.absoluteFillObject, backgroundColor: o.default.theme.colors.translucentBlack30, alignItems: "center", justifyContent: "center" } }));
+            const u = o.default.create((e) => ({ overlay: { ...o.default.absoluteFillObject, backgroundColor: o.default.theme.colors.translucentBlack30, alignItems: "center", justifyContent: "center" } }));
         },
         629761: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => A });
+            r.r(t), r.d(t, { default: () => v });
             var a = r(202784),
                 n = r(325686),
-                l = r(908629),
-                i = r(314916),
-                s = r(738584),
+                s = r(908629),
+                l = r(314916),
+                i = r(738584),
                 o = r(364779),
                 c = r(502089),
                 p = r(864386),
-                d = r(734701),
-                u = r(535814),
+                u = r(734701),
+                d = r(535814),
                 h = r(424713),
                 y = r(251478),
                 m = r(867703),
@@ -227,53 +227,53 @@
                 b = r(971765),
                 E = r(916692),
                 f = r(804455),
-                C = r(162317),
-                v = r(472238),
-                P = r(272879);
-            class _ extends a.PureComponent {
+                P = r(162317),
+                C = r(472238),
+                _ = r(272879);
+            class A extends a.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { wasPrerollSkipped: !1 }),
                         (this._renderVideoPlayer = (e) => {
-                            const { playerApi: t, playerState: r, poster: n, useKeyboardShortcuts: l } = this.props;
+                            const { playerApi: t, playerState: r, poster: n, useKeyboardShortcuts: s } = this.props;
                             if (!t || !r) return null;
                             const c = (0, h.Ci)(r),
                                 p = c?.contentType === y.wF.GIF,
-                                d = c?.displayType === y.ak.AD && c?.playbackCompleted,
+                                u = c?.displayType === y.ak.AD && c?.playbackCompleted,
                                 m = r.errorInfo?.adFailed,
                                 g = c?.displayType === y.ak.AD && c?.useRedesignedPrerollUx;
-                            return g && (this.state.wasPrerollSkipped || d || m)
-                                ? a.createElement(s.o, null, ({ aspectRatio: e }) => {
+                            return g && (this.state.wasPrerollSkipped || u || m)
+                                ? a.createElement(i.o, null, ({ aspectRatio: e }) => {
                                       const t = n || r.posterImage;
-                                      return a.createElement(i.ZP, { aspectRatio: e, imageSrc: t, onTransitionComplete: this._handleTransitionAnimationComplete });
+                                      return a.createElement(l.ZP, { aspectRatio: e, imageSrc: t, onTransitionComplete: this._handleTransitionAnimationComplete });
                                   })
                                 : g
                                   ? this._renderVideo(e, !0)
-                                  : a.createElement(u.Z, { enabled: !p && !!l, playerApi: t, playerState: r }, a.createElement(o.Z, { playerState: r }, this._renderVideo(e, !1)));
+                                  : a.createElement(d.Z, { enabled: !p && !!s, playerApi: t, playerState: r }, a.createElement(o.Z, { playerState: r }, this._renderVideo(e, !1)));
                         }),
                         (this._renderVideo = (e, t) => {
-                            const { additionalBadges: r, "aria-label": i, containerRef: s, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: u, guestsState: _, includeDisputeLinkInCopyrightErrorMessage: A, liveBroadcastRewindEnabled: Z, onClickBackground: R, onScribeEvent: w, playerApi: k, playerDisplayOptions: x, playerState: I, poster: O, renderPrerollActionMenu: D, shouldShowAltLabel: M, showWatchAgain: F } = this.props;
-                            if (!k || !I) return null;
-                            const { Observer: T, observed: B } = e,
-                                z = (0, P.JN)(I, B, P.i2),
-                                U = !!I.error,
-                                V = (0, h.Ci)(I),
-                                L = V?.contentType === y.wF.GIF,
-                                j = "PLAY_REQUESTED" !== I.controls?.playState,
-                                H = F && I.tracksFinished,
-                                G = z && I.isPreview,
-                                W = !(!z || !V?.isLive),
-                                N = M ? i : void 0,
-                                K = !x?.hideLeftBadges && (!!N || L || G || W),
-                                J = !x?.hideRightBadges && z,
-                                Y = G || !z,
+                            const { additionalBadges: r, "aria-label": l, containerRef: i, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: d, guestsState: A, includeDisputeLinkInCopyrightErrorMessage: v, liveBroadcastRewindEnabled: R, onClickBackground: Z, onScribeEvent: k, playerApi: w, playerDisplayOptions: x, playerState: I, poster: O, renderPrerollActionMenu: D, shouldShowAltLabel: F, showWatchAgain: T } = this.props;
+                            if (!w || !I) return null;
+                            const { Observer: M, observed: B } = e,
+                                U = (0, _.JN)(I, B, _.i2),
+                                L = !!I.error,
+                                j = (0, h.Ci)(I),
+                                z = j?.contentType === y.wF.GIF,
+                                V = "PLAY_REQUESTED" !== I.controls?.playState,
+                                G = T && I.tracksFinished,
+                                W = U && I.isPreview,
+                                H = !(!U || !j?.isLive),
+                                N = F ? l : void 0,
+                                K = !x?.hideLeftBadges && (!!N || z || W || H),
+                                J = !x?.hideRightBadges && U,
+                                Y = W || !U,
                                 Q = !x?.hidePosterImage,
                                 q = I.controls?.isPosterShown;
                             return a.createElement(
-                                T,
-                                { click: !0, interactionKey: P.IG.Root, mousemove: !0, mouseover: !0 },
-                                U ? null : a.createElement(a.Fragment, null, a.createElement(E.Z, { hideControls: z, isTouchOnlyUI: P.i2, liveBroadcastRewindEnabled: Z, onClick: R, playerApi: k, playerDisplayOptions: x, playerState: I }), Q && !H && a.createElement(f.Z, { imageSrc: O, playerApi: k, playerState: I, withPlayButton: j }), a.createElement(g.Z, { playerState: I }), t ? a.createElement(C.Z, { containerRef: s, onSkip: this._handleSkip, playerApi: k, playerState: I, renderPrerollActionMenu: D }) : a.createElement(a.Fragment, null, !L && F && a.createElement(v.Z, { onScribeEvent: w, playerApi: k, playerState: I }), a.createElement(b.Z, { guestsState: _, playerState: I }), !L && a.createElement(T, { focus: !0, interactionKey: P.IG.VideoCTA, mouseover: !0 }, a.createElement(l.Z, { show: !z }, a.createElement(d.Z, { playerApi: k, playerState: I }))), !L && !q && a.createElement(a.Fragment, null, a.createElement(T, { focus: !0, interactionKey: P.IG.A11YHook }, a.createElement(n.Z, { focusable: !0 })), a.createElement(T, { focus: !0, interactionKey: P.IG.ControlBar, mouseover: !0, touch: !0 }, a.createElement(c.Z, { containerRef: s, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: u, hideControls: z, liveBroadcastRewindEnabled: Z, playerApi: k, playerState: I, publisherDisplayName: V?.publisherDisplayName, publisherProfileImageUrl: V?.publisherProfileImageUrl, showScrubber: "ad" !== V?.displayType && (!V?.isLive || Z) }))), a.createElement(l.Z, { show: K }, a.createElement(m.Z, { additionalBadges: r, mediaAccessibilityLabel: N, playerApi: k, playerDisplayOptions: x, playerState: I, position: "left" })), a.createElement(l.Z, { show: J }, a.createElement(m.Z, { playerApi: k, playerDisplayOptions: x, playerState: I, position: "right" })), a.createElement(l.Z, { show: Y }, a.createElement(m.Z, { playerApi: k, playerDisplayOptions: x, playerState: I, position: "topRight" })))),
-                                a.createElement(l.Z, { show: U }, U && a.createElement(S.Z, { imageSrc: O, includeDisputeLinkInCopyrightErrorMessage: A, playerApi: k, playerState: I })),
+                                M,
+                                { click: !0, interactionKey: _.IG.Root, mousemove: !0, mouseover: !0 },
+                                L ? null : a.createElement(a.Fragment, null, a.createElement(E.Z, { hideControls: U, isTouchOnlyUI: _.i2, liveBroadcastRewindEnabled: R, onClick: Z, playerApi: w, playerDisplayOptions: x, playerState: I }), Q && !G && a.createElement(f.Z, { imageSrc: O, playerApi: w, playerState: I, withPlayButton: V }), a.createElement(g.Z, { playerState: I }), t ? a.createElement(P.Z, { containerRef: i, onSkip: this._handleSkip, playerApi: w, playerState: I, renderPrerollActionMenu: D }) : a.createElement(a.Fragment, null, !z && T && a.createElement(C.Z, { onScribeEvent: k, playerApi: w, playerState: I }), a.createElement(b.Z, { guestsState: A, playerState: I }), !z && a.createElement(M, { focus: !0, interactionKey: _.IG.VideoCTA, mouseover: !0 }, a.createElement(s.Z, { show: !U }, a.createElement(u.Z, { playerApi: w, playerState: I }))), !z && !q && a.createElement(a.Fragment, null, a.createElement(M, { focus: !0, interactionKey: _.IG.A11YHook }, a.createElement(n.Z, { focusable: !0 })), a.createElement(M, { focus: !0, interactionKey: _.IG.ControlBar, mouseover: !0, touch: !0 }, a.createElement(c.Z, { containerRef: i, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: d, hideControls: U, liveBroadcastRewindEnabled: R, playerApi: w, playerState: I, publisherDisplayName: j?.publisherDisplayName, publisherProfileImageUrl: j?.publisherProfileImageUrl, showScrubber: "ad" !== j?.displayType && (!j?.isLive || R) }))), a.createElement(s.Z, { show: K }, a.createElement(m.Z, { additionalBadges: r, mediaAccessibilityLabel: N, playerApi: w, playerDisplayOptions: x, playerState: I, position: "left" })), a.createElement(s.Z, { show: J }, a.createElement(m.Z, { playerApi: w, playerDisplayOptions: x, playerState: I, position: "right" })), a.createElement(s.Z, { show: Y }, a.createElement(m.Z, { playerApi: w, playerDisplayOptions: x, playerState: I, position: "topRight" })))),
+                                a.createElement(s.Z, { show: L }, L && a.createElement(S.Z, { imageSrc: O, includeDisputeLinkInCopyrightErrorMessage: v, playerApi: w, playerState: I })),
                             );
                         }),
                         (this._handleSkip = () => {
@@ -290,34 +290,8 @@
                     return e && t ? a.createElement(p.Z, null, a.createElement(p.Z.Context.Consumer, null, this._renderVideoPlayer)) : null;
                 }
             }
-            const A = _;
-        },
-        38502: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => o });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                i = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.12 4.119 3 5.5 3h13C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13zm2.746 6.52c0 1.85 1.421 3.2 3.187 3.2v-.01h.003c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.68 1.684-1.68c.559 0 1.051.27 1.357.69l1.207-.93c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.41-3.26 3.21v.02zm6.584 0c0 1.85 1.421 3.2 3.185 3.2 1.368 0 2.154-.6 2.738-1.4l-1.22-.87c-.304.44-.813.74-1.39.74-.93 0-1.684-.76-1.684-1.69s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.93c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.41-3.258 3.21v.02z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        715614: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => o });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                i = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 4C9.25 4 6.83 5.39 5.38 7.5H8v2H2v-6h2V6c1.82-2.43 4.73-4 8-4 5.52 0 10 4.48 10 10s-4.48 10-10 10c-4.76 0-8.74-3.33-9.75-7.78l1.95-.44C5.01 17.34 8.19 20 12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8zm-1 4h2v3.59l3.21 3.2-1.42 1.42-3.79-3.8V8z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
+            const v = A;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerDefaultUI.eaefb3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerDefaultUI.e8502fea.js.map

@@ -3,7 +3,7 @@
     ["shared~bundle.Compose~bundle.RichTextCompose-e6266db0"],
     {
         621416: (e, t, n) => {
-            n.d(t, { Z: () => i, m: () => a });
+            n.d(t, { m: () => a });
             n(890103);
             var o = n(202784),
                 r = n(175698);
@@ -16,7 +16,6 @@
                     }, [t, e]),
                 ];
             }
-            const i = a;
         },
         670094: (e, t, n) => {
             n.d(t, { d: () => l });
@@ -1080,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.0074f57a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.b736ebaa.js.map

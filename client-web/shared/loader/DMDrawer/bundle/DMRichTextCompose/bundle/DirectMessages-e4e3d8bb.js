@@ -16,7 +16,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -75,12 +75,12 @@
                     const { muting: o, screen_name: n } = e;
                     return { text: o ? h(n) : u(n), onClick: o ? r : t, Icon: o ? a.default : s.default };
                 },
-                f = n().h59f52ee,
-                p = n().eea0cbee,
+                p = n().h59f52ee,
+                f = n().eea0cbee,
                 D = n().i29533b3,
                 _ = n().h129c3c3,
-                v = (e) => (e ? ((e) => D({ screenName: e }))(e) : f),
-                C = (e) => (e ? ((e) => _({ screenName: e }))(e) : p);
+                v = (e) => (e ? ((e) => D({ screenName: e }))(e) : p),
+                C = (e) => (e ? ((e) => _({ screenName: e }))(e) : f);
         },
         417714: (e, t, r) => {
             r.d(t, { l: () => c });
@@ -163,8 +163,8 @@
             var u = r(175848),
                 h = r(276563),
                 m = r(166852),
-                f = r(450681),
-                p = r(575211),
+                p = r(450681),
+                f = r(575211),
                 D = r(456910);
             const _ = ({ excludeReplyUser: e, inReplyToStatus: t, viewerUserId: r }) => {
                     const { retweeted_status: o } = t,
@@ -174,21 +174,21 @@
                         l = n?.user_mentions || [],
                         c = u.ZP.mergeTaggedUsers(n?.media || []),
                         h = v(o || t) || {},
-                        p = { [d.id_str]: d, [i.id_str]: i, [s.id_str]: s, [h.id_str]: h };
+                        f = { [d.id_str]: d, [i.id_str]: i, [s.id_str]: s, [h.id_str]: h };
                     l.forEach((e) => {
-                        p[e.id_str] = e;
+                        f[e.id_str] = e;
                     }),
                         c.forEach(({ name: e, screen_name: t, user_id: r }) => {
-                            p[r] = { id_str: r, name: e, screen_name: t };
+                            f[r] = { id_str: r, name: e, screen_name: t };
                         });
                     const D = (e) => {
                             const t = a?.includes(e.id_str),
                                 r = e.id_str === s.id_str;
                             return !t || r ? [e.id_str] : [];
                         },
-                        _ = (0, m.Z)((0, f.Z)([...D(d), ...D(i), s.id_str, ...l.flatMap((e) => D(e)), ...c.map((e) => e.user_id)])).filter((e) => e !== r);
+                        _ = (0, m.Z)((0, p.Z)([...D(d), ...D(i), s.id_str, ...l.flatMap((e) => D(e)), ...c.map((e) => e.user_id)])).filter((e) => e !== r);
                     let C = r && s.id_str === r ? [r, ..._] : _;
-                    return e && (C = C.filter((e) => e !== s.id_str)), C.map((e) => p[e]);
+                    return e && (C = C.filter((e) => e !== s.id_str)), C.map((e) => f[e]);
                 },
                 v = ({ card: e }) => {
                     let t = null;
@@ -217,7 +217,7 @@
                     },
                 E = (e, t = !1, r = o.nO) => C({ mixedMediaUploadEnabled: t, maxNumberOfMedia: r })(e),
                 M = (e, t = !1) => {
-                    const r = e.split(p.V.WordBoundary);
+                    const r = e.split(f.V.WordBoundary);
                     return (
                         t && r.pop(),
                         !!r.find((e) => {
@@ -240,7 +240,7 @@
                 s = (e, t) => ("boolean" == typeof e ? e : t);
         },
         965728: (e, t, r) => {
-            r.d(t, { C_: () => _, I5: () => f, K2: () => D, L$: () => l, Rb: () => p, nk: () => m, sI: () => E, xr: () => v });
+            r.d(t, { C_: () => _, I5: () => p, K2: () => D, L$: () => l, Rb: () => f, nk: () => m, sI: () => E, xr: () => v });
             var o = r(202784),
                 n = r(483677),
                 a = r(782578),
@@ -255,7 +255,7 @@
                 u = (e, t) => Math.min(t, e),
                 h = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
                 m = { transitionProperty: "background-color", transitionDuration: ".5s" },
-                f = (e, t) => {
+                p = (e, t) => {
                     const { containerHeight: r, containerWidth: o, mediaHeight: n, mediaWidth: s } = e,
                         d = s && n ? s / n : 1,
                         i = d > 1,
@@ -264,7 +264,7 @@
                         m = !i && n <= l ? u(r, l) : r;
                     return a.Z.getContainDimensions({ width: h, height: m }, d);
                 },
-                p = (e) => {
+                f = (e) => {
                     const t = e && e.ext_media_color && e.ext_media_color.palette;
                     return l(t);
                 },
@@ -372,7 +372,7 @@
         296196: (e, t, r) => {
             r.r(t),
                 r.d(t, {
-                    GLOBAL_STATE_KEY: () => p.Yf,
+                    GLOBAL_STATE_KEY: () => f.Yf,
                     acceptConversation: () => a.tF,
                     addAvatarMedia: () => a._D,
                     addParticipants: () => a.ck,
@@ -465,8 +465,8 @@
                 u = r(917799),
                 h = r(312771),
                 m = r(390387),
-                f = r(849585),
-                p = r(147143);
+                p = r(849585),
+                f = r(147143);
             const D = "rweb.recentDMSearches",
                 _ = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
                 v = "rweb/directMessages/ADD_RECENT_SEARCHES",
@@ -508,15 +508,15 @@
                         return { ...e, searchResults: c };
                     }
                     case E:
-                    case f.t:
+                    case p.t:
                         return { ...S, recentSearches: e.recentSearches };
                     default:
                         return e;
                 }
             }
-            const w = (e) => e[p.Yf].search?.recentSearches,
+            const w = (e) => e[f.Yf].search?.recentSearches,
                 I = (e, t) => {
-                    const r = e[p.Yf].search?.searchResults;
+                    const r = e[f.Yf].search?.searchResults;
                     if (r) {
                         const e = r[t];
                         return e?.fetchStatus || h.ZP.NONE;
@@ -524,7 +524,7 @@
                     return h.ZP.NONE;
                 },
                 g = (e, t) => {
-                    const r = e[p.Yf].search?.searchResults;
+                    const r = e[f.Yf].search?.searchResults;
                     return (r && r[t]?.conversationIds) || [];
                 },
                 Z =
@@ -534,11 +534,11 @@
                             { fetchNextPage: a, preserveResults: s, query: i } = e || {},
                             h = { query: i, search_type: "conversations", request_id: l().v4() },
                             m = ((e, t) => {
-                                const r = e[p.Yf].search?.searchResults;
+                                const r = e[f.Yf].search?.searchResults;
                                 return (r && r[t]?.lastCursor) || null;
                             })(n, i),
-                            f = ((e) => e[p.Yf].search?.searchResults)(n),
-                            D = f ? f[i] : void 0,
+                            p = ((e) => e[f.Yf].search?.searchResults)(n),
+                            D = p ? p[i] : void 0,
                             v = !!m;
                         m && i && a && (h.cursor = m);
                         const C = u._O(t, { params: h, request: o.withEndpoint(c.Z).search }),
@@ -571,7 +571,7 @@
                     () =>
                     (e, t, { userPersistence: r }) => (e({ type: P }), r.set(D, { recentSearches: [] }));
             n.Z.register(
-                { [p.Yf]: b },
+                { [f.Yf]: b },
                 () =>
                     (e, t, { userPersistence: r }) =>
                         m.Qb(t())
@@ -585,11 +585,11 @@
             );
             var T = r(923965);
             const k = (0, o.UY)({ conversations: a.ZP, entries: s.ZP, inbox: d.ZP, search: b, updates: T.ZP });
-            n.Z.register({ [p.Yf]: k });
+            n.Z.register({ [f.Yf]: k });
             const N = k;
         },
         947650: (e, t, r) => {
-            r.d(t, { Hq: () => C, c1: () => p, lP: () => _, og: () => D });
+            r.d(t, { Hq: () => C, c1: () => f, lP: () => _, og: () => D });
             var o = r(745123),
                 n = r(961104),
                 a = r(499627),
@@ -613,25 +613,25 @@
                     return e;
                 },
             });
-            const f = (e, t) => e[l][t],
-                p = (e, t) => {
+            const p = (e, t) => e[l][t],
+                f = (e, t) => {
                     if (t) {
                         const r = v(e, t);
                         return (0, n.b)(i.ZP.selectMany(e, r), (e) => !!e);
                     }
                     return u;
                 },
-                D = (e, t) => p(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
+                D = (e, t) => f(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
                 _ = (e, t) => {
                     let r;
                     if (t) {
-                        const o = f(e, t);
+                        const o = p(e, t);
                         r = o?.knownFollowersCount;
                     }
                     return r;
                 },
                 v = (e, t) => {
-                    const r = f(e, t);
+                    const r = p(e, t);
                     return r?.knownFollowerIds || u;
                 },
                 C =
@@ -660,7 +660,7 @@
                 s = n.Z.register(a);
         },
         694180: (e, t, r) => {
-            r.d(t, { cM: () => D, dS: () => p, iY: () => _ });
+            r.d(t, { cM: () => D, dS: () => f, iY: () => _ });
             var o = r(370751),
                 n = r(399896),
                 a = r(663550),
@@ -672,13 +672,13 @@
                 u = (0, o.Z)([a.dx.IMPRESSION, a.dx.DWELL]),
                 h = (0, o.Z)([a.AJ.TREND_VIEW, a.AJ.SPOTLIGHT_IMPRESSION]),
                 m = (e) => ({ payload: { eventKey: e }, type: c });
-            const f = (e, t) => !!e.promotedContent[t],
-                p =
+            const p = (e, t) => !!e.promotedContent[t],
+                f =
                     (e) =>
                     (t, r, { api: o }) => {
                         const { event: a, impression_id: s, promoted_trend_id: i } = e,
                             c = `trend-${i}-${a}`;
-                        if (h.has(a) && f(r(), c)) return Promise.resolve();
+                        if (h.has(a) && p(r(), c)) return Promise.resolve();
                         const u = { promoted_trend_id: i, event: a, impression_id: s };
                         return (0, d._O)(t, { params: u, request: o.withEndpoint(n.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
                             if (!t && h.has(a)) return [m(c)];
@@ -688,12 +688,12 @@
                     ({ disclosureType: e, itemId: t, itemType: r, params: o }) =>
                     (a, s, { api: i }) => {
                         const { event: c, impression_id: h } = o,
-                            p = `${r}-${t ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
-                        if (u.has(c) && f(s(), p)) return Promise.resolve();
+                            f = `${r}-${t ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
+                        if (u.has(c) && p(s(), f)) return Promise.resolve();
                         const D = e && "earned" === e.toLowerCase() ? "1" : null,
                             _ = { ...o, earned: D, epoch_ms: Date.now() };
                         return (0, d._O)(a, { params: _, request: i.withEndpoint(n.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: _ }, (e, t) => {
-                            if (!t && u.has(c)) return [m(p)];
+                            if (!t && u.has(c)) return [m(f)];
                         });
                     },
                 _ =
@@ -746,7 +746,7 @@
                     });
         },
         818581: (e, t, r) => {
-            r.d(t, { kQ: () => m, xQ: () => f });
+            r.d(t, { kQ: () => m, xQ: () => p });
             var o = r(226395),
                 n = r(499627),
                 a = r(917799),
@@ -771,8 +771,8 @@
             }
             n.Z.register({ [i]: h });
             const m = (e) => e[i].userPreferences,
-                f = () => (e, t) => (t()[i].fetchStatus === s.ZP.LOADED ? Promise.resolve() : e(p())),
-                p =
+                p = () => (e, t) => (t()[i].fetchStatus === s.ZP.LOADED ? Promise.resolve() : e(f())),
+                f =
                     () =>
                     (e, t, { api: r }) => {
                         const n = d.x0(t());
@@ -841,8 +841,8 @@
                 u = r.n(c),
                 h = r(585488),
                 m = r(71620),
-                f = r(163889),
-                p = r(312771),
+                p = r(163889),
+                f = r(312771),
                 D = r(535338);
             function _(e, t, r) {
                 const [n, s] = o.useState(!1),
@@ -862,7 +862,7 @@
                                     for (const e of t) a()(!!r, "The provided path is invalid."), a()("string" == typeof e, "Unexpected value for path!"), (r = r?.[e]);
                                     return r;
                                 } catch (e) {
-                                    return void (0, f.ZP)(e.message);
+                                    return void (0, p.ZP)(e.message);
                                 }
                             })(E, t) || {},
                         d = (t) => {
@@ -886,10 +886,10 @@
                         D = () => {
                             d(void 0);
                         };
-                    return i ? { subsequentFetchStatus: p.ZP.FAILED, error: i, fetchNext: l, fetchPrevious: m, refetch: D, data: E, hasNext: Boolean(r), hasPrevious: Boolean(o) } : { subsequentFetchStatus: n ? p.ZP.LOADING : p.ZP.NONE, error: void 0, fetchNext: l, fetchPrevious: m, refetch: D, data: E, hasNext: Boolean(r), hasPrevious: Boolean(o) };
+                    return i ? { subsequentFetchStatus: f.ZP.FAILED, error: i, fetchNext: l, fetchPrevious: m, refetch: D, data: E, hasNext: Boolean(r), hasPrevious: Boolean(o) } : { subsequentFetchStatus: n ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: l, fetchPrevious: m, refetch: D, data: E, hasNext: Boolean(r), hasPrevious: Boolean(o) };
                 }, [e, E, n, i, _, v, C]);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.8bafc9ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.8a27fbaa.js.map

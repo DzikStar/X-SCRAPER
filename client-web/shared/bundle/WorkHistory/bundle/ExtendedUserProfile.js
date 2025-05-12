@@ -2,6 +2,45 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.WorkHistory~bundle.ExtendedUserProfile"],
     {
+        876242: (e, t, n) => {
+            n.d(t, { Z: () => i });
+            var o,
+                r,
+                l = {
+                    fragment: {
+                        argumentDefinitions: (o = [
+                            { defaultValue: null, kind: "LocalArgument", name: "blockId" },
+                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useDeleteProfileBlockMutation",
+                        selections: (r = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "block_id", variableName: "blockId" },
+                                    { kind: "Literal", name: "s", value: "f3d8" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "ProfileBlockOperationSuccess",
+                                kind: "LinkedField",
+                                name: "delete_profile_block",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: o, kind: "Operation", name: "useDeleteProfileBlockMutation", selections: r },
+                    params: { id: "EvvA9IQR0sKW0tGqXwSzKA", metadata: {}, name: "useDeleteProfileBlockMutation", operationKind: "mutation", text: null },
+                };
+            l.hash = "5d2c7077ac04854de170e0b8fd37dc6f";
+            const i = l;
+        },
         949626: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
@@ -143,59 +182,23 @@
                           )
                         : null;
         },
-        128586: (e, t, n) => {
-            n.d(t, { Z: () => E });
-            var o,
-                r,
-                l = n(202784),
-                i = n(190286),
-                a = n(674132),
-                s = n.n(a),
-                c = n(782642),
-                d = n(72130),
-                u = n(725516),
-                m = {
-                    fragment: {
-                        argumentDefinitions: (o = [
-                            { defaultValue: null, kind: "LocalArgument", name: "blockId" },
-                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
-                        ]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useDeleteProfileBlockMutation",
-                        selections: (r = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Variable", name: "block_id", variableName: "blockId" },
-                                    { kind: "Literal", name: "s", value: "f3d8" },
-                                    { kind: "Variable", name: "user_id", variableName: "userId" },
-                                ],
-                                concreteType: "ProfileBlockOperationSuccess",
-                                kind: "LinkedField",
-                                name: "delete_profile_block",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: o, kind: "Operation", name: "useDeleteProfileBlockMutation", selections: r },
-                    params: { id: "EvvA9IQR0sKW0tGqXwSzKA", metadata: {}, name: "useDeleteProfileBlockMutation", operationKind: "mutation", text: null },
-                };
-            m.hash = "5d2c7077ac04854de170e0b8fd37dc6f";
-            const f = m;
-            n(585488);
-            var b = n(351743),
-                p = n.n(b);
-            const g = f,
-                h = () => {
-                    const [e, t] = p()(g);
+        512547: (e, t, n) => {
+            n.d(t, { Z: () => h });
+            var o = n(202784),
+                r = n(190286),
+                l = n(674132),
+                i = n.n(l),
+                a = n(782642),
+                s = n(72130),
+                c = n(725516),
+                d = n(876242),
+                u = (n(585488), n(351743)),
+                m = n.n(u);
+            const f = d.Z,
+                b = () => {
+                    const [e, t] = m()(f);
                     return [
-                        l.useCallback(
+                        o.useCallback(
                             (t) => {
                                 e(t);
                             },
@@ -204,28 +207,28 @@
                         t,
                     ];
                 },
-                y = s().g9677c6e,
-                k = s().a2b8c54c,
-                E = ({ blockId: e, headline: t, onClose: n, onCompleted: o, queryId: r, subtext: a, userId: s }) => {
-                    const m = (0, c.p)(),
-                        f = (0, u.z)(),
-                        [b, p] = h(),
-                        g = l.useCallback(() => {
+                p = i().g9677c6e,
+                g = i().a2b8c54c,
+                h = ({ blockId: e, headline: t, onClose: n, onCompleted: l, queryId: i, subtext: d, userId: u }) => {
+                    const m = (0, a.p)(),
+                        f = (0, c.z)(),
+                        [h, y] = b(),
+                        k = o.useCallback(() => {
                             n();
                         }, [n]),
-                        E = l.useCallback(() => {
-                            f.scribe({ ...(0, d.MA)("delete_block_btn", "click") }),
-                                b({
-                                    variables: { blockId: e, userId: s },
+                        E = o.useCallback(() => {
+                            f.scribe({ ...(0, s.MA)("delete_block_btn", "click") }),
+                                h({
+                                    variables: { blockId: e, userId: u },
                                     updater: (e, t) => {
-                                        r && e.delete(r);
+                                        i && e.delete(i);
                                     },
                                     onCompleted: (e) => {
-                                        e?.delete_profile_block?.success && (m({ text: k }), n(), o && o());
+                                        e?.delete_profile_block?.success && (m({ text: g }), n(), l && l());
                                     },
                                 });
-                        }, [m, f, e, b, n, o, r, s]);
-                    return l.createElement(i.Z, { confirmButtonDisabled: p, confirmButtonLabel: y, confirmButtonType: "destructiveFilled", enableMaskForDismiss: !0, headline: t, onCancel: g, onConfirm: E, text: a });
+                        }, [m, f, e, h, n, l, i, u]);
+                    return o.createElement(r.Z, { confirmButtonDisabled: y, confirmButtonLabel: p, confirmButtonType: "destructiveFilled", enableMaskForDismiss: !0, headline: t, onCancel: k, onConfirm: E, text: d });
                 };
         },
         381335: (e, t, n) => {
@@ -238,7 +241,7 @@
                 s = n.n(a),
                 c = n(607127),
                 d = n(991617),
-                u = n(128586);
+                u = n(512547);
             const m = s().h6a724ac,
                 f = s().f94aacae,
                 b = s().d96cf7ce,
@@ -689,4 +692,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.WorkHistory~bundle.ExtendedUserProfile.c780085a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.WorkHistory~bundle.ExtendedUserProfile.0612b72a.js.map

@@ -99,7 +99,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -151,7 +151,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -221,7 +221,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -298,8 +298,8 @@
                 M = a(199232);
             const w = u().fbf83158,
                 A = u().jadeb4da,
-                f = u().bce3726a,
-                y = ({ entryPoint: e, originProduct: d }) => {
+                y = u().bce3726a,
+                f = ({ entryPoint: e, originProduct: d }) => {
                     const a = (0, m.Z)(),
                         { origin: s } = D.ZP.get(),
                         t = (0, h.Z)({ returnUrl: `${s}/i/profile`, originProduct: d }),
@@ -310,12 +310,12 @@
                     const c = n.useCallback(() => {
                         a.scribe({ component: u, action: "click", element: `payment_failure_${e}_sidebar` }), t?.();
                     }, [t, a, u, e]);
-                    return n.createElement(r.Z, { style: k.cardBlock, testID: "paymentCardBlock" }, n.createElement(r.Z, { style: k.inner }, n.createElement(o.ZP, { size: "headline1", style: k.heading, weight: "heavy" }, n.createElement(i.default, { style: k.icon, testID: "errorIcon" }), w), n.createElement(o.ZP, { size: "body", style: k.subheading }, A), n.createElement(l.ZP, { onClick: c, style: k.button, type: "primaryFilled" }, f)));
+                    return n.createElement(r.Z, { style: k.cardBlock, testID: "paymentCardBlock" }, n.createElement(r.Z, { style: k.inner }, n.createElement(o.ZP, { size: "headline1", style: k.heading, weight: "heavy" }, n.createElement(i.default, { style: k.icon, testID: "errorIcon" }), w), n.createElement(o.ZP, { size: "body", style: k.subheading }, A), n.createElement(l.ZP, { onClick: c, style: k.button, type: "primaryFilled" }, y)));
                 },
                 p = ({ entryPoint: e }) => {
                     const { featureSwitches: d } = (0, c.QZ)(),
                         { hasPremiumPaymentFailure: a, hasVerifiedOrgPaymentFailure: o } = (0, M.Z)(["VerifiedOrganization", "Premium"]);
-                    return (o && d.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (a && d.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? n.createElement(r.Z, { style: k.paddedContainer, testID: "paymentCardView" }, n.createElement(y, { entryPoint: e, originProduct: o ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
+                    return (o && d.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (a && d.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? n.createElement(r.Z, { style: k.paddedContainer, testID: "paymentCardView" }, n.createElement(f, { entryPoint: e, originProduct: o ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
                 },
                 g = ({ entryPoint: e }) => n.createElement(b.H, { errorConfig: { context: "payment_alert_card" } }, n.createElement(p, { entryPoint: e })),
                 k = s.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.red0, borderColor: e.colors.red100, borderWidth: "1px", borderRadius: e.borderRadii.medium, overflow: "hidden" }, inner: { padding: e.spaces.space16, maxWidth: "100%", gap: e.spaces.space8 }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { marginBottom: e.spaces.space8 }, subheading: { marginBottom: e.spaces.space8 }, icon: { color: s.default.theme.colors.red500, marginEnd: e.spaces.space4 }, paddedContainer: { paddingBottom: e.spaces.space16 } })),
@@ -397,8 +397,8 @@
                 M = a(290402),
                 w = (a(136728), a(107267)),
                 A = a(530732),
-                f = a(992942),
-                y = a(823161),
+                y = a(992942),
+                f = a(823161),
                 p = a(366635),
                 g = a(451051),
                 k = a(379990);
@@ -416,8 +416,8 @@
                         ? n.createElement(
                               o.Z,
                               { style: S.container },
-                              n.createElement(A.Z, { "aria-label": l.ext_alt_text, onClick: r, ref: d, role: "link", style: S.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: d, isPressed: a }) => n.createElement(n.Fragment, null, n.createElement(f.Z, { "aria-label": l?.ext_alt_text, role: "img", source: l?.media_url_https, style: S.backgroundImage }), n.createElement(o.Z, { style: S.innerContentContainer }, n.createElement(P, { isFocused: e, isHovered: d, isPressed: a, onPress: r, style: S.button })))),
-                              n.createElement(o.Z, { style: S.userRow }, n.createElement(y.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: S.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), n.createElement(p.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
+                              n.createElement(A.Z, { "aria-label": l.ext_alt_text, onClick: r, ref: d, role: "link", style: S.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: d, isPressed: a }) => n.createElement(n.Fragment, null, n.createElement(y.Z, { "aria-label": l?.ext_alt_text, role: "img", source: l?.media_url_https, style: S.backgroundImage }), n.createElement(o.Z, { style: S.innerContentContainer }, n.createElement(P, { isFocused: e, isHovered: d, isPressed: a, onPress: r, style: S.button })))),
+                              n.createElement(o.Z, { style: S.userRow }, n.createElement(f.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: S.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), n.createElement(p.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
                               n.createElement(o.Z, null, n.createElement(g.Z, { color: "gray700", displayTextRange: e?.display_text_range, isCondensed: !0, numberOfLines: 2, size: "subtext2", text: e?.text })),
                           )
                         : null;
@@ -433,7 +433,7 @@
                         u = (0, r.Z)(),
                         w = c.Z.isTwoColumnWiderLayoutRedesign(u.width, s ?? t),
                         A = w ? 4 : 2,
-                        f = n.useMemo(
+                        y = n.useMemo(
                             () =>
                                 d?.content
                                     ?.filter((e) => e.id.startsWith("for-you-multiple-row"))
@@ -441,7 +441,7 @@
                                     .slice(0, A) || [],
                             [A, d?.content],
                         ),
-                        y = n.useCallback(
+                        f = n.useCallback(
                             () =>
                                 n.createElement(
                                     o.Z,
@@ -450,10 +450,10 @@
                                     n.createElement(
                                         o.Z,
                                         { style: [T.row, w && T.rowExpanded] },
-                                        f.map((e) => n.createElement(N, { key: e.id_str, tweet: e })),
+                                        y.map((e) => n.createElement(N, { key: e.id_str, tweet: e })),
                                     ),
                                 ),
-                            [f, w],
+                            [y, w],
                         );
                     return (
                         n.useEffect(() => {
@@ -464,7 +464,7 @@
                             onRequestRetry: function () {
                                 e((0, m.L8)());
                             },
-                            render: y,
+                            render: f,
                         })
                     );
                 },
@@ -481,9 +481,10 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        a.e("icons.24"),
+                        a.e("icons.29"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.18"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -500,7 +501,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -530,7 +531,6 @@
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -628,4 +628,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.2fd7100a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.097d4e1a.js.map
