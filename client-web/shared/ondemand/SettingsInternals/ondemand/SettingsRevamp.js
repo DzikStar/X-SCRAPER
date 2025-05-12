@@ -42,7 +42,7 @@
                 });
         },
         715684: (e, t, n) => {
-            n.d(t, { Fm: () => T, TG: () => v, UD: () => S, _1: () => I, dj: () => k, kz: () => b });
+            n.d(t, { Fm: () => D, TG: () => v, UD: () => S, _1: () => I, dj: () => k, kz: () => E });
             var i = n(24949),
                 r = n(697926),
                 a = n(744531),
@@ -56,7 +56,7 @@
                 p = o.dg(d, "REVOKE_SESSION"),
                 f = o.dg(d, "REVOKE_ALL_SESSIONS"),
                 _ = { fetchStatus: c.ZP.NONE, sessions: {} };
-            function g(e = _, t) {
+            function y(e = _, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case m.REQUEST:
@@ -64,21 +64,21 @@
                     case m.FAILURE:
                         return { ...e, error: t.payload, fetchStatus: c.ZP.FAILED };
                     case m.SUCCESS:
-                        return { ...e, error: null, fetchStatus: c.ZP.LOADED, sessions: (0, r.Z)(E(t.payload), (e) => e.token) };
+                        return { ...e, error: null, fetchStatus: c.ZP.LOADED, sessions: (0, r.Z)(h(t.payload), (e) => e.token) };
                     case p.SUCCESS:
                         return { ...e, sessions: (0, a.Z)(e.sessions, t.meta.hashed_token) };
                     default:
                         return e;
                 }
             }
-            l.Z.register({ [u]: g });
-            function y(e) {
+            l.Z.register({ [u]: y });
+            function g(e) {
                 return { token: e.hashed_token, name: e.device_name, summary: e.device_summary, icon_type: e.icon_type, is_current_session: e.is_current_session, location: e.location, last_seen_time_ms: e.last_seen_at };
             }
-            const E = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(y) : []),
-                h = (e) => e[u].sessions,
-                v = (0, i.P1)(h, (e) => Object.values(e)),
-                b = (e, t) => h(e)[t],
+            const h = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(g) : []),
+                b = (e) => e[u].sessions,
+                v = (0, i.P1)(b, (e) => Object.values(e)),
+                E = (e, t) => b(e)[t],
                 S = (e) => e[u].fetchStatus,
                 k = (e) => (t, n) => (S(n()) === c.ZP.LOADED ? Promise.resolve() : t(Z(e))),
                 Z =
@@ -91,7 +91,7 @@
                         const r = { hashed_token: e };
                         return o._O(t, { params: r, request: i.withEndpoint(s.Z).revokeSession })({ actionTypes: p, context: "REVOKE_SESSION", meta: { hashed_token: e } });
                     },
-                T =
+                D =
                     (e) =>
                     (t, n, { api: i }) =>
                         o
@@ -99,7 +99,7 @@
                             .then(() => Z()(t, n, { api: i }));
         },
         948985: (e, t, n) => {
-            n.d(t, { $q: () => h, UD: () => v, wz: () => b, zw: () => S });
+            n.d(t, { $q: () => b, UD: () => v, wz: () => E, zw: () => S });
             var i = n(24949),
                 r = n(166852),
                 a = n(226395),
@@ -113,7 +113,7 @@
                 p = `rweb/${m}`,
                 f = l.dg(p, "FETCH_APPLICATIONS"),
                 _ = { fetchStatus: o.ZP.NONE };
-            function g(e = _, t) {
+            function y(e = _, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case f.REQUEST:
@@ -126,11 +126,11 @@
                         return e;
                 }
             }
-            s.Z.register({ [m]: g });
-            const y = {
+            s.Z.register({ [m]: y });
+            const g = {
                     revokeApplication: {
                         reducer: (e, t) => {
-                            if (t.type === E.customActionTypes.revokeApplication.SUCCESS) {
+                            if (t.type === h.customActionTypes.revokeApplication.SUCCESS) {
                                 const { revoked: n } = t.payload,
                                     { entityId: i } = t.meta,
                                     r = e.entities[i];
@@ -143,7 +143,7 @@
                     },
                     revokeOauth2Token: {
                         reducer: (e, t) => {
-                            if (t.type === E.customActionTypes.revokeOauth2Token.SUCCESS) {
+                            if (t.type === h.customActionTypes.revokeOauth2Token.SUCCESS) {
                                 const { revoked: n } = t.payload,
                                     { entityId: i } = t.meta,
                                     r = e.entities[i];
@@ -155,24 +155,24 @@
                         getApiMethod: (e) => e.withEndpoint(a.Z).revokeOauth2Token,
                     },
                 },
-                E = (0, u.ZP)({ namespace: "applications", customActions: y });
-            (E.selectUniqUnrevokedApps = (0, i.P1)(E.selectAll, (e) => {
+                h = (0, u.ZP)({ namespace: "applications", customActions: g });
+            (h.selectUniqUnrevokedApps = (0, i.P1)(h.selectAll, (e) => {
                 const t = Object.values(e).filter((e) => !0 !== e.revoked);
                 return (0, r.Z)(t, (e) => e.app_id);
             })),
-                (E.selectAppsById = (0, i.P1)(
-                    E.selectAll,
+                (h.selectAppsById = (0, i.P1)(
+                    h.selectAll,
                     (e, t) => t,
                     (e, t) => Object.values(e).filter((e) => e.app_id === t),
                 ));
-            const h = d.Z.register(E),
+            const b = d.Z.register(h),
                 v = (e) => e[m].fetchStatus,
-                b = (e) => (t, n) => (v(n()) === o.ZP.LOADED ? Promise.resolve() : t(k(e))),
+                E = (e) => (t, n) => (v(n()) === o.ZP.LOADED ? Promise.resolve() : t(k(e))),
                 S =
                     (e, t, n) =>
                     (n, i, { api: r }) => {
                         const a = i();
-                        return E.selectAppsById(a, e).length > 0 ? Promise.resolve() : n(k(t));
+                        return h.selectAppsById(a, e).length > 0 ? Promise.resolve() : n(k(t));
                     },
                 k =
                     (e) =>
@@ -293,28 +293,28 @@
                 p = n.n(m),
                 f = n(325686),
                 _ = (n(585488), n(351743)),
-                g = n.n(_),
-                y = n(107267),
-                E = n(750410),
-                h = n(943401),
+                y = n.n(_),
+                g = n(107267),
+                h = n(750410),
+                b = n(943401),
                 v = n(954110),
-                b = n(167630),
+                E = n(167630),
                 S = n(392237),
                 k = n(731708),
                 Z = n(674132),
                 I = n.n(Z),
-                T = n(750442),
-                D = n(130919),
-                x = n(727828),
-                C = n(534763),
-                w = n(443781),
-                L = n(652904),
-                P = n(301410),
-                A = n(725516),
-                R = n(312771),
-                O = n(615027),
-                V = n(466441),
-                F = n(264922),
+                D = n(750442),
+                L = n(130919),
+                C = n(727828),
+                w = n(534763),
+                P = n(443781),
+                T = n(652904),
+                O = n(301410),
+                R = n(725516),
+                V = n(312771),
+                A = n(615027),
+                F = n(466441),
+                x = n(264922),
                 K = n(915566);
             const N = I().afe4a358,
                 U = I().g268fbb8,
@@ -322,24 +322,24 @@
                 z = I().c8255462,
                 H = I().c6e731ee,
                 M = I().be582166,
-                $ = { [D.t.PendingResult]: I().b496bc94, [D.t.RequestLocked]: I().d8f5cce4, [D.t.IdentityNonVerifiable]: I().i8427a1e, [D.t.CanVerifyIdentity]: M },
-                Q = c.createElement(C.b, { label: q, link: K.LT }),
+                Q = { [L.t.PendingResult]: I().b496bc94, [L.t.RequestLocked]: I().d8f5cce4, [L.t.IdentityNonVerifiable]: I().i8427a1e, [L.t.CanVerifyIdentity]: M },
+                $ = c.createElement(w.b, { label: q, link: K.LT }),
                 j = (e) => {
                     const t = e.query?.status;
-                    return !(!t || Array.isArray(t)) && t === D.t.PendingResult;
+                    return !(!t || Array.isArray(t)) && t === L.t.PendingResult;
                 },
                 B = o,
                 W = s,
-                G = (0, P.z)(B, { errorConfig: { context: "ID_VERIFICATION_CONTEXT" } }),
+                G = (0, O.z)(B, { errorConfig: { context: "ID_VERIFICATION_CONTEXT" } }),
                 J = S.default.create((e) => ({ layoutDimensions: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, iconTheme: { color: e.colors.text }, idLabel: { alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
-                X = c.createElement(f.Z, { style: J.idLabel }, c.createElement(T.default, { style: J.iconTheme }), c.createElement(k.ZP, { color: "gray700" }, U)),
+                X = c.createElement(f.Z, { style: J.idLabel }, c.createElement(D.default, { style: J.iconTheme }), c.createElement(k.ZP, { color: "gray700" }, U)),
                 Y = c.memo(
-                    (0, A.Z)(
+                    (0, R.Z)(
                         ({ analytics: e, ...t }) => {
-                            const { featureSwitches: n } = c.useContext(w.rC),
+                            const { featureSwitches: n } = c.useContext(P.rC),
                                 i = n.isTrue("identity_verification_hide_verified_label_settings_enabled"),
-                                r = (0, y.useLocation)(),
-                                [a] = g()(W),
+                                r = (0, g.useLocation)(),
+                                [a] = y()(W),
                                 s = c.useCallback(
                                     (e, t) => (n, i) => {
                                         e &&
@@ -356,35 +356,35 @@
                                 ),
                                 l = c.useCallback(
                                     ({ data: n, fetchStatus: a, retry: l }) => {
-                                        if (a === R.ZP.FAILED) return c.createElement(E.Z, { onRequestRetry: l });
-                                        if (a === R.ZP.LOADED && n) {
+                                        if (a === V.ZP.FAILED) return c.createElement(h.Z, { onRequestRetry: l });
+                                        if (a === V.ZP.LOADED && n) {
                                             const a = n.viewer.user_results.result,
                                                 o = a.rest_id,
                                                 u = a.verification_info;
-                                            if (!u) return c.createElement(E.Z, { onRequestRetry: l });
+                                            if (!u) return c.createElement(h.Z, { onRequestRetry: l });
                                             const d = !!u.is_identity_verified_label_hidden,
                                                 m = u.identity_verification_status,
-                                                p = m === D.t.CanVerifyIdentity && j(r) ? D.t.PendingResult : m,
-                                                _ = p === D.t.UnavailableMissingBlueSubscription;
+                                                p = m === L.t.CanVerifyIdentity && j(r) ? L.t.PendingResult : m,
+                                                _ = p === L.t.UnavailableMissingBlueSubscription;
                                             switch ((e.scribe({ page: "identity_verification_settings", section: p, action: "impression" }), p)) {
-                                                case D.t.RequestLocked:
-                                                case D.t.PendingResult:
-                                                case D.t.IdentityNonVerifiable:
-                                                    return c.createElement(c.Fragment, null, c.createElement(h.Z, { description: $[p] }), Q);
-                                                case D.t.IdentityVerified:
-                                                case D.t.UnavailableMissingBlueSubscription:
-                                                    return c.createElement(f.Z, null, c.createElement(h.Z, { description: M }), c.createElement(f.Z, { style: J.layoutDimensions }, _ ? c.createElement(x.Z, { variant: "IdVerification", withColoredIcon: !0 }) : X), i ? c.createElement(f.Z, null, c.createElement(v.Z, { checked: d, disabled: _, helpText: H, label: z, name: "is_identity_verified_label_hidden", onChange: s(o, u.__id) })) : null, Q);
-                                                case D.t.CanVerifyIdentity:
-                                                    return c.createElement(f.Z, null, c.createElement(h.Z, { description: $[p] }), c.createElement(y.Switch, null, c.createElement(y.Route, null, c.createElement(O.Z, { to: "/settings/account/id_verification/start" }))));
+                                                case L.t.RequestLocked:
+                                                case L.t.PendingResult:
+                                                case L.t.IdentityNonVerifiable:
+                                                    return c.createElement(c.Fragment, null, c.createElement(b.Z, { description: Q[p] }), $);
+                                                case L.t.IdentityVerified:
+                                                case L.t.UnavailableMissingBlueSubscription:
+                                                    return c.createElement(f.Z, null, c.createElement(b.Z, { description: M }), c.createElement(f.Z, { style: J.layoutDimensions }, _ ? c.createElement(C.Z, { variant: "IdVerification", withColoredIcon: !0 }) : X), i ? c.createElement(f.Z, null, c.createElement(v.Z, { checked: d, disabled: _, helpText: H, label: z, name: "is_identity_verified_label_hidden", onChange: s(o, u.__id) })) : null, $);
+                                                case L.t.CanVerifyIdentity:
+                                                    return c.createElement(f.Z, null, c.createElement(b.Z, { description: Q[p] }), c.createElement(g.Switch, null, c.createElement(g.Route, null, c.createElement(A.Z, { to: "/settings/account/id_verification/start" }))));
                                                 default:
-                                                    return c.createElement(V.default, t);
+                                                    return c.createElement(F.default, t);
                                             }
                                         }
-                                        return c.createElement(b.Z, null);
+                                        return c.createElement(E.Z, null);
                                     },
                                     [e, i, r, s, t],
                                 );
-                            return c.createElement(L.Z, null, c.createElement(F.Z, { location: r, title: N }, c.createElement(G, { render: l, variables: d() })));
+                            return c.createElement(T.Z, null, c.createElement(x.Z, { location: r, title: N }, c.createElement(G, { render: l, variables: d() })));
                         },
                         { page: "id_verification", section: "settings" },
                     ),
@@ -457,7 +457,7 @@
             }
         },
         829824: (e, t, n) => {
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => g });
             var i = n(202784),
                 r = n(99107),
                 a = n(420740),
@@ -471,7 +471,7 @@
                 p = n(390387);
             const f = o().ffeb836a,
                 _ = o().f2fb9746;
-            function g() {
+            function y() {
                 const e = (0, d.Z)();
                 return (
                     i.useEffect(() => {
@@ -480,11 +480,11 @@
                     i.createElement(a.Z, { title: f }, i.createElement(s.ZP, null, _))
                 );
             }
-            function y(e) {
+            function g(e) {
                 const { featureSwitches: t } = i.useContext(c.rC),
                     n = (0, m.v9)(p.Qb),
                     a = (0, u.Xh)(r.b7, t);
-                return n || a ? e.children : i.createElement(g, null);
+                return n || a ? e.children : i.createElement(y, null);
             }
         },
         170069: (e, t, n) => {
@@ -505,88 +505,6 @@
                     return i.createElement(r.Z, { style: a.root }, e);
                 };
         },
-        280278: (e, t, n) => {
-            n.d(t, { ZP: () => _ });
-            var i = n(202784),
-                r = n(325686),
-                a = n(827515),
-                s = n(461756),
-                l = n(731708),
-                o = n(392237);
-            const c = "up",
-                u = "down",
-                d = (e, t, n) => {
-                    n((n) => {
-                        const i = (0, a.Z)(e) ? (e > (n.count || 0) ? c : u) : c;
-                        return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: t, transitionDirection: i };
-                    });
-                },
-                m = {};
-            [c, u].forEach((e) => {
-                const t = "0.3s";
-                m[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === c ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === c ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
-            });
-            const p = { position: "absolute" },
-                f = o.default.create({ root: { overflow: "hidden" } }),
-                _ = (e) => {
-                    const { children: t, containerStyle: n, count: o, ...u } = e,
-                        [_, g] = i.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
-                        y = i.useRef(!1);
-                    return (
-                        i.useEffect(
-                            () => (
-                                (y.current = !0),
-                                function () {
-                                    y.current = !1;
-                                }
-                            ),
-                            [],
-                        ),
-                        i.useEffect(() => {
-                            if (y.current)
-                                if (s.Z.reducedMotionEnabled) g((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (t !== _.pendingText) {
-                                    t === _.text || ((0, a.Z)(e.count) && _.count === e.count) ? g((e) => ({ ...e, pendingCount: null, pendingText: null })) : (g((n) => ({ ...n, pendingCount: e.count, pendingText: t })), _.animating || d(e.count, t, g));
-                                }
-                        }, [t]),
-                        i.useEffect(() => {
-                            y.current &&
-                                !1 === _.animating &&
-                                (_.oldText
-                                    ? window.requestAnimationFrame(() =>
-                                          window.requestAnimationFrame(() => {
-                                              y.current && g((e) => ({ ...e, animating: !0 }));
-                                          }),
-                                      )
-                                    : _.pendingText && d(_.pendingCount, _.pendingText, g));
-                        }, [_.animating, _.oldText]),
-                        i.useMemo(() => {
-                            const e = m[_.transitionDirection],
-                                t = _.oldText && !s.Z.reducedMotionEnabled,
-                                a = !_.animating && _.oldText && !s.Z.reducedMotionEnabled,
-                                o = { ...p, ...(_.animating ? e.post : e.active) },
-                                c = { ...(a ? e.pre : e.active) };
-                            return i.createElement(
-                                r.Z,
-                                { style: [f.root, n] },
-                                t ? i.createElement("span", { style: o }, i.createElement(l.ZP, u, _.oldText)) : null,
-                                i.createElement(
-                                    "span",
-                                    {
-                                        "data-testid": "app-text-transition-container",
-                                        onTransitionEnd: () =>
-                                            ((e, t) => {
-                                                e && t((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(y.current, g),
-                                        style: c,
-                                    },
-                                    i.createElement(l.ZP, u, _.text),
-                                ),
-                            );
-                        }, [n, u, _, y, g])
-                    );
-                };
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~ondemand.SettingsRevamp.783d0caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~ondemand.SettingsRevamp.2caf285a.js.map

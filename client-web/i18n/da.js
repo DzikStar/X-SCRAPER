@@ -7056,14 +7056,14 @@
                 t("f0ad5cc8", "år"),
                 t("a0dc6e4c", "Ikke tilgængelig i øjeblikket"),
                 t("jd8b2e66", "Abonner og betal"),
-                t("ca784c0c", "Subscribe & pay with Apple"),
+                t("ca784c0c", "Abonner og betal med Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                t("afd61c76", "Or, save up to 30%"),
+                t("afd61c76", "Eller spar op til 30%."),
                 t("i7fbacc4", "Skift mellem de tilgængelige abonnementsniveauer"),
                 t("c9cc122b", function (e) {
                     return e.feature + " er inkluderet i " + e.title;
@@ -13214,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.49a9681a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.5b263c6a.js.map

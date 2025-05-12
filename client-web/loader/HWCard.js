@@ -30,7 +30,7 @@
         },
         403911: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => P });
+            n.d(t, { Z: () => F });
             var r = n(506899),
                 o = n(163889),
                 a = n(414742),
@@ -53,8 +53,8 @@
                 v = n(182247),
                 E = n.n(v),
                 D = n(974829),
-                T = n.n(D),
-                S = n(934309);
+                S = n.n(D),
+                T = n(934309);
             const $ = { result: [], entities: {}, slice_info: {} },
                 z = (e, t) => {
                     const n = t?.bookmark_all_delete,
@@ -67,11 +67,11 @@
                         r = n?.bookmark_collections_slice?.items;
                     return !r;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                F = (0, a.kj)((e) => {
+                Z = (0, a.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                P = ({ apiClient: e, featureSwitches: t }) => ({
+                F = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             p(),
@@ -95,10 +95,10 @@
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: n, tweetId: r } = t;
-                        return e.graphQL(T(), { bookmark_collection_id: n, tweet_id: r });
+                        return e.graphQL(S(), { bookmark_collection_id: n, tweet_id: r });
                     },
-                    fetchBookmarksTimeline: ({ count: n, cursor: r }) => e.graphQL(_(), { count: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || S.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: r }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, F).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
+                    fetchBookmarksTimeline: ({ count: n, cursor: r }) => e.graphQL(_(), { count: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || T.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: r }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, Z).then((e) => e?.bookmark_collection_timeline?.timeline || T.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(d(), t, x).then((e) => {
@@ -368,7 +368,7 @@
         },
         779802: (e, t, n) => {
             "use strict";
-            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => T, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => S, b$: () => p, db: () => P, et: () => v, fR: () => f, iH: () => $, lD: () => g, su: () => y, u4: () => F, wX: () => z });
+            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => S, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => T, b$: () => p, db: () => F, et: () => v, fR: () => f, iH: () => $, lD: () => g, su: () => y, u4: () => Z, wX: () => z });
             var r = n(202784),
                 o = n(674132),
                 a = n.n(o),
@@ -416,13 +416,13 @@
                 v = a().d5a48014,
                 E = a().b92b6156,
                 D = a().ec5ed598,
-                T = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(_.ZP, { extendedWidth: t, size: n, weight: o }, e),
-                S = { blockType: h.paragraph, label: D, component: T({ size: "body", children: D }) },
-                $ = [{ blockType: h.header1, label: v, component: T({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: h.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
+                S = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(_.ZP, { extendedWidth: t, size: n, weight: o }, e),
+                T = { blockType: h.paragraph, label: D, component: S({ size: "body", children: D }) },
+                $ = [{ blockType: h.header1, label: v, component: S({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: h.header2, label: E, component: S({ size: "title3", weight: "heavy", children: E }) }, T],
                 z = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 x = ["delete", "delete-word", "delete-to-start-of-line"],
-                F = "increase-text-size",
-                P = "decrease-text-size";
+                Z = "increase-text-size",
+                F = "decrease-text-size";
         },
         989272: (e, t, n) => {
             "use strict";
@@ -477,6 +477,34 @@
             }
             const d = [];
         },
+        270711: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.518 7.57C17.542 6.582 14.883 6 12 6s-5.543.582-7.518 1.57C2.566 8.528 1 10.036 1 12c0 1.393.803 2.565 1.913 3.446 1.054.836 2.473 1.488 4.087 1.923v-2.082c-1.19-.372-2.158-.863-2.844-1.408C3.322 13.218 3 12.564 3 12c0-.798.673-1.789 2.376-2.641C7.019 8.537 9.36 8 12 8s4.98.537 6.624 1.359C20.327 10.211 21 11.202 21 12s-.673 1.789-2.376 2.641c-1.299.65-3.038 1.116-5.012 1.286l1.353-1.459-1.467-1.359-3.564 3.845 3.844 3.564 1.36-1.467-1.231-1.141c2.137-.196 4.081-.714 5.612-1.479 1.916-.958 3.482-2.466 3.482-4.43s-1.566-3.472-3.482-4.43z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        262754: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.496 9.25c0-4.14 3.358-7.5 7.5-7.5s7.5 3.36 7.5 7.5-3.358 7.5-7.5 7.5-7.5-3.36-7.5-7.5zm7.5 9.5c-1.63 0-3.164-.41-4.505-1.13v5.82l4.498-1.87 4.502 1.87v-5.82c-1.338.72-2.869 1.13-4.495 1.13z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
         818088: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
@@ -491,7 +519,7 @@
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        748138: (e, t, n) => {
+        971657: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -500,12 +528,12 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        784732: (e, t, n) => {
+        69893: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -514,11 +542,25 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        47286: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M5 5c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2H5zm2.5 5.75c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zM11 13h7v-2h-7v2zm0 4h4v-2h-4v2zm8.5-10C20.88 7 22 8.12 22 9.5v9c0 1.38-1.12 2.5-2.5 2.5h-15C3.12 21 2 19.88 2 18.5v-9C2 8.12 3.12 7 4.5 7h15zM4 18.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5h-15c-.28 0-.5.22-.5.5v9z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HWCard.9b2e606a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HWCard.8f19527a.js.map

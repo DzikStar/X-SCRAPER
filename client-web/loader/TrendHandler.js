@@ -8,14 +8,14 @@
                 r = a(247056),
                 i = a(392237);
             const o = (0, a(523561).Z)({ loader: () => a.e("loader.FeedbackSheet").then(a.bind(a, 774426)) });
-            var s = a(725516),
-                l = a(851623);
+            var l = a(725516),
+                s = a(851623);
             const c = i.default.create((e) => ({ curationControl: { marginStart: e.spaces.space20 } })),
-                d = (0, s.Z)((e) => {
+                d = (0, l.Z)((e) => {
                     const { analytics: t, feedbackItems: a, isDisplayedOnMedia: i } = e,
-                        s = n.useCallback((e) => (a ? n.createElement(o, { actionItems: a, onClose: e }) : null), [a]),
+                        l = n.useCallback((e) => (a ? n.createElement(o, { actionItems: a, onClose: e }) : null), [a]),
                         d = n.useCallback(() => t.scribe({ element: "caret", action: "click" }), [t]);
-                    return a && a.length > 0 ? n.createElement(r.Z, { onClick: d, renderActionMenu: s, style: c.curationControl, testID: l.Z.caret, withDarkBackground: i }) : null;
+                    return a && a.length > 0 ? n.createElement(r.Z, { onClick: d, renderActionMenu: l, style: c.curationControl, testID: s.Z.caret, withDarkBackground: i }) : null;
                 });
         },
         691067: (e, t, a) => {
@@ -24,8 +24,8 @@
                 r = a(942893),
                 i = a(351322),
                 o = a(807896),
-                s = a(202784),
-                l = a(325686),
+                l = a(202784),
+                s = a(325686),
                 c = a(731708),
                 d = a(757483),
                 m = a(992942),
@@ -34,41 +34,41 @@
                 h = a(352924),
                 g = a(392237),
                 v = a(823161);
-            function f({ description: e, images: t, isLive: a, lastUpdatedAtText: n, link: r, metaDescription: i, name: o, onClick: d, testID: f, thumbnailImage: b, totalTrendPostsText: x, userAvatarUrls: E, withDarkerInteractiveBackground: C }) {
+            function f({ description: e, images: t, isLive: a, lastUpdatedAtText: n, link: r, metaDescription: i, name: o, onClick: d, testID: f, thumbnailImage: b, totalTrendPostsText: C, userAvatarUrls: E, withDarkerInteractiveBackground: x }) {
                 const w = (0, h.b)(),
-                    T = (E || []).slice(0, 3),
-                    Z = s.createElement(
+                    Z = (E || []).slice(0, 3),
+                    T = l.createElement(
                         p.Z,
                         { link: r, style: y.content, withoutInteractiveStyles: !0 },
-                        s.createElement(
-                            l.Z,
+                        l.createElement(
+                            s.Z,
                             { style: y.horizontalContainer },
-                            b ? s.createElement(l.Z, { style: y.imageContainer }, s.createElement(m.Z, { resizeMode: "cover", source: b.original_img_url, style: y.image })) : null,
-                            s.createElement(
-                                l.Z,
+                            b ? l.createElement(s.Z, { style: y.imageContainer }, l.createElement(m.Z, { resizeMode: "cover", source: b.original_img_url, style: y.image })) : null,
+                            l.createElement(
+                                s.Z,
                                 { style: y.textContainer },
-                                s.createElement(c.ZP, { color: "text", numberOfLines: 2, size: "headline2", weight: "bold", withInteractiveStyling: !1 }, o),
-                                i ? s.createElement(c.ZP, { color: "gray900", numberOfLines: 2, size: "body" }, i) : null,
-                                x
-                                    ? s.createElement(
-                                          l.Z,
+                                l.createElement(c.ZP, { color: "text", numberOfLines: 2, size: "headline2", weight: "bold", withInteractiveStyling: !1 }, o),
+                                i ? l.createElement(c.ZP, { color: "gray900", numberOfLines: 2, size: "body" }, i) : null,
+                                C
+                                    ? l.createElement(
+                                          s.Z,
                                           { style: y.infoContainer },
-                                          T.length > 0
-                                              ? s.createElement(
-                                                    l.Z,
+                                          Z.length > 0
+                                              ? l.createElement(
+                                                    s.Z,
                                                     { style: y.userAvatars },
-                                                    T.map((e, t) => s.createElement(v.default, { backgroundColor: "transparent", borderColor: "transparent", borderWidth: "small", key: `news-article-cell-user-avatar-${e}-${t}`, shape: "circle", size: "medium", style: [y.userAvatar, { animationDelay: 0.1 * t + "s" }, 0 !== t ? { marginStart: -1 * g.default.theme.spacesPx.space12 } : {}], uri: e })),
+                                                    Z.map((e, t) => l.createElement(v.default, { backgroundColor: "transparent", borderColor: "transparent", borderWidth: "small", key: `news-article-cell-user-avatar-${e}-${t}`, shape: "circle", size: "medium", style: [y.userAvatar, { animationDelay: 0.1 * t + "s" }, 0 !== t ? { marginStart: -1 * g.default.theme.spacesPx.space12 } : {}], uri: e })),
                                                 )
                                               : null,
-                                          s.createElement(c.ZP, { color: "gray900", style: y.totalTrendPostsText }, x),
-                                          s.createElement(l.Z, { style: y.dot }),
-                                          n ? s.createElement(l.Z, { style: y.lastUpdatedAtContainer }, a ? s.createElement(l.Z, { style: y.liveContainer }, s.createElement(c.ZP, { style: y.liveText }, "LIVE")) : s.createElement(c.ZP, { style: y.lastUpdatedAtText }, n)) : null,
+                                          l.createElement(c.ZP, { color: "gray900", style: y.totalTrendPostsText }, C),
+                                          l.createElement(s.Z, { style: y.dot }),
+                                          n ? l.createElement(s.Z, { style: y.lastUpdatedAtContainer }, a ? l.createElement(s.Z, { style: y.liveContainer }, l.createElement(c.ZP, { style: y.liveText }, "LIVE")) : l.createElement(c.ZP, { style: y.lastUpdatedAtText }, n)) : null,
                                       )
                                     : null,
                             ),
                         ),
                     );
-                return s.createElement(u.Z, { "aria-labelledby": w, style: y.root, testID: f, withDarkerInteractiveBackground: C }, Z);
+                return l.createElement(u.Z, { "aria-labelledby": w, style: y.root, testID: f, withDarkerInteractiveBackground: x }, T);
             }
             const y = g.default.create((e) => ({
                 root: { display: "flex", paddingHorizontal: e.componentDimensions.gutterHorizontal },
@@ -90,16 +90,16 @@
                 userAvatar: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" },
             }));
             var b = a(530525),
-                x = a(439592),
+                C = a(439592),
                 E = a(682474),
-                C = a(638009),
+                x = a(638009),
                 w = a(470397),
-                T = a(126962);
-            function Z({ attachment: e, description: t, displayMode: a, domainContext: n, images: r, link: i, metaDescription: d, name: m, onClick: p, renderQuoteTweet: v, socialContext: f, testID: y, thumbnailImage: Z, trendFeedbackMenu: D, withDarkerInteractiveBackground: I, withTrendingLabel: M }) {
-                const z = s.useContext(C.ZP),
+                Z = a(126962);
+            function T({ attachment: e, description: t, displayMode: a, domainContext: n, images: r, link: i, metaDescription: d, name: m, onClick: p, renderQuoteTweet: v, socialContext: f, testID: y, thumbnailImage: T, trendFeedbackMenu: D, withDarkerInteractiveBackground: I, withTrendingLabel: M }) {
+                const z = l.useContext(x.ZP),
                     _ = (0, h.b)(),
-                    A = s.createElement(l.Z, { style: "full" === a ? k.content : k.contentHalf }, s.createElement(l.Z, { style: k.horizontalContainer }, s.createElement(l.Z, { style: k.textContainer }, s.createElement(c.ZP, { color: "text", numberOfLines: 2, size: "full" === a ? "headline2" : "body", style: k.text, weight: "bold", withInteractiveStyling: !1 }, m), d ? s.createElement(c.ZP, { color: "gray700", numberOfLines: 2, size: "body", style: k.descriptionText }, d) : null, s.createElement(w.Z, null, n ? s.createElement(c.ZP, { color: "gray700", size: "subtext2", withoutTwemojiAndHashflags: !0 }, n) : null), f ? s.createElement(T.Z, (0, o.Z)({ style: k.socialContext }, f)) : null), Z ? s.createElement(l.Z, { style: k.imageContainer }, s.createElement(E.Z, { ratio: g.default.theme.aspectRatios.square }, s.createElement(b.Z, { "aria-label": "trend-image", aspectMode: x.Z.SQUARE, image: { url: Z.original_img_url, height: Z.original_img_height, width: Z.original_img_width } }))) : null, D ? s.createElement(l.Z, { style: k.caret }, D) : null), v ? s.createElement(l.Z, { style: k.quoteTweet }, v({ isCondensed: !0 })) : null, e ? s.createElement(l.Z, { style: k.attachmentWrapper }, e) : null);
-                return s.createElement(u.Z, { "aria-labelledby": _, link: i ? z.withAnchorless(i) : void 0, onPress: p, role: i ? void 0 : "article", style: k.root, testID: y, withDarkerInteractiveBackground: I }, A);
+                    S = l.createElement(s.Z, { style: "full" === a ? k.content : k.contentHalf }, l.createElement(s.Z, { style: k.horizontalContainer }, l.createElement(s.Z, { style: k.textContainer }, l.createElement(c.ZP, { color: "text", numberOfLines: 2, size: "full" === a ? "headline2" : "body", style: k.text, weight: "bold", withInteractiveStyling: !1 }, m), d ? l.createElement(c.ZP, { color: "gray700", numberOfLines: 2, size: "body", style: k.descriptionText }, d) : null, l.createElement(w.Z, null, n ? l.createElement(c.ZP, { color: "gray700", size: "subtext2", withoutTwemojiAndHashflags: !0 }, n) : null), f ? l.createElement(Z.Z, (0, o.Z)({ style: k.socialContext }, f)) : null), T ? l.createElement(s.Z, { style: k.imageContainer }, l.createElement(E.Z, { ratio: g.default.theme.aspectRatios.square }, l.createElement(b.Z, { "aria-label": "trend-image", aspectMode: C.Z.SQUARE, image: { url: T.original_img_url, height: T.original_img_height, width: T.original_img_width } }))) : null, D ? l.createElement(s.Z, { style: k.caret }, D) : null), v ? l.createElement(s.Z, { style: k.quoteTweet }, v({ isCondensed: !0 })) : null, e ? l.createElement(s.Z, { style: k.attachmentWrapper }, e) : null);
+                return l.createElement(u.Z, { "aria-labelledby": _, link: i ? z.withAnchorless(i) : void 0, onPress: p, role: i ? void 0 : "article", style: k.root, testID: y, withDarkerInteractiveBackground: I }, S);
             }
             const k = g.default.create((e) => ({ root: { display: "flex", paddingHorizontal: e.componentDimensions.gutterHorizontal }, caret: { marginStart: `calc(${g.default.theme.spaces.space12} * -1)` }, metaDescription: { marginTop: e.spaces.space4 }, imageContainer: { marginStart: e.componentDimensions.gutterHorizontal, borderRadius: e.borderRadii.large, maxHeight: `calc(${g.default.theme.spaces.space40} * 2)`, maxWidth: `calc(${g.default.theme.spaces.space40} * 2)`, minHeight: `calc(${g.default.theme.spaces.space40} + ${g.default.theme.spaces.space20})`, minWidth: `calc(${g.default.theme.spaces.space40} + ${g.default.theme.spaces.space20})`, height: "20%", width: "20%", overflow: "hidden" }, content: { flexGrow: 1, position: "relative", paddingTop: e.spaces.space20, paddingBottom: e.spaces.space20 }, contentHalf: { flexGrow: 1, position: "relative", borderBottomWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingTop: e.spaces.space16, paddingBottom: e.spaces.space16 }, horizontalContainer: { flex: 1, flexDirection: "row" }, textContainer: { flex: 1 }, socialContext: { marginTop: e.spaces.space2 }, text: { marginBottom: e.spaces.space4 }, descriptionText: { marginBottom: e.spaces.space4 }, quoteTweet: { marginTop: e.spaces.space8 }, attachmentWrapper: { alignSelf: "stretch", marginBottom: e.spaces.space4, marginTop: e.spaces.space12 } }));
             var D = a(676145),
@@ -107,39 +107,39 @@
                 M = a(628526),
                 z = a(442730);
             function _({ attachment: e, description: t, domainContext: a, groupedTrends: n = [], link: r, metaDescription: i, name: o, onClick: d, promotedContent: m, promotedLabel: p, rank: g, renderQuoteTweet: v, testID: f, trendFeedbackMenu: y, withDarkerInteractiveBackground: b }) {
-                const x = s.useContext(C.ZP),
+                const C = l.useContext(x.ZP),
                     E = (0, h.b)(),
-                    T = i ? s.createElement(c.ZP, { color: "gray700", dir: ((Z = i), (0, D.Z)(Z) && Z.length ? z.Z.getTextDirection(Z, { fromEnd: !0 }) : void 0), size: "subtext2", style: A.metaDescription }, i) : null;
-                var Z;
-                const k = s.createElement(w.Z, null, g ? s.createElement(c.ZP, { "aria-hidden": !0, color: "gray700", size: "subtext2" }, g) : null, a ? s.createElement(c.ZP, { color: "gray700", size: "subtext2" }, a) : null),
-                    _ = s.createElement(c.ZP, { dir: z.Z.getTextDirection(o), style: A.name, weight: "bold", withHashflags: !0 }, o);
-                return s.createElement(u.Z, { "aria-labelledby": E, link: r ? x.withAnchorless(r) : void 0, onPress: d, role: r ? void 0 : "article", style: A.root, testID: f, withDarkerInteractiveBackground: b }, s.createElement(l.Z, { id: E, style: A.content }, k, _, t ? s.createElement(c.ZP, { color: "gray700", style: A.description }, t) : null, v ? s.createElement(l.Z, { style: A.quoteTweet }, v({ isCondensed: !0 })) : null, e ? s.createElement(l.Z, { style: A.attachmentWrapper }, e) : null, n.length ? s.createElement(M.Z, { groupedTrends: n }) : null, T, m ? s.createElement(c.ZP, { color: "gray700", size: "subtext2", style: A.promotedIndicatorWrapper }, s.createElement(I.Z, { label: p, promotedContent: m })) : null, y ? s.createElement(l.Z, { style: A.trendFeedbackMenuWrapper }, y) : null));
+                    Z = i ? l.createElement(c.ZP, { color: "gray700", dir: ((T = i), (0, D.Z)(T) && T.length ? z.Z.getTextDirection(T, { fromEnd: !0 }) : void 0), size: "subtext2", style: S.metaDescription }, i) : null;
+                var T;
+                const k = l.createElement(w.Z, null, g ? l.createElement(c.ZP, { "aria-hidden": !0, color: "gray700", size: "subtext2" }, g) : null, a ? l.createElement(c.ZP, { color: "gray700", size: "subtext2" }, a) : null),
+                    _ = l.createElement(c.ZP, { dir: z.Z.getTextDirection(o), style: S.name, weight: "bold", withHashflags: !0 }, o);
+                return l.createElement(u.Z, { "aria-labelledby": E, link: r ? C.withAnchorless(r) : void 0, onPress: d, role: r ? void 0 : "article", style: S.root, testID: f, withDarkerInteractiveBackground: b }, l.createElement(s.Z, { id: E, style: S.content }, k, _, t ? l.createElement(c.ZP, { color: "gray700", style: S.description }, t) : null, v ? l.createElement(s.Z, { style: S.quoteTweet }, v({ isCondensed: !0 })) : null, e ? l.createElement(s.Z, { style: S.attachmentWrapper }, e) : null, n.length ? l.createElement(M.Z, { groupedTrends: n }) : null, Z, m ? l.createElement(c.ZP, { color: "gray700", size: "subtext2", style: S.promotedIndicatorWrapper }, l.createElement(I.Z, { label: p, promotedContent: m })) : null, y ? l.createElement(s.Z, { style: S.trendFeedbackMenuWrapper }, y) : null));
             }
-            const A = g.default.create((e) => ({ root: { display: "flex", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, content: { flexGrow: 1, position: "relative" }, name: { marginTop: e.spaces.space2 }, metaInName: { flexShrink: 0 }, nameWrapper: { flexDirection: "row", justifyContent: "space-between", marginEnd: e.spaces.space24 }, description: { marginTop: e.spaces.space2 }, quoteTweet: { marginTop: e.spaces.space4 }, attachmentWrapper: { alignSelf: "stretch", marginBottom: e.spaces.space4, marginTop: e.spaces.space12 }, metaDescription: { marginTop: e.spaces.space4 }, promotedIndicatorWrapper: { marginTop: e.spaces.space4 }, trendFeedbackMenuWrapper: { position: "absolute", top: 1, end: 0 } }));
-            var S = a(771099),
+            const S = g.default.create((e) => ({ root: { display: "flex", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, content: { flexGrow: 1, position: "relative" }, name: { marginTop: e.spaces.space2 }, metaInName: { flexShrink: 0 }, nameWrapper: { flexDirection: "row", justifyContent: "space-between", marginEnd: e.spaces.space24 }, description: { marginTop: e.spaces.space2 }, quoteTweet: { marginTop: e.spaces.space4 }, attachmentWrapper: { alignSelf: "stretch", marginBottom: e.spaces.space4, marginTop: e.spaces.space12 }, metaDescription: { marginTop: e.spaces.space4 }, promotedIndicatorWrapper: { marginTop: e.spaces.space4 }, trendFeedbackMenuWrapper: { position: "absolute", top: 1, end: 0 } }));
+            var A = a(771099),
                 P = a(946409),
                 H = a(663550),
                 $ = a(725516),
-                R = a(448301),
-                U = a(443781),
-                B = a(301758),
-                L = a(927389),
-                V = a(276563),
-                F = a(370751),
-                W = a(260137);
-            const { CardNames: N } = V.default,
-                O = Object.freeze({ [N.LIVE_EVENT]: !0, [N.MOMENT]: !0, [N.SUMMARY]: !0, [N.SUMMARY_LARGE_IMAGE]: !0, [N.AUDIOSPACE]: !0 }),
-                G = (0, F.Z)([N.LIVE_EVENT, N.AUDIOSPACE]);
+                B = a(448301),
+                L = a(443781),
+                R = a(301758),
+                U = a(927389),
+                F = a(276563),
+                W = a(370751),
+                N = a(260137);
+            const { CardNames: V } = F.default,
+                O = Object.freeze({ [V.LIVE_EVENT]: !0, [V.MOMENT]: !0, [V.SUMMARY]: !0, [V.SUMMARY_LARGE_IMAGE]: !0, [V.AUDIOSPACE]: !0 }),
+                G = (0, W.Z)([V.LIVE_EVENT, V.AUDIOSPACE]);
             const K = { locationKey: "trend", tweetUserId: "TREND_CARD_NO_TWEET_USER_ID" },
                 q = ({ card: e, withThirdPartyCards: t }) => {
-                    const a = s.useMemo(() => ({ ...e, name: e.name === N.SUMMARY_LARGE_IMAGE ? N.SUMMARY : e.name }), [e]);
+                    const a = l.useMemo(() => ({ ...e, name: e.name === V.SUMMARY_LARGE_IMAGE ? V.SUMMARY : e.name }), [e]);
                     return (function ({ card: e, withThirdPartyCards: t }) {
                         return !(!O[e.name] || (!G.has(e.name) && !t));
                     })({ card: e, withThirdPartyCards: t })
-                        ? s.createElement(W.default, { card: a, cardContext: K, cardState: "secondary" })
+                        ? l.createElement(N.default, { card: a, cardContext: K, cardState: "secondary" })
                         : null;
                 },
-                Q = s.memo(q);
+                Q = l.memo(q);
             var Y = a(71620),
                 j = a(668214),
                 J = a(276001),
@@ -151,39 +151,39 @@
                     .propsFromActions(({ errorContext: e }) => ({ createLocalApiErrorHandler: (0, Y.zr)(e), logTrend: X.dS })),
                 ne = "trend",
                 re = ({ cards: e, createLocalApiErrorHandler: t, entry: { content: a }, feedbackItems: n, logTrend: r, withThirdPartyCards: i }) => {
-                    const l = (0, $.z)(),
-                        c = S.eY(),
+                    const s = (0, $.z)(),
+                        c = A.eY(),
                         d = c ? "half" : "full",
-                        { associatedTweetIds: m, description: p, groupedTrends: u, images: h, is_ai_trend: g, is_live: v, last_updated_at: y, name: b, promotedMetadata: x, rank: E, socialContext: C, thumbnailImage: w, total_trend_posts: T, url: k } = a,
+                        { associatedTweetIds: m, description: p, groupedTrends: u, images: h, is_ai_trend: g, is_live: v, last_updated_at: y, name: b, promotedMetadata: C, rank: E, socialContext: x, thumbnailImage: w, total_trend_posts: Z, url: k } = a,
                         { domainContext: D, metaDescription: I } = a.trendMetadata,
-                        { featureSwitches: M } = s.useContext(U.rC),
+                        { featureSwitches: M } = l.useContext(L.rC),
                         z = M.isTrue("responsive_web_trends_ui_top_articles") && g,
-                        A = M.isTrue("responsive_web_grok_trend_news_cell_enabled") && g,
-                        V = C && C.generalContext ? { contextType: C.generalContext.contextType, avatarSize: "medium", iconSize: "medium", withBottomBorder: !1, withLeftPadding: !1, withTextCentered: !0, textColor: void 0, textSize: void 0, text: C.generalContext.text, link: C.generalContext.landingUrl ? { pathname: C.generalContext.landingUrl.url } : void 0, userAvatarUrls: C.generalContext.contextImageUrls } : void 0,
-                        F = s.useCallback(
+                        S = M.isTrue("responsive_web_grok_trend_news_cell_enabled") && g,
+                        F = x && x.generalContext ? { contextType: x.generalContext.contextType, avatarSize: "medium", iconSize: "medium", withBottomBorder: !1, withLeftPadding: !1, withTextCentered: !0, textColor: void 0, textSize: void 0, text: x.generalContext.text, link: x.generalContext.landingUrl ? { pathname: x.generalContext.landingUrl.url } : void 0, userAvatarUrls: x.generalContext.contextImageUrls } : void 0,
+                        W = l.useCallback(
                             (e) => {
-                                x?.promotedTrendId && r({ promoted_trend_id: x.promotedTrendId, impression_id: x.impressionString, event: e }).catch(t());
+                                C?.promotedTrendId && r({ promoted_trend_id: C.promotedTrendId, impression_id: C.impressionString, event: e }).catch(t());
                             },
-                            [t, r, x],
+                            [t, r, C],
                         );
-                    s.useEffect(() => {
-                        l.scribeAction("impression"), F(H.AJ.TREND_VIEW);
-                    }, [l, F]);
-                    const W = s.useCallback(() => {
-                            l.scribeAction("search"), F(H.AJ.TREND_CLICK);
-                        }, [l, F]),
-                        N = s.useCallback(() => {
-                            l.scribeAction("click"), F(H.AJ.TREND_CLICK);
-                        }, [l, F]),
-                        O = s.useMemo(() => (e?.length ? s.createElement(Q, { card: e[0], withThirdPartyCards: i }) : void 0), [e, i]),
-                        G = s.useMemo(() => (u ? u.map((e) => ({ name: e.name, link: (0, P.s9)(e.url) })) : []), [u]),
-                        K = s.useMemo(() => (k ? (0, P.s9)(k) : void 0), [k]),
-                        q = s.useMemo(() => (x?.promotedTrendId ? { disclosure_type: x.disclosureType, impression_id: x.promotedTrendId } : void 0), [x]),
-                        Y = s.useMemo(() => (m?.length ? (e) => s.createElement(B.Z, (0, o.Z)({}, e, { tweetId: m[0], withLink: !0 })) : void 0), [m]),
-                        j = s.useMemo(() => (n?.length ? s.createElement(L.Z, { feedbackItems: n }) : void 0), [n]);
-                    return A ? s.createElement(f, { description: p, images: h, isLive: v, lastUpdatedAtText: y ? (0, R.pi)(new Date(Number(y)), !0) : void 0, link: K, metaDescription: q ? void 0 : I, name: b, onClick: N, testID: ne, thumbnailImage: w, totalTrendPostsText: T ? `${(0, R.uf)(Number(T))} comments` : void 0, userAvatarUrls: V?.userAvatarUrls, withDarkerInteractiveBackground: c }) : z ? s.createElement(Z, { attachment: O, description: p, displayMode: d, domainContext: D, images: h, link: K, metaDescription: q ? void 0 : I, name: b, onClick: N, renderQuoteTweet: Y, socialContext: V, testID: ne, thumbnailImage: w, trendFeedbackMenu: j, withDarkerInteractiveBackground: c, withTrendingLabel: !0 }) : s.createElement(_, { attachment: O, description: p, domainContext: D, groupedTrends: G, link: K, metaDescription: q ? void 0 : I, name: b, onClick: W, promotedContent: q, promotedLabel: q ? I : void 0, rank: E, renderQuoteTweet: Y, testID: ne, trendFeedbackMenu: j, withDarkerInteractiveBackground: c });
+                    l.useEffect(() => {
+                        s.scribeAction("impression"), W(H.AJ.TREND_VIEW);
+                    }, [s, W]);
+                    const N = l.useCallback(() => {
+                            s.scribeAction("search"), W(H.AJ.TREND_CLICK);
+                        }, [s, W]),
+                        V = l.useCallback(() => {
+                            s.scribeAction("click"), W(H.AJ.TREND_CLICK);
+                        }, [s, W]),
+                        O = l.useMemo(() => (e?.length ? l.createElement(Q, { card: e[0], withThirdPartyCards: i }) : void 0), [e, i]),
+                        G = l.useMemo(() => (u ? u.map((e) => ({ name: e.name, link: (0, P.s9)(e.url) })) : []), [u]),
+                        K = l.useMemo(() => (k ? (0, P.s9)(k) : void 0), [k]),
+                        q = l.useMemo(() => (C?.promotedTrendId ? { disclosure_type: C.disclosureType, impression_id: C.promotedTrendId } : void 0), [C]),
+                        Y = l.useMemo(() => (m?.length ? (e) => l.createElement(R.Z, (0, o.Z)({}, e, { tweetId: m[0], withLink: !0 })) : void 0), [m]),
+                        j = l.useMemo(() => (n?.length ? l.createElement(U.Z, { feedbackItems: n }) : void 0), [n]);
+                    return S ? l.createElement(f, { description: p, images: h, isLive: v, lastUpdatedAtText: y ? (0, B.pi)(new Date(Number(y)), !0) : void 0, link: K, metaDescription: q ? void 0 : I, name: b, onClick: V, testID: ne, thumbnailImage: w, totalTrendPostsText: Z ? `${(0, B.uf)(Number(Z))} comments` : void 0, userAvatarUrls: F?.userAvatarUrls, withDarkerInteractiveBackground: c }) : z ? l.createElement(T, { attachment: O, description: p, displayMode: d, domainContext: D, images: h, link: K, metaDescription: q ? void 0 : I, name: b, onClick: V, renderQuoteTweet: Y, socialContext: F, testID: ne, thumbnailImage: w, trendFeedbackMenu: j, withDarkerInteractiveBackground: c, withTrendingLabel: !0 }) : l.createElement(_, { attachment: O, description: p, domainContext: D, groupedTrends: G, link: K, metaDescription: q ? void 0 : I, name: b, onClick: N, promotedContent: q, promotedLabel: q ? I : void 0, rank: E, renderQuoteTweet: Y, testID: ne, trendFeedbackMenu: j, withDarkerInteractiveBackground: c });
                 },
-                ie = ae(s.memo(re)),
+                ie = ae(l.memo(re)),
                 oe = (e) =>
                     i
                         .iH({
@@ -204,22 +204,22 @@
                     r = Math.abs(n),
                     i = 86400,
                     o = 3600,
-                    s = 60;
-                let l;
+                    l = 60;
+                let s;
                 if (r >= i) {
                     const e = Math.floor(r / i);
-                    l = `${e} day${1 === e ? "" : "s"}`;
+                    s = `${e} day${1 === e ? "" : "s"}`;
                 } else if (r >= o) {
                     const e = Math.floor(r / o);
-                    l = `${e} hour${1 === e ? "" : "s"}`;
-                } else if (r >= s) {
-                    const e = Math.floor(r / s);
-                    l = `${e} ${t ? "minute" : "min"}${1 === e ? "" : "s"}`;
+                    s = `${e} hour${1 === e ? "" : "s"}`;
+                } else if (r >= l) {
+                    const e = Math.floor(r / l);
+                    s = `${e} ${t ? "minute" : "min"}${1 === e ? "" : "s"}`;
                 } else {
                     const e = Math.floor(r);
-                    l = `${e} ${t ? "second" : "sec"}${1 === e ? "" : "s"}`;
+                    s = `${e} ${t ? "second" : "sec"}${1 === e ? "" : "s"}`;
                 }
-                return n >= 0 ? `${l} later` : `${l} ago`;
+                return n >= 0 ? `${s} later` : `${s} ago`;
             }
             function r(e) {
                 if (isNaN(e)) return "0";
@@ -245,55 +245,94 @@
                 r = a(674132),
                 i = a.n(r),
                 o = a(731708),
-                s = a(392237);
-            const l = (e, t) => (e.length >= 2 ? d(e, t) : 1 === e.length ? c(e[0], t) : null),
+                l = a(392237);
+            const s = (e, t) => (e.length >= 2 ? d(e, t) : 1 === e.length ? c(e[0], t) : null),
                 c = (e, t) => n.createElement(i().I18NFormatMessage, { $i18n: "fe7c309b" }, m(e, t, !0)),
                 d = (e, t) => n.createElement(i().I18NFormatMessage, { $i18n: "ea753bf5" }, m(e[0], t, !0), m(e[1], t)),
                 m = (e, t, a = !1) => n.createElement(o.ZP, { color: t, link: e.link, size: "subtext2", style: a && p.paddingStart, withHashflags: !0 }, e.name),
-                p = s.default.create((e) => ({ root: { marginTop: e.spaces.space4 }, paddingStart: { paddingStart: e.spaces.space2 } })),
+                p = l.default.create((e) => ({ root: { marginTop: e.spaces.space4 }, paddingStart: { paddingStart: e.spaces.space2 } })),
                 u = ({ groupedTrends: e, linkColor: t, textColor: a = "gray700" }) => {
-                    const r = l(e, t);
+                    const r = s(e, t);
                     return r ? n.createElement(o.ZP, { color: a, numberOfLines: 2, size: "subtext2", style: p.root }, r) : null;
                 };
         },
-        818088: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => l });
+        270711: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
             var n = a(202784),
                 r = a(890601),
                 i = a(783427),
                 o = a(347101);
-            const s = (e = {}) => {
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.518 7.57C17.542 6.582 14.883 6 12 6s-5.543.582-7.518 1.57C2.566 8.528 1 10.036 1 12c0 1.393.803 2.565 1.913 3.446 1.054.836 2.473 1.488 4.087 1.923v-2.082c-1.19-.372-2.158-.863-2.844-1.408C3.322 13.218 3 12.564 3 12c0-.798.673-1.789 2.376-2.641C7.019 8.537 9.36 8 12 8s4.98.537 6.624 1.359C20.327 10.211 21 11.202 21 12s-.673 1.789-2.376 2.641c-1.299.65-3.038 1.116-5.012 1.286l1.353-1.459-1.467-1.359-3.564 3.845 3.844 3.564 1.36-1.467-1.231-1.141c2.137-.196 4.081-.714 5.612-1.479 1.916-.958 3.482-2.466 3.482-4.43s-1.566-3.472-3.482-4.43z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        262754: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var n = a(202784),
+                r = a(890601),
+                i = a(783427),
+                o = a(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.496 9.25c0-4.14 3.358-7.5 7.5-7.5s7.5 3.36 7.5 7.5-3.358 7.5-7.5 7.5-7.5-3.36-7.5-7.5zm7.5 9.5c-1.63 0-3.164-.41-4.505-1.13v5.82l4.498-1.87 4.502 1.87v-5.82c-1.338.72-2.869 1.13-4.495 1.13z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        818088: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var n = a(202784),
+                r = a(890601),
+                i = a(783427),
+                o = a(347101);
+            const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
                 return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
-        748138: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => l });
+        971657: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
             var n = a(202784),
                 r = a(890601),
                 i = a(783427),
                 o = a(347101);
-            const s = (e = {}) => {
+            const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
-        784732: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => l });
+        69893: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
             var n = a(202784),
                 r = a(890601),
                 i = a(783427),
                 o = a(347101);
-            const s = (e = {}) => {
+            const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        47286: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var n = a(202784),
+                r = a(890601),
+                i = a(783427),
+                o = a(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M5 5c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2H5zm2.5 5.75c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zM11 13h7v-2h-7v2zm0 4h4v-2h-4v2zm8.5-10C20.88 7 22 8.12 22 9.5v9c0 1.38-1.12 2.5-2.5 2.5h-15C3.12 21 2 19.88 2 18.5v-9C2 8.12 3.12 7 4.5 7h15zM4 18.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5h-15c-.28 0-.5.22-.5.5v9z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
         730895: (e, t, a) => {
             var n = a(821176);
@@ -305,4 +344,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TrendHandler.a9ccd45a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TrendHandler.d5c9531a.js.map

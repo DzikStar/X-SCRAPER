@@ -21,21 +21,17 @@
             const l = (0, r.Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.24"),
+                        o.e("icons.23"),
+                        o.e("icons.16"),
                         o.e("icons.2"),
                         o.e("icons.10"),
-                        o.e("icons.15"),
-                        o.e("icons.27"),
-                        o.e("icons.12"),
-                        o.e("icons.16"),
-                        o.e("icons.5"),
-                        o.e("icons.29"),
+                        o.e("icons.19"),
+                        o.e("icons.24"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.4"),
-                        o.e("icons.17"),
-                        o.e("icons.14"),
-                        o.e("icons.26"),
+                        o.e("icons.13"),
+                        o.e("icons.27"),
+                        o.e("icons.22"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -46,17 +42,20 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.26"),
+                        o.e("icons.28"),
+                        o.e("icons.11"),
+                        o.e("icons.3"),
                         o.e("icons.1"),
-                        o.e("icons.13"),
-                        o.e("icons.21"),
-                        o.e("icons.6"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -93,23 +92,17 @@
             const l = (0, r.Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.24"),
+                        o.e("icons.23"),
+                        o.e("icons.16"),
                         o.e("icons.2"),
                         o.e("icons.10"),
-                        o.e("icons.15"),
-                        o.e("icons.27"),
-                        o.e("icons.12"),
-                        o.e("icons.16"),
-                        o.e("icons.7"),
-                        o.e("icons.5"),
-                        o.e("icons.29"),
+                        o.e("icons.19"),
+                        o.e("icons.24"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
+                        o.e("icons.13"),
+                        o.e("icons.27"),
                         o.e("icons.22"),
-                        o.e("icons.4"),
-                        o.e("icons.17"),
-                        o.e("icons.14"),
-                        o.e("icons.26"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -120,17 +113,21 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.1"),
-                        o.e("icons.13"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.26"),
+                        o.e("icons.28"),
                         o.e("icons.21"),
-                        o.e("icons.6"),
+                        o.e("icons.11"),
+                        o.e("icons.3"),
+                        o.e("icons.1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -167,21 +164,17 @@
             const d = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.24"),
+                        o.e("icons.23"),
+                        o.e("icons.16"),
                         o.e("icons.2"),
                         o.e("icons.10"),
-                        o.e("icons.15"),
-                        o.e("icons.27"),
-                        o.e("icons.12"),
-                        o.e("icons.16"),
-                        o.e("icons.5"),
-                        o.e("icons.29"),
+                        o.e("icons.19"),
+                        o.e("icons.24"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.4"),
-                        o.e("icons.17"),
-                        o.e("icons.14"),
-                        o.e("icons.26"),
+                        o.e("icons.13"),
+                        o.e("icons.27"),
+                        o.e("icons.22"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -192,17 +185,20 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.26"),
+                        o.e("icons.28"),
+                        o.e("icons.11"),
+                        o.e("icons.3"),
                         o.e("icons.1"),
-                        o.e("icons.13"),
-                        o.e("icons.21"),
-                        o.e("icons.6"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -252,10 +248,10 @@
                 k = o(384757),
                 P = o(16057),
                 I = o(265399),
-                b = (o(571372), o(363397));
-            function w(e) {
+                w = (o(571372), o(363397));
+            function b(e) {
                 const a = e.clipId,
-                    [o] = d.useState(() => (0, b.Z)({ id: a })),
+                    [o] = d.useState(() => (0, w.Z)({ id: a })),
                     r = { store: o, broadcastId: e.audioSpaceId, mediaKey: e.mediaKey };
                 return d.createElement(S.Provider, { value: r }, e.children);
             }
@@ -411,8 +407,8 @@
                     })();
                 n()(c, "activeSpeaker should be defined");
                 const D = d.useMemo(() => ({ isHost: "host" === c.kind, periscopeUserId: c.user?.periscope_user_id }), [c.kind, c.user?.periscope_user_id]),
-                    b = s.useAudioLevel(D),
-                    w = s.useIsPlaying(),
+                    w = s.useAudioLevel(D),
+                    b = s.useIsPlaying(),
                     S = s.useIsMuted(),
                     g = r.state(),
                     _ = (function () {
@@ -454,13 +450,13 @@
                         },
                     },
                     d.createElement(i.Z, {
-                        audioLevel: b,
+                        audioLevel: w,
                         caption: B,
                         community: o?.community,
                         fadeInWords: !t.Z.reducedMotionEnabled,
                         isJoined: r.is.joined,
                         isMuted: S,
-                        isPlaying: w,
+                        isPlaying: b,
                         menuItems: E,
                         onButtonClick: function () {
                             T ? T.togglePlayback() : a.join();
@@ -490,11 +486,11 @@
                     const { space: a } = (0, y.$)(e.audioSpaceId);
                     if (!a || !e.clipMetadata) return d.createElement(s.Z, null);
                     const o = a.media_key;
-                    return d.createElement(w, { audioSpaceId: e.audioSpaceId, clipId: e.clipMetadata.clipId, mediaKey: o }, d.createElement(E, null, d.createElement(H, { audioSpaceId: e.audioSpaceId, clipMetadata: e.clipMetadata, withSquareBottomBorderRadius: e.withSquareBottomBorderRadius, withStraightBorders: e.withStraightBorders })));
+                    return d.createElement(b, { audioSpaceId: e.audioSpaceId, clipId: e.clipMetadata.clipId, mediaKey: o }, d.createElement(E, null, d.createElement(H, { audioSpaceId: e.audioSpaceId, clipMetadata: e.clipMetadata, withSquareBottomBorderRadius: e.withSquareBottomBorderRadius, withStraightBorders: e.withStraightBorders })));
                 };
         },
         214196: (e, a, o) => {
-            o.r(a), o.d(a, { __DANGEROUS_IMPORT__: () => b });
+            o.r(a), o.d(a, { __DANGEROUS_IMPORT__: () => w });
             var d = o(807896),
                 r = o(202784),
                 n = o(400752),
@@ -514,12 +510,12 @@
                 k = o(123293),
                 P = o(610214),
                 I = o(265399);
-            const b = function (e) {
+            const w = function (e) {
                     const a = (0, D.v9)(h._h),
                         o = (0, D.v9)(h.WM),
                         d = (0, m.e)(e.audioSpaceId),
                         I = (0, t.p)(),
-                        b = (0, P.Hz)(),
+                        w = (0, P.Hz)(),
                         g = (0, n.b9)(p.e),
                         { handlers: _, space: C, utils: E } = (0, y.$)(e.audioSpaceId),
                         T = C?.narrow_cast_space_type === s.default.AudienceEnum.employeesOnly,
@@ -544,7 +540,7 @@
                                                 if (!a) return;
                                                 x(e.audioSpaceId).then((e) => {
                                                     const { audioSpaceMetadata: a, broadcast: d } = e;
-                                                    (0, u.j)({ contentType: d.content_type, addToast: I, id: d.id, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: o && String(a?.narrow_cast_space_type) === w.SUBSCRIBERS, mediaKey: d.media_key, role: M.Q.host, clearAndLoadSpace: g, resetExpandedDockStore: b }), R.goBackThroughModals();
+                                                    (0, u.j)({ contentType: d.content_type, addToast: I, id: d.id, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: o && String(a?.narrow_cast_space_type) === b.SUBSCRIBERS, mediaKey: d.media_key, role: M.Q.host, clearAndLoadSpace: g, resetExpandedDockStore: w }), R.goBackThroughModals();
                                                 });
                                             });
                                         },
@@ -573,7 +569,7 @@
                         r.createElement(s.default, G),
                     );
                 },
-                w = { ALL: "0", EMPLOYEES: "1", SUBSCRIBERS: "2" },
+                b = { ALL: "0", EMPLOYEES: "1", SUBSCRIBERS: "2" },
                 A = 18e5;
             function S(e) {
                 const { isPlaying: a, togglePlayback: o } = I.gt.usePlayButtonProps();
@@ -610,4 +606,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-b953418a.6118db1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-b953418a.931fa96a.js.map

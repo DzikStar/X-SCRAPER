@@ -5,8 +5,8 @@
         125890: (e, a, r) => {
             r.d(a, { B: () => Se });
             var n = r(202784),
-                t = r(325686),
-                d = r(107267),
+                d = r(325686),
+                t = r(107267),
                 l = r(537392),
                 o = r(691533),
                 i = r(392237),
@@ -24,8 +24,8 @@
                 f = r(655352),
                 A = r(485785),
                 y = r(125363),
-                v = r(936572),
-                M = r(909622),
+                M = r(936572),
+                v = r(909622),
                 _ = r(919022),
                 E = r(788994),
                 x = r(727828),
@@ -51,24 +51,19 @@
             const H = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.24"),
+                        r.e("icons.23"),
+                        r.e("icons.16"),
                         r.e("icons.2"),
                         r.e("icons.10"),
-                        r.e("icons.15"),
-                        r.e("icons.27"),
-                        r.e("icons.12"),
-                        r.e("icons.16"),
-                        r.e("icons.7"),
-                        r.e("icons.5"),
-                        r.e("icons.29"),
+                        r.e("icons.19"),
+                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.13"),
+                        r.e("icons.27"),
                         r.e("icons.22"),
-                        r.e("icons.4"),
-                        r.e("icons.19"),
                         r.e("icons.17"),
-                        r.e("icons.14"),
-                        r.e("icons.26"),
+                        r.e("icons.7"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -79,20 +74,23 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.1"),
-                        r.e("icons.13"),
+                        r.e("icons.4"),
+                        r.e("icons.8"),
+                        r.e("icons.14"),
+                        r.e("icons.26"),
+                        r.e("icons.28"),
                         r.e("icons.21"),
-                        r.e("icons.6"),
+                        r.e("icons.11"),
+                        r.e("icons.3"),
+                        r.e("icons.1"),
                         r.e("icons.18"),
-                        r.e("icons.0"),
-                        r.e("icons.20"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -159,6 +157,7 @@
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -202,8 +201,8 @@
                 ae = r(88660),
                 re = r(39182),
                 ne = r(313129),
-                te = r(738124),
-                de = r(643426),
+                de = r(738124),
+                te = r(643426),
                 le = r(293115),
                 oe = r(725405),
                 ie = r(620243);
@@ -215,7 +214,7 @@
                     (0, re.E)();
                     const { featureSwitches: a } = (0, s.QZ)(),
                         r = a.isTrue("rweb_sourcemap_migration"),
-                        d = (0, oe.Z)(),
+                        t = (0, oe.Z)(),
                         [l, o] = n.useState(!1),
                         i = (0, W.Dv)(K.lZ),
                         [c, u] = n.useState(null);
@@ -233,19 +232,19 @@
                             o(!l);
                         },
                         h = () => {
-                            e(), d.scribeAction("dismiss"), o(!1);
+                            e(), t.scribeAction("dismiss"), o(!1);
                         },
                         D = () => {
-                            d.scribeAction(c.isCollapsed ? "expand" : "collapse");
+                            t.scribeAction(c.isCollapsed ? "expand" : "collapse");
                             const e = { isCollapsed: !c.isCollapsed };
                             u(e), i.set("rweb.premiumModule", e), o(!1);
                         };
                     return m.jfResponse?.root.value
                         ? n.createElement(
-                              de.b.Provider,
+                              te.b.Provider,
                               { value: { dismiss: p } },
                               n.createElement(
-                                  t.Z,
+                                  d.Z,
                                   { style: r ? we.containerRedesign : we.container },
                                   l
                                       ? n.createElement(V.Z, {
@@ -256,7 +255,7 @@
                                             onCloseRequested: p,
                                         })
                                       : null,
-                                  m.jfResponse?.root.value ? n.createElement(te.Z, { payload: m.jfResponse.root.value }) : null,
+                                  m.jfResponse?.root.value ? n.createElement(de.Z, { payload: m.jfResponse.root.value }) : null,
                               ),
                           )
                         : n.createElement(Q.Z, { onRetry: null, title: m.error });
@@ -272,9 +271,9 @@
                 },
                 he = () => {
                     const { verified_program_application_status: e, verified_program_eligibility: a, verified_user_profiles: r } = (0, ie.Z)(),
-                        { featureSwitches: t } = (0, s.QZ)(),
-                        d = r?.ad_revenue_sharing_user_profile?.is_active;
-                    if ((d || (0 === a?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && t.isTrue("subscriptions_premium_module_enabled")) return n.createElement(n.Suspense, { fallback: n.createElement(X.J, null) }, n.createElement(pe, null));
+                        { featureSwitches: d } = (0, s.QZ)(),
+                        t = r?.ad_revenue_sharing_user_profile?.is_active;
+                    if ((t || (0 === a?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && d.isTrue("subscriptions_premium_module_enabled")) return n.createElement(n.Suspense, { fallback: n.createElement(X.J, null) }, n.createElement(pe, null));
                 },
                 De = () => {
                     const { featureSwitches: e, userClaims: a } = (0, s.QZ)();
@@ -288,7 +287,7 @@
             const fe = n.memo(function (e) {
                 const a = { ...ge, ...e },
                     r = (0, U.Ct)();
-                return n.createElement(t.Z, { ref: r, style: [Re.root, e.withMaxHeight && Re.rootWithMaxHeight], testID: a.testID }, n.createElement(ye, a), n.createElement(ve, a), e.withRadarUpsell && n.createElement(t.Z, { style: Re.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(Me, a), n.createElement(Ae, a), n.createElement(Te, a));
+                return n.createElement(d.Z, { ref: r, style: [Re.root, e.withMaxHeight && Re.rootWithMaxHeight], testID: a.testID }, n.createElement(ye, a), n.createElement(Me, a), e.withRadarUpsell && n.createElement(d.Z, { style: Re.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(ve, a), n.createElement(Ae, a), n.createElement(Te, a));
             });
             function Ae(e) {
                 const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
@@ -297,20 +296,20 @@
                     i = r.isPaidVerifiedOrg(),
                     m = a.isTrue("rweb_sourcemap_migration"),
                     D = a.isTrue("rweb_sourcemap_migration_enable_suggested_video"),
-                    w = (0, d.useLocation)(),
+                    w = (0, t.useLocation)(),
                     g = "/home" === w.pathname && a.isTrue("user_ad_accounts_config_enabled") && r.isAnyPremiumSubscriber() && !r.isAnyVerifiedOrgOrAffiliate() && "business" !== l?.verified_type?.toLowerCase() && "government" !== l?.verified_type?.toLowerCase(),
                     S = (0, k.Z)(),
                     f = !e.withSearchBox && !e.withTrends && S && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
                     A = e.isOwnProfile && S && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
-                    v = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
-                    M = o && !i && "/home" === w.pathname;
-                if (e.profileUserId) return n.createElement(n.Fragment, null, g && n.createElement(L, null), n.createElement(c.B, null), e.profileScreenName ? n.createElement(h.Z, { screenName: e.profileScreenName }) : null, n.createElement(b.O, null), m && D && n.createElement(Ee, e), e.isOwnProfile ? n.createElement(B.Z, { entryPoint: "profile" }) : null, A && n.createElement(t.Z, { style: Re.paddedContainer, testID: "profileAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), n.createElement(xe, e), n.createElement(_e, e), n.createElement(ke, e));
+                    M = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
+                    v = o && !i && "/home" === w.pathname;
+                if (e.profileUserId) return n.createElement(n.Fragment, null, g && n.createElement(L, null), n.createElement(c.B, null), e.profileScreenName ? n.createElement(h.Z, { screenName: e.profileScreenName }) : null, n.createElement(b.O, null), m && D && n.createElement(Ee, e), e.isOwnProfile ? n.createElement(B.Z, { entryPoint: "profile" }) : null, A && n.createElement(d.Z, { style: Re.paddedContainer, testID: "profileAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), n.createElement(xe, e), n.createElement(_e, e), n.createElement(ke, e));
                 let E = n.createElement(n.Fragment, null, e.withNews && n.createElement(Ze, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), e.withFullNews && n.createElement(Ce, e), n.createElement(_e, e), n.createElement(xe, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = n.createElement(n.Fragment, null, n.createElement(xe, e), e.withNews && n.createElement(Ze, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), e.withFullNews && n.createElement(Ce, e), n.createElement(_e, e))), m && (E = n.createElement(n.Fragment, null, D && n.createElement(Ee, e), e.withNews && n.createElement(Ze, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), e.withFullNews && n.createElement(Ce, e), n.createElement(_e, e), n.createElement(xe, e))), n.createElement(n.Fragment, null, "/home" === w.pathname ? n.createElement(De, null) : null, g && n.createElement(L, null), M && n.createElement(B.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(p.Z, null) : null, "/home" === w.pathname && v && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), E, f && n.createElement(t.Z, { style: Re.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(ke, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = n.createElement(n.Fragment, null, n.createElement(xe, e), e.withNews && n.createElement(Ze, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), e.withFullNews && n.createElement(Ce, e), n.createElement(_e, e))), m && (E = n.createElement(n.Fragment, null, D && n.createElement(Ee, e), e.withNews && n.createElement(Ze, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), e.withFullNews && n.createElement(Ce, e), n.createElement(_e, e), n.createElement(xe, e))), n.createElement(n.Fragment, null, "/home" === w.pathname ? n.createElement(De, null) : null, g && n.createElement(L, null), v && n.createElement(B.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(p.Z, null) : null, "/home" === w.pathname && M && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), E, f && n.createElement(d.Z, { style: Re.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(ke, e));
             }
             function ye(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    d = (0, y.v9)(v.op);
+                    t = (0, y.v9)(M.op);
                 if (!r && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, f.ZP)() || !e.withSearchBox) return null;
                 const o = a.isTrue("rweb_sourcemap_migration"),
@@ -318,19 +317,19 @@
                 return n.createElement(
                     n.Fragment,
                     null,
-                    n.createElement(l.ZP, null, ({ windowWidth: e }) => n.createElement(t.Z, { style: [Re.searchContainer, o ? A.Z.getSidebarWidthStyleRedesign(e, d ?? i) : A.Z.getSidebarWidthStyle(e), o && Re.withHorizontalPadding] }, n.createElement(g.Rj, { shouldHandleSearchShortcut: !0 }))),
-                    n.createElement(t.Z, { style: Re.searchPlaceholder }),
+                    n.createElement(l.ZP, null, ({ windowWidth: e }) => n.createElement(d.Z, { style: [Re.searchContainer, o ? A.Z.getSidebarWidthStyleRedesign(e, t ?? i) : A.Z.getSidebarWidthStyle(e), o && Re.withHorizontalPadding] }, n.createElement(g.Rj, { shouldHandleSearchShortcut: !0 }))),
+                    n.createElement(d.Z, { style: Re.searchPlaceholder }),
                 );
             }
-            function ve(e) {
+            function Me(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    t = (0, d.useLocation)();
+                    d = (0, t.useLocation)();
                 if (r) return null;
-                if (t.pathname.startsWith("/i/jf/onboarding")) return null;
+                if (d.pathname.startsWith("/i/jf/onboarding")) return null;
                 const l = a.isTrue("march_madness_brackets_enabled_logout_popup");
                 return n.createElement(o.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(w.Z, null)), l && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
             }
-            function Me(e) {
+            function ve(e) {
                 return e.children ? n.Children.map(e.children, (e) => (e ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(z.g, null, e)) : null)) : null;
             }
             function _e(e) {
@@ -348,19 +347,19 @@
                 return e.withWhoToFollow && r ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(S.Z, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
             function ke(e) {
-                const { featureSwitches: a, isRestrictedSession: r, viewerUserId: t } = (0, s.QZ)(),
-                    d = e.profileUserId || t,
+                const { featureSwitches: a, isRestrictedSession: r, viewerUserId: d } = (0, s.QZ)(),
+                    t = e.profileUserId || d,
                     l = n.useMemo(() => {
-                        if (d) return (0, M.Z)(d);
-                    }, [d]);
+                        if (t) return (0, v.Z)(t);
+                    }, [t]);
                 return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(m.Z, { module: l }))) : null;
             }
             function Ze(e) {
-                const a = (0, d.useLocation)(),
+                const a = (0, t.useLocation)(),
                     { featureSwitches: r } = (0, s.QZ)(),
-                    t = r.isTrue("responsive_web_grok_05221996"),
+                    d = r.isTrue("responsive_web_grok_05221996"),
                     l = a.pathname.startsWith("/home") || a.pathname.startsWith("/explore");
-                return t && l ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(R.Z, null)) : null;
+                return d && l ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(R.Z, null)) : null;
             }
             function Ce(e) {
                 return n.createElement(o.Z, { hideOnError: !0 }, n.createElement(T.Z, null));
@@ -369,11 +368,11 @@
                 return e.pathname.startsWith("/i/news/a/") || e.pathname.startsWith("/i/news/article/") ? e.pathname.split("/").pop() : null;
             }
             function Be(e) {
-                const a = Ie((0, d.useLocation)());
+                const a = Ie((0, t.useLocation)());
                 return n.createElement(o.Z, { hideOnError: !0 }, a ? n.createElement(I.Z, { articleId: a }) : n.createElement(C.Z, null));
             }
             function Pe(e) {
-                const a = Ie((0, d.useLocation)());
+                const a = Ie((0, t.useLocation)());
                 return a ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(Z.Z, { articleId: a })) : null;
             }
             function Te(e) {
@@ -384,8 +383,8 @@
         975753: (e, a, r) => {
             r.d(a, { c: () => D, Z: () => w });
             var n = r(202784),
-                t = r(325686),
-                d = r(392237),
+                d = r(325686),
+                t = r(392237),
                 l = r(530732),
                 o = r(992942),
                 i = r(731708),
@@ -407,14 +406,14 @@
                     const S = () => {
                             m.scribe({ component: w, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: v, textcolor: M } = u ?? {},
-                        _ = f ? d.default.theme.colors[f] : d.default.theme.colors.gray0,
-                        E = M ? d.default.theme.colors[M] : d.default.theme.colors.gray900,
-                        x = v ? d.default.theme.spaces[v] : d.default.theme.spaces.space16,
+                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: M, textcolor: v } = u ?? {},
+                        _ = f ? t.default.theme.colors[f] : t.default.theme.colors.gray0,
+                        E = v ? t.default.theme.colors[v] : t.default.theme.colors.gray900,
+                        x = M ? t.default.theme.spaces[M] : t.default.theme.spaces.space16,
                         k = { [D.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[r];
-                    return b ? n.createElement(l.Z, { interactiveStyles: null, link: a, onPress: S, style: g.bannerContainer }, n.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === d.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : n.createElement(t.Z, { style: [g.card, { backgroundColor: _ }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, n.createElement(t.Z, { style: e ? g.horizontalContent : g.verticalContent }, n.createElement(t.Z, { style: e ? g.textContainer : null }, n.createElement(i.ZP, { size: "headline2", style: [g.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), n.createElement(i.ZP, { size: "subtext1", style: [g.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), n.createElement(t.Z, { style: g.buttonContainer }, n.createElement(s.ZP, { backgroundColor: "light" === d.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: S, size: "medium", style: [g.popupButton, { width: A }] }, k.buttonText), e && n.createElement(i.ZP, { size: "subtext3", style: [g.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
+                    return b ? n.createElement(l.Z, { interactiveStyles: null, link: a, onPress: S, style: g.bannerContainer }, n.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : n.createElement(d.Z, { style: [g.card, { backgroundColor: _ }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, n.createElement(d.Z, { style: e ? g.horizontalContent : g.verticalContent }, n.createElement(d.Z, { style: e ? g.textContainer : null }, n.createElement(i.ZP, { size: "headline2", style: [g.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), n.createElement(i.ZP, { size: "subtext1", style: [g.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), n.createElement(d.Z, { style: g.buttonContainer }, n.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: S, size: "medium", style: [g.popupButton, { width: A }] }, k.buttonText), e && n.createElement(i.ZP, { size: "subtext3", style: [g.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
                 },
-                g = d.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
+                g = t.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
         718e3: (e, a, r) => {
             r.d(a, { Z: () => n.B });
@@ -423,8 +422,8 @@
         290402: (e, a, r) => {
             r.d(a, { Z: () => p });
             var n = r(807896),
-                t = r(202784),
-                d = r(182056),
+                d = r(202784),
+                t = r(182056),
                 l = r(879113),
                 o = r(392237),
                 i = r(674132),
@@ -432,44 +431,44 @@
                 c = r(968478);
             const u = s().aa6e3300,
                 b = ({ retryMessage: e, ...a }, r) => {
-                    const o = d.Z.isOnline();
-                    return t.createElement(l.Z, (0, n.Z)({}, a, { icon: o ? void 0 : t.createElement(c.default, { style: m.icon }), retryMessage: o ? e : u }));
+                    const o = t.Z.isOnline();
+                    return d.createElement(l.Z, (0, n.Z)({}, a, { icon: o ? void 0 : d.createElement(c.default, { style: m.icon }), retryMessage: o ? e : u }));
                 },
                 m = o.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                p = t.forwardRef(b);
+                p = d.forwardRef(b);
         },
         393805: (e, a, r) => {
             r.d(a, { ZP: () => E });
             var n = r(688715),
-                t = r(674132),
-                d = r.n(t);
-            const l = { id: "about", text: d().b721eb38, visibleLoggedIn: !0, link: (0, n.ju)("https://about.x.com") },
-                o = { id: "downloadTheXApp", text: d().j607bf02, visibleLoggedIn: !0, link: (0, n.ju)("https://help.x.com/using-x/download-the-x-app") },
-                i = { id: "helpCenter", text: d().f66d24be, link: (0, n.ju)("https://help.x.com") },
-                s = { id: "termsOfService", text: d().hdabc3fc, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://x.com/tos") },
-                c = { id: "privacyPolicy", text: d().bc6efc72, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://x.com/privacy") },
-                u = { id: "cookiePolicy", text: d().h3161192, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://support.x.com/articles/20170514") },
-                b = { id: "germanyTransparency", text: d().da137d9a, featureSwitch: "dash_region_specific_de_media_transparency_items_enabled", visibleLoggedIn: !0, legal: !0, neverHidden: !0, link: (0, n.ju)("https://help.x.com/de/using-twitter/twitter-timeline") },
-                m = { id: "imprint", featureSwitch: "dash_region_specific_de_and_tr_media_transparency_items_enabled", text: d().aeede01a, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://legal.x.com/imprint.html") },
-                p = { id: "accessibility", text: d().e3719c16, visibleLoggedIn: !0, neverHidden: !0, link: (0, n.ju)("https://help.x.com/resources/accessibility") },
-                h = { id: "adsInfo", text: d().a7de64de, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo") },
-                D = { id: "grok", text: d().h5860a68, link: (0, n.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
-                w = { id: "blog", text: d().jb0a4c36, link: (0, n.ju)("https://blog.x.com") },
-                g = { id: "careers", text: d().ce6d095a, link: (0, n.ju)("https://careers.x.com") },
-                S = { id: "brandResources", text: d().e0adec82, link: (0, n.ju)("https://about.x.com/press/brand-assets") },
-                f = { id: "advertising", text: d().a4cf866e, link: (0, n.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
-                A = { id: "marketing", text: d().df1b7550, link: (0, n.ju)("https://marketing.x.com") },
-                y = { id: "xForBusiness", text: d().he258678, visibleLoggedIn: !0, link: (0, n.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
-                v = { id: "developers", text: d().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
-                M = { id: "directory", text: d().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
-                _ = { id: "settings", text: d().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                E = (e) => (e ? ((o.text = d().hc5aa17c), (D.text = d().j0693948), [l, o, D, g, s, c, u, v, f, b, m, _]) : [l, o, D, i, s, c, u, b, m, p, h, w, g, S, f, A, y, v, M, _]);
+                d = r(674132),
+                t = r.n(d);
+            const l = { id: "about", text: t().b721eb38, visibleLoggedIn: !0, link: (0, n.ju)("https://about.x.com") },
+                o = { id: "downloadTheXApp", text: t().j607bf02, visibleLoggedIn: !0, link: (0, n.ju)("https://help.x.com/using-x/download-the-x-app") },
+                i = { id: "helpCenter", text: t().f66d24be, link: (0, n.ju)("https://help.x.com") },
+                s = { id: "termsOfService", text: t().hdabc3fc, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://x.com/tos") },
+                c = { id: "privacyPolicy", text: t().bc6efc72, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://x.com/privacy") },
+                u = { id: "cookiePolicy", text: t().h3161192, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://support.x.com/articles/20170514") },
+                b = { id: "germanyTransparency", text: t().da137d9a, featureSwitch: "dash_region_specific_de_media_transparency_items_enabled", visibleLoggedIn: !0, legal: !0, neverHidden: !0, link: (0, n.ju)("https://help.x.com/de/using-twitter/twitter-timeline") },
+                m = { id: "imprint", featureSwitch: "dash_region_specific_de_and_tr_media_transparency_items_enabled", text: t().aeede01a, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://legal.x.com/imprint.html") },
+                p = { id: "accessibility", text: t().e3719c16, visibleLoggedIn: !0, neverHidden: !0, link: (0, n.ju)("https://help.x.com/resources/accessibility") },
+                h = { id: "adsInfo", text: t().a7de64de, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo") },
+                D = { id: "grok", text: t().h5860a68, link: (0, n.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
+                w = { id: "blog", text: t().jb0a4c36, link: (0, n.ju)("https://blog.x.com") },
+                g = { id: "careers", text: t().ce6d095a, link: (0, n.ju)("https://careers.x.com") },
+                S = { id: "brandResources", text: t().e0adec82, link: (0, n.ju)("https://about.x.com/press/brand-assets") },
+                f = { id: "advertising", text: t().a4cf866e, link: (0, n.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
+                A = { id: "marketing", text: t().df1b7550, link: (0, n.ju)("https://marketing.x.com") },
+                y = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, n.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
+                M = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
+                v = { id: "directory", text: t().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
+                _ = { id: "settings", text: t().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
+                E = (e) => (e ? ((o.text = t().hc5aa17c), (D.text = t().j0693948), [l, o, D, g, s, c, u, M, f, b, m, _]) : [l, o, D, i, s, c, u, b, m, p, h, w, g, S, f, A, y, M, v, _]);
         },
         788994: (e, a, r) => {
             r.d(a, { Z: () => f });
             var n = r(202784),
-                t = r(325686),
-                d = r(811176),
+                d = r(325686),
+                t = r(811176),
                 l = r(731708),
                 o = r(392237),
                 i = r(674132),
@@ -485,19 +484,19 @@
             class g extends n.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._renderMenu = (e) => (a) => n.createElement(d.Z, { isFixed: !0, items: this._renderOverflowItems(e), onCloseRequested: a })),
+                        (this._renderMenu = (e) => (a) => n.createElement(t.Z, { isFixed: !0, items: this._renderOverflowItems(e), onCloseRequested: a })),
                         (this._filterFeatureSwitch = ({ featureSwitch: e }) => !e || (this.context.featureSwitches && this.context.featureSwitches.isTrue(e))),
                         (this._renderOverflowItems = (e) =>
                             e.map((e) => {
                                 const { internal: a, link: r, text: n } = e;
                                 return { text: n, link: { pathname: r, external: !a } };
                             })),
-                        (this._renderItem = ({ id: e, internal: a, link: r, mobileLink: d, text: o }) => {
+                        (this._renderItem = ({ id: e, internal: a, link: r, mobileLink: t, text: o }) => {
                             const { analytics: i, isMobile: s, textColor: c } = this.props;
                             let u = r ? { pathname: r, external: !a } : void 0;
-                            s && d && (u = d ? { pathname: d, external: !a } : void 0);
+                            s && t && (u = t ? { pathname: t, external: !a } : void 0);
                             return n.createElement(
-                                t.Z,
+                                d.Z,
                                 { key: o, style: [S.item, this._getItemAlignStyle(), S.inline] },
                                 n.createElement(
                                     l.ZP,
@@ -527,12 +526,12 @@
                         });
                 }
                 render() {
-                    const { align: e, itemLayout: a = "horizontal", textColor: r, withOverflow: d } = this.props,
+                    const { align: e, itemLayout: a = "horizontal", textColor: r, withOverflow: t } = this.props,
                         o = this.context.featureSwitches.isTrue("responsive_web_logged_out_redesign_enabled"),
                         i = (0, p.ZP)(o).filter(this._filterFeatureSwitch),
-                        s = d ? i.filter(({ visibleLoggedIn: e }) => e) : i,
-                        [b, g] = (0, u.Z)(s, ({ legal: e, neverHidden: a }) => e || a || !d);
-                    return n.createElement(t.Z, { "aria-label": h, role: "navigation", style: [S.root, "center" === e && S.alignCenter, "vertical" === a && S.itemLayoutVertical] }, b.map(this._renderItem), g.length > 0 ? n.createElement(m.Z, { renderMenu: this._renderMenu(g), style: [S.item, this._getItemAlignStyle()] }, n.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, n.createElement(c.default, { style: S.icon }))) : null, n.createElement(l.ZP, { color: r, size: "subtext3", style: [S.item, this._getItemAlignStyle()] }, w));
+                        s = t ? i.filter(({ visibleLoggedIn: e }) => e) : i,
+                        [b, g] = (0, u.Z)(s, ({ legal: e, neverHidden: a }) => e || a || !t);
+                    return n.createElement(d.Z, { "aria-label": h, role: "navigation", style: [S.root, "center" === e && S.alignCenter, "vertical" === a && S.itemLayoutVertical] }, b.map(this._renderItem), g.length > 0 ? n.createElement(m.Z, { renderMenu: this._renderMenu(g), style: [S.item, this._getItemAlignStyle()] }, n.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, n.createElement(c.default, { style: S.icon }))) : null, n.createElement(l.ZP, { color: r, size: "subtext3", style: [S.item, this._getItemAlignStyle()] }, w));
                 }
             }
             (g.contextType = b.rC), (g.defaultProps = { textColor: "gray700" });
@@ -541,4 +540,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.62371a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.54ccb62a.js.map

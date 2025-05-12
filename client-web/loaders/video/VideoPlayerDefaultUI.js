@@ -68,12 +68,12 @@
                 }
                 render() {
                     const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: s } = this.state,
-                        { additionalBadges: i, aspectRatio: p, basePlayerClass: u, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: S, onApiReady: b, onScroll: E, onStateUpdate: f, playerId: P, size: C, ..._ } = this.props,
+                        { additionalBadges: i, aspectRatio: p, basePlayerClass: u, children: d, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: S, onApiReady: b, onScroll: E, onStateUpdate: f, playerId: C, size: P, ..._ } = this.props,
                         A = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
                         v = { ...A, playerState: s };
                     return n.createElement(
                         l.Z,
-                        { isFullScreen: g, onScroll: E, ratio: p, style: [m.root, m[C]] },
+                        { isFullScreen: g, onScroll: E, ratio: p, style: [m.root, m[P]] },
                         this.state.hasError
                             ? n.createElement(o.Z, { onReloadPress: this._handleReload })
                             : n.createElement(
@@ -227,8 +227,8 @@
                 b = r(971765),
                 E = r(916692),
                 f = r(804455),
-                P = r(162317),
-                C = r(472238),
+                C = r(162317),
+                P = r(472238),
                 _ = r(272879);
             class A extends a.PureComponent {
                 constructor(...e) {
@@ -252,27 +252,27 @@
                                   : a.createElement(d.Z, { enabled: !p && !!s, playerApi: t, playerState: r }, a.createElement(o.Z, { playerState: r }, this._renderVideo(e, !1)));
                         }),
                         (this._renderVideo = (e, t) => {
-                            const { additionalBadges: r, "aria-label": l, containerRef: i, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: d, guestsState: A, includeDisputeLinkInCopyrightErrorMessage: v, liveBroadcastRewindEnabled: R, onClickBackground: Z, onScribeEvent: k, playerApi: w, playerDisplayOptions: x, playerState: I, poster: O, renderPrerollActionMenu: D, shouldShowAltLabel: F, showWatchAgain: T } = this.props;
+                            const { additionalBadges: r, "aria-label": l, containerRef: i, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: d, guestsState: A, includeDisputeLinkInCopyrightErrorMessage: v, liveBroadcastRewindEnabled: Z, onClickBackground: R, onScribeEvent: k, playerApi: w, playerDisplayOptions: x, playerState: I, poster: O, renderPrerollActionMenu: D, shouldShowAltLabel: F, showWatchAgain: M } = this.props;
                             if (!w || !I) return null;
-                            const { Observer: M, observed: B } = e,
-                                U = (0, _.JN)(I, B, _.i2),
+                            const { Observer: T, observed: B } = e,
+                                z = (0, _.JN)(I, B, _.i2),
                                 L = !!I.error,
-                                j = (0, h.Ci)(I),
-                                z = j?.contentType === y.wF.GIF,
+                                U = (0, h.Ci)(I),
+                                j = U?.contentType === y.wF.GIF,
                                 V = "PLAY_REQUESTED" !== I.controls?.playState,
-                                G = T && I.tracksFinished,
-                                W = U && I.isPreview,
-                                H = !(!U || !j?.isLive),
+                                G = M && I.tracksFinished,
+                                W = z && I.isPreview,
+                                H = !(!z || !U?.isLive),
                                 N = F ? l : void 0,
-                                K = !x?.hideLeftBadges && (!!N || z || W || H),
-                                J = !x?.hideRightBadges && U,
-                                Y = W || !U,
+                                K = !x?.hideLeftBadges && (!!N || j || W || H),
+                                J = !x?.hideRightBadges && z,
+                                Y = W || !z,
                                 Q = !x?.hidePosterImage,
                                 q = I.controls?.isPosterShown;
                             return a.createElement(
-                                M,
+                                T,
                                 { click: !0, interactionKey: _.IG.Root, mousemove: !0, mouseover: !0 },
-                                L ? null : a.createElement(a.Fragment, null, a.createElement(E.Z, { hideControls: U, isTouchOnlyUI: _.i2, liveBroadcastRewindEnabled: R, onClick: Z, playerApi: w, playerDisplayOptions: x, playerState: I }), Q && !G && a.createElement(f.Z, { imageSrc: O, playerApi: w, playerState: I, withPlayButton: V }), a.createElement(g.Z, { playerState: I }), t ? a.createElement(P.Z, { containerRef: i, onSkip: this._handleSkip, playerApi: w, playerState: I, renderPrerollActionMenu: D }) : a.createElement(a.Fragment, null, !z && T && a.createElement(C.Z, { onScribeEvent: k, playerApi: w, playerState: I }), a.createElement(b.Z, { guestsState: A, playerState: I }), !z && a.createElement(M, { focus: !0, interactionKey: _.IG.VideoCTA, mouseover: !0 }, a.createElement(s.Z, { show: !U }, a.createElement(u.Z, { playerApi: w, playerState: I }))), !z && !q && a.createElement(a.Fragment, null, a.createElement(M, { focus: !0, interactionKey: _.IG.A11YHook }, a.createElement(n.Z, { focusable: !0 })), a.createElement(M, { focus: !0, interactionKey: _.IG.ControlBar, mouseover: !0, touch: !0 }, a.createElement(c.Z, { containerRef: i, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: d, hideControls: U, liveBroadcastRewindEnabled: R, playerApi: w, playerState: I, publisherDisplayName: j?.publisherDisplayName, publisherProfileImageUrl: j?.publisherProfileImageUrl, showScrubber: "ad" !== j?.displayType && (!j?.isLive || R) }))), a.createElement(s.Z, { show: K }, a.createElement(m.Z, { additionalBadges: r, mediaAccessibilityLabel: N, playerApi: w, playerDisplayOptions: x, playerState: I, position: "left" })), a.createElement(s.Z, { show: J }, a.createElement(m.Z, { playerApi: w, playerDisplayOptions: x, playerState: I, position: "right" })), a.createElement(s.Z, { show: Y }, a.createElement(m.Z, { playerApi: w, playerDisplayOptions: x, playerState: I, position: "topRight" })))),
+                                L ? null : a.createElement(a.Fragment, null, a.createElement(E.Z, { hideControls: z, isTouchOnlyUI: _.i2, liveBroadcastRewindEnabled: Z, onClick: R, playerApi: w, playerDisplayOptions: x, playerState: I }), Q && !G && a.createElement(f.Z, { imageSrc: O, playerApi: w, playerState: I, withPlayButton: V }), a.createElement(g.Z, { playerState: I }), t ? a.createElement(C.Z, { containerRef: i, onSkip: this._handleSkip, playerApi: w, playerState: I, renderPrerollActionMenu: D }) : a.createElement(a.Fragment, null, !j && M && a.createElement(P.Z, { onScribeEvent: k, playerApi: w, playerState: I }), a.createElement(b.Z, { guestsState: A, playerState: I }), !j && a.createElement(T, { focus: !0, interactionKey: _.IG.VideoCTA, mouseover: !0 }, a.createElement(s.Z, { show: !z }, a.createElement(u.Z, { playerApi: w, playerState: I }))), !j && !q && a.createElement(a.Fragment, null, a.createElement(T, { focus: !0, interactionKey: _.IG.A11YHook }, a.createElement(n.Z, { focusable: !0 })), a.createElement(T, { focus: !0, interactionKey: _.IG.ControlBar, mouseover: !0, touch: !0 }, a.createElement(c.Z, { containerRef: i, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: d, hideControls: z, liveBroadcastRewindEnabled: Z, playerApi: w, playerState: I, publisherDisplayName: U?.publisherDisplayName, publisherProfileImageUrl: U?.publisherProfileImageUrl, showScrubber: "ad" !== U?.displayType && (!U?.isLive || Z) }))), a.createElement(s.Z, { show: K }, a.createElement(m.Z, { additionalBadges: r, mediaAccessibilityLabel: N, playerApi: w, playerDisplayOptions: x, playerState: I, position: "left" })), a.createElement(s.Z, { show: J }, a.createElement(m.Z, { playerApi: w, playerDisplayOptions: x, playerState: I, position: "right" })), a.createElement(s.Z, { show: Y }, a.createElement(m.Z, { playerApi: w, playerDisplayOptions: x, playerState: I, position: "topRight" })))),
                                 a.createElement(s.Z, { show: L }, L && a.createElement(S.Z, { imageSrc: O, includeDisputeLinkInCopyrightErrorMessage: v, playerApi: w, playerState: I })),
                             );
                         }),
@@ -292,6 +292,19 @@
             }
             const v = A;
         },
+        355830: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => o });
+            var a = r(202784),
+                n = r(890601),
+                s = r(783427),
+                l = r(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 1.5c1.808 0 3.51.46 4.995 1.26l-1.491 1.49C14.435 3.77 13.249 3.5 12 3.5c-4.694 0-8.5 3.81-8.5 8.5 0 1.25.269 2.44.753 3.5L2.762 17C1.957 15.51 1.5 13.81 1.5 12 1.5 6.2 6.201 1.5 12 1.5zm0 19c-1.249 0-2.435-.27-3.504-.75l-1.491 1.49c1.485.8 3.187 1.26 4.995 1.26 5.799 0 10.5-4.7 10.5-10.5 0-1.81-.457-3.51-1.262-5l-1.491 1.5c.484 1.06.753 2.25.753 3.5 0 4.69-3.806 8.5-8.5 8.5zm8.5-18.41L15.086 7.5 16.5 8.91l5.414-5.41L20.5 2.09zm-4 9.91l-7-4.45v8.9l7-4.45zm-13 9.91L8.414 17 7 15.59 2.086 20.5 3.5 21.91z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerDefaultUI.e8502fea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerDefaultUI.124e19fa.js.map

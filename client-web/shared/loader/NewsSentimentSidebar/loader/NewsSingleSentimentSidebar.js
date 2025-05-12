@@ -84,7 +84,7 @@
                 b,
                 k,
                 w,
-                _ = {
+                C = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "limit" }]),
                         kind: "Fragment",
@@ -193,11 +193,11 @@
                     operation: { argumentDefinitions: a, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: l, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(w = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [i, s, o, c, d, u, m, p, g, h, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [w, b], storageKey: null }], storageKey: null }], storageKey: null }, k, i], type: "AiTrend", abstractKey: null }], storageKey: null }, i], storageKey: null }], storageKey: null }] },
                     params: { id: "gTItUBXHQzDYz5zGcfHOSw", metadata: {}, name: "useHomeNewsArticlesQuery", operationKind: "query", text: null },
                 };
-            _.hash = "3801ff63426a8e5a7f7864683169d9be";
-            const x = _;
+            C.hash = "3801ff63426a8e5a7f7864683169d9be";
+            const x = C;
             n(585488);
-            var C = n(712696),
-                v = n.n(C);
+            var _ = n(712696),
+                v = n.n(_);
             const E = x;
             const S = function ({ limit: e }) {
                 const t = v()(E, { limit: e }).deepsearchArticlesHomePageResult || [],
@@ -276,15 +276,15 @@
                 f = 15;
             function b({ articleId: e, chartData: t, containerStyle: n, hoveredStyle: s, onClick: r, question: o, size: c = "large", style: d, typeMetadata: b }) {
                 const w = (0, p.Z)(),
-                    { sentimentScores: _, totalNumPosts: x } = g({ chartData: t, typeMetadata: b }),
-                    C = a.useCallback(() => {
+                    { sentimentScores: C, totalNumPosts: x } = g({ chartData: t, typeMetadata: b }),
+                    _ = a.useCallback(() => {
                         (0, y.XB)(w, { articleId: e });
                     }, [e, w]);
-                return a.createElement(u.Z, { onClick: r, style: d, withoutInteractiveStyles: !0 }, ({ isHovered: e }) =>
+                return a.createElement(u.Z, { onClick: r, style: [k.outerContainer, d], withoutInteractiveStyles: !0 }, ({ isHovered: e }) =>
                     a.createElement(
                         a.Fragment,
                         null,
-                        a.createElement(m.D, { id: "news_article_sentiment", onFullyVisible: C, position: "top", testID: "news_article_sentiment" }),
+                        a.createElement(m.D, { id: "news_article_sentiment", onFullyVisible: _, position: "top", testID: "news_article_sentiment" }),
                         a.createElement(
                             l.Z,
                             { style: [k.container, e && r ? k.hoveredContainer : void 0, n, e && r && s] },
@@ -296,8 +296,8 @@
                                 a.createElement(
                                     l.Z,
                                     { style: k.scoreBarsContainer },
-                                    _.map((e, t) => {
-                                        const n = t === _.length - 1;
+                                    C.map((e, t) => {
+                                        const n = t === C.length - 1;
                                         return a.createElement(l.Z, { key: `sentiment-bar-score-${e.type}`, style: [k.scoreBar, { flex: n ? 1 : void 0, width: n ? void 0 : `${e.value}%`, borderTopEndRadius: n ? h : 0, borderBottomEndRadius: n ? h : 0 }] }, a.createElement(l.Z, { style: [k.scoreBarBackground, { backgroundColor: e.color }] }), e.value > f && a.createElement(i.ZP, { numberOfLines: 1, style: k.scoreBarText }, `${e.value}%`));
                                     }),
                                 ),
@@ -305,17 +305,17 @@
                             a.createElement(
                                 l.Z,
                                 { style: k.legendContainer },
-                                _.map((e) => a.createElement(l.Z, { style: k.legendItem }, a.createElement(i.ZP, { style: k.legendItemType }, e.type), a.createElement(l.Z, { style: [k.legendItemColor, { backgroundColor: e.color }] }))),
+                                C.map((e) => a.createElement(l.Z, { style: k.legendItem }, a.createElement(i.ZP, { style: k.legendItemType }, e.type), a.createElement(l.Z, { style: [k.legendItemColor, { backgroundColor: e.color }] }))),
                             ),
                         ),
                     ),
                 );
             }
-            const k = r.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
+            const k = r.default.create((e) => ({ outerContainer: { flex: 1 }, container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
             var w = n(807896),
-                _ = n(18205),
+                C = n(18205),
                 x = n(632908),
-                C = n(755484),
+                _ = n(755484),
                 v = n(725556),
                 E = n(103131),
                 S = n(735081),
@@ -406,12 +406,12 @@
                             D.Z,
                             { className: $ },
                             a.createElement(
-                                _.h,
+                                C.h,
                                 { height: p },
                                 a.createElement(
                                     x.w,
                                     { data: e, height: p, key: m },
-                                    a.createElement(C.q, { fillOpacity: 0.6, horizontal: !0, stroke: r.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
+                                    a.createElement(_.q, { fillOpacity: 0.6, horizontal: !0, stroke: r.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
                                     a.createElement(v.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: B.tick, tickFormatter: h, tickLine: !1, type: "number" }),
                                     a.createElement(E.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: B.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
                                     a.createElement(S.u, { content: a.createElement(L, null), cursor: { stroke: r.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
@@ -451,4 +451,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.NewsSentimentSidebar~loader.NewsSingleSentimentSidebar.2bccf53a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.NewsSentimentSidebar~loader.NewsSingleSentimentSidebar.6dd4990a.js.map

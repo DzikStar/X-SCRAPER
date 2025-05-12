@@ -186,7 +186,7 @@
             var oe = i(124964),
                 le = i(523561),
                 de = i(195560);
-            const he = (0, le.Z)({ loader: () => Promise.all([i.e("icons.2"), i.e("icons.13"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
+            const he = (0, le.Z)({ loader: () => Promise.all([i.e("icons.28"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
                 ce = S().c119dee8,
                 _e = S().cfd2f35e,
                 pe = S().bbf0afc8,
@@ -614,4 +614,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.6dc87fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.7fcd3d8a.js.map

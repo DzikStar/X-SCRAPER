@@ -4119,7 +4119,7 @@
                 }),
                 n("a551bf7e", "Потрібно відкріпити одну розмову, щоб закріпити іншу."),
                 n("a676a876", "Ласкаво просимо до ваших вхідних!"),
-                n("h52877aa", "Напишіть комусь, поділіться постами чи ще чимсь у приватній розмові між вами та іншими користувачами Х. "),
+                n("h52877aa", "Надішліть звістку чи поділіться постами у приватній розмові з іншими користувачами X. "),
                 n("efe8fda0", "Написати повідомлення"),
                 n("b9dae4f4", "Спробуйте інший пошуковий запит"),
                 n("e7fb2028", "Більше немає результатів"),
@@ -13225,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.6ad1883a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.305a8cba.js.map

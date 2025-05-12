@@ -285,7 +285,7 @@
                 n("edf7f57e", "बूस्ट किये गये जवाबों, विश्लेषण, विज्ञापन-मुक्त ब्राउज़िंग और बहुत कुछ के लिए सत्यापित हों. अभी अपना प्रोफ़ाइल अपग्रेड करें."),
                 n("ba920d68", "सत्यापन के साथ अपना प्रभाव बूस्ट करें"),
                 n("ib79d0c2", "VIP सुविधाएं अनलॉक करें: अपना खाता सत्यापित करें"),
-                n("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                n("c0d3bd82", "आपने X पर विज्ञापन दिया है, लेकिन आपके पास सत्यापित संगठन का सब्सक्रिप्शन नहीं है"),
                 n("d7836d1e", "$12,000 तक मुफ़्त विज्ञापन क्रेडिट, गोल्ड सत्यापन, VIP समर्थन और विकास के लिए टूल का सेट प्राप्त करने के लिए सब्सक्राइब करें."),
                 n("f528e369", function (e) {
                     return "अपना लेख लिखने के लिए " + e.tier + " को सब्सक्राइब करें";
@@ -1287,7 +1287,7 @@
                     return '**"' + e.query + '"** के लिए खोज रहे हैं';
                 }),
                 n("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return e.query + " के लिए " + e.url + " ब्राउज़ कर रहे हैं";
                 }),
                 n("acb9b845", function (e) {
                     return '**"' + e.query + '"** के लिए ' + e.url + " ब्राउज़ किया जा रहा है";
@@ -1296,7 +1296,7 @@
                     return "@" + e.username + " की पोस्ट खोज रहे हैं";
                 }),
                 n("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "@" + e.username + " की " + e.query + " के लिए पोस्ट खोज रहे हैं";
                 }),
                 n("bec7eb11", function (e) {
                     return "@" + e.username + ' की **"' + e.query + '"** के लिए पोस्ट खोज रहे हैं';
@@ -4152,7 +4152,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "अपना पसंदीदा खोज मोड चुनें"),
                 n("i330e54c", "उन्नत खोज और तर्क"),
-                n("fdcce108", "DeeperSearch"),
+                n("fdcce108", "गहन खोज"),
                 n("ac64b674", "विस्तृत खोज, अधिक तर्क"),
                 n("j22655f2", "कुछ भी पूछें"),
                 n("h0681e3e", "Grok से पूछें, हमारा AI सहायक"),
@@ -4326,10 +4326,10 @@
                 n("b52484b6", "खोज जारी है..."),
                 n("a4d9dbfa", "विचार"),
                 n("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return e.minutes + " मिनट " + e.seconds + " सेकंड के लिए विचार";
                 }),
                 n("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return e.seconds + " सेकंड के लिए विचार";
                 }),
                 n("d7cb5408", "प्रासंगिक वेब पेज"),
                 n("aa7c96bb", function (e) {
@@ -7060,14 +7060,14 @@
                 n("f0ad5cc8", "साल"),
                 n("a0dc6e4c", "फ़िलहाल उपलब्ध नहीं है"),
                 n("jd8b2e66", "सब्सक्राइब करें और भुगतान करें"),
-                n("ca784c0c", "Subscribe & pay with Apple"),
+                n("ca784c0c", "सब्सक्राइब करें और Apple से भुगतान करें"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                n("afd61c76", "Or, save up to 30%"),
+                n("afd61c76", "या 30% तक की बचत करें"),
                 n("i7fbacc4", "उपलब्ध सब्सक्रिप्शन स्तरों के बीच स्विच करें"),
                 n("c9cc122b", function (e) {
                     return e.feature + " " + e.title + " में शामिल है";
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.303b83ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.846eddca.js.map
