@@ -25,21 +25,21 @@
                 h = a(264922),
                 P = a(71620),
                 S = a(668214),
-                v = a(122743),
-                C = a(215929);
-            const w = (0, S.Z)()
-                    .propsFromState(() => ({ userClaimsFetchStatus: C.uD }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, P.zr)("APPLICATIONS"), clearConversations: v.H }))
+                C = a(122743),
+                v = a(215929);
+            const x = (0, S.Z)()
+                    .propsFromState(() => ({ userClaimsFetchStatus: v.uD }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, P.zr)("APPLICATIONS"), clearConversations: C.H }))
                     .withAnalytics({ page: "settings", section: "subscriptions" }),
                 k = u().i9028824,
-                x = u().i22beaa4,
-                I = u().e110a46c,
-                T = u().ebc4fda0,
+                w = u().i22beaa4,
+                T = u().e110a46c,
+                I = u().ebc4fda0,
                 z = u().c90fe716,
                 H = u().d96cf7ce,
                 D = r.Z,
-                B = { type: "Retry" },
-                L = { context: "GrokSettings" };
+                L = { type: "Retry" },
+                B = { context: "GrokSettings" };
             function A({ clearConversations: e, createLocalApiErrorHandler: t }) {
                 const { user_preferences: a } = s()(D, {}),
                     r = (0, l.useLocation)(),
@@ -53,7 +53,7 @@
                     null,
                     n.createElement(
                         h.Z,
-                        { location: r, screenType: "secondaryDetail", title: x },
+                        { location: r, screenType: "secondaryDetail", title: w },
                         n.createElement(i.Z, { testID: "xaiDataSharingSettings" }, n.createElement(E.Z, { userPreferences: a }), n.createElement(_.Z, { userPreferences: a }), n.createElement(y.Z, { userPreferences: a })),
                         p &&
                             n.createElement(m.Z, {
@@ -61,8 +61,8 @@
                                 confirmationSheetConfirmButtonLabel: H,
                                 confirmationSheetConfirmButtonType: "primary",
                                 confirmationSheetHeadline: z,
-                                confirmationSheetText: T,
-                                label: I,
+                                confirmationSheetText: I,
+                                label: T,
                                 onConfirmationSheetConfirm: () => {
                                     e().catch(() => t({ showToast: !0 }));
                                 },
@@ -72,12 +72,12 @@
             }
             const V = (e, t) => n.createElement(A, { clearConversations: e, createLocalApiErrorHandler: t });
             function F({ clearConversations: e, createLocalApiErrorHandler: t, userClaimsFetchStatus: a }) {
-                return n.createElement(f.N, { errorConfig: L, fallback: B }, n.createElement(b.B, { fallback: null }, n.createElement(p.Z, { "aria-label": k, fetchStatus: a, render: () => V(e, t) })));
+                return n.createElement(f.N, { errorConfig: B, fallback: L }, n.createElement(b.B, { fallback: null }, n.createElement(p.Z, { "aria-label": k, fetchStatus: a, render: () => V(e, t) })));
             }
-            const O = w(F);
+            const O = x(F);
         },
         68820: (e, t, a) => {
-            a.r(t), a.d(t, { Languages: () => L, default: () => A });
+            a.r(t), a.d(t, { Languages: () => B, default: () => A });
             var r = a(202784),
                 n = a(779610),
                 i = a(844685),
@@ -104,33 +104,33 @@
                 h = o().d495680e,
                 P = o().jc3fa0e2,
                 S = o().a4b69cbc,
-                v = o().c856bd00,
-                C = o().a4b69cbc,
-                w = o().cab61d58,
+                C = o().c856bd00,
+                v = o().a4b69cbc,
+                x = o().cab61d58,
                 k = o().dd93fafa,
-                x = o().bca1de4a,
-                I = o().c3aa76c4,
-                T = o().g099069c,
+                w = o().bca1de4a,
+                T = o().c3aa76c4,
+                I = o().g099069c,
                 z = o().c3aa76c4,
                 H = o().cf9ce876,
                 D = o().d4372cf4,
-                B = { page: "settings", section: "languages" };
-            function L(e) {
+                L = { page: "settings", section: "languages" };
+            function B(e) {
                 const { featureSwitches: t } = r.useContext(u.rC),
                     { createLocalApiErrorHandler: a, fetchAvailableLanguagesIfNeeded: l, fetchCountryNamesIfNeeded: o, languageCode: g, languageName: f, location: b } = e,
                     E = t.isTrue("onboarding_project_uls_enabled"),
-                    y = r.useMemo(() => (E ? r.createElement(n.Z, { description: D, label: H, link: "/i/flow/uls_content_and_app_language_selector" }) : r.createElement(r.Fragment, null, r.createElement(i.Z, { text: S }), r.createElement(c.Z, { description: v }), r.createElement(n.Z, { description: f, label: C, link: "/settings/language" }), r.createElement(s.Z, null), r.createElement(i.Z, { text: w }), r.createElement(c.Z, { description: k }), r.createElement(n.Z, { label: x, link: "/i/flow/language_selector" }), r.createElement(s.Z, null), r.createElement(i.Z, { text: I }), r.createElement(c.Z, { description: T }), r.createElement(n.Z, { label: z, link: "/settings/your_twitter_data/language" }))), [E, f]);
+                    y = r.useMemo(() => (E ? r.createElement(n.Z, { description: D, label: H, link: "/i/flow/uls_content_and_app_language_selector" }) : r.createElement(r.Fragment, null, r.createElement(i.Z, { text: S }), r.createElement(c.Z, { description: C }), r.createElement(n.Z, { description: f, label: v, link: "/settings/language" }), r.createElement(s.Z, null), r.createElement(i.Z, { text: x }), r.createElement(c.Z, { description: k }), r.createElement(n.Z, { label: w, link: "/i/flow/language_selector" }), r.createElement(s.Z, null), r.createElement(i.Z, { text: T }), r.createElement(c.Z, { description: I }), r.createElement(n.Z, { label: z, link: "/settings/your_twitter_data/language" }))), [E, f]);
                 return (
                     r.useEffect(() => {
                         g && o(g).catch(a()), l().catch(a());
                     }, [g, o, l, a]),
-                    r.createElement(p.nO, { namespace: B }, r.createElement(m.Z, null, r.createElement(d.Z, { location: b, screenType: "secondaryDetail", title: h }, r.createElement(c.Z, { description: P }), y)))
+                    r.createElement(p.nO, { namespace: L }, r.createElement(m.Z, null, r.createElement(d.Z, { location: b, screenType: "secondaryDetail", title: h }, r.createElement(c.Z, { description: P }), y)))
                 );
             }
-            const A = Z(L);
+            const A = Z(B);
         },
         110202: (e, t, a) => {
-            a.r(t), a.d(t, { LocationInformation: () => x, default: () => I });
+            a.r(t), a.d(t, { LocationInformation: () => w, default: () => T });
             var r = a(202784),
                 n = a(943401),
                 i = a(954110),
@@ -155,11 +155,11 @@
                 h = l().dd533318,
                 P = l().dc20d918,
                 S = l().af7d89e6,
-                v = l().d9138166,
-                C = l().fcb6a5b8,
-                w = l().j018f2a2,
+                C = l().d9138166,
+                v = l().fcb6a5b8,
+                x = l().j018f2a2,
                 k = { page: "settings", section: "location_information" };
-            function x({ allowLocationHistoryUseEnabled: e, createLocalApiErrorHandler: t, location: a, updateSettings: s, viewerUser: l }) {
+            function w({ allowLocationHistoryUseEnabled: e, createLocalApiErrorHandler: t, location: a, updateSettings: s, viewerUser: l }) {
                 const f = (0, d.Z)(),
                     { featureSwitches: b } = r.useContext(o.rC),
                     E = !!l?.birthdate && (0, m.k)(l.birthdate.year, l.birthdate.month, l.birthdate.day),
@@ -185,14 +185,14 @@
                                           f.scribe({ ...k, element: e, action: a ? "enable" : "disable" }), s({ [e]: a }).catch(t());
                                       },
                                   }),
-                            r.createElement(c.Z, { label: v, link: "/settings/your_twitter_data/locations" }),
-                            r.createElement(c.Z, { label: C, link: "/settings/location" }),
-                            r.createElement(c.Z, { label: w, link: "/settings/explore" }),
+                            r.createElement(c.Z, { label: C, link: "/settings/your_twitter_data/locations" }),
+                            r.createElement(c.Z, { label: v, link: "/settings/location" }),
+                            r.createElement(c.Z, { label: x, link: "/settings/explore" }),
                         ),
                     ),
                 );
             }
-            const I = _(x);
+            const T = _(w);
         },
         487443: (e, t, a) => {
             a.r(t), a.d(t, { ManageAffiliateBadges: () => J, ManagesAffiliatesQueryRequest: () => q, default: () => Y });
@@ -217,30 +217,30 @@
                 h = a(661810),
                 P = a(678773),
                 S = a(516951);
-            const v = p().ab8089ea,
-                C = n.createElement(_.ZP, { icon: n.createElement(P.default, { "aria-label": v }), testID: "reorder", type: "primaryText" }),
-                w = ({ affiliate: e, disabled: t, sortIndex: a }) => {
+            const C = p().ab8089ea,
+                v = n.createElement(_.ZP, { icon: n.createElement(P.default, { "aria-label": C }), testID: "reorder", type: "primaryText" }),
+                x = ({ affiliate: e, disabled: t, sortIndex: a }) => {
                     const { name: r, profile_image_url_https: c, screen_name: s } = e.affiliated_account_results.result?.legacy || {};
-                    return s && c && r && n.createElement(n.Fragment, null, n.createElement(Z.ZP, { "aria-checked": !0, avatarShape: "square", avatarSize: "xxLarge", avatarUri: c, decoration: void 0 !== a ? C : void 0, displayMode: "UserCompact", isDisabled: t, name: r, onCellClick: S.Z, screenName: s, userId: "", withInteractiveStyling: !0, withLink: !1 }), 0 === a && n.createElement(i.Z, { style: k.gutter }, n.createElement(h.Z, { spacing: "space2" })));
+                    return s && c && r && n.createElement(n.Fragment, null, n.createElement(Z.ZP, { "aria-checked": !0, avatarShape: "square", avatarSize: "xxLarge", avatarUri: c, decoration: void 0 !== a ? v : void 0, displayMode: "UserCompact", isDisabled: t, name: r, onCellClick: S.Z, screenName: s, userId: "", withInteractiveStyling: !0, withLink: !1 }), 0 === a && n.createElement(i.Z, { style: k.gutter }, n.createElement(h.Z, { spacing: "space2" })));
                 },
                 k = u.default.create((e) => ({ gutter: { marginHorizontal: e.spaces.space16 } })),
-                x = n.memo(w);
-            var I = a(716042),
-                T = a(731708),
+                w = n.memo(x);
+            var T = a(716042),
+                I = a(731708),
                 z = a(782642),
                 H = a(445250),
                 D = (a(571372), a(658236)),
-                B = a(351743),
-                L = a.n(B);
+                L = a(351743),
+                B = a.n(L);
             const A = D.Z,
                 V = p().e2eac0c4,
                 F = p().ef4602ec,
-                O = (0, I.W8)(x),
-                N = (0, I.JN)(({ isUpdatingAffiliates: e, items: t }) =>
+                O = (0, T.W8)(w),
+                N = (0, T.JN)(({ isUpdatingAffiliates: e, items: t }) =>
                     n.createElement(
                         i.Z,
                         null,
-                        n.createElement(T.ZP, { style: j.gutter, weight: "medium" }, V),
+                        n.createElement(I.ZP, { style: j.gutter, weight: "medium" }, V),
                         t.map((t, a) => n.createElement(O, { affiliate: t, disabled: e, index: a, key: a, sortIndex: a })),
                     ),
                 ),
@@ -249,7 +249,7 @@
                         r = (0, b.z)(),
                         i = (0, z.p)(),
                         [c, s] = (() => {
-                            const [e, t] = L()(A);
+                            const [e, t] = B()(A);
                             return [
                                 n.useCallback(
                                     (t) =>
@@ -284,8 +284,8 @@
                 M = n.memo(R),
                 G = p().ce70c590,
                 U = p().a49e1b2a,
-                Q = p().e2daf93c,
-                W = { context: "MANAGE_AFFILIATE_SETTING" },
+                W = p().e2daf93c,
+                Q = { context: "MANAGE_AFFILIATE_SETTING" },
                 q = r.Z,
                 $ = (0, f.z)(q, { errorConfig: { context: "MANAGE_AFFILIATES_SETTING_CONTEXT" } });
             function J() {
@@ -301,17 +301,17 @@
                     m = n.useCallback(({ data: e, fetchStatus: t, retry: a }) => {
                         if (t === E.ZP.LOADED) {
                             const { affiliations: t } = e?.managed_affiliations || {};
-                            return n.createElement(i.Z, { style: X.container }, n.createElement(s.Z, { subtext: Q, text: U }), 1 === t.length ? n.createElement(x, { affiliate: t[0] }) : n.createElement(M, { affiliations: t }));
+                            return n.createElement(i.Z, { style: X.container }, n.createElement(s.Z, { subtext: W, text: U }), 1 === t.length ? n.createElement(w, { affiliate: t[0] }) : n.createElement(M, { affiliations: t }));
                         }
                         return t === E.ZP.FAILED ? n.createElement(l.Z, { onRequestRetry: a }) : n.createElement(o.Z, null);
                     }, []);
-                return n.createElement(d.Z, null, n.createElement(g.H, { errorConfig: W }, n.createElement(y.Z, { location: t, onBackClick: u, title: G }, n.createElement($, { fetchPolicy: "network-only", render: m, variables: {} }))));
+                return n.createElement(d.Z, null, n.createElement(g.H, { errorConfig: Q }, n.createElement(y.Z, { location: t, onBackClick: u, title: G }, n.createElement($, { fetchPolicy: "network-only", render: m, variables: {} }))));
             }
             const X = u.default.create((e) => ({ container: { gap: 8 } })),
                 Y = n.memo((0, b.Z)(J, { page: "settings", section: "affiliations" }));
         },
         254789: (e, t, a) => {
-            a.d(t, { Z: () => $ });
+            a.d(t, { Z: () => X });
             var r = a(202784),
                 n = a(325686),
                 i = a(688715),
@@ -333,41 +333,49 @@
                 h = a(952793),
                 P = a(685731),
                 S = a(137070),
-                v = a(293084);
-            const C = o().edbb700f,
+                C = a(293084);
+            const v = o().a991d9a3,
+                x = o().edbb700f,
+                k = o().e3f9d219,
                 w = o().ba2e82a1,
-                k = o().e9884540,
-                x = o().bfb879aa,
-                I = ({ subscription: e }) => {
-                    const t = (0, S.Z)()[e?.product?.rest_id ? f.v5.premium[e?.product?.rest_id] : null].hashed,
-                        a = (0, E.gS)(e, "Discount", { status: "active" }),
-                        i = (0, E.gS)(e, "Discount", { status: "pending" }),
-                        s = (0, v.Z)(t).web_subscription_product_details,
-                        l = (0, h.hC)("subscriptions_management_use_active_price"),
-                        o = (0, P.Gi)(e.charge_interval, l ? e.prices : s?.prices),
-                        u = o ? (0, P.d3)(o, !1, e) : "",
-                        m = o ? (0, P.d3)(o, !1, e, !0, !1) : "";
-                    return r.createElement(n.Z, null, a ? r.createElement(n.Z, { style: z.activeDiscountContainer, testID: "active_discount_info" }, r.createElement(n.Z, { style: z.discountTitleRow }, r.createElement(Z.default, { style: z.activeDiscountIcon }), r.createElement(c.ZP, { color: "green900", size: "subtext2", weight: "medium" }, k)), r.createElement(c.ZP, { color: "green900", size: "subtext1", style: z.priceLabel, testID: "stripe-price-info" }, u)) : r.createElement(c.ZP, { color: "gray1100", size: "subtext1", style: z.priceLabel, testID: "stripe-price-info" }, u), i ? r.createElement(n.Z, { style: z.pendingDiscountContainer, testID: "pending_discount_info" }, r.createElement(n.Z, { style: z.discountTitleRow }, r.createElement(Z.default, { style: z.pendingDiscountIcon }), r.createElement(c.ZP, { color: "gray900", size: "subtext2", weight: "medium" }, x)), r.createElement(c.ZP, { color: "gray900", size: "subtext1", style: z.priceLabel, testID: "stripe-price-info" }, m), e.next_billing_at?.time_in_millis ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, C({ date: w(new Date(parseInt(e.next_billing_at?.time_in_millis, 10))) })) : null) : null);
+                T = o().e9884540,
+                I = o().bfb879aa,
+                z = ({ subscription: e }) => {
+                    const t = (0, h.hC)("subscriptions_management_billing_label_enabled"),
+                        a = (0, S.Z)()[e?.product?.rest_id ? f.v5.premium[e?.product?.rest_id] : null].hashed,
+                        i = (0, E.gS)(e, "Discount", { status: "active" }),
+                        s = (0, E.gS)(e, "Discount", { status: "pending" }),
+                        l = (0, C.Z)(a).web_subscription_product_details,
+                        o = (0, h.hC)("subscriptions_management_use_active_price"),
+                        u = (0, P.Gi)(e.charge_interval, o ? e.prices : l?.prices),
+                        m = w(new Date(parseInt(e.next_billing_at?.time_in_millis, 10))),
+                        p = u ? (0, P.d3)(u, !1, e) : "",
+                        d = u ? (0, P.d3)(u, !1, e, !0, !1) : "",
+                        g = r.useMemo(() => {
+                            let t;
+                            if (e.next_billing_at?.time_in_millis) return "Expire" === e.state ? (t = k({ date: m })) : s || (t = v({ date: m })), r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, t);
+                        }, [s, e, m]);
+                    return r.createElement(n.Z, null, i ? r.createElement(n.Z, { style: D.activeDiscountContainer, testID: "active_discount_info" }, r.createElement(n.Z, { style: D.discountTitleRow }, r.createElement(Z.default, { style: D.activeDiscountIcon }), r.createElement(c.ZP, { color: "green900", size: "subtext2", weight: "medium" }, T)), r.createElement(c.ZP, { color: "green900", size: "subtext1", style: D.priceLabel, testID: "stripe-price-info" }, p)) : r.createElement(c.ZP, { color: "gray1100", size: "subtext1", style: D.priceLabel, testID: "stripe-price-info" }, p), s ? r.createElement(n.Z, { style: D.pendingDiscountContainer, testID: "pending_discount_info" }, r.createElement(n.Z, { style: D.discountTitleRow }, r.createElement(Z.default, { style: D.pendingDiscountIcon }), r.createElement(c.ZP, { color: "gray900", size: "subtext2", weight: "medium" }, I)), r.createElement(c.ZP, { color: "gray900", size: "subtext1", style: D.priceLabel, testID: "stripe-price-info" }, d), e.next_billing_at?.time_in_millis ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, x({ date: m })) : null) : null, t ? g : null);
                 },
-                T = (e) => r.createElement(g.H, { errorConfig: { context: "manage-subscription-price-info" } }, r.createElement(I, e)),
-                z = s.default.create((e) => ({ priceLabel: { marginBottom: e.spaces.space8 }, activeDiscountContainer: { backgroundColor: e.colors.green100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, gap: e.spaces.space8, marginTop: e.spaces.space8 }, pendingDiscountContainer: { borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, backgroundColor: e.colors.gray100, borderStyle: "dashed", borderRadius: e.borderRadii.medium, padding: e.spaces.space8, gap: e.spaces.space8, marginTop: e.spaces.space8 }, activeDiscountIcon: { color: e.colors.green900 }, pendingDiscountIcon: { color: e.colors.gray900 }, discountTitleRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center", marginBottom: e.spaces.space4 } })),
-                H = o().e122fb3f,
-                D = o().be103b84,
-                B = o().ace43720,
-                L = o().ba2e82a1,
-                A = o().c8f18aa4,
-                V = o().a341d1f7,
-                F = o().e4aaf0f8,
-                O = o().e5170220,
-                N = o().j6d6b66e,
-                R = o().fae1751f,
-                j = o().fecebd4c,
-                M = o().h201c4c2,
-                G = o().i8385a2c,
-                U = o().h80834de,
-                Q = o().baf97716,
-                W = o().ae864b69,
-                q = ({ subscription: e, viewer: t }) => {
+                H = (e) => r.createElement(g.H, { errorConfig: { context: "manage-subscription-price-info" } }, r.createElement(z, e)),
+                D = s.default.create((e) => ({ priceLabel: { marginBottom: e.spaces.space8 }, activeDiscountContainer: { backgroundColor: e.colors.green100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, gap: e.spaces.space8, marginVertical: e.spaces.space8 }, pendingDiscountContainer: { borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, backgroundColor: e.colors.gray100, borderStyle: "dashed", borderRadius: e.borderRadii.medium, padding: e.spaces.space8, gap: e.spaces.space8, marginTop: e.spaces.space8 }, activeDiscountIcon: { color: e.colors.green900 }, pendingDiscountIcon: { color: e.colors.gray900 }, discountTitleRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center", marginBottom: e.spaces.space4 } })),
+                L = o().e122fb3f,
+                B = o().be103b84,
+                A = o().ace43720,
+                V = o().ba2e82a1,
+                F = o().c8f18aa4,
+                O = o().a341d1f7,
+                N = o().e4aaf0f8,
+                R = o().e5170220,
+                j = o().j6d6b66e,
+                M = o().fae1751f,
+                G = o().fecebd4c,
+                U = o().h201c4c2,
+                W = o().i8385a2c,
+                Q = o().h80834de,
+                q = o().baf97716,
+                $ = o().ae864b69,
+                J = ({ subscription: e, viewer: t }) => {
                     const { label: a } = (0, b.Z)(),
                         { featureSwitches: s, userClaims: l } = (0, d.QZ)(),
                         [o, , g] = (0, _.Z)(e?.product?.rest_id || "", !0),
@@ -375,19 +383,19 @@
                         h = g ? f.St[f.v5.premium[g]] : null,
                         P = (0, E.gS)(e, "FreeTrial", { status: "active" }),
                         S = e?.payment_source === y.H.Twitter,
-                        v = e?.payment_source === y.H.Ads,
-                        C = e?.payment_source === y.H.Gift,
-                        w = !!e?.payment_source && e?.payment_source !== y.H.Stripe && l.isAnyPremiumSubscriber(),
+                        C = e?.payment_source === y.H.Ads,
+                        v = e?.payment_source === y.H.Gift,
+                        x = !!e?.payment_source && e?.payment_source !== y.H.Stripe && l.isAnyPremiumSubscriber(),
                         k = e?.payment_source === y.H.TPay || e?.payment_source === y.H.Twitter,
-                        x = s.getStringValue("subscriptions_gifting_help_url") || (0, i.ju)("https://help.x.com/forms/paid-features/general"),
-                        I = r.useMemo(() => {
-                            if (e?.payment_source && e?.payment_source !== y.H.Stripe) return e?.payment_source === y.H.AppleAppStore ? M : e?.payment_source === y.H.GooglePlay ? G : U;
+                        w = s.getStringValue("subscriptions_gifting_help_url") || (0, i.ju)("https://help.x.com/forms/paid-features/general"),
+                        T = r.useMemo(() => {
+                            if (e?.payment_source && e?.payment_source !== y.H.Stripe) return e?.payment_source === y.H.AppleAppStore ? U : e?.payment_source === y.H.GooglePlay ? W : Q;
                         }, [e]),
-                        z = r.useCallback(() => (S ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, F, " ", r.createElement(c.ZP, { link: "https://help.x.com/forms/paid-features/general" }, j)) : v ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, O) : C ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, N, " ", r.createElement(c.ZP, { link: x }, j)) : r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, R({ mobilePlatform: I }))), [x, v, S, C, I]);
-                    return r.createElement(n.Z, { style: J.container }, r.createElement(n.Z, { style: J.card }, r.createElement(n.Z, { style: J.header }, r.createElement(c.ZP, { size: "headline2", weight: "medium" }, a), r.createElement(n.Z, { bold: !0, style: J.label }, "Expire" === e?.state && e.payment_source !== y.H.Gift ? r.createElement(u.default, { style: J.expiringIcon }) : r.createElement(m.default, { style: J.activeIcon }), r.createElement(c.ZP, { align: "center", selectable: !1, size: "body", weight: "medium" }, "Expire" === e?.state && e.payment_source !== y.H.Gift ? B : D))), "Stripe" === e?.payment_source ? r.createElement(T, { subscription: e }) : null, Z ? r.createElement(n.Z, { style: J.callout }, r.createElement(p.default, null), r.createElement(c.ZP, null, W({ tierName: h, date: L(new Date(parseInt(e?.next_billing_at?.time_in_millis, 10))) }))) : null, "Expire" === e?.state ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, Q) : null, w || k ? z() : null, P ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, H({ endDate: L(new Date(parseInt(P?.ends_at_msec, 10))) })) : null, l.isVerifiedOrgAffiliate() ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, V({ organization: t?.highlightedLabel?.description })) : l.isVerifiedOrg() || l.isLegacyVerifiedOrg() ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, A) : null));
+                        I = r.useCallback(() => (S ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, N, " ", r.createElement(c.ZP, { link: "https://help.x.com/forms/paid-features/general" }, G)) : C ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, R) : v ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, j, " ", r.createElement(c.ZP, { link: w }, G)) : r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, M({ mobilePlatform: T }))), [w, C, S, v, T]);
+                    return r.createElement(n.Z, { style: Y.container }, r.createElement(n.Z, { style: Y.card }, r.createElement(n.Z, { style: Y.header }, r.createElement(c.ZP, { size: "headline2", weight: "medium" }, a), r.createElement(n.Z, { bold: !0, style: Y.label }, "Expire" === e?.state && e.payment_source !== y.H.Gift ? r.createElement(u.default, { style: Y.expiringIcon }) : r.createElement(m.default, { style: Y.activeIcon }), r.createElement(c.ZP, { align: "center", selectable: !1, size: "body", weight: "medium" }, "Expire" === e?.state && e.payment_source !== y.H.Gift ? A : B))), "Stripe" === e?.payment_source ? r.createElement(H, { subscription: e }) : null, Z ? r.createElement(n.Z, { style: Y.callout }, r.createElement(p.default, { style: Y.iconClock }), r.createElement(c.ZP, { size: "subtext1" }, $({ tierName: h, date: V(new Date(parseInt(e?.next_billing_at?.time_in_millis, 10))) }))) : null, "Expire" === e?.state ? r.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Y.expiringSubscriptionLabel }, q) : null, x || k ? I() : null, P ? r.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Y.freeTrialLabel }, L({ endDate: V(new Date(parseInt(P?.ends_at_msec, 10))) })) : null, l.isVerifiedOrgAffiliate() ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, O({ organization: t?.highlightedLabel?.description })) : l.isVerifiedOrg() || l.isLegacyVerifiedOrg() ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, F) : null));
                 },
-                $ = (e) => r.createElement(g.H, { errorConfig: { context: "stripe-active-subscription-info" } }, r.createElement(q, e)),
-                J = s.default.create((e) => ({ container: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterHorizontal }, card: { borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray50, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterHorizontal }, label: { flexDirection: "row", minHeight: e.spaces.space32, alignItems: "center", flexShrink: 1 }, activeIcon: { marginEnd: e.spaces.space4, color: e.colors.primary }, expiringIcon: { marginEnd: e.spaces.space4 }, header: { justifyContent: "space-between", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space4 }, callout: { flexDirection: "row", padding: e.spaces.space8, backgroundColor: e.colors.blue50, borderRadius: e.borderRadii.small, gap: e.spaces.space8, alignItems: "center" } }));
+                X = (e) => r.createElement(g.H, { errorConfig: { context: "stripe-active-subscription-info" } }, r.createElement(J, e)),
+                Y = s.default.create((e) => ({ container: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterHorizontal }, card: { borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray50, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterHorizontal }, label: { flexDirection: "row", minHeight: e.spaces.space32, alignItems: "center", flexShrink: 1 }, activeIcon: { marginEnd: e.spaces.space4, color: e.colors.primary }, expiringIcon: { marginEnd: e.spaces.space4 }, header: { justifyContent: "space-between", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space4 }, callout: { flexDirection: "row", padding: e.spaces.space8, backgroundColor: e.colors.blue50, borderRadius: e.borderRadii.small, gap: e.spaces.space8, alignItems: "center", marginTop: e.spaces.space8 }, freeTrialLabel: { marginTop: e.spaces.space8 }, expiringSubscriptionLabel: { marginTop: e.spaces.space8 }, iconClock: { color: e.colors.text, minWidth: 16 } }));
         },
         386255: (e, t, a) => {
             a.r(t), a.d(t, { ManageSubscriptionScreen: () => N, default: () => R });
@@ -412,21 +420,21 @@
                 h = a(811574),
                 P = a(548797),
                 S = a(643242),
-                v = a(275158),
-                C = a(264922),
-                w = a(254789),
+                C = a(275158),
+                v = a(264922),
+                x = a(254789),
                 k = a(71620),
-                x = a(668214),
-                I = a(818581),
-                T = a(919022);
-            const z = (0, x.Z)()
-                    .propsFromState(() => ({ viewerUser: T.ZP.selectViewerUser, userPreferences: I.kQ }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("AFFILIATES_SCREEN"), fetchUserPreferencesIfNeeded: I.xQ }))
+                w = a(668214),
+                T = a(818581),
+                I = a(919022);
+            const z = (0, w.Z)()
+                    .propsFromState(() => ({ viewerUser: I.ZP.selectViewerUser, userPreferences: T.kQ }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("AFFILIATES_SCREEN"), fetchUserPreferencesIfNeeded: T.xQ }))
                     .withAnalytics({ page: "subscriptions", section: "management" }),
                 H = p().ib35705e,
                 D = p().de9f111a,
-                B = p().d5839f9e,
-                L = p().a840c22c,
+                L = p().d5839f9e,
+                B = p().a840c22c,
                 A = p().aaa798fc,
                 V = p().e31456f8,
                 F = p().a7c4ecea,
@@ -436,17 +444,17 @@
                     p = (0, E.hC)("subscriptions_management_query_active_price"),
                     b = (0, h.Z)({ fetchPrices: p }),
                     k = (0, Z.R)(b),
-                    x = (0, c.useLocation)(),
-                    { userClaims: I } = n.useContext(g.rC),
-                    T = k?.payment_source,
-                    z = (0, y.Z)({ returnUrl: v.d9, originProduct: "TwitterBlue" });
+                    w = (0, c.useLocation)(),
+                    { userClaims: T } = n.useContext(g.rC),
+                    I = k?.payment_source,
+                    z = (0, y.Z)({ returnUrl: C.d9, originProduct: "TwitterBlue" });
                 n.useEffect(() => {
                     u().catch(a({ ...(0, _.d)(), showToast: !0 }));
                 }),
                     n.useEffect(() => {
                         t.scribe({ action: "impression" });
                     }, [t]);
-                const N = I.isAnyPremiumSubscriber(),
+                const N = T.isAnyPremiumSubscriber(),
                     R = (0, P.gS)(k, "FreeTrial", { status: "active" }),
                     M = n.useCallback(() => {
                         t.scribe({ component: "expiring-sub-manage-subscription", action: "click" }), z?.();
@@ -455,20 +463,20 @@
                     f.Z,
                     null,
                     n.createElement(
-                        C.Z,
-                        { location: x, title: H },
-                        N ? n.createElement(w.Z, { subscription: k, viewer: m }) : null,
+                        v.Z,
+                        { location: w, title: H },
+                        N ? n.createElement(x.Z, { subscription: k, viewer: m }) : null,
                         n.createElement(
                             i.Z,
                             null,
                             (() => {
-                                const e = !!T && T === S.H.Stripe && N,
+                                const e = !!I && I === S.H.Stripe && N,
                                     t = "Expire" === k?.state,
                                     a = ["premium-basic", "premium-basic-test", "premium-basic-sandbox", "rogue-one-prod-2", "rogue-one-test-2-1", "rogue-one-sandbox-2"],
                                     c = ({ description: e, isExternal: t, label: a, ...c }) => n.createElement(s.Z, (0, r.Z)({}, c, { disabled: !z, style: j.manageSubscriptionInteraction }), n.createElement(l.Z, null, n.createElement(i.Z, { style: j.manageSubscriptionSection }, n.createElement(i.Z, { style: j.manageSubscriptionSectionBody }, n.createElement(o.ZP, { color: "blue500", weight: "medium" }, a), n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, e)), t ? n.createElement(d.default, { style: j.goToSubscriptionPortalIcon }) : null)));
                                 if (e) {
                                     const e = a.find((e) => e === k?.product?.rest_id) ? { title: A, desc: F } : { title: V, desc: O };
-                                    return n.createElement(n.Fragment, null, R || t ? null : n.createElement(c, { description: e.desc, label: e.title, link: { pathname: "/i/premium_tier_switch", state: { product: "BlueVerifiedPlus" } }, role: "button", testID: "tier-switch-link" }), t ? null : n.createElement(c, { description: B, label: I.isVerifiedOrg() || I.isVerifiedOrgAffiliate() ? L : D, link: "/settings/subscription/manage" }), t ? n.createElement(c, { description: B, isExternal: !0, label: D, onClick: M }) : null);
+                                    return n.createElement(n.Fragment, null, R || t ? null : n.createElement(c, { description: e.desc, label: e.title, link: { pathname: "/i/premium_tier_switch", state: { product: "BlueVerifiedPlus" } }, role: "button", testID: "tier-switch-link" }), t ? null : n.createElement(c, { description: L, label: T.isVerifiedOrg() || T.isVerifiedOrgAffiliate() ? B : D, link: "/settings/subscription/manage" }), t ? n.createElement(c, { description: L, isExternal: !0, label: D, onClick: M }) : null);
                                 }
                                 return null;
                             })(),
@@ -502,8 +510,8 @@
                 h = a(674132),
                 P = a.n(h),
                 S = a(980407),
-                v = a(725405);
-            const C = [
+                C = a(725405);
+            const v = [
                     { label: P().iccac88e, subscriptions: { BlueVerified: !0 } },
                     { label: P().d7a124d8, subscriptions: { BlueVerifiedPlus: !0 } },
                     { label: P().d2d22c36, subscriptions: { BlueVerifiedPlus: !0 } },
@@ -514,12 +522,12 @@
                     { label: P().fb3c7168, subscriptions: { PremiumBasic: !0, BlueVerifiedPlus: !0, BlueVerified: !0 } },
                     { label: P().b346bc12, subscriptions: { BlueVerifiedPlus: !0, BlueVerified: !0 } },
                 ],
-                w = P().af66a072,
+                x = P().af66a072,
                 k = P().a092f1ba,
-                x = P().g96c7f48,
-                I = ({ activeProductCategory: e, activeSubscription: t, churnPreventionOfferAvailable: a, goToStripePortal: n, pendingDiscount: i, setCurrentFlowStep: c }) => {
+                w = P().g96c7f48,
+                T = ({ activeProductCategory: e, activeSubscription: t, churnPreventionOfferAvailable: a, goToStripePortal: n, pendingDiscount: i, setCurrentFlowStep: c }) => {
                     const s = (0, E.useHistory)(),
-                        l = (0, v.Z)(),
+                        l = (0, C.Z)(),
                         o = !!(0, u.gS)(t, "FreeTrial", { status: "active" }),
                         m = r.useCallback(() => {
                             l.scribe({ action: "click", element: "change_tier" });
@@ -532,28 +540,28 @@
                         { backButtonType: "back", hideBackButton: !1, history: s, onBackClick: () => c("OptionsStep") },
                         r.createElement(
                             b.Z,
-                            { style: T.root },
+                            { style: I.root },
                             r.createElement(
                                 b.Z,
-                                { style: T.content },
-                                r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, w),
+                                { style: I.content },
+                                r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, x),
                                 r.createElement(
                                     b.Z,
-                                    { role: "list", style: T.list },
-                                    C.filter(({ subscriptions: t }) => t.hasOwnProperty(e)).map(({ label: e }) => r.createElement(y.ZP, { key: e, role: "listitem", style: T.listItem }, e)),
+                                    { role: "list", style: I.list },
+                                    v.filter(({ subscriptions: t }) => t.hasOwnProperty(e)).map(({ label: e }) => r.createElement(y.ZP, { key: e, role: "listitem", style: I.listItem }, e)),
                                 ),
-                                o ? null : r.createElement(_.ZP, { link: "/i/premium_tier_switch", onPress: m, size: "xLarge", style: T.button, type: "primaryOutlined" }, x),
-                                r.createElement(_.ZP, { disabled: !n, onPress: p, size: "xLarge", style: T.button, type: "destructiveFilled" }, k),
+                                o ? null : r.createElement(_.ZP, { link: "/i/premium_tier_switch", onPress: m, size: "xLarge", style: I.button, type: "primaryOutlined" }, w),
+                                r.createElement(_.ZP, { disabled: !n, onPress: p, size: "xLarge", style: I.button, type: "destructiveFilled" }, k),
                             ),
                         ),
                     );
                 },
-                T = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, list: { marginVertical: e.spaces.space20 }, listItem: { display: "list-item", listStyle: "disc", listStylePosition: "inside", marginVertical: e.spaces.space8 } }));
+                I = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, list: { marginVertical: e.spaces.space20 }, listItem: { display: "list-item", listStyle: "disc", listStylePosition: "inside", marginVertical: e.spaces.space8 } }));
             var z = a(40610),
                 H = a(167630),
                 D = a(913973),
-                B = a(125498),
-                L = a(199087),
+                L = a(125498),
+                B = a(199087),
                 A = a(336629);
             const V = P().je8143e1,
                 F = P().j5847735,
@@ -564,10 +572,10 @@
                 M = P().f1bc6309,
                 G = P().ef4602ec,
                 U = P().fdb7b52a,
-                Q = ({ activeProductCategory: e, activeSubscription: t, activeTierPrice: a, goToStripePortal: n, offer: c, setCurrentFlowStep: l }) => {
+                W = ({ activeProductCategory: e, activeSubscription: t, activeTierPrice: a, goToStripePortal: n, offer: c, setCurrentFlowStep: l }) => {
                     const o = (0, E.useHistory)(),
-                        u = (0, v.Z)(),
-                        [m, p] = (0, L.Z)(),
+                        u = (0, C.Z)(),
+                        [m, p] = (0, B.Z)(),
                         [d, g] = r.useState(!1),
                         f = (0, i.hC)("subscriptions_marketing_page_include_tax_enabled");
                     r.useEffect(() => {
@@ -577,11 +585,11 @@
                             u.scribe({ action: "click", component: "churn_prevent_offer", element: "continue_to_cancel" }), n && n();
                         }, [u, n]),
                         h = s.St[e],
-                        C = r.useMemo(() => {
+                        v = r.useMemo(() => {
                             const e = { percentage: c.metadata.percent_off, productName: h, duration: c.metadata.duration_in_interval };
                             return "Month" === a?.charge_interval ? V(e) : F(e);
                         }, [a, c, h]),
-                        w = r.useCallback(() => {
+                        x = r.useCallback(() => {
                             g(!1),
                                 u.scribe({ component: "churn_prevent_offer", element: "redeem_button", action: "click" }),
                                 m({ offerProgramId: c.program_id, productId: t?.product?.rest_id ?? "", redeemOfferType: "CancellationRetention" })
@@ -597,18 +605,18 @@
                         { backButtonType: "back", hideBackButton: !1, history: o, onBackClick: () => l("CancelStep") },
                         r.createElement(
                             b.Z,
-                            { style: W.root },
+                            { style: Q.root },
                             r.createElement(
                                 b.Z,
-                                { style: W.content },
-                                r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, C),
-                                r.createElement(y.ZP, { style: W.description }, R({ productName: h })),
+                                { style: Q.content },
+                                r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, v),
+                                r.createElement(y.ZP, { style: Q.description }, R({ productName: h })),
                                 r.createElement(
                                     b.Z,
-                                    { style: W.list },
+                                    { style: Q.list },
                                     r.createElement(
                                         b.Z,
-                                        { style: W.listItem },
+                                        { style: Q.listItem },
                                         r.createElement(D.default, null),
                                         r.createElement(
                                             y.ZP,
@@ -622,18 +630,18 @@
                                             })(a, c, f),
                                         ),
                                     ),
-                                    r.createElement(b.Z, { style: W.listItem }, r.createElement(D.default, null), r.createElement(y.ZP, null, j)),
-                                    r.createElement(b.Z, { style: W.listItem }, r.createElement(D.default, null), r.createElement(y.ZP, null, M({ productName: h }))),
-                                    r.createElement(y.ZP, { style: W.disclaimer }, U),
+                                    r.createElement(b.Z, { style: Q.listItem }, r.createElement(D.default, null), r.createElement(y.ZP, null, j)),
+                                    r.createElement(b.Z, { style: Q.listItem }, r.createElement(D.default, null), r.createElement(y.ZP, null, M({ productName: h }))),
+                                    r.createElement(y.ZP, { style: Q.disclaimer }, U),
                                 ),
                                 d ? r.createElement(z.Z.Danger, { text: G }) : null,
-                                r.createElement(_.ZP, { disabled: p, icon: p ? void 0 : r.createElement(B.default, null), onPress: w, size: "xLarge", style: W.button, type: "primaryOutlined" }, p ? r.createElement(H.Z, null) : N),
-                                r.createElement(_.ZP, { disabled: !n, onPress: Z, size: "xLarge", style: W.button, type: "destructiveFilled" }, O),
+                                r.createElement(_.ZP, { disabled: p, icon: p ? void 0 : r.createElement(L.default, null), onPress: x, size: "xLarge", style: Q.button, type: "primaryOutlined" }, p ? r.createElement(H.Z, null) : N),
+                                r.createElement(_.ZP, { disabled: !n, onPress: Z, size: "xLarge", style: Q.button, type: "destructiveFilled" }, O),
                             ),
                         ),
                     );
                 },
-                W = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, list: { gap: e.spaces.space12, marginBottom: e.spaces.space20 }, listItem: { flexDirection: "row", gap: e.spaces.space4 }, description: { marginVertical: e.spaces.space16 }, disclaimer: { marginTop: e.spaces.space16 } }));
+                Q = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, list: { gap: e.spaces.space12, marginBottom: e.spaces.space20 }, listItem: { flexDirection: "row", gap: e.spaces.space4 }, description: { marginVertical: e.spaces.space16 }, disclaimer: { marginTop: e.spaces.space16 } }));
             a(136728);
             const q = P().c6150942,
                 $ = P().fdb7b52a,
@@ -655,7 +663,7 @@
                 ne = ({ goToStripePortal: e, setCurrentFlowStep: t }) => {
                     const a = (0, E.useHistory)(),
                         [n, i] = r.useState(),
-                        c = (0, v.Z)(),
+                        c = (0, C.Z)(),
                         s = r.useCallback((e, t) => {
                             i(t);
                         }, []),
@@ -682,7 +690,7 @@
                 me = P().a092f1ba,
                 pe = ({ activeSubscription: e, goToStripePortal: t, pendingDiscount: a }) => {
                     const n = (0, E.useHistory)(),
-                        i = (0, v.Z)(),
+                        i = (0, C.Z)(),
                         c = (0, ce.v9)(se.ZP.selectViewerUser),
                         s = r.useCallback(() => {
                             i.scribe({ action: "click", component: "pending_offer_callout", element: "continue_to_cancel" }), t && t();
@@ -701,27 +709,27 @@
                     h = a[_].hashed,
                     P = (0, f.Z)(h, { moment: "CancelSubscription" }).web_subscription_product_details,
                     S = (0, i.hC)("subscriptions_management_use_active_price"),
-                    v = P ? (0, m.Gi)(y?.charge_interval, y?.prices) : null,
-                    C = P ? (0, m.Gi)(y?.charge_interval, P.prices) : null,
-                    w = S ? v : C,
-                    k = C ? (0, m.fS)(C, !0, !1) : null,
-                    x = !!k && t.isTrue("subscriptions_offers_churn_prevention_enabled"),
-                    [T, z] = r.useState("OptionsStep"),
+                    C = P ? (0, m.Gi)(y?.charge_interval, y?.prices) : null,
+                    v = P ? (0, m.Gi)(y?.charge_interval, P.prices) : null,
+                    x = S ? C : v,
+                    k = v ? (0, m.fS)(v, !0, !1) : null,
+                    w = !!k && t.isTrue("subscriptions_offers_churn_prevention_enabled"),
+                    [I, z] = r.useState("OptionsStep"),
                     H = (0, c.Z)({ returnUrl: d.d9, originProduct: "TwitterBlue" });
                 if (!_ || !y) return null;
                 return r.createElement(
                     p.nO,
                     { namespace: { page: "subscriptions_manage" } },
                     (() => {
-                        switch (T) {
+                        switch (I) {
                             case "OptionsStep":
                                 return r.createElement(ne, { goToStripePortal: H, setCurrentFlowStep: z });
                             case "CancelStep":
-                                return r.createElement(I, { activeProductCategory: _, activeSubscription: y, activeTierPrice: w, churnPreventionOfferAvailable: x, goToStripePortal: H, pendingDiscount: Z, setCurrentFlowStep: z });
+                                return r.createElement(T, { activeProductCategory: _, activeSubscription: y, activeTierPrice: x, churnPreventionOfferAvailable: w, goToStripePortal: H, pendingDiscount: Z, setCurrentFlowStep: z });
                             case "PendingOfferStep":
                                 return r.createElement(pe, { activeSubscription: y, goToStripePortal: H, pendingDiscount: Z });
                             case "OfferStep":
-                                return k && w ? r.createElement(Q, { activeProductCategory: _, activeSubscription: y, activeTierPrice: w, goToStripePortal: H, offer: k, setCurrentFlowStep: z }) : null;
+                                return k && x ? r.createElement(W, { activeProductCategory: _, activeSubscription: y, activeTierPrice: x, goToStripePortal: H, offer: k, setCurrentFlowStep: z }) : null;
                             case "OfferSuccessStep":
                                 return r.createElement(X, null);
                             default:
@@ -733,4 +741,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.a9298b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.0df0334a.js.map

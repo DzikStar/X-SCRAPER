@@ -2822,8 +2822,14 @@
                 t("ae864b69", function (e) {
                     return "Deine Abonnementstufe wird ab dem nächsten Rechnungszyklus am " + e.date + " zu " + e.tierName + " geändert";
                 }),
+                t("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 t("edbb700f", function (e) {
                     return "Beginnt mit dem nächsten Rechnungszyklus am " + e.date;
+                }),
+                t("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 t("e9884540", "Aktiver Rabatt"),
                 t("bfb879aa", "Anstehender Rabatt"),
@@ -2965,10 +2971,10 @@
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Karriere"),
                 t("e0adec82", "Markenressourcen"),
-                t("df1b7550", "Marketing"),
-                t("he258678", "X für Unternehmen"),
-                t("c6f58084", "Entwickler");
-            t("d83f18d2", "Verzeichnis"),
+                t("df1b7550", "Marketing");
+            t("he258678", "X für Unternehmen"),
+                t("c6f58084", "Entwickler"),
+                t("d83f18d2", "Verzeichnis"),
                 t("hc5aa17c", "Hol dir die X App"),
                 t("j0693948", "Hol dir die Grok App"),
                 t("af781666", "Was halten Leute davon?"),
@@ -2978,7 +2984,7 @@
                 t("bce3726a", "Rechnungsinfo aktualisieren"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
                 t("da00e00a", "Try the new News"),
-                t("c40666d8", "Try it"),
+                t("c40666d8", "Ausprobieren"),
                 t("j66b95a2", "#Ausführliche Nachrichten"),
                 t("b58d2bd2", "Relevante Posts"),
                 t("efe6ef9e", "Post anzeigen"),
@@ -3881,10 +3887,10 @@
                 t("cbef820f", function (e) {
                     return e.screenName + " hat den Stream repostet!";
                 }),
-                t("e3275464", "Senden"),
-                t("cededf2a", "Host"),
-                t("i2caef48", "Co-Hosts");
-            t("j245c654", "Sprecher"),
+                t("e3275464", "Senden");
+            t("cededf2a", "Host"),
+                t("i2caef48", "Co-Hosts"),
+                t("j245c654", "Sprecher"),
                 t("eda23a02", "Zuhörer*innen"),
                 t("b90eb348", "Zum Sprechen einl."),
                 t("d9a63e82", "Aus Sprechern entfernen"),
@@ -4917,10 +4923,10 @@
                 t("if2909ba", "Abspielzeit"),
                 t("i0e5bf4c", "Deine Videos"),
                 t("ed99baea", "Vorzeitiger Beta-Zugriff"),
-                t("gf898b70", "Erweiterte Suche"),
-                t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
-                t("a8584698", "ai startup");
-            t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
+                t("gf898b70", "Erweiterte Suche");
+            t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
+                t("a8584698", "ai startup"),
+                t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", "enthält „ai“ oder „startup“ (oder beide)"),
                 t("f0048fa2", "ai startup"),
@@ -5883,10 +5889,10 @@
                 t("cbae35fa", "Live-Video melden"),
                 t("fd12ab58", "Sammlungs-Posts"),
                 t("a226497c", "Neue Community erstellen"),
-                t("d7346632", "Du bist noch keinen Communities beigetreten"),
-                t("b732a4cc", "Wenn es so weit ist, siehst du seine/ihre Posts hier."),
-                t("hff48914", "Zurzeit wurden keine Posts gefunden.");
-            t("hb52cc4a", "Bitte versuche es später erneut."),
+                t("d7346632", "Du bist noch keinen Communities beigetreten");
+            t("b732a4cc", "Wenn es so weit ist, siehst du seine/ihre Posts hier."),
+                t("hff48914", "Zurzeit wurden keine Posts gefunden."),
+                t("hb52cc4a", "Bitte versuche es später erneut."),
                 t("e50e1bb0", "Willkommen bei Communities"),
                 t("i6829daa", "Communities sind moderierte Diskussionsgruppen, in denen Leute auf X miteinander in Verbindung treten und sich austauschen können"),
                 t("fc5c6914", "Lerne andere mit den gleichen Interessen kennen"),
@@ -6718,6 +6724,7 @@
                 t("i1801686", "Diese Suchabfrage ist ungültig. Probiere es bitte mit einer anderen."),
                 t("a0b4541c", "Etwas ist schiefgelaufen, aber keine Sorge – es liegt nicht an dir."),
                 t("d7eebb60", "Dein Abonnement wird eingerichtet"),
+                t("h707b180", "Your subscription update is complete"),
                 t("a452ab68", "Dies kann ein paar Sekunden dauern."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Erfolgreich aktualisiert"),
@@ -6880,11 +6887,11 @@
                 t("e0198956", "Erhalte einen Anteil an den Einnahmen aus der Interaktion verifizierter Accounts mit Inhalten, die du auf X postest."),
                 t("iadf78e2", "Videos herunterladen"),
                 t("ee54c3de", "Videos direkt auf deinem Gerät speichern"),
-                t("ae03594c", "Kleiner Boost für Antworten"),
-                t("e6bb08c0", "Erhöhe die Sichtbarkeit deiner Antworten"),
+                t("ae03594c", "Kleiner Boost für Antworten");
+            t("e6bb08c0", "Erhöhe die Sichtbarkeit deiner Antworten"),
                 t("bf2a6acc", "Großer Antwort-Boost"),
-                t("c2059276", "Lass deine Antworten boosten.");
-            t("b023ec20", "Maximaler Antwort-Boost"),
+                t("c2059276", "Lass deine Antworten boosten."),
+                t("b023ec20", "Maximaler Antwort-Boost"),
                 t("g337328e", "Höhere Sichtbarkeit für deine Antworten"),
                 t("fa006202", "Hintergrund-Videowiedergabe"),
                 t("jf389778", "Videos ansehen, während du blätterst oder andere Apps nutzt"),
@@ -7395,7 +7402,7 @@
                 t("bcd9cf68", "Über 65"),
                 t("f05f1838", "Sonstiges / Nicht angegeben"),
                 t("fa5be588", "Organisch"),
-                t("c65126fe", "Boosted"),
+                t("c65126fe", "Geboostet"),
                 t("c61c6624", "Gesponsert"),
                 t("f1196a04", "Boost Analytics"),
                 t("bb66e3fc", "Promote Analytics"),
@@ -7858,10 +7865,7 @@
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
                 t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
                 t("a62359e6", "Einstellungen für Verifizierte Organisation"),
-                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
-                t("i4dccc18", "Rechnungsstellung"),
-                t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
-                t("dac61c3c", "Account-Einstellungen");
+                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest.");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7900,7 +7904,10 @@
                     d(e, n)
                 );
             }
-            t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
+            t("i4dccc18", "Rechnungsstellung"),
+                t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
+                t("dac61c3c", "Account-Einstellungen"),
+                t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
                 t("hb9c4a1c", "Fragen stellen, Fehler melden, Feedback geben"),
                 t("c674f5b4", "Rechnungszahlungen einrichten"),
                 t("i8237e66", "Wechsle von Zahlungen per Kreditkarte zu Banküberweisungen."),
@@ -8902,15 +8909,15 @@
                 }),
                 t("ae408b76", "Du hast repostet"),
                 t("j355f008", "Angehefteter Post"),
-                t("habf9678", "Angeheftet von Autor*in"),
-                t("db0798ed", function (e) {
-                    return "Thema " + e.topicName;
-                }),
+                t("habf9678", "Angeheftet von Autor*in");
+            t("db0798ed", function (e) {
+                return "Thema " + e.topicName;
+            }),
                 t("dc716ec9", function (e) {
                     return "Empfohlenes Thema: " + e.topicName;
                 }),
-                t("fbc2003c", "Beendet");
-            t("h5051dd8", "Storniert"),
+                t("fbc2003c", "Beendet"),
+                t("h5051dd8", "Storniert"),
                 t("bb5f91a3", function (e) {
                     return e.count + " in diesem Space";
                 }),
@@ -13231,4 +13238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.b9ac3c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.7476f5ea.js.map

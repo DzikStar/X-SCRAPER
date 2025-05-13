@@ -1518,6 +1518,16 @@
                     return i.createElement(r.ZP, { identifier: a }, i.createElement(t.Z, (0, n.Z)({ ref: l }, e)));
                 });
         },
+        252021: (e, l, a) => {
+            a.d(l, { Z: () => r });
+            var n = a(202784),
+                i = a(107267),
+                t = a(115553);
+            const r = (e) => {
+                (0, i.useHistory)();
+                return n.createElement(t.A, e);
+            };
+        },
         336636: (e, l, a) => {
             a.d(l, { Z: () => c });
             var n = a(857037),
@@ -1538,4 +1548,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.a8825c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.03a2d93a.js.map

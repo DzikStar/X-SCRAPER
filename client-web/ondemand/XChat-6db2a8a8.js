@@ -19,7 +19,7 @@
         139802: (e, l, a) => {
             a.d(l, { A: () => p });
             var n = a(552322),
-                r = a(668781),
+                r = a(19745),
                 t = a(202784),
                 s = a(107267),
                 i = a(607499),
@@ -64,8 +64,8 @@
         664147: (e, l, a) => {
             a.d(l, { e: () => i, i: () => o });
             var n = a(552322),
-                r = a(941204),
-                t = a(849335),
+                r = a(332161),
+                t = a(261012),
                 s = a(202784);
             const i = "top_cursor",
                 o = () => {
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.f84be08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.4efa558a.js.map

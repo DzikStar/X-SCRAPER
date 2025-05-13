@@ -2,8 +2,8 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Payments-39d0705d"],
     {
-        456221: (e, a, n) => {
-            n.d(a, { Z: () => m });
+        456221: (e, n, a) => {
+            a.d(n, { Z: () => m });
             var l,
                 t,
                 i,
@@ -77,51 +77,62 @@
             d.hash = "228d4cd88122337c6bb35bedc1fc4bbd";
             const m = d;
         },
-        986092: (e, a, n) => {
-            n.d(a, { Z: () => r });
-            var l,
-                t,
-                i = {
-                    fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "theme" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useLinkBankCardMutation",
-                        selections: (t = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Literal", name: "s", value: "4721" },
-                                    { kind: "Variable", name: "theme", variableName: "theme" },
-                                ],
-                                concreteType: "XPaymentsCreateBankCardLinkingSessionResponse",
-                                kind: "LinkedField",
-                                name: "create_bank_card_linking_session",
-                                plural: !1,
-                                selections: [
-                                    { alias: null, args: null, kind: "ScalarField", name: "iframe_url", storageKey: null },
-                                    { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
-                                ],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkBankCardMutation", selections: t },
-                    params: { id: "4H7sxRxeTXoBW5mLdlBaDg", metadata: {}, name: "useLinkBankCardMutation", operationKind: "mutation", text: null },
-                };
-            i.hash = "ffb9482b5b17663122b08fc27f9aa3fd";
-            const r = i;
-        },
-        59815: (e, a, n) => {
-            n.d(a, { Z: () => u });
+        986092: (e, n, a) => {
+            a.d(n, { Z: () => u });
             var l,
                 t,
                 i,
                 r,
                 s = {
+                    fragment: {
+                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "theme" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useLinkBankCardMutation",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (t = [
+                                    { kind: "Literal", name: "s", value: "4721" },
+                                    { kind: "Variable", name: "theme", variableName: "theme" },
+                                ]),
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "create_bank_card_linking_session_v2",
+                                plural: !1,
+                                selections: [
+                                    (i = {
+                                        kind: "InlineFragment",
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "iframe_url", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                        ],
+                                        type: "XPaymentsBankCardLinkingSessionResponse",
+                                        abstractKey: null,
+                                    }),
+                                    (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null }], type: "XPaymentsCompleteRequiredChallenge", abstractKey: null }),
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkBankCardMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "create_bank_card_linking_session_v2", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCreateBankCardLinkingSessionResult" }, i, r], storageKey: null }] },
+                    params: { id: "HcWAknxhir7sDB6j9CxFYw", metadata: {}, name: "useLinkBankCardMutation", operationKind: "mutation", text: null },
+                };
+            s.hash = "98c3198fd7a5bbe9af80b950b815da52";
+            const u = s;
+        },
+        59815: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var l,
+                t,
+                i,
+                r,
+                s,
+                u = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "redirect_url" }]),
                         kind: "Fragment",
@@ -150,6 +161,7 @@
                                         abstractKey: null,
                                     }),
                                     (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateFinancialInstitutionLinkingSessionError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateFinancialInstitutionLinkingSessionFailure", abstractKey: null }),
+                                    (s = { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null }], type: "XPaymentsCompleteRequiredChallenge", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -158,14 +170,14 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkFinancialInstitutionMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "create_financial_institution_linking_session", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, i, r], storageKey: null }] },
-                    params: { id: "i8S6lhGfbh_bx-tikiykSw", metadata: {}, name: "useLinkFinancialInstitutionMutation", operationKind: "mutation", text: null },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkFinancialInstitutionMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "create_financial_institution_linking_session", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, i, r, s], storageKey: null }] },
+                    params: { id: "oEdvUw4hi8-4XIBuuyPctg", metadata: {}, name: "useLinkFinancialInstitutionMutation", operationKind: "mutation", text: null },
                 };
-            s.hash = "fff38a2da08a1ff4404648b5e5a9cd14";
-            const u = s;
+            u.hash = "2cdbce0f0e41fdb367b92dde3177f5fe";
+            const o = u;
         },
-        144098: (e, a, n) => {
-            n.d(a, { Z: () => u });
+        144098: (e, n, a) => {
+            a.d(n, { Z: () => u });
             var l,
                 t,
                 i,
@@ -203,8 +215,8 @@
             s.hash = "f5dc254a8e541bb82a6488f1314bab4c";
             const u = s;
         },
-        652730: (e, a, n) => {
-            n.d(a, { Z: () => u });
+        652730: (e, n, a) => {
+            a.d(n, { Z: () => u });
             var l,
                 t,
                 i,
@@ -240,8 +252,8 @@
             s.hash = "231c07d56ee420e65ae0c94657aaac6f";
             const u = s;
         },
-        236706: (e, a, n) => {
-            n.d(a, { Z: () => c });
+        236706: (e, n, a) => {
+            a.d(n, { Z: () => c });
             var l,
                 t,
                 i,
@@ -297,8 +309,8 @@
             m.hash = "3ef71171c01e8d1faa7aec62894674e6";
             const c = m;
         },
-        181234: (e, a, n) => {
-            n.d(a, { Z: () => c });
+        181234: (e, n, a) => {
+            a.d(n, { Z: () => c });
             var l,
                 t,
                 i,
@@ -356,4 +368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-39d0705d.4b84857a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-39d0705d.d4a8e23a.js.map

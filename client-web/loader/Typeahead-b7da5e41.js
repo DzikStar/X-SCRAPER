@@ -13,8 +13,8 @@
                 a = (s(136728), s(202784)),
                 n = s(251067),
                 o = s(325686),
-                i = s(392237),
-                c = s(731708),
+                c = s(392237),
+                i = s(731708),
                 h = s(674132),
                 l = s.n(h),
                 d = s(752624),
@@ -46,9 +46,9 @@
                                     t.preventDefault(), Z.getListeners().length ? Z.notify(e) : r("/explore", { searchFocused: !0, searchPrefill: e });
                                 },
                                 o = { [y.uq.labs.openCommandCenter]: u.Z, [y.uq.search]: a(), [y.uq.goToUser]: a("@"), [y.uq.openKeyboardShortcuts]: () => r("/i/keyboard_shortcuts"), [y.uq.goExplore]: () => r("/explore"), [y.uq.goSettings]: () => r("/settings") },
-                                i = (e) => ({ [y.uq.goProfile]: () => r(`/${e}`), [y.uq.goLikes]: () => r(`/${e}/likes`), [y.uq.goLists]: () => r(`/${e}/lists`) }),
-                                c = this.context.userClaims.isTrueAndEnabled("subscriptions_feature_1007"),
-                                h = s && c ? { ...i(s), [y.uq.goTopArticles]: () => r("/i/articles") } : s ? i(s) : {},
+                                c = (e) => ({ [y.uq.goProfile]: () => r(`/${e}`), [y.uq.goLikes]: () => r(`/${e}/likes`), [y.uq.goLists]: () => r(`/${e}/lists`) }),
+                                i = this.context.userClaims.isTrueAndEnabled("subscriptions_feature_1007"),
+                                h = s && i ? { ...c(s), [y.uq.goTopArticles]: () => r("/i/articles") } : s ? c(s) : {},
                                 l = { ...o, ...h, [y.uq.toggleCommandCenter]: (0, n.fH)(n.vw.prod) ? u.Z : () => t.set(m._K), [y.uq.goHome]: () => r("/home"), [y.uq.goDisplay]: () => r("/i/display"), [y.uq.goNotifications]: () => r("/notifications"), [y.uq.goMentions]: () => r("/notifications/mentions"), [y.uq.goMessages]: () => r("/messages"), [y.uq.goGrok]: () => r("/i/grok"), [y.uq.newMessage]: () => r("/messages/compose"), [y.uq.newTweet]: () => r("/compose/post"), [y.uq.goBookmarks]: () => r("/i/bookmarks"), [y.uq.goToDrafts]: () => r("/compose/post/unsent/drafts"), [y.uq.goToScheduled]: () => r("/compose/post/unsent/scheduled") },
                                 d = this.props.viewerUserScreenName ? l : o;
                             this._unbindKeyboardShortcuts = (0, p.Z)(d);
@@ -61,7 +61,7 @@
                     this._unbindKeyboardShortcuts && this._unbindKeyboardShortcuts();
                 }
                 render() {
-                    return this.props.viewerUserScreenName ? a.createElement(o.Z, { "aria-level": 2, role: "heading", style: i.default.visuallyHidden }, a.createElement(m.lk, null), a.createElement(c.ZP, null, R), a.createElement(c.ZP, { focusable: !1, link: "/i/keyboard_shortcuts" }, k)) : null;
+                    return this.props.viewerUserScreenName ? a.createElement(o.Z, { "aria-level": 2, role: "heading", style: c.default.visuallyHidden }, a.createElement(m.lk, null), a.createElement(i.ZP, null, R), a.createElement(i.ZP, { focusable: !1, link: "/i/keyboard_shortcuts" }, k)) : null;
                 }
             }
             w.contextType = g.rC;
@@ -77,24 +77,24 @@
                 a = s(190286),
                 n = s(674132),
                 o = s.n(n),
-                i = s(436001);
-            const c = o().hffea05c,
+                c = s(436001);
+            const i = o().hffea05c,
                 h = o().j037e374,
                 l = o().d96cf7ce,
-                d = ({ onCancel: e, onConfirm: t }) => r.createElement(a.Z, { confirmButtonLabel: l, confirmButtonType: "destructiveFilled", headline: c, onCancel: e, onConfirm: t, testID: i.Z.deleteSavedSearchDialog, text: h });
+                d = ({ onCancel: e, onConfirm: t }) => r.createElement(a.Z, { confirmButtonLabel: l, confirmButtonType: "destructiveFilled", headline: i, onCancel: e, onConfirm: t, testID: c.Z.deleteSavedSearchDialog, text: h });
         },
         436001: (e, t, s) => {
             s.d(t, { Z: () => r });
             const r = { deleteRecentSearchesDialog: "deleteRecentSearchesDialog", deleteSavedSearchDialog: "deleteSavedSearchDialog", typeaheadEmptySearch: "typeaheadEmptySearch", typeaheadRecentSearchesHeader: "typeaheadRecentSearchesHeader", typeaheadRecentSearchesItem: "typeaheadRecentSearchesItem", typeaheadSavedSearchesContainer: "typeaheadSavedSearchesContainer", typeaheadSavedSearchesHeader: "typeaheadSavedSearchesHeader", typeaheadSavedSearchesItem: "typeaheadSavedSearchesItem" };
         },
-        631935: (e, t, s) => {
-            s.r(t), s.d(t, { SearchBoxContainer: () => Ve, default: () => Ge });
+        462044: (e, t, s) => {
+            s.r(t), s.d(t, { SearchBoxContainer: () => Xe, default: () => et });
             var r = s(807896),
                 a = (s(136728), s(202784)),
                 n = s(325686),
                 o = s(392237),
-                i = s(674132),
-                c = s.n(i),
+                c = s(674132),
+                i = s.n(c),
                 h = s(2430),
                 l = s(782826),
                 d = s(942893),
@@ -105,26 +105,37 @@
                 y = s(443781),
                 f = s(80309),
                 _ = s(874088),
-                g = s(928316),
-                I = s(731708),
-                v = s(154003),
-                C = s(190286),
-                b = s(459679),
-                R = s(290402),
-                k = s(602427),
-                Z = s(952428),
-                E = s(673510),
-                w = s(837020),
-                D = s(668214),
-                x = s(624479),
-                T = s(919022);
-            const P = (e, t) => T.ZP.select(e, t.id),
-                q = (e, t) => (0, x.cY)(e, t.id),
-                F = (0, D.Z)().propsFromState(() => ({ user: P, userSpace: q })),
-                A = a.createElement(w.default, null),
-                O = c().e68b09b4,
-                U = c().fd06b02f;
-            class H extends a.Component {
+                g = s(687103),
+                I = s(992942),
+                v = s(952793);
+            function C({ query: e }) {
+                if ((0, v.hC)("rweb_search_show_large_hashflag") && e && e.startsWith("#"))
+                    return a.createElement(g._y.Consumer, null, ({ getBrandedHashtag: t }) => {
+                        const s = t(e.slice(1))?.url;
+                        return s && a.createElement(I.Z, { source: s, style: b.image });
+                    });
+            }
+            const b = o.default.create((e) => ({ image: { width: 36, height: 36, marginStart: e.spaces.space8, alignSelf: "center" } }));
+            var R = s(928316),
+                k = s(731708),
+                Z = s(154003),
+                E = s(190286),
+                w = s(459679),
+                D = s(290402),
+                x = s(602427),
+                T = s(952428),
+                q = s(673510),
+                P = s(837020),
+                F = s(668214),
+                A = s(624479),
+                O = s(919022);
+            const U = (e, t) => O.ZP.select(e, t.id),
+                H = (e, t) => (0, A.cY)(e, t.id),
+                N = (0, F.Z)().propsFromState(() => ({ user: U, userSpace: H })),
+                L = a.createElement(P.default, null),
+                B = i().e68b09b4,
+                M = i().fd06b02f;
+            class Q extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleAvatarClick = () => {
@@ -142,60 +153,60 @@
                         { featureSwitches: n } = this.context;
                     if (!s) return null;
                     const o = r && n.isTrue("voice_rooms_recent_search_audiospace_ring_enabled") ? r : void 0;
-                    o && (o["aria-label"] = U({ screenName: s.screen_name }));
-                    const i = a.createElement(v.ZP, { "aria-label": O, icon: A, onPress: e, size: "small", type: "brandText" });
-                    return a.createElement(E.ZP, { affiliateBadgeInfo: s.highlightedLabel, avatarSize: "xLarge", avatarUri: s.profile_image_url_https, decoration: i, displayMode: "UserCompact", isBlueVerified: s.is_blue_verified, isProtected: s.protected, isVerified: s.verified, name: s.name, onAvatarClick: this._handleAvatarClick, onCellClick: this._handleClick, onScreenNameClick: this._handleClick, presenceIndicator: o, screenName: s.screen_name, style: t, userId: s.id_str, verifiedType: s.verified_type, withInteractiveStyling: !1, withLink: !1, withUsernameCenterAligned: !0 });
+                    o && (o["aria-label"] = M({ screenName: s.screen_name }));
+                    const c = a.createElement(Z.ZP, { "aria-label": B, icon: L, onPress: e, size: "small", type: "brandText" });
+                    return a.createElement(q.ZP, { affiliateBadgeInfo: s.highlightedLabel, avatarSize: "xLarge", avatarUri: s.profile_image_url_https, decoration: c, displayMode: "UserCompact", isBlueVerified: s.is_blue_verified, isProtected: s.protected, isVerified: s.verified, name: s.name, onAvatarClick: this._handleAvatarClick, onCellClick: this._handleClick, onScreenNameClick: this._handleClick, presenceIndicator: o, screenName: s.screen_name, style: t, userId: s.id_str, verifiedType: s.verified_type, withInteractiveStyling: !1, withLink: !1, withUsernameCenterAligned: !0 });
                 }
                 get searchItemData() {
                     return this.props.user ? { category: u.Hk.RecentSearch, link: this.props.user.screen_name, query: this.props.id, recentSearchType: u.g2.User } : null;
                 }
             }
-            H.contextType = y.rC;
-            const N = F.forwardRef(H);
-            var L = s(120428);
-            const B = c().e68b09b4;
-            class M extends a.PureComponent {
+            Q.contextType = y.rC;
+            const z = N.forwardRef(Q);
+            var $ = s(120428);
+            const K = i().e68b09b4;
+            class V extends a.PureComponent {
                 render() {
                     const { id: e, onRemove: t, ...s } = this.props;
-                    return e ? a.createElement(n.Z, { style: Q.root }, a.createElement(L.Z, s), a.createElement(v.ZP, { "aria-label": B, icon: a.createElement(w.default, null), onPress: t, size: "small", style: Q.button, type: "brandText" })) : null;
+                    return e ? a.createElement(n.Z, { style: j.root }, a.createElement($.Z, s), a.createElement(Z.ZP, { "aria-label": K, icon: a.createElement(P.default, null), onPress: t, size: "small", style: j.button, type: "brandText" })) : null;
                 }
                 get searchItemData() {
                     const { id: e, image: t, supportText: s, title: r } = this.props;
                     return { category: u.Hk.RecentSearch, query: e, recentSearchType: u.g2.Event, queryMetadata: { id: e, image: t, title: r, supportText: s } };
                 }
             }
-            const Q = o.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between" }, button: { alignSelf: "center" } })),
-                z = M;
-            var $ = s(909377),
-                K = s(872405),
-                V = s(452693);
-            const j = a.createElement(w.default, null),
-                G = c().e68b09b4;
-            class W extends a.Component {
+            const j = o.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between" }, button: { alignSelf: "center" } })),
+                W = V;
+            var G = s(909377),
+                J = s(872405),
+                X = s(452693);
+            const Y = a.createElement(P.default, null),
+                ee = i().e68b09b4;
+            class te extends a.Component {
                 render() {
                     const { description: e, id: t, name: s, onRemove: r } = this.props;
                     if (!t) return null;
                     const o = "xLarge",
-                        i = a.createElement($.Z, { Icon: V.default, color: "primary", size: o, style: X.searchIcon });
-                    return a.createElement(K.Z, { avatarCell: i, avatarSize: o, cellStyle: X.bodyColumn }, a.createElement(n.Z, null, a.createElement(I.ZP, { numberOfLines: 1, weight: "bold", withHashflags: !0 }, s), a.createElement(I.ZP, { color: "gray700", numberOfLines: 1, withHashflags: !0 }, e)), a.createElement(v.ZP, { "aria-label": G, icon: j, onPress: r, size: "small", type: "brandText" }));
+                        c = a.createElement(G.Z, { Icon: X.default, color: "primary", size: o, style: re.searchIcon });
+                    return a.createElement(J.Z, { avatarCell: c, avatarSize: o, cellStyle: re.bodyColumn }, a.createElement(n.Z, null, a.createElement(k.ZP, { numberOfLines: 1, weight: "bold", withHashflags: !0 }, s), a.createElement(k.ZP, { color: "gray700", numberOfLines: 1, withHashflags: !0 }, e)), a.createElement(Z.ZP, { "aria-label": ee, icon: Y, onPress: r, size: "small", type: "brandText" }));
                 }
                 get searchItemData() {
                     const { description: e, id: t, name: s } = this.props;
                     return t ? { category: u.Hk.RecentSearch, query: t, recentSearchType: u.g2.Topic, queryMetadata: { id: t, name: s, description: e } } : null;
                 }
             }
-            const J = W,
-                X = o.default.create((e) => ({ bodyColumn: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, searchIcon: { marginEnd: e.spaces.space12 } }));
-            var Y = s(607127),
-                ee = s(264398),
-                te = s(912021);
-            const se = a.createElement(w.default, null),
-                re = a.createElement(Y.default, null);
-            class ae extends a.Component {
+            const se = te,
+                re = o.default.create((e) => ({ bodyColumn: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, searchIcon: { marginEnd: e.spaces.space12 } }));
+            var ae = s(607127),
+                ne = s(264398),
+                oe = s(912021);
+            const ce = a.createElement(P.default, null),
+                ie = a.createElement(ae.default, null);
+            class he extends a.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._getMemoizedButtonType = (0, te.Z)((e) => (e === u.Hk.SavedSearch ? "destructiveText" : "brandText"))),
-                        (this._getMemoizedRemoveIcon = (0, te.Z)((e) => (e === u.Hk.SavedSearch ? re : se))),
+                        (this._getMemoizedButtonType = (0, oe.Z)((e) => (e === u.Hk.SavedSearch ? "destructiveText" : "brandText"))),
+                        (this._getMemoizedRemoveIcon = (0, oe.Z)((e) => (e === u.Hk.SavedSearch ? ie : ce))),
                         (this._getButtonType = () => {
                             const { category: e } = this.props;
                             return this._getMemoizedButtonType(e);
@@ -208,22 +219,22 @@
                 render() {
                     const { onRemove: e, query: t } = this.props,
                         s = "xLarge",
-                        r = a.createElement($.Z, { Icon: ee.default, color: "neutral", size: s, style: ne.searchIcon });
-                    return a.createElement(K.Z, { avatarCell: r, avatarSize: s, cellStyle: ne.bodyColumn }, a.createElement(I.ZP, { numberOfLines: 1, withHashflags: !0 }, t), a.createElement(v.ZP, { "aria-label": "", icon: this._getRemoveIcon(), onPress: e, size: "small", type: this._getButtonType() }));
+                        r = a.createElement(G.Z, { Icon: ne.default, color: "neutral", size: s, style: le.searchIcon });
+                    return a.createElement(J.Z, { avatarCell: r, avatarSize: s, cellStyle: le.bodyColumn }, a.createElement(k.ZP, { numberOfLines: 1, withHashflags: !0 }, t), a.createElement(Z.ZP, { "aria-label": "", icon: this._getRemoveIcon(), onPress: e, size: "small", type: this._getButtonType() }));
                 }
                 get searchItemData() {
                     const { category: e, query: t } = this.props;
                     return { category: e, query: t, recentSearchType: e === u.Hk.RecentSearch ? u.g2.Keyword : void 0 };
                 }
             }
-            const ne = o.default.create((e) => ({ bodyColumn: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, searchIcon: { marginEnd: e.spaces.space12, borderWidth: 0, backgroundColor: "none" } })),
-                oe = ae;
-            class ie extends a.Component {
+            const le = o.default.create((e) => ({ bodyColumn: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, searchIcon: { marginEnd: e.spaces.space12, borderWidth: 0, backgroundColor: "none" } })),
+                de = he;
+            class ue extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderSearchItem = () => {
                             const { index: e, item: t, onItemClick: s } = this.props;
-                            return t.keyword ? a.createElement(oe, { category: t.category, onRemove: this._handleOnRemove, query: t.keyword.query, ref: this._handleItemRef }) : t.user ? a.createElement(N, { id: t.user.id || "", index: e, onItemClick: s, onRemove: this._handleOnRemove, ref: this._handleItemRef, style: ce.itemPadding }) : t.topic ? a.createElement(J, { description: t.topic.description || "", id: t.topic.id, name: t.topic.name || "", onRemove: this._handleOnRemove, ref: this._handleItemRef }) : t.event ? a.createElement(z, { id: t.event.id, image: t.event.image || { url: "", height: 0, width: 0 }, onRemove: this._handleOnRemove, ref: this._handleItemRef, supportText: t.event.supportText || "", title: t.event.title || "" }) : null;
+                            return t.keyword ? a.createElement(de, { category: t.category, onRemove: this._handleOnRemove, query: t.keyword.query, ref: this._handleItemRef }) : t.user ? a.createElement(z, { id: t.user.id || "", index: e, onItemClick: s, onRemove: this._handleOnRemove, ref: this._handleItemRef, style: me.itemPadding }) : t.topic ? a.createElement(se, { description: t.topic.description || "", id: t.topic.id, name: t.topic.name || "", onRemove: this._handleOnRemove, ref: this._handleItemRef }) : t.event ? a.createElement(W, { id: t.event.id, image: t.event.image || { url: "", height: 0, width: 0 }, onRemove: this._handleOnRemove, ref: this._handleItemRef, supportText: t.event.supportText || "", title: t.event.title || "" }) : null;
                         }),
                         (this._handleItemRef = (e) => {
                             this._itemRef = e;
@@ -239,70 +250,70 @@
                 }
                 render() {
                     const { domId: e, item: t, testID: s } = this.props;
-                    return a.createElement(Z.Z, { "aria-selected": !!e, focusable: !0, id: e, onClick: this._handleOnClick, role: "option", style: [ce.root, e && ce.focused, !t?.user && ce.itemPadding], testID: s }, this._renderSearchItem());
+                    return a.createElement(T.Z, { "aria-selected": !!e, focusable: !0, id: e, onClick: this._handleOnClick, role: "option", style: [me.root, e && me.focused, !t?.user && me.itemPadding], testID: s }, this._renderSearchItem());
                 }
                 get searchItemData() {
                     return this._itemRef ? this._itemRef.searchItemData : null;
                 }
             }
-            const ce = o.default.create((e) => ({ root: { cursor: "pointer" }, itemPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, focused: { backgroundColor: e.colors.gray0 } })),
-                he = ie;
-            var le = s(24949),
-                de = s(933277),
-                ue = s(615656),
-                me = s(71620),
-                pe = s(204744),
-                Se = s(554951),
-                ye = s(312771);
-            function fe(e) {
-                return (0, ue.VZ)(e, ue.ZP.GenericUserNotFound) || (0, ue.VZ)(e, ue.ZP.OtherUserSuspended) || (0, ue.VZ)(e, ue.ZP.AddressBookLookupNotFound);
+            const me = o.default.create((e) => ({ root: { cursor: "pointer" }, itemPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, focused: { backgroundColor: e.colors.gray0 } })),
+                pe = ue;
+            var Se = s(24949),
+                ye = s(933277),
+                fe = s(615656),
+                _e = s(71620),
+                ge = s(204744),
+                Ie = s(554951),
+                ve = s(312771);
+            function Ce(e) {
+                return (0, fe.VZ)(e, fe.ZP.GenericUserNotFound) || (0, fe.VZ)(e, fe.ZP.OtherUserSuspended) || (0, fe.VZ)(e, fe.ZP.AddressBookLookupNotFound);
             }
-            const _e = (0, le.P1)(pe.Ww, T.ZP.selectFetchStatuses, (e, t) => {
-                    const s = (0, b.Z)(e, (e) => {
+            const be = (0, Se.P1)(ge.Ww, O.ZP.selectFetchStatuses, (e, t) => {
+                    const s = (0, w.Z)(e, (e) => {
                         const s = e.user?.id;
                         return s && t[s] ? { id: s, fetchStatus: t[s] } : void 0;
                     });
-                    return (0, de.Z)(s, (e) => e.fetchStatus);
+                    return (0, ye.Z)(s, (e) => e.fetchStatus);
                 }),
-                ge = (0, le.P1)(_e, (e) => (e[ye.ZP.FAILED] ?? []).map((e) => e.id)),
-                Ie = (0, le.P1)(_e, T.ZP.selectErrors, (e, t) => {
-                    const s = e[ye.ZP.FAILED] ?? [],
-                        r = e[ye.ZP.LOADED] ?? [],
-                        a = e[ye.ZP.LOADING] ?? [],
-                        n = s.filter(({ id: e }) => !fe(t[e] ?? {}));
-                    return a.length > 0 ? ye.ZP.LOADING : r.length > 0 ? ye.ZP.LOADED : n.length > 0 ? ye.ZP.FAILED : ye.ZP.NONE;
+                Re = (0, Se.P1)(be, (e) => (e[ve.ZP.FAILED] ?? []).map((e) => e.id)),
+                ke = (0, Se.P1)(be, O.ZP.selectErrors, (e, t) => {
+                    const s = e[ve.ZP.FAILED] ?? [],
+                        r = e[ve.ZP.LOADED] ?? [],
+                        a = e[ve.ZP.LOADING] ?? [],
+                        n = s.filter(({ id: e }) => !Ce(t[e] ?? {}));
+                    return a.length > 0 ? ve.ZP.LOADING : r.length > 0 ? ve.ZP.LOADED : n.length > 0 ? ve.ZP.FAILED : ve.ZP.NONE;
                 }),
-                ve = (0, le.P1)(_e, T.ZP.selectErrors, (e, t) => {
-                    const s = e[ye.ZP.FAILED] ?? [];
-                    return (0, b.Z)(s, (e) => {
-                        if (fe(t[e.id] ?? {})) return e.id;
+                Ze = (0, Se.P1)(be, O.ZP.selectErrors, (e, t) => {
+                    const s = e[ve.ZP.FAILED] ?? [];
+                    return (0, w.Z)(s, (e) => {
+                        if (Ce(t[e.id] ?? {})) return e.id;
                     });
                 }),
-                Ce = (0, le.P1)(Se.as, (e) => e.map((e) => ({ keyword: { query: e.query }, savedSearchId: e.id_str, category: u.Hk.SavedSearch }))),
-                be = (0, le.P1)(pe.Ww, (e) => e.map((e) => ({ ...e, category: u.Hk.RecentSearch }))),
-                Re = (0, D.Z)()
-                    .propsFromState(() => ({ isRecentSearchDataLoaded: pe.H$, recentSearches: be, usersFetchStatus: Ie, invalidRecentSearchUserIds: ve, failedRecentSearchUserIds: ge, savedSearches: Ce }))
+                Ee = (0, Se.P1)(Ie.as, (e) => e.map((e) => ({ keyword: { query: e.query }, savedSearchId: e.id_str, category: u.Hk.SavedSearch }))),
+                we = (0, Se.P1)(ge.Ww, (e) => e.map((e) => ({ ...e, category: u.Hk.RecentSearch }))),
+                De = (0, F.Z)()
+                    .propsFromState(() => ({ isRecentSearchDataLoaded: ge.H$, recentSearches: we, usersFetchStatus: ke, invalidRecentSearchUserIds: Ze, failedRecentSearchUserIds: Re, savedSearches: Ee }))
                     .adjustStateProps(({ failedRecentSearchUserIds: e, invalidRecentSearchUserIds: t, isRecentSearchDataLoaded: s, recentSearches: r, savedSearches: a, usersFetchStatus: n }) => {
                         const o = !r.filter(({ user: e }) => e && t.indexOf(e.id) < 0).length,
-                            i = n !== ye.ZP.LOADING && s && o ? ye.ZP.LOADED : n;
-                        return { failedRecentSearchUserIds: e, invalidRecentSearchUserIds: t, recentSearches: r, fetchStatus: i, savedSearches: a };
+                            c = n !== ve.ZP.LOADING && s && o ? ve.ZP.LOADED : n;
+                        return { failedRecentSearchUserIds: e, invalidRecentSearchUserIds: t, recentSearches: r, fetchStatus: c, savedSearches: a };
                     })
-                    .propsFromActions(() => ({ clearAll: pe.qF, createLocalApiErrorHandler: (0, me.zr)("SEARCH_ONE_CLICK"), deleteSavedSearch: Se.k9, fetchRecentSearchesIfNeeded: pe.OB, fetchSavedSearchesIfNeeded: Se.l9, fetchUsersIfNeeded: T.ZP.fetchManyIfNeeded, fetchUsersPresenceIfNeeded: x.ZP.fetchManyIfNeeded, removeQuery: pe.hj }))
+                    .propsFromActions(() => ({ clearAll: ge.qF, createLocalApiErrorHandler: (0, _e.zr)("SEARCH_ONE_CLICK"), deleteSavedSearch: Ie.k9, fetchRecentSearchesIfNeeded: ge.OB, fetchSavedSearchesIfNeeded: Ie.l9, fetchUsersIfNeeded: O.ZP.fetchManyIfNeeded, fetchUsersPresenceIfNeeded: A.ZP.fetchManyIfNeeded, removeQuery: ge.hj }))
                     .withAnalytics({ element: "typeahead" });
-            var ke = s(243754),
-                Ze = s(436001);
-            const Ee = c().a2c1b222,
-                we = { headline: c().f45c4250, text: c().caae4dda, confirmButtonLabel: c().dbd5d400 },
-                De = c().a8d68f62,
-                xe = c().c6530778,
-                Te = c().e047b8fa,
-                Pe = ["event", "keyword", "topic", "user"];
-            class qe extends a.Component {
+            var xe = s(243754),
+                Te = s(436001);
+            const qe = i().a2c1b222,
+                Pe = { headline: i().f45c4250, text: i().caae4dda, confirmButtonLabel: i().dbd5d400 },
+                Fe = i().a8d68f62,
+                Ae = i().c6530778,
+                Oe = i().e047b8fa,
+                Ue = ["event", "keyword", "topic", "user"];
+            class He extends a.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getRecentSearchItems = () => {
                             const { failedRecentSearchUserIds: e, recentSearches: t } = this.props,
-                                s = t.filter((t) => (t.user && Pe.includes("user") ? e.indexOf(t.user.id) < 0 : Object.keys(t).some((e) => Pe.includes(e))));
+                                s = t.filter((t) => (t.user && Ue.includes("user") ? e.indexOf(t.user.id) < 0 : Object.keys(t).some((e) => Ue.includes(e))));
                             return s.length > 15 ? s.slice(0, 15) : s;
                         }),
                         (this._render = () => {
@@ -310,7 +321,7 @@
                                 s = 0 === this._getNumOfSearchItems(),
                                 r = this._getRecentSearchItems();
                             return s
-                                ? a.createElement(n.Z, { style: Fe.emptyState, testID: Ze.Z.typeaheadEmptySearch }, a.createElement(I.ZP, { align: "center", color: "gray700" }, Ee))
+                                ? a.createElement(n.Z, { style: Ne.emptyState, testID: Te.Z.typeaheadEmptySearch }, a.createElement(k.ZP, { align: "center", color: "gray700" }, qe))
                                 : a.createElement(
                                       n.Z,
                                       { id: e, role: "listbox" },
@@ -318,17 +329,17 @@
                                           ? a.createElement(
                                                 a.Fragment,
                                                 null,
-                                                a.createElement(n.Z, { style: Fe.header, testID: Ze.Z.typeaheadRecentSearchesHeader }, a.createElement(I.ZP, { numberOfLines: 1, size: "headline1", weight: "bold" }, De), a.createElement(v.ZP, { onBlur: this._handleClearAllBlur, onFocus: this._handleClearAllFocus, onPress: this._handleClearAllClick, ref: this._setClearAllButtonRef, size: "xSmall", type: "brandText" }, Te)),
+                                                a.createElement(n.Z, { style: Ne.header, testID: Te.Z.typeaheadRecentSearchesHeader }, a.createElement(k.ZP, { numberOfLines: 1, size: "headline1", weight: "bold" }, Fe), a.createElement(Z.ZP, { onBlur: this._handleClearAllBlur, onFocus: this._handleClearAllFocus, onPress: this._handleClearAllClick, ref: this._setClearAllButtonRef, size: "xSmall", type: "brandText" }, Oe)),
                                                 r.map((e, t) => this._renderRecentSearchItem(e, t)),
                                             )
                                           : null,
-                                      t.length > 0 ? a.createElement(a.Fragment, null, a.createElement(n.Z, { "aria-hidden": !0, style: [Fe.header, Fe.borderTop], testID: Ze.Z.typeaheadSavedSearchesHeader }, a.createElement(I.ZP, { numberOfLines: 1, size: "headline1", weight: "bold" }, xe)), this._renderSavedSearches()) : null,
+                                      t.length > 0 ? a.createElement(a.Fragment, null, a.createElement(n.Z, { "aria-hidden": !0, style: [Ne.header, Ne.borderTop], testID: Te.Z.typeaheadSavedSearchesHeader }, a.createElement(k.ZP, { numberOfLines: 1, size: "headline1", weight: "bold" }, Ae)), this._renderSavedSearches()) : null,
                                   );
                         }),
                         (this._renderRecentSearchItem = (e, t) => {
                             const { ariaDescendantId: s } = this.props,
                                 r = this.state.focusIndex === t;
-                            return a.createElement(he, { domId: r ? s : void 0, index: t, item: e, key: this._chooseKeyType(e, t), onItemClick: this._handleOnItemClick, onRemoveQuery: this._handleRemoveQuery, ref: r ? this._setFocusedItemRef : void 0, testID: Ze.Z.typeaheadRecentSearchesItem });
+                            return a.createElement(pe, { domId: r ? s : void 0, index: t, item: e, key: this._chooseKeyType(e, t), onItemClick: this._handleOnItemClick, onRemoveQuery: this._handleRemoveQuery, ref: r ? this._setFocusedItemRef : void 0, testID: Te.Z.typeaheadRecentSearchesItem });
                         }),
                         (this._chooseKeyType = (e, t) => (e.keyword ? `keyword_${e.keyword.query}` : e.user ? `user_${e.user.id}` : e.topic ? `topic_${e.topic.id}` : e.event ? `event_${e.event.id}` : `${t}`)),
                         (this._renderSavedSearches = () => {
@@ -340,10 +351,10 @@
                                 o.reverse(),
                                 a.createElement(
                                     n.Z,
-                                    { testID: Ze.Z.typeaheadSavedSearchesContainer },
+                                    { testID: Te.Z.typeaheadSavedSearchesContainer },
                                     o.map((t, n) => {
                                         const o = s === n + r.length;
-                                        return a.createElement(he, { domId: o ? e : void 0, index: n, item: t, key: t.savedSearchId, onItemClick: this._handleOnItemClick, onRemoveQuery: this._handleRemoveQuery, ref: o ? this._setFocusedItemRef : void 0, testID: Ze.Z.typeaheadSavedSearchesItem });
+                                        return a.createElement(pe, { domId: o ? e : void 0, index: n, item: t, key: t.savedSearchId, onItemClick: this._handleOnItemClick, onRemoveQuery: this._handleRemoveQuery, ref: o ? this._setFocusedItemRef : void 0, testID: Te.Z.typeaheadSavedSearchesItem });
                                     }),
                                 )
                             );
@@ -359,12 +370,12 @@
                         (this._fetchUsersDetailsIfNeeded = () => {
                             const { createLocalApiErrorHandler: e, fetchUsersIfNeeded: t, fetchUsersPresenceIfNeeded: s, invalidRecentSearchUserIds: r, recentSearches: a } = this.props,
                                 { featureSwitches: n, viewerUserId: o } = this.context,
-                                i = ((e, t) =>
-                                    (0, b.Z)(e, (e) => {
+                                c = ((e, t) =>
+                                    (0, w.Z)(e, (e) => {
                                         const s = e?.user?.id;
                                         if (s && t.indexOf(s) < 0) return s;
                                     }))(a, r);
-                            t(i).catch(e({})), o && n.isTrue("voice_rooms_recent_search_audiospace_ring_enabled") && s(i).catch(e({}));
+                            t(c).catch(e({})), o && n.isTrue("voice_rooms_recent_search_audiospace_ring_enabled") && s(c).catch(e({}));
                         }),
                         (this._handleRemoveQuery = (e, t) => {
                             const { analytics: s, removeQuery: r } = this.props;
@@ -423,14 +434,14 @@
                         (this._scribeRecentSearchImpression = () => {
                             const { analytics: e, recentSearches: t } = this.props;
                             if (t && t.length) {
-                                const s = (0, b.Z)(t, (e, t) => d.Z.forRecentSearchResult(e, t));
+                                const s = (0, w.Z)(t, (e, t) => d.Z.forRecentSearchResult(e, t));
                                 e.scribe({ action: "impression", data: { items: s } });
                             }
                         }),
                         (this._scribeSavedSearchImpression = () => {
                             const { analytics: e, savedSearches: t } = this.props;
                             if (t && t.length) {
-                                const s = (0, b.Z)(t, (e, t) => d.Z.forSavedSearchResult(e.keyword.query, t));
+                                const s = (0, w.Z)(t, (e, t) => d.Z.forSavedSearchResult(e.keyword.query, t));
                                 e.scribe({ element: "saved_search", action: "impression", data: { items: s } });
                             }
                         }),
@@ -455,7 +466,7 @@
                             this._clearAllButtonRef = e;
                         }),
                         (this._setFocusedItemRef = (e) => {
-                            (this._focusedItemRef = e), e && this._shouldScrollToFocusedItem && ((0, k.up)(this._getScrollParent(), this._getFocusedItem()), (this._shouldScrollToFocusedItem = !1));
+                            (this._focusedItemRef = e), e && this._shouldScrollToFocusedItem && ((0, x.up)(this._getScrollParent(), this._getFocusedItem()), (this._shouldScrollToFocusedItem = !1));
                         }),
                         (this.hasFocusedItem = () => this._getNumOfSearchItems() > 0),
                         (this.deleteFocusedItem = () => {
@@ -509,29 +520,29 @@
                 render() {
                     const { fetchStatus: e, style: t } = this.props,
                         { shouldShowClearAllConfirmationSheet: s, shouldShowDeleteSavedSearchConfirmation: r } = this.state;
-                    return a.createElement(n.Z, { style: t }, a.createElement(R.Z, { fetchStatus: e, onRequestRetry: this._handleUsersRetry, render: this._render }), s ? a.createElement(C.Z, { confirmButtonLabel: we.confirmButtonLabel, confirmButtonType: "destructiveFilled", headline: we.headline, onCancel: this._handleOnClearAllCancel, onConfirm: this._handleOnClearAllConfirm, testID: Ze.Z.deleteRecentSearchesDialog, text: we.text }) : null, r ? a.createElement(ke.Z, { onCancel: this._handleOnDeleteSavedSearchCancel, onConfirm: this._handleOnDeleteSavedSearchConfirm }) : null);
+                    return a.createElement(n.Z, { style: t }, a.createElement(D.Z, { fetchStatus: e, onRequestRetry: this._handleUsersRetry, render: this._render }), s ? a.createElement(E.Z, { confirmButtonLabel: Pe.confirmButtonLabel, confirmButtonType: "destructiveFilled", headline: Pe.headline, onCancel: this._handleOnClearAllCancel, onConfirm: this._handleOnClearAllConfirm, testID: Te.Z.deleteRecentSearchesDialog, text: Pe.text }) : null, r ? a.createElement(xe.Z, { onCancel: this._handleOnDeleteSavedSearchCancel, onConfirm: this._handleOnDeleteSavedSearchConfirm }) : null);
                 }
                 _getScrollParent() {
                     if (!this._scrollParent) {
-                        const e = (0, k.rP)(g.findDOMNode(this));
+                        const e = (0, x.rP)(R.findDOMNode(this));
                         this._scrollParent = e === window ? null : e;
                     }
                     return this._scrollParent;
                 }
                 _getFocusedItem() {
-                    const e = this._focusedItemRef && g.findDOMNode(this._focusedItemRef);
+                    const e = this._focusedItemRef && R.findDOMNode(this._focusedItemRef);
                     return e instanceof Element ? e : null;
                 }
             }
-            qe.contextType = y.rC;
-            const Fe = o.default.create((e) => ({ emptyState: { padding: e.spaces.space12, paddingTop: e.spaces.space20 }, borderTop: { borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: 1 }, header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingVertical: e.componentDimensions.gutterVertical, paddingHorizontal: e.componentDimensions.gutterHorizontal } })),
-                Ae = Re.forwardRef(qe),
-                Oe = (0, D.Z)()
-                    .propsFromActions(() => ({ addQuery: pe.DI }))
+            He.contextType = y.rC;
+            const Ne = o.default.create((e) => ({ emptyState: { padding: e.spaces.space12, paddingTop: e.spaces.space20 }, borderTop: { borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: 1 }, header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingVertical: e.componentDimensions.gutterVertical, paddingHorizontal: e.componentDimensions.gutterHorizontal } })),
+                Le = De.forwardRef(He),
+                Be = (0, F.Z)()
+                    .propsFromActions(() => ({ addQuery: ge.DI }))
                     .withAnalytics({ component: "search_box" });
-            var Ue = s(23134);
-            const He = (e, t) => T.ZP.select(e, t.userId),
-                Ne = ({ user: e, userId: t }) => {
+            var Me = s(23134);
+            const Qe = (e, t) => O.ZP.select(e, t.userId),
+                ze = ({ user: e, userId: t }) => {
                     const [s, r] = a.useState(!1),
                         { featureSwitches: n } = a.useContext(y.rC),
                         o = n.isTrue("follow_nudge_search_enabled");
@@ -539,23 +550,23 @@
                         a.useEffect(() => {
                             o && e && !e.following && r(!0);
                         }, [e, o]),
-                        s ? a.createElement(Ue.C, { isFollowNudge: !0, showRelationshipChangeConfirmation: !0, userId: t }) : null
+                        s ? a.createElement(Me.C, { isFollowNudge: !0, showRelationshipChangeConfirmation: !0, userId: t }) : null
                     );
                 },
-                Le = (0, D.Z)().propsFromState(() => ({ user: He }))(a.memo(Ne)),
-                Be = "SearchBox_Search_Input",
-                Me = c().a9ae1e78,
-                Qe = c().hbc99b03,
-                ze = /^(\w+)$/,
-                $e = [m.my.Events, m.my.Users, m.my.Topics, m.my.Lists],
-                Ke = (e) => ("@" === e[0] ? e.substring(1) : e);
-            class Ve extends a.Component {
+                $e = (0, F.Z)().propsFromState(() => ({ user: Qe }))(a.memo(ze)),
+                Ke = "SearchBox_Search_Input",
+                Ve = i().a9ae1e78,
+                je = i().hbc99b03,
+                We = /^(\w+)$/,
+                Ge = [m.my.Events, m.my.Users, m.my.Topics, m.my.Lists],
+                Je = (e) => ("@" === e[0] ? e.substring(1) : e);
+            class Xe extends a.Component {
                 constructor(e, t) {
                     super(e, t),
-                        (this._renderSearchBoxEmptyState = (e) => a.createElement(Ae, (0, r.Z)({}, e, { onItemClick: this._handleSearchItemClick }))),
+                        (this._renderSearchBoxEmptyState = (e) => a.createElement(Le, (0, r.Z)({}, e, { onItemClick: this._handleSearchItemClick }))),
                         (this._renderSearchUserDecoration = ({ user: e, userId: t }) => {
                             const { viewerUserId: s } = this.context;
-                            return s && t !== s ? a.createElement(Le, { userId: t }) : null;
+                            return s && t !== s ? a.createElement($e, { userId: t }) : null;
                         }),
                         (this._handleSearchItemClick = ({ category: e, link: t, query: s, queryMetadata: r, recentSearchType: a }) => {
                             const { addQuery: n } = this.props;
@@ -566,8 +577,8 @@
                             t && (e && t.setQuery(e), t.focus());
                         }),
                         (this._getUserExactMatch = ({ hasResults: e, isLoaded: t, query: s }) => {
-                            const r = Ke(s);
-                            if (t && r.match(ze)) return { id: `${s}_no_result_user`, type: m.El.NoResult, data: { text: Qe({ screenName: r }), type: "user" } };
+                            const r = Je(s);
+                            if (t && r.match(We)) return { id: `${s}_no_result_user`, type: m.El.NoResult, data: { text: je({ screenName: r }), type: "user" } };
                         }),
                         (this._handleOnDismiss = () => {
                             const { history: e } = this.props,
@@ -611,7 +622,7 @@
                                     break;
                                 case m.El.NoResult: {
                                     const { type: t } = e.data;
-                                    "user" === t ? this._routeTransition({ pathname: `/${Ke(r)}` }) : "topic" === t && this._submitQuery({ query: r, shouldAddToRecentSearch: !0, src: p.Z.TypeaheadClick });
+                                    "user" === t ? this._routeTransition({ pathname: `/${Je(r)}` }) : "topic" === t && this._submitQuery({ query: r, shouldAddToRecentSearch: !0, src: p.Z.TypeaheadClick });
                                     break;
                                 }
                                 case m.El.User:
@@ -626,16 +637,16 @@
                         }),
                         (this._routeTransition = ({ params: e, pathname: t, query: s, src: r, userId: a }) => {
                             const { history: n, location: o } = this.props,
-                                i = { ...o, pathname: t, search: "", query: e || (s ? { q: s, src: r } : {}), state: { ...o.state, searchFocused: !1, lockScroll: !1, ...(a ? { userId: a } : {}) } };
-                            n.replace(i);
+                                c = { ...o, pathname: t, search: "", query: e || (s ? { q: s, src: r } : {}), state: { ...o.state, searchFocused: !1, lockScroll: !1, ...(a ? { userId: a } : {}) } };
+                            n.replace(c);
                         }),
                         (this._submitQuery = ({ query: e, shouldAddToRecentSearch: t = !1, src: s = p.Z.Typed }) => {
-                            const { addQuery: r, mode: a, onSubmit: n, searchFilters: o, searchRoute: i } = this.props;
+                            const { addQuery: r, mode: a, onSubmit: n, searchFilters: o, searchRoute: c } = this.props;
                             if ((n && n(e, s, this.state.lastSubmittedQuery === e), t)) {
                                 r({ keyword: { query: e, type: u.g2.Keyword } });
                             }
-                            const c = (0, u.F_)({ query: e, querySrc: s, mode: a, searchFilters: o });
-                            this._routeTransition({ pathname: i, params: c, src: s }), this.setState({ lastSubmittedQuery: e });
+                            const i = (0, u.F_)({ query: e, querySrc: s, mode: a, searchFilters: o });
+                            this._routeTransition({ pathname: c, params: i, src: s }), this.setState({ lastSubmittedQuery: e });
                         }),
                         (this._setInputRef = (e) => {
                             this._inputRef = e;
@@ -650,18 +661,18 @@
                     this._unregisterSearchShortcutHandler && this._unregisterSearchShortcutHandler();
                 }
                 render() {
-                    const { isCompact: e, isOnHomepage: t, location: s, placeholder: r } = this.props,
-                        { query: o } = this.state,
+                    const { isCompact: e, isOnHomepage: t, location: s, placeholder: r, showBrandedHashFlag: o } = this.props,
+                        { query: c } = this.state,
                         { searchPrefill: i } = s.state || {},
-                        c = this.props.initialValue || i,
-                        h = !!s.state && !!s.state.searchFocused;
-                    return a.createElement(n.Z, { style: je.root }, a.createElement(_.default, { filter: $e, getTopicExactMatch: o ? m.P0 : void 0, getUserExactMatch: o ? this._getUserExactMatch : void 0, initialValue: c, inputStyle: je.input, isCompact: e, isOnHomepage: t, onDismiss: this._handleOnDismiss, onFocus: this._handleOnFocus, onItemClick: this._handleItemClick, onItemsChanged: this._handleItemsChanged, onQueryChange: this._handleChange, onSubmit: this._handleTypeaheadSubmit, placeholder: r, ref: this._setInputRef, renderEmptyState: this._renderSearchBoxEmptyState, renderUserDecoration: this._renderSearchUserDecoration, rounded: !0, shouldAutoFocus: h, shouldClearOnSelect: !0, shouldDeferPrefetch: !0, source: m._4.SearchBox, testID: Be, withFixedPositioning: !0, withFocusStyling: !0 }));
+                        h = this.props.initialValue || i,
+                        l = !!s.state && !!s.state.searchFocused;
+                    return a.createElement(n.Z, { style: Ye.root }, a.createElement(_.default, { filter: Ge, getTopicExactMatch: c ? m.P0 : void 0, getUserExactMatch: c ? this._getUserExactMatch : void 0, initialValue: h, inputStyle: Ye.input, isCompact: e, isOnHomepage: t, onDismiss: this._handleOnDismiss, onFocus: this._handleOnFocus, onItemClick: this._handleItemClick, onItemsChanged: this._handleItemsChanged, onQueryChange: this._handleChange, onSubmit: this._handleTypeaheadSubmit, placeholder: r, ref: this._setInputRef, renderEmptyState: this._renderSearchBoxEmptyState, renderUserDecoration: this._renderSearchUserDecoration, rounded: !0, shouldAutoFocus: l, shouldClearOnSelect: !0, shouldDeferPrefetch: !0, source: m._4.SearchBox, testID: Ke, withFixedPositioning: !0, withFocusStyling: !0 }), o && a.createElement(C, { query: c }));
                 }
             }
-            (Ve.defaultProps = { initialValue: "", placeholder: Me, searchRoute: "/search" }), (Ve.contextType = y.rC);
-            const je = o.default.create((e) => ({ root: { alignItems: "stretch", flexBasis: 0, flexDirection: "row", flexGrow: 1 }, input: { flexShrink: 1 } })),
-                Ge = (0, S.ZP)(Oe(Ve));
+            (Xe.defaultProps = { initialValue: "", placeholder: Ve, searchRoute: "/search" }), (Xe.contextType = y.rC);
+            const Ye = o.default.create((e) => ({ root: { alignItems: "stretch", flexBasis: 0, flexDirection: "row", flexGrow: 1 }, input: { flexShrink: 1 } })),
+                et = (0, S.ZP)(Be(Xe));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-b7da5e41.823588ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-b7da5e41.3000291a.js.map

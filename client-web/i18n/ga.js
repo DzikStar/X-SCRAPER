@@ -2837,8 +2837,14 @@
                 n("ae864b69", function (e) {
                     return "Your subscription tier is scheduled to change to " + e.tierName + " from the next billing cycle on " + e.date;
                 }),
+                n("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 n("edbb700f", function (e) {
                     return "Starts with next billing cycle on " + e.date;
+                }),
+                n("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 n("e9884540", "Active discount"),
                 n("bfb879aa", "Pending discount"),
@@ -2980,10 +2986,10 @@
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Gairmeacha"),
                 n("e0adec82", "Acmhainní Branda"),
-                n("df1b7550", "Marketing"),
-                n("he258678", "X for Business"),
-                n("c6f58084", "Developers");
-            n("d83f18d2", "Directory"),
+                n("df1b7550", "Marketing");
+            n("he258678", "X for Business"),
+                n("c6f58084", "Developers"),
+                n("d83f18d2", "Directory"),
                 n("hc5aa17c", "Get the X app"),
                 n("j0693948", "Get the Grok app"),
                 n("af781666", "What do people think?"),
@@ -3896,10 +3902,10 @@
                 n("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
-                n("e3275464", "Seol"),
-                n("cededf2a", "Óstach"),
-                n("i2caef48", "Co-hosts");
-            n("j245c654", "Speakers"),
+                n("e3275464", "Seol");
+            n("cededf2a", "Óstach"),
+                n("i2caef48", "Co-hosts"),
+                n("j245c654", "Speakers"),
                 n("eda23a02", "Listeners"),
                 n("b90eb348", "Invite to Speak"),
                 n("d9a63e82", "Remove from Speakers"),
@@ -4932,10 +4938,10 @@
                 n("if2909ba", "Watch Time"),
                 n("i0e5bf4c", "Your videos"),
                 n("ed99baea", "Early Beta Access"),
-                n("gf898b70", "Advanced Search"),
-                n("d2a43a7a", 'contains both "ai" and "startup"'),
-                n("a8584698", "ai startup");
-            n("jb6f9292", 'contains the exact phrase "ai startup"'),
+                n("gf898b70", "Advanced Search");
+            n("d2a43a7a", 'contains both "ai" and "startup"'),
+                n("a8584698", "ai startup"),
+                n("jb6f9292", 'contains the exact phrase "ai startup"'),
                 n("j8ee77c4", '"ai startup"'),
                 n("d0480758", 'contains either "ai" or "startup" (or both)'),
                 n("f0048fa2", "ai OR startup"),
@@ -5898,10 +5904,10 @@
                 n("cbae35fa", "Report Broadcast"),
                 n("fd12ab58", "Collection posts"),
                 n("a226497c", "Cruthaigh Pobal nua"),
-                n("d7346632", "You haven’t joined any Communities yet"),
-                n("b732a4cc", "When you do, you’ll see their posts here."),
-                n("hff48914", "No posts could be found at this time.");
-            n("hb52cc4a", "Bain triail as arís níos déanaí."),
+                n("d7346632", "You haven’t joined any Communities yet");
+            n("b732a4cc", "When you do, you’ll see their posts here."),
+                n("hff48914", "No posts could be found at this time."),
+                n("hb52cc4a", "Bain triail as arís níos déanaí."),
                 n("e50e1bb0", "Welcome to Communities"),
                 n("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 n("fc5c6914", "Meet others with your interests"),
@@ -6733,6 +6739,7 @@
                 n("i1801686", "Is iarratas cuardaigh neamhbhailí é seo. Bain triail as ceann éagsúil."),
                 n("a0b4541c", "Chuaigh rud éigin mícheart - ná bí burtha, ní ortsa atá an locht"),
                 n("d7eebb60", "Setting up your subscription"),
+                n("h707b180", "Your subscription update is complete"),
                 n("a452ab68", "This may take a few seconds."),
                 n("b3bad3b2", "@premium"),
                 n("accbcc78", "Updated successfully"),
@@ -6895,11 +6902,11 @@
                 n("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 n("iadf78e2", "Download videos"),
                 n("ee54c3de", "Save videos straight to your device"),
-                n("ae03594c", "Small reply boost"),
-                n("e6bb08c0", "Increase the visibility of your replies"),
+                n("ae03594c", "Small reply boost");
+            n("e6bb08c0", "Increase the visibility of your replies"),
                 n("bf2a6acc", "Large Reply Boost"),
-                n("c2059276", "Have your replies boosted.");
-            n("b023ec20", "Max Reply Boost"),
+                n("c2059276", "Have your replies boosted."),
+                n("b023ec20", "Max Reply Boost"),
                 n("g337328e", "Get the highest visibility for your replies."),
                 n("fa006202", "Background video playback"),
                 n("jf389778", "Watch while browsing or using other apps"),
@@ -7873,10 +7880,7 @@
                 n("ddfd6718", "Payment Failed"),
                 n("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 n("a62359e6", "Verified Organization Settings"),
-                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                n("i4dccc18", "Billing"),
-                n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                n("dac61c3c", "Account settings");
+                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7915,7 +7919,10 @@
                     c(e, a)
                 );
             }
-            n("b6b5fd66", "Manage your X account including changing your username or password."),
+            n("i4dccc18", "Billing"),
+                n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                n("dac61c3c", "Account settings"),
+                n("b6b5fd66", "Manage your X account including changing your username or password."),
                 n("hb9c4a1c", "Questions, bug reports and feedback"),
                 n("c674f5b4", "Setup invoice payments"),
                 n("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8917,15 +8924,15 @@
                 }),
                 n("ae408b76", "You reposted"),
                 n("j355f008", "Pinned post"),
-                n("habf9678", "Pionnáilte ag an Údar"),
-                n("db0798ed", function (e) {
-                    return e.topicName + " Topaic";
-                }),
+                n("habf9678", "Pionnáilte ag an Údar");
+            n("db0798ed", function (e) {
+                return e.topicName + " Topaic";
+            }),
                 n("dc716ec9", function (e) {
                     return "Topaic Mholta: " + e.topicName;
                 }),
-                n("fbc2003c", "Críochnaithe");
-            n("h5051dd8", "Canceled"),
+                n("fbc2003c", "Críochnaithe"),
+                n("h5051dd8", "Canceled"),
                 n("bb5f91a3", function (e) {
                     return e.count + " in this Space";
                 }),
@@ -13234,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.00c4222a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.66f3dfea.js.map

@@ -2822,8 +2822,14 @@
                 s("ae864b69", function (e) {
                     return "O nível da sua assinatura está programado para mudar para " + e.tierName + " a partir do próximo ciclo de cobrança em " + e.date;
                 }),
+                s("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 s("edbb700f", function (e) {
                     return "Começa no próximo ciclo de cobrança em " + e.date;
+                }),
+                s("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 s("e9884540", "Desconto ativado"),
                 s("bfb879aa", "Desconto em andamento"),
@@ -2965,10 +2971,10 @@
                 s("jb0a4c36", "Blog"),
                 s("ce6d095a", "Carreiras"),
                 s("e0adec82", "Recursos da marca"),
-                s("df1b7550", "Marketing"),
-                s("he258678", "X para Empresas"),
-                s("c6f58084", "Desenvolvedores");
-            s("d83f18d2", "Diretório"),
+                s("df1b7550", "Marketing");
+            s("he258678", "X para Empresas"),
+                s("c6f58084", "Desenvolvedores"),
+                s("d83f18d2", "Diretório"),
                 s("hc5aa17c", "Baixar o aplicativo X"),
                 s("j0693948", "Baixar o aplicativo Grok"),
                 s("af781666", "O que as pessoas acham?"),
@@ -2978,7 +2984,7 @@
                 s("bce3726a", "Atualizar dados de cobrança"),
                 s("fce9ecce", "Vídeos sugeridos"),
                 s("da00e00a", "Try the new News"),
-                s("c40666d8", "Try it"),
+                s("c40666d8", "Experimente"),
                 s("j66b95a2", "Notícias detalhadas"),
                 s("b58d2bd2", "Posts Relevantes"),
                 s("efe6ef9e", "Visualizar post"),
@@ -3881,10 +3887,10 @@
                 s("cbef820f", function (e) {
                     return e.screenName + " repostou a transmissão!";
                 }),
-                s("e3275464", "Enviar"),
-                s("cededf2a", "Host"),
-                s("i2caef48", "Co-hosts");
-            s("j245c654", "Oradores"),
+                s("e3275464", "Enviar");
+            s("cededf2a", "Host"),
+                s("i2caef48", "Co-hosts"),
+                s("j245c654", "Oradores"),
                 s("eda23a02", "Ouvintes"),
                 s("b90eb348", "Convidar para falar"),
                 s("d9a63e82", "Remover dos oradores"),
@@ -4917,10 +4923,10 @@
                 s("if2909ba", "Tempo de exibição"),
                 s("i0e5bf4c", "Seus vídeos"),
                 s("ed99baea", "Acesso Beta Antecipado"),
-                s("gf898b70", "Busca Avançada"),
-                s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
-                s("a8584698", "ai startup");
-            s("jb6f9292", 'contém a frase exata "ai startup"'),
+                s("gf898b70", "Busca Avançada");
+            s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
+                s("a8584698", "ai startup"),
+                s("jb6f9292", 'contém a frase exata "ai startup"'),
                 s("j8ee77c4", '"ai startup"'),
                 s("d0480758", 'contém "ai" ou "startup" (ou ambos)'),
                 s("f0048fa2", "ai OU startup"),
@@ -5883,10 +5889,10 @@
                 s("cbae35fa", "Denunciar Transmissão"),
                 s("fd12ab58", "Coleções de posts"),
                 s("a226497c", "Crie uma nova Comunidade"),
-                s("d7346632", "Você ainda não entrou para nenhuma Comunidade"),
-                s("b732a4cc", "Quando fizer isso, poderá ver seus posts aqui."),
-                s("hff48914", "Não foi possível encontrar nenhum post no momento.");
-            s("hb52cc4a", "Por favor, tente novamente mais tarde."),
+                s("d7346632", "Você ainda não entrou para nenhuma Comunidade");
+            s("b732a4cc", "Quando fizer isso, poderá ver seus posts aqui."),
+                s("hff48914", "Não foi possível encontrar nenhum post no momento."),
+                s("hb52cc4a", "Por favor, tente novamente mais tarde."),
                 s("e50e1bb0", "Bem-vindo a Comunidades"),
                 s("i6829daa", "Comunidades são grupos de discussão com moderação em que as pessoas do X podem se conectar e compartilhar."),
                 s("fc5c6914", "Conheça outras pessoas com seus interesses"),
@@ -6718,6 +6724,7 @@
                 s("i1801686", "Esta é uma consulta de busca inválida. Tente usar uma diferente."),
                 s("a0b4541c", "Algo deu errado, mas não se preocupe. Não foi culpa sua."),
                 s("d7eebb60", "Como configurar sua assinatura"),
+                s("h707b180", "Your subscription update is complete"),
                 s("a452ab68", "Isso pode demorar alguns segundos."),
                 s("b3bad3b2", "@premium"),
                 s("accbcc78", "Atualizado com sucesso"),
@@ -6880,11 +6887,11 @@
                 s("e0198956", "Receba uma parte da receita gerada pelo engajamento de contas verificadas com o conteúdo que você postar no X."),
                 s("iadf78e2", "Baixar vídeos"),
                 s("ee54c3de", "Salve vídeos diretamente no seu dispositivo"),
-                s("ae03594c", "Priorização básica de respostas"),
-                s("e6bb08c0", "Aumente a visibilidade das suas respostas"),
+                s("ae03594c", "Priorização básica de respostas");
+            s("e6bb08c0", "Aumente a visibilidade das suas respostas"),
                 s("bf2a6acc", "Priorização média de respostas"),
-                s("c2059276", "Tenha suas respostas impulsionadas.");
-            s("b023ec20", "Priorização máxima de respostas"),
+                s("c2059276", "Tenha suas respostas impulsionadas."),
+                s("b023ec20", "Priorização máxima de respostas"),
                 s("g337328e", "Garanta maior visibilidade para as suas respostas."),
                 s("fa006202", "Reprodução de vídeo em segundo plano"),
                 s("jf389778", "Assista enquanto navega ou usa outros aplicativos"),
@@ -7395,7 +7402,7 @@
                 s("bcd9cf68", "Mais de 65"),
                 s("f05f1838", "Outro/não especificado"),
                 s("fa5be588", "Orgânico"),
-                s("c65126fe", "Boosted"),
+                s("c65126fe", "Priorizado"),
                 s("c61c6624", "Promovido"),
                 s("f1196a04", "Boost Analytics"),
                 s("bb66e3fc", "Promote Analytics"),
@@ -7858,10 +7865,7 @@
                 s("ddfd6718", "O pagamento falhou"),
                 s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios."),
                 s("a62359e6", "Configurações de Organizações Verificadas"),
-                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
-                s("i4dccc18", "Cobrança"),
-                s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
-                s("dac61c3c", "Configurações da conta");
+                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7900,7 +7904,10 @@
                     n(e, a)
                 );
             }
-            s("b6b5fd66", "Gerencie sua conta do X, incluindo alteração do seu nome de usuário ou senha."),
+            s("i4dccc18", "Cobrança"),
+                s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
+                s("dac61c3c", "Configurações da conta"),
+                s("b6b5fd66", "Gerencie sua conta do X, incluindo alteração do seu nome de usuário ou senha."),
                 s("hb9c4a1c", "Perguntas, relatórios de bugs e feedback"),
                 s("c674f5b4", "Configurar pagamentos da fatura"),
                 s("i8237e66", "Alternar de pagamentos com cartão de crédito para cobrança via transferência bancária."),
@@ -8902,15 +8909,15 @@
                 }),
                 s("ae408b76", "Você repostou"),
                 s("j355f008", "Post fixado"),
-                s("habf9678", "Fixado pelo autor"),
-                s("db0798ed", function (e) {
-                    return e.topicName + " Tópico";
-                }),
+                s("habf9678", "Fixado pelo autor");
+            s("db0798ed", function (e) {
+                return e.topicName + " Tópico";
+            }),
                 s("dc716ec9", function (e) {
                     return "Tópico recomendado: " + e.topicName;
                 }),
-                s("fbc2003c", "Encerrado");
-            s("h5051dd8", "Cancelado"),
+                s("fbc2003c", "Encerrado"),
+                s("h5051dd8", "Cancelado"),
                 s("bb5f91a3", function (e) {
                     return e.count + " neste Espaço";
                 }),
@@ -13218,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.de80cd7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.b600d96a.js.map

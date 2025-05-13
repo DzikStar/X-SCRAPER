@@ -1,12 +1,7 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AccountAnalytics~ondemand.Verified-e96e9bea"],
+    ["shared~bundle.AccountAnalytics~ondemand.Verified-c6fe4ea4"],
     {
-        182605: (e, t, a) => {
-            a.d(t, { Z: () => n });
-            var r = a(552322);
-            const n = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z" }) });
-        },
         286960: (e, t, a) => {
             a.d(t, { If: () => C });
             var r = a(202784),
@@ -20,7 +15,7 @@
                 u = a.n(d),
                 m = a(97882),
                 p = a(979673);
-            const g = {
+            const y = {
                     Engagements: { label: u().dbe9353e, popover: u().c23def7a },
                     Spend: { label: u().jc14a9e8, popover: u().d16b5a18, format: "currency" },
                     Impressions: { popover: u().b15df4b4, label: u().e5fe61e0 },
@@ -53,8 +48,8 @@
                         format: "percent",
                     },
                 },
-                y = u().c778d80b,
-                b = u().g01559c6;
+                b = u().c778d80b,
+                g = u().g01559c6;
             function f(e, t, a) {
                 const r = t?.find((t) => t.metric_type === e),
                     n = a?.find((t) => t.metric_type === e),
@@ -72,21 +67,21 @@
                     const u = e.metricsKeysToRender ?? ["Impressions", "EngagementRate", "ProfileVisits", "LinkClicks"],
                         C = t.current_organic_metrics,
                         v = t.past_organic_metrics,
-                        w = t.advertiser_accounts_by_primary_promotable_user?.items[0].current_promoted_metrics,
+                        h = t.advertiser_accounts_by_primary_promotable_user?.items[0].current_promoted_metrics,
                         T = t.advertiser_accounts_by_primary_promotable_user?.items[0].past_promoted_metrics,
                         _ = (e) => {
-                            const t = f(e, C, w ?? []),
+                            const t = f(e, C, h ?? []),
                                 a = f(e, v, T ?? []);
                             return { current: t.total_value, past: a.total_value, metadata: t.metadata };
                         };
                     function E(e) {
-                        const a = g[e];
+                        const a = y[e];
                         if (!a) return;
                         const { current: l, metadata: s, past: d } = a.calculate ? a.calculate(t, _) : _(e),
                             u = isFinite(l) && !isNaN(l),
-                            b = u && isFinite(d) && !isNaN(d) && c,
-                            f = "percent" === a.format ? y(l ?? 0) : "currency" === a.format && s?.currency_code ? (0, m.x)({ amount: l, currencyCode: s.currency_code, formatter: 1, removeTrailingZeros: !0 }) : (0, p.fV)(l, 1e4);
-                        return r.createElement(i.ZP, { animated: !0, count: l ?? 0, key: e, label: a.label, popover: ((C = a.popover), r.createElement(n.Z, null, r.createElement(o.ZP, { color: "gray700", size: "body", weight: "normal" }, C))), size: "title2", trendValue: b ? (D(l, d) ?? void 0) : void 0, value: u ? f : "-" });
+                            g = u && isFinite(d) && !isNaN(d) && c,
+                            f = "percent" === a.format ? b(l ?? 0) : "currency" === a.format && s?.currency_code ? (0, m.x)({ amount: l, currencyCode: s.currency_code, formatter: 1, removeTrailingZeros: !0 }) : (0, p.fV)(l, 1e4);
+                        return r.createElement(i.ZP, { animated: !0, count: l ?? 0, key: e, label: a.label, popover: ((C = a.popover), r.createElement(n.Z, null, r.createElement(o.ZP, { color: "gray700", size: "body", weight: "normal" }, C))), size: "title2", trendValue: g ? (D(l, d) ?? void 0) : void 0, value: u ? f : "-" });
                         var C;
                     }
                     return r.createElement(
@@ -94,19 +89,19 @@
                         null,
                         r.createElement(
                             n.Z,
-                            { style: d ? h.gridMobile : h.gridDesktop },
-                            u.map((e) => r.createElement(s.Z, { "aria-label": e, key: e, upper: r.createElement(n.Z, { style: h.tile }, E(e)) })),
+                            { style: d ? w.gridMobile : w.gridDesktop },
+                            u.map((e) => r.createElement(s.Z, { "aria-label": e, key: e, upper: r.createElement(n.Z, { style: w.tile }, E(e)) })),
                         ),
-                        a && r.createElement(o.ZP, { color: "gray700", size: "subtext3" }, b),
+                        a && r.createElement(o.ZP, { color: "gray700", size: "subtext3" }, g),
                     );
                 },
-                h = c.default.create((e) => {
+                w = c.default.create((e) => {
                     const t = { display: "grid", gridTemplateRows: "repeat(2, 1fr)", paddingVertical: e.spaces.space8, rowGap: e.spaces.space2 };
                     return { root: { padding: e.spaces.space16 }, gridDesktop: { ...t, gridTemplateColumns: "repeat(4, 1fr)" }, gridMobile: { ...t, gridTemplateColumns: "repeat(2, 1fr)" }, tile: { backgroundColor: e.colors.gray0, flexGrow: 1, justifyContent: "center", paddingStart: e.spaces.space16 } };
                 });
         },
         508469: (e, t, a) => {
-            a.d(t, { D: () => h });
+            a.d(t, { D: () => w });
             var r = a(202784),
                 n = a(325686),
                 o = a(157130),
@@ -119,8 +114,8 @@
                 m = a(466792),
                 p = a(665979);
             a(136728);
-            const g = new Date(),
-                y = ({ currentMonth: e, day: t, onClick: a, type: o }) => {
+            const y = new Date(),
+                b = ({ currentMonth: e, day: t, onClick: a, type: o }) => {
                     const l = "selectedEnd" === o || "selectedStart" === o;
                     return r.createElement(
                         n.Z,
@@ -128,7 +123,7 @@
                         r.createElement(m.Z, null, ({ isFocused: c, isFocusedWithin: d, isHovered: u }) => r.createElement(n.Z, { disabled: !e || "disabled" === o, onClick: () => a(t), style: [f.dayButton, l && f.dayButtonSelected, "disabled" !== o && e && f.pointer, ((u && e && "disabled" !== o) || "preview" === o) && f.dayButtonPreview] }, r.createElement(i.ZP, { size: "subtext3", style: { opacity: e ? ("disabled" === o ? 0.5 : 1) : 0.25, color: l ? s.default.theme.colors.buttonWhite : s.default.theme.colors.text }, weight: "bold" }, t.day))),
                     );
                 },
-                b = ({ displayDate: e, endDate: t, maxDays: a, onChange: o, startDate: l }) => {
+                g = ({ displayDate: e, endDate: t, maxDays: a, onChange: o, startDate: l }) => {
                     const [i, s] = r.useState(l && (0, p.b7)(l)),
                         [c, d] = r.useState(t && (0, p.b7)(t)),
                         u = r.useMemo(
@@ -158,7 +153,7 @@
                                         n.push({ day: e, month: a + 1, year: r, disabled: !m(t) });
                                     }
                                     return n;
-                                })({ month: e.getUTCMonth(), year: e.getUTCFullYear(), maxDate: new Date(Date.UTC(g.getUTCFullYear(), g.getUTCMonth(), g.getUTCDate())), minDate: new Date(Date.UTC(g.getUTCFullYear(), g.getUTCMonth(), g.getUTCDate() - a)) }),
+                                })({ month: e.getUTCMonth(), year: e.getUTCFullYear(), maxDate: new Date(Date.UTC(y.getUTCFullYear(), y.getUTCMonth(), y.getUTCDate())), minDate: new Date(Date.UTC(y.getUTCFullYear(), y.getUTCMonth(), y.getUTCDate() - a)) }),
                             [e, a],
                         );
                     return r.createElement(
@@ -170,7 +165,7 @@
                             let u;
                             return (
                                 (u = t.disabled ? "disabled" : l && i && c ? (i.getTime() === c.getTime() ? "preview" : i.getTime() === n.getTime() ? "selectedStart" : c.getTime() === n.getTime() ? "selectedEnd" : "range") : "default"),
-                                r.createElement(y, {
+                                r.createElement(b, {
                                     currentMonth: t.month === e.getUTCMonth(),
                                     day: t,
                                     key: a,
@@ -192,10 +187,10 @@
                     return `${e.getUTCMonth() + 1}/${t}/${e.getUTCFullYear()}`;
                 },
                 C = ["S", "M", "T", "W", "T", "F", "S"],
-                h = ({ endDate: e, maxDays: t, onChange: a, selected: s, startDate: m }) => {
-                    const [p, g] = r.useState(e ? new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), 1)) : new Date(Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), 1))),
-                        y = m && e && s ? `${D(m)} - ${D(e)}` : null,
-                        f = (e) => g(new Date(Date.UTC(p.getUTCFullYear(), p.getUTCMonth() + e, 1)));
+                w = ({ endDate: e, maxDays: t, onChange: a, selected: s, startDate: m }) => {
+                    const [p, y] = r.useState(e ? new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), 1)) : new Date(Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), 1))),
+                        b = m && e && s ? `${D(m)} - ${D(e)}` : null,
+                        f = (e) => y(new Date(Date.UTC(p.getUTCFullYear(), p.getUTCMonth() + e, 1)));
                     return r.createElement(
                         o.Z,
                         {
@@ -210,16 +205,16 @@
                                         { style: v.dayLabels },
                                         C.map((e, t) => r.createElement(i.ZP, { color: "gray700", key: t, size: "subtext3", weight: "bold" }, e)),
                                     ),
-                                    r.createElement(b, { displayDate: p, endDate: e, maxDays: t, onChange: a, startDate: m }),
+                                    r.createElement(g, { displayDate: p, endDate: e, maxDays: t, onChange: a, startDate: m }),
                                 ),
                         },
-                        r.createElement(l.ZP, { icon: r.createElement(u.default, null), size: "small", type: s ? "primaryFilled" : "primaryOutlined" }, y),
+                        r.createElement(l.ZP, { icon: r.createElement(u.default, null), size: "small", type: s ? "primaryFilled" : "primaryOutlined" }, b),
                     );
                 },
                 v = s.default.create((e) => ({ root: { justifyContent: "center", padding: s.default.theme.spaces.space8, gap: s.default.theme.spaces.space8 }, headerRow: { justifyContent: "space-between", flexDirection: "row", alignItems: "center" }, dayLabels: { justifyContent: "space-around", flexDirection: "row" } }));
         },
         907357: (e, t, a) => {
-            a.d(t, { Z: () => b });
+            a.d(t, { Z: () => g });
             var r = a(202784),
                 n = a(325686),
                 o = a(67369),
@@ -236,12 +231,12 @@
                     { label: "3M", value: 90 },
                     { label: "1Y", value: 365 },
                 ],
-                g = new Date(),
-                y = (e) => (0, m.Hk)(g)(e),
-                b = ({ defaultTimeFrame: e, defaultTimeRange: t, maxDays: a = 365, onChange: i, preventDefault: b }) => {
+                y = new Date(),
+                b = (e) => (0, m.Hk)(y)(e),
+                g = ({ defaultTimeFrame: e, defaultTimeRange: t, maxDays: a = 365, onChange: i, preventDefault: g }) => {
                     const D = e || (t ? null : { label: "7D", value: 7 }),
-                        [C, h] = r.useState(D),
-                        [v, w] = r.useState(t || { endDate: g, startDate: y(7), compareStartDate: y(14) }),
+                        [C, w] = r.useState(D),
+                        [v, h] = r.useState(t || { endDate: y, startDate: b(7), compareStartDate: b(14) }),
                         T = (0, o.Mv)(),
                         _ = !(0, c.ZP)() && T,
                         E = s.ZP.isTwitterApp() ? s.ZP.osString() : "web",
@@ -257,7 +252,7 @@
                                 onChange: ({ endDate: e, startDate: t }) => {
                                     const a = Math.floor((e.getTime() - t.getTime()) / 864e5),
                                         r = { endDate: e, startDate: t, compareStartDate: (0, m.Hk)(t)(a) };
-                                    b || (S.scribe({ page: "account_analytics", section: E, component: "TimeRangePicker", action: "selected", data: { start_date: t.toISOString(), end_date: e.toISOString() } }), h(null), w(r)), i?.(r);
+                                    g || (S.scribe({ page: "account_analytics", section: E, component: "TimeRangePicker", action: "selected", data: { start_date: t.toISOString(), end_date: e.toISOString() } }), w(null), h(r)), i?.(r);
                                 },
                                 selected: null === C,
                                 startDate: null === C ? v.startDate : null,
@@ -269,10 +264,10 @@
                                     key: e.label,
                                     onMouseDown: () =>
                                         ((e) => {
-                                            const t = { endDate: g, startDate: y(e.value), compareStartDate: y(2 * e.value) };
-                                            if (!b) {
+                                            const t = { endDate: y, startDate: b(e.value), compareStartDate: b(2 * e.value) };
+                                            if (!g) {
                                                 if ((S.scribe({ page: "account_analytics", section: E, component: "TimeFrameSelector", action: "click", data: { time_frame: e.label } }), C === e)) return;
-                                                h(e), w(t);
+                                                w(e), h(t);
                                             }
                                             i?.(t);
                                         })(e),
@@ -314,4 +309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-e96e9bea.6824e46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-c6fe4ea4.c35c40ea.js.map

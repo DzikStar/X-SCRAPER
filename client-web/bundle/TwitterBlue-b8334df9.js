@@ -431,7 +431,6 @@
                         { label: y } = (0, x.Z)(),
                         w = (0, p.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         v = a.useCallback(() => {
-                            s(!1);
                             const e = r?.external_price_id;
                             b.scribe({ action: "click", element: "tier_switch", component: e, data: { referring_page: (0, m.G3)(f.location) } }),
                                 e &&
@@ -439,11 +438,11 @@
                                         const t = e?.switch_tier?.__typename;
                                         if ("WebPaymentsTierSwitchResultSuccess" === t) {
                                             b.scribe({ action: "success", element: "tier_switch", component: h, data: { referring_page: (0, m.G3)(f.location) } });
-                                            const e = { tierSwitchTarget: c, tierSwitchType: h };
+                                            const e = { tierSwitchTarget: Z.MW[c], tierSwitchType: h };
                                             f.push("/i/premium", e);
                                         } else "WebPaymentsTierSwitchResultError" === t && (b.scribe({ action: "failure", element: "tier_switch", component: h, data: { referring_page: (0, m.G3)(f.location) } }), d(!0));
                                     });
-                        }, [f, b, u, c, r, h, s, d]),
+                        }, [f, b, u, c, r, h, d]),
                         E = Z.v5.premium[e.product?.rest_id ?? ""],
                         P = E ? t.productDetailsMap[E] : null,
                         I = (0, p.hC)("subscriptions_management_use_active_price"),
@@ -898,4 +897,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-b8334df9.04dbe28a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-b8334df9.6dcb70aa.js.map

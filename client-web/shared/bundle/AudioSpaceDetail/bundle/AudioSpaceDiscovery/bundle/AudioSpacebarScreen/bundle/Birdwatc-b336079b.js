@@ -30,12 +30,12 @@
             const o = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.0"),
+                        r.e("icons.20"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.14"),
+                        r.e("icons.22"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -84,21 +84,23 @@
             const d = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.12"),
-                        r.e("icons.20"),
-                        r.e("icons.0"),
+                        r.e("icons.8"),
                         r.e("icons.21"),
-                        r.e("icons.28"),
-                        r.e("icons.17"),
+                        r.e("icons.13"),
+                        r.e("icons.20"),
+                        r.e("icons.14"),
+                        r.e("icons.1"),
+                        r.e("icons.3"),
+                        r.e("icons.24"),
+                        r.e("icons.11"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.22"),
-                        r.e("icons.9"),
-                        r.e("icons.25"),
-                        r.e("icons.6"),
+                        r.e("icons.28"),
                         r.e("icons.10"),
-                        r.e("icons.14"),
+                        r.e("icons.17"),
+                        r.e("icons.4"),
+                        r.e("icons.12"),
+                        r.e("icons.22"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -106,6 +108,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -129,7 +132,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -186,8 +189,8 @@
             const s = o().cfd2f35e,
                 b = o().f9e45cfb,
                 p = o().fcd4d489,
-                S = o().a6450e84,
-                h = o().g353ad73,
+                h = o().a6450e84,
+                S = o().g353ad73,
                 D = o().ad00a739,
                 f = o().a9fd20be,
                 A = o().j546fb79,
@@ -196,7 +199,7 @@
                 v = o().he43bca4,
                 w = o().f5f01af6,
                 k = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                M = (e, a) => ({ confirmButtonType: "destructiveFilled", headline: b({ screenName: e }), label: S, text: a ? D({ screenName: e }) : h({ screenName: e }) }),
+                M = (e, a) => ({ confirmButtonType: "destructiveFilled", headline: b({ screenName: e }), label: h, text: a ? D({ screenName: e }) : S({ screenName: e }) }),
                 g = ({ blockAction: e, blockSubtext: a, isSoftBlockEnabled: r, source: d, testID: n, unblockAction: t, unblockSubtext: o, user: c }) => {
                     let l,
                         s = u.Z;
@@ -280,8 +283,8 @@
                 s = r(231035),
                 b = r(689048),
                 p = r(390387),
-                S = r(725405),
-                h = r(738124),
+                h = r(725405),
+                S = r(738124),
                 D = r(553160),
                 f = r(725102),
                 A = r(421855),
@@ -304,25 +307,25 @@
                     r = e ?? a.pathname.slice(E.length) + a.search;
                 (0, M.E)();
                 const n = (0, g._3)(r, { refreshTimeMs: 1e4 });
-                return n ? (n.jfResponse ? d.createElement(h.Z, { key: r, payload: n.jfResponse.root.value }) : d.createElement(l.Z, { onRetry: null, title: n.error })) : d.createElement(s.Z, null);
+                return n ? (n.jfResponse ? d.createElement(S.Z, { key: r, payload: n.jfResponse.root.value }) : d.createElement(l.Z, { onRetry: null, title: n.error })) : d.createElement(s.Z, null);
             }
             const T = ({ isHighlights: e, path: a, renderEmptyState: r }) => {
                 const [c, l] = d.useState(!1),
                     s = (0, o.useHistory)(),
-                    h = (0, M.E)(),
+                    S = (0, M.E)(),
                     [k] = (0, t.KO)(i.dd),
                     g = k.apiClient,
                     [P] = (0, t.KO)(i.qc),
                     _ = P.getState(),
                     T = (0, p.F5)(_),
-                    j = {},
-                    I = Intl.DateTimeFormat().resolvedOptions().timeZone,
-                    O = (0, S.Z)(),
+                    I = {},
+                    j = Intl.DateTimeFormat().resolvedOptions().timeZone,
+                    O = (0, h.Z)(),
                     [C] = (0, t.KO)(B.k),
                     [x] = (0, t.KO)(i.f0),
                     Z = location.host.includes("x.com") && x.isTrue("x_jetfuel_enable_test_cluster"),
                     L = "darker" === u.default.theme.paletteName ? "dark" : "dark" === u.default.theme.paletteName ? "dim" : u.default.theme.paletteName;
-                (j["x-jf-client-theme"] = L), (j["x-jf-v"] = "JP-4"), I && (j.timezone = I), T && (j["accept-language"] = (0, b.o)(T));
+                (I["x-jf-client-theme"] = L), (I["x-jf-v"] = "JP-4"), j && (I.timezone = j), T && (I["accept-language"] = (0, b.o)(T));
                 const R = ((e, a) => (e ? w.mH : a ? w.OG : w.CP))(C, Z),
                     N = {
                         httpPOST: async (e, a) => {
@@ -330,7 +333,7 @@
                                 d = !1;
                             const n = e.startsWith("/") ? e : `/${e}`;
                             try {
-                                (r = await g.jetfuelForm(n, j, Object.fromEntries(a.entries()), R)), (d = !0);
+                                (r = await g.jetfuelForm(n, I, Object.fromEntries(a.entries()), R)), (d = !0);
                             } catch (e) {
                                 (d = !1), l(!0);
                             }
@@ -341,7 +344,7 @@
                                 r = !1;
                             const d = e.startsWith("/") ? e : `/${e}`;
                             try {
-                                (a = await g.jetfuel(d, j, R)), (r = !0);
+                                (a = await g.jetfuel(d, I, R)), (r = !0);
                             } catch (e) {
                                 (r = !1), l(!0);
                             }
@@ -353,7 +356,7 @@
                     document.body.setAttribute("data-theme", L ?? "light");
                 }, [L]);
                 const F = (0, n.GZ)("svelte", { net: N, history: s, analytics: O });
-                return F.addComponentOverride(H), d.createElement(d.Fragment, null, c && r ? r() : d.createElement(n.mQ, { analytics: O, jfPath: location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : "", key: `${location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : ""}-${h}`, r: F }));
+                return F.addComponentOverride(H), d.createElement(d.Fragment, null, c && r ? r() : d.createElement(n.mQ, { analytics: O, jfPath: location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : "", key: `${location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : ""}-${S}`, r: F }));
             };
         },
         996568: (e, a, r) => {
@@ -414,7 +417,7 @@
         },
         199035: (e, a, r) => {
             "use strict";
-            r.d(a, { $3: () => h, GZ: () => u, KM: () => P, qB: () => D, tJ: () => M });
+            r.d(a, { $3: () => S, GZ: () => u, KM: () => P, qB: () => D, tJ: () => M });
             r(571372), r(543673), r(240753), r(128399), r(136728), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
             function d(e) {
                 let a = new DataView(e),
@@ -609,14 +612,14 @@
                     };
                 };
             function u(e, a = {}) {
-                return S(l(e), a);
+                return h(l(e), a);
             }
             var i,
                 s,
                 b,
                 p,
-                S = (e, a) => Object.entries(a).reduce((e, [a, r]) => ({ ...e, [a]: r && "object" == typeof r ? S(e[a], r) : (r ?? e[a]) }), { ...e }),
-                h = (e) => (D(e) << 16) >> 16,
+                h = (e, a) => Object.entries(a).reduce((e, [a, r]) => ({ ...e, [a]: r && "object" == typeof r ? h(e[a], r) : (r ?? e[a]) }), { ...e }),
+                S = (e) => (D(e) << 16) >> 16,
                 D = (e) => 0 | A(f(e)),
                 f = (e) => new TextEncoder().encode(e),
                 A =
@@ -711,12 +714,12 @@
                 },
                 M = (e, a = 0, r) => {
                     let d = (a) => {
-                            let d = e.props.get(h(a)),
+                            let d = e.props.get(S(a)),
                                 n = e.dom.prop(d);
                             return g(n, e.dom, r);
                         },
                         n = (a, r) => {
-                            let d = e.props.get(h(a)),
+                            let d = e.props.get(S(a)),
                                 n = e.dom.prop(d);
                             18 === n?.[0] && e.dom.atom(n[1].ref)?.set(r);
                         };
@@ -985,22 +988,22 @@
                                                 .fill(0)
                                                 .map(() => a(r)),
                                         t = (function (e) {
-                                            let [a, r, d, n, t, o, c, l, u, i, s, b, p, S, h, D, f] = e,
+                                            let [a, r, d, n, t, o, c, l, u, i, s, b, p, h, S, D, f] = e,
                                                 A = d,
                                                 m = u,
                                                 y = a({ type: c, props: n(c, A), children: t(A), id: o(m), extend: o(A) }),
-                                                v = S({ 0: b(0, a({ id: m })), 4: b(4, a({ id: m, root: A })), 1: b(1, a({ id: m, key: c, root: A })), 2: b(2, a({ id: m, key: p, root: A })), 3: b(3, a({ id: m, key: p, root: A })) }),
+                                                v = h({ 0: b(0, a({ id: m })), 4: b(4, a({ id: m, root: A })), 1: b(1, a({ id: m, key: c, root: A })), 2: b(2, a({ id: m, key: p, root: A })), 3: b(3, a({ id: m, key: p, root: A })) }),
                                                 w = a({ ref: v, prop_ref: A, is_default: s }),
-                                                k = S({ 0: b(0, v), 1: b(1, h(v, A)), 2: b(2, h(v, c)), 3: b(3, h(v, p)), 4: b(4, D(v, A, o(c))), 5: b(5, h(v, A)), 6: b(6, h(v, o(h(A, A)))), 7: b(7, h(v, A)), 8: b(8, h(v, A)) }),
-                                                M = S({ 0: b(0, a({ url: A, preview: o(A), replace: s })), 9: b(9, a({ url: A, preview: o(A), replace: s })), 1: b(1, a({ url: A, body: o(A), preview: o(A), replace: s })), 2: f([2]), 8: b(8, a({ url: A })), 3: f([3]), 4: f([4]), 5: f([5]), 6: f([6]), 7: b(7, a({ id: A })) }),
-                                                g = S((e) => ({ 0: b(0, k), 1: b(1, a({ ref: A, action: e, cancel: o(e) })), 2: b(2, t(e)), 3: b(3, a({ url: A, body: A, complete: o(e), error: o(e), optimistic: o(e) })), 4: b(4, a({ action: e, intensity: c })), 5: b(5, a({ ref: A, type: r })), 6: b(6, M), 7: b(7, a({ type: r, id: o(m) })), 8: b(8, p), 9: b(9, a({ urls: t(p), priority: r })), 10: b(10, A), 11: b(11, a({ type: r, ref: A })), 12: b(12, a({ action: e, delaySeconds: c })), 13: b(13, a({ data: p, secret: p })) })),
-                                                B = S((e) => ({ 0: b(0, a({ ref: v })), 15: b(15, a({ ref: v })), 1: b(1, a({ ref: v, value: A })), 2: b(2, a({ ref: v, value: A })), 3: b(3, a({ ref: v, value: t(A) })), 4: b(4, a({ ref: v, value: t(A) })), 5: b(5, a({ ref: v, value: A })), 6: b(6, a({ ref: v, value: A })), 7: b(7, a({ ref: v, value: A })), 8: b(8, a({ ref: v, value: A })), 9: b(9, a({ ref: v, value: p })), 10: b(10, a({ ref: v, value: p })), 11: b(11, a({ ref: v, value: p })), 12: b(12, h(e, e)), 13: b(13, h(e, e)), 14: b(14, e) })),
+                                                k = h({ 0: b(0, v), 1: b(1, S(v, A)), 2: b(2, S(v, c)), 3: b(3, S(v, p)), 4: b(4, D(v, A, o(c))), 5: b(5, S(v, A)), 6: b(6, S(v, o(S(A, A)))), 7: b(7, S(v, A)), 8: b(8, S(v, A)) }),
+                                                M = h({ 0: b(0, a({ url: A, preview: o(A), replace: s })), 9: b(9, a({ url: A, preview: o(A), replace: s })), 1: b(1, a({ url: A, body: o(A), preview: o(A), replace: s })), 2: f([2]), 8: b(8, a({ url: A })), 3: f([3]), 4: f([4]), 5: f([5]), 6: f([6]), 7: b(7, a({ id: A })) }),
+                                                g = h((e) => ({ 0: b(0, k), 1: b(1, a({ ref: A, action: e, cancel: o(e) })), 2: b(2, t(e)), 3: b(3, a({ url: A, body: A, complete: o(e), error: o(e), optimistic: o(e) })), 4: b(4, a({ action: e, intensity: c })), 5: b(5, a({ ref: A, type: r })), 6: b(6, M), 7: b(7, a({ type: r, id: o(m) })), 8: b(8, p), 9: b(9, a({ urls: t(p), priority: r })), 10: b(10, A), 11: b(11, a({ type: r, ref: A })), 12: b(12, a({ action: e, delaySeconds: c })), 13: b(13, a({ data: p, secret: p })) })),
+                                                B = h((e) => ({ 0: b(0, a({ ref: v })), 15: b(15, a({ ref: v })), 1: b(1, a({ ref: v, value: A })), 2: b(2, a({ ref: v, value: A })), 3: b(3, a({ ref: v, value: t(A) })), 4: b(4, a({ ref: v, value: t(A) })), 5: b(5, a({ ref: v, value: A })), 6: b(6, a({ ref: v, value: A })), 7: b(7, a({ ref: v, value: A })), 8: b(8, a({ ref: v, value: A })), 9: b(9, a({ ref: v, value: p })), 10: b(10, a({ ref: v, value: p })), 11: b(11, a({ ref: v, value: p })), 12: b(12, S(e, e)), 13: b(13, S(e, e)), 14: b(14, e) })),
                                                 E = t(t(l)),
                                                 P = t(D(r, p, o(p))),
-                                                _ = S({ 0: b(0, p), 1: b(1, l), 3: b(3, E), 25: b(25, t(h(E, B))), 4: b(4, m), 5: b(5, i), 6: b(6, s), 7: b(7, A), 8: b(8, t(A)), 10: b(10, d), 11: b(11, p), 12: b(12, P), 14: b(14, u), 15: b(15, A), 16: b(16, n(c, A)), 17: b(17, n(p, p)), 18: b(18, w), 19: b(19, g), 21: b(21, t(A)), 22: b(22, B), 24: b(24, t(A)), 26: b(26, t(p)), 27: b(27, t(l)), 28: b(28, t(i)), 29: b(29, t(s)), 13: b(13, f(void 0)) }),
+                                                _ = h({ 0: b(0, p), 1: b(1, l), 3: b(3, E), 25: b(25, t(S(E, B))), 4: b(4, m), 5: b(5, i), 6: b(6, s), 7: b(7, A), 8: b(8, t(A)), 10: b(10, d), 11: b(11, p), 12: b(12, P), 14: b(14, u), 15: b(15, A), 16: b(16, n(c, A)), 17: b(17, n(p, p)), 18: b(18, w), 19: b(19, g), 21: b(21, t(A)), 22: b(22, B), 24: b(24, t(A)), 26: b(26, t(p)), 27: b(27, t(l)), 28: b(28, t(i)), 29: b(29, t(s)), 13: b(13, f(void 0)) }),
                                                 T = a({ els: t(y), props: t(_), ts: l }),
-                                                j = a({ ref: A, t: o(l) });
-                                            return S({ 0: b(0, T), 1: b(1, j), 2: b(2, g) });
+                                                I = a({ ref: A, t: o(l) });
+                                            return h({ 0: b(0, T), 1: b(1, I), 2: b(2, g) });
                                         })([
                                             (e) => (a) => {
                                                 let r = {};
@@ -1156,7 +1159,7 @@
         },
         313129: (e, a, r) => {
             "use strict";
-            r.d(a, { wR: () => j, kp: () => I, $P: () => P, Ng: () => E, _3: () => v, Q_: () => w });
+            r.d(a, { wR: () => I, kp: () => j, $P: () => P, Ng: () => E, _3: () => v, Q_: () => w });
             r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(875640);
             var d = r(202784),
                 n = r(400752),
@@ -1169,8 +1172,8 @@
                 s = r(689048),
                 b = r(390387),
                 p = r(163889),
-                S = r(536387),
-                h = r(774717),
+                h = r(536387),
+                S = r(774717),
                 D = r(736230),
                 f = r(199035),
                 A = r(355335),
@@ -1251,7 +1254,7 @@
                     return (r["x-jf-client-theme"] = n), (r["x-jf-v"] = "JP-3"), d && (r.timezone = d), a && (r["accept-language"] = (0, s.o)(a)), r;
                 },
                 T = (e, a) => (e ? D.mH : a ? D.OG : D.CP),
-                j = async (e, a, r, d, n, t, o) => {
+                I = async (e, a, r, d, n, t, o) => {
                     if (!e) return {};
                     const c = _(r),
                         i = T(n, t),
@@ -1259,9 +1262,9 @@
                         b = (function (e, a) {
                             const r = l.ZP.isTwitterApp() ? (l.ZP.isAndroid() ? "android" : "ios") : "web",
                                 d = e ? `jf-test-${r}:api` : `jf-${r}:api`,
-                                n = h.P_();
+                                n = S.P_();
                             function t(e) {
-                                a || h.IM(`${d}:${e}`, n.end());
+                                a || S.IM(`${d}:${e}`, n.end());
                             }
                             const o = new Set();
                             return {
@@ -1298,7 +1301,7 @@
                         return (0, p.ZP)(e), e instanceof u.Z && 404 === e.status ? (b.record("not-found"), {}) : (b.record("error"), { error: D.TT });
                     }
                 },
-                I = async (e, a, r, d, n, t) => {
+                j = async (e, a, r, d, n, t) => {
                     if (!e) return {};
                     const o = _(r),
                         c = T(n, t),
@@ -1323,14 +1326,14 @@
                     let e;
                     return (a) =>
                         e ||
-                        ((e = (0, S.dX)((e) =>
-                            (0, S.K9)(async (r) => {
+                        ((e = (0, h.dX)((e) =>
+                            (0, h.K9)(async (r) => {
                                 const d = r(A.k),
                                     n = r(i.dd).apiClient,
                                     t = r(i.f0),
                                     o = r(i.qc).getState(),
                                     c = location.host.includes("x.com") && t.isTrue("x_jetfuel_enable_test_cluster");
-                                return await j(e, void 0, o, n, d, c, a);
+                                return await I(e, void 0, o, n, d, c, a);
                             }),
                         )),
                         e);
@@ -1414,4 +1417,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.6842565a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.59be6dca.js.map

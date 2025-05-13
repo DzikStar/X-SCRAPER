@@ -677,7 +677,7 @@
                     (0, o.useEffect)(() => {
                         e && ((m.current = e), _(e));
                     }, [e]),
-                    u ? (t ?? (0, n.jsx)(s.P, {})) : d ? (0, n.jsxs)("div", { children: ["Error: ", d.message] }) : (0, n.jsx)(c.Z, { el: p })
+                    u ? (t ?? (0, n.jsx)("div", { className: "p-4", children: (0, n.jsx)(s.P, {}) })) : d ? (0, n.jsxs)("div", { children: ["Error: ", d.message] }) : (0, n.jsx)(c.Z, { el: p })
                 );
             }
         },
@@ -803,4 +803,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c.a088b1ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c.d406b3fa.js.map

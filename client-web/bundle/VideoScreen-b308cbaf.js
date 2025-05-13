@@ -40,7 +40,7 @@
                     i = (0, m.D2)("hashfetti_duration_ms").getNumberValue(4e3),
                     n = (0, m.D2)("hashfetti_particle_count").getNumberValue(30),
                     { query: s } = r.useContext(d),
-                    o = (0, p.C)();
+                    o = (0, p.Ck)();
                 if (!e || !s || h.Z.reducedMotionEnabled) return null;
                 const a = (0, u.Z)(s);
                 let l;
@@ -1211,4 +1211,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-b308cbaf.9d1b380a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-b308cbaf.f02c16ca.js.map

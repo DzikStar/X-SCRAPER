@@ -6,12 +6,12 @@
             n.d(t, { a: () => A });
             var s = n(552322),
                 i = n(425522),
-                a = n(941204),
-                o = n(436059),
-                r = n(720640),
-                l = n(952333),
-                c = n(29632),
-                d = n(990714),
+                a = n(332161),
+                o = n(993165),
+                r = n(436995),
+                l = n(887491),
+                c = n(25457),
+                d = n(14313),
                 m = n(202784),
                 x = n(533476),
                 u = n(658358),
@@ -22,7 +22,7 @@
             function g({ replyingTo: e, onRemoveReply: t }) {
                 return (0, s.jsxs)("div", { className: "flex px-2.5 w-full items-center justify-between", children: [(0, s.jsxs)("div", { className: "flex gap-1", children: [e.senderInfo?.user?.displayName ? (0, s.jsxs)(a.x, { size: "subtext2", weight: "medium", color: "gray900", children: ["Replying to ", e.senderInfo.user.displayName] }) : null, (0, s.jsx)(a.x, { size: "subtext2", color: "gray500", children: e.textContent })] }), (0, s.jsx)(o.z, { variant: "primaryFilled", size: "xSmall", icon: (0, s.jsx)(l.Z, {}), onClick: t })] });
             }
-            var j = n(702024),
+            var j = n(193686),
                 C = n(556160),
                 w = n(517922),
                 b = n(83083),
@@ -51,7 +51,7 @@
                 }
                 return (0, s.jsxs)("div", { className: "flex flex-col max-w-[300px] gap-2 relative", children: [n, e.showRemoveButton && (0, s.jsx)("div", { className: "absolute top-2 right-2 flex items-center", children: (0, s.jsx)(o.z, { variant: "primaryFilled", size: "xSmall", icon: (0, s.jsx)(l.Z, {}), onClick: t }) })] });
             }
-            var E = n(82458);
+            var E = n(962639);
             const I = i.com.x.dms.composer.composer.RightButtonState,
                 M = i.com.x.dms.composer.composer.ChatComposerEvent;
             function A({ component: e }) {
@@ -189,11 +189,11 @@
                 a = n(202784),
                 o = n(505332),
                 r = n(455091),
-                l = n(861514),
-                c = n(702024),
+                l = n(89195),
+                c = n(193686),
                 d = n(256958),
-                m = n(941204),
-                x = n(849335),
+                m = n(332161),
+                x = n(261012),
                 u = n(611463),
                 h = n(379342),
                 p = n(533476);
@@ -274,16 +274,16 @@
             var s = n(552322),
                 i = n(202784),
                 a = n(425522),
-                o = n(490003),
-                r = n(721793),
-                l = n(521634),
-                c = n(542495),
-                d = n(861514),
-                m = n(702024),
-                x = n(964655),
-                u = n(898100),
-                h = n(436059),
-                p = n(941204),
+                o = n(129558),
+                r = n(757677),
+                l = n(52053),
+                c = n(543005),
+                d = n(89195),
+                m = n(193686),
+                x = n(589259),
+                u = n(351417),
+                h = n(993165),
+                p = n(332161),
                 v = n(611463),
                 f = n(379342),
                 g = n(455091),
@@ -299,9 +299,9 @@
                 N = n(32161),
                 E = n(533476),
                 I = n(658358),
-                M = n(250362),
-                A = n(866426),
-                R = n(796309);
+                M = n(145731),
+                A = n(951671),
+                R = n(31674);
             function P({ icon: e, destructive: t, onClick: n, title: i, value: a, showChevron: o = !1 }) {
                 return (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4", children: [(0, s.jsxs)("div", { className: `flex items-center gap-2 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(p.x, { size: "body", weight: "medium", color: t ? "red500" : "text", children: i })] }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [a && (0, s.jsx)(p.x, { size: "body", color: "gray500", children: a }), o && (0, s.jsx)(l.Z, { className: "text-gray-500" })] })] }) });
             }
@@ -335,7 +335,7 @@
                     : null;
             }
             var G = n(505332),
-                L = n(856402),
+                L = n(22199),
                 Z = n(369962);
             const U = ({ onEvent: e, ttl: t }) => (0, s.jsx)(P, { icon: (0, s.jsx)(L.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, Z.L)(t) : "Off", onClick: e }),
                 V = a.com.x.dms.convinfo;
@@ -533,21 +533,21 @@
         505332: (e, t, n) => {
             n.d(t, { Q: () => r });
             var s = n(552322),
-                i = n(436059),
-                a = n(941204),
-                o = n(889198);
+                i = n(993165),
+                a = n(332161),
+                o = n(458872);
             const r = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center h-16 border-b border-border w-full relative", children: [(0, s.jsx)("div", { className: "absolute left-2", children: (0, s.jsx)(i.z, { icon: (0, s.jsx)(o.Z, {}), onClick: t, variant: "primaryText" }) }), (0, s.jsx)(a.x, { size: "headline1", weight: "bold", className: "flex-1 text-center", children: e })] });
         },
         559040: (e, t, n) => {
             n.d(t, { p: () => k });
             var s = n(552322),
                 i = n(425522),
-                a = n(964655),
-                o = n(941204),
-                r = n(490003),
-                l = n(266917),
-                c = n(680815),
-                d = n(175135),
+                a = n(589259),
+                o = n(332161),
+                r = n(129558),
+                l = n(242782),
+                c = n(169355),
+                d = n(14269),
                 m = n(32161),
                 x = n(537335),
                 u = n(336984);
@@ -601,9 +601,9 @@
                 };
             var f = n(202784),
                 g = n(110241),
-                j = n(921879),
+                j = n(983706),
                 C = n(812115),
-                w = n(194484),
+                w = n(138179),
                 b = n(455091);
             const y = () => {
                 const { t: e } = (0, b.$G)();
@@ -653,9 +653,9 @@
         897995: (e, t, n) => {
             n.d(t, { Y: () => l });
             var s = n(552322),
-                i = n(436059),
-                a = n(941204),
-                o = n(952333),
+                i = n(993165),
+                a = n(332161),
+                o = n(887491),
                 r = n(425522);
             const l = ({ component: e, dialogParams: t }) =>
                 (0, s.jsxs)("div", {
@@ -688,7 +688,7 @@
                 i = n(425522),
                 a = n(202784),
                 o = n(455091),
-                r = n(702024),
+                r = n(193686),
                 l = n(505332),
                 c = n(611463),
                 d = n(379342),
@@ -757,14 +757,14 @@
             n.d(t, { b: () => p });
             var s = n(552322),
                 i = n(350311),
-                a = n(964655),
+                a = n(589259),
                 o = n(336984),
-                r = n(776604),
-                l = n(436059),
-                c = n(291680),
-                d = n(866426),
-                m = n(327176),
-                x = n(848553),
+                r = n(527735),
+                l = n(993165),
+                c = n(429804),
+                d = n(951671),
+                m = n(384226),
+                x = n(421018),
                 u = n(425522);
             const h = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, menuItems: n, participant: i }) => {
                     if (!n || 0 === n.length) return null;
@@ -804,10 +804,10 @@
                 o = n(425522),
                 r = n(611463),
                 l = n(379342),
-                c = n(702024),
-                d = n(941204),
-                m = n(856402),
-                x = n(227887),
+                c = n(193686),
+                d = n(332161),
+                m = n(22199),
+                x = n(699416),
                 u = n(533476),
                 h = n(167285),
                 p = n(455091);
@@ -879,4 +879,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.15d956fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.77de13ca.js.map

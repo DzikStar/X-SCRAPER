@@ -2821,8 +2821,14 @@
                 t("ae864b69", function (e) {
                     return "Abonnementsnivået endres til " + e.tierName + " fra neste faktureringsperiode " + e.date;
                 }),
+                t("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 t("edbb700f", function (e) {
                     return "Starter med neste faktureringssyklus " + e.date;
+                }),
+                t("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 t("e9884540", "Aktiv rabatt"),
                 t("bfb879aa", "Ventende rabatt"),
@@ -2964,10 +2970,10 @@
                 t("jb0a4c36", "Blogg"),
                 t("ce6d095a", "Jobbmuligheter"),
                 t("e0adec82", "Merkevareressurser"),
-                t("df1b7550", "Markedsføring"),
-                t("he258678", "X for bedrifter"),
-                t("c6f58084", "Utviklere");
-            t("d83f18d2", "Katalog"),
+                t("df1b7550", "Markedsføring");
+            t("he258678", "X for bedrifter"),
+                t("c6f58084", "Utviklere"),
+                t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Last ned X-appen"),
                 t("j0693948", "Last ned Grok-appen"),
                 t("af781666", "Hva tenker brukerne?"),
@@ -2977,7 +2983,7 @@
                 t("bce3726a", "Oppdater faktureringsopplysningene"),
                 t("fce9ecce", "Foreslåtte videoer"),
                 t("da00e00a", "Try the new News"),
-                t("c40666d8", "Try it"),
+                t("c40666d8", "Prøv"),
                 t("j66b95a2", "Dyptgående nyheter"),
                 t("b58d2bd2", "Relevante innlegg"),
                 t("efe6ef9e", "Se innlegg"),
@@ -3880,10 +3886,10 @@
                 t("cbef820f", function (e) {
                     return e.screenName + " republiserte strømmen!";
                 }),
-                t("e3275464", "Send"),
-                t("cededf2a", "Vert"),
-                t("i2caef48", "Medverter");
-            t("j245c654", "Talere"),
+                t("e3275464", "Send");
+            t("cededf2a", "Vert"),
+                t("i2caef48", "Medverter"),
+                t("j245c654", "Talere"),
                 t("eda23a02", "Lyttere"),
                 t("b90eb348", "Inviter til å snakke"),
                 t("d9a63e82", "Fjern fra talere"),
@@ -4916,10 +4922,10 @@
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
                 t("ed99baea", "Tidlig betatilgang"),
-                t("gf898b70", "Avansert søk"),
-                t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
-                t("a8584698", "ki oppstartsselskap");
-            t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
+                t("gf898b70", "Avansert søk");
+            t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
+                t("a8584698", "ki oppstartsselskap"),
+                t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
                 t("j8ee77c4", '"ki-oppstartsselskap"'),
                 t("d0480758", "inneholder enten «ki» eller «oppstartsselskap» (eller begge)"),
                 t("f0048fa2", "ki OR oppstartsselskap"),
@@ -5882,10 +5888,10 @@
                 t("cbae35fa", "Rapporter sendingen"),
                 t("fd12ab58", "Samlingsinnlegg"),
                 t("a226497c", "Opprett et nytt Fellesskap"),
-                t("d7346632", "Du er ikke med i noen fellesskaper ennå"),
-                t("b732a4cc", "Når du gjør det, ser du innleggene hens her."),
-                t("hff48914", "Kunne ikke finne noen innlegg nå.");
-            t("hb52cc4a", "Prøv på nytt senere."),
+                t("d7346632", "Du er ikke med i noen fellesskaper ennå");
+            t("b732a4cc", "Når du gjør det, ser du innleggene hens her."),
+                t("hff48914", "Kunne ikke finne noen innlegg nå."),
+                t("hb52cc4a", "Prøv på nytt senere."),
                 t("e50e1bb0", "Velkommen til Fellesskaper"),
                 t("i6829daa", "Fellesskaper er modererte diskusjonsgrupper der X-brukere kan komme sammen og dele informasjon."),
                 t("fc5c6914", "Møt andre med samme interesser som deg"),
@@ -6717,6 +6723,7 @@
                 t("i1801686", "Denne søkestrengen er ikke gyldig. Prøv en annen."),
                 t("a0b4541c", "Det oppstod et problem (ikke din feil)"),
                 t("d7eebb60", "Abonnementet opprettes"),
+                t("h707b180", "Your subscription update is complete"),
                 t("a452ab68", "Det kan ta noen sekunder."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Oppdateringen var vellykket"),
@@ -6879,11 +6886,11 @@
                 t("e0198956", "Få en andel av inntektene som genereres av verifiserte kontoers engasjement i innhold du publiserer på X."),
                 t("iadf78e2", "Last ned videoer"),
                 t("ee54c3de", "Lagre videoer rett på enheten din"),
-                t("ae03594c", "Liten svarfremming"),
-                t("e6bb08c0", "Øk synligheten til svarene dine"),
+                t("ae03594c", "Liten svarfremming");
+            t("e6bb08c0", "Øk synligheten til svarene dine"),
                 t("bf2a6acc", "Høy svarfremming"),
-                t("c2059276", "Frem svarene dine.");
-            t("b023ec20", "Maksimal svarfremming"),
+                t("c2059276", "Frem svarene dine."),
+                t("b023ec20", "Maksimal svarfremming"),
                 t("g337328e", "Få størst synlighet for svarene dine."),
                 t("fa006202", "Avspilling av bakgrunnsvideo"),
                 t("jf389778", "Se mens du søker på nettet eller bruker andre apper"),
@@ -7394,7 +7401,7 @@
                 t("bcd9cf68", "Over 65"),
                 t("f05f1838", "Annet / ikke spesifisert"),
                 t("fa5be588", "Organiske"),
-                t("c65126fe", "Boosted"),
+                t("c65126fe", "Fremmet"),
                 t("c61c6624", "Promotert"),
                 t("f1196a04", "Boost Analytics"),
                 t("bb66e3fc", "Promote Analytics"),
@@ -7857,10 +7864,7 @@
                 t("ddfd6718", "Betalingen mislyktes"),
                 t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
                 t("a62359e6", "Innstillinger for verifisert organisasjon"),
-                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
-                t("i4dccc18", "Fakturering"),
-                t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
-                t("dac61c3c", "Kontoinnstillinger");
+                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7899,7 +7903,10 @@
                     d(e, n)
                 );
             }
-            t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
+            t("i4dccc18", "Fakturering"),
+                t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
+                t("dac61c3c", "Kontoinnstillinger"),
+                t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
                 t("hb9c4a1c", "Spørsmål, feilrapporteringer og tilbakemeldinger"),
                 t("c674f5b4", "Konfigurer fakturabetalinger"),
                 t("i8237e66", "Bytt fra kredittkortbetalinger til fakturering med bankoverføring."),
@@ -8901,15 +8908,15 @@
                 }),
                 t("ae408b76", "Du republiserte"),
                 t("j355f008", "Festet innlegg"),
-                t("habf9678", "Festet av forfatteren"),
-                t("db0798ed", function (e) {
-                    return "Emne: " + e.topicName;
-                }),
+                t("habf9678", "Festet av forfatteren");
+            t("db0798ed", function (e) {
+                return "Emne: " + e.topicName;
+            }),
                 t("dc716ec9", function (e) {
                     return "Anbefalt emne: " + e.topicName;
                 }),
-                t("fbc2003c", "Avsluttet");
-            t("h5051dd8", "Kansellert"),
+                t("fbc2003c", "Avsluttet"),
+                t("h5051dd8", "Kansellert"),
                 t("bb5f91a3", function (e) {
                     return e.count + " i dette området";
                 }),
@@ -13216,4 +13223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.1319b5aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.6453ebfa.js.map

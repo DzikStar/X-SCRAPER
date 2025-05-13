@@ -2822,8 +2822,14 @@
                 t("ae864b69", function (e) {
                     return "El teu nivell de subscripció està programat per canviar a " + e.tierName + " a partir del següent cicle de facturació el " + e.date;
                 }),
+                t("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 t("edbb700f", function (e) {
                     return "Comença el dia " + e.date + " amb el proper cicle de facturació";
+                }),
+                t("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 t("e9884540", "Descompte actiu"),
                 t("bfb879aa", "Descompte pendent"),
@@ -2965,10 +2971,10 @@
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Professions"),
                 t("e0adec82", "Recursos de marca"),
-                t("df1b7550", "Màrqueting"),
-                t("he258678", "X per a empreses"),
-                t("c6f58084", "Desenvolupadors");
-            t("d83f18d2", "Directori"),
+                t("df1b7550", "Màrqueting");
+            t("he258678", "X per a empreses"),
+                t("c6f58084", "Desenvolupadors"),
+                t("d83f18d2", "Directori"),
                 t("hc5aa17c", "Obtén l'aplicació de X"),
                 t("j0693948", "Obtén l'aplicació de Grok"),
                 t("af781666", "Què pensa la gent?"),
@@ -2978,7 +2984,7 @@
                 t("bce3726a", "Actualitza la facturació"),
                 t("fce9ecce", "Vídeos suggerits"),
                 t("da00e00a", "Try the new News"),
-                t("c40666d8", "Try it"),
+                t("c40666d8", "Prova-ho"),
                 t("j66b95a2", "Notícies detallades"),
                 t("b58d2bd2", "Publicacions rellevants"),
                 t("efe6ef9e", "Mostra la publicació"),
@@ -3881,10 +3887,10 @@
                 t("cbef820f", function (e) {
                     return e.screenName + " ha republicat la transmissió!";
                 }),
-                t("e3275464", "Envia"),
-                t("cededf2a", "Amfitrió"),
-                t("i2caef48", "Coamfitrions");
-            t("j245c654", "Participants"),
+                t("e3275464", "Envia");
+            t("cededf2a", "Amfitrió"),
+                t("i2caef48", "Coamfitrions"),
+                t("j245c654", "Participants"),
                 t("eda23a02", "Oients"),
                 t("b90eb348", "Convida a parlar"),
                 t("d9a63e82", "Elimina'l dels participants"),
@@ -4917,10 +4923,10 @@
                 t("if2909ba", "Temps de visualització"),
                 t("i0e5bf4c", "Els teus vídeos"),
                 t("ed99baea", "Accès beta anticipat"),
-                t("gf898b70", "Cerca avançada"),
-                t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
-                t("a8584698", "empresa emergent d'ia");
-            t("jb6f9292", 'conté la frase exacta "empresa emergent d\'ia"'),
+                t("gf898b70", "Cerca avançada");
+            t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
+                t("a8584698", "empresa emergent d'ia"),
+                t("jb6f9292", 'conté la frase exacta "empresa emergent d\'ia"'),
                 t("j8ee77c4", '"empresa emergent d\'ia"'),
                 t("d0480758", 'conté "ia" o "empresa emergent" (o ambdós)'),
                 t("f0048fa2", "ia O empresa emergent"),
@@ -5883,10 +5889,10 @@
                 t("cbae35fa", "Denuncia l'emissió"),
                 t("fd12ab58", "Publicacions de recull"),
                 t("a226497c", "Crea una Comunitat nova"),
-                t("d7346632", "Encara no t'has unit a cap Comunitat"),
-                t("b732a4cc", "Si ho fas, veuràs les seves publicacions aquí."),
-                t("hff48914", "En aquest moment, no s'ha trobat cap publicació.");
-            t("hb52cc4a", "Torna-ho a provar més tard."),
+                t("d7346632", "Encara no t'has unit a cap Comunitat");
+            t("b732a4cc", "Si ho fas, veuràs les seves publicacions aquí."),
+                t("hff48914", "En aquest moment, no s'ha trobat cap publicació."),
+                t("hb52cc4a", "Torna-ho a provar més tard."),
                 t("e50e1bb0", "Et donem la benvinguda a les comunitats"),
                 t("i6829daa", "Les comunitats són grups de debat moderats on els usuaris de X poden connectar i compartir continguts."),
                 t("fc5c6914", "Coneix altres usuaris amb els teus interessos"),
@@ -6718,6 +6724,7 @@
                 t("i1801686", "La consulta de cerca no és vàlida. Prova'n una altra."),
                 t("a0b4541c", "Alguna cosa ha anat malament, però no és culpa teva"),
                 t("d7eebb60", "S'està configurant la subscripció"),
+                t("h707b180", "Your subscription update is complete"),
                 t("a452ab68", "Això pot trigar uns segons."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "S'ha actualitzat correctament"),
@@ -6880,11 +6887,11 @@
                 t("e0198956", "Obtén una part dels ingressos generats per la interacció de comptes verificats amb el contingut que publiques a X."),
                 t("iadf78e2", "Baixa els vídeos"),
                 t("ee54c3de", "Desa vídeos directament al teu dispositiu"),
-                t("ae03594c", "Potencia les respostes breus"),
-                t("e6bb08c0", "Millora la visibilitat de les teves respostes"),
+                t("ae03594c", "Potencia les respostes breus");
+            t("e6bb08c0", "Millora la visibilitat de les teves respostes"),
                 t("bf2a6acc", "Priorització de les respostes llargues"),
-                t("c2059276", "Dona ressò a les teves respostes.");
-            t("b023ec20", "Màxima priorització de respostes"),
+                t("c2059276", "Dona ressò a les teves respostes."),
+                t("b023ec20", "Màxima priorització de respostes"),
                 t("g337328e", "Aconsegueix màxima visibilitat per a les teves respostes."),
                 t("fa006202", "Reproducció de vídeo en segon pla"),
                 t("jf389778", "Mira'ls mentre navegues o utilitzes altres aplicacions"),
@@ -7395,7 +7402,7 @@
                 t("bcd9cf68", "Més de 65"),
                 t("f05f1838", "Altres / No especificat"),
                 t("fa5be588", "Natural"),
-                t("c65126fe", "Boosted"),
+                t("c65126fe", "Prioritzat"),
                 t("c61c6624", "Patrocinat"),
                 t("f1196a04", "Boost Analytics"),
                 t("bb66e3fc", "Promote Analytics"),
@@ -7858,10 +7865,7 @@
                 t("ddfd6718", "Ha fallat el pagament"),
                 t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
                 t("a62359e6", "Configuració d'organització verificada"),
-                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
-                t("i4dccc18", "Facturació"),
-                t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
-                t("dac61c3c", "Configuració del compte");
+                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7900,7 +7904,10 @@
                     n(e, a)
                 );
             }
-            t("b6b5fd66", "Gestiona el teu compte de X i fes canvis, per exemple, al nom d'usuari o la contrasenya."),
+            t("i4dccc18", "Facturació"),
+                t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
+                t("dac61c3c", "Configuració del compte"),
+                t("b6b5fd66", "Gestiona el teu compte de X i fes canvis, per exemple, al nom d'usuari o la contrasenya."),
                 t("hb9c4a1c", "Preguntes, informes d'errors i comentaris"),
                 t("c674f5b4", "Configura el pagament de factures"),
                 t("i8237e66", "Passa del pagament amb targeta de crèdit a la facturació mitjançant transferència bancària."),
@@ -8902,15 +8909,15 @@
                 }),
                 t("ae408b76", "Ho has republicat"),
                 t("j355f008", "Publicació fixada"),
-                t("habf9678", "Fixat per l'autor"),
-                t("db0798ed", function (e) {
-                    return e.topicName + " Tema";
-                }),
+                t("habf9678", "Fixat per l'autor");
+            t("db0798ed", function (e) {
+                return e.topicName + " Tema";
+            }),
                 t("dc716ec9", function (e) {
                     return "Tema recomanat: " + e.topicName;
                 }),
-                t("fbc2003c", "Finalitzat");
-            t("h5051dd8", "S'ha cancel·lat"),
+                t("fbc2003c", "Finalitzat"),
+                t("h5051dd8", "S'ha cancel·lat"),
                 t("bb5f91a3", function (e) {
                     return e.count + " en aquest Espai";
                 }),
@@ -13218,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.69f2556a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.9f9c09aa.js.map

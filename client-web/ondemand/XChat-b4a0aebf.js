@@ -5,7 +5,7 @@
         759746: (e, t, s) => {
             s.d(t, { M: () => a });
             var n = s(552322),
-                o = s(475694),
+                o = s(789764),
                 r = s(350311);
             const i = ({ firstUrl: e, resolution: t, secondUrl: s, size: o = "xxLarge" }) => {
                     const i = ((e) => {
@@ -69,7 +69,7 @@
         350311: (e, t, s) => {
             s.d(t, { j: () => r, s: () => i });
             var n = s(552322),
-                o = s(26429);
+                o = s(378364);
             const r = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                 i = ({ url: e, size: t, resolution: s = "200x200" }) => (0, n.jsx)(o.q, { url: e || r, size: t, resolution: s });
         },
@@ -158,12 +158,12 @@
             var n = s(552322),
                 o = s(727071),
                 r = s(425522),
-                i = s(941204),
-                a = s(702024),
-                l = s(436059),
+                i = s(332161),
+                a = s(193686),
+                l = s(993165),
                 c = s(559040),
                 d = s(533476),
-                m = s(194484);
+                m = s(138179);
             function x() {
                 return (0, n.jsxs)("div", { children: [(0, n.jsx)(i.x, { weight: "bold", children: "No chats yet" }), (0, n.jsx)(i.x, { color: "gray700", children: "Start chatting with end-to-end encryption" })] });
             }
@@ -242,10 +242,10 @@
                 O = s(748055),
                 U = s(336984),
                 A = s(369962),
-                M = s(964655),
-                F = s(469745),
-                G = s(889198),
-                B = s(856402),
+                M = s(589259),
+                F = s(305399),
+                G = s(458872),
+                B = s(22199),
                 Z = s(32161);
             const $ = r.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
                 W = r.com.x.dms.model.DmTitleState,
@@ -405,4 +405,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.94b1211a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.1675db5a.js.map

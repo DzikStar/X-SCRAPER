@@ -8,12 +8,16 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.12"),
-                        n.e("icons.20"),
-                        n.e("icons.0"),
+                        n.e("icons.8"),
                         n.e("icons.21"),
-                        n.e("icons.28"),
+                        n.e("icons.13"),
+                        n.e("icons.20"),
+                        n.e("icons.14"),
+                        n.e("icons.1"),
+                        n.e("icons.3"),
+                        n.e("icons.24"),
+                        n.e("icons.11"),
+                        n.e("icons.10"),
                         n.e("icons.17"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
@@ -22,6 +26,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -244,22 +249,22 @@
                 C = n(750085);
             const M = (0, n(218951).Z)({ timelineId: "communitiesDiscoveryTimeline", network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchCommunityDiscoveryTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, context: "FETCH_COMMUNITIES_DISCOVERY_TIMELINE", perfKey: "communitiesDiscoveryTimeline", formatResponse: C.Z });
             var g = n(317979),
-                _ = n(376273),
-                D = n(986564),
+                D = n(376273),
+                _ = n(986564),
                 Z = (n(585488), n(457311)),
                 w = n(965245),
                 T = n(127218),
                 I = n(206427);
             const A = (e) => e.__id,
                 x = l().cae9962e,
-                S = D.Z,
-                P = (e) => ("Community" !== e?.result?.__typename ? null : r.createElement(I.Z, { item: e.result }));
-            function v(e) {
-                const { data: t, fetchNext: n } = (0, T.C)(S, { topicId: e.topicId ? e.topicId : "1" }),
+                P = _.Z,
+                S = (e) => ("Community" !== e?.result?.__typename ? null : r.createElement(I.Z, { item: e.result }));
+            function k(e) {
+                const { data: t, fetchNext: n } = (0, T.C)(P, { topicId: e.topicId ? e.topicId : "1" }),
                     o = t?.fetch_popular_communities?.items_results.filter((e) => "Community" === e.result?.__typename);
-                return 0 === o.length ? r.createElement(Z.Z, { message: x }) : r.createElement(w.Z, { cacheKey: "CommunitiesTopicSearch", identityFunction: A, items: o, onNearEnd: n, renderer: P });
+                return 0 === o.length ? r.createElement(Z.Z, { message: x }) : r.createElement(w.Z, { cacheKey: "CommunitiesTopicSearch", identityFunction: A, items: o, onNearEnd: n, renderer: S });
             }
-            const k = l().cb6adb10,
+            const v = l().cb6adb10,
                 R = () => r.createElement(f.Z, { entryConfiguration: g.Z, module: M, refreshControl: null, title: "" }),
                 O = { context: "TopicExplorerCarousel" },
                 N = { context: "TopicExplorerTimeline" };
@@ -267,7 +272,7 @@
                 const { featureSwitches: e } = r.useContext(E.rC),
                     t = e.isTrue("communities_topic_carousel_enabled"),
                     [n, o] = r.useState(null);
-                return r.createElement(m.Z, null, r.createElement(h.Z, { text: k }), r.createElement(b.H, { errorConfig: O }, t ? r.createElement(_.Z, { setTopic: o, topic: n }) : null, r.createElement(b.H, { errorConfig: N }, n && t ? r.createElement(v, { topicId: n }) : r.createElement(R, null))));
+                return r.createElement(m.Z, null, r.createElement(h.Z, { text: v }), r.createElement(b.H, { errorConfig: O }, t ? r.createElement(D.Z, { setTopic: o, topic: n }) : null, r.createElement(b.H, { errorConfig: N }, n && t ? r.createElement(k, { topicId: n }) : r.createElement(R, null))));
             }
             const H = l().d7d9be8a,
                 L = l().h02a6fe6,
@@ -312,7 +317,7 @@
                 p = o.memo(m);
         },
         627267: (e, t, n) => {
-            n.d(t, { DO: () => I, l1: () => v, gH: () => M, FP: () => W, mI: () => q });
+            n.d(t, { DO: () => I, l1: () => k, gH: () => M, FP: () => W, mI: () => q });
             var r = n(548622),
                 o = n(202784),
                 a = (n(585488), n(457311)),
@@ -336,8 +341,8 @@
                 C = ({ query: e }) => (e ? o.createElement(c.H, { errorConfig: u }, o.createElement(y, { query: e })) : null),
                 M = o.memo(C);
             var g = n(107267),
-                _ = n(371344),
-                D = n(956272),
+                D = n(371344),
+                _ = n(956272),
                 Z = n(666536);
             const w = l().cbd1aef8,
                 T = ({ initialValue: e = "" }) => {
@@ -371,15 +376,15 @@
                             },
                             [s],
                         );
-                    return o.createElement(_.Z, { Icon: D.default, autoComplete: "off", isCompact: !0, onChange: c, onClear: l, placeholder: w, value: n, withClearButton: !0 });
+                    return o.createElement(D.Z, { Icon: _.default, autoComplete: "off", isCompact: !0, onChange: c, onClear: l, placeholder: w, value: n, withClearButton: !0 });
                 },
                 I = o.memo(T);
             var A = n(154003),
                 x = n(392237);
-            const S = l().fbf01e52,
-                P = (e) => o.createElement(A.ZP, { icon: o.createElement(D.default, { "aria-label": S, style: k.searchButton }), link: "/i/communities/suggested", size: "medium", type: "brandText" }),
-                v = o.memo(P),
-                k = x.default.create((e) => ({ searchButton: { color: e.colors.text } }));
+            const P = l().fbf01e52,
+                S = (e) => o.createElement(A.ZP, { icon: o.createElement(_.default, { "aria-label": P, style: v.searchButton }), link: "/i/communities/suggested", size: "medium", type: "brandText" }),
+                k = o.memo(S),
+                v = x.default.create((e) => ({ searchButton: { color: e.colors.text } }));
             var R = n(810641),
                 O = n(644829),
                 N = n(750085),
@@ -528,31 +533,31 @@
                     .propsFromState(() => ({ hasCommunityMemberships: f.fn, screenName: C.be, user: M }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, E.zr)("USER_COMMUNITIES"), fetchOneUserByScreenNameIfNeeded: y.ZP.fetchOneByScreenNameIfNeeded }))
                     .withAnalytics({ page: "communities" });
-            var _ = n(26363),
-                D = (n(585488), n(736063)),
+            var D = n(26363),
+                _ = (n(585488), n(736063)),
                 Z = n(535338),
                 w = n(997661),
                 T = n(277660),
                 I = n.n(T),
                 A = n(154003),
                 x = n(971657);
-            const S = s().a226497c,
-                P = r.memo((e) => {
+            const P = s().a226497c,
+                S = r.memo((e) => {
                     const t = I()(w.Z, e.createActionResult);
                     if ("CommunityCreateActionUnavailable" === t.__typename && "NotVerified" !== t.reason) return null;
                     const n = "CommunityCreateActionUnavailable" === t.__typename ? { pathname: "/i/verified-get-verified", state: { variant: "CreateCommunity" } } : "/i/communities/create";
-                    return r.createElement(A.ZP, { icon: r.createElement(x.default, { "aria-label": S, style: v.createButton }), link: n, size: "medium", type: "brandText" });
+                    return r.createElement(A.ZP, { icon: r.createElement(x.default, { "aria-label": P, style: k.createButton }), link: n, size: "medium", type: "brandText" });
                 }),
-                v = i.default.create((e) => ({ createButton: { color: e.colors.text } })),
-                k = r.memo(P),
+                k = i.default.create((e) => ({ createButton: { color: e.colors.text } })),
+                v = r.memo(S),
                 R = { context: "CommunityCreateButton" },
-                O = _.Z,
+                O = D.Z,
                 N = (e) => {
                     const t = (0, Z.p)(O, {}, { fetchPolicy: "store-and-network" }),
                         n = t.viewer?.create_community_action_result;
-                    return n ? r.createElement(k, { createActionResult: n }) : null;
+                    return n ? r.createElement(v, { createActionResult: n }) : null;
                 },
-                U = (e) => r.createElement(D.H, { errorConfig: R }, r.createElement(N, null)),
+                U = (e) => r.createElement(_.H, { errorConfig: R }, r.createElement(N, null)),
                 H = r.memo(U);
             n(136728);
             var L = n(457311),
@@ -604,19 +609,19 @@
                         t = e?.user_results?.result;
                     return t && "User" === t.__typename ? r.createElement(be, { user: t }) : null;
                 },
-                ge = () => r.createElement(D.H, { errorConfig: ye }, r.createElement(Me, null));
-            var _e = n(317979),
-                De = n(402180),
+                ge = () => r.createElement(_.H, { errorConfig: ye }, r.createElement(Me, null));
+            var De = n(317979),
+                _e = n(402180),
                 Ze = n(321155),
                 we = n(844685),
                 Te = n(401388),
                 Ie = n(952428),
                 Ae = n(731708),
                 xe = n(178519);
-            const Se = s().df362964,
-                Pe = () => r.createElement(Ie.Z, { link: "/i/communities/suggested", style: ke.root }, r.createElement(o.Z, { style: ke.container }, r.createElement(o.Z, { style: ke.thumbnailContainer }, r.createElement(xe.default, { style: ke.icon })), r.createElement(Ae.ZP, { numberOfLines: 1, weight: "bold" }, Se))),
-                ve = r.memo(Pe),
-                ke = i.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row", alignItems: "center" }, icon: { color: e.colors.blue500, width: e.spaces.space28, height: e.spaces.space28 }, thumbnailContainer: { width: "96px", height: "96px", marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden", backgroundColor: e.colors.unreadCellBackground, alignItems: "center", justifyContent: "center" } }));
+            const Pe = s().df362964,
+                Se = () => r.createElement(Ie.Z, { link: "/i/communities/suggested", style: ve.root }, r.createElement(o.Z, { style: ve.container }, r.createElement(o.Z, { style: ve.thumbnailContainer }, r.createElement(xe.default, { style: ve.icon })), r.createElement(Ae.ZP, { numberOfLines: 1, weight: "bold" }, Pe))),
+                ke = r.memo(Se),
+                ve = i.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row", alignItems: "center" }, icon: { color: e.colors.blue500, width: e.spaces.space28, height: e.spaces.space28 }, thumbnailContainer: { width: "96px", height: "96px", marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden", backgroundColor: e.colors.unreadCellBackground, alignItems: "center", justifyContent: "center" } }));
             var Re = n(36862),
                 Oe = n(530525),
                 Ne = n(439592),
@@ -678,18 +683,18 @@
                                 .map((e) => r.createElement(tt, { community: e, key: e.id_str })),
                         [n],
                     );
-                    return (0, Te.Z)(a) ? null : r.createElement(o.Z, { style: lt.paddingHorizontal }, r.createElement(we.Z, { text: at }), a, r.createElement(ve, null), r.createElement(G.Z, { entryConfiguration: _e.Z, module: te, refreshControl: null, title: rt }));
+                    return (0, Te.Z)(a) ? null : r.createElement(o.Z, { style: lt.paddingHorizontal }, r.createElement(we.Z, { text: at }), a, r.createElement(ke, null), r.createElement(G.Z, { entryConfiguration: De.Z, module: te, refreshControl: null, title: rt }));
                 }),
                 lt = i.default.create((e) => ({ paddingHorizontal: { paddingHorizontal: e.spaces.space8 } })),
                 st = r.memo(it),
                 ct = { context: "COMMUNITY_LIST_ACTIVITY" },
-                dt = De.Z,
+                dt = _e.Z,
                 mt = ({ handleAtTop: e }) => {
                     const { viewer_v2: t } = se()(dt, {}),
                         n = t?.user_results?.result;
                     return "User" === n?.__typename ? r.createElement(st, { handleAtTop: e, user: n }) : null;
                 },
-                ut = ({ handleAtTop: e }) => r.createElement(D.H, { errorConfig: ct }, r.createElement(mt, { handleAtTop: e })),
+                ut = ({ handleAtTop: e }) => r.createElement(_.H, { errorConfig: ct }, r.createElement(mt, { handleAtTop: e })),
                 pt = r.memo(ut);
             var ht = n(376273),
                 Et = n(138099),
@@ -716,8 +721,8 @@
             }
             const Mt = i.default.create((e) => ({ sheet: { padding: e.spaces.space16 } })),
                 gt = s().c63602d4,
-                _t = s().ha8209bc,
-                Dt = s().fcf3e54c,
+                Dt = s().ha8209bc,
+                _t = s().fcf3e54c,
                 Zt = s().d7346632,
                 wt = s().b732a4cc,
                 Tt = s().hff48914,
@@ -739,11 +744,11 @@
                     f = (0, a.useParams)().screenName || "",
                     y = (0, a.matchPath)(location.pathname, { path: `/${f}/communities/explore`, exact: !0 }),
                     [C, M] = r.useState(!1),
-                    [g, _] = r.useState(() => {
+                    [g, D] = r.useState(() => {
                         const e = d.location.state?.sort;
                         return s ? (e ?? j.UO.RELEVANCE) : j.UO.RECENCY;
                     }),
-                    D = r.useCallback(() => {
+                    _ = r.useCallback(() => {
                         M(!1);
                     }, []),
                     [Z, w] = r.useState(() => {
@@ -757,11 +762,11 @@
                     I = r.createElement($.default, null),
                     A = C ? I : T,
                     x = r.useMemo(() => {
-                        const t = { to: `/${f}/communities`, label: s && !y ? r.createElement(r.Fragment, null, _t, " ", A) : _t, key: _t, onClick: () => (s ? M(!0) : null) },
-                            n = e ? [t, { to: `/${f}/communities/explore`, label: Dt, key: Dt }] : [];
-                        return r.createElement(K.Z, { "aria-label": gt, links: n, style: St.tabContainer });
+                        const t = { to: `/${f}/communities`, label: s && !y ? r.createElement(r.Fragment, null, Dt, " ", A) : Dt, key: Dt, onClick: () => (s ? M(!0) : null) },
+                            n = e ? [t, { to: `/${f}/communities/explore`, label: _t, key: _t }] : [];
+                        return r.createElement(K.Z, { "aria-label": gt, links: n, style: Pt.tabContainer });
                     }, [f, A, s, y, e]),
-                    S =
+                    P =
                         i && y
                             ? l
                                 ? r.createElement(ht.Z, {
@@ -774,7 +779,7 @@
                             : (0, V.HD)(d)
                               ? null
                               : r.createElement(ge, null),
-                    P = (0, Y.z)();
+                    S = (0, Y.z)();
                 return r.createElement(
                     r.Fragment,
                     null,
@@ -787,26 +792,26 @@
                             : r.createElement(
                                   r.Fragment,
                                   null,
-                                  r.createElement(o.Z, { style: P && St.headerContentRedesign }, i ? x : null, S),
-                                  r.createElement(G.Z, { entryConfiguration: _e.Z, module: i && y ? ((v = Z || void 0), (0, ee.Z)({ timelineId: `communitiesExploreTimeline-${v || ""}`, network: { getEndpoint: (e) => e.withEndpoint(X.Z).fetchCommunitiesExploreTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0, topicId: v }) }, context: "FETCH_COMMUNITIES_EXPLORE_TIMELINE", perfKey: "communitiesExploreTimeline", formatResponse: J.Z })) : g === j.UO.RECENCY ? ne : re, onAtTop: b, prerollDisplayLocation: Q.Nw.OTHER, refreshControl: null, renderEmptyState: i && y ? h : p, title: gt }),
+                                  r.createElement(o.Z, { style: S && Pt.headerContentRedesign }, i ? x : null, P),
+                                  r.createElement(G.Z, { entryConfiguration: De.Z, module: i && y ? ((k = Z || void 0), (0, ee.Z)({ timelineId: `communitiesExploreTimeline-${k || ""}`, network: { getEndpoint: (e) => e.withEndpoint(X.Z).fetchCommunitiesExploreTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0, topicId: k }) }, context: "FETCH_COMMUNITIES_EXPLORE_TIMELINE", perfKey: "communitiesExploreTimeline", formatResponse: J.Z })) : g === j.UO.RECENCY ? ne : re, onAtTop: b, prerollDisplayLocation: Q.Nw.OTHER, refreshControl: null, renderEmptyState: i && y ? h : p, title: gt }),
                                   C &&
                                       r.createElement(Ct, {
                                           onChange: (e) => {
-                                              _(e), d.replace({ pathname: `/${f}/communities`, state: { sort: e } });
+                                              D(e), d.replace({ pathname: `/${f}/communities`, state: { sort: e } });
                                           },
-                                          onDismiss: D,
+                                          onDismiss: _,
                                           value: g,
                                       }),
                               ),
                     ),
                 );
-                var v;
+                var k;
             }
             const xt = r.memo(At),
-                St = i.default.create((e) => ({ tabContainer: { marginBottom: e.spaces.space8 }, headerContentRedesign: { paddingHorizontal: e.spaces.space16 } }));
-            var Pt = n(652904),
-                vt = n(935114),
-                kt = n(962741),
+                Pt = i.default.create((e) => ({ tabContainer: { marginBottom: e.spaces.space8 }, headerContentRedesign: { paddingHorizontal: e.spaces.space16 } }));
+            var St = n(652904),
+                kt = n(935114),
+                vt = n(962741),
                 Rt = n(125363),
                 Ot = n(709318),
                 Nt = n(24949);
@@ -821,7 +826,7 @@
                 Bt = s().c63602d4,
                 Ft = s().d7346632,
                 $t = s().hb01fe46;
-            const Vt = { ..._e.Z, [kt.UZ.Community]: (0, vt.Z)({ shouldDisplayPin: !0 }) },
+            const Vt = { ...De.Z, [vt.UZ.Community]: (0, kt.Z)({ shouldDisplayPin: !0 }) },
                 zt = Lt(function (e) {
                     const { isViewerUser: t, urtModule: n } = e,
                         o = r.useCallback(() => (t ? r.createElement(L.Z, { header: Ft, message: $t }) : null), [t]),
@@ -830,7 +835,7 @@
                         r.useEffect(() => {
                             a((0, Ot.Mq)());
                         }, [a]),
-                        n ? r.createElement(Pt.Z, null, r.createElement(G.Z, { entryConfiguration: Vt, module: n, refreshControl: null, renderEmptyState: o, title: Bt })) : null
+                        n ? r.createElement(St.Z, null, r.createElement(G.Z, { entryConfiguration: Vt, module: n, refreshControl: null, renderEmptyState: o, title: Bt })) : null
                     );
                 });
             var Kt = n(627267);
@@ -878,4 +883,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.021d7c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.0d30c84a.js.map

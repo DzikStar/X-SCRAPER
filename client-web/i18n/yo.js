@@ -2825,8 +2825,14 @@
                 a("ae864b69", function (e) {
                     return "Your subscription tier is scheduled to change to " + e.tierName + " from the next billing cycle on " + e.date;
                 }),
+                a("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 a("edbb700f", function (e) {
                     return "Starts with next billing cycle on " + e.date;
+                }),
+                a("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 a("e9884540", "Active discount"),
                 a("bfb879aa", "Pending discount"),
@@ -2968,10 +2974,10 @@
                 a("jb0a4c36", "Búlọ́ọ̀gì"),
                 a("ce6d095a", "Iṣẹ́ àṣelà"),
                 a("e0adec82", "Àwọn Ohun-èlò Àmi Òwò"),
-                a("df1b7550", "Ìpolówó ọjà"),
-                a("he258678", "X for Business"),
-                a("c6f58084", "Àwọn olùkò kóòdù");
-            a("d83f18d2", "Ìtọ́nisọ́nà"),
+                a("df1b7550", "Ìpolówó ọjà");
+            a("he258678", "X for Business"),
+                a("c6f58084", "Àwọn olùkò kóòdù"),
+                a("d83f18d2", "Ìtọ́nisọ́nà"),
                 a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
                 a("af781666", "What do people think?"),
@@ -3884,10 +3890,10 @@
                 a("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
-                a("e3275464", "Fiṣọwọ́"),
-                a("cededf2a", "Agbàlejò"),
-                a("i2caef48", "Ajọgbàlejò");
-            a("j245c654", "Àwọn olùbánisọ̀rọ̀"),
+                a("e3275464", "Fiṣọwọ́");
+            a("cededf2a", "Agbàlejò"),
+                a("i2caef48", "Ajọgbàlejò"),
+                a("j245c654", "Àwọn olùbánisọ̀rọ̀"),
                 a("eda23a02", "Listeners"),
                 a("b90eb348", "Invite to Speak"),
                 a("d9a63e82", "Remove from Speakers"),
@@ -4920,10 +4926,10 @@
                 a("if2909ba", "Watch Time"),
                 a("i0e5bf4c", "Your videos"),
                 a("ed99baea", "Early Beta Access"),
-                a("gf898b70", "Advanced Search"),
-                a("d2a43a7a", 'contains both "ai" and "startup"'),
-                a("a8584698", "ai startup");
-            a("jb6f9292", 'contains the exact phrase "ai startup"'),
+                a("gf898b70", "Advanced Search");
+            a("d2a43a7a", 'contains both "ai" and "startup"'),
+                a("a8584698", "ai startup"),
+                a("jb6f9292", 'contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '"ai startup"'),
                 a("d0480758", 'contains either "ai" or "startup" (or both)'),
                 a("f0048fa2", "ai OR startup"),
@@ -5886,10 +5892,10 @@
                 a("cbae35fa", "Ṣe ìfisùn Ìgbóhùnsáfẹ́fẹ́"),
                 a("fd12ab58", "Collection posts"),
                 a("a226497c", "Ṣe ìdàsílẹ̀ Àwùjọ tuntun kan"),
-                a("d7346632", "O kò tí ì darapọ̀ mọ́ Àwùjọ kankan"),
-                a("b732a4cc", "When you do, you’ll see their posts here."),
-                a("hff48914", "No posts could be found at this time.");
-            a("hb52cc4a", "Please try again later."),
+                a("d7346632", "O kò tí ì darapọ̀ mọ́ Àwùjọ kankan");
+            a("b732a4cc", "When you do, you’ll see their posts here."),
+                a("hff48914", "No posts could be found at this time."),
+                a("hb52cc4a", "Please try again later."),
                 a("e50e1bb0", "Welcome to Communities"),
                 a("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 a("fc5c6914", "Pàdé àwọn míràn tí wọ́n ní ìfẹ inú bí i tìrẹ."),
@@ -6721,6 +6727,7 @@
                 a("i1801686", "Ìbéèrè ìṣàwárí yí kò tọ́. Jọ̀wọ́ gbìyànjú pẹ̀lú ìmíìn."),
                 a("a0b4541c", "Ǹkankan ò lọ dáadáa, ṣùgbọn má bẹ̀rù -̧̧- kì í ṣe ẹjọ́ rẹ."),
                 a("d7eebb60", "Setting up your subscription"),
+                a("h707b180", "Your subscription update is complete"),
                 a("a452ab68", "This may take a few seconds."),
                 a("b3bad3b2", "@premium"),
                 a("accbcc78", "Updated successfully"),
@@ -6883,11 +6890,11 @@
                 a("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 a("iadf78e2", "Download videos"),
                 a("ee54c3de", "Save videos straight to your device"),
-                a("ae03594c", "Small reply boost"),
-                a("e6bb08c0", "Increase the visibility of your replies"),
+                a("ae03594c", "Small reply boost");
+            a("e6bb08c0", "Increase the visibility of your replies"),
                 a("bf2a6acc", "Large Reply Boost"),
-                a("c2059276", "Have your replies boosted.");
-            a("b023ec20", "Max Reply Boost"),
+                a("c2059276", "Have your replies boosted."),
+                a("b023ec20", "Max Reply Boost"),
                 a("g337328e", "Get the highest visibility for your replies."),
                 a("fa006202", "Background video playback"),
                 a("jf389778", "Watch while browsing or using other apps"),
@@ -7861,10 +7868,7 @@
                 a("ddfd6718", "Payment Failed"),
                 a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "Verified Organization Settings"),
-                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                a("i4dccc18", "Billing"),
-                a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                a("dac61c3c", "Account settings");
+                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7903,7 +7907,10 @@
                     s(e, n)
                 );
             }
-            a("b6b5fd66", "Manage your X account including changing your username or password."),
+            a("i4dccc18", "Billing"),
+                a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                a("dac61c3c", "Account settings"),
+                a("b6b5fd66", "Manage your X account including changing your username or password."),
                 a("hb9c4a1c", "Questions, bug reports and feedback"),
                 a("c674f5b4", "Setup invoice payments"),
                 a("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8905,15 +8912,15 @@
                 }),
                 a("ae408b76", "You reposted"),
                 a("j355f008", "Pinned post"),
-                a("habf9678", "Ìlẹ̀mọ́ láti ọ̀dọ̀ Òǹkọ̀wé"),
-                a("db0798ed", function (e) {
-                    return "Àkọ́lé " + e.topicName;
-                }),
+                a("habf9678", "Ìlẹ̀mọ́ láti ọ̀dọ̀ Òǹkọ̀wé");
+            a("db0798ed", function (e) {
+                return "Àkọ́lé " + e.topicName;
+            }),
                 a("dc716ec9", function (e) {
                     return "Recommended Topic: " + e.topicName;
                 }),
-                a("fbc2003c", "Ti parí");
-            a("h5051dd8", "Canceled"),
+                a("fbc2003c", "Ti parí"),
+                a("h5051dd8", "Canceled"),
                 a("bb5f91a3", function (e) {
                     return e.count + " ní Àyè yìí";
                 }),
@@ -13220,4 +13227,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.a6a8d7fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.5deef66a.js.map

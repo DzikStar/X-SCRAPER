@@ -2822,8 +2822,14 @@
                 e("ae864b69", function (a) {
                     return "Tilausmallisi on " + a.tierName + " alkaen seuraavasta laskutusjaksosta " + a.date;
                 }),
+                e("a991d9a3", function (a) {
+                    return "Next billing cycle starts on " + a.date;
+                }),
                 e("edbb700f", function (a) {
                     return "Alkaa seuraavasta laskutusjaksosta " + a.date;
+                }),
+                e("e3f9d219", function (a) {
+                    return "Subscription ends on " + a.date;
                 }),
                 e("e9884540", "Alennus voimassa"),
                 e("bfb879aa", "Tuleva alennus"),
@@ -2965,10 +2971,10 @@
                 e("jb0a4c36", "Blogi"),
                 e("ce6d095a", "Työpaikat"),
                 e("e0adec82", "Brändiresurssit"),
-                e("df1b7550", "Markkinointi"),
-                e("he258678", "X yrityksille"),
-                e("c6f58084", "Kehittäjät");
-            e("d83f18d2", "Hakemisto"),
+                e("df1b7550", "Markkinointi");
+            e("he258678", "X yrityksille"),
+                e("c6f58084", "Kehittäjät"),
+                e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
                 e("j0693948", "Hanki Grok-sovellus"),
                 e("af781666", "Mitä ihmiset miettivät?"),
@@ -2978,7 +2984,7 @@
                 e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
                 e("da00e00a", "Try the new News"),
-                e("c40666d8", "Try it"),
+                e("c40666d8", "Kokeile"),
                 e("j66b95a2", "Syväluotaavia uutisia"),
                 e("b58d2bd2", "Asiaan liittyvät julkaisut"),
                 e("efe6ef9e", "Katso julkaisu"),
@@ -3881,10 +3887,10 @@
                 e("cbef820f", function (a) {
                     return a.screenName + " julkaisi striimin uudelleen!";
                 }),
-                e("e3275464", "Lähetä"),
-                e("cededf2a", "Host"),
-                e("i2caef48", "Co-hostit");
-            e("j245c654", "Puhujat"),
+                e("e3275464", "Lähetä");
+            e("cededf2a", "Host"),
+                e("i2caef48", "Co-hostit"),
+                e("j245c654", "Puhujat"),
                 e("eda23a02", "Kuuntelijat"),
                 e("b90eb348", "Kutsu puhumaan"),
                 e("d9a63e82", "Poista puhujista"),
@@ -4917,10 +4923,10 @@
                 e("if2909ba", "Katseluaika"),
                 e("i0e5bf4c", "Videosi"),
                 e("ed99baea", "Beta-ennakkokäyttö"),
-                e("gf898b70", "Tarkennettu haku"),
-                e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
-                e("a8584698", "ai startup");
-            e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
+                e("gf898b70", "Tarkennettu haku");
+            e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
+                e("a8584698", "ai startup"),
+                e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
                 e("j8ee77c4", '"ai startup"'),
                 e("d0480758", 'sisältää joko termin "ai" tai "startup" (tai molemmat)'),
                 e("f0048fa2", "ai OR startup"),
@@ -5883,10 +5889,10 @@
                 e("cbae35fa", "Ilmianna lähetys"),
                 e("fd12ab58", "Kokoelman julkaisut"),
                 e("a226497c", "Luo uusi Yhteisö"),
-                e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön"),
-                e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
-                e("hff48914", "Julkaisuja ei löydy tällä hetkellä.");
-            e("hb52cc4a", "Yritä myöhemmin uudelleen."),
+                e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön");
+            e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
+                e("hff48914", "Julkaisuja ei löydy tällä hetkellä."),
+                e("hb52cc4a", "Yritä myöhemmin uudelleen."),
                 e("e50e1bb0", "Tervetuloa Yhteisöihin"),
                 e("i6829daa", "Yhteisöt ovat moderoituja keskusteluryhmiä, joista X:n käyttäjät löytävät samanhenkistä väkeä."),
                 e("fc5c6914", "Tapaa muita samoista asioista kiinnostuneita"),
@@ -6718,6 +6724,7 @@
                 e("i1801686", "Virheellinen haku. Kokeile muuttaa hakua."),
                 e("a0b4541c", "Jokin meni pieleen, mutta älä huoli – syy ei ole sinun"),
                 e("d7eebb60", "Tilaustasi vahvistetaan"),
+                e("h707b180", "Your subscription update is complete"),
                 e("a452ab68", "Tähän voi mennä muutama sekunti."),
                 e("b3bad3b2", "@premium"),
                 e("accbcc78", "Päivitys onnistui"),
@@ -6880,11 +6887,11 @@
                 e("e0198956", "Saat osuutesi tuloista, joita muodostuu varmennettujen tilien osallistuessa X-julkaisuihisi."),
                 e("iadf78e2", "Videoiden lataus"),
                 e("ee54c3de", "Tallenna videoita suoraan laitteellesi"),
-                e("ae03594c", "Pieni vastausten tehostus"),
-                e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
+                e("ae03594c", "Pieni vastausten tehostus");
+            e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
                 e("bf2a6acc", "Suuri vastausten tehostus"),
-                e("c2059276", "Vastaustesi tehostus.");
-            e("b023ec20", "Suurin vastausten tehostus"),
+                e("c2059276", "Vastaustesi tehostus."),
+                e("b023ec20", "Suurin vastausten tehostus"),
                 e("g337328e", "Saa vastauksillesi paras näkyvyys."),
                 e("fa006202", "Videon toisto taustalla"),
                 e("jf389778", "Katsele selatessasi tai käyttäessäsi muita sovelluksia"),
@@ -7395,7 +7402,7 @@
                 e("bcd9cf68", "Yli 65"),
                 e("f05f1838", "Muu / Määrittämätön"),
                 e("fa5be588", "Orgaaniset"),
-                e("c65126fe", "Boosted"),
+                e("c65126fe", "Tehostettu"),
                 e("c61c6624", "Mainostettu"),
                 e("f1196a04", "Boost Analytics"),
                 e("bb66e3fc", "Promote Analytics"),
@@ -7858,10 +7865,7 @@
                 e("ddfd6718", "Maksu epäonnistui"),
                 e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
                 e("a62359e6", "Varmennetut organisaatiot"),
-                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
-                e("i4dccc18", "Laskutus"),
-                e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
-                e("dac61c3c", "Tilin asetukset");
+                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä.");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7900,7 +7904,10 @@
                     u(a, t)
                 );
             }
-            e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
+            e("i4dccc18", "Laskutus"),
+                e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
+                e("dac61c3c", "Tilin asetukset"),
+                e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
                 e("hb9c4a1c", "Kysymykset, bugi-ilmoitukset ja muu palaute"),
                 e("c674f5b4", "Ota laskutus käyttöön"),
                 e("i8237e66", "Vaihda luottokorttiveloitukset laskujen maksuun pankkitililtä."),
@@ -8902,15 +8909,15 @@
                 }),
                 e("ae408b76", "Uudelleenjulkaisit"),
                 e("j355f008", "Kiinnitetty julkaisu"),
-                e("habf9678", "Tekijän kiinnittämä"),
-                e("db0798ed", function (a) {
-                    return a.topicName + " aihe";
-                }),
+                e("habf9678", "Tekijän kiinnittämä");
+            e("db0798ed", function (a) {
+                return a.topicName + " aihe";
+            }),
                 e("dc716ec9", function (a) {
                     return "Suositeltu aihe: " + a.topicName;
                 }),
-                e("fbc2003c", "Päättynyt");
-            e("h5051dd8", "Peruttu"),
+                e("fbc2003c", "Päättynyt"),
+                e("h5051dd8", "Peruttu"),
                 e("bb5f91a3", function (a) {
                     return a.count + " tässä Huoneessa";
                 }),
@@ -13231,4 +13238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.9950190a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.5bef8a2a.js.map

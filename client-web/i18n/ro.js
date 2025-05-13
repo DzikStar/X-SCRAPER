@@ -2833,8 +2833,14 @@
                 t("ae864b69", function (e) {
                     return "Este planificată modificarea abonamentului tău la " + e.tierName + " începând cu următorul ciclu de facturare pe " + e.date;
                 }),
+                t("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 t("edbb700f", function (e) {
                     return "Începe cu următorul ciclu de facturare, pe " + e.date;
+                }),
+                t("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 t("e9884540", "Reducere activă"),
                 t("bfb879aa", "Reducere în așteptare"),
@@ -2976,10 +2982,10 @@
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Cariere"),
                 t("e0adec82", "Resurse pentru branduri"),
-                t("df1b7550", "Marketing"),
-                t("he258678", "X pentru afaceri"),
-                t("c6f58084", "Dezvoltatori");
-            t("d83f18d2", "Director"),
+                t("df1b7550", "Marketing");
+            t("he258678", "X pentru afaceri"),
+                t("c6f58084", "Dezvoltatori"),
+                t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
                 t("j0693948", "Obține aplicația Grok"),
                 t("af781666", "Ce spun oamenii?"),
@@ -2989,7 +2995,7 @@
                 t("bce3726a", "Actualizare informații de facturare"),
                 t("fce9ecce", "Videoclipuri sugerate"),
                 t("da00e00a", "Try the new News"),
-                t("c40666d8", "Try it"),
+                t("c40666d8", "Încearcă"),
                 t("j66b95a2", "Știri detaliate"),
                 t("b58d2bd2", "Postări relevante"),
                 t("efe6ef9e", "Vizualizează postarea"),
@@ -3892,10 +3898,10 @@
                 t("cbef820f", function (e) {
                     return e.screenName + " a repostat fluxul!";
                 }),
-                t("e3275464", "Trimite"),
-                t("cededf2a", "Gazdă"),
-                t("i2caef48", "Co-gazde");
-            t("j245c654", "Vorbitori"),
+                t("e3275464", "Trimite");
+            t("cededf2a", "Gazdă"),
+                t("i2caef48", "Co-gazde"),
+                t("j245c654", "Vorbitori"),
                 t("eda23a02", "Ascultători"),
                 t("b90eb348", "Invită să vorbească"),
                 t("d9a63e82", "Elimină din rândul vorbitorilor"),
@@ -4928,10 +4934,10 @@
                 t("if2909ba", "Durată vizionare"),
                 t("i0e5bf4c", "Videoclipurile tale"),
                 t("ed99baea", "Acces timpuriu la versiunea beta"),
-                t("gf898b70", "Căutare avansată"),
-                t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
-                t("a8584698", "start-up ai");
-            t("jb6f9292", "conține exact structura „start-up ai”"),
+                t("gf898b70", "Căutare avansată");
+            t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
+                t("a8584698", "start-up ai"),
+                t("jb6f9292", "conține exact structura „start-up ai”"),
                 t("j8ee77c4", "„start-up ai”"),
                 t("d0480758", "conține ori „ai” ori „start-up” (sau ambele)"),
                 t("f0048fa2", "ai SAU start-up"),
@@ -5894,10 +5900,10 @@
                 t("cbae35fa", "Raportează transmisiunea"),
                 t("fd12ab58", "Postări din colecție"),
                 t("a226497c", "Creează o Comunitate nouă"),
-                t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate"),
-                t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
-                t("hff48914", "În acest moment, nu s-au putut găsi postări.");
-            t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
+                t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate");
+            t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
+                t("hff48914", "În acest moment, nu s-au putut găsi postări."),
+                t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
                 t("e50e1bb0", "Bun venit la Comunități"),
                 t("i6829daa", "Comunitățile sunt grupuri de discuții moderate, unde persoanele de pe X se pot conecta și pot distribui conținut."),
                 t("fc5c6914", "Întâlnește alte persoane care au aceleași interese ca tine"),
@@ -6729,6 +6735,7 @@
                 t("i1801686", "Aceasta este o interogare de căutare nevalidă. Încearcă alta."),
                 t("a0b4541c", "Ceva nu a mers bine, dar nu te îngrijora – nu este vina ta"),
                 t("d7eebb60", "Se configurează abonamentul"),
+                t("h707b180", "Your subscription update is complete"),
                 t("a452ab68", "Poate dura câteva secunde."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Actualizat cu succes"),
@@ -6891,11 +6898,11 @@
                 t("e0198956", "Primește o cotă-parte din veniturile generate în urma interacțiunii conturilor verificate cu conținutul pe care îl postezi pe X."),
                 t("iadf78e2", "Descarcă videoclipuri"),
                 t("ee54c3de", "Salvează videoclipurile direct pe dispozitivul tău"),
-                t("ae03594c", "Boost pentru răspunsuri scurte"),
-                t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
+                t("ae03594c", "Boost pentru răspunsuri scurte");
+            t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
                 t("bf2a6acc", "Prioritizare mare a răspunsurilor"),
-                t("c2059276", "Dă boost răspunsurilor tale.");
-            t("b023ec20", "Prioritizare maximă a răspunsurilor"),
+                t("c2059276", "Dă boost răspunsurilor tale."),
+                t("b023ec20", "Prioritizare maximă a răspunsurilor"),
                 t("g337328e", "Obține cea mai mare vizibilitate pentru răspunsurile tale."),
                 t("fa006202", "Redare videoclip în fundal"),
                 t("jf389778", "Vizionează în timp ce navighezi sau folosești alte aplicații"),
@@ -7406,7 +7413,7 @@
                 t("bcd9cf68", "Peste 65"),
                 t("f05f1838", "Altceva / Nespecificat"),
                 t("fa5be588", "Ecologic"),
-                t("c65126fe", "Boosted"),
+                t("c65126fe", "Cu boost"),
                 t("c61c6624", "Promovat"),
                 t("f1196a04", "Boost Analytics"),
                 t("bb66e3fc", "Promote Analytics"),
@@ -7869,10 +7876,7 @@
                 t("ddfd6718", "Plata a eșuat"),
                 t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
                 t("a62359e6", "Setări Organizații verificate"),
-                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
-                t("i4dccc18", "Facturare"),
-                t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
-                t("dac61c3c", "Setări cont");
+                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați.");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7911,7 +7915,10 @@
                     u(e, a)
                 );
             }
-            t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
+            t("i4dccc18", "Facturare"),
+                t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
+                t("dac61c3c", "Setări cont"),
+                t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
                 t("hb9c4a1c", "Întrebări, rapoarte de erori și feedback"),
                 t("c674f5b4", "Configurează plățile facturilor"),
                 t("i8237e66", "Treci de la plățile pe cardul de credit la facturarea prin transferuri bancare."),
@@ -8913,15 +8920,15 @@
                 }),
                 t("ae408b76", "Ai repostat"),
                 t("j355f008", "Postare fixată"),
-                t("habf9678", "Fixat de Autor"),
-                t("db0798ed", function (e) {
-                    return "Subiect – " + e.topicName;
-                }),
+                t("habf9678", "Fixat de Autor");
+            t("db0798ed", function (e) {
+                return "Subiect – " + e.topicName;
+            }),
                 t("dc716ec9", function (e) {
                     return "Subiect recomandat: " + e.topicName;
                 }),
-                t("fbc2003c", "Încheiat");
-            t("h5051dd8", "Anulat"),
+                t("fbc2003c", "Încheiat"),
+                t("h5051dd8", "Anulat"),
                 t("bb5f91a3", function (e) {
                     return e.count + " în acest Spațiu";
                 }),
@@ -13231,4 +13238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.41d83d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.bced617a.js.map

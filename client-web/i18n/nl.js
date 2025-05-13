@@ -2822,8 +2822,14 @@
                 a("ae864b69", function (e) {
                     return "Je abonnementsniveau wordt gewijzigd naar " + e.tierName + " met ingang van de volgende factureringscylus op " + e.date;
                 }),
+                a("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 a("edbb700f", function (e) {
                     return "Gaat in bij de volgende factureringscyclus op " + e.date;
+                }),
+                a("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 a("e9884540", "Actieve korting"),
                 a("bfb879aa", "Aankomende korting"),
@@ -2965,10 +2971,10 @@
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Banen"),
                 a("e0adec82", "Merkhulpmiddelen"),
-                a("df1b7550", "Marketing"),
-                a("he258678", "X voor bedrijven"),
-                a("c6f58084", "Ontwikkelaars");
-            a("d83f18d2", "Overzicht"),
+                a("df1b7550", "Marketing");
+            a("he258678", "X voor bedrijven"),
+                a("c6f58084", "Ontwikkelaars"),
+                a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
                 a("j0693948", "Download de Grok-app"),
                 a("af781666", "Wat vinden mensen?"),
@@ -2978,7 +2984,7 @@
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
                 a("da00e00a", "Try the new News"),
-                a("c40666d8", "Try it"),
+                a("c40666d8", "Probeer het"),
                 a("j66b95a2", "Diepgaand nieuws"),
                 a("b58d2bd2", "Relevante posts"),
                 a("efe6ef9e", "Post bekijken"),
@@ -3881,10 +3887,10 @@
                 a("cbef820f", function (e) {
                     return e.screenName + " heeft de stream opnieuw geplaatst!";
                 }),
-                a("e3275464", "Verzenden"),
-                a("cededf2a", "Host"),
-                a("i2caef48", "Co-hosts");
-            a("j245c654", "Sprekers"),
+                a("e3275464", "Verzenden");
+            a("cededf2a", "Host"),
+                a("i2caef48", "Co-hosts"),
+                a("j245c654", "Sprekers"),
                 a("eda23a02", "Luisteraars"),
                 a("b90eb348", "Uitnodigen om mee te praten"),
                 a("d9a63e82", "Verwijderen uit sprekers"),
@@ -4917,10 +4923,10 @@
                 a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
                 a("ed99baea", "Vroege bèta-toegang"),
-                a("gf898b70", "Geavanceerd zoeken"),
-                a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
-                a("a8584698", "ai start-up");
-            a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
+                a("gf898b70", "Geavanceerd zoeken");
+            a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
+                a("a8584698", "ai start-up"),
+                a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
                 a("j8ee77c4", '"ai start-up"'),
                 a("d0480758", "bevat 'ai' of 'start-up' (of beide)"),
                 a("f0048fa2", "ai OR start-up"),
@@ -5883,10 +5889,10 @@
                 a("cbae35fa", "Uitzending rapporteren"),
                 a("fd12ab58", "Postverzameling"),
                 a("a226497c", "Een nieuwe Community maken"),
-                a("d7346632", "Je bent nog geen lid geworden van community's"),
-                a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
-                a("hff48914", "We kunnen nu geen posts vinden.");
-            a("hb52cc4a", "Probeer het later nog eens."),
+                a("d7346632", "Je bent nog geen lid geworden van community's");
+            a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
+                a("hff48914", "We kunnen nu geen posts vinden."),
+                a("hb52cc4a", "Probeer het later nog eens."),
                 a("e50e1bb0", "Welkom bij Community's"),
                 a("i6829daa", "Community's zijn gemodereerde discussiegroepen waar mensen op X met elkaar in contact kunnen komen en dingen kunnen delen."),
                 a("fc5c6914", "Ontmoet anderen met dezelfde interesses"),
@@ -6718,6 +6724,7 @@
                 a("i1801686", "Dit is geen geldige zoekopdracht. Voer een andere zoekopdracht in."),
                 a("a0b4541c", "Er ging iets mis, maar geen paniek, het ligt niet aan jou"),
                 a("d7eebb60", "Je abonnement wordt ingesteld"),
+                a("h707b180", "Your subscription update is complete"),
                 a("a452ab68", "Dit kan een paar seconden duren."),
                 a("b3bad3b2", "@premium"),
                 a("accbcc78", "Bijgewerkt"),
@@ -6880,11 +6887,11 @@
                 a("e0198956", "Ontvang een deel van de inkomsten die worden gegenereerd door interacties van geverifieerde accounts met content die jij op X plaatst."),
                 a("iadf78e2", "Video's downloaden"),
                 a("ee54c3de", "Sla video's rechtstreeks op je apparaat op"),
-                a("ae03594c", "Kleine Antwoordboost"),
-                a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
+                a("ae03594c", "Kleine Antwoordboost");
+            a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
                 a("bf2a6acc", "Grote Antwoordboost"),
-                a("c2059276", "Zorg dat je antwoorden worden geboost.");
-            a("b023ec20", "Maximale Antwoordboost"),
+                a("c2059276", "Zorg dat je antwoorden worden geboost."),
+                a("b023ec20", "Maximale Antwoordboost"),
                 a("g337328e", "Krijg de meeste zichtbaarheid van je antwoorden"),
                 a("fa006202", "Video afspelen in de achtergrond"),
                 a("jf389778", "Kijk terwijl je browset of andere apps gebruikt"),
@@ -7395,7 +7402,7 @@
                 a("bcd9cf68", "Ouder dan 65"),
                 a("f05f1838", "Overig/niet opgegeven"),
                 a("fa5be588", "Organisch"),
-                a("c65126fe", "Boosted"),
+                a("c65126fe", "Geboost"),
                 a("c61c6624", "Promoted"),
                 a("f1196a04", "Boost Analytics"),
                 a("bb66e3fc", "Promote Analytics"),
@@ -7858,10 +7865,7 @@
                 a("ddfd6718", "Betaling mislukt"),
                 a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
                 a("a62359e6", "Instellingen Geverifieerde Organisaties"),
-                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
-                a("i4dccc18", "Facturering"),
-                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
-                a("dac61c3c", "Accountinstellingen");
+                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7900,7 +7904,10 @@
                     o(e, n)
                 );
             }
-            a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
+            a("i4dccc18", "Facturering"),
+                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
+                a("dac61c3c", "Accountinstellingen"),
+                a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
                 a("hb9c4a1c", "Vragen, meldingen van bugs en feedback"),
                 a("c674f5b4", "Factuurbetalingen instellen"),
                 a("i8237e66", "Schakel over van creditcardbetalingen naar facturering via bankoverschrijving."),
@@ -8902,15 +8909,15 @@
                 }),
                 a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
                 a("j355f008", "Vastgemaakte post"),
-                a("habf9678", "Vastgemaakt door auteur"),
-                a("db0798ed", function (e) {
-                    return "Onderwerp " + e.topicName;
-                }),
+                a("habf9678", "Vastgemaakt door auteur");
+            a("db0798ed", function (e) {
+                return "Onderwerp " + e.topicName;
+            }),
                 a("dc716ec9", function (e) {
                     return "Aanbevolen Onderwerp: " + e.topicName;
                 }),
-                a("fbc2003c", "Beëindigd");
-            a("h5051dd8", "Geannuleerd"),
+                a("fbc2003c", "Beëindigd"),
+                a("h5051dd8", "Geannuleerd"),
                 a("bb5f91a3", function (e) {
                     return e.count + " in deze Space";
                 }),
@@ -13231,4 +13238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.e452bc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.ab53b10a.js.map

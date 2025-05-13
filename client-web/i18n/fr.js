@@ -2826,8 +2826,14 @@
                 n("ae864b69", function (e) {
                     return "Vous allez passer à l'abonnement " + e.tierName + " à partir du prochain cycle de facturation le " + e.date;
                 }),
+                n("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 n("edbb700f", function (e) {
                     return "Commence avec le prochain cycle de facturation le " + e.date;
+                }),
+                n("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 n("e9884540", "Remise active"),
                 n("bfb879aa", "Remise en attente"),
@@ -2969,10 +2975,10 @@
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Carrières"),
                 n("e0adec82", "Ressources de la marque"),
-                n("df1b7550", "Marketing"),
-                n("he258678", "X pour les professionnels"),
-                n("c6f58084", "Développeurs");
-            n("d83f18d2", "Répertoire"),
+                n("df1b7550", "Marketing");
+            n("he258678", "X pour les professionnels"),
+                n("c6f58084", "Développeurs"),
+                n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
                 n("af781666", "Quelles sont les opinions à ce sujet ?"),
@@ -2982,7 +2988,7 @@
                 n("bce3726a", "Mettre les paramètres de facturation à jour"),
                 n("fce9ecce", "Vidéos suggérées"),
                 n("da00e00a", "Try the new News"),
-                n("c40666d8", "Try it"),
+                n("c40666d8", "Essayer"),
                 n("j66b95a2", "Actualités détaillées"),
                 n("b58d2bd2", "Posts pertinents"),
                 n("efe6ef9e", "Voir le post"),
@@ -3885,10 +3891,10 @@
                 n("cbef820f", function (e) {
                     return e.screenName + " a reposté le stream !";
                 }),
-                n("e3275464", "Envoyer"),
-                n("cededf2a", "Hôte"),
-                n("i2caef48", "Cohôtes");
-            n("j245c654", "Intervenants"),
+                n("e3275464", "Envoyer");
+            n("cededf2a", "Hôte"),
+                n("i2caef48", "Cohôtes"),
+                n("j245c654", "Intervenants"),
                 n("eda23a02", "Auditeurs"),
                 n("b90eb348", "Inviter à parler"),
                 n("d9a63e82", "Supprimer des intervenants"),
@@ -4921,10 +4927,10 @@
                 n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
                 n("ed99baea", "Accès anticipé à la version bêta"),
-                n("gf898b70", "Recherche avancée"),
-                n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
-                n("a8584698", "startup ia");
-            n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
+                n("gf898b70", "Recherche avancée");
+            n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
+                n("a8584698", "startup ia"),
+                n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
                 n("j8ee77c4", '"startup ia"'),
                 n("d0480758", 'contient "ia" ou "startup" (ou les deux)'),
                 n("f0048fa2", "ia OR startup"),
@@ -5887,10 +5893,10 @@
                 n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
                 n("a226497c", "Créer une Communauté"),
-                n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
-                n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
-                n("hff48914", "Aucun post n'a pu être trouvé pour le moment.");
-            n("hb52cc4a", "Veuillez réessayer plus tard."),
+                n("d7346632", "Vous n'avez encore rejoint aucune Communauté");
+            n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
+                n("hff48914", "Aucun post n'a pu être trouvé pour le moment."),
+                n("hb52cc4a", "Veuillez réessayer plus tard."),
                 n("e50e1bb0", "Bienvenue dans les Communautés"),
                 n("i6829daa", "Les Communautés sont des groupes de discussion faisant l'objet d'une modération, au sein desquels les utilisateurs de X peuvent interagir et partager des informations."),
                 n("fc5c6914", "Rencontrez d'autres personnes qui partagent vos centres d'intérêt"),
@@ -6722,6 +6728,7 @@
                 n("i1801686", "Cette requête de recherche n'est pas valide. Veuillez en tester une autre."),
                 n("a0b4541c", "Un problème est survenu, mais ne vous inquiétez pas, ce n'est pas de votre faute."),
                 n("d7eebb60", "Configurez votre abonnement"),
+                n("h707b180", "Your subscription update is complete"),
                 n("a452ab68", "Cela peut prendre quelques secondes."),
                 n("b3bad3b2", "@premium"),
                 n("accbcc78", "Mise à jour effectuée"),
@@ -6884,11 +6891,11 @@
                 n("e0198956", "Recevez une part des revenus générés par l'engagement de comptes certifiés avec les contenus que vous postez sur X."),
                 n("iadf78e2", "Téléchargement de vidéos"),
                 n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil."),
-                n("ae03594c", "Léger boostage des réponses"),
-                n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
+                n("ae03594c", "Léger boostage des réponses");
+            n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
                 n("bf2a6acc", "Boostage des réponses important"),
-                n("c2059276", "Boostez vos réponses.");
-            n("b023ec20", "Boostage maximum des réponses"),
+                n("c2059276", "Boostez vos réponses."),
+                n("b023ec20", "Boostage maximum des réponses"),
                 n("g337328e", "Bénéficiez de la meilleure visibilité possible pour vos réponses."),
                 n("fa006202", "Lecture des vidéos en arrière‑plan"),
                 n("jf389778", "Regardez des vidéos tout en naviguant ou en utilisant d'autres applications."),
@@ -7399,7 +7406,7 @@
                 n("bcd9cf68", "Plus de 65 ans"),
                 n("f05f1838", "Autre/Non spécifié"),
                 n("fa5be588", "Organique"),
-                n("c65126fe", "Boosted"),
+                n("c65126fe", "Boosté"),
                 n("c61c6624", "Sponsorisé"),
                 n("f1196a04", "Boost Analytics"),
                 n("bb66e3fc", "Promote Analytics"),
@@ -7862,10 +7869,7 @@
                 n("ddfd6718", "Échec du paiement"),
                 n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
                 n("a62359e6", "Paramètres d'organisation certifiée"),
-                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
-                n("i4dccc18", "Facturation"),
-                n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
-                n("dac61c3c", "Paramètres du compte");
+                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7904,7 +7908,10 @@
                     i(e, t)
                 );
             }
-            n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
+            n("i4dccc18", "Facturation"),
+                n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
+                n("dac61c3c", "Paramètres du compte"),
+                n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
                 n("hb9c4a1c", "Questions, signalements de bugs et retours"),
                 n("c674f5b4", "Configurez le paiement des factures"),
                 n("i8237e66", "Passez de paiements par carte à une facturation via virements bancaires."),
@@ -8906,15 +8913,15 @@
                 }),
                 n("ae408b76", "Vous avez reposté"),
                 n("j355f008", "Post épinglé"),
-                n("habf9678", "Épinglé par l'auteur"),
-                n("db0798ed", function (e) {
-                    return "Sujet " + e.topicName;
-                }),
+                n("habf9678", "Épinglé par l'auteur");
+            n("db0798ed", function (e) {
+                return "Sujet " + e.topicName;
+            }),
                 n("dc716ec9", function (e) {
                     return "Sujet recommandé : " + e.topicName;
                 }),
-                n("fbc2003c", "Terminé");
-            n("h5051dd8", "Annulé"),
+                n("fbc2003c", "Terminé"),
+                n("h5051dd8", "Annulé"),
                 n("bb5f91a3", function (e) {
                     return e.count + " dans cet Espace";
                 }),
@@ -13221,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.721bf85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.7a8fee4a.js.map

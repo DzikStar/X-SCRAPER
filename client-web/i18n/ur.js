@@ -2826,8 +2826,14 @@
                 o("ae864b69", function (e) {
                     return "Your subscription tier is scheduled to change to " + e.tierName + " from the next billing cycle on " + e.date;
                 }),
+                o("a991d9a3", function (e) {
+                    return "Next billing cycle starts on " + e.date;
+                }),
                 o("edbb700f", function (e) {
                     return "Starts with next billing cycle on " + e.date;
+                }),
+                o("e3f9d219", function (e) {
+                    return "Subscription ends on " + e.date;
                 }),
                 o("e9884540", "Active discount"),
                 o("bfb879aa", "Pending discount"),
@@ -2969,10 +2975,10 @@
                 o("jb0a4c36", "بلاگ"),
                 o("ce6d095a", "طرز زندگی"),
                 o("e0adec82", "برانڈ ذرائع"),
-                o("df1b7550", "مارکیٹنگ"),
-                o("he258678", "X for Business"),
-                o("c6f58084", "ڈویلپرز");
-            o("d83f18d2", "ڈائریکٹری"),
+                o("df1b7550", "مارکیٹنگ");
+            o("he258678", "X for Business"),
+                o("c6f58084", "ڈویلپرز"),
+                o("d83f18d2", "ڈائریکٹری"),
                 o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
                 o("af781666", "What do people think?"),
@@ -3885,10 +3891,10 @@
                 o("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
                 }),
-                o("e3275464", "بھیجیں"),
-                o("cededf2a", "ہوسٹ"),
-                o("i2caef48", "ساتھی میزبان");
-            o("j245c654", "مقررین"),
+                o("e3275464", "بھیجیں");
+            o("cededf2a", "ہوسٹ"),
+                o("i2caef48", "ساتھی میزبان"),
+                o("j245c654", "مقررین"),
                 o("eda23a02", "Listeners"),
                 o("b90eb348", "Invite to Speak"),
                 o("d9a63e82", "Remove from Speakers"),
@@ -4921,10 +4927,10 @@
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
                 o("ed99baea", "Early Beta Access"),
-                o("gf898b70", "Advanced Search"),
-                o("d2a43a7a", 'contains both "ai" and "startup"'),
-                o("a8584698", "ai startup");
-            o("jb6f9292", 'contains the exact phrase "ai startup"'),
+                o("gf898b70", "Advanced Search");
+            o("d2a43a7a", 'contains both "ai" and "startup"'),
+                o("a8584698", "ai startup"),
+                o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
                 o("d0480758", 'contains either "ai" or "startup" (or both)'),
                 o("f0048fa2", "ai OR startup"),
@@ -5887,10 +5893,10 @@
                 o("cbae35fa", "نشریہ کی رپورٹ کریں"),
                 o("fd12ab58", "Collection posts"),
                 o("a226497c", "ایک نئی کمیونٹی بنائيں"),
-                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
-                o("b732a4cc", "When you do, you’ll see their posts here."),
-                o("hff48914", "No posts could be found at this time.");
-            o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
+                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں");
+            o("b732a4cc", "When you do, you’ll see their posts here."),
+                o("hff48914", "No posts could be found at this time."),
+                o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
                 o("e50e1bb0", "Welcome to Communities"),
                 o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 o("fc5c6914", "اپنی جیسی دلچسپیوں والے دیگر افراد سے ملیں"),
@@ -6722,6 +6728,7 @@
                 o("i1801686", "یہ غلط استفسار کی تلاش ہے۔ براہ کرم کوئی مختلف استفسار آزمائیں۔"),
                 o("a0b4541c", "کچھ غلط ہو گیا ہے - لیکن پریشان مت ہوں، یہ آپ کی غلطی نہیں ہے"),
                 o("d7eebb60", "Setting up your subscription"),
+                o("h707b180", "Your subscription update is complete"),
                 o("a452ab68", "This may take a few seconds."),
                 o("b3bad3b2", "@premium"),
                 o("accbcc78", "Updated successfully"),
@@ -6884,11 +6891,11 @@
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
                 o("ee54c3de", "Save videos straight to your device"),
-                o("ae03594c", "Small reply boost"),
-                o("e6bb08c0", "Increase the visibility of your replies"),
+                o("ae03594c", "Small reply boost");
+            o("e6bb08c0", "Increase the visibility of your replies"),
                 o("bf2a6acc", "Large Reply Boost"),
-                o("c2059276", "Have your replies boosted.");
-            o("b023ec20", "Max Reply Boost"),
+                o("c2059276", "Have your replies boosted."),
+                o("b023ec20", "Max Reply Boost"),
                 o("g337328e", "Get the highest visibility for your replies."),
                 o("fa006202", "Background video playback"),
                 o("jf389778", "Watch while browsing or using other apps"),
@@ -7862,10 +7869,7 @@
                 o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                o("i4dccc18", "Billing"),
-                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                o("dac61c3c", "Account settings");
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7904,7 +7908,10 @@
                     c(e, t)
                 );
             }
-            o("b6b5fd66", "Manage your X account including changing your username or password."),
+            o("i4dccc18", "Billing"),
+                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                o("dac61c3c", "Account settings"),
+                o("b6b5fd66", "Manage your X account including changing your username or password."),
                 o("hb9c4a1c", "Questions, bug reports and feedback"),
                 o("c674f5b4", "Setup invoice payments"),
                 o("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
@@ -8906,15 +8913,15 @@
                 }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
-                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا"),
-                o("db0798ed", function (e) {
-                    return e.topicName + " موضوع";
-                }),
+                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا");
+            o("db0798ed", function (e) {
+                return e.topicName + " موضوع";
+            }),
                 o("dc716ec9", function (e) {
                     return "تجویز کردہ موضوع: " + e.topicName;
                 }),
-                o("fbc2003c", "اختتام ہوا");
-            o("h5051dd8", "Canceled"),
+                o("fbc2003c", "اختتام ہوا"),
+                o("h5051dd8", "Canceled"),
                 o("bb5f91a3", function (e) {
                     return e.count + " اس Space میں";
                 }),
@@ -13226,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.bc3be61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.42149c3a.js.map
