@@ -47,7 +47,7 @@
                     V = t.$_$.qf,
                     D = t.$_$.d8,
                     G = t.$_$.fj,
-                    H = t.$_$.vg,
+                    H = t.$_$.ug,
                     J = t.$_$.oi,
                     K = t.$_$.me,
                     N = t.$_$.t1,
@@ -2266,4 +2266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-7b644756.5e32b6ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-7b644756.1d86a91a.js.map

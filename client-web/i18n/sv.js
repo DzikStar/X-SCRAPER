@@ -12010,6 +12010,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Genom köpet samtycker du till våra ", " och ", ". Prenumerationen förlängs automatiskt tills den sägs upp, enligt beskrivningen i Villkoren. Du kan säga upp den när du vill."];
@@ -13212,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.e986c08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.27bfe01a.js.map

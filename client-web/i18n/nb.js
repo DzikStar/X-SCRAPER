@@ -12009,6 +12009,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ved å kjøpe samtykker du i ", " og ", ". Abonnementer fornyes automatisk inntil de kanselleres, slik det er beskrevet i vilkårene. Du kan kansellere når som helst."];
@@ -13210,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.c1a54bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.1319b5aa.js.map

@@ -12009,6 +12009,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Bằng việc thực hiện giao dịch mua, bạn đồng ý với ", " và ", " của chúng tôi. Gói thuê bao sẽ tự động gia hạn cho đến khi bạn hủy, như được mô tả trong Điều khoản. Bạn có thể hủy bất cứ lúc nào."];
@@ -13210,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.fbc2c8ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.2559c74a.js.map

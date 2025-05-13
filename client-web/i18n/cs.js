@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Zakoupením souhlasíte s našimi ", " a našimi ", ". Předplatné se automaticky obnovuje, dokud nebude zrušeno, jak je popsáno v podmínkách. Zrušit ho můžete kdykoli."];
@@ -13223,4 +13229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.0febdb4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.084b99fa.js.map

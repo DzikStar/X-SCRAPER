@@ -106,7 +106,7 @@
                     Wt = n.$_$.q1,
                     Qt = n.$_$.sf,
                     Xt = n.$_$.o3,
-                    Kt = n.$_$.zg,
+                    Kt = n.$_$.yg,
                     Zt = n.$_$.x7,
                     tn = n.$_$.v9,
                     nn = e.$_$.i,
@@ -115,7 +115,7 @@
                     sn = n.$_$.of,
                     un = n.$_$.id,
                     hn = n.$_$.si,
-                    _n = n.$_$.bg,
+                    _n = n.$_$.ag,
                     on = n.$_$.yf,
                     an = n.$_$.je,
                     ln = n.$_$.u3,
@@ -3370,4 +3370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b1ea04d8.cf0a651a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b1ea04d8.272215ea.js.map

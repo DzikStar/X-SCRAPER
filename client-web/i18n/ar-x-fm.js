@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["من خلال الشراء فإنكِ توافقين على ", " و", "المتبعة لدينا. يتم تجديد الاشتراكات تلقائيًا إلى أن يتم إلغاؤها، كما هو موضح في الشروط. يمكنكِ الإلغاء في أي وقت."];
@@ -13226,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.d27f62ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.e43be6fa.js.map

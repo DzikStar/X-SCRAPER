@@ -12017,6 +12017,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["خریداری کردن به‌معنای موافقت با ", " و ", " است. همان‌طور که در «شرایط» شرح داده شده است، «اشتراک‌ها» تا وقتی لغو نشود به‌صورت خودکار تمدید می‌شود. هروقت خواستید می‌توانید لغو کنید."];
@@ -13218,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.765907da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.a4d87eda.js.map

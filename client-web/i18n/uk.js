@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Оформлюючи покупку, ви приймаєте ", " і ", ". Передплати продовжуються автоматично, доки їх не буде скасовано, як описано в Умовах. Скасувати передплату можна в будь-який момент."];
@@ -13225,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.305a8cba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.208bc80a.js.map

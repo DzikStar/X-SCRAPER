@@ -12021,6 +12021,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Prin achiziționare, ești de acord cu ", " și ", ". Abonamentele se reînnoiesc automat până când le anulezi, așa cum se descrie în Condiții. Poți anula oricând."];
@@ -13225,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.c72a8c7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.41d83d5a.js.map

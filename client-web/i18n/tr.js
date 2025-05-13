@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Satın alma işlemi yaparak ", " ve ", " şartlarımızı kabul etmiş olursun. Abonelikler, Şartlar'da açıklandığı gibi iptal edilene kadar otomatik olarak yenilenir. Dilediğin zaman iptal edebilirsin."];
@@ -13220,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5319e63a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.68044aca.js.map

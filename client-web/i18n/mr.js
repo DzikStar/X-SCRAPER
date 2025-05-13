@@ -12017,6 +12017,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["खरेदी करून, आपण आमच्या ", " शी आणि आमच्या ", " शी सहमत आहात. अटींमध्ये वर्णन केल्याप्रमाणे, सबस्क्रीप्शन्स रद्द होईपर्यंत स्वयंचलितपणे नूतनीकरण होते. कधीही रद्द करा."];
@@ -13218,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.33f8dc2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.df2aeb2a.js.map

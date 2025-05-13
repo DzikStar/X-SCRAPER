@@ -6,40 +6,40 @@
             n.d(t, { Z: () => u });
             var a = n(202784),
                 o = n(529356),
-                s = n(674132),
-                r = n.n(s),
-                l = n(621416),
+                r = n(674132),
+                l = n.n(r),
+                s = n(621416),
                 i = n(443781);
-            const c = r().j24c37b2,
-                d = ({ Content: e, contentStyle: t, actionLabel: n = c, flag: s, graphic: r, graphicDisplayMode: d, headline: u, isFullHeightOnMobile: p, enableMaskForDismiss: m, onAction: g, onClose: b, onSecondaryAction: h, secondaryActionLabel: C, supportUrl: y, subtext: k, withCloseButton: E, shouldShowForLoggedOut: f = !1, shouldAddEducationFlagOnClose: S = !0, shouldAddEducationFlagOnSecondary: w = !0, shouldAddEducationFlagOnPrimary: M = !0 }) => {
-                    const { loggedInUserId: A } = a.useContext(i.rC),
-                        [F, L] = (0, l.m)(s),
-                        U = a.useCallback(
+            const c = l().j24c37b2,
+                d = ({ Content: e, contentStyle: t, actionLabel: n = c, flag: r, graphic: l, graphicDisplayMode: d, headline: u, isFullHeightOnMobile: p, enableMaskForDismiss: m, onAction: h, onClose: g, onSecondaryAction: b, secondaryActionLabel: C, supportUrl: y, subtext: k, withCloseButton: E, shouldShowForLoggedOut: v = !1, shouldAddEducationFlagOnClose: f = !0, shouldAddEducationFlagOnSecondary: w = !0, shouldAddEducationFlagOnPrimary: M = !0 }) => {
+                    const { loggedInUserId: S } = a.useContext(i.rC),
+                        [A, F] = (0, s.m)(r),
+                        L = a.useCallback(
                             (e) => {
-                                M && L(), g && g(e);
+                                M && F(), h && h(e);
                             },
-                            [L, g, M],
+                            [F, h, M],
                         ),
                         Z = a.useCallback(() => {
-                            S && L(), b && b();
-                        }, [L, S, b]),
-                        v = a.useCallback(
+                            f && F(), g && g();
+                        }, [F, f, g]),
+                        U = a.useCallback(
                             (e) => {
-                                w && L(), h && h(e);
+                                w && F(), b && b(e);
                             },
-                            [L, h, w],
+                            [F, b, w],
                         );
-                    if (!F || (!A && !f)) return null;
-                    return a.createElement(o.Z, { actionLabel: n, contentStyle: t, enableMaskForDismiss: m, graphic: r, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: U, onClose: Z, onSecondaryAction: v, secondaryActionLabel: C, subtext: k, supportUrl: y, withCloseButton: E }, e ? a.createElement(e, null) : null);
+                    if (!A || (!S && !v)) return null;
+                    return a.createElement(o.Z, { actionLabel: n, contentStyle: t, enableMaskForDismiss: m, graphic: l, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: L, onClose: Z, onSecondaryAction: U, secondaryActionLabel: C, subtext: k, supportUrl: y, withCloseButton: E }, e ? a.createElement(e, null) : null);
                 },
                 u = a.memo(d);
         },
         621416: (e, t, n) => {
-            n.d(t, { m: () => s });
+            n.d(t, { m: () => r });
             n(890103);
             var a = n(202784),
                 o = n(175698);
-            function s(e) {
+            function r(e) {
                 const t = (0, o.A)();
                 return [
                     !!t && !t.flags[e],
@@ -50,89 +50,102 @@
             }
         },
         534999: (e, t, n) => {
-            n.r(t), n.d(t, { GraduatedAccessScreen: () => q, default: () => z });
+            n.r(t), n.d(t, { GraduatedAccessScreen: () => j, default: () => q });
             var a = n(202784),
                 o = n(107267),
-                s = n(325686),
-                r = n(392237),
-                l = n(593866),
+                r = n(325686),
+                l = n(392237),
+                s = n(593866),
                 i = n(731708),
                 c = n(674132),
                 d = n.n(c),
                 u = n(25704),
                 p = n(175856),
                 m = n(688715),
-                g = n(297938),
-                b = n(324922);
-            const h = r.default.create((e) => ({ decorationContainer: { color: e.colors.primary, height: e.spaces.space24, width: e.spaces.space24, marginEnd: e.spaces.space20 } })),
+                h = n(297938),
+                g = n(324922);
+            const b = l.default.create((e) => ({ decorationContainer: { color: e.colors.primary, height: e.spaces.space24, width: e.spaces.space24, marginEnd: e.spaces.space20 } })),
                 C = (0, m.ju)("https://help.x.com/safety-and-security/control-your-twitter-experience"),
                 y = d().a97bc07e,
                 k = d().i6671128,
                 E = d().a72188d6,
-                f = d().d5e4d0a6,
-                S = a.createElement(g.default, { style: h.decorationContainer }),
-                w = a.createElement(b.default, { style: h.decorationContainer }),
+                v = d().d5e4d0a6,
+                f = a.createElement(h.default, { style: b.decorationContainer }),
+                w = a.createElement(g.default, { style: b.decorationContainer }),
                 M = [
-                    { decoration: S, label: d().a4ee9572, description: d().e5f4eac0 },
+                    { decoration: f, label: d().a4ee9572, description: d().e5f4eac0 },
                     { decoration: w, label: d().c7832a72, description: d().i1ccd17a },
                 ],
-                A = { learnMoreTitle: d().i859a9d4, learnMoreUrl: C, ctaTitle: d().j24c37b2 },
-                F = { title: y, description: E, promptItems: M },
-                L = { title: k, description: f, promptItems: M },
-                U = r.default.create((e) => ({ contentContainer: { marginBottom: e.spaces.space16 }, itemsContainer: { marginBottom: e.spaces.space24 }, itemContainer: { paddingStart: 0, paddingEnd: 0 }, supportLink: { marginTop: e.spaces.space64 } })),
+                S = { learnMoreTitle: d().i859a9d4, learnMoreUrl: C, ctaTitle: d().j24c37b2 },
+                A = { title: y, description: E, promptItems: M },
+                F = { title: k, description: v, promptItems: M },
+                L = l.default.create((e) => ({ contentContainer: { marginBottom: e.spaces.space16 }, itemsContainer: { marginBottom: e.spaces.space24 }, itemContainer: { paddingStart: 0, paddingEnd: 0 }, supportLink: { marginTop: e.spaces.space64 } })),
                 Z = d().i6671128,
-                v = d().d5e4d0a6,
-                _ = () => a.createElement(s.Z, { style: U.itemsContainer }, a.createElement(l.Z, { items: L.promptItems }), a.createElement(i.ZP, { link: A.learnMoreUrl, style: U.supportLink }, A.learnMoreTitle)),
-                B = () => {
+                U = d().d5e4d0a6,
+                B = () => a.createElement(r.Z, { style: L.itemsContainer }, a.createElement(s.Z, { items: F.promptItems }), a.createElement(i.ZP, { link: S.learnMoreUrl, style: L.supportLink }, S.learnMoreTitle)),
+                D = () => {
                     const e = (0, o.useHistory)(),
                         t = a.useCallback(() => {
                             e.replace(e.getLastNonModalLocationPathname() || "/");
                         }, [e]);
-                    return a.createElement(u.Z, { Content: _, actionLabel: A.ctaTitle, contentStyle: U.contentContainer, enableMaskForDismiss: !0, flag: p.d7, graphicDisplayMode: "icon", headline: Z, isFullHeightOnMobile: !0, onAction: t, onClose: t, subtext: v, withCloseButton: !0 });
+                    return a.createElement(u.Z, { Content: B, actionLabel: S.ctaTitle, contentStyle: L.contentContainer, enableMaskForDismiss: !0, flag: p.d7, graphicDisplayMode: "icon", headline: Z, isFullHeightOnMobile: !0, onAction: t, onClose: t, subtext: U, withCloseButton: !0 });
                 };
-            var D = n(725516);
-            const O = r.default.create((e) => ({ contentContainer: { marginBottom: e.spaces.space16 }, itemsContainer: { marginBottom: e.spaces.space24 }, itemContainer: { paddingStart: 0, paddingEnd: 0 }, supportLink: { marginTop: e.spaces.space64 } })),
-                P = d().a97bc07e,
-                x = d().a72188d6,
-                H = (e) => ({ page: "string" == typeof e.location.query.graduatedAccessScribeSrc ? e.location.query.graduatedAccessScribeSrc : "unknown", section: "graduated_access", component: "prompt" }),
+            var H = n(725516);
+            const _ = l.default.create((e) => ({ contentContainer: { marginBottom: e.spaces.space16 }, itemsContainer: { marginBottom: e.spaces.space24 }, itemContainer: { paddingStart: 0, paddingEnd: 0 }, supportLink: { marginTop: e.spaces.space64 } })),
+                x = d().a97bc07e,
+                O = d().a72188d6,
+                P = (e) => ({ page: "string" == typeof e.location.query.graduatedAccessScribeSrc ? e.location.query.graduatedAccessScribeSrc : "unknown", section: "graduated_access", component: "prompt" }),
                 T = () => {
-                    const e = (0, D.z)(),
+                    const e = (0, H.z)(),
                         t = (0, o.useHistory)(),
                         n = a.useCallback(() => {
-                            e.scribe({ ...H(t), element: "learn_more", action: "click" });
+                            e.scribe({ ...P(t), element: "learn_more", action: "click" });
                         }, [e, t]);
-                    return a.createElement(s.Z, { style: O.itemsContainer }, a.createElement(l.Z, { items: F.promptItems }), a.createElement(i.ZP, { link: A.learnMoreUrl, onClick: n, style: O.supportLink }, A.learnMoreTitle));
+                    return a.createElement(r.Z, { style: _.itemsContainer }, a.createElement(s.Z, { items: A.promptItems }), a.createElement(i.ZP, { link: S.learnMoreUrl, onClick: n, style: _.supportLink }, S.learnMoreTitle));
                 },
                 I = () => {
                     const e = (0, o.useHistory)(),
-                        t = (0, D.z)();
+                        t = (0, H.z)();
                     a.useEffect(() => {
-                        t.scribe({ ...H(e), action: "impression" });
+                        t.scribe({ ...P(e), action: "impression" });
                     }, [e, t]);
                     const n = a.useCallback(() => {
                             e.replace(e.getLastNonModalLocationPathname() || "/");
                         }, [e]),
-                        s = a.useCallback(() => {
-                            t.scribe({ ...H(e), element: "got_it_button", action: "click" }), n();
-                        }, [t, n, e]),
                         r = a.useCallback(() => {
-                            t.scribe({ ...H(e), element: "close", action: "click" }), n();
+                            t.scribe({ ...P(e), element: "got_it_button", action: "click" }), n();
+                        }, [t, n, e]),
+                        l = a.useCallback(() => {
+                            t.scribe({ ...P(e), element: "close", action: "click" }), n();
                         }, [t, n, e]);
-                    return a.createElement(u.Z, { Content: T, actionLabel: A.ctaTitle, contentStyle: O.contentContainer, enableMaskForDismiss: !0, flag: p.Uq, graphicDisplayMode: "icon", headline: P, isFullHeightOnMobile: !0, onAction: s, onClose: r, shouldAddEducationFlagOnClose: !1, subtext: x, withCloseButton: !0 });
+                    return a.createElement(u.Z, { Content: T, actionLabel: S.ctaTitle, contentStyle: _.contentContainer, enableMaskForDismiss: !0, flag: p.Uq, graphicDisplayMode: "icon", headline: x, isFullHeightOnMobile: !0, onAction: r, onClose: l, shouldAddEducationFlagOnClose: !1, subtext: O, withCloseButton: !0 });
                 };
-            var N = n(668214),
-                G = n(723819);
-            const j = (0, N.Z)().propsFromState(() => ({ shouldShowNewUserPrompt: G.ED, shouldShowGradUserPrompt: G.gN })),
-                q = ({ shouldShowGradUserPrompt: e, shouldShowNewUserPrompt: t }) => {
+            var z = n(668214),
+                N = n(723819);
+            const G = (0, z.Z)().propsFromState(() => ({ shouldShowNewUserPrompt: N.ED, shouldShowGradUserPrompt: N.gN })),
+                j = ({ shouldShowGradUserPrompt: e, shouldShowNewUserPrompt: t }) => {
                     const n = (0, o.useHistory)();
                     return (
                         a.useEffect(() => {
                             t || e || n.goBack();
                         }, [n]),
-                        t ? a.createElement(I, null) : e ? a.createElement(B, null) : null
+                        t ? a.createElement(I, null) : e ? a.createElement(D, null) : null
                     );
                 },
-                z = j(a.memo(q));
+                q = G(a.memo(j));
+        },
+        324922: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => i });
+            var a = n(202784),
+                o = n(890601),
+                r = n(783427),
+                l = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5V12h-2v-1.537l-8 3.635-8-3.635V18.5c0 .276.224.5.5.5H13v2H4.498c-1.381 0-2.5-1.119-2.5-2.5v-13zm2 2.766l8 3.635 8-3.635V5.5c0-.276-.224-.5-.5-.5h-15c-.276 0-.5.224-.5.5v2.766zM19 18v-3h2v3h3v2h-3v3h-2v-3h-3v-2h3z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const i = s;
         },
         730895: (e, t, n) => {
             var a = n(821176);
@@ -144,4 +157,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GraduatedAccess.e2d2132a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GraduatedAccess.f783cf0a.js.map

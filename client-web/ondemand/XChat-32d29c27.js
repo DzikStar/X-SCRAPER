@@ -125,7 +125,7 @@
                     _t = t.$_$.yj,
                     dt = t.$_$.cd,
                     vt = t.$_$.jd,
-                    $t = t.$_$.gg,
+                    $t = t.$_$.fg,
                     wt = t.$_$.ib,
                     gt = t.$_$.u,
                     pt = t.$_$.a1,
@@ -4652,15 +4652,14 @@
                     (n.$_$.c2 = ss),
                     (n.$_$.d2 = Io),
                     (n.$_$.e2 = Fs),
-                    (n.$_$.f2 = fs),
-                    (n.$_$.g2 = Hs),
-                    (n.$_$.h2 = function (n, t) {
+                    (n.$_$.f2 = Hs),
+                    (n.$_$.g2 = function (n, t) {
                         return new ks(n, t);
                     }),
-                    (n.$_$.i2 = function (n) {
+                    (n.$_$.h2 = function (n) {
                         return Ls(n);
                     }),
-                    (n.$_$.j2 = function (n, t, i) {
+                    (n.$_$.i2 = function (n, t, i) {
                         var r = gt(),
                             u = t & ~n,
                             e = 0;
@@ -4675,8 +4674,8 @@
                             } while (e < 32);
                         throw iu(r, i.e3d());
                     }),
-                    (n.$_$.k2 = nc),
-                    (n.$_$.l2 = function (n, t) {
+                    (n.$_$.j2 = nc),
+                    (n.$_$.k2 = function (n, t) {
                         return this.b3w(
                             n,
                             ((i = t),
@@ -4686,21 +4685,21 @@
                         );
                         var i;
                     }),
-                    (n.$_$.m2 = tc),
-                    (n.$_$.n2 = Kr),
-                    (n.$_$.o2 = Or),
-                    (n.$_$.p2 = ru),
-                    (n.$_$.q2 = Yr),
-                    (n.$_$.r2 = nu),
-                    (n.$_$.s2 = Hr),
-                    (n.$_$.t2 = Wr),
-                    (n.$_$.u2 = Vr),
-                    (n.$_$.v2 = function (n) {
+                    (n.$_$.l2 = tc),
+                    (n.$_$.m2 = Kr),
+                    (n.$_$.n2 = Or),
+                    (n.$_$.o2 = ru),
+                    (n.$_$.p2 = Yr),
+                    (n.$_$.q2 = nu),
+                    (n.$_$.r2 = Hr),
+                    (n.$_$.s2 = Wr),
+                    (n.$_$.t2 = Vr),
+                    (n.$_$.u2 = function (n) {
                         return ou(nc(), n);
                     }),
-                    (n.$_$.w2 = ou);
+                    (n.$_$.v2 = ou);
             })(n.exports, i(519039));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-32d29c27.a72dc10a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-32d29c27.1a23184a.js.map

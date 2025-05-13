@@ -12025,6 +12025,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["一经购买，即表示你同意我们的", "和", "。如条款中所述，除非提前取消，否则订阅服务将自动续订。目前你只能在网站上订阅。订阅需提供一个经认证的手机号码。随时可取消。"];
@@ -13226,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.4b41f44a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.e3ddc98a.js.map

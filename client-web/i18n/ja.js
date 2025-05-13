@@ -12016,6 +12016,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["購入することにより、", "と", "に同意したものとみなされます。利用規約に記載されているとおり、サブスクリプションはキャンセルするまで自動更新されます。いつでもキャンセルできます。"];
@@ -13217,4 +13223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.49bd923a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.62c1b54a.js.map

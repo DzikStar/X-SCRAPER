@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ostamalla hyväksyt ", " ja ", ". Tilaus uusiutuu automaattisesti, kunnes se perutaan, kuten ehtoihin on kirjattu. Peru milloin tahansa."];
@@ -13225,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ee65d25a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.9950190a.js.map

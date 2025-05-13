@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["ಖರೀದಿಸುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ ", " ಮತ್ತು ನಮ್ಮ ", " ಅನ್ನು ಒಪ್ಪುತ್ತೀರಿ. ನಿಯಮಗಳಲ್ಲಿ ವಿವರಿಸಿದಂತೆ, ರದ್ದುಗೊಳ್ಳುವವರೆಗೆ ಚಂದಾದಾರಿಕೆಗಳು ಸ್ವಯಂ-ನವೀಕರಿಸಲ್ಪಡುತ್ತವೆ. ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ರದ್ದು ಮಾಡಿ."];
@@ -13224,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.26422fda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.333e89ea.js.map

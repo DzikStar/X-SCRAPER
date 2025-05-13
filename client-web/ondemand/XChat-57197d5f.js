@@ -368,11 +368,11 @@
                     B = t.$_$.gd,
                     R = t.$_$.xc,
                     W = t.$_$.p1,
-                    X = t.$_$.ng,
+                    X = t.$_$.mg,
                     G = t.$_$.o3,
                     H = t.$_$.s3,
                     K = t.$_$.u3,
-                    Q = t.$_$.bg,
+                    Q = t.$_$.ag,
                     Y = t.$_$.of,
                     Z = t.$_$.id,
                     nn = t.$_$.fk;
@@ -877,4 +877,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-57197d5f.3c42c18a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-57197d5f.3b06ffaa.js.map

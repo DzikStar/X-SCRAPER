@@ -12009,6 +12009,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Dengan membuat pembelian, anda bersetuju dengan ", " kami dan ", " kami. Langganan akan dibaharui secara automatik sehinggalah dibatalkan, seperti yang diterangkan dalam Terma. Batalkan pada bila-bila masa."];
@@ -13210,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.3195be6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6ac8067a.js.map

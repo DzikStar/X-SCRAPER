@@ -12014,6 +12014,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["En procédant à l'achat, vous acceptez notre ", " et notre ", ". Votre abonnement est renouvelé automatiquement jusqu'à ce que vous l'annuliez, comme indiqué dans les Conditions. L'annulation peut être effectuée à tout moment."];
@@ -13215,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.05663c3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.721bf85a.js.map

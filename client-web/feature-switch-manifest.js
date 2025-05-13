@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "a5fdffd6e13c7443e974b893c7e5d18b82589c8f",
+    feature_set_token: "844284236a5edfdd620d80e73ed3ef8888c646a2",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -292,6 +292,7 @@ var manifest = {
         payments_pin_login_enabled: { value: !1 },
         payments_qr_onboarding_enabled: { value: !1 },
         payments_settings_documents_enabled: { value: !1 },
+        payments_transfer_methods_enabled: { value: !1 },
         premium_content_api_read_enabled: { value: !1 },
         premium_webview_paywall_force_premium_tier_enabled: { value: !1 },
         premium_webview_paywall_offer_image_url: { value: "https://abs.twimg.com/images/anniversary_wide.png" },
@@ -1830,7 +1831,7 @@ var manifest = {
         payments_passkey_onboarding_enabled: { name: "payments_passkey_onboarding_enabled", type: "string" },
         payments_tasks_carousel_enabled: { name: "payments_tasks_carousel_enabled", type: "string" },
         payments_crb_iframe_delay_msecs: { name: "payments_crb_iframe_delay_msecs", type: "number", defaultValue: 1e3 },
-        payments_transfer_methods_enabled: { name: "payments_transfer_methods_enabled", type: "string" },
+        payments_transfer_methods_enabled: { name: "payments_transfer_methods_enabled", type: "boolean", defaultValue: !1 },
         payments_transfer_funding_sources_enabled: { name: "payments_transfer_funding_sources_enabled", type: "string" },
         payments_settings_notifications_enabled: { name: "payments_settings_notifications_enabled", type: "string" },
         premium_churn_prevention_offers_web_17199: { name: "premium_churn_prevention_offers_web_17199", type: "experiment", enumeration_values: ["control", "treatment"] },
@@ -2348,6 +2349,7 @@ var manifest = {
         responsive_web_vo_basic_application_v2: { name: "responsive_web_vo_basic_application_v2", type: "string" },
         responsive_web_x_translation_enabled: { name: "responsive_web_x_translation_enabled", type: "boolean", defaultValue: !1 },
         revamped_login_page_web_17305: { name: "revamped_login_page_web_17305", type: "experiment", enumeration_values: ["control", "old_layout_with_grok", "revamped_layout", "revamped_layout_with_grok", "revamped_layout_blue", "revamped_layout_blue_with_grok"] },
+        revamped_news_17375: { name: "revamped_news_17375", type: "experiment", enumeration_values: ["control", "treatment"] },
         rweb_analytics_user_audience_page_enabled: { name: "rweb_analytics_user_audience_page_enabled", type: "string" },
         rweb_analytics_post_audience_page_enabled: { name: "rweb_analytics_post_audience_page_enabled", type: "string" },
         rweb_analytics_country_device_breakdown_enabled: { name: "rweb_analytics_country_device_breakdown_enabled", type: "string" },

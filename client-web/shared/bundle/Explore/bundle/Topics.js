@@ -239,9 +239,10 @@
             const _ = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.16"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
+                        n.e("icons.22"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -636,4 +637,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.d61b830a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.e1fe1cca.js.map

@@ -12010,6 +12010,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ao comprar, você concorda com ", " e com ", ". As assinaturas são renovadas automaticamente até serem canceladas, conforme descrito nos Termos. Você pode cancelar a qualquer momento."];
@@ -13212,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.58138fea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.de80cd7a.js.map

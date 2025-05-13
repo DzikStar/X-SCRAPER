@@ -25,7 +25,7 @@
         342454: (e) => {
             e.exports = { queryId: "7ZF-gKjvsLW3QIinTDQh1Q", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        433579: (e) => {
+        134871: (e) => {
             e.exports = { queryId: "OmpfDMZTqb4VkGmxcKMKdA", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         337653: (e, t, i) => {
@@ -119,7 +119,7 @@
                 g = i.n(f),
                 v = i(342454),
                 w = i.n(v),
-                C = i(433579),
+                C = i(134871),
                 k = i.n(C),
                 I = i(934309);
             const T = ({ apiClient: e, featureSwitches: t }) => ({
@@ -379,4 +379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.06bf76da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.c68b7a7a.js.map

@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["如果購買，即表示你同意我們的", "和", "。如條款中所述，訂閱服務會自動續訂，直到取消為止。可隨時取消訂閱。"];
@@ -13220,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0f1424ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.ac528b1a.js.map

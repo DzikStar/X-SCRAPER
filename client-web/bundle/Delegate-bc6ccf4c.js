@@ -102,13 +102,13 @@
                 i = r(952428),
                 c = r(392237);
             const d = (e) => {
-                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: m, onPress: g, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: C, testID: Z = "pivot", thumbnail: E, thumbnailSize: v, withoutArrow: _ = !1 } = e,
-                        k = [u.thumbnailContainer, "medium" === v && u.thumbnailContainerMedium],
-                        w = "string" == typeof h ? a.createElement(s.ZP, null, h) : h,
+                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: m, onPress: g, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: C, testID: Z = "pivot", thumbnail: v, thumbnailSize: E, withoutArrow: _ = !1 } = e,
+                        w = [u.thumbnailContainer, "medium" === E && u.thumbnailContainerMedium],
+                        k = "string" == typeof h ? a.createElement(s.ZP, null, h) : h,
                         x = "object" == typeof m && m.external && !m.openInSameFrame,
                         R = r ? ("string" == typeof r ? a.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${Z}-description` }, r) : r) : null,
-                        I = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return a.createElement(i.Z, { "aria-selected": "tab" === y ? p : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [u.root, I, d && u.disabled, C], testID: Z, withInteractiveStyling: !!m || !!g }, a.createElement(o.Z, { style: u.contentContainer }, E ? a.createElement(o.Z, { style: k }, E) : null, a.createElement(o.Z, { style: u.content }, w, R), f ? f() : null, (!m && !g) || d || _ ? null : x ? a.createElement(l.default, { style: u.icon }) : a.createElement(n.default, { style: u.icon })), t);
+                        z = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
+                    return a.createElement(i.Z, { "aria-selected": "tab" === y ? p : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [u.root, z, d && u.disabled, C], testID: Z, withInteractiveStyling: !!m || !!g }, a.createElement(o.Z, { style: u.contentContainer }, v ? a.createElement(o.Z, { style: w }, v) : null, a.createElement(o.Z, { style: u.content }, k, R), f ? f() : null, (!m && !g) || d || _ ? null : x ? a.createElement(l.default, { style: u.icon }) : a.createElement(n.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -254,6 +254,19 @@
             s.metadata = { width: 24, height: 24 };
             const i = s;
         },
+        748138: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => i });
+            var a = r(202784),
+                o = r(890601),
+                l = r(783427),
+                n = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const i = s;
+        },
         662678: (e, t, r) => {
             r.d(t, { G: () => o, Z: () => a });
             r(136728);
@@ -272,4 +285,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-bc6ccf4c.c858a0aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-bc6ccf4c.048ce7aa.js.map

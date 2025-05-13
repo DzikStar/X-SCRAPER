@@ -99,7 +99,7 @@
                 k = n(445664),
                 P = n(312771),
                 v = n(696445),
-                w = n(392046),
+                w = n(777530),
                 C = n(226332),
                 T = n(727384),
                 A = n(844685),
@@ -575,4 +575,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.fbbc6d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.3b76942a.js.map

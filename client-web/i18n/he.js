@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["רכישה מהווה את הסכמתך לאמור ב-", " וב-", " שלנו. מינויים מתחדשים באופן אוטומטי עד לביטולם, כמתואר בתנאים. ניתן לבטל את המינוי בכל עת."];
@@ -13225,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.1766a3da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.2d19695a.js.map

@@ -12010,6 +12010,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["En fer la compra, acceptes les nostres ", " i ", ". Les subscripcions es renovaran automàticament fins que les cancel·lis, tal com es descriu a les condicions. Pots cancel·lar-les en qualsevol moment."];
@@ -13212,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.8adf573a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.69f2556a.js.map

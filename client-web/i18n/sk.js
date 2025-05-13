@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Nákupom súhlasíte s týmito našimi dokumentmi: ", " a ", ". Vaše predplatné sa budú automaticky obnovovať, až kým ich nezrušíte, ako je uvedené v podmienkach."];
@@ -13227,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.e1f99baa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.cb08ae7a.js.map

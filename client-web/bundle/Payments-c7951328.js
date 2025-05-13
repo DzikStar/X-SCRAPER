@@ -192,40 +192,55 @@
             }
             const w = a.memo(x);
         },
-        392046: (e, t, n) => {
-            n.d(t, { Z: () => b });
+        777530: (e, t, n) => {
+            n.d(t, { Z: () => C });
             var a = n(807896),
                 r = n(202784),
                 c = n(325686),
                 s = n(952428),
                 o = n(823161),
-                l = n(731708),
-                i = n(366635),
-                m = n(868634),
-                u = n(154003),
-                d = n(392237),
-                p = n(293723),
-                y = n(607127),
-                h = n(487552),
-                g = n(43429),
-                f = n(477922);
-            const E = "Remove linked account",
-                k = ({ account: e, handleRemove: t, isDisabled: n, isSelected: d, onClick: k, withChevron: b, withInteractiveStyling: P }) => {
-                    const Z = e.id,
-                        v = !n && (P ?? !!k),
-                        x = r.useCallback(() => {
-                            Z && !n && k?.(Z);
-                        }, [Z, k, n]),
-                        w = r.useCallback(
+                l = n(470397),
+                i = n(731708),
+                m = n(366635),
+                u = n(868634),
+                d = n(154003),
+                p = n(392237),
+                y = n(293723),
+                h = n(607127),
+                g = n(487552),
+                f = n(43429),
+                E = n(477922),
+                k = n(674132),
+                I = n.n(k),
+                b = n(727384);
+            const P = ({ fees: e }) => {
+                    const t = e.percentage_micro,
+                        n = e.fixed_minimum_amount?.local_micro,
+                        a = t ? (0, b.dN)({ amount: t, formatter: 1e5 }) : null,
+                        c = n && "0" !== n ? (0, b.vw)({ amount: n, currency: e.fixed_minimum_amount?.currency }) : null,
+                        s = r.useMemo(() => ({ percent: a, fixedFee: c }), [c, a]);
+                    return r.createElement(i.ZP, { color: "gray700" }, a && c ? r.createElement(I().I18NFormatMessage, { $i18n: "bd9265e3" }, s.percent, s.fixedFee) : "(Free)");
+                },
+                Z = r.memo(P),
+                v = "Remove linked account",
+                x = ({ account: e, handleRemove: t, isDisabled: n, isSelected: p, onClick: k, withChevron: I, withInteractiveStyling: b }) => {
+                    const P = e.id,
+                        x = e.config,
+                        { Icon: C, fees: S, settleTimeMessage: z } = x ?? {},
+                        _ = !n && (b ?? !!k),
+                        A = r.useCallback(() => {
+                            P && !n && k?.(P);
+                        }, [P, k, n]),
+                        N = r.useCallback(
                             (e) => {
                                 e && e.stopPropagation(), t?.();
                             },
                             [t],
                         );
-                    return r.createElement(s.Z, { onClick: v ? x : void 0, withInteractiveStyling: v }, r.createElement(c.Z, { style: I.account }, e.type === g.dX.x ? r.createElement(o.default, (0, a.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(f.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(c.Z, { style: I.accountName }, r.createElement(l.ZP, { color: "gray700" }, e.accountType ?? e.brandName), e.type === g.dX.x ? r.createElement(i.Z, e.accountName) : r.createElement(l.ZP, null, e.accountName.name)), e.label ? r.createElement(m.ZP, { style: I.decoration, type: "warning" }, e.label) : null, d ? r.createElement(p.default, { style: [I.decoration, I.selected] }) : null, t ? r.createElement(u.ZP, { "aria-label": E, hoverLabel: { label: E }, icon: r.createElement(y.default, null), onClick: w, size: "small", style: I.decoration, testID: "btn-remove", type: "destructiveText" }) : null, b ? r.createElement(h.default, { style: I.decoration }) : null));
+                    return r.createElement(s.Z, { onClick: _ ? A : void 0, withInteractiveStyling: _ }, r.createElement(c.Z, { style: w.account }, e.type === f.dX.x ? r.createElement(o.default, (0, a.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(E.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(c.Z, { style: w.accountName }, r.createElement(l.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== f.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === f.dX.x ? r.createElement(m.Z, e.accountName) : x ? r.createElement(c.Z, { style: w.row }, r.createElement(i.ZP, { color: "gray700" }, C ? r.createElement(C, { style: w.icon }) : null, z), S ? r.createElement(Z, { fees: S }) : null) : e.type === f.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === f.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(u.ZP, { style: w.decoration, type: "warning" }, e.label) : null, p ? r.createElement(y.default, { style: [w.decoration, w.selected] }) : null, t ? r.createElement(d.ZP, { "aria-label": v, hoverLabel: { label: v }, icon: r.createElement(h.default, null), onClick: N, size: "small", style: w.decoration, testID: "btn-remove", type: "destructiveText" }) : null, I ? r.createElement(g.default, { style: w.decoration }) : null));
                 },
-                I = d.default.create((e) => ({ account: { flexDirection: "row", gap: e.spaces.space8, display: "flex" }, accountName: { flexDirection: "column", gap: e.spaces.space4, justifyContent: "center", flex: 1 }, decoration: { alignSelf: "center", marginStart: "auto", marginEnd: e.spaces.space4, flexShrink: 0 }, selected: { color: e.colors.green500 } })),
-                b = r.memo(k);
+                w = p.default.create((e) => ({ account: { flexDirection: "row", gap: e.spaces.space8, display: "flex" }, row: { gap: e.spaces.space4, flexDirection: "row" }, accountName: { flexDirection: "column", gap: e.spaces.space4, justifyContent: "center", flex: 1 }, decoration: { alignSelf: "center", marginStart: "auto", marginEnd: e.spaces.space4, flexShrink: 0 }, selected: { color: e.colors.green500 }, icon: { marginEnd: e.spaces.space4, alignSelf: "center" } })),
+                C = r.memo(x);
         },
         803263: (e, t, n) => {
             n.d(t, { Z: () => M });
@@ -256,7 +271,7 @@
                 C = p.Z,
                 S = Object.freeze({ [P.S.Alert]: "danger", [P.S.Info]: "primary", [P.S.Warning]: "warning" }),
                 z = Object.freeze({ [P.S.Alert]: f.default, [P.S.Info]: E.default, [P.S.Warning]: f.default }),
-                A = ({ itemRef: e, supportLink: t }) => {
+                _ = ({ itemRef: e, supportLink: t }) => {
                     const n = o()(C, e),
                         a = n.topics?.includes(Z.h.Premium),
                         s = n.topics?.includes(Z.h.Interest),
@@ -285,20 +300,20 @@
                         p = a ? k.default : s ? I.default : z[n.level];
                     return r.createElement(y.Z, { key: n.title, style: d.dE.listItem, withInteractiveStyling: !1 }, r.createElement(h.Z, { Icon: p, color: u, size: "xLarge" }), r.createElement(c.Z, { style: d.dE.listItemFlex }, r.createElement(c.Z, { style: d.dE.listItemContent }, r.createElement(c.Z, { style: d.dE.listItemFlex }, r.createElement(l.ZP, null, n.title), r.createElement(l.ZP, { color: "gray700" }, n.subtitle)), a ? r.createElement(v.Z, { variant: "MoneyInterest" }) : m ? r.createElement(g.ZP, { link: m.link, size: "small", type: "secondaryFilled" }, m.label) : null)));
                 },
-                _ = r.memo(A);
+                A = r.memo(_);
             var N = n(519901);
             const T = a.Z,
-                L = "Action needed",
-                R = ({ __id: e }) => e,
-                D = ({ data: e, fetchNext: t, type: n }) => {
+                D = "Action needed",
+                L = ({ __id: e }) => e,
+                R = ({ data: e, fetchNext: t, type: n }) => {
                     const a = (0, d.jh)(),
-                        s = (({ supportLink: e, type: t }) => r.useCallback((n) => ("transaction" === t && "XPaymentsTransaction" === n.__typename ? r.createElement(N.Z, { itemRef: n, key: n.__id }) : "notice" === t && "XPaymentsCustomerNotice" === n.__typename ? r.createElement(_, { itemRef: n, key: n.__id, supportLink: e }) : null), [e, t]))({ supportLink: (0, u.b)({}), type: n }),
+                        s = (({ supportLink: e, type: t }) => r.useCallback((n) => ("transaction" === t && "XPaymentsTransaction" === n.__typename ? r.createElement(N.Z, { itemRef: n, key: n.__id }) : "notice" === t && "XPaymentsCustomerNotice" === n.__typename ? r.createElement(A, { itemRef: n, key: n.__id, supportLink: e }) : null), [e, t]))({ supportLink: (0, u.b)({}), type: n }),
                         p = e?.get_payments_customer_actions,
                         { items: y } = o()(T, p) ?? { items: [] },
-                        h = r.createElement(m.Z, { assumedItemHeight: 64, cacheKey: "actionNeededList", footer: null, identityFunction: R, items: y, onNearEnd: t, renderer: s, role: "list", withoutHeadroom: !0 });
-                    return y.length > 0 ? r.createElement(c.Z, null, "transaction" === n ? r.createElement(c.Z, { style: d.ZP.header }, r.createElement(l.ZP, { size: "headline2", weight: "bold" }, L)) : null, r.createElement(i.Z, { "aria-label": L, containerStyle: a.tile, stackLayoutUpperStyle: d.ZP.upper, upper: h, withInteractiveStyling: !1 })) : null;
+                        h = r.createElement(m.Z, { assumedItemHeight: 64, cacheKey: "actionNeededList", footer: null, identityFunction: L, items: y, onNearEnd: t, renderer: s, role: "list", withoutHeadroom: !0 });
+                    return y.length > 0 ? r.createElement(c.Z, null, "transaction" === n ? r.createElement(c.Z, { style: d.ZP.header }, r.createElement(l.ZP, { size: "headline2", weight: "bold" }, D)) : null, r.createElement(i.Z, { "aria-label": D, containerStyle: a.tile, stackLayoutUpperStyle: d.ZP.upper, upper: h, withInteractiveStyling: !1 })) : null;
                 },
-                M = r.memo(D);
+                M = r.memo(R);
         },
         634455: (e, t, n) => {
             n.d(t, { Z: () => m });
@@ -485,28 +500,28 @@
                 o = n(392237),
                 l = n(379327),
                 i = n(727384),
-                m = n(392046);
-            const u = ({ accountId: e, addAccountLink: t, addBankCardLink: n, handleDismiss: s, onSelectAccountId: o, paymentMethods: u }) => {
-                    const d = a.useCallback(
+                m = n(777530);
+            const u = ({ accountId: e, addAccountLink: t, addBankCardLink: n, handleDismiss: s, methodConfigs: o, onSelectAccountId: u, paymentMethods: d, transferDirection: y }) => {
+                    const h = a.useCallback(
                         (e) => () => {
-                            o(e), s();
+                            u(e), s();
                         },
-                        [s, o],
+                        [s, u],
                     );
                     return a.createElement(
                         r.Z,
                         { style: p.popoverContent },
-                        u?.map((t) => {
-                            const n = (0, i.Ou)(t);
-                            return n && n.id ? a.createElement(m.Z, { account: n, isSelected: e === n.id, key: n.id, onClick: d(n.id) }) : null;
+                        d?.map((t) => {
+                            const n = (0, i.xe)({ method: t, methodConfigs: o, transferDirection: y });
+                            return n && n.id ? a.createElement(m.Z, { account: n, isSelected: e === n.id, key: n.id, onClick: h(n.id) }) : null;
                         }),
                         a.createElement(c.ZP, { icon: a.createElement(l.default, null), link: t }, "Add bank account"),
                         n ? a.createElement(c.ZP, { icon: a.createElement(l.default, null), link: n }, "Add card") : null,
                     );
                 },
-                d = ({ accountId: e, addAccountLink: t, addBankCardLink: n, onSelectAccountId: r, paymentMethods: c, selectedAccount: o }) => {
-                    const l = a.useCallback((s) => a.createElement(u, { accountId: e, addAccountLink: t, addBankCardLink: n, handleDismiss: s, onSelectAccountId: r, paymentMethods: c }), [e, t, n, r, c]);
-                    return a.createElement(s.Z, { renderContent: l, withArrow: !0 }, a.createElement(m.Z, { account: o, withChevron: !0, withInteractiveStyling: !0 }));
+                d = ({ accountId: e, addAccountLink: t, addBankCardLink: n, methodConfigs: r, onSelectAccountId: c, paymentMethods: o, selectedAccount: l, transferDirection: i }) => {
+                    const d = a.useCallback((s) => a.createElement(u, { accountId: e, addAccountLink: t, addBankCardLink: n, handleDismiss: s, methodConfigs: r, onSelectAccountId: c, paymentMethods: o, transferDirection: i }), [e, t, n, r, c, o, i]);
+                    return a.createElement(s.Z, { renderContent: d, withArrow: !0 }, a.createElement(m.Z, { account: l, withChevron: !0, withInteractiveStyling: !0 }));
                 },
                 p = o.default.create((e) => ({ popoverContent: { margin: e.spaces.space16, flexDirection: "column", gap: e.spaces.space16, maxHeight: "280px" } })),
                 y = a.memo(d);
@@ -730,9 +745,9 @@
                 return a.createElement(i.H, { errorConfig: C }, a.createElement(w, e));
             }
             const z = a.memo(S);
-            var A = n(500386);
-            const _ = ({ amount: e, onSuccess: t, receiverScreenName: n, recordId: i, size: y, transactionId: g }) => {
-                    const [f, E] = (0, A.Z)(),
+            var _ = n(500386);
+            const A = ({ amount: e, onSuccess: t, receiverScreenName: n, recordId: i, size: y, transactionId: g }) => {
+                    const [f, E] = (0, _.Z)(),
                         { permissions: k, roles: I } = (0, d.Z)({ fetchKey: "Payments" }),
                         b = (0, r.Fs)({ permissions: k, permission: l.d.CancelTransfer }),
                         P = (0, p.z)(),
@@ -760,12 +775,12 @@
                 },
                 N = { context: "PaymentsCancelTransfer" };
             function T(e) {
-                return a.createElement(i.H, { errorConfig: N }, a.createElement(_, e));
+                return a.createElement(i.H, { errorConfig: N }, a.createElement(A, e));
             }
-            const L = a.memo(T);
-            var R = n(891414);
-            const D = ({ amount: e, onSuccess: t, recordId: n, size: i, transactionId: y, userScreenName: g }) => {
-                    const [f, E] = (0, R.C7)(),
+            const D = a.memo(T);
+            var L = n(891414);
+            const R = ({ amount: e, onSuccess: t, recordId: n, size: i, transactionId: y, userScreenName: g }) => {
+                    const [f, E] = (0, L.C7)(),
                         { permissions: k, roles: I } = (0, d.Z)({ fetchKey: "Payments" }),
                         b = (0, r.Fs)({ permissions: k, permission: l.d.RespondToRequestTransfer }),
                         P = (0, p.z)(),
@@ -792,10 +807,10 @@
                     return a.createElement(s.ZP, { disabled: w, onPress: x, size: i ?? "medium", type: "primaryOutlined" }, E ? a.createElement(o.Z, { size: "small" }) : "Decline");
                 },
                 M = { context: "PaymentsDeclineRequest" };
-            function $(e) {
-                return a.createElement(i.H, { errorConfig: M }, a.createElement(D, e));
+            function F(e) {
+                return a.createElement(i.H, { errorConfig: M }, a.createElement(R, e));
             }
-            const F = a.memo($),
+            const $ = a.memo(F),
                 V = ({ amount: e, onSuccess: t, recordId: n, senderScreenName: i, size: g, transactionId: f }) => {
                     const [E, k] = (0, y.C7)(),
                         I = (0, p.z)(),
@@ -829,7 +844,7 @@
             }
             const K = a.memo(q),
                 U = ({ amount: e, onSuccess: t, recordId: n, size: i, transactionId: y, type: g, userScreenName: f }) => {
-                    const [E, k] = (0, R.iP)(),
+                    const [E, k] = (0, L.iP)(),
                         { permissions: I, roles: b } = (0, d.Z)({ fetchKey: "Payments" }),
                         P = (0, r.Fs)({ permissions: I, permission: l.d.RespondToRequestTransfer }),
                         Z = (0, p.z)(),
@@ -860,7 +875,7 @@
                 return a.createElement(i.H, { errorConfig: W }, a.createElement(U, e));
             }
             const B = a.memo(Y),
-                O = ({ amount: e, onSuccess: t, recordId: n, size: i, transactionId: y }) => {
+                X = ({ amount: e, onSuccess: t, recordId: n, size: i, transactionId: y }) => {
                     const [g, f] = (0, I.F8)(),
                         { permissions: E, roles: k } = (0, d.Z)({ fetchKey: "Payments" }),
                         b = (0, r.Fs)({ permissions: E, permission: l.d.ConfirmUnrecognizedPayment }),
@@ -887,9 +902,9 @@
                         w = f || !b;
                     return a.createElement(s.ZP, { disabled: w, onPress: x, size: i ?? "medium", type: "destructiveFilled" }, f ? a.createElement(o.Z, { size: "small" }) : "I did not make this purchase");
                 },
-                X = { context: "PaymentsRejectPayment" };
+                O = { context: "PaymentsRejectPayment" };
             function j(e) {
-                return a.createElement(i.H, { errorConfig: X }, a.createElement(O, e));
+                return a.createElement(i.H, { errorConfig: O }, a.createElement(X, e));
             }
             const J = a.memo(j),
                 G = ({ size: e, transactionId: t, type: n }) => {
@@ -909,16 +924,16 @@
                     f = (0, r.UM)({ status: m, transactionType: d, isViewerSender: c }),
                     E = (0, r.T3)({ status: m, transactionType: d, isViewerSender: c }),
                     I = (0, r.BC)({ status: m }),
-                    b = a.useMemo(() => (g ? a.createElement(L, { amount: y, key: "CancelTransfer", onSuccess: s, receiverScreenName: o, recordId: l, transactionId: u }) : null), [g, y, s, o, l, u]),
+                    b = a.useMemo(() => (g ? a.createElement(D, { amount: y, key: "CancelTransfer", onSuccess: s, receiverScreenName: o, recordId: l, transactionId: u }) : null), [g, y, s, o, l, u]),
                     P = a.useMemo(() => (E ? a.createElement(z, { amount: y, key: "CancelRequest", recordId: l, transactionId: u, userScreenName: i }) : null), [E, y, l, i, u]),
                     Z = a.useMemo(() => (f ? a.createElement(B, { amount: y, key: "PayRequest", onSuccess: s, recordId: l, size: p ? "small" : "medium", transactionId: u, type: p ? "secondaryFilled" : "primaryFilled", userScreenName: o }) : null), [f, y, s, o, l, u, p]),
-                    x = a.useMemo(() => (f ? a.createElement(F, { amount: y, key: "DeclineRequest", recordId: l, transactionId: u, userScreenName: o }) : null), [f, y, o, l, u]),
+                    x = a.useMemo(() => (f ? a.createElement($, { amount: y, key: "DeclineRequest", recordId: l, transactionId: u, userScreenName: o }) : null), [f, y, o, l, u]),
                     w = a.useMemo(() => (h ? a.createElement(k, { amount: y, key: "AcceptTransfer", onSuccess: s, recordId: l, senderScreenName: i, size: p ? "small" : "medium", transactionId: u, type: p ? "secondaryFilled" : "primaryFilled" }) : null), [h, y, s, l, i, u, p]),
                     C = a.useMemo(() => (h ? a.createElement(K, { amount: y, key: "DeclineTransfer", recordId: l, senderScreenName: i, transactionId: u }) : null), [h, y, l, i, u]),
                     S = a.useMemo(() => (I ? a.createElement(v, { amount: y, key: "ApprovePayment", onSuccess: s, recordId: l, size: p ? "small" : "medium", transactionId: u, type: p ? "secondaryFilled" : "primaryFilled" }) : null), [I, y, s, l, u, p]),
-                    A = a.useMemo(() => (I ? a.createElement(J, { amount: y, key: "RejectPayment", onSuccess: s, recordId: l, transactionId: u }) : null), [I, y, s, l, u]),
-                    _ = a.useMemo(() => (I ? a.createElement(te, { key: "ReviewPayment", size: p ? "small" : "medium", transactionId: u, type: p ? "secondaryFilled" : "primaryFilled" }) : null), [I, u, p]),
-                    N = a.useMemo(() => [...(p ? [Z, w, _] : [b, P, Z, x, w, C, A, S])], [w, S, P, b, x, C, Z, A, _, p]);
+                    _ = a.useMemo(() => (I ? a.createElement(J, { amount: y, key: "RejectPayment", onSuccess: s, recordId: l, transactionId: u }) : null), [I, y, s, l, u]),
+                    A = a.useMemo(() => (I ? a.createElement(te, { key: "ReviewPayment", size: p ? "small" : "medium", transactionId: u, type: p ? "secondaryFilled" : "primaryFilled" }) : null), [I, u, p]),
+                    N = a.useMemo(() => [...(p ? [Z, w, A] : [b, P, Z, x, w, C, _, S])], [w, S, P, b, x, C, Z, _, A, p]);
                 return a.createElement(a.Fragment, null, N);
             }
             const ae = a.memo(ne);
@@ -951,26 +966,26 @@
             const w = a.Z,
                 C = ({ itemRef: e }) => {
                     const t = o()(w, e),
-                        { __id: n, amount_local_micro: a, challenge_id: s, created_at: C, currency: S, description: z, details: A, id: _, product_code: N, reason_code: T, transaction_status: L, transaction_type: R } = t,
-                        D = N === d.x.Interest,
-                        M = A.receiver_results?.result,
-                        $ = A.sender_results?.result,
-                        F = A.payment_method,
-                        V = A.merchant_details,
-                        H = (0, f.Z)({ senderId: $?.rest_id }),
-                        q = (0, k.GU)({ transactionType: R, isViewerSender: H, productCode: N }),
-                        K = D || "User" !== M?.__typename || "User" !== $?.__typename ? null : H ? M : $,
-                        U = (0, k.zK)({ transactionType: R, productCode: N, merchantDetails: V, amountType: q }),
-                        W = R === p.x.Deposit || R === p.x.Withdraw ? (0, k.Ou)(F) : null,
-                        Y = (0, k.lD)({ status: L, reasonCode: T, isViewerSender: H }),
-                        B = (0, k.qK)({ transactionType: R, description: z, productCode: N, accountName: W ? (W.accountType ? `${W.accountType} ${W.accountName.name}` : `${W.accountName.name}`) : "", createdAt: C, statusLabel: Y }),
-                        O = (0, k._T)({ status: L }),
-                        X = (0, k.Gl)({ status: L }),
-                        j = $?.legacy?.screen_name,
+                        { __id: n, amount_local_micro: a, challenge_id: s, created_at: C, currency: S, description: z, details: _, id: A, product_code: N, reason_code: T, transaction_status: D, transaction_type: L } = t,
+                        R = N === d.x.Interest,
+                        M = _.receiver_results?.result,
+                        F = _.sender_results?.result,
+                        $ = _.payment_method,
+                        V = _.merchant_details,
+                        H = (0, f.Z)({ senderId: F?.rest_id }),
+                        q = (0, k.GU)({ transactionType: L, isViewerSender: H, productCode: N }),
+                        K = R || "User" !== M?.__typename || "User" !== F?.__typename ? null : H ? M : F,
+                        U = (0, k.zK)({ transactionType: L, productCode: N, merchantDetails: V, amountType: q }),
+                        W = L === p.x.Deposit || L === p.x.Withdraw ? (0, k.Ou)($) : null,
+                        Y = (0, k.lD)({ status: D, reasonCode: T, isViewerSender: H }),
+                        B = (0, k.qK)({ transactionType: L, description: z, productCode: N, accountName: W ? (W.accountType ? `${W.accountType} ${W.accountName.name}` : `${W.accountName.name}`) : "", createdAt: C, statusLabel: Y }),
+                        X = (0, k._T)({ status: D }),
+                        O = (0, k.Gl)({ status: D }),
+                        j = F?.legacy?.screen_name,
                         J = M?.legacy?.screen_name,
-                        G = (0, k.DK)({ isViewerSender: H, status: L, transactionType: R }),
-                        Q = (0, k.pQ)({ productCode: N, transactionType: R, account: W });
-                    return r.createElement(l.Z, { key: _, link: `${y.bR}/${_}`, style: E.dE.listItem }, Q ? r.createElement(b.KR, { size: "xLarge", type: Q.iconType, uri: Q.uri }) : K ? r.createElement(h.Z, { size: "xLarge", user: K }) : U ? r.createElement(b.G7, { size: "xLarge", type: U.type, uri: U.logo }) : r.createElement(i.default, { size: "xLarge" }), r.createElement(c.Z, { style: E.dE.listItemFlex, testID: `transaction-item-${_}` }, r.createElement(c.Z, { style: E.dE.listItemContent }, r.createElement(c.Z, { style: E.dE.listItemFlex }, Q ? r.createElement(x.Z, { title: Q.title }) : K ? r.createElement(g.Z, { user: K, weight: "medium" }) : U ? r.createElement(P.Z, { name: U.name, website: U.website }) : W ? r.createElement(Z.Z, { account: W }) : r.createElement(m.ZP, null, "This account is unavailable"), G && a ? r.createElement(m.ZP, { color: "gray700" }, (0, k.lw)({ status: L, description: z, amount: a, currency: S })) : X ? r.createElement(m.ZP, { color: "gray700" }, Y) : B ? r.createElement(m.ZP, { color: "gray700" }, B) : null), G ? r.createElement(v.Z, { amount: a, challengeId: s, currency: S, isViewerSender: H, receiverScreenName: J, recordId: n, senderScreenName: j, status: L, transactionId: _, transactionType: R, withPrimaryOnly: !0 }) : r.createElement(c.Z, { style: E.dE.alignEnd }, r.createElement(I.Z, { amount: a, currency: S, hasCompleted: O, size: "body", type: q, weight: "normal" }), r.createElement(u.Z, { style: E.dE.alignEnd, timestamp: parseInt(C, 10) })))));
+                        G = (0, k.DK)({ isViewerSender: H, status: D, transactionType: L }),
+                        Q = (0, k.pQ)({ productCode: N, transactionType: L, account: W });
+                    return r.createElement(l.Z, { key: A, link: `${y.bR}/${A}`, style: E.dE.listItem }, Q ? r.createElement(b.KR, { size: "xLarge", type: Q.iconType, uri: Q.uri }) : K ? r.createElement(h.Z, { size: "xLarge", user: K }) : U ? r.createElement(b.G7, { size: "xLarge", type: U.type, uri: U.logo }) : r.createElement(i.default, { size: "xLarge" }), r.createElement(c.Z, { style: E.dE.listItemFlex, testID: `transaction-item-${A}` }, r.createElement(c.Z, { style: E.dE.listItemContent }, r.createElement(c.Z, { style: E.dE.listItemFlex }, Q ? r.createElement(x.Z, { title: Q.title }) : K ? r.createElement(g.Z, { user: K, weight: "medium" }) : U ? r.createElement(P.Z, { name: U.name, website: U.website }) : W ? r.createElement(Z.Z, { account: W }) : r.createElement(m.ZP, null, "This account is unavailable"), G && a ? r.createElement(m.ZP, { color: "gray700" }, (0, k.lw)({ status: D, description: z, amount: a, currency: S })) : O ? r.createElement(m.ZP, { color: "gray700" }, Y) : B ? r.createElement(m.ZP, { color: "gray700" }, B) : null), G ? r.createElement(v.Z, { amount: a, challengeId: s, currency: S, isViewerSender: H, receiverScreenName: J, recordId: n, senderScreenName: j, status: D, transactionId: A, transactionType: L, withPrimaryOnly: !0 }) : r.createElement(c.Z, { style: E.dE.alignEnd }, r.createElement(I.Z, { amount: a, currency: S, hasCompleted: X, size: "body", type: q, weight: "normal" }), r.createElement(u.Z, { style: E.dE.alignEnd, timestamp: parseInt(C, 10) })))));
                 },
                 S = r.memo(C);
         },
@@ -1061,4 +1076,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.857abeda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.41ca8b3a.js.map

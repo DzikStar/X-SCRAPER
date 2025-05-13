@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Оформляя покупку, вы принимаете ", " и ", ". Подписка будет продлеваться автоматически, пока вы ее не отмените, как описано в Условиях. Отменить подписку можно в любой момент."];
@@ -13225,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.016563ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.68e5149a.js.map

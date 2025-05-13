@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Door de aankoop te doen, ga je akkoord met onze ", " en onze ", ". Je Abonnement wordt automatisch verlengd totdat je opzegt, zoals beschreven in de Voorwaarden. Je kan op elk moment opzeggen."];
@@ -13225,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.ad91da7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.e452bc8a.js.map

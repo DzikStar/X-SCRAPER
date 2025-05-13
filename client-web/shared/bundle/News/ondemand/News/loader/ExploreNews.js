@@ -318,7 +318,7 @@
             const d = i.default.create((e) => ({ container: { display: "flex", width: "max-content", padding: e.spaces.space4, backgroundColor: s.Z.hexToCss(e.colors.red500, 0.2), borderRadius: e.borderRadii.small }, label: { color: e.colors.red500, fontSize: 9, lineHeight: 9, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0.6 }, "50%": { opacity: 1 }, "100%": { opacity: 0.6 } }], animationTimingFunction: "ease", animationFillMode: "both", animationIterationCount: "infinite" }, largeLabel: { fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 } }));
         },
         858496: (e, t, n) => {
-            n.d(t, { Z: () => W });
+            n.d(t, { Z: () => q });
             var a = n(202784),
                 o = n(325686),
                 r = n(731708),
@@ -402,8 +402,8 @@
                 v = n(725556),
                 Z = n(103131),
                 S = n(735081),
-                D = n(663004),
-                _ = n(815045),
+                _ = n(663004),
+                D = n(815045),
                 I = n(194504),
                 P = n(187669),
                 M = n(949626);
@@ -443,43 +443,44 @@
                 return a.createElement("g", null, a.createElement("foreignObject", { height: r, width: r, x: t - 8, y: n - 8 }, a.createElement(o.Z, { style: [R.dotContainer, { width: r, height: r }] }, a.createElement(o.Z, { style: [R.dot, { backgroundColor: e, width: 8, height: 8 }] }), a.createElement(o.Z, { style: R.pulseContainer }, a.createElement(o.Z, { style: [R.pulse, { backgroundColor: l.Z.hexToCss(e, 0.5) }] })))));
             }
             const R = s.default.create((e) => ({ dotContainer: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, dot: { borderRadius: e.borderRadii.infinite }, pulseContainer: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, borderRadius: e.borderRadii.infinite, display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, pulse: { borderRadius: e.borderRadii.infinite, animationDuration: "1s", animationTimingFunction: "linear", animationIterationCount: "infinite", animationFillMode: "forwards", animationDelay: "0s", width: "100%", height: "100%", animationKeyframes: [{ "0%": { transform: "scale(0)", opacity: 1 } }, { "95%": { transform: "scale(1)", opacity: 1 } }, { "100%": { transform: "scale(1)", opacity: 0 } }] } })),
-                F = "news-sentiment-recharts";
-            function N({ chartData: e, isBlurred: t, typeMetadata: n }) {
-                const { sentimentScores: i } = y({ chartData: e, typeMetadata: n }),
-                    [c, d] = a.useState({}),
-                    u = `line-chart-${Object.keys(c).join("-")}`,
-                    p = t ? 100 : 200;
+                N = "news-sentiment-recharts";
+            function F({ chartData: e, isBlurred: t, question: n, typeMetadata: i }) {
+                const c = (0, p.Z)(),
+                    { sentimentScores: d } = y({ chartData: e, typeMetadata: i }),
+                    [u, h] = a.useState({}),
+                    g = `line-chart-${Object.keys(u).join("-")}`,
+                    f = t ? 100 : 200;
                 (0, P.q)(() => {
-                    if (document.getElementById(F)) return;
+                    if (document.getElementById(N)) return;
                     const e = document.createElement("style");
-                    e.setAttribute("id", F), (e.textContent = `\n      .${F} .recharts-responsive-container {\n        width: 102% !important;\n      }\n\n      .${F} .recharts-surface {\n        overflow: visible;\n      }\n    `);
+                    e.setAttribute("id", N), (e.textContent = `\n      .${N} .recharts-responsive-container {\n        width: 102% !important;\n      }\n\n      .${N} .recharts-surface {\n        overflow: visible;\n      }\n    `);
                     const t = document.head;
                     return (
                         t && t.appendChild(e),
                         () => {
-                            const e = document.getElementById(F);
+                            const e = document.getElementById(N);
                             e && e.remove();
                         }
                     );
                 });
-                const h = a.useCallback(
+                const b = a.useCallback(
                         (e) => {
-                            const t = { ...c };
-                            c[e] ? delete t[e] : (t[e] = !0), d(t);
+                            const t = { ...u };
+                            u[e] ? delete t[e] : (t[e] = !0), c.scribe({ element: "news_sentiment_line_chart_type", action: "click", data: { event_info: JSON.stringify({ question: n, type: e }) } }), h(t);
                         },
-                        [c],
+                        [u, c, n],
                     ),
-                    g = a.useCallback((e) => z(new Date(e), { month: !0, day: !0, hour: !0 }), []),
-                    f = Object.keys(c);
+                    C = a.useCallback((e) => z(new Date(e), { month: !0, day: !0, hour: !0 }), []),
+                    $ = Object.keys(u);
                 return a.createElement(
                     o.Z,
                     { style: [L.container, t ? L.blur : void 0] },
                     a.createElement(
                         I.Z,
                         { buttonsContainerStyle: L.typesContent, style: L.types },
-                        Object.keys(n).map((e) => {
-                            const t = n[e];
-                            return a.createElement(m.Z, { key: `${e}-toggle`, onClick: () => h(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [L.typeContainer, { backgroundColor: l.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: l.Z.hexToCss(t.color, 0.3) } : void 0, f.length > 0 && !f.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(r.ZP, { style: L.type }, t.label)));
+                        Object.keys(i).map((e) => {
+                            const t = i[e];
+                            return a.createElement(m.Z, { key: `${e}-toggle`, onClick: () => b(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [L.typeContainer, { backgroundColor: l.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: l.Z.hexToCss(t.color, 0.3) } : void 0, $.length > 0 && !$.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(r.ZP, { style: L.type }, t.label)));
                         }),
                     ),
                     a.createElement(
@@ -487,19 +488,19 @@
                         { style: L.lineChart },
                         a.createElement(
                             M.Z,
-                            { className: F },
+                            { className: N },
                             a.createElement(
                                 w.h,
-                                { height: p },
+                                { height: f },
                                 a.createElement(
                                     E.w,
-                                    { data: e, height: p, key: u },
+                                    { data: e, height: f, key: g },
                                     a.createElement(k.q, { fillOpacity: 0.6, horizontal: !0, stroke: s.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
-                                    a.createElement(v.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: L.tick, tickFormatter: g, tickLine: !1, type: "number" }),
+                                    a.createElement(v.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: L.tick, tickFormatter: C, tickLine: !1, type: "number" }),
                                     a.createElement(Z.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: L.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
                                     a.createElement(S.u, { content: a.createElement(T, null), cursor: { stroke: s.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
-                                    Object.keys(n).map((e) => (c[e] || 0 === f.length ? a.createElement(D.x, { activeDot: !0, connectNulls: !0, dataKey: `${n[e].idx}-value`, dot: !1, key: `line-chart-${e}`, stroke: n[e].color, strokeWidth: 2.5, type: "monotone" }) : null)),
-                                    i.map((e) => (c[e.type] || 0 === f.length ? a.createElement(_.q, { alwaysShow: !0, isFront: !0, key: `sentiment-score-${e.type}`, shape: (t) => a.createElement(B, (0, x.Z)({}, t, { color: e.color })), x: e.timestamp, y: e.value }) : null)),
+                                    Object.keys(i).map((e) => (u[e] || 0 === $.length ? a.createElement(_.x, { activeDot: !0, connectNulls: !0, dataKey: `${i[e].idx}-value`, dot: !1, key: `line-chart-${e}`, stroke: i[e].color, strokeWidth: 2.5, type: "monotone" }) : null)),
+                                    d.map((e) => (u[e.type] || 0 === $.length ? a.createElement(D.q, { alwaysShow: !0, isFront: !0, key: `sentiment-score-${e.type}`, shape: (t) => a.createElement(B, (0, x.Z)({}, t, { color: e.color })), x: e.timestamp, y: e.value }) : null)),
                                 ),
                             ),
                         ),
@@ -509,7 +510,7 @@
             const L = s.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
                 H = [s.default.theme.colors.blue300, s.default.theme.colors.yellow300, s.default.theme.colors.orange300, s.default.theme.colors.green300, s.default.theme.colors.magenta300, s.default.theme.colors.plum300, s.default.theme.colors.red300, s.default.theme.colors.purple300, s.default.theme.colors.teal300];
             const O = "What do people think?";
-            function W({ articleId: e, containerStyle: t, hoveredContainerStyle: n, onClick: s, sentiment: l, showPercentages: m, size: u, style: p }) {
+            function q({ articleId: e, containerStyle: t, hoveredContainerStyle: n, onClick: s, sentiment: l, showPercentages: m, size: u, style: p }) {
                 const h = (0, c.v9)(d.Qb),
                     { chartData: y, typeMetadata: g } = (function ({ sentiment: e }) {
                         return a.useMemo(() => {
@@ -528,9 +529,9 @@
                             );
                         }, [e]);
                     })({ sentiment: l });
-                return y.length ? (m ? a.createElement(b, { articleId: e, chartData: y, containerStyle: t, hoveredStyle: n, onClick: s, question: l.question, size: u, style: p, typeMetadata: g }) : a.createElement(o.Z, { style: [j.container, p] }, a.createElement(o.Z, { style: j.headerContainer }, a.createElement(o.Z, { style: j.questionContainer }, a.createElement(r.ZP, { style: j.title, weight: "bold" }, O), a.createElement(r.ZP, { style: j.question }, l.question))), a.createElement(o.Z, { style: j.visibilityContainer }, a.createElement(N, { chartData: y, isBlurred: !h, typeMetadata: g }), !h && a.createElement(o.Z, { style: j.loggedOutContainer }, a.createElement(i.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
+                return y.length ? (m ? a.createElement(b, { articleId: e, chartData: y, containerStyle: t, hoveredStyle: n, onClick: s, question: l.question, size: u, style: p, typeMetadata: g }) : a.createElement(o.Z, { style: [W.container, p] }, a.createElement(o.Z, { style: W.headerContainer }, a.createElement(o.Z, { style: W.questionContainer }, a.createElement(r.ZP, { style: W.title, weight: "bold" }, O), a.createElement(r.ZP, { style: W.question }, l.question))), a.createElement(o.Z, { style: W.visibilityContainer }, a.createElement(F, { chartData: y, isBlurred: !h, question: l.question, typeMetadata: g }), !h && a.createElement(o.Z, { style: W.loggedOutContainer }, a.createElement(i.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
             }
-            const j = s.default.create((e) => ({ container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: l.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
+            const W = s.default.create((e) => ({ container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: l.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
         978086: (e, t, n) => {
             n.d(t, { Z: () => r });
@@ -628,8 +629,8 @@
                             v = E ? w.visibleDrawer : ("left" === t) === k ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
                             Z = E && !C ? w.maskWithBg : w.maskTransparent,
                             S = E ? w.animateOpen : w.animateClose,
-                            D = l.Z.reducedMotionEnabled ? null : S;
-                        return a.createElement(h.Z.Modal, null, a.createElement(p.Z, null, a.createElement(u.Z, null, a.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, Z, D, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, m.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: x, style: [w.root, f ? w.backgroundRootBlur : null, v, D, i], children: a.createElement(a.Fragment, null, b ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: g, subtitle: s, title: d }) : null, a.createElement(o.Z, { style: w.contentContainer }, r)) })))));
+                            _ = l.Z.reducedMotionEnabled ? null : S;
+                        return a.createElement(h.Z.Modal, null, a.createElement(p.Z, null, a.createElement(u.Z, null, a.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, Z, _, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, m.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: x, style: [w.root, f ? w.backgroundRootBlur : null, v, _, i], children: a.createElement(a.Fragment, null, b ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: g, subtitle: s, title: d }) : null, a.createElement(o.Z, { style: w.contentContainer }, r)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -645,4 +646,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.8c7fa79a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.e80ecbea.js.map

@@ -12017,6 +12017,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Куповином пристајеш на наше документе ", " и ", ". Претплате се обнављају аутоматски док се не откажу, као што је описано у условима коришћења. Откажи у било ком тренутку."];
@@ -13226,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.2895f97a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.94863a4a.js.map

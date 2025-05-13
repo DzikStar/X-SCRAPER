@@ -12010,6 +12010,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["[By pürchåäsïíng, yöøü åägréêéê töø öøür ", " åänd öøür ", ". Sübscrïíptïíöøns åäütöø-réênéêw üntïíl cåäncéêléêd, åäs déêscrïíbéêd ïín théê Téêrms. Cåäncéêl åänytïíméê.]"];
@@ -13212,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.00c7010a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.94f853ca.js.map

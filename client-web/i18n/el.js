@@ -12009,6 +12009,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Με την αγορά, συμφωνείτε με την ", " και την ", ". Οι συνδρομές ανανεώνονται αυτόματα μέχρι να ακυρωθούν, όπως περιγράφεται στους Όρους. Ακύρωση ανά πάσα στιγμή."];
@@ -13210,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.a939687a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.b1592cea.js.map

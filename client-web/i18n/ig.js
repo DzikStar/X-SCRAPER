@@ -12026,6 +12026,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["By purchasing, you agree to our ", " and our ", ". Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime."];
@@ -13227,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.44623a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.ec8da1ea.js.map

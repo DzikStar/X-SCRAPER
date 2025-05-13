@@ -284,7 +284,7 @@
                 n("edf7f57e", "인증을 받으면 답글 부스트, 애널리틱스, 광고 없는 타임라인 등 다양한 기능을 이용할 수 있습니다. 지금 바로 프로필을 업그레이드하세요."),
                 n("ba920d68", "인증을 받고 내 영향력을 강화하세요"),
                 n("ib79d0c2", "계정 인증 등 VIP 기능을 확인하세요"),
-                n("c0d3bd82", "X에 광고를 게재했지만 인증된 조직에 가입하지 않으셨습니다"),
+                n("c0d3bd82", "X에 광고를 게재했지만 인증 조직 서비스를 구독하고 있지 않습니다"),
                 n("d7836d1e", "인증된 조직에 가입하면 최대 $12,000 상당의 무료 광고 크레딧을 포함해 금색 인증마크, VIP 지원을 받고 다양한 비즈니스 성장 도구를 이용할 수 있습니다."),
                 n("f528e369", function (e) {
                     return e.tier + " 구독을 시작하고 직접 아티클을 작성해 보세요";
@@ -4151,7 +4151,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "원하는 검색 모드 선택"),
                 n("i330e54c", "고급 검색 및 추론"),
-                n("fdcce108", "보다 심층 검색"),
+                n("fdcce108", "보다 심층적인 검색"),
                 n("ac64b674", "확장 검색 및 더 많은 추론"),
                 n("j22655f2", "무엇이든 물어보세요"),
                 n("h0681e3e", "X의 AI 어시스턴트, Grok과 이야기하세요"),
@@ -12029,6 +12029,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["구매하시면 X의 ", " 및 ", "에 동의하는 것으로 간주됩니다. 이용약관에 명시된 것과 같이, 취소하기 전까지 구독은 자동으로 갱신됩니다. 언제든지 취소할 수 있습니다."];
@@ -13230,4 +13236,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.00d1e77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.9b07cfca.js.map

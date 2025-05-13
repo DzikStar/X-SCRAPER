@@ -126,12 +126,11 @@
             const M = (0, C.Z)({
                     loader: () =>
                         Promise.all([
-                            i.e("icons.16"),
-                            i.e("icons.10"),
+                            i.e("icons.5"),
+                            i.e("icons.28"),
+                            i.e("icons.17"),
                             i.e("modules.common-e907d115"),
                             i.e("modules.common-e019dbda"),
-                            i.e("icons.13"),
-                            i.e("icons.22"),
                             i.e("modules.audio-6107ac1a"),
                             i.e("modules.audio-b953418a"),
                             i.e("modules.audio-7c51e6a7"),
@@ -142,10 +141,12 @@
                             i.e("modules.audio-e019dbda"),
                             i.e("modules.audio-262c94d4"),
                             i.e("modules.audio-c6fe4ea4"),
+                            i.e("icons.25"),
                             i.e("icons.4"),
-                            i.e("icons.26"),
+                            i.e("icons.13"),
+                            i.e("icons.1"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -397,4 +398,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl.9f24bb5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl.fc7f14ba.js.map

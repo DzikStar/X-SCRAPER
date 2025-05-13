@@ -12017,6 +12017,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Sa pagbili, sumasang-ayon ka sa aming ", " at sa aming ", ". Awtomatikong mare-renew ang mga subscription hanggang sa kanselahin ang mga ito, gaya ng nakasaan sa mga Tuntunan. Magkansela kahit kailan."];
@@ -13224,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.0b59355a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.6868b44a.js.map

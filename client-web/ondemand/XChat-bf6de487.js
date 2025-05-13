@@ -43,7 +43,7 @@
                     B = i.$_$.rk,
                     E = n.$_$.w2,
                     G = i.$_$.qd,
-                    Q = r.$_$.z1,
+                    Q = r.$_$.a2,
                     U = i.$_$.ld,
                     X = i.$_$.rd,
                     H = n.$_$.k1,
@@ -85,13 +85,13 @@
                     At = i.$_$.qe,
                     It = i.$_$.w8,
                     Nt = i.$_$.md,
-                    St = r.$_$.m2,
+                    St = r.$_$.n2,
                     Pt = n.$_$.a3,
                     Lt = i.$_$.b2,
                     Wt = i.$_$.ia,
                     Dt = n.$_$.p1,
                     Mt = h.$_$.g,
-                    Ot = r.$_$.s2,
+                    Ot = r.$_$.t2,
                     Rt = n.$_$.r,
                     Tt = n.$_$.q1,
                     Bt = n.$_$.a2,
@@ -116,7 +116,7 @@
                     ei = r.$_$.v1,
                     ci = n.$_$.w1,
                     oi = r.$_$.e1,
-                    ai = r.$_$.b2;
+                    ai = r.$_$.c2;
                 function fi() {}
                 function li() {}
                 function wi(t, i) {
@@ -413,7 +413,7 @@
                                   i,
                                   ((e = new Qn(n, i, t, s, r, null)),
                                   (c = function (t) {
-                                      return e.j2g(t);
+                                      return e.v2g(t);
                                   }),
                                   (c.$arity = 0),
                                   c),
@@ -1560,12 +1560,12 @@
                         var n = new En(this.b5j_1, i);
                         return (n.c5j_1 = t), n;
                     }),
-                    (A(Qn).j2g = function (t) {
+                    (A(Qn).v2g = function (t) {
                         var i = this.ma(t);
                         return (i.s9_1 = M), (i.t9_1 = null), i.ia();
                     }),
-                    (A(Qn).k2g = function (t) {
-                        return this.j2g(t);
+                    (A(Qn).w2g = function (t) {
+                        return this.v2g(t);
                     }),
                     (A(Qn).ia = function () {
                         var t,
@@ -2498,4 +2498,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-bf6de487.b7e3cf5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-bf6de487.315687aa.js.map

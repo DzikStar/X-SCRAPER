@@ -12028,6 +12028,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["வாங்குவதன் மூலம், எங்கள் ", " மற்றும் எங்கள் ", " -ஐ ஏற்கிறீர்கள். விதிமுறைகளில் விவரிக்கப்பட்டுள்ளபடி, ரத்துசெய்யப்படும் வரை சப்ஸ்கிர்ப்ஷன்ஸ் தானாகப் புதுப்பிக்கப்படும். எப்போது வேண்டுமானாலும் ரத்து செய்யலாம்."];
@@ -13229,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.99005aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.6ce94f7a.js.map

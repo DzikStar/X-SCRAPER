@@ -549,8 +549,8 @@
             const C = [],
                 P = (e, { module: a, query: t }) => a.selectInitialFetchStatus(e, t),
                 Z = (e, { module: a, query: t }) => a.selectItems(e, t),
-                E = (e, { module: a, query: t }) => a.selectNextFetchStatus(e, t),
-                x = (e) => {
+                v = (e, { module: a, query: t }) => a.selectNextFetchStatus(e, t),
+                E = (e) => {
                     const { tweetComposer: a } = e,
                         t = a?.activeParentKey,
                         r = A.E_(e, t),
@@ -558,8 +558,8 @@
                         d = o.composerData[r]?.mediaIds;
                     return Array.isArray(d) ? d : C;
                 },
-                v = (0, S.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: P, items: Z, nextFetchStatus: E, oldMediaIds: x }))
+                x = (0, S.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: P, items: Z, nextFetchStatus: v, oldMediaIds: E }))
                     .adjustStateProps(({ initialFetchStatus: e, items: a, nextFetchStatus: t, oldMediaIds: r }) => ({ initialFetchStatus: e, items: Array.isArray(a) ? (0, w.Z)(a, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, a) => a.height * a.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: t, oldMediaIds: r }))
                     .propsFromActions(({ history: e, module: a }) => {
                         return {
@@ -596,20 +596,20 @@
                 G = l.default.create((e) => ({ imageContainer: { marginHorizontal: "1px", overflow: "hidden", flexShrink: 1 } })),
                 L = T,
                 q = "gifSearchTimelineRoot",
-                O = i().a66b7760,
-                z = i().a723aefa,
+                z = i().a66b7760,
+                O = i().a723aefa,
                 K = i().a6ecfa0a,
                 U = (e) => e.map((e) => e.id).join("-"),
-                W = (0, c.Z)(null),
-                Q = [];
-            class H extends r.Component {
+                H = (0, c.Z)(null),
+                V = [];
+            class W extends r.Component {
                 constructor(e, a) {
                     super(e, a),
                         (this._rootNode = null),
                         (this._render = () => {
                             const { items: e, query: a } = this.props,
                                 { width: t } = this.state,
-                                o = e ? this._brickLayout(e, 150, t) : Q;
+                                o = e ? this._brickLayout(e, 150, t) : V;
                             return t > 0 ? r.createElement(p.Z, { assumedItemHeight: 150, cacheKey: `gifSearchCategory/${a}`, footer: this._getRenderFooter(), identityFunction: U, items: o, noItemsRenderer: this._renderEmptyItem, onNearEnd: this._handleFetchNext, renderer: this._getRowRenderer() }) : null;
                         }),
                         (this._getMemoizedRowRenderer = (0, h.Z)((e, a, t) => (o) => {
@@ -618,7 +618,7 @@
                             let s = 0;
                             return r.createElement(
                                 d.Z,
-                                { style: [V.imageRow, { height: n }] },
+                                { style: [Q.imageRow, { height: n }] },
                                 o.map((a, d) => {
                                     const {
                                             thumbnail_images: [i],
@@ -626,7 +626,7 @@
                                         c = n / i.height,
                                         h = d === o.length - 1 ? l - s : Math.round(i.width * c),
                                         { still_image_url: u, url: m } = i;
-                                    return (s += h), r.createElement(L, { altText: a.alt_text || O, animatedMediaUrl: m, backgroundColor: (0, f.d)(a.index), height: n, key: a.index, onClick: t(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
+                                    return (s += h), r.createElement(L, { altText: a.alt_text || z, animatedMediaUrl: m, backgroundColor: (0, f.d)(a.index), height: n, key: a.index, onClick: t(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
                                 }),
                             );
                         })),
@@ -656,8 +656,8 @@
                             } else o === g.AD.DMComposition ? t(_, k) : o === g.AD.NoteComposition && n?.(S);
                             l({ page: o, section: "gif_search", element: "category", action: r ? "search" : "select" }), d?.go(-2);
                         }),
-                        (this._renderEmptyItem = () => r.createElement(n.Z, { header: z, message: K })),
-                        (this._getRenderMemoizedFooter = (0, h.Z)((e, a) => r.createElement(m.Z, { fetchStatus: e, onRequestRetry: a, render: W }))),
+                        (this._renderEmptyItem = () => r.createElement(n.Z, { header: O, message: K })),
+                        (this._getRenderMemoizedFooter = (0, h.Z)((e, a) => r.createElement(m.Z, { fetchStatus: e, onRequestRetry: a, render: H }))),
                         (this._getRenderFooter = () => {
                             const { nextFetchStatus: e } = this.props;
                             return this._getRenderMemoizedFooter(e, this._handleFetchNext);
@@ -693,12 +693,12 @@
                     return r.createElement("div", { "data-testid": q, ref: this._setRootNode }, r.createElement(m.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, ref: this._setRootNode, render: this._render }));
                 }
             }
-            (H.contextType = D.rC), (H.defaultProps = { fromSearch: !1 });
-            const V = l.default.create((e) => ({ emptyItem: { display: "inline-block", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space32 }, imageRow: { flexDirection: "row", marginBottom: 2 } })),
-                $ = v(H);
+            (W.contextType = D.rC), (W.defaultProps = { fromSearch: !1 });
+            const Q = l.default.create((e) => ({ emptyItem: { display: "inline-block", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space32 }, imageRow: { flexDirection: "row", marginBottom: 2 } })),
+                $ = x(W);
         },
         16569: (e, a, t) => {
-            t.r(a), t.d(a, { GifSearchPaths: () => v, GifSearchScreen: () => N, default: () => B });
+            t.r(a), t.d(a, { GifSearchPaths: () => x, GifSearchScreen: () => N, default: () => B });
             t(136728);
             var r = t(202784),
                 o = t(325686),
@@ -727,14 +727,14 @@
                 C = t(663194);
             const P = c().a50ba822,
                 Z = c().a9ae1e78,
-                E = (0, M.p)(
+                v = (0, M.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.23"),
-                            t.e("icons.16"),
-                            t.e("icons.2"),
-                            t.e("icons.10"),
-                            t.e("icons.19"),
+                            t.e("icons.5"),
+                            t.e("icons.12"),
+                            t.e("icons.20"),
+                            t.e("icons.0"),
+                            t.e("icons.21"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -777,14 +777,14 @@
                         ]).then(t.bind(t, 558969)),
                     { shouldMigrateToX: !1 },
                 ),
-                x = (0, M.p)(
+                E = (0, M.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.23"),
-                            t.e("icons.16"),
-                            t.e("icons.2"),
-                            t.e("icons.10"),
-                            t.e("icons.19"),
+                            t.e("icons.5"),
+                            t.e("icons.12"),
+                            t.e("icons.20"),
+                            t.e("icons.0"),
+                            t.e("icons.21"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -827,7 +827,7 @@
                         ]).then(t.bind(t, 800708)),
                     { shouldMigrateToX: !1 },
                 ),
-                v = { category: "/i/foundmedia/category", search: "/i/foundmedia/search" };
+                x = { category: "/i/foundmedia/category", search: "/i/foundmedia/search" };
             class N extends r.Component {
                 constructor(e, a) {
                     super(e, a),
@@ -843,8 +843,8 @@
                         }),
                         (this._handleClear = () => {
                             const { history: e, isDataSaverEnabled: a, location: t } = this.props,
-                                r = t.pathname.startsWith(v.category),
-                                o = t.pathname === v.search && t.state && t.state.query;
+                                r = t.pathname.startsWith(x.category),
+                                o = t.pathname === x.search && t.state && t.state.query;
                             !a && (r || o) ? e.goBack() : a && this.setState({ searchDisabled: !0 });
                         }),
                         (this._handleSubmit = () => {
@@ -857,10 +857,10 @@
                         }),
                         (this._goToQuery = (e) => {
                             const { history: a, isDataSaverEnabled: t, location: r } = this.props,
-                                o = { pathname: v.search },
+                                o = { pathname: x.search },
                                 d = r.state && r.state.query,
-                                n = r.pathname === v.search && !d,
-                                l = r.pathname.startsWith(v.category) || (r.pathname === v.search && d),
+                                n = r.pathname === x.search && !d,
+                                l = r.pathname.startsWith(x.category) || (r.pathname === x.search && d),
                                 s = !t && l,
                                 i = r.state && r.state.dmConversationId;
                             e ? ((o.state = { dmConversationId: i, query: e }), n ? a.push(o) : a.replace(o)) : s && a.goBack();
@@ -874,7 +874,7 @@
                         o = this._gifSearchKey;
                     if (!o) return r.createElement(y.Z, { to: "/" });
                     const n = { gifSearchKey: o, history: e, location: a, searchBox: this._renderSearchBox(), shouldAutoPlayGif: t };
-                    return r.createElement(g.nO, { namespace: this._getScribeNamespace(o) }, r.createElement(d.Switch, null, r.createElement(d.Route, { exact: !0, path: v.search }, r.createElement(E, n)), r.createElement(d.Route, { exact: !0, path: `${v.category}/${f.kM}` }, r.createElement(x, n)), r.createElement(d.Route, { component: b.default })));
+                    return r.createElement(g.nO, { namespace: this._getScribeNamespace(o) }, r.createElement(d.Switch, null, r.createElement(d.Route, { exact: !0, path: x.search }, r.createElement(v, n)), r.createElement(d.Route, { exact: !0, path: `${x.category}/${f.kM}` }, r.createElement(E, n)), r.createElement(d.Route, { component: b.default })));
                 }
                 _getShouldAutoPlayGif() {
                     const { effectiveAutoplayOption: e, isDataSaverEnabled: a, shouldAutoPlayGif: t } = this.props;
@@ -988,6 +988,19 @@
             }
             m.defaultProps = { renderFailure: n.Z, retryable: !0 };
         },
+        748138: (e, a, t) => {
+            t.r(a), t.d(a, { default: () => s });
+            var r = t(202784),
+                o = t(890601),
+                d = t(783427),
+                n = t(347101);
+            const l = (e = {}) => {
+                const { direction: a } = (0, d.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
         730895: (e, a, t) => {
             var r = t(821176);
             e.exports = function () {
@@ -998,4 +1011,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.d8f6b6da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.fe33266a.js.map

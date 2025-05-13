@@ -8,15 +8,13 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.23"),
-                        n.e("icons.16"),
-                        n.e("icons.2"),
-                        n.e("icons.10"),
-                        n.e("icons.19"),
-                        n.e("icons.24"),
-                        n.e("icons.17"),
+                        n.e("icons.5"),
+                        n.e("icons.12"),
+                        n.e("icons.20"),
+                        n.e("icons.0"),
                         n.e("icons.21"),
-                        n.e("icons.18"),
+                        n.e("icons.28"),
+                        n.e("icons.17"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -880,4 +878,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.2290b84a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.021d7c5a.js.map

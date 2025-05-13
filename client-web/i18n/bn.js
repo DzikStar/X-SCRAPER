@@ -12026,6 +12026,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["কেনার মাধ্যমে, আপনি আমাদের ", " এবং আমাদের ", "-তে সম্মত হচ্ছেন। শর্তাবলীতে দেওয়া বর্ণনা অনুযায়ী, বাতিল না করা পর্যন্ত সাবস্ক্রিপশনগুলি স্বয়ংক্রিয়ভাবে রিনিউ করা হয়। যখন খুশি বাতিল করুন।"];
@@ -13227,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.b74f630a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.80091b8a.js.map

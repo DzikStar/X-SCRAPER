@@ -12010,6 +12010,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ved at købe accepterer du vores ", " og vores ", ". Abonnementer fornys automatisk, indtil de opsiges, som beskrevet i vilkårene. Kan altid opsiges."];
@@ -13214,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.5b263c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.251ec61a.js.map

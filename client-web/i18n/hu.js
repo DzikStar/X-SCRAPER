@@ -12019,6 +12019,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["A vásárlással elfogadod a következőket: ", " és ", ". Az Előfizetések a Feltételekben leírt módon automatikusan megújulnak, amíg le nem mondod a szolgáltatást. Az előfizetés bármikor lemondható."];
@@ -13220,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.e0ff457a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.bd8d729a.js.map

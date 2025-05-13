@@ -12009,6 +12009,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["เมื่อซื้อแสดงว่าคุณยอมรับ ", " และ ", " ของเรา ระบบสมาชิกจะต่ออายุโดยอัตโนมัติจนกว่าจะยกเลิกตามที่อธิบายไว้ในข้อกำหนด คุณสามารถยกเลิกได้ทุกเมื่อ"];
@@ -13210,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.16db2bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.4d16a8da.js.map

@@ -12014,6 +12014,12 @@
                             },
                         },
                         {
+                            key: "bd9265e3",
+                            get: function () {
+                                return ["(", "% Fee, Min. ", ")"];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Procedendo all'acquisto, accetti i nostri ", " e ", ". Come indicato nei termini, gli abbonamenti si rinnovano in automatico fino alla disdetta. Puoi disdire in qualsiasi istante."];
@@ -13216,4 +13222,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.1c633e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.e3eea6da.js.map
