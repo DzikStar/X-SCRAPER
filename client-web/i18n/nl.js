@@ -2979,6 +2979,7 @@
                 a("j0693948", "Download de Grok-app"),
                 a("af781666", "Wat vinden mensen?"),
                 a("ad35153e", "bèta"),
+                a("a1f414ee", "Share thoughts"),
                 a("fbf83158", "Waarschuwing: betaling mislukt"),
                 a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
@@ -3886,9 +3887,9 @@
                 }),
                 a("cbef820f", function (e) {
                     return e.screenName + " heeft de stream opnieuw geplaatst!";
-                }),
-                a("e3275464", "Verzenden");
-            a("cededf2a", "Host"),
+                });
+            a("e3275464", "Verzenden"),
+                a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
                 a("j245c654", "Sprekers"),
                 a("eda23a02", "Luisteraars"),
@@ -4922,9 +4923,9 @@
                 a("e41fffbc", "De totale kijktijd van je video's."),
                 a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang"),
-                a("gf898b70", "Geavanceerd zoeken");
-            a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
+                a("ed99baea", "Vroege bèta-toegang");
+            a("gf898b70", "Geavanceerd zoeken"),
+                a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
                 a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
                 a("j8ee77c4", '"ai start-up"'),
@@ -5888,9 +5889,9 @@
                 a("i0ed3f4e", "Afbeelding gebeurtenis"),
                 a("cbae35fa", "Uitzending rapporteren"),
                 a("fd12ab58", "Postverzameling"),
-                a("a226497c", "Een nieuwe Community maken"),
-                a("d7346632", "Je bent nog geen lid geworden van community's");
-            a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
+                a("a226497c", "Een nieuwe Community maken");
+            a("d7346632", "Je bent nog geen lid geworden van community's"),
+                a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
                 a("hff48914", "We kunnen nu geen posts vinden."),
                 a("hb52cc4a", "Probeer het later nog eens."),
                 a("e50e1bb0", "Welkom bij Community's"),
@@ -6886,9 +6887,9 @@
                 a("f5732cd4", "Plus uitgebreide toegang tot DeepSearch en Denken"),
                 a("e0198956", "Ontvang een deel van de inkomsten die worden gegenereerd door interacties van geverifieerde accounts met content die jij op X plaatst."),
                 a("iadf78e2", "Video's downloaden"),
-                a("ee54c3de", "Sla video's rechtstreeks op je apparaat op"),
-                a("ae03594c", "Kleine Antwoordboost");
-            a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
+                a("ee54c3de", "Sla video's rechtstreeks op je apparaat op");
+            a("ae03594c", "Kleine Antwoordboost"),
+                a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
                 a("bf2a6acc", "Grote Antwoordboost"),
                 a("c2059276", "Zorg dat je antwoorden worden geboost."),
                 a("b023ec20", "Maximale Antwoordboost"),
@@ -7864,8 +7865,7 @@
                 a("ce102a20", "Doorsturen naar Stripe"),
                 a("ddfd6718", "Betaling mislukt"),
                 a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
-                a("a62359e6", "Instellingen Geverifieerde Organisaties"),
-                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed.");
+                a("a62359e6", "Instellingen Geverifieerde Organisaties");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7904,7 +7904,8 @@
                     o(e, n)
                 );
             }
-            a("i4dccc18", "Facturering"),
+            a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
+                a("i4dccc18", "Facturering"),
                 a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
                 a("dac61c3c", "Accountinstellingen"),
                 a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
@@ -8908,11 +8909,11 @@
                     return e.amountOfTime + " geleden";
                 }),
                 a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
-                a("j355f008", "Vastgemaakte post"),
-                a("habf9678", "Vastgemaakt door auteur");
-            a("db0798ed", function (e) {
-                return "Onderwerp " + e.topicName;
-            }),
+                a("j355f008", "Vastgemaakte post");
+            a("habf9678", "Vastgemaakt door auteur"),
+                a("db0798ed", function (e) {
+                    return "Onderwerp " + e.topicName;
+                }),
                 a("dc716ec9", function (e) {
                     return "Aanbevolen Onderwerp: " + e.topicName;
                 }),
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.ab53b10a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.cfd984fa.js.map

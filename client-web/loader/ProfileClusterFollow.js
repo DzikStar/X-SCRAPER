@@ -2,7 +2,7 @@
     ["loader.ProfileClusterFollow"],
     {
         544118: (e) => {
-            e.exports = { queryId: "ZVA-uHHezkK6TUkHH-a6hQ", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "1rV_MeRwACVGJnK7XVt62w", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         864479: (e, t, r) => {
             "use strict";
@@ -44,25 +44,25 @@
                 }
             }
             const w = c.default.create((e) => ({ root: { marginTop: e.spaces.space12 } }));
-            var b = r(967977),
-                C = r(942893),
+            var C = r(967977),
+                b = r(942893),
                 g = r(312771),
                 I = r(71620),
                 x = r(668214),
-                T = r(994305);
-            const S = "profile-cluster-follow",
+                S = r(994305);
+            const T = "profile-cluster-follow",
                 L = (e, t) => t.userId,
                 U = (e, t) => {
                     const r = L(0, t);
-                    return T.Ic(e, { displayLocation: S, similarToUserId: r });
+                    return S.Ic(e, { displayLocation: T, similarToUserId: r });
                 },
                 P = (e, t) => {
                     const r = L(0, t);
-                    return T.UD(e, { displayLocation: S, similarToUserId: r });
+                    return S.UD(e, { displayLocation: T, similarToUserId: r });
                 },
                 Z = (0, x.Z)()
                     .propsFromState(() => ({ fetchStatus: P, recommendations: U }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: T.yY }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: S.yY }))
                     .withAnalytics(),
                 R = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
                 v = { component: "suggest_profile_cluster_follow", element: "close_button", action: "click" };
@@ -71,7 +71,7 @@
                     super(...e),
                         (this._handleImpression = (e) => {
                             const { analytics: t } = this.props,
-                                r = e && e.slice(0, 3).map((e) => ({ ...C.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
+                                r = e && e.slice(0, 3).map((e) => ({ ...b.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
                             t.scribe({ ...R, data: { items: r } });
                         }),
                         (this._handleCloseButtonImpression = () => {
@@ -94,7 +94,7 @@
                 }
                 _fetchRecommendations(e) {
                     const { createLocalApiErrorHandler: t, fetchRecommendationsIfNeeded: r, userId: o } = e;
-                    r({ limit: 3, displayLocation: S, similarToUserId: o }).catch(t(b.C));
+                    r({ limit: 3, displayLocation: T, similarToUserId: o }).catch(t(C.C));
                 }
                 _hasLoadedUsers() {
                     const { fetchStatus: e, recommendations: t } = this.props;
@@ -128,26 +128,26 @@
                 _ = r(71620),
                 E = r(973572),
                 w = r(668214),
-                b = r(919022);
-            const C = (e, t) => t.userIds,
+                C = r(919022);
+            const b = (e, t) => t.userIds,
                 g = (e, t) => {
                     const { filterPredicate: r = (e) => !!e, userIds: o } = t;
                     return o.filter((t) => {
-                        const o = b.ZP.select(e, t);
+                        const o = C.ZP.select(e, t);
                         return !!o && r(o);
                     });
                 },
                 I = (e, t) => {
                     const { userIds: r } = t;
                     return r.reduce((t, r) => {
-                        const o = b.ZP.selectFetchStatus(e, r);
+                        const o = C.ZP.selectFetchStatus(e, r);
                         return o && (t[r] = o === y.ZP.NONE ? y.ZP.LOADING : o), t;
                     }, {});
                 },
                 x = (0, w.Z)()
                     .propsFromState(() => ({
                         availableUserIds: (0, E.Z)(g, (e) => e),
-                        fetchStatus: (0, E.Z)(g, I, C, (e, t, r) => {
+                        fetchStatus: (0, E.Z)(g, I, b, (e, t, r) => {
                             let o = y.ZP.LOADED;
                             for (let s = 0; s < r.length; s++) {
                                 const n = r[s];
@@ -160,9 +160,9 @@
                             return o;
                         }),
                     }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: b.ZP.fetchManyIfNeeded })),
-                T = i().f5b426c2;
-            class S extends s.Component {
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: C.ZP.fetchManyIfNeeded })),
+                S = i().f5b426c2;
+            class T extends s.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -181,7 +181,7 @@
                     a()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return s.createElement(d.Z, { "aria-label": T, fetchStatus: this.state.allUsersUnavailable ? y.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return s.createElement(d.Z, { "aria-label": S, fetchStatus: this.state.allUsersUnavailable ? y.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: r, userIds: o } = this.props;
@@ -204,7 +204,7 @@
                     );
                 }
             }
-            const L = x(S);
+            const L = x(T);
         },
         967977: (e, t, r) => {
             "use strict";
@@ -306,23 +306,23 @@
             var _ = r(499627),
                 E = r(917799),
                 w = r(312771),
-                b = r(56519);
-            const C = "recommendations",
+                C = r(56519);
+            const b = "recommendations",
                 g = 30,
                 I = "rweb/recommendations/FETCH_REQUEST",
                 x = "rweb/recommendations/FETCH_SUCCESS",
-                T = "rweb/recommendations/FETCH_FAILURE",
-                S = {},
+                S = "rweb/recommendations/FETCH_FAILURE",
+                T = {},
                 L = ({ displayLocation: e, similarToUserId: t }) => e + (t ? `_${t}` : "");
             _.Z.register({
-                [C]: function (e = S, t) {
+                [b]: function (e = T, t) {
                     if (!t?.meta) return e;
                     switch (t.type) {
                         case I: {
                             const r = L(t.meta);
                             return { ...e, [r]: { ...e[r], fetchStatus: w.ZP.LOADING } };
                         }
-                        case T: {
+                        case S: {
                             const r = L(t.meta);
                             return { ...e, [r]: { ...e[r], fetchStatus: w.ZP.FAILED } };
                         }
@@ -340,11 +340,11 @@
             const U = [],
                 P = [],
                 Z = (e, { displayLocation: t, similarToUserId: r }) => {
-                    const o = e[C][L({ displayLocation: t, similarToUserId: r })];
+                    const o = e[b][L({ displayLocation: t, similarToUserId: r })];
                     return o && o.recommendations ? o.recommendations : U;
                 },
                 R = (e, { displayLocation: t, similarToUserId: r }) => {
-                    const o = e[C][L({ displayLocation: t, similarToUserId: r })];
+                    const o = e[b][L({ displayLocation: t, similarToUserId: r })];
                     return o ? o.fetchStatus : w.ZP.NONE;
                 },
                 v = (e) => (t, r, o) => {
@@ -360,8 +360,8 @@
                                   (t, r, { api: o, featureSwitches: s }) => {
                                       const { displayLocation: n, itsInterests: a, limit: l = g, similarToUserId: i } = e,
                                           c = "profile_accounts_sidebar" === n && s.isTrue("rweb_recommendations_sidebar_graphql_enabled");
-                                      return (0, E._O)(t, { request: c ? o.withEndpoint(y).fetchSidebarUserRecommendations : o.withEndpoint(y).fetch, params: { display_location: n, itsInterests: a, limit: l, user_id: i } })({ actionTypes: { REQUEST: I, SUCCESS: x, FAILURE: T }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: n, similarToUserId: i } }, (e) => {
-                                          if (e && e.entities) return [(0, b.dP)(e.entities)];
+                                      return (0, E._O)(t, { request: c ? o.withEndpoint(y).fetchSidebarUserRecommendations : o.withEndpoint(y).fetch, params: { display_location: n, itsInterests: a, limit: l, user_id: i } })({ actionTypes: { REQUEST: I, SUCCESS: x, FAILURE: S }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: n, similarToUserId: i } }, (e) => {
+                                          if (e && e.entities) return [(0, C.dP)(e.entities)];
                                       });
                                   }
                               )(e),
@@ -425,13 +425,13 @@
                 _ = r(159340),
                 E = r(404971),
                 w = r(262009),
-                b = r(76388),
-                C = r(488746),
+                C = r(76388),
+                b = r(488746),
                 g = r(246492),
                 I = r(520913),
                 x = r(731708),
-                T = r(642153),
-                S = r(879891),
+                S = r(642153),
+                T = r(879891),
                 L = r(392237),
                 U = r(54606);
             const P = n().ae408b76,
@@ -440,7 +440,7 @@
                 v = n().db0798ed,
                 F = n().dc716ec9,
                 O = ({ text: e }) => {
-                    const { direction: t } = (0, S.Z)();
+                    const { direction: t } = (0, T.Z)();
                     return o.createElement(x.ZP, { dir: t, withHashflags: !0 }, e);
                 },
                 N = (e, t) =>
@@ -452,12 +452,12 @@
                           })(e),
                 A = L.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
                 D = L.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                k = ({ contextType: e, iconColor: t, iconSize: r, link: s, retweetData: n, text: x, topicData: S, userAvatarUrls: P }) => {
+                k = ({ contextType: e, iconColor: t, iconSize: r, link: s, retweetData: n, text: x, topicData: T, userAvatarUrls: P }) => {
                     const { isSelfRetweet: k, name: Q, screenName: B } = n || {},
-                        H = ((e, t, r, s = []) => {
+                        M = ((e, t, r, s = []) => {
                             const n = A[t],
                                 x = [r ? { color: L.default.theme.colors[r] } : D.colorDeepGray, n],
-                                S = o.createElement(a.default, { style: x }),
+                                T = o.createElement(a.default, { style: x }),
                                 P = o.createElement(l.default, { style: x }),
                                 Z = o.createElement(i.default, { style: x }),
                                 R = o.createElement(c.default, { style: x }),
@@ -468,18 +468,18 @@
                                 k = o.createElement(h.default, { style: x }),
                                 Q = o.createElement(f.default, { style: x }),
                                 B = o.createElement(y.default, { style: x }),
-                                H = o.createElement(_.default, { style: x }),
-                                M = o.createElement(E.default, { style: x }),
+                                M = o.createElement(_.default, { style: x }),
+                                H = o.createElement(E.default, { style: x }),
                                 G = o.createElement(w.default, { style: x }),
-                                z = o.createElement(b.default, { style: x }),
-                                W = o.createElement(C.default, { style: x }),
+                                z = o.createElement(C.default, { style: x }),
+                                W = o.createElement(b.default, { style: x }),
                                 $ = o.createElement(g.default, { style: x }),
-                                j = o.createElement(T.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
+                                j = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
                                 q = o.createElement(I.default, { style: x });
                             switch (e) {
                                 case U.Q.Pin:
                                 case U.Q.ReplyPin:
-                                    return S;
+                                    return T;
                                 case U.Q.Retweet:
                                     return P;
                                 case U.Q.Like:
@@ -502,9 +502,9 @@
                                 case U.Q.Location:
                                     return B;
                                 case U.Q.Community:
-                                    return H;
-                                case U.Q.Spaces:
                                     return M;
+                                case U.Q.Spaces:
+                                    return H;
                                 case U.Q.Sparkle:
                                     return G;
                                 case U.Q.SocialProof:
@@ -525,15 +525,15 @@
                         })(e, r, t, P);
                     switch (e) {
                         case U.Q.Retweet:
-                            return { Icon: H, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
+                            return { Icon: M, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
                         case U.Q.Pin:
-                            return { Icon: H, text: x || Z };
+                            return { Icon: M, text: x || Z };
                         case U.Q.ReplyPin:
-                            return { Icon: H, text: R };
+                            return { Icon: M, text: R };
                         case U.Q.Topic:
-                            return { Icon: H, "aria-label": "Recommendation" === S?.functionalityType || "RecWithEducation" === S?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: M, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
                         default:
-                            return { Icon: H, text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: M, text: x ? o.createElement(O, { text: x }) : null, link: s };
                     }
                 };
         },
@@ -553,11 +553,11 @@
                 m = r(54606);
             class p extends o.PureComponent {
                 render() {
-                    const { avatarSize: e, bottomControl: t, iconStyle: r, id: i, onLayout: c, rightControl: d, style: m, testID: p, textColor: f, textSize: y, topControl: _, weight: E, withBottomBorder: w, withLeftPadding: b, withTextCentered: C, ...g } = this.props,
-                        { Icon: I, "aria-label": x, link: T, text: S } = (0, u.Z)(g),
-                        L = o.createElement(n.ZP, { "aria-label": x, color: f, id: i, numberOfLines: 2, size: y, testID: p, weight: E, withoutTwemojiAndHashflags: !0 }, S),
+                    const { avatarSize: e, bottomControl: t, iconStyle: r, id: i, onLayout: c, rightControl: d, style: m, testID: p, textColor: f, textSize: y, topControl: _, weight: E, withBottomBorder: w, withLeftPadding: C, withTextCentered: b, ...g } = this.props,
+                        { Icon: I, "aria-label": x, link: S, text: T } = (0, u.Z)(g),
+                        L = o.createElement(n.ZP, { "aria-label": x, color: f, id: i, numberOfLines: 2, size: y, testID: p, weight: E, withoutTwemojiAndHashflags: !0 }, T),
                         { cellStyle: U, viewStyle: P } = this._getStyles();
-                    return S ? o.createElement(l.ZP.UseProps, null, (n) => o.createElement(o.Fragment, null, _ || null, o.createElement(s.Z, { onLayout: c, style: [m, P, n.socialContextRefreshEnabled() && !b && h.socialContextRefresh] }, o.createElement(a.Z, { avatarCell: I || (b ? null : void 0), avatarCellStyle: [r, h.socialContextIconColumn, !b && h.unsetIconWidth, n.socialContextRefreshEnabled() && !b && h.socialContextRefreshIcon], avatarSize: e, cellStyle: U }, o.createElement(s.Z, { style: h.cellWrapper }, o.createElement(s.Z, { style: [h.socialContextTextColumn, n.socialContextRefreshEnabled() && !b && h.socialContextRefreshTextColumn] }, T ? this._renderLink(T, L) : L), d || null)), t || null))) : null;
+                    return T ? o.createElement(l.ZP.UseProps, null, (n) => o.createElement(o.Fragment, null, _ || null, o.createElement(s.Z, { onLayout: c, style: [m, P, n.socialContextRefreshEnabled() && !C && h.socialContextRefresh] }, o.createElement(a.Z, { avatarCell: I || (C ? null : void 0), avatarCellStyle: [r, h.socialContextIconColumn, !C && h.unsetIconWidth, n.socialContextRefreshEnabled() && !C && h.socialContextRefreshIcon], avatarSize: e, cellStyle: U }, o.createElement(s.Z, { style: h.cellWrapper }, o.createElement(s.Z, { style: [h.socialContextTextColumn, n.socialContextRefreshEnabled() && !C && h.socialContextRefreshTextColumn] }, S ? this._renderLink(S, L) : L), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: r, id: s, onClick: a, retweetData: l, textColor: i, topicData: u } = this.props,
@@ -585,4 +585,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.39e86f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.431c3a6a.js.map

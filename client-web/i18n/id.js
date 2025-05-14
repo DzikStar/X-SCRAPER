@@ -2978,6 +2978,7 @@
                 i("j0693948", "Dapatkan aplikasi Grok"),
                 i("af781666", "Apa pendapat orang-orang?"),
                 i("ad35153e", "beta"),
+                i("a1f414ee", "Share thoughts"),
                 i("fbf83158", "Peringatan: Pembayaran gagal"),
                 i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
                 i("bce3726a", "Perbarui Penagihan"),
@@ -3885,9 +3886,9 @@
                 }),
                 i("cbef820f", function (a) {
                     return a.screenName + " memposting ulang streaming!";
-                }),
-                i("e3275464", "Kirim");
-            i("cededf2a", "Host"),
+                });
+            i("e3275464", "Kirim"),
+                i("cededf2a", "Host"),
                 i("i2caef48", "Co-host"),
                 i("j245c654", "Pembicara"),
                 i("eda23a02", "Pendengar"),
@@ -4921,9 +4922,9 @@
                 i("e41fffbc", "Total waktu tonton video Anda."),
                 i("if2909ba", "Waktu Tonton"),
                 i("i0e5bf4c", "Video Anda"),
-                i("ed99baea", "Akses Beta Lebih Awal"),
-                i("gf898b70", "Pencarian Lanjutan");
-            i("d2a43a7a", 'berisi "ai" dan "startup"'),
+                i("ed99baea", "Akses Beta Lebih Awal");
+            i("gf898b70", "Pencarian Lanjutan"),
+                i("d2a43a7a", 'berisi "ai" dan "startup"'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", 'berisi frasa yang sama persis dengan "startup ai"'),
                 i("j8ee77c4", '"startup ai"'),
@@ -5887,9 +5888,9 @@
                 i("i0ed3f4e", "Gambar peristiwa"),
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Postingan koleksi"),
-                i("a226497c", "Buat Komunitas baru"),
-                i("d7346632", "Anda belum bergabung dengan Komunitas apa pun");
-            i("b732a4cc", "Jika sudah, Anda akan melihat postingannya di sini."),
+                i("a226497c", "Buat Komunitas baru");
+            i("d7346632", "Anda belum bergabung dengan Komunitas apa pun"),
+                i("b732a4cc", "Jika sudah, Anda akan melihat postingannya di sini."),
                 i("hff48914", "Tidak ada postingan yang dapat ditemukan saat ini."),
                 i("hb52cc4a", "Silakan coba lagi nanti."),
                 i("e50e1bb0", "Selamat datang di Komunitas"),
@@ -6885,9 +6886,9 @@
                 i("f5732cd4", "Plus, akses yang lebih luas ke DeepSearch dan Berpikir"),
                 i("e0198956", "Dapatkan bagi hasil pendapatan dari engagement akun terverifikasi dengan konten yang Anda posting di X."),
                 i("iadf78e2", "Unduh Video"),
-                i("ee54c3de", "Simpan video langsung ke perangkat Anda"),
-                i("ae03594c", "Boost kecil pada balasan");
-            i("e6bb08c0", "Tingkatkan visibilitas balasan Anda"),
+                i("ee54c3de", "Simpan video langsung ke perangkat Anda");
+            i("ae03594c", "Boost kecil pada balasan"),
+                i("e6bb08c0", "Tingkatkan visibilitas balasan Anda"),
                 i("bf2a6acc", "Pengutamaan Tinggi pada Balasan"),
                 i("c2059276", "Boost balasan Anda."),
                 i("b023ec20", "Balasan yang Diutamakan Setinggi Mungkin"),
@@ -7863,8 +7864,7 @@
                 i("ce102a20", "Mengalihkan ke Stripe"),
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
-                i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
-                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan.");
+                i("a62359e6", "Pengaturan Organisasi Terverifikasi");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7903,8 @@
                     d(a, n)
                 );
             }
-            i("i4dccc18", "Penagihan"),
+            i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
+                i("i4dccc18", "Penagihan"),
                 i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
                 i("dac61c3c", "Pengaturan akun"),
                 i("b6b5fd66", "Kelola akun X Anda, termasuk mengubah nama pengguna atau kata sandi Anda."),
@@ -8907,11 +8908,11 @@
                     return a.amountOfTime + " yang lalu";
                 }),
                 i("ae408b76", "Anda memposting ulang"),
-                i("j355f008", "Postingan tersemat"),
-                i("habf9678", "Disematkan oleh Penulis");
-            i("db0798ed", function (a) {
-                return "Topik " + a.topicName;
-            }),
+                i("j355f008", "Postingan tersemat");
+            i("habf9678", "Disematkan oleh Penulis"),
+                i("db0798ed", function (a) {
+                    return "Topik " + a.topicName;
+                }),
                 i("dc716ec9", function (a) {
                     return "Topik yang Direkomendasikan: " + a.topicName;
                 }),
@@ -13223,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.c136acaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.cb01640a.js.map

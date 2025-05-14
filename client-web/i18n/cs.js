@@ -2988,6 +2988,7 @@
                 a("j0693948", "Získejte aplikaci Grok"),
                 a("af781666", "Co si lidé myslí?"),
                 a("ad35153e", "betaverze"),
+                a("a1f414ee", "Share thoughts"),
                 a("fbf83158", "Varování: Platba selhala"),
                 a("jadeb4da", "Než ztratíte výhody ověření a předplatného, urychleně aktualizujte svou platební metodu."),
                 a("bce3726a", "Aktualizujte vyúčtování"),
@@ -3895,9 +3896,9 @@
                 }),
                 a("cbef820f", function (e) {
                     return e.screenName + " repostoval stream!";
-                }),
-                a("e3275464", "Odeslat");
-            a("cededf2a", "Hostitel"),
+                });
+            a("e3275464", "Odeslat"),
+                a("cededf2a", "Hostitel"),
                 a("i2caef48", "Spoluhostitelé"),
                 a("j245c654", "Mluvčí"),
                 a("eda23a02", "Posluchači"),
@@ -4931,9 +4932,9 @@
                 a("e41fffbc", "Celkový čas sledování vašich videí."),
                 a("if2909ba", "Čas sledování"),
                 a("i0e5bf4c", "Vaše videa"),
-                a("ed99baea", "Brzký přístup k beta verzi"),
-                a("gf898b70", "Pokročilé hledání");
-            a("d2a43a7a", "obsahuje jak „ai“, tak i „startup“"),
+                a("ed99baea", "Brzký přístup k beta verzi");
+            a("gf898b70", "Pokročilé hledání"),
+                a("d2a43a7a", "obsahuje jak „ai“, tak i „startup“"),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", "obsahuje přesně frázi „ai startup“"),
                 a("j8ee77c4", "„ai startup“"),
@@ -5897,9 +5898,9 @@
                 a("i0ed3f4e", "Obrázek události"),
                 a("cbae35fa", "Nahlásit vysílání"),
                 a("fd12ab58", "Posty v kolekci"),
-                a("a226497c", "Vytvoření nové komunity"),
-                a("d7346632", "Zatím jste se nezapojili do žádných komunit");
-            a("b732a4cc", "Až to uděláte, uvidíte jejich posty tady."),
+                a("a226497c", "Vytvoření nové komunity");
+            a("d7346632", "Zatím jste se nezapojili do žádných komunit"),
+                a("b732a4cc", "Až to uděláte, uvidíte jejich posty tady."),
                 a("hff48914", "Nepodařilo se najít žádné posty."),
                 a("hb52cc4a", "Zkuste to za chvíli."),
                 a("e50e1bb0", "Vítají vás komunity"),
@@ -6895,9 +6896,9 @@
                 a("f5732cd4", "Navíc rozšířený přístup k funkcím DeepSearch a Přemýšlet"),
                 a("e0198956", "Získejte podíl na příjmech ze zapojení ověřených účtů s obsahem, který zveřejníte na X."),
                 a("iadf78e2", "Stáhnout videa"),
-                a("ee54c3de", "Uložte si videa přímo do vašeho zařízení"),
-                a("ae03594c", "Malé boostování odpovědi");
-            a("e6bb08c0", "Zvyšte viditelnost svých odpovědí"),
+                a("ee54c3de", "Uložte si videa přímo do vašeho zařízení");
+            a("ae03594c", "Malé boostování odpovědi"),
+                a("e6bb08c0", "Zvyšte viditelnost svých odpovědí"),
                 a("bf2a6acc", "Velké zvýšení odpovědi"),
                 a("c2059276", "Nechte si své odpovědi boostovat."),
                 a("b023ec20", "Maximální zvýšení odpovědi"),
@@ -7873,8 +7874,7 @@
                 a("ce102a20", "Přesměrování na Stripe"),
                 a("ddfd6718", "Platba selhala"),
                 a("i90ea7d2", "Urychleně aktualizujte svoje vyúčtování, abyste si zachovali výhody."),
-                a("a62359e6", "Nastavení Ověřených organizací"),
-                a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů.");
+                a("a62359e6", "Nastavení Ověřených organizací");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7913,7 +7913,8 @@
                     i(e, o)
                 );
             }
-            a("i4dccc18", "Vyúčtování"),
+            a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů."),
+                a("i4dccc18", "Vyúčtování"),
                 a("ec3cd6e4", "Spravujte svůj způsob platby, aktualizujte fakturační údaje a kontrolujte své faktury."),
                 a("dac61c3c", "Nastavení účtu"),
                 a("b6b5fd66", "Spravujte svůj účet X včetně změny uživatelského jména nebo hesla."),
@@ -8917,11 +8918,11 @@
                     return "před " + e.amountOfTime;
                 }),
                 a("ae408b76", "Repostovali jste"),
-                a("j355f008", "Připnutý post"),
-                a("habf9678", "Připnuto autorem");
-            a("db0798ed", function (e) {
-                return "Téma " + e.topicName;
-            }),
+                a("j355f008", "Připnutý post");
+            a("habf9678", "Připnuto autorem"),
+                a("db0798ed", function (e) {
+                    return "Téma " + e.topicName;
+                }),
                 a("dc716ec9", function (e) {
                     return "Doporučované téma: " + e.topicName;
                 }),
@@ -13236,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.47cdd86a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.a24c35ba.js.map

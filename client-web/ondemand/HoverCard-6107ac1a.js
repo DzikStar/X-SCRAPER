@@ -152,7 +152,7 @@
                             },
                         ],
                     },
-                    params: { id: "X4iYIGyhEuizi3A24hPipQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "Vp29POwnQd8PF736I_CUPg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
                 };
             f.hash = "5b66468936446aae49ccfb5965fb93f4";
             const y = f;
@@ -288,13 +288,13 @@
                 p = t(392237);
             const g = p.default.create((e) => ({ buttonBottomMargin: { marginBottom: e.spaces.space16 }, buttonLeftMargin: { marginStart: e.spaces.space20 }, buttonTopMargin: { marginTop: e.spaces.space20 }, buttonWrap: { flexWrap: "wrap-reverse" }, condensedContext: { marginTop: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, condensedContextV2: { marginTop: e.spaces.space16 }, iconCustom: { alignSelf: "flex-start", borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, facepile: { marginBottom: e.spaces.space16, alignSelf: "flex-start" }, facepileV2: { marginEnd: e.spaces.space8, marginTop: e.spaces.space16 }, interactiveStyle: { flexShrink: 1 }, interactiveStyleV2: { flexDirection: "row", alignItems: "center" }, knownFollowersContainer: { marginTop: e.spaces.space16, marginBottom: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", flexGrow: 1, flexShrink: 1 }, underline: { textDecorationLine: "underline" } })),
                 _ = ({ children: e, context: n, imageSrc: t, knownFollowers: i, onFacepilesClick: _, onFacepilesImpression: b, subtitle: f, title: y, withAdditionalControls: w = !1 }) => {
-                    const { firstUsername: k, knownFollowersAvatarUrls: v, trendingFollowersUrl: h, usersCount: T } = i || {},
+                    const { firstUsername: k, knownFollowersAvatarUrls: v, trendingFollowersUrl: T, usersCount: h } = i || {},
                         x = i && i.knownFollowersAvatarUrls.length > 3;
                     a.useEffect(() => {
                         x && b && b();
                     }, [x, b]);
-                    const E = t ? a.createElement(c.Z, { source: t, style: g.iconCustom }) : null,
-                        F = n ? a.createElement(l.Z, { style: w ? g.condensedContextV2 : g.condensedContext }, a.createElement(s.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, n), a.createElement(l.Z, { style: w ? g.buttonTopMargin : [g.buttonBottomMargin, g.buttonLeftMargin] }, e)) : null,
+                    const F = t ? a.createElement(c.Z, { source: t, style: g.iconCustom }) : null,
+                        E = n ? a.createElement(l.Z, { style: w ? g.condensedContextV2 : g.condensedContext }, a.createElement(s.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, n), a.createElement(l.Z, { style: w ? g.buttonTopMargin : [g.buttonBottomMargin, g.buttonLeftMargin] }, e)) : null,
                         L = a.createElement(d.ZP, null, ({ containerWidth: t }) => {
                             const i = m.Z.isNarrowScreenWidth(t) ? "xLarge" : "xxLarge",
                                 c = t < p.default.theme.breakpoints.xSmall ? g.buttonWrap : void 0,
@@ -302,15 +302,15 @@
                             return a.createElement(
                                 l.Z,
                                 { style: w ? null : [g.knownFollowersContainer, c] },
-                                a.createElement(u.Z, { interactiveStyles: null, link: h, onPress: _, style: w ? g.interactiveStyleV2 : g.interactiveStyle }, ({ isHovered: e }) => a.createElement(a.Fragment, null, a.createElement(o.Z, { style: [g.facepile, d], userAvatarSize: i, userAvatarUrls: v }), a.createElement(s.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && g.underline }, n || ((e, n) => a.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, n))(k, T)))),
+                                a.createElement(u.Z, { interactiveStyles: null, link: T, onPress: _, style: w ? g.interactiveStyleV2 : g.interactiveStyle }, ({ isHovered: e }) => a.createElement(a.Fragment, null, a.createElement(o.Z, { style: [g.facepile, d], userAvatarSize: i, userAvatarUrls: v }), a.createElement(s.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && g.underline }, n || ((e, n) => a.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, n))(k, h)))),
                                 ((n) => {
                                     const t = n < p.default.theme.breakpoints.xSmall ? g.buttonBottomMargin : [g.buttonBottomMargin, g.buttonLeftMargin];
                                     return w ? [e] : a.createElement(l.Z, { style: t }, e);
                                 })(t),
                             );
                         }),
-                        S = i && x ? L : F;
-                    return a.createElement(a.Fragment, null, E, a.createElement(s.ZP, { size: "title2", weight: "heavy" }, y), f ? a.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, f) : null, S);
+                        S = i && x ? L : E;
+                    return a.createElement(a.Fragment, null, F, a.createElement(s.ZP, { size: "title2", weight: "heavy" }, y), f ? a.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, f) : null, S);
                 };
         },
         730895: (e, n, t) => {
@@ -355,4 +355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.5da90eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.67a9601a.js.map

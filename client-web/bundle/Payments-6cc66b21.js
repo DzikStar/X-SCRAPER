@@ -230,10 +230,10 @@
             var r = a(807896),
                 n = a(202784),
                 l = a(43429),
-                c = a(991911);
+                c = a(164317);
             const i = (e) => n.createElement(c.Z, (0, r.Z)({}, e, { transferDirection: l.Rz.credit })),
                 o = n.memo(i);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.3a483a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.8e7ac44a.js.map

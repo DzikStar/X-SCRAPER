@@ -119,7 +119,7 @@
                     t = s?.posts || [];
                 return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.postsContentType, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, u.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e, s) => (0, a.jsx)(z, { post: e, isLast: s === t.length - 1 }, e.id)) }) })] });
             }
-            var R = t(812115),
+            var R = t(322506),
                 D = t(840489);
             function F({ speaker: e }) {
                 const s = `https://x.com/${e.screenName}`;
@@ -410,4 +410,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.7dcc525a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.fe762f1a.js.map

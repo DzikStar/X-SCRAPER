@@ -2,31 +2,31 @@
     ["loader.TweetCurationActionMenu-a2dee9c7", "loader.FeedbackSheet"],
     {
         594771: (e) => {
-            e.exports = { queryId: "l_u0rvsl4_bJsHc7gdN86w", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "ZhMzC14IxRzWdJOgNQINgg", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         551e3: (e) => {
             e.exports = { queryId: "e4lWqB6m2TA8Fn_j9L9xEA", operationName: "ArticleEntityDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         486962: (e) => {
-            e.exports = { queryId: "VwvMa7iHVMIpHZ_zu2qSFw", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "ov1MxYkGzbQeLrTJTvrGNQ", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         207318: (e) => {
-            e.exports = { queryId: "BQ5iKve2MrK-SgHvLu2lOg", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "lJDTMJA5l2bEu4koNJI7PA", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         244275: (e) => {
-            e.exports = { queryId: "5w_pDuvcOIDuwo__ZhAZhw", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "satE8De54hT0A8Zmc4P1yQ", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         51864: (e) => {
-            e.exports = { queryId: "MGlqWGbMHl3Dvz0AXxwIMA", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "oFSFfkMLEhZnPEjd3gTO7w", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         118869: (e) => {
-            e.exports = { queryId: "BR8MoRL-gx5A9oZ-3Tr9BQ", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "9DMh2FEg_RqX1YpT13dIjw", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         342454: (e) => {
-            e.exports = { queryId: "7ZF-gKjvsLW3QIinTDQh1Q", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "ctRuX6GS_N7Utf02ABlxAA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         433579: (e) => {
-            e.exports = { queryId: "OmpfDMZTqb4VkGmxcKMKdA", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "fw0TJIs05F18QHDlnNhLBg", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         337653: (e, t, i) => {
             "use strict";
@@ -99,7 +99,7 @@
         },
         656069: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => T });
+            i.d(t, { Z: () => I });
             var n = i(506899),
                 a = i(414742),
                 l = i(679129),
@@ -121,8 +121,8 @@
                 w = i.n(v),
                 C = i(433579),
                 k = i.n(C),
-                I = i(934309);
-            const T = ({ apiClient: e, featureSwitches: t }) => ({
+                T = i(934309);
+            const I = ({ apiClient: e, featureSwitches: t }) => ({
                 createDraftArticle(t) {
                     const { content_state: i, title: a } = t;
                     return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l.Z));
@@ -176,9 +176,9 @@
                                           return { entities: a, result: r, slice_info: i };
                                       }
                                   }
-                                  return I.d;
+                                  return T.d;
                               })
-                        : Promise.resolve(I.d),
+                        : Promise.resolve(T.d),
             });
         },
         679129: (e, t, i) => {
@@ -210,14 +210,14 @@
                 w = i(443781),
                 C = i(459660);
             const k = m().g6185a9e,
-                I = m().i00051cc,
-                T = m().baffe39a,
+                T = m().i00051cc,
+                I = m().baffe39a,
                 E = m().i9000126,
                 x = m().dcaede8a,
                 A = m().ad85cd2e,
-                Z = m().f19e4bfc,
-                L = m().bf994ab2,
-                S = m().e7b4b30a,
+                L = m().f19e4bfc,
+                S = m().bf994ab2,
+                Z = m().e7b4b30a,
                 q = m().cfd2f35e,
                 R = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
                 B = (e) => {
@@ -229,21 +229,21 @@
                         B = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
                         F = !!n,
                         Q = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
-                    let M = x;
+                    let P = x;
                     return (
-                        Q ? (M = L) : F && (M = S),
+                        Q ? (P = S) : F && (P = Z),
                         a.createElement(
                             s.Z,
                             { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [R.root, i ? R.modal : R.popover] },
-                            a.createElement(s.Z, { style: R.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
+                            a.createElement(s.Z, { style: R.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, T)),
                             a.createElement(
                                 s.Z,
                                 null,
-                                a.createElement(c.Z, { Icon: b.default, actionText: T, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: b.default, actionText: I, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
                                 a.createElement(c.Z, { Icon: h.default, actionText: E, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
                                 e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: f.default, actionText: Z, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: Q ? g.default : v.default, actionText: M, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: Q ? g.default : v.default, actionText: P, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
                                 B &&
                                     !n &&
                                     a.createElement(d.Z, {
@@ -379,4 +379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.06bf76da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.d728910a.js.map

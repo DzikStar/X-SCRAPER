@@ -11,7 +11,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         423923: (e) => {
-            e.exports = { queryId: "D6gpGuW0DQAET6sglLYyfA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "97M5vZx0SoSf6uA9BDNmJw", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         685850: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -32,7 +32,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         628207: (e) => {
-            e.exports = { queryId: "bjbnwjjXJtNl_t2j76bMaw", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "CqS9kuOa-4jE-NXsC3uTrA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         204114: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -61,8 +61,8 @@
                 m = o.n(_),
                 g = o(551632),
                 b = o.n(g),
-                y = o(880471),
-                f = o.n(y),
+                f = o(880471),
+                y = o.n(f),
                 w = o(61505),
                 C = o.n(w),
                 v = o(255804),
@@ -70,9 +70,9 @@
                 x = o(628207),
                 Z = o.n(x),
                 S = o(204114),
-                I = o.n(S),
-                B = o(790427),
-                E = o.n(B),
+                B = o.n(S),
+                I = o(790427),
+                E = o.n(I),
                 T = o(220843),
                 L = o.n(T);
             function P({ apiClient: e }) {
@@ -88,8 +88,8 @@
                     searchConversations: ({ keyword: t }) => e.graphQL(k(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: o }) => e.graphQL(d(), { conversation_id: o, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: o, object_id: n }) => e.graphQL(E(), { group_id: o, object_id: n, action_type: t }).then((e) => e),
-                    grokPinConversation: ({ conversationId: t }) => e.graphQL(f(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(I(), { conversationId: t }).then((e) => e),
+                    grokPinConversation: ({ conversationId: t }) => e.graphQL(y(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(B(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: o }) => {
                         const n = new FormData();
                         return n.append("image", o), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
@@ -161,13 +161,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: _, secondaryBar: m, style: g, subtitle: b, title: y, titleDomId: f, titleIconCell: w, titleIconCellSize: C, withBackground: v, withWideContainer: k } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: _, secondaryBar: m, style: g, subtitle: b, title: f, titleDomId: y, titleIconCell: w, titleIconCellSize: C, withBackground: v, withWideContainer: k } = this.props,
                         { isModal: x } = this.context,
                         Z = i ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         S = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!v, x, !!m);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, x, r), rightControl: _, style: g, subtitle: b, title: y, titleDomId: f, titleIconCell: w, titleIconCellSize: C, withBackground: S, withWideContainer: k }), m || null);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, x, r), rightControl: _, style: g, subtitle: b, title: f, titleDomId: y, titleIconCell: w, titleIconCellSize: C, withBackground: S, withWideContainer: k }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -223,8 +223,8 @@
                 m = o(373554),
                 g = o(304059),
                 b = o(751170);
-            const y = p().b87ca51a,
-                f = p().eebff22c,
+            const f = p().b87ca51a,
+                y = p().eebff22c,
                 w = n.createElement(h.default, null);
             class C extends n.Component {
                 render() {
@@ -235,11 +235,11 @@
                 }
                 _renderMediaRemove() {
                     const { onRemove: e } = this.props;
-                    return n.createElement(s.ZP, { "aria-label": y, hoverLabel: { label: y }, icon: n.createElement(u.default, null), onPress: e, size: "large", style: k.buttonLeftPadding, type: "onMediaDominantColorFilled" });
+                    return n.createElement(s.ZP, { "aria-label": f, hoverLabel: { label: f }, icon: n.createElement(u.default, null), onPress: e, size: "large", style: k.buttonLeftPadding, type: "onMediaDominantColorFilled" });
                 }
                 _renderMediaCrop() {
                     const { onCrop: e } = this.props;
-                    return n.createElement(s.ZP, { "aria-label": f, icon: n.createElement(_.default, null), onPress: e, size: "large", style: k.buttonLeftPadding, type: "onMediaDominantColorFilled" });
+                    return n.createElement(s.ZP, { "aria-label": y, icon: n.createElement(_.default, null), onPress: e, size: "large", style: k.buttonLeftPadding, type: "onMediaDominantColorFilled" });
                 }
                 _renderMediaEdit() {
                     const { acceptGifs: e, acceptVideo: t, "aria-label": o, icon: r, multiple: i, onAddMediaFiles: a, onEdit: l } = this.props;
@@ -271,9 +271,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: m, rightControl: g, secondaryBar: b, subtitle: y, title: f } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: m, rightControl: g, secondaryBar: b, subtitle: f, title: y } = this.props,
                                 { isModal: w } = this.context;
-                            return n.createElement(r.Z, { style: w ? [_.childViewAppBarRoot, _.appBarZindex] : _.appBarZindex }, n.createElement(c.ZP, { backButtonType: o || (w ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !w, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: m, ref: e, rightControl: g, secondaryBar: b, style: [w && _.appBarModal, t], subtitle: y, title: f, titleDomId: d.Q_ }));
+                            return n.createElement(r.Z, { style: w ? [_.childViewAppBarRoot, _.appBarZindex] : _.appBarZindex }, n.createElement(c.ZP, { backButtonType: o || (w ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !w, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: m, ref: e, rightControl: g, secondaryBar: b, style: [w && _.appBarModal, t], subtitle: f, title: y, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -284,8 +284,8 @@
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: u, title: m, withoutBottomBarMobile: g } = this.props,
                         { isModal: b } = this.context,
-                        y = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(l.Z, null, n.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: m }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [_.root, b && _.rootModal] }, !b && y, n.createElement(i.Z, { isFullWidth: d, isLarge: c, style: [_.container, b && _.containerModal, a] }, b ? n.createElement(h.Z, { style: _.viewport }, y, o) : o), t ? n.createElement(r.Z, { style: [_.bottomBarModal, !b && !g && _.bottomBarMobile] }, n.createElement(i.Z, { isFullWidth: d, isLarge: c }, t)) : null));
+                        f = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return n.createElement(l.Z, null, n.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: m }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [_.root, b && _.rootModal] }, !b && f, n.createElement(i.Z, { isFullWidth: d, isLarge: c, style: [_.container, b && _.containerModal, a] }, b ? n.createElement(h.Z, { style: _.viewport }, f, o) : o), t ? n.createElement(r.Z, { style: [_.bottomBarModal, !b && !g && _.bottomBarMobile] }, n.createElement(i.Z, { isFullWidth: d, isLarge: c }, t)) : null));
                 }
             }
             (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = a.Z);
@@ -338,7 +338,7 @@
         },
         300234: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => O });
+            o.d(t, { Z: () => $ });
             var n = o(202784),
                 r = o(325686),
                 i = o(284702),
@@ -354,8 +354,8 @@
                 m = o(386802),
                 g = o(420740),
                 b = o(674132),
-                y = o.n(b),
-                f = o(952793),
+                f = o.n(b),
+                y = o(952793),
                 w = o(965728);
             const C = { startX: 0, startY: 0 };
             class v extends n.Component {
@@ -397,10 +397,10 @@
             var x = o(992942),
                 Z = o(7022),
                 S = o(309854),
-                I = o(351686),
-                B = o(822399);
-            const E = y().b327c12a,
-                T = y().gff1f69e;
+                B = o(351686),
+                I = o(822399);
+            const E = f().b327c12a,
+                T = f().gff1f69e;
             class L extends n.PureComponent {
                 constructor(...e) {
                     super(...e), (this.state = { loadingVariant: null, imageLoading: !1 }), (this._handleLoadStart = () => this.setState({ imageLoading: !0 })), (this._handleLoadEnd = () => this.setState({ imageLoading: !1 }));
@@ -421,16 +421,16 @@
                 }
                 static _selectCachedVariant(e) {
                     const t = S.Z.getOriginalImage(e);
-                    return t ? I.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    return t ? B.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
                     const t = S.Z.getOriginalImage(e);
-                    return t && I.Z.selectLargestUrl(t);
+                    return t && B.Z.selectLargestUrl(t);
                 }
             }
             L.defaultProps = { zoomable: !1 };
             const P = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
-                D = n.createElement(B.Z, { ariaValueText: T, indeterminate: !0, style: P.progressBar }),
+                D = n.createElement(I.Z, { ariaValueText: T, indeterminate: !0, style: P.progressBar }),
                 M = L;
             var R = o(310453);
             class A extends n.PureComponent {
@@ -445,7 +445,7 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(r.Z, { style: e }, n.createElement(r.Z, { style: G.root }, this._renderVideo()));
+                    return n.createElement(r.Z, { style: e }, n.createElement(r.Z, { style: F.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
@@ -456,31 +456,31 @@
                     return n.createElement(R.Z, (0, _.Z)({}, i.Z.extractVideoProps(r, o, void 0, void 0, !1, e), { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: t, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const G = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                F = A,
-                W = y().ac85c6b2,
+            const F = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                G = A,
+                W = f().ac85c6b2,
                 V = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: a, mediaDetail: s, onDismiss: l, onTap: d, promotedContent: c, videoId: p, ...h } = e,
                         [u, b] = n.useState(null),
-                        [y, C] = n.useState({ width: 0, height: 0 }),
+                        [f, C] = n.useState({ width: 0, height: 0 }),
                         { isModal: v } = n.useContext(m.Z),
                         { height: x, width: Z } = s.original_info || {},
-                        { height: S, width: I } = y,
-                        B = (0, f.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        E = B || v || o ? (0, w.I5)({ mediaWidth: Z, mediaHeight: x, containerWidth: I, containerHeight: S }, o) : q.mediaItem;
+                        { height: S, width: B } = f,
+                        I = (0, y.hC)("rweb_video_vertical_aspect_ratio_enabled"),
+                        E = I || v || o ? (0, w.I5)({ mediaWidth: Z, mediaHeight: x, containerWidth: B, containerHeight: S }, o) : q.mediaItem;
                     return n.createElement(
                         k,
                         {
                             onDismiss: l,
                             onLayout:
-                                B || v || o
+                                I || v || o
                                     ? (e) => {
                                           const {
                                               nativeEvent: {
                                                   layout: { height: t, width: o },
                                               },
                                           } = e;
-                                          (o === y.width && t === y.height) || C({ width: o, height: t });
+                                          (o === f.width && t === f.height) || C({ width: o, height: t });
                                       }
                                     : void 0,
                             style: q.root,
@@ -523,7 +523,7 @@
                                             }),
                                         )
                                       : i.Z.isVideo(s) && p
-                                        ? n.createElement(F, { isCurrentlyDisplayed: a, isVerticalVideoNoBlackBars: B, promotedContent: c, style: q.container, video: s, videoId: p })
+                                        ? n.createElement(G, { isCurrentlyDisplayed: a, isVerticalVideoNoBlackBars: I, promotedContent: c, style: q.container, video: s, videoId: p })
                                         : null,
                               ),
                     );
@@ -583,22 +583,22 @@
                                 _ = o === p;
                             return h && !u ? null : n.createElement(N, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: _, key: p, mediaDetail: a[p], onDismiss: c ? void 0 : s, onTap: l, onZoomed: _ ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== p, videoId: u });
                         });
-                    return n.createElement(r.Z, { style: $.root }, a.length > 1 ? this._renderCarousel(p) : p);
+                    return n.createElement(r.Z, { style: O.root }, a.length > 1 ? this._renderCarousel(p) : p);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: r, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
                         c = i.Z.isVideo(r[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(a.Z, { childrenStyle: [$.dimensions, $.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: $.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !c, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(a.Z, { childrenStyle: [O.dimensions, O.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: O.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !c, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
             (z.contextType = h.rC), (z.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: c.Z, onMediaItemChanged: c.Z });
-            const $ = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                O = u(z);
+            const O = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                $ = u(z);
         },
         827094: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => y });
+            o.d(t, { Z: () => f });
             var n = o(202784),
                 r = o(325686),
                 i = o(108362),
@@ -614,7 +614,7 @@
                 m = o(979512);
             const g = p().ia5e7488,
                 b = p().ic76bdf0;
-            class y extends n.Component {
+            class f extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._openGrok = async () => {}),
@@ -630,29 +630,29 @@
                         });
                 }
                 render() {
-                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: d, hideButtons: c, mediaItem: p, mediaUrl: m, overlayFooter: y, topRightButton: C } = this.props,
+                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: d, hideButtons: c, mediaItem: p, mediaUrl: m, overlayFooter: f, topRightButton: C } = this.props,
                         { isModal: v } = this.context,
                         k = { backgroundColor: e.rgba, ..._.nk },
                         x = { backgroundColor: e.rgb, ..._.nk },
-                        Z = [f.root, v ? k : x, { position: v || d ? "relative" : "fixed" }],
+                        Z = [y.root, v ? k : x, { position: v || d ? "relative" : "fixed" }],
                         S = p,
-                        I = S?.media_results?.result?.grok_image_annotation;
+                        B = S?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(r.Z, { onClick: this._handleBackgroundPress, style: Z }, t, o ? n.createElement(r.Z, { pointerEvents: c ? "none" : void 0, style: [f.footerButtons, y && k, y && f.footerButtonsAbsolute, c && f.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
-                        n.createElement(a.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: c ? "none" : void 0, role: "none", style: [f.buttonWrapper, f.buttonWrapperLeft, _.nk, c && f.fadeOut] }, (t) => n.createElement(s.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(h.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: p || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
-                        C ? n.createElement(r.Z, { pointerEvents: c ? "none" : void 0, style: [f.buttonWrapper, f.buttonWrapperRight, _.nk, c && f.fadeOut] }, C) : null,
-                        I
+                        n.createElement(r.Z, { onClick: this._handleBackgroundPress, style: Z }, t, o ? n.createElement(r.Z, { pointerEvents: c ? "none" : void 0, style: [y.footerButtons, f && k, f && y.footerButtonsAbsolute, c && y.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(a.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: c ? "none" : void 0, role: "none", style: [y.buttonWrapper, y.buttonWrapperLeft, _.nk, c && y.fadeOut] }, (t) => n.createElement(s.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(h.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: p || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
+                        C ? n.createElement(r.Z, { pointerEvents: c ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, _.nk, c && y.fadeOut] }, C) : null,
+                        B
                             ? n.createElement(
                                   r.Z,
-                                  { style: [f.buttonWrapperBottomCenter, _.nk, c && f.fadeOut] },
+                                  { style: [y.buttonWrapperBottomCenter, _.nk, c && y.fadeOut] },
                                   n.createElement(
                                       s.ZP,
                                       {
                                           icon: n.createElement(u.default, null),
                                           onClick: () => {
-                                              this._openGrok({ text: I.prompt, autoSubmit: !0, source: "post_image_annotation" });
+                                              this._openGrok({ text: B.prompt, autoSubmit: !0, source: "post_image_annotation" });
                                           },
                                           size: "small",
                                           type: "brandFilled",
@@ -669,8 +669,8 @@
                     );
                 }
             }
-            (y.contextType = l.Z), (y.defaultProps = { hideButtons: !1 });
-            const f = d.default.create((e) => ({ root: { overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%" }, buttonWrapper: { position: "absolute", top: 0, padding: e.spaces.space12, alignItems: "center", justifyContent: "center", cursor: "pointer" }, buttonWrapperLeft: { start: 0 }, buttonWrapperRight: { end: 0 }, buttonWrapperBottomCenter: { width: "100%", position: "absolute", bottom: 60, alignItems: "center", justifyContent: "center", cursor: "pointer" }, fadeOut: { opacity: 0 }, footerButtons: { width: "100%", alignSelf: "center" }, footerButtonsAbsolute: { position: "absolute", bottom: 0, paddingBottom: d.default.iPhoneOffsetBottom, zIndex: 1 } })),
+            (f.contextType = l.Z), (f.defaultProps = { hideButtons: !1 });
+            const y = d.default.create((e) => ({ root: { overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%" }, buttonWrapper: { position: "absolute", top: 0, padding: e.spaces.space12, alignItems: "center", justifyContent: "center", cursor: "pointer" }, buttonWrapperLeft: { start: 0 }, buttonWrapperRight: { end: 0 }, buttonWrapperBottomCenter: { width: "100%", position: "absolute", bottom: 60, alignItems: "center", justifyContent: "center", cursor: "pointer" }, fadeOut: { opacity: 0 }, footerButtons: { width: "100%", alignSelf: "center" }, footerButtonsAbsolute: { position: "absolute", bottom: 0, paddingBottom: d.default.iPhoneOffsetBottom, zIndex: 1 } })),
                 w = ({ onOpenGrokUpdate: e }) => {
                     const { openGrok: t } = (0, m.Z)();
                     return (
@@ -699,7 +699,7 @@
                 m = o(715601),
                 g = o(392237);
             const b = g.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...g.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class y extends n.Component {
+            class f extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
@@ -719,23 +719,23 @@
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: s, headerless: l, history: d, leftControl: p, middleControl: _, onBackClick: m, rightControl: g, screenType: y, searchBoxOptions: f, secondaryBar: w, showSubtitleOnRoot: C, showSubtitleOnWideDetail: v, subtitle: k, title: x, titleIconCell: Z, titleIconCellSize: S, withDetailOpen: I, withSearchBox: B, withTweetButton: E, withWideContainer: T } = this.props,
-                        L = "root" === y,
-                        P = "secondaryRoot" === y,
-                        D = "primaryDetail" === y,
+                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: s, headerless: l, history: d, leftControl: p, middleControl: _, onBackClick: m, rightControl: g, screenType: f, searchBoxOptions: y, secondaryBar: w, showSubtitleOnRoot: C, showSubtitleOnWideDetail: v, subtitle: k, title: x, titleIconCell: Z, titleIconCellSize: S, withDetailOpen: B, withSearchBox: I, withTweetButton: E, withWideContainer: T } = this.props,
+                        L = "root" === f,
+                        P = "secondaryRoot" === f,
+                        D = "primaryDetail" === f,
                         M = (D && v) || (L && C),
                         R = L || (D && e),
                         A = L ? c.ey : D ? c.vX : void 0,
-                        G = n.createElement(a.Z, { style: b.appBarContainer }, n.createElement(h.ZP, { backLocation: i, fixed: !1, hideBackButton: R, history: d, leftControl: p, middleControl: _, onBackClick: m, rightControl: g, secondaryBar: w, style: r, subtitle: M ? k : void 0, title: x, titleDomId: A, titleIconCell: Z, titleIconCellSize: S, withWideContainer: T })),
-                        F = L || (P && I) ? null : n.createElement(u.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: s, headerless: l, middleControl: _, onBackClick: m, rightControl: g, searchBoxOptions: f, subtitle: k, title: x, withSearchBox: B, withTweetButton: E });
-                    return n.createElement(n.Fragment, null, F, G);
+                        F = n.createElement(a.Z, { style: b.appBarContainer }, n.createElement(h.ZP, { backLocation: i, fixed: !1, hideBackButton: R, history: d, leftControl: p, middleControl: _, onBackClick: m, rightControl: g, secondaryBar: w, style: r, subtitle: M ? k : void 0, title: x, titleDomId: A, titleIconCell: Z, titleIconCellSize: S, withWideContainer: T })),
+                        G = L || (P && B) ? null : n.createElement(u.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: s, headerless: l, middleControl: _, onBackClick: m, rightControl: g, searchBoxOptions: y, subtitle: k, title: x, withSearchBox: I, withTweetButton: E });
+                    return n.createElement(n.Fragment, null, G, F);
                 }
             }
-            (y.contextType = _.Z), (y.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const f = (0, p.ZP)(y),
+            (f.contextType = _.Z), (f.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
+            const y = (0, p.ZP)(f),
                 w = (e) => {
                     const t = (0, r.useHistory)();
-                    return (0, i.HD)(t) ? e.children || null : n.createElement(f, e);
+                    return (0, i.HD)(t) ? e.children || null : n.createElement(y, e);
                 };
         },
         470015: (e, t, o) => {
@@ -754,15 +754,15 @@
                     b = () => {
                         g.scribe({ action: "click" });
                     },
-                    y = u ? r.createElement(a.Z, { entities: u.entities, onEntityClick: b, text: u.text }) : _ && _.length ? _ : null,
-                    f = t ? r.createElement(a.Z, { entities: t.entities, onEntityClick: b, text: t.text }) : o && o.length ? o : null,
+                    f = u ? r.createElement(a.Z, { entities: u.entities, onEntityClick: b, text: u.text }) : _ && _.length ? _ : null,
+                    y = t ? r.createElement(a.Z, { entities: t.entities, onEntityClick: b, text: t.text }) : o && o.length ? o : null,
                     w = (e) => ({
                         ...p,
                         onClick: (t) => {
                             p?.onClick && p.onClick(t), e(t);
                         },
                     }),
-                    C = r.createElement(d.H.Consumer, null, ({ handleNextSlide: e }) => r.createElement(i.Z, (0, n.Z)({}, m, { headline: y, primaryAction: p ? w(e) : void 0, shouldRenderBorder: h, subtext: f })));
+                    C = r.createElement(d.H.Consumer, null, ({ handleNextSlide: e }) => r.createElement(i.Z, (0, n.Z)({}, m, { headline: f, primaryAction: p ? w(e) : void 0, shouldRenderBorder: h, subtext: y })));
                 return "function" == typeof c ? r.createElement(l.Z, { onImpression: c }, C) : C;
             };
         },
@@ -809,4 +809,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.1b102e4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.329b0e6a.js.map

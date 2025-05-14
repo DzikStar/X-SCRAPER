@@ -64,8 +64,8 @@
                 t,
                 s,
                 o,
-                u,
                 d,
+                u,
                 c,
                 _,
                 m,
@@ -74,7 +74,7 @@
                 y = l(897455),
                 k = {
                     fragment: {
-                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (r = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (t = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (s = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (d = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (_ = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
+                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (r = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (t = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (s = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (d = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (_ = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "managementListsPageTimelineQuery",
@@ -121,7 +121,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [a, i, r, s, o, c, u, m, t, d, _],
+                        argumentDefinitions: [a, i, r, s, o, c, d, m, t, u, _],
                         kind: "Operation",
                         name: "managementListsPageTimelineQuery",
                         selections: [
@@ -152,7 +152,7 @@
                             },
                         ],
                     },
-                    params: { id: "X4iYIGyhEuizi3A24hPipQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "Vp29POwnQd8PF736I_CUPg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
                 };
             k.hash = "5b66468936446aae49ccfb5965fb93f4";
             const v = k;
@@ -202,8 +202,8 @@
                 t,
                 s,
                 o,
-                u,
                 d,
+                u,
                 c,
                 _,
                 m = {
@@ -274,7 +274,7 @@
                                                                             ],
                                                                             storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing","SuperFollows"])',
                                                                         }),
-                                                                        (u = {
+                                                                        (d = {
                                                                             alias: null,
                                                                             args: r,
                                                                             concreteType: "VerifiedUserProfile",
@@ -287,7 +287,7 @@
                                                                             ],
                                                                             storageKey: 'verified_user_profiles(verified_program_types:["AdRevenueSharing","SuperFollows"])',
                                                                         }),
-                                                                        { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), { kind: "RequiredField", field: (c = { alias: null, args: [{ kind: "Literal", name: "view", value: { verification_flow: "CreatorIdv" } }], kind: "ScalarField", name: "identity_verification_status", storageKey: 'identity_verification_status(view:{"verification_flow":"CreatorIdv"})' }), action: "THROW" }], storageKey: null },
+                                                                        { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), { kind: "RequiredField", field: (c = { alias: null, args: [{ kind: "Literal", name: "view", value: { verification_flow: "CreatorIdv" } }], kind: "ScalarField", name: "identity_verification_status", storageKey: 'identity_verification_status(view:{"verification_flow":"CreatorIdv"})' }), action: "THROW" }], storageKey: null },
                                                                     ],
                                                                     type: "User",
                                                                     abstractKey: null,
@@ -342,7 +342,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [i, t, s, u, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [d, c, (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null }, _], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [i, t, s, d, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [u, c, (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null }, _], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -361,7 +361,7 @@
             const g = m;
         },
         380327: (e, n, l) => {
-            l.d(n, { Z: () => u });
+            l.d(n, { Z: () => d });
             var a,
                 i,
                 r,
@@ -374,8 +374,8 @@
                     params: { id: "UFD9D7pipG78WFN0SJviDg", metadata: {}, name: "useTotalAdCampaignsForUserQuery", operationKind: "query", text: null },
                 };
             o.hash = "200a7af54c9c3ed7753c0291e92e188f";
-            const u = o;
+            const d = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef.31d8da2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef.fb28435a.js.map

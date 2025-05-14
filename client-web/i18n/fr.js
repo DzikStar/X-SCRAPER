@@ -2983,6 +2983,7 @@
                 n("j0693948", "Télécharger l'application Grok"),
                 n("af781666", "Quelles sont les opinions à ce sujet ?"),
                 n("ad35153e", "bêta"),
+                n("a1f414ee", "Share thoughts"),
                 n("fbf83158", "Avertissement : échec du paiement"),
                 n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
                 n("bce3726a", "Mettre les paramètres de facturation à jour"),
@@ -3890,9 +3891,9 @@
                 }),
                 n("cbef820f", function (e) {
                     return e.screenName + " a reposté le stream !";
-                }),
-                n("e3275464", "Envoyer");
-            n("cededf2a", "Hôte"),
+                });
+            n("e3275464", "Envoyer"),
+                n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
                 n("j245c654", "Intervenants"),
                 n("eda23a02", "Auditeurs"),
@@ -4926,9 +4927,9 @@
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
                 n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
-                n("ed99baea", "Accès anticipé à la version bêta"),
-                n("gf898b70", "Recherche avancée");
-            n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
+                n("ed99baea", "Accès anticipé à la version bêta");
+            n("gf898b70", "Recherche avancée"),
+                n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
                 n("j8ee77c4", '"startup ia"'),
@@ -5892,9 +5893,9 @@
                 n("i0ed3f4e", "Image de l'événement"),
                 n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
-                n("a226497c", "Créer une Communauté"),
-                n("d7346632", "Vous n'avez encore rejoint aucune Communauté");
-            n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
+                n("a226497c", "Créer une Communauté");
+            n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
+                n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
                 n("hff48914", "Aucun post n'a pu être trouvé pour le moment."),
                 n("hb52cc4a", "Veuillez réessayer plus tard."),
                 n("e50e1bb0", "Bienvenue dans les Communautés"),
@@ -6890,9 +6891,9 @@
                 n("f5732cd4", "Plus un accès élargi aux modes DeepSearch et Réflexion"),
                 n("e0198956", "Recevez une part des revenus générés par l'engagement de comptes certifiés avec les contenus que vous postez sur X."),
                 n("iadf78e2", "Téléchargement de vidéos"),
-                n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil."),
-                n("ae03594c", "Léger boostage des réponses");
-            n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
+                n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil.");
+            n("ae03594c", "Léger boostage des réponses"),
+                n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
                 n("bf2a6acc", "Boostage des réponses important"),
                 n("c2059276", "Boostez vos réponses."),
                 n("b023ec20", "Boostage maximum des réponses"),
@@ -7868,8 +7869,7 @@
                 n("ce102a20", "Redirection vers Stripe"),
                 n("ddfd6718", "Échec du paiement"),
                 n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
-                n("a62359e6", "Paramètres d'organisation certifiée"),
-                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires.");
+                n("a62359e6", "Paramètres d'organisation certifiée");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7908,8 @@
                     i(e, t)
                 );
             }
-            n("i4dccc18", "Facturation"),
+            n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
+                n("i4dccc18", "Facturation"),
                 n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
                 n("dac61c3c", "Paramètres du compte"),
                 n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
@@ -8912,11 +8913,11 @@
                     return "Il y a " + e.amountOfTime;
                 }),
                 n("ae408b76", "Vous avez reposté"),
-                n("j355f008", "Post épinglé"),
-                n("habf9678", "Épinglé par l'auteur");
-            n("db0798ed", function (e) {
-                return "Sujet " + e.topicName;
-            }),
+                n("j355f008", "Post épinglé");
+            n("habf9678", "Épinglé par l'auteur"),
+                n("db0798ed", function (e) {
+                    return "Sujet " + e.topicName;
+                }),
                 n("dc716ec9", function (e) {
                     return "Sujet recommandé : " + e.topicName;
                 }),
@@ -13228,4 +13229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.7a8fee4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.fcab46da.js.map

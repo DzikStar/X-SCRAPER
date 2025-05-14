@@ -2822,13 +2822,13 @@
                     return "Tahap langganan anda dijadualkan untuk bertukar kepada " + a.tierName + " mulai kitaran pengebilan seterusnya pada " + a.date;
                 }),
                 i("a991d9a3", function (a) {
-                    return "Next billing cycle starts on " + a.date;
+                    return "Kitaran pengebilan seterusnya bermula pada " + a.date;
                 }),
                 i("edbb700f", function (a) {
                     return "Bermula dengan kitaran pengebilan seterusnya pada " + a.date;
                 }),
                 i("e3f9d219", function (a) {
-                    return "Subscription ends on " + a.date;
+                    return "Langganan tamat pada " + a.date;
                 }),
                 i("e9884540", "Diskaun aktif"),
                 i("bfb879aa", "Diskaun belum selesai"),
@@ -2978,11 +2978,12 @@
                 i("j0693948", "Dapatkan aplikasi Grok"),
                 i("af781666", "Apakah pandangan orang ramai?"),
                 i("ad35153e", "beta"),
+                i("a1f414ee", "Share thoughts"),
                 i("fbf83158", "Amaran: Pembayaran gagal"),
                 i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
                 i("bce3726a", "Kemas Kini Pengebilan"),
                 i("fce9ecce", "Video yang Dicadangkan"),
-                i("da00e00a", "Try the new News"),
+                i("da00e00a", "Cubalah Berita yang baharu"),
                 i("c40666d8", "Cubalah"),
                 i("j66b95a2", "Berita Mendalam"),
                 i("b58d2bd2", "Siaran Berkaitan"),
@@ -3885,9 +3886,9 @@
                 }),
                 i("cbef820f", function (a) {
                     return a.screenName + " menyiarkan semula strim!";
-                }),
-                i("e3275464", "Hantar");
-            i("cededf2a", "Hos"),
+                });
+            i("e3275464", "Hantar"),
+                i("cededf2a", "Hos"),
                 i("i2caef48", "Hos lain"),
                 i("j245c654", "Pembicara"),
                 i("eda23a02", "Pendengar"),
@@ -4921,9 +4922,9 @@
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
                 i("if2909ba", "Masa Tontonan"),
                 i("i0e5bf4c", "Video anda"),
-                i("ed99baea", "Akses Beta Awal"),
-                i("gf898b70", "Carian Lanjutan");
-            i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
+                i("ed99baea", "Akses Beta Awal");
+            i("gf898b70", "Carian Lanjutan"),
+                i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
                 i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
                 i("j8ee77c4", '"pemula ai"'),
@@ -5887,9 +5888,9 @@
                 i("i0ed3f4e", "Imej acara"),
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Siaran koleksi"),
-                i("a226497c", "Cipta Komuniti baharu"),
-                i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi");
-            i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
+                i("a226497c", "Cipta Komuniti baharu");
+            i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi"),
+                i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
                 i("hff48914", "Tiada siaran dapat ditemukan pada masa ini."),
                 i("hb52cc4a", "Sila cuba lagi kemudian."),
                 i("e50e1bb0", "Selamat datang ke Komuniti"),
@@ -6679,7 +6680,7 @@
                 i("b2d41138", "Lebih banyak jangkauan = lebih banyak perolehan"),
                 i("defa7f12", "Peroleh manfaat daripada Peningkatan Balasan, yang memberi anda keterlihatan tambahan untuk berkembang dengan lebih pantas."),
                 i("i3e4955d", "di sini"),
-                i("fdc5d06c", "Exit Full Screen"),
+                i("fdc5d06c", "Keluar daripada Skrin Penuh"),
                 i("cea1c00e", "Peroleh keupayaan untuk berinteraksi"),
                 i("f8e6a280", "Akaun baharu perlu membayar yuran tahunan yang kecil sebelum anda dapat membuat siaran, menyukai, menandakan dan membalas. Ini bertujuan untuk mengurangkan spam bagi menyediakan pengalaman lebih baik untuk semua orang. Anda masih boleh mengikuti akaun dan melayari X secara percuma."),
                 i("h968efc6", "Akaun baharu perlu membayar yuran yang kecil sebelum anda dapat membuat siaran, menyukai, menandakan dan membalas. Ini bertujuan untuk mengurangkan spam bagi menyediakan pengalaman lebih baik untuk semua orang. Anda masih boleh mengikuti akaun dan melayari X secara percuma."),
@@ -6723,7 +6724,7 @@
                 i("i1801686", "Ini ialah pertanyaan carian yang tidak sah. Sila cuba carian lain."),
                 i("a0b4541c", "Ada sesuatu yang tidak kena - tetapi jangan bimbang, ini bukan salah anda"),
                 i("d7eebb60", "Menyediakan langganan anda"),
-                i("h707b180", "Your subscription update is complete"),
+                i("h707b180", "Kemaskinian langganan anda telah selesai"),
                 i("a452ab68", "Ini mungkin mengambil masa beberapa saat."),
                 i("b3bad3b2", "@premium"),
                 i("accbcc78", "Berjaya dikemas kini"),
@@ -6885,9 +6886,9 @@
                 i("f5732cd4", "Serta akses dikembangkan kepada DeepSearch & Fikir"),
                 i("e0198956", "Dapatkan sebahagian hasil yang dijana daripada interaksi akaun disahkan dengan kandungan yang anda siarkan di X."),
                 i("iadf78e2", "Muat turun video"),
-                i("ee54c3de", "Simpan video terus ke peranti anda"),
-                i("ae03594c", "Peningkatan balasan yang kecil");
-            i("e6bb08c0", "Tingkatkan keterlihatan balasan anda"),
+                i("ee54c3de", "Simpan video terus ke peranti anda");
+            i("ae03594c", "Peningkatan balasan yang kecil"),
+                i("e6bb08c0", "Tingkatkan keterlihatan balasan anda"),
                 i("bf2a6acc", "Peningkatan Balasan yang Besar"),
                 i("c2059276", "Tingkatkan balasan anda."),
                 i("b023ec20", "Peningkatan Balasan Maksimum"),
@@ -7391,7 +7392,7 @@
                 i("a10aa36c", "Pusat Bantuan"),
                 i("d0740558", "Pusat Bantuan"),
                 i("d2d76dca", "Pusat Bantuan"),
-                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("de8bcdaa", "Pecahan orang yang telah melihat siaran anda"),
                 i("cfa1ef16", "Tingkatkan"),
                 i("d267afa2", "Bawah 20"),
                 i("db81cab0", "20-29"),
@@ -7403,12 +7404,12 @@
                 i("fa5be588", "Organik"),
                 i("c65126fe", "Ditingkatkan"),
                 i("c61c6624", "Dipromosikan"),
-                i("f1196a04", "Boost Analytics"),
-                i("bb66e3fc", "Promote Analytics"),
+                i("f1196a04", "Analitis Peningkatan"),
+                i("bb66e3fc", "Analitis Promosi"),
                 i("g512ddcc", "Analitis Organik"),
-                i("j9256524", "Breakdown of your boost performance"),
-                i("ceeb3016", "Breakdown of your promote performance"),
-                i("bf4558fa", "Breakdown of your organic performance"),
+                i("j9256524", "Pecahan prestasi peningkatan anda"),
+                i("ceeb3016", "Pecahan prestasi promosi anda"),
+                i("bf4558fa", "Pecahan prestasi organik anda"),
                 i("c69069e6", "Bilangan kali siaran ini dilihat di X"),
                 i("a0615bac", "Jumlah bilangan kali seseorang pengguna telah berinteraksi dengan siaran. Ini termasuklah semua klik di mana-mana sahaja pada siaran (termasuk hashtag, pautan, avatar, nama pengguna, dan pengembangan siaran), siaran semula, balasan, ikutan dan sukaan."),
                 i("d8abdaa4", "Pengikut baharu"),
@@ -7417,7 +7418,7 @@
                 i("c7d0d1c4", "Bilangan klik pada mana-mana URL dalam siaran ini"),
                 i("a4da7724", "Bilangan kali orang melihat butiran tentang siaran ini"),
                 i("jedd2771", function (a) {
-                    return a.percentage + " from boost";
+                    return a.percentage + " daripada peningkatan";
                 }),
                 i("g33fd6b1", function (a) {
                     return a.percentage + " daripada promosi";
@@ -7426,7 +7427,7 @@
                     return a.percentage + " daripada bukan pengikut";
                 }),
                 i("h4cbba3e", "< 5%"),
-                i("f4f0094c", "< 5% from boost"),
+                i("f4f0094c", "< 5% daripada peningkatan"),
                 i("h1cdac12", "< 5% daripada promosi "),
                 i("g884b2cc", "< 5% daripada bukan pengikut"),
                 i("b32334a0", "Akaun Dijangkau"),
@@ -7863,9 +7864,8 @@
                 i("ce102a20", "Mengubah hala ke Stripe"),
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
-                i("a62359e6", "Tetapan Organisasi Disahkan"),
-                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan.");
-            function u(a, n) {
+                i("a62359e6", "Tetapan Organisasi Disahkan");
+            function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
                     (i.enumerable = i.enumerable || !1),
@@ -7874,9 +7874,9 @@
                         Object.defineProperty(
                             a,
                             ((t = i.key),
-                            (u = void 0),
+                            (d = void 0),
                             "symbol" ==
-                            typeof (u = (function (a, n) {
+                            typeof (d = (function (a, n) {
                                 if ("object" != typeof a || null === a) return a;
                                 var e = a[Symbol.toPrimitive];
                                 if (void 0 !== e) {
@@ -7886,24 +7886,25 @@
                                 }
                                 return ("string" === n ? String : Number)(a);
                             })(t, "string"))
-                                ? u
-                                : String(u)),
+                                ? d
+                                : String(d)),
                             i,
                         );
                 }
-                var t, u;
+                var t, d;
             }
-            function d(a, n) {
+            function u(a, n) {
                 return (
-                    (d = Object.setPrototypeOf
+                    (u = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (a, n) {
                               return (a.__proto__ = n), a;
                           }),
-                    d(a, n)
+                    u(a, n)
                 );
             }
-            i("i4dccc18", "Pengebilan"),
+            i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
+                i("i4dccc18", "Pengebilan"),
                 i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
                 i("dac61c3c", "Tetapan akaun"),
                 i("b6b5fd66", "Urus akaun X anda termasuk mengubah nama pengguna atau kata laluan anda."),
@@ -8907,11 +8908,11 @@
                     return a.amountOfTime + " yang lalu";
                 }),
                 i("ae408b76", "Anda membuat siaran semula"),
-                i("j355f008", "Siaran yang dipinkan"),
-                i("habf9678", "Dipinkan oleh Pengarang");
-            i("db0798ed", function (a) {
-                return "Topik " + a.topicName;
-            }),
+                i("j355f008", "Siaran yang dipinkan");
+            i("habf9678", "Dipinkan oleh Pengarang"),
+                i("db0798ed", function (a) {
+                    return "Topik " + a.topicName;
+                }),
                 i("dc716ec9", function (a) {
                     return "Topik Yang Disyorkan: " + a.topicName;
                 }),
@@ -9465,7 +9466,7 @@
                     (e = a),
                     ((n = s).prototype = Object.create(e.prototype)),
                     (n.prototype.constructor = n),
-                    d(n, e),
+                    u(n, e),
                     (s.prototype.render = function () {
                         return r.createElement.apply(r, this[this.props.$i18n].reduce(this.templateReducer, [r.Fragment, null]));
                     }),
@@ -12018,7 +12019,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(Yuran ", "%, Min. ", ")"];
                             },
                         },
                         {
@@ -12866,8 +12867,8 @@
                                 };
                             },
                         },
-                    ]) && u(i.prototype, t),
-                    g && u(i, g),
+                    ]) && d(i.prototype, t),
+                    g && d(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     s
                 );
@@ -13223,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.5bca1bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f00fed4a.js.map

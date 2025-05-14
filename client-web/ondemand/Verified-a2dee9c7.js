@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Verified-ee0d0da9"],
+    ["ondemand.Verified-a2dee9c7"],
     {
         95186: (e, a, l) => {
             l.d(a, { Z: () => d });
@@ -367,7 +367,7 @@
             const u = s;
         },
         818187: (e, a, l) => {
-            l.d(a, { Z: () => k });
+            l.d(a, { Z: () => p });
             var n,
                 i,
                 t,
@@ -428,7 +428,7 @@
                     params: { id: "bGJ0LYcXZ9M_ARcscpUJiQ", metadata: {}, name: "useAffiliatesAndInvitesQuery", operationKind: "query", text: null },
                 };
             y.hash = "ed144ab56ff9d59e89563cce723fc5cb";
-            const k = y;
+            const p = y;
         },
         533399: (e, a, l) => {
             l.d(a, { Z: () => r });
@@ -1498,6 +1498,25 @@
             i.hash = "969dbe5b8e30e6055f820ee5acab6932";
             const t = i;
         },
+        225258: (e, a, l) => {
+            l.d(a, { Z: () => i });
+            const n = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
+                i = ({ apiClient: e, featureSwitches: a }) => ({
+                    postConversion(a, l, i, t = {}) {
+                        const r = { conversions: [{ basePixel: a, eventPixel: l, twclid: i }] };
+                        return e.postUnversioned("/i/capi", r, { ...t, "content-type": "application/json" }, n).then((e) => e.data);
+                    },
+                });
+        },
+        798156: (e, a, l) => {
+            e.exports = l.p + "illustration-paper-plane.771a84da.png";
+        },
+        198433: (e, a, l) => {
+            e.exports = l.p + "illustration-traffic-light.1da0d6da.png";
+        },
+        491339: (e, a, l) => {
+            e.exports = l.p + "illustration-uturn.e2dcd6aa.png";
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-ee0d0da9.eed1ac7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-a2dee9c7.d36a827a.js.map

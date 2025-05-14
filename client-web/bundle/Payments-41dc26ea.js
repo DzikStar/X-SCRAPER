@@ -543,7 +543,7 @@
             var a = n(807896),
                 r = n(202784),
                 l = n(43429),
-                i = n(991911);
+                i = n(164317);
             const o = (e) => r.createElement(i.Z, (0, a.Z)({}, e, { transferDirection: l.Rz.debit })),
                 c = r.memo(o);
         },
@@ -575,4 +575,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.3b76942a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.4573b7fa.js.map

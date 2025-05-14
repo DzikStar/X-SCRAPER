@@ -1094,7 +1094,7 @@
         },
         231684: (e, l, a) => {
             a.d(l, { Z: () => i });
-            var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UserProfileLocationItem_user", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }], storageKey: null }], type: "User", abstractKey: null, hash: "e80452851aca753f34ec77c26469806a" };
+            var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UserProfileLocationItem_user", selections: [{ alias: null, args: null, concreteType: "UserLocation", kind: "LinkedField", name: "location", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }], storageKey: null }], type: "User", abstractKey: null, hash: "7c14bf3d974dc9385a4ec32ffafa14fa" };
             const i = n;
         },
         268723: (e, l, a) => {
@@ -1735,4 +1735,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.380ff90a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.c9db452a.js.map

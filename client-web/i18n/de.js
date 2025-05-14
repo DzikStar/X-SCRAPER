@@ -2823,13 +2823,13 @@
                     return "Deine Abonnementstufe wird ab dem nächsten Rechnungszyklus am " + e.date + " zu " + e.tierName + " geändert";
                 }),
                 t("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Der nächste Rechnungszyklus beginnt am " + e.date;
                 }),
                 t("edbb700f", function (e) {
                     return "Beginnt mit dem nächsten Rechnungszyklus am " + e.date;
                 }),
                 t("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Abonnement endet am " + e.date;
                 }),
                 t("e9884540", "Aktiver Rabatt"),
                 t("bfb879aa", "Anstehender Rabatt"),
@@ -2979,11 +2979,12 @@
                 t("j0693948", "Hol dir die Grok App"),
                 t("af781666", "Was halten Leute davon?"),
                 t("ad35153e", "Beta"),
+                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
                 t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
                 t("bce3726a", "Rechnungsinfo aktualisieren"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
-                t("da00e00a", "Try the new News"),
+                t("da00e00a", "Probier die neuen Nachrichten"),
                 t("c40666d8", "Ausprobieren"),
                 t("j66b95a2", "#Ausführliche Nachrichten"),
                 t("b58d2bd2", "Relevante Posts"),
@@ -3886,9 +3887,9 @@
                 }),
                 t("cbef820f", function (e) {
                     return e.screenName + " hat den Stream repostet!";
-                }),
-                t("e3275464", "Senden");
-            t("cededf2a", "Host"),
+                });
+            t("e3275464", "Senden"),
+                t("cededf2a", "Host"),
                 t("i2caef48", "Co-Hosts"),
                 t("j245c654", "Sprecher"),
                 t("eda23a02", "Zuhörer*innen"),
@@ -4922,9 +4923,9 @@
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
                 t("if2909ba", "Abspielzeit"),
                 t("i0e5bf4c", "Deine Videos"),
-                t("ed99baea", "Vorzeitiger Beta-Zugriff"),
-                t("gf898b70", "Erweiterte Suche");
-            t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
+                t("ed99baea", "Vorzeitiger Beta-Zugriff");
+            t("gf898b70", "Erweiterte Suche"),
+                t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
                 t("j8ee77c4", '"ai startup"'),
@@ -5888,9 +5889,9 @@
                 t("i0ed3f4e", "Ereignisbild"),
                 t("cbae35fa", "Live-Video melden"),
                 t("fd12ab58", "Sammlungs-Posts"),
-                t("a226497c", "Neue Community erstellen"),
-                t("d7346632", "Du bist noch keinen Communities beigetreten");
-            t("b732a4cc", "Wenn es so weit ist, siehst du seine/ihre Posts hier."),
+                t("a226497c", "Neue Community erstellen");
+            t("d7346632", "Du bist noch keinen Communities beigetreten"),
+                t("b732a4cc", "Wenn es so weit ist, siehst du seine/ihre Posts hier."),
                 t("hff48914", "Zurzeit wurden keine Posts gefunden."),
                 t("hb52cc4a", "Bitte versuche es später erneut."),
                 t("e50e1bb0", "Willkommen bei Communities"),
@@ -6680,7 +6681,7 @@
                 t("b2d41138", "Mehr Reichweite = mehr Verdienst"),
                 t("defa7f12", "Profitiere von einem Antwort-Boost, der dich stärker sichtbar macht, damit du schneller expandieren kannst."),
                 t("i3e4955d", "Hier"),
-                t("fdc5d06c", "Exit Full Screen"),
+                t("fdc5d06c", "Vollbildanzeige verlassen"),
                 t("cea1c00e", "Möglichkeit zur Interaktion freischalten"),
                 t("f8e6a280", "Neue Accounts müssen eine geringe Jahresgebühr zahlen, bevor sie etwas posten, mit „Gefällt mir“ markieren, mit einem Lesezeichen versehen und beantworten können. Das soll Spam entgegenwirken und die Nutzung für alle verbessern. Nach wie vor ist es kostenlos, Accounts zu folgen und X zu lesen."),
                 t("h968efc6", "Neue Accounts müssen eine geringe Gebühr zahlen, bevor sie etwas posten, mit „Gefällt mir“ markieren, mit einem Lesezeichen versehen und beantworten können. Das soll Spam entgegenwirken und die Nutzung für alle verbessern. Nach wie vor ist es kostenlos, Accounts zu folgen und X zu lesen."),
@@ -6724,7 +6725,7 @@
                 t("i1801686", "Diese Suchabfrage ist ungültig. Probiere es bitte mit einer anderen."),
                 t("a0b4541c", "Etwas ist schiefgelaufen, aber keine Sorge – es liegt nicht an dir."),
                 t("d7eebb60", "Dein Abonnement wird eingerichtet"),
-                t("h707b180", "Your subscription update is complete"),
+                t("h707b180", "Dein Abonnement-Update ist abgeschlossen"),
                 t("a452ab68", "Dies kann ein paar Sekunden dauern."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Erfolgreich aktualisiert"),
@@ -6886,9 +6887,9 @@
                 t("f5732cd4", "Plus erweiterter Zugriff auf DeepSearch und Denken"),
                 t("e0198956", "Erhalte einen Anteil an den Einnahmen aus der Interaktion verifizierter Accounts mit Inhalten, die du auf X postest."),
                 t("iadf78e2", "Videos herunterladen"),
-                t("ee54c3de", "Videos direkt auf deinem Gerät speichern"),
-                t("ae03594c", "Kleiner Boost für Antworten");
-            t("e6bb08c0", "Erhöhe die Sichtbarkeit deiner Antworten"),
+                t("ee54c3de", "Videos direkt auf deinem Gerät speichern");
+            t("ae03594c", "Kleiner Boost für Antworten"),
+                t("e6bb08c0", "Erhöhe die Sichtbarkeit deiner Antworten"),
                 t("bf2a6acc", "Großer Antwort-Boost"),
                 t("c2059276", "Lass deine Antworten boosten."),
                 t("b023ec20", "Maximaler Antwort-Boost"),
@@ -7392,7 +7393,7 @@
                 t("a10aa36c", "Hilfe-Center"),
                 t("d0740558", "Hilfe-Center"),
                 t("d2d76dca", "Hilfe-Center"),
-                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("de8bcdaa", "Aufschlüsselung der Personen, die deinen Post gesehen haben"),
                 t("cfa1ef16", "Boosten"),
                 t("d267afa2", "Unter 20"),
                 t("db81cab0", "20-29"),
@@ -7404,12 +7405,12 @@
                 t("fa5be588", "Organisch"),
                 t("c65126fe", "Geboostet"),
                 t("c61c6624", "Gesponsert"),
-                t("f1196a04", "Boost Analytics"),
-                t("bb66e3fc", "Promote Analytics"),
+                t("f1196a04", "Boost-Statistiken"),
+                t("bb66e3fc", "Sponsoring-Statistiken"),
                 t("g512ddcc", "Statistiken für organische Interaktion"),
-                t("j9256524", "Breakdown of your boost performance"),
-                t("ceeb3016", "Breakdown of your promote performance"),
-                t("bf4558fa", "Breakdown of your organic performance"),
+                t("j9256524", "Aufschlüsselung deiner Boost-Performance"),
+                t("ceeb3016", "Aufschlüsselung deiner Sponsoring-Performance"),
+                t("bf4558fa", "Aufschlüsselung deiner organischen Performance"),
                 t("c69069e6", "Wie oft dieser Post auf X gesehen wurde."),
                 t("a0615bac", "Wie oft ein*e Nutzer*in insgesamt mit einem Post interagiert hat. Dazu zählen alle Klicks auf eine beliebige Stelle im Post (u. a. Hashtags, Links, Avatar, Nutzername und Post-Erweiterung), Reposts, Antworten, neue Follower*innen und „Gefällt mir“-Markierungen."),
                 t("d8abdaa4", "Neue Follower"),
@@ -7418,7 +7419,7 @@
                 t("c7d0d1c4", "Anzahl der Klicks auf eine URL in diesem Post"),
                 t("a4da7724", "Wie oft Nutzer die Details über diesen Post angezeigt haben"),
                 t("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " aus Boost";
                 }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " aus Promotion";
@@ -7427,7 +7428,7 @@
                     return e.percentage + " von Nicht-Followern";
                 }),
                 t("h4cbba3e", "< 5 %"),
-                t("f4f0094c", "< 5% from boost"),
+                t("f4f0094c", "< 5 % aus Boost"),
                 t("h1cdac12", "< 5 % aus Promotion"),
                 t("g884b2cc", "< 5 % von Nicht-Follower*innen"),
                 t("b32334a0", "Erreichte Accounts"),
@@ -7864,8 +7865,7 @@
                 t("ce102a20", "Weiterleitung zu Stripe"),
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
                 t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
-                t("a62359e6", "Einstellungen für Verifizierte Organisation"),
-                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest.");
+                t("a62359e6", "Einstellungen für Verifizierte Organisation");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7904,7 +7904,8 @@
                     d(e, n)
                 );
             }
-            t("i4dccc18", "Rechnungsstellung"),
+            t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
+                t("i4dccc18", "Rechnungsstellung"),
                 t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
                 t("dac61c3c", "Account-Einstellungen"),
                 t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
@@ -8908,11 +8909,11 @@
                     return "vor " + e.amountOfTime;
                 }),
                 t("ae408b76", "Du hast repostet"),
-                t("j355f008", "Angehefteter Post"),
-                t("habf9678", "Angeheftet von Autor*in");
-            t("db0798ed", function (e) {
-                return "Thema " + e.topicName;
-            }),
+                t("j355f008", "Angehefteter Post");
+            t("habf9678", "Angeheftet von Autor*in"),
+                t("db0798ed", function (e) {
+                    return "Thema " + e.topicName;
+                }),
                 t("dc716ec9", function (e) {
                     return "Empfohlenes Thema: " + e.topicName;
                 }),
@@ -12032,7 +12033,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", " % Gebühr, mindestens ", ")"];
                             },
                         },
                         {
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.7476f5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.308500ea.js.map

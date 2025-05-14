@@ -2988,6 +2988,7 @@
                 i("j0693948", "Pobierz aplikację Grok"),
                 i("af781666", "Co myślą ludzie?"),
                 i("ad35153e", "beta"),
+                i("a1f414ee", "Share thoughts"),
                 i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
                 i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
                 i("bce3726a", "Aktualizuj rozliczenie"),
@@ -3895,9 +3896,9 @@
                 }),
                 i("cbef820f", function (e) {
                     return "Użytkownik " + e.screenName + " podał dalej strumień!";
-                }),
-                i("e3275464", "Wyślij");
-            i("cededf2a", "Host"),
+                });
+            i("e3275464", "Wyślij"),
+                i("cededf2a", "Host"),
                 i("i2caef48", "Współhości"),
                 i("j245c654", "Mówcy"),
                 i("eda23a02", "Słuchacze"),
@@ -4931,9 +4932,9 @@
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
                 i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
-                i("ed99baea", "Wczesny dostęp do wersji Beta"),
-                i("gf898b70", "Wyszukiwanie zaawansowane");
-            i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
+                i("ed99baea", "Wczesny dostęp do wersji Beta");
+            i("gf898b70", "Wyszukiwanie zaawansowane"),
+                i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
                 i("j8ee77c4", '"startup ai"'),
@@ -5897,9 +5898,9 @@
                 i("i0ed3f4e", "Obrazek wydarzenia"),
                 i("cbae35fa", "Zgłoś transmisję"),
                 i("fd12ab58", "Wpisy w kolekcji"),
-                i("a226497c", "Utwórz nową Grupę dyskusyjną"),
-                i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej");
-            i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
+                i("a226497c", "Utwórz nową Grupę dyskusyjną");
+            i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej"),
+                i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
                 i("hff48914", "W tej chwili nie można znaleźć żadnego wpisu."),
                 i("hb52cc4a", "Spróbuj ponownie później."),
                 i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
@@ -6895,9 +6896,9 @@
                 i("f5732cd4", "Ponadto rozszerzony dostęp do trybów DeepSearch i Myśl"),
                 i("e0198956", "Otrzymuj udział w dochodach powstających w wyniku interakcji zweryfikowanych kont z treścią Twojego wpisu w serwisie X."),
                 i("iadf78e2", "Pobieranie filmów"),
-                i("ee54c3de", "Zapisuj filmy bezpośrednio na swoim urządzeniu"),
-                i("ae03594c", "Małe wzmocnienie odpowiedzi");
-            i("e6bb08c0", "Zwiększ widoczność swoich odpowiedzi"),
+                i("ee54c3de", "Zapisuj filmy bezpośrednio na swoim urządzeniu");
+            i("ae03594c", "Małe wzmocnienie odpowiedzi"),
+                i("e6bb08c0", "Zwiększ widoczność swoich odpowiedzi"),
                 i("bf2a6acc", "Duże wzmocnienie odpowiedzi"),
                 i("c2059276", "Korzystaj z możliwości dodawania boosta do odpowiedzi."),
                 i("b023ec20", "Maksymalne wzmocnienie odpowiedzi"),
@@ -7873,8 +7874,7 @@
                 i("ce102a20", "Przekierowywanie do usługi Stripe"),
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
                 i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
-                i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
-                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych.");
+                i("a62359e6", "Ustawienia zweryfikowanej organizacji");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7913,7 +7913,8 @@
                     c(e, a)
                 );
             }
-            i("i4dccc18", "Rachunki"),
+            i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
+                i("i4dccc18", "Rachunki"),
                 i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
                 i("dac61c3c", "Ustawienia konta"),
                 i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
@@ -8917,11 +8918,11 @@
                     return e.amountOfTime + " temu";
                 }),
                 i("ae408b76", "Podano dalej"),
-                i("j355f008", "Przypięty wpis"),
-                i("habf9678", "Przypięty przez autora");
-            i("db0798ed", function (e) {
-                return "Temat: " + e.topicName;
-            }),
+                i("j355f008", "Przypięty wpis");
+            i("habf9678", "Przypięty przez autora"),
+                i("db0798ed", function (e) {
+                    return "Temat: " + e.topicName;
+                }),
                 i("dc716ec9", function (e) {
                     return "Polecany temat: " + e.topicName;
                 }),
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.c8ba5aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.36ef601a.js.map

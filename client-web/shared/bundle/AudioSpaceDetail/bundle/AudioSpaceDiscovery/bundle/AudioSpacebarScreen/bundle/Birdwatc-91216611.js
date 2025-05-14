@@ -338,7 +338,7 @@
             function r({ p: e, mods: t }) {
                 const n = e.str("t"),
                     r = e.int("numberOfLines");
-                return (0, s.jsx)("div", { className: `text-text ${t}`, children: (0, s.jsx)("p", { className: "" + (null != r && r > 0 ? "block whitespace-nowrap text-ellipsis overflow-hidden" : ""), children: n }) });
+                return (0, s.jsx)("div", { className: `text-text ${t}`, children: (0, s.jsx)("p", { className: "" + (null != r && r > 0 ? `line-clamp-${r} overflow-hidden` : ""), children: n }) });
             }
         },
         272403: (e, t, n) => {
@@ -512,4 +512,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611.be8a760a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611.5321b26a.js.map

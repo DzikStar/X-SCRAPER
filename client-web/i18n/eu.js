@@ -2982,6 +2982,7 @@
                 o("j0693948", "Get the Grok app"),
                 o("af781666", "What do people think?"),
                 o("ad35153e", "beta"),
+                o("a1f414ee", "Share thoughts"),
                 o("fbf83158", "Warning: Payment failed"),
                 o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 o("bce3726a", "Update Billing"),
@@ -3889,9 +3890,9 @@
                 }),
                 o("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
-                }),
-                o("e3275464", "Bidali");
-            o("cededf2a", "Anfitrioia"),
+                });
+            o("e3275464", "Bidali"),
+                o("cededf2a", "Anfitrioia"),
                 o("i2caef48", "Co-hosts"),
                 o("j245c654", "Speakers"),
                 o("eda23a02", "Listeners"),
@@ -4925,9 +4926,9 @@
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access"),
-                o("gf898b70", "Advanced Search");
-            o("d2a43a7a", 'contains both "ai" and "startup"'),
+                o("ed99baea", "Early Beta Access");
+            o("gf898b70", "Advanced Search"),
+                o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
@@ -5891,9 +5892,9 @@
                 o("i0ed3f4e", "Gertaeraren irudia"),
                 o("cbae35fa", "Report Broadcast"),
                 o("fd12ab58", "Collection posts"),
-                o("a226497c", "Sortu komunitate berri bat"),
-                o("d7346632", "You haven’t joined any Communities yet");
-            o("b732a4cc", "When you do, you’ll see their posts here."),
+                o("a226497c", "Sortu komunitate berri bat");
+            o("d7346632", "You haven’t joined any Communities yet"),
+                o("b732a4cc", "When you do, you’ll see their posts here."),
                 o("hff48914", "No posts could be found at this time."),
                 o("hb52cc4a", "Saiatu berriro geroago."),
                 o("e50e1bb0", "Welcome to Communities"),
@@ -6889,9 +6890,9 @@
                 o("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
-                o("ee54c3de", "Save videos straight to your device"),
-                o("ae03594c", "Small reply boost");
-            o("e6bb08c0", "Increase the visibility of your replies"),
+                o("ee54c3de", "Save videos straight to your device");
+            o("ae03594c", "Small reply boost"),
+                o("e6bb08c0", "Increase the visibility of your replies"),
                 o("bf2a6acc", "Large Reply Boost"),
                 o("c2059276", "Have your replies boosted."),
                 o("b023ec20", "Max Reply Boost"),
@@ -7867,8 +7868,7 @@
                 o("ce102a20", "Redirecting to Stripe"),
                 o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                o("a62359e6", "Verified Organization Settings");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7907,8 @@
                     u(e, a)
                 );
             }
-            o("i4dccc18", "Billing"),
+            o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                o("i4dccc18", "Billing"),
                 o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 o("dac61c3c", "Account settings"),
                 o("b6b5fd66", "Manage your X account including changing your username or password."),
@@ -8911,11 +8912,11 @@
                     return "Duela " + e.amountOfTime;
                 }),
                 o("ae408b76", "You reposted"),
-                o("j355f008", "Pinned post"),
-                o("habf9678", "Egileak finkatuta");
-            o("db0798ed", function (e) {
-                return "Gaia: " + e.topicName;
-            }),
+                o("j355f008", "Pinned post");
+            o("habf9678", "Egileak finkatuta"),
+                o("db0798ed", function (e) {
+                    return "Gaia: " + e.topicName;
+                }),
                 o("dc716ec9", function (e) {
                     return "Gai gomendatua: " + e.topicName;
                 }),
@@ -13231,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.c8397b1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.140b637a.js.map

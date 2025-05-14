@@ -2988,6 +2988,7 @@
                 n("j0693948", "Získajte aplikáciu Grok"),
                 n("af781666", "Čo si myslia ľudia?"),
                 n("ad35153e", "beta"),
+                n("a1f414ee", "Share thoughts"),
                 n("fbf83158", "Upozornenie: platba zlyhala"),
                 n("jadeb4da", "Čo najskôr si aktualizujte spôsob platby, než prídete o výhody predplatného."),
                 n("bce3726a", "Aktualizujte fakturačné údaje"),
@@ -3895,9 +3896,9 @@
                 }),
                 n("cbef820f", function (e) {
                     return "Používateľ " + e.screenName + " opätovne uverejnil stream.";
-                }),
-                n("e3275464", "Odoslať");
-            n("cededf2a", "Hostiteľ"),
+                });
+            n("e3275464", "Odoslať"),
+                n("cededf2a", "Hostiteľ"),
                 n("i2caef48", "Spoluhostitelia"),
                 n("j245c654", "Rečníci"),
                 n("eda23a02", "Poslucháči"),
@@ -4931,9 +4932,9 @@
                 n("e41fffbc", "Celkový čas pozerania vašich videí."),
                 n("if2909ba", "Čas pozerania"),
                 n("i0e5bf4c", "Vaše videá"),
-                n("ed99baea", "Prednostný prístup k beta verzii"),
-                n("gf898b70", "Rozšírené vyhľadávanie");
-            n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
+                n("ed99baea", "Prednostný prístup k beta verzii");
+            n("gf898b70", "Rozšírené vyhľadávanie"),
+                n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", "obsahuje presnú frázu „ai startup“"),
                 n("j8ee77c4", '"ai startup"'),
@@ -5897,9 +5898,9 @@
                 n("i0ed3f4e", "Obrázok udalosti"),
                 n("cbae35fa", "Nahlásiť vysielanie"),
                 n("fd12ab58", "Príspevky v zbierke"),
-                n("a226497c", "Vytvorenie novej Komunity"),
-                n("d7346632", "Zatiaľ ste sa nepripojili do žiadnych Komunít");
-            n("b732a4cc", "Keď tak urobíte, uvidíte tu ich príspevky."),
+                n("a226497c", "Vytvorenie novej Komunity");
+            n("d7346632", "Zatiaľ ste sa nepripojili do žiadnych Komunít"),
+                n("b732a4cc", "Keď tak urobíte, uvidíte tu ich príspevky."),
                 n("hff48914", "Momentálne sa nepodarilo nájsť žiadne príspevky"),
                 n("hb52cc4a", "Skúste to neskôr znova."),
                 n("e50e1bb0", "Vitajte v Komunitách"),
@@ -6895,9 +6896,9 @@
                 n("f5732cd4", "Navyše rozšírený prístup k režimom DeepSearch a Premýšľanie"),
                 n("e0198956", "Získavajte podiel z výnosov generovaných interakciami overených účtov s obsahom, ktorý uverejňujete na X."),
                 n("iadf78e2", "Sťahovanie videí"),
-                n("ee54c3de", "Ukladajte si videá priamo do zariadenia"),
-                n("ae03594c", "Malá podpora odpovedí");
-            n("e6bb08c0", "Zvýšte viditeľnosť svojich odpovedí"),
+                n("ee54c3de", "Ukladajte si videá priamo do zariadenia");
+            n("ae03594c", "Malá podpora odpovedí"),
+                n("e6bb08c0", "Zvýšte viditeľnosť svojich odpovedí"),
                 n("bf2a6acc", "Veľká podpora odpovedí"),
                 n("c2059276", "Podporte svoje odpovede."),
                 n("b023ec20", "Maximálna podpora odpovedí"),
@@ -7873,8 +7874,7 @@
                 n("ce102a20", "Prebieha presmerovanie do služby Stripe"),
                 n("ddfd6718", "Platba zlyhala"),
                 n("i90ea7d2", "Aktualizujte platobné údaje ihneď, aby ste nestratili výhody."),
-                n("a62359e6", "Nastavenia overených organizácií"),
-                n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov.");
+                n("a62359e6", "Nastavenia overených organizácií");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7913,7 +7913,8 @@
                     r(e, a)
                 );
             }
-            n("i4dccc18", "Fakturácia"),
+            n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov."),
+                n("i4dccc18", "Fakturácia"),
                 n("ec3cd6e4", "Spravujte svoj spôsob platby, aktualizujte fakturačné informácie a kontrolujte svoje faktúry."),
                 n("dac61c3c", "Nastavenia účtu"),
                 n("b6b5fd66", "Spravujte svoj účet X vrátane zmien používateľského mena alebo hesla."),
@@ -8917,11 +8918,11 @@
                     return "Pred " + e.amountOfTime;
                 }),
                 n("ae408b76", "Opätovne ste uverejnili"),
-                n("j355f008", "Pripnutý príspevok"),
-                n("habf9678", "Pripnuté autorom");
-            n("db0798ed", function (e) {
-                return "Téma: " + e.topicName;
-            }),
+                n("j355f008", "Pripnutý príspevok");
+            n("habf9678", "Pripnuté autorom"),
+                n("db0798ed", function (e) {
+                    return "Téma: " + e.topicName;
+                }),
                 n("dc716ec9", function (e) {
                     return "Odporúčaná téma: " + e.topicName;
                 }),
@@ -13240,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.b074d41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.8c31601a.js.map

@@ -2978,6 +2978,7 @@
                 n("j0693948", "Grok uygulamasını indir"),
                 n("af781666", "İnsanlar ne düşünüyor?"),
                 n("ad35153e", "beta"),
+                n("a1f414ee", "Share thoughts"),
                 n("fbf83158", "Uyarı: Ödeme başarısız oldu"),
                 n("jadeb4da", "Abonelik avantajlarını kaybetmemek için lütfen ödeme yöntemini hemen güncelle."),
                 n("bce3726a", "Faturalandırma Ayarlarını Güncelle"),
@@ -3885,9 +3886,9 @@
                 }),
                 n("cbef820f", function (e) {
                     return e.screenName + " yayını yeniden gönderdi.";
-                }),
-                n("e3275464", "Gönder");
-            n("cededf2a", "Yönetici"),
+                });
+            n("e3275464", "Gönder"),
+                n("cededf2a", "Yönetici"),
                 n("i2caef48", "Yardımcılar"),
                 n("j245c654", "Konuşmacılar"),
                 n("eda23a02", "Dinleyiciler"),
@@ -4921,9 +4922,9 @@
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
                 n("if2909ba", "İzlenme Süresi"),
                 n("i0e5bf4c", "Videoların"),
-                n("ed99baea", "Erken Beta Erişimi"),
-                n("gf898b70", "Gelişmiş Arama");
-            n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
+                n("ed99baea", "Erken Beta Erişimi");
+            n("gf898b70", "Gelişmiş Arama"),
+                n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
                 n("a8584698", "ai girişimi"),
                 n("jb6f9292", '"ai girişimi" ifadesini tam olarak içerir'),
                 n("j8ee77c4", '"ai girişimi"'),
@@ -5887,9 +5888,9 @@
                 n("i0ed3f4e", "Etkinlik görseli"),
                 n("cbae35fa", "Yayını Bildir"),
                 n("fd12ab58", "Koleksiyon gönderileri"),
-                n("a226497c", "Yeni bir Topluluk oluştur"),
-                n("d7346632", "Henüz hiçbir Topluluğa katılmadın.");
-            n("b732a4cc", "Katıldığında onların gönderilerini burada göreceksin."),
+                n("a226497c", "Yeni bir Topluluk oluştur");
+            n("d7346632", "Henüz hiçbir Topluluğa katılmadın."),
+                n("b732a4cc", "Katıldığında onların gönderilerini burada göreceksin."),
                 n("hff48914", "Şu anda hiç gönderi bulunamadı."),
                 n("hb52cc4a", "Lütfen daha sonra tekrar dene."),
                 n("e50e1bb0", "Topluluklara hoş geldin"),
@@ -6885,9 +6886,9 @@
                 n("f5732cd4", "DeepSearch ve Düşünme için daha geniş erişimden yararlan"),
                 n("e0198956", "Onaylı hesapların, X'te yayınladığın içeriklerle etkileşimlerinden elde edilen gelirden pay al."),
                 n("iadf78e2", "Videoları indirme"),
-                n("ee54c3de", "Videoları doğrudan cihazına kaydet"),
-                n("ae03594c", "Küçük yanıt artışı");
-            n("e6bb08c0", "Yanıtlarının görünürlüğünü artır"),
+                n("ee54c3de", "Videoları doğrudan cihazına kaydet");
+            n("ae03594c", "Küçük yanıt artışı"),
+                n("e6bb08c0", "Yanıtlarının görünürlüğünü artır"),
                 n("bf2a6acc", "Büyük Yanıt Öne Çıkarma"),
                 n("c2059276", "Yanıtlarını öne çıkar."),
                 n("b023ec20", "Maksimum Yanıt Öne Çıkarma"),
@@ -7863,8 +7864,7 @@
                 n("ce102a20", "Stripe'a yönlendiriliyor"),
                 n("ddfd6718", "Ödeme Başarısız Oldu"),
                 n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
-                n("a62359e6", "Onaylı Kuruluş Ayarları"),
-                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın.");
+                n("a62359e6", "Onaylı Kuruluş Ayarları");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7903,7 +7903,8 @@
                     t(e, a)
                 );
             }
-            n("i4dccc18", "Faturalandırma"),
+            n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
+                n("i4dccc18", "Faturalandırma"),
                 n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
                 n("dac61c3c", "Hesap ayarları"),
                 n("b6b5fd66", "X hesabını yöneterek kullanıcı adını veya şifreni değiştirme gibi işlemleri yapabilirsin."),
@@ -8907,11 +8908,11 @@
                     return e.amountOfTime + " önce";
                 }),
                 n("ae408b76", "Yeniden gönderi yayınladın"),
-                n("j355f008", "Sabitlenmiş gönderi"),
-                n("habf9678", "Yazar tarafından sabitlendi");
-            n("db0798ed", function (e) {
-                return e.topicName + " Konu";
-            }),
+                n("j355f008", "Sabitlenmiş gönderi");
+            n("habf9678", "Yazar tarafından sabitlendi"),
+                n("db0798ed", function (e) {
+                    return e.topicName + " Konu";
+                }),
                 n("dc716ec9", function (e) {
                     return "Önerilen Konu: " + e.topicName;
                 }),
@@ -13233,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.d34fefea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.08e9034a.js.map

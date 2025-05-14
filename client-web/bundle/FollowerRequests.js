@@ -49,13 +49,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: n, hideBackButton: a, isFullWidth: s, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: D, title: y, titleDomId: g, titleIconCell: k, titleIconCellSize: w, withBackground: E, withWideContainer: v } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: n, hideBackButton: a, isFullWidth: s, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: D, title: y, titleDomId: g, titleIconCell: k, titleIconCellSize: w, withBackground: v, withWideContainer: E } = this.props,
                         { isModal: _ } = this.context,
                         M = a ? c : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         P = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!E, _, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: d, leftControl: M, middleControl: h, position: u(p, _, n), rightControl: m, style: b, subtitle: D, title: y, titleDomId: g, titleIconCell: k, titleIconCellSize: w, withBackground: P, withWideContainer: v }), f || null);
+                        })(!!v, _, !!f);
+                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: d, leftControl: M, middleControl: h, position: u(p, _, n), rightControl: m, style: b, subtitle: D, title: y, titleDomId: g, titleIconCell: k, titleIconCellSize: w, withBackground: P, withWideContainer: E }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -101,7 +101,7 @@
                 m = n.forwardRef(h);
         },
         333241: (e, t, o) => {
-            o.d(t, { Z: () => E });
+            o.d(t, { Z: () => v });
             o(136728);
             var r = o(202784),
                 n = o(638236),
@@ -122,9 +122,9 @@
                 g = "share",
                 k = l().j7bb1a43,
                 w = l().hef5960c,
-                E = (0, m.M)((e) => {
+                v = (0, m.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: o, onClose: s, onMute: l, onRemoveFollower: m, onReportUser: E, onShare: v, onUnblock: _, onUnmute: M, user: P } = e,
+                        { onBlock: o, onClose: s, onMute: l, onRemoveFollower: m, onReportUser: v, onShare: E, onUnblock: _, onUnmute: M, user: P } = e,
                         C = [],
                         I = (t, o) => {
                             const { confirm: r, onClose: n } = e;
@@ -142,7 +142,7 @@
                         C.push({
                             Icon: n.Z,
                             onClick: () => {
-                                s(), v();
+                                s(), E();
                             },
                             testID: g,
                             text: w,
@@ -174,7 +174,7 @@
                         C.push({
                             Icon: i.default,
                             onClick: () => {
-                                s(), E();
+                                s(), v();
                             },
                             testID: y,
                             text: k({ screenName: P.screen_name }),
@@ -252,7 +252,7 @@
             const s = (e) => (t) => n.createElement(a.$6, null, (o) => n.createElement(e, (0, r.Z)({}, t, { isInSidebar: o })));
         },
         293988: (e, t, o) => {
-            o.d(t, { Z: () => v });
+            o.d(t, { Z: () => E });
             var r = o(202784),
                 n = o(154003),
                 a = o(674132),
@@ -275,7 +275,7 @@
                 g = s().j87c21f4,
                 k = s().iebc30ca,
                 w = s().dc740eb2;
-            class E extends r.PureComponent {
+            class v extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -309,7 +309,7 @@
                     t.scribeAction(e);
                 }
             }
-            const v = b(E);
+            const E = b(v);
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => c });
@@ -373,7 +373,6 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -400,7 +399,7 @@
             });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => _, KV: () => D, LI: () => Z, SC: () => v, Vt: () => k, ed: () => A, op: () => M });
+            o.d(t, { $f: () => _, KV: () => D, LI: () => Z, SC: () => E, Vt: () => k, ed: () => A, op: () => M });
             var r = o(202784),
                 n = o(190286),
                 a = o(674132),
@@ -420,24 +419,24 @@
                 g = s().c9623eeb,
                 k = s().e133be4e,
                 w = s().he43bca4,
-                E = s().f5f01af6,
-                v = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                v = s().f5f01af6,
+                E = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 _ = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? b({ screenName: e }) : f({ screenName: e }) }),
                 M = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: n, unblockAction: a, unblockSubtext: s, user: l }) => {
                     let i,
                         u = d.Z;
                     const h = Z(l, o);
                     switch (r) {
-                        case v.PROFILE:
-                        case v.LIST_DETAIL:
-                        case v.FOLLOWERS_LIST:
+                        case E.PROFILE:
+                        case E.LIST_DETAIL:
+                        case E.FOLLOWERS_LIST:
                             u = () => {
                                 l.blocking ? a(h) : e(h);
                             };
                             break;
-                        case v.TWEET:
-                        case v.TWEET_CARET:
-                        case v.RICH_FEEDBACK:
+                        case E.TWEET:
+                        case E.TWEET_CARET:
+                        case E.RICH_FEEDBACK:
                             (i = c.uq.block),
                                 (u = () => {
                                     l.blocking ? a(h) : e(h);
@@ -448,7 +447,7 @@
                 P = (e) => (e ? i.default : l.default),
                 C = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 I = (e) => (e.blocking ? g({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                Z = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: k, text: t ? E : w }))(e.screen_name, t) : _(e.screen_name, t)),
+                Z = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: k, text: t ? v : w }))(e.screen_name, t) : _(e.screen_name, t)),
                 A = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: a, headline: s, label: l, text: i } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: l, confirmButtonType: a, headline: s, onCancel: o, onConfirm: t, text: i });
@@ -755,7 +754,7 @@
                 };
         },
         725014: (e, t, o) => {
-            o.r(t), o.d(t, { FollowerRequestsScreen: () => z, default: () => q });
+            o.r(t), o.d(t, { FollowerRequestsScreen: () => H, default: () => q });
             var r = o(202784),
                 n = o(325686),
                 a = o(457311),
@@ -775,8 +774,8 @@
                 g = { [D.ZP.NoFollowRequest]: { toast: { text: y } }, showToast: !0 };
             var k = o(71620),
                 w = o(668214),
-                E = o(466036);
-            const v = (0, w.Z)().propsFromActions(() => ({ acceptPendingFollower: E.WC, createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUEST_ACTIONS_CONTAINER"), declinePendingFollower: E.X }));
+                v = o(466036);
+            const E = (0, w.Z)().propsFromActions(() => ({ acceptPendingFollower: v.WC, createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUEST_ACTIONS_CONTAINER"), declinePendingFollower: v.X }));
             class _ extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -793,7 +792,7 @@
                     return r.createElement(b, { onAccept: this._handleAccept, onDecline: this._handleDecline });
                 }
             }
-            const M = v(_);
+            const M = E(_);
             var P = o(240089),
                 C = o(293115),
                 I = o(409438),
@@ -801,11 +800,11 @@
             const A = (e) => (e && "user_cell" === e.type ? e.data : (0, Z.Sz)(e));
             var T = o(24949),
                 S = o(312771);
-            const L = (e) => E.sC(e).hydratedIds,
+            const L = (e) => v.sC(e).hydratedIds,
                 x = (0, w.Z)()
-                    .propsFromState(() => ({ followerRequestIds: L, fetchStatus: (0, T.P1)(E.sC, E.HP, E.dj, ({ hydratedIds: e, ids: t }, o, r) => (o === S.ZP.LOADED ? (t.length && e.length !== t.length ? r || S.ZP.LOADING : S.ZP.LOADED) : o)) }))
+                    .propsFromState(() => ({ followerRequestIds: L, fetchStatus: (0, T.P1)(v.sC, v.HP, v.dj, ({ hydratedIds: e, ids: t }, o, r) => (o === S.ZP.LOADED ? (t.length && e.length !== t.length ? r || S.ZP.LOADING : S.ZP.LOADED) : o)) }))
                     .adjustStateProps(({ followerRequestIds: e = [], fetchStatus: t }) => ({ fetchStatus: t, timeline: e.map((e) => ({ type: "user_cell", data: e })) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUESTS"), fetchPendingFollowersIfNeeded: E.GE, fetchPendingFollowersUsersIfNeeded: E.IN, fetchNextPendingFollowersUsers: E.lm })),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("FOLLOWER_REQUESTS"), fetchPendingFollowersIfNeeded: v.GE, fetchPendingFollowersUsersIfNeeded: v.IN, fetchNextPendingFollowersUsers: v.lm })),
                 B = l().g6b54ff6,
                 F = l().ec5fd35a,
                 R = l().i83d4f14,
@@ -816,7 +815,7 @@
                 },
                 U = (e) => (N(e) ? null : (0, P.ET)(e)),
                 W = (e) => (N(e) ? r.createElement(M, { userId: e.userId }) : null);
-            class z extends r.Component {
+            class H extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
@@ -841,7 +840,7 @@
                     return r.createElement(C.nO, { namespace: O }, r.createElement(d.Z, { history: t, title: R }, r.createElement(i.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render })));
                 }
             }
-            const q = x(z);
+            const q = x(H);
         },
         879113: (e, t, o) => {
             o.d(t, { Z: () => p });
@@ -877,7 +876,7 @@
             }
             p.defaultProps = { renderFailure: s.Z, retryable: !0 };
         },
-        224823: (e, t, o) => {
+        226597: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var r = o(202784),
                 n = o(890601),
@@ -885,12 +884,12 @@
                 s = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm12.586 3l-2.043-2.04 1.414-1.42L20 7.59l2.043-2.05 1.414 1.42L21.414 9l2.043 2.04-1.414 1.42L20 10.41l-2.043 2.05-1.414-1.42L18.586 9zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
-        74514: (e, t, o) => {
+        155353: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var r = o(202784),
                 n = o(890601),
@@ -898,11 +897,11 @@
                 s = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.FollowerRequests.111d56aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.FollowerRequests.f3cbdf5a.js.map

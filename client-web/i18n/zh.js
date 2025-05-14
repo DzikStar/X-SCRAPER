@@ -2978,6 +2978,7 @@
                 f("j0693948", "获取 Grok 应用"),
                 f("af781666", "人们怎么看？"),
                 f("ad35153e", "测试版"),
+                f("a1f414ee", "Share thoughts"),
                 f("fbf83158", "警告：付款失败"),
                 f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。"),
                 f("bce3726a", "更新账单"),
@@ -3885,9 +3886,9 @@
                 }),
                 f("cbef820f", function (e) {
                     return e.screenName + " 重新发布了直播流！";
-                }),
-                f("e3275464", "发送");
-            f("cededf2a", "主持人"),
+                });
+            f("e3275464", "发送"),
+                f("cededf2a", "主持人"),
                 f("i2caef48", "共同主持人"),
                 f("j245c654", "发言人"),
                 f("eda23a02", "听众"),
@@ -4921,9 +4922,9 @@
                 f("e41fffbc", "你视频的总观看时间。"),
                 f("if2909ba", "观看时间"),
                 f("i0e5bf4c", "您的视频"),
-                f("ed99baea", "抢先体验测试版"),
-                f("gf898b70", "高级搜索");
-            f("d2a43a7a", '同时包含 "ai" 和 "startup"'),
+                f("ed99baea", "抢先体验测试版");
+            f("gf898b70", "高级搜索"),
+                f("d2a43a7a", '同时包含 "ai" 和 "startup"'),
                 f("a8584698", "ai startup"),
                 f("jb6f9292", "完整包含“ai startup”"),
                 f("j8ee77c4", '"ai startup"'),
@@ -5887,9 +5888,9 @@
                 f("i0ed3f4e", "事件图片"),
                 f("cbae35fa", "举报播客"),
                 f("fd12ab58", "贴文集"),
-                f("a226497c", "创建新社群"),
-                f("d7346632", "你尚未加入任何社群");
-            f("b732a4cc", "当你这样做时，就会在这里看到他们的帖子。"),
+                f("a226497c", "创建新社群");
+            f("d7346632", "你尚未加入任何社群"),
+                f("b732a4cc", "当你这样做时，就会在这里看到他们的帖子。"),
                 f("hff48914", "目前未找到任何帖子。"),
                 f("hb52cc4a", "请稍后再试。"),
                 f("e50e1bb0", "欢迎来到社群"),
@@ -6885,9 +6886,9 @@
                 f("f5732cd4", "此外，已扩大 DeepSearch 和思考功能的使用范围"),
                 f("e0198956", "赚取认证账号与你在 X 上发布的内容互动而产生的收入分成。"),
                 f("iadf78e2", "下载视频"),
-                f("ee54c3de", "将视频直接保存到设备"),
-                f("ae03594c", "小范围的回复推广");
-            f("e6bb08c0", "提高回复的关注度"),
+                f("ee54c3de", "将视频直接保存到设备");
+            f("ae03594c", "小范围的回复推广"),
+                f("e6bb08c0", "提高回复的关注度"),
                 f("bf2a6acc", "较大范围的回复推广"),
                 f("c2059276", "让你的回复得到推广。"),
                 f("b023ec20", "最大化回复推广"),
@@ -7863,8 +7864,7 @@
                 f("ce102a20", "重定向至 Stripe"),
                 f("ddfd6718", "付款失败"),
                 f("i90ea7d2", "请立即更新你的账单，以保留你的特权。"),
-                f("a62359e6", "认证组织设置"),
-                f("ge221b7c", "升级认证组织订阅，以便访问附属账号并获取更多广告积分。");
+                f("a62359e6", "认证组织设置");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7903,7 +7903,8 @@
                     r(e, c)
                 );
             }
-            f("i4dccc18", "账单"),
+            f("ge221b7c", "升级认证组织订阅，以便访问附属账号并获取更多广告积分。"),
+                f("i4dccc18", "账单"),
                 f("ec3cd6e4", "管理付款方式、更新账单信息和查看发票。"),
                 f("dac61c3c", "账号设置"),
                 f("b6b5fd66", "管理你的 X 账号，包括更改用户名或密码。"),
@@ -8907,11 +8908,11 @@
                     return e.amountOfTime + " 前";
                 }),
                 f("ae408b76", "你已转帖"),
-                f("j355f008", "已置顶帖子"),
-                f("habf9678", "已被作者置顶");
-            f("db0798ed", function (e) {
-                return e.topicName + " 话题";
-            }),
+                f("j355f008", "已置顶帖子");
+            f("habf9678", "已被作者置顶"),
+                f("db0798ed", function (e) {
+                    return e.topicName + " 话题";
+                }),
                 f("dc716ec9", function (e) {
                     return "推荐主题：" + e.topicName;
                 }),
@@ -13239,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.be24d62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.2d81981a.js.map

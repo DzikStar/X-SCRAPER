@@ -2978,6 +2978,7 @@
                 t("j0693948", "Last ned Grok-appen"),
                 t("af781666", "Hva tenker brukerne?"),
                 t("ad35153e", "beta"),
+                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Advarsel: Betalingen mislyktes"),
                 t("jadeb4da", "Oppdater betalingsmåten snarest før du mister abonnementsfordelene."),
                 t("bce3726a", "Oppdater faktureringsopplysningene"),
@@ -3885,9 +3886,9 @@
                 }),
                 t("cbef820f", function (e) {
                     return e.screenName + " republiserte strømmen!";
-                }),
-                t("e3275464", "Send");
-            t("cededf2a", "Vert"),
+                });
+            t("e3275464", "Send"),
+                t("cededf2a", "Vert"),
                 t("i2caef48", "Medverter"),
                 t("j245c654", "Talere"),
                 t("eda23a02", "Lyttere"),
@@ -4921,9 +4922,9 @@
                 t("e41fffbc", "Den totale visningstiden til videoene dine."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig betatilgang"),
-                t("gf898b70", "Avansert søk");
-            t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
+                t("ed99baea", "Tidlig betatilgang");
+            t("gf898b70", "Avansert søk"),
+                t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
                 t("a8584698", "ki oppstartsselskap"),
                 t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
                 t("j8ee77c4", '"ki-oppstartsselskap"'),
@@ -5887,9 +5888,9 @@
                 t("i0ed3f4e", "Bilde for hendelsen"),
                 t("cbae35fa", "Rapporter sendingen"),
                 t("fd12ab58", "Samlingsinnlegg"),
-                t("a226497c", "Opprett et nytt Fellesskap"),
-                t("d7346632", "Du er ikke med i noen fellesskaper ennå");
-            t("b732a4cc", "Når du gjør det, ser du innleggene hens her."),
+                t("a226497c", "Opprett et nytt Fellesskap");
+            t("d7346632", "Du er ikke med i noen fellesskaper ennå"),
+                t("b732a4cc", "Når du gjør det, ser du innleggene hens her."),
                 t("hff48914", "Kunne ikke finne noen innlegg nå."),
                 t("hb52cc4a", "Prøv på nytt senere."),
                 t("e50e1bb0", "Velkommen til Fellesskaper"),
@@ -6885,9 +6886,9 @@
                 t("f5732cd4", "Pluss utvidet tilgang til dypsøk- og tenkemodus"),
                 t("e0198956", "Få en andel av inntektene som genereres av verifiserte kontoers engasjement i innhold du publiserer på X."),
                 t("iadf78e2", "Last ned videoer"),
-                t("ee54c3de", "Lagre videoer rett på enheten din"),
-                t("ae03594c", "Liten svarfremming");
-            t("e6bb08c0", "Øk synligheten til svarene dine"),
+                t("ee54c3de", "Lagre videoer rett på enheten din");
+            t("ae03594c", "Liten svarfremming"),
+                t("e6bb08c0", "Øk synligheten til svarene dine"),
                 t("bf2a6acc", "Høy svarfremming"),
                 t("c2059276", "Frem svarene dine."),
                 t("b023ec20", "Maksimal svarfremming"),
@@ -7863,8 +7864,7 @@
                 t("ce102a20", "Omdirigerer til Stripe"),
                 t("ddfd6718", "Betalingen mislyktes"),
                 t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
-                t("a62359e6", "Innstillinger for verifisert organisasjon"),
-                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt.");
+                t("a62359e6", "Innstillinger for verifisert organisasjon");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7903,7 +7903,8 @@
                     d(e, n)
                 );
             }
-            t("i4dccc18", "Fakturering"),
+            t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
+                t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
                 t("dac61c3c", "Kontoinnstillinger"),
                 t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
@@ -8907,11 +8908,11 @@
                     return e.amountOfTime + " siden";
                 }),
                 t("ae408b76", "Du republiserte"),
-                t("j355f008", "Festet innlegg"),
-                t("habf9678", "Festet av forfatteren");
-            t("db0798ed", function (e) {
-                return "Emne: " + e.topicName;
-            }),
+                t("j355f008", "Festet innlegg");
+            t("habf9678", "Festet av forfatteren"),
+                t("db0798ed", function (e) {
+                    return "Emne: " + e.topicName;
+                }),
                 t("dc716ec9", function (e) {
                     return "Anbefalt emne: " + e.topicName;
                 }),
@@ -13223,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.6453ebfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.04c34a9a.js.map

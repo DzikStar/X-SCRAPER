@@ -171,7 +171,7 @@
             var n = t(552322),
                 a = t(425522),
                 i = t(289752),
-                r = t(812115),
+                r = t(322506),
                 l = t(332161),
                 o = t(89195),
                 c = t(517922),
@@ -291,4 +291,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-42fadb5c.d2ba7e3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-42fadb5c.18bf75ea.js.map

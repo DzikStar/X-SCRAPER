@@ -95,7 +95,7 @@
                 c = r(811574),
                 s = r(548797),
                 u = r(125363),
-                d = r(116868),
+                d = r(488645),
                 m = r(248186);
             const p = ({ content: e, isTierSwitching: t, referringPage: r, selectedProduct: p, setSelectedProduct: g }) => {
                 const f = (0, n.useHistory)(),
@@ -840,4 +840,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-cda947e7.a8d85dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-cda947e7.3e4a515a.js.map

@@ -330,7 +330,7 @@
             const Zt = n.memo(({ location: e }) => (!e || (0, Et.Z)(e) ? null : n.createElement(dt.Z, { Icon: vt.default, testID: tt }, n.createElement(De.ZP, null, e)))),
                 Pt = n.memo((e) => {
                     const t = g()(wt.Z, e.user);
-                    return n.createElement(Zt, { location: t.legacy?.location });
+                    return n.createElement(Zt, { location: t.location?.location });
                 });
             function Ct(e) {
                 return e.location ? n.createElement(Zt, { location: e.location }) : e.user ? n.createElement(Pt, { user: e.user }) : null;
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.ae46d18a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.7862ed9a.js.map

@@ -521,9 +521,9 @@
                 },
                 d = ({ accountId: e, addAccountLink: t, addBankCardLink: n, methodConfigs: r, onSelectAccountId: c, paymentMethods: o, selectedAccount: l, transferDirection: i }) => {
                     const d = a.useCallback((s) => a.createElement(u, { accountId: e, addAccountLink: t, addBankCardLink: n, handleDismiss: s, methodConfigs: r, onSelectAccountId: c, paymentMethods: o, transferDirection: i }), [e, t, n, r, c, o, i]);
-                    return a.createElement(s.Z, { renderContent: d, withArrow: !0 }, a.createElement(m.Z, { account: l, withChevron: !0, withInteractiveStyling: !0 }));
+                    return a.createElement(s.Z, { contentStyle: p.contentStyle, renderContent: d, withArrow: !0 }, a.createElement(m.Z, { account: l, withChevron: !0, withInteractiveStyling: !0 }));
                 },
-                p = o.default.create((e) => ({ popoverContent: { margin: e.spaces.space16, flexDirection: "column", gap: e.spaces.space16, maxHeight: "280px" } })),
+                p = o.default.create((e) => ({ popoverContent: { margin: e.spaces.space16, flexDirection: "column", gap: e.spaces.space16 }, contentStyle: { maxHeight: 360, maxWidth: 400 } })),
                 y = a.memo(d);
         },
         413713: (e, t, n) => {
@@ -1076,4 +1076,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.41ca8b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.927b44ba.js.map

@@ -547,7 +547,7 @@
                     b = u[a] ?? s,
                     v = (0, o.VD)(d),
                     w = (0, r.m)(d, b);
-                return p ? (0, i.jsx)("textarea", { autoFocus: c, name: a, onBlur: g, className: `placeholder:text-gray-500 ${t}`, onChange: f, onFocus: h, placeholder: l, value: b }) : (0, i.jsx)("input", { type: v, autoFocus: c, inputMode: k, name: a, onBlur: g, className: `placeholder:text-gray-500 ${t}`, onChange: f, onFocus: h, placeholder: l, value: w });
+                return p ? (0, i.jsx)("textarea", { autoFocus: c, name: a, onBlur: g, className: `placeholder:text-gray-500 p-2 ${t}`, onChange: f, onFocus: h, placeholder: l, value: b }) : (0, i.jsx)("input", { type: v, autoFocus: c, inputMode: k, name: a, onBlur: g, className: `placeholder:text-gray-500 p-2 ${t}`, onChange: f, onFocus: h, placeholder: l, value: w });
             }
         },
         161276: (e, t, a) => {
@@ -670,7 +670,7 @@
                     k = (0, o.VD)(d),
                     b = (0, o.Jt)(d),
                     v = (0, r.m)(d, g);
-                return o.zK.includes(d) ? (0, i.jsx)("textarea", { autoFocus: c, name: a, onBlur: h, className: `placeholder:text-gray-500 ${t}`, onChange: p, onFocus: f, placeholder: l, value: v }) : (0, i.jsx)("input", { type: k, autoFocus: c, inputMode: b, name: a, onBlur: h, className: `placeholder:text-gray-500 bg-transparent ${t}`, onChange: p, onFocus: f, placeholder: l, value: v });
+                return o.zK.includes(d) ? (0, i.jsx)("textarea", { autoFocus: c, name: a, onBlur: h, className: `placeholder:text-gray-500 field-sizing-content w-full p-2 ${t}`, onChange: p, onFocus: f, placeholder: l, value: v, rows: 1 }) : (0, i.jsx)("input", { type: k, autoFocus: c, inputMode: b, name: a, onBlur: h, className: `placeholder:text-gray-500 bg-transparent p-2 ${t}`, onChange: p, onFocus: f, placeholder: l, value: v });
             }
         },
         723395: (e, t, a) => {
@@ -1851,4 +1851,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46.c977f6ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46.bb77997a.js.map

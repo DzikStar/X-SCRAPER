@@ -2,7 +2,7 @@
     ["loader.HWCard"],
     {
         525279: (e) => {
-            e.exports = { queryId: "LNDsS3jDLnCr9rhj5ArnGg", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "9gGzxu3Crt52eK1s0R9-nw", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         527154: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -11,7 +11,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         342459: (e) => {
-            e.exports = { queryId: "3rmMnGpXCYmivkSUIz0IaQ", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "5CDvD18F1jneOgDV-rnAag", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         745735: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -30,7 +30,7 @@
         },
         403911: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => F });
+            n.d(t, { Z: () => Z });
             var r = n(506899),
                 o = n(163889),
                 a = n(414742),
@@ -49,29 +49,29 @@
                 g = n(485018),
                 w = n.n(g),
                 k = n(615626),
-                v = n.n(k),
-                y = n(182247),
-                E = n.n(y),
+                y = n.n(k),
+                v = n(182247),
+                E = n.n(v),
                 D = n(974829),
-                S = n.n(D),
-                T = n(934309);
-            const z = { result: [], entities: {}, slice_info: {} },
-                $ = (e, t) => {
+                T = n.n(D),
+                S = n(934309);
+            const $ = { result: [], entities: {}, slice_info: {} },
+                x = (e, t) => {
                     const n = t?.bookmark_all_delete,
                         r = "Done" === n;
                     return r || (0, o.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, a.jB)(e) || !r;
                 },
-                Z = (0, a.kj)((e) => {
+                F = (0, a.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         n = "User" === t?.__typename ? t : void 0,
                         r = n?.bookmark_collections_slice?.items;
                     return !r;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                x = (0, a.kj)((e) => {
+                z = (0, a.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                F = ({ apiClient: e, featureSwitches: t }) => ({
+                Z = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             p(),
@@ -84,10 +84,10 @@
                             { ...t },
                             (0, a.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(w(), {}, $).then((e) => e),
+                    deleteAll: () => e.graphQL(w(), {}, x).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: n } = t;
-                        return e.graphQL(v(), { bookmark_collection_id: n });
+                        return e.graphQL(y(), { bookmark_collection_id: n });
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: n, name: r } = t;
@@ -95,13 +95,13 @@
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: n, tweetId: r } = t;
-                        return e.graphQL(S(), { bookmark_collection_id: n, tweet_id: r });
+                        return e.graphQL(T(), { bookmark_collection_id: n, tweet_id: r });
                     },
-                    fetchBookmarksTimeline: ({ count: n, cursor: r }) => e.graphQL(_(), { count: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || T.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: r }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, x).then((e) => e?.bookmark_collection_timeline?.timeline || T.cY),
+                    fetchBookmarksTimeline: ({ count: n, cursor: r }) => e.graphQL(_(), { count: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || S.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: r }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: r, includePromotedContent: !0, ...(0, i.d)(t) }, z).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(d(), t, Z).then((e) => {
+                            ? e.graphQL(d(), t, F).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       n = "User" === t?.__typename ? t : void 0,
                                       o = n?.bookmark_collections_slice;
@@ -109,9 +109,9 @@
                                       const { entities: e, result: t } = (0, r.Fv)(o.items, [l]);
                                       return { entities: e, result: t, slice_info: o.slice_info };
                                   }
-                                  return z;
+                                  return $;
                               })
-                            : Promise.resolve(z),
+                            : Promise.resolve($),
                 });
         },
         290402: (e, t, n) => {
@@ -361,14 +361,14 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        r.createElement(c.ZP, null, ({ containerWidth: e }) => r.createElement(a.Z, { style: v.fontFamily }, r.createElement(o.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: b, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        r.createElement(c.ZP, null, ({ containerWidth: e }) => r.createElement(a.Z, { style: y.fontFamily }, r.createElement(o.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: b, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                v = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                y = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
             "use strict";
-            n.d(t, { $u: () => D, Ak: () => Z, KJ: () => k, LI: () => S, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => T, b$: () => p, db: () => F, et: () => y, fR: () => f, iH: () => z, lD: () => g, su: () => v, u4: () => x, wX: () => $ });
+            n.d(t, { $u: () => D, Ak: () => F, KJ: () => k, LI: () => T, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => S, b$: () => p, db: () => Z, et: () => v, fR: () => f, iH: () => $, lD: () => g, su: () => y, u4: () => z, wX: () => x });
             var r = n(202784),
                 o = n(674132),
                 a = n.n(o),
@@ -394,7 +394,7 @@
                 ],
                 w = "LINK",
                 k = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: w, onPress: e }],
-                v = (e, t) => (n) => {
+                y = (e, t) => (n) => {
                     const r = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
                         case h.bulleted:
@@ -413,16 +413,16 @@
                             return t?.(n) || "";
                     }
                 },
-                y = a().d5a48014,
+                v = a().d5a48014,
                 E = a().b92b6156,
                 D = a().ec5ed598,
-                S = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(_.ZP, { extendedWidth: t, size: n, weight: o }, e),
-                T = { blockType: h.paragraph, label: D, component: S({ size: "body", children: D }) },
-                z = [{ blockType: h.header1, label: y, component: S({ size: "title1", extendedWidth: !0, children: y }) }, { blockType: h.header2, label: E, component: S({ size: "title3", weight: "heavy", children: E }) }, T],
-                $ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
-                Z = ["delete", "delete-word", "delete-to-start-of-line"],
-                x = "increase-text-size",
-                F = "decrease-text-size";
+                T = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(_.ZP, { extendedWidth: t, size: n, weight: o }, e),
+                S = { blockType: h.paragraph, label: D, component: T({ size: "body", children: D }) },
+                $ = [{ blockType: h.header1, label: v, component: T({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: h.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
+                x = ["backspace", "backspace-word", "backspace-to-start-of-line"],
+                F = ["delete", "delete-word", "delete-to-start-of-line"],
+                z = "increase-text-size",
+                Z = "decrease-text-size";
         },
         989272: (e, t, n) => {
             "use strict";
@@ -477,48 +477,6 @@
             }
             const d = [];
         },
-        215380: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M18.5 2h-13A2.5 2.5 0 003 4.5v15A2.5 2.5 0 005.5 22h13a2.5 2.5 0 002.5-2.5v-15A2.5 2.5 0 0018.5 2zm.5 17.5c0 .28-.22.5-.5.5h-13c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h13c.28 0 .5.22.5.5v15zM9 5h6v2H9V5zm3 4.555a2.092 2.092 0 11-.001 4.185A2.092 2.092 0 0112 9.555zM16.141 18H7.859c.237-.763.586-1.431 1.074-1.949 1.036-1.105 2.31-1.277 3.067-1.277s2.031.172 3.067 1.277c.489.518.837 1.186 1.074 1.949z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        394123: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        833458: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25s3.69 8.25 8.25 8.25 8.25-3.69 8.25-8.25S16.56 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12zM16.4 9.28l-5.21 7.15-4.1-3.27 1.25-1.57 2.47 1.98 3.97-5.47 1.62 1.18z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
         856661: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
@@ -533,7 +491,7 @@
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        902673: (e, t, n) => {
+        784732: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -542,7 +500,7 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8 9h2v2H8z" }), r.createElement("path", { d: "M19.498 3h-15c-1.381 0-2.5 1.12-2.5 2.5v13c0 1.38 1.119 2.5 2.5 2.5h15c1.381 0 2.5-1.12 2.5-2.5v-13c0-1.38-1.119-2.5-2.5-2.5zM6 7h6v6H6V7zm11.998 10h-12v-2h12v2zM18 13h-4v-2h4v2zm0-4h-4V7h4v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -561,7 +519,7 @@
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        310700: (e, t, n) => {
+        142496: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
@@ -570,11 +528,11 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21.04 1.54L17.5 5.09c-.04-.02-.08-.03-.13-.04L14.3 3H9.7l-3 2H5C3.62 5 2.5 6.12 2.5 7.5v11c0 .46.12.88.34 1.25l-1.3 1.29 1.42 1.42 19.5-19.5-1.42-1.42zM13.7 5l2.33 1.56-2 1.99C13.44 8.2 12.74 8 12 8c-2.21 0-4 1.79-4 4 0 .74.2 1.44.55 2.03L4.5 18.09V7.5c0-.28.22-.5.5-.5h2.3l3-2h3.4zM12 10c.18 0 .35.02.52.07l-2.45 2.45c-.05-.17-.07-.34-.07-.52 0-1.1.9-2 2-2zm7 11H7.24l2-2H19c.28 0 .5-.22.5-.5V9h2v9.5c0 1.38-1.12 2.5-2.5 2.5z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HWCard.4095922a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.HWCard.b5c9ff4a.js.map

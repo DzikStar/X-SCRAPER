@@ -2979,6 +2979,7 @@
                 a("j0693948", "[[294379]] Get the Grok app"),
                 a("af781666", "[[294695]] What do people think?"),
                 a("ad35153e", "[[294696]] beta"),
+                a("a1f414ee", "Share thoughts"),
                 a("fbf83158", "[[293517]] Warning: Payment failed"),
                 a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "[[293518]] Update Billing"),
@@ -3886,9 +3887,9 @@
                 }),
                 a("cbef820f", function (e) {
                     return "[[293244]] " + e.screenName + " reposted the stream!";
-                }),
-                a("e3275464", "[[150231]] Send");
-            a("cededf2a", "[[231304]] Host"),
+                });
+            a("e3275464", "[[150231]] Send"),
+                a("cededf2a", "[[231304]] Host"),
                 a("i2caef48", "[[238359]] Co-hosts"),
                 a("j245c654", "[[237272]] Speakers"),
                 a("eda23a02", "[[281004]] Listeners"),
@@ -4922,9 +4923,9 @@
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
                 a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
-                a("ed99baea", "[[289716]] Early Beta Access"),
-                a("gf898b70", "[[289702]] Advanced Search");
-            a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
+                a("ed99baea", "[[289716]] Early Beta Access");
+            a("gf898b70", "[[289702]] Advanced Search"),
+                a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
                 a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '[[289700]] "ai startup"'),
@@ -5888,9 +5889,9 @@
                 a("i0ed3f4e", "[[187199]] Event image"),
                 a("cbae35fa", "[[271596]] Report Broadcast"),
                 a("fd12ab58", "[[282500]] Collection posts"),
-                a("a226497c", "[[243330]] Create a new Community"),
-                a("d7346632", "[[238950]] You haven’t joined any Communities yet");
-            a("b732a4cc", "[[280509]] When you do, you’ll see their posts here."),
+                a("a226497c", "[[243330]] Create a new Community");
+            a("d7346632", "[[238950]] You haven’t joined any Communities yet"),
+                a("b732a4cc", "[[280509]] When you do, you’ll see their posts here."),
                 a("hff48914", "[[287368]] No posts could be found at this time."),
                 a("hb52cc4a", "[[233832]] Please try again later."),
                 a("e50e1bb0", "[[282302]] Welcome to Communities"),
@@ -6886,9 +6887,9 @@
                 a("f5732cd4", "[[293328]] Plus, expanded access to DeepSearch & Think"),
                 a("e0198956", "[[291023]] Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 a("iadf78e2", "[[289855]] Download videos"),
-                a("ee54c3de", "[[293151]] Save videos straight to your device"),
-                a("ae03594c", "[[289860]] Small reply boost");
-            a("e6bb08c0", "[[293230]] Increase the visibility of your replies"),
+                a("ee54c3de", "[[293151]] Save videos straight to your device");
+            a("ae03594c", "[[289860]] Small reply boost"),
+                a("e6bb08c0", "[[293230]] Increase the visibility of your replies"),
                 a("bf2a6acc", "[[291024]] Large Reply Boost"),
                 a("c2059276", "[[291025]] Have your replies boosted."),
                 a("b023ec20", "[[291026]] Max Reply Boost"),
@@ -7864,8 +7865,7 @@
                 a("ce102a20", "[[293426]] Redirecting to Stripe"),
                 a("ddfd6718", "[[293516]] Payment Failed"),
                 a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits."),
-                a("a62359e6", "[[289188]] Verified Organization Settings"),
-                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                a("a62359e6", "[[289188]] Verified Organization Settings");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7904,8 @@
                     r(e, t)
                 );
             }
-            a("i4dccc18", "[[274804]] Billing"),
+            a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                a("i4dccc18", "[[274804]] Billing"),
                 a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
                 a("dac61c3c", "[[287561]] Account settings"),
                 a("b6b5fd66", "[[287562]] Manage your X account including changing your username or password."),
@@ -8908,11 +8909,11 @@
                     return "[[190985]] " + e.amountOfTime + " ago";
                 }),
                 a("ae408b76", "[[281811]] You reposted"),
-                a("j355f008", "[[281812]] Pinned post"),
-                a("habf9678", "[[263563]] Pinned by Author");
-            a("db0798ed", function (e) {
-                return "[[225547]] " + e.topicName + " Topic";
-            }),
+                a("j355f008", "[[281812]] Pinned post");
+            a("habf9678", "[[263563]] Pinned by Author"),
+                a("db0798ed", function (e) {
+                    return "[[225547]] " + e.topicName + " Topic";
+                }),
                 a("dc716ec9", function (e) {
                     return "[[225548]] Recommended Topic: " + e.topicName;
                 }),
@@ -13225,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.7c3645ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.c947ac4a.js.map

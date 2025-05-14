@@ -2990,6 +2990,7 @@
                 t("j0693948", "Obține aplicația Grok"),
                 t("af781666", "Ce spun oamenii?"),
                 t("ad35153e", "beta"),
+                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Avertisment: plata a eșuat"),
                 t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
                 t("bce3726a", "Actualizare informații de facturare"),
@@ -3897,9 +3898,9 @@
                 }),
                 t("cbef820f", function (e) {
                     return e.screenName + " a repostat fluxul!";
-                }),
-                t("e3275464", "Trimite");
-            t("cededf2a", "Gazdă"),
+                });
+            t("e3275464", "Trimite"),
+                t("cededf2a", "Gazdă"),
                 t("i2caef48", "Co-gazde"),
                 t("j245c654", "Vorbitori"),
                 t("eda23a02", "Ascultători"),
@@ -4933,9 +4934,9 @@
                 t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
                 t("if2909ba", "Durată vizionare"),
                 t("i0e5bf4c", "Videoclipurile tale"),
-                t("ed99baea", "Acces timpuriu la versiunea beta"),
-                t("gf898b70", "Căutare avansată");
-            t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
+                t("ed99baea", "Acces timpuriu la versiunea beta");
+            t("gf898b70", "Căutare avansată"),
+                t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
                 t("jb6f9292", "conține exact structura „start-up ai”"),
                 t("j8ee77c4", "„start-up ai”"),
@@ -5899,9 +5900,9 @@
                 t("i0ed3f4e", "Imagine eveniment"),
                 t("cbae35fa", "Raportează transmisiunea"),
                 t("fd12ab58", "Postări din colecție"),
-                t("a226497c", "Creează o Comunitate nouă"),
-                t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate");
-            t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
+                t("a226497c", "Creează o Comunitate nouă");
+            t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate"),
+                t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
                 t("hff48914", "În acest moment, nu s-au putut găsi postări."),
                 t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
                 t("e50e1bb0", "Bun venit la Comunități"),
@@ -6897,9 +6898,9 @@
                 t("f5732cd4", "În plus, acces extins la DeepSearch și Gândire"),
                 t("e0198956", "Primește o cotă-parte din veniturile generate în urma interacțiunii conturilor verificate cu conținutul pe care îl postezi pe X."),
                 t("iadf78e2", "Descarcă videoclipuri"),
-                t("ee54c3de", "Salvează videoclipurile direct pe dispozitivul tău"),
-                t("ae03594c", "Boost pentru răspunsuri scurte");
-            t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
+                t("ee54c3de", "Salvează videoclipurile direct pe dispozitivul tău");
+            t("ae03594c", "Boost pentru răspunsuri scurte"),
+                t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
                 t("bf2a6acc", "Prioritizare mare a răspunsurilor"),
                 t("c2059276", "Dă boost răspunsurilor tale."),
                 t("b023ec20", "Prioritizare maximă a răspunsurilor"),
@@ -7875,8 +7876,7 @@
                 t("ce102a20", "Redirecționare către Stripe"),
                 t("ddfd6718", "Plata a eșuat"),
                 t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
-                t("a62359e6", "Setări Organizații verificate"),
-                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați.");
+                t("a62359e6", "Setări Organizații verificate");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7915,7 +7915,8 @@
                     u(e, a)
                 );
             }
-            t("i4dccc18", "Facturare"),
+            t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
+                t("i4dccc18", "Facturare"),
                 t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
                 t("dac61c3c", "Setări cont"),
                 t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
@@ -8919,11 +8920,11 @@
                     return "Cu " + e.amountOfTime + " în urmă";
                 }),
                 t("ae408b76", "Ai repostat"),
-                t("j355f008", "Postare fixată"),
-                t("habf9678", "Fixat de Autor");
-            t("db0798ed", function (e) {
-                return "Subiect – " + e.topicName;
-            }),
+                t("j355f008", "Postare fixată");
+            t("habf9678", "Fixat de Autor"),
+                t("db0798ed", function (e) {
+                    return "Subiect – " + e.topicName;
+                }),
                 t("dc716ec9", function (e) {
                     return "Subiect recomandat: " + e.topicName;
                 }),
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.bced617a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.a9084eaa.js.map

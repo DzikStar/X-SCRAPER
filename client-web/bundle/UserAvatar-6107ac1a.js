@@ -11,7 +11,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         423923: (e) => {
-            e.exports = { queryId: "D6gpGuW0DQAET6sglLYyfA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "97M5vZx0SoSf6uA9BDNmJw", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         685850: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -32,7 +32,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         628207: (e) => {
-            e.exports = { queryId: "bjbnwjjXJtNl_t2j76bMaw", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "CqS9kuOa-4jE-NXsC3uTrA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         204114: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -67,8 +67,8 @@
                 v = o.n(w),
                 C = o(255804),
                 k = o.n(C),
-                T = o(628207),
-                Z = o.n(T),
+                Z = o(628207),
+                T = o.n(Z),
                 S = o(204114),
                 x = o.n(S),
                 I = o(790427),
@@ -80,7 +80,7 @@
                     clearConversations: (t, o) => e.graphQL(a(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, s.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: o }) => e.graphQL(P(), { grokMode: t, grokModelOptionId: o }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, s.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(c(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(Z(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(T(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(m(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(p(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
@@ -162,7 +162,7 @@
         },
         300234: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => U });
+            o.d(t, { Z: () => Y });
             var n = o(202784),
                 i = o(325686),
                 s = o(284702),
@@ -218,8 +218,8 @@
                 }
             }
             const k = C;
-            var T = o(992942),
-                Z = o(7022),
+            var Z = o(992942),
+                T = o(7022),
                 S = o(309854),
                 x = o(351686),
                 I = o(822399);
@@ -240,8 +240,8 @@
                         { loadingVariant: _ } = this.state,
                         p = (e && _ && Math.max(_.width, _.height) >= 680 ? _.uri : null) || P._selectSource(l);
                     if (!p || null === _) return null;
-                    const u = n.createElement(T.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : D, defaultSource: _ && _.uri, draggable: !0, onError: _ ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [L.img, t] });
-                    return n.createElement(i.Z, { style: h }, this.state.imageLoading ? z : null, c ? n.createElement(Z.Z, { onTap: r, onZoomed: a, resetZoom: d }, u) : u);
+                    const u = n.createElement(Z.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : D, defaultSource: _ && _.uri, draggable: !0, onError: _ ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [L.img, t] });
+                    return n.createElement(i.Z, { style: h }, this.state.imageLoading ? z : null, c ? n.createElement(T.Z, { onTap: r, onZoomed: a, resetZoom: d }, u) : u);
                 }
                 static _selectCachedVariant(e) {
                     const t = S.Z.getOriginalImage(e);
@@ -257,7 +257,7 @@
                 z = n.createElement(I.Z, { ariaValueText: E, indeterminate: !0, style: L.progressBar }),
                 M = P;
             var B = o(310453);
-            class A extends n.PureComponent {
+            class q extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlaybackStarted = () => {
@@ -269,7 +269,7 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: q.root }, this._renderVideo()));
+                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: A.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
@@ -280,18 +280,18 @@
                     return n.createElement(B.Z, (0, u.Z)({}, s.Z.extractVideoProps(i, o, void 0, void 0, !1, e), { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: t, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const q = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                G = A,
+            const A = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                G = q,
                 W = b().ac85c6b2,
                 $ = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: d, promotedContent: h, videoId: c, ..._ } = e,
                         [p, f] = n.useState(null),
                         [b, v] = n.useState({ width: 0, height: 0 }),
                         { isModal: C } = n.useContext(m.Z),
-                        { height: T, width: Z } = a.original_info || {},
+                        { height: Z, width: T } = a.original_info || {},
                         { height: S, width: x } = b,
                         I = (0, y.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        D = I || C || o ? (0, w.I5)({ mediaWidth: Z, mediaHeight: T, containerWidth: x, containerHeight: S }, o) : V.mediaItem;
+                        D = I || C || o ? (0, w.I5)({ mediaWidth: T, mediaHeight: Z, containerWidth: x, containerHeight: S }, o) : V.mediaItem;
                     return n.createElement(
                         k,
                         {
@@ -353,8 +353,8 @@
                     );
                 },
                 V = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                R = n.memo($, (e, t) => (0, d.Z)(e, t));
-            class N extends n.Component {
+                N = n.memo($, (e, t) => (0, d.Z)(e, t));
+            class R extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -405,20 +405,20 @@
                             const _ = s.Z.isVideo(i),
                                 p = this._getItemVideoId(i),
                                 u = o === c;
-                            return _ && !p ? null : n.createElement(R, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: c, mediaDetail: r[c], onDismiss: h ? void 0 : a, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== c, videoId: p });
+                            return _ && !p ? null : n.createElement(N, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: c, mediaDetail: r[c], onDismiss: h ? void 0 : a, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== c, videoId: p });
                         });
-                    return n.createElement(i.Z, { style: Y.root }, r.length > 1 ? this._renderCarousel(c) : c);
+                    return n.createElement(i.Z, { style: U.root }, r.length > 1 ? this._renderCarousel(c) : c);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: i, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
                         h = s.Z.isVideo(i[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [Y.dimensions, Y.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: Y.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !h, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [U.dimensions, U.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: U.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !h, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (N.contextType = _.rC), (N.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: h.Z, onMediaItemChanged: h.Z });
-            const Y = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                U = p(N);
+            (R.contextType = _.rC), (R.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: h.Z, onMediaItemChanged: h.Z });
+            const U = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                Y = p(R);
         },
         827094: (e, t, o) => {
             "use strict";
@@ -457,14 +457,14 @@
                     const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: d, hideButtons: h, mediaItem: c, mediaUrl: m, overlayFooter: b, topRightButton: v } = this.props,
                         { isModal: C } = this.context,
                         k = { backgroundColor: e.rgba, ...u.nk },
-                        T = { backgroundColor: e.rgb, ...u.nk },
-                        Z = [y.root, C ? k : T, { position: C || d ? "relative" : "fixed" }],
+                        Z = { backgroundColor: e.rgb, ...u.nk },
+                        T = [y.root, C ? k : Z, { position: C || d ? "relative" : "fixed" }],
                         S = c,
                         x = S?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: Z }, t, o ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.footerButtons, b && k, b && y.footerButtonsAbsolute, h && y.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: T }, t, o ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.footerButtons, b && k, b && y.footerButtonsAbsolute, h && y.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: h ? "none" : void 0, role: "none", style: [y.buttonWrapper, y.buttonWrapperLeft, u.nk, h && y.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(_.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: c || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
                         v ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, u.nk, h && y.fadeOut] }, v) : null,
                         x
@@ -708,4 +708,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.54b4861a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.724da9ca.js.map

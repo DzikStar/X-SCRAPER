@@ -438,7 +438,7 @@
                     a = (0, l.useMemo)(() => (0, g.eS)(e), [e]);
                 return (0, s.jsxs)("div", { className: "bg-gray-0 flex flex-shrink-0 flex-grow flex-col rounded-2xl pr-2 border border-gray-200", children: [(0, s.jsx)("div", { className: "text-subtext1 md:text-body py-4 pl-4 font-medium text-gray-900 md:font-bold", children: t.videoCompletion }), (0, s.jsx)(E.y, { data: a })] });
             }
-            var B = a(812115),
+            var B = a(322506),
                 A = a(199705),
                 P = a(995348),
                 z = a(31674);
@@ -602,4 +602,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.719191fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.ee69481a.js.map

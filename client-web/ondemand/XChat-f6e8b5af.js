@@ -9,13 +9,13 @@
                     u = n.$_$.oe,
                     o = i.$_$.d;
                 function s() {
-                    this.u9b_1 = e;
+                    this.g9e_1 = e;
                 }
                 (0, n.$_$.ld)(s, "RealXClock", s),
                     (u(s).k5s = function () {
                         return r.k5s();
                     }),
-                    (u(s).v9b = function () {
+                    (u(s).h9e = function () {
                         return o().i6a();
                     }),
                     (t.$_$ = t.$_$ || {}),
@@ -38,23 +38,23 @@
                     l = i.$_$.ld,
                     p = i.$_$.g;
                 function d(t) {
-                    this.yar_1 = t;
+                    this.kau_1 = t;
                 }
                 l(d, p, p, p, [$]),
-                    (s(d).m9x = function () {
+                    (s(d).y9z = function () {
                         var t;
-                        (t = this.yar_1), o(t);
+                        (t = this.kau_1), o(t);
                     }),
-                    (s(d).rao = c),
+                    (s(d).dar = c),
                     (s(d).p1b = _),
-                    (s(d).sao = h),
-                    (s(d).tao = f),
-                    (s(d).uao = a),
+                    (s(d).ear = h),
+                    (s(d).far = f),
+                    (s(d).gar = a),
                     (t.$_$ = t.$_$ || {}),
                     (t.$_$.a = function (t, n) {
                         var i = r(n),
-                            e = t.taq();
-                        return e.y9().equals(u()) ? o(i) : e.vao(new d(i)), i;
+                            e = t.fat();
+                        return e.y9().equals(u()) ? o(i) : e.har(new d(i)), i;
                     });
             })(t.exports, i(115754), i(519039), i(54279));
         },
@@ -81,8 +81,8 @@
                     v = n.$_$.qd,
                     y = i.$_$.m2,
                     q = i.$_$.t2,
-                    b = (i.$_$.w, i.$_$.r),
-                    z = i.$_$.q,
+                    z = (i.$_$.w, i.$_$.r),
+                    b = i.$_$.q,
                     k = i.$_$.z,
                     C = i.$_$.v,
                     j = n.$_$.od,
@@ -614,8 +614,8 @@
                         var n = t instanceof gt ? t : w();
                         return !!this.g8g_1.equals(n.g8g_1);
                     }),
-                    (o(it).k1v = b),
-                    (o(it).l1v = z),
+                    (o(it).k1v = z),
+                    (o(it).l1v = b),
                     E(o(ht), "state", o(ht).y9),
                     (o($t).q3n = A),
                     E(o(pt), "inWholeSeconds", o(pt).z8f),
@@ -651,7 +651,7 @@
                     u = n.$_$.g;
                 function o() {}
                 r(o, "NoOpFeatureSwitchesRepository", u, u, u, [0, 1]),
-                    (e(o).zar = function (t, n) {
+                    (e(o).lau = function (t, n) {
                         return null;
                     }),
                     (i = new o()),
@@ -661,4 +661,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f6e8b5af.23d4afda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f6e8b5af.df92c48a.js.map

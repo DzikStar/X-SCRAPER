@@ -316,7 +316,7 @@
             r.d(t, { q: () => i });
             var n = r(552322),
                 a = r(840489),
-                l = r(812115);
+                l = r(322506);
             function i({ resolution: e, screenName: t, shape: r = "circle", size: i = "xLarge", url: o, withLink: s, className: u }) {
                 const g = o
                         ? (function (e, t) {
@@ -391,12 +391,21 @@
                 return (0, n.jsx)("div", { className: (0, a.Z)("rounded-sm inline-flex p-1", i.z7[e]), children: (0, n.jsx)(l.x, { color: o, numberOfLines: 1, size: s, weight: t ? "bold" : void 0, children: r }) });
             }
         },
+        322506: (e, t, r) => {
+            r.d(t, { r: () => l });
+            var n = r(552322),
+                a = r(812115);
+            function l({ href: e, ...t }) {
+                return (0, n.jsx)(a.r, { href: e && ((r = e), "undefined" != typeof window && "x.com" === window.location.hostname && r.startsWith("https://x.com") ? r.replace("https://x.com", "") : r), ...t });
+                var r;
+            }
+        },
         332161: (e, t, r) => {
             r.d(t, { x: () => u });
             var n = r(552322),
                 a = r(110929),
                 l = r(644490),
-                i = r(812115);
+                i = r(322506);
             const o = "div",
                 s = (0, a.j)("font-chirp max-w-full whitespace-pre-wrap", { variants: { color: l.eR, numberOfLines: { 1: "line-clamp-1", 2: "line-clamp-2", 3: "line-clamp-3", 4: "line-clamp-4", 5: "line-clamp-5" }, size: { body: "text-body", headline1: "text-headline1", headline2: "text-headline2", inherit: "text-[length:inherit]", subtext1: "text-subtext1", subtext2: "text-subtext2", subtext3: "text-subtext3", title1: "text-title1", title2: "text-title2", title3: "text-title3", title4: "text-title4" }, underline: { false: "no-underline", true: "underline" }, weight: { bold: "font-bold", extrabold: "font-extrabold", inherit: "font-inherit", light: "font-light", medium: "font-medium", normal: "font-normal" }, breakText: { all: "break-all", words: "text-break-words" } } });
             function u({ as: e, className: t, color: r, numberOfLines: l, size: u = "body", underline: g, weight: d = "normal", breakText: c = "words", ...m }) {
@@ -768,4 +777,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.767e1f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.546deeaa.js.map

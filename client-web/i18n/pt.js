@@ -2979,6 +2979,7 @@
                 s("j0693948", "Baixar o aplicativo Grok"),
                 s("af781666", "O que as pessoas acham?"),
                 s("ad35153e", "beta"),
+                s("a1f414ee", "Share thoughts"),
                 s("fbf83158", "Aviso: o pagamento falhou"),
                 s("jadeb4da", "Atualize o quanto antes sua forma de pagamento para não perder os benefícios da sua assinatura."),
                 s("bce3726a", "Atualizar dados de cobrança"),
@@ -3886,9 +3887,9 @@
                 }),
                 s("cbef820f", function (e) {
                     return e.screenName + " repostou a transmissão!";
-                }),
-                s("e3275464", "Enviar");
-            s("cededf2a", "Host"),
+                });
+            s("e3275464", "Enviar"),
+                s("cededf2a", "Host"),
                 s("i2caef48", "Co-hosts"),
                 s("j245c654", "Oradores"),
                 s("eda23a02", "Ouvintes"),
@@ -4182,7 +4183,7 @@
                 s("ff9dc268", "Editar prompt"),
                 s("acb2baa0", "Criar imagens"),
                 s("fe9ad897", function (e) {
-                    return "Editar imagem" + e.ttc_grok_preset;
+                    return "Edição de imagem" + e.ttc_grok_preset;
                 }),
                 s("h30fd372", "Experimente o Modo de Voz"),
                 s("e9fcdd0c", "Pedir ao Grok para fazer uma pesquisa profunda na web"),
@@ -4922,9 +4923,9 @@
                 s("e41fffbc", "O tempo total de exibição dos seus vídeos."),
                 s("if2909ba", "Tempo de exibição"),
                 s("i0e5bf4c", "Seus vídeos"),
-                s("ed99baea", "Acesso Beta Antecipado"),
-                s("gf898b70", "Busca Avançada");
-            s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
+                s("ed99baea", "Acesso Beta Antecipado");
+            s("gf898b70", "Busca Avançada"),
+                s("d2a43a7a", 'contém tanto "ai" quanto "startup"'),
                 s("a8584698", "ai startup"),
                 s("jb6f9292", 'contém a frase exata "ai startup"'),
                 s("j8ee77c4", '"ai startup"'),
@@ -5888,9 +5889,9 @@
                 s("i0ed3f4e", "Imagem do evento"),
                 s("cbae35fa", "Denunciar Transmissão"),
                 s("fd12ab58", "Coleções de posts"),
-                s("a226497c", "Crie uma nova Comunidade"),
-                s("d7346632", "Você ainda não entrou para nenhuma Comunidade");
-            s("b732a4cc", "Quando fizer isso, poderá ver seus posts aqui."),
+                s("a226497c", "Crie uma nova Comunidade");
+            s("d7346632", "Você ainda não entrou para nenhuma Comunidade"),
+                s("b732a4cc", "Quando fizer isso, poderá ver seus posts aqui."),
                 s("hff48914", "Não foi possível encontrar nenhum post no momento."),
                 s("hb52cc4a", "Por favor, tente novamente mais tarde."),
                 s("e50e1bb0", "Bem-vindo a Comunidades"),
@@ -6886,9 +6887,9 @@
                 s("f5732cd4", "Além disso, acesso expandido ao DeepSearch e Pensamento"),
                 s("e0198956", "Receba uma parte da receita gerada pelo engajamento de contas verificadas com o conteúdo que você postar no X."),
                 s("iadf78e2", "Baixar vídeos"),
-                s("ee54c3de", "Salve vídeos diretamente no seu dispositivo"),
-                s("ae03594c", "Priorização básica de respostas");
-            s("e6bb08c0", "Aumente a visibilidade das suas respostas"),
+                s("ee54c3de", "Salve vídeos diretamente no seu dispositivo");
+            s("ae03594c", "Priorização básica de respostas"),
+                s("e6bb08c0", "Aumente a visibilidade das suas respostas"),
                 s("bf2a6acc", "Priorização média de respostas"),
                 s("c2059276", "Tenha suas respostas impulsionadas."),
                 s("b023ec20", "Priorização máxima de respostas"),
@@ -7864,8 +7865,7 @@
                 s("ce102a20", "Redirecionar para o Stripe"),
                 s("ddfd6718", "O pagamento falhou"),
                 s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios."),
-                s("a62359e6", "Configurações de Organizações Verificadas"),
-                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade.");
+                s("a62359e6", "Configurações de Organizações Verificadas");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7904,7 +7904,8 @@
                     n(e, a)
                 );
             }
-            s("i4dccc18", "Cobrança"),
+            s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
+                s("i4dccc18", "Cobrança"),
                 s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
                 s("dac61c3c", "Configurações da conta"),
                 s("b6b5fd66", "Gerencie sua conta do X, incluindo alteração do seu nome de usuário ou senha."),
@@ -8908,11 +8909,11 @@
                     return e.amountOfTime + " atrás";
                 }),
                 s("ae408b76", "Você repostou"),
-                s("j355f008", "Post fixado"),
-                s("habf9678", "Fixado pelo autor");
-            s("db0798ed", function (e) {
-                return e.topicName + " Tópico";
-            }),
+                s("j355f008", "Post fixado");
+            s("habf9678", "Fixado pelo autor"),
+                s("db0798ed", function (e) {
+                    return e.topicName + " Tópico";
+                }),
                 s("dc716ec9", function (e) {
                     return "Tópico recomendado: " + e.topicName;
                 }),
@@ -13225,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.b600d96a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.c59946ba.js.map

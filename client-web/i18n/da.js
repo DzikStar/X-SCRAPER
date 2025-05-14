@@ -2979,6 +2979,7 @@
                 t("j0693948", "Hent Grok-appen"),
                 t("af781666", "Hvad synes folk?"),
                 t("ad35153e", "beta"),
+                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Advarsel: Betalingen mislykkedes"),
                 t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele."),
                 t("bce3726a", "Opdater fakturering"),
@@ -3886,9 +3887,9 @@
                 }),
                 t("cbef820f", function (e) {
                     return e.screenName + " repostede streamingen!";
-                }),
-                t("e3275464", "Send");
-            t("cededf2a", "Vært"),
+                });
+            t("e3275464", "Send"),
+                t("cededf2a", "Vært"),
                 t("i2caef48", "Medværter"),
                 t("j245c654", "Talere"),
                 t("eda23a02", "Lyttere"),
@@ -4922,9 +4923,9 @@
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig beta-adgang"),
-                t("gf898b70", "Avanceret søgning");
-            t("d2a43a7a", 'indeholder både "ai" og "startup"'),
+                t("ed99baea", "Tidlig beta-adgang");
+            t("gf898b70", "Avanceret søgning"),
+                t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5888,9 +5889,9 @@
                 t("i0ed3f4e", "Begivenhedsbillede"),
                 t("cbae35fa", "Indberet udsendelse"),
                 t("fd12ab58", "Samlings-posts"),
-                t("a226497c", "Opret et nyt Fællesskab"),
-                t("d7346632", "Du har ikke deltaget i nogen Fællesskaber endnu");
-            t("b732a4cc", "Når du har, vises deres posts her."),
+                t("a226497c", "Opret et nyt Fællesskab");
+            t("d7346632", "Du har ikke deltaget i nogen Fællesskaber endnu"),
+                t("b732a4cc", "Når du har, vises deres posts her."),
                 t("hff48914", "Ingen posts blev fundet på dette tidspunkt."),
                 t("hb52cc4a", "Prøv igen senere."),
                 t("e50e1bb0", "Velkommen til Fællesskaber"),
@@ -6886,9 +6887,9 @@
                 t("f5732cd4", "Plus udvidet adgang til DeepSearch & Think"),
                 t("e0198956", "Få en andel af den indtægt, der genereres af verificerede kontis interaktioner med indhold, du poster på X."),
                 t("iadf78e2", "Download videoer"),
-                t("ee54c3de", "Gem videoer direkte på din enhed"),
-                t("ae03594c", "Lille svar-boost");
-            t("e6bb08c0", "Forøg synligheden af dine svar"),
+                t("ee54c3de", "Gem videoer direkte på din enhed");
+            t("ae03594c", "Lille svar-boost"),
+                t("e6bb08c0", "Forøg synligheden af dine svar"),
                 t("bf2a6acc", "Stort svar-boost"),
                 t("c2059276", "Få dine svar boostet."),
                 t("b023ec20", "Maks. svar-boost"),
@@ -7864,8 +7865,7 @@
                 t("ce102a20", "Omdirigering til Stripe"),
                 t("ddfd6718", "Betalingen mislykkedes"),
                 t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
-                t("a62359e6", "Indstillinger for verificeret organisation"),
-                t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter.");
+                t("a62359e6", "Indstillinger for verificeret organisation");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7904,7 +7904,8 @@
                     a(e, r)
                 );
             }
-            t("i4dccc18", "Fakturering"),
+            t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
+                t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer din betalingsmetode, opdater faktureringsoplysninger, og gennemgå dine fakturaer."),
                 t("dac61c3c", "Kontoindstillinger"),
                 t("b6b5fd66", "Administrer din X-konto, herunder ændring af dit brugernavn eller din adgangskode."),
@@ -8908,11 +8909,11 @@
                     return e.amountOfTime + " siden";
                 }),
                 t("ae408b76", "Du repostede"),
-                t("j355f008", "Fastgjort post"),
-                t("habf9678", "Fastgjort af forfatter");
-            t("db0798ed", function (e) {
-                return e.topicName + " Emne";
-            }),
+                t("j355f008", "Fastgjort post");
+            t("habf9678", "Fastgjort af forfatter"),
+                t("db0798ed", function (e) {
+                    return e.topicName + " Emne";
+                }),
                 t("dc716ec9", function (e) {
                     return "Anbefalet emne: " + e.topicName;
                 }),
@@ -13227,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.38ad175a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.ff1e3eda.js.map

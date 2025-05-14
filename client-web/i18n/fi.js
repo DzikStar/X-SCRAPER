@@ -2823,13 +2823,13 @@
                     return "Tilausmallisi on " + a.tierName + " alkaen seuraavasta laskutusjaksosta " + a.date;
                 }),
                 e("a991d9a3", function (a) {
-                    return "Next billing cycle starts on " + a.date;
+                    return "Seuraava laskutusjakso alkaa " + a.date;
                 }),
                 e("edbb700f", function (a) {
                     return "Alkaa seuraavasta laskutusjaksosta " + a.date;
                 }),
                 e("e3f9d219", function (a) {
-                    return "Subscription ends on " + a.date;
+                    return "Tilaus päättyy " + a.date;
                 }),
                 e("e9884540", "Alennus voimassa"),
                 e("bfb879aa", "Tuleva alennus"),
@@ -2979,11 +2979,12 @@
                 e("j0693948", "Hanki Grok-sovellus"),
                 e("af781666", "Mitä ihmiset miettivät?"),
                 e("ad35153e", "beta"),
+                e("a1f414ee", "Share thoughts"),
                 e("fbf83158", "Varoitus: maksu epäonnistui"),
                 e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
                 e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
-                e("da00e00a", "Try the new News"),
+                e("da00e00a", "Ota News kokeiluun"),
                 e("c40666d8", "Kokeile"),
                 e("j66b95a2", "Syväluotaavia uutisia"),
                 e("b58d2bd2", "Asiaan liittyvät julkaisut"),
@@ -3886,9 +3887,9 @@
                 }),
                 e("cbef820f", function (a) {
                     return a.screenName + " julkaisi striimin uudelleen!";
-                }),
-                e("e3275464", "Lähetä");
-            e("cededf2a", "Host"),
+                });
+            e("e3275464", "Lähetä"),
+                e("cededf2a", "Host"),
                 e("i2caef48", "Co-hostit"),
                 e("j245c654", "Puhujat"),
                 e("eda23a02", "Kuuntelijat"),
@@ -4922,9 +4923,9 @@
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
                 e("if2909ba", "Katseluaika"),
                 e("i0e5bf4c", "Videosi"),
-                e("ed99baea", "Beta-ennakkokäyttö"),
-                e("gf898b70", "Tarkennettu haku");
-            e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
+                e("ed99baea", "Beta-ennakkokäyttö");
+            e("gf898b70", "Tarkennettu haku"),
+                e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
                 e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
                 e("j8ee77c4", '"ai startup"'),
@@ -5888,9 +5889,9 @@
                 e("i0ed3f4e", "Tapahtumakuva"),
                 e("cbae35fa", "Ilmianna lähetys"),
                 e("fd12ab58", "Kokoelman julkaisut"),
-                e("a226497c", "Luo uusi Yhteisö"),
-                e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön");
-            e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
+                e("a226497c", "Luo uusi Yhteisö");
+            e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön"),
+                e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
                 e("hff48914", "Julkaisuja ei löydy tällä hetkellä."),
                 e("hb52cc4a", "Yritä myöhemmin uudelleen."),
                 e("e50e1bb0", "Tervetuloa Yhteisöihin"),
@@ -6680,7 +6681,7 @@
                 e("b2d41138", "Suurempi tavoittavuus = enemmän tuloja"),
                 e("defa7f12", "Ota vastausten tehostus käyttöön. Näkyvyytesi parantuessa saat seuraajia nopeammin."),
                 e("i3e4955d", "täältä"),
-                e("fdc5d06c", "Exit Full Screen"),
+                e("fdc5d06c", "Poistu koko näytön tilasta"),
                 e("cea1c00e", "Hanki itsellesi oikeus osallistua"),
                 e("f8e6a280", "Uusien tilien haltijoiden on suoritettava pieni vuosimaksu, ennen kuin voit julkaista, tykätä, lisätä kirjanmerkkeihin tai vastata. Tarkoituksena on karsia roskajulkaisuja ja tehdä käyttökokemuksesta kaikille parempi. Voit edelleen seurata tilejä ja selata X:ää maksutta."),
                 e("h968efc6", "Uusien tilien haltijoiden on suoritettava pieni maksu, ennen kuin voit julkaista, tykätä, lisätä kirjanmerkkeihin tai vastata. Tarkoituksena on karsia roskajulkaisuja ja tehdä käyttökokemuksesta kaikille parempi. Voit edelleen seurata tilejä ja selata X:ää maksutta."),
@@ -6724,7 +6725,7 @@
                 e("i1801686", "Virheellinen haku. Kokeile muuttaa hakua."),
                 e("a0b4541c", "Jokin meni pieleen, mutta älä huoli – syy ei ole sinun"),
                 e("d7eebb60", "Tilaustasi vahvistetaan"),
-                e("h707b180", "Your subscription update is complete"),
+                e("h707b180", "Tilauksesi on päivitetty"),
                 e("a452ab68", "Tähän voi mennä muutama sekunti."),
                 e("b3bad3b2", "@premium"),
                 e("accbcc78", "Päivitys onnistui"),
@@ -6886,9 +6887,9 @@
                 e("f5732cd4", "Plus laajempi DeepSearch- ja Mieti-toimintojen käyttö"),
                 e("e0198956", "Saat osuutesi tuloista, joita muodostuu varmennettujen tilien osallistuessa X-julkaisuihisi."),
                 e("iadf78e2", "Videoiden lataus"),
-                e("ee54c3de", "Tallenna videoita suoraan laitteellesi"),
-                e("ae03594c", "Pieni vastausten tehostus");
-            e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
+                e("ee54c3de", "Tallenna videoita suoraan laitteellesi");
+            e("ae03594c", "Pieni vastausten tehostus"),
+                e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
                 e("bf2a6acc", "Suuri vastausten tehostus"),
                 e("c2059276", "Vastaustesi tehostus."),
                 e("b023ec20", "Suurin vastausten tehostus"),
@@ -7392,7 +7393,7 @@
                 e("a10aa36c", "ohjekeskuksesta"),
                 e("d0740558", "ohjekeskuksesta"),
                 e("d2d76dca", "ohjekeskuksesta"),
-                e("de8bcdaa", "Breakdown of the people that have seen your post"),
+                e("de8bcdaa", "Eritelmä julkaisusi nähneistä ihmisistä"),
                 e("cfa1ef16", "Tehosta"),
                 e("d267afa2", "Alle 20"),
                 e("db81cab0", "20—29"),
@@ -7404,12 +7405,12 @@
                 e("fa5be588", "Orgaaniset"),
                 e("c65126fe", "Tehostettu"),
                 e("c61c6624", "Mainostettu"),
-                e("f1196a04", "Boost Analytics"),
-                e("bb66e3fc", "Promote Analytics"),
+                e("f1196a04", "Tehostustilastot"),
+                e("bb66e3fc", "Mainostustilastot"),
                 e("g512ddcc", "Orgaaniset tilastot"),
-                e("j9256524", "Breakdown of your boost performance"),
-                e("ceeb3016", "Breakdown of your promote performance"),
-                e("bf4558fa", "Breakdown of your organic performance"),
+                e("j9256524", "Eritelmä tehostuksen vaikutuksesta"),
+                e("ceeb3016", "Eritelmä mainostuksen vaikutuksesta"),
+                e("bf4558fa", "Eritelmä orgaanisesta suorituksestasi"),
                 e("c69069e6", "Tämän julkaisun näyttökerrat X:ssä"),
                 e("a0615bac", "Montako kertaa yhteensä käyttäjä on toiminut suhteessa julkaisuun. Tämä sisältää kaikki klikkaukset missä tahansa julkaisun alueella (kuten asiasanojen, linkkien, käyttäjäkuvan ja käyttäjätunnuksen klikkaukset ja julkaisun laajennukset), uudelleenjulkaisut, vastaukset, seuraamiset ja tykkäämiset."),
                 e("d8abdaa4", "Uudet seuraajat"),
@@ -7418,7 +7419,7 @@
                 e("c7d0d1c4", "Julkaisun URL-osoitteiden klikkausten määrä"),
                 e("a4da7724", "Montako kertaa ihmiset katsoivat julkaisun tiedot"),
                 e("jedd2771", function (a) {
-                    return a.percentage + " from boost";
+                    return a.percentage + " tehostuksesta";
                 }),
                 e("g33fd6b1", function (a) {
                     return a.percentage + " kampanjalla";
@@ -7427,7 +7428,7 @@
                     return a.percentage + " ei-seuraajilta";
                 }),
                 e("h4cbba3e", "< 5 %"),
-                e("f4f0094c", "< 5% from boost"),
+                e("f4f0094c", "< 5 % tehostuksesta"),
                 e("h1cdac12", "< 5 % kampanjasta"),
                 e("g884b2cc", "< 5 % ei-seuraajilta"),
                 e("b32334a0", "Tavoitetut tilit"),
@@ -7864,8 +7865,7 @@
                 e("ce102a20", "Edelleenohjataan Stripeen"),
                 e("ddfd6718", "Maksu epäonnistui"),
                 e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
-                e("a62359e6", "Varmennetut organisaatiot"),
-                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä.");
+                e("a62359e6", "Varmennetut organisaatiot");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7904,7 +7904,8 @@
                     u(a, t)
                 );
             }
-            e("i4dccc18", "Laskutus"),
+            e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
+                e("i4dccc18", "Laskutus"),
                 e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
                 e("dac61c3c", "Tilin asetukset"),
                 e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
@@ -8908,11 +8909,11 @@
                     return a.amountOfTime + " sitten";
                 }),
                 e("ae408b76", "Uudelleenjulkaisit"),
-                e("j355f008", "Kiinnitetty julkaisu"),
-                e("habf9678", "Tekijän kiinnittämä");
-            e("db0798ed", function (a) {
-                return a.topicName + " aihe";
-            }),
+                e("j355f008", "Kiinnitetty julkaisu");
+            e("habf9678", "Tekijän kiinnittämä"),
+                e("db0798ed", function (a) {
+                    return a.topicName + " aihe";
+                }),
                 e("dc716ec9", function (a) {
                     return "Suositeltu aihe: " + a.topicName;
                 }),
@@ -12032,7 +12033,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(nostokulu ", " %, vähintään ", ")"];
                             },
                         },
                         {
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.5bef8a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.be377b8a.js.map

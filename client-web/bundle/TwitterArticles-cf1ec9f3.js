@@ -199,8 +199,8 @@
                 S = r(798538),
                 I = r(497294),
                 k = r(632960);
-            const P = [],
-                E = (e, { module: a, query: r }) => a.selectInitialFetchStatus(e, r),
+            const E = [],
+                P = (e, { module: a, query: r }) => a.selectInitialFetchStatus(e, r),
                 C = (e, { module: a, query: r }) => a.selectItems(e, r),
                 v = (e, { module: a, query: r }) => a.selectNextFetchStatus(e, r),
                 Z = (e) => {
@@ -209,10 +209,10 @@
                         o = k.E_(e, r),
                         t = a[r],
                         d = t.composerData[o]?.mediaIds;
-                    return Array.isArray(d) ? d : P;
+                    return Array.isArray(d) ? d : E;
                 },
                 x = (0, A.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: E, items: C, nextFetchStatus: v, oldMediaIds: Z }))
+                    .propsFromState(() => ({ initialFetchStatus: P, items: C, nextFetchStatus: v, oldMediaIds: Z }))
                     .adjustStateProps(({ initialFetchStatus: e, items: a, nextFetchStatus: r, oldMediaIds: o }) => ({ initialFetchStatus: e, items: Array.isArray(a) ? (0, b.Z)(a, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, a) => a.height * a.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: r, oldMediaIds: o }))
                     .propsFromActions(({ history: e, module: a }) => {
                         return {
@@ -377,18 +377,17 @@
             const S = (e, a) => (0, A.l4)(e).shouldAutoPlayGif,
                 I = (0, b.Z)().propsFromState(() => ({ shouldAutoPlayGif: S, isDataSaverEnabled: A.IX, effectiveAutoplayOption: _.AP }));
             var k = r(74938),
-                P = r(663194);
-            const E = c().a50ba822,
+                E = r(663194);
+            const P = c().a50ba822,
                 C = c().a9ae1e78,
                 v = (0, f.p)(
                     () =>
                         Promise.all([
+                            r.e("icons.7"),
                             r.e("icons.8"),
-                            r.e("icons.21"),
-                            r.e("icons.13"),
-                            r.e("icons.20"),
-                            r.e("icons.14"),
-                            r.e("icons.1"),
+                            r.e("icons.15"),
+                            r.e("icons.24"),
+                            r.e("icons.3"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -398,7 +397,6 @@
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -435,12 +433,11 @@
                 Z = (0, f.p)(
                     () =>
                         Promise.all([
+                            r.e("icons.7"),
                             r.e("icons.8"),
-                            r.e("icons.21"),
-                            r.e("icons.13"),
-                            r.e("icons.20"),
-                            r.e("icons.14"),
-                            r.e("icons.1"),
+                            r.e("icons.15"),
+                            r.e("icons.24"),
+                            r.e("icons.3"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -450,7 +447,6 @@
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -535,7 +531,7 @@
                 }
                 _getShouldAutoPlayGif() {
                     const { effectiveAutoplayOption: e, isDataSaverEnabled: a, shouldAutoPlayGif: r } = this.props;
-                    return (0, P.r)(r, a, e);
+                    return (0, E.r)(r, a, e);
                 }
                 _getGifSearchKey() {
                     const {
@@ -553,7 +549,7 @@
                 _renderSearchBox() {
                     const { searchDisabled: e } = this.state,
                         a = this._getQueryOrCategory();
-                    return o.createElement(t.Z, { style: N.searchContainer }, o.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: E, ref: this._setTextInputRef, style: N.searchInput, testID: k.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : o.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: N.searchButton, type: "brandFilled" }, C));
+                    return o.createElement(t.Z, { style: N.searchContainer }, o.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: P, ref: this._setTextInputRef, style: N.searchInput, testID: k.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : o.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: N.searchButton, type: "brandFilled" }, C));
                 }
             }
             R.contextType = D.rC;
@@ -579,7 +575,7 @@
                 };
         },
         842485: (e, a, r) => {
-            r.r(a), r.d(a, { Entry: () => k, KeyboardShortcutsScreen: () => S, ShortcutContent: () => I, default: () => E });
+            r.r(a), r.d(a, { Entry: () => k, KeyboardShortcutsScreen: () => S, ShortcutContent: () => I, default: () => P });
             var o = r(202784),
                 t = r(325686),
                 d = r(386802),
@@ -624,7 +620,7 @@
                 I = ({ isModal: e, shortcuts: a }) =>
                     o.createElement(
                         t.Z,
-                        { style: [P.root, e && P.row] },
+                        { style: [E.root, e && E.row] },
                         a.map(({ headerText: a, shortcuts: r, subtitleText: d }, l) => {
                             const s = l === r.length - 1,
                                 i = r.length > 1;
@@ -632,11 +628,11 @@
                                 ? null
                                 : o.createElement(
                                       t.Z,
-                                      { key: l, style: [P.section, !s && !e && P.sectionBottomMargin] },
-                                      a ? o.createElement(n.Z, { style: P.moduleHeader, subtext: d, text: a }) : null,
+                                      { key: l, style: [E.section, !s && !e && E.sectionBottomMargin] },
+                                      a ? o.createElement(n.Z, { style: E.moduleHeader, subtext: d, text: a }) : null,
                                       o.createElement(
                                           t.Z,
-                                          { role: "table", style: !s && i && e && P.divider },
+                                          { role: "table", style: !s && i && e && E.divider },
                                           r.map((e, a) => o.createElement(k, { description: e.description, key: a, keys: e.keys })),
                                       ),
                                   );
@@ -646,17 +642,17 @@
                     const r = Array.isArray(a) ? a : [a];
                     return o.createElement(
                         t.Z,
-                        { role: "row", style: P.entry },
+                        { role: "row", style: E.entry },
                         o.createElement(l.ZP, { role: "cell" }, e),
                         o.createElement(
                             t.Z,
-                            { role: "cell", style: P.keyRow },
-                            r.map((e, a) => e.split(" ").map((e, r, t) => o.createElement(o.Fragment, { key: r }, 0 !== a && o.createElement(l.ZP, { style: P.plus }, ", "), o.createElement(l.ZP, { align: "center", style: P.key, withoutTwemojiAndHashflags: !0 }, e), r !== t.length - 1 ? o.createElement(l.ZP, { style: P.plus }, "+") : null))),
+                            { role: "cell", style: E.keyRow },
+                            r.map((e, a) => e.split(" ").map((e, r, t) => o.createElement(o.Fragment, { key: r }, 0 !== a && o.createElement(l.ZP, { style: E.plus }, ", "), o.createElement(l.ZP, { align: "center", style: E.key, withoutTwemojiAndHashflags: !0 }, e), r !== t.length - 1 ? o.createElement(l.ZP, { style: E.plus }, "+") : null))),
                         ),
                     );
                 },
-                P = s.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
-                E = g(S);
+                E = s.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
+                P = g(S);
         },
         466441: (e, a, r) => {
             r.r(a), r.d(a, { NotFoundScreen: () => f, default: () => b });
@@ -766,10 +762,10 @@
                         location: { pathname: a },
                         viewerUserId: r,
                     } = e,
-                    [d, n] = o.useState(E.DRAFTS);
+                    [d, n] = o.useState(P.DRAFTS);
                 if (!r) return null;
                 const l = (e) => () => d === e,
-                    s = (0, c.Z)(E).map((e) => ({ key: e, label: C[e].label, isActive: l(e), to: { pathname: a }, onClick: () => n(e) }));
+                    s = (0, c.Z)(P).map((e) => ({ key: e, label: C[e].label, isActive: l(e), to: { pathname: a }, onClick: () => n(e) }));
                 return o.createElement(
                     o.Fragment,
                     null,
@@ -781,9 +777,9 @@
                             emptyStateHeader: C[d].header,
                             lifecycle: (() => {
                                 switch (d) {
-                                    case E.PUBLISHED:
+                                    case P.PUBLISHED:
                                         return h.f.Published;
-                                    case E.DRAFTS:
+                                    case P.DRAFTS:
                                     default:
                                         return h.f.Draft;
                                 }
@@ -795,9 +791,9 @@
                 );
             }
             const k = n.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground, flexGrow: 1 } }));
-            const P = s().a5a30af0,
-                E = Object.freeze({ DRAFTS: "Drafts", PUBLISHED: "Published" }),
-                C = { [E.DRAFTS]: { label: s().d4ebc798, header: s().f965e890 }, [E.PUBLISHED]: { label: s().bb40bf66, header: s().c2756718 } },
+            const E = s().a5a30af0,
+                P = Object.freeze({ DRAFTS: "Drafts", PUBLISHED: "Published" }),
+                C = { [P.DRAFTS]: { label: s().d4ebc798, header: s().f965e890 }, [P.PUBLISHED]: { label: s().bb40bf66, header: s().c2756718 } },
                 v = o.createElement(i.default, null),
                 Z = S(function (e) {
                     const { viewerUserId: a } = e;
@@ -824,9 +820,9 @@
                             );
                         })(e),
                         n = o.useMemo(() => o.createElement(d.ZP, { "aria-label": "create", icon: v, onPress: r, type: "primaryText" }), [r]);
-                    return !a || t ? null : o.createElement(y.nO, { namespace: _ }, o.createElement(m.Z, { rightControl: n, screenType: "root", title: P }, o.createElement(I, e)));
+                    return !a || t ? null : o.createElement(y.nO, { namespace: _ }, o.createElement(m.Z, { rightControl: n, screenType: "root", title: E }, o.createElement(I, e)));
                 });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.a5cbd9fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.b48abfca.js.map

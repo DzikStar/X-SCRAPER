@@ -55,7 +55,7 @@
             const o = ({ name: e, avatarUrl: s, onRemove: r }) => (0, t.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: r, children: [(0, t.jsx)(n.s, { url: s, size: "small" }), (0, t.jsx)(a.R, { name: e, size: "subtext1" }), (0, t.jsx)(i.Z, { className: "size-4" })] });
         },
         922150: (e, s, r) => {
-            r.d(s, { G: () => v });
+            r.d(s, { G: () => j });
             var t = r(552322),
                 n = r(425522),
                 a = r(202784),
@@ -183,12 +183,15 @@
                           ],
                       });
             }
-            var f = r(379342);
-            const y = n.com.x.navigation.PinEntryMode;
-            function v({ mode: e, shouldRegister: s, shouldGenerate: r }) {
+            var f = r(379342),
+                y = r(264531),
+                v = r(334038);
+            const w = n.com.x.navigation.PinEntryMode;
+            function j({ mode: e, shouldRegister: s, shouldGenerate: r }) {
                 const [o, l] = (0, a.useState)(null),
                     u = (0, i.n)(),
-                    d = (0, f.s)();
+                    d = (0, f.s)(),
+                    { showDebugOptions: m } = (0, y.XE)();
                 return (
                     (0, a.useEffect)(() => {
                         const t = new n.com.x.export.CancellationSignal(),
@@ -196,13 +199,13 @@
                                 (function (e, s, r) {
                                     switch (e) {
                                         case "recovery":
-                                            return y.Recovery;
+                                            return w.Recovery;
                                         case "new":
-                                            return y.NewKeypair;
+                                            return w.NewKeypair;
                                         case "forgot":
-                                            return y.ForgotPin;
+                                            return w.ForgotPin;
                                         case "verify":
-                                            return new y.Verify(!!s, !!r);
+                                            return new w.Verify(!!s, !!r);
                                     }
                                 })(e, s, r),
                                 new n.com.x.dms.pin.DmPinEntryCallbacks(() => {
@@ -217,7 +220,7 @@
                             }
                         );
                     }, [u, e, d, s, r]),
-                    (0, t.jsx)(t.Fragment, { children: null != o ? (0, t.jsx)(p, { component: o }) : (0, t.jsx)(c.x, { children: "Loading" }) })
+                    (0, t.jsxs)(t.Fragment, { children: [m && (0, t.jsx)("div", { className: "absolute top-4 right-4", children: (0, t.jsx)(v.Z, {}) }), null != o ? (0, t.jsx)(p, { component: o }) : (0, t.jsx)(c.x, { children: "Loading" })] })
                 );
             }
         },
@@ -232,7 +235,7 @@
         556160: (e, s, r) => {
             r.d(s, { K: () => u });
             var t = r(552322),
-                n = r(812115),
+                n = r(322506),
                 a = r(378364),
                 i = r(589259),
                 o = r(253511),
@@ -300,4 +303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.69bea64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.fce3efea.js.map

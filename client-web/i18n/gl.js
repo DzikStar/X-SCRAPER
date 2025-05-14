@@ -2983,6 +2983,7 @@
                 t("j0693948", "Get the Grok app"),
                 t("af781666", "What do people think?"),
                 t("ad35153e", "beta"),
+                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Warning: Payment failed"),
                 t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 t("bce3726a", "Update Billing"),
@@ -3890,9 +3891,9 @@
                 }),
                 t("cbef820f", function (e) {
                     return e.screenName + " reposted the stream!";
-                }),
-                t("e3275464", "Enviar");
-            t("cededf2a", "Organizador"),
+                });
+            t("e3275464", "Enviar"),
+                t("cededf2a", "Organizador"),
                 t("i2caef48", "Co-hosts"),
                 t("j245c654", "Speakers"),
                 t("eda23a02", "Listeners"),
@@ -4926,9 +4927,9 @@
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access"),
-                t("gf898b70", "Advanced Search");
-            t("d2a43a7a", 'contains both "ai" and "startup"'),
+                t("ed99baea", "Early Beta Access");
+            t("gf898b70", "Advanced Search"),
+                t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5892,9 +5893,9 @@
                 t("i0ed3f4e", "Imaxe do evento"),
                 t("cbae35fa", "Report Broadcast"),
                 t("fd12ab58", "Collection posts"),
-                t("a226497c", "Crea unha comunidade"),
-                t("d7346632", "You haven’t joined any Communities yet");
-            t("b732a4cc", "When you do, you’ll see their posts here."),
+                t("a226497c", "Crea unha comunidade");
+            t("d7346632", "You haven’t joined any Communities yet"),
+                t("b732a4cc", "When you do, you’ll see their posts here."),
                 t("hff48914", "No posts could be found at this time."),
                 t("hb52cc4a", "Téntao de novo máis tarde."),
                 t("e50e1bb0", "Welcome to Communities"),
@@ -6890,9 +6891,9 @@
                 t("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 t("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 t("iadf78e2", "Download videos"),
-                t("ee54c3de", "Save videos straight to your device"),
-                t("ae03594c", "Small reply boost");
-            t("e6bb08c0", "Increase the visibility of your replies"),
+                t("ee54c3de", "Save videos straight to your device");
+            t("ae03594c", "Small reply boost"),
+                t("e6bb08c0", "Increase the visibility of your replies"),
                 t("bf2a6acc", "Large Reply Boost"),
                 t("c2059276", "Have your replies boosted."),
                 t("b023ec20", "Max Reply Boost"),
@@ -7868,8 +7869,7 @@
                 t("ce102a20", "Redirecting to Stripe"),
                 t("ddfd6718", "Payment Failed"),
                 t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                t("a62359e6", "Verified Organization Settings"),
-                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                t("a62359e6", "Verified Organization Settings");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7908,7 +7908,8 @@
                     s(e, a)
                 );
             }
-            t("i4dccc18", "Billing"),
+            t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                t("i4dccc18", "Billing"),
                 t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 t("dac61c3c", "Account settings"),
                 t("b6b5fd66", "Manage your X account including changing your username or password."),
@@ -8912,11 +8913,11 @@
                     return "Hai " + e.amountOfTime;
                 }),
                 t("ae408b76", "You reposted"),
-                t("j355f008", "Pinned post"),
-                t("habf9678", "Pegado polo autor");
-            t("db0798ed", function (e) {
-                return "Tema " + e.topicName;
-            }),
+                t("j355f008", "Pinned post");
+            t("habf9678", "Pegado polo autor"),
+                t("db0798ed", function (e) {
+                    return "Tema " + e.topicName;
+                }),
                 t("dc716ec9", function (e) {
                     return "Tema recomendado: " + e.topicName;
                 }),
@@ -13229,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.353f181a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.9b6a30fa.js.map

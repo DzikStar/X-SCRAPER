@@ -13,7 +13,7 @@
             a.d(l, { H: () => s });
             var n = a(552322),
                 r = a(139802),
-                t = a(331362);
+                t = a(656860);
             const s = ({ settings: e }) => (0, n.jsx)(r.A, { settings: e, children: (0, n.jsx)(t.p, {}) });
         },
         139802: (e, l, a) => {
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.4efa558a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.88dad60a.js.map

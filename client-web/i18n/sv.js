@@ -2979,6 +2979,7 @@
                 t("j0693948", "Skaffa Grok-appen"),
                 t("af781666", "Vad tänker folk?"),
                 t("ad35153e", "beta"),
+                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Varning: Betalningen misslyckades"),
                 t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner."),
                 t("bce3726a", "Uppdatera faktureringsuppgifterna"),
@@ -3886,9 +3887,9 @@
                 }),
                 t("cbef820f", function (e) {
                     return e.screenName + " återpublicerade strömmen!";
-                }),
-                t("e3275464", "Skicka");
-            t("cededf2a", "Värd"),
+                });
+            t("e3275464", "Skicka"),
+                t("cededf2a", "Värd"),
                 t("i2caef48", "Medvärdar"),
                 t("j245c654", "Talare"),
                 t("eda23a02", "Åhörare"),
@@ -4922,9 +4923,9 @@
                 t("e41fffbc", "Den totala tiden som folk har sett på dina videor."),
                 t("if2909ba", "Tittad tid"),
                 t("i0e5bf4c", "Dina videor"),
-                t("ed99baea", "Tidig betaåtkomst"),
-                t("gf898b70", "Avancerad sökning");
-            t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
+                t("ed99baea", "Tidig betaåtkomst");
+            t("gf898b70", "Avancerad sökning"),
+                t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
                 t("a8584698", "nystartat ai-bolag"),
                 t("jb6f9292", "innehåller den exakta frasen ”nystartat ai-bolag”"),
                 t("j8ee77c4", "”nystartat ai-bolag”"),
@@ -5888,9 +5889,9 @@
                 t("i0ed3f4e", "Evenemangsbild"),
                 t("cbae35fa", "Rapportera sändningen"),
                 t("fd12ab58", "Samlingsinlägg"),
-                t("a226497c", "Skapa en ny grupp"),
-                t("d7346632", "Du har inte gått med i några grupper än");
-            t("b732a4cc", "När du gör det visas hens inlägg här."),
+                t("a226497c", "Skapa en ny grupp");
+            t("d7346632", "Du har inte gått med i några grupper än"),
+                t("b732a4cc", "När du gör det visas hens inlägg här."),
                 t("hff48914", "Det gick inte att hitta några inlägg nu."),
                 t("hb52cc4a", "Försök igen senare."),
                 t("e50e1bb0", "Välkommen till Grupper"),
@@ -6886,9 +6887,9 @@
                 t("f5732cd4", "Plus utökad åtkomst till DeepSearch och Tänk"),
                 t("e0198956", "Få en del av de intäkter som genereras från verifierade kontons engagemang med det innehåll du lägger upp på X."),
                 t("iadf78e2", "Hämta videor"),
-                t("ee54c3de", "Spara videor direkt på din enhet"),
-                t("ae03594c", "Liten svarsboost");
-            t("e6bb08c0", "Öka din svars synlighet"),
+                t("ee54c3de", "Spara videor direkt på din enhet");
+            t("ae03594c", "Liten svarsboost"),
+                t("e6bb08c0", "Öka din svars synlighet"),
                 t("bf2a6acc", "Stor svarsboost"),
                 t("c2059276", "Låt dina svar boostas."),
                 t("b023ec20", "Maximal svarsboost"),
@@ -7864,8 +7865,7 @@
                 t("ce102a20", "Omdirigerar till Stripe"),
                 t("ddfd6718", "Betalningen misslyckades"),
                 t("i90ea7d2", "Uppdatera dina faktureringsuppgifter snarast för att behålla dina förmåner."),
-                t("a62359e6", "Inställningar för Verifierade organisationer"),
-                t("ge221b7c", "Uppgradera prenumerationen på Verifierade organisationer för att få tillgång till anknutna konton och fler annonskrediter.");
+                t("a62359e6", "Inställningar för Verifierade organisationer");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7904,7 +7904,8 @@
                     d(e, a)
                 );
             }
-            t("i4dccc18", "Fakturering"),
+            t("ge221b7c", "Uppgradera prenumerationen på Verifierade organisationer för att få tillgång till anknutna konton och fler annonskrediter."),
+                t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Hantera din betalningsmetod, uppdatera faktureringsinformationen och granska dina fakturor."),
                 t("dac61c3c", "Kontoinställningar"),
                 t("b6b5fd66", "Hantera ditt X-konto, inklusive att ändra ditt användarnamn och lösenord."),
@@ -8908,11 +8909,11 @@
                     return e.amountOfTime + " sedan";
                 }),
                 t("ae408b76", "Du återpublicerade"),
-                t("j355f008", "Fastnålat inlägg"),
-                t("habf9678", "Fastnålat av upphovsmannen");
-            t("db0798ed", function (e) {
-                return e.topicName + " ämne";
-            }),
+                t("j355f008", "Fastnålat inlägg");
+            t("habf9678", "Fastnålat av upphovsmannen"),
+                t("db0798ed", function (e) {
+                    return e.topicName + " ämne";
+                }),
                 t("dc716ec9", function (e) {
                     return "Rekommenderat ämne: " + e.topicName;
                 }),
@@ -13225,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.d083ee4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.1e85582a.js.map

@@ -17,66 +17,74 @@
             };
         },
         766661: (e, t, o) => {
-            o.d(t, { Z: () => _ });
+            o.d(t, { Z: () => I });
             var r = o(202784),
                 n = o(325686),
-                a = o(267352),
-                i = o(806143),
-                l = o(456677),
-                s = o(17412),
-                c = o(286406),
-                d = o(568320),
-                h = o(161335),
-                p = o(731708),
-                u = o(154003),
-                m = o(235902),
-                f = o(952428),
-                b = o(537392),
-                g = o(308158),
-                y = o(336373),
-                C = o(721266),
-                w = o(392237);
-            const v = { element: "birdwatch_pivot" },
-                E = (e, t, o) => ({ items: [{ id: o, birdwatch_pivot_details: { note_id: t, destination_url: e } }] }),
-                k = (e) => (e ? Z.birdwatchIconNoteTentative : void 0),
-                x = (e, t) => {
+                a = o(161335),
+                i = o(267352),
+                l = o(806143),
+                s = o(373595),
+                c = o(239352),
+                d = o(456677),
+                h = o(17412),
+                p = o(286406),
+                u = o(568320),
+                m = o(731708),
+                f = o(154003),
+                b = o(235902),
+                g = o(952428),
+                y = o(537392),
+                C = o(308158),
+                w = o(336373),
+                v = o(721266),
+                E = o(392237);
+            const k = { element: "birdwatch_pivot" },
+                x = (e, t, o) => ({ items: [{ id: o, birdwatch_pivot_details: { note_id: t, destination_url: e } }] }),
+                _ = (e, t) => (e ? (t ? R.footerIcon : R.birdwatchIconNoteTentative) : void 0),
+                Z = (e, t, o) => {
                     switch (e) {
+                        case "BirdwatchEyeOff":
+                            return r.createElement(a.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-eye-off" });
                         case "BirdwatchFlagFill":
-                            return r.createElement(a.default, { style: Z.birdwatchIcon, testID: "icon-birdwatch-flag" });
+                            return r.createElement(i.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-flag" });
                         case "BirdwatchFlagStroke":
-                            return r.createElement(i.default, { style: Z.birdwatchIcon, testID: "icon-birdwatch-flag-stroke" });
+                            return r.createElement(l.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-flag-stroke" });
+                        case "BirdwatchFlask":
+                            return r.createElement(s.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-flask" });
+                        case "BirdwatchFlaskStroke":
+                            return r.createElement(c.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-flask-stroke" });
                         case "BirdwatchIconWriting":
-                            return r.createElement(l.default, { style: Z.birdwatchWritingIcon, testID: "icon-birdwatch-writing" });
+                            return r.createElement(d.default, { style: [R.birdwatchWritingIcon, _(!!t, !!o)], testID: "icon-birdwatch-writing" });
                         case "BirdwatchStarRising":
-                            return r.createElement(s.default, { style: [Z.birdwatchStarRisingIcon, k(!!t)], testID: "icon-birdwatch-star-rising" });
+                            return r.createElement(h.default, { style: [R.birdwatchStarRisingIcon, _(!!t, !!o)], testID: "icon-birdwatch-star-rising" });
                         default:
-                            return r.createElement(c.default, { style: [Z.birdwatchIcon, k(!!t)], testID: "icon-birdwatch-fill" });
+                            return o ? r.createElement(a.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-eye-off" }) : r.createElement(p.default, { style: [R.birdwatchIcon, _(!!t, !!o)], testID: "icon-birdwatch-fill" });
                     }
                 };
-            function _({ callToAction: e, destinationUrl: t, footer: o, iconType: a, isForQuoteTweet: i, noteId: l, onEntityClick: s, onPivotClick: c, shorttitle: k, subtitle: _, title: I, titleDetail: R, tweetId: T, visualStyle: D }) {
-                const O = y.Z.useAnalytics(),
-                    P = (0, b.Zx)(({ containerWidth: e }) => e <= w.default.theme.breakpoints.medium),
-                    S = "#" === t ? void 0 : { pathname: t, anchorless: !0, state: { tweetId: T } },
+            function I({ callToAction: e, destinationUrl: t, footer: o, footerIconType: a, iconType: i, isForQuoteTweet: l, noteId: s, onEntityClick: c, onPivotClick: d, shorttitle: h, subtitle: p, title: _, titleDetail: I, tweetId: T, visualStyle: D }) {
+                const O = w.Z.useAnalytics(),
+                    S = (0, y.Zx)(({ containerWidth: e }) => e <= E.default.theme.breakpoints.medium),
+                    P = "#" === t ? void 0 : { pathname: t, anchorless: !0, state: { tweetId: T } },
                     z = r.useCallback(
                         (e) => {
-                            T && O.scribe({ ...v, action: "click", data: E(t, l, T) }), c && c(e);
+                            T && O.scribe({ ...k, action: "click", data: x(t, s, T) }), d && d(e);
                         },
-                        [O, t, l, T, c],
+                        [O, t, s, T, d],
                     ),
-                    W = S ? z : void 0,
-                    F = "Tentative" === D,
-                    A = (P || i) && k ? { primary: k, detail: null } : { primary: I, detail: R },
-                    N = e?.destinationUrl || "#",
-                    B = "#" === N ? void 0 : { pathname: N, state: { tweetId: T }, anchorless: !0 },
-                    H = m.ZP.useProps();
+                    F = P ? z : void 0,
+                    B = "Tentative" === D,
+                    W = (S || l) && h ? { primary: h, detail: null } : { primary: _, detail: I },
+                    A = e?.destinationUrl || "#",
+                    N = "#" === A ? void 0 : { pathname: A, state: { tweetId: T }, anchorless: !0 },
+                    H = b.ZP.useProps();
                 return (
                     r.useEffect(() => {
-                        H.birdwatchPivotsEnabled() && T && O.scribe({ ...v, action: "impression", data: E(t, l, T) });
+                        H.birdwatchPivotsEnabled() && T && O.scribe({ ...k, action: "impression", data: x(t, s, T) });
                     }, []),
-                    H.birdwatchPivotsEnabled() ? r.createElement(r.Fragment, null, r.createElement(f.Z, { link: S, onPress: W, style: [Z.pivotContainer, F && Z.noteTentativeDashedBorder, i && Z.pivotQuoteTweetContainer], testID: "birdwatch-pivot", withInteractiveStyling: !!S }, r.createElement(n.Z, { style: [Z.headerContainer, F && _ && Z.headerContainerTentative, i && Z.headerQuoteTweetContainer] }, r.createElement(n.Z, { style: Z.headerAndIconContainer }, x(a, F), r.createElement(p.ZP, { size: "subtext1", style: Z.headerAppText, weight: "bold" }, A.primary, A.detail ? r.createElement(p.ZP, { color: "gray700" }, A.detail) : null), e ? null : r.createElement(d.default, { style: [Z.arrowIcon, F && Z.noteTentativeTextColor], testID: "icon-arrow-right" })), F && o ? r.createElement(r.Fragment, null, r.createElement(C.Z, { size: "space4" }), r.createElement(n.Z, { style: Z.headerAndIconContainer }, r.createElement(h.default, { style: Z.eyeIcon }), r.createElement(p.ZP, { color: "gray700", size: "subtext1", style: Z.headerAppText, weight: "bold" }, o.text))) : null), _ ? r.createElement(r.Fragment, null, (F || !i) && r.createElement(C.Z, { size: "space12" }), r.createElement(g.Z, { entities: _.entities, onEntityClick: s, size: "body", style: [Z.subtitle, F && Z.noteTentativeTextColor], text: _.text }), !i && r.createElement(C.Z, { size: "space12" })) : null, e ? r.createElement(n.Z, { style: [Z.callToActionContainer, i && Z.callToActionContainerForQuoteTweet, F && Z.noteTentativeDashedBorder] }, r.createElement(p.ZP, { size: "subtext1" }, e.prompt), r.createElement(u.ZP, { link: B, onPress: z, size: "small", type: "primaryOutlined" }, e.title)) : i && _ && r.createElement(C.Z, { size: "space12" })), !o || i || F ? null : r.createElement(g.Z, { color: "gray700", entities: o.entities, onEntityClick: s, size: "subtext2", style: Z.footer, text: o.text })) : null
+                    H.birdwatchPivotsEnabled() ? r.createElement(r.Fragment, null, r.createElement(g.Z, { link: P, onPress: F, style: [R.pivotContainer, B && R.noteTentativeDashedBorder, l && R.pivotQuoteTweetContainer], testID: "birdwatch-pivot", withInteractiveStyling: !!P }, r.createElement(n.Z, { style: [R.headerContainer, B && R.headerContainerTentative, B && p && R.headerContainerTentativeBorder, l && R.headerQuoteTweetContainer] }, r.createElement(n.Z, { style: R.headerAndIconContainer }, Z(i, B, !1), r.createElement(m.ZP, { size: "subtext1", style: R.headerAppText, weight: "bold" }, W.primary, W.detail ? r.createElement(m.ZP, { color: "gray700" }, W.detail) : null), e ? null : r.createElement(u.default, { style: [R.arrowIcon, B && R.noteTentativeTextColor], testID: "icon-arrow-right" })), B && o ? r.createElement(r.Fragment, null, r.createElement(v.Z, { size: "space4" }), r.createElement(n.Z, { style: R.headerAndIconContainer }, Z(a, B, !0), r.createElement(m.ZP, { color: "gray700", size: "subtext1", style: R.headerAppText, weight: "bold" }, o.text))) : null), p ? r.createElement(r.Fragment, null, (B || !l) && r.createElement(v.Z, { size: "space12" }), r.createElement(C.Z, { entities: p.entities, onEntityClick: c, size: "body", style: [R.subtitle, B && R.noteTentativeTextColor], text: p.text }), !l && r.createElement(v.Z, { size: "space12" })) : null, e ? r.createElement(n.Z, { style: [R.callToActionContainer, l && R.callToActionContainerForQuoteTweet, B && R.noteTentativeDashedBorder] }, r.createElement(m.ZP, { size: "subtext1" }, e.prompt), r.createElement(f.ZP, { link: N, onPress: z, size: "small", type: "primaryOutlined" }, e.title)) : l && p && r.createElement(v.Z, { size: "space12" })), !o || l || B ? null : r.createElement(C.Z, { color: "gray700", entities: o.entities, onEntityClick: c, size: "subtext2", style: R.footer, text: o.text })) : null
                 );
             }
-            const Z = w.default.create((e) => ({
+            const R = E.default.create((e) => ({
                 footer: { paddingVertical: e.spaces.space12 },
                 pivotContainer: { borderColor: e.colors.nestedBorderColor, overflow: "hidden", borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, marginTop: e.spaces.space12 },
                 callToActionContainerForQuoteTweet: { border: "none" },
@@ -86,11 +94,12 @@
                 headerAndIconContainer: { flexDirection: "row", width: "100%" },
                 headerAppText: { width: "100%", paddingVertical: e.spaces.space2, alignItems: "center" },
                 headerQuoteTweetContainer: { backgroundColor: e.colors.transparent, borderColor: e.colors.nestedBorderColor },
-                headerContainerTentative: { flexDirection: "column", borderStyle: "dashed", borderBottomWidth: e.borderWidths.small, borderColor: e.colors.nestedBorderColor },
+                headerContainerTentative: { flexDirection: "column" },
+                headerContainerTentativeBorder: { borderStyle: "dashed", borderBottomWidth: e.borderWidths.small, borderColor: e.colors.nestedBorderColor },
                 noteTentativeTextColor: { color: e.colors.gray700 },
                 callToActionContainer: { borderTopWidth: e.borderWidths.small, borderColor: e.colors.gray200, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, justifyContent: "space-between", alignItems: "center", flexDirection: "row", flexGrow: 1 },
                 arrowIcon: { color: e.colors.text, paddingStart: e.spaces.space8, flexShrink: 0 },
-                eyeIcon: { color: e.colors.gray700, paddingEnd: e.spaces.space8, flexShrink: 0 },
+                footerIcon: { color: e.colors.gray700, flexShrink: 0 },
                 birdwatchIcon: { marginEnd: e.spacesPx.space8, color: e.colors.primary, flexShrink: 0 },
                 birdwatchWritingIcon: { marginEnd: e.spacesPx.space8, color: e.colors.green500, flexShrink: 0 },
                 birdwatchStarRisingIcon: { marginEnd: e.spacesPx.space8, color: e.colors.green500, flexShrink: 0 },
@@ -415,4 +424,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561.0bed17ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561.c6743e4a.js.map
