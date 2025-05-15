@@ -2823,13 +2823,13 @@
                     return "O nível da sua assinatura está programado para mudar para " + e.tierName + " a partir do próximo ciclo de cobrança em " + e.date;
                 }),
                 s("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "O próximo ciclo de cobrança começa em " + e.date;
                 }),
                 s("edbb700f", function (e) {
                     return "Começa no próximo ciclo de cobrança em " + e.date;
                 }),
                 s("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "A assinatura termina em " + e.date;
                 }),
                 s("e9884540", "Desconto ativado"),
                 s("bfb879aa", "Desconto em andamento"),
@@ -2984,7 +2984,7 @@
                 s("jadeb4da", "Atualize o quanto antes sua forma de pagamento para não perder os benefícios da sua assinatura."),
                 s("bce3726a", "Atualizar dados de cobrança"),
                 s("fce9ecce", "Vídeos sugeridos"),
-                s("da00e00a", "Try the new News"),
+                s("da00e00a", "Experimente as novas Notícias"),
                 s("c40666d8", "Experimente"),
                 s("j66b95a2", "Notícias detalhadas"),
                 s("b58d2bd2", "Posts Relevantes"),
@@ -4146,7 +4146,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 s("ed93de0c", "Analisando post"),
-                s("ba44f4ea", "Mais detalhes do Grok"),
+                s("d1d92e40", "More details"),
                 s("a6e89af8", "Conversa aberta"),
                 s("ica55d24", "Novo chat"),
                 s("f794af9a", "Modo Divertido"),
@@ -6681,7 +6681,7 @@
                 s("b2d41138", "Mais alcance = mais ganhos"),
                 s("defa7f12", "Aproveite a priorização de respostas, que lhe dá visibilidade extra para crescer mais rápido."),
                 s("i3e4955d", "aqui"),
-                s("fdc5d06c", "Exit Full Screen"),
+                s("fdc5d06c", "Sair do modo de tela cheia"),
                 s("cea1c00e", "Ganhe a habilidade de se engajar"),
                 s("f8e6a280", "Novas contas precisam pagar uma pequena taxa anual antes de poderem postar, curtir, reservar e responder. Isso visa a reduzir spam, a fim de tornar a experiência melhor para todo mundo. Você ainda poderá seguir contas e navegar pelo X gratuitamente."),
                 s("h968efc6", "Novas contas precisam pagar uma pequena taxa antes de poderem postar, curtir, reservar e responder. Isso visa a reduzir spam, a fim de tornar a experiência melhor para todo mundo. Você ainda poderá seguir contas e navegar pelo X gratuitamente."),
@@ -6725,7 +6725,7 @@
                 s("i1801686", "Esta é uma consulta de busca inválida. Tente usar uma diferente."),
                 s("a0b4541c", "Algo deu errado, mas não se preocupe. Não foi culpa sua."),
                 s("d7eebb60", "Como configurar sua assinatura"),
-                s("h707b180", "Your subscription update is complete"),
+                s("h707b180", "A atualização da sua assinatura foi concluída"),
                 s("a452ab68", "Isso pode demorar alguns segundos."),
                 s("b3bad3b2", "@premium"),
                 s("accbcc78", "Atualizado com sucesso"),
@@ -7393,7 +7393,7 @@
                 s("a10aa36c", "Central de Ajuda"),
                 s("d0740558", "Central de Ajuda"),
                 s("d2d76dca", "Central de Ajuda"),
-                s("de8bcdaa", "Breakdown of the people that have seen your post"),
+                s("de8bcdaa", "O número de pessoas que viram o seu post"),
                 s("cfa1ef16", "Impulsionar"),
                 s("d267afa2", "Menos de 20"),
                 s("db81cab0", "20-29"),
@@ -7403,14 +7403,14 @@
                 s("bcd9cf68", "Mais de 65"),
                 s("f05f1838", "Outro/não especificado"),
                 s("fa5be588", "Orgânico"),
-                s("c65126fe", "Priorizado"),
+                s("c65126fe", "Impulsionado"),
                 s("c61c6624", "Promovido"),
-                s("f1196a04", "Boost Analytics"),
-                s("bb66e3fc", "Promote Analytics"),
+                s("f1196a04", "Análise do impulsionamento"),
+                s("bb66e3fc", "Análise da promoção"),
                 s("g512ddcc", "Estatísticas orgânicas"),
-                s("j9256524", "Breakdown of your boost performance"),
-                s("ceeb3016", "Breakdown of your promote performance"),
-                s("bf4558fa", "Breakdown of your organic performance"),
+                s("j9256524", "Análise do desempenho do seu impulsionamento"),
+                s("ceeb3016", "Análise do desempenho da promoção"),
+                s("bf4558fa", "Análise do desempenho orgânico"),
                 s("c69069e6", "Vezes que este post foi visto no X"),
                 s("a0615bac", "Número de vezes que um usuário interagiu com um post. Isso inclui todos os cliques, em qualquer lugar do post (incluindo hashtags, links, avatar, nome de usuário e expansão do post), reposts, respostas, seguimentos e curtidas."),
                 s("d8abdaa4", "Novos seguidores"),
@@ -7419,7 +7419,7 @@
                 s("c7d0d1c4", "Número de cliques em qualquer URL neste post"),
                 s("a4da7724", "Vezes que as pessoas visualizaram os detalhes sobre este post"),
                 s("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " do impulsionamento";
                 }),
                 s("g33fd6b1", function (e) {
                     return e.percentage + " pela promoção";
@@ -7428,7 +7428,7 @@
                     return e.percentage + " de não seguidores";
                 }),
                 s("h4cbba3e", "< 5%"),
-                s("f4f0094c", "< 5% from boost"),
+                s("f4f0094c", "< 5% do impulsionamento"),
                 s("h1cdac12", "< 5% da promoção"),
                 s("g884b2cc", "< 5% de não seguidores"),
                 s("b32334a0", "Contas alcançadas"),
@@ -12020,7 +12020,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(Taxa de ", ", mínimo de ", ")"];
                             },
                         },
                         {
@@ -13226,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.c59946ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.49a4d1ca.js.map

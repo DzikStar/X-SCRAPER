@@ -2822,13 +2822,13 @@
                     return "Tu nivel de suscripción está programado para cambiar a " + e.tierName + " a partir del nuevo ciclo de facturación el " + e.date;
                 }),
                 o("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "El próximo ciclo de facturación empieza el " + e.date;
                 }),
                 o("edbb700f", function (e) {
                     return "Empieza con el próximo ciclo de facturación el " + e.date;
                 }),
                 o("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "La suscripción finaliza el " + e.date;
                 }),
                 o("e9884540", "Descuento activo"),
                 o("bfb879aa", "Descuento pendiente"),
@@ -2983,7 +2983,7 @@
                 o("jadeb4da", "Actualiza tu forma de pago de inmediato antes de que pierdas los beneficios de tu suscripción."),
                 o("bce3726a", "Actualizar facturación"),
                 o("fce9ecce", "Videos sugeridos"),
-                o("da00e00a", "Try the new News"),
+                o("da00e00a", "Prueba la nueva función Noticias"),
                 o("c40666d8", "Probar"),
                 o("j66b95a2", "Noticias detalladas"),
                 o("b58d2bd2", "Posts relevantes"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 o("ed93de0c", "Analizando el post"),
-                o("ba44f4ea", "Más detalles de Grok"),
+                o("d1d92e40", "More details"),
                 o("a6e89af8", "Conversación abierta"),
                 o("ica55d24", "Nuevo chat"),
                 o("f794af9a", "Modo Divertido"),
@@ -6680,7 +6680,7 @@
                 o("b2d41138", "Más alcance = más ingresos"),
                 o("defa7f12", "Aprovecha los beneficios del boost en las respuestas, que te ofrece visibilidad adicional para crecer más rápido."),
                 o("i3e4955d", "aquí"),
-                o("fdc5d06c", "Exit Full Screen"),
+                o("fdc5d06c", "Salir de Pantalla completa"),
                 o("cea1c00e", "Desbloquear la capacidad de interactuar"),
                 o("f8e6a280", "Las cuentas nuevas deben pagar una pequeña cuota anual para poder postear, dar Me gusta, guardar elementos y responder. Esto tiene como fin reducir el spam y crear una mejor experiencia para todos. No obstante, puedes seguir cuentas y navegar por X de forma gratuita."),
                 o("h968efc6", "Las cuentas nuevas deben pagar una pequeña cuota para poder postear, dar Me gusta, guardar elementos y responder. Esto tiene como fin reducir el spam y crear una mejor experiencia para todos. No obstante, puedes seguir cuentas y navegar por X de forma gratuita."),
@@ -6724,7 +6724,7 @@
                 o("i1801686", "Esta consulta de búsqueda no es válida. Prueba con otra."),
                 o("a0b4541c", "Algo salió mal, pero no te preocupes. No es tu culpa."),
                 o("d7eebb60", "Configurando tu suscripción"),
-                o("h707b180", "Your subscription update is complete"),
+                o("h707b180", "La actualización de tu suscripción se completó"),
                 o("a452ab68", "Este proceso puede tardar varios segundos."),
                 o("b3bad3b2", "@premium"),
                 o("accbcc78", "Se actualizó correctamente"),
@@ -7392,7 +7392,7 @@
                 o("a10aa36c", "Centro de ayuda"),
                 o("d0740558", "Centro de ayuda"),
                 o("d2d76dca", "Centro de ayuda"),
-                o("de8bcdaa", "Breakdown of the people that have seen your post"),
+                o("de8bcdaa", "Desglose de las personas que vieron tu post"),
                 o("cfa1ef16", "Aplicar boost"),
                 o("d267afa2", "Menos de 20"),
                 o("db81cab0", "20-29"),
@@ -7402,14 +7402,14 @@
                 o("bcd9cf68", "Mayor de 65"),
                 o("f05f1838", "Otros/no especificado"),
                 o("fa5be588", "Orgánico"),
-                o("c65126fe", "Priorizado"),
+                o("c65126fe", "Posts priorizados"),
                 o("c61c6624", "Promocionado"),
-                o("f1196a04", "Boost Analytics"),
-                o("bb66e3fc", "Promote Analytics"),
+                o("f1196a04", "Estadísticas de los posts priorizados"),
+                o("bb66e3fc", "Estadísticas de los posts promocionados"),
                 o("g512ddcc", "Estadísticas orgánicas"),
-                o("j9256524", "Breakdown of your boost performance"),
-                o("ceeb3016", "Breakdown of your promote performance"),
-                o("bf4558fa", "Breakdown of your organic performance"),
+                o("j9256524", "Desglose del rendimiento de tus posts priorizados"),
+                o("ceeb3016", "Desglose del rendimiento de tus posts promocionados"),
+                o("bf4558fa", "Desglose del rendimiento de tus posts orgánicos"),
                 o("c69069e6", "Cantidad de veces que este post se vio en X"),
                 o("a0615bac", "Número total de veces que un usuario interactuó con un post. Esto incluye todos los clics en cualquier parte del post (por ejemplo, hashtags, enlaces, avatar, nombre de usuario y expansión del post), así como los reposts, las respuestas, los nuevos seguidores y los Me gusta."),
                 o("d8abdaa4", "Nuevos seguidores"),
@@ -7418,7 +7418,7 @@
                 o("c7d0d1c4", "Número de clics en cualquier URL de este post"),
                 o("a4da7724", "Cantidad de veces que se vieron los detalles sobre este post"),
                 o("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " de posts priorizados";
                 }),
                 o("g33fd6b1", function (e) {
                     return e.percentage + " por promociones";
@@ -7427,7 +7427,7 @@
                     return e.percentage + " de no seguidores";
                 }),
                 o("h4cbba3e", "<5 %"),
-                o("f4f0094c", "< 5% from boost"),
+                o("f4f0094c", "< 5 % de posts priorizados"),
                 o("h1cdac12", "<5 % de promociones"),
                 o("g884b2cc", "<5 % de no seguidores "),
                 o("b32334a0", "Cuentas alcanzadas"),
@@ -12032,7 +12032,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", " % de comisión, mín. ", ")"];
                             },
                         },
                         {
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.158ab32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.a7e8d66a.js.map

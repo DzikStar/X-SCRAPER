@@ -4146,7 +4146,7 @@
                     return a.stringCount + " new request" + e(a.count, "", "s");
                 }),
                 i("ed93de0c", "Sinusuri ang Post"),
-                i("ba44f4ea", "Iba pang detalye mula sa Grok"),
+                i("d1d92e40", "More details"),
                 i("a6e89af8", "Bukas na usapan"),
                 i("ica55d24", "Bagong Chat"),
                 i("f794af9a", "Fun mode"),
@@ -13238,4 +13238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.84de557a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b891e4aa.js.map

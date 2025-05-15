@@ -2,31 +2,31 @@
     ["bundle.TwitterArticles-9f4db315", "loader.FeedbackSheet"],
     {
         594771: (e) => {
-            e.exports = { queryId: "ZhMzC14IxRzWdJOgNQINgg", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "Rq-xvXqDhxa_2kV24TgZqg", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         551e3: (e) => {
             e.exports = { queryId: "e4lWqB6m2TA8Fn_j9L9xEA", operationName: "ArticleEntityDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         486962: (e) => {
-            e.exports = { queryId: "ov1MxYkGzbQeLrTJTvrGNQ", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "Ka4ZRwMbmQ0z4FFNncngcA", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         207318: (e) => {
-            e.exports = { queryId: "lJDTMJA5l2bEu4koNJI7PA", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "WYk10XynEMJPN2Zpx4jzeg", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         244275: (e) => {
-            e.exports = { queryId: "satE8De54hT0A8Zmc4P1yQ", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "A5C2pQWoHKo-3EEcjcixTw", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         51864: (e) => {
-            e.exports = { queryId: "oFSFfkMLEhZnPEjd3gTO7w", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "qoDOTU13oS9M1RGMplXL_Q", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         118869: (e) => {
-            e.exports = { queryId: "9DMh2FEg_RqX1YpT13dIjw", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "qthnfVGCRLlwwANfChUT7A", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         342454: (e) => {
-            e.exports = { queryId: "ctRuX6GS_N7Utf02ABlxAA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "0jnCD9ss6PJTYFc3uFGgsA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         433579: (e) => {
-            e.exports = { queryId: "fw0TJIs05F18QHDlnNhLBg", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "xUPcB8dJvA4uTyFQzN1b1Q", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         679129: (e, t, a) => {
             "use strict";
@@ -68,7 +68,7 @@
         },
         690822: (e, t, a) => {
             "use strict";
-            a.d(t, { ZP: () => We });
+            a.d(t, { ZP: () => Qe });
             var n = a(807896),
                 l = a(202784),
                 r = a(67369),
@@ -91,7 +91,7 @@
                 w = a(65469),
                 E = a(518426),
                 k = a(611478);
-            const Z = [
+            const x = [
                     { label: "Plain text", value: "" },
                     { label: "C", value: "c" },
                     { label: "C#", value: "csharp" },
@@ -124,12 +124,12 @@
                     { label: "Swift", value: "swift" },
                     { label: "Typescript", value: "typescript" },
                 ],
-                x = d().hf6f2914,
+                Z = d().hf6f2914,
                 A = d().abd845fe,
                 P = d().ebfd8ac6,
                 T = d().h3701ffe,
-                I = d().be4a00c2,
-                S = d().i3128619,
+                S = d().be4a00c2,
+                I = d().i3128619,
                 B = d().dbb02ec4,
                 R = ({ code: e = "", language: t = "", onAddCode: a, onChange: n }) => {
                     const [o, i] = l.useState(e),
@@ -149,35 +149,35 @@
                         F = l.useCallback((e) => {
                             u(e);
                         }, []),
-                        N = l.useCallback((e) => {
+                        q = l.useCallback((e) => {
                             m(e || "");
                         }, []),
                         j = l.useCallback((e, t) => {
                             u(e), m(t || "");
                         }, []),
-                        q = l.useCallback(() => {
+                        N = l.useCallback(() => {
                             a(((e, t) => `\`\`\`${t}\n${e.replaceAll("```", "")}\n\`\`\``)(o, d));
                         }, [d, a, o]);
-                    return l.createElement(h.Z, { style: D.content }, l.createElement(h.Z, { style: M ? D.rowNarrow : D.row }, _ ? l.createElement(E.Z, { onChange: N, onEnter: y.Z, onSelect: j, value: p }) : l.createElement(f.ZP, { label: B, onChange: F, options: Z, style: [D.input, D.rowItem], value: d }), l.createElement(h.Z, { style: D.actionButtons }, l.createElement(g.ZP, { disabled: !o.trim(), onClick: () => c(!s), size: "small", type: "brandText" }, s ? A : x), l.createElement(g.ZP, { disabled: !o.trim(), onClick: q, type: "brandFilled" }, e ? T : P))), s ? l.createElement(h.Z, { style: [D.preview, !M && D.maxHeight] }, l.createElement(w.Z, { code: o, language: d })) : l.createElement(v.Z, { autoComplete: "off", errorText: S({ count: R }), label: I, maxLength: R, multiline: !0, name: "code-input", numberOfLines: 15, onChange: L, style: D.input, validLength: R, value: o }));
+                    return l.createElement(h.Z, { style: D.content }, l.createElement(h.Z, { style: M ? D.rowNarrow : D.row }, _ ? l.createElement(E.Z, { onChange: q, onEnter: y.Z, onSelect: j, value: p }) : l.createElement(f.ZP, { label: B, onChange: F, options: x, style: [D.input, D.rowItem], value: d }), l.createElement(h.Z, { style: D.actionButtons }, l.createElement(g.ZP, { disabled: !o.trim(), onClick: () => c(!s), size: "small", type: "brandText" }, s ? A : Z), l.createElement(g.ZP, { disabled: !o.trim(), onClick: N, type: "brandFilled" }, e ? T : P))), s ? l.createElement(h.Z, { style: [D.preview, !M && D.maxHeight] }, l.createElement(w.Z, { code: o, language: d })) : l.createElement(v.Z, { autoComplete: "off", errorText: I({ count: R }), label: S, maxLength: R, multiline: !0, name: "code-input", numberOfLines: 15, onChange: L, style: D.input, validLength: R, value: o }));
                 },
                 D = i.default.create((e) => ({ content: { display: "column", paddingVertical: e.spaces.space4, justifyContent: "space-between" }, row: { flexDirection: "row", alignItems: "centre", justifyContent: "space-between", gap: e.spaces.space12, zIndex: 2 }, rowNarrow: { flexDirection: "column-reverse" }, rowItem: { flex: 1 }, actionButtons: { flexDirection: "row", justifyContent: "space-around", paddingVertical: e.spaces.space12, gap: e.spaces.space8 }, input: { paddingHorizontal: 0 }, preview: { borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.small, borderColor: e.colors.gray100, padding: e.spaces.space8, marginVertical: e.spaces.space12, overflow: "auto", minHeight: "30vh" }, maxHeight: { maxHeight: "48vh" } })),
                 M = l.memo(R);
             var L = a(815858),
                 F = a(731708);
-            const N = d().e554f642,
+            const q = d().e554f642,
                 j = d().fa524058,
-                q = d().d4ab68e2,
-                z = ({ onCancel: e, onConfirm: t }) => l.createElement(h.Z, { style: H.overlay }, l.createElement(h.Z, { style: H.overlayContent }, l.createElement(L.Z, { animateMount: !0, show: !0 }, l.createElement(h.Z, { style: H.actionBar }, l.createElement(F.ZP, { style: H.confirmationLabel, weight: "bold" }, N), l.createElement(h.Z, { style: H.actionBarButtonContainer }, l.createElement(g.ZP, { onClick: e, size: "small", type: "primaryOutlined" }, j), l.createElement(g.ZP, { onClick: t, size: "small", type: "destructiveOutlined" }, q))))), l.createElement(h.Z, { style: H.mask })),
+                N = d().d4ab68e2,
+                z = ({ onCancel: e, onConfirm: t }) => l.createElement(h.Z, { style: H.overlay }, l.createElement(h.Z, { style: H.overlayContent }, l.createElement(L.Z, { animateMount: !0, show: !0 }, l.createElement(h.Z, { style: H.actionBar }, l.createElement(F.ZP, { style: H.confirmationLabel, weight: "bold" }, q), l.createElement(h.Z, { style: H.actionBarButtonContainer }, l.createElement(g.ZP, { onClick: e, size: "small", type: "primaryOutlined" }, j), l.createElement(g.ZP, { onClick: t, size: "small", type: "destructiveOutlined" }, N))))), l.createElement(h.Z, { style: H.mask })),
                 H = i.default.create((e) => ({ overlay: { ...i.default.absoluteFillObject, height: "100%", zIndex: e.componentZIndices.appBarZIndex + 1 }, mask: { ...i.default.absoluteFillObject, height: "100%", backgroundColor: e.colors.cellBackground, opacity: 0.7 }, overlayContent: { padding: e.spaces.space16, position: "relative", zIndex: e.componentZIndices.appBarZIndex + 2, backgroundColor: e.colors.cellBackground, borderBottomWidth: e.borderWidths.medium, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" }, actionBar: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: e.spaces.space4 }, actionBarButtonContainer: { gap: e.spaces.space4, flexDirection: "row" }, confirmationLabel: { display: "flex" } })),
                 G = l.memo(z);
-            var Q = a(461756),
-                W = a(371344),
-                O = a(956272),
-                V = a(666536),
+            var W = a(461756),
+                Q = a(371344),
+                V = a(956272),
+                O = a(666536),
                 U = a(511985),
-                J = a(961817),
-                K = a(992720),
-                X = a(278066),
+                K = a(961817),
+                X = a(992720),
+                J = a(278066),
                 $ = a(223071),
                 Y = a(237837),
                 ee = a(668214),
@@ -195,8 +195,8 @@
                         [d, u] = l.useState(!0),
                         [p, m] = l.useState(""),
                         b = !a,
-                        _ = t ?? (0, J.i)(),
-                        f = (r || (0, K.Z)(_)) && !Q.Z.reducedMotionEnabled,
+                        _ = t ?? (0, K.i)(),
+                        f = (r || (0, X.Z)(_)) && !W.Z.reducedMotionEnabled,
                         v = (e) => {
                             i(e), m(e.display_name);
                         },
@@ -206,12 +206,12 @@
                         C = l.useCallback((e) => {
                             i(null), c(e);
                         }, []),
-                        w = l.useMemo(() => (0, V.Z)(C, U.zH), [C]),
+                        w = l.useMemo(() => (0, O.Z)(C, U.zH), [C]),
                         E = l.createElement(
                             h.Z,
                             { style: ie.searchContainer },
-                            l.createElement(W.Z, {
-                                Icon: O.default,
+                            l.createElement(Q.Z, {
+                                Icon: V.default,
                                 autoFocus: !0,
                                 key: s,
                                 onChange: (e) => {
@@ -230,7 +230,7 @@
                             b ? null : l.createElement(g.ZP, { "aria-label": oe, disabled: d, onPress: y, size: "small", style: ie.searchButton, type: "brandFilled" }, oe),
                         );
                     let k;
-                    return (k = s ? l.createElement(Y.Z, { gifSearchKey: U.AD.NoteComposition, onClickGif: n, query: s, shouldAutoPlayGif: f }) : o ? l.createElement($.Z, { category: o, gifSearchKey: U.AD.NoteComposition, onClickGif: n, shouldAutoPlayGif: f }) : l.createElement(X.ZP, { gifSearchKey: U.AD.NoteComposition, onClickCategory: v })), l.createElement(h.Z, null, E, k);
+                    return (k = s ? l.createElement(Y.Z, { gifSearchKey: U.AD.NoteComposition, onClickGif: n, query: s, shouldAutoPlayGif: f }) : o ? l.createElement($.Z, { category: o, gifSearchKey: U.AD.NoteComposition, onClickGif: n, shouldAutoPlayGif: f }) : l.createElement(J.ZP, { gifSearchKey: U.AD.NoteComposition, onClickCategory: v })), l.createElement(h.Z, null, E, k);
                 });
             var ce = a(366929),
                 de = a(40610),
@@ -274,20 +274,20 @@
             var we = a(161821),
                 Ee = a(335923),
                 ke = a(507651);
-            const Ze = d().c80940f4,
-                xe = d().hf6f2914,
+            const xe = d().c80940f4,
+                Ze = d().hf6f2914,
                 Ae = d().ebfd8ac6,
                 Pe = d().h3701ffe,
                 Te = d().i3128619,
-                Ie = Object.freeze({ MARKDOWN: Ze, PREVIEW: xe }),
-                Se = i.default.create((e) => ({ input: { paddingHorizontal: 0 }, preview: { borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.small, borderColor: e.colors.gray100, padding: e.spaces.space12, marginVertical: e.spaces.space12, overflow: "auto", minHeight: "30vh" }, maxHeight: { maxHeight: "48vh" } })),
+                Se = Object.freeze({ MARKDOWN: xe, PREVIEW: Ze }),
+                Ie = i.default.create((e) => ({ input: { paddingHorizontal: 0 }, preview: { borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.small, borderColor: e.colors.gray100, padding: e.spaces.space12, marginVertical: e.spaces.space12, overflow: "auto", minHeight: "30vh" }, maxHeight: { maxHeight: "48vh" } })),
                 Be = ({ markdown: e = "", onAddMarkdown: t, onChange: a }) => {
                     const [n, o] = l.useState(e),
-                        [i, s] = l.useState(Ie.MARKDOWN),
+                        [i, s] = l.useState(Se.MARKDOWN),
                         c = (0, r.yu)(),
                         d = 1e3 * (0, C.D2)("responsive_web_twitter_article_markdown_block_limit").getNumberValue(10),
                         u = (e) => () => i === e,
-                        p = (0, we.Z)(Ie).map((e) => ({ key: e, label: e, isActive: u(e), to: location.pathname, onClick: () => s(e) })),
+                        p = (0, we.Z)(Se).map((e) => ({ key: e, label: e, isActive: u(e), to: location.pathname, onClick: () => s(e) })),
                         m = l.useCallback(
                             (e) => {
                                 o(e.currentTarget.value), a && a(e.currentTarget.value);
@@ -300,10 +300,10 @@
                         l.createElement(ke.Z, { links: p }),
                         (() => {
                             switch (i) {
-                                case Ie.MARKDOWN:
-                                    return l.createElement(v.Z, { autoComplete: "off", errorText: Te({ count: d }), label: "Add markdown here", maxLength: d, multiline: !0, name: "markdown-input", numberOfLines: 15, onChange: m, style: Se.input, validLength: d, value: n });
-                                case Ie.PREVIEW:
-                                    return l.createElement(h.Z, { style: [Se.preview, !c && Se.maxHeight] }, l.createElement(Ee.Z, { markdownText: n }));
+                                case Se.MARKDOWN:
+                                    return l.createElement(v.Z, { autoComplete: "off", errorText: Te({ count: d }), label: "Add markdown here", maxLength: d, multiline: !0, name: "markdown-input", numberOfLines: 15, onChange: m, style: Ie.input, validLength: d, value: n });
+                                case Se.PREVIEW:
+                                    return l.createElement(h.Z, { style: [Ie.preview, !c && Ie.maxHeight] }, l.createElement(Ee.Z, { markdownText: n }));
                                 default:
                                     return null;
                             }
@@ -316,20 +316,20 @@
                 Me = d().d794135c,
                 Le = d().e187f906,
                 Fe = d().add55c98,
-                Ne = d().fa4e68ca,
+                qe = d().fa4e68ca,
                 je = d().c80940f4,
-                qe = d().cfeb3f86,
+                Ne = d().cfeb3f86,
                 ze = d().ad9e175c,
                 He = (Re.Q.Media, Re.Q.GIFs, Re.Q.Posts, Re.Q.Markdown, Re.Q.Code, Re.Q.LaTeX, i.default.create((e) => ({ sheet: { minHeight: "40vh", maxHeight: "70vh" }, sheetNarrow: { maxHeight: "100vh" }, container: { paddingBottom: e.spaces.space16, paddingHorizontal: e.spaces.space16 }, mediaPickerMaskStyle: { backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium }, tabs: { borderBottomColor: "transparent" }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto" } }))),
                 Ge = l.createElement(s.Z, { ratio: i.default.theme.aspectRatios.landscape }),
-                Qe = l.createElement(u.default, null),
-                We = (e) => {
+                We = l.createElement(u.default, null),
+                Qe = (e) => {
                     const { attachmentType: t, codeLanguage: a, markdown: i, onAddGif: s, onAddLaTeX: c, onAddMarkdown: d, onAddMedia: u, onAddTweets: h, onClose: f, tex: g } = e,
                         [v, y] = l.useState(!1),
                         [C, w] = l.useState(!1),
                         [E, k] = l.useState(null),
-                        Z = (0, r.yu)(),
-                        x = t === Re.Q.Markdown || t === Re.Q.LaTeX || t === Re.Q.Code,
+                        x = (0, r.yu)(),
+                        Z = t === Re.Q.Markdown || t === Re.Q.LaTeX || t === Re.Q.Code,
                         A = (e) => {
                             k(e);
                         },
@@ -337,22 +337,22 @@
                         T = (e) => {
                             w(i !== e);
                         },
-                        I = () => {
+                        S = () => {
                             k(null);
                         },
-                        S = l.useMemo(() => ({ withKeyboardNavigation: !x, onBackClick: P ? I : void 0 }), [P, x]);
+                        I = l.useMemo(() => ({ withKeyboardNavigation: !Z, onBackClick: P ? S : void 0 }), [P, Z]);
                     return l.createElement(
                         o.Z,
                         (0, n.Z)(
                             {
                                 enableMaskForDismiss: !0,
                                 onClose: () => {
-                                    x && C ? y(!0) : f();
+                                    Z && C ? y(!0) : f();
                                 },
-                                style: [He.sheet, Z && He.sheetNarrow],
+                                style: [He.sheet, x && He.sheetNarrow],
                                 title: De,
                             },
-                            S,
+                            I,
                         ),
                         l.createElement(
                             _.Z,
@@ -360,7 +360,7 @@
                             (() => {
                                 switch (t) {
                                     case Re.Q.Media:
-                                        return l.createElement(m.Z, { acceptGifs: !0, acceptVideo: !0, borderRadius: b.A.MEDIUM, currentContent: Ge, description: Me, icon: Qe, maskStyle: He.mediaPickerMaskStyle, multiple: !0, onAddMediaFiles: u, withDragDrop: !0 });
+                                        return l.createElement(m.Z, { acceptGifs: !0, acceptVideo: !0, borderRadius: b.A.MEDIUM, currentContent: Ge, description: Me, icon: We, maskStyle: He.mediaPickerMaskStyle, multiple: !0, onAddMediaFiles: u, withDragDrop: !0 });
                                     case Re.Q.GIFs:
                                         return l.createElement(se, { onAddGif: s });
                                     case Re.Q.Posts:
@@ -539,4 +539,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-9f4db315.cd03d7da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-9f4db315.e25d3b3a.js.map

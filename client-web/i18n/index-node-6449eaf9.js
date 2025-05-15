@@ -4146,7 +4146,7 @@
                     return e.stringCount + " new request" + n(e.count, "", "s");
                 }),
                 a("ed93de0c", "Analyzing Post"),
-                a("ba44f4ea", "More details from Grok"),
+                a("d1d92e40", "More details"),
                 a("a6e89af8", "Open conversation"),
                 a("ica55d24", "New Chat"),
                 a("f794af9a", "Fun mode"),
@@ -13226,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/index-node-6449eaf9.93ce71ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/index-node-6449eaf9.9cfd8e8a.js.map

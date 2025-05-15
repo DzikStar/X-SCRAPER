@@ -4145,7 +4145,7 @@
                     return a.stringCount + " new requests";
                 }),
                 i("ed93de0c", "Menganalisis Siaran"),
-                i("ba44f4ea", "Butiran lanjut daripada Grok"),
+                i("d1d92e40", "More details"),
                 i("a6e89af8", "Perbualan terbuka"),
                 i("ica55d24", "Sembang Baharu"),
                 i("f794af9a", "Mod seronok"),
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f00fed4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f52d85aa.js.map

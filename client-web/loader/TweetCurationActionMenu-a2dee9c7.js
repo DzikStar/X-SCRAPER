@@ -2,31 +2,31 @@
     ["loader.TweetCurationActionMenu-a2dee9c7", "loader.FeedbackSheet"],
     {
         594771: (e) => {
-            e.exports = { queryId: "ZhMzC14IxRzWdJOgNQINgg", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "Rq-xvXqDhxa_2kV24TgZqg", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         551e3: (e) => {
             e.exports = { queryId: "e4lWqB6m2TA8Fn_j9L9xEA", operationName: "ArticleEntityDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         486962: (e) => {
-            e.exports = { queryId: "ov1MxYkGzbQeLrTJTvrGNQ", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "Ka4ZRwMbmQ0z4FFNncngcA", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         207318: (e) => {
-            e.exports = { queryId: "lJDTMJA5l2bEu4koNJI7PA", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "WYk10XynEMJPN2Zpx4jzeg", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         244275: (e) => {
-            e.exports = { queryId: "satE8De54hT0A8Zmc4P1yQ", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "A5C2pQWoHKo-3EEcjcixTw", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         51864: (e) => {
-            e.exports = { queryId: "oFSFfkMLEhZnPEjd3gTO7w", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "qoDOTU13oS9M1RGMplXL_Q", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         118869: (e) => {
-            e.exports = { queryId: "9DMh2FEg_RqX1YpT13dIjw", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "qthnfVGCRLlwwANfChUT7A", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         342454: (e) => {
-            e.exports = { queryId: "ctRuX6GS_N7Utf02ABlxAA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "0jnCD9ss6PJTYFc3uFGgsA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         433579: (e) => {
-            e.exports = { queryId: "fw0TJIs05F18QHDlnNhLBg", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "xUPcB8dJvA4uTyFQzN1b1Q", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         337653: (e, t, i) => {
             "use strict";
@@ -188,7 +188,7 @@
         },
         683814: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => F });
+            i.d(t, { Z: () => B });
             var n = i(807896),
                 a = i(202784),
                 l = i(157130),
@@ -220,18 +220,18 @@
                 Z = m().e7b4b30a,
                 q = m().cfd2f35e,
                 R = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
-                B = (e) => {
+                F = (e) => {
                     const { dismiss: t, isModal: i, midConversationTweet: n, value: l } = e,
                         { featureSwitches: r, userClaims: p } = a.useContext(w.rC),
                         u = (t) => () => {
                             e.onChange(t), e.dismiss();
                         },
-                        B = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
-                        F = !!n,
-                        Q = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
+                        F = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
+                        B = !!n,
+                        Q = B && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
                     let P = x;
                     return (
-                        Q ? (P = S) : F && (P = Z),
+                        Q ? (P = S) : B && (P = Z),
                         a.createElement(
                             s.Z,
                             { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [R.root, i ? R.modal : R.popover] },
@@ -244,18 +244,18 @@
                                 e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
                                 a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
                                 a.createElement(c.Z, { Icon: Q ? g.default : v.default, actionText: P, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
-                                B &&
+                                F &&
                                     !n &&
                                     a.createElement(d.Z, {
                                         checked: e.disallowedReplyControls.includes(C.m.Links),
                                         label: m().ca6500a8,
                                         onChange:
-                                            ((D = C.m.Links),
+                                            ((j = C.m.Links),
                                             () => {
-                                                if (e.disallowedReplyControls.includes(D)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== D));
+                                                if (e.disallowedReplyControls.includes(j)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== j));
                                                 else {
                                                     const t = new Set([...e.disallowedReplyControls]);
-                                                    t.add(D), e.setDisallowedReplyControls([...t]);
+                                                    t.add(j), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
                                         style: R.disallowLinkRepliesCheck,
@@ -264,9 +264,9 @@
                             ),
                         )
                     );
-                    var D;
+                    var j;
                 },
-                F = (e) => {
+                B = (e) => {
                     const { children: t, controlled: i = !1, disabled: s } = e,
                         [o, c] = a.useState(!1),
                         d = a.useCallback(() => c(!0), []),
@@ -280,7 +280,7 @@
                             onDismiss: _,
                             renderContent: (t, i) => {
                                 const { children: l, controlled: r, ...s } = e;
-                                return a.createElement(B, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
+                                return a.createElement(F, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
                             },
                             visibilityBehavior: p,
                         },
@@ -379,4 +379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.d728910a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.3a2f514a.js.map

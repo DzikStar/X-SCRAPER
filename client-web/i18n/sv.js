@@ -2823,13 +2823,13 @@
                     return "Prenumerationsnivån ska ändras till " + e.tierName + " från och med nästa faktureringscykel den " + e.date;
                 }),
                 t("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Nästa faktureringscykel inleds " + e.date;
                 }),
                 t("edbb700f", function (e) {
                     return "Inleds nästa faktureringscykel " + e.date;
                 }),
                 t("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Prenumerationen avslutas " + e.date;
                 }),
                 t("e9884540", "Aktiv rabatt"),
                 t("bfb879aa", "Kommande rabatt"),
@@ -2984,7 +2984,7 @@
                 t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner."),
                 t("bce3726a", "Uppdatera faktureringsuppgifterna"),
                 t("fce9ecce", "Föreslagna videor"),
-                t("da00e00a", "Try the new News"),
+                t("da00e00a", "Testa nya Nyheter"),
                 t("c40666d8", "Testa det"),
                 t("j66b95a2", "Nyheter på djupet"),
                 t("b58d2bd2", "Relevanta inlägg"),
@@ -4146,7 +4146,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 t("ed93de0c", "Analyserar inlägget"),
-                t("ba44f4ea", "Fler detaljer från Grok"),
+                t("d1d92e40", "More details"),
                 t("a6e89af8", "Öppna samtalet"),
                 t("ica55d24", "Ny chatt"),
                 t("f794af9a", "Roligt läge"),
@@ -6681,7 +6681,7 @@
                 t("b2d41138", "Större räckvidd = högre intäkter"),
                 t("defa7f12", "Nyttja en svarsboost som gör dig extra synlig så att du kan växa snabbare."),
                 t("i3e4955d", "här"),
-                t("fdc5d06c", "Exit Full Screen"),
+                t("fdc5d06c", "Stäng helskärmsläget"),
                 t("cea1c00e", "Kom till nivån där du får vara engagerad"),
                 t("f8e6a280", "Nya konton måste betala en liten årsavgift innan de kan göra inlägg, bokmärka och svara. Detta gör vi för att minska mängden spam och ge alla en bättre upplevelse. Du kan dock följa konton och botanisera på X kostnadsfritt."),
                 t("h968efc6", "Nya konton måste betala en liten avgift innan de kan göra inlägg, bokmärka och svara. Detta gör vi för att minska mängden spam och ge alla en bättre upplevelse. Du kan dock följa konton och botanisera på X kostnadsfritt."),
@@ -6725,7 +6725,7 @@
                 t("i1801686", "Detta är en ogiltig sökfråga. Försök med en annan."),
                 t("a0b4541c", "Något gick fel, men oroa dig inte, det är inte ditt fel"),
                 t("d7eebb60", "Ordnar med din prenumeration"),
-                t("h707b180", "Your subscription update is complete"),
+                t("h707b180", "Prenumerationsuppdateringen är klar"),
                 t("a452ab68", "Detta kan ta ett par sekunder."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Uppdateringen lyckades"),
@@ -7393,7 +7393,7 @@
                 t("a10aa36c", "Hjälpcenter"),
                 t("d0740558", "Hjälpcenter"),
                 t("d2d76dca", "Hjälpcenter"),
-                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("de8bcdaa", "Fördelning av de personer som har sett ditt inlägg"),
                 t("cfa1ef16", "Boosta"),
                 t("d267afa2", "Under 20"),
                 t("db81cab0", "20–29"),
@@ -7405,12 +7405,12 @@
                 t("fa5be588", "Organiskt"),
                 t("c65126fe", "Boostad"),
                 t("c61c6624", "Sponsrad"),
-                t("f1196a04", "Boost Analytics"),
-                t("bb66e3fc", "Promote Analytics"),
+                t("f1196a04", "Booststatistik"),
+                t("bb66e3fc", "Marknadsföringsstatistik"),
                 t("g512ddcc", "Organisk analys"),
-                t("j9256524", "Breakdown of your boost performance"),
-                t("ceeb3016", "Breakdown of your promote performance"),
-                t("bf4558fa", "Breakdown of your organic performance"),
+                t("j9256524", "Fördelning av ditt boostresultat"),
+                t("ceeb3016", "Fördelning av ditt marknadsföringsresultat"),
+                t("bf4558fa", "Fördelning av ditt organiska resultat"),
                 t("c69069e6", "Antalet gånger detta inlägg har setts på X."),
                 t("a0615bac", "Det totala antalet gånger en användare har gjort något med ett inlägg. Detta omfattar alla klick någonstans på inlägget (hashtaggar, länkar, avataren, användarnamnet och inläggsexpansionen), återpubliceringar, svar, följningar och gilla-markeringar."),
                 t("d8abdaa4", "Nya följare"),
@@ -7419,7 +7419,7 @@
                 t("c7d0d1c4", "Antalet klick på någon webbadress i detta inlägg"),
                 t("a4da7724", "Antalet gånger folk har tittat på detaljerna om detta inlägg"),
                 t("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " från boost";
                 }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " från kampanj";
@@ -7428,7 +7428,7 @@
                     return e.percentage + " från andra än följare";
                 }),
                 t("h4cbba3e", "< 5 %"),
-                t("f4f0094c", "< 5% from boost"),
+                t("f4f0094c", "< 5 % från boost"),
                 t("h1cdac12", "< 5 % från kampanj"),
                 t("g884b2cc", "< 5 % från andra än följare"),
                 t("b32334a0", "Konton som har nåtts"),
@@ -12020,7 +12020,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", " % i avgift, minst ", ")"];
                             },
                         },
                         {
@@ -13226,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.1e85582a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.4aca5dca.js.map

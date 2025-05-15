@@ -3,53 +3,54 @@
     ["loader.AppModules-e4e3d8bb"],
     {
         392884: (e, t, i) => {
-            i.r(t), i.d(t, { AppInstallOnLandingPrompt: () => Ce, AudioModule: () => ze, BottomCookieBannerPicker: () => Se, ColumnFromPath: () => Be, ColumnTimelineAdapter: () => Ge, DtabBar: () => Ee, GlobalKeyboardShortcuts: () => Le, IntercomStarter: () => Ie, JetfuelDevBar: () => ke, LeaveSite: () => Ve, LivePipeline: () => Ae, LoggedOutNotifications: () => $e, ModalSheet: () => De, Toast: () => Te, appReloader: () => Oe, badgeTimers: () => Me, bindKeyboardShortcuts: () => Pe, getScreenReaderShortcutsDataAttribute: () => Ne, ie11Reflower: () => Re, initGeoLocation: () => Fe, inputDetect: () => we, multiAccountListFetcher: () => Ze, redirectEmailUser: () => Ue, scribeExternalReferer: () => xe, userPresence: () => je });
+            i.r(t), i.d(t, { AppInstallOnLandingPrompt: () => Se, AudioModule: () => ke, BottomCookieBannerPicker: () => Ae, ColumnFromPath: () => De, ColumnTimelineAdapter: () => Te, Debugger: () => Oe, DtabBar: () => Me, GlobalKeyboardShortcuts: () => Re, IntercomStarter: () => Ne, JetfuelDevBar: () => Ce, LeaveSite: () => ze, LivePipeline: () => Fe, LoggedOutNotifications: () => je, ModalSheet: () => $e, Toast: () => He, appReloader: () => Ee, badgeTimers: () => Ie, bindKeyboardShortcuts: () => Le, getScreenReaderShortcutsDataAttribute: () => Pe, ie11Reflower: () => Ze, initGeoLocation: () => Ue, inputDetect: () => xe, multiAccountListFetcher: () => Ve, redirectEmailUser: () => Be, scribeExternalReferer: () => Ge, userPresence: () => Ke });
             var r = {};
-            i.r(r), i.d(r, { KEYBOARD: () => O, MOUSE: () => M, _private: () => H, detectedType: () => F, detectedTypes: () => z, initialize: () => C, register: () => j, registerEvery: () => V, registerSome: () => $, reset: () => G, unregister: () => B });
+            i.r(r), i.d(r, { KEYBOARD: () => M, MOUSE: () => P, _private: () => K, detectedType: () => j, detectedTypes: () => F, initialize: () => z, register: () => $, registerEvery: () => B, registerSome: () => V, reset: () => H, unregister: () => G });
             var s = i(567447),
-                o = i(32399),
-                n = i(105019),
-                a = i(223543),
-                c = i(80309),
-                d = i(642028),
-                l = i(634518),
-                u = i(316391),
-                p = i(551415),
-                h = i(331879),
-                m = i(337686),
-                _ = i(58255),
-                f = i(726499),
-                g = i(516951),
-                v = i(615656),
-                b = i(806960),
-                y = i(454319),
-                w = i(390387),
-                S = i(71620),
-                E = i(801501);
-            const k = (e, t = 1e3) => {
+                o = i(142324),
+                n = i(32399),
+                a = i(105019),
+                c = i(223543),
+                d = i(80309),
+                l = i(642028),
+                u = i(634518),
+                p = i(316391),
+                h = i(551415),
+                m = i(331879),
+                _ = i(337686),
+                f = i(58255),
+                g = i(726499),
+                v = i(516951),
+                b = i(615656),
+                y = i(806960),
+                w = i(454319),
+                S = i(390387),
+                E = i(71620),
+                k = i(801501);
+            const I = (e, t = 1e3) => {
                     window.requestIdleCallback ? window.requestIdleCallback(() => e.fire()) : setTimeout(() => e.fire(), t);
                 },
-                I = (e) => {
-                    if (!w.Qb(e.getState())) return;
-                    const t = e.dispatch((0, S.zr)("BADGE_TIMERS")({ showToast: !1, [v.ZP.AccessDeniedByBouncer]: { customAction: g.Z } })),
+                L = (e) => {
+                    if (!S.Qb(e.getState())) return;
+                    const t = e.dispatch((0, E.zr)("BADGE_TIMERS")({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: v.Z } })),
                         i = (i) => e.dispatch(i).catch(t),
-                        r = new E.Z(3e4).interval(() => {
-                            "background" !== f.Z.currentState && (i((0, b.kJ)()), (0, y.Xy)(e.getState()).forEach(i));
+                        r = new k.Z(3e4).interval(() => {
+                            "background" !== g.Z.currentState && (i((0, y.kJ)()), (0, w.Xy)(e.getState()).forEach(i));
                         });
-                    r.start(), k(r);
-                    f.Z.addEventListener("change", (e) => {
-                        "active" === e && k(r);
+                    r.start(), I(r);
+                    g.Z.addEventListener("change", (e) => {
+                        "active" === e && I(r);
                     });
                 };
-            var L = i(427495),
-                A = i.n(L),
-                D = (i(136728), i(411916)),
-                T = i.n(D);
-            const O = "keyboard",
-                M = "mouse";
-            let P = [];
-            const R = { [O]: !1, [M]: !1 };
-            class Z {
+            var A = i(427495),
+                D = i.n(A),
+                T = (i(136728), i(411916)),
+                O = i.n(T);
+            const M = "keyboard",
+                P = "mouse";
+            let R = [];
+            const Z = { [M]: !1, [P]: !1 };
+            class U {
                 constructor(e) {
                     (this._handleTimerEnd = () => {
                         this._count >= 3 && this._handleDetected(), this._reset();
@@ -73,7 +74,7 @@
                         (this._count = 0);
                 }
             }
-            class U {
+            class x {
                 constructor(e) {
                     (this._handleKeyDown = (e) => {
                         const { altKey: t, ctrlKey: i, metaKey: r, target: s } = e;
@@ -89,66 +90,66 @@
                         (this.detected = e);
                 }
             }
-            function x(e) {
-                R[e] = !0;
-                const t = P.filter(({ matches: e }) => e()),
-                    i = P.filter(({ matches: e }) => !e());
-                (P = i), t.forEach(({ callback: e }) => e());
+            function N(e) {
+                Z[e] = !0;
+                const t = R.filter(({ matches: e }) => e()),
+                    i = R.filter(({ matches: e }) => !e());
+                (R = i), t.forEach(({ callback: e }) => e());
             }
-            let N;
-            const C = () => {
-                    (N = [new U(() => x(O)), new Z(() => x(M))]), N.forEach((e) => e.attach());
+            let C;
+            const z = () => {
+                    (C = [new x(() => N(M)), new U(() => N(P))]), C.forEach((e) => e.attach());
                 },
-                z = () => Object.keys(R).filter((e) => R[e]),
-                F = (e) => R[e],
-                j = (e, t) => {
-                    const i = () => R[t];
-                    i() ? T()(e) : P.push({ matches: i, callback: e });
-                },
+                F = () => Object.keys(Z).filter((e) => Z[e]),
+                j = (e) => Z[e],
                 $ = (e, t) => {
-                    const i = () => t.some((e) => R[e]);
-                    i() ? T()(e) : P.push({ matches: i, callback: e });
+                    const i = () => Z[t];
+                    i() ? O()(e) : R.push({ matches: i, callback: e });
                 },
                 V = (e, t) => {
-                    const i = () => t.every((e) => R[e]);
-                    i() ? T()(e) : P.push({ matches: i, callback: e });
+                    const i = () => t.some((e) => Z[e]);
+                    i() ? O()(e) : R.push({ matches: i, callback: e });
                 },
-                B = (e) => {
-                    const t = P.indexOf(e);
-                    t > -1 && P.splice(t, 1);
+                B = (e, t) => {
+                    const i = () => t.every((e) => Z[e]);
+                    i() ? O()(e) : R.push({ matches: i, callback: e });
                 },
-                G = () => {
-                    (P = []),
-                        Object.keys(R).forEach((e) => {
-                            R[e] = !1;
+                G = (e) => {
+                    const t = R.indexOf(e);
+                    t > -1 && R.splice(t, 1);
+                },
+                H = () => {
+                    (R = []),
+                        Object.keys(Z).forEach((e) => {
+                            Z[e] = !1;
                         }),
-                        N.forEach((e) => e.detach());
+                        C.forEach((e) => e.detach());
                 },
-                H = { MOUSE_INTERVAL_TIME_IN_MS: 500, SUCCESSIVE_MOUSE_EVENTS: 3, detected: x };
-            var K = i(528840);
-            var X = i(806528),
+                K = { MOUSE_INTERVAL_TIME_IN_MS: 500, SUCCESSIVE_MOUSE_EVENTS: 3, detected: N };
+            var X = i(528840);
+            var q = i(806528),
                 W = i(341276),
-                q = i(38562);
-            const Q = (e) =>
+                Q = i(38562);
+            const Y = (e) =>
                     navigator?.permissions
                         ? navigator?.permissions?.query({ name: "geolocation" }).then(function (t) {
                               return (
-                                  e.dispatch((0, X.ey)(t.state)),
+                                  e.dispatch((0, q.ey)(t.state)),
                                   (t.onchange = function () {
-                                      e.dispatch((0, X.ey)(this.state));
+                                      e.dispatch((0, q.ey)(this.state));
                                   }),
                                   Promise.resolve(t.state)
                               );
                           })
                         : Promise.resolve(),
-                Y = (e) =>
-                    (0, q.JJ)(e.getState())
-                        ? Q(e).then((t) => {
-                              t === W.S.granted && e.dispatch((0, X.iG)());
+                J = (e) =>
+                    (0, Q.JJ)(e.getState())
+                        ? Y(e).then((t) => {
+                              t === W.S.granted && e.dispatch((0, q.iG)());
                           })
                         : Promise.resolve();
-            var J = i(323265);
-            const ee = {
+            var ee = i(323265);
+            const te = {
                 init: (e) => {
                     const t = (t) => {
                         if ("active" === t && e && e.body) {
@@ -156,24 +157,24 @@
                             (e.body.style.display = "none"), e.body.clientHeight, (e.body.style.display = t);
                         }
                     };
-                    J.ZP.isDesktopOS() && J.ZP.isIE() && f.Z.addEventListener("change", t);
+                    ee.ZP.isDesktopOS() && ee.ZP.isIE() && g.Z.addEventListener("change", t);
                 },
             };
-            var te = i(163390),
-                ie = (i(571372), i(543673), i(240753), i(128399), i(2027)),
-                re = i(446914),
-                se = i(88656);
-            let oe;
-            const ne = {
+            var ie = i(163390),
+                re = (i(571372), i(543673), i(240753), i(128399), i(2027)),
+                se = i(446914),
+                oe = i(88656);
+            let ne;
+            const ae = {
                     isSupported: (e) => "EventSource" in window && e.isTrue("livepipeline_client_enabled"),
                     isSupportedAndReady(e) {
-                        return this.isSupported(e) && !!oe;
+                        return this.isSupported(e) && !!ne;
                     },
                     create(e, t, i) {
                         if (!this.isSupported(e)) throw new Error("This browser does not support LivePipeline");
-                        if (oe) throw new Error("LivePipeline should only be initialized once");
+                        if (ne) throw new Error("LivePipeline should only be initialized once");
                         return (
-                            (oe = new ie.Z({
+                            (ne = new re.Z({
                                 makeEventSource: (e) => {
                                     const t = ((e) => {
                                         const t = e.map(encodeURIComponent).join(","),
@@ -186,108 +187,101 @@
                                 },
                                 updateSubscriptions: (e) =>
                                     t
-                                        .withEndpoint(re.Z)
+                                        .withEndpoint(se.Z)
                                         .updateSubscriptions(e)
                                         .catch((e) => {
                                             if (e)
-                                                if (e instanceof se.Z && (0, v.VZ)(e, v.ZP.SessionNotFound)) oe && oe.restartEventSource();
-                                                else if (!(e instanceof se.Z) && e instanceof Error) return Promise.reject(e);
+                                                if (e instanceof oe.Z && (0, b.VZ)(e, b.ZP.SessionNotFound)) ne && ne.restartEventSource();
+                                                else if (!(e instanceof oe.Z) && e instanceof Error) return Promise.reject(e);
                                             return Promise.resolve();
                                         }),
                             })),
-                            f.Z.addEventListener("change", (e) => this._handleAppStateChange(e)),
-                            oe
+                            g.Z.addEventListener("change", (e) => this._handleAppStateChange(e)),
+                            ne
                         );
                     },
                     get() {
-                        if (!oe) throw new Error("LivePipeline instance has not been initialized");
-                        return oe;
+                        if (!ne) throw new Error("LivePipeline instance has not been initialized");
+                        return ne;
                     },
                     destroy() {
-                        oe && oe.teardown(), (oe = void 0);
+                        ne && ne.teardown(), (ne = void 0);
                     },
                     _handleAppStateChange(e) {
                         "active" === e ? this.get().resume() : this.get().suspend();
                     },
                 },
-                ae = (e) => {
-                    const t = (0, S.zr)("MULTI_ACCOUNT_LIST_UPDATER"),
-                        i = e.dispatch(t({ showToast: !1, [v.ZP.AccessDeniedByBouncer]: { customAction: g.Z } })),
+                ce = (e) => {
+                    const t = (0, E.zr)("MULTI_ACCOUNT_LIST_UPDATER"),
+                        i = e.dispatch(t({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: v.Z } })),
                         r = (t) => e.dispatch(t).catch(i);
                     (window.requestIdleCallback || window.requestAnimationFrame)(() => {
-                        r((0, y.s2)()).then(() => {
-                            (0, y.Xy)(e.getState()).forEach(r);
+                        r((0, w.s2)()).then(() => {
+                            (0, w.Xy)(e.getState()).forEach(r);
                         });
                     });
                 };
-            var ce = i(192464),
-                de = i(840590);
-            const le = ["/login/error", "/i/flow/lite_login", "/i/flow/login", "/i/flow/signup"],
-                ue = (e, t) => {
-                    const i = !w.Qb(t),
-                        r = w.$q(t),
-                        { pathname: s } = de.default.location;
-                    -1 === le.indexOf(s) && i && r && de.default.replace("/i/flow/lite_login");
+            var de = i(192464),
+                le = i(840590);
+            const ue = ["/login/error", "/i/flow/lite_login", "/i/flow/login", "/i/flow/signup"],
+                pe = (e, t) => {
+                    const i = !S.Qb(t),
+                        r = S.$q(t),
+                        { pathname: s } = le.default.location;
+                    -1 === ue.indexOf(s) && i && r && le.default.replace("/i/flow/lite_login");
                 };
-            var pe = i(401388),
-                he = i(945656),
-                me = i(31326),
-                _e = i(840647),
-                fe = i(833773),
-                ge = i(396987),
-                ve = i(782826);
-            const be = { page: "external", action: "referred" },
-                ye = (e, t, i, r) => {
-                    const s = (e) => r.dispatch((0, S.zr)(e)({})),
-                        o = fe.zI({ featureSwitches: t, query: de.default && de.default.location.query });
-                    if ((0, pe.Z)(o)) return Promise.resolve();
-                    if (o.referer && !ve.ZP.isExternalUrl(o.referer) && !ve.ZP.isInternalRedirect(o.referer)) return Promise.resolve();
+            var he = i(401388),
+                me = i(945656),
+                _e = i(31326),
+                fe = i(840647),
+                ge = i(833773),
+                ve = i(396987),
+                be = i(782826);
+            const ye = { page: "external", action: "referred" },
+                we = (e, t, i, r) => {
+                    const s = (e) => r.dispatch((0, E.zr)(e)({})),
+                        o = ge.zI({ featureSwitches: t, query: le.default && le.default.location.query });
+                    if ((0, he.Z)(o)) return Promise.resolve();
+                    if (o.referer && !be.ZP.isExternalUrl(o.referer) && !be.ZP.isInternalRedirect(o.referer)) return Promise.resolve();
                     o.referer || (o.referer = ""), o.referral_details_str || (o.referral_details_str = ""), o.referral_type || (o.referral_type = 0);
-                    const n = (0, ge.hZ)(t);
+                    const n = (0, ve.hZ)(t);
                     n && (o.external_referer_cookie_value = n);
-                    const a = fe.ti(o),
-                        c = { ...be, client: (0, _e.Z)().clientName };
+                    const a = ge.ti(o),
+                        c = { ...ye, client: (0, fe.Z)().clientName };
                     n && a && (c.action = "set_access_referer_cookie");
                     const d = i.createEventObject(c, "client_event", o),
                         l = i.createPayload([d]);
                     let u;
                     u = o
                         ? e
-                              .withEndpoint(me.Z)
+                              .withEndpoint(_e.Z)
                               .referer({ landing_url: o.url, referral_details: o.referral_details_str || void 0, referrer_url: o.referer || void 0 })
                               .catch(() => s("OCF_EXTERNAL_REFERER"))
                         : Promise.resolve();
                     const p = e
-                        .withEndpoint(he.Z)
+                        .withEndpoint(me.Z)
                         .externalReferer(l)
                         .then((e) => {
-                            e && (0, ge.QF)(t, e[0]);
+                            e && (0, ve.QF)(t, e[0]);
                         })
                         .catch(() => s("SCRIBE_EXTERNAL_REFERER"));
                     return Promise.all([p, u]);
                 },
-                we = r,
                 Se = n.Z,
-                Ee = a.Z,
-                ke = l.Z,
-                Ie = d.Z,
-                Le = c.ZP,
-                Ae = ne,
-                De = s.Z,
-                Te = h.Z,
-                Oe = m,
-                Me = I,
-                Pe = function (e, t) {
+                Ee = _,
+                ke = f.w,
+                Ie = L,
+                Le = function (e, t) {
                     const i = Object.keys(e);
                     let r,
                         s = !1;
                     const o = () => {
                         s ||
-                            ((r = A()(t)),
+                            ((r = D()(t)),
                             i.forEach((t) =>
                                 r.bind(t, (i) => {
                                     var r;
-                                    (0, K.z)(window.location.pathname) ||
+                                    (0, X.z)(window.location.pathname) ||
                                         ((r = e[t]),
                                         (e) => {
                                             e.preventDefault(), e.stopPropagation(), r(e);
@@ -296,25 +290,33 @@
                             ));
                     };
                     return (
-                        $(o, [O, M]),
+                        V(o, [M, P]),
                         () => {
-                            (s = !0), B(o), r && r.unbind(i);
+                            (s = !0), G(o), r && r.unbind(i);
                         }
                     );
                 },
-                Re = ee,
-                Ze = ae,
-                Ue = ue,
-                xe = ye,
-                Ne = te.wR,
-                Ce = o.Z,
-                ze = _.w,
-                Fe = Y,
-                je = ce.Z,
-                $e = p.Z,
-                Ve = u.Z,
-                Be = null,
-                Ge = null;
+                Ae = a.Z,
+                De = null,
+                Te = null,
+                Oe = o.q,
+                Me = c.Z,
+                Pe = ie.wR,
+                Re = d.ZP,
+                Ze = te,
+                Ue = J,
+                xe = r,
+                Ne = l.Z,
+                Ce = u.Z,
+                ze = p.Z,
+                Fe = ae,
+                je = h.Z,
+                $e = s.Z,
+                Ve = ce,
+                Be = pe,
+                Ge = we,
+                He = m.Z,
+                Ke = de.Z;
         },
         944681: (e, t, i) => {
             i.d(t, { k: () => s, Q: () => o });
@@ -527,7 +529,7 @@
                 };
         },
         166677: (e, t, i) => {
-            i.d(t, { $r: () => q, O9: () => X, ZP: () => Q, vK: () => Y });
+            i.d(t, { $r: () => W, O9: () => X, ZP: () => Q, vK: () => Y });
             var r = i(688715),
                 s = i(674132),
                 o = i.n(s),
@@ -574,7 +576,7 @@
                 H = 1048576,
                 K = 1073741824,
                 X = (e) => Object.values(G).includes(e.type),
-                W = (e) => {
+                q = (e) => {
                     const { code: t, limit: i, type: r } = e;
                     if (t)
                         switch (r) {
@@ -593,14 +595,14 @@
                                 return N(Z);
                         }
                 },
-                q = (e) => {
+                W = (e) => {
                     if (X(e)) return e;
                 };
             function Q(e, t = R) {
-                const i = q(e);
+                const i = W(e);
                 if (i) {
                     const r = e.message ? `${t} ${e.message}` : t;
-                    return W(i) || N(r);
+                    return q(i) || N(r);
                 }
             }
             function Y(e, t = P) {
@@ -936,4 +938,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-e4e3d8bb.715e074a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-e4e3d8bb.2a25de8a.js.map

@@ -4146,7 +4146,7 @@
                     return a.stringCount + " new request" + n(a.count, "", "s");
                 }),
                 e("ed93de0c", "Julkaisua analysoidaan"),
-                e("ba44f4ea", "Lisätietoa Grokilta"),
+                e("d1d92e40", "More details"),
                 e("a6e89af8", "Avoin keskustelu"),
                 e("ica55d24", "Uusi keskustelu"),
                 e("f794af9a", "Hupailutila"),
@@ -13239,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.be377b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2bbfa66a.js.map

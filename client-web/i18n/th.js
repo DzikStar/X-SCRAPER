@@ -8,7 +8,7 @@
                     return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
                 },
             });
-            function t(e, c) {
+            function f(e, c) {
                 return c;
             }
             n("c39b0e24", "X"),
@@ -2822,13 +2822,13 @@
                     return "ระดับระบบสมาชิกของคุณถูกกำหนดให้เปลี่ยนแปลงเป็น " + e.tierName + " จากรอบการเรียกเก็บเงินถัดไปในวันที่ " + e.date;
                 }),
                 n("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "รอบการเรียกเก็บเงินถัดไปจะเริ่มในวันที่ " + e.date;
                 }),
                 n("edbb700f", function (e) {
                     return "เริ่มรอบการเรียกเก็บเงินถัดไปวันที่ " + e.date;
                 }),
                 n("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "ระบบสมาชิกจะสิ้นสุดในวันที่ " + e.date;
                 }),
                 n("e9884540", "ส่วนลดที่ใช้งานอยู่"),
                 n("bfb879aa", "ส่วนลดที่รอดำเนินการ"),
@@ -2983,7 +2983,7 @@
                 n("jadeb4da", "อัปเดตวิธีการชำระเงินของคุณโดยทันทีก่อนที่จะสูญเสียสิทธิประโยชน์ของระบบสมาชิก"),
                 n("bce3726a", "อัปเดตการเรียกเก็บเงิน"),
                 n("fce9ecce", "วิดีโอแนะนำ"),
-                n("da00e00a", "Try the new News"),
+                n("da00e00a", "ลองใช้ข่าวสารใหม่"),
                 n("c40666d8", "ลองดู"),
                 n("j66b95a2", "ข่าวเจาะลึก"),
                 n("b58d2bd2", "โพสต์ที่เกี่ยวข้อง"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new requests";
                 }),
                 n("ed93de0c", "กำลังวิเคราะห์โพสต์"),
-                n("ba44f4ea", "รายละเอียดเพิ่มเติมจาก Grok"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "บทสนทนาแบบเปิด"),
                 n("ica55d24", "แชทใหม่"),
                 n("f794af9a", "โหมดสนุกสนาน"),
@@ -6680,7 +6680,7 @@
                 n("b2d41138", "การเข้าถึงมากขึ้น = รายได้มากขึ้น"),
                 n("defa7f12", "รับประโยชน์จากบูสต์การตอบกลับเพื่อให้คุณมองเห็นได้ชัดเจนยิ่งขึ้นและเติบโตเร็วขึ้น"),
                 n("i3e4955d", "ที่นี่"),
-                n("fdc5d06c", "Exit Full Screen"),
+                n("fdc5d06c", "ออกจากโหมดเต็มหน้าจอ"),
                 n("cea1c00e", "ปลดล็อกความสามารถในการมีส่วนร่วม"),
                 n("f8e6a280", "บัญชีใหม่จะต้องจ่ายค่าธรรมเนียมรายปีเล็กน้อยก่อนจึงจะสามารถโพสต์ ชื่นชอบ บุ๊คมาร์ก และตอบกลับได้ เพื่อลดสแปมและสร้างประสบการณ์ที่ดีขึ้นสำหรับทุกคน คุณยังสามารถติดตามบัญชีและเรียกดู X ได้ฟรี"),
                 n("h968efc6", "บัญชีใหม่จะต้องจ่ายค่าธรรมเนียมเล็กน้อยก่อนจึงจะสามารถโพสต์ ชื่นชอบ บุ๊คมาร์ก และตอบกลับได้ เพื่อลดสแปมและสร้างประสบการณ์ที่ดีขึ้นสำหรับทุกคน คุณยังสามารถติดตามบัญชีและเรียกดู X ได้ฟรี"),
@@ -6724,7 +6724,7 @@
                 n("i1801686", "คำค้นหานี้ไม่ถูกต้อง โปรดลองใช้คำค้นหาอื่น"),
                 n("a0b4541c", "มีบางอย่างผิดพลาด แต่อย่ากังวล นี่ไม่ใช่ความผิดของคุณ"),
                 n("d7eebb60", "กำลังตั้งค่าระบบสมาชิกของคุณ"),
-                n("h707b180", "Your subscription update is complete"),
+                n("h707b180", "การอัปเดตระบบสมาชิกของคุณเสร็จสมบูรณ์แล้ว"),
                 n("a452ab68", "การดำเนินการนี้อาจใช้เวลาสักครู่"),
                 n("b3bad3b2", "@premium"),
                 n("accbcc78", "อัพเดตสำเร็จแล้ว"),
@@ -7392,7 +7392,7 @@
                 n("a10aa36c", "ศูนย์ช่วยเหลือ"),
                 n("d0740558", "ศูนย์ช่วยเหลือ"),
                 n("d2d76dca", "ศูนย์ช่วยเหลือ"),
-                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("de8bcdaa", "รายละเอียดของผู้ที่ได้เห็นโพสต์ของคุณ"),
                 n("cfa1ef16", "บูสต์"),
                 n("d267afa2", "ต่ำกว่า 20 ปี"),
                 n("db81cab0", "20-29"),
@@ -7404,12 +7404,12 @@
                 n("fa5be588", "ทั่วไป"),
                 n("c65126fe", "บูสต์แล้ว"),
                 n("c61c6624", "ประชาสัมพันธ์"),
-                n("f1196a04", "Boost Analytics"),
-                n("bb66e3fc", "Promote Analytics"),
+                n("f1196a04", "การวิเคราะห์เกี่ยวกับการบูสต์"),
+                n("bb66e3fc", "การวิเคราะห์เกี่ยวกับการประชาสัมพันธ์"),
                 n("g512ddcc", "การวิเคราะห์ทั่วไป"),
-                n("j9256524", "Breakdown of your boost performance"),
-                n("ceeb3016", "Breakdown of your promote performance"),
-                n("bf4558fa", "Breakdown of your organic performance"),
+                n("j9256524", "รายละเอียดข้อมูลประสิทธิภาพของการบูสต์"),
+                n("ceeb3016", "รายละเอียดข้อมูลประสิทธิภาพของการประชาสัมพันธ์"),
+                n("bf4558fa", "รายละเอียดข้อมูลประสิทธิภาพแบบออร์แกนิก"),
                 n("c69069e6", "จำนวนครั้งที่มีผู้เห็นโพสต์นี้บน X"),
                 n("a0615bac", "จำนวนครั้งที่ผู้ใช้โต้ตอบกับโพสต์ ซึ่งรวมถึงการคลิกทั้งหมดที่ใดก็ได้บนโพสต์ (รวมถึงแฮชแท็ก ลิงก์ ภาพประจําตัว ชื่อผู้ใช้ และการขยายโพสต์) การรีโพสต์ การตอบกลับ การติดตาม และการชื่นชอบ"),
                 n("d8abdaa4", "ผู้ติดตามใหม่"),
@@ -7418,7 +7418,7 @@
                 n("c7d0d1c4", "จำนวนการคลิกบน URL ใดๆ ในโพสต์นี้"),
                 n("a4da7724", "จำนวนครั้งที่ผู้คนดูรายละเอียดเกี่ยวกับโพสต์นี้"),
                 n("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " จากการบูสต์";
                 }),
                 n("g33fd6b1", function (e) {
                     return e.percentage + " จากการประชาสัมพันธ์";
@@ -7427,7 +7427,7 @@
                     return e.percentage + " จากผู้ที่ไม่ใช่ผู้ติดตาม";
                 }),
                 n("h4cbba3e", "< 5%"),
-                n("f4f0094c", "< 5% from boost"),
+                n("f4f0094c", "< 5% จากการบูสต์"),
                 n("h1cdac12", "< 5% จากการประชาสัมพันธ์"),
                 n("g884b2cc", "< 5% จากผู้ที่ไม่ได้ติดตาม"),
                 n("b32334a0", "เข้าถึงบัญชีแล้ว"),
@@ -7865,7 +7865,7 @@
                 n("ddfd6718", "การชำระเงินล้มเหลว"),
                 n("i90ea7d2", "โปรดอัปเดตการเรียกเก็บเงินของคุณโดยทันทีเพื่อรักษาสิทธิประโยชน์ของคุณ"),
                 n("a62359e6", "การตั้งค่าองค์กรที่ได้รับการยืนยัน");
-            function f(e, c) {
+            function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
                     (n.enumerable = n.enumerable || !1),
@@ -7873,10 +7873,10 @@
                         "value" in n && (n.writable = !0),
                         Object.defineProperty(
                             e,
-                            ((t = n.key),
-                            (f = void 0),
+                            ((f = n.key),
+                            (t = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, c) {
+                            typeof (t = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
                                 var a = e[Symbol.toPrimitive];
                                 if (void 0 !== a) {
@@ -7885,13 +7885,13 @@
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
                                 return ("string" === c ? String : Number)(e);
-                            })(t, "string"))
-                                ? f
-                                : String(f)),
+                            })(f, "string"))
+                                ? t
+                                : String(t)),
                             n,
                         );
                 }
-                var t, f;
+                var f, t;
             }
             function r(e, c) {
                 return (
@@ -9028,10 +9028,10 @@
                 n("f8e8e32e", "คุณ"),
                 n("df6703d3", "คุณ"),
                 n("c20f7e9f", function (e) {
-                    return t(e.otherUsersCount, e.otherUsersCount + " คน");
+                    return f(e.otherUsersCount, e.otherUsersCount + " คน");
                 }),
                 n("he26f627", function (e) {
-                    return t(e.otherUsersCount, e.otherUsersCount + " คน");
+                    return f(e.otherUsersCount, e.otherUsersCount + " คน");
                 }),
                 n("gea7aa3c", "ต่อไป"),
                 n("b6462b32", "ก่อนหน้า"),
@@ -9458,7 +9458,7 @@
                 return e;
             }
             var o = (function (e) {
-                var c, a, n, t, o;
+                var c, a, n, f, o;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
@@ -9471,7 +9471,7 @@
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
                     (n = m),
-                    (t = [
+                    (f = [
                         {
                             key: "bb85c49d",
                             get: function () {
@@ -12019,7 +12019,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(ค่าธรรมเนียม ", "% โดยขั้นต่ำอยู่ที่ ", ")"];
                             },
                         },
                         {
@@ -12862,13 +12862,13 @@
                                 var e,
                                     c = d.Children.toArray(this.props.children),
                                     a = ((e = this.props.$i18n), b[u[e]] || i);
-                                return function (e, n, t) {
-                                    return e.concat(n, c[a(t)]);
+                                return function (e, n, f) {
+                                    return e.concat(n, c[a(f)]);
                                 };
                             },
                         },
-                    ]) && f(n.prototype, t),
-                    o && f(n, o),
+                    ]) && t(n.prototype, f),
+                    o && t(n, o),
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.2857339a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.ea56b34a.js.map

@@ -4150,7 +4150,7 @@
                     return e.stringCount + " solicitude" + n(e.count, " nova", "s novas");
                 }),
                 t("ed93de0c", "Analyzing Post"),
-                t("ba44f4ea", "More details from Grok"),
+                t("d1d92e40", "More details"),
                 t("a6e89af8", "Open conversation"),
                 t("ica55d24", "New Chat"),
                 t("f794af9a", "Fun mode"),
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.9b6a30fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.c442ab0a.js.map

@@ -2822,13 +2822,13 @@
                     return "从 " + e.date + "下一个账单周期起，你的订阅层级将自动调整为 " + e.tierName + "。";
                 }),
                 f("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "下一个账单周期将从 " + e.date + "开始";
                 }),
                 f("edbb700f", function (e) {
                     return "从 " + e.date + "开始下一个账单周期";
                 }),
                 f("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "订阅将于 " + e.date + "结束";
                 }),
                 f("e9884540", "有效折扣"),
                 f("bfb879aa", "待定折扣"),
@@ -2983,7 +2983,7 @@
                 f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。"),
                 f("bce3726a", "更新账单"),
                 f("fce9ecce", "建议的视频"),
-                f("da00e00a", "Try the new News"),
+                f("da00e00a", "体验最新“新闻”"),
                 f("c40666d8", "试一下"),
                 f("j66b95a2", "深度新闻"),
                 f("b58d2bd2", "相关帖子"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new requests";
                 }),
                 f("ed93de0c", "正在分析帖子"),
-                f("ba44f4ea", "Grok 提供的更多详情"),
+                f("d1d92e40", "More details"),
                 f("a6e89af8", "打开对话"),
                 f("ica55d24", "新聊天"),
                 f("f794af9a", "趣味模式"),
@@ -6680,7 +6680,7 @@
                 f("b2d41138", "更多覆盖人数 = 更多收入"),
                 f("defa7f12", "从回复推广中获益，为你带来额外的知名度，助力发展。"),
                 f("i3e4955d", "这里"),
-                f("fdc5d06c", "Exit Full Screen"),
+                f("fdc5d06c", "退出全屏"),
                 f("cea1c00e", "解锁互动功能"),
                 f("f8e6a280", "新账号需要支付小额年费，然后才能发帖、点赞、收藏和回复。这样是为了减少垃圾信息，以便为每个人都带来更好的体验。你仍然可以免费关注账号和浏览 X。"),
                 f("h968efc6", "新账号需要支付小额费用，然后才能发帖、点赞、收藏和回复。这样是为了减少垃圾信息，以便为每个人都带来更好的体验。你仍然可以免费关注账号和浏览 X。"),
@@ -6724,7 +6724,7 @@
                 f("i1801686", "这个搜索查询无效。请尝试其他。"),
                 f("a0b4541c", "出错了 — 但别担心，这不是你的错"),
                 f("d7eebb60", "设置你的订阅服务"),
-                f("h707b180", "Your subscription update is complete"),
+                f("h707b180", "你的订阅更新已完成"),
                 f("a452ab68", "这可能需要几秒钟。"),
                 f("b3bad3b2", "@premium"),
                 f("accbcc78", "更新成功"),
@@ -7392,7 +7392,7 @@
                 f("a10aa36c", "帮助中心"),
                 f("d0740558", "帮助中心"),
                 f("d2d76dca", "帮助中心"),
-                f("de8bcdaa", "Breakdown of the people that have seen your post"),
+                f("de8bcdaa", "查看过你帖子的用户的细分"),
                 f("cfa1ef16", "推广"),
                 f("d267afa2", "不到 20"),
                 f("db81cab0", "20-29"),
@@ -7404,12 +7404,12 @@
                 f("fa5be588", "自发"),
                 f("c65126fe", "已推广"),
                 f("c61c6624", "推荐"),
-                f("f1196a04", "Boost Analytics"),
-                f("bb66e3fc", "Promote Analytics"),
+                f("f1196a04", "推广分析"),
+                f("bb66e3fc", "推广分析"),
                 f("g512ddcc", "有机分析"),
-                f("j9256524", "Breakdown of your boost performance"),
-                f("ceeb3016", "Breakdown of your promote performance"),
-                f("bf4558fa", "Breakdown of your organic performance"),
+                f("j9256524", "推广表现的细分"),
+                f("ceeb3016", "推广表现的细分"),
+                f("bf4558fa", "有机表现的细分"),
                 f("c69069e6", "这个帖子在 X 上被查看的次数"),
                 f("a0615bac", "用户与某个帖子互动的总次数。这包括所有在帖子上任意位置的点击（包括话题标签、链接、头像、用户名和帖子扩展）、转帖、回复、关注和喜欢。"),
                 f("d8abdaa4", "新关注者"),
@@ -7418,7 +7418,7 @@
                 f("c7d0d1c4", "这个帖子中任何 URL 的点击量"),
                 f("a4da7724", "人们查看这个帖子相关详情的次数"),
                 f("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " 源自推广";
                 }),
                 f("g33fd6b1", function (e) {
                     return "推广的 " + e.percentage;
@@ -7427,7 +7427,7 @@
                     return "非关注者的 " + e.percentage;
                 }),
                 f("h4cbba3e", "< 5%"),
-                f("f4f0094c", "< 5% from boost"),
+                f("f4f0094c", "< 5% 源自推广"),
                 f("h1cdac12", "< 5% 源于推广"),
                 f("g884b2cc", "< 5% 源于非关注者"),
                 f("b32334a0", "账号已覆盖"),
@@ -12035,7 +12035,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["（", "% 费用，最低 ", "）"];
                             },
                         },
                         {
@@ -13240,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.2d81981a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.13cbe6da.js.map

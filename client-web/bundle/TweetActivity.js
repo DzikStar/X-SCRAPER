@@ -2,13 +2,13 @@
     ["bundle.TweetActivity"],
     {
         152802: (e) => {
-            e.exports = { queryId: "ysrsMg7g4VIL_rLJjZUflg", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "oZdyEhDreCrDn6Su2Q5doA", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         176889: (e) => {
-            e.exports = { queryId: "jFtMy9TplkCehOhZ8bQ92A", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "oqsfsyr3uRDm20DeDvM6xw", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         587262: (e) => {
-            e.exports = { queryId: "jxZfEAl-CIw6dcilR6nBag", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "dNlEjkcutV2IqiI2rmyAFQ", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         413798: (e, t, i) => {
             "use strict";
@@ -50,13 +50,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: s, hideBackButton: o, isFullWidth: n, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: h, secondaryBar: m, style: b, subtitle: w, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: k, withBackground: v, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: s, hideBackButton: o, isFullWidth: n, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: h, secondaryBar: m, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: v, withWideContainer: C } = this.props,
                         { isModal: E } = this.context,
                         x = o ? d : r.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         Z = (function (e, t, i) {
                             return e && !(t && i);
                         })(!!v, E, !!m);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: c, leftControl: x, middleControl: p, position: _(u, E, s), rightControl: h, style: b, subtitle: w, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: k, withBackground: Z, withWideContainer: C }), m || null);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: c, leftControl: x, middleControl: p, position: _(u, E, s), rightControl: h, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: Z, withWideContainer: C }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -84,9 +84,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: o, centerTitle: n, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, rightControl: b, secondaryBar: w, subtitle: g, title: f } = this.props,
-                                { isModal: y } = this.context;
-                            return r.createElement(s.Z, { style: y ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: i || (y ? "close" : "back"), backLocation: o, centerTitle: n, fixed: !y, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, ref: e, rightControl: b, secondaryBar: w, style: [y && h.appBarModal, t], subtitle: g, title: f, titleDomId: c.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: o, centerTitle: n, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, rightControl: b, secondaryBar: w, subtitle: g, title: y } = this.props,
+                                { isModal: f } = this.context;
+                            return r.createElement(s.Z, { style: f ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: i || (f ? "close" : "back"), backLocation: o, centerTitle: n, fixed: !f, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, ref: e, rightControl: b, secondaryBar: w, style: [f && h.appBarModal, t], subtitle: g, title: y, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -179,8 +179,8 @@
                 b = i(335632);
             const w = a().c09de2d4,
                 g = a().ae111c99,
-                f = r.createElement(a().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(s.ZP, { link: "/settings/search" }, a().f191a2ba));
-            class y extends r.Component {
+                y = r.createElement(a().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(s.ZP, { link: "/settings/search" }, a().f191a2ba));
+            class f extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._shouldStoreTypeaheadItem = (e) => e === d.Z.ItemType.USER || e === d.Z.ItemType.TOPIC || e === d.Z.ItemType.EVENT),
@@ -192,7 +192,7 @@
                         }),
                         (this._renderEmptyTimeline = () => {
                             const { emptyStateComponent: e, query: t } = this.props;
-                            return e || r.createElement(o.Z, { header: g({ query: t }), message: f });
+                            return e || r.createElement(o.Z, { header: g({ query: t }), message: y });
                         }),
                         (this._getMemoizedModule = (0, l.Z)((e, t, i, r, s, o, n) => (0, u.Z)({ query: e, searchMode: i, querySource: t, searchFilters: r, vertical: s, urtEndpointOptions: o, searchTimelinesGraphQLEnabled: n }))),
                         (this._getMemoizedEntryConfiguration = (0, l.Z)((e) => (({ shouldStoreTypeaheadItem: e, withUserPresence: t }) => ({ ...(0, b.G)({ tweetDismissable: !0, displayBlocked: !0, shouldStoreTypeaheadItem: e, withUserPresence: t }) }))({ shouldStoreTypeaheadItem: this._shouldStoreTypeaheadItem, withUserPresence: e })));
@@ -202,8 +202,8 @@
                     return r.createElement(m.Z, { apiErrorHandlerMap: c.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: p.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: w });
                 }
             }
-            y.contextType = h.rC;
-            const k = y;
+            f.contextType = h.rC;
+            const k = f;
         },
         864702: (e, t, i) => {
             "use strict";
@@ -263,10 +263,10 @@
                     const b = u(i),
                         w = n && n.peopleFilter ? "searcher_follows" : void 0,
                         g = w ? "-pf" : "",
-                        f = n && n.locationFilter && !e.includes(d) ? `${e}${d}` : e,
-                        y = { timelineId: `${c}${f}-${t}${b}${g}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearch, getEndpointParams: (e) => ({ ...h?.requestParams, q: f, social_filter: w, vertical: a, ...p[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === o.N3.Live ? 5e3 : void 0, timelineType: "search" };
+                        y = n && n.locationFilter && !e.includes(d) ? `${e}${d}` : e,
+                        f = { timelineId: `${c}${y}-${t}${b}${g}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearch, getEndpointParams: (e) => ({ ...h?.requestParams, q: y, social_filter: w, vertical: a, ...p[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === o.N3.Live ? 5e3 : void 0, timelineType: "search" };
                     if (m) {
-                        const e = w && !f.includes(_) ? `${f}${_}` : f,
+                        const e = w && !y.includes(_) ? `${y}${_}` : y,
                             n = ((e) => {
                                 switch (e) {
                                     case o.N3.Image:
@@ -286,10 +286,10 @@
                                         return "Latest";
                                 }
                             })(t),
-                            a = `gql-${c}${f}-${t}${b}${g}`;
-                        return (0, l.Z)({ ...y, timelineId: a, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: s.Z, network: { getEndpointParams: ({ count: t, cursor: r }) => ({ rawQuery: e, count: t, product: n, querySource: i, cursor: "string" == typeof r ? r : void 0 }), getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearchGraphQL } });
+                            a = `gql-${c}${y}-${t}${b}${g}`;
+                        return (0, l.Z)({ ...f, timelineId: a, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: s.Z, network: { getEndpointParams: ({ count: t, cursor: r }) => ({ rawQuery: e, count: t, product: n, querySource: i, cursor: "string" == typeof r ? r : void 0 }), getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearchGraphQL } });
                     }
-                    return (0, l.Z)(y);
+                    return (0, l.Z)(f);
                 };
         },
         952257: (e, t, i) => {
@@ -318,12 +318,12 @@
             const g = (0, b.Z)()
                     .propsFromActions(() => ({ addToast: w.fz }))
                     .withAnalytics(),
-                f = a().fd67deaa,
-                y = a().f9183bb6;
+                y = a().fd67deaa,
+                f = a().f9183bb6;
             const k = g(function (e) {
                     const { postId: t, scribeNamespace: i } = e,
                         s = ((e) => (0, h.ju)(`https://x.com/i/status/${e}/similar`))(t);
-                    return r.createElement(m.S0, { scribeNamespace: i, url: s }, r.createElement(m.by, { label: f, type: "dm" }), r.createElement(m.by, { label: y, type: "copy" }));
+                    return r.createElement(m.S0, { scribeNamespace: i, url: s }, r.createElement(m.by, { label: y, type: "dm" }), r.createElement(m.by, { label: f, type: "copy" }));
                 }),
                 v = k;
             var C = i(644829),
@@ -342,8 +342,8 @@
                 R = (0, b.Z)()
                     .propsFromState(() => ({ screenName: B, statusId: I, scribeNamespace: P, tweet: L }))
                     .withAnalytics(S),
-                M = a().hea3f8ac,
-                q = a().a09331e0,
+                q = a().hea3f8ac,
+                M = a().a09331e0,
                 N = a().a5ab75ae,
                 $ = a().ce637c0e;
             class A extends r.Component {
@@ -361,7 +361,7 @@
                     const { history: e, screenName: t, scribeNamespace: i, statusId: s, tweet: n } = this.props,
                         { featureSwitches: a } = this.context,
                         l = n && o.Z.isArticlePost(n),
-                        _ = l ? q : M,
+                        _ = l ? M : q,
                         u = l ? $ : N,
                         h = { count: a.getNumberValue("responsive_web_show_similar_posts_count") || 50 },
                         m = r.createElement(v, { postId: s, scribeNamespace: i });
@@ -392,13 +392,13 @@
                 g = (0, _.Z)()
                     .propsFromState(() => ({ activityType: b, screenName: m, statusId: h, urtModule: (0, d.P1)(b, h, (e, t) => w[e]?.(t)) }))
                     .withAnalytics({ page: "tweet_activity", section: "tweet_activity" }),
-                f = n().f08d8d08,
-                y = n().f0ccff52,
+                y = n().f08d8d08,
+                f = n().f0ccff52,
                 k = n().fc1acb54,
                 v = n().e3527230,
                 C = { likes: n().i3e8b808, retweets: n().c69fd704 },
                 E = { likes: n().f12858d4, retweets: n().fe62cfec },
-                x = { likes: () => r.createElement(s.Z, { header: k, message: v }), retweets: () => r.createElement(s.Z, { header: f, message: y }) };
+                x = { likes: () => r.createElement(s.Z, { header: k, message: v }), retweets: () => r.createElement(s.Z, { header: y, message: f }) };
             function Z({ activityType: e, history: t, screenName: i, statusId: s, urtModule: o }) {
                 const n = `/${i.toLowerCase()}/status/${s}`;
                 return o ? r.createElement(a.Z, { backLocation: n, history: t, title: E[e] }, r.createElement(l.Z, { loadingAccessibilityLabel: C[e], module: o, renderEmptyState: x[e], title: E[e] })) : r.createElement(c.Z, { to: n });
@@ -425,8 +425,8 @@
                 b = i(883432),
                 w = i(615027),
                 g = i(24949),
-                f = i(668214),
-                y = i(836255),
+                y = i(668214),
+                f = i(836255),
                 k = i(153386),
                 v = i(481918),
                 C = i(919022);
@@ -434,7 +434,7 @@
                 x = (e, t) => t.match.params.statusId,
                 Z = (e, t) => t.match.params.screenName,
                 T = (e, t) => t.match.params.tweetEngagementsSubroute,
-                S = (0, f.Z)()
+                S = (0, y.Z)()
                     .propsFromState(() => ({
                         mode: T,
                         screenName: Z,
@@ -442,7 +442,7 @@
                         tweet: (0, g.P1)(
                             (e) => e,
                             x,
-                            (e, t) => y.Z.selectHydrated(e, t),
+                            (e, t) => f.Z.selectHydrated(e, t),
                         ),
                         urtModule: (0, g.P1)(T, x, (e, t) => E[e]?.(t)),
                         viewer: C.ZP.selectViewerUser,
@@ -453,12 +453,12 @@
                 L = n().i60dfa72,
                 P = { likes: n().dc604dda, retweets: n().cdd4ef4a, quotes: n().icc72234 },
                 R = { likes: n().d7b8ebaa, retweets: n().ja42739e, quotes: n().j45978a8 },
-                M = { likes: n().hc35b530, retweets: n().e0d6a246, quotes: n().aea3c420 },
-                q = { likes: n().i2a26cb4, retweets: n().f0ccff52, quotes: n().i9b724e8 },
+                q = { likes: n().hc35b530, retweets: n().e0d6a246, quotes: n().aea3c420 },
+                M = { likes: n().i2a26cb4, retweets: n().f0ccff52, quotes: n().i9b724e8 },
                 N = { vertical: "tweet_detail_quote" };
             function $(e, t) {
-                const i = M[t],
-                    o = q[t];
+                const i = q[t],
+                    o = M[t];
                 return r.createElement(s.Z, { header: i, message: o });
             }
             class A extends r.Component {
@@ -511,8 +511,8 @@
                 b = i(58881),
                 w = i(530732);
             const g = d().d2414d31,
-                f = () => d().ce4e85ae,
-                y = d().fb9f6f39;
+                y = () => d().ce4e85ae,
+                f = d().fb9f6f39;
             class k extends s.Component {
                 constructor(...e) {
                     super(...e),
@@ -554,7 +554,7 @@
                         T = c ? c(E) : x?.pathname === Z?.pathname,
                         S = b.Z.generate({ backgroundColor: "transparent", color: a.default.theme.colors.text, insetFocusRing: !0 }),
                         I = m ? "medium" : T ? "bold" : "medium";
-                    return s.createElement(w.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: S, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [_ ? v.pill : v.link, _ && T ? v.active : null, d ? (_ ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: m || _ }, ({ isFocused: t, isHovered: c }) => s.createElement(l.Z, { style: _ && v.flexGrow }, s.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(T, c, m, _) }, d && v.compactText, m && t && v.focusedText], weight: I }, e && s.createElement(e, { style: v.icon }), o, m || _ ? null : s.createElement(l.Z, { style: T && [v.border, { backgroundColor: a.default.theme.colors[n] }] })), i ? s.createElement(h.Z, { count: i, standalone: !0, style: [v.badge, i >= 10 && v.multiDigitBadge, i >= 20 && v.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: g, withBorder: !1 }) : r ? s.createElement(h.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: f, withBorder: !1 }) : null));
+                    return s.createElement(w.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: S, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [_ ? v.pill : v.link, _ && T ? v.active : null, d ? (_ ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: m || _ }, ({ isFocused: t, isHovered: c }) => s.createElement(l.Z, { style: _ && v.flexGrow }, s.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(T, c, m, _) }, d && v.compactText, m && t && v.focusedText], weight: I }, e && s.createElement(e, { style: v.icon }), o, m || _ ? null : s.createElement(l.Z, { style: T && [v.border, { backgroundColor: a.default.theme.colors[n] }] })), i ? s.createElement(h.Z, { count: i, standalone: !0, style: [v.badge, i >= 10 && v.multiDigitBadge, i >= 20 && v.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: g, withBorder: !1 }) : r ? s.createElement(h.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = m.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -598,4 +598,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.01832b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.3c2e075a.js.map

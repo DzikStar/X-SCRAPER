@@ -2822,13 +2822,13 @@
                     return "Tingkatan langganan Anda dijadwalkan untuk berubah menjadi " + a.tierName + " mulai siklus penagihan berikutnya pada " + a.date;
                 }),
                 i("a991d9a3", function (a) {
-                    return "Next billing cycle starts on " + a.date;
+                    return "Siklus penagihan berikutnya dimulai pada " + a.date;
                 }),
                 i("edbb700f", function (a) {
                     return "Mulai pada siklus tagihan berikutnya pada " + a.date;
                 }),
                 i("e3f9d219", function (a) {
-                    return "Subscription ends on " + a.date;
+                    return "Langganan berakhir pada " + a.date;
                 }),
                 i("e9884540", "Diskon aktif"),
                 i("bfb879aa", "Diskon tertunda"),
@@ -2983,7 +2983,7 @@
                 i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
                 i("bce3726a", "Perbarui Penagihan"),
                 i("fce9ecce", "Video yang disarankan"),
-                i("da00e00a", "Try the new News"),
+                i("da00e00a", "Coba Berita versi baru"),
                 i("c40666d8", "Cobalah"),
                 i("j66b95a2", "Berita Mendalam"),
                 i("b58d2bd2", "Postingan yang Relevan"),
@@ -4145,7 +4145,7 @@
                     return a.stringCount + " new requests";
                 }),
                 i("ed93de0c", "Menganalisis Postingan"),
-                i("ba44f4ea", "Detail lainnya dari Grok"),
+                i("d1d92e40", "More details"),
                 i("a6e89af8", "Buka percakapan"),
                 i("ica55d24", "Obrolan Baru"),
                 i("f794af9a", "Mode santai"),
@@ -6680,7 +6680,7 @@
                 i("b2d41138", "Jangkauan lebih besar = penghasilan lebih besar"),
                 i("defa7f12", "Manfaatkan Pengutamaan Balasan, yang membuat Anda lebih menonjol dan dapat berkembang lebih cepat."),
                 i("i3e4955d", "di sini"),
-                i("fdc5d06c", "Exit Full Screen"),
+                i("fdc5d06c", "Tutup Layar Penuh"),
                 i("cea1c00e", "Dapatkan akses untuk berinteraksi"),
                 i("f8e6a280", "Akun baru diharuskan membayar sedikit biaya tahunan sebelum dapat memposting, menyukai, memarkahi, dan membalas. Hal ini bertujuan untuk mengurangi spam dan menciptakan pengalaman yang lebih baik bagi semua orang. Anda masih dapat mengikuti akun dan menjelajahi X secara gratis."),
                 i("h968efc6", "Akun baru diharuskan membayar sedikit biaya sebelum dapat memposting, menyukai, memarkahi, dan membalas. Hal ini bertujuan untuk mengurangi spam dan menciptakan pengalaman yang lebih baik bagi semua orang. Anda masih dapat mengikuti akun dan menjelajahi X secara gratis."),
@@ -6724,7 +6724,7 @@
                 i("i1801686", "Kueri pencarian ini tidak valid. Gunakan kueri yang berbeda."),
                 i("a0b4541c", "Ada kesalahan teknis - tapi jangan khawatir, ini bukan kesalahan Anda"),
                 i("d7eebb60", "Menyiapkan langganan Anda"),
-                i("h707b180", "Your subscription update is complete"),
+                i("h707b180", "Pembaruan langganan Anda selesai"),
                 i("a452ab68", "Ini dapat memakan waktu beberapa detik."),
                 i("b3bad3b2", "@premium"),
                 i("accbcc78", "Berhasil diperbarui"),
@@ -7392,7 +7392,7 @@
                 i("a10aa36c", "Pusat Bantuan"),
                 i("d0740558", "Pusat Bantuan"),
                 i("d2d76dca", "Pusat Bantuan"),
-                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("de8bcdaa", "Perincian orang-orang yang telah melihat postingan Anda"),
                 i("cfa1ef16", "Boost"),
                 i("d267afa2", "Di bawah 20"),
                 i("db81cab0", "20-29"),
@@ -7404,12 +7404,12 @@
                 i("fa5be588", "Organik"),
                 i("c65126fe", "Di-boost"),
                 i("c61c6624", "Dipromosikan"),
-                i("f1196a04", "Boost Analytics"),
-                i("bb66e3fc", "Promote Analytics"),
+                i("f1196a04", "Analitik Boost"),
+                i("bb66e3fc", "Analitik Promosi"),
                 i("g512ddcc", "Analitik Organik"),
-                i("j9256524", "Breakdown of your boost performance"),
-                i("ceeb3016", "Breakdown of your promote performance"),
-                i("bf4558fa", "Breakdown of your organic performance"),
+                i("j9256524", "Perincian performa boost Anda"),
+                i("ceeb3016", "Perincian performa promosi Anda"),
+                i("bf4558fa", "Perincian performa organik Anda"),
                 i("c69069e6", "Berapa kali postingan ini dilihat di X"),
                 i("a0615bac", "Total berapa kali pengguna berinteraksi dengan postingan. Ini mencakup semua klik di mana saja pada postingan (termasuk hashtag, tautan, avatar, nama pengguna, dan perluasan postingan), posting ulang, balasan, mengikuti, dan suka."),
                 i("d8abdaa4", "Pengikut baru"),
@@ -7418,7 +7418,7 @@
                 i("c7d0d1c4", "Jumlah klik URL apa pun dalam postingan ini"),
                 i("a4da7724", "Berapa kali orang melihat detail tentang postingan ini"),
                 i("jedd2771", function (a) {
-                    return a.percentage + " from boost";
+                    return a.percentage + " dari boost";
                 }),
                 i("g33fd6b1", function (a) {
                     return a.percentage + " dari promosi";
@@ -7427,7 +7427,7 @@
                     return a.percentage + " dari non pengikut";
                 }),
                 i("h4cbba3e", "< 5%"),
-                i("f4f0094c", "< 5% from boost"),
+                i("f4f0094c", "< 5% dari boost"),
                 i("h1cdac12", "< 5% dari promosi"),
                 i("g884b2cc", "< 5% dari non pengikut"),
                 i("b32334a0", "Akun yang Dijangkau"),
@@ -12019,7 +12019,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(Biaya ", "%, Min. ", ")"];
                             },
                         },
                         {
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.cb01640a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.4617fc9a.js.map

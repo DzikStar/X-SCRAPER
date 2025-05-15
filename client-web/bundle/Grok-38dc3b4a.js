@@ -56,8 +56,8 @@
             }
             const v = l.default.create((e) => ({ shareBtn: { transition: "opacity 0.4s", opacity: 1 }, fadeOut: { opacity: 0 }, roundedSqaure: { borderRadius: e.borderRadii.large } }));
         },
-        830667: (e, t, a) => {
-            a.d(t, { V: () => T });
+        205634: (e, t, a) => {
+            a.d(t, { V: () => R });
             var n = a(202784),
                 r = a(325686),
                 l = a(154003),
@@ -79,70 +79,48 @@
                 y = a(952793),
                 k = a(839090),
                 Z = a(725516),
-                w = (a(136728), a(868634));
-            const x = ({ modeLabel: e, name: t, tags: a }) =>
-                    n.createElement(
-                        r.Z,
-                        { style: P.content },
-                        n.createElement(f.ZP, { color: "text" }, t),
-                        e ? n.createElement(f.ZP, { style: P.modeLabel }, e) : void 0,
-                        a.map((e, a) => n.createElement(w.ZP, { key: `tag_${t}_${e}`, style: P.tag }, n.createElement(f.ZP, { color: "blue500" }, e))),
-                    ),
-                P = o.default.create((e) => ({ content: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, tag: { paddingHorizontal: e.spaces.space8, backgroundColor: e.colors.blue0 }, modeLabel: { marginStart: e.spaces.space2, color: e.colors.gray700 } }));
-            function I(e) {
-                const t = e.match(/(\((.*?)\))|([^\(\)]+)/g);
-                let a = "";
-                const n = [];
-                return (
-                    t &&
-                        (t.forEach((e) => {
-                            e.startsWith("(") ? n.push(e.slice(1, -1).trim()) : (a += `${e.trim()} `);
-                        }),
-                        (a = a.trim())),
-                    { text: a, tags: n }
-                );
-            }
-            const _ = i().eb78b77e,
-                S = i().c9772e6e,
-                D = i().aa8ece10,
-                z = "grok",
-                L = ({ isOpen: e, onClose: t }) => {
+                w = a(917862);
+            const x = i().eb78b77e,
+                I = i().c9772e6e,
+                P = i().aa8ece10,
+                _ = "grok",
+                S = ({ isOpen: e, onClose: t }) => {
                     const a = (0, Z.z)(),
                         l = !!v.ZP.isWebView(),
                         o = (0, y.hC)("responsive_web_grok_fun_mode_disabled"),
-                        { access: s, changeMode: i, changeModel: c, mode: b, model: w } = (0, p.ZP)(),
-                        P = b === m.IK.FUN,
+                        { access: s, changeMode: i, changeModel: c, mode: b, model: S } = (0, p.ZP)(),
+                        z = b === m.IK.FUN,
                         L = (0, d.v9)(u.vf),
-                        V = n.useCallback(
+                        R = n.useCallback(
                             (e) => {
                                 i(e ? m.IK.FUN : m.IK.REGULAR, a);
                             },
                             [i, a],
                         ),
-                        q = n.useCallback(
+                        V = n.useCallback(
                             (e) => {
                                 const n = L.find((t) => t.id === e);
                                 n && (c(e, n.id, a), t());
                             },
                             [c, L, a, t],
                         ),
-                        T = n.useMemo(
+                        q = n.useMemo(
                             () =>
                                 L.map((e, t) => {
-                                    const { tags: a, text: r } = I(e.name);
-                                    return n.createElement(g.Z, { actionSubText: e.description, actionText: n.createElement(x, { name: r, tags: a }), disabled: !e.isEnabled, isSelected: e.id === w, key: `model_${e.id}`, onClick: () => q(e.id), selectable: !0, style: e.isEnabled ? void 0 : R.disabled });
+                                    const { tags: a, text: r } = (0, w.n)(e.name);
+                                    return n.createElement(g.Z, { actionSubText: e.description, actionText: n.createElement(w.I, { name: r, tags: a }), disabled: !e.isEnabled, isSelected: e.id === S, key: `model_${e.id}`, onClick: () => V(e.id), selectable: !0, style: e.isEnabled ? void 0 : D.disabled });
                                 }),
-                            [w, L, q],
+                            [S, L, V],
                         ),
-                        H = n.useCallback(() => {
+                        T = n.useCallback(() => {
                             a.scribe({ element: "go-to-grok-com", action: "click" }), (window.location.href = "https://grok.com/?referrer=x");
                         }, [a]),
-                        M = L.some((e) => !e.isEnabled) && "free" === s;
+                        H = L.some((e) => !e.isEnabled) && "free" === s;
                     return e
                         ? n.createElement(
                               k.Z,
                               {
-                                  contentStyle: R.dropdown,
+                                  contentStyle: D.dropdown,
                                   isFixed: !0,
                                   onAnimateComplete: () => {
                                       a.scribe({ element: "open-mode-action-menu", action: "show" });
@@ -150,18 +128,18 @@
                                   onDismiss: t,
                                   preferredHorizontalOrientation: "center",
                               },
-                              T,
-                              n.createElement(r.Z, { style: R.divider }),
-                              n.createElement(g.Z, { Icon: h.default, actionText: n.createElement(f.ZP, { style: R.grokRerouteHeader, weight: "medium" }, D), onClick: H, selectable: !0 }),
-                              M ? n.createElement(r.Z, { style: R.upsellContainer }, n.createElement(f.ZP, { link: { pathname: "/i/premium_sign_up", state: { referring_page: z }, external: l, query: { referring_page: z } }, onClick: () => t() }, S)) : null,
-                              o ? null : n.createElement(r.Z, { style: R.switchContainer }, n.createElement(f.ZP, { weight: "medium" }, _), n.createElement(C.Z, { axis: "x", size: "space32" }), n.createElement(E.Z, { onValueChange: V, value: P })),
+                              q,
+                              n.createElement(r.Z, { style: D.divider }),
+                              n.createElement(g.Z, { Icon: h.default, actionText: n.createElement(f.ZP, { style: D.grokRerouteHeader, weight: "medium" }, P), onClick: T, selectable: !0 }),
+                              H ? n.createElement(r.Z, { style: D.upsellContainer }, n.createElement(f.ZP, { link: { pathname: "/i/premium_sign_up", state: { referring_page: _ }, external: l, query: { referring_page: _ } }, onClick: () => t() }, I)) : null,
+                              o ? null : n.createElement(r.Z, { style: D.switchContainer }, n.createElement(f.ZP, { weight: "medium" }, x), n.createElement(C.Z, { axis: "x", size: "space32" }), n.createElement(E.Z, { onValueChange: R, value: z })),
                           )
                         : null;
                 },
-                R = o.default.create((e) => ({ dropdown: { minWidth: 280 }, disabled: { cursor: "default" }, upsellContainer: { padding: 16 }, switchContainer: { padding: 16, flexDirection: "row", justifyContent: "space-between", borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, divider: { height: 1, backgroundColor: e.colors.gray50, width: "100%" }, grokRerouteHeader: { fontSize: e.fontSizes.subtext2 } })),
-                V = i().hc965308,
-                q = i().eb78b77e,
-                T = () => {
+                D = o.default.create((e) => ({ dropdown: { minWidth: 280 }, disabled: { cursor: "default" }, upsellContainer: { padding: 16 }, switchContainer: { padding: 16, flexDirection: "row", justifyContent: "space-between", borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, divider: { height: 1, backgroundColor: e.colors.gray50, width: "100%" }, grokRerouteHeader: { fontSize: e.fontSizes.subtext2 } })),
+                z = i().hc965308,
+                L = i().eb78b77e,
+                R = () => {
                     const e = (0, d.oR)(),
                         { mode: t } = (0, p.ZP)(),
                         [a, o] = n.useState(!1),
@@ -173,7 +151,7 @@
                     n.useEffect(() => {
                         f === b.ZP.LOADED && E(!0);
                     }, [f]);
-                    const h = `${g?.name ?? ""}${s ? `: ${q}` : ""}`,
+                    const h = `${g?.name ?? ""}${s ? `: ${L}` : ""}`,
                         v = { label: h },
                         y = n.useCallback(() => {
                             o(!0);
@@ -182,10 +160,10 @@
                             o(!1);
                         }, [o]),
                         Z = g?.name ?? "",
-                        { tags: w, text: P } = n.useMemo(() => I(Z), [Z]);
-                    if (C) return n.createElement(r.Z, null, n.createElement(l.ZP, { "aria-label": h, backgroundColor: "transparent", borderColor: "transparent", color: "text", hoverLabel: v, onPress: a ? k : y, size: "small", style: H.button }, n.createElement(x, { modeLabel: s ? V : void 0, name: P, tags: w }), n.createElement(c.default, { style: H.chevron })), n.createElement(r.Z, null, n.createElement(L, { isOpen: a, onClose: k })));
+                        { tags: x, text: I } = n.useMemo(() => (0, w.n)(Z), [Z]);
+                    if (C) return n.createElement(r.Z, null, n.createElement(l.ZP, { "aria-label": h, backgroundColor: "transparent", borderColor: "transparent", color: "text", hoverLabel: v, onPress: a ? k : y, size: "small", style: V.button }, n.createElement(w.I, { modeLabel: s ? z : void 0, name: I, tags: x }), n.createElement(c.default, { style: V.chevron })), n.createElement(r.Z, null, n.createElement(S, { isOpen: a, onClose: k })));
                 },
-                H = o.default.create((e) => ({ button: { borderRadius: e.borderRadii.large, color: e.colors.text, width: "max-content", alignItems: "center", paddingStart: e.spaces.space12, paddingEnd: e.spaces.space8 }, chevron: { width: e.spaces.space16, height: e.spaces.space16, position: "relative", marginStart: e.spaces.space4, color: e.colors.gray500 } }));
+                V = o.default.create((e) => ({ button: { borderRadius: e.borderRadii.large, color: e.colors.text, width: "max-content", alignItems: "center", paddingStart: e.spaces.space12, paddingEnd: e.spaces.space8 }, chevron: { width: e.spaces.space16, height: e.spaces.space16, position: "relative", marginStart: e.spaces.space4, color: e.colors.gray500 } }));
         },
         764512: (e, t, a) => {
             a.d(t, { q: () => _ });
@@ -196,7 +174,7 @@
                 s = a(929028),
                 i = a(292546),
                 c = a(807901),
-                d = a(830667),
+                d = a(205634),
                 u = a(107267),
                 m = a(154003),
                 b = a(674132),
@@ -216,10 +194,10 @@
                     [a, l, o] = (0, E.ZP)(),
                     s = (0, u.useHistory)(),
                     { isCompactLayout: i } = (0, h.ZP)();
-                return t ? n.createElement(r.Z, { style: P.container }, (0, C.HD)(s) || !o || a ? null : n.createElement(m.ZP, { "aria-label": y, backgroundColor: "transparent", borderColor: "transparent", hoverLabel: k, icon: n.createElement(g.default, null), onClick: l, size: "medium", style: [P.flipX, P.button] }), o && a ? n.createElement(m.ZP, { "aria-label": Z, backgroundColor: "transparent", borderColor: "transparent", hoverLabel: w, icon: n.createElement(f.default, null), onClick: l, size: "medium", style: P.button }) : null, i && n.createElement(v.o, null)) : null;
+                return t ? n.createElement(r.Z, { style: I.container }, (0, C.HD)(s) || !o || a ? null : n.createElement(m.ZP, { "aria-label": y, backgroundColor: "transparent", borderColor: "transparent", hoverLabel: k, icon: n.createElement(g.default, null), onClick: l, size: "medium", style: [I.flipX, I.button] }), o && a ? n.createElement(m.ZP, { "aria-label": Z, backgroundColor: "transparent", borderColor: "transparent", hoverLabel: w, icon: n.createElement(f.default, null), onClick: l, size: "medium", style: I.button }) : null, i && n.createElement(v.o, null)) : null;
             }
-            const P = o.default.create((e) => ({ container: { flexDirection: "row", alignItems: "center" }, button: { borderRadius: e.borderRadii.large }, flipX: { transform: [{ scaleX: -1 }] } }));
-            var I = a(579711);
+            const I = o.default.create((e) => ({ container: { flexDirection: "row", alignItems: "center" }, button: { borderRadius: e.borderRadii.large }, flipX: { transform: [{ scaleX: -1 }] } }));
+            var P = a(579711);
             const _ = () => {
                     const [e] = (0, i.Z)(),
                         t = e.get("conversation") ?? void 0,
@@ -229,9 +207,40 @@
                         u = n.useCallback((e) => {
                             e.preventDefault(), e.stopPropagation();
                         }, []);
-                    return n.createElement(r.Z, { onClick: u, style: S.container }, n.createElement(r.Z, { style: S.leftColumn }, n.createElement(x, { isVerbose: s })), n.createElement(r.Z, { style: S.centerColumn }, n.createElement(d.V, null)), n.createElement(r.Z, { style: S.rightColumn }, n.createElement(I.Z, { isVerbose: s })));
+                    return n.createElement(r.Z, { onClick: u, style: S.container }, n.createElement(r.Z, { style: S.leftColumn }, n.createElement(x, { isVerbose: s })), n.createElement(r.Z, { style: S.centerColumn }, n.createElement(d.V, null)), n.createElement(r.Z, { style: S.rightColumn }, n.createElement(P.Z, { isVerbose: s })));
                 },
                 S = o.default.create((e) => ({ container: { flexDirection: "row", flexGrow: 1, flexShrink: 1, alignItems: "center", justifyContent: "center", marginVertical: "unset", paddingTop: e.spaces.space16, height: 50 }, focusContainer: { ...s.Z.getBackgroundStyles(), flexGrow: 1, flexShrink: 1, position: "sticky", zIndex: e.componentZIndices.appBarZIndex, top: 0, padding: e.spaces.space8 }, leftColumn: { flex: 1, alignItems: "flex-start", justifyContent: "center" }, centerColumn: { flex: 1, justifyContent: "center", alignItems: "center" }, rightColumn: { flex: 1, justifyContent: "center", alignItems: "flex-end" } }));
+        },
+        917862: (e, t, a) => {
+            a.d(t, { I: () => i, n: () => d });
+            a(136728);
+            var n = a(202784),
+                r = a(325686),
+                l = a(731708),
+                o = a(868634),
+                s = a(392237);
+            const i = ({ modeLabel: e, name: t, tags: a }) =>
+                    n.createElement(
+                        r.Z,
+                        { style: c.content },
+                        n.createElement(l.ZP, { color: "text" }, t),
+                        e ? n.createElement(l.ZP, { style: c.modeLabel }, e) : void 0,
+                        a.map((e, a) => n.createElement(o.ZP, { key: `tag_${t}_${e}`, style: c.tag }, n.createElement(l.ZP, { color: "blue500" }, e))),
+                    ),
+                c = s.default.create((e) => ({ content: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, tag: { paddingHorizontal: e.spaces.space8, backgroundColor: e.colors.blue0 }, modeLabel: { marginStart: e.spaces.space2, color: e.colors.gray700 } }));
+            function d(e) {
+                const t = e.match(/(\((.*?)\))|([^\(\)]+)/g);
+                let a = "";
+                const n = [];
+                return (
+                    t &&
+                        (t.forEach((e) => {
+                            e.startsWith("(") ? n.push(e.slice(1, -1).trim()) : (a += `${e.trim()} `);
+                        }),
+                        (a = a.trim())),
+                    { text: a, tags: n }
+                );
+            }
         },
         579711: (e, t, a) => {
             a.d(t, { Z: () => D });
@@ -258,10 +267,10 @@
                 Z = i().fbc79f6a,
                 w = i().b61ad410,
                 x = { label: Z },
-                P = i().gb303814,
-                I = i().bb89cf46,
-                _ = { label: P },
-                S = { label: I };
+                I = i().gb303814,
+                P = i().bb89cf46,
+                _ = { label: I },
+                S = { label: P };
             function D({ isVerbose: e, withHistory: t }) {
                 const { canClearConversation: a, handleClearConversationClick: o, isEligible: s } = (0, f.Z)(),
                     [i, D] = n.useState(!1),
@@ -289,7 +298,7 @@
                               n.createElement(
                                   l.ZP,
                                   {
-                                      "aria-label": q ? I : P,
+                                      "aria-label": q ? P : I,
                                       backgroundColor: "transparent",
                                       borderColor: "transparent",
                                       hoverLabel: q ? S : _,
@@ -312,4 +321,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-38dc3b4a.fee1ac3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-38dc3b4a.f49cff5a.js.map

@@ -2826,13 +2826,13 @@
                     return "다음 청구 주기인 " + e.date + "부터 구독 등급이 " + e.tierName + "(으)로 변경될 예정입니다";
                 }),
                 n("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "다음 결제 주기는 " + e.date + "부터 시작됩니다";
                 }),
                 n("edbb700f", function (e) {
                     return e.date + " 다음 결제 주기부터 시작됩니다";
                 }),
                 n("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "구독 종료일: " + e.date;
                 }),
                 n("e9884540", "할인 적용 중"),
                 n("bfb879aa", "할인 대기 중"),
@@ -2987,7 +2987,7 @@
                 n("jadeb4da", "구독 혜택을 잃기 전에 지금 바로 결제 방법을 업데이트하세요."),
                 n("bce3726a", "결제 정보 업데이트"),
                 n("fce9ecce", "추천 동영상"),
-                n("da00e00a", "Try the new News"),
+                n("da00e00a", "새로운 뉴스 기능을 확인하세요"),
                 n("c40666d8", "직접 해보기"),
                 n("j66b95a2", "깊이 있는 뉴스"),
                 n("b58d2bd2", "관련 게시물"),
@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new requests";
                 }),
                 n("ed93de0c", "게시물 분석 중"),
-                n("ba44f4ea", "Grok에서 자세한 정보 제공"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "공개 대화"),
                 n("ica55d24", "새 채팅"),
                 n("f794af9a", "재미 모드"),
@@ -6684,7 +6684,7 @@
                 n("b2d41138", "도달 범위 확대 = 수익 증대"),
                 n("defa7f12", "댓글 부스트를 통해 노출 범위를 추가로 확장하여 더 빠르게 성장하세요."),
                 n("i3e4955d", "여기"),
-                n("fdc5d06c", "Exit Full Screen"),
+                n("fdc5d06c", "전체 화면 종료"),
                 n("cea1c00e", "참여 기능 잠금 해제"),
                 n("f8e6a280", "신규 계정은 게시하기, 마음에 들어요 보내기, 북마크에 추가하기, 답글 쓰기 등의 작업을 하려면 매년 소정의 요금을 지불해야 합니다. 이는 스팸을 줄여 모두에게 더 나은 환경을 제공하기 위한 조치입니다. 계정을 팔로우하고 X를 둘러보는 일은 여전히 무료입니다."),
                 n("h968efc6", "신규 계정은 게시하기, 마음에 들어요 보내기, 북마크에 추가하기, 답글 쓰기 등의 작업을 하려면 소정의 요금을 지불해야 합니다. 이는 스팸을 줄여 모두에게 더 나은 환경을 제공하기 위한 조치입니다. 계정을 팔로우하고 X를 둘러보는 일은 여전히 무료입니다."),
@@ -6728,7 +6728,7 @@
                 n("i1801686", "유효하지 않은 검색어입니다. 다른 검색어를 시도해 보세요."),
                 n("a0b4541c", "문제가 발생했습니다. 여러분의 잘못이 아니니 걱정하지 마세요"),
                 n("d7eebb60", "구독 설정"),
-                n("h707b180", "Your subscription update is complete"),
+                n("h707b180", "구독 업데이트가 완료되었습니다"),
                 n("a452ab68", "몇 초가 소요될 수 있습니다."),
                 n("b3bad3b2", "@premium"),
                 n("accbcc78", "업데이트했습니다"),
@@ -7396,7 +7396,7 @@
                 n("a10aa36c", "고객센터"),
                 n("d0740558", "고객센터"),
                 n("d2d76dca", "고객센터"),
-                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("de8bcdaa", "게시물을 조회한 사용자 분석"),
                 n("cfa1ef16", "부스트"),
                 n("d267afa2", "20세 미만"),
                 n("db81cab0", "20~29세"),
@@ -7408,12 +7408,12 @@
                 n("fa5be588", "유기적"),
                 n("c65126fe", "부스트 중"),
                 n("c61c6624", "프로모션 중"),
-                n("f1196a04", "Boost Analytics"),
-                n("bb66e3fc", "Promote Analytics"),
+                n("f1196a04", "부스트 애널리틱스"),
+                n("bb66e3fc", "프로모션 애널리틱스"),
                 n("g512ddcc", "유기적 애널리틱스"),
-                n("j9256524", "Breakdown of your boost performance"),
-                n("ceeb3016", "Breakdown of your promote performance"),
-                n("bf4558fa", "Breakdown of your organic performance"),
+                n("j9256524", "부스트 성과 분석"),
+                n("ceeb3016", "프로모션 성과 분석"),
+                n("bf4558fa", "오가닉 성과 분석"),
                 n("c69069e6", "X에서 이 게시물이 조회된 횟수"),
                 n("a0615bac", "사용자가 게시물에 반응한 총 횟수입니다. 여기에는 게시물(해시태그, 링크, 아바타, 사용자 아이디 및 게시물 펼치기 등)에 대한 모든 클릭수, 재게시, 답글, 팔로우 및 마음에 들어요 횟수 등이 포함됩니다."),
                 n("d8abdaa4", "새 팔로워"),
@@ -7422,7 +7422,7 @@
                 n("c7d0d1c4", "이 게시물의 URL 클릭수"),
                 n("a4da7724", "사람들이 이 게시물의 세부정보를 조회한 횟수"),
                 n("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return "부스트 기여도 " + e.percentage;
                 }),
                 n("g33fd6b1", function (e) {
                     return "프로모션에서 " + e.percentage;
@@ -7431,7 +7431,7 @@
                     return "팔로워가 아닌 계정에서 " + e.percentage;
                 }),
                 n("h4cbba3e", "5% 미만"),
-                n("f4f0094c", "< 5% from boost"),
+                n("f4f0094c", "부스트 기여도 < 5%"),
                 n("h1cdac12", "프로모션 후 5% 미만"),
                 n("g884b2cc", "팔로워가 아닌 사용자에서 5% 미만"),
                 n("b32334a0", "도달한 계정 수"),
@@ -12039,7 +12039,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(수수료 ", "%, 최소 ", ")"];
                             },
                         },
                         {
@@ -13244,4 +13244,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.b4ae0f2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.178c338a.js.map

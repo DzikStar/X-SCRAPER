@@ -4150,7 +4150,7 @@
                     return e.stringCount + " new request" + f(e.count, "", "s");
                 }),
                 n("ed93de0c", "पोस्ट का विश्लेषण किया जा रहा है"),
-                n("ba44f4ea", "Grok से अधिक जानकारी"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "बातचीत खोलें"),
                 n("ica55d24", "नई चैट"),
                 n("f794af9a", "फ़न मोड"),
@@ -13233,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.b18c45da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.b223bd5a.js.map

@@ -4149,7 +4149,7 @@
                     return e.stringCount + " àwọn ìbéèrè tuntun";
                 }),
                 a("ed93de0c", "Analyzing Post"),
-                a("ba44f4ea", "More details from Grok"),
+                a("d1d92e40", "More details"),
                 a("a6e89af8", "Open conversation"),
                 a("ica55d24", "New Chat"),
                 a("f794af9a", "Fun mode"),
@@ -13228,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.490826ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.4c42695a.js.map

@@ -2823,13 +2823,13 @@
                     return "Je abonnementsniveau wordt gewijzigd naar " + e.tierName + " met ingang van de volgende factureringscylus op " + e.date;
                 }),
                 a("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "De volgende factureringscyclus start op " + e.date;
                 }),
                 a("edbb700f", function (e) {
                     return "Gaat in bij de volgende factureringscyclus op " + e.date;
                 }),
                 a("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Abonnement eindigt op " + e.date;
                 }),
                 a("e9884540", "Actieve korting"),
                 a("bfb879aa", "Aankomende korting"),
@@ -2984,8 +2984,8 @@
                 a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
-                a("da00e00a", "Try the new News"),
-                a("c40666d8", "Probeer het"),
+                a("da00e00a", "Probeer het nieuwe Nieuws uit"),
+                a("c40666d8", "Probeer het uit"),
                 a("j66b95a2", "Diepgaand nieuws"),
                 a("b58d2bd2", "Relevante posts"),
                 a("efe6ef9e", "Post bekijken"),
@@ -4146,7 +4146,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 a("ed93de0c", "Post analyseren"),
-                a("ba44f4ea", "Meer informatie van Grok"),
+                a("d1d92e40", "More details"),
                 a("a6e89af8", "Open gesprek"),
                 a("ica55d24", "Nieuwe chat"),
                 a("f794af9a", "Funmodus"),
@@ -6681,7 +6681,7 @@
                 a("b2d41138", "Meer bereik = meer verdiensten"),
                 a("defa7f12", "Profiteer van Antwoordboost, waarmee je zichtbaarder wordt om sneller te groeien."),
                 a("i3e4955d", "hier"),
-                a("fdc5d06c", "Exit Full Screen"),
+                a("fdc5d06c", "Volledig scherm verlaten"),
                 a("cea1c00e", "De mogelijkheid ontgrendelen om interacties aan te gaan"),
                 a("f8e6a280", "We vragen nieuwe accounts om een kleine jaarlijkse bijdrage te betalen voordat ze posts kunnen plaatsen, vind-ik-leuks geven, bladwijzers maken en antwoorden. We doen dit om spam te verminderen en de ervaring voor iedereen beter te maken. Je kan nog altijd accounts gratis volgen en alles op X gratis bekijken."),
                 a("h968efc6", "We vragen nieuwe accounts om een kleine bijdrage te betalen voordat ze posts kunnen plaatsen, vind-ik-leuks geven, bladwijzers maken en antwoorden. We doen dit om spam te verminderen en de ervaring voor iedereen beter te maken. Je kan nog altijd accounts gratis volgen en alles op X gratis bekijken."),
@@ -6725,7 +6725,7 @@
                 a("i1801686", "Dit is geen geldige zoekopdracht. Voer een andere zoekopdracht in."),
                 a("a0b4541c", "Er ging iets mis, maar geen paniek, het ligt niet aan jou"),
                 a("d7eebb60", "Je abonnement wordt ingesteld"),
-                a("h707b180", "Your subscription update is complete"),
+                a("h707b180", "De update van je abonnement is voltooid"),
                 a("a452ab68", "Dit kan een paar seconden duren."),
                 a("b3bad3b2", "@premium"),
                 a("accbcc78", "Bijgewerkt"),
@@ -7393,7 +7393,7 @@
                 a("a10aa36c", "Helpcentrum"),
                 a("d0740558", "Helpcentrum"),
                 a("d2d76dca", "Helpcentrum"),
-                a("de8bcdaa", "Breakdown of the people that have seen your post"),
+                a("de8bcdaa", "Overzicht van de mensen die je post hebben bekeken"),
                 a("cfa1ef16", "Boosten"),
                 a("d267afa2", "Onder 20"),
                 a("db81cab0", "20-29"),
@@ -7405,12 +7405,12 @@
                 a("fa5be588", "Organisch"),
                 a("c65126fe", "Geboost"),
                 a("c61c6624", "Promoted"),
-                a("f1196a04", "Boost Analytics"),
-                a("bb66e3fc", "Promote Analytics"),
+                a("f1196a04", "Analyses van gebooste posts"),
+                a("bb66e3fc", "Analyses van uitgelichte posts"),
                 a("g512ddcc", "Organische analyses"),
-                a("j9256524", "Breakdown of your boost performance"),
-                a("ceeb3016", "Breakdown of your promote performance"),
-                a("bf4558fa", "Breakdown of your organic performance"),
+                a("j9256524", "Overzicht van de prestaties van je gebooste posts"),
+                a("ceeb3016", "Overzicht van de prestaties van je uitgelichte posts"),
+                a("bf4558fa", "Overzicht van de prestaties van je organische posts"),
                 a("c69069e6", "Aantal keer dat deze post op X is bekeken"),
                 a("a0615bac", "Het totale aantal interacties van een gebruiker met een post, waaronder alle clicks binnen de post (op hashtags, links, profielafbeelding, gebruikersnaam en uitgeklapte post), reposts, antwoorden, volgverzoeken en vind-ik-leuks."),
                 a("d8abdaa4", "Nieuwe volgers"),
@@ -7419,7 +7419,7 @@
                 a("c7d0d1c4", "Aantal clicks op alle URL's van deze post"),
                 a("a4da7724", "Het aantal keer dat mensen de details van deze post hebben bekeken"),
                 a("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " van boost";
                 }),
                 a("g33fd6b1", function (e) {
                     return e.percentage + " van promotie";
@@ -7428,7 +7428,7 @@
                     return e.percentage + " van niet-volgers";
                 }),
                 a("h4cbba3e", "< 5%"),
-                a("f4f0094c", "< 5% from boost"),
+                a("f4f0094c", "< 5% van boost"),
                 a("h1cdac12", "<5% van promotie"),
                 a("g884b2cc", "< 5% van niet-volgers"),
                 a("b32334a0", "Bereikte accounts"),
@@ -12033,7 +12033,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", "% kosten, min. ", ")"];
                             },
                         },
                         {
@@ -13239,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.cfd984fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.6fb1bfaa.js.map

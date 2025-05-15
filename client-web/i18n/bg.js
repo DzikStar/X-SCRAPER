@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + t(e.count, "", "s");
                 }),
                 n("ed93de0c", "Анализиране на публикацията"),
-                n("ba44f4ea", "Повече подробности от Grok"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "Открит разговор"),
                 n("ica55d24", "Нов чат"),
                 n("f794af9a", "Забавен режим"),
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.a104a5ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.fc31cf6a.js.map

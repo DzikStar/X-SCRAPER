@@ -2832,13 +2832,13 @@
                     return "Zaplanowano zmianę poziomu Twojej subskrypcji na " + e.tierName + " od następnego cyklu rozliczeniowego, który zacznie się w dniu " + e.date;
                 }),
                 i("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Następny cykl rozliczeniowy zaczyna się " + e.date;
                 }),
                 i("edbb700f", function (e) {
                     return "Zaczyna się w następnym cyklu rozliczeniowym w dniu " + e.date;
                 }),
                 i("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Subskrypcja kończy się " + e.date;
                 }),
                 i("e9884540", "Aktywny rabat"),
                 i("bfb879aa", "Oczekujący rabat"),
@@ -2993,8 +2993,8 @@
                 i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
                 i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
-                i("da00e00a", "Try the new News"),
-                i("c40666d8", "Spróbuj"),
+                i("da00e00a", "Wypróbuj nowe Wiadomości"),
+                i("c40666d8", "Wypróbuj"),
                 i("j66b95a2", "Dokładne wiadomości"),
                 i("b58d2bd2", "Odpowiednie wpisy"),
                 i("efe6ef9e", "Wyświetl wpis"),
@@ -4155,7 +4155,7 @@
                     return e.stringCount + " new request" + n(e.count, "s", "s", "", "s");
                 }),
                 i("ed93de0c", "Analizowanie wpisu"),
-                i("ba44f4ea", "Więcej szczegółów od Groka"),
+                i("d1d92e40", "More details"),
                 i("a6e89af8", "Publiczna rozmowa"),
                 i("ica55d24", "Nowy czat"),
                 i("f794af9a", "Tryb zabawny"),
@@ -6690,7 +6690,7 @@
                 i("b2d41138", "Większy zasięg = większe zarobki"),
                 i("defa7f12", "Korzystaj z funkcji Wzmocnienie odpowiedzi, która zwiększy widoczność Twoich wpisów i pozwoli Ci szybciej się rozwijać."),
                 i("i3e4955d", "Tutaj"),
-                i("fdc5d06c", "Exit Full Screen"),
+                i("fdc5d06c", "Zamknij tryb pełnoekranowy"),
                 i("cea1c00e", "Odblokuj możliwość interakcji"),
                 i("f8e6a280", "Właściciele nowych kont są zobowiązani do uiszczenia niewielkiej rocznej opłaty, zanim będą mogli publikować wpisy, oznaczać wpisy jako ulubione, dodawać wpisy do Zakładek oraz odpowiadać na wpisy. Ma to na celu ograniczenie spamu oraz stworzenie lepszego środowiska dla wszystkich użytkowników. Nadal możesz bezpłatnie obserwować inne konta i przeglądać serwis X."),
                 i("h968efc6", "Właściciele nowych kont są zobowiązani do uiszczenia niewielkiej opłaty, zanim będą mogli publikować wpisy, oznaczać wpisy jako ulubione, dodawać wpisy do Zakładek oraz odpowiadać na wpisy. Ma to na celu ograniczenie spamu oraz stworzenie lepszego środowiska dla wszystkich użytkowników. Nadal możesz bezpłatnie obserwować inne konta i przeglądać serwis X."),
@@ -6734,7 +6734,7 @@
                 i("i1801686", "Nie znaleziono wpisanego terminu. Spróbuj wyszukać coś innego."),
                 i("a0b4541c", "Coś poszło nie tak, ale nie martw się, to nie Twoja wina"),
                 i("d7eebb60", "Trwa konfigurowanie Twojej subskrypcji"),
-                i("h707b180", "Your subscription update is complete"),
+                i("h707b180", "Aktualizacja Twojej subskrypcji została zakończona"),
                 i("a452ab68", "Może to potrwać kilka sekund."),
                 i("b3bad3b2", "@premium"),
                 i("accbcc78", "Zaktualizowano pomyślnie"),
@@ -7402,7 +7402,7 @@
                 i("a10aa36c", "Centrum Pomocy"),
                 i("d0740558", "Centrum Pomocy"),
                 i("d2d76dca", "Centrum pomocy"),
-                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("de8bcdaa", "Podział osób, które widziały Twój wpis"),
                 i("cfa1ef16", "Dodaj boost"),
                 i("d267afa2", "Poniżej 20"),
                 i("db81cab0", "20-29"),
@@ -7414,12 +7414,12 @@
                 i("fa5be588", "Organiczne"),
                 i("c65126fe", "Wzmocniono"),
                 i("c61c6624", "Promowane"),
-                i("f1196a04", "Boost Analytics"),
-                i("bb66e3fc", "Promote Analytics"),
+                i("f1196a04", "Analizy wzmocnienia"),
+                i("bb66e3fc", "Analizy promocji"),
                 i("g512ddcc", "Analizy organiczne"),
-                i("j9256524", "Breakdown of your boost performance"),
-                i("ceeb3016", "Breakdown of your promote performance"),
-                i("bf4558fa", "Breakdown of your organic performance"),
+                i("j9256524", "Podział wyników wzmocnienia"),
+                i("ceeb3016", "Podział wyników promocji"),
+                i("bf4558fa", "Podział wyników organicznych"),
                 i("c69069e6", "Liczba wyświetleń tego wpisu na X"),
                 i("a0615bac", "Ile razy w sumie użytkownik zareagował na wpis. Obejmuje to wszystkie kliknięcia w dowolnym miejscu wpisu (w tym kliknięcia tagów, linków, awatarów, nazwy użytkownika, a także rozwinięcie wpisu), podanie wpisu dalej, odpowiedzi, obserwacje i polubienia."),
                 i("d8abdaa4", "Nowi obserwujący"),
@@ -7428,7 +7428,7 @@
                 i("c7d0d1c4", "Liczba kliknięć w linki z wpisu"),
                 i("a4da7724", "Ile razy użytkownicy wyświetlali szczegóły wpisu"),
                 i("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " ze wzmocnienia";
                 }),
                 i("g33fd6b1", function (e) {
                     return e.percentage + " – w wyniku promocji";
@@ -7437,7 +7437,7 @@
                     return e.percentage + " – osoby nieobserwujące Twojego konta";
                 }),
                 i("h4cbba3e", "< 5%"),
-                i("f4f0094c", "< 5% from boost"),
+                i("f4f0094c", "< 5% ze wzmocnienia"),
                 i("h1cdac12", "< 5% z promocji"),
                 i("g884b2cc", "< 5% od osób niebędących obserwującymi"),
                 i("b32334a0", "Zasięg wg liczby kont"),
@@ -12029,7 +12029,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(opłata: ", "%, min: ", ")"];
                             },
                         },
                         {
@@ -13239,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.36ef601a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.7a2bb67a.js.map

@@ -4157,7 +4157,7 @@
                     return e.stringCount + " new request" + r(e.count, "s", "", "s");
                 }),
                 t("ed93de0c", "Se analizează postarea"),
-                t("ba44f4ea", "Mai multe detalii de la Grok"),
+                t("d1d92e40", "More details"),
                 t("a6e89af8", "Conversație deschisă"),
                 t("ica55d24", "Chat nou"),
                 t("f794af9a", "Modul distractiv"),
@@ -13239,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.a9084eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.b14e5cfa.js.map

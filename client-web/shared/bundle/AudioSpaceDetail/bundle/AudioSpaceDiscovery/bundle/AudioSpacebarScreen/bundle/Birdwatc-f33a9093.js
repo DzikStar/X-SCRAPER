@@ -15,8 +15,8 @@
                 c = r(462775),
                 u = r(182495),
                 D = r(601798),
-                m = r(500002),
-                h = r(443781),
+                h = r(500002),
+                m = r(443781),
                 p = r(406837),
                 M = r(950570),
                 f = r(911318);
@@ -86,8 +86,8 @@
                     return this._is3rdPartyIntegrationDisabled ? null : o.createElement(l.ZP, { backgroundColor: "white", borderColor: "gray200", children: d, color: "alwaysBaseGray1100", disabled: !r, fontWeight: "normal", icon: o.createElement(t.default, null), onPress: this._handleOnPress, size: e, style: a, testID: M.Z.apple });
                 }
             }
-            (I.contextType = h.rC), (I.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
-            const A = (0, m.ZP)((0, p.Z)(I));
+            (I.contextType = m.rC), (I.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
+            const A = (0, h.ZP)((0, p.Z)(I));
         },
         791983: (e, a, r) => {
             r.d(a, { O: () => u, c: () => s });
@@ -101,9 +101,9 @@
             const i = (0, n.Z)({
                 loader: () =>
                     Promise.all([
+                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.18"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -121,6 +121,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -159,9 +160,9 @@
             const D = (0, n.Z)({
                 loader: () =>
                     Promise.all([
+                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.18"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -179,6 +180,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -208,7 +210,7 @@
             });
         },
         450006: (e, a, r) => {
-            r.d(a, { Z: () => h });
+            r.d(a, { Z: () => m });
             var o = r(202784),
                 d = r(680961),
                 n = r(293115),
@@ -222,11 +224,11 @@
                     return r?.scribeConfig;
                 },
                 D = (0, i.Z)().propsFromState(() => ({ initialFetchStatus: c, isTimelineEmpty: t, scribeNamespace: u }));
-            const m = { ...(0, r(335632).G)({ isInSidebar: !0 }) },
-                h = D((e) => {
+            const h = { ...(0, r(335632).G)({ isInSidebar: !0 }) },
+                m = D((e) => {
                     const { initialFetchStatus: a, isTimelineEmpty: r, module: i, scribeNamespace: t } = e;
                     if ((a === l.ZP.LOADED || a === l.ZP.FAILED) && r) return null;
-                    const c = o.createElement(s.Z, { entryConfiguration: m, module: i, scroller: d.Z, showLoadingFooter: !1, title: "", withKeyboardShortcuts: !1 });
+                    const c = o.createElement(s.Z, { entryConfiguration: h, module: i, scroller: d.Z, showLoadingFooter: !1, title: "", withKeyboardShortcuts: !1 });
                     return t ? o.createElement(n.nO, { namespace: t }, c) : c;
                 });
         },
@@ -248,8 +250,8 @@
                 c = r(392237),
                 u = r(674132),
                 D = r.n(u),
-                m = r(837020),
-                h = r(144251),
+                h = r(837020),
+                m = r(144251),
                 p = r(187669),
                 M = r(399398),
                 f = r(88660),
@@ -293,7 +295,7 @@
                             n.Z,
                             { role: "complementary", style: Z.root },
                             d.createElement(l.ZP, {
-                                icon: d.createElement(m.default, null),
+                                icon: d.createElement(h.default, null),
                                 onPress: () => {
                                     e(), c.scribeAction("dismiss");
                                 },
@@ -301,12 +303,12 @@
                                 style: Z.closeButton,
                                 type: "primaryText",
                             }),
-                            S ? d.createElement(n.Z, { style: Z.displayName }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(n.Z, { style: Z.userName }, d.createElement(i.ZP, { size: "headline2", weight: "medium" }, r), d.createElement(h.default, { style: Z.iconVerified }))) : null,
+                            S ? d.createElement(n.Z, { style: Z.displayName }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(n.Z, { style: Z.userName }, d.createElement(i.ZP, { size: "headline2", weight: "medium" }, r), d.createElement(m.default, { style: Z.iconVerified }))) : null,
                             d.createElement(
                                 n.Z,
                                 { style: Z.inner },
                                 v ? d.createElement(n.Z, { style: Z.image }, d.createElement(t.Z, { "aria-label": A, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
-                                g ? d.createElement(n.Z, { style: Z.userAvatar }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(h.default, { style: [Z.iconVerified, Z.iconOverlap] })) : null,
+                                g ? d.createElement(n.Z, { style: Z.userAvatar }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(m.default, { style: [Z.iconVerified, Z.iconOverlap] })) : null,
                                 d.createElement(i.ZP, { size: "headline1", weight: "heavy" }, y),
                                 d.createElement(i.ZP, null, _),
                                 d.createElement(
@@ -476,4 +478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.93e4f64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.3fff191a.js.map

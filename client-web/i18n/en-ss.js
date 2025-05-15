@@ -2979,7 +2979,7 @@
                 a("j0693948", "[[294379]] Get the Grok app"),
                 a("af781666", "[[294695]] What do people think?"),
                 a("ad35153e", "[[294696]] beta"),
-                a("a1f414ee", "Share thoughts"),
+                a("a1f414ee", "[[295480]] Share thoughts"),
                 a("fbf83158", "[[293517]] Warning: Payment failed"),
                 a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "[[293518]] Update Billing"),
@@ -4146,7 +4146,7 @@
                     return "[[260566]] " + e.stringCount + " new request" + n(e.count, "", "s");
                 }),
                 a("ed93de0c", "[[292376]] Analyzing Post"),
-                a("ba44f4ea", "[[292389]] More details from Grok"),
+                a("d1d92e40", "More details"),
                 a("a6e89af8", "[[220355]] Open conversation"),
                 a("ica55d24", "[[289966]] New Chat"),
                 a("f794af9a", "[[285085]] Fun mode"),
@@ -13226,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.c947ac4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.5993824a.js.map

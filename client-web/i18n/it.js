@@ -4150,7 +4150,7 @@
                     return i.stringCount + " new request" + t(i.count, "", "s");
                 }),
                 o("ed93de0c", "Analisi post in corso"),
-                o("ba44f4ea", "Altri dettagli da Grok"),
+                o("d1d92e40", "More details"),
                 o("a6e89af8", "Conversazione aperta"),
                 o("ica55d24", "Nuova conversazione"),
                 o("f794af9a", "Modalità divertente"),
@@ -6619,7 +6619,7 @@
                 }),
                 o("c9b302f8", "Per gli ultimi prodotti, ricontrolla più tardi."),
                 o("cfe836d1", function (i) {
-                    return "Sconto del " + i.percent + "%";
+                    return i.percent + "% di sconto";
                 }),
                 o("efb132c3", function (i) {
                     return i.title + " - " + i.description + " a soli " + i.price;
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.8afa90ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.eb26fb9a.js.map

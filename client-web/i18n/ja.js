@@ -2822,13 +2822,13 @@
                     return "サブスクリプションレベルは、" + e.date + "に始まる次の課金サイクルから" + e.tierName + "に変更される予定です。";
                 }),
                 f("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "次の請求サイクルは" + e.date + "に始まります";
                 }),
                 f("edbb700f", function (e) {
                     return "次の請求サイクルは" + e.date + "に始まります";
                 }),
                 f("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "サブスクリプションは" + e.date + "に終了します";
                 }),
                 f("e9884540", "有効な割引"),
                 f("bfb879aa", "保留中の割引"),
@@ -2983,7 +2983,7 @@
                 f("jadeb4da", "サブスクリプションの特典を失う前に、お支払い方法を至急更新してください。"),
                 f("bce3726a", "請求情報を更新"),
                 f("fce9ecce", "おすすめ動画"),
-                f("da00e00a", "Try the new News"),
+                f("da00e00a", "新しい [ニュース] を試してみましょう"),
                 f("c40666d8", "試してみる"),
                 f("j66b95a2", "詳細ニュース"),
                 f("b58d2bd2", "関連するポスト"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new requests";
                 }),
                 f("ed93de0c", "ポストを分析中"),
-                f("ba44f4ea", "Grokによる詳細"),
+                f("d1d92e40", "More details"),
                 f("a6e89af8", "会話を開く"),
                 f("ica55d24", "新しいチャット"),
                 f("f794af9a", "ユーモアモード"),
@@ -6680,7 +6680,7 @@
                 f("b2d41138", "リーチが広がる = 収益が増える"),
                 f("defa7f12", "返信のブーストによって目につきやすくなるため、すばやく収益を拡大できます。"),
                 f("i3e4955d", "こちら"),
-                f("fdc5d06c", "Exit Full Screen"),
+                f("fdc5d06c", "全画面表示を終了"),
                 f("cea1c00e", "エンゲージメントできるようにする"),
                 f("f8e6a280", "新しいアカウントがポスト、いいね、ブックマークへの追加、返信を行うには、少額の年会費のお支払いが必要です。これは、スパムを減らし、すべてのユーザーにより快適にご利用いただくことを目的としています。アカウントのフォローやXの閲覧は引き続き無料で行えます。"),
                 f("h968efc6", "新しいアカウントがポスト、いいね、ブックマークへの追加、返信を行うには、少額の料金のお支払いが必要です。これは、スパムを減らし、すべてのユーザーにより快適にご利用いただくことを目的としています。アカウントのフォローやXの閲覧は引き続き無料で行えます。"),
@@ -6724,7 +6724,7 @@
                 f("i1801686", "検索内容が正しくありません。別の内容を入力してください。"),
                 f("a0b4541c", "申し訳ありません。問題が発生しました"),
                 f("d7eebb60", "サブスクリプションを設定する"),
-                f("h707b180", "Your subscription update is complete"),
+                f("h707b180", "サブスクリプションのアップデートが完了しました"),
                 f("a452ab68", "この処理には少し時間がかかる場合があります。"),
                 f("b3bad3b2", "@premium"),
                 f("accbcc78", "更新しました"),
@@ -7392,7 +7392,7 @@
                 f("a10aa36c", "ヘルプセンター"),
                 f("d0740558", "ヘルプセンター"),
                 f("d2d76dca", "ヘルプセンター"),
-                f("de8bcdaa", "Breakdown of the people that have seen your post"),
+                f("de8bcdaa", "あなたのポストを表示したユーザーの内訳"),
                 f("cfa1ef16", "ブーストする"),
                 f("d267afa2", "20歳未満"),
                 f("db81cab0", "20～29歳"),
@@ -7402,14 +7402,14 @@
                 f("bcd9cf68", "65歳以上"),
                 f("f05f1838", "その他/未指定"),
                 f("fa5be588", "オーガニック"),
-                f("c65126fe", "ブースト済み"),
+                f("c65126fe", "ブースト"),
                 f("c61c6624", "プロモーション"),
-                f("f1196a04", "Boost Analytics"),
-                f("bb66e3fc", "Promote Analytics"),
+                f("f1196a04", "ブーストアナリティクス"),
+                f("bb66e3fc", "プロモーションアナリティクス"),
                 f("g512ddcc", "オーガニックアナリティクス"),
-                f("j9256524", "Breakdown of your boost performance"),
-                f("ceeb3016", "Breakdown of your promote performance"),
-                f("bf4558fa", "Breakdown of your organic performance"),
+                f("j9256524", "ブーストのパフォーマンスの内訳"),
+                f("ceeb3016", "プロモーションのパフォーマンスの内訳"),
+                f("bf4558fa", "オーガニックポストのパフォーマンスの内訳"),
                 f("c69069e6", "このポストがXで表示された回数"),
                 f("a0615bac", "ユーザーがポストに反応した合計回数。ポストのクリック（ハッシュタグ、リンク、プロフィール画像、ユーザー名、ポストの詳細表示のクリックを含む)、リポスト、返信、フォロー、いいねを含みます。"),
                 f("d8abdaa4", "新しいフォロワー数"),
@@ -7418,7 +7418,7 @@
                 f("c7d0d1c4", "このポストに含まれるURLのクリック数"),
                 f("a4da7724", "ユーザーがこのポストを詳細表示した回数"),
                 f("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return "ブーストの" + e.percentage;
                 }),
                 f("g33fd6b1", function (e) {
                     return e.percentage + ": プロモーション経由";
@@ -7427,7 +7427,7 @@
                     return e.percentage + ": フォロワー以外";
                 }),
                 f("h4cbba3e", "5%未満"),
-                f("f4f0094c", "< 5% from boost"),
+                f("f4f0094c", "ブーストの5%未満"),
                 f("h1cdac12", "プロモーションの5%未満"),
                 f("g884b2cc", "フォロワー以外の5%未満"),
                 f("b32334a0", "リーチしたアカウント数"),
@@ -12026,7 +12026,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["（手数料", "%、最低", "）"];
                             },
                         },
                         {
@@ -13231,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.996a4b5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.411e566a.js.map

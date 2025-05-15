@@ -2822,13 +2822,13 @@
                     return "Az előfizetési csomagod " + e.tierName + " csomagra változik a következő számlázási ciklus kezdetekor: " + e.date;
                 }),
                 s("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "A következő számlázási ciklus " + e.date + " napján indul";
                 }),
                 s("edbb700f", function (e) {
                     return "A következő számlázási ciklussal indul " + e.date + " napján";
                 }),
                 s("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Az előfizetés " + e.date + " napján lejár";
                 }),
                 s("e9884540", "Aktív kedvezmény"),
                 s("bfb879aa", "Függőben lévő kedvezmény"),
@@ -2983,7 +2983,7 @@
                 s("jadeb4da", "Sürgősen frissítsd a fizetési módod, még mielőtt elveszíted az előfizetés nyújtotta előnyöket."),
                 s("bce3726a", "Számlázási adatok frissítése"),
                 s("fce9ecce", "Javasolt videók"),
-                s("da00e00a", "Try the new News"),
+                s("da00e00a", "Próbáld ki az új Hírek lapot!"),
                 s("c40666d8", "Próbáld ki!"),
                 s("j66b95a2", "Részletes hírek"),
                 s("b58d2bd2", "Kapcsolódó bejegyzések"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + l(e.count, "", "s");
                 }),
                 s("ed93de0c", "Bejegyzés elemzése"),
-                s("ba44f4ea", "További részletek a Groktól"),
+                s("d1d92e40", "More details"),
                 s("a6e89af8", "Nyílt beszélgetés"),
                 s("ica55d24", "Új csevegés"),
                 s("f794af9a", "Szórakoztató mód"),
@@ -6680,7 +6680,7 @@
                 s("b2d41138", "Nagyobb elérés = nagyobb bevétel"),
                 s("defa7f12", "Használd ki a Válaszok fellendítése nyújtotta előnyöket, ami extra láthatóságot biztosít a gyorsabb növekedés érdekében."),
                 s("i3e4955d", "Itt"),
-                s("fdc5d06c", "Exit Full Screen"),
+                s("fdc5d06c", "Kilépés a teljes képernyős módból"),
                 s("cea1c00e", "Oldd fel az interakciók lehetőségét!"),
                 s("f8e6a280", "Az új felhasználói fiókoknak egy kisebb éves díjat kell fizetniük a posztolás, kedvelés, könyvjelzők közé mentés és válaszolás előtt. Ez a spam mennyiségének csökkentésére szolgál, és jobb felhasználói élményt biztosít mindenki számára. Továbbra is ingyenesen követhetsz felhasználókat és böngészhetsz az X-en."),
                 s("h968efc6", "Az új felhasználói fiókoknak egy kisebb díjat kell fizetniük a posztolás, kedvelés, könyvjelzők közé mentés és válaszolás előtt. Ez a spam mennyiségének csökkentésére szolgál, és jobb felhasználói élményt biztosít mindenki számára. Továbbra is ingyenesen követhetsz felhasználókat és böngészhetsz az X-en."),
@@ -6724,7 +6724,7 @@
                 s("i1801686", "A keresés érvénytelen. Próbálkozz másik kereséssel!"),
                 s("a0b4541c", "Valami hiba történt, de ne aggódj, nem a te hibád."),
                 s("d7eebb60", "Előfizetés beállítása"),
-                s("h707b180", "Your subscription update is complete"),
+                s("h707b180", "Az előfizetés frissítése kész"),
                 s("a452ab68", "Ez eltarthat pár másodpercig."),
                 s("b3bad3b2", "@premium"),
                 s("accbcc78", "Sikeresen módosítva"),
@@ -7392,7 +7392,7 @@
                 s("a10aa36c", "Segítőközpontot"),
                 s("d0740558", "Segítőközpontot"),
                 s("d2d76dca", "Súgóközpontot"),
-                s("de8bcdaa", "Breakdown of the people that have seen your post"),
+                s("de8bcdaa", "A bejegyzésedet megtekintő felhasználókkal kapcsolatos részletek"),
                 s("cfa1ef16", "Fellendítés"),
                 s("d267afa2", "20 alatt"),
                 s("db81cab0", "20–29"),
@@ -7404,12 +7404,12 @@
                 s("fa5be588", "Organikus"),
                 s("c65126fe", "Fellendítve"),
                 s("c61c6624", "Ajánlott"),
-                s("f1196a04", "Boost Analytics"),
-                s("bb66e3fc", "Promote Analytics"),
+                s("f1196a04", "Fellendítési elemzések"),
+                s("bb66e3fc", "Ajánlási elemzések"),
                 s("g512ddcc", "Organikus elemzések"),
-                s("j9256524", "Breakdown of your boost performance"),
-                s("ceeb3016", "Breakdown of your promote performance"),
-                s("bf4558fa", "Breakdown of your organic performance"),
+                s("j9256524", "A fellendítés hatékonyságával kapcsolatos részletek"),
+                s("ceeb3016", "Az ajánlás hatékonyságával kapcsolatos részletek"),
+                s("bf4558fa", "Az organikus teljesítménnyel kapcsolatos részletek"),
                 s("c69069e6", "Ennyiszer látták ezt a bejegyzést az X-en"),
                 s("a0615bac", "Az összes alkalom, ahányszor egy felhasználó interakcióba lépett egy bejegyzéssel. Ide tartoznak a bejegyzésre kattintások (beleértve a címkét, a hivatkozásokat, az avatart, a felhasználónevet és a bejegyzés részleteinek megtekintését is), az újraposztolások, a válaszok, a követések és a kedvelések."),
                 s("d8abdaa4", "Új követők"),
@@ -7418,7 +7418,7 @@
                 s("c7d0d1c4", "A bejegyzésben lévő bármely URL kattintásainak száma"),
                 s("a4da7724", "Azon alkalmak, ahányszor az emberek megtekintették a bejegyzés részleteit"),
                 s("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " a fellendítésből";
                 }),
                 s("g33fd6b1", function (e) {
                     return e.percentage + " a promócióból";
@@ -7427,7 +7427,7 @@
                     return e.percentage + " nem követőktől";
                 }),
                 s("h4cbba3e", "<5%"),
-                s("f4f0094c", "< 5% from boost"),
+                s("f4f0094c", "< 5% a fellendítésből"),
                 s("h1cdac12", "<5% a promócióból"),
                 s("g884b2cc", "< 5% a téged nem követőktől"),
                 s("b32334a0", "Elért felhasználói fiókok"),
@@ -12029,7 +12029,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(a díja ", "%, min. ", ")"];
                             },
                         },
                         {
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.eccc237a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.77cd9c3a.js.map

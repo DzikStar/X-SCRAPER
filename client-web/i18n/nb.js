@@ -2822,13 +2822,13 @@
                     return "Abonnementsnivået endres til " + e.tierName + " fra neste faktureringsperiode " + e.date;
                 }),
                 t("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Neste faktureringssyklus starter " + e.date;
                 }),
                 t("edbb700f", function (e) {
                     return "Starter med neste faktureringssyklus " + e.date;
                 }),
                 t("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Abonnementet avsluttes " + e.date;
                 }),
                 t("e9884540", "Aktiv rabatt"),
                 t("bfb879aa", "Ventende rabatt"),
@@ -2983,7 +2983,7 @@
                 t("jadeb4da", "Oppdater betalingsmåten snarest før du mister abonnementsfordelene."),
                 t("bce3726a", "Oppdater faktureringsopplysningene"),
                 t("fce9ecce", "Foreslåtte videoer"),
-                t("da00e00a", "Try the new News"),
+                t("da00e00a", "Prøv de nye nyhetene"),
                 t("c40666d8", "Prøv"),
                 t("j66b95a2", "Dyptgående nyheter"),
                 t("b58d2bd2", "Relevante innlegg"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + i(e.count, "", "s");
                 }),
                 t("ed93de0c", "Analyserer innlegget"),
-                t("ba44f4ea", "Flere detaljer fra Grok"),
+                t("d1d92e40", "More details"),
                 t("a6e89af8", "Åpen samtale"),
                 t("ica55d24", "Ny samtale"),
                 t("f794af9a", "Gøyal modus"),
@@ -6680,7 +6680,7 @@
                 t("b2d41138", "Større rekkevidde = større utbetalinger"),
                 t("defa7f12", "Med svarfremming får du den ekstra synligheten som skaper raskere vekst."),
                 t("i3e4955d", "her"),
-                t("fdc5d06c", "Exit Full Screen"),
+                t("fdc5d06c", "Avslutt fullskjerm"),
                 t("cea1c00e", "Få muligheten til å engasjere deg"),
                 t("f8e6a280", "Nye kontoer må betale en liten årsavgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden spam og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
                 t("h968efc6", "Nye kontoer må betale en liten avgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden spam og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
@@ -6724,7 +6724,7 @@
                 t("i1801686", "Denne søkestrengen er ikke gyldig. Prøv en annen."),
                 t("a0b4541c", "Det oppstod et problem (ikke din feil)"),
                 t("d7eebb60", "Abonnementet opprettes"),
-                t("h707b180", "Your subscription update is complete"),
+                t("h707b180", "Abonnementet ble oppdatert"),
                 t("a452ab68", "Det kan ta noen sekunder."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Oppdateringen var vellykket"),
@@ -7392,7 +7392,7 @@
                 t("a10aa36c", "hjelpesenteret"),
                 t("d0740558", "hjelpesenteret"),
                 t("d2d76dca", "hjelpesenteret"),
-                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("de8bcdaa", "Detaljer om brukerne som har sett innlegget ditt"),
                 t("cfa1ef16", "Frem"),
                 t("d267afa2", "Under 20"),
                 t("db81cab0", "20 til 29"),
@@ -7404,12 +7404,12 @@
                 t("fa5be588", "Organiske"),
                 t("c65126fe", "Fremmet"),
                 t("c61c6624", "Promotert"),
-                t("f1196a04", "Boost Analytics"),
-                t("bb66e3fc", "Promote Analytics"),
+                t("f1196a04", "Analyse av fremmingen"),
+                t("bb66e3fc", "Analyse av promoteringen"),
                 t("g512ddcc", "Organisk statistikk"),
-                t("j9256524", "Breakdown of your boost performance"),
-                t("ceeb3016", "Breakdown of your promote performance"),
-                t("bf4558fa", "Breakdown of your organic performance"),
+                t("j9256524", "Detaljer om fremmingsytelsen"),
+                t("ceeb3016", "Detaljer om promoteringsytelsen"),
+                t("bf4558fa", "Detaljer om den organiske ytelsen"),
                 t("c69069e6", "Antall ganger dette innlegget ble sett på X"),
                 t("a0615bac", "Totalt antall brukerinteraksjoner med et innlegg. Dette omfatter alle klikk hvor som helst i innlegget (inkludert hashtagger, lenker, avatar, brukernavn og innleggsutvidelse), republiseringer, svar, følgerklikk og likerklikk."),
                 t("d8abdaa4", "Nye følgere"),
@@ -7418,7 +7418,7 @@
                 t("c7d0d1c4", "Antall klikk på nettadresser i dette innlegget"),
                 t("a4da7724", "Antall ganger noen har sett dette innleggets detaljer"),
                 t("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " fra fremming";
                 }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " fra kampanje";
@@ -7427,7 +7427,7 @@
                     return e.percentage + " fra ikke-følgere";
                 }),
                 t("h4cbba3e", "< 5 %"),
-                t("f4f0094c", "< 5% from boost"),
+                t("f4f0094c", "< 5 % fra fremming"),
                 t("h1cdac12", "< 5 % fra kampanje"),
                 t("g884b2cc", "< 5 % fra ikke-følgere"),
                 t("b32334a0", "Kontoer nådd"),
@@ -12019,7 +12019,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", " % gebyr, min. ", ")"];
                             },
                         },
                         {
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.04c34a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.029696ea.js.map

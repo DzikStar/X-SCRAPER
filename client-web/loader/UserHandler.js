@@ -27,8 +27,8 @@
                 I = (0, D.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
                         { onBlock: r, onClose: l, onMute: s, onRemoveFollower: D, onReportUser: I, onShare: P, onUnblock: v, onUnmute: k, user: E } = e,
-                        S = [],
-                        A = (o, r) => {
+                        C = [],
+                        S = (o, r) => {
                             const { confirm: t, onClose: n } = e;
                             if (o) {
                                 const { label: e, ...a } = o;
@@ -41,7 +41,7 @@
                         !E.protected &&
                         !E.blocking &&
                         !E.blocked_by &&
-                        S.push({
+                        C.push({
                             Icon: n.Z,
                             onClick: () => {
                                 l(), P();
@@ -50,7 +50,7 @@
                             text: _,
                         });
                     !E.blocking &&
-                        S.push({
+                        C.push({
                             ...(0, h.N1)(
                                 E,
                                 () => {
@@ -63,17 +63,17 @@
                             testID: w,
                         });
                     E.followed_by &&
-                        S.push({
+                        C.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
-                                    A(e, D);
+                                    S(e, D);
                                 },
                                 user: E,
                             }),
                             testID: f,
                         }),
-                        S.push((0, u.op)({ blockAction: (e) => A(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => A(e, v), user: E })),
-                        S.push({
+                        C.push((0, u.op)({ blockAction: (e) => S(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => S(e, v), user: E })),
+                        C.push({
                             Icon: d.default,
                             onClick: () => {
                                 l(), I();
@@ -81,8 +81,8 @@
                             testID: b,
                             text: y({ screenName: E.screen_name }),
                         });
-                    const C = S.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
-                    return t.createElement(a.Z, { items: C, onCloseRequested: l });
+                    const A = C.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
+                    return t.createElement(a.Z, { items: A, onCloseRequested: l });
                 });
         },
         864479: (e, o, r) => {
@@ -180,10 +180,10 @@
                 y = (e) => {
                     const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: s, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, user: I, withFollowsYou: P, withLink: v } = e,
                         {
-                            content: { id: k, promotedMetadata: E, socialContext: S },
+                            content: { id: k, promotedMetadata: E, socialContext: C },
                         } = i,
-                        A = D(E),
-                        C = (S && S.generalContext) || void 0,
+                        S = D(E),
+                        A = (C && C.generalContext) || void 0,
                         Z = e.displayMode,
                         g = (0, u.hC)("super_follow_android_web_subscription_enabled") && Z === a.Z.SubscribableUser ? l.dk : l.ET,
                         O = s || g,
@@ -197,7 +197,7 @@
                     const T = d.useCallback(() => {
                         r({ entry: i, triggerName: m.K.ON_FOLLOW });
                     }, [r, i]);
-                    return d.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: Z, isConcise: p, onClick: w, onFollowClick: T, promotedContent: A, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: C, style: p && _.isCarouselItem, userId: k, withFollowsYou: P, withLink: v });
+                    return d.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: Z, isConcise: p, onClick: w, onFollowClick: T, promotedContent: S, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: A, style: p && _.isCarouselItem, userId: k, withFollowsYou: P, withLink: v });
                 },
                 _ = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
                 I = M(d.memo(y)),
@@ -237,6 +237,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -587,7 +588,7 @@
                     }
                 };
         },
-        226597: (e, o, r) => {
+        224823: (e, o, r) => {
             r.r(o), r.d(o, { default: () => d });
             var t = r(202784),
                 n = r(890601),
@@ -595,12 +596,12 @@
                 l = r(347101);
             const s = (e = {}) => {
                 const { direction: o } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm12.586 3l-2.043-2.04 1.414-1.42L20 7.59l2.043-2.05 1.414 1.42L21.414 9l2.043 2.04-1.414 1.42L20 10.41l-2.043 2.05-1.414-1.42L18.586 9zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z" })) }, { writingDirection: o });
             };
             s.metadata = { width: 24, height: 24 };
             const d = s;
         },
-        155353: (e, o, r) => {
+        74514: (e, o, r) => {
             r.r(o), r.d(o, { default: () => d });
             var t = r(202784),
                 n = r(890601),
@@ -608,11 +609,11 @@
                 l = r(347101);
             const s = (e = {}) => {
                 const { direction: o } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: o });
             };
             s.metadata = { width: 24, height: 24 };
             const d = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.772fad7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.297c56ba.js.map

@@ -4146,7 +4146,7 @@
                     return e.stringCount + " new request" + f(e.count, "", "s");
                 }),
                 n("ed93de0c", "વિશ્લેષણાત્મક પોસ્ટ"),
-                n("ba44f4ea", "Grok તરફથી વધુ વિગતો"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "ખુલ્લો વાર્તાલાપ"),
                 n("ica55d24", "નવી ચૅટ"),
                 n("f794af9a", "આનંદ મોડ"),
@@ -13241,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.e0b7ffaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.eb5e4d1a.js.map

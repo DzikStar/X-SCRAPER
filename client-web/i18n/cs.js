@@ -2832,13 +2832,13 @@
                     return "Vaše úroveň předplatného se má od příštího fakturačního cyklu změnit na úroveň " + e.tierName + ". Dojde k tomu dne " + e.date;
                 }),
                 a("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Příští fakturační cyklus začíná od " + e.date;
                 }),
                 a("edbb700f", function (e) {
                     return "Zahájit nový fakturační cyklus od " + e.date;
                 }),
                 a("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Předplatné končí: " + e.date;
                 }),
                 a("e9884540", "Aktivovat slevu"),
                 a("bfb879aa", "Čekání na slevu"),
@@ -2993,7 +2993,7 @@
                 a("jadeb4da", "Než ztratíte výhody ověření a předplatného, urychleně aktualizujte svou platební metodu."),
                 a("bce3726a", "Aktualizujte vyúčtování"),
                 a("fce9ecce", "Navržená videa"),
-                a("da00e00a", "Try the new News"),
+                a("da00e00a", "Vyzkoušejte nové Novinky"),
                 a("c40666d8", "Vyzkoušet"),
                 a("j66b95a2", "Podrobné zprávy"),
                 a("b58d2bd2", "Relevantní posty"),
@@ -4155,7 +4155,7 @@
                     return e.stringCount + " new request" + n(e.count, "s", "s", "", "s");
                 }),
                 a("ed93de0c", "Analýza postu"),
-                a("ba44f4ea", "Další detaily z Groka"),
+                a("d1d92e40", "More details"),
                 a("a6e89af8", "Otevřená konverzace"),
                 a("ica55d24", "Nový chat"),
                 a("f794af9a", "Režim Zábava"),
@@ -6690,7 +6690,7 @@
                 a("b2d41138", "Větší dosah = větší příjmy"),
                 a("defa7f12", "Získejte benefit za zvýšení odpovědi, což vám poskytne větší viditelnost, abyste mohli rychleji růst."),
                 a("i3e4955d", "Zde"),
-                a("fdc5d06c", "Exit Full Screen"),
+                a("fdc5d06c", "Ukončit zobrazení na celou obrazovku"),
                 a("cea1c00e", "Odblokujte schopnost zapojení se"),
                 a("f8e6a280", "Nové účty jsou povinny zaplatit malý roční poplatek, než budou moci postovat, lajkovat, přidávat do záložek a odpovídat. Cílem je omezit spam a vytvořit lepší zážitek pro všechny. Stále můžete sledovat účty a procházet X zdarma."),
                 a("h968efc6", "Nové účty jsou povinny zaplatit malý poplatek, než budou moci postovat, lajkovat, přidávat do záložek a odpovídat. Cílem je omezit spam a vytvořit lepší zážitek pro všechny. Stále můžete sledovat účty a procházet X zdarma."),
@@ -6734,7 +6734,7 @@
                 a("i1801686", "Neplatný dotaz. Zkuste jiný."),
                 a("a0b4541c", "Něco se pokazilo, ale netrapte se – není to vaše chyba"),
                 a("d7eebb60", "Nastavování předplatného"),
-                a("h707b180", "Your subscription update is complete"),
+                a("h707b180", "Aktualizace vašeho předplatného byla dokončena"),
                 a("a452ab68", "Může to trvat několik sekund."),
                 a("b3bad3b2", "@premium"),
                 a("accbcc78", "Aktualizace proběhla úspěšně"),
@@ -7402,7 +7402,7 @@
                 a("a10aa36c", "Centru nápovědy"),
                 a("d0740558", "Centru nápovědy"),
                 a("d2d76dca", "Centru nápovědy"),
-                a("de8bcdaa", "Breakdown of the people that have seen your post"),
+                a("de8bcdaa", "Rozpis lidí, kteří viděli váš post"),
                 a("cfa1ef16", "Boostovat"),
                 a("d267afa2", "Méně než 20"),
                 a("db81cab0", "20–29"),
@@ -7414,12 +7414,12 @@
                 a("fa5be588", "Organické"),
                 a("c65126fe", "Boostováno"),
                 a("c61c6624", "Sponzorováno"),
-                a("f1196a04", "Boost Analytics"),
-                a("bb66e3fc", "Promote Analytics"),
+                a("f1196a04", "Analýza boostování"),
+                a("bb66e3fc", "Analýza sponzorování"),
                 a("g512ddcc", "Organická analýza"),
-                a("j9256524", "Breakdown of your boost performance"),
-                a("ceeb3016", "Breakdown of your promote performance"),
-                a("bf4558fa", "Breakdown of your organic performance"),
+                a("j9256524", "Rozpis výkonu boostování"),
+                a("ceeb3016", "Rozpis výkonu sponzorování"),
+                a("bf4558fa", "Rozpis výkonu přirozeného zobrazení"),
                 a("c69069e6", "Počet zobrazení tohoto postu na platformě X"),
                 a("a0615bac", "Celkový počet interakcí nějakého uživatele s postem. Zahrnuje to všechna kliknutí kamkoli v postu (včetně hashtagů, odkazů, avatara, uživatelského jména a rozbalení postu), reposty, odpovědi, sledování a lajky."),
                 a("d8abdaa4", "Noví sledující"),
@@ -7428,7 +7428,7 @@
                 a("c7d0d1c4", "Počet kliknutí na libovolnou adresu URL v tomto postu"),
                 a("a4da7724", "Kolikrát si lidé zobrazili podrobnosti o tomto postu"),
                 a("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " z boostování";
                 }),
                 a("g33fd6b1", function (e) {
                     return e.percentage + " z reklamy";
@@ -7437,7 +7437,7 @@
                     return e.percentage + " z nesledujících";
                 }),
                 a("h4cbba3e", "< 5 %"),
-                a("f4f0094c", "< 5% from boost"),
+                a("f4f0094c", "< 5 % z boostování"),
                 a("h1cdac12", "< 5 % z propagace"),
                 a("g884b2cc", "< 5 % od uživatelů, kteří vás nesledují"),
                 a("b32334a0", "Oslovené účty"),
@@ -12029,7 +12029,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", "% poplatek, min. ", ")"];
                             },
                         },
                         {
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.a24c35ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.08a4e3da.js.map

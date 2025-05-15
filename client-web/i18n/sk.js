@@ -2832,13 +2832,13 @@
                     return "Od ďalšieho fakturačného cyklu, dňa " + e.date + ", sa vaša úroveň predplatného zmení na úroveň " + e.tierName;
                 }),
                 n("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Ďalší fakturačný cyklus sa začína " + e.date;
                 }),
                 n("edbb700f", function (e) {
                     return "Začne sa uplatňovať v nasledujúcom fakturačnom cykle od " + e.date;
                 }),
                 n("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Predplatné sa končí " + e.date;
                 }),
                 n("e9884540", "Aktívna zľava"),
                 n("bfb879aa", "Nespracovaná zľava"),
@@ -2993,7 +2993,7 @@
                 n("jadeb4da", "Čo najskôr si aktualizujte spôsob platby, než prídete o výhody predplatného."),
                 n("bce3726a", "Aktualizujte fakturačné údaje"),
                 n("fce9ecce", "Navrhované videá"),
-                n("da00e00a", "Try the new News"),
+                n("da00e00a", "Vyskúšajte nové spravodajstvo"),
                 n("c40666d8", "Vyskúšať"),
                 n("j66b95a2", "Podrobné správy"),
                 n("b58d2bd2", "Relevantné príspevky"),
@@ -4155,7 +4155,7 @@
                     return e.stringCount + " new request" + t(e.count, "s", "s", "", "s");
                 }),
                 n("ed93de0c", "Analýza príspevku"),
-                n("ba44f4ea", "Viac podrobností od Groka"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "Otvorená konverzácia"),
                 n("ica55d24", "Nový čet"),
                 n("f794af9a", "Zábavný režim"),
@@ -6690,7 +6690,7 @@
                 n("b2d41138", "Väčší dosah = väčšie zárobky"),
                 n("defa7f12", "Zviditeľnite sa vďaka podpore odpovedí a zrýchlite tak rast svojho profilu."),
                 n("i3e4955d", "Prečítajte si viac"),
-                n("fdc5d06c", "Exit Full Screen"),
+                n("fdc5d06c", "Ukončiť zobrazenie na celú obrazovku"),
                 n("cea1c00e", "Odomknúť možnosť interakcie"),
                 n("f8e6a280", "Nové účty musia zaplatiť malý ročný poplatok, než budú môcť uverejňovať príspevky, pridávať označenia Páči sa, ukladať príspevky ako záložky a odpovedať. Cieľom tohto opatrenia je obmedziť spam a vytvoriť lepšie prostredie pre všetkých. Sledovanie účtov a prehliadanie služby X je naďalej bezplatné."),
                 n("h968efc6", "Nové účty musia zaplatiť malý poplatok, než budú môcť uverejňovať príspevky, pridávať označenia Páči sa, ukladať príspevky ako záložky a odpovedať. Cieľom tohto opatrenia je obmedziť spam a vytvoriť lepšie prostredie pre všetkých. Sledovanie účtov a prehliadanie služby X je naďalej bezplatné."),
@@ -6734,7 +6734,7 @@
                 n("i1801686", "Tento hľadaný výraz je neplatný. Skúste použiť iný."),
                 n("a0b4541c", "Vyskytla sa chyba, ale nebojte sa, nie je to vaša vina."),
                 n("d7eebb60", "Vaše predplatné sa nastavuje."),
-                n("h707b180", "Your subscription update is complete"),
+                n("h707b180", "Aktualizácia vášho predplatného je dokončená"),
                 n("a452ab68", "Možno to pár sekúnd potrvá."),
                 n("b3bad3b2", "@premium"),
                 n("accbcc78", "Aktualizácia bola úspešná"),
@@ -7402,7 +7402,7 @@
                 n("a10aa36c", "Centrum pomoci"),
                 n("d0740558", "Centrum pomoci"),
                 n("d2d76dca", "Centrum pomoci"),
-                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("de8bcdaa", "Rozpis ľudí, ktorí videli váš príspevok"),
                 n("cfa1ef16", "Podporiť"),
                 n("d267afa2", "Menej ako 20"),
                 n("db81cab0", "20 – 29"),
@@ -7414,12 +7414,12 @@
                 n("fa5be588", "Organické"),
                 n("c65126fe", "Podporené"),
                 n("c61c6624", "Sponzorovaný"),
-                n("f1196a04", "Boost Analytics"),
-                n("bb66e3fc", "Promote Analytics"),
+                n("f1196a04", "Štatistika podpory"),
+                n("bb66e3fc", "Štatistika sponzorovania"),
                 n("g512ddcc", "Štatistika organickej návštevnosti"),
-                n("j9256524", "Breakdown of your boost performance"),
-                n("ceeb3016", "Breakdown of your promote performance"),
-                n("bf4558fa", "Breakdown of your organic performance"),
+                n("j9256524", "Rozpis vašej výkonnosti dosiahnutej podporou"),
+                n("ceeb3016", "Rozpis vašej výkonnosti dosiahnutej sponzorovaním"),
+                n("bf4558fa", "Rozpis vašej organickej výkonnosti"),
                 n("c69069e6", "Počet zobrazení tohto príspevku na X"),
                 n("a0615bac", "Celkový počet interakcií používateľa s príspevkom. Tento údaj zahŕňa všetky kliknutia na ktorékoľvek miesto v  príspevku (vrátane hashtagov, odkazov, avatara, používateľského mena a rozbalenia príspevku), opätovné príspevky, odpovede, sledovania a označenia páči sa."),
                 n("d8abdaa4", "Noví sledujúci"),
@@ -7428,7 +7428,7 @@
                 n("c7d0d1c4", "Počet kliknutí na ľubovoľnú webovú adresu v tomto príspevku"),
                 n("a4da7724", "Počet zobrazení podrobností o tomto príspevku používateľmi"),
                 n("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " z podpory";
                 }),
                 n("g33fd6b1", function (e) {
                     return e.percentage + " zo sponzorovania";
@@ -7437,7 +7437,7 @@
                     return e.percentage + " od používateľov, ktorí vás nesledujú";
                 }),
                 n("h4cbba3e", "< 5 %"),
-                n("f4f0094c", "< 5% from boost"),
+                n("f4f0094c", "< 5 % z podpory"),
                 n("h1cdac12", "< 5 % zo sponzorovania"),
                 n("g884b2cc", "< 5 % od nesledujúcich"),
                 n("b32334a0", "Počet oslovených účtov"),
@@ -12033,7 +12033,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(Poplatok ", " %, min. ", ")"];
                             },
                         },
                         {
@@ -13241,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.8c31601a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.8a4b299a.js.map

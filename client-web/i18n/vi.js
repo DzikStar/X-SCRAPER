@@ -4145,7 +4145,7 @@
                     return n.stringCount + " new requests";
                 }),
                 t("ed93de0c", "Đang phân tích bài đăng"),
-                t("ba44f4ea", "Thông tin khác từ Grok"),
+                t("d1d92e40", "More details"),
                 t("a6e89af8", "Mở cuộc trò chuyện"),
                 t("ica55d24", "Cuộc trò chuyện mới"),
                 t("f794af9a", "Chế độ hài hước"),
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.a006954a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.7764c50a.js.map

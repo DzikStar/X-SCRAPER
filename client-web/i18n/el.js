@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + f(e.count, "", "s");
                 }),
                 n("ed93de0c", "Αναλύει ανάρτηση"),
-                n("ba44f4ea", "Περισσότερες λεπτομέρειες από το Grok"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "Ανοιχτή συζήτηση"),
                 n("ica55d24", "Νέα συνομιλία"),
                 n("f794af9a", "Λειτουργία διασκέδασης"),
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.e391b89a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.ac7a420a.js.map

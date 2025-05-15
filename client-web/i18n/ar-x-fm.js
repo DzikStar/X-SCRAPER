@@ -4159,7 +4159,7 @@
                     return e.stringCount + " new request" + t(e.count, "s", "s", "", "s", "s", "s");
                 }),
                 n("ed93de0c", "جارٍ تحليل المنشور"),
-                n("ba44f4ea", "المزيد من التفاصيل من Grok"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "فتح المحادثة"),
                 n("ica55d24", "دردشة جديدة"),
                 n("f794af9a", "وضع المتعة"),
@@ -13240,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.033bbb9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.6c23567a.js.map

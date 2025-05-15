@@ -251,7 +251,7 @@
                 return r.createElement(y, { onBack: d }, r.createElement(o.ZP, null, r.createElement(T, u)));
             });
         },
-        73258: (e, t, n) => {
+        919086: (e, t, n) => {
             n.r(t), n.d(t, { QuickPromoteScreen: () => Hn, default: () => zn });
             n(571372);
             var r = n(202784),
@@ -325,12 +325,12 @@
                     .propsFromState(() => ({ selectedObjective: K, tweet: V }))
                     .propsFromActions(() => ({ setObjective: v.mS }))
                     .withAnalytics(I.EP);
-            var $ = n(772750),
-                Y = n(992942);
-            const X = n.p + "website_clicks_icon.82f641fa.png";
-            function J() {
-                return r.createElement(Y.Z, { "aria-label": "", source: X, style: u.default.absoluteFill });
+            var $ = n(992942);
+            const Y = n.p + "engagements_icon.14baf75a.png";
+            function X() {
+                return r.createElement($.Z, { "aria-label": "", source: Y, style: u.default.absoluteFill });
             }
+            var J = n(835152);
             const ee = p().fcc839b6,
                 te = (p().b679a538, p().cb19a2f0),
                 ne = p().a2d37164,
@@ -338,8 +338,8 @@
                 oe = p().b614fad0,
                 ae = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
                 [se, ce] = [
-                    { label: (0, G.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: r.createElement($.i, null), testID: W.Z.getObjective(C.CH.Engagements) },
-                    { label: (0, G.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: r.createElement(J, null), testID: W.Z.getObjective(C.CH.WebsiteClicks) },
+                    { label: (0, G.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: r.createElement(X, null), testID: W.Z.getObjective(C.CH.Engagements) },
+                    { label: (0, G.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: r.createElement(J.T, null), testID: W.Z.getObjective(C.CH.WebsiteClicks) },
                 ];
             const ie = Q((e) => {
                     const { analytics: t, selectedObjective: n, setObjective: a, tweet: c } = e,
@@ -365,14 +365,14 @@
                         );
                     return r.createElement(o.Z, { style: ae.qpContainer, testID: W.Z.objectiveScreen }, r.createElement(z.O, { screenType: I.MN.Objective }), r.createElement(j.ZP, null, r.createElement(U.Y, { style: ae.titleContainer, title: ee }), r.createElement(O.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
                 }),
-                le = ie;
-            var de = n(653970);
-            const ue = n.p + "followers_icon.80e5851a.png";
+                le = ie,
+                de = n.p + "followers_icon.80e5851a.png";
+            var ue = n(6885);
             function me(e) {
                 new Image().src = e;
             }
             function pe() {
-                return me(de), me(ue), me(X), r.createElement(r.Fragment, null);
+                return me(Y), me(de), me(ue), r.createElement(r.Fragment, null);
             }
             n(136728), n(543673), n(240753), n(128399);
             var ge = n(614983),
@@ -1075,9 +1075,9 @@
             const Un = u.default.create((e) => ({ noScrollView: { overflowX: "hidden", flex: 1 }, nextButton: { marginBottom: e.spaces.space48, marginTop: e.spaces.space12 } })),
                 zn = B(Hn);
         },
-        653970: (e, t, n) => {
-            e.exports = n.p + "engagements_icon.14baf75a.png";
+        6885: (e, t, n) => {
+            e.exports = n.p + "website_clicks_icon.82f641fa.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.28e0157a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.1fd2e69a.js.map

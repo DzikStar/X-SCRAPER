@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + t(e.count, "", "s");
                 }),
                 n("ed93de0c", "இடுகையைப் பகுப்பாய்வு செய்கிறது"),
-                n("ba44f4ea", "Grok வழங்கும் மேலும் விவரங்கள்"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "திறந்த உரையாடல்"),
                 n("ica55d24", "புதிய அரட்டை"),
                 n("f794af9a", "வேடிக்கை முறை"),
@@ -13243,4 +13243,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.5500d1ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.90e00d7a.js.map

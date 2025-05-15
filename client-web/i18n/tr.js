@@ -2822,13 +2822,13 @@
                     return "Abonelik kademen " + e.date + " tarihindeki bir sonraki faturalandırma döngünden itibaren " + e.tierName + " kademesine geçecek şekilde planlandı.";
                 }),
                 n("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Yeni fatura dönemin " + e.date + " tarihinde başlayacak";
                 }),
                 n("edbb700f", function (e) {
                     return e.date + " tarihinde yeni fatura dönemiyle başlar";
                 }),
                 n("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Abonelik " + e.date + " tarihinde sona eriyor";
                 }),
                 n("e9884540", "Aktif indirim"),
                 n("bfb879aa", "Beklemedeki indirim"),
@@ -2983,7 +2983,7 @@
                 n("jadeb4da", "Abonelik avantajlarını kaybetmemek için lütfen ödeme yöntemini hemen güncelle."),
                 n("bce3726a", "Faturalandırma Ayarlarını Güncelle"),
                 n("fce9ecce", "Önerilen Videolar"),
-                n("da00e00a", "Try the new News"),
+                n("da00e00a", "Yeni Haberler'i dene"),
                 n("c40666d8", "Dene"),
                 n("j66b95a2", "Ayrıntılı Haberler"),
                 n("b58d2bd2", "Alakalı Gönderiler"),
@@ -4145,7 +4145,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 n("ed93de0c", "Gönderi Analiz Ediliyor"),
-                n("ba44f4ea", "Grok'tan daha fazla ayrıntı"),
+                n("d1d92e40", "More details"),
                 n("a6e89af8", "Açık sohbet"),
                 n("ica55d24", "Yeni Sohbet"),
                 n("f794af9a", "Eğlence modu"),
@@ -6680,7 +6680,7 @@
                 n("b2d41138", "Daha fazla erişim = daha fazla kazanç"),
                 n("defa7f12", "Daha hızlı büyümen için ekstra görünürlük sağlayan Yanıt Öne Çıkarma özelliğinden yararlan."),
                 n("i3e4955d", "buradan"),
-                n("fdc5d06c", "Exit Full Screen"),
+                n("fdc5d06c", "Tam Ekrandan Çık"),
                 n("cea1c00e", "Etkileşim kurma özelliğini aç"),
                 n("f8e6a280", "Yeni hesapların gönderi yayınlamak, gönderileri beğenmek ve yanıtlamak için küçük bir yıllık ücret ödemesi gerekir. Bunun amacı, spam'i azaltmak ve herkese daha iyi bir deneyim sunmaktır. Ücretsiz olarak hesapları takip edebilir ve X'e göz atabilirsin."),
                 n("h968efc6", "Yeni hesapların gönderi yayınlamak, gönderileri beğenmek ve yanıtlamak için küçük bir ücret ödemesi gerekir. Bunun amacı, spam'i azaltmak ve herkese daha iyi bir deneyim sunmaktır. Ücretsiz olarak hesapları takip edebilir ve X'e göz atabilirsin."),
@@ -6724,7 +6724,7 @@
                 n("i1801686", "Bu geçersiz bir arama sorgusudur. Lütfen farklı bir tane dene."),
                 n("a0b4541c", "Bir hata oluştu fakat endişelenme gerek yok, senden kaynaklanmıyor."),
                 n("d7eebb60", "Aboneliğin ayarlanıyor"),
-                n("h707b180", "Your subscription update is complete"),
+                n("h707b180", "Abonelik güncellemen tamamlandı"),
                 n("a452ab68", "Bu işlem birkaç saniye sürebilir."),
                 n("b3bad3b2", "@premium"),
                 n("accbcc78", "Başarıyla güncellendi"),
@@ -7392,7 +7392,7 @@
                 n("a10aa36c", "Yardım Merkezi"),
                 n("d0740558", "Yardım Merkezi"),
                 n("d2d76dca", "Yardım Merkezi"),
-                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("de8bcdaa", "Gönderini gören kişilerin dökümü"),
                 n("cfa1ef16", "Öne Çıkar"),
                 n("d267afa2", "20 altı"),
                 n("db81cab0", "20-29"),
@@ -7402,14 +7402,14 @@
                 n("bcd9cf68", "65 yaş üzeri"),
                 n("f05f1838", "Diğer / Belirtilmemiş"),
                 n("fa5be588", "Organik"),
-                n("c65126fe", "Öne çıkarılıyor"),
+                n("c65126fe", "Öne çıkarıldı"),
                 n("c61c6624", "Sponsorlu"),
-                n("f1196a04", "Boost Analytics"),
-                n("bb66e3fc", "Promote Analytics"),
+                n("f1196a04", "Öne Çıkarma İstatistikleri"),
+                n("bb66e3fc", "Tanıtma İstatistikleri"),
                 n("g512ddcc", "Organik İstatistikler"),
-                n("j9256524", "Breakdown of your boost performance"),
-                n("ceeb3016", "Breakdown of your promote performance"),
-                n("bf4558fa", "Breakdown of your organic performance"),
+                n("j9256524", "Öne çıkarma performansının dökümü"),
+                n("ceeb3016", "Tanıtma performansının dökümü"),
+                n("bf4558fa", "Organik performansının dökümü"),
                 n("c69069e6", "X'te bu gönderinin görülme sayısı"),
                 n("a0615bac", "Bir kullanıcının bir gönderi ile toplam etkileşim sayısıdır. Söz konusu gönderinin herhangi bir yerine tıklamaları (etiketler, bağlantılar, avatar, kullanıcı adı, medya ve gönderi genişletme), yeniden gönderi, yanıt, takip ve beğenileri içerir."),
                 n("d8abdaa4", "Yeni takipçiler"),
@@ -7418,7 +7418,7 @@
                 n("c7d0d1c4", "Bu gönderideki herhangi bir URL için tıklanma sayısı"),
                 n("a4da7724", "Kullanıcıların bu gönderi hakkındaki ayrıntıları görüntüleme sayısı"),
                 n("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return "Öne çıkarmadan " + e.percentage;
                 }),
                 n("g33fd6b1", function (e) {
                     return "Tanıtımdan " + e.percentage;
@@ -7427,7 +7427,7 @@
                     return "Takip etmeyenlerden " + e.percentage;
                 }),
                 n("h4cbba3e", "<%5"),
-                n("f4f0094c", "< 5% from boost"),
+                n("f4f0094c", "Öne çıkarmadan < %5"),
                 n("h1cdac12", "<%5'lik bölümü tanıtımlardan elde edildi"),
                 n("g884b2cc", "<%5'lik bölümü takipçi olmayan kullanıcılardan elde edildi"),
                 n("b32334a0", "Erişilen Hesaplar"),
@@ -12029,7 +12029,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(%", " Ücret, Min. ", ")"];
                             },
                         },
                         {
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.08e9034a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.ee5eee9a.js.map

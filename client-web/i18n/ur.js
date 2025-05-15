@@ -4150,7 +4150,7 @@
                     return e.stringCount + " نئی درخواست" + n(e.count, "", "یں");
                 }),
                 o("ed93de0c", "Analyzing Post"),
-                o("ba44f4ea", "More details from Grok"),
+                o("d1d92e40", "More details"),
                 o("a6e89af8", "Open conversation"),
                 o("ica55d24", "New Chat"),
                 o("f794af9a", "Fun mode"),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.288e169a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.2e4fe58a.js.map

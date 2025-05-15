@@ -2979,7 +2979,7 @@
                 s("j0693948", "[Géêt théê Gröøk åäpp]"),
                 s("af781666", "[Whåät döø péêöøpléê thïínk?]"),
                 s("ad35153e", "[béêtåä]"),
-                s("a1f414ee", "Share thoughts"),
+                s("a1f414ee", "[Shåäréê thöøüghts]"),
                 s("fbf83158", "[Wåärnïíng: Påäyméênt fåäïíléêd]"),
                 s("jadeb4da", "[Pléêåäséê ürgéêntly üpdåätéê yöøür påäyméênt méêthöød béêföøréê yöøü löøséê yöøür sübscrïíptïíöøn béênéêfïíts.]"),
                 s("bce3726a", "[Updåätéê Bïíllïíng]"),
@@ -4146,7 +4146,7 @@
                     return "[" + t.stringCount + " néêw réêqüéêst" + c(t.count, "", "s") + "]";
                 }),
                 s("ed93de0c", "[Anåälyzïíng Pöøst]"),
-                s("ba44f4ea", "[Möøréê déêtåäïíls fröøm Gröøk]"),
+                s("d1d92e40", "More details"),
                 s("a6e89af8", "[Opéên cöønvéêrsåätïíöøn]"),
                 s("ica55d24", "[Néêw Chåät]"),
                 s("f794af9a", "[Fün möødéê]"),
@@ -13226,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.3d81896a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.d8fb673a.js.map

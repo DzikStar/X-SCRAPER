@@ -2830,13 +2830,13 @@
                     return "Razina vaše pretplate promijenit će se na " + a.tierName + " počevši od sljedećeg ciklusa naplate na datum " + a.date;
                 }),
                 o("a991d9a3", function (a) {
-                    return "Next billing cycle starts on " + a.date;
+                    return "Sljedeći ciklus naplate počinje " + a.date;
                 }),
                 o("edbb700f", function (a) {
                     return "Započinje sa sljedećim ciklusom naplate " + a.date;
                 }),
                 o("e3f9d219", function (a) {
-                    return "Subscription ends on " + a.date;
+                    return "Pretplata završava " + a.date;
                 }),
                 o("e9884540", "Aktivan popust"),
                 o("bfb879aa", "Popust na čekanju"),
@@ -2991,7 +2991,7 @@
                 o("jadeb4da", "Hitno ažurirajte način plaćanja prije nego što izgubite pogodnosti pretplate."),
                 o("bce3726a", "Ažurirajte podatke za naplatu"),
                 o("fce9ecce", "Preporučeni videozapisi"),
-                o("da00e00a", "Try the new News"),
+                o("da00e00a", "Isprobajte nove Novosti"),
                 o("c40666d8", "Isprobajte"),
                 o("j66b95a2", "Detaljne vijesti"),
                 o("b58d2bd2", "Relevantne objave"),
@@ -4153,7 +4153,7 @@
                     return a.stringCount + " new request" + n(a.count, "s", "", "s");
                 }),
                 o("ed93de0c", "Analiza objave"),
-                o("ba44f4ea", "Više detalja koje pruža Grok"),
+                o("d1d92e40", "More details"),
                 o("a6e89af8", "Otvori razgovor"),
                 o("ica55d24", "Novo čavrljanje"),
                 o("f794af9a", "Zabavni način rada"),
@@ -6688,7 +6688,7 @@
                 o("b2d41138", "Veći doseg = veća zarada"),
                 o("defa7f12", "Uživajte u pogodnostima opcije Isticanje odgovora, koja vam pruža veću vidljivost za brži rast."),
                 o("i3e4955d", "Ovdje"),
-                o("fdc5d06c", "Exit Full Screen"),
+                o("fdc5d06c", "Zatvori prikaz na cijelom zaslonu"),
                 o("cea1c00e", "Otključajte funkciju uključivanja"),
                 o("f8e6a280", "Novi korisnici moraju platiti malu godišnju naknadu da bi mogli objavljivati objave, označavati oznakom „sviđa mi se”, dodavati u knjižne oznake i odgovarati. Razlog za to je smanjenje spama i poboljšanje iskustva svih korisnika. I dalje možete besplatno pratiti druge korisnike i pregledavati X."),
                 o("h968efc6", "Novi korisnici moraju platiti malu naknadu da bi mogli objavljivati objave, označavati oznakom „sviđa mi se”, dodavati u knjižne oznake i odgovarati. Razlog za to je smanjenje spama i poboljšanje iskustva svih korisnika. I dalje možete besplatno pratiti druge korisnike i pregledavati X."),
@@ -6732,7 +6732,7 @@
                 o("i1801686", "Taj upit za pretraživanje nije valjan. Isprobajte neki drugi."),
                 o("a0b4541c", "Došlo je do pogreške – ali ne brinite, niste vi krivi."),
                 o("d7eebb60", "Postavljanje pretplate"),
-                o("h707b180", "Your subscription update is complete"),
+                o("h707b180", "Ažuriranje vaše pretplate dovršeno je"),
                 o("a452ab68", "To bi moglo potrajati nekoliko sekundi."),
                 o("b3bad3b2", "@premium"),
                 o("accbcc78", "Uspješno ažurirano"),
@@ -7400,7 +7400,7 @@
                 o("a10aa36c", "centru za pomoć"),
                 o("d0740558", "centru za pomoć"),
                 o("d2d76dca", "centru za pomoć"),
-                o("de8bcdaa", "Breakdown of the people that have seen your post"),
+                o("de8bcdaa", "Raščlamba osoba koje su vidjele vašu objavu"),
                 o("cfa1ef16", "Istakni"),
                 o("d267afa2", "manje od 20"),
                 o("db81cab0", "20 – 29"),
@@ -7412,12 +7412,12 @@
                 o("fa5be588", "Organski"),
                 o("c65126fe", "Istaknuto"),
                 o("c61c6624", "Sponzorirano"),
-                o("f1196a04", "Boost Analytics"),
-                o("bb66e3fc", "Promote Analytics"),
+                o("f1196a04", "Analitika isticanja"),
+                o("bb66e3fc", "Analitika promoviranja"),
                 o("g512ddcc", "Organska analitika"),
-                o("j9256524", "Breakdown of your boost performance"),
-                o("ceeb3016", "Breakdown of your promote performance"),
-                o("bf4558fa", "Breakdown of your organic performance"),
+                o("j9256524", "Raščlamba performansi isticanja"),
+                o("ceeb3016", "Raščlamba performansi promoviranja"),
+                o("bf4558fa", "Raščlamba organskih performansi"),
                 o("c69069e6", "Broj prikaza te objave na platformi X"),
                 o("a0615bac", "Ukupan broj interakcija korisnika s određenom objavom. Podrazumijeva sve klikove na neko mjesto u objavi (npr. oznake ljestvi, poveznice, avatar, korisničko ime i pojedinosti o objavi), proslijeđene objave, odgovore, praćenja i oznake „sviđa mi se ”."),
                 o("d8abdaa4", "Novi pratitelji"),
@@ -7426,7 +7426,7 @@
                 o("c7d0d1c4", "Broj klikova na bilo koji URL u ovoj objavi"),
                 o("a4da7724", "Koliko su puta korisnici pogledali pojedinosti o toj objavi"),
                 o("jedd2771", function (a) {
-                    return a.percentage + " from boost";
+                    return a.percentage + " od isticanja";
                 }),
                 o("g33fd6b1", function (a) {
                     return a.percentage + " od sponzorstva";
@@ -7435,7 +7435,7 @@
                     return a.percentage + " od korisnika koji vas ne prate";
                 }),
                 o("h4cbba3e", "< 5 %"),
-                o("f4f0094c", "< 5% from boost"),
+                o("f4f0094c", "< 5 % od isticanja"),
                 o("h1cdac12", "< 5 % od promocije"),
                 o("g884b2cc", "< 5 % od osoba koje vas ne prate"),
                 o("b32334a0", "Dosegnuti računi"),
@@ -12034,7 +12034,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", " % naknade, min. ", ")"];
                             },
                         },
                         {
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.2e81433a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.eacfebba.js.map

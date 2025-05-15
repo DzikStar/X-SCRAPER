@@ -2,54 +2,159 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.AppModules-bc6ccf4c"],
     {
-        661810: (e, t, n) => {
-            n.d(t, { Z: () => a });
-            var i = n(202784),
-                r = n(325686),
-                o = n(392237);
-            function a({ spacing: e, style: t }) {
-                return i.createElement(r.Z, { role: "separator", style: [s.divider, { marginVertical: null != e ? o.default.theme.spaces[e] : void 0 }, t] });
-            }
-            const s = o.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+        242454: (e, t, r) => {
+            r.d(t, { Z: () => d });
+            var n = r(807896),
+                o = r(202784),
+                i = r(325686),
+                a = r(731708),
+                s = r(58881),
+                l = r(530732),
+                c = r(392237);
+            const h = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, root: { justifyContent: "center", minHeight: e.spaces.space48, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 } })),
+                d = ({ align: e = "center", color: t, label: r, ...d }) => {
+                    const u = s.Z.generate({ backgroundColor: c.default.theme.colors.transparent, color: c.default.theme.colors[t], insetFocusRing: !0 });
+                    return o.createElement(i.Z, { style: h.container }, o.createElement(l.Z, (0, n.Z)({}, d, { interactiveStyles: u, style: h.root }), o.createElement(a.ZP, { align: e, color: t }, r)));
+                };
         },
-        557707: (e, t, n) => {
-            n.d(t, { ZP: () => b });
-            var i = n(807896),
-                r = n(202784),
-                o = n(466999),
-                a = n(325686),
-                s = n(674132),
-                l = n.n(s),
-                h = n(837020),
-                c = n(540820),
-                d = n(731708),
-                u = n(154003),
-                g = n(108362),
-                m = n(661810),
-                p = n(365023),
-                w = n(292627),
-                f = n(537392),
-                _ = n(392237);
-            const E = l().af8fa2ae,
-                y = r.createElement(h.default, null);
-            class T extends r.Component {
+        661810: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(202784),
+                o = r(325686),
+                i = r(392237);
+            function a({ spacing: e, style: t }) {
+                return n.createElement(o.Z, { role: "separator", style: [s.divider, { marginVertical: null != e ? i.default.theme.spaces[e] : void 0 }, t] });
+            }
+            const s = i.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+        },
+        466818: (e, t, r) => {
+            r.d(t, { ZP: () => w });
+            var n = r(202784),
+                o = r(325686),
+                i = r(487552),
+                a = r(302752),
+                s = r(183806),
+                l = r(731708),
+                c = r(950822),
+                h = r(224162),
+                d = r(392237);
+            const u = n.forwardRef((e, t) => (0, c.Z)("select", { ...e, ref: t })),
+                p = (e) => (0, c.Z)("option", e);
+            let g = 1;
+            class m extends n.PureComponent {
+                constructor(e) {
+                    super(e),
+                        (this._selectRef = n.createRef()),
+                        (this.state = { isFocused: !1 }),
+                        (this._handleChange = (e) => {
+                            const { onChange: t, withEmptyOption: r } = this.props,
+                                { selectedIndex: n, value: o } = e.target;
+                            t && t(o, n - (r ? 1 : 0));
+                        }),
+                        (this._handleBlur = (e) => {
+                            const { onBlur: t } = this.props;
+                            this.setState({ isFocused: !1 }), t && t();
+                        }),
+                        (this._handleFocus = (e) => {
+                            const { onFocus: t } = this.props;
+                            this.setState({ isFocused: !0 }), t && t();
+                        }),
+                        (this._id = `SELECTOR_${g}`),
+                        (this._errorID = `${this._id}_ERROR`),
+                        (this._helperID = `${this._id}_HELP`),
+                        (this._labelID = `${this._id}_LABEL`),
+                        (g += 1);
+                }
+                componentDidMount() {
+                    this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
+                }
+                render() {
+                    const { "aria-describedby": e, disabled: t, errorText: r, hasError: c, helperText: g, options: m, style: w, testID: b, value: _, withEmptyOption: y } = this.props,
+                        { isFocused: E } = this.state,
+                        T = l.ZP.getLanguage(),
+                        v = void 0 === c ? !!r : c,
+                        I = new Set();
+                    r && I.add(this._errorID), e && I.add(e), g && I.add(this._helperID);
+                    const C = I.size ? [...I].join(" ") : void 0;
+                    return n.createElement(
+                        n.Fragment,
+                        null,
+                        n.createElement(h.ZP.Consumer, null, ({ direction: e }) => {
+                            const l = "ja" === T ? d.default.theme.fontFamilies.japan : "rtl" === e || a.Z.isLocaleRTL(T) ? d.default.theme.fontFamilies.rtl : d.default.theme.fontFamilies.normal;
+                            return n.createElement(
+                                o.Z,
+                                { style: [s.Z.border, f.container, t && s.Z.disabled, E && s.Z.focusedBorderValid, v && s.Z.invalidBorderColor, E && v && s.Z.focusedBorderInvalid, w] },
+                                this._renderLabel(),
+                                n.createElement(
+                                    u,
+                                    { "aria-describedby": C, "aria-invalid": v, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: l }, t && s.Z.disabled], testID: b || "", value: _ },
+                                    y ? n.createElement(p, { disabled: !0, style: f.option, value: "" }) : null,
+                                    m.map((e) => {
+                                        const { disabled: t, label: r, value: o } = e;
+                                        return n.createElement(p, { disabled: t, key: `${r}-${o}`, style: f.option, value: o }, r);
+                                    }),
+                                ),
+                                n.createElement(i.default, { style: [f.dropdownCaret, E && s.Z.validColor, !(!c && !r) && s.Z.invalidColor] }),
+                            );
+                        }),
+                        g ? this._renderHelperText() : null,
+                        v && r ? this._renderErrorText() : null,
+                    );
+                }
+                _renderLabel() {
+                    const { errorText: e, hasError: t, label: r } = this.props,
+                        { isFocused: o } = this.state;
+                    return n.createElement(l.ZP, { color: t || e ? "red500" : o ? "primary" : "gray700", id: this._labelID, role: "label", style: f.label }, r);
+                }
+                _renderHelperText() {
+                    return n.createElement(o.Z, { "aria-live": "polite" }, n.createElement(l.ZP, { color: "gray700", id: this._helperID, style: f.helperText }, this.props.helperText));
+                }
+                _renderErrorText() {
+                    return n.createElement(o.Z, { "aria-live": "polite" }, n.createElement(l.ZP, { color: "red500", id: this._errorID, style: f.helperText }, this.props.errorText));
+                }
+            }
+            m.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
+            const f = d.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                w = m;
+        },
+        557707: (e, t, r) => {
+            r.d(t, { ZP: () => v });
+            var n = r(807896),
+                o = r(202784),
+                i = r(466999),
+                a = r(325686),
+                s = r(674132),
+                l = r.n(s),
+                c = r(837020),
+                h = r(540820),
+                d = r(731708),
+                u = r(154003),
+                p = r(108362),
+                g = r(661810),
+                m = r(365023),
+                f = r(292627),
+                w = r(537392),
+                b = r(392237);
+            const _ = l().af8fa2ae,
+                y = o.createElement(c.default, null);
+            class E extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderAriaOnly = () => {
                             const { testID: e, text: t } = this.props;
-                            return r.createElement(a.Z, { role: "alert", style: _.default.visuallyHidden, testID: e }, r.createElement(o.Z, null, t));
+                            return o.createElement(a.Z, { role: "alert", style: b.default.visuallyHidden, testID: e }, o.createElement(i.Z, null, t));
                         }),
                         (this._renderIcon = () => {
                             const { variant: e } = this.props;
-                            return "jp-holiday-labor-thanksgiving" === e?.type && r.createElement(c.default, { style: I.icon });
+                            return "jp-holiday-labor-thanksgiving" === e?.type && o.createElement(h.default, { style: T.icon });
                         }),
                         (this._renderDecoration = () => {
                             const { variant: e } = this.props;
-                            return "jp-holiday-labor-thanksgiving" === e?.type && r.createElement(a.Z, null, r.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, e.payload.message), r.createElement(m.Z, { spacing: "space12", style: I.divider }));
+                            return "jp-holiday-labor-thanksgiving" === e?.type && o.createElement(a.Z, null, o.createElement(d.ZP, { color: "whiteOnColor", style: T.titleText }, e.payload.message), o.createElement(g.Z, { spacing: "space12", style: T.divider }));
                         }),
                         (this._renderContent = () => {
-                            const { action: e, text: t, withAutoDismiss: n, withClearButton: i } = this.props;
-                            return r.createElement(r.Fragment, null, r.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, t), r.createElement(a.Z, { "aria-hidden": n, style: I.actionButtons }, e && this._renderActionLabel(e), i && r.createElement(u.ZP, { "aria-label": E, borderColor: "transparent", color: "white", icon: y, onPress: this._handleClose, style: I.closeButton })));
+                            const { action: e, text: t, withAutoDismiss: r, withClearButton: n } = this.props;
+                            return o.createElement(o.Fragment, null, o.createElement(d.ZP, { color: "whiteOnColor", style: T.titleText }, t), o.createElement(a.Z, { "aria-hidden": r, style: T.actionButtons }, e && this._renderActionLabel(e), n && o.createElement(u.ZP, { "aria-label": _, borderColor: "transparent", color: "white", icon: y, onPress: this._handleClose, style: T.closeButton })));
                         }),
                         (this._renderVariantContent = () => {
                             const { variant: e } = this.props;
@@ -57,10 +162,10 @@
                                 switch (e.type) {
                                     case "jp-holiday-labor-thanksgiving": {
                                         const e = this._renderContent();
-                                        return r.createElement(r.Fragment, null, this._renderIcon(), r.createElement(a.Z, { style: I.body }, this._renderDecoration(), r.createElement(a.Z, { style: I.content }, e)));
+                                        return o.createElement(o.Fragment, null, this._renderIcon(), o.createElement(a.Z, { style: T.body }, this._renderDecoration(), o.createElement(a.Z, { style: T.content }, e)));
                                     }
                                     case "jetfuel":
-                                        return r.createElement(r.Fragment, null, e.payload.body);
+                                        return o.createElement(o.Fragment, null, e.payload.body);
                                 }
                             return null;
                         }),
@@ -69,41 +174,41 @@
                             if (e)
                                 switch (e.type) {
                                     case "jp-holiday-labor-thanksgiving":
-                                        return I.rootVariantJp;
+                                        return T.rootVariantJp;
                                     case "jetfuel":
-                                        return I.rootVariantJetfuel;
+                                        return T.rootVariantJetfuel;
                                 }
                             return null;
                         }),
                         (this._renderContentWithLayer = ({ windowWidth: e }) => {
-                            const { LayerComponent: t, style: n, testID: o, variant: s } = this.props,
-                                l = n?.length ? [...n] : [n],
-                                h = s ? this._renderVariantContent() : this._renderContent();
-                            return r.createElement(
+                            const { LayerComponent: t, style: r, testID: i, variant: s } = this.props,
+                                l = r?.length ? [...r] : [r],
+                                c = s ? this._renderVariantContent() : this._renderContent();
+                            return o.createElement(
                                 t,
                                 null,
-                                r.createElement(
-                                    g.Z,
-                                    { style: I.noPointerEvents },
-                                    r.createElement(p.Z, { id: "Toast" }, (t, n) => r.createElement(a.Z, (0, i.Z)({ ref: t() }, n({ role: "alert", style: [I.root, s && this._getRootVariantStyle(), ...l, e > _.default.theme.breakpoints.medium && I.rootWide], testID: o })), h)),
+                                o.createElement(
+                                    p.Z,
+                                    { style: T.noPointerEvents },
+                                    o.createElement(m.Z, { id: "Toast" }, (t, r) => o.createElement(a.Z, (0, n.Z)({ ref: t() }, r({ role: "alert", style: [T.root, s && this._getRootVariantStyle(), ...l, e > b.default.theme.breakpoints.medium && T.rootWide], testID: i })), c)),
                                 ),
                             );
                         }),
                         (this._renderContentWithoutLayer = ({ windowWidth: e }) => {
                             const { testID: t } = this.props;
-                            return r.createElement(g.Z, null, r.createElement(a.Z, { role: "alert", style: [I.root, e > _.default.theme.breakpoints.medium && I.rootWide], testID: t }, this._renderContent()));
+                            return o.createElement(p.Z, null, o.createElement(a.Z, { role: "alert", style: [T.root, e > b.default.theme.breakpoints.medium && T.rootWide], testID: t }, this._renderContent()));
                         }),
                         (this._createTimer = () => {
-                            const { action: e, autoDismissDelay: t, onClose: n, text: i, withAutoDismiss: r } = this.props;
-                            if (r) {
-                                const r = t || T.calculateDismissDelay(i, !!e);
-                                this._timerId = setTimeout(n, r);
+                            const { action: e, autoDismissDelay: t, onClose: r, text: n, withAutoDismiss: o } = this.props;
+                            if (o) {
+                                const o = t || E.calculateDismissDelay(n, !!e);
+                                this._timerId = setTimeout(r, o);
                             }
                         }),
                         (this._handleActionPress = (e) => {
                             this._stopTimer();
-                            const { action: t, onClose: n } = this.props;
-                            t?.onAction && t.onAction(e), n(e);
+                            const { action: t, onClose: r } = this.props;
+                            t?.onAction && t.onAction(e), r(e);
                         }),
                         (this._handleClose = (e) => {
                             this._stopTimer(), this.props.onClose(e);
@@ -117,84 +222,101 @@
                 }
                 render() {
                     const { ariaOnly: e, withoutLayer: t } = this.props;
-                    return e ? this._renderAriaOnly() : r.createElement(f.ZP, null, t ? this._renderContentWithoutLayer : this._renderContentWithLayer);
+                    return e ? this._renderAriaOnly() : o.createElement(w.ZP, null, t ? this._renderContentWithoutLayer : this._renderContentWithLayer);
                 }
                 _renderActionLabel(e) {
-                    const { label: t, link: n } = e;
-                    return r.createElement(d.ZP, { children: t, color: "whiteOnColor", link: n, onClick: this._handleActionPress, style: [I.actionText, !n && I.actionMargin], weight: "bold", withInteractiveStyling: !0 });
+                    const { label: t, link: r } = e;
+                    return o.createElement(d.ZP, { children: t, color: "whiteOnColor", link: r, onClick: this._handleActionPress, style: [T.actionText, !r && T.actionMargin], weight: "bold", withInteractiveStyling: !0 });
                 }
                 static calculateDismissDelay(e, t) {
-                    const n = (1e3 * ("string" == typeof e ? e.split(" ").length : 0)) / 5 + 225;
-                    return (n < 4e3 ? 4e3 : n) + (t ? 2e3 : 0);
+                    const r = (1e3 * ("string" == typeof e ? e.split(" ").length : 0)) / 5 + 225;
+                    return (r < 4e3 ? 4e3 : r) + (t ? 2e3 : 0);
                 }
                 _stopTimer() {
                     clearTimeout(this._timerId);
                 }
             }
-            T.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: w.Z.ModalToasts };
-            const I = _.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
-                b = T;
+            E.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: f.Z.ModalToasts };
+            const T = b.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
+                v = E;
         },
-        98440: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var i = n(202784),
-                r = n(890601),
-                o = n(783427),
-                a = n(347101);
+        183806: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            const n = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        },
+        988227: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
             const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        19697: (e, t, n) => {
-            n.d(t, { q8: () => h, $i: () => o });
-            n(571372);
-            var i = n(790187);
-            const r = (e, t) => {
-                const n = document.createElement("canvas");
-                (n.width = e), (n.height = t);
-                const i = n.getContext("2d");
-                return (i.fillStyle = "#FFFFFF"), i.fillRect(0, 0, e, t), n;
+        540820: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 50 50", children: n.createElement("g", null, n.createElement("path", { d: "M25.23 12.24l-2.1-2.1c-4.54-4.54-11.9-4.54-16.45 0h0c-4.54 4.54-4.54 11.9 0 16.45l18.55 18.55 16.45-16.45 2.1-2.1c4.54-4.54 4.54-11.9 0-16.45h0c-4.54-4.54-11.9-4.54-16.45 0l-2.1 2.1h0z", fill: "none", stroke: "#fff", strokeMiterlimit: "10" }), n.createElement("path", { d: "M26.86 23.19l6.39-7.29h-1.51l-5.55 6.33-4.43-6.33h-5.11l6.7 9.57-6.7 7.64h1.51l5.86-6.68 4.68 6.68h5.11l-6.95-9.92zm-2.07 2.37l-.68-.95-5.4-7.58h2.33l4.36 6.12.68.95 5.67 7.95h-2.33l-4.62-6.49z", fill: "#fff" })) }, { writingDirection: t });
             };
-            function o(e, t, n, r, o) {
-                return l(t, n).then(
+            s.metadata = { width: 50, height: 50 };
+            const l = s;
+        },
+        19697: (e, t, r) => {
+            r.d(t, { q8: () => c, $i: () => i });
+            r(571372);
+            var n = r(790187);
+            const o = (e, t) => {
+                const r = document.createElement("canvas");
+                (r.width = e), (r.height = t);
+                const n = r.getContext("2d");
+                return (n.fillStyle = "#FFFFFF"), n.fillRect(0, 0, e, t), r;
+            };
+            function i(e, t, r, o, i) {
+                return l(t, r).then(
                     (t) => (
-                        (function (e, t, n, r, o, a) {
+                        (function (e, t, r, o, i, a) {
                             const s = a || { top: 0, left: 0, width: t.width, height: t.height };
                             let l = s.left,
-                                h = s.top,
-                                c = s.width,
+                                c = s.top,
+                                h = s.width,
                                 d = s.height,
                                 u = 0,
-                                g = 0,
-                                m = n,
-                                p = r;
-                            switch ((e.save(), o)) {
-                                case i.Z.TOP_RIGHT:
-                                    e.scale(-1, 1), (l = t.width - s.width - s.left), (u = -n);
+                                p = 0,
+                                g = r,
+                                m = o;
+                            switch ((e.save(), i)) {
+                                case n.Z.TOP_RIGHT:
+                                    e.scale(-1, 1), (l = t.width - s.width - s.left), (u = -r);
                                     break;
-                                case i.Z.BOTTOM_RIGHT:
-                                    e.rotate(Math.PI), (l = t.width - s.width - s.left), (h = t.height - s.height - s.top), (u = -n), (g = -r);
+                                case n.Z.BOTTOM_RIGHT:
+                                    e.rotate(Math.PI), (l = t.width - s.width - s.left), (c = t.height - s.height - s.top), (u = -r), (p = -o);
                                     break;
-                                case i.Z.BOTTOM_LEFT:
-                                    e.scale(1, -1), (h = t.height - s.height - s.top), (g = -r);
+                                case n.Z.BOTTOM_LEFT:
+                                    e.scale(1, -1), (c = t.height - s.height - s.top), (p = -o);
                                     break;
-                                case i.Z.LEFT_TOP:
-                                    e.translate(n / 2, r / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (l = s.top), (h = s.left), (c = s.height), (d = s.width), (u = -r / 2), (g = -n / 2), (m = r), (p = n);
+                                case n.Z.LEFT_TOP:
+                                    e.translate(r / 2, o / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (l = s.top), (c = s.left), (h = s.height), (d = s.width), (u = -o / 2), (p = -r / 2), (g = o), (m = r);
                                     break;
-                                case i.Z.LEFT_BOTTOM:
-                                    e.translate(n / 2, r / 2), e.rotate(Math.PI / 2), (l = s.top), (h = t.height - s.width - s.left), (c = s.height), (d = s.width), (u = -r / 2), (g = -n / 2), (m = r), (p = n);
+                                case n.Z.LEFT_BOTTOM:
+                                    e.translate(r / 2, o / 2), e.rotate(Math.PI / 2), (l = s.top), (c = t.height - s.width - s.left), (h = s.height), (d = s.width), (u = -o / 2), (p = -r / 2), (g = o), (m = r);
                                     break;
-                                case i.Z.RIGHT_BOTTOM:
-                                    e.translate(n / 2, r / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (l = t.width - s.height - s.top), (h = t.height - s.width - s.left), (c = s.height), (d = s.width), (u = -r / 2), (g = -n / 2), (m = r), (p = n);
+                                case n.Z.RIGHT_BOTTOM:
+                                    e.translate(r / 2, o / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (l = t.width - s.height - s.top), (c = t.height - s.width - s.left), (h = s.height), (d = s.width), (u = -o / 2), (p = -r / 2), (g = o), (m = r);
                                     break;
-                                case i.Z.RIGHT_TOP:
-                                    e.translate(n / 2, r / 2), e.rotate(-Math.PI / 2), (l = t.width - s.height - s.top), (h = s.left), (c = s.height), (d = s.width), (u = -r / 2), (g = -n / 2), (m = r), (p = n);
+                                case n.Z.RIGHT_TOP:
+                                    e.translate(r / 2, o / 2), e.rotate(-Math.PI / 2), (l = t.width - s.height - s.top), (c = s.left), (h = s.height), (d = s.width), (u = -o / 2), (p = -r / 2), (g = o), (m = r);
                             }
-                            e.drawImage(t, l, h, c, d, u, g, m, p), e.restore();
-                        })(t.getContext("2d"), e, t.width, t.height, r, o),
+                            e.drawImage(t, l, c, h, d, u, p, g, m), e.restore();
+                        })(t.getContext("2d"), e, t.width, t.height, o, i),
                         t
                     ),
                 );
@@ -203,236 +325,236 @@
                 s = 5242880;
             function l(e, t) {
                 if (window.CanvasRenderingContext2D) {
-                    const n = r(e, t);
-                    return h(n)
-                        .then(() => n)
+                    const r = o(e, t);
+                    return c(r)
+                        .then(() => r)
                         .catch(() => {
-                            const n = e * t;
-                            if (n > s) {
-                                const n = c(s, e, t);
-                                return l(n.width, n.height);
+                            const r = e * t;
+                            if (r > s) {
+                                const r = h(s, e, t);
+                                return l(r.width, r.height);
                             }
-                            if (n > a) {
-                                const n = c(a, e, t);
-                                return l(n.width, n.height);
+                            if (r > a) {
+                                const r = h(a, e, t);
+                                return l(r.width, r.height);
                             }
                             throw Error("Could not create valid canvas for resizing");
                         });
                 }
                 return Promise.reject(Error("Canvas is not supported in this browser"));
             }
-            function h(e) {
-                return new Promise((t, n) => {
-                    const i = e.toDataURL("image/jpeg");
-                    i && "data:," !== i ? t(i) : n(new Error("Malformed canvas"));
+            function c(e) {
+                return new Promise((t, r) => {
+                    const n = e.toDataURL("image/jpeg");
+                    n && "data:," !== n ? t(n) : r(new Error("Malformed canvas"));
                 });
             }
-            function c(e, t, n) {
-                const i = Math.sqrt((e * n) / t),
-                    r = (t * i) / n;
-                return { height: Math.floor(i), width: Math.floor(r) };
+            function h(e, t, r) {
+                const n = Math.sqrt((e * r) / t),
+                    o = (t * n) / r;
+                return { height: Math.floor(n), width: Math.floor(o) };
             }
         },
-        790187: (e, t, n) => {
-            n.d(t, { C: () => o, Z: () => i });
-            n(694898), n(38857), n(540171), n(157093), n(265688), n(270315), n(592529), n(86943), n(691157);
-            const i = Object.freeze({ UNKNOWN: 0, TOP_LEFT: 1, TOP_RIGHT: 2, BOTTOM_RIGHT: 3, BOTTOM_LEFT: 4, LEFT_TOP: 5, LEFT_BOTTOM: 6, RIGHT_BOTTOM: 7, RIGHT_TOP: 8 }),
-                r = (e, t, n = 65536) => {
-                    let i = new Uint8Array([]),
-                        r = 0;
-                    function o(o, a, s) {
-                        const l = o - r,
-                            h = l + a;
-                        if (l >= 0 && h <= i.length) s(i.subarray(l, h), o);
+        790187: (e, t, r) => {
+            r.d(t, { C: () => i, Z: () => n });
+            r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
+            const n = Object.freeze({ UNKNOWN: 0, TOP_LEFT: 1, TOP_RIGHT: 2, BOTTOM_RIGHT: 3, BOTTOM_LEFT: 4, LEFT_TOP: 5, LEFT_BOTTOM: 6, RIGHT_BOTTOM: 7, RIGHT_TOP: 8 }),
+                o = (e, t, r = 65536) => {
+                    let n = new Uint8Array([]),
+                        o = 0;
+                    function i(i, a, s) {
+                        const l = i - o,
+                            c = l + a;
+                        if (l >= 0 && c <= n.length) s(n.subarray(l, c), i);
                         else {
                             const l = new FileReader();
                             (l.onload = function () {
-                                (i = new Uint8Array(this.result)), (r = o), s(i.subarray(0, a), o);
+                                (n = new Uint8Array(this.result)), (o = i), s(n.subarray(0, a), i);
                             }),
                                 (l.onerror = t.bind(null, 0)),
-                                null !== e && l.readAsArrayBuffer(e.slice(o, o + Math.max(n, a)));
+                                null !== e && l.readAsArrayBuffer(e.slice(i, i + Math.max(r, a)));
                         }
                     }
                     function a(e) {
-                        const n = { "MM\0*": !0, "II*\0": !1 }[String.fromCharCode.apply(null, e.subarray(0, 4))];
-                        if (void 0 === n) return void t(0);
-                        function i(t, i) {
-                            let r = 0;
-                            for (let o = 0; o < i; o++) r = (r << 8) + e[t + (n ? o : i - 1 - o)];
-                            return r;
+                        const r = { "MM\0*": !0, "II*\0": !1 }[String.fromCharCode.apply(null, e.subarray(0, 4))];
+                        if (void 0 === r) return void t(0);
+                        function n(t, n) {
+                            let o = 0;
+                            for (let i = 0; i < n; i++) o = (o << 8) + e[t + (r ? i : n - 1 - i)];
+                            return o;
                         }
-                        const r = e.length > 8 && i(4, 4);
-                        if (!r || r + 2 > e.length) return void t(0);
-                        let o = i(r, 2);
-                        if (r + 12 * o + 6 > e.length) return void t(0);
-                        let a = r + 2;
-                        for (; o > 0; ) {
-                            if (((o -= 1), 274 === i(a, 2) && 3 === i(a + 2, 2) && 1 === i(a + 4, 4))) return void t(i(a + 8, 2));
+                        const o = e.length > 8 && n(4, 4);
+                        if (!o || o + 2 > e.length) return void t(0);
+                        let i = n(o, 2);
+                        if (o + 12 * i + 6 > e.length) return void t(0);
+                        let a = o + 2;
+                        for (; i > 0; ) {
+                            if (((i -= 1), 274 === n(a, 2) && 3 === n(a + 2, 2) && 1 === n(a + 4, 4))) return void t(n(a + 8, 2));
                             a += 12;
                         }
                         t(0);
                     }
                     e instanceof Blob
-                        ? o(0, 10, function e(n, i) {
-                              const r = n[1];
-                              if (n.length < 4 || 255 !== n[0] || 217 === r) return void t(0);
-                              const s = r < 208 || r > 217 ? (n[2] << 8) + n[3] : 0;
-                              225 === r && s > 8 && "Exif\0\0" === String.fromCharCode.apply(null, n.subarray(4, 10)) ? o(i + 10, s - 8, a) : o(i + 2 + s, 10, e);
+                        ? i(0, 10, function e(r, n) {
+                              const o = r[1];
+                              if (r.length < 4 || 255 !== r[0] || 217 === o) return void t(0);
+                              const s = o < 208 || o > 217 ? (r[2] << 8) + r[3] : 0;
+                              225 === o && s > 8 && "Exif\0\0" === String.fromCharCode.apply(null, r.subarray(4, 10)) ? i(n + 10, s - 8, a) : i(n + 2 + s, 10, e);
                           })
                         : t(0);
                 },
-                o = (e, t) => {
-                    const n = document.documentElement && "from-image" === getComputedStyle(document.documentElement).imageOrientation;
-                    return new Promise((o) => {
-                        n
-                            ? o(i.TOP_LEFT)
-                            : r(
+                i = (e, t) => {
+                    const r = document.documentElement && "from-image" === getComputedStyle(document.documentElement).imageOrientation;
+                    return new Promise((i) => {
+                        r
+                            ? i(n.TOP_LEFT)
+                            : o(
                                   e,
                                   (e) => {
-                                      o(e);
+                                      i(e);
                                   },
                                   t,
                               );
                     });
                 };
         },
-        276259: (e, t, n) => {
-            n.d(t, { Lw: () => r, Re: () => d, VJ: () => s, ZF: () => u, hv: () => l, ku: () => i, qp: () => o, uv: () => a, v5: () => c });
-            n(571372), n(875640), n(694898), n(38857), n(540171), n(157093), n(265688), n(270315), n(592529), n(86943), n(691157), n(543673), n(240753), n(128399);
-            function i(e) {
+        276259: (e, t, r) => {
+            r.d(t, { Lw: () => o, Re: () => d, VJ: () => s, ZF: () => u, hv: () => l, ku: () => n, qp: () => i, uv: () => a, v5: () => h });
+            r(571372), r(875640), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(543673), r(240753), r(128399);
+            function n(e) {
                 const t = e.match(/=*$/);
                 return t ? Math.floor(0.75 * (e.length - t[0].length)) : 0.75 * e.length;
             }
-            function r(e) {
-                return new Promise((t, n) => {
-                    const i = e.split(/data:|;base64,/);
+            function o(e) {
+                return new Promise((t, r) => {
+                    const n = e.split(/data:|;base64,/);
                     if (Blob)
-                        if (3 !== i.length) n(Error("Invalid dataUri"));
+                        if (3 !== n.length) r(Error("Invalid dataUri"));
                         else if (atob)
                             if (Uint8Array) {
-                                const [, e, n] = i,
-                                    r = atob(n),
-                                    o = r.length,
-                                    a = Array(o);
-                                for (let e = 0; e < o; e++) a[e] = r.charCodeAt(e);
+                                const [, e, r] = n,
+                                    o = atob(r),
+                                    i = o.length,
+                                    a = Array(i);
+                                for (let e = 0; e < i; e++) a[e] = o.charCodeAt(e);
                                 t(new Blob([new Uint8Array(a)], { type: e }));
-                            } else n(Error("The Uint8Array type is not available"));
-                        else n(Error("The atob API is not available"));
-                    else n(Error("The Blob API is not available"));
+                            } else r(Error("The Uint8Array type is not available"));
+                        else r(Error("The atob API is not available"));
+                    else r(Error("The Blob API is not available"));
                 });
             }
-            const o = (e, t) =>
-                    new Promise((n, i) => {
-                        const r = new FileReader();
+            const i = (e, t) =>
+                    new Promise((r, n) => {
+                        const o = new FileReader();
                         t &&
                             (t.signal.onabort = () => {
-                                r.abort?.(), i(Error(u));
+                                o.abort?.(), n(Error(u));
                             }),
-                            (r.onload = (e) => {
-                                e.target instanceof FileReader && e.target.result instanceof ArrayBuffer ? n(e.target.result) : i(Error("The FileReader result was not of type ArrayBuffer"));
+                            (o.onload = (e) => {
+                                e.target instanceof FileReader && e.target.result instanceof ArrayBuffer ? r(e.target.result) : n(Error("The FileReader result was not of type ArrayBuffer"));
                             }),
-                            (r.onerror = (e) => {
-                                i(e);
+                            (o.onerror = (e) => {
+                                n(e);
                             }),
-                            r.readAsArrayBuffer(e);
+                            o.readAsArrayBuffer(e);
                     }),
                 a = (e, t) => {
-                    const n = document.createElement("a");
-                    (n.href = e), (n.download = t), (n.target = "_blank"), n.click(), n.remove();
+                    const r = document.createElement("a");
+                    (r.href = e), (r.download = t), (r.target = "_blank"), r.click(), r.remove();
                 },
                 s = (e) =>
                     ((e) =>
                         new Promise((t) => {
-                            const n = new Image();
-                            (n.onload = function () {
+                            const r = new Image();
+                            (r.onload = function () {
                                 const e = document.createElement("canvas");
-                                (e.width = n.width), (e.height = n.height), e.getContext("2d").drawImage(n, 0, 0), e.toBlob((e) => t(e), "image/png");
+                                (e.width = r.width), (e.height = r.height), e.getContext("2d").drawImage(r, 0, 0), e.toBlob((e) => t(e), "image/png");
                             }),
-                                (n.crossOrigin = "anonymous"),
-                                (n.src = e);
+                                (r.crossOrigin = "anonymous"),
+                                (r.src = e);
                         }))(e).then((e) => navigator.clipboard.write([new ClipboardItem({ "image/png": e })])),
                 l = async (e, t) => {
                     if (e.size <= t) return e;
-                    let n = e,
-                        i = 1;
-                    for (; n && n.size > t; )
+                    let r = e,
+                        n = 1;
+                    for (; r && r.size > t; )
                         try {
-                            i > 0.2 ? ((i *= 0.7), (n = await h(n, 1, i))) : (n = await h(n, 0.7, i));
+                            n > 0.2 ? ((n *= 0.7), (r = await c(r, 1, n))) : (r = await c(r, 0.7, n));
                         } catch (e) {
-                            n = void 0;
+                            r = void 0;
                         }
-                    return n;
+                    return r;
                 },
-                h = (e, t, n) =>
-                    new Promise((i, r) => {
-                        const o = new Image();
-                        (o.onload = () => {
+                c = (e, t, r) =>
+                    new Promise((n, o) => {
+                        const i = new Image();
+                        (i.onload = () => {
                             const e = document.createElement("canvas"),
-                                r = e.getContext("2d"),
-                                a = o.width * t,
-                                s = o.height * t;
+                                o = e.getContext("2d"),
+                                a = i.width * t,
+                                s = i.height * t;
                             (e.width = a),
                                 (e.height = s),
-                                r.drawImage(o, 0, 0, a, s),
+                                o.drawImage(i, 0, 0, a, s),
                                 e.toBlob(
                                     (e) => {
-                                        i(new File([e], "image.jpeg", { type: "image/jpeg" }));
+                                        n(new File([e], "image.jpeg", { type: "image/jpeg" }));
                                     },
                                     "image/jpeg",
-                                    n,
+                                    r,
                                 );
                         }),
-                            (o.onerror = () => r(new Error("Failed to load image while resizing"))),
-                            (o.src = URL.createObjectURL(e));
+                            (i.onerror = () => o(new Error("Failed to load image while resizing"))),
+                            (i.src = URL.createObjectURL(e));
                     }),
-                c = ["image/jpeg", "image/png", "image/webp"],
+                h = ["image/jpeg", "image/png", "image/webp"],
                 d = "image/gif",
                 u = "Reading aborted";
         },
-        549755: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            n(571372);
-            class i extends Error {
-                constructor(e, t, n) {
-                    super(e), (this.code = t), (this.type = n || null);
+        549755: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            r(571372);
+            class n extends Error {
+                constructor(e, t, r) {
+                    super(e), (this.code = t), (this.type = r || null);
                 }
             }
         },
-        205074: (e, t, n) => {
-            n.d(t, { DS: () => s, ZP: () => l });
-            n(543673), n(240753), n(128399);
-            var i = n(790187),
-                r = n(276259),
-                o = n(122123);
+        205074: (e, t, r) => {
+            r.d(t, { DS: () => s, ZP: () => l });
+            r(543673), r(240753), r(128399);
+            var n = r(790187),
+                o = r(276259),
+                i = r(122123);
             function a(e, t) {
-                const n = (function (e) {
-                        return [i.Z.LEFT_BOTTOM, i.Z.LEFT_TOP, i.Z.RIGHT_BOTTOM, i.Z.RIGHT_TOP].indexOf(e) >= 0;
+                const r = (function (e) {
+                        return [n.Z.LEFT_BOTTOM, n.Z.LEFT_TOP, n.Z.RIGHT_BOTTOM, n.Z.RIGHT_TOP].indexOf(e) >= 0;
                     })(t),
-                    [r, o] = n ? [e.height, e.width] : [e.width, e.height];
-                return { width: r, height: o };
+                    [o, i] = r ? [e.height, e.width] : [e.width, e.height];
+                return { width: o, height: i };
             }
             const s = (e) => {
                 const t = e instanceof l,
-                    n = e.isImage || e.isGif,
-                    i = e.orientation,
-                    r = e.width && e.height,
-                    o = e.img;
-                return !!(t && n && i && r && o);
+                    r = e.isImage || e.isGif,
+                    n = e.orientation,
+                    o = e.width && e.height,
+                    i = e.img;
+                return !!(t && r && n && o && i);
             };
             class l {
                 constructor(e) {
-                    (this.fileHandle = e), e instanceof File && (this.name = e.name), (this.size = e.size), (this.type = e.type), (this.url = window.URL.createObjectURL(this.fileHandle)), (this.isGif = this.type === r.Re), (this.isImage = r.v5.some((e) => e === this.type)), (this.isVideo = !1), (this.isSubtitles = !1);
+                    (this.fileHandle = e), e instanceof File && (this.name = e.name), (this.size = e.size), (this.type = e.type), (this.url = window.URL.createObjectURL(this.fileHandle)), (this.isGif = this.type === o.Re), (this.isImage = o.v5.some((e) => e === this.type)), (this.isVideo = !1), (this.isSubtitles = !1);
                 }
                 withDimensionsAndOrientation() {
                     return this.isGif || this.isImage
-                        ? (0, o.po)(this.url).then((e) => {
+                        ? (0, i.po)(this.url).then((e) => {
                               const t = (t) => {
-                                  const { height: n, width: i } = a(e, t);
-                                  return (this.img = e), (this.width = i), (this.height = n), (this.orientation = t), this;
+                                  const { height: r, width: n } = a(e, t);
+                                  return (this.img = e), (this.width = n), (this.height = r), (this.orientation = t), this;
                               };
-                              return (0, i.C)(this.fileHandle)
-                                  .then((e) => t(e === i.Z.UNKNOWN ? i.Z.TOP_LEFT : e))
-                                  .catch(() => t(i.Z.TOP_LEFT));
+                              return (0, n.C)(this.fileHandle)
+                                  .then((e) => t(e === n.Z.UNKNOWN ? n.Z.TOP_LEFT : e))
+                                  .catch(() => t(n.Z.TOP_LEFT));
                           })
                         : Promise.resolve(this);
                 }
@@ -441,156 +563,156 @@
                 }
             }
         },
-        122123: (e, t, n) => {
-            n.d(t, { gK: () => r, o2: () => a, po: () => o });
-            var i = n(549755);
-            const r = { type: "image-load", NO_DIMENSIONS: 1, LOAD_FAILED: 2 };
-            function o(e) {
-                return new Promise((t, n) => {
-                    const o = (e, t) => {
-                            const o = new i.Z(e, t, r.type);
-                            n(o);
+        122123: (e, t, r) => {
+            r.d(t, { gK: () => o, o2: () => a, po: () => i });
+            var n = r(549755);
+            const o = { type: "image-load", NO_DIMENSIONS: 1, LOAD_FAILED: 2 };
+            function i(e) {
+                return new Promise((t, r) => {
+                    const i = (e, t) => {
+                            const i = new n.Z(e, t, o.type);
+                            r(i);
                         },
                         a = new Image();
                     (a.onload = () => {
-                        a.width && a.height ? t(a) : o("Image lacks height or width", r.NO_DIMENSIONS);
+                        a.width && a.height ? t(a) : i("Image lacks height or width", o.NO_DIMENSIONS);
                     }),
                         (a.onerror = () => {
-                            o("Error loading image", r.LOAD_FAILED);
+                            i("Error loading image", o.LOAD_FAILED);
                         }),
                         (a.src = e);
                 });
             }
             function a(e) {
-                return new Promise((t, n) => {
-                    const o = (e, t) => {
-                            const o = new i.Z(e, t, r.type);
-                            n(o);
+                return new Promise((t, r) => {
+                    const i = (e, t) => {
+                            const i = new n.Z(e, t, o.type);
+                            r(i);
                         },
                         a = new Image();
                     a.setAttribute("crossorigin", "anonymous"),
                         (a.onload = () => {
                             if (a.width && a.height) {
                                 const e = document.createElement("canvas"),
-                                    n = e.getContext("2d");
+                                    r = e.getContext("2d");
                                 (e.width = a.width),
                                     (e.height = a.height),
-                                    n.drawImage(a, 0, 0),
+                                    r.drawImage(a, 0, 0),
                                     e.toBlob((e) => {
                                         if (e) {
-                                            const n = new File([e], "file.jpg", { type: "image/jpeg" });
-                                            t(n);
-                                        } else o("Failed to convert image to blob", r.LOAD_FAILED);
+                                            const r = new File([e], "file.jpg", { type: "image/jpeg" });
+                                            t(r);
+                                        } else i("Failed to convert image to blob", o.LOAD_FAILED);
                                     }, "image/jpeg");
-                            } else o("Image lacks height or width", r.NO_DIMENSIONS);
+                            } else i("Image lacks height or width", o.NO_DIMENSIONS);
                         }),
                         (a.onerror = () => {
-                            o("Error loading image", r.LOAD_FAILED);
+                            i("Error loading image", o.LOAD_FAILED);
                         }),
                         (a.src = e);
                 });
             }
         },
-        514354: (e, t, n) => {
-            n.d(t, { Q: () => l, S: () => s });
-            var i = n(332775),
-                r = n.n(i),
-                o = n(276259),
-                a = n(549755);
+        514354: (e, t, r) => {
+            r.d(t, { Q: () => l, S: () => s });
+            var n = r(332775),
+                o = r.n(n),
+                i = r(276259),
+                a = r(549755);
             const s = { ERROR_READING_IMAGE_FILE: 0, HASHING_ABORTED: 1, INVALID_HASH: 2 },
                 l = (e, t) =>
-                    (0, o.qp)(e, t)
+                    (0, i.qp)(e, t)
                         .catch((e) => {
-                            throw new a.Z(`An error occurred while reading the image file: ${e}`, e.message === o.ZF ? s.HASHING_ABORTED : s.ERROR_READING_IMAGE_FILE);
+                            throw new a.Z(`An error occurred while reading the image file: ${e}`, e.message === i.ZF ? s.HASHING_ABORTED : s.ERROR_READING_IMAGE_FILE);
                         })
                         .then((e) => {
-                            const t = r()(e);
+                            const t = o()(e);
                             if (t && "string" == typeof t) return t;
                             throw new a.Z("Hash is not a non-empty string", s.INVALID_HASH);
                         });
         },
-        653843: (e, t, n) => {
-            n.d(t, { Y7: () => g, ZP: () => T, m2: () => _ });
-            var i = n(19697),
-                r = n(790187),
-                o = n(549755),
-                a = n(205074),
-                s = n(276259);
-            function l(e, { maxDimension: t, maxFileSize: n, targetQuality: i }) {
-                return (function (e, t, n, i) {
-                    function r(o, a) {
-                        return h(e, e.width, e.height, o, a).then((e) => {
-                            const l = e.width > n || e.height > n,
-                                h = e.toDataURL("image/jpeg", i),
-                                c = h.split(";base64,")[1],
-                                d = (0, s.ku)(c);
+        653843: (e, t, r) => {
+            r.d(t, { Y7: () => p, ZP: () => E, m2: () => b });
+            var n = r(19697),
+                o = r(790187),
+                i = r(549755),
+                a = r(205074),
+                s = r(276259);
+            function l(e, { maxDimension: t, maxFileSize: r, targetQuality: n }) {
+                return (function (e, t, r, n) {
+                    function o(i, a) {
+                        return c(e, e.width, e.height, i, a).then((e) => {
+                            const l = e.width > r || e.height > r,
+                                c = e.toDataURL("image/jpeg", n),
+                                h = c.split(";base64,")[1],
+                                d = (0, s.ku)(h);
                             if (l || d > t) {
                                 let e = 0.8;
-                                return l && (e = o > a ? n / o : n / a), r(o * e, a * e);
+                                return l && (e = i > a ? r / i : r / a), o(i * e, a * e);
                             }
-                            return h;
+                            return c;
                         });
                     }
-                    return r(e.width, e.height);
-                })(e, n, t, i).then(s.Lw);
+                    return o(e.width, e.height);
+                })(e, r, t, n).then(s.Lw);
             }
-            function h(e, t, n, r, o) {
+            function c(e, t, r, o, i) {
                 const a = t / 2,
-                    s = n / 2;
-                return e instanceof HTMLCanvasElement && t <= r && n <= o ? Promise.resolve(e) : a <= r && s <= o ? (0, i.$i)(e, r, o) : (0, i.$i)(e, a, s).then((e) => h(e, e.width, e.height, r, o));
+                    s = r / 2;
+                return e instanceof HTMLCanvasElement && t <= o && r <= i ? Promise.resolve(e) : a <= o && s <= i ? (0, n.$i)(e, o, i) : (0, n.$i)(e, a, s).then((e) => c(e, e.width, e.height, o, i));
             }
-            const c = 5242880,
+            const h = 5242880,
                 d = 4096,
                 u = 0.85,
-                g = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
-                m = (e) => e.orientation !== r.Z.TOP_LEFT && e.orientation !== r.Z.UNKNOWN,
-                p = (e, t = c, n = d) => {
-                    const { height: i, size: r, width: o } = e;
-                    return o > n || i > n || r > t;
+                p = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
+                g = (e) => e.orientation !== o.Z.TOP_LEFT && e.orientation !== o.Z.UNKNOWN,
+                m = (e, t = h, r = d) => {
+                    const { height: n, size: o, width: i } = e;
+                    return i > r || n > r || o > t;
                 },
-                w = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                f = (e, t) => {
-                    const { height: n, left: i, top: r, width: o } = w(e, t);
-                    return !(0 === r && 0 === i && o === e.width && n === e.height);
+                f = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
+                w = (e, t) => {
+                    const { height: r, left: n, top: o, width: i } = f(e, t);
+                    return !(0 === o && 0 === n && i === e.width && r === e.height);
                 };
-            function _(e, t) {
-                const { maxFileSize: n = c, maxDimension: i = d, cropData: r, jpgPixelsPerByteForResize: o } = t || {},
+            function b(e, t) {
+                const { maxFileSize: r = h, maxDimension: n = d, cropData: o, jpgPixelsPerByteForResize: i } = t || {},
                     a = "image/jpeg" === e.type,
                     s = (e.width * e.height) / e.size;
-                return m(e) || p(e, n, i) || f(e, r) || (a && !!o && s < o);
+                return g(e) || m(e, r, n) || w(e, o) || (a && !!i && s < i);
             }
-            const E = (e, t) => {
-                    const { height: n, width: i } = e;
-                    return i <= t && n <= t ? { width: i, height: n } : i > n ? { width: t, height: Math.round(n / (i / t)) } : { width: Math.round(i / (n / t)), height: t };
+            const _ = (e, t) => {
+                    const { height: r, width: n } = e;
+                    return n <= t && r <= t ? { width: n, height: r } : n > r ? { width: t, height: Math.round(r / (n / t)) } : { width: Math.round(n / (r / t)), height: t };
                 },
                 y = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
-            function T(e, t) {
-                const { maxFileSize: n = c, maxDimension: r = d, targetQuality: s = u, cropData: h } = t || {},
-                    m = w(e, h);
-                if (!_(e, t)) return Promise.resolve(e.fileHandle);
+            function E(e, t) {
+                const { maxFileSize: r = h, maxDimension: o = d, targetQuality: s = u, cropData: c } = t || {},
+                    g = f(e, c);
+                if (!b(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, a.DS)(e)) {
-                    const e = new o.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
+                    const e = new i.Z("The provided file is not a valid image", p.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
                 }
                 if (e.isGif) {
-                    const e = new o.Z("Gifs cannot be processed.", g.GIF_IS_TOO_LARGE);
+                    const e = new i.Z("Gifs cannot be processed.", p.GIF_IS_TOO_LARGE);
                     return Promise.reject(e);
                 }
-                const p = (e) => l(e, { maxFileSize: n, maxDimension: r, targetQuality: s });
+                const m = (e) => l(e, { maxFileSize: r, maxDimension: o, targetQuality: s });
                 return e
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
-                        const n = ({ height: n, width: r }) => (0, i.$i)(e, r, n, t, m);
+                        const r = ({ height: r, width: o }) => (0, n.$i)(e, o, r, t, g);
                         return y(e)
-                            .then(() => ((e) => e(E(m, r)))(n))
-                            .then(p);
+                            .then(() => ((e) => e(_(g, o)))(r))
+                            .then(m);
                     })
                     .catch(() => {
-                        const e = new o.Z("Image cannot be processed", g.CANNOT_BE_PROCESSED);
+                        const e = new i.Z("Image cannot be processed", p.CANNOT_BE_PROCESSED);
                         return Promise.reject(e);
                     });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.7f7eb77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.f36fec9a.js.map

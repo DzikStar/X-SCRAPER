@@ -2823,13 +2823,13 @@
                     return "El teu nivell de subscripció està programat per canviar a " + e.tierName + " a partir del següent cicle de facturació el " + e.date;
                 }),
                 t("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "El proper cicle de facturació començarà el dia " + e.date;
                 }),
                 t("edbb700f", function (e) {
                     return "Comença el dia " + e.date + " amb el proper cicle de facturació";
                 }),
                 t("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "La subscripció acaba el " + e.date;
                 }),
                 t("e9884540", "Descompte actiu"),
                 t("bfb879aa", "Descompte pendent"),
@@ -2984,7 +2984,7 @@
                 t("jadeb4da", "Actualitza urgentment el mètode de pagament per no perdre els beneficis de la subscripció."),
                 t("bce3726a", "Actualitza la facturació"),
                 t("fce9ecce", "Vídeos suggerits"),
-                t("da00e00a", "Try the new News"),
+                t("da00e00a", "Prova la nova secció Notícies"),
                 t("c40666d8", "Prova-ho"),
                 t("j66b95a2", "Notícies detallades"),
                 t("b58d2bd2", "Publicacions rellevants"),
@@ -4146,7 +4146,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 t("ed93de0c", "S'està analitzant la publicació"),
-                t("ba44f4ea", "Més detalls de Grok"),
+                t("d1d92e40", "More details"),
                 t("a6e89af8", "Conversa oberta"),
                 t("ica55d24", "Xat nou"),
                 t("f794af9a", "Mode divertit"),
@@ -6681,7 +6681,7 @@
                 t("b2d41138", "Més abast = més ingressos"),
                 t("defa7f12", "Beneficia't de la priorització de respostes, que et donarà la visibilitat extra que necessites per créixer més ràpidament."),
                 t("i3e4955d", "aquí"),
-                t("fdc5d06c", "Exit Full Screen"),
+                t("fdc5d06c", "Surt de la pantalla completa"),
                 t("cea1c00e", "Desbloca la capacitat d'interaccionar"),
                 t("f8e6a280", "Els comptes nous han de pagar una petita quota anual per poder publicar, fer m'agrada, afegir als preferits i respondre. Això ajuda a reduir el contingut brossa i crear una experiència millor per a tothom. Pots continuar seguint comptes i explorant X sense cap cost."),
                 t("h968efc6", "Els comptes nous han de pagar una petita quota per poder publicar, fer m'agrada, afegir als preferits i respondre. Això ajuda a reduir el contingut brossa i crear una experiència millor per a tothom. Pots continuar seguint comptes i explorant X sense cap cost."),
@@ -6725,7 +6725,7 @@
                 t("i1801686", "La consulta de cerca no és vàlida. Prova'n una altra."),
                 t("a0b4541c", "Alguna cosa ha anat malament, però no és culpa teva"),
                 t("d7eebb60", "S'està configurant la subscripció"),
-                t("h707b180", "Your subscription update is complete"),
+                t("h707b180", "La subscripció s'ha actualitzat"),
                 t("a452ab68", "Això pot trigar uns segons."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "S'ha actualitzat correctament"),
@@ -7393,7 +7393,7 @@
                 t("a10aa36c", "Centre d'ajuda"),
                 t("d0740558", "Centre d'ajuda"),
                 t("d2d76dca", "Centre d'ajuda"),
-                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("de8bcdaa", "Desglossament de les persones que han vist la teva publicació"),
                 t("cfa1ef16", "Dona-hi ressò"),
                 t("d267afa2", "Menys de 20"),
                 t("db81cab0", "20-29"),
@@ -7405,12 +7405,12 @@
                 t("fa5be588", "Natural"),
                 t("c65126fe", "Prioritzat"),
                 t("c61c6624", "Patrocinat"),
-                t("f1196a04", "Boost Analytics"),
-                t("bb66e3fc", "Promote Analytics"),
+                t("f1196a04", "Analítiques de priorització"),
+                t("bb66e3fc", "Analítiques de patrocini"),
                 t("g512ddcc", "Analítiques orgàniques"),
-                t("j9256524", "Breakdown of your boost performance"),
-                t("ceeb3016", "Breakdown of your promote performance"),
-                t("bf4558fa", "Breakdown of your organic performance"),
+                t("j9256524", "Desglossament del rendiment de priorització"),
+                t("ceeb3016", "Desglossament del rendiment de patrocini"),
+                t("bf4558fa", "Desglossament del rendiment orgànic"),
                 t("c69069e6", "Vegades que s'ha vist la publicació a X"),
                 t("a0615bac", "Nombre total de vegades que un usuari ha interaccionat amb una publicació. Això inclou tots els clics a qualsevol part de la publicació (incloses les etiquetes, els enllaços, l'avatar, el nom d'usuari i l'ampliació de la publicació), les republicacions, les respostes, els seguidors i els agradaments."),
                 t("d8abdaa4", "Seguidors nous"),
@@ -7419,7 +7419,7 @@
                 t("c7d0d1c4", "Nombre de clics en qualsevol URL de la publicació"),
                 t("a4da7724", "Vegades que els usuaris han vist els detalls de la publicació"),
                 t("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " de priorització";
                 }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " de patrocini";
@@ -7428,7 +7428,7 @@
                     return e.percentage + " d'usuaris que no són seguidors";
                 }),
                 t("h4cbba3e", "< 5 %"),
-                t("f4f0094c", "< 5% from boost"),
+                t("f4f0094c", "<5 % de priorització"),
                 t("h1cdac12", "< 5 % de promoció"),
                 t("g884b2cc", "< 5 % de no seguidors"),
                 t("b32334a0", "Comptes als quals s'ha arribat"),
@@ -12020,7 +12020,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(Comissió del ", "%, mín. ", ")"];
                             },
                         },
                         {
@@ -13226,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.bd82870a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.1ccc9c8a.js.map

@@ -8,23 +8,23 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.7"),
                         d.e("icons.8"),
-                        d.e("icons.15"),
-                        d.e("icons.24"),
+                        d.e("icons.21"),
+                        d.e("icons.13"),
+                        d.e("icons.20"),
+                        d.e("icons.14"),
+                        d.e("icons.1"),
                         d.e("icons.3"),
+                        d.e("icons.24"),
+                        d.e("icons.11"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.9"),
-                        d.e("icons.22"),
+                        d.e("icons.28"),
+                        d.e("icons.10"),
+                        d.e("icons.17"),
+                        d.e("icons.4"),
                         d.e("icons.12"),
-                        d.e("icons.5"),
-                        d.e("icons.6"),
-                        d.e("icons.14"),
-                        d.e("icons.18"),
-                        d.e("icons.2"),
-                        d.e("icons.16"),
-                        d.e("icons.19"),
+                        d.e("icons.22"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -32,6 +32,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -55,7 +56,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -168,7 +169,7 @@
             };
         },
         309401: (e, a, d) => {
-            d.d(a, { T: () => b, Z: () => c });
+            d.d(a, { T: () => h, Z: () => b });
             d(136728), d(875640);
             var r = d(565058),
                 o = d(323265),
@@ -177,13 +178,14 @@
                 i = d(420182),
                 s = d(155918),
                 l = d(623494),
-                u = d(774717);
-            class c {
+                u = d(397159),
+                c = d(774717);
+            class b {
                 constructor() {
                     (this.prompt = (0, r.cn)("")), (this.status = (0, r.cn)("idle")), (this.message = (0, r.cn)("")), (this.fileAttachments = (0, r.cn)([])), (this.upsell = (0, r.cn)(null));
                 }
             }
-            class b extends c {
+            class h extends b {
                 constructor(e) {
                     super(), (this.abortController = new AbortController()), (this.imageGenerationCount = 1), (this.conversationId = ""), (this.promptSource = "NATURAL"), (this._store = e);
                 }
@@ -260,9 +262,9 @@
             const p = ({ analytics: e, api: a, atoms: d, enableGrokApiHost: r, eventTag: t, requestBody: n }) => {
                 const i = (function () {
                         const e = `grok-${o.ZP.isTwitterApp() ? (o.ZP.isAndroid() ? "android" : "ios") : "web"}:api-handler`,
-                            a = u.P_();
+                            a = c.P_();
                         function d(d) {
-                            u.IM(`${e}:${d}`, a.end());
+                            c.IM(`${e}:${d}`, a.end());
                         }
                         const r = new Set();
                         function t(e) {
@@ -271,8 +273,8 @@
                         return { record: d, recordOnce: t };
                     })(),
                     s = t ? ` (${t})` : "";
-                let c = "",
-                    b = !1;
+                let b = "",
+                    h = !1;
                 return (
                     d.updateState("loading"),
                     a.fetchClient
@@ -284,14 +286,14 @@
                             d.updateState("streaming");
                             const o = new TextDecoder();
                             let t = "";
-                            const u = setTimeout(() => {
+                            const c = setTimeout(() => {
                                     (0, l.eS)(e, !0);
                                 }, 5e3),
                                 p = await r.read();
                             return (
-                                clearTimeout(u),
-                                (async function a({ done: u, value: p }) {
-                                    if (u) c || b ? (d.updateState("complete"), i.record("time-to-last-chunk")) : (d.updateState("error"), (0, l.Uk)(e, `add-response failed to reach the network${s}`), i.record("network-error"));
+                                clearTimeout(c),
+                                (async function a({ done: c, value: p }) {
+                                    if (c) b || h ? (d.updateState("complete"), i.record("time-to-last-chunk")) : (d.updateState("error"), (0, l.Uk)(e, `add-response failed to reach the network${s}`), i.record("network-error"));
                                     else if (p) {
                                         i.recordOnce("time-to-first-chunk");
                                         const s = o.decode(p);
@@ -301,13 +303,13 @@
                                             for (const r of a)
                                                 try {
                                                     const e = JSON.parse(r);
-                                                    if ((e.userChatItemId && (d.userChatItemId = e.userChatItemId), e.result?.upsell && d.updateUpsell(e.result.upsell), e.result?.postIds || (e.result?.message && ((c += e.result.message), d.updateMessage(c))), "error" === e.result?.responseType && d.clearAttachments(), e.result?.imageAttachmentCount)) {
+                                                    if ((e.userChatItemId && (d.userChatItemId = e.userChatItemId), e.result?.upsell && d.updateUpsell(e.result.upsell), e.result?.postIds || !e.result?.message || e.result?.isThinking || (e.result?.messageTag && e.result?.messageTag !== u.iS.FINAL) || ((b += e.result.message), d.updateMessage(b)), "error" === e.result?.responseType && d.clearAttachments(), e.result?.imageAttachmentCount)) {
                                                         let a = e.result.imageAttachmentCount;
                                                         n.imageGenerationCount && (a = Math.min(a, n.imageGenerationCount)), d.setAttachmentCount(a);
                                                     }
                                                     const a = e.result?.event;
-                                                    if ((a && a.imageAttachmentUpdate && ((b = !0), d.addImageAttachmentUpdate({ imageIdStr: a.imageAttachmentUpdate.imageIdStr, imageId: a.imageAttachmentUpdate.imageId, progress: a.imageAttachmentUpdate.progress / 100, imageUrl: a.imageAttachmentUpdate.imageUrl })), "image" === e.result?.responseType || e.result?.imageAttachment?.imageUrl)) {
-                                                        b = !0;
+                                                    if ((a && a.imageAttachmentUpdate && ((h = !0), d.addImageAttachmentUpdate({ imageIdStr: a.imageAttachmentUpdate.imageIdStr, imageId: a.imageAttachmentUpdate.imageId, progress: a.imageAttachmentUpdate.progress / 100, imageUrl: a.imageAttachmentUpdate.imageUrl })), "image" === e.result?.responseType || e.result?.imageAttachment?.imageUrl)) {
+                                                        h = !0;
                                                         const a = { fileName: "image", mimeType: "image/jpeg", url: e.result.imageAttachment?.imageUrl ?? void 0 };
                                                         d.addAttachment(a);
                                                     }
@@ -333,7 +335,7 @@
             };
         },
         965728: (e, a, d) => {
-            d.d(a, { C_: () => S, I5: () => h, K2: () => D, L$: () => l, Rb: () => m, nk: () => p, sI: () => f, xr: () => A });
+            d.d(a, { C_: () => S, I5: () => p, K2: () => D, L$: () => l, Rb: () => m, nk: () => h, sI: () => M, xr: () => A });
             var r = d(202784),
                 o = d(483677),
                 t = d(782578),
@@ -347,15 +349,15 @@
                 u = i.Z.columnWidths.primary,
                 c = (e, a) => Math.min(a, e),
                 b = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
-                p = { transitionProperty: "background-color", transitionDuration: ".5s" },
-                h = (e, a) => {
+                h = { transitionProperty: "background-color", transitionDuration: ".5s" },
+                p = (e, a) => {
                     const { containerHeight: d, containerWidth: r, mediaHeight: o, mediaWidth: n } = e,
                         i = n && o ? n / o : 1,
                         s = i > 1,
                         l = a ? 400 : u,
                         b = s && n <= l ? c(r, l) : r,
-                        p = !s && o <= l ? c(d, l) : d;
-                    return t.Z.getContainDimensions({ width: b, height: p }, i);
+                        h = !s && o <= l ? c(d, l) : d;
+                    return t.Z.getContainDimensions({ width: b, height: h }, i);
                 },
                 m = (e) => {
                     const a = e && e.ext_media_color && e.ext_media_color.palette;
@@ -380,7 +382,7 @@
                             return e;
                     }
                 },
-                f = () => {
+                M = () => {
                     const [e, a] = r.useReducer(g, { isZoomed: !1, showControls: !0 });
                     return {
                         hideButtons: e.isZoomed || !e.showControls,
@@ -414,4 +416,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.75f7105a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.de86551a.js.map

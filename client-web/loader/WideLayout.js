@@ -2,7 +2,7 @@
     ["loader.WideLayout"],
     {
         544118: (e) => {
-            e.exports = { queryId: "1rV_MeRwACVGJnK7XVt62w", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "-kBIRIDkOlIIGYEOJenQ8Q", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         616753: (e, t, n) => {
             "use strict";
@@ -11,7 +11,7 @@
         },
         333241: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => k });
+            n.d(t, { Z: () => w });
             n(136728);
             var r = n(202784),
                 o = n(638236),
@@ -31,10 +31,10 @@
                 y = "report",
                 b = "share",
                 D = l().j7bb1a43,
-                w = l().hef5960c,
-                k = (0, p.M)((e) => {
+                k = l().hef5960c,
+                w = (0, p.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: n, onClose: a, onMute: l, onRemoveFollower: p, onReportUser: k, onShare: I, onUnblock: E, onUnmute: S, user: P } = e,
+                        { onBlock: n, onClose: a, onMute: l, onRemoveFollower: p, onReportUser: w, onShare: I, onUnblock: E, onUnmute: P, user: S } = e,
                         v = [],
                         M = (t, n) => {
                             const { confirm: r, onClose: o } = e;
@@ -46,48 +46,48 @@
                             } else n();
                         };
                     !!window.navigator.share &&
-                        !P.protected &&
-                        !P.blocking &&
-                        !P.blocked_by &&
+                        !S.protected &&
+                        !S.blocking &&
+                        !S.blocked_by &&
                         v.push({
                             Icon: o.Z,
                             onClick: () => {
                                 a(), I();
                             },
                             testID: b,
-                            text: w,
+                            text: k,
                         });
-                    !P.blocking &&
+                    !S.blocking &&
                         v.push({
                             ...(0, m.N1)(
-                                P,
+                                S,
                                 () => {
                                     a(), l();
                                 },
                                 () => {
-                                    a(), S();
+                                    a(), P();
                                 },
                             ),
                             testID: _,
                         });
-                    P.followed_by &&
+                    S.followed_by &&
                         v.push({
                             ...(0, h.l)({
                                 removeFollowerAction: (e) => {
                                     M(e, p);
                                 },
-                                user: P,
+                                user: S,
                             }),
                             testID: g,
                         }),
-                        v.push((0, u.op)({ blockAction: (e) => M(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => M(e, E), user: P })),
+                        v.push((0, u.op)({ blockAction: (e) => M(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => M(e, E), user: S })),
                         v.push({
                             Icon: i.default,
                             onClick: () => {
-                                a(), k();
+                                a(), w();
                             },
                             testID: y,
-                            text: D({ screenName: P.screen_name }),
+                            text: D({ screenName: S.screen_name }),
                         });
                     const Z = v.map(({ Icon: e, onClick: t, testID: n, text: r }) => ({ text: r, onClick: t, Icon: e, testID: n }));
                     return r.createElement(s.Z, { items: Z, onCloseRequested: a });
@@ -252,8 +252,8 @@
                 y = a().c4da7d28,
                 b = a().j87c21f4,
                 D = a().iebc30ca,
-                w = a().dc740eb2;
-            class k extends r.PureComponent {
+                k = a().dc740eb2;
+            class w extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -276,7 +276,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(d.Z, { fullScreen: !0, message: w }) : null, this._renderButton());
+                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(d.Z, { fullScreen: !0, message: k }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: t, updateDeviceFollowing: n, userId: r } = this.props;
@@ -287,11 +287,11 @@
                     t.scribeAction(e);
                 }
             }
-            const I = _(k);
+            const I = _(w);
         },
         130888: (e, t, n) => {
             "use strict";
-            n.r(t), n.d(t, { InThisConversationContainer: () => S, default: () => P });
+            n.r(t), n.d(t, { InThisConversationContainer: () => P, default: () => S });
             var r = n(202784),
                 o = n(476984),
                 s = n.n(o),
@@ -317,28 +317,28 @@
                         o = e.unmentioned_user_ids?.includes(t);
                     return r || !o;
                 },
-                w = (e, t) => (e.entities?.user_mentions || []).filter((n) => D(e, n.id_str, t)).map((e) => e.id_str) || [],
-                k = (e, t) => t.focalTweetId,
+                k = (e, t) => (e.entities?.user_mentions || []).filter((n) => D(e, n.id_str, t)).map((e) => e.id_str) || [],
+                w = (e, t) => t.focalTweetId,
                 I = (0, p.Z)()
-                    .propsFromState(() => ({ focalTweetId: k, viewerUserId: f._h, tweetMap: _.Z.selectAll, users: g.ZP.selectAll }))
+                    .propsFromState(() => ({ focalTweetId: w, viewerUserId: f._h, tweetMap: _.Z.selectAll, users: g.ZP.selectAll }))
                     .adjustStateProps(({ focalTweetId: e, tweetMap: t, users: n, viewerUserId: r }) => {
                         const o = e && t[e];
                         if (!o) return { participantIds: [] };
-                        const s = [o.user, ...w(o, r), ...((a = o), y.ZP.mergeTaggedUsers((a.extended_entities && a.extended_entities.media) || []).map((e) => e.user_id))];
+                        const s = [o.user, ...k(o, r), ...((a = o), y.ZP.mergeTaggedUsers((a.extended_entities && a.extended_entities.media) || []).map((e) => e.user_id))];
                         var a;
                         const l = o.quoted_status && t[o.quoted_status];
-                        return l && (s.push(...((e, t) => (D(e, e.user, t) ? [e.user] : []))(l, r)), s.push(...w(l, r))), { participantIds: (0, b.Z)(s).filter((e) => "string" == typeof e && void 0 !== n[e]?.following) };
+                        return l && (s.push(...((e, t) => (D(e, e.user, t) ? [e.user] : []))(l, r)), s.push(...k(l, r))), { participantIds: (0, b.Z)(s).filter((e) => "string" == typeof e && void 0 !== n[e]?.following) };
                     })
                     .withAnalytics({ component: "in_this_conversation" }),
                 E = l().j88f27d8;
-            function S({ participantIds: e }) {
+            function P({ participantIds: e }) {
                 const t = (function (e) {
                     const t = r.useRef(e);
                     return s()(e, t.current) ? t.current : ((t.current = e), e);
                 })(e);
                 return t.length > 0 ? r.createElement(h, { headerText: E, participantIds: t }) : null;
             }
-            const P = I(S);
+            const S = I(P);
         },
         527969: (e, t, n) => {
             "use strict";
@@ -522,12 +522,12 @@
                 y = n(731708),
                 b = n(154003),
                 D = n(708852),
-                w = n(392237),
-                k = n(674132),
-                I = n.n(k),
+                k = n(392237),
+                w = n(674132),
+                I = n.n(w),
                 E = n(293723),
-                S = n(399398),
-                P = n(822502),
+                P = n(399398),
+                S = n(822502),
                 v = n(910113),
                 M = n(535338),
                 Z = n(736063);
@@ -550,15 +550,15 @@
                         u = m.useCallback(() => {
                             r ? o.push(`/jobs/recommended/${t}`) : o.push(`/m/jobs/recommended/${t}`);
                         }, [o, r, t]);
-                    return s && a ? m.createElement(P.Z, { actions: [], companyProfile: i, job: a, jobId: t, jobIndex: n, onClick: u, relayId: d, user: l, userSentiment: c, withBottomBorder: !1 }) : null;
+                    return s && a ? m.createElement(S.Z, { actions: [], companyProfile: i, job: a, jobId: t, jobIndex: n, onClick: u, relayId: d, user: l, userSentiment: c, withBottomBorder: !1 }) : null;
                 },
-                x = w.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
+                x = k.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
                 N = ({ isSidebarModule: e }) => {
                     const t = (0, M.p)(C, {}),
                         n = t?.viewer_v2.user_results.result.matching_profile,
                         r = t?.viewer_v2.user_results.result.job_recommendations_results;
                     if (!t || (n?.consented_at && !r?.length)) return null;
-                    const o = ({ children: t }) => (e ? m.createElement(S.g, null, t) : m.createElement(m.Fragment, null, t));
+                    const o = ({ children: t }) => (e ? m.createElement(P.g, null, t) : m.createElement(m.Fragment, null, t));
                     return m.createElement(
                         o,
                         null,
@@ -602,8 +602,8 @@
                 y = n(973572),
                 b = n(668214),
                 D = n(919022);
-            const w = (e, t) => t.userIds,
-                k = (e, t) => {
+            const k = (e, t) => t.userIds,
+                w = (e, t) => {
                     const { filterPredicate: n = (e) => !!e, userIds: r } = t;
                     return r.filter((t) => {
                         const r = D.ZP.select(e, t);
@@ -619,8 +619,8 @@
                 },
                 E = (0, b.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, y.Z)(k, (e) => e),
-                        fetchStatus: (0, y.Z)(k, I, w, (e, t, n) => {
+                        availableUserIds: (0, y.Z)(w, (e) => e),
+                        fetchStatus: (0, y.Z)(w, I, k, (e, t, n) => {
                             let r = _.ZP.LOADED;
                             for (let o = 0; o < n.length; o++) {
                                 const s = n[o];
@@ -634,8 +634,8 @@
                         }),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: D.ZP.fetchManyIfNeeded })),
-                S = i().f5b426c2;
-            class P extends o.Component {
+                P = i().f5b426c2;
+            class S extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -654,7 +654,7 @@
                     a()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return o.createElement(c.Z, { "aria-label": S, fetchStatus: this.state.allUsersUnavailable ? _.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return o.createElement(c.Z, { "aria-label": P, fetchStatus: this.state.allUsersUnavailable ? _.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: n, userIds: r } = this.props;
@@ -677,7 +677,7 @@
                     );
                 }
             }
-            const v = E(P);
+            const v = E(S);
         },
         912937: (e, t, n) => {
             "use strict";
@@ -696,11 +696,11 @@
                 p = n(864479),
                 f = (n(136728), n(952428)),
                 _ = n(443781);
-            const g = r.lazy(() => window.__SSP_PROMISE__.then(() => ({ default: w }))),
+            const g = r.lazy(() => window.__SSP_PROMISE__.then(() => ({ default: k }))),
                 y = new Set(),
                 b = {};
             let D = 0;
-            function w({ fallbackSlotId: e, primarySlotId: t }) {
+            function k({ fallbackSlotId: e, primarySlotId: t }) {
                 const n = r.useRef("ad-" + D++).current,
                     [s, a] = r.useState(""),
                     l = r.useRef(!1),
@@ -776,21 +776,21 @@
                     c)
                 )
                     return null;
-                const h = [k.adContainer, !s && k.emptyContainer];
-                return r.createElement(o.Z, { style: h }, r.createElement(o.Z, { id: t, style: [k.adSlot, "primary" !== s && k.hiddenSlot] }), r.createElement(o.Z, { id: e, style: [k.adSlot, "fallback" !== s && k.hiddenSlot] }));
+                const h = [w.adContainer, !s && w.emptyContainer];
+                return r.createElement(o.Z, { style: h }, r.createElement(o.Z, { id: t, style: [w.adSlot, "primary" !== s && w.hiddenSlot] }), r.createElement(o.Z, { id: e, style: [w.adSlot, "fallback" !== s && w.hiddenSlot] }));
             }
-            const k = s.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
+            const w = s.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
                 I = function (e) {
-                    return r.createElement(f.Z, { style: k.root }, r.createElement(r.Suspense, { fallback: r.createElement(o.Z, { style: k.emptyContainer }) }, r.createElement(g, e)));
+                    return r.createElement(f.Z, { style: w.root }, r.createElement(r.Suspense, { fallback: r.createElement(o.Z, { style: w.emptyContainer }) }, r.createElement(g, e)));
                 },
                 E = l().a526aa66,
-                S = l().ef625010,
-                P = l().d228a9a0,
+                P = l().ef625010,
+                S = l().d228a9a0,
                 v = (0, p.Z)(({ isInSidebar: e, userId: t, userIds: n, withProfileHeaderText: s }) => {
                     const a = (0, m.hC)("rweb_ssp_ads_enabled"),
                         l = `/i/connect_people?user_id=${t}`,
                         i = n.length > 0;
-                    return r.createElement(o.Z, { "aria-label": E, role: "complementary" }, r.createElement(d.Z, { text: s ? S : E }), r.createElement(u.Z, { displayMode: h.Z.UserCompact, userIds: n }), a && i && r.createElement(I, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), i && r.createElement(c.Z, { link: l, text: P, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
+                    return r.createElement(o.Z, { "aria-label": E, role: "complementary" }, r.createElement(d.Z, { text: s ? P : E }), r.createElement(u.Z, { displayMode: h.Z.UserCompact, userIds: n }), a && i && r.createElement(I, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), i && r.createElement(c.Z, { link: l, text: S, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
                 });
             var M = n(967977),
                 Z = n(942893),
@@ -879,6 +879,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -1107,22 +1108,22 @@
                 y = n(917799),
                 b = n(312771),
                 D = n(56519);
-            const w = "recommendations",
-                k = 30,
+            const k = "recommendations",
+                w = 30,
                 I = "rweb/recommendations/FETCH_REQUEST",
                 E = "rweb/recommendations/FETCH_SUCCESS",
-                S = "rweb/recommendations/FETCH_FAILURE",
-                P = {},
+                P = "rweb/recommendations/FETCH_FAILURE",
+                S = {},
                 v = ({ displayLocation: e, similarToUserId: t }) => e + (t ? `_${t}` : "");
             g.Z.register({
-                [w]: function (e = P, t) {
+                [k]: function (e = S, t) {
                     if (!t?.meta) return e;
                     switch (t.type) {
                         case I: {
                             const n = v(t.meta);
                             return { ...e, [n]: { ...e[n], fetchStatus: b.ZP.LOADING } };
                         }
-                        case S: {
+                        case P: {
                             const n = v(t.meta);
                             return { ...e, [n]: { ...e[n], fetchStatus: b.ZP.FAILED } };
                         }
@@ -1140,11 +1141,11 @@
             const M = [],
                 Z = [],
                 T = (e, { displayLocation: t, similarToUserId: n }) => {
-                    const r = e[w][v({ displayLocation: t, similarToUserId: n })];
+                    const r = e[k][v({ displayLocation: t, similarToUserId: n })];
                     return r && r.recommendations ? r.recommendations : M;
                 },
                 F = (e, { displayLocation: t, similarToUserId: n }) => {
-                    const r = e[w][v({ displayLocation: t, similarToUserId: n })];
+                    const r = e[k][v({ displayLocation: t, similarToUserId: n })];
                     return r ? r.fetchStatus : b.ZP.NONE;
                 },
                 L = (e) => (t, n, r) => {
@@ -1158,9 +1159,9 @@
                               (
                                   (e) =>
                                   (t, n, { api: r, featureSwitches: o }) => {
-                                      const { displayLocation: s, itsInterests: a, limit: l = k, similarToUserId: i } = e,
+                                      const { displayLocation: s, itsInterests: a, limit: l = w, similarToUserId: i } = e,
                                           d = "profile_accounts_sidebar" === s && o.isTrue("rweb_recommendations_sidebar_graphql_enabled");
-                                      return (0, y._O)(t, { request: d ? r.withEndpoint(_).fetchSidebarUserRecommendations : r.withEndpoint(_).fetch, params: { display_location: s, itsInterests: a, limit: l, user_id: i } })({ actionTypes: { REQUEST: I, SUCCESS: E, FAILURE: S }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: s, similarToUserId: i } }, (e) => {
+                                      return (0, y._O)(t, { request: d ? r.withEndpoint(_).fetchSidebarUserRecommendations : r.withEndpoint(_).fetch, params: { display_location: s, itsInterests: a, limit: l, user_id: i } })({ actionTypes: { REQUEST: I, SUCCESS: E, FAILURE: P }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: s, similarToUserId: i } }, (e) => {
                                           if (e && e.entities) return [(0, D.dP)(e.entities)];
                                       });
                                   }
@@ -1246,4 +1247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.7ae23b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.fe76f95a.js.map
