@@ -613,7 +613,7 @@
             n.d(t, { Z: () => l });
             var s = n(202784),
                 r = n(154003),
-                i = n(674132),
+                i = n(332920),
                 o = n.n(i),
                 a = n(457566),
                 d = n(725516),
@@ -714,4 +714,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-63cb1cc4.0deadbaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-63cb1cc4.cb85e01a.js.map

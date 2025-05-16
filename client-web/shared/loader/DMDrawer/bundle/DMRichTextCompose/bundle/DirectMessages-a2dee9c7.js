@@ -1,31 +1,31 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7"],
     {
-        525279: (e) => {
+        144375: (e) => {
             e.exports = { queryId: "iSqhPj9lmMcD95b-_jRzjg", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
-        527154: (e) => {
+        993893: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        503225: (e) => {
+        203024: (e) => {
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        342459: (e) => {
+        211528: (e) => {
             e.exports = { queryId: "but601yjzY_E9JgtpVdTcA", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
-        745735: (e) => {
+        444756: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        485018: (e) => {
+        507539: (e) => {
             e.exports = { queryId: "skiACZKC1GDYli-M8RzEPQ", operationName: "BookmarksAllDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        615626: (e) => {
+        842440: (e) => {
             e.exports = { queryId: "2UTTsO-6zs93XqlEUZPsSg", operationName: "DeleteBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        182247: (e) => {
+        919137: (e) => {
             e.exports = { queryId: "a6kPp1cS1Dgbsjhapz1PNw", operationName: "EditBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        974829: (e) => {
+        295885: (e) => {
             e.exports = { queryId: "2Qbj9XZvtUvyJB4gFwWfaA", operationName: "RemoveTweetFromBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         897338: (e, t, a) => {
@@ -223,23 +223,23 @@
                 r = a(414742),
                 o = a(703710);
             const l = new n.fK.Entity("bookmarkFolders", {});
-            var s = a(527154),
+            var s = a(993893),
                 d = a.n(s),
-                c = a(525279),
+                c = a(144375),
                 u = a.n(c),
-                p = a(342459),
+                p = a(211528),
                 m = a.n(p),
-                b = a(503225),
+                b = a(203024),
                 _ = a.n(b),
-                h = a(745735),
+                h = a(444756),
                 f = a.n(h),
-                g = a(485018),
+                g = a(507539),
                 w = a.n(g),
-                y = a(615626),
+                y = a(842440),
                 v = a.n(y),
-                k = a(182247),
+                k = a(919137),
                 S = a.n(k),
-                A = a(974829),
+                A = a(295885),
                 D = a.n(A),
                 F = a(934309);
             const I = { result: [], entities: {}, slice_info: {} },
@@ -308,7 +308,7 @@
             var n = a(202784),
                 i = a(638236),
                 r = a(811176),
-                o = a(674132),
+                o = a(332920),
                 l = a.n(o),
                 s = a(415506),
                 d = a(516951),
@@ -392,7 +392,7 @@
             var n = a(202784),
                 i = a(154003),
                 r = a(392237),
-                o = a(674132),
+                o = a(332920),
                 l = a.n(o),
                 s = a(937450),
                 d = a(725516);
@@ -414,7 +414,7 @@
                 i = a(202784),
                 r = a(449161),
                 o = a(392237),
-                l = a(674132),
+                l = a(332920),
                 s = a.n(l),
                 d = a(473026),
                 c = a(276259),
@@ -437,7 +437,7 @@
                 r = a(167630),
                 o = a(992942),
                 l = a(392237),
-                s = a(674132),
+                s = a(332920),
                 d = a.n(s),
                 c = a(205074),
                 u = a(364837),
@@ -497,7 +497,7 @@
                 s = a(154003),
                 d = a(392237),
                 c = a(992942),
-                u = a(674132),
+                u = a(332920),
                 p = a.n(u),
                 m = a(678773),
                 b = a(597237),
@@ -534,12 +534,12 @@
             const C = (0, Z.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.16"),
-                            a.e("icons.10"),
+                            a.e("icons.5"),
+                            a.e("icons.28"),
+                            a.e("icons.17"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
+                            a.e("icons.25"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -551,9 +551,10 @@
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
                             a.e("icons.4"),
-                            a.e("icons.26"),
+                            a.e("icons.13"),
+                            a.e("icons.1"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -782,7 +783,7 @@
             a.d(t, { Z: () => s });
             var n = a(202784),
                 i = a(731708),
-                r = a(674132),
+                r = a(332920),
                 o = a.n(r);
             const l = n.createElement(i.ZP, { link: "/settings/safety" }),
                 s = (e) => n.createElement(o().I18NFormatMessage, { $i18n: "d6db6323" }, n.cloneElement(l, null, o().daf6bf02));
@@ -830,7 +831,7 @@
                 r = a(325686),
                 o = a(154003),
                 l = a(392237),
-                s = a(674132),
+                s = a(332920),
                 d = a.n(s),
                 c = a(837020),
                 u = a(666536),
@@ -914,7 +915,7 @@
                 i = a(202784),
                 r = a(530525),
                 o = a(659651),
-                l = a(674132),
+                l = a(332920),
                 s = a.n(l),
                 d = a(632658);
             const c = "image",
@@ -940,7 +941,7 @@
                 i = a(325686),
                 r = a(834324),
                 o = a(392237),
-                l = a(674132),
+                l = a(332920),
                 s = a.n(l),
                 d = a(125363),
                 c = a(390387),
@@ -965,7 +966,7 @@
             a.d(t, { Z: () => S });
             var n = a(202784),
                 i = a(154003),
-                r = a(674132),
+                r = a(332920),
                 o = a.n(r),
                 l = a(74514),
                 s = a(405303),
@@ -1031,7 +1032,7 @@
                 l = a(530732),
                 s = a(992942),
                 d = a(392237),
-                c = a(674132),
+                c = a(332920),
                 u = a.n(c),
                 p = a(630715),
                 m = a(950822),
@@ -1179,7 +1180,7 @@
                 i = a(202784),
                 r = a(476984),
                 o = a.n(r),
-                l = a(674132),
+                l = a(332920),
                 s = a.n(l),
                 d = a(615656),
                 c = a(290402),
@@ -1291,4 +1292,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.1ddf4f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.6efd948a.js.map

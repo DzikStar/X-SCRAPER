@@ -11,7 +11,7 @@
                 o = n(593866),
                 i = n(731708),
                 l = n(392237),
-                u = n(674132),
+                u = n(332920),
                 p = n.n(u);
             const m = p().fe76cacc,
                 d = p().aebb6546;
@@ -27,7 +27,7 @@
                 s = n(351322),
                 r = n(202784),
                 c = n(891198),
-                o = n(674132),
+                o = n(332920),
                 i = n.n(o),
                 l = n(187669),
                 u = n(178372),
@@ -77,4 +77,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.newsEntriesGapHandler.8f186a0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.newsEntriesGapHandler.ffd0a79a.js.map

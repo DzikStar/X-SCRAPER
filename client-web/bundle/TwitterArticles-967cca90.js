@@ -26,7 +26,7 @@
                 o = a(202784),
                 l = a(449161),
                 r = a(392237),
-                i = a(674132),
+                i = a(332920),
                 c = a.n(i),
                 s = a(473026),
                 d = a(276259),
@@ -63,7 +63,7 @@
                 o = a(325686),
                 l = a(855488),
                 r = a(392237),
-                i = a(674132),
+                i = a(332920),
                 c = a.n(i),
                 s = a(666536),
                 d = a(125568),
@@ -409,7 +409,7 @@
                 s = a(977952),
                 d = a(297256),
                 p = a(392237),
-                u = a(674132),
+                u = a(332920),
                 m = a.n(u),
                 b = a(487552),
                 h = a(711223),
@@ -842,7 +842,7 @@
                 p = a(530338),
                 u = a(96083),
                 m = a(392237),
-                b = a(674132),
+                b = a(332920),
                 h = a.n(b),
                 y = a(37475),
                 g = a(167630);
@@ -933,7 +933,7 @@
             var n = a(202784),
                 o = a(731708),
                 l = a(392237),
-                r = a(674132),
+                r = a(332920),
                 i = a.n(r);
             const c = i().ca15dd4e,
                 s = i().bb40bf66,
@@ -951,7 +951,7 @@
                 r = a(470397),
                 i = a(444677),
                 c = a(392237),
-                s = a(674132),
+                s = a(332920),
                 d = a.n(s),
                 p = a(566220);
             const u = d().h107935c,
@@ -971,4 +971,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-967cca90.19c7fdba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-967cca90.559fcc7a.js.map

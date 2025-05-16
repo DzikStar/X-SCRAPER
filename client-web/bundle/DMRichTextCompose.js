@@ -41,7 +41,7 @@
             n.d(t, { Z: () => c });
             var o = n(202784),
                 r = n(154003),
-                i = n(674132),
+                i = n(332920),
                 s = n.n(i),
                 a = n(711223);
             const l = s().h810143c,
@@ -259,7 +259,7 @@
                 Z = n(731708),
                 I = n(154003),
                 B = n(392237),
-                F = n(674132),
+                F = n(332920),
                 P = n.n(F),
                 L = n(913313),
                 D = n(201787),
@@ -378,7 +378,7 @@
                 s = n(731708),
                 a = n(868634),
                 l = n(392237),
-                c = n(674132);
+                c = n(332920);
             const d = n.n(c)().ca9af866;
             function h(e) {
                 const t = [],
@@ -721,4 +721,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.20034bda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.90eb9a3a.js.map

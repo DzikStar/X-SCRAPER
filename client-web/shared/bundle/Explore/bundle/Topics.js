@@ -70,7 +70,7 @@
             var t = n(202784),
                 o = n(99107),
                 r = n(272175),
-                d = n(674132);
+                d = n(332920);
             const l = n.n(d)().c39b0e24,
                 i = ({ deepLink: e }) => {
                     const a = l;
@@ -145,7 +145,7 @@
                 o = n(457311),
                 r = n(708852),
                 d = n(108362),
-                l = n(674132),
+                l = n(332920),
                 i = n.n(l),
                 s = n(769471),
                 c = n(718e3),
@@ -239,9 +239,10 @@
             const B = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.16"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
+                        n.e("icons.22"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -539,7 +540,7 @@
                 d = n(235902),
                 l = n(392237),
                 i = n(325686),
-                s = n(674132),
+                s = n(332920),
                 c = n.n(s),
                 u = n(912021),
                 p = n(516951),
@@ -636,4 +637,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.f9390f2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.12478d2a.js.map

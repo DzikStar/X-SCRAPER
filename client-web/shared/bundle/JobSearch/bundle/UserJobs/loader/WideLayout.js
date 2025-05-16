@@ -404,7 +404,7 @@
         },
         89217: (e, l, a) => {
             a.d(l, { Ju: () => m, Qw: () => y, eo: () => u });
-            var n = a(674132),
+            var n = a(332920),
                 t = a.n(n);
             const r = t().c69eb656,
                 i = t().g46ae43c,
@@ -420,7 +420,7 @@
             a.d(l, { G: () => u, M: () => o });
             a(571372);
             var n = a(301503),
-                t = a(674132),
+                t = a(332920),
                 r = a.n(t),
                 i = a(89217);
             const s = r().b75b8ffd,
@@ -440,4 +440,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.1a3d7c7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.4153108a.js.map

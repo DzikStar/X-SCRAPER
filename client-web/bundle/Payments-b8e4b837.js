@@ -726,7 +726,7 @@
             }
             const ee = n.memo(Q),
                 te = { front: "https://pbs.twimg.com/static/money/card-landscape-front.jpg", back: "https://pbs.twimg.com/static/money/card-landscape-back.jpg" };
-            var ae = a(674132),
+            var ae = a(332920),
                 ne = a.n(ae),
                 re = a(684779),
                 ce = a(717160),
@@ -958,7 +958,7 @@
                 r = a(202784),
                 c = a(107267),
                 s = a(529356),
-                o = a(674132),
+                o = a(332920),
                 i = a.n(o),
                 l = a(883229),
                 d = a(943914),
@@ -990,4 +990,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.a6add34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.956a67ca.js.map

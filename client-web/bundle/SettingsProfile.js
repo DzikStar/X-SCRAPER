@@ -5,7 +5,7 @@
         160664: (e, t, i) => {
             i.d(t, { Z: () => p });
             var a = i(202784),
-                n = i(674132),
+                n = i(332920),
                 r = i.n(n);
             const s = (e, t, i) => new Date(e, t, i),
                 o = r().a46f80ab,
@@ -87,7 +87,7 @@
                 m = i(310452),
                 b = i(731708),
                 g = i(779610),
-                C = i(674132),
+                C = i(332920),
                 S = i.n(C),
                 B = i(908478),
                 P = i(323265),
@@ -186,7 +186,7 @@
             var oe = i(124964),
                 le = i(523561),
                 de = i(195560);
-            const he = (0, le.Z)({ loader: () => Promise.all([i.e("icons.28"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
+            const he = (0, le.Z)({ loader: () => Promise.all([i.e("icons.21"), i.e("icons.24"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
                 ce = S().c119dee8,
                 _e = S().cfd2f35e,
                 pe = S().bbf0afc8,
@@ -614,4 +614,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.7fcd3d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.6a72917a.js.map

@@ -5,7 +5,7 @@
         507334: (e, t, a) => {
             a.d(t, { R: () => D, q: () => A });
             var i = a(202784),
-                _ = a(674132),
+                _ = a(332920),
                 r = a.n(_),
                 n = a(450681),
                 l = a(966886),
@@ -270,4 +270,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22.310eaeba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22.ff6142aa.js.map

@@ -1,7 +1,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.ProfileClusterFollow"],
     {
-        544118: (e) => {
+        785225: (e) => {
             e.exports = { queryId: "m7C1yaNn0AwRtadWb6QQxA", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         864479: (e, t, r) => {
@@ -22,7 +22,7 @@
                 l = r(420412),
                 i = r(844685),
                 c = r(392237),
-                d = r(674132),
+                d = r(332920),
                 u = r.n(d),
                 m = r(837020),
                 p = r(62857),
@@ -110,7 +110,7 @@
                 s = r(202784),
                 n = r(476984),
                 a = r.n(n),
-                l = r(674132),
+                l = r(332920),
                 i = r.n(l),
                 c = r(615656),
                 d = r(290402),
@@ -276,7 +276,7 @@
                 a = r(414742),
                 l = r(125199);
             const i = new n.fK.Entity("recommendations", { user: l.Z }, { idAttribute: (e) => e.user?.rest_id });
-            var c = r(544118),
+            var c = r(785225),
                 d = r.n(c),
                 u = r(304819);
             const m = new n.fK.Entity("recommendations", { user: u.Z }, { idAttribute: (e) => e.user?.id_str });
@@ -373,7 +373,7 @@
             r.d(t, { Z: () => y });
             var o = r(202784),
                 s = r(325686),
-                n = r(674132),
+                n = r(332920),
                 a = r.n(n),
                 l = r(283379),
                 i = r(731708),
@@ -409,7 +409,7 @@
             "use strict";
             r.d(t, { Z: () => k });
             var o = r(202784),
-                s = r(674132),
+                s = r(332920),
                 n = r.n(s),
                 a = r(492140),
                 l = r(720600),
@@ -585,4 +585,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.c1d238ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.3ff0d05a.js.map

@@ -17,7 +17,7 @@
                 c = r(725516),
                 l = r(300497),
                 o = r(615027),
-                i = r(674132),
+                i = r(332920),
                 u = r.n(i),
                 m = r(507651),
                 p = r(652904),
@@ -479,4 +479,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-8ed0fac5.4874564a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-8ed0fac5.1f75986a.js.map

@@ -9,7 +9,7 @@
                 d = r(99107),
                 n = r(688715),
                 l = r(154003),
-                s = r(674132),
+                s = r(332920),
                 i = r.n(s),
                 t = r(261214),
                 c = r(462775),
@@ -101,9 +101,10 @@
             const i = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.16"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.22"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -159,9 +160,10 @@
             const D = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.16"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.22"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -246,7 +248,7 @@
                 i = r(731708),
                 t = r(530525),
                 c = r(392237),
-                u = r(674132),
+                u = r(332920),
                 D = r.n(u),
                 m = r(837020),
                 h = r(144251),
@@ -379,7 +381,7 @@
         177210: (e, a, r) => {
             r.d(a, { Z: () => c });
             var o = r(202784),
-                d = r(674132),
+                d = r(332920),
                 n = r.n(d),
                 l = r(782826),
                 s = r(282559),
@@ -476,4 +478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.5861f84a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.6d11578a.js.map

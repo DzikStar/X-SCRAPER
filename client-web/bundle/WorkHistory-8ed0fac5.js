@@ -22,7 +22,7 @@
             o.d(t, { HM: () => b, Kh: () => m, ZU: () => u, hW: () => _, s1: () => p, uR: () => E });
             var r = o(990242),
                 n = o.n(r),
-                a = o(674132),
+                a = o(332920),
                 l = o.n(a),
                 s = o(520385),
                 i = o(462166);
@@ -143,7 +143,7 @@
                 i = o(107267),
                 c = o(731708),
                 d = o(392237),
-                u = o(674132),
+                u = o(332920),
                 m = o.n(u),
                 p = o(991617),
                 b = o(980407),
@@ -597,7 +597,7 @@
                 a = o(614983),
                 l = o.n(a),
                 s = o(154003),
-                i = o(674132),
+                i = o(332920),
                 c = o.n(i),
                 d = o(952793),
                 u = o(72130),
@@ -758,4 +758,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-8ed0fac5.eac7da7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-8ed0fac5.4aca8b6a.js.map

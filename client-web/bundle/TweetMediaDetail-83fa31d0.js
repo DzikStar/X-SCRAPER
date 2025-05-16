@@ -68,7 +68,7 @@
                 m = n(393058),
                 f = n(537392),
                 p = n(392237),
-                w = n(674132),
+                w = n(332920),
                 h = n.n(w),
                 v = n(610357),
                 _ = n(836397),
@@ -394,4 +394,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-83fa31d0.f960c08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-83fa31d0.6d4e20fa.js.map

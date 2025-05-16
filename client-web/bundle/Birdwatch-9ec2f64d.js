@@ -8,7 +8,7 @@
                 r = n(325686),
                 o = n(457311),
                 l = n(392237),
-                c = n(674132),
+                c = n(332920),
                 i = n.n(c),
                 s = n(252021),
                 d = n(249777),
@@ -38,7 +38,7 @@
                 d = n(721266),
                 p = n(392237),
                 m = n(167630),
-                u = n(674132),
+                u = n(332920),
                 h = n.n(u),
                 f = n(500040),
                 g = n(143778),
@@ -141,7 +141,7 @@
             n.r(t), n.d(t, { SelfUserNotePageRedirect: () => w, default: () => b });
             var a = n(202784),
                 r = n(167630),
-                o = n(674132),
+                o = n(332920),
                 l = n.n(o),
                 c = n(252021),
                 i = n(615027),
@@ -191,7 +191,7 @@
                 u = n(40610),
                 h = n(167630),
                 f = n(392237),
-                g = n(674132),
+                g = n(332920),
                 E = n.n(g),
                 w = n(500040),
                 b = n(227674),
@@ -416,4 +416,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-9ec2f64d.a0f634ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-9ec2f64d.22dac4fa.js.map

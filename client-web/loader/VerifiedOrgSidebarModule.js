@@ -329,7 +329,7 @@
                 c = a(58881),
                 d = a(392237),
                 u = a(868634),
-                m = a(674132),
+                m = a(332920),
                 _ = a.n(m),
                 p = a(58399),
                 g = a(211971),
@@ -437,7 +437,7 @@
         },
         97882: (e, n, a) => {
             a.d(n, { T: () => i, x: () => r });
-            var l = a(674132),
+            var l = a(332920),
                 t = a.n(l);
             const i = { AED: t().d857e44d, ALL: t().cb87e3db, ARS: t().a9d5ffd1, AUD: t().a0e8371d, BAM: t().gcc50dc9, BDT: t().a6a43585, BGN: t().a0cc8f2d, BHD: t().i31c32c5, BRL: t().i7dc69e9, BYR: t().c14a6c03, CAD: t().jaa3d537, CHF: t().a824080b, CLP: t().d9c0bedb, CNY: t().bf8c0613, COP: t().i8163625, CZK: t().adb53ba1, DKK: t().iabf697d, DZD: t().a1a0555b, EGP: t().f266f3d9, EUR: t().a9a8652b, GBP: t().dbf40761, GHS: t().b0d993d9, GTQ: t().ac1308e1, HKD: t().a7889ab3, HRK: t().c614f5cd, HUF: t().i55d57e3, IDR: t().e4b6002b, ILS: t().d28e983b, INR: t().e8c9232d, IQD: t().c8994ae1, ISK: t().f821c2a5, JPY: t().j348b9c9, KES: t().i6f93b9b, KRW: t().c6150bd5, KWD: t().i8921e09, KZT: t().ef239279, LBP: t().hecdb149, MAD: t().fdd039b7, MKD: t().f30c2c37, MXN: t().d9ea7bff, MYR: t().ea3df4b7, NGN: t().jaac21bb, NOK: t().hb435ced, NZD: t().ce699d81, PEN: t().bc56d3d7, PHP: t().f8561913, PKR: t().g6485d53, PLN: t().ff561cc1, QAR: t().b42011d3, RON: t().a6660bcd, RSD: t().f9b80449, RUB: t().gdee4d5d, SAR: t().h36f2103, SEK: t().a19ad037, SGD: t().g713f699, THB: t().ff2e39af, TND: t().be34316d, TRY: t().aef81b75, TWD: t().fcce70a5, TZS: t().jc9d352f, UAH: t().be1cb8c5, UGX: t().j9371501, USD: t().j7d4397d, VEF: t().d61441dd, VND: t().e2a99e97, ZAR: t().f7ce19ab, ZMW: t().b2a0213f },
                 r = ({ amount: e, currencyCode: n = "USD", formatter: a = 1e6, removeTrailingZeros: l = !1, strictAmount: t = !1 }) => {
@@ -499,7 +499,7 @@
                 s = a(154003),
                 o = a(167630),
                 c = a(392237),
-                d = a(674132),
+                d = a(332920),
                 u = a.n(d),
                 m = a(187669),
                 _ = a(736063),
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.392bcf6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.fb9c79ca.js.map

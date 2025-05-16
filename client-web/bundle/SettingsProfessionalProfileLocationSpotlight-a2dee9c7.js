@@ -495,7 +495,7 @@
         },
         359870: (e, l, n) => {
             n.d(l, { Z: () => t, b: () => s });
-            var a = n(674132);
+            var a = n(332920);
             const i = n.n(a)().g33c0564,
                 r = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}$/,
                 s = 385;
@@ -648,4 +648,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-a2dee9c7.1eb8e07a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-a2dee9c7.16b0a6fa.js.map

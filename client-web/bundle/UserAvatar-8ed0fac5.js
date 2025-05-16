@@ -68,7 +68,7 @@
             s(136728), s(574858), s(543673), s(240753), s(128399);
             var a = s(468811),
                 i = s.n(a),
-                o = s(674132),
+                o = s(332920),
                 n = s.n(o),
                 r = s(123702);
             const c = n().c3f04d9c,
@@ -318,4 +318,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8ed0fac5.632ae80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8ed0fac5.bc5e882a.js.map

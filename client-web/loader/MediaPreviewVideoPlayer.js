@@ -6,7 +6,7 @@
             r.r(t), r.d(t, { __DANGEROUS_IMPORT_VIDEOPLAYER__: () => q });
             var n = r(202784),
                 o = r(738584),
-                i = r(674132),
+                i = r(332920),
                 a = r.n(i),
                 s = r(789403),
                 l = r(908629),
@@ -433,7 +433,7 @@
         },
         986460: (e, t, r) => {
             r.d(t, { GS: () => c, Js: () => a, M2: () => s, Nj: () => d, cm: () => u, gF: () => i, iG: () => p, kA: () => l, lO: () => h });
-            var n = r(674132),
+            var n = r(332920),
                 o = r.n(n);
             const i = o().fb236728,
                 a = o().e9bd453e,
@@ -450,7 +450,7 @@
             var n = r(807896),
                 o = r(202784),
                 i = r(325686),
-                a = r(674132),
+                a = r(332920),
                 s = r.n(a),
                 l = r(83515),
                 c = r(926628),
@@ -662,4 +662,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.542e838a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.2533f06a.js.map

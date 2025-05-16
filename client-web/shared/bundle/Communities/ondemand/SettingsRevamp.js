@@ -175,7 +175,7 @@
                 o = n(386802),
                 i = n(108362),
                 a = n(392237),
-                l = n(674132),
+                l = n(332920),
                 s = n.n(l),
                 c = n(187669),
                 d = n(449067),
@@ -1245,4 +1245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.2588947a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.2b79ee4a.js.map

@@ -62,7 +62,7 @@
                 i = o(182056),
                 l = o(879113),
                 a = o(392237),
-                s = o(674132),
+                s = o(332920),
                 c = o.n(s),
                 d = o(968478);
             const u = c().aa6e3300,
@@ -307,7 +307,7 @@
                 g = o(126962),
                 C = o(952428),
                 b = o(530732),
-                f = o(674132),
+                f = o(332920),
                 y = o.n(f),
                 w = o(490359),
                 Z = o(769471),
@@ -371,4 +371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-b308cbaf.a6a6d95a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-b308cbaf.2ee8540a.js.map

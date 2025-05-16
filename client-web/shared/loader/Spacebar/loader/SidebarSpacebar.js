@@ -76,7 +76,7 @@
                 S = r(910626);
             const I = Object.freeze({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
             var B = r(976145),
-                M = r(674132),
+                M = r(332920),
                 R = r.n(M),
                 T = r(292484),
                 z = r(952793),
@@ -332,4 +332,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.397740aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.b301401a.js.map

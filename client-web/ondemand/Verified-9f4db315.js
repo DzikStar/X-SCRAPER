@@ -15,7 +15,7 @@
                 u = r(297256),
                 p = r(524496),
                 m = r(392237),
-                f = r(674132),
+                f = r(332920),
                 h = r.n(f),
                 _ = r(187669),
                 C = r(874111);
@@ -114,7 +114,7 @@
         },
         548797: (e, t, r) => {
             r.d(t, { Ld: () => d, gS: () => s, pB: () => l, yv: () => c });
-            var n = r(674132),
+            var n = r(332920),
                 i = r.n(n),
                 o = r(337394);
             const a = i().b47d123d,
@@ -163,7 +163,7 @@
         685731: (e, t, r) => {
             r.d(t, { Gi: () => C, Mk: () => E, ZV: () => h, aU: () => f, d3: () => T, fS: () => g, pt: () => _ });
             r(202784);
-            var n = r(674132),
+            var n = r(332920),
                 i = r.n(n),
                 o = r(336629),
                 a = r(862695),
@@ -211,7 +211,7 @@
         },
         359870: (e, t, r) => {
             r.d(t, { Z: () => l, b: () => a });
-            var n = r(674132);
+            var n = r(332920);
             const i = r.n(n)().g33c0564,
                 o = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}$/,
                 a = 385;
@@ -309,4 +309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-9f4db315.5247d97a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-9f4db315.2a763b0a.js.map

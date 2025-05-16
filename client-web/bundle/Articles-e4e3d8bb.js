@@ -17,12 +17,12 @@
             const a = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        i.e("icons.23"),
-                        i.e("icons.19"),
+                        i.e("icons.0"),
                         i.e("modules.common-e907d115"),
                         i.e("modules.common-e019dbda"),
+                        i.e("icons.14"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -68,7 +68,7 @@
             i.d(t, { $f: () => A, KV: () => _, LI: () => L, SC: () => I, Vt: () => y, ed: () => C, op: () => v });
             var r = i(202784),
                 n = i(190286),
-                o = i(674132),
+                o = i(332920),
                 a = i.n(o),
                 s = i(616894),
                 d = i(314948),
@@ -121,12 +121,12 @@
         },
         712816: (e, t, i) => {
             i.d(t, { d: () => n });
-            var r = i(674132);
+            var r = i(332920);
             const n = { defaultToast: { text: i.n(r)().b6878b0a }, showToast: !0 };
         },
         879596: (e, t, i) => {
             i.d(t, { D: () => n });
-            var r = i(674132);
+            var r = i(332920);
             const n = { defaultToast: { text: i.n(r)().ca96fe6e }, showToast: !0 };
         },
         3138: (e, t, i) => {
@@ -146,7 +146,7 @@
             i.d(t, { OX: () => p, Od: () => l, PN: () => m, uq: () => c, wR: () => E });
             var r = i(251067),
                 n = i(522171),
-                o = i(674132),
+                o = i(332920),
                 a = i.n(o),
                 s = i(912021),
                 d = i(323265);
@@ -1051,7 +1051,7 @@
                 n = i(811176),
                 o = i(247056),
                 a = i(425376),
-                s = i(674132),
+                s = i(332920),
                 d = i.n(s),
                 c = i(517747),
                 l = i(813681),
@@ -1199,7 +1199,7 @@
                 o = (i(585488), i(712696)),
                 a = i.n(o),
                 s = i(457311),
-                d = i(674132),
+                d = i(332920),
                 c = i.n(d),
                 l = i(883229),
                 u = i(952793),
@@ -1232,7 +1232,7 @@
                 o = i(107267),
                 a = i(731708),
                 s = i(392237),
-                d = i(674132),
+                d = i(332920),
                 c = i.n(d),
                 l = i(791632),
                 u = i(253493),
@@ -1293,4 +1293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.4511467a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.298f313a.js.map

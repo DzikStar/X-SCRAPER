@@ -11,23 +11,23 @@
             var a = r(506899),
                 i = r(414742),
                 s = r(679129),
-                o = r(594771),
+                o = r(390088),
                 l = r.n(o),
-                n = r(551e3),
+                n = r(311661),
                 c = r.n(n),
-                d = r(486962),
+                d = r(908662),
                 h = r.n(d),
-                u = r(207318),
+                u = r(16162),
                 p = r.n(u),
-                g = r(244275),
+                g = r(280045),
                 b = r.n(g),
-                y = r(51864),
+                y = r(221234),
                 m = r.n(y),
-                _ = r(118869),
+                _ = r(607696),
                 f = r.n(_),
-                C = r(342454),
+                C = r(40577),
                 E = r.n(C),
-                v = r(134871),
+                v = r(244016),
                 D = r.n(v),
                 Z = r(934309);
             const I = ({ apiClient: e, featureSwitches: t }) => ({
@@ -280,4 +280,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-6107ac1a.03deef5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-6107ac1a.6cf58fea.js.map

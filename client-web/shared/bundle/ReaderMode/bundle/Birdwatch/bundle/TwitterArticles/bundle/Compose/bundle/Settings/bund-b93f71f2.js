@@ -51,7 +51,7 @@
                 w = i(990804),
                 p = i(190286),
                 k = i(392237),
-                b = i(674132),
+                b = i(332920),
                 C = i.n(b),
                 g = i(912021),
                 y = i(123751),
@@ -900,4 +900,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2.4c14c52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2.96249cba.js.map

@@ -1,7 +1,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.WideLayout"],
     {
-        544118: (e) => {
+        785225: (e) => {
             e.exports = { queryId: "m7C1yaNn0AwRtadWb6QQxA", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         616753: (e, t, n) => {
@@ -16,7 +16,7 @@
             var r = n(202784),
                 o = n(638236),
                 s = n(811176),
-                a = n(674132),
+                a = n(332920),
                 l = n.n(a),
                 i = n(415506),
                 d = n(516951),
@@ -233,7 +233,7 @@
             n.d(t, { Z: () => I });
             var r = n(202784),
                 o = n(154003),
-                s = n(674132),
+                s = n(332920),
                 a = n.n(s),
                 l = n(74514),
                 i = n(405303),
@@ -295,7 +295,7 @@
             var r = n(202784),
                 o = n(476984),
                 s = n.n(o),
-                a = n(674132),
+                a = n(332920),
                 l = n.n(a),
                 i = n(325686),
                 d = n(844685),
@@ -523,7 +523,7 @@
                 b = n(154003),
                 D = n(708852),
                 w = n(392237),
-                k = n(674132),
+                k = n(332920),
                 I = n.n(k),
                 E = n(293723),
                 S = n(399398),
@@ -583,7 +583,7 @@
                 o = n(202784),
                 s = n(476984),
                 a = n.n(s),
-                l = n(674132),
+                l = n(332920),
                 i = n.n(l),
                 d = n(615656),
                 c = n(290402),
@@ -685,7 +685,7 @@
             var r = n(202784),
                 o = n(325686),
                 s = n(392237),
-                a = n(674132),
+                a = n(332920),
                 l = n.n(a),
                 i = n(290402),
                 d = n(844685),
@@ -907,13 +907,13 @@
         545334: (e, t, n) => {
             "use strict";
             n.d(t, { d: () => o });
-            var r = n(674132);
+            var r = n(332920);
             const o = n.n(r)().gf5e9ea6;
         },
         916585: (e, t, n) => {
             "use strict";
             n.d(t, { k: () => a });
-            var r = n(674132),
+            var r = n(332920),
                 o = n.n(r),
                 s = n(437358);
             const a = (e, t) => {
@@ -926,7 +926,7 @@
             "use strict";
             n.d(t, { Aq: () => u, FK: () => y, GS: () => l, N1: () => h, PY: () => m, X6: () => b, cm: () => i });
             n(202784);
-            var r = n(674132),
+            var r = n(332920),
                 o = n.n(r),
                 s = n(391366),
                 a = n(40904);
@@ -951,7 +951,7 @@
             "use strict";
             n.d(t, { l: () => c });
             n(202784);
-            var r = n(674132),
+            var r = n(332920),
                 o = n.n(r),
                 s = n(224823);
             const a = o().b3036480,
@@ -974,7 +974,7 @@
         48886: (e, t, n) => {
             "use strict";
             n.d(t, { q: () => o });
-            var r = n(674132);
+            var r = n(332920);
             const o = { defaultToast: { text: n.n(r)().a30b63da }, showToast: !0 };
         },
         860174: (e, t, n) => {
@@ -1076,7 +1076,7 @@
                 a = n(414742),
                 l = n(125199);
             const i = new s.fK.Entity("recommendations", { user: l.Z }, { idAttribute: (e) => e.user?.rest_id });
-            var d = n(544118),
+            var d = n(785225),
                 c = n.n(d),
                 u = n(304819);
             const m = new s.fK.Entity("recommendations", { user: u.Z }, { idAttribute: (e) => e.user?.id_str });
@@ -1246,4 +1246,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.e891647a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.ff0c260a.js.map

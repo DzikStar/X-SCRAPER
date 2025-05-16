@@ -53,7 +53,7 @@
                 v = a(638236),
                 I = a(879113),
                 _ = a(537392),
-                w = a(674132),
+                w = a(332920),
                 k = a.n(w),
                 P = a(717160),
                 A = a(841972),
@@ -799,7 +799,7 @@
                 n = a(325686),
                 l = a(879113),
                 r = a(392237),
-                o = a(674132),
+                o = a(332920),
                 c = a.n(o),
                 s = a(323265),
                 d = a(19640),
@@ -896,4 +896,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-dee3c9bb.9cf831ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-dee3c9bb.8ec70eba.js.map

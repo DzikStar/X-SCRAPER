@@ -76,7 +76,7 @@
                 i = a(731708),
                 o = a(601413),
                 c = a(392237),
-                u = a(674132),
+                u = a(332920),
                 d = a.n(u),
                 m = a(324948),
                 p = a(252021),
@@ -687,4 +687,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.44174e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.fa0eaa0a.js.map

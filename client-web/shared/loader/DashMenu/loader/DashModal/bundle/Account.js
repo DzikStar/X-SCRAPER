@@ -24,7 +24,7 @@
                 a = n(537392),
                 s = n(688715),
                 o = n(868634),
-                r = n(674132),
+                r = n(332920),
                 c = n.n(r),
                 u = n(1753),
                 d = n(625271),
@@ -273,4 +273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal~bundle.Account.3ae2f2ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal~bundle.Account.1ce938ba.js.map

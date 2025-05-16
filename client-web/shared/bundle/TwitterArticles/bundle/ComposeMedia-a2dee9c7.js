@@ -10,7 +10,7 @@
                 d = a(167630),
                 s = a(548485),
                 l = a(392237),
-                o = a(674132),
+                o = a(332920),
                 c = a.n(o),
                 u = a(205074),
                 h = a(653843);
@@ -50,7 +50,7 @@
                 r = a(167630),
                 d = a(992942),
                 s = a(392237),
-                l = a(674132),
+                l = a(332920),
                 o = a.n(l),
                 c = a(205074),
                 u = a(364837),
@@ -109,7 +109,7 @@
                 l = a(154003),
                 o = a(392237),
                 c = a(992942),
-                u = a(674132),
+                u = a(332920),
                 h = a.n(u),
                 p = a(678773),
                 m = a(597237),
@@ -146,12 +146,12 @@
             const x = (0, T.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.16"),
-                            a.e("icons.10"),
+                            a.e("icons.5"),
+                            a.e("icons.28"),
+                            a.e("icons.17"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
+                            a.e("icons.25"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -163,9 +163,10 @@
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
                             a.e("icons.4"),
-                            a.e("icons.26"),
+                            a.e("icons.13"),
+                            a.e("icons.1"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -356,7 +357,7 @@
                 d = (a(136728), a(325686)),
                 s = a(154003),
                 l = a(731708),
-                o = a(674132),
+                o = a(332920),
                 c = a.n(o),
                 u = a(894966),
                 h = a(568320),
@@ -1056,4 +1057,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7.d8fcdaba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7.23e825fa.js.map

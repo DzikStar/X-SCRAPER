@@ -35,7 +35,7 @@
                 r = a(224162),
                 o = a(853435),
                 c = a(879113),
-                d = a(674132),
+                d = a(332920),
                 u = a.n(d),
                 g = a(518532),
                 h = a(176632),
@@ -202,7 +202,7 @@
                 i = a(853435),
                 l = a(451051),
                 r = a(392237),
-                o = a(674132),
+                o = a(332920),
                 c = a.n(o),
                 d = a(912021),
                 u = a(401388),
@@ -270,4 +270,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.cfa7faea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.7a1d452a.js.map

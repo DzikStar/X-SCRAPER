@@ -199,7 +199,7 @@
                 d = (a(585488), a(107267)),
                 u = a(154003),
                 p = a(392237),
-                m = a(674132),
+                m = a(332920),
                 g = a.n(m),
                 y = a(980407),
                 b = a(724345),
@@ -495,4 +495,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsManage.f0c5a5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsManage.087ec2ea.js.map

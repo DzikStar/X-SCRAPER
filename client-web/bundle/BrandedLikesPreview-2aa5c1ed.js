@@ -6,7 +6,7 @@
             n.d(t, { Z: () => C });
             var r = n(202784),
                 i = n(325686),
-                a = n(674132),
+                a = n(332920),
                 o = n.n(a),
                 s = n(731708),
                 d = n(235902),
@@ -190,7 +190,7 @@
         449945: (e, t, n) => {
             n.d(t, { Z: () => c });
             var r = n(202784),
-                i = n(674132),
+                i = n(332920),
                 a = n.n(i),
                 o = n(54989);
             const s = a().b05a39b2;
@@ -225,7 +225,7 @@
             var r = n(807896),
                 i = n(202784),
                 a = n(325686),
-                o = n(674132),
+                o = n(332920),
                 s = n.n(o),
                 d = n(2138),
                 l = n(370751),
@@ -455,4 +455,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-2aa5c1ed.0813d1fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-2aa5c1ed.324d9dba.js.map

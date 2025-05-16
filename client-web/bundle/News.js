@@ -49,7 +49,7 @@
             n.d(t, { Z: () => b });
             var i = n(202784),
                 r = n(457311),
-                a = n(674132),
+                a = n(332920),
                 o = n.n(a),
                 l = n(912021),
                 s = n(680961),
@@ -123,7 +123,7 @@
                 o = n(154003),
                 l = n(688715),
                 s = n(392237),
-                c = n(674132),
+                c = n(332920),
                 d = n.n(c),
                 p = n(177826),
                 m = n(899667),
@@ -210,4 +210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.News.940112da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.News.ea22b16a.js.map

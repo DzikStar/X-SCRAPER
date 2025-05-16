@@ -120,7 +120,7 @@
                 r = a(325686),
                 n = a(392237),
                 c = a(731708),
-                i = a(674132),
+                i = a(332920),
                 l = a.n(i),
                 s = a(323265),
                 d = a(290402),
@@ -359,7 +359,7 @@
                 r = a(325686),
                 n = a(154003),
                 c = a(392237),
-                i = a(674132),
+                i = a(332920),
                 l = a.n(i),
                 s = a(899174),
                 d = a(912021),
@@ -604,4 +604,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-c6fe4ea4.3e7ce39a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-c6fe4ea4.e68c4b9a.js.map

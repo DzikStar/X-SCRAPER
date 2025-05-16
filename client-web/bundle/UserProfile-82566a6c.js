@@ -48,7 +48,7 @@
                 o = (n(585488), n(277660)),
                 c = n.n(o),
                 i = n(154003),
-                l = n(674132),
+                l = n(332920),
                 d = n.n(l),
                 m = n(149170),
                 u = n(90411);
@@ -84,7 +84,7 @@
         930351: (e, t, n) => {
             n.d(t, { Z: () => v });
             var r = n(202784),
-                s = n(674132),
+                s = n(332920),
                 a = n.n(s),
                 o = n(163889),
                 c = n(42508);
@@ -116,7 +116,7 @@
             var r = n(202784),
                 s = n(688715),
                 a = n(731708),
-                o = n(674132),
+                o = n(332920),
                 c = n.n(o),
                 i = n(416699);
             const l = c().bd598c70,
@@ -132,7 +132,7 @@
             n.d(t, { Z: () => u, i: () => m });
             var r = n(202784),
                 s = n(731708),
-                a = n(674132),
+                a = n(332920),
                 o = n.n(a),
                 c = n(686689),
                 i = n(416699);
@@ -152,7 +152,7 @@
                 s = n(310452),
                 a = n(731708),
                 o = n(354149),
-                c = n(674132),
+                c = n(332920),
                 i = n.n(c),
                 l = n(416699);
             const d = (e) => {
@@ -180,7 +180,7 @@
                 c = n(354149),
                 i = n(420412),
                 l = n(392237),
-                d = n(674132);
+                d = n(332920);
             const m = n.n(d)().gbf342a4,
                 u = (e) => {
                     const { user: t } = e;
@@ -263,4 +263,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-82566a6c.2cc5f7ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-82566a6c.11f3006a.js.map

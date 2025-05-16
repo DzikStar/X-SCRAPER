@@ -8,7 +8,7 @@
             var r = t(202784),
                 n = t(638236),
                 s = t(811176),
-                a = t(674132),
+                a = t(332920),
                 i = t.n(a),
                 l = t(415506),
                 d = t(516951),
@@ -109,7 +109,7 @@
             t.d(o, { Z: () => E });
             var r = t(202784),
                 n = t(154003),
-                s = t(674132),
+                s = t(332920),
                 a = t.n(s),
                 i = t(74514),
                 l = t(405303),
@@ -247,12 +247,12 @@
         },
         545334: (e, o, t) => {
             t.d(o, { d: () => n });
-            var r = t(674132);
+            var r = t(332920);
             const n = t.n(r)().gf5e9ea6;
         },
         916585: (e, o, t) => {
             t.d(o, { k: () => a });
-            var r = t(674132),
+            var r = t(332920),
                 n = t.n(r),
                 s = t(437358);
             const a = (e, o) => {
@@ -264,7 +264,7 @@
         847607: (e, o, t) => {
             t.d(o, { Aq: () => u, FK: () => _, GS: () => i, N1: () => h, PY: () => p, X6: () => g, cm: () => l });
             t(202784);
-            var r = t(674132),
+            var r = t(332920),
                 n = t.n(r),
                 s = t(391366),
                 a = t(40904);
@@ -288,7 +288,7 @@
         417714: (e, o, t) => {
             t.d(o, { l: () => c });
             t(202784);
-            var r = t(674132),
+            var r = t(332920),
                 n = t.n(r),
                 s = t(224823);
             const a = n().b3036480,
@@ -303,7 +303,7 @@
         },
         48886: (e, o, t) => {
             t.d(o, { q: () => n });
-            var r = t(674132);
+            var r = t(332920);
             const n = { defaultToast: { text: t.n(r)().a30b63da }, showToast: !0 };
         },
         860174: (e, o, t) => {
@@ -552,7 +552,7 @@
             t.r(o), t.d(o, { FollowersScreen: () => q, default: () => V });
             var r = t(202784),
                 n = t(457311),
-                s = t(674132),
+                s = t(332920),
                 a = t.n(s),
                 i = t(912021),
                 l = t(718e3),
@@ -728,7 +728,7 @@
                 a = t(235902),
                 i = t(392237),
                 l = t(325686),
-                d = t(674132),
+                d = t(332920),
                 c = t.n(d),
                 u = t(912021),
                 p = t(516951),
@@ -825,4 +825,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.7cac035a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.20d00c9a.js.map

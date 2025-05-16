@@ -64,7 +64,7 @@
                 c = n(108475),
                 o = n(157396),
                 d = n(392237),
-                p = n(674132),
+                p = n(332920),
                 u = n.n(p),
                 l = n(323265),
                 g = n(683799),
@@ -443,4 +443,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.79c0f1fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.8a0f030a.js.map

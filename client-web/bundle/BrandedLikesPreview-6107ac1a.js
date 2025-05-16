@@ -8,7 +8,7 @@
                 o = r(325686),
                 s = r(154003),
                 i = r(392237),
-                a = r(674132),
+                a = r(332920),
                 l = r.n(a),
                 c = r(837020),
                 u = r(718e3),
@@ -227,7 +227,7 @@
             w.defaultProps = { userAvatarSize: "jumbo", withUserAvatar: !0 };
             const h = c.default.create((e) => ({ root: { padding: e.spaces.space16 }, row: { flexDirection: "row", justifyContent: "space-between" }, marginTop12: { marginTop: e.spaces.space12 }, marginTop8: { marginTop: e.spaces.space8 }, marginTop4: { marginTop: e.spaces.space4 }, minHeight: { minHeight: e.spaces.space20 }, followButtonAtBottom: { justifyContent: "center", marginTop: e.spaces.space12 }, grokButton: { justifyContent: "center", marginTop: e.spaces.space16 } }));
             var _ = r(807896);
-            var g = r(674132);
+            var g = r(332920);
             const v = r.n(g)().ef633578;
             class E extends n.PureComponent {
                 render() {
@@ -247,7 +247,7 @@
         646797: (e, t, r) => {
             r.d(t, { Z: () => l });
             var n = r(202784),
-                o = r(674132),
+                o = r(332920),
                 s = r.n(o),
                 i = r(891198),
                 a = r(98538);
@@ -276,4 +276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-6107ac1a.8d8cc3da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-6107ac1a.9ee14f8a.js.map

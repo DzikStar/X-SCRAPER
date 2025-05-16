@@ -119,7 +119,7 @@
             var r = i(807896),
                 a = i(202784),
                 o = i(325686),
-                n = i(674132),
+                n = i(332920),
                 s = i.n(n),
                 l = i(803810),
                 d = i(731708),
@@ -422,7 +422,7 @@
             i.d(t, { Z: () => E });
             var r = i(202784),
                 a = i(325686),
-                o = i(674132),
+                o = i(332920),
                 n = i.n(o),
                 s = i(952428),
                 l = i(352924),
@@ -567,7 +567,7 @@
             i.d(t, { Z: () => w });
             var r = i(202784),
                 a = i(325686),
-                o = i(674132),
+                o = i(332920),
                 n = i.n(o),
                 s = i(544367),
                 l = i(731708),
@@ -622,7 +622,7 @@
             i.d(t, { Z: () => _ });
             var r = i(202784),
                 a = i(325686),
-                o = i(674132),
+                o = i(332920),
                 n = i.n(o),
                 s = i(731708),
                 l = i(470397),
@@ -662,4 +662,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0a1983f3.93391b2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0a1983f3.5516d80a.js.map

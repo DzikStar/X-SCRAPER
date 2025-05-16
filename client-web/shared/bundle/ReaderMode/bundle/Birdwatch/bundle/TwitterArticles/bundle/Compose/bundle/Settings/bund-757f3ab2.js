@@ -46,7 +46,7 @@
                 V = i(98538),
                 W = i(650028),
                 z = i(409981),
-                q = i(674132),
+                q = i(332920),
                 G = i.n(q),
                 Q = i(368761),
                 $ = i(99223),
@@ -900,4 +900,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.b5ef106a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.1e4ee7ca.js.map

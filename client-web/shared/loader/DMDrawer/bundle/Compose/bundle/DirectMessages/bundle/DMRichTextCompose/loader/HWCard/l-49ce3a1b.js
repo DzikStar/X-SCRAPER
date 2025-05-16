@@ -67,7 +67,7 @@
             o(136728);
             var n = o(202784),
                 a = o(325686),
-                i = o(674132),
+                i = o(332920),
                 r = o.n(i),
                 s = o(174326),
                 l = o(879891),
@@ -210,7 +210,7 @@
             o(136728);
             var n = o(202784),
                 a = o(325686),
-                i = o(674132),
+                i = o(332920),
                 r = o.n(i),
                 s = o(992942),
                 l = o(530732),
@@ -401,7 +401,7 @@
                 a = o(325686),
                 i = o(392237),
                 r = o(538619),
-                s = o(674132),
+                s = o(332920),
                 l = o.n(s),
                 d = o(833458),
                 c = o(731708);
@@ -495,4 +495,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-49ce3a1b.43c1da1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-49ce3a1b.feffae7a.js.map

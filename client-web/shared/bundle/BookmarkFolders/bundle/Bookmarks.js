@@ -1,31 +1,31 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.BookmarkFolders~bundle.Bookmarks"],
     {
-        525279: (e) => {
+        144375: (e) => {
             e.exports = { queryId: "iSqhPj9lmMcD95b-_jRzjg", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
-        527154: (e) => {
+        993893: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        503225: (e) => {
+        203024: (e) => {
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        342459: (e) => {
+        211528: (e) => {
             e.exports = { queryId: "but601yjzY_E9JgtpVdTcA", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
-        745735: (e) => {
+        444756: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        485018: (e) => {
+        507539: (e) => {
             e.exports = { queryId: "skiACZKC1GDYli-M8RzEPQ", operationName: "BookmarksAllDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        615626: (e) => {
+        842440: (e) => {
             e.exports = { queryId: "2UTTsO-6zs93XqlEUZPsSg", operationName: "DeleteBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        182247: (e) => {
+        919137: (e) => {
             e.exports = { queryId: "a6kPp1cS1Dgbsjhapz1PNw", operationName: "EditBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        974829: (e) => {
+        295885: (e) => {
             e.exports = { queryId: "2Qbj9XZvtUvyJB4gFwWfaA", operationName: "RemoveTweetFromBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         403911: (e, t, o) => {
@@ -36,23 +36,23 @@
                 i = o(414742),
                 a = o(703710);
             const s = new r.fK.Entity("bookmarkFolders", {});
-            var l = o(527154),
+            var l = o(993893),
                 c = o.n(l),
-                d = o(525279),
+                d = o(144375),
                 _ = o.n(d),
-                m = o(342459),
+                m = o(211528),
                 u = o.n(m),
-                p = o(503225),
+                p = o(203024),
                 b = o.n(p),
-                h = o(745735),
+                h = o(444756),
                 k = o.n(h),
-                f = o(485018),
+                f = o(507539),
                 w = o.n(f),
-                E = o(615626),
+                E = o(842440),
                 y = o.n(E),
-                g = o(182247),
+                g = o(919137),
                 F = o.n(g),
-                v = o(974829),
+                v = o(295885),
                 T = o.n(v),
                 S = o(934309);
             const I = { result: [], entities: {}, slice_info: {} },
@@ -121,7 +121,7 @@
                 n = o(466999),
                 i = o(325686),
                 a = o(392237),
-                s = o(674132);
+                s = o(332920);
             const l = o.n(s)().e5b0063d;
             let c = 0;
             class d extends r.Component {
@@ -154,7 +154,7 @@
                 n = (o(136728), o(202784)),
                 i = o(392237),
                 a = o(154003),
-                s = o(674132),
+                s = o(332920),
                 l = o.n(s),
                 c = o(898361);
             const d = i.default.create((e) => ({ button: { marginEnd: e.spaces.space4 }, icon: { width: i.default.theme.fontSizes.title3, height: i.default.theme.fontSizes.title3 } })),
@@ -270,7 +270,7 @@
                 n = o(325686),
                 i = o(371344),
                 a = o(392237),
-                s = o(674132),
+                s = o(332920),
                 l = o.n(s),
                 c = o(956272),
                 d = o(666536);
@@ -378,7 +378,7 @@
             o.d(t, { Z: () => f });
             var r = o(202784),
                 n = o(555874),
-                i = o(674132),
+                i = o(332920),
                 a = o.n(i),
                 s = o(290402),
                 l = o(965245),
@@ -746,4 +746,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.a890eb5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.27d7a5ba.js.map

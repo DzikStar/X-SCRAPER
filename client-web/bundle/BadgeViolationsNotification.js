@@ -47,7 +47,7 @@
                 n = o(946847),
                 l = o(879113),
                 s = o(392237),
-                d = o(674132),
+                d = o(332920),
                 c = o.n(d),
                 p = o(849353),
                 h = o(350506),
@@ -119,4 +119,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BadgeViolationsNotification.c60348ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BadgeViolationsNotification.a86a80ba.js.map

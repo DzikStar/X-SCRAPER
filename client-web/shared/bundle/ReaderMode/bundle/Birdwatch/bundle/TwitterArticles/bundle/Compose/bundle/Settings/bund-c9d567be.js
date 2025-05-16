@@ -155,7 +155,7 @@
             n.d(t, { Z: () => h });
             var r = n(202784),
                 o = n(325686),
-                i = n(674132),
+                i = n(332920),
                 a = n.n(i),
                 l = n(815858),
                 s = n(731708),
@@ -242,7 +242,7 @@
         779802: (e, t, n) => {
             n.d(t, { $u: () => v, Ak: () => Z, KJ: () => k, LI: () => S, P7: () => g, PW: () => C, QF: () => b, Qm: () => w, Tr: () => $, b$: () => h, db: () => T, et: () => E, fR: () => p, iH: () => x, lD: () => y, su: () => D, u4: () => P, wX: () => I });
             var r = n(202784),
-                o = n(674132),
+                o = n(332920),
                 i = n.n(o),
                 a = n(394123),
                 l = n(856661),
@@ -325,7 +325,7 @@
             var r = n(202784),
                 o = n(325686),
                 i = n(530732),
-                a = n(674132),
+                a = n(332920),
                 l = n.n(a),
                 s = n(731708),
                 c = n(966582),
@@ -436,4 +436,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be.5139848a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be.b685941a.js.map

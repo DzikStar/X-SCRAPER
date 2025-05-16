@@ -4,12 +4,12 @@
     {
         545334: (e, t, i) => {
             i.d(t, { d: () => a });
-            var n = i(674132);
+            var n = i(332920);
             const a = i.n(n)().gf5e9ea6;
         },
         350968: (e, t, i) => {
             i.d(t, { I9: () => o, rg: () => I, sp: () => E });
-            var n = i(674132),
+            var n = i(332920),
                 a = i.n(n);
             const r = a().eaae42ce,
                 s = a().h032d096,
@@ -23,7 +23,7 @@
         },
         916585: (e, t, i) => {
             i.d(t, { k: () => s });
-            var n = i(674132),
+            var n = i(332920),
                 a = i.n(n),
                 r = i(437358);
             const s = (e, t) => {
@@ -35,7 +35,7 @@
         847607: (e, t, i) => {
             i.d(t, { Aq: () => l, FK: () => A, GS: () => d, N1: () => I, PY: () => T, X6: () => y, cm: () => c });
             i(202784);
-            var n = i(674132),
+            var n = i(332920),
                 a = i.n(n),
                 r = i(391366),
                 s = i(40904);
@@ -58,7 +58,7 @@
         },
         142156: (e, t, i) => {
             i.d(t, { w: () => a });
-            var n = i(674132);
+            var n = i(332920);
             const a = { defaultToast: { text: i.n(n)().ae0c5fbe }, showToast: !0 };
         },
         572657: (e, t, i) => {
@@ -365,4 +365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-8ed0fac5.9815adfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-8ed0fac5.f0c644ba.js.map

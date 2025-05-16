@@ -10,7 +10,7 @@
                 o = n(840590),
                 s = n(30899),
                 i = n(392237),
-                c = n(674132),
+                c = n(332920),
                 d = n.n(c),
                 u = n(187669),
                 m = n(81233),
@@ -309,7 +309,7 @@
                 i = n(30899),
                 c = n(154003),
                 d = n(392237),
-                u = n(674132),
+                u = n(332920),
                 m = n.n(u),
                 p = n(401388),
                 b = n(699910),
@@ -355,7 +355,7 @@
                 a = n(325686),
                 l = n(834324),
                 o = n(392237),
-                s = n(674132),
+                s = n(332920),
                 i = n.n(s),
                 c = n(621416),
                 d = n(175856);
@@ -376,7 +376,7 @@
                 s = n(392237),
                 i = n(857378),
                 c = n(688715),
-                d = n(674132),
+                d = n(332920),
                 u = n.n(d);
             const m = (0, c.ju)("https://help.x.com/rules-and-policies/twitter-rules"),
                 p = r.createElement(u().I18NFormatMessage, { $i18n: "j33cc663" }, r.createElement(l.ZP, { link: m, withInteractiveStyling: !1 }, u().h9526e03)),
@@ -461,7 +461,7 @@
                 l = n(325686),
                 o = n(154003),
                 s = n(392237),
-                i = n(674132),
+                i = n(332920),
                 c = n.n(i),
                 d = n(837020),
                 u = n(666536),
@@ -544,7 +544,7 @@
                 a = n(325686),
                 l = n(834324),
                 o = n(392237),
-                s = n(674132),
+                s = n(332920),
                 i = n.n(s),
                 c = n(125363),
                 d = n(390387),
@@ -568,7 +568,7 @@
             n.d(t, { Z: () => u });
             var r = n(202784),
                 a = n(529356),
-                l = n(674132),
+                l = n(332920),
                 o = n.n(l),
                 s = n(621416),
                 i = n(443781);
@@ -598,4 +598,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-07b0deba.bf6a62da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-07b0deba.437ebeba.js.map

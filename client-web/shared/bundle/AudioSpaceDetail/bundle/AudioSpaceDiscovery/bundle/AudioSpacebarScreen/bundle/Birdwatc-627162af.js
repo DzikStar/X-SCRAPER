@@ -52,7 +52,7 @@
             var c = e(552322);
             const s = (l) => (0, c.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, c.jsx)("path", { d: "M4.5 2C3.12 2 2 3.12 2 4.5v11C2 16.88 3.12 18 4.5 18h11c1.38 0 2.5-1.12 2.5-2.5v-11C18 3.12 16.88 2 15.5 2h-11zM4 4.5c0-.28.22-.5.5-.5h11c.28 0 .5.22.5.5v11c0 .28-.22.5-.5.5h-11c-.28 0-.5-.22-.5-.5v-11zm16 15V6.05c1.14.23 2 1.24 2 2.45v11c0 1.38-1.12 2.5-2.5 2.5h-11c-1.21 0-2.22-.86-2.45-2H19.5c.28 0 .5-.22.5-.5z" }) });
         },
-        865372: (l, h, e) => {
+        587541: (l, h, e) => {
             e.d(h, { Z: () => s });
             var c = e(552322);
             const s = (l) => (0, c.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, c.jsx)("path", { d: "M2 4.5C2 3.12 3.12 2 4.5 2h11C16.88 2 18 3.12 18 4.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 18 2 16.88 2 15.5v-11zm18 1.55V19.5c0 .28-.22.5-.5.5H6.05c.23 1.14 1.24 2 2.45 2h11c1.38 0 2.5-1.12 2.5-2.5v-11c0-1.21-.86-2.22-2-2.45z" }) });
@@ -259,4 +259,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af.247d98fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af.538fe53a.js.map

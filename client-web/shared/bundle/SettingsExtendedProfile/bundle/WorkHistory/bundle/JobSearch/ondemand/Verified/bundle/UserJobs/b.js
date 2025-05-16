@@ -33,7 +33,7 @@
         779802: (e, n, t) => {
             t.d(n, { $u: () => z, Ak: () => I, KJ: () => D, LI: () => x, P7: () => b, PW: () => S, QF: () => p, Qm: () => k, Tr: () => E, b$: () => g, db: () => T, et: () => w, fR: () => h, iH: () => v, lD: () => $, su: () => y, u4: () => H, wX: () => P });
             var o = t(202784),
-                r = t(674132),
+                r = t(332920),
                 l = t.n(r),
                 i = t(394123),
                 a = t(856661),
@@ -141,4 +141,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~bundle.JobSearch~ondemand.Verified~bundle.UserJobs~b.b6e0956a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~bundle.JobSearch~ondemand.Verified~bundle.UserJobs~b.e46c026a.js.map

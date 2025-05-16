@@ -1,31 +1,31 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.TwitterArticles-9f4db315", "loader.FeedbackSheet"],
     {
-        594771: (e) => {
+        390088: (e) => {
             e.exports = { queryId: "CHRU37dMKqurci7J0HeTkQ", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        551e3: (e) => {
+        311661: (e) => {
             e.exports = { queryId: "e4lWqB6m2TA8Fn_j9L9xEA", operationName: "ArticleEntityDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        486962: (e) => {
+        908662: (e) => {
             e.exports = { queryId: "R3LLZzYKAu7JEPZLG20Slg", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        207318: (e) => {
+        16162: (e) => {
             e.exports = { queryId: "65mW6SeItVmeUq2lTNquhQ", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        244275: (e) => {
+        280045: (e) => {
             e.exports = { queryId: "gCPoymrOkmogvXw703yb3Q", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        51864: (e) => {
+        221234: (e) => {
             e.exports = { queryId: "E7BnVVjD6rWAYvsyfVmNcg", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        118869: (e) => {
+        607696: (e) => {
             e.exports = { queryId: "QEoKhdjH7VnHtstbcPL2Hw", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        342454: (e) => {
+        40577: (e) => {
             e.exports = { queryId: "c7p4COABJM8iLED5NTLRMA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        134871: (e) => {
+        244016: (e) => {
             e.exports = { queryId: "sfEIT5SMxsPcp_szNux7WQ", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         679129: (e, t, a) => {
@@ -40,7 +40,7 @@
                 l = a(466999),
                 r = a(325686),
                 i = a(392237),
-                o = a(674132);
+                o = a(332920);
             const s = a.n(o)().e5b0063d;
             let c = 0;
             class d extends n.Component {
@@ -75,7 +75,7 @@
                 i = a(344175),
                 o = a(392237),
                 s = a(682474),
-                c = a(674132),
+                c = a(332920),
                 d = a.n(c),
                 u = a(473026),
                 p = a(594897),
@@ -393,7 +393,7 @@
             var n = a(202784),
                 l = a(811176),
                 r = a(190286),
-                i = a(674132),
+                i = a(332920),
                 o = a.n(i),
                 s = a(912021);
             const c = o().cfd2f35e;
@@ -485,7 +485,7 @@
                 o = a(154003),
                 s = a(682474),
                 c = a(392237),
-                d = a(674132),
+                d = a(332920),
                 u = a.n(d),
                 p = a(293615),
                 m = a(837020),
@@ -539,4 +539,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-9f4db315.034da32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-9f4db315.e5007a1a.js.map

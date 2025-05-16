@@ -8,7 +8,7 @@
                 r = o(466999),
                 i = o(325686),
                 a = o(392237),
-                s = o(674132);
+                s = o(332920);
             const l = o.n(s)().e5b0063d;
             let c = 0;
             class d extends n.Component {
@@ -72,7 +72,7 @@
             var n = o(202784),
                 r = o(811176),
                 i = o(190286),
-                a = o(674132),
+                a = o(332920),
                 s = o.n(a),
                 l = o(912021);
             const c = s().cfd2f35e;
@@ -277,7 +277,7 @@
         },
         97882: (e, t, o) => {
             o.d(t, { T: () => i, x: () => a });
-            var n = o(674132),
+            var n = o(332920),
                 r = o.n(n);
             const i = { AED: r().d857e44d, ALL: r().cb87e3db, ARS: r().a9d5ffd1, AUD: r().a0e8371d, BAM: r().gcc50dc9, BDT: r().a6a43585, BGN: r().a0cc8f2d, BHD: r().i31c32c5, BRL: r().i7dc69e9, BYR: r().c14a6c03, CAD: r().jaa3d537, CHF: r().a824080b, CLP: r().d9c0bedb, CNY: r().bf8c0613, COP: r().i8163625, CZK: r().adb53ba1, DKK: r().iabf697d, DZD: r().a1a0555b, EGP: r().f266f3d9, EUR: r().a9a8652b, GBP: r().dbf40761, GHS: r().b0d993d9, GTQ: r().ac1308e1, HKD: r().a7889ab3, HRK: r().c614f5cd, HUF: r().i55d57e3, IDR: r().e4b6002b, ILS: r().d28e983b, INR: r().e8c9232d, IQD: r().c8994ae1, ISK: r().f821c2a5, JPY: r().j348b9c9, KES: r().i6f93b9b, KRW: r().c6150bd5, KWD: r().i8921e09, KZT: r().ef239279, LBP: r().hecdb149, MAD: r().fdd039b7, MKD: r().f30c2c37, MXN: r().d9ea7bff, MYR: r().ea3df4b7, NGN: r().jaac21bb, NOK: r().hb435ced, NZD: r().ce699d81, PEN: r().bc56d3d7, PHP: r().f8561913, PKR: r().g6485d53, PLN: r().ff561cc1, QAR: r().b42011d3, RON: r().a6660bcd, RSD: r().f9b80449, RUB: r().gdee4d5d, SAR: r().h36f2103, SEK: r().a19ad037, SGD: r().g713f699, THB: r().ff2e39af, TND: r().be34316d, TRY: r().aef81b75, TWD: r().fcce70a5, TZS: r().jc9d352f, UAH: r().be1cb8c5, UGX: r().j9371501, USD: r().j7d4397d, VEF: r().d61441dd, VND: r().e2a99e97, ZAR: r().f7ce19ab, ZMW: r().b2a0213f },
                 a = ({ amount: e, currencyCode: t = "USD", formatter: o = 1e6, removeTrailingZeros: n = !1, strictAmount: r = !1 }) => {
@@ -293,7 +293,7 @@
         158272: (e, t, o) => {
             o.d(t, { Kh: () => s, OQ: () => d, iW: () => c, xG: () => u, z_: () => l });
             o(875640), o(694898), o(38857), o(540171), o(157093), o(265688), o(270315), o(592529), o(86943), o(691157), o(571372);
-            var n = o(674132),
+            var n = o(332920),
                 r = o.n(n);
             function i(e) {
                 const t = e.replace(/-/g, "+").replace(/_/g, "/"),
@@ -410,4 +410,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-9f4db315.d1a8706a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-9f4db315.8661f62a.js.map

@@ -14,7 +14,7 @@
                 c = a(688715),
                 d = a(529356),
                 u = a(392237),
-                m = a(674132),
+                m = a(332920),
                 _ = a.n(m),
                 p = a(121791),
                 h = a(775042),
@@ -92,7 +92,7 @@
                 i = a(688715),
                 o = a(529356),
                 r = a(392237),
-                s = a(674132),
+                s = a(332920),
                 c = a.n(s),
                 d = a(652904),
                 u = a(293115),
@@ -144,7 +144,7 @@
                 r = a(167630),
                 s = a(529356),
                 c = a(392237),
-                d = a(674132),
+                d = a(332920),
                 u = a.n(d),
                 m = a(777131),
                 _ = a(201889),
@@ -257,7 +257,7 @@
                 i = a(593866),
                 o = a(529356),
                 r = a(392237),
-                s = a(674132),
+                s = a(332920),
                 c = a.n(s),
                 d = a(429989),
                 u = a(988227),
@@ -351,7 +351,7 @@
                 d = a(154003),
                 u = a(167630),
                 m = a(392237),
-                _ = a(674132),
+                _ = a(332920),
                 p = a.n(_),
                 h = a(281312),
                 f = a(143778),
@@ -863,7 +863,7 @@
             a.d(t, { SD: () => _, Uq: () => m, WT: () => p, X3: () => g, Xl: () => u, bX: () => f, gW: () => c, iM: () => s, jx: () => h, m1: () => d, pq: () => r });
             var n = a(202784),
                 l = a(731708),
-                i = a(674132),
+                i = a(332920),
                 o = a.n(i);
             const r = "MisinformedOrPotentiallyMisleading",
                 s = "NotMisleading",
@@ -969,4 +969,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-4ee0261e.2d4bf48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-4ee0261e.d46489da.js.map

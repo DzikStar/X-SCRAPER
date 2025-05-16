@@ -1,7 +1,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Grok-e96e9bea"],
     {
-        757225: (e) => {
+        903621: (e) => {
             e.exports = { queryId: "qaIzg304L134B5-NI43j2A", operationName: "UniversalSearchFeedbackMutation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         349929: (e, n, a) => {
@@ -1354,4 +1354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.93cbae2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.d412417a.js.map

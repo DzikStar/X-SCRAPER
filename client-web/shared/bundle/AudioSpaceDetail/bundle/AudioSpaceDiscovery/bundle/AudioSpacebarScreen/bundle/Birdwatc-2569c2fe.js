@@ -14,7 +14,7 @@
                 r = n(325686),
                 a = n(167630),
                 o = n(392237),
-                s = n(674132);
+                s = n(332920);
             const c = n.n(s)().c02e7e3c,
                 l = o.default.create((e) => ({ spinner: { alignItems: "center" } })),
                 d = ({ props: e, style: t }) => {
@@ -287,4 +287,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2569c2fe.3257a19a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2569c2fe.04a3fdda.js.map

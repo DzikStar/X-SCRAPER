@@ -59,7 +59,7 @@
                 m = n(952428),
                 p = n(642153),
                 h = n(154003),
-                y = n(674132),
+                y = n(332920),
                 b = n.n(y),
                 g = n(492140),
                 f = n(833057),
@@ -181,7 +181,7 @@
                 l = n(392237),
                 s = n(857378),
                 c = n(688715),
-                d = n(674132),
+                d = n(332920),
                 u = n.n(d);
             const m = (0, c.ju)("https://help.x.com/rules-and-policies/twitter-rules"),
                 p = r.createElement(u().I18NFormatMessage, { $i18n: "j33cc663" }, r.createElement(o.ZP, { link: m, withInteractiveStyling: !1 }, u().h9526e03)),
@@ -262,7 +262,7 @@
         724328: (e, t, n) => {
             n.d(t, { E: () => i });
             n(202784);
-            var r = n(674132);
+            var r = n(332920);
             const i = n.n(r)().c00c234f;
         },
         652904: (e, t, n) => {
@@ -560,7 +560,7 @@
                 s = n(970187),
                 c = n(529356),
                 d = n(392237),
-                u = n(674132),
+                u = n(332920),
                 m = n.n(u),
                 p = n(870358),
                 h = n(581335),
@@ -695,7 +695,7 @@
                 s = n(661810),
                 c = n(855488),
                 d = n(392237),
-                u = n(674132),
+                u = n(332920),
                 m = n.n(u),
                 p = n(211971),
                 h = n(980407),
@@ -867,4 +867,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.069e227a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.f776d04a.js.map

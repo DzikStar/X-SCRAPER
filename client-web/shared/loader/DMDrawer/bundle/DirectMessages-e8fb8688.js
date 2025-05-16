@@ -59,7 +59,7 @@
                 c = n(371344),
                 l = n(108362),
                 h = n(392237),
-                d = n(674132),
+                d = n(332920),
                 u = n.n(d),
                 p = n(956272),
                 m = n(827515),
@@ -236,7 +236,7 @@
             n.d(t, { Z: () => d });
             var r = n(202784),
                 s = n(457311),
-                a = n(674132),
+                a = n(332920),
                 o = n.n(a),
                 i = n(725516);
             const c = o().a676a876,
@@ -269,7 +269,7 @@
                 i = n(731708),
                 c = n(909377),
                 l = n(392237),
-                h = n(674132),
+                h = n(332920),
                 d = n.n(h),
                 u = n(256061),
                 p = n(725516),
@@ -323,7 +323,7 @@
                 a = n(731708),
                 o = n(868634),
                 i = n(392237),
-                c = n(674132),
+                c = n(332920),
                 l = n.n(c),
                 h = n(829110),
                 d = n(952793);
@@ -349,7 +349,7 @@
                 a = n(537392),
                 o = n(731708),
                 i = n(392237),
-                c = n(674132),
+                c = n(332920),
                 l = n.n(c),
                 h = n(233935),
                 d = n(10656),
@@ -379,4 +379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-e8fb8688.381c2eda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-e8fb8688.7ffe06ea.js.map

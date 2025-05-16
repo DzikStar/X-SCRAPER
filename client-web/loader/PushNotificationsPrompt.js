@@ -39,7 +39,7 @@
             o.r(t), o.d(t, { PushNotificationsPromptContainer: () => Z, default: () => S });
             var i = o(202784),
                 s = o(529356),
-                n = o(674132),
+                n = o(332920),
                 r = o.n(n),
                 a = o(684869),
                 l = o(516951),
@@ -154,4 +154,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PushNotificationsPrompt.35d8cfda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PushNotificationsPrompt.c9bd14fa.js.map

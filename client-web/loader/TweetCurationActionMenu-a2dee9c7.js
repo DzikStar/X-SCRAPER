@@ -1,31 +1,31 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.TweetCurationActionMenu-a2dee9c7", "loader.FeedbackSheet"],
     {
-        594771: (e) => {
+        390088: (e) => {
             e.exports = { queryId: "CHRU37dMKqurci7J0HeTkQ", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        551e3: (e) => {
+        311661: (e) => {
             e.exports = { queryId: "e4lWqB6m2TA8Fn_j9L9xEA", operationName: "ArticleEntityDelete", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        486962: (e) => {
+        908662: (e) => {
             e.exports = { queryId: "R3LLZzYKAu7JEPZLG20Slg", operationName: "ArticleEntityDraftCreate", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        207318: (e) => {
+        16162: (e) => {
             e.exports = { queryId: "65mW6SeItVmeUq2lTNquhQ", operationName: "ArticleEntityPublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        244275: (e) => {
+        280045: (e) => {
             e.exports = { queryId: "gCPoymrOkmogvXw703yb3Q", operationName: "ArticleEntityResultByRestId", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        51864: (e) => {
+        221234: (e) => {
             e.exports = { queryId: "E7BnVVjD6rWAYvsyfVmNcg", operationName: "ArticleEntityUnpublish", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        118869: (e) => {
+        607696: (e) => {
             e.exports = { queryId: "QEoKhdjH7VnHtstbcPL2Hw", operationName: "ArticleEntityUpdateContent", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        342454: (e) => {
+        40577: (e) => {
             e.exports = { queryId: "c7p4COABJM8iLED5NTLRMA", operationName: "ArticleEntityUpdateCoverMedia", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        134871: (e) => {
+        244016: (e) => {
             e.exports = { queryId: "sfEIT5SMxsPcp_szNux7WQ", operationName: "ArticleEntityUpdateTitle", operationType: "mutation", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         337653: (e, t, i) => {
@@ -103,23 +103,23 @@
             var n = i(506899),
                 a = i(414742),
                 l = i(679129),
-                r = i(594771),
+                r = i(390088),
                 s = i.n(r),
-                o = i(551e3),
+                o = i(311661),
                 c = i.n(o),
-                d = i(486962),
+                d = i(908662),
                 _ = i.n(d),
-                p = i(207318),
+                p = i(16162),
                 u = i.n(p),
-                m = i(244275),
+                m = i(280045),
                 b = i.n(m),
-                h = i(51864),
+                h = i(221234),
                 y = i.n(h),
-                f = i(118869),
+                f = i(607696),
                 g = i.n(f),
-                v = i(342454),
+                v = i(40577),
                 w = i.n(v),
-                C = i(134871),
+                C = i(244016),
                 k = i.n(C),
                 T = i(934309);
             const I = ({ apiClient: e, featureSwitches: t }) => ({
@@ -199,7 +199,7 @@
                 d = i(96083),
                 _ = i(154003),
                 p = i(392237),
-                u = i(674132),
+                u = i(332920),
                 m = i.n(u),
                 b = i(14284),
                 h = i(531564),
@@ -292,7 +292,7 @@
             "use strict";
             i.d(t, { Z: () => c });
             var n = i(202784),
-                a = i(674132),
+                a = i(332920),
                 l = i.n(a),
                 r = i(459660);
             const s = Object.freeze({ all: l().baffe39a, community: l().i9000126, by_invitation: l().e7b4b30a, subscribers: l().ad85cd2e, verified: l().f19e4bfc }),
@@ -312,7 +312,7 @@
             var n = i(202784),
                 a = i(811176),
                 l = i(190286),
-                r = i(674132),
+                r = i(332920),
                 s = i.n(r),
                 o = i(912021);
             const c = s().cfd2f35e;
@@ -368,7 +368,7 @@
             var n = i(202784),
                 a = i(392237),
                 l = i(154003),
-                r = i(674132),
+                r = i(332920),
                 s = i.n(r),
                 o = i(837020);
             const c = s().e839db3a,
@@ -379,4 +379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.8d9c6caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-a2dee9c7.b465d86a.js.map

@@ -103,7 +103,7 @@
             var r = n(202784),
                 o = n(466999),
                 s = n(325686),
-                i = n(674132),
+                i = n(332920),
                 a = n.n(i),
                 l = n(408369),
                 c = n(764503),
@@ -129,7 +129,7 @@
             var r = n(202784),
                 o = n(466999),
                 s = n(325686),
-                i = n(674132),
+                i = n(332920),
                 a = n.n(i),
                 l = n(408369),
                 c = n(764503),
@@ -158,7 +158,7 @@
             n.d(t, { Z: () => x });
             var r = n(202784),
                 o = n(325686),
-                s = n(674132),
+                s = n(332920),
                 i = n.n(s),
                 a = n(797681),
                 l = n(837020),
@@ -502,4 +502,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.27408caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.98a029ca.js.map

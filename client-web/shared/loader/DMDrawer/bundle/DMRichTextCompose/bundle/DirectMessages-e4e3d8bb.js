@@ -44,12 +44,12 @@
         },
         545334: (e, t, r) => {
             r.d(t, { d: () => n });
-            var o = r(674132);
+            var o = r(332920);
             const n = r.n(o)().gf5e9ea6;
         },
         916585: (e, t, r) => {
             r.d(t, { k: () => s });
-            var o = r(674132),
+            var o = r(332920),
                 n = r.n(o),
                 a = r(437358);
             const s = (e, t) => {
@@ -61,7 +61,7 @@
         847607: (e, t, r) => {
             r.d(t, { Aq: () => u, FK: () => v, GS: () => d, N1: () => m, PY: () => h, X6: () => C, cm: () => i });
             r(202784);
-            var o = r(674132),
+            var o = r(332920),
                 n = r.n(o),
                 a = r(391366),
                 s = r(40904);
@@ -85,7 +85,7 @@
         417714: (e, t, r) => {
             r.d(t, { l: () => c });
             r(202784);
-            var o = r(674132),
+            var o = r(332920),
                 n = r.n(o),
                 a = r(224823);
             const s = n().b3036480,
@@ -100,7 +100,7 @@
         },
         518966: (e, t, r) => {
             r.d(t, { h: () => i });
-            var o = r(674132),
+            var o = r(332920),
                 n = r.n(o),
                 a = r(615656);
             const s = n().ef504d80,
@@ -109,7 +109,7 @@
         },
         499456: (e, t, r) => {
             r.d(t, { f: () => l });
-            var o = r(674132),
+            var o = r(332920),
                 n = r.n(o),
                 a = r(615656),
                 s = r(51525);
@@ -126,12 +126,12 @@
         },
         48886: (e, t, r) => {
             r.d(t, { q: () => n });
-            var o = r(674132);
+            var o = r(332920);
             const n = { defaultToast: { text: r.n(o)().a30b63da }, showToast: !0 };
         },
         349972: (e, t, r) => {
             r.d(t, { j: () => n });
-            var o = r(674132);
+            var o = r(332920);
             const n = { defaultToast: { text: r.n(o)().i14d7a46 }, showToast: !0 };
         },
         860174: (e, t, r) => {
@@ -892,4 +892,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.39bbceba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.765b1a6a.js.map

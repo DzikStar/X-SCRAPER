@@ -1,31 +1,31 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.AppModules-a2dee9c7"],
     {
-        593588: (e) => {
+        396355: (e) => {
             e.exports = { queryId: "TYpVV9QioZfViHqEqRZxJA", operationName: "BrowseSpaceTopics", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        474804: (e) => {
+        328777: (e) => {
             e.exports = { queryId: "BqIHKmwZKtiUBPi07jKctg", operationName: "EnableLoggedOutWebNotifications", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        584550: (e) => {
+        110669: (e) => {
             e.exports = { queryId: "V8-RP7SxlI4qzRmpCmEqgw", operationName: "ListProductSubscriptions", operationType: "query", metadata: { featureSwitches: ["subscriptions_management_fetch_next_billing_time", "subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
         },
-        322766: (e) => {
+        551445: (e) => {
             e.exports = { queryId: "RM4x9h3tF8bCn69VV3-gRg", operationName: "NotABotCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        443127: (e) => {
+        587719: (e) => {
             e.exports = { queryId: "Sxn4YOlaAwEKjnjWV0h7Mw", operationName: "SubscribeToScheduledSpace", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        263378: (e) => {
+        525552: (e) => {
             e.exports = { queryId: "-kH-xt82ZhKnAMTXv1Fuzg", operationName: "SubscriptionCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        322060: (e) => {
+        57068: (e) => {
             e.exports = { queryId: "yIGOH-WMQSU-AdbfVRZm9A", operationName: "SubscriptionProductDetails", operationType: "query", metadata: { featureSwitches: ["subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
         },
-        601377: (e) => {
+        554034: (e) => {
             e.exports = { queryId: "NEMw3cw4v0-Oo-nTMI8reQ", operationName: "SwitchTier", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        587541: (e) => {
+        336271: (e) => {
             e.exports = { queryId: "Zevhh76Msw574ZSs2NQHGQ", operationName: "UnsubscribeFromScheduledSpace", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         326439: (e, t, n) => {
@@ -303,7 +303,7 @@
             n.d(t, { Z: () => c });
             var o = n(163889),
                 s = n(414742),
-                i = n(474804),
+                i = n(328777),
                 a = n.n(i),
                 r = n(503768);
             const l = (e, t) => {
@@ -320,15 +320,15 @@
         372551: (e, t, n) => {
             "use strict";
             n.d(t, { Z: () => m });
-            var o = n(584550),
+            var o = n(110669),
                 s = n.n(o),
-                i = n(322766),
+                i = n(551445),
                 a = n.n(i),
-                r = n(263378),
+                r = n(525552),
                 l = n.n(r),
-                c = n(322060),
+                c = n(57068),
                 u = n.n(c),
-                d = n(601377),
+                d = n(554034),
                 p = n.n(d);
             const m = ({ apiClient: e, featureSwitches: t }) => ({ fetchSubscriptionProductDetails: (t) => e.graphQL(u(), t).then((e) => e.web_subscription_product_details), fetchSubscriptionProductCheckoutUrl: (t) => e.graphQL(l(), t).then((e) => e.subscriptioncheckoutsession_create_for_blue?.session_url), fetchNotABotCheckoutUrl: (t) => e.graphQL(a(), t).then((e) => e.subscriptioncheckoutsession_create_for_not_a_bot?.session_url), fetchProductSubscriptions: (t) => e.graphQL(s(), t).then((e) => e.viewer_v2?.list_product_subscriptions), switchTier: (t) => e.graphQL(p(), t).then((e) => e) });
         },
@@ -589,7 +589,7 @@
                 u = n(67369),
                 d = n(154003),
                 p = n(392237),
-                m = n(674132),
+                m = n(332920),
                 h = n.n(m),
                 g = n(725516),
                 b = n(421023),
@@ -803,7 +803,7 @@
                 a = n(325686),
                 r = n(392237),
                 l = n(731708),
-                c = n(674132),
+                c = n(332920),
                 u = n.n(c),
                 d = n(752624),
                 p = n(516951),
@@ -947,7 +947,7 @@
                 s = n(107267),
                 i = n(952793),
                 a = n(529356),
-                r = n(674132),
+                r = n(332920),
                 l = n.n(r),
                 c = n(684869),
                 u = n(516951),
@@ -1063,7 +1063,7 @@
             var o = n(202784),
                 s = n(731708),
                 i = n(392237),
-                a = n(674132),
+                a = n(332920),
                 r = n.n(a),
                 l = n(911373),
                 c = n(761744),
@@ -1133,7 +1133,7 @@
             n(875640);
             var o = n(202784),
                 s = n(529356),
-                i = n(674132),
+                i = n(332920),
                 a = n.n(i),
                 r = n(323265),
                 l = n(170542),
@@ -1309,4 +1309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-a2dee9c7.1f15cb1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-a2dee9c7.740d538a.js.map

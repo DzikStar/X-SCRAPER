@@ -5,7 +5,7 @@
         273919: (e, t, a) => {
             a.d(t, { OY: () => c, aw: () => s, z1: () => u });
             var i = a(506899),
-                n = a(674132),
+                n = a(332920),
                 d = a.n(n);
             const r = d().d5568440,
                 l = d().d0511fe6,
@@ -38,7 +38,7 @@
                 n = a(466999),
                 d = a(325686),
                 r = a(392237),
-                l = a(674132);
+                l = a(332920);
             const o = a.n(l)().e5b0063d;
             let s = 0;
             class c extends i.Component {
@@ -118,7 +118,7 @@
                 n = a(202784),
                 d = a(449161),
                 r = a(392237),
-                l = a(674132),
+                l = a(332920),
                 o = a.n(l),
                 s = a(473026),
                 c = a(276259),
@@ -140,7 +140,7 @@
                 d = a(167630),
                 r = a(992942),
                 l = a(392237),
-                o = a(674132),
+                o = a(332920),
                 s = a.n(o),
                 c = a(205074),
                 u = a(364837),
@@ -199,7 +199,7 @@
                 o = a(154003),
                 s = a(392237),
                 c = a(992942),
-                u = a(674132),
+                u = a(332920),
                 p = a.n(u),
                 b = a(678773),
                 h = a(597237),
@@ -236,12 +236,12 @@
             const B = (0, V.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.16"),
-                            a.e("icons.10"),
+                            a.e("icons.5"),
+                            a.e("icons.28"),
+                            a.e("icons.17"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
+                            a.e("icons.25"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -253,9 +253,10 @@
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
                             a.e("icons.4"),
-                            a.e("icons.26"),
+                            a.e("icons.13"),
+                            a.e("icons.1"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -409,7 +410,7 @@
             a.d(t, { Z: () => o });
             var i = a(202784),
                 n = a(420740),
-                d = a(674132);
+                d = a(332920);
             const r = a.n(d)().b2311b70;
             function l() {
                 return i.createElement(n.Z, { onRetry: null, title: r });
@@ -424,7 +425,7 @@
                 r = a(731708),
                 l = a(154003),
                 o = a(392237),
-                s = a(674132),
+                s = a(332920),
                 c = a.n(s);
             const u = "recaptcha",
                 p = c().c1df579e,
@@ -529,7 +530,7 @@
             var i = a(202784),
                 n = a(325686),
                 d = a(392237),
-                r = a(674132),
+                r = a(332920),
                 l = a.n(r),
                 o = a(516951),
                 s = a(808692),
@@ -651,4 +652,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.d3aa820a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.193a93fa.js.map

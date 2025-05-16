@@ -1,19 +1,19 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.LiveEvent-9f4db315"],
     {
-        341326: (e) => {
+        997089: (e) => {
             e.exports = { queryId: "imr0xefZmILHTgb6-9pe3g", operationName: "ActionTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        988948: (e) => {
+        920745: (e) => {
             e.exports = { queryId: "-o1_NYTnNnu9IjsKThUw9A", operationName: "AiTrendByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
-        534499: (e) => {
+        828222: (e) => {
             e.exports = { queryId: "3BZlCEmD645zQ-MpJM19CA", operationName: "ReportTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        360377: (e) => {
+        301662: (e) => {
             e.exports = { queryId: "_fJD2rm-lJI06lKxbUZT2Q", operationName: "SaveTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        445969: (e) => {
+        592105: (e) => {
             e.exports = { queryId: "-lnNX56S2YrZYrLzbccFAQ", operationName: "LiveCommerceItemsSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         307859: (e, t, n) => {
@@ -46,13 +46,13 @@
             );
             s.define({ page: { media_carousel: [{ tweet: a.Z }] } });
             const l = s;
-            var c = n(341326),
+            var c = n(997089),
                 d = n.n(c),
-                u = n(988948),
+                u = n(920745),
                 m = n.n(u),
-                _ = n(534499),
+                _ = n(828222),
                 p = n.n(_),
-                b = n(360377),
+                b = n(301662),
                 f = n.n(b);
             const h = ({ apiClient: e, featureSwitches: t }) => ({
                 aiTrendByRestId: (n) =>
@@ -73,7 +73,7 @@
             var r = n(506899),
                 i = n(414742);
             const o = new r.fK.Entity("commerceItems", {}, { idAttribute: (e) => e.product_core_data?.product_metadata.product_key ?? "" });
-            var a = n(445969),
+            var a = n(592105),
                 s = n.n(a);
             const l = (0, i.kj)((e) => {
                     const t = e?.live_event_by_rest_id?.shop_grid_commerce_item_slice;
@@ -145,7 +145,7 @@
                 i = n(466999),
                 o = n(325686),
                 a = n(392237),
-                s = n(674132);
+                s = n(332920);
             const l = n.n(s)().e5b0063d;
             let c = 0;
             class d extends r.Component {
@@ -170,7 +170,7 @@
                 a = n(154003),
                 s = n(811176),
                 l = n(392237),
-                c = n(674132),
+                c = n(332920),
                 d = n.n(c),
                 u = n(715614),
                 m = n(215380),
@@ -306,7 +306,7 @@
             var r = n(202784),
                 i = n(731708),
                 o = n(470014),
-                a = n(674132),
+                a = n(332920),
                 s = n.n(a),
                 l = n(97882);
             const c = s().cfe836d1,
@@ -366,7 +366,7 @@
                 a = n(154003),
                 s = n(682474),
                 l = n(392237),
-                c = n(674132),
+                c = n(332920),
                 d = n.n(c),
                 u = n(530243),
                 m = n(837020),
@@ -491,7 +491,7 @@
                 d = n(284702),
                 u = n(310452),
                 m = n(354149),
-                _ = n(674132),
+                _ = n(332920),
                 p = n.n(_),
                 b = n(946409);
             const f = s.default.create((e) => ({ description: { marginTop: e.spaces.space12 } })),
@@ -543,4 +543,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.3b29a1da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.8854663a.js.map

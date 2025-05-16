@@ -287,7 +287,7 @@
         100326: (e, t, s) => {
             s.d(t, { X: () => i });
             s(571372);
-            var r = s(791005),
+            var r = s(669260),
                 o = s.n(r),
                 a = s(623494),
                 n = s(52570);
@@ -551,7 +551,7 @@
         },
         52570: (e, t, s) => {
             s.d(t, { NE: () => a, bY: () => l });
-            var r = s(674132),
+            var r = s(332920),
                 o = s.n(r);
             const a = o().ead81122,
                 n = o().f808a13a,
@@ -576,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-bfd49e49.ec2b849a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-bfd49e49.0092351a.js.map

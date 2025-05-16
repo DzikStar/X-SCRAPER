@@ -11,7 +11,7 @@
                 o = n(731708),
                 l = n(310088),
                 s = n(392237),
-                c = n(674132),
+                c = n(332920),
                 d = n.n(c),
                 u = n(206962);
             const m = () => d().d9ef2842,
@@ -104,7 +104,7 @@
                 i = n(325686),
                 a = n(366635),
                 o = n(392237),
-                l = n(674132),
+                l = n(332920),
                 s = n.n(l),
                 c = n(449067),
                 d = n(120735),
@@ -140,7 +140,7 @@
                 c = n(891198),
                 d = n(366635),
                 u = n(392237),
-                m = n(674132),
+                m = n(332920),
                 p = n.n(m),
                 f = n(516951),
                 g = n(187669),
@@ -504,4 +504,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.1854378a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.776fc97a.js.map

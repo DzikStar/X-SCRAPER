@@ -1326,7 +1326,7 @@
                 t = e(196001),
                 r = e(900664),
                 I = e(325686),
-                i = e(674132),
+                i = e(332920),
                 j = e.n(i),
                 l = e(668430),
                 a = e(323265),
@@ -1482,4 +1482,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-6107ac1a.1e7c19ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-6107ac1a.0b324ffa.js.map

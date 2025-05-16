@@ -26,7 +26,7 @@
                 a = r(466999),
                 n = r(325686),
                 l = r(392237),
-                i = r(674132);
+                i = r(332920);
             const s = r.n(i)().e5b0063d;
             let d = 0;
             class c extends o.Component {
@@ -45,7 +45,7 @@
             r.d(t, { Z: () => d });
             var o = r(202784),
                 a = r(154003),
-                n = r(674132),
+                n = r(332920),
                 l = r.n(n),
                 i = r(379327);
             const s = l().af40a8e0,
@@ -145,7 +145,7 @@
             var o = r(202784),
                 a = r(638236),
                 n = r(811176),
-                l = r(674132),
+                l = r(332920),
                 i = r.n(l),
                 s = r(415506),
                 d = r(516951),
@@ -277,7 +277,7 @@
                 a = r(325686),
                 n = r(731708),
                 l = r(392237),
-                i = r(674132),
+                i = r(332920),
                 s = r.n(i);
             const d = s().c174e46e,
                 c = s().a39075ff,
@@ -328,7 +328,7 @@
             r.d(t, { Z: () => k });
             var o = r(202784),
                 a = r(154003),
-                n = r(674132),
+                n = r(332920),
                 l = r.n(n),
                 i = r(74514),
                 s = r(405303),
@@ -544,7 +544,7 @@
                 i = r(420412),
                 s = r(844685),
                 d = r(392237),
-                c = r(674132),
+                c = r(332920),
                 u = r.n(c),
                 m = r(666536),
                 h = r(668214),
@@ -613,7 +613,7 @@
             r.d(t, { Z: () => v });
             var o = r(202784),
                 a = r(154003),
-                n = r(674132),
+                n = r(332920),
                 l = r.n(n),
                 i = r(40904),
                 s = r(391366),
@@ -710,12 +710,12 @@
         },
         545334: (e, t, r) => {
             r.d(t, { d: () => a });
-            var o = r(674132);
+            var o = r(332920);
             const a = r.n(o)().gf5e9ea6;
         },
         916585: (e, t, r) => {
             r.d(t, { k: () => l });
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(437358);
             const l = (e, t) => {
@@ -727,7 +727,7 @@
         847607: (e, t, r) => {
             r.d(t, { Aq: () => u, FK: () => f, GS: () => i, N1: () => h, PY: () => m, X6: () => b, cm: () => s });
             r(202784);
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(391366),
                 l = r(40904);
@@ -751,7 +751,7 @@
         417714: (e, t, r) => {
             r.d(t, { l: () => c });
             r(202784);
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(224823);
             const l = a().b3036480,
@@ -766,7 +766,7 @@
         },
         775412: (e, t, r) => {
             r.d(t, { W: () => i });
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(615656);
             const l = a().ee87e71c,
@@ -774,12 +774,12 @@
         },
         48886: (e, t, r) => {
             r.d(t, { q: () => a });
-            var o = r(674132);
+            var o = r(332920);
             const a = { defaultToast: { text: r.n(o)().a30b63da }, showToast: !0 };
         },
         837731: (e, t, r) => {
             r.d(t, { G: () => i });
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(615656);
             const l = a().ed428a76,
@@ -825,4 +825,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.39e2dbaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.3754c5aa.js.map

@@ -16,7 +16,7 @@
                 u = r(731708),
                 g = r(810495),
                 p = r(470397),
-                f = r(674132),
+                f = r(332920),
                 E = r.n(f),
                 w = r(93074);
             const h = E().ccc45ee7,
@@ -154,7 +154,7 @@
         },
         93074: (e, t, r) => {
             r.d(t, { Z: () => d });
-            var a = r(674132),
+            var a = r(332920),
                 n = r.n(a),
                 l = r(810495);
             const o = n().f178e38c,
@@ -204,4 +204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ScoreEventSummaryHandler.46e4da9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ScoreEventSummaryHandler.09a3ecfa.js.map

@@ -9,7 +9,7 @@
                 n = r(661810),
                 i = r(466818),
                 l = r(392237),
-                s = r(674132),
+                s = r(332920),
                 c = r.n(s),
                 d = r(699721),
                 m = r(977154),
@@ -107,7 +107,7 @@
             r.d(t, { ZP: () => A });
             var o = r(202784),
                 a = r(457311),
-                n = r(674132),
+                n = r(332920),
                 i = r.n(n),
                 l = r(901646),
                 s = r(325686),
@@ -229,7 +229,7 @@
         32677: (e, t, r) => {
             r.d(t, { Z: () => m });
             var o = r(202784),
-                a = r(674132),
+                a = r(332920),
                 n = r.n(a),
                 i = r(186444),
                 l = r(355883);
@@ -247,7 +247,7 @@
             var o = r(202784),
                 a = r(392237),
                 n = r(154003),
-                i = r(674132),
+                i = r(332920),
                 l = r.n(i),
                 s = r(184605),
                 c = r(980407),
@@ -363,7 +363,7 @@
                 n = r(855488),
                 i = r(167630),
                 l = r(392237),
-                s = r(674132),
+                s = r(332920),
                 c = r.n(s),
                 d = r(666536),
                 m = r(702001),
@@ -467,7 +467,7 @@
         286240: (e, t, r) => {
             r.d(t, { Z: () => d });
             var o = r(576648),
-                a = r(674132),
+                a = r(332920),
                 n = r.n(a),
                 i = r(630715),
                 l = r(689985);
@@ -483,7 +483,7 @@
         },
         442907: (e, t, r) => {
             r.d(t, { Z: () => h });
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(607127),
                 i = r(689985);
@@ -510,7 +510,7 @@
         },
         637019: (e, t, r) => {
             r.d(t, { Z: () => s });
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(988227),
                 i = r(689985);
@@ -519,7 +519,7 @@
         },
         600304: (e, t, r) => {
             r.d(t, { Z: () => s });
-            var o = r(674132),
+            var o = r(332920),
                 a = r.n(o),
                 n = r(630715),
                 i = r(689985);
@@ -540,7 +540,7 @@
                 u = r(201770),
                 p = r(689985),
                 h = r(247056),
-                b = r(674132),
+                b = r(332920),
                 f = r.n(b),
                 Z = r(745088),
                 g = r(841972),
@@ -663,7 +663,7 @@
             var o = r(202784),
                 a = r(731708),
                 n = r(190286),
-                i = r(674132),
+                i = r(332920),
                 l = r.n(i);
             const s = l().gea6cc1a,
                 c = l().b6f72a22,
@@ -699,4 +699,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-e019dbda.ce4e883a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-e019dbda.e7c2022a.js.map

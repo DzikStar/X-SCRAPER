@@ -19,7 +19,7 @@
         },
         670094: (e, t, n) => {
             n.d(t, { d: () => l });
-            var o = n(674132),
+            var o = n(332920),
                 r = n.n(o),
                 a = n(88656),
                 i = n(601576),
@@ -59,7 +59,7 @@
                 d = n(808692),
                 m = n(47743),
                 p = n(163889),
-                g = n(674132),
+                g = n(332920),
                 h = n.n(g);
             const f = o.createElement(c.ZP, { weight: "bold" }),
                 w = o.createElement(c.ZP, { color: "link", dir: "ltr" }),
@@ -138,7 +138,7 @@
                 a = n(154003),
                 i = n(242454),
                 s = n(392237),
-                c = n(674132),
+                c = n(332920),
                 l = n.n(c),
                 u = n(379327),
                 d = n(725516),
@@ -388,7 +388,7 @@
             }
             const w = g.default.create((e) => ({ qpContainer: { flex: 1 }, appBar: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, paddingStart: e.spaces.space8 }, noSpacing: { paddingHorizontal: "0" } }));
             var y = n(855488),
-                b = n(674132),
+                b = n(332920),
                 T = n.n(b),
                 v = n(187669),
                 C = n(934878),
@@ -534,7 +534,7 @@
             }
             const w = g.default.create((e) => ({ qpContainer: { flex: 1 }, appBar: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, paddingStart: e.spaces.space8 }, noSpacing: { paddingHorizontal: "0" } }));
             var y = n(855488),
-                b = n(674132),
+                b = n(332920),
                 T = n.n(b),
                 v = n(187669),
                 C = n(203421),
@@ -609,7 +609,7 @@
                 s = n(535338),
                 c = n(455125),
                 l = (n(585488), n(392237)),
-                u = n(674132),
+                u = n(332920),
                 d = n.n(u);
             d().c14cdb18;
             l.default.create((e) => ({ inModal: { marginStart: e.spaces.space12 } }));
@@ -1079,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.94c0210a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-e6266db0.20210bca.js.map

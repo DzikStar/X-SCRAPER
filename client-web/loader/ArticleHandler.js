@@ -29,7 +29,7 @@
                 g = r(126962),
                 h = r(952428),
                 Z = r(530732),
-                x = r(674132),
+                x = r(332920),
                 E = r.n(x),
                 y = r(490359),
                 C = r(769471),
@@ -128,4 +128,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ArticleHandler.3860227a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ArticleHandler.197312fa.js.map

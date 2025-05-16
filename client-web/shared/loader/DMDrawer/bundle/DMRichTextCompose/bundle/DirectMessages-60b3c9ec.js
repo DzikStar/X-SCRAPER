@@ -24,7 +24,7 @@
                 n = s(15038),
                 r = s(392237),
                 d = s(108362),
-                c = s(674132),
+                c = s(332920),
                 l = s.n(c),
                 h = s(2138),
                 p = s(908478),
@@ -483,4 +483,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-60b3c9ec.0b58661a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-60b3c9ec.c4a4f3aa.js.map

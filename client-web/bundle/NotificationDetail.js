@@ -30,11 +30,11 @@
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: a, isFullWidth: n, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: x, withWideContainer: _ } = this.props,
                         { isModal: C } = this.context,
-                        Z = a ? c : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        v = (function (e, t, o) {
+                        v = a ? c : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        Z = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!x, C, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: d, leftControl: Z, middleControl: h, position: p(u, C, i), rightControl: m, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: v, withWideContainer: _ }), f || null);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: d, leftControl: v, middleControl: h, position: p(u, C, i), rightControl: m, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: Z, withWideContainer: _ }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -129,7 +129,7 @@
                 i = o(154003),
                 a = o(362075),
                 n = o(392237),
-                s = o(674132),
+                s = o(332920),
                 l = o.n(s),
                 d = o(840647),
                 c = o(980407),
@@ -233,6 +233,19 @@
             const p = d.default.create((e) => ({ root: { overflow: "auto", WebkitOverflowScrolling: "touch" }, modalPadding: { paddingTop: e.componentDimensions.appBarHeight }, iframe: { borderWidth: 0, flexGrow: 1 } })),
                 h = i.forwardRef((e, t) => i.createElement(c, (0, r.Z)({ forwardedRef: t }, e)));
         },
+        748138: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var r = o(202784),
+                i = o(890601),
+                a = o(783427),
+                n = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotificationDetail.4112479a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotificationDetail.c289e4ca.js.map

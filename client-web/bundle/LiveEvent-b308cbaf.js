@@ -10,7 +10,7 @@
                 a = r(731708),
                 i = r(992942),
                 c = r(392237),
-                l = r(674132),
+                l = r(332920),
                 m = r.n(l),
                 p = r(152957);
             const d = "scorecard",
@@ -175,7 +175,7 @@
                 n = r(325686),
                 s = r(457311),
                 a = r(392237),
-                i = r(674132),
+                i = r(332920),
                 c = r.n(i),
                 l = r(337069),
                 m = r(942893),
@@ -230,7 +230,7 @@
                 n = r(202784),
                 s = r(530525),
                 a = r(659651),
-                i = r(674132),
+                i = r(332920),
                 c = r.n(i),
                 l = r(632658);
             const m = "image",
@@ -322,7 +322,7 @@
         32677: (e, t, r) => {
             r.d(t, { Z: () => p });
             var o = r(202784),
-                n = r(674132),
+                n = r(332920),
                 s = r.n(n),
                 a = r(186444),
                 i = r(355883);
@@ -337,4 +337,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-b308cbaf.6401a7ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-b308cbaf.0b3df28a.js.map

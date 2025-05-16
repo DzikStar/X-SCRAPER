@@ -58,7 +58,7 @@
             var r = d(202784),
                 n = d(325686),
                 o = d(392237),
-                t = d(674132);
+                t = d(332920);
             const l = d.n(t)().h63a5c3c,
                 s = ({ "aria-label": e = l, children: a, onClick: d, renderMenu: o, shouldMountMenu: t, style: s, testID: u }) => {
                     const [c, m] = r.useState(!1),
@@ -94,7 +94,7 @@
                 o = d(731708),
                 t = d(154003),
                 l = d(392237),
-                s = d(674132),
+                s = d(332920),
                 i = d.n(s),
                 u = d(211971),
                 c = d(443781),
@@ -193,7 +193,7 @@
                 o = d(325686),
                 t = d(844685),
                 l = d(392237),
-                s = d(674132),
+                s = d(332920),
                 i = d.n(s),
                 u = d(952793),
                 c = d(880647),
@@ -283,9 +283,10 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.16"),
+                        d.e("icons.17"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
+                        d.e("icons.22"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -376,7 +377,7 @@
         },
         638537: (e, a, d) => {
             d.d(a, { Z: () => D });
-            var r = d(674132),
+            var r = d(332920),
                 n = d.n(r),
                 o = d(833458),
                 t = d(530813);
@@ -414,7 +415,7 @@
                 t = d(731708),
                 l = d(154003),
                 s = d(392237),
-                i = d(674132),
+                i = d(332920),
                 u = d.n(i),
                 c = d(272175);
             const m = (0, d(500002).ZP)(({ staticContext: e, status: a = 404 }) => (e && (e.statusCode = a), r.createElement(c.ql, null, r.createElement("meta", { content: "noindex, nofollow", name: "robots" })))),
@@ -430,4 +431,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.248c4a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.b1b7449a.js.map

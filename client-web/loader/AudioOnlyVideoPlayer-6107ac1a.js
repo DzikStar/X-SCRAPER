@@ -10,13 +10,13 @@
                 a = r(682474),
                 s = r(392237),
                 c = r(893164),
-                l = r(395367),
-                u = r(908478);
+                u = r(395367),
+                l = r(908478);
             function p(t) {
                 let e = f(t);
                 return (t) => {
                     const r = f(t);
-                    return (0, u.Z)(e, r) || (e = r), e;
+                    return (0, l.Z)(e, r) || (e = r), e;
                 };
             }
             function f(t) {
@@ -68,12 +68,12 @@
                 }
                 render() {
                     const { guestsState: t, playerApi: e, playerState: r, stablePlayerState: i } = this.state,
-                        { additionalBadges: s, aspectRatio: u, basePlayerClass: p, children: f, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: y, objectFitVideo: g, onApiReady: x, onScroll: m, onStateUpdate: b, playerId: S, size: E, ...w } = this.props,
-                        R = { aspectRatio: this.props.aspectRatio, guestsState: t, playerApi: e, playerState: r, containerRef: this._containerRef },
-                        C = { ...R, playerState: i };
+                        { additionalBadges: s, aspectRatio: l, basePlayerClass: p, children: f, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: y, objectFitVideo: g, onApiReady: x, onScroll: m, onStateUpdate: b, playerId: S, size: E, ...R } = this.props,
+                        w = { aspectRatio: this.props.aspectRatio, guestsState: t, playerApi: e, playerState: r, containerRef: this._containerRef },
+                        C = { ...w, playerState: i };
                     return o.createElement(
                         a.Z,
-                        { isFullScreen: y, onScroll: m, ratio: u, style: [v.root, v[E]] },
+                        { isFullScreen: y, onScroll: m, ratio: l, style: [v.root, v[E]] },
                         this.state.hasError
                             ? o.createElement(c.Z, { onReloadPress: this._handleReload })
                             : o.createElement(
@@ -81,8 +81,8 @@
                                   { value: C },
                                   o.createElement(
                                       d.PeriodicContext.Provider,
-                                      { value: R },
-                                      o.createElement(l.Z.RegistrationContext.Consumer, null, ({ registerPlayer: t }) => o.createElement(p, (0, n.Z)({}, w, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: g }, setPlayerApi: this._handlePlayerApi(t) }))),
+                                      { value: w },
+                                      o.createElement(u.Z.RegistrationContext.Consumer, null, ({ registerPlayer: t }) => o.createElement(p, (0, n.Z)({}, R, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: g }, setPlayerApi: this._handlePlayerApi(t) }))),
                                   ),
                               ),
                     );
@@ -155,32 +155,19 @@
             r.d(e, { Z: () => h });
             var n = r(202784),
                 o = r(325686),
-                i = r(674132),
+                i = r(332920),
                 a = r.n(i),
                 s = r(355830),
                 c = r(731708),
-                l = r(154003),
-                u = r(992942),
+                u = r(154003),
+                l = r(992942),
                 p = r(392237);
             const f = a().a9edea48;
             function h(t) {
                 const { displayBackgroundImage: e = !1, errorMessage: r, iconPlayError: i, imageSrc: a, onReloadPress: h } = t;
-                return n.createElement(o.Z, { style: [p.default.absoluteFill, e ? null : d.blankOverlay] }, e ? n.createElement(n.Fragment, null, n.createElement(o.Z, { style: d.backgroundImage }, a && n.createElement(u.Z, { resizeMode: "cover", source: a, style: p.default.absoluteFill })), n.createElement(o.Z, { style: d.overlay })) : null, n.createElement(o.Z, { style: d.errorContainer }, n.createElement(o.Z, null, i ? n.createElement(s.default, { style: d.playErrorIcon }) : null), n.createElement(o.Z, { focusable: !0 }, n.createElement(c.ZP, { style: e ? d.errorMsgTextWhite : d.errorMsgTextGray }, r)), h ? n.createElement(l.ZP, { onPress: h, style: d.buttonContainer, type: "brandFilled" }, f) : null));
+                return n.createElement(o.Z, { style: [p.default.absoluteFill, e ? null : d.blankOverlay] }, e ? n.createElement(n.Fragment, null, n.createElement(o.Z, { style: d.backgroundImage }, a && n.createElement(l.Z, { resizeMode: "cover", source: a, style: p.default.absoluteFill })), n.createElement(o.Z, { style: d.overlay })) : null, n.createElement(o.Z, { style: d.errorContainer }, n.createElement(o.Z, null, i ? n.createElement(s.default, { style: d.playErrorIcon }) : null), n.createElement(o.Z, { focusable: !0 }, n.createElement(c.ZP, { style: e ? d.errorMsgTextWhite : d.errorMsgTextGray }, r)), h ? n.createElement(u.ZP, { onPress: h, style: d.buttonContainer, type: "brandFilled" }, f) : null));
             }
             const d = p.default.create((t) => ({ backgroundImage: { ...p.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...p.default.absoluteFillObject, backgroundColor: t.colors.translucentBlack77 }, blankOverlay: { backgroundColor: t.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: t.spaces.space32 }, errorMsgTextWhite: { color: t.colors.white, textAlign: "center", marginBottom: t.spaces.space20 }, errorMsgTextGray: { color: t.colors.gray700, textAlign: "center", marginBottom: t.spaces.space20 }, playErrorIcon: { fill: t.colors.gray700, height: t.spaces.space48, width: t.spaces.space48, marginHorizontal: "auto", paddingBottom: t.spaces.space20, verticalAlign: "middle" } }));
-        },
-        355830: (t, e, r) => {
-            r.r(e), r.d(e, { default: () => c });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (t = {}) => {
-                const { direction: e } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [a.Z.root, t.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.5c1.808 0 3.51.46 4.995 1.26l-1.491 1.49C14.435 3.77 13.249 3.5 12 3.5c-4.694 0-8.5 3.81-8.5 8.5 0 1.25.269 2.44.753 3.5L2.762 17C1.957 15.51 1.5 13.81 1.5 12 1.5 6.2 6.201 1.5 12 1.5zm0 19c-1.249 0-2.435-.27-3.504-.75l-1.491 1.49c1.485.8 3.187 1.26 4.995 1.26 5.799 0 10.5-4.7 10.5-10.5 0-1.81-.457-3.51-1.262-5l-1.491 1.5c.484 1.06.753 2.25.753 3.5 0 4.69-3.806 8.5-8.5 8.5zm8.5-18.41L15.086 7.5 16.5 8.91l5.414-5.41L20.5 2.09zm-4 9.91l-7-4.45v8.9l7-4.45zm-13 9.91L8.414 17 7 15.59 2.086 20.5 3.5 21.91z" })) }, { writingDirection: e });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
         },
         411240: (t, e, r) => {
             r.d(e, { Z: () => n });
@@ -221,8 +208,8 @@
                 a = r(464960),
                 s = r(991943),
                 c = r(782359),
-                l = r(639646),
-                u = r(462324),
+                u = r(639646),
+                l = r(462324),
                 p = r(928403),
                 f = r(478830),
                 h = Array;
@@ -239,11 +226,11 @@
                     b,
                     S,
                     E,
-                    w = f(e),
-                    R = 0;
-                if (!w || (this === h && s(w))) for (g = l(e), x = r ? new this(g) : h(g); g > R; R++) (E = y ? v(e[R], R) : e[R]), u(x, R, E);
-                else for (S = (b = p(e, w)).next, x = r ? new this() : []; !(m = o(S, b)).done; R++) (E = y ? a(b, v, [m.value, R], !0) : m.value), u(x, R, E);
-                return (x.length = R), x;
+                    R = f(e),
+                    w = 0;
+                if (!R || (this === h && s(R))) for (g = u(e), x = r ? new this(g) : h(g); g > w; w++) (E = y ? v(e[w], w) : e[w]), l(x, w, E);
+                else for (S = (b = p(e, R)).next, x = r ? new this() : []; !(m = o(S, b)).done; w++) (E = y ? a(b, v, [m.value, w], !0) : m.value), l(x, w, E);
+                return (x.length = w), x;
             };
         },
         689996: (t, e, r) => {
@@ -253,19 +240,19 @@
                 a = r(492991),
                 s = r(639646),
                 c = r(387501),
-                l = o([].push),
-                u = function (t) {
+                u = o([].push),
+                l = function (t) {
                     var e = 1 === t,
                         r = 2 === t,
                         o = 3 === t,
-                        u = 4 === t,
+                        l = 4 === t,
                         p = 6 === t,
                         f = 7 === t,
                         h = 5 === t || p;
                     return function (d, v, y, g) {
-                        for (var x, m, b = a(d), S = i(b), E = n(v, y), w = s(S), R = 0, C = g || c, P = e ? C(d, w) : r || f ? C(d, 0) : void 0; w > R; R++)
-                            if ((h || R in S) && ((m = E((x = S[R]), R, b)), t))
-                                if (e) P[R] = m;
+                        for (var x, m, b = a(d), S = i(b), E = n(v, y), R = s(S), w = 0, C = g || c, P = e ? C(d, R) : r || f ? C(d, 0) : void 0; R > w; w++)
+                            if ((h || w in S) && ((m = E((x = S[w]), w, b)), t))
+                                if (e) P[w] = m;
                                 else if (m)
                                     switch (t) {
                                         case 3:
@@ -273,21 +260,21 @@
                                         case 5:
                                             return x;
                                         case 6:
-                                            return R;
+                                            return w;
                                         case 2:
-                                            l(P, x);
+                                            u(P, x);
                                     }
                                 else
                                     switch (t) {
                                         case 4:
                                             return !1;
                                         case 7:
-                                            l(P, x);
+                                            u(P, x);
                                     }
-                        return p ? -1 : o || u ? u : P;
+                        return p ? -1 : o || l ? l : P;
                     };
                 };
-            t.exports = { forEach: u(0), map: u(1), filter: u(2), some: u(3), every: u(4), find: u(5), findIndex: u(6), filterReject: u(7) };
+            t.exports = { forEach: l(0), map: l(1), filter: l(2), some: l(3), every: l(4), find: l(5), findIndex: l(6), filterReject: l(7) };
         },
         331460: (t, e, r) => {
             var n = r(824229),
@@ -335,23 +322,23 @@
                 a = r(639646),
                 s = TypeError,
                 c = function (t) {
-                    return function (e, r, c, l) {
+                    return function (e, r, c, u) {
                         n(r);
-                        var u = o(e),
-                            p = i(u),
-                            f = a(u),
+                        var l = o(e),
+                            p = i(l),
+                            f = a(l),
                             h = t ? f - 1 : 0,
                             d = t ? -1 : 1;
                         if (c < 2)
                             for (;;) {
                                 if (h in p) {
-                                    (l = p[h]), (h += d);
+                                    (u = p[h]), (h += d);
                                     break;
                                 }
                                 if (((h += d), t ? h < 0 : f <= h)) throw new s("Reduce of empty array with no initial value");
                             }
-                        for (; t ? h >= 0 : f > h; h += d) h in p && (l = r(l, p[h], h, u));
-                        return l;
+                        for (; t ? h >= 0 : f > h; h += d) h in p && (u = r(u, p[h], h, l));
+                        return u;
                     };
                 };
             t.exports = { left: c(!1), right: c(!0) };
@@ -477,23 +464,23 @@
                 a = r(198270),
                 s = r(1909),
                 c = r(357188),
-                l = Function,
-                u = n([].concat),
+                u = Function,
+                l = n([].concat),
                 p = n([].join),
                 f = {};
             t.exports = c
-                ? l.bind
+                ? u.bind
                 : function (t) {
                       var e = o(this),
                           r = e.prototype,
                           n = s(arguments, 1),
                           c = function () {
-                              var r = u(n, s(arguments));
+                              var r = l(n, s(arguments));
                               return this instanceof c
                                   ? (function (t, e, r) {
                                         if (!a(f, e)) {
                                             for (var n = [], o = 0; o < e; o++) n[o] = "a[" + o + "]";
-                                            f[e] = l("C,a", "return new C(" + p(n, ",") + ")");
+                                            f[e] = u("C,a", "return new C(" + p(n, ",") + ")");
                                         }
                                         return f[e](t, r);
                                     })(e, r.length, r)
@@ -536,15 +523,15 @@
                 if (i(t)) return t;
                 if (o(t)) {
                     for (var e = t.length, r = [], n = 0; n < e; n++) {
-                        var l = t[n];
-                        "string" == typeof l ? c(r, l) : ("number" != typeof l && "Number" !== a(l) && "String" !== a(l)) || c(r, s(l));
+                        var u = t[n];
+                        "string" == typeof u ? c(r, u) : ("number" != typeof u && "Number" !== a(u) && "String" !== a(u)) || c(r, s(u));
                     }
-                    var u = r.length,
+                    var l = r.length,
                         p = !0;
                     return function (t, e) {
                         if (p) return (p = !1), e;
                         if (o(this)) return e;
-                        for (var n = 0; n < u; n++) if (r[n] === t) return e;
+                        for (var n = 0; n < l; n++) if (r[n] === t) return e;
                     };
                 }
             };
@@ -568,16 +555,16 @@
                 a = r(781589),
                 s = r(431333),
                 c = r(108511),
-                l = function () {},
-                u = [],
+                u = function () {},
+                l = [],
                 p = s("Reflect", "construct"),
                 f = /^\s*(?:class|function)\b/,
                 h = n(f.exec),
-                d = !f.test(l),
+                d = !f.test(u),
                 v = function (t) {
                     if (!i(t)) return !1;
                     try {
-                        return p(l, u, t), !0;
+                        return p(u, l, t), !0;
                     } catch (t) {
                         return !1;
                     }
@@ -620,8 +607,8 @@
                 a = r(659821),
                 s = r(991943),
                 c = r(639646),
-                l = r(291321),
-                u = r(928403),
+                u = r(291321),
+                l = r(928403),
                 p = r(478830),
                 f = r(257281),
                 h = TypeError,
@@ -637,27 +624,27 @@
                     b,
                     S,
                     E,
-                    w = r && r.that,
-                    R = !(!r || !r.AS_ENTRIES),
+                    R = r && r.that,
+                    w = !(!r || !r.AS_ENTRIES),
                     C = !(!r || !r.IS_RECORD),
                     P = !(!r || !r.IS_ITERATOR),
                     A = !(!r || !r.INTERRUPTED),
-                    _ = n(e, w),
+                    _ = n(e, R),
                     I = function (t) {
                         return y && f(y, "normal", t), new d(!0, t);
                     },
                     T = function (t) {
-                        return R ? (i(t), A ? _(t[0], t[1], I) : _(t[0], t[1])) : A ? _(t, I) : _(t);
+                        return w ? (i(t), A ? _(t[0], t[1], I) : _(t[0], t[1])) : A ? _(t, I) : _(t);
                     };
                 if (C) y = t.iterator;
                 else if (P) y = t;
                 else {
                     if (!(g = p(t))) throw new h(a(t) + " is not iterable");
                     if (s(g)) {
-                        for (x = 0, m = c(t); m > x; x++) if ((b = T(t[x])) && l(v, b)) return b;
+                        for (x = 0, m = c(t); m > x; x++) if ((b = T(t[x])) && u(v, b)) return b;
                         return new d(!1);
                     }
-                    y = u(t, g);
+                    y = l(t, g);
                 }
                 for (S = C ? t.next : y.next; !(E = o(S, y)).done; ) {
                     try {
@@ -665,7 +652,7 @@
                     } catch (t) {
                         f(y, "throw", t);
                     }
-                    if ("object" == typeof b && b && l(v, b)) return b;
+                    if ("object" == typeof b && b && u(v, b)) return b;
                 }
                 return new d(!1);
             };
@@ -700,9 +687,9 @@
                 c = function () {
                     return this;
                 };
-            t.exports = function (t, e, r, l) {
-                var u = e + " Iterator";
-                return (t.prototype = o(n, { next: i(+!l, r) })), a(t, u, !1, !0), (s[u] = c), t;
+            t.exports = function (t, e, r, u) {
+                var l = e + " Iterator";
+                return (t.prototype = o(n, { next: i(+!u, r) })), a(t, l, !1, !0), (s[l] = c), t;
             };
         },
         712707: (t, e, r) => {
@@ -712,8 +699,8 @@
                 a = r(951805),
                 s = r(26733),
                 c = r(42247),
-                l = r(567567),
-                u = r(956540),
+                u = r(567567),
+                l = r(956540),
                 p = r(954555),
                 f = r(675762),
                 h = r(914768),
@@ -726,8 +713,8 @@
                 b = y.BUGGY_SAFARI_ITERATORS,
                 S = d("iterator"),
                 E = "keys",
-                w = "values",
-                R = "entries",
+                R = "values",
+                w = "entries",
                 C = function () {
                     return this;
                 };
@@ -741,8 +728,8 @@
                         if (!b && t && t in M) return M[t];
                         switch (t) {
                             case E:
-                            case w:
                             case R:
+                            case w:
                                 return function () {
                                     return new r(this, t);
                                 };
@@ -756,22 +743,22 @@
                     M = t.prototype,
                     k = M[S] || M["@@iterator"] || (d && M[d]),
                     j = (!b && k) || T(d),
-                    D = ("Array" === e && M.entries) || k;
+                    F = ("Array" === e && M.entries) || k;
                 if (
-                    (D && (A = l(D.call(new t()))) !== Object.prototype && A.next && (i || l(A) === m || (u ? u(A, m) : s(A[S]) || h(A, S, C)), p(A, O, !0, !0), i && (v[O] = C)),
+                    (F && (A = u(F.call(new t()))) !== Object.prototype && A.next && (i || u(A) === m || (l ? l(A, m) : s(A[S]) || h(A, S, C)), p(A, O, !0, !0), i && (v[O] = C)),
                     g &&
-                        d === w &&
+                        d === R &&
                         k &&
-                        k.name !== w &&
+                        k.name !== R &&
                         (!i && x
-                            ? f(M, "name", w)
+                            ? f(M, "name", R)
                             : ((L = !0),
                               (j = function () {
                                   return o(k, this);
                               }))),
                     d)
                 )
-                    if (((_ = { values: T(w), keys: y ? j : T(E), entries: T(R) }), P)) for (I in _) (b || L || !(I in M)) && h(M, I, _[I]);
+                    if (((_ = { values: T(R), keys: y ? j : T(E), entries: T(w) }), P)) for (I in _) (b || L || !(I in M)) && h(M, I, _[I]);
                     else n({ target: e, proto: !0, forced: b || L }, _);
                 return (i && !P) || M[S] === j || h(M, S, j, { name: d }), (v[e] = j), _;
             };
@@ -783,21 +770,21 @@
                 a = r(824229),
                 s = r(26733),
                 c = r(685052),
-                l = r(822391),
-                u = r(567567),
+                u = r(822391),
+                l = r(567567),
                 p = r(914768),
                 f = r(670095),
                 h = r(124231),
                 d = f("iterator"),
                 v = !1;
-            [].keys && ("next" in (i = [].keys()) ? (o = u(u(i))) !== Object.prototype && (n = o) : (v = !0)),
+            [].keys && ("next" in (i = [].keys()) ? (o = l(l(i))) !== Object.prototype && (n = o) : (v = !0)),
                 !c(n) ||
                 a(function () {
                     var t = {};
                     return n[d].call(t) !== t;
                 })
                     ? (n = {})
-                    : h && (n = l(n)),
+                    : h && (n = u(n)),
                 s(n[d]) ||
                     p(n, d, function () {
                         return this;
@@ -814,8 +801,8 @@
                 a,
                 s,
                 c = r(609859),
-                l = r(497636),
-                u = r(997933).f,
+                u = r(497636),
+                l = r(997933).f,
                 p = r(155795).set,
                 f = r(193358),
                 h = r(232023),
@@ -826,43 +813,43 @@
                 x = c.document,
                 m = c.process,
                 b = c.Promise,
-                S = u(c, "queueMicrotask"),
+                S = l(c, "queueMicrotask"),
                 E = S && S.value;
             if (!E) {
-                var w = new f(),
-                    R = function () {
+                var R = new f(),
+                    w = function () {
                         var t, e;
-                        for (y && (t = m.domain) && t.exit(); (e = w.get()); )
+                        for (y && (t = m.domain) && t.exit(); (e = R.get()); )
                             try {
                                 e();
                             } catch (t) {
-                                throw (w.head && n(), t);
+                                throw (R.head && n(), t);
                             }
                         t && t.enter();
                     };
                 h || y || v || !g || !x
                     ? !d && b && b.resolve
                         ? (((a = b.resolve(void 0)).constructor = b),
-                          (s = l(a.then, a)),
+                          (s = u(a.then, a)),
                           (n = function () {
-                              s(R);
+                              s(w);
                           }))
                         : y
                           ? (n = function () {
-                                m.nextTick(R);
+                                m.nextTick(w);
                             })
-                          : ((p = l(p, c)),
+                          : ((p = u(p, c)),
                             (n = function () {
-                                p(R);
+                                p(w);
                             }))
                     : ((o = !0),
                       (i = x.createTextNode("")),
-                      new g(R).observe(i, { characterData: !0 }),
+                      new g(w).observe(i, { characterData: !0 }),
                       (n = function () {
                           i.data = o = !o;
                       })),
                     (E = function (t) {
-                        w.head || n(), w.add(t);
+                        R.head || n(), R.add(t);
                     });
             }
             t.exports = E;
@@ -890,8 +877,8 @@
                 a = r(824229),
                 s = r(765632),
                 c = r(110894),
-                l = r(119195),
-                u = r(492991),
+                u = r(119195),
+                l = r(492991),
                 p = r(409337),
                 f = Object.assign,
                 h = Object.defineProperty,
@@ -929,7 +916,7 @@
                     );
                 })
                     ? function (t, e) {
-                          for (var r = u(t), o = arguments.length, a = 1, f = c.f, h = l.f; o > a; ) for (var v, y = p(arguments[a++]), g = f ? d(s(y), f(y)) : s(y), x = g.length, m = 0; x > m; ) (v = g[m++]), (n && !i(h, y, v)) || (r[v] = y[v]);
+                          for (var r = l(t), o = arguments.length, a = 1, f = c.f, h = u.f; o > a; ) for (var v, y = p(arguments[a++]), g = f ? d(s(y), f(y)) : s(y), x = g.length, m = 0; x > m; ) (v = g[m++]), (n && !i(h, y, v)) || (r[v] = y[v]);
                           return r;
                       }
                     : f;
@@ -981,8 +968,8 @@
                 a = r(46541),
                 s = r(108511),
                 c = r(670095),
-                l = r(748639),
-                u = r(95189),
+                u = r(748639),
+                l = r(95189),
                 p = r(124231),
                 f = r(406358),
                 h = o && o.prototype,
@@ -1006,7 +993,7 @@
                             };
                         if ((((r.constructor = {})[d] = n), !(v = r.then(function () {}) instanceof n))) return !0;
                     }
-                    return !e && (l || u) && !y;
+                    return !e && (u || l) && !y;
                 });
             t.exports = { CONSTRUCTOR: g, REJECTION_EVENT: y, SUBCLASSING: v };
         },
@@ -1058,13 +1045,13 @@
                 a = r(265968),
                 s = r(783326),
                 c = r(730895),
-                l = r(25650),
-                u = r(933036),
+                u = r(25650),
+                l = r(933036),
                 p = r(822391),
                 f = r(856407).get,
                 h = r(542926),
                 d = r(210461),
-                v = u("native-string-replace", String.prototype.replace),
+                v = l("native-string-replace", String.prototype.replace),
                 y = RegExp.prototype.exec,
                 g = y,
                 x = a("".charAt),
@@ -1072,35 +1059,35 @@
                 b = a("".replace),
                 S = a("".slice),
                 E = ((o = /b*/g), i(y, (n = /a/), "a"), i(y, o, "a"), 0 !== n.lastIndex || 0 !== o.lastIndex),
-                w = l.BROKEN_CARET,
-                R = void 0 !== /()??/.exec("")[1];
-            (E || R || w || h || d) &&
+                R = u.BROKEN_CARET,
+                w = void 0 !== /()??/.exec("")[1];
+            (E || w || R || h || d) &&
                 (g = function (t) {
                     var e,
                         r,
                         n,
                         o,
                         a,
-                        l,
                         u,
+                        l,
                         h = this,
                         d = f(h),
                         C = s(t),
                         P = d.raw;
                     if (P) return (P.lastIndex = h.lastIndex), (e = i(g, P, C)), (h.lastIndex = P.lastIndex), e;
                     var A = d.groups,
-                        _ = w && h.sticky,
+                        _ = R && h.sticky,
                         I = i(c, h),
                         T = h.source,
                         O = 0,
                         L = C;
                     if (
                         (_ && ((I = b(I, "y", "")), -1 === m(I, "g") && (I += "g"), (L = S(C, h.lastIndex)), h.lastIndex > 0 && (!h.multiline || (h.multiline && "\n" !== x(C, h.lastIndex - 1))) && ((T = "(?: " + T + ")"), (L = " " + L), O++), (r = new RegExp("^(?:" + T + ")", I))),
-                        R && (r = new RegExp("^" + T + "$(?!\\s)", I)),
+                        w && (r = new RegExp("^" + T + "$(?!\\s)", I)),
                         E && (n = h.lastIndex),
                         (o = i(y, _ ? r : h, L)),
                         _ ? (o ? ((o.input = S(o.input, O)), (o[0] = S(o[0], O)), (o.index = h.lastIndex), (h.lastIndex += o[0].length)) : (h.lastIndex = 0)) : E && o && (h.lastIndex = h.global ? o.index + o[0].length : n),
-                        R &&
+                        w &&
                             o &&
                             o.length > 1 &&
                             i(v, o[0], r, function () {
@@ -1108,7 +1095,7 @@
                             }),
                         o && A)
                     )
-                        for (o.groups = l = p(null), a = 0; a < A.length; a++) l[(u = A[a])[0]] = o[u[1]];
+                        for (o.groups = u = p(null), a = 0; a < A.length; a++) u[(l = A[a])[0]] = o[l[1]];
                     return o;
                 }),
                 (t.exports = g);
@@ -1175,17 +1162,17 @@
                 a = r(26733),
                 s = r(737995),
                 c = r(180598),
-                l = r(1909),
-                u = r(977579),
+                u = r(1909),
+                l = r(977579),
                 p = o.Function,
                 f = /MSIE .\./.test(c) || (s && ((n = o.Bun.version.split(".")).length < 3 || ("0" === n[0] && (n[1] < 3 || ("3" === n[1] && "0" === n[2])))));
             t.exports = function (t, e) {
                 var r = e ? 2 : 1;
                 return f
                     ? function (n, o) {
-                          var s = u(arguments.length, 1) > r,
+                          var s = l(arguments.length, 1) > r,
                               c = a(n) ? n : p(n),
-                              f = s ? l(arguments, r) : [],
+                              f = s ? u(arguments, r) : [],
                               h = s
                                   ? function () {
                                         i(c, this, f);
@@ -1241,18 +1228,18 @@
                 a = r(558885),
                 s = n("".charAt),
                 c = n("".charCodeAt),
-                l = n("".slice),
-                u = function (t) {
+                u = n("".slice),
+                l = function (t) {
                     return function (e, r) {
                         var n,
-                            u,
+                            l,
                             p = i(a(e)),
                             f = o(r),
                             h = p.length;
-                        return f < 0 || f >= h ? (t ? "" : void 0) : (n = c(p, f)) < 55296 || n > 56319 || f + 1 === h || (u = c(p, f + 1)) < 56320 || u > 57343 ? (t ? s(p, f) : n) : t ? l(p, f, f + 2) : u - 56320 + ((n - 55296) << 10) + 65536;
+                        return f < 0 || f >= h ? (t ? "" : void 0) : (n = c(p, f)) < 55296 || n > 56319 || f + 1 === h || (l = c(p, f + 1)) < 56320 || l > 57343 ? (t ? s(p, f) : n) : t ? u(p, f, f + 2) : l - 56320 + ((n - 55296) << 10) + 65536;
                     };
                 };
-            t.exports = { codeAt: u(!1), charAt: u(!0) };
+            t.exports = { codeAt: l(!1), charAt: l(!0) };
         },
         1017: (t, e, r) => {
             var n = r(265968),
@@ -1261,14 +1248,14 @@
                 a = r(841647),
                 s = n("".replace),
                 c = RegExp("^[" + a + "]+"),
-                l = RegExp("(^|[^" + a + "])[" + a + "]+$"),
-                u = function (t) {
+                u = RegExp("(^|[^" + a + "])[" + a + "]+$"),
+                l = function (t) {
                     return function (e) {
                         var r = i(o(e));
-                        return 1 & t && (r = s(r, c, "")), 2 & t && (r = s(r, l, "$1")), r;
+                        return 1 & t && (r = s(r, c, "")), 2 & t && (r = s(r, u, "$1")), r;
                     };
                 };
-            t.exports = { start: u(1), end: u(2), trim: u(3) };
+            t.exports = { start: l(1), end: l(2), trim: l(3) };
         },
         566481: (t, e, r) => {
             var n = r(720266),
@@ -1303,8 +1290,8 @@
                 a,
                 s = r(609859),
                 c = r(653171),
-                l = r(497636),
-                u = r(26733),
+                u = r(497636),
+                l = r(26733),
                 p = r(198270),
                 f = r(824229),
                 h = r(53777),
@@ -1317,8 +1304,8 @@
                 b = s.clearImmediate,
                 S = s.process,
                 E = s.Dispatch,
-                w = s.Function,
-                R = s.MessageChannel,
+                R = s.Function,
+                w = s.MessageChannel,
                 C = s.String,
                 P = 0,
                 A = {},
@@ -1346,7 +1333,7 @@
             (m && b) ||
                 ((m = function (t) {
                     y(arguments.length, 1);
-                    var e = u(t) ? t : w(t),
+                    var e = l(t) ? t : R(t),
                         r = d(arguments, 1);
                     return (
                         (A[++P] = function () {
@@ -1367,9 +1354,9 @@
                       ? (o = function (t) {
                             E.now(T(t));
                         })
-                      : R && !g
-                        ? ((a = (i = new R()).port2), (i.port1.onmessage = O), (o = l(a.postMessage, a)))
-                        : s.addEventListener && u(s.postMessage) && !s.importScripts && n && "file:" !== n.protocol && !f(L)
+                      : w && !g
+                        ? ((a = (i = new w()).port2), (i.port1.onmessage = O), (o = u(a.postMessage, a)))
+                        : s.addEventListener && l(s.postMessage) && !s.importScripts && n && "file:" !== n.protocol && !f(L)
                           ? ((o = L), s.addEventListener("message", O, !1))
                           : (o =
                                 _ in v("script")
@@ -1406,4 +1393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioOnlyVideoPlayer-6107ac1a.bc8e641a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioOnlyVideoPlayer-6107ac1a.989d8d9a.js.map

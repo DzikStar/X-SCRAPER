@@ -135,7 +135,7 @@
                 n = a(731708),
                 r = a(457311),
                 l = a(392237),
-                o = a(674132),
+                o = a(332920),
                 c = a.n(o);
             const u = (0, s.ju)("https://support.x.com/articles/117063"),
                 d = "sensitive",
@@ -270,7 +270,7 @@
             a.d(t, { Z: () => d });
             var i = a(202784),
                 s = a(154003),
-                n = a(674132),
+                n = a(332920),
                 r = a.n(n);
             const l = r().j1d352d8,
                 o = r().d18909d4,
@@ -305,4 +305,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-1347f5f8.617a506a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-1347f5f8.a140240a.js.map

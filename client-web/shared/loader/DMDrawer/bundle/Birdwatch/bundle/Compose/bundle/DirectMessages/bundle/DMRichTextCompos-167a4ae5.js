@@ -8,7 +8,7 @@
                 a = n(466999),
                 o = n(325686),
                 s = n(392237),
-                d = n(674132);
+                d = n(332920);
             const r = n.n(d)().e5b0063d;
             let l = 0;
             class _ extends i.Component {
@@ -95,7 +95,7 @@
         734408: (e, t, n) => {
             n.d(t, { AU: () => f, O4: () => S, Vb: () => v });
             n(136728);
-            var i = n(674132),
+            var i = n(332920),
                 a = n.n(i),
                 o = n(817480),
                 s = n(323265),
@@ -736,4 +736,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.8b5f73fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.f91d0c9a.js.map

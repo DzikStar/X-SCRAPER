@@ -85,7 +85,7 @@
             s(136728), s(574858), s(543673), s(240753), s(128399);
             var a = s(468811),
                 i = s.n(a),
-                n = s(674132),
+                n = s(332920),
                 r = s.n(n),
                 o = s(123702);
             const u = r().c3f04d9c,
@@ -343,4 +343,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.c3b6713a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.f682f32a.js.map

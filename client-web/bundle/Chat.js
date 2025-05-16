@@ -9,7 +9,7 @@
                 s = a(731708),
                 c = a(154003),
                 o = a(392237),
-                l = a(674132),
+                l = a(332920),
                 i = a.n(l),
                 d = a(737691),
                 h = a(382285),
@@ -49,4 +49,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Chat.d5fd1d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Chat.eed339aa.js.map

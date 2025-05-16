@@ -11,7 +11,7 @@
                 o = a(154003),
                 c = a(721266),
                 s = a(392237),
-                d = a(674132),
+                d = a(332920),
                 p = a.n(d),
                 u = a(456677),
                 m = a(258292),
@@ -70,7 +70,7 @@
                 u = a(834324),
                 m = a(392237),
                 g = a(909377),
-                b = a(674132),
+                b = a(332920),
                 f = a.n(b),
                 h = a(281312),
                 y = a(956272),
@@ -206,7 +206,7 @@
                 i = a(593866),
                 o = a(154003),
                 c = a(392237),
-                s = a(674132),
+                s = a(332920),
                 d = a.n(s),
                 p = a(81327),
                 u = a(155576),
@@ -279,7 +279,7 @@
             a.d(t, { Z: () => u });
             var n = a(202784),
                 r = a(834324),
-                l = a(674132),
+                l = a(332920),
                 i = a.n(l),
                 o = a(500040);
             const c = i().g97a2d6c,
@@ -294,7 +294,7 @@
                 r = a(202784),
                 l = a(138099),
                 i = a(81327),
-                o = a(674132),
+                o = a(332920),
                 c = a.n(o);
             const s = (e) => Object.fromEntries(Object.entries(e).map(([e, t], a) => [e, String(t)])),
                 d = c().b3de4a42,
@@ -426,4 +426,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-7d965b76.c071427a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-7d965b76.8853c87a.js.map

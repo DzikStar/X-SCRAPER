@@ -139,7 +139,7 @@
                 i = n(468811),
                 s = n.n(i),
                 r = n(725405),
-                o = n(695356);
+                o = n(669636);
             const c = ({ sessionTimeoutMs: e = 1e4, activeTimeThreshold: t = 5e3 }) => {
                 const [n, i] = l.useState(s().v4()),
                     c = (0, r.Z)(),
@@ -212,7 +212,7 @@
                 f = n(246728);
             const _ = { fontSize: 18, lineHeight: 30 };
             var b = n(448301),
-                k = n(695356),
+                k = n(669636),
                 w = n(992942);
             function x({ blurAmount: e, imageOpacity: t, imageUrl: n, style: a }) {
                 return n ? l.createElement(w.Z, { resizeMode: "cover", source: n, style: [S.banner, { opacity: t }, { filter: `blur(${e || 0}px)` }, a] }) : null;
@@ -512,7 +512,7 @@
                 a = (n(136728), n(202784)),
                 i = n(107267),
                 s = n(154003),
-                r = n(674132),
+                r = n(332920),
                 o = n.n(r),
                 c = n(786272),
                 u = n(323265),
@@ -740,4 +740,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.53c5245a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.2f4dc06a.js.map

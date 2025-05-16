@@ -8,7 +8,7 @@
                 r = n(107267),
                 c = n(992942),
                 s = n(529356),
-                o = n(674132),
+                o = n(332920),
                 l = n.n(o),
                 i = n(198433),
                 m = n(736063),
@@ -210,7 +210,7 @@
                 g = n(487552),
                 f = n(43429),
                 E = n(477922),
-                k = n(674132),
+                k = n(332920),
                 I = n.n(k),
                 b = n(727384);
             const P = ({ fees: e }) => {
@@ -1076,4 +1076,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.927b44ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.51ac36ea.js.map

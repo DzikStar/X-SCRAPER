@@ -169,7 +169,7 @@
         },
         591354: (e, t, s) => {
             s.d(t, { Be: () => y, C5: () => m, Cf: () => d, DD: () => b, DP: () => _, I_: () => h, L7: () => c, LH: () => r, PN: () => v, Pr: () => n, SH: () => a, WB: () => g, _3: () => l, bl: () => C, cB: () => f, iX: () => u, st: () => p });
-            var o = s(674132),
+            var o = s(332920),
                 i = s.n(o);
             const n = i().eeb64451,
                 r = i().f3c268a5,
@@ -193,7 +193,7 @@
             s.d(t, { T: () => C, Z: () => E });
             var o = s(202784),
                 i = s(325686),
-                n = s(674132),
+                n = s(332920),
                 r = s.n(n),
                 a = s(530732),
                 l = s(659651),
@@ -371,4 +371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU.8d3c91ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU.fd31bf6a.js.map

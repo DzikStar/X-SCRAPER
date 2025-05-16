@@ -12,7 +12,7 @@
                 l = a(420740),
                 c = a(529356),
                 m = a(392237),
-                d = a(674132),
+                d = a(332920),
                 p = a.n(d),
                 u = a(323265),
                 g = a(290402),
@@ -889,7 +889,7 @@
         },
         979673: (e, t, a) => {
             a.d(t, { LU: () => s, Qy: () => d, fV: () => m, jf: () => c });
-            var r = a(674132),
+            var r = a(332920),
                 o = a.n(r);
             const i = o().ja781451,
                 n = o().cfa1a7b9,
@@ -915,4 +915,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a7d46b56.1621ac9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a7d46b56.74b2cdfa.js.map

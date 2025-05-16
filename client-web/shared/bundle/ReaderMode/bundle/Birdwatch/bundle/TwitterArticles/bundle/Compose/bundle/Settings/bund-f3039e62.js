@@ -6,7 +6,7 @@
             o.d(t, { Z: () => E });
             var n = o(202784),
                 l = o(154003),
-                r = o(674132),
+                r = o(332920),
                 i = o.n(r),
                 a = o(74514),
                 s = o(405303),
@@ -67,7 +67,7 @@
             o(136728);
             var n = o(202784),
                 l = o(970187),
-                r = o(674132),
+                r = o(332920),
                 i = o.n(r),
                 a = o(258292),
                 s = o(500002),
@@ -157,7 +157,7 @@
             var n = o(202784),
                 l = o(154003),
                 r = o(392237),
-                i = o(674132),
+                i = o(332920),
                 a = o.n(i),
                 s = o(837020),
                 c = o(725516),
@@ -216,7 +216,7 @@
             var n = o(202784),
                 l = o(154003),
                 r = o(392237),
-                i = o(674132),
+                i = o(332920),
                 a = o.n(i),
                 s = o(416276),
                 c = o(725405),
@@ -261,7 +261,7 @@
                 a = o(995145),
                 s = o(373926),
                 c = o(392237),
-                d = o(674132),
+                d = o(332920),
                 u = o.n(d),
                 f = o(837020),
                 h = o(516951),
@@ -313,4 +313,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62.00c3a83a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62.774a8c2a.js.map

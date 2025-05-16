@@ -6,7 +6,7 @@
             n.r(t), n.d(t, { default: () => v });
             var o = n(351322),
                 a = n(202784),
-                r = n(674132),
+                r = n(332920),
                 s = n.n(r),
                 i = n(177371);
             const c = s().b52a940c,
@@ -22,4 +22,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.tweetUnavailableTombstoneHandler.795a17aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.tweetUnavailableTombstoneHandler.67536f4a.js.map

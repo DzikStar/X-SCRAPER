@@ -72,7 +72,7 @@
         306540: (e, t, n) => {
             n.r(t), n.d(t, { GenericTimelineScreen: () => g, default: () => b });
             var i = n(202784),
-                r = n(674132),
+                r = n(332920),
                 o = n.n(r),
                 a = n(718e3),
                 s = n(252021),
@@ -96,4 +96,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GenericTimeline.a3dbb54a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GenericTimeline.32e513aa.js.map

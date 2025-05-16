@@ -1,10 +1,10 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.SettingsRevamp"],
     {
-        294718: (e) => {
+        485466: (e) => {
             e.exports = { queryId: "_ckHEj05gan2VfNHG6thBA", operationName: "DisableUserAccountLabel", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        523085: (e) => {
+        126538: (e) => {
             e.exports = { queryId: "rD5gLxVmMvtdtYU1UHWlFQ", operationName: "UserAccountLabel", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         129270: (e, t, n) => {
@@ -40,9 +40,9 @@
                 r = n.n(a),
                 o = n(163889),
                 i = n(414742),
-                s = n(294718),
+                s = n(485466),
                 l = n.n(s),
-                c = n(523085),
+                c = n(126538),
                 d = n.n(c),
                 u = n(503768);
             const m = (e, t) => {
@@ -299,7 +299,7 @@
                 o = n(731708),
                 i = n(779610),
                 s = n(88307),
-                l = n(674132),
+                l = n(332920),
                 c = n.n(l),
                 d = n(443781),
                 u = n(652904),
@@ -591,7 +591,7 @@
                 d = n(154003),
                 u = n(844685),
                 m = n(779610),
-                h = n(674132),
+                h = n(332920),
                 p = n.n(h),
                 b = n(516951),
                 g = n(443781),
@@ -731,7 +731,7 @@
             var a = n(202784),
                 r = n(325686),
                 o = n(943401),
-                i = n(674132),
+                i = n(332920),
                 s = n.n(i),
                 l = n(511323),
                 c = n(581543),
@@ -798,7 +798,7 @@
                 m = n(529356),
                 h = n(943401),
                 p = n(392237),
-                b = n(674132),
+                b = n(332920),
                 g = n.n(b),
                 E = n(47086),
                 f = n(293723),
@@ -920,7 +920,7 @@
                 u = n(943401),
                 m = n(954110),
                 h = n(190286),
-                p = n(674132),
+                p = n(332920),
                 b = n.n(p),
                 g = n(143095),
                 E = n(652904),
@@ -1155,7 +1155,7 @@
                 r = n(202784),
                 o = n(325686),
                 i = n(943401),
-                s = n(674132),
+                s = n(332920),
                 l = n.n(s),
                 c = n(517747),
                 d = n(744649),
@@ -1293,4 +1293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.adaa465a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.5553bd2a.js.map

@@ -1375,7 +1375,7 @@
                 i = a(466999),
                 t = a(325686),
                 r = a(392237),
-                s = a(674132);
+                s = a(332920);
             const u = a.n(s)().e5b0063d;
             let d = 0;
             class o extends n.Component {
@@ -1428,7 +1428,7 @@
                 u = a(439592),
                 d = a(868634),
                 o = a(392237),
-                c = a(674132),
+                c = a(332920),
                 m = a.n(c),
                 g = a(275450),
                 y = a(632658),
@@ -1538,4 +1538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.a8825c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.92311c2a.js.map

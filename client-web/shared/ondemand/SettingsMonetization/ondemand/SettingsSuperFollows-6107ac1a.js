@@ -556,7 +556,7 @@
                 l = a(466999),
                 t = a(325686),
                 s = a(392237),
-                i = a(674132);
+                i = a(332920);
             const o = a.n(i)().e5b0063d;
             let d = 0;
             class u extends r.Component {
@@ -791,7 +791,7 @@
                 f = a.n(g),
                 b = a(420412),
                 y = a(954110),
-                h = a(674132),
+                h = a(332920),
                 F = a.n(h),
                 k = a(125363),
                 _ = a(390387);
@@ -833,7 +833,7 @@
                 o = a.n(i),
                 d = a(154003),
                 u = a(190286),
-                c = a(674132),
+                c = a(332920),
                 m = a.n(c),
                 p = a(668214),
                 g = a(601576);
@@ -1027,4 +1027,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.bef3109a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.e65cc00a.js.map

@@ -73,7 +73,7 @@
                 k = i(900783),
                 A = i(797553),
                 P = i(143670),
-                Z = i(674132),
+                Z = i(332920),
                 R = i.n(Z),
                 M = i(264171),
                 B = i(674306),
@@ -989,4 +989,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-a2dee9c7.1ec91b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-a2dee9c7.4fbdbc2a.js.map

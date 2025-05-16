@@ -139,7 +139,7 @@
                 a = i(731708),
                 l = i(420412),
                 o = i(392237),
-                s = i(674132),
+                s = i(332920),
                 c = i.n(s),
                 d = i(263272),
                 p = i(293723),
@@ -174,7 +174,7 @@
             var n = i(202784),
                 r = i(154003),
                 a = i(392237),
-                l = i(674132),
+                l = i(332920),
                 o = i.n(l),
                 s = i(692165),
                 c = i(115553),
@@ -284,7 +284,7 @@
         698579: (e, t, i) => {
             i.d(t, { F9: () => F, Fx: () => Z, XS: () => p, Xb: () => $, j0: () => k });
             var n = i(688715),
-                r = i(674132),
+                r = i(332920),
                 a = i.n(r),
                 l = i(234558),
                 o = i(491831),
@@ -354,7 +354,7 @@
                 l = i(731708),
                 o = i(420412),
                 s = i(392237),
-                c = i(674132),
+                c = i(332920),
                 d = i.n(c),
                 p = i(293723),
                 u = i(263272),
@@ -452,4 +452,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.dcf1b93a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.f338822a.js.map

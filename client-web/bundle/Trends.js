@@ -50,7 +50,7 @@
             var a = n(202784),
                 o = n(154003),
                 r = n(392237),
-                i = n(674132),
+                i = n(332920),
                 s = n.n(i),
                 l = n(698891);
             const c = "settingsAppBar",
@@ -146,7 +146,7 @@
         32677: (e, t, n) => {
             n.d(t, { Z: () => d });
             var a = n(202784),
-                o = n(674132),
+                o = n(332920),
                 r = n.n(o),
                 i = n(186444),
                 s = n(355883);
@@ -246,7 +246,7 @@
             var a = n(202784),
                 o = n(457311),
                 r = n(108362),
-                i = n(674132),
+                i = n(332920),
                 s = n.n(i),
                 l = n(233935),
                 c = n(718e3),
@@ -291,4 +291,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Trends.8d9c537a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Trends.1acb31ca.js.map

@@ -1,33 +1,33 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.NotABot"],
     {
-        584550: (e) => {
+        110669: (e) => {
             e.exports = { queryId: "V8-RP7SxlI4qzRmpCmEqgw", operationName: "ListProductSubscriptions", operationType: "query", metadata: { featureSwitches: ["subscriptions_management_fetch_next_billing_time", "subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
         },
-        322766: (e) => {
+        551445: (e) => {
             e.exports = { queryId: "RM4x9h3tF8bCn69VV3-gRg", operationName: "NotABotCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        263378: (e) => {
+        525552: (e) => {
             e.exports = { queryId: "-kH-xt82ZhKnAMTXv1Fuzg", operationName: "SubscriptionCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        322060: (e) => {
+        57068: (e) => {
             e.exports = { queryId: "yIGOH-WMQSU-AdbfVRZm9A", operationName: "SubscriptionProductDetails", operationType: "query", metadata: { featureSwitches: ["subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
         },
-        601377: (e) => {
+        554034: (e) => {
             e.exports = { queryId: "NEMw3cw4v0-Oo-nTMI8reQ", operationName: "SwitchTier", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         372551: (e, t, r) => {
             "use strict";
             r.d(t, { Z: () => m });
-            var a = r(584550),
+            var a = r(110669),
                 o = r.n(a),
-                i = r(322766),
+                i = r(551445),
                 n = r.n(i),
-                s = r(263378),
+                s = r(525552),
                 c = r.n(s),
-                l = r(322060),
+                l = r(57068),
                 d = r.n(l),
-                u = r(601377),
+                u = r(554034),
                 p = r.n(u);
             const m = ({ apiClient: e, featureSwitches: t }) => ({ fetchSubscriptionProductDetails: (t) => e.graphQL(d(), t).then((e) => e.web_subscription_product_details), fetchSubscriptionProductCheckoutUrl: (t) => e.graphQL(c(), t).then((e) => e.subscriptioncheckoutsession_create_for_blue?.session_url), fetchNotABotCheckoutUrl: (t) => e.graphQL(n(), t).then((e) => e.subscriptioncheckoutsession_create_for_not_a_bot?.session_url), fetchProductSubscriptions: (t) => e.graphQL(o(), t).then((e) => e.viewer_v2?.list_product_subscriptions), switchTier: (t) => e.graphQL(p(), t).then((e) => e) });
         },
@@ -83,7 +83,7 @@
                 i = r(182056),
                 n = r(879113),
                 s = r(392237),
-                c = r(674132),
+                c = r(332920),
                 l = r.n(c),
                 d = r(968478);
             const u = l().aa6e3300,
@@ -176,7 +176,7 @@
         97882: (e, t, r) => {
             "use strict";
             r.d(t, { T: () => i, x: () => n });
-            var a = r(674132),
+            var a = r(332920),
                 o = r.n(a);
             const i = { AED: o().d857e44d, ALL: o().cb87e3db, ARS: o().a9d5ffd1, AUD: o().a0e8371d, BAM: o().gcc50dc9, BDT: o().a6a43585, BGN: o().a0cc8f2d, BHD: o().i31c32c5, BRL: o().i7dc69e9, BYR: o().c14a6c03, CAD: o().jaa3d537, CHF: o().a824080b, CLP: o().d9c0bedb, CNY: o().bf8c0613, COP: o().i8163625, CZK: o().adb53ba1, DKK: o().iabf697d, DZD: o().a1a0555b, EGP: o().f266f3d9, EUR: o().a9a8652b, GBP: o().dbf40761, GHS: o().b0d993d9, GTQ: o().ac1308e1, HKD: o().a7889ab3, HRK: o().c614f5cd, HUF: o().i55d57e3, IDR: o().e4b6002b, ILS: o().d28e983b, INR: o().e8c9232d, IQD: o().c8994ae1, ISK: o().f821c2a5, JPY: o().j348b9c9, KES: o().i6f93b9b, KRW: o().c6150bd5, KWD: o().i8921e09, KZT: o().ef239279, LBP: o().hecdb149, MAD: o().fdd039b7, MKD: o().f30c2c37, MXN: o().d9ea7bff, MYR: o().ea3df4b7, NGN: o().jaac21bb, NOK: o().hb435ced, NZD: o().ce699d81, PEN: o().bc56d3d7, PHP: o().f8561913, PKR: o().g6485d53, PLN: o().ff561cc1, QAR: o().b42011d3, RON: o().a6660bcd, RSD: o().f9b80449, RUB: o().gdee4d5d, SAR: o().h36f2103, SEK: o().a19ad037, SGD: o().g713f699, THB: o().ff2e39af, TND: o().be34316d, TRY: o().aef81b75, TWD: o().fcce70a5, TZS: o().jc9d352f, UAH: o().be1cb8c5, UGX: o().j9371501, USD: o().j7d4397d, VEF: o().d61441dd, VND: o().e2a99e97, ZAR: o().f7ce19ab, ZMW: o().b2a0213f },
                 n = ({ amount: e, currencyCode: t = "USD", formatter: r = 1e6, removeTrailingZeros: a = !1, strictAmount: o = !1 }) => {
@@ -203,7 +203,7 @@
         548797: (e, t, r) => {
             "use strict";
             r.d(t, { Ld: () => d, gS: () => l, pB: () => s, yv: () => c });
-            var a = r(674132),
+            var a = r(332920),
                 o = r.n(a),
                 i = r(337394);
             const n = o().b47d123d,
@@ -253,7 +253,7 @@
             "use strict";
             r.d(t, { Gi: () => _, Mk: () => S, ZV: () => f, aU: () => h, d3: () => g, fS: () => E, pt: () => b });
             r(202784);
-            var a = r(674132),
+            var a = r(332920),
                 o = r.n(a),
                 i = r(336629),
                 n = r(862695),
@@ -301,7 +301,7 @@
         },
         365265: (e, t, r) => {
             "use strict";
-            r.d(t, { $B: () => _, F$: () => g, Ne: () => C, RC: () => P, VR: () => S, dF: () => y, h9: () => b, hu: () => k, pC: () => E, qB: () => T, tF: () => f, v1: () => I, xN: () => B });
+            r.d(t, { $B: () => _, F$: () => g, Ne: () => C, RC: () => P, VR: () => S, dF: () => y, h9: () => b, hu: () => k, pC: () => E, qB: () => T, tF: () => f, v1: () => I, xN: () => w });
             var a = r(372551),
                 o = r(147595),
                 i = r(499627),
@@ -368,7 +368,7 @@
                             i = S(t());
                         return i !== s.ZP.NONE && i !== s.ZP.FAILED ? Promise.resolve() : o({ actionTypes: p, context: "FETCH_PRODUCT_SUBSCRIPTIONS", meta: {} });
                     },
-                B =
+                w =
                     (e) =>
                     (t, r, { api: o }) => {
                         const i = (0, n._O)(t, { params: { price_id: e }, request: o.withEndpoint(a.Z).switchTier }),
@@ -431,7 +431,7 @@
                 s = r(386802),
                 c = r(731708),
                 l = r(392237),
-                d = r(674132),
+                d = r(332920),
                 u = r.n(d),
                 p = r(323265),
                 m = r(980407),
@@ -474,7 +474,7 @@
             var T = r(668214);
             const k = (0, T.Z)().withAnalytics({ page: "not_a_bot", section: "marketing" }),
                 I = "webviewOneDollarEventMessageHandler",
-                B = k((e) => {
+                w = k((e) => {
                     const [t, r] = a.useState(!1),
                         [o, i] = a.useState(""),
                         { onClick: n, webviewMessageHandler: s } = e,
@@ -508,20 +508,20 @@
                     );
                 });
             r(136728);
-            var w = r(290402),
+            var B = r(290402),
                 U = r(952793),
                 Z = r(97882),
-                R = r(685731),
-                x = r(365265);
-            const v = (0, T.Z)()
-                    .propsFromState(() => ({ productDetailsFetchStatus: (e, t) => (0, x.tF)(e, t.stripeProductId), productDetails: (e, t) => (0, x.h9)(e, t.stripeProductId), checkoutUrlFetchStatus: (e, t) => (0, x.$B)(e, t.stripeProductId), checkoutUrl: (e, t) => (0, x.F$)(e, t.stripeProductId) }))
-                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: x.Ne, fetchNotABotCheckoutUrl: x.hu }))
+                v = r(685731),
+                R = r(365265);
+            const x = (0, T.Z)()
+                    .propsFromState(() => ({ productDetailsFetchStatus: (e, t) => (0, R.tF)(e, t.stripeProductId), productDetails: (e, t) => (0, R.h9)(e, t.stripeProductId), checkoutUrlFetchStatus: (e, t) => (0, R.$B)(e, t.stripeProductId), checkoutUrl: (e, t) => (0, R.F$)(e, t.stripeProductId) }))
+                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: R.Ne, fetchNotABotCheckoutUrl: R.hu }))
                     .withAnalytics({ page: "not_a_bot", section: "marketing" }),
                 D = `https://${window.location.host}`,
                 L = `${D}/i/not_a_bot`,
                 F = `${L}/successful`,
                 N = u().c41e1023,
-                A = v((e) => {
+                M = x((e) => {
                     const { analytics: t, checkoutUrl: r, checkoutUrlFetchStatus: o, fetchNotABotCheckoutUrl: i, fetchSubscriptionProductDetails: s, isMobile: c, onClick: l, productDetails: d, productDetailsFetchStatus: u, stripeProductId: p, stripeProductIdUnhashed: m } = e,
                         h = (0, U.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         f = (0, n.useHistory)(),
@@ -557,7 +557,7 @@
                         y = () => {
                             const e = S();
                             if (e) {
-                                const t = (0, Z.x)({ amount: (0, R.aU)(e, h), currencyCode: e.currency_code.toUpperCase() });
+                                const t = (0, Z.x)({ amount: (0, v.aU)(e, h), currencyCode: e.currency_code.toUpperCase() });
                                 return N({ price: t });
                             }
                             return "";
@@ -565,7 +565,7 @@
                     return a.createElement(
                         a.Fragment,
                         null,
-                        a.createElement(w.Z, {
+                        a.createElement(B.Z, {
                             fetchStatus: u,
                             onRequestRetry: () => {
                                 _();
@@ -573,16 +573,16 @@
                             render: () => a.createElement(C, { disabled: !d || "loading" === o, isMobile: c || !1, onSubscribe: E, price: y() }),
                             retryable: !0,
                         }),
-                        r && a.createElement(w.Z, { fetchStatus: o, onRequestRetry: E, render: () => (r && (window.location.href = r), null), retryable: !0 }),
+                        r && a.createElement(B.Z, { fetchStatus: o, onRequestRetry: E, render: () => (r && (window.location.href = r), null), retryable: !0 }),
                     );
                 }),
-                M = (0, T.Z)()
-                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: x.Ne, fetchSubscriptionProductCheckoutUrl: x.qB }))
+                A = (0, T.Z)()
+                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: R.Ne, fetchSubscriptionProductCheckoutUrl: R.qB }))
                     .withAnalytics({ page: "not_a_bot", section: "marketing" }),
                 O = u().cea1c00e,
                 H = u().f8e6a280,
                 W = u().h968efc6,
-                V = M((e) => {
+                V = A((e) => {
                     const t = (0, n.useHistory)(),
                         r = (0, n.useLocation)(),
                         { isModal: l } = a.useContext(s.Z),
@@ -609,9 +609,9 @@
                         C = !!p.ZP.isWebView(),
                         T = C ? W : H,
                         k = C && window.webkit?.messageHandlers && window.webkit.messageHandlers[I];
-                    return a.createElement(m.Z, { backButtonType: "close", hideBackButton: C, history: t }, a.createElement(i.Z, { style: Q.page }, a.createElement(c.ZP, { "aria-level": 2, role: "heading", size: "title2", style: Q.headline, weight: "heavy" }, O), a.createElement(c.ZP, { color: "gray700", style: Q.subtext }, T), k ? a.createElement(B, { onClick: y, webviewMessageHandler: k }) : a.createElement(A, { isMobile: P, onClick: y, stripeProductId: S, stripeProductIdUnhashed: E })));
+                    return a.createElement(m.Z, { backButtonType: "close", hideBackButton: C, history: t }, a.createElement(i.Z, { style: z.page }, a.createElement(c.ZP, { "aria-level": 2, role: "heading", size: "title2", style: z.headline, weight: "heavy" }, O), a.createElement(c.ZP, { color: "gray700", style: z.subtext }, T), k ? a.createElement(w, { onClick: y, webviewMessageHandler: k }) : a.createElement(M, { isMobile: P, onClick: y, stripeProductId: S, stripeProductIdUnhashed: E })));
                 }),
-                Q = l.default.create((e) => ({ page: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "left", paddingEnd: e.spaces.space36, paddingStart: e.spaces.space36 }, headline: { marginTop: e.spaces.space8 }, itemBackground: { backgroundColor: e.colors.gray100 }, learnMoreButton: { paddingBottom: e.spaces.space32 }, learnMoreLink: { color: e.colors.link, marginTop: e.spaces.space4 }, learnMoreLinkRedesign: { color: e.colors.gray800, marginTop: e.spaces.space4, textDecorationLine: "underline" }, learnMoreTitleStyles: { fontWeight: "normal", color: e.colors.gray800, textDecorationLine: "underline" }, marginTop8: { marginTop: e.spaces.space8 }, maxWidth: { maxWidth: "80%" }, maxWidthExtraSmall: { maxWidth: "70%" }, positionRelative: { position: "relative" }, productSelector: { marginBottom: e.spaces.space12 }, sectionSpacing: { paddingBottom: e.spaces.space12 }, subtext: { marginTop: e.spaces.space12, marginBottom: e.spaces.space32, alignItems: "center", justifyContent: "center" } }));
+                z = l.default.create((e) => ({ page: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "left", paddingEnd: e.spaces.space36, paddingStart: e.spaces.space36 }, headline: { marginTop: e.spaces.space8 }, itemBackground: { backgroundColor: e.colors.gray100 }, learnMoreButton: { paddingBottom: e.spaces.space32 }, learnMoreLink: { color: e.colors.link, marginTop: e.spaces.space4 }, learnMoreLinkRedesign: { color: e.colors.gray800, marginTop: e.spaces.space4, textDecorationLine: "underline" }, learnMoreTitleStyles: { fontWeight: "normal", color: e.colors.gray800, textDecorationLine: "underline" }, marginTop8: { marginTop: e.spaces.space8 }, maxWidth: { maxWidth: "80%" }, maxWidthExtraSmall: { maxWidth: "70%" }, positionRelative: { position: "relative" }, productSelector: { marginBottom: e.spaces.space12 }, sectionSpacing: { paddingBottom: e.spaces.space12 }, subtext: { marginTop: e.spaces.space12, marginBottom: e.spaces.space32, alignItems: "center", justifyContent: "center" } }));
         },
         877895: (e, t, r) => {
             "use strict";
@@ -624,7 +624,7 @@
                 s = r(731708),
                 c = r(154003),
                 l = r(392237),
-                d = r(674132),
+                d = r(332920),
                 u = r.n(d);
             const p = u().a893d602,
                 m = u().fce91ab4,
@@ -648,7 +648,7 @@
                 n = r(731708),
                 s = r(154003),
                 c = r(392237),
-                l = r(674132),
+                l = r(332920),
                 d = r.n(l);
             const u = d().c3d89aca,
                 p = d().e20f6662,
@@ -679,7 +679,7 @@
                 o = r(325686),
                 i = r(731708),
                 n = r(392237),
-                s = r(674132),
+                s = r(332920),
                 c = r.n(s),
                 l = r(336629);
             const d = c().i57aeafb,
@@ -731,6 +731,20 @@
             }
             m.defaultProps = { renderFailure: n.Z, retryable: !0 };
         },
+        748138: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => c });
+            var a = r(202784),
+                o = r(890601),
+                i = r(783427),
+                n = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotABot.ff45972a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotABot.032bccda.js.map

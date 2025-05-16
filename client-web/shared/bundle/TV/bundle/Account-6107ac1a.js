@@ -906,7 +906,7 @@
         978053: (t, e, o) => {
             "use strict";
             o.d(e, { default: () => y });
-            var n = o(674132),
+            var n = o(332920),
                 s = o.n(n);
             const i = s().e3098e07,
                 r = s().fea16a51,
@@ -1543,4 +1543,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.22da428a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.87a7a81a.js.map

@@ -7,7 +7,7 @@
             var n = o(202784),
                 a = o(154003),
                 s = o(392237),
-                i = o(674132),
+                i = o(332920),
                 l = o.n(i),
                 r = o(698891);
             const c = "settingsAppBar",
@@ -33,7 +33,7 @@
             o.r(t), o.d(t, { ConnectTabs: () => R, TabConfig: () => T, default: () => I });
             var n = o(202784),
                 a = o(392237),
-                s = o(674132),
+                s = o(332920),
                 i = o.n(s),
                 l = o(233935),
                 r = o(718e3),
@@ -116,7 +116,7 @@
                 i = o(235902),
                 l = o(392237),
                 r = o(325686),
-                c = o(674132),
+                c = o(332920),
                 d = o.n(c),
                 p = o(912021),
                 u = o(516951),
@@ -213,4 +213,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConnectTab.5bd0838a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConnectTab.0cdc453a.js.map

@@ -31,7 +31,7 @@
                 s = n(466999),
                 a = n(325686),
                 r = n(392237),
-                i = n(674132);
+                i = n(332920);
             const o = n.n(i)().e5b0063d;
             let u = 0;
             class c extends t.Component {
@@ -79,7 +79,7 @@
             var t = n(53307),
                 s = n(202784),
                 a = (n(585488), n(731708)),
-                r = n(674132),
+                r = n(332920),
                 i = n.n(r),
                 o = n(736063),
                 u = n(535338),
@@ -105,7 +105,7 @@
                 r = (n(585488), n(277660)),
                 i = n.n(r),
                 o = n(392237),
-                u = n(674132),
+                u = n(332920),
                 c = n.n(u),
                 d = n(784380),
                 m = n(264223),
@@ -233,4 +233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-a2dee9c7.da01284a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-a2dee9c7.85469eca.js.map

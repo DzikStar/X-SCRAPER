@@ -14,7 +14,7 @@
             var o = n(202784),
                 a = n(638236),
                 r = n(811176),
-                i = n(674132),
+                i = n(332920),
                 l = n.n(i),
                 s = n(415506),
                 c = n(516951),
@@ -147,7 +147,7 @@
             var o = n(202784),
                 a = n(688715),
                 r = n(392237),
-                i = n(674132),
+                i = n(332920),
                 l = n.n(i),
                 s = n(281312),
                 c = n(805e3);
@@ -167,7 +167,7 @@
         553161: (e, t, n) => {
             n.d(t, { Z: () => u });
             var o = n(202784),
-                a = n(674132),
+                a = n(332920),
                 r = n.n(a),
                 i = n(805e3),
                 l = n(467691);
@@ -197,7 +197,7 @@
                 s = n(154003),
                 c = n(530732),
                 d = n(392237),
-                p = n(674132),
+                p = n(332920),
                 m = n.n(p),
                 u = n(211971),
                 h = n(58399),
@@ -229,7 +229,7 @@
                 s = n(530732),
                 c = n(466792),
                 d = n(392237),
-                p = n(674132),
+                p = n(332920),
                 m = n.n(p),
                 u = n(211971),
                 h = n(711223),
@@ -269,7 +269,7 @@
                 s = n(154003),
                 c = n(731708),
                 d = n(392237),
-                p = n(674132),
+                p = n(332920),
                 m = n.n(p);
             const u = m().df45f564,
                 h = m().i569ff3e;
@@ -356,7 +356,7 @@
                 r = n(952428),
                 i = n(731708),
                 l = n(392237),
-                s = n(674132),
+                s = n(332920),
                 c = n.n(s),
                 d = n(53674),
                 p = n(443781),
@@ -382,7 +382,7 @@
                 a = n(891198),
                 r = n(98538),
                 i = n(731708),
-                l = n(674132),
+                l = n(332920),
                 s = n.n(l),
                 c = n(288955);
             const d = (0, n(725516).Z)(({ coinCount: e, isLabel: t, link: n }) => {
@@ -427,7 +427,7 @@
                 i = n(952428),
                 l = n(731708),
                 s = n(392237),
-                c = n(674132),
+                c = n(332920),
                 d = n.n(c),
                 p = n(53674),
                 m = n(443781),
@@ -484,7 +484,7 @@
                 p = n(530525),
                 m = n(439592),
                 u = n(154003),
-                h = n(674132),
+                h = n(332920),
                 g = n.n(h),
                 b = n(323265),
                 f = n(443781),
@@ -595,7 +595,7 @@
                 a = n(325686),
                 r = n(731708),
                 i = n(392237),
-                l = n(674132),
+                l = n(332920),
                 s = n.n(l),
                 c = n(283379);
             const d = s().g6237a1e,
@@ -617,7 +617,7 @@
                 l = n(731708),
                 s = n(891198),
                 c = n(98538),
-                d = n(674132),
+                d = n(332920),
                 p = n.n(d),
                 m = n(288955),
                 u = n(725516);
@@ -715,7 +715,7 @@
                 r = n(124964),
                 i = n(731708),
                 l = n(392237),
-                s = n(674132),
+                s = n(332920),
                 c = n.n(s),
                 d = n(265196),
                 p = n(421575),
@@ -817,7 +817,7 @@
             var o = n(202784),
                 a = n(731708),
                 r = n(392237),
-                i = n(674132),
+                i = n(332920),
                 l = n.n(i),
                 s = n(808525);
             const c = l().aaad27c8;
@@ -836,7 +836,7 @@
             var o = n(202784),
                 a = n(392237),
                 r = n(731708),
-                i = n(674132);
+                i = n(332920);
             const l = n.n(i)().aaad27c8,
                 s = a.default.create(({ borderRadii: e, colors: t, fontSizes: n, lineHeights: o, paletteName: a, spaces: r }) => ({ label: { backgroundColor: "light" === a ? t.gray800 : t.gray200, border: `${r.space1} solid ${t.cellBackground}`, borderRadius: e.small, color: "light" === a ? t.whiteOnColor : t.text, fontSize: n.subtext3, lineHeight: o.subtext3, margin: "auto", maxWidth: "100%", paddingHorizontal: r.space2, paddingVertical: r.space1, wordBreak: "break-all" } }));
             function c() {
@@ -956,7 +956,7 @@
                 u = n(731708),
                 h = n(891198),
                 g = n(392237),
-                b = n(674132),
+                b = n(332920),
                 f = n.n(b),
                 y = n(166502),
                 w = n(187669),
@@ -1275,11 +1275,11 @@
                 a = n(325686),
                 r = n(731708),
                 i = n(392237),
-                l = n(674132);
+                l = n(332920);
             const s = n.n(l)().gd11f228,
                 c = i.default.create((e) => ({ titlePlaceholder: { opacity: 0.4 }, titleWrapper: { width: "100%" } })),
                 d = ({ numberOfLines: e, size: t = "body", style: n, title: i, weight: l = "bold" }) => o.createElement(a.Z, { style: [c.titleWrapper, !i && c.titlePlaceholder] }, o.createElement(r.ZP, { dir: "auto", numberOfLines: e, size: t, style: n, testID: "twitter-article-title", weight: l }, i || s));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407.50020cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407.1505ecda.js.map

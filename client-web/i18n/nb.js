@@ -12877,7 +12877,7 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     u
                 );
-            })(r(674132)._ActualI18NFormatMessage || l.Component);
+            })(r(332920)._ActualI18NFormatMessage || l.Component);
             t("_ActualI18NFormatMessage", k),
                 t("I18NFormatMessage", function (e) {
                     return l.createElement(k, e);
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.ce976c0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.b7363a2a.js.map

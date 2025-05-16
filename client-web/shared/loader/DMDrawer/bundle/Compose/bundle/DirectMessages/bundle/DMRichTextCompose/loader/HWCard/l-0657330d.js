@@ -6,7 +6,7 @@
             a.d(t, { Z: () => B });
             var r = a(202784),
                 s = a(325686),
-                l = a(674132),
+                l = a(332920),
                 n = a.n(l),
                 o = a(161335),
                 i = a(99223),
@@ -376,7 +376,7 @@
         },
         89217: (e, t, a) => {
             a.d(t, { Ju: () => u, Qw: () => m, eo: () => c });
-            var r = a(674132),
+            var r = a(332920),
                 s = a.n(r);
             const l = s().c69eb656,
                 n = s().g46ae43c,
@@ -392,7 +392,7 @@
             a.d(t, { G: () => c, M: () => i });
             a(571372);
             var r = a(301503),
-                s = a(674132),
+                s = a(332920),
                 l = a.n(s),
                 n = a(89217);
             const o = l().b75b8ffd,
@@ -412,4 +412,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d.52eb51da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d.664fe01a.js.map

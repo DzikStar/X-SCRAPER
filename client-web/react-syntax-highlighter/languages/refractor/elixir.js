@@ -2,7 +2,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["react-syntax-highlighter_languages_refractor_elixir"],
     {
-        479067: (e) => {
+        827949: (e) => {
             function r(e) {
                 (e.languages.elixir = {
                     doc: { pattern: /@(?:doc|moduledoc)\s+(?:("""|''')[\s\S]*?\1|("|')(?:\\(?:\r\n|[\s\S])|(?!\2)[^\\\r\n])*\2)/, inside: { attribute: /^@\w+/, string: /['"][\s\S]+/ } },
@@ -33,4 +33,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/react-syntax-highlighter_languages_refractor_elixir.3bc3878a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/react-syntax-highlighter_languages_refractor_elixir.8617499a.js.map

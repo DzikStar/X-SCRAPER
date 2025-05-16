@@ -59,7 +59,7 @@
                 c = a(449479),
                 r = a(154003),
                 s = a(392237),
-                o = a(674132),
+                o = a(332920),
                 b = a.n(o),
                 d = a(555079),
                 m = a(782535),
@@ -132,7 +132,7 @@
                 r = a(96083),
                 s = a(154003),
                 o = a(392237),
-                b = a(674132),
+                b = a(332920),
                 d = a.n(b),
                 m = a(916910),
                 E = a(555079),
@@ -189,7 +189,7 @@
         },
         957561: (e, t, a) => {
             a.d(t, { $S: () => oe, O9: () => S, OF: () => T, YB: () => f, i0: () => x, iU: () => k, nv: () => g, ut: () => L, x4: () => F });
-            var i = a(674132),
+            var i = a(332920),
                 l = a.n(i),
                 n = a(316325);
             const c = l().i79902b4,
@@ -265,7 +265,7 @@
             var i = a(202784),
                 l = a(688715),
                 n = a(731708),
-                c = a(674132),
+                c = a(332920),
                 r = a.n(c),
                 s = a(316325);
             const o = (0, l.ju)("https://help.x.com/managing-your-account/twitter-verified-accounts"),
@@ -722,4 +722,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-99cc371c.36635eea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-99cc371c.5fa027ea.js.map

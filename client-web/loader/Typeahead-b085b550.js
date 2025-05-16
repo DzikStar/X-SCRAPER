@@ -17,7 +17,7 @@
                 E = a(992942),
                 u = a(823161),
                 p = a(310088),
-                g = a(674132),
+                g = a(332920),
                 h = a.n(g),
                 C = a(275365);
             const T = l.default.create((e) => ({ circle: { borderRadius: e.borderRadii.infinite, overflow: "hidden" }, container: { height: "auto", width: "100%" }, itemAccessory: { top: -e.spacesPx.space24 + e.spacesPx.space1, end: -e.spacesPx.space16 - e.spacesPx.space1 }, userDecoration: { fontSize: e.fontSizes.subtext3, position: "absolute", backgroundColor: e.colors.gray100, marginStart: e.spaces.space8, boxSizing: "border-box", width: e.spaces.space24, height: e.spaces.space24, fontWeight: e.fontWeights.regular } })),
@@ -96,7 +96,7 @@
                 c = a(366635),
                 d = a(470397),
                 _ = a(392237),
-                m = a(674132),
+                m = a(332920),
                 E = a.n(m),
                 u = a(593953);
             const p = "DMGroupConversationTitle",
@@ -273,4 +273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-b085b550.647c644a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-b085b550.80a3d7da.js.map

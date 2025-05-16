@@ -30,12 +30,12 @@
             const o = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.23"),
-                        r.e("icons.19"),
+                        r.e("icons.0"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.14"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -84,21 +84,21 @@
             const d = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.23"),
-                        r.e("icons.16"),
-                        r.e("icons.2"),
-                        r.e("icons.10"),
-                        r.e("icons.19"),
-                        r.e("icons.24"),
+                        r.e("icons.5"),
+                        r.e("icons.12"),
+                        r.e("icons.20"),
+                        r.e("icons.0"),
+                        r.e("icons.21"),
+                        r.e("icons.28"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.13"),
-                        r.e("icons.27"),
                         r.e("icons.22"),
-                        r.e("icons.17"),
-                        r.e("icons.7"),
-                        r.e("icons.21"),
-                        r.e("icons.18"),
+                        r.e("icons.9"),
+                        r.e("icons.25"),
+                        r.e("icons.6"),
+                        r.e("icons.10"),
+                        r.e("icons.14"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -129,7 +129,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -177,7 +177,7 @@
             r.d(a, { $f: () => M, KV: () => f, LI: () => _, SC: () => k, Vt: () => y, ed: () => T, op: () => g });
             var d = r(202784),
                 n = r(190286),
-                t = r(674132),
+                t = r(332920),
                 o = r.n(t),
                 c = r(616894),
                 l = r(314948),
@@ -231,13 +231,13 @@
         712816: (e, a, r) => {
             "use strict";
             r.d(a, { d: () => n });
-            var d = r(674132);
+            var d = r(332920);
             const n = { defaultToast: { text: r.n(d)().b6878b0a }, showToast: !0 };
         },
         879596: (e, a, r) => {
             "use strict";
             r.d(a, { D: () => n });
-            var d = r(674132);
+            var d = r(332920);
             const n = { defaultToast: { text: r.n(d)().ca96fe6e }, showToast: !0 };
         },
         3138: (e, a, r) => {
@@ -258,7 +258,7 @@
         736230: (e, a, r) => {
             "use strict";
             r.d(a, { CP: () => t, OG: () => o, TT: () => n, bP: () => u, mH: () => c, tX: () => l });
-            var d = r(674132);
+            var d = r(332920);
             const n = r.n(d)().g61ed8a4,
                 t = "https://jf.x.com",
                 o = "https://jf-t.x.com",
@@ -1414,4 +1414,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.96e9a48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.3ff6b11a.js.map

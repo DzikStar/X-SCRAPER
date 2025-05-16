@@ -1,22 +1,22 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsInternals-5b7ef534"],
     {
-        2012: (e) => {
+        784118: (e) => {
             e.exports = { queryId: "_bpAyM_Hf0tMuRoc5T13Aw", operationName: "DmAllSearchSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
-        305341: (e) => {
+        688911: (e) => {
             e.exports = { queryId: "5zpY1dCR-8NyxQJS_CFJoQ", operationName: "DmGroupSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        802680: (e) => {
+        71377: (e) => {
             e.exports = { queryId: "YZV066l3dWOezXJXslprLQ", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
-        23110: (e) => {
+        958684: (e) => {
             e.exports = { queryId: "xYSm8m5kJnzm_gFCn5GH-w", operationName: "DmPeopleSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        422282: (e) => {
+        721222: (e) => {
             e.exports = { queryId: "2qKKYFQift8p5-J1k6kqxQ", operationName: "WriteEmailNotificationSettings", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        299560: (e) => {
+        369012: (e) => {
             e.exports = { queryId: "JpjlNgn4sLGvS6tgpTzYBg", operationName: "ViewerEmailSettings", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         871176: (e, t, i) => {
@@ -43,13 +43,13 @@
                 s = i(414742),
                 r = i(703710),
                 a = i(771613),
-                o = i(2012),
+                o = i(784118),
                 l = i.n(o),
-                _ = i(305341),
+                _ = i(688911),
                 c = i.n(_),
-                d = i(802680),
+                d = i(71377),
                 u = i.n(d),
-                p = i(23110),
+                p = i(958684),
                 m = i.n(p),
                 g = i(934309);
             const h = (e, t) => {
@@ -137,9 +137,9 @@
             "use strict";
             i.d(t, { Z: () => l });
             var n = i(163889),
-                s = i(422282),
+                s = i(721222),
                 r = i.n(s),
-                a = i(299560),
+                a = i(369012),
                 o = i.n(a);
             const l = ({ apiClient: e, featureSwitches: t }) => ({
                 fetch: () =>
@@ -315,4 +315,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-5b7ef534.1668438a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-5b7ef534.5b042f0a.js.map

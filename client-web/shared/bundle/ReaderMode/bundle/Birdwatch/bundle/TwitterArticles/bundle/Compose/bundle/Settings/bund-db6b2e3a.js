@@ -6,7 +6,7 @@
             n.d(t, { Z: () => C });
             var r = n(202784),
                 o = n(325686),
-                i = n(674132),
+                i = n(332920),
                 s = n.n(i),
                 a = n(731708),
                 l = n(235902),
@@ -100,7 +100,7 @@
             var r = n(807896),
                 o = n(202784),
                 i = n(325686),
-                s = n(674132),
+                s = n(332920),
                 a = n.n(s),
                 l = n(2138),
                 d = n(370751),
@@ -412,7 +412,7 @@
             h.defaultProps = { userAvatarSize: "jumbo", withUserAvatar: !0 };
             const g = d.default.create((e) => ({ root: { padding: e.spaces.space16 }, row: { flexDirection: "row", justifyContent: "space-between" }, marginTop12: { marginTop: e.spaces.space12 }, marginTop8: { marginTop: e.spaces.space8 }, marginTop4: { marginTop: e.spaces.space4 }, minHeight: { minHeight: e.spaces.space20 }, followButtonAtBottom: { justifyContent: "center", marginTop: e.spaces.space12 }, grokButton: { justifyContent: "center", marginTop: e.spaces.space16 } }));
             var C = n(807896);
-            var f = n(674132);
+            var f = n(332920);
             const b = n.n(f)().ef633578;
             class T extends r.PureComponent {
                 render() {
@@ -432,7 +432,7 @@
         646797: (e, t, n) => {
             n.d(t, { Z: () => l });
             var r = n(202784),
-                o = n(674132),
+                o = n(332920),
                 i = n.n(o),
                 s = n(891198),
                 a = n(98538);
@@ -447,4 +447,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a.3bd759ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a.c472f5da.js.map

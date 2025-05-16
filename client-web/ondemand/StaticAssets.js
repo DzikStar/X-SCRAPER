@@ -330,7 +330,6 @@
                 "./sticky/money/payment-method-amex.svg": 21882,
                 "./sticky/money/payment-method-mastercard.svg": 33779,
                 "./sticky/money/payment-method-visa.svg": 317452,
-                "./wasm/forwarded-for-v1.wasm": 165908,
             };
             function r(t) {
                 var e = a(t);
@@ -1896,10 +1895,6 @@
             "use strict";
             t.exports = i.p + "payment-method-visa.c768170a.svg";
         },
-        165908: (t, e, i) => {
-            "use strict";
-            t.exports = i.p + "forwarded-for-v1.52898e8a.wasm";
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.3b9ca03a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.0518104a.js.map

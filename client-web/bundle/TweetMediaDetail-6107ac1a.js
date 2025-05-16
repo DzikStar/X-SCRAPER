@@ -18,7 +18,7 @@
             var m = o(807896),
                 _ = o(386802),
                 g = o(420740),
-                w = o(674132),
+                w = o(332920),
                 y = o.n(w),
                 f = o(952793),
                 b = o(965728);
@@ -270,7 +270,7 @@
                 a = o(154003),
                 l = o(386802),
                 c = o(392237),
-                d = o(674132),
+                d = o(332920),
                 p = o.n(d),
                 h = o(837020),
                 u = o(254944),
@@ -349,7 +349,7 @@
             o.d(t, { Z: () => l });
             var n = o(202784),
                 i = o(420740),
-                s = o(674132);
+                s = o(332920);
             const r = o.n(s)().b2311b70;
             function a() {
                 return n.createElement(i.Z, { onRetry: null, title: r });
@@ -429,7 +429,7 @@
             var n = o(202784),
                 i = o(731708),
                 s = o(392237),
-                r = o(674132),
+                r = o(332920),
                 a = o.n(r),
                 l = o(911373),
                 c = o(761744),
@@ -498,7 +498,7 @@
             o(875640);
             var n = o(202784),
                 i = o(529356),
-                s = o(674132),
+                s = o(332920),
                 r = o.n(s),
                 a = o(323265),
                 l = o(170542),
@@ -667,7 +667,7 @@
             var n = o(202784),
                 i = o(154003),
                 s = o(811176),
-                r = o(674132),
+                r = o(332920),
                 a = o.n(r),
                 l = o(517747);
             const c = a().d7b8ebaa,
@@ -831,7 +831,7 @@
         927192: (e, t, o) => {
             o.d(t, { Z: () => P });
             var n = o(202784),
-                i = o(674132),
+                i = o(332920),
                 s = o.n(i),
                 r = o(912021),
                 a = o(218093),
@@ -1198,4 +1198,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.c8a5a61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.386dd5ba.js.map

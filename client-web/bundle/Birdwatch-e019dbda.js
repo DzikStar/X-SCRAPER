@@ -48,7 +48,7 @@
                 n = a(457311),
                 r = a(708852),
                 d = a(108362),
-                s = a(674132),
+                s = a(332920),
                 i = a.n(s),
                 l = a(769471),
                 c = a(718e3),
@@ -142,9 +142,10 @@
             const y = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.16"),
+                        a.e("icons.17"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
+                        a.e("icons.22"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -390,7 +391,7 @@
             a.d(t, { Z: () => m });
             var o = a(202784),
                 n = a(555874),
-                r = a(674132),
+                r = a(332920),
                 d = a.n(r),
                 s = a(290402),
                 i = a(965245),
@@ -1078,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.ad59f24a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.aaa7ca6a.js.map

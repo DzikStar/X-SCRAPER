@@ -260,7 +260,7 @@
                 v = a(661810),
                 f = a(642153),
                 S = a(392237),
-                K = a(674132),
+                K = a(332920),
                 w = a.n(K),
                 T = a(899667),
                 U = a(487552),
@@ -359,7 +359,7 @@
         },
         380155: (e, l, a) => {
             a.d(l, { y: () => u });
-            var n = a(674132),
+            var n = a(332920),
                 s = a.n(n),
                 t = a(615656),
                 i = a(51525);
@@ -388,4 +388,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.d856030a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.a91be2da.js.map

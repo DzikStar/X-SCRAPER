@@ -20,7 +20,7 @@
                 f = r(971765),
                 h = r(916692),
                 I = r(804455),
-                b = r(674132),
+                b = r(332920),
                 Z = r.n(b),
                 v = r(737691),
                 A = r(731708),
@@ -106,4 +106,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerEventsUI.7963613a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerEventsUI.c6bd7e3a.js.map
