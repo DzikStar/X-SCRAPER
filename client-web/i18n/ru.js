@@ -1037,11 +1037,11 @@
                 n("dec3c9b8", "Пароль"),
                 n("b929aa74", "Чтобы сохранить изменения в учетной записи, еще раз введите пароль."),
                 n("d1091f50", "Забыли пароль?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "Здесь показаны ключи доступа со всех ваших устройств"),
+                n("d9921a6c", "Создать ключ доступа"),
                 n("i4855730", "Удалить ключ доступа"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Добавлен: " + e.date;
                 }),
                 n("d97c07be", "Управление подписками на создателей контента"),
                 n("efa291da", "Просматривайте свои подписки на перечисленных ниже создателей контента и управляйте или с помощью Stripe. Управлять активными подписками, приобретенными в iOS или Android, можно в приложении."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.86586e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.02d2bdfa.js.map

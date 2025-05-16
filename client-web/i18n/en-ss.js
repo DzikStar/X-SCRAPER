@@ -1028,11 +1028,11 @@
                 a("dec3c9b8", "[[142363]] Password"),
                 a("b929aa74", "[[280866]] Re-enter your X password to save changes to your account."),
                 a("d1091f50", "[[149848]] Forgot password?"),
-                a("fd23fe4a", "Here are your passkeys across all your devices"),
-                a("d9921a6c", "Create a new passkey"),
+                a("fd23fe4a", "[[295568]] Here are your passkeys across all your devices"),
+                a("d9921a6c", "[[295566]] Create a new passkey"),
                 a("i4855730", "[[294502]] Delete passkey"),
                 a("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "[[295567]] Date added: " + e.date;
                 }),
                 a("d97c07be", "[[276480]] Manage Creator Subscriptions"),
                 a("efa291da", "[[276487]] View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app."),
@@ -4149,7 +4149,7 @@
                     return "[[260566]] " + e.stringCount + " new request" + n(e.count, "", "s");
                 }),
                 a("ed93de0c", "[[292376]] Analyzing Post"),
-                a("d1d92e40", "More details"),
+                a("d1d92e40", "[[295500]] More details"),
                 a("a6e89af8", "[[220355]] Open conversation"),
                 a("ica55d24", "[[289966]] New Chat"),
                 a("f794af9a", "[[285085]] Fun mode"),
@@ -4362,8 +4362,8 @@
                 a("g01599b6", "[[292208]] Response 1"),
                 a("e02694e0", "[[292207]] Response 2"),
                 a("h6867fcc", "[[292206]] I prefer this response"),
-                a("acc4496c", "Try Grok Voice mode"),
-                a("jd36d190", "Access advanced features with Grok Android app"),
+                a("acc4496c", "[[295514]] Try Grok Voice mode"),
+                a("jd36d190", "[[295513]] Access advanced features with Grok Android app"),
                 a("hf9afab0", "[[293069]] Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 a("ef3b3f04", "[[293068]] Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 a("b43636b8", "[[293044]] Introducing Grok 3"),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.789d105a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.2ad7195a.js.map

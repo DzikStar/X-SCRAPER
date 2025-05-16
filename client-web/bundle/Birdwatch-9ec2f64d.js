@@ -2,17 +2,17 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Birdwatch-9ec2f64d"],
     {
-        432443: (e, t, a) => {
-            a.r(t), a.d(t, { NotAvailablePage: () => E, default: () => Z });
-            var n = a(202784),
-                r = a(325686),
-                o = a(457311),
-                l = a(392237),
-                c = a(674132),
-                i = a.n(c),
-                s = a(252021),
-                d = a(249777),
-                p = a(486361);
+        432443: (e, t, n) => {
+            n.r(t), n.d(t, { NotAvailablePage: () => E, default: () => b });
+            var a = n(202784),
+                r = n(325686),
+                o = n(457311),
+                l = n(392237),
+                c = n(674132),
+                i = n.n(c),
+                s = n(252021),
+                d = n(249777),
+                p = n(486361);
             const m = i().a15648a4,
                 u = i().h92fe1be,
                 h = i().f0dc1434,
@@ -20,97 +20,97 @@
                 g = { external: !0, pathname: "https://twitter.github.io/communitynotes/join" },
                 E = (e) => {
                     const { history: t } = e,
-                        a = n.createElement(r.Z, { style: w.contentWrapper }, n.createElement(o.Z, { buttonLink: g, buttonText: f, buttonType: "brandOutlined", header: u, message: h }));
-                    return n.createElement(s.Z, { TabBar: p.Z, history: t, primaryContent: a, sidebarContent: n.createElement(d.Z, null), title: m, withTweetButton: !1 });
+                        n = a.createElement(r.Z, { style: w.contentWrapper }, a.createElement(o.Z, { buttonLink: g, buttonText: f, buttonType: "brandOutlined", header: u, message: h }));
+                    return a.createElement(s.Z, { TabBar: p.Z, history: t, primaryContent: n, sidebarContent: a.createElement(d.Z, null), title: m, withTweetButton: !1 });
                 },
                 w = l.default.create((e) => ({ contentWrapper: { marginHorizontal: "100px" } })),
-                Z = E;
+                b = E;
         },
-        413936: (e, t, a) => {
-            a.r(t), a.d(t, { BirdwatchNoteScreen: () => M, default: () => j });
-            var n = a(202784),
-                r = a(325686),
-                o = a(457311),
-                l = a(731708),
-                c = a(420412),
-                i = a(834324),
-                s = a(952428),
-                d = a(721266),
-                p = a(392237),
-                m = a(167630),
-                u = a(674132),
-                h = a.n(u),
-                f = a(500040),
-                g = a(143778),
-                E = a(323265),
-                w = a(980407),
-                Z = a(952793),
-                b = a(4452),
-                y = a(312771),
-                _ = a(22730),
-                S = a(333577),
-                A = a(531187),
-                C = a(71620),
-                P = a(668214),
-                I = a(979090);
-            const N = (e, t) => t.match.params.noteId,
-                v = (e, t) => I.Qg(e, N(0, t)),
-                T = (e, t) => I.wd(e, N(0, t)),
-                B = (0, P.Z)()
-                    .propsFromState(() => ({ noteData: v, noteId: N, fetchStatus: T, userAlias: I.OV, showAliasSelfSelect: I.BG }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, C.zr)("BIRDWATCH_SCREEN"), fetchOneNoteIfNeeded: I.ww, fetchAuthenticatedUserProfileIfNeeded: I.eY, fetchShowAliasSelfSelect: I.aZ })),
+        413936: (e, t, n) => {
+            n.r(t), n.d(t, { BirdwatchNoteScreen: () => M, default: () => j });
+            var a = n(202784),
+                r = n(325686),
+                o = n(457311),
+                l = n(731708),
+                c = n(420412),
+                i = n(834324),
+                s = n(952428),
+                d = n(721266),
+                p = n(392237),
+                m = n(167630),
+                u = n(674132),
+                h = n.n(u),
+                f = n(500040),
+                g = n(143778),
+                E = n(323265),
+                w = n(980407),
+                b = n(952793),
+                Z = n(4452),
+                y = n(312771),
+                _ = n(22730),
+                S = n(333577),
+                A = n(531187),
+                v = n(71620),
+                C = n(668214),
+                P = n(979090);
+            const I = (e, t) => t.match.params.noteId,
+                N = (e, t) => P.Qg(e, I(0, t)),
+                T = (e, t) => P.wd(e, I(0, t)),
+                B = (0, C.Z)()
+                    .propsFromState(() => ({ noteData: N, noteId: I, fetchStatus: T, userAlias: P.OV, showAliasSelfSelect: P.BG }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, v.zr)("BIRDWATCH_SCREEN"), fetchOneNoteIfNeeded: P.ww, fetchAuthenticatedUserProfileIfNeeded: P.eY, fetchShowAliasSelfSelect: P.aZ })),
                 H = h().c87f3cf8,
                 k = h().i859a9d4,
                 x = h().efd14e7a,
                 F = h().a5b19492,
                 z = h().cf30af22,
                 W = h().c21d1b2a,
-                L = n.createElement(o.Z, { buttonLink: "/i/communitynotes/about", buttonText: k, header: F }),
+                L = a.createElement(o.Z, { buttonLink: "/i/communitynotes/about", buttonText: k, header: F }),
                 R = h().c7b59cde,
-                D = n.createElement(l.ZP, { color: "primary" }, R),
+                D = a.createElement(l.ZP, { color: "primary" }, R),
                 O = g.Z,
                 M = (e) => {
-                    const { createLocalApiErrorHandler: t, fetchAuthenticatedUserProfileIfNeeded: a, fetchOneNoteIfNeeded: o, fetchShowAliasSelfSelect: p, fetchStatus: m, history: u, location: g, noteData: C, noteId: P, showAliasSelfSelect: I, userAlias: N } = e,
-                        v = E.ZP.isTwitterApp(),
-                        [T, B] = n.useState(C);
-                    (0, b.ZP)();
-                    n.useEffect(() => {
-                        P &&
-                            o(P)
+                    const { createLocalApiErrorHandler: t, fetchAuthenticatedUserProfileIfNeeded: n, fetchOneNoteIfNeeded: o, fetchShowAliasSelfSelect: p, fetchStatus: m, history: u, location: g, noteData: v, noteId: C, showAliasSelfSelect: P, userAlias: I } = e,
+                        N = E.ZP.isTwitterApp(),
+                        [T, B] = a.useState(v);
+                    (0, Z.ZP)();
+                    a.useEffect(() => {
+                        C &&
+                            o(C)
                                 .catch(t())
                                 .finally(() => {
-                                    (0, b.jW)("birdwatch-note-ready");
+                                    (0, Z.jW)("birdwatch-note-ready");
                                 });
-                    }, [t, o, P]),
-                        n.useEffect(() => {
-                            a().catch(t());
-                        }, [t, a]),
-                        n.useEffect(() => {
+                    }, [t, o, C]),
+                        a.useEffect(() => {
+                            n().catch(t());
+                        }, [t, n]),
+                        a.useEffect(() => {
                             p().catch(t());
                         }, [t, p]),
-                        n.useEffect(() => {
-                            B(C);
-                        }, [C]);
-                    const x = (0, Z.hC)("responsive_web_birdwatch_note_writing_enabled"),
+                        a.useEffect(() => {
+                            B(v);
+                        }, [v]);
+                    const x = (0, b.hC)("responsive_web_birdwatch_note_writing_enabled"),
                         F = T?.rating_status === A.VE.CurrentlyRatedNotHelpful,
-                        R = N === T?.birdwatch_profile?.alias,
+                        R = I === T?.birdwatch_profile?.alias,
                         M = x,
-                        j = n.createElement(h().I18NFormatMessage, { $i18n: "i42495ad" }, n.createElement(l.ZP, { link: "/i/flow/join-birdwatch", withInteractiveStyling: !0, withUnderline: !0 }, h().c8be1d0d)),
+                        j = a.createElement(h().I18NFormatMessage, { $i18n: "i42495ad" }, a.createElement(l.ZP, { link: "/i/flow/join-birdwatch", withInteractiveStyling: !0, withUnderline: !0 }, h().c8be1d0d)),
                         G = g.state?.tweetId,
-                        q = n.createElement(n.Fragment, null, n.createElement(c.Z, null), n.createElement(r.Z, { style: U.inlineCalloutCRNH }, n.createElement(i.Z, { Icon: f.default, action: { label: k, link: "https://twitter.github.io/communitynotes/diversity-of-perspectives/" }, headline: z, text: W, type: "primary" }))),
-                        $ = M ? n.createElement(s.Z, null, n.createElement(l.ZP, { link: "/i/communitynotes/notification_settings", style: U.pivot, withInteractiveStyling: !1 }, D)) : null,
-                        Y = n.createElement(
+                        q = a.createElement(a.Fragment, null, a.createElement(c.Z, null), a.createElement(r.Z, { style: U.inlineCalloutCRNH }, a.createElement(i.Z, { Icon: f.default, action: { label: k, link: "https://twitter.github.io/communitynotes/diversity-of-perspectives/" }, headline: z, text: W, type: "primary" }))),
+                        $ = M ? a.createElement(s.Z, null, a.createElement(l.ZP, { link: "/i/communitynotes/notification_settings", style: U.pivot, withInteractiveStyling: !1 }, D)) : null,
+                        Y = a.createElement(
                             r.Z,
                             null,
-                            n.createElement(
+                            a.createElement(
                                 s.Z,
                                 null,
-                                v && n.createElement(d.Z, { size: "space12" }),
+                                N && a.createElement(d.Z, { size: "space12" }),
                                 T && T.data_v1
-                                    ? n.createElement(
+                                    ? a.createElement(
                                           r.Z,
                                           { style: U.contentWrapper },
-                                          n.createElement(S.Z, {
+                                          a.createElement(S.Z, {
                                               handleDelete: (e) => {
                                                   B(null);
                                               },
@@ -121,110 +121,110 @@
                                               tweetIdForRating: G,
                                           }),
                                           $,
-                                          n.createElement(d.Z, { size: "space8" }),
+                                          a.createElement(d.Z, { size: "space8" }),
                                           F && R ? q : null,
-                                          n.createElement(c.Z, null),
-                                          n.createElement(r.Z, { style: U.footer }, n.createElement(l.ZP, { color: "gray700", size: "subtext3" }, j)),
+                                          a.createElement(c.Z, null),
+                                          a.createElement(r.Z, { style: U.footer }, a.createElement(l.ZP, { color: "gray700", size: "subtext3" }, j)),
                                       )
                                     : m === y.ZP.LOADING
                                       ? V
                                       : L,
                             ),
                         );
-                    return I ? n.createElement(_.Z, null) : n.createElement(w.Z, { history: u, renderHeader: v ? O : void 0, title: H }, n.createElement(r.Z, { style: U.contentWrapper }, Y));
+                    return P ? a.createElement(_.Z, null) : a.createElement(w.Z, { history: u, renderHeader: N ? O : void 0, title: H }, a.createElement(r.Z, { style: U.contentWrapper }, Y));
                 },
                 U = p.default.create((e) => ({ calloutContainer: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, contentWrapper: { backgroundColor: e.colors.cellBackground }, inlineCalloutCRNH: { margin: e.spaces.space16 }, pivot: { paddingHorizontal: e.spaces.space28, paddingVertical: e.spaces.space12 }, spinner: { paddingTop: e.spaces.space80 }, footer: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, marginHorizontal: e.spaces.space24 } })),
-                V = n.createElement(m.Z, { "aria-label": x, size: "large", style: U.spinner }),
+                V = a.createElement(m.Z, { "aria-label": x, size: "large", style: U.spinner }),
                 j = B(M);
         },
-        329173: (e, t, a) => {
-            a.r(t), a.d(t, { SelfUserNotePageRedirect: () => w, default: () => Z });
-            var n = a(202784),
-                r = a(167630),
-                o = a(674132),
-                l = a.n(o),
-                c = a(252021),
-                i = a(615027),
-                s = a(22730),
-                d = a(249777),
-                p = a(486361),
-                m = a(910148),
-                u = a(71620),
-                h = a(668214),
-                f = a(979090);
+        329173: (e, t, n) => {
+            n.r(t), n.d(t, { SelfUserNotePageRedirect: () => w, default: () => b });
+            var a = n(202784),
+                r = n(167630),
+                o = n(674132),
+                l = n.n(o),
+                c = n(252021),
+                i = n(615027),
+                s = n(22730),
+                d = n(249777),
+                p = n(486361),
+                m = n(910148),
+                u = n(71620),
+                h = n(668214),
+                f = n(979090);
             const g = (0, h.Z)()
                     .propsFromState(() => ({ userAlias: f.OV, showAliasSelfSelect: f.BG }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("BIRDWATCH_SCREEN"), fetchAuthenticatedUserProfile: f.lC, fetchShowAliasSelfSelect: f.aZ })),
                 E = l().ff692d64,
                 w = (e) => {
-                    const { createLocalApiErrorHandler: t, fetchAuthenticatedUserProfile: a, fetchShowAliasSelfSelect: o, history: l, showAliasSelfSelect: u, userAlias: h } = e,
-                        [f, g] = n.useState(!0);
-                    n.useEffect(() => {
-                        a()
+                    const { createLocalApiErrorHandler: t, fetchAuthenticatedUserProfile: n, fetchShowAliasSelfSelect: o, history: l, showAliasSelfSelect: u, userAlias: h } = e,
+                        [f, g] = a.useState(!0);
+                    a.useEffect(() => {
+                        n()
                             .then(() => g(!1))
                             .catch(t());
-                    }, [t, a]),
-                        n.useEffect(() => {
+                    }, [t, n]),
+                        a.useEffect(() => {
                             o().catch(t());
                         }, [t, o]);
                     const w = (e) => {
-                        a()
+                        n()
                             .then(() => g(!1))
                             .catch(t());
                     };
-                    return n.createElement(c.Z, { TabBar: p.Z, history: l, primaryContent: f ? n.createElement(r.Z, { size: "large" }) : h && "me" !== h ? n.createElement(i.Z, { to: `/i/communitynotes/u/${h}` }) : u ? n.createElement(s.Z, { onAliasSelected: w }) : n.createElement(m.Z, null), sidebarContent: n.createElement(d.Z, null), title: E, withTweetButton: !1 });
+                    return a.createElement(c.Z, { TabBar: p.Z, history: l, primaryContent: f ? a.createElement(r.Z, { size: "large" }) : h && "me" !== h ? a.createElement(i.Z, { to: `/i/communitynotes/u/${h}` }) : u ? a.createElement(s.Z, { onAliasSelected: w }) : a.createElement(m.Z, null), sidebarContent: a.createElement(d.Z, null), title: E, withTweetButton: !1 });
                 },
-                Z = g(w);
+                b = g(w);
         },
-        39386: (e, t, a) => {
-            a.r(t), a.d(t, { BirdwatchTweetNotesScreen: () => Ze, default: () => ye });
-            var n = a(202784),
-                r = a(325686),
-                o = a(457311),
-                l = a(834324),
-                c = a(420412),
-                i = a(731708),
-                s = a(154003),
-                d = a(30899),
-                p = a(844685),
-                m = a(952428),
-                u = a(40610),
-                h = a(167630),
-                f = a(392237),
-                g = a(674132),
-                E = a.n(g),
-                w = a(500040),
-                Z = a(227674),
-                b = a(711223),
-                y = a(323265),
-                _ = a(980407),
-                S = a(252021),
-                A = a(443781),
-                C = a(652904),
-                P = a(301758),
-                I = a(4452),
-                N = a(293115),
-                v = a(312771),
-                T = a(109411),
-                B = a(22730),
-                H = a(333577),
-                k = a(249777),
-                x = a(983235),
-                F = a(486361),
-                z = a(71620),
-                W = a(668214),
-                L = a(979090),
-                R = a(245422),
-                D = a(836255),
-                O = a(919022);
+        39386: (e, t, n) => {
+            n.r(t), n.d(t, { BirdwatchTweetNotesScreen: () => be, default: () => ye });
+            var a = n(202784),
+                r = n(325686),
+                o = n(457311),
+                l = n(834324),
+                c = n(420412),
+                i = n(731708),
+                s = n(154003),
+                d = n(30899),
+                p = n(844685),
+                m = n(952428),
+                u = n(40610),
+                h = n(167630),
+                f = n(392237),
+                g = n(674132),
+                E = n.n(g),
+                w = n(500040),
+                b = n(227674),
+                Z = n(711223),
+                y = n(323265),
+                _ = n(980407),
+                S = n(252021),
+                A = n(443781),
+                v = n(652904),
+                C = n(301758),
+                P = n(4452),
+                I = n(293115),
+                N = n(312771),
+                T = n(109411),
+                B = n(22730),
+                H = n(333577),
+                k = n(249777),
+                x = n(983235),
+                F = n(486361),
+                z = n(71620),
+                W = n(668214),
+                L = n(979090),
+                R = n(245422),
+                D = n(836255),
+                O = n(919022);
             const M = (e, t) => t.match.params.tweetId,
                 U = (e, t) => {
-                    const a = M(0, t);
-                    return a ? D.Z.selectHydrated(e, a) : void 0;
+                    const n = M(0, t);
+                    return n ? D.Z.selectHydrated(e, n) : void 0;
                 },
                 V = (e, t) => {
-                    const a = M(0, t);
-                    return a ? R.K2(e, a) : void 0;
+                    const n = M(0, t);
+                    return n ? R.K2(e, n) : void 0;
                 },
                 j = (e, t) => L.Lt(e, M(0, t)),
                 G = (e, t) => L.Wk(e, M(0, t)),
@@ -232,9 +232,9 @@
                 $ = (e, t) => L.f3(e, M(0, t)),
                 Y = (e, t) => L.tk(e, M(0, t)),
                 K = (e, t) => {
-                    const a = ((e) => L.OV(e))(e);
-                    if (a) {
-                        const t = a || "";
+                    const n = ((e) => L.OV(e))(e);
+                    if (n) {
+                        const t = n || "";
                         return L.eD(e, t);
                     }
                     return !1;
@@ -246,8 +246,8 @@
                 X = E().ce3c80b8,
                 ee = E().fa6a075a,
                 te = E().acb7ecae,
-                ae = E().af15cef8,
-                ne = E().d9a5fc06,
+                ne = E().af15cef8,
+                ae = E().d9a5fc06,
                 re = E().b73cebd2,
                 oe = E().i859a9d4,
                 le = E().ad8883f2,
@@ -263,156 +263,157 @@
                 ge = [E().af88892a, E().cf8a40a6, E().g22c8c30],
                 Ee = [E().jf04b084, E().g5a72e98],
                 we = E().j24c37b2,
-                Ze = (e) => {
-                    const { featureSwitches: t } = n.useContext(A.rC);
-                    (0, I.ZP)();
-                    const { boostPivot: a, createLocalApiErrorHandler: f, fetchAuthenticatedUserProfileIfNeeded: g, fetchCommunityBoostPivot: E, fetchNotes: z, fetchShowAliasSelfSelect: W, fetchStatus: L, fetchTweet: R, history: D, isTopWriter: O, loggedInUser: M, misleadingNotes: U, notMisleadingNotes: V, ownNote: j, showAliasSelfSelect: G, sourceLink: q, tweet: $, tweetId: Y } = e,
+                be = (e) => {
+                    const { featureSwitches: t } = a.useContext(A.rC);
+                    (0, P.ZP)();
+                    const { boostPivot: n, createLocalApiErrorHandler: f, fetchAuthenticatedUserProfileIfNeeded: g, fetchCommunityBoostPivot: E, fetchNotes: z, fetchShowAliasSelfSelect: W, fetchStatus: L, fetchTweet: R, history: D, isTopWriter: O, loggedInUser: M, misleadingNotes: U, notMisleadingNotes: V, ownNote: j, showAliasSelfSelect: G, sourceLink: q, tweet: $, tweetId: Y } = e,
                         K = t.isTrue("responsive_web_birdwatch_note_writing_enabled"),
                         Q = t.isTrue("responsive_web_birdwatch_require_rating_before_writing_enabled"),
-                        Ze = t.isTrue("responsive_web_birdwatch_rating_participant_enabled") || t.isTrue("responsive_web_birdwatch_rating_crowd_enabled"),
+                        be = t.isTrue("responsive_web_birdwatch_rating_participant_enabled") || t.isTrue("responsive_web_birdwatch_rating_crowd_enabled"),
                         ye = t.isTrue("responsive_web_communityboost_form_enabled"),
                         _e = t.isTrue("responsive_web_birdwatch_note_request_sources_enabled"),
-                        Se = n.useMemo(() => ({ page: "birdwatch", section: K ? "tweet_notes_participant" : "tweet_notes" }), [K]),
-                        Ae = (e) => e.filter((e) => "CurrentlyRatedNotHelpful" !== e.rating_status),
+                        Se = t.isTrue("responsive_web_communityboost_mixed_pivot_enabled"),
+                        Ae = a.useMemo(() => ({ page: "birdwatch", section: K ? "tweet_notes_participant" : "tweet_notes" }), [K]),
+                        ve = (e) => e.filter((e) => "CurrentlyRatedNotHelpful" !== e.rating_status),
                         Ce = (e) => e.filter((e) => "CurrentlyRatedNotHelpful" === e.rating_status),
                         Pe = (e) => e.filter((e) => !1 !== e.show_matched_parent_note || e.tweet?.rest_id === Y),
                         Ie = Pe(U),
                         Ne = Pe(V),
-                        ve = Ae(Ie),
-                        Te = Ce(Ie),
-                        Be = Ae(Ne),
-                        He = Ce(Ne),
-                        ke = ve.concat(Be),
-                        xe = ke.some((e) => void 0 !== e.rating),
-                        [Fe, ze] = n.useState(!1),
-                        [We, Le] = n.useState(!1),
-                        [Re, De] = n.useState(!1);
-                    n.useEffect(() => {
+                        Te = ve(Ie),
+                        Be = Ce(Ie),
+                        He = ve(Ne),
+                        ke = Ce(Ne),
+                        xe = Te.concat(He),
+                        Fe = xe.some((e) => void 0 !== e.rating),
+                        [ze, We] = a.useState(!1),
+                        [Le, Re] = a.useState(!1),
+                        [De, Oe] = a.useState(!1);
+                    a.useEffect(() => {
                         Y &&
                             (z(Y)
                                 .catch(f())
                                 .finally(() => {
-                                    (0, I.jW)("community-note-content-ready"), (0, I.jW)("birdwatch-post-ready");
+                                    (0, P.jW)("community-note-content-ready"), (0, P.jW)("birdwatch-post-ready");
                                 }),
                             R(Y).catch(f()));
                     }, [f, z, R, Y]),
-                        n.useEffect(() => {
+                        a.useEffect(() => {
                             W().catch(f());
                         }, [f, W]),
-                        n.useEffect(() => {
+                        a.useEffect(() => {
                             g().catch(f());
                         }, [f, g]),
-                        n.useEffect(() => {
+                        a.useEffect(() => {
                             Y && E(Y.toString()).catch(f());
                         }, [f, E, Y]);
-                    const Oe = (e) => {
-                            ke.length > 0 && !xe && Q && (e.preventDefault(), De(!0));
+                    const Me = (e) => {
+                            xe.length > 0 && !Fe && Q && (e.preventDefault(), Oe(!0));
                         },
-                        Me = Ie.length || Ne.length,
-                        Ue = 0 === Me && ye && a?.has_pivot,
-                        Ve = 0 !== Me && ye && a?.has_pivot,
-                        je = _e && O,
-                        Ge = !Ue && !(je && q?.has_note_request) ? n.createElement(o.Z, { buttonLink: "/i/communitynotes/about", buttonText: oe, header: le }) : null,
-                        qe = { pathname: `/i/communitynotes/contribute/${Y}`, state: { src: "tweetNotePage" } },
-                        $e = M?.id_str === $?.user.id_str,
-                        Ye = !Ve || We,
-                        Ke = n.createElement(r.Z, { style: be.appealsCallout }, n.createElement(l.Z, { Icon: w.default, action: { label: oe, link: "https://twitter.github.io/communitynotes/additional-review" }, headline: ie, text: se, type: "primary" })),
-                        Qe = (e) => (Fe ? e.map((e) => n.createElement(n.Fragment, { key: e.rest_id }, n.createElement(H.Z, { note: e, ownNote: e === j, tweetIdForRating: Y }), n.createElement(c.Z, null))) : n.createElement(r.Z, { style: [be.hiddenNotesSection, be.withBottomBorder] }, n.createElement(r.Z, { style: be.hiddenNotesHeader }, n.createElement(Z.default, { style: be.iconHiddenNotes }), n.createElement(i.ZP, { size: "subtext2", weight: "bold" }, de)), n.createElement(i.ZP, { color: "primary", onPress: () => ze(!0), size: "subtext2", withInteractiveStyling: !0 }, pe))),
-                        Je = (e) =>
-                            n.createElement(
+                        Ue = Ie.length || Ne.length,
+                        Ve = 0 === Ue && ye && n?.has_pivot,
+                        je = 0 !== Ue && ye && n?.has_pivot && Se,
+                        Ge = _e && O,
+                        qe = !Ve && !(Ge && q?.has_note_request) ? a.createElement(o.Z, { buttonLink: "/i/communitynotes/about", buttonText: oe, header: le }) : null,
+                        $e = { pathname: `/i/communitynotes/contribute/${Y}`, state: { src: "tweetNotePage" } },
+                        Ye = M?.id_str === $?.user.id_str,
+                        Ke = !je || Le,
+                        Qe = a.createElement(r.Z, { style: Ze.appealsCallout }, a.createElement(l.Z, { Icon: w.default, action: { label: oe, link: "https://twitter.github.io/communitynotes/additional-review" }, headline: ie, text: se, type: "primary" })),
+                        Je = (e) => (ze ? e.map((e) => a.createElement(a.Fragment, { key: e.rest_id }, a.createElement(H.Z, { note: e, ownNote: e === j, tweetIdForRating: Y }), a.createElement(c.Z, null))) : a.createElement(r.Z, { style: [Ze.hiddenNotesSection, Ze.withBottomBorder] }, a.createElement(r.Z, { style: Ze.hiddenNotesHeader }, a.createElement(b.default, { style: Ze.iconHiddenNotes }), a.createElement(i.ZP, { size: "subtext2", weight: "bold" }, de)), a.createElement(i.ZP, { color: "primary", onPress: () => We(!0), size: "subtext2", withInteractiveStyling: !0 }, pe))),
+                        Xe = (e) =>
+                            a.createElement(
                                 d.Z,
                                 {
                                     renderContent: (t) =>
-                                        n.createElement(
+                                        a.createElement(
                                             r.Z,
-                                            { style: be.tooltip },
-                                            e.map((e) => n.createElement(i.ZP, { color: "gray700", style: be.tooltipText }, e)),
-                                            n.createElement(i.ZP, { link: "https://twitter.github.io/communitynotes/writing-notes/", style: be.tooltipText }, oe),
-                                            n.createElement(s.ZP, { onPress: t, size: "xLarge", type: "primaryFilled" }, we),
+                                            { style: Ze.tooltip },
+                                            e.map((e) => a.createElement(i.ZP, { color: "gray700", style: Ze.tooltipText }, e)),
+                                            a.createElement(i.ZP, { link: "https://twitter.github.io/communitynotes/writing-notes/", style: Ze.tooltipText }, oe),
+                                            a.createElement(s.ZP, { onPress: t, size: "xLarge", type: "primaryFilled" }, we),
                                         ),
                                     withArrow: !0,
                                 },
-                                n.createElement(s.ZP, { icon: n.createElement(b.default, null), style: be.infoIcon, type: "primaryText" }),
+                                a.createElement(s.ZP, { icon: a.createElement(Z.default, null), style: Ze.infoIcon, type: "primaryText" }),
                             ),
-                        Xe = n.createElement(
+                        et = a.createElement(
                             m.Z,
                             null,
-                            G && n.createElement(B.Z, null),
-                            n.createElement(
+                            G && a.createElement(B.Z, null),
+                            a.createElement(
                                 r.Z,
-                                { style: be.contentWrapper },
-                                n.createElement(r.Z, null, n.createElement(P.Z, { shouldShowBorder: !1, tweetId: Y, withBirdwatchPivot: !1 })),
-                                Ue ? n.createElement(T.Z, { boostPivot: a, tweetId: Y }) : null,
-                                je ? n.createElement(n.Fragment, null, n.createElement(x.Z, { tweetId: Y }), 0 === Me && q?.has_note_request ? n.createElement(r.Z, { style: be.boostActionModule }, n.createElement(s.ZP, { link: qe, type: "primaryOutlined" }, ue)) : null) : null,
-                                Me
-                                    ? n.createElement(
-                                          n.Fragment,
+                                { style: Ze.contentWrapper },
+                                a.createElement(r.Z, null, a.createElement(C.Z, { shouldShowBorder: !1, tweetId: Y, withBirdwatchPivot: !1 })),
+                                Ve ? a.createElement(T.Z, { boostPivot: n, tweetId: Y }) : null,
+                                Ge ? a.createElement(a.Fragment, null, a.createElement(x.Z, { tweetId: Y }), 0 === Ue && q?.has_note_request ? a.createElement(r.Z, { style: Ze.boostActionModule }, a.createElement(s.ZP, { link: $e, type: "primaryOutlined" }, ue)) : null) : null,
+                                Ue
+                                    ? a.createElement(
+                                          a.Fragment,
                                           null,
                                           (!!U.length || !!V.length) &&
-                                              n.createElement(
-                                                  n.Fragment,
+                                              a.createElement(
+                                                  a.Fragment,
                                                   null,
-                                                  $e && Ke,
-                                                  n.createElement(c.Z, null),
+                                                  Ye && Qe,
+                                                  a.createElement(c.Z, null),
                                                   !!U.length &&
                                                       (() => {
-                                                          const e = Ve ? (We ? U : [U[0]]) : U,
-                                                              t = Ve ? (We ? Te : []) : Te;
-                                                          return n.createElement(
+                                                          const e = je ? (Le ? U : [U[0]]) : U,
+                                                              t = je ? (Le ? Be : []) : Be;
+                                                          return a.createElement(
                                                               r.Z,
                                                               null,
-                                                              n.createElement(p.Z, { rightControl: Je(ge), text: ee }),
-                                                              n.createElement(c.Z, null),
-                                                              e.map((e) => n.createElement(n.Fragment, { key: e.rest_id }, n.createElement(H.Z, { note: e, ownNote: e === j, tweetIdForRating: Y }), n.createElement(c.Z, null))),
-                                                              t?.length > 0 ? Qe(t) : null,
+                                                              a.createElement(p.Z, { rightControl: Xe(ge), text: ee }),
+                                                              a.createElement(c.Z, null),
+                                                              e.map((e) => a.createElement(a.Fragment, { key: e.rest_id }, a.createElement(H.Z, { note: e, ownNote: e === j, tweetIdForRating: Y }), a.createElement(c.Z, null))),
+                                                              t?.length > 0 ? Je(t) : null,
                                                           );
                                                       })(),
                                                   !!V.length &&
-                                                      Ye &&
-                                                      n.createElement(
+                                                      Ke &&
+                                                      a.createElement(
                                                           r.Z,
                                                           null,
-                                                          n.createElement(p.Z, { rightControl: Je(Ee), text: te }),
-                                                          n.createElement(c.Z, null),
-                                                          Be.map((e) => n.createElement(n.Fragment, { key: e.rest_id }, n.createElement(H.Z, { note: e, ownNote: e === j, tweetIdForRating: Y }), n.createElement(c.Z, null))),
-                                                          He?.length > 0 ? Qe(He) : null,
+                                                          a.createElement(p.Z, { rightControl: Xe(Ee), text: te }),
+                                                          a.createElement(c.Z, null),
+                                                          He.map((e) => a.createElement(a.Fragment, { key: e.rest_id }, a.createElement(H.Z, { note: e, ownNote: e === j, tweetIdForRating: Y }), a.createElement(c.Z, null))),
+                                                          ke?.length > 0 ? Je(ke) : null,
                                                       ),
-                                                  Ze && !j && Ye ? n.createElement(r.Z, { style: be.actionModuleContainer }, Re && n.createElement(r.Z, { style: be.calloutContainer }, n.createElement(u.Z.Attention, { headline: J, text: X, withIcon: !0 })), n.createElement(r.Z, { style: be.actionModule }, n.createElement(i.ZP, { style: be.improveText }, K ? me : he), n.createElement(s.ZP, { "aria-label": K ? ue : fe, link: K ? qe : "/i/flow/join-birdwatch", onPress: Oe, type: "brandFilled" }, K ? ue : fe))) : null,
-                                                  Ve
-                                                      ? n.createElement(
-                                                            n.Fragment,
+                                                  be && !j && Ke ? a.createElement(r.Z, { style: Ze.actionModuleContainer }, De && a.createElement(r.Z, { style: Ze.calloutContainer }, a.createElement(u.Z.Attention, { headline: J, text: X, withIcon: !0 })), a.createElement(r.Z, { style: Ze.actionModule }, a.createElement(i.ZP, { style: Ze.improveText }, K ? me : he), a.createElement(s.ZP, { "aria-label": K ? ue : fe, link: K ? $e : "/i/flow/join-birdwatch", onPress: Me, type: "brandFilled" }, K ? ue : fe))) : null,
+                                                  je
+                                                      ? a.createElement(
+                                                            a.Fragment,
                                                             null,
-                                                            n.createElement(
+                                                            a.createElement(
                                                                 r.Z,
-                                                                { style: be.boostActionModule },
-                                                                We
+                                                                { style: Ze.boostActionModule },
+                                                                Le
                                                                     ? null
-                                                                    : n.createElement(
+                                                                    : a.createElement(
                                                                           s.ZP,
                                                                           {
                                                                               onPress: () => {
-                                                                                  Le(!0);
+                                                                                  Re(!0);
                                                                               },
                                                                               type: "primaryOutlined",
                                                                           },
                                                                           pe,
                                                                       ),
                                                             ),
-                                                            n.createElement(T.Z, { boostPivot: a, tweetId: Y }),
+                                                            a.createElement(T.Z, { boostPivot: n, tweetId: Y }),
                                                         )
                                                       : null,
                                               ),
                                       )
-                                    : L === v.ZP.LOADING
-                                      ? n.createElement(h.Z, { "aria-label": ce, size: "large", style: be.spinner })
-                                      : Ge,
+                                    : L === N.ZP.LOADING
+                                      ? a.createElement(h.Z, { "aria-label": ce, size: "large", style: Ze.spinner })
+                                      : qe,
                             ),
                         );
-                    return n.createElement(N.nO, { namespace: Se }, n.createElement(C.Z, null, y.ZP.isTwitterApp() ? n.createElement(_.Z, { children: Xe, hideBackButton: !0, history: D, renderHeader: () => null }) : n.createElement(S.Z, { TabBar: F.Z, backLocation: "/i/communitynotes", history: D, primaryContent: Xe, sidebarContent: n.createElement(k.Z, null), title: Ue ? ne : Ve ? re : ae, withTweetButton: !1 })));
+                    return a.createElement(I.nO, { namespace: Ae }, a.createElement(v.Z, null, y.ZP.isTwitterApp() ? a.createElement(_.Z, { children: et, hideBackButton: !0, history: D, renderHeader: () => null }) : a.createElement(S.Z, { TabBar: F.Z, backLocation: "/i/communitynotes", history: D, primaryContent: et, sidebarContent: a.createElement(k.Z, null), title: Ve ? ae : je ? re : ne, withTweetButton: !1 })));
                 },
-                be = f.default.create((e) => ({ actionModule: { alignItems: "center", paddingTop: e.spaces.space20, paddingBottom: e.spaces.space32, textAlign: "center", width: "70%" }, boostActionModule: { alignItems: "center", paddingVertical: e.spaces.space20 }, actionModuleContainer: { alignItems: "center" }, calloutContainer: { width: "100%", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, appealsCallout: { padding: e.spaces.space16, paddingTop: 0 }, contentWrapper: { backgroundColor: e.colors.cellBackground, paddingBottom: e.spaces.space48 }, divider: { backgroundColor: e.colors.borderColor, height: e.spaces.space8, marginTop: e.spaces.space4 }, header: { paddingBottom: e.spaces.space12, fontWeight: e.fontWeights.heavy }, hiddenNotesHeader: { alignItems: "center", flexDirection: "row", paddingBottom: e.spaces.space4 }, hiddenNotesSection: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, icon: { color: e.colors.primary, height: e.spaces.space48, marginBottom: e.spaces.space20, width: e.spaces.space48 }, iconHiddenNotes: { color: e.colors.red500, height: e.spaces.space12, paddingBottom: e.spaces.space2, paddingEnd: e.spaces.space4, width: e.spaces.space12 }, improveText: { paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, infoIcon: { color: e.colors.text }, spinner: { paddingTop: e.spaces.space20 }, tooltip: { padding: e.spaces.space32 }, tooltipText: { paddingBottom: e.spaces.space12 }, withBottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
-                ye = Q(Ze);
+                Ze = f.default.create((e) => ({ actionModule: { alignItems: "center", paddingTop: e.spaces.space20, paddingBottom: e.spaces.space32, textAlign: "center", width: "70%" }, boostActionModule: { alignItems: "center", paddingVertical: e.spaces.space20 }, actionModuleContainer: { alignItems: "center" }, calloutContainer: { width: "100%", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, appealsCallout: { padding: e.spaces.space16, paddingTop: 0 }, contentWrapper: { backgroundColor: e.colors.cellBackground, paddingBottom: e.spaces.space48 }, divider: { backgroundColor: e.colors.borderColor, height: e.spaces.space8, marginTop: e.spaces.space4 }, header: { paddingBottom: e.spaces.space12, fontWeight: e.fontWeights.heavy }, hiddenNotesHeader: { alignItems: "center", flexDirection: "row", paddingBottom: e.spaces.space4 }, hiddenNotesSection: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, icon: { color: e.colors.primary, height: e.spaces.space48, marginBottom: e.spaces.space20, width: e.spaces.space48 }, iconHiddenNotes: { color: e.colors.red500, height: e.spaces.space12, paddingBottom: e.spaces.space2, paddingEnd: e.spaces.space4, width: e.spaces.space12 }, improveText: { paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, infoIcon: { color: e.colors.text }, spinner: { paddingTop: e.spaces.space20 }, tooltip: { padding: e.spaces.space32 }, tooltipText: { paddingBottom: e.spaces.space12 }, withBottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
+                ye = Q(be);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-9ec2f64d.2a85536a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-9ec2f64d.a0f634ca.js.map

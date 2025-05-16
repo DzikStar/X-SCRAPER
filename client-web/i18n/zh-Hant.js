@@ -1027,11 +1027,11 @@
                 n("dec3c9b8", "密碼"),
                 n("b929aa74", "重新輸入你的 X 密碼以儲存帳戶的變更。"),
                 n("d1091f50", "忘記密碼？"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "以下是你所有裝置上的通行金鑰"),
+                n("d9921a6c", "建立新的通行金鑰"),
                 n("i4855730", "刪除通行金鑰"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "加入日期：" + e.date;
                 }),
                 n("d97c07be", "管理創作者訂閱服務"),
                 n("efa291da", "使用 Stripe 查看和管理你對以下創作者的訂閱服務。你在 iOS 或 Android 上啟動的任何有效訂閱都可以在該應用程式中管理。"),
@@ -13242,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.aed7d66a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.2346f34a.js.map

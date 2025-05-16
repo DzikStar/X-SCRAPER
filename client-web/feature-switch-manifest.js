@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "5df770c0b78ef66c1662cdd1a80e8ba3c75fcb59",
+    feature_set_token: "896f981b4ef10dad9fbdf99f827c25fecf9fd3d6",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -388,6 +388,7 @@ var manifest = {
         responsive_web_commerce_shop_spotlight_enabled: { value: !1 },
         responsive_web_communities_slices_enabled: { value: !0 },
         responsive_web_communityboost_form_enabled: { value: !1 },
+        responsive_web_communityboost_mixed_pivot_enabled: { value: !1 },
         responsive_web_compact_media_max_height: { value: 0 },
         responsive_web_compact_media_max_height_enabled_for_all: { value: !1 },
         responsive_web_composer_autosave_debounce_ms: { value: 2e3 },
@@ -1994,7 +1995,7 @@ var manifest = {
         responsive_web_commerce_shop_spotlight_enabled: { name: "responsive_web_commerce_shop_spotlight_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_communities_slices_enabled: { name: "responsive_web_communities_slices_enabled", type: "boolean", defaultValue: !0 },
         responsive_web_communityboost_form_enabled: { name: "responsive_web_communityboost_form_enabled", type: "boolean", defaultValue: !1 },
-        responsive_web_communityboost_mixed_pivot_enabled: { name: "responsive_web_communityboost_mixed_pivot_enabled", type: "string" },
+        responsive_web_communityboost_mixed_pivot_enabled: { name: "responsive_web_communityboost_mixed_pivot_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_compact_media_max_height: { name: "responsive_web_compact_media_max_height", type: "number", defaultValue: 0 },
         responsive_web_compact_media_max_height_enabled_for_all: { name: "responsive_web_compact_media_max_height_enabled_for_all", type: "boolean", defaultValue: !1 },
         responsive_web_composer_autosave_enabled: { name: "responsive_web_composer_autosave_enabled", type: "boolean", defaultValue: !1 },

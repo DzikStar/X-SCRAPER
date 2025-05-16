@@ -1028,11 +1028,11 @@
                 n("dec3c9b8", "ಪಾಸ್‌ವರ್ಡ್"),
                 n("b929aa74", "ನಿಮ್ಮ ಖಾತೆಯ ಮಾರ್ಪಾಡುಗಳನ್ನು ಉಳಿಸಲು ನಿಮ್ಮ X ಪಾಸ್‌ವರ್ಡ್‌ ಅನ್ನು ಮತ್ತೊಮ್ಮೆ ನಮೂದಿಸಿ."),
                 n("d1091f50", "ಪಾಸ್‍ವರ್ಡ್ ಮರೆತು ಹೋದಿರಾ?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಾದ್ಯಂತದ ನಿಮ್ಮ ಪಾಸ್‌ಕೀಗಳು ಇಲ್ಲಿವೆ"),
+                n("d9921a6c", "ಹೊಸ ಪಾಸ್‌ಕೀಯನ್ನು ರಚಿಸಿ"),
                 n("i4855730", "ಪಾಸ್‌ಕೀಯನ್ನು ಅಳಿಸಿ"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "ದಿನಾಂಕ ಸೇರಿಸಲಾಗಿದೆ: " + e.date;
                 }),
                 n("d97c07be", "ಕ್ರಿಯೇಟರ್ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ"),
                 n("efa291da", "Stripe ಅನ್ನು ಬಳಸಿಕೊಂಡು ಕೆಳಗಿನ ಕ್ರಿಯೇಟರ್‌ಗಳಿಗೆ ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ನಿರ್ವಹಿಸಿ. ನೀವು iOS ಅಥವಾ Android ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿದ ಯಾವುದೇ ಸಕ್ರಿಯ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್‌ಗಳನ್ನು ಆಪ್‌ನಲ್ಲಿ ನಿರ್ವಹಿಸಬಹುದು."),
@@ -13246,4 +13246,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.6ab4a15a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.06480a1a.js.map

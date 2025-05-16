@@ -73,9 +73,9 @@
                 T = S().a6845663,
                 x = S().b2347f7c,
                 L = S().e1fda16e,
-                N = S().b8f3ed46,
-                F = S().gb8d09ba,
-                R = S().g6dc09a0,
+                R = S().b8f3ed46,
+                N = S().gb8d09ba,
+                F = S().g6dc09a0,
                 z = S().a6e6e898,
                 H = S().cde3b9ae,
                 O = S().g0d7813a,
@@ -103,7 +103,7 @@
                         (this._render = () => {
                             const { details: e } = this.props,
                                 a = e[0];
-                            if (!a) return n.createElement(l.Z, { header: L, message: N });
+                            if (!a) return n.createElement(l.Z, { header: L, message: R });
                             const d = { app_id: a.app_id, app_name: a.name },
                                 t = n.createElement(o.Z, { style: K.itemContainer }, n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, this._renderApprovalDate(a.approved)));
                             return n.createElement(
@@ -113,7 +113,7 @@
                                 a.organization_url ? n.createElement(u.Z, { color: "primary", label: a.organization_url, link: a.organization_url }) : null,
                                 n.createElement(o.Z, { style: K.itemContainer }, n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, a.description)),
                                 t,
-                                n.createElement(b.Z, { text: R }),
+                                n.createElement(b.Z, { text: F }),
                                 e.map((e) => n.createElement(o.Z, { key: e.token }, this._renderPermissions(e), e.ios ? null : n.createElement(g.Z, { onRevoke: this._handleRevokeApp, reportApplicationHref: `${q}?${(0, r.stringify)(d)}`, revoked: !!e.revoked, token: e.token, tokenType: e.token_type || "oauth1" }))),
                                 a.ios ? n.createElement(p.Z, { link: V, style: [K.itemContainer, K.center] }, n.createElement(i.ZP, { color: "link" }, $)) : null,
                             );
@@ -142,7 +142,7 @@
                     return e.can_read_dms ? (a = O) : e.can_write ? (a = H) : e.can_read && (a = z), a ? n.createElement(h.Z, { label: a }) : null;
                 }
                 _renderEmailPermission(e) {
-                    return e.email_access ? n.createElement(h.Z, { label: F }) : null;
+                    return e.email_access ? n.createElement(h.Z, { label: N }) : null;
                 }
                 _renderAdsPermission(e) {
                     let a = null;
@@ -248,9 +248,9 @@
                     a.scribe({ action: e, data: { items: n } });
                 }
             }
-            const N = I(L),
-                F = { ...(0, f.G)({}), [w.ZP.User]: (0, y.Z)({ decoration: ({ userId: e }) => r.createElement(N, { userId: e }) }) },
-                R = s().a5f32aa2,
+            const R = I(L),
+                N = { ...(0, f.G)({}), [w.ZP.User]: (0, y.Z)({ decoration: ({ userId: e }) => r.createElement(R, { userId: e }) }) },
+                F = s().a5f32aa2,
                 z = s().ef731b14,
                 H = s().i859a9d4,
                 O = r.createElement(s().I18NFormatMessage, { $i18n: "ab3bf5a7" }, r.createElement(o.ZP, { link: (0, t.ju)("https://support.x.com/articles/117063") }, s().e554ba83));
@@ -276,7 +276,7 @@
                     e(this._getLegacyModule());
                 }
                 render() {
-                    return r.createElement(b.Z, null, r.createElement("div", null, r.createElement(D.Z, null, O), r.createElement(i.Z, null)), r.createElement(p.Z, { entryConfiguration: F, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: R }));
+                    return r.createElement(b.Z, null, r.createElement("div", null, r.createElement(D.Z, null, O), r.createElement(i.Z, null)), r.createElement(p.Z, { entryConfiguration: N, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: F }));
                 }
             }
             const j = ({ blockType: e, emptyStateMessage: a, emptyStateTitle: d, scribeNamespace: o, supportUrl: t }) => A((l) => r.createElement(h.nO, { namespace: o }, r.createElement(U, (0, n.Z)({}, l, { blockType: e, emptyStateMessage: a, emptyStateTitle: d, supportUrl: t }))));
@@ -314,26 +314,19 @@
                 y = (0, u.p)(
                     () =>
                         Promise.all([
-                            d.e("icons.5"),
-                            d.e("icons.6"),
-                            d.e("icons.25"),
-                            d.e("icons.22"),
-                            d.e("icons.9"),
-                            d.e("icons.4"),
-                            d.e("icons.15"),
+                            d.e("icons.23"),
+                            d.e("icons.16"),
                             d.e("icons.2"),
-                            d.e("icons.20"),
-                            d.e("icons.7"),
+                            d.e("icons.10"),
+                            d.e("icons.19"),
+                            d.e("icons.24"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.0"),
-                            d.e("icons.11"),
-                            d.e("icons.27"),
-                            d.e("icons.17"),
-                            d.e("icons.12"),
-                            d.e("icons.3"),
                             d.e("icons.13"),
-                            d.e("icons.18"),
+                            d.e("icons.27"),
+                            d.e("icons.22"),
+                            d.e("icons.17"),
+                            d.e("icons.7"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -344,7 +337,11 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.24"),
+                            d.e("icons.8"),
+                            d.e("icons.26"),
+                            d.e("icons.11"),
+                            d.e("icons.21"),
+                            d.e("icons.1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -375,7 +372,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -411,15 +408,15 @@
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                            d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             d.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
                             d.e("shared~ondemand.SettingsInternals~bundle.SettingsRevamp~bundle.SettingsTransparency"),
-                            d.e("ondemand.SettingsInternals-2c5e6a0d"),
-                            d.e("ondemand.SettingsInternals-e96e9bea"),
+                            d.e("shared~ondemand.SettingsInternals~ondemand.SettingsRevamp"),
+                            d.e("ondemand.SettingsInternals-6107ac1a"),
                             d.e("ondemand.SettingsInternals-5b7ef534"),
                             d.e("ondemand.SettingsInternals-9f4db315"),
-                            d.e("ondemand.SettingsInternals-e019dbda"),
                             d.e("ondemand.SettingsInternals-8ed0fac5"),
                             d.e("ondemand.SettingsInternals-0564e869"),
                             d.e("ondemand.SettingsInternals-71f5c63d"),
@@ -431,26 +428,19 @@
                 f = (0, u.p)(
                     () =>
                         Promise.all([
-                            d.e("icons.5"),
-                            d.e("icons.6"),
-                            d.e("icons.25"),
-                            d.e("icons.22"),
-                            d.e("icons.9"),
-                            d.e("icons.4"),
-                            d.e("icons.15"),
+                            d.e("icons.23"),
+                            d.e("icons.16"),
                             d.e("icons.2"),
-                            d.e("icons.20"),
-                            d.e("icons.7"),
+                            d.e("icons.10"),
+                            d.e("icons.19"),
+                            d.e("icons.24"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.0"),
-                            d.e("icons.11"),
-                            d.e("icons.27"),
-                            d.e("icons.17"),
-                            d.e("icons.12"),
-                            d.e("icons.3"),
                             d.e("icons.13"),
-                            d.e("icons.18"),
+                            d.e("icons.27"),
+                            d.e("icons.22"),
+                            d.e("icons.17"),
+                            d.e("icons.7"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -461,7 +451,11 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.24"),
+                            d.e("icons.8"),
+                            d.e("icons.26"),
+                            d.e("icons.11"),
+                            d.e("icons.21"),
+                            d.e("icons.1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -492,7 +486,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -528,15 +522,15 @@
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                            d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             d.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
                             d.e("shared~ondemand.SettingsInternals~bundle.SettingsRevamp~bundle.SettingsTransparency"),
-                            d.e("ondemand.SettingsInternals-2c5e6a0d"),
-                            d.e("ondemand.SettingsInternals-e96e9bea"),
+                            d.e("shared~ondemand.SettingsInternals~ondemand.SettingsRevamp"),
+                            d.e("ondemand.SettingsInternals-6107ac1a"),
                             d.e("ondemand.SettingsInternals-5b7ef534"),
                             d.e("ondemand.SettingsInternals-9f4db315"),
-                            d.e("ondemand.SettingsInternals-e019dbda"),
                             d.e("ondemand.SettingsInternals-8ed0fac5"),
                             d.e("ondemand.SettingsInternals-0564e869"),
                             d.e("ondemand.SettingsInternals-71f5c63d"),
@@ -712,7 +706,7 @@
             const T = S(C);
         },
         221930: (e, a, d) => {
-            d.r(a), d.d(a, { SettingsContactsDashboardScreen: () => R, default: () => H });
+            d.r(a), d.d(a, { SettingsContactsDashboardScreen: () => F, default: () => H });
             var n = d(202784),
                 r = d(325686),
                 o = d(731708),
@@ -748,19 +742,19 @@
                 T = n.createElement(u().I18NFormatMessage, { $i18n: "g66a254b" }, n.createElement(o.ZP, { link: (0, t.ju)("https://help.x.com/using-twitter/upload-your-contacts-to-search-for-friends") }, u().d439b1c1)),
                 x = u().b864be7a,
                 L = { headline: u().g5fa1090, text: u().h3e420fc, confirmButtonLabel: u().e68b09b4 },
-                N = u().ca24589e,
-                F = (e) => e.id_str;
-            class R extends n.Component {
+                R = u().ca24589e,
+                N = (e) => e.id_str;
+            class F extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { verificationRequired: !1 }),
                         (this._renderTimeline = () => {
                             const { contacts: e, fetchStatus: a } = this.props;
-                            return n.createElement(S.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: F, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
+                            return n.createElement(S.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: N, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
                         }),
                         (this._renderContact = (e) => {
                             const { id_str: a, import_source: d, vcard: t } = e,
-                                i = this._getContactProp(t.get("fn")) || N,
+                                i = this._getContactProp(t.get("fn")) || R,
                                 c = this._getContactProperties(t.get("tel")),
                                 s = [...this._getContactProperties(t.get("email")), ...c];
                             return n.createElement(r.Z, { key: a, style: [[E.Z.infoText, E.Z.bottomBorder], z.contactContainer] }, n.createElement(l.Z, { Icon: b.default, color: "neutral", style: z.personIcon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, i), s ? s.map((e) => n.createElement(o.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, d ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${d}`) : null));
@@ -782,9 +776,9 @@
                     return n.createElement(f.nO, { namespace: B }, n.createElement(y.Z, null, n.createElement(_.Z, { location: r, title: C }, n.createElement(m.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: x, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(M.Z, null, T), n.createElement(i.Z, null), n.createElement(g.Z, { fetch: a, fetchStatus: e.length > 0 ? w.ZP.LOADED : d, render: () => this._renderTimeline() }))));
                 }
             }
-            R.contextType = A.rC;
+            F.contextType = A.rC;
             const z = c.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
-                H = I(R);
+                H = I(F);
         },
         412483: (e, a, d) => {
             d.r(a), d.d(a, { ContentPreferencesPage: () => Z, default: () => I });
@@ -913,4 +907,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.6496ad5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.563f22da.js.map

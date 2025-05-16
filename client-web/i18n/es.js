@@ -1027,11 +1027,11 @@
                 o("dec3c9b8", "Contraseña"),
                 o("b929aa74", "Vuelve a ingresar tu contraseña de X para guardar los cambios en tu cuenta."),
                 o("d1091f50", "¿Olvidaste tu contraseña?"),
-                o("fd23fe4a", "Here are your passkeys across all your devices"),
-                o("d9921a6c", "Create a new passkey"),
+                o("fd23fe4a", "Estas son tus claves de acceso para todos tus dispositivos"),
+                o("d9921a6c", "Crear una clave de acceso nueva"),
                 o("i4855730", "Eliminar clave de acceso"),
                 o("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Fecha de adición: " + e.date;
                 }),
                 o("d97c07be", "Administrar suscripciones para creadores"),
                 o("efa291da", "Ver y administrar tus suscripciones para creadores a continuación con Stripe. Las suscripciones activas que iniciaste en iOS o Android se pueden administrar en la app."),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.6caab6aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.3a54109a.js.map

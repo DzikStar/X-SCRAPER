@@ -1028,11 +1028,11 @@
                 e("dec3c9b8", "Salasana"),
                 e("b929aa74", "Kirjoita X-salasanasi uudelleen tallentaaksesi tilisi muutokset."),
                 e("d1091f50", "Unohditko salasanasi?"),
-                e("fd23fe4a", "Here are your passkeys across all your devices"),
-                e("d9921a6c", "Create a new passkey"),
+                e("fd23fe4a", "Tässä ovat todentamisvaimet, jotka sinulla on eri laitteilla"),
+                e("d9921a6c", "Luo uusi todentamisavain"),
                 e("i4855730", "Poista todentamisavain"),
                 e("a6acdc67", function (a) {
-                    return "Date added: " + a.date;
+                    return "Lisäyspäivä: " + a.date;
                 }),
                 e("d97c07be", "Hallitse sisällöntuottajien tilauksia"),
                 e("efa291da", "Tarkastele ja hallitse alla olevia sisällöntuottajien tilauksia Stripessä. Aktiivisia tilauksia, jotka olet käynnistänyt iOS- tai Android-laitteella, voit hallita sovelluksessa."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.436ec9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.fcad4f5a.js.map

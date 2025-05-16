@@ -63,16 +63,16 @@
                 w = a(655352),
                 T = a(503229),
                 C = a(71620),
-                I = a(668214);
-            const A = (e, t) => t.module.selectInitialFetchStatus(e),
+                A = a(668214);
+            const I = (e, t) => t.module.selectInitialFetchStatus(e),
                 N = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
                 D = (e, t) => {
                     const a = t.selectedTabId,
                         o = N(e, t);
                     return o && o.tabs && o.tabs.tabs.find((e) => e.id === a);
                 },
-                f = (0, I.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: A, pageConfiguration: N, selectedTab: D }))
+                f = (0, A.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: I, pageConfiguration: N, selectedTab: D }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, C.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
                     .withAnalytics();
             class R extends o.Component {
@@ -142,9 +142,9 @@
             const y = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        a.e("icons.16"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.11"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -190,6 +190,7 @@
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -238,7 +239,7 @@
                         o = P(e, t);
                     return o && o.tabs && o.tabs.tabs.find((e) => e.id === a);
                 },
-                Z = (0, I.Z)()
+                Z = (0, A.Z)()
                     .propsFromState(() => ({ pageConfiguration: P, selectedTab: B }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, C.zr)("RICH_SEGMENTED_TIMELINE") }))
                     .withAnalytics();
@@ -314,7 +315,7 @@
             const J = (e, t) => t.module.selectPageConfiguration(e),
                 X = (e, t) => t.module.selectInitialFetchStatus(e),
                 ee = (0, $.P1)(J, X, (e, t) => t !== h.Z.LOADED || (!!e && !!e.tabs)),
-                te = (0, I.Z)()
+                te = (0, A.Z)()
                     .propsFromState(() => ({ hasTabNavigation: ee, pageConfiguration: J, initialFetchStatus: X }))
                     .withAnalytics();
             var ae = a(688715),
@@ -329,7 +330,7 @@
                     const a = t.navBar.topicId ? t.navBar.topicId : "";
                     return le.Z.select(e, a);
                 },
-                ue = (0, I.Z)().propsFromState(() => ({ topic: ce })),
+                ue = (0, A.Z)().propsFromState(() => ({ topic: ce })),
                 Ee = (e) => (0, ae.ju)(`https://x.com/i/topics/${e}`),
                 _e = (e) => `twitter://topics_timeline?id=${e}`,
                 be = i().ed88e742;
@@ -353,7 +354,7 @@
                 pe = i().e9f1fbcc,
                 me = o.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: a, documentTitle: n, entryConfiguration: s, fab: i, getTabLink: c, hasTabNavigation: p, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: I, onBackClick: A, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: g, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: G } = e,
+                    const { TabBar: t, backLocation: a, documentTitle: n, entryConfiguration: s, fab: i, getTabLink: c, hasTabNavigation: p, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: A, onBackClick: I, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: g, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: G } = e,
                         x = (0, r.tj)(),
                         Q = o.useMemo(() => ({ ...s, ...(0, k.Z)({ isLegacy: !0, isWide: x }) }), [s, x]),
                         [W, q] = o.useState(!0),
@@ -371,10 +372,10 @@
                         X = z ? o.createElement(K, { header: z, onHeaderVisible: q }) : null,
                         ee = V ? o.createElement(Se, { isHeaderOffscreen: !W, navBar: V, pageNamespace: J, withAppLinks: F, withOpenGraphMeta: Z }) : null,
                         te = B ? u.Z : o.Fragment,
-                        ae = o.createElement(o.Fragment, null, X, o.createElement(te, null, o.createElement(H, { entryConfiguration: Q, initialModule: I, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, selectedTabId: U, timelinePrefix: M, title: y, withoutHeadroom: !0 }))),
+                        ae = o.createElement(o.Fragment, null, X, o.createElement(te, null, o.createElement(H, { entryConfiguration: Q, initialModule: A, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, selectedTabId: U, timelinePrefix: M, title: y, withoutHeadroom: !0 }))),
                         oe = i ? o.createElement(E.Z, { component: d.Z, fab: i }, ae) : ae,
-                        ne = c && p ? o.createElement(O, { getTabLink: c, module: I, selectedTabId: U }) : void 0;
-                    return o.createElement(b.nO, { namespace: J }, o.createElement(S.Z, null, o.createElement(_.Z, { TabBar: t, backLocation: a, documentTitle: n, history: m, logoButton: C, onBackClick: A, primaryContent: oe, rightControl: ee || g, secondaryBar: ne, sidebarContent: L, subtitle: j, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: G })));
+                        ne = c && p ? o.createElement(O, { getTabLink: c, module: A, selectedTabId: U }) : void 0;
+                    return o.createElement(b.nO, { namespace: J }, o.createElement(S.Z, null, o.createElement(_.Z, { TabBar: t, backLocation: a, documentTitle: n, history: m, logoButton: C, onBackClick: I, primaryContent: oe, rightControl: ee || g, secondaryBar: ne, sidebarContent: L, subtitle: j, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: G })));
                 };
             we.defaultProps = { entryConfiguration: (0, G.G)({}), renderEmptyState: () => o.createElement(n.Z, { header: pe }), sidebarContent: me, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const Te = te(we);
@@ -515,7 +516,7 @@
             const r = (e) => (0, n.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, a) => {
-            a.d(t, { $e: () => Ie, BG: () => ee, Bb: () => Me, Bs: () => ae, EW: () => Te, HO: () => ce, JL: () => de, Jn: () => _e, Kc: () => fe, Ld: () => Le, Lt: () => Y, OV: () => X, PL: () => oe, Pi: () => he, Qg: () => x, SZ: () => Pe, V0: () => ge, Wk: () => $, X3: () => Re, _T: () => He, _b: () => Fe, aZ: () => Ne, ap: () => re, cS: () => te, dw: () => j, eD: () => ne, eY: () => pe, et: () => z, f3: () => ue, f_: () => Oe, gH: () => le, gP: () => Ze, jm: () => W, kT: () => Ue, kX: () => Be, lC: () => Ae, lW: () => se, lw: () => Ce, mZ: () => ve, mv: () => Se, oV: () => ke, pN: () => we, qm: () => De, r9: () => Q, sz: () => K, tk: () => V, vF: () => be, w6: () => ie, wK: () => ye, wd: () => Ee, ww: () => me });
+            a.d(t, { $e: () => Ae, BG: () => ee, Bb: () => Me, Bs: () => ae, EW: () => Te, HO: () => ce, JL: () => de, Jn: () => _e, Kc: () => fe, Ld: () => Le, Lt: () => Y, OV: () => X, PL: () => oe, Pi: () => he, Qg: () => x, SZ: () => Pe, V0: () => ge, Wk: () => $, X3: () => Re, _T: () => He, _b: () => Fe, aZ: () => Ne, ap: () => re, cS: () => te, dw: () => j, eD: () => ne, eY: () => pe, et: () => z, f3: () => ue, f_: () => Oe, gH: () => le, gP: () => Ze, jm: () => W, kT: () => Ue, kX: () => Be, lC: () => Ie, lW: () => se, lw: () => Ce, mZ: () => ve, mv: () => Se, oV: () => ke, pN: () => we, qm: () => De, r9: () => Q, sz: () => K, tk: () => V, vF: () => be, w6: () => ie, wK: () => ye, wd: () => Ee, ww: () => me });
             var o = a(744531),
                 n = a(401388),
                 r = a(106067),
@@ -535,8 +536,8 @@
                 w = (0, l.dg)(_, "EDIT_NOTIFICATION_SETTINGS"),
                 T = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
                 C = Object.freeze({ REQUEST: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL", FAILURE: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL" }),
-                I = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
-                A = (Object.freeze({ REQUEST: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_REQUEST", SUCCESS: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_SUCCESS", FAILURE: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_FAILURE" }), Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_DATA_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_DATA_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_DATA_FAILURE" })),
+                A = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
+                I = (Object.freeze({ REQUEST: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_REQUEST", SUCCESS: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_SUCCESS", FAILURE: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_FAILURE" }), Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_DATA_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_DATA_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_DATA_FAILURE" })),
                 N = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_FAILURE" }),
                 D = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_FAILURE" }),
                 f = Object.freeze({ REQUEST: "rweb/birdwatchNotes/ADMIT_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/ADMIT_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/ADMIT_USER_FAILURE" }),
@@ -604,15 +605,15 @@
                             const a = t.payload;
                             return { ...e, signupEligibility: a?.birdwatch_sign_up_eligibility?.eligible };
                         }
-                        case I.REQUEST: {
+                        case A.REQUEST: {
                             const a = t.meta?.tweet_id;
                             return a ? { ...e, noteRequests: { ...e.noteRequests, [a]: { fetchStatus: c.ZP.LOADING } } } : e;
                         }
-                        case I.FAILURE: {
+                        case A.FAILURE: {
                             const a = t.meta?.tweet_id;
                             return a ? { ...e, noteRequests: { ...e.noteRequests, [a]: { fetchStatus: c.ZP.FAILED } } } : e;
                         }
-                        case I.SUCCESS: {
+                        case A.SUCCESS: {
                             const a = t.meta?.tweet_id,
                                 o = t.payload?.birdwatch_bat_signal_by_rest_id.created_at;
                             return a ? { ...e, noteRequests: { ...e.noteRequests, [a]: { created_at: o, fetchStatus: c.ZP.LOADED } } } : e;
@@ -706,7 +707,7 @@
                             const a = t.meta?.note_id;
                             return { ...e, notes: { ...e.notes, [a]: { ...e.notes[a], fetchStatus: c.ZP.FAILED } } };
                         }
-                        case A.SUCCESS: {
+                        case I.SUCCESS: {
                             const a = t.payload;
                             return a ? { ...e, publicData: a } : e;
                         }
@@ -845,7 +846,7 @@
                 be =
                     (e) =>
                     (t, a, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchBirdwatchBatSignal, params: e })({ actionTypes: I, context: "FETCH_BIRDWATCH_BAT_SIGNAL", meta: { tweet_id: e } }),
+                        (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchBirdwatchBatSignal, params: e })({ actionTypes: A, context: "FETCH_BIRDWATCH_BAT_SIGNAL", meta: { tweet_id: e } }),
                 he =
                     (e) =>
                     (t, a, { api: o }) => {
@@ -895,7 +896,7 @@
                 pe =
                     () =>
                     (e, t, { api: a }) =>
-                        !!oe(t()) ? Promise.resolve() : e(Ae()),
+                        !!oe(t()) ? Promise.resolve() : e(Ie()),
                 me =
                     (e) =>
                     (t, a, { api: o }) => {
@@ -923,11 +924,11 @@
                     (e) =>
                     (t, a, { api: o }) =>
                         (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: U, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
-                Ie =
+                Ae =
                     () =>
                     (e, t, { api: a }) =>
                         (0, l._O)(e, { request: a.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: g, context: "FETCH_SIGNUP_ELIGIBILITY" }),
-                Ae =
+                Ie =
                     () =>
                     (e, t, { api: a }) =>
                         (0, l._O)(e, { request: a.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: O, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
@@ -993,7 +994,7 @@
                 ke =
                     () =>
                     (e, t, { api: a }) =>
-                        (0, l._O)(e, { request: a.withEndpoint(r.Z).fetchPublicData, params: {} })({ actionTypes: A, context: "FETCH_DATA", meta: {} });
+                        (0, l._O)(e, { request: a.withEndpoint(r.Z).fetchPublicData, params: {} })({ actionTypes: I, context: "FETCH_DATA", meta: {} });
         },
         302101: (e, t, a) => {
             a.d(t, { N: () => r });
@@ -1077,4 +1078,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.74a6895a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.ad59f24a.js.map

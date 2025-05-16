@@ -14,15 +14,15 @@
                 c = r(638009),
                 u = r(32471),
                 m = r(966582),
-                h = r(966886),
-                p = r(308158),
+                p = r(966886),
+                h = r(308158),
                 w = r(126962),
                 g = r(54989),
                 C = r(366985),
                 f = r(982266),
                 _ = r(990804),
-                v = r(530338),
-                b = r(16037),
+                b = r(530338),
+                v = r(16037),
                 T = r(737082),
                 y = r(103737),
                 k = r(189655),
@@ -33,7 +33,7 @@
                 M = r(528647),
                 A = r(782261),
                 S = r(782299);
-            const P = Object.freeze({ ActionsBar: _.Z, ActionMenu: f.Z, CallToAction: a.ZP, EditCallout: b.Z, Education: T.Z, HighlightedUserLabel: d.Z, Media: y.Z, Place: o.ZP, PromotedDetails: u.Z, PromotedUserProfileCard: k.Z, ReplyContext: E.ZP, RichContent: x.Z, SocialContext: w.Z, Text: I.Z, Tombstone: g.Z, Timestamp: h.Z, UserAvatar: Z.Z, UserFollowIndicator: S.Z, UserName: M.Z, ArticleCard: v.Z }),
+            const P = Object.freeze({ ActionsBar: _.Z, ActionMenu: f.Z, CallToAction: a.ZP, EditCallout: v.Z, Education: T.Z, HighlightedUserLabel: d.Z, Media: y.Z, Place: o.ZP, PromotedDetails: u.Z, PromotedUserProfileCard: k.Z, ReplyContext: E.ZP, RichContent: x.Z, SocialContext: w.Z, Text: I.Z, Tombstone: g.Z, Timestamp: p.Z, UserAvatar: Z.Z, UserFollowIndicator: S.Z, UserName: M.Z, ArticleCard: b.Z }),
                 L = { linkProcessor: (e) => ({ ...e, pathname: new URL(e.pathname, "https://twitter.com").toString() }) };
             function U(e) {
                 const t = n.useRef(e);
@@ -41,14 +41,14 @@
                     return null === t.current ? e : n.createElement(c.zt, t.current, e);
                 }, []);
             }
-            function R({ renderActionsBar: e = H, renderActionMenu: t = B, renderArticleCard: r = N, renderCallToAction: i = V, renderEditCallout: o = D, renderEducation: a = F, renderHighlightedUserLabel: d = W, renderPlace: c = q, renderPromotedUserProfileCard: u = $, renderPromotedDetails: h = z, renderPromotionStatusBadge: w = Q, renderReplyContext: g = O, renderRichContent: f = K, renderMedia: _ = Y, renderTweetHeader: v = j, renderStats: b = G, renderText: T = X, renderTimestamp: y = J, renderTombstone: k = ee, renderUserAvatar: E = te, renderUserFollowIndicator: x = re, renderUserName: I = ie, promotedContent: Z, quotedTweetTombstoneInfo: M, socialContext: S, tweetContext: P, staticLinkConfig: R = L, tweet: ne, ...oe }) {
+            function R({ renderActionsBar: e = V, renderActionMenu: t = B, renderArticleCard: r = N, renderCallToAction: i = H, renderEditCallout: o = D, renderEducation: a = F, renderHighlightedUserLabel: d = W, renderPlace: c = q, renderPromotedUserProfileCard: u = z, renderPromotedDetails: p = $, renderPromotionStatusBadge: w = Q, renderReplyContext: g = O, renderRichContent: f = K, renderMedia: _ = Y, renderTweetHeader: b = j, renderStats: v = G, renderText: T = X, renderTimestamp: y = J, renderTombstone: k = ee, renderUserAvatar: E = te, renderUserFollowIndicator: x = re, renderUserName: I = ie, promotedContent: Z, quotedTweetTombstoneInfo: M, socialContext: S, tweetContext: P, staticLinkConfig: R = L, tweet: ne, ...oe }) {
                 const ae = A.Z.getOriginalTweet(ne),
                     [se, le] = (0, C.L)(ae),
                     de = l.ZP.useProps(),
                     ce = de.c9sHashtagsEnabled(),
                     ue = de.renderArticleCardInTweet(),
                     me = "true" === Z?.experiment_values?.pac_in_timeline && s.default.isFollowerCard(Z?.adMetadataContainer?.dynamicCardContent?.card_type),
-                    he = {
+                    pe = {
                         renderArticleCard: (e) => (A.Z.isArticlePost(ae) && ae.article && ue ? r({ articleEntity: ae.article, hasSensitiveContent: ae.possibly_sensitive, mediaVisibilityResults: ae.mediaVisibilityResults }) : null),
                         renderActionsBar: (t) => e({ bookmarkCount: ae.bookmark_count, enableKeyboardShortcuts: !1, isLiked: ae.favorited, isRetweeted: ae.retweeted, likeCount: ae.favorite_count, id: se.actionsBar, replyCount: ae.reply_count, retweetCount: (ae.quote_count ?? 0) + (ae.retweet_count ?? 0), tweetLink: ae.permalink, withAnalytics: !1, withCount: !0, ...t }),
                         renderActionMenu: (e) => t({ items: [], ...e }),
@@ -59,12 +59,12 @@
                         renderMedia: (e) => (A.Z.hasMedia(ae) ? _({ authorId: ae.user.id_str, authorScreenName: ae.user.screen_name, forwardPivotInfo: ne.softIntervention, hasSensitiveMedia: ae.possibly_sensitive, mediaTagsLink: `${ae.permalink}/media_tags`, mediaDetails: ae.extended_entities?.media, id: se.media, promotedContent: Z, tweetCreatedAt: ae.created_at, tweetId: ae.id_str, tweetText: ae.text, mediaVisibilityResults: ae.mediaVisibilityResults, ...e }) : null),
                         renderPlace: (e) => (ae.place ? c({ children: ae.place.full_name, link: `/places/${ae.place.id}`, ...e }) : null),
                         renderPromotedUserProfileCard: (e) => ("true" === Z?.experiment_values?.pac_in_timeline ? u({ isUserProtected: ae.user.protected, isUserVerified: ae.user.verified, promotedContent: Z, userDescription: ae.user.description, userId: ae.user.id_str, userName: ae.user.name, userScreenName: ae.user.screen_name, ...e }) : null),
-                        renderPromotedDetails: (e) => (Z && m.Z.isPromoted(Z) ? h({ contentAuthorId: ae.user.id_str, screenName: ae.user.screen_name, id: se.promotedLabel, promotedContent: Z, ...e }) : null),
+                        renderPromotedDetails: (e) => (Z && m.Z.isPromoted(Z) ? p({ contentAuthorId: ae.user.id_str, screenName: ae.user.screen_name, id: se.promotedLabel, promotedContent: Z, ...e }) : null),
                         renderPromotionStatusBadge: (e) => w({ id: se.promotionStatusLabel }),
                         renderReplyContext: (e) => (ae.in_reply_to_status_id_str ? g({ displayTextRange: ae.display_text_range, inReplyToName: ae.in_reply_to_name, inReplyToScreenName: ae.in_reply_to_screen_name, inReplyToStatusIdStr: ae.in_reply_to_status_id_str, inReplyToUserIdStr: ae.in_reply_to_user_id_str, id: se.replyContext, tweetPermalink: ae.permalink, unmentionedUserIds: ae.unmentioned_user_ids, userMentionsEntities: ae.entities?.user_mentions, ...e }) : null),
                         renderRichContent: (e) => f({ forwardPivotInfo: ne.softIntervention, id: se.richContent, quotedTweetTombstoneInfo: M, tweet: ne, withAltTextBadge: !0, withCardLinks: !1, withCondensedQuoteTweet: !0, withMediaTagsIcon: !1, withQuoteTweetHeaderLinks: !1, withQuoteTweetLink: !0, withQuoteTweetMedia: !0, ...e }),
-                        renderTweetHeader: (e) => (S ? v({ contextType: S.contextType, link: S.link, id: se.socialContext, retweetData: { isSelfRetweet: S.isSelfRetweet, name: S.name, screenName: S.screenName }, text: S.text, ...e }) : v()),
-                        renderStats: () => b(),
+                        renderTweetHeader: (e) => (S ? b({ contextType: S.contextType, link: S.link, id: se.socialContext, retweetData: { isSelfRetweet: S.isSelfRetweet, name: S.name, screenName: S.screenName }, text: S.text, ...e }) : b()),
+                        renderStats: () => v(),
                         renderText: (e) => {
                             const t = ae?.community_id_str,
                                 r = t && ce ? (e, r) => new URL(`/i/communities/${t}/hashtag/${r}`, e) : void 0,
@@ -75,24 +75,24 @@
                         renderTimestamp: (e) => y({ id: se.timestamp, link: { pathname: ae.permalink, state: { contextTweetId: ae.id_str, promotedContent: Z } }, timestamp: ae.created_at, ...e }),
                         renderTombstone: (e) => {
                             const t = ae.tombstoneInfo || ne.tombstoneInfo;
-                            return t?.richText ? k({ children: n.createElement(p.Z, { dir: t.richText.rtl ? "rtl" : "ltr", entities: t.richText.entities, text: t.richText.text }), id: se.tombstone, ...e }) : null;
+                            return t?.richText ? k({ children: n.createElement(h.Z, { dir: t.richText.rtl ? "rtl" : "ltr", entities: t.richText.entities, text: t.richText.text }), id: se.tombstone, ...e }) : null;
                         },
                         renderUserAvatar: (e) => E({ id: se.avatar, promotedContent: Z, screenName: ae.user.screen_name, uri: ae.user.profile_image_url_https, withLink: !0, ...e }),
                         renderUserFollowIndicator: (e) => null,
                         renderUserName: (e) => I({ userData: { isProtected: ae.user.protected, isBlueVerified: ae.user.is_blue_verified, isVerified: ae.user.verified, name: ae.user.name, screenName: ae.user.screen_name, userId: ae.user.id_str, verifiedType: ae.user.verified_type, isSubscriber: ae.has_super_follower, affiliateBadgeInfo: ae.user.highlightedLabel, communityModeratorStatus: ae.author_community_relationship?.role }, id: se.username, promotedContent: Z, tweetId: ae.id_str, ...e }),
                     };
-                return { LinkConfigProvider: U(R), a11yIds: se, a11yIdList: le, props: { ...he, tweet: ne, promotedContent: Z, socialContext: S, quotedTweetTombstoneInfo: M, ...oe } };
+                return { LinkConfigProvider: U(R), a11yIds: se, a11yIdList: le, props: { ...pe, tweet: ne, promotedContent: Z, socialContext: S, quotedTweetTombstoneInfo: M, ...oe } };
             }
             const N = (e) => n.createElement(P.ArticleCard, e),
                 B = (e) => n.createElement(P.ActionMenu, e),
-                H = (e) => n.createElement(P.ActionsBar, (0, i.Z)({}, e, { isDisabled: !0 })),
-                V = (e) => null,
+                V = (e) => n.createElement(P.ActionsBar, (0, i.Z)({}, e, { isDisabled: !0 })),
+                H = (e) => null,
                 F = (e) => n.createElement(P.Education, e),
                 D = (e) => n.createElement(P.EditCallout, e),
                 W = (e) => n.createElement(P.HighlightedUserLabel, e),
                 q = (e) => n.createElement(P.Place, e),
-                z = (e) => n.createElement(P.PromotedDetails, e),
-                $ = (e) => null,
+                $ = (e) => n.createElement(P.PromotedDetails, e),
+                z = (e) => null,
                 Q = (e) => null,
                 O = (e) => n.createElement(P.ReplyContext, e),
                 K = (e) => n.createElement(P.RichContent, e),
@@ -135,18 +135,18 @@
                 a = r(254950),
                 s = r(110377),
                 l = r(906396);
-            const d = ({ cacheLocationKey: e, containerAspectRatio: t, images: r, isCondensed: d, mediaMaxHeight: c, onClick: u, onVariantSelection: m, previewMode: h, singleImageMaxAspectRatio: p, singleImageMinAspectRatio: w, testID: g, withCenterCrop: C = !1, withLink: f = !0 }) => {
+            const d = ({ cacheLocationKey: e, containerAspectRatio: t, images: r, isCondensed: d, mediaMaxHeight: c, onClick: u, onVariantSelection: m, previewMode: p, singleImageMaxAspectRatio: h, singleImageMinAspectRatio: w, testID: g, withCenterCrop: C = !1, withLink: f = !0 }) => {
                     const { getLayoutCacheForIndex: _ } = (0, l.X)({ locationKey: e, itemCount: r.length }),
-                        v = n.useMemo(() => (r.length > 1 ? o.Z.COVER : o.Z.withinRange(w, p)), [r.length, p, w]),
-                        b = n.useMemo(() => r.map((e) => ({ type: "photo", ...e })), [r]),
+                        b = n.useMemo(() => (r.length > 1 ? o.Z.COVER : o.Z.withinRange(w, h)), [r.length, h, w]),
+                        v = n.useMemo(() => r.map((e) => ({ type: "photo", ...e })), [r]),
                         T = n.useCallback(
                             ({ index: e }) => {
-                                const t = { mediaMaxHeight: c, onClick: u, onVariantSelection: m, previewMode: h, testID: g, withCenterCrop: C, withLink: f },
-                                    r = b[e],
+                                const t = { mediaMaxHeight: c, onClick: u, onVariantSelection: m, previewMode: p, testID: g, withCenterCrop: C, withLink: f },
+                                    r = v[e],
                                     o = _(e) ?? void 0;
-                                return n.createElement(s.j, (0, i.Z)({}, t, { aspectMode: v, image: r, layoutCache: o }));
+                                return n.createElement(s.j, (0, i.Z)({}, t, { aspectMode: b, image: r, layoutCache: o }));
                             },
-                            [b, c, u, m, h, g, C, f, _, v],
+                            [v, c, u, m, p, g, C, f, _, b],
                         );
                     return n.createElement(a.ZP, { containerAspectRatio: t, groupSize: r.length, isCondensed: d, renderItemAtIndex: T });
                 },
@@ -160,12 +160,12 @@
                 a = r(392237),
                 s = r(266704);
             const l = a.default.create((e) => ({ root: { borderWidth: e.borderWidths.small, borderColor: e.colors.borderColor, borderStyle: "solid", borderRadius: e.borderRadii.large } })),
-                d = function ({ followButton: e, isUserProtected: t, isUserVerified: r, knownFollowers: a, link: d, onClick: c, onScreenNameClick: u, promotedContent: m, style: h, userDescription: p, userId: w, userName: g, userScreenName: C }) {
-                    return i.createElement(n.Z, { style: h }, i.createElement(o.Z, { link: d, onClick: c, style: l.root }, i.createElement(s.Z.Promoted, { followButton: e, isUserProtected: t, isUserVerified: r, knownFollowers: a, onScreenNameClick: u, promotedContent: m, userDescription: p, userId: w, userName: g, userScreenName: C })));
+                d = function ({ followButton: e, isUserProtected: t, isUserVerified: r, knownFollowers: a, link: d, onClick: c, onScreenNameClick: u, promotedContent: m, style: p, userDescription: h, userId: w, userName: g, userScreenName: C }) {
+                    return i.createElement(n.Z, { style: p }, i.createElement(o.Z, { link: d, onClick: c, style: l.root }, i.createElement(s.Z.Promoted, { followButton: e, isUserProtected: t, isUserVerified: r, knownFollowers: a, onScreenNameClick: u, promotedContent: m, userDescription: h, userId: w, userName: g, userScreenName: C })));
                 };
         },
         774526: (e, t, r) => {
-            r.d(t, { Y: () => K, Z: () => H });
+            r.d(t, { Y: () => K, Z: () => V });
             var i = r(807896),
                 n = r(202784),
                 o = r(325686),
@@ -176,15 +176,15 @@
                 c = r(837880),
                 u = r(12686),
                 m = r(276563),
-                h = r(235902),
-                p = r(847224),
+                p = r(235902),
+                h = r(847224),
                 w = r(950152),
                 g = r(666305),
                 C = r(834324),
                 f = r(309854),
                 _ = r(782578),
-                v = r(352924),
-                b = r(521288),
+                b = r(352924),
+                v = r(521288),
                 T = r(912838),
                 y = r(308158),
                 k = r(287826),
@@ -219,25 +219,25 @@
                     }, []);
                     return [t >= 506, e];
                 };
-            function H(e) {
-                const { cardCacheLocationKey: t, forwardPivotInfo: r, id: a, inlineCalloutInfo: s, innerForwardPivotInfo: l, innerNudges: c, isMediaMaxHeightEnabled: g, loggedInUserId: f, onCardLinkClick: y, onQuoteTweetClick: k, onQuoteTweetMediaClick: E, onQuotedTweetAvatarClick: x, onQuotedTweetScreenNameClick: I, preventVideoPlayback: Z, promotedContent: A, quoteTweetSingleImageMinAspectRatio: S, quoteTweetSocialContextProps: U, quotedTweetTombstoneInfo: R, renderJetfuelFrame: H, renderQuoteTweetTombstone: F, singleImageMaxAspectRatio: $, style: Q, tweet: j, withActionsDisabled: G, withAltTextBadge: J, withCardLinks: X, withCenterCrop: ee, withCondensedQuoteTweet: te, withHalvedMediaSize: re, withQuoteTweetBirdwatchPivot: ie, withQuoteTweetHeaderLinks: ne, withQuoteTweetLink: oe, withQuoteTweetMedia: ae, withUserHoverCard: se } = D(e),
+            function V(e) {
+                const { cardCacheLocationKey: t, forwardPivotInfo: r, id: a, inlineCalloutInfo: s, innerForwardPivotInfo: l, innerNudges: c, isMediaMaxHeightEnabled: g, loggedInUserId: f, onCardLinkClick: y, onQuoteTweetClick: k, onQuoteTweetMediaClick: E, onQuotedTweetAvatarClick: x, onQuotedTweetScreenNameClick: I, preventVideoPlayback: Z, promotedContent: A, quoteTweetSingleImageMinAspectRatio: S, quoteTweetSocialContextProps: U, quotedTweetTombstoneInfo: R, renderJetfuelFrame: V, renderQuoteTweetTombstone: F, singleImageMaxAspectRatio: z, style: Q, tweet: j, withActionsDisabled: G, withAltTextBadge: J, withCardLinks: X, withCenterCrop: ee, withCondensedQuoteTweet: te, withHalvedMediaSize: re, withQuoteTweetBirdwatchPivot: ie, withQuoteTweetHeaderLinks: ne, withQuoteTweetLink: oe, withQuoteTweetMedia: ae, withUserHoverCard: se } = D(e),
                     [le, de] = B(),
-                    ce = h.ZP.useProps(),
+                    ce = p.ZP.useProps(),
                     ue = ce.withEdgeToEdgeContent(),
-                    me = (0, v.b)(),
-                    he = (0, v.b)(),
-                    pe = M.Z.getOriginalTweet(j),
+                    me = (0, b.b)(),
+                    pe = (0, b.b)(),
+                    he = M.Z.getOriginalTweet(j),
                     we = ce.compactMediaMaxHeight(),
-                    ge = () => W(pe.quoted_status),
+                    ge = () => W(he.quoted_status),
                     Ce = () => {
                         const e = ge();
                         if (!e || !e.original_info) return;
                         const { height: t, width: r } = e && e.original_info;
-                        return (0, _.q)(S, $, { width: r, height: t });
+                        return (0, _.q)(S, z, { width: r, height: t });
                     },
                     fe = () => {
                         const t = M.Z.getOriginalTweet(j),
-                            r = z(e),
+                            r = $(e),
                             i =
                                 g &&
                                 !r &&
@@ -250,12 +250,12 @@
                                 const e = ge();
                                 if (e) return q(e);
                             })();
-                        return t && t.is_quote_status ? n.createElement(b.Z, { forwardPivotInfo: t.quoted_status?.softIntervention || l, id: he, isCondensed: te, loggedInUserId: f, mediaContentStyles: !te && Y({ withEdgeToEdgeContent: ue, withHalvedMediaSize: re, backgroundColor: o, withMaxHeight: i, isInQuoteTweet: !0 }), mediaMaxHeight: i ? (ue ? L : we > 0 ? we : P) : void 0, nudges: c, onAvatarClick: x, onMediaClick: E, onPress: k, onScreenNameClick: I, preventVideoPlayback: Z, promotedContent: A, shouldRenderIfBlocked: !!R, shouldShowAltLabelAlways: J, singleImageMaxAspectRatio: $, singleImageMinAspectRatio: S, socialContextProps: U, tweet: t.quoted_status, withActionsDisabled: G, withBirdwatchPivot: ie, withCenterCrop: ee, withHeaderLinks: ne, withLink: oe, withMediaAsTextLinks: !ae, withUserHoverCard: se }) : null;
+                        return t && t.is_quote_status ? n.createElement(v.Z, { forwardPivotInfo: t.quoted_status?.softIntervention || l, id: pe, isCondensed: te, loggedInUserId: f, mediaContentStyles: !te && Y({ withEdgeToEdgeContent: ue, withHalvedMediaSize: re, backgroundColor: o, withMaxHeight: i, isInQuoteTweet: !0 }), mediaMaxHeight: i ? (ue ? L : we > 0 ? we : P) : void 0, nudges: c, onAvatarClick: x, onMediaClick: E, onPress: k, onScreenNameClick: I, preventVideoPlayback: Z, promotedContent: A, shouldRenderIfBlocked: !!R, shouldShowAltLabelAlways: J, singleImageMaxAspectRatio: z, singleImageMinAspectRatio: S, socialContextProps: U, tweet: t.quoted_status, withActionsDisabled: G, withBirdwatchPivot: ie, withCenterCrop: ee, withHeaderLinks: ne, withLink: oe, withMediaAsTextLinks: !ae, withUserHoverCard: se }) : null;
                     },
                     _e = () => !!A?.adMetadataContainer?.unifiedCardOverride,
-                    ve = H(),
-                    be = ((e, t) => {
-                        if (!z(e) || O(e)) return null;
+                    be = V(),
+                    ve = ((e, t) => {
+                        if (!$(e) || O(e)) return null;
                         let r;
                         if (t.extended_entities?.media) {
                             const i = t.extended_entities.media;
@@ -266,41 +266,41 @@
                             } else r = i;
                         }
                         return n.createElement(K, (0, i.Z)({}, e, { mediaDetails: r }));
-                    })(e, pe),
+                    })(e, he),
                     Te = (() => {
                         if (r && r.displayType === w.x.SoftIntervention) {
                             const { displayType: e, landingUrl: t, softInterventionDisplayType: i, text: o } = r;
-                            return n.createElement(p.Z, { displayType: e, isTweetNonCompliant: "non_compliant" === j.limited_actions, landingUrl: t, softInterventionDisplayType: i, text: o, tweetId: j.id_str });
+                            return n.createElement(h.Z, { displayType: e, isTweetNonCompliant: "non_compliant" === j.limited_actions, landingUrl: t, softInterventionDisplayType: i, text: o, tweetId: j.id_str });
                         }
                     })(),
                     ye = s ? n.createElement(C.Z, s) : null,
                     ke = (() => {
-                        if (!pe || ve) return null;
+                        if (!he || be) return null;
                         if (
                             (() => {
                                 if (_e()) return !1;
-                                const e = pe.card?.binding_values?.unified_card?.string_value;
+                                const e = he.card?.binding_values?.unified_card?.string_value;
                                 return !!e && (e.includes('"3_1696305594007801856"') || e.includes('"3_1485707239990054912"'));
                             })()
                         )
                             return null;
-                        const r = m.default.getLegacyOrUnifiedCard(pe, A, { isDynamicFollowCardPresentAndEnabled: O(e), isDynamicProductCardPresentAndEnabled: _e(), withCardLinks: X, hasMedia: z(e) }),
-                            o = M.Z.isArticlePost(pe);
-                        return r && !(o && "NoCard" === r?.unifiedCard?.card_fetch_state) ? n.createElement(u.Z, (0, i.Z)({}, r, { cardContext: { locationKey: t || N, tweetId: pe.id_str, tweetPermalink: pe.permalink, tweetUserId: pe.user.id_str, viewerUserId: f, withActionsDisabled: G, mediaVisibilityResults: pe.mediaVisibilityResults, grokShareAttachment: pe.grok_share_attachment }, id: me, onCardLinkClick: y, preventVideoPlayback: Z, promotedContent: A })) : null;
+                        const r = m.default.getLegacyOrUnifiedCard(he, A, { isDynamicFollowCardPresentAndEnabled: O(e), isDynamicProductCardPresentAndEnabled: _e(), withCardLinks: X, hasMedia: $(e) }),
+                            o = M.Z.isArticlePost(he);
+                        return r && !(o && "NoCard" === r?.unifiedCard?.card_fetch_state) ? n.createElement(u.Z, (0, i.Z)({}, r, { cardContext: { locationKey: t || N, tweetId: he.id_str, tweetPermalink: he.permalink, tweetUserId: he.user.id_str, viewerUserId: f, withActionsDisabled: G, mediaVisibilityResults: he.mediaVisibilityResults, grokShareAttachment: he.grok_share_attachment }, id: me, onCardLinkClick: y, preventVideoPlayback: Z, promotedContent: A })) : null;
                     })(),
                     Ee = ((e) => {
-                        const { possibly_sensitive: t, quoted_status: r } = pe;
-                        return ((!!r?.possibly_sensitive && !!(pe.quoted_status && pe.quoted_status.entities && pe.quoted_status.entities.media && pe.quoted_status.entities.media.length > 0 && ae) && !R) || (t && !m.default.isPollCard(pe.card?.name))) && e ? n.createElement(T.Z, { revealableTombstoneConfig: T.Z.sensitiveMediaTombstoneConfig }, e) : e;
+                        const { possibly_sensitive: t, quoted_status: r } = he;
+                        return ((!!r?.possibly_sensitive && !!(he.quoted_status && he.quoted_status.entities && he.quoted_status.entities.media && he.quoted_status.entities.media.length > 0 && ae) && !R) || (t && !m.default.isPollCard(he.card?.name))) && e ? n.createElement(T.Z, { revealableTombstoneConfig: T.Z.sensitiveMediaTombstoneConfig }, e) : e;
                     })(
                         (() => {
                             const e = fe();
-                            return e && R ? F({ children: e, config: R, id: he }) : e;
+                            return e && R ? F({ children: e, config: R, id: pe }) : e;
                         })() || ke,
                     );
-                if (!(be || Ee || Te || ve)) return null;
-                return n.createElement(o.Z, { "aria-labelledby": `${he} ${me}`, id: a, ref: de, style: [V.gap, Q] }, be || ye || Te ? n.createElement(o.Z, { style: V.mediaPivotGap }, be, ye, Te) : null, z(e) ? null : ve, Ee);
+                if (!(ve || Ee || Te || be)) return null;
+                return n.createElement(o.Z, { "aria-labelledby": `${pe} ${me}`, id: a, ref: de, style: [H.gap, Q] }, ve || ye || Te ? n.createElement(o.Z, { style: H.mediaPivotGap }, ve, ye, Te) : null, $(e) ? null : be, Ee);
             }
-            const V = E.default.create((e) => ({ gap: { gap: e.spaces.space4 }, jetfuelCard: { paddingTop: e.spaces.space2 }, mediaPivotGap: { gap: e.spaces.space4 }, explicitlySized: { alignSelf: "flex-start" }, edgeToEdgeSingleVideoWithMaxHeight: { display: "block", start: "50%", translate: `calc(-50% + ${e.spacesPx.space16}px)` }, negativeMargin: { marginHorizontal: -e.spacesPx.space16 }, centerItems: { alignItems: "center" } }));
+            const H = E.default.create((e) => ({ gap: { gap: e.spaces.space4 }, jetfuelCard: { paddingTop: e.spaces.space2 }, mediaPivotGap: { gap: e.spaces.space4 }, explicitlySized: { alignSelf: "flex-start" }, edgeToEdgeSingleVideoWithMaxHeight: { display: "block", start: "50%", translate: `calc(-50% + ${e.spacesPx.space16}px)` }, negativeMargin: { marginHorizontal: -e.spacesPx.space16 }, centerItems: { alignItems: "center" } }));
             function F({ children: e, config: t, id: r }) {
                 const i = t.richRevealText?.text || t.revealText,
                     a = t.richText ? n.createElement(y.Z, { align: "Center" === t.richText.alignment ? "center" : void 0, dir: t.richText.rtl ? "rtl" : "ltr", entities: t.richText.entities, onEntityClick: t.richText.onEntityClick, text: t.richText.text }) : t.text;
@@ -318,34 +318,34 @@
                 const t = f.Z.getBackgroundColor(e);
                 if (t) return `rgb(${t.red},${t.green},${t.blue})`;
             }
-            function z(e) {
+            function $(e) {
                 const t = D(e),
                     r = M.Z.getOriginalTweet(t.tweet);
                 return M.Z.hasMedia(r, !t.withTweetMedia);
             }
-            const $ = (e) => {
+            const z = (e) => {
                     const t = e?.extended_entities?.media;
                     return 1 === t?.length && "video" === t[0].type;
                 },
-                Q = (e, t, r) => [{ maxHeight: t, maxWidth: t * e, aspectRatio: e, boxSizing: "content-box" }, r && V.edgeToEdgeSingleVideoWithMaxHeight];
+                Q = (e, t, r) => [{ maxHeight: t, maxWidth: t * e, aspectRatio: e, boxSizing: "content-box" }, r && H.edgeToEdgeSingleVideoWithMaxHeight];
             function O(e) {
                 const t = D(e);
                 return "true" === t.promotedContent?.experiment_values?.pac_in_timeline && !!t.promotedContent?.adMetadataContainer?.dynamicCardContent;
             }
             function K(e) {
                 const { mediaDetails: t, ...r } = e,
-                    { displayMediaMetadata: i, enableKeyboardShortcuts: a, forwardPivotInfo: s, isMediaMaxHeightEnabled: l, loggedInUserId: d, mediaAltTranslations: u, mediaCacheLocationKey: p, nudges: w, onGrokClick: g, onMediaClick: C, onMediaTagsClick: f, onPlaybackStarted: v, preventVideoPlayback: b, promotedContent: T, renderPrerollActionMenu: y, showAltTranslation: E, singleImageMaxAspectRatio: x, singleImageMinAspectRatio: I, withAltTextBadge: U, withCenterCrop: R, withHalvedMediaSize: H, withMediaTagsIcon: F, withRoundMediaCorners: O } = D(r),
+                    { displayMediaMetadata: i, enableKeyboardShortcuts: a, forwardPivotInfo: s, isMediaMaxHeightEnabled: l, loggedInUserId: d, mediaAltTranslations: u, mediaCacheLocationKey: h, nudges: w, onGrokClick: g, onMediaClick: C, onMediaTagsClick: f, onPlaybackStarted: b, preventVideoPlayback: v, promotedContent: T, renderPrerollActionMenu: y, showAltTranslation: E, singleImageMaxAspectRatio: x, singleImageMinAspectRatio: I, withAltTextBadge: U, withCenterCrop: R, withHalvedMediaSize: V, withMediaTagsIcon: F, withRoundMediaCorners: O } = D(r),
                     [K, j] = B(),
-                    G = h.ZP.useProps(),
+                    G = p.ZP.useProps(),
                     J = G.withEdgeToEdgeContent(),
                     X = M.Z.getOriginalTweet(e.tweet),
                     ee = G.isVerticalVideoNoBlackBars(),
-                    te = $(X),
+                    te = z(X),
                     re = !!W(X),
                     ie =
                         (function (e, t, r) {
                             const i = D(t);
-                            if (!z(i)) return;
+                            if (!$(i)) return;
                             const n = e?.extended_entities?.media,
                                 o = 1 === n?.length ? n[0] : void 0;
                             if (!o || (!o.original_info && !o.video_info)) return;
@@ -358,7 +358,7 @@
                         : l &&
                           (function (e, t) {
                               const r = D(t);
-                              if (!z(r)) return !1;
+                              if (!$(r)) return !1;
                               const i = W(e);
                               if (!i || !i.original_info) return !1;
                               const { height: n, width: o } = i && i.original_info;
@@ -372,18 +372,18 @@
                         if (t) return q(t);
                     })(X);
                 if (A.B(X)) return n.createElement(S.Z, { tweet: X });
-                if (X.card && m.default.isSpaceCard(X.card.name)) return n.createElement(o.Z, { style: V.gap }, n.createElement(k.Z, { audioSpaceId: X.card.binding_values.id?.string_value, clipMetadata: X.card.binding_values.clip_metadata?.string_value }));
+                if (X.card && m.default.isSpaceCard(X.card.name)) return n.createElement(o.Z, { style: H.gap }, n.createElement(k.Z, { audioSpaceId: X.card.binding_values.id?.string_value, clipMetadata: X.card.binding_values.clip_metadata?.string_value }));
                 const le = l && oe > 0 && (re || te),
                     de = ae * (re || ee ? ie : Math.max(1, ie));
-                return n.createElement(o.Z, { ref: j, style: le && { maxWidth: de } }, n.createElement(Z.Z, { authorId: X.user.id_str, authorScreenName: X.user.screen_name, cacheLocationKey: p || N, customHoverBackgroundColor: ne && J ? se : void 0, displayMediaAttribution: !0, displayMediaMetadata: i, enableKeyboardShortcuts: a, forwardPivotInfo: s, hasSensitiveMedia: X.possibly_sensitive, loggedInUserId: d, mediaAltTranslations: u, mediaContentStyles: [Y({ withEdgeToEdgeContent: J, withHalvedMediaSize: H, backgroundColor: se, withMaxHeight: ne }), ee && ne && te && Q(ie, ae, J)], mediaDetails: t, mediaMaxHeight: ne ? ae : void 0, mediaTagsLink: `${X.permalink}/media_tags`, mediaVisibilityResults: X.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: w, onClick: C, onClickMediaTags: f, onGrokClick: g, onPlaybackStarted: v, parentTweetId: e.tweet.id_str, preventPlayback: b, promotedContent: T, renderPrerollActionMenu: y, shouldShowAltLabelAlways: U, showAltTranslation: E, showBorder: !(ne && J), showRoundCorners: O, singleImageMaxAspectRatio: x, singleImageMinAspectRatio: I, style: ne && !J && (!ee || !te) && V.explicitlySized, tweetCreatedAt: X.created_at, tweetId: X.id_str, tweetText: X.text, withCenterCrop: R, withHalvedMediaSize: H, withMediaTagsIcon: F, withPostPlayback: !0 }));
+                return n.createElement(o.Z, { ref: j, style: le && { maxWidth: de } }, n.createElement(Z.Z, { authorId: X.user.id_str, authorScreenName: X.user.screen_name, cacheLocationKey: h || N, customHoverBackgroundColor: ne && J ? se : void 0, displayMediaAttribution: !0, displayMediaMetadata: i, enableKeyboardShortcuts: a, forwardPivotInfo: s, hasSensitiveMedia: X.possibly_sensitive, loggedInUserId: d, mediaAltTranslations: u, mediaContentStyles: [Y({ withEdgeToEdgeContent: J, withHalvedMediaSize: V, backgroundColor: se, withMaxHeight: ne }), ee && ne && te && Q(ie, ae, J)], mediaDetails: t, mediaMaxHeight: ne ? ae : void 0, mediaTagsLink: `${X.permalink}/media_tags`, mediaVisibilityResults: X.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: w, onClick: C, onClickMediaTags: f, onGrokClick: g, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: v, promotedContent: T, renderPrerollActionMenu: y, shouldShowAltLabelAlways: U, showAltTranslation: E, showBorder: !(ne && J), showRoundCorners: O, singleImageMaxAspectRatio: x, singleImageMinAspectRatio: I, style: ne && !J && (!ee || !te) && H.explicitlySized, tweetCreatedAt: X.created_at, tweetId: X.id_str, tweetText: X.text, withCenterCrop: R, withHalvedMediaSize: V, withMediaTagsIcon: F, withPostPlayback: !0 }));
             }
             function Y(e) {
                 const { backgroundColor: t, isInQuoteTweet: r = !1, withEdgeToEdgeContent: i, withHalvedMediaSize: n, withMaxHeight: o } = e;
-                return [i && !r && !n && V.negativeMargin, o && i && [V.centerItems, { backgroundColor: t }]];
+                return [i && !r && !n && H.negativeMargin, o && i && [H.centerItems, { backgroundColor: t }]];
             }
         },
         266704: (e, t, r) => {
-            r.d(t, { Z: () => v });
+            r.d(t, { Z: () => b });
             var i = r(202784),
                 n = r(325686),
                 o = r(731708),
@@ -394,8 +394,8 @@
                 c = r(823161),
                 u = r(238406),
                 m = r(366635),
-                h = r(646797);
-            const p = () => !1;
+                p = r(646797);
+            const h = () => !1;
             class w extends i.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -428,7 +428,7 @@
                 _renderUserAvatar() {
                     const { isAllowedToViewOptions: e, onAvatarClick: t, profileLink: r, promotedContent: o, userAvatarSize: s, userAvatarUri: l, userScreenName: d } = this.props,
                         { avatar: u } = e;
-                    return i.createElement(n.Z, { style: g.row }, i.createElement(a.ZP.Provider, { value: { userAvatarLabel: p } }, i.createElement(c.default, { link: r, onClick: t, promotedContent: o, screenName: d, size: s, uri: u ? l : void 0, withLink: !0 })), this._renderDecoration());
+                    return i.createElement(n.Z, { style: g.row }, i.createElement(a.ZP.Provider, { value: { userAvatarLabel: h } }, i.createElement(c.default, { link: r, onClick: t, promotedContent: o, screenName: d, size: s, uri: u ? l : void 0, withLink: !0 })), this._renderDecoration());
                 }
                 _renderHeader(e) {
                     const { isAllowedToViewOptions: t, withUserAvatar: r } = this.props,
@@ -440,9 +440,9 @@
                     return e || this._renderFollowButton();
                 }
                 _renderUserName() {
-                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: n, onScreenNameClick: o, profileLink: a, promotedContent: s, userHighlightedLabel: l, userName: d, userScreenName: c, userTranslatorType: u, userVerifiedType: h, userWithFollowsYou: p, withNameWrap: w } = this.props,
+                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: n, onScreenNameClick: o, profileLink: a, promotedContent: s, userHighlightedLabel: l, userName: d, userScreenName: c, userTranslatorType: u, userVerifiedType: p, userWithFollowsYou: h, withNameWrap: w } = this.props,
                         { badges: g, followIndicator: C, fullName: f } = e;
-                    return i.createElement(m.Z, { affiliateBadgeInfo: l, badgeContext: "account", isBlueVerified: g ? t : void 0, isProtected: g ? r : void 0, isVerified: g ? n : void 0, link: a, name: f ? d : c, nameSize: "headline2", onLinkClick: o, promotedContent: s, screenName: c, translatorType: g ? u : void 0, verifiedType: g ? h : void 0, withFollowsYou: C && p, withLink: !0, withNameWrap: w, withStackedLayout: !0 });
+                    return i.createElement(m.Z, { affiliateBadgeInfo: l, badgeContext: "account", isBlueVerified: g ? t : void 0, isProtected: g ? r : void 0, isVerified: g ? n : void 0, link: a, name: f ? d : c, nameSize: "headline2", onLinkClick: o, promotedContent: s, screenName: c, translatorType: g ? u : void 0, verifiedType: g ? p : void 0, withFollowsYou: C && h, withLink: !0, withNameWrap: w, withStackedLayout: !0 });
                 }
                 _renderHighlightedUserLabel() {
                     const { userHighlightedLabel: e } = this.props;
@@ -460,7 +460,7 @@
                 _renderUserStats() {
                     const { isAllowedToViewOptions: e, isUserStatsWithLink: t, onUserStatsPress: r, subscriptionsCount: o, userFollowersCount: a, userFriendsCount: s, userScreenName: l } = this.props,
                         { stats: d } = e;
-                    return d ? i.createElement(n.Z, { style: [g.row, g.marginTop12] }, i.createElement(h.Z, { followersCount: a, friendsCount: s, onPress: r, screenName: l, subscriptionsCount: o, withLink: t, withSubscriptionsCount: e.subscriptionsCount })) : null;
+                    return d ? i.createElement(n.Z, { style: [g.row, g.marginTop12] }, i.createElement(p.Z, { followersCount: a, friendsCount: s, onPress: r, screenName: l, subscriptionsCount: o, withLink: t, withSubscriptionsCount: e.subscriptionsCount })) : null;
                 }
             }
             w.defaultProps = { userAvatarSize: "jumbo", withUserAvatar: !0 };
@@ -468,17 +468,17 @@
             var C = r(807896);
             var f = r(674132);
             const _ = r.n(f)().ef633578;
-            class v extends i.PureComponent {
+            class b extends i.PureComponent {
                 render() {
                     return i.createElement(w, this.props);
                 }
             }
-            (v.Promoted = (e) => {
-                const { followButton: t, isUserProtected: r, isUserVerified: n, knownFollowers: o, onAvatarClick: a, onScreenNameClick: s, promotedContent: l, userDescription: d, userId: c, userName: u, userScreenName: m, ...h } = e,
-                    p = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
-                return i.createElement(w, (0, C.Z)({}, h, { followButton: t, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !0, followButton: !0, followIndicator: !0, followersYouKnow: !0, fullName: !0, label: !0, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !0, isUserProtected: r, isUserStatsWithLink: p.isUserStatsWithLink, isUserVerified: n, knownFollowers: o, onAvatarClick: a, onScreenNameClick: s, promotedContent: l, userAvatarUri: p.profile_image_url_https, userDescription: d, userEntities: p.entities, userFollowersCount: p.followers_count, userFriendsCount: p.friends_count, userId: c, userName: u, userScreenName: m, userWithFollowsYou: p.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0, withUserAvatar: !1 }));
+            (b.Promoted = (e) => {
+                const { followButton: t, isUserProtected: r, isUserVerified: n, knownFollowers: o, onAvatarClick: a, onScreenNameClick: s, promotedContent: l, userDescription: d, userId: c, userName: u, userScreenName: m, ...p } = e,
+                    h = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
+                return i.createElement(w, (0, C.Z)({}, p, { followButton: t, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !0, followButton: !0, followIndicator: !0, followersYouKnow: !0, fullName: !0, label: !0, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !0, isUserProtected: r, isUserStatsWithLink: h.isUserStatsWithLink, isUserVerified: n, knownFollowers: o, onAvatarClick: a, onScreenNameClick: s, promotedContent: l, userAvatarUri: h.profile_image_url_https, userDescription: d, userEntities: h.entities, userFollowersCount: h.followers_count, userFriendsCount: h.friends_count, userId: c, userName: u, userScreenName: m, userWithFollowsYou: h.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0, withUserAvatar: !1 }));
             }),
-                (v.Suspended = function ({ onAvatarClick: e, onScreenNameClick: t, userScreenName: r }) {
+                (b.Suspended = function ({ onAvatarClick: e, onScreenNameClick: t, userScreenName: r }) {
                     const n = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", description: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
                     return i.createElement(w, { errorMessage: _, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !1, followButton: !1, followIndicator: !0, followersYouKnow: !1, fullName: !1, label: !1, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !1, isUserProtected: n.protected, isUserStatsWithLink: n.isUserStatsWithLink, isUserVerified: n.verified, knownFollowers: { avatarUrls: [], names: [] }, onAvatarClick: e, onScreenNameClick: t, userAvatarUri: n.profile_image_url_https, userDescription: n.description, userEntities: n.entities, userFollowersCount: n.followers_count, userFriendsCount: n.friends_count, userId: n.id_str, userName: r, userScreenName: r, userWithFollowsYou: n.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0 });
                 });
@@ -492,9 +492,9 @@
                 s = r(98538);
             class l extends i.PureComponent {
                 render() {
-                    const { followersCount: e, friendsCount: t, onPress: r, screenName: n, style: l, subscribersCount: d, subscriptionsCount: c, withLink: u, withSubscribersCount: m, withSubscriptionsCount: h } = this.props,
-                        p = `/${n}/verified_followers`;
-                    return i.createElement(s.Z.Group, { style: l }, i.createElement(s.Z, { count: t, link: u ? `/${n}/following` : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "g3ed1dd5" }, i.createElement(s.Z.Value, null, o().e4f1e6e4({ formattedCount: (0, a.wl)(t) })), i.createElement(s.Z.Label, null, o().daf8a75f({ count: t })))), i.createElement(s.Z, { count: e, link: u ? p : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "i06724fb" }, i.createElement(s.Z.Value, null, o().ef1f4fc6({ formattedCount: (0, a.wl)(e) })), i.createElement(s.Z.Label, null, o().ad9b5988({ count: e })))), m && void 0 !== d && i.createElement(s.Z, { count: d, link: u ? `/${n}/creator-subscriptions/subscribers` : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "eb0084f3" }, i.createElement(s.Z.Value, null, o().a9980948({ formattedCount: (0, a.wl)(d) })), i.createElement(s.Z.Label, null, o().ce44a35c({ count: d })))), h && c && i.createElement(s.Z, { count: c, link: u ? `/${n}/creator-subscriptions/subscriptions` : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "fc1b8f67" }, i.createElement(s.Z.Value, null, o().id949f68({ formattedCount: (0, a.wl)(c) })), i.createElement(s.Z.Label, null, o().hb608cfc({ count: c })))));
+                    const { followersCount: e, friendsCount: t, onPress: r, screenName: n, style: l, subscribersCount: d, subscriptionsCount: c, withLink: u, withSubscribersCount: m, withSubscriptionsCount: p } = this.props,
+                        h = `/${n}/verified_followers`;
+                    return i.createElement(s.Z.Group, { style: l }, i.createElement(s.Z, { count: t, link: u ? `/${n}/following` : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "g3ed1dd5" }, i.createElement(s.Z.Value, null, o().e4f1e6e4({ formattedCount: (0, a.wl)(t) })), i.createElement(s.Z.Label, null, o().daf8a75f({ count: t })))), i.createElement(s.Z, { count: e, link: u ? h : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "i06724fb" }, i.createElement(s.Z.Value, null, o().ef1f4fc6({ formattedCount: (0, a.wl)(e) })), i.createElement(s.Z.Label, null, o().ad9b5988({ count: e })))), m && void 0 !== d && i.createElement(s.Z, { count: d, link: u ? `/${n}/creator-subscriptions/subscribers` : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "eb0084f3" }, i.createElement(s.Z.Value, null, o().a9980948({ formattedCount: (0, a.wl)(d) })), i.createElement(s.Z.Label, null, o().ce44a35c({ count: d })))), p && c && i.createElement(s.Z, { count: c, link: u ? `/${n}/creator-subscriptions/subscriptions` : void 0, onPress: r }, i.createElement(o().I18NFormatMessage, { $i18n: "fc1b8f67" }, i.createElement(s.Z.Value, null, o().id949f68({ formattedCount: (0, a.wl)(c) })), i.createElement(s.Z.Label, null, o().hb608cfc({ count: c })))));
                 }
             }
             l.defaultProps = { withLink: !0, withSubscribersCount: !0 };
@@ -516,7 +516,7 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        674306: (e, t, r) => {
+        155353: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var i = r(202784),
                 n = r(890601),
@@ -524,7 +524,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v2h-2v-2c0-.276-.22-.5-.5-.5H16v1h-2V5H8v1H6V5H4.5c-.28 0-.5.224-.5.5v12c0 .276.22.5.5.5h3v2h-3C3.12 20 2 18.881 2 17.5v-12C2 4.119 3.12 3 4.5 3H6zm9.5 8c-2.49 0-4.5 2.015-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.01-4.5-4.5-4.5zM9 15.5C9 11.91 11.91 9 15.5 9s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5S9 19.09 9 15.5zm5.5-2.5h2v2.086l1.71 1.707-1.42 1.414-2.29-2.293V13z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -553,4 +553,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-6107ac1a.f671e54a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-6107ac1a.331d00ba.js.map

@@ -1028,11 +1028,11 @@
                 a("dec3c9b8", "Wachtwoord"),
                 a("b929aa74", "Vul je X-wachtwoord opnieuw in om de wijzigingen op te slaan."),
                 a("d1091f50", "Wachtwoord vergeten?"),
-                a("fd23fe4a", "Here are your passkeys across all your devices"),
-                a("d9921a6c", "Create a new passkey"),
+                a("fd23fe4a", "Dit zijn je wachtwoordsleutels van al je apparaten"),
+                a("d9921a6c", "Een nieuwe wachtwoordsleutel aanmaken"),
                 a("i4855730", "Wachtwoordsleutel verwijderen"),
                 a("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Datum toegevoegd: " + e.date;
                 }),
                 a("d97c07be", "Makersabonnementen beheren"),
                 a("efa291da", "Bekijk en beheer je abonnementen op makers waarvoor Stripe wordt gebruikt. Actieve abonnementen die je hebt genomen via iOS of Android, kan je in de app beheren."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.38c6579a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.026376aa.js.map

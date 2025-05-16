@@ -1027,11 +1027,11 @@
                 i("dec3c9b8", "Kata Sandi"),
                 i("b929aa74", "Masukkan kembali kata sandi X Anda untuk menyimpan perubahan akun."),
                 i("d1091f50", "Lupa kata sandi?"),
-                i("fd23fe4a", "Here are your passkeys across all your devices"),
-                i("d9921a6c", "Create a new passkey"),
+                i("fd23fe4a", "Ini adalah kunci sandi untuk semua perangkat Anda"),
+                i("d9921a6c", "Buat kunci sandi baru"),
                 i("i4855730", "Hapus kunci sandi"),
                 i("a6acdc67", function (a) {
-                    return "Date added: " + a.date;
+                    return "Tanggal ditambahkan: " + a.date;
                 }),
                 i("d97c07be", "Kelola Langganan Kreator"),
                 i("efa291da", "Lihat dan kelola kreator langganan Anda di bawah ini menggunakan Stripe. Semua langganan aktif yang Anda mulai di iOS atau Android dapat dikelola di aplikasi."),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.147de2ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.bff78efa.js.map

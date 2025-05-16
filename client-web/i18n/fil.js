@@ -1028,11 +1028,11 @@
                 i("dec3c9b8", "Password"),
                 i("b929aa74", "Ilagay ulit ang password mo sa X para i-save ang mga pagbabago sa account mo."),
                 i("d1091f50", "Nakalimutan ang password?"),
-                i("fd23fe4a", "Here are your passkeys across all your devices"),
-                i("d9921a6c", "Create a new passkey"),
+                i("fd23fe4a", "Narito ang mga passkey sa lahat ng device mo"),
+                i("d9921a6c", "Gumawa ng bagong passkey"),
                 i("i4855730", "I-delete ang passkey"),
                 i("a6acdc67", function (a) {
-                    return "Date added: " + a.date;
+                    return "Petsa noong idinagdag: " + a.date;
                 }),
                 i("d97c07be", "Pamahalaan ang Creator Subscriptions"),
                 i("efa291da", "Tingnan at pamahalaan ang mga subscription mo sa mga creator na nasa ibaba gamit ang Stripe. Puwedeng pamahalaan sa app ang anumang active na subscription na ginawa mo sa iOS o Android."),
@@ -13246,4 +13246,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.d596469a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.52f14dfa.js.map

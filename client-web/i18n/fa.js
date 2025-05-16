@@ -1028,11 +1028,11 @@
                 n("dec3c9b8", "گذرواژه"),
                 n("b929aa74", "گذرواژه X را دوباره وارد کنید تا تغییرات در حساب کاربری‌تان ذخیره شود."),
                 n("d1091f50", "گذرواژه خود را فراموش کرده‌اید؟"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "گذرکلیدهای شما برای همه دستگاه‌هایتان"),
+                n("d9921a6c", "ساختن گذرکلید جدید"),
                 n("i4855730", "حذف کردن گذرکلید"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "تاریخ افزوده شدن: " + e.date;
                 }),
                 n("d97c07be", "مدیریت اشتراک‌های آفریننده اثر"),
                 n("efa291da", "اشتراک‌های خود را برای سازندگان آثار زیر با استفاده از Stripe مشاهده و مدیریت کنید. هرگونه اشتراک‌های فعالی که در iOS یا Android شروع کرده‌اید را می‌توان در برنامه مدیریت کرد."),
@@ -13240,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.a6ff595a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.6480b5ca.js.map

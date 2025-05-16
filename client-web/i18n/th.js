@@ -1027,11 +1027,11 @@
                 n("dec3c9b8", "รหัสผ่าน"),
                 n("b929aa74", "กรอกรหัสผ่าน X ของคุณอีกครั้งเพื่อบันทึกการเปลี่ยนแปลงไปยังบัญชีของคุณ"),
                 n("d1091f50", "ลืมรหัสผ่านใช่ไหม"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "นี่คือพาสคีย์สำหรับอุปกรณ์ทุกเครื่องของคุณ"),
+                n("d9921a6c", "สร้างพาสคีย์ใหม่"),
                 n("i4855730", "ลบพาสคีย์"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "วันที่เพิ่ม: " + e.date;
                 }),
                 n("d97c07be", "จัดการระบบสมาชิกติดตามผู้สร้าง"),
                 n("efa291da", "ดูและจัดการระบบสมาชิกติดตามผู้สร้างด้านล่างโดยใช้ Stripe ระบบสมาชิกใดๆ ที่ใช้งานอยู่ที่คุณเริ่มต้นบน iOS หรือ Android สามารถจัดการได้ในแอป"),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.78d5bd2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.a962c9ea.js.map

@@ -1027,11 +1027,11 @@
                 t("dec3c9b8", "Passord"),
                 t("b929aa74", "Oppgi X-passordet ditt på nytt for å lagre kontoendringene."),
                 t("d1091f50", "Glemt passord?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Her er tilgangsnøklene for alle enhetene dine"),
+                t("d9921a6c", "Opprett en ny tilgangsnøkkel"),
                 t("i4855730", "Slett tilgangsnøkkelen"),
                 t("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Lagt til " + e.date;
                 }),
                 t("d97c07be", "Administrer innholdsskaperabonnementer"),
                 t("efa291da", "Se og administrer abonnementene dine på innholdsskapere under ved hjelp av Stripe. I appen kan du administrere alle aktive abonnementer du startet på iOS- eller Android-enheter."),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.2b6cb28a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.ce976c0a.js.map

@@ -1037,11 +1037,11 @@
                 i("dec3c9b8", "Hasło"),
                 i("b929aa74", "Aby zapisać zmiany w ustawieniach konta, wprowadź ponownie hasło do serwisu X."),
                 i("d1091f50", "Nie pamiętasz hasła?"),
-                i("fd23fe4a", "Here are your passkeys across all your devices"),
-                i("d9921a6c", "Create a new passkey"),
+                i("fd23fe4a", "Tutaj znajdują się Twoje klucze dostępu używane na wszystkich Twoich urządzeniach"),
+                i("d9921a6c", "Utwórz nowy klucz dostępu"),
                 i("i4855730", "Usuń klucz dostępu"),
                 i("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Data dodania: " + e.date;
                 }),
                 i("d97c07be", "Zarządzaj subskrypcjami twórców treści"),
                 i("efa291da", "Wyświetl poniższe subskrypcje twórców zawartości i zarządzaj nimi za pomocą usługi Stripe. Wszystkimi aktywnymi subskrypcjami, które zostały zainicjowane w systemie iOS lub Android, można zarządzać w aplikacji."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.790377ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.3c9987aa.js.map

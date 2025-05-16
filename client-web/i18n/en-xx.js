@@ -1028,11 +1028,11 @@
                 s("dec3c9b8", "[Påässwöørd]"),
                 s("b929aa74", "[Réê-éêntéêr yöøür X påässwöørd töø såävéê chåängéês töø yöøür åäccöøünt.]"),
                 s("d1091f50", "[Föørgöøt påässwöørd?]"),
-                s("fd23fe4a", "Here are your passkeys across all your devices"),
-                s("d9921a6c", "Create a new passkey"),
+                s("fd23fe4a", "[Héêréê åäréê yöøür påässkéêys åäcröøss åäll yöøür déêvïícéês]"),
+                s("d9921a6c", "[Créêåätéê åä néêw påässkéêy]"),
                 s("i4855730", "[Déêléêtéê påässkéêy]"),
                 s("a6acdc67", function (t) {
-                    return "Date added: " + t.date;
+                    return "[Dåätéê åäddéêd: " + t.date + "]";
                 }),
                 s("d97c07be", "[Måänåägéê Créêåätöør Sübscrïíptïíöøns]"),
                 s("efa291da", "[Vïíéêw åänd måänåägéê yöøür sübscrïíptïíöøns töø créêåätöørs béêlöøw üsïíng Strïípéê. Any åäctïívéê sübscrïíptïíöøns yöøü ïínïítïíåätéêd öøn ïíOS öør Andröøïíd cåän béê måänåägéêd ïín théê åäpp.]"),
@@ -4149,7 +4149,7 @@
                     return "[" + t.stringCount + " néêw réêqüéêst" + c(t.count, "", "s") + "]";
                 }),
                 s("ed93de0c", "[Anåälyzïíng Pöøst]"),
-                s("d1d92e40", "More details"),
+                s("d1d92e40", "[Möøréê déêtåäïíls]"),
                 s("a6e89af8", "[Opéên cöønvéêrsåätïíöøn]"),
                 s("ica55d24", "[Néêw Chåät]"),
                 s("f794af9a", "[Fün möødéê]"),
@@ -4362,8 +4362,8 @@
                 s("g01599b6", "[Réêspöønséê 1]"),
                 s("e02694e0", "[Réêspöønséê 2]"),
                 s("h6867fcc", "[I préêféêr thïís réêspöønséê]"),
-                s("acc4496c", "Try Grok Voice mode"),
-                s("jd36d190", "Access advanced features with Grok Android app"),
+                s("acc4496c", "[Try Gröøk Vöøïícéê möødéê]"),
+                s("jd36d190", "[Accéêss åädvåäncéêd féêåätüréês wïíth Gröøk Andröøïíd åäpp]"),
                 s("hf9afab0", "[Enåäbléê DéêéêpSéêåärch töø scåän théê ïíntéêrnéêt åänd X, åänåälyzéê ïínföørmåätïíöøn, åänd déêlïívéêr déêtåäïíléêd, wéêll-réêåäsöønéêd åänswéêrs wïíth råäpïíd, åägéêntïíc séêåärch.]"),
                 s("ef3b3f04", "[Enåäbléê Thïínk töø üséê öøür réêåäsöønïíng möødéêl. It’s béêst föør måäth, scïíéêncéê åänd cöødïíng. Yöøü cåän åälsöø åäsk Gröøk töø “Thïínk håärdéêr” åäböøüt åäny qüéêstïíöøn thåät mïíght néêéêd åä lïíttléê möøréê bråäïín pöøwéêr. ]"),
                 s("b43636b8", "[Intröødücïíng Gröøk 3]"),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.9e773d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.155d830a.js.map

@@ -1028,11 +1028,11 @@
                 s("dec3c9b8", "Senha"),
                 s("b929aa74", "Digite novamente a sua senha do X para salvar as alterações na sua conta."),
                 s("d1091f50", "Esqueceu sua senha?"),
-                s("fd23fe4a", "Here are your passkeys across all your devices"),
-                s("d9921a6c", "Create a new passkey"),
+                s("fd23fe4a", "Aqui estão suas chaves de acesso em todos os seus dispositivos"),
+                s("d9921a6c", "Criar uma nova chave de acesso"),
                 s("i4855730", "Excluir chave de acesso"),
                 s("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Data de adição: " + e.date;
                 }),
                 s("d97c07be", "Gerenciar Assinaturas do Criador"),
                 s("efa291da", "Visualize e gerencie as assinaturas para os criadores abaixo usando o Stripe. Quaisquer assinaturas ativas que você tenha iniciado em iOS ou Android podem ser gerenciadas no aplicativo."),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.d8ef2a3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.a4f39bda.js.map

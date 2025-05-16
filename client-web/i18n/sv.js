@@ -1028,11 +1028,11 @@
                 t("dec3c9b8", "Lösenord"),
                 t("b929aa74", "Skriv in ditt X-lösenord igen för att spara ändringar av kontot."),
                 t("d1091f50", "Har du glömt lösenordet?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Här är dina lösennycklar på alla dina enheter"),
+                t("d9921a6c", "Skapa en ny lösennyckel"),
                 t("i4855730", "Radera lösennyckeln"),
                 t("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Tillagt: " + e.date;
                 }),
                 t("d97c07be", "Hantera kreatörsprenumerationer"),
                 t("efa291da", "Visa och hantera dina kreatörsprenumerationer nedan med Stripe. Alla aktiva prenumerationer som du har köpt i iOS eller Android kan hanteras i appen."),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.b5e7a8aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.79ce0eaa.js.map

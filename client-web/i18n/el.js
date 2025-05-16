@@ -1027,11 +1027,11 @@
                 n("dec3c9b8", "Κωδικός πρόσβασης"),
                 n("b929aa74", "Πληκτρολογήστε ξανά τον κωδικό πρόσβασης X για να αποθηκεύσετε τις αλλαγές στον λογαριασμό σας."),
                 n("d1091f50", "Ξεχάσατε τον κωδικό πρόσβασης;"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "Εδώ είναι τα κλειδιά πρόσβασης σας σε όλες τις συσκευές σας"),
+                n("d9921a6c", "Δημιουργία νέου κλειδιού πρόσβασης"),
                 n("i4855730", "Διαγραφή κλειδιών πρόσβασης"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Ημερομηνία προσθήκης: " + e.date;
                 }),
                 n("d97c07be", "Διαχείριση Συνδρομών Δημιουργού"),
                 n("efa291da", "Δείτε και διαχειρίστείτε τις συνδρομές σας στους δημιουργούς παρακάτω χρησιμοποιώντας το Stripe. Μπορείτε να διαχειριστείτε τυχόν ενεργές συνδρομές που ξεκινήσατε σε iOS ή Android στην εφαρμογή."),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.636b489a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.beb6956a.js.map

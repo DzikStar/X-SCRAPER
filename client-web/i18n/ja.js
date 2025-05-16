@@ -1027,11 +1027,11 @@
                 f("dec3c9b8", "パスワード"),
                 f("b929aa74", "設定変更を保存するためにXパスワードを再入力してください。"),
                 f("d1091f50", "パスワードをお忘れですか？"),
-                f("fd23fe4a", "Here are your passkeys across all your devices"),
-                f("d9921a6c", "Create a new passkey"),
+                f("fd23fe4a", "すべての端末で使用されるパスキーです"),
+                f("d9921a6c", "新しいパスキーを作成"),
                 f("i4855730", "パスキーを削除"),
                 f("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "追加日: " + e.date;
                 }),
                 f("d97c07be", "クリエイターサブスクリプションを管理"),
                 f("efa291da", "Stripeを利用したクリエイターサブスクリプションを以下で表示/管理します。iOSまたはAndroidで開始した有効なサブスクリプションすべてをアプリで管理できます。"),
@@ -13239,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.58ff259a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.6bf74c0a.js.map

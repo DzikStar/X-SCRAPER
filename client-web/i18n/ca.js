@@ -1028,11 +1028,11 @@
                 t("dec3c9b8", "Contrasenya"),
                 t("b929aa74", "Torna a introduir la teva contrasenya de X per poder desar els canvis al teu compte."),
                 t("d1091f50", "Has oblidat la contrasenya?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Aquestes són les teves claus d'accés a tots els dispositius"),
+                t("d9921a6c", "Crea una clau d'accés"),
                 t("i4855730", "Suprimeix la clau d'accés"),
                 t("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Data d'addició: " + e.date;
                 }),
                 t("d97c07be", "Gestiona les Subscripcions a creadors"),
                 t("efa291da", "Mostra i gestiona les teves subscripcions a creadors a sota amb Stripe. Les subscripcions actives que has iniciat a iOS o a Android es poden gestionar a l'aplicació."),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.97f5fd4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.058e2fba.js.map

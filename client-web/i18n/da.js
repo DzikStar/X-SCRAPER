@@ -1028,11 +1028,11 @@
                 t("dec3c9b8", "Adgangskode"),
                 t("b929aa74", "Indtast din X-adgangskode igen for at gemme ændringerne i din konto."),
                 t("d1091f50", "Glemt adgangskode?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Her er dine adgangskoder på alle dine enheder"),
+                t("d9921a6c", "Opret en ny adgangskode"),
                 t("i4855730", "Slet adgangskoder"),
                 t("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Tilføjelsesdato: " + e.date;
                 }),
                 t("d97c07be", "Administrer skaber-abonnementer"),
                 t("efa291da", "Få vist og administrer dine abonnementer på skabere nedenfor ved hjælp af Stripe. Alle aktive abonnementer, du har påbegyndt på iOS eller Android, kan administreres i appen."),
@@ -13236,4 +13236,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.661d162a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.285ede9a.js.map

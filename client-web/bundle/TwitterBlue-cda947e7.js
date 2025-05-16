@@ -22,8 +22,8 @@
                 y = r(642317),
                 w = r(28862),
                 E = r(376278),
-                b = r(511323),
-                Z = r(254944),
+                Z = r(511323),
+                b = r(254944),
                 P = r(465072),
                 S = r(189700),
                 v = r(520489),
@@ -68,9 +68,9 @@
                     case "FireStroke":
                         return E.default;
                     case "PersonStroke":
-                        return b.default;
-                    case "PaintbrushStroke":
                         return Z.default;
+                    case "PaintbrushStroke":
+                        return b.default;
                     case "ModeratorStroke":
                         return P.default;
                     case "Document":
@@ -95,7 +95,7 @@
                 c = r(811574),
                 s = r(548797),
                 u = r(125363),
-                d = r(488645),
+                d = r(116868),
                 m = r(248186);
             const p = ({ content: e, isTierSwitching: t, referringPage: r, selectedProduct: p, setSelectedProduct: g }) => {
                 const f = (0, n.useHistory)(),
@@ -103,8 +103,8 @@
                     y = (0, o.hC)("subscriptions_management_query_active_price"),
                     w = (0, c.Z)({ fetchPrices: y }),
                     E = a.useMemo(() => (0, i.R)(w), [w]),
-                    { isModal: b } = a.useContext(l.Z),
-                    Z = !b;
+                    { isModal: Z } = a.useContext(l.Z),
+                    b = !Z;
                 a.useEffect(() => {
                     const e = !!E && (0, s.Ld)(E),
                         a = E && "Stripe" !== E?.payment_source && !e,
@@ -112,8 +112,8 @@
                         l = new URLSearchParams(window.location.search).get("twclid");
                     h((0, d.q)("o8zly", "ojw66", l, "rweb.premiumLandingPage", !0)), ((n && t) || a) && f.replace("/settings/subscription"), e && t && f.replace("/i/premium_cross_grade", { referring_page: r }), E && "Stripe" === E?.payment_source && !t && f.replace("/i/premium_tier_switch", { referring_page: r });
                 }, [E, f, t, r, h]);
-                const P = a.useMemo(() => !t && !Z, [Z, t]);
-                return a.createElement(m.Z, { activeSubscription: E, content: e, isMobile: Z, isTierSwitching: t, selectedProduct: p, setSelectedProduct: g, shouldRemoveExtraStep: P });
+                const P = a.useMemo(() => !t && !b, [b, t]);
+                return a.createElement(m.Z, { activeSubscription: E, content: e, isMobile: b, isTierSwitching: t, selectedProduct: p, setSelectedProduct: g, shouldRemoveExtraStep: P });
             };
         },
         320479: (e, t, r) => {
@@ -135,8 +135,8 @@
                 y = r(466337),
                 w = r(130821),
                 E = r(313511),
-                b = r(763419),
-                Z = r(689609),
+                Z = r(763419),
+                b = r(689609),
                 P = r(274547);
             const S = ({ content: e, referringPage: t, selectedProduct: r, setSelectedProduct: o, state: i, stripePriceConfig: c }) => {
                     const s = (0, u.Z)(),
@@ -206,16 +206,16 @@
                                     case "special":
                                         return n.createElement(w.Z, B);
                                     case "v2":
-                                        return n.createElement(b.Z, (0, a.Z)({}, B, { withPurchaseSheet: !0 }));
+                                        return n.createElement(Z.Z, (0, a.Z)({}, B, { withPurchaseSheet: !0 }));
                                     case "v2_2":
-                                        return n.createElement(b.Z, (0, a.Z)({}, B, { withIntervalSelector: !1, withPurchaseSheet: !1 }));
+                                        return n.createElement(Z.Z, (0, a.Z)({}, B, { withIntervalSelector: !1, withPurchaseSheet: !1 }));
                                     case "v2_3":
                                     case "v2_3_only_stripe":
-                                        return n.createElement(b.Z, (0, a.Z)({}, B, { withIntervalSelector: !0, withPurchaseSheet: !1 }));
+                                        return n.createElement(Z.Z, (0, a.Z)({}, B, { withIntervalSelector: !0, withPurchaseSheet: !1 }));
                                     case "v2_3_with_stripe":
-                                        return n.createElement(b.Z, (0, a.Z)({}, B, { withIntervalSelector: !0, withPurchaseSheet: !1, withStripeButton: i.withStripeButton }));
+                                        return n.createElement(Z.Z, (0, a.Z)({}, B, { withIntervalSelector: !0, withPurchaseSheet: !1, withStripeButton: i.withStripeButton }));
                                     case "v3":
-                                        return n.createElement(Z.Z, (0, a.Z)({}, B, { withPurchaseSheet: !1 }));
+                                        return n.createElement(b.Z, (0, a.Z)({}, B, { withPurchaseSheet: !1 }));
                                     case "native_clone_only_stripe":
                                     case "default":
                                     default:
@@ -272,9 +272,9 @@
                 y = r(30899),
                 w = r(154003),
                 E = r(711223);
-            const b = i().i859a9d4,
-                Z = ({ changeToTier: e, feature: t }) => {
-                    return a.createElement(d.Z, { style: P.feature }, a.createElement(d.Z, { style: P.featureInner }, a.createElement(m.ZP, { size: "headline1", style: [P.emoji, t.iconColor && { color: l.default.theme.colors[t.iconColor] }] }, t.locked ? t?.icon : t?.emoji || t?.icon), a.createElement(d.Z, { style: P.text }, a.createElement(m.ZP, { weight: "bold" }, t.header), t.subtext ? a.createElement(m.ZP, { color: "gray700", size: "subtext1" }, t.subtext) : null), t.description ? ((r = t.header), (n = t.description), a.createElement(y.Z, { contentStyle: P.infoPopoverContent, preferredHorizontalOrientation: "end", renderContent: () => a.createElement(d.Z, { style: P.infoContainer }, a.createElement(m.ZP, { color: "text", size: "title4", style: P.infoDescription, weight: "heavy" }, r), a.createElement(m.ZP, { color: "gray700", size: "body", style: P.infoDescription }, n)), withArrow: !0 }, a.createElement(w.ZP, { "aria-label": b, icon: S, size: "xSmall", style: P.infoButton, type: "primaryText" }))) : null), t.cta ? a.createElement(w.ZP, { onClick: () => e(t.cta?.targetTier), size: "xSmall", type: "brandText" }, t.cta.label) : null);
+            const Z = i().i859a9d4,
+                b = ({ changeToTier: e, feature: t }) => {
+                    return a.createElement(d.Z, { style: P.feature }, a.createElement(d.Z, { style: P.featureInner }, a.createElement(m.ZP, { size: "headline1", style: [P.emoji, t.iconColor && { color: l.default.theme.colors[t.iconColor] }] }, t.locked ? t?.icon : t?.emoji || t?.icon), a.createElement(d.Z, { style: P.text }, a.createElement(m.ZP, { weight: "bold" }, t.header), t.subtext ? a.createElement(m.ZP, { color: "gray700", size: "subtext1" }, t.subtext) : null), t.description ? ((r = t.header), (n = t.description), a.createElement(y.Z, { contentStyle: P.infoPopoverContent, preferredHorizontalOrientation: "end", renderContent: () => a.createElement(d.Z, { style: P.infoContainer }, a.createElement(m.ZP, { color: "text", size: "title4", style: P.infoDescription, weight: "heavy" }, r), a.createElement(m.ZP, { color: "gray700", size: "body", style: P.infoDescription }, n)), withArrow: !0 }, a.createElement(w.ZP, { "aria-label": Z, icon: S, size: "xSmall", style: P.infoButton, type: "primaryText" }))) : null), t.cta ? a.createElement(w.ZP, { onClick: () => e(t.cta?.targetTier), size: "xSmall", type: "brandText" }, t.cta.label) : null);
                     var r, n;
                 },
                 P = l.default.create((e) => ({ feature: { width: "100%", paddingVertical: e.spaces.space16, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, flexDirection: "row" }, featureInner: { paddingHorizontal: e.spaces.space20, flexDirection: "row", alignItems: "center", flex: 1 }, emoji: { marginEnd: e.spaces.space16, minWidth: 25 }, infoButton: { marginStart: e.spaces.space4, color: e.colors.gray600 }, infoPopoverContent: { maxWidth: "2em" }, iconInfo: { color: e.colors.gray900, fontSize: e.fontSizes.headline2 }, infoContainer: { padding: e.spaces.space24, paddingBottom: e.spaces.space48 }, infoDescription: { marginTop: e.spaces.space8 }, text: { flexShrink: 1, gap: e.spaces.space4 } })),
@@ -282,7 +282,7 @@
             var v = r(985529);
             const x = (e, t) => e?.filter((e) => !t?.map((e) => e.header).includes(e.header)),
                 C = i().dfc5f972,
-                k = ({ content: e, hideTitle: t, prices: r, productCategory: n, productContent: o, referringPage: i, selectedInterval: c, selectedProduct: s, setSelectedProduct: u, setShowExtraFeatures: y, showExtraFeatures: w, withExtraFeatures: E, withFeatureFocus: b, withOfferCard: P, withUpsellTier: S }) => {
+                k = ({ content: e, hideTitle: t, prices: r, productCategory: n, productContent: o, referringPage: i, selectedInterval: c, selectedProduct: s, setSelectedProduct: u, setShowExtraFeatures: y, showExtraFeatures: w, withExtraFeatures: E, withFeatureFocus: Z, withOfferCard: P, withUpsellTier: S }) => {
                     const k = (0, f.Z)(),
                         { gray0: F, gray50: z } = l.default.theme.colors,
                         I = a.useRef(null);
@@ -303,16 +303,16 @@
                         ),
                         B = !!r.find((e) => e.introductoryOffer && e.productCategory === n)?.introductoryOffer,
                         D = i ? e.localContent.refererContent[i] : null,
-                        M = b && i && !!D?.features;
+                        M = Z && i && !!D?.features;
                     return a.createElement(
                         a.Fragment,
                         null,
                         P ? a.createElement(v.Z, { content: e, prices: r, selectedProduct: n }) : null,
-                        B || M ? (B ? null : a.createElement(d.Z, { style: _.featureFocusSection, testID: "feature_focus_section" }, a.createElement(d.Z, { style: _.featureHeadline, testID: "dynamic-header" }, a.createElement(m.ZP, { align: "center", size: "title2", style: _.title, weight: "heavy" }, D?.title), D?.subtitle ? a.createElement(m.ZP, { align: "center", style: _.description }, D.subtitle) : null), D?.features?.[0] ? a.createElement(d.Z, { style: _.featureFocusFeature }, a.createElement(Z, { changeToTier: T, feature: D?.features?.[0] })) : null, a.createElement(m.ZP, { align: "center", color: "gray700", style: _.muchMoreLabel, weight: "medium" }, C))) : a.createElement(h.Z, { content: e, fallbackHeader: o.header, referringPage: i }),
+                        B || M ? (B ? null : a.createElement(d.Z, { style: _.featureFocusSection, testID: "feature_focus_section" }, a.createElement(d.Z, { style: _.featureHeadline, testID: "dynamic-header" }, a.createElement(m.ZP, { align: "center", size: "title2", style: _.title, weight: "heavy" }, D?.title), D?.subtitle ? a.createElement(m.ZP, { align: "center", style: _.description }, D.subtitle) : null), D?.features?.[0] ? a.createElement(d.Z, { style: _.featureFocusFeature }, a.createElement(b, { changeToTier: T, feature: D?.features?.[0] })) : null, a.createElement(m.ZP, { align: "center", color: "gray700", style: _.muchMoreLabel, weight: "medium" }, C))) : a.createElement(h.Z, { content: e, fallbackHeader: o.header, referringPage: i }),
                         a.createElement(
                             d.Z,
                             { style: _.container, testID: `product-features-${n}` },
-                            (M ? x(o.features, D?.features) : o.features)?.map((e, t) => a.createElement(Z, { changeToTier: T, feature: e, key: `feature_${t}` })),
+                            (M ? x(o.features, D?.features) : o.features)?.map((e, t) => a.createElement(b, { changeToTier: T, feature: e, key: `feature_${t}` })),
                             S && o.upsellFeature ? a.createElement(p.Z, { onClick: () => T(o.upsellFeature?.targetTier), style: _.feature }, a.createElement(g.Z, { colors: [z, F], style: _.gradient }), a.createElement(d.Z, { style: _.featureInner }, a.createElement(m.ZP, { size: "headline1", style: _.emoji }, o.upsellFeature?.icon), a.createElement(m.ZP, { weight: "bold" }, o.upsellFeature.header))) : null,
                             E && o.extraFeatures
                                 ? o.extraFeatures.map((e, t) =>
@@ -323,7 +323,7 @@
                                           a.createElement(
                                               d.Z,
                                               { style: _.extraFeatures, testID: "extra-features" },
-                                              (M ? x(e.features, D?.features) : e.features)?.map((e, r) => a.createElement(Z, { changeToTier: T, feature: e, key: `extra_feature_${t}_feautre_${r}` })),
+                                              (M ? x(e.features, D?.features) : e.features)?.map((e, r) => a.createElement(b, { changeToTier: T, feature: e, key: `extra_feature_${t}_feautre_${r}` })),
                                           ),
                                       ),
                                   )
@@ -333,7 +333,7 @@
                 },
                 _ = l.default.create((e) => ({ container: { gap: e.spaces.space8, paddingHorizontal: e.spaces.space4 }, extraFeatures: { gap: e.spaces.space8 }, gradient: { position: "absolute", width: "100%", height: "100%", top: 0, borderRadius: e.borderRadii.medium }, title: { marginBottom: e.spaces.space16 }, extraFeaturesLabel: { marginVertical: e.spaces.space4 }, feature: { width: "100%", paddingVertical: e.spaces.space16, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, flexDirection: "row" }, featureInner: { paddingHorizontal: e.spaces.space20, flexDirection: "row", alignItems: "center", flex: 1 }, emoji: { marginEnd: e.spaces.space16, minWidth: 25 }, featureHeadline: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space8 }, description: { textAlign: "center" }, featureFocusSection: { paddingHorizontal: e.spaces.space4 }, featureFocusFeature: { marginTop: e.spaces.space16 }, muchMoreLabel: { paddingVertical: e.spaces.space12 } })),
                 F = i().i7fbacc4,
-                z = ({ content: e, hideTitle: t, prices: r, productListLayout: l, products: o, referringPage: i, selectedInterval: d, selectedProduct: m, selectedProductIndex: p, setSelectedProduct: g, setShowAllFeaturesPage: f, setShowExtraFeatures: h, showExtraFeatures: y, withExtraFeatures: w, withFeatureFocus: E, withOfferCard: b, withUpsellTier: Z }) => {
+                z = ({ content: e, hideTitle: t, prices: r, productListLayout: l, products: o, referringPage: i, selectedInterval: d, selectedProduct: m, selectedProductIndex: p, setSelectedProduct: g, setShowAllFeaturesPage: f, setShowExtraFeatures: h, showExtraFeatures: y, withExtraFeatures: w, withFeatureFocus: E, withOfferCard: Z, withUpsellTier: b }) => {
                     const P = (0, c.Z)(),
                         S = a.useCallback(
                             ({ index: e, intersectionRatio: t }) => {
@@ -348,7 +348,7 @@
                     return a.createElement(
                         n.Z,
                         { "aria-label": F, childrenStyle: [I.children, { alignItems: "V3" === l ? "center" : null }], navButtonStyle: I.navButtonStyle, onVisibleRangeChange: S, scrollToCenter: !0, showNavButtonsOnHover: !0, showOverflow: !0, style: I.carousel, visibleItemIndex: p, withScrollIntoView: !1 },
-                        o?.map((n, l) => (n.product_category ? a.createElement(v, { content: e, hideTitle: t, key: l, prices: r, productCategory: n.product_category, productContent: e.localContent.productContent[n.product_category], referringPage: i, selectedInterval: d, selectedProduct: m, selectedProductIndex: p, setSelectedProduct: g, setShowAllFeaturesPage: f || (() => {}), setShowExtraFeatures: h, showExtraFeatures: y, withExtraFeatures: w, withFeatureFocus: E, withOfferCard: b, withUpsellTier: Z }) : null)),
+                        o?.map((n, l) => (n.product_category ? a.createElement(v, { content: e, hideTitle: t, key: l, prices: r, productCategory: n.product_category, productContent: e.localContent.productContent[n.product_category], referringPage: i, selectedInterval: d, selectedProduct: m, selectedProductIndex: p, setSelectedProduct: g, setShowAllFeaturesPage: f || (() => {}), setShowExtraFeatures: h, showExtraFeatures: y, withExtraFeatures: w, withFeatureFocus: E, withOfferCard: Z, withUpsellTier: b }) : null)),
                     );
                 },
                 I = l.default.create((e) => ({ navButtonStyle: { top: 0, height: "100%", justifyContent: "start", paddingTop: e.spaces.space20, paddingHorizontal: e.spaces.space8 }, children: { width: "100%", scrollSnapAlign: "center" }, carousel: { flexGrow: 1 } })),
@@ -414,8 +414,8 @@
                 },
                 w = "compareTitle",
                 E = p().i859a9d4,
-                b = p().acfaf7a0,
-                Z = ({ products: e }) => {
+                Z = p().acfaf7a0,
+                b = ({ products: e }) => {
                     const t = (0, l.Mv)(),
                         r = (0, o.Gz)(),
                         d = a.useMemo(() => y(e), [e]),
@@ -425,11 +425,11 @@
                             if ("object" == typeof t && t) return a.createElement(i.Z, { contentStyle: P.infoPopoverContent, preferredHorizontalOrientation: "end", renderContent: () => a.createElement(n.Z, { style: P.infoContainer }, a.createElement(c.ZP, { size: "title4", weight: "medium" }, t.title), a.createElement(c.ZP, { color: "gray700", style: P.infoDescription }, t.description)) }, a.createElement(s.ZP, { "aria-label": E, icon: S, size: "xSmall", style: P.infoButton, type: "primaryText" }));
                         },
                         h = a.useCallback((e) => (null === e ? (t ? a.createElement(g.default, { styles: P.iconDivider }) : null) : "string" == typeof e ? a.createElement(c.ZP, null, e) : "object" == typeof e ? (e.variant ? a.createElement(n.Z, { style: P.cellVariant }, a.createElement(c.ZP, { color: "text" }, e.variant), p([e])) : a.createElement(f.default, { style: P.iconCheckmark })) : void 0), [t]),
-                        Z = a.useMemo(() => ({ width: `${t ? 100 / e.length : 100 / (e.length + 1)}%` }), [e.length, t]);
+                        b = a.useMemo(() => ({ width: `${t ? 100 / e.length : 100 / (e.length + 1)}%` }), [e.length, t]);
                     return a.createElement(
                         n.Z,
                         { style: [P.table, m] },
-                        a.createElement(c.ZP, { size: "title3", testID: w, weight: "bold" }, b),
+                        a.createElement(c.ZP, { size: "title3", testID: w, weight: "bold" }, Z),
                         d.map((e, r) =>
                             a.createElement(
                                 n.Z,
@@ -442,7 +442,7 @@
                                         a.createElement(
                                             n.Z,
                                             { style: P.row },
-                                            e.slice(t ? 1 : 0).map((e, t) => a.createElement(n.Z, { key: `table-header-${r}-col-${t}`, style: [P.cell, Z] }, a.createElement(c.ZP, { size: "headline2", weight: "bold" }, e))),
+                                            e.slice(t ? 1 : 0).map((e, t) => a.createElement(n.Z, { key: `table-header-${r}-col-${t}`, style: [P.cell, b] }, a.createElement(c.ZP, { size: "headline2", weight: "bold" }, e))),
                                         ),
                                     ))(e.header, r),
                                 a.createElement(u.Z, { size: "space1", style: P.spacer }),
@@ -456,7 +456,7 @@
                                             a.createElement(
                                                 n.Z,
                                                 { style: P.row },
-                                                e.slice(t ? 1 : 0).map((i, s) => a.createElement(n.Z, { key: `table-section-${r}-row-${l}-cell-${s}`, style: [P.cell, Z] }, a.createElement(c.ZP, { color: "gray900" }, h(i)), 0 !== s || t || o ? null : p(e))),
+                                                e.slice(t ? 1 : 0).map((i, s) => a.createElement(n.Z, { key: `table-section-${r}-row-${l}-cell-${s}`, style: [P.cell, b] }, a.createElement(c.ZP, { color: "gray900" }, h(i)), 0 !== s || t || o ? null : p(e))),
                                             ),
                                             a.createElement(u.Z, { size: "space1", style: P.spacer }),
                                         );
@@ -467,7 +467,7 @@
                 },
                 P = d.default.create((e) => ({ marginSmall: { marginTop: e.spaces.space48 }, marginMedium: { marginTop: e.spaces.space72 }, marginLarge: { marginTop: e.spaces.space64 }, table: { width: "100%", maxWidth: "980px", paddingBottom: 300 * e.scaleMultiplier }, section: { marginTop: e.spaces.space32 }, row: { flexDirection: "row", paddingVertical: e.spaces.space8, alignItems: "center" }, cell: { alignItems: "center", flexDirection: "row" }, spacer: { backgroundColor: e.colors.gray50 }, iconInfo: { color: e.colors.gray900, fontSize: e.fontSizes.headline2 }, iconCheckmark: { fontSize: e.fontSizes.headline2, color: e.colors.text }, iconDivider: { fontSize: e.fontSizes.body, color: e.colors.gray700 }, infoButton: { marginStart: e.spaces.space4, color: e.colors.gray700 }, infoContainer: { padding: e.spaces.space24 }, infoDescription: { marginTop: e.spaces.space8 }, infoPopoverContent: { maxWidth: "2em" }, cellVariant: { alignItems: "center", flexDirection: "row" } })),
                 S = a.createElement(h.default, { style: P.iconInfo }),
-                v = a.memo(Z);
+                v = a.memo(b);
         },
         278637: (e, t, r) => {
             r.d(t, { Z: () => f });
@@ -535,12 +535,12 @@
                     const n = (0, d.Z)(),
                         c = l()(m.WL, e),
                         { disclaimerFontColor: p, disclaimerFontSize: g, withoutDisclaimerBorder: f } = r ?? {},
-                        { disclaimer_cancel_url: h, disclaimer_cancel_url_text: y, disclaimer_text: w, disclaimer_url: E, disclaimer_url_text: b } = c,
-                        Z = a.useMemo(() => ("string" == typeof w && w.includes("@#!") ? w.split("@#!") : new Array(2)), [w]),
+                        { disclaimer_cancel_url: h, disclaimer_cancel_url_text: y, disclaimer_text: w, disclaimer_url: E, disclaimer_url_text: Z } = c,
+                        b = a.useMemo(() => ("string" == typeof w && w.includes("@#!") ? w.split("@#!") : new Array(2)), [w]),
                         P = a.useCallback(() => {
                             n.scribe({ action: "click", element: "terms_of_service" });
                         }, [n]);
-                    return t ? a.createElement(u.Z, null, a.createElement(o.ZP, null, a.createElement(s().I18NFormatMessage, { $i18n: "bec92f3b", numberOfDays: t.metadata.free_trial_days || 14 }, a.createElement(o.ZP, { color: "text", link: (0, i.ju)("https://help.x.com/using-x/x-premium-trial-promotion"), onPress: P, weight: "medium", withUnderline: !0 }, s().af863ee9), a.createElement(o.ZP, { color: "text", link: E || (0, i.ju)("https://legal.x.com/purchaser-terms"), weight: "medium", withUnderline: !0 }, s().f5705987), a.createElement(o.ZP, { color: "text", link: h || (0, i.ju)("https://legal.x.com/purchaser-terms.html#cancelpremium"), onPress: P, weight: "medium", withUnderline: !0 }, y, s().h89dabac)))) : a.createElement(u.Z, { styleOverrides: { disclaimerFontSize: g, disclaimerFontColor: p }, withoutBorder: f }, 2 === Z.length ? a.createElement(a.Fragment, null, a.createElement(o.ZP, null, Z[0]), a.createElement(o.ZP, { color: p || "text", link: E || (0, i.ju)("https://legal.x.com/purchaser-terms"), onPress: P, weight: "medium", withUnderline: !0 }, b), a.createElement(o.ZP, null, Z[1])) : 3 === Z.length ? a.createElement(a.Fragment, null, a.createElement(o.ZP, null, Z[0]), a.createElement(o.ZP, { color: p || "text", link: E || (0, i.ju)("https://legal.x.com/purchaser-terms"), onPress: P, weight: "medium", withUnderline: !0 }, b), a.createElement(o.ZP, null, Z[1]), a.createElement(o.ZP, { color: p || "text", link: h || (0, i.ju)("https://legal.x.com/purchaser-terms.html#cancelpremium"), onPress: P, weight: "medium", withUnderline: !0 }, y), a.createElement(o.ZP, null, Z[2])) : null);
+                    return t ? a.createElement(u.Z, null, a.createElement(o.ZP, null, a.createElement(s().I18NFormatMessage, { $i18n: "bec92f3b", numberOfDays: t.metadata.free_trial_days || 14 }, a.createElement(o.ZP, { color: "text", link: (0, i.ju)("https://help.x.com/using-x/x-premium-trial-promotion"), onPress: P, weight: "medium", withUnderline: !0 }, s().af863ee9), a.createElement(o.ZP, { color: "text", link: E || (0, i.ju)("https://legal.x.com/purchaser-terms"), weight: "medium", withUnderline: !0 }, s().f5705987), a.createElement(o.ZP, { color: "text", link: h || (0, i.ju)("https://legal.x.com/purchaser-terms.html#cancelpremium"), onPress: P, weight: "medium", withUnderline: !0 }, y, s().h89dabac)))) : a.createElement(u.Z, { styleOverrides: { disclaimerFontSize: g, disclaimerFontColor: p }, withoutBorder: f }, 2 === b.length ? a.createElement(a.Fragment, null, a.createElement(o.ZP, null, b[0]), a.createElement(o.ZP, { color: p || "text", link: E || (0, i.ju)("https://legal.x.com/purchaser-terms"), onPress: P, weight: "medium", withUnderline: !0 }, Z), a.createElement(o.ZP, null, b[1])) : 3 === b.length ? a.createElement(a.Fragment, null, a.createElement(o.ZP, null, b[0]), a.createElement(o.ZP, { color: p || "text", link: E || (0, i.ju)("https://legal.x.com/purchaser-terms"), onPress: P, weight: "medium", withUnderline: !0 }, Z), a.createElement(o.ZP, null, b[1]), a.createElement(o.ZP, { color: p || "text", link: h || (0, i.ju)("https://legal.x.com/purchaser-terms.html#cancelpremium"), onPress: P, weight: "medium", withUnderline: !0 }, y), a.createElement(o.ZP, null, b[2])) : null);
                 },
                 g = a.memo(p);
         },
@@ -585,12 +585,12 @@
                 f = ({ content: e, header: t, isMobile: r, isTierSwitching: s, offerContent: u, offerEndsAtMsec: f, renderOfferContent: h }) => {
                     const w = (0, o.Mv)(),
                         E = m.ZP.isWebView(),
-                        b = (0, i.Gz)(),
-                        Z = w ? y.marginSmall : b ? y.marginLarge : y.marginMedium,
-                        P = w ? { size: "title3", style: y.titleSmall } : b ? { style: y.titleLarge } : { size: "title1", style: y.titleMedium },
-                        S = w ? "body" : b ? "headline1" : "headline2",
-                        v = w ? y.countdownSmall : b ? y.countdownLarge : y.countdownMedium;
-                    return n.createElement(l.Z, null, n.createElement(l.Z, { style: [y.header, Z, y.container] }, n.createElement(c.ZP, (0, a.Z)({}, P, { weight: "bold" }), s ? g : h ? u.title : t.title), n.createElement(c.ZP, { color: "gray900", size: S }, h ? null : t.description), h && f ? n.createElement(l.Z, { style: [y.countdown, v] }, n.createElement(p.Z, { endsAtMsec: f })) : null, h || E ? null : n.createElement(c.ZP, { color: "gray900", size: S, style: y.voLink }, n.createElement(d().I18NFormatMessage, { $i18n: "c57cd3a3" }, n.createElement(c.ZP, { color: "text", link: "/i/verified-orgs-signup", underlineWeight: "heavy", weight: "bold", withUnderline: !0 }, d().d2f2b91a)))));
+                        Z = (0, i.Gz)(),
+                        b = w ? y.marginSmall : Z ? y.marginLarge : y.marginMedium,
+                        P = w ? { size: "title3", style: y.titleSmall } : Z ? { style: y.titleLarge } : { size: "title1", style: y.titleMedium },
+                        S = w ? "body" : Z ? "headline1" : "headline2",
+                        v = w ? y.countdownSmall : Z ? y.countdownLarge : y.countdownMedium;
+                    return n.createElement(l.Z, null, n.createElement(l.Z, { style: [y.header, b, y.container] }, n.createElement(c.ZP, (0, a.Z)({}, P, { weight: "bold" }), s ? g : h ? u.title : t.title), n.createElement(c.ZP, { color: "gray900", size: S }, h ? null : t.description), h && f ? n.createElement(l.Z, { style: [y.countdown, v] }, n.createElement(p.Z, { endsAtMsec: f })) : null, h || E ? null : n.createElement(c.ZP, { color: "gray900", size: S, style: y.voLink }, n.createElement(d().I18NFormatMessage, { $i18n: "c57cd3a3" }, n.createElement(c.ZP, { color: "text", link: "/i/verified-orgs-signup", underlineWeight: "heavy", weight: "bold", withUnderline: !0 }, d().d2f2b91a)))));
                 },
                 h = n.memo(f),
                 y = s.default.create((e) => ({ container: { alignItems: "center", flex: 1, width: "100%", maxWidth: "1280px", marginHorizontal: "auto", paddingHorizontal: e.spaces.space16 }, marginSmall: { marginTop: e.spaces.space56 }, marginMedium: { marginTop: e.spaces.space48 }, marginLarge: { marginTop: 144 * e.scaleMultiplier }, header: { textAlign: "center", maxWidth: 900, alignItems: "center", zIndex: 1, top: 20 }, titleSmall: { marginBottom: e.spaces.space16 }, titleMedium: { marginBottom: e.spaces.space16, fontSize: 54 * e.scaleMultiplier, lineHeight: 60 * e.scaleMultiplier }, titleLarge: { marginBottom: e.spaces.space24, fontSize: 64 * e.scaleMultiplier, lineHeight: 70 * e.scaleMultiplier }, countdown: { maxWidth: "500px", width: "100%" }, countdownSmall: { marginTop: e.spaces.space16 }, countdownMedium: { marginTop: e.spaces.space48 }, countdownLarge: { marginTop: e.spaces.space48 }, voLink: { marginTop: e.spaces.space8 } }));
@@ -635,31 +635,43 @@
             const p = s().acfaf7a0,
                 g = s().b601cfbb,
                 f = ({ catalogItems: e, content: t, selectedInterval: r, selectedProduct: i, setShowAllFeaturesPage: c, stripePriceConfig: s, withStripePurchaseButton: f }) => {
-                    const y = t.localContent.productContent;
+                    const y = t.localContent.productContent,
+                        w = t.apiContent?.products?.map((e) => e.product_category);
                     return a.createElement(
-                        a.Fragment,
-                        null,
-                        a.createElement(l.ZP, {
-                            icon: a.createElement(u.default, null),
-                            onPress: () => {
-                                c(!1);
-                            },
-                            style: [h.dismissButton, h.header, { position: "absolute" }],
-                        }),
+                        n.Z,
+                        { style: h.container },
                         a.createElement(
                             n.Z,
-                            { style: h.container },
+                            { style: h.header },
+                            a.createElement(l.ZP, {
+                                icon: a.createElement(u.default, null),
+                                onPress: () => {
+                                    c(!1);
+                                },
+                                style: h.dismissButton,
+                            }),
                             a.createElement(o.ZP, { style: h.title }, p),
-                            Object.entries(y).map(([r, l]) => {
-                                const i = e.filter((e) => e.productCategory === r),
+                        ),
+                        w?.map((r) => {
+                            if (r) {
+                                const l = y[r],
+                                    i = e.filter((e) => e.productCategory === r),
                                     c = i.find((e) => "Month" === e.chargeInterval),
                                     u = c ? g({ price: c.localisedMonthlyPrice || "undefined" }) : "Currently unavailable";
-                                return a.createElement(n.Z, { key: r, style: h.section }, a.createElement(n.Z, { style: h.separator }), a.createElement(o.ZP, { style: h.sectionTitle }, l.productName), y[r].featureAddOnLabel && a.createElement(o.ZP, { style: h.premiumFeatureUpgrades }, y[r].featureAddOnLabel), Array.isArray(l.allFeatureHeaders) && l.allFeatureHeaders.map((e, t) => a.createElement(n.Z, { key: t, style: h.featureRow }, a.createElement(o.ZP, { style: h.featureText }, e), a.createElement(d.default, { style: h.checkmark }))), a.createElement(n.Z, { style: h.buttonContainer }, a.createElement(m.Z, { catalogItemsForProduct: i, content: t, label: u, selectedProduct: r, stripePriceConfig: s, withStripePurchaseButton: f })));
-                            }),
-                        ),
+                                return a.createElement(
+                                    n.Z,
+                                    { key: r, style: h.section },
+                                    a.createElement(n.Z, { style: h.separator }),
+                                    a.createElement(o.ZP, { style: h.sectionTitle }, l.productName),
+                                    y[r].featureAddOnLabel && a.createElement(o.ZP, { style: h.premiumFeatureUpgrades }, y[r].featureAddOnLabel),
+                                    l.allFeatureHeaders?.map((e, t) => a.createElement(n.Z, { key: t, style: h.featureRow }, a.createElement(o.ZP, { style: h.featureText }, e), a.createElement(d.default, { style: h.checkmark }))),
+                                    a.createElement(n.Z, { style: h.buttonContainer }, a.createElement(m.Z, { catalogItemsForProduct: i, content: t, label: u, selectedProduct: r, stripePriceConfig: s, withStripePurchaseButton: f })),
+                                );
+                            }
+                        }),
                     );
                 },
-                h = i.default.create((e) => ({ container: { flex: 1, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16, marginTop: e.spaces.space36, marginBottom: e.spaces.space4, position: "relative" }, dismisserButton: { position: "absolute", start: 0, top: 10 }, dismissButton: { position: "absolute", start: e.spaces.space4, bottom: 0, top: e.spaces.space12, border: "transparent" }, header: { alignItems: "center", justifyContent: "center", position: "fixed", zIndex: 1, height: e.spaces.space2, width: e.spaces.space2 }, separator: { borderBottomColor: e.colors.gray200, borderBottomWidth: 1, marginBottom: e.spaces.space12 }, title: { fontSize: e.fontSizes.headline1, fontWeight: "700", marginBottom: e.spaces.space12, lineHeight: e.spaces.space24 }, section: { marginBottom: e.spaces.space8 }, sectionTitle: { fontSize: e.fontSizes.headline2, fontWeight: "700", marginBottom: e.spaces.space8 }, featureRow: { flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space12 }, featureText: { fontSize: e.fontSizes.body, flex: 1, fontWeight: "400" }, premiumFeatureUpgrades: { fontSize: e.fontSizes.subtext1, color: e.colors.gray700, marginBottom: e.spaces.space8 }, checkmark: { color: e.colors.green500, marginStart: e.spaces.space8, fontSize: e.fontSizes.body, fontWeight: "bold" }, buttonContainer: { marginVertical: e.spaces.space4 } }));
+                h = i.default.create((e) => ({ container: { flex: 1, paddingHorizontal: e.spaces.space24, paddingTop: e.spaces.space16, marginTop: e.spaces.space20, marginBottom: e.spaces.space4, position: "relative" }, dismissButton: { border: "transparent", start: -8 }, header: { flexDirection: "row", alignItems: "center" }, separator: { borderBottomColor: e.colors.gray200, borderBottomWidth: 1, marginBottom: e.spaces.space12 }, title: { fontSize: e.fontSizes.headline1, fontWeight: "700", lineHeight: e.spaces.space24 }, section: { marginBottom: e.spaces.space8 }, sectionTitle: { fontSize: e.fontSizes.headline2, fontWeight: "700", marginBottom: e.spaces.space8 }, featureRow: { flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space12 }, featureText: { fontSize: e.fontSizes.body, flex: 1, fontWeight: "400" }, premiumFeatureUpgrades: { fontSize: e.fontSizes.subtext1, color: e.colors.gray700, marginBottom: e.spaces.space8 }, checkmark: { color: e.colors.green500, marginStart: e.spaces.space8, fontSize: e.fontSizes.body, fontWeight: "bold" }, buttonContainer: { marginVertical: e.spaces.space4 } }));
         },
         632396: (e, t, r) => {
             r.d(t, { Z: () => B });
@@ -680,8 +692,8 @@
                 y = r(562041),
                 w = r(548797),
                 E = r(498514),
-                b = r(512923),
-                Z = r(985529);
+                Z = r(512923),
+                b = r(985529);
             const P = i().be103b84,
                 S = i().i859a9d4,
                 v = i().c9cc122b,
@@ -693,7 +705,7 @@
                 k = l.default.create((e) => ({ carouselHeader: { paddingHorizontal: e.spaces.space48, paddingVertical: e.spaces.space12, borderRadius: e.borderRadii.large, position: "sticky", justifyContent: "center", marginVertical: e.spaces.space8, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center", backgroundColor: e.colors.gray50, flexDirection: "row" }, carouselItem: { width: "100%", height: "100%", flexGrow: 1, display: "flex", flexDirection: "column" }, activeLabel: { marginStart: e.spaces.space8 }, featureBucketFeatureTextContainer: { flex: 1, flexDirection: "row", alignItems: "center" }, variantText: { maxWidth: "60%", textAlign: "end" }, featureCard: { paddingHorizontal: e.spaces.space24, paddingTop: e.spaces.space20, paddingBottom: e.spaces.space8, marginVertical: e.spaces.space8, backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large }, featureCardTitle: { marginBottom: e.spaces.space12 }, featureHeadlineContainer: { display: "flex", flexDirection: "row", marginBottom: e.spaces.space8 }, iconGrey: { color: e.colors.gray700 }, infoButton: { marginStart: e.spaces.space4, color: e.colors.gray700 }, infoContainer: { padding: e.spaces.space24 }, infoDescription: { marginTop: e.spaces.space8 }, infoPopoverContent: { paddingVertical: e.spaces.space24, maxWidth: "2em" }, checkmarkIcon: { color: e.colors.green500 } })),
                 _ = a.createElement(h.default, { style: k.iconGrey }),
                 F = ({ activeSubscription: e, content: t, index: r, isTargettedUpsellFlow: n, prices: l, productRef: o, productsLength: i, selectedProduct: c }) => {
-                    const u = d()(b.oD, o),
+                    const u = d()(Z.oD, o),
                         h = u.product_category === c;
                     let y = `premium-product-${u.product_category || ""}`;
                     h && (y += "-selected");
@@ -723,7 +735,7 @@
                             [I],
                         ),
                         B = a.useMemo(() => (0 === r ? (3 === i ? { paddingStart: 24 } : { paddingStart: 24, paddingEnd: 16 }) : r === i - 1 ? (3 === i ? { paddingEnd: 24 } : { paddingEnd: 24, paddingStart: 16 }) : { paddingHorizontal: 16 }), [r, i]);
-                    return a.createElement(s.Z, { key: `product-${r}`, style: [k.carouselItem, B], testID: y }, n && 1 === i ? null : a.createElement(s.Z, { style: z(u.image_url) }, a.createElement(m.ZP, { align: "center", color: "white", size: "headline2", weight: "medium" }, u.title), F ? a.createElement(f.ZP, { style: k.activeLabel, type: "subscriptionActive" }, P) : null), a.createElement(s.Z, null, a.createElement(Z.Z, { content: t, prices: l, selectedProduct: u.product_category })), T(u));
+                    return a.createElement(s.Z, { key: `product-${r}`, style: [k.carouselItem, B], testID: y }, n && 1 === i ? null : a.createElement(s.Z, { style: z(u.image_url) }, a.createElement(m.ZP, { align: "center", color: "white", size: "headline2", weight: "medium" }, u.title), F ? a.createElement(f.ZP, { style: k.activeLabel, type: "subscriptionActive" }, P) : null), a.createElement(s.Z, null, a.createElement(b.Z, { content: t, prices: l, selectedProduct: u.product_category })), T(u));
                 },
                 z = i().i7fbacc4,
                 I = ({ activeSubscription: e, content: t, isTargettedUpsellFlow: r, prices: l, products: o, referringPage: i, selectedProduct: s, selectedProductIndex: u, setSelectedProduct: d }) => {
@@ -828,16 +840,16 @@
             const d = (e, t) => (t ? ({ blue: { backgroundImage: `\n            linear-gradient(90.38deg, \n            ${e.colors.blue500} 0.23%, \n            ${e.colors.blue600} 32.73%, \n            ${e.colors.blue500} 50.37%,\n            ${e.colors.blue500} 98.27%)\n          ` }, gold: { backgroundImage: `\n            linear-gradient(90.38deg, \n            ${e.colors.gold50} 0.23%, \n            ${e.colors.gold0} 32.73%, \n            ${e.colors.gold50} 50.37%,\n            ${e.colors.gold100} 98.27%)\n          ` }, special: { borderRadius: 16 }, leftAligned: { borderRadius: o.default.theme.spaces.space12 } }[t] ?? void 0) : void 0),
                 m = (e) => (e ? ({ blue: "whiteOnColor", gold: "alwaysBlack", special: void 0, leftAligned: void 0 }[e] ?? void 0) : void 0),
                 p = (e) => (e ? { blue: void 0, gold: void 0, special: "primaryFilled", leftAligned: "primaryFilled" }[e] : "primaryFilled"),
-                g = ({ buttonFontSize: e, buttonSize: t, disabled: r, disclaimerRef: g, label: h, loading: y, onClick: w, savePill: E, stripeButton: b, styleOverrides: Z, subtext: P, variant: S }) => {
+                g = ({ buttonFontSize: e, buttonSize: t, disabled: r, disclaimerRef: g, label: h, loading: y, onClick: w, savePill: E, stripeButton: Z, styleOverrides: b, subtext: P, variant: S }) => {
                     const v = n.useCallback(() => {
                             w();
                         }, [w]),
-                        { disclaimerFontColor: x, disclaimerFontSize: C, marginBottom: k, withoutDisclaimerBorder: _ } = Z ?? {},
+                        { disclaimerFontColor: x, disclaimerFontSize: C, marginBottom: k, withoutDisclaimerBorder: _ } = b ?? {},
                         F = k ? o.default.theme.spaces[k] : null;
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { style: [f.buttonWrapper, F && { marginBottom: F }] }, E, n.createElement(i.ZP, (0, a.Z)({}, "leftAligned" === S ? { alignContent: "left" } : {}, { allowTextWrap: !0, color: m(S), disabled: r, onClick: v, size: t || "xLarge", style: [d(o.default.theme, S), f.button], textSizeOverride: e || "headline2", type: p(S) }), y ? n.createElement(c.Z, null) : h), b ? n.createElement(l.Z, { style: f.stripeButton }, b) : null, P ? n.createElement(s.ZP, { align: "center", size: "subtext2", style: f.subtext, testID: "purchase-button-subtext" }, P) : null), g ? n.createElement(l.Z, null, n.createElement(u.Z, { disclaimerRef: g, freeTrialInfo: null, styleOverrides: { disclaimerFontSize: C, disclaimerFontColor: x, withoutDisclaimerBorder: _ } })) : null);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { style: [f.buttonWrapper, F && { marginBottom: F }] }, E, n.createElement(i.ZP, (0, a.Z)({}, "leftAligned" === S ? { alignContent: "left" } : {}, { allowTextWrap: !0, color: m(S), disabled: r, onClick: v, size: t || "xLarge", style: [d(o.default.theme, S), f.button], textSizeOverride: e || "headline2", type: p(S) }), y ? n.createElement(c.Z, null) : h), Z ? n.createElement(l.Z, { style: f.stripeButton }, Z) : null, P ? n.createElement(s.ZP, { align: "center", size: "subtext2", style: f.subtext, testID: "purchase-button-subtext" }, P) : null), g ? n.createElement(l.Z, null, n.createElement(u.Z, { disclaimerRef: g, freeTrialInfo: null, styleOverrides: { disclaimerFontSize: C, disclaimerFontColor: x, withoutDisclaimerBorder: _ } })) : null);
                 },
                 f = o.default.create((e) => ({ buttonWrapper: { marginBottom: e.spaces.space16, position: "relative" }, button: { border: "none" }, subtext: { marginTop: e.spaces.space4 }, stripeButton: { marginTop: e.spaces.space8 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-cda947e7.3e4a515a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-cda947e7.24ac191a.js.map

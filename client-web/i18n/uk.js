@@ -1037,11 +1037,11 @@
                 n("dec3c9b8", "Пароль"),
                 n("b929aa74", "Щоб зберегти внесені в профіль зміни, введіть пароль від Х ще раз."),
                 n("d1091f50", "Забули пароль?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "Тут показані ключі доступу з усіх ваших пристроїв"),
+                n("d9921a6c", "Створити ключ доступу"),
                 n("i4855730", "Видалити ключ доступу"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Додано: " + e.date;
                 }),
                 n("d97c07be", "Керування передплатами для творців"),
                 n("efa291da", "Переглядайте свої передплати на перелічених нижче творців і керуйте ними за допомогою Stripe. Керувати активними передплатами, оформленими в iOS чи Android, можна в додатку."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.b7fcce1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.df070baa.js.map

@@ -1037,11 +1037,11 @@
                 n("dec3c9b8", "סיסמה"),
                 n("b929aa74", "הזן מחדש את הסיסמה שלך ב-X כדי לשמור את השינויים שביצעת בחשבון."),
                 n("d1091f50", "שכחת את הסיסמה?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "כאן נמצאים מפתחות הגישה עבור כל המכשירים שלך"),
+                n("d9921a6c", "יצירת מפתח גישה חדש"),
                 n("i4855730", "מחיקת מפתח גישה"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "תאריך הוספה: " + e.date;
                 }),
                 n("d97c07be", "ניהול מינויי יוצרים"),
                 n("efa291da", "הצג ונהל את מינויי היוצרים שלך באמצעות Stripe בהמשך. כל מינוי פעיל שהתחלת ב-iOS או ב-Android זמין לניהול באפליקציה."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.4519400a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.77e3e6aa.js.map

@@ -46,8 +46,8 @@
                 return (0, s.jsxs)("div", { className: "flex px-2.5 w-full items-center justify-between", children: [(0, s.jsxs)("div", { className: "flex gap-1", children: [e.senderInfo?.user?.displayName ? (0, s.jsxs)(o.x, { size: "subtext2", weight: "medium", color: "gray900", children: ["Replying to ", e.senderInfo.user.displayName] }) : null, (0, s.jsx)(o.x, { size: "subtext2", color: "gray500", children: e.textContent })] }), (0, s.jsx)(c.z, { variant: "primaryFilled", size: "xSmall", icon: (0, s.jsx)(m.Z, {}), onClick: t })] });
             }
             var w = n(556160),
-                b = n(517922),
-                C = n(83083),
+                C = n(517922),
+                b = n(83083),
                 y = n(289752);
             function k({ media: e }) {
                 const [t, n] = (0, l.useState)(null);
@@ -66,10 +66,10 @@
                 let n = null;
                 if (e === i.com.x.models.dm.ChatComposerAttachment.Loading) n = (0, s.jsx)("div", { className: "flex items-center justify-center bg-gray-100 rounded-2xl px-4 py-3", children: (0, s.jsx)(r.P, {}) });
                 else if (e instanceof i.com.x.models.dm.ChatComposerAttachment.Media) n = (0, s.jsx)(k, { media: e });
-                else if (e instanceof i.com.x.models.dm.ChatComposerAttachment.Post) n = e.post ? (0, s.jsx)(w.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, s.jsx)(b.C, {});
+                else if (e instanceof i.com.x.models.dm.ChatComposerAttachment.Post) n = e.post ? (0, s.jsx)(w.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, s.jsx)(C.C, {});
                 else {
                     if (e instanceof i.com.x.models.dm.ChatComposerAttachment.UrlCard) return null;
-                    e instanceof i.com.x.models.dm.ChatComposerAttachment.File && (n = (0, s.jsx)(C.Q, { className: "rounded-2xl mb-2", filename: e.file.originalFilename, fileSize: e.file.fileSize }));
+                    e instanceof i.com.x.models.dm.ChatComposerAttachment.File && (n = (0, s.jsx)(b.Q, { className: "rounded-2xl mb-2", filename: e.file.originalFilename, fileSize: e.file.fileSize }));
                 }
                 return (0, s.jsxs)("div", { className: "flex flex-col max-w-[300px] gap-2 relative", children: [n, e.showRemoveButton && (0, s.jsx)("div", { className: "absolute top-2 right-2 flex items-center", children: (0, s.jsx)(c.z, { variant: "primaryFilled", size: "xSmall", icon: (0, s.jsx)(m.Z, {}), onClick: t }) })] });
             }
@@ -82,13 +82,13 @@
                     r = (0, l.useRef)(null),
                     w = (0, l.useRef)(null);
                 (0, p.e)(e.composer.toasts);
-                const b = (0, l.useCallback)(() => {
+                const C = (0, l.useCallback)(() => {
                         r.current?.focus();
                     }, []),
-                    C = e.composer.triggerComposerFocusEvents;
-                (0, v.E)(C, b),
+                    b = e.composer.triggerComposerFocusEvents;
+                (0, v.E)(b, C),
                     (0, l.useEffect)(() => {
-                        b();
+                        C();
                     }, [e]);
                 const y = () => {
                         n.rightButton === I.SendActive && e.composer.onEvent(new i.com.x.dms.composer.composer.ChatComposerEvent.RightButtonClicked(n.rightButton));
@@ -339,12 +339,12 @@
                     g = m.contents.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
                     j = m.contents.peopleSection,
                     w = m.contents.memberRequestSection,
-                    b = (t) => {
+                    C = (t) => {
                         e.onEvent(t);
                     },
-                    C = m.contents.metadata.areNotificationsDisabled,
-                    y = C ? R.Z : M.Z,
-                    k = d(g ? (C ? "Unmute Conversation" : "Mute Conversation") : C ? "Unmute Group" : "Mute Group");
+                    b = m.contents.metadata.areNotificationsDisabled,
+                    y = b ? R.Z : M.Z,
+                    k = d(g ? (b ? "Unmute Conversation" : "Mute Conversation") : b ? "Unmute Group" : "Mute Group");
                 return (0, s.jsxs)("div", {
                     className: "flex flex-col w-full items-center self-center h-screen relative overflow-y-auto",
                     children: [
@@ -402,7 +402,7 @@
                                         children: (0, s.jsxs)("div", {
                                             className: "h-20 flex flex-col justify-center items-center gap-2 cursor-pointer bg-gray-0 hover:bg-gray-100 rounded-xl p-2",
                                             onClick: () => {
-                                                e.onEvent(C ? re.ConversationInfoEvent.OnUnMuteClicked : re.ConversationInfoEvent.OnMuteClicked);
+                                                e.onEvent(b ? re.ConversationInfoEvent.OnUnMuteClicked : re.ConversationInfoEvent.OnMuteClicked);
                                             },
                                             children: [(0, s.jsx)(y, { className: "text-text w-6 h-6" }), (0, s.jsx)(o.x, { size: "subtext2", weight: "medium", color: "gray700", children: k })],
                                         }),
@@ -487,7 +487,7 @@
                                               }),
                                           })
                                         : null,
-                                    (0, s.jsx)("div", { className: "mt-6 space-y-2 w-full", children: m.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(ie, { button: e, onEvent: b }, e.name)) }),
+                                    (0, s.jsx)("div", { className: "mt-6 space-y-2 w-full", children: m.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(ie, { button: e, onEvent: C }, e.name)) }),
                                 ],
                             }),
                         }),
@@ -621,8 +621,8 @@
                     });
                 };
             var we = n(383217),
-                be = n(463341),
-                Ce = n(110241),
+                Ce = n(463341),
+                be = n(110241),
                 ye = n(617588),
                 ke = n(628047),
                 Ne = n(853582),
@@ -735,7 +735,7 @@
             var Oe = n(548978);
             const Ue = i.com.x.dms.composer.composer.ChatComposerEvent;
             function Ve() {
-                const e = (0, Ce.a)(),
+                const e = (0, be.a)(),
                     t = (0, ye.F)(),
                     n = (0, ke.v)(),
                     i = (0, Ne.k)(),
@@ -787,11 +787,11 @@
                         e.composer.onEvent(Ue.OnFileAttachmentStarted);
                     }, [e.composer]),
                     { isDragging: c, handleDragOver: d, handleDragLeave: m, handleDrop: x } = (0, Ie.F)({ onFileAttached: i, onFileDrop: r, isEnabled: !t.isReadOnly });
-                return (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow relative", onDragOver: d, onDragLeave: m, onDrop: x, children: [c && (0, s.jsx)("div", { className: "absolute inset-0 bg-brand/10 border-2 border-dashed border-brand z-50 flex items-center justify-center", children: (0, s.jsx)(o.x, { size: "subtext1", weight: "medium", color: "brand", children: n("Drop file to attach") }) }), (0, s.jsx)(ze, { component: e }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(be.Bu, { children: (0, s.jsx)(we.r, { component: e, isTypingIndicatorShown: !!t.typingIndicatorItem }) }) }), t.typingIndicatorItem && (0, s.jsx)(Oe.y, { typingIndicatorItem: t.typingIndicatorItem }), t.isReadOnly ? (0, s.jsx)("div", { className: "p-4 border-t border-gray-200 bg-gray-50", children: (0, s.jsx)(o.x, { size: "body", color: "gray700", className: "text-center", children: "RemovedFromGroup" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation because you were removed from the group.") : "LatestCKeyFailure" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation due to a security verification failure.") : n("This conversation is currently in read-only mode.") }) }) : (0, s.jsx)(A, { component: e })] });
+                return (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow relative", onDragOver: d, onDragLeave: m, onDrop: x, children: [c && (0, s.jsx)("div", { className: "absolute inset-0 bg-brand/10 border-2 border-dashed border-brand z-50 flex items-center justify-center", children: (0, s.jsx)(o.x, { size: "subtext1", weight: "medium", color: "brand", children: n("Drop file to attach") }) }), (0, s.jsx)(ze, { component: e }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(Ce.Bu, { children: (0, s.jsx)(we.r, { component: e, isTypingIndicatorShown: !!t.typingIndicatorItem }) }) }), t.typingIndicatorItem && (0, s.jsx)(Oe.y, { typingIndicatorItem: t.typingIndicatorItem }), t.isReadOnly ? (0, s.jsx)("div", { className: "p-4 border-t border-gray-200 bg-gray-50", children: (0, s.jsx)(o.x, { size: "body", color: "gray700", className: "text-center", children: "RemovedFromGroup" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation because you were removed from the group.") : "LatestCKeyFailure" === t.readOnlyReason?.name ? n("You can no longer send messages in this conversation due to a security verification failure.") : n("This conversation is currently in read-only mode.") }) }) : (0, s.jsx)(A, { component: e })] });
             }
         },
         174254: (e, t, n) => {
-            n.d(t, { p: () => b });
+            n.d(t, { p: () => C });
             var s = n(552322),
                 i = n(159603),
                 a = n(921879),
@@ -814,7 +814,7 @@
                         a = n.get(t.sender)?.displayName,
                         o = e.isGroup && !t.isSent && !!a,
                         r = [];
-                    if (t.messageText) o && r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "bold", children: `${a}: ` }, 1)), r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: t.messageText }, 2));
+                    if (t.messageText) o && r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: `${a}: ` }, 1)), r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: t.messageText }, 2));
                     else if (t.withAttachmentType) {
                         const e = ((e) => {
                             let t;
@@ -845,7 +845,7 @@
                             }
                             return t;
                         })(t.withAttachmentType);
-                        o ? (r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "bold", children: a }, 3)), r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: ` sent ${e}` }, 4))) : r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: `Sent ${e}` }, 5));
+                        o ? (r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: a }, 3)), r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: ` sent ${e}` }, 4))) : r.push((0, s.jsx)(c.x, { as: "span", color: "inherit", size: "inherit", weight: "inherit", children: `Sent ${e}` }, 5));
                     }
                     return r;
                 },
@@ -864,7 +864,7 @@
                         }),
                     });
                 },
-                b = ({ onEvent: e, conversations: t }) => {
+                C = ({ onEvent: e, conversations: t }) => {
                     const n = (0, r.a)(),
                         l = (0, o.useRef)(null),
                         c = (0, o.useRef)({ start: 0, end: 0 }),
@@ -934,4 +934,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.35f0479a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.50f69e9a.js.map

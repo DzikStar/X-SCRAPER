@@ -1032,11 +1032,11 @@
                 n("dec3c9b8", "Mot de passe"),
                 n("b929aa74", "Ressaisissez votre mot de passe X pour enregistrer les modifications de votre compte."),
                 n("d1091f50", "Mot de passe oublié ?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
+                n("fd23fe4a", "Vos clés d'identification utilisées sur vos différents appareils figurent ici."),
                 n("d9921a6c", "Create a new passkey"),
                 n("i4855730", "Supprimer la clé d'identification"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Date d'ajout : " + e.date;
                 }),
                 n("d97c07be", "Gérer les Souscriptions de créateurs"),
                 n("efa291da", "Consultez et gérez vos Souscriptions à des créateurs ci‑dessous avec Stripe. Vous pouvez gérer toute Souscription active initiée sur iOS ou Android dans l'application."),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.a7c1df9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d901b25a.js.map

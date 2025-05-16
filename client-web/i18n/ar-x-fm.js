@@ -1042,10 +1042,10 @@
                 n("b929aa74", "أعيدي إدخال كلمة مرور حسابكِ على X لحفظ التغييرات المجراة على حسابكِ."),
                 n("d1091f50", "نسيت كلمة المرور؟"),
                 n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("d9921a6c", "إنشاء مفتاح مرور جديد"),
                 n("i4855730", "حذف مفتاح المرور"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "تاريخ الإضافة: " + e.date;
                 }),
                 n("d97c07be", "إدارة الاشتراكات لدى منشئات المحتوى"),
                 n("efa291da", "يمكنكِ عرض اشتراكاتكِ لدى منشئات المحتوى أدناه  وإدارتها باستخدام Stripe. يمكن إدارة أي اشتراكات نشطة بدأتيها على نظام iOS أو Android في التطبيق."),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.6048960a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.60b3f79a.js.map

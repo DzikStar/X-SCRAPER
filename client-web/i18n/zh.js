@@ -1027,11 +1027,11 @@
                 f("dec3c9b8", "密码"),
                 f("b929aa74", "请重新输入你的 X 密码以保存更改到你的账号。"),
                 f("d1091f50", "忘记密码？"),
-                f("fd23fe4a", "Here are your passkeys across all your devices"),
-                f("d9921a6c", "Create a new passkey"),
+                f("fd23fe4a", "以下是你所有设备上的密匙"),
+                f("d9921a6c", "创建新的密匙"),
                 f("i4855730", "删除密匙"),
                 f("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "添加日期：" + e.date;
                 }),
                 f("d97c07be", "管理创作者订阅服务"),
                 f("efa291da", "使用 Stripe 查看和管理你对以下创作者的订阅服务。你在 iOS 或安卓设备上发起的任何有效订阅服务均可在该应用程序中进行管理。"),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.4b6c988a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.c2742e6a.js.map

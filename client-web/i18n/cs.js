@@ -1037,11 +1037,11 @@
                 a("dec3c9b8", "Heslo"),
                 a("b929aa74", "Aby se změny uložily, zadejte znovu své heslo k X."),
                 a("d1091f50", "Zapomněli jste heslo?"),
-                a("fd23fe4a", "Here are your passkeys across all your devices"),
-                a("d9921a6c", "Create a new passkey"),
+                a("fd23fe4a", "Zde jsou vaše přístupové klíče pro všechna vaše zařízení"),
+                a("d9921a6c", "Vytvořit nový přístupový klíč"),
                 a("i4855730", "Odstranit přístupový klíč"),
                 a("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Datum přidání: " + e.date;
                 }),
                 a("d97c07be", "Spravovat předplatná tvůrců"),
                 a("efa291da", "Zobrazujte a spravujte svoje předplatná tvůrců uvedená níže pomocí Stripe. Všechna aktivní předplatná, která jste zahájili na iOS nebo Androidu, lze v této aplikaci spravovat."),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.4042d49a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.899ded0a.js.map

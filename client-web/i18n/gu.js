@@ -1028,11 +1028,11 @@
                 n("dec3c9b8", "સાંકેતિક શબ્દ"),
                 n("b929aa74", "તમારા Twitter એકાઉન્ટમાં કરેલ પરિવર્તનો સાચવવા માટે તમારો X સાંકેતિક શબ્દ ફરી દાખલ કરો."),
                 n("d1091f50", "સાંકેતિક શબ્દ ભૂલી ગયા?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "તમારા સમગ્ર ઉપકરણો માટેની પાસકી આ પ્રમાણે છે"),
+                n("d9921a6c", "નવી પાસકી બનાવો"),
                 n("i4855730", "પાસકી કાઢી નાખો"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "ઉમેર્યાની તારીખ: " + e.date;
                 }),
                 n("d97c07be", "નિર્માતાનાં સબ્સ્ક્રિપ્શનોને મેનેજ કરો"),
                 n("efa291da", "Stripeનો ઉપયોગ કરીને નિમ્નલિખિત નિર્માતાઓના તમારાં સબ્સ્ક્રિપ્શનો જુઓ અને મૅનેજ કરો. તમે iOS કે Android પર શરૂ કરેલાં બધાં સક્રિય સબ્સ્ક્રિપ્શનોને ઍપમાં મૅનેજ કરી શકાશે."),
@@ -13249,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.f236d73a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.efa7cada.js.map

@@ -1031,11 +1031,11 @@
                 n("dec3c9b8", "비밀번호"),
                 n("b929aa74", "계정 변경사항을 저장하려면 비밀번호를 재입력하세요."),
                 n("d1091f50", "비밀번호를 잊으셨나요?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "모든 디바이스에 대한 패스키입니다"),
+                n("d9921a6c", "새 패스키 만들기"),
                 n("i4855730", "패스키 삭제하기"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "날짜 추가됨: " + e.date;
                 }),
                 n("d97c07be", "크리에이터 구독 관리하기"),
                 n("efa291da", "Stripe를 사용하여 아래 크리에이터에 대한 구독을 조회 및 관리하세요. iOS 또는 Android에서 시작한 활성 구독은 해당 앱에서 관리할 수 있습니다."),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.06d4895a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.3aee5cca.js.map

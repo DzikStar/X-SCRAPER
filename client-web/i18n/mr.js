@@ -1028,11 +1028,11 @@
                 n("dec3c9b8", "पासवर्ड"),
                 n("b929aa74", "आपल्या खात्यामधील बदल जतन करण्यासाठी आपला X पासवर्ड पुन्हा प्रविष्ट करा."),
                 n("d1091f50", "पासवर्ड विसरलात?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "आपल्या सर्व उपकरणांच्या पासकीज येथे आहेत"),
+                n("d9921a6c", "एक नवीन पासकी तयार करा"),
                 n("i4855730", "पासकी हटवा"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "समाविष्ट केलेली तारीख: " + e.date;
                 }),
                 n("d97c07be", "क्रिएटर सबस्क्रीप्शन्स व्यवस्थापित करा"),
                 n("efa291da", "स्ट्राइप वापरून खाली दिलेल्या क्रिएटर्सच्या सबस्क्रीप्शन्स पहा आणि व्यवस्थापित करा. आपण iOS किंवा Android वर सुरू केलेल्या कोणत्याही सक्रिय सबस्क्रीप्शन्स, अनुप्रयोगात व्यवस्थापित केल्या जाऊ शकतात."),
@@ -13240,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.97e4ec3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.7d5649ea.js.map

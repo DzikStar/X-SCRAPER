@@ -1037,11 +1037,11 @@
                 n("dec3c9b8", "Heslo"),
                 n("b929aa74", "Aby sa uložili zmeny vo vašom účte, opätovne zadajte vaše heslo na platforme X."),
                 n("d1091f50", "Zabudli ste heslo?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "Tu sú vaše prístupové kľúče vo všetkých zariadeniach"),
+                n("d9921a6c", "Vytvoriť nový prístupový kľúč"),
                 n("i4855730", "Odstrániť prístupový kľúč"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Dátum pridania: " + e.date;
                 }),
                 n("d97c07be", "Spravovať predplatné pre tvorcov"),
                 n("efa291da", "Nižšie môžete pomocou aplikácie Stripe zobraziť a spravovať svoje predplatné pre tvorcov. V aplikácii môžete spravovať aj všetky aktívne predplatné, ktoré ste vytvorili v zariadení so systémom iOS alebo Android."),
@@ -13249,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.9da977aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.b469911a.js.map

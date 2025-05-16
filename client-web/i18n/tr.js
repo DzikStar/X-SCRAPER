@@ -1027,11 +1027,11 @@
                 n("dec3c9b8", "Şifre"),
                 n("b929aa74", "Değişiklikleri hesabına kaydetmek için X şifreni gir."),
                 n("d1091f50", "Şifreni mi unuttun?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "İşte tüm cihazlarındaki geçiş anahtarların"),
+                n("d9921a6c", "Yeni geçiş anahtarı oluştur"),
                 n("i4855730", "Geçiş anahtarını sil"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Eklendiği tarih: " + e.date;
                 }),
                 n("d97c07be", "İçerik Üreticisi Aboneliklerini Yönet"),
                 n("efa291da", "İçerik üreticilerine aboneliklerini Stripe kullanarak aşağıda görüntüle ve yönet. iOS ya da Android işletim sisteminde başlattığın tüm aktif abonelikler uygulama içinde yönetilebilir."),
@@ -13242,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.16a7a9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.71a459ca.js.map

@@ -1027,11 +1027,11 @@
                 s("dec3c9b8", "Jelszó"),
                 s("b929aa74", "A változtatások mentéséhez írd be újra az X-jelszavad!"),
                 s("d1091f50", "Elfelejtetted a jelszavad?"),
-                s("fd23fe4a", "Here are your passkeys across all your devices"),
-                s("d9921a6c", "Create a new passkey"),
+                s("fd23fe4a", "Itt láthatod az összes eszközödön használt hozzáférési kulcsokat"),
+                s("d9921a6c", "Új hozzáférési kulcs létrehozása"),
                 s("i4855730", "Hozzáférési kulcs törlése"),
                 s("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Hozzáadás dátuma: " + e.date;
                 }),
                 s("d97c07be", "Alkotói előfizetések kezelése"),
                 s("efa291da", "Tekintsd meg és kezeld az alábbi alkotói előfizetéseket a Stripe segítségével. Az iOS-en vagy Androidon kezdeményezett aktív előfizetések az alkalmazásban kezelhetők."),
@@ -13242,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.ac90fa7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.d8c98a3a.js.map

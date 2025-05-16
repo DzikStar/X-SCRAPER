@@ -1028,11 +1028,11 @@
                 t("dec3c9b8", "Passwort"),
                 t("b929aa74", "Gib dein X Passwort erneut ein, wenn du die Änderungen an deinem Account speichern möchtest."),
                 t("d1091f50", "Passwort vergessen?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Hier sind deine Passkeys auf allen deinen Geräten"),
+                t("d9921a6c", "Neuen Passkey erstellen"),
                 t("i4855730", "Passkey löschen"),
                 t("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Hinzugefügt am: " + e.date;
                 }),
                 t("d97c07be", "Gestalterabonnements verwalten"),
                 t("efa291da", "Zeige deine Abonnements für Gestalter*innen unten mit Stripe an und verwalte sie. Alle aktiven Abonnements, die du auf iOS oder Android gestartet hast, können in der App verwaltet werden."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.96d38b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.6dab0a2a.js.map

@@ -1035,11 +1035,11 @@
                 n("dec3c9b8", "Лозинка"),
                 n("b929aa74", "Поново унеси лозинку за мрежу X да бисмо сачували промене налога."),
                 n("d1091f50", "Заборављена лозинка?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "Ово су твоје шифре на свим уређајима"),
+                n("d9921a6c", "Креирај нову шифру"),
                 n("i4855730", "Избриши шифре"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Датум додавања: " + e.date;
                 }),
                 n("d97c07be", "Управљај претплатама на ауторе"),
                 n("efa291da", "Прегледај своје претплате на ауторе и управљај њима у наставку користећи Stripe. Свим активним претплатама покренутим на твом iOS или Android уређају можеш да управљаш у апликацији."),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.c3929cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.71ede72a.js.map

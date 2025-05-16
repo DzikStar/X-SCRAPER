@@ -1039,11 +1039,11 @@
                 t("dec3c9b8", "Parolă"),
                 t("b929aa74", "Introdu din nou parola X pentru a salva modificările la contul tău."),
                 t("d1091f50", "Ai uitat parola?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Iată cheile de acces pentru toate dispozitivele tale"),
+                t("d9921a6c", "Creează o nouă cheie de acces"),
                 t("i4855730", "Șterge cheie de acces"),
                 t("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "Data adăugării: " + e.date;
                 }),
                 t("d97c07be", "Gestionează Abonamentele de creator"),
                 t("efa291da", "Vizualizează și gestionează abonamentele tale la creatorii de mai jos prin intermediul Stripe. Toate abonamentele active pe care le-ai inițiat pe iOS sau Android pot fi gestionate în aplicație."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.48fc51da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.d3aa9a8a.js.map

@@ -1027,11 +1027,11 @@
                 t("dec3c9b8", "Mật khẩu"),
                 t("b929aa74", "Nhập lại mật khẩu X để lưu những thay đổi này vào tài khoản của bạn."),
                 t("d1091f50", "Quên mật khẩu?"),
-                t("fd23fe4a", "Here are your passkeys across all your devices"),
-                t("d9921a6c", "Create a new passkey"),
+                t("fd23fe4a", "Đây là khóa truy cập cho tất cả thiết bị của bạn"),
+                t("d9921a6c", "Tạo khóa truy cập mới"),
                 t("i4855730", "Xóa khóa truy cập"),
                 t("a6acdc67", function (n) {
-                    return "Date added: " + n.date;
+                    return "Ngày thêm: " + n.date;
                 }),
                 t("d97c07be", "Quản lý Đăng ký người sáng tạo nội dung"),
                 t("efa291da", "Xem và quản lý đăng ký của bạn với người sáng tạo nội dung dưới đây bằng Stripe. Bạn có thể quản lý mọi đăng ký đang hoạt động mà bạn khởi tạo trên iOS hoặc Android trong ứng dụng."),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0522d83a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.3dd1ec3a.js.map

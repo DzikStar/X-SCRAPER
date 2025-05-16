@@ -1035,11 +1035,11 @@
                 o("dec3c9b8", "Lozinka"),
                 o("b929aa74", "Ponovno unesite lozinku za X da biste spremili promjene računa."),
                 o("d1091f50", "Zaboravili ste lozinku?"),
-                o("fd23fe4a", "Here are your passkeys across all your devices"),
-                o("d9921a6c", "Create a new passkey"),
+                o("fd23fe4a", "Ovdje se nalaze vaši pristupni ključevi za sve vaše uređaje"),
+                o("d9921a6c", "Izrada novog pristupnog ključa"),
                 o("i4855730", "Izbriši pristupni ključ"),
                 o("a6acdc67", function (a) {
-                    return "Date added: " + a.date;
+                    return "Datum dodavanja: " + a.date;
                 }),
                 o("d97c07be", "Upravljanje pretplatama autora sadržaja"),
                 o("efa291da", "Pregledajte svoje pretplate na autore sadržaja u nastavku i upravljajte njima putem usluge Stripe. Svim aktivnim pretplatama koje pokrenete na uređaju sa sustavom iOS ili Android možete upravljati putem aplikacije."),
@@ -13255,4 +13255,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.c6c95c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.3fff459a.js.map

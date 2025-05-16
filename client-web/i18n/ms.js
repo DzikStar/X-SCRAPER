@@ -1027,11 +1027,11 @@
                 i("dec3c9b8", "Kata laluan"),
                 i("b929aa74", "Masukkan semula kata laluan X anda untuk menyimpan perubahan ke akaun anda."),
                 i("d1091f50", "Terlupa kata laluan?"),
-                i("fd23fe4a", "Here are your passkeys across all your devices"),
-                i("d9921a6c", "Create a new passkey"),
+                i("fd23fe4a", "Ini kunci laluan anda merentasi semua peranti anda"),
+                i("d9921a6c", "Cipta kunci laluan baharu"),
                 i("i4855730", "Padamkan kunci laluan"),
                 i("a6acdc67", function (a) {
-                    return "Date added: " + a.date;
+                    return "Tarikh ditambahkan: " + a.date;
                 }),
                 i("d97c07be", "Urus Langganan Pencipta"),
                 i("efa291da", "Lihat dan uruskan langganan anda kepada pencipta di bawah menggunakan Stripe. Mana-mana langganan aktif yang anda mulakan pada iOS atau Android boleh diuruskan dalam aplikasi tersebut."),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f5beef4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.4454b5ba.js.map

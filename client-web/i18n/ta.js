@@ -1027,11 +1027,11 @@
                 n("dec3c9b8", "கடவுச்சொல்"),
                 n("b929aa74", "மாற்றங்களை உங்கள் கணக்கில் சேமிக்க, உங்கள் X கடவுச்சொல்லை மீண்டும் உள்ளிடவும்."),
                 n("d1091f50", "கடவுச்சொல் மறந்துவிட்டதா?"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
-                n("d9921a6c", "Create a new passkey"),
+                n("fd23fe4a", "உங்கள் எல்லாச் சாதனங்களிலும் உள்ள உங்கள் கடவுக்குறியீடுகள் இதோ"),
+                n("d9921a6c", "புதிய கடவுக்குறியீட்டை உருவாக்கு"),
                 n("i4855730", "கடவுக்குறியீட்டை நீக்கு"),
                 n("a6acdc67", function (e) {
-                    return "Date added: " + e.date;
+                    return "சேர்க்கப்பட்ட தேதி: " + e.date;
                 }),
                 n("d97c07be", "படைப்பாளர் சப்ஸ்கிர்ப்ஷன்ஸை நிர்வகி"),
                 n("efa291da", "Stripe பயன்படுத்தி கீழே உள்ள படைப்பாளர்களுக்கான உங்கள் சப்ஸ்கிர்ப்ஷன்ஸைப் பார்க்கலாம், நிர்வகிக்கலாம். நீங்கள் iOS அல்லது Android -இல் தொடங்கியுள்ள எந்தவொரு செயலில் உள்ள சப்ஸ்கிர்ப்ஷன்ஸையும் பயன்பாட்டில் நிர்வகிக்கலாம்."),
@@ -13251,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.d1932aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.a2fdf02a.js.map
