@@ -2,10 +2,10 @@
     ["modules.audio-6107ac1a"],
     {
         564824: (e) => {
-            e.exports = { queryId: "1aIT1kXSxdyKo4n3pa4VNA", operationName: "AudioSpaceAddSharing", operationType: "mutation", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "3fkhKnC2XX9k49RxGGdIUg", operationName: "AudioSpaceAddSharing", operationType: "mutation", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         315683: (e) => {
-            e.exports = { queryId: "5eSbJH60YP3p3Ssc90LL6Q", operationName: "AudioSpaceById", operationType: "query", metadata: { featureSwitches: ["spaces_2022_h2_spaces_communities", "spaces_2022_h2_clipping", "creator_subscriptions_tweet_preview_api_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "7ScqSF7nzsQHmnmdDtRjEA", operationName: "AudioSpaceById", operationType: "query", metadata: { featureSwitches: ["spaces_2022_h2_spaces_communities", "spaces_2022_h2_clipping", "creator_subscriptions_tweet_preview_api_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         81177: (e) => {
             e.exports = { queryId: "YMbfLMTUUEzEEMibvvR26Q", operationName: "AudioSpaceDeleteSharing", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -17,40 +17,40 @@
             "use strict";
             o.d(a, { Z: () => E });
             o(571372);
-            var r = o(163889),
-                t = o(703710),
-                i = (o(136728), o(614983)),
-                n = o.n(i),
+            var t = o(163889),
+                r = o(703710),
+                n = (o(136728), o(614983)),
+                i = o.n(n),
                 s = o(392237),
                 d = o(870358),
                 l = o(557281),
                 c = o(952183),
                 _ = o(877905),
                 u = o(44527);
-            function h(e) {
-                n()(e, "audioSpace is required");
-                const { metadata: a, participants: o, sharings: r, ...t } = e;
-                n()(a, "metadata is required");
-                const { rest_id: i, state: d } = a;
-                n()(i, "rest_id is required"), n()(d, "state is required");
+            function m(e) {
+                i()(e, "audioSpace is required");
+                const { metadata: a, participants: o, sharings: t, ...r } = e;
+                i()(a, "metadata is required");
+                const { rest_id: n, state: d } = a;
+                i()(n, "rest_id is required"), i()(d, "state is required");
                 const u = (function (e) {
                         if (e && e.result && "Community" === e.result.__typename) {
-                            const { __typename: a, rest_id: o, ...r } = e.result,
-                                { name: t } = r,
-                                i = s.default.theme.colors.gray500,
-                                n = (0, c.Wb)(r),
-                                d = (0, c.TB)(r),
-                                l = n || d,
+                            const { __typename: a, rest_id: o, ...t } = e.result,
+                                { name: r } = t,
+                                n = s.default.theme.colors.gray500,
+                                i = (0, c.Wb)(t),
+                                d = (0, c.TB)(t),
+                                l = i || d,
                                 _ = l?.url;
-                            return { rest_id: o, color: i, name: t, image_url: _ };
+                            return { rest_id: o, color: n, name: r, image_url: _ };
                         }
                     })(a.community_results),
-                    h = (function (e, a) {
+                    m = (function (e, a) {
                         const o = e?.total,
-                            r = m(e?.admins, a),
-                            t = m(e?.speakers, a),
-                            i = m(e?.listeners, a);
-                        return { total: o, admins: r, speakers: t, listeners: i };
+                            t = h(e?.admins, a),
+                            r = h(e?.speakers, a),
+                            n = h(e?.listeners, a);
+                        return { total: o, admins: t, speakers: r, listeners: n };
                     })(o, u),
                     b = (function (e) {
                         if (!e) return [];
@@ -60,11 +60,11 @@
                                     o = e.shared_item;
                                 if ("AudioSpaceSharedTweet" === o.__typename) {
                                     if ("Tweet" === o.tweet_results?.result?.__typename) {
-                                        const { __typename: r, ...t } = o.tweet_results?.result || {},
-                                            i = (0, _.y9)(t);
-                                        if (i) {
-                                            const { cards: o, publishedArticles: r, tweets: t, users: n } = i.entities,
-                                                s = (0, l.F)(t, o, n, r, i.result);
+                                        const { __typename: t, ...r } = o.tweet_results?.result || {},
+                                            n = (0, _.y9)(r);
+                                        if (n) {
+                                            const { cards: o, publishedArticles: t, tweets: r, users: i } = n.entities,
+                                                s = (0, l.F)(r, o, i, t, n.result);
                                             if (s) return { id: e.sharing_id, user: a, tweet: s };
                                         }
                                     }
@@ -74,47 +74,47 @@
                             })
                             .filter(Boolean);
                         return a;
-                    })(r),
+                    })(t),
                     w = p(a.creator_results?.result),
-                    D = w?.screen_name,
-                    f = w?.profile_image_extensions_media_color?.palette,
+                    f = w?.screen_name,
+                    D = w?.profile_image_extensions_media_color?.palette,
                     { cohosts: y, host: g } = (function (e, a) {
                         let o;
-                        const r = [];
+                        const t = [];
                         a
                             ? e.admins.forEach((e) => {
-                                  e.twitter_screen_name === a ? (o = e) : r.push(e);
+                                  e.twitter_screen_name === a ? (o = e) : t.push(e);
                               })
                             : (o = e.admins[0]);
-                        return { host: o, cohosts: r };
-                    })(h, D);
-                return n()(g, "host is required"), { ...t, ...a, rest_id: i, state: d, host: g, hostPalette: f, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.legacy?.followed_by, community: u };
+                        return { host: o, cohosts: t };
+                    })(m, f);
+                return i()(g, "host is required"), { ...r, ...a, rest_id: n, state: d, host: g, hostPalette: D, cohosts: y, participants: m, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.legacy?.followed_by, community: u };
             }
-            function m(e, a) {
+            function h(e, a) {
                 return e
                     ? e.map(({ user_results: e, ...o }) => {
-                          const r = { ...o, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
+                          const t = { ...o, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
                           if (a) {
                               const e = a.color,
-                                  t = Boolean(o.community_role && o.community_role !== d.WW.NonMember);
-                              r.community = { color: e, isMember: t };
+                                  r = Boolean(o.community_role && o.community_role !== d.WW.NonMember);
+                              t.community = { color: e, isMember: r };
                           }
-                          return e?.result && "User" === e.result.__typename && ((r.is_blue_verified = e.result.is_blue_verified), (r.verified_type = e.result.verification?.verified_type), (r.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), r;
+                          return e?.result && "User" === e.result.__typename && ((t.is_blue_verified = e.result.is_blue_verified), (t.verified_type = e.result.verification?.verified_type), (t.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), t;
                       })
                     : [];
             }
             function p(e) {
                 if (e && "User" === e.__typename) {
                     const { __typename: a, ...o } = e,
-                        r = (0, _.Hy)(o);
-                    if (r) return r.entities.users[r.result];
+                        t = (0, _.Hy)(o);
+                    if (t) return t.entities.users[t.result];
                 }
                 return null;
             }
             var b = o(564824),
                 w = o.n(b),
-                D = o(315683),
-                f = o.n(D),
+                f = o(315683),
+                D = o.n(f),
                 y = o(81177),
                 g = o.n(y),
                 M = o(477291),
@@ -123,42 +123,45 @@
                 T = o.n(A),
                 k = o(443127),
                 I = o.n(k),
-                P = o(587541),
-                S = o.n(P),
+                S = o(587541),
+                P = o.n(S),
                 N = o(389073),
                 x = o(615656);
-            const E = ({ apiClient: e, featureSwitches: a, jotaiStore: r }) => ({
+            const E = ({ apiClient: e, featureSwitches: a, jotaiStore: t }) => ({
                     spacebar: () => e.getUnversioned("/fleets/v1/fleetline", { only_spaces: !0 }, {}),
-                    byId(i, n = {}) {
+                    byId(n, i = {}) {
                         const s = "byId",
-                            d = n.isMetatagsQuery || !1;
+                            d = i.isMetatagsQuery || !1;
                         return e
                             .graphQL(
-                                f(),
-                                { id: i, isMetatagsQuery: d, ...(0, t.d)(a), withReplays: !0, withListeners: !0 },
-                                R(
+                                D(),
+                                { id: n, isMetatagsQuery: d, ...(0, r.d)(a), withReplays: !0, withListeners: !0 },
+                                L(
                                     s,
-                                    i,
+                                    n,
                                     (e, a) => (
                                         e.forEach((e) => {
                                             const { code: a } = e;
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    o.e("icons.8"),
-                                                    o.e("icons.21"),
-                                                    o.e("icons.13"),
+                                                    o.e("icons.5"),
+                                                    o.e("icons.6"),
+                                                    o.e("icons.25"),
+                                                    o.e("icons.22"),
+                                                    o.e("icons.9"),
+                                                    o.e("icons.4"),
+                                                    o.e("icons.2"),
                                                     o.e("icons.20"),
-                                                    o.e("icons.14"),
-                                                    o.e("icons.1"),
-                                                    o.e("icons.3"),
-                                                    o.e("icons.24"),
-                                                    o.e("icons.11"),
+                                                    o.e("icons.7"),
                                                     o.e("modules.common-e907d115"),
                                                     o.e("modules.common-e019dbda"),
-                                                    o.e("icons.28"),
-                                                    o.e("icons.10"),
+                                                    o.e("icons.0"),
+                                                    o.e("icons.11"),
+                                                    o.e("icons.27"),
                                                     o.e("icons.17"),
-                                                    o.e("icons.4"),
+                                                    o.e("icons.12"),
+                                                    o.e("icons.3"),
+                                                    o.e("icons.13"),
                                                     o.e("icons.18"),
                                                     o.e("modules.audio-6107ac1a"),
                                                     o.e("modules.audio-b953418a"),
@@ -170,13 +173,8 @@
                                                     o.e("modules.audio-e019dbda"),
                                                     o.e("modules.audio-262c94d4"),
                                                     o.e("modules.audio-c6fe4ea4"),
-                                                    o.e("icons.12"),
-                                                    o.e("icons.29"),
-                                                    o.e("icons.22"),
-                                                    o.e("icons.7"),
-                                                    o.e("icons.26"),
-                                                    o.e("icons.0"),
-                                                    o.e("icons.19"),
+                                                    o.e("icons.24"),
+                                                    o.e("icons.10"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -184,7 +182,6 @@
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -210,7 +207,7 @@
                                                 ])
                                                     .then(o.bind(o, 106006))
                                                     .then(({ removedFromSpaceAtom: e }) => {
-                                                        r?.set(e);
+                                                        t?.set(e);
                                                     });
                                         }),
                                         !0
@@ -230,7 +227,7 @@
                             .then((e) => {
                                 if (e)
                                     try {
-                                        return h(e?.audioSpace);
+                                        return m(e?.audioSpace);
                                     } catch (e) {
                                         throw new Error(q(s, e.message));
                                     }
@@ -238,18 +235,18 @@
                     },
                     subscribeToScheduledSpaceById(a) {
                         const o = "subscribeToScheduledSpaceById";
-                        return e.graphQL(I(), { id: a }, R(o, a)).catch(C(o)).then(z(o));
+                        return e.graphQL(I(), { id: a }, L(o, a)).catch(C(o)).then(z(o));
                     },
                     unsubscribeFromScheduledSpaceById(a) {
                         const o = "unsubscribeFromScheduledSpaceById";
-                        return e.graphQL(S(), { id: a }, R(o, a)).catch(C(o)).then(z(o));
+                        return e.graphQL(P(), { id: a }, L(o, a)).catch(C(o)).then(z(o));
                     },
                     fetchTopics: () => e.graphQL(T(), {}),
                     search(a, o) {
-                        const r = "spacesSearch";
+                        const t = "spacesSearch";
                         return e
-                            .graphQL(v(), { query: a, filter: o }, R(r, a))
-                            .catch(C(r))
+                            .graphQL(v(), { query: a, filter: o }, L(t, a))
+                            .catch(C(t))
                             .then((e) =>
                                 e?.search_by_raw_query?.audio_spaces_grouped_by_section
                                     ? (function (e) {
@@ -257,13 +254,13 @@
                                           const a = { sections: [] };
                                           return (
                                               e.sections.forEach((e) => {
-                                                  const { destination: o, name: r } = e;
+                                                  const { destination: o, name: t } = e;
                                                   if (Array.isArray(e.items)) {
-                                                      const t = [];
+                                                      const r = [];
                                                       e.items.forEach((e) => {
-                                                          e?.space?.rest_id && t.push(e.space.rest_id);
+                                                          e?.space?.rest_id && r.push(e.space.rest_id);
                                                       }),
-                                                          r && o && a.sections.push({ name: r, destination: o, items: t });
+                                                          t && o && a.sections.push({ name: t, destination: o, items: r });
                                                   }
                                               }),
                                               a
@@ -272,8 +269,8 @@
                                     : { sections: [] },
                             );
                     },
-                    addSharing: (a, o) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: o } } }, R("addSharing", a)),
-                    deleteSharing: (a, o) => e.graphQL(g(), { audio_space_id: a, sharing_id: o }, R("deleteSharing", a)),
+                    addSharing: (a, o) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: o } } }, L("addSharing", a)),
+                    deleteSharing: (a, o) => e.graphQL(g(), { audio_space_id: a, sharing_id: o }, L("deleteSharing", a)),
                 }),
                 q = (e, a) => `GQL: AudioSpaces.${e} [${a}]`;
             function C(e) {
@@ -287,45 +284,45 @@
                     throw new Error(q(e, "404"));
                 };
             }
-            const L = (e, a) => !1;
-            function R(e, a, o = L) {
-                return function (t, i) {
-                    let n = !1;
-                    if (t.length) {
-                        const [o] = t,
-                            { code: i, message: s, path: d } = o;
+            const R = (e, a) => !1;
+            function L(e, a, o = R) {
+                return function (r, n) {
+                    let i = !1;
+                    if (r.length) {
+                        const [o] = r,
+                            { code: n, message: s, path: d } = o;
                         let l;
                         const c = V.find(({ matches: e }) => e(s));
                         if (c?.message) l = q(e, c.message);
                         else if (Array.isArray(d)) {
-                            const a = d.map(Z).join(".");
+                            const a = d.map(U).join(".");
                             l = q(e, a);
                         } else l = q(e, s || "isFatalError");
-                        (0, r.ZP)(l, { extra: { code: i, id: a, message: s, path: d } }), (n = !0);
+                        (0, t.ZP)(l, { extra: { code: n, id: a, message: s, path: d } }), (i = !0);
                     }
-                    return !o(t, i) && n;
+                    return !o(r, n) && i;
                 };
             }
-            function Z(e) {
+            function U(e) {
                 return "number" == typeof e ? "#" : e;
             }
             const V = ["Overcapacity: Unspecified", "Timeout: Unspecified"].map((e) => ({ matches: (a) => a && e.toLowerCase() === a.toLowerCase(), message: e }));
         },
         787210: (e, a, o) => {
             "use strict";
-            o.d(a, { Z: () => i });
-            var r = o(716406),
-                t = o(624479);
-            const i = ({ apiClient: e, featureSwitches: a }) => ({
+            o.d(a, { Z: () => n });
+            var t = o(716406),
+                r = o(624479);
+            const n = ({ apiClient: e, featureSwitches: a }) => ({
                 fetchPresence: (a, o = {}) => {
-                    const { only_spaces: i, userIds: n } = a,
-                        s = { user_ids: n.join(","), only_spaces: i };
+                    const { only_spaces: n, userIds: i } = a,
+                        s = { user_ids: i.join(","), only_spaces: n };
                     return e.getUnversioned("/fleets/v1/avatar_content", s, o).then((e) => {
-                        const { users: a, refresh_delay_secs: o = t.vj } = e,
-                            i = 0 === o ? t.vj : o,
-                            s = Date.now() + 1e3 * i,
-                            d = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
-                            l = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
+                        const { users: a, refresh_delay_secs: o = r.vj } = e,
+                            n = 0 === o ? r.vj : o,
+                            s = Date.now() + 1e3 * n,
+                            d = Object.fromEntries(i.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: n }])),
+                            l = a && (0, t.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: n }));
                         return (l || d) && { entities: { userPresence: { ...d, ...l } } };
                     });
                 },
@@ -333,25 +330,25 @@
         },
         910626: (e, a, o) => {
             "use strict";
-            o.d(a, { Y: () => r });
-            const r = Object.freeze({ card: "card", audiospace_ring: "audiospace_ring", spacebar: "spacebar" });
+            o.d(a, { Y: () => t });
+            const t = Object.freeze({ card: "card", audiospace_ring: "audiospace_ring", spacebar: "spacebar" });
         },
         161104: (e, a, o) => {
             "use strict";
-            o.d(a, { Z: () => r });
-            const r = class {
+            o.d(a, { Z: () => t });
+            const t = class {
                 initialize() {
                     (this.audioCtx = new (window.AudioContext || window.webkitAudioContext)()), (this.oscillatorNode = this.audioCtx.createOscillator()), (this.gainNode = this.audioCtx.createGain()), this.oscillatorNode.connect(this.gainNode), this.oscillatorNode.start(0), this.gainNode.connect(this.audioCtx.destination), (this.gainNode.gain.value = 0), (this.initialized = !0);
                 }
                 mapDataPointsToFrequencies(e, a = 440, o = 1760) {
-                    let r = 1 / 0,
-                        t = -1 / 0;
+                    let t = 1 / 0,
+                        r = -1 / 0;
                     e.forEach((e) => {
-                        (r = Math.min(e, r)), (t = Math.max(e, t));
+                        (t = Math.min(e, t)), (r = Math.max(e, r));
                     });
-                    const i = o - a,
-                        n = t - r;
-                    return 0 === n ? e.map((e) => (a + o) / 2) : e.map((e) => ((e - r) / n) * i + a);
+                    const n = o - a,
+                        i = r - t;
+                    return 0 === i ? e.map((e) => (a + o) / 2) : e.map((e) => ((e - t) / i) * n + a);
                 }
                 playTone(e) {
                     this.initialized || this.initialize();
@@ -361,127 +358,113 @@
                 playLinearConnectedDataPointsAsTone(e, a) {
                     this.initialized || this.initialize();
                     const o = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
-                        r = this.audioCtx.currentTime,
-                        t = a / (o.length - 1);
-                    this.oscillatorNode.frequency.setValueAtTime(o[0], r), this.gainNode.gain.setValueAtTime(0, r), this.gainNode.gain.linearRampToValueAtTime(1, r + 0.1);
-                    for (let e = 0; e < o.length; e++) this.oscillatorNode.frequency.linearRampToValueAtTime(o[e], r + e * t);
-                    this.gainNode.gain.setValueAtTime(1, r + (a - 0.1)), this.gainNode.gain.exponentialRampToValueAtTime(0.001, r + (a - 0.001)), this.gainNode.gain.setValueAtTime(0, r + a);
+                        t = this.audioCtx.currentTime,
+                        r = a / (o.length - 1);
+                    this.oscillatorNode.frequency.setValueAtTime(o[0], t), this.gainNode.gain.setValueAtTime(0, t), this.gainNode.gain.linearRampToValueAtTime(1, t + 0.1);
+                    for (let e = 0; e < o.length; e++) this.oscillatorNode.frequency.linearRampToValueAtTime(o[e], t + e * r);
+                    this.gainNode.gain.setValueAtTime(1, t + (a - 0.1)), this.gainNode.gain.exponentialRampToValueAtTime(0.001, t + (a - 0.001)), this.gainNode.gain.setValueAtTime(0, t + a);
                 }
                 playDisconnectedDataPointsAsTone(e, a, o) {
                     this.initialized || this.initialize();
-                    const r = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
-                        t = this.audioCtx.currentTime;
-                    this.gainNode.gain.setValueAtTime(0, t);
-                    for (let e = 0; e < r.length; e++) {
-                        const i = a * e + o * e;
-                        this.playFrequencyAsTone(r[e], a, o, t, i);
+                    const t = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
+                        r = this.audioCtx.currentTime;
+                    this.gainNode.gain.setValueAtTime(0, r);
+                    for (let e = 0; e < t.length; e++) {
+                        const n = a * e + o * e;
+                        this.playFrequencyAsTone(t[e], a, o, r, n);
                     }
                 }
-                playFrequencyAsTone(e, a, o, r, t = 0) {
+                playFrequencyAsTone(e, a, o, t, r = 0) {
                     this.initialized || this.initialize();
-                    const i = (r ?? this.audioCtx.currentTime) + t;
-                    this.gainNode.gain.setValueAtTime(0, i), this.gainNode.gain.linearRampToValueAtTime(1, i + 0.1), this.oscillatorNode.frequency.setValueAtTime(e, i), this.gainNode.gain.setValueAtTime(1, i + a - 0.1), this.gainNode.gain.exponentialRampToValueAtTime(0.001, i + a - 0.001), this.gainNode.gain.setValueAtTime(0, i + a);
+                    const n = (t ?? this.audioCtx.currentTime) + r;
+                    this.gainNode.gain.setValueAtTime(0, n), this.gainNode.gain.linearRampToValueAtTime(1, n + 0.1), this.oscillatorNode.frequency.setValueAtTime(e, n), this.gainNode.gain.setValueAtTime(1, n + a - 0.1), this.gainNode.gain.exponentialRampToValueAtTime(0.001, n + a - 0.001), this.gainNode.gain.setValueAtTime(0, n + a);
                 }
             };
         },
         675498: (e, a, o) => {
             "use strict";
-            o.d(a, { W: () => i, x: () => n });
-            var r = o(85375),
-                t = o(94909);
-            const i = (e) => !0,
-                n = ({ cardId: e, cardType: a, converterOptions: o, data: i }) => ({ cardState: r.uW.DEFAULT, layout: { [r.uW.DEFAULT]: { size: "large" }, [r.uW.CONDENSED]: { size: "large" }, [r.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [r.uW.DEFAULT]: [r.Fw.SPACE], [r.uW.STATIC]: [r.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [r.Fw.SPACE]: { type: "space", data: { id: (0, t.SI)(i, "string_value", "id"), clip_metadata: (0, t.SI)(i, "string_value", "clip_metadata") } } } } });
+            o.d(a, { W: () => n, x: () => i });
+            var t = o(85375),
+                r = o(94909);
+            const n = (e) => !0,
+                i = ({ cardId: e, cardType: a, converterOptions: o, data: n }) => ({ cardState: t.uW.DEFAULT, layout: { [t.uW.DEFAULT]: { size: "large" }, [t.uW.CONDENSED]: { size: "large" }, [t.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [t.uW.DEFAULT]: [t.Fw.SPACE], [t.uW.STATIC]: [t.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [t.Fw.SPACE]: { type: "space", data: { id: (0, r.SI)(n, "string_value", "id"), clip_metadata: (0, r.SI)(n, "string_value", "clip_metadata") } } } } });
         },
         213836: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => d });
-            var r = o(202784),
-                t = o(325686),
-                i = o(392237),
-                n = o(707816),
+            var t = o(202784),
+                r = o(325686),
+                n = o(392237),
+                i = o(707816),
                 s = o(794294);
-            function d({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: o, size: d, translate: c }) {
-                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: o }], opacity: a, ...(0, n.M8)(d) };
-                return r.createElement(t.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
+            function d({ color: e = n.default.theme.colors.white, opacity: a = 0.15, scale: o, size: d, translate: c }) {
+                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: o }], opacity: a, ...(0, i.M8)(d) };
+                return t.createElement(r.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
             }
-            const l = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
+            const l = n.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
         },
         230966: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => l });
-            var r = o(202784),
-                t = o(7632),
-                i = o(707816),
-                n = o(213836),
+            var t = o(202784),
+                r = o(7632),
+                n = o(707816),
+                i = o(213836),
                 s = o(840940),
                 d = o(822682);
             function l(e) {
                 const { size: a } = e,
                     o = a * c,
-                    i = e.paused ? 0 : e.audioLevel,
-                    l = (0, t.X)(e.participantIndex);
-                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: l }), r.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), r.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: o }));
+                    n = e.paused ? 0 : e.audioLevel,
+                    l = (0, r.X)(e.participantIndex);
+                return t.createElement(t.Fragment, null, t.createElement(s.Z, { color: l }), t.createElement(i.Z, { scale: _(n), size: o, translate: m(n, a) }), t.createElement(i.Z, { scale: _(n), size: o, translate: m(n, a) }), t.createElement(i.Z, { scale: _(n), size: o, translate: m(n, a) }), t.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(n), size: o }));
             }
             const c = 0.692,
-                _ = (e) => 0.95 + (0.2 + (0, i.TN)(0.5)) * e,
+                _ = (e) => 0.95 + (0.2 + (0, n.TN)(0.5)) * e,
                 u = (e) => 1 + 0.05 * e,
-                h = (e, a) => ({ x: (0, i.EO)() * e * (0, i.TN)(0.05 * a), y: (0, i.EO)() * e * (0, i.TN)(0.05 * a) });
+                m = (e, a) => ({ x: (0, n.EO)() * e * (0, n.TN)(0.05 * a), y: (0, n.EO)() * e * (0, n.TN)(0.05 * a) });
         },
         272594: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => l });
-            var r = o(202784),
-                t = o(822240),
-                i = o(707816),
-                n = o(213836);
-            const s = (0, t.Z)(0, 20),
+            var t = o(202784),
+                r = o(822240),
+                n = o(707816),
+                i = o(213836);
+            const s = (0, r.Z)(0, 20),
                 d = 0.05;
             function l(e) {
                 const { color: a, size: o } = e,
-                    t = r.useRef({ scales: s.map(() => u(0)) }),
+                    r = t.useRef({ scales: s.map(() => u(0)) }),
                     l = e.paused ? 0 : e.audioLevel,
-                    _ = Math.floor((0, i.TN)(5, 2));
+                    _ = Math.floor((0, n.TN)(5, 2));
                 return (
-                    t.current.scales.forEach((e, a) => {
+                    r.current.scales.forEach((e, a) => {
                         if (a % _ != 0) return e;
-                        t.current.scales[a] = u(l);
+                        r.current.scales[a] = u(l);
                     }),
-                    r.createElement(
-                        r.Fragment,
+                    t.createElement(
+                        t.Fragment,
                         null,
-                        s.map((e) => r.createElement(n.Z, { color: a, key: e, opacity: d, scale: t.current.scales[e], size: o, translate: c })),
+                        s.map((e) => t.createElement(i.Z, { color: a, key: e, opacity: d, scale: r.current.scales[e], size: o, translate: c })),
                     )
                 );
             }
             const c = { x: 0, y: 0 },
                 _ = { circleMinimumScale: 0.05, circleMaximumScale: 0.5, circlePositionOffset: 10, circleRandomNoise: 0.2, circleScaleRandomProportion: 0.1 };
             function u(e, a = _) {
-                const o = (e + (0, i.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
-                    r = (0, i.TN)(1) * a.circleScaleRandomProportion + o * (1 - a.circleScaleRandomProportion);
-                return 1 + a.circleMinimumScale + r * (a.circleMaximumScale - a.circleMinimumScale);
+                const o = (e + (0, n.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
+                    t = (0, n.TN)(1) * a.circleScaleRandomProportion + o * (1 - a.circleScaleRandomProportion);
+                return 1 + a.circleMinimumScale + t * (a.circleMaximumScale - a.circleMinimumScale);
             }
-        },
-        409600: (e, a, o) => {
-            "use strict";
-            o.r(a), o.d(a, { default: () => d });
-            var r = o(202784),
-                t = o(890601),
-                i = o(783427),
-                n = o(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "currentColor", strokeWidth: "2" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const d = s;
         },
         447486: (e, a, o) => {
             "use strict";
-            o.d(a, { Z: () => n });
-            var r = o(22525),
-                t = o(789403),
-                i = o(123751);
-            class n {
+            o.d(a, { Z: () => i });
+            var t = o(22525),
+                r = o(789403),
+                n = o(123751);
+            class i {
                 constructor(e) {
                     this.httpClient = e;
                 }
@@ -489,21 +472,21 @@
                     return this.httpClient
                         ? ((e, a) => {
                               if (!s(a)) return Promise.resolve(a);
-                              const o = (0, r.Uf)(a, 0),
-                                  t = ((e) => {
+                              const o = (0, t.Uf)(a, 0),
+                                  r = ((e) => {
                                       const a = e.id,
                                           o = e.mediaKey,
-                                          r = e.acquisitionParams?.clip_id,
-                                          t = { broadcastId: a, contentId: o, contentType: "broadcast", displayType: "content", expandedUrl: `https://twitter.com/i/spaces/${a}`, playbackType: "application/x-mpegURL", isLive: e.isLive ?? !0, shouldLoop: !1, unavailableInPeriscope: !0 };
-                                      return r && ((t.isLive = !1), (t.expandedUrl = `https://twitter.com/i/spaces/${a}?clipID=${r}`), (t.shouldLoop = !0)), t;
+                                          t = e.acquisitionParams?.clip_id,
+                                          r = { broadcastId: a, contentId: o, contentType: "broadcast", displayType: "content", expandedUrl: `https://twitter.com/i/spaces/${a}`, playbackType: "application/x-mpegURL", isLive: e.isLive ?? !0, shouldLoop: !1, unavailableInPeriscope: !0 };
+                                      return t && ((r.isLive = !1), (r.expandedUrl = `https://twitter.com/i/spaces/${a}?clipID=${t}`), (r.shouldLoop = !0)), r;
                                   })(a.source);
-                              return Promise.resolve({ ...a, client: "web", tracks: [{ ...o, ...t, id: 0 }], currentTrackId: 0, source: { ...a.source, trackId: 0 } });
+                              return Promise.resolve({ ...a, client: "web", tracks: [{ ...o, ...r, id: 0 }], currentTrackId: 0, source: { ...a.source, trackId: 0 } });
                           })(this.httpClient, e)
-                        : Promise.reject(t.Z.MEDIA_TEARDOWN_ERROR);
+                        : Promise.reject(r.Z.MEDIA_TEARDOWN_ERROR);
                 }
             }
-            const s = (e) => e.source && e.source.type === i.P.AUDIO_SPACE;
+            const s = (e) => e.source && e.source.type === n.P.AUDIO_SPACE;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.c8fbeb6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.dbf047fa.js.map

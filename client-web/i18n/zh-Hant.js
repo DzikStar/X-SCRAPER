@@ -482,6 +482,7 @@
                 n("cb165528", "新聞功能和設定"),
                 n("f8645654", "安全性和帳戶存取"),
                 n("j95edf76", "安全性"),
+                n("fd127276", "管理通行金鑰"),
                 n("afe4a358", "身分認證"),
                 n("dd703318", "雙因素驗證"),
                 n("b1686800", "管理安全金鑰"),
@@ -899,9 +900,9 @@
                 n("e126dd3f", "了解更多"),
                 n("i821844f", "了解更多"),
                 n("b0abbb17", "了解更多"),
-                n("e7e0d88b", "了解更多"),
-                n("i560665f", "了解更多");
-            n("f6e774d9", "了解更多"),
+                n("e7e0d88b", "了解更多");
+            n("i560665f", "了解更多"),
+                n("f6e774d9", "了解更多"),
                 n("h486f755", "了解更多"),
                 n("bab41dab", "了解更多"),
                 n("e0ebdb29", "了解更多"),
@@ -1020,12 +1021,18 @@
                 n("gfaf9a4a", "密碼重設保護"),
                 n("h3cc8462", "為增強保護，你必須確認你的電子郵件地址或電話號碼才能重設 X 密碼。"),
                 n("b4bbdeb4", "通行金鑰"),
-                n("aeb7dcdc", "啟用通行金鑰以增添可能與生物辨識技術相關的保護。"),
+                n("fe8aeb88", "通行金鑰提供了可能與你的生物辨識資料相關的額外保護。"),
                 n("dc096238", "上傳經認可的身分證件，以確認你帳戶的真實性。你的資訊只會用於認證你的身分，並將獲得安全可靠的處理。"),
                 n("a999cb72", "儲存帳戶變更"),
                 n("dec3c9b8", "密碼"),
                 n("b929aa74", "重新輸入你的 X 密碼以儲存帳戶的變更。"),
                 n("d1091f50", "忘記密碼？"),
+                n("fd23fe4a", "Here are your passkeys across all your devices"),
+                n("d9921a6c", "Create a new passkey"),
+                n("i4855730", "刪除通行金鑰"),
+                n("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 n("d97c07be", "管理創作者訂閱服務"),
                 n("efa291da", "使用 Stripe 查看和管理你對以下創作者的訂閱服務。你在 iOS 或 Android 上啟動的任何有效訂閱都可以在該應用程式中管理。"),
                 n("j7f5c6aa", "你還沒有任何訂閱服務"),
@@ -1909,13 +1916,13 @@
                 n("d8047cc8", "發佈"),
                 n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。"),
                 n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
-                n("e52d4998", "選擇你的受眾"),
-                n("d7985b24", "選擇誰可以回覆此文章"),
+                n("e52d4998", "選擇你的受眾");
+            n("d7985b24", "選擇誰可以回覆此文章"),
                 n("b5660338", "時間軸預覽"),
                 n("hff1b97a", "只有訂閱者可以回覆。"),
                 n("a330771e", "將連結複製到剪貼簿"),
-                n("b6510e68", "複製你文章的網址，以便進行分享。");
-            n("e4a6e006", "發生問題。請再試一次。"),
+                n("b6510e68", "複製你文章的網址，以便進行分享。"),
+                n("e4a6e006", "發生問題。請再試一次。"),
                 n("eff483e0", "發佈後，取得分享文章的連結。"),
                 n("ca15dd4e", "草稿"),
                 n("bb40bf66", "已發佈"),
@@ -2965,27 +2972,23 @@
                 n("b7388a56", "頁尾"),
                 n("hdabc3fc", "服務條款"),
                 n("bc6efc72", "隱私政策"),
-                n("h3161192", "Cookie 使用政策"),
-                n("a7de64de", "廣告資訊"),
+                n("h3161192", "Cookie 使用政策");
+            n("a7de64de", "廣告資訊"),
                 n("jb0a4c36", "部落格"),
                 n("ce6d095a", "人才招募"),
                 n("e0adec82", "品牌資源"),
-                n("df1b7550", "行銷");
-            n("he258678", "X 商業版"),
+                n("df1b7550", "行銷"),
+                n("he258678", "X 商業版"),
                 n("c6f58084", "開發人員"),
                 n("d83f18d2", "目錄"),
                 n("hc5aa17c", "取得 X 應用程式"),
                 n("j0693948", "取得 Grok 應用程式"),
-                n("af781666", "人們有什麼看法？"),
-                n("ad35153e", "Beta 版"),
-                n("a1f414ee", "Share thoughts"),
                 n("fbf83158", "警告：付款失敗"),
                 n("jadeb4da", "請立即更新你的付款方式，以免喪失訂閱權益。"),
                 n("bce3726a", "更新帳單資訊"),
                 n("fce9ecce", "建議的影片"),
-                n("da00e00a", "嘗試全新的新聞"),
-                n("c40666d8", "立即試試"),
                 n("j66b95a2", "深度新聞"),
+                n("ad35153e", "Beta 版"),
                 n("b58d2bd2", "相關貼文"),
                 n("efe6ef9e", "查看貼文"),
                 n("b3d183ce", "含有回覆的貼文"),
@@ -3883,11 +3886,11 @@
                 n("ddeb0a3c", "這裡就是社群。喜歡這群人嗎？瞧一瞧。"),
                 n("e111f531", function (e) {
                     return e.count + " 人已收聽";
-                }),
-                n("cbef820f", function (e) {
-                    return e.screenName + " 已轉發此直播！";
                 });
-            n("e3275464", "發送"),
+            n("cbef820f", function (e) {
+                return e.screenName + " 已轉發此直播！";
+            }),
+                n("e3275464", "發送"),
                 n("cededf2a", "主持人"),
                 n("i2caef48", "共同主持人"),
                 n("j245c654", "說話者"),
@@ -4358,8 +4361,8 @@
                 n("g01599b6", "回應 1"),
                 n("e02694e0", "回應 2"),
                 n("h6867fcc", "我比較喜歡此回應"),
-                n("d07488a6", "取得 Android 應用程式"),
-                n("d9cfe70c", "存取進階 Grok 功能"),
+                n("acc4496c", "Try Grok Voice mode"),
+                n("jd36d190", "Access advanced features with Grok Android app"),
                 n("hf9afab0", "啟用 DeepSearch 可瀏覽網際網路和 X、分析資訊，並透過快速代理型搜尋來提供詳細且合理的答案。"),
                 n("ef3b3f04", "啟用「思考」可使用我們的推理模型。它最適合數學、科學和程式碼撰寫。你還可以要求 Grok 對任何可能需要耗費更多腦力的問題進行「深入思考」。 "),
                 n("b43636b8", "隆重推出 Grok 3"),
@@ -4921,9 +4924,9 @@
                 n("h0c1f37a", "查看音訊空間分析"),
                 n("e41fffbc", "你影片的總觀看時間。"),
                 n("if2909ba", "觀看時間"),
-                n("i0e5bf4c", "你的影片"),
-                n("ed99baea", "搶先體驗 Beta 版");
-            n("gf898b70", "進階搜尋"),
+                n("i0e5bf4c", "你的影片");
+            n("ed99baea", "搶先體驗 Beta 版"),
+                n("gf898b70", "進階搜尋"),
                 n("d2a43a7a", '同時包含 "ai" 和 "啟動"'),
                 n("a8584698", "ai 啟動"),
                 n("jb6f9292", '包含確切詞組 "ai 啟動"'),
@@ -5836,6 +5839,8 @@
                 n("g880d8c0", "無法提供使用者註冊狀態資料"),
                 n("ab1b3d38", "還沒有備註請求資料"),
                 n("c43fb933", "X 開發人員合約和政策"),
+                n("af781666", "人們有什麼看法？"),
+                n("a1f414ee", "Share thoughts"),
                 n("ed88e742", "複製主題的連結"),
                 n("h92fe1be", "很遺憾，你目前無法使用社群備註。"),
                 n("f0dc1434", "社群備註目前僅可在美國使用。"),
@@ -5885,11 +5890,11 @@
                 }),
                 n("daca8a2c", "在停駐列中開啟"),
                 n("e3aac82a", "正在載入廣播"),
-                n("i0ed3f4e", "活動圖片"),
-                n("cbae35fa", "檢舉廣播"),
+                n("i0ed3f4e", "活動圖片");
+            n("cbae35fa", "檢舉廣播"),
                 n("fd12ab58", "貼文收集"),
-                n("a226497c", "建立新的社群");
-            n("d7346632", "你尚未加入任何社群"),
+                n("a226497c", "建立新的社群"),
+                n("d7346632", "你尚未加入任何社群"),
                 n("b732a4cc", "如果有，你將在這裡看到他們的貼文。"),
                 n("hff48914", "目前找不到任何貼文。"),
                 n("hb52cc4a", "請稍後再試。"),
@@ -6453,7 +6458,10 @@
                 n("f7d1a8e0", "Android 應用程式"),
                 n("aab2fae0", "iOS 應用程式"),
                 n("a35d9c9a", "資源"),
+                n("da00e00a", "嘗試全新的新聞"),
+                n("c40666d8", "立即試試"),
                 n("ic61c5fc", "捲動至頂端"),
+                n("dd225af8", "找不到任何人。"),
                 n("i6671128", "你已解鎖 X 上的更多功能"),
                 n("d5e4d0a6", "你可以更輕鬆地加入對話並與他人聯繫。現在你可以進行下列動作："),
                 n("a97bc07e", "解鎖 X 上的更多功能"),
@@ -6880,14 +6888,14 @@
                 n("b6b5dc94", "獲得認證"),
                 n("b06db848", "在此平台上脫穎而出"),
                 n("e3e3a97c", "透過你的貼文來賺取收益分成"),
-                n("f15bc24e", "提高的 Grok 配額"),
-                n("c4666e1c", "我們最新模型 Grok 3 的更多使用配額"),
+                n("f15bc24e", "提高的 Grok 配額");
+            n("c4666e1c", "我們最新模型 Grok 3 的更多使用配額"),
                 n("he74ae7a", "最高的 Grok 使用配額"),
                 n("f5732cd4", "加上，DeepSearch 和「思考」的擴充存取權"),
                 n("e0198956", "憑藉已認證帳戶與你在 X 上所發佈內容的互動，獲得產生的收益分成。"),
                 n("iadf78e2", "下載影片"),
-                n("ee54c3de", "將影片直接儲存至你的裝置");
-            n("ae03594c", "小幅度的回覆提升"),
+                n("ee54c3de", "將影片直接儲存至你的裝置"),
+                n("ae03594c", "小幅度的回覆提升"),
                 n("e6bb08c0", "提高你的回覆可見度"),
                 n("bf2a6acc", "大幅度的回覆提升"),
                 n("c2059276", "提升你的回覆優先等級。"),
@@ -7347,7 +7355,6 @@
                 n("b0c91a92", "登入或註冊，看看 X 上的使用者對此有何評論"),
                 n("d7071084", "問 Grok 這個"),
                 n("ee2200f4", "此報導是由 Grok 製作的 X 貼文摘要。報導將隨著時間的推移而演變。"),
-                n("dd225af8", "找不到任何人。"),
                 n("e1e5d552", "編輯你的朋友圈"),
                 n("ec13f9cc", "你的朋友圈中還沒有任何人"),
                 n("dab58e32", "您加入的對象會顯示在這裡。"),
@@ -7412,8 +7419,6 @@
                 n("bf4558fa", "你的自然產生績效的細分"),
                 n("c69069e6", "此貼文在 X 上被查看的次數"),
                 n("a0615bac", "使用者與貼文互動的總次數。這包括貼文上的任何位置 (包括推標、連結、頭像、使用者名稱和展開貼文)、轉發、回覆、跟隨和喜歡的所有點擊次數。"),
-                n("d8abdaa4", "新跟隨者人數"),
-                n("c72f25a8", "透過此貼文直接獲得的跟隨者人數"),
                 n("acc4cf12", "透過此貼文查看個人資料的次數"),
                 n("c7d0d1c4", "此貼文中任何網址的點擊次數"),
                 n("a4da7724", "使用者查看此貼文詳細資料的次數"),
@@ -7861,10 +7866,7 @@
                 n("e3dffb4e", "在下方複製我們的支援電子郵件地址，並將必要的資訊發送給我們的支援團隊以開始整合程序。"),
                 n("b4fef99e", "在我們的支援團隊收到你的請求後，將會審核你的資訊並協助設定整合。"),
                 n("h37f2d96", "請注意，並非所有應徵者追蹤系統目前均受支援。"),
-                n("ce102a20", "正在重新導向到 Stripe"),
-                n("ddfd6718", "付款失敗"),
-                n("i90ea7d2", "請立即更新你的帳單資訊以保留你的權益。"),
-                n("a62359e6", "已認證組織設定");
+                n("ce102a20", "正在重新導向到 Stripe");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7903,7 +7905,10 @@
                     r(e, c)
                 );
             }
-            n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。"),
+            n("ddfd6718", "付款失敗"),
+                n("i90ea7d2", "請立即更新你的帳單資訊以保留你的權益。"),
+                n("a62359e6", "已認證組織設定"),
+                n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。"),
                 n("i4dccc18", "帳單"),
                 n("ec3cd6e4", "管理你的付款方式、更新帳單資訊，並檢視你的發票。"),
                 n("dac61c3c", "帳戶設定"),
@@ -8903,13 +8908,13 @@
                 n("ecda5f9e", "誤導"),
                 n("a423473c", "法律要求的通知"),
                 n("b3296688", "可見度受限"),
-                n("ccd32094", "現在"),
-                n("abfcce0d", function (e) {
-                    return e.amountOfTime + "前";
-                }),
+                n("ccd32094", "現在");
+            n("abfcce0d", function (e) {
+                return e.amountOfTime + "前";
+            }),
                 n("ae408b76", "你已轉發"),
-                n("j355f008", "釘選的貼文");
-            n("habf9678", "已被作者釘選"),
+                n("j355f008", "釘選的貼文"),
+                n("habf9678", "已被作者釘選"),
                 n("db0798ed", function (e) {
                     return e.topicName + " 主題";
                 }),
@@ -13058,6 +13063,7 @@
                 (m.b1549063364 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }) }, { pattern: "M月d日 E", timeSeparator: ":", days: { E: { 1: { sun: "週日", mon: "週一", tue: "週二", wed: "週三", thu: "週四", fri: "週五", sat: "週六" } } } })),
                 (m.a1502342121 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }) }, { pattern: "y年M月d日 E", timeSeparator: ":", days: { E: { 1: { sun: "週日", mon: "週一", tue: "週二", wed: "週三", thu: "週四", fri: "週五", sat: "週六" } } } })),
                 (m.b1541675196 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }) }, { pattern: "M月d日", timeSeparator: ":" })),
+                (m.b453566386 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }), 2: m("zh-Hant").numberFormatter({ raw: "00" }) }, { pattern: "y年M月d日 ah:mm:ss [z]", timeSeparator: ":", dayPeriods: { am: "上午", pm: "下午" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (m.a221311219 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }), 2: m("zh-Hant").numberFormatter({ raw: "00" }) }, { pattern: "y年M月d日 ah:mm", timeSeparator: ":", dayPeriods: { am: "上午", pm: "下午" } })),
                 (m.a153633857 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }) }, { pattern: "y年M月d日", timeSeparator: ":" })),
                 (m.a117021696 = k({ 1: m("zh-Hant").numberFormatter({ raw: "0" }), 2: m("zh-Hant").numberFormatter({ raw: "00" }) }, { pattern: "M月d日 ah:mm", timeSeparator: ":", dayPeriods: { am: "上午", pm: "下午" } })),
@@ -13079,6 +13085,7 @@
                 (m.a1617598483 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (m.a884611570 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (m.a1624986651 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (m.b1598341993 = p(m("zh-Hant").dateToPartsFormatter({ datetime: "long" }))),
                 (m.b1748466678 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (m.a904916234 = p(m("zh-Hant").dateToPartsFormatter({ date: "long" }))),
                 (m.b500708855 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13144,6 +13151,7 @@
                 n("c0bdd345", m.a1689705977),
                 n("aa2aa1a1", m.a884611570),
                 n("da44942d", m.a1624986651),
+                n("a54d3ef5", m.b1598341993),
                 n("bfbc051d", m.b1748466678),
                 n("ba2e82a1", m.a904916234),
                 n("fc209bb7", m.b500708855),
@@ -13234,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.8dff54fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.aed7d66a.js.map

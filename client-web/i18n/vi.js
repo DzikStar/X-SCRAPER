@@ -482,6 +482,7 @@
                 t("cb165528", "Các tính năng và cài đặt tin tức"),
                 t("f8645654", "Bảo mật và truy cập tài khoản"),
                 t("j95edf76", "Bảo mật"),
+                t("fd127276", "Quản lý khóa truy cập"),
                 t("afe4a358", "Xác nhận giấy tờ tùy thân"),
                 t("dd703318", "Xác thực hai yếu tố"),
                 t("b1686800", "Quản lý khóa bảo mật"),
@@ -899,9 +900,9 @@
                 t("e126dd3f", "Learn more"),
                 t("i821844f", "Learn more"),
                 t("b0abbb17", "Learn more"),
-                t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more");
-            t("f6e774d9", "Learn more"),
+                t("e7e0d88b", "Learn more");
+            t("i560665f", "Learn more"),
+                t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
                 t("e0ebdb29", "Tìm hiểu thêm"),
@@ -1020,12 +1021,18 @@
                 t("gfaf9a4a", "Bảo vệ đặt lại mật khẩu"),
                 t("h3cc8462", "Để bảo vệ thêm, bạn sẽ cần xác nhận địa chỉ email hoặc số điện thoại của mình để thiết lập lại mật khẩu tài khoản X của bạn."),
                 t("b4bbdeb4", "Khóa truy cập"),
-                t("aeb7dcdc", "Bật Khóa truy cập để thêm biện pháp bảo vệ có thể gắn liền với thông tin sinh trắc học của bạn."),
+                t("fe8aeb88", "Khóa truy cập cung cấp thêm biện pháp bảo vệ có thể gắn liền với thông tin sinh trắc học của bạn."),
                 t("dc096238", "Tải lên giấy tờ tùy thân hợp lệ và xác nhận tính xác thực của tài khoản. Chúng tôi sẽ chỉ dùng thông tin của bạn để xác minh danh tính của bạn đồng thời chúng tôi sẽ xử lý thông tin này theo cách an toàn và bảo mật."),
                 t("a999cb72", "Lưu thay đổi tài khoản"),
                 t("dec3c9b8", "Mật khẩu"),
                 t("b929aa74", "Nhập lại mật khẩu X để lưu những thay đổi này vào tài khoản của bạn."),
                 t("d1091f50", "Quên mật khẩu?"),
+                t("fd23fe4a", "Here are your passkeys across all your devices"),
+                t("d9921a6c", "Create a new passkey"),
+                t("i4855730", "Xóa khóa truy cập"),
+                t("a6acdc67", function (n) {
+                    return "Date added: " + n.date;
+                }),
                 t("d97c07be", "Quản lý Đăng ký người sáng tạo nội dung"),
                 t("efa291da", "Xem và quản lý đăng ký của bạn với người sáng tạo nội dung dưới đây bằng Stripe. Bạn có thể quản lý mọi đăng ký đang hoạt động mà bạn khởi tạo trên iOS hoặc Android trong ứng dụng."),
                 t("j7f5c6aa", "Bạn chưa có Thuê bao nào"),
@@ -1909,13 +1916,13 @@
                 t("d8047cc8", "Đăng"),
                 t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
                 t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
-                t("e52d4998", "Chọn đối tượng người xem"),
-                t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
+                t("e52d4998", "Chọn đối tượng người xem");
+            t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
                 t("b5660338", "Xem trước dòng thời gian"),
                 t("hff1b97a", "Chỉ Người đã đăng ký có thể trả lời."),
                 t("a330771e", "Sao chép liên kết vào bảng nhớ tạm"),
-                t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này.");
-            t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại."),
+                t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này."),
+                t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại."),
                 t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết."),
                 t("ca15dd4e", "Bản thảo"),
                 t("bb40bf66", "Đã đăng"),
@@ -2965,27 +2972,23 @@
                 t("b7388a56", "Chân trang"),
                 t("hdabc3fc", "Điều khoản Dịch vụ"),
                 t("bc6efc72", "Chính sách Riêng tư"),
-                t("h3161192", "Chính sách cookie"),
-                t("a7de64de", "Thông tin quảng cáo"),
+                t("h3161192", "Chính sách cookie");
+            t("a7de64de", "Thông tin quảng cáo"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Nghề nghiệp"),
                 t("e0adec82", "Tài nguyên thương hiệu"),
-                t("df1b7550", "Tiếp thị");
-            t("he258678", "X dành cho doanh nghiệp"),
+                t("df1b7550", "Tiếp thị"),
+                t("he258678", "X dành cho doanh nghiệp"),
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
                 t("j0693948", "Tải ứng dụng Grok"),
-                t("af781666", "Moi người nghĩ gì?"),
-                t("ad35153e", "bản thử nghiệm"),
-                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
                 t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
                 t("bce3726a", "Cập nhật thông tin thanh toán"),
                 t("fce9ecce", "Các video được đề xuất"),
-                t("da00e00a", "Dùng thử phần Tin tức mới"),
-                t("c40666d8", "Dùng thử"),
                 t("j66b95a2", "Tin tức chuyên sâu"),
+                t("ad35153e", "bản thử nghiệm"),
                 t("b58d2bd2", "Bài đăng có liên quan"),
                 t("efe6ef9e", "Xem bài đăng"),
                 t("b3d183ce", "Bài đăng có câu trả lời"),
@@ -3883,11 +3886,11 @@
                 t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
                 t("e111f531", function (n) {
                     return n.count + " đã nghe";
-                }),
-                t("cbef820f", function (n) {
-                    return n.screenName + " đã đăng lại buổi phát trực tuyến!";
                 });
-            t("e3275464", "Gửi"),
+            t("cbef820f", function (n) {
+                return n.screenName + " đã đăng lại buổi phát trực tuyến!";
+            }),
+                t("e3275464", "Gửi"),
                 t("cededf2a", "Chủ phòng"),
                 t("i2caef48", "Đ.chủ phòng"),
                 t("j245c654", "Người nói"),
@@ -4358,8 +4361,8 @@
                 t("g01599b6", "Phản hồi 1"),
                 t("e02694e0", "Phản hồi 2"),
                 t("h6867fcc", "Tôi thích phản hồi này"),
-                t("d07488a6", "Tải ứng dụng cho Android"),
-                t("d9cfe70c", "Truy cập vào các tính năng nâng cao của Grok"),
+                t("acc4496c", "Try Grok Voice mode"),
+                t("jd36d190", "Access advanced features with Grok Android app"),
                 t("hf9afab0", "Cho phép DeepSearch quét Internet và X, phân tích thông tin và cung cấp câu trả lời chi tiết, có lập luận tốt nhờ khả năng tìm kiếm nhanh và chủ động."),
                 t("ef3b3f04", 'Cho phép tính năng Suy nghĩ dùng mô hình lập luận của chúng tôi. Tính năng này phù hợp nhất với toán học, khoa học và lập trình. Bạn cũng có thể yêu cầu Grok "Suy nghĩ sâu hơn" về bất kỳ câu hỏi nào cần tư duy thêm. '),
                 t("b43636b8", "Giới thiệu Grok 3"),
@@ -4921,9 +4924,9 @@
                 t("h0c1f37a", "Xem số liệu phân tích phòng"),
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
                 t("if2909ba", "Thời gian xem"),
-                t("i0e5bf4c", "Video của bạn"),
-                t("ed99baea", "Quyền truy cập sớm vào bản beta");
-            t("gf898b70", "Tìm kiếm nâng cao"),
+                t("i0e5bf4c", "Video của bạn");
+            t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
                 t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
@@ -5836,6 +5839,8 @@
                 t("g880d8c0", "Chưa có dữ liệu trạng thái hủy ghi danh của người dùng"),
                 t("ab1b3d38", "Chưa có dữ liệu về yêu cầu ghi chép"),
                 t("c43fb933", "Chính sách và Thỏa thuận dành cho nhà phát triển X"),
+                t("af781666", "Moi người nghĩ gì?"),
+                t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Sao chép liên kết vào Chủ đề"),
                 t("h92fe1be", "Rất tiếc, Ghi chép cho cộng đồng không khả dụng cho bạn vào lúc này."),
                 t("f0dc1434", "Ghi chép cho cộng đồng hiện chỉ có sẵn ở Hoa Kỳ"),
@@ -5885,11 +5890,11 @@
                 }),
                 t("daca8a2c", "Mở trong thanh Dock"),
                 t("e3aac82a", "Đang tải nguồn phát"),
-                t("i0ed3f4e", "Hình ảnh sự kiện"),
-                t("cbae35fa", "Báo cáo Nguồn phát"),
+                t("i0ed3f4e", "Hình ảnh sự kiện");
+            t("cbae35fa", "Báo cáo Nguồn phát"),
                 t("fd12ab58", "Bài đăng trong bộ sưu tập"),
-                t("a226497c", "Tạo một Cộng đồng mới");
-            t("d7346632", "Bạn chưa tham gia bất kỳ Cộng đồng nào"),
+                t("a226497c", "Tạo một Cộng đồng mới"),
+                t("d7346632", "Bạn chưa tham gia bất kỳ Cộng đồng nào"),
                 t("b732a4cc", "Khi làm vậy, bạn sẽ thấy bài đăng của họ ở đây."),
                 t("hff48914", "Hiện không tìm được bài đăng nào."),
                 t("hb52cc4a", "Vui lòng thử lại sau."),
@@ -6453,7 +6458,10 @@
                 t("f7d1a8e0", "Ứng dụng Android"),
                 t("aab2fae0", "Ứng dụng iOS"),
                 t("a35d9c9a", "Tài nguyên"),
+                t("da00e00a", "Dùng thử phần Tin tức mới"),
+                t("c40666d8", "Dùng thử"),
                 t("ic61c5fc", "Cuộn lên đầu"),
+                t("dd225af8", "Không tìm thấy người nào."),
                 t("i6671128", "Bạn được khám phá nhiều điều hơn trên X"),
                 t("d5e4d0a6", "Bạn có thể tham gia cuộc trò chuyện và kết nối với những người khác dễ dàng hơn. Bây giờ bạn có thể làm như sau:"),
                 t("a97bc07e", "Khám phá nhiều điều hơn trên X"),
@@ -6880,14 +6888,14 @@
                 t("b6b5dc94", "Xác nhận tài khoản"),
                 t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
                 t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
-                t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
-                t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
+                t("f15bc24e", "Đã tăng giới hạn dùng Grok");
+            t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
                 t("he74ae7a", "Hạn mức sử dụng Grok cao nhất"),
                 t("f5732cd4", "Ngoài ra, còn có quyền truy cập mở rộng vào DeepSearch và Suy nghĩ"),
                 t("e0198956", "Nhận một phần doanh thu được tạo ra từ hoạt động tương tác của các tài khoản đã xác nhận với nội dung bạn đăng trên X."),
                 t("iadf78e2", "Tải video xuống"),
-                t("ee54c3de", "Lưu video ngay vào thiết bị của bạn");
-            t("ae03594c", "Quảng cáo câu trả lời loại nhỏ"),
+                t("ee54c3de", "Lưu video ngay vào thiết bị của bạn"),
+                t("ae03594c", "Quảng cáo câu trả lời loại nhỏ"),
                 t("e6bb08c0", "Tăng mức độ hiển thị cho câu trả lời của bạn"),
                 t("bf2a6acc", "Ưu tiên câu trả lời loại lớn"),
                 t("c2059276", "Ưu tiên câu trả lời của bạn."),
@@ -7347,7 +7355,6 @@
                 t("b0c91a92", "Đăng nhập hoặc Đăng ký để xem mọi người trên X đang nói gì về điều này"),
                 t("d7071084", "Hỏi Grok điều này"),
                 t("ee2200f4", "Grok đã tóm tắt các bài đăng trên X thành câu chuyện này và câu chuyện sẽ phát triển theo thời gian."),
-                t("dd225af8", "Không tìm thấy người nào."),
                 t("e1e5d552", "Chỉnh sửa Vòng tròn của bạn"),
                 t("ec13f9cc", "Chưa có ai trong Vòng tròn của bạn"),
                 t("dab58e32", "Khi bạn thêm mọi người, họ sẽ hiện ra ở đây."),
@@ -7412,8 +7419,6 @@
                 t("bf4558fa", "Phân tích hiệu suất tự nhiên"),
                 t("c69069e6", "Số lần bài đăng này được xem trên X"),
                 t("a0615bac", "Tổng số lần tương tác của một người dùng với một bài đăng. Bao gồm tất cả các lần nhấp ở bất cứ đâu trên bài đăng đó (bao gồm biểu tượng đánh dấu, liên kết, ảnh đại diện, tên người dùng, và phần mở rộng bài đăng), bài đăng lại, câu trả lời, lượt theo dõi và lượt thích."),
-                t("d8abdaa4", "Số người theo dõi mới"),
-                t("c72f25a8", "Số lượt theo dõi đạt được trực tiếp từ bài đăng này"),
                 t("acc4cf12", "Số lượt xem hồ sơ từ bài đăng này"),
                 t("c7d0d1c4", "Số lượt nhấp vào bất kỳ URL nào trong bài đăng này"),
                 t("a4da7724", "Số lần mọi người xem các chi tiết về bài đăng này"),
@@ -7861,10 +7866,7 @@
                 t("e3dffb4e", "Sao chép địa chỉ email hỗ trợ của chúng tôi ở dưới và gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
                 t("b4fef99e", "Sau khi nhóm hỗ trợ của chúng tôi nhận được yêu cầu của bạn, chúng tôi sẽ xem xét thông tin và hỗ trợ định cấu hình phần tích hợp của bạn."),
                 t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
-                t("ce102a20", "Đang chuyển hướng đến Stripe"),
-                t("ddfd6718", "Thanh toán không thành công"),
-                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
-                t("a62359e6", "Cài đặt Tổ chức đã xác nhận");
+                t("ce102a20", "Đang chuyển hướng đến Stripe");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7903,7 +7905,10 @@
                     a(n, h)
                 );
             }
-            t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
+            t("ddfd6718", "Thanh toán không thành công"),
+                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
+                t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
+                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
                 t("i4dccc18", "Thanh toán"),
                 t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
                 t("dac61c3c", "Cài đặt tài khoản"),
@@ -8903,13 +8908,13 @@
                 t("ecda5f9e", "Lừa dối"),
                 t("a423473c", "Thông báo theo quy định của pháp luật"),
                 t("b3296688", "Hạn chế khả năng hiển thị"),
-                t("ccd32094", "Bây giờ"),
-                t("abfcce0d", function (n) {
-                    return n.amountOfTime + " trước";
-                }),
+                t("ccd32094", "Bây giờ");
+            t("abfcce0d", function (n) {
+                return n.amountOfTime + " trước";
+            }),
                 t("ae408b76", "Bạn đã đăng lại"),
-                t("j355f008", "Bài đăng đã ghim");
-            t("habf9678", "Đã được Tác giả ghim"),
+                t("j355f008", "Bài đăng đã ghim"),
+                t("habf9678", "Đã được Tác giả ghim"),
                 t("db0798ed", function (n) {
                     return n.topicName + " Chủ đề";
                 }),
@@ -13048,6 +13053,7 @@
                 (d.a1910159447 = p({ 1: d("vi").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "CN", mon: "Th 2", tue: "Th 3", wed: "Th 4", thu: "Th 5", fri: "Th 6", sat: "Th 7" } } }, months: { M: { 3: { 1: "thg 1", 2: "thg 2", 3: "thg 3", 4: "thg 4", 5: "thg 5", 6: "thg 6", 7: "thg 7", 8: "thg 8", 9: "thg 9", 10: "thg 10", 11: "thg 11", 12: "thg 12" } } } })),
                 (d.a1364066862 = p({ 1: d("vi").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM, y", timeSeparator: ":", days: { E: { 1: { sun: "CN", mon: "Th 2", tue: "Th 3", wed: "Th 4", thu: "Th 5", fri: "Th 6", sat: "Th 7" } } }, months: { M: { 3: { 1: "thg 1", 2: "thg 2", 3: "thg 3", 4: "thg 4", 5: "thg 5", 6: "thg 6", 7: "thg 7", 8: "thg 8", 9: "thg 9", 10: "thg 10", 11: "thg 11", 12: "thg 12" } } } })),
                 (d.a1917547615 = p({ 1: d("vi").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "tháng 1", 2: "tháng 2", 3: "tháng 3", 4: "tháng 4", 5: "tháng 5", 6: "tháng 6", 7: "tháng 7", 8: "tháng 8", 9: "tháng 9", 10: "tháng 10", 11: "tháng 11", 12: "tháng 12" } } } })),
+                (d.a73663443 = p({ 1: d("vi").numberFormatter({ raw: "0" }), 2: d("vi").numberFormatter({ raw: "00" }) }, { pattern: "HH:mm:ss z d MMMM, y", timeSeparator: ":", gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"], months: { M: { 4: { 1: "tháng 1", 2: "tháng 2", 3: "tháng 3", 4: "tháng 4", 5: "tháng 5", 6: "tháng 6", 7: "tháng 7", 8: "tháng 8", 9: "tháng 9", 10: "tháng 10", 11: "tháng 11", 12: "tháng 12" } } } })),
                 (d.a229745486 = p({ 1: d("vi").numberFormatter({ raw: "0" }), 2: d("vi").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a, d MMM, y", timeSeparator: ":", dayPeriods: { am: "SA", pm: "CH" }, months: { M: { 3: { 1: "thg 1", 2: "thg 2", 3: "thg 3", 4: "thg 4", 5: "thg 5", 6: "thg 6", 7: "thg 7", 8: "thg 8", 9: "thg 9", 10: "thg 10", 11: "thg 11", 12: "thg 12" } } } })),
                 (d.b1464487354 = p({ 1: d("vi").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM, y", timeSeparator: ":", months: { M: { 4: { 1: "tháng 1", 2: "tháng 2", 3: "tháng 3", 4: "tháng 4", 5: "tháng 5", 6: "tháng 6", 7: "tháng 7", 8: "tháng 8", 9: "tháng 9", 10: "tháng 10", 11: "tháng 11", 12: "tháng 12" } } } })),
                 (d.b21253563 = p({ 1: d("vi").numberFormatter({ raw: "0" }), 2: d("vi").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a, d MMM", timeSeparator: ":", dayPeriods: { am: "SA", pm: "CH" }, months: { M: { 3: { 1: "thg 1", 2: "thg 2", 3: "thg 3", 4: "thg 4", 5: "thg 5", 6: "thg 6", 7: "thg 7", 8: "thg 8", 9: "thg 9", 10: "thg 10", 11: "thg 11", 12: "thg 12" } } } })),
@@ -13069,6 +13075,7 @@
                 (d.b1633525472 = l(d("vi").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (d.b1115983227 = l(d("vi").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (d.b1626137304 = l(d("vi").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (d.b317743638 = l(d("vi").dateToPartsFormatter({ datetime: "long" }))),
                 (d.a657604055 = l(d("vi").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (d.b562565155 = l(d("vi").dateToPartsFormatter({ date: "long" }))),
                 (d.a1793663644 = l(d("vi").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13134,6 +13141,7 @@
                 t("c0bdd345", d.a819363312),
                 t("aa2aa1a1", d.b1115983227),
                 t("da44942d", d.b1626137304),
+                t("a54d3ef5", d.b317743638),
                 t("bfbc051d", d.a657604055),
                 t("ba2e82a1", d.b562565155),
                 t("fc209bb7", d.a1793663644),
@@ -13224,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.7764c50a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0522d83a.js.map

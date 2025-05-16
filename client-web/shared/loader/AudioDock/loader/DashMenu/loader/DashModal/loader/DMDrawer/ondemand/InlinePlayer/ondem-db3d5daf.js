@@ -28,10 +28,10 @@
                 s = n(366635);
             const l = a.Z,
                 u = ({ user: e, ...t }) => {
-                    const { affiliates_highlighted_label: n, is_blue_verified: a, legacy: i, verification: u } = c()(l, e),
-                        { badge: d, description: m, url: f, userLabelDisplayType: p, userLabelType: v } = n?.label || {},
-                        E = { badge: d || void 0, description: m || "", url: f || void 0, userLabelType: v || void 0, userLabelDisplayType: p || void 0 };
-                    return o.createElement(s.Z, (0, r.Z)({}, t, { affiliateBadgeInfo: E, isBlueVerified: a || !1, isProtected: i?.protected, isVerified: u?.verified ?? !1, name: i?.name, screenName: i?.screen_name, verifiedType: u?.verified_type || "" }));
+                    const { affiliates_highlighted_label: n, is_blue_verified: a, legacy: i, privacy: u, verification: d } = c()(l, e),
+                        { badge: m, description: f, url: p, userLabelDisplayType: v, userLabelType: E } = n?.label || {},
+                        h = { badge: m || void 0, description: f || "", url: p || void 0, userLabelType: E || void 0, userLabelDisplayType: v || void 0 };
+                    return o.createElement(s.Z, (0, r.Z)({}, t, { affiliateBadgeInfo: h, isBlueVerified: a || !1, isProtected: u?.protected ?? !1, isVerified: d?.verified ?? !1, name: i?.name, screenName: i?.screen_name, verifiedType: d?.verified_type || "" }));
                 },
                 d = o.memo(u);
         },
@@ -1276,4 +1276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.c4bb794a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.f909749a.js.map

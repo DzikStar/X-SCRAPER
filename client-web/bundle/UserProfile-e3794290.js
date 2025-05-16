@@ -579,7 +579,7 @@
                                     return "regular";
                             }
                         })(t);
-                    return t.legacy ? n.createElement($r, { getVerifiedCardShouldShow: e.getVerifiedCardShouldShow, isBlueVerified: !!t.is_blue_verified, isFollowedBy: t.legacy.followed_by, isOwnProfile: e.isOwnProfile, isProtected: t.legacy.protected, isVerified: !!t.verification?.verified, isWithheld: e.isWithheld, name: t.legacy.name || "", namespace: e.namespace, screenName: t.legacy.screen_name, translatorType: r, userId: t.rest_id, userRef: t }) : null;
+                    return t.legacy ? n.createElement($r, { getVerifiedCardShouldShow: e.getVerifiedCardShouldShow, isBlueVerified: !!t.is_blue_verified, isFollowedBy: t.legacy.followed_by, isOwnProfile: e.isOwnProfile, isProtected: t.privacy?.protected ?? !1, isVerified: !!t.verification?.verified, isWithheld: e.isWithheld, name: t.legacy.name || "", namespace: e.namespace, screenName: t.legacy.screen_name, translatorType: r, userId: t.rest_id, userRef: t }) : null;
                 });
             function Xr(e) {
                 if (e.user) {
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.7862ed9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.471d8c6a.js.map

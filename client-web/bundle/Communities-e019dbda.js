@@ -905,7 +905,7 @@
                 s = r(23134);
             function c({ user: e, ...t }) {
                 const r = i()(a.Z, e),
-                    l = o.useMemo(() => (r ? { id_str: r.rest_id, screen_name: r.legacy?.screen_name || "", name: r.legacy?.name || "", follow_request_sent: r.legacy?.follow_request_sent || !1, protected: r.legacy?.protected || !1, following: r.legacy?.following || !1, followed_by: r.legacy?.followed_by || !1, super_following: r.super_following || void 0, super_follow_eligible: r.super_follow_eligible || void 0, super_followed_by: r.super_followed_by || void 0, blocking: r.legacy?.blocking || void 0, highlightedLabel: r.affiliates_highlighted_label?.label ? { userLabelType: r.affiliates_highlighted_label.label.user_label_type || void 0 } : void 0 } : void 0), [r]);
+                    l = o.useMemo(() => (r ? { id_str: r.rest_id, screen_name: r.legacy?.screen_name || "", name: r.legacy?.name || "", follow_request_sent: r.legacy?.follow_request_sent || !1, protected: r.privacy?.protected || !1, following: r.legacy?.following || !1, followed_by: r.legacy?.followed_by || !1, super_following: r.super_following || void 0, super_follow_eligible: r.super_follow_eligible || void 0, super_followed_by: r.super_followed_by || void 0, blocking: r.legacy?.blocking || void 0, highlightedLabel: r.affiliates_highlighted_label?.label ? { userLabelType: r.affiliates_highlighted_label.label.user_label_type || void 0 } : void 0 } : void 0), [r]);
                 return o.createElement(s.C, (0, n.Z)({}, t, { isRelay: !0, user: l, userId: r?.rest_id ?? "" }));
             }
         },
@@ -986,13 +986,14 @@
             const u = (0, c.Z)().propsFromState(() => ({ dataSaverMode: d.IX, pinnedTimelinesCount: m.Hm })),
                 p = [],
                 b = n.Z,
-                h = (e, t) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: e?.profile_image_url_https ?? "", protected: e.protected, verified: t ?? !1 }),
+                h = (e, t, r) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: e?.profile_image_url_https ?? "", protected: t?.protected ?? !1, verified: r ?? !1 }),
                 y = (e) => {
                     const t = l()(b, e.listRef),
                         r = (0, s.u)(t),
                         n = t.owner_results?.result?.author,
-                        o = t.owner_results?.result?.verification?.verified;
-                    return a.createElement(i.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls ?? p, followersContext: t.followers_context ?? "", isFollowing: Boolean(t.following), isListPinned: Boolean(t.pinning), isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode?.toLowerCase() ?? "public", media: r, memberCount: t.member_count ?? 0, membersContext: t.members_context ?? "", mode: e.mode, name: t.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? h(n, o) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
+                        o = t.owner_results?.result?.privacy,
+                        c = t.owner_results?.result?.verification?.verified;
+                    return a.createElement(i.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls ?? p, followersContext: t.followers_context ?? "", isFollowing: Boolean(t.following), isListPinned: Boolean(t.pinning), isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode?.toLowerCase() ?? "public", media: r, memberCount: t.member_count ?? 0, membersContext: t.members_context ?? "", mode: e.mode, name: t.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? h(n, o, c) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
                 },
                 g = a.memo(u(y));
         },
@@ -1164,4 +1165,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.40544b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.bda6cc2a.js.map

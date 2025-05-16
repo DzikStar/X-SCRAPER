@@ -64,8 +64,8 @@
                     const { user: t, ...n } = e,
                         o = c()(s.Z, t),
                         i = a.useMemo(() => {
-                            const e = o.legacy;
-                            return { id_str: o.rest_id, blocking: e?.blocking, blocked_by: e?.blocked_by, description: e?.description || "", following: e?.following ?? !1, followed_by: e?.followed_by ?? !1, muting: e?.muting || void 0, name: e?.name || "", profile_image_url_https: e?.profile_image_url_https || "", promoted_content: e?.promoted_content ? { impression_id: e.promoted_content.impression_id || void 0, disclosure_type: e.promoted_content.disclosure_type || void 0 } : void 0, protected: e?.protected ?? !1, screen_name: e?.screen_name || "", want_retweets: e?.want_retweets || void 0 };
+                            const { legacy: e, privacy: t } = o;
+                            return { id_str: o.rest_id, blocking: e?.blocking, blocked_by: e?.blocked_by, description: e?.description || "", following: e?.following ?? !1, followed_by: e?.followed_by ?? !1, muting: e?.muting || void 0, name: e?.name || "", profile_image_url_https: e?.profile_image_url_https || "", promoted_content: e?.promoted_content ? { impression_id: e.promoted_content.impression_id || void 0, disclosure_type: e.promoted_content.disclosure_type || void 0 } : void 0, protected: t?.protected ?? !1, screen_name: e?.screen_name || "", want_retweets: e?.want_retweets || void 0 };
                         }, [o]);
                     return a.createElement(_, (0, r.Z)({}, n, { user: i }));
                 });
@@ -263,4 +263,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-82566a6c.46d3ba1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-82566a6c.2cc5f7ca.js.map

@@ -189,7 +189,10 @@
                 c = n(392237),
                 d = n(282279);
             function m({ sources: e, text: t, ...n }) {
-                const c = (t) => e.find((e) => e.url === t || e.cached_page_url === t),
+                const c = (t) => {
+                        const n = e.find((e) => e.url === t || e.cached_page_url === t);
+                        return n || { url: t, cached_page_url: t, creator: null, description: null, image: null, language: null, parsed_text: null, site_name: null, snippet: null, time_accessed: null, title: null, summary: null, media_name: u(t), date_last_crawled: null, date_published: null, favicon: null, favicon_base64: null };
+                    },
                     d = o.useCallback((e) => o.createElement(p, { source: e }), []),
                     m = o.useCallback((e) => {
                         window.open(e, "_blank");
@@ -207,24 +210,22 @@
                                 f = y + p[0].length;
                             y > n && e.push(t.slice(n, y));
                             const g = c(a);
-                            g && g.favicon_base64
-                                ? e.push(
-                                      o.createElement(
-                                          i.Z,
-                                          { renderContent: () => d(g) },
-                                          o.createElement(
-                                              s.Z,
-                                              {
-                                                  onClick: () => {
-                                                      m(g.url);
-                                                  },
-                                                  withoutInteractiveStyles: !0,
-                                              },
-                                              ({ isHovered: e }) => o.createElement(r.Z, { style: [h.domainContainer, e ? h.hoveredDomainContainer : void 0] }, o.createElement(l.ZP, { style: h.domain }, g.media_name || u(g.url))),
-                                          ),
-                                      ),
-                                  )
-                                : e.push(""),
+                            e.push(
+                                o.createElement(
+                                    i.Z,
+                                    { renderContent: () => d(g) },
+                                    o.createElement(
+                                        s.Z,
+                                        {
+                                            onClick: () => {
+                                                m(g.url);
+                                            },
+                                            withoutInteractiveStyles: !0,
+                                        },
+                                        ({ isHovered: e }) => o.createElement(r.Z, { style: [h.domainContainer, e ? h.hoveredDomainContainer : void 0] }, o.createElement(l.ZP, { style: h.domain }, g.media_name || u(g.url))),
+                                    ),
+                                ),
+                            ),
                                 (n = f);
                         }
                         return n < t.length && e.push(t.slice(n)), e;
@@ -401,8 +402,8 @@
             const k = l.default.create((e) => ({ outerContainer: { flex: 1 }, container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
             var v = n(807896),
                 Z = n(18205),
-                S = n(632908),
-                _ = n(755484),
+                _ = n(632908),
+                S = n(755484),
                 D = n(725556),
                 P = n(103131),
                 I = n(735081),
@@ -497,9 +498,9 @@
                                 Z.h,
                                 { height: y },
                                 a.createElement(
-                                    S.w,
+                                    _.w,
                                     { data: e, height: y, key: h },
-                                    a.createElement(_.q, { fillOpacity: 0.6, horizontal: !0, stroke: l.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
+                                    a.createElement(S.q, { fillOpacity: 0.6, horizontal: !0, stroke: l.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
                                     a.createElement(D.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: j.tick, tickFormatter: b, tickLine: !1, type: "number" }),
                                     a.createElement(P.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: j.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
                                     a.createElement(I.u, { content: a.createElement(F, null), cursor: { stroke: l.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
@@ -639,9 +640,9 @@
                         const k = "rtl" === y,
                             v = E ? w.visibleDrawer : ("left" === t) === k ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
                             Z = E && !C ? w.maskWithBg : w.maskTransparent,
-                            S = E ? w.animateOpen : w.animateClose,
-                            _ = l.Z.reducedMotionEnabled ? null : S;
-                        return a.createElement(h.Z.Modal, null, a.createElement(p.Z, null, a.createElement(u.Z, null, a.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, Z, _, g ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, m.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: x, style: [w.root, g ? w.backgroundRootBlur : null, v, _, i], children: a.createElement(a.Fragment, null, b ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: f, subtitle: s, title: d }) : null, a.createElement(o.Z, { style: w.contentContainer }, r)) })))));
+                            _ = E ? w.animateOpen : w.animateClose,
+                            S = l.Z.reducedMotionEnabled ? null : _;
+                        return a.createElement(h.Z.Modal, null, a.createElement(p.Z, null, a.createElement(u.Z, null, a.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, Z, S, g ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, m.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: x, style: [w.root, g ? w.backgroundRootBlur : null, v, S, i], children: a.createElement(a.Fragment, null, b ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: f, subtitle: s, title: d }) : null, a.createElement(o.Z, { style: w.contentContainer }, r)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -657,4 +658,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.57de1d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.7b8c675a.js.map

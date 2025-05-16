@@ -412,18 +412,18 @@
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     { args: null, kind: "FragmentSpread", name: "LocationSpotlight_user" },
                     { args: null, kind: "FragmentSpread", name: "ShopSpotlight_user" },
                     { args: null, kind: "FragmentSpread", name: "JobSpotlight_user" },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "66c333a1a2097f76a979650f53e036ed",
+                hash: "9f5edbe9db393f5e075fbcd98b3af293",
             };
             const r = i;
             var s = a(202784),
@@ -545,7 +545,7 @@
             const j = L().ddee8ae2,
                 B = L().d2a04c68,
                 A = S,
-                O = ({ profileSpotlight: e, user: l }) => {
+                U = ({ profileSpotlight: e, user: l }) => {
                     const [a, n] = s.useState(0),
                         [t, i] = s.useState(0),
                         r = (0, D.z)(),
@@ -587,11 +587,11 @@
                         b = l.legacy?.screen_name ? { pathname: `/${l.legacy.screen_name}/jobs`, external: !1 } : void 0,
                         h = (0, C.yu)();
                     if (0 === _?.length) return null;
-                    const k = [U.spotlightCard];
-                    return h ? k.push(U.mobileSpotlightCard) : h || k.push(U.desktopSpotlightCard), s.createElement(F.Z, { testID: "jobs" }, s.createElement(F.Z, { style: U.header }, s.createElement(K.ZP, { color: "text", size: "subtext1", weight: "bold" }, B), s.createElement(K.ZP, { link: b, onClick: f, size: "subtext1" }, j)), s.createElement(w.Z, { "aria-label": "Jobs carousel", childrenStyle: U.carouselChild, onScroll: m, onVisibleRangeChange: y, scrollToCenter: !0, showNavButtonsOnHover: !1 }, ((e) => _?.map((a, n) => (a.result?.core ? s.createElement(F.Z, { key: a.rest_id, style: e, testID: `job-tile-${n}` }, s.createElement(R, { isVerifiedOrg: !!l.is_verified_organization, isViewerFollowsUser: c, jobId: a.rest_id, jobIndex: n, jobRef: a.result.core, profileId: o })) : null)) ?? [])(k)));
+                    const k = [O.spotlightCard];
+                    return h ? k.push(O.mobileSpotlightCard) : h || k.push(O.desktopSpotlightCard), s.createElement(F.Z, { testID: "jobs" }, s.createElement(F.Z, { style: O.header }, s.createElement(K.ZP, { color: "text", size: "subtext1", weight: "bold" }, B), s.createElement(K.ZP, { link: b, onClick: f, size: "subtext1" }, j)), s.createElement(w.Z, { "aria-label": "Jobs carousel", childrenStyle: O.carouselChild, onScroll: m, onVisibleRangeChange: y, scrollToCenter: !0, showNavButtonsOnHover: !1 }, ((e) => _?.map((a, n) => (a.result?.core ? s.createElement(F.Z, { key: a.rest_id, style: e, testID: `job-tile-${n}` }, s.createElement(R, { isVerifiedOrg: !!l.is_verified_organization, isViewerFollowsUser: c, jobId: a.rest_id, jobIndex: n, jobRef: a.result.core, profileId: o })) : null)) ?? [])(k)));
                 },
-                U = x.default.create((e) => ({ header: { display: "flex", flexDirection: "row", justifyContent: "space-between" }, carouselChild: { height: "auto" }, spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 }, desktopSpotlightCard: { minWidth: "150px", maxWidth: "300px" }, mobileSpotlightCard: { minWidth: "150px", maxWidth: "200px" } })),
-                z = s.memo(O),
+                O = x.default.create((e) => ({ header: { display: "flex", flexDirection: "row", justifyContent: "space-between" }, carouselChild: { height: "auto" }, spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 }, desktopSpotlightCard: { minWidth: "150px", maxWidth: "300px" }, mobileSpotlightCard: { minWidth: "150px", maxWidth: "200px" } })),
+                z = s.memo(U),
                 J = b,
                 V = ({ profileSpotlightRef: e, userRef: l }) => {
                     const { featureSwitches: a } = s.useContext(h.rC),
@@ -718,17 +718,17 @@
             $.hash = "3da47343f1756b0c4208e4edde6a08ca";
             const H = $;
             var N = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "LocationSpotlight_user", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "User", abstractKey: null, hash: "9c8dfb09cccf9c8338bfa02a25fe4c6b" };
-            const q = N;
-            var G = a(617041);
+            const G = N;
+            var q = a(617041);
             const Q = L().jaaa8984,
-                X = q,
+                X = G,
                 Y = H,
                 ee = ({ profileSpotlightRef: e, showLabel: l = !0, userRef: a }) => {
                     const { featureSwitches: n } = s.useContext(h.rC),
                         t = n.isTrue("responsive_web_location_spotlight_v1_display"),
                         { $fragmentType: i, ...r } = u()(X, a),
                         { $fragmentType: o, ...c } = u()(Y, e);
-                    return t ? s.createElement(G.Z, { label: l ? Q : void 0, location: c, user: r }) : null;
+                    return t ? s.createElement(q.Z, { label: l ? Q : void 0, location: c, user: r }) : null;
                 };
             var le = {
                 argumentDefinitions: [],
@@ -1214,4 +1214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.b0cd319a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.0f75013a.js.map

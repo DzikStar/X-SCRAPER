@@ -486,6 +486,7 @@
                 t("cb165528", "Njirimara akụkọ na mwube"),
                 t("f8645654", "Nchekwa na ịnweta akaụntụ"),
                 t("j95edf76", "Nchekwa"),
+                t("fd127276", "Manage passkeys"),
                 t("afe4a358", "ID verification"),
                 t("dd703318", "Nyocha ụzọ abụọ"),
                 t("b1686800", "Jikwaa igodo ndị nche"),
@@ -903,9 +904,9 @@
                 t("e126dd3f", "Mụtakwuo"),
                 t("i821844f", "Mụtakwuo"),
                 t("b0abbb17", "Mụtakwuo"),
-                t("e7e0d88b", "Mụtakwuo"),
-                t("i560665f", "Mụtakwuo");
-            t("f6e774d9", "Mụtakwuo"),
+                t("e7e0d88b", "Mụtakwuo");
+            t("i560665f", "Mụtakwuo"),
+                t("f6e774d9", "Mụtakwuo"),
                 t("h486f755", "Mụtakwuo"),
                 t("bab41dab", "Mụtakwuo"),
                 t("e0ebdb29", "Mụtakwuo"),
@@ -1024,12 +1025,18 @@
                 t("gfaf9a4a", "Nchedo ntọghari okwuntụghe"),
                 t("h3cc8462", "For added protection, you’ll need to confirm your email address or phone number to reset your X password."),
                 t("b4bbdeb4", "Passkey"),
-                t("aeb7dcdc", "Enable Passkeys for added protection that may be tied to your biometrics."),
+                t("fe8aeb88", "Passkeys provide added protection that may be tied to your biometrics."),
                 t("dc096238", "Upload an approved form of identification to confirm the authenticity of your account. Your information will only be used to validate your identity and will be handled safely and securely."),
                 t("a999cb72", "Chekwa mgbanwe akaụntụ"),
                 t("dec3c9b8", "Okwuntughe"),
                 t("b929aa74", "Re-enter your X password to save changes to your account."),
                 t("d1091f50", "Chefuru okwuntughe?"),
+                t("fd23fe4a", "Here are your passkeys across all your devices"),
+                t("d9921a6c", "Create a new passkey"),
+                t("i4855730", "Delete passkey"),
+                t("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 t("d97c07be", "Manage Creator Subscriptions"),
                 t("efa291da", "View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app."),
                 t("j7f5c6aa", "You don’t have any Subscriptions yet"),
@@ -1913,13 +1920,13 @@
                 t("d8047cc8", "Bipụta"),
                 t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                t("e52d4998", "Choose your audience"),
-                t("d7985b24", "Choose who can reply to this Article"),
+                t("e52d4998", "Choose your audience");
+            t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
                 t("a330771e", "Copy link to your clipboard"),
-                t("b6510e68", "Copy your Article’s URL so you can share it.");
-            t("e4a6e006", "Ọ nwere ihe na-agaghị nke ọma. Biko nwaa ọzọ."),
+                t("b6510e68", "Copy your Article’s URL so you can share it."),
+                t("e4a6e006", "Ọ nwere ihe na-agaghị nke ọma. Biko nwaa ọzọ."),
                 t("eff483e0", "After you publish, get a link to share the Article."),
                 t("ca15dd4e", "Draft"),
                 t("bb40bf66", "Published"),
@@ -2969,27 +2976,23 @@
                 t("b7388a56", "Edendinokpuru"),
                 t("hdabc3fc", "Usoro Nke Ọrụ"),
                 t("bc6efc72", "Iwu Nzuzo"),
-                t("h3161192", "Iwu Kuki"),
-                t("a7de64de", "Ozi mgbasa ozi"),
+                t("h3161192", "Iwu Kuki");
+            t("a7de64de", "Ozi mgbasa ozi"),
                 t("jb0a4c36", "Blọọgụ"),
                 t("ce6d095a", "Ọrụ"),
                 t("e0adec82", "Akụrụngwa Ụdị ihe"),
-                t("df1b7550", "Ahịa");
-            t("he258678", "X for Business"),
+                t("df1b7550", "Ahịa"),
+                t("he258678", "X for Business"),
                 t("c6f58084", "Ndị nrụpụta"),
                 t("d83f18d2", "Ndekọ"),
                 t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
-                t("af781666", "What do people think?"),
-                t("ad35153e", "beta"),
-                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Warning: Payment failed"),
                 t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 t("bce3726a", "Update Billing"),
                 t("fce9ecce", "Suggested Videos"),
-                t("da00e00a", "Try the new News"),
-                t("c40666d8", "Try it"),
                 t("j66b95a2", "In-Depth News"),
+                t("ad35153e", "beta"),
                 t("b58d2bd2", "Relevant Posts"),
                 t("efe6ef9e", "View post"),
                 t("b3d183ce", "Post with replies"),
@@ -3887,11 +3890,11 @@
                 t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya."),
                 t("e111f531", function (e) {
                     return e.count + " gbanyere";
-                }),
-                t("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
                 });
-            t("e3275464", "Zipụ"),
+            t("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
+            }),
+                t("e3275464", "Zipụ"),
                 t("cededf2a", "Onye nnabata"),
                 t("i2caef48", "Osote onye nnabata"),
                 t("j245c654", "Ndị ọkà okwu"),
@@ -4362,8 +4365,8 @@
                 t("g01599b6", "Response 1"),
                 t("e02694e0", "Response 2"),
                 t("h6867fcc", "I prefer this response"),
-                t("d07488a6", "Get the Android app"),
-                t("d9cfe70c", "Access advanced Grok features"),
+                t("acc4496c", "Try Grok Voice mode"),
+                t("jd36d190", "Access advanced features with Grok Android app"),
                 t("hf9afab0", "Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 t("ef3b3f04", "Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 t("b43636b8", "Introducing Grok 3"),
@@ -4925,9 +4928,9 @@
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
-                t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access");
-            t("gf898b70", "Advanced Search"),
+                t("i0e5bf4c", "Your videos");
+            t("ed99baea", "Early Beta Access"),
+                t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5840,6 +5843,8 @@
                 t("g880d8c0", "Data gbasara ọnọdu ndebanye aha ojìarụ adịbeghị"),
                 t("ab1b3d38", "Note request data isn’t available yet"),
                 t("c43fb933", "X Developer Agreement and Policy"),
+                t("af781666", "What do people think?"),
+                t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Detuo njikọ Isiokwu"),
                 t("h92fe1be", "Ọ dị m nwute, ị gaghị enweta Ndetu Ogbe n'ọge a."),
                 t("f0dc1434", "Ndetu Ọgbakọ dị adị ugbu a na naanị U.S."),
@@ -5889,11 +5894,11 @@
                 }),
                 t("daca8a2c", "Open in Dock"),
                 t("e3aac82a", "Na-ebugo Mgbasa-ozi"),
-                t("i0ed3f4e", "Onyonyo omume"),
-                t("cbae35fa", "Nye Mkpesa Banyere Mgbasa-ozi"),
+                t("i0ed3f4e", "Onyonyo omume");
+            t("cbae35fa", "Nye Mkpesa Banyere Mgbasa-ozi"),
                 t("fd12ab58", "Collection posts"),
-                t("a226497c", "Mepụta Ọgbakọ ọhụrụ");
-            t("d7346632", "Ị banyebeghị Ọgbakọ ọ bụla"),
+                t("a226497c", "Mepụta Ọgbakọ ọhụrụ"),
+                t("d7346632", "Ị banyebeghị Ọgbakọ ọ bụla"),
                 t("b732a4cc", "When you do, you’ll see their posts here."),
                 t("hff48914", "No posts could be found at this time."),
                 t("hb52cc4a", "Please try again later."),
@@ -6457,7 +6462,10 @@
                 t("f7d1a8e0", "Ngwa Android"),
                 t("aab2fae0", "Ngwa iOS"),
                 t("a35d9c9a", "Ndịnaọrụ"),
+                t("da00e00a", "Try the new News"),
+                t("c40666d8", "Try it"),
                 t("ic61c5fc", "Scroll to top"),
+                t("dd225af8", "No people found."),
                 t("i6671128", "You’ve unlocked more on X"),
                 t("d5e4d0a6", "Ị nwere ike isonyere mkparịta ụka ahụ wee jikọọ na ndị ọzọ n'ụzọ dị mfe karị. Ugbu a ị nwere ike ime ihe ndị a:"),
                 t("a97bc07e", "Unlock more on X"),
@@ -6884,14 +6892,14 @@
                 t("b6b5dc94", "Become verified"),
                 t("b06db848", "Stand out from others on the platform"),
                 t("e3e3a97c", "Earn a share of revenue from your posts"),
-                t("f15bc24e", "Increased Grok limits"),
-                t("c4666e1c", "More usage of Grok 3, our latest model"),
+                t("f15bc24e", "Increased Grok limits");
+            t("c4666e1c", "More usage of Grok 3, our latest model"),
                 t("he74ae7a", "Highest Grok usage limits"),
                 t("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 t("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 t("iadf78e2", "Download videos"),
-                t("ee54c3de", "Save videos straight to your device");
-            t("ae03594c", "Small reply boost"),
+                t("ee54c3de", "Save videos straight to your device"),
+                t("ae03594c", "Small reply boost"),
                 t("e6bb08c0", "Increase the visibility of your replies"),
                 t("bf2a6acc", "Large Reply Boost"),
                 t("c2059276", "Have your replies boosted."),
@@ -7351,7 +7359,6 @@
                 t("b0c91a92", "Login or Signup to see what people on X are saying about this"),
                 t("d7071084", "Grok This"),
                 t("ee2200f4", "This story is a summary of posts on X made by grok. Story will evolve over time."),
-                t("dd225af8", "No people found."),
                 t("e1e5d552", "Edit your Circle"),
                 t("ec13f9cc", "There isn’t anyone in your Circle — yet"),
                 t("dab58e32", "Mgbe ị gbakwunyere ndị mmadụ, ha ga-apụta ebe a."),
@@ -7416,8 +7423,6 @@
                 t("bf4558fa", "Breakdown of your organic performance"),
                 t("c69069e6", "Times this post was seen on X"),
                 t("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
-                t("d8abdaa4", "Ndị na-eso ọhụrụ"),
-                t("c72f25a8", "Follows gained directly from this post"),
                 t("acc4cf12", "Number of profile views from this post"),
                 t("c7d0d1c4", "Number of clicks on any URL in this post"),
                 t("a4da7724", "Times people viewed the details about this post"),
@@ -7865,10 +7870,7 @@
                 t("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
                 t("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 t("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                t("ce102a20", "Redirecting to Stripe"),
-                t("ddfd6718", "Payment Failed"),
-                t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                t("a62359e6", "Verified Organization Settings");
+                t("ce102a20", "Redirecting to Stripe");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7907,7 +7909,10 @@
                     c(e, a)
                 );
             }
-            t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            t("ddfd6718", "Payment Failed"),
+                t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                t("a62359e6", "Verified Organization Settings"),
+                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 t("i4dccc18", "Billing"),
                 t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 t("dac61c3c", "Account settings"),
@@ -8907,13 +8912,13 @@
                 t("ecda5f9e", "Misleading"),
                 t("a423473c", "Legally Required Notice"),
                 t("b3296688", "Visibility Limited"),
-                t("ccd32094", "Ugbu a"),
-                t("abfcce0d", function (e) {
-                    return e.amountOfTime + " gara aga";
-                }),
+                t("ccd32094", "Ugbu a");
+            t("abfcce0d", function (e) {
+                return e.amountOfTime + " gara aga";
+            }),
                 t("ae408b76", "You reposted"),
-                t("j355f008", "Pinned post");
-            t("habf9678", "Onye odee Gbadó"),
+                t("j355f008", "Pinned post"),
+                t("habf9678", "Onye odee Gbadó"),
                 t("db0798ed", function (e) {
                     return e.topicName + " Isiokwu";
                 }),
@@ -13065,6 +13070,7 @@
                 (h.a291718274 = p({ 1: h("ig").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d", timeSeparator: ":", days: { E: { 1: { sun: "Ụka", mon: "Mọn", tue: "Tiu", wed: "Wen", thu: "Tọọ", fri: "Fraị", sat: "Sat" } } }, months: { M: { 3: { 1: "Jen", 2: "Feb", 3: "Maa", 4: "Epr", 5: "Mee", 6: "Juu", 7: "Jul", 8: "Ọgọ", 9: "Sep", 10: "Ọkt", 11: "Nov", 12: "Dis" } } } })),
                 (h.b1562969245 = p({ 1: h("ig").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d, y", timeSeparator: ":", days: { E: { 1: { sun: "Ụka", mon: "Mọn", tue: "Tiu", wed: "Wen", thu: "Tọọ", fri: "Fraị", sat: "Sat" } } }, months: { M: { 3: { 1: "Jen", 2: "Feb", 3: "Maa", 4: "Epr", 5: "Mee", 6: "Juu", 7: "Jul", 8: "Ọgọ", 9: "Sep", 10: "Ọkt", 11: "Nov", 12: "Dis" } } } })),
                 (h.a299106442 = p({ 1: h("ig").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d", timeSeparator: ":", months: { M: { 4: { 1: "Jenụwarị", 2: "Febrụwarị", 3: "Maachị", 4: "Eprel", 5: "Mee", 6: "Juun", 7: "Julaị", 8: "Ọgọọst", 9: "Septemba", 10: "Ọktoba", 11: "Novemba", 12: "Disemba" } } } })),
+                (h.a852739656 = p({ 1: h("ig").numberFormatter({ raw: "0" }), 2: h("ig").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y HH:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "Jenụwarị", 2: "Febrụwarị", 3: "Maachị", 4: "Eprel", 5: "Mee", 6: "Juun", 7: "Julaị", 8: "Ọgọọst", 9: "Septemba", 10: "Ọktoba", 11: "Novemba", 12: "Disemba" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (h.b314060615 = p({ 1: h("ig").numberFormatter({ raw: "0" }), 2: h("ig").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, y h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Jen", 2: "Feb", 3: "Maa", 4: "Epr", 5: "Mee", 6: "Juu", 7: "Jul", 8: "Ọgọ", 9: "Sep", 10: "Ọkt", 11: "Nov", 12: "Dis" } } }, dayPeriods: { am: "A.M.", pm: "P.M." } })),
                 (h.b1377110213 = p({ 1: h("ig").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "Jenụwarị", 2: "Febrụwarị", 3: "Maachị", 4: "Eprel", 5: "Mee", 6: "Juun", 7: "Julaị", 8: "Ọgọọst", 9: "Septemba", 10: "Ọktoba", 11: "Novemba", 12: "Disemba" } } } })),
                 (h.a1346677626 = p({ 1: h("ig").numberFormatter({ raw: "0" }), 2: h("ig").numberFormatter({ raw: "00" }) }, { pattern: "MMM d h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Jen", 2: "Feb", 3: "Maa", 4: "Epr", 5: "Mee", 6: "Juu", 7: "Jul", 8: "Ọgọ", 9: "Sep", 10: "Ọkt", 11: "Nov", 12: "Dis" } } }, dayPeriods: { am: "A.M.", pm: "P.M." } })),
@@ -13086,6 +13092,7 @@
                 (h.a1043000651 = y(h("ig").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (h.a251947962 = y(h("ig").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (h.a1050388819 = y(h("ig").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (h.a461332575 = y(h("ig").dateToPartsFormatter({ datetime: "long" }))),
                 (h.a113797954 = y(h("ig").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (h.b475188014 = y(h("ig").dateToPartsFormatter({ date: "long" }))),
                 (h.b1133372463 = y(h("ig").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13151,6 +13158,7 @@
                 t("c0bdd345", h.a1850530459),
                 t("aa2aa1a1", h.a251947962),
                 t("da44942d", h.a1050388819),
+                t("a54d3ef5", h.a461332575),
                 t("bfbc051d", h.a113797954),
                 t("ba2e82a1", h.b475188014),
                 t("fc209bb7", h.b1133372463),
@@ -13241,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.18a7326a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.56cbd14a.js.map

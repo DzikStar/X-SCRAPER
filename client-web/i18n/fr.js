@@ -487,6 +487,7 @@
                 n("cb165528", "Fonctionnalités et paramètres pour les actualités"),
                 n("f8645654", "Sécurité et accès au compte"),
                 n("j95edf76", "Sécurité"),
+                n("fd127276", "Gérer les clés d'identification"),
                 n("afe4a358", "Vérification d'identité"),
                 n("dd703318", "Authentification à deux facteurs"),
                 n("b1686800", "Gérer les clés de sécurité"),
@@ -904,9 +905,9 @@
                 n("e126dd3f", "En savoir plus"),
                 n("i821844f", "En savoir plus"),
                 n("b0abbb17", "En savoir plus"),
-                n("e7e0d88b", "En savoir plus"),
-                n("i560665f", "En savoir plus");
-            n("f6e774d9", "En savoir plus"),
+                n("e7e0d88b", "En savoir plus");
+            n("i560665f", "En savoir plus"),
+                n("f6e774d9", "En savoir plus"),
                 n("h486f755", "En savoir plus"),
                 n("bab41dab", "En savoir plus"),
                 n("e0ebdb29", "En savoir plus"),
@@ -1025,12 +1026,18 @@
                 n("gfaf9a4a", "Protection de la réinitialisation du mot de passe"),
                 n("h3cc8462", "Pour une protection renforcée, vous devrez confirmer votre adresse email ou votre numéro de téléphone afin de réinitialiser votre mot de passe X."),
                 n("b4bbdeb4", "Clé d'identification"),
-                n("aeb7dcdc", "Activez les clés d'identification pour bénéficier d'une protection supplémentaire qui peut être liée à vos données biométriques."),
+                n("fe8aeb88", "Les clés d'identification offrent une protection supplémentaire qui peut être liée à vos données biométriques."),
                 n("dc096238", "Téléchargez une pièce d'identité approuvée afin de confirmer l'authenticité de votre compte. Vos informations seront uniquement utilisées pour valider votre identité et seront traitées de manière sûre et sécurisée."),
                 n("a999cb72", "Enregistrer les modifications apportées au compte"),
                 n("dec3c9b8", "Mot de passe"),
                 n("b929aa74", "Ressaisissez votre mot de passe X pour enregistrer les modifications de votre compte."),
                 n("d1091f50", "Mot de passe oublié ?"),
+                n("fd23fe4a", "Here are your passkeys across all your devices"),
+                n("d9921a6c", "Create a new passkey"),
+                n("i4855730", "Supprimer la clé d'identification"),
+                n("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 n("d97c07be", "Gérer les Souscriptions de créateurs"),
                 n("efa291da", "Consultez et gérez vos Souscriptions à des créateurs ci‑dessous avec Stripe. Vous pouvez gérer toute Souscription active initiée sur iOS ou Android dans l'application."),
                 n("j7f5c6aa", "Vous n'avez encore aucune Souscription."),
@@ -1914,13 +1921,13 @@
                 n("d8047cc8", "Publier"),
                 n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
                 n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
-                n("e52d4998", "Choisissez votre audience"),
-                n("d7985b24", "Choisissez qui peut répondre à cet Article"),
+                n("e52d4998", "Choisissez votre audience");
+            n("d7985b24", "Choisissez qui peut répondre à cet Article"),
                 n("b5660338", "Aperçu du fil"),
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
-                n("b6510e68", "Copiez l'URL de votre Article pour pouvoir le partager.");
-            n("e4a6e006", "Une erreur est survenue. Veuillez réessayer."),
+                n("b6510e68", "Copiez l'URL de votre Article pour pouvoir le partager."),
+                n("e4a6e006", "Une erreur est survenue. Veuillez réessayer."),
                 n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager."),
                 n("ca15dd4e", "Brouillon"),
                 n("bb40bf66", "Publiés"),
@@ -2970,27 +2977,23 @@
                 n("b7388a56", "Pied de page"),
                 n("hdabc3fc", "Conditions d’utilisation"),
                 n("bc6efc72", "Politique de Confidentialité"),
-                n("h3161192", "Politique relative aux cookies"),
-                n("a7de64de", "Informations sur les publicités"),
+                n("h3161192", "Politique relative aux cookies");
+            n("a7de64de", "Informations sur les publicités"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Carrières"),
                 n("e0adec82", "Ressources de la marque"),
-                n("df1b7550", "Marketing");
-            n("he258678", "X pour les professionnels"),
+                n("df1b7550", "Marketing"),
+                n("he258678", "X pour les professionnels"),
                 n("c6f58084", "Développeurs"),
                 n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
-                n("af781666", "Quelles sont les opinions à ce sujet ?"),
-                n("ad35153e", "bêta"),
-                n("a1f414ee", "Share thoughts"),
                 n("fbf83158", "Avertissement : échec du paiement"),
                 n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
                 n("bce3726a", "Mettre les paramètres de facturation à jour"),
                 n("fce9ecce", "Vidéos suggérées"),
-                n("da00e00a", "Testez les nouvelles Actualités"),
-                n("c40666d8", "Essayer"),
                 n("j66b95a2", "Actualités détaillées"),
+                n("ad35153e", "bêta"),
                 n("b58d2bd2", "Posts pertinents"),
                 n("efe6ef9e", "Voir le post"),
                 n("b3d183ce", "Posts avec réponses"),
@@ -3888,11 +3891,11 @@
                 n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 n("e111f531", function (e) {
                     return e.count + " " + r(e.count, "a", "ont") + " écouté";
-                }),
-                n("cbef820f", function (e) {
-                    return e.screenName + " a reposté le stream !";
                 });
-            n("e3275464", "Envoyer"),
+            n("cbef820f", function (e) {
+                return e.screenName + " a reposté le stream !";
+            }),
+                n("e3275464", "Envoyer"),
                 n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
                 n("j245c654", "Intervenants"),
@@ -4363,8 +4366,8 @@
                 n("g01599b6", "Réponse 1"),
                 n("e02694e0", "Réponse 2"),
                 n("h6867fcc", "Je préfère cette réponse."),
-                n("d07488a6", "Obtenir l'application Android"),
-                n("d9cfe70c", "Accès aux fonctionnalités avancées de Grok"),
+                n("acc4496c", "Try Grok Voice mode"),
+                n("jd36d190", "Access advanced features with Grok Android app"),
                 n("hf9afab0", "Activez DeepSearch pour parcourir Internet et X, analyser des informations et obtenir des réponses détaillées et bien argumentées avec la recherche agentique rapide."),
                 n("ef3b3f04", "Activez le mode Description pour utiliser notre modèle de raisonnement. C'est le mieux adapté aux maths, aux sciences et au codage. Vous pouvez aussi demander à Grok de réfléchir plus intensément sur toute question susceptible de nécessiter une réflexion plus profonde. "),
                 n("b43636b8", "Lancement de Grok 3"),
@@ -4926,9 +4929,9 @@
                 n("h0c1f37a", "Voir les statistiques de l'Espace"),
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
                 n("if2909ba", "Temps de visionnage"),
-                n("i0e5bf4c", "Vos vidéos"),
-                n("ed99baea", "Accès anticipé à la version bêta");
-            n("gf898b70", "Recherche avancée"),
+                n("i0e5bf4c", "Vos vidéos");
+            n("ed99baea", "Accès anticipé à la version bêta"),
+                n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
@@ -5841,6 +5844,8 @@
                 n("g880d8c0", "Les données relatives au statut d'inscription des utilisateurs ne sont pas encore disponibles."),
                 n("ab1b3d38", "Les données de demandes de notes ne sont pas encore disponibles."),
                 n("c43fb933", "Accord et la Politique Développeur de X"),
+                n("af781666", "Quelles sont les opinions à ce sujet ?"),
+                n("a1f414ee", "Share thoughts"),
                 n("ed88e742", "Copier le lien de ce sujet"),
                 n("h92fe1be", "Malheureusement, vous ne pouvez pas accéder à la fonctionnalité Notes de la Communauté pour le moment."),
                 n("f0dc1434", "La fonctionnalité Notes de la Communauté n'est pour le moment disponible qu'aux États‑Unis."),
@@ -5890,11 +5895,11 @@
                 }),
                 n("daca8a2c", "Ouvrir dans Dock"),
                 n("e3aac82a", "Chargement de la diffusion"),
-                n("i0ed3f4e", "Image de l'événement"),
-                n("cbae35fa", "Signaler la diffusion"),
+                n("i0ed3f4e", "Image de l'événement");
+            n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
-                n("a226497c", "Créer une Communauté");
-            n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
+                n("a226497c", "Créer une Communauté"),
+                n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
                 n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
                 n("hff48914", "Aucun post n'a pu être trouvé pour le moment."),
                 n("hb52cc4a", "Veuillez réessayer plus tard."),
@@ -6458,7 +6463,10 @@
                 n("f7d1a8e0", "Application Android"),
                 n("aab2fae0", "Application iOS"),
                 n("a35d9c9a", "Ressources"),
+                n("da00e00a", "Testez les nouvelles Actualités"),
+                n("c40666d8", "Essayer"),
                 n("ic61c5fc", "Défiler vers le haut"),
+                n("dd225af8", "Aucune personne trouvée."),
                 n("i6671128", "Vous allez encore mieux profiter de X"),
                 n("d5e4d0a6", "Vous pouvez rejoindre la conversation et entrer plus facilement en lien avec les autres. Désormais :"),
                 n("a97bc07e", "Profitez encore mieux de X"),
@@ -6885,14 +6893,14 @@
                 n("b6b5dc94", "Obtenez la certification"),
                 n("b06db848", "Démarquez‑vous des autres sur la plateforme"),
                 n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts"),
-                n("f15bc24e", "Limites Grok repoussées"),
-                n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
+                n("f15bc24e", "Limites Grok repoussées");
+            n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
                 n("he74ae7a", "Limites d'utilisation les plus élevées pour Grok"),
                 n("f5732cd4", "Plus un accès élargi aux modes DeepSearch et Réflexion"),
                 n("e0198956", "Recevez une part des revenus générés par l'engagement de comptes certifiés avec les contenus que vous postez sur X."),
                 n("iadf78e2", "Téléchargement de vidéos"),
-                n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil.");
-            n("ae03594c", "Léger boostage des réponses"),
+                n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil."),
+                n("ae03594c", "Léger boostage des réponses"),
                 n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
                 n("bf2a6acc", "Boostage des réponses important"),
                 n("c2059276", "Boostez vos réponses."),
@@ -7352,7 +7360,6 @@
                 n("b0c91a92", "Connectez‑vous ou inscrivez‑vous pour voir ce que les utilisateurs de X disent à ce sujet."),
                 n("d7071084", "Groker ceci"),
                 n("ee2200f4", "Cette story est un résumé des posts réalisés par Grok sur X. Elle évoluera avec le temps."),
-                n("dd225af8", "Aucune personne trouvée."),
                 n("e1e5d552", "Modifier votre Cercle"),
                 n("ec13f9cc", "Votre Cercle est vide pour le moment"),
                 n("dab58e32", "Quand vous ajouterez des personnes, elles apparaîtront ici."),
@@ -7417,8 +7424,6 @@
                 n("bf4558fa", "Détails de vos performances organiques"),
                 n("c69069e6", "Nombre de fois que ce post a été vu sur X"),
                 n("a0615bac", "Nombre total de fois qu'un utilisateur a interagi avec un post. Cela inclut tous les clics où que ce soit sur le post (hashtags, liens, avatar, nom d'utilisateur et ouverture du post), les reposts, les réponses, les abonnements et les J'aime."),
-                n("d8abdaa4", "Nouveaux abonnés"),
-                n("c72f25a8", "Abonnements obtenus directement depuis ce post."),
                 n("acc4cf12", "Nombre de vues du profil depuis ce post"),
                 n("c7d0d1c4", "Nombre de clics sur l'URL figurant dans ce post"),
                 n("a4da7724", "Nombre de fois que des utilisateurs ont vu les détails relatifs à ce post."),
@@ -7866,10 +7871,7 @@
                 n("e3dffb4e", "Copiez l'adresse email de notre service d'assistance ci-dessous et envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
                 n("b4fef99e", "Après réception de votre demande par notre équipe d'assistance, nous examinerons vos informations et vous aiderons à configurer votre intégration."),
                 n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
-                n("ce102a20", "Redirection vers Stripe"),
-                n("ddfd6718", "Échec du paiement"),
-                n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
-                n("a62359e6", "Paramètres d'organisation certifiée");
+                n("ce102a20", "Redirection vers Stripe");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7908,7 +7910,10 @@
                     i(e, t)
                 );
             }
-            n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
+            n("ddfd6718", "Échec du paiement"),
+                n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
+                n("a62359e6", "Paramètres d'organisation certifiée"),
+                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
                 n("i4dccc18", "Facturation"),
                 n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
                 n("dac61c3c", "Paramètres du compte"),
@@ -8908,13 +8913,13 @@
                 n("ecda5f9e", "Trompeur"),
                 n("a423473c", "Avis requis par la loi"),
                 n("b3296688", "Visibilité limitée"),
-                n("ccd32094", "Maintenant"),
-                n("abfcce0d", function (e) {
-                    return "Il y a " + e.amountOfTime;
-                }),
+                n("ccd32094", "Maintenant");
+            n("abfcce0d", function (e) {
+                return "Il y a " + e.amountOfTime;
+            }),
                 n("ae408b76", "Vous avez reposté"),
-                n("j355f008", "Post épinglé");
-            n("habf9678", "Épinglé par l'auteur"),
+                n("j355f008", "Post épinglé"),
+                n("habf9678", "Épinglé par l'auteur"),
                 n("db0798ed", function (e) {
                     return "Sujet " + e.topicName;
                 }),
@@ -13053,6 +13058,7 @@
                 (f.a1300245936 = h({ 1: f("fr").numberFormatter({ raw: "0" }) }, { pattern: "E d MMM", timeSeparator: ":", days: { E: { 1: { sun: "dim.", mon: "lun.", tue: "mar.", wed: "mer.", thu: "jeu.", fri: "ven.", sat: "sam." } } }, months: { M: { 3: { 1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin", 7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc." } } } })),
                 (f.b363382795 = h({ 1: f("fr").numberFormatter({ raw: "0" }) }, { pattern: "E d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "dim.", mon: "lun.", tue: "mar.", wed: "mer.", thu: "jeu.", fri: "ven.", sat: "sam." } } }, months: { M: { 3: { 1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin", 7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc." } } } })),
                 (f.a1307634104 = h({ 1: f("fr").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "janvier", 2: "février", 3: "mars", 4: "avril", 5: "mai", 6: "juin", 7: "juillet", 8: "août", 9: "septembre", 10: "octobre", 11: "novembre", 12: "décembre" } } } })),
+                (f.a469630810 = h({ 1: f("fr").numberFormatter({ raw: "0" }), 2: f("fr").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y 'à' HH:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "janvier", 2: "février", 3: "mars", 4: "avril", 5: "mai", 6: "juin", 7: "juillet", 8: "août", 9: "septembre", 10: "octobre", 11: "novembre", 12: "décembre" } } }, gmtFormat: "UTC{0}", gmtZeroFormat: "UTC", hourFormat: ["+H;−H", "+H:mm;−H:mm"] })),
                 (f.b1781586329 = h({ 1: f("fr").numberFormatter({ raw: "0" }), 2: f("fr").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y 'à' h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin", 7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (f.b1221555891 = h({ 1: f("fr").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "janvier", 2: "février", 3: "mars", 4: "avril", 5: "mai", 6: "juin", 7: "juillet", 8: "août", 9: "septembre", 10: "octobre", 11: "novembre", 12: "décembre" } } } })),
                 (f.b1748703220 = h({ 1: f("fr").numberFormatter({ raw: "0" }), 2: f("fr").numberFormatter({ raw: "00" }) }, { pattern: "d MMM 'à' h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "janv.", 2: "févr.", 3: "mars", 4: "avr.", 5: "mai", 6: "juin", 7: "juil.", 8: "août", 9: "sept.", 10: "oct.", 11: "nov.", 12: "déc." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
@@ -13074,6 +13080,7 @@
                 (f.a2051528313 = z(f("fr").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (f.a1451534412 = z(f("fr").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (f.a2058916481 = z(f("fr").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (f.a78223729 = z(f("fr").dateToPartsFormatter({ datetime: "long" }))),
                 (f.b1353727760 = z(f("fr").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (f.b319633692 = z(f("fr").dateToPartsFormatter({ date: "long" }))),
                 (f.a66213987 = z(f("fr").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13139,6 +13146,7 @@
                 n("c0bdd345", f.b528275255),
                 n("aa2aa1a1", f.a1451534412),
                 n("da44942d", f.a2058916481),
+                n("a54d3ef5", f.a78223729),
                 n("bfbc051d", f.b1353727760),
                 n("ba2e82a1", f.b319633692),
                 n("fc209bb7", f.a66213987),
@@ -13229,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.c968e9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.a7c1df9a.js.map

@@ -486,6 +486,7 @@
                 o("cb165528", "News features and settings"),
                 o("f8645654", "Segurtasuna eta konturako sarbidea"),
                 o("j95edf76", "Segurtasuna"),
+                o("fd127276", "Manage passkeys"),
                 o("afe4a358", "ID verification"),
                 o("dd703318", "Bi faktoreko autentifikazioa"),
                 o("b1686800", "Kudeatu segurtasun-gakoak"),
@@ -903,9 +904,9 @@
                 o("e126dd3f", "Gehiago ikasi"),
                 o("i821844f", "Gehiago ikasi"),
                 o("b0abbb17", "Gehiago ikasi"),
-                o("e7e0d88b", "Gehiago ikasi"),
-                o("i560665f", "Gehiago ikasi");
-            o("f6e774d9", "Gehiago ikasi"),
+                o("e7e0d88b", "Gehiago ikasi");
+            o("i560665f", "Gehiago ikasi"),
+                o("f6e774d9", "Gehiago ikasi"),
                 o("h486f755", "Gehiago ikasi"),
                 o("bab41dab", "Gehiago ikasi"),
                 o("e0ebdb29", "Gehiago ikasi"),
@@ -1024,12 +1025,18 @@
                 o("gfaf9a4a", "Pasahitza berrezartzea babesteko"),
                 o("h3cc8462", "For added protection, you’ll need to confirm your email address or phone number to reset your X password."),
                 o("b4bbdeb4", "Passkey"),
-                o("aeb7dcdc", "Enable Passkeys for added protection that may be tied to your biometrics."),
+                o("fe8aeb88", "Passkeys provide added protection that may be tied to your biometrics."),
                 o("dc096238", "Upload an approved form of identification to confirm the authenticity of your account. Your information will only be used to validate your identity and will be handled safely and securely."),
                 o("a999cb72", "Gorde kontuko aldaketak"),
                 o("dec3c9b8", "Pasahitza"),
                 o("b929aa74", "Re-enter your X password to save changes to your account."),
                 o("d1091f50", "Pasahitza ahaztua?"),
+                o("fd23fe4a", "Here are your passkeys across all your devices"),
+                o("d9921a6c", "Create a new passkey"),
+                o("i4855730", "Delete passkey"),
+                o("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 o("d97c07be", "Manage Creator Subscriptions"),
                 o("efa291da", "View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app."),
                 o("j7f5c6aa", "You don’t have any Subscriptions yet"),
@@ -1913,13 +1920,13 @@
                 o("d8047cc8", "Argitaratu"),
                 o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                o("e52d4998", "Choose your audience"),
-                o("d7985b24", "Choose who can reply to this Article"),
+                o("e52d4998", "Choose your audience");
+            o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
-                o("b6510e68", "Copy your Article’s URL so you can share it.");
-            o("e4a6e006", "Arazoren bat izan da. Saiatu berriro."),
+                o("b6510e68", "Copy your Article’s URL so you can share it."),
+                o("e4a6e006", "Arazoren bat izan da. Saiatu berriro."),
                 o("eff483e0", "After you publish, get a link to share the Article."),
                 o("ca15dd4e", "Zirriborroa"),
                 o("bb40bf66", "Argitaratuta"),
@@ -2969,27 +2976,23 @@
                 o("b7388a56", "Oina"),
                 o("hdabc3fc", "Zerbitzu-Baldintzak"),
                 o("bc6efc72", "Pribatutasun Politika"),
-                o("h3161192", "Cookiei buruzko gidalerroak"),
-                o("a7de64de", "Ads info"),
+                o("h3161192", "Cookiei buruzko gidalerroak");
+            o("a7de64de", "Ads info"),
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Lanbideak"),
                 o("e0adec82", "Markaren baliabideak"),
-                o("df1b7550", "Marketing");
-            o("he258678", "X for Business"),
+                o("df1b7550", "Marketing"),
+                o("he258678", "X for Business"),
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
-                o("af781666", "What do people think?"),
-                o("ad35153e", "beta"),
-                o("a1f414ee", "Share thoughts"),
                 o("fbf83158", "Warning: Payment failed"),
                 o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
-                o("da00e00a", "Try the new News"),
-                o("c40666d8", "Try it"),
                 o("j66b95a2", "In-Depth News"),
+                o("ad35153e", "beta"),
                 o("b58d2bd2", "Relevant Posts"),
                 o("efe6ef9e", "View post"),
                 o("b3d183ce", "Post with replies"),
@@ -3887,11 +3890,11 @@
                 o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 o("e111f531", function (e) {
                     return e.count + " sintonizatuta";
-                }),
-                o("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
                 });
-            o("e3275464", "Bidali"),
+            o("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
+            }),
+                o("e3275464", "Bidali"),
                 o("cededf2a", "Anfitrioia"),
                 o("i2caef48", "Co-hosts"),
                 o("j245c654", "Speakers"),
@@ -4362,8 +4365,8 @@
                 o("g01599b6", "Response 1"),
                 o("e02694e0", "Response 2"),
                 o("h6867fcc", "I prefer this response"),
-                o("d07488a6", "Get the Android app"),
-                o("d9cfe70c", "Access advanced Grok features"),
+                o("acc4496c", "Try Grok Voice mode"),
+                o("jd36d190", "Access advanced features with Grok Android app"),
                 o("hf9afab0", "Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 o("ef3b3f04", "Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 o("b43636b8", "Introducing Grok 3"),
@@ -4925,9 +4928,9 @@
                 o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
-                o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access");
-            o("gf898b70", "Advanced Search"),
+                o("i0e5bf4c", "Your videos");
+            o("ed99baea", "Early Beta Access"),
+                o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5840,6 +5843,8 @@
                 o("g880d8c0", "User enrollment status data isn’t available yet"),
                 o("ab1b3d38", "Note request data isn’t available yet"),
                 o("c43fb933", "X Developer Agreement and Policy"),
+                o("af781666", "What do people think?"),
+                o("a1f414ee", "Share thoughts"),
                 o("ed88e742", "Kopiatu gairako esteka"),
                 o("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
                 o("f0dc1434", "Community Notes is currently only available in the U.S."),
@@ -5889,11 +5894,11 @@
                 }),
                 o("daca8a2c", "Open in Dock"),
                 o("e3aac82a", "Igorpena kargatzen"),
-                o("i0ed3f4e", "Gertaeraren irudia"),
-                o("cbae35fa", "Report Broadcast"),
+                o("i0ed3f4e", "Gertaeraren irudia");
+            o("cbae35fa", "Report Broadcast"),
                 o("fd12ab58", "Collection posts"),
-                o("a226497c", "Sortu komunitate berri bat");
-            o("d7346632", "You haven’t joined any Communities yet"),
+                o("a226497c", "Sortu komunitate berri bat"),
+                o("d7346632", "You haven’t joined any Communities yet"),
                 o("b732a4cc", "When you do, you’ll see their posts here."),
                 o("hff48914", "No posts could be found at this time."),
                 o("hb52cc4a", "Saiatu berriro geroago."),
@@ -6457,7 +6462,10 @@
                 o("f7d1a8e0", "Android aplikazioa"),
                 o("aab2fae0", "iOS aplikazioa"),
                 o("a35d9c9a", "Baliabideak"),
+                o("da00e00a", "Try the new News"),
+                o("c40666d8", "Try it"),
                 o("ic61c5fc", "Scroll to top"),
+                o("dd225af8", "No people found."),
                 o("i6671128", "You’ve unlocked more on X"),
                 o("d5e4d0a6", "You can join the conversation and connect with others more easily. Now you can do the following:"),
                 o("a97bc07e", "Unlock more on X"),
@@ -6884,14 +6892,14 @@
                 o("b6b5dc94", "Become verified"),
                 o("b06db848", "Stand out from others on the platform"),
                 o("e3e3a97c", "Earn a share of revenue from your posts"),
-                o("f15bc24e", "Increased Grok limits"),
-                o("c4666e1c", "More usage of Grok 3, our latest model"),
+                o("f15bc24e", "Increased Grok limits");
+            o("c4666e1c", "More usage of Grok 3, our latest model"),
                 o("he74ae7a", "Highest Grok usage limits"),
                 o("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
-                o("ee54c3de", "Save videos straight to your device");
-            o("ae03594c", "Small reply boost"),
+                o("ee54c3de", "Save videos straight to your device"),
+                o("ae03594c", "Small reply boost"),
                 o("e6bb08c0", "Increase the visibility of your replies"),
                 o("bf2a6acc", "Large Reply Boost"),
                 o("c2059276", "Have your replies boosted."),
@@ -7351,7 +7359,6 @@
                 o("b0c91a92", "Login or Signup to see what people on X are saying about this"),
                 o("d7071084", "Grok This"),
                 o("ee2200f4", "This story is a summary of posts on X made by grok. Story will evolve over time."),
-                o("dd225af8", "No people found."),
                 o("e1e5d552", "Edit your Circle"),
                 o("ec13f9cc", "There isn’t anyone in your Circle — yet"),
                 o("dab58e32", "Jendea gehitzen duzunean, hemen agertuko dira."),
@@ -7416,8 +7423,6 @@
                 o("bf4558fa", "Breakdown of your organic performance"),
                 o("c69069e6", "Times this post was seen on X"),
                 o("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
-                o("d8abdaa4", "Jarraitzaile berriak"),
-                o("c72f25a8", "Follows gained directly from this post"),
                 o("acc4cf12", "Number of profile views from this post"),
                 o("c7d0d1c4", "Number of clicks on any URL in this post"),
                 o("a4da7724", "Times people viewed the details about this post"),
@@ -7865,10 +7870,7 @@
                 o("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
                 o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                o("ce102a20", "Redirecting to Stripe"),
-                o("ddfd6718", "Payment Failed"),
-                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                o("a62359e6", "Verified Organization Settings");
+                o("ce102a20", "Redirecting to Stripe");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7907,7 +7909,10 @@
                     u(e, a)
                 );
             }
-            o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            o("ddfd6718", "Payment Failed"),
+                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                o("a62359e6", "Verified Organization Settings"),
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 o("i4dccc18", "Billing"),
                 o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 o("dac61c3c", "Account settings"),
@@ -8907,13 +8912,13 @@
                 o("ecda5f9e", "Engainagarria"),
                 o("a423473c", "Legez eskatzen den oharra"),
                 o("b3296688", "Visibility Limited"),
-                o("ccd32094", "Orain"),
-                o("abfcce0d", function (e) {
-                    return "Duela " + e.amountOfTime;
-                }),
+                o("ccd32094", "Orain");
+            o("abfcce0d", function (e) {
+                return "Duela " + e.amountOfTime;
+            }),
                 o("ae408b76", "You reposted"),
-                o("j355f008", "Pinned post");
-            o("habf9678", "Egileak finkatuta"),
+                o("j355f008", "Pinned post"),
+                o("habf9678", "Egileak finkatuta"),
                 o("db0798ed", function (e) {
                     return "Gaia: " + e.topicName;
                 }),
@@ -13056,6 +13061,7 @@
                 (f.a806578836 = m({ 1: f("eu").numberFormatter({ raw: "0" }) }, { pattern: "MMM d, E", timeSeparator: ":", months: { M: { 3: { 1: "urt.", 2: "ots.", 3: "mar.", 4: "api.", 5: "mai.", 6: "eka.", 7: "uzt.", 8: "abu.", 9: "ira.", 10: "urr.", 11: "aza.", 12: "abe." } } }, days: { E: { 1: { sun: "ig.", mon: "al.", tue: "ar.", wed: "az.", thu: "og.", fri: "or.", sat: "lr." } } } })),
                 (f.a1512806289 = m({ 1: f("eu").numberFormatter({ raw: "0" }) }, { pattern: "y MMM d, E", timeSeparator: ":", months: { M: { 3: { 1: "urt.", 2: "ots.", 3: "mar.", 4: "api.", 5: "mai.", 6: "eka.", 7: "uzt.", 8: "abu.", 9: "ira.", 10: "urr.", 11: "aza.", 12: "abe." } } }, days: { E: { 1: { sun: "ig.", mon: "al.", tue: "ar.", wed: "az.", thu: "og.", fri: "or.", sat: "lr." } } } })),
                 (f.a813967004 = m({ 1: f("eu").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d", timeSeparator: ":", months: { M: { 4: { 1: "urtarrila", 2: "otsaila", 3: "martxoa", 4: "apirila", 5: "maiatza", 6: "ekaina", 7: "uztaila", 8: "abuztua", 9: "iraila", 10: "urria", 11: "azaroa", 12: "abendua" } } } })),
+                (f.a1700632054 = m({ 1: f("eu").numberFormatter({ raw: "0" }), 2: f("eu").numberFormatter({ raw: "00" }) }, { pattern: "y('e')'ko' MMMM'ren' d('a') HH:mm:ss (z)", timeSeparator: ":", months: { M: { 4: { 1: "urtarrila", 2: "otsaila", 3: "martxoa", 4: "apirila", 5: "maiatza", 6: "ekaina", 7: "uztaila", 8: "abuztua", 9: "iraila", 10: "urria", 11: "azaroa", 12: "abendua" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (f.a545700427 = m({ 1: f("eu").numberFormatter({ raw: "0" }), 2: f("eu").numberFormatter({ raw: "00" }) }, { pattern: "y MMM d h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "urt.", 2: "ots.", 3: "mar.", 4: "api.", 5: "mai.", 6: "eka.", 7: "uzt.", 8: "abu.", 9: "ira.", 10: "urr.", 11: "aza.", 12: "abe." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (f.a926666217 = m({ 1: f("eu").numberFormatter({ raw: "0" }) }, { pattern: "y('e')'ko' MMMM'ren' d('a')", timeSeparator: ":", months: { M: { 4: { 1: "urtarrila", 2: "otsaila", 3: "martxoa", 4: "apirila", 5: "maiatza", 6: "ekaina", 7: "uztaila", 8: "abuztua", 9: "iraila", 10: "urria", 11: "azaroa", 12: "abendua" } } } })),
                 (f.a127485864 = m({ 1: f("eu").numberFormatter({ raw: "0" }), 2: f("eu").numberFormatter({ raw: "00" }) }, { pattern: "MMM d h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "urt.", 2: "ots.", 3: "mar.", 4: "api.", 5: "mai.", 6: "eka.", 7: "uzt.", 8: "abu.", 9: "ira.", 10: "urr.", 11: "aza.", 12: "abe." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
@@ -13077,6 +13083,7 @@
                 (f.a1557861213 = y(f("eu").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (f.b967243800 = y(f("eu").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (f.a1565249381 = y(f("eu").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (f.a1309224973 = y(f("eu").dateToPartsFormatter({ datetime: "long" }))),
                 (f.a973558996 = y(f("eu").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (f.a1828588416 = y(f("eu").dateToPartsFormatter({ date: "long" }))),
                 (f.a1942403071 = y(f("eu").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13142,6 +13149,7 @@
                 o("c0bdd345", f.a964066221),
                 o("aa2aa1a1", f.b967243800),
                 o("da44942d", f.a1565249381),
+                o("a54d3ef5", f.a1309224973),
                 o("bfbc051d", f.a973558996),
                 o("ba2e82a1", f.a1828588416),
                 o("fc209bb7", f.a1942403071),
@@ -13232,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.3a2c491a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.8cf0caea.js.map

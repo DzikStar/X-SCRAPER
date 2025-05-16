@@ -89,12 +89,11 @@
                         return s;
                     }.bind({ original: sqlite3Worker1Promiser }));
                 sqlite3Worker1Promiser.v2, globalThis.sqlite3Worker1Promiser;
-                const o = s.Z,
-                    n = "xchat";
-                let a = null,
-                    i = null,
-                    l = null;
-                async function c(e = "xchat.sqlite3") {
+                const o = s.Z;
+                let n = null,
+                    a = null,
+                    i = null;
+                async function l(e = "xchat.sqlite3") {
                     const r = await o({ print: console.log, printErr: console.error }),
                         t = function e(t) {
                             if (e.vfsName) return !1;
@@ -109,39 +108,39 @@
                         function s() {
                             return r
                                 .installOpfsSAHPoolVfs({ clearOnInit: !1, initialCapacity: 15, name: e })
-                                .then((e) => {
-                                    t(e.vfsName),
-                                        (a = new e.OpfsSAHPoolDb(`/${n}`)),
-                                        (l = new BroadcastChannel(n)),
-                                        (l.onmessage = ({ data: r }) => {
-                                            if (r?.workerId && r.requestId && r.param) {
-                                                const { workerId: t, requestId: s, param: o } = r,
-                                                    a = `/${t}-${n}`,
-                                                    i =
-                                                        g.get(a) ??
+                                .then((r) => {
+                                    t(r.vfsName),
+                                        (n = new r.OpfsSAHPoolDb(`/${e}`)),
+                                        (i = new BroadcastChannel(e)),
+                                        (i.onmessage = ({ data: t }) => {
+                                            if (t?.workerId && t.requestId && t.param) {
+                                                const { workerId: s, requestId: o, param: n } = t,
+                                                    a = `/${s}-${e}`,
+                                                    l =
+                                                        f.get(a) ??
                                                         (() => {
-                                                            const r = e.exportFile(`/${n}`);
-                                                            e.importDb(a, r);
-                                                            const t = new e.OpfsSAHPoolDb(a);
-                                                            return g.set(a, t), t;
+                                                            const t = r.exportFile(`/${e}`);
+                                                            r.importDb(a, t);
+                                                            const s = new r.OpfsSAHPoolDb(a);
+                                                            return f.set(a, s), s;
                                                         })();
-                                                l.postMessage({ requestId: s, response: i.exec(o) });
-                                            } else if ("before_logout" === r?.action) {
-                                                const r = e.getFileNames();
-                                                for (const t of r) e.unlink(t);
-                                                g.clear(), l.postMessage({ action: "before_logout_done" }), l.close();
+                                                i.postMessage({ requestId: o, response: l.exec(n) });
+                                            } else if ("before_logout" === t?.action) {
+                                                const e = r.getFileNames();
+                                                for (const t of e) r.unlink(t);
+                                                f.clear(), i.postMessage({ action: "before_logout_done" }), i.close();
                                             }
                                         });
-                                    const r = e.getFileNames();
-                                    for (const t of r) t === `/${n}` || g.has(t) || e.unlink(t);
+                                    const s = r.getFileNames();
+                                    for (const t of s) t === `/${e}` || f.has(t) || r.unlink(t);
                                 })
                                 .catch((e) => {});
                         }
-                        return new Promise((e, r) => {
-                            navigator.locks.request(n, { ifAvailable: !0 }, async (r) =>
-                                r
-                                    ? (e(s()), new Promise(() => {}))
-                                    : ((a = (function (e) {
+                        return new Promise((r, t) => {
+                            navigator.locks.request(e, { ifAvailable: !0 }, async (t) =>
+                                t
+                                    ? (r(s()), new Promise(() => {}))
+                                    : ((n = (function (e) {
                                           function r(r) {
                                               return new Promise((t, s) => {
                                                   const o = new BroadcastChannel(e),
@@ -149,40 +148,40 @@
                                                   (o.onmessage = ({ data: e }) => {
                                                       e && e.requestId === n && e.response && (o.close(), t(e.response));
                                                   }),
-                                                      o.postMessage({ workerId: f, requestId: n, param: r });
+                                                      o.postMessage({ workerId: u, requestId: n, param: r });
                                               });
                                           }
                                           return { exec: r };
-                                      })(n)),
-                                      e(),
-                                      void navigator.locks.request(n, async (e) => (s(), new Promise(() => {})))),
+                                      })(e)),
+                                      r(),
+                                      void navigator.locks.request(e, async (e) => (s(), new Promise(() => {})))),
                             );
                         });
                     }
-                    a = new r.oo1.DB(e, "c");
+                    n = new r.oo1.DB(e, "c");
                 }
-                async function d() {
+                async function c() {
                     const e = this.data;
                     switch (e?.action) {
                         case "exec":
                             if (!e.sql) throw new Error("exec: Missing query string");
-                            return postMessage({ id: e.id, results: { values: await a.exec({ sql: e.sql, bind: e.params, returnValue: "resultRows" }) } });
+                            return postMessage({ id: e.id, results: { values: await n.exec({ sql: e.sql, bind: e.params, returnValue: "resultRows" }) } });
                         case "begin_transaction":
-                            return postMessage({ id: e.id, results: await a.exec("BEGIN TRANSACTION;") });
+                            return postMessage({ id: e.id, results: await n.exec("BEGIN TRANSACTION;") });
                         case "end_transaction":
-                            return postMessage({ id: e.id, results: await a.exec("END TRANSACTION;") });
+                            return postMessage({ id: e.id, results: await n.exec("END TRANSACTION;") });
                         case "rollback_transaction":
-                            return postMessage({ id: e.id, results: await a.exec("ROLLBACK TRANSACTION;") });
+                            return postMessage({ id: e.id, results: await n.exec("ROLLBACK TRANSACTION;") });
                         default:
                             throw new Error(`Unsupported action: ${e?.action}`);
                     }
                 }
-                function u(e) {
+                function d(e) {
                     return postMessage({ id: this.data.id, error: e });
                 }
-                "function" == typeof importScripts && (self.onmessage = (e) => ("init_db" === e.data.action && (i = c(e.data.dbName)), i || (i = c()), i.then(d.bind(e)).catch(u.bind(e))));
-                const f = Math.random().toString(36).substring(2);
-                const g = new Map();
+                "function" == typeof importScripts && (self.onmessage = (e) => ("init_db" === e.data.action && (a = l(e.data.dbName)), a || (a = l()), a.then(c.bind(e)).catch(d.bind(e))));
+                const u = Math.random().toString(36).substring(2);
+                const f = new Map();
             },
         },
         s = {};
@@ -220,7 +219,7 @@
         }),
         (o.f = {}),
         (o.e = (e) => Promise.all(Object.keys(o.f).reduce((r, t) => (o.f[t](e, r), r), []))),
-        (o.u = (e) => e + "." + { "shared~~-5a94f17d": "58648df", "shared~~-ab3eb430": "2fd5a1f", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs": "7c45a9e" }[e] + "a.js"),
+        (o.u = (e) => e + "." + { "shared~~-5a94f17d": "58648df", "shared~~-ab3eb430": "9d83e4e", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs": "103d4e0" }[e] + "a.js"),
         (o.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
         (o.p = "https://abs.twimg.com/responsive-web/client-web/"),
         (() => {
@@ -242,4 +241,4 @@
         (o.x = () => Promise.all([o.e("shared~~-5a94f17d"), o.e("shared~~-ab3eb430")]).then(r));
     o.x();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite_worker_js.8696179a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite_worker_js.be0fe41a.js.map

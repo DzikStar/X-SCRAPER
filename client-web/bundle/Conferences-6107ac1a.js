@@ -67,26 +67,13 @@
                                                         name: "legacy",
                                                         plural: !1,
                                                         selections: [
-                                                            { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
-                                                    {
-                                                        alias: null,
-                                                        args: null,
-                                                        concreteType: "UserVerification",
-                                                        kind: "LinkedField",
-                                                        name: "verification",
-                                                        plural: !1,
-                                                        selections: [
-                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                                                        ],
-                                                        storageKey: null,
-                                                    },
+                                                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: "affiliates_highlighted_label",
                                                         args: null,
@@ -114,6 +101,19 @@
                                                         ],
                                                         storageKey: null,
                                                     },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserVerification",
+                                                        kind: "LinkedField",
+                                                        name: "verification",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
                                                     (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                 ],
                                                 type: "User",
@@ -128,7 +128,7 @@
                             },
                         ],
                     },
-                    params: { id: "VJgXk4wLC3zovEof51tFcA", metadata: {}, name: "RelayUserNameQuery", operationKind: "query", text: null },
+                    params: { id: "FDBDGh355k_cOLuc6DYCvg", metadata: {}, name: "RelayUserNameQuery", operationKind: "query", text: null },
                 };
             i.hash = "a80538e0fb22a0432d8e5d59383cd848";
             const o = i;
@@ -336,7 +336,7 @@
             };
         },
         965728: (e, l, n) => {
-            n.d(l, { C_: () => k, I5: () => f, K2: () => p, L$: () => u, Rb: () => y, nk: () => g, sI: () => _, xr: () => h });
+            n.d(l, { C_: () => k, I5: () => y, K2: () => p, L$: () => u, Rb: () => f, nk: () => g, sI: () => _, xr: () => h });
             var a = n(202784),
                 t = n(483677),
                 r = n(782578),
@@ -351,7 +351,7 @@
                 c = (e, l) => Math.min(l, e),
                 m = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
                 g = { transitionProperty: "background-color", transitionDuration: ".5s" },
-                f = (e, l) => {
+                y = (e, l) => {
                     const { containerHeight: n, containerWidth: a, mediaHeight: t, mediaWidth: s } = e,
                         i = s && t ? s / t : 1,
                         o = i > 1,
@@ -360,7 +360,7 @@
                         g = !o && t <= u ? c(n, u) : n;
                     return r.Z.getContainDimensions({ width: m, height: g }, i);
                 },
-                y = (e) => {
+                f = (e) => {
                     const l = e && e.ext_media_color && e.ext_media_color.palette;
                     return u(l);
                 },
@@ -489,4 +489,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-6107ac1a.27ea96ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-6107ac1a.00f56b4a.js.map

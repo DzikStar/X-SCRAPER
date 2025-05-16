@@ -487,6 +487,7 @@
                 o("cb165528", "خبروں کے فیچرز اور سیٹنگز"),
                 o("f8645654", "تحفظ اور اکاونٹ کی رسائی"),
                 o("j95edf76", "حفاظت"),
+                o("fd127276", "Manage passkeys"),
                 o("afe4a358", "ID verification"),
                 o("dd703318", "Two-factor تصدیق"),
                 o("b1686800", "سیکیورٹی کلیدوں کا نظم کریں"),
@@ -904,9 +905,9 @@
                 o("e126dd3f", "مزید جانیے"),
                 o("i821844f", "مزید جانیے"),
                 o("b0abbb17", "مزید جانیے"),
-                o("e7e0d88b", "مزید جانیے"),
-                o("i560665f", "Lمزید جانیے");
-            o("f6e774d9", "مزید جانیے"),
+                o("e7e0d88b", "مزید جانیے");
+            o("i560665f", "Lمزید جانیے"),
+                o("f6e774d9", "مزید جانیے"),
                 o("h486f755", "مزید جانیے"),
                 o("bab41dab", "مزید جانیے"),
                 o("e0ebdb29", "مزید جانیے"),
@@ -1025,12 +1026,18 @@
                 o("gfaf9a4a", "پاس ورڈ ری سیٹ کا تحفظ"),
                 o("h3cc8462", "For added protection, you’ll need to confirm your email address or phone number to reset your X password."),
                 o("b4bbdeb4", "Passkey"),
-                o("aeb7dcdc", "Enable Passkeys for added protection that may be tied to your biometrics."),
+                o("fe8aeb88", "Passkeys provide added protection that may be tied to your biometrics."),
                 o("dc096238", "Upload an approved form of identification to confirm the authenticity of your account. Your information will only be used to validate your identity and will be handled safely and securely."),
                 o("a999cb72", "اکاؤنٹ کی تبدیلیاں محفوظ کریں"),
                 o("dec3c9b8", "پاس ورڈ"),
                 o("b929aa74", "Re-enter your X password to save changes to your account."),
                 o("d1091f50", "پاس ورڈ بھول گئے؟"),
+                o("fd23fe4a", "Here are your passkeys across all your devices"),
+                o("d9921a6c", "Create a new passkey"),
+                o("i4855730", "Delete passkey"),
+                o("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 o("d97c07be", "Manage Creator Subscriptions"),
                 o("efa291da", "View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app."),
                 o("j7f5c6aa", "You don’t have any Subscriptions yet"),
@@ -1914,13 +1921,13 @@
                 o("d8047cc8", "شائع کریں"),
                 o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                o("e52d4998", "Choose your audience"),
-                o("d7985b24", "Choose who can reply to this Article"),
+                o("e52d4998", "Choose your audience");
+            o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
-                o("b6510e68", "Copy your Article’s URL so you can share it.");
-            o("e4a6e006", "کچھ نقص واقع ہوگیا- براہِ کرم دوبارہ کوشش کریں۔"),
+                o("b6510e68", "Copy your Article’s URL so you can share it."),
+                o("e4a6e006", "کچھ نقص واقع ہوگیا- براہِ کرم دوبارہ کوشش کریں۔"),
                 o("eff483e0", "After you publish, get a link to share the Article."),
                 o("ca15dd4e", "مسودہ"),
                 o("bb40bf66", "شائع ہوا"),
@@ -2970,27 +2977,23 @@
                 o("b7388a56", "فوٹر"),
                 o("hdabc3fc", "خدمت کی شرائط"),
                 o("bc6efc72", "رازداری کی پالیسی"),
-                o("h3161192", "کوکیز پالیسی"),
-                o("a7de64de", "اشتہارات کی معلومات"),
+                o("h3161192", "کوکیز پالیسی");
+            o("a7de64de", "اشتہارات کی معلومات"),
                 o("jb0a4c36", "بلاگ"),
                 o("ce6d095a", "طرز زندگی"),
                 o("e0adec82", "برانڈ ذرائع"),
-                o("df1b7550", "مارکیٹنگ");
-            o("he258678", "X for Business"),
+                o("df1b7550", "مارکیٹنگ"),
+                o("he258678", "X for Business"),
                 o("c6f58084", "ڈویلپرز"),
                 o("d83f18d2", "ڈائریکٹری"),
                 o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
-                o("af781666", "What do people think?"),
-                o("ad35153e", "beta"),
-                o("a1f414ee", "Share thoughts"),
                 o("fbf83158", "Warning: Payment failed"),
                 o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
-                o("da00e00a", "Try the new News"),
-                o("c40666d8", "Try it"),
                 o("j66b95a2", "In-Depth News"),
+                o("ad35153e", "beta"),
                 o("b58d2bd2", "Relevant Posts"),
                 o("efe6ef9e", "View post"),
                 o("b3d183ce", "Post with replies"),
@@ -3888,11 +3891,11 @@
                 o("ddeb0a3c", "پیش ہے کمیونٹی۔ لوگوں کو لائک کریں؟ ایک نظر ڈالیں۔"),
                 o("e111f531", function (e) {
                     return e.count + " میں  ہم آہنگ";
-                }),
-                o("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
                 });
-            o("e3275464", "بھیجیں"),
+            o("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
+            }),
+                o("e3275464", "بھیجیں"),
                 o("cededf2a", "ہوسٹ"),
                 o("i2caef48", "ساتھی میزبان"),
                 o("j245c654", "مقررین"),
@@ -4363,8 +4366,8 @@
                 o("g01599b6", "Response 1"),
                 o("e02694e0", "Response 2"),
                 o("h6867fcc", "I prefer this response"),
-                o("d07488a6", "Get the Android app"),
-                o("d9cfe70c", "Access advanced Grok features"),
+                o("acc4496c", "Try Grok Voice mode"),
+                o("jd36d190", "Access advanced features with Grok Android app"),
                 o("hf9afab0", "Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 o("ef3b3f04", "Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 o("b43636b8", "Introducing Grok 3"),
@@ -4926,9 +4929,9 @@
                 o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
-                o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access");
-            o("gf898b70", "Advanced Search"),
+                o("i0e5bf4c", "Your videos");
+            o("ed99baea", "Early Beta Access"),
+                o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5841,6 +5844,8 @@
                 o("g880d8c0", "صارف کے اندراج کی حیثیت کا ڈیٹا ابھی تک دستیاب نہیں ہے۔"),
                 o("ab1b3d38", "Note request data isn’t available yet"),
                 o("c43fb933", "X Developer Agreement and Policy"),
+                o("af781666", "What do people think?"),
+                o("a1f414ee", "Share thoughts"),
                 o("ed88e742", "موضوع ی لنک کو کاپی کریں"),
                 o("h92fe1be", "بدقسمتی سے، اس وقت کمیونٹی نوٹس آپ کیلئے دستیاب نہیں ہیں۔"),
                 o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں"),
@@ -5890,11 +5895,11 @@
                 }),
                 o("daca8a2c", "Open in Dock"),
                 o("e3aac82a", "نشریہ ہو رہا ہے"),
-                o("i0ed3f4e", "ایونٹ کی تصویر"),
-                o("cbae35fa", "نشریہ کی رپورٹ کریں"),
+                o("i0ed3f4e", "ایونٹ کی تصویر");
+            o("cbae35fa", "نشریہ کی رپورٹ کریں"),
                 o("fd12ab58", "Collection posts"),
-                o("a226497c", "ایک نئی کمیونٹی بنائيں");
-            o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
+                o("a226497c", "ایک نئی کمیونٹی بنائيں"),
+                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
                 o("b732a4cc", "When you do, you’ll see their posts here."),
                 o("hff48914", "No posts could be found at this time."),
                 o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
@@ -6458,7 +6463,10 @@
                 o("f7d1a8e0", "اینڈروئیڈ ایپ"),
                 o("aab2fae0", "iOS ایپ"),
                 o("a35d9c9a", "وسائل"),
+                o("da00e00a", "Try the new News"),
+                o("c40666d8", "Try it"),
                 o("ic61c5fc", "اسکرول کرکے سب سے اوپر جائیں"),
+                o("dd225af8", "No people found."),
                 o("i6671128", "You’ve unlocked more on X"),
                 o("d5e4d0a6", "آپ گفتگو میں شامل ہو سکتے ہیں اور مزید آسانی سے دیگر افراد کے ساتھ رابطہ قائم کر سکتے ہیں:"),
                 o("a97bc07e", "Unlock more on X"),
@@ -6885,14 +6893,14 @@
                 o("b6b5dc94", "Become verified"),
                 o("b06db848", "Stand out from others on the platform"),
                 o("e3e3a97c", "Earn a share of revenue from your posts"),
-                o("f15bc24e", "Increased Grok limits"),
-                o("c4666e1c", "More usage of Grok 3, our latest model"),
+                o("f15bc24e", "Increased Grok limits");
+            o("c4666e1c", "More usage of Grok 3, our latest model"),
                 o("he74ae7a", "Highest Grok usage limits"),
                 o("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
-                o("ee54c3de", "Save videos straight to your device");
-            o("ae03594c", "Small reply boost"),
+                o("ee54c3de", "Save videos straight to your device"),
+                o("ae03594c", "Small reply boost"),
                 o("e6bb08c0", "Increase the visibility of your replies"),
                 o("bf2a6acc", "Large Reply Boost"),
                 o("c2059276", "Have your replies boosted."),
@@ -7352,7 +7360,6 @@
                 o("b0c91a92", "Login or Signup to see what people on X are saying about this"),
                 o("d7071084", "Grok This"),
                 o("ee2200f4", "This story is a summary of posts on X made by grok. Story will evolve over time."),
-                o("dd225af8", "No people found."),
                 o("e1e5d552", "Edit your Circle"),
                 o("ec13f9cc", "There isn’t anyone in your Circle — yet"),
                 o("dab58e32", "جب آپ لوگوں کو شامل کريں گے تو وہ یہاں دکھائی دیں گے۔"),
@@ -7417,8 +7424,6 @@
                 o("bf4558fa", "Breakdown of your organic performance"),
                 o("c69069e6", "Times this post was seen on X"),
                 o("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
-                o("d8abdaa4", "نئے فالوورز"),
-                o("c72f25a8", "Follows gained directly from this post"),
                 o("acc4cf12", "Number of profile views from this post"),
                 o("c7d0d1c4", "Number of clicks on any URL in this post"),
                 o("a4da7724", "Times people viewed the details about this post"),
@@ -7866,10 +7871,7 @@
                 o("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
                 o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                o("ce102a20", "Redirecting to Stripe"),
-                o("ddfd6718", "Payment Failed"),
-                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                o("a62359e6", "Verified Organization Settings");
+                o("ce102a20", "Redirecting to Stripe");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7908,7 +7910,10 @@
                     c(e, t)
                 );
             }
-            o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            o("ddfd6718", "Payment Failed"),
+                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                o("a62359e6", "Verified Organization Settings"),
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 o("i4dccc18", "Billing"),
                 o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 o("dac61c3c", "Account settings"),
@@ -8908,13 +8913,13 @@
                 o("ecda5f9e", "گمراہ کن"),
                 o("a423473c", "قانونی طور پر درکار نوٹس"),
                 o("b3296688", "Visibility Limited"),
-                o("ccd32094", "اب"),
-                o("abfcce0d", function (e) {
-                    return e.amountOfTime + " پہلے";
-                }),
+                o("ccd32094", "اب");
+            o("abfcce0d", function (e) {
+                return e.amountOfTime + " پہلے";
+            }),
                 o("ae408b76", "You reposted"),
-                o("j355f008", "Pinned post");
-            o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا"),
+                o("j355f008", "Pinned post"),
+                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا"),
                 o("db0798ed", function (e) {
                     return e.topicName + " موضوع";
                 }),
@@ -13058,6 +13063,7 @@
                 (l.a295144641 = g({ 1: l("ur").numberFormatter({ raw: "0" }) }, { pattern: "E، d MMM", timeSeparator: ":", days: { E: { 1: { sun: "اتوار", mon: "پیر", tue: "منگل", wed: "بدھ", thu: "جمعرات", fri: "جمعہ", sat: "ہفتہ" } } }, months: { M: { 3: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } } })),
                 (l.b1456751868 = g({ 1: l("ur").numberFormatter({ raw: "0" }) }, { pattern: "E، d MMM، y", timeSeparator: ":", days: { E: { 1: { sun: "اتوار", mon: "پیر", tue: "منگل", wed: "بدھ", thu: "جمعرات", fri: "جمعہ", sat: "ہفتہ" } } }, months: { M: { 3: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } } })),
                 (l.a302532809 = g({ 1: l("ur").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } } })),
+                (l.a1961228841 = g({ 1: l("ur").numberFormatter({ raw: "0" }), 2: l("ur").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM، y h:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } }, dayPeriods: { am: "AM", pm: "PM" }, gmtFormat: "GMT {0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (l.b1316289224 = g({ 1: l("ur").numberFormatter({ raw: "0" }), 2: l("ur").numberFormatter({ raw: "00" }) }, { pattern: "d MMM، y h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (l.b1003732068 = g({ 1: l("ur").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM، y", timeSeparator: ":", months: { M: { 4: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } } })),
                 (l.a1452895003 = g({ 1: l("ur").numberFormatter({ raw: "0" }), 2: l("ur").numberFormatter({ raw: "00" }) }, { pattern: "d MMM h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "جنوری", 2: "فروری", 3: "مارچ", 4: "اپریل", 5: "مئی", 6: "جون", 7: "جولائی", 8: "اگست", 9: "ستمبر", 10: "اکتوبر", 11: "نومبر", 12: "دسمبر" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
@@ -13079,6 +13085,7 @@
                 (l.a1046427018 = w(l("ur").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (l.a358165339 = w(l("ur").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (l.a1053815186 = w(l("ur").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (l.a1569821760 = w(l("ur").dateToPartsFormatter({ datetime: "long" }))),
                 (l.b888430655 = w(l("ur").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (l.b101809869 = w(l("ur").dateToPartsFormatter({ date: "long" }))),
                 (l.b1027155086 = w(l("ur").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13144,6 +13151,7 @@
                 o("c0bdd345", l.b1075916454),
                 o("aa2aa1a1", l.a358165339),
                 o("da44942d", l.a1053815186),
+                o("a54d3ef5", l.a1569821760),
                 o("bfbc051d", l.b888430655),
                 o("ba2e82a1", l.b101809869),
                 o("fc209bb7", l.b1027155086),
@@ -13234,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.2e4fe58a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.3027f96a.js.map

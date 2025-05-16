@@ -29,10 +29,10 @@
             var S = n(583335),
                 Z = n(269011),
                 k = n(335632),
-                C = n(733487),
-                v = n(962741);
-            const P = { ...(0, k.G)({}), [v.ZP.User]: (0, Z.Z)({ decoration: ({ userId: e }) => r.createElement(S.Z, { userId: e }) }) },
-                x = { ...(0, k.G)({}), [v.ZP.User]: (0, Z.Z)({ decoration: ({ userId: e }) => r.createElement(C.Z, { userId: e }) }) };
+                v = n(733487),
+                C = n(962741);
+            const P = { ...(0, k.G)({}), [C.ZP.User]: (0, Z.Z)({ decoration: ({ userId: e }) => r.createElement(S.Z, { userId: e }) }) },
+                x = { ...(0, k.G)({}), [C.ZP.User]: (0, Z.Z)({ decoration: ({ userId: e }) => r.createElement(v.Z, { userId: e }) }) };
             var A = n(152469);
             const F = c().daef29b8,
                 M = r.createElement(c().I18NFormatMessage, { $i18n: "b0b13519" }, r.createElement(a.ZP, { link: (0, i.ju)("https://help.x.com/using-twitter/twitter-mute") }, c().ec202165)),
@@ -97,8 +97,8 @@
                 S = d().cfcda0e6,
                 Z = d().c75b9b2a,
                 k = d().f39b9c9e,
-                C = d().d227f940,
-                v = d().b210936e,
+                v = d().d227f940,
+                C = d().b210936e,
                 P = (0, i.ju)("https://support.x.com/articles/20169398"),
                 x = { filter_not_following: "people_you_follow_only", filter_not_followed_by: "filter_not_following_me", filter_new_users: "new_users", filter_default_profile_image: "default_profile_image", filter_no_confirmed_email: "no_confirmed_email", filter_no_confirmed_phone: "no_confirmed_phone" };
             class A extends r.Component {
@@ -118,7 +118,7 @@
                         }),
                         (this._renderNotificationFilters = () => {
                             const { notificationFilters: e } = this.props;
-                            return r.createElement(a.Z, null, r.createElement(s.Z, { text: b }), r.createElement(o.Z, { checked: e.filter_not_following, label: y, name: "filter_not_following", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_not_followed_by, label: S, name: "filter_not_followed_by", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_new_users, label: Z, name: "filter_new_users", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_default_profile_image, label: k, name: "filter_default_profile_image", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_no_confirmed_email, label: C, name: "filter_no_confirmed_email", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_no_confirmed_phone, label: v, name: "filter_no_confirmed_phone", onChange: this._handleItemChanged }), r.createElement(l.ZP, { color: "gray700", size: "subtext2", style: p.Z.infoText }, r.createElement(d().I18NFormatMessage, { $i18n: "eb96a831" }, r.createElement(l.ZP, { link: P }, d().ed0df10b))));
+                            return r.createElement(a.Z, null, r.createElement(s.Z, { text: b }), r.createElement(o.Z, { checked: e.filter_not_following, label: y, name: "filter_not_following", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_not_followed_by, label: S, name: "filter_not_followed_by", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_new_users, label: Z, name: "filter_new_users", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_default_profile_image, label: k, name: "filter_default_profile_image", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_no_confirmed_email, label: v, name: "filter_no_confirmed_email", onChange: this._handleItemChanged }), r.createElement(o.Z, { checked: e.filter_no_confirmed_phone, label: C, name: "filter_no_confirmed_phone", onChange: this._handleItemChanged }), r.createElement(l.ZP, { color: "gray700", size: "subtext2", style: p.Z.infoText }, r.createElement(d().I18NFormatMessage, { $i18n: "eb96a831" }, r.createElement(l.ZP, { link: P }, d().ed0df10b))));
                         });
                 }
                 componentDidMount() {
@@ -132,7 +132,7 @@
             const F = g(A);
         },
         450425: (e, t, n) => {
-            n.r(t), n.d(t, { DeviceFollowingScreen: () => v, default: () => P });
+            n.r(t), n.d(t, { DeviceFollowingScreen: () => C, default: () => P });
             var r = n(202784),
                 a = n(614983),
                 i = n.n(a),
@@ -155,18 +155,18 @@
                 S = l().c460d332,
                 Z = l().a820d092,
                 k = l().ha45c9e4,
-                C = () => r.createElement(s.Z, { header: y, message: S });
-            class v extends r.Component {
+                v = () => r.createElement(s.Z, { header: y, message: S });
+            class C extends r.Component {
                 render() {
                     const { viewerUserId: e } = this.context,
                         { location: t } = this.props;
                     i()(!!e, "viewerUserId must be defined");
                     const n = (0, m.R)(e);
-                    return r.createElement(u.nO, { namespace: b }, r.createElement(d.Z, null, r.createElement(p.Z, { location: t, title: k }, r.createElement(h.Z, { entryConfiguration: E, loadingAccessibilityLabel: Z, module: n, renderEmptyState: C, title: k }))));
+                    return r.createElement(u.nO, { namespace: b }, r.createElement(d.Z, null, r.createElement(p.Z, { location: t, title: k }, r.createElement(h.Z, { entryConfiguration: E, loadingAccessibilityLabel: Z, module: n, renderEmptyState: v, title: k }))));
                 }
             }
-            v.contextType = c.rC;
-            const P = v;
+            C.contextType = c.rC;
+            const P = C;
         },
         439031: (e, t, n) => {
             n.r(t), n.d(t, { EmailNotificationsScreen: () => F, default: () => M, emailSettingsLabels: () => x });
@@ -198,8 +198,8 @@
                     .withAnalytics({ page: "settings", section: "email_notifications" });
             const Z = h().e75f25a8,
                 k = h().af045060,
-                C = h().cf378ff8,
-                v = h().f823bbbe,
+                v = h().cf378ff8,
+                C = h().f823bbbe,
                 P = h().a40e37f2,
                 x = { send_twitter_emails: h().e75f25a8, send_email_vit_weekly: h().e8eb54a0, send_network_activity_email: h().ib80b0f2, send_new_direct_text_email: h().i58a274c, send_shared_tweet_email: h().ba58e6b0, send_network_digest: h().fae2c81a, send_performance_digest: h().f7b09bb4, send_email_newsletter: h().d3978554, send_activation_email: h().bdccb81c, send_resurrection_email: h().c3d47fe6, send_partner_email: h().af8caf3e, send_survey_email: h().hc076ee4, send_follow_recs_email: h().ddfe3776, send_similar_people_email: h().d17ba8c2, send_smb_sales_marketing_email: h().bcf50a1a },
                 A = [
@@ -231,7 +231,7 @@
                         }),
                         (this._render = () => {
                             const { isVerified: e } = this.props;
-                            return r.createElement(a.Z, null, this._renderBooleanSetting("send_twitter_emails", { helpText: P, learnMoreLink: (0, o.ju)("https://help.x.com/managing-your-account/updating-email-preferences#tweet-activity"), type: "switch", withBottomBorder: e }), e ? r.createElement(r.Fragment, null, r.createElement(l.Z, null), r.createElement(c.Z, { text: v }), this._renderBooleanSetting("send_email_vit_weekly")) : null, r.createElement(l.Z, null), r.createElement(c.Z, { text: k }), this._renderBooleanSetting("send_network_activity_email"), this._renderBooleanSetting("send_new_direct_text_email"), this._renderBooleanSetting("send_shared_tweet_email"), this._renderNetworkDigestSetting("send_network_digest"), this._renderPerformanceDigestSetting("send_performance_digest", { withBottomBorder: !1 }), r.createElement(l.Z, null), r.createElement(c.Z, { text: C }), this._renderBooleanSetting("send_email_newsletter"), this._renderBooleanSetting("send_activation_email"), this._renderBooleanSetting("send_resurrection_email"), this._renderBooleanSetting("send_partner_email"), this._renderBooleanSetting("send_survey_email"), this._renderBooleanSetting("send_follow_recs_email"), this._renderBooleanSetting("send_similar_people_email"), this._renderBooleanSetting("send_smb_sales_marketing_email", { withBottomBorder: !1 }));
+                            return r.createElement(a.Z, null, this._renderBooleanSetting("send_twitter_emails", { helpText: P, learnMoreLink: (0, o.ju)("https://help.x.com/managing-your-account/updating-email-preferences#tweet-activity"), type: "switch", withBottomBorder: e }), e ? r.createElement(r.Fragment, null, r.createElement(l.Z, null), r.createElement(c.Z, { text: C }), this._renderBooleanSetting("send_email_vit_weekly")) : null, r.createElement(l.Z, null), r.createElement(c.Z, { text: k }), this._renderBooleanSetting("send_network_activity_email"), this._renderBooleanSetting("send_new_direct_text_email"), this._renderBooleanSetting("send_shared_tweet_email"), this._renderNetworkDigestSetting("send_network_digest"), this._renderPerformanceDigestSetting("send_performance_digest", { withBottomBorder: !1 }), r.createElement(l.Z, null), r.createElement(c.Z, { text: v }), this._renderBooleanSetting("send_email_newsletter"), this._renderBooleanSetting("send_activation_email"), this._renderBooleanSetting("send_resurrection_email"), this._renderBooleanSetting("send_partner_email"), this._renderBooleanSetting("send_survey_email"), this._renderBooleanSetting("send_follow_recs_email"), this._renderBooleanSetting("send_similar_people_email"), this._renderBooleanSetting("send_smb_sales_marketing_email", { withBottomBorder: !1 }));
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchEmailSettingsIfNeeded: t } = this.props;
@@ -267,7 +267,7 @@
             const M = S(F);
         },
         632351: (e, t, n) => {
-            n.r(t), n.d(t, { FilterPage: () => k, default: () => C });
+            n.r(t), n.d(t, { FilterPage: () => k, default: () => v });
             var r = n(202784),
                 a = n(688715),
                 i = n(943401),
@@ -318,7 +318,7 @@
                     ),
                 );
             }
-            const C = f(k);
+            const v = f(k);
         },
         934634: (e, t, n) => {
             n.r(t), n.d(t, { MuteKeywordDetailScreen: () => Y, default: () => X });
@@ -345,14 +345,14 @@
                 S = n(264922),
                 Z = n(71620),
                 k = n(668214),
-                C = n(642721),
-                v = n(601576);
+                v = n(642721),
+                C = n(601576);
             const P = (e, t) => t.match.params.mutedKeywordId,
-                x = (e, t) => C.mz(e, P(0, t)),
+                x = (e, t) => v.mz(e, P(0, t)),
                 A = (e, t) => !!P(0, t),
                 F = (0, k.Z)()
-                    .propsFromState(() => ({ defaultOptions: C.Lk, discouragedKeywords: C.fd, fetchStatus: C.UD, isEditing: A, mutedKeyword: x }))
-                    .propsFromActions(() => ({ addMutedKeyword: C.AE, addToast: v.fz, createLocalApiErrorHandler: (0, Z.zr)("MUTED_KEYWORD_DETAIL"), fetchDefaultOptionsIfNeeded: C.xZ, fetchDiscouragedKeywordsIfNeeded: C.UK, fetchMutedKeywordsIfNeeded: C.$o, updateDefaultOptions: C.kM, updateMutedKeyword: C.ck }))
+                    .propsFromState(() => ({ defaultOptions: v.Lk, discouragedKeywords: v.fd, fetchStatus: v.UD, isEditing: A, mutedKeyword: x }))
+                    .propsFromActions(() => ({ addMutedKeyword: v.AE, addToast: C.fz, createLocalApiErrorHandler: (0, Z.zr)("MUTED_KEYWORD_DETAIL"), fetchDefaultOptionsIfNeeded: v.xZ, fetchDiscouragedKeywordsIfNeeded: v.UK, fetchMutedKeywordsIfNeeded: v.$o, updateDefaultOptions: v.kM, updateMutedKeyword: v.ck }))
                     .withAnalytics({ page: "settings", section: "notifications", component: "mute_keyword", element: "add" }),
                 M = _().bdbf8f4e,
                 T = _().h43e2ea8,
@@ -555,10 +555,10 @@
                 S = n(668214),
                 Z = n(642721),
                 k = n(601576);
-            const C = (e, t) => (0, w.t5)(e, w.DW),
-                v = (e, t) => (0, w.t5)(e, w.pJ),
+            const v = (e, t) => (0, w.t5)(e, w.DW),
+                C = (e, t) => (0, w.t5)(e, w.pJ),
                 P = (0, S.Z)()
-                    .propsFromState(() => ({ mutedKeywords: Z.WW, fetchStatus: Z.UD, shouldShowMuteEducationTip: C, shouldShowUnmuteEducationTip: v }))
+                    .propsFromState(() => ({ mutedKeywords: Z.WW, fetchStatus: Z.UD, shouldShowMuteEducationTip: v, shouldShowUnmuteEducationTip: C }))
                     .propsFromActions(() => ({ addFlag: w.pj, addToast: k.fz, createLocalApiErrorHandler: (0, y.zr)("MUTED_KEYWORDS"), deleteMutedKeyword: Z.R_, fetchMutedKeywordsIfNeeded: Z.$o }))
                     .withAnalytics({ page: "settings", section: "notifications", component: "mute_keyword", element: "list" }),
                 x = u().aa09e528,
@@ -646,7 +646,7 @@
                 z = P(R);
         },
         461366: (e, t, n) => {
-            n.r(t), n.d(t, { PreferencesPage: () => k, default: () => C });
+            n.r(t), n.d(t, { PreferencesPage: () => k, default: () => v });
             var r = n(202784),
                 a = n(688715),
                 i = n(943401),
@@ -674,7 +674,7 @@
                 const n = (0, h.Zy)().has("/settings/email_notifications");
                 return r.createElement(d.nO, { namespace: Z }, r.createElement(c.Z, null, r.createElement(u.Z, { location: t, title: E }, r.createElement(i.Z, { description: b, learnMoreLabel: S, learnMoreLink: y }), e ? r.createElement(s.Z, { label: w, link: "/settings/push_notifications" }) : null, n && r.createElement(s.Z, { label: g, link: "/settings/email_notifications" }))));
             }
-            const C = f(k);
+            const v = f(k);
         },
         593077: (e, t, n) => {
             n.r(t), n.d(t, { PushNotificationsScreen: () => z, default: () => V });
@@ -752,14 +752,14 @@
                 S = n(704279),
                 Z = n(257166),
                 k = n(454319),
-                C = n(601576),
-                v = n(919022);
+                v = n(601576),
+                C = n(919022);
             const P = (e) => {
-                    const t = v.ZP.selectViewerUser(e);
+                    const t = C.ZP.selectViewerUser(e);
                     return t && t.verified;
                 },
                 x = (e) => {
-                    const t = v.ZP.selectViewerUser(e);
+                    const t = C.ZP.selectViewerUser(e);
                     return t && t.is_blue_verified;
                 },
                 A = (e, t) => {
@@ -768,7 +768,7 @@
                 },
                 F = (0, y.Z)()
                     .propsFromState(() => ({ fetchStatus: Z.selectPushSettingsFetchStatus, isVerified: P, isBlueVerified: x, pushStatus: Z.selectBrowserPushStatus, pushSettings: Z.selectPushSettings, pushTemplate: Z.selectPushTemplate, hasMultiAccount: A }))
-                    .propsFromActions(() => ({ addToast: C.fz, createLocalApiErrorHandler: (0, b.zr)("SETTINGS_NOTIFICATIONS_PUSH_SCREEN"), fetchPushSettingsIfNeeded: Z.fetchPushSettingsIfNeeded, pushSubscribe: Z.pushSubscribe, removePushDeviceIfSubscribed: Z.removePushDeviceIfSubscribed, scribeAction: S.n, scribePageImpression: S.L, updatePushNotificationSettings: Z.updatePushNotificationSettings })),
+                    .propsFromActions(() => ({ addToast: v.fz, createLocalApiErrorHandler: (0, b.zr)("SETTINGS_NOTIFICATIONS_PUSH_SCREEN"), fetchPushSettingsIfNeeded: Z.fetchPushSettingsIfNeeded, pushSubscribe: Z.pushSubscribe, removePushDeviceIfSubscribed: Z.removePushDeviceIfSubscribed, scribeAction: S.n, scribePageImpression: S.L, updatePushNotificationSettings: Z.updatePushNotificationSettings })),
                 M = o().hee41732,
                 T = o().dcef34ac,
                 N = o().a39f706e,
@@ -823,6 +823,59 @@
             z.contextType = c.rC;
             const V = F(z);
         },
+        142173: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => C });
+            var r = n(507421),
+                a = n(202784),
+                i = n(325686),
+                s = (n(585488), n(712696)),
+                o = n.n(s),
+                l = n(779610),
+                c = n(242454),
+                d = n(943401),
+                h = n(674132),
+                u = n.n(h),
+                m = n(652904),
+                p = n(736063),
+                _ = n(264922);
+            const f = { context: "PasskeyManagement" },
+                w = u().fd127276,
+                g = u().fd23fe4a,
+                E = u().d9921a6c,
+                b = u().i4855730,
+                y = u().b4bbdeb4,
+                S = u().a6acdc67,
+                Z = u().a54d3ef5,
+                k = r.Z;
+            function v() {
+                const [e, t] = a.useState(0),
+                    n = o()(k, {}, { fetchKey: e, fetchPolicy: "store-and-network" }),
+                    r = n.viewer_v2?.user_results?.result?.passkey_auth_settings_with_view ?? [];
+                return a.createElement(
+                    i.Z,
+                    {
+                        onFocus: function () {
+                            t((e) => e + 1);
+                        },
+                    },
+                    r.length
+                        ? a.createElement(
+                              a.Fragment,
+                              null,
+                              r.map(({ client_type: e, created_at_ms: t, id: n }) => {
+                                  let r;
+                                  return t && (r = S({ date: Z(new Date(parseInt(t, 10))) })), a.createElement(l.Z, { description: r, key: n, label: e ?? y });
+                              }),
+                              a.createElement(c.Z, { align: "left", color: "primary", label: E, link: "https://x.com/i/flow/passkey_registration" }),
+                              a.createElement(c.Z, { align: "left", color: "red500", label: b, link: "https://x.com/i/flow/passkey_deletion" }),
+                          )
+                        : a.createElement(c.Z, { align: "left", color: "primary", label: E, link: "https://x.com/i/flow/passkey_registration" }),
+                );
+            }
+            function C({ location: e }) {
+                return a.createElement(m.Z, null, a.createElement(_.Z, { location: e, title: w }, a.createElement(d.Z, { description: g }), a.createElement(p.H, { errorConfig: f }, a.createElement(v, null))));
+            }
+        },
         621547: (e, t, n) => {
             n.r(t), n.d(t, { PasswordScreen: () => B, default: () => O });
             var r = n(202784),
@@ -851,8 +904,8 @@
                     .propsFromActions(() => ({ addToast: S.fz, changePassword: y.Z, createLocalApiErrorHandler: (0, _.zr)("SETTINGS_PASSWORD_SCREEN"), fetchApplicationsIfNeeded: b.wz }))
                     .withAnalytics({ page: "settings", section: "password" }),
                 k = h().ab1f7ee0,
-                C = h().d241169c,
-                v = h().d1091f50,
+                v = h().d241169c,
+                C = h().d1091f50,
                 P = h().a9bc3044,
                 x = h().b8c03cfc,
                 A = h().b731d32c,
@@ -870,7 +923,7 @@
                         (this._render = () => {
                             const { applicationCount: e } = this.props,
                                 { current_password: t, currentPasswordError: n, new_password: i, newPasswordError: d, password_confirmation: u, passwordConfirmationError: m } = this.state;
-                            return r.createElement(a.Z, null, r.createElement(s.Z, { errorText: n, helperText: r.createElement(o.ZP, { link: L }, v), invalid: !!n, label: C, name: "current_password", onChange: this._handleItemChanged, type: "password", value: t }), r.createElement(l.Z, null), r.createElement(s.Z, { errorText: d, invalid: !!d, label: P, name: "new_password", onChange: this._handleItemChanged, type: "password", value: i }), r.createElement(s.Z, { errorText: m, invalid: !!m, label: x, name: "password_confirmation", onChange: this._handleItemChanged, type: "password", value: u }), r.createElement(l.Z, null), e ? r.createElement(c.Z, null, r.createElement(o.ZP, { color: "gray700" }, r.createElement(h().I18NFormatMessage, { $i18n: "f05afae5" }, r.createElement(o.ZP, { link: "/settings/applications" }, I({ applicationCount: e })), r.createElement(o.ZP, { link: D }, h().j25601d9)))) : null);
+                            return r.createElement(a.Z, null, r.createElement(s.Z, { errorText: n, helperText: r.createElement(o.ZP, { link: L }, C), invalid: !!n, label: v, name: "current_password", onChange: this._handleItemChanged, type: "password", value: t }), r.createElement(l.Z, null), r.createElement(s.Z, { errorText: d, invalid: !!d, label: P, name: "new_password", onChange: this._handleItemChanged, type: "password", value: i }), r.createElement(s.Z, { errorText: m, invalid: !!m, label: x, name: "password_confirmation", onChange: this._handleItemChanged, type: "password", value: u }), r.createElement(l.Z, null), e ? r.createElement(c.Z, null, r.createElement(o.ZP, { color: "gray700" }, r.createElement(h().I18NFormatMessage, { $i18n: "f05afae5" }, r.createElement(o.ZP, { link: "/settings/applications" }, I({ applicationCount: e })), r.createElement(o.ZP, { link: D }, h().j25601d9)))) : null);
                         }),
                         (this._handleFetchApps = () => {
                             const { createLocalApiErrorHandler: e, fetchApplicationsIfNeeded: t } = this.props;
@@ -913,4 +966,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-cff17ecc.042be80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-cff17ecc.63722e7a.js.map

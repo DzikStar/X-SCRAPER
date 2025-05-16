@@ -483,6 +483,7 @@
                 e("cb165528", "Uutisominaisuudet ja -asetukset"),
                 e("f8645654", "Turvallisuus ja tilin käyttö"),
                 e("j95edf76", "Turvallisuus"),
+                e("fd127276", "Hallitse todentamisavaimia"),
                 e("afe4a358", "Tunnistautuminen"),
                 e("dd703318", "Kaksivaiheinen tunnistus"),
                 e("b1686800", "Hallitse suojausavaimia"),
@@ -900,9 +901,9 @@
                 e("e126dd3f", "Lue lisää"),
                 e("i821844f", "Lue lisää"),
                 e("b0abbb17", "Lue lisää"),
-                e("e7e0d88b", "Lue lisää"),
-                e("i560665f", "Lue lisää");
-            e("f6e774d9", "Lue lisää"),
+                e("e7e0d88b", "Lue lisää");
+            e("i560665f", "Lue lisää"),
+                e("f6e774d9", "Lue lisää"),
                 e("h486f755", "Lue lisää"),
                 e("bab41dab", "Lue lisää"),
                 e("e0ebdb29", "Lue lisää"),
@@ -1021,12 +1022,18 @@
                 e("gfaf9a4a", "Salasanan nollauksen suojaus"),
                 e("h3cc8462", "Suojauksen parantamiseksi sinun on vahvistettava sähköpostiosoitteesi tai puhelinnumerosi, jotta voit vaihtaa X-salasanasi."),
                 e("b4bbdeb4", "Todentamisavain"),
-                e("aeb7dcdc", "Salli lisäsuojaksi todentamisavaimet, joita voidaan linkittää biometriseen tunnisteeseesi."),
+                e("fe8aeb88", "Todentamisavaimet tuovat lisäturvaa ja ne voidaan linkittää biometriikkaan."),
                 e("dc096238", "Lataa henkilöllisyystodistus vahvistaaksesi tilisi aitouden. Tietojasi käytetään vain henkilöllisyytesi todentamiseen, ja niitä käsitellään tietoturvallisesti."),
                 e("a999cb72", "Tallenna tilin muutokset"),
                 e("dec3c9b8", "Salasana"),
                 e("b929aa74", "Kirjoita X-salasanasi uudelleen tallentaaksesi tilisi muutokset."),
                 e("d1091f50", "Unohditko salasanasi?"),
+                e("fd23fe4a", "Here are your passkeys across all your devices"),
+                e("d9921a6c", "Create a new passkey"),
+                e("i4855730", "Poista todentamisavain"),
+                e("a6acdc67", function (a) {
+                    return "Date added: " + a.date;
+                }),
                 e("d97c07be", "Hallitse sisällöntuottajien tilauksia"),
                 e("efa291da", "Tarkastele ja hallitse alla olevia sisällöntuottajien tilauksia Stripessä. Aktiivisia tilauksia, jotka olet käynnistänyt iOS- tai Android-laitteella, voit hallita sovelluksessa."),
                 e("j7f5c6aa", "Sinulla ei vielä ole Tilauksia"),
@@ -1910,13 +1917,13 @@
                 e("d8047cc8", "Julkaise"),
                 e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
                 e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen."),
-                e("e52d4998", "Valitse yleisösi"),
-                e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
+                e("e52d4998", "Valitse yleisösi");
+            e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
                 e("b5660338", "Aikajanan esikatselu"),
                 e("hff1b97a", "Vain tilaajat voivat vastata."),
                 e("a330771e", "Kopioi linkki leikepöydällesi"),
-                e("b6510e68", "Kopioi artikkelin URL jakoa varten.");
-            e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen."),
+                e("b6510e68", "Kopioi artikkelin URL jakoa varten."),
+                e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen."),
                 e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki."),
                 e("ca15dd4e", "Luonnos"),
                 e("bb40bf66", "Julkaistu"),
@@ -2966,27 +2973,23 @@
                 e("b7388a56", "Alatunniste"),
                 e("hdabc3fc", "Käyttöehdot"),
                 e("bc6efc72", "Yksityisyyskäytäntö"),
-                e("h3161192", "Evästekäytäntö"),
-                e("a7de64de", "Tietoa mainoksista"),
+                e("h3161192", "Evästekäytäntö");
+            e("a7de64de", "Tietoa mainoksista"),
                 e("jb0a4c36", "Blogi"),
                 e("ce6d095a", "Työpaikat"),
                 e("e0adec82", "Brändiresurssit"),
-                e("df1b7550", "Markkinointi");
-            e("he258678", "X yrityksille"),
+                e("df1b7550", "Markkinointi"),
+                e("he258678", "X yrityksille"),
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
                 e("j0693948", "Hanki Grok-sovellus"),
-                e("af781666", "Mitä ihmiset miettivät?"),
-                e("ad35153e", "beta"),
-                e("a1f414ee", "Share thoughts"),
                 e("fbf83158", "Varoitus: maksu epäonnistui"),
                 e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
                 e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
-                e("da00e00a", "Ota News kokeiluun"),
-                e("c40666d8", "Kokeile"),
                 e("j66b95a2", "Syväluotaavia uutisia"),
+                e("ad35153e", "beta"),
                 e("b58d2bd2", "Asiaan liittyvät julkaisut"),
                 e("efe6ef9e", "Katso julkaisu"),
                 e("b3d183ce", "Julkaisu vastauksineen"),
@@ -3884,11 +3887,11 @@
                 e("ddeb0a3c", "Tässä on tämä Yhteisö. Pidätkö väestä? Katso ympärillesi."),
                 e("e111f531", function (a) {
                     return a.count + " linjoille saapunut" + n(a.count, "", "ta");
-                }),
-                e("cbef820f", function (a) {
-                    return a.screenName + " julkaisi striimin uudelleen!";
                 });
-            e("e3275464", "Lähetä"),
+            e("cbef820f", function (a) {
+                return a.screenName + " julkaisi striimin uudelleen!";
+            }),
+                e("e3275464", "Lähetä"),
                 e("cededf2a", "Host"),
                 e("i2caef48", "Co-hostit"),
                 e("j245c654", "Puhujat"),
@@ -4359,8 +4362,8 @@
                 e("g01599b6", "Vastaus 1"),
                 e("e02694e0", "Vastaus 2"),
                 e("h6867fcc", "Tämä vastaus on parempi"),
-                e("d07488a6", "Hanki Android-sovellus"),
-                e("d9cfe70c", "Saa käyttöön edistyneempi Grok"),
+                e("acc4496c", "Try Grok Voice mode"),
+                e("jd36d190", "Access advanced features with Grok Android app"),
                 e("hf9afab0", "Anna DeepSearchin skannata internetiä ja X:ää, analysoida informaatiota ja tuottaa tarkkoja ja perusteltuja vastauksia nopealla toimijahaulla."),
                 e("ef3b3f04", "Anna Grokin miettiä käyttäen päättelymalliamme. Se toimii parhaiten matematiikan, luonnontieteiden ja koodauksen kysymyksissä. Voit pyytää Grokia myös miettimään ankarammin kysymystä, joka vaatisi enemmän ajattelukapasiteettia. "),
                 e("b43636b8", "Esittelyssä Grok 3"),
@@ -4922,9 +4925,9 @@
                 e("h0c1f37a", "Näytä huoneen tilastot"),
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
                 e("if2909ba", "Katseluaika"),
-                e("i0e5bf4c", "Videosi"),
-                e("ed99baea", "Beta-ennakkokäyttö");
-            e("gf898b70", "Tarkennettu haku"),
+                e("i0e5bf4c", "Videosi");
+            e("ed99baea", "Beta-ennakkokäyttö"),
+                e("gf898b70", "Tarkennettu haku"),
                 e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
                 e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
@@ -5837,6 +5840,8 @@
                 e("g880d8c0", "Käyttäjän rekisteröinnin tilatietoa ei vielä ole saatavana"),
                 e("ab1b3d38", "Huomautuspyyntödataa ei vielä ole saatavana"),
                 e("c43fb933", "kehittäjäsopimusta ja -käytäntöä"),
+                e("af781666", "Mitä ihmiset miettivät?"),
+                e("a1f414ee", "Share thoughts"),
                 e("ed88e742", "Kopioi linkki aiheeseen"),
                 e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi."),
                 e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa."),
@@ -5886,11 +5891,11 @@
                 }),
                 e("daca8a2c", "Avaa Dockissa"),
                 e("e3aac82a", "Lähetystä ladataan"),
-                e("i0ed3f4e", "Tapahtumakuva"),
-                e("cbae35fa", "Ilmianna lähetys"),
+                e("i0ed3f4e", "Tapahtumakuva");
+            e("cbae35fa", "Ilmianna lähetys"),
                 e("fd12ab58", "Kokoelman julkaisut"),
-                e("a226497c", "Luo uusi Yhteisö");
-            e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön"),
+                e("a226497c", "Luo uusi Yhteisö"),
+                e("d7346632", "Et ole liittynyt vielä yhteenkään Yhteisöön"),
                 e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
                 e("hff48914", "Julkaisuja ei löydy tällä hetkellä."),
                 e("hb52cc4a", "Yritä myöhemmin uudelleen."),
@@ -6454,7 +6459,10 @@
                 e("f7d1a8e0", "Android-sovellus"),
                 e("aab2fae0", "iOS-sovellus"),
                 e("a35d9c9a", "Resurssit"),
+                e("da00e00a", "Ota News kokeiluun"),
+                e("c40666d8", "Kokeile"),
                 e("ic61c5fc", "Vieritä ylös"),
+                e("dd225af8", "Ketään ei löydy."),
                 e("i6671128", "Saat nyt enemmän irti X:stä"),
                 e("d5e4d0a6", "Voit liittyä keskusteluun ja pitää yhteyttä helpommin. Sinulla on nyt seuraavat:"),
                 e("a97bc07e", "Saa enemmän irti X:stä"),
@@ -6881,14 +6889,14 @@
                 e("b6b5dc94", "Hanki varmennus"),
                 e("b06db848", "Erotu massasta alustalla"),
                 e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
-                e("f15bc24e", "Suuremmat Grokin käyttörajat"),
-                e("c4666e1c", "Enemmän uusimman mallin, Grok 3:n käyttöä"),
+                e("f15bc24e", "Suuremmat Grokin käyttörajat");
+            e("c4666e1c", "Enemmän uusimman mallin, Grok 3:n käyttöä"),
                 e("he74ae7a", "Suurimmat Grokin käyttörajat"),
                 e("f5732cd4", "Plus laajempi DeepSearch- ja Mieti-toimintojen käyttö"),
                 e("e0198956", "Saat osuutesi tuloista, joita muodostuu varmennettujen tilien osallistuessa X-julkaisuihisi."),
                 e("iadf78e2", "Videoiden lataus"),
-                e("ee54c3de", "Tallenna videoita suoraan laitteellesi");
-            e("ae03594c", "Pieni vastausten tehostus"),
+                e("ee54c3de", "Tallenna videoita suoraan laitteellesi"),
+                e("ae03594c", "Pieni vastausten tehostus"),
                 e("e6bb08c0", "Kasvata vastaustesi näkyvyyttä"),
                 e("bf2a6acc", "Suuri vastausten tehostus"),
                 e("c2059276", "Vastaustesi tehostus."),
@@ -7348,7 +7356,6 @@
                 e("b0c91a92", "Kirjaudu sisään tai rekisteröidy käyttäjäksi, niin näet mitä X:ssä sanotaan"),
                 e("d7071084", "Grokkaa tämä"),
                 e("ee2200f4", "Tämä tarina on Grokin tekemä yhteenveto julkaisuista X:ssä. Se elää ajan mittaan."),
-                e("dd225af8", "Ketään ei löydy."),
                 e("e1e5d552", "Muokkaa piiriäsi"),
                 e("ec13f9cc", "Piirissäsi ei ole ketään — vielä"),
                 e("dab58e32", "Kun lisäät ihmisiä, he näkyvät täällä."),
@@ -7413,8 +7420,6 @@
                 e("bf4558fa", "Eritelmä orgaanisesta suorituksestasi"),
                 e("c69069e6", "Tämän julkaisun näyttökerrat X:ssä"),
                 e("a0615bac", "Montako kertaa yhteensä käyttäjä on toiminut suhteessa julkaisuun. Tämä sisältää kaikki klikkaukset missä tahansa julkaisun alueella (kuten asiasanojen, linkkien, käyttäjäkuvan ja käyttäjätunnuksen klikkaukset ja julkaisun laajennukset), uudelleenjulkaisut, vastaukset, seuraamiset ja tykkäämiset."),
-                e("d8abdaa4", "Uudet seuraajat"),
-                e("c72f25a8", "Suoraan tästä julkaisusta kertyneet seuraajat"),
                 e("acc4cf12", "Tästä julkaisusta kertyneet profiilinäytöt"),
                 e("c7d0d1c4", "Julkaisun URL-osoitteiden klikkausten määrä"),
                 e("a4da7724", "Montako kertaa ihmiset katsoivat julkaisun tiedot"),
@@ -7862,10 +7867,7 @@
                 e("e3dffb4e", "Kopioi tukisähköpostiosoitteemme alle ja lähetä pyydetyt tiedot tukitiimillemme aloittaaksesi integraation."),
                 e("b4fef99e", "Kun tukitiimimme on saanut pyyntösi, käymme läpi tietosi ja autamme sinua integraation konfiguroinnissa."),
                 e("h37f2d96", "Huomaa, ettei kaikkia työnhakijoiden seurantajärjestelmiä vielä tueta."),
-                e("ce102a20", "Edelleenohjataan Stripeen"),
-                e("ddfd6718", "Maksu epäonnistui"),
-                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
-                e("a62359e6", "Varmennetut organisaatiot");
+                e("ce102a20", "Edelleenohjataan Stripeen");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7904,7 +7906,10 @@
                     u(a, t)
                 );
             }
-            e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
+            e("ddfd6718", "Maksu epäonnistui"),
+                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
+                e("a62359e6", "Varmennetut organisaatiot"),
+                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
                 e("i4dccc18", "Laskutus"),
                 e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
                 e("dac61c3c", "Tilin asetukset"),
@@ -8904,13 +8909,13 @@
                 e("ecda5f9e", "Harhaanjohtava"),
                 e("a423473c", "Lakisääteinen huomautus"),
                 e("b3296688", "Näkyvyyttä rajattu"),
-                e("ccd32094", "Nyt"),
-                e("abfcce0d", function (a) {
-                    return a.amountOfTime + " sitten";
-                }),
+                e("ccd32094", "Nyt");
+            e("abfcce0d", function (a) {
+                return a.amountOfTime + " sitten";
+            }),
                 e("ae408b76", "Uudelleenjulkaisit"),
-                e("j355f008", "Kiinnitetty julkaisu");
-            e("habf9678", "Tekijän kiinnittämä"),
+                e("j355f008", "Kiinnitetty julkaisu"),
+                e("habf9678", "Tekijän kiinnittämä"),
                 e("db0798ed", function (a) {
                     return a.topicName + " aihe";
                 }),
@@ -13063,6 +13068,7 @@
                 (d.b1312699801 = v({ 1: d("fi").numberFormatter({ raw: "0" }) }, { pattern: "ccc d. MMM", timeSeparator: ".", days: { c: { 3: { sun: "su", mon: "ma", tue: "ti", wed: "ke", thu: "to", fri: "pe", sat: "la" } } }, months: { M: { 3: { 1: "tammik.", 2: "helmik.", 3: "maalisk.", 4: "huhtik.", 5: "toukok.", 6: "kesäk.", 7: "heinäk.", 8: "elok.", 9: "syysk.", 10: "lokak.", 11: "marrask.", 12: "jouluk." } } } })),
                 (d.a239677982 = v({ 1: d("fi").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM y", timeSeparator: ".", days: { E: { 1: { sun: "su", mon: "ma", tue: "ti", wed: "ke", thu: "to", fri: "pe", sat: "la" } } }, months: { M: { 3: { 1: "tammik.", 2: "helmik.", 3: "maalisk.", 4: "huhtik.", 5: "toukok.", 6: "kesäk.", 7: "heinäk.", 8: "elok.", 9: "syysk.", 10: "lokak.", 11: "marrask.", 12: "jouluk." } } } })),
                 (d.b1305311633 = v({ 1: d("fi").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM", timeSeparator: ".", months: { M: { 4: { 1: "tammikuuta", 2: "helmikuuta", 3: "maaliskuuta", 4: "huhtikuuta", 5: "toukokuuta", 6: "kesäkuuta", 7: "heinäkuuta", 8: "elokuuta", 9: "syyskuuta", 10: "lokakuuta", 11: "marraskuuta", 12: "joulukuuta" } } } })),
+                (d.a1632268227 = v({ 1: d("fi").numberFormatter({ raw: "0" }), 2: d("fi").numberFormatter({ raw: "00" }) }, { pattern: "d. MMMM y 'klo' H.mm.ss z", timeSeparator: ".", months: { M: { 4: { 1: "tammikuuta", 2: "helmikuuta", 3: "maaliskuuta", 4: "huhtikuuta", 5: "toukokuuta", 6: "kesäkuuta", 7: "heinäkuuta", 8: "elokuuta", 9: "syyskuuta", 10: "lokakuuta", 11: "marraskuuta", 12: "joulukuuta" } } }, gmtFormat: "UTC{0}", gmtZeroFormat: "UTC", hourFormat: ["+H;-H", "+H.mm;-H.mm"] })),
                 (d.b266571426 = v({ 1: d("fi").numberFormatter({ raw: "0" }), 2: d("fi").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM y 'klo' h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "tammik.", 2: "helmik.", 3: "maalisk.", 4: "huhtik.", 5: "toukok.", 6: "kesäk.", 7: "heinäk.", 8: "elok.", 9: "syysk.", 10: "lokak.", 11: "marrask.", 12: "jouluk." } } }, dayPeriods: { am: "ap.", pm: "ip." } })),
                 (d.b837839306 = v({ 1: d("fi").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM y", timeSeparator: ".", months: { M: { 4: { 1: "tammikuuta", 2: "helmikuuta", 3: "maaliskuuta", 4: "huhtikuuta", 5: "toukokuuta", 6: "kesäkuuta", 7: "heinäkuuta", 8: "elokuuta", 9: "syyskuuta", 10: "lokakuuta", 11: "marraskuuta", 12: "joulukuuta" } } } })),
                 (d.b1145642443 = v({ 1: d("fi").numberFormatter({ raw: "0" }), 2: d("fi").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM 'klo' h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "tammik.", 2: "helmik.", 3: "maalisk.", 4: "huhtik.", 5: "toukok.", 6: "kesäk.", 7: "heinäk.", 8: "elok.", 9: "syysk.", 10: "lokak.", 11: "marrask.", 12: "jouluk." } } }, dayPeriods: { am: "ap.", pm: "ip." } })),
@@ -13084,6 +13090,7 @@
                 (d.b561417424 = h(d("fi").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (d.a2054595189 = h(d("fi").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (d.b554029256 = h(d("fi").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (d.a1240861146 = h(d("fi").dateToPartsFormatter({ datetime: "long" }))),
                 (d.a161287143 = h(d("fi").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (d.a64082893 = h(d("fi").dateToPartsFormatter({ date: "long" }))),
                 (d.a669274764 = h(d("fi").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13149,6 +13156,7 @@
                 e("c0bdd345", d.a258189312),
                 e("aa2aa1a1", d.a2054595189),
                 e("da44942d", d.b554029256),
+                e("a54d3ef5", d.a1240861146),
                 e("bfbc051d", d.a161287143),
                 e("ba2e82a1", d.a64082893),
                 e("fc209bb7", d.a669274764),
@@ -13239,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2bbfa66a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.436ec9aa.js.map

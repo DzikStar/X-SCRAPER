@@ -55,7 +55,7 @@
         },
         118823: (e, t, r) => {
             "use strict";
-            r.d(t, { WP: () => oe, R2: () => ne, YW: () => q, Ig: () => te, n8: () => K, YU: () => se, Ai: () => ue, Lw: () => V, z_: () => X, qE: () => Q, tY: () => ie, iD: () => J, jv: () => Y, or: () => D, UD: () => L, cu: () => U, b: () => Z, Du: () => G, zj: () => z, W2: () => F, uz: () => x, Lg: () => B, li: () => M, $B: () => j, B7: () => N, aR: () => W, Wl: () => ae, YF: () => re, d7: () => ce, if: () => ee });
+            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => oe, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => j, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => z, B7: () => U, aR: () => Z, Wl: () => ie, YF: () => te, d7: () => ue, if: () => K });
             r(543673), r(240753), r(128399);
             var n = r(695003),
                 o = r.n(n),
@@ -68,62 +68,61 @@
                 f = r(153925),
                 h = r(499627),
                 p = r(917799),
-                d = r(312771),
-                _ = r(390387);
-            const g = "ocf",
-                E = "rweb.ocf",
-                w = "success",
-                m = Object.freeze({ REQUEST: "rweb/ocf/FETCH_REQUEST", SUCCESS: "rweb/ocf/FETCH_SUCCESS", FAILURE: "rweb/ocf/FETCH_FAILURE" }),
-                b = Object.freeze({ REQUEST: "rweb/ocf/START_REQUEST", SUCCESS: "rweb/ocf/START_SUCCESS", FAILURE: "rweb/ocf/START_FAILURE" }),
-                y = "rweb/ocf/CLEAR",
-                T = "rweb/ocf/UPDATE",
-                S = "rweb/ocf/NAVIGATE",
-                A = "rweb/ocf/RESUME",
-                v = "rweb/ocf/ATTRIBUTE",
-                R = Object.freeze({ REQUEST: "rweb/ocf/VERIFY_IDENTIFIER_REQUEST", SUCCESS: "rweb/ocf/VERIFY_IDENTIFIER_SUCCESS", FAILURE: "rweb/ocf/VERIFY_IDENTIFIER_FAILURE" }),
-                O = Object.freeze({ REQUEST: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_REQUEST", SUCCESS: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_SUCCESS", FAILURE: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_FAILURE" }),
-                P = (0, i.Z)(["signup"]),
-                I = { currentSubtask: void 0, previouslySubmittedSubtaskId: void 0, failureMessage: "", fetchStatus: d.ZP.NONE, flowName: void 0, flowToken: void 0, shouldAbort: !1, shouldEndFlow: !1, submitFailed: !1, startLocation: void 0, subtasks: [], subtaskInputs: {}, navigationContext: { action: "", link: "" }, navigationStack: [], flowData: {}, sendPinCode: !1, browsableNuxRecommendations: [] },
-                C = (e) => {
+                d = r(312771);
+            const _ = "ocf",
+                g = "rweb.ocf",
+                E = "success",
+                w = Object.freeze({ REQUEST: "rweb/ocf/FETCH_REQUEST", SUCCESS: "rweb/ocf/FETCH_SUCCESS", FAILURE: "rweb/ocf/FETCH_FAILURE" }),
+                m = Object.freeze({ REQUEST: "rweb/ocf/START_REQUEST", SUCCESS: "rweb/ocf/START_SUCCESS", FAILURE: "rweb/ocf/START_FAILURE" }),
+                b = "rweb/ocf/CLEAR",
+                y = "rweb/ocf/UPDATE",
+                T = "rweb/ocf/NAVIGATE",
+                S = "rweb/ocf/RESUME",
+                A = "rweb/ocf/ATTRIBUTE",
+                v = Object.freeze({ REQUEST: "rweb/ocf/VERIFY_IDENTIFIER_REQUEST", SUCCESS: "rweb/ocf/VERIFY_IDENTIFIER_SUCCESS", FAILURE: "rweb/ocf/VERIFY_IDENTIFIER_FAILURE" }),
+                R = Object.freeze({ REQUEST: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_REQUEST", SUCCESS: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_SUCCESS", FAILURE: "rweb/ocf/FETCH_BROWSABLE_NUX_RECOMMENDATIONS_FAILURE" }),
+                O = (0, i.Z)(["signup"]),
+                P = { currentSubtask: void 0, previouslySubmittedSubtaskId: void 0, failureMessage: "", fetchStatus: d.ZP.NONE, flowName: void 0, flowToken: void 0, shouldAbort: !1, shouldEndFlow: !1, submitFailed: !1, startLocation: void 0, subtasks: [], subtaskInputs: {}, navigationContext: { action: "", link: "" }, navigationStack: [], flowData: {}, sendPinCode: !1, browsableNuxRecommendations: [] },
+                I = (e) => {
                     const t = e && (0, f.uL)(e);
                     return t === l.Ti.EmailVerification || t === l.Ti.PhoneVerification;
                 },
-                k = (e) => e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowFailure || e === u.ZP.OnboardingFlowRetriableFailure;
+                C = (e) => e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowFailure || e === u.ZP.OnboardingFlowRetriableFailure;
             h.Z.register({
-                [g]: function (e = I, t) {
+                [_]: function (e = P, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case b.REQUEST:
-                            return { ...I, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
                         case m.REQUEST:
+                            return { ...P, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
+                        case w.REQUEST:
                             return { ...e, fetchStatus: d.ZP.LOADING, submitFailed: !1 };
-                        case S: {
+                        case T: {
                             const { navigationContext: r, navigationStack: n, sendPinCode: o, subtaskInputs: i } = t.payload ?? {},
                                 a = { ...e.subtaskInputs };
                             for (const e in a) i[e] && delete a[e];
                             return { ...e, currentSubtask: e.subtasks.find((e) => e.subtask_id === t.payload?.subtaskId), navigationContext: r, subtaskInputs: a, submitFailed: !1, navigationStack: n, sendPinCode: o };
                         }
-                        case v:
+                        case A:
                             return { ...e, startLocation: t.payload };
-                        case T: {
+                        case y: {
                             const { flowData: r, subtaskInputs: n } = t.payload ?? {};
                             return { ...e, subtaskInputs: { ...e.subtaskInputs, ...n }, flowData: { ...e.flowData, ...r } };
                         }
-                        case b.FAILURE: {
+                        case m.FAILURE: {
                             const r = t.payload?.errors[0].code,
                                 n = t.payload?.errors[0].message,
                                 o = r !== s.Z.Offline,
-                                i = k(r) ? n : void 0;
+                                i = C(r) ? n : void 0;
                             return { ...e, fetchStatus: d.ZP.FAILED, failureMessage: i, shouldAbort: o };
                         }
-                        case m.FAILURE: {
+                        case w.FAILURE: {
                             "/i/conferences-room" === new URLSearchParams(window.location.search).get("redirect_after_login") &&
                                 setTimeout(() => {
                                     window.location.reload();
                                 }, 1e4);
                             const r = t.payload?.errors[0].code,
                                 n = t.payload?.errors[0].message,
-                                o = k(r) ? n : void 0,
+                                o = C(r) ? n : void 0,
                                 i = !((e, t) => {
                                     const r = void 0 !== e && (e === s.Z.Offline || e === u.ZP.ValidationFailure || e === u.ZP.OnboardingFlowRetriableFailure),
                                         n = t && (0, f.uL)(t),
@@ -132,101 +131,100 @@
                                 })(r, e.currentSubtask);
                             return { ...e, previouslySubmittedSubtaskId: e.currentSubtask?.subtask_id, fetchStatus: d.ZP.LOADED, failureMessage: o, shouldAbort: i, submitFailed: !0 };
                         }
-                        case R.FAILURE: {
+                        case v.FAILURE: {
                             const r = t.payload?.errors[0].code,
                                 n = t.payload?.errors[0].message,
-                                o = k(r) ? n : void 0;
+                                o = C(r) ? n : void 0;
                             return { ...e, verificationSendFailureMessage: o, sendPinCode: !1 };
                         }
-                        case b.SUCCESS:
-                        case m.SUCCESS: {
+                        case m.SUCCESS:
+                        case w.SUCCESS: {
                             const { flow_token: r, subtasks: n } = t.payload ?? {},
                                 { isTaskNavigation: o } = t.meta ?? {},
                                 i = n && n.length ? n[0] : void 0,
-                                a = C(i),
+                                a = I(i),
                                 s = !!o && !i;
                             return { ...e, previouslySubmittedSubtaskId: e.currentSubtask?.subtask_id, currentSubtask: i, fetchStatus: d.ZP.LOADED, flowToken: r, sendPinCode: a, shouldEndFlow: s, submitFailed: !1, subtasks: n, subtaskInputs: {}, navigationStack: i ? [i.subtask_id] : [], shouldAbort: !1 };
                         }
-                        case y:
-                            return { ...I };
-                        case A:
+                        case b:
+                            return { ...P };
+                        case S:
                             return t.payload ?? e;
-                        case R.REQUEST:
+                        case v.REQUEST:
                             return { ...e, verificationSendFailureMessage: void 0, sendPinCode: !1 };
-                        case O.REQUEST:
+                        case R.REQUEST:
                             return { ...e };
-                        case O.SUCCESS: {
+                        case R.SUCCESS: {
                             const { flow_token: r } = t.payload;
                             return { ...e, browsableNuxRecommendations: [...e.browsableNuxRecommendations, ...t.payload.user_recommendations], ...(r && { flowToken: r }), fetchStatus: d.ZP.LOADED };
                         }
-                        case O.FAILURE:
+                        case R.FAILURE:
                             return { ...e, fetchStatus: d.ZP.FAILED };
                         default:
                             return e;
                     }
                 },
             });
-            const U = (e) => e[g].flowToken,
-                N = (e) => e[g].subtasks,
-                L = (e) => e[g].fetchStatus,
-                D = (e) => e[g].failureMessage,
-                B = (e) => e[g].startLocation,
-                F = (e) => e[g].shouldAbort,
-                x = (e) => e[g].shouldEndFlow,
-                M = (e) => e[g].submitFailed,
-                Y = (e) => e[g].currentSubtask,
-                z = (e) => e[g].previouslySubmittedSubtaskId,
-                j = (e) => e[g].subtaskInputs,
-                Z = (e) => e[g].navigationContext,
-                W = (e) => e[g].verificationSendFailureMessage,
-                H = (e) => e[g].navigationStack,
-                V = (e) => !!e.alert_dialog || !!e.menu_dialog || e?.cta?.style === l.aD.HalfCover,
-                G = (e) => {
-                    const t = H(e),
-                        r = N(e);
+            const k = (e) => e[_].flowToken,
+                U = (e) => e[_].subtasks,
+                N = (e) => e[_].fetchStatus,
+                L = (e) => e[_].failureMessage,
+                D = (e) => e[_].startLocation,
+                B = (e) => e[_].shouldAbort,
+                F = (e) => e[_].shouldEndFlow,
+                x = (e) => e[_].submitFailed,
+                M = (e) => e[_].currentSubtask,
+                Y = (e) => e[_].previouslySubmittedSubtaskId,
+                z = (e) => e[_].subtaskInputs,
+                j = (e) => e[_].navigationContext,
+                Z = (e) => e[_].verificationSendFailureMessage,
+                W = (e) => e[_].navigationStack,
+                H = (e) => !!e.alert_dialog || !!e.menu_dialog || e?.cta?.style === l.aD.HalfCover,
+                V = (e) => {
+                    const t = W(e),
+                        r = U(e);
                     return t
                         .slice(0, -1)
                         .reverse()
                         .find((e) => {
                             const t = r.find((t) => t.subtask_id === e);
-                            return t && !V(t);
+                            return t && !H(t);
                         });
                 },
-                J = (e) => e[g].browsableNuxRecommendations,
-                q = (e) => {
+                G = (e) => e[_].browsableNuxRecommendations,
+                J = (e) => {
                     const t =
                         (t = {}) =>
                         (r, n, { api: o, userPersistence: i }) => {
                             const { flow_name: a } = t;
-                            return (0, p._O)(r, { params: t, request: e.task(o) })({ actionTypes: b, context: "START_FLOW", meta: { flowName: a } }).then((e) => (a && P.has(a) && e.statusText === w && i.set(E, { [a]: n()[g] }), e));
+                            return (0, p._O)(r, { params: t, request: e.task(o) })({ actionTypes: m, context: "START_FLOW", meta: { flowName: a } }).then((e) => (a && O.has(a) && e.statusText === E && i.set(g, { [a]: n()[_] }), e));
                         };
                     return {
                         clearFlow:
                             ({ clearPersistence: e } = {}) =>
                             (t, r, { userPersistence: n }) => {
-                                e && n.set(E, {}), t({ type: y });
+                                e && n.set(g, {}), t({ type: b });
                             },
                         startFlow:
                             (e = {}) =>
                             (r, n, { api: o, userPersistence: i }) => {
                                 const { flow_name: a } = e;
-                                return (P.has(a) || "__OCF_2FA_X_CHALLENGE__" in window ? i.get(E, 36e5) : Promise.resolve(void 0)).then((n) => (a && n && n[a] ? r({ payload: n[a], type: A }) : r(t(e))));
+                                return (O.has(a) || "__OCF_2FA_X_CHALLENGE__" in window ? i.get(g, 36e5) : Promise.resolve(void 0)).then((n) => (a && n && n[a] ? r({ payload: n[a], type: S }) : r(t(e))));
                             },
                         submitFlow:
                             ({ isTaskNavigation: t, ...r } = {}) =>
                             (n, o, { api: i, userPersistence: a }) => {
                                 const s = o(),
-                                    u = Y(s),
+                                    u = k(s),
                                     c = U(s),
-                                    l = N(s),
-                                    f = j(s),
-                                    h = $(l, f),
-                                    d = { ...r, flow_token: c, subtask_inputs: h };
-                                return (0, p._O)(n, { params: d, request: e.task(i) })({ actionTypes: m, context: "SUBMIT_FLOW", meta: { isTaskNavigation: t } }).then((e) => {
-                                    const t = o()[g];
+                                    l = z(s),
+                                    f = X(c, l),
+                                    h = { ...r, flow_token: u, subtask_inputs: f };
+                                return (0, p._O)(n, { params: h, request: e.task(i) })({ actionTypes: w, context: "SUBMIT_FLOW", meta: { isTaskNavigation: t } }).then((e) => {
+                                    const t = o()[_];
                                     if (t.flowName) {
                                         const r = t.subtasks?.find(({ security_key: e }) => e)?.security_key,
-                                            n = a.set(E, { [t.flowName]: t.subtasks.length && (e.statusText === w || r) ? t : void 0 });
+                                            n = a.set(g, { [t.flowName]: t.subtasks.length && (e.statusText === E || r) ? t : void 0 });
                                         if (r && window.location.host.includes("x.com"))
                                             return n.then(
                                                 () => (
@@ -240,22 +238,22 @@
                                                 ),
                                             );
                                     }
-                                    return e.status === w && "PasskeyEnrollmentAddPasskeySubtask" === u?.subtask_id && n((0, _.VS)(!0)), e.status === w && "PasskeyUnenrollmentCompleteSubtask" === u?.subtask_id && n((0, _.VS)(!1)), e;
+                                    return e;
                                 });
                             },
                         updateFlow:
                             (e, t = {}, r = {}) =>
                             (n, o) => {
-                                n({ type: T, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
+                                n({ type: y, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
                             },
                     };
                 },
-                Q = q({ task: (e) => e.withEndpoint(a.Z).task }),
-                X =
+                q = J({ task: (e) => e.withEndpoint(a.Z).task }),
+                Q =
                     ({ destructive: e, fromHiddenSubtask: t, navigationContext: r, subtaskId: n }) =>
                     (o, i) => {
                         const a = i(),
-                            s = H(a),
+                            s = W(a),
                             u = s.indexOf(n);
                         let c = [],
                             f = {};
@@ -267,15 +265,15 @@
                         }
                         const h = (
                                 (e) => (t) =>
-                                    e[g].subtasks.find((e) => e.subtask_id === t)
+                                    e[_].subtasks.find((e) => e.subtask_id === t)
                             )(a)(n || ""),
                             p = r && r.action,
                             d = p === l.vY.ResendSms || p === l.vY.ResendVoice || p === l.vY.ResendEmail;
                         "clear" === p && n && (f[n] = {});
-                        const _ = C(h) && (!p || d);
-                        o({ type: S, payload: { navigationContext: { action: "", ...r }, sendPinCode: _, subtaskId: n, subtaskInputs: f, navigationStack: c } });
+                        const g = I(h) && (!p || d);
+                        o({ type: T, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
                     },
-                $ = (e, t) =>
+                X = (e, t) =>
                     Object.keys(t)
                         .map((r) => {
                             const n = e.find((e) => e.subtask_id === r);
@@ -287,57 +285,57 @@
                             return o ? { subtask_id: n.subtask_id, [o]: t[r] } : { subtask_id: n.subtask_id };
                         })
                         .filter(Boolean);
-            const K = (e, t) => (r, n, i) => {
+            const $ = (e, t) => (r, n, i) => {
                     const { next_link: a, should_generate: s } = t,
-                        { flowData: u } = n()[g],
+                        { flowData: u } = n()[_],
                         c = s ? o()(Math.ceil(10)).toString("hex").slice(0, 20) : u.OCF_GENERATED_PASSWORD;
-                    Q.updateFlow(e, { password: c, link: a.link_id }, { OCF_GENERATED_PASSWORD: c })(r, n, i);
+                    q.updateFlow(e, { password: c, link: a.link_id }, { OCF_GENERATED_PASSWORD: c })(r, n, i);
                 },
-                ee =
+                K =
                     (e) =>
                     (t, r, { api: n }) => {
-                        if (r()[g].sendPinCode || void 0 !== e.arkose_access_token) {
-                            const o = e.flow_token ?? U(r()),
+                        if (r()[_].sendPinCode || void 0 !== e.arkose_access_token) {
+                            const o = e.flow_token ?? k(r()),
                                 i = { ...e, flow_token: o };
-                            return (0, p._O)(t, { params: i, request: n.withEndpoint(a.Z).verifyUserIdentifier })({ actionTypes: R, context: "VERIFY_IDENTIFIER" });
+                            return (0, p._O)(t, { params: i, request: n.withEndpoint(a.Z).verifyUserIdentifier })({ actionTypes: v, context: "VERIFY_IDENTIFIER" });
                         }
                         return Promise.resolve({ normalized_phone_number: void 0 });
                     },
-                te =
+                ee =
                     (e) =>
                     (t, r, { api: n }) =>
-                        (0, p._O)(t, { params: e, request: n.withEndpoint(a.Z).getBrowsableNuxRecommendations })({ actionTypes: O, context: "FETCH_BROWSABLE_NUX_RECOMMENDATIONS" }),
-                re = (e, t) => (r, n) => {
+                        (0, p._O)(t, { params: e, request: n.withEndpoint(a.Z).getBrowsableNuxRecommendations })({ actionTypes: R, context: "FETCH_BROWSABLE_NUX_RECOMMENDATIONS" }),
+                te = (e, t) => (r, n) => {
                     const { page: o } = e || {},
                         { event_id: i, profile_id: a, search_details: s, tweet_id: u } = t || {};
                     let c;
-                    "front" === o ? (c = { location: "splash_screen" }) : "login" === o ? (c = { location: "login" }) : "home" === o ? (c = { location: "home" }) : "settings" === o ? (c = { location: "settings" }) : a ? (c = { location: "profile", profile: { profile_id: a } }) : s ? (c = { location: "search", search: s }) : u ? (c = { location: "tweet", tweet: { tweet_id: u } }) : i && (c = { location: "event", event: { event_id: i } }), c && r({ type: v, payload: c });
+                    "front" === o ? (c = { location: "splash_screen" }) : "login" === o ? (c = { location: "login" }) : "home" === o ? (c = { location: "home" }) : "settings" === o ? (c = { location: "settings" }) : a ? (c = { location: "profile", profile: { profile_id: a } }) : s ? (c = { location: "search", search: s }) : u ? (c = { location: "tweet", tweet: { tweet_id: u } }) : i && (c = { location: "event", event: { event_id: i } }), c && r({ type: A, payload: c });
                 },
-                ne =
+                re =
                     (e, t = {}) =>
                     (r, n, { api: o }) =>
                         o.withEndpoint(a.Z).callOnboardingPath(e, t),
-                oe =
+                ne =
                     (e) =>
                     (t, r, { api: n }) =>
                         n.withEndpoint(a.Z).callInteractiveSpinnerPath(e),
-                ie =
+                oe =
                     (e = {}) =>
                     (t, r, { api: n }) =>
                         n.withEndpoint(a.Z).removeContacts(e),
-                ae =
+                ie =
                     (e) =>
                     (t, r, { api: n }) =>
                         n.withEndpoint(a.Z).syncContacts(e),
-                se =
+                ae =
                     (e = {}) =>
                     (t, r, { api: n }) =>
                         n.withEndpoint(a.Z).getContactsImportStatus(e),
-                ue =
+                se =
                     (e) =>
                     (t, r, { api: n }) =>
                         n.withEndpoint(a.Z).getVerificationStatus(e),
-                ce =
+                ue =
                     (e) =>
                     (t, r, { api: n }) =>
                         n.withEndpoint(a.Z).verificationLink(e);
@@ -1394,4 +1392,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.4530ce1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.6e8ff49a.js.map

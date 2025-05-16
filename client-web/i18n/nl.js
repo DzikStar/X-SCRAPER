@@ -483,6 +483,7 @@
                 a("cb165528", "Nieuwsfuncties en instellingen"),
                 a("f8645654", "Beveiliging en accounttoegang"),
                 a("j95edf76", "Beveiliging"),
+                a("fd127276", "Wachtwoordsleutels beheren"),
                 a("afe4a358", "ID-verificatie"),
                 a("dd703318", "Tweestapsverificatie"),
                 a("b1686800", "Veiligheidssleutels beheren"),
@@ -900,9 +901,9 @@
                 a("e126dd3f", "Meer informatie"),
                 a("i821844f", "Meer informatie"),
                 a("b0abbb17", "Meer informatie"),
-                a("e7e0d88b", "Meer informatie"),
-                a("i560665f", "Meer informatie");
-            a("f6e774d9", "Meer informatie"),
+                a("e7e0d88b", "Meer informatie");
+            a("i560665f", "Meer informatie"),
+                a("f6e774d9", "Meer informatie"),
                 a("h486f755", "Meer informatie"),
                 a("bab41dab", "Meer informatie"),
                 a("e0ebdb29", "Meer informatie"),
@@ -1021,12 +1022,18 @@
                 a("gfaf9a4a", "Wachtwoordreset afschermen"),
                 a("h3cc8462", "Voor meer bescherming moet je je e-mailadres of telefoonnummer bevestigen om je wachtwoord van X opnieuw in te stellen."),
                 a("b4bbdeb4", "Passkey"),
-                a("aeb7dcdc", "Schakel Passkeys in voor extra bescherming die kan worden gekoppeld aan je biometrische gegevens."),
+                a("fe8aeb88", "Wachtwoordsleutels zorgen voor extra bescherming die kan worden gekoppeld aan je biometrische gegevens."),
                 a("dc096238", "Upload een goedgekeurde vorm van identificatie om de authenticiteit van je account te bevestigen. Je gegevens worden alleen gebruikt om je identiteit te valideren en worden veilig behandeld."),
                 a("a999cb72", "Accountwijzigingen opslaan"),
                 a("dec3c9b8", "Wachtwoord"),
                 a("b929aa74", "Vul je X-wachtwoord opnieuw in om de wijzigingen op te slaan."),
                 a("d1091f50", "Wachtwoord vergeten?"),
+                a("fd23fe4a", "Here are your passkeys across all your devices"),
+                a("d9921a6c", "Create a new passkey"),
+                a("i4855730", "Wachtwoordsleutel verwijderen"),
+                a("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 a("d97c07be", "Makersabonnementen beheren"),
                 a("efa291da", "Bekijk en beheer je abonnementen op makers waarvoor Stripe wordt gebruikt. Actieve abonnementen die je hebt genomen via iOS of Android, kan je in de app beheren."),
                 a("j7f5c6aa", "Je hebt nog geen Abonnementen"),
@@ -1910,13 +1917,13 @@
                 a("d8047cc8", "Publiceren"),
                 a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
                 a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
-                a("e52d4998", "Kies je publiek"),
-                a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
+                a("e52d4998", "Kies je publiek");
+            a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
                 a("b5660338", "Voorvertoning tijdlijn"),
                 a("hff1b97a", "Alleen abonnees kunnen antwoorden."),
                 a("a330771e", "Link naar je klembord kopiëren"),
-                a("b6510e68", "Kopieer de URL van je artikel zodat je die kan delen.");
-            a("e4a6e006", "Er ging iets mis. Probeer het opnieuw."),
+                a("b6510e68", "Kopieer de URL van je artikel zodat je die kan delen."),
+                a("e4a6e006", "Er ging iets mis. Probeer het opnieuw."),
                 a("eff483e0", "Krijg een link om je Artikel te delen nadat je het hebt gepubliceerd."),
                 a("ca15dd4e", "Concept"),
                 a("bb40bf66", "Gepubliceerd"),
@@ -2966,27 +2973,23 @@
                 a("b7388a56", "Voettekst"),
                 a("hdabc3fc", "Algemene voorwaarden"),
                 a("bc6efc72", "Privacybeleid"),
-                a("h3161192", "Cookiebeleid"),
-                a("a7de64de", "Advertentie-info"),
+                a("h3161192", "Cookiebeleid");
+            a("a7de64de", "Advertentie-info"),
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Banen"),
                 a("e0adec82", "Merkhulpmiddelen"),
-                a("df1b7550", "Marketing");
-            a("he258678", "X voor bedrijven"),
+                a("df1b7550", "Marketing"),
+                a("he258678", "X voor bedrijven"),
                 a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
                 a("j0693948", "Download de Grok-app"),
-                a("af781666", "Wat vinden mensen?"),
-                a("ad35153e", "bèta"),
-                a("a1f414ee", "Share thoughts"),
                 a("fbf83158", "Waarschuwing: betaling mislukt"),
                 a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
-                a("da00e00a", "Probeer het nieuwe Nieuws uit"),
-                a("c40666d8", "Probeer het uit"),
                 a("j66b95a2", "Diepgaand nieuws"),
+                a("ad35153e", "bèta"),
                 a("b58d2bd2", "Relevante posts"),
                 a("efe6ef9e", "Post bekijken"),
                 a("b3d183ce", "Posts met antwoorden"),
@@ -3884,11 +3887,11 @@
                 a("ddeb0a3c", "Dit is de Community. Vind je de mensen leuk? Neem een kijkje."),
                 a("e111f531", function (e) {
                     return e.count + " beluisterd";
-                }),
-                a("cbef820f", function (e) {
-                    return e.screenName + " heeft de stream opnieuw geplaatst!";
                 });
-            a("e3275464", "Verzenden"),
+            a("cbef820f", function (e) {
+                return e.screenName + " heeft de stream opnieuw geplaatst!";
+            }),
+                a("e3275464", "Verzenden"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
                 a("j245c654", "Sprekers"),
@@ -4359,8 +4362,8 @@
                 a("g01599b6", "Antwoord 1"),
                 a("e02694e0", "Antwoord 2"),
                 a("h6867fcc", "Ik vind dit antwoord beter"),
-                a("d07488a6", "Download de Android-app"),
-                a("d9cfe70c", "Krijg toegang tot geavanceerde Grok-functies"),
+                a("acc4496c", "Try Grok Voice mode"),
+                a("jd36d190", "Access advanced features with Grok Android app"),
                 a("hf9afab0", "Schakel DeepSearch in om het internet en X te scannen, informatie te analyseren en gedetailleerde, goed onderbouwde antwoorden te geven met snel, agentic zoeken."),
                 a("ef3b3f04", "Schakel Denken in om ons redeneermodel te gebruiken. Dit is de beste optie voor wiskunde, wetenschap en codering. Je kan Grok ook vragen 'Denk harder na' over elke vraag waarvoor je wat meer denkkracht nodig hebt. "),
                 a("b43636b8", "Nieuw: Grok 3"),
@@ -4922,9 +4925,9 @@
                 a("h0c1f37a", "Space-analyses bekijken"),
                 a("e41fffbc", "De totale kijktijd van je video's."),
                 a("if2909ba", "Kijktijd"),
-                a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang");
-            a("gf898b70", "Geavanceerd zoeken"),
+                a("i0e5bf4c", "Jouw video's");
+            a("ed99baea", "Vroege bèta-toegang"),
+                a("gf898b70", "Geavanceerd zoeken"),
                 a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
                 a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
@@ -5837,6 +5840,8 @@
                 a("g880d8c0", "Statusgegevens gebruikersregistratie zijn nog niet beschikbaar"),
                 a("ab1b3d38", "Gegevens over verzoeken om opmerkingen zijn nog niet beschikbaar"),
                 a("c43fb933", "de Ontwikkelaarsovereenkomst en het Ontwikkelaarsbeleid van X"),
+                a("af781666", "Wat vinden mensen?"),
+                a("a1f414ee", "Share thoughts"),
                 a("ed88e742", "Link naar Onderwerp kopiëren"),
                 a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar"),
                 a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten"),
@@ -5886,11 +5891,11 @@
                 }),
                 a("daca8a2c", "Openen in Dock"),
                 a("e3aac82a", "Uitzending laden"),
-                a("i0ed3f4e", "Afbeelding gebeurtenis"),
-                a("cbae35fa", "Uitzending rapporteren"),
+                a("i0ed3f4e", "Afbeelding gebeurtenis");
+            a("cbae35fa", "Uitzending rapporteren"),
                 a("fd12ab58", "Postverzameling"),
-                a("a226497c", "Een nieuwe Community maken");
-            a("d7346632", "Je bent nog geen lid geworden van community's"),
+                a("a226497c", "Een nieuwe Community maken"),
+                a("d7346632", "Je bent nog geen lid geworden van community's"),
                 a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
                 a("hff48914", "We kunnen nu geen posts vinden."),
                 a("hb52cc4a", "Probeer het later nog eens."),
@@ -6454,7 +6459,10 @@
                 a("f7d1a8e0", "Android-app"),
                 a("aab2fae0", "iOS-app"),
                 a("a35d9c9a", "Bronnen"),
+                a("da00e00a", "Probeer het nieuwe Nieuws uit"),
+                a("c40666d8", "Probeer het uit"),
                 a("ic61c5fc", "Naar boven scrollen"),
+                a("dd225af8", "Geen mensen gevonden."),
                 a("i6671128", "Je hebt meer ontgrendeld op X"),
                 a("d5e4d0a6", "Je kan eenvoudiger meepraten en verbinden met anderen. Je kan nu profiteren van het volgende:"),
                 a("a97bc07e", "Ontgrendel meer op X"),
@@ -6881,14 +6889,14 @@
                 a("b6b5dc94", "Word geverifieerd"),
                 a("b06db848", "Onderscheid je van anderen op het platform"),
                 a("e3e3a97c", "Verdien een deel van de inkomsten van je posts"),
-                a("f15bc24e", "Verhoogde Grok-limieten"),
-                a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
+                a("f15bc24e", "Verhoogde Grok-limieten");
+            a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
                 a("he74ae7a", "De hoogste Grok-gebruikslimieten"),
                 a("f5732cd4", "Plus uitgebreide toegang tot DeepSearch en Denken"),
                 a("e0198956", "Ontvang een deel van de inkomsten die worden gegenereerd door interacties van geverifieerde accounts met content die jij op X plaatst."),
                 a("iadf78e2", "Video's downloaden"),
-                a("ee54c3de", "Sla video's rechtstreeks op je apparaat op");
-            a("ae03594c", "Kleine Antwoordboost"),
+                a("ee54c3de", "Sla video's rechtstreeks op je apparaat op"),
+                a("ae03594c", "Kleine Antwoordboost"),
                 a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
                 a("bf2a6acc", "Grote Antwoordboost"),
                 a("c2059276", "Zorg dat je antwoorden worden geboost."),
@@ -7348,7 +7356,6 @@
                 a("b0c91a92", "Log in of registreer je om te zien wat mensen op X hierover zeggen"),
                 a("d7071084", "Grok dit"),
                 a("ee2200f4", "Dit verhaal is een samenvatting van posts op X gemaakt door Grok. Het verhaal zal in de loop van de tijd evolueren."),
-                a("dd225af8", "Geen mensen gevonden."),
                 a("e1e5d552", "Je Circle bewerken"),
                 a("ec13f9cc", "Er is nog niemand in je Circle"),
                 a("dab58e32", "Wanneer je mensen toevoegt, zijn ze hier te zien."),
@@ -7413,8 +7420,6 @@
                 a("bf4558fa", "Overzicht van de prestaties van je organische posts"),
                 a("c69069e6", "Aantal keer dat deze post op X is bekeken"),
                 a("a0615bac", "Het totale aantal interacties van een gebruiker met een post, waaronder alle clicks binnen de post (op hashtags, links, profielafbeelding, gebruikersnaam en uitgeklapte post), reposts, antwoorden, volgverzoeken en vind-ik-leuks."),
-                a("d8abdaa4", "Nieuwe volgers"),
-                a("c72f25a8", "Volgers die rechtstreeks voortkomen uit deze post"),
                 a("acc4cf12", "Aantal profielweergaven van deze post"),
                 a("c7d0d1c4", "Aantal clicks op alle URL's van deze post"),
                 a("a4da7724", "Het aantal keer dat mensen de details van deze post hebben bekeken"),
@@ -7862,10 +7867,7 @@
                 a("e3dffb4e", "Kopieer het e-mailadres van ons ondersteuningsteam hieronder en mail de benodigde informatie om het integratieproces te starten."),
                 a("b4fef99e", "Nadat ons ondersteuningsteam je aanvraag heeft ontvangen, bekijken we je informatie en helpen we je bij het configureren van je integratie."),
                 a("h37f2d96", "Let op: momenteel worden niet alle sollicitantenvolgsystemen ondersteund."),
-                a("ce102a20", "Doorsturen naar Stripe"),
-                a("ddfd6718", "Betaling mislukt"),
-                a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
-                a("a62359e6", "Instellingen Geverifieerde Organisaties");
+                a("ce102a20", "Doorsturen naar Stripe");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7904,7 +7906,10 @@
                     o(e, n)
                 );
             }
-            a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
+            a("ddfd6718", "Betaling mislukt"),
+                a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
+                a("a62359e6", "Instellingen Geverifieerde Organisaties"),
+                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
                 a("i4dccc18", "Facturering"),
                 a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
                 a("dac61c3c", "Accountinstellingen"),
@@ -8904,13 +8909,13 @@
                 a("ecda5f9e", "Misleidend"),
                 a("a423473c", "Wettelijk vereiste kennisgeving"),
                 a("b3296688", "Zichtbaarheid beperkt"),
-                a("ccd32094", "Nu"),
-                a("abfcce0d", function (e) {
-                    return e.amountOfTime + " geleden";
-                }),
+                a("ccd32094", "Nu");
+            a("abfcce0d", function (e) {
+                return e.amountOfTime + " geleden";
+            }),
                 a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
-                a("j355f008", "Vastgemaakte post");
-            a("habf9678", "Vastgemaakt door auteur"),
+                a("j355f008", "Vastgemaakte post"),
+                a("habf9678", "Vastgemaakt door auteur"),
                 a("db0798ed", function (e) {
                     return "Onderwerp " + e.topicName;
                 }),
@@ -13063,6 +13068,7 @@
                 (u.a1885539618 = v({ 1: u("nl").numberFormatter({ raw: "0" }) }, { pattern: "E d MMM", timeSeparator: ":", days: { E: { 1: { sun: "zo", mon: "ma", tue: "di", wed: "wo", thu: "do", fri: "vr", sat: "za" } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mrt.", 4: "apr.", 5: "mei", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
                 (u.a600852163 = v({ 1: u("nl").numberFormatter({ raw: "0" }) }, { pattern: "E d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "zo", mon: "ma", tue: "di", wed: "wo", thu: "do", fri: "vr", sat: "za" } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mrt.", 4: "apr.", 5: "mei", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
                 (u.a1892927786 = v({ 1: u("nl").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "januari", 2: "februari", 3: "maart", 4: "april", 5: "mei", 6: "juni", 7: "juli", 8: "augustus", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
+                (u.a1181247912 = v({ 1: u("nl").numberFormatter({ raw: "0" }), 2: u("nl").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y 'om' HH:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "januari", 2: "februari", 3: "maart", 4: "april", 5: "mei", 6: "juni", 7: "juli", 8: "augustus", 9: "september", 10: "oktober", 11: "november", 12: "december" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (u.b1955073703 = v({ 1: u("nl").numberFormatter({ raw: "0" }), 2: u("nl").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mrt.", 4: "apr.", 5: "mei", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
                 (u.b1994896741 = v({ 1: u("nl").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "januari", 2: "februari", 3: "maart", 4: "april", 5: "mei", 6: "juni", 7: "juli", 8: "augustus", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
                 (u.b784468262 = v({ 1: u("nl").numberFormatter({ raw: "0" }), 2: u("nl").numberFormatter({ raw: "00" }) }, { pattern: "d MMM h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mrt.", 4: "apr.", 5: "mei", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
@@ -13084,6 +13090,7 @@
                 (u.b1658145301 = p(u("nl").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (u.b1879197926 = p(u("nl").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (u.b1650757133 = p(u("nl").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (u.a789840831 = p(u("nl").dateToPartsFormatter({ datetime: "long" }))),
                 (u.b1527215134 = p(u("nl").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (u.b1092974542 = p(u("nl").dateToPartsFormatter({ date: "long" }))),
                 (u.a1030448945 = p(u("nl").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13149,6 +13156,7 @@
                 a("c0bdd345", u.b1155034309),
                 a("aa2aa1a1", u.b1879197926),
                 a("da44942d", u.b1650757133),
+                a("a54d3ef5", u.a789840831),
                 a("bfbc051d", u.b1527215134),
                 a("ba2e82a1", u.b1092974542),
                 a("fc209bb7", u.a1030448945),
@@ -13239,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.6fb1bfaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.38c6579a.js.map

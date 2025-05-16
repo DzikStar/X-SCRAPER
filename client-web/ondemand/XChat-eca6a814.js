@@ -5,8 +5,8 @@
         718278: (e, s, t) => {
             t.d(s, { o: () => i });
             var n = t(552322),
-                a = t(993165),
-                r = t(425522);
+                a = t(436059),
+                r = t(159603);
             const o = r.com.x.logger.XLog,
                 i = () =>
                     (0, n.jsx)(a.z, {
@@ -30,16 +30,16 @@
                         children: "Download Logs",
                     });
         },
-        950040: (e, s, t) => {
-            t.d(s, { r: () => Re });
+        383217: (e, s, t) => {
+            t.d(s, { r: () => Se });
             var n = t(552322),
-                a = t(983706),
-                r = t(193686),
+                a = t(921879),
+                r = t(702024),
                 o = t(533476),
-                i = t(425522),
-                l = t(378364),
-                c = t(332161),
-                d = t(789764),
+                i = t(159603),
+                l = t(26429),
+                c = t(941204),
+                d = t(475694),
                 m = t(369962);
             const u = i.com.x.dms.model.InformationalItemContents;
             function x({ avatarUrl: e }) {
@@ -51,7 +51,7 @@
             function g({ children: e }) {
                 return (0, n.jsx)("div", { className: "flex justify-center items-center my-2", children: e });
             }
-            function f({ contents: e }) {
+            function p({ contents: e }) {
                 const s = e.affectedUsers.asJsReadonlyArrayView();
                 if (s.length > 1) {
                     const o = s[0],
@@ -64,7 +64,7 @@
                     i = e.sender?.displayName ? ((e, s) => `${e} was added by ${s}`)(o?.displayName || "Unknown", e.sender?.displayName) : ((e) => `${e} was added`)(o?.displayName || "Unknown");
                 return (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(x, { avatarUrl: o?.profileImageUrl }), (0, n.jsx)(h, { message: i })] });
             }
-            function p({ contents: e }) {
+            function f({ contents: e }) {
                 const s = e.affectedUsers.asJsReadonlyArrayView();
                 if (s.length > 1) {
                     const o = s[0],
@@ -122,23 +122,23 @@
                 }
                 return (0, n.jsx)(h, { message: s });
             }
-            function I({ informationalItem: e }) {
+            function C({ informationalItem: e }) {
                 const s = e.contents;
-                return (0, n.jsx)(g, { children: s instanceof u.AddedGroupMembers ? (0, n.jsx)(f, { contents: s }) : s instanceof u.RemovedGroupMembers ? (0, n.jsx)(p, { contents: s }) : s instanceof u.AddedGroupAdmins ? (0, n.jsx)(v, { contents: s }) : s instanceof u.RemovedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof u.ChangedGroupTitle ? (0, n.jsx)(j, { contents: s }) : s instanceof u.ChangedGroupAvatar ? (0, n.jsx)(w, { contents: s }) : s instanceof u.DefaultTtlChanged ? (0, n.jsx)(b, { contents: s }) : s instanceof u.DateChanged ? (0, n.jsx)(N, { contents: s }) : null });
+                return (0, n.jsx)(g, { children: s instanceof u.AddedGroupMembers ? (0, n.jsx)(p, { contents: s }) : s instanceof u.RemovedGroupMembers ? (0, n.jsx)(f, { contents: s }) : s instanceof u.AddedGroupAdmins ? (0, n.jsx)(v, { contents: s }) : s instanceof u.RemovedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof u.ChangedGroupTitle ? (0, n.jsx)(j, { contents: s }) : s instanceof u.ChangedGroupAvatar ? (0, n.jsx)(w, { contents: s }) : s instanceof u.DefaultTtlChanged ? (0, n.jsx)(b, { contents: s }) : s instanceof u.DateChanged ? (0, n.jsx)(N, { contents: s }) : null });
             }
-            var C = t(202784),
-                k = t(527735),
-                D = t(993165),
-                E = t(553453),
-                S = t(611105),
-                R = t(147602),
-                $ = t(436995),
-                M = t(145731),
-                U = t(421018);
+            var I = t(202784),
+                k = t(776604),
+                D = t(436059),
+                E = t(155209),
+                S = t(616627),
+                $ = t(872443),
+                R = t(720640),
+                M = t(250362),
+                U = t(848553);
             const A = i.com.x.dms.model.ChatMessageAction,
                 T = i.com.x.dms.chat.DmEvent,
-                F = i.com.x.models.KMPRect;
-            function z({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, isFromAttachment: a, onEvent: r }) {
+                z = i.com.x.models.KMPRect;
+            function F({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, isFromAttachment: a, onEvent: r }) {
                 const o = t || !!s?.longPress,
                     i = s?.longPress
                         ?.getActions()
@@ -151,7 +151,7 @@
                                     case A.DsaReport:
                                         return null;
                                 }
-                                return e instanceof A.Reply ? { text: "Reply", icon: (0, n.jsx)(E.Z, {}), onClick: t } : e instanceof A.CancelSend ? { text: "Cancel message", icon: void 0, onClick: t } : e instanceof A.RetrySend ? { text: "Try sending again", icon: (0, n.jsx)(S.Z, {}), onClick: t } : e instanceof A.CopyText ? { text: "Copy message text", icon: (0, n.jsx)(R.Z, {}), onClick: () => navigator.clipboard.writeText(e.text) } : e instanceof A.Edit ? { text: "Edit message", icon: (0, n.jsx)($.Z, {}), onClick: t } : e instanceof A.DeleteForAll ? { text: "Delete for All", icon: (0, n.jsx)(M.Z, {}), destructive: !0, onClick: t } : e instanceof A.DeleteForSelf || e instanceof A.DeletePending ? { text: "Delete for me", icon: (0, n.jsx)(M.Z, {}), destructive: !0, onClick: t } : null;
+                                return e instanceof A.Reply ? { text: "Reply", icon: (0, n.jsx)(E.Z, {}), onClick: t } : e instanceof A.CancelSend ? { text: "Cancel message", icon: void 0, onClick: t } : e instanceof A.RetrySend ? { text: "Try sending again", icon: (0, n.jsx)(S.Z, {}), onClick: t } : e instanceof A.CopyText ? { text: "Copy message text", icon: (0, n.jsx)($.Z, {}), onClick: () => navigator.clipboard.writeText(e.text) } : e instanceof A.Edit ? { text: "Edit message", icon: (0, n.jsx)(R.Z, {}), onClick: t } : e instanceof A.DeleteForAll ? { text: "Delete for All", icon: (0, n.jsx)(M.Z, {}), destructive: !0, onClick: t } : e instanceof A.DeleteForSelf || e instanceof A.DeletePending ? { text: "Delete for me", icon: (0, n.jsx)(M.Z, {}), destructive: !0, onClick: t } : null;
                             })(e, r),
                         )
                         .filter((e) => !!e);
@@ -163,7 +163,7 @@
                         trigger: (0, n.jsx)(D.z, { variant: "primaryText", size: "xSmall", icon: (0, n.jsx)(U.Z, {}), color: "gray600" }),
                         open: !!s?.longPress,
                         onOpenChange: (s) => {
-                            const t = s ? new T.MessageLongPressed(e, new F(0, 0, 0, 0), a) : T.MessageFocusedDialogDismissed;
+                            const t = s ? new T.MessageLongPressed(e, new z(0, 0, 0, 0), a) : T.MessageFocusedDialogDismissed;
                             r(t);
                         },
                     }),
@@ -175,67 +175,68 @@
             var V = t(455091),
                 J = t(607499),
                 Z = t(707513),
-                L = t(42630),
-                G = t(189164),
-                _ = t(242782);
-            function q({ messageInfo: e, isReceived: s, showSignatureVerificationIssuesIcon: t }) {
+                _ = t(461222),
+                L = t(54686),
+                G = t(266917),
+                q = t(38891);
+            function K({ messageInfo: e, isReceived: s, showSignatureVerificationIssuesIcon: t }) {
                 const a = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.user?.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
-                    r = a.length > 1;
-                return (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Edited" }), e.showEdited && e.showReadUsers && !r ? (0, n.jsx)(L.A, {}) : null, t && (0, n.jsx)(G.Z, {}), t && e.showReadUsers && (0, n.jsx)(L.A, {}), e.showReadUsers && (0, n.jsxs)(n.Fragment, { children: [r ? (0, n.jsx)(d.o, { urls: a, size: "small", spacing: 6, stackOrder: "ascending" }) : (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Read" }), (0, n.jsx)("div", { className: "p-0.5 bg-background rounded-full z-20 " + (r ? "-ms-[12px]" : "-ms-[2px]"), children: (0, n.jsx)(_.Z, { width: "16", height: "16", viewBox: "1.75 1.75 20.5 20.5", className: "text-gray-700" }) })] })] });
+                    r = (0, q.zo)().isTrue("xchat_read_receipt_facepile") && a.length > 1;
+                return (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.showEdited && (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Edited" }), e.showEdited && e.showReadUsers && !r ? (0, n.jsx)(_.A, {}) : null, t && (0, n.jsx)(L.Z, {}), t && e.showReadUsers && (0, n.jsx)(_.A, {}), e.showReadUsers && (0, n.jsxs)(n.Fragment, { children: [r ? (0, n.jsx)(d.o, { urls: a, size: "small", spacing: 6, stackOrder: "ascending" }) : (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Read" }), (0, n.jsx)("div", { className: "p-0.5 bg-background rounded-full z-20 " + (r ? "-ms-[12px]" : "-ms-[2px]"), children: (0, n.jsx)(G.Z, { width: "16", height: "16", viewBox: "1.75 1.75 20.5 20.5", className: "text-gray-700" }) })] })] });
             }
-            var K = t(983955),
-                O = t(22199);
-            const B = ({ isReceived: e, textContent: s, textEntities: t, hasTTL: a = !1 }) => {
+            var O = t(862399),
+                B = t(856402);
+            const Y = ({ isReceived: e, textContent: s, textEntities: t, hasTTL: a = !1 }) => {
                     const r = {};
-                    return t.forEach((e) => Y(e, r)), (0, n.jsxs)("div", { className: "flex flex-row items-end justify-end gap-3 relative", children: [(0, n.jsx)(K.W, { color: e ? "text" : "white", entities: r, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 }), a && (0, n.jsx)("div", { children: (0, n.jsx)("div", { className: "absolute -bottom-1 -right-2", children: (0, n.jsx)(O.Z, { className: "w-4 h-4 " + (e ? "text-gray-700" : "text-gray-50 dark:text-white") }) }) })] });
+                    return t.forEach((e) => H(e, r)), (0, n.jsxs)("div", { className: "flex flex-row items-end justify-end gap-3 relative", children: [(0, n.jsx)(O.W, { color: e ? "text" : "white", entities: r, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 }), a && (0, n.jsx)("div", { children: (0, n.jsx)("div", { className: "absolute -bottom-1 -right-2", children: (0, n.jsx)(B.Z, { className: "w-4 h-4 " + (e ? "text-gray-700" : "text-gray-50 dark:text-white") }) }) })] });
                 },
-                Y = (e, s) => {
+                H = (e, s) => {
                     const t = [e.startIdx, e.endIdx];
-                    e instanceof i.com.x.models.text.AddressEntity || (e instanceof i.com.x.models.text.MentionEntity ? (s.mentions || (s.mentions = []), s.mentions.push({ screenName: e.screenName, indices: t })) : e instanceof i.com.x.models.text.UrlEntity ? (s.urls || (s.urls = []), s.urls.push({ displayUrl: e.displayUrl, url: H(e.url), indices: t })) : e instanceof i.com.x.models.text.EmailEntity ? (s.urls || (s.urls = []), s.urls.push({ displayUrl: e.email, url: W(e.email), indices: t })) : e instanceof i.com.x.models.text.HashtagEntity ? (s.hashtags || (s.hashtags = []), s.hashtags.push({ text: e.text, indices: t })) : e instanceof i.com.x.models.text.CashtagEntity ? (s.symbols || (s.symbols = []), s.symbols.push({ text: e.text, indices: t })) : e instanceof i.com.x.models.text.PhoneNumberEntity && (s.urls || (s.urls = []), s.urls.push({ displayUrl: e.phoneNumberForTelLink, url: `tel:${e.phoneNumberForTelLink}`, indices: t })));
+                    e instanceof i.com.x.models.text.AddressEntity || (e instanceof i.com.x.models.text.MentionEntity ? (s.mentions || (s.mentions = []), s.mentions.push({ screenName: e.screenName, indices: t })) : e instanceof i.com.x.models.text.UrlEntity ? (s.urls || (s.urls = []), s.urls.push({ displayUrl: e.displayUrl, url: W(e.url), indices: t })) : e instanceof i.com.x.models.text.EmailEntity ? (s.urls || (s.urls = []), s.urls.push({ displayUrl: e.email, url: X(e.email), indices: t })) : e instanceof i.com.x.models.text.HashtagEntity ? (s.hashtags || (s.hashtags = []), s.hashtags.push({ text: e.text, indices: t })) : e instanceof i.com.x.models.text.CashtagEntity ? (s.symbols || (s.symbols = []), s.symbols.push({ text: e.text, indices: t })) : e instanceof i.com.x.models.text.PhoneNumberEntity && (s.urls || (s.urls = []), s.urls.push({ displayUrl: e.phoneNumberForTelLink, url: `tel:${e.phoneNumberForTelLink}`, indices: t })));
                 };
-            function H(e) {
+            function W(e) {
                 return /^https?:\/\//i.test(e) ? e : `https://${e}`;
             }
-            function W(e) {
+            function X(e) {
                 return /^mailto:/i.test(e) ? e : `mailto:${e}`;
             }
-            var X = t(437712),
-                Q = t(31674),
-                ee = t(651782);
-            const se = ({ emoji: e, count: s, users: t }) => {
-                    const a = (0, C.useRef)(null),
-                        r = (0, ee.X)(a),
+            var Q = t(86781),
+                ee = t(796309),
+                se = t(853425);
+            const te = ({ emoji: e, count: s, users: t }) => {
+                    const a = (0, I.useRef)(null),
+                        r = (0, se.X)(a),
                         o = t.map((e) => e.name),
                         i = o.length > 1 ? `${o.slice(0, -1).join(", ")} and ${o[o.length - 1]}` : o[0];
-                    return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(X.J, { open: r, side: "top", trigger: (0, n.jsxs)("div", { ref: a, className: "inline-flex items-center bg-gray-50 rounded-full px-2 shadow-sm gap-1 border border-background cursor-pointer", children: [(0, n.jsx)(c.x, { size: "headline2", children: e }), s > 1 && (0, n.jsx)(c.x, { size: "subtext3", weight: "bold", color: "gray700", children: s })] }), children: (0, n.jsx)("div", { className: "p-2 border border-border rounded-lg bg-background shadow-lg", children: (0, n.jsxs)(c.x, { size: "subtext2", weight: "medium", children: [i, " reacted with ", e] }) }) }) });
+                    return (0, n.jsx)("div", { className: "relative", children: (0, n.jsx)(Q.J, { open: r, side: "top", trigger: (0, n.jsxs)("div", { ref: a, className: "inline-flex items-center bg-gray-50 rounded-full px-2 shadow-sm gap-1 border border-background cursor-pointer", children: [(0, n.jsx)(c.x, { size: "headline2", children: e }), s > 1 && (0, n.jsx)(c.x, { size: "subtext3", weight: "bold", color: "gray700", children: s })] }), children: (0, n.jsx)("div", { className: "p-2 border border-border rounded-lg bg-background shadow-lg", children: (0, n.jsxs)(c.x, { size: "subtext2", weight: "medium", children: [i, " reacted with ", e] }) }) }) });
                 },
-                te = ({ reaction: e }) => (0, n.jsx)(se, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length, users: e.users.asJsReadonlyArrayView() }),
-                ne = ({ className: e, reactions: s }) => (0, n.jsxs)("div", { className: (0, Q.cn)("flex flex-row gap-1", e), children: [s.slice(0, 5).map((e) => (0, n.jsx)(te, { reaction: e }, e.reaction)), s.length > 5 && (0, n.jsx)(se, { emoji: "…", count: 0, users: [] })] });
-            var ae = t(167285),
-                re = t(407602),
-                oe = t(840489);
-            const ie = i.com.x.dms.chat.DmEvent,
-                le = i.com.x.models.KMPRect,
-                ce = ({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, onEvent: a }) => {
-                    const [r, o] = (0, C.useState)(!1);
+                ne = ({ reaction: e }) => (0, n.jsx)(te, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length, users: e.users.asJsReadonlyArrayView() }),
+                ae = ({ className: e, reactions: s }) => (0, n.jsxs)("div", { className: (0, ee.cn)("flex flex-row gap-1", e), children: [s.slice(0, 5).map((e) => (0, n.jsx)(ne, { reaction: e }, e.reaction)), s.length > 5 && (0, n.jsx)(te, { emoji: "…", count: 0, users: [] })] });
+            var re = t(167285),
+                oe = t(636872),
+                ie = t(840489);
+            const le = i.com.x.dms.chat.DmEvent,
+                ce = i.com.x.models.KMPRect,
+                de = ({ messageItem: e, messageFocusedDialog: s, isMessageFocused: t, onEvent: a }) => {
+                    const [r, o] = (0, I.useState)(!1);
                     if (!t && !s?.quickReactions) return null;
                     const i = s?.quickReactions?.asJsReadonlyArrayView().map((e) => e.asJsReadonlyArrayView());
-                    return (0, n.jsx)(X.J, {
+                    return (0, n.jsx)(Q.J, {
                         trigger: (0, n.jsx)("div", {
                             className: "flex items-center gap-2",
                             children: (0, n.jsx)(D.z, {
                                 variant: "primaryText",
                                 size: "small",
                                 color: "red600",
-                                icon: (0, n.jsx)(re.Z, {}),
+                                icon: (0, n.jsx)(oe.Z, {}),
                                 onClick: () => {
-                                    null === s ? (o(!0), a(new ie.MessageDoubleClicked(e, new le(0, 0, 0, 0), !1))) : (o(!1), a(ie.MessageFocusedDialogDismissed));
+                                    null === s ? (o(!0), a(new le.MessageDoubleClicked(e, new ce(0, 0, 0, 0), !1))) : (o(!1), a(le.MessageFocusedDialogDismissed));
                                 },
                             }),
                         }),
                         open: null !== s && r,
                         onOpenChange: (e) => {
-                            !e && r && (a(ie.MessageFocusedDialogDismissed), o(!1));
+                            !e && r && (a(le.MessageFocusedDialogDismissed), o(!1));
                         },
                         children: (0, n.jsx)("div", {
                             className: "flex flex-col p-1 rounded-lg border",
@@ -249,9 +250,9 @@
                                                 "button",
                                                 {
                                                     type: "button",
-                                                    className: (0, oe.Z)("w-8 h-8 rounded flex items-center justify-center hover:bg-gray-100", { "bg-gray-50": s.isSelected }),
+                                                    className: (0, ie.Z)("w-8 h-8 rounded flex items-center justify-center hover:bg-gray-100", { "bg-gray-50": s.isSelected }),
                                                     onClick: () => {
-                                                        a(new ie.ReactionPickerItemClick(s, e));
+                                                        a(new le.ReactionPickerItemClick(s, e));
                                                     },
                                                     children: (0, n.jsx)(c.x, { size: "headline1", children: s.emoji }),
                                                 },
@@ -265,12 +266,12 @@
                         }),
                     });
                 };
-            var de = t(784344),
-                me = t(617092),
-                ue = t(289752),
-                xe = t(791266);
-            const he = i.com.x.dms.chat.DmEvent,
-                ge = ({ isReceived: e, replyPreview: s, replierInfo: t, onEvent: a }) => {
+            var me = t(48783),
+                ue = t(617092),
+                xe = t(289752),
+                he = t(791266);
+            const ge = i.com.x.dms.chat.DmEvent,
+                pe = ({ isReceived: e, replyPreview: s, replierInfo: t, onEvent: a }) => {
                     const r = t.id,
                         { senderId: o } = s,
                         l = t.displayName,
@@ -280,17 +281,17 @@
                         x = (0, n.jsx)(V.cC, { i18nKey: "<highlight>{replier}</highlight> to {sender}", values: { replier: l, sender: d }, components: { highlight: m } }),
                         h = (0, n.jsx)(V.cC, { i18nKey: "<highlight>{replier}</highlight> to themself", values: { replier: l }, components: { highlight: m } }),
                         g = (0, n.jsx)(V.cC, { i18nKey: "<highlight>You</highlight> to yourself", components: { highlight: m } }),
-                        f = (0, n.jsx)(V.cC, { i18nKey: "<highlight>You</highlight> to {sender}", values: { sender: d }, components: { highlight: m } }),
-                        p = r.equals(o) ? (s.senderIsCurrentUser ? g : h) : s.senderIsCurrentUser ? u : e ? x : f;
-                    return (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && a(new he.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(de.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(c.x, { as: "span", className: "text-text/40", size: "subtext2", children: p })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(me.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(ue.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%]" })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(xe.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(c.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 1, children: s.previewText }) })] });
+                        p = (0, n.jsx)(V.cC, { i18nKey: "<highlight>You</highlight> to {sender}", values: { sender: d }, components: { highlight: m } }),
+                        f = r.equals(o) ? (s.senderIsCurrentUser ? g : h) : s.senderIsCurrentUser ? u : e ? x : p;
+                    return (0, n.jsxs)("div", { className: `flex flex-col mt-0.5 ${e ? "items-start" : "items-end"} cursor-pointer`, onClick: () => s.sequenceNumber && a(new ge.ReplyBubbleClicked(s.sequenceNumber)), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(me.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(c.x, { as: "span", className: "text-text/40", size: "subtext2", children: f })] }), s.attachment && (s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media && s.attachment.type === i.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(ue.K, { filename: s.attachment.filename, fileSize: s.attachment.fileSize }) : s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.Media.FromServer && s.attachment.uriState instanceof i.com.x.dms.model.MediaUriState.ResolvedMedia && (0, n.jsx)(xe.Et, { src: s.attachment.uriState.uri, type: s.attachment.type, dimensions: s.attachment.dimensions, className: "rounded-2xl !w-[25%] !h-[25%]" })), s.attachment instanceof i.com.x.dms.model.MessageItemAttachment.UrlCard && (0, n.jsx)(he.C, { urlCard: s.attachment }), s.previewText && (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(c.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 1, children: s.previewText }) })] });
                 };
-            var fe = t(305399);
-            function pe({ messageItem: e, messageFocusedDialog: s, onEvent: t }) {
+            var fe = t(469745);
+            function ve({ messageItem: e, messageFocusedDialog: s, onEvent: t }) {
                 const { t: a } = (0, V.$G)(),
                     r = (0, fe.a)("(max-width: 768px)"),
                     o = e instanceof i.com.x.dms.model.MessageItemReceived,
                     l = null !== e.textContent && !e.supersizeEmoji,
-                    [d, m] = (0, C.useState)(!1),
+                    [d, m] = (0, I.useState)(!1),
                     u = ((e) => {
                         switch (e) {
                             case i.com.x.dms.model.MessageBurstState.Solo:
@@ -316,114 +317,109 @@
                             style: { gridTemplateAreas: o ? '\n                  "avatar content actions"\n                  ". message-info ."\n                ' : '\n                  "actions content avatar"\n                  ". message-info ."\n                ' },
                             children: [
                                 (0, n.jsx)("div", { className: "self-end", style: { gridArea: "avatar" }, children: e.senderInfo?.user && (0, n.jsx)(P, { avatarDisplayMode: e.avatarDisplayMode, user: e.senderInfo?.user }) }),
-                                (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 " + (o ? "items-start" : "items-end"), style: { gridArea: "content" }, children: [e.replyPreview && e.senderInfo && e.senderInfo.user && (0, n.jsx)(ge, { replyPreview: e.replyPreview, replierInfo: e.senderInfo.user, isReceived: o, onEvent: t }), e.attachment ? (0, n.jsxs)("div", { className: "flex max-w-1/3 overflow-hidden rounded-2xl relative", children: [(0, n.jsx)(Z.P, { attachment: e.attachment, isReceived: o, onEvent: t, className: "rounded-2xl" }), x && !l && (0, n.jsx)("div", { className: "absolute bottom-2 right-2 rounded-full text-gray-700 shadow-md", children: (0, n.jsx)(O.Z, { className: "w-4 h-4" }) })] }) : null, e.supersizeEmoji && (0, n.jsx)(c.x, { size: "title2", className: "px-1 tracking-widest", children: e.textContent }), l ? (0, n.jsx)("div", { className: "px-4 py-2 rounded-2xl " + (e.supersizeEmoji ? "" : o ? "bg-gray-200" : "bg-blue-500"), children: e.textContent && (0, n.jsx)(B, { textContent: e.textContent, textEntities: e.textEntities.asJsReadonlyArrayView(), isReceived: o, hasTTL: x }) }) : null] }),
-                                (0, n.jsxs)("div", { className: `${r ? "w-16" : "w-32"} flex items-center gap-1 ${o ? "flex-row" : "flex-row-reverse"}`, style: { gridArea: "actions" }, children: [(0, n.jsx)(ce, { messageItem: e, messageFocusedDialog: s, isMessageFocused: d, onEvent: t }), (0, n.jsx)(z, { messageFocusedDialog: s, isMessageFocused: d, messageItem: e, onEvent: t, isFromAttachment: !1 }), d && !r && (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: (0, ae.H)(e.createdTimestamp.epochSeconds) })] }),
-                                (0, n.jsxs)("div", { className: "flex flex-col", style: { gridArea: "message-info" }, children: [e.reactions && e.reactions.asJsReadonlyArrayView().length > 0 && (0, n.jsx)(ne, { className: "relative -mt-3 ms-2", reactions: e.reactions.asJsReadonlyArrayView() }), e.messageInfo && (0, n.jsx)(q, { messageInfo: e.messageInfo, showSignatureVerificationIssuesIcon: e.showSignatureVerificationIssuesIcon, isReceived: o })] }),
+                                (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 " + (o ? "items-start" : "items-end"), style: { gridArea: "content" }, children: [e.replyPreview && e.senderInfo && e.senderInfo.user && (0, n.jsx)(pe, { replyPreview: e.replyPreview, replierInfo: e.senderInfo.user, isReceived: o, onEvent: t }), e.attachment ? (0, n.jsxs)("div", { className: "flex max-w-1/3 overflow-hidden rounded-2xl relative", children: [(0, n.jsx)(Z.P, { attachment: e.attachment, isReceived: o, onEvent: t, className: "rounded-2xl" }), x && !l && (0, n.jsx)("div", { className: "absolute bottom-2 right-2 rounded-full text-gray-700 shadow-md", children: (0, n.jsx)(B.Z, { className: "w-4 h-4" }) })] }) : null, e.supersizeEmoji && (0, n.jsx)(c.x, { size: "title2", className: "px-1 tracking-widest", children: e.textContent }), l ? (0, n.jsx)("div", { className: "px-4 py-2 rounded-2xl " + (e.supersizeEmoji ? "" : o ? "bg-gray-200" : "bg-blue-500"), children: e.textContent && (0, n.jsx)(Y, { textContent: e.textContent, textEntities: e.textEntities.asJsReadonlyArrayView(), isReceived: o, hasTTL: x }) }) : null] }),
+                                (0, n.jsxs)("div", { className: `${r ? "w-16" : "w-32"} flex items-center gap-1 ${o ? "flex-row" : "flex-row-reverse"}`, style: { gridArea: "actions" }, children: [(0, n.jsx)(de, { messageItem: e, messageFocusedDialog: s, isMessageFocused: d, onEvent: t }), (0, n.jsx)(F, { messageFocusedDialog: s, isMessageFocused: d, messageItem: e, onEvent: t, isFromAttachment: !1 }), d && !r && (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: (0, re.H)(e.createdTimestamp.epochSeconds) })] }),
+                                (0, n.jsxs)("div", { className: "flex flex-col", style: { gridArea: "message-info" }, children: [e.reactions && e.reactions.asJsReadonlyArrayView().length > 0 && (0, n.jsx)(ae, { className: "relative -mt-3 ms-2", reactions: e.reactions.asJsReadonlyArrayView() }), e.messageInfo && (0, n.jsx)(K, { messageInfo: e.messageInfo, showSignatureVerificationIssuesIcon: e.showSignatureVerificationIssuesIcon, isReceived: o })] }),
                             ],
                         }),
                     }),
                 });
             }
-            var ve = t(668631);
-            function ye({ sendingStatusItem: e }) {
-                return "Failed" === e.status.name ? (0, n.jsxs)("div", { className: "flex justify-end py-1 px-4 gap-1 me-2", children: [(0, n.jsx)(c.x, { size: "subtext2", color: "red500", children: "Failed" }), (0, n.jsx)(ve.Z, { width: "14", height: "14", className: "text-red-500" })] }) : null;
+            var ye = t(630804);
+            function je({ sendingStatusItem: e }) {
+                return "Failed" === e.status.name ? (0, n.jsxs)("div", { className: "flex justify-end py-1 px-4 gap-1 me-2", children: [(0, n.jsx)(c.x, { size: "subtext2", color: "red500", children: "Failed" }), (0, n.jsx)(ye.Z, { width: "14", height: "14", className: "text-red-500" })] }) : null;
             }
-            var je = t(350311);
-            const we = ({ typingIndicatorItem: e }) => {
-                const s = e.users.asJsReadonlyArrayView().map((e) => e.profileImageUrl || je.j);
-                return (0, n.jsxs)("div", { className: "flex justify-start items-end py-1 px-4", children: [!!s.length && (0, n.jsx)("div", { className: "-m-0.5", children: (0, n.jsx)(d.o, { urls: s, size: "large" }) }), (0, n.jsx)("div", { className: "flex flex-row px-4 py-2 h-9 rounded-2xl ms-2 rounded-es-sm gap-2 bg-gray-200 items-center justify-between", children: [0, 1, 2].map((e) => (0, n.jsx)("div", { className: "animate-pulse duration-1200 w-2 h-2 rounded-full bg-gray-800", style: { animationDelay: (1200 * e) / 3 + "ms" } }, e)) })] });
-            };
-            function be({ chatItem: e, messageFocusedDialog: s, onEvent: t }) {
-                return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(pe, { messageItem: e, messageFocusedDialog: s, onEvent: t }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)(ye, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(I, { informationalItem: e }) : e instanceof i.com.x.dms.model.TypingIndicatorItem ? (0, n.jsx)(we, { typingIndicatorItem: e }) : null;
+            function we({ chatItem: e, messageFocusedDialog: s, onEvent: t }) {
+                return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(ve, { messageItem: e, messageFocusedDialog: s, onEvent: t }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)(je, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(C, { informationalItem: e }) : null;
             }
-            const Ne = (0, C.memo)(be);
-            var Ie = t(97759),
+            const be = (0, I.memo)(we);
+            var Ne = t(98474),
                 Ce = t(463341);
-            const ke = ({ component: e, numItems: s }) => {
+            const Ie = ({ component: e, numItems: s }) => {
                     const { apiRef: t, addOnScrollListener: a } = (0, Ce.Nb)(),
-                        [r, o] = (0, C.useState)(!1),
-                        l = (0, C.useCallback)(() => {
+                        [r, o] = (0, I.useState)(!1),
+                        l = (0, I.useCallback)(() => {
                             const e = t.current;
                             if (!e) return;
                             const s = e.scrollOffset + e.viewportSize;
                             o(s + 30 < e.scrollSize);
                         }, [t.current]);
-                    (0, C.useEffect)(() => a(l), [l, a]);
-                    const c = (0, C.useCallback)(() => {
+                    (0, I.useEffect)(() => a(l), [l, a]);
+                    const c = (0, I.useCallback)(() => {
                         e.onEvent(i.com.x.dms.chat.DmEvent.ScrollToBottomButtonClicked);
                         const n = t.current;
                         if (!n) return;
                         const a = n.scrollSize - n.scrollOffset - n.viewportSize <= 1e4;
                         n.scrollToIndex(s - 1, { align: "end", smooth: a });
                     }, [e, t.current, s]);
-                    return r ? (0, n.jsx)(D.z, { icon: (0, n.jsx)(Ie.Z, { width: 16, height: 16 }), className: "absolute right-12 bottom-6 bg-gray-50 w-8 h-8 rounded-3xl flex items-center justify-center text-blue-500", color: "blue500", onClick: c }) : null;
+                    return r ? (0, n.jsx)(D.z, { icon: (0, n.jsx)(Ne.Z, { width: 16, height: 16 }), className: "absolute right-12 bottom-6 bg-gray-50 w-8 h-8 rounded-3xl flex items-center justify-center text-blue-500", color: "blue500", onClick: c }) : null;
                 },
-                De = i.com.x.dms.model.MessageItemSent,
-                Ee = i.com.x.dms.model.MessageItemReceived,
-                Se = i.kotlin.collections.KtList;
-            function Re({ component: e }) {
-                const s = (0, o._)(e.state),
-                    t = (0, C.useMemo)(() => s.chatItems.items.asJsReadonlyArrayView().toReversed(), [s.chatItems]),
-                    l = { align: "end" },
-                    { apiRef: c, dispatchOnScroll: d } = (0, Ce.Nb)(),
-                    m = (0, C.useRef)(!0),
-                    u = (0, C.useCallback)(() => {
-                        if (c.current) {
-                            const s = c.current.findStartIndex(),
-                                n = c.current.findEndIndex(),
-                                a = t
-                                    .slice(s, n + 1)
-                                    .filter((e) => e instanceof Ee || e instanceof De)
+                ke = i.com.x.dms.model.MessageItemSent,
+                De = i.com.x.dms.model.MessageItemReceived,
+                Ee = i.kotlin.collections.KtList;
+            function Se({ component: e, isTypingIndicatorShown: s }) {
+                const t = (0, o._)(e.state),
+                    l = (0, I.useMemo)(() => t.chatItems.items.asJsReadonlyArrayView().toReversed(), [t.chatItems]),
+                    c = { align: "end" },
+                    { apiRef: d, dispatchOnScroll: m } = (0, Ce.Nb)(),
+                    u = (0, I.useRef)(!1),
+                    x = (0, I.useCallback)(() => {
+                        if (d.current) {
+                            const s = d.current.findStartIndex(),
+                                t = d.current.findEndIndex(),
+                                n = l
+                                    .slice(s, t + 1)
+                                    .filter((e) => e instanceof De || e instanceof ke)
                                     .map((e) => e.sequenceNumber);
-                            e.onEvent(new i.com.x.dms.chat.DmEvent.VisibleMessagesChanged(n === t.length - 1, Se.fromJsArray(a)));
+                            e.onEvent(new i.com.x.dms.chat.DmEvent.VisibleMessagesChanged(t === l.length - 1, Ee.fromJsArray(n)));
                         }
-                    }, [e, t, c.current]),
-                    x = (0, C.useCallback)(() => {
-                        c.current?.scrollToIndex(t.length - 1, l), (m.current = !1), u();
-                    }, [t, c.current, u]);
-                (0, C.useEffect)(() => {
-                    x();
-                }, [s.convId]),
-                    (0, C.useEffect)(() => {
-                        m.current || x();
-                    }, [x]);
-                const h = (s) => {
+                    }, [e, l, d.current]),
+                    h = (0, I.useCallback)(() => {
+                        d.current?.scrollToIndex(l.length - 1, c), (u.current = !1), x();
+                    }, [l, d.current, x]);
+                (0, I.useEffect)(() => {
+                    h();
+                }, [t.convId]),
+                    (0, I.useEffect)(() => {
+                        u.current || h();
+                    }, [h, s]);
+                const g = (s) => {
                     e.onEvent(s);
                 };
                 return (
-                    (0, C.useEffect)(() => {
-                        if (s.requestScrollToIndex && c.current) {
-                            const e = t.length - 1 - s.requestScrollToIndex,
-                                n = c.current.findStartIndex(),
-                                a = { align: "center", smooth: Math.abs(e - n) <= 30 };
-                            c.current?.scrollToIndex?.(e, a), (m.current = !1), u();
+                    (0, I.useEffect)(() => {
+                        if (t.requestScrollToIndex && d.current) {
+                            const e = l.length - 1 - t.requestScrollToIndex,
+                                s = d.current.findStartIndex(),
+                                n = { align: "center", smooth: Math.abs(e - s) <= 30 };
+                            d.current?.scrollToIndex?.(e, n), (u.current = !1), x();
                         }
-                    }, [s.requestScrollToIndex, t, c.current, u]),
+                    }, [t.requestScrollToIndex, l, d.current, x]),
                     (0, n.jsx)(J.S, {
                         children: (0, n.jsx)("div", {
                             className: "relative h-full pb-1",
-                            children: t
+                            children: l
                                 ? (0, n.jsxs)(n.Fragment, {
                                       children: [
                                           (0, n.jsx)(a.T, {
-                                              api: c,
+                                              api: d,
                                               className: "!h-full",
-                                              items: t,
+                                              items: l,
                                               onScroll: (e, s) => {
-                                                  c.current && (0 !== e && "backward" === s && t.length - 1 > c.current.findEndIndex() && (m.current = !0), u()), d(e, s);
+                                                  d.current && (0 !== e && "backward" === s && l.length - 3 > d.current.findEndIndex() && (u.current = !0), x()), m(e, s);
                                               },
                                               onAtEnd: () => {
-                                                  m.current = !1;
+                                                  u.current = !1;
                                               },
                                               onAtStart: () => {
-                                                  s.chatItems.olderItemsInfo && h(new i.com.x.dms.chat.DmEvent.ScrolledToTop(s.chatItems.olderItemsInfo));
+                                                  t.chatItems.olderItemsInfo && g(new i.com.x.dms.chat.DmEvent.ScrolledToTop(t.chatItems.olderItemsInfo));
                                               },
                                               renderItem: (e) => {
-                                                  return (0, n.jsx)(Ne, { chatItem: e, onEvent: h, messageFocusedDialog: ((t = e.id), s.showingMessageFocusedDialog?.message.id === t ? s.showingMessageFocusedDialog : null) }, e.uniqueKey);
-                                                  var t;
+                                                  return (0, n.jsx)(be, { chatItem: e, onEvent: g, messageFocusedDialog: ((s = e.id), t.showingMessageFocusedDialog?.message.id === s ? t.showingMessageFocusedDialog : null) }, e.uniqueKey);
+                                                  var s;
                                               },
                                           }),
-                                          (0, n.jsx)(ke, { component: e, numItems: t.length }),
+                                          (0, n.jsx)(Ie, { component: e, numItems: l.length }),
                                       ],
                                   })
                                 : (0, n.jsx)("div", { className: "flex h-full items-center", children: (0, n.jsx)(r.P, {}) }),
@@ -461,6 +457,18 @@
                     if (!e) throw new Error("No ScrollerEventContext.Provider found when calling useScrollerEventContext");
                     return e;
                 };
+        },
+        548978: (e, s, t) => {
+            t.d(s, { y: () => o });
+            var n = t(552322),
+                a = t(475694),
+                r = t(350311);
+            const o = ({ typingIndicatorItem: e }) => {
+                const s = e.users.asJsReadonlyArrayView(),
+                    t = s.map((e) => e.profileImageUrl || r.j);
+                let o = "is typing";
+                return 2 === s.length ? (o = `${s?.[0]?.name} & ${s?.[1]?.name} are typing`) : s.length > 2 ? (o = "Several people are typing") : 1 === s.length && s[0]?.name && (o = `${s[0]?.name} is typing`), (0, n.jsxs)("div", { className: "flex justify-start items-center py-1 px-4 gap-2", children: [!!t.length && (0, n.jsx)("div", { className: "-m-0.5", children: (0, n.jsx)(a.o, { urls: t, size: "small" }) }), (0, n.jsx)("span", { className: "text-sm text-gray-800 animate-pulse duration-1200", children: o })] });
+            };
         },
         379342: (e, s, t) => {
             t.d(s, { s: () => l });
@@ -541,29 +549,29 @@
             }
         },
         984713: (e, s, t) => {
-            t.d(s, { x: () => I });
+            t.d(s, { x: () => C });
             var n = t(552322),
                 a = t(202784),
-                r = t(653748),
-                o = t(193686),
-                i = t(332161),
-                l = t(423011),
-                c = t(993165),
-                d = t(687521),
-                m = t(983706),
-                u = t(425522),
+                r = t(844098),
+                o = t(702024),
+                i = t(941204),
+                l = t(130629),
+                c = t(436059),
+                d = t(887390),
+                m = t(921879),
+                u = t(159603),
                 x = t(611463),
                 h = t(379342),
                 g = t(533476),
-                f = t(658358),
-                p = t(555814),
-                v = t(458872),
-                y = t(875515),
+                p = t(658358),
+                f = t(468428),
+                v = t(889198),
+                y = t(107039),
                 j = t(272795),
                 w = t(620134);
             const b = u.com.x.dms.newdm,
                 N = u.com.x.dms.mapToValueList,
-                I = ({ onVisibilityChange: e }) => {
+                C = ({ onVisibilityChange: e }) => {
                     const [s, t] = (0, a.useState)(null),
                         i = (0, x.n)(),
                         l = (0, h.s)();
@@ -586,12 +594,12 @@
                                 }
                             );
                         }, [i, l, e]),
-                        (0, n.jsx)(r.s, { isOpen: !0, onOpenChange: e, isDismissable: !0, children: (0, n.jsx)("div", { className: "flex flex-1 flex-col w-[32rem] h-[32rem] transition-colors", children: s ? (0, n.jsx)(C, { component: s }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(o.P, {}) }) }) })
+                        (0, n.jsx)(r.s, { isOpen: !0, onOpenChange: e, isDismissable: !0, children: (0, n.jsx)("div", { className: "flex flex-1 flex-col w-[32rem] h-[32rem] transition-colors", children: s ? (0, n.jsx)(I, { component: s }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(o.P, {}) }) }) })
                     );
                 };
-            const C = ({ component: e }) => {
+            const I = ({ component: e }) => {
                 const s = (0, g._)(e.state);
-                (0, f.e)(e.toasts);
+                (0, p.e)(e.toasts);
                 const t = N(s.selectedGroupUsers).asJsReadonlyArrayView(),
                     a = [...(s.isCreateGroupMode ? [] : ["group-button"]), ...s.suggestions.asJsReadonlyArrayView()],
                     r = (s) => () => {
@@ -634,11 +642,11 @@
                             }),
                         }),
                         (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: t.length > 0 && t.map((e) => (0, n.jsx)(w.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: r(e.id) }, e.id.userIdString)) }),
-                        s.isCreateConversationCallInProgress ? (0, n.jsx)(o.P, {}) : (0, n.jsx)(m.T, { items: a, renderItem: (t) => (t instanceof u.com.x.dms.NewDmSuggestion ? (0, n.jsx)(j.c, { onClick: () => e.onEvent(new b.NewDmEvent.SuggestionClicked(t)), suggestion: t, isSelected: t instanceof u.com.x.dms.NewDmSuggestion.User && s.selectedGroupUsers.asJsReadonlyMapView().has(t.user.id) }) : (0, n.jsxs)("div", { className: "flex flex-row items-center gap-1 p-2 py-2.5 hover:bg-gray-50 cursor-pointer", onClick: () => e.onEvent(b.NewDmEvent.CreateAGroupItemClicked), children: [(0, n.jsx)("div", { className: "p-2 border border-solid rounded-full", children: (0, n.jsx)(p.Z, { className: "text-blue-500 size-4" }) }), (0, n.jsx)(i.x, { size: "body", color: "blue500", weight: "bold", children: "Create a Group" })] })) }),
+                        s.isCreateConversationCallInProgress ? (0, n.jsx)(o.P, {}) : (0, n.jsx)(m.T, { items: a, renderItem: (t) => (t instanceof u.com.x.dms.NewDmSuggestion ? (0, n.jsx)(j.c, { onClick: () => e.onEvent(new b.NewDmEvent.SuggestionClicked(t)), suggestion: t, isSelected: t instanceof u.com.x.dms.NewDmSuggestion.User && s.selectedGroupUsers.asJsReadonlyMapView().has(t.user.id) }) : (0, n.jsxs)("div", { className: "flex flex-row items-center gap-1 p-2 py-2.5 hover:bg-gray-50 cursor-pointer", onClick: () => e.onEvent(b.NewDmEvent.CreateAGroupItemClicked), children: [(0, n.jsx)("div", { className: "p-2 border border-solid rounded-full", children: (0, n.jsx)(f.Z, { className: "text-blue-500 size-4" }) }), (0, n.jsx)(i.x, { size: "body", color: "blue500", weight: "bold", children: "Create a Group" })] })) }),
                     ],
                 });
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.447828fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.6016315a.js.map

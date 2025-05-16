@@ -40,7 +40,8 @@
                                         {
                                             kind: "InlineFragment",
                                             selections: [
-                                                { alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, n, { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                { alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, n, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                 { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                             ],
                                             type: "User",
@@ -57,7 +58,7 @@
                     type: "List",
                     abstractKey: null,
                 };
-            r.hash = "ff240635406c1105d02d8450bd156d83";
+            r.hash = "a3aa9cb9151cc508dfd8bc74b8f3ccde";
             const t = r;
         },
         220070: (e, a, l) => {
@@ -130,7 +131,7 @@
             const t = r;
         },
         53821: (e, a, l) => {
-            l.d(a, { Z: () => j });
+            l.d(a, { Z: () => W });
             var n = l(202784),
                 r = l(325686),
                 t = l(731708),
@@ -152,11 +153,11 @@
                 M = l(833057),
                 k = l(872788),
                 _ = l(71620),
-                v = l(668214),
-                S = l(709318),
+                S = l(668214),
+                v = l(709318),
                 I = l(601576);
-            const Z = (0, v.Z)()
-                    .propsFromActions(() => ({ addToast: I.fz, createLocalApiErrorHandler: (0, _.zr)("TOGGLE_PIN_LIST"), pinTimeline: S.qM, unpinTimeline: S.bK }))
+            const Z = (0, S.Z)()
+                    .propsFromActions(() => ({ addToast: I.fz, createLocalApiErrorHandler: (0, _.zr)("TOGGLE_PIN_LIST"), pinTimeline: v.qM, unpinTimeline: v.bK }))
                     .withAnalytics(),
                 C = m().c5d23126,
                 P = m().j44ec610,
@@ -189,26 +190,26 @@
                 U = "listCell",
                 O = (m().d58baa7f, m().j681933e),
                 V = (e) => {
-                    const { dataSaverMode: a, decoration: l, facepileUrls: c, followersContext: u, isFollowing: m, isListPinned: y, isSelected: D, listId: w, listVisibility: M, media: k, memberCount: _, membersContext: v, mode: S, name: I, onClick: Z, pinnedTimelinesCount: C, role: P, user: A, withBottomBorder: E, withHoverCard: F, withSubscribe: T = !1 } = e,
+                    const { dataSaverMode: a, decoration: l, facepileUrls: c, followersContext: u, isFollowing: m, isListPinned: y, isSelected: D, listId: w, listVisibility: M, media: k, memberCount: _, membersContext: S, mode: v, name: I, onClick: Z, pinnedTimelinesCount: C, role: P, user: A, withBottomBorder: E, withHoverCard: F, withSubscribe: T = !1 } = e,
                         { featureSwitches: L } = (0, g.QZ)(),
                         x = L.getNumberValue("home_timeline_spheres_max_user_owned_or_subscribed_lists_count", z.F),
                         V = !C || C < x,
-                        j = `/i/lists/${w}`,
-                        $ = n.useCallback((e) => (e ? n.createElement(H.Z, { basePath: j, listId: w, wrapperStyle: { maxWidth: "100%" } }, e) : null), [j, w]),
-                        G = n.useMemo(() => n.createElement(r.Z, { style: W.name }, n.createElement(t.ZP, { numberOfLines: 1, weight: "bold" }, I), "private" === M ? n.createElement(t.ZP, { size: "body", style: W.icon }, n.createElement(h.default, { "aria-label": O, style: W.iconLock })) : null), [M, I]),
-                        X = n.useMemo(() => n.createElement(r.Z, { style: W.thumbnailImage, testID: N }, n.createElement(R.Z, { cropCandidates: k.crop, dataSaverMode: a, icon: "lists", image: k.image, type: "fixed" })), [a, k.crop, k.image]),
-                        q = n.useMemo(() => l || (D ? n.createElement(b.default, { style: W.iconCheckmark }) : S === f.H.Reordering || S === f.H.Pinning ? n.createElement(B, { couldPinList: V, isListPinned: y, listId: w, mode: S, name: I }) : T ? n.createElement(p.Z, { isFollowing: m, isMinimal: !0, listId: w, listName: I, user: A }) : void 0), [V, l, y, m, D, w, S, I, A, T]),
-                        Q = (0, K.z)(),
+                        W = `/i/lists/${w}`,
+                        $ = n.useCallback((e) => (e ? n.createElement(H.Z, { basePath: W, listId: w, wrapperStyle: { maxWidth: "100%" } }, e) : null), [W, w]),
+                        G = n.useMemo(() => n.createElement(r.Z, { style: j.name }, n.createElement(t.ZP, { numberOfLines: 1, weight: "bold" }, I), "private" === M ? n.createElement(t.ZP, { size: "body", style: j.icon }, n.createElement(h.default, { "aria-label": O, style: j.iconLock })) : null), [M, I]),
+                        X = n.useMemo(() => n.createElement(r.Z, { style: j.thumbnailImage, testID: N }, n.createElement(R.Z, { cropCandidates: k.crop, dataSaverMode: a, icon: "lists", image: k.image, type: "fixed" })), [a, k.crop, k.image]),
+                        Q = n.useMemo(() => l || (D ? n.createElement(b.default, { style: j.iconCheckmark }) : v === f.H.Reordering || v === f.H.Pinning ? n.createElement(B, { couldPinList: V, isListPinned: y, listId: w, mode: v, name: I }) : T ? n.createElement(p.Z, { isFollowing: m, isMinimal: !0, listId: w, listName: I, user: A }) : void 0), [V, l, y, m, D, w, v, I, A, T]),
+                        q = (0, K.z)(),
                         J = n.useCallback(
                             (e) => {
-                                Q.contextualScribeNamespace.element ? Q.scribeAction("click") : Q.scribe({ component: "list", action: "click" }), Z?.(e, { listId: w, member_count: _ });
+                                q.contextualScribeNamespace.element ? q.scribeAction("click") : q.scribe({ component: "list", action: "click" }), Z?.(e, { listId: w, member_count: _ });
                             },
-                            [Q, Z, w, _],
+                            [q, Z, w, _],
                         );
-                    return n.createElement(i.Z, { "aria-checked": D, link: { pathname: j, anchorless: !0 }, onPress: J, role: P, style: [W.root, E && W.bottomBorder], testID: U }, n.createElement(r.Z, { style: W.listContainer }, n.createElement(r.Z, { style: W.leftColumn }, $(X), n.createElement(r.Z, { style: W.listAttribution }, n.createElement(r.Z, { style: W.nameContainer }, $(G), v ? n.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, n.createElement(o.Z, null), v) : null), c && u ? n.createElement(r.Z, { style: W.rowContainer }, n.createElement(d.Z, { style: W.facepile, userAvatarUrls: c }), n.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, u)) : A ? n.createElement(s.Z, { affiliateBadgeInfo: A.highlightedLabel, avatarSize: "small", color: "text", isBlueVerified: A.is_blue_verified, isProtected: A.protected, isVerified: A.verified, name: A.name, nameSize: "subtext2", profileImageUrl: A.profile_image_url_https, screenName: A.screen_name, screenNameSize: "subtext2", verifiedType: A.verified_type, withHoverCard: F, withLink: !0, withScreenName: !0 }) : null)), n.createElement(r.Z, { style: W.rightColumn }, q)));
+                    return n.createElement(i.Z, { "aria-checked": D, link: { pathname: W, anchorless: !0 }, onPress: J, role: P, style: [j.root, E && j.bottomBorder], testID: U }, n.createElement(r.Z, { style: j.listContainer }, n.createElement(r.Z, { style: j.leftColumn }, $(X), n.createElement(r.Z, { style: j.listAttribution }, n.createElement(r.Z, { style: j.nameContainer }, $(G), S ? n.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, n.createElement(o.Z, null), S) : null), c && u ? n.createElement(r.Z, { style: j.rowContainer }, n.createElement(d.Z, { style: j.facepile, userAvatarUrls: c }), n.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, u)) : A ? n.createElement(s.Z, { affiliateBadgeInfo: A.highlightedLabel, avatarSize: "small", color: "text", isBlueVerified: A.is_blue_verified, isProtected: A.protected, isVerified: A.verified, name: A.name, nameSize: "subtext2", profileImageUrl: A.profile_image_url_https, screenName: A.screen_name, screenNameSize: "subtext2", verifiedType: A.verified_type, withHoverCard: F, withLink: !0, withScreenName: !0 }) : null)), n.createElement(r.Z, { style: j.rightColumn }, Q)));
                 },
-                W = c.default.create((e) => ({ bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, description: { marginBottom: e.spaces.space2 }, facepile: { marginEnd: e.spaces.space4 }, followButton: { marginStart: e.spaces.space12 }, icon: { paddingStart: e.spaces.space4 }, iconCheckmark: { color: e.colors.primary, paddingHorizontal: e.spaces.space12 }, iconLock: { color: e.colors.text }, listAttribution: { flex: 1, alignItems: "flex-start" }, listContainer: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, name: { flexDirection: "row" }, nameContainer: { alignItems: "center", flexDirection: "row", marginBottom: e.spaces.space2, width: "100%" }, rightColumn: { flexShrink: 0, justifyContent: "center" }, rowContainer: { alignItems: "center", flexDirection: "row", width: "100%" }, root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, thumbnailImage: { alignItems: "flex-start", height: "100%", marginEnd: e.spaces.space16 } })),
-                j = n.memo(V);
+                j = c.default.create((e) => ({ bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, description: { marginBottom: e.spaces.space2 }, facepile: { marginEnd: e.spaces.space4 }, followButton: { marginStart: e.spaces.space12 }, icon: { paddingStart: e.spaces.space4 }, iconCheckmark: { color: e.colors.primary, paddingHorizontal: e.spaces.space12 }, iconLock: { color: e.colors.text }, listAttribution: { flex: 1, alignItems: "flex-start" }, listContainer: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, name: { flexDirection: "row" }, nameContainer: { alignItems: "center", flexDirection: "row", marginBottom: e.spaces.space2, width: "100%" }, rightColumn: { flexShrink: 0, justifyContent: "center" }, rowContainer: { alignItems: "center", flexDirection: "row", width: "100%" }, root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, thumbnailImage: { alignItems: "flex-start", height: "100%", marginEnd: e.spaces.space16 } })),
+                W = n.memo(V);
         },
         845738: (e, a, l) => {
             l.d(a, { F: () => n });
@@ -283,13 +284,14 @@
             const m = (0, s.Z)().propsFromState(() => ({ dataSaverMode: u.IX, pinnedTimelinesCount: c.Hm })),
                 h = [],
                 b = n.Z,
-                g = (e, a) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: e?.profile_image_url_https ?? "", protected: e.protected, verified: a ?? !1 }),
+                g = (e, a, l) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: e?.profile_image_url_https ?? "", protected: a?.protected ?? !1, verified: l ?? !1 }),
                 p = (e) => {
                     const a = i()(b, e.listRef),
                         l = (0, d.u)(a),
                         n = a.owner_results?.result?.author,
-                        t = a.owner_results?.result?.verification?.verified;
-                    return r.createElement(o.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: a.facepile_urls ?? h, followersContext: a.followers_context ?? "", isFollowing: Boolean(a.following), isListPinned: Boolean(a.pinning), isSelected: e.isMember, listId: a.id_str, listVisibility: a.mode?.toLowerCase() ?? "public", media: l, memberCount: a.member_count ?? 0, membersContext: a.members_context ?? "", mode: e.mode, name: a.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? g(n, t) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
+                        t = a.owner_results?.result?.privacy,
+                        s = a.owner_results?.result?.verification?.verified;
+                    return r.createElement(o.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: a.facepile_urls ?? h, followersContext: a.followers_context ?? "", isFollowing: Boolean(a.following), isListPinned: Boolean(a.pinning), isSelected: e.isMember, listId: a.id_str, listVisibility: a.mode?.toLowerCase() ?? "public", media: l, memberCount: a.member_count ?? 0, membersContext: a.members_context ?? "", mode: e.mode, name: a.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? g(n, t, s) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
                 },
                 f = r.memo(m(p));
         },
@@ -343,11 +345,11 @@
                     return n ? D.ZP.select(e, n) : void 0;
                 },
                 _ = (e, a) => w.tt(e, a.listId);
-            const v = (0, p.Z)().propsFromState(() => ({ list: M, author: k, dataSaverMode: y.IX, pinnedTimelinesCount: f.Hm, media: _ }))(function (e) {
+            const S = (0, p.Z)().propsFromState(() => ({ list: M, author: k, dataSaverMode: y.IX, pinnedTimelinesCount: f.Hm, media: _ }))(function (e) {
                     const { list: a, onClick: l } = e;
                     return a ? s.createElement(g.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: a.facepile_urls, followersContext: a.followers_context, isFollowing: Boolean(a.following), isListPinned: a.pinning, isSelected: e.isMember, listId: a.id_str, listVisibility: a.mode, media: e.media, memberCount: a.member_count, membersContext: a.members_context, mode: e.mode, name: a.name, onClick: l, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: e.author, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe }) : null;
                 }),
-                S = s.memo(v);
+                v = s.memo(S);
             var I = l(269950),
                 Z = l(358869);
             const C = ({ entry: e, feedbackItems: a, module: l, renderEntry: n, shouldDisplayPin: r, ...t }) => {
@@ -363,7 +365,7 @@
                 F = ({ itemContent: e, mode: a, shouldDisplayPin: l, ...n }) => {
                     const r = (0, m.hC)("responsive_web_redux_use_fragment_enabled"),
                         t = s.useMemo(() => (0, b.D9)(Z.Dx, h.Z, e.id), [e.id]);
-                    return r ? s.createElement(Z.ZP, (0, i.Z)({ isMember: e.isMember, listRef: t, mode: a }, n)) : s.createElement(S, (0, i.Z)({ isMember: e.isMember, listId: e.id, mode: a }, n));
+                    return r ? s.createElement(Z.ZP, (0, i.Z)({ isMember: e.isMember, listRef: t, mode: a }, n)) : s.createElement(v, (0, i.Z)({ isMember: e.isMember, listId: e.id, mode: a }, n));
                 },
                 T = (e) =>
                     t
@@ -378,7 +380,7 @@
                         .getHandler(() => ({ ...e }));
         },
         690344: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => W });
+            l.r(a), l.d(a, { default: () => j });
             var n = l(459643),
                 r = l(942893),
                 t = l(351322),
@@ -408,14 +410,14 @@
                 },
                 k = h.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.cellBackground, padding: e.spaces.space12 }, name: { alignSelf: "stretch", paddingTop: e.spaces.space4, flexDirection: "row", justifyContent: "center", width: e.spaces.space80 }, iconLock: { color: e.colors.text, marginHorizontal: e.spaces.space4 } })),
                 _ = i.memo(M);
-            var v = l(668214),
-                S = l(38562),
+            var S = l(668214),
+                v = l(38562),
                 I = l(510588);
             const Z = (e, a) => a.entry.content.id,
                 C = (e, a) => d.Z.select(e, Z(0, a)),
                 P = (e, a) => I.tt(e, Z(0, a)),
-                A = (0, v.Z)()
-                    .propsFromState(() => ({ listId: Z, list: C, dataSaverMode: S.IX, media: P }))
+                A = (0, S.Z)()
+                    .propsFromState(() => ({ listId: Z, list: C, dataSaverMode: v.IX, media: P }))
                     .adjustStateProps(({ dataSaverMode: e, list: a, listId: l, media: n }) => ({ name: a?.name, isPrivate: "private" === a?.mode, listId: l, dataSaverMode: e, media: n }))
                     .withAnalytics();
             var E = {
@@ -465,7 +467,7 @@
                     }
                 },
                 V = A(i.memo(O)),
-                W = t
+                j = t
                     .iH({
                         component: V,
                         isFocusable: (0, n.Z)(!0),
@@ -515,17 +517,17 @@
             const n = (0, l(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        l.e("icons.8"),
-                        l.e("icons.21"),
-                        l.e("icons.13"),
+                        l.e("icons.5"),
+                        l.e("icons.6"),
+                        l.e("icons.25"),
+                        l.e("icons.22"),
+                        l.e("icons.9"),
+                        l.e("icons.4"),
+                        l.e("icons.15"),
+                        l.e("icons.2"),
                         l.e("icons.20"),
-                        l.e("icons.14"),
-                        l.e("icons.1"),
-                        l.e("icons.3"),
-                        l.e("icons.24"),
-                        l.e("icons.11"),
-                        l.e("icons.10"),
-                        l.e("icons.17"),
+                        l.e("icons.0"),
+                        l.e("icons.26"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -533,7 +535,6 @@
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -572,7 +573,6 @@
                         l.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         l.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                         l.e("ondemand.HoverCard-6107ac1a"),
-                        l.e("ondemand.HoverCard-9f4db315"),
                         l.e("ondemand.HoverCard-63cb1cc4"),
                     ]).then(l.bind(l, 527409)),
             });
@@ -635,7 +635,7 @@
             );
         },
         510588: (e, a, l) => {
-            l.d(a, { $5: () => u, By: () => f, DV: () => M, Fz: () => g, Ge: () => D, Ns: () => S, Wy: () => b, _g: () => _, ax: () => y, cx: () => p, l1: () => k, tt: () => v, xh: () => h });
+            l.d(a, { $5: () => u, By: () => f, DV: () => M, Fz: () => g, Ge: () => D, Ns: () => v, Wy: () => b, _g: () => _, ax: () => y, cx: () => p, l1: () => k, tt: () => S, xh: () => h });
             var n = l(614983),
                 r = l.n(n),
                 t = l(842799),
@@ -705,7 +705,7 @@
                         n = (0, i.nx)(e);
                     return (l && n[l] && n[l].useRanked) || !1;
                 },
-                v = (e, a) => {
+                S = (e, a) => {
                     const l = o.Z.select(e, a);
                     if (l) {
                         const e = l.customBanner;
@@ -713,7 +713,7 @@
                     }
                     return { crop: [], image: c };
                 },
-                S = (e, a) => {
+                v = (e, a) => {
                     const l = g(e, a);
                     return l?.mode;
                 };
@@ -755,6 +755,19 @@
                 },
                 d = i.default.create((e) => ({ middotGroup: { alignItems: "baseline", flexDirection: "row", flexShrink: 1 } }));
         },
+        678773: (e, a, l) => {
+            l.r(a), l.d(a, { default: () => d });
+            var n = l(202784),
+                r = l(890601),
+                t = l(783427),
+                i = l(347101);
+            const o = (e = {}) => {
+                const { direction: a } = (0, t.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: a });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const d = o;
+        },
         76388: (e, a, l) => {
             l.r(a), l.d(a, { default: () => d });
             var n = l(202784),
@@ -768,32 +781,6 @@
             o.metadata = { width: 24, height: 24 };
             const d = o;
         },
-        492140: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => d });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                i = l(347101);
-            const o = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M7 4.5C7 3.12 8.12 2 9.5 2h5C15.88 2 17 3.12 17 4.5v5.26L20.12 16H13v5l-1 2-1-2v-5H3.88L7 9.76V4.5z" })) }, { writingDirection: a });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const d = o;
-        },
-        379327: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => d });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                i = l(347101);
-            const o = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: a });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const d = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.a07604aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.fd060f7a.js.map

@@ -38,7 +38,7 @@
                     a.Z,
                     { style: h.container },
                     g && n.createElement(m.Z, { article: g, headerImgContainerStyle: h.highlightedArticleHeaderImg, infoContainerStyle: h.highlightedInfoContainer, layout: "imageTop", onClick: () => r(g.id), routeToExploreNews: !0, showSentiment: !1, size: "large", style: [h.article, h.highlightedArticle], titleStyle: h.highlightedArticleTitle, useRowReactions: !0 }),
-                    t.secondList.map((e) => n.createElement(n.Fragment, null, n.createElement(c.Z, null), n.createElement(m.Z, { article: e, headerImgContainerStyle: h.headerImgContainerStyle, headerImgStyle: h.headerImgStyle, infoContainerStyle: h.secondListArticleInfoContainer, key: `${e.id}-second-list`, layout: "imageLeft", onClick: () => r(e.id), routeToExploreNews: !0, size: "normal", style: h.article, summaryNumLines: 2, useRowReactions: !0 }))),
+                    t.secondList.map((e) => n.createElement(n.Fragment, { key: `${e.id}-second-list` }, n.createElement(c.Z, null), n.createElement(m.Z, { article: e, headerImgContainerStyle: h.headerImgContainerStyle, headerImgStyle: h.headerImgStyle, infoContainerStyle: h.secondListArticleInfoContainer, key: `${e.id}-second-list`, layout: "imageLeft", onClick: () => r(e.id), routeToExploreNews: !0, size: "normal", style: h.article, summaryNumLines: 2, useRowReactions: !0 }))),
                     t.thirdList.length > 0 &&
                         n.createElement(
                             n.Fragment,
@@ -272,4 +272,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ExploreNews.31e4303a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ExploreNews.833c42ba.js.map

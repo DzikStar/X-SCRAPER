@@ -27,7 +27,7 @@
                 f = r.n(_),
                 C = r(342454),
                 E = r.n(C),
-                v = r(433579),
+                v = r(134871),
                 D = r.n(v),
                 Z = r(934309);
             const I = ({ apiClient: e, featureSwitches: t }) => ({
@@ -280,4 +280,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-6107ac1a.c3f2960a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-6107ac1a.03deef5a.js.map

@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: b, style: C, subtitle: y, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: k, withWideContainer: x } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: b, style: y, subtitle: C, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: k, withWideContainer: x } = this.props,
                         { isModal: Z } = this.context,
                         _ = i ? d : n.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         v = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!k, Z, !!b);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: _, middleControl: p, position: u(h, Z, r), rightControl: m, style: C, subtitle: y, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: v, withWideContainer: x }), b || null);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: _, middleControl: p, position: u(h, Z, r), rightControl: m, style: y, subtitle: C, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: v, withWideContainer: x }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -85,9 +85,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: b, rightControl: C, secondaryBar: y, subtitle: g, title: f } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: b, rightControl: y, secondaryBar: C, subtitle: g, title: f } = this.props,
                                 { isModal: B } = this.context;
-                            return n.createElement(r.Z, { style: B ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, n.createElement(d.ZP, { backButtonType: o || (B ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !B, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: b, ref: e, rightControl: C, secondaryBar: y, style: [B && m.appBarModal, t], subtitle: g, title: f, titleDomId: c.Q_ }));
+                            return n.createElement(r.Z, { style: B ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, n.createElement(d.ZP, { backButtonType: o || (B ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !B, hideBackButton: l, history: s, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: b, ref: e, rightControl: y, secondaryBar: C, style: [B && m.appBarModal, t], subtitle: g, title: f, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -96,10 +96,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: h, title: b, withoutBottomBarMobile: C } = this.props,
-                        { isModal: y } = this.context,
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: h, title: b, withoutBottomBarMobile: y } = this.props,
+                        { isModal: C } = this.context,
                         g = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(s.Z, null, n.createElement(u.Z.Configure, { documentTitle: l, headerless: !0, title: b }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, y && m.rootModal] }, !y && g, n.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [m.container, y && m.containerModal, a] }, y ? n.createElement(p.Z, { style: m.viewport }, g, o) : o), t ? n.createElement(r.Z, { style: [m.bottomBarModal, !y && !C && m.bottomBarMobile] }, n.createElement(i.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return n.createElement(s.Z, null, n.createElement(u.Z.Configure, { documentTitle: l, headerless: !0, title: b }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, C && m.rootModal] }, !C && g, n.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [m.container, C && m.containerModal, a] }, C ? n.createElement(p.Z, { style: m.viewport }, g, o) : o), t ? n.createElement(r.Z, { style: [m.bottomBarModal, !C && !y && m.bottomBarMobile] }, n.createElement(i.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = a.Z);
@@ -121,14 +121,14 @@
                 h = o(449067),
                 m = o(655543),
                 b = o(715601),
-                C = o(392237);
-            const y = C.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...C.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+                y = o(392237);
+            const C = y.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...y.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
             class g extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? n.createElement(a.Z, { style: y.fill }, n.createElement(b.Z, { style: y.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? n.createElement(a.Z, { style: C.fill }, n.createElement(b.Z, { style: C.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
@@ -143,15 +143,15 @@
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: l, headerless: s, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: C, screenType: g, searchBoxOptions: f, secondaryBar: B, showSubtitleOnRoot: w, showSubtitleOnWideDetail: k, subtitle: x, title: Z, titleIconCell: _, titleIconCellSize: v, withDetailOpen: E, withSearchBox: I, withTweetButton: L, withWideContainer: T } = this.props,
+                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: l, headerless: s, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, screenType: g, searchBoxOptions: f, secondaryBar: B, showSubtitleOnRoot: w, showSubtitleOnWideDetail: k, subtitle: x, title: Z, titleIconCell: _, titleIconCellSize: v, withDetailOpen: E, withSearchBox: I, withTweetButton: L, withWideContainer: T } = this.props,
                         S = "root" === g,
                         F = "secondaryRoot" === g,
                         D = "primaryDetail" === g,
                         M = (D && k) || (S && w),
                         P = S || (D && e),
                         U = S ? d.ey : D ? d.vX : void 0,
-                        O = n.createElement(a.Z, { style: y.appBarContainer }, n.createElement(p.ZP, { backLocation: i, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: C, secondaryBar: B, style: r, subtitle: M ? x : void 0, title: Z, titleDomId: U, titleIconCell: _, titleIconCellSize: v, withWideContainer: T })),
-                        R = S || (F && E) ? null : n.createElement(h.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: l, headerless: s, middleControl: m, onBackClick: b, rightControl: C, searchBoxOptions: f, subtitle: x, title: Z, withSearchBox: I, withTweetButton: L });
+                        O = n.createElement(a.Z, { style: C.appBarContainer }, n.createElement(p.ZP, { backLocation: i, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: B, style: r, subtitle: M ? x : void 0, title: Z, titleDomId: U, titleIconCell: _, titleIconCellSize: v, withWideContainer: T })),
+                        R = S || (F && E) ? null : n.createElement(h.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: l, headerless: s, middleControl: m, onBackClick: b, rightControl: y, searchBoxOptions: f, subtitle: x, title: Z, withSearchBox: I, withTweetButton: L });
                     return n.createElement(n.Fragment, null, R, O);
                 }
             }
@@ -171,7 +171,7 @@
                 l = o(621416),
                 s = o(443781);
             const c = a().j24c37b2,
-                d = ({ Content: e, contentStyle: t, actionLabel: o = c, flag: i, graphic: a, graphicDisplayMode: d, headline: u, isFullHeightOnMobile: p, enableMaskForDismiss: h, onAction: m, onClose: b, onSecondaryAction: C, secondaryActionLabel: y, supportUrl: g, subtext: f, withCloseButton: B, shouldShowForLoggedOut: w = !1, shouldAddEducationFlagOnClose: k = !0, shouldAddEducationFlagOnSecondary: x = !0, shouldAddEducationFlagOnPrimary: Z = !0 }) => {
+                d = ({ Content: e, contentStyle: t, actionLabel: o = c, flag: i, graphic: a, graphicDisplayMode: d, headline: u, isFullHeightOnMobile: p, enableMaskForDismiss: h, onAction: m, onClose: b, onSecondaryAction: y, secondaryActionLabel: C, supportUrl: g, subtext: f, withCloseButton: B, shouldShowForLoggedOut: w = !1, shouldAddEducationFlagOnClose: k = !0, shouldAddEducationFlagOnSecondary: x = !0, shouldAddEducationFlagOnPrimary: Z = !0 }) => {
                     const { loggedInUserId: _ } = n.useContext(s.rC),
                         [v, E] = (0, l.m)(i),
                         I = n.useCallback(
@@ -185,17 +185,17 @@
                         }, [E, k, b]),
                         T = n.useCallback(
                             (e) => {
-                                x && E(), C && C(e);
+                                x && E(), y && y(e);
                             },
-                            [E, C, x],
+                            [E, y, x],
                         );
                     if (!v || (!_ && !w)) return null;
-                    return n.createElement(r.Z, { actionLabel: o, contentStyle: t, enableMaskForDismiss: h, graphic: a, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: I, onClose: L, onSecondaryAction: T, secondaryActionLabel: y, subtext: f, supportUrl: g, withCloseButton: B }, e ? n.createElement(e, null) : null);
+                    return n.createElement(r.Z, { actionLabel: o, contentStyle: t, enableMaskForDismiss: h, graphic: a, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: I, onClose: L, onSecondaryAction: T, secondaryActionLabel: C, subtext: f, supportUrl: g, withCloseButton: B }, e ? n.createElement(e, null) : null);
                 },
                 u = n.memo(d);
         },
         231035: (e, t, o) => {
-            o.d(t, { Z: () => C });
+            o.d(t, { Z: () => y });
             var n = o(202784),
                 r = o(420740),
                 i = o(108362),
@@ -209,12 +209,12 @@
                 h = "error-detail",
                 m = d().e49537c2,
                 b = d().a9ae1e78;
-            class C extends n.PureComponent {
+            class y extends n.PureComponent {
                 render() {
-                    return n.createElement(r.Z, { testID: h }, n.createElement(p, null), n.createElement(i.Z, { style: y.root }, n.createElement(a.ZP, { align: "center", color: "gray700", style: y.retryText }, m), n.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, b)));
+                    return n.createElement(r.Z, { testID: h }, n.createElement(p, null), n.createElement(i.Z, { style: C.root }, n.createElement(a.ZP, { align: "center", color: "gray700", style: C.retryText }, m), n.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, b)));
                 }
             }
-            const y = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+            const C = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => d });
@@ -257,7 +257,7 @@
             const d = (0, r.ZP)(s(c));
         },
         836640: (e, t, o) => {
-            o.d(t, { J: () => C });
+            o.d(t, { J: () => y });
             o(136728);
             var n = o(214636),
                 r = o(202784),
@@ -272,23 +272,23 @@
                 h = o(409438),
                 m = o(443781);
             const b = n.Z;
-            function C(e) {
+            function y(e) {
                 const t = s()(b, e.user),
-                    { legacy: o, verification: n } = t,
-                    i = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
-                    { cellClickable: l, decoration: h, displayMode: C } = e,
-                    y = (function () {
+                    { legacy: o, privacy: n, verification: i } = t,
+                    l = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
+                    { cellClickable: h, decoration: y, displayMode: C } = e,
+                    g = (function () {
                         const { viewerUserId: e } = r.useContext(m.rC);
                         return a()(!!e, "viewerUserId is undefined!"), e;
                     })(),
-                    g = (0, c.useHistory)(),
-                    f = r.useCallback(() => ("function" == typeof h ? h({ displayMode: C, viewerUserId: y, userId: o?.id_str ?? "" }) : h), [h, y, o, C]),
-                    B = r.useCallback(() => {
-                        o?.screen_name && g.push({ pathname: `/${o.screen_name}` });
-                    }, [g, o]);
-                return r.createElement(d.ZP, { affiliateBadgeInfo: i, avatarUri: o?.profile_image_url_https || "", decoration: f(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: o?.followed_by, isProtected: o?.protected, isVerified: n?.verified ?? !1, name: o?.name || "", onCellClick: l ? B : void 0, promotedItemType: p.bj.USER, screenName: o?.screen_name || "", userId: o?.id_str ?? "", verifiedType: n?.verified_type ?? void 0, withFollowsYou: !0 });
+                    f = (0, c.useHistory)(),
+                    B = r.useCallback(() => ("function" == typeof y ? y({ displayMode: C, viewerUserId: g, userId: o?.id_str ?? "" }) : y), [y, g, o, C]),
+                    w = r.useCallback(() => {
+                        o?.screen_name && f.push({ pathname: `/${o.screen_name}` });
+                    }, [f, o]);
+                return r.createElement(d.ZP, { affiliateBadgeInfo: l, avatarUri: o?.profile_image_url_https || "", decoration: B(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: o?.followed_by, isProtected: n?.protected ?? !1, isVerified: i?.verified ?? !1, name: o?.name || "", onCellClick: h ? w : void 0, promotedItemType: p.bj.USER, screenName: o?.screen_name || "", userId: o?.id_str ?? "", verifiedType: i?.verified_type ?? void 0, withFollowsYou: !0 });
             }
-            C.defaultProps = { cellClickable: !0, decoration: null, displayMode: h.Z.UserCompact };
+            y.defaultProps = { cellClickable: !0, decoration: null, displayMode: h.Z.UserCompact };
         },
         621416: (e, t, o) => {
             o.d(t, { m: () => i });
@@ -375,4 +375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.3e5893ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.8344dbaa.js.map

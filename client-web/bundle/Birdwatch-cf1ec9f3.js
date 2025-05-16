@@ -379,7 +379,7 @@
                                   l.Z,
                                   { style: U.tagContainer },
                                   (() => {
-                                      const e = t?.like_tags || [],
+                                      const e = t?.like_tags?.filter((e) => B.hasOwnProperty(e)) || [],
                                           n = D.like_tags || [];
                                       return a.createElement(
                                           l.Z,
@@ -393,7 +393,7 @@
                                       );
                                   })(),
                                   (() => {
-                                      const e = t?.dislike_tags || [],
+                                      const e = t?.dislike_tags?.filter((e) => H.hasOwnProperty(e)) || [],
                                           n = D.dislike_tags || [];
                                       return a.createElement(
                                           l.Z,
@@ -439,4 +439,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.0621c8fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.2374788a.js.map

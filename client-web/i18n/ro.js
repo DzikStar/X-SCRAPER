@@ -494,6 +494,7 @@
                 t("cb165528", "Funcții și setări pentru știri"),
                 t("f8645654", "Securitate și acces la cont"),
                 t("j95edf76", "Securitate"),
+                t("fd127276", "Gestionează cheile de acces"),
                 t("afe4a358", "Verificare identitate"),
                 t("dd703318", "Autentificarea în doi pași"),
                 t("b1686800", "Gestionează cheile de securitate"),
@@ -911,9 +912,9 @@
                 t("e126dd3f", "Află mai multe"),
                 t("i821844f", "Află mai multe"),
                 t("b0abbb17", "Află mai multe"),
-                t("e7e0d88b", "Află mai multe"),
-                t("i560665f", "Află mai multe");
-            t("f6e774d9", "Află mai multe"),
+                t("e7e0d88b", "Află mai multe");
+            t("i560665f", "Află mai multe"),
+                t("f6e774d9", "Află mai multe"),
                 t("h486f755", "Află mai multe"),
                 t("bab41dab", "Află mai multe"),
                 t("e0ebdb29", "Află mai multe"),
@@ -1032,12 +1033,18 @@
                 t("gfaf9a4a", "Protejarea resetării parolei"),
                 t("h3cc8462", "Pentru o protecție suplimentară, va trebui să îți confirmi adresa de e-mail sau numărul de telefon pentru a-ți reseta parola pentru X."),
                 t("b4bbdeb4", "Cheie de acces"),
-                t("aeb7dcdc", "Activează Cheile de acces pentru protecție suplimentară care poate fi asociată cu caracteristicile tale biometrice."),
+                t("fe8aeb88", "Cheile de acces îți oferă protecție suplimentară care poate fi asociată cu caracteristicile tale biometrice."),
                 t("dc096238", "Încarcă o formă de identificare aprobată pentru a-ți confirma autenticitatea contului. Informațiile tale vor fi utilizate numai pentru a-ți confirma identitatea și vor fi gestionate în condiții de siguranță și securitate."),
                 t("a999cb72", "Salvează modificările la cont"),
                 t("dec3c9b8", "Parolă"),
                 t("b929aa74", "Introdu din nou parola X pentru a salva modificările la contul tău."),
                 t("d1091f50", "Ai uitat parola?"),
+                t("fd23fe4a", "Here are your passkeys across all your devices"),
+                t("d9921a6c", "Create a new passkey"),
+                t("i4855730", "Șterge cheie de acces"),
+                t("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 t("d97c07be", "Gestionează Abonamentele de creator"),
                 t("efa291da", "Vizualizează și gestionează abonamentele tale la creatorii de mai jos prin intermediul Stripe. Toate abonamentele active pe care le-ai inițiat pe iOS sau Android pot fi gestionate în aplicație."),
                 t("j7f5c6aa", "Deocamdată, nu ai niciun abonament"),
@@ -1921,13 +1928,13 @@
                 t("d8047cc8", "Publică"),
                 t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău."),
                 t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului."),
-                t("e52d4998", "Alege-ți publicul"),
-                t("d7985b24", "Alege cine poate răspunde la acest articol"),
+                t("e52d4998", "Alege-ți publicul");
+            t("d7985b24", "Alege cine poate răspunde la acest articol"),
                 t("b5660338", "Previzualizare Cronologie"),
                 t("hff1b97a", "Doar utilizatorii abonați pot răspunde."),
                 t("a330771e", "Copiază linkul pe clipboard"),
-                t("b6510e68", "Copiază URL-ul articolului pentru a-l putea distribui.");
-            t("e4a6e006", "Ceva nu a mers bine. Încearcă din nou."),
+                t("b6510e68", "Copiază URL-ul articolului pentru a-l putea distribui."),
+                t("e4a6e006", "Ceva nu a mers bine. Încearcă din nou."),
                 t("eff483e0", "După publicare, obține un link pentru a distribui articolul."),
                 t("ca15dd4e", "Schiță"),
                 t("bb40bf66", "Publicate"),
@@ -2834,13 +2841,13 @@
                     return "Este planificată modificarea abonamentului tău la " + e.tierName + " începând cu următorul ciclu de facturare pe " + e.date;
                 }),
                 t("a991d9a3", function (e) {
-                    return "Next billing cycle starts on " + e.date;
+                    return "Următorul ciclu de facturare începe pe " + e.date;
                 }),
                 t("edbb700f", function (e) {
                     return "Începe cu următorul ciclu de facturare, pe " + e.date;
                 }),
                 t("e3f9d219", function (e) {
-                    return "Subscription ends on " + e.date;
+                    return "Abonamentul se încheie pe " + e.date;
                 }),
                 t("e9884540", "Reducere activă"),
                 t("bfb879aa", "Reducere în așteptare"),
@@ -2977,27 +2984,23 @@
                 t("b7388a56", "Subsol"),
                 t("hdabc3fc", "Condiții de utilizare"),
                 t("bc6efc72", "Politica de confidențialitate"),
-                t("h3161192", "Politica privind modulele cookie"),
-                t("a7de64de", "Informații despre reclame"),
+                t("h3161192", "Politica privind modulele cookie");
+            t("a7de64de", "Informații despre reclame"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Cariere"),
                 t("e0adec82", "Resurse pentru branduri"),
-                t("df1b7550", "Marketing");
-            t("he258678", "X pentru afaceri"),
+                t("df1b7550", "Marketing"),
+                t("he258678", "X pentru afaceri"),
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
                 t("j0693948", "Obține aplicația Grok"),
-                t("af781666", "Ce spun oamenii?"),
-                t("ad35153e", "beta"),
-                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Avertisment: plata a eșuat"),
                 t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
                 t("bce3726a", "Actualizare informații de facturare"),
                 t("fce9ecce", "Videoclipuri sugerate"),
-                t("da00e00a", "Try the new News"),
-                t("c40666d8", "Încearcă"),
                 t("j66b95a2", "Știri detaliate"),
+                t("ad35153e", "beta"),
                 t("b58d2bd2", "Postări relevante"),
                 t("efe6ef9e", "Vizualizează postarea"),
                 t("b3d183ce", "Postare cu răspunsuri"),
@@ -3895,11 +3898,11 @@
                 t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
                 t("e111f531", function (e) {
                     return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
-                }),
-                t("cbef820f", function (e) {
-                    return e.screenName + " a repostat fluxul!";
                 });
-            t("e3275464", "Trimite"),
+            t("cbef820f", function (e) {
+                return e.screenName + " a repostat fluxul!";
+            }),
+                t("e3275464", "Trimite"),
                 t("cededf2a", "Gazdă"),
                 t("i2caef48", "Co-gazde"),
                 t("j245c654", "Vorbitori"),
@@ -4370,8 +4373,8 @@
                 t("g01599b6", "Răspunsul 1"),
                 t("e02694e0", "Răspunsul 2"),
                 t("h6867fcc", "Prefer acest răspuns"),
-                t("d07488a6", "Obține aplicația Android"),
-                t("d9cfe70c", "Accesează caracteristici Grok avansate"),
+                t("acc4496c", "Try Grok Voice mode"),
+                t("jd36d190", "Access advanced features with Grok Android app"),
                 t("hf9afab0", "Activează DeepSearch pentru a căuta pe internet și pe X, analiza informații și oferi răspunsuri detaliate, bine argumentate, cu ajutorul unei căutări rapide și autonome."),
                 t("ef3b3f04", "Activează modul Gândire pentru a utiliza modelul nostru de argumentare. Este ideal pentru matematică, știință și scriere de cod. De asemenea, poți folosi opțiunea „Gândește-te mai bine” pentru orice întrebare care are nevoie de mai multă capacitate intelectuală de la Grok. "),
                 t("b43636b8", "Îți prezentăm Grok 3"),
@@ -4933,9 +4936,9 @@
                 t("h0c1f37a", "Vezi Analiză Spațiu"),
                 t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
                 t("if2909ba", "Durată vizionare"),
-                t("i0e5bf4c", "Videoclipurile tale"),
-                t("ed99baea", "Acces timpuriu la versiunea beta");
-            t("gf898b70", "Căutare avansată"),
+                t("i0e5bf4c", "Videoclipurile tale");
+            t("ed99baea", "Acces timpuriu la versiunea beta"),
+                t("gf898b70", "Căutare avansată"),
                 t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
                 t("jb6f9292", "conține exact structura „start-up ai”"),
@@ -5848,6 +5851,8 @@
                 t("g880d8c0", "Datele privind starea înscrierii utilizatorului nu sunt disponibile încă"),
                 t("ab1b3d38", "Deocamdată, nu sunt disponibile date despre cererea unei note"),
                 t("c43fb933", "Acordul și Politica pentru dezvoltatori X"),
+                t("af781666", "Ce spun oamenii?"),
+                t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Copiază linkul către subiect"),
                 t("h92fe1be", "Din păcate, Notele Comunității nu este disponibil pentru tine momentan."),
                 t("f0dc1434", "Notele Comunității este momentan disponibil doar în SUA"),
@@ -5897,11 +5902,11 @@
                 }),
                 t("daca8a2c", "Deschide în secțiunea fixă"),
                 t("e3aac82a", "Se încarcă transmisiunea"),
-                t("i0ed3f4e", "Imagine eveniment"),
-                t("cbae35fa", "Raportează transmisiunea"),
+                t("i0ed3f4e", "Imagine eveniment");
+            t("cbae35fa", "Raportează transmisiunea"),
                 t("fd12ab58", "Postări din colecție"),
-                t("a226497c", "Creează o Comunitate nouă");
-            t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate"),
+                t("a226497c", "Creează o Comunitate nouă"),
+                t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate"),
                 t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
                 t("hff48914", "În acest moment, nu s-au putut găsi postări."),
                 t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
@@ -6465,7 +6470,10 @@
                 t("f7d1a8e0", "Aplicație Android"),
                 t("aab2fae0", "Aplicație iOS"),
                 t("a35d9c9a", "Resurse"),
+                t("da00e00a", "Încearcă noua funcție Știri"),
+                t("c40666d8", "Încearcă"),
                 t("ic61c5fc", "Derulează în sus"),
+                t("dd225af8", "Nu s-au găsit persoane."),
                 t("i6671128", "Ai deblocat mai multe pe X"),
                 t("d5e4d0a6", "Te poți alătura conversației și te poți conecta cu alți utilizatori mai ușor. Acum poți face următoarele:"),
                 t("a97bc07e", "Deblochează mai multe pe X"),
@@ -6692,7 +6700,7 @@
                 t("b2d41138", "Acoperire mai mare = câștiguri mai mari"),
                 t("defa7f12", "Profită de o prioritizare a răspunsurilor, care îți oferă vizibilitate suplimentară pentru a te dezvolta mai rapid."),
                 t("i3e4955d", "aici"),
-                t("fdc5d06c", "Exit Full Screen"),
+                t("fdc5d06c", "Ieși din ecranul complet"),
                 t("cea1c00e", "Deblochează posibilitatea de a interacționa"),
                 t("f8e6a280", "Conturile noi trebuie să plătească o taxă modică anuală înainte de a putea posta, aprecia, adăuga la marcaje și răspunde. Acest lucru are rolul de a reduce spamul și de a crea o experiență mai bună pentru toți utilizatorii. Poți în continuare să urmărești conturi și să navighezi pe X în mod gratuit."),
                 t("h968efc6", "Conturile noi trebuie să plătească o taxă modică înainte de a putea posta, aprecia, adăuga la marcaje și răspunde. Acest lucru are rolul de a reduce spamul și de a crea o experiență mai bună pentru toți utilizatorii. Poți în continuare să urmărești conturi și să navighezi pe X în mod gratuit."),
@@ -6736,7 +6744,7 @@
                 t("i1801686", "Aceasta este o interogare de căutare nevalidă. Încearcă alta."),
                 t("a0b4541c", "Ceva nu a mers bine, dar nu te îngrijora – nu este vina ta"),
                 t("d7eebb60", "Se configurează abonamentul"),
-                t("h707b180", "Your subscription update is complete"),
+                t("h707b180", "Actualizarea abonamentului s-a finalizat"),
                 t("a452ab68", "Poate dura câteva secunde."),
                 t("b3bad3b2", "@premium"),
                 t("accbcc78", "Actualizat cu succes"),
@@ -6892,14 +6900,14 @@
                 t("b6b5dc94", "Devino utilizator verificat"),
                 t("b06db848", "Ieși în evidență pe platformă"),
                 t("e3e3a97c", "Câștigă o cotă-parte din veniturile obținute din postările tale"),
-                t("f15bc24e", "Limite extinse pentru Grok"),
-                t("c4666e1c", "Capacitatea de a utiliza mai mult Grok 3, cel mai recent model al nostru"),
+                t("f15bc24e", "Limite extinse pentru Grok");
+            t("c4666e1c", "Capacitatea de a utiliza mai mult Grok 3, cel mai recent model al nostru"),
                 t("he74ae7a", "Cele mai ample limite de utilizare Grok"),
                 t("f5732cd4", "În plus, acces extins la DeepSearch și Gândire"),
                 t("e0198956", "Primește o cotă-parte din veniturile generate în urma interacțiunii conturilor verificate cu conținutul pe care îl postezi pe X."),
                 t("iadf78e2", "Descarcă videoclipuri"),
-                t("ee54c3de", "Salvează videoclipurile direct pe dispozitivul tău");
-            t("ae03594c", "Boost pentru răspunsuri scurte"),
+                t("ee54c3de", "Salvează videoclipurile direct pe dispozitivul tău"),
+                t("ae03594c", "Boost pentru răspunsuri scurte"),
                 t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
                 t("bf2a6acc", "Prioritizare mare a răspunsurilor"),
                 t("c2059276", "Dă boost răspunsurilor tale."),
@@ -7359,7 +7367,6 @@
                 t("b0c91a92", "Înregistrează-te sau conectează-te pentru a vedea ce spun persoanele de pe X despre acest lucru"),
                 t("d7071084", "Întreabă-l pe Grok acest lucru"),
                 t("ee2200f4", "Această poveste este un rezumat al postărilor făcute de Grok pe X. Povestea va evolua în timp."),
-                t("dd225af8", "Nu s-au găsit persoane."),
                 t("e1e5d552", "Editează-ți Cercul"),
                 t("ec13f9cc", "Nu există nimeni în Cercul tău − încă"),
                 t("dab58e32", "Când adaugi persoane, ele vor fi afișate aici."),
@@ -7404,7 +7411,7 @@
                 t("a10aa36c", "Centrul de ajutor"),
                 t("d0740558", "Centrul de ajutor"),
                 t("d2d76dca", "Centrul de ajutor"),
-                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("de8bcdaa", "Defalcarea persoanelor care ți-au văzut postarea"),
                 t("cfa1ef16", "Dă boost"),
                 t("d267afa2", "Sub 20"),
                 t("db81cab0", "20-29"),
@@ -7416,21 +7423,19 @@
                 t("fa5be588", "Ecologic"),
                 t("c65126fe", "Cu boost"),
                 t("c61c6624", "Promovat"),
-                t("f1196a04", "Boost Analytics"),
-                t("bb66e3fc", "Promote Analytics"),
+                t("f1196a04", "Analiza boost"),
+                t("bb66e3fc", "Analiza promovării"),
                 t("g512ddcc", "Analiză organică"),
-                t("j9256524", "Breakdown of your boost performance"),
-                t("ceeb3016", "Breakdown of your promote performance"),
-                t("bf4558fa", "Breakdown of your organic performance"),
+                t("j9256524", "Defalcarea performanțelor obținute prin boost"),
+                t("ceeb3016", "Defalcarea performanțelor promovării"),
+                t("bf4558fa", "Defalcarea performanțelor obținute organic"),
                 t("c69069e6", "De câte ori a fost văzută această postare pe X"),
                 t("a0615bac", "Numărul total de interacțiuni ale unui utilizator cu o postare. Aici sunt incluse toate clicurile oriunde pe postare (inclusiv hashtaguri, linkuri, imagini de profil, nume de utilizator și extindere postare), repostări, răspunsuri, urmăriri și aprecieri."),
-                t("d8abdaa4", "Urmăritori noi"),
-                t("c72f25a8", "Urmăriri obținute direct de la această postare"),
                 t("acc4cf12", "Număr de vizualizări ale profilului de la această postare"),
                 t("c7d0d1c4", "Număr de clicuri pe orice URL din această postare"),
                 t("a4da7724", "De câte ori au fost vizualizate detaliile legate de această postare"),
                 t("jedd2771", function (e) {
-                    return e.percentage + " from boost";
+                    return e.percentage + " prin boost";
                 }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " din promovare";
@@ -7439,7 +7444,7 @@
                     return e.percentage + " din utilizatorii care nu te urmăresc";
                 }),
                 t("h4cbba3e", "<5%"),
-                t("f4f0094c", "< 5% from boost"),
+                t("f4f0094c", "< 5% prin boost"),
                 t("h1cdac12", "<5% din promovare"),
                 t("g884b2cc", "<5% de la cei care nu te urmăresc"),
                 t("b32334a0", "Conturi la care ai ajuns"),
@@ -7873,10 +7878,7 @@
                 t("e3dffb4e", "Copiază adresa de e-mail de asistență de mai jos și trimite-i echipei de asistență informațiile necesare pentru a începe procesul de integrare."),
                 t("b4fef99e", "După ce echipa noastră de asistență primește cererea, vom revizui informațiile furnizate și te vom ajuta să configurezi integrarea."),
                 t("h37f2d96", "Ai în vedere că nu toate sistemele de monitorizare a candidaților sunt acceptate momentan."),
-                t("ce102a20", "Redirecționare către Stripe"),
-                t("ddfd6718", "Plata a eșuat"),
-                t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
-                t("a62359e6", "Setări Organizații verificate");
+                t("ce102a20", "Redirecționare către Stripe");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7915,7 +7917,10 @@
                     u(e, a)
                 );
             }
-            t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
+            t("ddfd6718", "Plata a eșuat"),
+                t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
+                t("a62359e6", "Setări Organizații verificate"),
+                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
                 t("i4dccc18", "Facturare"),
                 t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
                 t("dac61c3c", "Setări cont"),
@@ -8915,13 +8920,13 @@
                 t("ecda5f9e", "Înșelător"),
                 t("a423473c", "Notificare impusă prin lege"),
                 t("b3296688", "Vizibilitate limitată"),
-                t("ccd32094", "Acum"),
-                t("abfcce0d", function (e) {
-                    return "Cu " + e.amountOfTime + " în urmă";
-                }),
+                t("ccd32094", "Acum");
+            t("abfcce0d", function (e) {
+                return "Cu " + e.amountOfTime + " în urmă";
+            }),
                 t("ae408b76", "Ai repostat"),
-                t("j355f008", "Postare fixată");
-            t("habf9678", "Fixat de Autor"),
+                t("j355f008", "Postare fixată"),
+                t("habf9678", "Fixat de Autor"),
                 t("db0798ed", function (e) {
                     return "Subiect – " + e.topicName;
                 }),
@@ -12031,7 +12036,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", "% taxe, min. ", ")"];
                             },
                         },
                         {
@@ -13063,6 +13068,7 @@
                 (f.a1056838753 = g({ 1: f("ro").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
                 (f.a680929124 = g({ 1: f("ro").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "dum.", mon: "lun.", tue: "mar.", wed: "mie.", thu: "joi", fri: "vin.", sat: "sâm." } } }, months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } } })),
                 (f.a1064226921 = g({ 1: f("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
+                (f.a46136969 = g({ 1: f("ro").numberFormatter({ raw: "0" }), 2: f("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y, HH:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (f.a527312088 = g({ 1: f("ro").numberFormatter({ raw: "0" }), 2: f("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
                 (f.a225933308 = g({ 1: f("ro").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ianuarie", 2: "februarie", 3: "martie", 4: "aprilie", 5: "mai", 6: "iunie", 7: "iulie", 8: "august", 9: "septembrie", 10: "octombrie", 11: "noiembrie", 12: "decembrie" } } } })),
                 (f.b704391301 = g({ 1: f("ro").numberFormatter({ raw: "0" }), 2: f("ro").numberFormatter({ raw: "00" }) }, { pattern: "d MMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ian.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "mai", 6: "iun.", 7: "iul.", 8: "aug.", 9: "sept.", 10: "oct.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "a.m.", pm: "p.m." } })),
@@ -13084,6 +13090,7 @@
                 (f.a1808121130 = A(f("ro").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (f.b1799120965 = A(f("ro").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (f.a1815509298 = A(f("ro").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (f.b345270112 = A(f("ro").dateToPartsFormatter({ datetime: "long" }))),
                 (f.a955170657 = A(f("ro").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (f.a1127855507 = A(f("ro").dateToPartsFormatter({ date: "long" }))),
                 (f.a1110525906 = A(f("ro").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13149,6 +13156,7 @@
                 t("c0bdd345", f.a1586415866),
                 t("aa2aa1a1", f.b1799120965),
                 t("da44942d", f.a1815509298),
+                t("a54d3ef5", f.b345270112),
                 t("bfbc051d", f.a955170657),
                 t("ba2e82a1", f.a1127855507),
                 t("fc209bb7", f.a1110525906),
@@ -13239,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.b14e5cfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.48fc51da.js.map

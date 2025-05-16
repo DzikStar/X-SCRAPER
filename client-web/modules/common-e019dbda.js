@@ -500,9 +500,9 @@
             const d = n.Z,
                 h = ({ user: e, ...t }) => {
                     const o = l()(d, e),
-                        { is_blue_verified: n, legacy: i, verification: h } = o,
-                        p = (0, c.H)(o?.identity_profile_labels_highlighted_label?.label);
-                    return s.createElement(a.ZP, (0, r.Z)({}, t, { affiliateBadgeInfo: p, avatarUri: i?.profile_image_url_https ?? "", isBlueVerified: n || !1, isFollowedBy: i?.followed_by, isProtected: i?.protected, isVerified: h?.verified ?? !1, name: i?.name ?? "", screenName: i?.screen_name ?? "", userId: i?.id_str ?? "", verifiedType: h?.verified_type ?? void 0 }));
+                        { is_blue_verified: n, legacy: i, privacy: h, verification: p } = o,
+                        u = (0, c.H)(o?.identity_profile_labels_highlighted_label?.label);
+                    return s.createElement(a.ZP, (0, r.Z)({}, t, { affiliateBadgeInfo: u, avatarUri: i?.profile_image_url_https ?? "", isBlueVerified: n || !1, isFollowedBy: i?.followed_by, isProtected: h?.protected ?? !1, isVerified: p?.verified ?? !1, name: i?.name ?? "", screenName: i?.screen_name ?? "", userId: i?.id_str ?? "", verifiedType: p?.verified_type ?? void 0 }));
                 },
                 p = s.memo(h);
         },
@@ -612,4 +612,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.fcd196ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.c4dc24aa.js.map

@@ -14,19 +14,19 @@
                     return (0, a.jsxs)("div", { className: "flex w-full max-w-5xl flex-col gap-6 pb-8 md:grid md:grid-cols-12", children: [(0, a.jsx)(t.ZQ, { title: e.hiring.benefits.jobListings.title, description: e.hiring.benefits.jobListings.description, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Listing.e89f66aa.png", alt: "Job Listings", className: "object-cove w-full origin-top -translate-y-[90px]" }) }) }) }), (0, a.jsx)(t.ZQ, { title: e.hiring.benefits.careerPages.title, description: e.hiring.benefits.careerPages.description, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Career-Page.93a8a04a.png", alt: "Career Landing Page", className: "w-full origin-top -translate-y-[50px] scale-[0.8] object-cover lg:-translate-y-[125px]" }) }) }) }), (0, a.jsx)(t.ZQ, { title: e.hiring.benefits.promotion.title, description: e.hiring.benefits.promotion.description, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Promotion.dd36976a.png", alt: "Job Promotion", className: "w-full origin-top -translate-y-[50px] scale-[0.8] object-cover lg:-translate-y-[125px]" }) }) }) }), (0, a.jsx)(t.ZQ, { title: e.hiring.benefits.connect.title, description: e.hiring.benefits.connect.description, comingSoon: !0, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Keywords.04854b2a.png", alt: "People search", className: "w-full object-cover", loading: "lazy" }) }) }) })] });
                 },
                 o = ({ children: e }) => (0, a.jsx)("div", { className: "h-[270px] w-full px-8", children: (0, a.jsx)("div", { className: "relative flex h-full w-full justify-center", style: { WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.3))", maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.3))" }, children: e }) });
-            var d = s(993165);
+            var d = s(436059);
             const u = ({ subscribeUrl: e }) => {
                 const { business: l } = (0, r.M1)();
                 return (0, a.jsx)(t.$0, { className: "flex flex-col items-center text-center focus:outline-none", children: (0, a.jsx)("a", { href: e, className: "w-full items-center md:px-36", children: (0, a.jsx)(d.z, { variant: "insightsBright", className: "w-full py-5", children: l.hiring.footer.getStarted }) }) });
             };
-            var g = s(332161);
+            var g = s(941204);
             const m = () => {
                     const { business: e } = (0, r.M1)();
                     return (0, a.jsx)(t.$0, { className: "gap-12", children: (0, a.jsxs)("div", { className: "items-space flex w-full flex-col justify-around gap-12 pb-8 md:flex-row lg:gap-8", children: [(0, a.jsx)(p, { title: e.hiring.stats.users.title, description: e.hiring.stats.users.description }), (0, a.jsx)(p, { title: e.hiring.stats.companies.title, description: e.hiring.stats.companies.description }), (0, a.jsx)(p, { title: e.hiring.stats.applications.title, description: e.hiring.stats.applications.description })] }) });
                 },
                 p = ({ description: e, title: l }) => (0, a.jsxs)("div", { className: "flex flex-col items-center md:items-start", children: [(0, a.jsx)(g.x, { size: "title1", weight: "bold", className: "mt-4 text-balance", children: l }), (0, a.jsx)(g.x, { size: "headline1", weight: "bold", color: "gray700", className: "mt-1 text-left", children: e })] });
-            var x = s(322506),
-                b = s(428897);
+            var x = s(130844),
+                b = s(767721);
             const f = ({ subscribeUrl: e, withCTA: l }) => {
                     const { business: s } = (0, r.M1)();
                     return (0, a.jsxs)(t.$0, { className: "flex flex-col items-center gap-6 pb-6 text-center", children: [(0, a.jsxs)("p", { className: "text-headline1 flex items-center gap-2 font-bold", children: [(0, a.jsx)(b.Z, { className: "h-[18px] w-[18px]" }), s.landing.organizations] }), (0, a.jsx)("h1", { className: "text-title1 text-balance font-bold md:text-[64px] md:leading-[70px]", children: (0, a.jsx)("span", { className: "from-text to-text/30 bg-gradient-to-r from-90% bg-clip-text text-transparent", children: s.hiring.hero.title }) }), (0, a.jsx)("p", { className: "text-headline1 max-w-[740px] text-pretty opacity-60", children: s.hiring.hero.description }), l && (0, a.jsx)(x.r, { href: e, className: "mt-auto", children: (0, a.jsx)(d.z, { variant: "insightsBright", className: "w-60 py-5", children: s.hiring.hero.cta }) })] });
@@ -369,17 +369,17 @@
                 n = s(520003),
                 i = s(994542),
                 r = s(313270),
-                t = s(332161),
-                c = s(995348),
-                o = s(177697),
-                d = s(428897),
+                t = s(941204),
+                c = s(182605),
+                o = s(41959),
+                d = s(767721),
                 u = s(430962);
             const g = ({ showTitle: e }) => {
                     const { business: l } = (0, u.M1)();
                     return (0, a.jsx)(n.$0, { title: e ? l.landing.andMore.title : void 0, className: "gap-12", children: (0, a.jsxs)("div", { className: "flex flex-col items-center gap-12 pb-8 text-center lg:flex-row lg:gap-8", children: [(0, a.jsx)(m, { title: l.landing.andMore.analytics.title, description: l.landing.andMore.analytics.description, Icon: c.Z }), (0, a.jsx)(m, { title: l.landing.andMore.premiumSupport.title, description: l.landing.andMore.premiumSupport.description, Icon: o.Z }), (0, a.jsx)(m, { title: l.landing.andMore.premiumPlus.title, description: l.landing.andMore.premiumPlus.description, Icon: d.Z })] }) });
                 },
                 m = ({ Icon: e, description: l, title: s }) => (0, a.jsxs)("div", { className: "flex w-full max-w-xs flex-col items-center", children: [(0, a.jsx)("div", { className: "rounded-full bg-text text-background flex h-8 w-8 items-center justify-center p-1.5", children: (0, a.jsx)(e, { className: "h-full w-full" }) }), (0, a.jsx)(t.x, { size: "headline1", weight: "bold", className: "mt-4 text-balance", children: s }), (0, a.jsx)(t.x, { size: "headline2", className: "mt-2 opacity-60", children: l })] });
-            var p = s(322506),
+            var p = s(130844),
                 x = s(889906),
                 b = s(971046),
                 f = s(323048);
@@ -682,4 +682,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-d2eb5610.b3f29d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-d2eb5610.cd7e0ada.js.map

@@ -1,7 +1,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.StaticAssets"],
     {
-        614213: (t, e, i) => {
+        990676: (t, e, i) => {
             var s = {
                 "./errors/logo46x38.png": 43329,
                 "./errors/logo46x38@2x.png": 664055,
@@ -330,6 +330,7 @@
                 "./sticky/money/payment-method-amex.svg": 21882,
                 "./sticky/money/payment-method-mastercard.svg": 33779,
                 "./sticky/money/payment-method-visa.svg": 317452,
+                "./wasm/forwarded-for-v1.wasm": 165908,
             };
             function r(t) {
                 var e = a(t);
@@ -347,7 +348,7 @@
             }),
                 (r.resolve = a),
                 (t.exports = r),
-                (r.id = 614213);
+                (r.id = 990676);
         },
         647440: (t, e, i) => {
             "use strict";
@@ -544,7 +545,7 @@
                         const t = (0, o.b9)(g);
                         s.useEffect(
                             function () {
-                                const e = i(614213),
+                                const e = i(990676),
                                     s = [];
                                 for (const t of e.keys()) {
                                     const i = e(t);
@@ -1895,6 +1896,10 @@
             "use strict";
             t.exports = i.p + "payment-method-visa.c768170a.svg";
         },
+        165908: (t, e, i) => {
+            "use strict";
+            t.exports = i.p + "forwarded-for-v1.52898e8a.wasm";
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.345fa4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.3b9ca03a.js.map

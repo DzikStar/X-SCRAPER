@@ -437,7 +437,7 @@
                         { affiliateLimit: m } = (0, q.Z)(),
                         u = (0, P.p)(pe, { count: m }),
                         p = u.viewer?.user_results?.result,
-                        g = p?.business_team_affiliates?.items_results?.filter((e) => !e?.result.legacy?.protected),
+                        g = p?.business_team_affiliates?.items_results?.filter((e) => !e?.result.privacy?.protected),
                         b = (g ?? []).length > 0,
                         [y, _] = r.useState({ variables: { rest_id: a, to_time: e.to_time, from_time: e.from_time, exclude_organization: !1, affiliate_ids: c ? (g || []).map((e) => e.result?.legacy?.id_str || "") : null }, options: { networkCacheConfig: { metadata: { forcePost: !0 } } } }),
                         E = r.useCallback(
@@ -1010,4 +1010,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-0cd3da2a.8fecd41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-0cd3da2a.11c270ea.js.map

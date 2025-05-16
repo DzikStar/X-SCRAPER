@@ -167,7 +167,7 @@
                             return i.createElement(C.Z, { key: t, spacing: "space8" });
                         case "DeveloperBuiltCardUserComponent": {
                             const a = e.user_component_results.result;
-                            return "User" === a?.__typename ? i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.PROFILE, data: { user_id: a.id, scribe: s.bQ.PROFILE_CLICK, promoted_log: s.YE.SCREEN_NAME_CLICK } }, key: t }, ({ onClick: e }) => i.createElement(D.Z, { isProtected: a.legacy?.protected, isVerified: a.verification?.verified, name: a.legacy?.name, onAvatarClick: e, onLinkClick: e, onScreenNameClick: e, profileImageUrl: a.legacy?.profile_image_url_https, screenName: a.legacy?.screen_name, withHoverCard: !0, withLink: !0 })) : null;
+                            return "User" === a?.__typename ? i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.PROFILE, data: { user_id: a.id, scribe: s.bQ.PROFILE_CLICK, promoted_log: s.YE.SCREEN_NAME_CLICK } }, key: t }, ({ onClick: e }) => i.createElement(D.Z, { isProtected: a.privacy?.protected, isVerified: a.verification?.verified, name: a.legacy?.name, onAvatarClick: e, onLinkClick: e, onScreenNameClick: e, profileImageUrl: a.legacy?.profile_image_url_https, screenName: a.legacy?.screen_name, withHoverCard: !0, withLink: !0 })) : null;
                         }
                         default:
                             return null;
@@ -438,4 +438,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.50152e2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.e8104d4a.js.map

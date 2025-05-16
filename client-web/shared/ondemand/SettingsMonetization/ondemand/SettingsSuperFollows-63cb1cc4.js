@@ -287,12 +287,13 @@
                 w = ({ user: e, viewer: t }) => {
                     const r = l()(y, e),
                         n = l()(v, t),
-                        { name: a, profile_image_url_https: s, protected: p, screen_name: d } = r?.legacy || {},
+                        { name: a, profile_image_url_https: s, screen_name: p } = r?.legacy || {},
+                        { protected: d } = r?.privacy || {},
                         { verified: m } = r.verification || {},
                         { is_blue_verified: w } = r,
                         C = (0, f.JG)(n) ?? "",
                         P = (0, f.fJ)(n) ?? "";
-                    return o.createElement(o.Fragment, null, o.createElement(u.Z, { style: k.interstitial }, o.createElement(g.Z, { headline: _, subtext: E })), o.createElement(c.Z, null), o.createElement(u.Z, { style: k.previewCallout }, o.createElement(Z.Z, { path: b.Km })), o.createElement(i.Z, { style: k.summaryFramed }, o.createElement(h.Z, { badgeImageUrl: s ?? void 0, badgeName: a ?? void 0, badgeScreenName: d ?? void 0, descriptionValue: P, imageUrl: s ?? void 0, introValue: C, isBlueVerified: w || !1, isProtected: p, isVerified: m ?? !1, name: a ?? void 0, screenName: d ?? void 0 })));
+                    return o.createElement(o.Fragment, null, o.createElement(u.Z, { style: k.interstitial }, o.createElement(g.Z, { headline: _, subtext: E })), o.createElement(c.Z, null), o.createElement(u.Z, { style: k.previewCallout }, o.createElement(Z.Z, { path: b.Km })), o.createElement(i.Z, { style: k.summaryFramed }, o.createElement(h.Z, { badgeImageUrl: s ?? void 0, badgeName: a ?? void 0, badgeScreenName: p ?? void 0, descriptionValue: P, imageUrl: s ?? void 0, introValue: C, isBlueVerified: w || !1, isProtected: d ?? !1, isVerified: m ?? !1, name: a ?? void 0, screenName: p ?? void 0 })));
                 },
                 k = p.default.create((e) => ({ interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, blob: { paddingTop: 0, paddingBottom: 0, paddingStart: 0, paddingEnd: 0 }, summaryFramed: { marginTop: e.spaces.space20, marginHorizontal: e.spaces.space20, marginBottom: e.spaces.space32 } }));
         },
@@ -937,4 +938,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-63cb1cc4.3a59442a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-63cb1cc4.b706c12a.js.map

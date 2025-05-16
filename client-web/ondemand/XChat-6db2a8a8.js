@@ -13,13 +13,13 @@
             a.d(l, { H: () => s });
             var n = a(552322),
                 r = a(139802),
-                t = a(656860);
+                t = a(92184);
             const s = ({ settings: e }) => (0, n.jsx)(r.A, { settings: e, children: (0, n.jsx)(t.p, {}) });
         },
         139802: (e, l, a) => {
             a.d(l, { A: () => p });
             var n = a(552322),
-                r = a(19745),
+                r = a(668781),
                 t = a(202784),
                 s = a(107267),
                 i = a(607499),
@@ -35,12 +35,12 @@
                     p = (0, s.useHistory)(),
                     [f, h] = (0, t.useState)(new URLSearchParams(a.search)),
                     _ = (0, s.useParams)(),
-                    { t: k } = (0, m.$G)();
+                    { t: b } = (0, m.$G)();
                 (0, t.useEffect)(() => {
                     h(new URLSearchParams(a.search));
                 }, [a.search]);
-                const b = (0, t.useMemo)(() => ({ push: (e, l) => p.push(e, l) }), [p]);
-                return (0, n.jsx)(i.S, { message: k("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(o.p, { router: b, children: (0, n.jsx)(y.ng, { children: (0, n.jsx)(u.d, { useParams: () => _, children: (0, n.jsx)(c.x, { searchParams: f, children: (0, n.jsx)(d.mp, { settings: l, children: (0, n.jsxs)(g.U, { children: [e, (0, n.jsx)(r.x, {})] }) }) }) }) }) }) });
+                const k = (0, t.useMemo)(() => ({ push: (e, l) => p.push(e, l) }), [p]);
+                return (0, n.jsx)(i.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(o.p, { router: k, children: (0, n.jsx)(y.ng, { children: (0, n.jsx)(u.d, { useParams: () => _, children: (0, n.jsx)(c.x, { searchParams: f, children: (0, n.jsx)(d.mp, { settings: l, children: (0, n.jsxs)(g.U, { children: [e, (0, n.jsx)(r.x, {})] }) }) }) }) }) }) });
             };
         },
         954713: (e, l, a) => {
@@ -52,20 +52,21 @@
                 i = ({ mode: e, shouldRegister: l, shouldGenerate: a, settings: i }) => (s.includes(e) ? (0, n.jsx)(r.A, { settings: i, children: (0, n.jsx)(t.G, { mode: e, shouldRegister: l, shouldGenerate: a }) }) : null);
         },
         524098: (e, l, a) => {
-            a.d(l, { F: () => i });
+            a.d(l, { F: () => o });
             var n = a(552322),
                 r = a(718278),
                 t = a(664147),
-                s = a(549862);
-            function i() {
-                return (0, n.jsx)("div", { className: "bg-background text-text rounded-full shadow-lg border px-3 py-1.5 flex items-center gap-3 z-50", children: (0, n.jsxs)("div", { className: "flex items-center gap-1.5", children: [(0, n.jsx)(s.J, {}), (0, n.jsx)(t.i, {}), (0, n.jsx)(r.o, {})] }) });
+                s = a(549862),
+                i = a(941204);
+            function o() {
+                return (0, n.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, n.jsx)(i.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, n.jsx)("div", { className: "bg-background text-text rounded-full shadow-lg border px-3 py-1.5 flex items-center gap-3 z-50", children: (0, n.jsxs)("div", { className: "flex items-center gap-1.5", children: [(0, n.jsx)(s.J, {}), (0, n.jsx)(t.i, {}), (0, n.jsx)(r.o, {})] }) })] });
             }
         },
         664147: (e, l, a) => {
             a.d(l, { e: () => i, i: () => o });
             var n = a(552322),
-                r = a(332161),
-                t = a(261012),
+                r = a(941204),
+                t = a(849335),
                 s = a(202784);
             const i = "top_cursor",
                 o = () => {
@@ -316,7 +317,7 @@
         },
         336984: (e, l, a) => {
             a.d(l, { r: () => t });
-            var n = a(425522);
+            var n = a(159603);
             const r = (e) => {
                     switch (e) {
                         case n.com.x.models.VerifiedType.User:
@@ -335,10 +336,9 @@
                 };
         },
         173399: (e, l, a) => {
-            a.d(l, { O: () => t });
+            a.d(l, { O: () => r });
             var n = a(84504);
-            const r = "xchat";
-            async function t() {
+            async function r() {
                 const e = (0, n.n5)();
                 await (async function (e) {
                     try {
@@ -348,18 +348,18 @@
                         e instanceof DOMException && e.name;
                     }
                 })(e),
-                    await (async function () {
-                        return new Promise((e, l) => {
-                            const a = setTimeout(() => {
-                                    l(new Error("Database deletion timeout"));
+                    await (async function (e) {
+                        return new Promise((l, a) => {
+                            const n = setTimeout(() => {
+                                    a(new Error("Database deletion timeout"));
                                 }, 5e3),
-                                n = new BroadcastChannel(r);
-                            (n.onmessage = ({ data: l }) => {
-                                "before_logout_done" === l?.action && (clearTimeout(a), n.close(), e());
+                                r = new BroadcastChannel(`${e}_chat`);
+                            (r.onmessage = ({ data: e }) => {
+                                "before_logout_done" === e?.action && (clearTimeout(n), r.close(), l());
                             }),
-                                n.postMessage({ action: "before_logout" });
+                                r.postMessage({ action: "before_logout" });
                         });
-                    })();
+                    })(e);
             }
         },
         167285: (e, l, a) => {
@@ -495,7 +495,7 @@
         },
         658358: (e, l, a) => {
             a.d(l, { e: () => d });
-            var n = a(425522),
+            var n = a(159603),
                 r = a(256958),
                 t = a(202784);
             const s = n.com.x.dms.composer.composer.ComposerToastType,
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.88dad60a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.1684b75a.js.map

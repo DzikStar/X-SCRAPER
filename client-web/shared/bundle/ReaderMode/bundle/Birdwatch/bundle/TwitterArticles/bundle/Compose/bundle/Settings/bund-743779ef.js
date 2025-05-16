@@ -8,21 +8,25 @@
             const o = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.8"),
-                        a.e("icons.21"),
-                        a.e("icons.13"),
+                        a.e("icons.5"),
+                        a.e("icons.6"),
+                        a.e("icons.25"),
+                        a.e("icons.22"),
+                        a.e("icons.9"),
+                        a.e("icons.4"),
+                        a.e("icons.15"),
+                        a.e("icons.2"),
                         a.e("icons.20"),
-                        a.e("icons.14"),
-                        a.e("icons.1"),
-                        a.e("icons.3"),
-                        a.e("icons.24"),
-                        a.e("icons.11"),
+                        a.e("icons.7"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.28"),
-                        a.e("icons.10"),
+                        a.e("icons.0"),
+                        a.e("icons.11"),
+                        a.e("icons.27"),
                         a.e("icons.17"),
-                        a.e("icons.4"),
+                        a.e("icons.12"),
+                        a.e("icons.3"),
+                        a.e("icons.13"),
                         a.e("icons.18"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
@@ -34,12 +38,10 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.12"),
-                        a.e("icons.29"),
-                        a.e("icons.22"),
-                        a.e("icons.7"),
+                        a.e("icons.24"),
+                        a.e("icons.10"),
+                        a.e("icons.8"),
                         a.e("icons.26"),
-                        a.e("icons.0"),
                         a.e("icons.19"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
@@ -48,7 +50,6 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -72,7 +73,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -115,7 +116,6 @@
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -134,25 +134,25 @@
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                         a.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                         a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-df6c0f5f"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-962a9654"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-d35c1f9c"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ff8476c2"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-6e668ce9"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-9fd4b2af"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ad2ef762"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-b67eba62"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ad6d127d"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-829eb18b"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-4fec5af7"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-898c8d51"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-b92a6472"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-67dc3650"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ed7b0ce8"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-7ba852e1"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-3ba4c741"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-30607449"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-ff768435"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b8a8a774"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4e7553e3"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-68027d49"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b20998b4"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-703d6ce2"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-5f0ed14e"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-bd66f825"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         a.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         a.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         a.e("shared~bundle.Grok~loader.Markdown"),
@@ -200,19 +200,23 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.8"),
-                        a.e("icons.21"),
-                        a.e("icons.13"),
-                        a.e("icons.20"),
-                        a.e("icons.14"),
-                        a.e("icons.1"),
-                        a.e("icons.3"),
-                        a.e("icons.24"),
-                        a.e("icons.11"),
-                        a.e("icons.28"),
-                        a.e("icons.10"),
-                        a.e("icons.17"),
+                        a.e("icons.5"),
+                        a.e("icons.6"),
+                        a.e("icons.25"),
+                        a.e("icons.22"),
+                        a.e("icons.9"),
                         a.e("icons.4"),
+                        a.e("icons.15"),
+                        a.e("icons.2"),
+                        a.e("icons.20"),
+                        a.e("icons.7"),
+                        a.e("icons.0"),
+                        a.e("icons.11"),
+                        a.e("icons.27"),
+                        a.e("icons.17"),
+                        a.e("icons.12"),
+                        a.e("icons.3"),
+                        a.e("icons.13"),
                         a.e("icons.18"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
@@ -224,15 +228,13 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.12"),
-                        a.e("icons.29"),
-                        a.e("icons.22"),
-                        a.e("icons.7"),
+                        a.e("icons.24"),
+                        a.e("icons.10"),
+                        a.e("icons.8"),
                         a.e("icons.26"),
-                        a.e("icons.0"),
                         a.e("icons.19"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -292,7 +294,6 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -351,12 +352,12 @@
                     const { muting: n, screen_name: o } = e;
                     return { text: n ? b(o) : c(o), onClick: n ? a : d, Icon: n ? r.default : l.default };
                 },
-                D = o().h59f52ee,
-                p = o().eea0cbee,
+                p = o().h59f52ee,
+                D = o().eea0cbee,
                 m = o().i29533b3,
                 S = o().h129c3c3,
-                A = (e) => (e ? ((e) => m({ screenName: e }))(e) : D),
-                w = (e) => (e ? ((e) => S({ screenName: e }))(e) : p);
+                A = (e) => (e ? ((e) => m({ screenName: e }))(e) : p),
+                w = (e) => (e ? ((e) => S({ screenName: e }))(e) : D);
         },
         417714: (e, d, a) => {
             a.d(d, { l: () => u });
@@ -496,8 +497,8 @@
                 c = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
                 b = l().e98cc293,
                 h = l().b0d1e205,
-                D = l().i2e0f4d7,
-                p = l().acb9b845,
+                p = l().i2e0f4d7,
+                D = l().acb9b845,
                 m = l().ef261d8d,
                 S = l().f7d9cfb9,
                 A = l().bec7eb11;
@@ -622,7 +623,7 @@
                                     } catch (e) {
                                         n = d;
                                     }
-                                    return { text: D({ url: a, query: e.action_input?.query }), markdown: p({ url: n, query: e.action_input?.query }) };
+                                    return { text: p({ url: a, query: e.action_input?.query }), markdown: D({ url: n, query: e.action_input?.query }) };
                                 }
                                 return { text: b({ query: e.action_input?.query }), markdown: h({ query: e.action_input?.query }) };
                             }
@@ -697,7 +698,7 @@
             var n = a(793211);
         },
         793211: (e, d, a) => {
-            a.d(d, { B$: () => D, K7: () => h, Si: () => c, W5: () => u, kf: () => b, tY: () => t });
+            a.d(d, { B$: () => p, K7: () => h, Si: () => c, W5: () => u, kf: () => b, tY: () => t });
             a(136728);
             var n = a(392237),
                 o = a(122375),
@@ -730,7 +731,7 @@
                     });
                     return { blocks: e.blocks.map((e) => ({ key: e.key, depth: 0, text: e.text, type: e.type, entityRanges: e.entityRanges?.map((e) => e), inlineStyleRanges: e.inlineStyleRanges?.map((e) => ({ style: e.style.toUpperCase(), length: e.length, offset: e.offset })) })), entityMap: d };
                 },
-                D = (e, d) => {
+                p = (e, d) => {
                     const a = h(e),
                         n = a?.blocks;
                     return n?.reduce((e, n) => {
@@ -769,33 +770,33 @@
                         (i = {});
                 },
                 h = (0, r.Z)(b, 2e4) || b,
-                D = (e, d = !1) => {
+                p = (e, d = !1) => {
                     const a = e.constructor.displayName;
                     (0, t.Z)(a, `${e.constructor.name} component has "displayName" set.`);
                     let n = e.__lifecycleIdentifier;
                     return !n && d && ((u += 1), (n = e.__lifecycleIdentifier = u)), (i[a] && i[a][n]) || (i[a] = { ...i[a], [n]: {} }), [a, n];
                 },
-                p = (e, d, a, n) => {
+                D = (e, d, a, n) => {
                     i[e][d][a] = n;
                 },
                 m = function (e) {
                     const d = { UNSAFE_componentWillMount: e.prototype.UNSAFE_componentWillMount || l.Z, componentDidMount: e.prototype.componentDidMount || l.Z, UNSAFE_componentWillUpdate: e.prototype.UNSAFE_componentWillUpdate || l.Z, componentDidUpdate: e.prototype.componentDidUpdate || l.Z, componentWillUnmount: e.prototype.componentWillUnmount || l.Z };
                     return (
                         (e.prototype.UNSAFE_componentWillMount = function (...e) {
-                            const [a, n] = D(this, !0);
-                            d.UNSAFE_componentWillMount.apply(this, e), p(a, n, "willMount", Date.now());
+                            const [a, n] = p(this, !0);
+                            d.UNSAFE_componentWillMount.apply(this, e), D(a, n, "willMount", Date.now());
                         }),
                         (e.prototype.componentDidMount = function (...e) {
-                            const [a, n] = D(this);
-                            d.componentDidMount.apply(this, e), p(a, n, "didMount", Date.now()), h();
+                            const [a, n] = p(this);
+                            d.componentDidMount.apply(this, e), D(a, n, "didMount", Date.now()), h();
                         }),
                         (e.prototype.UNSAFE_componentWillUpdate = function (...e) {
-                            const [a, n] = D(this, !0);
-                            d.UNSAFE_componentWillUpdate.apply(this, e), p(a, n, "willUpdate", Date.now());
+                            const [a, n] = p(this, !0);
+                            d.UNSAFE_componentWillUpdate.apply(this, e), D(a, n, "willUpdate", Date.now());
                         }),
                         (e.prototype.componentDidUpdate = function (...e) {
-                            const [a, n] = D(this);
-                            d.componentDidUpdate.apply(this, e), p(a, n, "didUpdate", Date.now()), h();
+                            const [a, n] = p(this);
+                            d.componentDidUpdate.apply(this, e), D(a, n, "didUpdate", Date.now()), h();
                         }),
                         (e.prototype.componentWillUnmount = function (...e) {
                             d.componentWillUnmount.apply(this, e), h();
@@ -806,4 +807,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.864a45fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.5dd27c4a.js.map

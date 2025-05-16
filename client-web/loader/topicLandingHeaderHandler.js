@@ -8,7 +8,7 @@
                 i = n(351322),
                 r = n(202784),
                 a = n(725516),
-                l = n(217179);
+                l = n(904694);
             const s = ({ entry: { content: e } }) => {
                     const t = (0, a.z)();
                     return (
@@ -21,102 +21,8 @@
                 c = r.memo(s),
                 p = i.iH({ component: c, getScribeDataItem: ({ content: { topicId: e }, itemMetadata: { clientEventInfo: t } }) => o.Z.forTopic(e, t) }).getHandler();
         },
-        217179: (e, t, n) => {
-            n.r(t), n.d(t, { TopicHeader: () => L, default: () => P });
-            var o = n(202784),
-                i = n(325686),
-                r = n(646496),
-                a = n(537392),
-                l = n(786475),
-                s = n(392237),
-                c = n(674132),
-                p = n.n(c),
-                d = n(791632),
-                m = n(321835),
-                u = n(946409),
-                f = n(618566),
-                h = n(638090),
-                g = n(500002),
-                w = n(443781),
-                b = n(265196),
-                x = n(233391),
-                y = n(863934),
-                _ = n(288955),
-                C = n(177371),
-                E = n(459679),
-                Z = n(71620),
-                T = n(668214),
-                S = n(466380),
-                F = n(919022);
-            const I = (e, t) => S.Z.select(e, t.topicId),
-                k = (e, t) => F.ZP.selectMany(e, t.facepile?.userIds || []),
-                B = (e, t) => {
-                    const n = k(e, t);
-                    return (0, E.Z)(n, (e) => (!e || e.blocking || e.muting ? void 0 : e));
-                },
-                v = (0, T.Z)()
-                    .propsFromState(() => ({ topic: I, users: B }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("TOPIC_HEADER"), follow: S.Z.follow, unfollow: S.Z.unfollow, undoTopicNotInterested: S.Z.undoNotInterested }))
-                    .withAnalytics(),
-                A = p().b1850062,
-                H = p().d69b2d90,
-                V = p().gf5e9ea6;
-            class L extends o.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._additionalControlsEnabled = this.context.featureSwitches.isTrue("topic_landing_page_clearer_controls_enabled")),
-                        (this._followButtonTextVariant = (0, f.a)(this.context.featureSwitches.getStringValue("topic_landing_page_cta_text"))),
-                        (this._handleUndoTopicNotInterested = () => {
-                            const { createLocalApiErrorHandler: e, topic: t, undoTopicNotInterested: n } = this.props;
-                            this._scribeAction({ element: "topic", action: "un_not_interested" }), t && n(t.id).catch(e());
-                        }),
-                        (this._handleOnClickFacepiles = () => {
-                            this._scribeAction({ element: "facepile", action: "click" });
-                        }),
-                        (this._handleFacepilesImpression = () => {
-                            this._scribeAction({ element: "facepile", action: "impression" });
-                        });
-                }
-                render() {
-                    const { facepile: e, history: t, onFollowHeaderOffscreen: n, topic: a, topicLandingContext: l, users: s } = this.props,
-                        { description: c, name: p } = a || {},
-                        f = s.slice(0, 4).map((e) => e.profile_image_url_https),
-                        h = e?.facepileUrl && (0, u.s9)(e.facepileUrl),
-                        g = (0, d.cu)(t),
-                        w = s && s.length > 3 ? { firstUsername: s[0].name || "", usersCount: s.length - 1, knownFollowersAvatarUrls: f, trendingFollowersUrl: h || "" } : void 0;
-                    return a && !g
-                        ? o.createElement(
-                              i.Z,
-                              { style: M.root },
-                              o.createElement(_.Z, { customText: p, displayMode: x.BH.topic }, () => o.createElement(m.Z, { onOffscreenChange: n }, o.createElement(r.Z, { children: this._renderTopicActions(), context: l, knownFollowers: w, onFacepilesClick: this._handleOnClickFacepiles, onFacepilesImpression: this._handleFacepilesImpression, subtitle: c, title: p, withAdditionalControls: this._additionalControlsEnabled }))),
-                          )
-                        : null;
-                }
-                _renderTopicActions() {
-                    const { displayType: e, showRelationshipChangeConfirmation: t, topic: n } = this.props;
-                    return n
-                        ? o.createElement(a.ZP, { key: "topic-header-actions" }, ({ containerWidth: r }) => {
-                              const a = l.Z.isNarrowScreenWidth(r) ? M.mainViewSmall : M.mainView,
-                                  s = this._additionalControlsEnabled ? (l.Z.isNarrowScreenWidth(r) ? M.followButtonSmall : M.followButton) : null,
-                                  c = l.Z.isNarrowScreenWidth(r) ? M.notInterestButtonSmall : M.notInterestButton;
-                              return o.createElement(o.Fragment, null, n.not_interested && this._additionalControlsEnabled ? this._renderTopicContextTombstone() : e === h.el.Basic ? o.createElement(i.Z, { style: a }, !this._additionalControlsEnabled || n.following || n.not_interested ? null : o.createElement(y.Z, { size: "medium", style: c, text: A, topicId: n.id, type: "primaryOutlined", withIconOnly: !1 }), o.createElement(b.ZP, { showRelationshipChangeConfirmation: t, size: "medium", style: s, textMode: this._followButtonTextVariant, topic: n })) : null);
-                          })
-                        : null;
-                }
-                _renderTopicContextTombstone() {
-                    return o.createElement(C.Z, { actionText: V, children: H, inline: !0, onClick: this._handleUndoTopicNotInterested });
-                }
-                _scribeAction(e) {
-                    const { analytics: t } = this.props;
-                    t.scribe(e);
-                }
-            }
-            (L.contextType = w.rC), (L.defaultProps = { displayType: h.el.Basic });
-            const M = s.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
-                P = (0, g.ZP)(v(L));
-        },
-        646496: (e, t, n) => {
-            n.d(t, { Z: () => h });
+        904694: (e, t, n) => {
+            n.r(t), n.d(t, { TopicHeader: () => O, default: () => N });
             var o = n(202784),
                 i = n(325686),
                 r = n(674132),
@@ -154,7 +60,90 @@
                         I = r && Z ? F : S;
                     return o.createElement(o.Fragment, null, T, o.createElement(l.ZP, { size: "title2", weight: "heavy" }, b), w ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, w) : null, I);
                 };
+            var g = n(791632),
+                w = n(321835),
+                b = n(946409),
+                x = n(618566),
+                y = n(638090),
+                _ = n(500002),
+                C = n(443781),
+                E = n(265196),
+                Z = n(233391),
+                T = n(863934),
+                S = n(288955),
+                F = n(177371),
+                I = n(459679),
+                k = n(71620),
+                B = n(668214),
+                v = n(466380),
+                A = n(919022);
+            const H = (e, t) => v.Z.select(e, t.topicId),
+                V = (e, t) => A.ZP.selectMany(e, t.facepile?.userIds || []),
+                L = (e, t) => {
+                    const n = V(e, t);
+                    return (0, I.Z)(n, (e) => (!e || e.blocking || e.muting ? void 0 : e));
+                },
+                M = (0, B.Z)()
+                    .propsFromState(() => ({ topic: H, users: L }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("TOPIC_HEADER"), follow: v.Z.follow, unfollow: v.Z.unfollow, undoTopicNotInterested: v.Z.undoNotInterested }))
+                    .withAnalytics(),
+                P = a().b1850062,
+                U = a().d69b2d90,
+                z = a().gf5e9ea6;
+            class O extends o.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._additionalControlsEnabled = this.context.featureSwitches.isTrue("topic_landing_page_clearer_controls_enabled")),
+                        (this._followButtonTextVariant = (0, x.a)(this.context.featureSwitches.getStringValue("topic_landing_page_cta_text"))),
+                        (this._handleUndoTopicNotInterested = () => {
+                            const { createLocalApiErrorHandler: e, topic: t, undoTopicNotInterested: n } = this.props;
+                            this._scribeAction({ element: "topic", action: "un_not_interested" }), t && n(t.id).catch(e());
+                        }),
+                        (this._handleOnClickFacepiles = () => {
+                            this._scribeAction({ element: "facepile", action: "click" });
+                        }),
+                        (this._handleFacepilesImpression = () => {
+                            this._scribeAction({ element: "facepile", action: "impression" });
+                        });
+                }
+                render() {
+                    const { facepile: e, history: t, onFollowHeaderOffscreen: n, topic: r, topicLandingContext: a, users: l } = this.props,
+                        { description: s, name: c } = r || {},
+                        p = l.slice(0, 4).map((e) => e.profile_image_url_https),
+                        d = e?.facepileUrl && (0, b.s9)(e.facepileUrl),
+                        m = (0, g.cu)(t),
+                        u = l && l.length > 3 ? { firstUsername: l[0].name || "", usersCount: l.length - 1, knownFollowersAvatarUrls: p, trendingFollowersUrl: d || "" } : void 0;
+                    return r && !m
+                        ? o.createElement(
+                              i.Z,
+                              { style: W.root },
+                              o.createElement(S.Z, { customText: c, displayMode: Z.BH.topic }, () => o.createElement(w.Z, { onOffscreenChange: n }, o.createElement(h, { children: this._renderTopicActions(), context: a, knownFollowers: u, onFacepilesClick: this._handleOnClickFacepiles, onFacepilesImpression: this._handleFacepilesImpression, subtitle: s, title: c, withAdditionalControls: this._additionalControlsEnabled }))),
+                          )
+                        : null;
+                }
+                _renderTopicActions() {
+                    const { displayType: e, showRelationshipChangeConfirmation: t, topic: n } = this.props;
+                    return n
+                        ? o.createElement(d.ZP, { key: "topic-header-actions" }, ({ containerWidth: r }) => {
+                              const a = m.Z.isNarrowScreenWidth(r) ? W.mainViewSmall : W.mainView,
+                                  l = this._additionalControlsEnabled ? (m.Z.isNarrowScreenWidth(r) ? W.followButtonSmall : W.followButton) : null,
+                                  s = m.Z.isNarrowScreenWidth(r) ? W.notInterestButtonSmall : W.notInterestButton;
+                              return o.createElement(o.Fragment, null, n.not_interested && this._additionalControlsEnabled ? this._renderTopicContextTombstone() : e === y.el.Basic ? o.createElement(i.Z, { style: a }, !this._additionalControlsEnabled || n.following || n.not_interested ? null : o.createElement(T.Z, { size: "medium", style: s, text: P, topicId: n.id, type: "primaryOutlined", withIconOnly: !1 }), o.createElement(E.ZP, { showRelationshipChangeConfirmation: t, size: "medium", style: l, textMode: this._followButtonTextVariant, topic: n })) : null);
+                          })
+                        : null;
+                }
+                _renderTopicContextTombstone() {
+                    return o.createElement(F.Z, { actionText: z, children: U, inline: !0, onClick: this._handleUndoTopicNotInterested });
+                }
+                _scribeAction(e) {
+                    const { analytics: t } = this.props;
+                    t.scribe(e);
+                }
+            }
+            (O.contextType = C.rC), (O.defaultProps = { displayType: y.el.Basic });
+            const W = u.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
+                N = (0, _.ZP)(M(O));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicLandingHeaderHandler.6c108eea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicLandingHeaderHandler.910a5dca.js.map

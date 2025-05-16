@@ -7,43 +7,42 @@
             var l = n(202784),
                 a = n(325686),
                 i = n(731708),
-                s = n(154003),
-                r = n(392237),
+                r = n(154003),
+                s = n(392237),
                 c = n(674132),
                 o = n.n(c),
-                d = n(725405),
-                p = n(399398);
-            const u = o().da00e00a,
-                w = "A fresh news experience, powered by Grok. Now in early beta.",
-                f = o().c40666d8;
+                d = n(725405);
+            const p = o().da00e00a,
+                u = "A fresh news experience, powered by Grok. Now in early beta.",
+                w = o().c40666d8;
             function m() {
                 const e = (0, d.Z)();
                 return l.createElement(
-                    p.g,
+                    l.Fragment,
                     null,
                     l.createElement(
                         a.Z,
-                        { style: b.container },
-                        l.createElement(i.ZP, { style: b.title, weight: "medium" }, u),
-                        l.createElement(i.ZP, null, w),
+                        { style: f.container },
+                        l.createElement(i.ZP, { style: f.title, weight: "medium" }, p),
+                        l.createElement(i.ZP, null, u),
                         l.createElement(
-                            s.ZP,
+                            r.ZP,
                             {
                                 link: "/i/news",
                                 onClick: () => {
                                     e.scribe({ element: "try_full_news_sidebar_cta", action: "click" });
                                 },
                                 size: "small",
-                                style: b.button,
+                                style: f.button,
                                 type: "primaryFilled",
                             },
-                            f,
+                            w,
                         ),
                     ),
                 );
             }
-            const b = r.default.create((e) => ({ container: { flex: 1, padding: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, button: { width: "max-content" } }));
+            const f = s.default.create((e) => ({ container: { flex: 1, padding: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, button: { width: "max-content" } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryFullNewsSidebar.7e8adf7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryFullNewsSidebar.2081621a.js.map

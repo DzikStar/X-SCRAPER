@@ -3,11 +3,11 @@
     ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch"],
     {
         110512: (e, l, a) => {
-            a.d(l, { ZP: () => B, V7: () => M });
+            a.d(l, { ZP: () => V, V7: () => W });
             a(136728);
             var n,
-                t,
                 s,
+                t,
                 i,
                 r,
                 u,
@@ -32,7 +32,7 @@
                                 selections: [
                                     {
                                         alias: null,
-                                        args: (t = [{ kind: "Literal", name: "status", value: "Accepted" }]),
+                                        args: (s = [{ kind: "Literal", name: "status", value: "Accepted" }]),
                                         concreteType: "DelegationGroup",
                                         kind: "LinkedField",
                                         name: "list_delegation_groups",
@@ -54,7 +54,7 @@
                                                         name: "result",
                                                         plural: !1,
                                                         selections: [
-                                                            (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
@@ -115,7 +115,7 @@
                                 selections: [
                                     {
                                         alias: null,
-                                        args: t,
+                                        args: s,
                                         concreteType: "DelegationGroup",
                                         kind: "LinkedField",
                                         name: "list_delegation_groups",
@@ -137,27 +137,15 @@
                                                         name: "result",
                                                         plural: !1,
                                                         selections: [
-                                                            s,
+                                                            t,
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
                                                                     i,
-                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, u, o, d, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, u, o, d, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                                                                    {
-                                                                        alias: null,
-                                                                        args: null,
-                                                                        concreteType: "UserVerification",
-                                                                        kind: "LinkedField",
-                                                                        name: "verification",
-                                                                        plural: !1,
-                                                                        selections: [
-                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
-                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                                                                        ],
-                                                                        storageKey: null,
-                                                                    },
+                                                                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -225,6 +213,19 @@
                                                                         ],
                                                                         storageKey: null,
                                                                     },
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: "UserVerification",
+                                                                        kind: "LinkedField",
+                                                                        name: "verification",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
                                                                     g,
                                                                 ],
                                                                 type: "User",
@@ -246,21 +247,21 @@
                             },
                         ],
                     },
-                    params: { id: "t2IpdHtIQtQq9WQGjNd-HQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
+                    params: { id: "4NzjzsVfM6OlS3Sh2g6hHQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
                 };
             p.hash = "cecac573042932c41c102e120b1fb720";
             const y = p;
             var m = a(202784),
-                _ = a(325686),
-                k = (a(585488), a(712696)),
-                F = a.n(k),
+                k = a(325686),
+                _ = (a(585488), a(712696)),
+                F = a.n(_),
                 h = a(107267),
                 b = a(731708),
-                f = a(661810),
-                v = a(642153),
-                K = a(392237),
-                S = a(674132),
-                w = a.n(S),
+                v = a(661810),
+                f = a(642153),
+                S = a(392237),
+                K = a(674132),
+                w = a.n(K),
                 T = a(899667),
                 U = a(487552),
                 L = a(516951),
@@ -276,9 +277,9 @@
                 Z = y,
                 q = w().daffabde,
                 O = w().eccbfa26,
-                Q = w().a1b7a904,
-                W = { context: "DelegateGroups" },
-                x = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: t, setDelegateUser: s }) => {
+                M = w().a1b7a904,
+                P = { context: "DelegateGroups" },
+                x = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: s, setDelegateUser: t }) => {
                     const i = (0, C.I0)(),
                         r = (0, h.useHistory)(),
                         [u] = (0, E.m)(A.s7),
@@ -301,30 +302,30 @@
                     m.useEffect(() => {
                         i(I.po(g.length));
                     }, [g, i]);
-                    const k = m.useCallback(
+                    const _ = m.useCallback(
                         (e) => () => {
-                            u ? r.push("/i/delegate/switch", { delegateUser: e }) : s && s(e), n();
+                            u ? r.push("/i/delegate/switch", { delegateUser: e }) : t && t(e), n();
                         },
-                        [u, s, n, r],
+                        [u, t, n, r],
                     );
                     return g.length < 1
                         ? null
                         : m.createElement(
                               m.Fragment,
                               null,
-                              a ? m.createElement(_.Z, { style: P.updatedDelegateAccountsLabel }, m.createElement(b.ZP, { color: "gray700", weight: "bold" }, O)) : m.createElement(_.Z, { onClick: y, style: P.delegateAccountsLabel }, m.createElement(b.ZP, { color: "gray700", weight: "bold" }, p ? q : O), !p && (o ? m.createElement(T.default, { style: P.IconChevronUp }) : m.createElement(U.default, { style: P.IconChevronDown }))),
+                              a ? m.createElement(k.Z, { style: Q.updatedDelegateAccountsLabel }, m.createElement(b.ZP, { color: "gray700", weight: "bold" }, O)) : m.createElement(k.Z, { onClick: y, style: Q.delegateAccountsLabel }, m.createElement(b.ZP, { color: "gray700", weight: "bold" }, p ? q : O), !p && (o ? m.createElement(T.default, { style: Q.IconChevronUp }) : m.createElement(U.default, { style: Q.IconChevronDown }))),
                               a || o || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
-                                            s = n === l?.userId,
-                                            i = t ? t({ withBadges: !1, isActiveUser: s }) : void 0,
-                                            r = k({ userId: n });
-                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(D.Z, { "aria-label": Q, badgeContext: "account", decoration: i, displayMode: "UserCompact", onCellClick: s ? L.Z : r, user: e, withInteractiveStyling: !s, withLink: !1 }), a && m.createElement(f.Z, { style: P.accountDivider }));
+                                            t = n === l?.userId,
+                                            i = s ? s({ withBadges: !1, isActiveUser: t }) : void 0,
+                                            r = _({ userId: n });
+                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(D.Z, { "aria-label": M, badgeContext: "account", decoration: i, displayMode: "UserCompact", onCellClick: t ? L.Z : r, user: e, withInteractiveStyling: !t, withLink: !1 }), a && m.createElement(v.Z, { style: Q.accountDivider }));
                                     })
-                                  : m.createElement(_.Z, { style: P.facePileContainer }, m.createElement(v.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.legacy?.profile_image_url_https) || "") })),
+                                  : m.createElement(k.Z, { style: Q.facePileContainer }, m.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.legacy?.profile_image_url_https) || "") })),
                           );
                 };
-            function M() {
+            function W() {
                 const e = F()(Z, {}),
                     l = (0, C.v9)(I.x0);
                 return m.useMemo(() => {
@@ -338,16 +339,16 @@
                     );
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
-            const P = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                B = H((e) => m.createElement(R.H, { errorConfig: W }, m.createElement(x, e)));
+            const Q = S.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                V = H((e) => m.createElement(R.H, { errorConfig: P }, m.createElement(x, e)));
         },
         621416: (e, l, a) => {
-            a.d(l, { m: () => s });
+            a.d(l, { m: () => t });
             a(890103);
             var n = a(202784),
-                t = a(175698);
-            function s(e) {
-                const l = (0, t.A)();
+                s = a(175698);
+            function t(e) {
+                const l = (0, s.A)();
                 return [
                     !!l && !l.flags[e],
                     n.useCallback(() => {
@@ -359,24 +360,24 @@
         380155: (e, l, a) => {
             a.d(l, { y: () => u });
             var n = a(674132),
-                t = a.n(n),
-                s = a(615656),
+                s = a.n(n),
+                t = a(615656),
                 i = a(51525);
-            const r = t().b20a3894,
-                u = { [s.ZP.AppInReadOnlyMode]: { customAction: i.w1 }, [s.ZP.TargetUserNotFound]: { toast: { text: r } }, showToast: !0 };
+            const r = s().b20a3894,
+                u = { [t.ZP.AppInReadOnlyMode]: { customAction: i.w1 }, [t.ZP.TargetUserNotFound]: { toast: { text: r } }, showToast: !0 };
         },
         956817: (e, l, a) => {
             a.d(l, { y: () => u });
             var n = a(734540),
-                t = a(917799),
-                s = a(24546),
+                s = a(917799),
+                t = a(24546),
                 i = a(923488);
             const r = { REQUEST: "rweb/multiAccount/SWITCH_REQUEST", SUCCESS: "rweb/multiAccount/SWITCH_SUCCESS", FAILURE: "rweb/multiAccount/SWITCH_FAILURE" },
                 u =
                     (e) =>
                     (l, a, { api: u }) => {
-                        const o = (0, t._O)(l, { request: u.withEndpoint(n.Z).switch, params: e });
-                        return l((0, s.MH)()).then(() =>
+                        const o = (0, s._O)(l, { request: u.withEndpoint(n.Z).switch, params: e });
+                        return l((0, t.MH)()).then(() =>
                             l((0, i.nB)()).then(() =>
                                 o({ actionTypes: r, context: "SWITCH" }).then(() => {
                                     window.location.assign("/home");
@@ -387,4 +388,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.6fdabe9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.d856030a.js.map

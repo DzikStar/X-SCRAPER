@@ -7,8 +7,8 @@
             var a,
                 i,
                 r,
-                t,
                 s,
+                t,
                 u,
                 d,
                 o,
@@ -30,7 +30,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: (t = [
+                                args: (s = [
                                     { kind: "Variable", name: "config", variableName: "config" },
                                     { kind: "Variable", name: "module_id", variableName: "moduleId" },
                                     { kind: "Literal", name: "s", value: "f3d8" },
@@ -42,7 +42,7 @@
                                 plural: !1,
                                 selections: [
                                     { args: null, kind: "FragmentSpread", name: "ProfileSpotlights_user" },
-                                    (s = {
+                                    (t = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "code", storageKey: null },
@@ -66,7 +66,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: t,
+                                args: s,
                                 concreteType: null,
                                 kind: "LinkedField",
                                 name: "user_update_about_module_from_venue",
@@ -76,8 +76,9 @@
                                     {
                                         kind: "InlineFragment",
                                         selections: [
-                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                             (o = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }),
+                                            { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                             (c = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                             { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                             {
@@ -464,13 +465,13 @@
                                         type: "User",
                                         abstractKey: null,
                                     },
-                                    s,
+                                    t,
                                 ],
                                 storageKey: null,
                             },
                         ],
                     },
-                    params: { id: "RzZVASiPt-5S_JRctJRPnQ", metadata: {}, name: "useUpdateLocationSpotlightMutation", operationKind: "mutation", text: null },
+                    params: { id: "yqGx2u5u1T3KR_002Lq0xg", metadata: {}, name: "useUpdateLocationSpotlightMutation", operationKind: "mutation", text: null },
                 };
             h.hash = "6e4d4d2454f48e92a192da1d9d70da52";
             const _ = h;
@@ -493,13 +494,13 @@
                 };
         },
         359870: (e, l, n) => {
-            n.d(l, { Z: () => s, b: () => t });
+            n.d(l, { Z: () => t, b: () => s });
             var a = n(674132);
             const i = n.n(a)().g33c0564,
                 r = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}$/,
-                t = 385;
-            function s(e) {
-                return e.length > t ? i : r.test(e) ? void 0 : i;
+                s = 385;
+            function t(e) {
+                return e.length > s ? i : r.test(e) ? void 0 : i;
             }
         },
         576025: (e, l, n) => {
@@ -508,16 +509,16 @@
             var a = n(499627),
                 i = n(312771);
             const r = "countryNames",
-                t = { fetchStatus: i.ZP.NONE, countries: {} },
-                s = { REQUEST: `${r}_REQUEST`, FAILURE: `${r}_FAILURE`, SUCCESS: `${r}_SUCCESS` },
-                u = (e = t, l) => {
+                s = { fetchStatus: i.ZP.NONE, countries: {} },
+                t = { REQUEST: `${r}_REQUEST`, FAILURE: `${r}_FAILURE`, SUCCESS: `${r}_SUCCESS` },
+                u = (e = s, l) => {
                     if (!l) return e;
                     switch (l.type) {
-                        case s.REQUEST:
+                        case t.REQUEST:
                             return { ...e, fetchStatus: i.ZP.LOADING };
-                        case s.FAILURE:
+                        case t.FAILURE:
                             return { ...e, fetchStatus: i.ZP.NONE };
-                        case s.SUCCESS:
+                        case t.SUCCESS:
                             return { ...e, countries: l.payload, fetchStatus: i.ZP.LOADED };
                         default:
                             return e;
@@ -532,7 +533,7 @@
                 c = (e) => (l, a) =>
                     a()[r].fetchStatus === i.ZP.LOADED
                         ? Promise.resolve()
-                        : (l({ type: s.REQUEST }),
+                        : (l({ type: t.REQUEST }),
                           ((e) => {
                               switch (e) {
                                   case "ar":
@@ -639,12 +640,12 @@
                           })(e)
                               .then((n) => {
                                   const a = n.main[e].localeDisplayNames.territories;
-                                  l({ type: s.SUCCESS, payload: a });
+                                  l({ type: t.SUCCESS, payload: a });
                               })
                               .catch(() => {
-                                  l("en" === e ? { type: s.FAILURE } : c("en"));
+                                  l("en" === e ? { type: t.FAILURE } : c("en"));
                               }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-a2dee9c7.ad8e64ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-a2dee9c7.1eb8e07a.js.map

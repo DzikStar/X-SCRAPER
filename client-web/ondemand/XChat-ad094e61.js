@@ -2,12 +2,12 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.XChat-ad094e61"],
     {
-        759746: (e, s, t) => {
-            t.d(s, { M: () => a });
-            var n = t(552322),
-                r = t(789764),
-                o = t(350311);
-            const i = ({ firstUrl: e, resolution: s, secondUrl: t, size: r = "xxLarge" }) => {
+        759746: (e, t, s) => {
+            s.d(t, { M: () => o });
+            var n = s(552322),
+                r = s(475694),
+                a = s(350311);
+            const i = ({ firstUrl: e, resolution: t, secondUrl: s, size: r = "xxLarge" }) => {
                     const i = ((e) => {
                             switch (e) {
                                 case "fill":
@@ -18,7 +18,7 @@
                                     return "8px";
                             }
                         })(r),
-                        a = ((e) => ("fill" === e ? "2%" : "1px"))(r),
+                        o = ((e) => ("fill" === e ? "2%" : "1px"))(r),
                         l = ((e) => {
                             switch (e) {
                                 case "fill":
@@ -29,9 +29,9 @@
                                     return "medium";
                             }
                         })(r);
-                    return (0, n.jsxs)("div", { className: "flex rounded-lg", style: { marginTop: `calc(${i} - ${a} * 2)` }, children: [(0, n.jsx)("div", { className: "rounded-full bg-background", style: { zIndex: 2, padding: a }, children: (0, n.jsx)(o.s, { url: e, size: l, resolution: s }) }), (0, n.jsx)("div", { style: { marginLeft: `calc(-${i} - ${a} * 2)`, marginTop: `calc(-${i} + ${a} * 2)`, marginBottom: i }, children: (0, n.jsx)(o.s, { url: t, size: l, resolution: s }) })] });
+                    return (0, n.jsxs)("div", { className: "flex rounded-lg", style: { marginTop: `calc(${i} - ${o} * 2)` }, children: [(0, n.jsx)("div", { className: "rounded-full bg-background", style: { zIndex: 2, padding: o }, children: (0, n.jsx)(a.s, { url: e, size: l, resolution: t }) }), (0, n.jsx)("div", { style: { marginLeft: `calc(-${i} - ${o} * 2)`, marginTop: `calc(-${i} + ${o} * 2)`, marginBottom: i }, children: (0, n.jsx)(a.s, { url: s, size: l, resolution: t }) })] });
                 },
-                a = ({ avatarSize: e, isInlineFacepile: s, resolution: t, users: a }) => {
+                o = ({ avatarSize: e, isInlineFacepile: t, resolution: s, users: o }) => {
                     const l = ((e) => {
                         switch (e) {
                             case "fill":
@@ -42,180 +42,196 @@
                                 return "large";
                         }
                     })(e);
-                    if (s) {
-                        if (a.length >= 2) return (0, n.jsx)(i, { size: l, firstUrl: a[0]?.profileImageUrl, resolution: t, secondUrl: a[1]?.profileImageUrl });
-                        if (1 === a.length) return (0, n.jsx)(o.s, { url: a[0]?.profileImageUrl, size: e, resolution: t });
+                    if (t) {
+                        if (o.length >= 2) return (0, n.jsx)(i, { size: l, firstUrl: o[0]?.profileImageUrl, resolution: s, secondUrl: o[1]?.profileImageUrl });
+                        if (1 === o.length) return (0, n.jsx)(a.s, { url: o[0]?.profileImageUrl, size: e, resolution: s });
                     }
-                    const c = a.slice(0, 4).map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
-                    return (0, n.jsx)(r.o, { urls: c, size: e, resolution: t });
+                    const c = o.slice(0, 4).map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
+                    return (0, n.jsx)(r.o, { urls: c, size: e, resolution: s });
                 };
         },
-        32161: (e, s, t) => {
-            t.d(s, { x: () => l });
-            var n = t(552322),
-                r = t(425522),
-                o = t(350311);
-            const i = ({ avatar: e, avatarSize: s, onCustomAvatarNeedsResolving: t }) => (e instanceof r.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, n.jsx)(o.s, { url: e.uri, size: s }) : (e instanceof r.com.x.dms.model.MediaUriState.AvatarNeedsResolving && t(e), (0, n.jsx)(o.s, { size: s })));
-            var a = t(759746);
-            const l = ({ avatarSize: e, isInlineFacepile: s, onCustomAvatarNeedsResolving: t, titleState: l }) => {
-                if (l instanceof r.com.x.dms.model.DmTitleState.OneToOne) return (0, n.jsx)(o.s, { url: l.otherUser?.profileImageUrl, size: e });
+        32161: (e, t, s) => {
+            s.d(t, { x: () => l });
+            var n = s(552322),
+                r = s(159603),
+                a = s(350311);
+            const i = ({ avatar: e, avatarSize: t, onCustomAvatarNeedsResolving: s }) => (e instanceof r.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, n.jsx)(a.s, { url: e.uri, size: t }) : (e instanceof r.com.x.dms.model.MediaUriState.AvatarNeedsResolving && s(e), (0, n.jsx)(a.s, { size: t })));
+            var o = s(759746);
+            const l = ({ avatarSize: e, isInlineFacepile: t, onCustomAvatarNeedsResolving: s, titleState: l }) => {
+                if (l instanceof r.com.x.dms.model.DmTitleState.OneToOne) return (0, n.jsx)(a.s, { url: l.otherUser?.profileImageUrl, size: e });
                 if (l instanceof r.com.x.dms.model.DmTitleState.Group) {
-                    if (l.avatarType instanceof r.com.x.dms.model.DmTitleGroupAvatarType.CustomAvatar) return (0, n.jsx)(i, { avatar: l.avatarType.image, avatarSize: e, onCustomAvatarNeedsResolving: t });
-                    if (l.avatarType instanceof r.com.x.dms.model.DmTitleGroupAvatarType.Facepile) return (0, n.jsx)(a.M, { avatarSize: e, isInlineFacepile: s, users: l.avatarType.users.asJsReadonlyArrayView() });
+                    if (l.avatarType instanceof r.com.x.dms.model.DmTitleGroupAvatarType.CustomAvatar) return (0, n.jsx)(i, { avatar: l.avatarType.image, avatarSize: e, onCustomAvatarNeedsResolving: s });
+                    if (l.avatarType instanceof r.com.x.dms.model.DmTitleGroupAvatarType.Facepile) return (0, n.jsx)(o.M, { avatarSize: e, isInlineFacepile: t, users: l.avatarType.users.asJsReadonlyArrayView() });
                 }
-                return (0, n.jsx)(o.s, { size: e });
+                return (0, n.jsx)(a.s, { size: e });
             };
         },
-        350311: (e, s, t) => {
-            t.d(s, { j: () => o, s: () => i });
-            var n = t(552322),
-                r = t(378364);
-            const o = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
-                i = ({ url: e, size: s, resolution: t = "200x200" }) => (0, n.jsx)(r.q, { url: e || o, size: s, resolution: t });
+        350311: (e, t, s) => {
+            s.d(t, { j: () => a, s: () => i });
+            var n = s(552322),
+                r = s(26429);
+            const a = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+                i = ({ url: e, size: t, resolution: s = "200x200" }) => (0, n.jsx)(r.q, { url: e || a, size: t, resolution: s });
         },
-        611463: (e, s, t) => {
-            t.d(s, { U: () => D, n: () => N });
-            var n = t(552322),
-                r = t(425522),
-                o = t(202784),
-                i = t(781441),
-                a = t(84504),
-                l = t(664147);
+        611463: (e, t, s) => {
+            s.d(t, { U: () => z, n: () => S });
+            var n = s(552322),
+                r = s(159603),
+                a = s(202784),
+                i = s(781441),
+                o = s(84504),
+                l = s(664147);
             class c {
                 url;
                 options;
-                constructor(e, s) {
-                    (this.url = new URL(e.href.replace("https://abs.twimg.com", "https://x.com/i/static"))), (this.options = s);
+                constructor(e, t) {
+                    (this.url = new URL(e.href.replace("https://abs.twimg.com", "https://x.com/i/static"))), (this.options = t);
                 }
                 createWorker() {
                     return new Worker(this.url, this.options);
                 }
             }
-            var d = t(8974),
-                m = t(303676),
-                u = t(928220),
-                x = t(879922),
-                h = t(196594);
-            const v = r.com.x.dms.util;
-            class f extends r.com.x.dms.util.EntityParser {
+            var d = s(8974),
+                m = s(303676),
+                u = s(928220),
+                x = s(879922),
+                v = s(196594);
+            const h = r.com.x.dms.util;
+            class p extends r.com.x.dms.util.EntityParser {
                 doParse(e) {
-                    return r.kotlin.collections.KtList.fromJsArray([...(0, d.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Email(...e)), ...(0, m.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Hashtag(...e)), ...(0, u.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Cashtag(...e)), ...(0, x.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Mention(...e)), ...(0, h.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Url(...e))]);
+                    return r.kotlin.collections.KtList.fromJsArray([...(0, d.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Email(...e)), ...(0, m.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Hashtag(...e)), ...(0, u.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Cashtag(...e)), ...(0, x.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Mention(...e)), ...(0, v.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Url(...e))]);
                 }
             }
-            var p = t(842898),
-                w = t(889906),
-                g = t(446368);
-            const j = r.com.x.dms.EmojiPickerBottomSheetModel,
-                y = r.kotlin.collections.KtList,
-                S = (0, o.createContext)(void 0),
-                C = "undefined" == typeof window;
-            let b;
-            function N() {
-                const e = (0, o.useContext)(S);
+            var f = s(842898),
+                g = s(889906),
+                w = s(446368),
+                j = s(264531);
+            const y = r.kotlin.collections.KtList,
+                b = (0, a.createContext)(void 0),
+                N = "undefined" == typeof window;
+            let C;
+            function S() {
+                const e = (0, a.useContext)(b);
                 if (!e) throw new Error("useGraph must be used within an GraphProvider");
                 return e;
             }
-            function _(e, s) {
-                const n = "true" === localStorage.getItem(l.e) || !1,
-                    o = (0, a.n5)();
-                const d = (function () {
-                    const e = new c(new URL(t.p + t.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), t.b), { type: void 0 }).createWorker();
+            function _(e, t, n) {
+                const a = "true" === localStorage.getItem(l.e) || !1,
+                    d = (0, o.n5)();
+                const m = (function () {
+                    const e = new c(new URL(s.p + s.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), s.b), { type: void 0 }).createWorker();
                     return (e.onerror = (e) => {}), e;
                 })();
-                d.postMessage({ action: "init_db", dbName: `${(0, a.n5)()}_chat`, id: "init_1" });
+                m.postMessage({ action: "init_db", dbName: `${(0, o.n5)()}_chat`, id: "init_1" });
+                const u = (function (e) {
+                    return "DEBUG" === e ? r.com.x.dms.LogLevel.DEBUG : "INFO" === e ? r.com.x.dms.LogLevel.INFO : r.com.x.dms.LogLevel.ERROR;
+                })(n);
                 return new r.com.x.dms.WebDmObjectGraph(
-                    r.com.x.models.UserIdentifier.ofString(o),
-                    d,
+                    r.com.x.models.UserIdentifier.ofString(d),
+                    m,
                     i._,
-                    (s, t) => {
-                        (0, p.S)(s.value.toString(), e).then((e) => {
-                            if (!e) return void t(new r.com.x.dms.LoadPostResult.OtherFailure());
-                            const s = new r.com.x.dms.LoadPostResult.Success(e);
-                            t(s);
+                    (t, s) => {
+                        (0, f.S)(t.value.toString(), e).then((e) => {
+                            if (!e) return void s(new r.com.x.dms.LoadPostResult.OtherFailure());
+                            const t = new r.com.x.dms.LoadPostResult.Success(e);
+                            s(t);
                         });
                     },
                     async function () {
-                        return new j(y.fromJsArray([]));
+                        return y.fromJsArray([]);
                     },
-                    (e, t, n, r, o) => {
-                        s.scribe({ client: "m5", page: e ?? void 0, section: t ?? void 0, component: n ?? void 0, element: r ?? void 0, action: o ?? void 0 });
+                    (e, s, n, r, a) => {
+                        t.scribe({ client: "m5", page: e ?? void 0, section: s ?? void 0, component: n ?? void 0, element: r ?? void 0, action: a ?? void 0 });
                     },
-                    new r.com.x.dms.WebOptions(!1, !0),
-                    n,
-                    new f(),
-                    !1,
+                    new r.com.x.dms.WebOptions(!1, !0, !1, u),
+                    a,
+                    new p(),
                 );
             }
-            function D({ children: e }) {
-                if (C) return;
-                const s = (0, w.useRelayEnvironment)(),
-                    t = (0, g.z$)();
-                return b || (b = _(s, t)), (0, n.jsx)(S.Provider, { value: b, children: e });
+            function z({ children: e }) {
+                if (N) return;
+                const t = (0, g.useRelayEnvironment)(),
+                    s = (0, w.z$)(),
+                    r = (0, j.xq)();
+                return C || (C = _(t, s, r)), (0, n.jsx)(b.Provider, { value: C, children: e });
             }
         },
-        656860: (e, s, t) => {
-            t.d(s, { p: () => P });
-            var n = t(552322),
-                r = t(727071),
-                o = t(425522),
-                i = t(332161),
-                a = t(193686),
-                l = t(993165),
-                c = t(687521),
-                d = t(559040),
-                m = t(533476),
-                u = t(138179),
-                x = t(875515);
+        92184: (e, t, s) => {
+            s.d(t, { p: () => k });
+            var n = s(552322),
+                r = s(727071),
+                a = s(159603),
+                i = s(962996),
+                o = s(503371),
+                l = s(941204),
+                c = s(702024),
+                d = s(436059),
+                m = s(887390),
+                u = s(174254),
+                x = s(984713),
+                v = s(533476);
             function h() {
-                return (0, n.jsxs)("div", { children: [(0, n.jsx)(i.x, { weight: "bold", children: "No chats yet" }), (0, n.jsx)(i.x, { color: "gray700", children: "Start chatting with end-to-end encryption" })] });
+                return (0, n.jsxs)("div", { children: [(0, n.jsx)(l.x, { weight: "bold", children: "No chats yet" }), (0, n.jsx)(l.x, { color: "gray700", children: "Start chatting with end-to-end encryption" })] });
             }
-            var v = t(984713),
-                f = t(897995);
-            const p = ({ connectionState: e }) => {
-                const s = ((e) => {
+            var p = s(264531),
+                f = s(897995),
+                g = s(334038);
+            const w = ({ connectionState: e }) => {
+                const t = ((e) => {
                     switch (e) {
-                        case o.com.x.dms.DmConnectionIndicatorState.CONNECTING:
+                        case a.com.x.dms.DmConnectionIndicatorState.CONNECTING:
                             return "Connecting";
-                        case o.com.x.dms.DmConnectionIndicatorState.CLOSED:
+                        case a.com.x.dms.DmConnectionIndicatorState.CLOSED:
                             return "Closed";
-                        case o.com.x.dms.DmConnectionIndicatorState.BLOCKED_UPDATE_YOUR_APP:
+                        case a.com.x.dms.DmConnectionIndicatorState.BLOCKED_UPDATE_YOUR_APP:
                             return "Blocked update your app";
                     }
                     return "";
                 })(e);
-                return s ? (0, n.jsxs)("div", { className: "flex items-center gap-2", children: [(0, n.jsx)("div", { children: (0, n.jsx)(a.P, {}) }), (0, n.jsx)(i.x, { weight: "medium", children: s })] }) : null;
+                return t ? (0, n.jsxs)("div", { className: "flex items-center gap-2", children: [(0, n.jsx)("div", { children: (0, n.jsx)(c.P, {}) }), (0, n.jsx)(l.x, { weight: "medium", children: t })] }) : null;
             };
-            var w = t(334038),
-                g = t(264531);
-            const j = o.com.x.dms.convlist,
-                y = o.com.x.dms.InboxBottomDialog;
-            function S({ component: e, setShowNewDM: s, showNewDM: t }) {
-                const r = (0, m._)(e.state),
-                    o = r.searchQuery.length > 0,
-                    S = o ? r.conversationResults.asJsReadonlyArrayView() : r.previews?.asJsReadonlyArrayView(),
-                    { showDebugOptions: C } = (0, g.XE)();
+            var j = s(455091),
+                y = s(816778);
+            function b({ value: e, children: t, href: s }) {
+                const r = "inline-flex flex-1 items-center justify-center gap-1.5 px-2 py-1 text-subtext1 font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+                    a = "bg-transparent border border-gray-100 text-gray-700 font-normal outline-primary !rounded-full px-3 text-[15px] leading-[20px] hover:bg-gray-50 focus:bg-gray-50 active:bg-gray-50 data-[state=active]:border-transparent data-[state=active]:bg-primary/10 data-[state=active]:hover:bg-primary/15 data-[state=active]:active:bg-primary/15 data-[state=active]:text-primary data-[state=active]:font-[500] data-[state=active]:shadow-none";
+                return s ? (0, n.jsx)(y.SP, { asChild: !0, value: e, children: (0, n.jsx)("a", { href: s, target: "_blank", rel: "noopener noreferrer", className: `${r} ${a}`, children: t }) }) : (0, n.jsx)(y.SP, { value: e, className: `${r} ${a}`, children: t });
+            }
+            function N({ value: e, className: t, ...s }) {
+                return (0, n.jsx)(y.mQ, { value: e, className: t, ...s, children: (0, n.jsxs)(y.dr, { className: "bg-transparent p-0 gap-3", children: [(0, n.jsx)(b, { value: "all", children: "All" }), (0, n.jsx)(b, { value: "unencrypted", href: "https://x.com/messages", children: "Unencrypted" })] }) });
+            }
+            const C = a.com.x.dms.convlist,
+                S = a.com.x.dms.InboxBottomDialog;
+            function _({ component: e, setShowNewDM: t, showNewDM: s }) {
+                const { t: r } = (0, j.$G)(),
+                    a = (0, v._)(e.state),
+                    y = a.searchQuery.length > 0,
+                    b = y ? a.conversationResults.asJsReadonlyArrayView() : a.previews?.asJsReadonlyArrayView(),
+                    { showDebugOptions: _ } = (0, p.XE)();
                 return (0, n.jsxs)(n.Fragment, {
                     children: [
                         (0, n.jsxs)("div", {
                             className: "flex flex-col h-screen border-r relative w-full",
                             children: [
                                 (0, n.jsxs)("header", {
-                                    className: "flex flex-col border-b border-border",
+                                    className: "flex flex-col",
                                     children: [
                                         (0, n.jsxs)("div", {
-                                            className: "flex items-center justify-between p-4 h-16",
+                                            className: "flex items-center justify-between py-2 px-4 h-16",
                                             children: [
-                                                (0, n.jsx)(i.x, { weight: "bold", size: "headline1", children: "Messages" }),
-                                                r.showConnectionIndicator && (0, n.jsx)(p, { connectionState: r.showConnectionIndicator }),
+                                                (0, n.jsx)(l.x, { weight: "bold", size: "headline1", children: r("Chats") }),
+                                                a.showConnectionIndicator && (0, n.jsx)(w, { connectionState: a.showConnectionIndicator }),
                                                 (0, n.jsxs)("div", {
-                                                    className: "flex items-center gap-4",
+                                                    className: "flex items-center",
                                                     children: [
-                                                        r.isLoadingConversations && (0, n.jsx)("div", { className: "w-5", children: (0, n.jsx)(a.P, { size: "small" }) }),
-                                                        C && (0, n.jsx)(w.Z, {}),
-                                                        (0, n.jsx)(l.z, {
-                                                            icon: (0, n.jsx)(u.Z, { className: "h-5 w-5" }),
+                                                        a.isLoadingConversations && (0, n.jsx)("div", { className: "w-5", children: (0, n.jsx)(c.P, { size: "small" }) }),
+                                                        _ && (0, n.jsx)(g.Z, {}),
+                                                        (0, n.jsx)(d.z, {
+                                                            className: "-mr-2",
+                                                            icon: (0, n.jsx)(i.Z, { className: "h-5 w-5" }),
+                                                            variant: "primaryText",
                                                             onClick: () => {
-                                                                e.onEvent(j.ConversationListEvent.FloatingActionButtonClicked);
+                                                                e.onEvent(C.ConversationListEvent.FloatingActionButtonClicked);
                                                             },
                                                         }),
                                                     ],
@@ -223,41 +239,45 @@
                                             ],
                                         }),
                                         (0, n.jsx)("div", {
-                                            className: "px-4 pb-4",
-                                            children: (0, n.jsx)(c._, {
-                                                placeholder: "Search Direct Messages",
-                                                value: r.searchQuery ?? "",
-                                                onChange: (s) => {
-                                                    e.onEvent(new j.ConversationListEvent.SearchQueryChanged(s.target.value));
+                                            className: "px-4 py-1",
+                                            children: (0, n.jsx)(m._, {
+                                                placeholder: "Search",
+                                                value: a.searchQuery ?? "",
+                                                onChange: (t) => {
+                                                    e.onEvent(new C.ConversationListEvent.SearchQueryChanged(t.target.value));
                                                 },
-                                                leftContent: (0, n.jsx)(x.Z, { className: "h-5 w-5 text-text-secondary" }),
+                                                borderRadius: "xLarge",
+                                                className: "bg-gray-0 focus-within:bg-transparent",
+                                                inputClassName: "placeholder:text-gray-700",
+                                                leftContent: (0, n.jsx)(o.Z, { className: "h-5 w-5 text-gray-700" }),
                                             }),
                                         }),
                                     ],
                                 }),
-                                S && S.length > 0 ? (0, n.jsx)(d.p, { conversations: S, onEvent: (s) => e.onEvent(s), isSearch: o }) : !o && (0, n.jsx)(h, {}),
-                                r.showBottomDialog instanceof y.PinReminder && (0, n.jsx)(f.Y, { component: e, dialogParams: r.showBottomDialog.params }),
+                                (0, n.jsx)("div", { className: "py-3 px-4", children: (0, n.jsx)(N, { value: "all" }) }),
+                                b && b.length > 0 ? (0, n.jsx)(u.p, { conversations: b, onEvent: (t) => e.onEvent(t), isSearch: y }) : !y && (0, n.jsx)(h, {}),
+                                a.showBottomDialog instanceof S.PinReminder && (0, n.jsx)(f.Y, { component: e, dialogParams: a.showBottomDialog.params }),
                             ],
                         }),
-                        t && (0, n.jsx)(v.x, { onVisibilityChange: s }),
+                        s && (0, n.jsx)(x.x, { onVisibilityChange: t }),
                     ],
                 });
             }
-            var C = t(292317),
-                b = t(202784),
-                N = t(611463),
-                _ = t(379342),
-                D = t(607499);
-            const P = () => {
-                    const [e, s] = (0, b.useState)(null),
-                        t = (0, N.n)(),
-                        r = (0, _.s)(),
-                        [i, l] = (0, b.useState)(!1);
+            var z = s(292317),
+                D = s(202784),
+                L = s(611463),
+                P = s(379342),
+                E = s(607499);
+            const k = () => {
+                    const [e, t] = (0, D.useState)(null),
+                        s = (0, L.n)(),
+                        r = (0, P.s)(),
+                        [i, o] = (0, D.useState)(!1);
                     return (
-                        (0, b.useEffect)(() => {
-                            const e = new o.com.x.export.CancellationSignal(),
-                                n = t.conversationListComponent(
-                                    new o.com.x.dms.convlist.ConversationListCallbacks(
+                        (0, D.useEffect)(() => {
+                            const e = new a.com.x.export.CancellationSignal(),
+                                n = s.conversationListComponent(
+                                    new a.com.x.dms.convlist.ConversationListCallbacks(
                                         (e) => {
                                             e ? r.toPinScreen("recovery") : r.toPinScreen("new");
                                         },
@@ -265,7 +285,7 @@
                                             r.toConversation(e.id);
                                         },
                                         () => {
-                                            l(!0);
+                                            o(!0);
                                         },
                                         () => {},
                                         (e) => {
@@ -277,21 +297,21 @@
                                     e,
                                 );
                             return (
-                                s(n),
+                                t(n),
                                 () => {
                                     e.cancel();
                                 }
                             );
-                        }, [t, r]),
-                        null === e ? (0, n.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, n.jsx)(a.P, {}) }) : (0, n.jsx)(D.S, { children: (0, n.jsx)(z, { component: e, setShowNewDM: l, showNewDM: i }) })
+                        }, [s, r]),
+                        null === e ? (0, n.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, n.jsx)(c.P, {}) }) : (0, n.jsx)(E.S, { children: (0, n.jsx)(U, { component: e, setShowNewDM: o, showNewDM: i }) })
                     );
                 },
-                z = ({ component: e, setShowNewDM: s, showNewDM: t }) => {
-                    const o = (0, r.U)().id,
-                        i = void 0 === o || "" === o;
-                    return (0, m._)(e.state).isInitializing ? (0, n.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, n.jsx)(a.P, {}) }) : (0, n.jsxs)("div", { className: "flex w-full", children: [(0, n.jsx)("div", { className: (i ? "block" : "hidden") + " md:block w-full md:w-[35%]", children: (0, n.jsx)(S, { component: e, setShowNewDM: s, showNewDM: t }) }), (0, n.jsx)("div", { className: (i ? "hidden" : "block") + " md:block w-full md:w-[65%]", children: (0, n.jsx)(C.Q, {}) })] });
+                U = ({ component: e, setShowNewDM: t, showNewDM: s }) => {
+                    const a = (0, r.U)().id,
+                        i = void 0 === a || "" === a;
+                    return (0, v._)(e.state).isInitializing ? (0, n.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, n.jsx)(c.P, {}) }) : (0, n.jsxs)("div", { className: "flex w-full", children: [(0, n.jsx)("div", { className: (i ? "block" : "hidden") + " md:block w-full md:w-[35%]", children: (0, n.jsx)(_, { component: e, setShowNewDM: t, showNewDM: s }) }), (0, n.jsx)("div", { className: (i ? "hidden" : "block") + " md:block w-full md:w-[65%]", children: (0, n.jsx)(z.Q, {}) })] });
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-ad094e61.049db93a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-ad094e61.e8c9203a.js.map

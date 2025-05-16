@@ -176,19 +176,19 @@
                                 ],
                                 storageKey: null,
                             },
-                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, d, u], storageKey: null }, p, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
+                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, d, u], storageKey: null }, p, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
                         ],
                     },
-                    params: { id: "BDZY01rA92hc4jVy5VL6zA", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
+                    params: { id: "GSJJrJNZzNCEliwnqTOzpw", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
                 };
             k.hash = "b5ca6f3d0c226d006500f7a642421be5";
             const f = k;
             l(585488);
             var S = l(107267),
-                h = l(154003),
-                F = l(392237),
-                v = l(674132),
-                w = l.n(v),
+                F = l(154003),
+                h = l(392237),
+                w = l(674132),
+                v = l.n(w),
                 K = l(980407),
                 E = l(724345),
                 Z = l(783373),
@@ -198,7 +198,7 @@
                 x = l(28557),
                 N = l(535338),
                 U = l(615027),
-                V =
+                P =
                     (l(136728),
                     {
                         argumentDefinitions: [],
@@ -213,7 +213,7 @@
                         abstractKey: null,
                         hash: "2346846c87f6b76cd76ea9b834745cff",
                     });
-            const P = V;
+            const V = P;
             var B = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -259,36 +259,36 @@
             };
             const A = B;
             var R = l(576648),
-                M = l(325686),
-                I = l(277660),
-                z = l.n(I),
+                I = l(325686),
+                M = l(277660),
+                z = l.n(M),
                 D = l(811176),
                 $ = l(167630),
-                j = l(708852),
-                H = l(630715),
-                O = l(786272),
+                O = l(708852),
+                j = l(630715),
+                H = l(786272),
                 q = l(73664),
                 W = l(952793),
-                Q = l(782642),
-                G = l(97882),
-                X = l(782826),
-                Y = l(359870),
-                J = l(725516),
+                G = l(782642),
+                Q = l(97882),
+                J = l(782826),
+                X = l(359870),
+                Y = l(725516),
                 ee = l(688715),
                 ae = l(731708),
                 le = l(96083),
                 ne = l(855488),
                 re = l(725405);
-            const te = w().be03ecca,
+            const te = v().be03ecca,
                 se = (0, ee.ju)("https://help.x.com/using-x/creator-email-sharing"),
                 ie = (0, ee.ju)("https://legal.x.com/creator-email-sharing-terms.html"),
-                oe = w().i859a9d4,
-                ce = F.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
+                oe = v().i859a9d4,
+                ce = h.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
                 ue = ({ consented: e, creatorName: a, setConsented: l, setSubscriptionEmail: n, subscriptionEmail: r }) => {
                     const [t, s] = y.useState(),
                         i = (0, re.Z)(),
                         o = y.useCallback(() => {
-                            r && s((0, Y.Z)(r));
+                            r && s((0, X.Z)(r));
                         }, [s, r]),
                         c = y.useCallback((e) => n(e.currentTarget.value), [n]),
                         u = y.useCallback(
@@ -298,7 +298,7 @@
                             [i, l, n],
                         ),
                         d = y.useMemo(() => ({ elements: { link: y.createElement(ae.ZP, { color: "plum500", link: ie }) }, variables: { creatorName: a } }), [a]);
-                    return y.createElement(M.Z, null, y.createElement(M.Z, { style: ce.row }, y.createElement(le.Z, { checked: e, onChange: u }), y.createElement(ae.ZP, { color: "gray700" }, y.createElement(w().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, y.cloneElement(d.elements.link, null, w().e6c72234)), y.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), y.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
+                    return y.createElement(I.Z, null, y.createElement(I.Z, { style: ce.row }, y.createElement(le.Z, { checked: e, onChange: u }), y.createElement(ae.ZP, { color: "gray700" }, y.createElement(v().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, y.cloneElement(d.elements.link, null, v().e6c72234)), y.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), y.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
                 };
             var de = {
                 argumentDefinitions: [],
@@ -316,17 +316,17 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "72643e92665ad020b030f3f68515d153",
+                hash: "ccde7742d4a129a0946b9f9071b5d593",
             };
             const me = de;
             var pe = {
@@ -398,14 +398,14 @@
                         g = i.legacy?.profile_image_url_https ?? void 0,
                         _ = i.legacy?.name ?? void 0,
                         b = i.legacy?.screen_name ?? void 0,
-                        k = i.legacy?.protected ?? void 0,
+                        k = i.privacy?.protected ?? void 0,
                         f = i.verification?.verified ?? void 0,
                         S = i?.is_blue_verified ?? void 0,
-                        h = y.useMemo(() => [Se.subscribeButtonContainer, n && Se.subscribeButtonContainerWide], [n]);
-                    return y.createElement(y.Fragment, null, y.createElement(ye.Z, { badgeImageUrl: g, badgeName: _, badgeScreenName: b, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: S, isProtected: k, isVerified: f, name: o, screenName: u }), y.createElement(M.Z, { style: h }, l, y.createElement(_e.Z, { recurring: !0, style: Se.disclaimer }), a));
+                        F = y.useMemo(() => [Se.subscribeButtonContainer, n && Se.subscribeButtonContainerWide], [n]);
+                    return y.createElement(y.Fragment, null, y.createElement(ye.Z, { badgeImageUrl: g, badgeName: _, badgeScreenName: b, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: S, isProtected: k, isVerified: f, name: o, screenName: u }), y.createElement(I.Z, { style: F }, l, y.createElement(_e.Z, { recurring: !0, style: Se.disclaimer }), a));
                 },
-                Se = F.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
-            var he = (function () {
+                Se = h.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
+            var Fe = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "consented" },
                     a = { defaultValue: null, kind: "LocalArgument", name: "creator_id" },
                     l = { defaultValue: null, kind: "LocalArgument", name: "email" },
@@ -442,11 +442,11 @@
                     ];
                 return { fragment: { argumentDefinitions: [e, a, l], kind: "Fragment", metadata: null, name: "useEmailShareConsentUpdateMutation", selections: n, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [l, a, e], kind: "Operation", name: "useEmailShareConsentUpdateMutation", selections: n }, params: { id: "cpdX3u0AUkdRb5mc3LpVpg", metadata: {}, name: "useEmailShareConsentUpdateMutation", operationKind: "mutation", text: null } };
             })();
-            he.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
-            const Fe = he;
-            var ve = l(351743),
-                we = l.n(ve);
-            const Ke = Fe;
+            Fe.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
+            const he = Fe;
+            var we = l(351743),
+                ve = l.n(we);
+            const Ke = he;
             l(571372);
             var Ee = (function () {
                 var e = [
@@ -475,14 +475,14 @@
             })();
             Ee.hash = "759d9c15b4318f3e6cf9204063fd8da0";
             const Ze = Ee,
-                Le = w().d2613123,
-                Ce = w().ef4602ec,
-                Te = w().c4640fc0,
-                xe = w().a72064a8,
-                Ne = w().f88553c8,
+                Le = v().d2613123,
+                Ce = v().ef4602ec,
+                Te = v().c4640fc0,
+                xe = v().a72064a8,
+                Ne = v().f88553c8,
                 Ue = A,
-                Ve = P,
-                Pe = (e) => {
+                Pe = V,
+                Ve = (e) => {
                     const { screenName: a, user: l, viewer: n } = e,
                         r = (0, W.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         t = (0, W.hC)("super_follow_subscriptions_tax_calculation_enabled"),
@@ -491,25 +491,25 @@
                         [c, u] = y.useState(!1),
                         d = y.useRef(),
                         m = (0, q.R)(d, { threshold: 0.5 }),
-                        p = (0, J.z)(),
+                        p = (0, Y.z)(),
                         g = z()(Ue, l),
-                        b = z()(Ve, n),
+                        b = z()(Pe, n),
                         k = (0, S.useHistory)(),
-                        f = (0, Q.p)(),
-                        F = g.legacy?.id_str ?? void 0,
-                        v = g.legacy?.screen_name ?? void 0,
-                        w = ((e, a, l, n) => {
+                        f = (0, G.p)(),
+                        h = g.legacy?.id_str ?? void 0,
+                        w = g.legacy?.screen_name ?? void 0,
+                        v = ((e, a, l, n) => {
                             let r = e;
                             return l && n && (r += a), r;
                         })(g.super_follow_creator_product_metadata?.amount ?? 0, g.super_follow_creator_product_metadata?.tax_amount ?? 0, r, t),
                         E = g.super_follow_creator_product_metadata?.currency_code ?? void 0,
                         Z = g.super_follow_creator_product_metadata?.product_id ?? void 0,
                         L = b.legacy?.id_str ?? void 0,
-                        { href: C, origin: T } = X.ZP.get(),
-                        x = v ? `${T}/${v}/creator-subscriptions/subscribe/success` : T,
-                        N = v ? `${T}/${v}/creator-subscriptions/subscribe/failure` : T,
-                        [U, V] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
-                            const [n, r] = we()(Ze);
+                        { href: C, origin: T } = J.ZP.get(),
+                        x = w ? `${T}/${w}/creator-subscriptions/subscribe/success` : T,
+                        N = w ? `${T}/${w}/creator-subscriptions/subscribe/failure` : T,
+                        [U, P] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
+                            const [n, r] = ve()(Ze);
                             return [
                                 y.useCallback(
                                     () =>
@@ -530,8 +530,8 @@
                                 r,
                             ];
                         })({ productId: Z, successUrl: x, cancelUrl: N }),
-                        [P] = (() => {
-                            const [e, a] = we()(Ke);
+                        [V] = (() => {
+                            const [e, a] = ve()(Ke);
                             return [
                                 y.useCallback(
                                     ({ consented: a, creatorId: l, email: n }) =>
@@ -550,18 +550,18 @@
                             ];
                         })(),
                         B = y.useMemo(() => {
-                            let e = (0, X.G3)(k.location);
+                            let e = (0, J.G3)(k.location);
                             const a = k.getLastNonModalLocationPathname() || "";
-                            !(0, X.d)(k.location) && v && a.includes(`${v}/status`) && (e = "tweet");
+                            !(0, J.d)(k.location) && w && a.includes(`${w}/status`) && (e = "tweet");
                             const l = g.legacy?.id_str ? { creator_user_id: g.legacy.id_str, referring_page: e } : void 0;
                             return { items: [{ is_viewer_follows_user: !!g.legacy?.following, super_follow_details: l }] };
-                        }, [v, g, k]);
+                        }, [w, g, k]);
                     y.useEffect(() => {
                         p.scribe({ element: "subscribe_screen", action: "impression", data: B });
                     }, [B, p]);
                     const A = s && !!g.verified_program_creator_features?.email_sharing_from_subscribers_enabled,
-                        I = A && c,
-                        ee = I && (!i || !!(0, Y.Z)(i)),
+                        M = A && c,
+                        ee = M && (!i || !!(0, X.Z)(i)),
                         ae = g.legacy?.name ?? "",
                         le = A ? y.createElement(ue, { consented: c, creatorName: ae, setConsented: u, setSubscriptionEmail: o, subscriptionEmail: i }) : null,
                         ne = Te,
@@ -569,8 +569,8 @@
                         te = y.useCallback(() => {
                             p.scribe({ element: "subscribe_button", action: "click", data: B });
                             const e =
-                                    I && !ee && F
-                                        ? P({ email: i, creatorId: F, consented: c })
+                                    M && !ee && h
+                                        ? V({ email: i, creatorId: h, consented: c })
                                               .then((e) => {
                                                   p.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: B });
                                               })
@@ -582,50 +582,50 @@
                                     f({ text: Ce });
                                 });
                             Promise.all([a, e]).then(([e]) => {
-                                e && X.ZP.navigateTo(e);
+                                e && J.ZP.navigateTo(e);
                             });
-                        }, [p, F, B, I, ee, U, P, i, c, f]),
+                        }, [p, h, B, M, ee, U, V, i, c, f]),
                         se = y.useCallback(() => {
                             R.Z.setString(C), f({ text: Ne }), p.scribe({ action: "share", data: B });
                         }, [f, p, C, B]),
                         ie = y.useCallback(
                             (e) => {
                                 const a = [];
-                                return a.push({ text: re, Icon: H.default, onClick: se }), p.scribe({ element: "share", action: "click", data: B }), y.createElement(D.Z, { items: a, onCloseRequested: e });
+                                return a.push({ text: re, Icon: j.default, onClick: se }), p.scribe({ element: "share", action: "click", data: B }), y.createElement(D.Z, { items: a, onCloseRequested: e });
                             },
                             [p, re, se, B],
                         ),
-                        oe = E && w ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, w) : void 0,
-                        ce = { disabled: (F && L && F === L) || V || !Z || ee, onPress: te },
-                        de = y.createElement(h.ZP, (0, _.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Be.bigSubscribeButton }), V ? y.createElement($.Z, null) : Le({ price: oe })),
-                        me = y.createElement(h.ZP, (0, _.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [Be.transitionOpacity, m ? Be.opacityNone : void 0], type: "primaryFilled" }), V ? y.createElement($.Z, { size: "small" }) : Le({ price: oe })),
-                        pe = y.createElement(h.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: y.createElement(O.default, null), renderMenu: ie, size: "small", style: Be.shareButton, type: "primaryText" }),
-                        ge = y.createElement(M.Z, { style: Be.rightControl }, me, pe),
-                        _e = (0, j.$u)();
+                        oe = E && v ? ((e, a) => Q.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, v) : void 0,
+                        ce = { disabled: (h && L && h === L) || P || !Z || ee, onPress: te },
+                        de = y.createElement(F.ZP, (0, _.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Be.bigSubscribeButton }), P ? y.createElement($.Z, null) : Le({ price: oe })),
+                        me = y.createElement(F.ZP, (0, _.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [Be.transitionOpacity, m ? Be.opacityNone : void 0], type: "primaryFilled" }), P ? y.createElement($.Z, { size: "small" }) : Le({ price: oe })),
+                        pe = y.createElement(F.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: y.createElement(H.default, null), renderMenu: ie, size: "small", style: Be.shareButton, type: "primaryText" }),
+                        ge = y.createElement(I.Z, { style: Be.rightControl }, me, pe),
+                        _e = (0, O.$u)();
                     return y.createElement(K.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: y.createElement(fe, { children: de, emailShareElement: le, isWide: _e, user: g, viewer: b }), history: k, rightControl: ge });
                 },
-                Be = F.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
-                Ae = w().g61ed8a4,
-                Re = w().c3d23f10,
-                Me = w().d338f53e,
-                Ie = f,
+                Be = h.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
+                Ae = v().g61ed8a4,
+                Re = v().c3d23f10,
+                Ie = v().d338f53e,
+                Me = f,
                 ze = { context: "SuperFollowsSubscribe" },
                 De = { page: "super_follows_marketing" },
                 $e = ({ screenName: e }) => {
                     const a = { screenName: (0, x.Z)(e) },
-                        l = (0, N.p)(Ie, a),
+                        l = (0, N.p)(Me, a),
                         n = l?.user?.result,
                         r = l?.viewer?.user_results?.result;
-                    return n && r ? (n.super_following ? y.createElement(U.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? y.createElement(T.nO, { namespace: De }, y.createElement(Pe, { screenName: e, user: n, viewer: r })) : y.createElement(U.Z, { to: `/${e}` })) : null;
+                    return n && r ? (n.super_following ? y.createElement(U.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? y.createElement(T.nO, { namespace: De }, y.createElement(Ve, { screenName: e, user: n, viewer: r })) : y.createElement(U.Z, { to: `/${e}` })) : null;
                 },
-                je = () => {
+                Oe = () => {
                     const e = (0, S.useHistory)(),
                         a = (0, S.useParams)().screenName || "",
                         l = y.useMemo(
                             () => ({
                                 type: "CustomRetry",
                                 content: (l) => {
-                                    const n = y.createElement(E.Z, { style: Oe.error }, y.createElement(Z.Z, { description: Re, title: Ae }), y.createElement(h.ZP, { onPress: l, style: Oe.errorButton, type: "brandFilled" }, Me));
+                                    const n = y.createElement(E.Z, { style: He.error }, y.createElement(Z.Z, { description: Re, title: Ae }), y.createElement(F.ZP, { onPress: l, style: He.errorButton, type: "brandFilled" }, Ie));
                                     return y.createElement(K.Z, { backButtonType: "close", backLocation: `/${a}`, children: n, history: e });
                                 },
                             }),
@@ -633,9 +633,9 @@
                         );
                     return y.createElement(L.N, { errorConfig: ze, fallback: l }, y.createElement(C.B, null, y.createElement($e, { screenName: a })));
                 },
-                He = y.memo(je),
-                Oe = F.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
-                qe = (e) => y.createElement(b.Z, (0, _.Z)({}, e, { component: He }));
+                je = y.memo(Oe),
+                He = h.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
+                qe = (e) => y.createElement(b.Z, (0, _.Z)({}, e, { component: je }));
         },
         273961: (e, a, l) => {
             l.r(a), l.d(a, { default: () => f });
@@ -681,32 +681,6 @@
                 }),
                 p = s.default.create((e) => ({ modalContainerStyle: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", alignItems: "center", justifyContent: "center" }, wrapper: { alignItems: "center", justifyContent: "center" } }));
         },
-        988227: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => o });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                s = l(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
-        432181: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => o });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                s = l(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.ba4e5fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.cb63b9ea.js.map

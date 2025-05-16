@@ -191,8 +191,8 @@
                 c,
                 m,
                 _,
-                p,
                 g,
+                p,
                 y = t(897455),
                 k = {
                     fragment: {
@@ -203,7 +203,7 @@
                         selections: [
                             {
                                 alias: "viewer",
-                                args: (p = [{ kind: "Literal", name: "s", value: "0c09" }]),
+                                args: (g = [{ kind: "Literal", name: "s", value: "0c09" }]),
                                 concreteType: "Viewer",
                                 kind: "LinkedField",
                                 name: "viewer_v2",
@@ -219,7 +219,7 @@
                                         selections: [
                                             {
                                                 alias: null,
-                                                args: (g = [
+                                                args: (p = [
                                                     { kind: "Literal", name: "cards_platform", value: "Web-12" },
                                                     { kind: "Variable", name: "count", variableName: "count" },
                                                     { kind: "Variable", name: "cursor", variableName: "cursor" },
@@ -249,7 +249,7 @@
                         selections: [
                             {
                                 alias: "viewer",
-                                args: p,
+                                args: g,
                                 concreteType: "Viewer",
                                 kind: "LinkedField",
                                 name: "viewer_v2",
@@ -263,8 +263,8 @@
                                         name: "list_management_timeline",
                                         plural: !1,
                                         selections: [
-                                            { alias: null, args: g, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: y.Z, kind: "FragmentSpread" }], storageKey: null },
-                                            { alias: null, args: g, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] },
+                                            { alias: null, args: p, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: y.Z, kind: "FragmentSpread" }], storageKey: null },
+                                            { alias: null, args: p, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] },
                                             { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
                                         ],
                                         storageKey: null,
@@ -274,7 +274,7 @@
                             },
                         ],
                     },
-                    params: { id: "owe6F6TV2NRWISHtmu4rHQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "JCdv68rJXQrjT9Tv5juTzg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
                 };
             k.hash = "5b66468936446aae49ccfb5965fb93f4";
             const b = k;
@@ -293,8 +293,8 @@
                 c = t.n(o),
                 m = t(626417),
                 _ = t.n(m),
-                p = t(287161),
-                g = t.n(p),
+                g = t(287161),
+                p = t.n(g),
                 y = t(730916),
                 k = t.n(y),
                 b = t(161282),
@@ -307,18 +307,18 @@
                 T = t.n(v),
                 I = t(928271),
                 Q = t.n(I),
-                S = t(445071),
-                K = t.n(S),
+                K = t(445071),
+                S = t.n(K),
                 A = t(894079),
                 R = t.n(A),
                 E = t(269268),
                 V = t.n(E),
-                G = t(295818),
-                Z = t.n(G),
-                j = t(66816),
-                N = t.n(j),
-                C = t(580116),
-                U = t.n(C),
+                j = t(295818),
+                G = t.n(j),
+                Z = t(66816),
+                C = t.n(Z),
+                N = t(580116),
+                U = t.n(N),
                 D = t(251454),
                 M = t.n(D),
                 q = t(197050),
@@ -328,11 +328,11 @@
                 x = t(184429),
                 z = t.n(x),
                 B = t(772248),
-                H = t.n(B),
-                W = t(776998),
-                X = t.n(W),
-                J = t(706236),
-                $ = t.n(J),
+                J = t.n(B),
+                X = t(776998),
+                H = t.n(X),
+                W = t(706236),
+                $ = t.n(W),
                 ee = t(890596),
                 ne = t.n(ee),
                 te = t(153791),
@@ -362,11 +362,11 @@
                     const n = e?.list;
                     return !n;
                 }, "GQL List: Failed to add member"),
-                pe = (0, r.kj)((e) => {
+                ge = (0, r.kj)((e) => {
                     const n = e?.list;
                     return !n;
                 }, "GQL List: Failed to remove member"),
-                ge = (0, r.kj)((e) => {
+                pe = (0, r.kj)((e) => {
                     const n = e?.list;
                     return !n;
                 }, "GQL List: Failed to fetch list by id"),
@@ -401,7 +401,7 @@
                     },
                     editBannerImage(t, i) {
                         const { listId: r, mediaId: d } = t;
-                        return e.graphQL(g(), { listId: r, mediaId: d, ...(0, a.S)(n) }).then((e) => (0, l.Fv)(e.list, s.Z));
+                        return e.graphQL(p(), { listId: r, mediaId: d, ...(0, a.S)(n) }).then((e) => (0, l.Fv)(e.list, s.Z));
                     },
                     deleteList(n, t) {
                         const { list_id: l } = n;
@@ -412,7 +412,7 @@
                         return e.graphQL(_(), { listId: r, ...(0, a.S)(n) }).then((e) => (0, l.Fv)(e.list, s.Z));
                     },
                     fetchList(t, i) {
-                        if (t.list_id) return e.graphQL(N(), { listId: t.list_id, ...(0, a.S)(n) }, ge).then((e) => (0, l.Fv)(e.list, s.Z));
+                        if (t.list_id) return e.graphQL(C(), { listId: t.list_id, ...(0, a.S)(n) }, pe).then((e) => (0, l.Fv)(e.list, s.Z));
                         if (t.slug) {
                             const { owner_screen_name: i, slug: r } = t;
                             return e.graphQL(k(), { screenName: i, listSlug: r, ...(0, a.S)(n) }, ye).then((e) => (0, l.Fv)({ ...e.user_by_screen_name?.list, slug: r }, s.Z));
@@ -436,7 +436,7 @@
                     },
                     fetchMembersGraphQL(t, l) {
                         const { count: i, cursor: r, listId: s } = t;
-                        return e.graphQL(K(), { listId: s, count: i, cursor: r, ...(0, a.d)(n) }, Le).then((e) => {
+                        return e.graphQL(S(), { listId: s, count: i, cursor: r, ...(0, a.d)(n) }, Le).then((e) => {
                             const n = e.list.members_timeline?.timeline;
                             return n || le.cY;
                         });
@@ -452,7 +452,7 @@
                     },
                     fetchSubscribersGraphQL(t, l) {
                         const { count: i, cursor: r, listId: s } = t;
-                        return e.graphQL(H(), { listId: s, count: i, cursor: r, ...(0, a.d)(n) }, be).then((e) => {
+                        return e.graphQL(J(), { listId: s, count: i, cursor: r, ...(0, a.d)(n) }, be).then((e) => {
                             const n = e.list.subscribers_timeline?.timeline;
                             return n || le.cY;
                         });
@@ -460,7 +460,7 @@
                     fetchSuggestedLists: ({ count: t, cursor: l }) => e.graphQL(P(), { count: t, cursor: l, ...(0, a.d)(n) }, ue).then((e) => e.list_discovery_list_mixer_timeline?.timeline || le.cY),
                     fetchOwnershipsGraphQL(t, l) {
                         const { count: i, cursor: r, targetUserId: s, userId: d } = t;
-                        return e.graphQL(Z(), { userId: d, isListMemberTargetUserId: s, count: i, cursor: r, ...(0, a.d)(n) }, de).then(ie.k7);
+                        return e.graphQL(G(), { userId: d, isListMemberTargetUserId: s, count: i, cursor: r, ...(0, a.d)(n) }, de).then(ie.k7);
                     },
                     fetchMemberships: (t, i) => e.get("lists/memberships", { ...se(n), ...t }, i || {}).then((e) => (0, l.Fv)(e, te.kD)),
                     fetchMembershipsGraphQL(t, l) {
@@ -469,7 +469,7 @@
                     },
                     removeFromList(t, i) {
                         const { list_id: r, user_id: d } = t;
-                        return e.graphQL(M(), { listId: r, userId: d, ...(0, a.S)(n) }, pe).then((e) => (0, l.Fv)(e.list, s.Z));
+                        return e.graphQL(M(), { listId: r, userId: d, ...(0, a.S)(n) }, ge).then((e) => (0, l.Fv)(e.list, s.Z));
                     },
                     createSubscribers(t, i) {
                         const { list_id: r } = t;
@@ -481,7 +481,7 @@
                     },
                     toggleMute(n, t) {
                         const { listId: l, mute: i } = n;
-                        return i ? e.graphQL(V(), { listId: l }) : e.graphQL(X(), { listId: l });
+                        return i ? e.graphQL(V(), { listId: l }) : e.graphQL(H(), { listId: l });
                     },
                     editList(t, i) {
                         const { description: r, list_id: d, mode: u, name: o } = t;
@@ -545,4 +545,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-a2dee9c7.a6f9422a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-a2dee9c7.94fef2aa.js.map

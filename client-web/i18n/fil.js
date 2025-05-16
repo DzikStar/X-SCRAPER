@@ -483,6 +483,7 @@
                 i("cb165528", "Mga feature at setting sa balita"),
                 i("f8645654", "Seguridad at access sa account"),
                 i("j95edf76", "Seguridad"),
+                i("fd127276", "Pamahalaan ang mga passkey"),
                 i("afe4a358", "Beripikasyon ng ID"),
                 i("dd703318", "Two-factor authentication"),
                 i("b1686800", "Pamahalaan ang mga panseguridad na key"),
@@ -900,9 +901,9 @@
                 i("e126dd3f", "Matuto pa"),
                 i("i821844f", "Matuto pa"),
                 i("b0abbb17", "Matuto pa"),
-                i("e7e0d88b", "Matuto pa"),
-                i("i560665f", "Matuto pa");
-            i("f6e774d9", "Matuto pa"),
+                i("e7e0d88b", "Matuto pa");
+            i("i560665f", "Matuto pa"),
+                i("f6e774d9", "Matuto pa"),
                 i("h486f755", "Matuto pa"),
                 i("bab41dab", "Matuto pa"),
                 i("e0ebdb29", "Matuto pa"),
@@ -1021,12 +1022,18 @@
                 i("gfaf9a4a", "Protektadong pag-reset ng password"),
                 i("h3cc8462", "Para sa dagdag na proteksyon, kakailanganin mong kumpirmahin ang email address o numero ng telepono mo bago ma-reset ang password mo sa X."),
                 i("b4bbdeb4", "Passkey"),
-                i("aeb7dcdc", "I-enable ang Mga Passkey para sa karagdagang proteksyon na posibleng kasama sa biometrics mo."),
+                i("fe8aeb88", "Nagbibigay ang mga passkey ng karagdagang proteksyon na posibleng nauugnay sa biometrics mo."),
                 i("dc096238", "Mag-upload ng naaprubahang form ng pagkakakilanlan para kumpirmahin ang authenticity ng account mo. Gagamitin lang ang impormasyon mo para i-validate ang pagkakakilanlan mo at pangangasiwaan nang ligtas at secure."),
                 i("a999cb72", "I-save ang mga pagbabago sa account"),
                 i("dec3c9b8", "Password"),
                 i("b929aa74", "Ilagay ulit ang password mo sa X para i-save ang mga pagbabago sa account mo."),
                 i("d1091f50", "Nakalimutan ang password?"),
+                i("fd23fe4a", "Here are your passkeys across all your devices"),
+                i("d9921a6c", "Create a new passkey"),
+                i("i4855730", "I-delete ang passkey"),
+                i("a6acdc67", function (a) {
+                    return "Date added: " + a.date;
+                }),
                 i("d97c07be", "Pamahalaan ang Creator Subscriptions"),
                 i("efa291da", "Tingnan at pamahalaan ang mga subscription mo sa mga creator na nasa ibaba gamit ang Stripe. Puwedeng pamahalaan sa app ang anumang active na subscription na ginawa mo sa iOS o Android."),
                 i("j7f5c6aa", "Wala ka pang kahit anong Subscription"),
@@ -1910,13 +1917,13 @@
                 i("d8047cc8", "I-publish"),
                 i("ff7ddca2", "Makikita bilang isang post ang Article mo kapag nag-publish ka na. Makikita rin ito sa ilalim ng tab na Articles sa profile mo."),
                 i("ef34d7be", "Hindi na mae-edit ang mga kontrol sa Audience at reply pagkatapos ma-publish ang isang article"),
-                i("e52d4998", "Piliin ang audience mo"),
-                i("d7985b24", "Piliin kung sino ang puwedeng mag-reply sa Article na ito"),
+                i("e52d4998", "Piliin ang audience mo");
+            i("d7985b24", "Piliin kung sino ang puwedeng mag-reply sa Article na ito"),
                 i("b5660338", "Preview ng timeline"),
                 i("hff1b97a", "Mga Subscriber lang ang puwedeng mag-reply."),
                 i("a330771e", "Kopyahin ang link sa clipboard mo"),
-                i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito.");
-            i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
+                i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito."),
+                i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
                 i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
                 i("ca15dd4e", "Draft"),
                 i("bb40bf66", "Na-publish"),
@@ -2823,13 +2830,13 @@
                     return "Naka-schedule na magbago ang subscription tier mo na maging " + a.tierName + " mula sa susunod na billing cycle sa " + a.date;
                 }),
                 i("a991d9a3", function (a) {
-                    return "Next billing cycle starts on " + a.date;
+                    return "Magsisimula ang susunod mong billing cycle sa " + a.date;
                 }),
                 i("edbb700f", function (a) {
                     return "Magsisimula sa susunod mong billing cycle sa " + a.date;
                 }),
                 i("e3f9d219", function (a) {
-                    return "Subscription ends on " + a.date;
+                    return "Matatapos ang subscription sa " + a.date;
                 }),
                 i("e9884540", "Active na diskuwento"),
                 i("bfb879aa", "Nakabinbing diskuwento"),
@@ -2966,27 +2973,23 @@
                 i("b7388a56", "Footer"),
                 i("hdabc3fc", "Mga Tuntunin ng Serbisyo"),
                 i("bc6efc72", "Patakaran sa Pagkapribado"),
-                i("h3161192", "Patakaran sa Cookie"),
-                i("a7de64de", "Info sa ads"),
+                i("h3161192", "Patakaran sa Cookie");
+            i("a7de64de", "Info sa ads"),
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Mga Career"),
                 i("e0adec82", "Mga Resource ng Brand"),
-                i("df1b7550", "Marketing");
-            i("he258678", "X para sa Negosyo"),
+                i("df1b7550", "Marketing"),
+                i("he258678", "X para sa Negosyo"),
                 i("c6f58084", "Mga developer"),
                 i("d83f18d2", "Direktoryo"),
                 i("hc5aa17c", "Kunin ang X app"),
                 i("j0693948", "Kunin ang Grok app"),
-                i("af781666", "Ano ang palagay ng mga tao?"),
-                i("ad35153e", "beta"),
-                i("a1f414ee", "Share thoughts"),
                 i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
                 i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
                 i("bce3726a", "I-update ang Billing"),
                 i("fce9ecce", "Mga Iminumungkahing Video"),
-                i("da00e00a", "Try the new News"),
-                i("c40666d8", "Subukan ito"),
                 i("j66b95a2", "Mga Detalyadong Balita"),
+                i("ad35153e", "beta"),
                 i("b58d2bd2", "Mga nauugnay na Post"),
                 i("efe6ef9e", "Tingnan ang post"),
                 i("b3d183ce", "Post na may mga reply"),
@@ -3884,11 +3887,11 @@
                 i("ddeb0a3c", "Narito ang Komunidad. Gusto mo ba ang mga miyembro nito? Tingnan ito."),
                 i("e111f531", function (a) {
                     return a.count + " nakatutok";
-                }),
-                i("cbef820f", function (a) {
-                    return "Ni-repost ni " + a.screenName + " ang stream!";
                 });
-            i("e3275464", "Ipadala"),
+            i("cbef820f", function (a) {
+                return "Ni-repost ni " + a.screenName + " ang stream!";
+            }),
+                i("e3275464", "Ipadala"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Mga Co-host"),
                 i("j245c654", "Mga Tagapagsalita"),
@@ -4359,8 +4362,8 @@
                 i("g01599b6", "Tugon 1"),
                 i("e02694e0", "Tugon 2"),
                 i("h6867fcc", "Gusto ko ang tugon na ito"),
-                i("d07488a6", "Kunin ang Android app"),
-                i("d9cfe70c", "I-access ang mga advanced na feature ng Grok"),
+                i("acc4496c", "Try Grok Voice mode"),
+                i("jd36d190", "Access advanced features with Grok Android app"),
                 i("hf9afab0", "I-enable ang DeepSearch para ma-scan ang internet at X, mag-analyze ng impormasyon, at magbigay sa detalyado at malinaw na sagot gamit ang mabilis at makapangyarihang paghahanap."),
                 i("ef3b3f04", 'I-enable ang Mag-isip para magamit ang reasoning model namin. Pinakamahusay ito sa math, science, at coding. Puwede mo ring utusan si Grok na "Mag-isip pa" tungkol sa anumang tanong na nangangailangan pa ng mas malalim na pag-iisip. '),
                 i("b43636b8", "Ipinapakilala ang Grok 3"),
@@ -4922,9 +4925,9 @@
                 i("h0c1f37a", "Tingnan ang Analytics ng Space"),
                 i("e41fffbc", "Ang kabuuang tagal ng panonood ng mga video mo."),
                 i("if2909ba", "Tagal ng Panonood"),
-                i("i0e5bf4c", "Mga video mo"),
-                i("ed99baea", "Maagang Beta Access");
-            i("gf898b70", "Advanced na Paghahanap"),
+                i("i0e5bf4c", "Mga video mo");
+            i("ed99baea", "Maagang Beta Access"),
+                i("gf898b70", "Advanced na Paghahanap"),
                 i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
                 i("a8584698", "ai startup"),
                 i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
@@ -5837,6 +5840,8 @@
                 i("g880d8c0", "Hindi pa available ang data ng status sa enrollment ng user"),
                 i("ab1b3d38", "Hindi pa available ang pag-request ng data ng note"),
                 i("c43fb933", "Kasunduan at Patakaran ng Developer ng X"),
+                i("af781666", "Ano ang palagay ng mga tao?"),
+                i("a1f414ee", "Share thoughts"),
                 i("ed88e742", "Kopyahin ang link sa Paksa"),
                 i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon."),
                 i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan."),
@@ -5886,11 +5891,11 @@
                 }),
                 i("daca8a2c", "Buksan sa Dock"),
                 i("e3aac82a", "Naglo-load ng Broadcast"),
-                i("i0ed3f4e", "Larawan ng kaganapan"),
-                i("cbae35fa", "Iulat ang Broadcast"),
+                i("i0ed3f4e", "Larawan ng kaganapan");
+            i("cbae35fa", "Iulat ang Broadcast"),
                 i("fd12ab58", "Mga post ng Koleksyon"),
-                i("a226497c", "Gumawa ng bagong Komunidad");
-            i("d7346632", "Wala ka pang sinasalihang anumang Komunidad"),
+                i("a226497c", "Gumawa ng bagong Komunidad"),
+                i("d7346632", "Wala ka pang sinasalihang anumang Komunidad"),
                 i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
                 i("hff48914", "Walang mahanap na post sa ngayon."),
                 i("hb52cc4a", "Subukan ulit mamaya."),
@@ -6454,7 +6459,10 @@
                 i("f7d1a8e0", "Android App"),
                 i("aab2fae0", "iOS App"),
                 i("a35d9c9a", "Mga Mapagkukunan"),
+                i("da00e00a", "Subukan ang bagong News"),
+                i("c40666d8", "Subukan ito"),
                 i("ic61c5fc", "Mag-scroll hanggang sa itaas"),
+                i("dd225af8", "Walang nahanap na tao."),
                 i("i6671128", "Mas marami ka nang na-unlock sa X"),
                 i("d5e4d0a6", "Puwede kang sumali sa usapan at mas madaling kumonekta sa iba. Ngayon, puwede mong gawin ang mga sumusunod:"),
                 i("a97bc07e", "Mag-unlock nang mas marami sa X"),
@@ -6681,7 +6689,7 @@
                 i("b2d41138", "Mas malawak ang reach = mas malaki ang kita"),
                 i("defa7f12", "Makakuha ng benepisyo sa Pag-boost ng Reply, na nagbibigay sa iyo ng dagdag na visibility para mabilis na lumago."),
                 i("i3e4955d", "dito"),
-                i("fdc5d06c", "Exit Full Screen"),
+                i("fdc5d06c", "Lumabas sa full screen"),
                 i("cea1c00e", "I-unlock ang kakayahang makipag-ugnayan"),
                 i("f8e6a280", "Kailangang magbayad ng taunang bayarin sa maliit na halaga ang mga bagong account bago ka makapag-post, mag-like, mag-bookmark, at makapag-reply. Layunin nitong bawasan ang mga spam para gawing mas maganda ang karanasan ng lahat. Puwede mo pa ring i-follow ang mga account at i-browse ang X nang libre. "),
                 i("h968efc6", "Kailangang magbayad ng mga bagong account ng maliit na halaga bago ka makapag-post, mag-like, mag-bookmark, at makapag-reply. Layunin nitong bawasan ang mga spam para gawing mas maganda ang karanasan ng lahat. Puwede mo pa ring i-follow ang mga account at i-browse ang X nang libre. "),
@@ -6725,7 +6733,7 @@
                 i("i1801686", "Isa itong invalid na query sa paghahanap. Mangyaring sumubok ng iba."),
                 i("a0b4541c", "Nagkaproblema, pero huwag mag-alala - hindi ikaw ang may kasalanan"),
                 i("d7eebb60", "Pag-set up ng subscription mo"),
-                i("h707b180", "Your subscription update is complete"),
+                i("h707b180", "Tapos na ang pag-update ng subscription mo"),
                 i("a452ab68", "Puwede itong tumagal nang ilang segundo."),
                 i("b3bad3b2", "@premium"),
                 i("accbcc78", "Matagumpay na na-update"),
@@ -6881,14 +6889,14 @@
                 i("b6b5dc94", "Magpa-verify"),
                 i("b06db848", "Maging kapansin-pansin mula sa iba pang nasa platform"),
                 i("e3e3a97c", "Makakuha ng share ng kita mula sa mga post mo"),
-                i("f15bc24e", "Mas mataas na limitasyon ng Grok"),
-                i("c4666e1c", "Higit pang usage ng Grok 3, ang aming pinakabagong model"),
+                i("f15bc24e", "Mas mataas na limitasyon ng Grok");
+            i("c4666e1c", "Higit pang usage ng Grok 3, ang aming pinakabagong model"),
                 i("he74ae7a", "Pinakamatataas na limitasyon ng usage ng Grok"),
                 i("f5732cd4", "At, mas pinalawak na access sa DeepSearch at Mag-isip"),
                 i("e0198956", "Makakuha ng share sa revenue na nakukuha mula sa pakikipag-ugnayan ng mga na-verify na account sa content na pino-post mo sa X."),
                 i("iadf78e2", "I-download ang mga video"),
-                i("ee54c3de", "I-save ang mga video sa mismong device mo");
-            i("ae03594c", "Kaunting pag-boost ng reply"),
+                i("ee54c3de", "I-save ang mga video sa mismong device mo"),
+                i("ae03594c", "Kaunting pag-boost ng reply"),
                 i("e6bb08c0", "Pataasin ang visibilty ng mga reply mo"),
                 i("bf2a6acc", "Malaking Pag-boost ng Reply"),
                 i("c2059276", "I-boost ang mga reply mo."),
@@ -7348,7 +7356,6 @@
                 i("b0c91a92", "Mag-login o mag-signup para makita kung ano ang sinasabi ng mga tao sa X tungkol dito"),
                 i("d7071084", "I-Grok Ito"),
                 i("ee2200f4", "Ang story na ito ay buod ng mga post sa X na ginawa ng grok. Magbabago ang story sa paglipas ng panahon."),
-                i("dd225af8", "Walang nahanap na tao."),
                 i("e1e5d552", "I-edit ang Circle mo"),
                 i("ec13f9cc", "Wala pang kahit sino sa Circle mo—sa ngayon"),
                 i("dab58e32", "Kapag nagdagdag ka ng mga tao, lalabas sila rito."),
@@ -7393,7 +7400,7 @@
                 i("a10aa36c", "Help Center"),
                 i("d0740558", "Help Center"),
                 i("d2d76dca", "Help Center"),
-                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("de8bcdaa", "Breakdown ng mga taong nakakita sa post mo"),
                 i("cfa1ef16", "I-boost"),
                 i("d267afa2", "Wala pang 20"),
                 i("db81cab0", "20-29"),
@@ -7405,21 +7412,19 @@
                 i("fa5be588", "Organic"),
                 i("c65126fe", "Na-boost na"),
                 i("c61c6624", "Promoted"),
-                i("f1196a04", "Boost Analytics"),
-                i("bb66e3fc", "Promote Analytics"),
+                i("f1196a04", "Analytics ng Boost"),
+                i("bb66e3fc", "Analytics ng Promote"),
                 i("g512ddcc", "Organic Analytics"),
-                i("j9256524", "Breakdown of your boost performance"),
-                i("ceeb3016", "Breakdown of your promote performance"),
-                i("bf4558fa", "Breakdown of your organic performance"),
+                i("j9256524", "Breakdown ng boost performance mo"),
+                i("ceeb3016", "Breakdown ng promote performance"),
+                i("bf4558fa", "Breakdown ng organic performance mo"),
                 i("c69069e6", "Dami ng beses na nakita ang post na ito sa X"),
                 i("a0615bac", "Kabuuang dami ng beses na nakipag-interaksyon ang isang user sa isang post. Kabilang dito ang lahat ng pag-click saanman sa post (kabilang ang mga hashtag, link, avatar, username, at pag-expand sa post), mga pag-repost, pag-reply, pag-follow, at pag-like."),
-                i("d8abdaa4", "Mga bagong tagasunod"),
-                i("c72f25a8", "Mga pag-follow na direktang nakuha mula sa post na ito"),
                 i("acc4cf12", "Dami ng mga profile view mula sa post na ito"),
                 i("c7d0d1c4", "Dami ng pag-click sa anumang URL sa post na ito"),
                 i("a4da7724", "Dami ng beses na tiningnan ng mga tao ang mga detalye tungkol sa post na ito"),
                 i("jedd2771", function (a) {
-                    return a.percentage + " from boost";
+                    return a.percentage + " mula sa pag-boost";
                 }),
                 i("g33fd6b1", function (a) {
                     return a.percentage + " mula sa promosyon";
@@ -7428,7 +7433,7 @@
                     return a.percentage + " mula sa mga hindi tagasunod";
                 }),
                 i("h4cbba3e", "< 5%"),
-                i("f4f0094c", "< 5% from boost"),
+                i("f4f0094c", "<5% mula sa pag-boost"),
                 i("h1cdac12", "< 5% mula sa promo"),
                 i("g884b2cc", "< 5% mula sa mga hindi follower"),
                 i("b32334a0", "Mga Naabot na Account"),
@@ -7862,10 +7867,7 @@
                 i("e3dffb4e", "Kopyahin ang email address ng aming suporta sa ibaba at ipadala ang kinakailangang impormasyon sa aming support team para simulan ang proseso ng integration."),
                 i("b4fef99e", "Pagkatapos matanggap ng aming support team ang kahilingan mo, ire-review namin ang impormasyon mo at tutulungan kang i-configure ang integration mo."),
                 i("h37f2d96", "Pakitandaan na hindi lahat ng applicant tracking system ay kasalukuyang sinusuportahan."),
-                i("ce102a20", "Nire-redirect sa Stripe"),
-                i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
-                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
-                i("a62359e6", "Mga Setting ng Beripikadong Organisasyon");
+                i("ce102a20", "Nire-redirect sa Stripe");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7904,7 +7906,10 @@
                     o(a, n)
                 );
             }
-            i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
+            i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
+                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
+                i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
+                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
                 i("i4dccc18", "Billing"),
                 i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
                 i("dac61c3c", "Mga setting ng account"),
@@ -8904,13 +8909,13 @@
                 i("ecda5f9e", "Mapanlinlang"),
                 i("a423473c", "Abiso na Legal na Kinakailangan"),
                 i("b3296688", "Limitado ang Makakakita"),
-                i("ccd32094", "Ngayon"),
-                i("abfcce0d", function (a) {
-                    return a.amountOfTime + " ang nakalipas";
-                }),
+                i("ccd32094", "Ngayon");
+            i("abfcce0d", function (a) {
+                return a.amountOfTime + " ang nakalipas";
+            }),
                 i("ae408b76", "Nag-repost ka"),
-                i("j355f008", "Naka-pin na post");
-            i("habf9678", "Na-pin ng Author"),
+                i("j355f008", "Naka-pin na post"),
+                i("habf9678", "Na-pin ng Author"),
                 i("db0798ed", function (a) {
                     return "Paksang " + a.topicName;
                 }),
@@ -12027,7 +12032,7 @@
                         {
                             key: "bd9265e3",
                             get: function () {
-                                return ["(", "% Fee, Min. ", ")"];
+                                return ["(", "% Bayarin, Min. ", ")"];
                             },
                         },
                         {
@@ -13062,6 +13067,7 @@
                 (c.a735436711 = f({ 1: c("fil").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d", timeSeparator: ":", days: { E: { 1: { sun: "Lin", mon: "Lun", tue: "Mar", wed: "Miy", thu: "Huw", fri: "Biy", sat: "Sab" } } }, months: { M: { 3: { 1: "Ene", 2: "Peb", 3: "Mar", 4: "Abr", 5: "May", 6: "Hun", 7: "Hul", 8: "Ago", 9: "Set", 10: "Okt", 11: "Nob", 12: "Dis" } } } })),
                 (c.b692599586 = f({ 1: c("fil").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d, y", timeSeparator: ":", days: { E: { 1: { sun: "Lin", mon: "Lun", tue: "Mar", wed: "Miy", thu: "Huw", fri: "Biy", sat: "Sab" } } }, months: { M: { 3: { 1: "Ene", 2: "Peb", 3: "Mar", 4: "Abr", 5: "May", 6: "Hun", 7: "Hul", 8: "Ago", 9: "Set", 10: "Okt", 11: "Nob", 12: "Dis" } } } })),
                 (c.a742824879 = f({ 1: c("fil").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d", timeSeparator: ":", months: { M: { 4: { 1: "Enero", 2: "Pebrero", 3: "Marso", 4: "Abril", 5: "Mayo", 6: "Hunyo", 7: "Hulyo", 8: "Agosto", 9: "Setyembre", 10: "Oktubre", 11: "Nobyembre", 12: "Disyembre" } } } })),
+                (c.a1975431811 = f({ 1: c("fil").numberFormatter({ raw: "0" }), 2: c("fil").numberFormatter({ raw: "00" }) }, { pattern: "MMMM d, y 'nang' h:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "Enero", 2: "Pebrero", 3: "Marso", 4: "Abril", 5: "Mayo", 6: "Hunyo", 7: "Hulyo", 8: "Agosto", 9: "Setyembre", 10: "Oktubre", 11: "Nobyembre", 12: "Disyembre" } } }, dayPeriods: { am: "AM", pm: "PM" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (c.a897595038 = f({ 1: c("fil").numberFormatter({ raw: "0" }), 2: c("fil").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Ene", 2: "Peb", 3: "Mar", 4: "Abr", 5: "May", 6: "Hun", 7: "Hul", 8: "Ago", 9: "Set", 10: "Okt", 11: "Nob", 12: "Dis" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (c.b426559242 = f({ 1: c("fil").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d, y", timeSeparator: ":", months: { M: { 4: { 1: "Enero", 2: "Pebrero", 3: "Marso", 4: "Abril", 5: "Mayo", 6: "Hunyo", 7: "Hulyo", 8: "Agosto", 9: "Setyembre", 10: "Oktubre", 11: "Nobyembre", 12: "Disyembre" } } } })),
                 (c.b2077920011 = f({ 1: c("fil").numberFormatter({ raw: "0" }), 2: c("fil").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Ene", 2: "Peb", 3: "Mar", 4: "Abr", 5: "May", 6: "Hun", 7: "Hul", 8: "Ago", 9: "Set", 10: "Okt", 11: "Nob", 12: "Dis" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
@@ -13083,6 +13089,7 @@
                 (c.b1744613378 = y(c("fil").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (c.b264741017 = y(c("fil").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (c.b1737225210 = y(c("fil").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (c.b1568253108 = y(c("fil").dateToPartsFormatter({ datetime: "long" }))),
                 (c.a1276308789 = y(c("fil").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (c.a1763225151 = y(c("fil").dateToPartsFormatter({ date: "long" }))),
                 (c.b1650061442 = y(c("fil").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13148,6 +13155,7 @@
                 i("c0bdd345", c.b672715804),
                 i("aa2aa1a1", c.b264741017),
                 i("da44942d", c.b1737225210),
+                i("a54d3ef5", c.b1568253108),
                 i("bfbc051d", c.a1276308789),
                 i("ba2e82a1", c.a1763225151),
                 i("fc209bb7", c.b1650061442),
@@ -13238,4 +13246,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b891e4aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.d596469a.js.map

@@ -483,6 +483,7 @@
                 t("cb165528", "Nyhedsfunktioner og indstillinger"),
                 t("f8645654", "Sikkerhed og kontoadgang"),
                 t("j95edf76", "Sikkerhed"),
+                t("fd127276", "Administrer adgangskoder"),
                 t("afe4a358", "Id-verifikation"),
                 t("dd703318", "Godkendelse med to faktorer"),
                 t("b1686800", "Administrer sikkerhedsnøgler"),
@@ -900,9 +901,9 @@
                 t("e126dd3f", "Learn more"),
                 t("i821844f", "Learn more"),
                 t("b0abbb17", "Learn more"),
-                t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more");
-            t("f6e774d9", "Learn more"),
+                t("e7e0d88b", "Learn more");
+            t("i560665f", "Learn more"),
+                t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
                 t("e0ebdb29", "Lær mere"),
@@ -1021,12 +1022,18 @@
                 t("gfaf9a4a", "Beskyt nulstil adgangskode"),
                 t("h3cc8462", "Som en ekstra beskyttelse skal du bekræfte din e-mailadresse eller dit telefonnummer for at nulstille din X-adgangskode."),
                 t("b4bbdeb4", "Adgangskode"),
-                t("aeb7dcdc", "Aktivér adgangskoder for ekstra beskyttelse, der kan være knyttet til din biometri."),
+                t("fe8aeb88", "Adgangskoder giver ekstra beskyttelse, som kan være knyttet til dine biometriske data."),
                 t("dc096238", "Upload en godkendt form for identifikation for at bekræfte ægtheden af din konto. Dine oplysninger vil kun blive brugt til at bekræfte din identitet og vil blive håndteret sikkert og trygt."),
                 t("a999cb72", "Gem kontoændringer"),
                 t("dec3c9b8", "Adgangskode"),
                 t("b929aa74", "Indtast din X-adgangskode igen for at gemme ændringerne i din konto."),
                 t("d1091f50", "Glemt adgangskode?"),
+                t("fd23fe4a", "Here are your passkeys across all your devices"),
+                t("d9921a6c", "Create a new passkey"),
+                t("i4855730", "Slet adgangskoder"),
+                t("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 t("d97c07be", "Administrer skaber-abonnementer"),
                 t("efa291da", "Få vist og administrer dine abonnementer på skabere nedenfor ved hjælp af Stripe. Alle aktive abonnementer, du har påbegyndt på iOS eller Android, kan administreres i appen."),
                 t("j7f5c6aa", "Du har ingen abonnementer endnu"),
@@ -1910,13 +1917,13 @@
                 t("d8047cc8", "Udgiv"),
                 t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
                 t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
-                t("e52d4998", "Vælg din målgruppe"),
-                t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
+                t("e52d4998", "Vælg din målgruppe");
+            t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
                 t("b5660338", "Forhåndsvisning af tidslinje"),
                 t("hff1b97a", "Kun abonnenter kan svare."),
                 t("a330771e", "Kopier linket til din udklipsholder"),
-                t("b6510e68", "Kopier din Artikels URL-adresse, så du kan dele den.");
-            t("e4a6e006", "Noget gik galt. Prøv igen."),
+                t("b6510e68", "Kopier din Artikels URL-adresse, så du kan dele den."),
+                t("e4a6e006", "Noget gik galt. Prøv igen."),
                 t("eff483e0", "Når du har udgivet Artiklen, får du et link til at dele den."),
                 t("ca15dd4e", "Udkast"),
                 t("bb40bf66", "Udgivet"),
@@ -2966,27 +2973,23 @@
                 t("b7388a56", "Sidefod"),
                 t("hdabc3fc", "Vilkår for anvendelse"),
                 t("bc6efc72", "Privatlivspolitik"),
-                t("h3161192", "Cookiepolitik"),
-                t("a7de64de", "Annonceinfo"),
+                t("h3161192", "Cookiepolitik");
+            t("a7de64de", "Annonceinfo"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Karrierer"),
                 t("e0adec82", "Brandressourcer"),
-                t("df1b7550", "Marketing");
-            t("he258678", "X til virksomheder"),
+                t("df1b7550", "Marketing"),
+                t("he258678", "X til virksomheder"),
                 t("c6f58084", "Udviklere"),
                 t("d83f18d2", "Oversigt"),
                 t("hc5aa17c", "Hent X-appen"),
                 t("j0693948", "Hent Grok-appen"),
-                t("af781666", "Hvad synes folk?"),
-                t("ad35153e", "beta"),
-                t("a1f414ee", "Share thoughts"),
                 t("fbf83158", "Advarsel: Betalingen mislykkedes"),
                 t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele."),
                 t("bce3726a", "Opdater fakturering"),
                 t("fce9ecce", "Foreslåede videoer"),
-                t("da00e00a", "Prøv de nye nyheder"),
-                t("c40666d8", "Prøv det"),
                 t("j66b95a2", "Dybdegående nyheder "),
+                t("ad35153e", "beta"),
                 t("b58d2bd2", "Relevante posts"),
                 t("efe6ef9e", "Vis post"),
                 t("b3d183ce", "Post med svar"),
@@ -3884,11 +3887,11 @@
                 t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig."),
                 t("e111f531", function (e) {
                     return e.count + " følger med";
-                }),
-                t("cbef820f", function (e) {
-                    return e.screenName + " repostede streamingen!";
                 });
-            t("e3275464", "Send"),
+            t("cbef820f", function (e) {
+                return e.screenName + " repostede streamingen!";
+            }),
+                t("e3275464", "Send"),
                 t("cededf2a", "Vært"),
                 t("i2caef48", "Medværter"),
                 t("j245c654", "Talere"),
@@ -4359,8 +4362,8 @@
                 t("g01599b6", "Svar 1"),
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrækker dette svar"),
-                t("d07488a6", "Hent Android-appen"),
-                t("d9cfe70c", "Få adgang til avancerede Grok-funktioner"),
+                t("acc4496c", "Try Grok Voice mode"),
+                t("jd36d190", "Access advanced features with Grok Android app"),
                 t("hf9afab0", "Gør det muligt for DeepSearch at scanne internettet og X, analysere oplysninger og levere detaljerede, velbegrundede svar med hurtig, agentbaseret søgning."),
                 t("ef3b3f04", 'Gør det muligt for Tænk at bruge vores ræsonneringsmodel. Det er bedst til matematik, videnskab og kodning. Du kan også bede Grok om at "tænke dybere" i forbindelse med spørgsmål, der kræver lidt mere hjernekraft. '),
                 t("b43636b8", "Vi introducerer Grok 3"),
@@ -4922,9 +4925,9 @@
                 t("h0c1f37a", "Se rumanalysen"),
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
                 t("if2909ba", "Visningstid"),
-                t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig beta-adgang");
-            t("gf898b70", "Avanceret søgning"),
+                t("i0e5bf4c", "Dine videoer");
+            t("ed99baea", "Tidlig beta-adgang"),
+                t("gf898b70", "Avanceret søgning"),
                 t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
@@ -5837,6 +5840,8 @@
                 t("g880d8c0", "Statusdata for brugertilmelding er endnu ikke tilgængelige"),
                 t("ab1b3d38", "Data om notatanmodning er ikke tilgængelige endnu"),
                 t("c43fb933", "X's udvikleraftale og -politik"),
+                t("af781666", "Hvad synes folk?"),
+                t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Kopiér link til emne"),
                 t("h92fe1be", "Notater i Fællesskaber er desværre ikke tilgængelig for dig i øjeblikket."),
                 t("f0dc1434", "Fællesskabsnoter er i øjeblikket kun tilgængeligt i USA."),
@@ -5886,11 +5891,11 @@
                 }),
                 t("daca8a2c", "Åbn i Dock"),
                 t("e3aac82a", "Indlæser udsendelse"),
-                t("i0ed3f4e", "Begivenhedsbillede"),
-                t("cbae35fa", "Indberet udsendelse"),
+                t("i0ed3f4e", "Begivenhedsbillede");
+            t("cbae35fa", "Indberet udsendelse"),
                 t("fd12ab58", "Samlings-posts"),
-                t("a226497c", "Opret et nyt Fællesskab");
-            t("d7346632", "Du har ikke deltaget i nogen Fællesskaber endnu"),
+                t("a226497c", "Opret et nyt Fællesskab"),
+                t("d7346632", "Du har ikke deltaget i nogen Fællesskaber endnu"),
                 t("b732a4cc", "Når du har, vises deres posts her."),
                 t("hff48914", "Ingen posts blev fundet på dette tidspunkt."),
                 t("hb52cc4a", "Prøv igen senere."),
@@ -6454,7 +6459,10 @@
                 t("f7d1a8e0", "Android-app"),
                 t("aab2fae0", "iOS-app"),
                 t("a35d9c9a", "Ressourcer"),
+                t("da00e00a", "Prøv de nye nyheder"),
+                t("c40666d8", "Prøv det"),
                 t("ic61c5fc", "Rul til toppen"),
+                t("dd225af8", "Ingen personer fundet."),
                 t("i6671128", "Du har låst op for mere på X"),
                 t("d5e4d0a6", "Du kan deltage i samtalen og nemmere komme i kontakt med andre. Nu kan du gøre følgende:"),
                 t("a97bc07e", "Lås op for mere på X"),
@@ -6881,14 +6889,14 @@
                 t("b6b5dc94", "Bliv verificeret"),
                 t("b06db848", "Skil dig ud fra andre på platformen"),
                 t("e3e3a97c", "Tjen en del af indtægterne fra dine opslag"),
-                t("f15bc24e", "Højere grænser i Grok"),
-                t("c4666e1c", "Brug mere af Grok 3, vores nyeste model"),
+                t("f15bc24e", "Højere grænser i Grok");
+            t("c4666e1c", "Brug mere af Grok 3, vores nyeste model"),
                 t("he74ae7a", "Højeste brugergrænse for Grok"),
                 t("f5732cd4", "Plus udvidet adgang til DeepSearch & Think"),
                 t("e0198956", "Få en andel af den indtægt, der genereres af verificerede kontis interaktioner med indhold, du poster på X."),
                 t("iadf78e2", "Download videoer"),
-                t("ee54c3de", "Gem videoer direkte på din enhed");
-            t("ae03594c", "Lille svar-boost"),
+                t("ee54c3de", "Gem videoer direkte på din enhed"),
+                t("ae03594c", "Lille svar-boost"),
                 t("e6bb08c0", "Forøg synligheden af dine svar"),
                 t("bf2a6acc", "Stort svar-boost"),
                 t("c2059276", "Få dine svar boostet."),
@@ -7348,7 +7356,6 @@
                 t("b0c91a92", "Log ind eller tilmeld dig for at se, hvad folk på X siger om dette"),
                 t("d7071084", "Grok dette"),
                 t("ee2200f4", "Denne historie er et sammendrag af posts på X lavet af Grok. Historien udvikler sig med tiden."),
-                t("dd225af8", "Ingen personer fundet."),
                 t("e1e5d552", "Rediger din cirkel"),
                 t("ec13f9cc", "Der er ikke nogen i din cirkel – endnu"),
                 t("dab58e32", "Når du tilføjer personer, bliver de vist her."),
@@ -7413,8 +7420,6 @@
                 t("bf4558fa", "Opdeling af dine organiske resultater"),
                 t("c69069e6", "Antal gange denne post blev set på X"),
                 t("a0615bac", "Samlet antal gange en bruger har interageret med en post. Dette inkluderer alle klik overalt på posten (inklusive hashtags, links, profilbillede, brugernavn og post-udvidelse), reposts, svar, følg og likes."),
-                t("d8abdaa4", "Nye følgere"),
-                t("c72f25a8", "Følgere du har fået direkte fra denne post"),
                 t("acc4cf12", "Antal profilvisninger fra denne post"),
                 t("c7d0d1c4", "Antal klik på en URL i denne post"),
                 t("a4da7724", "Antal gange folk har set detaljer om denne post"),
@@ -7862,10 +7867,7 @@
                 t("e3dffb4e", "Kopiér vores support-e-mailadresse nedenfor, og send de nødvendige oplysninger til vores supportteam for at starte integrationsprocessen."),
                 t("b4fef99e", "Når vores supportteam har modtaget din anmodning, gennemgår vi dine oplysninger og hjælper dig med at konfigurere din integration."),
                 t("h37f2d96", "Bemærk, at ikke alle ansøgersporingssystemer understøttes i øjeblikket."),
-                t("ce102a20", "Omdirigering til Stripe"),
-                t("ddfd6718", "Betalingen mislykkedes"),
-                t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
-                t("a62359e6", "Indstillinger for verificeret organisation");
+                t("ce102a20", "Omdirigering til Stripe");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7904,7 +7906,10 @@
                     a(e, r)
                 );
             }
-            t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
+            t("ddfd6718", "Betalingen mislykkedes"),
+                t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
+                t("a62359e6", "Indstillinger for verificeret organisation"),
+                t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer din betalingsmetode, opdater faktureringsoplysninger, og gennemgå dine fakturaer."),
                 t("dac61c3c", "Kontoindstillinger"),
@@ -8904,13 +8909,13 @@
                 t("ecda5f9e", "Vildledende"),
                 t("a423473c", "Lovpligtig meddelelse"),
                 t("b3296688", "Synlighed begrænset"),
-                t("ccd32094", "Nu"),
-                t("abfcce0d", function (e) {
-                    return e.amountOfTime + " siden";
-                }),
+                t("ccd32094", "Nu");
+            t("abfcce0d", function (e) {
+                return e.amountOfTime + " siden";
+            }),
                 t("ae408b76", "Du repostede"),
-                t("j355f008", "Fastgjort post");
-            t("habf9678", "Fastgjort af forfatter"),
+                t("j355f008", "Fastgjort post"),
+                t("habf9678", "Fastgjort af forfatter"),
                 t("db0798ed", function (e) {
                     return e.topicName + " Emne";
                 }),
@@ -13052,6 +13057,7 @@
                 (k.a1748099745 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
                 (k.a635183396 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "E d. MMM y", timeSeparator: ".", days: { E: { 1: { sun: "søn.", mon: "man.", tue: "tir.", wed: "ons.", thu: "tor.", fri: "fre.", sat: "lør." } } }, months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } } })),
                 (k.a1755487913 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
+                (k.b1732679607 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMMM y 'kl'. HH.mm.ss z", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H.mm;-H.mm"] })),
                 (k.b890805480 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM y h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (k.a237748668 = v({ 1: k("da").numberFormatter({ raw: "0" }) }, { pattern: "d. MMMM y", timeSeparator: ".", months: { M: { 4: { 1: "januar", 2: "februar", 3: "marts", 4: "april", 5: "maj", 6: "juni", 7: "juli", 8: "august", 9: "september", 10: "oktober", 11: "november", 12: "december" } } } })),
                 (k.b750137029 = v({ 1: k("da").numberFormatter({ raw: "0" }), 2: k("da").numberFormatter({ raw: "00" }) }, { pattern: "d. MMM h.mm a", timeSeparator: ".", months: { M: { 3: { 1: "jan.", 2: "feb.", 3: "mar.", 4: "apr.", 5: "maj", 6: "jun.", 7: "jul.", 8: "aug.", 9: "sep.", 10: "okt.", 11: "nov.", 12: "dec." } } }, dayPeriods: { am: "AM", pm: "PM" } })),
@@ -13073,6 +13079,7 @@
                 (k.b1795585174 = p(k("da").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (k.b1844866693 = p(k("da").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (k.b1788197006 = p(k("da").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (k.b2124086688 = p(k("da").dateToPartsFormatter({ datetime: "long" }))),
                 (k.b462946911 = p(k("da").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (k.a1139670867 = p(k("da").dateToPartsFormatter({ date: "long" }))),
                 (k.a1064780178 = p(k("da").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13138,6 +13145,7 @@
                 t("c0bdd345", k.b305924294),
                 t("aa2aa1a1", k.b1844866693),
                 t("da44942d", k.b1788197006),
+                t("a54d3ef5", k.b2124086688),
                 t("bfbc051d", k.b462946911),
                 t("ba2e82a1", k.a1139670867),
                 t("fc209bb7", k.a1064780178),
@@ -13228,4 +13236,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.c819151a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.661d162a.js.map

@@ -2,7 +2,7 @@
     ["bundle.Notifications"],
     {
         715551: (e) => {
-            e.exports = { queryId: "Qy8_ImiG2JwwvzQud46m6Q", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "oZ1pEBVKoMwg5XJlgDk31A", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         233935: (e, d, a) => {
             "use strict";
@@ -36,7 +36,7 @@
         },
         817682: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => C });
+            a.d(d, { Z: () => I });
             var o = a(202784),
                 n = a(325686),
                 r = a(688715),
@@ -60,11 +60,11 @@
                 g = c().h8dde772,
                 _ = c().i859a9d4,
                 v = (0, r.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
-                B = () => o.createElement(o.Fragment, null, o.createElement(l.ZP, null, m), o.createElement(n.Z, { style: I.details }, o.createElement(u.default, { style: I.icon }), o.createElement(n.Z, null, o.createElement(l.ZP, { style: I.title }, S), o.createElement(l.ZP, null, A)), o.createElement(b.default, { style: I.icon }), o.createElement(n.Z, null, o.createElement(l.ZP, { style: I.title }, w), o.createElement(l.ZP, null, y)), o.createElement(p.default, { style: I.icon }), o.createElement(n.Z, null, o.createElement(l.ZP, { style: I.title }, M), o.createElement(l.ZP, null, f)))),
-                k = () => o.createElement(n.Z, { style: I.footerContainer }, o.createElement(l.ZP, { align: "center" }, g, " ", o.createElement(l.ZP, { color: "text", link: v, style: I.footerLearnMoreLink, withUnderline: !0 }, _))),
-                P = () => o.createElement(l.ZP, { style: I.headline }, D),
-                I = t.default.create((e) => ({ details: { display: "grid", gridTemplateColumns: "auto auto", gridColumnGap: e.spaces.space24, gridRowGap: e.spaces.space24, paddingTop: e.spaces.space32 }, footerContainer: { display: "flex", alignItems: "center" }, footerLearnMoreLink: { whiteSpace: "nowrap" }, headline: { fontSize: e.fontSizes.title2 }, icon: { color: e.colors.text, width: e.spaces.space24, height: e.spacesPx.space24 }, image: { width: "100%" }, title: { color: e.colors.text, fontSize: e.fontSizes.headline2, fontWeight: e.fontWeights.medium, paddingBottom: e.spaces.space4 } })),
-                C = (e) => {
+                B = () => o.createElement(o.Fragment, null, o.createElement(l.ZP, null, m), o.createElement(n.Z, { style: C.details }, o.createElement(u.default, { style: C.icon }), o.createElement(n.Z, null, o.createElement(l.ZP, { style: C.title }, S), o.createElement(l.ZP, null, A)), o.createElement(b.default, { style: C.icon }), o.createElement(n.Z, null, o.createElement(l.ZP, { style: C.title }, w), o.createElement(l.ZP, null, y)), o.createElement(p.default, { style: C.icon }), o.createElement(n.Z, null, o.createElement(l.ZP, { style: C.title }, M), o.createElement(l.ZP, null, f)))),
+                k = () => o.createElement(n.Z, { style: C.footerContainer }, o.createElement(l.ZP, { align: "center" }, g, " ", o.createElement(l.ZP, { color: "text", link: v, style: C.footerLearnMoreLink, withUnderline: !0 }, _))),
+                P = () => o.createElement(l.ZP, { style: C.headline }, D),
+                C = t.default.create((e) => ({ details: { display: "grid", gridTemplateColumns: "auto auto", gridColumnGap: e.spaces.space24, gridRowGap: e.spaces.space24, paddingTop: e.spaces.space32 }, footerContainer: { display: "flex", alignItems: "center" }, footerLearnMoreLink: { whiteSpace: "nowrap" }, headline: { fontSize: e.fontSizes.title2 }, icon: { color: e.colors.text, width: e.spaces.space24, height: e.spacesPx.space24 }, image: { width: "100%" }, title: { color: e.colors.text, fontSize: e.fontSizes.headline2, fontWeight: e.fontWeights.medium, paddingBottom: e.spaces.space4 } })),
+                I = (e) => {
                     const { actionLabel: d, onAction: a, onClose: n, onSecondaryAction: r, secondaryActionLabel: l } = e,
                         t = (0, h.z)();
                     o.useEffect(() => {
@@ -429,29 +429,33 @@
                 B = i().f8321d82,
                 k = i().cdb53d7a,
                 P = i().h3290872,
-                I = i().bc8baa08,
-                C = i().a98ba778,
+                C = i().bc8baa08,
+                I = i().a98ba778,
                 T = o.createElement(t.Z, { pullRight: !0, to: "/settings/notifications" }),
                 E = i().eb75875e,
                 Z = (0, S.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.8"),
-                                a.e("icons.21"),
-                                a.e("icons.13"),
+                                a.e("icons.5"),
+                                a.e("icons.6"),
+                                a.e("icons.25"),
+                                a.e("icons.22"),
+                                a.e("icons.9"),
+                                a.e("icons.4"),
+                                a.e("icons.15"),
+                                a.e("icons.2"),
                                 a.e("icons.20"),
-                                a.e("icons.14"),
-                                a.e("icons.1"),
-                                a.e("icons.3"),
-                                a.e("icons.24"),
-                                a.e("icons.11"),
+                                a.e("icons.7"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.28"),
-                                a.e("icons.10"),
+                                a.e("icons.0"),
+                                a.e("icons.11"),
+                                a.e("icons.27"),
                                 a.e("icons.17"),
-                                a.e("icons.4"),
+                                a.e("icons.12"),
+                                a.e("icons.3"),
+                                a.e("icons.13"),
                                 a.e("icons.18"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
@@ -463,12 +467,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.12"),
-                                a.e("icons.29"),
-                                a.e("icons.22"),
-                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.10"),
+                                a.e("icons.8"),
                                 a.e("icons.26"),
-                                a.e("icons.0"),
                                 a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
@@ -477,7 +479,6 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -501,7 +502,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -537,7 +538,6 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -561,21 +561,25 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.8"),
-                                a.e("icons.21"),
-                                a.e("icons.13"),
+                                a.e("icons.5"),
+                                a.e("icons.6"),
+                                a.e("icons.25"),
+                                a.e("icons.22"),
+                                a.e("icons.9"),
+                                a.e("icons.4"),
+                                a.e("icons.15"),
+                                a.e("icons.2"),
                                 a.e("icons.20"),
-                                a.e("icons.14"),
-                                a.e("icons.1"),
-                                a.e("icons.3"),
-                                a.e("icons.24"),
-                                a.e("icons.11"),
+                                a.e("icons.7"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.28"),
-                                a.e("icons.10"),
+                                a.e("icons.0"),
+                                a.e("icons.11"),
+                                a.e("icons.27"),
                                 a.e("icons.17"),
-                                a.e("icons.4"),
+                                a.e("icons.12"),
+                                a.e("icons.3"),
+                                a.e("icons.13"),
                                 a.e("icons.18"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
@@ -587,12 +591,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.12"),
-                                a.e("icons.29"),
-                                a.e("icons.22"),
-                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.10"),
+                                a.e("icons.8"),
                                 a.e("icons.26"),
-                                a.e("icons.0"),
                                 a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
@@ -601,7 +603,6 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -625,7 +626,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -661,7 +662,6 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -685,21 +685,25 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.8"),
-                                a.e("icons.21"),
-                                a.e("icons.13"),
+                                a.e("icons.5"),
+                                a.e("icons.6"),
+                                a.e("icons.25"),
+                                a.e("icons.22"),
+                                a.e("icons.9"),
+                                a.e("icons.4"),
+                                a.e("icons.15"),
+                                a.e("icons.2"),
                                 a.e("icons.20"),
-                                a.e("icons.14"),
-                                a.e("icons.1"),
-                                a.e("icons.3"),
-                                a.e("icons.24"),
-                                a.e("icons.11"),
+                                a.e("icons.7"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.28"),
-                                a.e("icons.10"),
+                                a.e("icons.0"),
+                                a.e("icons.11"),
+                                a.e("icons.27"),
                                 a.e("icons.17"),
-                                a.e("icons.4"),
+                                a.e("icons.12"),
+                                a.e("icons.3"),
+                                a.e("icons.13"),
                                 a.e("icons.18"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
@@ -711,12 +715,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.12"),
-                                a.e("icons.29"),
-                                a.e("icons.22"),
-                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.10"),
+                                a.e("icons.8"),
                                 a.e("icons.26"),
-                                a.e("icons.0"),
                                 a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
@@ -725,7 +727,6 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -749,7 +750,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -785,7 +786,6 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -809,21 +809,25 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.8"),
-                                a.e("icons.21"),
-                                a.e("icons.13"),
+                                a.e("icons.5"),
+                                a.e("icons.6"),
+                                a.e("icons.25"),
+                                a.e("icons.22"),
+                                a.e("icons.9"),
+                                a.e("icons.4"),
+                                a.e("icons.15"),
+                                a.e("icons.2"),
                                 a.e("icons.20"),
-                                a.e("icons.14"),
-                                a.e("icons.1"),
-                                a.e("icons.3"),
-                                a.e("icons.24"),
-                                a.e("icons.11"),
+                                a.e("icons.7"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.28"),
-                                a.e("icons.10"),
+                                a.e("icons.0"),
+                                a.e("icons.11"),
+                                a.e("icons.27"),
                                 a.e("icons.17"),
-                                a.e("icons.4"),
+                                a.e("icons.12"),
+                                a.e("icons.3"),
+                                a.e("icons.13"),
                                 a.e("icons.18"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
@@ -835,12 +839,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.12"),
-                                a.e("icons.29"),
-                                a.e("icons.22"),
-                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.10"),
+                                a.e("icons.8"),
                                 a.e("icons.26"),
-                                a.e("icons.0"),
                                 a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
@@ -849,7 +851,6 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -873,7 +874,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -909,7 +910,6 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -932,7 +932,7 @@
                 N = { to: _._N, key: B, label: B, retainScrollPosition: !1 },
                 F = { to: _.JV, key: k, label: k, retainScrollPosition: !1 },
                 z = { to: _.JK, key: P, label: P, retainScrollPosition: !1 },
-                H = { to: _.ag, key: I, label: I, retainScrollPosition: !1 },
+                H = { to: _.ag, key: C, label: C, retainScrollPosition: !1 },
                 W = () => o.createElement(A.Z, { to: _._N }),
                 O = (e) => {
                     const { featureSwitches: d } = o.useContext(p.rC),
@@ -945,7 +945,7 @@
                         }, [t]),
                         A = t ? L : W,
                         w = o.createElement(n.Switch, null, o.createElement(n.Route, { component: Z, exact: !0, path: _._N }), o.createElement(n.Route, { component: R, exact: !0, path: _.JV }), o.createElement(n.Route, { component: x, exact: !0, path: _.JK }), o.createElement(n.Route, { component: A, exact: !0, path: _.ag }), o.createElement(n.Route, { component: W, exact: !0, path: _.Im })),
-                        y = o.useMemo(() => o.createElement(b.Z, { alignFirstItem: (0, m.ZP)(), "aria-label": C, links: S }), [S]);
+                        y = o.useMemo(() => o.createElement(b.Z, { alignFirstItem: (0, m.ZP)(), "aria-label": I, links: S }), [S]);
                     return o.createElement(
                         D.Z,
                         null,
@@ -1001,7 +1001,7 @@
                 B = t().j745b8a6,
                 k = ({ onClose: e }) => o.createElement(p.nO, { namespace: { element: "leave_this_conversation_education_sheet" } }, o.createElement(y.Z, { actionLabel: f, onAction: e, onClose: e })),
                 P = u.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
-                I = (e) => {
+                C = (e) => {
                     const { onDismiss: d } = e,
                         [a, r] = o.useState(!1),
                         l = (0, h.z)();
@@ -1058,7 +1058,7 @@
                         ),
                     );
                 };
-            var C = a(443781),
+            var I = a(443781),
                 T = a(652904),
                 E = a(810641),
                 Z = a(900062);
@@ -1090,8 +1090,8 @@
                 q = a(263863);
             const Q = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [z.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
                 K = t().eb75875e,
-                J = t().e9f1fbcc,
-                X = t().j887d006,
+                X = t().e9f1fbcc,
+                J = t().j887d006,
                 Y = t().c06d4306,
                 ee = o.createElement(t().I18NFormatMessage, { $i18n: "d39ad44d" }, o.createElement(n.ZP, { color: "text", link: (0, r.ju)("https://help.x.com/managing-your-account/about-twitter-verified-accounts"), weight: "bold", withUnderline: !0 }, t().e3f9838d)),
                 de = t().ge7c661a,
@@ -1108,12 +1108,12 @@
                                 case N.l.Subscribers:
                                     return ae;
                                 default:
-                                    return X;
+                                    return J;
                             }
                         }),
-                        (this._getEmptyMessageHeader = () => J),
-                        (this._renderTwitterBlueVerifiedEmptyState = () => o.createElement(l.Z, { header: J, imageVariants: x.VerificationCheck, message: ee, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
-                        (this._renderSubscribersEmptyState = () => o.createElement(l.Z, { header: J, message: ae, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
+                        (this._getEmptyMessageHeader = () => X),
+                        (this._renderTwitterBlueVerifiedEmptyState = () => o.createElement(l.Z, { header: X, imageVariants: x.VerificationCheck, message: ee, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
+                        (this._renderSubscribersEmptyState = () => o.createElement(l.Z, { header: X, message: ae, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
                         (this._renderEmptyTimeline = () => {
                             const { notificationsType: e } = this.props;
                             return e === N.l.Verified && this.context.featureSwitches.isTrue("responsive_web_twitter_blue_verified_badge_ntab_empty_state_enabled") ? this._renderTwitterBlueVerifiedEmptyState() : e === N.l.Subscribers ? this._renderSubscribersEmptyState() : o.createElement(l.Z, { header: this._getEmptyMessageHeader(), message: this._getEmptyMessageBody(), onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression });
@@ -1131,7 +1131,7 @@
                         }),
                         (this._renderTimelineHeader = () => {
                             const { addLeaveThisConversationEducationFlag: e, notificationsType: d, shouldShowUnmentionEducation: a, timelineHasTweets: n } = this.props;
-                            return a && d === N.l.Mentions && n && this.context.featureSwitches.isTrue("dont_mention_me_mentions_tab_education_enabled") ? o.createElement(I, { onDismiss: e }) : void 0;
+                            return a && d === N.l.Mentions && n && this.context.featureSwitches.isTrue("dont_mention_me_mentions_tab_education_enabled") ? o.createElement(C, { onDismiss: e }) : void 0;
                         });
                 }
                 componentDidMount() {
@@ -1151,7 +1151,7 @@
                     d && a(e);
                 }
             }
-            oe.contextType = C.rC;
+            oe.contextType = I.rC;
             const ne = (e) =>
                     (0, L.C)(
                         ((e) => {
@@ -1336,8 +1336,8 @@
                         B = _ ? this._getMemoizedLink(_, M) : void 0,
                         k = s ? s(_) : v?.pathname === B?.pathname,
                         P = m.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
-                        I = D ? "medium" : k ? "bold" : "medium";
-                    return n.createElement(S.Z, { "aria-label": d, "aria-selected": k, focusable: !!k, interactiveStyles: P, link: B, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? f.pill : f.link, u && k ? f.active : null, c ? (u ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, g], withoutInteractiveStyles: D || u }, ({ isFocused: d, isHovered: s }) => n.createElement(t.Z, { style: u && f.flexGrow }, n.createElement(p.ZP, { size: D ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(k, s, D, u) }, c && f.compactText, D && d && f.focusedText], weight: I }, e && n.createElement(e, { style: f.icon }), r, D || u ? null : n.createElement(t.Z, { style: k && [f.border, { backgroundColor: i.default.theme.colors[l] }] })), a ? n.createElement(h.Z, { count: a, standalone: !0, style: [f.badge, a >= 10 && f.multiDigitBadge, a >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : o ? n.createElement(h.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                        C = D ? "medium" : k ? "bold" : "medium";
+                    return n.createElement(S.Z, { "aria-label": d, "aria-selected": k, focusable: !!k, interactiveStyles: P, link: B, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? f.pill : f.link, u && k ? f.active : null, c ? (u ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, g], withoutInteractiveStyles: D || u }, ({ isFocused: d, isHovered: s }) => n.createElement(t.Z, { style: u && f.flexGrow }, n.createElement(p.ZP, { size: D ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(k, s, D, u) }, c && f.compactText, D && d && f.focusedText], weight: C }, e && n.createElement(e, { style: f.icon }), r, D || u ? null : n.createElement(t.Z, { style: k && [f.border, { backgroundColor: i.default.theme.colors[l] }] })), a ? n.createElement(h.Z, { count: a, standalone: !0, style: [f.badge, a >= 10 && f.multiDigitBadge, a >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : o ? n.createElement(h.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
             (M.contextType = D.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1381,4 +1381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.e66cd5aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.b19f133a.js.map

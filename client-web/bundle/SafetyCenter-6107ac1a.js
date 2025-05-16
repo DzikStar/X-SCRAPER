@@ -51,8 +51,8 @@
                 c,
                 g,
                 p,
-                m,
                 y,
+                m,
                 k,
                 F,
                 K,
@@ -149,8 +149,8 @@
                                                                                                                 kind: "LinkedField",
                                                                                                                 name: "tweet",
                                                                                                                 plural: !1,
-                                                                                                                selections: (m = [
-                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
+                                                                                                                selections: (y = [
+                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), (c = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
                                                                                                                     {
                                                                                                                         alias: null,
                                                                                                                         args: null,
@@ -175,7 +175,7 @@
                                                                                                         type: "TweetWithVisibilityResults",
                                                                                                         abstractKey: null,
                                                                                                     },
-                                                                                                    { kind: "InlineFragment", selections: m, type: "Tweet", abstractKey: null },
+                                                                                                    { kind: "InlineFragment", selections: y, type: "Tweet", abstractKey: null },
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -219,7 +219,7 @@
                                                                                                                                                 selections: [
                                                                                                                                                     t,
                                                                                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isTimelineReferenceObject" },
-                                                                                                                                                    { kind: "InlineFragment", selections: (k = [(y = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
+                                                                                                                                                    { kind: "InlineFragment", selections: (k = [(m = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: [s, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: k, type: "TimelineRichTextHashtag", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
@@ -269,7 +269,7 @@
                                                                                                                                         storageKey: null,
                                                                                                                                     },
                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "rtl", storageKey: null },
-                                                                                                                                    y,
+                                                                                                                                    m,
                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "alignment", storageKey: null },
                                                                                                                                 ],
                                                                                                                                 storageKey: null,
@@ -322,7 +322,7 @@
                             },
                         ],
                     },
-                    params: { id: "LyXlPAwyc53U9DtuIy2Pxg", metadata: { sliceInfoPath: ["viewer_v2", "user_results", "result", "open_reports", "slice_info"] }, name: "OpenReportItemTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "eXh_-ADQpezeHzVeUr9PRQ", metadata: { sliceInfoPath: ["viewer_v2", "user_results", "result", "open_reports", "slice_info"] }, name: "OpenReportItemTimelineQuery", operationKind: "query", text: null },
                 };
             _.hash = "ac71fc8b4195e8b0282d4771a994c33c";
             const T = _;
@@ -340,8 +340,8 @@
                 c,
                 g,
                 p,
-                m,
                 y,
+                m,
                 k,
                 F,
                 K,
@@ -355,8 +355,8 @@
                 L,
                 x,
                 I,
-                w,
-                v = {
+                v,
+                w = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "reportId" }]),
                         kind: "Fragment",
@@ -397,7 +397,7 @@
                                                                 kind: "LinkedField",
                                                                 name: "report_detail",
                                                                 plural: !1,
-                                                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "actioned_report_type", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "header", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "last_update_time", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "outcome_text", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "remediation", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "report_entities_results", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "ReportEntityList_reportEntityResults" }], storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "report_status", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "report_status_label", storageKey: null }), (p = { alias: null, args: null, kind: "ScalarField", name: "report_status_label_text", storageKey: null }), (m = { alias: null, args: null, kind: "ScalarField", name: "rule_link", storageKey: null }), (y = { alias: null, args: null, kind: "ScalarField", name: "verdict", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "report_flow_id", storageKey: null }), (F = { alias: null, args: null, concreteType: "ProgressStep", kind: "LinkedField", name: "progress_steps", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "progress", storageKey: null }, r, g, p, { alias: null, args: null, kind: "ScalarField", name: "message", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link_text", storageKey: null }], storageKey: null })],
+                                                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "actioned_report_type", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "header", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "last_update_time", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "outcome_text", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "remediation", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "report_entities_results", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "ReportEntityList_reportEntityResults" }], storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "report_status", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "report_status_label", storageKey: null }), (p = { alias: null, args: null, kind: "ScalarField", name: "report_status_label_text", storageKey: null }), (y = { alias: null, args: null, kind: "ScalarField", name: "rule_link", storageKey: null }), (m = { alias: null, args: null, kind: "ScalarField", name: "verdict", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "report_flow_id", storageKey: null }), (F = { alias: null, args: null, concreteType: "ProgressStep", kind: "LinkedField", name: "progress_steps", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "progress", storageKey: null }, r, g, p, { alias: null, args: null, kind: "ScalarField", name: "message", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link_text", storageKey: null }], storageKey: null })],
                                                                 storageKey: null,
                                                             },
                                                         ],
@@ -497,7 +497,7 @@
                                                                                                         name: "tweet",
                                                                                                         plural: !1,
                                                                                                         selections: (R = [
-                                                                                                            { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [K, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, (S = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (f = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, h], storageKey: null }], storageKey: null },
+                                                                                                            { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [K, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), (S = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (f = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, h], storageKey: null }], storageKey: null },
                                                                                                             {
                                                                                                                 alias: null,
                                                                                                                 args: null,
@@ -569,8 +569,8 @@
                                                                                                                                             { kind: "InlineFragment", selections: (x = [(L = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: [h, (I = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: x, type: "TimelineRichTextHashtag", abstractKey: null },
-                                                                                                                                            { kind: "InlineFragment", selections: [(w = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [K, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, h], type: "User", abstractKey: null }], storageKey: null }, h], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
-                                                                                                                                            { kind: "InlineFragment", selections: [w, S], type: "TimelineRichTextMention", abstractKey: null },
+                                                                                                                                            { kind: "InlineFragment", selections: [(v = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [K, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, h], type: "User", abstractKey: null }], storageKey: null }, h], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
+                                                                                                                                            { kind: "InlineFragment", selections: [v, S], type: "TimelineRichTextMention", abstractKey: null },
                                                                                                                                             {
                                                                                                                                                 kind: "InlineFragment",
                                                                                                                                                 selections: [
@@ -647,8 +647,8 @@
                                                                     c,
                                                                     g,
                                                                     p,
-                                                                    m,
                                                                     y,
+                                                                    m,
                                                                     k,
                                                                     F,
                                                                 ],
@@ -671,10 +671,10 @@
                             },
                         ],
                     },
-                    params: { id: "aBO7A9IMjPmr5He3LEBnDQ", metadata: {}, name: "ReportDetailSafetyCenterQuery", operationKind: "query", text: null },
+                    params: { id: "wibDA4i3Ama8tb4s_ZH7Ng", metadata: {}, name: "ReportDetailSafetyCenterQuery", operationKind: "query", text: null },
                 };
-            v.hash = "db9ba7c16af30f3619d259fe3de070f3";
-            const C = v;
+            w.hash = "db9ba7c16af30f3619d259fe3de070f3";
+            const C = w;
         },
         422649: (e, l, n) => {
             n.d(l, { Z: () => i });
@@ -723,8 +723,8 @@
                 c,
                 g,
                 p,
-                m,
                 y,
+                m,
                 k,
                 F,
                 K,
@@ -821,8 +821,8 @@
                                                                                                                 kind: "LinkedField",
                                                                                                                 name: "tweet",
                                                                                                                 plural: !1,
-                                                                                                                selections: (m = [
-                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
+                                                                                                                selections: (y = [
+                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), (c = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
                                                                                                                     {
                                                                                                                         alias: null,
                                                                                                                         args: null,
@@ -847,7 +847,7 @@
                                                                                                         type: "TweetWithVisibilityResults",
                                                                                                         abstractKey: null,
                                                                                                     },
-                                                                                                    { kind: "InlineFragment", selections: m, type: "Tweet", abstractKey: null },
+                                                                                                    { kind: "InlineFragment", selections: y, type: "Tweet", abstractKey: null },
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -891,7 +891,7 @@
                                                                                                                                                 selections: [
                                                                                                                                                     t,
                                                                                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isTimelineReferenceObject" },
-                                                                                                                                                    { kind: "InlineFragment", selections: (k = [(y = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
+                                                                                                                                                    { kind: "InlineFragment", selections: (k = [(m = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: [s, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: k, type: "TimelineRichTextHashtag", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
@@ -941,7 +941,7 @@
                                                                                                                                         storageKey: null,
                                                                                                                                     },
                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "rtl", storageKey: null },
-                                                                                                                                    y,
+                                                                                                                                    m,
                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "alignment", storageKey: null },
                                                                                                                                 ],
                                                                                                                                 storageKey: null,
@@ -994,7 +994,7 @@
                             },
                         ],
                     },
-                    params: { id: "tuj5LujGhTi8KZjt-3lVaA", metadata: { sliceInfoPath: ["viewer_v2", "user_results", "result", "reviewed_reports", "slice_info"] }, name: "ResolvedReportItemTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "o-UwSIqKMli7g3_-CZn5Wg", metadata: { sliceInfoPath: ["viewer_v2", "user_results", "result", "reviewed_reports", "slice_info"] }, name: "ResolvedReportItemTimelineQuery", operationKind: "query", text: null },
                 };
             _.hash = "b587758acca0ac8161a73ffaef583237";
             const T = _;
@@ -1012,8 +1012,8 @@
                 c = n(912021),
                 g = n(516951),
                 p = n(731708),
-                m = n(310088),
-                y = n(175993),
+                y = n(310088),
+                m = n(175993),
                 k = n(58881),
                 F = n(530732);
             const K = d().d2414d31,
@@ -1054,16 +1054,16 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": l, badgeCount: n, badgePip: a, children: t, color: s, isActive: o, isCompact: d, isPillLink: c, isRoundedRect: g, isWebRedesign: y, retainScrollPosition: S, style: f, to: h } = this.props,
+                    const { Icon: e, "aria-label": l, badgeCount: n, badgePip: a, children: t, color: s, isActive: o, isCompact: d, isPillLink: c, isRoundedRect: g, isWebRedesign: m, retainScrollPosition: S, style: f, to: h } = this.props,
                         { location: R } = this.state,
                         L = h ? this._getMemoizedLink(h, S) : void 0,
                         x = o ? o(h) : R?.pathname === L?.pathname,
                         I = k.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
-                        w = y ? "medium" : x ? "bold" : "medium";
-                    return i.createElement(F.Z, { "aria-label": l, "aria-selected": x, focusable: !!x, interactiveStyles: I, link: L, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [c ? b.pill : b.link, c && x ? b.active : null, d ? (c ? b.compactPill : b.compactLink) : null, g ? b.roundedRect : null, f], withoutInteractiveStyles: y || c }, ({ isFocused: l, isHovered: o }) => i.createElement(u.Z, { style: c && b.flexGrow }, i.createElement(p.ZP, { size: y ? "headline2" : void 0, style: [b.text, { color: this._getTextColor(x, o, y, c) }, d && b.compactText, y && l && b.focusedText], weight: w }, e && i.createElement(e, { style: b.icon }), t, y || c ? null : i.createElement(u.Z, { style: x && [b.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(m.Z, { count: n, standalone: !0, style: [b.badge, n >= 10 && b.multiDigitBadge, n >= 20 && b.truncatedCountBadge], truncatedCountFormatter: T, unreadCountLabel: K, withBorder: !1 }) : a ? i.createElement(m.Z, { pip: !0, standalone: !0, style: b.badgePip, textColor: "red500", unreadCountLabel: _, withBorder: !1 }) : null));
+                        v = m ? "medium" : x ? "bold" : "medium";
+                    return i.createElement(F.Z, { "aria-label": l, "aria-selected": x, focusable: !!x, interactiveStyles: I, link: L, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [c ? b.pill : b.link, c && x ? b.active : null, d ? (c ? b.compactPill : b.compactLink) : null, g ? b.roundedRect : null, f], withoutInteractiveStyles: m || c }, ({ isFocused: l, isHovered: o }) => i.createElement(u.Z, { style: c && b.flexGrow }, i.createElement(p.ZP, { size: m ? "headline2" : void 0, style: [b.text, { color: this._getTextColor(x, o, m, c) }, d && b.compactText, m && l && b.focusedText], weight: v }, e && i.createElement(e, { style: b.icon }), t, m || c ? null : i.createElement(u.Z, { style: x && [b.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(y.Z, { count: n, standalone: !0, style: [b.badge, n >= 10 && b.multiDigitBadge, n >= 20 && b.truncatedCountBadge], truncatedCountFormatter: T, unreadCountLabel: K, withBorder: !1 }) : a ? i.createElement(y.Z, { pip: !0, standalone: !0, style: b.badgePip, textColor: "red500", unreadCountLabel: _, withBorder: !1 }) : null));
                 }
             }
-            (S.contextType = y.Z), (S.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            (S.contextType = m.Z), (S.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
             const b = r.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
@@ -1090,18 +1090,18 @@
                             .map((e) => e.key)
                             .join("-"),
                         { isWebRedesign: p } = s.ZP.useProps(),
-                        m = p() && !r,
-                        y = i.useMemo(
+                        y = p() && !r,
+                        m = i.useMemo(
                             () =>
                                 o.filter(Boolean).map(({ label: l, viewType: t, ...s }, o) => {
-                                    const d = m ? [h.linkRedesign, 0 === o && h.firstLinkRedesign, e && 0 === o && h.withNoPaddingStart] : void 0;
-                                    return i.createElement(f, (0, a.Z)({ viewType: t }, s, { isCompact: n, isPillLink: r, isRoundedRect: u, isWebRedesign: m, style: d }), l);
+                                    const d = y ? [h.linkRedesign, 0 === o && h.firstLinkRedesign, e && 0 === o && h.withNoPaddingStart] : void 0;
+                                    return i.createElement(f, (0, a.Z)({ viewType: t }, s, { isCompact: n, isPillLink: r, isRoundedRect: u, isWebRedesign: y, style: d }), l);
                                 }),
-                            [e, n, r, u, m, o],
+                            [e, n, r, u, y, o],
                         );
-                    return i.createElement(t.Z, { "aria-label": l, buttonsContainerStyle: r && h.gap, childrenStyle: !m && h.flexGrow, key: g, style: [r ? null : h.segmentedControl, m && h.leftAligned, d], visibleItemIndex: c }, y);
+                    return i.createElement(t.Z, { "aria-label": l, buttonsContainerStyle: r && h.gap, childrenStyle: !y && h.flexGrow, key: g, style: [r ? null : h.segmentedControl, y && h.leftAligned, d], visibleItemIndex: c }, m);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-6107ac1a.de2c48fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-6107ac1a.faa9adea.js.map

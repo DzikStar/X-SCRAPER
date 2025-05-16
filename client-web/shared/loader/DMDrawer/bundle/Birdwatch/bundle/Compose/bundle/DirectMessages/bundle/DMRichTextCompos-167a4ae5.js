@@ -74,26 +74,26 @@
                 I = (0, p.Z)()
                     .propsFromState(() => ({ community: E, hydratedTweet: u.Z.createHydratedTweetSelector(y) }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, c.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: m.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: n, hydratedTweet: c, onAvatarClick: p, onMediaClick: m, onPress: u, onScreenNameClick: y, tweetId: E, withBirdwatchPivot: I = !0, ...C }) => {
-                    const { featureSwitches: h, viewerUserId: g } = a.useContext(_.rC),
-                        T = (0, l.z)(),
+                    const { featureSwitches: h, viewerUserId: T } = a.useContext(_.rC),
+                        g = (0, l.z)(),
                         b = c?.community_id_str;
                     a.useEffect(() => {
                         b && (0, d.Z)(e) && n(b).catch(t());
                     }, [e, b, t, n]);
                     const A = a.useCallback(
                             (e) => {
-                                T.scribeAction("click"), u && u(e);
+                                g.scribeAction("click"), u && u(e);
                             },
-                            [u, T],
+                            [u, g],
                         ),
                         f = !!I,
-                        D = c && (0, r.D$)(c, g, e),
-                        v = D && (0, r.rl)(D);
-                    return a.createElement(o.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => h.isTrue("responsive_web_edit_tweet_enabled") || h.isTrue("subscriptions_feature_labs_1004") } }, a.createElement(s.Z, (0, i.Z)({}, C, { loggedInUserId: g, onAvatarClick: p, onMediaClick: m, onPress: A, onScreenNameClick: y, shouldShowAltLabelAlways: !0, socialContextProps: v, tweet: c, withBirdwatchPivot: f })));
+                        v = c && (0, r.D$)(c, T, e),
+                        D = v && (0, r.rl)(v);
+                    return a.createElement(o.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => h.isTrue("responsive_web_edit_tweet_enabled") || h.isTrue("subscriptions_feature_labs_1004") } }, a.createElement(s.Z, (0, i.Z)({}, C, { loggedInUserId: T, onAvatarClick: p, onMediaClick: m, onPress: A, onScreenNameClick: y, shouldShowAltLabelAlways: !0, socialContextProps: D, tweet: c, withBirdwatchPivot: f })));
                 });
         },
         734408: (e, t, n) => {
-            n.d(t, { AU: () => f, O4: () => S, Vb: () => D });
+            n.d(t, { AU: () => f, O4: () => S, Vb: () => v });
             n(136728);
             var i = n(674132),
                 a = n.n(i),
@@ -165,14 +165,14 @@
                     }
                     return s && !d;
                 },
-                g = (e, t) => {
+                T = (e, t) => {
                     const n = e.data.destination,
                         i = { ...e.data.name },
                         a = t[e.data.user_id],
                         o = e.data.member_count;
                     return { type: l.Qe.TWITTER_LIST_DETAILS, data: { title: i, destination: n, memberCount: o, attribution: a } };
                 },
-                T = (e, t) => ({
+                g = (e, t) => ({
                     type: l.Qe.BUTTON_GROUP,
                     data: {
                         buttons: e.data.buttons.map((e, n) => {
@@ -204,8 +204,8 @@
                     let n = t.components;
                     return t.layout?.data?.slides && (n = (0, o.Z)(t.layout.data.slides)), !!(n && n.length > 0 && n.every((e) => t.component_objects[e] && t.component_objects[e].type in c));
                 },
-                D = (e) => `${e}_static`;
-            function v(e, t) {
+                v = (e) => `${e}_static`;
+            function D(e, t) {
                 if (!e) return;
                 return (e / 1e6).toLocaleString(a().language, { style: "currency", currency: t });
             }
@@ -218,7 +218,7 @@
                     if ("details" === o.type) {
                         e.component_objects[i] = (function (e, t, n) {
                             const i = { ...e, type: "dpa_details", data: { destination: e.data.destination, title: e.data.title, subtitle: e.data.subtitle, price: "" } };
-                            return n.metadataEnabled?.() && ((i.data.price = v(t.regular_price_micros, t.currency_code) || ""), (i.data.sale_price = v(t.sale_price_micros, t.currency_code) || void 0)), i;
+                            return n.metadataEnabled?.() && ((i.data.price = D(t.regular_price_micros, t.currency_code) || ""), (i.data.sale_price = D(t.sale_price_micros, t.currency_code) || void 0)), i;
                         })(o, s, t);
                         const n = e.destination_objects[o.data.destination];
                         if ((n && n.data?.url_data && (n.data.url_data.vanity = o.data?.subtitle?.content), e.layout?.data?.slides && t.ctaEnabled?.())) {
@@ -245,7 +245,7 @@
                     const e = { metadataEnabled: () => !1, ctaEnabled: () => !1 };
                     O(s, n.dpaConversionOptions || e);
                 }
-                const { app_store_data: C, component_objects: f, components: v, destination_objects: S, experiment_signals: w, layout: L, media_entities: x, users: P } = s,
+                const { app_store_data: C, component_objects: f, components: D, destination_objects: S, experiment_signals: w, layout: L, media_entities: x, users: P } = s,
                     R =
                         ((N = S),
                         (j = C),
@@ -263,7 +263,7 @@
                             n = {};
                         for (const i in e) {
                             const a = e[i];
-                            if (((t[i] = a), (n[D(i)] = { media_url_https: a.media_url_https, type: "photo", original_info: a.original_info }), "photo" === a.type || "model3d" === a.type)) {
+                            if (((t[i] = a), (n[v(i)] = { media_url_https: a.media_url_https, type: "photo", original_info: a.original_info }), "photo" === a.type || "model3d" === a.type)) {
                                 const { ext: e, ...n } = a;
                                 n.altText = e?.altText?.r?.ok?.text || "";
                                 const o = e?.mediaColor?.r?.ok?.palette;
@@ -277,7 +277,7 @@
                         }
                         return { mediaEntities: t, photoEntitiesFromVideo: n };
                     })(x),
-                    U = L?.data?.slides ? (0, o.Z)(L.data.slides) : v,
+                    U = L?.data?.slides ? (0, o.Z)(L.data.slides) : D,
                     W = {},
                     k = [],
                     K = [];
@@ -301,13 +301,13 @@
                                 W[n] = u(i);
                                 break;
                             case "twitter_list_details":
-                                W[n] = g(i, P);
+                                W[n] = T(i, P);
                                 break;
                             case "app_store_details":
                                 W[n] = y(i, C);
                                 break;
                             case "button_group":
-                                W[n] = T(i, S);
+                                W[n] = g(i, S);
                                 break;
                             case "grok_share":
                                 W[n] = ((z = i), { type: l.Qe.GROK_SHARE, data: z.data });
@@ -319,10 +319,10 @@
                                 W[n] = i;
                                 const e = M[i.data.id],
                                     t = e && "uc_video" === e.type,
-                                    a = D(n);
+                                    a = v(n);
                                 if ((t && (k.push(a), K.push(n)), t)) {
                                     const t = e ? e.original_info.width / e.original_info.height : null;
-                                    W[a] = { type: l.Qe.MEDIA, data: { aspect_ratio: t || void 0, destination: i.data.destination || void 0, id: D(i.data.id), overlay: { type: l._5.PLAY } } };
+                                    W[a] = { type: l.Qe.MEDIA, data: { aspect_ratio: t || void 0, destination: i.data.destination || void 0, id: v(i.data.id), overlay: { type: l._5.PLAY } } };
                                 }
                                 break;
                             }
@@ -332,7 +332,7 @@
                 }
                 var z;
                 const Q = B?.data.media_list.some((e) => e.id && M[e.id] && ("uc_video" === M[e.id].type || "animated_gif" === M[e.id].type));
-                Q && B && (W[l.Fw.SWIPEABLE_MEDIA_STATIC] = { type: l.Qe.SWIPEABLE_MEDIA, data: { media_list: B.data.media_list.map((e) => ({ destination: e.destination, id: D(e.id), overlay: { type: l._5.PLAY } })) } });
+                Q && B && (W[l.Fw.SWIPEABLE_MEDIA_STATIC] = { type: l.Qe.SWIPEABLE_MEDIA, data: { media_list: B.data.media_list.map((e) => ({ destination: e.destination, id: v(e.id), overlay: { type: l._5.PLAY } })) } });
                 const Z = [...(k.length ? k : []), ...(Q ? [l.Fw.SWIPEABLE_MEDIA_STATIC] : []), ...U.filter((e) => !(K.includes(e) || (Q && e === H)))];
                 return { cardState: l.uW.DEFAULT, layout: { [l.uW.DEFAULT]: { size: "large" }, [l.uW.CONDENSED]: { size: "large" }, [l.uW.STATIC]: { size: "large" } }, card: { card_name: t, displayOptions: { shouldAutoAdvance: h(s) }, on_visibility: { scribe: "show" }, id: e, components: { [l.uW.DEFAULT]: U, [l.uW.STATIC]: Z }, destinations: R, media_entities: { ...M, ...F }, components_data: W, ucLayout: L, experiment_signals: w } };
             };
@@ -357,13 +357,13 @@
                 I = n(687415),
                 C = n(649964),
                 h = n(163336),
-                g = n(824562),
-                T = n(734408),
+                T = n(824562),
+                g = n(734408),
                 b = (n(136728), n(85375)),
                 A = n(323265),
                 f = n(538619),
-                D = n(542908);
-            const v = "AndroidApp",
+                v = n(542908);
+            const D = "AndroidApp",
                 O = "IphoneApp",
                 S = "IpadApp",
                 w = (e, t, n) => `destination_key_${e}_${t}_${n}`,
@@ -371,7 +371,7 @@
                 x = (e) => `${e}_static`,
                 P = (e) => {
                     const t = (t) => t.map((t) => e.find(({ type: e }) => e === t)).find(Boolean);
-                    return "android" === f.v.getMobileOS() ? t([v, O, S]) : t([O, S, v]);
+                    return "android" === f.v.getMobileOS() ? t([D, O, S]) : t([O, S, D]);
                 },
                 R = (e) => {
                     const t = P(e);
@@ -379,18 +379,18 @@
                     const n = "AndroidApp" === t.type ? `http://play.google.com/store/apps/details?id=${t.id}` : ((e) => `https://itunes.apple.com/app/id${e}`)(t.id);
                     return A.ZP.isMobileOS() ? { pathname: n, external: !0, openInSameFrame: !0 } : n;
                 },
-                N = (e) => ({ url_data: { url: e.url_data.full_url, vanity: e.url_data.vanity_url || f.v.getDefaultVanityUrl() }, scribe: D.bQ.OPEN_LINK, promoted_log: D.YE.UNIFIED_CARD_COMPONENT_URL_CLICK }),
+                N = (e) => ({ url_data: { url: e.url_data.full_url, vanity: e.url_data.vanity_url || f.v.getDefaultVanityUrl() }, scribe: v.bQ.OPEN_LINK, promoted_log: v.YE.UNIFIED_CARD_COMPONENT_URL_CLICK }),
                 j = (e) => {
                     switch (e.__typename) {
                         case "CardAppStoreDestination":
                         case "CardAppStoreWithDockedMediaDestination":
-                            return { type: "browser", data: { url_data: { url: R(e.app_store_data) || b.$H }, scribe: D.bQ.UC_APP_STORE_OPEN_LINK, promoted_log: D.YE.UNIFIED_CARD_COMPONENT_APP_STORE_CLICK } };
+                            return { type: "browser", data: { url_data: { url: R(e.app_store_data) || b.$H }, scribe: v.bQ.UC_APP_STORE_OPEN_LINK, promoted_log: v.YE.UNIFIED_CARD_COMPONENT_APP_STORE_CLICK } };
                         case "CardBrowserDestination":
                             return { type: "browser", data: { ...N(e) } };
                         case "CardBrowserWithDockedMediaDestination":
                             return { type: "browser_with_docked_media", data: { media_id: e.media.media_id, ...N(e) } };
                         case "CardProfileDestination":
-                            return { type: "profile", data: { user_id: e.user_id, scribe: D.bQ.PROFILE_CLICK, promoted_log: D.YE.SCREEN_NAME_CLICK } };
+                            return { type: "profile", data: { user_id: e.user_id, scribe: v.bQ.PROFILE_CLICK, promoted_log: v.YE.SCREEN_NAME_CLICK } };
                     }
                 };
             function M(e) {
@@ -404,7 +404,7 @@
                 }
             }
             const F = (e) => {
-                    if (e.result?.legacy && e.result?.verification) return { id_str: e.result.id, profile_image_url_https: e.result.legacy.profile_image_url_https || "", protected: e.result.legacy.protected || !1, verified: e.result.verification.verified || !1, is_blue_verified: !!e.result.is_blue_verified, name: e.result.legacy.name || "", screen_name: e.result.legacy.screen_name || "" };
+                    if (e.result?.legacy && e.result?.verification && e.result?.privacy) return { id_str: e.result.id, profile_image_url_https: e.result.legacy.profile_image_url_https || "", protected: e.result.privacy.protected || !1, verified: e.result.verification.verified || !1, is_blue_verified: !!e.result.is_blue_verified, name: e.result.legacy.name || "", screen_name: e.result.legacy.screen_name || "" };
                 },
                 U = ({ component: e }) => {
                     const t = e.media.media_id || "",
@@ -510,7 +510,7 @@
                                                             const o = e.destination_obj?.__typename,
                                                                 s = w(n, t, a),
                                                                 d = e.destination_obj ? j(e.destination_obj) : {};
-                                                            return (i[s] = d), { type: D.lW.GENERIC, data: { index: a + 1, icon: e.icon_type?.toLowerCase(), destination: s, cta: "Cta" === e.button_type ? f.v.getCtaString(e.action || "") : e.text ? e.text.content : "", is_rtl: "Custom" === e.button_type ? e.text?.is_rtl : void 0, isAppDetails: o === b.TW.APP_STORE || o === b.TW.APP_STORE_WITH_DOCKED_MEDIA, styleType: M(e.style) } };
+                                                            return (i[s] = d), { type: v.lW.GENERIC, data: { index: a + 1, icon: e.icon_type?.toLowerCase(), destination: s, cta: "Cta" === e.button_type ? f.v.getCtaString(e.action || "") : e.text ? e.text.content : "", is_rtl: "Custom" === e.button_type ? e.text?.is_rtl : void 0, isAppDetails: o === b.TW.APP_STORE || o === b.TW.APP_STORE_WITH_DOCKED_MEDIA, styleType: M(e.style) } };
                                                         }),
                                                     },
                                                 };
@@ -569,7 +569,7 @@
                                                 s = { [a]: o };
                                             let d = {};
                                             const r = e.user_results?.result;
-                                            r && r.legacy && (d = { id_str: r.id, profile_image_url_https: r.legacy.profile_image_url_https || "", protected: !!r.legacy.protected, verified: !!r.verification?.verified, is_blue_verified: !!r.is_blue_verified, name: r.legacy.name || "", screen_name: r.legacy.screen_name || "" });
+                                            r && r.legacy && (d = { id_str: r.id, profile_image_url_https: r.legacy.profile_image_url_https || "", protected: !!r.privacy?.protected, verified: !!r.verification?.verified, is_blue_verified: !!r.is_blue_verified, name: r.legacy.name || "", screen_name: r.legacy.screen_name || "" });
                                             const l = { type: b.Qe.TWITTER_LIST_DETAILS, data: { title: e.name, destination: a, memberCount: e.member_count, attribution: d } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: s, mediaEntities: {}, componentsData: { [i]: l } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
@@ -662,8 +662,8 @@
                     [b.sj.PROMO_IMAGE_CONVO]: { conversionHandler: I.g, shouldRenderCard: I.o },
                     [b.sj.PROMO_VIDEO_CONVO]: { conversionHandler: C.G, shouldRenderCard: C.T },
                     [b.sj.SUMMARY]: { conversionHandler: h.n, shouldRenderCard: h.K },
-                    [b.sj.SUMMARY_LARGE_IMAGE]: { conversionHandler: g.N, shouldRenderCard: g.a },
-                    [b.sj.UNIFIED_CARD]: { conversionHandler: T.O4, shouldRenderCard: T.AU },
+                    [b.sj.SUMMARY_LARGE_IMAGE]: { conversionHandler: T.N, shouldRenderCard: T.a },
+                    [b.sj.UNIFIED_CARD]: { conversionHandler: g.O4, shouldRenderCard: g.AU },
                     [b.sj.VIDEO_DIRECT_MESSAGE]: {
                         conversionHandler: ({ cardId: e, cardType: t, converterOptions: n, data: i, users: a }) => {
                             const o = (0, H.FL)(i, "image_value", "player_image_original"),
@@ -675,7 +675,7 @@
                                         .map((t) => {
                                             const n = (0, H.SI)(i, "string_value", `cta${t}`),
                                                 a = (0, H.SI)(i, "string_value", `cta${t}_wm_id`);
-                                            return n && a ? { type: D.lW.DM, data: { icon: "dm", index: t, cta: n, wm_id: a, destination: e } } : null;
+                                            return n && a ? { type: v.lW.DM, data: { icon: "dm", index: t, cta: n, wm_id: a, destination: e } } : null;
                                         })
                                         .filter(Boolean),
                                 _ = l(b.Fw.DESTINATION),
@@ -683,7 +683,7 @@
                                 p = (0, H.N8)(i, "user_value", "recipient"),
                                 m = p && a[p.id_str],
                                 u = p.id_str !== n.tweetUserId && m;
-                            return { cardState: b.uW.DEFAULT, layout: { [b.uW.DEFAULT]: { size: "large" }, [b.uW.CONDENSED]: { size: "large" }, [b.uW.STATIC]: { size: "large" } }, card: { card_name: t, on_visibility: { scribe: "show" }, id: e, components: { [b.uW.DEFAULT]: [b.Fw.MEDIA, ...(u ? [b.Fw.DETAILS] : []), b.Fw.BUTTON_GROUP], [b.uW.STATIC]: [b.Fw.MEDIA_STATIC, ...(u ? [b.Fw.DETAILS] : []), b.Fw.BUTTON_GROUP_STATIC] }, destinations: { [b.Fw.DESTINATION]: { type: b._g.ACTION, data: { action_data: { persist: !1, type: "dm", recipient: p.id_str }, auth_required: !0, scribe: "click", promoted_log: D.YE.DM_BUTTON_CLICK } }, [b.Fw.DESTINATION_STATIC]: { type: b._g.BROWSER, data: { url_data: { url: n.tweetPermalink || b.$H }, scribe: "open_link", promoted_log: D.YE.CARD_URL_CLICK } } }, media_entities: { [b.Fw.IMAGE_ENTITY]: (0, H.WW)(o || {}), [b.Fw.VIDEO_ENTITY]: { type: "video", aspect_ratio: d, content_id: (0, H.SI)(i, "string_value", "player_content_id") || (0, H.cT)(s), ...(r ? { duration_ms: 1e3 * parseInt(r, 10) } : null), vmap_url: s, poster_image: o, publisher_id: (0, H.SI)(i, "string_value", "player_owner_id") || n.tweetUserId, variants: [{ src: (0, H.SI)(i, "string_value", "player_hls_url"), type: "application/x-mpegURL" }] } }, components_data: { [b.Fw.MEDIA]: { type: b.Qe.MEDIA, data: { id: b.Fw.VIDEO_ENTITY } }, [b.Fw.MEDIA_STATIC]: { type: b.Qe.MEDIA, data: { id: b.Fw.IMAGE_ENTITY, destination: b.Fw.DESTINATION_STATIC } }, ...(u ? { [b.Fw.DETAILS]: { type: b.Qe.DETAILS, data: { attribution: m } } } : null), [b.Fw.BUTTON_GROUP]: { type: b.Qe.BUTTON_GROUP, data: { buttons: _ } }, [b.Fw.BUTTON_GROUP_STATIC]: { type: b.Qe.BUTTON_GROUP, data: { buttons: c } } } } };
+                            return { cardState: b.uW.DEFAULT, layout: { [b.uW.DEFAULT]: { size: "large" }, [b.uW.CONDENSED]: { size: "large" }, [b.uW.STATIC]: { size: "large" } }, card: { card_name: t, on_visibility: { scribe: "show" }, id: e, components: { [b.uW.DEFAULT]: [b.Fw.MEDIA, ...(u ? [b.Fw.DETAILS] : []), b.Fw.BUTTON_GROUP], [b.uW.STATIC]: [b.Fw.MEDIA_STATIC, ...(u ? [b.Fw.DETAILS] : []), b.Fw.BUTTON_GROUP_STATIC] }, destinations: { [b.Fw.DESTINATION]: { type: b._g.ACTION, data: { action_data: { persist: !1, type: "dm", recipient: p.id_str }, auth_required: !0, scribe: "click", promoted_log: v.YE.DM_BUTTON_CLICK } }, [b.Fw.DESTINATION_STATIC]: { type: b._g.BROWSER, data: { url_data: { url: n.tweetPermalink || b.$H }, scribe: "open_link", promoted_log: v.YE.CARD_URL_CLICK } } }, media_entities: { [b.Fw.IMAGE_ENTITY]: (0, H.WW)(o || {}), [b.Fw.VIDEO_ENTITY]: { type: "video", aspect_ratio: d, content_id: (0, H.SI)(i, "string_value", "player_content_id") || (0, H.cT)(s), ...(r ? { duration_ms: 1e3 * parseInt(r, 10) } : null), vmap_url: s, poster_image: o, publisher_id: (0, H.SI)(i, "string_value", "player_owner_id") || n.tweetUserId, variants: [{ src: (0, H.SI)(i, "string_value", "player_hls_url"), type: "application/x-mpegURL" }] } }, components_data: { [b.Fw.MEDIA]: { type: b.Qe.MEDIA, data: { id: b.Fw.VIDEO_ENTITY } }, [b.Fw.MEDIA_STATIC]: { type: b.Qe.MEDIA, data: { id: b.Fw.IMAGE_ENTITY, destination: b.Fw.DESTINATION_STATIC } }, ...(u ? { [b.Fw.DETAILS]: { type: b.Qe.DETAILS, data: { attribution: m } } } : null), [b.Fw.BUTTON_GROUP]: { type: b.Qe.BUTTON_GROUP, data: { buttons: _ } }, [b.Fw.BUTTON_GROUP_STATIC]: { type: b.Qe.BUTTON_GROUP, data: { buttons: c } } } } };
                         },
                         shouldRenderCard: (e) => (0, H.BY)(e, (e) => e("recipient").and("cta1").and("cta1_wm_id").and("player_width").and("player_height").and("player_stream_url")),
                     },
@@ -736,4 +736,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.005847da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.8b5f73fa.js.map

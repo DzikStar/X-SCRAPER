@@ -1080,17 +1080,17 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "412085a28436ebb88fa78eb72837c280",
+                hash: "c74b5ee016b5bb96bc5df33b8676e9f0",
             };
             const r = l;
         },
@@ -1170,13 +1170,13 @@
                                                                 selections: [
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                 ],
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "PendingPriceChange", kind: "LinkedField", name: "super_follow_pending_price_change", plural: !1, selections: [o, { alias: null, args: null, kind: "ScalarField", name: "new_price", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "price_change", storageKey: null }], storageKey: null },
                                                             (d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
@@ -1224,7 +1224,7 @@
                             },
                         ],
                     },
-                    params: { id: "5IVeZnSTElEQFIKwc2TcoQ", metadata: {}, name: "SuperFollowsSettingsQuery", operationKind: "query", text: null },
+                    params: { id: "Sc3fYKAzOtT2JZjZEsBwzA", metadata: {}, name: "SuperFollowsSettingsQuery", operationKind: "query", text: null },
                 };
             c.hash = "8bf7ec3c12a9cae9fe0ca1768db4b4ec";
             const g = c;
@@ -1558,21 +1558,21 @@
                     o = i()(),
                     p = (0, d.po)(),
                     [m, k] = l.useState(null),
-                    [_, y] = l.useState(!1),
+                    [y, _] = l.useState(!1),
                     S = l.useCallback(() => {
-                        _ ||
-                            (y(!0),
+                        y ||
+                            (_(!0),
                             u()(o, e, r, { networkCacheConfig: s?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
                                 complete: () => {
-                                    y(!1);
+                                    _(!1);
                                 },
                                 error: (e) => {
-                                    p(e), y(!1), k(e);
+                                    p(e), _(!1), k(e);
                                 },
                             }));
-                    }, [o, p, e, _, r, s]),
+                    }, [o, p, e, y, r, s]),
                     f = (0, g.p)(e, a, n);
-                return l.useMemo(() => (m ? { data: f, refetch: S, refetchStatus: c.ZP.FAILED, refetchError: m } : { data: f, refetch: S, refetchStatus: _ ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [f, m, _, S]);
+                return l.useMemo(() => (m ? { data: f, refetch: S, refetchStatus: c.ZP.FAILED, refetchError: m } : { data: f, refetch: S, refetchStatus: y ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [f, m, y, S]);
             }
         },
         207070: (e, a, n) => {
@@ -1606,15 +1606,15 @@
                 p = n(352924),
                 m = n(392237);
             const k = m.default.create((e) => ({ root: { padding: e.spaces.space4, borderRadius: e.borderRadii.large, overflow: "hidden" }, base: { flexDirection: "row", justifyContent: "space-between", flexGrow: 1 }, backgroundColor: { backgroundColor: e.colors.cellBackground }, border: { borderRadius: e.borderRadii.large, borderWidth: e.borderWidths.medium, borderColor: e.colors.transparent }, borderColor: { borderColor: e.colors.borderColor }, activeBorder: { borderColor: e.colors.blue500 }, containerClicked: { backgroundColor: e.colors.primary }, interactive: { cursor: "pointer" }, radioBackground: { borderRadius: e.borderRadii.infinite, margin: `-${e.spaces.space8}`, padding: e.spaces.space8 }, textContainer: { margin: e.spaces.space12, flexShrink: 1 }, radioContainer: { userSelect: "none", marginEnd: e.spaces.space12, marginTop: e.spaces.space12, position: "absolute", end: "0px" }, helpText: { marginTop: e.spaces.space8 }, tileStyle: { height: "inherit" }, mainContainer: { padding: e.spaces.space4 }, circleDisabled: { borderColor: e.colors.gray200 }, circleCheckedAndDisabled: { backgroundColor: e.colors.gray300, borderColor: e.colors.gray300 }, circle: { alignItems: "center", backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray700, borderStyle: "solid", borderWidth: e.borderWidths.medium, borderRadius: e.spaces.space32, height: e.spaces.space20, justifyContent: "center", width: e.spaces.space20 }, circleActive: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, checkMark: { width: "18px", height: "18px", color: e.colors.whiteOnColor } })),
-                _ = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, helpText: y, label: S, name: f, onChange: F, renderBorderWhenSelected: b, selectorBackgroundStyles: w }) => {
+                y = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
+                _ = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, helpText: _, label: S, name: f, onChange: F, renderBorderWhenSelected: b, selectorBackgroundStyles: w }) => {
                     const v = c.Z.generate({ backgroundColor: m.default.theme.colors.transparent, color: l ? m.default.theme.colors.primary : m.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
                         K = (0, p.b)(),
                         h = (0, p.b)();
-                    return r.createElement(d.Z, { disabled: i }, (d) => r.createElement(s.Z, { style: k.root }, r.createElement(s.Z, { role: "label", style: [k.base, w || k.backgroundColor, k.border, b ? null : k.borderColor, b && l && k.activeBorder, !i && k.interactive] }, r.createElement(s.Z, { style: k.textContainer }, r.createElement(u.ZP, { id: K, weight: "bold" }, S), y && r.createElement(u.ZP, { color: "gray700", id: h, size: "subtext2", style: k.helpText }, y)), r.createElement(s.Z, { style: k.radioContainer }, b ? null : r.createElement(g.Z, { disabled: i, interactiveStyles: v, interactivityState: d, style: k.radioBackground }, r.createElement(s.Z, { style: [k.circle, l && k.circleActive, i && k.circleDisabled, l && i && k.circleCheckedAndDisabled] }, l ? r.createElement(t.default, { style: k.checkMark }) : null)), r.createElement("input", { "aria-describedby": h, "aria-label": e, "aria-labelledby": K, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, name: f, onChange: l ? o.Z : F, style: _, type: "radio" })))));
+                    return r.createElement(d.Z, { disabled: i }, (d) => r.createElement(s.Z, { style: k.root }, r.createElement(s.Z, { role: "label", style: [k.base, w || k.backgroundColor, k.border, b ? null : k.borderColor, b && l && k.activeBorder, !i && k.interactive] }, r.createElement(s.Z, { style: k.textContainer }, r.createElement(u.ZP, { id: K, weight: "bold" }, S), _ && r.createElement(u.ZP, { color: "gray700", id: h, size: "subtext2", style: k.helpText }, _)), r.createElement(s.Z, { style: k.radioContainer }, b ? null : r.createElement(g.Z, { disabled: i, interactiveStyles: v, interactivityState: d, style: k.radioBackground }, r.createElement(s.Z, { style: [k.circle, l && k.circleActive, i && k.circleDisabled, l && i && k.circleCheckedAndDisabled] }, l ? r.createElement(t.default, { style: k.checkMark }) : null)), r.createElement("input", { "aria-describedby": h, "aria-label": e, "aria-labelledby": K, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, name: f, onChange: l ? o.Z : F, style: y, type: "radio" })))));
                 },
-                S = (e) => r.createElement(i.Z, (0, l.Z)({}, e, { renderSelector: (e) => r.createElement(y, (0, l.Z)({}, e, { key: e.value })) }));
+                S = (e) => r.createElement(i.Z, (0, l.Z)({}, e, { renderSelector: (e) => r.createElement(_, (0, l.Z)({}, e, { key: e.value })) }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.8381d3fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.fbc76c5a.js.map

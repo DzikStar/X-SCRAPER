@@ -482,6 +482,7 @@
                 i("cb165528", "Ciri dan tetapan berita"),
                 i("f8645654", "Keselamatan dan akses akaun"),
                 i("j95edf76", "Keselamatan"),
+                i("fd127276", "Urus kunci laluan"),
                 i("afe4a358", "Pengesahan ID"),
                 i("dd703318", "Pengesahan dua faktor"),
                 i("b1686800", "Urus kunci keselamatan"),
@@ -899,9 +900,9 @@
                 i("e126dd3f", "Ketahui lebih lanjut"),
                 i("i821844f", "Ketahui lebih lanjut"),
                 i("b0abbb17", "Ketahui lebih lanjut"),
-                i("e7e0d88b", "Ketahui lebih lanjut"),
-                i("i560665f", "Ketahui lebih lanjut");
-            i("f6e774d9", "Ketahui lebih lanjut"),
+                i("e7e0d88b", "Ketahui lebih lanjut");
+            i("i560665f", "Ketahui lebih lanjut"),
+                i("f6e774d9", "Ketahui lebih lanjut"),
                 i("h486f755", "Ketahui lebih lanjut"),
                 i("bab41dab", "Ketahui lebih lanjut"),
                 i("e0ebdb29", "Ketahui lebih lanjut"),
@@ -1020,12 +1021,18 @@
                 i("gfaf9a4a", "Perlindungan tetap semula kata laluan"),
                 i("h3cc8462", "Sebagai perlindungan tambahan, anda perlu mengesahkan alamat e-mel atau nombor telefon anda untuk menetapkan semula kata laluan X anda."),
                 i("b4bbdeb4", "Kunci laluan"),
-                i("aeb7dcdc", "Dayakan Kunci laluan sebagai perlindungan tambahan yang boleh dikaitkan dengan biometrik anda."),
+                i("fe8aeb88", "Kunci laluan memberikan perlindungan tambahan yang boleh dikaitkan dengan biometrik anda."),
                 i("dc096238", "Muat naik borang pengesahan yang diluluskan untuk mengesahkan kesahihan akaun anda. Maklumat anda hanya akan digunakan untuk mengesahkan identiti anda dan akan dikendalikan dengan selamat dan terjamin."),
                 i("a999cb72", "Simpan perubahan akaun"),
                 i("dec3c9b8", "Kata laluan"),
                 i("b929aa74", "Masukkan semula kata laluan X anda untuk menyimpan perubahan ke akaun anda."),
                 i("d1091f50", "Terlupa kata laluan?"),
+                i("fd23fe4a", "Here are your passkeys across all your devices"),
+                i("d9921a6c", "Create a new passkey"),
+                i("i4855730", "Padamkan kunci laluan"),
+                i("a6acdc67", function (a) {
+                    return "Date added: " + a.date;
+                }),
                 i("d97c07be", "Urus Langganan Pencipta"),
                 i("efa291da", "Lihat dan uruskan langganan anda kepada pencipta di bawah menggunakan Stripe. Mana-mana langganan aktif yang anda mulakan pada iOS atau Android boleh diuruskan dalam aplikasi tersebut."),
                 i("j7f5c6aa", "Anda tidak mempunyai sebarang Langganan lagi"),
@@ -1909,13 +1916,13 @@
                 i("d8047cc8", "Terbitkan"),
                 i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
                 i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
-                i("e52d4998", "Pilih khalayak anda"),
-                i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
+                i("e52d4998", "Pilih khalayak anda");
+            i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
                 i("b5660338", "Pratonton Garis masa"),
                 i("hff1b97a", "Hanya yang Melanggan boleh membalas."),
                 i("a330771e", "Salin pautan pada papan klip anda"),
-                i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi.");
-            i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi."),
+                i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi."),
+                i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi."),
                 i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
                 i("ca15dd4e", "Draf"),
                 i("bb40bf66", "Diterbitkan"),
@@ -2965,27 +2972,23 @@
                 i("b7388a56", "Pengaki"),
                 i("hdabc3fc", "Terma Perkhidmatan"),
                 i("bc6efc72", "Dasar Privasi"),
-                i("h3161192", "Dasar Kuki"),
-                i("a7de64de", "Maklumat iklan"),
+                i("h3161192", "Dasar Kuki");
+            i("a7de64de", "Maklumat iklan"),
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Karier"),
                 i("e0adec82", "Sumber Jenama"),
-                i("df1b7550", "Pemasaran");
-            i("he258678", "X untuk Perniagaan"),
+                i("df1b7550", "Pemasaran"),
+                i("he258678", "X untuk Perniagaan"),
                 i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
-                i("af781666", "Apakah pandangan orang ramai?"),
-                i("ad35153e", "beta"),
-                i("a1f414ee", "Share thoughts"),
                 i("fbf83158", "Amaran: Pembayaran gagal"),
                 i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
                 i("bce3726a", "Kemas Kini Pengebilan"),
                 i("fce9ecce", "Video yang Dicadangkan"),
-                i("da00e00a", "Cubalah Berita yang baharu"),
-                i("c40666d8", "Cubalah"),
                 i("j66b95a2", "Berita Mendalam"),
+                i("ad35153e", "beta"),
                 i("b58d2bd2", "Siaran Berkaitan"),
                 i("efe6ef9e", "Lihat siaran"),
                 i("b3d183ce", "Buat siaran dengan balasan"),
@@ -3883,11 +3886,11 @@
                 i("ddeb0a3c", "Inilah Komuniti itu. Suka orang dalam Komuniti ini? Sila lihat."),
                 i("e111f531", function (a) {
                     return a.count + " turut serta";
-                }),
-                i("cbef820f", function (a) {
-                    return a.screenName + " menyiarkan semula strim!";
                 });
-            i("e3275464", "Hantar"),
+            i("cbef820f", function (a) {
+                return a.screenName + " menyiarkan semula strim!";
+            }),
+                i("e3275464", "Hantar"),
                 i("cededf2a", "Hos"),
                 i("i2caef48", "Hos lain"),
                 i("j245c654", "Pembicara"),
@@ -4358,8 +4361,8 @@
                 i("g01599b6", "Respons 1"),
                 i("e02694e0", "Respons 2"),
                 i("h6867fcc", "Saya suka respons ini"),
-                i("d07488a6", "Dapatkan aplikasi Android"),
-                i("d9cfe70c", "Akses ciri lanjutan Grok"),
+                i("acc4496c", "Try Grok Voice mode"),
+                i("jd36d190", "Access advanced features with Grok Android app"),
                 i("hf9afab0", "Dayakan DeepSearch untuk mengimbas Internet dan X, menganalisis maklumat, dan menyampaikan jawapan yang terperinci dan kukuh dengan carian yang pantas dan berdikari. "),
                 i("ef3b3f04", 'Dayakan Fikir untuk menggunakan model pertimbangan kami. Ciri ini sangat sesuai untuk bidang matematik, sains dan pengekodan. Anda juga boleh meminta Grok untuk "Fikir dengan lebih mendalam" tentang sebarang pertanyaan yang mungkin mencabar minda. '),
                 i("b43636b8", "Memperkenalkan Grok 3"),
@@ -4921,9 +4924,9 @@
                 i("h0c1f37a", "Lihat Analitis Space"),
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
                 i("if2909ba", "Masa Tontonan"),
-                i("i0e5bf4c", "Video anda"),
-                i("ed99baea", "Akses Beta Awal");
-            i("gf898b70", "Carian Lanjutan"),
+                i("i0e5bf4c", "Video anda");
+            i("ed99baea", "Akses Beta Awal"),
+                i("gf898b70", "Carian Lanjutan"),
                 i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
                 i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
@@ -5836,6 +5839,8 @@
                 i("g880d8c0", "Data status pendaftaran pengguna belum tersedia lagi"),
                 i("ab1b3d38", "Data permintaan nota belum tersedia lagi"),
                 i("c43fb933", "Perjanjian dan Dasar Pembangun X"),
+                i("af781666", "Apakah pandangan orang ramai?"),
+                i("a1f414ee", "Share thoughts"),
                 i("ed88e742", "Salin pautan kepada Topik"),
                 i("h92fe1be", "Malangnya, Nota Komuniti tidak tersedia untuk anda pada masa ini."),
                 i("f0dc1434", "Nota Komuniti hanya tersedia di A.S. pada masa ini."),
@@ -5885,11 +5890,11 @@
                 }),
                 i("daca8a2c", "Buka dalam Dok"),
                 i("e3aac82a", "Memuatkan Siaran"),
-                i("i0ed3f4e", "Imej acara"),
-                i("cbae35fa", "Laporkan Siaran"),
+                i("i0ed3f4e", "Imej acara");
+            i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Siaran koleksi"),
-                i("a226497c", "Cipta Komuniti baharu");
-            i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi"),
+                i("a226497c", "Cipta Komuniti baharu"),
+                i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi"),
                 i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
                 i("hff48914", "Tiada siaran dapat ditemukan pada masa ini."),
                 i("hb52cc4a", "Sila cuba lagi kemudian."),
@@ -6453,7 +6458,10 @@
                 i("f7d1a8e0", "Aplikasi Android"),
                 i("aab2fae0", "Aplikasi iOS"),
                 i("a35d9c9a", "Sumber"),
+                i("da00e00a", "Cubalah Berita yang baharu"),
+                i("c40666d8", "Cubalah"),
                 i("ic61c5fc", "Tatal ke atas"),
+                i("dd225af8", "Tiada orang ditemui."),
                 i("i6671128", "Anda telah memperoleh lebih banyak ciri di X"),
                 i("d5e4d0a6", "Anda boleh menyertai perbualan dan berhubung dengan orang lain dengan mudah. Kini anda boleh melakukan perkara berikut:"),
                 i("a97bc07e", "Peroleh lebih banyak ciri di X"),
@@ -6880,14 +6888,14 @@
                 i("b6b5dc94", "Dapatkan pengesahan"),
                 i("b06db848", "Tonjolkan diri pada platform"),
                 i("e3e3a97c", "Peroleh sebahagian hasil daripada siaran anda"),
-                i("f15bc24e", "Had Grok yang ditingkatkan"),
-                i("c4666e1c", "Lebih banyak penggunaan Grok 3, model terkini kami"),
+                i("f15bc24e", "Had Grok yang ditingkatkan");
+            i("c4666e1c", "Lebih banyak penggunaan Grok 3, model terkini kami"),
                 i("he74ae7a", "Had penggunaan Grok paling tinggi"),
                 i("f5732cd4", "Serta akses dikembangkan kepada DeepSearch & Fikir"),
                 i("e0198956", "Dapatkan sebahagian hasil yang dijana daripada interaksi akaun disahkan dengan kandungan yang anda siarkan di X."),
                 i("iadf78e2", "Muat turun video"),
-                i("ee54c3de", "Simpan video terus ke peranti anda");
-            i("ae03594c", "Peningkatan balasan yang kecil"),
+                i("ee54c3de", "Simpan video terus ke peranti anda"),
+                i("ae03594c", "Peningkatan balasan yang kecil"),
                 i("e6bb08c0", "Tingkatkan keterlihatan balasan anda"),
                 i("bf2a6acc", "Peningkatan Balasan yang Besar"),
                 i("c2059276", "Tingkatkan balasan anda."),
@@ -7347,7 +7355,6 @@
                 i("b0c91a92", "Log masuk atau Daftar untuk melihat perbualan orang di X tentang perkara ini"),
                 i("d7071084", "Tanya Grok Ini"),
                 i("ee2200f4", "Cerita ini ialah ringkasan siaran pada X yang dihasilkan oleh Grok. Cerita akan berkembang dari semasa ke semasa."),
-                i("dd225af8", "Tiada orang ditemui."),
                 i("e1e5d552", "Edit Kumpulan anda"),
                 i("ec13f9cc", "Tiada sesiapa dalam Kumpulan anda lagi"),
                 i("dab58e32", "Apabila anda menambahkan orang, orang tersebut akan ditunjukkan di sini."),
@@ -7412,8 +7419,6 @@
                 i("bf4558fa", "Pecahan prestasi organik anda"),
                 i("c69069e6", "Bilangan kali siaran ini dilihat di X"),
                 i("a0615bac", "Jumlah bilangan kali seseorang pengguna telah berinteraksi dengan siaran. Ini termasuklah semua klik di mana-mana sahaja pada siaran (termasuk hashtag, pautan, avatar, nama pengguna, dan pengembangan siaran), siaran semula, balasan, ikutan dan sukaan."),
-                i("d8abdaa4", "Pengikut baharu"),
-                i("c72f25a8", "Ikutan yang diperoleh terus daripada siaran ini"),
                 i("acc4cf12", "Bilangan paparan profil daripada siaran ini"),
                 i("c7d0d1c4", "Bilangan klik pada mana-mana URL dalam siaran ini"),
                 i("a4da7724", "Bilangan kali orang melihat butiran tentang siaran ini"),
@@ -7861,10 +7866,7 @@
                 i("e3dffb4e", "Salin alamat e-mel sokongan kami di bawah dan hantar maklumat yang diperlukan kepada pasukan sokongan kami untuk memulakan proses penyepaduan."),
                 i("b4fef99e", "Selepas pasukan sokongan kami menerima permintaan anda, kami akan menyemak maklumat anda dan akan membantu dalam konfigurasi penyepaduan anda."),
                 i("h37f2d96", "Harap maklum bahawa tidak semua sistem penjejakan pemohon disokong pada masa sekarang."),
-                i("ce102a20", "Mengubah hala ke Stripe"),
-                i("ddfd6718", "Pembayaran Gagal"),
-                i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
-                i("a62359e6", "Tetapan Organisasi Disahkan");
+                i("ce102a20", "Mengubah hala ke Stripe");
             function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7903,7 +7905,10 @@
                     u(a, n)
                 );
             }
-            i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
+            i("ddfd6718", "Pembayaran Gagal"),
+                i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
+                i("a62359e6", "Tetapan Organisasi Disahkan"),
+                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
                 i("i4dccc18", "Pengebilan"),
                 i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
                 i("dac61c3c", "Tetapan akaun"),
@@ -8903,13 +8908,13 @@
                 i("ecda5f9e", "Mengelirukan"),
                 i("a423473c", "Notis Yang Diperlukan Oleh Undang-Undang"),
                 i("b3296688", "Keterlihatan Terhad"),
-                i("ccd32094", "Sekarang"),
-                i("abfcce0d", function (a) {
-                    return a.amountOfTime + " yang lalu";
-                }),
+                i("ccd32094", "Sekarang");
+            i("abfcce0d", function (a) {
+                return a.amountOfTime + " yang lalu";
+            }),
                 i("ae408b76", "Anda membuat siaran semula"),
-                i("j355f008", "Siaran yang dipinkan");
-            i("habf9678", "Dipinkan oleh Pengarang"),
+                i("j355f008", "Siaran yang dipinkan"),
+                i("habf9678", "Dipinkan oleh Pengarang"),
                 i("db0798ed", function (a) {
                     return "Topik " + a.topicName;
                 }),
@@ -13048,6 +13053,7 @@
                 (s.a2075963146 = h({ 1: s("ms").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM", timeSeparator: ":", days: { E: { 1: { sun: "Ahd", mon: "Isn", tue: "Sel", wed: "Rab", thu: "Kha", fri: "Jum", sat: "Sab" } } }, months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mac", 4: "Apr", 5: "Mei", 6: "Jun", 7: "Jul", 8: "Ogo", 9: "Sep", 10: "Okt", 11: "Nov", 12: "Dis" } } } })),
                 (s.b2085953061 = h({ 1: s("ms").numberFormatter({ raw: "0" }) }, { pattern: "E, d MMM y", timeSeparator: ":", days: { E: { 1: { sun: "Ahd", mon: "Isn", tue: "Sel", wed: "Rab", thu: "Kha", fri: "Jum", sat: "Sab" } } }, months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mac", 4: "Apr", 5: "Mei", 6: "Jun", 7: "Jul", 8: "Ogo", 9: "Sep", 10: "Okt", 11: "Nov", 12: "Dis" } } } })),
                 (s.a2083351314 = h({ 1: s("ms").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM", timeSeparator: ":", months: { M: { 4: { 1: "Januari", 2: "Februari", 3: "Mac", 4: "April", 5: "Mei", 6: "Jun", 7: "Julai", 8: "Ogos", 9: "September", 10: "Oktober", 11: "November", 12: "Disember" } } } })),
+                (s.b1445008704 = h({ 1: s("ms").numberFormatter({ raw: "0" }), 2: s("ms").numberFormatter({ raw: "00" }) }, { pattern: "d MMMM y h:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "Januari", 2: "Februari", 3: "Mac", 4: "April", 5: "Mei", 6: "Jun", 7: "Julai", 8: "Ogos", 9: "September", 10: "Oktober", 11: "November", 12: "Disember" } } }, dayPeriods: { am: "PG", pm: "PTG" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (s.a653310273 = h({ 1: s("ms").numberFormatter({ raw: "0" }), 2: s("ms").numberFormatter({ raw: "00" }) }, { pattern: "d MMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mac", 4: "Apr", 5: "Mei", 6: "Jun", 7: "Jul", 8: "Ogo", 9: "Sep", 10: "Okt", 11: "Nov", 12: "Dis" } } }, dayPeriods: { am: "PG", pm: "PTG" } })),
                 (s.a460003251 = h({ 1: s("ms").numberFormatter({ raw: "0" }) }, { pattern: "d MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "Januari", 2: "Februari", 3: "Mac", 4: "April", 5: "Mei", 6: "Jun", 7: "Julai", 8: "Ogos", 9: "September", 10: "Oktober", 11: "November", 12: "Disember" } } } })),
                 (s.a823693810 = h({ 1: s("ms").numberFormatter({ raw: "0" }), 2: s("ms").numberFormatter({ raw: "00" }) }, { pattern: "d MMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mac", 4: "Apr", 5: "Mei", 6: "Jun", 7: "Jul", 8: "Ogo", 9: "Sep", 10: "Okt", 11: "Nov", 12: "Dis" } } }, dayPeriods: { am: "PG", pm: "PTG" } })),
@@ -13069,6 +13075,7 @@
                 (s.b1467721773 = f(s("ms").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (s.b271035854 = f(s("ms").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (s.b1460333605 = f(s("ms").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (s.b1836415785 = f(s("ms").dateToPartsFormatter({ datetime: "long" }))),
                 (s.a1081168842 = f(s("ms").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (s.a1361925450 = f(s("ms").dateToPartsFormatter({ date: "long" }))),
                 (s.b1656356279 = f(s("ms").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13134,6 +13141,7 @@
                 i("c0bdd345", s.b489451229),
                 i("aa2aa1a1", s.b271035854),
                 i("da44942d", s.b1460333605),
+                i("a54d3ef5", s.b1836415785),
                 i("bfbc051d", s.a1081168842),
                 i("ba2e82a1", s.a1361925450),
                 i("fc209bb7", s.b1656356279),
@@ -13224,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f52d85aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f5beef4a.js.map

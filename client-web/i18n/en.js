@@ -483,6 +483,7 @@
                 a("cb165528", "News features and settings"),
                 a("f8645654", "Security and account access"),
                 a("j95edf76", "Security"),
+                a("fd127276", "Manage passkeys"),
                 a("afe4a358", "ID verification"),
                 a("dd703318", "Two-factor authentication"),
                 a("b1686800", "Manage security keys"),
@@ -900,9 +901,9 @@
                 a("e126dd3f", "Learn more"),
                 a("i821844f", "Learn more"),
                 a("b0abbb17", "Learn more"),
-                a("e7e0d88b", "Learn more"),
-                a("i560665f", "Learn more");
-            a("f6e774d9", "Learn more"),
+                a("e7e0d88b", "Learn more");
+            a("i560665f", "Learn more"),
+                a("f6e774d9", "Learn more"),
                 a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
                 a("e0ebdb29", "Learn more"),
@@ -1021,12 +1022,18 @@
                 a("gfaf9a4a", "Password reset protect"),
                 a("h3cc8462", "For added protection, you’ll need to confirm your email address or phone number to reset your X password."),
                 a("b4bbdeb4", "Passkey"),
-                a("aeb7dcdc", "Enable Passkeys for added protection that may be tied to your biometrics."),
+                a("fe8aeb88", "Passkeys provide added protection that may be tied to your biometrics."),
                 a("dc096238", "Upload an approved form of identification to confirm the authenticity of your account. Your information will only be used to validate your identity and will be handled safely and securely."),
                 a("a999cb72", "Save account changes"),
                 a("dec3c9b8", "Password"),
                 a("b929aa74", "Re-enter your X password to save changes to your account."),
                 a("d1091f50", "Forgot password?"),
+                a("fd23fe4a", "Here are your passkeys across all your devices"),
+                a("d9921a6c", "Create a new passkey"),
+                a("i4855730", "Delete passkey"),
+                a("a6acdc67", function (e) {
+                    return "Date added: " + e.date;
+                }),
                 a("d97c07be", "Manage Creator Subscriptions"),
                 a("efa291da", "View and manage your subscriptions to creators below using Stripe. Any active subscriptions you initiated on iOS or Android can be managed in the app."),
                 a("j7f5c6aa", "You don’t have any Subscriptions yet"),
@@ -1910,13 +1917,13 @@
                 a("d8047cc8", "Publish"),
                 a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                a("e52d4998", "Choose your audience"),
-                a("d7985b24", "Choose who can reply to this Article"),
+                a("e52d4998", "Choose your audience");
+            a("d7985b24", "Choose who can reply to this Article"),
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
                 a("a330771e", "Copy link to your clipboard"),
-                a("b6510e68", "Copy your Article’s URL so you can share it.");
-            a("e4a6e006", "Something went wrong. Please try again."),
+                a("b6510e68", "Copy your Article’s URL so you can share it."),
+                a("e4a6e006", "Something went wrong. Please try again."),
                 a("eff483e0", "After you publish, get a link to share the Article."),
                 a("ca15dd4e", "Draft"),
                 a("bb40bf66", "Published"),
@@ -2966,27 +2973,23 @@
                 a("b7388a56", "Footer"),
                 a("hdabc3fc", "Terms of Service"),
                 a("bc6efc72", "Privacy Policy"),
-                a("h3161192", "Cookie Policy"),
-                a("a7de64de", "Ads info"),
+                a("h3161192", "Cookie Policy");
+            a("a7de64de", "Ads info"),
                 a("jb0a4c36", "Blog"),
                 a("ce6d095a", "Careers"),
                 a("e0adec82", "Brand Resources"),
-                a("df1b7550", "Marketing");
-            a("he258678", "X for Business"),
+                a("df1b7550", "Marketing"),
+                a("he258678", "X for Business"),
                 a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
                 a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
-                a("af781666", "What do people think?"),
-                a("ad35153e", "beta"),
-                a("a1f414ee", "Share thoughts"),
                 a("fbf83158", "Warning: Payment failed"),
                 a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "Update Billing"),
                 a("fce9ecce", "Suggested Videos"),
-                a("da00e00a", "Try the new News"),
-                a("c40666d8", "Try it"),
                 a("j66b95a2", "In-Depth News"),
+                a("ad35153e", "beta"),
                 a("b58d2bd2", "Relevant Posts"),
                 a("efe6ef9e", "View post"),
                 a("b3d183ce", "Post with replies"),
@@ -3884,11 +3887,11 @@
                 a("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 a("e111f531", function (e) {
                     return e.count + " tuned in";
-                }),
-                a("cbef820f", function (e) {
-                    return e.screenName + " reposted the stream!";
                 });
-            a("e3275464", "Send"),
+            a("cbef820f", function (e) {
+                return e.screenName + " reposted the stream!";
+            }),
+                a("e3275464", "Send"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
                 a("j245c654", "Speakers"),
@@ -4359,8 +4362,8 @@
                 a("g01599b6", "Response 1"),
                 a("e02694e0", "Response 2"),
                 a("h6867fcc", "I prefer this response"),
-                a("d07488a6", "Get the Android app"),
-                a("d9cfe70c", "Access advanced Grok features"),
+                a("acc4496c", "Try Grok Voice mode"),
+                a("jd36d190", "Access advanced features with Grok Android app"),
                 a("hf9afab0", "Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 a("ef3b3f04", "Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 a("b43636b8", "Introducing Grok 3"),
@@ -4922,9 +4925,9 @@
                 a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
                 a("if2909ba", "Watch Time"),
-                a("i0e5bf4c", "Your videos"),
-                a("ed99baea", "Early Beta Access");
-            a("gf898b70", "Advanced Search"),
+                a("i0e5bf4c", "Your videos");
+            a("ed99baea", "Early Beta Access"),
+                a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5837,6 +5840,8 @@
                 a("g880d8c0", "User enrollment status data isn’t available yet"),
                 a("ab1b3d38", "Note request data isn’t available yet"),
                 a("c43fb933", "X Developer Agreement and Policy"),
+                a("af781666", "What do people think?"),
+                a("a1f414ee", "Share thoughts"),
                 a("ed88e742", "Copy link to Topic"),
                 a("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
                 a("f0dc1434", "Community Notes is currently only available in the U.S."),
@@ -5886,11 +5891,11 @@
                 }),
                 a("daca8a2c", "Open in Dock"),
                 a("e3aac82a", "Loading Broadcast"),
-                a("i0ed3f4e", "Event image"),
-                a("cbae35fa", "Report Broadcast"),
+                a("i0ed3f4e", "Event image");
+            a("cbae35fa", "Report Broadcast"),
                 a("fd12ab58", "Collection posts"),
-                a("a226497c", "Create a new Community");
-            a("d7346632", "You haven’t joined any Communities yet"),
+                a("a226497c", "Create a new Community"),
+                a("d7346632", "You haven’t joined any Communities yet"),
                 a("b732a4cc", "When you do, you’ll see their posts here."),
                 a("hff48914", "No posts could be found at this time."),
                 a("hb52cc4a", "Please try again later."),
@@ -6454,7 +6459,10 @@
                 a("f7d1a8e0", "Android App"),
                 a("aab2fae0", "iOS App"),
                 a("a35d9c9a", "Resources"),
+                a("da00e00a", "Try the new News"),
+                a("c40666d8", "Try it"),
                 a("ic61c5fc", "Scroll to top"),
+                a("dd225af8", "No people found."),
                 a("i6671128", "You’ve unlocked more on X"),
                 a("d5e4d0a6", "You can join the conversation and connect with others more easily. Now you can do the following:"),
                 a("a97bc07e", "Unlock more on X"),
@@ -6881,14 +6889,14 @@
                 a("b6b5dc94", "Become verified"),
                 a("b06db848", "Stand out from others on the platform"),
                 a("e3e3a97c", "Earn a share of revenue from your posts"),
-                a("f15bc24e", "Increased Grok limits"),
-                a("c4666e1c", "More usage of Grok 3, our latest model"),
+                a("f15bc24e", "Increased Grok limits");
+            a("c4666e1c", "More usage of Grok 3, our latest model"),
                 a("he74ae7a", "Highest Grok usage limits"),
                 a("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 a("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 a("iadf78e2", "Download videos"),
-                a("ee54c3de", "Save videos straight to your device");
-            a("ae03594c", "Small reply boost"),
+                a("ee54c3de", "Save videos straight to your device"),
+                a("ae03594c", "Small reply boost"),
                 a("e6bb08c0", "Increase the visibility of your replies"),
                 a("bf2a6acc", "Large Reply Boost"),
                 a("c2059276", "Have your replies boosted."),
@@ -7348,7 +7356,6 @@
                 a("b0c91a92", "Login or Signup to see what people on X are saying about this"),
                 a("d7071084", "Grok This"),
                 a("ee2200f4", "This story is a summary of posts on X made by grok. Story will evolve over time."),
-                a("dd225af8", "No people found."),
                 a("e1e5d552", "Edit your Circle"),
                 a("ec13f9cc", "There isn’t anyone in your Circle — yet"),
                 a("dab58e32", "When you add people, they’ll show up here."),
@@ -7413,8 +7420,6 @@
                 a("bf4558fa", "Breakdown of your organic performance"),
                 a("c69069e6", "Times this post was seen on X"),
                 a("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
-                a("d8abdaa4", "New followers"),
-                a("c72f25a8", "Follows gained directly from this post"),
                 a("acc4cf12", "Number of profile views from this post"),
                 a("c7d0d1c4", "Number of clicks on any URL in this post"),
                 a("a4da7724", "Times people viewed the details about this post"),
@@ -7862,10 +7867,7 @@
                 a("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
                 a("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 a("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                a("ce102a20", "Redirecting to Stripe"),
-                a("ddfd6718", "Payment Failed"),
-                a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                a("a62359e6", "Verified Organization Settings");
+                a("ce102a20", "Redirecting to Stripe");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7904,7 +7906,10 @@
                     r(e, t)
                 );
             }
-            a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            a("ddfd6718", "Payment Failed"),
+                a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                a("a62359e6", "Verified Organization Settings"),
+                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 a("i4dccc18", "Billing"),
                 a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 a("dac61c3c", "Account settings"),
@@ -8904,13 +8909,13 @@
                 a("ecda5f9e", "Misleading"),
                 a("a423473c", "Legally Required Notice"),
                 a("b3296688", "Visibility Limited"),
-                a("ccd32094", "Now"),
-                a("abfcce0d", function (e) {
-                    return e.amountOfTime + " ago";
-                }),
+                a("ccd32094", "Now");
+            a("abfcce0d", function (e) {
+                return e.amountOfTime + " ago";
+            }),
                 a("ae408b76", "You reposted"),
-                a("j355f008", "Pinned post");
-            a("habf9678", "Pinned by Author"),
+                a("j355f008", "Pinned post"),
+                a("habf9678", "Pinned by Author"),
                 a("db0798ed", function (e) {
                     return e.topicName + " Topic";
                 }),
@@ -13050,6 +13055,7 @@
                 (f.a683162061 = y({ 1: f("en").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d", timeSeparator: ":", days: { E: { 1: { sun: "Sun", mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat" } } }, months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" } } } })),
                 (f.a1981853560 = y({ 1: f("en").numberFormatter({ raw: "0" }) }, { pattern: "E, MMM d, y", timeSeparator: ":", days: { E: { 1: { sun: "Sun", mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri", sat: "Sat" } } }, months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" } } } })),
                 (f.a690550229 = y({ 1: f("en").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d", timeSeparator: ":", months: { M: { 4: { 1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December" } } } })),
+                (f.b1212843107 = y({ 1: f("en").numberFormatter({ raw: "0" }), 2: f("en").numberFormatter({ raw: "00" }) }, { pattern: "MMMM d, y 'at' h:mm:ss a z", timeSeparator: ":", months: { M: { 4: { 1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December" } } }, dayPeriods: { am: "AM", pm: "PM" }, gmtFormat: "GMT{0}", gmtZeroFormat: "GMT", hourFormat: ["+H;-H", "+H:mm;-H:mm"] })),
                 (f.b2093703356 = y({ 1: f("en").numberFormatter({ raw: "0" }), 2: f("en").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
                 (f.b683761904 = y({ 1: f("en").numberFormatter({ raw: "0" }) }, { pattern: "MMMM d, y", timeSeparator: ":", months: { M: { 4: { 1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December" } } } })),
                 (f.a596533135 = y({ 1: f("en").numberFormatter({ raw: "0" }), 2: f("en").numberFormatter({ raw: "00" }) }, { pattern: "MMM d, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" } } }, dayPeriods: { am: "AM", pm: "PM" } })),
@@ -13071,6 +13077,7 @@
                 (f.a1434444438 = g(f("en").dateToPartsFormatter({ skeleton: "MMMEd" }))),
                 (f.b498196529 = g(f("en").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
                 (f.a1441832606 = g(f("en").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (f.b1604250188 = g(f("en").dateToPartsFormatter({ datetime: "long" }))),
                 (f.b1665844787 = g(f("en").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
                 (f.a218160295 = g(f("en").dateToPartsFormatter({ date: "long" }))),
                 (f.b1883516954 = g(f("en").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
@@ -13136,6 +13143,7 @@
                 a("c0bdd345", f.b810332058),
                 a("aa2aa1a1", f.b498196529),
                 a("da44942d", f.a1441832606),
+                a("a54d3ef5", f.b1604250188),
                 a("bfbc051d", f.b1665844787),
                 a("ba2e82a1", f.a218160295),
                 a("fc209bb7", f.b1883516954),
@@ -13226,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.39f3554a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.666b7b4a.js.map
