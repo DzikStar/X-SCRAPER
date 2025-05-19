@@ -85,7 +85,7 @@
                 L = n.memo((e) => {
                     const { user: t, ...r } = e,
                         s = g()(h.Z, t);
-                    return n.createElement(W, (0, _.Z)({ profileImageUrlHttps: s.legacy?.profile_image_url_https ?? "", screenName: s.legacy?.screen_name ?? "", user: s, userId: s.rest_id }, r));
+                    return n.createElement(W, (0, _.Z)({ profileImageUrlHttps: s.avatar?.image_url ?? "", screenName: s.legacy?.screen_name ?? "", user: s, userId: s.rest_id }, r));
                 });
             const V = n.memo(
                 D(function (e) {
@@ -231,7 +231,7 @@
                 Be = (e) => {
                     const { user: t, ...r } = e,
                         s = g()(J.Z, e.user);
-                    return n.createElement(Ie, (0, _.Z)({}, r, { blockedBy: s.legacy?.blocked_by, blocking: s.legacy?.blocking, canDm: Boolean(s.legacy?.can_dm), defaultProfileImage: Boolean(s.legacy?.default_profile_image), description: s.legacy?.description || "", following: s.legacy?.following ?? !1, notifications: Boolean(s.legacy?.notifications), profileBannerUrl: s.legacy?.profile_banner_url || "", superFollowEligible: Boolean(s.super_follow_eligible), superFollowing: Boolean(s.super_following), userId: s.rest_id, userRef: s }));
+                    return n.createElement(Ie, (0, _.Z)({}, r, { blockedBy: s.legacy?.blocked_by, blocking: s.legacy?.blocking, canDm: Boolean(s.dm_permissions?.can_dm), defaultProfileImage: Boolean(s.legacy?.default_profile_image), description: s.legacy?.description || "", following: s.legacy?.following ?? !1, notifications: Boolean(s.legacy?.notifications), profileBannerUrl: s.legacy?.profile_banner_url || "", superFollowEligible: Boolean(s.super_follow_eligible), superFollowing: Boolean(s.super_following), userId: s.rest_id, userRef: s }));
                 };
             function ke(e) {
                 if (e.user) {
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.a221a2ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.aeac022a.js.map

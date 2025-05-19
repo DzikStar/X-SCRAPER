@@ -4,8 +4,8 @@
     {
         38945: (e, t, i) => {
             i.d(t, { Z: () => o });
-            var n,
-                r,
+            var r,
+                n,
                 a,
                 l = {
                     fragment: {
@@ -18,7 +18,7 @@
                                 kind: "RequiredField",
                                 field: {
                                     alias: "viewer",
-                                    args: (n = [{ kind: "Literal", name: "s", value: "4721" }]),
+                                    args: (r = [{ kind: "Literal", name: "s", value: "4721" }]),
                                     concreteType: "Viewer",
                                     kind: "LinkedField",
                                     name: "viewer_v2",
@@ -47,7 +47,7 @@
                                                                 {
                                                                     kind: "InlineFragment",
                                                                     selections: [
-                                                                        (r = {
+                                                                        (n = {
                                                                             alias: null,
                                                                             args: [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing", "SuperFollows"] }],
                                                                             concreteType: "VerifiedProgramsEligibilities",
@@ -91,7 +91,7 @@
                         selections: [
                             {
                                 alias: "viewer",
-                                args: n,
+                                args: r,
                                 concreteType: "Viewer",
                                 kind: "LinkedField",
                                 name: "viewer_v2",
@@ -114,7 +114,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [r, (a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [n, (a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -134,8 +134,8 @@
         },
         423488: (e, t, i) => {
             i.d(t, { Z: () => f });
-            var n = i(202784),
-                r = i(325686),
+            var r = i(202784),
+                n = i(325686),
                 a = i(731708),
                 l = i(420412),
                 o = i(392237),
@@ -149,21 +149,21 @@
                 b = c().fbb03ba6,
                 h = c().hb4c5169,
                 f = ({ failedRequirements: e }) => {
-                    const { featureSwitches: t } = n.useContext(u.rC),
+                    const { featureSwitches: t } = r.useContext(u.rC),
                         i = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
                         o = t.getNumberValue("responsive_web_ad_revenue_sharing_number_of_impressions") || 15,
                         s = h({ impression_number: o });
-                    return n.createElement(r.Z, { style: y.eligibilityRoot }, n.createElement(r.Z, { key: m, style: y.requirement }, n.createElement(a.ZP, { style: y.requirementLabel, weight: "bold" }, i ? g : m), e.includes("verified") ? n.createElement(d.default, { style: y.iconUnchecked, testID: "verifiedUnchecked" }) : n.createElement(p.default, { style: y.iconChecked, testID: "verifiedChecked" })), n.createElement(l.Z, null), n.createElement(r.Z, { key: s, style: y.requirement }, n.createElement(a.ZP, { style: y.requirementLabel, weight: "bold" }, s), e.includes("tweet_impressions") ? n.createElement(d.default, { style: y.iconUnchecked, testID: "impressionsUnchecked" }) : n.createElement(p.default, { style: y.iconChecked, testID: "impressionsChecked" })), n.createElement(l.Z, null), n.createElement(r.Z, { key: b, style: y.requirement }, n.createElement(a.ZP, { style: y.requirementLabel, weight: "bold" }, b), e.includes("followers") ? n.createElement(d.default, { style: y.iconUnchecked, testID: "followersUnchecked" }) : n.createElement(p.default, { style: y.iconChecked, testID: "followersChecked" })));
+                    return r.createElement(n.Z, { style: y.eligibilityRoot }, r.createElement(n.Z, { key: m, style: y.requirement }, r.createElement(a.ZP, { style: y.requirementLabel, weight: "bold" }, i ? g : m), e.includes("verified") ? r.createElement(d.default, { style: y.iconUnchecked, testID: "verifiedUnchecked" }) : r.createElement(p.default, { style: y.iconChecked, testID: "verifiedChecked" })), r.createElement(l.Z, null), r.createElement(n.Z, { key: s, style: y.requirement }, r.createElement(a.ZP, { style: y.requirementLabel, weight: "bold" }, s), e.includes("tweet_impressions") ? r.createElement(d.default, { style: y.iconUnchecked, testID: "impressionsUnchecked" }) : r.createElement(p.default, { style: y.iconChecked, testID: "impressionsChecked" })), r.createElement(l.Z, null), r.createElement(n.Z, { key: b, style: y.requirement }, r.createElement(a.ZP, { style: y.requirementLabel, weight: "bold" }, b), e.includes("followers") ? r.createElement(d.default, { style: y.iconUnchecked, testID: "followersUnchecked" }) : r.createElement(p.default, { style: y.iconChecked, testID: "followersChecked" })));
                 },
                 y = o.default.create((e) => ({ eligibilityRoot: { backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 }, requirement: { flexDirection: "row", alignItems: "center" }, requirementLabel: { flex: 1, paddingEnd: 10 }, requirementsRoot: { gap: e.spaces.space24, marginVertical: e.spaces.space32 } }));
         },
         299690: (e, t, i) => {
             i.d(t, { Z: () => l });
-            var n = i(38945),
-                r = (i(585488), i(535338));
-            const a = n.Z,
+            var r = i(38945),
+                n = (i(585488), i(535338));
+            const a = r.Z,
                 l = () => {
-                    const { viewer: e } = (0, r.p)(a, {}),
+                    const { viewer: e } = (0, n.p)(a, {}),
                         t = e.user_results.result,
                         i = t.verified_program_eligibility?.ad_revenue_sharing_eligibility || [];
                     return { subscriptionsFailedRequirements: t.verified_program_eligibility?.super_follows_eligibility || [], revShareFailedRequirements: i };
@@ -171,8 +171,8 @@
         },
         299239: (e, t, i) => {
             i.r(t), i.d(t, { default: () => J });
-            var n = i(202784),
-                r = i(154003),
+            var r = i(202784),
+                n = i(154003),
                 a = i(392237),
                 l = i(332920),
                 o = i.n(l),
@@ -191,9 +191,9 @@
                 v = i(439592),
                 k = i(157130),
                 E = i(779610),
-                C = i(323265);
-            const w = i.p + "monetization-image-premium-tools.0265296a.png",
-                Z = i.p + "monetization-image-reach.9f36135a.png",
+                w = i(323265);
+            const Z = i.p + "monetization-image-premium-tools.0265296a.png",
+                C = i.p + "monetization-image-reach.9f36135a.png",
                 S = i.p + "monetization-image-rev-share.2d15ac6a.png",
                 x = i.p + "monetization-image-subscribers.c992566a.png";
             var R = i(857378),
@@ -203,65 +203,65 @@
                 $ = i(299690),
                 F = i(228477);
             function A({ children: e, description: t, title: i }) {
-                const r = (0, h.LX)(),
-                    a = n.useMemo(() => ({ width: r ? "100%" : 440 }), [r]);
-                return n.createElement(b.Z, { style: a }, n.createElement(f.ZP, { size: r ? "headline1" : "title4", weight: r ? "bold" : void 0 }, i), n.createElement(y.Z, { size: "space8" }), n.createElement(b.Z, { style: { height: 50 } }, n.createElement(f.ZP, { color: "gray700", size: r ? "body" : "headline2" }, t)), n.createElement(b.Z, { style: D.content }, e));
+                const n = (0, h.LX)(),
+                    a = r.useMemo(() => ({ width: n ? "100%" : 440 }), [n]);
+                return r.createElement(b.Z, { style: a }, r.createElement(f.ZP, { size: n ? "headline1" : "title4", weight: n ? "bold" : void 0 }, i), r.createElement(y.Z, { size: "space8" }), r.createElement(b.Z, { style: { height: 50 } }, r.createElement(f.ZP, { color: "gray700", size: n ? "body" : "headline2" }, t)), r.createElement(b.Z, { style: D.content }, e));
             }
             const D = a.default.create((e) => ({ content: { marginTop: e.spaces.space16, width: "100%" } })),
                 q = o().bfb6be8a,
-                T = o().ed6c6da2,
-                j = o().bee20918,
-                B = o().h93b6580,
+                B = o().ed6c6da2,
+                T = o().bee20918,
+                j = o().h93b6580,
                 V = o().eea6d8f8,
                 U = o().a0e8811e,
                 H = o().e1a74ac0,
                 L = o().cd3a6f9a,
                 W = o().c35e6144,
                 G = o().b9dbeb34,
-                K = o().b2d41138,
-                M = o().defa7f12,
+                M = o().b2d41138,
+                K = o().defa7f12,
                 N = () => {
                     const e = (0, P.Z)();
-                    n.useEffect(() => {
+                    r.useEffect(() => {
                         e.scribeAction("impression");
                     }, [e]);
                     const t = (0, h.LX)(),
-                        i = C.ZP.isWebView(),
-                        [r, a] = n.useState(!1),
-                        [l, s] = n.useState(!1),
+                        i = w.ZP.isWebView(),
+                        [n, a] = r.useState(!1),
+                        [l, s] = r.useState(!1),
                         { revShareFailedRequirements: c, subscriptionsFailedRequirements: d } = (0, $.Z)(),
-                        p = n.useMemo(() => ({ width: t ? "100%" : 920 }), [t]),
-                        u = n.useMemo(() => n.createElement(z.Z, { variant: "MonetizationPromoPage" }), []),
-                        m = n.useCallback(() => {
-                            a(!r), e.scribe({ component: "rev_share_eligibility", action: "toggle" });
-                        }, [a, r, e]),
-                        g = n.useCallback(() => {
+                        p = r.useMemo(() => ({ width: t ? "100%" : 920 }), [t]),
+                        u = r.useMemo(() => r.createElement(z.Z, { variant: "MonetizationPromoPage" }), []),
+                        m = r.useCallback(() => {
+                            a(!n), e.scribe({ component: "rev_share_eligibility", action: "toggle" });
+                        }, [a, n, e]),
+                        g = r.useCallback(() => {
                             s(!l), e.scribe({ component: "subscriptions_eligibility", action: "toggle" });
                         }, [s, l, e]);
-                    return n.createElement(
+                    return r.createElement(
                         b.Z,
                         { style: O.container },
-                        n.createElement(
+                        r.createElement(
                             b.Z,
                             { style: O.scrollable },
-                            n.createElement(
+                            r.createElement(
                                 b.Z,
                                 { style: O.contentContainer },
-                                n.createElement(
+                                r.createElement(
                                     b.Z,
                                     { style: O.content },
-                                    n.createElement(
+                                    r.createElement(
                                         b.Z,
                                         { style: p },
-                                        n.createElement(b.Z, { style: O.header }, n.createElement(f.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, q), n.createElement(y.Z, { size: "space8" }), n.createElement(f.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, T), t ? null : n.createElement(n.Fragment, null, n.createElement(y.Z, { size: "space36" }), n.createElement(b.Z, { style: O.upsellButtonContainer }, u))),
-                                        n.createElement(y.Z, { size: t ? "space32" : "space80" }),
-                                        n.createElement(b.Z, { style: O.upsellBlocks }, n.createElement(A, { description: B, title: j }, n.createElement(b.Z, { style: O.imageContainer }, n.createElement(_.Z, { "aria-label": j, aspectMode: v.Z.exact(2), image: S })), n.createElement(k.Z, { renderContent: () => n.createElement(I.Z, { failedRequirements: c }), wrapperStyle: O.popoverContent }, n.createElement(E.Z, { label: V, onPress: m, paddingHorizontal: "space0", styleOverride: O.pivot }))), n.createElement(A, { description: H, title: U }, n.createElement(b.Z, { style: O.imageContainer }, n.createElement(_.Z, { "aria-label": U, aspectMode: v.Z.exact(2), image: x })), n.createElement(k.Z, { renderContent: () => n.createElement(F.Z, { failedRequirements: d }), wrapperStyle: O.popoverContent }, n.createElement(E.Z, { label: L, onPress: g, styleOverride: O.pivot }))), n.createElement(A, { description: G, title: W }, n.createElement(b.Z, { style: O.imageContainer }, n.createElement(_.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: w }))), n.createElement(A, { description: M, title: K }, n.createElement(b.Z, { style: O.imageContainer }, n.createElement(_.Z, { "aria-label": K, aspectMode: v.Z.exact(2), image: Z })))),
-                                        n.createElement(f.ZP, { color: "gray700", style: O.disclaimer }, n.createElement(o().I18NFormatMessage, { $i18n: "gbef9649" }, n.createElement(f.ZP, { link: "https://help.x.com/using-x/x-premium-faq#item2" }, o().i3e4955d))),
+                                        r.createElement(b.Z, { style: O.header }, r.createElement(f.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, q), r.createElement(y.Z, { size: "space8" }), r.createElement(f.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, B), t ? null : r.createElement(r.Fragment, null, r.createElement(y.Z, { size: "space36" }), r.createElement(b.Z, { style: O.upsellButtonContainer }, u))),
+                                        r.createElement(y.Z, { size: t ? "space32" : "space80" }),
+                                        r.createElement(b.Z, { style: O.upsellBlocks }, r.createElement(A, { description: j, title: T }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": T, aspectMode: v.Z.exact(2), image: S })), r.createElement(k.Z, { renderContent: () => r.createElement(I.Z, { failedRequirements: c }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: V, onPress: m, paddingHorizontal: "space0", styleOverride: O.pivot }))), r.createElement(A, { description: H, title: U }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": U, aspectMode: v.Z.exact(2), image: x })), r.createElement(k.Z, { renderContent: () => r.createElement(F.Z, { failedRequirements: d }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: L, onPress: g, styleOverride: O.pivot }))), r.createElement(A, { description: G, title: W }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: Z }))), r.createElement(A, { description: K, title: M }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": M, aspectMode: v.Z.exact(2), image: C })))),
+                                        r.createElement(f.ZP, { color: "gray700", style: O.disclaimer }, r.createElement(o().I18NFormatMessage, { $i18n: "gbef9649" }, r.createElement(f.ZP, { link: "https://help.x.com/using-x/x-premium-faq#item2" }, o().i3e4955d))),
                                     ),
                                 ),
                             ),
                         ),
-                        t ? n.createElement(b.Z, { style: [O.footer, i ? O.footerWebview : O.footerDefault] }, n.createElement(b.Z, { style: O.gradient }), u) : null,
+                        t ? r.createElement(b.Z, { style: [O.footer, i ? O.footerWebview : O.footerDefault] }, r.createElement(b.Z, { style: O.gradient }), u) : null,
                     );
                 },
                 O = a.default.create((e) => ({ container: { display: "grid", width: "100%", position: "relative" }, popoverContent: { margin: 0, pointer: "cursor" }, body: { width: "100%", height: "100%", maxHeight: "100%", flexDirection: "column" }, topGrid: { width: "100%", height: 200, position: "absolute", start: 0, top: 0, zIndex: 1, transform: "rotate(180deg)" }, bottomGrid: { width: "100%", height: 150, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, header: { width: "100%", flexDirection: "column" }, scrollable: { width: "100%", flex: 1, flexGrow: 1, overflow: "auto", minHeight: "100%", height: "100%", alignItems: "center" }, content: { position: "relative", zIndex: 10, paddingTop: e.spaces.space36, boxSizing: "border-box", paddingHorizontal: a.default.theme.spaces.space16, paddingBottom: 180 }, contentContainer: { minWidth: "100%", minHeight: "100%", alignItems: "center" }, upsellButtonContainer: { width: "min-content", alignSelf: "center" }, upsellBlocks: { marginVertical: e.spaces.space16, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", gap: e.spaces.space32, rowGap: e.spaces.space56 }, imageContainer: { borderRadius: e.borderRadii.large, overflow: "hidden", boxShadow: "0 20px 50px rgba(136,153,166,0.15)", borderColor: e.colors.gray50, borderWidth: e.borderWidths.small }, pivot: { marginTop: e.spaces.space8, pointer: "cursor", paddingStart: 0 }, disclaimer: { marginTop: e.spaces.space32, textAlign: "center" }, footer: { position: "fixed", width: "100%", paddingHorizontal: e.spaces.space28, paddingVertical: e.spaces.space20, backgroundColor: e.colors.cellBackground }, gradient: { position: "absolute", height: 28, backgroundImage: `linear-gradient(${e.colors.transparent} 0%, ${e.colors.navigationBackground} 100%)`, width: "100%", top: -28, start: 0, pointerEvents: "none" }, footerWebview: { bottom: 0 }, footerDefault: { bottom: R.h$ } })),
@@ -275,17 +275,17 @@
                         f = b?.ad_revenue_sharing_user_profile?.is_active,
                         y = o?.super_follows_application_status || "NotStarted",
                         _ = o?.ad_revenue_sharing_application_status || "NotStarted",
-                        v = n.createElement(r.ZP, { icon: n.createElement(s.default, null), link: "https://help.x.com/using-x/x-premium-faq#item2", style: Y.helpCenterButton });
-                    return (0, g.F9)({ subscriptionsApplicationStatus: y, revShareApplicationStatus: _, revShareActive: f, subscriptionsActive: h, isAnyPremiumSubscriber: a, monetizationUpsellEnabled: l }) ? n.createElement(p.nO, { namespace: { page: "monetization", section: "upsell" } }, n.createElement(c.A, { documentTitle: Q, history: e.history, isFullWidth: !0, onBackClick: () => e.history.goBack(), primaryContent: n.createElement(N, null), primaryContentLabel: Q, rightControl: v, sidebarContent: null })) : n.createElement(u.Z, { to: "/settings/monetization" });
+                        v = r.createElement(n.ZP, { icon: r.createElement(s.default, null), link: "https://help.x.com/using-x/x-premium-faq#item2", style: Y.helpCenterButton });
+                    return (0, g.F9)({ subscriptionsApplicationStatus: y, revShareApplicationStatus: _, revShareActive: f, subscriptionsActive: h, isAnyPremiumSubscriber: a, monetizationUpsellEnabled: l }) ? r.createElement(p.nO, { namespace: { page: "monetization", section: "upsell" } }, r.createElement(c.A, { documentTitle: Q, history: e.history, isFullWidth: !0, onBackClick: () => e.history.goBack(), primaryContent: r.createElement(N, null), primaryContentLabel: Q, rightControl: v, sidebarContent: null })) : r.createElement(u.Z, { to: "/settings/monetization" });
                 },
-                J = n.memo(X),
+                J = r.memo(X),
                 Y = a.default.create((e) => ({ helpCenterButton: { border: "none" } }));
         },
         698579: (e, t, i) => {
-            i.d(t, { F9: () => F, Fx: () => Z, XS: () => p, Xb: () => $, j0: () => k });
-            var n = i(688715),
-                r = i(332920),
-                a = i.n(r),
+            i.d(t, { F9: () => F, Fx: () => C, XS: () => p, Xb: () => $, j0: () => k });
+            var r = i(688715),
+                n = i(332920),
+                a = i.n(n),
                 l = i(234558),
                 o = i(491831),
                 s = i(521058),
@@ -303,11 +303,11 @@
                 v = { CanVerifyIdentity: a().e32040c4, RequestLocked: a().d8f5cce4, PendingResult: a().j8769b42, IdentityNonVerifiable: _, UnavailableMissingBlueSubscription: _ },
                 k = { pathname: d.NW.stripeSetup, state: { cameFromEarningsDashboard: !0 } },
                 E = { Icon: l.default, iconBGColor: "green600", heading: "Video Ads", description: "You are on track for payouts", id: p.preRollAds, pill: { label: "NEW", color: "gray1000" }, link: "/settings/ad_rev_share_dashboard", scribeComponent: "pre-roll-ads-dashboard" },
-                C = { Icon: o.default, iconBGColor: "blue600", heading: a().d7b51c68, description: "", id: p.subscriptions, link: "/settings/monetization/subscriptions/dashboard", scribeComponent: "creator-subscription-dashboard" },
-                w = (e) => ({ Icon: s.default, iconBGColor: "orange600", heading: e ? a().be955554 : a().b03a3d62, description: a().cbbe29c2, id: p.adRev, link: "/settings/ad_rev_share_dashboard", scribeComponent: "ad-revenue-sharing-dashboard" }),
-                Z = { Icon: c.default, iconBGColor: "purple600", heading: a().g97a2d6c, description: a().f30774ea, id: "learn_more", link: (0, n.ju)("https://help.x.com/using-x/creator-dashboard"), scribeComponent: "learn-more" };
+                w = { Icon: o.default, iconBGColor: "blue600", heading: a().d7b51c68, description: "", id: p.subscriptions, link: "/settings/monetization/subscriptions/dashboard", scribeComponent: "creator-subscription-dashboard" },
+                Z = (e) => ({ Icon: s.default, iconBGColor: "orange600", heading: e ? a().be955554 : a().b03a3d62, description: a().cbbe29c2, id: p.adRev, link: "/settings/ad_rev_share_dashboard", scribeComponent: "ad-revenue-sharing-dashboard" }),
+                C = { Icon: c.default, iconBGColor: "purple600", heading: a().g97a2d6c, description: a().f30774ea, id: "learn_more", link: (0, r.ju)("https://help.x.com/using-x/creator-dashboard"), scribeComponent: "learn-more" };
             function S(e, t) {
-                return "ad_revenue_sharing" === e ? w(t) : "creator_subs" === e ? C : E;
+                return "ad_revenue_sharing" === e ? Z(t) : "creator_subs" === e ? w : E;
             }
             function x(e) {
                 return e === p.adRev ? "/settings/ad_rev_share_eligibility" : e === p.subscriptions ? "/settings/superfollows/application/eligibility" : e === p.preRollAds ? "/" : void 0;
@@ -324,19 +324,19 @@
             function I(e, t) {
                 return { label: t || (e ? g : b), color: t ? "orange50" : e ? "green500" : "magenta500" };
             }
-            function $({ applicationStatus: e, eligibility: t, id: i, idvStatus: n, isActive: r, isPayoutSetupIncomplete: l = !1, pendingIdv: o = !1, rejectedCreatorCanReapply: s, revShareUpdateEnabled: c = !1 }) {
+            function $({ applicationStatus: e, eligibility: t, id: i, idvStatus: r, isActive: n, isPayoutSetupIncomplete: l = !1, pendingIdv: o = !1, rejectedCreatorCanReapply: s, revShareUpdateEnabled: c = !1 }) {
                 const d = { ...S(i, c) },
                     g = 0 === t.length || (1 === t.length && "id_verified" === t[0]);
-                if (r && !o) return d;
-                const b = n ? v[n] : "";
+                if (n && !o) return d;
+                const b = r ? v[r] : "";
                 if (i === p.subscriptions) {
-                    const n = "NotStarted" === e || ("Rejected" === e && s),
-                        r = "Rejected" === e && !s;
+                    const r = "NotStarted" === e || ("Rejected" === e && s),
+                        n = "Rejected" === e && !s;
                     let l;
-                    (d.link = r ? "/settings/superfollows/application/rejected" : n ? (g ? R(i) : x(i)) : void 0),
-                        o ? (l = h) : r ? (l = y) : n || (l = f),
-                        (d.description = (function (e, t, i, n, r, l) {
-                            return e ? r : "Rejected" === t && l ? a().aea0b11a : u[t] || z(i, n);
+                    (d.link = n ? "/settings/superfollows/application/rejected" : r ? (g ? R(i) : x(i)) : void 0),
+                        o ? (l = h) : n ? (l = y) : r || (l = f),
+                        (d.description = (function (e, t, i, r, n, l) {
+                            return e ? n : "Rejected" === t && l ? a().aea0b11a : u[t] || z(i, r);
                         })(o, e, i, c, b, s)),
                         (d.disabled = t.includes("generic_violation") || t.includes("do_not_charge")),
                         (d.pill = I(g, l)),
@@ -348,8 +348,8 @@
         },
         228477: (e, t, i) => {
             i.d(t, { Z: () => v });
-            var n = i(202784),
-                r = i(325686),
+            var r = i(202784),
+                n = i(325686),
                 a = i(891198),
                 l = i(731708),
                 o = i(420412),
@@ -373,57 +373,57 @@
                         d = a.ZP.getTruncatedCount(s),
                         v = a.ZP.getTruncatedCount(c),
                         E = h({ minFollowersCount: d }),
-                        C = [
+                        w = [
                             { label: i ? b : g, checked: !e.includes("blue_subscription") },
                             { label: E, checked: !e.includes("followers") },
                             { label: _({ count: v }), checked: !e.includes("impressions") },
                             { label: f, checked: !e.includes("tweets") },
                             { label: y, checked: !e.includes("age") },
                         ];
-                    return n.createElement(
-                        r.Z,
+                    return r.createElement(
+                        n.Z,
                         { style: k.root },
-                        C.map((e, t, i) => n.createElement(n.Fragment, { key: t }, n.createElement(r.Z, { key: e.label, style: k.item }, n.createElement(l.ZP, { style: k.label, weight: "bold" }, e.label), e.checked ? n.createElement(p.default, { style: k.iconChecked }) : n.createElement(u.default, { style: k.iconUnchecked })), i.length !== t + 1 && n.createElement(o.Z, null))),
+                        w.map((e, t, i) => r.createElement(r.Fragment, { key: t }, r.createElement(n.Z, { key: e.label, style: k.item }, r.createElement(l.ZP, { style: k.label, weight: "bold" }, e.label), e.checked ? r.createElement(p.default, { style: k.iconChecked }) : r.createElement(u.default, { style: k.iconUnchecked })), i.length !== t + 1 && r.createElement(o.Z, null))),
                     );
                 },
                 k = s.default.create((e) => ({ root: { backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, gap: { gap: e.spaces.space24 }, item: { flexDirection: "row" }, label: { flex: 1, marginEnd: e.spaces.space8 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 } }));
         },
         720816: (e, t, i) => {
-            i.d(t, { $w: () => c, D1: () => o, Jz: () => r, Km: () => d, LI: () => n, NW: () => l, o5: () => s, wU: () => a });
-            const n = "/settings/monetization",
-                r = "/settings/superfollows",
-                a = Object.freeze({ root: `${r}/application`, eligibility: `${r}/application/eligibility`, pricing: `${r}/application/pricing`, completeProfile: `${r}/application/complete_profile`, submit: `${r}/application/submit`, submitted: `${r}/application/submitted`, waitlisted: `${r}/application/waitlisted`, rejected: `${r}/application/rejected` }),
-                l = Object.freeze({ root: `${r}/onboarding`, perksIntro: `${r}/onboarding/perks_intro`, perksDescription: `${r}/onboarding/perks_description`, perksBadges: `${r}/onboarding/perks_badges`, perksConfirm: `${r}/onboarding/perks_confirm`, pricing: `${r}/onboarding/pricing`, pricingConfirm: `${r}/onboarding/pricing_confirm`, stripeSetup: `${r}/onboarding/stripe_setup`, stripePending: `${r}/onboarding/stripe_pending`, stripeCompleted: `${r}/onboarding/stripe_completed` }),
-                o = Object.freeze({ root: `${r}/management`, perksIntro: `${r}/management/perks_intro`, perksDescription: `${r}/management/perks_description`, perksConfirm: `${r}/management/perks_confirm`, perksPricing: `${r}/management/perks_pricing` }),
-                s = `${r}/perks_intro_examples`,
-                c = `${r}/perks_description_examples`,
-                d = `${r}/perks_preview`;
+            i.d(t, { $w: () => c, D1: () => o, Jz: () => n, Km: () => d, LI: () => r, NW: () => l, o5: () => s, wU: () => a });
+            const r = "/settings/monetization",
+                n = "/settings/superfollows",
+                a = Object.freeze({ root: `${n}/application`, eligibility: `${n}/application/eligibility`, pricing: `${n}/application/pricing`, completeProfile: `${n}/application/complete_profile`, submit: `${n}/application/submit`, submitted: `${n}/application/submitted`, waitlisted: `${n}/application/waitlisted`, rejected: `${n}/application/rejected` }),
+                l = Object.freeze({ root: `${n}/onboarding`, perksIntro: `${n}/onboarding/perks_intro`, perksDescription: `${n}/onboarding/perks_description`, perksBadges: `${n}/onboarding/perks_badges`, perksConfirm: `${n}/onboarding/perks_confirm`, pricing: `${n}/onboarding/pricing`, pricingConfirm: `${n}/onboarding/pricing_confirm`, stripeSetup: `${n}/onboarding/stripe_setup`, stripePending: `${n}/onboarding/stripe_pending`, stripeCompleted: `${n}/onboarding/stripe_completed` }),
+                o = Object.freeze({ root: `${n}/management`, perksIntro: `${n}/management/perks_intro`, perksDescription: `${n}/management/perks_description`, perksConfirm: `${n}/management/perks_confirm`, perksPricing: `${n}/management/perks_pricing` }),
+                s = `${n}/perks_intro_examples`,
+                c = `${n}/perks_description_examples`,
+                d = `${n}/perks_preview`;
         },
         420412: (e, t, i) => {
             i.d(t, { Z: () => s });
-            var n = i(202784),
-                r = i(325686),
+            var r = i(202784),
+                n = i(325686),
                 a = i(235902),
                 l = i(885015),
                 o = i(392237);
             function s({ borderColor: e = "borderColor", isSlim: t = !1, label: i }) {
                 const { isWebRedesign: s } = a.ZP.useProps(),
                     d = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: o.default.theme.colors[e] ?? o.default.theme.colors.borderColor };
-                return i ? n.createElement(l.Z, { style: !t && c.root, withGutter: !0 }, n.createElement(r.Z, { style: c.gapColumn }, n.createElement(r.Z, { style: [c.gap, d] })), n.createElement(r.Z, { style: c.gapText }, i), n.createElement(r.Z, { style: c.gapColumn }, n.createElement(r.Z, { style: [c.gap, d] }))) : n.createElement(r.Z, { style: [!t && c.root, s() && c.rootRedesign, c.gap, d] });
+                return i ? r.createElement(l.Z, { style: !t && c.root, withGutter: !0 }, r.createElement(n.Z, { style: c.gapColumn }, r.createElement(n.Z, { style: [c.gap, d] })), r.createElement(n.Z, { style: c.gapText }, i), r.createElement(n.Z, { style: c.gapColumn }, r.createElement(n.Z, { style: [c.gap, d] }))) : r.createElement(n.Z, { style: [!t && c.root, s() && c.rootRedesign, c.gap, d] });
             }
             const c = o.default.create((e) => ({ borderColor: { backgroundColor: o.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: o.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, i) => {
             i.d(t, { Z: () => c });
-            var n = i(807896),
-                r = i(202784),
+            var r = i(807896),
+                n = i(202784),
                 a = i(325686),
                 l = i(392237);
-            class o extends r.Component {
+            class o extends n.Component {
                 render() {
                     const { children: e, style: t, withGutter: i, ...l } = this.props,
-                        o = r.Children.map(e, (e) => e && r.cloneElement(e, { style: [e.props.style, s.column, i && s.withGutterColumn] }));
-                    return r.createElement(a.Z, (0, n.Z)({ style: [t, s.root, i && s.withGutter] }, l), o);
+                        o = n.Children.map(e, (e) => e && n.cloneElement(e, { style: [e.props.style, s.column, i && s.withGutterColumn] }));
+                    return n.createElement(a.Z, (0, r.Z)({ style: [t, s.root, i && s.withGutter] }, l), o);
                 }
             }
             o.defaultProps = { withGutter: !1 };
@@ -432,24 +432,37 @@
         },
         779610: (e, t, i) => {
             i.d(t, { Z: () => d });
-            var n = i(202784),
-                r = i(325686),
+            var r = i(202784),
+                n = i(325686),
                 a = i(191796),
                 l = i(58399),
                 o = i(731708),
                 s = i(952428),
                 c = i(392237);
             const d = (e) => {
-                    const { decoration: t, description: i, disabled: d = !1, isActive: u = !1, label: m, link: g, onPress: b, paddingHorizontal: h, renderRightContent: f, role: y = "tab", styleOverride: _, testID: v = "pivot", thumbnail: k, thumbnailSize: E, withoutArrow: C = !1 } = e,
-                        w = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
-                        Z = "string" == typeof m ? n.createElement(o.ZP, null, m) : m,
+                    const { decoration: t, description: i, disabled: d = !1, isActive: u = !1, label: m, link: g, onPress: b, paddingHorizontal: h, renderRightContent: f, role: y = "tab", styleOverride: _, testID: v = "pivot", thumbnail: k, thumbnailSize: E, withoutArrow: w = !1 } = e,
+                        Z = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
+                        C = "string" == typeof m ? r.createElement(o.ZP, null, m) : m,
                         S = "object" == typeof g && g.external && !g.openInSameFrame,
-                        x = i ? ("string" == typeof i ? n.createElement(o.ZP, { color: "gray700", size: "subtext2", testID: `${v}-description` }, i) : i) : null,
-                        R = n.useMemo(() => ("space0" === h ? { paddingHorizontal: 0 } : { paddingHorizontal: h ? c.default.theme.spaces[h] : c.default.theme.componentDimensions.gutterHorizontal }), [h]);
-                    return n.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : g, onPress: b, role: y, style: [p.root, R, d && p.disabled, _], testID: v, withInteractiveStyling: !!g || !!b }, n.createElement(r.Z, { style: p.contentContainer }, k ? n.createElement(r.Z, { style: w }, k) : null, n.createElement(r.Z, { style: p.content }, Z, x), f ? f() : null, (!g && !b) || d || C ? null : S ? n.createElement(a.default, { style: p.icon }) : n.createElement(l.default, { style: p.icon })), t);
+                        x = i ? ("string" == typeof i ? r.createElement(o.ZP, { color: "gray700", size: "subtext2", testID: `${v}-description` }, i) : i) : null,
+                        R = r.useMemo(() => ("space0" === h ? { paddingHorizontal: 0 } : { paddingHorizontal: h ? c.default.theme.spaces[h] : c.default.theme.componentDimensions.gutterHorizontal }), [h]);
+                    return r.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : g, onPress: b, role: y, style: [p.root, R, d && p.disabled, _], testID: v, withInteractiveStyling: !!g || !!b }, r.createElement(n.Z, { style: p.contentContainer }, k ? r.createElement(n.Z, { style: Z }, k) : null, r.createElement(n.Z, { style: p.content }, C, x), f ? f() : null, (!g && !b) || d || w ? null : S ? r.createElement(a.default, { style: p.icon }) : r.createElement(l.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
+        711223: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => s });
+            var r = i(202784),
+                n = i(890601),
+                a = i(783427),
+                l = i(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const s = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.f338822a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.705768ba.js.map

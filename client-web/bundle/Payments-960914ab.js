@@ -207,8 +207,9 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -266,7 +267,7 @@
                             },
                         ],
                     },
-                    params: { id: "rhNZSab05SWX2k5hLWwvHQ", metadata: {}, name: "P2PTransferParticipantQuery", operationKind: "query", text: null },
+                    params: { id: "Ji1kOaf_C0qoFsRrWDPPuQ", metadata: {}, name: "P2PTransferParticipantQuery", operationKind: "query", text: null },
                 };
             d.hash = "83db4417d88d0f7cedaf205e10aa6842";
             const c = d;
@@ -339,6 +340,7 @@
                                 plural: !0,
                                 selections: [
                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                     {
                                         alias: null,
                                         args: null,
@@ -348,7 +350,6 @@
                                         plural: !1,
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
@@ -448,7 +449,7 @@
                             },
                         ],
                     },
-                    params: { id: "Ams0jM_DAnq_HQx8_p4_OA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
+                    params: { id: "JmlfoU5SL4qSuPgag9jDWA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
                 };
             m.hash = "098d419144f289b29c1421123e7cfb25";
             const y = m;
@@ -711,4 +712,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.02a66f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.6fca30ea.js.map

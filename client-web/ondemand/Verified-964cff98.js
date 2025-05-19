@@ -657,10 +657,11 @@
                               null,
                               c ? g : null,
                               e?.map((e, t) => {
-                                  const { id_str: r, name: i, profile_image_url_https: l, screen_name: c } = e.result?.legacy || {},
+                                  const { id_str: r, name: i, screen_name: l } = e.result?.legacy || {},
+                                      { image_url: c } = e.result?.avatar || {},
                                       d = !!n.find((e) => e.result.legacy?.id_str === r),
                                       u = () => b(e, !d);
-                                  return i && l && c && r ? a.createElement(s.ZP, { avatarUri: l, decoration: a.createElement(o.Z, { checked: d, onClick: u }), displayMode: "UserCompact", key: `affiliate-filter-${t}`, name: i, onAvatarClick: u, onCellClick: u, onScreenNameClick: u, screenName: c, userId: r, withLink: !1 }) : null;
+                                  return i && c && l && r ? a.createElement(s.ZP, { avatarUri: c, decoration: a.createElement(o.Z, { checked: d, onClick: u }), displayMode: "UserCompact", key: `affiliate-filter-${t}`, name: i, onAvatarClick: u, onCellClick: u, onScreenNameClick: u, screenName: l, userId: r, withLink: !1 }) : null;
                               }),
                           )
                         : null;
@@ -1079,4 +1080,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.bc90550a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.8493cf0a.js.map

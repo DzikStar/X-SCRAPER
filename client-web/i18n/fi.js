@@ -4149,7 +4149,7 @@
                     return a.stringCount + " new request" + n(a.count, "", "s");
                 }),
                 e("ed93de0c", "Julkaisua analysoidaan"),
-                e("d1d92e40", "More details"),
+                e("d1d92e40", "Lisätietoja"),
                 e("a6e89af8", "Avoin keskustelu"),
                 e("ica55d24", "Uusi keskustelu"),
                 e("f794af9a", "Hupailutila"),
@@ -4362,8 +4362,8 @@
                 e("g01599b6", "Vastaus 1"),
                 e("e02694e0", "Vastaus 2"),
                 e("h6867fcc", "Tämä vastaus on parempi"),
-                e("acc4496c", "Try Grok Voice mode"),
-                e("jd36d190", "Access advanced features with Grok Android app"),
+                e("acc4496c", "Kokeile Grokin puhemoodia"),
+                e("jd36d190", "Pääse käsiksi edistyneisiin ominaisuuksiin Androidin Grok-sovelluksella"),
                 e("hf9afab0", "Anna DeepSearchin skannata internetiä ja X:ää, analysoida informaatiota ja tuottaa tarkkoja ja perusteltuja vastauksia nopealla toimijahaulla."),
                 e("ef3b3f04", "Anna Grokin miettiä käyttäen päättelymalliamme. Se toimii parhaiten matematiikan, luonnontieteiden ja koodauksen kysymyksissä. Voit pyytää Grokia myös miettimään ankarammin kysymystä, joka vaatisi enemmän ajattelukapasiteettia. "),
                 e("b43636b8", "Esittelyssä Grok 3"),
@@ -5841,7 +5841,7 @@
                 e("ab1b3d38", "Huomautuspyyntödataa ei vielä ole saatavana"),
                 e("c43fb933", "kehittäjäsopimusta ja -käytäntöä"),
                 e("af781666", "Mitä ihmiset miettivät?"),
-                e("a1f414ee", "Share thoughts"),
+                e("a1f414ee", "Kerro mielipiteesi"),
                 e("ed88e742", "Kopioi linkki aiheeseen"),
                 e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi."),
                 e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa."),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.1b66ea3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.51bdeaba.js.map

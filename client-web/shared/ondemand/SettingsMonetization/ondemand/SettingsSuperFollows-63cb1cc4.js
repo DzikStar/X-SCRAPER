@@ -23,8 +23,8 @@
                     [l, p] = n.useState(null),
                     b = s()(),
                     Z = c()(t),
-                    _ = (0, u.po)(),
-                    E = (0, f.p)(e, Z, r);
+                    E = (0, u.po)(),
+                    _ = (0, f.p)(e, Z, r);
                 return n.useMemo(() => {
                     const t = (0, m.getRequest)(e).params?.metadata?.sliceInfoPath;
                     o()(!!t, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
@@ -38,7 +38,7 @@
                                 } catch (e) {
                                     return void (0, g.ZP)(e.message);
                                 }
-                            })(E, t) || {},
+                            })(_, t) || {},
                         s = (t) => {
                             a ||
                                 (i(!0),
@@ -47,7 +47,7 @@
                                         i(!1);
                                     },
                                     error: (e) => {
-                                        i(!1), p(e), _(e);
+                                        i(!1), p(e), E(e);
                                     },
                                 }));
                         },
@@ -60,12 +60,12 @@
                         f = () => {
                             s(void 0);
                         };
-                    return l ? { subsequentFetchStatus: h.ZP.FAILED, error: l, fetchNext: c, fetchPrevious: u, refetch: f, data: E, hasNext: Boolean(r), hasPrevious: Boolean(n) } : { subsequentFetchStatus: a ? h.ZP.LOADING : h.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: u, refetch: f, data: E, hasNext: Boolean(r), hasPrevious: Boolean(n) };
-                }, [e, E, a, l, b, Z, _]);
+                    return l ? { subsequentFetchStatus: h.ZP.FAILED, error: l, fetchNext: c, fetchPrevious: u, refetch: f, data: _, hasNext: Boolean(r), hasPrevious: Boolean(n) } : { subsequentFetchStatus: a ? h.ZP.LOADING : h.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: u, refetch: f, data: _, hasNext: Boolean(r), hasPrevious: Boolean(n) };
+                }, [e, _, a, l, b, Z, E]);
             }
         },
         264922: (e, t, r) => {
-            r.d(t, { Z: () => y });
+            r.d(t, { Z: () => v });
             var n = r(202784),
                 a = r(108362),
                 o = r(420412),
@@ -84,7 +84,7 @@
                     .propsFromActions(() => ({ fetchSettingsIfNeeded: g.Sb, createLocalApiErrorHandler: (0, m.zr)("SETTINGS_LOADER") })),
                 b = "settingsDetailSave",
                 Z = c().i2209530;
-            class _ extends n.Component {
+            class E extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderWithFetchSettings = () => {
@@ -93,7 +93,7 @@
                         }),
                         (this._render = () => {
                             const { children: e, onSubmit: t, submitDisabled: r, submitLabel: s, submitType: l, withMarginBottom: c } = this.props;
-                            return n.createElement(a.Z, { style: [E.contentRoot, c && E.withMarginBottom] }, e, t ? n.createElement(n.Fragment, null, n.createElement(o.Z, null), n.createElement(a.Z, { style: E.buttonContainer }, n.createElement(i.ZP, { disabled: r, onPress: t, style: E.button, testID: b, type: l }, s))) : null);
+                            return n.createElement(a.Z, { style: [_.contentRoot, c && _.withMarginBottom] }, e, t ? n.createElement(n.Fragment, null, n.createElement(o.Z, null), n.createElement(a.Z, { style: _.buttonContainer }, n.createElement(i.ZP, { disabled: r, onPress: t, style: _.button, testID: b, type: l }, s))) : null);
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
@@ -115,9 +115,9 @@
                     return n.createElement(d.Z, { backLocation: l, onBackClick: e, rightControl: t, screenType: r, secondaryBar: a, showSubtitleOnWideDetail: !1, subtitle: c, title: o, withBottomBorder: s }, i ? this._renderWithFetchSettings() : this._render());
                 }
             }
-            _.defaultProps = { submitLabel: Z, submitType: "brandFilled", withMarginBottom: !0 };
-            const E = s.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${s.default.iPhoneOffsetBottom})` } })),
-                y = f(_);
+            E.defaultProps = { submitLabel: Z, submitType: "brandFilled", withMarginBottom: !0 };
+            const _ = s.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${s.default.iPhoneOffsetBottom})` } })),
+                v = f(E);
         },
         50998: (e, t, r) => {
             r.d(t, { Z: () => u });
@@ -175,7 +175,7 @@
                 c = i.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginTop: e.spaces.space20, marginBottom: e.spaces.space24 }, header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, headline: { marginVertical: e.spaces.space12 }, illustration: { alignSelf: "start" } }));
         },
         541659: (e, t, r) => {
-            r.d(t, { Z: () => E });
+            r.d(t, { Z: () => _ });
             var n = r(807896),
                 a = r(202784),
                 o = r(325686),
@@ -192,23 +192,23 @@
                 f = r(176544);
             const b = p().d1a683b8,
                 Z = () => a.createElement(g.ZP, { "aria-label": b, icon: a.createElement(h.default, null), link: f._t, type: "primaryText" }),
-                _ = p().d7b51c68,
-                E = (e) => {
+                E = p().d7b51c68,
+                _ = (e) => {
                     const { bottomBar: t, children: r, leftControlShouldClose: l, percentageComplete: c, rightControl: p, screenRef: g, withInfoButton: h, ...f } = e,
                         b = (0, i.useHistory)(),
-                        E = l ? "close" : "back",
-                        v = u.LI,
-                        w = h ? a.createElement(o.Z, { style: y.rightControl }, a.createElement(Z, null), p) : p,
+                        _ = l ? "close" : "back",
+                        y = u.LI,
+                        w = h ? a.createElement(o.Z, { style: v.rightControl }, a.createElement(Z, null), p) : p,
                         k = c ? a.createElement(s.Z, { progress: c }) : void 0,
-                        C = a.createElement(a.Fragment, null, a.createElement(o.Z, { style: y.childrenWrapper }, r), t && a.createElement(o.Z, { style: y.bottomBarWrapper }, t)),
+                        C = a.createElement(a.Fragment, null, a.createElement(o.Z, { style: v.childrenWrapper }, r), t && a.createElement(o.Z, { style: v.bottomBarWrapper }, t)),
                         P = () => {
-                            l ? b.goBackThroughModals({ fallbackPath: v }) : b.goBack({ backLocation: v });
+                            l ? b.goBackThroughModals({ fallbackPath: y }) : b.goBack({ backLocation: y });
                         };
                     g && (g.current = { goBack: P });
                     const x = d.ZP.isTwitterApp();
-                    return a.createElement(m.Z, (0, n.Z)({}, f, { backButtonType: E, backLocation: v, children: C, documentTitle: _, hideBackButton: x, onBackClick: P, rightControl: !x && w, secondaryBar: k }));
+                    return a.createElement(m.Z, (0, n.Z)({}, f, { backButtonType: _, backLocation: y, children: C, documentTitle: E, hideBackButton: x, onBackClick: P, rightControl: !x && w, secondaryBar: k }));
                 },
-                y = l.default.create((e) => ({ iconTwitter: { color: e.colors.primary, flexGrow: 1, height: "1.75rem" }, rightControl: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4 }, childrenWrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto" }, bottomBarWrapper: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, boxShadow: e.boxShadows.small } }));
+                v = l.default.create((e) => ({ iconTwitter: { color: e.colors.primary, flexGrow: 1, height: "1.75rem" }, rightControl: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4 }, childrenWrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto" }, bottomBarWrapper: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, boxShadow: e.boxShadows.small } }));
         },
         973316: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -280,20 +280,21 @@
                 f = r(274257),
                 b = r(720816),
                 Z = r(209434);
-            const _ = m().iba08a94,
-                E = m().a5f55bfa,
-                y = a.Z,
-                v = n.Z,
+            const E = m().iba08a94,
+                _ = m().a5f55bfa,
+                v = a.Z,
+                y = n.Z,
                 w = ({ user: e, viewer: t }) => {
-                    const r = l()(y, e),
-                        n = l()(v, t),
-                        { name: a, profile_image_url_https: s, screen_name: p } = r?.legacy || {},
+                    const r = l()(v, e),
+                        n = l()(y, t),
+                        { name: a, screen_name: s } = r?.legacy || {},
+                        { image_url: p } = r?.avatar ?? {},
                         { protected: d } = r?.privacy || {},
                         { verified: m } = r.verification || {},
                         { is_blue_verified: w } = r,
                         C = (0, f.JG)(n) ?? "",
                         P = (0, f.fJ)(n) ?? "";
-                    return o.createElement(o.Fragment, null, o.createElement(u.Z, { style: k.interstitial }, o.createElement(g.Z, { headline: _, subtext: E })), o.createElement(c.Z, null), o.createElement(u.Z, { style: k.previewCallout }, o.createElement(Z.Z, { path: b.Km })), o.createElement(i.Z, { style: k.summaryFramed }, o.createElement(h.Z, { badgeImageUrl: s ?? void 0, badgeName: a ?? void 0, badgeScreenName: p ?? void 0, descriptionValue: P, imageUrl: s ?? void 0, introValue: C, isBlueVerified: w || !1, isProtected: d ?? !1, isVerified: m ?? !1, name: a ?? void 0, screenName: p ?? void 0 })));
+                    return o.createElement(o.Fragment, null, o.createElement(u.Z, { style: k.interstitial }, o.createElement(g.Z, { headline: E, subtext: _ })), o.createElement(c.Z, null), o.createElement(u.Z, { style: k.previewCallout }, o.createElement(Z.Z, { path: b.Km })), o.createElement(i.Z, { style: k.summaryFramed }, o.createElement(h.Z, { badgeImageUrl: p ?? void 0, badgeName: a ?? void 0, badgeScreenName: s ?? void 0, descriptionValue: P, imageUrl: p ?? void 0, introValue: C, isBlueVerified: w || !1, isProtected: d ?? !1, isVerified: m ?? !1, name: a ?? void 0, screenName: s ?? void 0 })));
                 },
                 k = p.default.create((e) => ({ interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, blob: { paddingTop: 0, paddingBottom: 0, paddingStart: 0, paddingEnd: 0 }, summaryFramed: { marginTop: e.spaces.space20, marginHorizontal: e.spaces.space20, marginBottom: e.spaces.space32 } }));
         },
@@ -315,10 +316,10 @@
                 f = r(187669),
                 b = r(272191),
                 Z = r(724345),
-                _ = r(569778),
-                E = r(274257),
-                y = r(720816),
-                v = r(523361),
+                E = r(569778),
+                _ = r(274257),
+                v = r(720816),
+                y = r(523361),
                 w = r(209434);
             const k = h().gf32cca2,
                 C = h().j8ba99b4,
@@ -334,27 +335,28 @@
                     });
                     const g = p()(x, a),
                         h = p()(B, i),
-                        { profile_image_url_https: I, screen_name: L } = g.legacy ?? {},
-                        T = (0, E.fJ)(h),
-                        $ = (0, E.NP)(h, "description");
+                        { screen_name: I } = g.legacy ?? {},
+                        { image_url: L } = g.avatar ?? {},
+                        T = (0, _.fJ)(h),
+                        $ = (0, _.NP)(h, "description");
                     return (
-                        s()("string" == typeof I, "imageUrl must be defined"),
-                        s()("string" == typeof L, "screenName must be defined"),
+                        s()("string" == typeof L, "imageUrl must be defined"),
+                        s()("string" == typeof I, "screenName must be defined"),
                         o.createElement(
                             o.Fragment,
                             null,
-                            o.createElement(Z.Z, { style: S.interstitial }, o.createElement(_.Z, { headline: k, subtext: C })),
-                            o.createElement(Z.Z, { style: S.examplesLink }, o.createElement(v.Z, { label: P, path: y.$w })),
+                            o.createElement(Z.Z, { style: S.interstitial }, o.createElement(E.Z, { headline: k, subtext: C })),
+                            o.createElement(Z.Z, { style: S.examplesLink }, o.createElement(y.Z, { label: P, path: v.$w })),
                             o.createElement(m.Z, null),
-                            o.createElement(Z.Z, { style: S.previewCallout }, o.createElement(w.Z, { path: y.Km })),
+                            o.createElement(Z.Z, { style: S.previewCallout }, o.createElement(w.Z, { path: v.Km })),
                             o.createElement(b.Z, {
                                 autoFocus: r,
-                                imageUrl: I,
+                                imageUrl: L,
                                 onChange: (e) => {
                                     $(e.currentTarget.value);
                                 },
                                 ref: t,
-                                screenName: L,
+                                screenName: I,
                                 style: [S.preview, c && S.previewWide],
                                 value: T,
                                 valueMaxLength: n,
@@ -384,10 +386,10 @@
                 f = r(187669),
                 b = r(724345),
                 Z = r(569778),
-                _ = r(126819),
-                E = r(274257),
-                y = r(720816),
-                v = r(523361),
+                E = r(126819),
+                _ = r(274257),
+                v = r(720816),
+                y = r(523361),
                 w = r(209434);
             const k = h().j325331a,
                 C = h().e18e8da8,
@@ -403,9 +405,10 @@
                     });
                     const g = p()(x, a),
                         h = p()(B, i),
-                        { name: I, profile_image_url_https: L } = g.legacy ?? {},
-                        T = (0, E.JG)(h),
-                        $ = (0, E.NP)(h, "creator_intro");
+                        { name: I } = g.legacy ?? {},
+                        { image_url: L } = g.avatar ?? {},
+                        T = (0, _.JG)(h),
+                        $ = (0, _.NP)(h, "creator_intro");
                     return (
                         s()("string" == typeof L, "imageUrl must be defined"),
                         s()("string" == typeof I, "name must be defined"),
@@ -413,10 +416,10 @@
                             o.Fragment,
                             null,
                             o.createElement(b.Z, { style: S.interstitial }, o.createElement(Z.Z, { headline: k, subtext: C })),
-                            o.createElement(b.Z, { style: S.examplesLink }, o.createElement(v.Z, { label: P, path: y.o5 })),
+                            o.createElement(b.Z, { style: S.examplesLink }, o.createElement(y.Z, { label: P, path: v.o5 })),
                             o.createElement(m.Z, null),
-                            o.createElement(b.Z, { style: S.previewCallout }, o.createElement(w.Z, { path: y.Km })),
-                            o.createElement(_.Z, {
+                            o.createElement(b.Z, { style: S.previewCallout }, o.createElement(w.Z, { path: v.Km })),
+                            o.createElement(E.Z, {
                                 autoFocus: r,
                                 imageUrl: L,
                                 name: I,
@@ -491,21 +494,21 @@
                 f = r(274257),
                 b = r(535083);
             const Z = p().af5b098e,
-                _ = p().e36287c6,
-                E = p().b772cd66,
-                y = o.Z,
-                v = a.Z,
+                E = p().e36287c6,
+                _ = p().b772cd66,
+                v = o.Z,
+                y = a.Z,
                 w = (0, d.Z)(
                     ({ backLocation: e, user: t, viewer: r }) => {
-                        const a = l()(y, t),
-                            o = l()(v, r),
+                        const a = l()(v, t),
+                            o = l()(y, r),
                             s = (0, h.IH)(a),
                             c = (0, f.fJ)(o),
                             p = c.length > 0 && c.length <= 140 && c !== s,
                             [d, w] = (0, b.Z)(a, { description: c }),
-                            k = { disabled: !p || w, label: E, onPress: d, path: e, type: "primaryFilled" },
+                            k = { disabled: !p || w, label: _, onPress: d, path: e, type: "primaryFilled" },
                             C = i.createElement(u.Z, (0, n.Z)({}, k, { size: "small" }));
-                        return i.createElement(m.Z, { rightControl: C, subtitle: _, title: Z }, i.createElement(g.Z, { autoFocus: !0, descriptionMaxLength: 140, user: a, viewer: o }));
+                        return i.createElement(m.Z, { rightControl: C, subtitle: E, title: Z }, i.createElement(g.Z, { autoFocus: !0, descriptionMaxLength: 140, user: a, viewer: o }));
                     },
                     { component: "management_perks_description" },
                 );
@@ -528,21 +531,21 @@
                 f = r(274257),
                 b = r(535083);
             const Z = p().af5b098e,
-                _ = p().c0348964,
-                E = p().b772cd66,
-                y = o.Z,
-                v = a.Z,
+                E = p().c0348964,
+                _ = p().b772cd66,
+                v = o.Z,
+                y = a.Z,
                 w = (0, d.Z)(
                     ({ backLocation: e, user: t, viewer: r }) => {
-                        const a = l()(y, t),
-                            o = l()(v, r),
+                        const a = l()(v, t),
+                            o = l()(y, r),
                             s = (0, h.IU)(a),
                             c = (0, f.JG)(o),
                             p = c.length > 0 && c.length <= 140 && c !== s,
                             [d, w] = (0, b.Z)(a, { creatorIntro: c }),
-                            k = { disabled: !p || w, label: E, onPress: d, path: e, type: "primaryFilled" },
+                            k = { disabled: !p || w, label: _, onPress: d, path: e, type: "primaryFilled" },
                             C = i.createElement(u.Z, (0, n.Z)({}, k, { size: "small" }));
-                        return i.createElement(m.Z, { rightControl: C, subtitle: _, title: Z }, i.createElement(g.Z, { autoFocus: !0, introMaxLength: 140, user: a, viewer: o }));
+                        return i.createElement(m.Z, { rightControl: C, subtitle: E, title: Z }, i.createElement(g.Z, { autoFocus: !0, introMaxLength: 140, user: a, viewer: o }));
                     },
                     { component: "management_perks_intro" },
                 );
@@ -566,10 +569,10 @@
                 f = r(332920),
                 b = r.n(f),
                 Z = r(439412),
-                _ = r(443781),
-                E = r(652904),
-                y = r(105633),
-                v = r(865721),
+                E = r(443781),
+                _ = r(652904),
+                v = r(105633),
+                y = r(865721),
                 w = r(725516),
                 k = r(264922),
                 C = r(293723);
@@ -675,27 +678,27 @@
                 fe = b().abd845fe,
                 be = b().f5be83b2,
                 Ze = b().f66d24be,
-                _e = b().g5925628,
-                Ee = b().e58e85d2,
-                ye = i.Z,
-                ve = o.Z,
+                Ee = b().g5925628,
+                _e = b().e58e85d2,
+                ve = i.Z,
+                ye = o.Z,
                 we = a.Z,
                 ke = n.Z,
                 Ce = h.default.create((e) => ({ title: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, benefits: { gap: e.spaces.space32, marginTop: e.spaces.space16 }, other: { gap: e.spaces.space24, marginTop: e.spaces.space12 }, buttons: { flexDirection: "row", flexWrap: "wrap", gap: e.spaces.space8 }, button: { flexBasis: `${e.breakpoints.micro}px`, flexGrow: 1, flexShrink: 1 } })),
                 Pe = (0, w.Z)(
                     ({ backLocation: e, perksConfirmLocation: t, perksDescriptionLocation: r, perksIntroLocation: n, perksPricingLocation: a, priceOfferings: o, subscriptionsPriceOfferings: i, user: c, viewer: h, withAppBar: f }) => {
-                        const { featureSwitches: b } = (0, _.QZ)(),
+                        const { featureSwitches: b } = (0, E.QZ)(),
                             w = b.isTrue("super_follow_web_deactivate_enabled"),
                             C = (0, d.useHistory)(),
                             P = (0, d.useLocation)(),
-                            { $fragmentType: B, ...I } = p()(ye, o),
-                            { $fragmentType: L, ...S } = p()(ve, i),
+                            { $fragmentType: B, ...I } = p()(ve, o),
+                            { $fragmentType: L, ...S } = p()(ye, i),
                             T = p()(we, c),
                             $ = p()(ke, h),
                             z = (0, D.IU)(T),
                             F = (0, D.IH)(T),
                             N = (0, D.Ex)(T) ?? "offer2",
-                            H = T.legacy?.profile_image_url_https ?? void 0,
+                            H = T.avatar?.image_url ?? void 0,
                             O = T.legacy?.screen_name ?? void 0,
                             { new_price: j, price_change: U } = T.super_follow_pending_price_change || {},
                             R = (0, Y.Eo)(N, I, S),
@@ -706,8 +709,8 @@
                             Q = s.useCallback(() => {
                                 C.push(e);
                             }, [C, e]),
-                            Pe = s.createElement(s.Fragment, null, s.createElement(A.Z, { childrenStyle: Ce.benefits, headline: re, illustration: A.j.Ribbon, rightControl: J }, s.createElement(m.ZP, { color: "gray700" }, ne), s.createElement(K, { headline: ae, rightControl: M }, s.createElement(Z.Z, { imageUrl: H, screenName: O, value: z })), s.createElement(K, { headline: oe, rightControl: q }, s.createElement(Z.Z, { imageUrl: H, screenName: O, value: F })), s.createElement(K, { headline: ie }, s.createElement(m.ZP, { color: "gray700" }, se)), b.isTrue("responsive_web_creator_preferences_previews_enabled_setting") ? s.createElement(y.Z, null) : null), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: le, illustration: A.j.PiggyBank }, s.createElement(G, { perksPricingLocation: a, price: R, priceChangeId: U || "", requestedPrice: W, user: T })), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: ce, illustration: A.j.Chat }, s.createElement(m.ZP, { color: "gray700" }, pe), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(g.ZP, { link: ee.bJ, style: Ce.button, type: "primaryOutlined" }, be))), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: de, illustration: A.j.LifeSaver }, s.createElement(m.ZP, { color: "gray700" }, me), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(g.ZP, { link: ee._t, style: Ce.button, type: "primaryOutlined" }, Ze), s.createElement(g.ZP, { link: ee.hz, style: Ce.button, type: "primaryOutlined" }, _e))), w && s.createElement(s.Fragment, null, s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: ue, illustration: A.j.Cone }, s.createElement(m.ZP, { color: "gray700" }, ge), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(v.Z, { label: Ee, onConfirm: Q, style: Ce.button, viewer: $ })))));
-                        return f ? s.createElement(E.Z, null, s.createElement(k.Z, { location: P, rightControl: s.createElement(x, null), screenType: "secondaryDetail", title: te }, Pe)) : Pe;
+                            Pe = s.createElement(s.Fragment, null, s.createElement(A.Z, { childrenStyle: Ce.benefits, headline: re, illustration: A.j.Ribbon, rightControl: J }, s.createElement(m.ZP, { color: "gray700" }, ne), s.createElement(K, { headline: ae, rightControl: M }, s.createElement(Z.Z, { imageUrl: H, screenName: O, value: z })), s.createElement(K, { headline: oe, rightControl: q }, s.createElement(Z.Z, { imageUrl: H, screenName: O, value: F })), s.createElement(K, { headline: ie }, s.createElement(m.ZP, { color: "gray700" }, se)), b.isTrue("responsive_web_creator_preferences_previews_enabled_setting") ? s.createElement(v.Z, null) : null), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: le, illustration: A.j.PiggyBank }, s.createElement(G, { perksPricingLocation: a, price: R, priceChangeId: U || "", requestedPrice: W, user: T })), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: ce, illustration: A.j.Chat }, s.createElement(m.ZP, { color: "gray700" }, pe), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(g.ZP, { link: ee.bJ, style: Ce.button, type: "primaryOutlined" }, be))), s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: de, illustration: A.j.LifeSaver }, s.createElement(m.ZP, { color: "gray700" }, me), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(g.ZP, { link: ee._t, style: Ce.button, type: "primaryOutlined" }, Ze), s.createElement(g.ZP, { link: ee.hz, style: Ce.button, type: "primaryOutlined" }, Ee))), w && s.createElement(s.Fragment, null, s.createElement(u.Z, null), s.createElement(A.Z, { childrenStyle: Ce.other, headline: ue, illustration: A.j.Cone }, s.createElement(m.ZP, { color: "gray700" }, ge), s.createElement(l.Z, { style: Ce.buttons }, s.createElement(y.Z, { label: _e, onConfirm: Q, style: Ce.button, viewer: $ })))));
+                        return f ? s.createElement(_.Z, null, s.createElement(k.Z, { location: P, rightControl: s.createElement(x, null), screenType: "secondaryDetail", title: te }, Pe)) : Pe;
                     },
                     { component: "management_summary" },
                 );
@@ -734,12 +737,12 @@
                         f = (0, c.qO)(a),
                         b = (0, c.NP)(a, "creator_intro"),
                         Z = (0, c.NP)(a, "description"),
-                        _ = (0, c.NP)(a, "selected_price");
+                        E = (0, c.NP)(a, "selected_price");
                     return {
                         shouldBlockNavigation: o.useCallback((t, r) => t.pathname === e && "POP" === r && (g !== i || h !== m || f !== u), [g, h, f, i, m, u, e]),
                         discardChanges: o.useCallback(() => {
-                            b(i), Z(m), _(u);
-                        }, [i, m, u, b, Z, _]),
+                            b(i), Z(m), E(u);
+                        }, [i, m, u, b, Z, E]),
                     };
                 };
         },
@@ -792,24 +795,24 @@
                 f = r.n(h),
                 b = r(437429),
                 Z = r.n(b),
-                _ = r(187669),
-                E = r(674057);
-            const y = "super_follows_onboarding_draft",
-                v = (e, t) => (0, E.g)(e, t).getLinkedRecord(y),
+                E = r(187669),
+                _ = r(674057);
+            const v = "super_follows_onboarding_draft",
+                y = (e, t) => (0, _.g)(e, t).getLinkedRecord(v),
                 w = (e, t, { creator_intro: r = null, description: n = null, selected_price: a = null } = {}) => {
-                    const o = (0, E.E)(t),
-                        i = (0, E.g)(e, t);
-                    if (v(e, t)) return;
-                    const s = e.create(`${o}:${y}`, "SuperFollowsOnboardingDraft");
+                    const o = (0, _.E)(t),
+                        i = (0, _.g)(e, t);
+                    if (y(e, t)) return;
+                    const s = e.create(`${o}:${v}`, "SuperFollowsOnboardingDraft");
                     s.setValue(r, "creator_intro"), s.setValue(n, "description"), s.setValue(a, "selected_price"), i.setLinkedRecord(s, "super_follows_onboarding_draft");
                 },
                 k = (e, t, r, n) => {
-                    const a = v(e, t);
+                    const a = y(e, t);
                     m()(a, "onboardingDraft must be defined"), a.setValue(n, r);
                 };
             function C(e, t) {
                 const r = Z()();
-                (0, _.q)(() => {
+                (0, E.q)(() => {
                     m()(e, "viewerRef must be defined"),
                         g()(r, (r) => {
                             w(r, e, t);
@@ -938,4 +941,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-63cb1cc4.3922677a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-63cb1cc4.bcba508a.js.map

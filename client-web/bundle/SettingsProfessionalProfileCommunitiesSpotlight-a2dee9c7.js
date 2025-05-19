@@ -75,7 +75,7 @@
             };
         },
         135512: (e, l, n) => {
-            n.d(l, { Z: () => h });
+            n.d(l, { Z: () => k });
             var t = n(53307),
                 s = n(202784),
                 a = (n(585488), n(731708)),
@@ -86,16 +86,16 @@
                 c = n(585356),
                 d = n(719146);
             const m = i().cc4add98,
-                p = t.Z;
-            function y({ communityId: e }) {
-                const l = (0, u.p)(p, { communityId: e }).communityResults.result;
+                y = t.Z;
+            function p({ communityId: e }) {
+                const l = (0, u.p)(y, { communityId: e }).communityResults.result;
                 return "Community" !== l.__typename ? null : s.createElement(c.Z, null, s.createElement(a.ZP, { weight: "bold" }, m), s.createElement(d.Z, { community: l, showLabel: !1 }));
             }
             const g = { context: "COMMUNITIES_SPOTLIGHT_PREVIEW" };
             function f({ communityId: e }) {
-                return e ? s.createElement(o.H, { errorConfig: g }, s.createElement(y, { communityId: e })) : null;
+                return e ? s.createElement(o.H, { errorConfig: g }, s.createElement(p, { communityId: e })) : null;
             }
-            const h = s.memo(f);
+            const k = s.memo(f);
         },
         719146: (e, l, n) => {
             n.d(l, { Z: () => v });
@@ -109,17 +109,17 @@
                 c = n.n(u),
                 d = n(784380),
                 m = n(264223),
-                p = n(66918),
-                y = n(943957);
+                y = n(66918),
+                p = n(943957);
             const g = c().f277e94a,
                 f = c().h02a6fe6,
-                h = t.Z,
-                k = ({ community: e, showLabel: l = !0, showViewAction: n = !1 }) => {
-                    const t = i()(h, e),
-                        r = s.useMemo(() => ({ label: l ? f : void 0, headline: t.name, actions: n ? [{ label: g, link: `/i/communities/${t.rest_id}` }] : [], media: s.createElement(p.Z, { community: t }), bodyElements: [t.description ? { elements: [{ text: t.description, numberOfLines: 2 }] } : null], link: n ? void 0 : `/i/communities/${t.rest_id}` }), [t, l, n]);
-                    return s.createElement(y.Z, r, s.createElement(a.Z, { style: b.members }, s.createElement(d.Z, { community: t, style: b.facePile, userAvatarSize: "medium" }), s.createElement(m.Z, { community: t, onMedia: !1, style: b.memberCount })));
+                k = t.Z,
+                h = ({ community: e, showLabel: l = !0, showViewAction: n = !1 }) => {
+                    const t = i()(k, e),
+                        r = s.useMemo(() => ({ label: l ? f : void 0, headline: t.name, actions: n ? [{ label: g, link: `/i/communities/${t.rest_id}` }] : [], media: s.createElement(y.Z, { community: t }), bodyElements: [t.description ? { elements: [{ text: t.description, numberOfLines: 2 }] } : null], link: n ? void 0 : `/i/communities/${t.rest_id}` }), [t, l, n]);
+                    return s.createElement(p.Z, r, s.createElement(a.Z, { style: b.members }, s.createElement(d.Z, { community: t, style: b.facePile, userAvatarSize: "medium" }), s.createElement(m.Z, { community: t, onMedia: !1, style: b.memberCount })));
                 },
-                v = s.memo(k),
+                v = s.memo(h),
                 b = o.default.create((e) => ({ members: { display: "flex", flexDirection: "row", alignItems: "center", columnGap: e.spaces.space8, flexWrap: "wrap", paddingTop: e.spaces.space4 }, facePile: { flexBasis: "auto" }, memberCount: { flexBasis: "auto" } }));
         },
         334346: (e, l, n) => {
@@ -151,7 +151,7 @@
                                 ((e) =>
                                     e.reduce((e, { result: l }) => {
                                         if ("User" === l?.__typename) {
-                                            const n = l.legacy?.profile_image_url_https;
+                                            const n = l.avatar?.image_url;
                                             n && e.push(n);
                                         }
                                         return e;
@@ -170,7 +170,7 @@
             const r = (0, s.Z)({ loader: () => n.e("loader.AbsolutePower").then(n.bind(n, 590136)), renderPlaceholder: (e, l) => t.createElement(a.Z, { hasError: e, onRetry: l }) });
         },
         127218: (e, l, n) => {
-            n.d(l, { C: () => h });
+            n.d(l, { C: () => k });
             var t = n(202784),
                 s = n(614983),
                 a = n.n(s),
@@ -181,17 +181,17 @@
                 c = n(10622),
                 d = n.n(c),
                 m = n(585488),
-                p = n(71620),
-                y = n(163889),
+                y = n(71620),
+                p = n(163889),
                 g = n(312771),
                 f = n(535338);
-            function h(e, l, n) {
+            function k(e, l, n) {
                 const [s, r] = t.useState(!1),
                     [o, c] = t.useState(null),
-                    h = i()(),
-                    k = u()(l),
-                    v = (0, p.po)(),
-                    b = (0, f.p)(e, k, n);
+                    k = i()(),
+                    h = u()(l),
+                    v = (0, y.po)(),
+                    b = (0, f.p)(e, h, n);
                 return t.useMemo(() => {
                     const l = (0, m.getRequest)(e).params?.metadata?.sliceInfoPath;
                     a()(!!l, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
@@ -203,13 +203,13 @@
                                     for (const e of l) a()(!!n, "The provided path is invalid."), a()("string" == typeof e, "Unexpected value for path!"), (n = n?.[e]);
                                     return n;
                                 } catch (e) {
-                                    return void (0, y.ZP)(e.message);
+                                    return void (0, p.ZP)(e.message);
                                 }
                             })(b, l) || {},
                         i = (l) => {
                             s ||
                                 (r(!0),
-                                d()(h, e, { ...k, cursor: l }).subscribe({
+                                d()(k, e, { ...h, cursor: l }).subscribe({
                                     complete: () => {
                                         r(!1);
                                     },
@@ -221,16 +221,16 @@
                         u = () => {
                             n && i(n);
                         },
-                        p = () => {
+                        y = () => {
                             t && i(t);
                         },
                         f = () => {
                             i(void 0);
                         };
-                    return o ? { subsequentFetchStatus: g.ZP.FAILED, error: o, fetchNext: u, fetchPrevious: p, refetch: f, data: b, hasNext: Boolean(n), hasPrevious: Boolean(t) } : { subsequentFetchStatus: s ? g.ZP.LOADING : g.ZP.NONE, error: void 0, fetchNext: u, fetchPrevious: p, refetch: f, data: b, hasNext: Boolean(n), hasPrevious: Boolean(t) };
-                }, [e, b, s, o, h, k, v]);
+                    return o ? { subsequentFetchStatus: g.ZP.FAILED, error: o, fetchNext: u, fetchPrevious: y, refetch: f, data: b, hasNext: Boolean(n), hasPrevious: Boolean(t) } : { subsequentFetchStatus: s ? g.ZP.LOADING : g.ZP.NONE, error: void 0, fetchNext: u, fetchPrevious: y, refetch: f, data: b, hasNext: Boolean(n), hasPrevious: Boolean(t) };
+                }, [e, b, s, o, k, h, v]);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-a2dee9c7.85469eca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-a2dee9c7.36d477aa.js.map

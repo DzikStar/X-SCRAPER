@@ -1035,7 +1035,7 @@
                 n("d9921a6c", "새 패스키 만들기"),
                 n("i4855730", "패스키 삭제하기"),
                 n("a6acdc67", function (e) {
-                    return "날짜 추가됨: " + e.date;
+                    return "추가된 날짜: " + e.date;
                 }),
                 n("d97c07be", "크리에이터 구독 관리하기"),
                 n("efa291da", "Stripe를 사용하여 아래 크리에이터에 대한 구독을 조회 및 관리하세요. iOS 또는 Android에서 시작한 활성 구독은 해당 앱에서 관리할 수 있습니다."),
@@ -4152,7 +4152,7 @@
                     return e.stringCount + " new requests";
                 }),
                 n("ed93de0c", "게시물 분석 중"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "상세 정보"),
                 n("a6e89af8", "공개 대화"),
                 n("ica55d24", "새 채팅"),
                 n("f794af9a", "재미 모드"),
@@ -4365,8 +4365,8 @@
                 n("g01599b6", "응답 1"),
                 n("e02694e0", "응답 2"),
                 n("h6867fcc", "이 응답을 선호합니다"),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "Grok 음성 모드 이용해 보기"),
+                n("jd36d190", "Grok Android 앱에서 고급 기능을 이용해 보세요"),
                 n("hf9afab0", "DeepSearch를 활성하면 신속한 에이전트 검색을 통해 인터넷과 X를 스캔하고 정보를 분석하여 상세하고 논리적인 답변을 얻을 수 있습니다."),
                 n("ef3b3f04", "추론 모델을 사용하려면 Think를 활성화하세요. Think는 수학, 과학 및 코딩 문제에 가장 적합합니다. 머리를 좀 더 써야 하는 질문이 있다면 Grok에게 '더 깊이 생각하기'를 요청할 수도 있습니다. "),
                 n("b43636b8", "Grok 3를 소개합니다"),
@@ -5844,7 +5844,7 @@
                 n("ab1b3d38", "노트 요청 데이터가 아직 없습니다"),
                 n("c43fb933", "X 개발자 이용약관 및 정책"),
                 n("af781666", "다른 사람들은 어떻게 생각할까요?"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "의견 공유하기"),
                 n("ed88e742", "토픽에 링크 복사하기"),
                 n("h92fe1be", "지금은 그룹 노트를 이용하실 수 없습니다."),
                 n("f0dc1434", "그룹 노트는 현재 미국에서만 이용할 수 있습니다."),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.06c799fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.070dfa2a.js.map

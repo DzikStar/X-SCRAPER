@@ -30,11 +30,11 @@
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: b, style: y, subtitle: C, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: k, withWideContainer: x } = this.props,
                         { isModal: Z } = this.context,
-                        _ = i ? d : n.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        v = (function (e, t, o) {
+                        v = i ? d : n.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        _ = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!k, Z, !!b);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: _, middleControl: p, position: u(h, Z, r), rightControl: m, style: y, subtitle: C, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: v, withWideContainer: x }), b || null);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: v, middleControl: p, position: u(h, Z, r), rightControl: m, style: y, subtitle: C, title: g, titleDomId: f, titleIconCell: B, titleIconCellSize: w, withBackground: _, withWideContainer: x }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -143,14 +143,14 @@
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: l, headerless: s, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, screenType: g, searchBoxOptions: f, secondaryBar: B, showSubtitleOnRoot: w, showSubtitleOnWideDetail: k, subtitle: x, title: Z, titleIconCell: _, titleIconCellSize: v, withDetailOpen: E, withSearchBox: I, withTweetButton: L, withWideContainer: T } = this.props,
+                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: l, headerless: s, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, screenType: g, searchBoxOptions: f, secondaryBar: B, showSubtitleOnRoot: w, showSubtitleOnWideDetail: k, subtitle: x, title: Z, titleIconCell: v, titleIconCellSize: _, withDetailOpen: E, withSearchBox: I, withTweetButton: L, withWideContainer: T } = this.props,
                         S = "root" === g,
                         F = "secondaryRoot" === g,
                         D = "primaryDetail" === g,
                         M = (D && k) || (S && w),
                         P = S || (D && e),
                         U = S ? d.ey : D ? d.vX : void 0,
-                        O = n.createElement(a.Z, { style: C.appBarContainer }, n.createElement(p.ZP, { backLocation: i, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: B, style: r, subtitle: M ? x : void 0, title: Z, titleDomId: U, titleIconCell: _, titleIconCellSize: v, withWideContainer: T })),
+                        O = n.createElement(a.Z, { style: C.appBarContainer }, n.createElement(p.ZP, { backLocation: i, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: B, style: r, subtitle: M ? x : void 0, title: Z, titleDomId: U, titleIconCell: v, titleIconCellSize: _, withWideContainer: T })),
                         R = S || (F && E) ? null : n.createElement(h.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: l, headerless: s, middleControl: m, onBackClick: b, rightControl: y, searchBoxOptions: f, subtitle: x, title: Z, withSearchBox: I, withTweetButton: L });
                     return n.createElement(n.Fragment, null, R, O);
                 }
@@ -172,8 +172,8 @@
                 s = o(443781);
             const c = a().j24c37b2,
                 d = ({ Content: e, contentStyle: t, actionLabel: o = c, flag: i, graphic: a, graphicDisplayMode: d, headline: u, isFullHeightOnMobile: p, enableMaskForDismiss: h, onAction: m, onClose: b, onSecondaryAction: y, secondaryActionLabel: C, supportUrl: g, subtext: f, withCloseButton: B, shouldShowForLoggedOut: w = !1, shouldAddEducationFlagOnClose: k = !0, shouldAddEducationFlagOnSecondary: x = !0, shouldAddEducationFlagOnPrimary: Z = !0 }) => {
-                    const { loggedInUserId: _ } = n.useContext(s.rC),
-                        [v, E] = (0, l.m)(i),
+                    const { loggedInUserId: v } = n.useContext(s.rC),
+                        [_, E] = (0, l.m)(i),
                         I = n.useCallback(
                             (e) => {
                                 Z && E(), m && m(e);
@@ -189,7 +189,7 @@
                             },
                             [E, y, x],
                         );
-                    if (!v || (!_ && !w)) return null;
+                    if (!_ || (!v && !w)) return null;
                     return n.createElement(r.Z, { actionLabel: o, contentStyle: t, enableMaskForDismiss: h, graphic: a, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: I, onClose: L, onSecondaryAction: T, secondaryActionLabel: C, subtext: f, supportUrl: g, withCloseButton: B }, e ? n.createElement(e, null) : null);
                 },
                 u = n.memo(d);
@@ -274,19 +274,19 @@
             const b = n.Z;
             function y(e) {
                 const t = s()(b, e.user),
-                    { legacy: o, privacy: n, verification: i } = t,
-                    l = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
-                    { cellClickable: h, decoration: y, displayMode: C } = e,
-                    g = (function () {
+                    { avatar: o, legacy: n, privacy: i, verification: l } = t,
+                    h = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
+                    { cellClickable: y, decoration: C, displayMode: g } = e,
+                    f = (function () {
                         const { viewerUserId: e } = r.useContext(m.rC);
                         return a()(!!e, "viewerUserId is undefined!"), e;
                     })(),
-                    f = (0, c.useHistory)(),
-                    B = r.useCallback(() => ("function" == typeof y ? y({ displayMode: C, viewerUserId: g, userId: o?.id_str ?? "" }) : y), [y, g, o, C]),
-                    w = r.useCallback(() => {
-                        o?.screen_name && f.push({ pathname: `/${o.screen_name}` });
-                    }, [f, o]);
-                return r.createElement(d.ZP, { affiliateBadgeInfo: l, avatarUri: o?.profile_image_url_https || "", decoration: B(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: o?.followed_by, isProtected: n?.protected ?? !1, isVerified: i?.verified ?? !1, name: o?.name || "", onCellClick: h ? w : void 0, promotedItemType: p.bj.USER, screenName: o?.screen_name || "", userId: o?.id_str ?? "", verifiedType: i?.verified_type ?? void 0, withFollowsYou: !0 });
+                    B = (0, c.useHistory)(),
+                    w = r.useCallback(() => ("function" == typeof C ? C({ displayMode: g, viewerUserId: f, userId: n?.id_str ?? "" }) : C), [C, f, n, g]),
+                    k = r.useCallback(() => {
+                        n?.screen_name && B.push({ pathname: `/${n.screen_name}` });
+                    }, [B, n]);
+                return r.createElement(d.ZP, { affiliateBadgeInfo: h, avatarUri: o?.image_url || "", decoration: w(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: n?.followed_by, isProtected: i?.protected ?? !1, isVerified: l?.verified ?? !1, name: n?.name || "", onCellClick: y ? k : void 0, promotedItemType: p.bj.USER, screenName: n?.screen_name || "", userId: n?.id_str ?? "", verifiedType: l?.verified_type ?? void 0, withFollowsYou: !0 });
             }
             y.defaultProps = { cellClickable: !0, decoration: null, displayMode: h.Z.UserCompact };
         },
@@ -375,4 +375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.16d00b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.78113b3a.js.map

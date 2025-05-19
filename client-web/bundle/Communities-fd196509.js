@@ -3,7 +3,7 @@
     ["bundle.Communities-fd196509"],
     {
         369233: (e, l, n) => {
-            n.d(l, { Z: () => f });
+            n.d(l, { Z: () => T });
             var a,
                 i,
                 t,
@@ -22,8 +22,7 @@
                 F,
                 K,
                 b,
-                S,
-                T = {
+                S = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "communityId" }]),
                         kind: "Fragment",
@@ -79,8 +78,8 @@
                                                     (o = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                     { alias: null, args: null, concreteType: "CommunityActions", kind: "LinkedField", name: "actions", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_action_result", plural: !1, selections: (m = [t]), storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null },
                                                     (c = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
-                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "creator_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [d, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(y = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }, (g = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null },
-                                                    (k = { alias: null, args: null, kind: "ScalarField", name: "join_policy", storageKey: null }),
+                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "creator_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [d, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(y = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null },
+                                                    (g = { alias: null, args: null, kind: "ScalarField", name: "join_policy", storageKey: null }),
                                                     { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
                                                     { alias: null, args: null, concreteType: "CommunityRule", kind: "LinkedField", name: "rules", plural: !0, selections: [o, c, r, d], storageKey: null },
                                                     {
@@ -90,7 +89,7 @@
                                                         kind: "LinkedField",
                                                         name: "custom_banner_media",
                                                         plural: !1,
-                                                        selections: (_ = [
+                                                        selections: (k = [
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -154,11 +153,11 @@
                                                         ]),
                                                         storageKey: null,
                                                     },
-                                                    { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "default_banner_media", plural: !1, selections: _, storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "default_banner_media", plural: !1, selections: k, storageKey: null },
                                                     { alias: null, args: null, concreteType: "CommunityActions", kind: "LinkedField", name: "actions", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "list_members_action_result", plural: !1, selections: m, storageKey: null }, d], storageKey: null },
-                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }, g, d], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, d], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
-                                                    k,
+                                                    g,
                                                     { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "invites_result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [d], type: "CommunityInvites", abstractKey: null }], storageKey: null },
                                                     { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_requests_result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [d, { alias: null, args: null, kind: "ScalarField", name: "pending_join_request_count", storageKey: null }], type: "CommunityJoinRequests", abstractKey: null }], storageKey: null },
                                                     { alias: null, args: null, concreteType: "CommunityModeration", kind: "LinkedField", name: "moderation", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "tweet_case_count", storageKey: null }, d], storageKey: null },
@@ -181,7 +180,7 @@
                                                         kind: "LinkedField",
                                                         name: "title",
                                                         plural: !1,
-                                                        selections: (S = [
+                                                        selections: (b = [
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -202,15 +201,15 @@
                                                                         selections: [
                                                                             t,
                                                                             { kind: "TypeDiscriminator", abstractKey: "__isTimelineReferenceObject" },
-                                                                            { kind: "InlineFragment", selections: (F = [(p = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
-                                                                            { kind: "InlineFragment", selections: [d, (K = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
-                                                                            { kind: "InlineFragment", selections: F, type: "TimelineRichTextHashtag", abstractKey: null },
-                                                                            { kind: "InlineFragment", selections: [(b = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [o, d], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
-                                                                            { kind: "InlineFragment", selections: [b, y], type: "TimelineRichTextMention", abstractKey: null },
+                                                                            { kind: "InlineFragment", selections: (p = [(_ = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
+                                                                            { kind: "InlineFragment", selections: [d, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
+                                                                            { kind: "InlineFragment", selections: p, type: "TimelineRichTextHashtag", abstractKey: null },
+                                                                            { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [o, d], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
+                                                                            { kind: "InlineFragment", selections: [K, y], type: "TimelineRichTextMention", abstractKey: null },
                                                                             {
                                                                                 kind: "InlineFragment",
                                                                                 selections: [
-                                                                                    K,
+                                                                                    F,
                                                                                     { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
                                                                                     {
                                                                                         alias: "urtEndpointOptions",
@@ -252,12 +251,12 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: null, kind: "ScalarField", name: "rtl", storageKey: null },
-                                                            p,
+                                                            _,
                                                             { alias: null, args: null, kind: "ScalarField", name: "alignment", storageKey: null },
                                                         ]),
                                                         storageKey: null,
                                                     },
-                                                    { alias: null, args: null, concreteType: "TimelineRichText", kind: "LinkedField", name: "subtitle", plural: !1, selections: S, storageKey: null },
+                                                    { alias: null, args: null, concreteType: "TimelineRichText", kind: "LinkedField", name: "subtitle", plural: !1, selections: b, storageKey: null },
                                                 ],
                                                 type: "CommunityUnavailable",
                                                 abstractKey: null,
@@ -271,10 +270,10 @@
                             },
                         ],
                     },
-                    params: { id: "Wm7QMC1EHnNiXdKl9WYmjQ", metadata: { features: ["c9s_list_members_action_api_enabled", "c9s_superc9s_indication_enabled"] }, name: "CommunityQuery", operationKind: "query", text: null },
+                    params: { id: "PF6cDm2ETYJqHSiCvobgzg", metadata: { features: ["c9s_list_members_action_api_enabled", "c9s_superc9s_indication_enabled"] }, name: "CommunityQuery", operationKind: "query", text: null },
                 };
-            T.hash = "66ca18626547d70a9612dc3973ee4141";
-            const f = T;
+            S.hash = "66ca18626547d70a9612dc3973ee4141";
+            const T = S;
         },
         324287: (e, l, n) => {
             n.d(l, { Z: () => t });
@@ -490,7 +489,7 @@
             const i = a;
         },
         642797: (e, l, n) => {
-            n.d(l, { Z: () => L });
+            n.d(l, { Z: () => f });
             var a,
                 i,
                 t,
@@ -511,7 +510,7 @@
                 b,
                 S,
                 T = n(897455),
-                f =
+                L =
                     ((S = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                     {
                         fragment: {
@@ -588,10 +587,10 @@
                         },
                         kind: "Request",
                         operation: { argumentDefinitions: [i, t, u, a, m, s, o, d, g, c, _, r, y, k], kind: "Operation", name: "CommunityTweetSearchModuleQuery", selections: [{ alias: "communityResults", args: p, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [F, { kind: "InlineFragment", selections: [{ alias: null, args: K, concreteType: "Timeline", kind: "LinkedField", name: "community_filtered_timeline", plural: !1, selections: [{ alias: null, args: b, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: T.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: b, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, S], storageKey: null }, S], type: "Community", abstractKey: null }], storageKey: null }, S], storageKey: null }] },
-                        params: { id: "FxAPaa3eh3trX_OhYjT4Cg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "CommunityTweetSearchModuleQuery", operationKind: "query", text: null },
+                        params: { id: "hcpBBsjohImNeUUrY9hqkw", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "CommunityTweetSearchModuleQuery", operationKind: "query", text: null },
                     });
-            f.hash = "f4c451ac3e8ab72e403a6ea5929e8cbf";
-            const L = f;
+            L.hash = "f4c451ac3e8ab72e403a6ea5929e8cbf";
+            const f = L;
         },
         629665: (e, l, n) => {
             n.d(l, { Z: () => c });
@@ -644,4 +643,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-fd196509.6cc65d4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-fd196509.500fe4aa.js.map

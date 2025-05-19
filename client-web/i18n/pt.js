@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 s("ed93de0c", "Analisando post"),
-                s("d1d92e40", "More details"),
+                s("d1d92e40", "Mais detalhes"),
                 s("a6e89af8", "Conversa aberta"),
                 s("ica55d24", "Novo chat"),
                 s("f794af9a", "Modo Divertido"),
@@ -4362,8 +4362,8 @@
                 s("g01599b6", "Resposta 1"),
                 s("e02694e0", "Resposta 2"),
                 s("h6867fcc", "Eu prefiro esta resposta"),
-                s("acc4496c", "Try Grok Voice mode"),
-                s("jd36d190", "Access advanced features with Grok Android app"),
+                s("acc4496c", "Experimente o modo de Voz do Grok"),
+                s("jd36d190", "Acesse recursos avançados com o aplicativo do Grok para Android"),
                 s("hf9afab0", "Habilite a DeepSearch para explorar a Internet e o X, analisar informações e fornecer respostas detalhadas e bem fundamentadas com uma pesquisa rápida e dinâmica."),
                 s("ef3b3f04", 'Habilite o Pensamento para usar nosso modelo de raciocínio. Ele é ideal para matemática, ciências e codificação. Você também pode pedir ao Grok para "Pensar mais" sobre qualquer questão que exija um pouco mais de capacidade intelectual. '),
                 s("b43636b8", "Apresentando o Grok 3"),
@@ -5841,7 +5841,7 @@
                 s("ab1b3d38", "Os dados de solicitação de nota ainda não estão disponíveis"),
                 s("c43fb933", "Contrato e Política para Desenvolvedores do X"),
                 s("af781666", "O que as pessoas acham?"),
-                s("a1f414ee", "Share thoughts"),
+                s("a1f414ee", "Compartilhar pensamentos"),
                 s("ed88e742", "Copiar link para o Tópico"),
                 s("h92fe1be", "Infelizmente, as Notas da Comunidade ainda não estão disponíveis para você."),
                 s("f0dc1434", "No momento, as Notas da Comunidade só estão disponíveis nos EUA."),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.4f92e5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.fc8500ea.js.map

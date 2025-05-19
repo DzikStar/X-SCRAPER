@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new requests";
                 }),
                 f("ed93de0c", "正在分析帖子"),
-                f("d1d92e40", "More details"),
+                f("d1d92e40", "更多详情"),
                 f("a6e89af8", "打开对话"),
                 f("ica55d24", "新聊天"),
                 f("f794af9a", "趣味模式"),
@@ -4361,8 +4361,8 @@
                 f("g01599b6", "回答 1"),
                 f("e02694e0", "答案 2"),
                 f("h6867fcc", "我更喜欢这个答案"),
-                f("acc4496c", "Try Grok Voice mode"),
-                f("jd36d190", "Access advanced features with Grok Android app"),
+                f("acc4496c", "尝试 Grok 语音模式"),
+                f("jd36d190", "通过 Grok Android 应用访问高级功能"),
                 f("hf9afab0", "让 DeepSearch 能够扫描互联网和 X，分析信息，并通过快速代理搜索功能提供详细、合理的答案。"),
                 f("ef3b3f04", "让“思考”能够运用我们的推理模型。它最适合数学、科学和编码。你也可以让 Grok 对任何可能需要耗费更多脑力的问题进行“努力思考”。 "),
                 f("b43636b8", "Grok 3 简介"),
@@ -5840,7 +5840,7 @@
                 f("ab1b3d38", "目前还没有附注请求数据"),
                 f("c43fb933", "X 开发者协议和政策"),
                 f("af781666", "人们怎么看？"),
-                f("a1f414ee", "Share thoughts"),
+                f("a1f414ee", "分享想法"),
                 f("ed88e742", "复制话题链接"),
                 f("h92fe1be", "很遗憾，你目前还无法使用社群笔记。"),
                 f("f0dc1434", "社群附注目前仅在美国推出"),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.f5bcf59a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.4046c9da.js.map

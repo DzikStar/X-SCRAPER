@@ -84,6 +84,7 @@
                                                         kind: "InlineFragment",
                                                         selections: [
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -93,7 +94,6 @@
                                                                 plural: !1,
                                                                 selections: [
                                                                     { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
@@ -208,7 +208,7 @@
                             },
                         ],
                     },
-                    params: { id: "sKzMUtkBnjuJigQTwZxSTA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
+                    params: { id: "Xgfq2WVkbo25HFeC41aC0w", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
                 };
             g.hash = "b3a3da30429069de6ce258edaa91d161";
             const m = g;
@@ -576,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.7cfb718a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.9200cc7a.js.map

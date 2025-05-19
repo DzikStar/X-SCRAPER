@@ -92,7 +92,7 @@
                 y = ({ history: e }) => {
                     const t = c()(C, {}),
                         n = t.viewer_v2?.user_results?.result,
-                        a = r.useMemo(() => ({ loggedInUser: "User" === n?.__typename ? r.createElement(p.Z, { profileImageUrl: n.legacy?.profile_image_url_https || void 0, user: n, withLink: !0 }) : null, message: r.createElement(s.ZP, { weight: "bold" }) }), [n]),
+                        a = r.useMemo(() => ({ loggedInUser: "User" === n?.__typename ? r.createElement(p.Z, { profileImageUrl: n.avatar?.image_url || void 0, user: n, withLink: !0 }) : null, message: r.createElement(s.ZP, { weight: "bold" }) }), [n]),
                         o = r.useMemo(() => ("User" === n?.__typename ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", style: Z.secondaryBar }, r.createElement(u().I18NFormatMessage, { $i18n: "a9ec3729" }, r.cloneElement(a.message, null, u().b9226ec1), r.cloneElement(a.loggedInUser, null, u().f47b48f6))) : null), [n, a]);
                     return r.createElement(d.Z, { backButtonType: "close", bottomBar: r.createElement(l.Z, { style: Z.bottomBar }, r.createElement(s.ZP, { link: "/settings/delegate" }, f)), history: e, secondaryBar: o, title: h }, r.createElement(l.Z, { style: Z.container }, r.createElement(g.H, { errorConfig: E }, r.createElement(b.Groups, null))));
                 },
@@ -239,10 +239,11 @@
                 R = d().cb04a824,
                 A = r.memo(({ decoration: e, group: t, userRole: n }) => {
                     const a = x()(P.Z, t),
-                        { id: l, legacy: o } = a,
-                        { name: c, profile_image_url_https: s, screen_name: i } = o ?? {},
-                        m = "Admin" === n ? I : R;
-                    return r.createElement(S.ZP, { avatarUri: s || "", decoration: e, displayNameLabel: n ? m : void 0, name: c || "", screenName: i || "", userId: l });
+                        { avatar: l, id: o, legacy: c } = a,
+                        { name: s, screen_name: i } = c ?? {},
+                        { image_url: m } = l ?? {},
+                        u = "Admin" === n ? I : R;
+                    return r.createElement(S.ZP, { avatarUri: m || "", decoration: e, displayNameLabel: n ? u : void 0, name: s || "", screenName: i || "", userId: o });
                 });
             var L = n(170497),
                 M = n(69477),
@@ -804,13 +805,13 @@
                 O = s().h502484e;
             function T({ memberRole: e, onChangeRolePress: t, refetch: n, restId: l, status: c, userResults: s, viewerRole: u }) {
                 const d = o()(a.Z, s),
-                    { legacy: g } = d,
-                    p = g?.screen_name || "",
-                    b = g?.name || "",
-                    h = g?.profile_image_url_https || "",
-                    f = c === m.D.Pending,
-                    E = r.useCallback(() => t && t({ id: l, profile_image_url_https: h, name: b, screen_name: p, role: e }), [e, b, t, h, l, p]);
-                return r.createElement(i.J, { decoration: r.createElement(B, { memberRole: e, membershipId: l, onChangeRolePress: E, refetch: n, screenName: p, status: c, viewerRole: u }), displayNameLabel: f ? O : void 0, user: d });
+                    { avatar: g, legacy: p } = d,
+                    b = p?.screen_name || "",
+                    h = p?.name || "",
+                    f = g?.image_url || "",
+                    E = c === m.D.Pending,
+                    C = r.useCallback(() => t && t({ id: l, profile_image_url_https: f, name: h, screen_name: b, role: e }), [e, h, t, f, l, b]);
+                return r.createElement(i.J, { decoration: r.createElement(B, { memberRole: e, membershipId: l, onChangeRolePress: C, refetch: n, screenName: b, status: c, viewerRole: u }), displayNameLabel: E ? O : void 0, user: d });
             }
         },
         153785: (e, t, n) => {
@@ -1176,4 +1177,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-63cb1cc4.bc34204a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-63cb1cc4.5ee7f69a.js.map

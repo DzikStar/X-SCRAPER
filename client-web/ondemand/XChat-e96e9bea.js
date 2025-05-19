@@ -176,15 +176,15 @@
                 L = /[a-z0-9!?\*'@\(\);:&=\+\$\/%#\[\]\-_\.,~|]/i,
                 M = /[a-z0-9\-_&=#\/]/i,
                 N = (0, t.Z)("((#{validUrlPrecedingChars})((https?:\\/\\/)?(#{validDomain})(?::(#{validPortNumber}))?(\\/#{validUrlPath}*)?(\\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?))", { validUrlPrecedingChars: Z, validDomain: x, validPortNumber: w, validUrlPath: z, validUrlQueryChars: L, validUrlQueryEndingChars: M }, "gi"),
-                P = /[-_.\/]$/,
-                A = (0, t.Z)(/^https?:\/\/t\.co\/([a-z0-9]+)(?:\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?/, { validUrlQueryChars: L, validUrlQueryEndingChars: M }, "i"),
-                F = { extractUrlsWithoutProtocol: !0 },
+                A = /[-_.\/]$/,
+                F = (0, t.Z)(/^https?:\/\/t\.co\/([a-z0-9]+)(?:\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?/, { validUrlQueryChars: L, validUrlQueryEndingChars: M }, "i"),
+                P = { extractUrlsWithoutProtocol: !0 },
                 E = (e, u, a) => {
                     let d = e.length;
                     const t = l.toAscii(a);
                     return !(!t || !t.length) && ((d = d + t.length - a.length), u.length + d <= 4096);
                 },
-                B = (e, u = F) => {
+                B = (e, u = P) => {
                     if (!e || (u.extractUrlsWithoutProtocol ? !e.match(/\./) : !e.match(/:/))) return [];
                     const a = [];
                     for (; N.exec(e); ) {
@@ -197,14 +197,14 @@
                         const i = r - d.length;
                         if (E(d, t || "https://", s))
                             if (t) {
-                                if (d.match(A)) {
+                                if (d.match(F)) {
                                     const e = RegExp.$1;
                                     if (e && e.length > 40) continue;
                                     (d = RegExp.lastMatch), (r = i + d.length);
                                 }
                                 a.push({ url: d, indices: [i, r] });
                             } else {
-                                if (!u.extractUrlsWithoutProtocol || e.match(P)) continue;
+                                if (!u.extractUrlsWithoutProtocol || e.match(A)) continue;
                                 let t = null,
                                     l = 0;
                                 if (
@@ -318,7 +318,7 @@
             "use strict";
             a.d(u, { Z: () => t });
             var d = a(552322);
-            const t = (e) => (0, d.jsx)("svg", { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, d.jsxs)("g", { fill: "transparent", children: [(0, d.jsx)("path", { id: "vector", d: "M11 4.00006H7.2C6.0799 4.00006 5.51984 4.00006 5.09202 4.21804C4.71569 4.40979 4.40973 4.71575 4.21799 5.09208C4 5.5199 4 6.07995 4 7.20006V16.8001C4 17.9202 4 18.4802 4.21799 18.908C4.40973 19.2844 4.71569 19.5903 5.09202 19.7821C5.51984 20.0001 6.0799 20.0001 7.2 20.0001H16.8C17.9201 20.0001 18.4802 20.0001 18.908 19.7821C19.2843 19.5903 19.5903 19.2844 19.782 18.908C20 18.4802 20 17.9202 20 16.8001V13.0001", stroke: "black", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), (0, d.jsx)("path", { id: "vector_2", d: "M9 15V12.4142C9 12.149 9.10536 11.8946 9.29289 11.7071L17.3358 3.66421C18.1168 2.88316 19.3832 2.88316 20.1642 3.66421L20.3358 3.83578C21.1168 4.61683 21.1168 5.88316 20.3358 6.66421L12.2929 14.7071C12.1054 14.8946 11.851 15 11.5858 15H9Z", stroke: "black", strokeWidth: 2, strokeLinecap: "square", strokeLinejoin: "round" })] }) });
+            const t = (e) => (0, d.jsx)("svg", { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, d.jsxs)("g", { fill: "transparent", children: [(0, d.jsx)("path", { id: "vector", d: "M11 4.00006H7.2C6.0799 4.00006 5.51984 4.00006 5.09202 4.21804C4.71569 4.40979 4.40973 4.71575 4.21799 5.09208C4 5.5199 4 6.07995 4 7.20006V16.8001C4 17.9202 4 18.4802 4.21799 18.908C4.40973 19.2844 4.71569 19.5903 5.09202 19.7821C5.51984 20.0001 6.0799 20.0001 7.2 20.0001H16.8C17.9201 20.0001 18.4802 20.0001 18.908 19.7821C19.2843 19.5903 19.5903 19.2844 19.782 18.908C20 18.4802 20 17.9202 20 16.8001V13.0001", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), (0, d.jsx)("path", { id: "vector_2", d: "M9 15V12.4142C9 12.149 9.10536 11.8946 9.29289 11.7071L17.3358 3.66421C18.1168 2.88316 19.3832 2.88316 20.1642 3.66421L20.3358 3.83578C21.1168 4.61683 21.1168 5.88316 20.3358 6.66421L12.2929 14.7071C12.1054 14.8946 11.851 15 11.5858 15H9Z", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "square", strokeLinejoin: "round" })] }) });
         },
         636872: (e, u, a) => {
             "use strict";
@@ -411,6 +411,23 @@
                 return (0, r.a)("(min-width: 768px)") ? (0, d.jsx)(f.J, { open: u, onOpenChange: a, trigger: t, withArrow: !0, children: e }) : (0, d.jsx)(o, { open: u, onOpenChange: a, trigger: t, children: e });
             }
             const m = ({ items: e, open: u, onOpenChange: a, trigger: t }) => (0, d.jsx)(h, { trigger: t, open: u, onOpenChange: a, children: (0, d.jsx)("div", { className: "flex flex-col items-start justify-start rounded-sm gap-1", children: e.map((e) => (0, d.jsx)(c, { ...e }, e.text)) }) });
+        },
+        863380: (e, u, a) => {
+            "use strict";
+            a.d(u, { r: () => s });
+            var d = a(552322),
+                t = a(796309);
+            function s({ className: e, strength: u = 5, to: a = "bottom" }) {
+                return (0, d.jsxs)("div", {
+                    className: (0, t.cn)("absolute inset-0", e),
+                    children: [
+                        (0, d.jsx)("div", { className: "absolute inset-0", style: { background: `linear-gradient(to ${a}, transparent 10%, hsl(var(--colors-background)) 100%)` } }),
+                        Array.from({ length: u })
+                            .map((e, u) => u + 1)
+                            .map((e) => (0, d.jsx)("div", { className: "absolute inset-0", style: { backdropFilter: "blur(8px)", mask: `linear-gradient(to ${a}, transparent 0%, hsl(var(--colors-background) / 0.8) 50%, hsl(var(--colors-background) / 1) 100%)` } }, e)),
+                    ],
+                });
+            }
         },
         475694: (e, u, a) => {
             "use strict";
@@ -641,4 +658,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.99105a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.5438da9a.js.map

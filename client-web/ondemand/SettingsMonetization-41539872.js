@@ -467,6 +467,7 @@
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
+                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                     {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -476,7 +477,6 @@
                                                                                                         plural: !1,
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
@@ -577,7 +577,7 @@
                             },
                         ],
                     },
-                    params: { id: "4ee24rD8XJ7Jn1vV5JdSLQ", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_new_subscribers_slice", "slice_info"] }, name: "MonetizationSuperFollowsNewSubscriptionsQuery", operationKind: "query", text: null },
+                    params: { id: "bvDOT4zOSFi4JlYy-RS4yA", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_new_subscribers_slice", "slice_info"] }, name: "MonetizationSuperFollowsNewSubscriptionsQuery", operationKind: "query", text: null },
                 };
             g.hash = "fda748159d926bbcf2813be9b16516a0";
             const p = g;
@@ -642,6 +642,7 @@
                                                         selections: [
                                                             { alias: null, args: null, concreteType: "AudienceRewardsBenefitsData", kind: "LinkedField", name: "super_follow_creator_benefits", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "creator_intro", storageKey: null }), { alias: null, args: null, concreteType: "AudienceRewardsBenefitInfo", kind: "LinkedField", name: "benefits_data", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "benefit_type", storageKey: null }, (s = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (t = { kind: "ClientExtension", selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null })] })], storageKey: null },
                                                             { alias: null, args: null, concreteType: "SuperFollowsSelectedPrice", kind: "LinkedField", name: "super_follow_creator_price_metadata", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "selected_price", storageKey: null })], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -650,7 +651,6 @@
                                                                 name: "legacy",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                 ],
@@ -704,7 +704,7 @@
                             },
                         ],
                     },
-                    params: { id: "wP9AEOoAAwb38AmikTrVVA", metadata: {}, name: "MonetizationSuperFollowsPerksQuery", operationKind: "query", text: null },
+                    params: { id: "8N0Qu5TIi7ME4SQQRySeAA", metadata: {}, name: "MonetizationSuperFollowsPerksQuery", operationKind: "query", text: null },
                 };
             c.hash = "01638e138b66b2fb6c0b34598c1553af";
             const g = c;
@@ -935,6 +935,7 @@
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
+                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                     {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -944,7 +945,6 @@
                                                                                                         plural: !1,
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
@@ -1045,7 +1045,7 @@
                             },
                         ],
                     },
-                    params: { id: "x-xU_1r8uLLqE_GNF-13Ww", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_renewals_slice", "slice_info"] }, name: "MonetizationSuperFollowsRenewalsQuery", operationKind: "query", text: null },
+                    params: { id: "KgU4kXdTr0ynN63UF0Lz4Q", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_renewals_slice", "slice_info"] }, name: "MonetizationSuperFollowsRenewalsQuery", operationKind: "query", text: null },
                 };
             g.hash = "93621813893adb0100be5b58e47806f3";
             const p = g;
@@ -1063,8 +1063,8 @@
                 c,
                 g,
                 p,
-                m,
                 y,
+                m,
                 k = {
                     fragment: {
                         argumentDefinitions: (a = [
@@ -1121,7 +1121,7 @@
                                                                 kind: "LinkedField",
                                                                 name: "superfollows_new_subscribers_slice",
                                                                 plural: !1,
-                                                                selections: (m = [
+                                                                selections: (y = [
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -1153,6 +1153,7 @@
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
+                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                     {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -1162,7 +1163,6 @@
                                                                                                         plural: !1,
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
@@ -1230,7 +1230,7 @@
                                                                 ]),
                                                                 storageKey: null,
                                                             },
-                                                            { alias: null, args: o, concreteType: "SuperfollowsSubscriptionSlice", kind: "LinkedField", name: "superfollows_renewals_slice", plural: !1, selections: m, storageKey: null },
+                                                            { alias: null, args: o, concreteType: "SuperfollowsSubscriptionSlice", kind: "LinkedField", name: "superfollows_renewals_slice", plural: !1, selections: y, storageKey: null },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -1238,13 +1238,13 @@
                                                                 kind: "LinkedField",
                                                                 name: "superfollows_revenue",
                                                                 plural: !1,
-                                                                selections: (y = [
+                                                                selections: (m = [
                                                                     { alias: null, args: null, kind: "ScalarField", name: "all_time_revenue_in_cents", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "revenue_since_last_payout_in_cents", storageKey: null },
                                                                 ]),
                                                                 storageKey: null,
                                                             },
-                                                            { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: y, storageKey: null },
+                                                            { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: m, storageKey: null },
                                                             { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null },
                                                             p,
                                                         ],
@@ -1263,7 +1263,7 @@
                             },
                         ],
                     },
-                    params: { id: "8Snnor78OklTa7AQAfcsZg", metadata: {}, name: "MonetizationSuperFollowsRevenueQuery", operationKind: "query", text: null },
+                    params: { id: "SlI6pCrmL4wG2AdxlhS2Aw", metadata: {}, name: "MonetizationSuperFollowsRevenueQuery", operationKind: "query", text: null },
                 };
             k.hash = "3e33f885dd213dcf81617b3990a3aca2";
             const _ = k;
@@ -1350,19 +1350,8 @@
                                                             },
                                                             { alias: null, args: null, concreteType: "SuperFollowsSelectedPrice", kind: "LinkedField", name: "super_follow_creator_price_metadata", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "selected_price", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "PendingPriceChange", kind: "LinkedField", name: "super_follow_pending_price_change", plural: !1, selections: [(r = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }), { alias: null, args: null, kind: "ScalarField", name: "new_price", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "price_change", storageKey: null }], storageKey: null },
-                                                            {
-                                                                alias: null,
-                                                                args: null,
-                                                                concreteType: "ApiUser",
-                                                                kind: "LinkedField",
-                                                                name: "legacy",
-                                                                plural: !1,
-                                                                selections: [
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                ],
-                                                                storageKey: null,
-                                                            },
+                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                         ],
@@ -1408,11 +1397,11 @@
                             },
                         ],
                     },
-                    params: { id: "iDBAD5T5egC7L7IINShEdQ", metadata: {}, name: "MonetizationSuperFollowsSettingsQuery", operationKind: "query", text: null },
+                    params: { id: "hG41TazqXAgyQ5VoP2qxAw", metadata: {}, name: "MonetizationSuperFollowsSettingsQuery", operationKind: "query", text: null },
                 };
             u.hash = "f034ec646c785a8afbe22ede93a5fed8";
             const t = u;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-41539872.994d4a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-41539872.625b1f8a.js.map

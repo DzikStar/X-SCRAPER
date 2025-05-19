@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new request" + i(e.count, "", "s");
                 }),
                 t("ed93de0c", "Analyserer innlegget"),
-                t("d1d92e40", "More details"),
+                t("d1d92e40", "Mer informasjon"),
                 t("a6e89af8", "Åpen samtale"),
                 t("ica55d24", "Ny samtale"),
                 t("f794af9a", "Gøyal modus"),
@@ -4361,8 +4361,8 @@
                 t("g01599b6", "Svar 1"),
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrekker dette svaret"),
-                t("acc4496c", "Try Grok Voice mode"),
-                t("jd36d190", "Access advanced features with Grok Android app"),
+                t("acc4496c", "Prøv talemodus i Grok"),
+                t("jd36d190", "Få tilgang til avanserte funksjoner med Android-appen for Grok"),
                 t("hf9afab0", "Aktiver DeepSearch for å søke på internett og X, analysere opplysninger og gi detaljerte, velbegrunnede svar med raskt, agentisk søk."),
                 t("ef3b3f04", "Aktiver tenkemodus for å bruke resonneringsmodellen vår. Den er best for matematikk, vitenskap og koding. Du kan også be Grok om å «tenke hardere» på et spørsmål som trenger litt mer hjernekraft. "),
                 t("b43636b8", "Vi presenterer Grok 3"),
@@ -5840,7 +5840,7 @@
                 t("ab1b3d38", "Merknadsforespørselsdata er ikke tilgjengelig ennå"),
                 t("c43fb933", "X’ avtale og regler for utviklere"),
                 t("af781666", "Hva tenker brukerne?"),
-                t("a1f414ee", "Share thoughts"),
+                t("a1f414ee", "Din mening"),
                 t("ed88e742", "Kopier lenke til emnet"),
                 t("h92fe1be", "Fellesskapsmerknader er dessverre ikke tilgjengelig for deg ennå."),
                 t("f0dc1434", "Fellesskapsmerknader er for øyeblikket bare tilgjengelig i USA"),
@@ -13232,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.b7363a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.51f044ca.js.map

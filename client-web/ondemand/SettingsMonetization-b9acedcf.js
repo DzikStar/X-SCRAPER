@@ -153,6 +153,7 @@
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
+                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                     {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -162,7 +163,6 @@
                                                                                                         plural: !1,
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
@@ -247,7 +247,7 @@
                             },
                         ],
                     },
-                    params: { id: "FcyQjIyIQevGxsY0zwFG7Q", metadata: {}, name: "MonetizationAwardsRevenueQuery", operationKind: "query", text: null },
+                    params: { id: "J7yRXBsS-yv_ueGH_MxwPQ", metadata: {}, name: "MonetizationAwardsRevenueQuery", operationKind: "query", text: null },
                 };
             m.hash = "cd58cb989f803a4b51ddb03f6a82d095";
             const k = m;
@@ -447,6 +447,7 @@
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
+                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                     {
                                                                                                         alias: null,
                                                                                                         args: null,
@@ -456,7 +457,6 @@
                                                                                                         plural: !1,
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
@@ -558,11 +558,11 @@
                             },
                         ],
                     },
-                    params: { id: "7Zg-GviEPT5SCpezYVm6Sg", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "awards_granted_slice", "slice_info"] }, name: "MonetizationAwardsTransactionsQuery", operationKind: "query", text: null },
+                    params: { id: "VqZNe2pdwvpJmRAQqFZMQw", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "awards_granted_slice", "slice_info"] }, name: "MonetizationAwardsTransactionsQuery", operationKind: "query", text: null },
                 };
             c.hash = "e0059d0ba4726b5ad5e2fd2ab07ef7c9";
             const g = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.e53e1aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.2784fbaa.js.map

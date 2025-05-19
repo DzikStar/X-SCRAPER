@@ -17,8 +17,8 @@
                     p = r.$_$.o6,
                     g = r.$_$.ue,
                     d = r.$_$.te,
-                    h = r.$_$.u,
-                    m = r.$_$.rd,
+                    m = r.$_$.u,
+                    h = r.$_$.rd,
                     f = r.$_$.c8,
                     b = r.$_$.t,
                     q = r.$_$.yk,
@@ -55,12 +55,12 @@
                     K = r.$_$.ad;
                 function Q(k) {
                     return (function (k, r) {
-                        return W.call(r), u(r.acr_1, k), r;
+                        return W.call(r), u(r.dcr_1, k), r;
                     })(k, d(g(W)));
                 }
                 function W() {
                     tk.call(this);
-                    this.acr_1 = h();
+                    this.dcr_1 = m();
                 }
                 function X(k, r) {
                     for (var e = b(f(r, 10)), a = r.p(); a.q(); ) {
@@ -74,9 +74,9 @@
                 }
                 function kk() {
                     (e = this),
-                        (this.dcr_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
-                        (this.ecr_1 = X(0, this.dcr_1)),
-                        (this.fcr_1 = v([
+                        (this.gcr_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
+                        (this.hcr_1 = X(0, this.gcr_1)),
+                        (this.icr_1 = v([
                             q("'", "&apos;"),
                             q(" ", "&nbsp"),
                             q(" ", "&nbsp;"),
@@ -431,8 +431,8 @@
                             q("♥", "&hearts;"),
                             q("♦", "&diams;"),
                         ])),
-                        (this.gcr_1 = X(0, this.fcr_1));
-                    var k = h();
+                        (this.jcr_1 = X(0, this.icr_1));
+                    var k = m();
                     k.k(q("Æ", "&AElig")),
                         k.k(q("Æ", "&AElig;")),
                         k.k(q("&", "&AMP")),
@@ -2664,8 +2664,8 @@
                         k.k(q("𝓏", "&zscr;")),
                         k.k(q("‍", "&zwj;")),
                         k.k(q("‌", "&zwnj;")),
-                        (this.hcr_1 = w(k)),
-                        (this.icr_1 = X(0, this.hcr_1));
+                        (this.kcr_1 = w(k)),
+                        (this.lcr_1 = X(0, this.kcr_1));
                 }
                 function rk() {
                     return null == e && new kk(), e;
@@ -2673,25 +2673,25 @@
                 function ek() {
                     a = this;
                     var k = v([q("\0", ""), q("\v", "&#11;"), q("\f", "&#12;"), q("￾", ""), q("￿", "")]);
-                    (this.kcr_1 = Q([new ak(rk().dcr_1), new ak(k), s.jcr(1, 8), s.jcr(14, 31), s.jcr(127, 132), s.jcr(134, 159), new hk()])), (this.lcr_1 = Q([new ak(rk().fcr_1)])), (this.mcr_1 = Q([new ak(rk().hcr_1), s.jcr(1, 8), s.jcr(14, 31), s.jcr(127, 132), s.jcr(134, 159)])), (this.ncr_1 = Q([new ak(rk().gcr_1), new pk([])])), (this.ocr_1 = Q([new ak(rk().icr_1), new pk([])])), (this.pcr_1 = Q([new ak(rk().ecr_1), new pk([])]));
+                    (this.ncr_1 = Q([new ak(rk().gcr_1), new ak(k), s.mcr(1, 8), s.mcr(14, 31), s.mcr(127, 132), s.mcr(134, 159), new mk()])), (this.ocr_1 = Q([new ak(rk().icr_1)])), (this.pcr_1 = Q([new ak(rk().kcr_1), s.mcr(1, 8), s.mcr(14, 31), s.mcr(127, 132), s.mcr(134, 159)])), (this.qcr_1 = Q([new ak(rk().jcr_1), new pk([])])), (this.rcr_1 = Q([new ak(rk().lcr_1), new pk([])])), (this.scr_1 = Q([new ak(rk().hcr_1), new pk([])]));
                 }
                 function ak(k) {
                     tk.call(this);
-                    this.scr_1 = E();
-                    this.tcr_1 = A();
+                    this.vcr_1 = E();
+                    this.wcr_1 = A();
                     for (var r = 2147483647, e = 0, a = k.p(); a.q(); ) {
                         var t = a.r(),
                             o = t.gh(),
                             i = t.hh();
-                        this.scr_1.u2(o, i);
+                        this.vcr_1.u2(o, i);
                         var c = D(o, 0),
                             s = L(c),
                             l = S(x(s));
-                        this.tcr_1.k(new _(l));
+                        this.wcr_1.k(new _(l));
                         var n = o.length;
                         n < r && (r = n), n > e && (e = n);
                     }
-                    (this.ucr_1 = r), (this.vcr_1 = e);
+                    (this.xcr_1 = r), (this.ycr_1 = e);
                 }
                 function tk() {}
                 function ok() {
@@ -2705,10 +2705,10 @@
                     O.call(this, k, r);
                 }
                 function sk(k, r) {
-                    return k.xcr_1.w(r);
+                    return k.acs_1.w(r);
                 }
                 function lk() {
-                    (c = this), (this.ycr_1 = B(uk()));
+                    (c = this), (this.bcs_1 = B(uk()));
                 }
                 function nk() {
                     return null == c && new lk(), c;
@@ -2719,16 +2719,16 @@
                 function pk(k) {
                     nk(), tk.call(this);
                     var r;
-                    (r = 0 === k.length ? nk().ycr_1 : G(k.slice())), (this.xcr_1 = r);
+                    (r = 0 === k.length ? nk().bcs_1 : G(k.slice())), (this.acs_1 = r);
                 }
                 function gk() {}
                 function dk(k, r) {
-                    ok.call(this), (this.ccs_1 = k), (this.dcs_1 = r);
+                    ok.call(this), (this.fcs_1 = k), (this.gcs_1 = r);
                 }
-                function hk() {
+                function mk() {
                     ok.call(this);
                 }
-                function mk(k, r, e, a) {
+                function hk(k, r, e, a) {
                     (e[(a + 1) | 0] = (function (k, r) {
                         var e = 1023 & r,
                             a = H(56320),
@@ -2740,19 +2740,19 @@
                         })(0, r));
                 }
                 function fk() {
-                    (this.zcr_1 = 65536), (this.acs_1 = 1114111);
+                    (this.ccs_1 = 65536), (this.dcs_1 = 1114111);
                 }
-                m(tk, "StringTranslator"),
-                    m(W, "AggregateTranslator", W, tk),
+                h(tk, "StringTranslator"),
+                    h(W, "AggregateTranslator", W, tk),
                     y(kk, "EntityMaps"),
                     y(ek, "KsoupEntities"),
-                    m(ak, "LookupTranslator", R, tk),
-                    m(ok, "CodePointTranslator", R, tk),
-                    m(ck, "Option", R, O),
+                    h(ak, "LookupTranslator", R, tk),
+                    h(ok, "CodePointTranslator", R, tk),
+                    h(ck, "Option", R, O),
                     I(lk),
-                    m(pk, "NumericEntityDecoder", R, tk),
+                    h(pk, "NumericEntityDecoder", R, tk),
                     I(gk),
-                    m(
+                    h(
                         dk,
                         "NumericEntityEncoder",
                         function () {
@@ -2761,47 +2761,47 @@
                         },
                         ok,
                     ),
-                    m(hk, "UnicodeUnpairedSurrogateRemover", hk, ok),
+                    h(mk, "UnicodeUnpairedSurrogateRemover", mk, ok),
                     y(fk, "CharsUtils"),
-                    (g(W).bcr = function (k, r, e) {
-                        for (var a = this.acr_1.p(); a.q(); ) {
-                            var t = a.r().bcr(k, r, e);
+                    (g(W).ecr = function (k, r, e) {
+                        for (var a = this.dcr_1.p(); a.q(); ) {
+                            var t = a.r().ecr(k, r, e);
                             if (0 !== t) return t;
                         }
                         return 0;
                     }),
-                    (g(ek).qcr = function (k) {
-                        return this.ocr_1.ccr(k);
+                    (g(ek).tcr = function (k) {
+                        return this.rcr_1.fcr(k);
                     }),
-                    (g(ek).rcr = function (k) {
-                        return this.qcr(k);
+                    (g(ek).ucr = function (k) {
+                        return this.tcr(k);
                     }),
-                    (g(ak).bcr = function (k, r, e) {
+                    (g(ak).ecr = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a),
                             o = S(x(t));
-                        if (this.tcr_1.w(new _(o))) {
-                            var i = this.vcr_1;
-                            ((r + this.vcr_1) | 0) > k.length && (i = (k.length - r) | 0);
+                        if (this.wcr_1.w(new _(o))) {
+                            var i = this.ycr_1;
+                            ((r + this.ycr_1) | 0) > k.length && (i = (k.length - r) | 0);
                             var c = i,
-                                s = this.ucr_1;
+                                s = this.xcr_1;
                             if (s <= c)
                                 do {
                                     var l = c;
                                     c = (c + -1) | 0;
                                     var n = T(k, r, (r + l) | 0),
-                                        u = this.scr_1.r2($(n));
+                                        u = this.vcr_1.r2($(n));
                                     if (null != u) return e.f9(u), N(n);
                                 } while (l !== s);
                         }
                         return 0;
                     }),
-                    (g(tk).ccr = function (k) {
+                    (g(tk).fcr = function (k) {
                         var r = V(n(k.length, 2));
                         return (
                             (function (k, r, e) {
                                 for (var a = 0, t = r.length; a < t; ) {
-                                    var o = k.bcr(r, a, e);
+                                    var o = k.ecr(r, a, e);
                                     if (0 !== o) {
                                         var i = 0;
                                         if (i < o)
@@ -2820,12 +2820,12 @@
                             r.toString()
                         );
                     }),
-                    (g(ok).bcr = function (k, r, e) {
+                    (g(ok).ecr = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a);
-                        return this.wcr(t, e) ? 1 : 0;
+                        return this.zcr(t, e) ? 1 : 0;
                     }),
-                    (g(pk).bcr = function (k, r, e) {
+                    (g(pk).ecr = function (k, r, e) {
                         var a = k.length;
                         if (D(k, r) === H(38) && r < ((a - 2) | 0) && D(k, (r + 1) | 0) === H(35)) {
                             var t = (r + 2) | 0,
@@ -2846,31 +2846,31 @@
                                     }
                                     if (p) u = !0;
                                     else {
-                                        var h = D(k, s);
-                                        u = H(65) <= h && h <= H(70);
+                                        var m = D(k, s);
+                                        u = H(65) <= m && m <= H(70);
                                     }
                                     n = u;
                                 } else n = !1;
                                 if (!n) break k;
                                 s = (s + 1) | 0;
                             }
-                            var m,
+                            var h,
                                 f = !(s === a) && D(k, s) === H(59);
                             if (!f) {
                                 if (sk(this, uk())) return 0;
                                 if (sk(this, (ik(), o))) throw P("Semi-colon required at end of numeric entity");
                             }
                             try {
-                                m = z($(T(k, t, s)), i ? 16 : 10);
+                                h = z($(T(k, t, s)), i ? 16 : 10);
                             } catch (k) {
                                 if (k instanceof j) {
                                     return 0;
                                 }
                                 throw k;
                             }
-                            var b = m;
+                            var b = h;
                             if (b > 65535)
-                                for (var q = l.bcs(b), v = 0, w = q.length; v < w; ) {
+                                for (var q = l.ecs(b), v = 0, w = q.length; v < w; ) {
                                     var y = q[v];
                                     (v = (v + 1) | 0), e.g9(y);
                                 }
@@ -2890,13 +2890,13 @@
                         }
                         return 0;
                     }),
-                    (g(gk).jcr = function (k, r) {
+                    (g(gk).mcr = function (k, r) {
                         return new dk(M(k, r), !0);
                     }),
-                    (g(dk).wcr = function (k, r) {
-                        return this.dcs_1 === this.ccs_1.xl(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
+                    (g(dk).zcr = function (k, r) {
+                        return this.gcs_1 === this.fcs_1.xl(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
                     }),
-                    (g(hk).wcr = function (k, r) {
+                    (g(mk).zcr = function (k, r) {
                         var e,
                             a = H(55296);
                         if (k >= L(a)) {
@@ -2905,7 +2905,7 @@
                         } else e = !1;
                         return e;
                     }),
-                    (g(fk).bcs = function (k) {
+                    (g(fk).ecs = function (k) {
                         var r;
                         if (
                             (function (k, r) {
@@ -2921,7 +2921,7 @@
                             )
                                 throw J();
                             var e = Z(2);
-                            mk(0, k, e, 0), (r = e);
+                            hk(0, k, e, 0), (r = e);
                         }
                         return r;
                     }),
@@ -2935,4 +2935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.d8c3e9ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.d4ddff5a.js.map

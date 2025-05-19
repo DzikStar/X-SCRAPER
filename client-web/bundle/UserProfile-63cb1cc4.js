@@ -30,7 +30,7 @@
             const s = n.Z,
                 u = ({ user: e, ...t }) => {
                     const r = o()(s, e);
-                    return i.createElement(c.Z, (0, a.Z)({}, t, { screenName: r.legacy?.screen_name, uri: r.legacy?.profile_image_url_https }));
+                    return i.createElement(c.Z, (0, a.Z)({}, t, { screenName: r.legacy?.screen_name, uri: r.avatar?.image_url ?? void 0 }));
                 };
         },
         421813: (e, t, r) => {
@@ -382,4 +382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-63cb1cc4.abaeebba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-63cb1cc4.8d0b0a5a.js.map

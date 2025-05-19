@@ -404,7 +404,7 @@
                 }
             }
             const F = (e) => {
-                    if (e.result?.legacy && e.result?.verification && e.result?.privacy) return { id_str: e.result.id, profile_image_url_https: e.result.legacy.profile_image_url_https || "", protected: e.result.privacy.protected || !1, verified: e.result.verification.verified || !1, is_blue_verified: !!e.result.is_blue_verified, name: e.result.legacy.name || "", screen_name: e.result.legacy.screen_name || "" };
+                    if (e.result?.legacy && e.result?.verification && e.result?.privacy) return { id_str: e.result.id, profile_image_url_https: e.result.avatar?.image_url || "", protected: e.result.privacy.protected || !1, verified: e.result.verification.verified || !1, is_blue_verified: !!e.result.is_blue_verified, name: e.result.legacy.name || "", screen_name: e.result.legacy.screen_name || "" };
                 },
                 U = ({ component: e }) => {
                     const t = e.media.media_id || "",
@@ -569,7 +569,7 @@
                                                 s = { [a]: o };
                                             let d = {};
                                             const r = e.user_results?.result;
-                                            r && r.legacy && (d = { id_str: r.id, profile_image_url_https: r.legacy.profile_image_url_https || "", protected: !!r.privacy?.protected, verified: !!r.verification?.verified, is_blue_verified: !!r.is_blue_verified, name: r.legacy.name || "", screen_name: r.legacy.screen_name || "" });
+                                            r && r.legacy && (d = { id_str: r.id, profile_image_url_https: r.avatar?.image_url || "", protected: !!r.privacy?.protected, verified: !!r.verification?.verified, is_blue_verified: !!r.is_blue_verified, name: r.legacy.name || "", screen_name: r.legacy.screen_name || "" });
                                             const l = { type: b.Qe.TWITTER_LIST_DETAILS, data: { title: e.name, destination: a, memberCount: e.member_count, attribution: d } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: s, mediaEntities: {}, componentsData: { [i]: l } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
@@ -736,4 +736,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.f91d0c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.a03a4eda.js.map

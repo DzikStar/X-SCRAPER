@@ -26,7 +26,7 @@
             }
         },
         767508: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => h });
+            l.r(a), l.d(a, { default: () => S });
             var n = l(807896),
                 r = l(202784),
                 t = l(669406),
@@ -49,7 +49,7 @@
                         t = n ? `/${n}/superfollows/subscribe` : "/home";
                     return r.createElement(p.nO, { namespace: b }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: k.wrapper }, r.createElement(m.Z, { headline: g, illustration: m.j.ConfusedDog, subtext: y }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: k.button, type: "primaryFilled" }, _))));
                 },
-                h = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: f }));
+                S = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: f }));
         },
         518983: (e, a, l) => {
             l.r(a), l.d(a, { default: () => qe });
@@ -121,8 +121,8 @@
                                                 selections: [
                                                     s,
                                                     i,
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), (m = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null })], storageKey: null },
-                                                    (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }),
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null },
+                                                    (m = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }),
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -139,6 +139,7 @@
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, concreteType: "VerifiedProgramsCreatorFeatures", kind: "LinkedField", name: "verified_program_creator_features", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "email_sharing_from_subscribers_enabled", storageKey: null }], storageKey: null },
+                                                    (p = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }),
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -176,29 +177,29 @@
                                 ],
                                 storageKey: null,
                             },
-                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, d, u], storageKey: null }, p, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
+                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d, u], storageKey: null }, m, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, p, { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
                         ],
                     },
-                    params: { id: "GSJJrJNZzNCEliwnqTOzpw", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
+                    params: { id: "Lyepiyvmi8avyktUA70e7g", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
                 };
             k.hash = "b5ca6f3d0c226d006500f7a642421be5";
             const f = k;
             l(585488);
-            var h = l(107267),
-                v = l(154003),
-                S = l(392237),
-                F = l(332920),
-                w = l.n(F),
+            var S = l(107267),
+                F = l(154003),
+                v = l(392237),
+                h = l(332920),
+                w = l.n(h),
                 K = l(980407),
                 E = l(724345),
-                Z = l(783373),
-                L = l(883229),
+                L = l(783373),
+                Z = l(883229),
                 C = l(943914),
                 T = l(293115),
                 x = l(28557),
-                V = l(535338),
+                U = l(535338),
                 N = l(615027),
-                U =
+                P =
                     (l(136728),
                     {
                         argumentDefinitions: [],
@@ -213,8 +214,8 @@
                         abstractKey: null,
                         hash: "2346846c87f6b76cd76ea9b834745cff",
                     });
-            const P = U;
-            var z = {
+            const V = P;
+            var A = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -257,22 +258,22 @@
                 abstractKey: null,
                 hash: "8cc9851e7df50c2a31cb138abffb7743",
             };
-            const B = z;
-            var M = l(576648),
-                A = l(325686),
-                R = l(277660),
-                I = l.n(R),
-                D = l(811176),
-                H = l(167630),
-                $ = l(708852),
-                O = l(630715),
-                j = l(786272),
+            const B = A;
+            var R = l(576648),
+                I = l(325686),
+                M = l(277660),
+                D = l.n(M),
+                $ = l(811176),
+                z = l(167630),
+                j = l(708852),
+                H = l(630715),
+                O = l(786272),
                 q = l(73664),
                 W = l(952793),
-                G = l(782642),
-                Q = l(97882),
-                J = l(782826),
-                X = l(359870),
+                Q = l(782642),
+                G = l(97882),
+                X = l(782826),
+                J = l(359870),
                 Y = l(725516),
                 ee = l(688715),
                 ae = l(731708),
@@ -283,12 +284,12 @@
                 se = (0, ee.ju)("https://help.x.com/using-x/creator-email-sharing"),
                 ie = (0, ee.ju)("https://legal.x.com/creator-email-sharing-terms.html"),
                 oe = w().i859a9d4,
-                ce = S.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
+                ce = v.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
                 ue = ({ consented: e, creatorName: a, setConsented: l, setSubscriptionEmail: n, subscriptionEmail: r }) => {
                     const [t, s] = _.useState(),
                         i = (0, re.Z)(),
                         o = _.useCallback(() => {
-                            r && s((0, X.Z)(r));
+                            r && s((0, J.Z)(r));
                         }, [s, r]),
                         c = _.useCallback((e) => n(e.currentTarget.value), [n]),
                         u = _.useCallback(
@@ -298,7 +299,7 @@
                             [i, l, n],
                         ),
                         d = _.useMemo(() => ({ elements: { link: _.createElement(ae.ZP, { color: "plum500", link: ie }) }, variables: { creatorName: a } }), [a]);
-                    return _.createElement(A.Z, null, _.createElement(A.Z, { style: ce.row }, _.createElement(le.Z, { checked: e, onChange: u }), _.createElement(ae.ZP, { color: "gray700" }, _.createElement(w().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, _.cloneElement(d.elements.link, null, w().e6c72234)), _.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), _.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
+                    return _.createElement(I.Z, null, _.createElement(I.Z, { style: ce.row }, _.createElement(le.Z, { checked: e, onChange: u }), _.createElement(ae.ZP, { color: "gray700" }, _.createElement(w().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, _.cloneElement(d.elements.link, null, w().e6c72234)), _.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), _.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
                 };
             var de = {
                 argumentDefinitions: [],
@@ -307,6 +308,7 @@
                 name: "SuperFollowsSubscribeSellSheet_viewer",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -315,7 +317,6 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
@@ -326,7 +327,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "ccde7742d4a129a0946b9f9071b5d593",
+                hash: "5b8d30a47b5302c9c9caed0806e2eda8",
             };
             const me = de;
             var pe = {
@@ -335,6 +336,7 @@
                 metadata: null,
                 name: "SuperFollowsSubscribeSellSheet_user",
                 selections: [
+                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -344,7 +346,6 @@
                         plural: !1,
                         selections: [
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
-                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
@@ -378,7 +379,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "6d5d948a571d822cae9ae0b570ac834d",
+                hash: "5883a3d3920aafec4ae5c66ab0a437e0",
             };
             const ge = pe;
             var ye = l(879101),
@@ -387,25 +388,25 @@
                 ke = me,
                 fe = (e) => {
                     const { children: a, emailShareElement: l, isWide: n, user: r, viewer: t } = e,
-                        s = I()(be, r),
-                        i = I()(ke, t),
+                        s = D()(be, r),
+                        i = D()(ke, t),
                         o = s.legacy?.name ?? void 0,
-                        c = s.legacy?.profile_image_url_https ?? void 0,
+                        c = s.avatar?.image_url ?? void 0,
                         u = s.legacy?.screen_name ?? void 0,
                         d = s.super_follow_creator_benefits?.creator_intro ?? void 0,
                         m = (s.super_follow_creator_benefits?.benefits_data ?? []).find((e) => "ExclusiveContent" === e.benefit_type),
                         p = m?.description ?? void 0,
-                        g = i.legacy?.profile_image_url_https ?? void 0,
+                        g = i.avatar?.image_url ?? void 0,
                         y = i.legacy?.name ?? void 0,
                         b = i.legacy?.screen_name ?? void 0,
                         k = i.privacy?.protected ?? void 0,
                         f = i.verification?.verified ?? void 0,
-                        h = i?.is_blue_verified ?? void 0,
-                        v = _.useMemo(() => [he.subscribeButtonContainer, n && he.subscribeButtonContainerWide], [n]);
-                    return _.createElement(_.Fragment, null, _.createElement(_e.Z, { badgeImageUrl: g, badgeName: y, badgeScreenName: b, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: h, isProtected: k, isVerified: f, name: o, screenName: u }), _.createElement(A.Z, { style: v }, l, _.createElement(ye.Z, { recurring: !0, style: he.disclaimer }), a));
+                        S = i?.is_blue_verified ?? void 0,
+                        F = _.useMemo(() => [Se.subscribeButtonContainer, n && Se.subscribeButtonContainerWide], [n]);
+                    return _.createElement(_.Fragment, null, _.createElement(_e.Z, { badgeImageUrl: g, badgeName: y, badgeScreenName: b, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: S, isProtected: k, isVerified: f, name: o, screenName: u }), _.createElement(I.Z, { style: F }, l, _.createElement(ye.Z, { recurring: !0, style: Se.disclaimer }), a));
                 },
-                he = S.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
-            var ve = (function () {
+                Se = v.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
+            var Fe = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "consented" },
                     a = { defaultValue: null, kind: "LocalArgument", name: "creator_id" },
                     l = { defaultValue: null, kind: "LocalArgument", name: "email" },
@@ -442,11 +443,11 @@
                     ];
                 return { fragment: { argumentDefinitions: [e, a, l], kind: "Fragment", metadata: null, name: "useEmailShareConsentUpdateMutation", selections: n, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [l, a, e], kind: "Operation", name: "useEmailShareConsentUpdateMutation", selections: n }, params: { id: "cpdX3u0AUkdRb5mc3LpVpg", metadata: {}, name: "useEmailShareConsentUpdateMutation", operationKind: "mutation", text: null } };
             })();
-            ve.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
-            const Se = ve;
-            var Fe = l(351743),
-                we = l.n(Fe);
-            const Ke = Se;
+            Fe.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
+            const ve = Fe;
+            var he = l(351743),
+                we = l.n(he);
+            const Ke = ve;
             l(571372);
             var Ee = (function () {
                 var e = [
@@ -474,15 +475,15 @@
                 return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "useSuperFollowsCreateStripeSubscriptionUrlMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "useSuperFollowsCreateStripeSubscriptionUrlMutation", selections: a }, params: { id: "1nNykZ_aQohdxHKoykBVmg", metadata: {}, name: "useSuperFollowsCreateStripeSubscriptionUrlMutation", operationKind: "mutation", text: null } };
             })();
             Ee.hash = "759d9c15b4318f3e6cf9204063fd8da0";
-            const Ze = Ee,
-                Le = w().d2613123,
+            const Le = Ee,
+                Ze = w().d2613123,
                 Ce = w().ef4602ec,
                 Te = w().c4640fc0,
                 xe = w().a72064a8,
-                Ve = w().f88553c8,
+                Ue = w().f88553c8,
                 Ne = B,
-                Ue = P,
-                Pe = (e) => {
+                Pe = V,
+                Ve = (e) => {
                     const { screenName: a, user: l, viewer: n } = e,
                         r = (0, W.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         t = (0, W.hC)("super_follow_subscriptions_tax_calculation_enabled"),
@@ -492,24 +493,24 @@
                         d = _.useRef(),
                         m = (0, q.R)(d, { threshold: 0.5 }),
                         p = (0, Y.z)(),
-                        g = I()(Ne, l),
-                        b = I()(Ue, n),
-                        k = (0, h.useHistory)(),
-                        f = (0, G.p)(),
-                        S = g.legacy?.id_str ?? void 0,
-                        F = g.legacy?.screen_name ?? void 0,
+                        g = D()(Ne, l),
+                        b = D()(Pe, n),
+                        k = (0, S.useHistory)(),
+                        f = (0, Q.p)(),
+                        v = g.legacy?.id_str ?? void 0,
+                        h = g.legacy?.screen_name ?? void 0,
                         w = ((e, a, l, n) => {
                             let r = e;
                             return l && n && (r += a), r;
                         })(g.super_follow_creator_product_metadata?.amount ?? 0, g.super_follow_creator_product_metadata?.tax_amount ?? 0, r, t),
                         E = g.super_follow_creator_product_metadata?.currency_code ?? void 0,
-                        Z = g.super_follow_creator_product_metadata?.product_id ?? void 0,
-                        L = b.legacy?.id_str ?? void 0,
-                        { href: C, origin: T } = J.ZP.get(),
-                        x = F ? `${T}/${F}/creator-subscriptions/subscribe/success` : T,
-                        V = F ? `${T}/${F}/creator-subscriptions/subscribe/failure` : T,
-                        [N, U] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
-                            const [n, r] = we()(Ze);
+                        L = g.super_follow_creator_product_metadata?.product_id ?? void 0,
+                        Z = b.legacy?.id_str ?? void 0,
+                        { href: C, origin: T } = X.ZP.get(),
+                        x = h ? `${T}/${h}/creator-subscriptions/subscribe/success` : T,
+                        U = h ? `${T}/${h}/creator-subscriptions/subscribe/failure` : T,
+                        [N, P] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
+                            const [n, r] = we()(Le);
                             return [
                                 _.useCallback(
                                     () =>
@@ -529,8 +530,8 @@
                                 ),
                                 r,
                             ];
-                        })({ productId: Z, successUrl: x, cancelUrl: V }),
-                        [P] = (() => {
+                        })({ productId: L, successUrl: x, cancelUrl: U }),
+                        [V] = (() => {
                             const [e, a] = we()(Ke);
                             return [
                                 _.useCallback(
@@ -549,93 +550,93 @@
                                 a,
                             ];
                         })(),
-                        z = _.useMemo(() => {
-                            let e = (0, J.G3)(k.location);
+                        A = _.useMemo(() => {
+                            let e = (0, X.G3)(k.location);
                             const a = k.getLastNonModalLocationPathname() || "";
-                            !(0, J.d)(k.location) && F && a.includes(`${F}/status`) && (e = "tweet");
+                            !(0, X.d)(k.location) && h && a.includes(`${h}/status`) && (e = "tweet");
                             const l = g.legacy?.id_str ? { creator_user_id: g.legacy.id_str, referring_page: e } : void 0;
                             return { items: [{ is_viewer_follows_user: !!g.legacy?.following, super_follow_details: l }] };
-                        }, [F, g, k]);
+                        }, [h, g, k]);
                     _.useEffect(() => {
-                        p.scribe({ element: "subscribe_screen", action: "impression", data: z });
-                    }, [z, p]);
+                        p.scribe({ element: "subscribe_screen", action: "impression", data: A });
+                    }, [A, p]);
                     const B = s && !!g.verified_program_creator_features?.email_sharing_from_subscribers_enabled,
-                        R = B && c,
-                        ee = R && (!i || !!(0, X.Z)(i)),
+                        M = B && c,
+                        ee = M && (!i || !!(0, J.Z)(i)),
                         ae = g.legacy?.name ?? "",
                         le = B ? _.createElement(ue, { consented: c, creatorName: ae, setConsented: u, setSubscriptionEmail: o, subscriptionEmail: i }) : null,
                         ne = Te,
                         re = xe,
                         te = _.useCallback(() => {
-                            p.scribe({ element: "subscribe_button", action: "click", data: z });
+                            p.scribe({ element: "subscribe_button", action: "click", data: A });
                             const e =
-                                    R && !ee && S
-                                        ? P({ email: i, creatorId: S, consented: c })
+                                    M && !ee && v
+                                        ? V({ email: i, creatorId: v, consented: c })
                                               .then((e) => {
-                                                  p.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: z });
+                                                  p.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: A });
                                               })
                                               .catch(() => {
-                                                  p.scribe({ element: "email_share_consent_update", action: "error", data: z });
+                                                  p.scribe({ element: "email_share_consent_update", action: "error", data: A });
                                               })
                                         : null,
                                 a = N().catch(() => {
                                     f({ text: Ce });
                                 });
                             Promise.all([a, e]).then(([e]) => {
-                                e && J.ZP.navigateTo(e);
+                                e && X.ZP.navigateTo(e);
                             });
-                        }, [p, S, z, R, ee, N, P, i, c, f]),
+                        }, [p, v, A, M, ee, N, V, i, c, f]),
                         se = _.useCallback(() => {
-                            M.Z.setString(C), f({ text: Ve }), p.scribe({ action: "share", data: z });
-                        }, [f, p, C, z]),
+                            R.Z.setString(C), f({ text: Ue }), p.scribe({ action: "share", data: A });
+                        }, [f, p, C, A]),
                         ie = _.useCallback(
                             (e) => {
                                 const a = [];
-                                return a.push({ text: re, Icon: O.default, onClick: se }), p.scribe({ element: "share", action: "click", data: z }), _.createElement(D.Z, { items: a, onCloseRequested: e });
+                                return a.push({ text: re, Icon: H.default, onClick: se }), p.scribe({ element: "share", action: "click", data: A }), _.createElement($.Z, { items: a, onCloseRequested: e });
                             },
-                            [p, re, se, z],
+                            [p, re, se, A],
                         ),
-                        oe = E && w ? ((e, a) => Q.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, w) : void 0,
-                        ce = { disabled: (S && L && S === L) || U || !Z || ee, onPress: te },
-                        de = _.createElement(v.ZP, (0, y.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: ze.bigSubscribeButton }), U ? _.createElement(H.Z, null) : Le({ price: oe })),
-                        me = _.createElement(v.ZP, (0, y.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [ze.transitionOpacity, m ? ze.opacityNone : void 0], type: "primaryFilled" }), U ? _.createElement(H.Z, { size: "small" }) : Le({ price: oe })),
-                        pe = _.createElement(v.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: _.createElement(j.default, null), renderMenu: ie, size: "small", style: ze.shareButton, type: "primaryText" }),
-                        ge = _.createElement(A.Z, { style: ze.rightControl }, me, pe),
-                        ye = (0, $.$u)();
+                        oe = E && w ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, w) : void 0,
+                        ce = { disabled: (v && Z && v === Z) || P || !L || ee, onPress: te },
+                        de = _.createElement(F.ZP, (0, y.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Ae.bigSubscribeButton }), P ? _.createElement(z.Z, null) : Ze({ price: oe })),
+                        me = _.createElement(F.ZP, (0, y.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [Ae.transitionOpacity, m ? Ae.opacityNone : void 0], type: "primaryFilled" }), P ? _.createElement(z.Z, { size: "small" }) : Ze({ price: oe })),
+                        pe = _.createElement(F.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: _.createElement(O.default, null), renderMenu: ie, size: "small", style: Ae.shareButton, type: "primaryText" }),
+                        ge = _.createElement(I.Z, { style: Ae.rightControl }, me, pe),
+                        ye = (0, j.$u)();
                     return _.createElement(K.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: _.createElement(fe, { children: de, emailShareElement: le, isWide: ye, user: g, viewer: b }), history: k, rightControl: ge });
                 },
-                ze = S.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
+                Ae = v.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
                 Be = w().g61ed8a4,
-                Me = w().c3d23f10,
-                Ae = w().d338f53e,
-                Re = f,
-                Ie = { context: "SuperFollowsSubscribe" },
-                De = { page: "super_follows_marketing" },
-                He = ({ screenName: e }) => {
+                Re = w().c3d23f10,
+                Ie = w().d338f53e,
+                Me = f,
+                De = { context: "SuperFollowsSubscribe" },
+                $e = { page: "super_follows_marketing" },
+                ze = ({ screenName: e }) => {
                     const a = { screenName: (0, x.Z)(e) },
-                        l = (0, V.p)(Re, a),
+                        l = (0, U.p)(Me, a),
                         n = l?.user?.result,
                         r = l?.viewer?.user_results?.result;
-                    return n && r ? (n.super_following ? _.createElement(N.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? _.createElement(T.nO, { namespace: De }, _.createElement(Pe, { screenName: e, user: n, viewer: r })) : _.createElement(N.Z, { to: `/${e}` })) : null;
+                    return n && r ? (n.super_following ? _.createElement(N.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? _.createElement(T.nO, { namespace: $e }, _.createElement(Ve, { screenName: e, user: n, viewer: r })) : _.createElement(N.Z, { to: `/${e}` })) : null;
                 },
-                $e = () => {
-                    const e = (0, h.useHistory)(),
-                        a = (0, h.useParams)().screenName || "",
+                je = () => {
+                    const e = (0, S.useHistory)(),
+                        a = (0, S.useParams)().screenName || "",
                         l = _.useMemo(
                             () => ({
                                 type: "CustomRetry",
                                 content: (l) => {
-                                    const n = _.createElement(E.Z, { style: je.error }, _.createElement(Z.Z, { description: Me, title: Be }), _.createElement(v.ZP, { onPress: l, style: je.errorButton, type: "brandFilled" }, Ae));
+                                    const n = _.createElement(E.Z, { style: Oe.error }, _.createElement(L.Z, { description: Re, title: Be }), _.createElement(F.ZP, { onPress: l, style: Oe.errorButton, type: "brandFilled" }, Ie));
                                     return _.createElement(K.Z, { backButtonType: "close", backLocation: `/${a}`, children: n, history: e });
                                 },
                             }),
                             [e, a],
                         );
-                    return _.createElement(L.N, { errorConfig: Ie, fallback: l }, _.createElement(C.B, null, _.createElement(He, { screenName: a })));
+                    return _.createElement(Z.N, { errorConfig: De, fallback: l }, _.createElement(C.B, null, _.createElement(ze, { screenName: a })));
                 },
-                Oe = _.memo($e),
-                je = S.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
-                qe = (e) => _.createElement(b.Z, (0, y.Z)({}, e, { component: Oe }));
+                He = _.memo(je),
+                Oe = v.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
+                qe = (e) => _.createElement(b.Z, (0, y.Z)({}, e, { component: He }));
         },
         273961: (e, a, l) => {
             l.r(a), l.d(a, { default: () => f });
@@ -681,45 +682,6 @@
                 }),
                 p = s.default.create((e) => ({ modalContainerStyle: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", alignItems: "center", justifyContent: "center" }, wrapper: { alignItems: "center", justifyContent: "center" } }));
         },
-        988227: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => o });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                s = l(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
-        748138: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => o });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                s = l(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
-        155353: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => o });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                s = l(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.cefa3caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.747ce31a.js.map

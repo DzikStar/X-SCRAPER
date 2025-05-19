@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 a("ed93de0c", "Post analyseren"),
-                a("d1d92e40", "More details"),
+                a("d1d92e40", "Meer informatie"),
                 a("a6e89af8", "Open gesprek"),
                 a("ica55d24", "Nieuwe chat"),
                 a("f794af9a", "Funmodus"),
@@ -4362,8 +4362,8 @@
                 a("g01599b6", "Antwoord 1"),
                 a("e02694e0", "Antwoord 2"),
                 a("h6867fcc", "Ik vind dit antwoord beter"),
-                a("acc4496c", "Try Grok Voice mode"),
-                a("jd36d190", "Access advanced features with Grok Android app"),
+                a("acc4496c", "Probeer de spraakmodus van Grok uit"),
+                a("jd36d190", "Krijg toegang tot geavanceerde functies met de Grok Android-app"),
                 a("hf9afab0", "Schakel DeepSearch in om het internet en X te scannen, informatie te analyseren en gedetailleerde, goed onderbouwde antwoorden te geven met snel, agentic zoeken."),
                 a("ef3b3f04", "Schakel Denken in om ons redeneermodel te gebruiken. Dit is de beste optie voor wiskunde, wetenschap en codering. Je kan Grok ook vragen 'Denk harder na' over elke vraag waarvoor je wat meer denkkracht nodig hebt. "),
                 a("b43636b8", "Nieuw: Grok 3"),
@@ -5841,7 +5841,7 @@
                 a("ab1b3d38", "Gegevens over verzoeken om opmerkingen zijn nog niet beschikbaar"),
                 a("c43fb933", "de Ontwikkelaarsovereenkomst en het Ontwikkelaarsbeleid van X"),
                 a("af781666", "Wat vinden mensen?"),
-                a("a1f414ee", "Share thoughts"),
+                a("a1f414ee", "Gedachten delen"),
                 a("ed88e742", "Link naar Onderwerp kopiëren"),
                 a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar"),
                 a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten"),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.475d1a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.afae800a.js.map

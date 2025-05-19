@@ -282,9 +282,10 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "Professional", kind: "LinkedField", name: "professional", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "professional_type", storageKey: null }, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, concreteType: "BusinessCategory", kind: "LinkedField", name: "category", plural: !0, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "Professional", kind: "LinkedField", name: "professional", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "professional_type", storageKey: null }, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, concreteType: "BusinessCategory", kind: "LinkedField", name: "category", plural: !0, selections: (c = [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }]), storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: c, storageKey: null },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                     {
                                                         alias: null,
@@ -329,7 +330,7 @@
                             },
                         ],
                     },
-                    params: { id: "rrhlkCeI3zD-WO4a8HGHrw", metadata: {}, name: "ProfessionalHomeQuery", operationKind: "query", text: null },
+                    params: { id: "-1oALEW-4vavmkKA0uJ8CA", metadata: {}, name: "ProfessionalHomeQuery", operationKind: "query", text: null },
                 };
             f.hash = "36250830902d9212cd89a3c13271a3be";
             const y = f;
@@ -359,21 +360,21 @@
             var S = a(277660),
                 C = a.n(S),
                 x = a(107267),
-                D = a(323265),
-                F = a(952793),
-                I = a(782826),
-                L = { kind: "InlineDataFragment", name: "invalidateProfessionalHomeUser_user", hash: "c4c066fd92866d7a3ce5ca16f23dc15f" };
-            const K = L;
+                F = a(323265),
+                D = a(952793),
+                L = a(782826),
+                I = { kind: "InlineDataFragment", name: "invalidateProfessionalHomeUser_user", hash: "c4c066fd92866d7a3ce5ca16f23dc15f" };
+            const K = I;
             var V = a(53647),
                 R = a.n(V),
                 A = a(437429),
                 H = a.n(A),
                 B = a(990242),
                 M = a.n(B);
-            const j = K,
-                z = (e, t) => {
+            const U = K,
+                j = (e, t) => {
                     const a = ((e) => {
-                        const { __id: t } = M()(j, e);
+                        const { __id: t } = M()(U, e);
                         return t;
                     })(t);
                     return e.get(a);
@@ -383,14 +384,14 @@
                     return b.useCallback(() => {
                         R()(t, (t) => {
                             ((e, t) => {
-                                const a = z(e, t);
+                                const a = j(e, t);
                                 a?.invalidateRecord();
                             })(t, e);
                         });
                     }, [t, e]);
                 };
-            var O = a(325686),
-                U = a(779610),
+            var z = a(325686),
+                O = a(779610),
                 q = a(688715),
                 G = a(392237),
                 $ = a(698891),
@@ -405,10 +406,10 @@
                 ne = () => {
                     const e = (0, x.useHistory)(),
                         t = (0, X.z)(),
-                        a = Boolean(D.ZP.getTwitterAppVersion()),
-                        n = a ? D.ZP.osString() : "web";
+                        a = Boolean(F.ZP.getTwitterAppVersion()),
+                        n = a ? F.ZP.osString() : "web";
                     t.scribePageImpression({ page: J, section: n, component: "advanced_tools", action: "show" });
-                    return b.createElement(Y.Z, { backLocation: te, headerless: a, history: e, primaryContent: b.createElement(O.Z, { role: "list" }, b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().f6a2233a, disabled: !0, label: h().ccb3ca48, link: { pathname: "dummy" }, role: "link", thumbnail: b.createElement($.default, { style: le.actionIconsColor }) })), b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().b0ef3100, label: h().e0cb0c72, link: { pathname: (0, q.ju)("https://ads.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: "advanced_tools", element: "twitter_ads", action: "click" }), role: "link", thumbnail: b.createElement(W.default, { style: le.actionIconsColor }) }))), sidebarContent: b.createElement(Q.Z, null), title: ae, withBackButton: !a });
+                    return b.createElement(Y.Z, { backLocation: te, headerless: a, history: e, primaryContent: b.createElement(z.Z, { role: "list" }, b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().f6a2233a, disabled: !0, label: h().ccb3ca48, link: { pathname: "dummy" }, role: "link", thumbnail: b.createElement($.default, { style: le.actionIconsColor }) })), b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().b0ef3100, label: h().e0cb0c72, link: { pathname: (0, q.ju)("https://ads.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: "advanced_tools", element: "twitter_ads", action: "click" }), role: "link", thumbnail: b.createElement(W.default, { style: le.actionIconsColor }) }))), sidebarContent: b.createElement(Q.Z, null), title: ae, withBackButton: !a });
                 },
                 re = b.memo(ne),
                 le = G.default.create((e) => ({ actionIconsColor: { color: e.colors.gray700, marginBottom: e.spaces.space4 } }));
@@ -494,31 +495,31 @@
                 he = a(301633),
                 Ee = a(847988),
                 ve = a(149170);
-            const Ze = () => b.createElement(O.Z, { style: we.separator }),
+            const Ze = () => b.createElement(z.Z, { style: we.separator }),
                 we = G.default.create((e) => ({ separator: { backgroundColor: e.colors.gray50, height: e.borderWidths.small } })),
                 Te = () => {
                     const { featureSwitches: e } = b.useContext(E.rC),
                         t = (0, X.z)(),
                         a = e.isTrue("professional_launchpad_upload_address_book"),
                         n = e.isTrue("professional_launchpad_mobile_promotable_timeline"),
-                        r = Boolean(D.ZP.getTwitterAppVersion()),
-                        l = r ? D.ZP.osString() : "web",
+                        r = Boolean(F.ZP.getTwitterAppVersion()),
+                        l = r ? F.ZP.osString() : "web",
                         i = "Links";
                     return b.createElement(
-                        O.Z,
+                        z.Z,
                         { role: "list" },
-                        b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().f53adc36, label: h().hc4981d6, link: { pathname: r ? "twitter://profile_spotlight" : "/settings/professional_profile/profile_spotlight", openInSameFrame: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "profile_spotlight", action: "click" }), role: "link", thumbnail: b.createElement(_e.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().fbce8dbe, disabled: !a, label: h().ae76c624, link: { openInSameFrame: !0, method: "push", ...(r ? { pathname: "twitter://onboarding/flow?flow_name=make_more_connections&input_flow_data=%7B%22requested_variant%22%3A%22professionalhome-professionalHomeEnabled%22%7D" } : { pathname: "/i/flow/make_more_connections", state: { input: { requested_variant: "launchpad" } } }) }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "make_more_connections", action: "click" }), role: "link", thumbnail: b.createElement(ke.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: D.ZP.isIOS() ? h().ae0383d4 : h().a1dbe746, disabled: r && !n, label: D.ZP.isIOS() ? h().hbd124ae : h().hd80bd3e, link: { pathname: ee.Z.promotions }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "promotions", action: "click" }), role: "link", thumbnail: b.createElement(he.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(O.Z, { "aria-hidden": !0 }, b.createElement(Ze, null)),
-                        b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().fe2b0008, label: h().a35d9c9a, link: { pathname: (0, q.ju)("https://business.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "resources", action: "click" }), role: "link", thumbnail: b.createElement(Ee.default, { style: Se.actionIconsColor }) })),
-                        b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { label: h().c46cdabc, link: { pathname: ee.Z.advancedTools }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "advanced_tools", action: "click" }), role: "link", thumbnail: b.createElement(ve.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().f53adc36, label: h().hc4981d6, link: { pathname: r ? "twitter://profile_spotlight" : "/settings/professional_profile/profile_spotlight", openInSameFrame: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "profile_spotlight", action: "click" }), role: "link", thumbnail: b.createElement(_e.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().fbce8dbe, disabled: !a, label: h().ae76c624, link: { openInSameFrame: !0, method: "push", ...(r ? { pathname: "twitter://onboarding/flow?flow_name=make_more_connections&input_flow_data=%7B%22requested_variant%22%3A%22professionalhome-professionalHomeEnabled%22%7D" } : { pathname: "/i/flow/make_more_connections", state: { input: { requested_variant: "launchpad" } } }) }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "make_more_connections", action: "click" }), role: "link", thumbnail: b.createElement(ke.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { description: F.ZP.isIOS() ? h().ae0383d4 : h().a1dbe746, disabled: r && !n, label: F.ZP.isIOS() ? h().hbd124ae : h().hd80bd3e, link: { pathname: ee.Z.promotions }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "promotions", action: "click" }), role: "link", thumbnail: b.createElement(he.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(z.Z, { "aria-hidden": !0 }, b.createElement(Ze, null)),
+                        b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { description: h().fe2b0008, label: h().a35d9c9a, link: { pathname: (0, q.ju)("https://business.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "resources", action: "click" }), role: "link", thumbnail: b.createElement(Ee.default, { style: Se.actionIconsColor }) })),
+                        b.createElement(z.Z, { role: "listitem" }, b.createElement(O.Z, { label: h().c46cdabc, link: { pathname: ee.Z.advancedTools }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "advanced_tools", action: "click" }), role: "link", thumbnail: b.createElement(ve.default, { style: Se.actionIconsColor }) })),
                     );
                 },
                 Pe = b.memo(Te),
                 Se = G.default.create((e) => ({ actionIconsColor: { color: e.colors.gray700, marginBottom: e.spaces.space4 } }));
             var Ce = (function () {
-                var e = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null };
+                var e = [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }];
                 return {
                     argumentDefinitions: [],
                     kind: "Fragment",
@@ -526,7 +527,8 @@
                     name: "ProfessionalHeader_user",
                     selections: [
                         { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                        { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [e, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
+                        { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                        { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: e, storageKey: null },
                         {
                             alias: null,
                             args: null,
@@ -540,23 +542,23 @@
                             ],
                             storageKey: null,
                         },
-                        { alias: null, args: null, concreteType: "Professional", kind: "LinkedField", name: "professional", plural: !1, selections: [{ alias: null, args: null, concreteType: "BusinessCategory", kind: "LinkedField", name: "category", plural: !0, selections: [e], storageKey: null }], storageKey: null },
+                        { alias: null, args: null, concreteType: "Professional", kind: "LinkedField", name: "professional", plural: !1, selections: [{ alias: null, args: null, concreteType: "BusinessCategory", kind: "LinkedField", name: "category", plural: !0, selections: e, storageKey: null }], storageKey: null },
                     ],
                     type: "User",
                     abstractKey: null,
                 };
             })();
-            Ce.hash = "3959db72f9bfabc99772faf2b80d227d";
+            Ce.hash = "04b8aa51bb05173cc8d34264dafa1012";
             const xe = Ce;
-            var De = a(823161),
-                Fe = a(366635),
-                Ie = a(731708);
-            const Le = xe,
+            var Fe = a(823161),
+                De = a(366635),
+                Le = a(731708);
+            const Ie = xe,
                 Ke = ({ userRef: e }) => {
-                    const t = C()(Le, e),
-                        a = t.legacy?.profile_image_url_https ?? void 0,
+                    const t = C()(Ie, e),
+                        a = t.avatar?.image_url ?? void 0,
                         n = t.professional?.category?.[0]?.name;
-                    return b.createElement(O.Z, { "aria-level": 3, role: "heading", style: Re.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Re.element, uri: a }), t.legacy?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.legacy.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Ie.ZP, { color: "gray700", size: "body", style: Re.element, weight: "medium" }, n) : null);
+                    return b.createElement(z.Z, { "aria-level": 3, role: "heading", style: Re.container }, b.createElement(Fe.default, { hasAdaptiveImage: !0, size: "large", style: Re.element, uri: a }), t.legacy?.name ? b.createElement(De.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.legacy.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Le.ZP, { color: "gray700", size: "body", style: Re.element, weight: "medium" }, n) : null);
                 },
                 Ve = b.memo(Ke),
                 Re = G.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` }, element: { marginVertical: e.spaces.space2 } })),
@@ -564,24 +566,24 @@
                 He = h().ff1c5e1a,
                 Be = h().bb081ea2,
                 Me = oe,
-                je = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
-                ze = { label: Be },
+                Ue = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
+                je = { label: Be },
                 Ne = ({ userRef: e }) => {
                     const t = (0, x.useHistory)(),
                         a = C()(Me, e),
                         n = (0, X.z)(),
-                        r = Boolean(D.ZP.getTwitterAppVersion()),
-                        l = r ? D.ZP.osString() : "web";
+                        r = Boolean(F.ZP.getTwitterAppVersion()),
+                        l = r ? F.ZP.osString() : "web";
                     n.scribePageImpression({ page: J, section: l, component: "home", action: "show" });
                     const i = b.useCallback(() => n.scribe({ page: J, section: l, component: "SettingsAppBarButton", element: "professional_profile_settings", action: "click" }), [n, l]),
-                        o = b.createElement(O.Z, { style: Ue.webViewHeader }, b.createElement(Ve, { userRef: a }), !D.ZP.isAndroid() && b.createElement(O.Z, { style: Ue.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: ze, icon: b.createElement($.default, null), link: je, onPress: i, type: "primaryText" }))),
-                        s = b.createElement(O.Z, { "aria-label": He, role: "region", style: Ue.contentMobile }, r ? o : b.createElement(Ve, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
+                        o = b.createElement(z.Z, { style: Oe.webViewHeader }, b.createElement(Ve, { userRef: a }), !F.ZP.isAndroid() && b.createElement(z.Z, { style: Oe.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: je, icon: b.createElement($.default, null), link: Ue, onPress: i, type: "primaryText" }))),
+                        s = b.createElement(z.Z, { "aria-label": He, role: "region", style: Oe.contentMobile }, r ? o : b.createElement(Ve, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
                         c = (0, ce.yu)(),
                         d = !r && !(0, ue.ZP)() && c;
                     return b.createElement(Y.Z, { backLocation: Ae, headerless: r, history: t, primaryContent: s, rightControl: r ? null : b.createElement(de.Z, { onPress: i, to: "/settings/professional_profile" }), sidebarContent: b.createElement(Q.Z, null), title: d ? null : He, withBackButton: d });
                 },
-                Oe = b.memo(Ne),
-                Ue = G.default.create((e) => ({ contentMobile: { paddingBottom: e.spaces.space48 }, webViewHeader: { display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, webViewWrench: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` } }));
+                ze = b.memo(Ne),
+                Oe = G.default.create((e) => ({ contentMobile: { paddingBottom: e.spaces.space48 }, webViewHeader: { display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, webViewWrench: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` } }));
             var qe = a(810641),
                 Ge = a(912021),
                 $e = a(33055),
@@ -595,11 +597,11 @@
                         a = (0, X.z)(),
                         { viewerUserId: n } = b.useContext(E.rC);
                     if (!n) return null;
-                    const r = Boolean(D.ZP.getTwitterAppVersion()),
-                        l = r ? D.ZP.osString() : "web";
+                    const r = Boolean(F.ZP.getTwitterAppVersion()),
+                        l = r ? F.ZP.osString() : "web";
                     a.scribePageImpression({ page: J, section: l, component: "promotable_timeline", action: "show" });
                     const i = Ye(n);
-                    return b.createElement(Y.Z, { backLocation: Xe, headerless: r, history: t, primaryContent: b.createElement(O.Z, null, b.createElement(qe.Z, { module: i, title: "promotable-tweets" })), sidebarContent: b.createElement(Q.Z, null), title: Je, withBackButton: !r });
+                    return b.createElement(Y.Z, { backLocation: Xe, headerless: r, history: t, primaryContent: b.createElement(z.Z, null, b.createElement(qe.Z, { module: i, title: "promotable-tweets" })), sidebarContent: b.createElement(Q.Z, null), title: Je, withBackButton: !r });
                 },
                 tt = b.memo(et),
                 at = P,
@@ -607,10 +609,10 @@
                     const t = C()(at, e),
                         a = b.useRef(t),
                         n = N(t),
-                        r = Boolean(D.ZP.getTwitterAppVersion()),
-                        l = (0, F.hC)("professional_launchpad_m1_enabled"),
+                        r = Boolean(F.ZP.getTwitterAppVersion()),
+                        l = (0, D.hC)("professional_launchpad_m1_enabled"),
                         i = b.useMemo(() => ({ pathname: "/i/flow/convert_to_professional", state: l ? { input: { requested_variant: "professionalhome-professionalHomeEnabled" } } : void 0 }), [l]);
-                    return t?.professional ? b.createElement(x.Switch, null, b.createElement(x.Route, { exact: !0, path: ee.Z.root }, b.createElement(Oe, { userRef: t })), b.createElement(x.Route, { exact: !0, path: ee.Z.promotions }, b.createElement(tt, null)), b.createElement(x.Route, { exact: !0, path: ee.Z.advancedTools }, b.createElement(re, null))) : (n(), a.current?.professional ? (I.ZP.navigateTo(r ? "twitter://timeline" : "/home"), null) : b.createElement(w.Z, { to: i }));
+                    return t?.professional ? b.createElement(x.Switch, null, b.createElement(x.Route, { exact: !0, path: ee.Z.root }, b.createElement(ze, { userRef: t })), b.createElement(x.Route, { exact: !0, path: ee.Z.promotions }, b.createElement(tt, null)), b.createElement(x.Route, { exact: !0, path: ee.Z.advancedTools }, b.createElement(re, null))) : (n(), a.current?.professional ? (L.ZP.navigateTo(r ? "twitter://timeline" : "/home"), null) : b.createElement(w.Z, { to: i }));
                 },
                 rt = b.memo(nt),
                 lt = h().a0b4541c,
@@ -820,4 +822,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.e7c284ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.0ed6379a.js.map

@@ -59,7 +59,7 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                                     {
                                                         alias: null,
@@ -165,7 +165,7 @@
                             },
                         ],
                     },
-                    params: { id: "VS7_DsXWgPznzmSKpDmAEw", metadata: {}, name: "CommunitiesSpotlightPreviewQuery", operationKind: "query", text: null },
+                    params: { id: "4GArZ3GX2CScV1N_eFwG-A", metadata: {}, name: "CommunitiesSpotlightPreviewQuery", operationKind: "query", text: null },
                 };
             u.hash = "6699711628486b83cfd1436c585a4692";
             const o = u;
@@ -564,7 +564,7 @@
                                 plural: !1,
                                 selections: [
                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }], type: "User", abstractKey: null },
+                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }], type: "User", abstractKey: null },
                                 ],
                                 storageKey: null,
                             },
@@ -574,7 +574,7 @@
                 ],
                 type: "Community",
                 abstractKey: null,
-                hash: "d9ab6744b4dc53b41a32cc0ce500f9e4",
+                hash: "b057e8f1a7927932f33eae01360eeb54",
             };
             const i = a;
         },
@@ -955,19 +955,6 @@
             const c = u.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 g = m;
         },
-        748138: (e, l, n) => {
-            n.r(l), n.d(l, { default: () => u });
-            var a = n(202784),
-                i = n(890601),
-                t = n(783427),
-                r = n(347101);
-            const s = (e = {}) => {
-                const { direction: l } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: l });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const u = s;
-        },
         143095: (e, l, n) => {
             n.d(l, { O: () => i });
             var a = n(202784);
@@ -987,4 +974,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-6107ac1a.399e47ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-6107ac1a.e43cff3a.js.map

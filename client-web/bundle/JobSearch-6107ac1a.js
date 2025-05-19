@@ -187,7 +187,7 @@
                                                                                                                 kind: "InlineFragment",
                                                                                                                 selections: [
                                                                                                                     t,
-                                                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, d, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
+                                                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, d], storageKey: null },
                                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                                                                     {
                                                                                                                         alias: null,
@@ -202,6 +202,7 @@
                                                                                                                         ],
                                                                                                                         storageKey: null,
                                                                                                                     },
+                                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                                     o,
                                                                                                                 ],
@@ -246,7 +247,7 @@
                             },
                         ],
                     },
-                    params: { id: "xHfWEa5oCHMR1TBes5CgtA", metadata: {}, name: "JobBookmarksListContainerQuery", operationKind: "query", text: null },
+                    params: { id: "MuIcYYw5_OykVKaqlLsw3A", metadata: {}, name: "JobBookmarksListContainerQuery", operationKind: "query", text: null },
                 };
             c.hash = "24c236e39ef6f8567817bc588787b248";
             const g = c;
@@ -566,7 +567,7 @@
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
                                                                                                             t,
-                                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, d, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
+                                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, d], storageKey: null },
                                                                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                                                             {
                                                                                                                 alias: null,
@@ -581,6 +582,7 @@
                                                                                                                 ],
                                                                                                                 storageKey: null,
                                                                                                             },
+                                                                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                             o,
                                                                                                         ],
@@ -622,7 +624,7 @@
                             },
                         ],
                     },
-                    params: { id: "9mXlbprZW9BNgz6GtW_vCg", metadata: {}, name: "JobRecommendationsListContainerQuery", operationKind: "query", text: null },
+                    params: { id: "kYe3Eay6R7qIsqK8W7paZw", metadata: {}, name: "JobRecommendationsListContainerQuery", operationKind: "query", text: null },
                 };
             c.hash = "a2f9147c015c58ceed84d98f3e96cbdb";
             const g = c;
@@ -719,6 +721,7 @@
                                                                         selections: [
                                                                             t,
                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                             {
                                                                                 alias: null,
                                                                                 args: null,
@@ -727,7 +730,6 @@
                                                                                 name: "legacy",
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                     m,
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
@@ -798,7 +800,7 @@
                             { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: d, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, c], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
                         ],
                     },
-                    params: { id: "9u8d_R32ApANjKmiwlFYdQ", metadata: {}, name: "JobScreenQuery", operationKind: "query", text: null },
+                    params: { id: "SXsHtAMFunCi37krhMi9xQ", metadata: {}, name: "JobScreenQuery", operationKind: "query", text: null },
                 };
             y.hash = "d125bf2d2767c4d27ed19cdf4b6b3bf7";
             const k = y;
@@ -846,6 +848,7 @@
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -854,7 +857,6 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
@@ -910,7 +912,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "7615638a784bc6ac3658422209b1f259",
+                hash: "6e715ee9bd2879985fafe583f09940b4",
             };
             const i = n;
         },
@@ -1075,7 +1077,7 @@
                                                                                 kind: "InlineFragment",
                                                                                 selections: [
                                                                                     t,
-                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, c, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
+                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, c], storageKey: null },
                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                                     {
                                                                                         alias: null,
@@ -1090,6 +1092,7 @@
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
+                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                     r,
                                                                                 ],
@@ -1120,7 +1123,7 @@
                             { alias: null, args: o, filters: ["search_params", "s"], handle: "slice", key: "JobSearchQueryScreen_job_search_slice", kind: "LinkedHandle", name: "job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
                         ],
                     },
-                    params: { id: "aKx1ZGidSwdOVqTyfX1J-A", metadata: { sliceInfoPath: ["job_search", "slice_info"] }, name: "JobSearchQueryScreenJobsQuery", operationKind: "query", text: null },
+                    params: { id: "djuiFrOHl6C9Kn4RWJ5beg", metadata: { sliceInfoPath: ["job_search", "slice_info"] }, name: "JobSearchQueryScreenJobsQuery", operationKind: "query", text: null },
                 };
             g.hash = "a2ffaaeb36509d6abe442707e15770fc";
             const m = g;
@@ -1392,4 +1395,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.e4f1251a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.c1536afa.js.map

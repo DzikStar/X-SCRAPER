@@ -14,7 +14,7 @@
                 u = ({ user: e, ...t }) => {
                     const n = c()(l, e),
                         a = "Business" === n.verification?.verified_type || "Square" === n.profile_image_shape ? "square" : "circle";
-                    return o.createElement(s.default, (0, r.Z)({}, t, { screenName: n.legacy?.screen_name, shape: a, uri: n.legacy?.profile_image_url_https }));
+                    return o.createElement(s.default, (0, r.Z)({}, t, { screenName: n.legacy?.screen_name, shape: a, uri: n.avatar?.image_url }));
                 },
                 d = o.memo(u);
         },
@@ -1276,4 +1276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.a3dbd95a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.1434529a.js.map

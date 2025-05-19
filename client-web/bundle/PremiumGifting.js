@@ -32,13 +32,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: h, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: B, withWideContainer: P } = this.props,
+                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: h, style: f, subtitle: b, title: y, titleDomId: _, titleIconCell: k, titleIconCellSize: v, withBackground: B, withWideContainer: P } = this.props,
                         { isModal: S } = this.context,
                         F = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         C = (function (e, a, t) {
                             return e && !(a && t);
                         })(!!B, S, !!h);
-                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), h || null);
+                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: f, subtitle: b, title: y, titleDomId: _, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -65,9 +65,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: a, backButtonType: t, backLocation: i, centerTitle: l, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: h, rightControl: f, secondaryBar: b, subtitle: _, title: y } = this.props,
+                            const { appBarRef: e, appBarStyle: a, backButtonType: t, backLocation: i, centerTitle: l, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: h, rightControl: f, secondaryBar: b, subtitle: y, title: _ } = this.props,
                                 { isModal: k } = this.context;
-                            return r.createElement(n.Z, { style: k ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, r.createElement(d.ZP, { backButtonType: t || (k ? "close" : "back"), backLocation: i, centerTitle: l, fixed: !k, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: h, ref: e, rightControl: f, secondaryBar: b, style: [k && g.appBarModal, a], subtitle: _, title: y, titleDomId: c.Q_ }));
+                            return r.createElement(n.Z, { style: k ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, r.createElement(d.ZP, { backButtonType: t || (k ? "close" : "back"), backLocation: i, centerTitle: l, fixed: !k, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: h, ref: e, rightControl: f, secondaryBar: b, style: [k && g.appBarModal, a], subtitle: y, title: _, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: a } = this.props,
@@ -78,8 +78,8 @@
                 render() {
                     const { "aria-hidden": e, bottomBar: a, children: t, containerStyle: l, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: m, title: h, withoutBottomBarMobile: f } = this.props,
                         { isModal: b } = this.context,
-                        _ = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(o.Z, null, r.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: h }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, b && g.rootModal] }, !b && _, r.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [g.container, b && g.containerModal, l] }, b ? r.createElement(p.Z, { style: g.viewport }, _, t) : t), a ? r.createElement(n.Z, { style: [g.bottomBarModal, !b && !f && g.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: c, isLarge: d }, a)) : null));
+                        y = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(o.Z, null, r.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: h }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, b && g.rootModal] }, !b && y, r.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [g.container, b && g.containerModal, l] }, b ? r.createElement(p.Z, { style: g.viewport }, y, t) : t), a ? r.createElement(n.Z, { style: [g.bottomBarModal, !b && !f && g.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: c, isLarge: d }, a)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = l.Z);
@@ -201,7 +201,7 @@
                 d = (e) => "Twitter" === e.payment_source || "Ads" === e.payment_source;
         },
         685731: (e, a, t) => {
-            t.d(a, { Gi: () => b, Mk: () => y, ZV: () => h, aU: () => g, d3: () => _, fS: () => k, pt: () => f });
+            t.d(a, { Gi: () => b, Mk: () => _, ZV: () => h, aU: () => g, d3: () => y, fS: () => k, pt: () => f });
             t(202784);
             var r = t(332920),
                 n = t.n(r),
@@ -234,12 +234,12 @@
             function b(e, a) {
                 if (e && a) return a?.find((a) => a?.charge_interval === e);
             }
-            function _(e, a = !1, t, r = !1, n = !0) {
+            function y(e, a = !1, t, r = !1, n = !0) {
                 const d = (0, c.gS)(t, "Discount", { status: r ? "pending" : "active" }),
                     u = (0, s.x)({ amount: g(e, a), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
                 return d && e.charge_interval ? (0, l.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, i.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: a, annualPriceMonthly: !1 }), formattedPrice: u, includeDiscountedPrice: !0, includeThenLabel: n }) : e.charge_interval === o.rv.Year ? m({ price: u }) : e.charge_interval === o.rv.Month ? p({ price: u }) : "";
             }
-            const y = (e) => {
+            const _ = (e) => {
                     const a = e.subscription_promotions?.find((e) => !!e.metadata.free_trial_days);
                     return a;
                 },
@@ -250,7 +250,7 @@
                 };
         },
         901658: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => y });
+            t.r(a), t.d(a, { default: () => _ });
             var r = t(202784),
                 n = t(107267),
                 i = t(138099),
@@ -266,7 +266,7 @@
                 h = d().a893d602,
                 f = d().ia2eb0c0,
                 b = d().ef4602ec,
-                _ = ({ history: e }) => {
+                y = ({ history: e }) => {
                     const a = (0, m.Z)(),
                         t = (0, n.useParams)().screenName;
                     (0, u.q)(() => {
@@ -275,11 +275,11 @@
                     const o = r.useCallback(() => e.replace(t ? `/${t}` : "/home"), [e, t]);
                     return r.createElement(i.Z, { enableMaskForDismiss: !0, onMaskClick: o, style: k.root, type: "center" }, r.createElement(l.ZP, { size: "title4", weight: "bold" }, f), r.createElement(l.ZP, { style: k.spacing }, b), r.createElement(s.ZP, { onPress: o, style: k.button, type: "primaryFilled" }, h));
                 },
-                y = (e) => r.createElement(p.nO, { namespace: g }, r.createElement(_, e)),
+                _ = (e) => r.createElement(p.nO, { namespace: g }, r.createElement(y, e)),
                 k = o.default.create((e) => ({ button: { marginTop: e.spaces.space24, width: "100%" }, spacing: { marginTop: e.spaces.space8 }, root: { padding: e.spaces.space32, minHeight: 200 } }));
         },
         600388: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => y });
+            t.r(a), t.d(a, { default: () => _ });
             var r = t(202784),
                 n = t(325686),
                 i = t(107267),
@@ -295,7 +295,7 @@
             const h = { page: "premium_gifting", section: "success" },
                 f = u().a893d602,
                 b = u().c65dda96,
-                _ = ({ history: e }) => {
+                y = ({ history: e }) => {
                     const a = (0, g.Z)(),
                         t = (0, i.useParams)().screenName;
                     (0, p.q)(() => {
@@ -304,7 +304,7 @@
                     const c = r.useCallback(() => e.replace(t ? `/${t}` : "/home"), [e, t]);
                     return r.createElement(l.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: c, style: k.root, type: "center" }, r.createElement(n.Z, null, r.createElement(s.ZP, { size: "title4", style: k.marginBottom, weight: "bold" }, b)), r.createElement(o.ZP, { onPress: c, style: k.button, type: "primaryFilled" }, f));
                 },
-                y = (e) => r.createElement(m.nO, { namespace: h }, r.createElement(_, e)),
+                _ = (e) => r.createElement(m.nO, { namespace: h }, r.createElement(y, e)),
                 k = c.default.create((e) => ({ root: { padding: e.spaces.space32, display: "flex", flexDirection: "column", justifyContent: "space-between" }, marginBottom: { marginBottom: e.spaces.space8 }, spacingRight: { marginEnd: e.spaces.space8 }, button: { marginTop: e.spaces.space24, width: "100%" } }));
         },
         738235: (e, a, t) => {
@@ -393,6 +393,7 @@
                                                 kind: "InlineFragment",
                                                 selections: [
                                                     s,
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -402,7 +403,6 @@
                                                         plural: !1,
                                                         selections: [
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                         ],
                                                         storageKey: null,
@@ -466,7 +466,7 @@
                             },
                         ],
                     },
-                    params: { id: "fOzIYuDB7BSjNWaQrj9S-w", metadata: {}, name: "PremiumGiftingQuery", operationKind: "query", text: null },
+                    params: { id: "d4cdlXwrNyktZK16Tk_q1w", metadata: {}, name: "PremiumGiftingQuery", operationKind: "query", text: null },
                 };
             u.hash = "caf409d10c6b5285a1c3838176d735ad";
             const p = u;
@@ -475,8 +475,8 @@
                 h = (t(585488), t(712696)),
                 f = t.n(h),
                 b = t(107267),
-                _ = t(708852),
-                y = t(154003),
+                y = t(708852),
+                _ = t(154003),
                 k = t(167630),
                 v = t(731708),
                 B = t(466818),
@@ -490,8 +490,8 @@
                 x = t(952793),
                 L = t(782642),
                 w = t(97882),
-                D = t(782826),
-                K = t(337394),
+                K = t(782826),
+                D = t(337394),
                 I = (function () {
                     var e = [{ defaultValue: null, kind: "LocalArgument", name: "stripeId" }],
                         a = [
@@ -564,14 +564,14 @@
             var V = t(685731),
                 A = t(293115),
                 N = t(725516),
-                z = t(412876),
+                U = t(412876),
                 O = t(553660),
-                H = t(615027),
-                U = t(688715),
-                W = t(847579);
-            const G = (0, U.ju)("https://legal.x.com/purchaser-terms"),
-                $ = (0, U.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(W.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
+                W = t(615027),
+                z = t(688715),
+                H = t(847579);
+            const G = (0, z.ju)("https://legal.x.com/purchaser-terms"),
+                $ = (0, z.ju)("https://help.x.com/using-x/x-premium/gifting"),
+                Q = () => m.createElement(H.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -603,12 +603,12 @@
                 return { fragment: { argumentDefinitions: [e, a, t, r], kind: "Fragment", metadata: null, name: "useOneTimePurchaseGiftMutation", selections: n, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [e, a, r, t], kind: "Operation", name: "useOneTimePurchaseGiftMutation", selections: n }, params: { id: "GqTVJ4S1526tLkxj69xIZw", metadata: {}, name: "useOneTimePurchaseGiftMutation", operationKind: "mutation", text: null } };
             })();
             j.hash = "baa6bdf2db7356a23aacf7962307c0dc";
-            const Y = j;
-            var q = t(351743),
-                J = t.n(q);
-            const X = Y,
+            const q = j;
+            var Y = t(351743),
+                X = t.n(Y);
+            const J = q,
                 ee = ({ cancelUrl: e, successUrl: a }) => {
-                    const [t, r] = J()(X);
+                    const [t, r] = X()(J);
                     return [
                         m.useCallback(
                             ({ productId: r, receiverId: n }) =>
@@ -627,7 +627,7 @@
                         r,
                     ];
                 },
-                ae = () => ((0, x.hC)("subscriptions_stripe_testing") ? K.Qo : K.eq),
+                ae = () => ((0, x.hC)("subscriptions_stripe_testing") ? D.Qo : D.eq),
                 te = F().haad225c,
                 re = F().b84f6df1,
                 ne = F().cfcac293,
@@ -638,14 +638,14 @@
                 ce = p,
                 de = (e) => {
                     const a = (0, b.useParams)().screenName || "",
-                        t = (0, _.D2)(),
+                        t = (0, y.D2)(),
                         r = (0, N.z)(),
                         n = (0, b.useHistory)(),
                         i = ae(),
                         [l, s] = m.useState("BlueVerifiedPlus"),
                         [o, c] = m.useState(!1),
                         d = f()(ce, { screenName: a }, { fetchPolicy: "network-only" }),
-                        { origin: u } = D.ZP.get(),
+                        { origin: u } = K.ZP.get(),
                         p = (0, L.p)(),
                         [h, P] = ee({ successUrl: `${u}/${a}/gift-premium/success`, cancelUrl: `${u}/${a}/gift-premium` }),
                         S = i[l],
@@ -653,8 +653,8 @@
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        U = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
-                        W = m.useCallback(() => {
+                        z = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        H = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
                         G = d?.user?.result,
@@ -665,23 +665,23 @@
                                 (r.scribe({ component: "purchase_button", action: "click" }),
                                 c(!0),
                                 h({ receiverId: $, productId: S })
-                                    .then((e) => D.ZP.navigateTo(e))
+                                    .then((e) => K.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
                                             t = a === T.ZP.GenericAccessDenied ? oe : se;
                                         p({ text: t, withClearButton: !0, withAutoDismiss: !0 }), c(!1);
                                     }));
                         }, [p, h, $, S, r]),
-                        Y = t ? me.paddingWide : me.paddingNarrow,
-                        q = m.useMemo(() => {
+                        q = t ? me.paddingWide : me.paddingNarrow,
+                        Y = m.useMemo(() => {
                             const e = o || P,
                                 a = !l || e;
-                            return m.createElement(g.Z, { style: [me.footer, Y] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: U })), m.createElement(Q, null));
-                        }, [U, j, P, o, Y, l]),
-                        J = m.useCallback((e) => s(C.p[e]), [s]),
-                        X = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
-                        le = K.St[l];
-                    return X && a && G && U && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: q, history: n, onBackClick: W }, m.createElement(g.Z, { style: [me.root, Y] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(z.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(O.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: J, options: X, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: U }))))) : m.createElement(H.Z, { to: "/home" });
+                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(_.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: z })), m.createElement(Q, null));
+                        }, [z, j, P, o, q, l]),
+                        X = m.useCallback((e) => s(C.p[e]), [s]),
+                        J = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
+                        le = D.St[l];
+                    return J && a && G && z && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: H }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(U.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(O.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: z }))))) : m.createElement(W.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -699,7 +699,7 @@
             };
         },
         862695: (e, a, t) => {
-            t.d(a, { V: () => _, f: () => b });
+            t.d(a, { V: () => y, f: () => b });
             var r = t(202784),
                 n = t(325686),
                 i = t(731708),
@@ -714,12 +714,12 @@
                 g = o().e0b39888,
                 h = o().b67c37de,
                 f = o().a8363765,
-                b = ({ activeDiscountInfo: e, discountInfo: a, formattedPrice: t, includeTax: r, isFreeTrial: n, isTierSwitching: i, price: l, selectedInterval: s, shouldRemoveExtraStep: o, withAnnualPriceMonthly: d }) => (n ? ("Month" === s ? p({ price: t }) : m({ price: t })) : a || e ? _({ formattedPrice: t, selectedInterval: s, includeDiscountedPrice: "Year" === s && d, discountedFormattedPrice: (0, c.T)({ price: l, includeTax: r, percentOff: i ? e?.promotion_metadata?.percent_off : a?.metadata.percent_off, annualPriceMonthly: !1 }), duration: i ? e?.promotion_metadata?.duration_in_interval : a?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === s && o ? f({ price: t }) : "Month" === s ? g : h),
-                _ = ({ discountedFormattedPrice: e, duration: a, formattedPrice: t, includeDiscountedPrice: l, includeThenLabel: s, selectedInterval: c }) => {
+                b = ({ activeDiscountInfo: e, discountInfo: a, formattedPrice: t, includeTax: r, isFreeTrial: n, isTierSwitching: i, price: l, selectedInterval: s, shouldRemoveExtraStep: o, withAnnualPriceMonthly: d }) => (n ? ("Month" === s ? p({ price: t }) : m({ price: t })) : a || e ? y({ formattedPrice: t, selectedInterval: s, includeDiscountedPrice: "Year" === s && d, discountedFormattedPrice: (0, c.T)({ price: l, includeTax: r, percentOff: i ? e?.promotion_metadata?.percent_off : a?.metadata.percent_off, annualPriceMonthly: !1 }), duration: i ? e?.promotion_metadata?.duration_in_interval : a?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === s && o ? f({ price: t }) : "Month" === s ? g : h),
+                y = ({ discountedFormattedPrice: e, duration: a, formattedPrice: t, includeDiscountedPrice: l, includeThenLabel: s, selectedInterval: c }) => {
                     let g;
-                    return (g = "Month" === c ? (l ? r.createElement(o().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().df3ed1c8({ standardPrice: t }))) : d({ duration: a, standardPrice: t })) : l ? r.createElement(o().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().g261b098({ standardPrice: t }))) : u({ duration: a, standardPrice: t })), s && (g = r.createElement(n.Z, null, r.createElement(i.ZP, { style: y.marginBottom }, g), r.createElement(i.ZP, null, "Year" === c ? m({ price: t }) : p({ price: t })))), g;
+                    return (g = "Month" === c ? (l ? r.createElement(o().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().df3ed1c8({ standardPrice: t }))) : d({ duration: a, standardPrice: t })) : l ? r.createElement(o().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().g261b098({ standardPrice: t }))) : u({ duration: a, standardPrice: t })), s && (g = r.createElement(n.Z, null, r.createElement(i.ZP, { style: _.marginBottom }, g), r.createElement(i.ZP, null, "Year" === c ? m({ price: t }) : p({ price: t })))), g;
                 },
-                y = l.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
+                _ = l.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
         },
         466818: (e, a, t) => {
             t.d(a, { ZP: () => b });
@@ -763,7 +763,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: a, errorText: t, hasError: c, helperText: g, options: h, style: b, testID: _, value: y, withEmptyOption: k } = this.props,
+                    const { "aria-describedby": e, disabled: a, errorText: t, hasError: c, helperText: g, options: h, style: b, testID: y, value: _, withEmptyOption: k } = this.props,
                         { isFocused: v } = this.state,
                         B = o.ZP.getLanguage(),
                         P = void 0 === c ? !!t : c,
@@ -781,7 +781,7 @@
                                 this._renderLabel(),
                                 r.createElement(
                                     p,
-                                    { "aria-describedby": F, "aria-invalid": P, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, a && s.Z.disabled], testID: _ || "", value: y },
+                                    { "aria-describedby": F, "aria-invalid": P, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, a && s.Z.disabled], testID: y || "", value: _ },
                                     k ? r.createElement(m, { disabled: !0, style: f.option, value: "" }) : null,
                                     h.map((e) => {
                                         const { disabled: a, label: t, value: n } = e;
@@ -815,7 +815,7 @@
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        748138: (e, a, t) => {
+        487552: (e, a, t) => {
             t.r(a), t.d(a, { default: () => o });
             var r = t(202784),
                 n = t(890601),
@@ -823,11 +823,11 @@
                 l = t(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.a344697a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.30df3d8a.js.map

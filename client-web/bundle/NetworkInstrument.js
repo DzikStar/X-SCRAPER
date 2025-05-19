@@ -2,8 +2,45 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.NetworkInstrument"],
     {
+        497088: (e, t, n) => {
+            n.r(t), n.d(t, { InMemoryCache: () => r, networkRequestLog: () => s });
+            const r = new (class {
+                constructor(e) {
+                    (this._capacity = e), (this._cache = new Map());
+                }
+                _setMostRecentlyUsed(e, t) {
+                    this._cache.delete(e), this._cache.set(e, t);
+                }
+                entries() {
+                    return Object.fromEntries(this._cache);
+                }
+                clear() {
+                    this._cache.clear();
+                }
+                flush() {
+                    const e = this.entries();
+                    return this.clear(), e;
+                }
+                get(e) {
+                    const t = this._cache.get(e);
+                    if (void 0 !== t) return this._setMostRecentlyUsed(e, t), t;
+                }
+                set(e, t) {
+                    if ((this._setMostRecentlyUsed(e, t), this._cache.size > this._capacity)) {
+                        const e = this._cache.keys().next().value;
+                        void 0 !== e && this._cache.delete(e);
+                    }
+                }
+                delete(e) {
+                    this._cache.delete(e);
+                }
+            })(20);
+            function s(e) {
+                r.set(Date.now().toString(), e);
+            }
+        },
         910920: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
+            n.r(t), n.d(t, { default: () => u });
             n(543673), n(240753), n(128399), n(136728);
             var r = n(182056),
                 s = n(7330),
@@ -11,8 +48,8 @@
                 o = n(184605),
                 a = n(88656),
                 _ = n(615656);
-            const u = [_.ZP.BadOauthToken, _.ZP.OauthTimestampException, _.ZP.BadAuthenticationData, _.ZP.AccessDeniedByBouncer];
-            class c {
+            const c = [_.ZP.BadOauthToken, _.ZP.OauthTimestampException, _.ZP.BadAuthenticationData, _.ZP.AccessDeniedByBouncer];
+            class u {
                 constructor(e, t) {
                     (this.scribeRequest = (e) => {
                         let { response: t } = e;
@@ -103,7 +140,7 @@
                 _extractApiErrorCode(e) {
                     const { errors: t = [] } = e,
                         n = t.map(({ code: e }) => e).filter((e) => void 0 !== e),
-                        r = (0, i.Z)(n, (e) => u.indexOf(e) > -1);
+                        r = (0, i.Z)(n, (e) => c.indexOf(e) > -1);
                     return r || (n.length > 0 ? n[0] : void 0);
                 }
                 _updateEventWithRequestResponse(e, t, n, r) {
@@ -154,4 +191,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NetworkInstrument.9b24e61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NetworkInstrument.130f61ea.js.map

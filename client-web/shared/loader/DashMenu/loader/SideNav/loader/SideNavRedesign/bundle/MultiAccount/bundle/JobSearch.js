@@ -3,7 +3,7 @@
     ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch"],
     {
         110512: (e, l, a) => {
-            a.d(l, { ZP: () => V, V7: () => W });
+            a.d(l, { ZP: () => B, V7: () => x });
             a(136728);
             var n,
                 s,
@@ -11,8 +11,8 @@
                 i,
                 r,
                 u,
-                o,
                 d,
+                o,
                 c,
                 g,
                 p = {
@@ -59,6 +59,7 @@
                                                                 kind: "InlineFragment",
                                                                 selections: [
                                                                     (i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ kind: "RequiredField", field: (r = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }), action: "THROW" }], storageKey: null },
                                                                     {
                                                                         kind: "RequiredField",
                                                                         field: {
@@ -69,10 +70,9 @@
                                                                             name: "legacy",
                                                                             plural: !1,
                                                                             selections: [
-                                                                                { kind: "RequiredField", field: (r = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), action: "THROW" },
                                                                                 { kind: "RequiredField", field: (u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), action: "THROW" },
-                                                                                { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), action: "THROW" },
-                                                                                { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" },
+                                                                                { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), action: "THROW" },
+                                                                                { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" },
                                                                             ],
                                                                             storageKey: null,
                                                                         },
@@ -142,7 +142,8 @@
                                                                 kind: "InlineFragment",
                                                                 selections: [
                                                                     i,
-                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, u, o, d, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [r], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [u, d, o, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
@@ -247,43 +248,43 @@
                             },
                         ],
                     },
-                    params: { id: "4NzjzsVfM6OlS3Sh2g6hHQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
+                    params: { id: "Y68cuWQDNCDLeMg5I3p3lw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
                 };
-            p.hash = "cecac573042932c41c102e120b1fb720";
+            p.hash = "1d12e87b302fa2af74dc5f347f4713f4";
             const y = p;
             var m = a(202784),
                 k = a(325686),
                 _ = (a(585488), a(712696)),
                 F = a.n(_),
-                h = a(107267),
-                b = a(731708),
-                v = a(661810),
-                f = a(642153),
-                S = a(392237),
-                K = a(332920),
-                w = a.n(K),
+                v = a(107267),
+                h = a(731708),
+                f = a(661810),
+                b = a(642153),
+                K = a(392237),
+                S = a(332920),
+                w = a.n(S),
                 T = a(899667),
-                U = a(487552),
-                L = a(516951),
+                L = a(487552),
+                U = a(516951),
                 E = a(621416),
-                C = a(125363),
-                A = a(175856),
-                I = a(390387),
-                D = a(114084),
+                A = a(125363),
+                C = a(175856),
+                D = a(390387),
+                I = a(114084),
                 R = a(736063);
             const H = (0, a(668214).Z)()
-                    .propsFromActions(() => ({ setDelegateUser: I.vU }))
+                    .propsFromActions(() => ({ setDelegateUser: D.vU }))
                     .withAnalytics({ component: "delegated_account_list" }),
                 Z = y,
                 q = w().daffabde,
-                O = w().eccbfa26,
-                M = w().a1b7a904,
+                M = w().eccbfa26,
+                O = w().a1b7a904,
                 P = { context: "DelegateGroups" },
-                x = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: s, setDelegateUser: t }) => {
-                    const i = (0, C.I0)(),
-                        r = (0, h.useHistory)(),
-                        [u] = (0, E.m)(A.s7),
-                        [o, d] = m.useState(!0),
+                W = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: s, setDelegateUser: t }) => {
+                    const i = (0, A.I0)(),
+                        r = (0, v.useHistory)(),
+                        [u] = (0, E.m)(C.s7),
+                        [d, o] = m.useState(!0),
                         c = F()(Z, {}),
                         g = m.useMemo(() => {
                             const l = [];
@@ -297,10 +298,10 @@
                         }, [e, c.viewer_v2?.list_delegation_groups]),
                         p = m.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
                         y = m.useCallback(() => {
-                            d(!o);
-                        }, [o]);
+                            o(!d);
+                        }, [d]);
                     m.useEffect(() => {
-                        i(I.po(g.length));
+                        i(D.po(g.length));
                     }, [g, i]);
                     const _ = m.useCallback(
                         (e) => () => {
@@ -313,21 +314,21 @@
                         : m.createElement(
                               m.Fragment,
                               null,
-                              a ? m.createElement(k.Z, { style: Q.updatedDelegateAccountsLabel }, m.createElement(b.ZP, { color: "gray700", weight: "bold" }, O)) : m.createElement(k.Z, { onClick: y, style: Q.delegateAccountsLabel }, m.createElement(b.ZP, { color: "gray700", weight: "bold" }, p ? q : O), !p && (o ? m.createElement(T.default, { style: Q.IconChevronUp }) : m.createElement(U.default, { style: Q.IconChevronDown }))),
-                              a || o || p
+                              a ? m.createElement(k.Z, { style: Q.updatedDelegateAccountsLabel }, m.createElement(h.ZP, { color: "gray700", weight: "bold" }, M)) : m.createElement(k.Z, { onClick: y, style: Q.delegateAccountsLabel }, m.createElement(h.ZP, { color: "gray700", weight: "bold" }, p ? q : M), !p && (d ? m.createElement(T.default, { style: Q.IconChevronUp }) : m.createElement(L.default, { style: Q.IconChevronDown }))),
+                              a || d || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
                                             t = n === l?.userId,
                                             i = s ? s({ withBadges: !1, isActiveUser: t }) : void 0,
                                             r = _({ userId: n });
-                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(D.Z, { "aria-label": M, badgeContext: "account", decoration: i, displayMode: "UserCompact", onCellClick: t ? L.Z : r, user: e, withInteractiveStyling: !t, withLink: !1 }), a && m.createElement(v.Z, { style: Q.accountDivider }));
+                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(I.Z, { "aria-label": O, badgeContext: "account", decoration: i, displayMode: "UserCompact", onCellClick: t ? U.Z : r, user: e, withInteractiveStyling: !t, withLink: !1 }), a && m.createElement(f.Z, { style: Q.accountDivider }));
                                     })
-                                  : m.createElement(k.Z, { style: Q.facePileContainer }, m.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.legacy?.profile_image_url_https) || "") })),
+                                  : m.createElement(k.Z, { style: Q.facePileContainer }, m.createElement(b.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
                           );
                 };
-            function W() {
+            function x() {
                 const e = F()(Z, {}),
-                    l = (0, C.v9)(I.x0);
+                    l = (0, A.v9)(D.x0);
                 return m.useMemo(() => {
                     const a = [];
                     return (
@@ -339,8 +340,8 @@
                     );
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
-            const Q = S.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                V = H((e) => m.createElement(R.H, { errorConfig: P }, m.createElement(x, e)));
+            const Q = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                B = H((e) => m.createElement(R.H, { errorConfig: P }, m.createElement(W, e)));
         },
         621416: (e, l, a) => {
             a.d(l, { m: () => t });
@@ -376,10 +377,10 @@
                 u =
                     (e) =>
                     (l, a, { api: u }) => {
-                        const o = (0, s._O)(l, { request: u.withEndpoint(n.Z).switch, params: e });
+                        const d = (0, s._O)(l, { request: u.withEndpoint(n.Z).switch, params: e });
                         return l((0, t.MH)()).then(() =>
                             l((0, i.nB)()).then(() =>
-                                o({ actionTypes: r, context: "SWITCH" }).then(() => {
+                                d({ actionTypes: r, context: "SWITCH" }).then(() => {
                                     window.location.assign("/home");
                                 }),
                             ),
@@ -388,4 +389,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.a91be2da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.6352eb8a.js.map

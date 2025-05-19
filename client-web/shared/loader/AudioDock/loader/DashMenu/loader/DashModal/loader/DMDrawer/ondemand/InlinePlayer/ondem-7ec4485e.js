@@ -79,6 +79,7 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -88,7 +89,6 @@
                                                         plural: !1,
                                                         selections: [
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                         ],
                                                         storageKey: null,
@@ -151,7 +151,7 @@
                             },
                         ],
                     },
-                    params: { id: "lgXPph1knd_PWn4A2oxxGg", metadata: {}, name: "ConferenceChatMessageItemQuery", operationKind: "query", text: null },
+                    params: { id: "LuCaCBEok0o7JRyuY1Jf3g", metadata: {}, name: "ConferenceChatMessageItemQuery", operationKind: "query", text: null },
                 };
             t.hash = "b53a5f7f42bcef093dfec2d264f5d1c4";
             const u = t;
@@ -257,25 +257,14 @@
                 metadata: null,
                 name: "UserAvatar_user",
                 selections: [
-                    {
-                        alias: null,
-                        args: null,
-                        concreteType: "ApiUser",
-                        kind: "LinkedField",
-                        name: "legacy",
-                        plural: !1,
-                        selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW" },
-                        ],
-                        storageKey: null,
-                    },
+                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }, action: "THROW" }], storageKey: null },
+                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null },
                     { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }], storageKey: null },
                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "5b0014e8816acc11ddc40b48ebe3f254",
+                hash: "ded115552a1834caf6103604794f7c93",
             };
             const i = n;
         },
@@ -288,6 +277,7 @@
                 name: "UserCell_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, action: "THROW" },
                     {
                         alias: null,
                         args: null,
@@ -297,7 +287,6 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
@@ -348,7 +337,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "f8deaec6b488105f8feb366025b0de97",
+                hash: "3bb22c2c5aea6c50c49f1ee9bd035823",
             };
             const i = n;
         },
@@ -642,6 +631,7 @@
                                                 kind: "InlineFragment",
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -651,7 +641,6 @@
                                                         plural: !1,
                                                         selections: [
                                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
@@ -754,11 +743,11 @@
                             },
                         ],
                     },
-                    params: { id: "m9D-8nBK8H_oywL0UcNRWQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "useUserCellDataQuery", operationKind: "query", text: null },
+                    params: { id: "ueNjMHccOe0hjHrCSZKCtg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "useUserCellDataQuery", operationKind: "query", text: null },
                 };
             t.hash = "c0b0e360f052f6c6c200824ff1f8e0de";
             const u = t;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e.5991b7ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e.27c6335a.js.map

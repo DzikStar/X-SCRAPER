@@ -48,7 +48,7 @@
                                 plural: !1,
                                 selections: [
                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }], type: "User", abstractKey: null },
+                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }], type: "User", abstractKey: null },
                                 ],
                                 storageKey: null,
                             },
@@ -58,7 +58,7 @@
                 ],
                 type: "Community",
                 abstractKey: null,
-                hash: "d9ab6744b4dc53b41a32cc0ce500f9e4",
+                hash: "b057e8f1a7927932f33eae01360eeb54",
             };
             const t = n;
         },
@@ -1072,7 +1072,7 @@
                                 ((e) =>
                                     e.reduce((e, { result: l }) => {
                                         if ("User" === l?.__typename) {
-                                            const a = l.legacy?.profile_image_url_https;
+                                            const a = l.avatar?.image_url;
                                             a && e.push(a);
                                         }
                                         return e;
@@ -1214,4 +1214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.4751b93a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.b76a515a.js.map

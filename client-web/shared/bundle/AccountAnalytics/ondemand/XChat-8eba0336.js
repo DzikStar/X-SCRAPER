@@ -294,54 +294,54 @@
                 a = r.n(s),
                 l = r(202784),
                 i = r(801074);
-            function o({ api: e, className: t, footer: r, header: s, items: o, nearEndThreshold: c = 5, nearStartThreshold: d = 2, onAtEnd: u, onAtStart: m, onNearEnd: v, onNearStart: h, onScroll: x, renderItem: p, ...f }) {
-                const g = o.length,
-                    w = (0, l.useRef)(null),
-                    E = (0, l.useRef)(0);
+            function o({ api: e, className: t, footer: r, header: s, items: o, nearEndThreshold: c = 5, nearStartThreshold: d = 2, onAtEnd: u, onAtStart: m, onNearEnd: v, onNearStart: h, onScroll: x, renderItem: p, style: f, ...g }) {
+                const w = o.length,
+                    E = (0, l.useRef)(null),
+                    y = (0, l.useRef)(0);
                 (0, l.useImperativeHandle)(
                     e,
                     () => ({
-                        findStartIndex: () => w.current?.findStartIndex() || 0,
-                        findEndIndex: () => w.current?.findEndIndex() || 0,
-                        getItemOffset: (e) => w.current?.getItemOffset(e) || 0,
-                        getItemSize: (e) => w.current?.getItemSize(e) || 0,
+                        findStartIndex: () => E.current?.findStartIndex() || 0,
+                        findEndIndex: () => E.current?.findEndIndex() || 0,
+                        getItemOffset: (e) => E.current?.getItemOffset(e) || 0,
+                        getItemSize: (e) => E.current?.getItemSize(e) || 0,
                         scrollTo(e) {
-                            w.current?.scrollTo(e);
+                            E.current?.scrollTo(e);
                         },
                         scrollToIndex(e, t) {
-                            w.current?.scrollToIndex(e, t);
+                            E.current?.scrollToIndex(e, t);
                         },
                         get scrollOffset() {
-                            return w.current?.scrollOffset || 0;
+                            return E.current?.scrollOffset || 0;
                         },
                         get scrollSize() {
-                            return w.current?.scrollSize || 0;
+                            return E.current?.scrollSize || 0;
                         },
                         get viewportSize() {
-                            return w.current?.viewportSize || 0;
+                            return E.current?.viewportSize || 0;
                         },
                     }),
                     [],
                 );
-                const y = a()(() => v?.(), 500),
-                    j = a()(() => h?.(), 500);
+                const j = a()(() => v?.(), 500),
+                    b = a()(() => h?.(), 500);
                 return (0, n.jsxs)("div", {
                     className: t,
-                    style: { height: "100vh", overflowAnchor: "none", overflowY: "auto", width: "100%" },
+                    style: { height: "100vh", overflowAnchor: "none", overflowY: "auto", width: "100%", ...f },
                     children: [
                         s,
                         (0, n.jsx)(i.dM, {
                             as: "ul",
-                            count: g,
+                            count: w,
                             item: "li",
                             onScroll: function (e) {
-                                if (!w.current) return;
+                                if (!E.current) return;
                                 const t = e,
-                                    r = t > E.current ? "forward" : "backward";
-                                x?.(e, r), "backward" === r && (0 === t && m?.(), w.current.findStartIndex() <= d && j()), "forward" === r && (t + w.current.viewportSize - w.current.scrollSize == 0 && u?.(), g - w.current.findEndIndex() <= c && y()), (E.current = t);
+                                    r = t > y.current ? "forward" : "backward";
+                                x?.(e, r), "backward" === r && (0 === t && m?.(), E.current.findStartIndex() <= d && b()), "forward" === r && (t + E.current.viewportSize - E.current.scrollSize == 0 && u?.(), w - E.current.findEndIndex() <= c && j()), (y.current = t);
                             },
-                            ref: w,
-                            ...f,
+                            ref: E,
+                            ...g,
                             children: (e) => {
                                 const t = o[e];
                                 return p(t, e);
@@ -415,4 +415,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.b48a421a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.2408ce8a.js.map

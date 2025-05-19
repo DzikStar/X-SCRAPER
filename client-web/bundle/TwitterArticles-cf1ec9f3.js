@@ -384,10 +384,12 @@
                     () =>
                         Promise.all([
                             r.e("icons.5"),
-                            r.e("icons.12"),
-                            r.e("icons.20"),
-                            r.e("icons.0"),
-                            r.e("icons.21"),
+                            r.e("icons.6"),
+                            r.e("icons.25"),
+                            r.e("icons.22"),
+                            r.e("icons.9"),
+                            r.e("icons.4"),
+                            r.e("icons.15"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -434,10 +436,12 @@
                     () =>
                         Promise.all([
                             r.e("icons.5"),
-                            r.e("icons.12"),
-                            r.e("icons.20"),
-                            r.e("icons.0"),
-                            r.e("icons.21"),
+                            r.e("icons.6"),
+                            r.e("icons.25"),
+                            r.e("icons.22"),
+                            r.e("icons.9"),
+                            r.e("icons.4"),
+                            r.e("icons.15"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -825,4 +829,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.d58bf0aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.a6e8231a.js.map

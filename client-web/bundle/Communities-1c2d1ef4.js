@@ -290,9 +290,10 @@
                                                                                                                 kind: "InlineFragment",
                                                                                                                 selections: [
                                                                                                                     (d = { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
-                                                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, (m = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, t], storageKey: null },
+                                                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, (m = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, t], storageKey: null },
                                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                                                                                     {
                                                                                                                         alias: null,
@@ -422,7 +423,7 @@
                             },
                         ],
                     },
-                    params: { id: "rf7zm3LlERSm_tawonl-PA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "join_requests_result", "pending_join_requests_slice", "slice_info"] }, name: "MemberRequests_Query", operationKind: "query", text: null },
+                    params: { id: "IMTO4nk0o0Hr8e4qKrjIww", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "join_requests_result", "pending_join_requests_slice", "slice_info"] }, name: "MemberRequests_Query", operationKind: "query", text: null },
                 };
             y.hash = "7356e3997f9137cb733c155223a4dd43";
             const k = y;
@@ -763,4 +764,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-1c2d1ef4.15914e7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-1c2d1ef4.c4d6363a.js.map

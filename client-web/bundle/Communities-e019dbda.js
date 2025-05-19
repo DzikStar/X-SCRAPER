@@ -38,8 +38,8 @@
                 Z = c.default.create((e) => ({ button: { marginEnd: e.spaces.space8 } })),
                 C = a.memo(E);
             r(136728);
-            var _ = r(697916),
-                v = r(688715),
+            var v = r(697916),
+                _ = r(688715),
                 w = r(811176),
                 I = r(415506),
                 S = r(178519),
@@ -48,10 +48,10 @@
                 k = r(443781);
             const M = d().e48fbb02,
                 A = d().b1614c34,
-                R = (0, v.ju)("https://help.x.com/using-twitter/communities#report-community"),
-                N = (0, v.ju)("https://help.x.com/using-twitter/communities"),
+                R = (0, _.ju)("https://help.x.com/using-twitter/communities#report-community"),
+                N = (0, _.ju)("https://help.x.com/using-twitter/communities"),
                 F = d().j1dcedde,
-                T = _.Z,
+                T = v.Z,
                 H = (e) => {
                     const { "aria-label": t, community: r, variant: n, viewerHasModeratorAccess: o } = e,
                         { featureSwitches: l } = (0, k.QZ)(),
@@ -150,13 +150,13 @@
                 E = { context: "CommunityInviteButtonQuery" },
                 Z = { type: "CustomRetry", content: () => null },
                 C = a.Z,
-                _ = (e) => {
+                v = (e) => {
                     const { communityId: t, ...r } = e,
                         a = (0, i.p)(C, { communityId: t });
                     return "Community" === a.communityResults?.result?.__typename ? o.createElement(f, (0, n.Z)({ community: a.communityResults.result }, r)) : null;
                 },
-                v = (e) => o.createElement(l.N, { errorConfig: E, fallback: Z }, o.createElement(o.Suspense, { fallback: null }, o.createElement(_, (0, n.Z)({ communityId: e.communityId }, e)))),
-                w = o.memo(v);
+                _ = (e) => o.createElement(l.N, { errorConfig: E, fallback: Z }, o.createElement(o.Suspense, { fallback: null }, o.createElement(v, (0, n.Z)({ communityId: e.communityId }, e)))),
+                w = o.memo(_);
         },
         338114: (e, t, r) => {
             r.d(t, { Z: () => P });
@@ -179,11 +179,11 @@
                 E = r(468651),
                 Z = r(25618);
             const C = "community-thumbnail-image",
-                _ = "community-thumbnail-name-container",
-                v = n.Z,
+                v = "community-thumbnail-name-container",
+                _ = n.Z,
                 w = () => y().c8d33380,
                 I = (e) => {
-                    const t = i()(v, e.community),
+                    const t = i()(_, e.community),
                         r = (0, f.B)(t) ?? 0,
                         n = (0, E.b)(t),
                         l = (0, Z.c)(t),
@@ -191,7 +191,7 @@
                         { crop: I, image: P } = (0, g.L)(t),
                         x = s.default.theme.aspectRatios.communityBanner,
                         k = r + n > 0;
-                    return a.createElement(c.Z, { link: `/i/communities/${h}`, style: S.root }, a.createElement(o.Z, { style: S.container }, a.createElement(m.Z, { ratio: x }, a.createElement(d.Z, { "aria-label": "", aspectMode: u.Z.exact(x), backgroundColor: s.default.theme.colors.gray300, cropCandidates: I, image: P, testID: C })), a.createElement(o.Z, { style: S.name, testID: _ }, a.createElement(p.ZP, { align: "left", color: "text", numberOfLines: 1, size: "subtext2", weight: "bold" }, y.trim()))), (k || l) && a.createElement(b.Z, { pip: !0, style: S.pip, unreadCountLabel: w, withBorder: !0 }));
+                    return a.createElement(c.Z, { link: `/i/communities/${h}`, style: S.root }, a.createElement(o.Z, { style: S.container }, a.createElement(m.Z, { ratio: x }, a.createElement(d.Z, { "aria-label": "", aspectMode: u.Z.exact(x), backgroundColor: s.default.theme.colors.gray300, cropCandidates: I, image: P, testID: C })), a.createElement(o.Z, { style: S.name, testID: v }, a.createElement(p.ZP, { align: "left", color: "text", numberOfLines: 1, size: "subtext2", weight: "bold" }, y.trim()))), (k || l) && a.createElement(b.Z, { pip: !0, style: S.pip, unreadCountLabel: w, withBorder: !0 }));
                 },
                 S = s.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space4, marginHorizontal: e.spaces.space4, marginTop: e.spaces.space2, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large }, container: { width: `calc((${s.default.theme.spaces.space36} * 3) + ${s.default.theme.spaces.space24})`, borderRadius: e.borderRadii.large, overflow: "hidden", borderWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, name: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space8, width: "100%", backgroundColor: e.colors.gray0 }, pipContainer: { position: "absolute", end: 0 }, pip: { width: e.spaces.space12, height: e.spaces.space12 } })),
                 P = a.memo(I);
@@ -217,13 +217,13 @@
                 E = r(678773),
                 Z = r(492140),
                 C = r(833057),
-                _ = r(872788),
-                v = r(71620),
+                v = r(872788),
+                _ = r(71620),
                 w = r(668214),
                 I = r(709318),
                 S = r(601576);
             const P = (0, w.Z)()
-                    .propsFromActions(() => ({ addToast: S.fz, createLocalApiErrorHandler: (0, v.zr)("TOGGLE_PIN_LIST"), pinTimeline: I.qM, unpinTimeline: I.bK }))
+                    .propsFromActions(() => ({ addToast: S.fz, createLocalApiErrorHandler: (0, _.zr)("TOGGLE_PIN_LIST"), pinTimeline: I.qM, unpinTimeline: I.bK }))
                     .withAnalytics(),
                 x = u().c5d23126,
                 k = u().j44ec610,
@@ -240,7 +240,7 @@
                         b = n.useCallback(() => {
                             if (a || l) {
                                 const e = l ? "unpin_button" : "pin_button";
-                                r.scribe({ element: e, action: "click" }), l ? d({ id: i, name: c, type: _.FO.LIST }).catch(o) : m({ id: i, name: c, type: _.FO.LIST }).catch(o);
+                                r.scribe({ element: e, action: "click" }), l ? d({ id: i, name: c, type: v.FO.LIST }).catch(o) : m({ id: i, name: c, type: v.FO.LIST }).catch(o);
                             } else r.scribe({ element: "unpinnable_button", action: "click" }), t({ text: M });
                         }, [t, r, a, o, l, i, c, m, d]),
                         h = n.useMemo(() => (s === g.H.Reordering ? A : l ? N : R), [l, s]);
@@ -256,21 +256,21 @@
                 O = "listCell",
                 U = (u().d58baa7f, u().j681933e),
                 V = (e) => {
-                    const { dataSaverMode: t, decoration: r, facepileUrls: m, followersContext: d, isFollowing: u, isListPinned: f, isSelected: E, listId: Z, listVisibility: C, media: _, memberCount: v, membersContext: w, mode: I, name: S, onClick: P, pinnedTimelinesCount: x, role: k, user: M, withBottomBorder: A, withHoverCard: R, withSubscribe: N = !1 } = e,
+                    const { dataSaverMode: t, decoration: r, facepileUrls: m, followersContext: d, isFollowing: u, isListPinned: f, isSelected: E, listId: Z, listVisibility: C, media: v, memberCount: _, membersContext: w, mode: I, name: S, onClick: P, pinnedTimelinesCount: x, role: k, user: M, withBottomBorder: A, withHoverCard: R, withSubscribe: N = !1 } = e,
                         { featureSwitches: F } = (0, h.QZ)(),
                         T = F.getNumberValue("home_timeline_spheres_max_user_owned_or_subscribed_lists_count", D.F),
                         V = !x || x < T,
                         j = `/i/lists/${Z}`,
                         q = n.useCallback((e) => (e ? n.createElement(B.Z, { basePath: j, listId: Z, wrapperStyle: { maxWidth: "100%" } }, e) : null), [j, Z]),
                         K = n.useMemo(() => n.createElement(a.Z, { style: W.name }, n.createElement(o.ZP, { numberOfLines: 1, weight: "bold" }, S), "private" === C ? n.createElement(o.ZP, { size: "body", style: W.icon }, n.createElement(p.default, { "aria-label": U, style: W.iconLock })) : null), [C, S]),
-                        Q = n.useMemo(() => n.createElement(a.Z, { style: W.thumbnailImage, testID: $ }, n.createElement(L.Z, { cropCandidates: _.crop, dataSaverMode: t, icon: "lists", image: _.image, type: "fixed" })), [t, _.crop, _.image]),
+                        Q = n.useMemo(() => n.createElement(a.Z, { style: W.thumbnailImage, testID: $ }, n.createElement(L.Z, { cropCandidates: v.crop, dataSaverMode: t, icon: "lists", image: v.image, type: "fixed" })), [t, v.crop, v.image]),
                         G = n.useMemo(() => r || (E ? n.createElement(b.default, { style: W.iconCheckmark }) : I === g.H.Reordering || I === g.H.Pinning ? n.createElement(H, { couldPinList: V, isListPinned: f, listId: Z, mode: I, name: S }) : N ? n.createElement(y.Z, { isFollowing: u, isMinimal: !0, listId: Z, listName: S, user: M }) : void 0), [V, r, f, u, E, Z, I, S, M, N]),
                         X = (0, z.z)(),
                         Y = n.useCallback(
                             (e) => {
-                                X.contextualScribeNamespace.element ? X.scribeAction("click") : X.scribe({ component: "list", action: "click" }), P?.(e, { listId: Z, member_count: v });
+                                X.contextualScribeNamespace.element ? X.scribeAction("click") : X.scribe({ component: "list", action: "click" }), P?.(e, { listId: Z, member_count: _ });
                             },
-                            [X, P, Z, v],
+                            [X, P, Z, _],
                         );
                     return n.createElement(l.Z, { "aria-checked": E, link: { pathname: j, anchorless: !0 }, onPress: Y, role: k, style: [W.root, A && W.bottomBorder], testID: O }, n.createElement(a.Z, { style: W.listContainer }, n.createElement(a.Z, { style: W.leftColumn }, q(Q), n.createElement(a.Z, { style: W.listAttribution }, n.createElement(a.Z, { style: W.nameContainer }, q(K), w ? n.createElement(o.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, n.createElement(i.Z, null), w) : null), m && d ? n.createElement(a.Z, { style: W.rowContainer }, n.createElement(s.Z, { style: W.facepile, userAvatarUrls: m }), n.createElement(o.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, d)) : M ? n.createElement(c.Z, { affiliateBadgeInfo: M.highlightedLabel, avatarSize: "small", color: "text", isBlueVerified: M.is_blue_verified, isProtected: M.protected, isVerified: M.verified, name: M.name, nameSize: "subtext2", profileImageUrl: M.profile_image_url_https, screenName: M.screen_name, screenNameSize: "subtext2", verifiedType: M.verified_type, withHoverCard: R, withLink: !0, withScreenName: !0 }) : null)), n.createElement(a.Z, { style: W.rightColumn }, G)));
                 },
@@ -350,7 +350,7 @@
                                 ((e) =>
                                     e.reduce((e, { result: t }) => {
                                         if ("User" === t?.__typename) {
-                                            const r = t.legacy?.profile_image_url_https;
+                                            const r = t.avatar?.image_url;
                                             r && e.push(r);
                                         }
                                         return e;
@@ -362,7 +362,7 @@
                 m = a.memo(c);
         },
         281598: (e, t, r) => {
-            r.d(t, { IN: () => n, ZC: () => a, eE: () => _, ZP: () => g, L4: () => C });
+            r.d(t, { IN: () => n, ZC: () => a, eE: () => v, ZP: () => g, L4: () => C });
             const n = Object.freeze({ Open: "CommunityOpenMembershipSettings", Restricted: "CommunityRestrictedMembershipSettings" }),
                 a = Object.freeze({ Member: "MemberInvitesAllowed", Moderator: "ModeratorInvitesAllowed", Admin: "AdminInvitesAllowed" });
             var o = r(202784),
@@ -415,7 +415,7 @@
                     );
                 return [o.useMemo(() => ({ access: t, invitesPolicy: n }), [t, n]), l];
             }
-            function _(e) {
+            function v(e) {
                 let t, r;
                 switch (e.access) {
                     case n.Open:
@@ -463,8 +463,8 @@
                 E = r(966886),
                 Z = r(708852),
                 C = r(673510),
-                _ = r(872405),
-                v = r(30899),
+                v = r(872405),
+                _ = r(30899),
                 w = r(124964),
                 I = r(668214),
                 S = r(79685),
@@ -486,7 +486,7 @@
                         { created_at: o, reporter: l } = t,
                         i = n.createElement(E.Z, { timestamp: o }),
                         s = (0, Z.Y4)();
-                    return l ? n.createElement(a.Z, { style: r ? N.bottomBorder : null }, n.createElement(C.ZP, { avatarUri: l.profile_image_url_https, decoration: i, displayMode: "UserCompact", isBlueVerified: l.is_blue_verified, isProtected: l.protected, isVerified: l.verified, name: l.name, screenName: l.screen_name, style: s ? N.userCell : void 0, userId: l.id_str }), n.createElement(_.Z, { avatarCell: null }, n.createElement(g.ZP, { color: "gray700", size: "subtext2", style: N.rule }, t.rule.name))) : null;
+                    return l ? n.createElement(a.Z, { style: r ? N.bottomBorder : null }, n.createElement(C.ZP, { avatarUri: l.profile_image_url_https, decoration: i, displayMode: "UserCompact", isBlueVerified: l.is_blue_verified, isProtected: l.protected, isVerified: l.verified, name: l.name, screenName: l.screen_name, style: s ? N.userCell : void 0, userId: l.id_str }), n.createElement(v.Z, { avatarCell: null }, n.createElement(g.ZP, { color: "gray700", size: "subtext2", style: N.rule }, t.rule.name))) : null;
                 },
                 R = k((e) => {
                     const [t, r] = n.useState(!1),
@@ -497,7 +497,7 @@
                         n.Fragment,
                         null,
                         n.createElement(
-                            v.Z,
+                            _.Z,
                             {
                                 contentStyle: N.popover,
                                 onDismiss: () => {
@@ -617,10 +617,10 @@
                             },
                             [d, f, E, Z, e.disableRemoveFromCommunity],
                         ),
-                        _ = () => {
+                        v = () => {
                             r(g);
                         },
-                        v = () => {
+                        _ = () => {
                             t(g);
                         };
                     if (f && d?.reportingVisibility === y.az.HiddenCommunityTweet) return n.createElement(n.Fragment, null, n.createElement(Q, { screenName: f, type: W.Hidden }), n.createElement(l.Z, null));
@@ -638,9 +638,9 @@
                             d
                                 ? n.createElement(i.ZP, null, ({ containerHeight: t, containerWidth: r }) => {
                                       const o = r <= s.default.theme.breakpoints.small;
-                                      return n.createElement(a.Z, { style: [se.buttons, o && se.buttonsMobile] }, n.createElement(c.ZP, { onPress: _, size: "large", style: [se.button, o && se.buttonMobile], type: "primaryOutlined" }, re), n.createElement(c.ZP, { link: { pathname: `/i/report/${y.C2.HideCommunityTweet}/${g}`, state: { scribeNamespace: { ...J, action: "hide_tweet" } } }, size: "large", style: [se.button, o && se.buttonMobile], type: "primaryOutlined" }, ee), !e.disableRemoveFromCommunity && Z && E ? n.createElement(c.ZP, { link: { pathname: `/i/report/${y.C2.RemoveCommunityMember}/${Z}?community_id=${E}`, state: { clientReferer: window.location.pathname, scribeNamespace: J } }, size: "large", style: [se.button, o && se.buttonMobile], type: "primaryOutlined" }, ne) : null);
+                                      return n.createElement(a.Z, { style: [se.buttons, o && se.buttonsMobile] }, n.createElement(c.ZP, { onPress: v, size: "large", style: [se.button, o && se.buttonMobile], type: "primaryOutlined" }, re), n.createElement(c.ZP, { link: { pathname: `/i/report/${y.C2.HideCommunityTweet}/${g}`, state: { scribeNamespace: { ...J, action: "hide_tweet" } } }, size: "large", style: [se.button, o && se.buttonMobile], type: "primaryOutlined" }, ee), !e.disableRemoveFromCommunity && Z && E ? n.createElement(c.ZP, { link: { pathname: `/i/report/${y.C2.RemoveCommunityMember}/${Z}?community_id=${E}`, state: { clientReferer: window.location.pathname, scribeNamespace: J } }, size: "large", style: [se.button, o && se.buttonMobile], type: "primaryOutlined" }, ne) : null);
                                   })
-                                : n.createElement(a.Z, { style: se.buttons }, n.createElement(c.ZP, { onPress: v, style: se.button, type: "primaryOutlined" }, te)),
+                                : n.createElement(a.Z, { style: se.buttons }, n.createElement(c.ZP, { onPress: _, style: se.button, type: "primaryOutlined" }, te)),
                         ),
                         n.createElement(l.Z, null),
                     );
@@ -706,8 +706,8 @@
                 E = r(511323),
                 Z = r(297938),
                 C = r(369676),
-                _ = r(323265),
-                v = r(125363),
+                v = r(323265),
+                _ = r(125363),
                 w = r(601576),
                 I = r(301758),
                 S = r(668214),
@@ -761,8 +761,8 @@
                 G = b().c904a2ff,
                 X = b().b43358cf,
                 Y = A((e) => {
-                    const t = _.ZP.isWebView(),
-                        r = (0, v.I0)(),
+                    const t = v.ZP.isWebView(),
+                        r = (0, _.I0)(),
                         { communityId: u, moderationLog: p, setShowRevertedDialog: S, tweet: P } = e,
                         x = p?.id,
                         k = p?.should_show_reverted_dialog ?? !1,
@@ -872,7 +872,7 @@
                 i = r(621416),
                 s = r(443781);
             const c = l().j24c37b2,
-                m = ({ Content: e, contentStyle: t, actionLabel: r = c, flag: o, graphic: l, graphicDisplayMode: m, headline: d, isFullHeightOnMobile: u, enableMaskForDismiss: p, onAction: b, onClose: h, onSecondaryAction: y, secondaryActionLabel: g, supportUrl: f, subtext: E, withCloseButton: Z, shouldShowForLoggedOut: C = !1, shouldAddEducationFlagOnClose: _ = !0, shouldAddEducationFlagOnSecondary: v = !0, shouldAddEducationFlagOnPrimary: w = !0 }) => {
+                m = ({ Content: e, contentStyle: t, actionLabel: r = c, flag: o, graphic: l, graphicDisplayMode: m, headline: d, isFullHeightOnMobile: u, enableMaskForDismiss: p, onAction: b, onClose: h, onSecondaryAction: y, secondaryActionLabel: g, supportUrl: f, subtext: E, withCloseButton: Z, shouldShowForLoggedOut: C = !1, shouldAddEducationFlagOnClose: v = !0, shouldAddEducationFlagOnSecondary: _ = !0, shouldAddEducationFlagOnPrimary: w = !0 }) => {
                     const { loggedInUserId: I } = n.useContext(s.rC),
                         [S, P] = (0, i.m)(o),
                         x = n.useCallback(
@@ -882,13 +882,13 @@
                             [P, b, w],
                         ),
                         k = n.useCallback(() => {
-                            _ && P(), h && h();
-                        }, [P, _, h]),
+                            v && P(), h && h();
+                        }, [P, v, h]),
                         M = n.useCallback(
                             (e) => {
-                                v && P(), y && y(e);
+                                _ && P(), y && y(e);
                             },
-                            [P, y, v],
+                            [P, y, _],
                         );
                     if (!S || (!I && !C)) return null;
                     return n.createElement(a.Z, { actionLabel: r, contentStyle: t, enableMaskForDismiss: p, graphic: l, graphicDisplayMode: m || "none", headline: d, isFullHeightOnMobile: u, onAction: x, onClose: k, onSecondaryAction: M, secondaryActionLabel: g, subtext: E, supportUrl: f, withCloseButton: Z }, e ? n.createElement(e, null) : null);
@@ -986,14 +986,15 @@
             const u = (0, c.Z)().propsFromState(() => ({ dataSaverMode: d.IX, pinnedTimelinesCount: m.Hm })),
                 p = [],
                 b = n.Z,
-                h = (e, t, r) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: e?.profile_image_url_https ?? "", protected: t?.protected ?? !1, verified: r ?? !1 }),
+                h = (e, t, r, n) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: t?.image_url ?? "", protected: r?.protected ?? !1, verified: n ?? !1 }),
                 y = (e) => {
                     const t = l()(b, e.listRef),
                         r = (0, s.u)(t),
                         n = t.owner_results?.result?.author,
                         o = t.owner_results?.result?.privacy,
-                        c = t.owner_results?.result?.verification?.verified;
-                    return a.createElement(i.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls ?? p, followersContext: t.followers_context ?? "", isFollowing: Boolean(t.following), isListPinned: Boolean(t.pinning), isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode?.toLowerCase() ?? "public", media: r, memberCount: t.member_count ?? 0, membersContext: t.members_context ?? "", mode: e.mode, name: t.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? h(n, o, c) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
+                        c = t.owner_results?.result?.verification?.verified,
+                        m = t.owner_results?.result?.avatar;
+                    return a.createElement(i.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls ?? p, followersContext: t.followers_context ?? "", isFollowing: Boolean(t.following), isListPinned: Boolean(t.pinning), isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode?.toLowerCase() ?? "public", media: r, memberCount: t.member_count ?? 0, membersContext: t.members_context ?? "", mode: e.mode, name: t.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? h(n, m, o, c) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
                 },
                 g = a.memo(u(y));
         },
@@ -1022,11 +1023,11 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, d.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: d, onAvatarClick: u, onMediaClick: p, onPress: b, onScreenNameClick: h, tweetId: y, withBirdwatchPivot: g = !0, ...f }) => {
                     const { featureSwitches: E, viewerUserId: Z } = a.useContext(m.rC),
                         C = (0, c.z)(),
-                        _ = d?.community_id_str;
+                        v = d?.community_id_str;
                     a.useEffect(() => {
-                        _ && (0, i.Z)(e) && r(_).catch(t());
-                    }, [e, _, t, r]);
-                    const v = a.useCallback(
+                        v && (0, i.Z)(e) && r(v).catch(t());
+                    }, [e, v, t, r]);
+                    const _ = a.useCallback(
                             (e) => {
                                 C.scribeAction("click"), b && b(e);
                             },
@@ -1035,7 +1036,7 @@
                         w = !!g,
                         I = d && (0, s.D$)(d, Z, e),
                         S = I && (0, s.rl)(I);
-                    return a.createElement(o.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => E.isTrue("responsive_web_edit_tweet_enabled") || E.isTrue("subscriptions_feature_labs_1004") } }, a.createElement(l.Z, (0, n.Z)({}, f, { loggedInUserId: Z, onAvatarClick: u, onMediaClick: p, onPress: v, onScreenNameClick: h, shouldShowAltLabelAlways: !0, socialContextProps: S, tweet: d, withBirdwatchPivot: w })));
+                    return a.createElement(o.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => E.isTrue("responsive_web_edit_tweet_enabled") || E.isTrue("subscriptions_feature_labs_1004") } }, a.createElement(l.Z, (0, n.Z)({}, f, { loggedInUserId: Z, onAvatarClick: u, onMediaClick: p, onPress: _, onScreenNameClick: h, shouldShowAltLabelAlways: !0, socialContextProps: S, tweet: d, withBirdwatchPivot: w })));
                 });
         },
         250672: (e, t, r) => {
@@ -1165,4 +1166,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.11056d6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.942963fa.js.map

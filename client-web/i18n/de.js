@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 t("ed93de0c", "Post wird analysiert"),
-                t("d1d92e40", "More details"),
+                t("d1d92e40", "Weitere Details"),
                 t("a6e89af8", "Offene Konversation"),
                 t("ica55d24", "Neuer Chat"),
                 t("f794af9a", "Spaßmodus"),
@@ -4362,8 +4362,8 @@
                 t("g01599b6", "Antwort 1"),
                 t("e02694e0", "Antwort 2"),
                 t("h6867fcc", "Ich bevorzuge diese Antwort"),
-                t("acc4496c", "Try Grok Voice mode"),
-                t("jd36d190", "Access advanced features with Grok Android app"),
+                t("acc4496c", "Grok-Sprachmodus probieren"),
+                t("jd36d190", "Greife mit der Grok-Android-App auf erweiterte Funktionen zu"),
                 t("hf9afab0", "Aktiviere „DeepSearch“, wenn du das Internet und X durchsuchen, Informationen analysieren und detaillierte, wohlüberlegte Antworten mit der schnellen Agentsuche erhalten möchtest."),
                 t("ef3b3f04", "Aktiviere „Denken“, wenn du unser Logikmodell nutzen möchtest. Es eignet sich am besten für Mathematik, Naturwissenschaften und Programmierung. Du kannst angeben, dass Grok über eine beliebige Frage „Schärfer nachdenken“ soll, die vielleicht eine stärkere Denkleistung erfordert. "),
                 t("b43636b8", "Wir stellen vor: Grok 3"),
@@ -5841,7 +5841,7 @@
                 t("ab1b3d38", "Anfragedaten für Anmerkungen sind noch nicht verfügbar"),
                 t("c43fb933", "Vereinbarungen und Richtlinien von X für Entwickler"),
                 t("af781666", "Was halten Leute davon?"),
-                t("a1f414ee", "Share thoughts"),
+                t("a1f414ee", "Meinung teilen"),
                 t("ed88e742", "Link zum Thema kopieren"),
                 t("h92fe1be", "Leider ist Kollektive Anmerkungen zurzeit für dich nicht verfügbar."),
                 t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar"),
@@ -13247,4 +13247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.fb9e739a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.7120f50a.js.map

@@ -152,13 +152,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: l, centeredLogo: n, fixed: a, hideBackButton: r, isFullWidth: i, isLarge: u, leftControl: c, middleControl: m, position: g, rightControl: y, secondaryBar: p, style: _, subtitle: k, title: h, titleDomId: f, titleIconCell: F, titleIconCellSize: T, withBackground: b, withWideContainer: K } = this.props,
+                    const { backButtonType: e, centerTitle: l, centeredLogo: n, fixed: a, hideBackButton: r, isFullWidth: i, isLarge: u, leftControl: c, middleControl: m, position: g, rightControl: y, secondaryBar: p, style: k, subtitle: _, title: h, titleDomId: F, titleIconCell: T, titleIconCellSize: f, withBackground: K, withWideContainer: b } = this.props,
                         { isModal: w } = this.context,
                         S = r ? c : t.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         R = (function (e, l, n) {
                             return e && !(l && n);
-                        })(!!b, w, !!p);
-                    return t.createElement(t.Fragment, null, t.createElement(o.Z, { centerTitle: l, centeredLogo: n, isFullWidth: i, isLarge: u, leftControl: S, middleControl: m, position: d(g, w, a), rightControl: y, style: _, subtitle: k, title: h, titleDomId: f, titleIconCell: F, titleIconCellSize: T, withBackground: R, withWideContainer: K }), p || null);
+                        })(!!K, w, !!p);
+                    return t.createElement(t.Fragment, null, t.createElement(o.Z, { centerTitle: l, centeredLogo: n, isFullWidth: i, isLarge: u, leftControl: S, middleControl: m, position: d(g, w, a), rightControl: y, style: k, subtitle: _, title: h, titleDomId: F, titleIconCell: T, titleIconCellSize: f, withBackground: R, withWideContainer: b }), p || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -247,6 +247,7 @@
                                                                         {
                                                                             kind: "InlineFragment",
                                                                             selections: [
+                                                                                { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                                                 {
                                                                                     alias: null,
                                                                                     args: null,
@@ -256,7 +257,6 @@
                                                                                     plural: !1,
                                                                                     selections: [
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                                                                                        { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                     ],
@@ -309,26 +309,26 @@
                     type: "TweetResults",
                     abstractKey: null,
                 };
-            m.hash = "33d7c41abfb64bf7b5b90d7830f2fc4f";
+            m.hash = "6d52a5cf96c0121deafe315cb9ec8693";
             const g = m;
             var y = n(325686),
                 p = n(386802),
-                _ = n(995145),
-                k = n(821966),
+                k = n(995145),
+                _ = n(821966),
                 h = n(54989),
-                f = n(373926),
-                F = n(823161),
-                T = n(392237),
-                b = n(332920),
-                K = n.n(b),
+                F = n(373926),
+                T = n(823161),
+                f = n(392237),
+                K = n(332920),
+                b = n.n(K),
                 w = n(143778),
                 S = n(323265),
                 R = n(443781),
                 x = n(382779);
-            const C = K().c9853de0,
-                E = { display_text_range: [0, 24], favorite_count: 0, favorited: !1, id: 0, lang: "en", permalink: "", reply_count: 0, retweet_count: 0, retweeted: !1 },
-                v = { created_at: "", default_profile: !1, default_profile_image: !1, fast_followers_count: 0, favourites_count: 0, follow_request_sent: !1, has_custom_timelines: !1, id: 0, listed_count: 0, location: "", media_count: 0, normal_followers_count: 0, notifications: !1, profile_banner_url: "", show_all_inline_media: !1, statuses_count: 0, time_zone: "", url: "", utc_offset: 0, withheld_in_countries: [], entities: {}, followed_by: !1, followers_count: 0, following: !1, friends_count: 0, id_str: "0", is_translator: !1, translator_type: "none", withheld_scope: "" },
-                Z = ({ removeTweetContent: e, tweet_results: l }) => {
+            const C = b().c9853de0,
+                v = { display_text_range: [0, 24], favorite_count: 0, favorited: !1, id: 0, lang: "en", permalink: "", reply_count: 0, retweet_count: 0, retweeted: !1 },
+                E = { created_at: "", default_profile: !1, default_profile_image: !1, fast_followers_count: 0, favourites_count: 0, follow_request_sent: !1, has_custom_timelines: !1, id: 0, listed_count: 0, location: "", media_count: 0, normal_followers_count: 0, notifications: !1, profile_banner_url: "", show_all_inline_media: !1, statuses_count: 0, time_zone: "", url: "", utc_offset: 0, withheld_in_countries: [], entities: {}, followed_by: !1, followers_count: 0, following: !1, friends_count: 0, id_str: "0", is_translator: !1, translator_type: "none", withheld_scope: "" },
+                L = ({ removeTweetContent: e, tweet_results: l }) => {
                     const n = c()(g, l),
                         { isModal: t } = o.useContext(p.Z),
                         { featureSwitches: a } = o.useContext(R.rC),
@@ -337,26 +337,26 @@
                         s = "TweetWithVisibilityResults" === i ? n.result?.tweet : n.result,
                         u = s?.legacy?.full_text,
                         m = S.ZP.isTwitterApp(),
-                        T = o.useCallback((e) => o.createElement(_.Z.UserAvatar, (0, d.Z)({}, e, { withHoverCard: !m, withLink: !m })), [m]),
-                        b = o.useCallback(() => (e ? null : o.createElement(k.Z, { label: C, render: (e) => o.createElement(h.Z, (0, d.Z)({}, e, { style: I.disclosure })) }, u || "")), [u, e]);
+                        f = o.useCallback((e) => o.createElement(k.Z.UserAvatar, (0, d.Z)({}, e, { withHoverCard: !m, withLink: !m })), [m]),
+                        K = o.useCallback(() => (e ? null : o.createElement(_.Z, { label: C, render: (e) => o.createElement(h.Z, (0, d.Z)({}, e, { style: U.disclosure })) }, u || "")), [u, e]);
                     if ("TweetTombstone" === i) {
                         const e = n.result?.tombstone?.text;
-                        if (e) return o.createElement(y.Z, { style: t && I.wideScreen }, o.createElement(f.Z, { withFooterGap: !1, withHeader: !1, withHorizontalPadding: !1 }, o.createElement(x.H, { timelineRichText: e })));
+                        if (e) return o.createElement(y.Z, { style: t && U.wideScreen }, o.createElement(F.Z, { withFooterGap: !1, withHeader: !1, withHorizontalPadding: !1 }, o.createElement(x.H, { timelineRichText: e })));
                     }
                     return ((l) => {
                         if (l?.core?.user_results.result?.legacy && l.legacy) {
                             const n = l.core.user_results.result.legacy,
-                                { privacy: a, verification: i } = l.core.user_results.result,
-                                s = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
-                                u = { tweet: { ...E, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: s, user: { ...v, description: n.description || "", profile_image_url_https: n.profile_image_url_https || "", protected: a?.protected || !1, screen_name: n.screen_name || "", name: n.name || "", verified: i?.verified || !1 } } };
-                            return o.createElement(y.Z, { style: [I.tweet, t && I.wideScreen] }, r ? o.createElement(_.Z, (0, d.Z)({}, u, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: b, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: I.avatarContainer }, o.createElement(F.default, { screenName: u.tweet.user.screen_name, size: "small", uri: u.tweet.user.profile_image_url_https }), o.createElement(_.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(_.Z, (0, d.Z)({}, u, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(_.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: b, renderUserAvatar: T, staticLinkConfig: null })));
+                                { avatar: a, privacy: i, verification: s } = l.core.user_results.result,
+                                u = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
+                                c = { tweet: { ...v, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: u, user: { ...E, description: n.description || "", profile_image_url_https: a?.image_url || "", protected: i?.protected || !1, screen_name: n.screen_name || "", name: n.name || "", verified: s?.verified || !1 } } };
+                            return o.createElement(y.Z, { style: [U.tweet, t && U.wideScreen] }, r ? o.createElement(k.Z, (0, d.Z)({}, c, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: K, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: U.avatarContainer }, o.createElement(T.default, { screenName: c.tweet.user.screen_name, size: "small", uri: c.tweet.user.profile_image_url_https }), o.createElement(k.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(k.Z, (0, d.Z)({}, c, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(k.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: K, renderUserAvatar: f, staticLinkConfig: null })));
                         }
                         return null;
                     })(s);
                 },
-                L = o.memo(Z),
-                I = T.default.create((e) => ({ disclosure: { border: "none", marginVertical: e.spaces.space8 }, tweet: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 }, avatarContainer: { flexDirection: "row", display: "flex", alignItems: "center", gap: 8, width: "100%" } }));
-            var U = {
+                Z = o.memo(L),
+                U = f.default.create((e) => ({ disclosure: { border: "none", marginVertical: e.spaces.space8 }, tweet: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 }, avatarContainer: { flexDirection: "row", display: "flex", alignItems: "center", gap: 8, width: "100%" } }));
+            var I = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -374,6 +374,7 @@
                             {
                                 kind: "InlineFragment",
                                 selections: [
+                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                     {
                                         alias: null,
                                         args: null,
@@ -385,7 +386,6 @@
                                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                             { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                         ],
                                         storageKey: null,
@@ -400,11 +400,11 @@
                 ],
                 type: "UserResults",
                 abstractKey: null,
-                hash: "fd6bd3ce65fc643c13eaf27668e8d085",
+                hash: "622c0ecc3d4028f1ff99c10cd60fcc94",
             };
-            const B = U;
+            const B = I;
             var D = n(673510);
-            const W = K().a23e724a,
+            const W = b().a23e724a,
                 A = [],
                 P = ({ userResults: e }) => {
                     const { featureSwitches: l } = o.useContext(R.rC),
@@ -414,16 +414,16 @@
                         r = t?.result?.legacy,
                         i = r?.idStr || "",
                         s = r?.name || "",
-                        u = r?.profile_image_url_https || "",
+                        u = t?.result?.avatar?.image_url || "",
                         d = r?.screen_name || "";
-                    return i ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: s, screenName: d, userId: i })) : n ? o.createElement(f.Z, { indents: A }, W) : null;
+                    return i ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: s, screenName: d, userId: i })) : n ? o.createElement(F.Z, { indents: A }, W) : null;
                 },
-                z = T.default.create((e) => ({ userCellContainer: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 } })),
+                z = f.default.create((e) => ({ userCellContainer: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 } })),
                 H = ({ removeTweetContent: e, report_entity_results: l }) => {
                     const n = c()(a, l);
                     switch (n.__typename) {
                         case "TweetResults":
-                            return o.createElement(L, { removeTweetContent: e, tweet_results: n });
+                            return o.createElement(Z, { removeTweetContent: e, tweet_results: n });
                         case "UserResults":
                             return o.createElement(P, { userResults: n });
                         default:
@@ -464,4 +464,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.6e4763ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.e64cda1a.js.map

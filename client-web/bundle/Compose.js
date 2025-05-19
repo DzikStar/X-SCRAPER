@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Compose", "shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"],
+    ["bundle.Compose", "shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose"],
     {
         625661: (e, t, i) => {
             i.d(t, { ZP: () => h });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: r, hideBackButton: o, isFullWidth: n, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: b, secondaryBar: m, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: E, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: r, hideBackButton: o, isFullWidth: n, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: b, secondaryBar: m, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: C, withWideContainer: E } = this.props,
                         { isModal: D } = this.context,
                         v = o ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         A = (function (e, t, i) {
                             return e && !(t && i);
-                        })(!!E, D, !!m);
-                    return a.createElement(a.Fragment, null, a.createElement(d.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: l, leftControl: v, middleControl: h, position: u(p, D, r), rightControl: b, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: A, withWideContainer: C }), m || null);
+                        })(!!C, D, !!m);
+                    return a.createElement(a.Fragment, null, a.createElement(d.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: l, leftControl: v, middleControl: h, position: u(p, D, r), rightControl: b, style: S, subtitle: f, title: g, titleDomId: y, titleIconCell: _, titleIconCellSize: w, withBackground: A, withWideContainer: E }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -180,8 +180,8 @@
                 y = i(10656),
                 _ = i(716233),
                 w = i(946208),
-                E = i(540387),
-                C = i(950822),
+                C = i(540387),
+                E = i(950822),
                 D = i(303186),
                 v = i(954300);
             class A extends a.Component {
@@ -195,7 +195,7 @@
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: i, style: r, variants: o, ...n } = this.props,
                         s = (0, D.IM)((0, v.rD)(o), t);
-                    return (0, C.Z)("video", { ...n, children: [s.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
+                    return (0, E.Z)("video", { ...n, children: [s.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: r });
                 }
             }
             A.defaultProps = { dataSaverMode: !1, variants: [] };
@@ -206,12 +206,13 @@
             const Z = (0, R.Z)({
                     loader: () =>
                         Promise.all([
-                            i.e("icons.5"),
-                            i.e("icons.28"),
-                            i.e("icons.17"),
+                            i.e("icons.6"),
+                            i.e("icons.25"),
+                            i.e("icons.22"),
+                            i.e("icons.2"),
                             i.e("modules.common-e907d115"),
                             i.e("modules.common-e019dbda"),
-                            i.e("icons.25"),
+                            i.e("icons.0"),
                             i.e("modules.audio-6107ac1a"),
                             i.e("modules.audio-b953418a"),
                             i.e("modules.audio-7c51e6a7"),
@@ -222,11 +223,8 @@
                             i.e("modules.audio-e019dbda"),
                             i.e("modules.audio-262c94d4"),
                             i.e("modules.audio-c6fe4ea4"),
-                            i.e("icons.4"),
-                            i.e("icons.13"),
-                            i.e("icons.1"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -270,8 +268,8 @@
                     renderPlaceholder: (e, t) => a.createElement(P.Z, { hasError: e, onRetry: t }),
                 }),
                 I = h().gd80afba,
-                L = h().j322caee,
-                k = h().abd845fe,
+                k = h().j322caee,
+                L = h().abd845fe,
                 x = h().df1b0708,
                 M = h().cd959e5c,
                 F = h().e68b09b4,
@@ -322,14 +320,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: l, onEditSensitiveWarning: c, onRemove: u, role: h, style: g, withAltTextLabel: _, withCloseButton: w, withDragAndDropIndicator: E, withEditButton: C, withEditIcon: D, withEditSensitiveWarningButton: v } = this.props,
+                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: l, onEditSensitiveWarning: c, onRemove: u, role: h, style: g, withAltTextLabel: _, withCloseButton: w, withDragAndDropIndicator: C, withEditButton: E, withEditIcon: D, withEditSensitiveWarningButton: v } = this.props,
                         { mediaContainerSizeStyle: A, playGif: T } = this.state,
                         R = i.externalMediaDetails && i.externalMediaDetails.mediaType === f.Re,
                         P = R || (t && i.mediaFile && i.mediaFile.isGif),
                         Z = !!i.mediaFile?.isVideo;
                     return a.createElement(o.ZP, null, ({ windowWidth: t }) => {
                         const i = void 0 !== D ? D : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && a.createElement(n.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? a.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: O.editMedia }, E ? a.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, C && v ? a.createElement(d.ZP, { "aria-label": L, icon: a.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, C ? a.createElement(d.ZP, { "aria-label": I, icon: i ? a.createElement(m.default, null) : void 0, onPress: l, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : k) : null), w ? a.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: a.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return a.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && a.createElement(n.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? a.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: O.editMedia }, C ? a.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? a.createElement(d.ZP, { "aria-label": k, icon: a.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(d.ZP, { "aria-label": I, icon: i ? a.createElement(m.default, null) : void 0, onPress: l, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : L) : null), w ? a.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: a.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -353,7 +351,7 @@
                 _renderVideoPreview(e, t, i, r) {
                     const { mediaItem: o } = this.props,
                         n = o.mediaMetadata?.subtitles;
-                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && r instanceof E.ZP) {
+                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && r instanceof C.ZP) {
                         let n = [];
                         (0, _.TO)(r.fileHandle) && (n = [{ src: t, type: e }]);
                         const s = o.mediaMetadata?.subtitles,
@@ -362,7 +360,7 @@
                     }
                     {
                         const i = (0, _.TO)(r.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(A, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: r instanceof E.ZP ? r.thumbnail : "", style: O.video, variants: i }, n?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
+                        return a.createElement(A, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: r instanceof C.ZP ? r.thumbnail : "", style: O.video, variants: i }, n?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
                     }
                 }
             }
@@ -467,14 +465,14 @@
                 y = i(668214),
                 _ = i(919022);
             const w = (e, t) => t.userIds,
-                E = (e, t) => {
+                C = (e, t) => {
                     const { filterPredicate: i = (e) => !!e, userIds: a } = t;
                     return a.filter((t) => {
                         const a = _.ZP.select(e, t);
                         return !!a && i(a);
                     });
                 },
-                C = (e, t) => {
+                E = (e, t) => {
                     const { userIds: i } = t;
                     return i.reduce((t, i) => {
                         const a = _.ZP.selectFetchStatus(e, i);
@@ -483,8 +481,8 @@
                 },
                 D = (0, y.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, g.Z)(E, (e) => e),
-                        fetchStatus: (0, g.Z)(E, C, w, (e, t, i) => {
+                        availableUserIds: (0, g.Z)(C, (e) => e),
+                        fetchStatus: (0, g.Z)(C, E, w, (e, t, i) => {
                             let a = S.ZP.LOADED;
                             for (let r = 0; r < i.length; r++) {
                                 const o = i[r];
@@ -619,16 +617,16 @@
                 y = i(341276),
                 _ = i(27498),
                 w = i(312771),
-                E = i(71620),
-                C = i(668214),
+                C = i(71620),
+                E = i(668214),
                 D = i(806528),
                 v = i(843138),
                 A = i(390387),
                 B = i(38562),
                 T = i(632960);
-            const R = (0, C.Z)()
+            const R = (0, E.Z)()
                 .propsFromState(() => ({ autotaggedLocation: v.Xm, initialResults: v.jK, initialFetchStatus: v.ke, lastSearchResults: v.uD, lastSearchFetchStatus: v.tn, position: D.Bz, taggedLocation: T._d, userCountry: A.GG }))
-                .propsFromActions(() => ({ createLocalApiErrorHandler: (0, E.zr)("PLACE_PICKER"), loadGeoLocation: D.iG, fetchInitialPlacesIfNeeded: v.BJ, searchPlaces: v.k6, updateLastSelectedPlace: v.T5, updateSettings: B.VP, updateSingleComposer: T.zi }))
+                .propsFromActions(() => ({ createLocalApiErrorHandler: (0, C.zr)("PLACE_PICKER"), loadGeoLocation: D.iG, fetchInitialPlacesIfNeeded: v.BJ, searchPlaces: v.k6, updateLastSelectedPlace: v.T5, updateSettings: B.VP, updateSingleComposer: T.zi }))
                 .withAnalytics({ page: "compose", section: "place_picker" });
             class P {
                 constructor(e, t, i) {
@@ -641,8 +639,8 @@
             }
             const Z = new P(p().b01ed2db, p().i83e29e1, 5280),
                 I = new P(p().d4b7cff7, p().b211849f, 1e3),
-                L = ["lr", "mm", "uk", "us"],
-                k = p().b772cd66,
+                k = ["lr", "mm", "uk", "us"],
+                L = p().b772cd66,
                 x = p().e7c766ee,
                 M = p().ab68727a,
                 F = p().ae4057a2,
@@ -742,7 +740,7 @@
                                         n.ZP,
                                         null,
                                         ((e, t = "us") => {
-                                            if (L.find((e) => e === t.toLowerCase())) return Z.format(e);
+                                            if (k.find((e) => e === t.toLowerCase())) return Z.format(e);
                                             {
                                                 const t = 1.609344 * e;
                                                 return I.format(t);
@@ -766,7 +764,7 @@
                                 i = this._selectResults();
                             return a.createElement(r.Z, null, this._renderPlaces(i), t ? a.createElement(s.Z, { actionText: z({ query: e }), onClick: this._handleSubmit, textColor: "primary" }) : null, this._renderAttributionIfNeeded());
                         }),
-                        (this._renderRightControl = () => a.createElement(r.Z, { style: Q.actionButtonContainer }, a.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), a.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, k))),
+                        (this._renderRightControl = () => a.createElement(r.Z, { style: Q.actionButtonContainer }, a.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), a.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, L))),
                         (this._renderGeoPicker = () => {
                             const { history: e, initialFetchStatus: t, lastSearchFetchStatus: i } = this.props,
                                 { activeResultSet: r } = this.state,
@@ -795,7 +793,7 @@
                 j = R(q);
         },
         122421: (e, t, i) => {
-            i.r(t), i.d(t, { Recipients: () => L, default: () => k });
+            i.r(t), i.d(t, { Recipients: () => k, default: () => L });
             var a = i(202784),
                 r = i(325686),
                 o = i(420412),
@@ -815,8 +813,8 @@
                 y = i(24949),
                 _ = i(47743),
                 w = i(668214),
-                E = i(390387),
-                C = i(632960);
+                C = i(390387),
+                E = i(632960);
             const D = (e, t) => t.location.state,
                 v = (e, t) => {
                     const i = D(0, t);
@@ -827,40 +825,40 @@
                     return (i && i.excludedRecipients) || (0, S.o)();
                 },
                 B = (0, w.Z)()
-                    .propsFromState(() => ({ recipientIds: (0, y.P1)(v, E._h, (e, t) => (e && t ? (0, _.YT)({ inReplyToStatus: e, viewerUserId: t, excludeReplyUser: !0 }).map((e) => e.id_str) : (0, S.o)())), initialExcludedRecipients: A, inReplyToStatus: v }))
-                    .propsFromActions(() => ({ updateExcludedRecipientsV2: C.OO })),
+                    .propsFromState(() => ({ recipientIds: (0, y.P1)(v, C._h, (e, t) => (e && t ? (0, _.YT)({ inReplyToStatus: e, viewerUserId: t, excludeReplyUser: !0 }).map((e) => e.id_str) : (0, S.o)())), initialExcludedRecipients: A, inReplyToStatus: v }))
+                    .propsFromActions(() => ({ updateExcludedRecipientsV2: E.OO })),
                 T = u().c55eed72,
                 R = u().b772cd66,
                 P = u().caca3102,
                 Z = u().c6a6dc2f,
                 I = { page: "compose", section: "recipients" },
-                L = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: i, recipientIds: c, updateExcludedRecipientsV2: u }) => {
+                k = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: i, recipientIds: c, updateExcludedRecipientsV2: u }) => {
                     const [y, _] = a.useState(i);
                     if (!t) return a.createElement(g.Z, { to: "/compose/post" });
                     const { user: w } = t.retweeted_status || t,
-                        E = (e) => {
+                        C = (e) => {
                             _(e ? (0, S.o)() : c);
                         },
-                        C = (e) => () => {
+                        E = (e) => () => {
                             const t = -1 !== y.indexOf(e);
                             _(t ? y.filter((t) => t !== e) : (0, h.Z)([...y, e]));
                         },
                         D = () => {
                             u(y), e.goBack();
                         },
-                        v = () => (c.length > 1 ? a.createElement(s.Z, { checked: 0 === y.length, onChange: E }) : null),
+                        v = () => (c.length > 1 ? a.createElement(s.Z, { checked: 0 === y.length, onChange: C }) : null),
                         A = ({ isBlocking: e, screenName: t }) => (e ? a.createElement(d.ZP, { color: "magenta500", size: "subtext2" }, Z({ screenName: t })) : null),
                         B = (e) => {
                             if (!t) return null;
                             const { user: i } = t.retweeted_status || t,
                                 r = -1 !== y.indexOf(e),
                                 o = e === i.id_str,
-                                n = a.createElement(s.Z, { checked: !r, disabled: o, onChange: C(e) });
-                            return a.createElement(b.ZP, { bottomControl: A, cellClickable: !o, decoration: n, isFakeButtonRoleWithListItem: !o, key: e, onClick: C(e), promotedItemType: "users", userId: e, withLink: !1 });
+                                n = a.createElement(s.Z, { checked: !r, disabled: o, onChange: E(e) });
+                            return a.createElement(b.ZP, { bottomControl: A, cellClickable: !o, decoration: n, isFakeButtonRoleWithListItem: !o, key: e, onClick: E(e), promotedItemType: "users", userId: e, withLink: !1 });
                         };
                     return a.createElement(f.nO, { namespace: I }, a.createElement(p.Z, { backLocation: "/compose/post", history: e, onBackClick: D, rightControl: a.createElement(l.ZP, { onPress: D, size: "xSmall", type: "brandFilled" }, R), title: T }, B(w.id_str), c.length ? a.createElement(r.Z, null, a.createElement(o.Z, null), a.createElement(n.Z, { rightControl: v(), text: P }), a.createElement(m.Z, { renderUserCell: B, userIds: c })) : null));
                 },
-                k = B(L);
+                L = B(k);
         },
         379069: (e, t, i) => {
             i.r(t), i.d(t, { Compose: () => Ne, default: () => Ge });
@@ -906,8 +904,8 @@
                     return a.createElement(s.Z, { style: w.root }, a.createElement(g.ZP, { "aria-label": h && `${h}`, color: "gray900", testID: "displayedCountdown", weight: "medium" }, d.formatted, c && a.createElement(s.Z, { "aria-label": c, "aria-live": "polite" })));
                 },
                 w = p.default.create((e) => ({ root: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space2, paddingBottom: e.spaces.space4, paddingEnd: 6, paddingStart: 6, paddingTop: e.spaces.space4 } }));
-            var E = i(980407),
-                C = i(231214),
+            var C = i(980407),
+                E = i(231214),
                 D = i(472826),
                 v = i(632552),
                 A = i(10656),
@@ -917,8 +915,8 @@
                 P = i(704279),
                 Z = i(346789),
                 I = i(24949),
-                L = i(370751),
-                k = i(71620),
+                k = i(370751),
+                L = i(71620),
                 x = i(646522),
                 M = i(668214),
                 F = i(492057),
@@ -1006,7 +1004,7 @@
                         broadcastCommunityTweet: K,
                         composerData: (0, I.P1)(j, oe, se, N.gz, ae, (e, t, i, a, r) =>
                             e.map((e, o) => {
-                                const n = (0, L.Z)(e.mediaIds || []),
+                                const n = (0, k.Z)(e.mediaIds || []),
                                     s = a.filter((e) => n.has(e.id));
                                 return { ...de(e), media: s, quotedStatus: 0 === o ? i : void 0, text: 0 === o && t && !r ? t : e.text };
                             }),
@@ -1031,9 +1029,9 @@
                         shouldShowCommunityAudienceEducation: _e,
                         title: he,
                     }))
-                    .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, k.zr)(U.CA), createScheduledTweetApiErrorHandler: (0, k.zr)(H.Hf), fetchScheduledTweets: H.FP, fetchDraftTweets: U.Le, addCommunityAudienceEducationFlag: () => (0, V.pj)(V.xH), updateAudienceControlsValue: z.sU, setActiveParentKey: z.jr }));
-            var Ee = i(837880);
-            const Ce = m().e6042757,
+                    .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, L.zr)(U.CA), createScheduledTweetApiErrorHandler: (0, L.zr)(H.Hf), fetchScheduledTweets: H.FP, fetchDraftTweets: U.Le, addCommunityAudienceEducationFlag: () => (0, V.pj)(V.xH), updateAudienceControlsValue: z.sU, setActiveParentKey: z.jr }));
+            var Ce = i(837880);
+            const Ee = m().e6042757,
                 De = m().a4e39717,
                 ve = 3e5,
                 Ae = { "05:00": !0, "01:00": !0 };
@@ -1041,14 +1039,14 @@
                 return Ae[e] && De({ minutes: t });
             }
             function Te({ minutes: e, seconds: t }) {
-                return Ce({ minutes: e, seconds: t });
+                return Ee({ minutes: e, seconds: t });
             }
             const Re = "tweetButton",
                 Pe = m().a609edbe,
                 Ze = m().d4ebc798,
                 Ie = m().j24c37b2,
-                Le = m().dc295bb0,
-                ke = m().e536de22,
+                ke = m().dc295bb0,
+                Le = m().e536de22,
                 xe = m().cb817dae,
                 Me = "compose",
                 Fe = { page: Me },
@@ -1139,7 +1137,7 @@
                         (this._handleEditCountdownTimeout(b),
                         (this._cancelEditTimeout = (function (e, t) {
                             const i = e - Date.now() - ve,
-                                a = (0, Ee.Z)(i, 0, 2147483647),
+                                a = (0, Ce.Z)(i, 0, 2147483647),
                                 r = setTimeout(t, a, e);
                             return () => clearTimeout(r);
                         })(b, this._handleEditCountdownTimeout)));
@@ -1158,7 +1156,7 @@
                         a.createElement(c.ZP, null, ({ containerWidth: n }) => {
                             const c = A.Z.shouldRenderAsModal(n),
                                 m = (p && c) || this.showCommunityNonMemberPrompt;
-                            return a.createElement(a.Fragment, null, this.showCommunityNonMemberPrompt ? a.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: Le, onAction: this._handleCloseModal, subtext: ke }) : null, p && a.createElement(C.Z, { history: r, location: s }), m ? null : a.createElement(E.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: o ? xe : h }, a.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: i, containerWidth: n, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
+                            return a.createElement(a.Fragment, null, this.showCommunityNonMemberPrompt ? a.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: ke, onAction: this._handleCloseModal, subtext: Le }) : null, p && a.createElement(E.Z, { history: r, location: s }), m ? null : a.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: o ? xe : h }, a.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: i, containerWidth: n, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
                         }),
                     );
                 }
@@ -1304,4 +1302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.3986a83a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.d8dcd35a.js.map

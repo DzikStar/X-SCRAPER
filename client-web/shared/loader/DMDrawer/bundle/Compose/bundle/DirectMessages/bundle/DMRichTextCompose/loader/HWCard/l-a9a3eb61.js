@@ -22,8 +22,8 @@
                 D = a(366635);
             const E = Object.freeze({ FILL: "Fill", FIXED: "Fixed" }),
                 v = "developerBuiltCard",
-                y = "developerBuiltCardImage",
-                b = "developerBuiltCardImageContainer",
+                b = "developerBuiltCardImage",
+                y = "developerBuiltCardImageContainer",
                 S = "developerBuiltCardContainer",
                 f = "developerBuiltCardLabelIcon",
                 I = (e) => {
@@ -157,7 +157,7 @@
                         }
                         case "DeveloperBuiltCardImageComponent": {
                             const r = e.image_fill_type === E.FIXED;
-                            return i.createElement(p.Z, { key: t, style: [j.imageContainer, r ? { width: e.size.width } : j.imageFill, { borderRadius: u.default.theme.borderRadii[K(e.corner_radius)] }], testID: b }, i.createElement(_.Z, { componentType: "dev_built_card", destinationData: e.component_action?.url ? { type: n._g.BROWSER, data: { url_data: { url: e.component_action?.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } } : void 0, ignoreDataSaver: r, locationKey: a && r ? `${a}-fixed${e.size.width}x${e.size.height}` : a, mediaEntity: { altText: e.alt_text, media_url_https: e.url, type: "photo", original_info: { width: 1e3, height: 1e3 } }, ratio: e.size.width / e.size.height, testID: y }));
+                            return i.createElement(p.Z, { key: t, style: [j.imageContainer, r ? { width: e.size.width } : j.imageFill, { borderRadius: u.default.theme.borderRadii[K(e.corner_radius)] }], testID: y }, i.createElement(_.Z, { componentType: "dev_built_card", destinationData: e.component_action?.url ? { type: n._g.BROWSER, data: { url_data: { url: e.component_action?.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } } : void 0, ignoreDataSaver: r, locationKey: a && r ? `${a}-fixed${e.size.width}x${e.size.height}` : a, mediaEntity: { altText: e.alt_text, media_url_https: e.url, type: "photo", original_info: { width: 1e3, height: 1e3 } }, ratio: e.size.width / e.size.height, testID: b }));
                         }
                         case "DeveloperBuiltCardButtonComponent":
                             return i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.BROWSER, data: { url_data: { url: e.button_action.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } }, key: t }, ({ link: t, onClick: a }) => i.createElement(m.ZP, { link: t, onPress: a, size: "small", type: "primaryFilled" }, e.text));
@@ -167,7 +167,7 @@
                             return i.createElement(C.Z, { key: t, spacing: "space8" });
                         case "DeveloperBuiltCardUserComponent": {
                             const a = e.user_component_results.result;
-                            return "User" === a?.__typename ? i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.PROFILE, data: { user_id: a.id, scribe: s.bQ.PROFILE_CLICK, promoted_log: s.YE.SCREEN_NAME_CLICK } }, key: t }, ({ onClick: e }) => i.createElement(D.Z, { isProtected: a.privacy?.protected, isVerified: a.verification?.verified, name: a.legacy?.name, onAvatarClick: e, onLinkClick: e, onScreenNameClick: e, profileImageUrl: a.legacy?.profile_image_url_https, screenName: a.legacy?.screen_name, withHoverCard: !0, withLink: !0 })) : null;
+                            return "User" === a?.__typename ? i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.PROFILE, data: { user_id: a.id, scribe: s.bQ.PROFILE_CLICK, promoted_log: s.YE.SCREEN_NAME_CLICK } }, key: t }, ({ onClick: e }) => i.createElement(D.Z, { isProtected: a.privacy?.protected, isVerified: a.verification?.verified, name: a.legacy?.name, onAvatarClick: e, onLinkClick: e, onScreenNameClick: e, profileImageUrl: a.avatar?.image_url, screenName: a.legacy?.screen_name, withHoverCard: !0, withLink: !0 })) : null;
                         }
                         default:
                             return null;
@@ -255,7 +255,7 @@
                 }
                 render() {
                     const { card: e, cardState: t, carouselIndex: a, promotedLogData: o } = this.state,
-                        { cardContext: n, dmSentOrReceived: d, id: s, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, onCardLinkClick: p, onEventReminderClick: h, onPollVote: m, onScribeEvent: _, promotedContent: C, requestCardUpdate: g, testIDs: D, transformUrl: E, withBorder: v, withBorderShadow: y, withDetail: b, withRoundBorder: S, withSquareBottomBorderRadius: f } = this.props,
+                        { cardContext: n, dmSentOrReceived: d, id: s, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, onCardLinkClick: p, onEventReminderClick: h, onPollVote: m, onScribeEvent: _, promotedContent: C, requestCardUpdate: g, testIDs: D, transformUrl: E, withBorder: v, withBorderShadow: b, withDetail: y, withRoundBorder: S, withSquareBottomBorderRadius: f } = this.props,
                         { collectionAdsEnabled: I, continueInGrokEnabled: R, explorerAdsEnabled: w, grokShareEnabled: B, openGrok: L } = this.context;
                     if (!e) return null;
                     if ((0, ie.h$)(e.card_name)) {
@@ -298,7 +298,7 @@
                         n.grokShareAttachment && (e.data.conversation_preview = n.grokShareAttachment), (_e = i.createElement(te.Z, { continueInGrokEnabled: R?.(), conversation: e.data.conversation_preview, destination: e.data.destination, grokUser: e.data.grok_user, mediaVisibilityResults: n.mediaVisibilityResults, metadata: e.data.metadata, openGrok: L, profileUser: e.data.profile_user }));
                     } else if (F) _e = i.createElement(J, (0, r.Z)({}, H, { developerBuiltCard: F, withSquareBottomBorderRadius: f }));
                     else if (re) A && (_e = i.createElement(le.Z, (0, r.Z)({}, H, { button: W && W.length > 0 ? W[0] : void 0, detailsWithMiddotGroup: A, media: Z || void 0 })));
-                    else if (he) me && Z && (_e = i.createElement(se.Z, (0, r.Z)({}, H, { details: me, dmSentOrReceived: d, isTopicCard: !!U, media: Z, reverse: x.reverse, withBorderShadow: y, withSquareBottomBorderRadius: f })));
+                    else if (he) me && Z && (_e = i.createElement(se.Z, (0, r.Z)({}, H, { details: me, dmSentOrReceived: d, isTopicCard: !!U, media: Z, reverse: x.reverse, withBorderShadow: b, withSquareBottomBorderRadius: f })));
                     else if (e.ucLayout) {
                         const a = e.ucLayout.type;
                         if ("swipeable" === a) _e = i.createElement(ce.Z, (0, r.Z)({}, H, { card: e, chromeless: x.chromeless, layoutData: e.ucLayout.data, renderVideoPlayer: this.props.renderVideoPlayer, shouldRenderVideo: "static" !== t, withActionsDisabled: n.withActionsDisabled }));
@@ -309,7 +309,7 @@
                             if (!w?.()) return null;
                             _e = i.createElement(pe.ZP, null);
                         }
-                    } else _e = i.createElement(de.ZP, (0, r.Z)({}, H, { attribution: P || void 0, backgroundColor: G || void 0, buttonLayout: Q, buttons: W || void 0, chromeless: x.chromeless, communityDetails: O || void 0, details: k, detailsWithMiddotGroup: A, dmSentOrReceived: d, followButtonData: q || void 0, initialCarouselIndex: a, isAuthor: X, jobDetails: M || void 0, listDetails: T || void 0, media: Z, poll: N || void 0, promotedContent: C, renderVideoPlayer: this.props.renderVideoPlayer, socialContextData: z || void 0, swipeableMedia: K, withActionsDisabled: n.withActionsDisabled, withBorder: v, withBorderShadow: y, withDetail: b, withRoundBorder: S, withSquareBottomBorderRadius: f }));
+                    } else _e = i.createElement(de.ZP, (0, r.Z)({}, H, { attribution: P || void 0, backgroundColor: G || void 0, buttonLayout: Q, buttons: W || void 0, chromeless: x.chromeless, communityDetails: O || void 0, details: k, detailsWithMiddotGroup: A, dmSentOrReceived: d, followButtonData: q || void 0, initialCarouselIndex: a, isAuthor: X, jobDetails: M || void 0, listDetails: T || void 0, media: Z, poll: N || void 0, promotedContent: C, renderVideoPlayer: this.props.renderVideoPlayer, socialContextData: z || void 0, swipeableMedia: K, withActionsDisabled: n.withActionsDisabled, withBorder: v, withBorderShadow: b, withDetail: y, withRoundBorder: S, withSquareBottomBorderRadius: f }));
                     return i.createElement(oe.Z.Provider, { value: { card: e, cardContext: n, carouselIndex: a, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, media: Z, promotedContent: C, onEventReminderClick: h, onCardLinkClick: p, onPollVote: m, onPromotedLogEvent: this._onPromotedLogEvent, onScribeEvent: _, scribeCardAction: this._scribeCardAction, shouldAutoAdvance: j, slideDetails: this._slideDetails, transformUrl: E, promotedLogData: o, updateCardState: this._updateCardState, updatePromotedLogState: this._updatePromotedLogState, updateCarouselEventDetailsState: this._updateCarouselEventDetailsState } }, this._renderPreconnectTags(), Y ? i.createElement(ne.ZP, { fetchIntervalConfig: Y, requestCardUpdate: this._requestCardUpdate }) : null, _e);
                 }
                 _getCurrentLayout() {
@@ -438,4 +438,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.e8104d4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.e183d5ba.js.map
