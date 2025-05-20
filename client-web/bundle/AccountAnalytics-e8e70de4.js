@@ -182,15 +182,15 @@
         948138: (e, a, l) => {
             l.d(a, { j: () => W });
             var s = l(552322),
-                t = l(702024),
-                i = l(436059),
-                r = l(941204),
-                n = l(130844),
-                d = l(86781),
-                c = l(889198),
-                o = l(2804),
-                u = l(351076),
-                m = l(630804),
+                t = l(193686),
+                i = l(993165),
+                r = l(332161),
+                n = l(322506),
+                d = l(437712),
+                c = l(458872),
+                o = l(981626),
+                u = l(667542),
+                m = l(668631),
                 x = l(739219),
                 h = l(202784),
                 g = l(430962),
@@ -227,7 +227,7 @@
                     );
                 return (0, s.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 border border-gray-200", children: [(0, s.jsx)("h2", { className: "font-medium text-gray-900 mb-4 md:text-headline2 md:font-bold", children: e.deviceTitle || "Devices" }), (0, s.jsx)(w.Z, { data: t })] });
             }
-            var T = l(407250);
+            var T = l(917317);
             function _({ title: e, total: a, live: l, replay: t }) {
                 return (0, s.jsxs)("div", { className: "flex items-center", children: [(0, s.jsx)("div", { className: "w-1/3", children: (0, s.jsx)("span", { className: "text-gray-700", children: e }) }), (0, s.jsxs)("div", { className: "flex flex-1", children: [(0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-thin", children: (0, p.dw)(l) }) }), (0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-thin", children: (0, p.dw)(t) }) }), (0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-bold", children: (0, p.dw)(a) }) })] })] });
             }
@@ -237,7 +237,7 @@
                 return (0, s.jsxs)(T.Zb, { className: "w-full bg-card text-card-foreground border border-border shadow-md h-full", children: [(0, s.jsx)(T.Ol, { className: "pb-2", children: (0, s.jsx)(T.ll, { className: "font-medium", children: e.broadcastMetricsTitle }) }), (0, s.jsxs)(T.aY, { className: "space-y-6 pt-2", children: [(0, s.jsxs)("div", { className: "flex", children: [(0, s.jsx)("div", { className: "w-1/3" }), (0, s.jsxs)("div", { className: "flex flex-1", children: [(0, s.jsx)("div", { className: "flex-1 text-center text-gray-700", children: e.liveColumnHeader }), (0, s.jsx)("div", { className: "flex-1 text-center text-gray-700", children: e.replayColumnHeader }), (0, s.jsx)("div", { className: "flex-1 text-center text-gray-700", children: e.totalColumnHeader })] })] }), (0, s.jsx)(_, { title: e.VideoViewLabel, total: a.views.total, live: a.views.live, replay: a.views.replay }), (0, s.jsx)("div", { className: "h-px bg-gray-200" }), (0, s.jsx)(_, { title: e.uniqueViewersLabel, total: a.uniqueViewers.total, live: a.uniqueViewers.live, replay: a.uniqueViewers.replay }), (0, s.jsx)("div", { className: "h-px bg-gray-200" }), (0, s.jsx)(_, { title: e.minutesWatched, total: a.minutesWatched.total, live: a.minutesWatched.live, replay: a.minutesWatched.replay })] })] });
             }
             var L = l(643715),
-                K = l(829233);
+                K = l(1468);
             const { Area: S, CartesianGrid: D, XAxis: C, YAxis: M, AreaChart: V } = L;
             function I() {
                 const { liveViewers: e, formattedBroadcast: a } = (0, b.DM)(),
@@ -300,7 +300,7 @@
                     r = (0, h.useMemo)(() => ((0, x.w)(l.to, l.from) + 1 >= 14 ? "daily" : "hourly"), [l]);
                 return 0 === Object.keys(a).length ? (0, s.jsx)("div", { className: "relative p-4 bg-gray-0 border border-gray-200 rounded-xl", children: (0, s.jsx)("div", { className: "text-center py-8", children: e.noDataAvailable }) }) : (0, s.jsx)("div", { className: "relative", children: (0, s.jsx)(O.E, { metrics: t, currentTotals: i, timeSeriesData: a, ChartComponent: B.q, hoursLabel: e.hours || "hours", granularity: r }) });
             }
-            var R = l(164695);
+            var R = l(34681);
             function W({ broadcastId: e, isMockData: a = !1, liveOverviewUrl: l = "/analytics/live", referrerUrl: i }) {
                 const [r, n] = (0, h.useState)(() => (0, v.X)(2));
                 return (0, s.jsx)(b.h9, { broadcastId: e, timeRange: r, isMockData: a, children: (0, s.jsx)(h.Suspense, { fallback: (0, s.jsx)(t.P, { size: "large" }), children: (0, s.jsx)(q, { timeRange: r, setTimeRange: n, liveOverviewUrl: l, referrerUrl: i }) }) });
@@ -388,4 +388,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e8e70de4.22344dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e8e70de4.8f56441a.js.map

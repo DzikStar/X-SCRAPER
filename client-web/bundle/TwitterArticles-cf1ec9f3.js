@@ -383,15 +383,11 @@
                 v = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.10"),
-                            r.e("icons.21"),
-                            r.e("icons.16"),
-                            r.e("icons.1"),
-                            r.e("icons.19"),
+                            r.e("icons.5"),
+                            r.e("icons.12"),
+                            r.e("icons.20"),
                             r.e("icons.0"),
-                            r.e("icons.23"),
-                            r.e("icons.8"),
-                            r.e("icons.2"),
+                            r.e("icons.21"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -437,15 +433,11 @@
                 Z = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.10"),
-                            r.e("icons.21"),
-                            r.e("icons.16"),
-                            r.e("icons.1"),
-                            r.e("icons.19"),
+                            r.e("icons.5"),
+                            r.e("icons.12"),
+                            r.e("icons.20"),
                             r.e("icons.0"),
-                            r.e("icons.23"),
-                            r.e("icons.8"),
-                            r.e("icons.2"),
+                            r.e("icons.21"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -833,4 +825,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.333ad25a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.d58bf0aa.js.map

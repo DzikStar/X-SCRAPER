@@ -29,14 +29,14 @@
             var s = n(552322),
                 i = n(159603),
                 a = n(455091),
-                o = n(941204),
-                r = n(702024),
+                o = n(332161),
+                r = n(193686),
                 l = n(202784),
-                c = n(436059),
-                d = n(720640),
-                m = n(952333),
-                x = n(29632),
-                u = n(990714),
+                c = n(993165),
+                d = n(436995),
+                m = n(887491),
+                x = n(25457),
+                u = n(14313),
                 h = n(533476),
                 p = n(658358),
                 v = n(950849),
@@ -73,7 +73,7 @@
                 }
                 return (0, s.jsxs)("div", { className: "flex flex-col max-w-[300px] gap-2 relative", children: [n, e.showRemoveButton && (0, s.jsx)("div", { className: "absolute top-2 right-2 flex items-center", children: (0, s.jsx)(c.z, { variant: "primaryFilled", size: "xSmall", icon: (0, s.jsx)(m.Z, {}), onClick: t }) })] });
             }
-            var E = n(82458);
+            var E = n(962639);
             const I = i.com.x.dms.composer.composer.RightButtonState,
                 S = i.com.x.dms.composer.composer.ChatComposerEvent;
             function A({ component: e }) {
@@ -184,14 +184,14 @@
                     }),
                 });
             }
-            var R = n(762670),
-                M = n(490003),
-                z = n(501827),
-                P = n(521634),
-                T = n(861514),
-                B = n(863380),
-                G = n(964655),
-                D = n(898100),
+            var R = n(607334),
+                M = n(129558),
+                z = n(666200),
+                P = n(52053),
+                T = n(89195),
+                B = n(959992),
+                G = n(589259),
+                D = n(351417),
                 L = n(611463),
                 Z = n(379342),
                 O = n(846742),
@@ -202,11 +202,11 @@
                     return (0, s.jsx)("div", { className: "flex flex-row gap-2", children: (0, s.jsx)(c.z, { variant: "primaryFilled", onClick: () => e(i.com.x.dms.ParticipantMenuItem.AcceptMembership, t), children: n("Add to group") }) });
                 },
                 $ = ({ handleParticipantMenuButtonClicked: e, participants: t }) => (0, s.jsx)(s.Fragment, { children: t.map((t) => (0, s.jsxs)("div", { className: "flex flex-row w-full gap-2 py-2 items-center", children: [(0, s.jsx)(U.s, { url: t.user?.profileImageUrl, size: "large" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(G.R, { name: t.user?.displayName || "", screenName: t.user?.screenName, badges: (0, F.r)(t.user), isStacked: !0 }) }), (0, s.jsx)(V, { participant: t, handleParticipantMenuButtonClicked: e })] }, t.userId.userIdString)) });
-            var J = n(776604),
-                _ = n(291680),
-                q = n(866426),
-                X = n(327176),
-                W = n(848553);
+            var J = n(527735),
+                _ = n(429804),
+                q = n(951671),
+                X = n(384226),
+                W = n(421018);
             const K = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, menuItems: n, participant: a }) => {
                     if (!n || 0 === n.length) return null;
                     const o = n
@@ -237,8 +237,8 @@
                         }),
                     });
             var Y = n(32161),
-                H = n(250362),
-                ee = n(796309);
+                H = n(145731),
+                ee = n(31674);
             function te({ icon: e, destructive: t, onClick: n, title: i, value: a, showChevron: r = !1 }) {
                 return (0, s.jsx)("div", { className: "rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between px-4 py-3", children: [(0, s.jsxs)("div", { className: `py-px flex items-center gap-3 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(o.x, { size: "body", weight: "normal", color: t ? "red500" : "text", children: i })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3", children: [a && (0, s.jsx)(o.x, { size: "body", color: "text", weight: "normal", children: a }), r && (0, s.jsx)(P.Z, { className: "text-gray-700" })] })] }) });
             }
@@ -550,8 +550,8 @@
                         );
                     return t.participants ? (0, s.jsx)("div", { className: "w-full px-8 py-4 overflow-y-auto", children: (0, s.jsx)(ne, { children: (0, s.jsx)(Q, { participants: t.participants.asJsReadonlyArrayView(), menuItemsMap: t.menuItems.asJsReadonlyMapView(), handleParticipantClicked: n, handleParticipantMenuButtonClicked: i }) }) }) : null;
                 };
-            var pe = n(856402),
-                ve = n(227887),
+            var pe = n(22199),
+                ve = n(699416),
                 fe = n(167285);
             const ge = i.com.x.dms.vanishingmode,
                 je = ({ id: e }) => {
@@ -626,8 +626,8 @@
                 Ee = n(853582),
                 Ie = n(55880),
                 Se = n(748055),
-                Ae = n(889198),
-                Re = n(469745);
+                Ae = n(458872),
+                Re = n(305399);
             const Me = i.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
                 ze = i.com.x.dms.model.DmTitleState,
                 Pe = ({ component: e }) => {
@@ -657,9 +657,9 @@
                 },
                 Te = ({ toolbarState: e }) => ((e instanceof ze.Group || e instanceof ze.OneToOne) && e.ttl ? (0, s.jsx)(Be, { ttl: e.ttl }) : e instanceof ze.Group ? (0, s.jsxs)(o.x, { size: "subtext2", color: "gray700", children: [e.numParticipants, " people"] }) : null),
                 Be = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(pe.Z, { className: "text-gray-700" }), (0, s.jsx)(o.x, { size: "subtext2", color: "gray700", children: (0, oe.L)(e.inWholeMilliseconds) })] });
-            var Ge = n(125718),
+            var Ge = n(788452),
                 De = n(256958),
-                Le = n(849335);
+                Le = n(261012);
             const Ze = i.com.x.dms.groupinvite,
                 Oe = ({ id: e }) => {
                     const { t } = (0, a.$G)(),
@@ -793,16 +793,16 @@
             n.d(t, { p: () => C });
             var s = n(552322),
                 i = n(159603),
-                a = n(921879),
+                a = n(983706),
                 o = n(202784),
                 r = n(110241),
-                l = n(964655),
-                c = n(941204),
-                d = n(175135),
-                m = n(521634),
-                x = n(820062),
-                u = n(266917),
-                h = n(680815),
+                l = n(589259),
+                c = n(332161),
+                d = n(14269),
+                m = n(52053),
+                x = n(830806),
+                u = n(242782),
+                h = n(169355),
                 p = n(32161),
                 v = n(537335),
                 f = n(336984);
@@ -902,9 +902,9 @@
         897995: (e, t, n) => {
             n.d(t, { Y: () => l });
             var s = n(552322),
-                i = n(436059),
-                a = n(941204),
-                o = n(952333),
+                i = n(993165),
+                a = n(332161),
+                o = n(887491),
                 r = n(159603);
             const l = ({ component: e, dialogParams: t }) =>
                 (0, s.jsxs)("div", {
@@ -933,4 +933,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.0f3a0b7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.203b29fa.js.map

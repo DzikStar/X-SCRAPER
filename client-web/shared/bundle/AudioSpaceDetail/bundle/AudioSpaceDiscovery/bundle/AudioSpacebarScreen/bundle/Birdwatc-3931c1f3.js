@@ -30,7 +30,7 @@
                     fuchsia: { "": "rgba(232, 121, 249, var(--jbgo))", 50: "rgba(253, 244, 255, var(--jbgo))", 100: "rgba(250, 232, 255, var(--jbgo))", 200: "rgba(245, 208, 254, var(--jbgo))", 300: "rgba(240, 171, 252, var(--jbgo))", 400: "rgba(232, 121, 249, var(--jbgo))", 500: "rgba(217, 70, 239, var(--jbgo))", 600: "rgba(192, 38, 211, var(--jbgo))", 700: "rgba(162, 28, 175, var(--jbgo))", 800: "rgba(134, 25, 143, var(--jbgo))", 900: "rgba(112, 26, 117, var(--jbgo))", 950: "rgba(74, 4, 78, var(--jbgo))" },
                     pink: { "": "pink", 50: "rgba(253, 242, 248, var(--jbgo))", 100: "rgba(252, 231, 243, var(--jbgo))", 200: "rgba(251, 207, 232, var(--jbgo))", 300: "rgba(249, 168, 212, var(--jbgo))", 400: "rgba(244, 114, 182, var(--jbgo))", 500: "rgba(236, 72, 153, var(--jbgo))", 600: "rgba(219, 39, 119, var(--jbgo))", 700: "rgba(190, 24, 93, var(--jbgo))", 800: "rgba(157, 23, 77, var(--jbgo))", 900: "rgba(131, 24, 67, var(--jbgo))", 950: "rgba(80, 7, 36, var(--jbgo))" },
                     rose: { "": "rgba(159, 18, 57, var(--jbgo))", 50: "rgba(255, 241, 242, var(--jbgo))", 100: "rgba(255, 228, 230, var(--jbgo))", 200: "rgba(254, 205, 211, var(--jbgo))", 300: "rgba(253, 164, 175, var(--jbgo))", 400: "rgba(251, 113, 133, var(--jbgo))", 500: "rgba(244, 63, 94, var(--jbgo))", 600: "rgba(225, 29, 72, var(--jbgo))", 700: "rgba(190, 18, 60, var(--jbgo))", 800: "rgba(159, 18, 57, var(--jbgo))", 900: "rgba(136, 19, 55, var(--jbgo))", 950: "rgba(76, 5, 25, var(--jbgo))" },
-                    "x-bg-dim": { "": "black" },
+                    "x-bg-dim": { "": "rgba(21, 32, 43, var(--jbgo))" },
                     "x-bg-dark": { "": "rgba(0, 0, 0, var(--jbgo))" },
                     "x-bg-light": { "": "rgba(255, 255, 255, var(--jbgo))" },
                 },
@@ -245,7 +245,7 @@
                     Object.entries(r)
                         .map(([r, a]) => `${r}:${a}`)
                         .join(";"),
-                c = ([r, a]) => {
+                d = ([r, a]) => {
                     const e = {};
                     if ((g.get(a)?.(e), r in b)) return `[data-theme="${b[r]}"] .j${a.toString(36)}${r}{${l(e)}}`;
                     if (r in n) return `.j${a.toString(36)}${r}:${n[r]}{${l(e)}}`;
@@ -255,25 +255,25 @@
                     }
                     return r in s ? `${s[r]} {.j${a.toString(36)}${r}{${l(e)}}}` : `.j${a.toString(36)}${r}{${l(e)}}`;
                 },
-                d = new Set(),
+                c = new Set(),
                 v = new Set();
             function j(r, a) {
                 const e = a.map((a) => `${r}:${a}`);
                 let o = !1;
-                for (const r of e) v.has(r) || (d.add(r), (o = !0));
+                for (const r of e) v.has(r) || (c.add(r), (o = !0));
                 o &&
                     queueMicrotask(() => {
-                        if (!d.size) return;
+                        if (!c.size) return;
                         const r = document.createElement("style");
-                        (r.innerText = [...d]
+                        (r.innerText = [...c]
                             .map((r) => {
                                 const [a, e] = r.split(":");
-                                return a && e ? c([Number.parseInt(a), Number.parseInt(e)]) : "";
+                                return a && e ? d([Number.parseInt(a), Number.parseInt(e)]) : "";
                             })
                             .join("")),
                             document.head.appendChild(r),
-                            d.forEach((r) => v.add(r)),
-                            d.clear();
+                            c.forEach((r) => v.add(r)),
+                            c.clear();
                     });
             }
             new Set(), new Set();
@@ -288,8 +288,8 @@
                 i = e(897531),
                 s = e(746066),
                 l = e(173590),
-                c = e(261925),
-                d = e(22588),
+                d = e(261925),
+                c = e(22588),
                 v = e(166490),
                 j = e(161276),
                 m = e(399762),
@@ -349,8 +349,8 @@
                     "Form.GroupCounter": rr,
                     "Form.Reset": ar,
                     "Form.Result": er,
-                    "Form.Selection": c.Z,
-                    "Form.Submit": d.Z,
+                    "Form.Selection": d.Z,
+                    "Form.Submit": c.Z,
                     GlassMorphicView: rr,
                     Grid: _.Z,
                     "Grid.Cell": w.Z,
@@ -439,22 +439,22 @@
                 b = (r, a) => ({ action: r, ...a });
         },
         424012: (r, a, e) => {
-            var o, t, g, b, n, i, s, l, c, d;
+            var o, t, g, b, n, i, s, l, d, c;
             function v(r) {
-                const [a, e, g, c, d, v, j, m, u, p, f, h, _, w, x, $, k] = r,
+                const [a, e, g, d, c, v, j, m, u, p, f, h, _, w, x, $, k] = r,
                     y = g,
                     Z = u,
-                    S = a({ type: j, props: c(j, y), children: d(y), id: v(Z), extend: v(y) }),
+                    S = a({ type: j, props: d(j, y), children: c(y), id: v(Z), extend: v(y) }),
                     I = w({ [n.atom]: h(n.atom, a({ id: Z })), [n.atom_with_root]: h(n.atom_with_root, a({ id: Z, root: y })), [n.bag_key]: h(n.bag_key, a({ id: Z, key: j, root: y })), [n.str_key]: h(n.str_key, a({ id: Z, key: _, root: y })), [n.url_param]: h(n.url_param, a({ id: Z, key: _, root: y })) }),
                     C = a({ ref: I, prop_ref: y, is_default: f }),
                     F = w({ [b.null]: h(b.null, I), [b.set]: h(b.set, x(I, y)), [b.inc]: h(b.inc, x(I, j)), [b.str_append]: h(b.str_append, x(I, _)), [b.list_insert]: h(b.list_insert, $(I, y, v(j))), [b.list_remove]: h(b.list_remove, x(I, y)), [b.toggle]: h(b.toggle, x(I, v(x(y, y)))), [b.merge_bag]: h(b.merge_bag, x(I, y)), [b.merge_str_dict]: h(b.merge_str_dict, x(I, y)) }),
                     T = w({ [i.page]: h(i.page, a({ url: y, preview: v(y), replace: f })), [i.page_reset_to]: h(i.page_reset_to, a({ url: y, preview: v(y), replace: f })), [i.page_post]: h(i.page_post, a({ url: y, body: v(y), preview: v(y), replace: f })), [i.dismiss]: k([i.dismiss]), [i.link]: h(i.link, a({ url: y })), [i.back]: k([i.back]), [i.back_root]: k([i.back_root]), [i.scroll_top]: k([i.scroll_top]), [i.scroll_bottom]: k([i.scroll_bottom]), [i.scroll_id]: h(i.scroll_id, a({ id: y })) }),
-                    R = w((r) => ({ [t.change]: h(t.change, F), [t.confirm]: h(t.confirm, a({ ref: y, action: r, cancel: v(r) })), [t.multi]: h(t.multi, d(r)), [t.post_request]: h(t.post_request, a({ url: y, body: y, complete: v(r), error: v(r), optimistic: v(r) })), [t.haptic]: h(t.haptic, a({ action: r, intensity: j })), [t.present]: h(t.present, a({ ref: y, type: e })), [t.navigate]: h(t.navigate, T), [t.refresh]: h(t.refresh, a({ type: e, id: v(Z) })), [t.cache_clear]: h(t.cache_clear, _), [t.prefetch]: h(t.prefetch, a({ urls: d(_), priority: e })), [t.scribe]: h(t.scribe, y), [t.system]: h(t.system, a({ type: e, ref: y })), [t.delayed]: h(t.delayed, a({ action: r, delaySeconds: j })), [t.auth]: h(t.auth, a({ data: _, secret: _, knownDeviceToken: _ })) })),
-                    P = w((r) => ({ [s.null]: h(s.null, a({ ref: I })), [s.not_null]: h(s.not_null, a({ ref: I })), [s.is]: h(s.is, a({ ref: I, value: y })), [s.is_not]: h(s.is_not, a({ ref: I, value: y })), [s.in]: h(s.in, a({ ref: I, value: d(y) })), [s.not_in]: h(s.not_in, a({ ref: I, value: d(y) })), [s.gt]: h(s.gt, a({ ref: I, value: y })), [s.gte]: h(s.gte, a({ ref: I, value: y })), [s.lt]: h(s.lt, a({ ref: I, value: y })), [s.lte]: h(s.lte, a({ ref: I, value: y })), [s.starts_with]: h(s.starts_with, a({ ref: I, value: _ })), [s.ends_with]: h(s.ends_with, a({ ref: I, value: _ })), [s.includes]: h(s.includes, a({ ref: I, value: _ })), [s.and]: h(s.and, x(r, r)), [s.or]: h(s.or, x(r, r)), [s.not]: h(s.not, r) })),
-                    M = d(d(m)),
-                    O = d($(e, _, v(_))),
-                    V = w({ [o.str]: h(o.str, _), [o.int]: h(o.int, m), [o.mods]: h(o.mods, M), [o.conditional_mods]: h(o.conditional_mods, d(x(M, P))), [o.id]: h(o.id, Z), [o.f64]: h(o.f64, p), [o.bool]: h(o.bool, f), [o.element]: h(o.element, y), [o.elements]: h(o.elements, d(y)), [o.enum]: h(o.enum, g), [o.url]: h(o.url, _), [o.rich_text]: h(o.rich_text, O), [o.date]: h(o.date, u), [o.scribe]: h(o.scribe, y), [o.bag]: h(o.bag, c(j, y)), [o.str_dict]: h(o.str_dict, c(_, _)), [o.atom]: h(o.atom, C), [o.action]: h(o.action, R), [o.list]: h(o.list, d(y)), [o.predicate]: h(o.predicate, P), [o.feed]: h(o.feed, d(y)), [o.str_list]: h(o.str_list, d(_)), [o.int_list]: h(o.int_list, d(m)), [o.f64_list]: h(o.f64_list, d(p)), [o.bool_list]: h(o.bool_list, d(f)), [o.__notfound]: h(o.__notfound, k(void 0)) }),
-                    A = a({ els: d(S), props: d(V), ts: m }),
+                    R = w((r) => ({ [t.change]: h(t.change, F), [t.confirm]: h(t.confirm, a({ ref: y, action: r, cancel: v(r) })), [t.multi]: h(t.multi, c(r)), [t.post_request]: h(t.post_request, a({ url: y, body: y, complete: v(r), error: v(r), optimistic: v(r) })), [t.haptic]: h(t.haptic, a({ action: r, intensity: j })), [t.present]: h(t.present, a({ ref: y, type: e })), [t.navigate]: h(t.navigate, T), [t.refresh]: h(t.refresh, a({ type: e, id: v(Z) })), [t.cache_clear]: h(t.cache_clear, _), [t.prefetch]: h(t.prefetch, a({ urls: c(_), priority: e })), [t.scribe]: h(t.scribe, y), [t.system]: h(t.system, a({ type: e, ref: y })), [t.delayed]: h(t.delayed, a({ action: r, delaySeconds: j })), [t.auth]: h(t.auth, a({ data: _, secret: _, knownDeviceToken: _ })) })),
+                    P = w((r) => ({ [s.null]: h(s.null, a({ ref: I })), [s.not_null]: h(s.not_null, a({ ref: I })), [s.is]: h(s.is, a({ ref: I, value: y })), [s.is_not]: h(s.is_not, a({ ref: I, value: y })), [s.in]: h(s.in, a({ ref: I, value: c(y) })), [s.not_in]: h(s.not_in, a({ ref: I, value: c(y) })), [s.gt]: h(s.gt, a({ ref: I, value: y })), [s.gte]: h(s.gte, a({ ref: I, value: y })), [s.lt]: h(s.lt, a({ ref: I, value: y })), [s.lte]: h(s.lte, a({ ref: I, value: y })), [s.starts_with]: h(s.starts_with, a({ ref: I, value: _ })), [s.ends_with]: h(s.ends_with, a({ ref: I, value: _ })), [s.includes]: h(s.includes, a({ ref: I, value: _ })), [s.and]: h(s.and, x(r, r)), [s.or]: h(s.or, x(r, r)), [s.not]: h(s.not, r) })),
+                    M = c(c(m)),
+                    O = c($(e, _, v(_))),
+                    V = w({ [o.str]: h(o.str, _), [o.int]: h(o.int, m), [o.mods]: h(o.mods, M), [o.conditional_mods]: h(o.conditional_mods, c(x(M, P))), [o.id]: h(o.id, Z), [o.f64]: h(o.f64, p), [o.bool]: h(o.bool, f), [o.element]: h(o.element, y), [o.elements]: h(o.elements, c(y)), [o.enum]: h(o.enum, g), [o.url]: h(o.url, _), [o.rich_text]: h(o.rich_text, O), [o.date]: h(o.date, u), [o.scribe]: h(o.scribe, y), [o.bag]: h(o.bag, d(j, y)), [o.str_dict]: h(o.str_dict, d(_, _)), [o.atom]: h(o.atom, C), [o.action]: h(o.action, R), [o.list]: h(o.list, c(y)), [o.predicate]: h(o.predicate, P), [o.feed]: h(o.feed, c(y)), [o.str_list]: h(o.str_list, c(_)), [o.int_list]: h(o.int_list, c(m)), [o.f64_list]: h(o.f64_list, c(p)), [o.bool_list]: h(o.bool_list, c(f)), [o.__notfound]: h(o.__notfound, k(void 0)) }),
+                    A = a({ els: c(S), props: c(V), ts: m }),
                     D = a({ ref: y, t: v(m) });
                 return w({ [l.dom_data]: h(l.dom_data, A), [l.dom_ready]: h(l.dom_ready, D), [l.action]: h(l.action, R) });
             }
@@ -541,7 +541,7 @@
                     uint: t,
                 };
             }
-            e.d(a, { J: () => i, RB: () => s, ZI: () => l, _I: () => o, ai: () => c, aw: () => b, fx: () => n, je: () => t, r1: () => m, xv: () => j }),
+            e.d(a, { J: () => i, RB: () => s, ZI: () => l, _I: () => o, ai: () => d, aw: () => b, fx: () => n, je: () => t, r1: () => m, xv: () => j }),
                 (function (r) {
                     (r[(r.str = 0)] = "str"), (r[(r.int = 1)] = "int"), (r[(r.mods = 3)] = "mods"), (r[(r.id = 4)] = "id"), (r[(r.f64 = 5)] = "f64"), (r[(r.bool = 6)] = "bool"), (r[(r.element = 7)] = "element"), (r[(r.elements = 8)] = "elements"), (r[(r.enum = 10)] = "enum"), (r[(r.url = 11)] = "url"), (r[(r.rich_text = 12)] = "rich_text"), (r[(r.date = 14)] = "date"), (r[(r.scribe = 15)] = "scribe"), (r[(r.bag = 16)] = "bag"), (r[(r.str_dict = 17)] = "str_dict"), (r[(r.atom = 18)] = "atom"), (r[(r.action = 19)] = "action"), (r[(r.list = 21)] = "list"), (r[(r.predicate = 22)] = "predicate"), (r[(r.feed = 24)] = "feed"), (r[(r.conditional_mods = 25)] = "conditional_mods"), (r[(r.str_list = 26)] = "str_list"), (r[(r.int_list = 27)] = "int_list"), (r[(r.f64_list = 28)] = "f64_list"), (r[(r.bool_list = 29)] = "bool_list"), (r[(r.__notfound = 13)] = "__notfound");
                 })(o || (o = {})),
@@ -568,10 +568,10 @@
                 })(l || (l = {})),
                 (function (r) {
                     (r[(r.sheet = 0)] = "sheet"), (r[(r.menu = 1)] = "menu"), (r[(r.toast = 2)] = "toast"), (r[(r.full_screen = 3)] = "full_screen"), (r[(r.popover = 4)] = "popover"), (r[(r.modal = 5)] = "modal"), (r[(r.drawer_right = 6)] = "drawer_right"), (r[(r.drawer_left = 7)] = "drawer_left"), (r[(r.docked_bottom = 8)] = "docked_bottom"), (r[(r.docked_top = 9)] = "docked_top"), (r[(r.share_pane = 10)] = "share_pane");
-                })(c || (c = {})),
+                })(d || (d = {})),
                 (function (r) {
                     (r[(r.page = 0)] = "page"), (r[(r.remote_loader = 1)] = "remote_loader"), (r[(r.feed_full = 2)] = "feed_full"), (r[(r.feed_top = 3)] = "feed_top"), (r[(r.feed_more = 4)] = "feed_more");
-                })(d || (d = {}));
+                })(c || (c = {}));
         },
         644109: (r, a, e) => {
             function o(r, a) {
@@ -637,4 +637,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.d31d577a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.57980c2a.js.map

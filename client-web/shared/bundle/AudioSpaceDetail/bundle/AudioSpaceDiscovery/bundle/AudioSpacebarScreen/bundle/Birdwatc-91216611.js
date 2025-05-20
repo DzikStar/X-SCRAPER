@@ -3,20 +3,20 @@
     ["shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"],
     {
         969517: (e, t, n) => {
-            n.d(t, { Z: () => a });
+            n.d(t, { Z: () => i });
             var s = n(552322),
                 r = n(202784),
                 o = n(801102),
-                i = n(109195);
-            function a({ el: e, p: t, mods: n }) {
-                const a = t.element("header"),
+                a = n(109195);
+            function i({ el: e, p: t, mods: n }) {
+                const i = t.element("header"),
                     l = t.element("footer"),
                     c = t.action("on:appear");
                 return (
                     (0, r.useEffect)(() => {
                         c && c();
                     }, []),
-                    (0, s.jsxs)("div", { className: `w-full ${n}`, children: [a && (0, s.jsx)(i.Z, { el: a }), (0, o.Z)(e), l && (0, s.jsx)(i.Z, { el: l })] })
+                    (0, s.jsxs)("div", { className: `w-full ${n}`, children: [i && (0, s.jsx)(a.Z, { el: i }), (0, o.Z)(e), l && (0, s.jsx)(a.Z, { el: l })] })
                 );
             }
         },
@@ -26,7 +26,7 @@
                 r = n(109195);
             function o({ p: e, el: t, mods: n }) {
                 const o = e.int("activePage") ?? 0,
-                    i = (function (e) {
+                    a = (function (e) {
                         const t = [];
                         for (const n of e.children) {
                             const s = e.dom.el(n);
@@ -34,7 +34,7 @@
                         }
                         return t;
                     })(t);
-                return i ? (0, s.jsx)("div", { className: n, children: i[o] && (0, s.jsx)(r.Z, { el: i[o] }) }) : null;
+                return a ? (0, s.jsx)("div", { className: n, children: a[o] && (0, s.jsx)(r.Z, { el: a[o] }) }) : null;
             }
         },
         229476: (e, t, n) => {
@@ -42,15 +42,15 @@
             var s = n(552322),
                 r = n(202784),
                 o = n(801102),
-                i = n(109195),
-                a = n(608222),
+                a = n(109195),
+                i = n(608222),
                 l = n(644109);
             const c = (e, t) => {
                 const n = e.getBoundingClientRect();
                 (n.left + n.right) / 2 < window.innerWidth / 2 ? ((t.style.left = "0px"), (t.style.right = "")) : ((t.style.left = ""), (t.style.right = "0px")), n.bottom + t.offsetHeight < document.documentElement.scrollHeight ? ((t.style.top = `${e.offsetHeight}px`), (t.style.bottom = "")) : ((t.style.top = ""), (t.style.bottom = `${e.offsetHeight}px`));
             };
             function d({ el: e, p: t, mods: n }) {
-                const d = (0, a.o)(),
+                const d = (0, i.o)(),
                     u = d?.Runtime;
                 if (!d || !u) return (0, s.jsx)("div", { children: "Runtime not available" });
                 const m = t.element("popover"),
@@ -92,7 +92,7 @@
                                     className: `flex flex-col ${n} w-full h-full`,
                                     children: (0, o.Z)(e),
                                 }),
-                                m && (0, s.jsx)("div", { ref: h, className: "absolute min-w-max bg-transparent drop-shadow-lg " + (p ? "" : "invisible"), children: (0, s.jsx)(i.Z, { el: m }) }),
+                                m && (0, s.jsx)("div", { ref: h, className: "absolute min-w-max bg-transparent drop-shadow-lg " + (p ? "" : "invisible"), children: (0, s.jsx)(a.Z, { el: m }) }),
                             ],
                         }),
                     ],
@@ -100,25 +100,25 @@
             }
         },
         849957: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => a });
             var s = n(552322),
                 r = n(373461),
                 o = n(801102);
-            function i({ p: e, el: t }) {
+            function a({ p: e, el: t }) {
                 const n = e.str("src") ?? "",
-                    i = (0, o.Z)(t);
-                return (0, s.jsx)(r.Z, { url: n, ...(i.length > 0 ? { placeholder: i } : {}) });
+                    a = (0, o.Z)(t);
+                return (0, s.jsx)(r.Z, { url: n, ...(a.length > 0 ? { placeholder: a } : {}) });
             }
         },
         128069: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => a });
             var s = n(552322),
                 r = n(202784),
                 o = n(608222);
-            function i({ p: e, mods: t }) {
+            function a({ p: e, mods: t }) {
                 const n = e.richtext("text") ?? [],
-                    i = e.int("maxLines"),
-                    a = e.bool("showMore"),
+                    a = e.int("maxLines"),
+                    i = e.bool("showMore"),
                     l = (0, r.useRef)(null),
                     [c, d] = (0, r.useState)(),
                     u = "https://x.com",
@@ -166,13 +166,13 @@
                     ),
                     [v],
                 );
-                const N = null != i && !1 !== c ? `line-clamp-${i}` : "";
+                const N = null != a && !1 !== c ? `line-clamp-${a}` : "";
                 return (0, s.jsxs)("div", {
                     className: `flex flex-col overflow-hidden ${t}`,
                     children: [
                         (0, s.jsx)("div", { ref: l, className: `flex-col overflow-hidden ${N}`, children: n.map((e, t) => (0 === e[0] ? (0, s.jsx)("span", { children: e[1] }, `${t} - ${e[0]}`) : 1 === e[0] && e[2] ? (0, s.jsx)("span", { className: "text-sky-500 cursor-pointer hover:underline", onClick: (t) => x(t, e[2] || ""), children: e[1] }, `${t} - ${e[0]}`) : 2 === e[0] || 3 === e[0] || 4 === e[0] ? (0, s.jsx)("span", { className: "text-blue-500 cursor-pointer hover:underline", onClick: (t) => x(t, "", e[0], e[1]), children: e[1] }, `${t} - ${e[0]}`) : 5 === e[0] ? (0, s.jsx)("span", { className: "font-bold", children: e[1] }, `${t} - ${e[0]}`) : 6 === e[0] ? (0, s.jsx)("span", { className: "italic", children: e[1] }, `${t} - ${e[0]}`) : 255 === e[0] ? (0, s.jsx)("br", {}, `${t} - ${e[0]}`) : (0, s.jsx)("span", { children: e[1] }, `${t} - ${e[0]}`))) }),
                         c &&
-                            a &&
+                            i &&
                             (0, s.jsx)("button", {
                                 type: "button",
                                 className: "text-[rgb(29,155,240)] hover:underline w-fit",
@@ -186,13 +186,13 @@
             }
         },
         475122: (e, t, n) => {
-            n.d(t, { Z: () => a });
+            n.d(t, { Z: () => i });
             var s = n(552322),
                 r = n(801102),
                 o = n(608222);
-            const i = { x: 0, facebook: 1, whatsapp: 2, telegram: 3, linkedin: 4, email: 5, messages: 6, dm: 7, os: 8, copy: 9, facebookMessenger: 10, gmail: 11, signal: 12 };
-            function a({ p: e, el: t, mods: n }) {
-                const a = e.url("url") ?? "",
+            const a = { x: 0, facebook: 1, whatsapp: 2, telegram: 3, linkedin: 4, email: 5, messages: 6, dm: 7, os: 8, copy: 9, facebookMessenger: 10, gmail: 11, signal: 12 };
+            function i({ p: e, el: t, mods: n }) {
+                const i = e.url("url") ?? "",
                     l = e.enum("target"),
                     c = (0, o.o)();
                 if (!c || !c.Runtime) return (0, s.jsx)("div", { className: `${n}`, children: "Can't find runtime" });
@@ -207,20 +207,20 @@
                     onClick: (e) =>
                         ((e) => {
                             switch ((e.preventDefault(), e.stopPropagation(), l)) {
-                                case i.x:
-                                    d.history.push({ state: { text: a }, pathname: "/compose/post" });
+                                case a.x:
+                                    d.history.push({ state: { text: i }, pathname: "/compose/post" });
                                     break;
-                                case i.dm:
-                                    d.history.push({ state: { text: a }, pathname: "/messages/compose" });
+                                case a.dm:
+                                    d.history.push({ state: { text: i }, pathname: "/messages/compose" });
                                     break;
-                                case i.os:
-                                    u(a);
+                                case a.os:
+                                    u(i);
                                     break;
-                                case i.copy:
-                                    navigator.clipboard.writeText(a);
+                                case a.copy:
+                                    navigator.clipboard.writeText(i);
                                     break;
                                 default:
-                                    u(a);
+                                    u(i);
                             }
                         })(e),
                     children: (0, r.Z)(t),
@@ -232,14 +232,14 @@
             var s = n(552322),
                 r = n(202784),
                 o = n(801102),
-                i = n(109195),
-                a = n(608222);
+                a = n(109195),
+                i = n(608222);
             function l({ showModal: e, setShowModal: t, children: n }) {
                 const o = (0, r.useRef)(null),
-                    i = (0, a.o)(),
+                    a = (0, i.o)(),
                     [l, c] = (0, r.useState)(!1);
-                if (!i) return (0, s.jsx)("div", { children: "Runtime not available" });
-                const { Runtime: d } = i;
+                if (!a) return (0, s.jsx)("div", { children: "Runtime not available" });
+                const { Runtime: d } = a;
                 if (!d) return (0, s.jsx)("div", { children: "Runtime not available" });
                 (0, r.useEffect)(() => {
                     const e = window.matchMedia("(min-width: 1024px)"),
@@ -269,7 +269,7 @@
                 });
             }
             function c({ el: e, p: t, mods: n }) {
-                const [a, c] = (0, r.useState)(!1),
+                const [i, c] = (0, r.useState)(!1),
                     d = t.element("content");
                 return (0, s.jsxs)(s.Fragment, {
                     children: [
@@ -281,7 +281,7 @@
                             type: "button",
                             children: (0, o.Z)(e),
                         }),
-                        d && (0, s.jsx)(l, { showModal: a, setShowModal: c, children: (0, s.jsx)(i.Z, { el: d }) }),
+                        d && (0, s.jsx)(l, { showModal: i, setShowModal: c, children: (0, s.jsx)(a.Z, { el: d }) }),
                     ],
                 });
             }
@@ -295,15 +295,15 @@
             }
         },
         139466: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => a });
             var s = n(552322),
                 r = n(801102),
                 o = n(608222);
-            function i({ el: e, mods: t, p: n }) {
-                const i = (0, o.o)();
-                if (!i || !i.Runtime) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
-                const { Runtime: a } = i,
-                    l = a.getComponentOverride()[-22153];
+            function a({ el: e, mods: t, p: n }) {
+                const a = (0, o.o)();
+                if (!a || !a.Runtime) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
+                const { Runtime: i } = a,
+                    l = i.getComponentOverride()[-22153];
                 if (!l) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find Story" });
                 const c = (0, r.Z)(e);
                 return (0, s.jsx)(l, { p: n, children: c });
@@ -318,18 +318,18 @@
             }
         },
         314672: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => a });
             var s = n(552322),
                 r = n(801102),
                 o = n(608222);
-            function i({ el: e, mods: t }) {
+            function a({ el: e, mods: t }) {
                 const n = (0, o.o)();
                 if (!n || !n.Runtime) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
-                const { Runtime: i } = n,
-                    a = i.getComponentOverride()[24045];
-                if (!a) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find StoryPager" });
+                const { Runtime: a } = n,
+                    i = a.getComponentOverride()[24045];
+                if (!i) return (0, s.jsx)("div", { className: `${t}`, children: "Can't find StoryPager" });
                 const l = (0, r.Z)(e);
-                return (0, s.jsx)(a, { children: l });
+                return (0, s.jsx)(i, { children: l });
             }
         },
         88214: (e, t, n) => {
@@ -346,8 +346,8 @@
             var s = n(552322),
                 r = n(202784);
             const o = { RELATIVE: 0, TIME: 1, DATE: 2, PRETTY_DATE: 3, MONTH_DATE_TIME: 4, COUNT_DOWN_SECONDS: 5, COUNT_DOWN_MINUTES: 6, COUNT_DOWN_HOURS: 7, COUNT_DOWN_DAYS: 8, COUNT_DOWN_MONTHS: 9, COUNT_DOWN_YEARS: 10, COUNT_DOWN_FULL: 11 },
-                i = new Intl.DateTimeFormat(void 0, { dateStyle: "medium" }),
-                a = new Intl.DateTimeFormat(void 0, { timeStyle: "short" }),
+                a = new Intl.DateTimeFormat(void 0, { dateStyle: "medium" }),
+                i = new Intl.DateTimeFormat(void 0, { timeStyle: "short" }),
                 l = new Intl.DateTimeFormat(void 0, { dateStyle: "long" }),
                 c = new Intl.DateTimeFormat(void 0, { month: "short", day: "numeric" });
             function d({ p: e, mods: t }) {
@@ -358,13 +358,13 @@
                     m = (() => {
                         switch (r) {
                             case o.DATE:
-                                return i.format(n);
-                            case o.TIME:
                                 return a.format(n);
+                            case o.TIME:
+                                return i.format(n);
                             case o.PRETTY_DATE:
                                 return l.format(n);
                             case o.RELATIVE:
-                                return d < 120 ? "1m" : d < 3600 ? `${Math.floor(d / 60)}m` : d < 86400 ? `${Math.floor(d / 3600)}h` : d < 259200 ? `${Math.floor(d / 3600 / 24)}d` : n.getFullYear() === new Date().getFullYear() ? c.format(n) : i.format(n);
+                                return d < 120 ? "1m" : d < 3600 ? `${Math.floor(d / 60)}m` : d < 86400 ? `${Math.floor(d / 3600)}h` : d < 259200 ? `${Math.floor(d / 3600 / 24)}d` : n.getFullYear() === new Date().getFullYear() ? c.format(n) : a.format(n);
                             default:
                                 return "";
                         }
@@ -372,14 +372,14 @@
                 return (0, s.jsx)("div", { className: t, children: m });
             }
             const u = ({ format: e, mods: t, time: n }) => {
-                const [i, a] = (0, r.useState)(Date.now());
+                const [a, i] = (0, r.useState)(Date.now());
                 (0, r.useEffect)(() => {
                     const e = setInterval(() => {
-                        a(Date.now());
+                        i(Date.now());
                     }, 1e3);
                     return () => clearInterval(e);
                 }, []);
-                const l = n.getTime() - i;
+                const l = n.getTime() - a;
                 if (l <= 0) return (0, s.jsx)("div", { className: t, children: "0" });
                 const c = Math.floor(l / 1e3),
                     d = Math.floor(c / 60),
@@ -417,38 +417,38 @@
             };
         },
         64614: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => a });
             var s = n(801102),
                 r = n(113158),
                 o = n(326762);
-            function i({ el: e, p: t }) {
+            function a({ el: e, p: t }) {
                 const n = t.f32("everySeconds") ?? 1,
-                    i = t.action("action") ?? r.Z;
-                return (0, o.Z)(i, 1e3 * n), (0, s.Z)(e);
+                    a = t.action("action") ?? r.Z;
+                return (0, o.Z)(a, 1e3 * n), (0, s.Z)(e);
             }
         },
         988678: (e, t, n) => {
-            n.d(t, { Z: () => a });
+            n.d(t, { Z: () => i });
             var s = n(552322),
                 r = n(202784),
                 o = n(109195),
-                i = n(608222);
-            function a() {
+                a = n(608222);
+            function i() {
                 const [e, t] = (0, r.useState)([]),
-                    n = (0, i.o)();
+                    n = (0, a.o)();
                 if (!n || !n.Runtime) return;
-                const { Runtime: a } = n,
+                const { Runtime: i } = n,
                     l = () => {
                         t((e) => e.slice(1));
                     };
                 return (
-                    a.setAddToToastQueue((e) => {
+                    i.setAddToToastQueue((e) => {
                         t((t) => [...t, e]),
                             setTimeout(() => {
                                 l();
                             }, 4e3);
                     }),
-                    a.setRemoveFromToastQueue(l),
+                    i.setRemoveFromToastQueue(l),
                     (0, s.jsxs)("div", { style: { position: "fixed", bottom: "1rem", marginTop: "1rem", left: "50%", transform: "translateX(-50%)", zIndex: 1e3, display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 1, animation: "slideUp 0.3s ease-out" }, children: [e.slice(-3).map((e, t) => (0, s.jsx)("div", { style: { animation: "fadeIn 0.3s ease-in", marginBottom: "0.5rem" }, children: (0, s.jsx)(o.Z, { el: e }) }, `${e.id}-${t}`)), (0, s.jsx)("style", { children: "\n          @keyframes slideUp {\n            from {\n              bottom: 0;\n              opacity: 0;\n            }\n            to {\n              bottom: 1rem;\n              opacity: 1;\n            }\n          }\n          @keyframes fadeIn {\n            from {\n              opacity: 0;\n            }\n            to {\n              opacity: 1;\n            }\n          }\n          @keyframes slideDown {\n            from {\n              bottom: 1rem;\n              opacity: 1;\n            }\n            to {\n              bottom: 0;\n              opacity: 0;\n            }\n          }\n          @keyframes fadeOut {\n            from {\n              opacity: 1;\n            }\n            to {\n              opacity: 0;\n            }\n          }\n        " })] })
                 );
             }
@@ -499,17 +499,17 @@
             }
         },
         696281: (e, t, n) => {
-            n.d(t, { Z: () => a });
+            n.d(t, { Z: () => i });
             var s = n(552322),
                 r = n(801102),
                 o = n(109195);
-            function i(e, t) {
-                return 0 === t ? (0, s.jsx)("div", { className: "relative w-fit h-fit", children: (0, s.jsx)(o.Z, { el: e }) }, t) : (0, s.jsx)("div", { className: "absolute inset-0 w-full h-full", children: (0, s.jsx)(o.Z, { el: e }) }, t);
+            function a(e, t) {
+                return 0 === t ? (0, s.jsx)(o.Z, { el: e }, t) : (0, s.jsx)("div", { className: "absolute inset-0 w-full h-full", children: (0, s.jsx)(o.Z, { el: e }) }, t);
             }
-            function a({ el: e, mods: t }) {
-                return (0, s.jsx)("div", { className: `relative ${t}`, children: (0, r.Z)(e, i) });
+            function i({ el: e, mods: t }) {
+                return (0, s.jsx)("div", { className: `relative ${t}`, children: (0, r.Z)(e, a) });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611.5321b26a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611.53d9baea.js.map

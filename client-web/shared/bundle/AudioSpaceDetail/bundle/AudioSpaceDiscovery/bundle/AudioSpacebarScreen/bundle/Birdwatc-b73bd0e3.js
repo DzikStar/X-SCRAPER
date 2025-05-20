@@ -67,6 +67,11 @@
             var s = e(552322);
             const c = (l) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, s.jsx)("path", { d: "M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z" }) });
         },
+        830806: (l, h, e) => {
+            e.d(h, { Z: () => c });
+            var s = e(552322);
+            const c = (l) => (0, s.jsxs)("svg", { viewBox: "0 0 14 14", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", role: "img", ...l, children: [(0, s.jsx)("path", { d: "M2.16256 1.33754C1.93475 1.10974 1.56541 1.10974 1.3376 1.33754C1.1098 1.56535 1.1098 1.93469 1.3376 2.1625L2.7855 3.6104C2.46865 4.16466 2.25919 4.78916 2.18754 5.45796L1.76493 8.89949C1.67952 9.595 2.22216 10.2084 2.9229 10.2084H9.38346L11.8376 12.6625C12.0654 12.8903 12.4348 12.8903 12.6626 12.6625C12.8904 12.4347 12.8904 12.0653 12.6626 11.8375L2.16256 1.33754Z" }), (0, s.jsx)("path", { d: "M12.2351 8.89949C12.2932 9.37206 12.0613 9.8067 11.6868 10.0368L3.92014 2.27011C4.76367 1.57863 5.84199 1.16669 7.00002 1.16669C9.45456 1.16669 11.551 3.0174 11.8125 5.45797L12.2351 8.89949Z" }), (0, s.jsx)("path", { d: "M4.32604 11.0834C4.77612 12.1135 5.804 12.8334 7.00002 12.8334C8.19604 12.8334 9.22392 12.1135 9.67399 11.0834H4.32604Z" })] });
+        },
         418945: (l, h, e) => {
             e.d(h, { Z: () => c });
             var s = e(552322);
@@ -659,4 +664,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3.fe3ec59a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3.afb89e0a.js.map

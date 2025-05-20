@@ -128,20 +128,20 @@
             const A = "application/font-woff",
                 k = "image/jpeg",
                 Z = { woff: A, woff2: A, ttf: "application/font-truetype", eot: "application/vnd.ms-fontobject", png: "image/png", jpg: k, jpeg: k, gif: "image/gif", tiff: "image/tiff", svg: "image/svg+xml", webp: "image/webp" };
-            function I(e) {
+            function L(e) {
                 const t = (function (e) {
                     const t = /\.([^./]*?)$/g.exec(e);
                     return t ? t[1] : "";
                 })(e).toLowerCase();
                 return Z[t] || "";
             }
-            function L(e) {
+            function I(e) {
                 return -1 !== e.search(/^(data:)/);
             }
             function M(e, t) {
                 return `data:${t};base64,${e}`;
             }
-            async function F(e, t, n) {
+            async function D(e, t, n) {
                 const r = await fetch(e, t);
                 if (404 === r.status) throw new Error(`Resource "${r.url}" not found`);
                 const o = await r.blob();
@@ -158,17 +158,17 @@
                         i.readAsDataURL(o);
                 });
             }
-            const D = {};
+            const F = {};
             async function H(e, t, n) {
                 const r = (function (e, t, n) {
                     let r = e.replace(/\?.*/, "");
                     return n && (r = e), /ttf|otf|eot|woff2?/i.test(r) && (r = r.replace(/.*\//, "")), t ? `[${t}]${r}` : r;
                 })(e, t, n.includeQueryParams);
-                if (null != D[r]) return D[r];
+                if (null != F[r]) return F[r];
                 let o;
                 n.cacheBust && (e += (/\?/.test(e) ? "&" : "?") + new Date().getTime());
                 try {
-                    const r = await F(
+                    const r = await D(
                         e,
                         n.fetchRequestInit,
                         ({ res: e, result: n }) => (
@@ -184,7 +184,7 @@
                     let r = `Failed to fetch resource: ${e}`;
                     t && (r = "string" == typeof t ? t : t.message);
                 }
-                return (D[r] = o), o;
+                return (F[r] = o), o;
             }
             async function N(e, t) {
                 return _(e, HTMLCanvasElement)
@@ -200,14 +200,14 @@
                                 return (t.width = e.clientWidth), (t.height = e.clientHeight), null == n || n.drawImage(e, 0, 0, t.width, t.height), $(t.toDataURL());
                             }
                             const n = e.poster,
-                                r = I(n);
+                                r = L(n);
                             return $(await H(n, r, t));
                         })(e, t)
                       : _(e, HTMLIFrameElement)
                         ? (async function (e, t) {
                               var n;
                               try {
-                                  if (null === (n = null == e ? void 0 : e.contentDocument) || void 0 === n ? void 0 : n.body) return await z(e.contentDocument.body, t, !0);
+                                  if (null === (n = null == e ? void 0 : e.contentDocument) || void 0 === n ? void 0 : n.body) return await V(e.contentDocument.body, t, !0);
                               } catch (e) {}
                               return e.cloneNode(!1);
                           })(e, t)
@@ -215,7 +215,7 @@
             }
             const B = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
                 O = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
-            function V(e, t, n) {
+            function z(e, t, n) {
                 return (
                     _(t, Element) &&
                         ((function (e, t, n) {
@@ -249,7 +249,7 @@
                     t
                 );
             }
-            async function z(e, t, n) {
+            async function V(e, t, n) {
                 return n || !t.filter || t.filter(e)
                     ? Promise.resolve(e)
                           .then((e) => N(e, t))
@@ -265,7 +265,7 @@
                                           (await i.reduce(
                                               (e, r) =>
                                                   e
-                                                      .then(() => z(r, n))
+                                                      .then(() => V(r, n))
                                                       .then((e) => {
                                                           e && t.appendChild(e);
                                                       }),
@@ -275,7 +275,7 @@
                                   );
                               })(e, n, t),
                           )
-                          .then((n) => V(e, n, t))
+                          .then((n) => z(e, n, t))
                           .then((e) =>
                               (async function (e, t) {
                                   const n = e.querySelectorAll ? e.querySelectorAll("use") : [];
@@ -286,7 +286,7 @@
                                       if (i) {
                                           const n = e.querySelector(i),
                                               o = document.querySelector(i);
-                                          n || !o || r[i] || (r[i] = await z(o, t, !0));
+                                          n || !o || r[i] || (r[i] = await V(o, t, !0));
                                       }
                                   }
                                   const o = Object.values(r);
@@ -320,7 +320,7 @@
                                   return n.head.appendChild(r), n.body.appendChild(o), t && (r.href = t), (o.href = e), o.href;
                               })(t, n)
                             : t,
-                        a = I(t);
+                        a = L(t);
                     let s;
                     if (o) {
                         s = M(await o(i), a);
@@ -353,7 +353,7 @@
                     })(e, n),
                     o = (function (e) {
                         const t = [];
-                        return e.replace(j, (e, n, r) => (t.push(r), e)), t.filter((e) => !L(e));
+                        return e.replace(j, (e, n, r) => (t.push(r), e)), t.filter((e) => !I(e));
                     })(r);
                 return o.reduce((e, r) => e.then((e) => U(e, r, t, n)), Promise.resolve(r));
             }
@@ -373,9 +373,9 @@
                     })(e, t),
                     await (async function (e, t) {
                         const n = _(e, HTMLImageElement);
-                        if ((!n || L(e.src)) && (!_(e, SVGImageElement) || L(e.href.baseVal))) return;
+                        if ((!n || I(e.src)) && (!_(e, SVGImageElement) || I(e.href.baseVal))) return;
                         const r = n ? e.src : e.href.baseVal,
-                            o = await H(r, I(r), t);
+                            o = await H(r, L(r), t);
                         await new Promise((r, i) => {
                             (e.onload = r),
                                 (e.onerror = t.onImageErrorHandler
@@ -408,7 +408,7 @@
                 const r = /url\(["']?([^"')]+)["']?\)/g,
                     o = (n.match(/url\([^)]+\)/g) || []).map(async (o) => {
                         let i = o.replace(r, "$1");
-                        return i.startsWith("https://") || (i = new URL(i, e.url).href), F(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
+                        return i.startsWith("https://") || (i = new URL(i, e.url).href), D(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
                     });
                 return Promise.all(o).then(() => n);
             }
@@ -527,7 +527,7 @@
             }
             async function ie(e, t = {}) {
                 const { width: n, height: r } = C(e, t),
-                    o = await z(e, t, !0);
+                    o = await V(e, t, !0);
                 await (async function (e, t) {
                     const n = null != t.fontEmbedCSS ? t.fontEmbedCSS : t.skipFonts ? null : await oe(e, t);
                     if (n) {
@@ -974,6 +974,19 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        988227: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var r = n(202784),
+                o = n(890601),
+                i = n(783427),
+                a = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.1bb85c1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.afc1ff4a.js.map

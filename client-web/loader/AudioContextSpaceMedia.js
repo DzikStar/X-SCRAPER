@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.AudioContextSpaceMedia", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
     {
-        668371: (e, l, n) => {
-            n.d(l, { Z: () => o });
-            var a,
+        668371: (e, l, a) => {
+            a.d(l, { Z: () => i });
+            var n,
                 t,
                 r,
                 s = {
                     fragment: {
-                        argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "restId" }]),
+                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "restId" }]),
                         kind: "Fragment",
                         metadata: null,
                         name: "FollowHostButtonQuery",
@@ -33,7 +33,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: a,
+                        argumentDefinitions: n,
                         kind: "Operation",
                         name: "FollowHostButtonQuery",
                         selections: [
@@ -90,11 +90,11 @@
                     params: { id: "1xl0guq_r8GukF9dZ4j20g", metadata: {}, name: "FollowHostButtonQuery", operationKind: "query", text: null },
                 };
             s.hash = "db24c8717c0ec5cd1bc10a4703756569";
-            const o = s;
+            const i = s;
         },
-        813323: (e, l, n) => {
-            n.d(l, { Z: () => t });
-            var a = {
+        813323: (e, l, a) => {
+            a.d(l, { Z: () => t });
+            var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -120,50 +120,63 @@
                 abstractKey: null,
                 hash: "b93bdf9a55fabd2b0b034b170a897872",
             };
-            const t = a;
+            const t = n;
         },
-        420412: (e, l, n) => {
-            n.d(l, { Z: () => i });
-            var a = n(202784),
-                t = n(325686),
-                r = n(235902),
-                s = n(885015),
-                o = n(392237);
-            function i({ borderColor: e = "borderColor", isSlim: l = !1, label: n }) {
-                const { isWebRedesign: i } = r.ZP.useProps(),
-                    d = "borderColor" === e || "nestedBorderColor" === e ? u[e] : { backgroundColor: o.default.theme.colors[e] ?? o.default.theme.colors.borderColor };
-                return n ? a.createElement(s.Z, { style: !l && u.root, withGutter: !0 }, a.createElement(t.Z, { style: u.gapColumn }, a.createElement(t.Z, { style: [u.gap, d] })), a.createElement(t.Z, { style: u.gapText }, n), a.createElement(t.Z, { style: u.gapColumn }, a.createElement(t.Z, { style: [u.gap, d] }))) : a.createElement(t.Z, { style: [!l && u.root, i() && u.rootRedesign, u.gap, d] });
+        420412: (e, l, a) => {
+            a.d(l, { Z: () => o });
+            var n = a(202784),
+                t = a(325686),
+                r = a(235902),
+                s = a(885015),
+                i = a(392237);
+            function o({ borderColor: e = "borderColor", isSlim: l = !1, label: a }) {
+                const { isWebRedesign: o } = r.ZP.useProps(),
+                    d = "borderColor" === e || "nestedBorderColor" === e ? u[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
+                return a ? n.createElement(s.Z, { style: !l && u.root, withGutter: !0 }, n.createElement(t.Z, { style: u.gapColumn }, n.createElement(t.Z, { style: [u.gap, d] })), n.createElement(t.Z, { style: u.gapText }, a), n.createElement(t.Z, { style: u.gapColumn }, n.createElement(t.Z, { style: [u.gap, d] }))) : n.createElement(t.Z, { style: [!l && u.root, o() && u.rootRedesign, u.gap, d] });
             }
-            const u = o.default.create((e) => ({ borderColor: { backgroundColor: o.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: o.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const u = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
-        885015: (e, l, n) => {
-            n.d(l, { Z: () => u });
-            var a = n(807896),
-                t = n(202784),
-                r = n(325686),
-                s = n(392237);
-            class o extends t.Component {
+        885015: (e, l, a) => {
+            a.d(l, { Z: () => u });
+            var n = a(807896),
+                t = a(202784),
+                r = a(325686),
+                s = a(392237);
+            class i extends t.Component {
                 render() {
-                    const { children: e, style: l, withGutter: n, ...s } = this.props,
-                        o = t.Children.map(e, (e) => e && t.cloneElement(e, { style: [e.props.style, i.column, n && i.withGutterColumn] }));
-                    return t.createElement(r.Z, (0, a.Z)({ style: [l, i.root, n && i.withGutter] }, s), o);
+                    const { children: e, style: l, withGutter: a, ...s } = this.props,
+                        i = t.Children.map(e, (e) => e && t.cloneElement(e, { style: [e.props.style, o.column, a && o.withGutterColumn] }));
+                    return t.createElement(r.Z, (0, n.Z)({ style: [l, o.root, a && o.withGutter] }, s), i);
                 }
             }
-            o.defaultProps = { withGutter: !1 };
-            const i = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                u = o;
+            i.defaultProps = { withGutter: !1 };
+            const o = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+                u = i;
         },
-        662678: (e, l, n) => {
-            n.d(l, { G: () => t, Z: () => a });
-            n(136728);
-            const a = function (e, l) {
+        748138: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                t = a(890601),
+                r = a(783427),
+                s = a(347101);
+            const i = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: l });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
+        },
+        662678: (e, l, a) => {
+            a.d(l, { G: () => t, Z: () => n });
+            a(136728);
+            const n = function (e, l) {
                 return t(e, l);
             };
             function t(e, l) {
                 return e.reduce(
-                    (n, a, t) => {
-                        const r = l ? l(a, t, e) : !!a;
-                        return r && n[0].push(a), !r && n[1].push(a), n;
+                    (a, n, t) => {
+                        const r = l ? l(n, t, e) : !!n;
+                        return r && a[0].push(n), !r && a[1].push(n), a;
                     },
                     [[], []],
                 );
@@ -171,4 +184,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceMedia.0f43e07a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceMedia.5afd264a.js.map

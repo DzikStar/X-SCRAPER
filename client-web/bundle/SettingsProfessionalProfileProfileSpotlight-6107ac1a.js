@@ -1134,6 +1134,19 @@
             const g = t.default.create((l) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: l.spaces.space20 } })),
                 y = c;
         },
+        748138: (l, e, a) => {
+            a.r(e), a.d(e, { default: () => t });
+            var n = a(202784),
+                i = a(890601),
+                s = a(783427),
+                r = a(347101);
+            const u = (l = {}) => {
+                const { direction: e } = (0, s.Z)();
+                return (0, i.Z)("svg", { ...l, role: l["aria-label"] ? l.role || "img" : void 0, "aria-hidden": void 0 === l["aria-label"], style: [r.Z.root, l.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: e });
+            };
+            u.metadata = { width: 24, height: 24 };
+            const t = u;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.0d8c9f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.73aade6a.js.map

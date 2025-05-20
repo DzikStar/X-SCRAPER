@@ -2,16 +2,6 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.TwitterBlue-9f4db315"],
     {
-        225258: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            const a = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
-                n = ({ apiClient: e, featureSwitches: t }) => ({
-                    postConversion(t, r, n, s = {}) {
-                        const o = { conversions: [{ basePixel: t, eventPixel: r, twclid: n }] };
-                        return e.postUnversioned("/i/capi", o, { ...s, "content-type": "application/json" }, a).then((e) => e.data);
-                    },
-                });
-        },
         507651: (e, t, r) => {
             r.d(t, { Z: () => l });
             var a = r(807896),
@@ -135,17 +125,23 @@
                     }),
                 );
         },
-        488645: (e, t, r) => {
-            r.d(t, { q: () => s });
-            var a = r(225258),
-                n = r(917799);
-            const s =
-                    (e, t, r, s, i) =>
-                    async (c, l, { api: u, userPersistence: p }) => {
-                        const m = await o(p, r, s, i);
-                        return m ? (0, n.Vg)(c, { params: { basePixel: e, eventPixel: t, twclid: m }, request: ({ basePixel: e, eventPixel: t, twclid: r } = {}, n) => u.withEndpoint(a.Z).postConversion(e, t, r, n) })("POST_CONVERSION") : Promise.resolve(null);
+        116868: (e, t, r) => {
+            r.d(t, { q: () => o });
+            const a = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
+                n = ({ apiClient: e, featureSwitches: t }) => ({
+                    postConversion(t, r, n, s = {}) {
+                        const o = { conversions: [{ basePixel: t, eventPixel: r, twclid: n }] };
+                        return e.postUnversioned("/i/capi", o, { ...s, "content-type": "application/json" }, a).then((e) => e.data);
                     },
-                o = async (e, t, r, a) => {
+                });
+            var s = r(917799);
+            const o =
+                    (e, t, r, a, o) =>
+                    async (c, l, { api: u, userPersistence: p }) => {
+                        const m = await i(p, r, a, o);
+                        return m ? (0, s.Vg)(c, { params: { basePixel: e, eventPixel: t, twclid: m }, request: ({ basePixel: e, eventPixel: t, twclid: r } = {}, a) => u.withEndpoint(n).postConversion(e, t, r, a) })("POST_CONVERSION") : Promise.resolve(null);
+                    },
+                i = async (e, t, r, a) => {
                     let n = t;
                     if (a && n) await e.set(r, { twclid: n });
                     else {
@@ -178,8 +174,8 @@
                 P = r(511323),
                 _ = r(254944),
                 S = r(465072),
-                Z = r(189700),
-                E = r(520489),
+                E = r(189700),
+                Z = r(520489),
                 b = r(297938),
                 x = r(457566);
             const k = (e) => {
@@ -227,9 +223,9 @@
                     case "ModeratorStroke":
                         return S.default;
                     case "Document":
-                        return Z.default;
-                    case "RadarStroke":
                         return E.default;
+                    case "RadarStroke":
+                        return Z.default;
                     case "SearchPersonStroke":
                         return b.default;
                     default:
@@ -248,7 +244,7 @@
                 c = r(811574),
                 l = r(548797),
                 u = r(125363),
-                p = r(488645),
+                p = r(116868),
                 m = r(248186);
             const d = ({ content: e, isTierSwitching: t, referringPage: r, selectedProduct: d, setSelectedProduct: h }) => {
                 const f = (0, n.useHistory)(),
@@ -291,7 +287,7 @@
                 P = r(763419),
                 _ = r(689609),
                 S = r(274547);
-            const Z = ({ content: e, referringPage: t, selectedProduct: r, setSelectedProduct: o, state: i, stripePriceConfig: c }) => {
+            const E = ({ content: e, referringPage: t, selectedProduct: r, setSelectedProduct: o, state: i, stripePriceConfig: c }) => {
                     const l = (0, u.Z)(),
                         [p, m] = n.useState(!1),
                         S = n.useRef(null);
@@ -304,20 +300,20 @@
                             }, 25);
                             return () => clearTimeout(e);
                         }, []);
-                    const Z = n.useRef(null),
-                        [E, b] = n.useState(0),
+                    const E = n.useRef(null),
+                        [Z, b] = n.useState(0),
                         x = n.useRef(null),
                         [F, C] = n.useState(0);
                     n.useEffect(() => {
-                        b(Z.current?.clientHeight ?? 0), C(x.current?.clientHeight ?? 0);
-                    }, [Z.current?.clientHeight, x.current?.clientHeight, p]);
-                    const R = n.useMemo(() => ({ marginTop: E, marginBottom: F }), [E, F]),
+                        b(E.current?.clientHeight ?? 0), C(x.current?.clientHeight ?? 0);
+                    }, [E.current?.clientHeight, x.current?.clientHeight, p]);
+                    const R = n.useMemo(() => ({ marginTop: Z, marginBottom: F }), [Z, F]),
                         D = i.catalogItems.filter((e) => e.productCategory === r),
                         L = n.useMemo(() => e.apiContent?.products?.findIndex((e) => e.product_category === r) || 0, [e.apiContent?.products, r]),
-                        B = { content: e, referringPage: t, selectedProduct: r, setSelectedProduct: o, state: i, catalogItems: i.catalogItems, catalogItemsForProduct: D, headerRef: Z, footerRef: x, headerFooterOffset: R, selectedProductIndex: L, stripePriceConfig: c };
+                        B = { content: e, referringPage: t, selectedProduct: r, setSelectedProduct: o, state: i, catalogItems: i.catalogItems, catalogItemsForProduct: D, headerRef: E, footerRef: x, headerFooterOffset: R, selectedProductIndex: L, stripePriceConfig: c };
                     return n.createElement(
                         d.P.Provider,
-                        { value: { footerHeight: F, headerHeight: E } },
+                        { value: { footerHeight: F, headerHeight: Z } },
                         n.createElement(s.Z, { style: [k.cover, p ? k.show : k.hide] }),
                         n.createElement(
                             s.Z,
@@ -380,7 +376,7 @@
                         ),
                     );
                 },
-                E = ({ state: e, ...t }) => {
+                Z = ({ state: e, ...t }) => {
                     const r = (0, c.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         s = (0, m.Z)(["BlueVerified", "BlueVerifiedPlus", "PremiumBasic"]),
                         o = n.useMemo(() => {
@@ -391,9 +387,9 @@
                             }
                             return t;
                         }, [s, e, r]);
-                    return n.createElement(Z, (0, a.Z)({}, t, { state: o, stripePriceConfig: s }));
+                    return n.createElement(E, (0, a.Z)({}, t, { state: o, stripePriceConfig: s }));
                 },
-                b = (e) => (e.state.withStripeButton || e.state.replacePricesWithStripe ? n.createElement(E, e) : n.createElement(Z, e)),
+                b = (e) => (e.state.withStripeButton || e.state.replacePricesWithStripe ? n.createElement(Z, e) : n.createElement(E, e)),
                 x = (e) => {
                     (0, l.ZP)();
                     const [t, r] = (0, p.Z)(),
@@ -483,4 +479,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-9f4db315.3b73b3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-9f4db315.2c20706a.js.map

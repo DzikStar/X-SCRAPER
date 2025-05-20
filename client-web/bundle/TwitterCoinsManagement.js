@@ -30,11 +30,11 @@
                 _renderContent() {
                     const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: r, hideBackButton: l, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: b, style: y, subtitle: h, title: k, titleDomId: f, titleIconCell: C, titleIconCellSize: _, withBackground: w, withWideContainer: E } = this.props,
                         { isModal: T } = this.context,
-                        Z = l ? d : n.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        B = (function (e, a, t) {
+                        v = l ? d : n.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        Z = (function (e, a, t) {
                             return e && !(a && t);
                         })(!!w, T, !!b);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: a, centeredLogo: t, isFullWidth: i, isLarge: c, leftControl: Z, middleControl: p, position: u(m, T, r), rightControl: g, style: y, subtitle: h, title: k, titleDomId: f, titleIconCell: C, titleIconCellSize: _, withBackground: B, withWideContainer: E }), b || null);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: a, centeredLogo: t, isFullWidth: i, isLarge: c, leftControl: v, middleControl: p, position: u(m, T, r), rightControl: g, style: y, subtitle: h, title: k, titleDomId: f, titleIconCell: C, titleIconCellSize: _, withBackground: Z, withWideContainer: E }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -467,9 +467,9 @@
                 w = t(782947),
                 E = t(40610),
                 T = t(392237),
-                Z = t(332920),
-                B = t.n(Z);
-            const v = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
+                v = t(332920),
+                Z = t.n(v);
+            const B = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
             var x = t(980407),
                 P = t(879101),
                 S = t(443781),
@@ -483,7 +483,7 @@
                 A = t(668214),
                 W = t(390387);
             const N = (0, A.Z)().propsFromState(() => ({ currentCountry: W.GG }));
-            var O = t(264226),
+            var z = t(264226),
                 H =
                     (t(571372),
                     (function () {
@@ -516,10 +516,10 @@
                         return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "useCoinPurchaseSessionUrlMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "useCoinPurchaseSessionUrlMutation", selections: a }, params: { id: "QP5WVTrpvWikhlKybPX5jQ", metadata: {}, name: "useCoinPurchaseSessionUrlMutation", operationKind: "mutation", text: null } };
                     })());
             H.hash = "7daebd17bb1245b0e462caffc307fe76";
-            const V = H;
-            var z = t(351743),
-                q = t.n(z);
-            const U = V,
+            const O = H;
+            var V = t(351743),
+                q = t.n(V);
+            const U = O,
                 G = ({ cancelUrl: e, successUrl: a }) => {
                     const [t, n] = q()(U);
                     return [
@@ -541,15 +541,15 @@
                         n,
                     ];
                 },
-                j = B().fbb7764b,
-                Q = B().j087774e,
-                X = B().bb55752e,
-                Y = B().a0b4541c,
-                $ = B().ef4602ec,
-                J = B().ea7ce65f,
-                ee = B().e557f9d2,
-                ae = { bestValue: { pillText: B().f89dfa74, pillType: "bestValue" }, mostPopular: { pillText: B().e2beba5e, pillType: "mostPopular" } },
-                te = B().gafeeb96,
+                j = Z().fbb7764b,
+                Q = Z().j087774e,
+                X = Z().bb55752e,
+                Y = Z().a0b4541c,
+                $ = Z().ef4602ec,
+                J = Z().ea7ce65f,
+                ee = Z().e557f9d2,
+                ae = { bestValue: { pillText: Z().f89dfa74, pillType: "bestValue" }, mostPopular: { pillText: Z().e2beba5e, pillType: "mostPopular" } },
+                te = Z().gafeeb96,
                 ne = { page: "twitter_coins" },
                 re = p,
                 le = (0, L.z)(re, { errorConfig: { context: "TWITTER_COINS_MANAGEMENT_CONTEXT" } }),
@@ -561,13 +561,13 @@
                         [o, s] = m.useState(!1),
                         { origin: c } = R.ZP.get(),
                         d = a.isTrue("tweet_awards_web_coin_purchase_sandbox_enabled"),
-                        u = m.useMemo(() => ({ environment: d ? v.Sandbox : v.Live, countryCode: t || "US" }), [d, t]),
+                        u = m.useMemo(() => ({ environment: d ? B.Sandbox : B.Live, countryCode: t || "US" }), [d, t]),
                         p = (0, F.p)(),
                         [g, T] = G({ successUrl: `${c}/i/coins/success`, cancelUrl: `${c}/i/coins/failure` }),
-                        Z = m.useCallback(() => {
+                        v = m.useCallback(() => {
                             r.scribe({ element: "twitter_coins", component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
-                        B = m.useCallback((e) => m.createElement(y.Z, { style: oe.header }, m.createElement(h.ZP, { size: "title4", weight: "bold" }, Q), m.createElement(O.ZP, { coinBalance: e })), []),
+                        Z = m.useCallback((e) => m.createElement(y.Z, { style: oe.header }, m.createElement(h.ZP, { size: "title4", weight: "bold" }, Q), m.createElement(z.ZP, { coinBalance: e })), []),
                         L = m.useCallback(() => {
                             s(!0),
                                 g(l)
@@ -605,19 +605,19 @@
                             },
                             [N, l, W],
                         ),
-                        V = m.useCallback(
+                        O = m.useCallback(
                             ({ data: e, fetchStatus: a, retry: t }) => {
                                 if (a === M.ZP.FAILED) return m.createElement(C.Z, { onRequestRetry: t, retryMessage: Y });
                                 if (a === M.ZP.LOADED) {
                                     const a = e?.viewer_v2?.account_balance.amount || 0,
                                         t = !!e?.viewer_v2?.account_balance.at_limit;
-                                    return m.createElement(x.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: Z, secondaryBar: B(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(E.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: H, variables: u })));
+                                    return m.createElement(x.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: v, secondaryBar: Z(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(E.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: H, variables: u })));
                                 }
                                 return null;
                             },
-                            [A, u, B, H, Z, n],
+                            [A, u, Z, H, v, n],
                         );
-                    return m.createElement(I.nO, { namespace: ne }, m.createElement(O.XB, { render: V, variables: b() }));
+                    return m.createElement(I.nO, { namespace: ne }, m.createElement(z.XB, { render: O, variables: b() }));
                 },
                 oe = T.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space8 }, header: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space32, marginTop: e.spaces.space16, marginBottom: e.spaces.space8 }, subtext: { marginBottom: e.spaces.space16 }, footer: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space16 }, disclaimer: { marginBottom: e.spaces.space8, marginHorizontal: "auto", maxWidth: "500px", textAlign: "center" }, image: { height: e.spaces.space40, width: e.spaces.space40 }, iconTwitter: { color: e.colors.primary } })),
                 se = N(ie);
@@ -637,24 +637,37 @@
                 m = t(392237);
             const g = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 b = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: k, horizontal: f, illustration: C, infoLabel: _, infoLabelType: w, inlineCallout: E, label: T, name: Z, onChange: B, pillText: v, pillType: x, reverseLabels: P, secondaryContent: S, secondaryDescription: L, switchStyle: F, testID: D }) => {
+                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: k, horizontal: f, illustration: C, infoLabel: _, infoLabelType: w, inlineCallout: E, label: T, name: v, onChange: Z, pillText: B, pillType: x, reverseLabels: P, secondaryContent: S, secondaryDescription: L, switchStyle: F, testID: D }) => {
                     const R = (0, p.b)(),
                         I = (0, p.b)(),
                         K = (0, p.b)(),
                         M = r.createElement(c.ZP, { color: "text", id: R, role: "label", size: F ? "body" : "headline2", testID: "headline-label", weight: F ? "normal" : "bold" }, T),
-                        A = !!m && r.createElement(c.ZP, { color: "gray700", id: I, size: "subtext1", style: v ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
+                        A = !!m && r.createElement(c.ZP, { color: "gray700", id: I, size: "subtext1", style: B ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
                         W = r.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, L),
-                        N = v ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: x }, v) : null,
-                        O = r.createElement(r.Fragment, null, l ? N : null, r.createElement(i.Z, { style: [g.row, _ && g.marginBottom8] }, P ? A : M, l ? null : N), r.createElement(i.Z, { style: [g.row, P && g.marginTop4] }, P ? M : A), S || (L ? W : void 0)),
+                        N = B ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: x }, B) : null,
+                        z = r.createElement(r.Fragment, null, l ? N : null, r.createElement(i.Z, { style: [g.row, _ && g.marginBottom8] }, P ? A : M, l ? null : N), r.createElement(i.Z, { style: [g.row, P && g.marginTop4] }, P ? M : A), S || (L ? W : void 0)),
                         H = F ? "unset" : (t ? 100 / t : 100) + "%",
-                        V = F ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
-                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...V, f ? { maxWidth: H, ...g.grow } : null, 1 === a || f ? null : g.withMarginTop, a !== t && f && !F && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !F }, !!C && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), r.createElement(i.Z, { style: [g.labelContainer, F && g.alignCenter] }, !!_ && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, r.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, _)), "red" !== w && "yellow" !== w && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), O, n && !!E && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!k && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(c.ZP, { id: K, size: "subtext1", weight: "bold" }, k)), r.createElement("input", { "aria-describedby": `${I} ${K}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: Z, onChange: n ? s.Z : B, style: b, type: "radio" })), y && h ? h : null);
+                        O = F ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
+                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...O, f ? { maxWidth: H, ...g.grow } : null, 1 === a || f ? null : g.withMarginTop, a !== t && f && !F && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !F }, !!C && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), r.createElement(i.Z, { style: [g.labelContainer, F && g.alignCenter] }, !!_ && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, r.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, _)), "red" !== w && "yellow" !== w && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), z, n && !!E && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!k && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(c.ZP, { id: K, size: "subtext1", weight: "bold" }, k)), r.createElement("input", { "aria-describedby": `${I} ${K}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: v, onChange: n ? s.Z : Z, style: b, type: "radio" })), y && h ? h : null);
                 },
                 h = (e) => {
                     const a = r.useCallback(({ value: e, ...a }) => r.createElement(y, (0, n.Z)({}, a, { key: e })), []);
                     return r.createElement(l.Z, (0, n.Z)({}, e, { renderSelector: a }));
                 };
         },
+        748138: (e, a, t) => {
+            t.r(a), t.d(a, { default: () => s });
+            var n = t(202784),
+                r = t(890601),
+                l = t(783427),
+                i = t(347101);
+            const o = (e = {}) => {
+                const { direction: a } = (0, l.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const s = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.6f44198a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.fd412a4a.js.map

@@ -19,7 +19,7 @@
         139802: (e, l, a) => {
             a.d(l, { A: () => p });
             var n = a(552322),
-                r = a(668781),
+                r = a(19745),
                 t = a(202784),
                 s = a(107267),
                 i = a(607499),
@@ -57,7 +57,7 @@
                 r = a(718278),
                 t = a(664147),
                 s = a(549862),
-                i = a(941204);
+                i = a(332161);
             function o() {
                 return (0, n.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, n.jsx)(i.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, n.jsx)("div", { className: "bg-background text-text rounded-full shadow-lg border px-3 py-1.5 flex items-center gap-3 z-50", children: (0, n.jsxs)("div", { className: "flex items-center gap-1.5", children: [(0, n.jsx)(s.J, {}), (0, n.jsx)(t.i, {}), (0, n.jsx)(r.o, {})] }) })] });
             }
@@ -65,8 +65,8 @@
         664147: (e, l, a) => {
             a.d(l, { e: () => i, i: () => o });
             var n = a(552322),
-                r = a(941204),
-                t = a(849335),
+                r = a(332161),
+                t = a(261012),
                 s = a(202784);
             const i = "top_cursor",
                 o = () => {
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.1684b75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.b77508ea.js.map

@@ -152,8 +152,9 @@
                                 }
                                 case n.J.page_reset_to: {
                                     const { url: e, replace: n } = r,
-                                        o = "/i/jf" + (0, s.X)(t.prop(e), t);
-                                    o && (n ? location.replace(o) : (location.href = o));
+                                        o = (0, s.X)(t.prop(e), t),
+                                        c = o ? (o.includes("__escape_jf__=1") ? o.replace("__escape_jf__=1", "") : "/i/jf" + o) : void 0;
+                                    c && (n ? location.replace(c) : (location.href = c));
                                     break;
                                 }
                                 case n.J.page_post: {
@@ -803,4 +804,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c.d406b3fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c.3c8344ea.js.map

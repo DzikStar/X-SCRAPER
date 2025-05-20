@@ -307,6 +307,11 @@
             var s = e(552322);
             const c = (l) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, s.jsx)("path", { d: "M8.5 3C9.881 3 11 4.12 11 5.5v3C11 9.88 9.881 11 8.5 11h-3C4.119 11 3 9.88 3 8.5v-3C3 4.12 4.119 3 5.5 3h3zm7 0C14.119 3 13 4.12 13 5.5v3c0 1.38 1.119 2.5 2.5 2.5h3c1.381 0 2.5-1.12 2.5-2.5v-3C21 4.12 19.881 3 18.5 3h-3zM13 18.5c0 1.38 1.119 2.5 2.5 2.5h3c1.381 0 2.5-1.12 2.5-2.5v-3c0-1.38-1.119-2.5-2.5-2.5h-3c-1.381 0-2.5 1.12-2.5 2.5v3zM5.5 13C4.119 13 3 14.12 3 15.5v3C3 19.88 4.119 21 5.5 21h3c1.381 0 2.5-1.12 2.5-2.5v-3c0-1.38-1.119-2.5-2.5-2.5h-3z" }) });
         },
+        439252: (l, h, e) => {
+            e.d(h, { Z: () => c });
+            var s = e(552322);
+            const c = (l) => (0, s.jsx)("svg", { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, s.jsxs)("g", { fill: "transparent", children: [(0, s.jsx)("path", { id: "vector", d: "M11 4.00006H7.2C6.0799 4.00006 5.51984 4.00006 5.09202 4.21804C4.71569 4.40979 4.40973 4.71575 4.21799 5.09208C4 5.5199 4 6.07995 4 7.20006V16.8001C4 17.9202 4 18.4802 4.21799 18.908C4.40973 19.2844 4.71569 19.5903 5.09202 19.7821C5.51984 20.0001 6.0799 20.0001 7.2 20.0001H16.8C17.9201 20.0001 18.4802 20.0001 18.908 19.7821C19.2843 19.5903 19.5903 19.2844 19.782 18.908C20 18.4802 20 17.9202 20 16.8001V13.0001", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "round", strokeLinejoin: "round" }), (0, s.jsx)("path", { id: "vector_2", d: "M9 15V12.4142C9 12.149 9.10536 11.8946 9.29289 11.7071L17.3358 3.66421C18.1168 2.88316 19.3832 2.88316 20.1642 3.66421L20.3358 3.83578C21.1168 4.61683 21.1168 5.88316 20.3358 6.66421L12.2929 14.7071C12.1054 14.8946 11.851 15 11.5858 15H9Z", stroke: "currentColor", strokeWidth: 2, strokeLinecap: "square", strokeLinejoin: "round" })] }) });
+        },
         640006: (l, h, e) => {
             e.d(h, { Z: () => c });
             var s = e(552322);
@@ -389,4 +394,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b.063fb35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b.a0b135ea.js.map
