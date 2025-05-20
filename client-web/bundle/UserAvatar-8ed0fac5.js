@@ -23,8 +23,8 @@
                         r = n && i ? n / i : 1,
                         c = r > 1,
                         u = t ? 400 : d,
-                        h = c && n <= u ? m(a, u) : a,
-                        p = !c && i <= u ? m(s, u) : s;
+                        h = c && (!n || n <= u) ? m(a, u) : a,
+                        p = c || (i && !(i <= u)) ? s : m(s, u);
                     return o.Z.getContainDimensions({ width: h, height: p }, r);
                 },
                 l = (e) => {
@@ -43,7 +43,7 @@
                 I = (e, t) => {
                     switch (t.type) {
                         case "zoom":
-                            return { ...e, isZoomed: t.payload?.isZoomed, showControls: !t.payload?.isZoomed };
+                            return { ...e, isZoomed: t.payload.isZoomed, showControls: !t.payload.isZoomed };
                         case "tap":
                             return { ...e, showControls: !e.showControls };
                         default:
@@ -318,4 +318,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8ed0fac5.bc5e882a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8ed0fac5.d3e135ca.js.map

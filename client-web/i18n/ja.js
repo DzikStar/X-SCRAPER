@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new requests";
                 }),
                 f("ed93de0c", "ポストを分析中"),
-                f("d1d92e40", "More details"),
+                f("d1d92e40", "詳細情報"),
                 f("a6e89af8", "会話を開く"),
                 f("ica55d24", "新しいチャット"),
                 f("f794af9a", "ユーモアモード"),
@@ -4361,8 +4361,8 @@
                 f("g01599b6", "回答1"),
                 f("e02694e0", "回答2"),
                 f("h6867fcc", "この回答の方が好みです"),
-                f("acc4496c", "Try Grok Voice mode"),
-                f("jd36d190", "Access advanced features with Grok Android app"),
+                f("acc4496c", "Grok音声モードを試す"),
+                f("jd36d190", "Grok Androidアプリで高度な機能を利用できます"),
                 f("hf9afab0", "DeepSearchを有効にすると、インターネットとXをスキャンして情報を分析し、高速なエージェント検索によって詳細かつ論理的な回答を生成できます。"),
                 f("ef3b3f04", "シンキングを有効にすると、Xの推論モデルを使用できます。数学、科学、コーディングに最適です。もう少し頭を使う必要がある質問については、Grokに「もっとよくシンキングする」よう依頼することもできます。 "),
                 f("b43636b8", "Grok 3のご案内"),
@@ -5840,7 +5840,7 @@
                 f("ab1b3d38", "ノートリクエストデータはまだありません"),
                 f("c43fb933", "X開発者契約およびポリシー"),
                 f("af781666", "人々はどう思っているのでしょうか？"),
-                f("a1f414ee", "Share thoughts"),
+                f("a1f414ee", "意見をポストする"),
                 f("ed88e742", "トピックのリンクをコピー"),
                 f("h92fe1be", "現在のところ、コミュニティノートをご利用いただけません"),
                 f("f0dc1434", "コミュニティノートは現在、米国でのみご利用いただけます。"),
@@ -12029,6 +12029,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["（手数料", "%、最低", "）"];
@@ -12677,6 +12683,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", "と"];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", "さん、", "さん"];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", "、"];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13239,4 +13263,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.2ce36c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.9fa5364a.js.map

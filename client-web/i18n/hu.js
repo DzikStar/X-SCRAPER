@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new request" + l(e.count, "", "s");
                 }),
                 s("ed93de0c", "Bejegyzés elemzése"),
-                s("d1d92e40", "More details"),
+                s("d1d92e40", "További részletek"),
                 s("a6e89af8", "Nyílt beszélgetés"),
                 s("ica55d24", "Új csevegés"),
                 s("f794af9a", "Szórakoztató mód"),
@@ -4361,8 +4361,8 @@
                 s("g01599b6", "1. válasz"),
                 s("e02694e0", "2. válasz"),
                 s("h6867fcc", "Ez a válasz tetszik"),
-                s("acc4496c", "Try Grok Voice mode"),
-                s("jd36d190", "Access advanced features with Grok Android app"),
+                s("acc4496c", "Próbáld ki a Grok hangmódját!"),
+                s("jd36d190", "A Grok Andorid alkalmazásával hozzáférhetsz a különleges funkciókhoz"),
                 s("hf9afab0", "A DeepSearch engedélyezésével kereshetsz az interneten és az X-en, adatokat elemezhetsz és részletes, jól megalapozott válaszokat kaphatsz gyors, agentikus kereséssel."),
                 s("ef3b3f04", "A Gondolkodás engedélyezésével használhatod érvelési modellünket. A legjobb megoldás a matematika, tudományok és programozás terén. Megkérheted a Grokot arra is, hogy gondolkozzon keményebben bármilyen olyan témában, amelyhez nagyobb kapacitásra van szükség. "),
                 s("b43636b8", "Bemutatkozik a Grok 3"),
@@ -5840,7 +5840,7 @@
                 s("ab1b3d38", "A Megjegyzés kérésével kapcsolatos adatok jelenleg nem érhetők el"),
                 s("c43fb933", "X fejlesztői megállapodását és irányelveit"),
                 s("af781666", "Mit gondolnak az emberek?"),
-                s("a1f414ee", "Share thoughts"),
+                s("a1f414ee", "Gondolatok megosztása"),
                 s("ed88e742", "Témakör hivatkozásának másolása"),
                 s("h92fe1be", "Sajnos a Közösségi Megjegyzések nem érhető el jelenleg a számodra."),
                 s("f0dc1434", "A Közösségi Megjegyzések jelenleg csak az Egyesült Államokban érhető el"),
@@ -12032,6 +12032,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(a díja ", "%, min. ", ")"];
@@ -12680,6 +12686,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " és "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " és "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -12901,8 +12925,8 @@
                 c = (g._currencyNameFormat, g._currencyFormatterFn),
                 h = (g._validateParameterTypeDate, g._dateToPartsFormat, g._dateToPartsFormatterFn),
                 y = (g._dateFormat, g._dateFormatterFn),
-                v = g._relativeTimeFormatterFn,
-                u = g._unitFormatterFn;
+                u = g._relativeTimeFormatterFn,
+                v = g._unitFormatterFn;
             (g.b150923966 = m(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", b("truncate"), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0 E", other: "0 E" }, 4: { one: "00 E", other: "00 E" }, 5: { one: "000 E", other: "000 E" }, 6: { one: "0 M", other: "0 M" }, 7: { one: "00 M", other: "00 M" }, 8: { one: "000 M", other: "000 M" }, 9: { one: "0 Mrd", other: "0 Mrd" }, 10: { one: "00 Mrd", other: "00 Mrd" }, 11: { one: "000 Mrd", other: "000 Mrd" }, 12: { one: "0 B", other: "0 B" }, 13: { one: "00 B", other: "00 B" }, 14: { one: "000 B", other: "000 B" }, maxExponent: 14 }], g("hu").pluralGenerator({}))),
                 (g.b376034226 = m(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", b(), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (g.b1675896596 = m(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", b("round"), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13101,23 +13125,23 @@
                 (g.b941513238 = y(g("hu").dateToPartsFormatter({ date: "medium" }))),
                 (g.b1064431906 = y(g("hu").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (g.a188813534 = y(g("hu").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (g.a6329114 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} nap múlva", "relativeTimePattern-count-other": "{0} nap múlva" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} nappal ezelőtt", "relativeTimePattern-count-other": "{0} nappal ezelőtt" }, "relative-type--2": "tegnapelőtt", "relative-type--1": "tegnap", "relative-type-0": "ma", "relative-type-1": "holnap", "relative-type-2": "holnapután" })),
-                (g.b512136449 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "másodperc", one: "{0} másodperc", other: "{0} másodperc", perUnitPattern: "{0}/másodperc" } })),
-                (g.a1895867551 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "perc", one: "{0} perc", other: "{0} perc", perUnitPattern: "{0}/perc" } })),
-                (g.a615497455 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "óra", one: "{0} óra", other: "{0} óra", perUnitPattern: "{0}/óra" } })),
-                (g.b845490560 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "s", one: "{0} s", other: "{0} s", perUnitPattern: "{0}/s" } })),
-                (g.b1741019104 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "min", one: "{0} min", other: "{0} min", perUnitPattern: "{0}/min" } })),
-                (g.a478932592 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "h", one: "{0} h", other: "{0} h", perUnitPattern: "{0}/h" } })),
-                (g.a1969458612 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "nap", one: "{0} nap", other: "{0} nap", perUnitPattern: "{0}/nap" } })),
-                (g.a44982067 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "nap", one: "{0} nap", other: "{0} nap", perUnitPattern: "{0}/nap" } })),
-                (g.b1838014184 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "hónap", one: "{0} h.", other: "{0} h.", perUnitPattern: "{0}/hó" } })),
-                (g.b128812137 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "hónap", one: "{0} hónap", other: "{0} hónap", perUnitPattern: "{0}/hónap" } })),
-                (g.a1883494985 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "év", one: "{0} év", other: "{0} év", perUnitPattern: "{0}/év" } })),
-                (g.a2096286984 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "év", one: "{0} év", other: "{0} év", perUnitPattern: "{0}/év" } })),
-                (g.b1258004371 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "s", one: "{0} s", other: "{0} s", perUnitPattern: "{0}/s" } })),
-                (g.a375675597 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "min", one: "{0} min", other: "{0} min", perUnitPattern: "{0}/min" } })),
-                (g.b661091715 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "h", one: "{0} h", other: "{0} h", perUnitPattern: "{0}/h" } })),
-                (g.b974902332 = u(g("hu").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "s", one: "{0} s", other: "{0} s", perUnitPattern: "{0}/s" } })),
+                (g.a6329114 = u(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} nap múlva", "relativeTimePattern-count-other": "{0} nap múlva" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} nappal ezelőtt", "relativeTimePattern-count-other": "{0} nappal ezelőtt" }, "relative-type--2": "tegnapelőtt", "relative-type--1": "tegnap", "relative-type-0": "ma", "relative-type-1": "holnap", "relative-type-2": "holnapután" })),
+                (g.b512136449 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "másodperc", one: "{0} másodperc", other: "{0} másodperc", perUnitPattern: "{0}/másodperc" } })),
+                (g.a1895867551 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "perc", one: "{0} perc", other: "{0} perc", perUnitPattern: "{0}/perc" } })),
+                (g.a615497455 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "óra", one: "{0} óra", other: "{0} óra", perUnitPattern: "{0}/óra" } })),
+                (g.b845490560 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "s", one: "{0} s", other: "{0} s", perUnitPattern: "{0}/s" } })),
+                (g.b1741019104 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "min", one: "{0} min", other: "{0} min", perUnitPattern: "{0}/min" } })),
+                (g.a478932592 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "h", one: "{0} h", other: "{0} h", perUnitPattern: "{0}/h" } })),
+                (g.a1969458612 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "nap", one: "{0} nap", other: "{0} nap", perUnitPattern: "{0}/nap" } })),
+                (g.a44982067 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "nap", one: "{0} nap", other: "{0} nap", perUnitPattern: "{0}/nap" } })),
+                (g.b1838014184 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "hónap", one: "{0} h.", other: "{0} h.", perUnitPattern: "{0}/hó" } })),
+                (g.b128812137 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "hónap", one: "{0} hónap", other: "{0} hónap", perUnitPattern: "{0}/hónap" } })),
+                (g.a1883494985 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "év", one: "{0} év", other: "{0} év", perUnitPattern: "{0}/év" } })),
+                (g.a2096286984 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0} per {1}", unitProperties: { displayName: "év", one: "{0} év", other: "{0} év", perUnitPattern: "{0}/év" } })),
+                (g.b1258004371 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "s", one: "{0} s", other: "{0} s", perUnitPattern: "{0}/s" } })),
+                (g.a375675597 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "min", one: "{0} min", other: "{0} min", perUnitPattern: "{0}/min" } })),
+                (g.b661091715 = v(g("hu").numberFormatter({}), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "h", one: "{0} h", other: "{0} h", perUnitPattern: "{0}/h" } })),
+                (g.b974902332 = v(g("hu").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), g("hu").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "s", one: "{0} s", other: "{0} s", perUnitPattern: "{0}/s" } })),
                 s("d58baa7f", g.b150923966),
                 s("ia24dc8d", g.b376034226),
                 s("iab73d4b", g.b1675896596),
@@ -13242,4 +13266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.1dfdd41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.2a81080a.js.map

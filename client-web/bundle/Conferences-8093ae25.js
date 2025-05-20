@@ -56,7 +56,7 @@
             }
         },
         124205: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => Xn });
+            n.r(t), n.d(t, { default: () => er });
             var r = n(807896),
                 l = n(202784),
                 a = n(400752),
@@ -69,92 +69,93 @@
                 d = n(167630),
                 f = n(366635),
                 p = n(642153),
-                E = n(154003),
-                g = n(811176),
-                h = n(392237),
-                b = n(487552),
-                v = n(459679),
-                Z = n(420182),
-                y = n(600291),
-                x = n(381904),
-                C = n(447735),
-                w = n(135328),
-                D = n(49998),
-                P = n(126420),
-                k = n(53317),
-                S = n(582129),
-                I = n(136397),
-                R = n(139613),
-                H = n(41931),
-                M = n(4427),
-                z = n(790997),
-                _ = n(758614),
-                L = n(712612),
-                F = n(895229),
-                B = n(509599),
-                W = n(409953),
-                j = n(520197),
-                $ = n(309487),
-                T = n(934871),
-                Q = n(565235),
-                O = n(251067),
-                A = n(340905);
-            function V() {
-                if (!(0, O.fH)(O.vw.prod)) return l.createElement(E.ZP, { icon: Y, link: "https://twitter.enterprise.slack.com/archives/C07SWM2DKKL" }, "Feedback");
+                E = n(182714),
+                g = n(154003),
+                h = n(811176),
+                b = n(392237),
+                v = n(487552),
+                Z = n(459679),
+                y = n(420182),
+                x = n(600291),
+                C = n(381904),
+                w = n(447735),
+                D = n(135328),
+                P = n(49998),
+                k = n(126420),
+                S = n(53317),
+                I = n(582129),
+                R = n(136397),
+                H = n(139613),
+                M = n(41931),
+                z = n(4427),
+                _ = n(790997),
+                L = n(758614),
+                F = n(712612),
+                B = n(895229),
+                W = n(509599),
+                j = n(409953),
+                $ = n(520197),
+                T = n(309487),
+                Q = n(934871),
+                O = n(565235),
+                A = n(251067),
+                V = n(340905);
+            function Y() {
+                if (!(0, A.fH)(A.vw.prod)) return l.createElement(g.ZP, { icon: G, link: "https://twitter.enterprise.slack.com/archives/C07SWM2DKKL" }, "Feedback");
             }
-            const Y = l.createElement(A.default, null);
-            var G = n(901832),
-                J = n(801351),
-                N = n(396963);
-            function K() {
-                return (0, a.Dv)(J.s) ? l.createElement(G.Vs, null) : null;
-            }
+            const G = l.createElement(V.default, null);
+            var J = n(901832),
+                N = n(801351),
+                K = n(396963);
             function U() {
-                const e = (0, N.nY)();
-                return (0, a.Dv)(q) ? l.createElement(E.ZP, { link: `/i/conferences/${e}/recordings` }, "View recordings") : null;
+                return (0, a.Dv)(N.s) ? l.createElement(J.Vs, null) : null;
             }
-            const q = (0, o.cn)((e) => (e(B.jQ), e(B.jQ.resolved)?.recording_urls));
-            var X = n(441737),
-                ee = n(292627),
-                te = n(708852),
-                ne = n(537392),
-                re = n(138099),
-                le = n(530732),
-                ae = n(813751),
-                oe = n(715601),
-                ce = n(42134),
-                ie = n(869508),
-                se = n(106006),
-                ue = n(595561),
-                me = n(645903),
-                de = n(947433),
-                fe = n(562041),
-                pe = n(359127),
-                Ee = n(526250),
-                ge = n(645708),
-                he = n(251836),
-                be = n(811233),
-                ve = n(250265),
-                Ze = n(310088),
-                ye = n(194661),
-                xe = n(98440),
-                Ce = n(323265),
-                we = n(933794),
-                De = n(94751),
-                Pe = n(23425);
-            const ke = Ce.ZP.isMac() ? " (⌘+ctrl+c)" : Ce.ZP.isDesktopOS() ? " (ctrl+alt+c)" : "",
-                Se = { label: `Chat${ke}` },
-                Ie = l.createElement(ye.default, null),
+            function q() {
+                const e = (0, K.nY)();
+                return (0, a.Dv)(X) ? l.createElement(g.ZP, { link: `/i/conferences/${e}/recordings` }, "View recordings") : null;
+            }
+            const X = (0, o.cn)((e) => (e(W.jQ), e(W.jQ.resolved)?.recording_urls));
+            var ee = n(441737),
+                te = n(292627),
+                ne = n(708852),
+                re = n(537392),
+                le = n(138099),
+                ae = n(530732),
+                oe = n(813751),
+                ce = n(715601),
+                ie = n(42134),
+                se = n(869508),
+                ue = n(106006),
+                me = n(595561),
+                de = n(645903),
+                fe = n(947433),
+                pe = n(562041),
+                Ee = n(359127),
+                ge = n(526250),
+                he = n(645708),
+                be = n(251836),
+                ve = n(811233),
+                Ze = n(250265),
+                ye = n(310088),
+                xe = n(194661),
+                Ce = n(98440),
+                we = n(323265),
+                De = n(933794),
+                Pe = n(94751),
+                ke = n(23425);
+            const Se = we.ZP.isMac() ? " (⌘+ctrl+c)" : we.ZP.isDesktopOS() ? " (ctrl+alt+c)" : "",
+                Ie = { label: `Chat${Se}` },
                 Re = l.createElement(xe.default, null),
-                He = l.createElement(Me, null);
-            function Me() {
-                const e = (0, a.Dv)(Pe.xK),
-                    t = (0, a.Dv)(De.Fz);
-                return l.createElement(i.Z, null, e ? Re : Ie, t && !e && l.createElement(Ze.Z, { pip: !0, style: _e.badge, unreadCountLabel: () => "" }));
-            }
+                He = l.createElement(Ce.default, null),
+                Me = l.createElement(ze, null);
             function ze() {
-                const e = (0, a.Dv)(Pe.xK),
-                    t = (0, a.b9)(Pe.hc),
+                const e = (0, a.Dv)(ke.xK),
+                    t = (0, a.Dv)(Pe.Fz);
+                return l.createElement(i.Z, null, e ? He : Re, t && !e && l.createElement(ye.Z, { pip: !0, style: Le.badge, unreadCountLabel: () => "" }));
+            }
+            function _e() {
+                const e = (0, a.Dv)(ke.xK),
+                    t = (0, a.b9)(ke.hc),
                     n = () => {
                         t();
                     },
@@ -166,40 +167,40 @@
                             n();
                         },
                     },
-                    o = l.createElement(E.ZP, { "aria-label": "Chat", borderColor: "transparent", color: "text", hoverLabel: Se, icon: He, onPress: n, size: "large", type: e ? "primaryFilled" : "primaryOutlined" });
-                return l.createElement(we.Z, { children: o, handlers: r });
+                    o = l.createElement(g.ZP, { "aria-label": "Chat", borderColor: "transparent", color: "text", hoverLabel: Ie, icon: Me, onPress: n, size: "large", type: e ? "primaryFilled" : "primaryOutlined" });
+                return l.createElement(De.Z, { children: o, handlers: r });
             }
-            const _e = h.default.create((e) => ({ badge: { end: -e.spacesPx.space2 } }));
-            var Le = n(502608),
-                Fe = n(297896);
-            const Be = "Leave conference",
-                We = { label: Be, preferredVerticalOrientation: "up" },
-                je = l.createElement(Fe.default, null);
-            function $e({ children: e }) {
-                const t = (0, S.zr)(),
-                    n = (0, N.aQ)(),
+            const Le = b.default.create((e) => ({ badge: { end: -e.spacesPx.space2 } }));
+            var Fe = n(502608),
+                Be = n(297896);
+            const We = "Leave conference",
+                je = { label: We, preferredVerticalOrientation: "up" },
+                $e = l.createElement(Be.default, null);
+            function Te({ children: e }) {
+                const t = (0, I.zr)(),
+                    n = (0, K.aQ)(),
                     r = l.useCallback(() => {
                         t(n);
                     }, [t, n]);
-                return l.createElement(E.ZP, { "aria-label": Be, children: e, hoverLabel: We, icon: je, onPress: r, size: "large", type: "destructiveFilled" });
+                return l.createElement(g.ZP, { "aria-label": We, children: e, hoverLabel: je, icon: $e, onPress: r, size: "large", type: "destructiveFilled" });
             }
-            var Te = n(977419),
-                Qe = n(588441),
-                Oe = n(447854),
-                Ae = n(536387),
-                Ve = (n(136728), n(476984)),
-                Ye = n.n(Ve);
-            function Ge(e) {
-                const t = (0, a.Dv)(Ne);
+            var Qe = n(977419),
+                Oe = n(588441),
+                Ae = n(447854),
+                Ve = n(536387),
+                Ye = (n(136728), n(476984)),
+                Ge = n.n(Ye);
+            function Je(e) {
+                const t = (0, a.Dv)(Ke);
                 return (n) => {
                     n ? t.set(e, n) : t.delete(e);
                 };
             }
-            function Je(e) {
-                const t = (0, a.b9)(Ue),
-                    n = (0, a.b9)(qe);
+            function Ne(e) {
+                const t = (0, a.b9)(qe),
+                    n = (0, a.b9)(Xe);
                 return (
-                    Xe(() => {
+                    et(() => {
                         t();
                     }, [n, e]),
                     l.useLayoutEffect(() => {
@@ -208,19 +209,19 @@
                     e
                 );
             }
-            const Ne = (0, o.cn)(() => new Map()),
-                Ke = (0, o.cn)(),
-                Ue = (0, o.cn)(null, (e, t) => {
-                    if (e(Ke)) return;
-                    const n = e(Ne),
+            const Ke = (0, o.cn)(() => new Map()),
+                Ue = (0, o.cn)(),
+                qe = (0, o.cn)(null, (e, t) => {
+                    if (e(Ue)) return;
+                    const n = e(Ke),
                         r = [],
                         l = new Map();
                     for (const [e, t] of n.entries()) document.body.contains(t) ? (l.set(e, t.getBoundingClientRect()), t.getAnimations().forEach((e) => e.cancel())) : r.push(e);
-                    r.forEach((e) => n.delete(e)), t(Ke, l);
+                    r.forEach((e) => n.delete(e)), t(Ue, l);
                 }),
-                qe = (0, o.cn)(null, (e, t) => {
-                    const n = e(Ne),
-                        r = e(Ke);
+                Xe = (0, o.cn)(null, (e, t) => {
+                    const n = e(Ke),
+                        r = e(Ue);
                     if (r) {
                         for (const [e, t] of r.entries()) {
                             const r = n.get(e);
@@ -232,59 +233,59 @@
                                 i = t.height / l.height;
                             r.animate([{ transform: `translate(${a}px, ${o}px) scale(${c}, ${i})`, easing: "ease" }, { transform: "" }], { duration: 300 });
                         }
-                        t(Ke, void 0);
+                        t(Ue, void 0);
                     }
                 });
-            function Xe(e, t) {
+            function et(e, t) {
                 const n = l.useRef(t);
-                Ye()(n.current, t) || e(), (n.current = t);
+                Ge()(n.current, t) || e(), (n.current = t);
             }
-            var et = n(458884),
-                tt = n(64634),
-                nt = n(34540),
-                rt = n.n(nt),
-                lt = n(822240);
-            function at({ h: e, n: t, w: n, ...r }) {
+            var tt = n(458884),
+                nt = n(64634),
+                rt = n(34540),
+                lt = n.n(rt),
+                at = n(822240);
+            function ot({ h: e, n: t, w: n, ...r }) {
                 const { nc: l } = r;
                 return Math.min(n / l, ((e / Math.ceil(t / l)) * 16) / 9);
             }
-            var ot = n(75629),
-                ct = n(60089),
-                it = n(826868);
-            function st() {
-                const e = (0, ce.rx)(),
-                    t = (0, te.Ji)(),
-                    n = (0, a.Dv)(ge.Lv);
-                return l.createElement(i.Z, { style: Et.row }, l.createElement(i.Z, { style: Et.flex }, l.createElement(Qe.Z, { style: Et.videosContainer }, l.createElement(ut, null)), e && l.createElement(Oe.Z, { audioSpaceId: e, height: 150 }), l.createElement(it.W, null)), l.createElement(ee.Z.Modal, null, l.createElement(ot.F, null)), t && !n && l.createElement(et.C, null), l.createElement(tt.h, null), l.createElement(i.Z, { style: Et.bottomStart }, l.createElement(ve.xG, null)));
-            }
+            var ct = n(75629),
+                it = n(60089),
+                st = n(826868);
             function ut() {
-                const e = (0, a.Dv)(z.r1),
+                const e = (0, ie.rx)(),
+                    t = (0, ne.Ji)(),
+                    n = (0, a.Dv)(he.Lv);
+                return l.createElement(i.Z, { style: gt.row }, l.createElement(i.Z, { style: gt.flex }, l.createElement(Oe.Z, { style: gt.videosContainer }, l.createElement(mt, null)), e && l.createElement(Ae.Z, { audioSpaceId: e, height: 150 }), l.createElement(st.W, null)), l.createElement(te.Z.Modal, null, l.createElement(ct.F, null)), t && !n && l.createElement(tt.C, null), l.createElement(nt.h, null), l.createElement(i.Z, { style: gt.bottomStart }, l.createElement(Ze.xG, null)));
+            }
+            function mt() {
+                const e = (0, a.Dv)(_.r1),
                     t = e.length + 1,
-                    n = Je(
-                        (0, ne.Zx)(({ containerHeight: e, containerWidth: n }) =>
+                    n = Ne(
+                        (0, re.Zx)(({ containerHeight: e, containerWidth: n }) =>
                             (function ({ h: e, n: t, w: n }) {
                                 return Math.max(Math.min(t, Math.floor(n / 160) * Math.floor(e / 90)), 1);
                             })({ n: t, w: n, h: e }),
                         ),
                     ),
-                    r = (0, a.Dv)((0, z.l5)(n)),
-                    o = Je(
-                        (0, ne.Zx)(({ containerHeight: e, containerWidth: t }) =>
+                    r = (0, a.Dv)((0, _.l5)(n)),
+                    o = Ne(
+                        (0, re.Zx)(({ containerHeight: e, containerWidth: t }) =>
                             (function ({ h: e, n: t, w: n }) {
                                 if (2 === t) return 1;
                                 const r = Math.ceil(Math.sqrt(t)),
                                     l = n / e,
                                     a = 16 / 9;
                                 if (l > a) {
-                                    const l = rt()(
-                                        (0, lt.Z)(1, r + 1).map((r) => ({ count: r, value: at({ n: t, w: n, h: e, nc: Math.ceil(t / r) }) })),
+                                    const l = lt()(
+                                        (0, at.Z)(1, r + 1).map((r) => ({ count: r, value: ot({ n: t, w: n, h: e, nc: Math.ceil(t / r) }) })),
                                         ({ value: e }) => e,
                                     )?.count;
                                     return l ? Math.ceil(t / l) : r;
                                 }
                                 return l < a
-                                    ? (rt()(
-                                          (0, lt.Z)(1, r + 1).map((r) => ({ count: r, value: at({ n: t, w: n, h: e, nc: r }) })),
+                                    ? (lt()(
+                                          (0, at.Z)(1, r + 1).map((r) => ({ count: r, value: ot({ n: t, w: n, h: e, nc: r }) })),
                                           ({ value: e }) => e,
                                       )?.count ?? r)
                                     : r;
@@ -294,251 +295,251 @@
                     c = 1 === r.length ? 1 : r.length + 1,
                     s = Math.ceil(c / o),
                     u = { gridTemplateColumns: `repeat(${o}, 1fr)`, aspectRatio: `${16 * o} / ${9 * s}` },
-                    m = (0, ne.Zx)(({ containerHeight: e, containerWidth: t }) => ((16 * o) / (9 * s) >= t / e ? Et.fullWidth : Et.fullHeight));
+                    m = (0, re.Zx)(({ containerHeight: e, containerWidth: t }) => ((16 * o) / (9 * s) >= t / e ? gt.fullWidth : gt.fullHeight));
                 return l.createElement(
                     l.Fragment,
                     null,
                     l.createElement(
                         i.Z,
-                        { style: [Et.videos, u, m] },
-                        r.map((e) => l.createElement(pt, { feedId: e, key: e })),
-                        n > 2 && n !== t && l.createElement(mt, { allFeeds: e, feedIds: r }),
-                        1 !== r.length && l.createElement(ft, null),
+                        { style: [gt.videos, u, m] },
+                        r.map((e) => l.createElement(Et, { feedId: e, key: e })),
+                        n > 2 && n !== t && l.createElement(dt, { allFeeds: e, feedIds: r }),
+                        1 !== r.length && l.createElement(pt, null),
                     ),
-                    1 === r.length && l.createElement(ft, null),
+                    1 === r.length && l.createElement(pt, null),
                 );
             }
-            function mt(e) {
+            function dt(e) {
                 const { avatarUrls: t, count: n } = (function ({ allFeeds: e, feedIds: t }) {
                     const n = new Set(t),
                         r = e.filter((e) => !n.has(e)),
-                        l = (0, Ae.xO)(),
-                        a = (0, v.Z)(r, (e) => l.get((0, N.pB)(e)));
+                        l = (0, Ve.xO)(),
+                        a = (0, Z.Z)(r, (e) => l.get((0, K.pB)(e)));
                     return { avatarUrls: a, count: r.length };
                 })(e);
-                return l.createElement(i.Z, { style: Et.overflowContainer }, l.createElement(p.Z, { userAvatarUrls: t }), l.createElement(u.ZP, null, "+", n, " others"));
+                return l.createElement(i.Z, { style: gt.overflowContainer }, l.createElement(p.Z, { userAvatarUrls: t }), l.createElement(u.ZP, null, "+", n, " others"));
             }
-            const dt = (0, o.cn)((e) => 1 === e(z.r1).length);
-            function ft() {
-                const e = (0, a.Dv)(dt),
-                    t = Ge();
-                return l.createElement(i.Z, { ref: t, style: e ? Et.hover : Et.videoContainer }, l.createElement(ct.Ou, { isListSafe: e }));
+            const ft = (0, o.cn)((e) => 1 === e(_.r1).length);
+            function pt() {
+                const e = (0, a.Dv)(ft),
+                    t = Je();
+                return l.createElement(i.Z, { ref: t, style: e ? gt.hover : gt.videoContainer }, l.createElement(it.Ou, { isListSafe: e }));
             }
-            function pt({ feedId: e }) {
-                const t = (0, N.Ou)(e),
-                    n = (0, N.CO)(e),
-                    r = Ge(e);
-                return l.createElement(i.Z, { ref: r, style: Et.videoContainer }, l.createElement(ct.nA, { feedId: e, userAvatar: t, userName: n }));
+            function Et({ feedId: e }) {
+                const t = (0, K.Ou)(e),
+                    n = (0, K.CO)(e),
+                    r = Je(e);
+                return l.createElement(i.Z, { ref: r, style: gt.videoContainer }, l.createElement(it.nA, { feedId: e, userAvatar: t, userName: n }));
             }
-            const Et = h.default.create((e) => ({ videoContainer: { aspectRatio: "16 / 9", maxWidth: "100%" }, overflowContainer: { contain: "paint", justifyContent: "center", alignItems: "center", aspectRatio: "16/9", backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.large, maxWidth: "100%" }, flex: { flexGrow: 1, flexShrink: 1 }, videosContainer: { flexGrow: 1, flexShrink: 1, justifyContent: "center" }, videos: { flexShrink: 1, display: "grid", margin: "auto", rowGap: e.spaces.space8, columnGap: 4.5 * e.scaleMultiplier, paddingHorizontal: e.spaces.space8, paddingVertical: 4.5 * e.scaleMultiplier }, hover: { position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16, width: "25%", boxShadow: e.boxShadows.medium, borderRadius: e.borderRadii.large }, bottomStart: { bottom: e.spaces.space16, start: e.spaces.space16, position: "fixed" }, row: { flexDirection: "row", flexGrow: 1, flexShrink: 1 }, fullWidth: { width: "100%" }, fullHeight: { height: "100%" } }));
-            var gt = n(529356),
-                ht = n(47086),
-                bt = n(254810);
-            function vt({ children: e }) {
-                const t = (0, bt.LK)(),
-                    n = (0, a.Dv)(bt.vl.resolved),
-                    r = (0, a.Dv)(bt.jq);
-                return t ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: At.badgeContainer }, l.createElement(Pt, null))) : n && !n.length ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: At.badgeContainer }, l.createElement(Rt, null))) : r ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: At.badgeContainer }, l.createElement(_t, null))) : e;
+            const gt = b.default.create((e) => ({ videoContainer: { aspectRatio: "16 / 9", maxWidth: "100%" }, overflowContainer: { contain: "paint", justifyContent: "center", alignItems: "center", aspectRatio: "16/9", backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.large, maxWidth: "100%" }, flex: { flexGrow: 1, flexShrink: 1 }, videosContainer: { flexGrow: 1, flexShrink: 1, justifyContent: "center" }, videos: { flexShrink: 1, display: "grid", margin: "auto", rowGap: e.spaces.space8, columnGap: 4.5 * e.scaleMultiplier, paddingHorizontal: e.spaces.space8, paddingVertical: 4.5 * e.scaleMultiplier }, hover: { position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16, width: "25%", boxShadow: e.boxShadows.medium, borderRadius: e.borderRadii.large }, bottomStart: { bottom: e.spaces.space16, start: e.spaces.space16, position: "fixed" }, row: { flexDirection: "row", flexGrow: 1, flexShrink: 1 }, fullWidth: { width: "100%" }, fullHeight: { height: "100%" } }));
+            var ht = n(529356),
+                bt = n(47086),
+                vt = n(254810);
+            function Zt({ children: e }) {
+                const t = (0, vt.LK)(),
+                    n = (0, a.Dv)(vt.vl.resolved),
+                    r = (0, a.Dv)(vt.jq);
+                return t ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: Vt.badgeContainer }, l.createElement(kt, null))) : n && !n.length ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: Vt.badgeContainer }, l.createElement(Ht, null))) : r ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: Vt.badgeContainer }, l.createElement(Lt, null))) : e;
             }
-            function Zt(e) {
+            function yt(e) {
                 const { interstitialHeadline: t, interstitialSubtext: n, label: r } = e,
                     a = l.useMemo(() => ({ label: r, preferredVerticalOrientation: "up" }), [r]),
                     [o, c] = l.useState(!1);
-                return l.createElement(l.Fragment, null, l.createElement(E.ZP, { "aria-label": r, hoverLabel: a, icon: Vt, onPress: () => c(!0), style: At.badge, type: "primaryText" }), o && l.createElement(gt.Z, { actionLabel: xt, enableMaskForDismiss: !0, headline: t, onAction: () => c(!1), onClose: () => c(!1), subtext: n }));
+                return l.createElement(l.Fragment, null, l.createElement(g.ZP, { "aria-label": r, hoverLabel: a, icon: Yt, onPress: () => c(!0), style: Vt.badge, type: "primaryText" }), o && l.createElement(ht.Z, { actionLabel: Ct, enableMaskForDismiss: !0, headline: t, onAction: () => c(!1), onClose: () => c(!1), subtext: n }));
             }
-            const yt = "Permission denied",
-                xt = "Dismiss",
-                Ct = "Your microphone permission is denied.",
-                wt = "Please enable your microphone in your browser settings",
-                Dt = "Please enable your microphone in your browser settings. This can be found by clicking the control button to the left of the address bar.";
-            function Pt() {
-                return l.createElement(Zt, { interstitialHeadline: Ct, interstitialSubtext: Ce.ZP.isChrome() ? Dt : wt, label: yt });
+            const xt = "Permission denied",
+                Ct = "Dismiss",
+                wt = "Your microphone permission is denied.",
+                Dt = "Please enable your microphone in your browser settings",
+                Pt = "Please enable your microphone in your browser settings. This can be found by clicking the control button to the left of the address bar.";
+            function kt() {
+                return l.createElement(yt, { interstitialHeadline: wt, interstitialSubtext: we.ZP.isChrome() ? Pt : Dt, label: xt });
             }
-            const kt = "No microphone found",
-                St = "You don't have a microphone connected.",
-                It = "Please connect a microphone to your device speak in this conference.";
-            function Rt() {
-                return l.createElement(Zt, { interstitialHeadline: St, interstitialSubtext: It, label: kt });
+            const St = "No microphone found",
+                It = "You don't have a microphone connected.",
+                Rt = "Please connect a microphone to your device speak in this conference.";
+            function Ht() {
+                return l.createElement(yt, { interstitialHeadline: It, interstitialSubtext: Rt, label: St });
             }
-            const Ht = "No microphone audio detected",
-                Mt = "No microphone audio detected.",
-                zt = "Please check if your microphone or your system audio is not muted or switch to a different microphone.";
-            function _t() {
-                return l.createElement(Zt, { interstitialHeadline: Mt, interstitialSubtext: zt, label: Ht });
+            const Mt = "No microphone audio detected",
+                zt = "No microphone audio detected.",
+                _t = "Please check if your microphone or your system audio is not muted or switch to a different microphone.";
+            function Lt() {
+                return l.createElement(yt, { interstitialHeadline: zt, interstitialSubtext: _t, label: Mt });
             }
-            function Lt({ children: e }) {
-                const t = (0, T.rW)(),
-                    n = (0, a.Dv)(T.cf.resolved);
-                return t ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: At.badgeContainer }, l.createElement(jt, null))) : n && !n.length ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: At.badgeContainer }, l.createElement(Ot, null))) : e;
+            function Ft({ children: e }) {
+                const t = (0, Q.rW)(),
+                    n = (0, a.Dv)(Q.cf.resolved);
+                return t ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: Vt.badgeContainer }, l.createElement($t, null))) : n && !n.length ? l.createElement(i.Z, null, e, l.createElement(i.Z, { style: Vt.badgeContainer }, l.createElement(At, null))) : e;
             }
-            const Ft = "Your camera permission is denied.",
-                Bt = "Please enable your camera in your browser settings",
-                Wt = "Please enable your camera in your browser settings. This can be found by clicking the control button to the left of the address bar.";
-            function jt() {
-                return l.createElement(Zt, { interstitialHeadline: Ft, interstitialSubtext: Ce.ZP.isChrome() ? Wt : Bt, label: yt });
+            const Bt = "Your camera permission is denied.",
+                Wt = "Please enable your camera in your browser settings",
+                jt = "Please enable your camera in your browser settings. This can be found by clicking the control button to the left of the address bar.";
+            function $t() {
+                return l.createElement(yt, { interstitialHeadline: Bt, interstitialSubtext: we.ZP.isChrome() ? jt : Wt, label: xt });
             }
-            const $t = "No camera found",
-                Tt = "You don't have a camera connected",
-                Qt = "Please connect a camera to your device show present in this conference";
-            function Ot() {
-                return l.createElement(Zt, { interstitialHeadline: Tt, interstitialSubtext: Qt, label: $t });
+            const Tt = "No camera found",
+                Qt = "You don't have a camera connected",
+                Ot = "Please connect a camera to your device show present in this conference";
+            function At() {
+                return l.createElement(yt, { interstitialHeadline: Qt, interstitialSubtext: Ot, label: Tt });
             }
-            const At = h.default.create((e) => ({ badgeContainer: { pointerEvents: "none", position: "absolute", inset: 0, transform: "rotate(45deg) translateY(-50%) rotate(-45deg)", alignItems: "center", justifyContent: "center" }, badge: { pointerEvents: "auto" }, badgeIcon: { color: e.colors.yellow500, backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.infinite }, chromeHelp: { position: "fixed", top: 0, start: 0, padding: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.medium } })),
-                Vt = l.createElement(ht.default, { style: At.badgeIcon });
-            var Yt = n(149170),
-                Gt = n(684869),
-                Jt = n(503195),
-                Nt = n(430895),
-                Kt = n(941563),
-                Ut = n(136483),
-                qt = n(72591),
-                Xt = n(413522),
-                en = n(521799),
-                tn = n(910245),
-                nn = n(835515),
-                rn = n(280859),
-                ln = n(122411);
-            const an = { label: "More" },
-                on = l.createElement(Yt.default, null);
-            function cn() {
-                return (0, rn.Nt)(), l.createElement(i.Z, null, l.createElement(E.ZP, { hoverLabel: an, icon: on, renderMenu: sn, size: "large" }));
+            const Vt = b.default.create((e) => ({ badgeContainer: { pointerEvents: "none", position: "absolute", inset: 0, transform: "rotate(45deg) translateY(-50%) rotate(-45deg)", alignItems: "center", justifyContent: "center" }, badge: { pointerEvents: "auto" }, badgeIcon: { color: e.colors.yellow500, backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.infinite }, chromeHelp: { position: "fixed", top: 0, start: 0, padding: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.medium } })),
+                Yt = l.createElement(bt.default, { style: Vt.badgeIcon });
+            var Gt = n(149170),
+                Jt = n(684869),
+                Nt = n(503195),
+                Kt = n(430895),
+                Ut = n(941563),
+                qt = n(136483),
+                Xt = n(72591),
+                en = n(413522),
+                tn = n(521799),
+                nn = n(910245),
+                rn = n(835515),
+                ln = n(280859),
+                an = n(122411);
+            const on = { label: "More" },
+                cn = l.createElement(Gt.default, null);
+            function sn() {
+                return (0, ln.Nt)(), l.createElement(i.Z, null, l.createElement(g.ZP, { hoverLabel: on, icon: cn, renderMenu: un, size: "large" }));
             }
-            const sn = (e) => l.createElement(un, { onClose: e });
-            function un({ onClose: e }) {
-                const t = [mn(), (0, de.c)(), dn(), fn(), pn(), En(), gn(), ...hn()].filter(Boolean);
-                return l.createElement(g.Z, { items: t, onCloseRequested: e, preferredHorizontalOrientation: "right", shouldCloseOnClick: !0 });
+            const un = (e) => l.createElement(mn, { onClose: e });
+            function mn({ onClose: e }) {
+                const t = [dn(), (0, fe.c)(), fn(), pn(), En(), gn(), hn(), ...bn()].filter(Boolean);
+                return l.createElement(h.Z, { items: t, onCloseRequested: e, preferredHorizontalOrientation: "right", shouldCloseOnClick: !0 });
             }
-            function mn() {
-                return (0, rn.Nt)()
+            function dn() {
+                return (0, ln.Nt)()
                     ? {
-                          Icon: Gt.default,
+                          Icon: Jt.default,
                           text: "Enable push notifications",
                           onClick: () => {
-                              (0, rn.ZK)();
+                              (0, ln.ZK)();
                           },
                       }
                     : void 0;
             }
-            function dn() {
-                const e = (0, N.aQ)(),
-                    t = (0, tn.q)({ audioSpaceId: e });
+            function fn() {
+                const e = (0, K.aQ)(),
+                    t = (0, nn.q)({ audioSpaceId: e });
                 return { Icon: t.Icon, text: t.label, onClick: t.onPress };
             }
-            function fn() {
-                const e = (0, te.Ji)(),
-                    t = (0, a.b9)(Pe.em);
-                if (!e) return { Icon: Nt.default, text: "Participants", onClick: t };
-            }
             function pn() {
-                const e = (0, te.Ji)(),
-                    t = (0, a.b9)(Pe.hc);
-                if (!e) return { Icon: ye.default, text: "Chat", onClick: () => t() };
+                const e = (0, ne.Ji)(),
+                    t = (0, a.b9)(ke.em);
+                if (!e) return { Icon: Kt.default, text: "Participants", onClick: t };
             }
             function En() {
-                const e = (0, a.b9)(Pe.yu);
-                return { Icon: Kt.default, text: "Settings", onClick: e };
+                const e = (0, ne.Ji)(),
+                    t = (0, a.b9)(ke.hc);
+                if (!e) return { Icon: xe.default, text: "Chat", onClick: () => t() };
             }
             function gn() {
-                const e = (0, a.Dv)(B.p5),
-                    t = (0, a.Dv)(J.s),
-                    n = (0, a.b9)(J.J),
+                const e = (0, a.b9)(ke.yu);
+                return { Icon: Ut.default, text: "Settings", onClick: e };
+            }
+            function hn() {
+                const e = (0, a.Dv)(W.p5),
+                    t = (0, a.Dv)(N.s),
+                    n = (0, a.b9)(N.J),
                     r = l.useCallback(() => {
                         n();
                     }, [n]);
-                if (e) return { Icon: Ut.default, text: t ? "Stop recording" : "Start recording", onClick: r, isEmphasized: t };
+                if (e) return { Icon: qt.default, text: t ? "Stop recording" : "Start recording", onClick: r, isEmphasized: t };
             }
-            function hn() {
-                const [e, t] = (0, a.KO)(ve.yP),
+            function bn() {
+                const [e, t] = (0, a.KO)(Ze.yP),
                     n = l.useCallback(() => {
                         t((e) => !e);
                     }, [t]),
                     r = (function () {
-                        const [e, t] = (0, a.KO)(nn.Z4);
-                        if ((0, ln.Jg)()) return { Icon: Jt.default, text: e ? "Disable stereo audio" : "Enable stereo audio", onClick: () => t() };
+                        const [e, t] = (0, a.KO)(rn.Z4);
+                        if ((0, an.Jg)()) return { Icon: Nt.default, text: e ? "Disable stereo audio" : "Enable stereo audio", onClick: () => t() };
                     })();
-                return (0, O.fH)(O.vw.prod) ? [] : [r, { Icon: qt.default, text: "Debug", onClick: en.yu }, { Icon: Xt.default, text: e ? "Hide stats" : "View stats", onClick: n }];
+                return (0, A.fH)(A.vw.prod) ? [] : [r, { Icon: Xt.default, text: "Debug", onClick: tn.yu }, { Icon: en.default, text: e ? "Hide stats" : "View stats", onClick: n }];
             }
-            const bn = "Participants",
-                vn = { label: bn },
-                Zn = l.createElement(Nt.default, null);
-            function yn() {
-                const e = (0, a.Dv)(Pe.XQ),
-                    t = (0, a.b9)(Pe.em);
-                return l.createElement(E.ZP, { "aria-label": bn, borderColor: "transparent", color: "text", hoverLabel: vn, icon: Zn, onPress: t, size: "large", type: e ? "primaryFilled" : "primaryOutlined" });
+            const vn = "Participants",
+                Zn = { label: vn },
+                yn = l.createElement(Kt.default, null);
+            function xn() {
+                const e = (0, a.Dv)(ke.XQ),
+                    t = (0, a.b9)(ke.em);
+                return l.createElement(g.ZP, { "aria-label": vn, borderColor: "transparent", color: "text", hoverLabel: Zn, icon: yn, onPress: t, size: "large", type: e ? "primaryFilled" : "primaryOutlined" });
             }
-            var xn = n(217220);
-            const Cn = { label: "Raise hand", preferredVerticalOrientation: "up" };
-            function wn() {
-                const { raisedHandEmoji: e, toggleRaiseHand: t } = (0, xn.sv)();
-                return l.createElement(E.ZP, { hoverLabel: Cn, icon: Pn, onPress: t, size: "large", type: e ? "primaryFilled" : void 0 });
+            var Cn = n(217220);
+            const wn = { label: "Raise hand", preferredVerticalOrientation: "up" };
+            function Dn() {
+                const { raisedHandEmoji: e, toggleRaiseHand: t } = (0, Cn.sv)();
+                return l.createElement(g.ZP, { hoverLabel: wn, icon: kn, onPress: t, size: "large", type: e ? "primaryFilled" : void 0 });
             }
-            const Dn = h.default.create((e) => ({ raiseHandIcon: { filter: `drop-shadow(0 0 2px ${e.colors.hoverLabelColor})` } })),
-                Pn = l.createElement(u.ZP, { size: "headline2", style: Dn.raiseHandIcon }, "✋");
-            var kn = n(970197),
-                Sn = n(115307),
-                In = n(173739),
-                Rn = n(40904),
-                Hn = n(391366);
-            function Mn() {
-                const [e, t] = (0, a.KO)(nn.lV);
-                return l.createElement(In.Z, { "aria-label": "Volume", max: 1.2, maxIcon: _n, min: 0, minIcon: zn, onChange: t, step: 0.1, value: e });
+            const Pn = b.default.create((e) => ({ raiseHandIcon: { filter: `drop-shadow(0 0 2px ${e.colors.hoverLabelColor})` } })),
+                kn = l.createElement(u.ZP, { size: "headline2", style: Pn.raiseHandIcon }, "✋");
+            var Sn = n(970197),
+                In = n(115307),
+                Rn = n(173739),
+                Hn = n(40904),
+                Mn = n(391366);
+            function zn() {
+                const [e, t] = (0, a.KO)(rn.lV);
+                return l.createElement(Rn.Z, { "aria-label": "Volume", max: 1.2, maxIcon: Ln, min: 0, minIcon: _n, onChange: t, step: 0.1, value: e });
             }
-            const zn = l.createElement(Rn.default, null),
-                _n = l.createElement(Hn.default, null),
-                Ln = l.memo(() => {
-                    const e = (0, ce.rx)(),
-                        t = (0, a.Dv)(ge.vM);
-                    (0, ge._3)();
-                    const n = (0, be.gt)();
-                    return l.createElement(ee.Z.Modal, null, e && l.createElement(se.ConferenceBehaviors, { audioSpaceId: e }), l.createElement(Tn, null), l.createElement(i.Z, { style: qn.fullscreen }, t ? l.createElement(Bn, { dpipWindow: t }) : n ? l.createElement(Wn, null) : l.createElement(Fn, null), l.createElement(Qn, null)));
+            const _n = l.createElement(Hn.default, null),
+                Ln = l.createElement(Mn.default, null),
+                Fn = l.memo(() => {
+                    const e = (0, ie.rx)(),
+                        t = (0, a.Dv)(he.vM);
+                    (0, he._3)();
+                    const n = (0, ve.gt)();
+                    return l.createElement(te.Z.Modal, null, e && l.createElement(ue.ConferenceBehaviors, { audioSpaceId: e }), l.createElement(Qn, null), l.createElement(i.Z, { style: Xn.fullscreen }, t ? l.createElement(Wn, { dpipWindow: t }) : n ? l.createElement(jn, null) : l.createElement(Bn, null), l.createElement(On, null)));
                 });
-            function Fn() {
-                const e = (0, te.Ji)(),
-                    t = (0, ne.Zx)(({ windowWidth: e }) => e > 1100 * h.default.theme.scaleMultiplier),
-                    n = (0, ce.rx)(),
-                    r = (0, a.Dv)(H.v);
-                return l.createElement(l.Fragment, null, l.createElement(Vn, null), l.createElement(l.Fragment, null, !e && l.createElement(Jn, null), l.createElement(i.Z, { style: qn.row }, l.createElement(i.Z, { style: qn.filler }, e && l.createElement(Jn, null)), l.createElement(i.Z, { style: qn.controls }, !r && l.createElement(kn.n, null, l.createElement(vt, null, l.createElement(On, null))), l.createElement(kn.Z, null, l.createElement(Lt, null, l.createElement(D.t, null))), l.createElement(de.v, null), l.createElement(wn, null), n && l.createElement(me.Y, { audioSpaceId: n }), l.createElement(cn, null), l.createElement($e, null)), l.createElement(i.Z, { style: qn.controlsEnd }, e && l.createElement(l.Fragment, null, t && l.createElement(V, null), l.createElement(yn, null), l.createElement(ze, null), l.createElement(i.Z, null)), l.createElement(i.Z, null))), l.createElement(Yn, null)));
+            function Bn() {
+                const e = (0, ne.Ji)(),
+                    t = (0, re.Zx)(({ windowWidth: e }) => e > 1100 * b.default.theme.scaleMultiplier),
+                    n = (0, ie.rx)(),
+                    r = (0, a.Dv)(M.v);
+                return l.createElement(l.Fragment, null, l.createElement(Yn, null), l.createElement(l.Fragment, null, !e && l.createElement(Nn, null), l.createElement(i.Z, { style: Xn.row }, l.createElement(i.Z, { style: Xn.filler }, e && l.createElement(Nn, null)), l.createElement(i.Z, { style: Xn.controls }, !r && l.createElement(Sn.n, null, l.createElement(Zt, null, l.createElement(An, null))), l.createElement(Sn.Z, null, l.createElement(Ft, null, l.createElement(P.t, null))), l.createElement(fe.v, null), l.createElement(Dn, null), n && l.createElement(de.Y, { audioSpaceId: n }), l.createElement(sn, null), l.createElement(Te, null)), l.createElement(i.Z, { style: Xn.controlsEnd }, e && l.createElement(l.Fragment, null, t && l.createElement(Y, null), l.createElement(xn, null), l.createElement(_e, null), l.createElement(i.Z, null)), l.createElement(i.Z, null))), l.createElement(Gn, null)));
             }
-            function Bn({ dpipWindow: e }) {
-                const t = (0, a.Dv)(H.v);
-                return l.createElement(pe.ZQ, { dpipWindow: e }, l.createElement(i.Z, { style: qn.portal }, l.createElement(Vn, null), l.createElement(i.Z, { style: qn.controls }, !t && l.createElement(On, null), l.createElement(D.t, null), l.createElement(de.v, null), l.createElement(wn, null), l.createElement($e, null))));
-            }
-            function Wn() {
-                const e = (0, a.Dv)(F.p_),
-                    t = (0, a.Dv)(F.lY);
-                return e ? l.createElement(jn, null) : t ? l.createElement($n, null) : l.createElement(Fn, null);
+            function Wn({ dpipWindow: e }) {
+                const t = (0, a.Dv)(M.v);
+                return l.createElement(Ee.ZQ, { dpipWindow: e }, l.createElement(i.Z, { style: Xn.portal }, l.createElement(Yn, null), l.createElement(i.Z, { style: Xn.controls }, !t && l.createElement(An, null), l.createElement(P.t, null), l.createElement(fe.v, null), l.createElement(Dn, null), l.createElement(Te, null))));
             }
             function jn() {
-                return l.createElement(l.Fragment, null, l.createElement(Vn, null), l.createElement(Jn, null));
+                const e = (0, a.Dv)(B.p_),
+                    t = (0, a.Dv)(B.lY);
+                return e ? l.createElement($n, null) : t ? l.createElement(Tn, null) : l.createElement(Bn, null);
             }
             function $n() {
-                const e = (0, N.nY)();
-                return l.createElement(l.Fragment, null, l.createElement(i.Z, { style: qn.roomHeader }, l.createElement(u.ZP, { size: "headline1" }, l.createElement(Sn.q, null)), l.createElement(i.Z, { style: qn.bar }), l.createElement(u.ZP, { size: "headline1" }, l.createElement(Gn, null)), l.createElement(i.Z, { style: qn.bar }), l.createElement(u.ZP, { color: "gray900", size: "headline2" }, e), l.createElement(i.Z, { style: qn.spacer }), l.createElement($e, null, "End conference")), l.createElement(i.Z, { style: qn.row }, l.createElement(i.Z, { style: qn.participants }, l.createElement(oe.Z, { style: qn.viewportView }, l.createElement(ue.q, null))), l.createElement(i.Z, { style: qn.fill }, l.createElement(i.Z, { style: qn.roomControlsRow }, l.createElement(kn.n, null, l.createElement(On, null)), l.createElement(kn.Z, null, l.createElement(D.t, null)), l.createElement(wn, null)), l.createElement(i.Z, { style: qn.roomControls }, l.createElement(Mn, null)))));
+                return l.createElement(l.Fragment, null, l.createElement(Yn, null), l.createElement(Nn, null));
             }
             function Tn() {
+                const e = (0, K.nY)();
+                return l.createElement(l.Fragment, null, l.createElement(i.Z, { style: Xn.roomHeader }, l.createElement(u.ZP, { size: "headline1" }, l.createElement(In.q, null)), l.createElement(i.Z, { style: Xn.bar }), l.createElement(u.ZP, { size: "headline1" }, l.createElement(Jn, null)), l.createElement(i.Z, { style: Xn.bar }), l.createElement(u.ZP, { color: "gray900", size: "headline2" }, e), l.createElement(i.Z, { style: Xn.spacer }), l.createElement(Te, null, "End conference")), l.createElement(i.Z, { style: Xn.row }, l.createElement(i.Z, { style: Xn.participants }, l.createElement(ce.Z, { style: Xn.viewportView }, l.createElement(me.q, null))), l.createElement(i.Z, { style: Xn.fill }, l.createElement(i.Z, { style: Xn.roomControlsRow }, l.createElement(Sn.n, null, l.createElement(An, null)), l.createElement(Sn.Z, null, l.createElement(P.t, null)), l.createElement(Dn, null)), l.createElement(i.Z, { style: Xn.roomControls }, l.createElement(zn, null)))));
+            }
+            function Qn() {
                 return (
-                    (0, ve.MC)(),
+                    (0, Ze.MC)(),
                     (function () {
                         const e = (0, a.oR)(),
-                            t = (0, N.aQ)();
+                            t = (0, K.aQ)();
                         l.useEffect(() => {
                             let n = !0;
                             return (
-                                e.get((0, B.sJ)(t)).then((t) => {
-                                    n && (0, ie.aF)(t, e);
+                                e.get((0, W.sJ)(t)).then((t) => {
+                                    n && (0, se.aF)(t, e);
                                 }),
                                 () => {
-                                    (n = !1), (0, ie.zP)(e);
+                                    (n = !1), (0, se.zP)(e);
                                 }
                             );
                         }, [t, e]);
                     })(),
-                    (0, I.ZJ)(),
-                    (0, I.D0)(),
+                    (0, R.ZJ)(),
+                    (0, R.D0)(),
                     (function () {
-                        const e = (0, S.zr)(),
-                            t = (0, N.aQ)();
-                        Un.useEffect(
+                        const e = (0, I.zr)(),
+                            t = (0, K.aQ)();
+                        qn.useEffect(
                             l.useCallback(
                                 () => () => {
                                     e(t);
@@ -547,78 +548,78 @@
                             ),
                         );
                     })(),
-                    (0, ge.bq)(),
-                    (0, Ee.N)(B.qH),
+                    (0, he.bq)(),
+                    (0, ge.N)(W.qH),
                     null
                 );
             }
-            function Qn() {
-                const e = (0, S.ts)(),
-                    t = (0, a.Dv)(F.Fn);
-                return !e || t ? null : l.createElement(i.Z, { style: qn.coverAll }, l.createElement(d.Z, null));
-            }
             function On() {
-                const e = (0, N.aQ)();
-                return l.createElement(P.ZP, { audioSpaceId: e });
+                const e = (0, I.ts)(),
+                    t = (0, a.Dv)(B.Fn);
+                return !e || t ? null : l.createElement(i.Z, { style: Xn.coverAll }, l.createElement(d.Z, null));
             }
-            const An = (0, o.cn)((e) => !!e(z.B$) || !!e(he.mb) || void 0 !== e(z.kD));
-            function Vn() {
-                const e = (0, a.Dv)(An),
-                    t = (0, te.Ji)();
-                return e || !t ? l.createElement(Te._x, null) : l.createElement(st, null);
+            function An() {
+                const e = (0, K.aQ)();
+                return l.createElement(k.ZP, { audioSpaceId: e });
             }
+            const Vn = (0, o.cn)((e) => !!e(_.B$) || !!e(be.mb) || void 0 !== e(_.kD));
             function Yn() {
-                const e = (0, te.Ji)(),
-                    t = (0, a.Dv)(Pe.T1),
-                    n = (0, a.b9)(Pe.X6),
-                    { ref: r } = (0, fe.G)(() => {
-                        n();
-                    });
-                return e || !t ? null : l.createElement(re.Z, { enableMaskForDismiss: !0, onMaskClick: n, type: "bottom", withMask: !0 }, l.createElement(i.Z, { ref: r }, l.createElement(i.Z, { style: qn.sheetDragIndicator }), l.createElement(Le.k, null)));
+                const e = (0, a.Dv)(Vn),
+                    t = (0, ne.Ji)();
+                return e || !t ? l.createElement(Qe._x, null) : l.createElement(ut, null);
             }
             function Gn() {
-                const e = (0, N.nY)(),
-                    t = (0, M.pv)(e);
-                return (0, B.Ix)(t) ?? e;
+                const e = (0, ne.Ji)(),
+                    t = (0, a.Dv)(ke.T1),
+                    n = (0, a.b9)(ke.X6),
+                    { ref: r } = (0, pe.G)(() => {
+                        n();
+                    });
+                return e || !t ? null : l.createElement(le.Z, { enableMaskForDismiss: !0, onMaskClick: n, type: "bottom", withMask: !0 }, l.createElement(i.Z, { ref: r }, l.createElement(i.Z, { style: Xn.sheetDragIndicator }), l.createElement(Fe.k, null)));
             }
             function Jn() {
-                return l.createElement(i.Z, { style: qn.titleContainer }, l.createElement(u.ZP, { size: "headline1" }, l.createElement(Gn, null)), l.createElement(K, null), l.createElement(Kn, null));
+                const e = (0, K.nY)(),
+                    t = (0, z.pv)(e);
+                return (0, W.Ix)(t) ?? e;
             }
-            const Nn = { label: "Companion mode" };
-            function Kn() {
-                return (0, a.Dv)(H.v) ? l.createElement(le.Z, { hoverLabel: Nn }, l.createElement(ae.default, null)) : null;
+            function Nn() {
+                return l.createElement(i.Z, { style: Xn.titleContainer }, l.createElement(u.ZP, { size: "headline1" }, l.createElement(Jn, null)), l.createElement(U, null), l.createElement(Un, null));
             }
-            const Un = (0, j.A6)(),
-                qn = h.default.create((e) => ({ fullscreen: { position: "fixed", inset: 0, backgroundColor: e.colors.navigationBackground }, filler: { flexGrow: "1", flexBasis: "1px" }, controlsEnd: { flexGrow: "1", flexBasis: "1px", flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space16 }, controls: { flexDirection: "row", justifyContent: "center", padding: e.spaces.space8, gap: e.spaces.space16, alignSelf: "center" }, titleContainer: { paddingTop: e.spaces.space16, paddingStart: e.spaces.space16, flexDirection: "row", gap: e.spaces.space8, alignItems: "center" }, coverAll: { position: "fixed", inset: 0, backgroundColor: e.colors.maskColor, justifyContent: "center" }, portal: { height: "100%" }, spacer: { flexGrow: 1 }, bar: { borderStartWidth: e.borderWidths.small, borderStartColor: e.colors.gray500, borderStartStyle: "solid", height: "1em" }, row: { flexDirection: "row" }, roomHeader: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center", paddingStart: e.componentDimensions.gutterHorizontal }, roomControlsRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, flexDirection: "row", gap: e.spaces.space8 }, roomControls: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, participants: { width: "60%" }, fill: { flexGrow: 1 }, viewportView: { flexGrow: 1, flexShrink: 1, overflowX: "hidden", overflowY: "auto" }, sheetDragIndicator: { width: 35 * e.scaleMultiplier, height: 5 * e.scaleMultiplier, borderRadius: 2.5 * e.scaleMultiplier, backgroundColor: e.colors.gray50, margin: 6 * e.scaleMultiplier, alignSelf: "center" } }));
-            function Xn(e) {
-                (0, C.b)(), (0, M.bu)(), (0, $.W)(), (0, R.AE)(), (0, L.R2)(), (0, Q.z)();
-                const t = (0, N.nY)();
-                return (0, M.rK)(t), l.createElement(y.X, null, l.createElement(er, null));
+            const Kn = { label: "Companion mode" };
+            function Un() {
+                return (0, a.Dv)(M.v) ? l.createElement(ae.Z, { hoverLabel: Kn }, l.createElement(oe.default, null)) : null;
             }
-            function er() {
-                return (0, M.MM)() ? l.createElement(tr, null) : l.createElement(yr, null);
+            const qn = (0, $.A6)(),
+                Xn = b.default.create((e) => ({ fullscreen: { position: "fixed", inset: 0, backgroundColor: e.colors.navigationBackground }, filler: { flexGrow: "1", flexBasis: "1px" }, controlsEnd: { flexGrow: "1", flexBasis: "1px", flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space16 }, controls: { flexDirection: "row", justifyContent: "center", padding: e.spaces.space8, gap: e.spaces.space16, alignSelf: "center" }, titleContainer: { paddingTop: e.spaces.space16, paddingStart: e.spaces.space16, flexDirection: "row", gap: e.spaces.space8, alignItems: "center" }, coverAll: { position: "fixed", inset: 0, backgroundColor: e.colors.maskColor, justifyContent: "center" }, portal: { height: "100%" }, spacer: { flexGrow: 1 }, bar: { borderStartWidth: e.borderWidths.small, borderStartColor: e.colors.gray500, borderStartStyle: "solid", height: "1em" }, row: { flexDirection: "row" }, roomHeader: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center", paddingStart: e.componentDimensions.gutterHorizontal }, roomControlsRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, flexDirection: "row", gap: e.spaces.space8 }, roomControls: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, participants: { width: "60%" }, fill: { flexGrow: 1 }, viewportView: { flexGrow: 1, flexShrink: 1, overflowX: "hidden", overflowY: "auto" }, sheetDragIndicator: { width: 35 * e.scaleMultiplier, height: 5 * e.scaleMultiplier, borderRadius: 2.5 * e.scaleMultiplier, backgroundColor: e.colors.gray50, margin: 6 * e.scaleMultiplier, alignSelf: "center" } }));
+            function er(e) {
+                (0, w.b)(), (0, z.bu)(), (0, T.W)(), (0, H.AE)(), (0, F.R2)(), (0, O.z)();
+                const t = (0, K.nY)();
+                return (0, z.rK)(t), l.createElement(x.X, null, l.createElement(tr, null));
             }
             function tr() {
-                const e = (0, a.Dv)(M.fJ),
-                    t = (0, N.aQ)(),
-                    n = (0, B.zX)(t);
-                return (0, B.d3)(t), (0, M.Uk)(), n ? (n.state !== m.default.SpaceState.Running && n.state !== m.default.SpaceState.TimedOut ? l.createElement(i.Z, { style: Pr.root }, l.createElement(u.ZP, null, "Conference is not running. It is ", n.state, ".")) : e ? l.createElement(Ln, null) : l.createElement(nr, null)) : l.createElement(i.Z, { style: Pr.root }, l.createElement(u.ZP, null, "Conference not found"));
+                return (0, z.MM)() ? l.createElement(nr, null) : l.createElement(xr, null);
             }
-            const nr = l.memo(function () {
+            function nr() {
+                const e = (0, a.Dv)(z.fJ),
+                    t = (0, K.aQ)(),
+                    n = (0, W.zX)(t);
+                return (0, W.d3)(t), (0, z.Uk)(), n ? (n.state !== m.default.SpaceState.Running && n.state !== m.default.SpaceState.TimedOut ? l.createElement(i.Z, { style: kr.root }, l.createElement(u.ZP, null, "Conference is not running. It is ", n.state, ".")) : e ? l.createElement(Fn, null) : l.createElement(rr, null)) : l.createElement(i.Z, { style: kr.root }, l.createElement(u.ZP, null, "Conference not found"));
+            }
+            const rr = l.memo(function () {
                 !(function () {
-                    const e = (0, a.Dv)(F.Fn),
+                    const e = (0, a.Dv)(B.Fn),
                         t = (0, s.useHistory)();
                     l.useEffect(() => {
                         e && t.replace("/i/conferences-room");
                     }, [t, e]);
                 })();
-                const e = (0, N.aQ)(),
-                    t = (0, a.Dv)((0, B.ZO)(e));
-                return (0, a.Dv)(H.v) ? l.createElement(rr, null) : t ? l.createElement(i.Z, { style: Pr.normalRoot }, l.createElement(i.Z, { style: Pr.extraRow }, l.createElement(U, null), l.createElement(V, null)), l.createElement(i.Z, { style: Pr.centered }, l.createElement(K, null), l.createElement(ar, null), l.createElement(cr, null))) : l.createElement(sr, null);
+                const e = (0, K.aQ)(),
+                    t = (0, a.Dv)((0, W.ZO)(e));
+                return (0, a.Dv)(M.v) ? l.createElement(lr, null) : t ? l.createElement(i.Z, { style: kr.normalRoot }, l.createElement(i.Z, { style: kr.extraRow }, l.createElement(q, null), l.createElement(Y, null)), l.createElement(i.Z, { style: kr.centered }, l.createElement(U, null), l.createElement(or, null), l.createElement(ir, null))) : l.createElement(ur, null);
             });
-            function rr() {
-                const e = (0, N.aQ)(),
-                    t = (0, a.b9)(pr(e));
+            function lr() {
+                const e = (0, K.aQ)(),
+                    t = (0, a.b9)(Er(e));
                 return (
                     l.useEffect(() => {
                         t();
@@ -626,29 +627,29 @@
                     l.createElement(d.Z, null)
                 );
             }
-            function lr() {
-                return l.createElement(P.E$, null);
-            }
             function ar() {
-                const e = (0, N.aQ)(),
-                    t = (0, B.lw)(e),
+                return l.createElement(k.E$, null);
+            }
+            function or() {
+                const e = (0, K.aQ)(),
+                    t = (0, W.lw)(e),
                     { speakers: n } = t.participants,
-                    r = (0, v.Z)(n, ({ avatar_url: e }) => e).slice(0, 20),
+                    r = (0, Z.Z)(n, ({ avatar_url: e }) => e).slice(0, 20),
                     a = n.slice(0, 2).map(({ display_name: e, highlightedLabel: t, is_blue_verified: n, user_id: r }, a) => l.createElement(f.Z, { affiliateBadgeInfo: t, isBlueVerified: n, key: a, name: e })),
                     o = n.length - 2,
                     c = o > 0 ? ` and ${o.toLocaleString()} others` : "",
                     s = `${c} ${c || a.length > 1 ? "are" : "is"} in this conference`;
-                return l.createElement(i.Z, { style: Pr.inline }, l.createElement(p.Z, { userAvatarSize: "large", userAvatarUrls: r }), a.length > 0 ? l.createElement(u.ZP, null, a, s) : l.createElement(u.ZP, null, "No one is in this conference"));
+                return l.createElement(i.Z, { style: kr.inline }, l.createElement(p.Z, { userAvatarSize: "large", userAvatarUrls: r }), a.length > 0 ? l.createElement(u.ZP, null, l.createElement(E.y, { items: a, skipFormatLast: a.length < n.length }), s) : l.createElement(u.ZP, null, "No one is in this conference"));
             }
-            const or = l.createElement(ur, null);
-            function cr({ button: e = or }) {
+            const cr = l.createElement(mr, null);
+            function ir({ button: e = cr }) {
                 return (
                     (function () {
-                        const e = (0, T._e)(),
-                            t = (0, a.b9)(L.F3),
-                            n = (0, a.b9)(_.M2),
+                        const e = (0, Q._e)(),
+                            t = (0, a.b9)(F.F3),
+                            n = (0, a.b9)(L.M2),
                             r = (0, s.useHistory)();
-                        Dr.useEffect(
+                        Pr.useEffect(
                             l.useCallback(() => {
                                 const l = e(),
                                     a = t();
@@ -660,85 +661,85 @@
                             }, [e, r, t, n]),
                         );
                     })(),
-                    l.createElement(i.Z, { style: Pr.videoWrapper }, l.createElement(i.Z, { style: Pr.widescreen }, l.createElement(X.W.Provider, null, l.createElement(X.X, { defaultAspectRatio: 16 / 9 }, l.createElement(ct.Ou, null))), l.createElement(i.Z, { style: Pr.controls }, l.createElement(kn.n, null, l.createElement(vt, null, l.createElement(lr, null))), l.createElement(kn.Z, null, l.createElement(Lt, null, l.createElement(D.t, null))))), l.createElement(i.Z, { style: Pr.joinButtonContainer }, e))
+                    l.createElement(i.Z, { style: kr.videoWrapper }, l.createElement(i.Z, { style: kr.widescreen }, l.createElement(ee.W.Provider, null, l.createElement(ee.X, { defaultAspectRatio: 16 / 9 }, l.createElement(it.Ou, null))), l.createElement(i.Z, { style: kr.controls }, l.createElement(Sn.n, null, l.createElement(Zt, null, l.createElement(ar, null))), l.createElement(Sn.Z, null, l.createElement(Ft, null, l.createElement(P.t, null))))), l.createElement(i.Z, { style: kr.joinButtonContainer }, e))
                 );
             }
-            const ir = "Start watching";
-            function sr() {
-                const e = (0, a.b9)(S.RB),
-                    t = (0, N.aQ)(),
+            const sr = "Start watching";
+            function ur() {
+                const e = (0, a.b9)(I.RB),
+                    t = (0, K.aQ)(),
                     [n, r] = l.useState(!1),
                     o = l.useCallback(() => {
                         e(t), r(!0);
                     }, [e, t]),
-                    { config: c } = (0, x.Y)();
-                return n ? l.createElement(i.Z, { style: Pr.videoContainer }, l.createElement(i.Z, { style: Pr.videoInnerContainer }, l.createElement(w.Z, c.player()))) : l.createElement(i.Z, { style: Pr.root }, l.createElement(ar, null), l.createElement(i.Z, { style: Pr.joinButtonContainer }, l.createElement(vr, { onPress: o }, ir)));
+                    { config: c } = (0, C.Y)();
+                return n ? l.createElement(i.Z, { style: kr.videoContainer }, l.createElement(i.Z, { style: kr.videoInnerContainer }, l.createElement(D.Z, c.player()))) : l.createElement(i.Z, { style: kr.root }, l.createElement(or, null), l.createElement(i.Z, { style: kr.joinButtonContainer }, l.createElement(Zr, { onPress: o }, sr)));
             }
-            function ur() {
-                const e = (0, N.aQ)();
-                return l.createElement(k.P, { renderAtom: mr(e) }, (e) => l.createElement(dr, { isLoading: e }));
+            function mr() {
+                const e = (0, K.aQ)();
+                return l.createElement(S.P, { renderAtom: dr(e) }, (e) => l.createElement(fr, { isLoading: e }));
             }
-            const mr = (0, c.xu)((e) => (0, o.cn)((t) => Promise.all([t((0, B.CP)(e)), t(z.Hs)])));
-            function dr({ isLoading: e }) {
-                const t = (0, N.aQ)(),
-                    n = (0, a.b9)(fr(t)),
-                    r = (0, W.A)((0, a.b9)(pr(t))),
-                    o = (0, a.b9)(Er(t));
-                return !!(0, a.Dv)((0, B.CP)(t).resolved)?.length ? l.createElement(l.Fragment, null, l.createElement(i.Z, { style: Pr.row }, l.createElement(i.Z, null, l.createElement(vr, { onPress: o }, "Switch")), l.createElement(E.ZP, { icon: l.createElement(b.default, null), renderMenu: gr, size: "xLarge", style: Pr.dropdownButton, type: "primaryText" })), l.createElement(E.ZP, { onPress: r, style: Pr.companionButton, type: "primaryText" }, "Use companion mode")) : l.createElement(l.Fragment, null, l.createElement(vr, { disabled: e, onPress: n }, "Enter"), l.createElement(E.ZP, { onPress: r, style: Pr.companionButton, type: "primaryText" }, "Use companion mode"));
+            const dr = (0, c.xu)((e) => (0, o.cn)((t) => Promise.all([t((0, W.CP)(e)), t(_.Hs)])));
+            function fr({ isLoading: e }) {
+                const t = (0, K.aQ)(),
+                    n = (0, a.b9)(pr(t)),
+                    r = (0, j.A)((0, a.b9)(Er(t))),
+                    o = (0, a.b9)(gr(t));
+                return !!(0, a.Dv)((0, W.CP)(t).resolved)?.length ? l.createElement(l.Fragment, null, l.createElement(i.Z, { style: kr.row }, l.createElement(i.Z, null, l.createElement(Zr, { onPress: o }, "Switch")), l.createElement(g.ZP, { icon: l.createElement(v.default, null), renderMenu: hr, size: "xLarge", style: kr.dropdownButton, type: "primaryText" })), l.createElement(g.ZP, { onPress: r, style: kr.companionButton, type: "primaryText" }, "Use companion mode")) : l.createElement(l.Fragment, null, l.createElement(Zr, { disabled: e, onPress: n }, "Enter"), l.createElement(g.ZP, { onPress: r, style: kr.companionButton, type: "primaryText" }, "Use companion mode"));
             }
-            const fr = (0, c.xu)((e) =>
+            const pr = (0, c.xu)((e) =>
                     (0, o.cn)(null, (t, n, r) => {
-                        n(S.HQ, e);
-                    }),
-                ),
-                pr = (0, c.xu)((e) =>
-                    (0, o.cn)(null, (t, n) => {
-                        n(H.S, !0), n(S.HQ, e);
+                        n(I.HQ, e);
                     }),
                 ),
                 Er = (0, c.xu)((e) =>
+                    (0, o.cn)(null, (t, n) => {
+                        n(M.S, !0), n(I.HQ, e);
+                    }),
+                ),
+                gr = (0, c.xu)((e) =>
                     (0, o.cn)(null, (t, n, r) => {
-                        n(S.HQ, e), n(B.jm, e);
+                        n(I.HQ, e), n(W.jm, e);
                     }),
                 );
-            function gr(e) {
-                return l.createElement(hr, { dismiss: e });
+            function hr(e) {
+                return l.createElement(br, { dismiss: e });
             }
-            function hr({ dismiss: e }) {
-                const t = (0, N.aQ)(),
-                    n = (0, a.Dv)(br(t));
-                return l.createElement(g.Z, { items: n, onCloseRequested: e, preferredHorizontalOrientation: "right" });
+            function br({ dismiss: e }) {
+                const t = (0, K.aQ)(),
+                    n = (0, a.Dv)(vr(t));
+                return l.createElement(h.Z, { items: n, onCloseRequested: e, preferredHorizontalOrientation: "right" });
             }
-            const br = (0, c.xu)((e) =>
+            const vr = (0, c.xu)((e) =>
                 (0, o.cn)((t) => [
                     {
                         text: "Enter",
                         onClick: (n) => {
-                            t(Z.zE).set(S.HQ, e), t(Z.zE).set(M.fJ, !0), n();
+                            t(y.zE).set(I.HQ, e), t(y.zE).set(z.fJ, !0), n();
                         },
                     },
                 ]),
             );
-            function vr(e) {
-                return l.createElement(E.ZP, (0, r.Z)({}, e, { size: "xLarge", type: "brandFilled" }));
+            function Zr(e) {
+                return l.createElement(g.ZP, (0, r.Z)({}, e, { size: "xLarge", type: "brandFilled" }));
             }
-            const Zr = l.createElement(l.Suspense, { fallback: l.createElement(Cr, null) }, l.createElement(xr, null)),
-                yr = l.memo(function () {
-                    return l.createElement(i.Z, { style: Pr.root }, l.createElement(cr, { button: Zr }));
+            const yr = l.createElement(l.Suspense, { fallback: l.createElement(wr, null) }, l.createElement(Cr, null)),
+                xr = l.memo(function () {
+                    return l.createElement(i.Z, { style: kr.root }, l.createElement(ir, { button: yr }));
                 });
-            function xr() {
-                const e = (0, I._j)();
-                return l.createElement(wr, { onPress: e });
-            }
             function Cr() {
-                return l.createElement(wr, { disabled: !0 });
+                const e = (0, R._j)();
+                return l.createElement(Dr, { onPress: e });
             }
-            function wr(e) {
-                return l.createElement(vr, e, "Ask to join");
+            function wr() {
+                return l.createElement(Dr, { disabled: !0 });
             }
-            const Dr = (0, j.A6)();
-            const Pr = h.default.create((e) => {
-                const t = h.default.supports("top: env(safe-area-inset-top)") ? { paddingLeft: `calc(env(safe-area-inset-left) + ${e.spaces.space8})`, paddingTop: `calc(env(safe-area-inset-top) + ${e.spaces.space8})`, paddingRight: `calc(env(safe-area-inset-right) + ${e.spaces.space8})`, paddingBottom: `calc(env(safe-area-inset-bottom) + ${e.spaces.space64})` } : { padding: e.spaces.space8 },
+            function Dr(e) {
+                return l.createElement(Zr, e, "Ask to join");
+            }
+            const Pr = (0, $.A6)();
+            const kr = b.default.create((e) => {
+                const t = b.default.supports("top: env(safe-area-inset-top)") ? { paddingLeft: `calc(env(safe-area-inset-left) + ${e.spaces.space8})`, paddingTop: `calc(env(safe-area-inset-top) + ${e.spaces.space8})`, paddingRight: `calc(env(safe-area-inset-right) + ${e.spaces.space8})`, paddingBottom: `calc(env(safe-area-inset-bottom) + ${e.spaces.space64})` } : { padding: e.spaces.space8 },
                     n = { flexGrow: 1, maxWidth: "100%", justifyContent: "center", alignItems: "flex-start", gap: e.spaces.space8, marginHorizontal: "auto" };
                 return { inline: { flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, normalRoot: { ...t, flexGrow: 1, alignItems: "flex-start" }, root: { ...n, ...t }, centered: n, videoWrapper: { width: 600 * e.scaleMultiplier, maxWidth: "100%" }, controls: { flexDirection: "row", justifyContent: "center", padding: e.spaces.space8, gap: e.spaces.space16, alignSelf: "center", maxWidth: 600 * e.scaleMultiplier, position: "absolute", bottom: 0 }, widescreen: { aspectRatio: 16 / 9 }, joinButtonContainer: { marginTop: e.spaces.space8, alignSelf: "center" }, row: { flexDirection: "row" }, extraRow: { flexDirection: "row", gap: e.spaces.space8 }, dropdownButton: { marginStart: -e.spacesPx.space24, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space8, zIndex: -1, borderTopStartRadius: 0, borderBottomStartRadius: 0 }, videoContainer: { padding: e.spaces.space8, maxHeight: "100%", justifyContent: "center", flexGrow: 1 }, videoInnerContainer: { contain: "paint", justifyContent: "center", backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.large, maxHeight: "100%", overflow: "hidden" }, companionButton: { marginTop: e.spaces.space8 } };
             });
@@ -870,4 +871,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-8093ae25.a40affba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-8093ae25.ef58e1ba.js.map

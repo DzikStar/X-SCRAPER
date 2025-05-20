@@ -289,7 +289,6 @@
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -321,6 +320,7 @@
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -337,7 +337,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "3bb22c2c5aea6c50c49f1ee9bd035823",
+                hash: "e17ff9a9f9405336e54b8c353fcae461",
             };
             const i = n;
         },
@@ -643,7 +643,6 @@
                                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -716,6 +715,7 @@
                                                         ],
                                                         storageKey: null,
                                                     },
+                                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -743,11 +743,11 @@
                             },
                         ],
                     },
-                    params: { id: "ueNjMHccOe0hjHrCSZKCtg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "useUserCellDataQuery", operationKind: "query", text: null },
+                    params: { id: "whwrojOlQLRQ4X4AWizh_A", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "useUserCellDataQuery", operationKind: "query", text: null },
                 };
             t.hash = "c0b0e360f052f6c6c200824ff1f8e0de";
             const u = t;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e.27c6335a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e.cbe66d1a.js.map

@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new requests";
                 }),
                 n("ed93de0c", "正在分析貼文"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "更多詳細資料"),
                 n("a6e89af8", "公開對話"),
                 n("ica55d24", "新聊天"),
                 n("f794af9a", "趣味模式"),
@@ -4361,8 +4361,8 @@
                 n("g01599b6", "回應 1"),
                 n("e02694e0", "回應 2"),
                 n("h6867fcc", "我比較喜歡此回應"),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "嘗試 Grok 語音模式"),
+                n("jd36d190", "使用 Android 版 Grok 應用程式來存取進階功能"),
                 n("hf9afab0", "啟用 DeepSearch 可瀏覽網際網路和 X、分析資訊，並透過快速代理型搜尋來提供詳細且合理的答案。"),
                 n("ef3b3f04", "啟用「思考」可使用我們的推理模型。它最適合數學、科學和程式碼撰寫。你還可以要求 Grok 對任何可能需要耗費更多腦力的問題進行「深入思考」。 "),
                 n("b43636b8", "隆重推出 Grok 3"),
@@ -5840,7 +5840,7 @@
                 n("ab1b3d38", "還沒有備註請求資料"),
                 n("c43fb933", "X 開發人員合約和政策"),
                 n("af781666", "人們有什麼看法？"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "分享想法"),
                 n("ed88e742", "複製主題的連結"),
                 n("h92fe1be", "很遺憾，你目前無法使用社群備註。"),
                 n("f0dc1434", "社群備註目前僅可在美國使用。"),
@@ -12032,6 +12032,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% 手續費，最低 ", ")"];
@@ -12680,6 +12686,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", "又 "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", "、"];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " 和 "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13242,4 +13266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.a9cf7a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0fac1afa.js.map

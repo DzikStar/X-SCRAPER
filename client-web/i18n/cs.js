@@ -4158,7 +4158,7 @@
                     return e.stringCount + " new request" + n(e.count, "s", "s", "", "s");
                 }),
                 a("ed93de0c", "Analýza postu"),
-                a("d1d92e40", "More details"),
+                a("d1d92e40", "Další podrobnosti"),
                 a("a6e89af8", "Otevřená konverzace"),
                 a("ica55d24", "Nový chat"),
                 a("f794af9a", "Režim Zábava"),
@@ -4371,8 +4371,8 @@
                 a("g01599b6", "Odpověď 1"),
                 a("e02694e0", "Odpověď 2"),
                 a("h6867fcc", "Dávám přednost této odpovědi"),
-                a("acc4496c", "Try Grok Voice mode"),
-                a("jd36d190", "Access advanced features with Grok Android app"),
+                a("acc4496c", "Vyzkoušejte hlasový režim Grok"),
+                a("jd36d190", "Získejte přístup k pokročilým funkcím s aplikací Grok pro Android"),
                 a("hf9afab0", "Povolte DeepSearch pro skenování internetu a X, analýzu informací a poskytování podrobných, dobře odůvodněných odpovědí s rychlým, agentním vyhledáváním."),
                 a("ef3b3f04", "Povolte funkci Přemýšlet používat náš model uvažování. Je to nejlepší pro oblast matematiky, vědy a kódování. Můžete také požádat Groka, aby „přemýšlel usilovněji“ o jakékoli otázce, která by mohla vyžadovat trochu více mozkové aktivity. "),
                 a("b43636b8", "Představujeme Grok 3"),
@@ -5850,7 +5850,7 @@
                 a("ab1b3d38", "Data žádosti o poznámku zatím nejsou k dispozici"),
                 a("c43fb933", "Dohoda mezi platformou X a vývojáři a Zásady pro vývojáře"),
                 a("af781666", "Co si lidé myslí?"),
-                a("a1f414ee", "Share thoughts"),
+                a("a1f414ee", "Sdílejte své myšlenky"),
                 a("ed88e742", "Zkopírovat odkaz na téma"),
                 a("h92fe1be", "Do programu Komunitní poznámky se bohužel prozatím nemůžete zapojit."),
                 a("f0dc1434", "Program Komunitní poznámky je prozatím dostupný jenom v USA."),
@@ -12032,6 +12032,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% poplatek, min. ", ")"];
@@ -12680,6 +12686,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " a "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " a "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13245,4 +13269,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.6da7160a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.94a7a8aa.js.map

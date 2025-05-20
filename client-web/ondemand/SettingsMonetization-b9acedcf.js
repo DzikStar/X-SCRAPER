@@ -40,13 +40,24 @@
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserRelationshipPerspectives",
+                        kind: "LinkedField",
+                        name: "relationship_perspectives",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
                     { alias: null, args: null, kind: "ScalarField", name: "super_following", storageKey: null },
                     { alias: null, args: null, kind: "ScalarField", name: "super_follow_eligible", storageKey: null },
                     { alias: null, args: null, kind: "ScalarField", name: "super_followed_by", storageKey: null },
@@ -55,7 +66,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "233f25c4c669787362ab81e4bbe01d2b",
+                hash: "c9eaf3bed3f50dc383b668c71fba6638",
             };
             const i = n;
         },
@@ -565,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.2784fbaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.910f141a.js.map

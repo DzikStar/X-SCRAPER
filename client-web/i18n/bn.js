@@ -12039,6 +12039,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% ফি, সর্বনিম্ন ", ")"];
@@ -12687,6 +12693,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " এবং "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " এবং "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13249,4 +13273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.ce545d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.e4f04faa.js.map

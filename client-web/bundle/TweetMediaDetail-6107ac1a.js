@@ -3,7 +3,7 @@
     ["bundle.TweetMediaDetail-6107ac1a"],
     {
         300234: (e, t, o) => {
-            o.d(t, { Z: () => j });
+            o.d(t, { Z: () => U });
             var n = o(202784),
                 i = o(325686),
                 s = o(284702),
@@ -20,14 +20,13 @@
                 g = o(420740),
                 w = o(332920),
                 y = o.n(w),
-                f = o(952793),
-                b = o(965728);
-            const T = { startX: 0, startY: 0 };
-            class C extends n.Component {
+                f = o(965728);
+            const b = { startX: 0, startY: 0 };
+            class T extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._pullDistanceY = 0),
-                        (this._pullInfo = { ...T }),
+                        (this._pullInfo = { ...b }),
                         (this._handleTouchStart = (e) => {
                             (this._pullInfo.startX = e.touches[0].clientX), (this._pullInfo.startY = e.touches[0].clientY);
                         }),
@@ -49,7 +48,7 @@
                             e && e(), this._resetPullInfo();
                         }),
                         (this._resetPullInfo = () => {
-                            this._updatePullPosition(0), (this._pullInfo = { ...T });
+                            this._updatePullPosition(0), (this._pullInfo = { ...b });
                         });
                 }
                 render() {
@@ -58,45 +57,45 @@
                     return n.createElement(i.Z, { onLayout: o, onTouchEnd: r ? this._handleTouchEnd : void 0, onTouchMove: r ? this._handleTouchMove : void 0, onTouchStart: r ? this._handleTouchStart : void 0, style: s, testID: "swipe-to-dismiss" }, e);
                 }
             }
-            const Z = C;
-            var x = o(992942),
-                S = o(7022),
-                v = o(309854),
-                P = o(351686),
-                E = o(822399);
-            const I = y().b327c12a,
-                D = y().gff1f69e;
-            class M extends n.PureComponent {
+            const C = T;
+            var Z = o(992942),
+                x = o(7022),
+                S = o(309854),
+                v = o(351686),
+                P = o(822399);
+            const E = y().b327c12a,
+                I = y().gff1f69e;
+            class D extends n.PureComponent {
                 constructor(...e) {
                     super(...e), (this.state = { loadingVariant: null, imageLoading: !1 }), (this._handleLoadStart = () => this.setState({ imageLoading: !0 })), (this._handleLoadEnd = () => this.setState({ imageLoading: !1 }));
                 }
                 componentDidMount() {
-                    this._mountPromiseForTesting = M._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
+                    this._mountPromiseForTesting = D._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
                 }
                 componentDidUpdate(e, t) {
-                    (0, c.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), M._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
+                    (0, c.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), D._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
                 }
                 render() {
                     const { dataSaver: e, imageStyle: t, onError: o, onLoad: s, onTap: r, onZoomed: a, photo: l, resetZoom: c, style: d, zoomable: p } = this.props,
                         { loadingVariant: h } = this.state,
-                        u = (e && h && Math.max(h.width, h.height) >= 680 ? h.uri : null) || M._selectSource(l);
+                        u = (e && h && Math.max(h.width, h.height) >= 680 ? h.uri : null) || D._selectSource(l);
                     if (!u || null === h) return null;
-                    const m = n.createElement(x.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : I, defaultSource: h && h.uri, draggable: !0, onError: h ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: u, style: [A.img, t] });
-                    return n.createElement(i.Z, { style: d }, this.state.imageLoading ? k : null, p ? n.createElement(S.Z, { onTap: r, onZoomed: a, resetZoom: c }, m) : m);
+                    const m = n.createElement(Z.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : E, defaultSource: h && h.uri, draggable: !0, onError: h ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: u, style: [M.img, t] });
+                    return n.createElement(i.Z, { style: d }, this.state.imageLoading ? A : null, p ? n.createElement(x.Z, { onTap: r, onZoomed: a, resetZoom: c }, m) : m);
                 }
                 static _selectCachedVariant(e) {
-                    const t = v.Z.getOriginalImage(e);
-                    return t ? P.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    const t = S.Z.getOriginalImage(e);
+                    return t ? v.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
-                    const t = v.Z.getOriginalImage(e);
-                    return t && P.Z.selectLargestUrl(t);
+                    const t = S.Z.getOriginalImage(e);
+                    return t && v.Z.selectLargestUrl(t);
                 }
             }
-            M.defaultProps = { zoomable: !1 };
-            const A = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
-                k = n.createElement(E.Z, { ariaValueText: D, indeterminate: !0, style: A.progressBar }),
-                B = M;
+            D.defaultProps = { zoomable: !1 };
+            const M = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
+                A = n.createElement(P.Z, { ariaValueText: I, indeterminate: !0, style: M.progressBar }),
+                k = D;
             var F = o(310453);
             class L extends n.PureComponent {
                 constructor(...e) {
@@ -110,53 +109,54 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: R.root }, this._renderVideo()));
+                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: B.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
                     this._player && t !== e.isCurrentlyDisplayed && (t ? this._player.play() : this._player.pause());
                 }
                 _renderVideo() {
-                    const { isVerticalVideoNoBlackBars: e, promotedContent: t, video: o, videoId: i } = this.props;
-                    return n.createElement(F.Z, (0, m.Z)({}, s.Z.extractVideoProps(i, o, void 0, void 0, !1, e), { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: t, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                    const { promotedContent: e, video: t, videoId: o } = this.props,
+                        [i, r] = t.video_info.aspect_ratio,
+                        a = s.Z.extractVideoProps(o, t);
+                    return (a.aspectRatio = i / r), n.createElement(F.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const R = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                z = L,
-                N = y().ac85c6b2,
-                O = (e) => {
+            const B = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                R = L,
+                z = y().ac85c6b2,
+                N = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: c, promotedContent: d, videoId: p, ...h } = e,
                         [u, w] = n.useState(null),
-                        [y, T] = n.useState({ width: 0, height: 0 }),
-                        { isModal: C } = n.useContext(_.Z),
-                        { height: x, width: S } = a.original_info || {},
-                        { height: v, width: P } = y,
-                        E = (0, f.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        I = E || C || o ? (0, b.I5)({ mediaWidth: S, mediaHeight: x, containerWidth: P, containerHeight: v }, o) : V.mediaItem;
+                        [y, b] = n.useState({ width: 0, height: 0 }),
+                        { isModal: T } = n.useContext(_.Z),
+                        { height: Z, width: x } = a.original_info || {},
+                        { height: S, width: v } = y,
+                        P = T || o ? (0, f.I5)({ mediaWidth: x, mediaHeight: Z, containerWidth: v, containerHeight: S }, o) : O.mediaItem;
                     return n.createElement(
-                        Z,
+                        C,
                         {
                             onDismiss: l,
                             onLayout:
-                                E || C || o
+                                T || o
                                     ? (e) => {
                                           const {
                                               nativeEvent: {
                                                   layout: { height: t, width: o },
                                               },
                                           } = e;
-                                          (o === y.width && t === y.height) || T({ width: o, height: t });
+                                          (o === y.width && t === y.height) || b({ width: o, height: t });
                                       }
                                     : void 0,
-                            style: V.root,
+                            style: O.root,
                         },
                         u
                             ? n.createElement(g.Z, {
                                   onRetry: () => {
                                       w(null);
                                   },
-                                  style: V.errorDetail,
-                                  title: N,
+                                  style: O.errorDetail,
+                                  title: z,
                                   withLightOnDarkColorScheme: !0,
                               })
                             : null,
@@ -168,13 +168,13 @@
                                       onClick: (e) => {
                                           e.stopPropagation();
                                       },
-                                      style: I,
+                                      style: P,
                                   },
                                   "photo" === a.type
                                       ? n.createElement(
-                                            B,
+                                            k,
                                             (0, m.Z)({}, h, {
-                                                imageStyle: o && !t && V.avatarImage,
+                                                imageStyle: o && !t && O.avatarImage,
                                                 onError: (e) => {
                                                     w(e.nativeEvent.error);
                                                 },
@@ -183,19 +183,19 @@
                                                 },
                                                 onTap: c,
                                                 photo: a,
-                                                style: V.container,
+                                                style: O.container,
                                                 zoomable: !0,
                                             }),
                                         )
                                       : s.Z.isVideo(a) && p
-                                        ? n.createElement(z, { isCurrentlyDisplayed: r, isVerticalVideoNoBlackBars: E, promotedContent: d, style: V.container, video: a, videoId: p })
+                                        ? n.createElement(R, { isCurrentlyDisplayed: r, promotedContent: d, style: O.container, video: a, videoId: p })
                                         : null,
                               ),
                     );
                 },
-                V = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                H = n.memo(O, (e, t) => (0, c.Z)(e, t));
-            class W extends n.Component {
+                O = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
+                H = n.memo(N, (e, t) => (0, c.Z)(e, t));
+            class V extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -248,18 +248,18 @@
                                 m = o === p;
                             return h && !u ? null : n.createElement(H, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: m, key: p, mediaDetail: r[p], onDismiss: d ? void 0 : a, onTap: l, onZoomed: m ? this._handleMediaDetailZoomed : void 0, promotedContent: c, resetZoom: o !== p, videoId: u });
                         });
-                    return n.createElement(i.Z, { style: U.root }, r.length > 1 ? this._renderCarousel(p) : p);
+                    return n.createElement(i.Z, { style: W.root }, r.length > 1 ? this._renderCarousel(p) : p);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: i, onMediaItemChanged: l } = this.props,
                         { isZoomed: c } = this.state,
                         d = s.Z.isVideo(i[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [U.dimensions, U.scrollSnap], dominantButtonColor: t, isLocked: c, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: U.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !d, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: c, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [W.dimensions, W.scrollSnap], dominantButtonColor: t, isLocked: c, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: W.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !d, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: c, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (W.contextType = h.rC), (W.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: d.Z, onMediaItemChanged: d.Z });
-            const U = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                j = u(W);
+            (V.contextType = h.rC), (V.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: d.Z, onMediaItemChanged: d.Z });
+            const W = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                U = u(V);
         },
         827094: (e, t, o) => {
             o.d(t, { Z: () => y });
@@ -425,7 +425,7 @@
                 };
         },
         233391: (e, t, o) => {
-            o.d(t, { BH: () => V, Qj: () => U, Wc: () => H, sI: () => W });
+            o.d(t, { BH: () => H, Qj: () => U, Wc: () => V, sI: () => W });
             var n = o(202784),
                 i = o(731708),
                 s = o(392237),
@@ -457,33 +457,33 @@
                 M = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "ccc1f303" }, n.createElement(i.ZP, null, e)) : void 0),
                 A = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "ce02fabf" }, n.createElement(i.ZP, null, e)) : void 0),
                 k = a().e6d43d06,
-                B = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "a85608a7" }, n.createElement(i.ZP, null, e)) : void 0),
-                F = a().ic848090,
-                L = a().f9ebe066,
+                F = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "a85608a7" }, n.createElement(i.ZP, null, e)) : void 0),
+                L = a().ic848090,
+                B = a().f9ebe066,
                 R = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "c76865b7" }, n.createElement(i.ZP, null, e)) : void 0),
                 z = a().je3d93e2,
                 N = a().ea88ce2e,
                 O = a().je3d93e2,
-                V = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
-                H = (e, t) => {
+                H = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
+                V = (e, t) => {
                     switch (t) {
-                        case V.follow:
+                        case H.follow:
                             return { icon: l.default, text: E, subtext: I, iconStyle: j.iconOther };
-                        case V.like:
+                        case H.like:
                             return { icon: c.default, text: v, subtext: P, iconStyle: j.iconLike };
-                        case V.reply:
+                        case H.reply:
                             return { icon: d.default, text: C, subtext: Z, iconStyle: j.iconOther };
-                        case V.retweet:
+                        case H.retweet:
                             return { icon: p.default, text: x, subtext: S, iconStyle: j.iconRetweet };
-                        case V.dmshare:
+                        case H.dmshare:
                             return { icon: h.default, text: D, iconStyle: j.iconOther };
-                        case V.subscribe:
+                        case H.subscribe:
                             return { icon: u.default, text: M, subtext: A, iconStyle: j.iconOther };
-                        case V.topic:
-                            return { icon: m.default, text: k, subtext: B, iconStyle: j.iconTopics };
-                        case V.community:
-                            return { icon: _.default, text: F, subtext: L, iconStyle: j.iconOther };
-                        case V.search:
+                        case H.topic:
+                            return { icon: m.default, text: k, subtext: F, iconStyle: j.iconTopics };
+                        case H.community:
+                            return { icon: _.default, text: L, subtext: B, iconStyle: j.iconOther };
+                        case H.search:
                             return { icon: g.default, text: R, subtext: z, iconStyle: j.iconOther };
                         default:
                             return { icon: w.default, text: N, subtext: O, iconStyle: j.iconTwitter };
@@ -494,7 +494,7 @@
                 j = s.default.create((e) => ({ iconOther: { color: e.colors.blue500 }, iconLike: { color: e.colors.magenta500 }, iconTwitter: { color: e.colors.brandColor }, iconRetweet: { color: e.colors.green500 }, iconTopics: { color: e.colors.blue500 } }));
         },
         369241: (e, t, o) => {
-            o.d(t, { BH: () => P.BH, ZP: () => F });
+            o.d(t, { BH: () => P.BH, ZP: () => L });
             o(875640);
             var n = o(202784),
                 i = o(529356),
@@ -536,7 +536,7 @@
                 M = r().hd50e064,
                 A = r().a565833e,
                 k = r().e919c3bc;
-            class B extends n.Component {
+            class F extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getFullSheetDisplayElements = P.Wc.bind(null, this.context.featureSwitches)),
@@ -619,8 +619,8 @@
                     t.scribe({ component: "login_signup_sheet", element: i, action: e });
                 }
             }
-            (B.defaultProps = { displayMode: P.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: k, signupLabel: A, onlyShowOnce: !1 }), (B.displayMode = P.BH), (B.contextType = p.rC);
-            const F = v(B);
+            (F.defaultProps = { displayMode: P.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: k, signupLabel: A, onlyShowOnce: !1 }), (F.displayMode = P.BH), (F.contextType = p.rC);
+            const L = v(F);
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => d });
@@ -970,8 +970,8 @@
                         a = r && i ? r / i : 1,
                         l = a > 1,
                         c = t ? 400 : d,
-                        h = l && r <= c ? p(n, c) : n,
-                        u = !l && i <= c ? p(o, c) : o;
+                        h = l && (!r || r <= c) ? p(n, c) : n,
+                        u = l || (i && !(i <= c)) ? o : p(o, c);
                     return s.Z.getContainDimensions({ width: h, height: u }, a);
                 },
                 _ = (e) => {
@@ -990,7 +990,7 @@
                 f = (e, t) => {
                     switch (t.type) {
                         case "zoom":
-                            return { ...e, isZoomed: t.payload?.isZoomed, showControls: !t.payload?.isZoomed };
+                            return { ...e, isZoomed: t.payload.isZoomed, showControls: !t.payload.isZoomed };
                         case "tap":
                             return { ...e, showControls: !e.showControls };
                         default:
@@ -1198,4 +1198,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.386dd5ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.36b957aa.js.map

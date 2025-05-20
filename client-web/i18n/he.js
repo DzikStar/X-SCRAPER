@@ -4158,7 +4158,7 @@
                     return e.stringCount + " new request" + t(e.count, "s", "", "s", "s");
                 }),
                 n("ed93de0c", "מנתח פוסט"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "פרטים נוספים"),
                 n("a6e89af8", "שיחה פתוחה"),
                 n("ica55d24", "שיחת צ'אט חדשה"),
                 n("f794af9a", "מצב 'כיף'"),
@@ -4371,8 +4371,8 @@
                 n("g01599b6", "תגובה 1"),
                 n("e02694e0", "תגובה 2"),
                 n("h6867fcc", "אני מעדיף את התגובה הזאת"),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "נסה את מצב Grok Voice"),
+                n("jd36d190", "קבל גישה לתכונות מתקדמות עם האפליקציה Grok למכשירי Android"),
                 n("hf9afab0", "אפשר לחיפוש DeepSearch לסרוק את האינטרנט ואת X, לנתח מידע ולהציג תשובות מפורטות ומנומקות לאחר ביצוע חיפוש יזום ומהיר."),
                 n("ef3b3f04", "אפשר ל-Think להשתמש במודל הסקת מסקנות. זהו פתרון מושלם לפתרון בעיות מתמטיות ומדעיות ואפילו לכתיבת קוד. בנוסף, תוכל לבקש מ-Grok 'לחשוב באופן מאומץ יותר' על כל שאלה שעשויה לדרוש יותר מחשבה. "),
                 n("b43636b8", "אנחנו גאים להציג את Grok 3"),
@@ -5850,7 +5850,7 @@
                 n("ab1b3d38", "הנתונים שמבוקשים בהערה אינם זמינים עדיין"),
                 n("c43fb933", "בהסכם המפתחים ובמדיניות המפתחים של X"),
                 n("af781666", "מה אנשים חושבים?"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "שיתוף מחשבות"),
                 n("ed88e742", "העתק קישור לנושא"),
                 n("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
                 n("f0dc1434", "בשלב זה, 'הערות מהקהילה' זמינות בארצות הברית בלבד."),
@@ -12032,6 +12032,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(‎", "%‎ עמלה, מינימום ", ")"];
@@ -12680,6 +12686,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " וגם "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " וגם "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13247,4 +13271,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.e530f8da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.f9560afa.js.map

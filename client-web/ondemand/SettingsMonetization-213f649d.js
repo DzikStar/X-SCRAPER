@@ -96,10 +96,7 @@
                                                                     { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
                                                                 ],
                                                                 storageKey: null,
                                                             },
@@ -175,6 +172,20 @@
                                                             {
                                                                 alias: null,
                                                                 args: null,
+                                                                concreteType: "UserRelationshipPerspectives",
+                                                                kind: "LinkedField",
+                                                                name: "relationship_perspectives",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                            {
+                                                                alias: null,
+                                                                args: null,
                                                                 concreteType: "UserVerification",
                                                                 kind: "LinkedField",
                                                                 name: "verification",
@@ -208,7 +219,7 @@
                             },
                         ],
                     },
-                    params: { id: "Xgfq2WVkbo25HFeC41aC0w", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
+                    params: { id: "AmsgiDwg9lH16aygiMiR3w", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
                 };
             g.hash = "b3a3da30429069de6ce258edaa91d161";
             const m = g;
@@ -576,4 +587,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.9200cc7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.1e4bc81a.js.map

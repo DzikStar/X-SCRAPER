@@ -3,7 +3,7 @@
     ["bundle.ReaderMode-6107ac1a"],
     {
         300234: (e, t, o) => {
-            o.d(t, { Z: () => G });
+            o.d(t, { Z: () => X });
             var n = o(202784),
                 i = o(325686),
                 s = o(284702),
@@ -13,21 +13,20 @@
                 d = o(908478),
                 c = o(516951),
                 h = o(123751),
-                u = o(443781);
-            const p = (0, o(668214).Z)().withAnalytics({ component: "gallery" });
+                p = o(443781);
+            const u = (0, o(668214).Z)().withAnalytics({ component: "gallery" });
             var m = o(807896),
                 g = o(386802),
                 _ = o(420740),
                 y = o(332920),
                 f = o.n(y),
-                w = o(952793),
-                C = o(965728);
-            const T = { startX: 0, startY: 0 };
-            class Z extends n.Component {
+                w = o(965728);
+            const C = { startX: 0, startY: 0 };
+            class T extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._pullDistanceY = 0),
-                        (this._pullInfo = { ...T }),
+                        (this._pullInfo = { ...C }),
                         (this._handleTouchStart = (e) => {
                             (this._pullInfo.startX = e.touches[0].clientX), (this._pullInfo.startY = e.touches[0].clientY);
                         }),
@@ -49,7 +48,7 @@
                             e && e(), this._resetPullInfo();
                         }),
                         (this._resetPullInfo = () => {
-                            this._updatePullPosition(0), (this._pullInfo = { ...T });
+                            this._updatePullPosition(0), (this._pullInfo = { ...C });
                         });
                 }
                 render() {
@@ -58,47 +57,47 @@
                     return n.createElement(i.Z, { onLayout: o, onTouchEnd: r ? this._handleTouchEnd : void 0, onTouchMove: r ? this._handleTouchMove : void 0, onTouchStart: r ? this._handleTouchStart : void 0, style: s, testID: "swipe-to-dismiss" }, e);
                 }
             }
-            const b = Z;
-            var v = o(992942),
-                x = o(7022),
-                P = o(309854),
-                I = o(351686),
-                S = o(822399);
-            const E = f().b327c12a,
-                D = f().gff1f69e;
-            class M extends n.PureComponent {
+            const Z = T;
+            var b = o(992942),
+                v = o(7022),
+                x = o(309854),
+                P = o(351686),
+                I = o(822399);
+            const S = f().b327c12a,
+                E = f().gff1f69e;
+            class D extends n.PureComponent {
                 constructor(...e) {
                     super(...e), (this.state = { loadingVariant: null, imageLoading: !1 }), (this._handleLoadStart = () => this.setState({ imageLoading: !0 })), (this._handleLoadEnd = () => this.setState({ imageLoading: !1 }));
                 }
                 componentDidMount() {
-                    this._mountPromiseForTesting = M._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
+                    this._mountPromiseForTesting = D._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
                 }
                 componentDidUpdate(e, t) {
-                    (0, d.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), M._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
+                    (0, d.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), D._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
                 }
                 render() {
                     const { dataSaver: e, imageStyle: t, onError: o, onLoad: s, onTap: r, onZoomed: a, photo: l, resetZoom: d, style: c, zoomable: h } = this.props,
-                        { loadingVariant: u } = this.state,
-                        p = (e && u && Math.max(u.width, u.height) >= 680 ? u.uri : null) || M._selectSource(l);
-                    if (!p || null === u) return null;
-                    const m = n.createElement(v.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : E, defaultSource: u && u.uri, draggable: !0, onError: u ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [k.img, t] });
-                    return n.createElement(i.Z, { style: c }, this.state.imageLoading ? F : null, h ? n.createElement(x.Z, { onTap: r, onZoomed: a, resetZoom: d }, m) : m);
+                        { loadingVariant: p } = this.state,
+                        u = (e && p && Math.max(p.width, p.height) >= 680 ? p.uri : null) || D._selectSource(l);
+                    if (!u || null === p) return null;
+                    const m = n.createElement(b.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : S, defaultSource: p && p.uri, draggable: !0, onError: p ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: u, style: [M.img, t] });
+                    return n.createElement(i.Z, { style: c }, this.state.imageLoading ? k : null, h ? n.createElement(v.Z, { onTap: r, onZoomed: a, resetZoom: d }, m) : m);
                 }
                 static _selectCachedVariant(e) {
-                    const t = P.Z.getOriginalImage(e);
-                    return t ? I.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    const t = x.Z.getOriginalImage(e);
+                    return t ? P.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
-                    const t = P.Z.getOriginalImage(e);
-                    return t && I.Z.selectLargestUrl(t);
+                    const t = x.Z.getOriginalImage(e);
+                    return t && P.Z.selectLargestUrl(t);
                 }
             }
-            M.defaultProps = { zoomable: !1 };
-            const k = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
-                F = n.createElement(S.Z, { ariaValueText: D, indeterminate: !0, style: k.progressBar }),
-                R = M;
-            var z = o(310453);
-            class B extends n.PureComponent {
+            D.defaultProps = { zoomable: !1 };
+            const M = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
+                k = n.createElement(I.Z, { ariaValueText: E, indeterminate: !0, style: M.progressBar }),
+                F = D;
+            var R = o(310453);
+            class z extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlaybackStarted = () => {
@@ -110,57 +109,58 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: L.root }, this._renderVideo()));
+                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: B.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
                     this._player && t !== e.isCurrentlyDisplayed && (t ? this._player.play() : this._player.pause());
                 }
                 _renderVideo() {
-                    const { isVerticalVideoNoBlackBars: e, promotedContent: t, video: o, videoId: i } = this.props;
-                    return n.createElement(z.Z, (0, m.Z)({}, s.Z.extractVideoProps(i, o, void 0, void 0, !1, e), { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: t, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                    const { promotedContent: e, video: t, videoId: o } = this.props,
+                        [i, r] = t.video_info.aspect_ratio,
+                        a = s.Z.extractVideoProps(o, t);
+                    return (a.aspectRatio = i / r), n.createElement(R.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const L = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                V = B,
+            const B = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                L = z,
                 A = f().ac85c6b2,
-                W = (e) => {
-                    const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: d, promotedContent: c, videoId: h, ...u } = e,
-                        [p, y] = n.useState(null),
-                        [f, T] = n.useState({ width: 0, height: 0 }),
-                        { isModal: Z } = n.useContext(g.Z),
-                        { height: v, width: x } = a.original_info || {},
-                        { height: P, width: I } = f,
-                        S = (0, w.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        E = S || Z || o ? (0, C.I5)({ mediaWidth: x, mediaHeight: v, containerWidth: I, containerHeight: P }, o) : Y.mediaItem;
+                V = (e) => {
+                    const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: d, promotedContent: c, videoId: h, ...p } = e,
+                        [u, y] = n.useState(null),
+                        [f, C] = n.useState({ width: 0, height: 0 }),
+                        { isModal: T } = n.useContext(g.Z),
+                        { height: b, width: v } = a.original_info || {},
+                        { height: x, width: P } = f,
+                        I = T || o ? (0, w.I5)({ mediaWidth: v, mediaHeight: b, containerWidth: P, containerHeight: x }, o) : W.mediaItem;
                     return n.createElement(
-                        b,
+                        Z,
                         {
                             onDismiss: l,
                             onLayout:
-                                S || Z || o
+                                T || o
                                     ? (e) => {
                                           const {
                                               nativeEvent: {
                                                   layout: { height: t, width: o },
                                               },
                                           } = e;
-                                          (o === f.width && t === f.height) || T({ width: o, height: t });
+                                          (o === f.width && t === f.height) || C({ width: o, height: t });
                                       }
                                     : void 0,
-                            style: Y.root,
+                            style: W.root,
                         },
-                        p
+                        u
                             ? n.createElement(_.Z, {
                                   onRetry: () => {
                                       y(null);
                                   },
-                                  style: Y.errorDetail,
+                                  style: W.errorDetail,
                                   title: A,
                                   withLightOnDarkColorScheme: !0,
                               })
                             : null,
-                        p
+                        u
                             ? null
                             : n.createElement(
                                   i.Z,
@@ -168,13 +168,13 @@
                                       onClick: (e) => {
                                           e.stopPropagation();
                                       },
-                                      style: E,
+                                      style: I,
                                   },
                                   "photo" === a.type
                                       ? n.createElement(
-                                            R,
-                                            (0, m.Z)({}, u, {
-                                                imageStyle: o && !t && Y.avatarImage,
+                                            F,
+                                            (0, m.Z)({}, p, {
+                                                imageStyle: o && !t && W.avatarImage,
                                                 onError: (e) => {
                                                     y(e.nativeEvent.error);
                                                 },
@@ -183,18 +183,18 @@
                                                 },
                                                 onTap: d,
                                                 photo: a,
-                                                style: Y.container,
+                                                style: W.container,
                                                 zoomable: !0,
                                             }),
                                         )
                                       : s.Z.isVideo(a) && h
-                                        ? n.createElement(V, { isCurrentlyDisplayed: r, isVerticalVideoNoBlackBars: S, promotedContent: c, style: Y.container, video: a, videoId: h })
+                                        ? n.createElement(L, { isCurrentlyDisplayed: r, promotedContent: c, style: W.container, video: a, videoId: h })
                                         : null,
                               ),
                     );
                 },
-                Y = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                N = n.memo(W, (e, t) => (0, d.Z)(e, t));
+                W = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
+                Y = n.memo(V, (e, t) => (0, d.Z)(e, t));
             class O extends n.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -243,23 +243,23 @@
                     const { businessAvatar: e, dataSaver: t, mediaIndex: o, mediaItems: r, onDismiss: a, onTap: l, promotedContent: d } = this.props,
                         { isZoomed: c } = this.state,
                         h = r.map((i, h) => {
-                            const u = s.Z.isVideo(i),
-                                p = this._getItemVideoId(i),
+                            const p = s.Z.isVideo(i),
+                                u = this._getItemVideoId(i),
                                 m = o === h;
-                            return u && !p ? null : n.createElement(N, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: m, key: h, mediaDetail: r[h], onDismiss: c ? void 0 : a, onTap: l, onZoomed: m ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== h, videoId: p });
+                            return p && !u ? null : n.createElement(Y, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: m, key: h, mediaDetail: r[h], onDismiss: c ? void 0 : a, onTap: l, onZoomed: m ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== h, videoId: u });
                         });
-                    return n.createElement(i.Z, { style: X.root }, r.length > 1 ? this._renderCarousel(h) : h);
+                    return n.createElement(i.Z, { style: N.root }, r.length > 1 ? this._renderCarousel(h) : h);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: i, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
                         c = s.Z.isVideo(i[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [X.dimensions, X.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: X.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !c, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [N.dimensions, N.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: N.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !c, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (O.contextType = u.rC), (O.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: c.Z, onMediaItemChanged: c.Z });
-            const X = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                G = p(O);
+            (O.contextType = p.rC), (O.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: c.Z, onMediaItemChanged: c.Z });
+            const N = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                X = u(O);
         },
         827094: (e, t, o) => {
             o.d(t, { Z: () => f });
@@ -272,8 +272,8 @@
                 d = o(392237),
                 c = o(332920),
                 h = o.n(c),
-                u = o(837020),
-                p = o(254944),
+                p = o(837020),
+                u = o(254944),
                 m = o(965728),
                 g = o(979512);
             const _ = h().ia5e7488,
@@ -305,7 +305,7 @@
                         n.Fragment,
                         null,
                         n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(i.Z, { pointerEvents: c ? "none" : void 0, style: [w.footerButtons, f && b, f && w.footerButtonsAbsolute, c && w.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
-                        n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: c ? "none" : void 0, role: "none", style: [w.buttonWrapper, w.buttonWrapperLeft, m.nk, c && w.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": _, dominantColor: e.rgb, hoverLabel: { label: _ }, icon: n.createElement(u.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: h || g || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
+                        n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: c ? "none" : void 0, role: "none", style: [w.buttonWrapper, w.buttonWrapperLeft, m.nk, c && w.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": _, dominantColor: e.rgb, hoverLabel: { label: _ }, icon: n.createElement(p.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: h || g || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
                         T ? n.createElement(i.Z, { pointerEvents: c ? "none" : void 0, style: [w.buttonWrapper, w.buttonWrapperRight, m.nk, c && w.fadeOut] }, T) : null,
                         I
                             ? n.createElement(
@@ -314,7 +314,7 @@
                                   n.createElement(
                                       a.ZP,
                                       {
-                                          icon: n.createElement(p.default, null),
+                                          icon: n.createElement(u.default, null),
                                           onClick: () => {
                                               this._openGrok({ text: I.prompt, autoSubmit: !0, source: "post_image_annotation" });
                                           },
@@ -506,8 +506,8 @@
                 d = o(372703),
                 c = o(466015),
                 h = o(267483),
-                u = o(263863),
-                p = o(351322),
+                p = o(263863),
+                u = o(351322),
                 m = o(37533),
                 g = o(777809),
                 _ = o(652815),
@@ -526,7 +526,7 @@
                         [l.ZP.SelfThreadTweetComposer]: _.Z,
                         [l.ZP.Tweet]: {
                             handlers: {
-                                [u.Z.Tweet]: (0, C.Cw)({
+                                [p.Z.Tweet]: (0, C.Cw)({
                                     hideConversationControlsEducationText: !0,
                                     hideExclusivityInfoEducationTextInReplies: !0,
                                     hideTrustedFriendsEducationTextInReplies: !0,
@@ -548,21 +548,21 @@
                                     hideReplyContextMode: t,
                                     withMuteConversation: !0,
                                 }),
-                                [u.Z.FocalTweet]: (0, C.g6)({
+                                [p.Z.FocalTweet]: (0, C.g6)({
                                     createAdditionalProps: (t, { applyFeedbackAction: n }) => {
                                         const {
                                                 content: { conversation_annotation: i, hasModeratedReplies: s },
                                                 conversationPosition: l,
                                                 referringContext: c,
                                             } = t,
-                                            { contextTweetId: h, promotedContent: u, socialContext: p, topicFollowPrompt: m } = c || {};
+                                            { contextTweetId: h, promotedContent: p, socialContext: u, topicFollowPrompt: m } = c || {};
                                         return {
                                             contextTweetId: h,
                                             conversationAnnotation: i,
                                             hasModeratedReplies: !!(s && l && l.isStart),
-                                            promotedContent: u,
+                                            promotedContent: p,
                                             rootTweetAuthorId: a,
-                                            socialContext: p,
+                                            socialContext: u,
                                             topicFollowPrompt: m,
                                             withHideReply: o,
                                             withInlineMedia: w,
@@ -581,19 +581,19 @@
                                     divider: (e) => ({ top: !1, bottom: !1 }),
                                     hideReplyContextMode: t,
                                 }),
-                                [u.Z.SelfThread]: (0, C.Cw)({ hideReplyContextMode: t }),
-                                [u.Z.ReaderMode]: (0, C.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: c, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
+                                [p.Z.SelfThread]: (0, C.Cw)({ hideReplyContextMode: t }),
+                                [p.Z.ReaderMode]: (0, C.Cw)({ hideConversationControlsEducationText: !0, hideExclusivityInfoEducationTextInReplies: !0, hideHighlightedUserLabel: !0, hideTrustedFriendsEducationTextInReplies: !0, isReaderMode: !0, shouldSelfThreadIncludeAvatar: !1, showWithheldBannerOnMyTweets: !1, tweetTextSize: c, withActionsDisabled: !1, withMuteConversation: !1, withRemoveFromBookmarks: !1, withSelfThread: !1, withUserPresence: !1 }),
                             },
                         },
                         [l.ZP.Tombstone]: { handlers: { [Z]: (0, f._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [h.Z.Inline]: (0, f._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? d.qt : void 0, withHideReply: o }) } },
-                        [l.ZP.Label]: p.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === b ? x.TransparentCursor : x.Default))(e, s), handlers: { [x.TransparentCursor]: g.L, [x.Default]: g.k } }),
+                        [l.ZP.Label]: u.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === b ? x.TransparentCursor : x.Default))(e, s), handlers: { [x.TransparentCursor]: g.L, [x.Default]: g.k } }),
                         [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: T }),
                         [l.ZP.ThreadHeader]: y.Z,
                     }),
-                S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: i, showOnlyRelevantReplies: d, socialContext: c, topicFollowPrompt: u }) => {
-                    const p = (e) => (e.type === l.ZP.Tweet && e.content.id === o) || (e.type === l.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
+                S = ({ contextTweetId: e, contextualClientEventInfo: t, focalTweetId: o, promotedContent: i, showOnlyRelevantReplies: d, socialContext: c, topicFollowPrompt: p }) => {
+                    const u = (e) => (e.type === l.ZP.Tweet && e.content.id === o) || (e.type === l.ZP.Tombstone && !!e.content && !!e.content.tweet && e.content.tweet.id === o);
                     return (o) => {
-                        const m = (0, s.Z)(o, p);
+                        const m = (0, s.Z)(o, u);
                         let g = !1;
                         const _ = ((e, t) => {
                             const o = (0, n.Z)(e, (e) => "0" !== e.sortIndex);
@@ -606,8 +606,8 @@
                             if (d && (s || r)) return void 0 === y && o.content.cursorType === a.CursorType.ShowMoreThreadsPrompt ? (v = n) : void 0 === y && (y = n), !1;
                             if (d && void 0 !== y && n >= y) return !1;
                             if (d && void 0 === y && n >= v) return !1;
-                            const p = n > m;
-                            if ((o.type !== l.ZP.Tweet && o.type !== l.ZP.Tombstone) || p) return o.type !== l.ZP.SelfThreadTweetComposer && o;
+                            const u = n > m;
+                            if ((o.type !== l.ZP.Tweet && o.type !== l.ZP.Tombstone) || u) return o.type !== l.ZP.SelfThreadTweetComposer && o;
                             {
                                 const s = !g;
                                 if (((g = !0), n < m)) {
@@ -616,15 +616,15 @@
                                 } else {
                                     if (o.type === l.ZP.Tombstone) {
                                         const t = { isStart: s, isEnd: !0 };
-                                        return o.content.displayType === h.Z.Inline ? D({ contextTweetId: e, entry: o, socialContext: c, topicFollowPrompt: u, conversationPosition: t }) : M({ entry: o, conversationPosition: t });
+                                        return o.content.displayType === h.Z.Inline ? D({ contextTweetId: e, entry: o, socialContext: c, topicFollowPrompt: p, conversationPosition: t }) : M({ entry: o, conversationPosition: t });
                                     }
-                                    if (o.type === l.ZP.Tweet) return E({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: c, promotedContent: i, topicFollowPrompt: u, conversationPosition: { isStart: s, isEnd: !0, position: "focal", showReplyContext: !1 } });
+                                    if (o.type === l.ZP.Tweet) return E({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: c, promotedContent: i, topicFollowPrompt: p, conversationPosition: { isStart: s, isEnd: !0, position: "focal", showReplyContext: !1 } });
                                 }
                             }
                         });
                     };
                 },
-                E = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: i, socialContext: s, topicFollowPrompt: r }) => c.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: s, promotedContent: i, topicFollowPrompt: r } }, { displayType: u.Z.FocalTweet }),
+                E = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: i, socialContext: s, topicFollowPrompt: r }) => c.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: s, promotedContent: i, topicFollowPrompt: r } }, { displayType: p.Z.FocalTweet }),
                 D = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: i }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: Z }),
                 M = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
                 k = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor", showReplyContext: !1 } }),
@@ -641,8 +641,8 @@
                 d = o(163889),
                 c = o(87063),
                 h = o(847933),
-                u = o(231035),
-                p = o(519125),
+                p = o(231035),
+                u = o(519125),
                 m = o(810641),
                 g = o(668214);
             const _ = (e, t) => t.module.selectInitialFetchStatus(e),
@@ -651,7 +651,7 @@
                 w = r().c299a6c0,
                 C = (e) => (t, o) => t && t.content && !!t.content.id && t.content.id === e,
                 T = f(({ focalTweetId: e, module: t, moduleInitialFetchStatus: o, moduleTopFetchStatus: s, rootTweetId: r, tweetTextSize: g }) => {
-                    const _ = (0, p.ZP)({ isCurrentUserRootAuthor: !0, withFocalTweetMedia: !0, isTransparentCursorsEnabled: !0, isReaderMode: !0, tweetTextSize: g }),
+                    const _ = (0, u.ZP)({ isCurrentUserRootAuthor: !0, withFocalTweetMedia: !0, isTransparentCursorsEnabled: !0, isReaderMode: !0, tweetTextSize: g }),
                         y = (r !== e && o === c.Z.LOADING) || s === c.Z.LOADING;
                     return n.createElement(m.Z, {
                         anchoring: l.Z,
@@ -661,11 +661,11 @@
                         key: g,
                         module: t,
                         olderAtTop: !0,
-                        renderEmptyState: () => n.createElement(u.Z, null),
+                        renderEmptyState: () => n.createElement(p.Z, null),
                         renderUnavailable: (e) => {
                             switch (e) {
                                 case h.Z.NOT_FOUND:
-                                    return n.createElement(u.Z, null);
+                                    return n.createElement(p.Z, null);
                                 case h.Z.NOT_ALLOWED:
                                     return n.createElement(a.Z, null);
                                 default:
@@ -683,7 +683,7 @@
             const s = { [i.ZP.OtherUserSuspended]: { customAction: n.Z }, [i.ZP.StatusViewForbidden]: { customAction: n.Z } };
         },
         965728: (e, t, o) => {
-            o.d(t, { C_: () => y, I5: () => m, K2: () => _, L$: () => d, Rb: () => g, nk: () => p, sI: () => C, xr: () => f });
+            o.d(t, { C_: () => y, I5: () => m, K2: () => _, L$: () => d, Rb: () => g, nk: () => u, sI: () => C, xr: () => f });
             var n = o(202784),
                 i = o(483677),
                 s = o(782578),
@@ -692,20 +692,20 @@
             const l = (e, t) => `rgba(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue}, ${t})`,
                 d = (e) => {
                     const t = e && i.Z.getForGallery(e);
-                    return t ? { rgb: f(t), rgba: l(t, 0.9) } : u;
+                    return t ? { rgb: f(t), rgba: l(t, 0.9) } : p;
                 },
                 c = a.Z.columnWidths.primary,
                 h = (e, t) => Math.min(t, e),
-                u = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
-                p = { transitionProperty: "background-color", transitionDuration: ".5s" },
+                p = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
+                u = { transitionProperty: "background-color", transitionDuration: ".5s" },
                 m = (e, t) => {
                     const { containerHeight: o, containerWidth: n, mediaHeight: i, mediaWidth: r } = e,
                         a = r && i ? r / i : 1,
                         l = a > 1,
                         d = t ? 400 : c,
-                        u = l && r <= d ? h(n, d) : n,
-                        p = !l && i <= d ? h(o, d) : o;
-                    return s.Z.getContainDimensions({ width: u, height: p }, a);
+                        p = l && (!r || r <= d) ? h(n, d) : n,
+                        u = l || (i && !(i <= d)) ? o : h(o, d);
+                    return s.Z.getContainDimensions({ width: p, height: u }, a);
                 },
                 g = (e) => {
                     const t = e && e.ext_media_color && e.ext_media_color.palette;
@@ -723,7 +723,7 @@
                 w = (e, t) => {
                     switch (t.type) {
                         case "zoom":
-                            return { ...e, isZoomed: t.payload?.isZoomed, showControls: !t.payload?.isZoomed };
+                            return { ...e, isZoomed: t.payload.isZoomed, showControls: !t.payload.isZoomed };
                         case "tap":
                             return { ...e, showControls: !e.showControls };
                         default:
@@ -785,14 +785,14 @@
                 d = o(392237);
             const c = o(393058).Z.isTouchSupported(),
                 h = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
-                u = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
-                p = (e, t, o) => Math.min(t, Math.max(e, o)),
+                p = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
+                u = (e, t, o) => Math.min(t, Math.max(e, o)),
                 m = (e, t) => Math.sqrt(Math.pow(e.clientY - t.clientY, 2) + Math.pow(e.clientX - t.clientX, 2)),
                 g = (e, t) => ({ x: (e.clientX + t.clientX) / 2, y: (e.clientY + t.clientY) / 2 });
             class _ extends n.Component {
                 constructor(e) {
                     super(e),
-                        (this._itemDimensions = u),
+                        (this._itemDimensions = p),
                         (this._ref = n.createRef()),
                         (this._setTouchableNode = (e) => {
                             this._touchableNode !== e && ((this._touchableNode = e), this._removeTouchListener && this._removeTouchListener(), this._touchableNode && (this._removeTouchListener = (0, l.O)(this._touchableNode, this._handleTouchMove, !1)));
@@ -809,7 +809,7 @@
                         }),
                         (this._handleTouchEnd = (e) => {
                             const { maxZoom: t, minZoom: o, onTap: n } = this.props,
-                                i = p(o, t, this.state.zoom),
+                                i = u(o, t, this.state.zoom),
                                 { zoom: s } = this.state;
                             s !== i && 1 === i ? this.resetZoom() : this.setState({ lastX: 0, lastY: 0, zoom: i }), 0 === e.touches.length ? ((this._isTouching = !1), this._lastTouchTime && this._lastTouchTime + 300 > e.timeStamp ? (this._clickTimer && clearTimeout(this._clickTimer), this._handleDoubleTap(e)) : s <= 1 && !this._moved && (this._clickTimer = setTimeout(n, 300)), (this._lastTouchTime = e.timeStamp)) : e.preventDefault();
                         }),
@@ -849,9 +849,9 @@
                         } = this.state,
                         { height: l, width: d } = this._windowDimensions,
                         { height: c, width: h } = this._zoomedDimensions;
-                    let u = 0,
-                        p = 0;
-                    h - d > 0 && (u = t - n), c - l > 0 && (p = o - i), this.setState({ lastX: t, lastY: o, zoomCenter: { x: (0, r.Z)(s - u, 0, d), y: (0, r.Z)(a - p, 0, l) } });
+                    let p = 0,
+                        u = 0;
+                    h - d > 0 && (p = t - n), c - l > 0 && (u = o - i), this.setState({ lastX: t, lastY: o, zoomCenter: { x: (0, r.Z)(s - p, 0, d), y: (0, r.Z)(a - u, 0, l) } });
                 }
                 _handlePinchStart(e) {
                     const { touches: t } = e;
@@ -866,8 +866,8 @@
                         { maxZoom: a, maxZoomBounce: l, minZoom: d, minZoomBounce: c } = this.props;
                     if (0 === s.x && 0 === s.y) return void (2 === e.touches.length && this._handlePinchStart(e));
                     const h = m(t[0], t[1]),
-                        u = this._lastDistance ? h / this._lastDistance : 1,
-                        _ = p(d - c, a + l, i * u),
+                        p = this._lastDistance ? h / this._lastDistance : 1,
+                        _ = u(d - c, a + l, i * p),
                         y = g(t[0], t[1]),
                         f = (() => {
                             if (!this._windowDimensions || !o) return s;
@@ -899,4 +899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.be1bdeca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.063f8cca.js.map

@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new request" + f(e.count, "", "s");
                 }),
                 n("ed93de0c", "વિશ્લેષણાત્મક પોસ્ટ"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "વધુ વિગતો"),
                 n("a6e89af8", "ખુલ્લો વાર્તાલાપ"),
                 n("ica55d24", "નવી ચૅટ"),
                 n("f794af9a", "આનંદ મોડ"),
@@ -4362,8 +4362,8 @@
                 n("g01599b6", "પ્રતિભાવ 1"),
                 n("e02694e0", "પ્રતિભાવ 2"),
                 n("h6867fcc", "મને આ પ્રતિભાવ ગમે છે."),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "Grok વૉઇસ મોડ અજમાવો"),
+                n("jd36d190", "Grok Android ઍપ વડે અદ્યતન સુવિધાઓ ઍક્સેસ કરો"),
                 n("hf9afab0", "ઇન્ટરનેટ અને X ને સ્કેન કરવા, માહિતીનું વિશ્લેષણ કરવા અને ઝડપી, એજન્ટિક શોધ સાથે વિગતવાર, સારી રીતે તર્કબદ્ધ જવાબો પહોંચાડવા માટે DeepSearch ને સક્ષમ કરો"),
                 n("ef3b3f04", 'અમારા તર્ક મૉડલનો ઉપયોગ કરવા માટે વિચારોને સક્ષમ કરો. તે ગણિત, વિજ્ઞાન અને કોડિંગ માટે શ્રેષ્ઠ છે તમે Grokને કોઈ પણ પ્રશ્ન વિશે "સખત વિચારો" કરવા માટે પણ કહી શકો છો જેના માટે મગજની થોડી વધુ શક્તિની જરૂર પડી શકે છે '),
                 n("b43636b8", "Grok 3 વિશે ઓળખ"),
@@ -5841,7 +5841,7 @@
                 n("ab1b3d38", "નોંધની વિનંતીનો ડેટા હજી ઉપલબ્ધ નથી"),
                 n("c43fb933", "X વિકાસકર્તા કરાર અને નીતિ"),
                 n("af781666", "લોકો શું વિચારે છે?"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "વિચારો શેર કરો"),
                 n("ed88e742", "મુદ્દાની લિંક કૉપિ કરો"),
                 n("h92fe1be", "કમનસીબે, આ સમયે 'કોમ્યુનિટી નોટ્સ'ની સુવિધા તમારા માટે ઉપલબ્ધ નથી."),
                 n("f0dc1434", "કોમ્યુનિટી નોટ્સની સુવિધા હાલમાં માત્ર યુ.એસ.માં જ ઉપલબ્ધ છે."),
@@ -12039,6 +12039,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% ફી, ન્યૂનતમ ", ")"];
@@ -12687,6 +12693,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " અને "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", ", અને "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13249,4 +13273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.0122d1da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.b91f2b0a.js.map

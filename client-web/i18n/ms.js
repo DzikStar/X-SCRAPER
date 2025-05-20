@@ -4148,7 +4148,7 @@
                     return a.stringCount + " new requests";
                 }),
                 i("ed93de0c", "Menganalisis Siaran"),
-                i("d1d92e40", "More details"),
+                i("d1d92e40", "Butiran lanjut"),
                 i("a6e89af8", "Perbualan terbuka"),
                 i("ica55d24", "Sembang Baharu"),
                 i("f794af9a", "Mod seronok"),
@@ -4361,8 +4361,8 @@
                 i("g01599b6", "Respons 1"),
                 i("e02694e0", "Respons 2"),
                 i("h6867fcc", "Saya suka respons ini"),
-                i("acc4496c", "Try Grok Voice mode"),
-                i("jd36d190", "Access advanced features with Grok Android app"),
+                i("acc4496c", "Cuba mod Suara Grok"),
+                i("jd36d190", "Akses ciri lanjutan dengan aplikasi Android Grok"),
                 i("hf9afab0", "Dayakan DeepSearch untuk mengimbas Internet dan X, menganalisis maklumat, dan menyampaikan jawapan yang terperinci dan kukuh dengan carian yang pantas dan berdikari. "),
                 i("ef3b3f04", 'Dayakan Fikir untuk menggunakan model pertimbangan kami. Ciri ini sangat sesuai untuk bidang matematik, sains dan pengekodan. Anda juga boleh meminta Grok untuk "Fikir dengan lebih mendalam" tentang sebarang pertanyaan yang mungkin mencabar minda. '),
                 i("b43636b8", "Memperkenalkan Grok 3"),
@@ -5840,7 +5840,7 @@
                 i("ab1b3d38", "Data permintaan nota belum tersedia lagi"),
                 i("c43fb933", "Perjanjian dan Dasar Pembangun X"),
                 i("af781666", "Apakah pandangan orang ramai?"),
-                i("a1f414ee", "Share thoughts"),
+                i("a1f414ee", "Kongsi fikiran"),
                 i("ed88e742", "Salin pautan kepada Topik"),
                 i("h92fe1be", "Malangnya, Nota Komuniti tidak tersedia untuk anda pada masa ini."),
                 i("f0dc1434", "Nota Komuniti hanya tersedia di A.S. pada masa ini."),
@@ -7867,7 +7867,7 @@
                 i("b4fef99e", "Selepas pasukan sokongan kami menerima permintaan anda, kami akan menyemak maklumat anda dan akan membantu dalam konfigurasi penyepaduan anda."),
                 i("h37f2d96", "Harap maklum bahawa tidak semua sistem penjejakan pemohon disokong pada masa sekarang."),
                 i("ce102a20", "Mengubah hala ke Stripe");
-            function d(a, n) {
+            function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
                     (i.enumerable = i.enumerable || !1),
@@ -7876,9 +7876,9 @@
                         Object.defineProperty(
                             a,
                             ((t = i.key),
-                            (d = void 0),
+                            (u = void 0),
                             "symbol" ==
-                            typeof (d = (function (a, n) {
+                            typeof (u = (function (a, n) {
                                 if ("object" != typeof a || null === a) return a;
                                 var e = a[Symbol.toPrimitive];
                                 if (void 0 !== e) {
@@ -7888,21 +7888,21 @@
                                 }
                                 return ("string" === n ? String : Number)(a);
                             })(t, "string"))
-                                ? d
-                                : String(d)),
+                                ? u
+                                : String(u)),
                             i,
                         );
                 }
-                var t, d;
+                var t, u;
             }
-            function u(a, n) {
+            function d(a, n) {
                 return (
-                    (u = Object.setPrototypeOf
+                    (d = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (a, n) {
                               return (a.__proto__ = n), a;
                           }),
-                    u(a, n)
+                    d(a, n)
                 );
             }
             i("ddfd6718", "Pembayaran Gagal"),
@@ -9471,7 +9471,7 @@
                     (e = a),
                     ((n = s).prototype = Object.create(e.prototype)),
                     (n.prototype.constructor = n),
-                    u(n, e),
+                    d(n, e),
                     (s.prototype.render = function () {
                         return r.createElement.apply(r, this[this.props.$i18n].reduce(this.templateReducer, [r.Fragment, null]));
                     }),
@@ -12022,6 +12022,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(Yuran ", "%, Min. ", ")"];
@@ -12670,6 +12676,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " dan "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", ", dan "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -12872,8 +12896,8 @@
                                 };
                             },
                         },
-                    ]) && d(i.prototype, t),
-                    g && d(i, g),
+                    ]) && u(i.prototype, t),
+                    g && u(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     s
                 );
@@ -13232,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.cdf77d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.b39157aa.js.map

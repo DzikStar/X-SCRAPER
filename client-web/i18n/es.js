@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 o("ed93de0c", "Analizando el post"),
-                o("d1d92e40", "More details"),
+                o("d1d92e40", "Más detalles"),
                 o("a6e89af8", "Conversación abierta"),
                 o("ica55d24", "Nuevo chat"),
                 o("f794af9a", "Modo Divertido"),
@@ -4361,8 +4361,8 @@
                 o("g01599b6", "Respuesta 1"),
                 o("e02694e0", "Respuesta 2"),
                 o("h6867fcc", "Prefiero esta respuesta"),
-                o("acc4496c", "Try Grok Voice mode"),
-                o("jd36d190", "Access advanced features with Grok Android app"),
+                o("acc4496c", "Prueba el modo Voz de Grok"),
+                o("jd36d190", "Accede a las funciones avanzadas de Grok con la app de Android."),
                 o("hf9afab0", "Activa DeepSearch para buscar en Internet y en X, analizar información y proporcionar respuestas detalladas y correctamente razonadas con una búsqueda rápida y proactiva."),
                 o("ef3b3f04", "Activa Pensar para usar nuestro modelo de razonamiento. Es ideal para los temas relacionados con las matemáticas, la ciencia y la programación. También puedes pedirle a Grok que “piense más” sobre cualquier pregunta que pueda requerir un razonamiento un poco más profundo. "),
                 o("b43636b8", "Presentamos Grok 3"),
@@ -5840,7 +5840,7 @@
                 o("ab1b3d38", "Los datos de solicitud de nota aún no están disponibles"),
                 o("c43fb933", "el Acuerdo y la Política para desarrolladores de X"),
                 o("af781666", "¿Qué piensa la gente?"),
-                o("a1f414ee", "Share thoughts"),
+                o("a1f414ee", "Compartir opinión "),
                 o("ed88e742", "Copiar enlace a Tema"),
                 o("h92fe1be", "Lamentablemente, Notas de la comunidad no está disponible para ti en este momento."),
                 o("f0dc1434", "Actualmente, Notas de la comunidad solo está disponible en Estados Unidos"),
@@ -12035,6 +12035,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", " % de comisión, mín. ", ")"];
@@ -12683,6 +12689,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " y "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " y "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13245,4 +13269,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.22879bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.ab6f099a.js.map

@@ -1883,6 +1883,7 @@ var manifest = {
         profile_page_upsells_swapper_17161: { name: "profile_page_upsells_swapper_17161", type: "experiment", enumeration_values: ["control", "holdback"] },
         profile_page_upsells_swapper_non_english_17208: { name: "profile_page_upsells_swapper_non_english_17208", type: "experiment", enumeration_values: ["control", "holdback"] },
         project_jiminy_article_web_11673: { name: "project_jiminy_article_web_11673", type: "experiment", enumeration_values: [] },
+        promo_variants_test_17389: { name: "promo_variants_test_17389", type: "experiment", enumeration_values: ["control", "enabled"] },
         promoted_badge_placement_circle_icon: { name: "promoted_badge_placement_circle_icon", type: "string" },
         promoted_badge_placement_position: { name: "promoted_badge_placement_position", type: "string", defaultValue: "" },
         recruiting_verified_orgs_admin_enabled: { name: "recruiting_verified_orgs_admin_enabled", type: "boolean", defaultValue: !0 },

@@ -55,7 +55,7 @@
                 l = s;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Pe, BR: () => Ce, Bj: () => ht, Bl: () => Ae, DK: () => De, DO: () => st, Dc: () => H, EQ: () => _e, FW: () => ct, Fs: () => Xe, GU: () => ce, Gl: () => Ne, Gs: () => Ye, H_: () => He, Ix: () => mt, J$: () => Le, M9: () => xe, MO: () => it, Oc: () => Ge, Ou: () => Ve, Q1: () => fe, QE: () => $e, Qu: () => ut, Se: () => Ze, So: () => et, T3: () => ve, T7: () => Rt, Tp: () => be, Ts: () => Fe, UM: () => Te, UV: () => pt, XT: () => Se, _T: () => ke, aY: () => Je, ab: () => at, bI: () => Qe, dN: () => G, fq: () => wt, gh: () => ot, gx: () => L, i7: () => he, iv: () => nt, jm: () => tt, lD: () => se, lw: () => J, nV: () => Q, p2: () => K, p6: () => me, pQ: () => X, qK: () => Y, qQ: () => Ee, qU: () => qe, qc: () => gt, uG: () => dt, uN: () => Be, ve: () => Me, vw: () => Z, wu: () => lt, xe: () => Oe, yH: () => rt, zK: () => je, zx: () => ee });
+            n.d(t, { BC: () => Pe, BR: () => xe, Bj: () => wt, Bl: () => Se, DK: () => De, DO: () => ct, Dc: () => H, EQ: () => je, FW: () => ot, Fs: () => Ye, GU: () => ce, Gl: () => Ne, Gs: () => Je, H_: () => Le, Ix: () => yt, J$: () => Ge, M9: () => be, MO: () => st, Oc: () => Qe, Ou: () => Ve, Q1: () => fe, QE: () => Me, Qu: () => lt, Se: () => He, So: () => tt, T3: () => ve, T7: () => bt, Tp: () => Ce, Ts: () => Fe, UM: () => Te, UV: () => ut, V9: () => Oe, XT: () => Ae, _T: () => ke, aY: () => et, ab: () => rt, bI: () => Xe, dN: () => G, fq: () => Rt, gh: () => dt, gx: () => L, i7: () => he, iv: () => at, jm: () => nt, lD: () => se, lw: () => J, nV: () => Q, p2: () => K, p6: () => me, pQ: () => X, qK: () => Y, qQ: () => Ke, qU: () => _e, qc: () => ft, uG: () => pt, uN: () => Be, ve: () => Ee, vw: () => Z, wu: () => gt, xe: () => qe, y4: () => xt, yH: () => it, zK: () => We, zx: () => ee });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -74,15 +74,15 @@
                 h = n(515510),
                 w = n(642004),
                 R = n(87877),
-                x = n(922281),
-                C = n(880428),
-                b = n(810088),
+                b = n(922281),
+                x = n(880428),
+                C = n(810088),
                 P = n(357818),
                 T = n(539660),
                 v = n(724983),
                 D = n(297679),
-                S = n(217995),
-                A = n(183276),
+                A = n(217995),
+                S = n(183276),
                 k = n(703325),
                 N = n(215285),
                 I = n(258074),
@@ -95,9 +95,9 @@
                 W = "Withdrawal",
                 z = "ATM withdrawal",
                 $ = "Awaiting approval",
-                F = "Redeemed Cash Back",
-                B = u().d0a77c9b,
-                M = u().g727ddcf,
+                M = "Redeemed Cash Back",
+                F = u().d0a77c9b,
+                B = u().g727ddcf,
                 E = u().da44942d,
                 K = ({ amount: e, currency: t }) => {
                     const n = G({ amount: e, formatter: 1e6 });
@@ -118,12 +118,12 @@
                 G = ({ amount: e, formatter: t = 1e6 }) => e / t;
             function Q(e) {
                 const t = new Date(parseInt(e, 10));
-                return t.setDate(0), M(t);
+                return t.setDate(0), B(t);
             }
             function X({ account: e, productCode: t, transactionType: n }) {
-                if (t === C.O.Interest) return { title: _, iconType: q.Ms.interest };
-                if (t === C.O.Cashback) return { title: F, iconType: q.Ms.cashback };
-                const a = t === C.O.Banking;
+                if (t === x.O.Interest) return { title: _, iconType: q.Ms.interest };
+                if (t === x.O.Cashback) return { title: M, iconType: q.Ms.cashback };
+                const a = t === x.O.Banking;
                 switch (n) {
                     case P.x.AtmWithdrawal:
                         return { title: z, iconType: q.Ms.atm };
@@ -136,9 +136,9 @@
                 }
             }
             function Y({ accountName: e, createdAt: t, description: n, productCode: a, statusLabel: r, transactionType: i }) {
-                const s = a === C.O.Banking;
-                if (a === C.O.Interest) return Q(t);
-                if (a === C.O.Cashback) return r;
+                const s = a === x.O.Banking;
+                if (a === x.O.Interest) return Q(t);
+                if (a === x.O.Cashback) return r;
                 switch (i) {
                     case P.x.Transfer:
                         return n ? `For "${n}"` : r;
@@ -161,12 +161,12 @@
             function J({ amount: e, currency: t, description: n, status: a }) {
                 const r = Z({ amount: e, currency: t });
                 switch (a) {
-                    case b.g.AwaitingRequestAcceptance:
-                    case b.g.RequestVerificationRequired:
+                    case C.g.AwaitingRequestAcceptance:
+                    case C.g.RequestVerificationRequired:
                         return n ? `Requested ${r} for "${n}"` : `Requested ${r}`;
-                    case b.g.PendingRecipientAcceptance:
+                    case C.g.PendingRecipientAcceptance:
                         return n ? `Sent ${r} for "${n}"` : `Sent ${r}`;
-                    case b.g.AwaitingUnrecognizedConfirmation:
+                    case C.g.AwaitingUnrecognizedConfirmation:
                         return n ? `Card purchase of ${r} for "${n}"` : `Card purchase of ${r}`;
                     default:
                         return;
@@ -174,8 +174,8 @@
             }
             const ee = ({ referenceTransactionId: e, transactionType: t }) => ([P.x.Refund, P.x.Reverse].includes(t) && e ? `${V.bR}/${e}` : null);
             function te({ productCode: e, transactionType: t }) {
-                if (e === C.O.Interest) return _;
-                const n = e === C.O.Banking;
+                if (e === x.O.Interest) return _;
+                const n = e === x.O.Banking;
                 switch (t) {
                     case P.x.Transfer:
                         return "Peer-to-peer transfer";
@@ -195,10 +195,10 @@
                         return "";
                 }
             }
-            const ne = Object.freeze({ [b.g.Cancelled]: "Cancelled", [b.g.Failed]: "Failed", [b.g.Expired]: "Expired", [b.g.Pending]: "Pending", [b.g.Hold]: "Pending", [b.g.AuthorizationOpen]: "Pending", [b.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [b.g.PendingReview]: "Under review", [b.g.PendingRecipientAction]: "Pending", [b.g.PendingRecipientOnboarding]: "Pending", [b.g.AwaitingRequestAcceptance]: "Pending", [b.g.PendingRecipientAcceptance]: "Pending", [b.g.PinVerificationRequired]: "Pending", [b.g.RequestVerificationRequired]: "Pending", [b.g.VerificationRequired]: "Pending", [b.g.RejectedByRecipient]: "Rejected", [b.g.RequestRejected]: "Rejected", [b.g.Settled]: "Completed", [b.g.SoftSettled]: "Completed", [b.g.AuthorizationClosed]: "Completed" }),
+            const ne = Object.freeze({ [C.g.Cancelled]: "Cancelled", [C.g.Failed]: "Failed", [C.g.Expired]: "Expired", [C.g.Pending]: "Pending", [C.g.Hold]: "Pending", [C.g.AuthorizationOpen]: "Pending", [C.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [C.g.PendingReview]: "Under review", [C.g.PendingRecipientAction]: "Pending", [C.g.PendingRecipientOnboarding]: "Pending", [C.g.AwaitingRequestAcceptance]: "Pending", [C.g.PendingRecipientAcceptance]: "Pending", [C.g.PinVerificationRequired]: "Pending", [C.g.RequestVerificationRequired]: "Pending", [C.g.VerificationRequired]: "Pending", [C.g.RejectedByRecipient]: "Rejected", [C.g.RequestRejected]: "Rejected", [C.g.Settled]: "Completed", [C.g.SoftSettled]: "Completed", [C.g.AuthorizationClosed]: "Completed" }),
                 ae = Object.freeze({ [T.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [T.P.InReview]: "Under review", [T.P.RejectedByUnsupportedRegion]: "Unsupported region", [T.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [T.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [T.P.UnrecognizedActivityConfirmed]: "Awaiting retry", [T.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
-                re = Object.freeze({ [b.g.PendingRecipientAcceptance]: $, [b.g.PendingRecipientOnboarding]: $, [b.g.PendingRecipientAction]: $ }),
-                ie = Object.freeze({ [b.g.AwaitingRequestAcceptance]: $, [b.g.PendingRequestAcceptance]: $, [b.g.RequestVerificationRequired]: $ });
+                re = Object.freeze({ [C.g.PendingRecipientAcceptance]: $, [C.g.PendingRecipientOnboarding]: $, [C.g.PendingRecipientAction]: $ }),
+                ie = Object.freeze({ [C.g.AwaitingRequestAcceptance]: $, [C.g.PendingRequestAcceptance]: $, [C.g.RequestVerificationRequired]: $ });
             function se({ isViewerSender: e, reasonCode: t, status: n }) {
                 const a = t ? ae[t] : void 0,
                     r = n ? (e ? ie[n] : re[n]) : void 0,
@@ -206,7 +206,7 @@
                 return a ?? r ?? i ?? "";
             }
             function ce({ isViewerSender: e, productCode: t, transactionType: n }) {
-                if (t === C.O.Cashback) return q.NU.credit;
+                if (t === x.O.Cashback) return q.NU.credit;
                 switch (n) {
                     case P.x.Deposit:
                         return q.NU.credit;
@@ -224,12 +224,12 @@
                 de = Object.freeze({ [w.W.IssuedCardTypePhysical]: "Physical Card", [w.W.IssuedCardTypeVirtual]: "Virtual Card" }),
                 pe = Object.freeze({ [m.l.Charge]: "Charge", [m.l.Combo]: "Combo", [m.l.Debit]: "Debit", [m.l.Credit]: "Credit", [m.l.DeferredDebit]: "DeferredDebit", [m.l.Prepaid]: "Prepaid" }),
                 ue = Object.freeze({ [f.U.AmericanExpress]: "American Express", [f.U.Mastercard]: "Mastercard", [f.U.Visa]: "Visa" }),
-                le = Object.freeze({ [x.D.LoginRequired]: "Login required", [x.D.Invalid]: "Invalid", [x.D.Pending]: "Pending", [x.D.Revoked]: "Revoked", [x.D.Canceled]: "Canceled", [x.D.Inactive]: "Inactive" });
+                le = Object.freeze({ [b.D.LoginRequired]: "Login required", [b.D.Invalid]: "Invalid", [b.D.Pending]: "Pending", [b.D.Revoked]: "Revoked", [b.D.Canceled]: "Canceled", [b.D.Inactive]: "Inactive" });
             function ge({ status: e }) {
                 return (e ? le[e] : "") ?? "";
             }
             const fe = ({ createdAt: e, description: t, isViewerSender: n, productCode: a, reasonCode: r, status: i, transactionType: s }) => {
-                return { amountType: s ? ce({ transactionType: s, isViewerSender: n, productCode: a }) : void 0, type: s ? te({ transactionType: s, productCode: a }) : void 0, status: i ? se({ status: i, reasonCode: r, isViewerSender: n }) : void 0, createdAt: ((c = e), c ? B(new Date(parseInt(c, 10))) : ""), description: t };
+                return { amountType: s ? ce({ transactionType: s, isViewerSender: n, productCode: a }) : void 0, type: s ? te({ transactionType: s, productCode: a }) : void 0, status: i ? se({ status: i, reasonCode: r, isViewerSender: n }) : void 0, createdAt: ((c = e), c ? F(new Date(parseInt(c, 10))) : ""), description: t };
                 var c;
             };
             function me(e) {
@@ -237,32 +237,32 @@
                 return t ? E(new Date(t)) : "";
             }
             function ye({ status: e, transactionType: t }) {
-                return t === P.x.Transfer && e === b.g.PendingRecipientAcceptance;
+                return t === P.x.Transfer && e === C.g.PendingRecipientAcceptance;
             }
             function he({ status: e }) {
-                return e === b.g.VerificationRequired || e === b.g.RequestVerificationRequired || e === b.g.AwaitingUnrecognizedConfirmation;
+                return e === C.g.VerificationRequired || e === C.g.RequestVerificationRequired || e === C.g.AwaitingUnrecognizedConfirmation;
             }
             function we({ status: e, transactionType: t }) {
-                return t === P.x.Transfer && e === b.g.AwaitingRequestAcceptance;
+                return t === P.x.Transfer && e === C.g.AwaitingRequestAcceptance;
             }
             function Re({ status: e, transactionType: t }) {
-                return t === P.x.Transfer && e === b.g.PendingRecipientOnboarding;
+                return t === P.x.Transfer && e === C.g.PendingRecipientOnboarding;
             }
-            const xe = ({ isViewerSender: e, status: t, transactionType: n }) => (ye({ status: t, transactionType: n }) || Re({ status: t, transactionType: n })) && !e;
-            function Ce({ isViewerSender: e, status: t, transactionType: n }) {
+            const be = ({ isViewerSender: e, status: t, transactionType: n }) => (ye({ status: t, transactionType: n }) || Re({ status: t, transactionType: n })) && !e;
+            function xe({ isViewerSender: e, status: t, transactionType: n }) {
                 return ye({ status: t, transactionType: n }) && !e;
             }
-            function be({ isViewerSender: e, status: t, transactionType: n }) {
+            function Ce({ isViewerSender: e, status: t, transactionType: n }) {
                 return (ye({ status: t, transactionType: n }) || Re({ status: t, transactionType: n })) && e;
             }
             function Pe({ status: e }) {
-                return e === b.g.AwaitingUnrecognizedConfirmation;
+                return e === C.g.AwaitingUnrecognizedConfirmation;
             }
             function Te({ isViewerSender: e, status: t, transactionType: n }) {
                 return (
                     (we({ status: t, transactionType: n }) && e) ||
                     (function ({ isViewerSender: e, status: t, transactionType: n }) {
-                        return t === b.g.RequestVerificationRequired && e && n === P.x.Transfer;
+                        return t === C.g.RequestVerificationRequired && e && n === P.x.Transfer;
                     })({ isViewerSender: e, status: t, transactionType: n })
                 );
             }
@@ -270,16 +270,16 @@
                 return we({ status: t, transactionType: n }) && !e;
             }
             function De(e) {
-                return Te(e) || Ce(e) || Pe({ status: e.status });
+                return Te(e) || xe(e) || Pe({ status: e.status });
             }
-            function Se(e) {
-                return De(e) || ve(e) || be(e);
+            function Ae(e) {
+                return De(e) || ve(e) || Ce(e);
             }
-            function Ae({ status: e }) {
-                return [b.g.Cancelled, b.g.Failed, b.g.Expired, b.g.RejectedByRecipient, b.g.RequestRejected].includes(e);
+            function Se({ status: e }) {
+                return [C.g.Cancelled, C.g.Failed, C.g.Expired, C.g.RejectedByRecipient, C.g.RequestRejected].includes(e);
             }
             function ke({ status: e }) {
-                return [b.g.Settled, b.g.SoftSettled, b.g.AuthorizationClosed].includes(e);
+                return [C.g.Settled, C.g.SoftSettled, C.g.AuthorizationClosed].includes(e);
             }
             function Ne({ status: e }) {
                 return !ke({ status: e });
@@ -295,152 +295,157 @@
                         f = c ? Ue[c] : "";
                     return i && r ? { accountName: { name: `${oe[i]} (...${r})` }, avatar: { shape: "square", uri: Ie(u) }, id: n, accountType: s, type: q.dX.bank, label: ge({ status: l }) } : d && o ? { accountName: { name: `${pe[d]} (...${o})` }, avatar: { shape: "square", uri: f }, id: n, accountType: s, brandName: g, type: q.dX.card, label: ge({ status: l }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${de[p]} (...${o})` } : null;
                 },
-                Oe = ({ method: e, methodConfigs: t, transferDirection: n }) => {
+                Oe = (e) => {
+                    const t = e?.core?.supported_transfer_methods,
+                        n = t?.push_transfer_methods?.[0],
+                        a = t?.pull_transfer_methods?.[0];
+                    return { debitMethod: n, creditMethod: a };
+                },
+                qe = ({ method: e, methodConfigs: t, transferDirection: n }) => {
                     const a = Ve(e),
-                        r = e?.core?.supported_transfer_methods,
-                        i = r?.push_transfer_methods?.[0],
-                        s = r?.pull_transfer_methods?.[0],
-                        c = n === q.Rz.debit && i ? t.debitMethodConfigs?.get(i) : n === q.Rz.credit && s ? t.creditMethodConfigs?.get(s) : null;
-                    return a ? { ...a, config: c } : null;
+                        { creditMethod: r, debitMethod: i } = Oe(e),
+                        s = n === q.Rz.debit && i ? t.debitMethodConfigs?.get(i) : n === q.Rz.credit && r ? t.creditMethodConfigs?.get(r) : null;
+                    return a ? { ...a, config: s, debitMethod: i, creditMethod: r } : null;
                 },
-                qe = ({ productCode: e, transactionType: t }) => e === C.O.Issuing && (t === P.x.Payment || t === P.x.Refund || t === P.x.AtmWithdrawal),
-                _e = ({ productCode: e, transactionType: t }) => e === C.O.Banking && (t === P.x.Deposit || t === P.x.Withdraw),
-                je = ({ amountType: e, merchantDetails: t, productCode: n, transactionType: a }) => {
+                _e = ({ productCode: e, transactionType: t }) => e === x.O.Issuing && (t === P.x.Payment || t === P.x.Refund || t === P.x.AtmWithdrawal),
+                je = ({ productCode: e, transactionType: t }) => e === x.O.Banking && (t === P.x.Deposit || t === P.x.Withdraw),
+                We = ({ amountType: e, merchantDetails: t, productCode: n, transactionType: a }) => {
                     const r = a === P.x.AtmWithdrawal,
-                        i = qe({ productCode: n, transactionType: a });
-                    return (_e({ productCode: n, transactionType: a }) || i) && t ? { ...t, type: r ? q.wC.atm : i ? q.wC.card : e === q.NU.credit ? q.wC.bankDeposit : q.wC.bankWithdraw } : void 0;
+                        i = _e({ productCode: n, transactionType: a });
+                    return (je({ productCode: n, transactionType: a }) || i) && t ? { ...t, type: r ? q.wC.atm : i ? q.wC.card : e === q.NU.credit ? q.wC.bankDeposit : q.wC.bankWithdraw } : void 0;
                 },
-                We = ({ handleEmptyList: e, key: t, store: n }) => {
+                ze = ({ handleEmptyList: e, key: t, store: n }) => {
                     const a = n.getRoot(),
                         r = t ? a.getLinkedRecords(t) : null;
                     r && r.length > 0 ? r.forEach((e) => e?.invalidateRecord?.()) : e && a.invalidateRecord();
                 },
-                ze = (e, t) => {
+                $e = (e, t) => {
                     const n = e.getRoot(),
                         a = t && n.getLinkedRecord(t);
                     a && a.invalidateRecord();
                 },
-                $e = (e) => {
+                Me = (e) => {
                     const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], { filter: R.U.PaymentMethodFilterFunding, withIssuedSpend: !1 });
-                    We({ store: e, key: t, handleEmptyList: !0 });
+                    ze({ store: e, key: t, handleEmptyList: !0 });
                 },
                 Fe = (e) => {
                     const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], { filter: R.U.PaymentMethodFilterSpending, withIssuedSpend: !0 });
-                    We({ store: e, key: t, handleEmptyList: !0 });
+                    ze({ store: e, key: t, handleEmptyList: !0 });
                 },
                 Be = (e) => {
                     s()(e, (e) => {
                         Fe(e);
                     });
                 },
-                Me = (e) => {
+                Ee = (e) => {
                     s()(e, (e) => {
-                        $e(e);
+                        Me(e);
                     });
                 },
-                Ee = (e) => {
-                    const t = (0, c.getStorageKey)(I.Z.fragment.selections[0], { search_filter_id: q.$W });
-                    ze(e, t);
-                    const n = (0, c.getStorageKey)(v.Z.fragment.selections[0], {});
-                    We({ store: e, key: n });
-                    const a = (0, c.getStorageKey)(D.Z.fragment.selections[0], {});
-                    ze(e, a);
-                },
                 Ke = (e) => {
-                    const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
-                    We({ store: e, key: t });
+                    const t = (0, c.getStorageKey)(I.Z.fragment.selections[0], { search_filter_id: q.$W });
+                    $e(e, t);
+                    const n = (0, c.getStorageKey)(v.Z.fragment.selections[0], {});
+                    ze({ store: e, key: n });
+                    const a = (0, c.getStorageKey)(D.Z.fragment.selections[0], {});
+                    $e(e, a);
                 },
-                Ze = (e, t) => {
+                Ze = (e) => {
+                    const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
+                    ze({ store: e, key: t });
+                },
+                He = (e, t) => {
                     s()(e, (e) => {
                         t &&
                             ((e, t) => {
                                 const n = e.get(t);
                                 n && n.invalidateRecord();
                             })(e, t),
-                            Ee(e),
-                            Ke(e);
+                            Ke(e),
+                            Ze(e);
                     });
                 },
-                He = (e, { reasonCode: t, recordId: n, status: a }) => {
-                    if ((he({ status: a }) || (Ee(e), Ke(e)), n && a)) {
+                Le = (e, { reasonCode: t, recordId: n, status: a }) => {
+                    if ((he({ status: a }) || (Ke(e), Ze(e)), n && a)) {
                         const r = e.get(n);
                         r && (r.setValue(a, "transaction_status"), r.setValue(t, "reason_code"));
                     }
                 },
-                Le = (e) => {
+                Ge = (e) => {
                     s()(e, (e) => {
                         ((e) => {
-                            const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
-                            ze(e, t);
+                            const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
+                            $e(e, t);
                         })(e),
-                            Ee(e),
-                            Ke(e);
+                            Ke(e),
+                            Ze(e);
                     });
                 },
-                Ge = (e) => {
+                Qe = (e) => {
                     const t = (0, c.getStorageKey)(N.Z.fragment.selections[0], {});
-                    ze(e, t);
+                    $e(e, t);
                 },
-                Qe = () => l.ZP.isMobileOS(),
-                Xe = ({ permission: e, permissions: t }) => !!t?.includes(e),
-                Ye = (e) => Xe({ permissions: e, permission: y.d.VerifyIdentity }),
-                Je = (e) => Xe({ permissions: e, permission: y.d.UpdateCustomerPreferences }),
-                et = ({ roles: e }) => !!e?.includes(h.N.Ineligible),
-                tt = ({ roles: e }) => !!e?.includes(h.N.PendingBalanceAutoClaim),
-                nt = ({ roles: e }) => !!e?.includes(h.N.RestrictedGeolocationUsState) || !!e?.includes(h.N.RestrictedOnboardingUsState),
-                at = ({ roles: e }) => !!e?.includes(h.N.KycFailed) || !!e?.includes(h.N.PendingReview),
-                rt = ({ roles: e }) => !!e?.includes(h.N.PendingKycUnverifiedLimitExceeded),
-                it = ({ permissions: e }) => Xe({ permissions: e, permission: y.d.RequestTransfer }),
-                st = ({ actionPermission: e, permissions: t, roles: n }) => (Ye(t) && !Xe({ permissions: t, permission: e }) ? ct({ roles: n }) : null),
-                ct = ({ roles: e }) => {
+                Xe = () => l.ZP.isMobileOS(),
+                Ye = ({ permission: e, permissions: t }) => !!t?.includes(e),
+                Je = (e) => Ye({ permissions: e, permission: y.d.VerifyIdentity }),
+                et = (e) => Ye({ permissions: e, permission: y.d.UpdateCustomerPreferences }),
+                tt = ({ roles: e }) => !!e?.includes(h.N.Ineligible),
+                nt = ({ roles: e }) => !!e?.includes(h.N.PendingBalanceAutoClaim),
+                at = ({ roles: e }) => !!e?.includes(h.N.RestrictedGeolocationUsState) || !!e?.includes(h.N.RestrictedOnboardingUsState),
+                rt = ({ roles: e }) => !!e?.includes(h.N.KycFailed) || !!e?.includes(h.N.PendingReview),
+                it = ({ roles: e }) => !!e?.includes(h.N.PendingKycUnverifiedLimitExceeded),
+                st = ({ permissions: e }) => Ye({ permissions: e, permission: y.d.RequestTransfer }),
+                ct = ({ actionPermission: e, permissions: t, roles: n }) => (Je(t) && !Ye({ permissions: t, permission: e }) ? ot({ roles: n }) : null),
+                ot = ({ roles: e }) => {
                     const t = e?.includes(h.N.PendingSelfieVerification) || e?.includes(h.N.KycDocumentsVerified),
                         n = e?.includes(h.N.KycPendingDocumentUpload) || e?.includes(h.N.KycVerified);
                     return t ? V.AU.selfie.verifyIdentityPath : n ? V.AU.tier3.verifyIdentityPath : V.AU.tier2.verifyIdentityPath;
                 },
-                ot = () => {
+                dt = () => {
                     if (l.ZP.isTwitterApp()) return window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
                     return { [o.default.ThemePaletteNames.light]: "light", [o.default.ThemePaletteNames.dark]: "dim", [o.default.ThemePaletteNames.darker]: "dark", [o.default.ThemePaletteNames.business]: "dark" }[d.default.theme.paletteName] || "light";
                 },
-                dt = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: r, xPaymentsSession: i }) => {
+                pt = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: r, xPaymentsSession: i }) => {
                     if (!n || !i || !a) return null;
                     const s = new URL(`${n}${e}`);
                     if ((s.searchParams.set("sessionId", i), s.searchParams.set("providerToken", a), s.searchParams.set("theme", r), t)) for (const [e, n] of t) s.searchParams.set(e, n);
                     return s.href;
                 },
-                pt = ({ amount: e, balanceAmountMicro: t }) => {
+                ut = ({ amount: e, balanceAmountMicro: t }) => {
                     const n = parseFloat(t);
                     return parseFloat(e) <= G({ amount: n });
                 },
-                ut = (e) => new Date(e.year, e.month - 1, e.day),
-                lt = ({ challengeId: e, status: t }) => (he({ status: t }) && e ? V.vw : null),
-                gt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
-                    switch ((Le(n), e)) {
+                lt = (e) => new Date(e.year, e.month - 1, e.day),
+                gt = ({ challengeId: e, status: t }) => (he({ status: t }) && e ? V.vw : null),
+                ft = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
+                    switch ((Ge(n), e)) {
                         case V.kW.auth:
                             O.Z.closeChallenge();
                             break;
                         case V.kW.preference:
                             ((e) => {
                                 s()(e, (e) => {
-                                    Ge(e);
+                                    Qe(e);
                                 });
                             })(n);
                     }
                     t ? a.replace(t) : a.goBack();
                 },
-                ft = { [V.kW.forgotPin]: V.jR, [V.kW.changeCardPin]: V.SR },
-                mt = ({ challengeInitiator: e }) => (e ? ft[e] : void 0) ?? V.vw,
-                yt = (e) => parseInt(e, 10) / 100,
-                ht = ({ apy: e }) => `${yt(e)}% APY`,
-                wt = ({ rate: e }) => `${yt(e)}% Everywhere`,
-                Rt = (e) => {
+                mt = { [V.kW.forgotPin]: V.jR, [V.kW.changeCardPin]: V.SR },
+                yt = ({ challengeInitiator: e }) => (e ? mt[e] : void 0) ?? V.vw,
+                ht = (e) => parseInt(e, 10) / 100,
+                wt = ({ apy: e }) => `${ht(e)}% APY`,
+                Rt = ({ rate: e }) => `${ht(e)}% Everywhere`,
+                bt = (e) => {
                     const t = e?.address,
                         n = t?.postal_code;
                     if (t && n) {
                         const e = [];
                         return t.street && e.push(t.street), t.street2 && e.push(t.street2), t.city && e.push(t.city), t.region && e.push(t.region), `${e.join(", ")} ${n}`;
                     }
-                };
+                },
+                xt = ({ baseAmount: e, feeAmount: t, totalAmount: n }) => !!t && "0" !== t && n !== e;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.8a0f030a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.6d7bd66a.js.map

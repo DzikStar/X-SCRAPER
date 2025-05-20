@@ -323,13 +323,13 @@
             const P = (0, I.Z)({
                     loader: () =>
                         Promise.all([
-                            i.e("icons.6"),
-                            i.e("icons.25"),
-                            i.e("icons.22"),
-                            i.e("icons.2"),
+                            i.e("icons.10"),
+                            i.e("icons.21"),
+                            i.e("icons.16"),
                             i.e("modules.common-e907d115"),
                             i.e("modules.common-e019dbda"),
-                            i.e("icons.0"),
+                            i.e("icons.24"),
+                            i.e("icons.28"),
                             i.e("modules.audio-6107ac1a"),
                             i.e("modules.audio-b953418a"),
                             i.e("modules.audio-7c51e6a7"),
@@ -340,8 +340,9 @@
                             i.e("modules.audio-e019dbda"),
                             i.e("modules.audio-262c94d4"),
                             i.e("modules.audio-c6fe4ea4"),
+                            i.e("icons.4"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -1235,22 +1236,22 @@
             const b = a.Z;
             function f(e) {
                 const t = l()(b, e.user),
-                    { avatar: i, legacy: a, privacy: r, verification: s } = t,
-                    h = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
-                    { cellClickable: f, decoration: g, displayMode: y } = e,
-                    _ = (function () {
+                    { avatar: i, legacy: a, privacy: r, relationship_perspectives: s, verification: h } = t,
+                    f = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
+                    { cellClickable: g, decoration: y, displayMode: _ } = e,
+                    S = (function () {
                         const { viewerUserId: e } = n.useContext(m.rC);
                         return o()(!!e, "viewerUserId is undefined!"), e;
                     })(),
-                    S = (0, d.useHistory)(),
-                    v = n.useCallback(() => ("function" == typeof g ? g({ displayMode: y, viewerUserId: _, userId: a?.id_str ?? "" }) : g), [g, _, a, y]),
-                    C = n.useCallback(() => {
-                        a?.screen_name && S.push({ pathname: `/${a.screen_name}` });
-                    }, [S, a]);
-                return n.createElement(c.ZP, { affiliateBadgeInfo: h, avatarUri: i?.image_url || "", decoration: v(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: a?.followed_by, isProtected: r?.protected ?? !1, isVerified: s?.verified ?? !1, name: a?.name || "", onCellClick: f ? C : void 0, promotedItemType: p.bj.USER, screenName: a?.screen_name || "", userId: a?.id_str ?? "", verifiedType: s?.verified_type ?? void 0, withFollowsYou: !0 });
+                    v = (0, d.useHistory)(),
+                    C = n.useCallback(() => ("function" == typeof y ? y({ displayMode: _, viewerUserId: S, userId: a?.id_str ?? "" }) : y), [y, S, a, _]),
+                    A = n.useCallback(() => {
+                        a?.screen_name && v.push({ pathname: `/${a.screen_name}` });
+                    }, [v, a]);
+                return n.createElement(c.ZP, { affiliateBadgeInfo: f, avatarUri: i?.image_url || "", decoration: C(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: s?.followed_by ?? !1, isProtected: r?.protected ?? !1, isVerified: h?.verified ?? !1, name: a?.name || "", onCellClick: g ? A : void 0, promotedItemType: p.bj.USER, screenName: a?.screen_name || "", userId: a?.id_str ?? "", verifiedType: h?.verified_type ?? void 0, withFollowsYou: !0 });
             }
             f.defaultProps = { cellClickable: !0, decoration: null, displayMode: h.Z.UserCompact };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-b308cbaf.adae0bda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-b308cbaf.a6ced16a.js.map

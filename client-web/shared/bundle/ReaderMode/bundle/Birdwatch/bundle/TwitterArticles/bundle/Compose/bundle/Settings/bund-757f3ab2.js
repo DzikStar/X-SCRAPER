@@ -97,7 +97,7 @@
                 Ne = i(163301),
                 De = i(972198),
                 Oe = i(989631),
-                Ve = i(246134),
+                Ve = i(844907),
                 We = i(494569),
                 ze = i(756632),
                 qe = i(994057),
@@ -108,7 +108,7 @@
                 Ke = i(494718),
                 Je = i(741105),
                 Ye = i(592711),
-                Xe = i(447373),
+                Xe = i(310007),
                 et = i(585041),
                 tt = i(131133),
                 it = i(764372),
@@ -187,7 +187,7 @@
                                 h = { trustedFriendsEnabled: () => l, trustedFriendsCreationEnabled: () => d },
                                 u = { c9sEnabled: () => o.isTrue("c9s_enabled"), c9sHashtagsEnabled: () => !0 },
                                 p = !this.props.isFocal && this._isTweetInConversation();
-                            return { ...s, ...h, ...u, withEditCallout: () => !e && this._isEditTweetConsumptionEnabled(), withEdgeToEdgeContent: () => !p && o.isTrue("media_edge_to_edge_content_enabled"), withEdgeToEdgeTweetAnatomy: () => o.isTrue("media_edge_to_edge_content_enabled"), withMediaCarousel: a, isCopyrightDisputeLinkEnabled: () => o.isTrue("ecd_dispute_form_link_enabled"), isEditTweetConsumptionEnabled: this._isEditTweetConsumptionEnabled, fosnrSoftInterventionsEnabled: () => o.isTrue("freedom_of_speech_not_reach_fetch_enabled") && o.isTrue("freedom_of_speech_not_reach_pivot_enabled"), sensitiveMediaWarningsEnabled: () => o.isTrue("sensitive_tweet_warnings_enabled"), socialContextRefreshEnabled: () => this.context.featureSwitches.isTrue("social_context_and_topic_context_refresh_alignment_enabled"), trustedFriendsInfo: () => (l && l ? r.trusted_friends_info : void 0), withVodTweetDetailAttribution: () => o.isTrue("vod_attribution_tweet_detail_pivot_enabled"), mediaVisibilityResultsEnabled: () => o.isTrue("rweb_mvr_blurred_media_interstitial_enabled") };
+                            return { ...s, ...h, ...u, withEditCallout: () => !e && this._isEditTweetConsumptionEnabled(), withEdgeToEdgeContent: () => !p && o.isTrue("media_edge_to_edge_content_enabled"), withEdgeToEdgeTweetAnatomy: () => o.isTrue("media_edge_to_edge_content_enabled"), withMediaCarousel: a, isCopyrightDisputeLinkEnabled: () => o.isTrue("ecd_dispute_form_link_enabled"), isEditTweetConsumptionEnabled: this._isEditTweetConsumptionEnabled, isVerticalVideoNoBlackBars: () => o.isTrue("rweb_video_vertical_aspect_ratio_enabled"), fosnrSoftInterventionsEnabled: () => o.isTrue("freedom_of_speech_not_reach_fetch_enabled") && o.isTrue("freedom_of_speech_not_reach_pivot_enabled"), sensitiveMediaWarningsEnabled: () => o.isTrue("sensitive_tweet_warnings_enabled"), socialContextRefreshEnabled: () => this.context.featureSwitches.isTrue("social_context_and_topic_context_refresh_alignment_enabled"), trustedFriendsInfo: () => (l && l ? r.trusted_friends_info : void 0), withVodTweetDetailAttribution: () => o.isTrue("vod_attribution_tweet_detail_pivot_enabled"), mediaVisibilityResultsEnabled: () => o.isTrue("rweb_mvr_blurred_media_interstitial_enabled") };
                         }),
                         (this._renderHighlightedUserLabel = (e) => {
                             const { hideHighlightedUserLabel: t } = this.props;
@@ -774,16 +774,14 @@
                     const { featureSwitches: e } = this.context,
                         { enableKeyboardShortcuts: t, forwardPivotInfo: i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isFocal: a, linkableQuotedTweet: l, nudges: c, onCardLinkClick: h, onMediaClick: u, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, preventVideoPlayback: g, promotedContent: C, quoteTweetSocialContextProps: T, quotedTweetTombstoneInfo: b, tweet: f, withAltTextBadge: v, withCardLinks: k, withCondensedQuoteTweet: y, withHalvedMediaSize: E, withInlineMedia: x, withReaderModeActive: S, withUserHoverCard: Z } = this.props,
                         I = a ? "DETAIL" : "TIMELINE",
-                        P = this.context.featureSwitches.isTrue("rweb_video_vertical_aspect_ratio_enabled"),
-                        A = this.context.featureSwitches.isTrue("rweb_video_max_height_applied_on_mobile"),
-                        L = this.context.featureSwitches.isTrue("responsive_web_compact_media_max_height_enabled_for_all"),
-                        U = this._hasPhoto() || this._quoteTweetHasPhoto(),
-                        R = U || (0, Ae.wV)(f),
-                        M = P ? R && (!!ee.ZP.isDesktopOS() || A) : (L ? R : U) && !!ee.ZP.isDesktopOS() && !a,
-                        F = d.Z.getOriginalTweet(f),
-                        B = this.props.withActionsDisabled || (0, ue.$y)(e, F, ue.d.VoteOnPoll),
-                        H = (this._isTweetInConversation() && !a) || !this._isEdgeToEdgeEnabled;
-                    return { onGrokClick: this._onGrokClick, cardCacheLocationKey: I, displayMediaMetadata: a, enableKeyboardShortcuts: t, forwardPivotInfo: f.softIntervention || i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isMediaMaxHeightEnabled: M, loggedInUserId: this.context.viewerUserId, mediaAltTranslations: this.state.mediaAltTranslations, mediaCacheLocationKey: I, nudges: c, onCardLinkClick: h, onMediaClick: u, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, preventVideoPlayback: g, promotedContent: C, quoteTweetSocialContextProps: T, quotedTweetTombstoneInfo: b, showAltTranslation: this.state.showTranslation, singleImageMaxAspectRatio: ot, style: Lt.richContent, tweet: f, withActionsDisabled: B, withAltTextBadge: v, withCardLinks: k, withCenterCrop: !0, withHalvedMediaSize: E, withMediaTagsIcon: a, withQuoteTweetBirdwatchPivot: !0, withQuoteTweetHeaderLinks: !1, withQuoteTweetLink: l, withQuoteTweetMedia: x, withRoundMediaCorners: H, withTweetMedia: x, withUserHoverCard: Z, quoteTweetSingleImageMinAspectRatio: st, renderQuoteTweetTombstone: (e) => r.createElement(Ge.Z, e), singleImageMinAspectRatio: a ? 0.1 : st, withCondensedQuoteTweet: (!a && d.Z.hasMedia(F, !x)) || !!y, filterOutInlineMedia: a || S, renderPrerollActionMenu: this._getPrerollActionMenuRenderer({}), renderJetfuelFrame: this._renderJetfuelFrame() };
+                        P = this.context.featureSwitches.isTrue("responsive_web_compact_media_max_height_enabled_for_all"),
+                        A = this._hasPhoto() || this._quoteTweetHasPhoto(),
+                        L = A || (0, Ae.wV)(f),
+                        U = (P ? L : A) && !!ee.ZP.isDesktopOS() && !a,
+                        R = d.Z.getOriginalTweet(f),
+                        M = this.props.withActionsDisabled || (0, ue.$y)(e, R, ue.d.VoteOnPoll),
+                        F = (this._isTweetInConversation() && !a) || !this._isEdgeToEdgeEnabled;
+                    return { onGrokClick: this._onGrokClick, cardCacheLocationKey: I, displayMediaMetadata: a, enableKeyboardShortcuts: t, forwardPivotInfo: f.softIntervention || i, inlineCalloutInfo: n, innerForwardPivotInfo: o, innerNudges: s, isMediaMaxHeightEnabled: U, loggedInUserId: this.context.viewerUserId, mediaAltTranslations: this.state.mediaAltTranslations, mediaCacheLocationKey: I, nudges: c, onCardLinkClick: h, onMediaClick: u, onQuoteTweetClick: p, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: m, onQuotedTweetScreenNameClick: w, preventVideoPlayback: g, promotedContent: C, quoteTweetSocialContextProps: T, quotedTweetTombstoneInfo: b, showAltTranslation: this.state.showTranslation, singleImageMaxAspectRatio: ot, style: Lt.richContent, tweet: f, withActionsDisabled: M, withAltTextBadge: v, withCardLinks: k, withCenterCrop: !0, withHalvedMediaSize: E, withMediaTagsIcon: a, withQuoteTweetBirdwatchPivot: !0, withQuoteTweetHeaderLinks: !1, withQuoteTweetLink: l, withQuoteTweetMedia: x, withRoundMediaCorners: F, withTweetMedia: x, withUserHoverCard: Z, quoteTweetSingleImageMinAspectRatio: st, renderQuoteTweetTombstone: (e) => r.createElement(Ge.Z, e), singleImageMinAspectRatio: a ? 0.1 : st, withCondensedQuoteTweet: (!a && d.Z.hasMedia(R, !x)) || !!y, filterOutInlineMedia: a || S, renderPrerollActionMenu: this._getPrerollActionMenuRenderer({}), renderJetfuelFrame: this._renderJetfuelFrame() };
                 }
                 _renderRichContent({ id: e }) {
                     const { location: t } = this.context.history;
@@ -900,4 +898,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.1e4ee7ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.b4735e7a.js.map

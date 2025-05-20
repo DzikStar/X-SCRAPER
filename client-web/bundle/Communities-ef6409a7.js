@@ -322,8 +322,9 @@
                         s = n.user_relationship.community_results.result;
                     if ("User" !== o?.__typename || "Community" !== s?.__typename) return null;
                     const u = s.id_str,
-                        { id_str: d, legacy: y } = o,
-                        { blocking: p, description: E, followed_by: f, following: g, muting: b } = y ?? {};
+                        { id_str: d, legacy: y, relationship_perspectives: p } = o,
+                        { description: E } = y ?? {},
+                        { blocking: f, followed_by: g, following: b, muting: Z } = p ?? {};
                     switch (m) {
                         case "Approved":
                             return a.createElement(se, { icon: fe, label: me({ screenName: l }) });
@@ -332,14 +333,14 @@
                         case "Invalid":
                             return null;
                     }
-                    const Z = n.answer,
-                        _ = n.created_at,
-                        { featureSwitches: I } = a.useContext(L.rC),
-                        h = I.isTrue("c9s_community_answer_box_enabled"),
-                        C = (({ following: e, isFollowedBy: t }) => (e && t ? de.mutual : e ? de.following : t ? de.followedBy : void 0))({ isFollowedBy: f, following: g }),
-                        v = (({ blocking: e, muting: t }) => (e ? ue.blocking : t ? ue.muting : void 0))({ blocking: p, muting: b }),
-                        R = a.createElement(k.Z, null, v && a.createElement(F.ZP, { color: "red500", style: Ee.bottomText }, v), Z && "" !== Z?.trim() && h && a.createElement(T.Z.Primary, { text: Z }), a.createElement(re, { communityId: u, communityJoinRequestActions: n.actions, onApproveError: c, onDenyError: i, userId: d }));
-                    return a.createElement(a.Fragment, null, a.createElement(B.Z, { bottomControl: R, description: E || void 0, displayMode: "UserDetailed", entities: ye, screenNameSuffix: a.createElement(A.Z, { color: "gray700", timestamp: _ }), socialContext: C, user: o }), a.createElement($.Z, null));
+                    const _ = n.answer,
+                        I = n.created_at,
+                        { featureSwitches: h } = a.useContext(L.rC),
+                        C = h.isTrue("c9s_community_answer_box_enabled"),
+                        v = (({ following: e, isFollowedBy: t }) => (e && t ? de.mutual : e ? de.following : t ? de.followedBy : void 0))({ isFollowedBy: g, following: b }),
+                        R = (({ blocking: e, muting: t }) => (e ? ue.blocking : t ? ue.muting : void 0))({ blocking: f, muting: Z }),
+                        w = a.createElement(k.Z, null, R && a.createElement(F.ZP, { color: "red500", style: Ee.bottomText }, R), _ && "" !== _?.trim() && C && a.createElement(T.Z.Primary, { text: _ }), a.createElement(re, { communityId: u, communityJoinRequestActions: n.actions, onApproveError: c, onDenyError: i, userId: d }));
+                    return a.createElement(a.Fragment, null, a.createElement(B.Z, { bottomControl: w, description: E || void 0, displayMode: "UserDetailed", entities: ye, screenNameSuffix: a.createElement(A.Z, { color: "gray700", timestamp: I }), socialContext: v, user: o }), a.createElement($.Z, null));
                 },
                 Ee = D.default.create((e) => ({ actioned: { flexDirection: "row" }, bottomText: { marginTop: e.spaces.space12 }, icon: { height: e.spaces.space24, width: e.spaces.space24, marginEnd: e.spaces.space16, color: e.colors.gray700 }, container: { paddingHorizontal: e.componentDimensions.gutterHorizontal } })),
                 fe = a.createElement(q.default, { style: Ee.icon }),
@@ -961,4 +962,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-ef6409a7.266ebb6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-ef6409a7.08a93f5a.js.map

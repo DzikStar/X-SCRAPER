@@ -566,7 +566,7 @@
         },
         738310: (e, n, a) => {
             "use strict";
-            a.d(n, { Z: () => I });
+            a.d(n, { Z: () => L });
             var t,
                 l,
                 r,
@@ -588,8 +588,7 @@
                 F,
                 _,
                 K,
-                S,
-                L = {
+                S = {
                     fragment: {
                         argumentDefinitions: (t = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]),
                         kind: "Fragment",
@@ -652,8 +651,21 @@
                                                                                 kind: "InlineFragment",
                                                                                 selections: [
                                                                                     (m = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [s], storageKey: null }),
-                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (p = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (y = { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }), action: "THROW" }, { kind: "RequiredField", field: (f = { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }), action: "THROW" }, (k = { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null }), { kind: "RequiredField", field: (b = { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }), action: "THROW" }], storageKey: null },
-                                                                                    (h = {
+                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (p = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (y = { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }), action: "THROW" }, (f = { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null })], storageKey: null },
+                                                                                    (k = {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "UserRelationshipPerspectives",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "relationship_perspectives",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    }),
+                                                                                    (b = {
                                                                                         alias: null,
                                                                                         args: null,
                                                                                         concreteType: "UserVerification",
@@ -683,12 +695,12 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            (v = { alias: null, args: null, concreteType: "GrokFeedItemPrompt", kind: "LinkedField", name: "prompt", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "prompt", storageKey: null }], storageKey: null }),
-                                            (F = { alias: null, args: null, concreteType: "GrokFeedItemStats", kind: "LinkedField", name: "stats", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "likes", storageKey: null }], storageKey: null }),
+                                            (h = { alias: null, args: null, concreteType: "GrokFeedItemPrompt", kind: "LinkedField", name: "prompt", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "prompt", storageKey: null }], storageKey: null }),
+                                            (v = { alias: null, args: null, concreteType: "GrokFeedItemStats", kind: "LinkedField", name: "stats", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "likes", storageKey: null }], storageKey: null }),
                                         ],
                                         storageKey: null,
                                     },
-                                    (_ = { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }),
+                                    (F = { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -697,11 +709,11 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: t, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: l, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d], storageKey: null }, (K = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (S = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, S], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [m, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [g, p, y, f, k, b], storageKey: null }, K, h, S], type: "User", abstractKey: null }], storageKey: null }, S], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, v, F], storageKey: null }, _], storageKey: null }] },
-                    params: { id: "B7_vO2Xc-qMjJZh7QMkYeQ", metadata: {}, name: "grokTokFeedQuery", operationKind: "query", text: null },
+                    operation: { argumentDefinitions: t, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: l, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d], storageKey: null }, (_ = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (K = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, K], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [m, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [g, p, y, f], storageKey: null }, _, k, b, K], type: "User", abstractKey: null }], storageKey: null }, K], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, h, v], storageKey: null }, F], storageKey: null }] },
+                    params: { id: "Vx-RalwWgGMZ0WWPsGpnPA", metadata: {}, name: "grokTokFeedQuery", operationKind: "query", text: null },
                 };
-            L.hash = "d77596fa31d38d749436d8e37fb639ad";
-            const I = L;
+            S.hash = "f283e0b861b200815430ef87d2a02fd4";
+            const L = S;
         },
         927974: (e, n, a) => {
             "use strict";
@@ -908,7 +920,7 @@
         },
         739711: (e, n, a) => {
             "use strict";
-            a.d(n, { Z: () => D });
+            a.d(n, { Z: () => G });
             var t = a(807896),
                 l = a(231461),
                 r = a(202784),
@@ -1050,23 +1062,23 @@
             };
             var T = u.Z.create({ focusBracket: { outlineStyle: "none" } }),
                 E = ["animationType", "children", "onDismiss", "onRequestClose", "onShow", "transparent", "visible"],
-                R = 0,
+                P = 0,
                 C = [],
-                P = {};
+                R = {};
             function x() {
                 if (0 !== C.length) {
                     var e = C[C.length - 1];
                     C.forEach((n) => {
-                        n in P && P[n](n === e);
+                        n in R && R[n](n === e);
                     });
                 }
             }
             function A(e) {
-                e in P && (P[e](!1), delete P[e]);
+                e in R && (R[e](!1), delete R[e]);
                 var n = C.indexOf(e);
                 -1 !== n && (C.splice(n, 1), x());
             }
-            const D = r.forwardRef((e, n) => {
+            const G = r.forwardRef((e, n) => {
                 var a = e.animationType,
                     i = e.children,
                     s = e.onDismiss,
@@ -1076,7 +1088,7 @@
                     m = e.visible,
                     g = void 0 === m || m,
                     p = (0, l.Z)(e, E),
-                    y = r.useMemo(() => R++, []),
+                    y = r.useMemo(() => P++, []),
                     f = r.useState(!1),
                     b = f[0],
                     h = f[1],
@@ -1085,7 +1097,7 @@
                     }, [y, s]),
                     F = r.useCallback(() => {
                         !(function (e, n) {
-                            A(e), C.push(e), (P[e] = n), x();
+                            A(e), C.push(e), (R[e] = n), x();
                         })(y, h),
                             c && c();
                     }, [y, c]);
@@ -1126,14 +1138,14 @@
                     O = I[1],
                     T = (0, r.useState)(null),
                     E = T[0],
-                    R = T[1],
+                    P = T[1],
                     C = (0, r.useCallback)(
                         (e, n) => {
-                            R(e), O(n ? n / 1e3 + "s" : "0s");
+                            P(e), O(n ? n / 1e3 + "s" : "0s");
                         },
-                        [R, O],
+                        [P, O],
                     ),
-                    P = (0, r.useCallback)(
+                    R = (0, r.useCallback)(
                         (e) => {
                             C(null != a ? a : 0.2, e);
                         },
@@ -1156,16 +1168,16 @@
                             onPress: b,
                             onPressStart(e) {
                                 var n = null != e.dispatchConfig ? "onResponderGrant" === e.dispatchConfig.registrationName : "keydown" === e.type;
-                                P(n ? 0 : 150), null != h && h(e);
+                                R(n ? 0 : 150), null != h && h(e);
                             },
                             onPressEnd(e) {
                                 x(250), null != v && v(e);
                             },
                         }),
-                        [p, o, m, y, k, b, h, v, F, P, x],
+                        [p, o, m, y, k, b, h, v, F, R, x],
                     ),
-                    D = (0, s.Z)(S, A);
-                return r.createElement(u.Z, (0, t.Z)({}, K, D, { accessibilityDisabled: y, focusable: !y && !1 !== f, pointerEvents: y ? "box-none" : void 0, ref: L, style: [g.root, !y && g.actionable, _, null != E && { opacity: E }, { transitionDuration: w }] }));
+                    G = (0, s.Z)(S, A);
+                return r.createElement(u.Z, (0, t.Z)({}, K, G, { accessibilityDisabled: y, focusable: !y && !1 !== f, pointerEvents: y ? "box-none" : void 0, ref: L, style: [g.root, !y && g.actionable, _, null != E && { opacity: E }, { transitionDuration: w }] }));
             }
             var g = o.Z.create({ root: { transitionProperty: "opacity", transitionDuration: "0.15s", userSelect: "none" }, actionable: { cursor: "pointer", touchAction: "manipulation" } }),
                 p = r.memo(r.forwardRef(m));
@@ -1355,4 +1367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.a48c6c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.e48a0d1a.js.map

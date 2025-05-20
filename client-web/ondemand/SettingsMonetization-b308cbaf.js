@@ -467,10 +467,10 @@
                 i = a(23134);
             function o({ user: e, ...t }) {
                 const a = c()(n.Z, e),
-                    l = s.useMemo(() => (a ? { id_str: a.rest_id, screen_name: a.legacy?.screen_name || "", name: a.legacy?.name || "", follow_request_sent: a.legacy?.follow_request_sent || !1, protected: a.privacy?.protected || !1, following: a.legacy?.following || !1, followed_by: a.legacy?.followed_by || !1, super_following: a.super_following || void 0, super_follow_eligible: a.super_follow_eligible || void 0, super_followed_by: a.super_followed_by || void 0, blocking: a.legacy?.blocking || void 0, highlightedLabel: a.affiliates_highlighted_label?.label ? { userLabelType: a.affiliates_highlighted_label.label.user_label_type || void 0 } : void 0 } : void 0), [a]);
+                    l = s.useMemo(() => (a ? { id_str: a.rest_id, screen_name: a.legacy?.screen_name || "", name: a.legacy?.name || "", follow_request_sent: a.legacy?.follow_request_sent || !1, protected: a.privacy?.protected || !1, following: a.relationship_perspectives?.following || !1, followed_by: a.relationship_perspectives?.followed_by || !1, super_following: a.super_following || void 0, super_follow_eligible: a.super_follow_eligible || void 0, super_followed_by: a.super_followed_by || void 0, blocking: a.relationship_perspectives?.blocking || void 0, highlightedLabel: a.affiliates_highlighted_label?.label ? { userLabelType: a.affiliates_highlighted_label.label.user_label_type || void 0 } : void 0 } : void 0), [a]);
                 return s.createElement(i.C, (0, r.Z)({}, t, { isRelay: !0, user: l, userId: a?.rest_id ?? "" }));
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b308cbaf.4de29d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b308cbaf.605a123a.js.map

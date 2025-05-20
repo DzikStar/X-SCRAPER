@@ -4156,7 +4156,7 @@
                     return a.stringCount + " new request" + n(a.count, "s", "", "s");
                 }),
                 o("ed93de0c", "Analiza objave"),
-                o("d1d92e40", "More details"),
+                o("d1d92e40", "Dodatne pojedinosti"),
                 o("a6e89af8", "Otvori razgovor"),
                 o("ica55d24", "Novo čavrljanje"),
                 o("f794af9a", "Zabavni način rada"),
@@ -4369,8 +4369,8 @@
                 o("g01599b6", "Odgovor 1"),
                 o("e02694e0", "Odgovor 2"),
                 o("h6867fcc", "Preferiram ovaj odgovor"),
-                o("acc4496c", "Try Grok Voice mode"),
-                o("jd36d190", "Access advanced features with Grok Android app"),
+                o("acc4496c", "Isprobajte glasovni način rada za Grok"),
+                o("jd36d190", "Pristupite naprednim značajkama pomoću Grok aplikacije za Android"),
                 o("hf9afab0", "Omogućite DeepSearch za skeniranje interneta i platforme X, analizu informacija i pružanje detaljnih, dobro obrazloženih odgovora brzim i sistematičnim pretraživanjem."),
                 o("ef3b3f04", 'Omogućite Think i uživajte u našem modelu rasuđivanja. Najbolje funkcionira u rješavanju matematičkih zadataka, znanstvenom promišljanju i pisanju koda. Također možete zamoliti Groka da "podrobnije razmisli uz Think" o bilo kojem pitanju koje bi moglo zahtijevati dublje promišljanje. '),
                 o("b43636b8", "Stigao je Grok 3"),
@@ -5848,7 +5848,7 @@
                 o("ab1b3d38", "Podaci o zahtjevu za zabilješku još nisu dostupni"),
                 o("c43fb933", "X-ov ugovor i pravilnik za razvojne programere"),
                 o("af781666", "Što ljudi misle?"),
-                o("a1f414ee", "Share thoughts"),
+                o("a1f414ee", "Recite što mislite"),
                 o("ed88e742", "Kopiraj poveznicu na temu"),
                 o("h92fe1be", "Nažalost, Zabilješke zajednice trenutno vam nisu dostupne."),
                 o("f0dc1434", "Bilješke zajednice zasad su dostupne samo u SAD-u"),
@@ -12037,6 +12037,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", " % naknade, min. ", ")"];
@@ -12685,6 +12691,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " i "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " i "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13255,4 +13279,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.3cdb365a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.f361714a.js.map

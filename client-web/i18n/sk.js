@@ -1038,7 +1038,7 @@
                 n("b929aa74", "Aby sa uložili zmeny vo vašom účte, opätovne zadajte vaše heslo na platforme X."),
                 n("d1091f50", "Zabudli ste heslo?"),
                 n("fd23fe4a", "Tu sú vaše prístupové kľúče vo všetkých zariadeniach"),
-                n("d9921a6c", "Vytvoriť nový prístupový kľúč"),
+                n("d9921a6c", "Vytvorte si nový prístupový kľúč"),
                 n("i4855730", "Odstrániť prístupový kľúč"),
                 n("a6acdc67", function (e) {
                     return "Dátum pridania: " + e.date;
@@ -4158,7 +4158,7 @@
                     return e.stringCount + " new request" + t(e.count, "s", "s", "", "s");
                 }),
                 n("ed93de0c", "Analýza príspevku"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "Ďalšie podrobnosti"),
                 n("a6e89af8", "Otvorená konverzácia"),
                 n("ica55d24", "Nový čet"),
                 n("f794af9a", "Zábavný režim"),
@@ -4371,8 +4371,8 @@
                 n("g01599b6", "2. odpoveď"),
                 n("e02694e0", "1. odpoveď"),
                 n("h6867fcc", "Preferujem túto odpoveď"),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "Vyskúšajte hlasový režim Groka"),
+                n("jd36d190", "Získajte prístup k pokročilým funkciám s apkou Grok pre Android"),
                 n("hf9afab0", "Aktivujte si režim DeepSearch. Dokáže skenovať internet a službu X, analyzovať informácie a poskytovať podrobné a dobre zdôvodnené odpovede pomocou rýchleho a agentského vyhľadávania."),
                 n("ef3b3f04", "Aktivujte si režim Premýšľanie, aby ste mohli používať náš model uvažovania. Je najvhodnejší pri matematických, vedeckých a programátorských problémoch. Groka môžete požiadať aj o intenzívnejšie premýšľanie pri akejkoľvek otázke, ktorá by si mohla vyžadovať trochu viac mozgovej kapacity. "),
                 n("b43636b8", "Predstavujeme Groka 3"),
@@ -5850,7 +5850,7 @@
                 n("ab1b3d38", "Údaje o žiadostiach o poznámky zatiaľ nie sú k dispozícii"),
                 n("c43fb933", "Zmluvou a zásadami pre vývojárov siete X"),
                 n("af781666", "Čo si myslia ľudia?"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "Zdieľať názory"),
                 n("ed88e742", "Skopírovať odkaz na tému"),
                 n("h92fe1be", "Poznámky komunity, žiaľ, momentálne nie sú pre vás k dispozícii."),
                 n("f0dc1434", "Poznámky komunity sú momentálne k dispozícii len v USA"),
@@ -12036,6 +12036,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(Poplatok ", " %, min. ", ")"];
@@ -12684,6 +12690,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " a "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " a "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13249,4 +13273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.7b81742a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.87dfedea.js.map

@@ -100,9 +100,24 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, (r = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, (r = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserRelationshipPerspectives",
+                                                        kind: "LinkedField",
+                                                        name: "relationship_perspectives",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
                                                     (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                                     {
@@ -498,7 +513,7 @@
                             },
                         ],
                     },
-                    params: { id: "FXl-0XWutv052HzBmTkIdA", metadata: {}, name: "ProfileSpotlightsQuery", operationKind: "query", text: null },
+                    params: { id: "MGnbSjuSG9Eh9ExDkLx1Lw", metadata: {}, name: "ProfileSpotlightsQuery", operationKind: "query", text: null },
                 };
             p.hash = "63e29ef0bb520445ada0b0d42a1ef0b2";
             const F = p;
@@ -662,12 +677,7 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
-                            { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             {
                                 alias: null,
@@ -688,10 +698,26 @@
                         storageKey: null,
                     },
                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserRelationshipPerspectives",
+                        kind: "LinkedField",
+                        name: "relationship_perspectives",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "83a03a22f7b2927807ddcede1d96ee0d",
+                hash: "b583f3965b45da993194ce4137f88e93",
             };
             const i = n;
         },
@@ -891,13 +917,24 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "profile_banner_url", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "notifications", storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserRelationshipPerspectives",
+                        kind: "LinkedField",
+                        name: "relationship_perspectives",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
                         ],
                         storageKey: null,
                     },
@@ -907,7 +944,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "076113533635ea6435a48b753399bd3a",
+                hash: "72026a313bee0670bf34d450f205744a",
             };
             const i = n;
         },
@@ -979,19 +1016,19 @@
                         plural: !1,
                         selections: [
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "LOG" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                         ],
                         storageKey: null,
                     },
                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                     { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                     { args: null, kind: "FragmentSpread", name: "useTranslatorType_user" },
                     { args: null, kind: "FragmentSpread", name: "UserProfileHighlightedUserLabel_user" },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "a148491423989d20e2ca184197e0ae3f",
+                hash: "5cad42e9f6ab3176131e4864d88390d4",
             };
             const i = n;
         },
@@ -1668,24 +1705,24 @@
                 metadata: null,
                 name: "useIsAllowedToViewSubProfilePages_user",
                 selections: [
+                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserRelationshipPerspectives",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "relationship_perspectives",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
+                            { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
                         ],
                         storageKey: null,
                     },
-                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "5ab02b0807c7214db3e0547ce95edf99",
+                hash: "a0eeb138c5fc4393b90909851ab84c2b",
             };
             const i = n;
         },
@@ -1713,4 +1750,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.775c0fda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.621694ba.js.map

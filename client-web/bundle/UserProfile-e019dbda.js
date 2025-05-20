@@ -3,7 +3,7 @@
     ["bundle.UserProfile-e019dbda"],
     {
         177997: (e, t, n) => {
-            n.d(t, { Z: () => F });
+            n.d(t, { Z: () => B });
             var a = n(202784),
                 r = n(88660),
                 o = n(293115),
@@ -114,7 +114,7 @@
                         s ? a.createElement(o.nO, { namespace: { component: "analytics_preview" } }, a.createElement(i.H, { errorConfig: { context: "AnalyticPreview" }, suspenseFallback: null }, a.createElement(v, { config: e.config, dismiss: t, impress: n }))) : null
                     );
                 },
-                F = () => {
+                B = () => {
                     const { featureSwitches: e, userClaims: t } = (0, s.QZ)(),
                         n = t.isAnyPremiumSubscriber(),
                         r = e.isTrue("subscriptions_sign_up_enabled");
@@ -247,7 +247,9 @@
         231214: (e, t, n) => {
             n.d(t, { Z: () => a });
             n(202784);
-            const a = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)) });
+            const a = (0, n(523561).Z)({
+                loader: () => Promise.all([n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)),
+            });
         },
         170371: (e, t, n) => {
             n.d(t, { Z: () => f });
@@ -335,26 +337,23 @@
             const a = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.6"),
-                        n.e("icons.25"),
-                        n.e("icons.22"),
-                        n.e("icons.9"),
-                        n.e("icons.4"),
-                        n.e("icons.15"),
+                        n.e("icons.10"),
+                        n.e("icons.21"),
+                        n.e("icons.16"),
+                        n.e("icons.1"),
+                        n.e("icons.19"),
+                        n.e("icons.0"),
+                        n.e("icons.23"),
+                        n.e("icons.8"),
                         n.e("icons.2"),
-                        n.e("icons.20"),
-                        n.e("icons.7"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.0"),
-                        n.e("icons.11"),
-                        n.e("icons.27"),
-                        n.e("icons.17"),
-                        n.e("icons.12"),
+                        n.e("icons.7"),
+                        n.e("icons.9"),
+                        n.e("icons.15"),
+                        n.e("icons.24"),
+                        n.e("icons.28"),
                         n.e("icons.3"),
-                        n.e("icons.13"),
-                        n.e("icons.18"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -365,9 +364,12 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.24"),
-                        n.e("icons.10"),
-                        n.e("icons.8"),
+                        n.e("icons.26"),
+                        n.e("icons.4"),
+                        n.e("icons.13"),
+                        n.e("icons.18"),
+                        n.e("icons.25"),
+                        n.e("icons.27"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -398,7 +400,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -434,6 +436,7 @@
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
                         n.e("shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"),
@@ -452,6 +455,7 @@
                         n.e("bundle.Payments-25e67f1f"),
                         n.e("bundle.Payments-41dc26ea"),
                         n.e("bundle.Payments-c7951328"),
+                        n.e("bundle.Payments-d97a9c6b"),
                         n.e("bundle.Payments-d60a37be"),
                         n.e("bundle.Payments-2a1eb2b7"),
                     ]).then(n.bind(n, 547195)),
@@ -661,9 +665,9 @@
                     d
                         ? a.createElement(
                               i.Z,
-                              { onMaskClick: h, style: F.sheet, type: "bottom", withMask: !0 },
-                              a.createElement(s.ZP, { "aria-label": P, hoverLabel: T, icon: a.createElement(w.default, null), onPress: h, style: F.close, type: "primaryText" }),
-                              a.createElement(o.Z, { style: F.header }, a.createElement(l.ZP, { weight: "bold" }, E), a.createElement(l.ZP, null, `@${u.screen_name}`)),
+                              { onMaskClick: h, style: B.sheet, type: "bottom", withMask: !0 },
+                              a.createElement(s.ZP, { "aria-label": P, hoverLabel: T, icon: a.createElement(w.default, null), onPress: h, style: B.close, type: "primaryText" }),
+                              a.createElement(o.Z, { style: B.header }, a.createElement(l.ZP, { weight: "bold" }, E), a.createElement(l.ZP, null, `@${u.screen_name}`)),
                               Object.entries(m)
                                   .filter(([e, t]) => t)
                                   .map(([e, t]) => {
@@ -675,14 +679,14 @@
                                                         r.Z.setString(String(t)), n((0, _.fz)({ text: Z({ service: o.label }) }));
                                                     },
                                               i = o.url ? `${o.url}${String(t)}` : void 0;
-                                          return a.createElement(l.ZP, { color: "text", key: e, link: i, onPress: s, style: F.service, withInteractiveStyling: !1 }, o.icon, o.label);
+                                          return a.createElement(l.ZP, { color: "text", key: e, link: i, onPress: s, style: B.service, withInteractiveStyling: !1 }, o.icon, o.label);
                                       }
                                   }),
                           )
                         : null,
                 );
             }
-            const F = d.default.create((e) => ({ close: { end: e.spaces.space16, position: "absolute", top: e.spaces.space16 }, header: { alignItems: "center", justifyContent: "center", marginHorizontal: "auto" }, service: { display: "flex", cursor: "pointer", gap: e.spaces.space8, marginBottom: e.spaces.space16 }, sheet: { padding: e.spaces.space16 } }));
+            const B = d.default.create((e) => ({ close: { end: e.spaces.space16, position: "absolute", top: e.spaces.space16 }, header: { alignItems: "center", justifyContent: "center", marginHorizontal: "auto" }, service: { display: "flex", cursor: "pointer", gap: e.spaces.space8, marginBottom: e.spaces.space16 }, sheet: { padding: e.spaces.space16 } }));
         },
         179562: (e, t, n) => {
             n.d(t, { Z: () => T });
@@ -865,8 +869,8 @@
                         i = s && r ? s / r : 1,
                         l = i > 1,
                         d = t ? 400 : c,
-                        p = l && s <= d ? u(a, d) : a,
-                        b = !l && r <= d ? u(n, d) : n;
+                        p = l && (!s || s <= d) ? u(a, d) : a,
+                        b = l || (r && !(r <= d)) ? n : u(n, d);
                     return o.Z.getContainDimensions({ width: p, height: b }, i);
                 },
                 h = (e) => {
@@ -885,7 +889,7 @@
                 D = (e, t) => {
                     switch (t.type) {
                         case "zoom":
-                            return { ...e, isZoomed: t.payload?.isZoomed, showControls: !t.payload?.isZoomed };
+                            return { ...e, isZoomed: t.payload.isZoomed, showControls: !t.payload.isZoomed };
                         case "tap":
                             return { ...e, showControls: !e.showControls };
                         default:
@@ -974,7 +978,7 @@
                 s = n(835546);
             const i = (e) => {
                 const t = o()(a.Z, e.user);
-                return !(!t.legacy || !t.privacy) && (0, s.n5)({ isOwnProfile: e.isOwnProfile, isSoftBlockEnabled: e.isSoftBlockEnabled, user: { ...t.legacy, protected: Boolean(t.privacy?.protected) } });
+                return !(!t.relationship_perspectives || !t.privacy) && (0, s.n5)({ isOwnProfile: e.isOwnProfile, isSoftBlockEnabled: e.isSoftBlockEnabled, user: { blocked_by: Boolean(t.relationship_perspectives?.blocked_by), following: Boolean(t.relationship_perspectives?.following), protected: Boolean(t.privacy?.protected) } });
             };
         },
         961104: (e, t, n) => {
@@ -1128,4 +1132,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.4a4f730a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.8644b00a.js.map

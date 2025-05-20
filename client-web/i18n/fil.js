@@ -4149,7 +4149,7 @@
                     return a.stringCount + " new request" + e(a.count, "", "s");
                 }),
                 i("ed93de0c", "Sinusuri ang Post"),
-                i("d1d92e40", "More details"),
+                i("d1d92e40", "Iba pang detalye"),
                 i("a6e89af8", "Bukas na usapan"),
                 i("ica55d24", "Bagong Chat"),
                 i("f794af9a", "Fun mode"),
@@ -4362,8 +4362,8 @@
                 i("g01599b6", "Tugon 1"),
                 i("e02694e0", "Tugon 2"),
                 i("h6867fcc", "Gusto ko ang tugon na ito"),
-                i("acc4496c", "Try Grok Voice mode"),
-                i("jd36d190", "Access advanced features with Grok Android app"),
+                i("acc4496c", "Subukan ang Voice mode ng Grok"),
+                i("jd36d190", "I-access ang mga advanced feature gamit ang Android app ng Grok"),
                 i("hf9afab0", "I-enable ang DeepSearch para ma-scan ang internet at X, mag-analyze ng impormasyon, at magbigay sa detalyado at malinaw na sagot gamit ang mabilis at makapangyarihang paghahanap."),
                 i("ef3b3f04", 'I-enable ang Mag-isip para magamit ang reasoning model namin. Pinakamahusay ito sa math, science, at coding. Puwede mo ring utusan si Grok na "Mag-isip pa" tungkol sa anumang tanong na nangangailangan pa ng mas malalim na pag-iisip. '),
                 i("b43636b8", "Ipinapakilala ang Grok 3"),
@@ -5841,7 +5841,7 @@
                 i("ab1b3d38", "Hindi pa available ang pag-request ng data ng note"),
                 i("c43fb933", "Kasunduan at Patakaran ng Developer ng X"),
                 i("af781666", "Ano ang palagay ng mga tao?"),
-                i("a1f414ee", "Share thoughts"),
+                i("a1f414ee", "Ibahagi ang mga naiisip"),
                 i("ed88e742", "Kopyahin ang link sa Paksa"),
                 i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon."),
                 i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan."),
@@ -12030,6 +12030,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% Bayarin, Min. ", ")"];
@@ -12678,6 +12684,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " at "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", ", at "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13246,4 +13270,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.c1afb1ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.1ba964ea.js.map

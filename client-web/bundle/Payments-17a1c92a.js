@@ -648,6 +648,72 @@
             r.hash = "d3c3eb375c01e5e6ad75ff98b0ef6747";
             const d = r;
         },
+        458254: (e, n, a) => {
+            a.d(n, { Z: () => u });
+            var l,
+                i,
+                t,
+                s,
+                r,
+                d = {
+                    fragment: {
+                        argumentDefinitions: (l = [
+                            { defaultValue: null, kind: "LocalArgument", name: "base_amount" },
+                            { defaultValue: null, kind: "LocalArgument", name: "transfer_method_type" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useCalculateTransactionFeesMutation",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (i = [
+                                    { kind: "Variable", name: "base_amount", variableName: "base_amount" },
+                                    { kind: "Literal", name: "s", value: "4721" },
+                                    { kind: "Variable", name: "transfer_method_type", variableName: "transfer_method_type" },
+                                ]),
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "calculate_transaction_fees",
+                                plural: !1,
+                                selections: [
+                                    (s = {
+                                        kind: "InlineFragment",
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "XPaymentsAmount",
+                                                kind: "LinkedField",
+                                                name: "amount",
+                                                plural: !1,
+                                                selections: (t = [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "local_micro", storageKey: null },
+                                                ]),
+                                                storageKey: null,
+                                            },
+                                            { alias: null, args: null, concreteType: "XPaymentsAmount", kind: "LinkedField", name: "base_amount", plural: !1, selections: t, storageKey: null },
+                                            { alias: null, args: null, concreteType: "XPaymentsAmount", kind: "LinkedField", name: "total_fees", plural: !1, selections: t, storageKey: null },
+                                        ],
+                                        type: "XPaymentsCalculateTransactionFeesSuccess",
+                                        abstractKey: null,
+                                    }),
+                                    (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCalculateTransactionFeesError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCalculateTransactionFeesFailure", abstractKey: null }),
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useCalculateTransactionFeesMutation", selections: [{ alias: null, args: i, concreteType: null, kind: "LinkedField", name: "calculate_transaction_fees", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCalculateTransactionFeesResult" }, s, r], storageKey: null }] },
+                    params: { id: "cXz1ZrQe6_U5ssI9iOtALg", metadata: {}, name: "useCalculateTransactionFeesMutation", operationKind: "mutation", text: null },
+                };
+            d.hash = "bd44279ea108dd7930f674dbe551c52e";
+            const u = d;
+        },
         663090: (e, n, a) => {
             a.d(n, { Z: () => d });
             var l,
@@ -904,4 +970,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.6ce811fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.2249e7aa.js.map

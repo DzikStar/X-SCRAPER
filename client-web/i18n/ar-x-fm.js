@@ -1041,7 +1041,7 @@
                 n("dec3c9b8", "كلمة المرور"),
                 n("b929aa74", "أعيدي إدخال كلمة مرور حسابكِ على X لحفظ التغييرات المجراة على حسابكِ."),
                 n("d1091f50", "نسيت كلمة المرور؟"),
-                n("fd23fe4a", "Here are your passkeys across all your devices"),
+                n("fd23fe4a", "فيما يلي مفاتيح المرور الخاصة بك عبر جميع أجهزتكِ"),
                 n("d9921a6c", "إنشاء مفتاح مرور جديد"),
                 n("i4855730", "حذف مفتاح المرور"),
                 n("a6acdc67", function (e) {
@@ -4162,7 +4162,7 @@
                     return e.stringCount + " new request" + t(e.count, "s", "s", "", "s", "s", "s");
                 }),
                 n("ed93de0c", "جارٍ تحليل المنشور"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "المزيد من التفاصيل"),
                 n("a6e89af8", "فتح المحادثة"),
                 n("ica55d24", "دردشة جديدة"),
                 n("f794af9a", "وضع المتعة"),
@@ -4375,8 +4375,8 @@
                 n("g01599b6", "الرد 1"),
                 n("e02694e0", "الرد 2"),
                 n("h6867fcc", "أنا أفضّل هذا الرد"),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "تجربة وضع الصوت في Grok"),
+                n("jd36d190", "الوصول إلى الميزات المتقدمة مع تطبيق Grok لنظام Android"),
                 n("hf9afab0", "قومي بتمكين وضع DeepSearch لفحص الإنترنت وX، وتحليل المعلومات، وتقديم إجابات مفصّلة ومنطقية من خلال البحث السريع والفعال."),
                 n("ef3b3f04", 'قومي بتمكين وضع "التفكير" لاستخدام نموذج التفكير الخاص بنا. إنه الأفضل للرياضيات والعلوم والبرمجة. يمكنكِ أيضًا أن تطلب من Grok "التفكير بعمقٍ أكبر" في أي سؤال قد يحتاج إلى المزيد من قوة التفكير. '),
                 n("b43636b8", "نقدم لكم Grok 3"),
@@ -5854,7 +5854,7 @@
                 n("ab1b3d38", "بيانات طلب ملاحظة الكاتبة غير متاحة حتى الآن"),
                 n("c43fb933", "سياسة واتفاقية مطوري X"),
                 n("af781666", "ما رأي الناس؟"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "مشاركة الأفكار"),
                 n("ed88e742", "نسخ الرابط إلى الموضوع"),
                 n("h92fe1be", 'للأسف، برنامج "ملاحظات المجتمع" غير متاح لكِ في الوقت الحالي.'),
                 n("f0dc1434", "ملاحظات المجتمع متاحة فقط في الولايات المتحدة"),
@@ -12036,6 +12036,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% رسوم، الحد الأدنى ", ")"];
@@ -12684,6 +12690,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " و"];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", "، و"];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " و"];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13248,4 +13272,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.090551ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.9860da2a.js.map

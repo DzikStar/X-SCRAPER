@@ -4,8 +4,8 @@
     {
         125890: (e, a, r) => {
             r.d(a, { B: () => he });
-            var n = r(202784),
-                d = r(325686),
+            var d = r(202784),
+                n = r(325686),
                 t = r(107267),
                 l = r(537392),
                 o = r(691533),
@@ -23,8 +23,8 @@
                 w = r(710396),
                 f = r(655352),
                 A = r(485785),
-                y = r(125363),
-                M = r(936572),
+                M = r(125363),
+                y = r(936572),
                 _ = r(909622),
                 v = r(919022),
                 E = r(788994),
@@ -37,36 +37,33 @@
                 P = r(918588);
             function T() {
                 const { featureSwitches: e } = (0, s.QZ)();
-                return (0, P.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? n.createElement(x.Z, { testID: "vo-ad-credit-upsell", variant: "VerifiedOrgsAdCredit" }) : null;
+                return (0, P.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? d.createElement(x.Z, { testID: "vo-ad-credit-upsell", variant: "VerifiedOrgsAdCredit" }) : null;
             }
             const R = function () {
-                return n.createElement(B.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, n.createElement(T, null));
+                return d.createElement(B.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, d.createElement(T, null));
             };
             var j = r(399398),
                 O = r(975753);
             const N = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.6"),
-                        r.e("icons.25"),
-                        r.e("icons.22"),
-                        r.e("icons.9"),
-                        r.e("icons.4"),
-                        r.e("icons.15"),
+                        r.e("icons.10"),
+                        r.e("icons.21"),
+                        r.e("icons.16"),
+                        r.e("icons.1"),
+                        r.e("icons.19"),
+                        r.e("icons.0"),
+                        r.e("icons.23"),
+                        r.e("icons.8"),
                         r.e("icons.2"),
-                        r.e("icons.20"),
-                        r.e("icons.7"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.0"),
-                        r.e("icons.11"),
-                        r.e("icons.27"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
+                        r.e("icons.7"),
+                        r.e("icons.9"),
+                        r.e("icons.15"),
+                        r.e("icons.24"),
+                        r.e("icons.28"),
                         r.e("icons.3"),
-                        r.e("icons.13"),
-                        r.e("icons.18"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -77,11 +74,13 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.24"),
-                        r.e("icons.10"),
-                        r.e("icons.8"),
                         r.e("icons.26"),
-                        r.e("icons.19"),
+                        r.e("icons.4"),
+                        r.e("icons.13"),
+                        r.e("icons.18"),
+                        r.e("icons.25"),
+                        r.e("icons.29"),
+                        r.e("icons.27"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -112,7 +111,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -155,13 +154,16 @@
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
+                        r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
+                        r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -201,8 +203,8 @@
                 ee = r(738124),
                 ae = r(643426),
                 re = r(293115),
-                ne = r(725405),
-                de = r(620243);
+                de = r(725405),
+                ne = r(620243);
             const te = V().f0701753,
                 le = V().j7d0e836,
                 oe = V().d227d19e,
@@ -211,11 +213,11 @@
                     (0, G.E)();
                     const { featureSwitches: a } = (0, s.QZ)(),
                         r = a.isTrue("rweb_sourcemap_migration"),
-                        t = (0, ne.Z)(),
-                        [l, o] = n.useState(!1),
+                        t = (0, de.Z)(),
+                        [l, o] = d.useState(!1),
                         i = (0, z.Dv)(Y.lZ),
-                        [c, u] = n.useState(null);
-                    n.useEffect(() => {
+                        [c, u] = d.useState(null);
+                    d.useEffect(() => {
                         i.get("rweb.premiumModule").then((e) => {
                             u(e || ie);
                         });
@@ -224,7 +226,7 @@
                     c?.isCollapsed && (b += "?collapsed=true");
                     const p = (0, K._3)(b, { refreshTimeMs: 1e4 });
                     if (!c) return null;
-                    if (!p) return n.createElement($.Z, null);
+                    if (!p) return d.createElement($.Z, null);
                     const m = () => {
                             o(!l);
                         },
@@ -237,14 +239,14 @@
                             u(e), i.set("rweb.premiumModule", e), o(!1);
                         };
                     return p.jfResponse?.root.value
-                        ? n.createElement(
+                        ? d.createElement(
                               ae.b.Provider,
                               { value: { dismiss: m } },
-                              n.createElement(
-                                  d.Z,
+                              d.createElement(
+                                  n.Z,
                                   { style: r ? pe.containerRedesign : pe.container },
                                   l
-                                      ? n.createElement(H.Z, {
+                                      ? d.createElement(H.Z, {
                                             items: [
                                                 { onClick: D, text: c.isCollapsed ? le : oe, Icon: c.isCollapsed ? Q.default : X.default },
                                                 { onClick: h, text: te({ number: 7 }), Icon: q.default },
@@ -252,43 +254,43 @@
                                             onCloseRequested: m,
                                         })
                                       : null,
-                                  p.jfResponse?.root.value ? n.createElement(ee.Z, { payload: p.jfResponse.root.value }) : null,
+                                  p.jfResponse?.root.value ? d.createElement(ee.Z, { payload: p.jfResponse.root.value }) : null,
                               ),
                           )
-                        : n.createElement(U.Z, { onRetry: null, title: p.error });
+                        : d.createElement(U.Z, { onRetry: null, title: p.error });
                 },
                 ce = () => {
                     const { dismiss: e, impress: a, shouldShow: r } = (0, J.ZP)({ key: "premium_module_v1", dismissForMsec: J.IZ, showForMsec: null, reappearAfterMsec: null });
                     return (
-                        n.useEffect(() => {
+                        d.useEffect(() => {
                             a();
                         }, [a]),
-                        r ? n.createElement(re.nO, { namespace: { component: "premium_module " } }, n.createElement(se, { dismiss: e })) : null
+                        r ? d.createElement(re.nO, { namespace: { component: "premium_module " } }, d.createElement(se, { dismiss: e })) : null
                     );
                 },
                 ue = () => {
-                    const { verified_program_application_status: e, verified_program_eligibility: a, verified_user_profiles: r } = (0, de.Z)(),
-                        { featureSwitches: d } = (0, s.QZ)(),
+                    const { verified_program_application_status: e, verified_program_eligibility: a, verified_user_profiles: r } = (0, ne.Z)(),
+                        { featureSwitches: n } = (0, s.QZ)(),
                         t = r?.ad_revenue_sharing_user_profile?.is_active;
-                    if ((t || (0 === a?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && d.isTrue("subscriptions_premium_module_enabled")) return n.createElement(n.Suspense, { fallback: n.createElement(F.J, null) }, n.createElement(ce, null));
+                    if ((t || (0 === a?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && n.isTrue("subscriptions_premium_module_enabled")) return d.createElement(d.Suspense, { fallback: d.createElement(F.J, null) }, d.createElement(ce, null));
                 },
                 be = () => {
                     const { featureSwitches: e, userClaims: a } = (0, s.QZ)();
-                    return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? n.createElement(B.H, { errorConfig: { context: "premium_module" } }, n.createElement(ue, null)) : null;
+                    return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? d.createElement(B.H, { errorConfig: { context: "premium_module" } }, d.createElement(ue, null)) : null;
                 },
                 pe = i.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } })),
                 me = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withWhoToFollow: !0 };
             function he(e) {
-                return (0, L.x2)() ? n.createElement(N, null) : n.createElement(De, e);
+                return (0, L.x2)() ? d.createElement(N, null) : d.createElement(De, e);
             }
-            const De = n.memo(function (e) {
+            const De = d.memo(function (e) {
                 const a = { ...me, ...e },
                     r = (0, L.Ct)();
-                return n.createElement(d.Z, { ref: r, style: [xe.root, e.withMaxHeight && xe.rootWithMaxHeight], testID: a.testID }, n.createElement(Se, a), n.createElement(we, a), e.withRadarUpsell && n.createElement(d.Z, { style: xe.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(fe, a), n.createElement(ge, a), n.createElement(Ee, a));
+                return d.createElement(n.Z, { ref: r, style: [xe.root, e.withMaxHeight && xe.rootWithMaxHeight], testID: a.testID }, d.createElement(Se, a), d.createElement(we, a), e.withRadarUpsell && d.createElement(n.Z, { style: xe.paddedContainer }, d.createElement(x.Z, { variant: "RadarUpsell" })), d.createElement(fe, a), d.createElement(ge, a), d.createElement(Ee, a));
             });
             function ge(e) {
                 const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
-                    l = (0, y.v9)(v.ZP.selectViewerUser),
+                    l = (0, M.v9)(v.ZP.selectViewerUser),
                     o = r.isAnyPremiumSubscriber(),
                     i = r.isPaidVerifiedOrg(),
                     p = a.isTrue("rweb_sourcemap_migration"),
@@ -298,75 +300,75 @@
                     w = (0, k.Z)(),
                     f = !e.withSearchBox && !e.withTrends && w && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
                     A = e.isOwnProfile && w && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
-                    M = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
+                    y = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
                     _ = o && !i && "/home" === g.pathname;
-                if (e.profileUserId) return n.createElement(n.Fragment, null, S && n.createElement(R, null), n.createElement(c.B, null), e.profileScreenName ? n.createElement(h.Z, { screenName: e.profileScreenName }) : null, n.createElement(b.O, null), p && D && n.createElement(ye, e), e.isOwnProfile ? n.createElement(C.Z, { entryPoint: "profile" }) : null, A && n.createElement(d.Z, { style: xe.paddedContainer, testID: "profileAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), n.createElement(Me, e), n.createElement(Ae, e), n.createElement(_e, e));
-                let E = n.createElement(n.Fragment, null, e.withNews && n.createElement(ve, e), n.createElement(Ae, e), n.createElement(Me, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = n.createElement(n.Fragment, null, n.createElement(Me, e), e.withNews && n.createElement(ve, e), n.createElement(Ae, e))), p && (E = n.createElement(n.Fragment, null, D && n.createElement(ye, e), e.withNews && n.createElement(ve, e), n.createElement(Ae, e), n.createElement(Me, e))), n.createElement(n.Fragment, null, "/home" === g.pathname ? n.createElement(be, null) : null, S && n.createElement(R, null), _ && n.createElement(C.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(m.Z, null) : null, "/home" === g.pathname && M && n.createElement(O.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: O.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), E, f && n.createElement(d.Z, { style: xe.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(_e, e));
+                if (e.profileUserId) return d.createElement(d.Fragment, null, S && d.createElement(R, null), d.createElement(c.B, null), e.profileScreenName ? d.createElement(h.Z, { screenName: e.profileScreenName }) : null, d.createElement(b.O, null), p && D && d.createElement(Me, e), e.isOwnProfile ? d.createElement(C.Z, { entryPoint: "profile" }) : null, A && d.createElement(n.Z, { style: xe.paddedContainer, testID: "profileAnalyticsUpsell" }, d.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), d.createElement(ye, e), d.createElement(Ae, e), d.createElement(_e, e));
+                let E = d.createElement(d.Fragment, null, e.withNews && d.createElement(ve, e), d.createElement(Ae, e), d.createElement(ye, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = d.createElement(d.Fragment, null, d.createElement(ye, e), e.withNews && d.createElement(ve, e), d.createElement(Ae, e))), p && (E = d.createElement(d.Fragment, null, D && d.createElement(Me, e), e.withNews && d.createElement(ve, e), d.createElement(Ae, e), d.createElement(ye, e))), d.createElement(d.Fragment, null, "/home" === g.pathname ? d.createElement(be, null) : null, S && d.createElement(R, null), _ && d.createElement(C.Z, { entryPoint: "home" }), d.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), d.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? d.createElement(m.Z, null) : null, "/home" === g.pathname && y && d.createElement(O.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: O.c.MarchMadness, withBackgroundImage: !0 }), d.createElement(b.O, null), E, f && d.createElement(n.Z, { style: xe.paddedContainer, testID: "exploreAnalyticsUpsell" }, d.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), d.createElement(_e, e));
             }
             function Se(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    t = (0, y.v9)(M.op);
+                    t = (0, M.v9)(y.op);
                 if (!r && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, f.ZP)() || !e.withSearchBox) return null;
                 const o = a.isTrue("rweb_sourcemap_migration"),
                     i = a.isTrue("rweb_sourcemap_migration_side_expand_by_default");
-                return n.createElement(
-                    n.Fragment,
+                return d.createElement(
+                    d.Fragment,
                     null,
-                    n.createElement(l.ZP, null, ({ windowWidth: e }) => n.createElement(d.Z, { style: [xe.searchContainer, o ? A.Z.getSidebarWidthStyleRedesign(e, t ?? i) : A.Z.getSidebarWidthStyle(e), o && xe.withHorizontalPadding] }, n.createElement(S.Rj, { shouldHandleSearchShortcut: !0 }))),
-                    n.createElement(d.Z, { style: xe.searchPlaceholder }),
+                    d.createElement(l.ZP, null, ({ windowWidth: e }) => d.createElement(n.Z, { style: [xe.searchContainer, o ? A.Z.getSidebarWidthStyleRedesign(e, t ?? i) : A.Z.getSidebarWidthStyle(e), o && xe.withHorizontalPadding] }, d.createElement(S.Rj, { shouldHandleSearchShortcut: !0 }))),
+                    d.createElement(n.Z, { style: xe.searchPlaceholder }),
                 );
             }
             function we(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    d = (0, t.useLocation)();
+                    n = (0, t.useLocation)();
                 if (r) return null;
-                if (d.pathname.startsWith("/i/jf/onboarding")) return null;
+                if (n.pathname.startsWith("/i/jf/onboarding")) return null;
                 const l = a.isTrue("march_madness_brackets_enabled_logout_popup");
-                return n.createElement(o.Z, { hideOnError: !0 }, n.createElement(j.g, null, n.createElement(g.Z, null)), l && n.createElement(O.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: O.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
+                return d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(g.Z, null)), l && d.createElement(O.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: O.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
             }
             function fe(e) {
-                return e.children ? n.Children.map(e.children, (e) => (e ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(j.g, null, e)) : null)) : null;
+                return e.children ? d.Children.map(e.children, (e) => (e ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, e)) : null)) : null;
             }
             function Ae(e) {
                 const { isRestrictedSession: a } = (0, s.QZ)();
-                return !e.withTrends || a ? null : n.createElement(o.Z, { hideOnError: !0 }, n.createElement(j.g, null, n.createElement(D.Z, { focalTweetId: e.focalTweetId, profileUserId: e.profileUserId })));
-            }
-            function ye(e) {
-                const { viewerUserId: a } = (0, s.QZ)(),
-                    r = e.profileUserId || a;
-                return e.withSuggestedVideos && r ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(j.g, null, n.createElement(Z.O, null))) : null;
+                return !e.withTrends || a ? null : d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(D.Z, { focalTweetId: e.focalTweetId, profileUserId: e.profileUserId })));
             }
             function Me(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
-                return e.withWhoToFollow && r ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(j.g, null, n.createElement(w.Z, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
+                return e.withSuggestedVideos && r ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(Z.O, null))) : null;
+            }
+            function ye(e) {
+                const { viewerUserId: a } = (0, s.QZ)(),
+                    r = e.profileUserId || a;
+                return e.withWhoToFollow && r ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(w.Z, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
             function _e(e) {
-                const { featureSwitches: a, isRestrictedSession: r, viewerUserId: d } = (0, s.QZ)(),
-                    t = e.profileUserId || d,
-                    l = n.useMemo(() => {
+                const { featureSwitches: a, isRestrictedSession: r, viewerUserId: n } = (0, s.QZ)(),
+                    t = e.profileUserId || n,
+                    l = d.useMemo(() => {
                         if (t) return (0, _.Z)(t);
                     }, [t]);
-                return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(j.g, null, n.createElement(p.Z, { module: l }))) : null;
+                return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(p.Z, { module: l }))) : null;
             }
             function ve(e) {
                 const a = (0, t.useLocation)(),
                     { featureSwitches: r } = (0, s.QZ)(),
-                    d = r.isTrue("responsive_web_grok_05221996"),
+                    n = r.isTrue("responsive_web_grok_05221996"),
                     l = a.pathname.startsWith("/home") || a.pathname.startsWith("/explore");
-                return d && l ? n.createElement(o.Z, { hideOnError: !0 }, n.createElement(I.Z, null)) : null;
+                return n && l ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(I.Z, null)) : null;
             }
             function Ee(e) {
-                return n.createElement(j.g, { type: "transparent" }, n.createElement(E.Z, { textColor: "gray700", withOverflow: !0 }));
+                return d.createElement(j.g, { type: "transparent" }, d.createElement(E.Z, { textColor: "gray700", withOverflow: !0 }));
             }
             const xe = i.default.create((e) => ({ root: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 }, rootWithMaxHeight: { height: "100vh", overflowX: "hidden", overflowY: "auto" }, searchContainer: { alignItems: "center", backfaceVisibility: "hidden", backgroundColor: e.colors.cellBackground, flexDirection: "row", height: e.componentDimensions.appBarHeight, marginBottom: e.spaces.space12, minHeight: e.spaces.space32, position: "fixed", top: 0, zIndex: e.componentZIndices.appBarZIndex }, withHorizontalPadding: { paddingHorizontal: e.spaces.space16 }, paddedContainer: { paddingBottom: e.spaces.space16 }, searchPlaceholder: { height: e.componentDimensions.appBarHeight } }));
         },
         975753: (e, a, r) => {
             r.d(a, { c: () => D, Z: () => g });
-            var n = r(202784),
-                d = r(325686),
+            var d = r(202784),
+                n = r(325686),
                 t = r(392237),
                 l = r(530732),
                 o = r(992942),
@@ -383,29 +385,29 @@
                     const p = (0, c.z)(),
                         m = D[r] || "Occasion",
                         g = b ? `${m}WithBackgroundImage` : m;
-                    n.useEffect(() => {
+                    d.useEffect(() => {
                         p.scribe({ component: g, action: "impression" });
                     }, [p, g]);
                     const w = () => {
                             p.scribe({ component: g, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: M, textcolor: _ } = u ?? {},
+                        { backgroundcolor: f, buttonSize: A, cardWidth: M, marginbottom: y, textcolor: _ } = u ?? {},
                         v = f ? t.default.theme.colors[f] : t.default.theme.colors.gray0,
                         E = _ ? t.default.theme.colors[_] : t.default.theme.colors.gray900,
-                        x = M ? t.default.theme.spaces[M] : t.default.theme.spaces.space16,
+                        x = y ? t.default.theme.spaces[y] : t.default.theme.spaces.space16,
                         k = { [D.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[r];
-                    return b ? n.createElement(l.Z, { interactiveStyles: null, link: a, onPress: w, style: S.bannerContainer }, n.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : n.createElement(d.Z, { style: [S.card, { backgroundColor: v }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, n.createElement(d.Z, { style: e ? S.horizontalContent : S.verticalContent }, n.createElement(d.Z, { style: e ? S.textContainer : null }, n.createElement(i.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), n.createElement(i.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), n.createElement(d.Z, { style: S.buttonContainer }, n.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: w, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && n.createElement(i.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
+                    return b ? d.createElement(l.Z, { interactiveStyles: null, link: a, onPress: w, style: S.bannerContainer }, d.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : d.createElement(n.Z, { style: [S.card, { backgroundColor: v }, { maxWidth: M }, { marginBottom: x }], testID: "popupCard" }, d.createElement(n.Z, { style: e ? S.horizontalContent : S.verticalContent }, d.createElement(n.Z, { style: e ? S.textContainer : null }, d.createElement(i.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), d.createElement(i.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), d.createElement(n.Z, { style: S.buttonContainer }, d.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: w, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && d.createElement(i.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
                 },
                 S = t.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
         718e3: (e, a, r) => {
-            r.d(a, { Z: () => n.B });
-            var n = r(125890);
+            r.d(a, { Z: () => d.B });
+            var d = r(125890);
         },
         290402: (e, a, r) => {
             r.d(a, { Z: () => m });
-            var n = r(807896),
-                d = r(202784),
+            var d = r(807896),
+                n = r(202784),
                 t = r(182056),
                 l = r(879113),
                 o = r(392237),
@@ -415,42 +417,42 @@
             const u = s().aa6e3300,
                 b = ({ retryMessage: e, ...a }, r) => {
                     const o = t.Z.isOnline();
-                    return d.createElement(l.Z, (0, n.Z)({}, a, { icon: o ? void 0 : d.createElement(c.default, { style: p.icon }), retryMessage: o ? e : u }));
+                    return n.createElement(l.Z, (0, d.Z)({}, a, { icon: o ? void 0 : n.createElement(c.default, { style: p.icon }), retryMessage: o ? e : u }));
                 },
                 p = o.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                m = d.forwardRef(b);
+                m = n.forwardRef(b);
         },
         393805: (e, a, r) => {
             r.d(a, { ZP: () => E });
-            var n = r(688715),
-                d = r(332920),
-                t = r.n(d);
-            const l = { id: "about", text: t().b721eb38, visibleLoggedIn: !0, link: (0, n.ju)("https://about.x.com") },
-                o = { id: "downloadTheXApp", text: t().j607bf02, visibleLoggedIn: !0, link: (0, n.ju)("https://help.x.com/using-x/download-the-x-app") },
-                i = { id: "helpCenter", text: t().f66d24be, link: (0, n.ju)("https://help.x.com") },
-                s = { id: "termsOfService", text: t().hdabc3fc, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://x.com/tos") },
-                c = { id: "privacyPolicy", text: t().bc6efc72, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://x.com/privacy") },
-                u = { id: "cookiePolicy", text: t().h3161192, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://support.x.com/articles/20170514") },
-                b = { id: "germanyTransparency", text: t().da137d9a, featureSwitch: "dash_region_specific_de_media_transparency_items_enabled", visibleLoggedIn: !0, legal: !0, neverHidden: !0, link: (0, n.ju)("https://help.x.com/de/using-twitter/twitter-timeline") },
-                p = { id: "imprint", featureSwitch: "dash_region_specific_de_and_tr_media_transparency_items_enabled", text: t().aeede01a, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://legal.x.com/imprint.html") },
-                m = { id: "accessibility", text: t().e3719c16, visibleLoggedIn: !0, neverHidden: !0, link: (0, n.ju)("https://help.x.com/resources/accessibility") },
-                h = { id: "adsInfo", text: t().a7de64de, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo") },
-                D = { id: "grok", text: t().h5860a68, link: (0, n.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
-                g = { id: "blog", text: t().jb0a4c36, link: (0, n.ju)("https://blog.x.com") },
-                S = { id: "careers", text: t().ce6d095a, link: (0, n.ju)("https://careers.x.com") },
-                w = { id: "brandResources", text: t().e0adec82, link: (0, n.ju)("https://about.x.com/press/brand-assets") },
-                f = { id: "advertising", text: t().a4cf866e, link: (0, n.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
-                A = { id: "marketing", text: t().df1b7550, link: (0, n.ju)("https://marketing.x.com") },
-                y = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, n.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
-                M = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
-                _ = { id: "directory", text: t().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
+            var d = r(688715),
+                n = r(332920),
+                t = r.n(n);
+            const l = { id: "about", text: t().b721eb38, visibleLoggedIn: !0, link: (0, d.ju)("https://about.x.com") },
+                o = { id: "downloadTheXApp", text: t().j607bf02, visibleLoggedIn: !0, link: (0, d.ju)("https://help.x.com/using-x/download-the-x-app") },
+                i = { id: "helpCenter", text: t().f66d24be, link: (0, d.ju)("https://help.x.com") },
+                s = { id: "termsOfService", text: t().hdabc3fc, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://x.com/tos") },
+                c = { id: "privacyPolicy", text: t().bc6efc72, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://x.com/privacy") },
+                u = { id: "cookiePolicy", text: t().h3161192, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://support.x.com/articles/20170514") },
+                b = { id: "germanyTransparency", text: t().da137d9a, featureSwitch: "dash_region_specific_de_media_transparency_items_enabled", visibleLoggedIn: !0, legal: !0, neverHidden: !0, link: (0, d.ju)("https://help.x.com/de/using-twitter/twitter-timeline") },
+                p = { id: "imprint", featureSwitch: "dash_region_specific_de_and_tr_media_transparency_items_enabled", text: t().aeede01a, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://legal.x.com/imprint.html") },
+                m = { id: "accessibility", text: t().e3719c16, visibleLoggedIn: !0, neverHidden: !0, link: (0, d.ju)("https://help.x.com/resources/accessibility") },
+                h = { id: "adsInfo", text: t().a7de64de, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo") },
+                D = { id: "grok", text: t().h5860a68, link: (0, d.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
+                g = { id: "blog", text: t().jb0a4c36, link: (0, d.ju)("https://blog.x.com") },
+                S = { id: "careers", text: t().ce6d095a, link: (0, d.ju)("https://careers.x.com") },
+                w = { id: "brandResources", text: t().e0adec82, link: (0, d.ju)("https://about.x.com/press/brand-assets") },
+                f = { id: "advertising", text: t().a4cf866e, link: (0, d.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
+                A = { id: "marketing", text: t().df1b7550, link: (0, d.ju)("https://marketing.x.com") },
+                M = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, d.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
+                y = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, d.ju)("https://developer.x.com") },
+                _ = { id: "directory", text: t().d83f18d2, link: (0, d.ju)("https://x.com/i/directory/profiles") },
                 v = { id: "settings", text: t().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                E = (e) => (e ? ((o.text = t().hc5aa17c), (D.text = t().j0693948), [l, o, D, S, s, c, u, M, f, b, p, v]) : [l, o, D, i, s, c, u, b, p, m, h, g, S, w, f, A, y, M, _, v]);
+                E = (e) => (e ? ((o.text = t().hc5aa17c), (D.text = t().j0693948), [l, o, D, S, s, c, u, y, f, b, p, v]) : [l, o, D, i, s, c, u, b, p, m, h, g, S, w, f, A, M, y, _, v]);
         },
         788994: (e, a, r) => {
             r.d(a, { Z: () => f });
-            var n = r(202784),
-                d = r(325686),
+            var d = r(202784),
+                n = r(325686),
                 t = r(811176),
                 l = r(731708),
                 o = r(392237),
@@ -464,24 +466,24 @@
             const h = s().b7388a56,
                 D = s().h63a5c3c,
                 g = `© ${String(new Date().getFullYear())} X Corp.`;
-            class S extends n.Component {
+            class S extends d.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._renderMenu = (e) => (a) => n.createElement(t.Z, { isFixed: !0, items: this._renderOverflowItems(e), onCloseRequested: a })),
+                        (this._renderMenu = (e) => (a) => d.createElement(t.Z, { isFixed: !0, items: this._renderOverflowItems(e), onCloseRequested: a })),
                         (this._filterFeatureSwitch = ({ featureSwitch: e }) => !e || (this.context.featureSwitches && this.context.featureSwitches.isTrue(e))),
                         (this._renderOverflowItems = (e) =>
                             e.map((e) => {
-                                const { internal: a, link: r, text: n } = e;
-                                return { text: n, link: { pathname: r, external: !a } };
+                                const { internal: a, link: r, text: d } = e;
+                                return { text: d, link: { pathname: r, external: !a } };
                             })),
                         (this._renderItem = ({ id: e, internal: a, link: r, mobileLink: t, text: o }) => {
                             const { analytics: i, isMobile: s, textColor: c } = this.props;
                             let u = r ? { pathname: r, external: !a } : void 0;
                             s && t && (u = t ? { pathname: t, external: !a } : void 0);
-                            return n.createElement(
-                                d.Z,
+                            return d.createElement(
+                                n.Z,
                                 { key: o, style: [w.item, this._getItemAlignStyle(), w.inline] },
-                                n.createElement(
+                                d.createElement(
                                     l.ZP,
                                     {
                                         color: c,
@@ -493,7 +495,7 @@
                                     },
                                     o,
                                 ),
-                                n.createElement(l.ZP, { style: w.separator }, " ", "|"),
+                                d.createElement(l.ZP, { style: w.separator }, " ", "|"),
                             );
                         }),
                         (this._getItemAlignStyle = () => {
@@ -514,7 +516,7 @@
                         i = (0, m.ZP)(o).filter(this._filterFeatureSwitch),
                         s = t ? i.filter(({ visibleLoggedIn: e }) => e) : i,
                         [b, S] = (0, u.Z)(s, ({ legal: e, neverHidden: a }) => e || a || !t);
-                    return n.createElement(d.Z, { "aria-label": h, role: "navigation", style: [w.root, "center" === e && w.alignCenter, "vertical" === a && w.itemLayoutVertical] }, b.map(this._renderItem), S.length > 0 ? n.createElement(p.Z, { renderMenu: this._renderMenu(S), style: [w.item, this._getItemAlignStyle()] }, n.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, n.createElement(c.default, { style: w.icon }))) : null, n.createElement(l.ZP, { color: r, size: "subtext3", style: [w.item, this._getItemAlignStyle()] }, g));
+                    return d.createElement(n.Z, { "aria-label": h, role: "navigation", style: [w.root, "center" === e && w.alignCenter, "vertical" === a && w.itemLayoutVertical] }, b.map(this._renderItem), S.length > 0 ? d.createElement(p.Z, { renderMenu: this._renderMenu(S), style: [w.item, this._getItemAlignStyle()] }, d.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, d.createElement(c.default, { style: w.icon }))) : null, d.createElement(l.ZP, { color: r, size: "subtext3", style: [w.item, this._getItemAlignStyle()] }, g));
                 }
             }
             (S.contextType = b.rC), (S.defaultProps = { textColor: "gray700" });
@@ -523,4 +525,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.29865aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.454f278a.js.map

@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 t("ed93de0c", "S'està analitzant la publicació"),
-                t("d1d92e40", "More details"),
+                t("d1d92e40", "Més detalls"),
                 t("a6e89af8", "Conversa oberta"),
                 t("ica55d24", "Xat nou"),
                 t("f794af9a", "Mode divertit"),
@@ -4362,8 +4362,8 @@
                 t("g01599b6", "Resposta 1"),
                 t("e02694e0", "Resposta 2"),
                 t("h6867fcc", "Prefereixo aquesta resposta"),
-                t("acc4496c", "Try Grok Voice mode"),
-                t("jd36d190", "Access advanced features with Grok Android app"),
+                t("acc4496c", "Prova el mode de veu de Grok"),
+                t("jd36d190", "Accedeix a funcions avançades amb l'aplicació de Grok per a Android"),
                 t("hf9afab0", "Habilita DeepSearch per fer cerques a Internet i X, analitzar informació i oferir respostes detallades i raonades amb una cerca ràpida i autònoma."),
                 t("ef3b3f04", 'Habilita l\'opció Raonament per utilitzar el nostre model de raonament. És ideal per a matemàtiques, ciències i programació. També pots demanar a Grok "Raona més" per a qualsevol pregunta que pugui requerir una mica més de capacitat intel·lectual. '),
                 t("b43636b8", "Et presentem Grok 3"),
@@ -5841,7 +5841,7 @@
                 t("ab1b3d38", "Les dades de la sol·licitud de nota encara no estan disponibles"),
                 t("c43fb933", "acord de desenvolupador de X i les normes per als desenvolupadors"),
                 t("af781666", "Què pensa la gent?"),
-                t("a1f414ee", "Share thoughts"),
+                t("a1f414ee", "Comparteix el que penses"),
                 t("ed88e742", "Copia l'enllaç al tema"),
                 t("h92fe1be", "Malauradament, les Anotacions de la Comunitat no estan disponibles per a tu ara mateix."),
                 t("f0dc1434", "Actualment, les Notes de la Comunitat només estan disponibles als Estats Units"),
@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(Comissió del ", "%, mín. ", ")"];
@@ -12671,6 +12677,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " i "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " i "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13234,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.156d93ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.c8606e5a.js.map

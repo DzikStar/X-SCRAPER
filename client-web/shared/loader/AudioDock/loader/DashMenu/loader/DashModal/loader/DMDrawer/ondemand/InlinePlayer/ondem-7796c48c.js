@@ -209,7 +209,7 @@
                 d = (0, o.ju)("https://help.x.com/forms/netzwerkdurchsetzungsgesetz");
         },
         208763: (e, t, s) => {
-            s.d(t, { Z: () => P });
+            s.d(t, { Z: () => S });
             var o = s(807896),
                 n = s(202784),
                 i = s(978253),
@@ -218,89 +218,87 @@
                 l = s(719417),
                 c = s(666418),
                 d = s(392237),
-                h = s(952793),
-                p = s(954300),
-                u = s(443781),
-                m = s(24949),
-                f = s(782261),
-                g = s(668214),
-                y = s(836255),
-                _ = s(919022);
-            const w = (0, m.P1)(
+                h = s(954300),
+                p = s(443781),
+                u = s(24949),
+                m = s(782261),
+                f = s(668214),
+                g = s(836255),
+                y = s(919022);
+            const _ = (0, u.P1)(
                     (e, t) => {
                         const s = "tweet" === t.videoConfig.source?.videoId?.type,
-                            o = y.Z.createHydratedSelector(e);
+                            o = g.Z.createHydratedSelector(e);
                         return s && t.videoConfig.tweetId && o(t.videoConfig.tweetId);
                     },
-                    _.ZP.selectViewerUser,
+                    y.ZP.selectViewerUser,
                     (e, t) => {
-                        const s = e && f.Z.getOriginalTweet(e),
+                        const s = e && m.Z.getOriginalTweet(e),
                             o = s && s?.user?.id_str,
                             n = t?.id_str;
                         return Boolean(n) && o === n;
                     },
                 ),
-                C = (0, g.Z)().propsFromState(() => ({ includeDisputeLinkInCopyrightErrorMessage: w })),
-                b = ({ includeDisputeLinkInCopyrightErrorMessage: e, mediaMaxHeight: t, onClick: s, shouldUseCompactUI: i, testID: d, videoConfig: m }) => {
-                    const { aspectRatio: f, autoplayGroupOptions: g, expandedUrl: y, liveBroadcastRewindEnabled: _, type: w, ...C } = m,
-                        [b, x] = n.useState(f),
-                        { history: I } = n.useContext(u.rC),
-                        E = (0, h.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        D = n.useCallback((e) => {
+                w = (0, f.Z)().propsFromState(() => ({ includeDisputeLinkInCopyrightErrorMessage: _ })),
+                C = ({ includeDisputeLinkInCopyrightErrorMessage: e, onClick: t, shouldUseCompactUI: s, testID: i, videoConfig: d }) => {
+                    const { aspectRatio: u, autoplayGroupOptions: m, expandedUrl: f, liveBroadcastRewindEnabled: g, type: y, ..._ } = d,
+                        [w, C] = n.useState(u),
+                        { history: v } = n.useContext(p.rC),
+                        x = n.useCallback((e) => {
                             const {
                                 nativeEvent: {
                                     layout: { height: t, width: s },
                                 },
                             } = e;
-                            s && t && x(s / t);
+                            s && t && C(s / t);
                         }, []),
-                        Z = (0, a.GS)(),
-                        T = n.useCallback(
+                        I = (0, a.GS)(),
+                        E = n.useCallback(
                             ({ playerApi: e }) => {
-                                e?.pause(), y && I.push("string" == typeof y ? y : { pathname: y.pathname, state: y.state });
+                                e?.pause(), f && v.push("string" == typeof f ? f : { pathname: f.pathname, state: f.state });
                             },
-                            [y, I, Z],
+                            [f, v, I],
                         ),
-                        R = n.useCallback(
+                        D = n.useCallback(
                             (e) => {
-                                s?.(e);
+                                t?.(e);
                             },
-                            [y, I, Z, s],
+                            [f, v, I, t],
                         ),
-                        S = C["aria-label"],
-                        P = n.useCallback(({ containerRef: t, playerApi: s, playerState: o }) => n.createElement(l.Z, { "aria-label": S, containerRef: t, includeDisputeLinkInCopyrightErrorMessage: e, liveBroadcastRewindEnabled: _, onClick: T, playerApi: s, playerDisplayOptions: C.displayOptions, playerState: o, poster: C.poster?.url, shouldShowAltLabel: C.shouldShowAltLabel, showWatchAgain: (0, p.I4)({ source: C.source, withPostPlayback: C.withPostPlayback }), useKeyboardShortcuts: !0 }), [S, T, C.source, e, C.displayOptions, C.poster?.url, C.shouldShowAltLabel, C.withPostPlayback, _]);
-                    return n.createElement(r.Z, { onClick: R, onLayout: E && t ? void 0 : D, style: !(E && t) && v.video, testID: d }, n.createElement(c.Z, (0, o.Z)({}, C, { aspectRatio: b, autoplayGroupOptions: g, uiStack: i ? P : void 0 })));
+                        Z = _["aria-label"],
+                        T = n.useCallback(({ containerRef: t, playerApi: s, playerState: o }) => n.createElement(l.Z, { "aria-label": Z, containerRef: t, includeDisputeLinkInCopyrightErrorMessage: e, liveBroadcastRewindEnabled: g, onClick: E, playerApi: s, playerDisplayOptions: _.displayOptions, playerState: o, poster: _.poster?.url, shouldShowAltLabel: _.shouldShowAltLabel, showWatchAgain: (0, h.I4)({ source: _.source, withPostPlayback: _.withPostPlayback }), useKeyboardShortcuts: !0 }), [Z, E, _.source, e, _.displayOptions, _.poster?.url, _.shouldShowAltLabel, _.withPostPlayback, g]);
+                    return n.createElement(r.Z, { onClick: D, onLayout: x, style: b.video, testID: i }, n.createElement(c.Z, (0, o.Z)({}, _, { aspectRatio: w, autoplayGroupOptions: m, uiStack: s ? T : void 0 })));
                 },
-                v = d.default.create((e) => ({ video: { height: "100%" } })),
-                x = C(n.memo(b));
-            var I = s(110377),
-                E = s(332920),
-                D = s.n(E),
-                Z = s(632658);
-            const T = D().f93bb3ee,
-                R = ({ hideAcceptOverlay: e, renderPhoto: t, ...s }) => {
+                b = d.default.create((e) => ({ video: { height: "100%" } })),
+                v = w(n.memo(C));
+            var x = s(110377),
+                I = s(332920),
+                E = s.n(I),
+                D = s(632658);
+            const Z = E().f93bb3ee,
+                T = ({ hideAcceptOverlay: e, renderPhoto: t, ...s }) => {
                     const o = n.useCallback(
                         ({ resourceSelectionHandler: e, useMinimumData: o }) => {
                             const i = { ...s, onVariantSelection: e, previewMode: o };
-                            return t ? t(i) : n.createElement(I.j, i);
+                            return t ? t(i) : n.createElement(x.j, i);
                         },
                         [s, t],
                     );
-                    return n.createElement(Z.Z, { acceptLabel: T, hasIntrinsicSize: !1, hideAcceptOverlay: e, renderContent: o, resourceId: s.image.url });
+                    return n.createElement(D.Z, { acceptLabel: Z, hasIntrinsicSize: !1, hideAcceptOverlay: e, renderContent: o, resourceId: s.image.url });
                 },
-                S = "tweetPhoto",
-                P = ({ hideAcceptOverlay: e, ...t }) => {
+                R = "tweetPhoto",
+                S = ({ hideAcceptOverlay: e, ...t }) => {
                     const s = t.media.length > 1,
                         r = n.useCallback(
                             (e) => {
                                 const t = { ...e.videoConfig };
-                                return n.createElement(x, (0, o.Z)({}, e, { shouldUseCompactUI: s, videoConfig: t }));
+                                return n.createElement(v, (0, o.Z)({}, e, { shouldUseCompactUI: s, videoConfig: t }));
                             },
                             [s],
                         ),
                         a = t.renderVideo ?? r,
-                        l = n.useCallback((s) => n.createElement(R, (0, o.Z)({}, s, { hideAcceptOverlay: e, renderPhoto: t.renderPhoto })), [t.renderPhoto, e]);
-                    return n.createElement(i.Z, (0, o.Z)({}, t, { renderPhoto: l, renderVideo: a, testID: S, withLink: t.withLink && !0 }));
+                        l = n.useCallback((s) => n.createElement(T, (0, o.Z)({}, s, { hideAcceptOverlay: e, renderPhoto: t.renderPhoto })), [t.renderPhoto, e]);
+                    return n.createElement(i.Z, (0, o.Z)({}, t, { renderPhoto: l, renderVideo: a, testID: R, withLink: t.withLink && !0 }));
                 };
         },
         131364: (e, t, s) => {
@@ -983,4 +981,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c.32940fba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c.069a12fa.js.map

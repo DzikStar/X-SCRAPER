@@ -123,7 +123,7 @@
                                     const t = e.data.destination || l.data.destination;
                                     if (!t) continue;
                                     const n = e?.data?.title?.content;
-                                    if (!n) continue;
+                                    if (null == n) continue;
                                     let a = e?.data?.title?.is_rtl;
                                     void 0 === a && (a = !1);
                                     const d = o[t];
@@ -495,4 +495,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-49ce3a1b.feffae7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-49ce3a1b.b4a8aa7a.js.map

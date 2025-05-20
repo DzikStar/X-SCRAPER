@@ -4148,7 +4148,7 @@
                     return a.stringCount + " new requests";
                 }),
                 i("ed93de0c", "Menganalisis Postingan"),
-                i("d1d92e40", "More details"),
+                i("d1d92e40", "Detail selengkapnya"),
                 i("a6e89af8", "Buka percakapan"),
                 i("ica55d24", "Obrolan Baru"),
                 i("f794af9a", "Mode santai"),
@@ -4361,8 +4361,8 @@
                 i("g01599b6", "Respons 1"),
                 i("e02694e0", "Respons 2"),
                 i("h6867fcc", "Saya lebih suka respons ini"),
-                i("acc4496c", "Try Grok Voice mode"),
-                i("jd36d190", "Access advanced features with Grok Android app"),
+                i("acc4496c", "Coba Grok mode Suara"),
+                i("jd36d190", "Gunakan fitur lanjutan dengan aplikasi Grok Android"),
                 i("hf9afab0", "Aktifkan DeepSearch untuk memindai internet dan X, menganalisis informasi, dan menghadirkan jawaban yang mendetail dan beralasan pencarian yang cepat dan tanggap."),
                 i("ef3b3f04", "Aktifkan Berpikir untuk menggunakan model penalaran kami. Mode ini paling cocok untuk matematika, sains, dan pengodean. Anda juga dapat meminta Grok “Berpikir lebih keras” untuk pertanyaan apa pun yang mungkin membutuhkan lebih banyak kekuatan otak. "),
                 i("b43636b8", "Sambutlah Grok 3"),
@@ -5840,7 +5840,7 @@
                 i("ab1b3d38", "Data permintaan catatan belum tersedia"),
                 i("c43fb933", "Kebijakan dan Perjanjian Pengembang X"),
                 i("af781666", "Apa pendapat orang-orang?"),
-                i("a1f414ee", "Share thoughts"),
+                i("a1f414ee", "Sampaikan pendapat"),
                 i("ed88e742", "Salin tautan ke Topik"),
                 i("h92fe1be", "Maaf, Catatan Komunitas belum tersedia untuk Anda saat ini."),
                 i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS."),
@@ -12022,6 +12022,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(Biaya ", "%, Min. ", ")"];
@@ -12670,6 +12676,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " dan "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", ", dan "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13232,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.a4c43f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.498aa58a.js.map

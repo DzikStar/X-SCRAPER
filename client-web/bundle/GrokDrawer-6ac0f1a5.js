@@ -3,7 +3,7 @@
     ["bundle.GrokDrawer-6ac0f1a5"],
     {
         448781: (e, a, n) => {
-            n.d(a, { XD: () => S, ZP: () => C, eK: () => y, p9: () => A, pB: () => w, yF: () => g, z_: () => v });
+            n.d(a, { XD: () => S, ZP: () => C, eK: () => y, p9: () => A, pB: () => g, yF: () => w, z_: () => v });
             var d = n(202784),
                 o = n(214997),
                 r = n(325686),
@@ -20,13 +20,13 @@
                 D = u().f388a7ec,
                 f = u().ab1eb384,
                 S = u().f388a7ec,
-                g = u().i330e54c,
-                w = "default",
+                w = u().i330e54c,
+                g = "default",
                 A = u().fdcce108,
                 y = u().ac64b674,
                 v = "deeper",
                 k = [
-                    { label: S, description: g, value: w },
+                    { label: S, description: w, value: g },
                     { label: A, description: y, value: v },
                 ],
                 M = s.default.create((e) => ({ container: { flex: 1 }, scrollView: { flex: 1 }, contentContainerScrollView: { display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space24 }, compactContentContainerScrollView: { gap: e.spaces.space8, paddingVertical: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, subtitle: { color: e.colors.gray700 }, section: { marginTop: e.spaces.space8, gap: e.spaces.space12 }, buttonContainer: { display: "flex", width: "100%", flexDirection: "row", justifyContent: "flex-end", padding: e.spaces.space24 }, compactButtonContainer: { justifyContent: "center" }, resetToDefaultButton: {} })),
@@ -35,16 +35,16 @@
                         { advancedSettings: n, setDeepersearchAdvancedSettings: s, setDeepsearchAdvancedSettings: c } = (0, m.w)(),
                         u = (0, b.z)(),
                         S = e && !a,
-                        g = d.useCallback(
+                        w = d.useCallback(
                             (e, a) => {
-                                u.scribe({ action: "change", component: "grok-deepsearch-mode", element: a }), a === w ? c() : s();
+                                u.scribe({ action: "change", component: "grok-deepsearch-mode", element: a }), a === g ? c() : s();
                             },
                             [u, c, s],
                         );
                     return d.createElement(
                         r.Z,
                         { style: M.container },
-                        d.createElement(o.Z, { contentContainerStyle: [M.contentContainerScrollView, S ? M.compactContentContainerScrollView : void 0], style: M.scrollView }, d.createElement(l.ZP, { style: M.title, weight: "bold" }, D), d.createElement(l.ZP, { style: M.subtitle }, f), d.createElement(r.Z, { style: M.section }, d.createElement(t.Z, { horizontal: !S, name: "", onChange: g, options: k, value: n?.deepsearchArgs?.mode || k[0].value }))),
+                        d.createElement(o.Z, { contentContainerStyle: [M.contentContainerScrollView, S ? M.compactContentContainerScrollView : void 0], style: M.scrollView }, d.createElement(l.ZP, { style: M.title, weight: "bold" }, D), d.createElement(l.ZP, { style: M.subtitle }, f), d.createElement(r.Z, { style: M.section }, d.createElement(t.Z, { horizontal: !S, name: "", onChange: w, options: k, value: n?.deepsearchArgs?.mode || k[0].value }))),
                         d.createElement(
                             r.Z,
                             { style: [M.buttonContainer, S ? M.compactButtonContainer : void 0] },
@@ -53,9 +53,9 @@
                                 {
                                     borderColor: "transparent",
                                     color: "gray900",
-                                    disabled: !n?.deepsearchArgs?.mode || n?.deepsearchArgs?.mode === w,
+                                    disabled: !n?.deepsearchArgs?.mode || n?.deepsearchArgs?.mode === g,
                                     onClick: () => {
-                                        g("", k[0].value);
+                                        w("", k[0].value);
                                     },
                                     size: "small",
                                     style: M.resetToDefaultButton,
@@ -86,8 +86,8 @@
                         n = (0, o.Dv)(t.lZ),
                         D = (0, c.v9)((e) => (0, u.JU)(e)),
                         { advancedSettings: f, filterKey: S } = D,
-                        { isGrokDrawer: g } = (0, h.ZP)(),
-                        w = (0, c.I0)(),
+                        { isGrokDrawer: w } = (0, h.ZP)(),
+                        g = (0, c.I0)(),
                         A = (() => {
                             const e = (0, c.oR)(),
                                 a = (0, u.F9)(e.getState()),
@@ -114,15 +114,15 @@
                         I = (0, s.hC)("responsive_web_grok_enable_deepersearch"),
                         _ = d.useCallback(
                             (e) => {
-                                w((0, u.X4)(e));
+                                g((0, u.X4)(e));
                             },
-                            [w],
+                            [g],
                         ),
                         P = d.useCallback(
                             (e) => {
-                                w((0, u.F0)(e));
+                                g((0, u.F0)(e));
                             },
-                            [w],
+                            [g],
                         ),
                         B = d.useCallback(() => {
                             if (f) {
@@ -140,9 +140,9 @@
                     }, [n, P, I]);
                     const N = d.useCallback(
                             (e) => {
-                                w((0, u.ni)(null === e ? null : e));
+                                g((0, u.ni)(null === e ? null : e));
                             },
-                            [w],
+                            [g],
                         ),
                         G = d.useCallback(() => {
                             N(null);
@@ -171,7 +171,7 @@
                         J = "CreateImage" === S,
                         X = (0, r.yu)(),
                         U = X && l.ZP.isWebView(),
-                        V = O || !!g,
+                        V = O || !!w,
                         $ = D.focused,
                         j = (H && !C) || (z && !E);
                     return (
@@ -212,8 +212,8 @@
                 D = n(551864),
                 f = n(537392),
                 S = n(78882);
-            var g = n(530732),
-                w = n(786998),
+            var w = n(530732),
+                g = n(786998),
                 A = n(392237),
                 y = n(457566),
                 v = n(725405),
@@ -281,9 +281,9 @@
                     r.Z,
                     { ref: a, style: [ee.headerRoot, !d && ee.headerBorderClosed, ee.cursor], testID: C.header },
                     d
-                        ? o.createElement(w.Z, { onMiddleControlClick: t, rightControl: o.createElement(Y, { conversationUrl: e, handleToggleVisibility: t, isExpanded: d, onClose: i }), style: ee.roundedAppBarCorners, title: o.createElement(r.Z, { style: ee.titleContainer }, o.createElement(y.x1, null), o.createElement(L, null)) })
+                        ? o.createElement(g.Z, { onMiddleControlClick: t, rightControl: o.createElement(Y, { conversationUrl: e, handleToggleVisibility: t, isExpanded: d, onClose: i }), style: ee.roundedAppBarCorners, title: o.createElement(r.Z, { style: ee.titleContainer }, o.createElement(y.x1, null), o.createElement(L, null)) })
                         : o.createElement(
-                              g.Z,
+                              w.Z,
                               {
                                   onPress: () => {
                                       s.scribe({ element: "grok-bubble", action: "click" }), t();
@@ -299,26 +299,23 @@
             const ne = (0, t.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.6"),
-                        n.e("icons.25"),
-                        n.e("icons.22"),
-                        n.e("icons.9"),
-                        n.e("icons.4"),
-                        n.e("icons.15"),
+                        n.e("icons.10"),
+                        n.e("icons.21"),
+                        n.e("icons.16"),
+                        n.e("icons.1"),
+                        n.e("icons.19"),
+                        n.e("icons.0"),
+                        n.e("icons.23"),
+                        n.e("icons.8"),
                         n.e("icons.2"),
-                        n.e("icons.20"),
-                        n.e("icons.7"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.0"),
-                        n.e("icons.11"),
-                        n.e("icons.27"),
-                        n.e("icons.17"),
-                        n.e("icons.12"),
+                        n.e("icons.7"),
+                        n.e("icons.9"),
+                        n.e("icons.15"),
+                        n.e("icons.24"),
+                        n.e("icons.28"),
                         n.e("icons.3"),
-                        n.e("icons.13"),
-                        n.e("icons.18"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -329,11 +326,13 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.24"),
-                        n.e("icons.10"),
-                        n.e("icons.8"),
                         n.e("icons.26"),
-                        n.e("icons.19"),
+                        n.e("icons.4"),
+                        n.e("icons.13"),
+                        n.e("icons.18"),
+                        n.e("icons.25"),
+                        n.e("icons.29"),
+                        n.e("icons.27"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -364,7 +363,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -407,13 +406,16 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -484,13 +486,13 @@
             function de({ width: e }) {
                 const a = (0, u.cm)(),
                     [n, t] = o.useState(0),
-                    g =
-                        ((w = n),
+                    w =
+                        ((g = n),
                         (0, f.Zx)(({ windowHeight: e }) => {
-                            const a = S.I2.find((a) => w <= Math.ceil(e * a));
-                            return a ? e * Math.max(a, 0.5) : Math.min(w, Math.ceil(S.T6 * e));
+                            const a = S.I2.find((a) => g <= Math.ceil(e * a));
+                            return a ? e * Math.max(a, 0.5) : Math.min(g, Math.ceil(S.T6 * e));
                         }));
-                var w;
+                var g;
                 const A = (0, m.v9)((e) => p.kX(e)),
                     y = A === D.j.EXPANDED,
                     v = A === D.j.CLOSED;
@@ -508,7 +510,7 @@
                         },
                         [t],
                     ),
-                    M = o.useMemo(() => [S.ZP.allowPointer, S.ZP.main, y ? { minHeight: g, maxWidth: null } : S.ZP.collapsedSmall], [y, g]);
+                    M = o.useMemo(() => [S.ZP.allowPointer, S.ZP.main, y ? { minHeight: w, maxWidth: null } : S.ZP.collapsedSmall], [y, w]);
                 return (function () {
                     const e = (0, l.useHistory)(),
                         a = e.getLastNonModalLocationPathname() ?? e.location.pathname;
@@ -556,8 +558,8 @@
                     r = (0, s.v9)(a.selectCanClearConversation),
                     { access: l, changeMode: D, mode: f } = (0, h.ZP)(),
                     { clearFilterKey: S } = (0, u.w)(),
-                    g = !1 !== l,
-                    w = (0, i.z)(),
+                    w = !1 !== l,
+                    g = (0, i.z)(),
                     A = (0, o.useLocation)(),
                     y = d.useCallback(() => {
                         const d = new URLSearchParams(A.search),
@@ -573,34 +575,34 @@
                               : n.goBack();
                     }, [r, e, a, n, A.search]),
                     v = d.useCallback(() => {
-                        r && (e(a.clearConversation()), n.push("/i/grok"), (0, b.ZY)(w), S());
-                    }, [w, r, e, a, n, S]),
+                        r && (e(a.clearConversation()), n.push("/i/grok"), (0, b.ZY)(g), S());
+                    }, [g, r, e, a, n, S]),
                     k = d.useCallback(() => {
-                        r && (e(a.clearConversation()), (0, b.ZY)(w), S());
-                    }, [w, r, e, a, S]),
+                        r && (e(a.clearConversation()), (0, b.ZY)(g), S());
+                    }, [g, r, e, a, S]),
                     M = d.useCallback(
                         (e) => {
                             const a = [
                                 {
                                     disabled: f === c.IK.REGULAR,
                                     onClick: function () {
-                                        D(c.IK.REGULAR, w);
+                                        D(c.IK.REGULAR, g);
                                     },
                                     text: p,
                                 },
                                 {
                                     disabled: f === c.IK.FUN,
                                     onClick: function () {
-                                        D(c.IK.FUN, w);
+                                        D(c.IK.FUN, g);
                                     },
                                     text: m,
                                 },
                             ];
                             return d.createElement(t.default, { actionItems: a, onClose: e });
                         },
-                        [w, f, D],
+                        [g, f, D],
                     );
-                return { canClearConversation: r, handleBackClick: y, handleClearConversationClick: v, handleClearConversationClickWithoutNav: k, isEligible: g, renderActionsMenu: M };
+                return { canClearConversation: r, handleBackClick: y, handleClearConversationClick: v, handleClearConversationClickWithoutNav: k, isEligible: w, renderActionsMenu: M };
             }
         },
         654917: (e, a, n) => {
@@ -636,8 +638,8 @@
                     D = (0, s.v9)(n.selectFetchConversationIdError),
                     f = (0, s.v9)(n.selectMode),
                     S = (0, s.v9)(n.selectStatus),
-                    g = (0, s.v9)(c.Pt),
-                    w = (0, s.v9)(n.selectConversationId),
+                    w = (0, s.v9)(c.Pt),
+                    g = (0, s.v9)(n.selectConversationId),
                     A = (0, s.v9)(c.pZ),
                     y = (0, s.v9)(c.uF),
                     v = (0, s.v9)(c.F9),
@@ -658,7 +660,7 @@
                         },
                         [l, f, v],
                     );
-                return { messageIds: o, access: C, status: S, grokSettingsStatus: g, conversationKey: a, conversationId: w, analysisEntityId: k, accessRestrictedReasons: A, fetchConversationIdStatus: p, fetchConversationIdError: D, mode: f, model: v, changeMode: I, changeModel: _, usingExperiment: M };
+                return { messageIds: o, access: C, status: S, grokSettingsStatus: w, conversationKey: a, conversationId: g, analysisEntityId: k, accessRestrictedReasons: A, fetchConversationIdStatus: p, fetchConversationIdError: D, mode: f, model: v, changeMode: I, changeModel: _, usingExperiment: M };
             }
         },
         962379: (e, a, n) => {
@@ -676,7 +678,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => t, HO: () => C, HR: () => P, JO: () => f, Jm: () => k, NH: () => B, RC: () => D, S7: () => _, UV: () => N, Uk: () => y, YI: () => c, YW: () => I, ZY: () => p, az: () => i, c3: () => l, dP: () => g, dd: () => h, eS: () => v, eV: () => M, hf: () => S, hq: () => s, kl: () => A, mm: () => b, op: () => w, pv: () => r, qQ: () => R, u1: () => E, y6: () => u, zC: () => x, zX: () => G });
+            n.d(a, { DE: () => m, G$: () => t, HO: () => C, HR: () => P, JO: () => f, Jm: () => k, NH: () => B, RC: () => D, S7: () => _, UV: () => N, Uk: () => y, YI: () => c, YW: () => I, ZY: () => p, az: () => i, c3: () => l, dP: () => w, dd: () => h, eS: () => v, eV: () => M, hf: () => S, hq: () => s, kl: () => A, mm: () => b, op: () => g, pv: () => r, qQ: () => R, u1: () => E, y6: () => u, zC: () => x, zX: () => G });
             var d = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -723,10 +725,10 @@
             function S(e, a) {
                 T(e)({ element: "tweet-carousel", action: "change", data: { event_info: a.toString() } });
             }
-            function g(e, a) {
+            function w(e, a) {
                 T(e)({ element: "file-attachment", action: "add", data: { event_info: a } });
             }
-            function w(e, a) {
+            function g(e, a) {
                 T(e)({ element: "file-attachment", action: "fail", data: { event_info: a } });
             }
             function A(e, a, n) {
@@ -780,4 +782,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.442697ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.84b4b90a.js.map

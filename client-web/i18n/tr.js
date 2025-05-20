@@ -4148,7 +4148,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 n("ed93de0c", "Gönderi Analiz Ediliyor"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "Daha fazla ayrıntı"),
                 n("a6e89af8", "Açık sohbet"),
                 n("ica55d24", "Yeni Sohbet"),
                 n("f794af9a", "Eğlence modu"),
@@ -4361,8 +4361,8 @@
                 n("g01599b6", "1. Yanıt"),
                 n("e02694e0", "2. Yanıt"),
                 n("h6867fcc", "Bu yanıtı tercih ederim"),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "Grok Ses modunu dene"),
+                n("jd36d190", "Grok Android uygulamasıyla gelişmiş özelliklere eriş"),
                 n("hf9afab0", "İnterneti ve X'i taramak, bilgileri analiz etmek ve hızlı, aracılı arama ile ayrıntılı, iyi gerekçelendirilmiş yanıtlar sunmak için DeepSearch'ü etkinleştir."),
                 n("ef3b3f04", "Akıl yürütme modelimizi kullanmak için Düşünme'yi etkinleştir. Matematik, bilim ve kodlama için en iyisidir. Ayrıca Grok'tan biraz daha fazla düşünülmesi gereken sorular için \"daha iyi düşünmesini\" isteyebilirsin. "),
                 n("b43636b8", "Grok 3 ile tanış"),
@@ -5840,7 +5840,7 @@
                 n("ab1b3d38", "Not isteği verileri henüz mevcut değil"),
                 n("c43fb933", "X Geliştirici Sözleşmesi ve Politikası"),
                 n("af781666", "İnsanlar ne düşünüyor?"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "Düşüncelerini paylaş"),
                 n("ed88e742", "Konu bağlantısını kopyala"),
                 n("h92fe1be", "Maalesef Topluluk Notları şu anda senin için kullanılabilir değil."),
                 n("f0dc1434", "Topluluk Notları şu anda yalnızca ABD'de kullanılabilir"),
@@ -12032,6 +12032,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(%", " Ücret, Min. ", ")"];
@@ -12680,6 +12686,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " ve "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " ve "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13242,4 +13266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.9752408a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.4b1c84da.js.map

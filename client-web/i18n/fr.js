@@ -1033,7 +1033,7 @@
                 n("b929aa74", "Ressaisissez votre mot de passe X pour enregistrer les modifications de votre compte."),
                 n("d1091f50", "Mot de passe oublié ?"),
                 n("fd23fe4a", "Vos clés d'identification utilisées sur vos différents appareils figurent ici."),
-                n("d9921a6c", "Create a new passkey"),
+                n("d9921a6c", "Créer une clé d'identification"),
                 n("i4855730", "Supprimer la clé d'identification"),
                 n("a6acdc67", function (e) {
                     return "Date d'ajout : " + e.date;
@@ -4153,7 +4153,7 @@
                     return e.stringCount + " new request" + r(e.count, "", "s");
                 }),
                 n("ed93de0c", "Analyse du post en cours"),
-                n("d1d92e40", "More details"),
+                n("d1d92e40", "Plus de détails"),
                 n("a6e89af8", "Conversation ouverte"),
                 n("ica55d24", "Nouveau chat"),
                 n("f794af9a", "Mode Fun"),
@@ -4366,8 +4366,8 @@
                 n("g01599b6", "Réponse 1"),
                 n("e02694e0", "Réponse 2"),
                 n("h6867fcc", "Je préfère cette réponse."),
-                n("acc4496c", "Try Grok Voice mode"),
-                n("jd36d190", "Access advanced features with Grok Android app"),
+                n("acc4496c", "Essayez le mode Voix de Grok"),
+                n("jd36d190", "Accédez à des fonctionnalités avancées avec l'application Android Grok."),
                 n("hf9afab0", "Activez DeepSearch pour parcourir Internet et X, analyser des informations et obtenir des réponses détaillées et bien argumentées avec la recherche agentique rapide."),
                 n("ef3b3f04", "Activez le mode Description pour utiliser notre modèle de raisonnement. C'est le mieux adapté aux maths, aux sciences et au codage. Vous pouvez aussi demander à Grok de réfléchir plus intensément sur toute question susceptible de nécessiter une réflexion plus profonde. "),
                 n("b43636b8", "Lancement de Grok 3"),
@@ -5845,7 +5845,7 @@
                 n("ab1b3d38", "Les données de demandes de notes ne sont pas encore disponibles."),
                 n("c43fb933", "Accord et la Politique Développeur de X"),
                 n("af781666", "Quelles sont les opinions à ce sujet ?"),
-                n("a1f414ee", "Share thoughts"),
+                n("a1f414ee", "Partager mon avis"),
                 n("ed88e742", "Copier le lien de ce sujet"),
                 n("h92fe1be", "Malheureusement, vous ne pouvez pas accéder à la fonctionnalité Notes de la Communauté pour le moment."),
                 n("f0dc1434", "La fonctionnalité Notes de la Communauté n'est pour le moment disponible qu'aux États‑Unis."),
@@ -12027,6 +12027,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(Frais de ", " %, minimum ", ")"];
@@ -12675,6 +12681,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " et "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " et "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13237,4 +13261,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.4a648a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.8fd17b9a.js.map

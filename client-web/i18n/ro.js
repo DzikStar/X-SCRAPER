@@ -4160,7 +4160,7 @@
                     return e.stringCount + " new request" + r(e.count, "s", "", "s");
                 }),
                 t("ed93de0c", "Se analizează postarea"),
-                t("d1d92e40", "More details"),
+                t("d1d92e40", "Mai multe detalii"),
                 t("a6e89af8", "Conversație deschisă"),
                 t("ica55d24", "Chat nou"),
                 t("f794af9a", "Modul distractiv"),
@@ -4373,8 +4373,8 @@
                 t("g01599b6", "Răspunsul 1"),
                 t("e02694e0", "Răspunsul 2"),
                 t("h6867fcc", "Prefer acest răspuns"),
-                t("acc4496c", "Try Grok Voice mode"),
-                t("jd36d190", "Access advanced features with Grok Android app"),
+                t("acc4496c", "Încearcă modul Voce pentru Grok"),
+                t("jd36d190", "Accesează caracteristici avansate cu aplicația Grok pentru Android"),
                 t("hf9afab0", "Activează DeepSearch pentru a căuta pe internet și pe X, analiza informații și oferi răspunsuri detaliate, bine argumentate, cu ajutorul unei căutări rapide și autonome."),
                 t("ef3b3f04", "Activează modul Gândire pentru a utiliza modelul nostru de argumentare. Este ideal pentru matematică, știință și scriere de cod. De asemenea, poți folosi opțiunea „Gândește-te mai bine” pentru orice întrebare care are nevoie de mai multă capacitate intelectuală de la Grok. "),
                 t("b43636b8", "Îți prezentăm Grok 3"),
@@ -5852,7 +5852,7 @@
                 t("ab1b3d38", "Deocamdată, nu sunt disponibile date despre cererea unei note"),
                 t("c43fb933", "Acordul și Politica pentru dezvoltatori X"),
                 t("af781666", "Ce spun oamenii?"),
-                t("a1f414ee", "Share thoughts"),
+                t("a1f414ee", "Spune ce crezi"),
                 t("ed88e742", "Copiază linkul către subiect"),
                 t("h92fe1be", "Din păcate, Notele Comunității nu este disponibil pentru tine momentan."),
                 t("f0dc1434", "Notele Comunității este momentan disponibil doar în SUA"),
@@ -12034,6 +12034,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% taxe, min. ", ")"];
@@ -12682,6 +12688,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " și "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " și "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13247,4 +13271,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.68ac732a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.95972b9a.js.map

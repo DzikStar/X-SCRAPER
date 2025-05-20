@@ -352,7 +352,6 @@
                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -425,6 +424,7 @@
                                         ],
                                         storageKey: null,
                                     },
+                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                     {
                                         alias: null,
                                         args: null,
@@ -449,7 +449,7 @@
                             },
                         ],
                     },
-                    params: { id: "JmlfoU5SL4qSuPgag9jDWA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
+                    params: { id: "gXCw43MaYE3KbHw2RNhLwg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
                 };
             m.hash = "098d419144f289b29c1421123e7cfb25";
             const y = m;
@@ -712,4 +712,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.6fca30ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.9317caba.js.map

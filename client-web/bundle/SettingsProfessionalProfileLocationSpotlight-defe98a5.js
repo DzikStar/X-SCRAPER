@@ -75,9 +75,24 @@
                                     {
                                         kind: "InlineFragment",
                                         selections: [
-                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                             { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "UserRelationshipPerspectives",
+                                                kind: "LinkedField",
+                                                name: "relationship_perspectives",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
                                             (d = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                             { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                             {
@@ -470,7 +485,7 @@
                             },
                         ],
                     },
-                    params: { id: "_Avn3SqZe7KH2PgLIZ0hbg", metadata: {}, name: "useCreateLocationSpotlightMutation", operationKind: "mutation", text: null },
+                    params: { id: "2qpfzXLO2YDjGmaXUPtfsQ", metadata: {}, name: "useCreateLocationSpotlightMutation", operationKind: "mutation", text: null },
                 };
             _.hash = "65370667638a82fc666604c94a7f6c00";
             const S = _;
@@ -544,9 +559,24 @@
                                     {
                                         kind: "InlineFragment",
                                         selections: [
-                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                             { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "UserRelationshipPerspectives",
+                                                kind: "LinkedField",
+                                                name: "relationship_perspectives",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
                                             (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                             { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                             {
@@ -939,7 +969,7 @@
                             },
                         ],
                     },
-                    params: { id: "BUe3wqtSSDbkMoloDseXlg", metadata: {}, name: "useDeleteLocationSpotlightMutation", operationKind: "mutation", text: null },
+                    params: { id: "-2nwocetUqMZCy26VD_AAg", metadata: {}, name: "useDeleteLocationSpotlightMutation", operationKind: "mutation", text: null },
                 };
             K.hash = "0542ca6b115917697b87fa04a58d753f";
             const F = K;
@@ -1156,4 +1186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-defe98a5.e731e16a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-defe98a5.324f0d2a.js.map

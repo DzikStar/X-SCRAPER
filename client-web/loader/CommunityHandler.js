@@ -2,64 +2,133 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.CommunityHandler"],
     {
-        812190: (e, i, n) => {
-            n.d(i, { Z: () => p });
-            var t = n(202784),
-                o = n(544239),
-                r = n(872788),
-                m = n(71620),
-                a = n(668214),
-                c = n(491963),
-                s = n(709318);
-            const l = (e, i) => (i.communityId ? c.ZP.select(e, i.communityId) : void 0),
-                d = (e, i) => !!i.communityId && (0, s.H4)(e, i.communityId),
-                u = ({ community: e, communityId: i, createLocalApiErrorHandler: n, isPinned: m, onActionButtonJoinClick: a, onPress: c, pinTimeline: s, shouldDisplayPin: l, style: d, thumbnailSize: u, unpinTimeline: p, withActionButton: h }) => {
-                    const y = t.useMemo(() => e && { isPinned: m, handlePinOrUnpin: () => (m ? p({ id: i, name: e.name, type: r.FO.COMMUNITY }).catch(n) : s({ id: i, name: e.name, type: r.FO.COMMUNITY }).catch(n)) }, [e, i, n, m, s, p]),
-                        v = l ? y : void 0;
-                    if (e) {
-                        const { is_nsfw: n, media: r, member_count: m, membersFacepileUrls: s, name: l, primary_community_topic: p } = e;
-                        return t.createElement(o.Z, { communityId: i, isNsfw: n, media: r, memberCount: m, membersFacepile: s, name: l, onActionButtonJoinClick: a, onPress: c, style: d, thumbnailSize: u, topic: p?.topic_name, withActionButton: h, withPinAction: v });
+        812190: (n, t, e) => {
+            e.d(t, { Z: () => p });
+            var i = e(202784),
+                o = e(544239),
+                r = e(872788),
+                a = e(71620),
+                c = e(668214),
+                l = e(491963),
+                u = e(709318);
+            const s = (n, t) => (t.communityId ? l.ZP.select(n, t.communityId) : void 0),
+                d = (n, t) => !!t.communityId && (0, u.H4)(n, t.communityId),
+                m = ({ community: n, communityId: t, createLocalApiErrorHandler: e, isPinned: a, onActionButtonJoinClick: c, onPress: l, pinTimeline: u, shouldDisplayPin: s, style: d, thumbnailSize: m, unpinTimeline: p, withActionButton: y }) => {
+                    const f = i.useMemo(() => n && { isPinned: a, handlePinOrUnpin: () => (a ? p({ id: t, name: n.name, type: r.FO.COMMUNITY }).catch(e) : u({ id: t, name: n.name, type: r.FO.COMMUNITY }).catch(e)) }, [n, t, e, a, u, p]),
+                        g = s ? f : void 0;
+                    if (n) {
+                        const { is_nsfw: e, media: r, member_count: a, membersFacepileUrls: u, name: s, primary_community_topic: p } = n;
+                        return i.createElement(o.Z, { communityId: t, isNsfw: e, media: r, memberCount: a, membersFacepile: u, name: s, onActionButtonJoinClick: c, onPress: l, style: d, thumbnailSize: m, topic: p?.topic_name, withActionButton: y, withPinAction: g });
                     }
                     return null;
                 },
-                p = (0, a.Z)()
-                    .propsFromState(() => ({ community: l, isPinned: d }))
-                    .propsFromActions(() => ({ pinTimeline: s.qM, unpinTimeline: s.bK, createLocalApiErrorHandler: (0, m.zr)("TOGGLE_PIN_COMMUNITY") }))(t.memo(u));
+                p = (0, c.Z)()
+                    .propsFromState(() => ({ community: s, isPinned: d }))
+                    .propsFromActions(() => ({ pinTimeline: u.qM, unpinTimeline: u.bK, createLocalApiErrorHandler: (0, a.zr)("TOGGLE_PIN_COMMUNITY") }))(i.memo(m));
         },
-        325800: (e, i, n) => {
-            n.r(i), n.d(i, { default: () => s });
-            var t = n(459643),
-                o = n(351322),
-                r = n(202784),
-                m = n(812190);
-            const a = ({ entry: e, shouldDisplayPin: i }) => {
-                    const n = e.content.id;
-                    return r.createElement(m.Z, { communityId: n, shouldDisplayPin: i });
+        325800: (n, t, e) => {
+            e.r(t), e.d(t, { default: () => u });
+            var i = e(459643),
+                o = e(351322),
+                r = e(202784),
+                a = e(812190);
+            const c = ({ entry: n, shouldDisplayPin: t }) => {
+                    const e = n.content.id;
+                    return r.createElement(a.Z, { communityId: e, shouldDisplayPin: t });
                 },
-                c = r.memo(a),
-                s = (e) => o.iH({ component: c, shouldDisplayBorder: (0, t.Z)(!1), isFocusable: (0, t.Z)(!0) }).getHandler(() => e);
+                l = r.memo(c),
+                u = (n) => o.iH({ component: l, shouldDisplayBorder: (0, i.Z)(!1), isFocusable: (0, i.Z)(!0) }).getHandler(() => n);
         },
-        678773: (e, i, n) => {
-            n.r(i), n.d(i, { default: () => c });
-            var t = n(202784),
-                o = n(890601),
-                r = n(783427),
-                m = n(347101);
-            const a = (e = {}) => {
-                const { direction: i } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [m.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: i });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const c = a;
+        280278: (n, t, e) => {
+            e.d(t, { ZP: () => f });
+            var i = e(202784),
+                o = e(325686),
+                r = e(827515),
+                a = e(461756),
+                c = e(731708),
+                l = e(392237);
+            const u = "up",
+                s = "down",
+                d = (n, t, e) => {
+                    e((e) => {
+                        const i = (0, r.Z)(n) ? (n > (e.count || 0) ? u : s) : u;
+                        return { ...e, count: n, oldText: e.text, pendingCount: null, pendingText: null, text: t, transitionDirection: i };
+                    });
+                },
+                m = {};
+            [u, s].forEach((n) => {
+                const t = "0.3s";
+                m[n] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${n === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${n === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
+            });
+            const p = { position: "absolute" },
+                y = l.default.create({ root: { overflow: "hidden" } }),
+                f = (n) => {
+                    const { children: t, containerStyle: e, count: l, ...s } = n,
+                        [f, g] = i.useState({ animating: !1, count: n.count, pendingCount: null, text: n.children, oldText: null, pendingText: null, transitionDirection: u }),
+                        T = i.useRef(!1);
+                    return (
+                        i.useEffect(
+                            () => (
+                                (T.current = !0),
+                                function () {
+                                    T.current = !1;
+                                }
+                            ),
+                            [],
+                        ),
+                        i.useEffect(() => {
+                            if (T.current)
+                                if (a.Z.reducedMotionEnabled) g((e) => ({ ...e, oldText: null, text: t, pendingText: null, pendingCount: null, count: n.count }));
+                                else if (t !== f.pendingText) {
+                                    t === f.text || ((0, r.Z)(n.count) && f.count === n.count) ? g((n) => ({ ...n, pendingCount: null, pendingText: null })) : (g((e) => ({ ...e, pendingCount: n.count, pendingText: t })), f.animating || d(n.count, t, g));
+                                }
+                        }, [t]),
+                        i.useEffect(() => {
+                            T.current &&
+                                !1 === f.animating &&
+                                (f.oldText
+                                    ? window.requestAnimationFrame(() =>
+                                          window.requestAnimationFrame(() => {
+                                              T.current && g((n) => ({ ...n, animating: !0 }));
+                                          }),
+                                      )
+                                    : f.pendingText && d(f.pendingCount, f.pendingText, g));
+                        }, [f.animating, f.oldText]),
+                        i.useMemo(() => {
+                            const n = m[f.transitionDirection],
+                                t = f.oldText && !a.Z.reducedMotionEnabled,
+                                r = !f.animating && f.oldText && !a.Z.reducedMotionEnabled,
+                                l = { ...p, ...(f.animating ? n.post : n.active) },
+                                u = { ...(r ? n.pre : n.active) };
+                            return i.createElement(
+                                o.Z,
+                                { style: [y.root, e] },
+                                t ? i.createElement("span", { style: l }, i.createElement(c.ZP, s, f.oldText)) : null,
+                                i.createElement(
+                                    "span",
+                                    {
+                                        "data-testid": "app-text-transition-container",
+                                        onTransitionEnd: () =>
+                                            ((n, t) => {
+                                                n && t((n) => ({ ...n, animating: !1, oldText: null }));
+                                            })(T.current, g),
+                                        style: u,
+                                    },
+                                    i.createElement(c.ZP, s, f.text),
+                                ),
+                            );
+                        }, [e, s, f, T, g])
+                    );
+                };
         },
-        730895: (e, i, n) => {
-            var t = n(821176);
-            e.exports = function () {
-                var e = t(this),
-                    i = "";
-                return e.hasIndices && (i += "d"), e.global && (i += "g"), e.ignoreCase && (i += "i"), e.multiline && (i += "m"), e.dotAll && (i += "s"), e.unicode && (i += "u"), e.unicodeSets && (i += "v"), e.sticky && (i += "y"), i;
+        730895: (n, t, e) => {
+            var i = e(821176);
+            n.exports = function () {
+                var n = i(this),
+                    t = "";
+                return n.hasIndices && (t += "d"), n.global && (t += "g"), n.ignoreCase && (t += "i"), n.multiline && (t += "m"), n.dotAll && (t += "s"), n.unicode && (t += "u"), n.unicodeSets && (t += "v"), n.sticky && (t += "y"), t;
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CommunityHandler.79f5985a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CommunityHandler.34cf44ba.js.map

@@ -8,27 +8,24 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.5"),
-                        d.e("icons.6"),
-                        d.e("icons.25"),
-                        d.e("icons.22"),
-                        d.e("icons.9"),
-                        d.e("icons.4"),
-                        d.e("icons.15"),
+                        d.e("icons.10"),
+                        d.e("icons.21"),
+                        d.e("icons.16"),
+                        d.e("icons.1"),
+                        d.e("icons.19"),
+                        d.e("icons.0"),
+                        d.e("icons.23"),
+                        d.e("icons.8"),
                         d.e("icons.2"),
-                        d.e("icons.20"),
-                        d.e("icons.7"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.0"),
-                        d.e("icons.11"),
-                        d.e("icons.27"),
-                        d.e("icons.17"),
-                        d.e("icons.12"),
+                        d.e("icons.7"),
+                        d.e("icons.9"),
+                        d.e("icons.15"),
+                        d.e("icons.24"),
                         d.e("icons.3"),
                         d.e("icons.13"),
-                        d.e("icons.24"),
-                        d.e("icons.26"),
+                        d.e("icons.29"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -59,7 +56,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -95,9 +92,9 @@
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                        d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        d.e("loader.WideLayout-752e56d7"),
-                        d.e("loader.WideLayout-2e365fe7"),
+                        d.e("loader.WideLayout-6107ac1a"),
                         d.e("loader.WideLayout-9f4db315"),
                     ]).then(d.bind(d, 616753)),
             });
@@ -358,8 +355,8 @@
                         i = n && o ? n / o : 1,
                         s = i > 1,
                         l = a ? 400 : u,
-                        b = s && n <= l ? c(r, l) : r,
-                        p = !s && o <= l ? c(d, l) : d;
+                        b = s && (!n || n <= l) ? c(r, l) : r,
+                        p = s || (o && !(o <= l)) ? d : c(d, l);
                     return t.Z.getContainDimensions({ width: b, height: p }, i);
                 },
                 m = (e) => {
@@ -378,7 +375,7 @@
                 g = (e, a) => {
                     switch (a.type) {
                         case "zoom":
-                            return { ...e, isZoomed: a.payload?.isZoomed, showControls: !a.payload?.isZoomed };
+                            return { ...e, isZoomed: a.payload.isZoomed, showControls: !a.payload.isZoomed };
                         case "tap":
                             return { ...e, showControls: !e.showControls };
                         default:
@@ -419,4 +416,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.6ac1351a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.773cb5ca.js.map

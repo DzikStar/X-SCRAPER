@@ -4149,7 +4149,7 @@
                     return e.stringCount + " new request" + i(e.count, "", "s");
                 }),
                 t("ed93de0c", "Analyserer post"),
-                t("d1d92e40", "More details"),
+                t("d1d92e40", "Flere oplysninger"),
                 t("a6e89af8", "Åben samtale"),
                 t("ica55d24", "Ny chat"),
                 t("f794af9a", "Tilstanden Sjov"),
@@ -4362,8 +4362,8 @@
                 t("g01599b6", "Svar 1"),
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrækker dette svar"),
-                t("acc4496c", "Try Grok Voice mode"),
-                t("jd36d190", "Access advanced features with Grok Android app"),
+                t("acc4496c", "Prøv Grok Voice-tilstand"),
+                t("jd36d190", "Få adgang til avancerede funktioner med Grok Android-app"),
                 t("hf9afab0", "Gør det muligt for DeepSearch at scanne internettet og X, analysere oplysninger og levere detaljerede, velbegrundede svar med hurtig, agentbaseret søgning."),
                 t("ef3b3f04", 'Gør det muligt for Tænk at bruge vores ræsonneringsmodel. Det er bedst til matematik, videnskab og kodning. Du kan også bede Grok om at "tænke dybere" i forbindelse med spørgsmål, der kræver lidt mere hjernekraft. '),
                 t("b43636b8", "Vi introducerer Grok 3"),
@@ -5841,7 +5841,7 @@
                 t("ab1b3d38", "Data om notatanmodning er ikke tilgængelige endnu"),
                 t("c43fb933", "X's udvikleraftale og -politik"),
                 t("af781666", "Hvad synes folk?"),
-                t("a1f414ee", "Share thoughts"),
+                t("a1f414ee", "Del tanker"),
                 t("ed88e742", "Kopiér link til emne"),
                 t("h92fe1be", "Notater i Fællesskaber er desværre ikke tilgængelig for dig i øjeblikket."),
                 t("f0dc1434", "Fællesskabsnoter er i øjeblikket kun tilgængeligt i USA."),
@@ -12023,6 +12023,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% Gebyr, Min. ", ")"];
@@ -12671,6 +12677,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " og "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " og "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13236,4 +13260,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.e12be91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.e4ef9a1a.js.map

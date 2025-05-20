@@ -4158,7 +4158,7 @@
                     return e.stringCount + " new request" + n(e.count, "s", "s", "", "s");
                 }),
                 i("ed93de0c", "Analizowanie wpisu"),
-                i("d1d92e40", "More details"),
+                i("d1d92e40", "Więcej szczegółów"),
                 i("a6e89af8", "Publiczna rozmowa"),
                 i("ica55d24", "Nowy czat"),
                 i("f794af9a", "Tryb zabawny"),
@@ -4371,8 +4371,8 @@
                 i("g01599b6", "Odpowiedź 2"),
                 i("e02694e0", "Odpowiedź 1"),
                 i("h6867fcc", "Wolę tę odpowiedź"),
-                i("acc4496c", "Try Grok Voice mode"),
-                i("jd36d190", "Access advanced features with Grok Android app"),
+                i("acc4496c", "Wypróbuj tryb głosowy Groka"),
+                i("jd36d190", "Korzystaj z zaawansowanych funkcji dzięki aplikacji Grok dla systemu Android"),
                 i("hf9afab0", "Włącz tryb DeepSearch, aby skanować Internet i serwis X, analizować informacje oraz dostarczać szczegółowe, dobrze uzasadnione odpowiedzi dzięki błyskawicznie działającej, opartej na agentach funkcji wyszukiwania."),
                 i("ef3b3f04", "Włącz tryb Myśl, aby używać naszego modelu rozumowania. Sprawdza się on najlepiej w przypadku matematyki, nauki i programowania. Możesz także kazać Grokowi „myśleć intensywniej” nad dowolnym pytaniem wymagającym użycia większej liczby komórek mózgowych. "),
                 i("b43636b8", "Wprowadzamy Groka 3"),
@@ -5850,7 +5850,7 @@
                 i("ab1b3d38", "Dane dotyczące żądania uwagi nie są jeszcze dostępne"),
                 i("c43fb933", "Umowę dla programistów i Zasady współpracy z programistami w serwisie X"),
                 i("af781666", "Co myślą ludzie?"),
-                i("a1f414ee", "Share thoughts"),
+                i("a1f414ee", "Napisz, co myślisz"),
                 i("ed88e742", "Kopiuj link do tematu"),
                 i("h92fe1be", "Niestety program Uwagi Społeczności nie jest dla Ciebie w tej chwili dostępny."),
                 i("f0dc1434", "Program Uwagi Społeczności jest obecnie dostępny tylko w Stanach Zjednoczonych"),
@@ -12032,6 +12032,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(opłata: ", "%, min: ", ")"];
@@ -12680,6 +12686,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " i "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", ", "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " i "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13247,4 +13271,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.ef60d88a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.7dd8902a.js.map

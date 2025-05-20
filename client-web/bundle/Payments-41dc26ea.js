@@ -99,14 +99,14 @@
                 k = n(445664),
                 P = n(312771),
                 v = n(696445),
-                w = n(777530),
+                w = n(392046),
                 C = n(226332),
-                T = n(727384),
-                A = n(844685),
+                A = n(727384),
+                T = n(844685),
                 S = n(165822);
             const x = ({ content: e, contentStyle: t, rightControl: n, subtext: r, title: l }) => {
                     const i = (0, u.jh)();
-                    return a.createElement(a.Fragment, null, a.createElement(A.Z, { rightControl: n, style: u.ZP.settingHeader, subtext: r, text: l }), a.createElement(S.Z, { "aria-label": l, containerStyle: i.tile, stackLayoutUpperStyle: t ?? u.ZP.upper, upper: e, withInteractiveStyling: !1 }));
+                    return a.createElement(a.Fragment, null, a.createElement(T.Z, { rightControl: n, style: u.ZP.settingHeader, subtext: r, text: l }), a.createElement(S.Z, { "aria-label": l, containerStyle: i.tile, stackLayoutUpperStyle: t ?? u.ZP.upper, upper: e, withInteractiveStyling: !1 }));
                 },
                 L = a.memo(x);
             var D = n(195816),
@@ -124,7 +124,7 @@
                                         onCompleted: (e, t) => {
                                             t ? a(t) : n();
                                         },
-                                        updater: T.QE,
+                                        updater: A.QE,
                                         onError: a,
                                     });
                                 }),
@@ -143,7 +143,7 @@
                         o = (0, c.hC)("payments_cards_as_payment_method_enabled"),
                         [m, g] = a.useState(null),
                         v = (0, Z.p)(),
-                        [A, S] = F(),
+                        [T, S] = F(),
                         x = l?.includes(b.d.DeletePaymentMethod),
                         D = l?.includes(b.d.CreatePaymentMethod),
                         I = a.useCallback(
@@ -160,19 +160,19 @@
                         ),
                         R = a.useCallback(() => {
                             m &&
-                                A({ paymentMethodId: m })
+                                T({ paymentMethodId: m })
                                     .then(() => {
                                         g(null), v({ text: "You account was successfully removed!" });
                                     })
                                     .catch(() => {
                                         v({ text: "Something went wrong. Please try again later." });
                                     });
-                        }, [v, m, A]),
+                        }, [v, m, T]),
                         z = a.createElement(
                             d.Z,
                             { style: u.ZP.setting },
                             t?.map((e) => {
-                                const t = (0, T.Ou)(e),
+                                const t = (0, A.Ou)(e),
                                     n = t?.id;
                                 return t && n ? a.createElement(w.Z, { account: t, handleRemove: x ? M(n) : void 0, key: n, onClick: e?.core?.details?.status === _.D.LoginRequired && D ? I(n) : void 0 }) : null;
                             }),
@@ -234,7 +234,7 @@
                                         r = a?.amount?.local_micro;
                                     "-1" === r && (e.isUnlimited = !0);
                                     const l = parseFloat(r),
-                                        i = l >= 0 ? (0, T.p2)({ amount: l, currency: a?.amount?.currency }) : null;
+                                        i = l >= 0 ? (0, A.p2)({ amount: l, currency: a?.amount?.currency }) : null;
                                     return i && e.limits.push(t.amountLabel({ formattedAmount: i })), e;
                                 },
                                 { limits: [], isUnlimited: !1 },
@@ -265,6 +265,7 @@
                 return a.createElement(g.H, { errorConfig: G }, a.createElement(X, e));
             }
             const j = (0, v.R)(a.memo(Q), { permissionsAllOf: [b.d.GetAccounts], permissionsAnyOf: null });
+            n(901951);
             var J = n(779610),
                 ee = n(457311),
                 te = n(463963),
@@ -272,9 +273,9 @@
             const ae = (e) => {
                     const { documents: t } = (0, ne.Z)({ type: te.E.DocumentTypeMonthlyStatement }),
                         n = t?.reduce((e, t) => {
-                            const n = `${(0, T.Qu)(t.start_date).getFullYear()}`,
+                            const n = `${(0, A.Qu)(t.start_date).getFullYear()}`,
                                 a = e[n];
-                            return a ? a.push(t) : (e[n] = [t]), e;
+                            return a ? a.unshift(t) : (e[n] = [t]), e;
                         }, {});
                     return a.createElement(
                         a.Fragment,
@@ -286,7 +287,7 @@
                                       { style: u.ZP.setting },
                                       t.map(({ start_date: e, url: t }) => {
                                           if (!t) return;
-                                          const n = (0, T.Qu)(e),
+                                          const n = (0, A.Qu)(e),
                                               r = n.getMonth();
                                           return a.createElement(J.Z, { key: r, label: n.toLocaleString("default", { month: "long" }), link: { external: !0, pathname: t, openInSameFrame: !1 } });
                                       }),
@@ -350,7 +351,7 @@
                         { featureSwitches: n } = (0, q.QZ)(),
                         { handlePreferencesChange: r, preferences: l } = (0, he.Z)(),
                         i = t?.includes(b.d.UpdatePin),
-                        o = !(0, T.aY)(t),
+                        o = !(0, A.aY)(t),
                         c = n.isTrue("payments_pin_enabled"),
                         m = n.isTrue("payments_account_details_enabled"),
                         p = n.isTrue("payments_card_spend_enabled"),
@@ -451,8 +452,8 @@
                 v = n(972758),
                 w = n(749286),
                 C = n(467734),
-                T = n(464978),
-                A = n(743080),
+                A = n(464978),
+                T = n(743080),
                 S = n(727384);
             const x = { page: "money", section: "transaction-details" },
                 L = [y.uv, y.r0, y.IN, y.HM, y.Jv],
@@ -460,8 +461,8 @@
                 I = (e) => {
                     const { history: t } = e,
                         n = (0, l.useParams)().transactionId,
-                        p = (0, A.jh)(),
-                        { get_transaction_by_id: I } = (0, T.Z)(n || ""),
+                        p = (0, T.jh)(),
+                        { get_transaction_by_id: I } = (0, A.Z)(n || ""),
                         { __id: M, amount_local_micro: R, availability_date: F, base_amount_micro: O, challenge_id: H, created_at: B, currency: z, description: U, details: V, id: Y, product_code: N, reason_code: q, total_fees_micro: $, transaction_status: W, transaction_type: X } = I ?? {},
                         K = V?.receiver_results?.result,
                         G = V?.sender_results?.result,
@@ -470,8 +471,8 @@
                         J = V?.reference_transaction_id,
                         ee = (0, C.Z)({ senderId: G?.rest_id }),
                         te = (0, S.p6)(F),
-                        ne = (0, A.JU)(),
-                        ae = $ && "0" !== $ && R !== O,
+                        ne = (0, T.JU)(),
+                        ae = (0, S.y4)({ feeAmount: $, totalAmount: R, baseAmount: O }),
                         re = N === m.x.Interest,
                         le = re && X === u.x.Deposit,
                         ie = re && X === u.x.Transfer,
@@ -495,30 +496,30 @@
                         ve = (0, S.zK)({ transactionType: X, productCode: N, merchantDetails: j, amountType: he.amountType }),
                         we = ve && ve.location && (0, S.T7)(ve.location),
                         Ce = Pe || de,
-                        Te = (0, S.pQ)({ productCode: N, transactionType: X, account: pe }),
-                        Ae = a.useMemo(() => (n ? a.createElement(_.Z, { reportedHandle: ye, transactionId: n }) : null), [n, ye]),
+                        Ae = (0, S.pQ)({ productCode: N, transactionType: X, account: pe }),
+                        Te = a.useMemo(() => (n ? a.createElement(_.Z, { reportedHandle: ye, transactionId: n }) : null), [n, ye]),
                         Se = (0, S.XT)({ status: W, transactionType: X, isViewerSender: ee }) || ke,
                         xe = a.useCallback(() => {
                             L.some((e) => t.location.state?.previousPath?.startsWith(e)) ? t.push(y.gp) : t.goBack();
                         }, [t]),
-                        Le = Se ? a.createElement(r.Z, { style: p.footer }, Y ? a.createElement(r.Z, { style: A.YP.actions }, a.createElement(g.Z, { amount: R, challengeId: H, currency: z, isViewerSender: ee, receiverScreenName: fe, recordId: M, senderScreenName: Ee, status: W, transactionId: Y, transactionType: X })) : null, ke ? a.createElement(i.ZP, { link: y.gp, size: ne, style: A.ZP.button, type: "primaryFilled" }, "View balance") : null) : void 0;
+                        Le = Se ? a.createElement(r.Z, { style: p.footer }, Y ? a.createElement(r.Z, { style: T.YP.actions }, a.createElement(g.Z, { amount: R, challengeId: H, currency: z, isViewerSender: ee, receiverScreenName: fe, recordId: M, senderScreenName: Ee, status: W, transactionId: Y, transactionType: X })) : null, ke ? a.createElement(i.ZP, { link: y.gp, size: ne, style: T.ZP.button, type: "primaryFilled" }, "View balance") : null) : void 0;
                     return a.createElement(
                         h.nO,
                         { namespace: x },
                         a.createElement(
                             d.Z,
-                            { bottomBar: Le, history: t, onBackClick: xe, rightControl: Ae, withoutBottomBarMobile: !0 },
+                            { bottomBar: Le, history: t, onBackClick: xe, rightControl: Te, withoutBottomBarMobile: !0 },
                             a.createElement(
                                 r.Z,
                                 { style: p.container },
                                 a.createElement(
                                     r.Z,
-                                    { style: A.YP.content },
-                                    Te ? a.createElement(r.Z, { style: A.YP.gap }, a.createElement(f.KR, { size: "xJumbo", type: Te.iconType, uri: Te.uri }), a.createElement(v.Z, { size: "title4", title: Te.title })) : me ? a.createElement(w.Z, { avatarWithLink: !0, user: me, usernameWithLink: !0 }) : ve ? a.createElement(r.Z, { style: A.YP.gap }, a.createElement(f.G7, { size: "xJumbo", type: ve.type, uri: ve.logo }), a.createElement(b.Z, { name: ve.name, size: "title4" })) : null,
+                                    { style: T.YP.content },
+                                    Ae ? a.createElement(r.Z, { style: T.YP.gap }, a.createElement(f.KR, { size: "xJumbo", type: Ae.iconType, uri: Ae.uri }), a.createElement(v.Z, { size: "title4", title: Ae.title })) : me ? a.createElement(w.Z, { avatarWithLink: !0, user: me, usernameWithLink: !0 }) : ve ? a.createElement(r.Z, { style: T.YP.gap }, a.createElement(f.G7, { size: "xJumbo", type: ve.type, uri: ve.logo }), a.createElement(b.Z, { name: ve.name, size: "title4" })) : null,
                                     a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, he.createdAt),
-                                    a.createElement(r.Z, { style: [A.YP.gap, A.YP.marginTop] }, R ? a.createElement(E.Z, { amount: R, currency: z, hasCompleted: Ze, type: he.amountType }) : null, se ? (he.description ? a.createElement(k.Z, { color: "gray700", note: he.description }) : null) : a.createElement(o.ZP, { color: "gray700" }, ae ? "Total" : D)),
+                                    a.createElement(r.Z, { style: [T.YP.gap, T.YP.marginTop] }, R ? a.createElement(E.Z, { amount: R, currency: z, hasCompleted: Ze, type: he.amountType }) : null, se ? (he.description ? a.createElement(k.Z, { color: "gray700", note: he.description }) : null) : a.createElement(o.ZP, { color: "gray700" }, ae ? "Total" : D)),
                                     a.createElement(c.Z, { spacing: "space12" }),
-                                    a.createElement(r.Z, { style: A.ZP.rowSpaceBetween }, a.createElement(Z.Z, { description: he.status, title: "Status" }), te ? a.createElement(a.Fragment, null, a.createElement(s.default, { style: A.YP.arrow }), a.createElement(Z.Z, { description: te, title: "Funds available on" })) : null),
+                                    a.createElement(r.Z, { style: T.ZP.rowSpaceBetween }, a.createElement(Z.Z, { description: he.status, title: "Status" }), te ? a.createElement(a.Fragment, null, a.createElement(s.default, { style: T.YP.arrow }), a.createElement(Z.Z, { description: te, title: "Funds available on" })) : null),
                                     ae && $ && "0" !== $ && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: $, currency: z, size: "body", weight: "normal" }), title: "Fee" }),
                                     ae && O && "0" !== O && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: O, currency: z, size: "body", weight: "normal" }), title: D }),
                                     be && a.createElement(Z.Z, { description: a.createElement(P.Z, { account: be, testId: "source" }), title: "Source" }),
@@ -543,7 +544,7 @@
             var a = n(807896),
                 r = n(202784),
                 l = n(43429),
-                i = n(164317);
+                i = n(554337);
             const o = (e) => r.createElement(i.Z, (0, a.Z)({}, e, { transferDirection: l.Rz.debit })),
                 c = r.memo(o);
         },
@@ -575,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.4573b7fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.aeb6ba2a.js.map

@@ -385,10 +385,10 @@
                     if (e.allow_download_status?.allow_download) return e.video_info.variants.reduce((e, t) => (t.bitrate && "video/mp4" === t.content_type && (!e || (e.bitrate && e.bitrate < t.bitrate)) ? t : e), void 0)?.url;
                 },
                 b = {
-                    extractVideoProps: (e, t, r, n, i = !1, o = !1) => {
-                        const { duration_millis: a, variants: d } = t.video_info || {};
-                        let c = { "aria-label": "string" == typeof t.ext_alt_text ? t.ext_alt_text : h, additionalMediaInfo: t.additional_media_info, aspectRatio: l.Z.getAspectRatio(t.video_info, 1, o), backgroundColor: s.Z.getBackgroundColor(t), cta: g(t), durationMs: a, media_key: t.media_key, poster: s.Z.getOriginalImage(t), shouldShowAltLabel: !!t.ext_alt_text && i, source: { eventId: r, contentId: t.id_str, variants: d, videoId: e, downloadLink: C(t) }, videoType: t.type, viewCount: w(t), timecode: t.media_results?.result?.watch_info?.last_watched_seconds?.toString() };
-                        return n && (c = { ...c, forwardPivotInfo: n }), c;
+                    extractVideoProps: (e, t, r, n, i = !1) => {
+                        const { duration_millis: o, variants: a } = t.video_info || {},
+                            d = { "aria-label": "string" == typeof t.ext_alt_text ? t.ext_alt_text : h, additionalMediaInfo: t.additional_media_info, aspectRatio: l.Z.getAspectRatio(t.video_info, 1), backgroundColor: s.Z.getBackgroundColor(t), cta: g(t), durationMs: o, media_key: t.media_key, poster: s.Z.getOriginalImage(t), shouldShowAltLabel: !!t.ext_alt_text && i, source: { eventId: r, contentId: t.id_str, variants: a, videoId: e, downloadLink: C(t) }, videoType: t.type, viewCount: w(t), timecode: t.media_results?.result?.watch_info?.last_watched_seconds?.toString() };
+                        return n && (d.forwardPivotInfo = n), d;
                     },
                     getSourceTweetId: (e) => {
                         if (_(e)) return e.source_status_id_str;
@@ -709,4 +709,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1.2e3e327a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1.77a1527a.js.map

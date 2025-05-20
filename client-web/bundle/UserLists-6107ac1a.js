@@ -97,7 +97,6 @@
                                                                         plural: !1,
                                                                         selections: [
                                                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                         ],
@@ -105,6 +104,7 @@
                                                                     },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -208,7 +208,7 @@
                             },
                         ],
                     },
-                    params: { id: "tE8rpmnkJBljWBOGnBxRkg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonAddMutation", operationKind: "mutation", text: null },
+                    params: { id: "iY_EKTo1wh7OH1VHPLrgXQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonAddMutation", operationKind: "mutation", text: null },
                 };
             p.hash = "6c4f11ae4896cd3f33370bf4111636f1";
             const y = p;
@@ -314,7 +314,6 @@
                                                                         plural: !1,
                                                                         selections: [
                                                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                         ],
@@ -322,6 +321,7 @@
                                                                     },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -442,7 +442,7 @@
                             },
                         ],
                     },
-                    params: { id: "3YYgdbjBMbqpV2wc-gV5qg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonRemoveMutation", operationKind: "mutation", text: null },
+                    params: { id: "-DCZWmJjLOS-cvlogJ11VA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonRemoveMutation", operationKind: "mutation", text: null },
                 };
             y.hash = "3fbf808c99dc745e905081c08b7f920a";
             const _ = y;
@@ -602,7 +602,6 @@
                                                                         plural: !1,
                                                                         selections: [
                                                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                         ],
@@ -610,6 +609,7 @@
                                                                     },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -712,7 +712,7 @@
                             },
                         ],
                     },
-                    params: { id: "ZN52HeutQiFxlv4zWF7__Q", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["trusted_friends_list_by_rest_id", "members_slice", "slice_info"] }, name: "TrustedFriendsMembersQuery", operationKind: "query", text: null },
+                    params: { id: "lrFAT4O9lsfKAcnkpFiWdA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["trusted_friends_list_by_rest_id", "members_slice", "slice_info"] }, name: "TrustedFriendsMembersQuery", operationKind: "query", text: null },
                 };
             c.hash = "56ee58fcb957d2c4c4174f3a95525972";
             const m = c;
@@ -834,7 +834,6 @@
                                                                         plural: !1,
                                                                         selections: [
                                                                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                         ],
@@ -842,6 +841,7 @@
                                                                     },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -943,7 +943,7 @@
                             },
                         ],
                     },
-                    params: { id: "6MVnciext4lfMy0vym2h5Q", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["trusted_friends_list_by_rest_id", "recommended_members_slice", "slice_info"] }, name: "TrustedFriendsRecommendedQuery", operationKind: "query", text: null },
+                    params: { id: "thTE7trFtZNtCwkWCaGTIw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["trusted_friends_list_by_rest_id", "recommended_members_slice", "slice_info"] }, name: "TrustedFriendsRecommendedQuery", operationKind: "query", text: null },
                 };
             o.hash = "cc8ff5d87db97413126974d8e5b847f9";
             const c = o;
@@ -967,13 +967,13 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
                         storageKey: null,
                     },
                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -1017,7 +1017,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "fb44c001c4ee630e726b83f413eef14a",
+                hash: "985b4977b0bca8a77c3af03b41dd50a8",
             };
             const i = a;
         },
@@ -1038,10 +1038,10 @@
                 y,
                 _,
                 k,
-                b,
-                F = n(897455),
+                F,
+                b = n(897455),
                 f =
-                    ((b = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                    ((F = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                     {
                         fragment: {
                             argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (r = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (s = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (t = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (d = { defaultValue: null, kind: "LocalArgument", name: "userId" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (g = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (p = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
@@ -1112,8 +1112,8 @@
                             abstractKey: null,
                         },
                         kind: "Request",
-                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: y, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [_, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: F.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, b], storageKey: null }, b], type: "User", abstractKey: null }], storageKey: null }, b], storageKey: null }] },
-                        params: { id: "Dot96znETCBMlGrPamtnSQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "combinedListsPageTimelineQuery", operationKind: "query", text: null },
+                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: y, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [_, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: b.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, F], storageKey: null }, F], type: "User", abstractKey: null }], storageKey: null }, F], storageKey: null }] },
+                        params: { id: "zOsTrA8mLC3_-8HoKWWVmg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "combinedListsPageTimelineQuery", operationKind: "query", text: null },
                     });
             f.hash = "48ea11d8565f9095001c26f5e505d825";
             const K = f;
@@ -1223,13 +1223,13 @@
                 d = n(952428),
                 u = n(392237);
             const o = (e) => {
-                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: _, renderRightContent: k, role: b = "tab", styleOverride: F, testID: f = "pivot", thumbnail: K, thumbnailSize: h, withoutArrow: T = !1 } = e,
+                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: _, renderRightContent: k, role: F = "tab", styleOverride: b, testID: f = "pivot", thumbnail: K, thumbnailSize: h, withoutArrow: T = !1 } = e,
                         v = [c.thumbnailContainer, "medium" === h && c.thumbnailContainerMedium],
                         L = "string" == typeof g ? a.createElement(t.ZP, null, g) : g,
                         S = "object" == typeof p && p.external && !p.openInSameFrame,
                         w = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${f}-description` }, n) : n) : null,
                         I = a.useMemo(() => ("space0" === _ ? { paddingHorizontal: 0 } : { paddingHorizontal: _ ? u.default.theme.spaces[_] : u.default.theme.componentDimensions.gutterHorizontal }), [_]);
-                    return a.createElement(d.Z, { "aria-selected": "tab" === b ? m : null, disabled: o, link: o ? void 0 : p, onPress: y, role: b, style: [c.root, I, o && c.disabled, F], testID: f, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, K ? a.createElement(i.Z, { style: v }, K) : null, a.createElement(i.Z, { style: c.content }, L, w), k ? k() : null, (!p && !y) || o || T ? null : S ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
+                    return a.createElement(d.Z, { "aria-selected": "tab" === F ? m : null, disabled: o, link: o ? void 0 : p, onPress: y, role: F, style: [c.root, I, o && c.disabled, b], testID: f, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, K ? a.createElement(i.Z, { style: v }, K) : null, a.createElement(i.Z, { style: c.content }, L, w), k ? k() : null, (!p && !y) || o || T ? null : S ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1358,4 +1358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.b26c4bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.84e9e0ca.js.map

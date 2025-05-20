@@ -7,8 +7,8 @@
             n(872722);
             var o = n(202784),
                 s = n(565058),
-                r = n(400752),
-                i = n(692822),
+                i = n(400752),
+                r = n(692822),
                 a = n(610214),
                 c = n(142202);
             const u = 0.1,
@@ -33,13 +33,13 @@
             }
             function v() {
                 const e = a.O5(),
-                    t = (0, r.oR)();
+                    t = (0, i.oR)();
                 return (
                     o.useEffect(() => {
                         if (e !== a.HP.On) return;
                         const n = c.Z.subscribe(
                                 t,
-                                i.gK.ChatCaption,
+                                r.gK.ChatCaption,
                                 (function (e) {
                                     return (t) => (
                                         (function (e, t) {
@@ -62,8 +62,8 @@
                                                                         for (let e = 0; e <= t.length; e += 1) n[e][0] = e;
                                                                         for (let o = 1; o <= t.length; o += 1)
                                                                             for (let s = 1; s <= e.length; s += 1) {
-                                                                                const r = e[s - 1] === t[o - 1] ? 0 : 1;
-                                                                                n[o][s] = Math.min(n[o][s - 1] + 1, n[o - 1][s] + 1, n[o - 1][s - 1] + r);
+                                                                                const i = e[s - 1] === t[o - 1] ? 0 : 1;
+                                                                                n[o][s] = Math.min(n[o][s - 1] + 1, n[o - 1][s] + 1, n[o - 1][s - 1] + i);
                                                                             }
                                                                         return n[t.length][e.length];
                                                                     })(n, o)) /
@@ -80,7 +80,7 @@
                             ),
                             o = c.Z.subscribe(
                                 t,
-                                i.gK.ServerAudioTranscription,
+                                r.gK.ServerAudioTranscription,
                                 (function (e) {
                                     return (t) => (
                                         (function (e, t) {
@@ -95,18 +95,18 @@
                                                               const t = e.get(p)[n];
                                                               e.set(p, (e) => e.toSpliced(n, 1)), (s = t.sequenceId);
                                                           } else e.set(m, (e) => e + 1), (s = e.get(m));
-                                                          const r = A(t, { final: !0, sequenceId: s });
-                                                          e.set(f, (e) => [...e, r]), T(e, o, t.timestamp);
+                                                          const i = A(t, { final: !0, sequenceId: s });
+                                                          e.set(f, (e) => [...e, i]), T(e, o, t.timestamp);
                                                       })(e, t, o)
                                                     : -1 === o
                                                       ? S(e, t)
                                                       : !(function (e, t, n) {
                                                               let o = !1;
                                                               const s = e.get(p)[n].text,
-                                                                  r = t.body.body,
-                                                                  i = t.body.final;
-                                                              if (!i && r.length > 0 && s.length > 0) {
-                                                                  o = r.length / s.length < d;
+                                                                  i = t.body.body,
+                                                                  r = t.body.final;
+                                                              if (!r && i.length > 0 && s.length > 0) {
+                                                                  o = i.length / s.length < d;
                                                               }
                                                               return o;
                                                           })(e, t, o)
@@ -122,11 +122,11 @@
                             n(), o();
                         };
                     }, [e, t]),
-                    (0, r.Dv)(y)
+                    (0, i.Dv)(y)
                 );
             }
             function _() {
-                return (0, r.Dv)(g);
+                return (0, i.Dv)(g);
             }
             function S(e, t) {
                 const n = t.data.sender.twitter_id;
@@ -137,9 +137,9 @@
             function w(e, t, n) {
                 const o = e.get(p)[n];
                 e.set(p, (e) => e.toSpliced(n, 1));
-                const { sequenceId: s, timestamp: r } = o,
-                    i = A(t, { sequenceId: s, timestamp: r });
-                return e.set(p, (e) => e.concat(i)), i;
+                const { sequenceId: s, timestamp: i } = o,
+                    r = A(t, { sequenceId: s, timestamp: i });
+                return e.set(p, (e) => e.concat(r)), r;
             }
             function T(e, t, n) {
                 e.get(p)
@@ -154,8 +154,8 @@
                 const o = t.data.sender.twitter_id,
                     s = e.get(p)[n];
                 e.set(p, (e) => e.toSpliced(n, 1)), (s.final = !0), e.set(f, (e) => e.concat(s));
-                const r = S(e, t);
-                return T(e, o, t.timestamp), r;
+                const i = S(e, t);
+                return T(e, o, t.timestamp), i;
             }
             function C(e, t) {
                 return e.get(p).findIndex((e) => e.speaker.id_str === t);
@@ -171,7 +171,7 @@
                     body: { body: t },
                     type: n,
                 } = e;
-                return i.gK.Chat === n && t.startsWith("[cc]");
+                return r.gK.Chat === n && t.startsWith("[cc]");
             }
             function A(e, t) {
                 const {
@@ -180,21 +180,21 @@
                         sender: o,
                         sender: { twitter_id: s },
                     },
-                    timestamp: r,
+                    timestamp: i,
                 } = e;
                 let {
-                    body: { body: i },
+                    body: { body: r },
                 } = e;
                 const { sequenceId: a } = t;
-                return (i = i.replace(/^\[cc\]\s?/, "")), { final: n, sequenceId: a || r, speaker: { id_str: s, name: o.display_name, profile_image_url_https: o.profile_image_url, screen_name: o.username }, text: i, timestamp: r, ...t };
+                return (r = r.replace(/^\[cc\]\s?/, "")), { final: n, sequenceId: a || i, speaker: { id_str: s, name: o.display_name, profile_image_url_https: o.profile_image_url, screen_name: o.username }, text: r, timestamp: i, ...t };
             }
         },
         545937: (e, t, n) => {
             n.d(t, { $T: () => p, O7: () => m, gJ: () => d, h4: () => f, mc: () => l });
             var o = n(666536),
                 s = n(692822),
-                r = n(30242),
-                i = n(142202),
+                i = n(30242),
+                r = n(142202),
                 a = n(988625),
                 c = n(113788);
             let u = [];
@@ -202,11 +202,11 @@
                 u = [];
             }
             function d(e, t) {
-                return u.filter((n) => n.type === s.gK.ServerAudioTranscription && n.body.final && n.body.ntpTimeInSeconds >= e && n.body.ntpTimeInSeconds <= t && Boolean(n.body.body)).map((e) => r.ZY(e, {}));
+                return u.filter((n) => n.type === s.gK.ServerAudioTranscription && n.body.final && n.body.ntpTimeInSeconds >= e && n.body.ntpTimeInSeconds <= t && Boolean(n.body.body)).map((e) => i.ZY(e, {}));
             }
             function p(...e) {
                 e.forEach((e) => {
-                    const t = (0, i.y)(u, (t) => e.ntpTimeInSeconds - t.ntpTimeInSeconds);
+                    const t = (0, r.y)(u, (t) => e.ntpTimeInSeconds - t.ntpTimeInSeconds);
                     u.splice(t + 1, 0, e);
                 });
             }
@@ -219,9 +219,9 @@
                 h((0, a.c)(o), n);
             }, 100);
             function h(e, t) {
-                i.Z.reset(t), r.mc(t), c.mc(t);
-                const n = (0, i.y)(u, (t) => e - t.ntpTimeInSeconds);
-                u.slice(n).forEach((e) => i.Z.publish(e)), i.Z.start(t);
+                r.Z.reset(t), i.mc(t), c.mc(t);
+                const n = (0, r.y)(u, (t) => e - t.ntpTimeInSeconds);
+                u.slice(n).forEach((e) => r.Z.publish(e)), r.Z.start(t);
             }
         },
         869508: (e, t, n) => {
@@ -229,8 +229,8 @@
             n(571372), n(136728);
             var o = n(58255),
                 s = n(692822),
-                r = n(163889),
-                i = n(610214),
+                i = n(163889),
+                r = n(610214),
                 a = n(30242),
                 c = n(545937),
                 u = n(142202),
@@ -246,7 +246,7 @@
                 d?.disconnect(), (d = null), u.Z.reset(e), a.mc(e);
             }
             function m(e) {
-                return (d && d.socket) || (0, r.ZP)(new Error("Unexpected exception was caught. Verify that chatmanClient and socket are defined.")), d?.socket?.send(e);
+                return (d && d.socket) || (0, i.ZP)(new Error("Unexpected exception was caught. Verify that chatmanClient and socket are defined.")), d?.socket?.send(e);
             }
             class h {
                 constructor(e, t) {
@@ -257,7 +257,7 @@
                             this.authAndJoinRoom(), (this.socketState = s.xr.Connected);
                         }),
                         (this.handleOnError = (e) => {
-                            (0, r.Hj)("WebSocket error", { extra: { event: e } }), clearTimeout(this._timeoutId);
+                            (0, i.Hj)("WebSocket error", { extra: { event: e } }), clearTimeout(this._timeoutId);
                             const t = Date.now(),
                                 n = this._lastErrorTime && t - this._lastErrorTime > 1e3 ? 1e3 : 5e3;
                             (this._lastErrorTime = t),
@@ -280,12 +280,12 @@
                 }
                 connectWithSession(e) {
                     this.session = e;
-                    return i.gt ? this.loadChatHistory() : this.openSocket(), Promise.resolve(this);
+                    return r.gt ? this.loadChatHistory() : this.openSocket(), Promise.resolve(this);
                 }
                 connect() {
                     return o.w.proxsee.accessChat(this.chatToken).then(
                         (e) => ((this.session = e), this.connectWithSession(e)),
-                        (e) => ((0, r.ZP)(e), Promise.reject(e)),
+                        (e) => ((0, i.ZP)(e), Promise.reject(e)),
                     );
                 }
                 disconnect() {
@@ -298,7 +298,7 @@
                         try {
                             (this.socketState = s.xr.Opening), (this.socket = new WebSocket(e)), (this.socket.onopen = this.handleOnOpen), (this.socket.onerror = this.handleOnError), (this.socket.onmessage = this.handleOnMessage);
                         } catch (e) {
-                            (0, r.ZP)(e), (this.socketState = s.xr.Error);
+                            (0, i.ZP)(e), (this.socketState = s.xr.Error);
                         }
                     }
                 }
@@ -315,24 +315,24 @@
                     const { access_token: e, endpoint: t } = this.session || {};
                     if (!e || !t) return Promise.resolve([]);
                     try {
-                        return new Promise((n, r) => {
-                            const i = [];
+                        return new Promise((n, i) => {
+                            const r = [];
                             let a = "";
-                            const u = (r) => {
-                                if (r) {
-                                    const { cursor: e, messages: t } = r;
+                            const u = (i) => {
+                                if (i) {
+                                    const { cursor: e, messages: t } = i;
                                     if (!e) {
                                         const e = this.store.get(l.Z.currentTrackAtom)?.id3NtpTime;
-                                        return c.h4(e, this.store), n(i);
+                                        return c.h4(e, this.store), n(r);
                                     }
-                                    (a = e), this.handleHistoryMessages(t), i.push(...t);
+                                    (a = e), this.handleHistoryMessages(t), r.push(...t);
                                 }
                                 o.w.proxsee.getChatHistory({ access_token: e, host: t, path: s.tJ.CHATMAN_REPLAY, cursor: a }).then(u);
                             };
                             u();
                         });
                     } catch (e) {
-                        (0, r.ZP)(e);
+                        (0, i.ZP)(e);
                     }
                 }
                 handleHistoryMessages(e) {
@@ -351,21 +351,21 @@
             n.d(t, { Z: () => u, y: () => c });
             var o = n(565058),
                 s = n(692822),
-                r = n(536387),
-                i = n(30242),
+                i = n(536387),
+                r = n(30242),
                 a = n(877506);
             function c(e, t) {
                 let n,
                     o = 0,
                     s = e.length - 1,
-                    r = -1,
-                    i = -1;
+                    i = -1,
+                    r = -1;
                 if (o > s) return -1;
                 for (; o <= s; ) {
-                    if (((r = Math.floor((o + s) / 2)), (i = t(e[r])), void 0 !== n && 0 !== i)) return n;
-                    i >= 0 ? (o = r + 1) : (s = r - 1), 0 === i && (n = r);
+                    if (((i = Math.floor((o + s) / 2)), (r = t(e[i])), void 0 !== n && 0 !== r)) return n;
+                    r >= 0 ? (o = i + 1) : (s = i - 1), 0 === r && (n = i);
                 }
-                return void 0 !== n || i > 0 ? r : r - 1;
+                return void 0 !== n || r > 0 ? i : i - 1;
             }
             const u = (function () {
                 let e,
@@ -376,7 +376,7 @@
                     d = 0,
                     p = (e) => !1;
                 const f = {},
-                    m = (0, r.dX)((e) => (0, o.cn)([])),
+                    m = (0, i.dX)((e) => (0, o.cn)([])),
                     h = (0, o.cn)(null, (e, t) => {
                         t(m.reset);
                     });
@@ -415,7 +415,7 @@
                             !(function (e) {
                                 switch (e.type) {
                                     case s.gK.Chat:
-                                        (0, i.xD)(e) ? g(s.gK.ChatCaption, e) : g(s.gK.Chat, e);
+                                        (0, r.xD)(e) ? g(s.gK.ChatCaption, e) : g(s.gK.Chat, e);
                                         break;
                                     case s.gK.ServerAudioTranscription:
                                     case s.gK.Heart:
@@ -467,23 +467,23 @@
             n.d(t, { Z: () => a });
             var o = n(110138),
                 s = n(692822),
-                r = n(869508),
-                i = n(142202);
+                i = n(869508),
+                r = n(142202);
             class a {
                 constructor(e) {
                     this.audioSpaceId = e;
                 }
                 sendReaction(e) {
                     !(function (e) {
-                        (0, r.lW)(e);
+                        (0, i.lW)(e);
                         const t = new s.J(e);
-                        i.Z.publish(t);
+                        r.Z.publish(t);
                     })(this.createReactionPayload(e, this.audioSpaceId));
                 }
                 createReactionPayload(e, t) {
                     const n = { body: e, type: s.gK.Heart, v: 2 },
-                        r = { room: t, body: JSON.stringify(n) };
-                    return JSON.stringify({ body: JSON.stringify(n), kind: s.bI.Chat, sender: o.Z.proxsee.getChatmanSender(), payload: JSON.stringify(r), type: s.gK.Heart });
+                        i = { room: t, body: JSON.stringify(n) };
+                    return JSON.stringify({ body: JSON.stringify(n), kind: s.bI.Chat, sender: o.Z.proxsee.getChatmanSender(), payload: JSON.stringify(i), type: s.gK.Heart });
                 }
             }
         },
@@ -491,8 +491,8 @@
             n.d(t, { Z: () => u });
             var o = n(202784),
                 s = n(565058),
-                r = n(400752),
-                i = n(878931),
+                i = n(400752),
+                r = n(878931),
                 a = n(427266),
                 c = n(988625);
             const u = function (e) {
@@ -511,27 +511,27 @@
                             return o?.tracks[o.currentTrackId];
                         },
                     ),
-                    m = (0, s.cn)(null, (e, n, { guestsState: o, id: s, newChatTokenCallback: r, state: i }) => {
-                        const a = i.tracks[i.currentTrackId]?.chatToken || null;
-                        if (o && !i.isMuted) {
+                    m = (0, s.cn)(null, (e, n, { guestsState: o, id: s, newChatTokenCallback: i, state: r }) => {
+                        const a = r.tracks[r.currentTrackId]?.chatToken || null;
+                        if (o && !r.isMuted) {
                             const e = (function (e) {
                                 let t = "SPEAKERS";
                                 const n = { host: { audioLevel: e.audioLevels.host } },
                                     o = Object.keys(e.guests);
                                 for (let s = 0; s < o.length; s++) {
-                                    const r = o[s],
-                                        i = e.guests[r],
-                                        a = i.UserId,
-                                        c = e.audioLevels.guests[r];
-                                    (n[a] = { guest: i, audioLevel: c }), (t += `-${a}`);
+                                    const i = o[s],
+                                        r = e.guests[i],
+                                        a = r.UserId,
+                                        c = e.audioLevels.guests[i];
+                                    (n[a] = { guest: r, audioLevel: c }), (t += `-${a}`);
                                 }
                                 return { signature: t, lookup: n };
                             })(o);
                             n(d, (t) => ({ ...t, lookup: Object.assign(t.lookup, e.lookup) }));
                         }
-                        n(t, s), n(u, i);
+                        n(t, s), n(u, r);
                         const c = e(p);
-                        n(p, a), a && a !== c && r?.(a);
+                        n(p, a), a && a !== c && i?.(a);
                     }),
                     h = (0, s.cn)((e) => e(d).lookup),
                     y = (0, s.cn)((e) => Boolean(e(u)?.isSeeking)),
@@ -559,8 +559,8 @@
                             t(n);
                         }),
                     useSetPlayerApi: function () {
-                        const e = (0, r.b9)(t),
-                            s = (0, r.b9)(n);
+                        const e = (0, i.b9)(t),
+                            s = (0, i.b9)(n);
                         return o.useCallback(
                             (t, n) => {
                                 e(t), s(n);
@@ -569,7 +569,7 @@
                         );
                     },
                     useAddGuestToLookup: function () {
-                        const e = (0, r.b9)(d);
+                        const e = (0, i.b9)(d);
                         return o.useCallback(
                             (t, n) => {
                                 e((e) => ({ signature: `${e.signature}-${t}`, lookup: { ...e.lookup, [t]: { guest: e[t], audioLevel: n } } }));
@@ -578,7 +578,7 @@
                         );
                     },
                     useSetPlayerState: function () {
-                        const e = (0, r.b9)(m);
+                        const e = (0, i.b9)(m);
                         return o.useCallback(
                             (t, n, o, s) => {
                                 e({ id: t, state: n, guestsState: o, newChatTokenCallback: s });
@@ -587,7 +587,7 @@
                         );
                     },
                     useGetCurrentTime: function () {
-                        const e = (0, r.b9)(f);
+                        const e = (0, i.b9)(f);
                         return o.useCallback(
                             (t) => {
                                 const n = e(null);
@@ -598,44 +598,44 @@
                         );
                     },
                     useGetCurrentTrack: function () {
-                        return (0, r.b9)(f);
+                        return (0, i.b9)(f);
                     },
                     useId: function () {
-                        return (0, r.Dv)(t);
+                        return (0, i.Dv)(t);
                     },
                     useApi: function () {
-                        return (0, r.Dv)(n);
+                        return (0, i.Dv)(n);
                     },
                     useCurrentTrack: function () {
-                        return (0, r.Dv)(f);
+                        return (0, i.Dv)(f);
                     },
                     useIsMuted: function () {
-                        return Boolean((0, r.Dv)(u)?.isMuted);
+                        return Boolean((0, i.Dv)(u)?.isMuted);
                     },
                     useToggleMute: function () {
-                        return (0, r.b9)(_);
+                        return (0, i.b9)(_);
                     },
                     useAudioLevel: function (e) {
                         const t = (e, n) => {
                                 const o = e.isHost ? "host" : e.periscopeUserId;
                                 if (!o) return 0;
                                 const s = n.lookup[o],
-                                    r = s?.audioLevel;
-                                if (e.isHost && !r) {
+                                    i = s?.audioLevel;
+                                if (e.isHost && !i) {
                                     return t({ ...e, isHost: !1 }, n);
                                 }
-                                return "number" == typeof r ? r : 0;
+                                return "number" == typeof i ? i : 0;
                             },
-                            n = (0, r.Dv)(d);
+                            n = (0, i.Dv)(d);
                         return t(e, n);
                     },
                     useGuestsLookup: function () {
-                        return (0, r.Dv)(h);
+                        return (0, i.Dv)(h);
                     },
                     useActiveSpeakersLookup: function () {
-                        const e = (0, r.oR)(),
+                        const e = (0, i.oR)(),
                             t = e.get(h),
-                            n = (0, i.N)();
+                            n = (0, r.N)();
                         return (
                             o.useEffect(() => {
                                 let t = e.get(d);
@@ -651,25 +651,25 @@
                         );
                     },
                     usePlayerApi: function () {
-                        return (0, r.Dv)(n);
+                        return (0, i.Dv)(n);
                     },
                     usePlayerState: function () {
-                        return (0, r.Dv)(u);
+                        return (0, i.Dv)(u);
                     },
                     useIsSeeking: function () {
-                        return (0, r.Dv)(y);
+                        return (0, i.Dv)(y);
                     },
                     usePlaybackRate: function () {
-                        return (0, r.Dv)(g);
+                        return (0, i.Dv)(g);
                     },
                     useIsPlaying: function () {
-                        return (0, r.Dv)(b);
+                        return (0, i.Dv)(b);
                     },
                     useCurrentTrackDurationMs: function () {
-                        return (0, r.Dv)(k);
+                        return (0, i.Dv)(k);
                     },
                     useCurrentTrackTimeMs: function () {
-                        return (0, r.Dv)(v);
+                        return (0, i.Dv)(v);
                     },
                 };
             };
@@ -683,11 +683,11 @@
             n.d(t, { DP: () => b, FN: () => k, Gf: () => g, bz: () => m, mc: () => y });
             var o = n(202784),
                 s = n(565058),
-                r = n(400752),
-                i = n(987809),
+                i = n(400752),
+                r = n(987809),
                 a = n(692822),
                 c = n(142202);
-            const u = (0, i.xu)((e) => (0, s.cn)(void 0 === e ? null : void 0)),
+            const u = (0, r.xu)((e) => (0, s.cn)(void 0 === e ? null : void 0)),
                 l = (0, s.cn)(null, (e, t, { key: n, value: o }) => {
                     e(p).add(n), t(u(n), o);
                 }),
@@ -707,26 +707,26 @@
                 h = (0, s.cn)(null, (e, t, n) => {
                     for (const o of n) {
                         const { reaction: n, sender: s } = v(o),
-                            r = n,
-                            i = e(u(s.participantId));
-                        t(l, { key: n.participantId, value: i ? i.concat(r) : [r] }), t(m, (e) => e.concat(r));
+                            i = n,
+                            r = e(u(s.participantId));
+                        t(l, { key: n.participantId, value: r ? r.concat(i) : [i] }), t(m, (e) => e.concat(i));
                     }
                 });
             function y(e) {
                 e.set(d);
             }
             function g(e) {
-                return (0, r.Dv)(u(e));
+                return (0, i.Dv)(u(e));
             }
             function b() {
-                return (0, r.b9)(f);
+                return (0, i.b9)(f);
             }
             function k() {
                 const e = (function () {
-                        const e = (0, r.b9)(h);
+                        const e = (0, i.b9)(h);
                         return o.useCallback((t) => (e(t), { clearHeapForMessageType: !0 }), [e]);
                     })(),
-                    t = (0, r.oR)();
+                    t = (0, i.oR)();
                 o.useEffect(() => {
                     const n = c.Z.subscribe(t, a.gK.Heart, e);
                     return function () {
@@ -743,16 +743,16 @@
             n.d(t, { K$: () => b, rm: () => w, fU: () => I, lR: () => C, Ud: () => E, cI: () => P, rx: () => T, JD: () => A });
             var o = n(565058),
                 s = n(400752),
-                r = n(202784),
-                i = n(125363),
+                i = n(202784),
+                r = n(125363),
                 a = n(863749),
                 c = n(836255);
             function u() {
-                return (0, i.v9)(a.Ft);
+                return (0, r.v9)(a.Ft);
             }
             function l() {
-                const e = (0, i.I0)();
-                return r.useCallback((t) => e(a.M5(t)), [e]);
+                const e = (0, r.I0)();
+                return i.useCallback((t) => e(a.M5(t)), [e]);
             }
             var d = n(484633),
                 p = n(36809);
@@ -792,28 +792,28 @@
                     t(b, f);
                 });
             function A() {
-                return { activeItem: (0, s.KO)(b), playerApi: (0, s.KO)(k), playerState: (0, s.KO)(v), guestsState: (0, s.KO)(_), audioSpaceCache: (0, s.KO)(S), selectTweet: (0, i.v9)(c.Z.createHydratedSelector), audio: u(), hydrateVoiceTweetTrack: l() };
+                return { activeItem: (0, s.KO)(b), playerApi: (0, s.KO)(k), playerState: (0, s.KO)(v), guestsState: (0, s.KO)(_), audioSpaceCache: (0, s.KO)(S), selectTweet: (0, r.v9)(c.Z.createHydratedSelector), audio: u(), hydrateVoiceTweetTrack: l() };
             }
         },
         670687: (e, t, n) => {
             n.d(t, { bq: () => d, j9: () => l, kD: () => c });
             var o = n(565058),
                 s = n(400752),
-                r = n(987809),
-                i = n(790997),
+                i = n(987809),
+                r = n(790997),
                 a = n(509599);
-            const c = (0, r.xu)((e) => (0, o.cn)()),
-                u = (0, r.xu)((e) =>
+            const c = (0, i.xu)((e) => (0, o.cn)()),
+                u = (0, i.xu)((e) =>
                     (0, o.cn)((t) => {
                         const n = t(a.cS).get(e);
                         return n ? n.is_muted_by_guest || n.is_muted_by_admin : void 0;
                     }),
                 ),
-                l = (0, r.xu)((e) =>
+                l = (0, i.xu)((e) =>
                     (0, o.cn)((t) => {
-                        if (e && t((0, i.f)(e))) {
-                            const n = t(i.Dg);
-                            if (n && n !== e && !t((0, i.f)(n))) return t(l(n));
+                        if (e && t((0, r.f)(e))) {
+                            const n = t(r.Dg);
+                            if (n && n !== e && !t((0, r.f)(n))) return t(l(n));
                         }
                         return t(c(e)) ?? (e ? t(u(e)) : void 0) ?? !0;
                     }),
@@ -823,11 +823,11 @@
             }
         },
         484633: (e, t, n) => {
-            n.d(t, { Q: () => r, W: () => s });
+            n.d(t, { Q: () => i, W: () => s });
             n(202784);
             var o = n(481399);
             const s = (0, o.Z)({ space: !0, voiceTweet: !0, voiceMessage: !0 }),
-                r = (0, o.Z)({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
+                i = (0, o.Z)({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
         },
         381904: (e, t, n) => {
             n.d(t, { e: () => q, Y: () => K });
@@ -836,8 +836,8 @@
             var s = {};
             n.r(s), n.d(s, { buildDockConfig: () => R, buildPlayerProps: () => N });
             n(571372);
-            var r = n(202784),
-                i = n(565058),
+            var i = n(202784),
+                r = n(565058),
                 a = n(42134),
                 c = n(863749),
                 u = n(443781),
@@ -860,17 +860,17 @@
                     n = (0, p.Dv)(h.Cm.participantTotalAtom) ?? 0,
                     o = (0, p.Dv)(h.Cm.titleAtom),
                     s = (0, h.bd)(),
-                    { role: i } = (0, y.l7)(),
+                    { role: r } = (0, y.l7)(),
                     a = (0, p.b9)(w.D),
                     c = (0, p.b9)(g.dq);
-                return r.createElement(m.Z, {
-                    activeSpeakers: r.createElement(k.UU, { audioSpaceId: t }),
+                return i.createElement(m.Z, {
+                    activeSpeakers: i.createElement(k.UU, { audioSpaceId: t }),
                     isWide: e.isSideNavLayout,
                     onDockPress: () => {
                         e.onToggleCollapsed(), s(":audiospace::dock::click");
                     },
                     onRequestClose: () => {
-                        i === b.Q.host ? a(!0) : c({}), e.onRequestClose(), s(":audiospace::dock:close:click");
+                        r === b.Q.host ? a(!0) : c({}), e.onRequestClose(), s(":audiospace::dock:close:click");
                     },
                     title: o,
                     totalParticipants: n,
@@ -878,8 +878,8 @@
                 });
             }
             function P(e) {
-                const [t, n] = r.useState(!1),
-                    o = r.useMemo(
+                const [t, n] = i.useState(!1),
+                    o = i.useMemo(
                         () => ({
                             ...e,
                             onToggleCollapsed: function () {
@@ -888,7 +888,7 @@
                         }),
                         [e],
                     );
-                return r.createElement(r.Fragment, null, t ? r.createElement(T, o) : r.createElement(_.D, o), r.createElement(v.SpaceBehaviors, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout }), r.createElement(S.B, { audioSpaceId: e.audioSpaceId }), r.createElement(w.R, { audioSpaceId: e.audioSpaceId }));
+                return i.createElement(i.Fragment, null, t ? i.createElement(T, o) : i.createElement(_.D, o), i.createElement(v.SpaceBehaviors, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout }), i.createElement(S.B, { audioSpaceId: e.audioSpaceId }), i.createElement(w.R, { audioSpaceId: e.audioSpaceId }));
             }
             var C = n(869508),
                 I = n(142202),
@@ -901,22 +901,22 @@
                 const e = E.Z.useSetPlayerApi(),
                     t = E.Z.useSetPlayerState(),
                     n = (0, p.oR)();
-                return r.useCallback(
+                return i.useCallback(
                     ({ commonApi: o, context: s }) => {
-                        const r = A(s);
-                        if (!r) return { media: null };
-                        const { activeItem: i } = r;
+                        const i = A(s);
+                        if (!i) return { media: null };
+                        const { activeItem: r } = i;
                         return {
-                            broadcastId: i.id,
+                            broadcastId: r.id,
                             disablePlaybackCoordination: !0,
-                            isAnonymous: i.isAnonymous,
-                            isLive: i.isLive,
-                            mediaKey: i.mediaKey,
+                            isAnonymous: r.isAnonymous,
+                            isLive: r.isLive,
+                            mediaKey: r.mediaKey,
                             onPlayerApi: function (t) {
-                                e(i.id, t);
+                                e(r.id, t);
                             },
                             onPlayerState: function (e, o) {
-                                t(i.id, e, o, (e) => {
+                                t(r.id, e, o, (e) => {
                                     (0, C.aF)(e, n), (0, f.H3)(e), I.Z.subscribeNtpTime(n);
                                 });
                             },
@@ -928,8 +928,8 @@
             function D({ audioDockProps: e, commonApi: t, context: n, history: o }) {
                 const s = A(n);
                 if (!s) return null;
-                const { activeItem: i } = s;
-                return r.createElement(P, (0, d.Z)({ key: i.id, audioSpaceId: i.id, onRequestClose: function () {} }, e));
+                const { activeItem: r } = s;
+                return i.createElement(P, (0, d.Z)({ key: r.id, audioSpaceId: r.id, onRequestClose: function () {} }, e));
             }
             n(136728);
             var L = n(118149),
@@ -941,16 +941,16 @@
                     o = (0, x.Z)(n.tweets, (e) => e.id_str === t.id),
                     s = n.tweets[o];
                 if (!s) return null;
-                const [r] = s.extended_entities?.media || [];
-                return { activeItem: t, track: n, media: "photo" !== r?.type ? r : null, activeIndex: o, activeTweet: s };
+                const [i] = s.extended_entities?.media || [];
+                return { activeItem: t, track: n, media: "photo" !== i?.type ? i : null, activeIndex: o, activeTweet: s };
             }
             function N({ commonApi: e, context: t }) {
                 const n = O(t);
                 if (!n) return { media: null };
-                const { activeIndex: o, activeItem: s, media: r, track: i } = n,
-                    a = i.tweets[o + 1];
+                const { activeIndex: o, activeItem: s, media: i, track: r } = n,
+                    a = r.tweets[o + 1];
                 return {
-                    media: r,
+                    media: i,
                     requestedTimecode: s.startTimeMs,
                     onEnded: () => {
                         a && e.load.voiceTweet(a);
@@ -959,13 +959,13 @@
             }
             function R({ audioDockProps: e, commonApi: t, context: n, history: o }) {
                 const [s] = n.playerApi,
-                    [i] = n.playerState,
+                    [r] = n.playerState,
                     a = t.currentTrack;
-                if (!i || !s || !a) return null;
+                if (!r || !s || !a) return null;
                 const c = O(n);
                 if (!c) return null;
                 const { activeIndex: u, activeTweet: l, media: d, track: p } = c,
-                    { isMuted: f, isPlaying: m, isSeeking: h, volume: y } = i;
+                    { isMuted: f, isPlaying: m, isSeeking: h, volume: y } = r;
                 let g = 0,
                     b = 0;
                 F(p.tweets, ({ endMs: e, i: t }) => {
@@ -977,7 +977,7 @@
                     S = l.full_text,
                     w = _ && S ? S.replace(_, "").trim() : S,
                     T = l.user;
-                return r.createElement(L.uP, {
+                return i.createElement(L.uP, {
                     isWide: e.isSideNavLayout,
                     width: e.width,
                     isMuted: f,
@@ -994,10 +994,10 @@
                     onMuteToggle: t.toggleMute,
                     onVolumeChange: t.setVolume,
                     onSeek: function (e) {
-                        F(p.tweets, ({ durationMs: n, endMs: o, i: r, startMs: i, tweet: a }) => {
-                            if (e >= i && e <= o) {
-                                const o = e - i;
-                                if (r === u) {
+                        F(p.tweets, ({ durationMs: n, endMs: o, i, startMs: r, tweet: a }) => {
+                            if (e >= r && e <= o) {
+                                const o = e - r;
+                                if (i === u) {
                                     const e = o / n;
                                     s.scrubToFraction(e);
                                 } else t.load.voiceTweet(a, o);
@@ -1011,27 +1011,27 @@
                 let n = 0;
                 for (let o = 0; o < e.length; o++) {
                     const s = e[o],
-                        r = M.Z.getVoiceTweetDuration(s),
-                        i = n + r;
-                    if (t({ i: o, tweet: s, startMs: n, endMs: i, durationMs: r })) break;
-                    n = i;
+                        i = M.Z.getVoiceTweetDuration(s),
+                        r = n + i;
+                    if (t({ i: o, tweet: s, startMs: n, endMs: r, durationMs: i })) break;
+                    n = r;
                 }
             }
             const H = { default: { buildDockConfig: l.Z }, space: o, voiceTweet: s };
             function K() {
-                const e = r.useRef({}),
-                    { history: t } = r.useContext(u.rC),
+                const e = i.useRef({}),
+                    { history: t } = i.useContext(u.rC),
                     n = (0, a.JD)(),
                     [o, s] = n.activeItem,
-                    [i, l] = n.playerApi,
+                    [r, l] = n.playerApi,
                     [d, p] = n.playerState,
                     [f, m] = n.guestsState,
                     h = d && d.tracks[d.currentTrackId];
-                (e.current.playerApi = i), (e.current.playerState = d);
-                const y = r.useCallback(() => {
+                (e.current.playerApi = r), (e.current.playerState = d);
+                const y = i.useCallback(() => {
                         s(null);
                     }, [s]),
-                    g = r.useMemo(
+                    g = i.useMemo(
                         () =>
                             function () {
                                 const { playerApi: t, playerState: n } = e.current;
@@ -1041,7 +1041,7 @@
                             },
                         [],
                     ),
-                    k = r.useMemo(
+                    k = i.useMemo(
                         () =>
                             function () {
                                 const { playerApi: t, playerState: n } = e.current;
@@ -1051,7 +1051,7 @@
                             },
                         [],
                     ),
-                    v = r.useMemo(
+                    v = i.useMemo(
                         () =>
                             function (t) {
                                 const { playerApi: n } = e.current;
@@ -1060,8 +1060,8 @@
                         [],
                     ),
                     _ = {
-                        space: function ({ id: e, isAnonymous: t, isLive: n, mediaKey: o, role: r }) {
-                            s({ type: b.W.space, id: e, mediaKey: o, isAnonymous: t, isLive: n, role: r });
+                        space: function ({ id: e, isAnonymous: t, isLive: n, mediaKey: o, role: i }) {
+                            s({ type: b.W.space, id: e, mediaKey: o, isAnonymous: t, isLive: n, role: i });
                         },
                         voiceTweet: function (e, t) {
                             s({ type: b.W.voiceTweet, id: e.id_str, conversationId: c.ge(e), startTimeMs: t });
@@ -1073,7 +1073,7 @@
                     activeItem: o,
                     load: _,
                     clear: y,
-                    player: { api: i, state: d, guests: f, currentTrack: h, toggleMute: k, togglePlayback: g },
+                    player: { api: r, state: d, guests: f, currentTrack: h, toggleMute: k, togglePlayback: g },
                     config: {
                         dock: function (e) {
                             if (!o) return H.default.buildDockConfig();
@@ -1114,7 +1114,7 @@
                     audioSpaces: { cache: n.audioSpaceCache },
                 };
             }
-            const q = (0, i.cn)(null, (e, t, n) => {
+            const q = (0, r.cn)(null, (e, t, n) => {
                 t(a.K$, { type: b.W.space, ...n });
             });
         },
@@ -1122,12 +1122,12 @@
             n.d(t, { b: () => a });
             var o = n(202784),
                 s = n(58255),
-                r = n(125363),
-                i = n(443781);
+                i = n(125363),
+                r = n(443781);
             function a() {
-                const e = (0, r.oR)(),
-                    t = (0, r.I0)()((e, t, n) => n.api),
-                    { featureSwitches: n } = (0, i.QZ)();
+                const e = (0, i.oR)(),
+                    t = (0, i.I0)()((e, t, n) => n.api),
+                    { featureSwitches: n } = (0, r.QZ)();
                 return o.useMemo(() => (s.w.init({ store: e, api: t, featureSwitches: n }), s.w), [e, t, n]);
             }
         },
@@ -1136,9 +1136,9 @@
             n(571372);
             var o = n(202784),
                 s = n(400752),
-                r = n(776342),
-                i = n(332920),
-                a = n.n(i),
+                i = n(776342),
+                r = n(332920),
+                a = n.n(r),
                 c = n(316118),
                 u = n(809674),
                 l = n(400915),
@@ -1156,7 +1156,7 @@
                 S = n(381904);
             function w(e, t) {
                 const n = (0, h.z)(),
-                    i = (0, y.v9)(g.Qb),
+                    r = (0, y.v9)(g.Qb),
                     a = (0, d.p)(),
                     w = !!t?.skipListeners,
                     E = (function (e, t) {
@@ -1164,39 +1164,39 @@
                             audioContext: n,
                             fetchAudioSpace: o,
                             getAudioSpace: s,
-                            reportSpaceFor: r,
-                            subscribeToScheduledSpace: i,
+                            reportSpaceFor: i,
+                            subscribeToScheduledSpace: r,
                             unsubscribeFromScheduledSpace: a,
                         } = (function () {
                             const e = (0, S.Y)(),
                                 [t, n] = e.audioSpaces.cache;
-                            return { getAudioSpace: s, fetchAudioSpace: a, subscribeToScheduledSpace: r, unsubscribeFromScheduledSpace: i, reportSpaceFor: p.w.proxsee.reportSpaceFor, audioContext: e };
+                            return { getAudioSpace: s, fetchAudioSpace: a, subscribeToScheduledSpace: i, unsubscribeFromScheduledSpace: r, reportSpaceFor: p.w.proxsee.reportSpaceFor, audioContext: e };
                             function o(e, t) {
                                 return `id:${e},skipListeners:${t.toString()}`;
                             }
                             function s(e, n) {
-                                const r = o(e, n),
-                                    i = t[r];
-                                return i || (n ? s(e, !1) : T(b.ZP.NONE));
-                            }
-                            function r(e) {
-                                return p.w.subscribeToScheduledSpace(e).then(() => a(e));
+                                const i = o(e, n),
+                                    r = t[i];
+                                return r || (n ? s(e, !1) : T(b.ZP.NONE));
                             }
                             function i(e) {
+                                return p.w.subscribeToScheduledSpace(e).then(() => a(e));
+                            }
+                            function r(e) {
                                 return p.w.unsubscribeFromScheduledSpace(e).then(() => a(e));
                             }
-                            function a(e, t, r) {
-                                const i = !!r?.skipListeners,
-                                    a = s(e, i);
+                            function a(e, t, i) {
+                                const r = !!i?.skipListeners,
+                                    a = s(e, r);
                                 if ("number" == typeof t && a.status !== b.ZP.NONE) {
                                     if (!((Date.now() - a.time) / 1e3 > t)) return Promise.resolve(a);
                                 }
                                 if (0 === e.trim().length) return Promise.resolve(a);
                                 function c(t, s = {}) {
-                                    const r = T(t, s),
-                                        a = o(e, i);
+                                    const i = T(t, s),
+                                        a = o(e, r);
                                     n((e) => {
-                                        const t = { ...e[a], ...r };
+                                        const t = { ...e[a], ...i };
                                         return (e[a] = t), { ...e };
                                     });
                                 }
@@ -1205,7 +1205,7 @@
                                 return (
                                     c(b.ZP.LOADING),
                                     p.w
-                                        .audioSpace(e, i)
+                                        .audioSpace(e, r)
                                         .catch((e) => {
                                             u = e;
                                         })
@@ -1222,7 +1222,7 @@
                             return s(e, t);
                         }
                         function l() {
-                            return i(e);
+                            return r(e);
                         }
                         function d() {
                             return a(e);
@@ -1232,10 +1232,10 @@
                             const t = {},
                                 n = u().data?.started_at;
                             return (
-                                Object.keys(r).forEach((o) => {
+                                Object.keys(i).forEach((o) => {
                                     t[o] = () => {
                                         const t = { broadcast_id: e, ...f(n) };
-                                        return r[o](t);
+                                        return i[o](t);
                                     };
                                 }),
                                 t
@@ -1247,11 +1247,11 @@
                     M = E.get(),
                     x = M.data,
                     O = x?.state;
-                const N = { NotStarted: O === r.default.SpaceState.NotStarted, PrePublished: O === r.default.SpaceState.PrePublished, Running: O === r.default.SpaceState.Running, TimedOut: O === r.default.SpaceState.TimedOut, Ended: O === r.default.SpaceState.Ended, Canceled: O === r.default.SpaceState.Canceled, loaded: !!x || M.status === b.ZP.FAILED, loading: M.status === b.ZP.LOADING, error: M.status === b.ZP.FAILED && M.error, joined: A.activeItem?.type === _.W.space && A.activeItem?.id === e, recording: !1, joinable: !x?.disallow_join, replayable: !1, clippable: Boolean(x?.is_space_available_for_clipping), superFollowersOnly: x?.narrow_cast_space_type === r.default.AudienceEnum.superFollowersOnly };
+                const N = { NotStarted: O === i.default.SpaceState.NotStarted, PrePublished: O === i.default.SpaceState.PrePublished, Running: O === i.default.SpaceState.Running, TimedOut: O === i.default.SpaceState.TimedOut, Ended: O === i.default.SpaceState.Ended, Canceled: O === i.default.SpaceState.Canceled, loaded: !!x || M.status === b.ZP.FAILED, loading: M.status === b.ZP.LOADING, error: M.status === b.ZP.FAILED && M.error, joined: A.activeItem?.type === _.W.space && A.activeItem?.id === e, recording: !1, joinable: !x?.disallow_join, replayable: !1, clippable: Boolean(x?.is_space_available_for_clipping), superFollowersOnly: x?.narrow_cast_space_type === i.default.AudienceEnum.superFollowersOnly };
                 x?.is_space_available_for_replay && (N.Running ? (N.recording = !0) : (N.Ended || N.TimedOut) && (N.replayable = !0));
                 const R = (0, m.E3)(x),
                     F = (0, m.Hi)(x),
-                    H = (0, u.S)({ analytics: n, details: { broadcast_id: e, host_id: x?.host?.user_id, host_periscope_id: x?.host?.periscope_user_id, audio_space_start_type: x?.scheduled_start ? "scheduled" : "adhoc", audio_space_narrow_cast_type: F, audio_space_recording_type: R, state: O, is_logged_in: i } });
+                    H = (0, u.S)({ analytics: n, details: { broadcast_id: e, host_id: x?.host?.user_id, host_periscope_id: x?.host?.periscope_user_id, audio_space_start_type: x?.scheduled_start ? "scheduled" : "adhoc", audio_space_narrow_cast_type: F, audio_space_recording_type: R, state: O, is_logged_in: r } });
                 function K() {
                     const e = x?.title?.trim(),
                         t = x?.host?.display_name;
@@ -1265,7 +1265,7 @@
                         },
                         scribe: H,
                         state: function () {
-                            const { StateEnum: e } = r.default;
+                            const { StateEnum: e } = i.default;
                             let t;
                             return N.loaded && N.error ? (t = e.unavailable) : N.replayable ? (t = e.replay) : N.Ended || N.TimedOut ? (t = e.ended) : N.Running ? (t = e.live) : N.NotStarted || N.PrePublished ? (t = e.scheduled) : N.Canceled && (t = e.canceled), t;
                         },
@@ -1329,16 +1329,16 @@
                 I = { title: a().cfbea177, titleFallback: a().ab4fc8bc };
         },
         87682: (e, t, n) => {
-            n.d(t, { R: () => i });
+            n.d(t, { R: () => r });
             var o = n(400752),
                 s = n(656898),
-                r = n(443781);
-            function i(e) {
+                i = n(443781);
+            function r(e) {
                 const t = (0, o.Dv)(s.Cm.spaceStateAtom),
-                    { featureSwitches: n } = (0, r.QZ)(),
-                    i = n.getNumberValue("spaces_2022_h2_clipping_duration_seconds"),
+                    { featureSwitches: n } = (0, i.QZ)(),
+                    r = n.getNumberValue("spaces_2022_h2_clipping_duration_seconds"),
                     a = n.isTrue("spaces_2022_h2_clipping");
-                return { isCreationEnabled: Boolean(t?.clippable) && a, maxDurationMs: 1e3 * i, maxDurationSeconds: i };
+                return { isCreationEnabled: Boolean(t?.clippable) && a, maxDurationMs: 1e3 * r, maxDurationSeconds: r };
             }
         },
         384757: (e, t, n) => {
@@ -1346,14 +1346,14 @@
             n(136728);
             var o = n(107267),
                 s = n(395067),
-                r = n(725516),
-                i = n(443781),
+                i = n(725516),
+                r = n(443781),
                 a = n(877506),
                 c = n(982790);
             function u(e, t, n) {
                 const u = (0, o.useHistory)(),
-                    { contextualScribeNamespace: l } = (0, r.z)(),
-                    { featureSwitches: d } = (0, i.QZ)(),
+                    { contextualScribeNamespace: l } = (0, i.z)(),
+                    { featureSwitches: d } = (0, r.QZ)(),
                     { space: p } = (0, c.$)(e),
                     f = s.C2.Space,
                     m = (0, s.Yw)(d, f),
@@ -1372,40 +1372,40 @@
             n(901951);
             var o = n(565058),
                 s = n(42134),
-                r = n(656898),
-                i = n(304148),
+                i = n(656898),
+                r = n(304148),
                 a = n(110138),
                 c = n(712612),
                 u = n(610214),
                 l = n(877506),
                 d = n(484633);
             const p = (0, o.cn)((e) => {
-                const t = e(r.Cm.participantsAtom),
+                const t = e(i.Cm.participantsAtom),
                     { inLookup: n, notInLookup: o } = (() => {
                         if (e(s.cI) === d.Q.listener) {
                             const t = e(l.Z.guestsLookupAtom) ?? {},
                                 n = ({ periscope_user_id: e }) => Boolean(e && t[e ?? ""]);
                             return { inLookup: n, notInLookup: (e) => !n(e) };
                         }
-                        const t = e(i.Cl),
+                        const t = e(r.Cl),
                             n = ({ periscope_user_id: e }) => Boolean(e && t.get(e));
                         return { inLookup: n, notInLookup: (e) => !n(e) };
                     })();
                 return {
                     ...(() => {
-                        const { cohosts: r = [], host: i, participants: l } = t,
+                        const { cohosts: i = [], host: r, participants: l } = t,
                             { speakers: p = [], listeners: f = [] } = l ?? {},
                             m = e(u.CP),
                             h = e(u.t),
-                            y = { host: i, cohosts: r.filter(n), speakers: p.filter(n), listeners: m ? [] : [...r.filter(o), ...p.filter(o), ...f] },
+                            y = { host: r, cohosts: i.filter(n), speakers: p.filter(n), listeners: m ? [] : [...i.filter(o), ...p.filter(o), ...f] },
                             g = a.Z.viewerUser();
                         if (g && !h) {
                             const t = e(s.cI),
                                 n = e(c.Dy),
                                 o = e(c.fg),
-                                r = { avatar_url: g.profile_image_url_https, display_name: g.name, highlightedLabel: g.highlightedLabel, is_blue_verified: g.is_blue_verified, is_verified: g.verified, twitter_screen_name: g.screen_name, periscope_user_id: a.Z.proxsee.periscopeUserId(), verified_type: g.verified_type, user_id: g.id_str, ...([d.Q.host, d.Q.cohost, d.Q.speaker].includes(t) && { is_muted_by_admin: o, is_muted_by_guest: n }) },
-                                i = (e) => e.periscope_user_id !== r.periscope_user_id;
-                            (y.cohosts = y.cohosts.filter(i)), (y.speakers = y.speakers.filter(i)), (y.listeners = y.listeners.filter(i)), t === d.Q.host ? (y.host = r) : t === d.Q.cohost ? y.cohosts.unshift(r) : t === d.Q.speaker ? y.speakers.unshift(r) : t === d.Q.listener && y.listeners.unshift(r);
+                                i = { avatar_url: g.profile_image_url_https, display_name: g.name, highlightedLabel: g.highlightedLabel, is_blue_verified: g.is_blue_verified, is_verified: g.verified, twitter_screen_name: g.screen_name, periscope_user_id: a.Z.proxsee.periscopeUserId(), verified_type: g.verified_type, user_id: g.id_str, ...([d.Q.host, d.Q.cohost, d.Q.speaker].includes(t) && { is_muted_by_admin: o, is_muted_by_guest: n }) },
+                                r = (e) => e.periscope_user_id !== i.periscope_user_id;
+                            (y.cohosts = y.cohosts.filter(r)), (y.speakers = y.speakers.filter(r)), (y.listeners = y.listeners.filter(r)), t === d.Q.host ? (y.host = i) : t === d.Q.cohost ? y.cohosts.unshift(i) : t === d.Q.speaker ? y.speakers.unshift(i) : t === d.Q.listener && y.listeners.unshift(i);
                         }
                         return y;
                     })(),
@@ -1419,18 +1419,18 @@
                 (0, o.cn)((e) => e(p).listeners);
         },
         89609: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => r });
             var o = n(202784),
                 s = n(187669),
-                r = n(982790);
-            function i(e) {
-                const { handlers: t, space: n, utils: i } = (0, r.$)(e),
+                i = n(982790);
+            function r(e) {
+                const { handlers: t, space: n, utils: r } = (0, i.$)(e),
                     [a, c] = o.useState(!1),
                     [u, l] = o.useState(!1),
                     d = { hasReminderSet: !1, onClick: void 0, scheduledStart: void 0 };
                 return (
                     (0, s.q)(() => {
-                        i.forceFetch().then(() => {
+                        r.forceFetch().then(() => {
                             c(!0);
                         });
                     }),
@@ -1440,7 +1440,7 @@
                         ((d.hasReminderSet = Boolean(n?.is_subscribed)),
                         (d.onClick = () => {
                             const e = () => l(!1);
-                            l(!0), d.hasReminderSet ? (i.scribe(":*:*:*:unset_reminder:click"), t.unsubscribe().finally(e)) : (i.scribe(":*:*:*:set_reminder:click"), t.subscribe().finally(e));
+                            l(!0), d.hasReminderSet ? (r.scribe(":*:*:*:unset_reminder:click"), t.unsubscribe().finally(e)) : (r.scribe(":*:*:*:set_reminder:click"), t.subscribe().finally(e));
                         }),
                         a && (d.scheduledStart = n?.scheduled_start)),
                     { props: d, isSubscribing: u }
@@ -1451,11 +1451,11 @@
             n.d(t, { R: () => a });
             var o = n(202784),
                 s = n(125363),
-                r = n(624479),
-                i = n(982790);
+                i = n(624479),
+                r = n(982790);
             function a(e) {
                 const t = o.useRef(!1),
-                    n = (0, i.$)(e),
+                    n = (0, r.$)(e),
                     a = (0, s.I0)();
                 o.useEffect(() => {
                     t.current = !1;
@@ -1465,11 +1465,11 @@
                             o = t.current,
                             s = n.utils.is.Running;
                         if (!e) return;
-                        const i = o && !s;
-                        if (((t.current = s), i)) {
+                        const r = o && !s;
+                        if (((t.current = s), r)) {
                             [...e.participants.admins, ...e.participants.speakers].forEach((e) => {
                                 const t = e.user_id;
-                                t && a(r.ZP.deleteOne(t));
+                                t && a(i.ZP.deleteOne(t));
                             });
                         }
                     }, [a, n]);
@@ -1479,19 +1479,19 @@
             n.r(t), n.d(t, { default: () => m, listenerVideoPortalNodeAtom: () => p });
             var o = n(202784),
                 s = n(565058),
-                r = n(400752),
-                i = n(702239),
+                i = n(400752),
+                r = n(702239),
                 a = n(381904),
                 c = n(447735),
                 u = n(135328),
                 l = n(610214),
                 d = n(837759);
-            const p = (0, s.cn)(() => (0, i.oD)());
+            const p = (0, s.cn)(() => (0, r.oD)());
             function f(e) {
                 (0, c.b)();
                 const { config: t } = (0, a.Y)(),
-                    n = (0, r.Dv)(p);
-                return (0, r.Dv)(l.gc) ? null : o.createElement(o.Fragment, null, t.dock(e), o.createElement(d.G3, null), o.createElement(i.Nq, { node: n }, o.createElement(u.Z, t.player())));
+                    n = (0, i.Dv)(p);
+                return (0, i.Dv)(l.gc) ? null : o.createElement(o.Fragment, null, t.dock(e), o.createElement(d.G3, null), o.createElement(r.Nq, { node: n }, o.createElement(u.Z, t.player())));
             }
             const m = o.memo(f);
         },
@@ -1499,8 +1499,8 @@
             n.r(t), n.d(t, { __DANGEROUS_IMPORT_VIDEOPLAYER_BASE__: () => b, __DANGEROUS_IMPORT__: () => k });
             var o = n(202784),
                 s = n(803224),
-                r = n(738584),
-                i = n(640290),
+                i = n(738584),
+                r = n(640290),
                 a = n(123751),
                 c = n(396837),
                 u = n(90890),
@@ -1517,10 +1517,10 @@
                 h = n(58255);
             function y(e) {
                 const { featureSwitches: t } = o.useContext(l.rC),
-                    { acquisitionParams: n, broadcastId: r, isLive: i, isLooping: d, media: p, mediaKey: f, onEnded: y, onPlaybackEmitterCreated: b, onPlayerApi: k, onPlayerState: S, requestedTimecode: w, shouldAutoplayMuted: T } = e,
+                    { acquisitionParams: n, broadcastId: i, isLive: r, isLooping: d, media: p, mediaKey: f, onEnded: y, onPlaybackEmitterCreated: b, onPlayerApi: k, onPlayerState: S, requestedTimecode: w, shouldAutoplayMuted: T } = e,
                     [P, C] = o.useState(null),
                     I = o.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
-                    E = p || (r && f);
+                    E = p || (i && f);
                 if (
                     (o.useEffect(() => {
                         null === P && E && (0, c.ij)({ showControls: !1, source: {} }, t).then((e) => C(() => e));
@@ -1536,7 +1536,7 @@
                     null === P || !E)
                 )
                     return null;
-                const A = Boolean(i && r && f),
+                const A = Boolean(r && i && f),
                     Z = !A && T,
                     D = A ? s.W.SPACE : s.W.NORMAL;
                 const L = (function (e, t) {
@@ -1581,17 +1581,17 @@
                                     const { playbackCoordinationEmitter: t, previousPlayerState: n } = I.current,
                                         o = null === n,
                                         s = n?.isPlaying,
-                                        r = e.isPlaying,
-                                        i = !o && s && !r;
-                                    (!o && s) || !r ? i && t && t.signalPause() : t && t.signalPlay();
+                                        i = e.isPlaying,
+                                        r = !o && s && !i;
+                                    (!o && s) || !i ? r && t && t.signalPause() : t && t.signalPlay();
                                 })(e),
                                 (I.current.previousPlayerState = e);
                         },
                         twitterAuthedHttpClient: e.getTwitterAuthedHttpClient(),
                     };
-                if (r && f) {
-                    const e = { ...M, configType: "static", contentId: f, contentType: "broadcast", featureProvider: t, variants: [], videoId: a.Z.forAudioSpace(r, f, i, n) };
-                    return o.createElement(g, { key: r, playerConfig: e });
+                if (i && f) {
+                    const e = { ...M, configType: "static", contentId: f, contentType: "broadcast", featureProvider: t, variants: [], videoId: a.Z.forAudioSpace(i, f, r, n) };
+                    return o.createElement(g, { key: i, playerConfig: e });
                 }
                 if (p) {
                     const e = { ...M, configType: "static", contentId: p.id_str, loop: !1, contentType: "media_entity", featureProvider: t, durationMs: p.video_info.duration_millis, variants: p.video_info.variants.map(({ bitrate: e, content_type: t, url: n }) => ({ type: t, src: n })) };
@@ -1600,19 +1600,19 @@
                 return null;
             }
             function g({ playerConfig: e }) {
-                return o.createElement(r.Z, e);
+                return o.createElement(i.Z, e);
             }
             const b = y,
                 k = o.memo(f(y)),
                 v = (e) => e && e.tracks[e.currentTrackId],
-                _ = new i.ZP({});
+                _ = new r.ZP({});
         },
         135328: (e, t, n) => {
             n.d(t, { Z: () => o });
             n(202784);
             const o = (0, n(523561).Z)({
                 loader: () =>
-                    Promise.all([n.e("icons.22"), n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("loader.AudioOnlyVideoPlayer-6107ac1a"), n.e("loader.AudioOnlyVideoPlayer-e96e9bea"), n.e("loader.AudioOnlyVideoPlayer-3e608b8e")])
+                    Promise.all([n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("icons.4"), n.e("loader.AudioOnlyVideoPlayer-6107ac1a"), n.e("loader.AudioOnlyVideoPlayer-e96e9bea"), n.e("loader.AudioOnlyVideoPlayer-3e608b8e")])
                         .then(n.bind(n, 744130))
                         .then((e) => ({ default: e.__DANGEROUS_IMPORT__ })),
             });
@@ -1621,8 +1621,8 @@
             n.d(t, { UU: () => m, z0: () => h });
             var o = n(202784),
                 s = n(400752),
-                r = n(325686),
-                i = n(392237),
+                i = n(325686),
+                r = n(392237),
                 a = n(731708),
                 c = n(646677),
                 u = n(526626),
@@ -1638,10 +1638,10 @@
                 return o.createElement(y, { audioLevel: n, displayName: s });
             }
             function h(e, t) {
-                const { cohosts: n, host: r, speakers: i } = (0, s.Dv)(p.Lg),
+                const { cohosts: n, host: i, speakers: r } = (0, s.Dv)(p.Lg),
                     a = t.useGuestsLookup(),
-                    c = [...(r ? [{ user: r, kind: d.Q.host }] : []), ...n.map((e) => ({ user: e, kind: d.Q.cohost })), ...i.map((e) => ({ user: e, kind: d.Q.speaker }))],
-                    u = o.useRef(r && { user: r, audioLevel: 0, kind: d.Q.host });
+                    c = [...(i ? [{ user: i, kind: d.Q.host }] : []), ...n.map((e) => ({ user: e, kind: d.Q.cohost })), ...r.map((e) => ({ user: e, kind: d.Q.speaker }))],
+                    u = o.useRef(i && { user: i, audioLevel: 0, kind: d.Q.host });
                 let l;
                 return (
                     c.forEach((e) => {
@@ -1653,7 +1653,7 @@
                 );
             }
             function y(e) {
-                return o.createElement(r.Z, { style: k.activeSpeakerIndicatorContainer }, o.createElement(g, null), o.createElement(u._, { audioLevel: e.audioLevel, size: i.default.theme.spacesPx.space16, withPersistZeroLevel: !0 }), o.createElement(b, { audioLevel: e.audioLevel, displayName: e.displayName }));
+                return o.createElement(i.Z, { style: k.activeSpeakerIndicatorContainer }, o.createElement(g, null), o.createElement(u._, { audioLevel: e.audioLevel, size: r.default.theme.spacesPx.space16, withPersistZeroLevel: !0 }), o.createElement(b, { audioLevel: e.audioLevel, displayName: e.displayName }));
             }
             function g() {
                 return f.jh() ? o.createElement(c.default, { style: k.superFollowsIcon, testID: "superfollows-icon" }) : null;
@@ -1663,14 +1663,14 @@
                     n = [k.activeSpeakerIndicatorName, 0 === e.audioLevel && k.activeSpeakerIndicatorNameInactive, t ? { color: t } : void 0];
                 return o.createElement(a.ZP, { style: n }, e.displayName);
             }
-            const k = i.default.create((e) => ({ activeSpeakerIndicatorContainer: { flexDirection: "row", alignItems: "center", width: "100%" }, activeSpeakerIndicatorName: { color: e.colors.purple500, marginStart: e.spacesPx.space4, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }, activeSpeakerIndicatorNameInactive: { opacity: 0.6 }, superFollowsIcon: { color: e.colors.gray700, height: e.spaces.space16, marginEnd: e.spaces.space4, width: e.spaces.space16 } }));
+            const k = r.default.create((e) => ({ activeSpeakerIndicatorContainer: { flexDirection: "row", alignItems: "center", width: "100%" }, activeSpeakerIndicatorName: { color: e.colors.purple500, marginStart: e.spacesPx.space4, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }, activeSpeakerIndicatorNameInactive: { opacity: 0.6 }, superFollowsIcon: { color: e.colors.gray700, height: e.spaces.space16, marginEnd: e.spaces.space4, width: e.spaces.space16 } }));
         },
         123293: (e, t, n) => {
             n.d(t, { Z: () => O });
             var o = n(668371),
                 s = n(202784),
-                r = (n(585488), n(712696)),
-                i = n.n(r),
+                i = (n(585488), n(712696)),
+                r = n.n(i),
                 a = n(666670),
                 c = n(736063),
                 u = n(813323),
@@ -1728,26 +1728,26 @@
                 D = { followHostClick: ":audiospace:audiospace_card:speaker_list:button:click", toastImpression: ":audiospace::follow_host:toast:impression", viewProfileClick: ":audiospace::follow_host:toast:click", viewDetailsClick: ":audiospace:audiospace_card:speaker_list:button:click" },
                 L = P(function (e) {
                     const { scribe: t, spaceId: n, user: o } = e,
-                        r = d()(C, o),
-                        i = r?.legacy?.following,
+                        i = d()(C, o),
+                        r = i?.relationship_perspectives?.following,
                         { viewerUserId: a } = s.useContext(b.rC);
-                    return !r || i || a === r.rest_id
+                    return !i || r || a === i.rest_id
                         ? s.createElement(I, { scribe: t, spaceId: n })
                         : s.createElement(
                               s.Fragment,
                               null,
-                              s.createElement(v.Z, { displayMode: k.BH.follow, userFullName: r.legacy?.name ?? "", userId: r.rest_id }, (n) =>
+                              s.createElement(v.Z, { displayMode: k.BH.follow, userFullName: i.legacy?.name ?? "", userId: i.rest_id }, (n) =>
                                   s.createElement(p.Z, {
                                       buttonText: Z,
-                                      isFollowing: r.legacy?.following || !1,
+                                      isFollowing: i.relationship_perspectives?.following || !1,
                                       onFollow: n(() =>
                                           (() => {
                                               t(D.followHostClick);
                                               const { addToast: n, createLocalApiErrorHandler: o, follow: s } = e;
-                                              r &&
-                                                  s(r.rest_id, {}).then(
+                                              i &&
+                                                  s(i.rest_id, {}).then(
                                                       () => {
-                                                          const e = r.legacy?.screen_name;
+                                                          const e = i.legacy?.screen_name;
                                                           e && (t(D.toastImpression), n({ text: E(t, e) }));
                                                       },
                                                       o({ showToast: !0 }),
@@ -1765,13 +1765,13 @@
             function x(e) {
                 const { scribe: t, space: n } = e,
                     o = n?.host?.user_id ?? "",
-                    r = n?.rest_id,
-                    u = i()(M, { restId: o }),
+                    i = n?.rest_id,
+                    u = r()(M, { restId: o }),
                     l = { context: "FollowHostButtonContainerQuery", options: a.F };
-                return s.createElement(c.H, { errorConfig: l }, s.createElement(L, { scribe: t, spaceId: r, user: u.user.result }));
+                return s.createElement(c.H, { errorConfig: l }, s.createElement(L, { scribe: t, spaceId: i, user: u.user.result }));
             }
             const O = s.memo(x);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.461f9cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.75c3afaa.js.map

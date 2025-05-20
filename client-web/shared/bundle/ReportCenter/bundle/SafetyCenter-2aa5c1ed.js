@@ -16,8 +16,8 @@
                 m = i(966582),
                 w = i(966886),
                 h = i(308158),
-                g = i(126962),
-                p = i(54989),
+                p = i(126962),
+                g = i(54989),
                 C = i(366985),
                 f = i(982266),
                 _ = i(990804),
@@ -33,7 +33,7 @@
                 Z = i(528647),
                 A = i(782261),
                 P = i(782299);
-            const R = Object.freeze({ ActionsBar: _.Z, ActionMenu: f.Z, CallToAction: o.ZP, EditCallout: T.Z, Education: y.Z, HighlightedUserLabel: l.Z, Media: v.Z, Place: a.ZP, PromotedDetails: u.Z, PromotedUserProfileCard: x.Z, ReplyContext: I.ZP, RichContent: k.Z, SocialContext: g.Z, Text: M.Z, Tombstone: p.Z, Timestamp: w.Z, UserAvatar: E.Z, UserFollowIndicator: P.Z, UserName: Z.Z, ArticleCard: b.Z }),
+            const R = Object.freeze({ ActionsBar: _.Z, ActionMenu: f.Z, CallToAction: o.ZP, EditCallout: T.Z, Education: y.Z, HighlightedUserLabel: l.Z, Media: v.Z, Place: a.ZP, PromotedDetails: u.Z, PromotedUserProfileCard: x.Z, ReplyContext: I.ZP, RichContent: k.Z, SocialContext: p.Z, Text: M.Z, Tombstone: g.Z, Timestamp: w.Z, UserAvatar: E.Z, UserFollowIndicator: P.Z, UserName: Z.Z, ArticleCard: b.Z }),
                 S = { linkProcessor: (e) => ({ ...e, pathname: new URL(e.pathname, "https://twitter.com").toString() }) };
             function L(e) {
                 const t = r.useRef(e);
@@ -41,7 +41,7 @@
                     return null === t.current ? e : r.createElement(c.zt, t.current, e);
                 }, []);
             }
-            function U({ renderActionsBar: e = B, renderActionMenu: t = N, renderArticleCard: i = H, renderCallToAction: n = D, renderEditCallout: a = Q, renderEducation: o = q, renderHighlightedUserLabel: l = V, renderPlace: c = F, renderPromotedUserProfileCard: u = $, renderPromotedDetails: w = z, renderPromotionStatusBadge: g = O, renderReplyContext: p = K, renderRichContent: f = W, renderMedia: _ = j, renderTweetHeader: b = G, renderStats: T = J, renderText: y = X, renderTimestamp: v = Y, renderTombstone: x = ee, renderUserAvatar: I = te, renderUserFollowIndicator: k = ie, renderUserName: M = ne, promotedContent: E, quotedTweetTombstoneInfo: Z, socialContext: P, tweetContext: R, staticLinkConfig: U = S, tweet: re, ...ae }) {
+            function U({ renderActionsBar: e = B, renderActionMenu: t = N, renderArticleCard: i = H, renderCallToAction: n = D, renderEditCallout: a = Q, renderEducation: o = q, renderHighlightedUserLabel: l = V, renderPlace: c = F, renderPromotedUserProfileCard: u = $, renderPromotedDetails: w = z, renderPromotionStatusBadge: p = O, renderReplyContext: g = K, renderRichContent: f = j, renderMedia: _ = G, renderTweetHeader: b = W, renderStats: T = J, renderText: y = X, renderTimestamp: v = Y, renderTombstone: x = ee, renderUserAvatar: I = te, renderUserFollowIndicator: k = ie, renderUserName: M = ne, promotedContent: E, quotedTweetTombstoneInfo: Z, socialContext: P, tweetContext: R, staticLinkConfig: U = S, tweet: re, ...ae }) {
                 const oe = A.Z.getOriginalTweet(re),
                     [se, de] = (0, C.L)(oe),
                     le = d.ZP.useProps(),
@@ -60,8 +60,8 @@
                         renderPlace: (e) => (oe.place ? c({ children: oe.place.full_name, link: `/places/${oe.place.id}`, ...e }) : null),
                         renderPromotedUserProfileCard: (e) => ("true" === E?.experiment_values?.pac_in_timeline ? u({ isUserProtected: oe.user.protected, isUserVerified: oe.user.verified, promotedContent: E, userDescription: oe.user.description, userId: oe.user.id_str, userName: oe.user.name, userScreenName: oe.user.screen_name, ...e }) : null),
                         renderPromotedDetails: (e) => (E && m.Z.isPromoted(E) ? w({ contentAuthorId: oe.user.id_str, screenName: oe.user.screen_name, id: se.promotedLabel, promotedContent: E, ...e }) : null),
-                        renderPromotionStatusBadge: (e) => g({ id: se.promotionStatusLabel }),
-                        renderReplyContext: (e) => (oe.in_reply_to_status_id_str ? p({ displayTextRange: oe.display_text_range, inReplyToName: oe.in_reply_to_name, inReplyToScreenName: oe.in_reply_to_screen_name, inReplyToStatusIdStr: oe.in_reply_to_status_id_str, inReplyToUserIdStr: oe.in_reply_to_user_id_str, id: se.replyContext, tweetPermalink: oe.permalink, unmentionedUserIds: oe.unmentioned_user_ids, userMentionsEntities: oe.entities?.user_mentions, ...e }) : null),
+                        renderPromotionStatusBadge: (e) => p({ id: se.promotionStatusLabel }),
+                        renderReplyContext: (e) => (oe.in_reply_to_status_id_str ? g({ displayTextRange: oe.display_text_range, inReplyToName: oe.in_reply_to_name, inReplyToScreenName: oe.in_reply_to_screen_name, inReplyToStatusIdStr: oe.in_reply_to_status_id_str, inReplyToUserIdStr: oe.in_reply_to_user_id_str, id: se.replyContext, tweetPermalink: oe.permalink, unmentionedUserIds: oe.unmentioned_user_ids, userMentionsEntities: oe.entities?.user_mentions, ...e }) : null),
                         renderRichContent: (e) => f({ forwardPivotInfo: re.softIntervention, id: se.richContent, quotedTweetTombstoneInfo: Z, tweet: re, withAltTextBadge: !0, withCardLinks: !1, withCondensedQuoteTweet: !0, withMediaTagsIcon: !1, withQuoteTweetHeaderLinks: !1, withQuoteTweetLink: !0, withQuoteTweetMedia: !0, ...e }),
                         renderTweetHeader: (e) => (P ? b({ contextType: P.contextType, link: P.link, id: se.socialContext, retweetData: { isSelfRetweet: P.isSelfRetweet, name: P.name, screenName: P.screenName }, text: P.text, ...e }) : b()),
                         renderStats: () => T(),
@@ -95,9 +95,9 @@
                 $ = (e) => null,
                 O = (e) => null,
                 K = (e) => r.createElement(R.ReplyContext, e),
-                W = (e) => r.createElement(R.RichContent, e),
-                j = (e) => r.createElement(R.Media, e),
-                G = (e) => (e ? r.createElement(R.SocialContext, e) : null),
+                j = (e) => r.createElement(R.RichContent, e),
+                G = (e) => r.createElement(R.Media, e),
+                W = (e) => (e ? r.createElement(R.SocialContext, e) : null),
                 J = () => null,
                 Y = (e) => r.createElement(R.Timestamp, e),
                 X = (e) => r.createElement(R.Text, e),
@@ -135,12 +135,12 @@
                 o = i(392237),
                 s = i(266704);
             const d = o.default.create((e) => ({ root: { borderWidth: e.borderWidths.small, borderColor: e.colors.borderColor, borderStyle: "solid", borderRadius: e.borderRadii.large } })),
-                l = function ({ followButton: e, isUserProtected: t, isUserVerified: i, knownFollowers: o, link: l, onClick: c, onScreenNameClick: u, promotedContent: m, style: w, userDescription: h, userId: g, userName: p, userScreenName: C }) {
-                    return n.createElement(r.Z, { style: w }, n.createElement(a.Z, { link: l, onClick: c, style: d.root }, n.createElement(s.Z.Promoted, { followButton: e, isUserProtected: t, isUserVerified: i, knownFollowers: o, onScreenNameClick: u, promotedContent: m, userDescription: h, userId: g, userName: p, userScreenName: C })));
+                l = function ({ followButton: e, isUserProtected: t, isUserVerified: i, knownFollowers: o, link: l, onClick: c, onScreenNameClick: u, promotedContent: m, style: w, userDescription: h, userId: p, userName: g, userScreenName: C }) {
+                    return n.createElement(r.Z, { style: w }, n.createElement(a.Z, { link: l, onClick: c, style: d.root }, n.createElement(s.Z.Promoted, { followButton: e, isUserProtected: t, isUserVerified: i, knownFollowers: o, onScreenNameClick: u, promotedContent: m, userDescription: h, userId: p, userName: g, userScreenName: C })));
                 };
         },
         774526: (e, t, i) => {
-            i.d(t, { Y: () => W, Z: () => B });
+            i.d(t, { Y: () => K, Z: () => B });
             var n = i(807896),
                 r = i(202784),
                 a = i(325686),
@@ -153,8 +153,8 @@
                 m = i(276563),
                 w = i(235902),
                 h = i(847224),
-                g = i(950152),
-                p = i(666305),
+                p = i(950152),
+                g = i(666305),
                 C = i(834324),
                 f = i(309854),
                 _ = i(782578),
@@ -183,11 +183,11 @@
                         if (t) {
                             const e = (0, d.Z)(i, 300);
                             return (
-                                p.Z.observe(t, (t) => {
+                                g.Z.observe(t, (t) => {
                                     e(t.contentRect.width);
                                 }),
                                 () => {
-                                    e.cancel(), p.Z.unobserveAll(t);
+                                    e.cancel(), g.Z.unobserveAll(t);
                                 }
                             );
                         }
@@ -195,26 +195,26 @@
                     return [t >= 506, e];
                 };
             function B(e) {
-                const { cardCacheLocationKey: t, forwardPivotInfo: i, id: o, inlineCalloutInfo: s, innerForwardPivotInfo: d, innerNudges: c, isMediaMaxHeightEnabled: p, loggedInUserId: f, onCardLinkClick: v, onQuoteTweetClick: x, onQuoteTweetMediaClick: I, onQuotedTweetAvatarClick: k, onQuotedTweetScreenNameClick: M, preventVideoPlayback: E, promotedContent: A, quoteTweetSingleImageMinAspectRatio: P, quoteTweetSocialContextProps: L, quotedTweetTombstoneInfo: U, renderJetfuelFrame: B, renderQuoteTweetTombstone: q, singleImageMaxAspectRatio: $, style: O, tweet: G, withActionsDisabled: J, withAltTextBadge: Y, withCardLinks: X, withCenterCrop: ee, withCondensedQuoteTweet: te, withHalvedMediaSize: ie, withQuoteTweetBirdwatchPivot: ne, withQuoteTweetHeaderLinks: re, withQuoteTweetLink: ae, withQuoteTweetMedia: oe, withUserHoverCard: se } = Q(e),
+                const { cardCacheLocationKey: t, forwardPivotInfo: i, id: o, inlineCalloutInfo: s, innerForwardPivotInfo: d, innerNudges: c, isMediaMaxHeightEnabled: g, loggedInUserId: f, onCardLinkClick: v, onQuoteTweetClick: x, onQuoteTweetMediaClick: I, onQuotedTweetAvatarClick: k, onQuotedTweetScreenNameClick: M, preventVideoPlayback: E, promotedContent: A, quoteTweetSingleImageMinAspectRatio: P, quoteTweetSocialContextProps: L, quotedTweetTombstoneInfo: U, renderJetfuelFrame: B, renderQuoteTweetTombstone: q, singleImageMaxAspectRatio: $, style: G, tweet: W, withActionsDisabled: J, withAltTextBadge: Y, withCardLinks: X, withCenterCrop: ee, withCondensedQuoteTweet: te, withHalvedMediaSize: ie, withQuoteTweetBirdwatchPivot: ne, withQuoteTweetHeaderLinks: re, withQuoteTweetLink: ae, withQuoteTweetMedia: oe, withUserHoverCard: se } = Q(e),
                     [de, le] = N(),
                     ce = w.ZP.useProps(),
                     ue = ce.withEdgeToEdgeContent(),
                     me = (0, b.b)(),
                     we = (0, b.b)(),
-                    he = Z.Z.getOriginalTweet(G),
-                    ge = ce.compactMediaMaxHeight(),
-                    pe = () => V(he.quoted_status),
+                    he = Z.Z.getOriginalTweet(W),
+                    pe = ce.compactMediaMaxHeight(),
+                    ge = () => V(he.quoted_status),
                     Ce = () => {
-                        const e = pe();
+                        const e = ge();
                         if (!e || !e.original_info) return;
                         const { height: t, width: i } = e && e.original_info;
                         return (0, _.q)(P, $, { width: i, height: t });
                     },
                     fe = () => {
-                        const t = Z.Z.getOriginalTweet(G),
+                        const t = Z.Z.getOriginalTweet(W),
                             i = z(e),
                             n =
-                                p &&
+                                g &&
                                 !i &&
                                 (() => {
                                     const e = Ce();
@@ -222,15 +222,15 @@
                                 })() &&
                                 de,
                             a = (() => {
-                                const e = pe();
+                                const e = ge();
                                 if (e) return F(e);
                             })();
-                        return t && t.is_quote_status ? r.createElement(T.Z, { forwardPivotInfo: t.quoted_status?.softIntervention || d, id: we, isCondensed: te, loggedInUserId: f, mediaContentStyles: !te && j({ withEdgeToEdgeContent: ue, withHalvedMediaSize: ie, backgroundColor: a, withMaxHeight: n, isInQuoteTweet: !0 }), mediaMaxHeight: n ? (ue ? S : ge > 0 ? ge : R) : void 0, nudges: c, onAvatarClick: k, onMediaClick: I, onPress: x, onScreenNameClick: M, preventVideoPlayback: E, promotedContent: A, shouldRenderIfBlocked: !!U, shouldShowAltLabelAlways: Y, singleImageMaxAspectRatio: $, singleImageMinAspectRatio: P, socialContextProps: L, tweet: t.quoted_status, withActionsDisabled: J, withBirdwatchPivot: ne, withCenterCrop: ee, withHeaderLinks: re, withLink: ae, withMediaAsTextLinks: !oe, withUserHoverCard: se }) : null;
+                        return t && t.is_quote_status ? r.createElement(T.Z, { forwardPivotInfo: t.quoted_status?.softIntervention || d, id: we, isCondensed: te, loggedInUserId: f, mediaContentStyles: !te && j({ withEdgeToEdgeContent: ue, withHalvedMediaSize: ie, backgroundColor: a, withMaxHeight: n, isInQuoteTweet: !0 }), mediaMaxHeight: n ? (ue ? S : pe > 0 ? pe : R) : void 0, nudges: c, onAvatarClick: k, onMediaClick: I, onPress: x, onScreenNameClick: M, preventVideoPlayback: E, promotedContent: A, shouldRenderIfBlocked: !!U, shouldShowAltLabelAlways: Y, singleImageMaxAspectRatio: $, singleImageMinAspectRatio: P, socialContextProps: L, tweet: t.quoted_status, withActionsDisabled: J, withBirdwatchPivot: ne, withCenterCrop: ee, withHeaderLinks: re, withLink: ae, withMediaAsTextLinks: !oe, withUserHoverCard: se }) : null;
                     },
                     _e = () => !!A?.adMetadataContainer?.unifiedCardOverride,
                     be = B(),
                     Te = ((e, t) => {
-                        if (!z(e) || K(e)) return null;
+                        if (!z(e) || O(e)) return null;
                         let i;
                         if (t.extended_entities?.media) {
                             const n = t.extended_entities.media;
@@ -240,12 +240,12 @@
                                 i = n.filter((e) => !r.has(e.id_str));
                             } else i = n;
                         }
-                        return r.createElement(W, (0, n.Z)({}, e, { mediaDetails: i }));
+                        return r.createElement(K, (0, n.Z)({}, e, { mediaDetails: i }));
                     })(e, he),
                     ye = (() => {
-                        if (i && i.displayType === g.x.SoftIntervention) {
+                        if (i && i.displayType === p.x.SoftIntervention) {
                             const { displayType: e, landingUrl: t, softInterventionDisplayType: n, text: a } = i;
-                            return r.createElement(h.Z, { displayType: e, isTweetNonCompliant: "non_compliant" === G.limited_actions, landingUrl: t, softInterventionDisplayType: n, text: a, tweetId: G.id_str });
+                            return r.createElement(h.Z, { displayType: e, isTweetNonCompliant: "non_compliant" === W.limited_actions, landingUrl: t, softInterventionDisplayType: n, text: a, tweetId: W.id_str });
                         }
                     })(),
                     ve = s ? r.createElement(C.Z, s) : null,
@@ -259,7 +259,7 @@
                             })()
                         )
                             return null;
-                        const i = m.default.getLegacyOrUnifiedCard(he, A, { isDynamicFollowCardPresentAndEnabled: K(e), isDynamicProductCardPresentAndEnabled: _e(), withCardLinks: X, hasMedia: z(e) }),
+                        const i = m.default.getLegacyOrUnifiedCard(he, A, { isDynamicFollowCardPresentAndEnabled: O(e), isDynamicProductCardPresentAndEnabled: _e(), withCardLinks: X, hasMedia: z(e) }),
                             a = Z.Z.isArticlePost(he);
                         return i && !(a && "NoCard" === i?.unifiedCard?.card_fetch_state) ? r.createElement(u.Z, (0, n.Z)({}, i, { cardContext: { locationKey: t || H, tweetId: he.id_str, tweetPermalink: he.permalink, tweetUserId: he.user.id_str, viewerUserId: f, withActionsDisabled: J, mediaVisibilityResults: he.mediaVisibilityResults, grokShareAttachment: he.grok_share_attachment }, id: me, onCardLinkClick: v, preventVideoPlayback: E, promotedContent: A })) : null;
                     })(),
@@ -273,7 +273,7 @@
                         })() || xe,
                     );
                 if (!(Te || Ie || ye || be)) return null;
-                return r.createElement(a.Z, { "aria-labelledby": `${we} ${me}`, id: o, ref: le, style: [D.gap, O] }, Te || ve || ye ? r.createElement(a.Z, { style: D.mediaPivotGap }, Te, ve, ye) : null, z(e) ? null : be, Ie);
+                return r.createElement(a.Z, { "aria-labelledby": `${we} ${me}`, id: o, ref: le, style: [D.gap, G] }, Te || ve || ye ? r.createElement(a.Z, { style: D.mediaPivotGap }, Te, ve, ye) : null, z(e) ? null : be, Ie);
             }
             const D = I.default.create((e) => ({ gap: { gap: e.spaces.space4 }, jetfuelCard: { paddingTop: e.spaces.space2 }, mediaPivotGap: { gap: e.spaces.space4 }, explicitlySized: { alignSelf: "flex-start" }, edgeToEdgeSingleVideoWithMaxHeight: { display: "block", start: "50%", translate: `calc(-50% + ${e.spacesPx.space16}px)` }, negativeMargin: { marginHorizontal: -e.spacesPx.space16 }, centerItems: { alignItems: "center" } }));
             function q({ children: e, config: t, id: i }) {
@@ -299,25 +299,23 @@
                 return Z.Z.hasMedia(i, !t.withTweetMedia);
             }
             const $ = (e) => {
-                    const t = e?.extended_entities?.media;
-                    return 1 === t?.length && "video" === t[0].type;
-                },
-                O = (e, t, i) => [{ maxHeight: t, maxWidth: t * e, aspectRatio: e, boxSizing: "content-box" }, i && D.edgeToEdgeSingleVideoWithMaxHeight];
-            function K(e) {
+                const t = e?.extended_entities?.media;
+                return 1 === t?.length && "video" === t[0].type;
+            };
+            function O(e) {
                 const t = Q(e);
                 return "true" === t.promotedContent?.experiment_values?.pac_in_timeline && !!t.promotedContent?.adMetadataContainer?.dynamicCardContent;
             }
-            function W(e) {
+            function K(e) {
                 const { mediaDetails: t, ...i } = e,
-                    { displayMediaMetadata: n, enableKeyboardShortcuts: o, forwardPivotInfo: s, isMediaMaxHeightEnabled: d, loggedInUserId: l, mediaAltTranslations: u, mediaCacheLocationKey: h, nudges: g, onGrokClick: p, onMediaClick: C, onMediaTagsClick: f, onPlaybackStarted: b, preventVideoPlayback: T, promotedContent: y, renderPrerollActionMenu: v, showAltTranslation: I, singleImageMaxAspectRatio: k, singleImageMinAspectRatio: M, withAltTextBadge: L, withCenterCrop: U, withHalvedMediaSize: B, withMediaTagsIcon: q, withRoundMediaCorners: K } = Q(i),
-                    [W, G] = N(),
-                    J = w.ZP.useProps(),
-                    Y = J.withEdgeToEdgeContent(),
-                    X = Z.Z.getOriginalTweet(e.tweet),
-                    ee = J.isVerticalVideoNoBlackBars(),
-                    te = $(X),
-                    ie = !!V(X),
-                    ne =
+                    { displayMediaMetadata: n, enableKeyboardShortcuts: o, forwardPivotInfo: s, isMediaMaxHeightEnabled: d, loggedInUserId: l, mediaAltTranslations: u, mediaCacheLocationKey: h, nudges: p, onGrokClick: g, onMediaClick: C, onMediaTagsClick: f, onPlaybackStarted: b, preventVideoPlayback: T, promotedContent: y, renderPrerollActionMenu: v, showAltTranslation: I, singleImageMaxAspectRatio: k, singleImageMinAspectRatio: M, withAltTextBadge: L, withCenterCrop: U, withHalvedMediaSize: B, withMediaTagsIcon: q, withRoundMediaCorners: O } = Q(i),
+                    [K, G] = N(),
+                    W = w.ZP.useProps(),
+                    J = W.withEdgeToEdgeContent(),
+                    Y = Z.Z.getOriginalTweet(e.tweet),
+                    X = $(Y),
+                    ee = !!V(Y),
+                    te =
                         (function (e, t, i) {
                             const n = Q(t);
                             if (!z(n)) return;
@@ -327,30 +325,29 @@
                             const { height: o, width: s } = { ...a.original_info, ...a.video_info },
                                 d = s / o;
                             return i ? (0, c.Z)(d, n.singleImageMinAspectRatio, n.singleImageMaxAspectRatio) : s / o;
-                        })(X, e, ie) ?? 1,
-                    re = ee
-                        ? d && ne < 1 && (te || W)
-                        : d &&
-                          (function (e, t) {
-                              const i = Q(t);
-                              if (!z(i)) return !1;
-                              const n = V(e);
-                              if (!n || !n.original_info) return !1;
-                              const { height: r, width: a } = n && n.original_info;
-                              return (0, _.q)(i.singleImageMinAspectRatio, i.singleImageMaxAspectRatio, { width: a, height: r }) < 1;
-                          })(X, e) &&
-                          W,
-                    ae = J.compactMediaMaxHeight(),
-                    oe = Y ? S : ae > 0 ? ae : R,
-                    se = (function (e) {
+                        })(Y, i, ee) ?? 1,
+                    ie =
+                        d &&
+                        (function (e, t) {
+                            const i = Q(t);
+                            if (!z(i)) return !1;
+                            const n = V(e);
+                            if (!n || !n.original_info) return !1;
+                            const { height: r, width: a } = n && n.original_info;
+                            return (0, _.q)(i.singleImageMinAspectRatio, i.singleImageMaxAspectRatio, { width: a, height: r }) < 1;
+                        })(Y, i) &&
+                        K,
+                    ne = W.compactMediaMaxHeight(),
+                    re = J ? S : ne > 0 ? ne : R,
+                    ae = (function (e) {
                         const t = V(e);
                         if (t) return F(t);
-                    })(X);
-                if (A.B(X)) return r.createElement(P.Z, { tweet: X });
-                if (X.card && m.default.isSpaceCard(X.card.name)) return r.createElement(a.Z, { style: D.gap }, r.createElement(x.Z, { audioSpaceId: X.card.binding_values.id?.string_value, clipMetadata: X.card.binding_values.clip_metadata?.string_value }));
-                const de = d && ae > 0 && (ie || te),
-                    le = oe * (ie || ee ? ne : Math.max(1, ne));
-                return r.createElement(a.Z, { ref: G, style: de && { maxWidth: le } }, r.createElement(E.Z, { authorId: X.user.id_str, authorScreenName: X.user.screen_name, cacheLocationKey: h || H, customHoverBackgroundColor: re && Y ? se : void 0, displayMediaAttribution: !0, displayMediaMetadata: n, enableKeyboardShortcuts: o, forwardPivotInfo: s, hasSensitiveMedia: X.possibly_sensitive, loggedInUserId: l, mediaAltTranslations: u, mediaContentStyles: [j({ withEdgeToEdgeContent: Y, withHalvedMediaSize: B, backgroundColor: se, withMaxHeight: re }), ee && re && te && O(ne, oe, Y)], mediaDetails: t, mediaMaxHeight: re ? oe : void 0, mediaTagsLink: `${X.permalink}/media_tags`, mediaVisibilityResults: X.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: g, onClick: C, onClickMediaTags: f, onGrokClick: p, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: T, promotedContent: y, renderPrerollActionMenu: v, shouldShowAltLabelAlways: L, showAltTranslation: I, showBorder: !(re && Y), showRoundCorners: K, singleImageMaxAspectRatio: k, singleImageMinAspectRatio: M, style: re && !Y && (!ee || !te) && D.explicitlySized, tweetCreatedAt: X.created_at, tweetId: X.id_str, tweetText: X.text, withCenterCrop: U, withHalvedMediaSize: B, withMediaTagsIcon: q, withPostPlayback: !0 }));
+                    })(Y);
+                if (A.B(Y)) return r.createElement(P.Z, { tweet: Y });
+                if (Y.card && m.default.isSpaceCard(Y.card.name)) return r.createElement(a.Z, { style: D.gap }, r.createElement(x.Z, { audioSpaceId: Y.card?.binding_values.id?.string_value, clipMetadata: Y.card?.binding_values.clip_metadata?.string_value }));
+                const oe = d && ne > 0 && (ee || X),
+                    se = re * (ee ? te : Math.max(1, te));
+                return r.createElement(a.Z, { ref: G, style: oe && { maxWidth: se } }, r.createElement(E.Z, { authorId: Y.user.id_str, authorScreenName: Y.user.screen_name, cacheLocationKey: h || H, customHoverBackgroundColor: ie && J ? ae : void 0, displayMediaAttribution: !0, displayMediaMetadata: n, enableKeyboardShortcuts: o, forwardPivotInfo: s, hasSensitiveMedia: Y.possibly_sensitive, loggedInUserId: l, mediaAltTranslations: u, mediaContentStyles: [j({ withEdgeToEdgeContent: J, withHalvedMediaSize: B, backgroundColor: ae, withMaxHeight: ie })], mediaDetails: t, mediaMaxHeight: ie ? re : void 0, mediaTagsLink: `${Y.permalink}/media_tags`, mediaVisibilityResults: Y.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: p, onClick: C, onClickMediaTags: f, onGrokClick: g, onPlaybackStarted: b, parentTweetId: e.tweet.id_str, preventPlayback: T, promotedContent: y, renderPrerollActionMenu: v, shouldShowAltLabelAlways: L, showAltTranslation: I, showBorder: !(ie && J), showRoundCorners: O, singleImageMaxAspectRatio: k, singleImageMinAspectRatio: M, style: ie && !J && D.explicitlySized, tweetCreatedAt: Y.created_at, tweetId: Y.id_str, tweetText: Y.text, withCenterCrop: U, withHalvedMediaSize: B, withMediaTagsIcon: q, withPostPlayback: !0 }));
             }
             function j(e) {
                 const { backgroundColor: t, isInQuoteTweet: i = !1, withEdgeToEdgeContent: n, withHalvedMediaSize: r, withMaxHeight: a } = e;
@@ -374,4 +371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed.6c5fab2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-2aa5c1ed.fffd25fa.js.map

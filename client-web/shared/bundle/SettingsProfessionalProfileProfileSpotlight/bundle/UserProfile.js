@@ -377,7 +377,7 @@
             const d = c;
         },
         257466: (e, l, a) => {
-            a.d(l, { Z: () => Re });
+            a.d(l, { Z: () => Pe });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -401,29 +401,29 @@
                 metadata: null,
                 name: "ProfileSpotlight_user",
                 selections: [
+                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserRelationshipPerspectives",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "relationship_perspectives",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW" },
-                            { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
+                            { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
                         ],
                         storageKey: null,
                     },
-                    { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     { args: null, kind: "FragmentSpread", name: "LocationSpotlight_user" },
                     { args: null, kind: "FragmentSpread", name: "ShopSpotlight_user" },
                     { args: null, kind: "FragmentSpread", name: "JobSpotlight_user" },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "9f5edbe9db393f5e075fbcd98b3af293",
+                hash: "99e0fee8d438608ac65276c2fb26229f",
             };
             const r = i;
             var s = a(202784),
@@ -446,24 +446,13 @@
                 name: "JobSpotlight_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                    {
-                        alias: null,
-                        args: null,
-                        concreteType: "ApiUser",
-                        kind: "LinkedField",
-                        name: "legacy",
-                        plural: !1,
-                        selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
-                        ],
-                        storageKey: null,
-                    },
                     { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
+                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "d59aae25b2c0313907acf11d5cdfff36",
+                hash: "16478ddec17d7602bb4852559635048e",
             };
             const b = f;
             var h = a(443781),
@@ -510,9 +499,9 @@
                 C = a(67369),
                 K = a(731708),
                 w = a(174326),
-                x = a(392237),
-                v = a(332920),
-                L = a.n(v),
+                v = a(392237),
+                x = a(332920),
+                L = a.n(x),
                 T = {
                     argumentDefinitions: [],
                     kind: "Fragment",
@@ -539,25 +528,25 @@
                     const r = u()(M, t);
                     return s.createElement(I.Z, { formattedSalary: r.formatted_salary, id: a, isVerifiedOrg: e, isViewerFollowsUser: l, jobIndex: n, location: r.location, maxSalary: r.salary_max, minSalary: r.salary_min, profileId: i, redirectUrl: r.redirect_url, salaryInterval: r.salary_interval, title: r.title || "" });
                 },
-                R = s.memo(Z);
+                P = s.memo(Z);
             var D = a(725516),
-                P = a(272590);
-            const j = L().ddee8ae2,
+                j = a(272590);
+            const R = L().ddee8ae2,
                 B = L().d2a04c68,
-                A = S,
-                U = ({ profileSpotlight: e, user: l }) => {
+                U = S,
+                A = ({ profileSpotlight: e, user: l }) => {
                     const [a, n] = s.useState(0),
                         [t, i] = s.useState(0),
                         r = (0, D.z)(),
                         { profile_id: o } = r.contextualScribeData,
-                        c = l?.legacy?.following,
-                        d = u()(A, e);
+                        c = Boolean(l?.relationship_perspectives?.following),
+                        d = u()(U, e);
                     s.useEffect(() => {
-                        d && d.data?.featured_jobs_results?.length && r.scribe({ ...(0, P.yt)("jobs_module", "impression"), data: { ...(0, P.RV)(void 0, void 0, c, o) } });
+                        d && d.data?.featured_jobs_results?.length && r.scribe({ ...(0, j.yt)("jobs_module", "impression"), data: { ...(0, j.RV)(void 0, void 0, c, o) } });
                     }, [r, c, d, o]);
                     const m = s.useCallback(
                             ({ next: e, previous: l }) => {
-                                (a === e && t === l) || (a !== e && n(e), t !== l && i(l), r.scribe({ ...(0, P.yt)("jobs_module", "scroll"), data: { ...(0, P.RV)(void 0, void 0, c, o) } }));
+                                (a === e && t === l) || (a !== e && n(e), t !== l && i(l), r.scribe({ ...(0, j.yt)("jobs_module", "scroll"), data: { ...(0, j.RV)(void 0, void 0, c, o) } }));
                             },
                             [r, c, a, t, o],
                         ),
@@ -568,39 +557,39 @@
                                 if (!g[e]) {
                                     if (l >= 0.5) {
                                         const l = e === d?.data?.featured_jobs_results?.length;
-                                        r.scribe({ ...(0, P.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, P.RV)(a, e, c, o) } });
+                                        r.scribe({ ...(0, j.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, j.RV)(a, e, c, o) } });
                                     }
                                     p((a) => ({ ...a, [e]: { min: l } }));
                                 }
                                 var n;
                                 if (((n = e), 1 === l && g[n]?.min < 0.5)) {
                                     const l = e === d?.data?.featured_jobs_results?.length;
-                                    r.scribe({ ...(0, P.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, P.RV)(d?.data?.featured_jobs_results?.[e]?.rest_id, e, c, o) } }), p((l) => ({ ...l, [e]: { min: 1 } }));
+                                    r.scribe({ ...(0, j.yt)("jobs_module", "impression", l ? "view_more" : "job"), data: { ...(0, j.RV)(d?.data?.featured_jobs_results?.[e]?.rest_id, e, c, o) } }), p((l) => ({ ...l, [e]: { min: 1 } }));
                                 } else g[e]?.min > l && p((a) => ({ ...a, [e]: { min: l } }));
                             },
                             [r, g, c, d.data?.featured_jobs_results, o],
                         ),
                         { featured_jobs_results: _ } = d.data,
                         f = s.useCallback(() => {
-                            r.scribe({ ...(0, P.yt)("jobs_module", "click", "view_more"), data: { ...(0, P.RV)(void 0, void 0, c, o) } });
+                            r.scribe({ ...(0, j.yt)("jobs_module", "click", "view_more"), data: { ...(0, j.RV)(void 0, void 0, c, o) } });
                         }, [r, c, o]),
                         b = l.legacy?.screen_name ? { pathname: `/${l.legacy.screen_name}/jobs`, external: !1 } : void 0,
                         h = (0, C.yu)();
                     if (0 === _?.length) return null;
-                    const k = [O.spotlightCard];
-                    return h ? k.push(O.mobileSpotlightCard) : h || k.push(O.desktopSpotlightCard), s.createElement(F.Z, { testID: "jobs" }, s.createElement(F.Z, { style: O.header }, s.createElement(K.ZP, { color: "text", size: "subtext1", weight: "bold" }, B), s.createElement(K.ZP, { link: b, onClick: f, size: "subtext1" }, j)), s.createElement(w.Z, { "aria-label": "Jobs carousel", childrenStyle: O.carouselChild, onScroll: m, onVisibleRangeChange: y, scrollToCenter: !0, showNavButtonsOnHover: !1 }, ((e) => _?.map((a, n) => (a.result?.core ? s.createElement(F.Z, { key: a.rest_id, style: e, testID: `job-tile-${n}` }, s.createElement(R, { isVerifiedOrg: !!l.is_verified_organization, isViewerFollowsUser: c, jobId: a.rest_id, jobIndex: n, jobRef: a.result.core, profileId: o })) : null)) ?? [])(k)));
+                    const k = [z.spotlightCard];
+                    return h ? k.push(z.mobileSpotlightCard) : h || k.push(z.desktopSpotlightCard), s.createElement(F.Z, { testID: "jobs" }, s.createElement(F.Z, { style: z.header }, s.createElement(K.ZP, { color: "text", size: "subtext1", weight: "bold" }, B), s.createElement(K.ZP, { link: b, onClick: f, size: "subtext1" }, R)), s.createElement(w.Z, { "aria-label": "Jobs carousel", childrenStyle: z.carouselChild, onScroll: m, onVisibleRangeChange: y, scrollToCenter: !0, showNavButtonsOnHover: !1 }, ((e) => _?.map((a, n) => (a.result?.core ? s.createElement(F.Z, { key: a.rest_id, style: e, testID: `job-tile-${n}` }, s.createElement(P, { isVerifiedOrg: !!l.is_verified_organization, isViewerFollowsUser: c, jobId: a.rest_id, jobIndex: n, jobRef: a.result.core, profileId: o })) : null)) ?? [])(k)));
                 },
-                O = x.default.create((e) => ({ header: { display: "flex", flexDirection: "row", justifyContent: "space-between" }, carouselChild: { height: "auto" }, spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 }, desktopSpotlightCard: { minWidth: "150px", maxWidth: "300px" }, mobileSpotlightCard: { minWidth: "150px", maxWidth: "200px" } })),
-                z = s.memo(U),
+                z = v.default.create((e) => ({ header: { display: "flex", flexDirection: "row", justifyContent: "space-between" }, carouselChild: { height: "auto" }, spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 }, desktopSpotlightCard: { minWidth: "150px", maxWidth: "300px" }, mobileSpotlightCard: { minWidth: "150px", maxWidth: "200px" } })),
+                O = s.memo(A),
                 J = b,
                 V = ({ profileSpotlightRef: e, userRef: l }) => {
                     const { featureSwitches: a } = s.useContext(h.rC),
                         { $fragmentType: n, ...t } = u()(J, l);
                     if (!t) return null;
-                    return a.isTrue("recruiting_jobs_list_consumption_enabled") ? s.createElement(z, { profileSpotlight: e, user: t }) : null;
+                    return a.isTrue("recruiting_jobs_list_consumption_enabled") ? s.createElement(O, { profileSpotlight: e, user: t }) : null;
                 };
-            var W,
-                $ = {
+            var $,
+                W = {
                     argumentDefinitions: [],
                     kind: "Fragment",
                     metadata: null,
@@ -685,7 +674,7 @@
                                             kind: "LinkedField",
                                             name: "opens",
                                             plural: !1,
-                                            selections: (W = [
+                                            selections: ($ = [
                                                 { alias: null, args: null, kind: "ScalarField", name: "day", storageKey: null },
                                                 {
                                                     alias: null,
@@ -703,7 +692,7 @@
                                             ]),
                                             storageKey: null,
                                         },
-                                        { alias: null, args: null, concreteType: "OpenCloseTimeNext", kind: "LinkedField", name: "closes", plural: !1, selections: W, storageKey: null },
+                                        { alias: null, args: null, concreteType: "OpenCloseTimeNext", kind: "LinkedField", name: "closes", plural: !1, selections: $, storageKey: null },
                                     ],
                                     storageKey: null,
                                 },
@@ -715,20 +704,20 @@
                     type: "AboutModule",
                     abstractKey: null,
                 };
-            $.hash = "3da47343f1756b0c4208e4edde6a08ca";
-            const H = $;
-            var N = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "LocationSpotlight_user", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "User", abstractKey: null, hash: "9c8dfb09cccf9c8338bfa02a25fe4c6b" };
-            const G = N;
-            var q = a(617041);
-            const Q = L().jaaa8984,
-                X = G,
-                Y = H,
+            W.hash = "3da47343f1756b0c4208e4edde6a08ca";
+            const N = W;
+            var G = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "LocationSpotlight_user", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "User", abstractKey: null, hash: "9c8dfb09cccf9c8338bfa02a25fe4c6b" };
+            const H = G;
+            var Q = a(617041);
+            const q = L().jaaa8984,
+                X = H,
+                Y = N,
                 ee = ({ profileSpotlightRef: e, showLabel: l = !0, userRef: a }) => {
                     const { featureSwitches: n } = s.useContext(h.rC),
                         t = n.isTrue("responsive_web_location_spotlight_v1_display"),
                         { $fragmentType: i, ...r } = u()(X, a),
                         { $fragmentType: o, ...c } = u()(Y, e);
-                    return t ? s.createElement(q.Z, { label: l ? Q : void 0, location: c, user: r }) : null;
+                    return t ? s.createElement(Q.Z, { label: l ? q : void 0, location: c, user: r }) : null;
                 };
             var le = {
                 argumentDefinitions: [],
@@ -745,17 +734,28 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserRelationshipPerspectives",
+                        kind: "LinkedField",
+                        name: "relationship_perspectives",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
                         ],
                         storageKey: null,
                     },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "6f80695bbac711c55d458ff1692fba5b",
+                hash: "d2e72cef3379f6111197f24a32190d0e",
             };
             const ae = le;
             var ne = {
@@ -874,18 +874,18 @@
                     testID: "Report Product Action Item",
                     text: fe,
                 }),
-                he = x.default.create((e) => ({ textFormat: { display: "inline-block", marginBottom: e.spaces.space20 } })),
-                ke = x.default.create((e) => ({ card: { display: "flex", flexDirection: "row" }, cardImage: { height: "92px", width: "92px" }, largeCardImage: { height: "119px", width: "119px" }, xLargeCardImage: { height: "129px", width: "129px" }, cardText: { display: "flex", flex: 1, flexDirection: "column", justifyContent: "space-between", margin: e.spaces.space12, marginEnd: 0, textAlign: "start", width: "min-content" }, iconFlag: { marginEnd: 0, marginStart: e.spaces.space12, marginVertical: 0 }, iconMore: { height: "1em", width: "1em" }, imgContainer: { borderRadius: `calc(${e.borderRadii.medium} + (${e.borderRadii.xSmall} / 2))`, margin: e.spaces.space4, marginEnd: 0, overflow: "hidden" }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 }, menuControl: { transform: "rotate(90deg)" }, menuControlContainer: { padding: "0.5em", marginTop: e.spaces.space4, marginEnd: e.spaces.space4, marginStart: e.spaces.space8 }, textLabel: { display: "block", minWidth: "116px" }, cardSectionWrapper: { display: "flex", flexDirection: "column" }, textOverflow: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }, productCategory: { marginBottom: e.spaces.space12 }, priceGap: { paddingEnd: e.spaces.space4 }, priceTruncate: { display: "inline-block" }, priceWrap: { display: "flex", flexWrap: "wrap" }, productName: { marginBottom: e.spaces.space4 }, salePriceOverride: { color: e.colors.gray700, textDecorationLine: "line-through", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } })),
+                he = v.default.create((e) => ({ textFormat: { display: "inline-block", marginBottom: e.spaces.space20 } })),
+                ke = v.default.create((e) => ({ card: { display: "flex", flexDirection: "row" }, cardImage: { height: "92px", width: "92px" }, largeCardImage: { height: "119px", width: "119px" }, xLargeCardImage: { height: "129px", width: "129px" }, cardText: { display: "flex", flex: 1, flexDirection: "column", justifyContent: "space-between", margin: e.spaces.space12, marginEnd: 0, textAlign: "start", width: "min-content" }, iconFlag: { marginEnd: 0, marginStart: e.spaces.space12, marginVertical: 0 }, iconMore: { height: "1em", width: "1em" }, imgContainer: { borderRadius: `calc(${e.borderRadii.medium} + (${e.borderRadii.xSmall} / 2))`, margin: e.spaces.space4, marginEnd: 0, overflow: "hidden" }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 }, menuControl: { transform: "rotate(90deg)" }, menuControlContainer: { padding: "0.5em", marginTop: e.spaces.space4, marginEnd: e.spaces.space4, marginStart: e.spaces.space8 }, textLabel: { display: "block", minWidth: "116px" }, cardSectionWrapper: { display: "flex", flexDirection: "column" }, textOverflow: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }, productCategory: { marginBottom: e.spaces.space12 }, priceGap: { paddingEnd: e.spaces.space4 }, priceTruncate: { display: "inline-block" }, priceWrap: { display: "flex", flexWrap: "wrap" }, productName: { marginBottom: e.spaces.space4 }, salePriceOverride: { color: e.colors.gray700, textDecorationLine: "line-through", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" } })),
                 Se = (e) => {
                     const { category: l, imgUrl: a, isViewerFollowsUser: n, price: t, productIndex: i, productKey: r, productLink: o, productName: u, profileId: c, salePrice: d } = e,
                         m = (0, D.z)(),
                         { ThemeScaleNames: g } = se.default,
-                        p = (e) => x.default.theme.scale === g[e],
+                        p = (e) => v.default.theme.scale === g[e],
                         y = p("xSmall") || p("small") || p("normal"),
                         _ = p("large") || p("xLarge"),
                         f = (e) => (0, de.x)({ amount: parseInt(e.micro_value, 10), currencyCode: e.currency_code.toUpperCase(), formatter: 1e6 }),
                         b = () => {
-                            m.scribe({ ...(0, P.UJ)("shop_module", "click", "report_product"), data: { items: [{ commerce_details: { merchant_id: c, product_key: r, product_index: i } }] } });
+                            m.scribe({ ...(0, j.UJ)("shop_module", "click", "report_product"), data: { items: [{ commerce_details: { merchant_id: c, product_key: r, product_index: i } }] } });
                         },
                         h = (e) => s.createElement(me.default, { actionItems: [be({ onScribeEvent: b })], dividerIndices: [1], onClose: e });
                     if (a && o) {
@@ -895,10 +895,10 @@
                             {
                                 link: e,
                                 onClick: (e) => {
-                                    m.scribe({ ...(0, P.UJ)("shop_module", "click", "product"), data: { items: [{ commerce_details: { profile_id: c, product_index: i, product_key: r, is_viewer_follows_user: n } }] } });
+                                    m.scribe({ ...(0, j.UJ)("shop_module", "click", "product"), data: { items: [{ commerce_details: { profile_id: c, product_index: i, product_key: r, is_viewer_follows_user: n } }] } });
                                 },
                                 role: "link",
-                                style: [ke.card, x.default.isDarkMode() ? ke.darkModeContentBackground : ke.contentBackground],
+                                style: [ke.card, v.default.isDarkMode() ? ke.darkModeContentBackground : ke.contentBackground],
                             },
                             s.createElement(F.Z, { style: ke.imgContainer }, s.createElement(ue.Z, { "aria-label": "product", source: { uri: a }, style: [ke.cardImage, p("large") && ke.largeCardImage, p("xLarge") && ke.xLargeCardImage] })),
                             s.createElement(F.Z, { style: ke.cardText }, s.createElement(F.Z, { style: ke.cardSectionWrapper }, s.createElement(K.ZP, { size: "body", style: [ke.textLabel, ke.productName, ke.textOverflow], weight: "bold" }, u), s.createElement(K.ZP, { color: "gray700", size: "subtext2", style: [ke.textLabel, ke.productCategory, ke.textOverflow], testID: "category", weight: "normal" }, l || " ")), s.createElement(F.Z, { style: ke.cardSectionWrapper }, ((e, l) => (null == l || l?.micro_value > e.micro_value ? s.createElement(K.ZP, { size: "subtext1", style: ke.textOverflow, weight: "bold" }, f(e)) : s.createElement(K.ZP, { numberOfLines: 2, style: [y ? ke.textOverflow : "", _ ? ke.priceWrap : ke.priceTruncate] }, s.createElement(K.ZP, { numberOfLines: 1, size: "subtext1", style: ke.priceGap, weight: "bold" }, f(l)), s.createElement(K.ZP, { numberOfLines: 1, size: "subtext1", style: ke.salePriceOverride, weight: "normal" }, f(e)))))(t, d))),
@@ -925,30 +925,30 @@
                 we = ({ profileSpotlight: e, showLabel: l = !0, user: a }) => {
                     const n = (0, D.z)(),
                         { profile_id: t } = n.contextualScribeData,
-                        i = a?.legacy?.following,
+                        i = Boolean(a?.relationship_perspectives?.following),
                         r = te,
                         o = u()(r, e);
                     s.useEffect(() => {
-                        o && o.data?.items.length && n.scribe({ ...(0, P.UJ)("shop_module", "impression"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } });
+                        o && o.data?.items.length && n.scribe({ ...(0, j.UJ)("shop_module", "impression"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } });
                     }, [n, i, t, o]);
                     const [c, d] = s.useState(0),
                         [m, g] = s.useState(0),
                         p = s.useCallback(
                             ({ next: e, previous: l }) => {
-                                (c === e && m === l) || (c !== e && d(e), m !== l && g(l), n.scribe({ ...(0, P.UJ)("shop_module", "scroll"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } }));
+                                (c === e && m === l) || (c !== e && d(e), m !== l && g(l), n.scribe({ ...(0, j.UJ)("shop_module", "scroll"), data: { items: [{ commerce_details: { profile_id: t, is_viewer_follows_user: i } }] } }));
                             },
                             [n, i, c, m, t],
                         ),
                         [y, _] = s.useState({}),
                         f = s.useCallback(
                             ({ index: e, intersectionRatio: l }) => {
-                                y[e] || (l >= 0.5 && n.scribe({ ...(0, P.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((a) => ({ ...a, [e]: { min: l } })));
+                                y[e] || (l >= 0.5 && n.scribe({ ...(0, j.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((a) => ({ ...a, [e]: { min: l } })));
                                 var a;
-                                ((a = e), 1 === l && y[a]?.min < 0.5) ? (n.scribe({ ...(0, P.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((l) => ({ ...l, [e]: { min: 1 } }))) : y[e]?.min > l && _((a) => ({ ...a, [e]: { min: l } }));
+                                ((a = e), 1 === l && y[a]?.min < 0.5) ? (n.scribe({ ...(0, j.UJ)("shop_module", "impression", "product"), data: { items: [{ commerce_details: { profile_id: t, product_index: e, product_key: o?.data.items[e].product_core_data?.product_metadata.product_key, is_viewer_follows_user: i } }] } }), _((l) => ({ ...l, [e]: { min: 1 } }))) : y[e]?.min > l && _((a) => ({ ...a, [e]: { min: l } }));
                             },
                             [n, y, i, t, o?.data.items],
                         ),
-                        b = o && o.data.items.length && a && null !== a.legacy?.following,
+                        b = o && o.data.items.length && a && null !== a.relationship_perspectives?.following,
                         h = (0, C.yu)(),
                         k = 1 === o?.data?.items.length;
                     return b
@@ -957,13 +957,13 @@
                               { testID: "Shop" },
                               s.createElement(
                                   w.Z,
-                                  { "aria-label": L().b5fea270, childrenStyle: k && xe.singleCard, isLocked: k, onScroll: p, onVisibleRangeChange: f, scrollToCenter: !0, showNavButtonsOnHover: !1 },
+                                  { "aria-label": L().b5fea270, childrenStyle: k && ve.singleCard, isLocked: k, onScroll: p, onVisibleRangeChange: f, scrollToCenter: !0, showNavButtonsOnHover: !1 },
                                   ((e, l) => {
                                       const { items: a } = o.data;
                                       return a?.map((a, n) => {
                                           if (a.product_core_data) {
                                               const r = a.product_core_data?.product_metadata.product_key;
-                                              return s.createElement(F.Z, { key: n, style: [xe.spotlightCard, l ? "" : e ? xe.mobileSpotlightCard : xe.desktopSpotlightCard] }, s.createElement(Ke, { isMobileLayout: e, isViewerFollowsUser: i, productIndex: n, productKey: r, productTile: a.product_core_data, profileId: t }));
+                                              return s.createElement(F.Z, { key: n, style: [ve.spotlightCard, l ? "" : e ? ve.mobileSpotlightCard : ve.desktopSpotlightCard] }, s.createElement(Ke, { isMobileLayout: e, isViewerFollowsUser: i, productIndex: n, productKey: r, productTile: a.product_core_data, profileId: t }));
                                           }
                                           return null;
                                       });
@@ -972,14 +972,14 @@
                           )
                         : null;
                 },
-                xe = x.default.create((e) => ({ spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, minHeight: "100px", marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden" }, desktopSpotlightCard: { maxWidth: "350px" }, mobileSpotlightCard: { maxWidth: "304px" }, singleCard: { flex: 1 } })),
-                ve = s.memo(we),
+                ve = v.default.create((e) => ({ spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, minHeight: "100px", marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden" }, desktopSpotlightCard: { maxWidth: "350px" }, mobileSpotlightCard: { maxWidth: "304px" }, singleCard: { flex: 1 } })),
+                xe = s.memo(we),
                 Le = ae,
                 Te = ({ profileSpotlightRef: e, showLabel: l = !0, userRef: a }) => {
                     const { featureSwitches: n } = s.useContext(h.rC),
                         t = n.isTrue("responsive_web_commerce_shop_spotlight_enabled"),
                         { $fragmentType: i, ...r } = u()(Le, a);
-                    return t ? s.createElement(ve, { profileSpotlight: e, showLabel: l, user: r }) : null;
+                    return t ? s.createElement(xe, { profileSpotlight: e, showLabel: l, user: r }) : null;
                 },
                 Ee = r,
                 Ie = t,
@@ -1006,7 +1006,7 @@
                         return null;
                 }
             }
-            const Re = s.memo(Ze);
+            const Pe = s.memo(Ze);
         },
         719146: (e, l, a) => {
             a.d(l, { Z: () => h });
@@ -1214,4 +1214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.b76a515a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.dea0a8fa.js.map

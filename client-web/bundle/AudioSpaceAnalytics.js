@@ -3,7 +3,7 @@
     ["bundle.AudioSpaceAnalytics", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
     {
         738545: (e, t, n) => {
-            n.d(t, { ZP: () => w });
+            n.d(t, { ZP: () => v });
             var r = n(202784),
                 o = n(325686),
                 a = n(332920),
@@ -17,29 +17,29 @@
                 m = n(635998);
             const g = l().i2785009,
                 f = l().c778d80b,
-                h = l().d9687d23,
-                E = l().ac73eb5a,
-                x = l().c5a9f921,
+                E = l().d9687d23,
+                x = l().ac73eb5a,
+                h = l().c5a9f921,
                 y = (e) => {
                     const { label: t, popover: n } = e;
-                    return t ? r.createElement(o.Z, { style: v.labelBar }, r.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), n ? r.createElement(m.Z, { label: t, popover: n }) : null) : null;
+                    return t ? r.createElement(o.Z, { style: w.labelBar }, r.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), n ? r.createElement(m.Z, { label: t, popover: n }) : null) : null;
                 },
                 b = (e) => {
                     const { style: t, unit: n } = e;
-                    return n ? r.createElement(d.ZP, { color: "gray700", style: [v.unitText, t], weight: "medium" }, n) : null;
+                    return n ? r.createElement(d.ZP, { color: "gray700", style: [w.unitText, t], weight: "medium" }, n) : null;
                 },
                 Z = (e) => {
                     let t,
                         n,
                         { trendValue: a } = e;
-                    return void 0 === a ? null : (Math.abs(a) < 0.1 ? ((a = Math.round(1e3 * a) / 1e3), (t = f(a))) : ((a = Math.round(100 * a) / 100), (t = g(a))), (n = ((e, t) => (e < 0 ? h({ trendValueNegativePercent: t }) : 0 === e ? E : x({ trendValuePositivePercent: t })))(a, t)), a < 0 ? r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": n, style: v.trendIconNeg }), r.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === a ? r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": n, style: v.trendIconZero }), r.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": n, style: v.trendIconPos }), r.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                    return void 0 === a ? null : (Math.abs(a) < 0.1 ? ((a = Math.round(1e3 * a) / 1e3), (t = f(a))) : ((a = Math.round(100 * a) / 100), (t = g(a))), (n = ((e, t) => (e < 0 ? E({ trendValueNegativePercent: t }) : 0 === e ? x : h({ trendValuePositivePercent: t })))(a, t)), a < 0 ? r.createElement(o.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": n, style: w.trendIconNeg }), r.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === a ? r.createElement(o.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": n, style: w.trendIconZero }), r.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(o.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": n, style: w.trendIconPos }), r.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
-                v = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
-                w = (e) => {
+                w = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
+                v = (e) => {
                     const { animated: t, count: n, label: a, popover: l, size: i, subTextList: s, trendValue: c, unit: p, value: m } = e,
-                        g = p || void 0 !== c ? v.textWithMargin : void 0,
-                        f = void 0 !== c ? v.textWithMargin : void 0;
-                    return r.createElement(o.Z, { style: v.dataPoint }, r.createElement(y, { label: a, popover: l }), r.createElement(o.Z, { style: v.valueBar }, t ? r.createElement(u.ZP, { count: n, size: i, style: g, weight: "bold" }, m) : r.createElement(d.ZP, { size: i, style: g, weight: "bold" }, m), r.createElement(b, { style: f, unit: p }), r.createElement(Z, { trendValue: c })), s);
+                        g = p || void 0 !== c ? w.textWithMargin : void 0,
+                        f = void 0 !== c ? w.textWithMargin : void 0;
+                    return r.createElement(o.Z, { style: w.dataPoint }, r.createElement(y, { label: a, popover: l }), r.createElement(o.Z, { style: w.valueBar }, t ? r.createElement(u.ZP, { count: n, size: i, style: g, weight: "bold" }, m) : r.createElement(d.ZP, { size: i, style: g, weight: "bold" }, m), r.createElement(b, { style: f, unit: p }), r.createElement(Z, { trendValue: c })), s);
                 };
         },
         635998: (e, t, n) => {
@@ -117,35 +117,35 @@
                 g = s.default.create({ root: { overflow: "hidden" } }),
                 f = (e) => {
                     const { children: t, containerStyle: n, count: s, ...d } = e,
-                        [f, h] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
-                        E = r.useRef(!1);
+                        [f, E] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
+                        x = r.useRef(!1);
                     return (
                         r.useEffect(
                             () => (
-                                (E.current = !0),
+                                (x.current = !0),
                                 function () {
-                                    E.current = !1;
+                                    x.current = !1;
                                 }
                             ),
                             [],
                         ),
                         r.useEffect(() => {
-                            if (E.current)
-                                if (l.Z.reducedMotionEnabled) h((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
+                            if (x.current)
+                                if (l.Z.reducedMotionEnabled) E((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
                                 else if (t !== f.pendingText) {
-                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? h((e) => ({ ...e, pendingCount: null, pendingText: null })) : (h((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || u(e.count, t, h));
+                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? E((e) => ({ ...e, pendingCount: null, pendingText: null })) : (E((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || u(e.count, t, E));
                                 }
                         }, [t]),
                         r.useEffect(() => {
-                            E.current &&
+                            x.current &&
                                 !1 === f.animating &&
                                 (f.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              E.current && h((e) => ({ ...e, animating: !0 }));
+                                              x.current && E((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : f.pendingText && u(f.pendingCount, f.pendingText, h));
+                                    : f.pendingText && u(f.pendingCount, f.pendingText, E));
                         }, [f.animating, f.oldText]),
                         r.useMemo(() => {
                             const e = p[f.transitionDirection],
@@ -164,28 +164,15 @@
                                         onTransitionEnd: () =>
                                             ((e, t) => {
                                                 e && t((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(E.current, h),
+                                            })(x.current, E),
                                         style: c,
                                     },
                                     r.createElement(i.ZP, d, f.text),
                                 ),
                             );
-                        }, [n, d, f, E, h])
+                        }, [n, d, f, x, E])
                     );
                 };
-        },
-        711223: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                l = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
         },
         662678: (e, t, n) => {
             n.d(t, { G: () => o, Z: () => r });
@@ -205,4 +192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceAnalytics.ffb7a14a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceAnalytics.d2d1dc6a.js.map

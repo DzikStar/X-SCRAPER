@@ -260,8 +260,8 @@
                         d = s && n ? s / n : 1,
                         i = d > 1,
                         l = t ? 400 : c,
-                        h = i && s <= l ? u(o, l) : o,
-                        m = !i && n <= l ? u(r, l) : r;
+                        h = i && (!s || s <= l) ? u(o, l) : o,
+                        m = i || (n && !(n <= l)) ? r : u(r, l);
                     return a.Z.getContainDimensions({ width: h, height: m }, d);
                 },
                 p = (e) => {
@@ -280,7 +280,7 @@
                 C = (e, t) => {
                     switch (t.type) {
                         case "zoom":
-                            return { ...e, isZoomed: t.payload?.isZoomed, showControls: !t.payload?.isZoomed };
+                            return { ...e, isZoomed: t.payload.isZoomed, showControls: !t.payload.isZoomed };
                         case "tap":
                             return { ...e, showControls: !e.showControls };
                         default:
@@ -892,4 +892,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.765b1a6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.b429a53a.js.map

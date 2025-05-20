@@ -4153,7 +4153,7 @@
                     return i.stringCount + " new request" + t(i.count, "", "s");
                 }),
                 o("ed93de0c", "Analisi post in corso"),
-                o("d1d92e40", "More details"),
+                o("d1d92e40", "Altri dettagli"),
                 o("a6e89af8", "Conversazione aperta"),
                 o("ica55d24", "Nuova conversazione"),
                 o("f794af9a", "Modalità divertente"),
@@ -4366,8 +4366,8 @@
                 o("g01599b6", "Risposta 1"),
                 o("e02694e0", "Risposta 2"),
                 o("h6867fcc", "Preferisco questa risposta"),
-                o("acc4496c", "Try Grok Voice mode"),
-                o("jd36d190", "Access advanced features with Grok Android app"),
+                o("acc4496c", "Prova la modalità vocale di Grok"),
+                o("jd36d190", "Sfrutta le funzioni avanzate con l'app Grok per Android"),
                 o("hf9afab0", "Abilita DeepSearch per consultare Internet e X, analizzare informazioni e fornire risposte dettagliate e supportate da solide argomentazioni grazie alla rapida ricerca agentica."),
                 o("ef3b3f04", "Per utilizzare il nostro modello di ragionamento, abilita Ragionamento. È l'ideale per la matematica, la scienza e la programmazione. Puoi anche chiedere a Grok di ragionare più a fondo su ogni quesito che potrebbe richiedere un po' più di impegno. "),
                 o("b43636b8", "Ti presentiamo Grok 3"),
@@ -5845,7 +5845,7 @@
                 o("ab1b3d38", "I dati sulle richieste di note non sono ancora disponibili"),
                 o("c43fb933", "l'accordo e le norme per gli sviluppatori di X"),
                 o("af781666", "Cosa pensano gli altri?"),
-                o("a1f414ee", "Share thoughts"),
+                o("a1f414ee", "Condividi la tua opinione"),
                 o("ed88e742", "Copia link dell'argomento"),
                 o("h92fe1be", "Purtroppo, al momento, Note della collettività non è disponibile per te."),
                 o("f0dc1434", "Attualmente Note della collettività è disponibile solo negli Stati Uniti"),
@@ -12027,6 +12027,12 @@
                             },
                         },
                         {
+                            key: "gfc900b9",
+                            get: function () {
+                                return ["(", " Fee)"];
+                            },
+                        },
+                        {
                             key: "bd9265e3",
                             get: function () {
                                 return ["(", "% di commissione, minimo di ", ")"];
@@ -12675,6 +12681,24 @@
                             },
                         },
                         {
+                            key: "i74be1ef",
+                            get: function () {
+                                return ["", " e "];
+                            },
+                        },
+                        {
+                            key: "he2cc06d",
+                            get: function () {
+                                return ["", " e "];
+                            },
+                        },
+                        {
+                            key: "hf3108d3",
+                            get: function () {
+                                return ["", " e "];
+                            },
+                        },
+                        {
                             key: "i6125da7",
                             get: function () {
                                 return ["", " · "];
@@ -13238,4 +13262,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.add6989a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.ddd7f34a.js.map
