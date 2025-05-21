@@ -221,15 +221,110 @@
             };
             const i = l;
         },
-        143543: (e, a, n) => {
-            n.d(a, { Z: () => d });
+        629928: (e, a, n) => {
+            n.d(a, { Z: () => c });
             var l,
                 i,
                 t,
                 r,
                 s,
                 o,
+                d,
                 u = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "IDVerificationQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified_label_hidden", storageKey: null }), { kind: "RequiredField", field: (s = { alias: null, args: null, kind: "ScalarField", name: "identity_verification_status", storageKey: null }), action: "THROW" }, (o = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "IDVerificationQuery",
+                        selections: [
+                            {
+                                alias: "viewer",
+                                args: l,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                                    { kind: "InlineFragment", selections: [i, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [t, r, s, (d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), o], storageKey: null }, d], type: "User", abstractKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            d,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"4721")',
+                            },
+                        ],
+                    },
+                    params: { id: "3Wx7dsynDTSI0LO52L8L8A", metadata: { features: ["identity_verification_hide_verified_label_settings_enabled"] }, name: "IDVerificationQuery", operationKind: "query", text: null },
+                };
+            u.hash = "6269adea05f11011ee2eec87df25951d";
+            const c = u;
+        },
+        993770: (e, a, n) => {
+            n.d(a, { Z: () => r });
+            var l,
+                i,
+                t = {
+                    fragment: {
+                        argumentDefinitions: (l = [
+                            { defaultValue: null, kind: "LocalArgument", name: "is_identity_verified_label_hidden" },
+                            { defaultValue: null, kind: "LocalArgument", name: "user_id" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "IDVerificationUpdateHideLabelMutation",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "is_identity_verified_label_hidden", variableName: "is_identity_verified_label_hidden" },
+                                    { kind: "Variable", name: "user_id", variableName: "user_id" },
+                                ],
+                                kind: "ScalarField",
+                                name: "userverificationinfo_is_identity_verified_label_hidden_put",
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "IDVerificationUpdateHideLabelMutation", selections: i },
+                    params: { id: "lqIzyQL1p3XCZg77zekzZA", metadata: {}, name: "IDVerificationUpdateHideLabelMutation", operationKind: "mutation", text: null },
+                };
+            t.hash = "6b62958a6368974d13a27b8fe59103e0";
+            const r = t;
+        },
+        143543: (e, a, n) => {
+            n.d(a, { Z: () => u });
+            var l,
+                i,
+                t,
+                r,
+                s,
+                o,
+                d = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -370,8 +465,8 @@
                     },
                     params: { id: "n2hELAawLlHY0DP24k3Fkg", metadata: {}, name: "ManageAffiliateBadgesQuery", operationKind: "query", text: null },
                 };
-            u.hash = "7e5ce8ef47244c459910a091df5c0c4f";
-            const d = u;
+            d.hash = "7e5ce8ef47244c459910a091df5c0c4f";
+            const u = d;
         },
         799076: (e, a, n) => {
             n.d(a, { Z: () => o });
@@ -438,12 +533,12 @@
                 r,
                 s,
                 o,
-                u,
                 d,
+                u,
                 c,
                 m,
                 g = {
-                    fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }]), kind: "Fragment", metadata: null, name: "MonetizationSettingsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "is_active_creator", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "super_follows_application_status", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "awards_eligibility", storageKey: null }), { args: (d = [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }]), kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }, { args: d, kind: "FragmentSpread", name: "SuperFollowsSettingsInternalLinkPivot_user" }, { args: d, kind: "FragmentSpread", name: "AwardsSettingsInternalLinkPivot_user" }, { args: d, kind: "FragmentSpread", name: "useMonetizationPayoutAmount_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }, { args: null, kind: "FragmentSpread", name: "SuperFollowsApplicationStatusDescription_viewer" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }]), kind: "Fragment", metadata: null, name: "MonetizationSettingsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "is_active_creator", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "super_follows_application_status", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "awards_eligibility", storageKey: null }), { args: (u = [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }]), kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }, { args: u, kind: "FragmentSpread", name: "SuperFollowsSettingsInternalLinkPivot_user" }, { args: u, kind: "FragmentSpread", name: "AwardsSettingsInternalLinkPivot_user" }, { args: u, kind: "FragmentSpread", name: "useMonetizationPayoutAmount_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }, { args: null, kind: "FragmentSpread", name: "SuperFollowsApplicationStatusDescription_viewer" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: l,
@@ -476,7 +571,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [r, s, o, u, { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (c = [{ alias: null, args: null, kind: "ScalarField", name: "revenue_since_last_payout_in_cents", storageKey: null }]), storageKey: null }, { condition: "awardsEnabled", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "awards_revenue", plural: !1, selections: c, storageKey: null }] }, { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: c, storageKey: null }, { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null }, (m = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [r, s, o, d, { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (c = [{ alias: null, args: null, kind: "ScalarField", name: "revenue_since_last_payout_in_cents", storageKey: null }]), storageKey: null }, { condition: "awardsEnabled", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "awards_revenue", plural: !1, selections: c, storageKey: null }] }, { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: c, storageKey: null }, { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null }, (m = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -519,7 +614,7 @@
             const t = i;
         },
         97233: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 t,
@@ -532,7 +627,7 @@
                     params: { id: "kmAhocLFK1cbzXxGq5Boow", metadata: {}, name: "RepliesGetUserToxicReplyFilterSettingQuery", operationKind: "query", text: null },
                 };
             o.hash = "d67c4e19399da899df0f34ae2d1f5acf";
-            const u = o;
+            const d = o;
         },
         873959: (e, a, n) => {
             n.d(a, { Z: () => i });
@@ -676,6 +771,10 @@
                 hash: "8ea321ff8a1158b9b45dd8ca6d9cd390",
             };
             const i = l;
+        },
+        130919: (e, a, n) => {
+            n.d(a, { t: () => l });
+            const l = Object.freeze({ CanVerifyIdentity: "CanVerifyIdentity", IdentityNonVerifiable: "IdentityNonVerifiable", IdentityVerified: "IdentityVerified", PendingResult: "PendingResult", RequestLocked: "RequestLocked", UnavailableMissingBlueSubscription: "UnavailableMissingBlueSubscription" });
         },
         667218: (e, a, n) => {
             n.d(a, { n: () => l });
@@ -822,8 +921,8 @@
                 r,
                 s,
                 o,
-                u,
-                d = {
+                d,
+                u = {
                     fragment: {
                         argumentDefinitions: (l = [
                             { defaultValue: null, kind: "LocalArgument", name: "current_product_sku" },
@@ -916,11 +1015,11 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useTierSwitchStatusQuery", selections: [{ alias: "viewer", args: i, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: r, concreteType: null, kind: "LinkedField", name: "web_tier_switch_progress", plural: !1, selections: [t, { kind: "TypeDiscriminator", abstractKey: "__isWebPaymentsGetTierSwitchProgressResult" }, s, o], storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useTierSwitchStatusQuery", selections: [{ alias: "viewer", args: i, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: r, concreteType: null, kind: "LinkedField", name: "web_tier_switch_progress", plural: !1, selections: [t, { kind: "TypeDiscriminator", abstractKey: "__isWebPaymentsGetTierSwitchProgressResult" }, s, o], storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, d], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
                     params: { id: "wU3n9GpHHMz92VCWEBHbhA", metadata: {}, name: "useTierSwitchStatusQuery", operationKind: "query", text: null },
                 };
-            d.hash = "96fd3c2b5f77434e2243b19987a1eb2f";
-            const c = d;
+            u.hash = "96fd3c2b5f77434e2243b19987a1eb2f";
+            const c = u;
         },
         940644: (e, a, n) => {
             n.d(a, { Z: () => s });
@@ -974,24 +1073,24 @@
             const i = l;
         },
         779610: (e, a, n) => {
-            n.d(a, { Z: () => d });
+            n.d(a, { Z: () => u });
             var l = n(202784),
                 i = n(325686),
                 t = n(191796),
                 r = n(58399),
                 s = n(731708),
                 o = n(952428),
-                u = n(392237);
-            const d = (e) => {
-                    const { decoration: a, description: n, disabled: d = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: K, thumbnailSize: S, withoutArrow: h = !1 } = e,
-                        v = [c.thumbnailContainer, "medium" === S && c.thumbnailContainerMedium],
+                d = n(392237);
+            const u = (e) => {
+                    const { decoration: a, description: n, disabled: u = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: K, thumbnailSize: v, withoutArrow: S = !1 } = e,
+                        h = [c.thumbnailContainer, "medium" === v && c.thumbnailContainerMedium],
                         w = "string" == typeof g ? l.createElement(s.ZP, null, g) : g,
                         T = "object" == typeof p && p.external && !p.openInSameFrame,
                         L = n ? ("string" == typeof n ? l.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${F}-description` }, n) : n) : null,
-                        R = l.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? u.default.theme.spaces[k] : u.default.theme.componentDimensions.gutterHorizontal }), [k]);
-                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : p, onPress: y, role: _, style: [c.root, R, d && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, K ? l.createElement(i.Z, { style: v }, K) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || d || h ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), a);
+                        R = l.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? d.default.theme.spaces[k] : d.default.theme.componentDimensions.gutterHorizontal }), [k]);
+                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: u, link: u ? void 0 : p, onPress: y, role: _, style: [c.root, R, u && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, K ? l.createElement(i.Z, { style: h }, K) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || u || S ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), a);
                 },
-                c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
+                c = d.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${d.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
         536606: (e, a, n) => {
             n.d(a, { Z: () => m });
@@ -1001,22 +1100,22 @@
                 r = n(352924),
                 s = n(822399),
                 o = n(98538),
-                u = n(392237);
-            const d = (e) => {
-                const { decoration: a, isCompact: n, progressBarConfig: d, statConfig: m, title: g, valueCurrent: p, valueMax: y } = e,
+                d = n(392237);
+            const u = (e) => {
+                const { decoration: a, isCompact: n, progressBarConfig: u, statConfig: m, title: g, valueCurrent: p, valueMax: y } = e,
                     k = (0, r.F)(),
-                    f = ((_ = d), u.default.theme.colors[_?.color || "blue900"]);
+                    f = ((_ = u), d.default.theme.colors[_?.color || "blue900"]);
                 var _;
                 const b = (function (e) {
-                        return { borderRadius: u.default.theme.borderRadii[e?.borderRadii || "medium"] };
-                    })(d),
+                        return { borderRadius: d.default.theme.borderRadii[e?.borderRadii || "medium"] };
+                    })(u),
                     F = (function (e) {
-                        return { borderRadius: u.default.theme.borderRadii[e?.borderRadii || "medium"], height: u.default.theme.spaces[e?.height || "space8"], backgroundColor: u.default.theme.colors.gray50 };
-                    })(d);
+                        return { borderRadius: d.default.theme.borderRadii[e?.borderRadii || "medium"], height: d.default.theme.spaces[e?.height || "space8"], backgroundColor: d.default.theme.colors.gray50 };
+                    })(u);
                 return l.createElement(i.Z, { style: c.root }, l.createElement(i.Z, { style: c.decoration }, a), l.createElement(i.Z, { style: c.title }, l.createElement(t.ZP, { size: "subtext2", weight: "medium" }, g)), l.createElement(i.Z, { id: k, style: c.valueLabel }, m.value ? l.createElement(o.Z, null, l.createElement(o.Z.Value, null, m.value), l.createElement(o.Z.Label, null, m.label)) : l.createElement(t.ZP, { weight: "bold" }, m.label)), l.createElement(i.Z, { style: n ? c.progressBarContainerCompact : c.progressBarContainer, testID: "progressBarStats-progressBarContainer" }, l.createElement(s.Z, { "aria-describedby": k, "aria-valuemax": y, colorValue: f, progress: p / y, progressStyle: b, style: F })));
             };
-            const c = u.default.create((e) => ({ root: { display: "grid", gridTemplateRows: "auto auto", gridTemplateColumns: "min-content auto auto", marginBottom: e.spaces.space16 }, decoration: { gridRow: "1/3", gridColumn: "1/2", fontSize: "30px" }, title: { display: "flex", alignItems: "flex-start" }, valueLabel: { display: "flex", alignItems: "flex-end" }, progressBarContainer: { gridRow: "2/3", gridColumn: "2/4", marginTop: e.spaces.space8 }, progressBarContainerCompact: { gridRow: "2/3", gridColumn: "2/4" } })),
-                m = l.memo(d);
+            const c = d.default.create((e) => ({ root: { display: "grid", gridTemplateRows: "auto auto", gridTemplateColumns: "min-content auto auto", marginBottom: e.spaces.space16 }, decoration: { gridRow: "1/3", gridColumn: "1/2", fontSize: "30px" }, title: { display: "flex", alignItems: "flex-start" }, valueLabel: { display: "flex", alignItems: "flex-end" }, progressBarContainer: { gridRow: "2/3", gridColumn: "2/4", marginTop: e.spaces.space8 }, progressBarContainerCompact: { gridRow: "2/3", gridColumn: "2/4" } })),
+                m = l.memo(u);
         },
         943401: (e, a, n) => {
             n.d(a, { Z: () => o });
@@ -1040,6 +1139,15 @@
             const s = t.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
                 o = r;
         },
+        928088: (e, a, n) => {
+            n.d(a, { Z: () => r });
+            var l = n(202784),
+                i = n(325686);
+            const t = n(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
+                r = function ({ children: e }) {
+                    return l.createElement(i.Z, { style: t.root }, e);
+                };
+        },
         98538: (e, a, n) => {
             n.d(a, { Z: () => g });
             var l = n(202784),
@@ -1048,8 +1156,8 @@
                 r = n(891198),
                 s = n(280278),
                 o = n(392237);
-            const u = "subtext1",
-                d = l.createContext({ onMedia: !1 });
+            const d = "subtext1",
+                u = l.createContext({ onMedia: !1 });
             class c extends l.Component {
                 constructor(...e) {
                     super(...e),
@@ -1061,7 +1169,7 @@
                 }
                 render() {
                     const { children: e, link: a, onMedia: n, onPress: i } = this.props;
-                    return l.createElement(t.ZP, { color: n ? "white" : "text", hoverLabel: this._getHoverLabel(), link: a, onClick: i }, l.createElement(d.Provider, { value: { onMedia: n } }, e));
+                    return l.createElement(t.ZP, { color: n ? "white" : "text", hoverLabel: this._getHoverLabel(), link: a, onClick: i }, l.createElement(u.Provider, { value: { onMedia: n } }, e));
                 }
             }
             (c.Group = (e) =>
@@ -1072,11 +1180,11 @@
                         .filter(Boolean)
                         .map((e, a, n) => l.createElement(i.Z, { key: a, style: a < n.length - 1 && m.groupItemNonLast }, e)),
                 )),
-                (c.Label = ({ children: e, style: a }) => l.createElement(d.Consumer, null, ({ onMedia: n }) => l.createElement(t.ZP, { children: e, color: n ? "white" : "gray700", size: u, style: a }))),
-                (c.Value = ({ animated: e, children: a, count: n, style: i, weight: r = "bold" }) => l.createElement(d.Consumer, null, ({ onMedia: o }) => (e ? l.createElement(s.ZP, { children: a, count: n, size: u, style: i, weight: r }) : l.createElement(t.ZP, { children: a, color: o ? "white" : "text", size: u, style: i, weight: r }))));
+                (c.Label = ({ children: e, style: a }) => l.createElement(u.Consumer, null, ({ onMedia: n }) => l.createElement(t.ZP, { children: e, color: n ? "white" : "gray700", size: d, style: a }))),
+                (c.Value = ({ animated: e, children: a, count: n, style: i, weight: r = "bold" }) => l.createElement(u.Consumer, null, ({ onMedia: o }) => (e ? l.createElement(s.ZP, { children: a, count: n, size: d, style: i, weight: r }) : l.createElement(t.ZP, { children: a, color: o ? "white" : "text", size: d, style: i, weight: r }))));
             const m = o.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 g = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.f53a858a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.cc2af53a.js.map

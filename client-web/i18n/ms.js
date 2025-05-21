@@ -12024,7 +12024,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(Yuran ", ")"];
                             },
                         },
                         {
@@ -13256,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.b39157aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6c1dafaa.js.map

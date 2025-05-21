@@ -48,9 +48,9 @@
             var n = t(552322),
                 a = t(159603),
                 i = t(455091),
-                r = t(193686),
-                l = t(993165),
-                o = t(917317),
+                r = t(702024),
+                l = t(436059),
+                o = t(407250),
                 c = t(202784),
                 d = t(611463),
                 m = t(379342),
@@ -112,20 +112,20 @@
             t.d(s, { C: () => j });
             var n = t(552322),
                 a = t(159603),
-                i = t(653748),
-                r = t(193686),
-                l = t(423011),
-                o = t(993165),
-                c = t(687521),
-                d = t(983706),
+                i = t(844098),
+                r = t(702024),
+                l = t(130629),
+                o = t(436059),
+                c = t(887390),
+                d = t(921879),
                 m = t(202784),
                 x = t(611463),
                 u = t(533476),
                 p = t(658358),
                 h = t(466285),
                 f = t(620134),
-                g = t(458872),
-                v = t(875515);
+                g = t(889198),
+                v = t(107039);
             const j = ({ conversationId: e, onVisibilityChange: s }) => {
                     const [t, l] = (0, m.useState)(null),
                         o = (0, x.n)();
@@ -212,9 +212,9 @@
             var n = t(552322),
                 a = t(159603),
                 i = t(289752),
-                r = t(322506),
-                l = t(332161),
-                o = t(89195),
+                r = t(130844),
+                l = t(941204),
+                o = t(861514),
                 c = t(517922),
                 d = t(556160);
             const m = a.com.x.models.dm.PostLoadingState,
@@ -222,7 +222,7 @@
             function u({ post: e, onEvent: s, className: t }) {
                 return e.postState instanceof m.NeedsResolution ? (s(new x.ResolvePost(e.postId)), (0, n.jsx)(c.C, {})) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: t }) : (0, n.jsxs)(r.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(l.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(o.Z, {}) })] });
             }
-            var p = t(193686);
+            var p = t(702024);
             const h = a.com.x.dms.model.MessageItemAttachment,
                 f = a.com.x.dms.chat.DmEvent;
             function g({ urlCard: e, onEvent: s }) {
@@ -251,11 +251,11 @@
         83083: (e, s, t) => {
             t.d(s, { Q: () => d });
             var n = t(552322),
-                a = t(332161),
-                i = t(42630),
-                r = t(1357),
+                a = t(941204),
+                i = t(461222),
+                r = t(889122),
                 l = t(455091),
-                o = t(31674),
+                o = t(796309),
                 c = t(509597);
             function d({ filename: e, fileType: s = "Document", fileSize: t, uriToLoad: d, className: m }) {
                 const { t: x } = (0, l.$G)(),
@@ -266,9 +266,9 @@
         617092: (e, s, t) => {
             t.d(s, { K: () => o });
             var n = t(552322),
-                a = t(332161),
-                i = t(1357),
-                r = t(31674),
+                a = t(941204),
+                i = t(889122),
+                r = t(796309),
                 l = t(509597);
             function o({ filename: e, fileSize: s, className: t }) {
                 const o = (0, l.s)(s?.fileSizeMb ?? 0);
@@ -278,13 +278,13 @@
         289752: (e, s, t) => {
             t.d(s, { DM: () => u, Et: () => m, _9: () => x });
             var n = t(552322),
-                a = t(59463),
-                i = t(472275),
-                r = t(193686),
-                l = t(332161),
-                o = t(31674),
+                a = t(891283),
+                i = t(335944),
+                r = t(702024),
+                l = t(941204),
+                o = t(796309),
                 c = t(202784),
-                d = t(841227);
+                d = t(770297);
             function m({ src: e, type: s, dimensions: t, className: a }) {
                 const { width: r, height: l } = p(t),
                     [m, x] = (0, c.useState)(!1),
@@ -322,8 +322,8 @@
             t.d(s, { C: () => o });
             var n = t(552322),
                 a = t(159603),
-                i = t(332161),
-                r = t(89195);
+                i = t(941204),
+                r = t(861514);
             const l = a.com.x.dms.model.MessageItemAttachment;
             function o({ urlCard: e }) {
                 let s = null;
@@ -332,4 +332,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.e9940b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.7bbbf68a.js.map

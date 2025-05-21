@@ -4361,8 +4361,8 @@
                 f("g01599b6", "回答1"),
                 f("e02694e0", "回答2"),
                 f("h6867fcc", "この回答の方が好みです"),
-                f("acc4496c", "Grok音声モードを試す"),
-                f("jd36d190", "Grok Androidアプリで高度な機能を利用できます"),
+                f("acc4496c", "Grokの音声モードを試す"),
+                f("jd36d190", "GrokのAndroidアプリで高度な機能を利用できます"),
                 f("hf9afab0", "DeepSearchを有効にすると、インターネットとXをスキャンして情報を分析し、高速なエージェント検索によって詳細かつ論理的な回答を生成できます。"),
                 f("ef3b3f04", "シンキングを有効にすると、Xの推論モデルを使用できます。数学、科学、コーディングに最適です。もう少し頭を使う必要がある質問については、Grokに「もっとよくシンキングする」よう依頼することもできます。 "),
                 f("b43636b8", "Grok 3のご案内"),
@@ -13263,4 +13263,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.9fa5364a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.4f95ddaa.js.map

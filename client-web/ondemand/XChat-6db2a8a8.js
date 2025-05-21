@@ -9,6 +9,15 @@
                 t = a(139802);
             const s = ({ groupId: e, token: l, settings: a }) => (e && l ? (0, n.jsx)(t.A, { settings: a, children: (0, n.jsx)(r.M, { groupId: e, token: l }) }) : null);
         },
+        671889: (e, l, a) => {
+            a.d(l, { g: () => t });
+            var n = a(552322),
+                r = a(264531);
+            function t({ children: e, ...l }) {
+                const a = (0, r.XE)().bottomBarHeight;
+                return (0, n.jsx)("div", { ...l, style: { paddingBottom: a }, children: e });
+            }
+        },
         700931: (e, l, a) => {
             a.d(l, { H: () => s });
             var n = a(552322),
@@ -19,28 +28,28 @@
         139802: (e, l, a) => {
             a.d(l, { A: () => p });
             var n = a(552322),
-                r = a(19745),
-                t = a(202784),
-                s = a(107267),
-                i = a(607499),
-                o = a(968025),
-                u = a(727071),
-                c = a(768246),
-                d = a(264531),
-                g = a(611463),
-                m = a(455091),
-                y = a(446368);
+                r = a(446368),
+                t = a(455091),
+                s = a(668781),
+                i = a(202784),
+                o = a(107267),
+                u = a(607499),
+                c = a(968025),
+                d = a(727071),
+                g = a(768246),
+                m = a(264531),
+                y = a(611463);
             const p = ({ children: e, settings: l }) => {
-                const a = (0, s.useLocation)(),
-                    p = (0, s.useHistory)(),
-                    [f, h] = (0, t.useState)(new URLSearchParams(a.search)),
-                    _ = (0, s.useParams)(),
-                    { t: b } = (0, m.$G)();
-                (0, t.useEffect)(() => {
+                const a = (0, o.useLocation)(),
+                    p = (0, o.useHistory)(),
+                    [f, h] = (0, i.useState)(new URLSearchParams(a.search)),
+                    _ = (0, o.useParams)(),
+                    { t: b } = (0, t.$G)();
+                (0, i.useEffect)(() => {
                     h(new URLSearchParams(a.search));
                 }, [a.search]);
-                const k = (0, t.useMemo)(() => ({ push: (e, l) => p.push(e, l) }), [p]);
-                return (0, n.jsx)(i.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(o.p, { router: k, children: (0, n.jsx)(y.ng, { children: (0, n.jsx)(u.d, { useParams: () => _, children: (0, n.jsx)(c.x, { searchParams: f, children: (0, n.jsx)(d.mp, { settings: l, children: (0, n.jsxs)(g.U, { children: [e, (0, n.jsx)(r.x, {})] }) }) }) }) }) }) });
+                const k = (0, i.useMemo)(() => ({ push: (e, l) => p.push(e, l) }), [p]);
+                return (0, n.jsx)(u.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(c.p, { router: k, children: (0, n.jsx)(r.ng, { children: (0, n.jsx)(d.d, { useParams: () => _, children: (0, n.jsx)(g.x, { searchParams: f, children: (0, n.jsx)(m.mp, { settings: l, children: (0, n.jsxs)(y.U, { children: [e, (0, n.jsx)(s.x, {})] }) }) }) }) }) }) });
             };
         },
         954713: (e, l, a) => {
@@ -57,7 +66,7 @@
                 r = a(718278),
                 t = a(664147),
                 s = a(549862),
-                i = a(332161);
+                i = a(941204);
             function o() {
                 return (0, n.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, n.jsx)(i.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, n.jsx)("div", { className: "bg-background text-text rounded-full shadow-lg border px-3 py-1.5 flex items-center gap-3 z-50", children: (0, n.jsxs)("div", { className: "flex items-center gap-1.5", children: [(0, n.jsx)(s.J, {}), (0, n.jsx)(t.i, {}), (0, n.jsx)(r.o, {})] }) })] });
             }
@@ -65,8 +74,8 @@
         664147: (e, l, a) => {
             a.d(l, { e: () => i, i: () => o });
             var n = a(552322),
-                r = a(332161),
-                t = a(261012),
+                r = a(941204),
+                t = a(849335),
                 s = a(202784);
             const i = "top_cursor",
                 o = () => {
@@ -555,4 +564,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.b77508ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.645b01da.js.map

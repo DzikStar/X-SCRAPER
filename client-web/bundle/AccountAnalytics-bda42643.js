@@ -6,14 +6,14 @@
             t.d(s, { o: () => _ });
             var a = t(552322),
                 r = t(163637),
-                n = t(913577),
-                l = t(981626),
-                i = t(69716),
-                c = t(679804),
-                d = t(378364),
-                o = t(589259),
-                x = t(287326),
-                m = t(31674),
+                n = t(331282),
+                l = t(2804),
+                i = t(232111),
+                c = t(4744),
+                d = t(26429),
+                o = t(964655),
+                x = t(669833),
+                m = t(796309),
                 h = t(430962),
                 u = t(598705);
             function p() {
@@ -57,7 +57,7 @@
                     ],
                 });
             }
-            var f = t(917317);
+            var f = t(407250);
             function b() {
                 const { spaceDetails: e } = (0, r.R5)(),
                     { analytics: s } = (0, h.M1)(),
@@ -70,7 +70,7 @@
                 return (0, a.jsxs)(f.Zb, { className: "w-full lg:w-[400px] bg-card text-card-foreground", children: [(0, a.jsx)(f.Ol, { className: "space-y-2", children: (0, a.jsx)(f.ll, { className: "text-headline2 font-normal line-clamp-2 max-h-[3em] break-words", children: s.spaceStats }) }), (0, a.jsx)(f.aY, { className: "space-y-4", children: d ? (0, a.jsxs)("div", { className: "flex justify-between items-center", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.attendingSpace }), (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: i })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)("div", { className: "flex justify-between items-center", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.totalParticipants }), (0, a.jsx)(x.O, { label: t.toLocaleString(), children: (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: (0, u.uf)(t) }) })] }), (0, a.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.peakConcurrentViewers }), (0, a.jsx)(x.O, { label: n.toLocaleString(), children: (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: (0, u.uf)(n) }) })] }), c && (0, a.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.totalReplayWatched }), (0, a.jsx)(x.O, { label: l.toLocaleString(), children: (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: (0, u.uf)(l) }) })] })] }) })] });
             }
             var j = t(643715),
-                g = t(1468),
+                g = t(829233),
                 v = t(202784);
             const { Area: y, CartesianGrid: N, XAxis: w, YAxis: k, AreaChart: S } = j,
                 C = (e) => {
@@ -119,7 +119,7 @@
                     t = s?.posts || [];
                 return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.postsContentType, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, u.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e, s) => (0, a.jsx)(z, { post: e, isLast: s === t.length - 1 }, e.id)) }) })] });
             }
-            var R = t(322506),
+            var R = t(130844),
                 D = t(840489);
             function F({ speaker: e }) {
                 const s = `https://x.com/${e.screenName}`;
@@ -131,9 +131,9 @@
                     t = s?.participants.speakers || [];
                 return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.speakers, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, u.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e) => (0, a.jsx)(F, { speaker: e }, e.id)) }) })] });
             }
-            var O = t(993165),
-                Z = t(332161),
-                E = t(458872),
+            var O = t(436059),
+                Z = t(941204),
+                E = t(889198),
                 T = t(968025);
             function V({ spacesOverviewUrl: e = "/analytics/spaces", referrerUrl: s }) {
                 const t = (0, T.t)(),
@@ -170,28 +170,28 @@
             t.d(s, { l: () => F });
             var a = t(552322),
                 r = t(202784),
-                n = t(917317),
-                l = t(993165),
-                i = t(713990),
-                c = t(453436),
-                d = t(679804),
-                o = t(417957),
-                x = t(907927),
-                m = t(14313),
-                h = t(97759),
+                n = t(407250),
+                l = t(436059),
+                i = t(323788),
+                c = t(368567),
+                d = t(4744),
+                o = t(66822),
+                x = t(598682),
+                m = t(990714),
+                h = t(98474),
                 u = t(968025),
                 p = t(634979),
                 f = t(768246),
-                b = t(913577),
-                j = t(434533),
-                g = t(543005),
-                v = t(995348),
-                y = t(981626),
-                N = t(287326),
-                w = t(31674),
+                b = t(331282),
+                j = t(385730),
+                g = t(542495),
+                v = t(182605),
+                y = t(2804),
+                N = t(669833),
+                w = t(796309),
                 k = t(598705),
                 S = t(430962),
-                C = t(193686);
+                C = t(702024);
             function A({ id: e, title: s, date: t, duration: r, speakers: l, listeners: i, isSubscriberOnly: o = !1, scheduledStart: m, state: h, isAvailableForReplay: u = !1, subscriberCount: p, onViewSpaceAction: f, onViewSpaceAnalyticsAction: k }) {
                 const { analytics: C } = (0, S.M1)();
                 return (0, a.jsx)(
@@ -410,4 +410,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.fe762f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.f5f9131a.js.map

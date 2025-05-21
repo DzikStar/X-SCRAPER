@@ -5,7 +5,7 @@
         759746: (e, s, t) => {
             t.d(s, { M: () => o });
             var n = t(552322),
-                a = t(789764),
+                a = t(475694),
                 r = t(350311);
             const i = ({ firstUrl: e, resolution: s, secondUrl: t, size: a = "xxLarge" }) => {
                     const i = ((e) => {
@@ -69,7 +69,7 @@
         350311: (e, s, t) => {
             t.d(s, { j: () => r, s: () => i });
             var n = t(552322),
-                a = t(378364);
+                a = t(26429);
             const r = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                 i = ({ url: e, size: s, resolution: t = "200x200" }) => (0, n.jsx)(a.q, { url: e || r, size: s, resolution: t });
         },
@@ -95,11 +95,11 @@
                 m = t(303676),
                 u = t(928220),
                 x = t(879922),
-                v = t(196594);
-            const h = a.com.x.dms.util;
+                h = t(196594);
+            const v = a.com.x.dms.util;
             class p extends a.com.x.dms.util.EntityParser {
                 doParse(e) {
-                    return a.kotlin.collections.KtList.fromJsArray([...(0, d.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Email(...e)), ...(0, m.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Hashtag(...e)), ...(0, u.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Cashtag(...e)), ...(0, x.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Mention(...e)), ...(0, v.Z)(e).map(({ indices: e }) => new h.ParsedEntity.Url(...e))]);
+                    return a.kotlin.collections.KtList.fromJsArray([...(0, d.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Email(...e)), ...(0, m.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Hashtag(...e)), ...(0, u.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Cashtag(...e)), ...(0, x.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Mention(...e)), ...(0, h.Z)(e).map(({ indices: e }) => new v.ParsedEntity.Url(...e))]);
                 }
             }
             var f = t(842898),
@@ -157,64 +157,69 @@
             }
         },
         92184: (e, s, t) => {
-            t.d(s, { p: () => I });
+            t.d(s, { p: () => U });
             var n = t(552322),
-                a = t(727071),
-                r = t(159603),
-                i = t(439252),
-                o = t(447742),
-                l = t(332161),
-                c = t(193686),
-                d = t(993165),
-                m = t(687521),
-                u = t(174254),
-                x = t(984713),
-                v = t(533476),
-                h = t(455091),
-                p = t(788452);
-            function f() {
-                const { t: e } = (0, h.$G)();
-                return (0, n.jsxs)("div", { className: "flex flex-col flex-grow items-center justify-center gap-2", children: [(0, n.jsx)("div", { className: "text-[76px] mb-10", children: (0, n.jsx)(p.Z, { className: "rotate-[-8.29deg]" }) }), (0, n.jsx)(l.x, { weight: "medium", size: "title4", children: e("Empty inbox") }), (0, n.jsx)(l.x, { color: "gray700", children: e("Message someone") })] });
+                a = t(159603),
+                r = t(702024),
+                i = t(202784),
+                o = t(607499),
+                l = t(727071),
+                c = t(292317),
+                d = t(611463),
+                m = t(615868),
+                u = t(503371),
+                x = t(941204),
+                h = t(436059),
+                v = t(887390),
+                p = t(174254),
+                f = t(984713),
+                g = t(533476),
+                w = t(455091),
+                j = t(125718);
+            function y() {
+                const { t: e } = (0, w.$G)();
+                return (0, n.jsxs)("div", { className: "flex flex-col flex-grow items-center justify-center gap-2", children: [(0, n.jsx)("div", { className: "text-[76px] mb-10", children: (0, n.jsx)(j.Z, { className: "rotate-[-8.29deg]" }) }), (0, n.jsx)(x.x, { weight: "medium", size: "title4", children: e("Empty inbox") }), (0, n.jsx)(x.x, { color: "gray700", children: e("Message someone") })] });
             }
-            var g = t(264531),
-                w = t(897995),
-                j = t(334038);
-            const y = ({ connectionState: e }) => {
+            var b = t(264531),
+                N = t(897995),
+                C = t(334038);
+            const S = ({ connectionState: e }) => {
                 const s = ((e) => {
                     switch (e) {
-                        case r.com.x.dms.DmConnectionIndicatorState.CONNECTING:
+                        case a.com.x.dms.DmConnectionIndicatorState.CONNECTING:
                             return "Connecting";
-                        case r.com.x.dms.DmConnectionIndicatorState.CLOSED:
+                        case a.com.x.dms.DmConnectionIndicatorState.CLOSED:
                             return "Closed";
-                        case r.com.x.dms.DmConnectionIndicatorState.BLOCKED_UPDATE_YOUR_APP:
+                        case a.com.x.dms.DmConnectionIndicatorState.BLOCKED_UPDATE_YOUR_APP:
                             return "Blocked update your app";
                     }
                     return "";
                 })(e);
-                return s ? (0, n.jsxs)("div", { className: "flex items-center gap-2", children: [(0, n.jsx)("div", { children: (0, n.jsx)(c.P, {}) }), (0, n.jsx)(l.x, { weight: "medium", children: s })] }) : null;
+                return s ? (0, n.jsxs)("div", { className: "flex items-center gap-2", children: [(0, n.jsx)("div", { children: (0, n.jsx)(r.P, {}) }), (0, n.jsx)(x.x, { weight: "medium", children: s })] }) : null;
             };
-            var b = t(476865);
-            function N({ value: e, children: s, href: t }) {
+            var _ = t(671889),
+                z = t(816778);
+            function D({ value: e, children: s, href: t }) {
                 const a = "inline-flex flex-1 items-center justify-center gap-1.5 px-2 py-1 text-subtext1 font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
                     r = "bg-transparent border border-gray-100 text-gray-700 font-normal outline-primary !rounded-full px-3 text-[15px] leading-[20px] hover:bg-gray-50 focus:bg-gray-50 active:bg-gray-50 data-[state=active]:border-transparent data-[state=active]:bg-primary/10 data-[state=active]:hover:bg-primary/15 data-[state=active]:active:bg-primary/15 data-[state=active]:text-primary data-[state=active]:font-[500] data-[state=active]:shadow-none";
-                return t ? (0, n.jsx)(b.SP, { asChild: !0, value: e, children: (0, n.jsx)("a", { href: t, rel: "noopener noreferrer", className: `${a} ${r}`, children: s }) }) : (0, n.jsx)(b.SP, { value: e, className: `${a} ${r}`, children: s });
+                return t ? (0, n.jsx)(z.SP, { asChild: !0, value: e, children: (0, n.jsx)("a", { href: t, rel: "noopener noreferrer", className: `${a} ${r}`, children: s }) }) : (0, n.jsx)(z.SP, { value: e, className: `${a} ${r}`, children: s });
             }
-            function C({ value: e, className: s, ...t }) {
-                const { t: a } = (0, h.$G)();
-                return (0, n.jsx)(b.mQ, { value: e, className: s, ...t, children: (0, n.jsxs)(b.dr, { className: "bg-transparent p-0 gap-3", children: [(0, n.jsx)(N, { value: "all", children: "All" }), (0, n.jsx)(N, { value: "unencrypted", href: "https://x.com/messages", children: a("Classic Inbox") })] }) });
+            function E({ value: e, className: s, ...t }) {
+                const { t: a } = (0, w.$G)();
+                return (0, n.jsx)(z.mQ, { value: e, className: s, ...t, children: (0, n.jsxs)(z.dr, { className: "bg-transparent p-0 gap-3", children: [(0, n.jsx)(D, { value: "all", children: "All" }), (0, n.jsx)(D, { value: "unencrypted", href: "https://x.com/messages", children: a("Classic Inbox") })] }) });
             }
-            const S = r.com.x.dms.convlist,
-                _ = r.com.x.dms.InboxBottomDialog;
-            function z({ component: e, setShowNewDM: s, showNewDM: t }) {
-                const { t: a } = (0, h.$G)(),
-                    r = (0, v._)(e.state),
-                    p = r.searchQuery.length > 0,
-                    b = p ? r.conversationResults.asJsReadonlyArrayView() : r.previews?.asJsReadonlyArrayView(),
-                    { showDebugOptions: N } = (0, g.XE)();
+            const L = a.com.x.dms.convlist,
+                P = a.com.x.dms.InboxBottomDialog;
+            function k({ component: e, setShowNewDM: s, showNewDM: t }) {
+                const { t: a } = (0, w.$G)(),
+                    i = (0, g._)(e.state),
+                    o = i.searchQuery.length > 0,
+                    l = o ? i.conversationResults.asJsReadonlyArrayView() : i.previews?.asJsReadonlyArrayView(),
+                    { showDebugOptions: c } = (0, b.XE)();
                 return (0, n.jsxs)(n.Fragment, {
                     children: [
-                        (0, n.jsxs)("div", {
-                            className: "flex flex-col h-screen border-r relative w-full",
+                        (0, n.jsxs)(_.g, {
+                            className: "flex flex-col min-h-dvh md:h-dvh border-r relative w-full",
                             children: [
                                 (0, n.jsxs)("header", {
                                     className: "flex flex-col",
@@ -222,19 +227,19 @@
                                         (0, n.jsxs)("div", {
                                             className: "flex items-center justify-between py-2 px-4 h-16",
                                             children: [
-                                                (0, n.jsx)(l.x, { weight: "bold", size: "headline1", children: a("Chats") }),
-                                                r.showConnectionIndicator && (0, n.jsx)(y, { connectionState: r.showConnectionIndicator }),
+                                                (0, n.jsx)(x.x, { weight: "bold", size: "headline1", children: a("Chats") }),
+                                                i.showConnectionIndicator && (0, n.jsx)(S, { connectionState: i.showConnectionIndicator }),
                                                 (0, n.jsxs)("div", {
                                                     className: "flex items-center",
                                                     children: [
-                                                        r.isLoadingConversations && (0, n.jsx)("div", { className: "w-5", children: (0, n.jsx)(c.P, { size: "small" }) }),
-                                                        N && (0, n.jsx)(j.Z, {}),
-                                                        (0, n.jsx)(d.z, {
+                                                        i.isLoadingConversations && (0, n.jsx)("div", { className: "w-5", children: (0, n.jsx)(r.P, { size: "small" }) }),
+                                                        c && (0, n.jsx)(C.Z, {}),
+                                                        (0, n.jsx)(h.z, {
                                                             className: "-mr-2",
-                                                            icon: (0, n.jsx)(i.Z, { className: "h-5 w-5" }),
+                                                            icon: (0, n.jsx)(m.Z, { className: "h-5 w-5" }),
                                                             variant: "primaryText",
                                                             onClick: () => {
-                                                                e.onEvent(S.ConversationListEvent.FloatingActionButtonClicked);
+                                                                e.onEvent(L.ConversationListEvent.FloatingActionButtonClicked);
                                                             },
                                                         }),
                                                     ],
@@ -243,56 +248,52 @@
                                         }),
                                         (0, n.jsx)("div", {
                                             className: "px-4 py-1",
-                                            children: (0, n.jsx)(m._, {
+                                            children: (0, n.jsx)(v._, {
                                                 placeholder: "Search",
-                                                value: r.searchQuery ?? "",
+                                                value: i.searchQuery ?? "",
                                                 onChange: (s) => {
-                                                    e.onEvent(new S.ConversationListEvent.SearchQueryChanged(s.target.value));
+                                                    e.onEvent(new L.ConversationListEvent.SearchQueryChanged(s.target.value));
                                                 },
                                                 borderRadius: "xLarge",
                                                 className: "bg-gray-0 focus-within:bg-transparent",
                                                 inputClassName: "placeholder:text-gray-700",
-                                                leftContent: (0, n.jsx)(o.Z, { className: "h-5 w-5 text-gray-700" }),
+                                                leftContent: (0, n.jsx)(u.Z, { className: "h-5 w-5 text-gray-700" }),
                                             }),
                                         }),
                                     ],
                                 }),
-                                (0, n.jsx)("div", { className: "py-3 px-4", children: (0, n.jsx)(C, { value: "all" }) }),
-                                b && b.length > 0 ? (0, n.jsx)(u.p, { conversations: b, onEvent: (s) => e.onEvent(s), isSearch: p }) : !p && (0, n.jsx)(f, {}),
-                                r.showBottomDialog instanceof _.PinReminder && (0, n.jsx)(w.Y, { component: e, dialogParams: r.showBottomDialog.params }),
+                                (0, n.jsx)("div", { className: "py-3 px-4", children: (0, n.jsx)(E, { value: "all" }) }),
+                                l && l.length > 0 ? (0, n.jsx)(p.p, { conversations: l, onEvent: (s) => e.onEvent(s), isSearch: o }) : !o && (0, n.jsx)(y, {}),
+                                i.showBottomDialog instanceof P.PinReminder && (0, n.jsx)(N.Y, { component: e, dialogParams: i.showBottomDialog.params }),
                             ],
                         }),
-                        t && (0, n.jsx)(x.x, { onVisibilityChange: s }),
+                        t && (0, n.jsx)(f.x, { onVisibilityChange: s }),
                     ],
                 });
             }
-            var D = t(292317),
-                E = t(202784),
-                L = t(611463),
-                P = t(379342),
-                k = t(607499);
-            const I = () => {
-                    const [e, s] = (0, E.useState)(null),
-                        t = (0, L.n)(),
-                        a = (0, P.s)(),
-                        [i, o] = (0, E.useState)(!1);
+            var I = t(379342);
+            const U = () => {
+                    const [e, s] = (0, i.useState)(null),
+                        t = (0, d.n)(),
+                        l = (0, I.s)(),
+                        [c, m] = (0, i.useState)(!1);
                     return (
-                        (0, E.useEffect)(() => {
-                            const e = new r.com.x.export.CancellationSignal(),
+                        (0, i.useEffect)(() => {
+                            const e = new a.com.x.export.CancellationSignal(),
                                 n = t.conversationListComponent(
-                                    new r.com.x.dms.convlist.ConversationListCallbacks(
+                                    new a.com.x.dms.convlist.ConversationListCallbacks(
                                         (e) => {
-                                            e ? a.toPinScreen("recovery") : a.toPinScreen("new");
+                                            e ? l.toPinScreen("recovery") : l.toPinScreen("new");
                                         },
                                         (e) => {
-                                            a.toConversation(e.id);
+                                            l.toConversation(e.id);
                                         },
                                         () => {
-                                            o(!0);
+                                            m(!0);
                                         },
                                         () => {},
                                         (e) => {
-                                            a.toPinScreen("verify", e);
+                                            l.toPinScreen("verify", e);
                                         },
                                         () => {},
                                         () => {},
@@ -305,16 +306,16 @@
                                     e.cancel();
                                 }
                             );
-                        }, [t, a]),
-                        null === e ? (0, n.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, n.jsx)(c.P, {}) }) : (0, n.jsx)(k.S, { children: (0, n.jsx)(U, { component: e, setShowNewDM: o, showNewDM: i }) })
+                        }, [t, l]),
+                        null === e ? (0, n.jsx)(_.g, { className: "flex flex-col justify-center min-h-dvh md:h-dvh  w-full", children: (0, n.jsx)(r.P, {}) }) : (0, n.jsx)(o.S, { children: (0, n.jsx)(R, { component: e, setShowNewDM: m, showNewDM: c }) })
                     );
                 },
-                U = ({ component: e, setShowNewDM: s, showNewDM: t }) => {
-                    const r = (0, a.U)().id,
-                        i = void 0 === r || "" === r;
-                    return (0, v._)(e.state).isInitializing ? (0, n.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, n.jsx)(c.P, {}) }) : (0, n.jsxs)("div", { className: "flex w-full", children: [(0, n.jsx)("div", { className: (i ? "block" : "hidden") + " md:block w-full md:w-[35%]", children: (0, n.jsx)(z, { component: e, setShowNewDM: s, showNewDM: t }) }), (0, n.jsx)("div", { className: (i ? "hidden" : "block") + " md:block w-full md:w-[65%]", children: (0, n.jsx)(D.Q, {}) })] });
+                R = ({ component: e, setShowNewDM: s, showNewDM: t }) => {
+                    const a = (0, l.U)().id,
+                        i = void 0 === a || "" === a;
+                    return (0, g._)(e.state).isInitializing ? (0, n.jsx)(_.g, { className: "flex flex-col justify-center min-h-dvh md:h-dvh w-full", children: (0, n.jsx)(r.P, {}) }) : (0, n.jsxs)("div", { className: "flex min-h-dvh md:h-dvh w-full", children: [(0, n.jsx)("div", { className: (i ? "block" : "hidden") + " md:block w-full md:w-[35%]", children: (0, n.jsx)(k, { component: e, setShowNewDM: s, showNewDM: t }) }), (0, n.jsx)("div", { className: (i ? "hidden" : "block") + " md:block w-full md:w-[65%]", children: (0, n.jsx)(c.Q, {}) })] });
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-ad094e61.2fb1597a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-ad094e61.1a88468a.js.map

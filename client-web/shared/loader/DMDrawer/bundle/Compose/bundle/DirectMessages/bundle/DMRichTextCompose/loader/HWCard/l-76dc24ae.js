@@ -23,8 +23,8 @@
                 A = a(329491),
                 w = a(942893),
                 v = a(500002),
-                C = a(443781),
-                f = a(288955),
+                f = a(443781),
+                C = a(288955),
                 E = a(325686),
                 y = a(682474),
                 M = a(392237),
@@ -67,7 +67,7 @@
                     return d ? n.createElement(y.Z, { ratio: e }, n.createElement(E.Z, { style: M.default.absoluteFill }, n.createElement(g.Z, { "aria-label": G, fetchStatus: a, onRequestRetry: this._handleFetchTweet, render: this._renderInlinePlayer }))) : null;
                 }
             }
-            O.contextType = C.rC;
+            O.contextType = f.rC;
             const U = L(O);
             var Z = a(676145),
                 V = a(775141),
@@ -143,18 +143,23 @@
             const re = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.12"),
-                        a.e("icons.20"),
-                        a.e("icons.0"),
+                        a.e("icons.10"),
                         a.e("icons.21"),
-                        a.e("icons.28"),
-                        a.e("icons.17"),
+                        a.e("icons.16"),
+                        a.e("icons.1"),
+                        a.e("icons.19"),
+                        a.e("icons.0"),
+                        a.e("icons.23"),
+                        a.e("icons.8"),
+                        a.e("icons.2"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.22"),
+                        a.e("icons.7"),
                         a.e("icons.9"),
-                        a.e("icons.25"),
+                        a.e("icons.15"),
+                        a.e("icons.24"),
+                        a.e("icons.28"),
+                        a.e("icons.3"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -165,17 +170,13 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.6"),
-                        a.e("icons.10"),
-                        a.e("icons.24"),
-                        a.e("icons.14"),
-                        a.e("icons.23"),
+                        a.e("icons.26"),
                         a.e("icons.4"),
-                        a.e("icons.3"),
                         a.e("icons.13"),
-                        a.e("icons.1"),
                         a.e("icons.18"),
-                        a.e("icons.8"),
+                        a.e("icons.25"),
+                        a.e("icons.29"),
+                        a.e("icons.27"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -206,7 +207,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -350,8 +351,8 @@
                     .propsFromState(() => ({ tweet: Ae }))
                     .propsFromActions(() => ({ addToast: De.fz, createLocalApiErrorHandler: (0, B.zr)("BOOKMARK_BUTTON_CONTAINER"), onBookmark: N.Z.bookmark, onUnbookmark: N.Z.unbookmark, removeTweetsFromBookmarksTimeline: Se.qk })),
                 ve = p().gb303814,
-                Ce = p().h6f99ac4,
-                fe = p().c2453318,
+                fe = p().h6f99ac4,
+                Ce = p().c2453318,
                 Ee = p().j08dd2d4,
                 ye = p().g1c463f6,
                 Me = n.createElement(ue.default, null),
@@ -359,7 +360,7 @@
                 ke = (0, v.ZP)(
                     we((e) => {
                         const { addToast: d, createLocalApiErrorHandler: a, history: r, onBookmark: t, onUnbookmark: o, removeTweetsFromBookmarksTimeline: i, tweet: l } = e,
-                            { featureSwitches: s, userClaims: c, viewerUserId: u } = n.useContext(C.rC),
+                            { featureSwitches: s, userClaims: c, viewerUserId: u } = n.useContext(f.rC),
                             b = (0, he.z)(),
                             p = (0, le.Zz)(),
                             _ = l && !(0, me.$y)(s, l, me.d.AddToBookmarks);
@@ -368,7 +369,7 @@
                             { bookmarked: m } = l.retweeted_status ?? l,
                             D = () => {
                                 const e = c?.isTrueAndEnabled("subscriptions_feature_1002");
-                                d({ action: { label: fe, onAction: e ? S : A }, text: Ce });
+                                d({ action: { label: Ce, onAction: e ? S : A }, text: fe });
                             },
                             S = () => {
                                 t(h.id_str), r.push({ pathname: "/i/bookmarks/add", state: { tweet_id: h.id_str } });
@@ -382,7 +383,7 @@
                             v = (e) => {
                                 b.scribeAction(e);
                             },
-                            f = m
+                            C = m
                                 ? () => {
                                       o(h.id_str).then(w, a(_e.j)), v("unbookmark");
                                   }
@@ -390,7 +391,7 @@
                                       t(h.id_str).then(D, a(pe.h)), v("bookmark");
                                   },
                             E = M.default.isDarkMode() ? "translucentWhite35" : "gray200";
-                        return n.createElement(ce.ZP, { "aria-label": m ? Ee : ve, borderColor: E, icon: m ? Me : ge, onClick: f, size: p ? "medium" : "large" });
+                        return n.createElement(ce.ZP, { "aria-label": m ? Ee : ve, borderColor: E, icon: m ? Me : ge, onClick: C, size: p ? "medium" : "large" });
                     }),
                 );
             var Ie = a(632658),
@@ -561,10 +562,10 @@
                             if (c && !D) return;
                             const v = w.Z.getClickTrackingEmbedDetails(m, r);
                             if (S === i.bQ.CLICK_ID_EMBED && !v) return;
-                            let C = s;
-                            t.default.isFollowerCard(d) && (C = "user_recommendation");
-                            const f = p && this._isLiveEventCard() ? t.default.getBindingValue(p.binding_values, "event_id") : void 0,
-                                E = { ...(C ? { element: C } : null), action: S, data: { ...(v && { click_tracking_embed_details: v }), items: [{ ...w.Z.getHWCardItem({ action: S, adFreeLabelEligible: !1, componentType: n, cardName: d, carouselEventDetails: a, clickContext: r, ctaIndex: l, impressionId: A, isDataSaverEnabled: h, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: f, tweetId: _.tweetId, tweetUserId: _.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
+                            let f = s;
+                            t.default.isFollowerCard(d) && (f = "user_recommendation");
+                            const C = p && this._isLiveEventCard() ? t.default.getBindingValue(p.binding_values, "event_id") : void 0,
+                                E = { ...(f ? { element: f } : null), action: S, data: { ...(v && { click_tracking_embed_details: v }), items: [{ ...w.Z.getHWCardItem({ action: S, adFreeLabelEligible: !1, componentType: n, cardName: d, carouselEventDetails: a, clickContext: r, ctaIndex: l, impressionId: A, isDataSaverEnabled: h, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: C, tweetId: _.tweetId, tweetUserId: _.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
                             b.scribe(E);
                         }),
                         (this._handlePollVote = ({ cardId: e, choice: d }) => {
@@ -623,8 +624,8 @@
                             if ("uc_video" === e.type || "animated_gif" === e.type) {
                                 const { original_info: p, type: _, ...m } = e,
                                     { "aria-label": D, backgroundColor: S, primaryLabel: A, secondaryLabel: w, ...v } = s.Z.extractVideoProps(h.Z.forTweet(l || "", b), { ext_alt_text: null, ...m, original_info: { ...p }, type: this._getTypeForEntity(e) }),
-                                    C = { ...v };
-                                return a && (C.aspectRatio = a), n.createElement(T.Z, (0, r.Z)({ additionalBadges: i, forceFullPreviewImage: "suboptimal" === d, shouldAutoplayWithoutMuting: t }, C, { "aria-label": dd, onClickBackground: this._onClickVideoBackground(e.id_str), preventPlayback: c, promotedContent: u }, o));
+                                    f = { ...v };
+                                return a && (f.aspectRatio = a), n.createElement(T.Z, (0, r.Z)({ additionalBadges: i, forceFullPreviewImage: "suboptimal" === d, shouldAutoplayWithoutMuting: t }, f, { "aria-label": dd, onClickBackground: this._onClickVideoBackground(e.id_str), preventPlayback: c, promotedContent: u }, o));
                             }
                             {
                                 const { aspect_ratio: r, content_id: t, duration_ms: o, poster_image: s, variants: b, vmap_url: p } = e,
@@ -642,7 +643,7 @@
                 }
                 render() {
                     const { card: e, cardContext: d, dmSentOrReceived: a, id: r, initialCarouselIndex: t, isDataSaverEnabled: o, isInteractive: i, onCardLinkClick: l, promotedContent: s, unifiedCard: b, withBorder: p, withBorderShadow: _, withDetail: h, withRoundBorder: m, withSquareBottomBorderRadius: D } = this.props;
-                    return n.createElement(f.Z, null, (S) =>
+                    return n.createElement(C.Z, null, (S) =>
                         n.createElement(
                             c.ZP.Provider,
                             { value: this._getFeatureConfigurationContextProviderValue() },
@@ -656,7 +657,7 @@
                     );
                 }
             }
-            nd.contextType = C.rC;
+            nd.contextType = f.rC;
             const td = (0, v.ZP)(ee(nd));
         },
         702001: (e, d, a) => {
@@ -667,4 +668,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.f8cb435a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.07692efa.js.map
