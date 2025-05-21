@@ -12044,7 +12044,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(수수료 ", ")"];
                             },
                         },
                         {
@@ -13276,4 +13276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.5e62472a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.b69a2dea.js.map

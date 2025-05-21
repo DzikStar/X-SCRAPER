@@ -209,7 +209,7 @@
                 };
         },
         537439: (e, t, r) => {
-            r.d(t, { Z: () => k });
+            r.d(t, { Z: () => M });
             var n = r(202784),
                 o = r(332920),
                 i = r.n(o),
@@ -232,42 +232,42 @@
                 x = r(246492),
                 C = r(520913),
                 T = r(731708),
-                Z = r(642153),
-                I = r(879891),
+                I = r(642153),
+                Z = r(879891),
                 F = r(392237),
                 P = r(54606);
             const R = i().ae408b76,
                 S = i().j355f008,
-                L = i().habf9678,
-                O = i().db0798ed,
-                _ = i().dc716ec9,
-                D = ({ text: e }) => {
-                    const { direction: t } = (0, I.Z)();
+                O = i().habf9678,
+                _ = i().db0798ed,
+                L = i().dc716ec9,
+                A = ({ text: e }) => {
+                    const { direction: t } = (0, Z.Z)();
                     return n.createElement(T.ZP, { dir: t, withHashflags: !0 }, e);
                 },
-                A = (e, t) =>
+                D = (e, t) =>
                     t
                         ? R
                         : ((e) => {
-                              const t = n.createElement(D, { text: e });
+                              const t = n.createElement(A, { text: e });
                               return n.createElement(i().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
                 B = F.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
-                M = F.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                k = ({ contextType: e, iconColor: t, iconSize: r, link: o, retweetData: i, text: T, topicData: I, userAvatarUrls: R }) => {
-                    const { isSelfRetweet: k, name: N, screenName: H } = i || {},
+                k = F.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                M = ({ contextType: e, iconColor: t, iconSize: r, link: o, retweetData: i, text: T, topicData: Z, userAvatarUrls: R }) => {
+                    const { isSelfRetweet: M, name: N, screenName: H } = i || {},
                         z = ((e, t, r, o = []) => {
                             const i = B[t],
-                                T = [r ? { color: F.default.theme.colors[r] } : M.colorDeepGray, i],
-                                I = n.createElement(a.default, { style: T }),
+                                T = [r ? { color: F.default.theme.colors[r] } : k.colorDeepGray, i],
+                                Z = n.createElement(a.default, { style: T }),
                                 R = n.createElement(l.default, { style: T }),
                                 S = n.createElement(s.default, { style: T }),
-                                L = n.createElement(c.default, { style: T }),
-                                O = n.createElement(d.default, { style: T }),
-                                _ = n.createElement(h.default, { style: M.circle }),
-                                D = n.createElement(u.default, { style: T }),
-                                A = n.createElement(m.default, { style: T }),
-                                k = n.createElement(g.default, { style: T }),
+                                O = n.createElement(c.default, { style: T }),
+                                _ = n.createElement(d.default, { style: T }),
+                                L = n.createElement(h.default, { style: k.circle }),
+                                A = n.createElement(u.default, { style: T }),
+                                D = n.createElement(m.default, { style: T }),
+                                M = n.createElement(g.default, { style: T }),
                                 N = n.createElement(p.default, { style: T }),
                                 H = n.createElement(f.default, { style: T }),
                                 z = n.createElement(w.default, { style: T }),
@@ -276,29 +276,29 @@
                                 j = n.createElement(E.default, { style: T }),
                                 U = n.createElement(v.default, { style: T }),
                                 W = n.createElement(x.default, { style: T }),
-                                $ = n.createElement(Z.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
-                                V = n.createElement(C.default, { style: T });
+                                V = n.createElement(I.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
+                                $ = n.createElement(C.default, { style: T });
                             switch (e) {
                                 case P.Q.Pin:
                                 case P.Q.ReplyPin:
-                                    return I;
+                                    return Z;
                                 case P.Q.Retweet:
                                     return R;
                                 case P.Q.Like:
                                     return S;
                                 case P.Q.Follow:
-                                    return L;
-                                case P.Q.Moment:
                                     return O;
-                                case P.Q.NewTweets:
+                                case P.Q.Moment:
                                     return _;
+                                case P.Q.NewTweets:
+                                    return L;
                                 case P.Q.Reply:
                                 case P.Q.Conversation:
-                                    return D;
-                                case P.Q.Feedback:
                                     return A;
+                                case P.Q.Feedback:
+                                    return D;
                                 case P.Q.Topic:
-                                    return k;
+                                    return M;
                                 case P.Q.List:
                                     return N;
                                 case P.Q.Location:
@@ -317,9 +317,9 @@
                                 case P.Q.FollowFollowing:
                                     return j;
                                 case P.Q.Facepile:
-                                    return $;
-                                case P.Q.Bird:
                                     return V;
+                                case P.Q.Bird:
+                                    return $;
                                 case P.Q.TextOnly:
                                 default:
                                     return null;
@@ -327,15 +327,15 @@
                         })(e, r, t, R);
                     switch (e) {
                         case P.Q.Retweet:
-                            return { Icon: z, text: T || A(N, k), link: H ? `https://twitter.com/${H}` : void 0 };
+                            return { Icon: z, text: T || D(N, M), link: H ? `https://twitter.com/${H}` : void 0 };
                         case P.Q.Pin:
                             return { Icon: z, text: T || S };
                         case P.Q.ReplyPin:
-                            return { Icon: z, text: L };
+                            return { Icon: z, text: O };
                         case P.Q.Topic:
-                            return { Icon: z, "aria-label": "Recommendation" === I?.functionalityType || "RecWithEducation" === I?.functionalityType ? _({ topicName: T }) : O({ topicName: T }), text: T ? n.createElement(D, { text: T }) : null, link: o };
+                            return { Icon: z, "aria-label": "Recommendation" === Z?.functionalityType || "RecWithEducation" === Z?.functionalityType ? L({ topicName: T }) : _({ topicName: T }), text: T ? n.createElement(A, { text: T }) : null, link: o };
                         default:
-                            return { Icon: z, text: T ? n.createElement(D, { text: T }) : null, link: o };
+                            return { Icon: z, text: T ? n.createElement(A, { text: T }) : null, link: o };
                     }
                 };
         },
@@ -355,10 +355,10 @@
             class m extends n.PureComponent {
                 render() {
                     const { avatarSize: e, bottomControl: t, iconStyle: r, id: s, onLayout: c, rightControl: d, style: u, testID: m, textColor: p, textSize: f, topControl: w, weight: y, withBottomBorder: b, withLeftPadding: E, withTextCentered: v, ...x } = this.props,
-                        { Icon: C, "aria-label": T, link: Z, text: I } = (0, h.Z)(x),
-                        F = n.createElement(i.ZP, { "aria-label": T, color: p, id: s, numberOfLines: 2, size: f, testID: m, weight: y, withoutTwemojiAndHashflags: !0 }, I),
+                        { Icon: C, "aria-label": T, link: I, text: Z } = (0, h.Z)(x),
+                        F = n.createElement(i.ZP, { "aria-label": T, color: p, id: s, numberOfLines: 2, size: f, testID: m, weight: y, withoutTwemojiAndHashflags: !0 }, Z),
                         { cellStyle: P, viewStyle: R } = this._getStyles();
-                    return I ? n.createElement(l.ZP.UseProps, null, (i) => n.createElement(n.Fragment, null, w || null, n.createElement(o.Z, { onLayout: c, style: [u, R, i.socialContextRefreshEnabled() && !E && g.socialContextRefresh] }, n.createElement(a.Z, { avatarCell: C || (E ? null : void 0), avatarCellStyle: [r, g.socialContextIconColumn, !E && g.unsetIconWidth, i.socialContextRefreshEnabled() && !E && g.socialContextRefreshIcon], avatarSize: e, cellStyle: P }, n.createElement(o.Z, { style: g.cellWrapper }, n.createElement(o.Z, { style: [g.socialContextTextColumn, i.socialContextRefreshEnabled() && !E && g.socialContextRefreshTextColumn] }, Z ? this._renderLink(Z, F) : F), d || null)), t || null))) : null;
+                    return Z ? n.createElement(l.ZP.UseProps, null, (i) => n.createElement(n.Fragment, null, w || null, n.createElement(o.Z, { onLayout: c, style: [u, R, i.socialContextRefreshEnabled() && !E && g.socialContextRefresh] }, n.createElement(a.Z, { avatarCell: C || (E ? null : void 0), avatarCellStyle: [r, g.socialContextIconColumn, !E && g.unsetIconWidth, i.socialContextRefreshEnabled() && !E && g.socialContextRefreshIcon], avatarSize: e, cellStyle: P }, n.createElement(o.Z, { style: g.cellWrapper }, n.createElement(o.Z, { style: [g.socialContextTextColumn, i.socialContextRefreshEnabled() && !E && g.socialContextRefreshTextColumn] }, I ? this._renderLink(I, F) : F), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: r, id: o, onClick: a, retweetData: l, textColor: s, topicData: h } = this.props,
@@ -575,22 +575,7 @@
             r.d(t, { H: () => n });
             const n = ({ description: e, entities: t, withheldDescription: r, withheldEntities: n }) => (r ? { description: r, entities: n } : { description: e, entities: t });
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(717683),
-                l = r(347101);
-            const s = (e = {}) => {
-                const t = n.useContext(a.Z),
-                    { direction: r } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
-        246492: (e, t, r) => {
+        297896: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var n = r(202784),
                 o = r(890601),
@@ -598,12 +583,12 @@
                 a = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        264171: (e, t, r) => {
+        379327: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var n = r(202784),
                 o = r(890601),
@@ -611,7 +596,7 @@
                 a = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -625,19 +610,6 @@
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
                 return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        262009: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -1107,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c.4fd9e85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c.787c332a.js.map

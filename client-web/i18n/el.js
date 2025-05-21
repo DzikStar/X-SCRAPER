@@ -12024,7 +12024,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(", " Αμοιβή)"];
                             },
                         },
                         {
@@ -13256,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.91e16faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.f4a093ca.js.map

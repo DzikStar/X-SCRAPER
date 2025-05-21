@@ -32,13 +32,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: f, style: h, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: B, withWideContainer: P } = this.props,
+                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: h, style: f, subtitle: b, title: y, titleDomId: _, titleIconCell: k, titleIconCellSize: v, withBackground: B, withWideContainer: P } = this.props,
                         { isModal: S } = this.context,
                         F = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         C = (function (e, a, t) {
                             return e && !(a && t);
-                        })(!!B, S, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: h, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), f || null);
+                        })(!!B, S, !!h);
+                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: f, subtitle: b, title: y, titleDomId: _, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -50,7 +50,7 @@
             (p.contextType = d.Z), (p.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         980407: (e, a, t) => {
-            t.d(a, { Z: () => f, w: () => m });
+            t.d(a, { Z: () => h, w: () => m });
             var r = t(202784),
                 n = t(325686),
                 i = t(108362),
@@ -65,9 +65,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: a, backButtonType: t, backLocation: i, centerTitle: l, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: f, rightControl: h, secondaryBar: b, subtitle: _, title: y } = this.props,
+                            const { appBarRef: e, appBarStyle: a, backButtonType: t, backLocation: i, centerTitle: l, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: h, rightControl: f, secondaryBar: b, subtitle: y, title: _ } = this.props,
                                 { isModal: k } = this.context;
-                            return r.createElement(n.Z, { style: k ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, r.createElement(d.ZP, { backButtonType: t || (k ? "close" : "back"), backLocation: i, centerTitle: l, fixed: !k, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: f, ref: e, rightControl: h, secondaryBar: b, style: [k && g.appBarModal, a], subtitle: _, title: y, titleDomId: c.Q_ }));
+                            return r.createElement(n.Z, { style: k ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, r.createElement(d.ZP, { backButtonType: t || (k ? "close" : "back"), backLocation: i, centerTitle: l, fixed: !k, hideBackButton: s, history: o, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: h, ref: e, rightControl: f, secondaryBar: b, style: [k && g.appBarModal, a], subtitle: y, title: _, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: a } = this.props,
@@ -76,15 +76,15 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: a, children: t, containerStyle: l, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: m, title: f, withoutBottomBarMobile: h } = this.props,
+                    const { "aria-hidden": e, bottomBar: a, children: t, containerStyle: l, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: m, title: h, withoutBottomBarMobile: f } = this.props,
                         { isModal: b } = this.context,
-                        _ = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(o.Z, null, r.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: f }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, b && g.rootModal] }, !b && _, r.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [g.container, b && g.containerModal, l] }, b ? r.createElement(p.Z, { style: g.viewport }, _, t) : t), a ? r.createElement(n.Z, { style: [g.bottomBarModal, !b && !h && g.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: c, isLarge: d }, a)) : null));
+                        y = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(o.Z, null, r.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: h }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, b && g.rootModal] }, !b && y, r.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [g.container, b && g.containerModal, l] }, b ? r.createElement(p.Z, { style: g.viewport }, y, t) : t), a ? r.createElement(n.Z, { style: [g.bottomBarModal, !b && !f && g.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: c, isLarge: d }, a)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = l.Z);
             const g = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
-                f = m;
+                h = m;
         },
         847579: (e, a, t) => {
             t.d(a, { Z: () => s });
@@ -201,7 +201,7 @@
                 d = (e) => "Twitter" === e.payment_source || "Ads" === e.payment_source;
         },
         685731: (e, a, t) => {
-            t.d(a, { Gi: () => b, Mk: () => y, ZV: () => f, aU: () => g, d3: () => _, fS: () => k, pt: () => h });
+            t.d(a, { Gi: () => b, Mk: () => _, ZV: () => h, aU: () => g, d3: () => y, fS: () => k, pt: () => f });
             t(202784);
             var r = t(332920),
                 n = t.n(r),
@@ -227,19 +227,19 @@
                 }
                 return r;
             }
-            function f(e) {
+            function h(e) {
                 return "number" == typeof e?.tax_amount_local_micro ? u : d;
             }
-            const h = (e, a, t) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === t && e.metadata.purchasable).find((e) => (a ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
+            const f = (e, a, t) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === t && e.metadata.purchasable).find((e) => (a ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
             function b(e, a) {
                 if (e && a) return a?.find((a) => a?.charge_interval === e);
             }
-            function _(e, a = !1, t, r = !1, n = !0) {
+            function y(e, a = !1, t, r = !1, n = !0) {
                 const d = (0, c.gS)(t, "Discount", { status: r ? "pending" : "active" }),
                     u = (0, s.x)({ amount: g(e, a), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
                 return d && e.charge_interval ? (0, l.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, i.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: a, annualPriceMonthly: !1 }), formattedPrice: u, includeDiscountedPrice: !0, includeThenLabel: n }) : e.charge_interval === o.rv.Year ? m({ price: u }) : e.charge_interval === o.rv.Month ? p({ price: u }) : "";
             }
-            const y = (e) => {
+            const _ = (e) => {
                     const a = e.subscription_promotions?.find((e) => !!e.metadata.free_trial_days);
                     return a;
                 },
@@ -250,7 +250,7 @@
                 };
         },
         901658: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => y });
+            t.r(a), t.d(a, { default: () => _ });
             var r = t(202784),
                 n = t(107267),
                 i = t(138099),
@@ -263,23 +263,23 @@
                 p = t(293115),
                 m = t(725405);
             const g = { page: "premium_gifting", section: "failure" },
-                f = d().a893d602,
-                h = d().ia2eb0c0,
+                h = d().a893d602,
+                f = d().ia2eb0c0,
                 b = d().ef4602ec,
-                _ = ({ history: e }) => {
+                y = ({ history: e }) => {
                     const a = (0, m.Z)(),
                         t = (0, n.useParams)().screenName;
                     (0, u.q)(() => {
                         a.scribePageImpression();
                     });
                     const o = r.useCallback(() => e.replace(t ? `/${t}` : "/home"), [e, t]);
-                    return r.createElement(i.Z, { enableMaskForDismiss: !0, onMaskClick: o, style: k.root, type: "center" }, r.createElement(l.ZP, { size: "title4", weight: "bold" }, h), r.createElement(l.ZP, { style: k.spacing }, b), r.createElement(s.ZP, { onPress: o, style: k.button, type: "primaryFilled" }, f));
+                    return r.createElement(i.Z, { enableMaskForDismiss: !0, onMaskClick: o, style: k.root, type: "center" }, r.createElement(l.ZP, { size: "title4", weight: "bold" }, f), r.createElement(l.ZP, { style: k.spacing }, b), r.createElement(s.ZP, { onPress: o, style: k.button, type: "primaryFilled" }, h));
                 },
-                y = (e) => r.createElement(p.nO, { namespace: g }, r.createElement(_, e)),
+                _ = (e) => r.createElement(p.nO, { namespace: g }, r.createElement(y, e)),
                 k = o.default.create((e) => ({ button: { marginTop: e.spaces.space24, width: "100%" }, spacing: { marginTop: e.spaces.space8 }, root: { padding: e.spaces.space32, minHeight: 200 } }));
         },
         600388: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => y });
+            t.r(a), t.d(a, { default: () => _ });
             var r = t(202784),
                 n = t(325686),
                 i = t(107267),
@@ -292,19 +292,19 @@
                 p = t(187669),
                 m = t(293115),
                 g = t(725405);
-            const f = { page: "premium_gifting", section: "success" },
-                h = u().a893d602,
+            const h = { page: "premium_gifting", section: "success" },
+                f = u().a893d602,
                 b = u().c65dda96,
-                _ = ({ history: e }) => {
+                y = ({ history: e }) => {
                     const a = (0, g.Z)(),
                         t = (0, i.useParams)().screenName;
                     (0, p.q)(() => {
                         a.scribePageImpression();
                     });
                     const c = r.useCallback(() => e.replace(t ? `/${t}` : "/home"), [e, t]);
-                    return r.createElement(l.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: c, style: k.root, type: "center" }, r.createElement(n.Z, null, r.createElement(s.ZP, { size: "title4", style: k.marginBottom, weight: "bold" }, b)), r.createElement(o.ZP, { onPress: c, style: k.button, type: "primaryFilled" }, h));
+                    return r.createElement(l.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: c, style: k.root, type: "center" }, r.createElement(n.Z, null, r.createElement(s.ZP, { size: "title4", style: k.marginBottom, weight: "bold" }, b)), r.createElement(o.ZP, { onPress: c, style: k.button, type: "primaryFilled" }, f));
                 },
-                y = (e) => r.createElement(m.nO, { namespace: f }, r.createElement(_, e)),
+                _ = (e) => r.createElement(m.nO, { namespace: h }, r.createElement(y, e)),
                 k = c.default.create((e) => ({ root: { padding: e.spaces.space32, display: "flex", flexDirection: "column", justifyContent: "space-between" }, marginBottom: { marginBottom: e.spaces.space8 }, spacingRight: { marginEnd: e.spaces.space8 }, button: { marginTop: e.spaces.space24, width: "100%" } }));
         },
         738235: (e, a, t) => {
@@ -472,11 +472,11 @@
             const p = u;
             var m = t(202784),
                 g = t(325686),
-                f = (t(585488), t(712696)),
-                h = t.n(f),
+                h = (t(585488), t(712696)),
+                f = t.n(h),
                 b = t(107267),
-                _ = t(708852),
-                y = t(154003),
+                y = t(708852),
+                _ = t(154003),
                 k = t(167630),
                 v = t(731708),
                 B = t(466818),
@@ -489,8 +489,8 @@
                 E = t(736063),
                 x = t(952793),
                 L = t(782642),
-                K = t(97882),
-                w = t(782826),
+                w = t(97882),
+                K = t(782826),
                 D = t(337394),
                 I = (function () {
                     var e = [{ defaultValue: null, kind: "LocalArgument", name: "stripeId" }],
@@ -560,18 +560,18 @@
                 })();
             I.hash = "5e491b53c0d16f901c7f874cd6b98250";
             const R = I,
-                M = (e) => h()(R, { stripeId: e });
+                M = (e) => f()(R, { stripeId: e });
             var V = t(685731),
                 A = t(293115),
                 N = t(725516),
-                U = t(412876),
-                O = t(553660),
-                W = t(615027),
+                z = t(412876),
+                U = t(553660),
+                O = t(615027),
                 H = t(688715),
-                z = t(847579);
+                W = t(847579);
             const G = (0, H.ju)("https://legal.x.com/purchaser-terms"),
                 $ = (0, H.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(z.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
+                Q = () => m.createElement(W.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -638,23 +638,23 @@
                 ce = p,
                 de = (e) => {
                     const a = (0, b.useParams)().screenName || "",
-                        t = (0, _.D2)(),
+                        t = (0, y.D2)(),
                         r = (0, N.z)(),
                         n = (0, b.useHistory)(),
                         i = ae(),
                         [l, s] = m.useState("BlueVerifiedPlus"),
                         [o, c] = m.useState(!1),
-                        d = h()(ce, { screenName: a }, { fetchPolicy: "network-only" }),
-                        { origin: u } = w.ZP.get(),
+                        d = f()(ce, { screenName: a }, { fetchPolicy: "network-only" }),
+                        { origin: u } = K.ZP.get(),
                         p = (0, L.p)(),
-                        [f, P] = ee({ successUrl: `${u}/${a}/gift-premium/success`, cancelUrl: `${u}/${a}/gift-premium` }),
+                        [h, P] = ee({ successUrl: `${u}/${a}/gift-premium/success`, cancelUrl: `${u}/${a}/gift-premium` }),
                         S = i[l],
                         E = M(S).web_subscription_product_details_by_rest_id,
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        H = I ? (0, K.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
-                        z = m.useCallback(() => {
+                        H = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        W = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
                         G = d?.user?.result,
@@ -664,24 +664,24 @@
                                 S &&
                                 (r.scribe({ component: "purchase_button", action: "click" }),
                                 c(!0),
-                                f({ receiverId: $, productId: S })
-                                    .then((e) => w.ZP.navigateTo(e))
+                                h({ receiverId: $, productId: S })
+                                    .then((e) => K.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
                                             t = a === T.ZP.GenericAccessDenied ? oe : se;
                                         p({ text: t, withClearButton: !0, withAutoDismiss: !0 }), c(!1);
                                     }));
-                        }, [p, f, $, S, r]),
+                        }, [p, h, $, S, r]),
                         q = t ? me.paddingWide : me.paddingNarrow,
                         Y = m.useMemo(() => {
                             const e = o || P,
                                 a = !l || e;
-                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: H })), m.createElement(Q, null));
+                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(_.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: H })), m.createElement(Q, null));
                         }, [H, j, P, o, q, l]),
                         X = m.useCallback((e) => s(C.p[e]), [s]),
                         J = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
                         le = D.St[l];
-                    return J && a && G && H && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: z }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(U.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(O.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(W.Z, { to: "/home" });
+                    return J && a && G && H && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: W }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(z.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(O.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -699,7 +699,7 @@
             };
         },
         862695: (e, a, t) => {
-            t.d(a, { V: () => _, f: () => b });
+            t.d(a, { V: () => y, f: () => b });
             var r = t(202784),
                 n = t(325686),
                 i = t(731708),
@@ -712,14 +712,14 @@
                 p = o().ade4c757,
                 m = o().f7798e11,
                 g = o().e0b39888,
-                f = o().b67c37de,
-                h = o().a8363765,
-                b = ({ activeDiscountInfo: e, discountInfo: a, formattedPrice: t, includeTax: r, isFreeTrial: n, isTierSwitching: i, price: l, selectedInterval: s, shouldRemoveExtraStep: o, withAnnualPriceMonthly: d }) => (n ? ("Month" === s ? p({ price: t }) : m({ price: t })) : a || e ? _({ formattedPrice: t, selectedInterval: s, includeDiscountedPrice: "Year" === s && d, discountedFormattedPrice: (0, c.T)({ price: l, includeTax: r, percentOff: i ? e?.promotion_metadata?.percent_off : a?.metadata.percent_off, annualPriceMonthly: !1 }), duration: i ? e?.promotion_metadata?.duration_in_interval : a?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === s && o ? h({ price: t }) : "Month" === s ? g : f),
-                _ = ({ discountedFormattedPrice: e, duration: a, formattedPrice: t, includeDiscountedPrice: l, includeThenLabel: s, selectedInterval: c }) => {
+                h = o().b67c37de,
+                f = o().a8363765,
+                b = ({ activeDiscountInfo: e, discountInfo: a, formattedPrice: t, includeTax: r, isFreeTrial: n, isTierSwitching: i, price: l, selectedInterval: s, shouldRemoveExtraStep: o, withAnnualPriceMonthly: d }) => (n ? ("Month" === s ? p({ price: t }) : m({ price: t })) : a || e ? y({ formattedPrice: t, selectedInterval: s, includeDiscountedPrice: "Year" === s && d, discountedFormattedPrice: (0, c.T)({ price: l, includeTax: r, percentOff: i ? e?.promotion_metadata?.percent_off : a?.metadata.percent_off, annualPriceMonthly: !1 }), duration: i ? e?.promotion_metadata?.duration_in_interval : a?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === s && o ? f({ price: t }) : "Month" === s ? g : h),
+                y = ({ discountedFormattedPrice: e, duration: a, formattedPrice: t, includeDiscountedPrice: l, includeThenLabel: s, selectedInterval: c }) => {
                     let g;
-                    return (g = "Month" === c ? (l ? r.createElement(o().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().df3ed1c8({ standardPrice: t }))) : d({ duration: a, standardPrice: t })) : l ? r.createElement(o().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().g261b098({ standardPrice: t }))) : u({ duration: a, standardPrice: t })), s && (g = r.createElement(n.Z, null, r.createElement(i.ZP, { style: y.marginBottom }, g), r.createElement(i.ZP, null, "Year" === c ? m({ price: t }) : p({ price: t })))), g;
+                    return (g = "Month" === c ? (l ? r.createElement(o().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().df3ed1c8({ standardPrice: t }))) : d({ duration: a, standardPrice: t })) : l ? r.createElement(o().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: a ?? "" }, r.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, o().g261b098({ standardPrice: t }))) : u({ duration: a, standardPrice: t })), s && (g = r.createElement(n.Z, null, r.createElement(i.ZP, { style: _.marginBottom }, g), r.createElement(i.ZP, null, "Year" === c ? m({ price: t }) : p({ price: t })))), g;
                 },
-                y = l.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
+                _ = l.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
         },
         466818: (e, a, t) => {
             t.d(a, { ZP: () => b });
@@ -735,7 +735,7 @@
             const p = r.forwardRef((e, a) => (0, c.Z)("select", { ...e, ref: a })),
                 m = (e) => (0, c.Z)("option", e);
             let g = 1;
-            class f extends r.PureComponent {
+            class h extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._selectRef = r.createRef()),
@@ -763,7 +763,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: a, errorText: t, hasError: c, helperText: g, options: f, style: b, testID: _, value: y, withEmptyOption: k } = this.props,
+                    const { "aria-describedby": e, disabled: a, errorText: t, hasError: c, helperText: g, options: h, style: b, testID: y, value: _, withEmptyOption: k } = this.props,
                         { isFocused: v } = this.state,
                         B = o.ZP.getLanguage(),
                         P = void 0 === c ? !!t : c,
@@ -777,18 +777,18 @@
                             const o = "ja" === B ? u.default.theme.fontFamilies.japan : "rtl" === e || l.Z.isLocaleRTL(B) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 n.Z,
-                                { style: [s.Z.border, h.container, a && s.Z.disabled, v && s.Z.focusedBorderValid, P && s.Z.invalidBorderColor, v && P && s.Z.focusedBorderInvalid, b] },
+                                { style: [s.Z.border, f.container, a && s.Z.disabled, v && s.Z.focusedBorderValid, P && s.Z.invalidBorderColor, v && P && s.Z.focusedBorderInvalid, b] },
                                 this._renderLabel(),
                                 r.createElement(
                                     p,
-                                    { "aria-describedby": F, "aria-invalid": P, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [h.select, { fontFamily: o }, a && s.Z.disabled], testID: _ || "", value: y },
-                                    k ? r.createElement(m, { disabled: !0, style: h.option, value: "" }) : null,
-                                    f.map((e) => {
+                                    { "aria-describedby": F, "aria-invalid": P, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, a && s.Z.disabled], testID: y || "", value: _ },
+                                    k ? r.createElement(m, { disabled: !0, style: f.option, value: "" }) : null,
+                                    h.map((e) => {
                                         const { disabled: a, label: t, value: n } = e;
-                                        return r.createElement(m, { disabled: a, key: `${t}-${n}`, style: h.option, value: n }, t);
+                                        return r.createElement(m, { disabled: a, key: `${t}-${n}`, style: f.option, value: n }, t);
                                     }),
                                 ),
-                                r.createElement(i.default, { style: [h.dropdownCaret, v && s.Z.validColor, !(!c && !t) && s.Z.invalidColor] }),
+                                r.createElement(i.default, { style: [f.dropdownCaret, v && s.Z.validColor, !(!c && !t) && s.Z.invalidColor] }),
                             );
                         }),
                         g ? this._renderHelperText() : null,
@@ -798,23 +798,36 @@
                 _renderLabel() {
                     const { errorText: e, hasError: a, label: t } = this.props,
                         { isFocused: n } = this.state;
-                    return r.createElement(o.ZP, { color: a || e ? "red500" : n ? "primary" : "gray700", id: this._labelID, role: "label", style: h.label }, t);
+                    return r.createElement(o.ZP, { color: a || e ? "red500" : n ? "primary" : "gray700", id: this._labelID, role: "label", style: f.label }, t);
                 }
                 _renderHelperText() {
-                    return r.createElement(n.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "gray700", id: this._helperID, style: h.helperText }, this.props.helperText));
+                    return r.createElement(n.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "gray700", id: this._helperID, style: f.helperText }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return r.createElement(n.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "red500", id: this._errorID, style: h.helperText }, this.props.errorText));
+                    return r.createElement(n.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "red500", id: this._errorID, style: f.helperText }, this.props.errorText));
                 }
             }
-            f.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const h = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                b = f;
+            h.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
+            const f = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                b = h;
         },
         183806: (e, a, t) => {
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        41065: (e, a, t) => {
+            t.r(a), t.d(a, { default: () => o });
+            var r = t(202784),
+                n = t(890601),
+                i = t(783427),
+                l = t(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.3288a5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.f5b1931a.js.map

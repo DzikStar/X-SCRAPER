@@ -2,67 +2,67 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsRevamp-32bb1570"],
     {
-        633525: (e, t, n) => {
-            n.r(t), n.d(t, { GrokSettingsScreen: () => F, default: () => O });
-            var a = n(181196),
-                r = n(202784),
-                i = n(325686),
-                c = (n(585488), n(712696)),
-                l = n.n(c),
-                s = n(107267),
-                o = n(332920),
-                u = n.n(o),
-                d = n(947135),
-                m = n(290402),
-                f = n(443781),
-                g = n(652904),
-                p = n(883229),
-                b = n(943914),
-                E = n(310116),
-                _ = n(867621),
-                y = n(987317),
-                Z = n(466441),
-                h = n(264922),
-                S = n(71620),
-                C = n(668214),
-                v = n(122743),
-                w = n(215929);
-            const L = (0, C.Z)()
-                    .propsFromState(() => ({ userClaimsFetchStatus: w.uD }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("APPLICATIONS"), clearConversations: v.H }))
+        633525: (e, t, a) => {
+            a.r(t), a.d(t, { GrokSettingsScreen: () => F, default: () => O });
+            var r = a(181196),
+                n = a(202784),
+                i = a(325686),
+                c = (a(585488), a(712696)),
+                s = a.n(c),
+                l = a(107267),
+                o = a(332920),
+                u = a.n(o),
+                m = a(947135),
+                p = a(290402),
+                d = a(443781),
+                g = a(652904),
+                f = a(883229),
+                b = a(943914),
+                E = a(310116),
+                y = a(867621),
+                _ = a(987317),
+                Z = a(466441),
+                h = a(264922),
+                P = a(71620),
+                S = a(668214),
+                C = a(122743),
+                v = a(215929);
+            const x = (0, S.Z)()
+                    .propsFromState(() => ({ userClaimsFetchStatus: v.uD }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, P.zr)("APPLICATIONS"), clearConversations: C.H }))
                     .withAnalytics({ page: "settings", section: "subscriptions" }),
-                I = u().i9028824,
-                k = u().i22beaa4,
-                A = u().e110a46c,
-                T = u().ebc4fda0,
-                R = u().c90fe716,
-                x = u().d96cf7ce,
-                N = a.Z,
-                P = { type: "Retry" },
-                V = { context: "GrokSettings" };
-            function D({ clearConversations: e, createLocalApiErrorHandler: t }) {
-                const { user_preferences: n } = l()(N, {}),
-                    a = (0, s.useLocation)(),
-                    c = (0, s.useRouteMatch)(),
-                    o = (0, s.useHistory)(),
-                    { featureSwitches: u } = r.useContext(f.rC),
-                    m = u.isTrue("responsive_web_grok_delete_conversations_enabled");
-                if (!n) return r.createElement(Z.default, { history: o, location: a, match: c });
-                return r.createElement(
+                k = u().i9028824,
+                w = u().i22beaa4,
+                T = u().e110a46c,
+                I = u().ebc4fda0,
+                z = u().c90fe716,
+                H = u().d96cf7ce,
+                D = r.Z,
+                L = { type: "Retry" },
+                B = { context: "GrokSettings" };
+            function A({ clearConversations: e, createLocalApiErrorHandler: t }) {
+                const { user_preferences: a } = s()(D, {}),
+                    r = (0, l.useLocation)(),
+                    c = (0, l.useRouteMatch)(),
+                    o = (0, l.useHistory)(),
+                    { featureSwitches: u } = n.useContext(d.rC),
+                    p = u.isTrue("responsive_web_grok_delete_conversations_enabled");
+                if (!a) return n.createElement(Z.default, { history: o, location: r, match: c });
+                return n.createElement(
                     g.Z,
                     null,
-                    r.createElement(
+                    n.createElement(
                         h.Z,
-                        { location: a, screenType: "secondaryDetail", title: k },
-                        r.createElement(i.Z, { testID: "xaiDataSharingSettings" }, r.createElement(E.Z, { userPreferences: n }), r.createElement(y.Z, { userPreferences: n }), r.createElement(_.Z, { userPreferences: n })),
-                        m &&
-                            r.createElement(d.Z, {
+                        { location: r, screenType: "secondaryDetail", title: w },
+                        n.createElement(i.Z, { testID: "xaiDataSharingSettings" }, n.createElement(E.Z, { userPreferences: a }), n.createElement(_.Z, { userPreferences: a }), n.createElement(y.Z, { userPreferences: a })),
+                        p &&
+                            n.createElement(m.Z, {
                                 align: "left",
-                                confirmationSheetConfirmButtonLabel: x,
+                                confirmationSheetConfirmButtonLabel: H,
                                 confirmationSheetConfirmButtonType: "primary",
-                                confirmationSheetHeadline: R,
-                                confirmationSheetText: T,
-                                label: A,
+                                confirmationSheetHeadline: z,
+                                confirmationSheetText: I,
+                                label: T,
                                 onConfirmationSheetConfirm: () => {
                                     e().catch(() => t({ showToast: !0 }));
                                 },
@@ -70,250 +70,676 @@
                     ),
                 );
             }
-            const H = (e, t) => r.createElement(D, { clearConversations: e, createLocalApiErrorHandler: t });
-            function F({ clearConversations: e, createLocalApiErrorHandler: t, userClaimsFetchStatus: n }) {
-                return r.createElement(p.N, { errorConfig: V, fallback: P }, r.createElement(b.B, { fallback: null }, r.createElement(m.Z, { "aria-label": I, fetchStatus: n, render: () => H(e, t) })));
+            const V = (e, t) => n.createElement(A, { clearConversations: e, createLocalApiErrorHandler: t });
+            function F({ clearConversations: e, createLocalApiErrorHandler: t, userClaimsFetchStatus: a }) {
+                return n.createElement(f.N, { errorConfig: B, fallback: L }, n.createElement(b.B, { fallback: null }, n.createElement(p.Z, { "aria-label": k, fetchStatus: a, render: () => V(e, t) })));
             }
-            const O = L(F);
+            const O = x(F);
         },
-        915566: (e, t, n) => {
-            n.d(t, { Jb: () => c, Jf: () => d, LT: () => u, MQ: () => i, NC: () => o, hJ: () => l, zV: () => s });
-            var a = n(688715),
-                r = n(130919);
-            const i = Object.freeze({ premiumSubscription: "premiumSubscription", premiumSettings: "premiumSettings", securitySettings: "securitySettings", creator: "creator" }),
-                c = { [i.premiumSubscription]: "/i/flow/premium_signup_nux_flow", [i.premiumSettings]: "/settings/premium", [i.securitySettings]: "/settings/security", [i.creator]: "/settings/monetization" },
-                l = `/settings/account/id_verification?status=${r.t.PendingResult}`,
-                s = `/settings/monetization?status=${r.t.PendingResult}`,
-                o = "/settings/account/id_verification",
-                u = (0, a.ju)("https://help.x.com/rules-and-policies/verification-policy"),
-                d = (0, a.ju)("https://help.x.com/using-x/x-premium");
-        },
-        940289: (e, t, n) => {
-            n.r(t), n.d(t, { IDVerificationQueryRenderer: () => G, IDVerificationQueryRequest: () => M, default: () => $, isPendingStatus: () => q });
-            var a = n(993770),
-                r = n(629928),
-                i = n(202784),
-                c = n(360917),
-                l = n.n(c),
-                s = n(614983),
-                o = n.n(s),
-                u = n(325686),
-                d = (n(585488), n(351743)),
-                m = n.n(d),
-                f = n(107267),
-                g = n(750410),
-                p = n(943401),
-                b = n(954110),
-                E = n(167630),
-                _ = n(392237),
-                y = n(731708),
-                Z = n(332920),
-                h = n.n(Z),
-                S = n(750442),
-                C = n(130919),
-                v = n(727828),
-                w = n(534763),
-                L = n(443781),
-                I = n(652904),
-                k = n(301410),
-                A = n(725516),
-                T = n(312771),
-                R = n(615027),
-                x = n(466441),
-                N = n(264922),
-                P = n(915566);
-            const V = h().afe4a358,
-                D = h().g268fbb8,
-                H = h().f66d24be,
-                F = h().c8255462,
-                O = h().c6e731ee,
-                z = h().be582166,
-                U = { [C.t.PendingResult]: h().b496bc94, [C.t.RequestLocked]: h().d8f5cce4, [C.t.IdentityNonVerifiable]: h().i8427a1e, [C.t.CanVerifyIdentity]: z },
-                j = i.createElement(w.b, { label: H, link: P.LT }),
-                q = (e) => {
-                    const t = e.query?.status;
-                    return !(!t || Array.isArray(t)) && t === C.t.PendingResult;
-                },
-                M = r.Z,
-                B = a.Z,
-                G = (0, k.z)(M, { errorConfig: { context: "ID_VERIFICATION_CONTEXT" } }),
-                Q = _.default.create((e) => ({ layoutDimensions: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, iconTheme: { color: e.colors.text }, idLabel: { alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
-                J = i.createElement(u.Z, { style: Q.idLabel }, i.createElement(S.default, { style: Q.iconTheme }), i.createElement(y.ZP, { color: "gray700" }, D)),
-                $ = i.memo(
-                    (0, A.Z)(
-                        ({ analytics: e, ...t }) => {
-                            const { featureSwitches: n } = i.useContext(L.rC),
-                                a = n.isTrue("identity_verification_hide_verified_label_settings_enabled"),
-                                r = (0, f.useLocation)(),
-                                [c] = m()(B),
-                                s = i.useCallback(
-                                    (e, t) => (n, a) => {
-                                        e &&
-                                            t &&
-                                            c({
-                                                variables: { is_identity_verified_label_hidden: a, user_id: e },
-                                                updater: (e, n) => {
-                                                    const r = e.get(t);
-                                                    o()(r, "userRecord must be specified"), r.setValue(a, "is_identity_verified_label_hidden");
-                                                },
-                                            });
-                                    },
-                                    [c],
-                                ),
-                                d = i.useCallback(
-                                    ({ data: n, fetchStatus: c, retry: l }) => {
-                                        if (c === T.ZP.FAILED) return i.createElement(g.Z, { onRequestRetry: l });
-                                        if (c === T.ZP.LOADED && n) {
-                                            const c = n.viewer.user_results.result,
-                                                o = c.rest_id,
-                                                d = c.verification_info;
-                                            if (!d) return i.createElement(g.Z, { onRequestRetry: l });
-                                            const m = !!d.is_identity_verified_label_hidden,
-                                                E = d.identity_verification_status,
-                                                _ = E === C.t.CanVerifyIdentity && q(r) ? C.t.PendingResult : E,
-                                                y = _ === C.t.UnavailableMissingBlueSubscription;
-                                            switch ((e.scribe({ page: "identity_verification_settings", section: _, action: "impression" }), _)) {
-                                                case C.t.RequestLocked:
-                                                case C.t.PendingResult:
-                                                case C.t.IdentityNonVerifiable:
-                                                    return i.createElement(i.Fragment, null, i.createElement(p.Z, { description: U[_] }), j);
-                                                case C.t.IdentityVerified:
-                                                case C.t.UnavailableMissingBlueSubscription:
-                                                    return i.createElement(u.Z, null, i.createElement(p.Z, { description: z }), i.createElement(u.Z, { style: Q.layoutDimensions }, y ? i.createElement(v.Z, { variant: "IdVerification", withColoredIcon: !0 }) : J), a ? i.createElement(u.Z, null, i.createElement(b.Z, { checked: m, disabled: y, helpText: O, label: F, name: "is_identity_verified_label_hidden", onChange: s(o, d.__id) })) : null, j);
-                                                case C.t.CanVerifyIdentity:
-                                                    return i.createElement(u.Z, null, i.createElement(p.Z, { description: U[_] }), i.createElement(f.Switch, null, i.createElement(f.Route, null, i.createElement(R.Z, { to: "/settings/account/id_verification/start" }))));
-                                                default:
-                                                    return i.createElement(x.default, t);
-                                            }
-                                        }
-                                        return i.createElement(E.Z, null);
-                                    },
-                                    [e, a, r, s, t],
-                                );
-                            return i.createElement(I.Z, null, i.createElement(N.Z, { location: r, title: V }, i.createElement(G, { render: d, variables: l() })));
-                        },
-                        { page: "id_verification", section: "settings" },
-                    ),
-                );
-        },
-        68820: (e, t, n) => {
-            n.r(t), n.d(t, { Languages: () => V, default: () => D });
-            var a = n(202784),
-                r = n(779610),
-                i = n(844685),
-                c = n(943401),
-                l = n(420412),
-                s = n(332920),
-                o = n.n(s),
-                u = n(443781),
-                d = n(652904),
-                m = n(293115),
-                f = n(264922),
-                g = n(71620),
-                p = n(668214),
-                b = n(661461),
-                E = n(576025),
-                _ = n(390387);
-            const y = (e) => {
-                    const t = (0, _.VT)(e);
+        68820: (e, t, a) => {
+            a.r(t), a.d(t, { Languages: () => B, default: () => A });
+            var r = a(202784),
+                n = a(779610),
+                i = a(844685),
+                c = a(943401),
+                s = a(420412),
+                l = a(332920),
+                o = a.n(l),
+                u = a(443781),
+                m = a(652904),
+                p = a(293115),
+                d = a(264922),
+                g = a(71620),
+                f = a(668214),
+                b = a(661461),
+                E = a(576025),
+                y = a(390387);
+            const _ = (e) => {
+                    const t = (0, y.VT)(e);
                     return t && (0, b.ug)(e, t);
                 },
-                Z = (0, p.Z)()
-                    .propsFromState(() => ({ languageName: y, languageCode: _.VT }))
+                Z = (0, f.Z)()
+                    .propsFromState(() => ({ languageName: _, languageCode: y.VT }))
                     .propsFromActions(() => ({ fetchCountryNamesIfNeeded: E.Po, fetchAvailableLanguagesIfNeeded: b.yt, createLocalApiErrorHandler: (0, g.zr)("LANGUAGES_SCREEN") })),
                 h = o().d495680e,
-                S = o().jc3fa0e2,
-                C = o().a4b69cbc,
-                v = o().c856bd00,
-                w = o().a4b69cbc,
-                L = o().cab61d58,
-                I = o().dd93fafa,
-                k = o().bca1de4a,
-                A = o().c3aa76c4,
-                T = o().g099069c,
-                R = o().c3aa76c4,
-                x = o().cf9ce876,
-                N = o().d4372cf4,
-                P = { page: "settings", section: "languages" };
-            function V(e) {
-                const { featureSwitches: t } = a.useContext(u.rC),
-                    { createLocalApiErrorHandler: n, fetchAvailableLanguagesIfNeeded: s, fetchCountryNamesIfNeeded: o, languageCode: g, languageName: p, location: b } = e,
+                P = o().jc3fa0e2,
+                S = o().a4b69cbc,
+                C = o().c856bd00,
+                v = o().a4b69cbc,
+                x = o().cab61d58,
+                k = o().dd93fafa,
+                w = o().bca1de4a,
+                T = o().c3aa76c4,
+                I = o().g099069c,
+                z = o().c3aa76c4,
+                H = o().cf9ce876,
+                D = o().d4372cf4,
+                L = { page: "settings", section: "languages" };
+            function B(e) {
+                const { featureSwitches: t } = r.useContext(u.rC),
+                    { createLocalApiErrorHandler: a, fetchAvailableLanguagesIfNeeded: l, fetchCountryNamesIfNeeded: o, languageCode: g, languageName: f, location: b } = e,
                     E = t.isTrue("onboarding_project_uls_enabled"),
-                    _ = a.useMemo(() => (E ? a.createElement(r.Z, { description: N, label: x, link: "/i/flow/uls_content_and_app_language_selector" }) : a.createElement(a.Fragment, null, a.createElement(i.Z, { text: C }), a.createElement(c.Z, { description: v }), a.createElement(r.Z, { description: p, label: w, link: "/settings/language" }), a.createElement(l.Z, null), a.createElement(i.Z, { text: L }), a.createElement(c.Z, { description: I }), a.createElement(r.Z, { label: k, link: "/i/flow/language_selector" }), a.createElement(l.Z, null), a.createElement(i.Z, { text: A }), a.createElement(c.Z, { description: T }), a.createElement(r.Z, { label: R, link: "/settings/your_twitter_data/language" }))), [E, p]);
+                    y = r.useMemo(() => (E ? r.createElement(n.Z, { description: D, label: H, link: "/i/flow/uls_content_and_app_language_selector" }) : r.createElement(r.Fragment, null, r.createElement(i.Z, { text: S }), r.createElement(c.Z, { description: C }), r.createElement(n.Z, { description: f, label: v, link: "/settings/language" }), r.createElement(s.Z, null), r.createElement(i.Z, { text: x }), r.createElement(c.Z, { description: k }), r.createElement(n.Z, { label: w, link: "/i/flow/language_selector" }), r.createElement(s.Z, null), r.createElement(i.Z, { text: T }), r.createElement(c.Z, { description: I }), r.createElement(n.Z, { label: z, link: "/settings/your_twitter_data/language" }))), [E, f]);
                 return (
-                    a.useEffect(() => {
-                        g && o(g).catch(n()), s().catch(n());
-                    }, [g, o, s, n]),
-                    a.createElement(m.nO, { namespace: P }, a.createElement(d.Z, null, a.createElement(f.Z, { location: b, screenType: "secondaryDetail", title: h }, a.createElement(c.Z, { description: S }), _)))
+                    r.useEffect(() => {
+                        g && o(g).catch(a()), l().catch(a());
+                    }, [g, o, l, a]),
+                    r.createElement(p.nO, { namespace: L }, r.createElement(m.Z, null, r.createElement(d.Z, { location: b, screenType: "secondaryDetail", title: h }, r.createElement(c.Z, { description: P }), y)))
                 );
             }
-            const D = Z(V);
+            const A = Z(B);
         },
-        110202: (e, t, n) => {
-            n.r(t), n.d(t, { LocationInformation: () => k, default: () => A });
-            var a = n(202784),
-                r = n(943401),
-                i = n(954110),
-                c = n(779610),
-                l = n(332920),
-                s = n.n(l),
-                o = n(443781),
-                u = n(652904),
-                d = n(944681),
-                m = n(293115),
-                f = n(725405),
-                g = n(264922),
-                p = n(71620),
-                b = n(668214),
-                E = n(205253),
-                _ = n(919022);
-            const y = (0, b.Z)()
-                    .propsFromState(() => ({ settings: E.kQ, viewerUser: _.ZP.selectViewerUser }))
+        110202: (e, t, a) => {
+            a.r(t), a.d(t, { LocationInformation: () => w, default: () => T });
+            var r = a(202784),
+                n = a(943401),
+                i = a(954110),
+                c = a(779610),
+                s = a(332920),
+                l = a.n(s),
+                o = a(443781),
+                u = a(652904),
+                m = a(944681),
+                p = a(293115),
+                d = a(725405),
+                g = a(264922),
+                f = a(71620),
+                b = a(668214),
+                E = a(205253),
+                y = a(919022);
+            const _ = (0, b.Z)()
+                    .propsFromState(() => ({ settings: E.kQ, viewerUser: y.ZP.selectViewerUser }))
                     .adjustStateProps(({ settings: e, ...t }) => ({ ...t, allowLocationHistoryUseEnabled: e.allowLocationHistoryUse }))
-                    .propsFromActions(() => ({ updateSettings: E.VP, createLocalApiErrorHandler: (0, p.zr)("LOCATION_INFORMATION_SCREEN") })),
-                Z = s().jabb9c9a,
-                h = s().dd533318,
-                S = s().dc20d918,
-                C = s().af7d89e6,
-                v = s().d9138166,
-                w = s().fcb6a5b8,
-                L = s().j018f2a2,
-                I = { page: "settings", section: "location_information" };
-            function k({ allowLocationHistoryUseEnabled: e, createLocalApiErrorHandler: t, location: n, updateSettings: l, viewerUser: s }) {
-                const p = (0, f.Z)(),
-                    { featureSwitches: b } = a.useContext(o.rC),
-                    E = !!s?.birthdate && (0, d.k)(s.birthdate.year, s.birthdate.month, s.birthdate.day),
-                    _ = !s || (b.isTrue("settings_for_you_recommendation_enabled") && E);
-                return a.createElement(
-                    m.nO,
-                    { namespace: I },
-                    a.createElement(
+                    .propsFromActions(() => ({ updateSettings: E.VP, createLocalApiErrorHandler: (0, f.zr)("LOCATION_INFORMATION_SCREEN") })),
+                Z = l().jabb9c9a,
+                h = l().dd533318,
+                P = l().dc20d918,
+                S = l().af7d89e6,
+                C = l().d9138166,
+                v = l().fcb6a5b8,
+                x = l().j018f2a2,
+                k = { page: "settings", section: "location_information" };
+            function w({ allowLocationHistoryUseEnabled: e, createLocalApiErrorHandler: t, location: a, updateSettings: s, viewerUser: l }) {
+                const f = (0, d.Z)(),
+                    { featureSwitches: b } = r.useContext(o.rC),
+                    E = !!l?.birthdate && (0, m.k)(l.birthdate.year, l.birthdate.month, l.birthdate.day),
+                    y = !l || (b.isTrue("settings_for_you_recommendation_enabled") && E);
+                return r.createElement(
+                    p.nO,
+                    { namespace: k },
+                    r.createElement(
                         u.Z,
                         null,
-                        a.createElement(
+                        r.createElement(
                             g.Z,
-                            { location: n, screenType: "secondaryDetail", title: Z },
-                            a.createElement(r.Z, { description: h }),
-                            _
+                            { location: a, screenType: "secondaryDetail", title: Z },
+                            r.createElement(n.Z, { description: h }),
+                            y
                                 ? null
-                                : a.createElement(i.Z, {
+                                : r.createElement(i.Z, {
                                       checked: e,
-                                      helpText: C,
-                                      label: S,
+                                      helpText: S,
+                                      label: P,
                                       name: "allowLocationHistoryUse",
-                                      onChange: function (e, n) {
-                                          p.scribe({ ...I, element: e, action: n ? "enable" : "disable" }), l({ [e]: n }).catch(t());
+                                      onChange: function (e, a) {
+                                          f.scribe({ ...k, element: e, action: a ? "enable" : "disable" }), s({ [e]: a }).catch(t());
                                       },
                                   }),
-                            a.createElement(c.Z, { label: v, link: "/settings/your_twitter_data/locations" }),
-                            a.createElement(c.Z, { label: w, link: "/settings/location" }),
-                            a.createElement(c.Z, { label: L, link: "/settings/explore" }),
+                            r.createElement(c.Z, { label: C, link: "/settings/your_twitter_data/locations" }),
+                            r.createElement(c.Z, { label: v, link: "/settings/location" }),
+                            r.createElement(c.Z, { label: x, link: "/settings/explore" }),
                         ),
                     ),
                 );
             }
-            const A = y(k);
+            const T = _(w);
+        },
+        487443: (e, t, a) => {
+            a.r(t), a.d(t, { ManageAffiliateBadges: () => J, ManagesAffiliatesQueryRequest: () => q, default: () => Y });
+            var r = a(143543),
+                n = a(202784),
+                i = a(325686),
+                c = (a(585488), a(107267)),
+                s = a(844685),
+                l = a(750410),
+                o = a(167630),
+                u = a(392237),
+                m = a(332920),
+                p = a.n(m),
+                d = a(652904),
+                g = a(736063),
+                f = a(301410),
+                b = a(725516),
+                E = a(312771),
+                y = a(264922),
+                _ = a(154003),
+                Z = a(673510),
+                h = a(661810),
+                P = a(678773),
+                S = a(516951);
+            const C = p().ab8089ea,
+                v = n.createElement(_.ZP, { icon: n.createElement(P.default, { "aria-label": C }), testID: "reorder", type: "primaryText" }),
+                x = ({ affiliate: e, disabled: t, sortIndex: a }) => {
+                    const { name: r, screen_name: c } = e.affiliated_account_results.result?.legacy || {},
+                        s = e.affiliated_account_results.result?.avatar?.image_url || "";
+                    return c && s && r && n.createElement(n.Fragment, null, n.createElement(Z.ZP, { "aria-checked": !0, avatarShape: "square", avatarSize: "xxLarge", avatarUri: s, decoration: void 0 !== a ? v : void 0, displayMode: "UserCompact", isDisabled: t, name: r, onCellClick: S.Z, screenName: c, userId: "", withInteractiveStyling: !0, withLink: !1 }), 0 === a && n.createElement(i.Z, { style: k.gutter }, n.createElement(h.Z, { spacing: "space2" })));
+                },
+                k = u.default.create((e) => ({ gutter: { marginHorizontal: e.spaces.space16 } })),
+                w = n.memo(x);
+            var T = a(716042),
+                I = a(731708),
+                z = a(782642),
+                H = a(445250),
+                D = (a(571372), a(658236)),
+                L = a(351743),
+                B = a.n(L);
+            const A = D.Z,
+                V = p().e2eac0c4,
+                F = p().ef4602ec,
+                O = (0, T.W8)(w),
+                N = (0, T.JN)(({ isUpdatingAffiliates: e, items: t }) =>
+                    n.createElement(
+                        i.Z,
+                        null,
+                        n.createElement(I.ZP, { style: j.gutter, weight: "medium" }, V),
+                        t.map((t, a) => n.createElement(O, { affiliate: t, disabled: e, index: a, key: a, sortIndex: a })),
+                    ),
+                ),
+                R = ({ affiliations: e }) => {
+                    const [t, a] = n.useState(e),
+                        r = (0, b.z)(),
+                        i = (0, z.p)(),
+                        [c, s] = (() => {
+                            const [e, t] = B()(A);
+                            return [
+                                n.useCallback(
+                                    (t) =>
+                                        new Promise((a, r) => {
+                                            e({
+                                                variables: { affiliations: t.map((e) => ({ team: "NotAssigned", affiliated_account: e })) },
+                                                onCompleted: ({ managed_affiliations_update: e }, t) => {
+                                                    e?.message && r(new Error(e.message)), a(!0);
+                                                },
+                                                onError: r,
+                                            });
+                                        }),
+                                    [e],
+                                ),
+                                t,
+                            ];
+                        })(),
+                        l = n.useCallback(
+                            ({ newIndex: e, oldIndex: n }) => {
+                                r.scribe({ action: "reorder" });
+                                const s = (0, H.Z)(t, n, e);
+                                a(s),
+                                    c(s.map((e) => e.affiliated_account_results.rest_id)).catch(() => {
+                                        a(t), i({ text: F });
+                                    });
+                            },
+                            [t, r, c, i],
+                        );
+                    return n.createElement(N, { isUpdatingAffiliates: s, items: t, onSortEnd: l });
+                },
+                j = u.default.create((e) => ({ gutter: { marginHorizontal: e.spaces.space16 } })),
+                M = n.memo(R),
+                G = p().ce70c590,
+                U = p().a49e1b2a,
+                W = p().e2daf93c,
+                Q = { context: "MANAGE_AFFILIATE_SETTING" },
+                q = r.Z,
+                $ = (0, f.z)(q, { errorConfig: { context: "MANAGE_AFFILIATES_SETTING_CONTEXT" } });
+            function J() {
+                const e = (0, b.z)(),
+                    t = (0, c.useLocation)(),
+                    a = (0, c.useHistory)(),
+                    r = n.useCallback(() => {
+                        a.goBack({ backLocation: "/settings/premium" });
+                    }, [a]),
+                    u = n.useCallback(() => {
+                        e.scribe({ component: "back", action: "navigate" }), r();
+                    }, [e, r]),
+                    m = n.useCallback(({ data: e, fetchStatus: t, retry: a }) => {
+                        if (t === E.ZP.LOADED) {
+                            const { affiliations: t } = e?.managed_affiliations || {};
+                            return n.createElement(i.Z, { style: X.container }, n.createElement(s.Z, { subtext: W, text: U }), 1 === t.length ? n.createElement(w, { affiliate: t[0] }) : n.createElement(M, { affiliations: t }));
+                        }
+                        return t === E.ZP.FAILED ? n.createElement(l.Z, { onRequestRetry: a }) : n.createElement(o.Z, null);
+                    }, []);
+                return n.createElement(d.Z, null, n.createElement(g.H, { errorConfig: Q }, n.createElement(y.Z, { location: t, onBackClick: u, title: G }, n.createElement($, { fetchPolicy: "network-only", render: m, variables: {} }))));
+            }
+            const X = u.default.create((e) => ({ container: { gap: 8 } })),
+                Y = n.memo((0, b.Z)(J, { page: "settings", section: "affiliations" }));
+        },
+        254789: (e, t, a) => {
+            a.d(t, { Z: () => X });
+            var r = a(202784),
+                n = a(325686),
+                i = a(688715),
+                c = a(731708),
+                s = a(392237),
+                l = a(332920),
+                o = a.n(l),
+                u = a(503089),
+                m = a(849353),
+                p = a(311687),
+                d = a(443781),
+                g = a(736063),
+                f = a(337394),
+                b = a(321330),
+                E = a(548797),
+                y = a(643242),
+                _ = a(85034),
+                Z = a(17412),
+                h = a(952793),
+                P = a(685731),
+                S = a(137070),
+                C = a(293084);
+            const v = o().a991d9a3,
+                x = o().edbb700f,
+                k = o().e3f9d219,
+                w = o().ba2e82a1,
+                T = o().e9884540,
+                I = o().bfb879aa,
+                z = ({ subscription: e }) => {
+                    const t = (0, h.hC)("subscriptions_management_billing_label_enabled"),
+                        a = (0, S.Z)()[e?.product?.rest_id ? f.v5.premium[e?.product?.rest_id] : null].hashed,
+                        i = (0, E.gS)(e, "Discount", { status: "active" }),
+                        s = (0, E.gS)(e, "Discount", { status: "pending" }),
+                        l = (0, C.Z)(a).web_subscription_product_details,
+                        o = (0, h.hC)("subscriptions_management_use_active_price"),
+                        u = (0, P.Gi)(e.charge_interval, o ? e.prices : l?.prices),
+                        m = w(new Date(parseInt(e.next_billing_at?.time_in_millis, 10))),
+                        p = u ? (0, P.d3)(u, !1, e) : "",
+                        d = u ? (0, P.d3)(u, !1, e, !0, !1) : "",
+                        g = r.useMemo(() => {
+                            let t;
+                            if (e.next_billing_at?.time_in_millis) return "Expire" === e.state ? (t = k({ date: m })) : s || (t = v({ date: m })), r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, t);
+                        }, [s, e, m]);
+                    return r.createElement(n.Z, null, i ? r.createElement(n.Z, { style: D.activeDiscountContainer, testID: "active_discount_info" }, r.createElement(n.Z, { style: D.discountTitleRow }, r.createElement(Z.default, { style: D.activeDiscountIcon }), r.createElement(c.ZP, { color: "green900", size: "subtext2", weight: "medium" }, T)), r.createElement(c.ZP, { color: "green900", size: "subtext1", style: D.priceLabel, testID: "stripe-price-info" }, p)) : r.createElement(c.ZP, { color: "gray1100", size: "subtext1", style: D.priceLabel, testID: "stripe-price-info" }, p), s ? r.createElement(n.Z, { style: D.pendingDiscountContainer, testID: "pending_discount_info" }, r.createElement(n.Z, { style: D.discountTitleRow }, r.createElement(Z.default, { style: D.pendingDiscountIcon }), r.createElement(c.ZP, { color: "gray900", size: "subtext2", weight: "medium" }, I)), r.createElement(c.ZP, { color: "gray900", size: "subtext1", style: D.priceLabel, testID: "stripe-price-info" }, d), e.next_billing_at?.time_in_millis ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, x({ date: m })) : null) : null, t ? g : null);
+                },
+                H = (e) => r.createElement(g.H, { errorConfig: { context: "manage-subscription-price-info" } }, r.createElement(z, e)),
+                D = s.default.create((e) => ({ priceLabel: { marginBottom: e.spaces.space8 }, activeDiscountContainer: { backgroundColor: e.colors.green100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, gap: e.spaces.space8, marginVertical: e.spaces.space8 }, pendingDiscountContainer: { borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, backgroundColor: e.colors.gray100, borderStyle: "dashed", borderRadius: e.borderRadii.medium, padding: e.spaces.space8, gap: e.spaces.space8, marginTop: e.spaces.space8 }, activeDiscountIcon: { color: e.colors.green900 }, pendingDiscountIcon: { color: e.colors.gray900 }, discountTitleRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center", marginBottom: e.spaces.space4 } })),
+                L = o().e122fb3f,
+                B = o().be103b84,
+                A = o().ace43720,
+                V = o().ba2e82a1,
+                F = o().c8f18aa4,
+                O = o().a341d1f7,
+                N = o().e4aaf0f8,
+                R = o().e5170220,
+                j = o().j6d6b66e,
+                M = o().fae1751f,
+                G = o().fecebd4c,
+                U = o().h201c4c2,
+                W = o().i8385a2c,
+                Q = o().h80834de,
+                q = o().baf97716,
+                $ = o().ae864b69,
+                J = ({ subscription: e, viewer: t }) => {
+                    const { label: a } = (0, b.Z)(),
+                        { featureSwitches: s, userClaims: l } = (0, d.QZ)(),
+                        [o, , g] = (0, _.Z)(e?.product?.rest_id || "", !0),
+                        Z = "SwitchScheduled" === o,
+                        h = g ? f.St[f.v5.premium[g]] : null,
+                        P = (0, E.gS)(e, "FreeTrial", { status: "active" }),
+                        S = e?.payment_source === y.H.Twitter,
+                        C = e?.payment_source === y.H.Ads,
+                        v = e?.payment_source === y.H.Gift,
+                        x = !!e?.payment_source && e?.payment_source !== y.H.Stripe && l.isAnyPremiumSubscriber(),
+                        k = e?.payment_source === y.H.TPay || e?.payment_source === y.H.Twitter,
+                        w = s.getStringValue("subscriptions_gifting_help_url") || (0, i.ju)("https://help.x.com/forms/paid-features/general"),
+                        T = r.useMemo(() => {
+                            if (e?.payment_source && e?.payment_source !== y.H.Stripe) return e?.payment_source === y.H.AppleAppStore ? U : e?.payment_source === y.H.GooglePlay ? W : Q;
+                        }, [e]),
+                        I = r.useCallback(() => (S ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, N, " ", r.createElement(c.ZP, { link: "https://help.x.com/forms/paid-features/general" }, G)) : C ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, R) : v ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, j, " ", r.createElement(c.ZP, { link: w }, G)) : r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, M({ mobilePlatform: T }))), [w, C, S, v, T]);
+                    return r.createElement(n.Z, { style: Y.container }, r.createElement(n.Z, { style: Y.card }, r.createElement(n.Z, { style: Y.header }, r.createElement(c.ZP, { size: "headline2", weight: "medium" }, a), r.createElement(n.Z, { bold: !0, style: Y.label }, "Expire" === e?.state && e.payment_source !== y.H.Gift ? r.createElement(u.default, { style: Y.expiringIcon }) : r.createElement(m.default, { style: Y.activeIcon }), r.createElement(c.ZP, { align: "center", selectable: !1, size: "body", weight: "medium" }, "Expire" === e?.state && e.payment_source !== y.H.Gift ? A : B))), "Stripe" === e?.payment_source ? r.createElement(H, { subscription: e }) : null, Z ? r.createElement(n.Z, { style: Y.callout }, r.createElement(p.default, { style: Y.iconClock }), r.createElement(c.ZP, { size: "subtext1" }, $({ tierName: h, date: V(new Date(parseInt(e?.next_billing_at?.time_in_millis, 10))) }))) : null, "Expire" === e?.state ? r.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Y.expiringSubscriptionLabel }, q) : null, x || k ? I() : null, P ? r.createElement(c.ZP, { color: "gray700", size: "subtext2", style: Y.freeTrialLabel }, L({ endDate: V(new Date(parseInt(P?.ends_at_msec, 10))) })) : null, l.isVerifiedOrgAffiliate() ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, O({ organization: t?.highlightedLabel?.description })) : l.isVerifiedOrg() || l.isLegacyVerifiedOrg() ? r.createElement(c.ZP, { color: "gray700", size: "subtext2" }, F) : null));
+                },
+                X = (e) => r.createElement(g.H, { errorConfig: { context: "stripe-active-subscription-info" } }, r.createElement(J, e)),
+                Y = s.default.create((e) => ({ container: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterHorizontal }, card: { borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray50, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterHorizontal }, label: { flexDirection: "row", minHeight: e.spaces.space32, alignItems: "center", flexShrink: 1 }, activeIcon: { marginEnd: e.spaces.space4, color: e.colors.primary }, expiringIcon: { marginEnd: e.spaces.space4 }, header: { justifyContent: "space-between", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space4 }, callout: { flexDirection: "row", padding: e.spaces.space8, backgroundColor: e.colors.blue50, borderRadius: e.borderRadii.small, gap: e.spaces.space8, alignItems: "center", marginTop: e.spaces.space8 }, freeTrialLabel: { marginTop: e.spaces.space8 }, expiringSubscriptionLabel: { marginTop: e.spaces.space8 }, iconClock: { color: e.colors.text, minWidth: 16 } }));
+        },
+        386255: (e, t, a) => {
+            a.r(t), a.d(t, { ManageSubscriptionScreen: () => N, default: () => R });
+            var r = a(807896),
+                n = a(202784),
+                i = a(325686),
+                c = a(107267),
+                s = a(530732),
+                l = a(928088),
+                o = a(731708),
+                u = a(392237),
+                m = a(332920),
+                p = a.n(m),
+                d = a(191796),
+                g = a(443781),
+                f = a(652904),
+                b = a(736063),
+                E = a(952793),
+                y = a(177210),
+                _ = a(670094),
+                Z = a(147595),
+                h = a(811574),
+                P = a(548797),
+                S = a(643242),
+                C = a(275158),
+                v = a(264922),
+                x = a(254789),
+                k = a(71620),
+                w = a(668214),
+                T = a(818581),
+                I = a(919022);
+            const z = (0, w.Z)()
+                    .propsFromState(() => ({ viewerUser: I.ZP.selectViewerUser, userPreferences: T.kQ }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("AFFILIATES_SCREEN"), fetchUserPreferencesIfNeeded: T.xQ }))
+                    .withAnalytics({ page: "subscriptions", section: "management" }),
+                H = p().ib35705e,
+                D = p().de9f111a,
+                L = p().d5839f9e,
+                B = p().a840c22c,
+                A = p().aaa798fc,
+                V = p().e31456f8,
+                F = p().a7c4ecea,
+                O = p().h15cc518;
+            function N(e) {
+                const { analytics: t, createLocalApiErrorHandler: a, fetchUserPreferencesIfNeeded: u, viewerUser: m } = e,
+                    p = (0, E.hC)("subscriptions_management_query_active_price"),
+                    b = (0, h.Z)({ fetchPrices: p }),
+                    k = (0, Z.R)(b),
+                    w = (0, c.useLocation)(),
+                    { userClaims: T } = n.useContext(g.rC),
+                    I = k?.payment_source,
+                    z = (0, y.Z)({ returnUrl: C.d9, originProduct: "TwitterBlue" });
+                n.useEffect(() => {
+                    u().catch(a({ ...(0, _.d)(), showToast: !0 }));
+                }),
+                    n.useEffect(() => {
+                        t.scribe({ action: "impression" });
+                    }, [t]);
+                const N = T.isAnyPremiumSubscriber(),
+                    R = (0, P.gS)(k, "FreeTrial", { status: "active" }),
+                    M = n.useCallback(() => {
+                        t.scribe({ component: "expiring-sub-manage-subscription", action: "click" }), z?.();
+                    }, [t, z]);
+                return n.createElement(
+                    f.Z,
+                    null,
+                    n.createElement(
+                        v.Z,
+                        { location: w, title: H },
+                        N ? n.createElement(x.Z, { subscription: k, viewer: m }) : null,
+                        n.createElement(
+                            i.Z,
+                            null,
+                            (() => {
+                                const e = !!I && I === S.H.Stripe && N,
+                                    t = "Expire" === k?.state,
+                                    a = ["premium-basic", "premium-basic-test", "premium-basic-sandbox", "rogue-one-prod-2", "rogue-one-test-2-1", "rogue-one-sandbox-2"],
+                                    c = ({ description: e, isExternal: t, label: a, ...c }) => n.createElement(s.Z, (0, r.Z)({}, c, { disabled: !z, style: j.manageSubscriptionInteraction }), n.createElement(l.Z, null, n.createElement(i.Z, { style: j.manageSubscriptionSection }, n.createElement(i.Z, { style: j.manageSubscriptionSectionBody }, n.createElement(o.ZP, { color: "blue500", weight: "medium" }, a), n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, e)), t ? n.createElement(d.default, { style: j.goToSubscriptionPortalIcon }) : null)));
+                                if (e) {
+                                    const e = a.find((e) => e === k?.product?.rest_id) ? { title: A, desc: F } : { title: V, desc: O };
+                                    return n.createElement(n.Fragment, null, R || t ? null : n.createElement(c, { description: e.desc, label: e.title, link: { pathname: "/i/premium_tier_switch", state: { product: "BlueVerifiedPlus" } }, role: "button", testID: "tier-switch-link" }), t ? null : n.createElement(c, { description: L, label: T.isVerifiedOrg() || T.isVerifiedOrgAffiliate() ? B : D, link: "/settings/subscription/manage" }), t ? n.createElement(c, { description: L, isExternal: !0, label: D, onClick: M }) : null);
+                                }
+                                return null;
+                            })(),
+                        ),
+                    ),
+                );
+            }
+            const R = z((e) => n.createElement(b.H, { errorConfig: { context: "manage_subscription_screen" } }, n.createElement(N, e))),
+                j = u.default.create((e) => ({ manageSubscriptionSection: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, manageSubscriptionSectionBody: { flexShrink: 1 }, offPlatformSubscriptionSection: { flexDirection: "column", justifyContent: "space-between" }, goToSubscriptionPortalIcon: { color: e.colors.gray700, flexShrink: 0 }, manageSubscriptionInteraction: { cursor: "pointer" }, blueVerifiedCalloutWrapper: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, newLabelWrapper: { flexDirection: "row" }, newLabel: { backgroundColor: e.colors.blue50, color: e.colors.primary900, marginEnd: 10, borderRadius: e.borderRadii.xLarge, padding: 10 }, iconThumbnail: { marginEnd: e.spaces.space8 }, verifiedOrganizationsSubscriptionDescription: { marginTop: e.spaces.space8 }, upgradeDowngradeComingSoonLabel: { marginTop: e.spaces.space16, marginStart: e.spaces.space16, marginBottom: e.spaces.space12 } }));
+        },
+        185874: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => ge });
+            var r = a(202784),
+                n = a(443781),
+                i = a(952793),
+                c = a(177210),
+                s = a(337394),
+                l = a(147595),
+                o = a(811574),
+                u = a(548797),
+                m = a(685731),
+                p = a(293115),
+                d = a(275158),
+                g = a(137070),
+                f = a(293084),
+                b = a(325686),
+                E = a(107267),
+                y = a(731708),
+                _ = a(154003),
+                Z = a(392237),
+                h = a(332920),
+                P = a.n(h),
+                S = a(980407),
+                C = a(725405);
+            const v = [
+                    { label: P().iccac88e, subscriptions: { BlueVerified: !0 } },
+                    { label: P().d7a124d8, subscriptions: { BlueVerifiedPlus: !0 } },
+                    { label: P().d2d22c36, subscriptions: { BlueVerifiedPlus: !0 } },
+                    { label: P().j249b1d4, subscriptions: { PremiumBasic: !0, BlueVerifiedPlus: !0, BlueVerified: !0 } },
+                    { label: P().c4a37384, subscriptions: { PremiumBasic: !0 } },
+                    { label: P().fb656858, subscriptions: { PremiumBasic: !0 } },
+                    { label: P().faaec212, subscriptions: { BlueVerifiedPlus: !0, BlueVerified: !0 } },
+                    { label: P().fb3c7168, subscriptions: { PremiumBasic: !0, BlueVerifiedPlus: !0, BlueVerified: !0 } },
+                    { label: P().b346bc12, subscriptions: { BlueVerifiedPlus: !0, BlueVerified: !0 } },
+                ],
+                x = P().af66a072,
+                k = P().a092f1ba,
+                w = P().g96c7f48,
+                T = ({ activeProductCategory: e, activeSubscription: t, churnPreventionOfferAvailable: a, goToStripePortal: n, pendingDiscount: i, setCurrentFlowStep: c }) => {
+                    const s = (0, E.useHistory)(),
+                        l = (0, C.Z)(),
+                        o = !!(0, u.gS)(t, "FreeTrial", { status: "active" }),
+                        m = r.useCallback(() => {
+                            l.scribe({ action: "click", element: "change_tier" });
+                        }, [l]),
+                        p = r.useCallback(() => {
+                            i ? c("PendingOfferStep") : a ? c("OfferStep") : (l.scribe({ action: "click", element: "continue_to_cancel" }), n && n());
+                        }, [l, n, a, c, i]);
+                    return r.createElement(
+                        S.Z,
+                        { backButtonType: "back", hideBackButton: !1, history: s, onBackClick: () => c("OptionsStep") },
+                        r.createElement(
+                            b.Z,
+                            { style: I.root },
+                            r.createElement(
+                                b.Z,
+                                { style: I.content },
+                                r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, x),
+                                r.createElement(
+                                    b.Z,
+                                    { role: "list", style: I.list },
+                                    v.filter(({ subscriptions: t }) => t.hasOwnProperty(e)).map(({ label: e }) => r.createElement(y.ZP, { key: e, role: "listitem", style: I.listItem }, e)),
+                                ),
+                                o ? null : r.createElement(_.ZP, { link: "/i/premium_tier_switch", onPress: m, size: "xLarge", style: I.button, type: "primaryOutlined" }, w),
+                                r.createElement(_.ZP, { disabled: !n, onPress: p, size: "xLarge", style: I.button, type: "destructiveFilled" }, k),
+                            ),
+                        ),
+                    );
+                },
+                I = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, list: { marginVertical: e.spaces.space20 }, listItem: { display: "list-item", listStyle: "disc", listStylePosition: "inside", marginVertical: e.spaces.space8 } }));
+            var z = a(40610),
+                H = a(167630),
+                D = a(913973),
+                L = a(125498),
+                B = a(199087),
+                A = a(336629);
+            const V = P().je8143e1,
+                F = P().j5847735,
+                O = P().a092f1ba,
+                N = P().j88ba18e,
+                R = P().da3431f9,
+                j = P().i6fbfc72,
+                M = P().f1bc6309,
+                G = P().ef4602ec,
+                U = P().fdb7b52a,
+                W = ({ activeProductCategory: e, activeSubscription: t, activeTierPrice: a, goToStripePortal: n, offer: c, setCurrentFlowStep: l }) => {
+                    const o = (0, E.useHistory)(),
+                        u = (0, C.Z)(),
+                        [m, p] = (0, B.Z)(),
+                        [d, g] = r.useState(!1),
+                        f = (0, i.hC)("subscriptions_marketing_page_include_tax_enabled");
+                    r.useEffect(() => {
+                        u.scribe({ component: "churn_prevent_offer", action: "impression" });
+                    }, [u]);
+                    const Z = r.useCallback(() => {
+                            u.scribe({ action: "click", component: "churn_prevent_offer", element: "continue_to_cancel" }), n && n();
+                        }, [u, n]),
+                        h = s.St[e],
+                        v = r.useMemo(() => {
+                            const e = { percentage: c.metadata.percent_off, productName: h, duration: c.metadata.duration_in_interval };
+                            return "Month" === a?.charge_interval ? V(e) : F(e);
+                        }, [a, c, h]),
+                        x = r.useCallback(() => {
+                            g(!1),
+                                u.scribe({ component: "churn_prevent_offer", element: "redeem_button", action: "click" }),
+                                m({ offerProgramId: c.program_id, productId: t?.product?.rest_id ?? "", redeemOfferType: "CancellationRetention" })
+                                    .then((e) => {
+                                        "WebPaymentsRedeemOfferResultSuccess" === e.redeem_offer?.__typename ? (u.scribe({ component: "churn_prevent_offer", action: "success" }), l("OfferSuccessStep")) : (g(!0), u.scribe({ component: "churn_prevent_offer", action: "error" }));
+                                    })
+                                    .catch(() => {
+                                        g(!0), u.scribe({ component: "churn_prevent_offer", action: "failure" });
+                                    });
+                        }, [m, l, t, c, u]);
+                    return r.createElement(
+                        S.Z,
+                        { backButtonType: "back", hideBackButton: !1, history: o, onBackClick: () => l("CancelStep") },
+                        r.createElement(
+                            b.Z,
+                            { style: Q.root },
+                            r.createElement(
+                                b.Z,
+                                { style: Q.content },
+                                r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, v),
+                                r.createElement(y.ZP, { style: Q.description }, R({ productName: h })),
+                                r.createElement(
+                                    b.Z,
+                                    { style: Q.list },
+                                    r.createElement(
+                                        b.Z,
+                                        { style: Q.listItem },
+                                        r.createElement(D.default, null),
+                                        r.createElement(
+                                            y.ZP,
+                                            null,
+                                            ((e, t, a) => {
+                                                const n = (0, A.T)({ price: e, annualPriceMonthly: !1, includeTax: a }),
+                                                    i = (0, A.T)({ price: e, annualPriceMonthly: !1, includeTax: a, percentOff: t.metadata.percent_off }),
+                                                    c = { strike: r.createElement(y.ZP, { style: { textDecorationLine: "line-through" }, testID: "strikethrough-price" }), green: r.createElement(y.ZP, { color: "green500", testID: "discount-price", weight: "medium" }) },
+                                                    s = { duration: t.metadata.duration_in_interval ?? 0, standardPrice: n, discountedPrice: i };
+                                                return "Year" === e.charge_interval ? r.createElement(P().I18NFormatMessage, { $i18n: "e9dc8a25", duration: s.duration }, r.cloneElement(c.strike, null, P().af283938({ standardPrice: s.standardPrice })), r.cloneElement(c.green, null, P().c284b365({ discountedPrice: s.discountedPrice }))) : r.createElement(P().I18NFormatMessage, { $i18n: "f8a9cbb7", duration: s.duration }, r.cloneElement(c.strike, null, P().e2673372({ standardPrice: s.standardPrice })), r.cloneElement(c.green, null, P().jd2dc103({ discountedPrice: s.discountedPrice })));
+                                            })(a, c, f),
+                                        ),
+                                    ),
+                                    r.createElement(b.Z, { style: Q.listItem }, r.createElement(D.default, null), r.createElement(y.ZP, null, j)),
+                                    r.createElement(b.Z, { style: Q.listItem }, r.createElement(D.default, null), r.createElement(y.ZP, null, M({ productName: h }))),
+                                    r.createElement(y.ZP, { style: Q.disclaimer }, U),
+                                ),
+                                d ? r.createElement(z.Z.Danger, { text: G }) : null,
+                                r.createElement(_.ZP, { disabled: p, icon: p ? void 0 : r.createElement(L.default, null), onPress: x, size: "xLarge", style: Q.button, type: "primaryOutlined" }, p ? r.createElement(H.Z, null) : N),
+                                r.createElement(_.ZP, { disabled: !n, onPress: Z, size: "xLarge", style: Q.button, type: "destructiveFilled" }, O),
+                            ),
+                        ),
+                    );
+                },
+                Q = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, list: { gap: e.spaces.space12, marginBottom: e.spaces.space20 }, listItem: { flexDirection: "row", gap: e.spaces.space4 }, description: { marginVertical: e.spaces.space16 }, disclaimer: { marginTop: e.spaces.space16 } }));
+            a(136728);
+            const q = P().c6150942,
+                $ = P().fdb7b52a,
+                J = P().a905eac6,
+                X = (e) => {
+                    const t = (0, E.useHistory)();
+                    return r.createElement(S.Z, { backButtonType: "close", hideBackButton: !1, history: t, onBackClick: () => t.push("/i/premium") }, r.createElement(b.Z, { style: Y.root }, r.createElement(b.Z, { style: Y.content }, r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, q), r.createElement(y.ZP, { align: "left" }, $), r.createElement(_.ZP, { link: "/i/premium", size: "xLarge", style: Y.button, type: "primaryFilled" }, J))));
+                },
+                Y = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto", gap: e.spaces.space16 }, button: { marginVertical: e.spaces.space8 } }));
+            var K = a(525754);
+            const ee = Object.freeze({ paymentMethod: "paymentMethod", billingInformation: "billingInformation", cancel: "cancel" }),
+                te = P().j6083a1c,
+                ae = P().c1df579e,
+                re = [
+                    { label: P().b4fa4630, value: ee.paymentMethod, containerStyle: { paddingHorizontal: 0 } },
+                    { label: P().ef0dfa5a, value: ee.billingInformation, containerStyle: { paddingHorizontal: 0 } },
+                    { label: P().f5b352ec, value: ee.cancel, containerStyle: { paddingHorizontal: 0 } },
+                ],
+                ne = ({ goToStripePortal: e, setCurrentFlowStep: t }) => {
+                    const a = (0, E.useHistory)(),
+                        [n, i] = r.useState(),
+                        c = (0, C.Z)(),
+                        s = r.useCallback((e, t) => {
+                            i(t);
+                        }, []),
+                        l = r.useCallback(() => {
+                            switch (n) {
+                                case ee.paymentMethod:
+                                    return c.scribe({ action: "next", element: "change_payment_method" }), void (e && e());
+                                case ee.billingInformation:
+                                    return c.scribe({ action: "next", element: "change_billing_information" }), void (e && e());
+                                case ee.cancel:
+                                    return c.scribe({ action: "next", element: "cancel_subscription" }), void t("CancelStep");
+                                default:
+                                    return;
+                            }
+                        }, [c, e, t, n]);
+                    return r.createElement(S.Z, { backButtonType: "close", hideBackButton: !1, history: a, onBackClick: () => a.goBackThroughModals() }, r.createElement(b.Z, { style: ie.root }, r.createElement(b.Z, { style: ie.content }, r.createElement(y.ZP, { size: "title2", weight: "heavy" }, te), r.createElement(b.Z, { style: ie.radio }, r.createElement(K.Z, { name: "editOption", onChange: s, options: re, value: n })), r.createElement(_.ZP, { disabled: !n || !e, onPress: l, size: "xLarge", style: ie.button, type: "primaryFilled" }, ae))));
+                },
+                ie = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, radio: { marginBottom: e.spaces.space24 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto" }, button: { marginVertical: e.spaces.space8 }, subscriptionDetails: { marginVertical: e.spaces.space16 }, marginBottom: { marginBottom: e.spaces.space8 }, currentPlanContent: { backgroundColor: e.colors.gray50, padding: e.spaces.space8, borderRadius: e.borderRadii.medium, width: "100%" } }));
+            var ce = a(125363),
+                se = a(919022),
+                le = a(254789);
+            const oe = P().j317d958,
+                ue = P().a46e42d2,
+                me = P().a092f1ba,
+                pe = ({ activeSubscription: e, goToStripePortal: t, pendingDiscount: a }) => {
+                    const n = (0, E.useHistory)(),
+                        i = (0, C.Z)(),
+                        c = (0, ce.v9)(se.ZP.selectViewerUser),
+                        s = r.useCallback(() => {
+                            i.scribe({ action: "click", component: "pending_offer_callout", element: "continue_to_cancel" }), t && t();
+                        }, [i, t]);
+                    return r.createElement(S.Z, { backButtonType: "close", hideBackButton: !1, history: n }, r.createElement(b.Z, { style: de.root }, r.createElement(b.Z, { style: de.content }, r.createElement(y.ZP, { align: "left", size: "title1", weight: "heavy" }, oe), r.createElement(le.Z, { subscription: e, viewer: c }), r.createElement(_.ZP, { link: "/i/premium", size: "xLarge", style: de.button, type: "primaryOutlined" }, ue), r.createElement(_.ZP, { disabled: !t, onPress: s, size: "xLarge", style: de.button, type: "destructiveFilled" }, me))));
+                },
+                de = Z.default.create((e) => ({ root: { flexGrow: 1, paddingHorizontal: e.spaces.space40 }, content: { justifyContent: "center", marginHorizontal: e.spaces.space40, marginVertical: "auto", gap: e.spaces.space16 }, button: { marginVertical: e.spaces.space8 } }));
+            function ge(e) {
+                const { featureSwitches: t } = (0, n.QZ)(),
+                    a = (0, g.Z)(),
+                    b = (0, i.hC)("subscriptions_management_query_active_price"),
+                    E = (0, o.Z)({ fetchPrices: b }),
+                    y = (0, l.R)(E),
+                    _ = y?.product?.rest_id ? s.v5.premium[y?.product?.rest_id] : null,
+                    Z = (0, u.gS)(y, "Discount", { status: "pending" }),
+                    h = a[_].hashed,
+                    P = (0, f.Z)(h, { moment: "CancelSubscription" }).web_subscription_product_details,
+                    S = (0, i.hC)("subscriptions_management_use_active_price"),
+                    C = P ? (0, m.Gi)(y?.charge_interval, y?.prices) : null,
+                    v = P ? (0, m.Gi)(y?.charge_interval, P.prices) : null,
+                    x = S ? C : v,
+                    k = v ? (0, m.fS)(v, !0, !1) : null,
+                    w = !!k && t.isTrue("subscriptions_offers_churn_prevention_enabled"),
+                    [I, z] = r.useState("OptionsStep"),
+                    H = (0, c.Z)({ returnUrl: d.d9, originProduct: "TwitterBlue" });
+                if (!_ || !y) return null;
+                return r.createElement(
+                    p.nO,
+                    { namespace: { page: "subscriptions_manage" } },
+                    (() => {
+                        switch (I) {
+                            case "OptionsStep":
+                                return r.createElement(ne, { goToStripePortal: H, setCurrentFlowStep: z });
+                            case "CancelStep":
+                                return r.createElement(T, { activeProductCategory: _, activeSubscription: y, activeTierPrice: x, churnPreventionOfferAvailable: w, goToStripePortal: H, pendingDiscount: Z, setCurrentFlowStep: z });
+                            case "PendingOfferStep":
+                                return r.createElement(pe, { activeSubscription: y, goToStripePortal: H, pendingDiscount: Z });
+                            case "OfferStep":
+                                return k && x ? r.createElement(W, { activeProductCategory: _, activeSubscription: y, activeTierPrice: x, goToStripePortal: H, offer: k, setCurrentFlowStep: z }) : null;
+                            case "OfferSuccessStep":
+                                return r.createElement(X, null);
+                            default:
+                                return null;
+                        }
+                    })(),
+                );
+            }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.8ef9f8ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.4be8e4ba.js.map

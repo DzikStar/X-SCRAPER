@@ -13,7 +13,7 @@
             const s = l.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         98538: (e, t, r) => {
-            r.d(t, { Z: () => g });
+            r.d(t, { Z: () => f });
             var o = r(202784),
                 n = r(325686),
                 l = r(731708),
@@ -47,7 +47,7 @@
                 (d.Label = ({ children: e, style: t }) => o.createElement(u.Consumer, null, ({ onMedia: r }) => o.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: i, style: t }))),
                 (d.Value = ({ animated: e, children: t, count: r, style: n, weight: a = "bold" }) => o.createElement(u.Consumer, null, ({ onMedia: c }) => (e ? o.createElement(s.ZP, { children: t, count: r, size: i, style: n, weight: a }) : o.createElement(l.ZP, { children: t, color: c ? "white" : "text", size: i, style: n, weight: a }))));
             const h = c.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
-                g = d;
+                f = d;
         },
         819483: (e, t, r) => {
             r.d(t, { Z: () => d });
@@ -60,15 +60,15 @@
                 i = r(731708),
                 u = r(392237);
             const d = (e) => {
-                    const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: g, sortOptions: f } = e,
+                    const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: f, sortOptions: g } = e,
                         m = o.useRef(null),
-                        v = o.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
-                        b = o.useMemo(() => (0, s.Z)(r || c.Z), [r]);
+                        b = o.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
+                        v = o.useMemo(() => (0, s.Z)(r || c.Z), [r]);
                     o.useEffect(() => {
                         if (d.length) {
                             const e = new IntersectionObserver(
                                     (e) => {
-                                        e && e.length > 0 && e[0].isIntersecting && b();
+                                        e && e.length > 0 && e[0].isIntersecting && v();
                                     },
                                     { threshold: 1 },
                                 ),
@@ -80,7 +80,7 @@
                                 }
                             );
                         }
-                    }, [m, b, d.length]);
+                    }, [m, v, d.length]);
                     return o.createElement(
                         n.Z,
                         { style: h.tableContainer },
@@ -100,13 +100,13 @@
                                                 key: e.field,
                                                 onClick: () =>
                                                     ((e, t = !1) => {
-                                                        if (!t || !g) return;
-                                                        g({ sortField: e, sortOrder: e === f?.sortField ? ("ASCENDING" === f?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
+                                                        if (!t || !f) return;
+                                                        f({ sortField: e, sortOrder: e === g?.sortField ? ("ASCENDING" === g?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
                                                     })(e.field, e.sortable),
-                                                style: { width: `${Math.floor((100 * e.width) / v)}%`, ...h.tableHeading },
+                                                style: { width: `${Math.floor((100 * e.width) / b)}%`, ...h.tableHeading },
                                             },
                                             o.createElement(i.ZP, { weight: "bold" }, e.label),
-                                            e.field === f?.sortField && ("ASCENDING" === f?.sortOrder ? o.createElement(l.default, null) : o.createElement(a.default, null)),
+                                            e.field === g?.sortField && ("ASCENDING" === g?.sortOrder ? o.createElement(l.default, null) : o.createElement(a.default, null)),
                                         ),
                                     ),
                                 ),
@@ -130,19 +130,6 @@
         183806: (e, t, r) => {
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
-        },
-        275450: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var o = r(202784),
-                n = r(890601),
-                l = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M2 8.5C2 7.12 3.12 6 4.5 6h11C16.88 6 18 7.12 18 8.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 22 2 20.88 2 19.5v-11zM19.5 4c.28 0 .5.22.5.5v13.45c1.14-.23 2-1.24 2-2.45v-11C22 3.12 20.88 2 19.5 2h-11c-1.21 0-2.22.86-2.45 2H19.5z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
         },
         544044: (e, t, r) => {
             r.d(t, { T: () => s });
@@ -409,11 +396,11 @@
             function s(e, t) {
                 const { years: r = 0, months: n = 0, weeks: s = 0, days: c = 0, hours: i = 0, minutes: u = 0, seconds: d = 0 } = t,
                     h = l(e, n + 12 * r),
-                    g = (0, o.k)(h, c + 7 * s),
-                    f = 1e3 * (d + 60 * (u + 60 * i));
-                return (0, a.L)(e, g.getTime() - f);
+                    f = (0, o.k)(h, c + 7 * s),
+                    g = 1e3 * (d + 60 * (u + 60 * i));
+                return (0, a.L)(e, f.getTime() - g);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.bcbd4f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.890cb91a.js.map

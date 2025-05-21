@@ -136,7 +136,7 @@
         },
         196594: (e, u, a) => {
             "use strict";
-            a.d(u, { Z: () => B });
+            a.d(u, { Z: () => E });
             var d = a(268058),
                 t = a(381973),
                 s = a(579771);
@@ -173,18 +173,18 @@
                 j = (0, t.Z)(/[\+\-a-z#{cyrillicLettersAndMarks}0-9=_#\/#{latinAccentChars}]|(?:#{validUrlBalancedParens})/i, { cyrillicLettersAndMarks: y, latinAccentChars: s.Z, validUrlBalancedParens: C }),
                 z = (0, t.Z)("(?:(?:#{validGeneralUrlPathChars}*(?:#{validUrlBalancedParens}#{validGeneralUrlPathChars}*)*#{validUrlPathEndingChars})|(?:@#{validGeneralUrlPathChars}+/))", { validGeneralUrlPathChars: k, validUrlBalancedParens: C, validUrlPathEndingChars: j }, "i"),
                 Z = (0, t.Z)(/(?:[^A-Za-z0-9@＠$#＃#{invalidCharsGroup}]|[#{directionalMarkersGroup}]|^)/, { invalidCharsGroup: f, directionalMarkersGroup: o }),
-                M = /[a-z0-9!?\*'@\(\);:&=\+\$\/%#\[\]\-_\.,~|]/i,
-                L = /[a-z0-9\-_&=#\/]/i,
-                N = (0, t.Z)("((#{validUrlPrecedingChars})((https?:\\/\\/)?(#{validDomain})(?::(#{validPortNumber}))?(\\/#{validUrlPath}*)?(\\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?))", { validUrlPrecedingChars: Z, validDomain: x, validPortNumber: w, validUrlPath: z, validUrlQueryChars: M, validUrlQueryEndingChars: L }, "gi"),
-                A = /[-_.\/]$/,
-                F = (0, t.Z)(/^https?:\/\/t\.co\/([a-z0-9]+)(?:\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?/, { validUrlQueryChars: M, validUrlQueryEndingChars: L }, "i"),
+                L = /[a-z0-9!?\*'@\(\);:&=\+\$\/%#\[\]\-_\.,~|]/i,
+                M = /[a-z0-9\-_&=#\/]/i,
+                N = (0, t.Z)("((#{validUrlPrecedingChars})((https?:\\/\\/)?(#{validDomain})(?::(#{validPortNumber}))?(\\/#{validUrlPath}*)?(\\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?))", { validUrlPrecedingChars: Z, validDomain: x, validPortNumber: w, validUrlPath: z, validUrlQueryChars: L, validUrlQueryEndingChars: M }, "gi"),
+                F = /[-_.\/]$/,
+                A = (0, t.Z)(/^https?:\/\/t\.co\/([a-z0-9]+)(?:\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?/, { validUrlQueryChars: L, validUrlQueryEndingChars: M }, "i"),
                 P = { extractUrlsWithoutProtocol: !0 },
-                E = (e, u, a) => {
+                B = (e, u, a) => {
                     let d = e.length;
                     const t = l.toAscii(a);
                     return !(!t || !t.length) && ((d = d + t.length - a.length), u.length + d <= 4096);
                 },
-                B = (e, u = P) => {
+                E = (e, u = P) => {
                     if (!e || (u.extractUrlsWithoutProtocol ? !e.match(/\./) : !e.match(/:/))) return [];
                     const a = [];
                     for (; N.exec(e); ) {
@@ -195,16 +195,16 @@
                             c = RegExp.$7;
                         let r = N.lastIndex;
                         const i = r - d.length;
-                        if (E(d, t || "https://", s))
+                        if (B(d, t || "https://", s))
                             if (t) {
-                                if (d.match(F)) {
+                                if (d.match(A)) {
                                     const e = RegExp.$1;
                                     if (e && e.length > 40) continue;
                                     (d = RegExp.lastMatch), (r = i + d.length);
                                 }
                                 a.push({ url: d, indices: [i, r] });
                             } else {
-                                if (!u.extractUrlsWithoutProtocol || e.match(A)) continue;
+                                if (!u.extractUrlsWithoutProtocol || e.match(F)) continue;
                                 let t = null,
                                     l = 0;
                                 if (
@@ -558,7 +558,7 @@
         },
         597322: (e, u, a) => {
             "use strict";
-            a.r(u), a.d(u, { default: () => f });
+            a.r(u), a.d(u, { default: () => h });
             a(136728);
             var d = a(202784),
                 t = a(176453),
@@ -566,55 +566,65 @@
                 c = a(107267),
                 r = a(67369),
                 i = a(392237),
-                n = a(252021),
-                l = a(234622);
+                n = a(857378),
+                l = a(252021),
+                o = a(234622);
             a(536188);
-            const o = i.default.create((e) => ({ root: { width: "100%", display: "block", height: "100dvh" }, narrowRoot: { height: "unset" }, webviewRoot: { height: "100%" } })),
-                f = (e) => {
-                    const u = (0, r.JS)(),
+            const f = i.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                h = (e) => {
+                    const u = (0, r.yu)(),
                         a = (0, c.useHistory)(),
-                        { id: i, token: f } = (0, c.useParams)();
-                    return (i && f) || a.push("/i/chat"), d.createElement(l.i, null, d.createElement(n.Z, { history: a, isFullWidth: !0, primaryContent: () => d.createElement(s.Z, { style: [o.root, u && o.narrowRoot] }, d.createElement(t.N, { groupId: i, settings: { path: "/i/chat" }, token: f })), sidebarContent: null }));
+                        { id: i, token: h } = (0, c.useParams)(),
+                        m = u ? n.h$ : 0;
+                    return (i && h) || a.push("/i/chat"), d.createElement(o.i, null, d.createElement(l.Z, { history: a, isFullWidth: !0, primaryContent: () => d.createElement(s.Z, { style: f.root }, d.createElement(t.N, { groupId: i, settings: { path: "/i/chat", bottomBarHeight: m }, token: h })), sidebarContent: null }));
                 };
         },
         647665: (e, u, a) => {
             "use strict";
-            a.r(u), a.d(u, { default: () => f });
+            a.r(u), a.d(u, { default: () => h });
             var d = a(202784),
                 t = a(954713),
                 s = a(325686),
                 c = a(107267),
                 r = a(67369),
                 i = a(392237),
-                n = a(252021),
-                l = a(234622);
+                n = a(857378),
+                l = a(252021),
+                o = a(234622);
             a(470201);
-            const o = i.default.create((e) => ({ root: { width: "100%", display: "block", height: "100dvh" }, narrowRoot: { height: "unset" }, webviewRoot: { height: "100%" } })),
-                f = (e) => {
-                    const u = (0, r.JS)(),
+            const f = i.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                h = (e) => {
+                    const u = (0, r.yu)(),
                         a = (0, c.useHistory)(),
-                        { xChatPinMode: i, xChatPinRegister: f } = (0, c.useParams)();
-                    return d.createElement(l.i, null, d.createElement(n.Z, { history: a, isFullWidth: !0, primaryContent: () => d.createElement(s.Z, { style: [o.root, u && o.narrowRoot] }, d.createElement(t.x, { mode: i ?? "new", settings: { path: "/i/chat" }, shouldRegister: "register" === f })), sidebarContent: null }));
+                        { xChatPinMode: i, xChatPinRegister: h } = (0, c.useParams)(),
+                        m = u ? n.h$ : 0;
+                    return d.createElement(o.i, null, d.createElement(l.Z, { history: a, isFullWidth: !0, primaryContent: () => d.createElement(s.Z, { style: f.root }, d.createElement(t.x, { mode: i ?? "new", settings: { path: "/i/chat", bottomBarHeight: m }, shouldRegister: "register" === h })), sidebarContent: null }));
                 };
         },
         476644: (e, u, a) => {
             "use strict";
-            a.r(u), a.d(u, { default: () => h });
+            a.r(u), a.d(u, { default: () => b });
             var d = a(202784),
                 t = a(700931),
-                s = a(325686),
-                c = a(107267),
-                r = a(67369),
-                i = a(392237),
-                n = a(252021),
-                l = a(234622),
-                o = (a(434882), a(952793));
-            const f = i.default.create((e) => ({ root: { width: "100%", display: "block", height: "100dvh" }, narrowRoot: { height: "unset" }, webviewRoot: { height: "100%" } })),
-                h = (e) => {
-                    const u = (0, r.JS)(),
-                        a = (0, c.useHistory)(),
-                        i = (0, o.hC)("rweb_xchat_debug_enabled");
-                    return d.createElement(l.i, null, d.createElement(n.Z, { history: a, isFullWidth: !0, primaryContent: () => d.createElement(s.Z, { style: [f.root, u && f.narrowRoot] }, d.createElement(t.H, { settings: { path: "/i/chat", showDebugOptions: i } })), sidebarContent: null }));
+                s = a(264531),
+                c = a(325686),
+                r = a(107267),
+                i = a(67369),
+                n = a(392237),
+                l = a(857378),
+                o = a(252021),
+                f = a(234622),
+                h = (a(434882), a(952793));
+            const m = n.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                b = (e) => {
+                    const u = (0, r.useHistory)(),
+                        a = (0, r.useLocation)(),
+                        n = (0, h.hC)("rweb_xchat_debug_enabled"),
+                        b = (0, i.yu)(),
+                        g = !("/i/chat/" === a.pathname || "/i/chat" === a.pathname),
+                        p = b && !g ? l.h$ : 0,
+                        v = (0, h.hC)("rweb_xchat_logs");
+                    return d.createElement(f.i, null, d.createElement(o.Z, { headerless: b && g, history: u, isFullWidth: !0, primaryContent: () => d.createElement(c.Z, { style: m.root }, d.createElement(t.H, { settings: { path: "/i/chat", showDebugOptions: n, bottomBarHeight: p, logLevel: v ? s.B$.INFO : s.B$.ERROR } })), sidebarContent: null }));
                 };
         },
         115290: (e, u, a) => {
@@ -658,4 +668,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.ff87156a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.ee1be54a.js.map

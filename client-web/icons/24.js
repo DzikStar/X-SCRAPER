@@ -2,240 +2,247 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["icons.24"],
     {
-        629195: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        829077: (e, t, l) => {
+            l.d(t, { T: () => o });
+            var i = l(202784),
+                a = l(992942),
+                r = l(392237),
+                n = l(634171);
+            function o() {
+                return i.createElement(a.Z, { "aria-label": "", source: n, style: r.default.absoluteFill });
+            }
+        },
+        835152: (e, t, l) => {
+            l.d(t, { T: () => o });
+            var i = l(202784),
+                a = l(992942),
+                r = l(392237),
+                n = l(6885);
+            function o() {
+                return i.createElement(a.Z, { "aria-label": "", source: n, style: r.default.absoluteFill });
+            }
+        },
+        818088: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
             var i = l(202784),
                 a = l(890601),
                 r = l(783427),
                 n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M21 6H3V4h18v2zm-4 7H7v-2h10v2zm4 7H3v-2h18v2z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        715417: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => d });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(717683),
-                c = l(347101);
             const o = (e = {}) => {
-                const t = i.useContext(n.Z),
-                    { direction: l } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style, t && c.Z.iconRTL], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.34 1.75 12S6.339 22.25 12 22.25 22.25 17.66 22.25 12 17.661 1.75 12 1.75zm.957 14.71l-1.414-1.42L13.586 13H7v-2h6.586l-2.043-2.04 1.414-1.42L17.414 12l-4.457 4.46z" })) }, { writingDirection: l });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
-            const d = o;
+            const c = o;
         },
-        915796: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        696711: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
             var i = l(202784),
                 a = l(890601),
                 r = l(783427),
                 n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 40 40", children: i.createElement("g", null, i.createElement("path", { clipRule: "evenodd", d: "M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20zm-9.41-25.128l9.23-4.103 9.231 4.103v3.077H10.59zm4.102 4.102h-2.051v7.18h2.051zM10.59 29.231V27.18h18.46v2.05zm14.359-10.257h2.05v7.18h-2.05zm-8.206 0h2.052v7.18h-2.052zm4.103 0h2.051v7.18h-2.05z", fillRule: "evenodd" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 40, height: 40 };
-            const o = c;
-        },
-        156404: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3.2 4H1V2h3.8l.68 3h16.8l-2.5 10H5.7L3.2 4zm2.73 3l1.37 6h10.92l1.5-6H5.93zM8 17c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm9 4c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        134997: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M19.5 3h-15C3.122 3 2 4.121 2 5.5v13C2 19.879 3.122 21 4.5 21h15c1.378 0 2.5-1.121 2.5-2.5v-13C22 4.121 20.878 3 19.5 3zM4 18.5v-13c0-.275.224-.5.5-.5H11v14H4.5c-.276 0-.5-.225-.5-.5zm16 0c0 .275-.224.5-.5.5H13V5h6.5c.276 0 .5.225.5.5v13zM15 7h3v2h-3V7zm0 4h3v2h-3v-2z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        796247: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M9 3h6v2h-2v1.05c4.4.44 8 3.73 8 7.95v3h-8v2h8v2H3v-2h8v-2H3v-3c0-4.22 3.6-7.51 8-7.95V5H9V3zm10 12v-1c0-3.19-3-6-7-6s-7 2.81-7 6v1h14z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        828314: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.59l4.21 4.2-1.42 1.42L13 5.41V11h5.59l-1.8-1.79 1.42-1.42 4.2 4.21-4.2 4.21-1.42-1.42 1.8-1.79H13v5.59l1.79-1.8 1.42 1.42-4.21 4.2-4.21-4.2 1.42-1.42 1.79 1.8V13H5.41l1.8 1.79-1.42 1.42L1.59 12l4.2-4.21 1.42 1.42L5.41 11H11V5.41l-1.79 1.8-1.42-1.42L12 1.59z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        745788: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)(
-                    "svg",
-                    {
-                        ...e,
-                        role: e["aria-label"] ? e.role || "img" : void 0,
-                        "aria-hidden": void 0 === e["aria-label"],
-                        style: [n.Z.root, e.style],
-                        viewBox: "0 0 68 24",
-                        children: i.createElement("g", null, i.createElement("path", { clipRule: "evenodd", d: "M6 2h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H6c-2.21 0-4-1.79-4-4V6c0-2.21 1.79-4 4-4zm.643 15.8l8.109-11.58h2.515L9.158 17.8H6.643z", fillRule: "evenodd" }), i.createElement("path", { d: "M37.212 18.277c-.851.265-1.64.4-2.364.4-1.365 0-2.567-.282-3.605-.843-1.039-.561-1.839-1.331-2.4-2.31-.562-.978-.843-2.077-.843-3.297 0-1.425.302-2.66.906-3.706.604-1.044 1.42-1.844 2.446-2.4 1.026-.555 2.15-.833 3.37-.833.736 0 1.43.088 2.082.263.653.175 1.238.407 1.758.697l-.58 1.612c-.387-.216-.873-.407-1.459-.57-.586-.163-1.114-.245-1.585-.245-1.014 0-1.911.207-2.69.617-.78.41-1.38.996-1.803 1.756-.423.762-.634 1.65-.634 2.664 0 .941.211 1.781.634 2.518.423.736 1.02 1.308 1.794 1.711.773.405 1.655.608 2.645.608.459 0 .906-.046 1.34-.137.435-.09.798-.22 1.088-.39v-2.59h-2.61v-1.684h4.385v5.29c-.399.314-1.023.604-1.875.87zm7.265-6.558c.356-.313.734-.555 1.132-.724.399-.17.749-.26 1.05-.272l-.072 1.684c-.543-.024-1.035.085-1.476.326-.44.242-.785.577-1.033 1.006-.247.43-.371.885-.371 1.368v3.425h-1.685v-7.5h1.504l.127 1.774c.193-.41.467-.772.824-1.086zm3.913.97c.356-.61.852-1.09 1.486-1.44.634-.35 1.35-.527 2.146-.527.798 0 1.507.177 2.13.527.621.35 1.104.826 1.448 1.43.344.604.517 1.28.517 2.03 0 .748-.172 1.428-.517 2.038-.344.61-.83 1.09-1.458 1.44-.628.35-1.347.525-2.156.525-.809 0-1.492-.165-2.12-.497-.628-.334-1.12-.8-1.476-1.404-.356-.605-.534-1.306-.534-2.102 0-.736.178-1.41.534-2.02zm1.486 3.341c.21.4.5.713.87.942.367.23.775.345 1.222.345.7 0 1.28-.247 1.74-.742.458-.495.688-1.111.688-1.848 0-.736-.23-1.356-.689-1.857-.459-.5-1.038-.752-1.739-.752-.459 0-.87.117-1.232.354-.362.235-.649.552-.86.95-.212.4-.317.833-.317 1.304 0 .471.105.906.317 1.304zm12.328-2.046l2.771-2.229-1.032-.905-3.877 3.117v-8.68h-1.685v13.244h1.685v-2.808l.978-.799 2.319 3.607h1.975l-3.134-4.546z" })),
-                    },
-                    { writingDirection: t },
-                );
-            };
-            c.metadata = { width: 68, height: 24 };
-            const o = c;
-        },
-        711762: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { clipRule: "evenodd", d: "M9.5 7C8.672 7 8 8.119 8 9.5S8.672 12 9.5 12 11 10.881 11 9.5 10.328 7 9.5 7zM16 9.5c0 1.381-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7 16 8.119 16 9.5zm4.523 8.195c1.126-1.686 1.727-3.668 1.727-5.695-.003-2.718-1.084-5.323-3.005-7.245C17.323 2.834 14.718 1.753 12 1.75c-2.027 0-4.009.601-5.695 1.727-1.685 1.127-2.999 2.728-3.775 4.6-.776 1.873-.979 3.934-.583 5.923.395 1.988 1.372 3.814 2.805 5.248 1.434 1.433 3.26 2.41 5.248 2.805 1.989.395 4.05.193 5.922-.583 1.873-.776 3.474-2.09 4.6-3.775zM18.86 7.417c.906 1.356 1.39 2.951 1.39 4.583-.002 2.187-.872 4.284-2.419 5.831-1.547 1.547-3.644 2.417-5.831 2.419-1.632 0-3.227-.484-4.583-1.39-1.357-.907-2.415-2.195-3.039-3.703-.624-1.507-.788-3.166-.47-4.767.319-1.6 1.105-3.07 2.258-4.224C7.32 5.013 8.79 4.226 10.39 3.91c1.6-.319 3.26-.155 4.767.469 1.508.624 2.796 1.682 3.703 3.039zm-11.8 8.61h9.96v-2H7.06v2z", fillRule: "evenodd" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        916092: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M5 13h3.414l3.783-3.783 4.079 2.039 4.505-5.631-1.562-1.25-3.495 4.369-3.921-1.961L7.586 11H5V3H3v18h18v-2H5z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        720526: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M19.5 2C20.88 2 22 3.12 22 4.5v11c0 1.21-.86 2.22-2 2.45V4.5c0-.28-.22-.5-.5-.5H6.05c.23-1.14 1.24-2 2.45-2h11zm-4 4C16.88 6 18 7.12 18 8.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 22 2 20.88 2 19.5v-11C2 7.12 3.12 6 4.5 6h11zM4 19.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-11c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5v11z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
-        },
-        841972: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => d });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(717683),
-                c = l(347101);
             const o = (e = {}) => {
-                const t = i.useContext(n.Z),
-                    { direction: l } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style, t && c.Z.iconRTL], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: l });
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 2C6.477 2 2 6.477 2 12c0 1.523.34 2.968.951 4.262L2.17 20.07c-.214 1.044.698 1.972 1.745 1.776l3.95-.739c1.26.574 2.661.893 4.135.893 5.523 0 10-4.477 10-10S17.523 2 12 2z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
-            const d = o;
+            const c = o;
         },
-        772722: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        899667: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
             var i = l(202784),
                 a = l(890601),
                 r = l(783427),
                 n = l(347101);
-            const c = (e = {}) => {
+            const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, a.Z)(
-                    "svg",
-                    {
-                        ...e,
-                        role: e["aria-label"] ? e.role || "img" : void 0,
-                        "aria-hidden": void 0 === e["aria-label"],
-                        style: [n.Z.root, e.style],
-                        viewBox: "0 0 24 24",
-                        children: i.createElement(
-                            "g",
-                            null,
-                            i.createElement("path", { d: "M8.18 5.317c-.067.067-.118.148-.16.236l-.006-.005-6.722 15.145.006.006c-.125.24.084.732.51 1.16.428.427.92.636 1.16.51l.007.007 15.145-6.722-.005-.005c.088-.042.17-.093.237-.16.937-.937-.582-3.973-3.39-6.782-2.81-2.81-5.845-4.328-6.782-3.39z", fill: "#E0245E" }),
-                            i.createElement("path", { d: "M15.005 8.66c2.8 2.8 4.353 5.785 3.47 6.668-.883.883-3.868-.67-6.67-3.47-2.8-2.8-4.352-5.786-3.47-6.67.884-.882 3.87.672 6.67 3.472z", fill: "#A01744" }),
-                            i.createElement("path", { d: "M15.186 12.756c-.176 0-.35-.077-.47-.225-.206-.258-.164-.635.095-.842.132-.105 3.25-2.553 7.653-1.923.328.047.556.35.51.678-.048.328-.35.557-.68.508-3.89-.552-6.705 1.652-6.732 1.674-.11.09-.243.132-.374.132z", fill: "#FFAD1F" }),
-                            i.createElement("path", { d: "M20.177 14.654c1.182-.334 1.998.194 2.193.886.194.692-.227 1.568-1.408 1.9-.46.13-.6.35-.58.42.02.07.254.187.714.057 1.182-.332 1.998.195 2.192.887.196.692-.227 1.567-1.41 1.9-.46.13-.6.35-.58.42.02.07.254.187.716.058.318-.09.65.096.74.414.088.32-.098.65-.417.74-1.18.332-1.998-.194-2.193-.887-.194-.693.227-1.567 1.41-1.9.46-.13.6-.35.58-.42-.02-.07-.253-.188-.714-.058-1.183.333-1.998-.193-2.193-.886-.195-.692.227-1.566 1.41-1.9.46-.13.6-.35.58-.42-.02-.07-.253-.187-.715-.057-.32.09-.65-.097-.74-.415-.09-.32.096-.652.415-.74zM3.864 10.42c-.057 0-.115-.01-.173-.026-.316-.096-.496-.43-.4-.747.68-2.262 1.295-5.87.54-6.812-.087-.106-.214-.21-.507-.19-.563.044-.51 1.23-.508 1.242.025.33-.223.618-.553.643-.335.02-.618-.223-.642-.553-.062-.827.195-2.42 1.613-2.526.633-.047 1.16.173 1.53.635 1.42 1.77-.02 6.897-.325 7.907-.078.26-.317.427-.574.427z", fill: "#794BC4" }),
-                            i.createElement("circle", { cx: "1.826", cy: "12.857", fill: "#FFAD1F", r: "1.076" }),
-                            i.createElement("circle", { cx: "17.702", cy: "6.814", fill: "#E0245E", r: ".899" }),
-                            i.createElement("circle", { cx: "15.628", cy: "20.377", fill: "#DF235F", r: "1.064" }),
-                            i.createElement("circle", { cx: "21.878", cy: "5.9", fill: "#FFAD1F", r: "1.004" }),
-                            i.createElement("circle", { cx: "18.458", cy: "2.733", fill: "#E0245E", r: "1.199" }),
-                            i.createElement("path", { d: "M12.313 8.463c-.12.096-.275.147-.44.13-.52-.057-.958-.238-1.264-.524-.325-.304-.485-.71-.442-1.117.077-.714.794-1.37 2.016-1.238.476.05.688-.102.695-.175.007-.073-.167-.268-.642-.32-.52-.055-.958-.236-1.265-.522-.324-.303-.485-.71-.44-1.116.078-.715.794-1.37 2.015-1.238.347.037.53-.034.606-.08.062-.04.087-.075.09-.096.006-.072-.166-.267-.643-.32-.328-.035-.567-.33-.53-.66.035-.328.33-.566.66-.53 1.22.13 1.782.924 1.705 1.64-.077.714-.794 1.37-2.016 1.237-.347-.038-.53.034-.607.08-.06.037-.087.074-.09.094-.007.072.167.267.643.318 1.22.132 1.782.925 1.705 1.64-.076.715-.793 1.37-2.014 1.238-.347-.037-.53.035-.606.08-.062.04-.086.075-.088.096-.008.073.166.267.642.32.33.035.568.33.53.66-.02.163-.102.304-.22.4z", fill: "#FFAD1F" }),
-                        ),
-                    },
-                    { writingDirection: t },
-                );
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 6.59l8.457 8.45-1.414 1.42L12 9.41l-7.043 7.05-1.414-1.42L12 6.59z" })) }, { writingDirection: t });
             };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
-        466445: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        376278: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
             var i = l(202784),
                 a = l(890601),
                 r = l(783427),
                 n = l(347101);
-            const c = (e = {}) => {
+            const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 1.28v.09c0 1.79 0 3.53-.829 5.18-.42-.78-1.061-1.36-1.707-1.94l-.268-.24c-.501 1-1.151 1.98-1.807 2.97C4.959 9.5 3.5 11.7 3.5 14.25c0 2.52.949 4.55 2.538 5.94 1.437 1.26 3.334 1.94 5.378 2.04.122.01.539.02.584.02 4.615 0 8.5-3.37 8.5-8C20.5 8.29 15.797 4 11 1.28zm2.534 18.08c-.521.56-1.144.87-1.681.89-.111 0-.221-.01-.331-.01-.454-.05-.684-.23-.82-.41-.192-.24-.313-.64-.313-1.14 0-.75.362-1.26 1.214-2.02.166-.14.35-.3.548-.46.47-.4 1.017-.86 1.56-1.41l.031.07c.35.83.647 1.78.647 2.54 0 .65-.317 1.38-.855 1.95zm2.572-.42c.18-.48.283-1 .283-1.53 0-1.17-.429-2.43-.804-3.32-.194-.46-.388-.85-.533-1.13-.073-.14-1.02-1.78-1.02-1.78l-.901 1.23c-.678.92-1.425 1.55-2.18 2.19-.224.19-.449.38-.673.58-.94.83-1.889 1.85-1.889 3.51 0 .22.014.44.047.67C6.673 18.38 5.5 16.6 5.5 14.25c0-2.01 1.133-3.61 2.246-5.18.284-.4.568-.8.831-1.21.419.89.419 2.18.173 3.08l.117-.11c1.971-1.7 3.514-3.03 3.969-6.06.632.47 1.415 1.12 2.195 1.93 1.79 1.84 3.469 4.42 3.469 7.55 0 1.92-.921 3.61-2.394 4.69z" })) }, { writingDirection: t });
             };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
-        129816: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
+        432181: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
             var i = l(202784),
                 a = l(890601),
                 r = l(783427),
                 n = l(347101);
-            const c = (e = {}) => {
+            const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 55 9", children: i.createElement("g", null, i.createElement("path", { d: "M53 7.393C53 8.28 52.28 9 51.393 9h-5.786C44.72 9 44 8.28 44 7.393V1.607C44 .72 44.72 0 45.607 0h5.786C52.28 0 53 .72 53 1.607v5.786z", fill: "#BCBDBB" }), i.createElement("path", { d: "M51.556 3.792l-2.112-.31-.967-2.192v-.003L47.56 3.48l-2.11.307 1.525 1.494-.36 2.116 1.863-1.227 1.93 1.183-.38-2.067", fill: "#F0F0EF" }), i.createElement("path", { d: "M42 7.393C42 8.28 41.28 9 40.393 9h-5.786C33.72 9 33 8.28 33 7.393V1.607C33 .72 33.72 0 34.607 0h5.786C41.28 0 42 .72 42 1.607v5.786z", fill: "#BCBDBB" }), i.createElement("path", { d: "M40.556 3.792l-2.112-.31-.967-2.192v-.003L36.56 3.48l-2.11.307 1.525 1.494-.36 2.116 1.863-1.227 1.93 1.183-.38-2.067", fill: "#F0F0EF" }), i.createElement("path", { d: "M31 7.393C31 8.28 30.28 9 29.393 9h-5.786C22.72 9 22 8.28 22 7.393V1.607C22 .72 22.72 0 23.607 0h5.786C30.28 0 31 .72 31 1.607v5.786z", fill: "#BCBDBB" }), i.createElement("path", { d: "M29.557 3.792l-2.112-.31-.967-2.19-.917 2.188-2.11.307 1.526 1.494-.36 2.116L26.48 6.17l1.93 1.183-.38-2.067", fill: "#F0F0EF" }), i.createElement("path", { d: "M20 7.393C20 8.28 19.28 9 18.393 9h-5.786C11.72 9 11 8.28 11 7.393V1.607C11 .72 11.72 0 12.607 0h5.786C19.28 0 20 .72 20 1.607v5.786z", fill: "#DAB027" }), i.createElement("path", { d: "M18.556 3.792l-2.112-.31-.965-2.19-.92 2.188-2.11.307 1.526 1.494-.36 2.116L15.48 6.17l1.927 1.183-.378-2.067", fill: "#FFF" }), i.createElement("path", { d: "M9 7.393C9 8.28 8.28 9 7.393 9H1.607C.72 9 0 8.28 0 7.393V1.607C0 .72.72 0 1.607 0h5.786C8.28 0 9 .72 9 1.607v5.786z", fill: "#DAB027" }), i.createElement("path", { d: "M7.556 3.792l-2.112-.31-.965-2.19-.92 2.188-2.11.307L2.977 5.28l-.36 2.116L4.48 6.17l1.927 1.183-.378-2.067", fill: "#FFF" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" })) }, { writingDirection: t });
             };
-            c.metadata = { width: 55, height: 9 };
-            const o = c;
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        894003: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M10.631 2.266a.716.716 0 00-.378.108c-.042.027-4.291 2.661-8.752 3.32a.712.712 0 00-.61.687c-.003.112-.179 11.158 9.444 15.54a.718.718 0 00.296.064V2.266z", fill: "#1DA1F2" }), i.createElement("path", { d: "M10.631 2.266c.131 0 .262.036.378.108.042.027 4.291 2.661 8.752 3.32.344.05.601.34.608.687.004.112.181 11.158-9.443 15.54a.703.703 0 01-.295.064V2.266z", fill: "#78C6EE" }), i.createElement("path", { d: "M22.586 15.928L18.71 9.213c-.244-.423-.68-.675-1.17-.675h-.01c-.49 0-.925.26-1.168.688l-3.764 6.715c-.238.424-.234.927.013 1.346.244.414.67.66 1.148.66h7.677c.477 0 .908-.246 1.15-.665.244-.422.244-.93 0-1.352z", fill: "#F4212E" }), i.createElement("path", { d: "M17.594 16.34c-.342 0-.62-.278-.62-.62 0-.342.278-.616.62-.616s.616.274.616.616c0 .342-.275.62-.616.62zm.773-4.06l-.418 1.974c-.032.17-.18.288-.356.288s-.32-.117-.36-.288l-.418-1.974c-.045-.234.013-.477.162-.66.3-.374.93-.374 1.232 0 .148.184.207.426.157.66z", fill: "#FFF" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        777131: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M13 .5V3h-2V.5h2zm7.84 4.08l-1.77 1.76-1.41-1.41 1.76-1.77 1.42 1.42zM4.93 6.34L3.16 4.58l1.42-1.42 1.76 1.77-1.41 1.41zm7.07.91c-2.63 0-4.75 2.13-4.75 4.75s2.12 4.75 4.75 4.75 4.75-2.13 4.75-4.75S14.62 7.25 12 7.25zM5.25 12c0-3.73 3.02-6.75 6.75-6.75s6.75 3.02 6.75 6.75-3.03 6.75-6.75 6.75S5.25 15.73 5.25 12zM3 13H.5v-2H3v2zm20.5 0H21v-2h2.5v2zM6.34 19.07l-1.76 1.77-1.42-1.42 1.77-1.76 1.41 1.41zm13.08 1.77l-1.76-1.77 1.41-1.41 1.77 1.76-1.42 1.42zM13 21v2.5h-2V21h2z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        721365: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M16 8l-3 9-2-4-4-2 9-3zm2.5-5C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13C3 4.12 4.119 3 5.5 3h13zM5 18.5c0 .28.224.5.5.5h13c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-13c-.276 0-.5.22-.5.5v13z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        419542: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 18 21", children: i.createElement("g", null, i.createElement("path", { d: "M9 0C6.746.003 4.586.899 2.993 2.493 1.399 4.086.503 6.246.5 8.5c0 5.967 7.621 11.116 7.945 11.332L9 20.2l.555-.37c.324-.216 7.945-5.365 7.945-11.332-.003-2.253-.9-4.413-2.493-6.006C13.413.899 11.253.002 9 0zm0 11.5c-.593 0-1.173-.176-1.667-.506-.493-.33-.878-.798-1.105-1.346-.227-.548-.286-1.151-.17-1.733.115-.582.401-1.117.82-1.536.42-.42.955-.706 1.537-.821.582-.116 1.185-.057 1.733.17s1.017.612 1.346 1.105c.33.494.506 1.074.506 1.667 0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 18, height: 21 };
+            const c = o;
+        },
+        119507: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4 5.5C4 4.12 5.12 3 6.5 3h11C18.88 3 20 4.12 20 5.5v13c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 21 4 19.88 4 18.5v-13zM6.5 5c-.28 0-.5.22-.5.5v13c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-13c0-.28-.22-.5-.5-.5h-11zM0 18V6h2v12H0zm22 0V6h2v12h-2zm-11-7V8h2v3h3v2h-3v3h-2v-3H8v-2h3z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        672738: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-.138 0-.276.038-.398.114-.044.028-4.515 2.8-9.21 3.494-.362.053-.632.358-.642.723-.003.118-.188 11.742 9.938 16.353.1.045.206.067.312.067V1.75z", fill: "#1DA1F2" }), i.createElement("path", { d: "M12 1.75c.138 0 .276.038.398.114.044.028 4.515 2.8 9.21 3.494.362.053.632.358.64.723.004.118.19 11.742-9.937 16.353-.098.045-.204.067-.31.067V1.75z", fill: "#78C6EE" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        278065: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75z", fill: "#FFAD1F" }), i.createElement("path", { d: "M12 16.3c-.6 0-1.1.5-1.1 1.1 0 .6.5 1.1 1.1 1.1.6 0 1.1-.5 1.1-1.1 0-.6-.5-1.1-1.1-1.1zm0-10.6c-2.3 0-4.2 1.9-4.2 4.2 0 .4.3.8.8.8s.8-.3.8-.8c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7-.4 0-.8.3-.8.8v1.1c0 .4.3.8.8.8s.8-.3.8-.8v-.4c2-.4 3.4-2.1 3.4-4.1-.2-2.4-2-4.3-4.3-4.3z", fill: "#14171A" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        643442: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4 2h5v20H4V2zm11 20h5V2h-5v20z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        200112: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M18.914 13.207c-.755-.756-2.073-.756-2.828 0l-2.499 2.499c-2.611-1.113-4.664-3.33-5.569-6.019l2.774-2.773c.779-.779.779-2.049 0-2.828L8.894 2.188c-.767-.768-2.023-.778-2.8-.021C2.52 5.64 2.518 5.711 2.509 5.975c-.006.175-.009.351-.009.526 0 7.781 6.07 14.35 13.819 14.954.047.004.095.006.142.006.502 0 .991-.205 1.36-.575l2.971-2.971c.779-.779.779-2.049 0-2.828l-1.879-1.879z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        772794: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M2 3h2l.5 3m0 0L6 15h13.5L21 6H4.5zM9 19c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1zm9 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z", fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        83515: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M15 1.06v21.88L6.68 17H3.5C2.12 17 1 15.88 1 14.5v-5C1 8.12 2.12 7 3.5 7h3.18L15 1.06zM6 9H3.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H6V9zm2 6.49l5 3.57V4.94L8 8.51v6.98zm10.5-6.9l2 2 2-2L23.91 10l-2 2 2 2-1.41 1.41-2-2-2 2L17.09 14l2-2-2-2 1.41-1.41z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
+        299426: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => c });
+            var i = l(202784),
+                a = l(890601),
+                r = l(783427),
+                n = l(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17.65 4.22l-.7.71c-.59.58-.59 1.53 0 2.12.58.59 1.53.59 2.12 0l.7-.71 3.89 3.89-13.43 13.44-3.89-3.89.71-.71c.58-.58.58-1.53 0-2.12-.59-.59-1.54-.59-2.13 0l-.7.71-3.89-3.89L13.76.33l3.89 3.89zm-2.47 11.67l5.65-5.66-1.16-1.16c-1.33.72-3.02.52-4.14-.61-1.12-1.12-1.32-2.81-.6-4.14l-1.17-1.16-5.65 5.66 1.41 1.41-1.41 1.42-1.42-1.42-3.53 3.54 1.16 1.16c1.33-.72 3.02-.52 4.14.61 1.12 1.12 1.32 2.81.6 4.14l1.17 1.16 3.53-3.54-1.41-1.41 1.42-1.41 1.41 1.41zm-3.89-1.06l-2.12-2.12 1.41-1.41 2.13 2.12-1.42 1.41z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons.24.250ea27a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons.24.0a5d4c5a.js.map

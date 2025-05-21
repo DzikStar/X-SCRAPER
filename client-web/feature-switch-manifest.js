@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "a0fa90cd8958c4d990b650d047451c1f3cda7618",
+    feature_set_token: "869adc14868f05deb1032adf69b52c8a6bcf3336",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },

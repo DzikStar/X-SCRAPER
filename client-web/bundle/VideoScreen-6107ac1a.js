@@ -273,18 +273,18 @@
                 R = _.n(Q),
                 F = _(776745),
                 C = _.n(F),
-                M = _(689232),
-                U = _.n(M),
-                N = _(135357),
-                G = _.n(N),
-                Z = _(465205),
-                V = _.n(Z),
-                K = _(154906),
-                E = _.n(K),
+                U = _(689232),
+                N = _.n(U),
+                M = _(135357),
+                Z = _.n(M),
+                G = _(465205),
+                K = _.n(G),
+                E = _(154906),
+                V = _.n(E),
                 D = _(680174),
                 P = _.n(D),
-                H = _(329851),
-                B = _.n(H),
+                B = _(329851),
+                H = _.n(B),
                 O = _(549505),
                 W = _.n(O),
                 Y = _(597730),
@@ -370,7 +370,7 @@
                         return e.graphQL(c(), { listId: a, ...(0, r.S)(t) }).then((e) => (0, n.Fv)(e.list, s.Z));
                     },
                     fetchList(_, i) {
-                        if (_.list_id) return e.graphQL(U(), { listId: _.list_id, ...(0, r.S)(t) }, we).then((e) => (0, n.Fv)(e.list, s.Z));
+                        if (_.list_id) return e.graphQL(N(), { listId: _.list_id, ...(0, r.S)(t) }, we).then((e) => (0, n.Fv)(e.list, s.Z));
                         if (_.slug) {
                             const { owner_screen_name: i, slug: a } = _;
                             return e.graphQL(g(), { screenName: i, listSlug: a, ...(0, r.S)(t) }, ue).then((e) => (0, n.Fv)({ ...e.user_by_screen_name?.list, slug: a }, s.Z));
@@ -385,7 +385,7 @@
                         }),
                     fetchTweetsGraphQL(_, n) {
                         const { count: i, cursor: a, listId: s, useRanked: l } = _,
-                            o = l ? G() : S(),
+                            o = l ? Z() : S(),
                             d = { listId: s, count: i, cursor: a, ...(0, r.d)(t) };
                         return e.graphQL(o, d, ge).then((e) => {
                             const t = e.list.tweets_timeline?.timeline;
@@ -415,7 +415,7 @@
                             return t || ne.cY;
                         });
                     },
-                    fetchSuggestedLists: ({ count: _, cursor: n }) => e.graphQL(E(), { count: _, cursor: n, ...(0, r.d)(t) }, oe).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ne.cY),
+                    fetchSuggestedLists: ({ count: _, cursor: n }) => e.graphQL(V(), { count: _, cursor: n, ...(0, r.d)(t) }, oe).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ne.cY),
                     fetchOwnershipsGraphQL(_, n) {
                         const { count: i, cursor: a, targetUserId: s, userId: l } = _;
                         return e.graphQL(C(), { userId: l, isListMemberTargetUserId: s, count: i, cursor: a, ...(0, r.d)(t) }, le).then(ie.k7);
@@ -427,11 +427,11 @@
                     },
                     removeFromList(_, i) {
                         const { list_id: a, user_id: l } = _;
-                        return e.graphQL(V(), { listId: a, userId: l, ...(0, r.S)(t) }, me).then((e) => (0, n.Fv)(e.list, s.Z));
+                        return e.graphQL(K(), { listId: a, userId: l, ...(0, r.S)(t) }, me).then((e) => (0, n.Fv)(e.list, s.Z));
                     },
                     createSubscribers(_, i) {
                         const { list_id: a } = _;
-                        return e.graphQL(B(), { listId: a, ...(0, r.S)(t) }, pe).then((e) => (0, n.Fv)(e.list_subscribe_v3, s.Z));
+                        return e.graphQL(H(), { listId: a, ...(0, r.S)(t) }, pe).then((e) => (0, n.Fv)(e.list_subscribe_v3, s.Z));
                     },
                     destroySubscribers(_, i) {
                         const { list_id: a } = _;
@@ -543,7 +543,7 @@
             _.d(t, { Z: () => n });
             const n = _(202784).createContext({ refsMap: {} });
         },
-        648539: (e, t, _) => {
+        41065: (e, t, _) => {
             "use strict";
             _.r(t), _.d(t, { default: () => l });
             var n = _(202784),
@@ -552,11 +552,25 @@
                 r = _(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        391366: (e, t, _) => {
+            "use strict";
+            _.r(t), _.d(t, { default: () => l });
+            var n = _(202784),
+                i = _(890601),
+                a = _(783427),
+                r = _(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-6107ac1a.7cbdc76a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-6107ac1a.9f15defa.js.map

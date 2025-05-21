@@ -44,9 +44,9 @@
                 v = l().hef5960c,
                 w = (0, p.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: t, onClose: s, onMute: l, onRemoveFollower: p, onReportUser: w, onShare: E, onUnblock: M, onUnmute: I, user: P } = e,
-                        _ = [],
-                        C = (o, t) => {
+                        { onBlock: t, onClose: s, onMute: l, onRemoveFollower: p, onReportUser: w, onShare: M, onUnblock: E, onUnmute: I, user: P } = e,
+                        C = [],
+                        _ = (o, t) => {
                             const { confirm: r, onClose: n } = e;
                             if (o) {
                                 const { label: e, ...a } = o;
@@ -59,16 +59,16 @@
                         !P.protected &&
                         !P.blocking &&
                         !P.blocked_by &&
-                        _.push({
+                        C.push({
                             Icon: n.Z,
                             onClick: () => {
-                                s(), E();
+                                s(), M();
                             },
                             testID: g,
                             text: v,
                         });
                     !P.blocking &&
-                        _.push({
+                        C.push({
                             ...(0, m.N1)(
                                 P,
                                 () => {
@@ -81,17 +81,17 @@
                             testID: D,
                         });
                     P.followed_by &&
-                        _.push({
+                        C.push({
                             ...(0, h.l)({
                                 removeFollowerAction: (e) => {
-                                    C(e, p);
+                                    _(e, p);
                                 },
                                 user: P,
                             }),
                             testID: b,
                         }),
-                        _.push((0, u.op)({ blockAction: (e) => C(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => C(e, M), user: P })),
-                        _.push({
+                        C.push((0, u.op)({ blockAction: (e) => _(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => _(e, E), user: P })),
+                        C.push({
                             Icon: d.default,
                             onClick: () => {
                                 s(), w();
@@ -99,7 +99,7 @@
                             testID: y,
                             text: k({ screenName: P.screen_name }),
                         });
-                    const Z = _.map(({ Icon: e, onClick: o, testID: t, text: r }) => ({ text: r, onClick: o, Icon: e, testID: t }));
+                    const Z = C.map(({ Icon: e, onClick: o, testID: t, text: r }) => ({ text: r, onClick: o, Icon: e, testID: t }));
                     return r.createElement(a.Z, { items: Z, onCloseRequested: s });
                 });
         },
@@ -180,7 +180,7 @@
             const f = l(r.memo(h));
         },
         293988: (e, o, t) => {
-            t.d(o, { Z: () => E });
+            t.d(o, { Z: () => M });
             var r = t(202784),
                 n = t(154003),
                 a = t(332920),
@@ -237,10 +237,10 @@
                     o.scribeAction(e);
                 }
             }
-            const E = D(w);
+            const M = D(w);
         },
         62857: (e, o, t) => {
-            t.d(o, { Z: () => _ });
+            t.d(o, { Z: () => C });
             var r = t(807896),
                 n = t(202784),
                 a = t(476984),
@@ -272,17 +272,17 @@
                         return !!r && t(r);
                     });
                 },
-                E = (e, o) => {
+                M = (e, o) => {
                     const { userIds: t } = o;
                     return t.reduce((o, t) => {
                         const r = k.ZP.selectFetchStatus(e, t);
                         return r && (o[t] = r === D.ZP.NONE ? D.ZP.LOADING : r), o;
                     }, {});
                 },
-                M = (0, g.Z)()
+                E = (0, g.Z)()
                     .propsFromState(() => ({
                         availableUserIds: (0, y.Z)(w, (e) => e),
-                        fetchStatus: (0, y.Z)(w, E, v, (e, o, t) => {
+                        fetchStatus: (0, y.Z)(w, M, v, (e, o, t) => {
                             let r = D.ZP.LOADED;
                             for (let n = 0; n < t.length; n++) {
                                 const a = t[n];
@@ -339,7 +339,7 @@
                     );
                 }
             }
-            const _ = M(P);
+            const C = E(P);
         },
         684511: (e, o, t) => {
             t.d(o, { Z: () => r });
@@ -382,7 +382,7 @@
             });
         },
         376293: (e, o, t) => {
-            t.d(o, { $f: () => M, KV: () => b, LI: () => Z, SC: () => E, Vt: () => k, ed: () => A, op: () => I });
+            t.d(o, { $f: () => E, KV: () => b, LI: () => Z, SC: () => M, Vt: () => k, ed: () => A, op: () => I });
             var r = t(202784),
                 n = t(190286),
                 a = t(332920),
@@ -403,34 +403,34 @@
                 k = s().e133be4e,
                 v = s().he43bca4,
                 w = s().f5f01af6,
-                E = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                M = (e, o) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: o ? D({ screenName: e }) : f({ screenName: e }) }),
+                M = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                E = (e, o) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: o ? D({ screenName: e }) : f({ screenName: e }) }),
                 I = ({ blockAction: e, blockSubtext: o, isSoftBlockEnabled: t, source: r, testID: n, unblockAction: a, unblockSubtext: s, user: l }) => {
                     let d,
                         u = i.Z;
                     const m = Z(l, t);
                     switch (r) {
-                        case E.PROFILE:
-                        case E.LIST_DETAIL:
-                        case E.FOLLOWERS_LIST:
+                        case M.PROFILE:
+                        case M.LIST_DETAIL:
+                        case M.FOLLOWERS_LIST:
                             u = () => {
                                 l.blocking ? a(m) : e(m);
                             };
                             break;
-                        case E.TWEET:
-                        case E.TWEET_CARET:
-                        case E.RICH_FEEDBACK:
+                        case M.TWEET:
+                        case M.TWEET_CARET:
+                        case M.RICH_FEEDBACK:
                             (d = c.uq.block),
                                 (u = () => {
                                     l.blocking ? a(m) : e(m);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: n, shortcutKey: d, Icon: P(l.blocking), text: C(l), subText: _({ user: l, blockSubtext: o, unblockSubtext: s }) };
+                    return { confirmation: m, onClick: u, testID: n, shortcutKey: d, Icon: P(l.blocking), text: _(l), subText: C({ user: l, blockSubtext: o, unblockSubtext: s }) };
                 },
                 P = (e) => (e ? d.default : l.default),
-                _ = ({ blockSubtext: e, unblockSubtext: o, user: t }) => (!t.blocking && e ? e(t.screen_name) : t.blocking ? o : void 0),
-                C = (e) => (e.blocking ? g({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                Z = (e, o) => (e.blocking ? ((e, o) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: k, text: o ? w : v }))(e.screen_name, o) : M(e.screen_name, o)),
+                C = ({ blockSubtext: e, unblockSubtext: o, user: t }) => (!t.blocking && e ? e(t.screen_name) : t.blocking ? o : void 0),
+                _ = (e) => (e.blocking ? g({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
+                Z = (e, o) => (e.blocking ? ((e, o) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: k, text: o ? w : v }))(e.screen_name, o) : E(e.screen_name, o)),
                 A = ({ confirmation: e, handleConfirm: o, onClose: t }) => {
                     const { confirmButtonType: a, headline: s, label: l, text: d } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: l, confirmButtonType: a, headline: s, onCancel: t, onConfirm: o, text: d });
@@ -801,7 +801,7 @@
             const d = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 i = l;
         },
-        226597: (e, o, t) => {
+        971657: (e, o, t) => {
             t.r(o), t.d(o, { default: () => d });
             var r = t(202784),
                 n = t(890601),
@@ -809,7 +809,33 @@
                 s = t(347101);
             const l = (e = {}) => {
                 const { direction: o } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: o });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const d = l;
+        },
+        41065: (e, o, t) => {
+            t.r(o), t.d(o, { default: () => d });
+            var r = t(202784),
+                n = t(890601),
+                a = t(783427),
+                s = t(347101);
+            const l = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: o });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const d = l;
+        },
+        391366: (e, o, t) => {
+            t.r(o), t.d(o, { default: () => d });
+            var r = t(202784),
+                n = t(890601),
+                a = t(783427),
+                s = t(347101);
+            const l = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const d = l;
@@ -840,4 +866,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.185bb54a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.50accdca.js.map

@@ -100,7 +100,7 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: k, withSearchBox: T, withTweetButton: v, withWideContainer: I } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: v, withSearchBox: k, withTweetButton: T, withWideContainer: I } = this.props,
                         x = "root" === f,
                         F = "secondaryRoot" === f,
                         A = "primaryDetail" === f,
@@ -108,7 +108,7 @@
                         P = x || (A && e),
                         R = x ? d.ey : A ? d.vX : void 0,
                         N = r.createElement(s.Z, { style: C.appBarContainer }, r.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, secondaryBar: E, style: o, subtitle: D ? w : void 0, title: Z, titleDomId: R, titleIconCell: L, titleIconCellSize: B, withWideContainer: I })),
-                        U = x || (F && k) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: T, withTweetButton: v });
+                        U = x || (F && v) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: k, withTweetButton: T });
                     return r.createElement(r.Fragment, null, U, N);
                 }
             }
@@ -394,9 +394,9 @@
                     .withAnalytics({ page: "settings", section: "country" }),
                 L = "Settings_Country_Selector",
                 B = d().c21037d0,
-                k = d().i2209530,
-                T = d().j924d222,
-                v = (0, a.ju)("https://support.x.com/articles/20169220");
+                v = d().i2209530,
+                k = d().j924d222,
+                T = (0, a.ju)("https://support.x.com/articles/20169220");
             class I extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -415,8 +415,8 @@
                 }
                 render() {
                     const { countryCode: e, countryList: t, location: n } = this.props,
-                        a = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: v }, d().e9310157));
-                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: k, title: T }, r.createElement(o.Z, { style: x.countrySelector }, r.createElement(i.ZP, { helperText: a, label: B, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
+                        a = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: T }, d().e9310157));
+                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: v, title: k }, r.createElement(o.Z, { style: x.countrySelector }, r.createElement(i.ZP, { helperText: a, label: B, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
                 }
             }
             const x = l.default.create((e) => ({ countrySelector: { margin: e.spaces.space20 } })),
@@ -703,6 +703,19 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        41065: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var r = n(202784),
+                o = n(890601),
+                a = n(783427),
+                s = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const l = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.249db8fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.3101058a.js.map

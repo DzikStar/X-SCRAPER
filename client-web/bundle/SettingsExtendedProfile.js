@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsExtendedProfile"],
+    ["bundle.SettingsExtendedProfile", "shared~bundle.WorkHistory~bundle.JobSearch~ondemand.Verified~bundle.UserJobs~bundle.ExtendedUserProfile"],
     {
         681488: (e, t, n) => {
             n.d(t, { Z: () => c });
@@ -43,6 +43,45 @@
                 };
             s.hash = "5369f2707d565366752d07f461b21f70";
             const c = s;
+        },
+        876242: (e, t, n) => {
+            n.d(t, { Z: () => o });
+            var l,
+                a,
+                r = {
+                    fragment: {
+                        argumentDefinitions: (l = [
+                            { defaultValue: null, kind: "LocalArgument", name: "blockId" },
+                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useDeleteProfileBlockMutation",
+                        selections: (a = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "block_id", variableName: "blockId" },
+                                    { kind: "Literal", name: "s", value: "f3d8" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "ProfileBlockOperationSuccess",
+                                kind: "LinkedField",
+                                name: "delete_profile_block",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useDeleteProfileBlockMutation", selections: a },
+                    params: { id: "EvvA9IQR0sKW0tGqXwSzKA", metadata: {}, name: "useDeleteProfileBlockMutation", operationKind: "mutation", text: null },
+                };
+            r.hash = "5d2c7077ac04854de170e0b8fd37dc6f";
+            const o = r;
         },
         163956: (e, t, n) => {
             n.d(t, { Z: () => o });
@@ -91,59 +130,23 @@
             var l = n(950822);
             const a = (e) => (0, l.Z)("div", e);
         },
-        128586: (e, t, n) => {
-            n.d(t, { Z: () => _ });
-            var l,
-                a,
-                r = n(202784),
-                o = n(190286),
-                i = n(332920),
-                s = n.n(i),
-                c = n(782642),
-                d = n(72130),
-                u = n(725516),
-                m = {
-                    fragment: {
-                        argumentDefinitions: (l = [
-                            { defaultValue: null, kind: "LocalArgument", name: "blockId" },
-                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
-                        ]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useDeleteProfileBlockMutation",
-                        selections: (a = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Variable", name: "block_id", variableName: "blockId" },
-                                    { kind: "Literal", name: "s", value: "f3d8" },
-                                    { kind: "Variable", name: "user_id", variableName: "userId" },
-                                ],
-                                concreteType: "ProfileBlockOperationSuccess",
-                                kind: "LinkedField",
-                                name: "delete_profile_block",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useDeleteProfileBlockMutation", selections: a },
-                    params: { id: "EvvA9IQR0sKW0tGqXwSzKA", metadata: {}, name: "useDeleteProfileBlockMutation", operationKind: "mutation", text: null },
-                };
-            m.hash = "5d2c7077ac04854de170e0b8fd37dc6f";
-            const f = m;
-            n(585488);
-            var p = n(351743),
-                g = n.n(p);
-            const h = f,
-                b = () => {
-                    const [e, t] = g()(h);
+        512547: (e, t, n) => {
+            n.d(t, { Z: () => b });
+            var l = n(202784),
+                a = n(190286),
+                r = n(332920),
+                o = n.n(r),
+                i = n(782642),
+                s = n(72130),
+                c = n(725516),
+                d = n(876242),
+                u = (n(585488), n(351743)),
+                m = n.n(u);
+            const f = d.Z,
+                p = () => {
+                    const [e, t] = m()(f);
                     return [
-                        r.useCallback(
+                        l.useCallback(
                             (t) => {
                                 e(t);
                             },
@@ -152,28 +155,28 @@
                         t,
                     ];
                 },
-                k = s().g9677c6e,
-                y = s().a2b8c54c,
-                _ = ({ blockId: e, headline: t, onClose: n, onCompleted: l, queryId: a, subtext: i, userId: s }) => {
-                    const m = (0, c.p)(),
-                        f = (0, u.z)(),
-                        [p, g] = b(),
-                        h = r.useCallback(() => {
+                g = o().g9677c6e,
+                h = o().a2b8c54c,
+                b = ({ blockId: e, headline: t, onClose: n, onCompleted: r, queryId: o, subtext: d, userId: u }) => {
+                    const m = (0, i.p)(),
+                        f = (0, c.z)(),
+                        [b, k] = p(),
+                        y = l.useCallback(() => {
                             n();
                         }, [n]),
-                        _ = r.useCallback(() => {
-                            f.scribe({ ...(0, d.MA)("delete_block_btn", "click") }),
-                                p({
-                                    variables: { blockId: e, userId: s },
+                        _ = l.useCallback(() => {
+                            f.scribe({ ...(0, s.MA)("delete_block_btn", "click") }),
+                                b({
+                                    variables: { blockId: e, userId: u },
                                     updater: (e, t) => {
-                                        a && e.delete(a);
+                                        o && e.delete(o);
                                     },
                                     onCompleted: (e) => {
-                                        e?.delete_profile_block?.success && (m({ text: y }), n(), l && l());
+                                        e?.delete_profile_block?.success && (m({ text: h }), n(), r && r());
                                     },
                                 });
-                        }, [m, f, e, p, n, l, a, s]);
-                    return r.createElement(o.Z, { confirmButtonDisabled: g, confirmButtonLabel: k, confirmButtonType: "destructiveFilled", enableMaskForDismiss: !0, headline: t, onCancel: h, onConfirm: _, text: i });
+                        }, [m, f, e, b, n, r, o, u]);
+                    return l.createElement(a.Z, { confirmButtonDisabled: k, confirmButtonLabel: g, confirmButtonType: "destructiveFilled", enableMaskForDismiss: !0, headline: t, onCancel: y, onConfirm: _, text: d });
                 };
         },
         785813: (e, t, n) => {
@@ -837,7 +840,7 @@
                 se = n(516951),
                 ce = n(187669),
                 de = n(949626),
-                ue = n(128586),
+                ue = n(512547),
                 me = n(313433),
                 fe = n(874111),
                 pe = n(536790),
@@ -1157,4 +1160,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsExtendedProfile.8035bb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsExtendedProfile.bd8148fa.js.map

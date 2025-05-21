@@ -23,8 +23,8 @@
                 w = r(710396),
                 f = r(655352),
                 A = r(485785),
-                M = r(125363),
-                y = r(936572),
+                y = r(125363),
+                M = r(936572),
                 _ = r(909622),
                 v = r(919022),
                 E = r(788994),
@@ -47,23 +47,20 @@
             const N = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.10"),
-                        r.e("icons.21"),
-                        r.e("icons.16"),
-                        r.e("icons.1"),
-                        r.e("icons.19"),
                         r.e("icons.0"),
-                        r.e("icons.23"),
-                        r.e("icons.8"),
-                        r.e("icons.2"),
+                        r.e("icons.13"),
+                        r.e("icons.29"),
+                        r.e("icons.22"),
+                        r.e("icons.5"),
+                        r.e("icons.15"),
+                        r.e("icons.1"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
                         r.e("icons.7"),
-                        r.e("icons.9"),
-                        r.e("icons.15"),
+                        r.e("icons.20"),
+                        r.e("icons.11"),
+                        r.e("icons.25"),
                         r.e("icons.24"),
-                        r.e("icons.28"),
-                        r.e("icons.3"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -74,13 +71,16 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
+                        r.e("icons.6"),
+                        r.e("icons.17"),
+                        r.e("icons.10"),
+                        r.e("icons.14"),
+                        r.e("icons.16"),
+                        r.e("icons.23"),
                         r.e("icons.26"),
-                        r.e("icons.4"),
-                        r.e("icons.13"),
-                        r.e("icons.18"),
-                        r.e("icons.25"),
-                        r.e("icons.29"),
-                        r.e("icons.27"),
+                        r.e("icons.3"),
+                        r.e("icons.8"),
+                        r.e("icons.28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -111,7 +111,8 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -290,7 +291,7 @@
             });
             function ge(e) {
                 const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
-                    l = (0, M.v9)(v.ZP.selectViewerUser),
+                    l = (0, y.v9)(v.ZP.selectViewerUser),
                     o = r.isAnyPremiumSubscriber(),
                     i = r.isPaidVerifiedOrg(),
                     p = a.isTrue("rweb_sourcemap_migration"),
@@ -300,15 +301,15 @@
                     w = (0, k.Z)(),
                     f = !e.withSearchBox && !e.withTrends && w && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
                     A = e.isOwnProfile && w && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
-                    y = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
+                    M = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
                     _ = o && !i && "/home" === g.pathname;
-                if (e.profileUserId) return d.createElement(d.Fragment, null, S && d.createElement(R, null), d.createElement(c.B, null), e.profileScreenName ? d.createElement(h.Z, { screenName: e.profileScreenName }) : null, d.createElement(b.O, null), p && D && d.createElement(Me, e), e.isOwnProfile ? d.createElement(C.Z, { entryPoint: "profile" }) : null, A && d.createElement(n.Z, { style: xe.paddedContainer, testID: "profileAnalyticsUpsell" }, d.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), d.createElement(ye, e), d.createElement(Ae, e), d.createElement(_e, e));
-                let E = d.createElement(d.Fragment, null, e.withNews && d.createElement(ve, e), d.createElement(Ae, e), d.createElement(ye, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = d.createElement(d.Fragment, null, d.createElement(ye, e), e.withNews && d.createElement(ve, e), d.createElement(Ae, e))), p && (E = d.createElement(d.Fragment, null, D && d.createElement(Me, e), e.withNews && d.createElement(ve, e), d.createElement(Ae, e), d.createElement(ye, e))), d.createElement(d.Fragment, null, "/home" === g.pathname ? d.createElement(be, null) : null, S && d.createElement(R, null), _ && d.createElement(C.Z, { entryPoint: "home" }), d.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), d.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? d.createElement(m.Z, null) : null, "/home" === g.pathname && y && d.createElement(O.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: O.c.MarchMadness, withBackgroundImage: !0 }), d.createElement(b.O, null), E, f && d.createElement(n.Z, { style: xe.paddedContainer, testID: "exploreAnalyticsUpsell" }, d.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), d.createElement(_e, e));
+                if (e.profileUserId) return d.createElement(d.Fragment, null, S && d.createElement(R, null), d.createElement(c.B, null), e.profileScreenName ? d.createElement(h.Z, { screenName: e.profileScreenName }) : null, d.createElement(b.O, null), p && D && d.createElement(ye, e), e.isOwnProfile ? d.createElement(C.Z, { entryPoint: "profile" }) : null, A && d.createElement(n.Z, { style: xe.paddedContainer, testID: "profileAnalyticsUpsell" }, d.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), d.createElement(Me, e), d.createElement(Ae, e), d.createElement(_e, e));
+                let E = d.createElement(d.Fragment, null, e.withNews && d.createElement(ve, e), d.createElement(Ae, e), d.createElement(Me, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = d.createElement(d.Fragment, null, d.createElement(Me, e), e.withNews && d.createElement(ve, e), d.createElement(Ae, e))), p && (E = d.createElement(d.Fragment, null, D && d.createElement(ye, e), e.withNews && d.createElement(ve, e), d.createElement(Ae, e), d.createElement(Me, e))), d.createElement(d.Fragment, null, "/home" === g.pathname ? d.createElement(be, null) : null, S && d.createElement(R, null), _ && d.createElement(C.Z, { entryPoint: "home" }), d.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), d.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? d.createElement(m.Z, null) : null, "/home" === g.pathname && M && d.createElement(O.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: O.c.MarchMadness, withBackgroundImage: !0 }), d.createElement(b.O, null), E, f && d.createElement(n.Z, { style: xe.paddedContainer, testID: "exploreAnalyticsUpsell" }, d.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), d.createElement(_e, e));
             }
             function Se(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    t = (0, M.v9)(y.op);
+                    t = (0, y.v9)(M.op);
                 if (!r && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, f.ZP)() || !e.withSearchBox) return null;
                 const o = a.isTrue("rweb_sourcemap_migration"),
@@ -335,12 +336,12 @@
                 const { isRestrictedSession: a } = (0, s.QZ)();
                 return !e.withTrends || a ? null : d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(D.Z, { focalTweetId: e.focalTweetId, profileUserId: e.profileUserId })));
             }
-            function Me(e) {
+            function ye(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
                 return e.withSuggestedVideos && r ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(Z.O, null))) : null;
             }
-            function ye(e) {
+            function Me(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
                 return e.withWhoToFollow && r ? d.createElement(o.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(w.Z, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
@@ -391,12 +392,12 @@
                     const w = () => {
                             p.scribe({ component: g, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: A, cardWidth: M, marginbottom: y, textcolor: _ } = u ?? {},
+                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: M, textcolor: _ } = u ?? {},
                         v = f ? t.default.theme.colors[f] : t.default.theme.colors.gray0,
                         E = _ ? t.default.theme.colors[_] : t.default.theme.colors.gray900,
-                        x = y ? t.default.theme.spaces[y] : t.default.theme.spaces.space16,
+                        x = M ? t.default.theme.spaces[M] : t.default.theme.spaces.space16,
                         k = { [D.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[r];
-                    return b ? d.createElement(l.Z, { interactiveStyles: null, link: a, onPress: w, style: S.bannerContainer }, d.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : d.createElement(n.Z, { style: [S.card, { backgroundColor: v }, { maxWidth: M }, { marginBottom: x }], testID: "popupCard" }, d.createElement(n.Z, { style: e ? S.horizontalContent : S.verticalContent }, d.createElement(n.Z, { style: e ? S.textContainer : null }, d.createElement(i.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), d.createElement(i.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), d.createElement(n.Z, { style: S.buttonContainer }, d.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: w, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && d.createElement(i.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
+                    return b ? d.createElement(l.Z, { interactiveStyles: null, link: a, onPress: w, style: S.bannerContainer }, d.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : d.createElement(n.Z, { style: [S.card, { backgroundColor: v }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, d.createElement(n.Z, { style: e ? S.horizontalContent : S.verticalContent }, d.createElement(n.Z, { style: e ? S.textContainer : null }, d.createElement(i.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), d.createElement(i.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), d.createElement(n.Z, { style: S.buttonContainer }, d.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: w, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && d.createElement(i.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
                 },
                 S = t.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -443,11 +444,11 @@
                 w = { id: "brandResources", text: t().e0adec82, link: (0, d.ju)("https://about.x.com/press/brand-assets") },
                 f = { id: "advertising", text: t().a4cf866e, link: (0, d.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
                 A = { id: "marketing", text: t().df1b7550, link: (0, d.ju)("https://marketing.x.com") },
-                M = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, d.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
-                y = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, d.ju)("https://developer.x.com") },
+                y = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, d.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
+                M = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, d.ju)("https://developer.x.com") },
                 _ = { id: "directory", text: t().d83f18d2, link: (0, d.ju)("https://x.com/i/directory/profiles") },
                 v = { id: "settings", text: t().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                E = (e) => (e ? ((o.text = t().hc5aa17c), (D.text = t().j0693948), [l, o, D, S, s, c, u, y, f, b, p, v]) : [l, o, D, i, s, c, u, b, p, m, h, g, S, w, f, A, M, y, _, v]);
+                E = (e) => (e ? ((o.text = t().hc5aa17c), (D.text = t().j0693948), [l, o, D, S, s, c, u, M, f, b, p, v]) : [l, o, D, i, s, c, u, b, p, m, h, g, S, w, f, A, y, M, _, v]);
         },
         788994: (e, a, r) => {
             r.d(a, { Z: () => f });
@@ -525,4 +526,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.454f278a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.e3380e6a.js.map

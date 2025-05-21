@@ -3,7 +3,7 @@
     ["bundle.AudioSpaceAnalytics", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
     {
         738545: (e, t, n) => {
-            n.d(t, { ZP: () => v });
+            n.d(t, { ZP: () => w });
             var r = n(202784),
                 o = n(325686),
                 a = n(332920),
@@ -17,29 +17,29 @@
                 m = n(635998);
             const g = l().i2785009,
                 f = l().c778d80b,
-                E = l().d9687d23,
-                x = l().ac73eb5a,
-                h = l().c5a9f921,
+                h = l().d9687d23,
+                E = l().ac73eb5a,
+                x = l().c5a9f921,
                 y = (e) => {
                     const { label: t, popover: n } = e;
-                    return t ? r.createElement(o.Z, { style: w.labelBar }, r.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), n ? r.createElement(m.Z, { label: t, popover: n }) : null) : null;
+                    return t ? r.createElement(o.Z, { style: v.labelBar }, r.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), n ? r.createElement(m.Z, { label: t, popover: n }) : null) : null;
                 },
                 b = (e) => {
                     const { style: t, unit: n } = e;
-                    return n ? r.createElement(d.ZP, { color: "gray700", style: [w.unitText, t], weight: "medium" }, n) : null;
+                    return n ? r.createElement(d.ZP, { color: "gray700", style: [v.unitText, t], weight: "medium" }, n) : null;
                 },
                 Z = (e) => {
                     let t,
                         n,
                         { trendValue: a } = e;
-                    return void 0 === a ? null : (Math.abs(a) < 0.1 ? ((a = Math.round(1e3 * a) / 1e3), (t = f(a))) : ((a = Math.round(100 * a) / 100), (t = g(a))), (n = ((e, t) => (e < 0 ? E({ trendValueNegativePercent: t }) : 0 === e ? x : h({ trendValuePositivePercent: t })))(a, t)), a < 0 ? r.createElement(o.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": n, style: w.trendIconNeg }), r.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === a ? r.createElement(o.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": n, style: w.trendIconZero }), r.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(o.Z, { style: w.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": n, style: w.trendIconPos }), r.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                    return void 0 === a ? null : (Math.abs(a) < 0.1 ? ((a = Math.round(1e3 * a) / 1e3), (t = f(a))) : ((a = Math.round(100 * a) / 100), (t = g(a))), (n = ((e, t) => (e < 0 ? h({ trendValueNegativePercent: t }) : 0 === e ? E : x({ trendValuePositivePercent: t })))(a, t)), a < 0 ? r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(i.default, { "aria-label": n, style: v.trendIconNeg }), r.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === a ? r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(s.default, { "aria-label": n, style: v.trendIconZero }), r.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : r.createElement(o.Z, { style: v.trendBar, testID: "trendLabel" }, r.createElement(c.default, { "aria-label": n, style: v.trendIconPos }), r.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
-                w = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
-                v = (e) => {
+                v = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
+                w = (e) => {
                     const { animated: t, count: n, label: a, popover: l, size: i, subTextList: s, trendValue: c, unit: p, value: m } = e,
-                        g = p || void 0 !== c ? w.textWithMargin : void 0,
-                        f = void 0 !== c ? w.textWithMargin : void 0;
-                    return r.createElement(o.Z, { style: w.dataPoint }, r.createElement(y, { label: a, popover: l }), r.createElement(o.Z, { style: w.valueBar }, t ? r.createElement(u.ZP, { count: n, size: i, style: g, weight: "bold" }, m) : r.createElement(d.ZP, { size: i, style: g, weight: "bold" }, m), r.createElement(b, { style: f, unit: p }), r.createElement(Z, { trendValue: c })), s);
+                        g = p || void 0 !== c ? v.textWithMargin : void 0,
+                        f = void 0 !== c ? v.textWithMargin : void 0;
+                    return r.createElement(o.Z, { style: v.dataPoint }, r.createElement(y, { label: a, popover: l }), r.createElement(o.Z, { style: v.valueBar }, t ? r.createElement(u.ZP, { count: n, size: i, style: g, weight: "bold" }, m) : r.createElement(d.ZP, { size: i, style: g, weight: "bold" }, m), r.createElement(b, { style: f, unit: p }), r.createElement(Z, { trendValue: c })), s);
                 };
         },
         635998: (e, t, n) => {
@@ -117,35 +117,35 @@
                 g = s.default.create({ root: { overflow: "hidden" } }),
                 f = (e) => {
                     const { children: t, containerStyle: n, count: s, ...d } = e,
-                        [f, E] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
-                        x = r.useRef(!1);
+                        [f, h] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
+                        E = r.useRef(!1);
                     return (
                         r.useEffect(
                             () => (
-                                (x.current = !0),
+                                (E.current = !0),
                                 function () {
-                                    x.current = !1;
+                                    E.current = !1;
                                 }
                             ),
                             [],
                         ),
                         r.useEffect(() => {
-                            if (x.current)
-                                if (l.Z.reducedMotionEnabled) E((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
+                            if (E.current)
+                                if (l.Z.reducedMotionEnabled) h((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
                                 else if (t !== f.pendingText) {
-                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? E((e) => ({ ...e, pendingCount: null, pendingText: null })) : (E((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || u(e.count, t, E));
+                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? h((e) => ({ ...e, pendingCount: null, pendingText: null })) : (h((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || u(e.count, t, h));
                                 }
                         }, [t]),
                         r.useEffect(() => {
-                            x.current &&
+                            E.current &&
                                 !1 === f.animating &&
                                 (f.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              x.current && E((e) => ({ ...e, animating: !0 }));
+                                              E.current && h((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : f.pendingText && u(f.pendingCount, f.pendingText, E));
+                                    : f.pendingText && u(f.pendingCount, f.pendingText, h));
                         }, [f.animating, f.oldText]),
                         r.useMemo(() => {
                             const e = p[f.transitionDirection],
@@ -164,15 +164,28 @@
                                         onTransitionEnd: () =>
                                             ((e, t) => {
                                                 e && t((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(x.current, E),
+                                            })(E.current, h),
                                         style: c,
                                     },
                                     r.createElement(i.ZP, d, f.text),
                                 ),
                             );
-                        }, [n, d, f, x, E])
+                        }, [n, d, f, E, h])
                     );
                 };
+        },
+        41065: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
+            var r = n(202784),
+                o = n(890601),
+                a = n(783427),
+                l = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
         },
         662678: (e, t, n) => {
             n.d(t, { G: () => o, Z: () => r });
@@ -192,4 +205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceAnalytics.d2d1dc6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceAnalytics.d316cc1a.js.map

@@ -8,17 +8,13 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.10"),
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.1"),
-                        n.e("icons.19"),
                         n.e("icons.0"),
-                        n.e("icons.23"),
-                        n.e("icons.8"),
-                        n.e("icons.2"),
-                        n.e("icons.9"),
-                        n.e("icons.26"),
+                        n.e("icons.13"),
+                        n.e("icons.29"),
+                        n.e("icons.22"),
+                        n.e("icons.5"),
+                        n.e("icons.15"),
+                        n.e("icons.11"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -884,4 +880,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.caec778a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.7075f4ea.js.map
