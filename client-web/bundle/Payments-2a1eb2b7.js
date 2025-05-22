@@ -21,7 +21,7 @@
                     button: { flexGrow: 1 },
                     root: { padding: e.spaces.space16, flexDirection: "column", gap: e.spaces.space16, paddingBottom: e.spaces.space40 },
                     actions: { flexDirection: "row", flexWrap: "wrap" },
-                    tile: { backgroundColor: e.colors.gray0, padding: e.spaces.space24 },
+                    tile: { backgroundColor: e.colors.gray0, padding: e.spaces.space20 },
                     tileNarrow: { backgroundColor: e.colors.gray0, padding: e.spaces.space16 },
                     upper: { borderRadius: "none", height: "auto" },
                     pinHidden: { display: "none" },
@@ -50,12 +50,12 @@
                     return { container: [s.container, t], footer: [s.footer, t], root: [s.root, n], tile: [e ? s.tile : s.tileNarrow], pivotTileContainer: [s.actionsContainer, e ? null : s.actionsContainerNarrow], pivotTile: [s.action, e ? s.actionWide : s.actionNarrow] };
                 },
                 d = { width: 194, height: 146 },
-                p = a.default.create((e) => ({ listItem: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space8, flexDirection: "row", borderRadius: e.borderRadii.large }, listItemContent: { alignItems: "flex-start", justifyContent: "space-between", flexDirection: "row", gap: e.spaces.space8, display: "flex", flex: 1 }, listItemFlex: { flex: 1 }, alignEnd: { textAlign: "end", alignSelf: "end" } })),
+                p = a.default.create((e) => ({ listItem: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space8, flexDirection: "row", borderRadius: e.borderRadii.large }, unpaddedListItem: { gap: e.spaces.space8, flexDirection: "row", borderRadius: e.borderRadii.large }, listItemContent: { alignItems: "flex-start", justifyContent: "space-between", flexDirection: "row", gap: e.spaces.space8, display: "flex", flex: 1 }, listItemFlex: { flex: 1 }, alignEnd: { textAlign: "end", alignSelf: "end" } })),
                 u = a.default.create((e) => ({ content: { flexDirection: "column", justifyContent: "space-between", gap: e.spaces.space8 }, description: { flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, actions: { flexDirection: "column", gap: e.spaces.space12 }, gap: { gap: e.spaces.space8 }, marginTop: { marginTop: e.spaces.space16 }, arrow: { alignSelf: "center", color: e.colors.gray400, height: e.spaces.space28 } })),
                 l = s;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Pe, BR: () => xe, Bj: () => wt, Bl: () => Se, DK: () => De, DO: () => ct, Dc: () => H, EQ: () => je, FW: () => ot, Fs: () => Ye, GU: () => ce, Gl: () => Ne, Gs: () => Je, H_: () => Le, Ix: () => yt, J$: () => Ge, M9: () => be, MO: () => st, Oc: () => Qe, Ou: () => Ve, Q1: () => fe, QE: () => Me, Qu: () => lt, Se: () => He, So: () => tt, T3: () => ve, T7: () => bt, Tp: () => Ce, Ts: () => Fe, UM: () => Te, UV: () => ut, V9: () => Oe, XT: () => Ae, _T: () => ke, aY: () => et, ab: () => rt, bI: () => Xe, dN: () => G, fq: () => Rt, gh: () => dt, gx: () => L, i7: () => he, iv: () => at, jm: () => nt, lD: () => se, lw: () => J, nV: () => Q, p2: () => K, p6: () => me, pQ: () => X, qK: () => Y, qQ: () => Ke, qU: () => _e, qc: () => ft, uG: () => pt, uN: () => Be, ve: () => Ee, vw: () => Z, wu: () => gt, xe: () => qe, y4: () => xt, yH: () => it, zK: () => We, zx: () => ee });
+            n.d(t, { BC: () => Pe, BR: () => xe, Bj: () => wt, Bl: () => Se, DK: () => De, DO: () => ct, Dc: () => L, EQ: () => je, FW: () => ot, Fs: () => Ye, GU: () => ce, Gl: () => Ne, Gs: () => Je, H_: () => He, Ix: () => yt, J$: () => Ge, M9: () => be, MO: () => st, Oc: () => Qe, Ou: () => Ve, Q1: () => fe, QE: () => Me, Qu: () => lt, Se: () => Le, So: () => tt, T3: () => ve, T7: () => bt, Tp: () => Ce, Ts: () => Fe, UM: () => Te, UV: () => ut, V9: () => Oe, XT: () => Ae, _T: () => ke, aY: () => et, ab: () => rt, bI: () => Xe, dN: () => G, fq: () => Rt, gh: () => dt, gx: () => H, i7: () => he, iv: () => at, jm: () => nt, lD: () => se, lw: () => J, nV: () => Q, p2: () => K, p6: () => me, pQ: () => X, qK: () => Y, qQ: () => Ke, qU: () => _e, qc: () => ft, uG: () => pt, uN: () => Be, ve: () => Ee, vw: () => Z, wu: () => gt, xe: () => qe, y4: () => xt, yH: () => it, zK: () => We, zx: () => ee });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -107,11 +107,11 @@
                     const n = parseFloat(e);
                     return K({ amount: n, currency: t });
                 },
-                H = (e) => {
+                L = (e) => {
                     const t = new (r())(e);
                     return new (r())(t.toFixed(2, r().ROUND_DOWN)).times(1e6).toDecimalPlaces(0).toNumber();
                 },
-                L = (e) => {
+                H = (e) => {
                     const t = parseFloat(e);
                     return G({ amount: t });
                 },
@@ -354,7 +354,7 @@
                     const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
                     ze({ store: e, key: t });
                 },
-                He = (e, t) => {
+                Le = (e, t) => {
                     s()(e, (e) => {
                         t &&
                             ((e, t) => {
@@ -365,7 +365,7 @@
                             Ze(e);
                     });
                 },
-                Le = (e, { reasonCode: t, recordId: n, status: a }) => {
+                He = (e, { reasonCode: t, recordId: n, status: a }) => {
                     if ((he({ status: a }) || (Ke(e), Ze(e)), n && a)) {
                         const r = e.get(n);
                         r && (r.setValue(a, "transaction_status"), r.setValue(t, "reason_code"));
@@ -448,4 +448,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.9356c90a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.590bb1ba.js.map

@@ -44,7 +44,7 @@
                     addRecentSearches: () => g,
                     addWelcomeMessageToConversation: () => a.Qe,
                     clearRecentSearch: () => P,
-                    clearRecentSearches: () => F,
+                    clearRecentSearches: () => D,
                     clearSearchCache: () => A,
                     default: () => Z,
                     deleteConversations: () => a.S9,
@@ -64,8 +64,8 @@
                     fetchTrustedInboxHistory: () => i.vC,
                     fetchUntrustedInboxHistory: () => i.kK,
                     fetchUntrustedLowQualityInboxHistory: () => i.j7,
-                    fetchUpdates: () => D.f9,
-                    fetchUpdatesIfNeeded: () => D.hd,
+                    fetchUpdates: () => F.f9,
+                    fetchUpdatesIfNeeded: () => F.hd,
                     leaveConversation: () => a.qH,
                     markAllAsRead: () => a.SF,
                     markConversationRead: () => a.v3,
@@ -107,7 +107,7 @@
                     selectUntrustedLowQualityConversationCount: () => i.ZI,
                     selectUntrustedLowQualityCursor: () => i.Gk,
                     selectUntrustedUnreadCount: () => i.k5,
-                    selectUpdates: () => D.o8,
+                    selectUpdates: () => F.o8,
                     setConversationAvatar: () => a.X5,
                     toggleNotifications: () => a.$S,
                     unmuteDMUser: () => a.GP,
@@ -232,7 +232,7 @@
                             const n = s?.recentSearches || [];
                             return n.splice(n.indexOf(e), 1), t({ payload: n, type: O }), r.set(T, { recentSearches: n });
                         }),
-                F =
+                D =
                     () =>
                     (e, t, { userPersistence: s }) => (e({ type: m }), s.set(T, { recentSearches: [] }));
             n.Z.register(
@@ -248,8 +248,8 @@
                               ).then(() => {})
                             : Promise.resolve(),
             );
-            var D = s(923965);
-            const v = (0, r.UY)({ conversations: a.ZP, entries: o.ZP, inbox: i.ZP, search: R, updates: D.ZP });
+            var F = s(923965);
+            const v = (0, r.UY)({ conversations: a.ZP, entries: o.ZP, inbox: i.ZP, search: R, updates: F.ZP });
             n.Z.register({ [_.Yf]: v });
             const Z = v;
         },
@@ -297,7 +297,7 @@
                 n = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 });
         },
         642721: (e, t, s) => {
-            s.d(t, { $o: () => w, AE: () => v, Lk: () => O, R_: () => Z, UD: () => C, UK: () => m, WW: () => I, ck: () => b, fd: () => f, kM: () => D, mz: () => A, xZ: () => F });
+            s.d(t, { $o: () => w, AE: () => v, Lk: () => O, R_: () => Z, UD: () => C, UK: () => m, WW: () => I, ck: () => b, fd: () => f, kM: () => F, mz: () => A, xZ: () => D });
             var r = s(745978),
                 n = s(499627),
                 a = s(917799),
@@ -364,7 +364,7 @@
                 N = `${E}/SET_DEFAULT_OPTIONS`,
                 g = `${E}/DEFAULT_OPTIONS_LOADED`,
                 P = (e) => ({ type: N, payload: { default_options: e } }),
-                F =
+                D =
                     () =>
                     (e, t, { userPersistence: s }) =>
                         t()[i].defaultOptionsLoaded
@@ -376,7 +376,7 @@
                                   }
                                   e({ type: g });
                               }),
-                D =
+                F =
                     (e) =>
                     (t, s, { userPersistence: r }) => (t(P(e)), r.set(c, { defaultOptions: e })),
                 v =
@@ -1171,6 +1171,38 @@
                 },
             });
         },
+        673110: (e, t, s) => {
+            s.d(t, { Gv: () => S, UD: () => l });
+            var r = s(226395),
+                n = s(499627),
+                a = s(917799),
+                o = s(312771),
+                i = s(291020);
+            const c = "verifyPassword",
+                d = `rweb/${i.Y}/${c}`,
+                E = (0, a.dg)(d, "VERIFY_PASSWORD"),
+                u = { fetchStatus: o.ZP.NONE };
+            n.Z.register({
+                [c]: function (e = u, t) {
+                    if (!t) return e;
+                    switch (t.type) {
+                        case E.REQUEST:
+                            return { ...e, fetchStatus: o.ZP.LOADING };
+                        case E.SUCCESS:
+                            return { ...e, fetchStatus: o.ZP.LOADED };
+                        case E.FAILURE:
+                            return { ...e, error: t.payload, fetchStatus: o.ZP.FAILED };
+                        default:
+                            return e;
+                    }
+                },
+            });
+            const l = (e) => e[c].fetchStatus,
+                S =
+                    (e) =>
+                    (t, s, { api: n }) =>
+                        (0, a._O)(t, { params: { password: e }, request: n.withEndpoint(r.Z).verifyPassword })({ actionTypes: E, context: "VERIFY_PASSWORD" });
+        },
         991851: (e, t, s) => {
             s.d(t, { CD: () => N, yb: () => h, oy: () => f, oo: () => w, JH: () => U, YQ: () => S, IZ: () => p, SN: () => _, Qy: () => T, PR: () => g });
             var r = s(118717),
@@ -1256,8 +1288,8 @@
                         }
                     },
                 },
-                F = (0, r.UY)(P);
-            n.Z.register({ [c]: F });
+                D = (0, r.UY)(P);
+            n.Z.register({ [c]: D });
         },
         336429: (e, t, s) => {
             s.d(t, { R: () => S });
@@ -1455,4 +1487,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-8ed0fac5.2cc9ce4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-8ed0fac5.9a731e0a.js.map

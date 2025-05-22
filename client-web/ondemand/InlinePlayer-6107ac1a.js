@@ -33,10 +33,6 @@
             const c = a.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 l = s;
         },
-        620522: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            const n = r(202784).createContext({ refsMap: {} });
-        },
         738584: (e, t, r) => {
             r.d(t, { o: () => d, Z: () => y });
             var n = r(807896),
@@ -776,7 +772,7 @@
                     T,
                     I = function (e) {
                         if (e === h && Z) return Z;
-                        if (!b && e && e in M) return M[e];
+                        if (!b && e && e in L) return L[e];
                         switch (e) {
                             case C:
                             case E:
@@ -791,27 +787,27 @@
                     },
                     O = t + " Iterator",
                     k = !1,
-                    M = e.prototype,
-                    L = M[S] || M["@@iterator"] || (h && M[h]),
-                    Z = (!b && L) || I(h),
-                    j = ("Array" === t && M.entries) || L;
+                    L = e.prototype,
+                    M = L[S] || L["@@iterator"] || (h && L[h]),
+                    Z = (!b && M) || I(h),
+                    j = ("Array" === t && L.entries) || M;
                 if (
                     (j && (A = l(j.call(new e()))) !== Object.prototype && A.next && (i || l(A) === x || (u ? u(A, x) : s(A[S]) || d(A, S, R)), p(A, O, !0, !0), i && (v[O] = R)),
                     g &&
                         h === E &&
-                        L &&
-                        L.name !== E &&
+                        M &&
+                        M.name !== E &&
                         (!i && m
-                            ? f(M, "name", E)
+                            ? f(L, "name", E)
                             : ((k = !0),
                               (Z = function () {
-                                  return o(L, this);
+                                  return o(M, this);
                               }))),
                     h)
                 )
-                    if (((_ = { values: I(E), keys: y ? Z : I(C), entries: I(w) }), P)) for (T in _) (b || k || !(T in M)) && d(M, T, _[T]);
+                    if (((_ = { values: I(E), keys: y ? Z : I(C), entries: I(w) }), P)) for (T in _) (b || k || !(T in L)) && d(L, T, _[T]);
                     else n({ target: t, proto: !0, forced: b || k }, _);
-                return (i && !P) || M[S] === Z || d(M, S, Z, { name: h }), (v[t] = Z), _;
+                return (i && !P) || L[S] === Z || d(L, S, Z, { name: h }), (v[t] = Z), _;
             };
         },
         360693: (e, t, r) => {
@@ -1444,4 +1440,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-6107ac1a.92ffd44a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-6107ac1a.eace98ea.js.map

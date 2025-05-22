@@ -469,12 +469,12 @@
             }
             (O.contextType = g.rC), (O.defaultProps = { autoplay: A.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: D, includeBroadcastEventAssociation: !1 });
             const N = _.default.create({ aspectRatio: { zIndex: void 0 }, aspectRatioDocked: { zIndex: void 0, maxHeight: "70vh" } }),
-                M = (0, I.Z)(O);
-            var U = i(555492),
+                U = (0, I.Z)(O);
+            var M = i(555492),
                 F = i(513588),
                 V = i(942893),
-                Z = i(625555),
-                q = i(71620),
+                q = i(625555),
+                Z = i(71620),
                 x = i(668214),
                 G = i(558369),
                 H = i(109223),
@@ -500,10 +500,10 @@
                 K = (0, x.Z)()
                     .propsFromState(() => ({ dataSaverMode: z.IX, language: B.VT, sourceTweet: W.Z.createHydratedTweetSelector(j), disableAutoplay: J, videoContentId: X }))
                     .adjustStateProps(({ dataSaverMode: e, disableAutoplay: t, language: i, sourceTweet: a, videoContentId: r }) => ({ dataSaverMode: e, disableAutoplay: t, language: i, mediaAvailability: (a && (0, E.DY)(a, r)) || void 0, publisherId: a ? (0, E.Pz)(a) : void 0 }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, q.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: Y.iY, tweetAdProvider: H.Q3 }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: Y.iY, tweetAdProvider: H.Q3 }))
                     .withAnalytics(),
                 ee = (0, s.cn)((e) =>
-                    e(Z.F6)
+                    e(q.F6)
                         .login()
                         .catch(() => {}),
                 ),
@@ -568,18 +568,17 @@
                             e.setPlayer(t);
                         }
                     };
-                return r.createElement(U.Z.Consumer, null, ({ heightsReady: e }) => r.createElement(n.Z.Consumer, null, ({ playbackPriority: t }) => r.createElement(M, (0, a.Z)({}, m, { analytics: I, heightsReady: e, playbackPriority: t === l.W.INELIGIBLE ? t : _, setPlayer: v, tweetAdProvider: y, twitterAuthedHttpClient: f }))));
+                return r.createElement(M.Z.Consumer, null, ({ heightsReady: e }) => r.createElement(n.Z.Consumer, null, ({ playbackPriority: t }) => r.createElement(U, (0, a.Z)({}, m, { analytics: I, heightsReady: e, playbackPriority: t === l.W.INELIGIBLE ? t : _, setPlayer: v, tweetAdProvider: y, twitterAuthedHttpClient: f }))));
             }
             const ae = K(ie);
         },
         931162: (e, t, i) => {
             i.d(t, { D: () => s, R: () => r });
             var a = i(202784);
-            const r = i(620522).Z,
-                s = ({ children: e, fetch: t, prerollDisplayLocation: i }) => {
-                    const s = a.useRef({}),
-                        o = a.useMemo(() => ({ prerollDisplayLocation: i, refsMap: s.current, fetch: t }), [i, s, t]);
-                    return a.createElement(r.Provider, { value: o }, e);
+            const r = a.createContext({ prerollDisplayLocation: void 0 }),
+                s = ({ children: e, prerollDisplayLocation: t }) => {
+                    const i = a.useMemo(() => ({ prerollDisplayLocation: t }), [t]);
+                    return a.createElement(r.Provider, { value: i }, e);
                 };
         },
         408686: (e, t, i) => {
@@ -878,4 +877,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.2797bb2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.14d2578a.js.map

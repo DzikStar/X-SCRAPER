@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~ondemand.SettingsInternals~bundle.SettingsRevamp~bundle.SettingsTransparency"],
+    ["shared~bundle.SettingsRevamp~bundle.SettingsTransparency"],
     {
         253493: (e, t, r) => {
             r.d(t, { Z: () => w });
@@ -389,4 +389,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.SettingsRevamp~bundle.SettingsTransparency.d68565da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsRevamp~bundle.SettingsTransparency.e66a525a.js.map

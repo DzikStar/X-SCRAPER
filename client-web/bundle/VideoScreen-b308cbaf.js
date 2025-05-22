@@ -362,8 +362,8 @@
                 R = i(697926),
                 P = i(516951),
                 D = i(351322),
-                Z = i(325686),
-                A = i(392237),
+                A = i(325686),
+                Z = i(392237),
                 S = i(143778);
             const w = (e) => {
                     const { fetchStatus: t, onRequestRetry: i } = e,
@@ -375,10 +375,10 @@
                                 clearTimeout(e);
                             };
                         }, [s]),
-                        r || t === h.ZP.FAILED ? n.createElement(l.Z, { fetchStatus: t, onRequestRetry: i, render: S.Z }) : n.createElement(Z.Z, { style: F.placeholder })
+                        r || t === h.ZP.FAILED ? n.createElement(l.Z, { fetchStatus: t, onRequestRetry: i, render: S.Z }) : n.createElement(A.Z, { style: F.placeholder })
                     );
                 },
-                F = A.default.create((e) => ({ placeholder: { height: 50 } })),
+                F = Z.default.create((e) => ({ placeholder: { height: 50 } })),
                 C = n.memo(w);
             var L = i(590980),
                 O = i(220184),
@@ -619,8 +619,8 @@
                 R = i(962741),
                 P = i(224175),
                 D = i(246031),
-                Z = i(347155),
-                A = i(312771),
+                A = i(347155),
+                Z = i(312771),
                 S = i(443781),
                 w = i(71620),
                 F = i(87063),
@@ -636,8 +636,8 @@
                 K = (e, t) => t.module.selectBottomFetchStatus(e),
                 z = (e, t) => t.module.selectTopFetchStatus(e),
                 G = (e, t) => t.module.selectCanRefresh(e),
-                $ = (e, t) => t.module.timelineId,
-                j = (e, t) => t.module.selectUnavailableReason(e),
+                j = (e, t) => t.module.timelineId,
+                $ = (e, t) => t.module.selectUnavailableReason(e),
                 V = (e, t) => t.module.selectDismissedEntries(e),
                 q = (e, t) => t.module.selectPinnedEntry(e),
                 W = (e, t) => t.module.selectAlert(e),
@@ -649,7 +649,7 @@
                 te = (e, t) => t.module.selectNewTweetsBar(e),
                 ie = (e, t) => t.module.perfKey,
                 ne = (0, C.Z)()
-                    .propsFromState(() => ({ activeCover: Y, alert: W, bottomFetchStatus: K, canRefresh: G, dismissedEntries: V, droppedAds: X, entries: H, initialFetchStatus: U, isRestrictedSession: N._S, newTweetsBarContent: te, perfKey: ie, pinnedEntry: q, pollingIntervalMs: Q, previewEntries: x, timelineExist: J, timelineId: $, topFetchStatus: z, unavailableReason: j, wasAtleastOneEntryHoisted: ee }))
+                    .propsFromState(() => ({ activeCover: Y, alert: W, bottomFetchStatus: K, canRefresh: G, dismissedEntries: V, droppedAds: X, entries: H, initialFetchStatus: U, isRestrictedSession: N._S, newTweetsBarContent: te, perfKey: ie, pinnedEntry: q, pollingIntervalMs: Q, previewEntries: x, timelineExist: J, timelineId: j, topFetchStatus: z, unavailableReason: $, wasAtleastOneEntryHoisted: ee }))
                     .adjustStateProps(({ bottomFetchStatus: e, entries: t, initialFetchStatus: i, previewEntries: n, unavailableReason: r, ...s }) => {
                         const o = i === F.Z.FAILED && r,
                             a = n.length > 0 && i !== F.Z.LOADED && !o,
@@ -671,7 +671,7 @@
                     super(e, t),
                         (this._lastRefresh = -1),
                         (this._render = () => {
-                            const { analytics: e, apiErrorHandlerMap: t, bottomFetchStatus: i, createLocalApiErrorHandler: s, dismissedEntries: o, entries: a, entryConfiguration: l, fetchBottom: c, fetchInitial: d, fetchInitialOrTop: p, fetchOptions: h, fetchTopOptions: u, loadingAccessibilityLabel: y, markAllRead: f, olderAtTop: _, onEntriesRendered: g, perfKey: E, pinnedEntry: T, preprocessEntryList: I, processCallback: v, renderUnavailable: k, shouldFetchInitialOnBottomRetry: R, timelineExist: P, timelineRef: D, unavailableReason: Z, updateInstreamVideoEntries: A, withoutHeadroom: S, ...w } = this.props;
+                            const { analytics: e, apiErrorHandlerMap: t, bottomFetchStatus: i, createLocalApiErrorHandler: s, dismissedEntries: o, entries: a, entryConfiguration: l, fetchBottom: c, fetchInitial: d, fetchInitialOrTop: p, fetchOptions: h, fetchTopOptions: u, loadingAccessibilityLabel: y, markAllRead: f, olderAtTop: _, onEntriesRendered: g, perfKey: E, pinnedEntry: T, preprocessEntryList: I, processCallback: v, renderUnavailable: k, shouldFetchInitialOnBottomRetry: R, timelineExist: P, timelineRef: D, unavailableReason: A, updateInstreamVideoEntries: Z, withoutHeadroom: S, ...w } = this.props;
                             return r.createElement(
                                 r.Fragment,
                                 null,
@@ -744,7 +744,7 @@
                         }),
                         (this._handleRefresh = () => {
                             const e = Date.now();
-                            this._fetchInitialOrTop({ requestContext: Z.f.REFRESH }, oe.l.PULL_TO_REFRESH).then(() => {
+                            this._fetchInitialOrTop({ requestContext: A.f.REFRESH }, oe.l.PULL_TO_REFRESH).then(() => {
                                 this._lastRefresh = e;
                             });
                         }),
@@ -772,12 +772,12 @@
                 }
                 render() {
                     const { initialFetchStatus: e, livePipelineTopic: t, loadingAccessibilityLabel: i, prerollDisplayLocation: n, renderUnavailable: s, unavailableReason: o } = this.props;
-                    return r.createElement(r.Fragment, null, t ? r.createElement(f._W, { callback: this._foregroundPollAction, topic: t }) : null, r.createElement(re.D, { fetch: this._handleNearBottom, prerollDisplayLocation: n }, r.createElement(u.Z, { "aria-label": i, fetchStatus: e, onRequestRetry: this._handleInitialRetry, render: this._render, renderFailure: o && s ? this._renderUnavailable : void 0, retryable: !o })));
+                    return r.createElement(r.Fragment, null, t ? r.createElement(f._W, { callback: this._foregroundPollAction, topic: t }) : null, r.createElement(re.D, { prerollDisplayLocation: n }, r.createElement(u.Z, { "aria-label": i, fetchStatus: e, onRequestRetry: this._handleInitialRetry, render: this._render, renderFailure: o && s ? this._renderUnavailable : void 0, retryable: !o })));
                 }
                 _initialize() {
                     const { history: e, initialFetchStatus: t, isSingleDirection: i } = this.props,
-                        n = t === A.ZP.LOADED,
-                        r = "POP" === e.action && t === A.ZP.LOADED;
+                        n = t === Z.ZP.LOADED,
+                        r = "POP" === e.action && t === Z.ZP.LOADED;
                     (i ? !n : !r) && this._fetchInitialOrTop({ onlyIfStale: !0 }, oe.l.TIMELINE_MOUNTING), this._onEntriesUpdated(), this._maybeInitializeTimelinePolling();
                 }
                 _onEntriesUpdated(e) {
@@ -840,7 +840,7 @@
             const ue = ne((0, I.Z)(he));
         },
         351322: (e, t, i) => {
-            i.d(t, { KM: () => Fe, iH: () => Ae, ov: () => Te, lC: () => Se, OZ: () => ve, ub: () => we });
+            i.d(t, { KM: () => De, iH: () => ke, ov: () => fe, lC: () => Re, OZ: () => be, ub: () => Pe });
             var n = i(202784),
                 r = i(516951),
                 s = i(459643),
@@ -887,12 +887,12 @@
                 R = i(601576),
                 P = i(466380),
                 D = i(735313),
-                Z = i(919022);
-            const A = [],
+                A = i(919022);
+            const Z = [],
                 S = (e, t) => {
                     const { config: i, entry: n, module: r } = t,
                         s = i.feedbackEntrySelector ? i.feedbackEntrySelector(n) : n,
-                        o = s.itemMetadata?.feedbackInfo?.feedbackKeys || A,
+                        o = s.itemMetadata?.feedbackInfo?.feedbackKeys || Z,
                         a = r.selectFeedbackActions(e);
                     return (0, _.Z)(o, (e) => (a[e] ? e : ((0, E.ZP)(`Feedback key has no backing action ${e}`), null)));
                 },
@@ -929,11 +929,11 @@
                             n
                         );
                     })(e, t);
-                    return Z.ZP.selectMany(e, i);
+                    return A.ZP.selectMany(e, i);
                 },
                 O = (0, T.Z)()
                     .propsFromState(() => ({ feedbackActions: (0, g.Z)(S, w, (e, t) => t.map((t, i) => ({ ...t, feedbackKey: e[i] }))), richFeedbackList: F, richFeedbackTopic: C, richFeedbackUsers: (0, g.Z)(L, (e) => e) }))
-                    .propsFromActions(({ module: e }) => ({ addToast: R.fz, applyFeedbackAction: e.applyFeedbackAction, block: Z.ZP.block, createLocalApiErrorHandler: (0, b.zr)("FEEDBACK_ACTIONS_ENTRY_CONTAINER"), gracefullyReloadTimeline: () => (0, D.Z)(e), pinReply: k.C, scribe: I.richScribeAction, setTopicNotInterested: P.Z.notInterested, toggleListMuting: v.Z.toggleMute, topicFollow: P.Z.follow, topicUnfollow: P.Z.unfollow, unblock: Z.ZP.unblock, undoFeedbackAction: e.undoFeedbackAction, undoTopicNotInterested: P.Z.undoNotInterested, unpinReply: k.e }))
+                    .propsFromActions(({ module: e }) => ({ addToast: R.fz, applyFeedbackAction: e.applyFeedbackAction, block: A.ZP.block, createLocalApiErrorHandler: (0, b.zr)("FEEDBACK_ACTIONS_ENTRY_CONTAINER"), gracefullyReloadTimeline: () => (0, D.Z)(e), pinReply: k.C, scribe: I.richScribeAction, setTopicNotInterested: P.Z.notInterested, toggleListMuting: v.Z.toggleMute, topicFollow: P.Z.follow, topicUnfollow: P.Z.unfollow, unblock: A.ZP.unblock, undoFeedbackAction: e.undoFeedbackAction, undoTopicNotInterested: P.Z.undoNotInterested, unpinReply: k.e }))
                     .withAnalytics();
             var M = i(332920),
                 N = i.n(M),
@@ -944,8 +944,8 @@
                 K = i(873990),
                 z = i(376293),
                 G = i(712816),
-                $ = i(879596),
-                j = i(962741),
+                j = i(879596),
+                $ = i(962741),
                 V = i(638090),
                 q = i(638537),
                 W = i(324260);
@@ -965,8 +965,8 @@
                 },
                 oe = (e, { addToast: t, block: i, createLocalApiErrorHandler: n, feedbackActions: r, feedbackEntry: s, feedbackMethods: o, gracefullyReloadTimeline: a, history: l, pinReply: c, richList: d, richTopic: p, richUsers: h, scribe: u, scribeData: m, scribeNamespace: y, setTopicNotInterested: f, toggleListMuting: _, topicFollow: b, topicUnfollow: g, unblock: E, undoTopicNotInterested: T, unpinReply: I }) =>
                     r.map((r) => {
-                        const { clientEventInfo: v, excludeFromActionMenu: k, feedbackKey: R, feedbackType: P, prompt: D, subprompt: Z } = r,
-                            A = ((e, t) => {
+                        const { clientEventInfo: v, excludeFromActionMenu: k, feedbackKey: R, feedbackType: P, prompt: D, subprompt: A } = r,
+                            Z = ((e, t) => {
                                 const { addToast: i, block: n, createLocalApiErrorHandler: r, feedbackAction: s, feedbackEntry: o, feedbackKey: a, history: l, richList: c, richTopic: d, richUsers: p, scribe: h, scribeData: u, scribeNamespace: m, setTopicNotInterested: y, toggleListMuting: f, topicFollow: _, topicUnfollow: b, unblock: g, undoTopicNotInterested: E } = t;
                                 if (!s.richBehavior) return x();
                                 if (s.richBehavior.replyPinState) return (0, W.$)(e, t);
@@ -983,7 +983,7 @@
                                                   isSoftBlockEnabled: e.isTrue("xprofile_blocked_by_view_enabled"),
                                                   source: z.SC.RICH_FEEDBACK,
                                                   unblockAction: () => {
-                                                      g(t).catch(r($.D)), h({ ...m, action: "unblock" }, u);
+                                                      g(t).catch(r(j.D)), h({ ...m, action: "unblock" }, u);
                                                   },
                                                   user: i,
                                               }),
@@ -1026,7 +1026,7 @@
                                 }
                                 if (s.richBehavior.markNotInterestedTopic && d) {
                                     const { id: e, name: t } = d,
-                                        n = o.type === j.ZP.Topic && o.content?.topicDisplayType === V.M6.Pill,
+                                        n = o.type === $.ZP.Topic && o.content?.topicDisplayType === V.M6.Pill,
                                         r = (0, B.DE)(s, o),
                                         l = (0, B.S4)(s, o),
                                         c = (0, B.C_)(s, o),
@@ -1052,10 +1052,10 @@
                             })(e, { addToast: t, block: i, createLocalApiErrorHandler: n, feedbackAction: r, feedbackEntry: s, feedbackKey: R, gracefullyReloadTimeline: a, history: l, pinReply: c, richList: d, richTopic: p, richUsers: h, scribe: u, scribeData: m, scribeNamespace: y, setTopicNotInterested: f, toggleListMuting: _, topicFollow: b, topicUnfollow: g, unblock: E, undoTopicNotInterested: T, unpinReply: I });
                         return {
                             text: D || "",
-                            subText: Z,
+                            subText: A,
                             Icon: (0, ne.w)(r),
                             excludeFromActionMenu: !!k,
-                            ...A,
+                            ...Z,
                             onClick: () => {
                                 const e = P !== B.ZP.SeeMore,
                                     i = { entry: s, feedbackKeys: [R], isDismissibleFeedback: e },
@@ -1063,11 +1063,11 @@
                                 let a = { ...v };
                                 n && (a = { ...n, ...v });
                                 const l = (0, B.S4)(r, s);
-                                if ((l || a) && !A.willScribe) {
+                                if ((l || a) && !Z.willScribe) {
                                     const e = se(l, y, a);
                                     u(e, m);
                                 }
-                                P === B.ZP.RichBehavior && (A.onClick && A.onClick(), A.skipDefaultAction && (i.isDismissibleFeedback = !1)),
+                                P === B.ZP.RichBehavior && (Z.onClick && Z.onClick(), Z.skipDefaultAction && (i.isDismissibleFeedback = !1)),
                                     o.applyFeedbackAction(i).then(() => {
                                         if (!e) {
                                             let e;
@@ -1141,74 +1141,48 @@
                     return null;
                 },
                 de = O(le);
-            var pe = i(614983),
-                he = i.n(pe),
-                ue = i(392237),
-                me = i(952428),
-                ye = i(661810),
-                fe = i(620522),
-                _e = i(323265);
-            const be = ue.default.create((e) => ({ item: { display: "block" }, divider: { width: "100%" }, dividerRedesign: { width: `calc(100% - ${e.spaces.space32})`, marginStart: e.spaces.space16, marginEnd: e.spaces.space16 } })),
-                ge = ({ children: e }) => e,
-                Ee =
+            var pe = i(392237),
+                he = i(952428);
+            const ue = pe.default.create((e) => ({ divider: { display: "block", borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, item: { display: "block" } })),
+                me = ({ children: e }) => e,
+                ye =
                     (e, { isClickable: t, isEmpty: i, isFocusable: r, shouldDisplayBorder: s }) =>
                     (i, o, a, l) => {
                         const c = e(i, o);
                         if (!c) return null;
-                        const d = r(i) && a ? (e) => a(!!e) : (e) => a?.(!1),
-                            p = n.createRef(),
-                            u = n.createElement(h.rC.Consumer, null, ({ featureSwitches: e }) => {
-                                const r = e.isTrue("rweb_sourcemap_migration") && !_e.ZP.isMobileOS();
-                                return n.createElement(
-                                    ge,
-                                    { displayType: l, entry: i },
-                                    n.createElement(
-                                        me.Z,
-                                        {
-                                            style: be.item,
-                                            viewRef: (e) => {
-                                                (p.current = e), d(e);
-                                            },
-                                            withInteractiveStyling: t(i),
-                                        },
-                                        c,
-                                    ),
-                                    s(i) ? n.createElement(ye.Z, { style: r ? be.dividerRedesign : be.divider }) : null,
-                                );
-                            });
-                        return n.createElement(fe.Z.Consumer, null, ({ refsMap: e }) => (he()(e, "refsMap must be defined"), (e[i.entryId] = p), u));
+                        const d = r(i) && a ? (e) => a(!!e) : () => a?.(!1);
+                        return n.createElement(me, { displayType: l, entry: i }, n.createElement(he.Z, { style: s(i) ? ue.divider : ue.item, viewRef: d, withInteractiveStyling: t(i) }, c));
                     },
-                Te = ({ handlers: e, selectDisplayType: t }) => ({ selectDisplayType: t, handlers: e }),
-                Ie = "defaultDisplayType",
-                ve = (e) => ({ selectDisplayType: () => Ie, handlers: { [Ie]: e } }),
-                ke = r.Z,
-                Re = { top: !1, bottom: !1 },
-                Pe = (0, s.Z)(!1),
-                De = (0, s.Z)(!1),
-                Ze = (0, s.Z)(!1),
-                Ae = ({ divider: e, shouldDisplayBorder: t = Pe, isClickable: i = De, isFocusable: r = Ze, isEmpty: s, ...o }) => {
+                fe = ({ handlers: e, selectDisplayType: t }) => ({ selectDisplayType: t, handlers: e }),
+                _e = "defaultDisplayType",
+                be = (e) => ({ selectDisplayType: () => _e, handlers: { [_e]: e } }),
+                ge = r.Z,
+                Ee = { top: !1, bottom: !1 },
+                Te = (0, s.Z)(!1),
+                Ie = (0, s.Z)(!1),
+                ve = (0, s.Z)(!1),
+                ke = ({ divider: e, shouldDisplayBorder: t = Te, isClickable: i = Ie, isFocusable: r = ve, isEmpty: s, ...o }) => {
                     const a = (e) => !e.parentModuleMetadata?.verticalMetadata?.suppressDividers && t(e);
                     return {
                         getHandler: (t) => {
                             const l = { ...o, injectProps: t };
-                            return { render: Ee((e, { module: t, renderEntry: i }) => n.createElement(de, { config: l, entry: e, module: t, renderEntry: i }), { isClickable: i, shouldDisplayBorder: a, isFocusable: r }), splice: void 0, divider: e || Re, getScribeDataItem: o.getScribeDataItem || ke, isEmpty: s, shouldDisplayBorder: a };
+                            return { render: ye((e, { module: t, renderEntry: i }) => n.createElement(de, { config: l, entry: e, module: t, renderEntry: i }), { isClickable: i, shouldDisplayBorder: a, isFocusable: r }), splice: void 0, divider: e || Ee, getScribeDataItem: o.getScribeDataItem || ge, isEmpty: s, shouldDisplayBorder: a };
                         },
                     };
                 },
-                Se = ({ render: e, divider: t, shouldDisplayBorder: i = Pe, isClickable: n = De, getScribeDataItem: r = ke, isFocusable: s = Ze, isEmpty: o, isLoadingPlaceholder: a }) => ({ render: Ee(e, { shouldDisplayBorder: i, isClickable: n, isFocusable: s }), splice: void 0, divider: t || Re, getScribeDataItem: r, isEmpty: o, shouldDisplayBorder: i, isLoadingPlaceholder: a }),
-                we = ({ splice: e, divider: t, getScribeDataItem: i = ke }) => ({ render: void 0, splice: e, divider: t || Re, getScribeDataItem: i }),
-                Fe = (0, s.Z)({ render: void 0, splice: void 0, divider: Re, getScribeDataItem: ke, isOmitted: !0 });
+                Re = ({ render: e, divider: t, shouldDisplayBorder: i = Te, isClickable: n = Ie, getScribeDataItem: r = ge, isFocusable: s = ve, isEmpty: o, isLoadingPlaceholder: a }) => ({ render: ye(e, { shouldDisplayBorder: i, isClickable: n, isFocusable: s }), splice: void 0, divider: t || Ee, getScribeDataItem: r, isEmpty: o, shouldDisplayBorder: i, isLoadingPlaceholder: a }),
+                Pe = ({ splice: e, divider: t, getScribeDataItem: i = ge }) => ({ render: void 0, splice: e, divider: t || Ee, getScribeDataItem: i }),
+                De = (0, s.Z)({ render: void 0, splice: void 0, divider: Ee, getScribeDataItem: ge, isOmitted: !0 });
         },
         931162: (e, t, i) => {
             i.d(t, { D: () => s, R: () => r });
             var n = i(202784);
-            const r = i(620522).Z,
-                s = ({ children: e, fetch: t, prerollDisplayLocation: i }) => {
-                    const s = n.useRef({}),
-                        o = n.useMemo(() => ({ prerollDisplayLocation: i, refsMap: s.current, fetch: t }), [i, s, t]);
-                    return n.createElement(r.Provider, { value: o }, e);
+            const r = n.createContext({ prerollDisplayLocation: void 0 }),
+                s = ({ children: e, prerollDisplayLocation: t }) => {
+                    const i = n.useMemo(() => ({ prerollDisplayLocation: t }), [t]);
+                    return n.createElement(r.Provider, { value: i }, e);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-b308cbaf.2de1de1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-b308cbaf.0b32ae8a.js.map

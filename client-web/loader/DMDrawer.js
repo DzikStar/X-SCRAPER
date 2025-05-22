@@ -3,7 +3,7 @@
     ["loader.DMDrawer"],
     {
         290402: (e, t, r) => {
-            r.d(t, { Z: () => v });
+            r.d(t, { Z: () => g });
             var n = r(807896),
                 a = r(202784),
                 i = r(182056),
@@ -15,10 +15,10 @@
             const u = c().aa6e3300,
                 h = ({ retryMessage: e, ...t }, r) => {
                     const s = i.Z.isOnline();
-                    return a.createElement(o.Z, (0, n.Z)({}, t, { icon: s ? void 0 : a.createElement(d.default, { style: g.icon }), retryMessage: s ? e : u }));
+                    return a.createElement(o.Z, (0, n.Z)({}, t, { icon: s ? void 0 : a.createElement(d.default, { style: v.icon }), retryMessage: s ? e : u }));
                 },
-                g = s.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                v = a.forwardRef(h);
+                v = s.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                g = a.forwardRef(h);
         },
         334346: (e, t, r) => {
             r.d(t, { C: () => l, Z: () => s });
@@ -44,16 +44,16 @@
                 d = r(415506),
                 u = r(616894),
                 h = r(391366),
-                g = r(40904),
-                v = r(372703),
-                p = r(576513);
-            const m = { [p.Z.FEEDBACK_CLOSE]: n.default, [p.Z.FEEDBACK]: a.default, [p.Z.FROWN]: i.default, [p.Z.SMILE]: o.default, [p.Z.MODERATION]: s.default, [p.Z.TOPIC]: l.default, [p.Z.TOPIC_CLOSE]: c.default, [p.Z.FLAG]: d.default, [p.Z.NO]: u.default, [p.Z.SPEAKER]: h.default, [p.Z.SPEAKER_OFF]: g.default },
-                E = { [v.ZP.SeeFewer]: i.default, [v.ZP.SeeMore]: o.default, [v.ZP.DontLike]: i.default },
+                v = r(40904),
+                g = r(372703),
+                m = r(576513);
+            const p = { [m.Z.FEEDBACK_CLOSE]: n.default, [m.Z.FEEDBACK]: a.default, [m.Z.FROWN]: i.default, [m.Z.SMILE]: o.default, [m.Z.MODERATION]: s.default, [m.Z.TOPIC]: l.default, [m.Z.TOPIC_CLOSE]: c.default, [m.Z.FLAG]: d.default, [m.Z.NO]: u.default, [m.Z.SPEAKER]: h.default, [m.Z.SPEAKER_OFF]: v.default },
+                E = { [g.ZP.SeeFewer]: i.default, [g.ZP.SeeMore]: o.default, [g.ZP.DontLike]: i.default },
                 f = (e) => {
                     const { feedbackType: t, icon: r } = e;
-                    return (r && m[r]) || E[t];
+                    return (r && p[r]) || E[t];
                 },
-                b = (e) => e && m[e.toUpperCase()];
+                b = (e) => e && p[e.toUpperCase()];
         },
         524084: (e, t, r) => {
             r.d(t, { Z: () => o });
@@ -63,7 +63,7 @@
             const o = (0, a.Z)({ loader: () => r.e("loader.AbsolutePower").then(r.bind(r, 590136)), renderPlaceholder: (e, t) => n.createElement(i.Z, { hasError: e, onRetry: t }) });
         },
         376293: (e, t, r) => {
-            r.d(t, { $f: () => D, KV: () => E, LI: () => R, SC: () => Z, Vt: () => y, ed: () => M, op: () => S });
+            r.d(t, { $f: () => D, KV: () => E, LI: () => R, SC: () => Z, Vt: () => y, ed: () => H, op: () => O });
             var n = r(202784),
                 a = r(190286),
                 i = r(332920),
@@ -74,10 +74,10 @@
                 d = r(163390);
             const u = o().cfd2f35e,
                 h = o().f9e45cfb,
-                g = o().fcd4d489,
-                v = o().a6450e84,
-                p = o().g353ad73,
-                m = o().ad00a739,
+                v = o().fcd4d489,
+                g = o().a6450e84,
+                m = o().g353ad73,
+                p = o().ad00a739,
                 E = o().a9fd20be,
                 f = o().j546fb79,
                 b = o().c9623eeb,
@@ -85,8 +85,8 @@
                 w = o().he43bca4,
                 C = o().f5f01af6,
                 Z = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                D = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: v, text: t ? m({ screenName: e }) : p({ screenName: e }) }),
-                S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: n, testID: a, unblockAction: i, unblockSubtext: o, user: s }) => {
+                D = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: g, text: t ? p({ screenName: e }) : m({ screenName: e }) }),
+                O = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: n, testID: a, unblockAction: i, unblockSubtext: o, user: s }) => {
                     let l,
                         u = c.Z;
                     const h = R(s, r);
@@ -106,13 +106,13 @@
                                     s.blocking ? i(h) : e(h);
                                 });
                     }
-                    return { confirmation: h, onClick: u, testID: a, shortcutKey: l, Icon: O(s.blocking), text: T(s), subText: k({ user: s, blockSubtext: t, unblockSubtext: o }) };
+                    return { confirmation: h, onClick: u, testID: a, shortcutKey: l, Icon: k(s.blocking), text: T(s), subText: S({ user: s, blockSubtext: t, unblockSubtext: o }) };
                 },
-                O = (e) => (e ? l.default : s.default),
-                k = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
-                T = (e) => (e.blocking ? b({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
+                k = (e) => (e ? l.default : s.default),
+                S = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
+                T = (e) => (e.blocking ? b({ screenName: e.screen_name }) : v({ screenName: e.screen_name })),
                 R = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: f({ screenName: e }), label: y, text: t ? C : w }))(e.screen_name, t) : D(e.screen_name, t)),
-                M = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
+                H = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: i, headline: o, label: s, text: l } = e;
                     return n.createElement(a.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: i, headline: o, onCancel: r, onConfirm: t, text: l });
                 };
@@ -135,7 +135,7 @@
             const o = (0, i.wN)(i.PW, a());
         },
         163390: (e, t, r) => {
-            r.d(t, { OX: () => h, Od: () => d, PN: () => g, uq: () => c, wR: () => p });
+            r.d(t, { OX: () => h, Od: () => d, PN: () => v, uq: () => c, wR: () => m });
             var n = r(251067),
                 a = r(522171),
                 i = r(332920),
@@ -164,7 +164,7 @@
                     { description: o().eebdef38, keys: a.Z.shortcuts.openMediaModal, universal: !0 },
                     { description: o().b488758c, keys: c.toggleDMDrawer, universal: !1 },
                 ],
-                g = () => [
+                v = () => [
                     { description: o().c82314e0, keys: c.video.play1, universal: !0 },
                     { description: o().c82314e0, keys: c.video.play2, universal: !0 },
                     { description: o().b881560e, keys: c.video.mute, universal: !0 },
@@ -172,10 +172,10 @@
                     { description: o().a7e604c6, keys: c.audio.play, universal: !1 },
                     { description: o().f978c4fc, keys: c.audio.mute, universal: !1 },
                 ],
-                v = (0, s.Z)((e) => {
+                g = (0, s.Z)((e) => {
                     const t = d(e),
                         r = h(),
-                        n = g(),
+                        n = v(),
                         a = {};
                     return (
                         [...r, ...n, ...t].forEach(({ description: e, keys: t }) => {
@@ -188,8 +188,8 @@
                         JSON.stringify(a)
                     );
                 }),
-                p = (e, t) => {
-                    if (t) return { dataSet: { "at-shortcutkeys": v(e) } };
+                m = (e, t) => {
+                    if (t) return { dataSet: { "at-shortcutkeys": g(e) } };
                 };
         },
         409438: (e, t, r) => {
@@ -212,10 +212,10 @@
                 d = r(550293),
                 u = r(807896),
                 h = r(325686),
-                g = r(292627),
-                v = r(365023),
-                p = r(235902),
-                m = r(461756),
+                v = r(292627),
+                g = r(365023),
+                m = r(235902),
+                p = r(461756),
                 E = r(609927),
                 f = r(521514),
                 b = r(511582),
@@ -224,28 +224,28 @@
                 C = r(715913),
                 Z = r(601413),
                 D = r(392237),
-                S = r(323265),
-                O = r(443781),
-                k = r(740633);
+                O = r(323265),
+                k = r(443781),
+                S = r(740633);
             const T = (0, r(523561).Z)({ loader: () => r.e("ondemand.RichText").then(r.bind(r, 687184)) });
             var R = r(111311),
-                M = r(198506),
-                x = r(768572),
-                I = r(275365),
-                L = r(255534),
-                H = r(164383),
-                P = r(587521),
-                A = r(806960),
+                H = r(198506),
+                L = r(768572),
+                M = r(275365),
+                x = r(255534),
+                I = r(164383),
+                A = r(587521),
+                P = r(806960),
                 _ = r(786998),
                 N = r(516951),
                 U = r(933794),
                 F = r(163390),
                 z = r(725516);
             const B = { header: "DMDrawerHeader", headerHighlighted: "DMDrawerHeaderHighlighted", root: "DMDrawer" };
-            var W = r(154003),
-                K = r(310088),
-                V = r(332920),
-                G = r.n(V),
+            var V = r(154003),
+                W = r(310088),
+                K = r(332920),
+                G = r.n(K),
                 q = r(894966);
             const X = G().b08821f4;
             function j({ buttonType: e, hasNewMessages: t, inboxUnreadCount: r }) {
@@ -254,7 +254,7 @@
                 return n.createElement(
                     h.Z,
                     null,
-                    n.createElement(W.ZP, {
+                    n.createElement(V.ZP, {
                         "aria-label": X,
                         icon: n.createElement(q.default, null),
                         onPress: () => {
@@ -262,7 +262,7 @@
                         },
                         type: e,
                     }),
-                    i ? n.createElement(K.Z, { pip: !0, style: Y.newMessagePip, truncatedCountFormatter: () => "", unreadCountLabel: () => "" }) : null,
+                    i ? n.createElement(W.Z, { pip: !0, style: Y.newMessagePip, truncatedCountFormatter: () => "", unreadCountLabel: () => "" }) : null,
                 );
             }
             const Y = D.default.create((e) => ({ newMessagePip: { end: e.spaces.space4, top: e.spaces.space4 } }));
@@ -281,7 +281,7 @@
                     { style: ie.rightControls },
                     r
                         ? null
-                        : n.createElement(W.ZP, {
+                        : n.createElement(V.ZP, {
                               "aria-label": te,
                               hoverLabel: { label: ne },
                               icon: n.createElement($.default, null),
@@ -290,8 +290,8 @@
                               },
                               type: t,
                           }),
-                    r && o && n.createElement(H.fK, null),
-                    o ? n.createElement(W.ZP, { "aria-label": ee, hoverLabel: { label: ee }, icon: n.createElement(J.default, null), onPress: i, type: t }) : n.createElement(W.ZP, { "aria-label": re, hoverLabel: { label: re }, icon: n.createElement(Q.default, null), onPress: i, type: t }),
+                    r && o && n.createElement(I.fK, null),
+                    o ? n.createElement(V.ZP, { "aria-label": ee, hoverLabel: { label: ee }, icon: n.createElement(J.default, null), onPress: i, type: t }) : n.createElement(V.ZP, { "aria-label": re, hoverLabel: { label: re }, icon: n.createElement(Q.default, null), onPress: i, type: t }),
                 );
             }
             const ie = D.default.create((e) => ({ rightControls: { flexDirection: "row" } }));
@@ -308,20 +308,20 @@
             function he({ conversationSubtitle: e, conversationTitle: t, inboxUnreadCount: r = 0, isConversationUnread: a = !1, isHighlighted: i, onDrawerOpen: o, triggerHighlight: s }) {
                 const c = n.createRef(),
                     u = (0, z.z)(),
-                    g = (0, l.I0)(),
-                    v = (0, l.v9)(d.kX),
-                    p = ge(r > 0, i),
-                    m = v === b.S.EXPANDED,
+                    v = (0, l.I0)(),
+                    g = (0, l.v9)(d.kX),
+                    m = ve(r > 0, i),
+                    p = g === b.S.EXPANDED,
                     E = n.useRef(0);
                 n.useEffect(() => {
                     const e = E.current;
                     !i && s && (null === e || r > e) && s(), (E.current = r);
                 }, [r, s, i]);
                 const f = () => {
-                        const e = m ? b.S.COLLAPSED : b.S.EXPANDED;
-                        e === b.S.COLLAPSED ? u.scribe({ action: "collapse" }) : e === b.S.EXPANDED && (u.scribe({ action: "expand" }), o && o()), g(d.bi(e));
+                        const e = p ? b.S.COLLAPSED : b.S.EXPANDED;
+                        e === b.S.COLLAPSED ? u.scribe({ action: "collapse" }) : e === b.S.EXPANDED && (u.scribe({ action: "expand" }), o && o()), v(d.bi(e));
                     },
-                    y = 0 === r ? [] : i ? [ve.headerHighlighted] : [ve.headerActive];
+                    y = 0 === r ? [] : i ? [ge.headerHighlighted] : [ge.headerActive];
                 return n.createElement(
                     U.Z,
                     {
@@ -333,17 +333,17 @@
                             },
                         },
                     },
-                    n.createElement(h.Z, { ref: c, style: [ve.headerRoot, !m && ve.headerBorderClosed, ...y, ve.cursor], testID: i ? B.headerHighlighted : B.header }, n.createElement(_.Z, { leftControl: t && m ? n.createElement(j, { buttonType: p, hasNewMessages: r > 0, inboxUnreadCount: r }) : null, onMiddleControlClick: f, rightControl: n.createElement(ae, { analytics: u, buttonType: p, conversationTitle: t, handleToggleVisibility: f, isExpanded: m }), style: ve.roundedAppBarCorners, subtitle: e, title: n.createElement(de, { conversationTitle: t, hasNewMessages: r > 0, isConversationUnread: a, isHighlighted: i }), withBackground: !i })),
+                    n.createElement(h.Z, { ref: c, style: [ge.headerRoot, !p && ge.headerBorderClosed, ...y, ge.cursor], testID: i ? B.headerHighlighted : B.header }, n.createElement(_.Z, { leftControl: t && p ? n.createElement(j, { buttonType: m, hasNewMessages: r > 0, inboxUnreadCount: r }) : null, onMiddleControlClick: f, rightControl: n.createElement(ae, { analytics: u, buttonType: m, conversationTitle: t, handleToggleVisibility: f, isExpanded: p }), style: ge.roundedAppBarCorners, subtitle: e, title: n.createElement(de, { conversationTitle: t, hasNewMessages: r > 0, isConversationUnread: a, isHighlighted: i }), withBackground: !i })),
                 );
             }
-            const ge = (e, t) => (e && t ? "onMediaText" : "primaryText"),
-                ve = D.default.create((e) => ({ cursor: { cursor: "pointer" }, headerRoot: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge, transition: "all 0.3s ease" }, headerBorderClosed: { borderColor: e.colors.navigationBackground }, headerActive: { backgroundColor: e.colors.unreadCellBackground }, headerHighlighted: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, roundedAppBarCorners: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge } }));
-            function pe({ conversationSubtitle: e, conversationTitle: t, inboxUnreadCount: r, isConversationUnread: a = !1, isHighlighted: i, onDrawerOpen: o, triggerHighlight: s }) {
-                const c = (0, l.v9)(A.QA),
+            const ve = (e, t) => (e && t ? "onMediaText" : "primaryText"),
+                ge = D.default.create((e) => ({ cursor: { cursor: "pointer" }, headerRoot: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge, transition: "all 0.3s ease" }, headerBorderClosed: { borderColor: e.colors.navigationBackground }, headerActive: { backgroundColor: e.colors.unreadCellBackground }, headerHighlighted: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, roundedAppBarCorners: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge } }));
+            function me({ conversationSubtitle: e, conversationTitle: t, inboxUnreadCount: r, isConversationUnread: a = !1, isHighlighted: i, onDrawerOpen: o, triggerHighlight: s }) {
+                const c = (0, l.v9)(P.QA),
                     u = (0, l.v9)(d.gw);
                 return n.createElement(he, { conversationSubtitle: e, conversationTitle: t, inboxUnreadCount: c, isConversationUnread: !!u && a, isHighlighted: i, onDrawerOpen: o, triggerHighlight: s });
             }
-            var me = r(24949),
+            var pe = r(24949),
                 Ee = r(297436),
                 fe = r(668214),
                 be = r(289405),
@@ -352,32 +352,32 @@
                 Ce = r(131290),
                 Ze = r(601576),
                 De = r(919022),
-                Se = r(593953);
-            const Oe = (e, t) => t.conversationId,
-                ke = (0, me.P1)(
-                    (e, t) => c.selectEntriesForConversation(e, Oe(0, t)),
+                Oe = r(593953);
+            const ke = (e, t) => t.conversationId,
+                Se = (0, pe.P1)(
+                    (e, t) => c.selectEntriesForConversation(e, ke(0, t)),
                     y._h,
-                    (e, t) => (t ? (0, Se.y9)(e, t) : void 0),
+                    (e, t) => (t ? (0, Oe.y9)(e, t) : void 0),
                 ),
                 Te = (e) => (t) => ye.De(e, t),
                 Re = (e) => (t, r) => ye.rA(e, t, r),
-                Me = { conversation: (e, t) => c.selectConversation(e, Oe(0, t)), entries: c.selectEntries, perspective: y._h, users: De.ZP.selectAll, dataSaverMode: we.IX, dtabBarInfo: be.U6, quickReplyOptions: ke, visibility: d.kX, inboxUnreadCount: A.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, Oe(0, t)), isDmReceiptSettingEnabled: Ce.cn },
-                xe = { draftText: (e, t) => ye.vb(e, Oe(0, t)), gifMetadata: (e, t) => ye.Tu(e, Oe(0, t)), isUploading: (e, t) => ye.q9(e, Oe(0, t)), media: (e, t) => ye.W8(e, Oe(0, t)), mediaUploadProgress: (e, t) => ye.Ah(e, Oe(0, t)) },
-                Ie = (0, fe.Z)()
-                    .propsFromState(() => ({ ...Me, ...xe }))
-                    .adjustStateProps(({ conversation: e, dataSaverMode: t, draftText: r, dtabBarInfo: n, entries: a, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUnread: l, isUploading: c, media: d, mediaUploadProgress: u, perspective: h, quickReplyOptions: g, users: v, visibility: p }) => {
-                        const m = e?.data;
-                        return { conversation: m && (0, Ee.lk)(m, a, v), perspective: h, dataSaverMode: t, draftText: r, dtabBarInfo: n, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUploading: c, isUnread: l, media: d, mediaUploadProgress: u, quickReplyOptions: g, visibility: p };
+                He = { conversation: (e, t) => c.selectConversation(e, ke(0, t)), entries: c.selectEntries, perspective: y._h, users: De.ZP.selectAll, dataSaverMode: we.IX, dtabBarInfo: be.U6, quickReplyOptions: Se, visibility: d.kX, inboxUnreadCount: P.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, ke(0, t)), isDmReceiptSettingEnabled: Ce.cn },
+                Le = { draftText: (e, t) => ye.vb(e, ke(0, t)), gifMetadata: (e, t) => ye.Tu(e, ke(0, t)), isUploading: (e, t) => ye.q9(e, ke(0, t)), media: (e, t) => ye.W8(e, ke(0, t)), mediaUploadProgress: (e, t) => ye.Ah(e, ke(0, t)) },
+                Me = (0, fe.Z)()
+                    .propsFromState(() => ({ ...He, ...Le }))
+                    .adjustStateProps(({ conversation: e, dataSaverMode: t, draftText: r, dtabBarInfo: n, entries: a, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUnread: l, isUploading: c, media: d, mediaUploadProgress: u, perspective: h, quickReplyOptions: v, users: g, visibility: m }) => {
+                        const p = e?.data;
+                        return { conversation: p && (0, Ee.lk)(p, a, g), perspective: h, dataSaverMode: t, draftText: r, dtabBarInfo: n, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUploading: c, isUnread: l, media: d, mediaUploadProgress: u, quickReplyOptions: v, visibility: m };
                     })
                     .propsFromActions(({ conversationId: e }) => ({ addMedia: Re(e), addToast: Ze.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: ye.E4, sendMessage: ye.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
                     .withAnalytics({ page: "messages", section: "thread_drawer" });
-            class Le extends n.Component {
+            class xe extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._composer = n.createRef()),
                         (this._renderConversation = (e, t) => {
                             const { conversationId: r, history: a, location: i, typingNotifier: o } = this.props;
-                            return n.createElement(P.Z, { conversationId: r, drawerHeader: this._renderHeader(), history: a, isWide: !1, location: i, richTextInputContext: e, typeaheadWrapper: t, typingNotifier: o });
+                            return n.createElement(A.Z, { conversationId: r, drawerHeader: this._renderHeader(), history: a, isWide: !1, location: i, richTextInputContext: e, typeaheadWrapper: t, typingNotifier: o });
                         }),
                         (this._isExpanded = () => {
                             const { visibility: e } = this.props;
@@ -387,7 +387,7 @@
                             const { conversationId: e, createLocalApiErrorHandler: t, fetchUpdatesIfNeeded: r, isDmReceiptSettingEnabled: n } = this.props;
                             r(n ? { active_conversation_id: e, dm_users: !0 } : {}).catch(t());
                         }),
-                        (0, k.Z)();
+                        (0, S.Z)();
                 }
                 componentDidMount() {
                     this._updatePolling();
@@ -397,33 +397,33 @@
                 }
                 render() {
                     const e = this._isExpanded();
-                    return n.createElement(x.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (S.ZP.isDesktopOS() ? n.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
+                    return n.createElement(L.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (O.ZP.isDesktopOS() ? n.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
                 }
                 _renderHeader() {
                     const { conversation: e, conversationId: t, inboxUnreadCount: r, isHeaderHighlighted: a, isUnread: i, onDrawerOpen: o, perspective: s, triggerHeaderHighlight: l } = this.props,
                         c = a ? "white" : "text",
                         d = a ? "white" : "gray700",
-                        u = e && (e.type === I.eD.ONE_TO_ONE || e.type === I.eD.SECRET_ONE_TO_ONE) && s && (0, M.Z)(e, s).map(({ user: e }) => e.screen_name),
-                        g = u ? n.createElement(Z.Z, { color: d, screenName: u[0] }) : void 0;
-                    return n.createElement(h.Z, { style: He.headerRoot }, n.createElement(H._g.Provider, { value: t }, n.createElement(pe, { conversationSubtitle: g, conversationTitle: n.createElement(L.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: a, onDrawerOpen: o, triggerHighlight: l })));
+                        u = e && (e.type === M.eD.ONE_TO_ONE || e.type === M.eD.SECRET_ONE_TO_ONE) && s && (0, H.Z)(e, s).map(({ user: e }) => e.screen_name),
+                        v = u ? n.createElement(Z.Z, { color: d, screenName: u[0] }) : void 0;
+                    return n.createElement(h.Z, { style: Ie.headerRoot }, n.createElement(I._g.Provider, { value: t }, n.createElement(me, { conversationSubtitle: v, conversationTitle: n.createElement(x.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: a, onDrawerOpen: o, triggerHighlight: l })));
                 }
                 _updatePolling() {
                     this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === b.S.COLLAPSED && ((this._pollingTimer = new R.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
                 }
             }
-            Le.contextType = O.rC;
-            const He = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
-                Pe = Ie(Le);
-            var Ae = r(293115),
+            xe.contextType = k.rC;
+            const Ie = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
+                Ae = Me(xe);
+            var Pe = r(293115),
                 _e = r(715601),
                 Ne = r(602920),
                 Ue = r(161821),
                 Fe = r(973572),
                 ze = r(234296),
                 Be = r(288331),
-                We = r(826760),
-                Ke = r(149290),
-                Ve = r(763526);
+                Ve = r(826760),
+                We = r(149290),
+                Ke = r(763526);
             const Ge = G().a2f81050;
             function qe({ dmDrawerOnClick: e, drawerCacheKey: t }) {
                 const r = (0, z.z)(),
@@ -441,10 +441,10 @@
                             (e) => e,
                         ),
                     ),
-                    g = h.newUntrustedWithSocialProof + h.oldUntrustedWithSocialProof + h.newUntrustedWithoutSocialProof + h.oldUntrustedWithoutSocialProof,
-                    v = d && (g > 0 || u > 0),
-                    p = () => n.createElement(n.Fragment, null, n.createElement(Ve.J, null), n.createElement(Ke.Z, { allowUntrustedInbox: v, secondaryInboxCounts: h }));
-                return n.createElement(Be.Z, { accessibilityTitle: Ge, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(We.Z, { messageRequestPivot: p() }), renderStickyContent: p, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
+                    v = h.newUntrustedWithSocialProof + h.oldUntrustedWithSocialProof + h.newUntrustedWithoutSocialProof + h.oldUntrustedWithoutSocialProof,
+                    g = d && (v > 0 || u > 0),
+                    m = () => n.createElement(n.Fragment, null, n.createElement(Ke.J, null), n.createElement(We.Z, { allowUntrustedInbox: g, secondaryInboxCounts: h }));
+                return n.createElement(Be.Z, { accessibilityTitle: Ge, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(Ve.Z, { messageRequestPivot: m() }), renderStickyContent: m, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
             }
             const Xe = "dmDrawerInbox";
             function je({ renderHeader: e }) {
@@ -474,10 +474,10 @@
             function Je({ isHeaderHighlighted: e, onDrawerOpen: t, triggerHeaderHighlight: r }) {
                 const a = (0, l.v9)(d.kX) === b.S.EXPANDED;
                 n.useEffect(() => {
-                    a && (0, k.Z)();
+                    a && (0, S.Z)();
                 }, [a]);
-                const i = () => n.createElement(h.Z, { style: Qe.headerRoot }, n.createElement(pe, { isHighlighted: e, onDrawerOpen: t, triggerHighlight: r }));
-                return n.createElement(Ae.nO, { namespace: $e }, n.createElement(n.Fragment, null, !a && i(), a && n.createElement(je, { renderHeader: i })));
+                const i = () => n.createElement(h.Z, { style: Qe.headerRoot }, n.createElement(me, { isHighlighted: e, onDrawerOpen: t, triggerHighlight: r }));
+                return n.createElement(Pe.nO, { namespace: $e }, n.createElement(n.Fragment, null, !a && i(), a && n.createElement(je, { renderHeader: i })));
             }
             const Qe = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
                 et = 3e3,
@@ -490,37 +490,37 @@
                     c = (0, l.v9)(y._h),
                     Z = (0, l.v9)(d.gw),
                     D = (0, l.v9)((e) => d.kX(e)),
-                    S = (0, w.N)(),
-                    [O, k] = n.useState(!1),
+                    O = (0, w.N)(),
+                    [k, S] = n.useState(!1),
                     [T, R] = n.useState(void 0),
-                    M = D === b.S.EXPANDED,
-                    x = () => {
-                        O && (k(!1), clearTimeout(i.current));
+                    H = D === b.S.EXPANDED,
+                    L = () => {
+                        k && (S(!1), clearTimeout(i.current));
                     },
-                    I = (e) => {
+                    M = (e) => {
                         const {
                             nativeEvent: {
                                 layout: { height: t },
                             },
                         } = e;
-                        M || void 0 !== T || R(t);
+                        H || void 0 !== T || R(t);
                     },
-                    L = n.useCallback(() => {
-                        M ||
-                            O ||
+                    x = n.useCallback(() => {
+                        H ||
+                            k ||
                             i.current ||
-                            (k(!0),
+                            (S(!0),
                             (i.current = setTimeout(() => {
-                                k(!1), (i.current = null);
+                                S(!1), (i.current = null);
                             }, et)));
-                    }, [M, O]);
+                    }, [H, k]);
                 n.useEffect(
                     () => () => {
                         clearTimeout(i.current);
                     },
                     [i],
                 );
-                const H = (function (e) {
+                const I = (function (e) {
                         const [t, r] = n.useState(e);
                         if (
                             (n.useEffect(() => {
@@ -541,9 +541,9 @@
                             return !0;
                         e && !t && r(e);
                         return !1;
-                    })(M),
-                    P = n.useRef(),
-                    A = M ? { transform: [{ translateY: 0 }] } : H ? { transition: "none", transform: [{ translateY: `calc(100% - ${P.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
+                    })(H),
+                    A = n.useRef(),
+                    P = H ? { transform: [{ translateY: 0 }] } : I ? { transition: "none", transform: [{ translateY: `calc(100% - ${A.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
                     _ = (function (e) {
                         const [t, r] = n.useState(!1);
                         return (
@@ -568,9 +568,9 @@
                     return !t() && e && !r;
                 })()
                     ? n.createElement(
-                          g.Z.Drawer,
+                          v.Z.Drawer,
                           null,
-                          n.createElement(v.Z, { id: "DMDrawer" }, (e, t) => n.createElement(C.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(p.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, _ && Ne.Z.expandable, !M && T && { height: T, maxHeight: T }, { width: r }, A, m.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), n.createElement(h.Z, { onLayout: T ? void 0 : I, ref: P, style: [M ? Ne.Z.expanded : null, Ne.Z.main] }, Z ? n.createElement(E.Z.Provider, { value: rt }, n.createElement(Pe, { conversationId: Z, history: o, isHeaderHighlighted: O, location: s, onDrawerOpen: x, perspective: c, triggerHeaderHighlight: L, typingNotifier: S })) : n.createElement(E.Z.Provider, { value: tt }, n.createElement(Je, { isHeaderHighlighted: O, onDrawerOpen: x, triggerHeaderHighlight: L }))))))),
+                          n.createElement(g.Z, { id: "DMDrawer" }, (e, t) => n.createElement(C.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, _ && Ne.Z.expandable, !H && T && { height: T, maxHeight: T }, { width: r }, P, p.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), n.createElement(h.Z, { onLayout: T ? void 0 : M, ref: A, style: [H ? Ne.Z.expanded : null, Ne.Z.main] }, Z ? n.createElement(E.Z.Provider, { value: rt }, n.createElement(Ae, { conversationId: Z, history: o, isHeaderHighlighted: k, location: s, onDrawerOpen: L, perspective: c, triggerHeaderHighlight: x, typingNotifier: O })) : n.createElement(E.Z.Provider, { value: tt }, n.createElement(Je, { isHeaderHighlighted: k, onDrawerOpen: L, triggerHeaderHighlight: x }))))))),
                       )
                     : null;
             }
@@ -579,15 +579,15 @@
                     a = (0, l.I0)(),
                     [i, u] = n.useState(!1),
                     h = (0, l.v9)(c.selectConversations),
-                    g = !(0, o.Z)(h),
-                    v = n.useCallback(() => {
+                    v = !(0, o.Z)(h),
+                    g = n.useCallback(() => {
                         e() || i || (a(d.VP()), a(c.fetchInboxIfNeeded()).catch(r({})), u(!0));
                     }, [r, a, i, e]);
                 return (
                     n.useEffect(() => {
-                        v();
-                    }, [v]),
-                    n.createElement(nt, { hasConversations: g, isHideDMDrawerPath: e, width: t })
+                        g();
+                    }, [g]),
+                    n.createElement(nt, { hasConversations: v, isHideDMDrawerPath: e, width: t })
                 );
             }
             function it({ width: e }) {
@@ -608,7 +608,7 @@
             const s = i.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         879113: (e, t, r) => {
-            r.d(t, { Z: () => g });
+            r.d(t, { Z: () => v });
             var n = r(202784),
                 a = r(476984),
                 i = r.n(a),
@@ -619,29 +619,29 @@
                 d = "loaded",
                 u = "loading",
                 h = "none";
-            class g extends n.Component {
+            class v extends n.Component {
                 shouldComponentUpdate(e) {
                     const t = e.fetchStatus === d,
                         r = this.props.fetchStatus !== e.fetchStatus;
                     return !(!t && !r) || !i()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: a, icon: i, loadingMessage: o, onRequestRetry: d, render: g, renderFailure: v, retryMessage: p, retryable: m } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: a, icon: i, loadingMessage: o, onRequestRetry: d, render: v, renderFailure: g, retryMessage: m, retryable: p } = this.props;
                     switch (a) {
                         case c:
-                            return m ? n.createElement(s.Z, { icon: i, onRequestRetry: d, retryMessage: p }) : r ? n.createElement(l.m, { failureMessage: r }) : v();
+                            return p ? n.createElement(s.Z, { icon: i, onRequestRetry: d, retryMessage: m }) : r ? n.createElement(l.m, { failureMessage: r }) : g();
                         case u:
                             return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: o });
                         case h:
                             return null;
                         default:
-                            return g();
+                            return v();
                     }
                 }
             }
-            g.defaultProps = { renderFailure: o.Z, retryable: !0 };
+            v.defaultProps = { renderFailure: o.Z, retryable: !0 };
         },
-        449404: (e, t, r) => {
+        215380: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -649,12 +649,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 4c-1.66 0-3 1.34-3 3v8c0 .55.45 1 1 1s1-.45 1-1V8h2v7c0 1.66-1.34 3-3 3s-3-1.34-3-3V7c0-2.76 2.24-5 5-5s5 2.24 5 5v8c0 3.87-3.13 7-7 7s-7-3.13-7-7V8h2v7c0 2.76 2.24 5 5 5s5-2.24 5-5V7c0-1.66-1.34-3-3-3z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M18.5 2h-13A2.5 2.5 0 003 4.5v15A2.5 2.5 0 005.5 22h13a2.5 2.5 0 002.5-2.5v-15A2.5 2.5 0 0018.5 2zm.5 17.5c0 .28-.22.5-.5.5h-13c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h13c.28 0 .5.22.5.5v15zM9 5h6v2H9V5zm3 4.555a2.092 2.092 0 11-.001 4.185A2.092 2.092 0 0112 9.555zM16.141 18H7.859c.237-.763.586-1.431 1.074-1.949 1.036-1.105 2.31-1.277 3.067-1.277s2.031.172 3.067 1.277c.489.518.837 1.186 1.074 1.949z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        394123: (e, t, r) => {
+        818088: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -662,12 +662,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        833458: (e, t, r) => {
+        324922: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -675,7 +675,7 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25s3.69 8.25 8.25 8.25 8.25-3.69 8.25-8.25S16.56 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12zM16.4 9.28l-5.21 7.15-4.1-3.27 1.25-1.57 2.47 1.98 3.97-5.47 1.62 1.18z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5V12h-2v-1.537l-8 3.635-8-3.635V18.5c0 .276.224.5.5.5H13v2H4.498c-1.381 0-2.5-1.119-2.5-2.5v-13zm2 2.766l8 3.635 8-3.635V5.5c0-.276-.224-.5-.5-.5h-15c-.276 0-.5.224-.5.5v2.766zM19 18v-3h2v3h3v2h-3v3h-2v-3h-3v-2h3z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -693,7 +693,7 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        609980: (e, t, r) => {
+        256061: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -701,12 +701,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.5 7c.828 0 1.5 1.119 1.5 2.5S10.328 12 9.5 12 8 10.881 8 9.5 8.672 7 9.5 7zm5 0c.828 0 1.5 1.119 1.5 2.5s-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7zM12 22.25C6.348 22.25 1.75 17.652 1.75 12S6.348 1.75 12 1.75 22.25 6.348 22.25 12 17.652 22.25 12 22.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25S16.549 3.75 12 3.75zM8.947 17.322l-1.896-.638C7.101 16.534 8.322 13 12 13s4.898 3.533 4.949 3.684l-1.897.633c-.031-.09-.828-2.316-3.051-2.316s-3.021 2.227-3.053 2.322z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5V13h-2v-2.537l-8 3.635-8-3.635V18.5c0 .276.224.5.5.5H11v2H4.498c-1.381 0-2.5-1.119-2.5-2.5v-13zm2 2.766l8 3.635 8-3.635V5.5c0-.276-.224-.5-.5-.5h-15c-.276 0-.5.224-.5.5v2.766zM19.429 16l-2 2H23v2h-5.571l2 2-1.414 1.414L13.601 19l4.414-4.414L19.429 16z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        856661: (e, t, r) => {
+        648539: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -714,33 +714,7 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        902673: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                a = r(890601),
-                i = r(783427),
-                o = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M8 9h2v2H8z" }), n.createElement("path", { d: "M19.498 3h-15c-1.381 0-2.5 1.12-2.5 2.5v13c0 1.38 1.119 2.5 2.5 2.5h15c1.381 0 2.5-1.12 2.5-2.5v-13c0-1.38-1.119-2.5-2.5-2.5zM6 7h6v6H6V7zm11.998 10h-12v-2h12v2zM18 13h-4v-2h4v2zm0-4h-4V7h4v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        74514: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                a = r(890601),
-                i = r(783427),
-                o = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -758,32 +732,6 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        310700: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                a = r(890601),
-                i = r(783427),
-                o = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.04 1.54L17.5 5.09c-.04-.02-.08-.03-.13-.04L14.3 3H9.7l-3 2H5C3.62 5 2.5 6.12 2.5 7.5v11c0 .46.12.88.34 1.25l-1.3 1.29 1.42 1.42 19.5-19.5-1.42-1.42zM13.7 5l2.33 1.56-2 1.99C13.44 8.2 12.74 8 12 8c-2.21 0-4 1.79-4 4 0 .74.2 1.44.55 2.03L4.5 18.09V7.5c0-.28.22-.5.5-.5h2.3l3-2h3.4zM12 10c.18 0 .35.02.52.07l-2.45 2.45c-.05-.17-.07-.34-.07-.52 0-1.1.9-2 2-2zm7 11H7.24l2-2H19c.28 0 .5-.22.5-.5V9h2v9.5c0 1.38-1.12 2.5-2.5 2.5z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        473026: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                a = r(890601),
-                i = r(783427),
-                o = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
         963879: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
@@ -793,6 +741,45 @@
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
                 return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17.896 11.553L20.12 16H13v5l-1 2-1-2v-3.752L14.248 14h2.636l-.776-1.553 1.789-.895zm3.813-7.843l-17.999 18-.707-.707-.707-.707L6.592 16H3.88L7 9.76V4.5C7 3.121 8.122 2 9.5 2h5C15.878 2 17 3.121 17 4.5v1.092l3.296-3.296.707.707.707.707zm-6.71 3.882V4.5c0-.275-.224-.5-.5-.5h-5c-.276 0-.5.225-.5.5v5.732L7.115 14h1.476l6.408-6.408z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        142496: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                a = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        226597: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                a = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        392032: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                a = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23.259 10.5L12 .648v5.581C5.269 7.328 1.995 12.498 2 22.001h2c0-1.914.705-3.537 2.095-4.825 1.5-1.391 3.739-2.259 5.905-2.331v5.507L23.259 10.5z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -823,4 +810,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.d026d8aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.3182b17a.js.map

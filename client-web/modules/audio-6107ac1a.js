@@ -13,58 +13,58 @@
         351794: (e) => {
             e.exports = { queryId: "NTq79TuSz6fHj8lQaferJw", operationName: "AudioSpaceSearch", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        176340: (e, a, o) => {
+        176340: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => E });
-            o(571372);
-            var t = o(163889),
-                r = o(703710),
-                i = (o(136728), o(614983)),
-                n = o.n(i),
-                s = o(392237),
-                d = o(870358),
-                l = o(557281),
-                c = o(952183),
-                _ = o(877905),
-                u = o(44527);
+            t.d(a, { Z: () => E });
+            t(571372);
+            var r = t(163889),
+                o = t(703710),
+                i = (t(136728), t(614983)),
+                n = t.n(i),
+                s = t(392237),
+                d = t(870358),
+                l = t(557281),
+                c = t(952183),
+                _ = t(877905),
+                u = t(44527);
             function h(e) {
                 n()(e, "audioSpace is required");
-                const { metadata: a, participants: o, sharings: t, ...r } = e;
+                const { metadata: a, participants: t, sharings: r, ...o } = e;
                 n()(a, "metadata is required");
                 const { rest_id: i, state: d } = a;
                 n()(i, "rest_id is required"), n()(d, "state is required");
                 const u = (function (e) {
                         if (e && e.result && "Community" === e.result.__typename) {
-                            const { __typename: a, rest_id: o, ...t } = e.result,
-                                { name: r } = t,
+                            const { __typename: a, rest_id: t, ...r } = e.result,
+                                { name: o } = r,
                                 i = s.default.theme.colors.gray500,
-                                n = (0, c.Wb)(t),
-                                d = (0, c.TB)(t),
+                                n = (0, c.Wb)(r),
+                                d = (0, c.TB)(r),
                                 l = n || d,
                                 _ = l?.url;
-                            return { rest_id: o, color: i, name: r, image_url: _ };
+                            return { rest_id: t, color: i, name: o, image_url: _ };
                         }
                     })(a.community_results),
                     h = (function (e, a) {
-                        const o = e?.total,
-                            t = m(e?.admins, a),
-                            r = m(e?.speakers, a),
+                        const t = e?.total,
+                            r = m(e?.admins, a),
+                            o = m(e?.speakers, a),
                             i = m(e?.listeners, a);
-                        return { total: o, admins: t, speakers: r, listeners: i };
-                    })(o, u),
+                        return { total: t, admins: r, speakers: o, listeners: i };
+                    })(t, u),
                     b = (function (e) {
                         if (!e) return [];
                         const a = e.items
                             .map((e) => {
                                 const a = p(e.user_results?.result),
-                                    o = e.shared_item;
-                                if ("AudioSpaceSharedTweet" === o.__typename) {
-                                    if ("Tweet" === o.tweet_results?.result?.__typename) {
-                                        const { __typename: t, ...r } = o.tweet_results?.result || {},
-                                            i = (0, _.y9)(r);
+                                    t = e.shared_item;
+                                if ("AudioSpaceSharedTweet" === t.__typename) {
+                                    if ("Tweet" === t.tweet_results?.result?.__typename) {
+                                        const { __typename: r, ...o } = t.tweet_results?.result || {},
+                                            i = (0, _.y9)(o);
                                         if (i) {
-                                            const { cards: o, publishedArticles: t, tweets: r, users: n } = i.entities,
-                                                s = (0, l.F)(r, o, n, t, i.result);
+                                            const { cards: t, publishedArticles: r, tweets: o, users: n } = i.entities,
+                                                s = (0, l.F)(o, t, n, r, i.result);
                                             if (s) return { id: e.sharing_id, user: a, tweet: s };
                                         }
                                     }
@@ -74,144 +74,141 @@
                             })
                             .filter(Boolean);
                         return a;
-                    })(t),
+                    })(r),
                     w = p(a.creator_results?.result),
-                    D = w?.screen_name,
-                    f = w?.profile_image_extensions_media_color?.palette,
+                    f = w?.screen_name,
+                    D = w?.profile_image_extensions_media_color?.palette,
                     { cohosts: y, host: g } = (function (e, a) {
-                        let o;
-                        const t = [];
+                        let t;
+                        const r = [];
                         a
                             ? e.admins.forEach((e) => {
-                                  e.twitter_screen_name === a ? (o = e) : t.push(e);
+                                  e.twitter_screen_name === a ? (t = e) : r.push(e);
                               })
-                            : (o = e.admins[0]);
-                        return { host: o, cohosts: t };
-                    })(h, D);
-                return n()(g, "host is required"), { ...r, ...a, rest_id: i, state: d, host: g, hostPalette: f, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
+                            : (t = e.admins[0]);
+                        return { host: t, cohosts: r };
+                    })(h, f);
+                return n()(g, "host is required"), { ...o, ...a, rest_id: i, state: d, host: g, hostPalette: D, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
             }
             function m(e, a) {
                 return e
-                    ? e.map(({ user_results: e, ...o }) => {
-                          const t = { ...o, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
+                    ? e.map(({ user_results: e, ...t }) => {
+                          const r = { ...t, user_id: e?.rest_id, community: void 0, is_blue_verified: void 0, verified_type: void 0, highlightedLabel: void 0 };
                           if (a) {
                               const e = a.color,
-                                  r = Boolean(o.community_role && o.community_role !== d.WW.NonMember);
-                              t.community = { color: e, isMember: r };
+                                  o = Boolean(t.community_role && t.community_role !== d.WW.NonMember);
+                              r.community = { color: e, isMember: o };
                           }
-                          return e?.result && "User" === e.result.__typename && ((t.is_blue_verified = e.result.is_blue_verified), (t.verified_type = e.result.verification?.verified_type), (t.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), t;
+                          return e?.result && "User" === e.result.__typename && ((r.is_blue_verified = e.result.is_blue_verified), (r.verified_type = e.result.verification?.verified_type), (r.highlightedLabel = (0, u.H)(e.result.identity_profile_labels_highlighted_label?.label))), r;
                       })
                     : [];
             }
             function p(e) {
                 if (e && "User" === e.__typename) {
-                    const { __typename: a, ...o } = e,
-                        t = (0, _.Hy)(o);
-                    if (t) return t.entities.users[t.result];
+                    const { __typename: a, ...t } = e,
+                        r = (0, _.Hy)(t);
+                    if (r) return r.entities.users[r.result];
                 }
                 return null;
             }
-            var b = o(537628),
-                w = o.n(b),
-                D = o(73819),
-                f = o.n(D),
-                y = o(154664),
-                g = o.n(y),
-                M = o(351794),
-                v = o.n(M),
-                A = o(396355),
-                T = o.n(A),
-                k = o(587719),
-                I = o.n(k),
-                P = o(336271),
-                S = o.n(P),
-                N = o(389073),
-                x = o(615656);
-            const E = ({ apiClient: e, featureSwitches: a, jotaiStore: t }) => ({
+            var b = t(537628),
+                w = t.n(b),
+                f = t(73819),
+                D = t.n(f),
+                y = t(154664),
+                g = t.n(y),
+                v = t(351794),
+                M = t.n(v),
+                A = t(396355),
+                T = t.n(A),
+                k = t(587719),
+                I = t.n(k),
+                P = t(336271),
+                S = t.n(P),
+                x = t(389073),
+                N = t(615656);
+            const E = ({ apiClient: e, featureSwitches: a, jotaiStore: r }) => ({
                     spacebar: () => e.getUnversioned("/fleets/v1/fleetline", { only_spaces: !0 }, {}),
                     byId(i, n = {}) {
                         const s = "byId",
                             d = n.isMetatagsQuery || !1;
                         return e
                             .graphQL(
-                                f(),
-                                { id: i, isMetatagsQuery: d, ...(0, r.d)(a), withReplays: !0, withListeners: !0 },
+                                D(),
+                                { id: i, isMetatagsQuery: d, ...(0, o.d)(a), withReplays: !0, withListeners: !0 },
                                 L(
                                     s,
                                     i,
                                     (e, a) => (
                                         e.forEach((e) => {
                                             const { code: a } = e;
-                                            a === x.ZP.GenericAccessDenied &&
+                                            a === N.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    o.e("icons.8"),
-                                                    o.e("icons.13"),
-                                                    o.e("icons.21"),
-                                                    o.e("icons.20"),
-                                                    o.e("icons.14"),
-                                                    o.e("icons.1"),
-                                                    o.e("icons.3"),
-                                                    o.e("icons.24"),
-                                                    o.e("icons.11"),
-                                                    o.e("modules.common-e907d115"),
-                                                    o.e("modules.common-e019dbda"),
-                                                    o.e("icons.28"),
-                                                    o.e("icons.10"),
-                                                    o.e("icons.17"),
-                                                    o.e("icons.4"),
-                                                    o.e("icons.18"),
-                                                    o.e("modules.audio-6107ac1a"),
-                                                    o.e("modules.audio-b953418a"),
-                                                    o.e("modules.audio-7c51e6a7"),
-                                                    o.e("modules.audio-04db59e9"),
-                                                    o.e("modules.audio-76583d6c"),
-                                                    o.e("modules.audio-b7a8a5fb"),
-                                                    o.e("modules.audio-51f6e793"),
-                                                    o.e("modules.audio-e019dbda"),
-                                                    o.e("modules.audio-262c94d4"),
-                                                    o.e("modules.audio-c6fe4ea4"),
-                                                    o.e("icons.12"),
-                                                    o.e("icons.29"),
-                                                    o.e("icons.16"),
-                                                    o.e("icons.22"),
-                                                    o.e("icons.7"),
-                                                    o.e("icons.26"),
-                                                    o.e("icons.0"),
-                                                    o.e("icons.19"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                                                    o.e("loader.AudioDock"),
+                                                    t.e("icons.10"),
+                                                    t.e("icons.21"),
+                                                    t.e("icons.16"),
+                                                    t.e("icons.1"),
+                                                    t.e("icons.19"),
+                                                    t.e("icons.0"),
+                                                    t.e("icons.23"),
+                                                    t.e("icons.8"),
+                                                    t.e("icons.2"),
+                                                    t.e("modules.common-e907d115"),
+                                                    t.e("modules.common-e019dbda"),
+                                                    t.e("icons.7"),
+                                                    t.e("icons.9"),
+                                                    t.e("icons.15"),
+                                                    t.e("icons.24"),
+                                                    t.e("icons.28"),
+                                                    t.e("icons.3"),
+                                                    t.e("modules.audio-6107ac1a"),
+                                                    t.e("modules.audio-b953418a"),
+                                                    t.e("modules.audio-7c51e6a7"),
+                                                    t.e("modules.audio-04db59e9"),
+                                                    t.e("modules.audio-76583d6c"),
+                                                    t.e("modules.audio-b7a8a5fb"),
+                                                    t.e("modules.audio-51f6e793"),
+                                                    t.e("modules.audio-e019dbda"),
+                                                    t.e("modules.audio-262c94d4"),
+                                                    t.e("modules.audio-c6fe4ea4"),
+                                                    t.e("icons.26"),
+                                                    t.e("icons.4"),
+                                                    t.e("icons.13"),
+                                                    t.e("icons.18"),
+                                                    t.e("icons.25"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                                                    t.e("loader.AudioDock"),
                                                 ])
-                                                    .then(o.bind(o, 106006))
+                                                    .then(t.bind(t, 106006))
                                                     .then(({ removedFromSpaceAtom: e }) => {
-                                                        t?.set(e);
+                                                        r?.set(e);
                                                     });
                                         }),
                                         !0
@@ -223,7 +220,7 @@
                                     !(function (e) {
                                         if (!e) return !1;
                                         const [a] = e.errors || [];
-                                        return a?.code === N.Z.DuplicateRequest;
+                                        return a?.code === x.Z.DuplicateRequest;
                                     })(e)
                                 )
                                     throw e;
@@ -238,19 +235,19 @@
                             });
                     },
                     subscribeToScheduledSpaceById(a) {
-                        const o = "subscribeToScheduledSpaceById";
-                        return e.graphQL(I(), { id: a }, L(o, a)).catch(C(o)).then(z(o));
+                        const t = "subscribeToScheduledSpaceById";
+                        return e.graphQL(I(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
                     },
                     unsubscribeFromScheduledSpaceById(a) {
-                        const o = "unsubscribeFromScheduledSpaceById";
-                        return e.graphQL(S(), { id: a }, L(o, a)).catch(C(o)).then(z(o));
+                        const t = "unsubscribeFromScheduledSpaceById";
+                        return e.graphQL(S(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
                     },
                     fetchTopics: () => e.graphQL(T(), {}),
-                    search(a, o) {
-                        const t = "spacesSearch";
+                    search(a, t) {
+                        const r = "spacesSearch";
                         return e
-                            .graphQL(v(), { query: a, filter: o }, L(t, a))
-                            .catch(C(t))
+                            .graphQL(M(), { query: a, filter: t }, L(r, a))
+                            .catch(C(r))
                             .then((e) =>
                                 e?.search_by_raw_query?.audio_spaces_grouped_by_section
                                     ? (function (e) {
@@ -258,13 +255,13 @@
                                           const a = { sections: [] };
                                           return (
                                               e.sections.forEach((e) => {
-                                                  const { destination: o, name: t } = e;
+                                                  const { destination: t, name: r } = e;
                                                   if (Array.isArray(e.items)) {
-                                                      const r = [];
+                                                      const o = [];
                                                       e.items.forEach((e) => {
-                                                          e?.space?.rest_id && r.push(e.space.rest_id);
+                                                          e?.space?.rest_id && o.push(e.space.rest_id);
                                                       }),
-                                                          t && o && a.sections.push({ name: t, destination: o, items: r });
+                                                          r && t && a.sections.push({ name: r, destination: t, items: o });
                                                   }
                                               }),
                                               a
@@ -273,8 +270,8 @@
                                     : { sections: [] },
                             );
                     },
-                    addSharing: (a, o) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: o } } }, L("addSharing", a)),
-                    deleteSharing: (a, o) => e.graphQL(g(), { audio_space_id: a, sharing_id: o }, L("deleteSharing", a)),
+                    addSharing: (a, t) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: t } } }, L("addSharing", a)),
+                    deleteSharing: (a, t) => e.graphQL(g(), { audio_space_id: a, sharing_id: t }, L("deleteSharing", a)),
                 }),
                 q = (e, a) => `GQL: AudioSpaces.${e} [${a}]`;
             function C(e) {
@@ -289,12 +286,12 @@
                 };
             }
             const R = (e, a) => !1;
-            function L(e, a, o = R) {
-                return function (r, i) {
+            function L(e, a, t = R) {
+                return function (o, i) {
                     let n = !1;
-                    if (r.length) {
-                        const [o] = r,
-                            { code: i, message: s, path: d } = o;
+                    if (o.length) {
+                        const [t] = o,
+                            { code: i, message: s, path: d } = t;
                         let l;
                         const c = V.find(({ matches: e }) => e(s));
                         if (c?.message) l = q(e, c.message);
@@ -302,9 +299,9 @@
                             const a = d.map(Z).join(".");
                             l = q(e, a);
                         } else l = q(e, s || "isFatalError");
-                        (0, t.ZP)(l, { extra: { code: i, id: a, message: s, path: d } }), (n = !0);
+                        (0, r.ZP)(l, { extra: { code: i, id: a, message: s, path: d } }), (n = !0);
                     }
-                    return !o(r, i) && n;
+                    return !t(o, i) && n;
                 };
             }
             function Z(e) {
@@ -312,47 +309,47 @@
             }
             const V = ["Overcapacity: Unspecified", "Timeout: Unspecified"].map((e) => ({ matches: (a) => a && e.toLowerCase() === a.toLowerCase(), message: e }));
         },
-        787210: (e, a, o) => {
+        787210: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => i });
-            var t = o(716406),
-                r = o(624479);
+            t.d(a, { Z: () => i });
+            var r = t(716406),
+                o = t(624479);
             const i = ({ apiClient: e, featureSwitches: a }) => ({
-                fetchPresence: (a, o = {}) => {
+                fetchPresence: (a, t = {}) => {
                     const { only_spaces: i, userIds: n } = a,
                         s = { user_ids: n.join(","), only_spaces: i };
-                    return e.getUnversioned("/fleets/v1/avatar_content", s, o).then((e) => {
-                        const { users: a, refresh_delay_secs: o = r.vj } = e,
-                            i = 0 === o ? r.vj : o,
+                    return e.getUnversioned("/fleets/v1/avatar_content", s, t).then((e) => {
+                        const { users: a, refresh_delay_secs: t = o.vj } = e,
+                            i = 0 === t ? o.vj : t,
                             s = Date.now() + 1e3 * i,
                             d = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
-                            l = a && (0, t.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
+                            l = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
                         return (l || d) && { entities: { userPresence: { ...d, ...l } } };
                     });
                 },
             });
         },
-        910626: (e, a, o) => {
+        910626: (e, a, t) => {
             "use strict";
-            o.d(a, { Y: () => t });
-            const t = Object.freeze({ card: "card", audiospace_ring: "audiospace_ring", spacebar: "spacebar" });
+            t.d(a, { Y: () => r });
+            const r = Object.freeze({ card: "card", audiospace_ring: "audiospace_ring", spacebar: "spacebar" });
         },
-        161104: (e, a, o) => {
+        161104: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => t });
-            const t = class {
+            t.d(a, { Z: () => r });
+            const r = class {
                 initialize() {
                     (this.audioCtx = new (window.AudioContext || window.webkitAudioContext)()), (this.oscillatorNode = this.audioCtx.createOscillator()), (this.gainNode = this.audioCtx.createGain()), this.oscillatorNode.connect(this.gainNode), this.oscillatorNode.start(0), this.gainNode.connect(this.audioCtx.destination), (this.gainNode.gain.value = 0), (this.initialized = !0);
                 }
-                mapDataPointsToFrequencies(e, a = 440, o = 1760) {
-                    let t = 1 / 0,
-                        r = -1 / 0;
+                mapDataPointsToFrequencies(e, a = 440, t = 1760) {
+                    let r = 1 / 0,
+                        o = -1 / 0;
                     e.forEach((e) => {
-                        (t = Math.min(e, t)), (r = Math.max(e, r));
+                        (r = Math.min(e, r)), (o = Math.max(e, o));
                     });
-                    const i = o - a,
-                        n = r - t;
-                    return 0 === n ? e.map((e) => (a + o) / 2) : e.map((e) => ((e - t) / n) * i + a);
+                    const i = t - a,
+                        n = o - r;
+                    return 0 === n ? e.map((e) => (a + t) / 2) : e.map((e) => ((e - r) / n) * i + a);
                 }
                 playTone(e) {
                     this.initialized || this.initialize();
@@ -361,127 +358,141 @@
                 }
                 playLinearConnectedDataPointsAsTone(e, a) {
                     this.initialized || this.initialize();
-                    const o = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
-                        t = this.audioCtx.currentTime,
-                        r = a / (o.length - 1);
-                    this.oscillatorNode.frequency.setValueAtTime(o[0], t), this.gainNode.gain.setValueAtTime(0, t), this.gainNode.gain.linearRampToValueAtTime(1, t + 0.1);
-                    for (let e = 0; e < o.length; e++) this.oscillatorNode.frequency.linearRampToValueAtTime(o[e], t + e * r);
-                    this.gainNode.gain.setValueAtTime(1, t + (a - 0.1)), this.gainNode.gain.exponentialRampToValueAtTime(0.001, t + (a - 0.001)), this.gainNode.gain.setValueAtTime(0, t + a);
-                }
-                playDisconnectedDataPointsAsTone(e, a, o) {
-                    this.initialized || this.initialize();
                     const t = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
-                        r = this.audioCtx.currentTime;
-                    this.gainNode.gain.setValueAtTime(0, r);
-                    for (let e = 0; e < t.length; e++) {
-                        const i = a * e + o * e;
-                        this.playFrequencyAsTone(t[e], a, o, r, i);
+                        r = this.audioCtx.currentTime,
+                        o = a / (t.length - 1);
+                    this.oscillatorNode.frequency.setValueAtTime(t[0], r), this.gainNode.gain.setValueAtTime(0, r), this.gainNode.gain.linearRampToValueAtTime(1, r + 0.1);
+                    for (let e = 0; e < t.length; e++) this.oscillatorNode.frequency.linearRampToValueAtTime(t[e], r + e * o);
+                    this.gainNode.gain.setValueAtTime(1, r + (a - 0.1)), this.gainNode.gain.exponentialRampToValueAtTime(0.001, r + (a - 0.001)), this.gainNode.gain.setValueAtTime(0, r + a);
+                }
+                playDisconnectedDataPointsAsTone(e, a, t) {
+                    this.initialized || this.initialize();
+                    const r = this.mapDataPointsToFrequencies(e.map((e) => e.value)),
+                        o = this.audioCtx.currentTime;
+                    this.gainNode.gain.setValueAtTime(0, o);
+                    for (let e = 0; e < r.length; e++) {
+                        const i = a * e + t * e;
+                        this.playFrequencyAsTone(r[e], a, t, o, i);
                     }
                 }
-                playFrequencyAsTone(e, a, o, t, r = 0) {
+                playFrequencyAsTone(e, a, t, r, o = 0) {
                     this.initialized || this.initialize();
-                    const i = (t ?? this.audioCtx.currentTime) + r;
+                    const i = (r ?? this.audioCtx.currentTime) + o;
                     this.gainNode.gain.setValueAtTime(0, i), this.gainNode.gain.linearRampToValueAtTime(1, i + 0.1), this.oscillatorNode.frequency.setValueAtTime(e, i), this.gainNode.gain.setValueAtTime(1, i + a - 0.1), this.gainNode.gain.exponentialRampToValueAtTime(0.001, i + a - 0.001), this.gainNode.gain.setValueAtTime(0, i + a);
                 }
             };
         },
-        675498: (e, a, o) => {
+        675498: (e, a, t) => {
             "use strict";
-            o.d(a, { W: () => i, x: () => n });
-            var t = o(85375),
-                r = o(94909);
+            t.d(a, { W: () => i, x: () => n });
+            var r = t(85375),
+                o = t(94909);
             const i = (e) => !0,
-                n = ({ cardId: e, cardType: a, converterOptions: o, data: i }) => ({ cardState: t.uW.DEFAULT, layout: { [t.uW.DEFAULT]: { size: "large" }, [t.uW.CONDENSED]: { size: "large" }, [t.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [t.uW.DEFAULT]: [t.Fw.SPACE], [t.uW.STATIC]: [t.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [t.Fw.SPACE]: { type: "space", data: { id: (0, r.SI)(i, "string_value", "id"), clip_metadata: (0, r.SI)(i, "string_value", "clip_metadata") } } } } });
+                n = ({ cardId: e, cardType: a, converterOptions: t, data: i }) => ({ cardState: r.uW.DEFAULT, layout: { [r.uW.DEFAULT]: { size: "large" }, [r.uW.CONDENSED]: { size: "large" }, [r.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [r.uW.DEFAULT]: [r.Fw.SPACE], [r.uW.STATIC]: [r.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [r.Fw.SPACE]: { type: "space", data: { id: (0, o.SI)(i, "string_value", "id"), clip_metadata: (0, o.SI)(i, "string_value", "clip_metadata") } } } } });
         },
-        213836: (e, a, o) => {
+        213836: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => d });
-            var t = o(202784),
-                r = o(325686),
-                i = o(392237),
-                n = o(707816),
-                s = o(794294);
-            function d({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: o, size: d, translate: c }) {
-                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: o }], opacity: a, ...(0, n.M8)(d) };
-                return t.createElement(r.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
+            t.d(a, { Z: () => d });
+            var r = t(202784),
+                o = t(325686),
+                i = t(392237),
+                n = t(707816),
+                s = t(794294);
+            function d({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: t, size: d, translate: c }) {
+                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: t }], opacity: a, ...(0, n.M8)(d) };
+                return r.createElement(o.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
             }
             const l = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
         },
-        230966: (e, a, o) => {
+        230966: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => l });
-            var t = o(202784),
-                r = o(7632),
-                i = o(707816),
-                n = o(213836),
-                s = o(840940),
-                d = o(822682);
+            t.d(a, { Z: () => l });
+            var r = t(202784),
+                o = t(7632),
+                i = t(707816),
+                n = t(213836),
+                s = t(840940),
+                d = t(822682);
             function l(e) {
                 const { size: a } = e,
-                    o = a * c,
+                    t = a * c,
                     i = e.paused ? 0 : e.audioLevel,
-                    l = (0, r.X)(e.participantIndex);
-                return t.createElement(t.Fragment, null, t.createElement(s.Z, { color: l }), t.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), t.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), t.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), t.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: o }));
+                    l = (0, o.X)(e.participantIndex);
+                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: l }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: t, translate: h(i, a) }), r.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: t }));
             }
             const c = 0.692,
                 _ = (e) => 0.95 + (0.2 + (0, i.TN)(0.5)) * e,
                 u = (e) => 1 + 0.05 * e,
                 h = (e, a) => ({ x: (0, i.EO)() * e * (0, i.TN)(0.05 * a), y: (0, i.EO)() * e * (0, i.TN)(0.05 * a) });
         },
-        272594: (e, a, o) => {
+        272594: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => l });
-            var t = o(202784),
-                r = o(822240),
-                i = o(707816),
-                n = o(213836);
-            const s = (0, r.Z)(0, 20),
+            t.d(a, { Z: () => l });
+            var r = t(202784),
+                o = t(822240),
+                i = t(707816),
+                n = t(213836);
+            const s = (0, o.Z)(0, 20),
                 d = 0.05;
             function l(e) {
-                const { color: a, size: o } = e,
-                    r = t.useRef({ scales: s.map(() => u(0)) }),
+                const { color: a, size: t } = e,
+                    o = r.useRef({ scales: s.map(() => u(0)) }),
                     l = e.paused ? 0 : e.audioLevel,
                     _ = Math.floor((0, i.TN)(5, 2));
                 return (
-                    r.current.scales.forEach((e, a) => {
+                    o.current.scales.forEach((e, a) => {
                         if (a % _ != 0) return e;
-                        r.current.scales[a] = u(l);
+                        o.current.scales[a] = u(l);
                     }),
-                    t.createElement(
-                        t.Fragment,
+                    r.createElement(
+                        r.Fragment,
                         null,
-                        s.map((e) => t.createElement(n.Z, { color: a, key: e, opacity: d, scale: r.current.scales[e], size: o, translate: c })),
+                        s.map((e) => r.createElement(n.Z, { color: a, key: e, opacity: d, scale: o.current.scales[e], size: t, translate: c })),
                     )
                 );
             }
             const c = { x: 0, y: 0 },
                 _ = { circleMinimumScale: 0.05, circleMaximumScale: 0.5, circlePositionOffset: 10, circleRandomNoise: 0.2, circleScaleRandomProportion: 0.1 };
             function u(e, a = _) {
-                const o = (e + (0, i.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
-                    t = (0, i.TN)(1) * a.circleScaleRandomProportion + o * (1 - a.circleScaleRandomProportion);
-                return 1 + a.circleMinimumScale + t * (a.circleMaximumScale - a.circleMinimumScale);
+                const t = (e + (0, i.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
+                    r = (0, i.TN)(1) * a.circleScaleRandomProportion + t * (1 - a.circleScaleRandomProportion);
+                return 1 + a.circleMinimumScale + r * (a.circleMaximumScale - a.circleMinimumScale);
             }
         },
-        409600: (e, a, o) => {
+        503195: (e, a, t) => {
             "use strict";
-            o.r(a), o.d(a, { default: () => d });
-            var t = o(202784),
-                r = o(890601),
-                i = o(783427),
-                n = o(347101);
+            t.r(a), t.d(a, { default: () => d });
+            var r = t(202784),
+                o = t(890601),
+                i = t(783427),
+                n = t(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "#0f141a", strokeWidth: "2" })) }, { writingDirection: a });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const d = s;
         },
-        447486: (e, a, o) => {
+        409600: (e, a, t) => {
             "use strict";
-            o.d(a, { Z: () => n });
-            var t = o(22525),
-                r = o(789403),
-                i = o(123751);
+            t.r(a), t.d(a, { default: () => d });
+            var r = t(202784),
+                o = t(890601),
+                i = t(783427),
+                n = t(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "#0f141a", strokeWidth: "2" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const d = s;
+        },
+        447486: (e, a, t) => {
+            "use strict";
+            t.d(a, { Z: () => n });
+            var r = t(22525),
+                o = t(789403),
+                i = t(123751);
             class n {
                 constructor(e) {
                     this.httpClient = e;
@@ -490,21 +501,21 @@
                     return this.httpClient
                         ? ((e, a) => {
                               if (!s(a)) return Promise.resolve(a);
-                              const o = (0, t.Uf)(a, 0),
-                                  r = ((e) => {
+                              const t = (0, r.Uf)(a, 0),
+                                  o = ((e) => {
                                       const a = e.id,
-                                          o = e.mediaKey,
-                                          t = e.acquisitionParams?.clip_id,
-                                          r = { broadcastId: a, contentId: o, contentType: "broadcast", displayType: "content", expandedUrl: `https://twitter.com/i/spaces/${a}`, playbackType: "application/x-mpegURL", isLive: e.isLive ?? !0, shouldLoop: !1, unavailableInPeriscope: !0 };
-                                      return t && ((r.isLive = !1), (r.expandedUrl = `https://twitter.com/i/spaces/${a}?clipID=${t}`), (r.shouldLoop = !0)), r;
+                                          t = e.mediaKey,
+                                          r = e.acquisitionParams?.clip_id,
+                                          o = { broadcastId: a, contentId: t, contentType: "broadcast", displayType: "content", expandedUrl: `https://twitter.com/i/spaces/${a}`, playbackType: "application/x-mpegURL", isLive: e.isLive ?? !0, shouldLoop: !1, unavailableInPeriscope: !0 };
+                                      return r && ((o.isLive = !1), (o.expandedUrl = `https://twitter.com/i/spaces/${a}?clipID=${r}`), (o.shouldLoop = !0)), o;
                                   })(a.source);
-                              return Promise.resolve({ ...a, client: "web", tracks: [{ ...o, ...r, id: 0 }], currentTrackId: 0, source: { ...a.source, trackId: 0 } });
+                              return Promise.resolve({ ...a, client: "web", tracks: [{ ...t, ...o, id: 0 }], currentTrackId: 0, source: { ...a.source, trackId: 0 } });
                           })(this.httpClient, e)
-                        : Promise.reject(r.Z.MEDIA_TEARDOWN_ERROR);
+                        : Promise.reject(o.Z.MEDIA_TEARDOWN_ERROR);
                 }
             }
             const s = (e) => e.source && e.source.type === i.P.AUDIO_SPACE;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.70a2be7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.eb6b4baa.js.map

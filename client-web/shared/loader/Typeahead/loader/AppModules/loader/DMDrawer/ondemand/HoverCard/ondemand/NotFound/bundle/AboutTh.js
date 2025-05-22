@@ -3,7 +3,7 @@
     {
         804027: (e, t, r) => {
             "use strict";
-            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => j, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => I, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => z });
+            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => I, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => y, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => T, qJ: () => F, vY: () => j });
             var n = r(261214),
                 o = r(956056),
                 i = r(41065),
@@ -22,8 +22,8 @@
                 w = Object.freeze({ Allow: "allow", CancelFlow: "cancel_flow", HideExplicitCta: "hide_explicit_cta", Disallow: "disallow" }),
                 m = Object.freeze({ Default: "default", BulletList: "bullet_list" }),
                 b = Object.freeze({ DestructiveSecondary: "destructive_secondary", Primary: "primary", Secondary: "secondary", Text: "text", Brand: "brand", TwitterBrand: "twitter_brand" }),
-                y = Object.freeze({ Small: "small", NormalCompact: "normal_compact", Normal: "normal", LargeCompact: "large_compact", Large: "large" }),
-                T = (Object.freeze({ CheckmarkAndClose: "checkmark", Text: "text", ThumbsUpAndDown: "thumbs" }), Object.freeze({ Toolbar: "toolbar" }), Object.freeze({ Scrollable: "scrollable", Centered: "centered", CenteredHeader: "centered_header", HalfCover: "half_cover" })),
+                T = Object.freeze({ Small: "small", NormalCompact: "normal_compact", Normal: "normal", LargeCompact: "large_compact", Large: "large" }),
+                y = (Object.freeze({ CheckmarkAndClose: "checkmark", Text: "text", ThumbsUpAndDown: "thumbs" }), Object.freeze({ Toolbar: "toolbar" }), Object.freeze({ Scrollable: "scrollable", Centered: "centered", CenteredHeader: "centered_header", HalfCover: "half_cover" })),
                 S = Object.freeze({ Success: "success", Failure: "failure", Cancel: "cancel" }),
                 A = Object.freeze({ Icon: "icon", FullWidth: "full_width", FullBleedTop: "full_bleed_top" }),
                 v = Object.freeze({ PhoneOnly: "phone_only", EmailOnly: "email_only", PhoneThenEmail: "phone_then_email", EmailThenPhone: "email_then_phone" }),
@@ -42,8 +42,8 @@
                 x = Object.freeze({ Checkbox: "checkbox", Follow: "follow" }),
                 M = Object.freeze({ Tile: "tile", List: "list", TileFollowButton: "tile_follow_btn" }),
                 Y = (Object.freeze({ Always: "always", Never: "never", Preprompt: "preprompt" }), Object.freeze({ Email: "email", Number: "number", Password: "password", Telephone: "telephone", Text: "text" })),
-                z = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
-                j = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
+                j = Object.freeze({ ResendSms: "resend_sms", ResendVoice: "resend_voice", ResendEmail: "resend_email" }),
+                z = Object.freeze({ Password: "password", NewPassword: "new_password", Text: "text" }),
                 Z = Object.freeze({ Normal: "normal", Compact: "compact" }),
                 W = Object.freeze({ Username: "username", Password: "password", NewPassword: "new_password", Text: "text" }),
                 H = Object.freeze({ Mismatch: "mismatch" }),
@@ -55,7 +55,7 @@
         },
         118823: (e, t, r) => {
             "use strict";
-            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => oe, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => j, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => z, B7: () => U, aR: () => Z, Wl: () => ie, YF: () => te, d7: () => ue, if: () => K });
+            r.d(t, { WP: () => ne, R2: () => re, YW: () => J, Ig: () => ee, n8: () => $, YU: () => ae, Ai: () => se, Lw: () => H, z_: () => Q, qE: () => q, tY: () => oe, iD: () => G, jv: () => M, or: () => L, UD: () => N, cu: () => k, b: () => z, Du: () => V, zj: () => Y, W2: () => B, uz: () => F, Lg: () => D, li: () => x, $B: () => j, B7: () => U, aR: () => Z, Wl: () => ie, YF: () => te, d7: () => ue, if: () => K });
             r(543673), r(240753), r(128399);
             var n = r(695003),
                 o = r.n(n),
@@ -75,8 +75,8 @@
                 w = Object.freeze({ REQUEST: "rweb/ocf/FETCH_REQUEST", SUCCESS: "rweb/ocf/FETCH_SUCCESS", FAILURE: "rweb/ocf/FETCH_FAILURE" }),
                 m = Object.freeze({ REQUEST: "rweb/ocf/START_REQUEST", SUCCESS: "rweb/ocf/START_SUCCESS", FAILURE: "rweb/ocf/START_FAILURE" }),
                 b = "rweb/ocf/CLEAR",
-                y = "rweb/ocf/UPDATE",
-                T = "rweb/ocf/NAVIGATE",
+                T = "rweb/ocf/UPDATE",
+                y = "rweb/ocf/NAVIGATE",
                 S = "rweb/ocf/RESUME",
                 A = "rweb/ocf/ATTRIBUTE",
                 v = Object.freeze({ REQUEST: "rweb/ocf/VERIFY_IDENTIFIER_REQUEST", SUCCESS: "rweb/ocf/VERIFY_IDENTIFIER_SUCCESS", FAILURE: "rweb/ocf/VERIFY_IDENTIFIER_FAILURE" }),
@@ -96,7 +96,7 @@
                             return { ...P, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
                         case w.REQUEST:
                             return { ...e, fetchStatus: d.ZP.LOADING, submitFailed: !1 };
-                        case T: {
+                        case y: {
                             const { navigationContext: r, navigationStack: n, sendPinCode: o, subtaskInputs: i } = t.payload ?? {},
                                 a = { ...e.subtaskInputs };
                             for (const e in a) i[e] && delete a[e];
@@ -104,7 +104,7 @@
                         }
                         case A:
                             return { ...e, startLocation: t.payload };
-                        case y: {
+                        case T: {
                             const { flowData: r, subtaskInputs: n } = t.payload ?? {};
                             return { ...e, subtaskInputs: { ...e.subtaskInputs, ...n }, flowData: { ...e.flowData, ...r } };
                         }
@@ -175,8 +175,8 @@
                 x = (e) => e[_].submitFailed,
                 M = (e) => e[_].currentSubtask,
                 Y = (e) => e[_].previouslySubmittedSubtaskId,
-                z = (e) => e[_].subtaskInputs,
-                j = (e) => e[_].navigationContext,
+                j = (e) => e[_].subtaskInputs,
+                z = (e) => e[_].navigationContext,
                 Z = (e) => e[_].verificationSendFailureMessage,
                 W = (e) => e[_].navigationStack,
                 H = (e) => !!e.alert_dialog || !!e.menu_dialog || e?.cta?.style === l.aD.HalfCover,
@@ -217,7 +217,7 @@
                                 const s = o(),
                                     u = k(s),
                                     c = U(s),
-                                    l = z(s),
+                                    l = j(s),
                                     f = X(c, l),
                                     h = { ...r, flow_token: u, subtask_inputs: f };
                                 return (0, p._O)(n, { params: h, request: e.task(i) })({ actionTypes: w, context: "SUBMIT_FLOW", meta: { isTaskNavigation: t } }).then((e) => {
@@ -244,7 +244,7 @@
                         updateFlow:
                             (e, t = {}, r = {}) =>
                             (n, o) => {
-                                n({ type: y, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
+                                n({ type: T, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
                             },
                     };
                 },
@@ -271,7 +271,7 @@
                             d = p === l.vY.ResendSms || p === l.vY.ResendVoice || p === l.vY.ResendEmail;
                         "clear" === p && n && (f[n] = {});
                         const g = I(h) && (!p || d);
-                        o({ type: T, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
+                        o({ type: y, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
                     },
                 X = (e, t) =>
                     Object.keys(t)
@@ -342,7 +342,7 @@
         },
         153925: (e, t, r) => {
             "use strict";
-            r.d(t, { $1: () => l, Di: () => m, Ds: () => s, JJ: () => E, OA: () => _, OG: () => a, Rs: () => c, Yr: () => f, _w: () => b, cR: () => y, eU: () => h, jb: () => u, sI: () => p, uL: () => w });
+            r.d(t, { $1: () => l, Di: () => m, Ds: () => s, JJ: () => E, OA: () => _, OG: () => a, Rs: () => c, Yr: () => f, _w: () => b, cR: () => T, eU: () => h, jb: () => u, sI: () => p, uL: () => w });
             r(202784);
             var n = r(370751),
                 o = r(163889),
@@ -481,21 +481,7 @@
                     return !!t && g.has(t);
                 },
                 b = (e) => e === i.h0.Boolean || e === i.h0.PreciseLocation,
-                y = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
-        },
-        711223: (e, t, r) => {
-            "use strict";
-            r.r(t), r.d(t, { default: () => u });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const u = s;
+                T = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
         },
         595766: (e, t) => {
             "use strict";
@@ -632,7 +618,7 @@
                         case "utf8":
                         case "utf-8":
                         case void 0:
-                            return z(e).length;
+                            return j(e).length;
                         case "ucs2":
                         case "ucs-2":
                         case "utf16le":
@@ -641,9 +627,9 @@
                         case "hex":
                             return r >>> 1;
                         case "base64":
-                            return j(e).length;
+                            return z(e).length;
                         default:
-                            if (n) return z(e).length;
+                            if (n) return j(e).length;
                             (t = ("" + t).toLowerCase()), (n = !0);
                     }
             }
@@ -737,9 +723,9 @@
                 return a;
             }
             function b(e, t, r, n) {
-                return Z(z(t, e.length - r), e, r, n);
+                return Z(j(t, e.length - r), e, r, n);
             }
-            function y(e, t, r, n) {
+            function T(e, t, r, n) {
                 return Z(
                     (function (e) {
                         for (var t = [], r = 0; r < e.length; ++r) t.push(255 & e.charCodeAt(r));
@@ -750,11 +736,11 @@
                     n,
                 );
             }
-            function T(e, t, r, n) {
-                return y(e, t, r, n);
+            function y(e, t, r, n) {
+                return T(e, t, r, n);
             }
             function S(e, t, r, n) {
-                return Z(j(t), e, r, n);
+                return Z(z(t), e, r, n);
             }
             function A(e, t, r, n) {
                 return Z(
@@ -969,10 +955,10 @@
                             case "utf-8":
                                 return b(this, e, t, r);
                             case "ascii":
-                                return y(this, e, t, r);
+                                return T(this, e, t, r);
                             case "latin1":
                             case "binary":
-                                return T(this, e, t, r);
+                                return y(this, e, t, r);
                             case "base64":
                                 return S(this, e, t, r);
                             case "ucs2":
@@ -1221,7 +1207,7 @@
                     var i;
                     if (((t >>>= 0), (r = void 0 === r ? this.length : r >>> 0), e || (e = 0), "number" == typeof e)) for (i = t; i < r; ++i) this[i] = e;
                     else {
-                        var a = u.isBuffer(e) ? e : z(new u(e, n).toString()),
+                        var a = u.isBuffer(e) ? e : j(new u(e, n).toString()),
                             s = a.length;
                         for (i = 0; i < r - t; ++i) this[i + t] = a[i % s];
                     }
@@ -1231,7 +1217,7 @@
             function Y(e) {
                 return e < 16 ? "0" + e.toString(16) : e.toString(16);
             }
-            function z(e, t) {
+            function j(e, t) {
                 var r;
                 t = t || 1 / 0;
                 for (var n = e.length, o = null, i = [], a = 0; a < n; ++a) {
@@ -1271,7 +1257,7 @@
                 }
                 return i;
             }
-            function j(e) {
+            function z(e) {
                 return n.toByteArray(
                     (function (e) {
                         if (
@@ -1392,4 +1378,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.6e8ff49a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.e3946ffa.js.map

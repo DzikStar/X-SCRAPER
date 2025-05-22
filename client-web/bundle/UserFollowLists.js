@@ -21,13 +21,13 @@
                 w = "mute",
                 b = "removeFollower",
                 _ = "report",
-                D = "share",
-                g = i().j7bb1a43,
+                g = "share",
+                D = i().j7bb1a43,
                 y = i().hef5960c,
                 P = (0, f.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: t, onClose: a, onMute: i, onRemoveFollower: f, onReportUser: P, onShare: E, onUnblock: I, onUnmute: v, user: M } = e,
-                        S = [],
+                        { onBlock: t, onClose: a, onMute: i, onRemoveFollower: f, onReportUser: P, onShare: E, onUnblock: I, onUnmute: v, user: S } = e,
+                        M = [],
                         k = (o, t) => {
                             const { confirm: r, onClose: n } = e;
                             if (o) {
@@ -38,21 +38,21 @@
                             } else t();
                         };
                     !!window.navigator.share &&
-                        !M.protected &&
-                        !M.blocking &&
-                        !M.blocked_by &&
-                        S.push({
+                        !S.protected &&
+                        !S.blocking &&
+                        !S.blocked_by &&
+                        M.push({
                             Icon: n.Z,
                             onClick: () => {
                                 a(), E();
                             },
-                            testID: D,
+                            testID: g,
                             text: y,
                         });
-                    !M.blocking &&
-                        S.push({
+                    !S.blocking &&
+                        M.push({
                             ...(0, p.N1)(
-                                M,
+                                S,
                                 () => {
                                     a(), i();
                                 },
@@ -62,26 +62,26 @@
                             ),
                             testID: w,
                         });
-                    M.followed_by &&
-                        S.push({
+                    S.followed_by &&
+                        M.push({
                             ...(0, h.l)({
                                 removeFollowerAction: (e) => {
                                     k(e, f);
                                 },
-                                user: M,
+                                user: S,
                             }),
                             testID: b,
                         }),
-                        S.push((0, u.op)({ blockAction: (e) => k(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: m, unblockAction: (e) => k(e, I), user: M })),
-                        S.push({
+                        M.push((0, u.op)({ blockAction: (e) => k(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: m, unblockAction: (e) => k(e, I), user: S })),
+                        M.push({
                             Icon: l.default,
                             onClick: () => {
                                 a(), P();
                             },
                             testID: _,
-                            text: g({ screenName: M.screen_name }),
+                            text: D({ screenName: S.screen_name }),
                         });
-                    const Z = S.map(({ Icon: e, onClick: o, testID: t, text: r }) => ({ text: r, onClick: o, Icon: e, testID: t }));
+                    const Z = M.map(({ Icon: e, onClick: o, testID: t, text: r }) => ({ text: r, onClick: o, Icon: e, testID: t }));
                     return r.createElement(s.Z, { items: Z, onCloseRequested: a });
                 });
         },
@@ -126,15 +126,15 @@
                     .withAnalytics({ element: "mobile_notifications" }),
                 b = a().bdba3e1a,
                 _ = a().c4da7d28,
-                D = a().j87c21f4,
-                g = a().iebc30ca,
+                g = a().j87c21f4,
+                D = a().iebc30ca,
                 y = a().dc740eb2;
             class P extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: o } = this.props;
-                            return e ? r.createElement(n.ZP, { "aria-label": _, hoverLabel: { label: g }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": b, hoverLabel: { label: D }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
+                            return e ? r.createElement(n.ZP, { "aria-label": _, hoverLabel: { label: D }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": b, hoverLabel: { label: g }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: o } = this.props;
@@ -220,7 +220,6 @@
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -263,7 +262,7 @@
             };
         },
         847607: (e, o, t) => {
-            t.d(o, { Aq: () => u, FK: () => _, GS: () => i, N1: () => h, PY: () => p, X6: () => D, cm: () => l });
+            t.d(o, { Aq: () => u, FK: () => _, GS: () => i, N1: () => h, PY: () => p, X6: () => g, cm: () => l });
             t(202784);
             var r = t(332920),
                 n = t.n(r),
@@ -284,7 +283,7 @@
                 w = n().i29533b3,
                 b = n().h129c3c3,
                 _ = (e) => (e ? ((e) => w({ screenName: e }))(e) : f),
-                D = (e) => (e ? ((e) => b({ screenName: e }))(e) : m);
+                g = (e) => (e ? ((e) => b({ screenName: e }))(e) : m);
         },
         417714: (e, o, t) => {
             t.d(o, { l: () => c });
@@ -370,7 +369,7 @@
             };
         },
         947650: (e, o, t) => {
-            t.d(o, { Hq: () => D, c1: () => m, lP: () => b, og: () => w });
+            t.d(o, { Hq: () => g, c1: () => m, lP: () => b, og: () => w });
             var r = t(745123),
                 n = t(961104),
                 s = t(499627),
@@ -415,7 +414,7 @@
                     const t = f(e, o);
                     return t?.knownFollowerIds || u;
                 },
-                D =
+                g =
                     (e) =>
                     (o, t, { api: n }) =>
                         void 0 !== b(t(), e)
@@ -567,14 +566,14 @@
                 w = t(163889),
                 b = t(835546),
                 _ = t(503768),
-                D = t(750085),
-                g = t(962741),
+                g = t(750085),
+                D = t(962741),
                 y = t(919022),
                 P = t(218951);
             const E = (e) => (o, t) => {
                 const r = t(),
                     n = e.selectEntries(r).filter((e) => {
-                        if (!e.content || e.type !== g.ZP.User) return !1;
+                        if (!e.content || e.type !== D.ZP.User) return !1;
                         const o = e.content.id,
                             t = y.ZP.select(r, o);
                         return t && !t.followed_by;
@@ -583,8 +582,8 @@
             };
             var I = t(615027),
                 v = t(984915),
-                M = t(71620),
-                S = t(668214),
+                S = t(71620),
+                M = t(668214),
                 k = t(947650),
                 Z = t(390387);
             const C = (e, o) => o.match.params.screenName,
@@ -595,9 +594,9 @@
                     return t ? k.lP(e, t) : void 0;
                 },
                 O = (e, o) => o.match.params.followersSubroute || o.match.params.creatorSubscriptionsSubroute,
-                A = (0, S.Z)()
+                A = (0, M.Z)()
                     .propsFromState(() => ({ fetchStatus: x, isActiveCreator: Z.WM, mode: O, screenName: C, user: F, viewerUserId: Z._h, knownFollowersCount: L }))
-                    .propsFromActions(() => ({ cleanupOwnFollowersList: E, createLocalApiErrorHandler: (0, M.zr)("USER_PROFILE_FOLLOWERS"), fetchOneUserByScreenNameIfNeeded: y.ZP.fetchOneByScreenNameIfNeeded, fetchKnownFollowersIfNeeded: k.Hq }));
+                    .propsFromActions(() => ({ cleanupOwnFollowersList: E, createLocalApiErrorHandler: (0, S.zr)("USER_PROFILE_FOLLOWERS"), fetchOneUserByScreenNameIfNeeded: y.ZP.fetchOneByScreenNameIfNeeded, fetchKnownFollowersIfNeeded: k.Hq }));
             var T = t(269011),
                 N = t(335632),
                 R = t(240089);
@@ -610,13 +609,13 @@
                 K = { followers_you_follow: a().d74ee2e3, followers: a().c36cfddc, following: a().ae5749c7, verified_followers: a().b5099e33 },
                 z = { followers_you_follow: a().ec251f36, followers: a().b2b2c6ce, following: a().f8af4f48, verified_followers: a().fd0aad94 },
                 Q = {
-                    superfollowers: (e) => (0, P.Z)({ timelineId: `superFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchSuperFollowers, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_SUPER_FOLLOWERS", perfKey: "superFollowersGraphQL", formatResponse: D.Z }),
-                    followers_you_follow: (e) => (0, P.Z)({ timelineId: `followersYouKnowGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowersYouKnow, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS_YOU_KNOW", perfKey: "followersYouKnowGraphQL", formatResponse: D.Z }),
-                    followers: (e) => (0, P.Z)({ timelineId: `followersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS", perfKey: "followersGraphQL", formatResponse: D.Z }),
-                    following: (e) => (0, P.Z)({ timelineId: `followingGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowing, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWING", perfKey: "followingGraphQL", formatResponse: D.Z }),
-                    subscribers: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscribers-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscribers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIBERS", perfKey: "userCreatorSubscribersGraphQL", formatResponse: D.Z }),
-                    subscriptions: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscription-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscriptions, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIPTIONS", perfKey: "userCreatorSubscriptionsGraphQL", formatResponse: D.Z }),
-                    verified_followers: (e) => (0, P.Z)({ timelineId: `verifiedFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchVerifiedFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_VERIFIED_FOLLOWERS", perfKey: "verifiedFollowersGraphQL", formatResponse: D.Z }),
+                    superfollowers: (e) => (0, P.Z)({ timelineId: `superFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchSuperFollowers, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_SUPER_FOLLOWERS", perfKey: "superFollowersGraphQL", formatResponse: g.Z }),
+                    followers_you_follow: (e) => (0, P.Z)({ timelineId: `followersYouKnowGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowersYouKnow, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS_YOU_KNOW", perfKey: "followersYouKnowGraphQL", formatResponse: g.Z }),
+                    followers: (e) => (0, P.Z)({ timelineId: `followersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS", perfKey: "followersGraphQL", formatResponse: g.Z }),
+                    following: (e) => (0, P.Z)({ timelineId: `followingGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowing, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWING", perfKey: "followingGraphQL", formatResponse: g.Z }),
+                    subscribers: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscribers-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscribers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIBERS", perfKey: "userCreatorSubscribersGraphQL", formatResponse: g.Z }),
+                    subscriptions: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscription-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscriptions, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIPTIONS", perfKey: "userCreatorSubscriptionsGraphQL", formatResponse: g.Z }),
+                    verified_followers: (e) => (0, P.Z)({ timelineId: `verifiedFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchVerifiedFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_VERIFIED_FOLLOWERS", perfKey: "verifiedFollowersGraphQL", formatResponse: g.Z }),
                 },
                 j = (0, i.Z)((e, o, t, s) => () => {
                     const a = o === e;
@@ -640,7 +639,7 @@
                                 d = this._canViewSubscriptionsPage();
                             return ("subscribers" === e && !l) || ("subscriptions" === e && !d) ? r.createElement(I.Z, { to: `/${o}` }) : s ? r.createElement(f.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(i), loadingAccessibilityLabel: U, module: s, renderEmptyState: a, title: W[e] }) : null;
                         }),
-                        (this._getMemoizedEntryConfiguration = (0, i.Z)((e) => (({ withFollowerActionMenu: e = !1 }) => ({ ...(0, N.G)({}), [g.ZP.User]: (0, T.Z)({ decoration: e ? R.C_ : void 0 }) }))({ withFollowerActionMenu: e }))),
+                        (this._getMemoizedEntryConfiguration = (0, i.Z)((e) => (({ withFollowerActionMenu: e = !1 }) => ({ ...(0, N.G)({}), [D.ZP.User]: (0, T.Z)({ decoration: e ? R.C_ : void 0 }) }))({ withFollowerActionMenu: e }))),
                         (this._handleFetchUser = () => {
                             const { createLocalApiErrorHandler: e, fetchOneUserByScreenNameIfNeeded: o, screenName: t } = this.props;
                             o(t).catch(e(m.F));
@@ -670,10 +669,10 @@
                         m = $[n]({ screenName: s, fullName: f }),
                         w = this._isOwnProfile(),
                         _ = !a || (0, b.n5)({ isOwnProfile: w, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: a }),
-                        D = this._canViewSubscribersPage(),
-                        g = this._canViewSubscriptionsPage();
+                        g = this._canViewSubscribersPage(),
+                        D = this._canViewSubscriptionsPage();
                     if ("superfollowers" === n) return r.createElement(I.Z, { to: `/${s}/creator-subscriptions/subscribers` });
-                    const y = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: W.verified_followers }, a && i !== a.id_str && t ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: W.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: W.followers }, { key: "following", to: `/${s}/following`, label: W.following }, D ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: W.subscribers } : null, g ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: W.subscriptions } : null];
+                    const y = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: W.verified_followers }, a && i !== a.id_str && t ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: W.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: W.followers }, { key: "following", to: `/${s}/following`, label: W.following }, g ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: W.subscribers } : null, D ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: W.subscriptions } : null];
                     return _ ? r.createElement(v.Z, { scribeSection: n, userId: p }, r.createElement(h.Z, null, r.createElement(c.Z, { backLocation: `/${s}`, documentTitle: m, history: o, primaryContent: r.createElement(d.Z, { "aria-label": U, fetchStatus: e, onRequestRetry: this._handleFetchUser, render: this._render }), secondaryBar: r.createElement(u.Z, { links: y }), sidebarContent: r.createElement(l.Z, null), subtitle: `@${s}`, title: f }))) : r.createElement(I.Z, { to: `/${s}` });
                 }
                 _fetchKnownFollowersIfNeeded() {
@@ -739,8 +738,8 @@
                 w = t(58881),
                 b = t(530732);
             const _ = c().d2414d31,
-                D = () => c().ce4e85ae,
-                g = c().fb9f6f39;
+                g = () => c().ce4e85ae,
+                D = c().fb9f6f39;
             class y extends n.Component {
                 constructor(...e) {
                     super(...e),
@@ -778,11 +777,11 @@
                 render() {
                     const { Icon: e, "aria-label": o, badgeCount: t, badgePip: r, children: s, color: a, isActive: d, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: m, retainScrollPosition: y, style: E, to: I } = this.props,
                         { location: v } = this.state,
-                        M = I ? this._getMemoizedLink(I, y) : void 0,
-                        S = d ? d(I) : v?.pathname === M?.pathname,
+                        S = I ? this._getMemoizedLink(I, y) : void 0,
+                        M = d ? d(I) : v?.pathname === S?.pathname,
                         k = w.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
-                        Z = m ? "medium" : S ? "bold" : "medium";
-                    return n.createElement(b.Z, { "aria-label": o, "aria-selected": S, focusable: !!S, interactiveStyles: k, link: M, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? P.pill : P.link, u && S ? P.active : null, c ? (u ? P.compactPill : P.compactLink) : null, p ? P.roundedRect : null, E], withoutInteractiveStyles: m || u }, ({ isFocused: o, isHovered: d }) => n.createElement(l.Z, { style: u && P.flexGrow }, n.createElement(h.ZP, { size: m ? "headline2" : void 0, style: [P.text, { color: this._getTextColor(S, d, m, u) }, c && P.compactText, m && o && P.focusedText], weight: Z }, e && n.createElement(e, { style: P.icon }), s, m || u ? null : n.createElement(l.Z, { style: S && [P.border, { backgroundColor: i.default.theme.colors[a] }] })), t ? n.createElement(f.Z, { count: t, standalone: !0, style: [P.badge, t >= 10 && P.multiDigitBadge, t >= 20 && P.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: _, withBorder: !1 }) : r ? n.createElement(f.Z, { pip: !0, standalone: !0, style: P.badgePip, textColor: "red500", unreadCountLabel: D, withBorder: !1 }) : null));
+                        Z = m ? "medium" : M ? "bold" : "medium";
+                    return n.createElement(b.Z, { "aria-label": o, "aria-selected": M, focusable: !!M, interactiveStyles: k, link: S, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? P.pill : P.link, u && M ? P.active : null, c ? (u ? P.compactPill : P.compactLink) : null, p ? P.roundedRect : null, E], withoutInteractiveStyles: m || u }, ({ isFocused: o, isHovered: d }) => n.createElement(l.Z, { style: u && P.flexGrow }, n.createElement(h.ZP, { size: m ? "headline2" : void 0, style: [P.text, { color: this._getTextColor(M, d, m, u) }, c && P.compactText, m && o && P.focusedText], weight: Z }, e && n.createElement(e, { style: P.icon }), s, m || u ? null : n.createElement(l.Z, { style: M && [P.border, { backgroundColor: i.default.theme.colors[a] }] })), t ? n.createElement(f.Z, { count: t, standalone: !0, style: [P.badge, t >= 10 && P.multiDigitBadge, t >= 20 && P.truncatedCountBadge], truncatedCountFormatter: D, unreadCountLabel: _, withBorder: !1 }) : r ? n.createElement(f.Z, { pip: !0, standalone: !0, style: P.badgePip, textColor: "red500", unreadCountLabel: g, withBorder: !1 }) : null));
                 }
             }
             (y.contextType = m.Z), (y.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -826,4 +825,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.a7974bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.20d00c9a.js.map

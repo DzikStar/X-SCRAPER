@@ -18,16 +18,16 @@
                 m = i(177210),
                 y = i(337394),
                 f = i(147595),
-                _ = i(811574),
-                b = i(293115),
+                b = i(811574),
+                _ = i(293115),
                 g = i(725405),
                 E = i(443781);
             const T = d().ie4f57d2,
                 I = d().h293aa52,
-                R = d().j1923668,
+                k = d().j1923668,
                 v = d().ac7e97ee,
-                k = { PremiumBasic: d().f70c69b4, BlueVerified: d().f4cec4d2, BlueVerifiedPlus: d().f4cec4d2 },
-                P = ({ activeRestId: e }) => {
+                R = { PremiumBasic: d().f70c69b4, BlueVerified: d().f4cec4d2, BlueVerifiedPlus: d().f4cec4d2 },
+                A = ({ activeRestId: e }) => {
                     const t = (0, g.Z)(),
                         [i, l] = n.useState(!1);
                     (0, h.q)(() => {
@@ -42,7 +42,7 @@
                             r.Z,
                             { "aria-label": T, role: "complementary", style: S.root },
                             n.createElement(s.ZP, { size: "headline1", weight: "heavy" }, I),
-                            n.createElement(s.ZP, null, R, " ", k[d]),
+                            n.createElement(s.ZP, null, k, " ", R[d]),
                             n.createElement(
                                 o.ZP,
                                 {
@@ -57,16 +57,16 @@
                         ),
                     );
                 },
-                A = () => {
+                P = () => {
                     const { featureSwitches: e } = (0, E.QZ)(),
-                        t = (0, _.Z)();
+                        t = (0, b.Z)();
                     if (!t) return null;
                     const i = (0, f.R)(t);
-                    return i && "Stripe" === i.payment_source && "Expire" === i.state && e.isTrue("subscriptions_management_renew_module_enabled") ? n.createElement(b.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, n.createElement(P, { activeRestId: i?.product?.rest_id })) : null;
+                    return i && "Stripe" === i.payment_source && "Expire" === i.state && e.isTrue("subscriptions_management_renew_module_enabled") ? n.createElement(_.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, n.createElement(A, { activeRestId: i?.product?.rest_id })) : null;
                 },
                 D = () => {
                     const { featureSwitches: e, userClaims: t } = (0, E.QZ)();
-                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && t.isAnyPremiumSubscriber() && !t.isAnyVerifiedOrgOrAffiliate() ? n.createElement(A, null) : null;
+                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && t.isAnyPremiumSubscriber() && !t.isAnyVerifiedOrgOrAffiliate() ? n.createElement(P, null) : null;
                 },
                 S = l.default.create((e) => ({ root: { position: "relative", alignItems: "flex-start", gap: 10, flexDirection: "column", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }));
         },
@@ -86,20 +86,20 @@
                 m = { [a.NotPinnable]: !1, [a.Pinnable]: !0, [a.Pinned]: !0 },
                 y = (e) => !!m[e],
                 f = (e) => (e?.content?.id && (0, o.Z)(e.content.id) ? e.content.id : null);
-            const _ = "click",
-                b = "pinned_reply";
+            const b = "click",
+                _ = "pinned_reply";
             function g(e, t) {
                 const { feedbackAction: i, feedbackEntry: n, feedbackKey: r, pinReply: o, scribe: l, scribeData: c, scribeNamespace: m, unpinReply: g } = t,
                     E = i.richBehavior?.replyPinState || a.NotPinnable,
                     T = (e) => {
-                        l({ ...m, action: _, component: b, element: e }, c);
+                        l({ ...m, action: b, component: _, element: e }, c);
                     },
                     I = { feedbackKey: r, willScribe: !0, skipDefaultAction: !0 },
-                    R = f(n),
+                    k = f(n),
                     v = y(E);
-                if (!R || !v || !e.isTrue("responsive_web_pinned_replies_enabled") || e.isTrue("responsive_web_lbm_v2_replies_enabled")) return { ...I, excludeFromActionMenu: !0, text: "" };
-                const k = E === a.Pinnable ? (e) => (T("pin"), o(e)) : (e) => (T("unpin"), g(e)),
-                    P = (function (e, { addToast: t, gracefullyReloadTimeline: i, pinReply: n, unpinReply: r }) {
+                if (!k || !v || !e.isTrue("responsive_web_pinned_replies_enabled") || e.isTrue("responsive_web_lbm_v2_replies_enabled")) return { ...I, excludeFromActionMenu: !0, text: "" };
+                const R = E === a.Pinnable ? (e) => (T("pin"), o(e)) : (e) => (T("unpin"), g(e)),
+                    A = (function (e, { addToast: t, gracefullyReloadTimeline: i, pinReply: n, unpinReply: r }) {
                         return ({ error: n, success: r }) => {
                             !n && r ? (t({ text: h[e] }), i()) : t({ text: u[e] });
                         };
@@ -117,15 +117,15 @@
                         },
                     },
                     onClick: () => {
-                        k(R)
-                            .then(P)
-                            .catch((e) => P({ error: e, success: !1 }));
+                        R(k)
+                            .then(A)
+                            .catch((e) => A({ error: e, success: !1 }));
                     },
                 };
             }
         },
         107914: (e, t, i) => {
-            i.d(t, { N: () => g, w: () => b });
+            i.d(t, { N: () => g, w: () => _ });
             var n = i(856430),
                 r = i(369676),
                 s = i(609980),
@@ -140,10 +140,10 @@
                 m = i(372703),
                 y = i(576513);
             const f = { [y.Z.FEEDBACK_CLOSE]: n.default, [y.Z.FEEDBACK]: r.default, [y.Z.FROWN]: s.default, [y.Z.SMILE]: o.default, [y.Z.MODERATION]: a.default, [y.Z.TOPIC]: l.default, [y.Z.TOPIC_CLOSE]: c.default, [y.Z.FLAG]: d.default, [y.Z.NO]: p.default, [y.Z.SPEAKER]: h.default, [y.Z.SPEAKER_OFF]: u.default },
-                _ = { [m.ZP.SeeFewer]: s.default, [m.ZP.SeeMore]: o.default, [m.ZP.DontLike]: s.default },
-                b = (e) => {
+                b = { [m.ZP.SeeFewer]: s.default, [m.ZP.SeeMore]: o.default, [m.ZP.DontLike]: s.default },
+                _ = (e) => {
                     const { feedbackType: t, icon: i } = e;
-                    return (i && f[i]) || _[t];
+                    return (i && f[i]) || b[t];
                 },
                 g = (e) => e && f[e.toUpperCase()];
         },
@@ -164,13 +164,13 @@
                 m = i(110293),
                 y = i(452840);
             const f = Object.values(d.no),
-                _ = ({ dismissedEntries: e, entries: t, handlerRegistry: i, pinnedEntry: n }) => {
+                b = ({ dismissedEntries: e, entries: t, handlerRegistry: i, pinnedEntry: n }) => {
                     const r = new E(),
                         s = (t) => {
                             const n = i.getHandler(t),
                                 o = n && (n.splice || n.render);
                             if (n && o) {
-                                let i = n.divider || b;
+                                let i = n.divider || _;
                                 "function" == typeof i && (i = i(t)), i.top && r.addDividerFor(t, g.TOP);
                                 const o = e[t.entryId];
                                 if (o && o.length) r.addEntry((0, y.Z)({ entry: t, feedbackKeys: o }), n), r.getIncrementedPosition();
@@ -185,7 +185,7 @@
                         };
                     return n && (s(n), r.addDividerFor(n, g.BOTTOM)), t.forEach(s), r.list;
                 },
-                b = { top: !1, bottom: !1 },
+                _ = { top: !1, bottom: !1 },
                 g = { TOP: "top", BOTTOM: "bottom" };
             class E {
                 constructor() {
@@ -257,11 +257,11 @@
                 }
             }
             var I = i(961111),
-                R = i.n(I),
+                k = i.n(I),
                 v = i(752624),
-                k = i(697926),
-                P = i(516951),
-                A = i(351322),
+                R = i(697926),
+                A = i(516951),
+                P = i(351322),
                 D = i(325686),
                 S = i(392237),
                 Z = i(143778);
@@ -279,14 +279,14 @@
                     );
                 },
                 F = S.default.create((e) => ({ placeholder: { height: 50 } })),
-                O = n.memo(w);
-            var L = i(590980),
-                M = i(220184),
-                C = i(509738);
-            const N = { [d.no.Divider]: L.Z, [d.no.Tombstone]: M.Z },
+                L = n.memo(w);
+            var O = i(590980),
+                C = i(220184),
+                M = i(509738);
+            const N = { [d.no.Divider]: O.Z, [d.no.Tombstone]: C.Z },
                 B = (e, t, i) => `${e}-${t}-${i?.loader ? i?.loaderKey : "handler"}`,
                 H = (new WeakMap(), new Map());
-            class U {
+            class x {
                 constructor(e, t) {
                     (this._initialized = !1), (this._subscriptionSet = new v.Z()), (this._configuration = { ...N, ...e }), (this._handlerStatusMap = new Map());
                     const i = (e, t) => {
@@ -308,12 +308,12 @@
                 }
                 initialize() {
                     if (!this._initialized) {
-                        const e = Promise.all([this._loadHandlers(this._getUnloadedHandlersByStrategy(C.C.Critical)), this._loadHandlers(this._getUnloadedHandlersByStrategy(C.C.Preload))]);
+                        const e = Promise.all([this._loadHandlers(this._getUnloadedHandlersByStrategy(M.C.Critical)), this._loadHandlers(this._getUnloadedHandlersByStrategy(M.C.Preload))]);
                         return (this._initialized = !0), this._subscriptionSet.notify(), e;
                     }
                 }
                 getFetchStatus() {
-                    const e = this._filterHandlerInfoBy(({ strategy: e }) => e === C.C.Critical);
+                    const e = this._filterHandlerInfoBy(({ strategy: e }) => e === M.C.Critical);
                     let t = !1;
                     for (let i = 0; i < e.length; i++) {
                         const { status: n } = e[i];
@@ -327,12 +327,12 @@
                     H.clear();
                 }
                 getPartiallyLoadedConfiguration() {
-                    return (0, k.Z)(
+                    return (0, R.Z)(
                         Object.keys(this._configuration),
                         (e) => e,
                         (e) => {
                             const t = this._configuration[e],
-                                i = (0, k.Z)(
+                                i = (0, R.Z)(
                                     Object.keys(t.handlers),
                                     (e) => e,
                                     (i) => {
@@ -344,7 +344,7 @@
                                                   this._loadHandler(s);
                                               }),
                                               (l = s.status),
-                                              A.lC({ isLoadingPlaceholder: !0, render: () => n.createElement(O, { fetchStatus: l, onRequestRetry: a }) }))
+                                              P.lC({ isLoadingPlaceholder: !0, render: () => n.createElement(L, { fetchStatus: l, onRequestRetry: a }) }))
                                             : s?.handler || s?.loader || t.handlers[i];
                                         var a, l;
                                     },
@@ -380,7 +380,7 @@
                     if (!i && n && r !== h.ZP.LOADING)
                         return (
                             (e.status = h.ZP.LOADING),
-                            R()(
+                            k()(
                                 () =>
                                     n.loader().then(({ default: t }) => {
                                         (e.status = h.ZP.LOADED), (e.handler = "function" == typeof t ? t(n.loaderOptions || {}) : t), H.set(e.key, t);
@@ -408,8 +408,8 @@
                     return this._filterHandlerInfoBy(({ status: t, strategy: i }) => i === e && (t === h.ZP.NONE || t === h.ZP.FAILED));
                 }
             }
-            U.ssrEagerLoad = P.Z;
-            const x = s().i9028824;
+            x.ssrEagerLoad = A.Z;
+            const U = s().i9028824;
             class K extends n.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -417,7 +417,7 @@
                         (this._unmounted = !1),
                         (this._createAndSubscribeToHandlerRegistryManager = () => {
                             const { entryConfiguration: e } = this.props;
-                            this._handlerRegistryManagerSubscription?.unsubscribe(), (this._handlerRegistryManager = new U(e, this.context)), (this._handlerRegistryManagerSubscription = this._handlerRegistryManager.subscribe(this._handleConfigurationChanged)), this._handlerRegistryManager.initialize(), this._handlerRegistryManager.loadOnDemand(this._getEntriesNeedingLoad());
+                            this._handlerRegistryManagerSubscription?.unsubscribe(), (this._handlerRegistryManager = new x(e, this.context)), (this._handlerRegistryManagerSubscription = this._handlerRegistryManager.subscribe(this._handleConfigurationChanged)), this._handlerRegistryManager.initialize(), this._handlerRegistryManager.loadOnDemand(this._getEntriesNeedingLoad());
                         }),
                         (this._handleConfigurationChanged = (0, o.Z)(() => {
                             if (this._mounted && !this._unmounted) {
@@ -465,7 +465,7 @@
                                 })({ dismissedEntries: e, handlerRegistry: new T(r), entries: n ? n(t) : t, pinnedEntry: i });
                             return (this._pendingEntries = s), s;
                         }),
-                        (this._getMemoizedFinalEntries = (0, a.Z)((e, t, i, n, r) => (({ dismissedEntries: e, entries: t, handlerRegistry: i, pinnedEntry: n, preprocessEntryList: r }) => _({ entries: r(t), handlerRegistry: i, dismissedEntries: e, pinnedEntry: n }))({ handlerRegistry: e, entries: i, dismissedEntries: t, pinnedEntry: n, preprocessEntryList: r }))),
+                        (this._getMemoizedFinalEntries = (0, a.Z)((e, t, i, n, r) => (({ dismissedEntries: e, entries: t, handlerRegistry: i, pinnedEntry: n, preprocessEntryList: r }) => b({ entries: r(t), handlerRegistry: i, dismissedEntries: e, pinnedEntry: n }))({ handlerRegistry: e, entries: i, dismissedEntries: t, pinnedEntry: n, preprocessEntryList: r }))),
                         (this._getMemoizedHandlerRegistry = (0, a.Z)((e) => new T(e))),
                         this._createAndSubscribeToHandlerRegistryManager(),
                         (this.state = { processedEntryConfiguration: this._handlerRegistryManager.getPartiallyLoadedConfiguration(), fetchStatus: this._handlerRegistryManager.getFetchStatus() });
@@ -483,7 +483,7 @@
                 }
                 render() {
                     const { fetchStatus: e } = this.state;
-                    return n.createElement(l.Z, { "aria-label": x, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._render });
+                    return n.createElement(l.Z, { "aria-label": U, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._render });
                 }
             }
             (K.contextType = u.rC), (K.defaultProps = { preprocessEntryList: (e) => e });
@@ -508,31 +508,31 @@
                 m = i(959658),
                 y = i(334346),
                 f = i(385322),
-                _ = i(109002),
-                b = i(262785),
+                b = i(109002),
+                _ = i(262785),
                 g = i(3138),
                 E = i(479506),
                 T = i(942893),
                 I = i(503229),
-                R = i(801501),
+                k = i(801501),
                 v = i(192337),
-                k = i(962741),
-                P = i(224175),
-                A = i(246031),
+                R = i(962741),
+                A = i(224175),
+                P = i(246031),
                 D = i(347155),
                 S = i(312771),
                 Z = i(443781),
                 w = i(71620),
                 F = i(87063),
-                O = i(668214),
-                L = i(481242),
-                M = i(863749),
-                C = i(109223),
+                L = i(668214),
+                O = i(481242),
+                C = i(863749),
+                M = i(109223),
                 N = i(390387);
             const B = [],
                 H = (e, t) => t.module.selectEntries(e) || B,
-                U = (e, t) => t.previewEntries || B,
-                x = (e, t) => t.module.selectInitialFetchStatus(e) || F.Z.LOADING,
+                x = (e, t) => t.previewEntries || B,
+                U = (e, t) => t.module.selectInitialFetchStatus(e) || F.Z.LOADING,
                 K = (e, t) => t.module.selectBottomFetchStatus(e),
                 z = (e, t) => t.module.selectTopFetchStatus(e),
                 $ = (e, t) => t.module.selectCanRefresh(e),
@@ -548,15 +548,15 @@
                 ee = (e, t) => t.module.selectHasHoistedAnEntry(e),
                 te = (e, t) => t.module.selectNewTweetsBar(e),
                 ie = (e, t) => t.module.perfKey,
-                ne = (0, O.Z)()
-                    .propsFromState(() => ({ activeCover: Q, alert: W, bottomFetchStatus: K, canRefresh: $, dismissedEntries: V, droppedAds: X, entries: H, initialFetchStatus: x, isRestrictedSession: N._S, newTweetsBarContent: te, perfKey: ie, pinnedEntry: q, pollingIntervalMs: J, previewEntries: U, timelineExist: Y, timelineId: j, topFetchStatus: z, unavailableReason: G, wasAtleastOneEntryHoisted: ee }))
+                ne = (0, L.Z)()
+                    .propsFromState(() => ({ activeCover: Q, alert: W, bottomFetchStatus: K, canRefresh: $, dismissedEntries: V, droppedAds: X, entries: H, initialFetchStatus: U, isRestrictedSession: N._S, newTweetsBarContent: te, perfKey: ie, pinnedEntry: q, pollingIntervalMs: J, previewEntries: x, timelineExist: Y, timelineId: j, topFetchStatus: z, unavailableReason: G, wasAtleastOneEntryHoisted: ee }))
                     .adjustStateProps(({ bottomFetchStatus: e, entries: t, initialFetchStatus: i, previewEntries: n, unavailableReason: r, ...s }) => {
                         const o = i === F.Z.FAILED && r,
                             a = n.length > 0 && i !== F.Z.LOADED && !o,
                             l = i === F.Z.LOADED && 0 === t.length && n.length > 0;
                         return a || l ? { bottomFetchStatus: i, entries: n, initialFetchStatus: F.Z.LOADED, shouldFetchInitialOnBottomRetry: !0, unavailableReason: r, ...s } : { bottomFetchStatus: e, entries: t, initialFetchStatus: i, shouldFetchInitialOnBottomRetry: !1, unavailableReason: r, ...s };
                     })
-                    .propsFromActions(({ module: e }) => ({ applyNewTweetsBarInstructions: e.applyNewTweetsBarInstructions, applyReactionInstructions: e.applyReactionInstructions, clearActiveCover: e.clearActiveCover, clearDroppedAds: e.clearDroppedAds, createLocalApiErrorHandler: (0, w.zr)("RICH_TIMELINE"), fetchBottom: e.fetchBottom, fetchInitial: e.fetchInitial, fetchInitialOrTop: e.fetchInitialOrTop, markAllRead: e.markTopEntrySeen, processCallback: e.processCallback, removeAlert: e.removeAlert, richScribeAction: L.richScribeAction, updateInstreamVideoEntries: C.C, updateVoiceEntries: M.Be }))
+                    .propsFromActions(({ module: e }) => ({ applyNewTweetsBarInstructions: e.applyNewTweetsBarInstructions, applyReactionInstructions: e.applyReactionInstructions, clearActiveCover: e.clearActiveCover, clearDroppedAds: e.clearDroppedAds, createLocalApiErrorHandler: (0, w.zr)("RICH_TIMELINE"), fetchBottom: e.fetchBottom, fetchInitial: e.fetchInitial, fetchInitialOrTop: e.fetchInitialOrTop, markAllRead: e.markTopEntrySeen, processCallback: e.processCallback, removeAlert: e.removeAlert, richScribeAction: O.richScribeAction, updateInstreamVideoEntries: M.C, updateVoiceEntries: C.Be }))
                     .withAnalytics();
             var re = i(931162),
                 se = i(371277),
@@ -571,11 +571,11 @@
                     super(e, t),
                         (this._lastRefresh = -1),
                         (this._render = () => {
-                            const { analytics: e, apiErrorHandlerMap: t, bottomFetchStatus: i, createLocalApiErrorHandler: s, dismissedEntries: o, entries: a, entryConfiguration: l, fetchBottom: c, fetchInitial: d, fetchInitialOrTop: p, fetchOptions: h, fetchTopOptions: u, loadingAccessibilityLabel: y, markAllRead: f, olderAtTop: _, onEntriesRendered: g, perfKey: E, pinnedEntry: T, preprocessEntryList: I, processCallback: R, renderUnavailable: v, shouldFetchInitialOnBottomRetry: k, timelineExist: P, timelineRef: A, unavailableReason: D, updateInstreamVideoEntries: S, withoutHeadroom: Z, ...w } = this.props;
+                            const { analytics: e, apiErrorHandlerMap: t, bottomFetchStatus: i, createLocalApiErrorHandler: s, dismissedEntries: o, entries: a, entryConfiguration: l, fetchBottom: c, fetchInitial: d, fetchInitialOrTop: p, fetchOptions: h, fetchTopOptions: u, loadingAccessibilityLabel: y, markAllRead: f, olderAtTop: b, onEntriesRendered: g, perfKey: E, pinnedEntry: T, preprocessEntryList: I, processCallback: k, renderUnavailable: v, shouldFetchInitialOnBottomRetry: R, timelineExist: A, timelineRef: P, unavailableReason: D, updateInstreamVideoEntries: S, withoutHeadroom: Z, ...w } = this.props;
                             return r.createElement(
                                 r.Fragment,
                                 null,
-                                r.createElement(se.Z, { dismissedEntries: o, entries: a, entryConfiguration: l, perfKey: E, pinnedEntry: T || void 0, preprocessEntryList: I }, (e, t, s) => r.createElement(b.Z, (0, n.Z)({}, w, { bottomFetchStatus: i || void 0, entries: t, handlerRegistry: e, hasPendingHandlers: s, onAtBottom: this._handleAtBottom, onAtTop: this._handleAtTop, onBottomRetry: this._handleBottomRetry, onEntriesRendered: this._handleEntriesRendered, onNearBottom: this._handleNearBottom, onNearTop: this._handleNearTop, onRef: this._handleTimelineRendererRef, onRefresh: this._handleRefresh, perfKey: E, processCallback: this._processCallback, withoutHeadroom: Z }))),
+                                r.createElement(se.Z, { dismissedEntries: o, entries: a, entryConfiguration: l, perfKey: E, pinnedEntry: T || void 0, preprocessEntryList: I }, (e, t, s) => r.createElement(_.Z, (0, n.Z)({}, w, { bottomFetchStatus: i || void 0, entries: t, handlerRegistry: e, hasPendingHandlers: s, onAtBottom: this._handleAtBottom, onAtTop: this._handleAtTop, onBottomRetry: this._handleBottomRetry, onEntriesRendered: this._handleEntriesRendered, onNearBottom: this._handleNearBottom, onNearTop: this._handleNearTop, onRef: this._handleTimelineRendererRef, onRefresh: this._handleRefresh, perfKey: E, processCallback: this._processCallback, withoutHeadroom: Z }))),
                                 r.createElement(m.b, null),
                             );
                         }),
@@ -596,7 +596,7 @@
                         }),
                         (this._getForegroundPoller = (e) => {
                             const { history: t } = this.props;
-                            return new R.Z(e).interval(() => {
+                            return new k.Z(e).interval(() => {
                                 ("active" === s.Z.currentState || ((0, h.HD)(t) && !this._shouldSkipPoll())) && this._foregroundPollAction();
                             });
                         }),
@@ -610,9 +610,9 @@
                         )),
                         (this._shouldSkipPoll = () => {
                             const e = this._timelineRenderer?.props.viewport;
-                            if (e instanceof P.Z) {
+                            if (e instanceof A.Z) {
                                 const t = e.getRect2D(),
-                                    i = A.Z.root().getRect2D();
+                                    i = P.Z.root().getRect2D();
                                 if (!o.Z.intersection(i, t)) {
                                     return (t.left > i.left ? t.left - i.right : i.left - t.right) < 2 * t.width ? Math.random() > 0.5 : Math.random() > 0.1;
                                 }
@@ -649,7 +649,7 @@
                             });
                         }),
                         (this._timelineAPI = { fetchTop: (e) => this._fetchInitialOrTop(e, oe.l.TIMELINE_SPECIFIC_FETCH_TOP), refreshOrGoTop: () => this._refreshOrGoTop() }),
-                        b.Z.preload();
+                        _.Z.preload();
                 }
                 componentDidMount() {
                     this._initialize();
@@ -672,7 +672,7 @@
                 }
                 render() {
                     const { initialFetchStatus: e, livePipelineTopic: t, loadingAccessibilityLabel: i, prerollDisplayLocation: n, renderUnavailable: s, unavailableReason: o } = this.props;
-                    return r.createElement(r.Fragment, null, t ? r.createElement(f._W, { callback: this._foregroundPollAction, topic: t }) : null, r.createElement(re.D, { fetch: this._handleNearBottom, prerollDisplayLocation: n }, r.createElement(u.Z, { "aria-label": i, fetchStatus: e, onRequestRetry: this._handleInitialRetry, render: this._render, renderFailure: o && s ? this._renderUnavailable : void 0, retryable: !o })));
+                    return r.createElement(r.Fragment, null, t ? r.createElement(f._W, { callback: this._foregroundPollAction, topic: t }) : null, r.createElement(re.D, { prerollDisplayLocation: n }, r.createElement(u.Z, { "aria-label": i, fetchStatus: e, onRequestRetry: this._handleInitialRetry, render: this._render, renderFailure: o && s ? this._renderUnavailable : void 0, retryable: !o })));
                 }
                 _initialize() {
                     const { history: e, initialFetchStatus: t, isSingleDirection: i } = this.props,
@@ -725,7 +725,7 @@
                 _scribeAndClearDroppedAds() {
                     const { analytics: e, clearDroppedAds: t, droppedAds: i } = this.props;
                     i.forEach(({ adDropInfo: t, entry: i }) => {
-                        const n = i.type === k.ZP.Tweet ? T.Z.getTweetURTEntryItem(i) : { id: i.entryId };
+                        const n = i.type === R.ZP.Tweet ? T.Z.getTweetURTEntryItem(i) : { id: i.entryId };
                         e.scribe({ action: "minimum_spacing_ad_removal", data: { items: [n] } }), e.scribe({ action: "minimum_spacing_ad_removal_drop_info", data: { custom_json_payload: JSON.stringify({ ad_drop_info: { dropped_id: t.droppedId, retained_id: t.retainedId } }) } });
                     }),
                         t();
@@ -736,11 +736,11 @@
                     t.scribe({ element: i, action: "entry_hoisted" });
                 }
             }
-            (he.defaultProps = { apiErrorHandlerMap: {}, fetchOptions: de, fetchTopOptions: de, entryConfiguration: pe, loadingAccessibilityLabel: le, olderAtTop: !1, onEntriesRendered: p.Z, preprocessEntryList: (e) => e, renderEmptyState: () => r.createElement(a.Z, { message: ce }), scroller: y.C, newTweetsPill: _.Z, showLoadingFooter: !0, timelineRef: p.Z, withoutHeadroom: !1 }), (he.contextType = Z.rC);
+            (he.defaultProps = { apiErrorHandlerMap: {}, fetchOptions: de, fetchTopOptions: de, entryConfiguration: pe, loadingAccessibilityLabel: le, olderAtTop: !1, onEntriesRendered: p.Z, preprocessEntryList: (e) => e, renderEmptyState: () => r.createElement(a.Z, { message: ce }), scroller: y.C, newTweetsPill: b.Z, showLoadingFooter: !0, timelineRef: p.Z, withoutHeadroom: !1 }), (he.contextType = Z.rC);
             const ue = ne((0, I.Z)(he));
         },
         351322: (e, t, i) => {
-            i.d(t, { KM: () => Fe, iH: () => Se, ov: () => Te, lC: () => Ze, OZ: () => Re, ub: () => we });
+            i.d(t, { KM: () => Pe, iH: () => ve, ov: () => fe, lC: () => Re, OZ: () => _e, ub: () => Ae });
             var n = i(202784),
                 r = i(516951),
                 s = i(459643),
@@ -776,17 +776,17 @@
                 return t && i ? n.createElement(y, e) : e.children;
             };
             i(136728);
-            var _ = i(459679),
-                b = i(71620),
+            var b = i(459679),
+                _ = i(71620),
                 g = i(973572),
                 E = i(163889),
                 T = i(668214),
                 I = i(481242),
-                R = i(576469),
+                k = i(576469),
                 v = i(40037),
-                k = i(601576),
-                P = i(466380),
-                A = i(735313),
+                R = i(601576),
+                A = i(466380),
+                P = i(735313),
                 D = i(919022);
             const S = [],
                 Z = (e, t) => {
@@ -794,7 +794,7 @@
                         s = i.feedbackEntrySelector ? i.feedbackEntrySelector(n) : n,
                         o = s.itemMetadata?.feedbackInfo?.feedbackKeys || S,
                         a = r.selectFeedbackActions(e);
-                    return (0, _.Z)(o, (e) => (a[e] ? e : ((0, E.ZP)(`Feedback key has no backing action ${e}`), null)));
+                    return (0, b.Z)(o, (e) => (a[e] ? e : ((0, E.ZP)(`Feedback key has no backing action ${e}`), null)));
                 },
                 w = (e, t) => {
                     const i = t.module.selectFeedbackActions(e);
@@ -804,21 +804,21 @@
                     let i;
                     return (
                         w(e, t).forEach((t) => {
-                            t.richBehavior?.toggleMuteList && (i = R.Z.select(e, t.richBehavior.toggleMuteList.listId));
-                        }),
-                        i
-                    );
-                },
-                O = (e, t) => {
-                    let i;
-                    return (
-                        w(e, t).forEach((t) => {
-                            t.richBehavior?.toggleFollowTopicV2 ? (i = P.Z.select(e, t.richBehavior.toggleFollowTopicV2.topicId)) : t.richBehavior?.markNotInterestedTopic && (i = P.Z.select(e, t.richBehavior.markNotInterestedTopic.topicId));
+                            t.richBehavior?.toggleMuteList && (i = k.Z.select(e, t.richBehavior.toggleMuteList.listId));
                         }),
                         i
                     );
                 },
                 L = (e, t) => {
+                    let i;
+                    return (
+                        w(e, t).forEach((t) => {
+                            t.richBehavior?.toggleFollowTopicV2 ? (i = A.Z.select(e, t.richBehavior.toggleFollowTopicV2.topicId)) : t.richBehavior?.markNotInterestedTopic && (i = A.Z.select(e, t.richBehavior.markNotInterestedTopic.topicId));
+                        }),
+                        i
+                    );
+                },
+                O = (e, t) => {
                     const i = ((e, t) => {
                         const i = w(e, t),
                             n = [];
@@ -831,16 +831,16 @@
                     })(e, t);
                     return D.ZP.selectMany(e, i);
                 },
-                M = (0, T.Z)()
-                    .propsFromState(() => ({ feedbackActions: (0, g.Z)(Z, w, (e, t) => t.map((t, i) => ({ ...t, feedbackKey: e[i] }))), richFeedbackList: F, richFeedbackTopic: O, richFeedbackUsers: (0, g.Z)(L, (e) => e) }))
-                    .propsFromActions(({ module: e }) => ({ addToast: k.fz, applyFeedbackAction: e.applyFeedbackAction, block: D.ZP.block, createLocalApiErrorHandler: (0, b.zr)("FEEDBACK_ACTIONS_ENTRY_CONTAINER"), gracefullyReloadTimeline: () => (0, A.Z)(e), pinReply: v.C, scribe: I.richScribeAction, setTopicNotInterested: P.Z.notInterested, toggleListMuting: R.Z.toggleMute, topicFollow: P.Z.follow, topicUnfollow: P.Z.unfollow, unblock: D.ZP.unblock, undoFeedbackAction: e.undoFeedbackAction, undoTopicNotInterested: P.Z.undoNotInterested, unpinReply: v.e }))
+                C = (0, T.Z)()
+                    .propsFromState(() => ({ feedbackActions: (0, g.Z)(Z, w, (e, t) => t.map((t, i) => ({ ...t, feedbackKey: e[i] }))), richFeedbackList: F, richFeedbackTopic: L, richFeedbackUsers: (0, g.Z)(O, (e) => e) }))
+                    .propsFromActions(({ module: e }) => ({ addToast: R.fz, applyFeedbackAction: e.applyFeedbackAction, block: D.ZP.block, createLocalApiErrorHandler: (0, _.zr)("FEEDBACK_ACTIONS_ENTRY_CONTAINER"), gracefullyReloadTimeline: () => (0, P.Z)(e), pinReply: v.C, scribe: I.richScribeAction, setTopicNotInterested: A.Z.notInterested, toggleListMuting: k.Z.toggleMute, topicFollow: A.Z.follow, topicUnfollow: A.Z.unfollow, unblock: D.ZP.unblock, undoFeedbackAction: e.undoFeedbackAction, undoTopicNotInterested: A.Z.undoNotInterested, unpinReply: v.e }))
                     .withAnalytics();
-            var C = i(332920),
-                N = i.n(C),
+            var M = i(332920),
+                N = i.n(M),
                 B = i(372703),
                 H = i(360917),
-                U = i.n(H),
-                x = i(820803),
+                x = i.n(H),
+                U = i(820803),
                 K = i(873990),
                 z = i(376293),
                 $ = i(712816),
@@ -863,12 +863,12 @@
                         { action: o, component: a, element: l } = s;
                     return { page: t.page, section: t.section, component: a || t.component, element: l || t.element || e, action: o || t.action || "click" };
                 },
-                oe = (e, { addToast: t, block: i, createLocalApiErrorHandler: n, feedbackActions: r, feedbackEntry: s, feedbackMethods: o, gracefullyReloadTimeline: a, history: l, pinReply: c, richList: d, richTopic: p, richUsers: h, scribe: u, scribeData: m, scribeNamespace: y, setTopicNotInterested: f, toggleListMuting: _, topicFollow: b, topicUnfollow: g, unblock: E, undoTopicNotInterested: T, unpinReply: I }) =>
+                oe = (e, { addToast: t, block: i, createLocalApiErrorHandler: n, feedbackActions: r, feedbackEntry: s, feedbackMethods: o, gracefullyReloadTimeline: a, history: l, pinReply: c, richList: d, richTopic: p, richUsers: h, scribe: u, scribeData: m, scribeNamespace: y, setTopicNotInterested: f, toggleListMuting: b, topicFollow: _, topicUnfollow: g, unblock: E, undoTopicNotInterested: T, unpinReply: I }) =>
                     r.map((r) => {
-                        const { clientEventInfo: R, excludeFromActionMenu: v, feedbackKey: k, feedbackType: P, prompt: A, subprompt: D } = r,
+                        const { clientEventInfo: k, excludeFromActionMenu: v, feedbackKey: R, feedbackType: A, prompt: P, subprompt: D } = r,
                             S = ((e, t) => {
-                                const { addToast: i, block: n, createLocalApiErrorHandler: r, feedbackAction: s, feedbackEntry: o, feedbackKey: a, history: l, richList: c, richTopic: d, richUsers: p, scribe: h, scribeData: u, scribeNamespace: m, setTopicNotInterested: y, toggleListMuting: f, topicFollow: _, topicUnfollow: b, unblock: g, undoTopicNotInterested: E } = t;
-                                if (!s.richBehavior) return U();
+                                const { addToast: i, block: n, createLocalApiErrorHandler: r, feedbackAction: s, feedbackEntry: o, feedbackKey: a, history: l, richList: c, richTopic: d, richUsers: p, scribe: h, scribeData: u, scribeNamespace: m, setTopicNotInterested: y, toggleListMuting: f, topicFollow: b, topicUnfollow: _, unblock: g, undoTopicNotInterested: E } = t;
+                                if (!s.richBehavior) return x();
                                 if (s.richBehavior.replyPinState) return (0, W.$)(e, t);
                                 if (s.richBehavior?.blockUser) {
                                     const t = s.richBehavior?.blockUser?.userId,
@@ -890,7 +890,7 @@
                                               feedbackKey: a,
                                               willScribe: !0,
                                           }
-                                        : U();
+                                        : x();
                                 }
                                 if (s.richBehavior.reportList) {
                                     const { listId: e } = s.richBehavior.reportList,
@@ -913,9 +913,9 @@
                                     const { following: e, id: t, name: n } = d;
                                     return {
                                         text: e ? Y({ name: n }) : Q({ name: n }),
-                                        Icon: e ? x.default : K.default,
+                                        Icon: e ? U.default : K.default,
                                         onClick: () => {
-                                            (e ? b(t) : _(t)).then(() => {
+                                            (e ? _(t) : b(t)).then(() => {
                                                 i({ text: e ? ee({ name: n }) : te({ name: n }) }), h({ ...m, element: e ? "feedback_unfollow_topic" : "feedback_follow_topic", action: "click" }, u);
                                             });
                                         },
@@ -936,7 +936,7 @@
                                         };
                                     return {
                                         text: J({ name: t }),
-                                        Icon: x.default,
+                                        Icon: U.default,
                                         onClick: () => {
                                             y(e).then(() => {
                                                 h({ ...m, element: l, action: p }, u), n && i({ text: X, action: { label: ie, onAction: f } });
@@ -948,26 +948,26 @@
                                         willScribe: !0,
                                     };
                                 }
-                                return U();
-                            })(e, { addToast: t, block: i, createLocalApiErrorHandler: n, feedbackAction: r, feedbackEntry: s, feedbackKey: k, gracefullyReloadTimeline: a, history: l, pinReply: c, richList: d, richTopic: p, richUsers: h, scribe: u, scribeData: m, scribeNamespace: y, setTopicNotInterested: f, toggleListMuting: _, topicFollow: b, topicUnfollow: g, unblock: E, undoTopicNotInterested: T, unpinReply: I });
+                                return x();
+                            })(e, { addToast: t, block: i, createLocalApiErrorHandler: n, feedbackAction: r, feedbackEntry: s, feedbackKey: R, gracefullyReloadTimeline: a, history: l, pinReply: c, richList: d, richTopic: p, richUsers: h, scribe: u, scribeData: m, scribeNamespace: y, setTopicNotInterested: f, toggleListMuting: b, topicFollow: _, topicUnfollow: g, unblock: E, undoTopicNotInterested: T, unpinReply: I });
                         return {
-                            text: A || "",
+                            text: P || "",
                             subText: D,
                             Icon: (0, ne.w)(r),
                             excludeFromActionMenu: !!v,
                             ...S,
                             onClick: () => {
-                                const e = P !== B.ZP.SeeMore,
-                                    i = { entry: s, feedbackKeys: [k], isDismissibleFeedback: e },
+                                const e = A !== B.ZP.SeeMore,
+                                    i = { entry: s, feedbackKeys: [R], isDismissibleFeedback: e },
                                     n = s.itemMetadata?.feedbackInfo?.clientEventInfo;
-                                let a = { ...R };
-                                n && (a = { ...n, ...R });
+                                let a = { ...k };
+                                n && (a = { ...n, ...k });
                                 const l = (0, B.S4)(r, s);
                                 if ((l || a) && !S.willScribe) {
                                     const e = se(l, y, a);
                                     u(e, m);
                                 }
-                                P === B.ZP.RichBehavior && (S.onClick && S.onClick(), S.skipDefaultAction && (i.isDismissibleFeedback = !1)),
+                                A === B.ZP.RichBehavior && (S.onClick && S.onClick(), S.skipDefaultAction && (i.isDismissibleFeedback = !1)),
                                     o.applyFeedbackAction(i).then(() => {
                                         if (!e) {
                                             let e;
@@ -990,14 +990,14 @@
                     super(...e),
                         (this._getMemoizedInjectedProps = (0, c.Z)((e, t, i, n) => (e ? e({ entry: t, module: i, feedbackItems: n }) : void 0))),
                         (this._getSynthesizedFeedbackItems = () => {
-                            const { addToast: e, analytics: t, applyFeedbackAction: i, block: n, config: r, createLocalApiErrorHandler: s, entry: o, feedbackActions: a, gracefullyReloadTimeline: l, pinReply: c, richFeedbackList: d, richFeedbackTopic: p, richFeedbackUsers: h, scribe: u, setTopicNotInterested: m, toggleListMuting: y, topicFollow: f, topicUnfollow: _, unblock: b, undoFeedbackAction: g, undoTopicNotInterested: E, unpinReply: T } = this.props,
+                            const { addToast: e, analytics: t, applyFeedbackAction: i, block: n, config: r, createLocalApiErrorHandler: s, entry: o, feedbackActions: a, gracefullyReloadTimeline: l, pinReply: c, richFeedbackList: d, richFeedbackTopic: p, richFeedbackUsers: h, scribe: u, setTopicNotInterested: m, toggleListMuting: y, topicFollow: f, topicUnfollow: b, unblock: _, undoFeedbackAction: g, undoTopicNotInterested: E, unpinReply: T } = this.props,
                                 I = r.feedbackEntrySelector ? r.feedbackEntrySelector(o) : o,
-                                R = t.contextualScribeNamespace,
+                                k = t.contextualScribeNamespace,
                                 v = this._getEntryScribeData(o, r.getScribeDataItem),
-                                k = this._getEntryScribeNamespace(R, o, r.defaultScribeNamespace);
-                            return this._getMemoizedFeedbackItems(e, i, n, s, a, I, l, c, d, p, h, u, v, k, m, y, f, _, b, g, E, T);
+                                R = this._getEntryScribeNamespace(k, o, r.defaultScribeNamespace);
+                            return this._getMemoizedFeedbackItems(e, i, n, s, a, I, l, c, d, p, h, u, v, R, m, y, f, b, _, g, E, T);
                         }),
-                        (this._getMemoizedFeedbackItems = (0, c.Z)((e, t, i, n, r, s, o, a, l, c, d, p, h, u, m, y, f, _, b, g, E, T) => oe(this.context.featureSwitches, { addToast: e, block: i, createLocalApiErrorHandler: n, feedbackActions: r, feedbackEntry: s, feedbackMethods: { applyFeedbackAction: t, undoFeedbackAction: g }, gracefullyReloadTimeline: o, history: this.context.history, pinReply: a, richList: l, richTopic: c, richUsers: d, scribe: p, scribeData: h, scribeNamespace: u, setTopicNotInterested: m, toggleListMuting: y, topicFollow: f, topicUnfollow: _, unblock: b, undoTopicNotInterested: E, unpinReply: T }))),
+                        (this._getMemoizedFeedbackItems = (0, c.Z)((e, t, i, n, r, s, o, a, l, c, d, p, h, u, m, y, f, b, _, g, E, T) => oe(this.context.featureSwitches, { addToast: e, block: i, createLocalApiErrorHandler: n, feedbackActions: r, feedbackEntry: s, feedbackMethods: { applyFeedbackAction: t, undoFeedbackAction: g }, gracefullyReloadTimeline: o, history: this.context.history, pinReply: a, richList: l, richTopic: c, richUsers: d, scribe: p, scribeData: h, scribeNamespace: u, setTopicNotInterested: m, toggleListMuting: y, topicFollow: f, topicUnfollow: b, unblock: _, undoTopicNotInterested: E, unpinReply: T }))),
                         (this._getEntryScribeData = (0, c.Z)((e, t) => {
                             const { analytics: i } = this.props,
                                 n = i.contextualScribeData;
@@ -1040,75 +1040,49 @@
                     }
                     return null;
                 },
-                de = M(le);
-            var pe = i(614983),
-                he = i.n(pe),
-                ue = i(392237),
-                me = i(952428),
-                ye = i(661810),
-                fe = i(620522),
-                _e = i(323265);
-            const be = ue.default.create((e) => ({ item: { display: "block" }, divider: { width: "100%" }, dividerRedesign: { width: `calc(100% - ${e.spaces.space32})`, marginStart: e.spaces.space16, marginEnd: e.spaces.space16 } })),
-                ge = ({ children: e }) => e,
-                Ee =
+                de = C(le);
+            var pe = i(392237),
+                he = i(952428);
+            const ue = pe.default.create((e) => ({ divider: { display: "block", borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, item: { display: "block" } })),
+                me = ({ children: e }) => e,
+                ye =
                     (e, { isClickable: t, isEmpty: i, isFocusable: r, shouldDisplayBorder: s }) =>
                     (i, o, a, l) => {
                         const c = e(i, o);
                         if (!c) return null;
-                        const d = r(i) && a ? (e) => a(!!e) : (e) => a?.(!1),
-                            p = n.createRef(),
-                            u = n.createElement(h.rC.Consumer, null, ({ featureSwitches: e }) => {
-                                const r = e.isTrue("rweb_sourcemap_migration") && !_e.ZP.isMobileOS();
-                                return n.createElement(
-                                    ge,
-                                    { displayType: l, entry: i },
-                                    n.createElement(
-                                        me.Z,
-                                        {
-                                            style: be.item,
-                                            viewRef: (e) => {
-                                                (p.current = e), d(e);
-                                            },
-                                            withInteractiveStyling: t(i),
-                                        },
-                                        c,
-                                    ),
-                                    s(i) ? n.createElement(ye.Z, { style: r ? be.dividerRedesign : be.divider }) : null,
-                                );
-                            });
-                        return n.createElement(fe.Z.Consumer, null, ({ refsMap: e }) => (he()(e, "refsMap must be defined"), (e[i.entryId] = p), u));
+                        const d = r(i) && a ? (e) => a(!!e) : () => a?.(!1);
+                        return n.createElement(me, { displayType: l, entry: i }, n.createElement(he.Z, { style: s(i) ? ue.divider : ue.item, viewRef: d, withInteractiveStyling: t(i) }, c));
                     },
-                Te = ({ handlers: e, selectDisplayType: t }) => ({ selectDisplayType: t, handlers: e }),
-                Ie = "defaultDisplayType",
-                Re = (e) => ({ selectDisplayType: () => Ie, handlers: { [Ie]: e } }),
-                ve = r.Z,
-                ke = { top: !1, bottom: !1 },
-                Pe = (0, s.Z)(!1),
-                Ae = (0, s.Z)(!1),
-                De = (0, s.Z)(!1),
-                Se = ({ divider: e, shouldDisplayBorder: t = Pe, isClickable: i = Ae, isFocusable: r = De, isEmpty: s, ...o }) => {
+                fe = ({ handlers: e, selectDisplayType: t }) => ({ selectDisplayType: t, handlers: e }),
+                be = "defaultDisplayType",
+                _e = (e) => ({ selectDisplayType: () => be, handlers: { [be]: e } }),
+                ge = r.Z,
+                Ee = { top: !1, bottom: !1 },
+                Te = (0, s.Z)(!1),
+                Ie = (0, s.Z)(!1),
+                ke = (0, s.Z)(!1),
+                ve = ({ divider: e, shouldDisplayBorder: t = Te, isClickable: i = Ie, isFocusable: r = ke, isEmpty: s, ...o }) => {
                     const a = (e) => !e.parentModuleMetadata?.verticalMetadata?.suppressDividers && t(e);
                     return {
                         getHandler: (t) => {
                             const l = { ...o, injectProps: t };
-                            return { render: Ee((e, { module: t, renderEntry: i }) => n.createElement(de, { config: l, entry: e, module: t, renderEntry: i }), { isClickable: i, shouldDisplayBorder: a, isFocusable: r }), splice: void 0, divider: e || ke, getScribeDataItem: o.getScribeDataItem || ve, isEmpty: s, shouldDisplayBorder: a };
+                            return { render: ye((e, { module: t, renderEntry: i }) => n.createElement(de, { config: l, entry: e, module: t, renderEntry: i }), { isClickable: i, shouldDisplayBorder: a, isFocusable: r }), splice: void 0, divider: e || Ee, getScribeDataItem: o.getScribeDataItem || ge, isEmpty: s, shouldDisplayBorder: a };
                         },
                     };
                 },
-                Ze = ({ render: e, divider: t, shouldDisplayBorder: i = Pe, isClickable: n = Ae, getScribeDataItem: r = ve, isFocusable: s = De, isEmpty: o, isLoadingPlaceholder: a }) => ({ render: Ee(e, { shouldDisplayBorder: i, isClickable: n, isFocusable: s }), splice: void 0, divider: t || ke, getScribeDataItem: r, isEmpty: o, shouldDisplayBorder: i, isLoadingPlaceholder: a }),
-                we = ({ splice: e, divider: t, getScribeDataItem: i = ve }) => ({ render: void 0, splice: e, divider: t || ke, getScribeDataItem: i }),
-                Fe = (0, s.Z)({ render: void 0, splice: void 0, divider: ke, getScribeDataItem: ve, isOmitted: !0 });
+                Re = ({ render: e, divider: t, shouldDisplayBorder: i = Te, isClickable: n = Ie, getScribeDataItem: r = ge, isFocusable: s = ke, isEmpty: o, isLoadingPlaceholder: a }) => ({ render: ye(e, { shouldDisplayBorder: i, isClickable: n, isFocusable: s }), splice: void 0, divider: t || Ee, getScribeDataItem: r, isEmpty: o, shouldDisplayBorder: i, isLoadingPlaceholder: a }),
+                Ae = ({ splice: e, divider: t, getScribeDataItem: i = ge }) => ({ render: void 0, splice: e, divider: t || Ee, getScribeDataItem: i }),
+                Pe = (0, s.Z)({ render: void 0, splice: void 0, divider: Ee, getScribeDataItem: ge, isOmitted: !0 });
         },
         931162: (e, t, i) => {
             i.d(t, { D: () => s, R: () => r });
             var n = i(202784);
-            const r = i(620522).Z,
-                s = ({ children: e, fetch: t, prerollDisplayLocation: i }) => {
-                    const s = n.useRef({}),
-                        o = n.useMemo(() => ({ prerollDisplayLocation: i, refsMap: s.current, fetch: t }), [i, s, t]);
-                    return n.createElement(r.Provider, { value: o }, e);
+            const r = n.createContext({ prerollDisplayLocation: void 0 }),
+                s = ({ children: e, prerollDisplayLocation: t }) => {
+                    const i = n.useMemo(() => ({ prerollDisplayLocation: t }), [t]);
+                    return n.createElement(r.Provider, { value: i }, e);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c7141d9.9721c88a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c7141d9.e1871a4a.js.map

@@ -562,9 +562,9 @@
                 d = a(491831),
                 m = a(856151),
                 b = a(711223),
-                g = a(462770),
+                g = a(860747),
                 f = a(199213),
-                _ = a(469149),
+                _ = a(253518),
                 y = a(92235),
                 E = a(534763),
                 h = a(698537),
@@ -981,4 +981,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-cff17ecc.393db4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-cff17ecc.2213f30a.js.map

@@ -29,9 +29,9 @@
                 v = n(934265),
                 w = n(743080),
                 x = n(727384),
-                A = n(436117);
-            const S = Object.freeze({ [c.Rz.debit]: { label: "Send", title: "Send", successMessage: ({ formattedAmount: e }) => `Your payment of ${e} has been initiated!` }, [c.Rz.credit]: { label: "Request", title: "Request", successMessage: ({ formattedAmount: e }) => `Your request for ${e} has been sent!`, scanMessage: "Let others scan your QR Code to pay you." } }),
-                D = Object.freeze({ [c.Rz.debit]: A.d.CreateTransfer, [c.Rz.credit]: A.d.RequestTransfer });
+                S = n(436117);
+            const A = Object.freeze({ [c.Rz.debit]: { label: "Send", title: "Send", successMessage: ({ formattedAmount: e }) => `Your payment of ${e} has been initiated!` }, [c.Rz.credit]: { label: "Request", title: "Request", successMessage: ({ formattedAmount: e }) => `Your request for ${e} has been sent!`, scanMessage: "Let others scan your QR Code to pay you." } }),
+                D = Object.freeze({ [c.Rz.debit]: S.d.CreateTransfer, [c.Rz.credit]: S.d.RequestTransfer });
             var T = n(181234),
                 I = n(351743),
                 R = n.n(I),
@@ -94,7 +94,7 @@
                         l = (0, o.useHistory)(),
                         s = (0, w.jh)(),
                         g = (0, u.p)(ye, { user_id: n }).user.result,
-                        { balance: A } = (0, v.Z)(),
+                        { balance: S } = (0, v.Z)(),
                         { permissions: T, roles: I } = (0, Z.Z)({ fetchKey: "Payments" }),
                         R = (0, x.MO)({ permissions: T }),
                         M = "User" === g?.__typename,
@@ -111,7 +111,7 @@
                         ee = r.useCallback(() => {
                             X(null);
                         }, []),
-                        te = r.useMemo(() => ({ closePath: m.gp, redirectPath: B, redirectState: { userId: n, amount: O, step: c.cX.reviewPane, transferDirection: t } }), [B, n, O, t]),
+                        te = r.useMemo(() => ({ closePath: m.gp, redirectPath: B, redirectState: { userId: n, userScreenName: g?.core?.screen_name, amount: O, step: c.cX.reviewPane, transferDirection: t } }), [B, n, O, t, g]),
                         ne = r.useCallback((e) => {
                             $(e.target.value);
                         }, []),
@@ -125,7 +125,7 @@
                                     ee();
                                     const t = (0, x.Dc)(O),
                                         a = (0, x.p2)({ amount: t }),
-                                        { successMessage: r } = S[e],
+                                        { successMessage: r } = A[e],
                                         o = r({ formattedAmount: a });
                                     (e === c.Rz.credit ? Q : j)({ amount: t.toString(), description: Y, userId: n })
                                         .then((e) => {
@@ -142,18 +142,18 @@
                             [I, T, G, a, l, B, ee, O, Q, j, Y, n, J, te],
                         ),
                         re = W || K || !O || !N,
-                        oe = !A?.available_amount_local_micro || !O || (0, x.UV)({ balanceAmountMicro: A.available_amount_local_micro, amount: O }),
+                        oe = !S?.available_amount_local_micro || !O || (0, x.UV)({ balanceAmountMicro: S.available_amount_local_micro, amount: O }),
                         le = re || !R,
                         ie = re || !oe,
                         ce = r.useCallback(() => {
                             a.scribe({ page: "money", section: "p2p-transfer", element: "cancel", action: "click" });
                         }, [a]),
-                        se = t ? S[t]?.title : null,
+                        se = t ? A[t]?.title : null,
                         me = t === c.Rz.debit,
                         ue = r.createElement(y.ZP, { disabled: le, onPress: ae(c.Rz.credit), size: "large", style: w.ZP.button, type: "primaryFilled" }, K ? r.createElement(h.Z, null) : "Request"),
                         de = r.createElement(y.ZP, { disabled: ie, onPress: ae(c.Rz.debit), size: "large", style: w.ZP.button, type: "primaryFilled" }, W ? r.createElement(h.Z, null) : "Send"),
-                        pe = r.createElement(p.Z, { style: s.footer }, V ? r.createElement(P.ZP, { errors: V, linkState: te, roles: I }) : null, r.createElement(p.Z, { style: w.ZP.actionButtons }, t ? r.createElement(r.Fragment, null, r.createElement(y.ZP, { link: m.gp, onPress: ce, size: "large", style: w.ZP.button, type: "primaryOutlined" }, "Cancel"), me ? de : t === c.Rz.credit ? ue : null) : r.createElement(r.Fragment, null, ue, de)));
-                    return M ? r.createElement(f.Z, { backButtonType: "back", bottomBar: pe, history: l, withoutBottomBarMobile: !0 }, r.createElement(p.Z, { style: s.container }, r.createElement(E.ZP, { align: "center", size: "title2", style: w.ZP.title, weight: "heavy" }, se ?? "Send or Request"), g && r.createElement(C.Z, { user: g, withCenterAlign: !0 }), r.createElement(k.Z, { amount: O, balance: A, isValid: N, label: "Enter amount", name: "amount", setAmount: F, setIsValid: q, validateBalance: me }), r.createElement(b.Z, { label: "Optionally add a note", maxLength: c.w8, name: "description", onChange: ne, style: U.input, testID: "description", value: Y }))) : r.createElement(d.Z, { to: m.gp });
+                        pe = r.createElement(p.Z, { style: s.footer }, V ? r.createElement(P.ZP, { errors: V, linkState: te, opts: { counterPartyScreenName: g?.core?.screen_name }, roles: I }) : null, r.createElement(p.Z, { style: w.ZP.actionButtons }, t ? r.createElement(r.Fragment, null, r.createElement(y.ZP, { link: m.gp, onPress: ce, size: "large", style: w.ZP.button, type: "primaryOutlined" }, "Cancel"), me ? de : t === c.Rz.credit ? ue : null) : r.createElement(r.Fragment, null, ue, de)));
+                    return M ? r.createElement(f.Z, { backButtonType: "back", bottomBar: pe, history: l, withoutBottomBarMobile: !0 }, r.createElement(p.Z, { style: s.container }, r.createElement(E.ZP, { align: "center", size: "title2", style: w.ZP.title, weight: "heavy" }, se ?? "Send or Request"), g && r.createElement(C.Z, { user: g, withCenterAlign: !0 }), r.createElement(k.Z, { amount: O, balance: S, isValid: N, label: "Enter amount", name: "amount", setAmount: F, setIsValid: q, validateBalance: me }), r.createElement(b.Z, { label: "Optionally add a note", maxLength: c.w8, name: "description", onChange: ne, style: U.input, testID: "description", value: Y }))) : r.createElement(d.Z, { to: m.gp });
                 },
                 U = g.default.create((e) => ({ input: { paddingHorizontal: "0" } })),
                 N = r.memo(F),
@@ -214,7 +214,7 @@
                         u = (0, Q.v9)(K.ZP.selectViewerUser),
                         d = u?.id_str,
                         y = u?.screen_name,
-                        h = e ? S[e] : {},
+                        h = e ? A[e] : {},
                         { scanMessage: b, title: g } = h,
                         _ = r.useCallback((e) => e === d, [d]),
                         Z = r.useCallback(
@@ -401,11 +401,11 @@
                 v = n(392046),
                 w = n(226332),
                 x = n(727384),
-                A = n(844685),
-                S = n(165822);
+                S = n(844685),
+                A = n(165822);
             const D = ({ content: e, contentStyle: t, rightControl: n, subtext: r, title: o }) => {
                     const l = (0, u.jh)();
-                    return a.createElement(a.Fragment, null, a.createElement(A.Z, { rightControl: n, style: u.ZP.settingHeader, subtext: r, text: o }), a.createElement(S.Z, { "aria-label": o, containerStyle: l.tile, stackLayoutUpperStyle: t ?? u.ZP.upper, upper: e, withInteractiveStyling: !1 }));
+                    return a.createElement(a.Fragment, null, a.createElement(S.Z, { rightControl: n, style: u.ZP.settingHeader, subtext: r, text: o }), a.createElement(A.Z, { "aria-label": o, containerStyle: l.tile, stackLayoutUpperStyle: t ?? u.ZP.upper, upper: e, withInteractiveStyling: !1 }));
                 },
                 T = a.memo(D);
             var I = n(195816),
@@ -442,7 +442,7 @@
                         i = (0, c.hC)("payments_cards_as_payment_method_enabled"),
                         [m, _] = a.useState(null),
                         C = (0, Z.p)(),
-                        [A, S] = B(),
+                        [S, A] = B(),
                         D = o?.includes(g.d.DeletePaymentMethod),
                         I = o?.includes(g.d.CreatePaymentMethod),
                         R = a.useCallback(
@@ -459,14 +459,14 @@
                         ),
                         L = a.useCallback(() => {
                             m &&
-                                A({ paymentMethodId: m })
+                                S({ paymentMethodId: m })
                                     .then(() => {
                                         _(null), C({ text: "You account was successfully removed!" });
                                     })
                                     .catch(() => {
                                         C({ text: "Something went wrong. Please try again later." });
                                     });
-                        }, [C, m, A]),
+                        }, [C, m, S]),
                         F = a.createElement(
                             d.Z,
                             { style: u.ZP.setting },
@@ -478,7 +478,7 @@
                             a.createElement(p.ZP, { disabled: !I, icon: a.createElement(b.default, null), link: I ? O : void 0 }, a.createElement(y.ZP, { hoverLabel: I ? void 0 : { label: z } }, "Add bank account")),
                             i ? a.createElement(p.ZP, { disabled: !I, icon: a.createElement(b.default, null), link: I ? H : void 0 }, a.createElement(y.ZP, { hoverLabel: I ? void 0 : { label: z } }, "Add card")) : null,
                         );
-                    return a.createElement(a.Fragment, null, n === P.iF.LOADING ? a.createElement(h.Z, null) : a.createElement(T, { content: F, title: "Linked accounts" }), m ? a.createElement(E.Z, { confirmButtonDisabled: S, confirmButtonLabel: "Remove", confirmButtonType: "destructiveFilled", headline: "Remove linked account?", onCancel: () => _(null), onConfirm: L, text: "Your account will be removed from X" }) : null);
+                    return a.createElement(a.Fragment, null, n === P.iF.LOADING ? a.createElement(h.Z, null) : a.createElement(T, { content: F, title: "Linked accounts" }), m ? a.createElement(E.Z, { confirmButtonDisabled: A, confirmButtonLabel: "Remove", confirmButtonType: "destructiveFilled", headline: "Remove linked account?", onCancel: () => _(null), onConfirm: L, text: "Your account will be removed from X" }) : null);
                 },
                 U = { context: "PaymentsSettingsExternalAccounts" };
             function N(e) {
@@ -797,15 +797,15 @@
                 v = n(749286),
                 w = n(467734),
                 x = n(464978),
-                A = n(743080),
-                S = n(727384);
+                S = n(743080),
+                A = n(727384);
             const D = { page: "money", section: "transaction-details" },
                 T = [y.uv, y.r0, y.IN, y.HM, y.Jv],
                 I = "Amount",
                 R = (e) => {
                     const { history: t } = e,
                         n = (0, o.useParams)().transactionId,
-                        p = (0, A.jh)(),
+                        p = (0, S.jh)(),
                         { get_transaction_by_id: R } = (0, x.Z)(n || ""),
                         { __id: M, amount_local_micro: L, availability_date: B, base_amount_micro: z, challenge_id: O, created_at: H, currency: F, description: U, details: N, id: q, product_code: Y, reason_code: $, total_fees_micro: V, transaction_status: X, transaction_type: j } = R ?? {},
                         W = N?.receiver_results?.result,
@@ -814,9 +814,9 @@
                         G = N?.merchant_details,
                         J = N?.reference_transaction_id,
                         ee = (0, w.Z)({ senderId: Q?.rest_id }),
-                        te = (0, S.p6)(B),
-                        ne = (0, A.JU)(),
-                        ae = (0, S.y4)({ feeAmount: V, totalAmount: L, baseAmount: z }),
+                        te = (0, A.p6)(B),
+                        ne = (0, S.JU)(),
+                        ae = (0, A.y4)({ feeAmount: V, totalAmount: L, baseAmount: z }),
                         re = Y === m.x.Interest,
                         oe = re && j === u.x.Deposit,
                         le = re && j === u.x.Transfer,
@@ -824,52 +824,52 @@
                         ce = j === u.x.Withdraw,
                         se = Y === m.x.Transfer && !(ie || ce),
                         me = re || "User" !== W?.__typename || "User" !== Q?.__typename ? null : ee ? W : Q,
-                        ue = (0, S.zx)({ referenceTransactionId: J, transactionType: j }),
-                        de = (0, S.qU)({ transactionType: j, productCode: Y }),
-                        pe = ie || ce || de ? (0, S.Ou)(K) : null,
+                        ue = (0, A.zx)({ referenceTransactionId: J, transactionType: j }),
+                        de = (0, A.qU)({ transactionType: j, productCode: Y }),
+                        pe = ie || ce || de ? (0, A.Ou)(K) : null,
                         ye = me?.core?.screen_name,
-                        he = (0, S.Q1)({ status: X, transactionType: j, isViewerSender: ee, createdAt: H, productCode: Y, description: U, reasonCode: $ }),
+                        he = (0, A.Q1)({ status: X, transactionType: j, isViewerSender: ee, createdAt: H, productCode: Y, description: U, reasonCode: $ }),
                         Ee = Q?.core?.screen_name,
                         be = W?.core?.screen_name,
                         ge = ie ? pe : null,
                         fe = ce ? pe : null,
-                        _e = (0, S.Bl)({ status: X }),
-                        Ze = (0, S._T)({ status: X }),
+                        _e = (0, A.Bl)({ status: X }),
+                        Ze = (0, A._T)({ status: X }),
                         ke = "/notifications" === t.location.state?.previousPath && !oe && (_e || Ze),
-                        Pe = (0, S.EQ)({ productCode: Y, transactionType: j }),
-                        Ce = (0, S.zK)({ transactionType: j, productCode: Y, merchantDetails: G, amountType: he.amountType }),
-                        ve = Ce && Ce.location && (0, S.T7)(Ce.location),
+                        Pe = (0, A.EQ)({ productCode: Y, transactionType: j }),
+                        Ce = (0, A.zK)({ transactionType: j, productCode: Y, merchantDetails: G, amountType: he.amountType }),
+                        ve = Ce && Ce.location && (0, A.T7)(Ce.location),
                         we = Pe || de,
-                        xe = (0, S.pQ)({ productCode: Y, transactionType: j, account: pe }),
-                        Ae = a.useMemo(() => (n ? a.createElement(f.Z, { reportedHandle: ye, transactionId: n }) : null), [n, ye]),
-                        Se = (0, S.XT)({ status: X, transactionType: j, isViewerSender: ee }) || ke,
+                        xe = (0, A.pQ)({ productCode: Y, transactionType: j, account: pe }),
+                        Se = a.useMemo(() => (n ? a.createElement(f.Z, { reportedHandle: ye, transactionId: n }) : null), [n, ye]),
+                        Ae = (0, A.XT)({ status: X, transactionType: j, isViewerSender: ee }) || ke,
                         De = a.useCallback(() => {
                             T.some((e) => t.location.state?.previousPath?.startsWith(e)) ? t.push(y.gp) : t.goBack();
                         }, [t]),
-                        Te = Se ? a.createElement(r.Z, { style: p.footer }, q ? a.createElement(r.Z, { style: A.YP.actions }, a.createElement(_.Z, { amount: L, challengeId: O, currency: F, isViewerSender: ee, receiverScreenName: be, recordId: M, senderScreenName: Ee, status: X, transactionId: q, transactionType: j })) : null, ke ? a.createElement(l.ZP, { link: y.gp, size: ne, style: A.ZP.button, type: "primaryFilled" }, "View balance") : null) : void 0;
+                        Te = Ae ? a.createElement(r.Z, { style: p.footer }, q ? a.createElement(r.Z, { style: S.YP.actions }, a.createElement(_.Z, { amount: L, challengeId: O, currency: F, isViewerSender: ee, receiverScreenName: be, recordId: M, senderScreenName: Ee, status: X, transactionId: q, transactionType: j })) : null, ke ? a.createElement(l.ZP, { link: y.gp, size: ne, style: S.ZP.button, type: "primaryFilled" }, "View balance") : null) : void 0;
                     return a.createElement(
                         h.nO,
                         { namespace: D },
                         a.createElement(
                             d.Z,
-                            { bottomBar: Te, history: t, onBackClick: De, rightControl: Ae, withoutBottomBarMobile: !0 },
+                            { bottomBar: Te, history: t, onBackClick: De, rightControl: Se, withoutBottomBarMobile: !0 },
                             a.createElement(
                                 r.Z,
                                 { style: p.container },
                                 a.createElement(
                                     r.Z,
-                                    { style: A.YP.content },
-                                    xe ? a.createElement(r.Z, { style: A.YP.gap }, a.createElement(b.KR, { size: "xJumbo", type: xe.iconType, uri: xe.uri }), a.createElement(C.Z, { size: "title4", title: xe.title })) : me ? a.createElement(v.Z, { avatarWithLink: !0, user: me, usernameWithLink: !0 }) : Ce ? a.createElement(r.Z, { style: A.YP.gap }, a.createElement(b.G7, { size: "xJumbo", type: Ce.type, uri: Ce.logo }), a.createElement(g.Z, { name: Ce.name, size: "title4" })) : null,
+                                    { style: S.YP.content },
+                                    xe ? a.createElement(r.Z, { style: S.YP.gap }, a.createElement(b.KR, { size: "xJumbo", type: xe.iconType, uri: xe.uri }), a.createElement(C.Z, { size: "title4", title: xe.title })) : me ? a.createElement(v.Z, { avatarWithLink: !0, user: me, usernameWithLink: !0 }) : Ce ? a.createElement(r.Z, { style: S.YP.gap }, a.createElement(b.G7, { size: "xJumbo", type: Ce.type, uri: Ce.logo }), a.createElement(g.Z, { name: Ce.name, size: "title4" })) : null,
                                     a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, he.createdAt),
-                                    a.createElement(r.Z, { style: [A.YP.gap, A.YP.marginTop] }, L ? a.createElement(E.Z, { amount: L, currency: F, hasCompleted: Ze, type: he.amountType }) : null, se ? (he.description ? a.createElement(k.Z, { color: "gray700", note: he.description }) : null) : a.createElement(i.ZP, { color: "gray700" }, ae ? "Total" : I)),
+                                    a.createElement(r.Z, { style: [S.YP.gap, S.YP.marginTop] }, L ? a.createElement(E.Z, { amount: L, currency: F, hasCompleted: Ze, type: he.amountType }) : null, se ? (he.description ? a.createElement(k.Z, { color: "gray700", note: he.description }) : null) : a.createElement(i.ZP, { color: "gray700" }, ae ? "Total" : I)),
                                     a.createElement(c.Z, { spacing: "space12" }),
-                                    a.createElement(r.Z, { style: A.ZP.rowSpaceBetween }, a.createElement(Z.Z, { description: he.status, title: "Status" }), te ? a.createElement(a.Fragment, null, a.createElement(s.default, { style: A.YP.arrow }), a.createElement(Z.Z, { description: te, title: "Funds available on" })) : null),
+                                    a.createElement(r.Z, { style: S.ZP.rowSpaceBetween }, a.createElement(Z.Z, { description: he.status, title: "Status" }), te ? a.createElement(a.Fragment, null, a.createElement(s.default, { style: S.YP.arrow }), a.createElement(Z.Z, { description: te, title: "Funds available on" })) : null),
                                     ae && V && "0" !== V && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: V, currency: F, size: "body", weight: "normal" }), title: "Fee" }),
                                     ae && z && "0" !== z && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: z, currency: F, size: "body", weight: "normal" }), title: I }),
                                     ge && a.createElement(Z.Z, { description: a.createElement(P.Z, { account: ge, testId: "source" }), title: "Source" }),
                                     fe && a.createElement(Z.Z, { description: a.createElement(P.Z, { account: fe, testId: "destination" }), title: "Destination" }),
                                     ue ? a.createElement(Z.Z, { description: a.createElement(i.ZP, { color: "text", link: ue }, J), title: "Original transaction" }) : null,
-                                    le && H ? a.createElement(Z.Z, { description: (0, S.nV)(H), title: "Period" }) : null,
+                                    le && H ? a.createElement(Z.Z, { description: (0, A.nV)(H), title: "Period" }) : null,
                                     Ce && pe && pe.issuedCardAccountName ? a.createElement(Z.Z, { description: a.createElement(P.Z, { account: pe, isIssued: !0, testId: "issuedCard" }), title: "Card used" }) : null,
                                     ve ? a.createElement(Z.Z, { description: ve, title: "Location" }) : null,
                                     a.createElement(Z.Z, { description: q, title: "Transaction ID" }),
@@ -923,4 +923,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.2417636a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.d100309a.js.map
