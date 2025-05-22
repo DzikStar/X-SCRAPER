@@ -11,7 +11,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         56902: (e) => {
-            e.exports = { queryId: "3huQZ5X8fYMVBzIEDgZDeQ", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "99nNyl0svxJgCbB-sh5ZHg", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         610008: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -32,7 +32,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         456085: (e) => {
-            e.exports = { queryId: "nNWsifPdB_FSBeU1v4rJpw", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "Ishd84Zga7NEhblatALH6A", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         203044: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -47,8 +47,8 @@
             "use strict";
             o.d(t, { Z: () => L });
             var n = o(468811),
-                i = o.n(n),
-                s = o(163889),
+                s = o.n(n),
+                i = o(163889),
                 r = o(784538),
                 a = o.n(r),
                 l = o(633229),
@@ -77,8 +77,8 @@
                 P = o.n(E);
             function L({ apiClient: e }) {
                 return {
-                    clearConversations: (t, o) => e.graphQL(a(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, s.ZP)("GraphQL clear grok conversations failed."), e)),
-                    setPreferences: ({ grokMode: t, grokModelOptionId: o }) => e.graphQL(P(), { grokMode: t, grokModelOptionId: o }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, s.ZP)("GraphQL set grok preferences failed."), e)),
+                    clearConversations: (t, o) => e.graphQL(a(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, i.ZP)("GraphQL clear grok conversations failed."), e)),
+                    setPreferences: ({ grokMode: t, grokModelOptionId: o }) => e.graphQL(P(), { grokMode: t, grokModelOptionId: o }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, i.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(c(), { restId: t }).then((e) => e),
                     fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(T(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(m(), {}).then((e) => e),
@@ -92,7 +92,7 @@
                     grokUnpinConversation: ({ conversationId: t }) => e.graphQL(x(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: o }) => {
                         const n = new FormData();
-                        return n.append("image", o), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": i().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
+                        return n.append("image", o), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": s().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
                     },
                 };
             }
@@ -101,8 +101,8 @@
             "use strict";
             o.d(t, { Z: () => u });
             var n = o(807896),
-                i = o(202784),
-                s = o(182056),
+                s = o(202784),
+                i = o(182056),
                 r = o(879113),
                 a = o(392237),
                 l = o(332920),
@@ -110,11 +110,11 @@
                 h = o(968478);
             const c = d().aa6e3300,
                 _ = ({ retryMessage: e, ...t }, o) => {
-                    const a = s.Z.isOnline();
-                    return i.createElement(r.Z, (0, n.Z)({}, t, { icon: a ? void 0 : i.createElement(h.default, { style: p.icon }), retryMessage: a ? e : c }));
+                    const a = i.Z.isOnline();
+                    return s.createElement(r.Z, (0, n.Z)({}, t, { icon: a ? void 0 : s.createElement(h.default, { style: p.icon }), retryMessage: a ? e : c }));
                 },
                 p = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                u = i.forwardRef(_);
+                u = s.forwardRef(_);
         },
         123702: (e, t, o) => {
             "use strict";
@@ -162,10 +162,10 @@
         },
         300234: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => Y });
+            o.d(t, { Z: () => V });
             var n = o(202784),
-                i = o(325686),
-                s = o(284702),
+                s = o(325686),
+                i = o(284702),
                 r = o(174326),
                 a = o(521812),
                 l = o(392237),
@@ -211,9 +211,9 @@
                         });
                 }
                 render() {
-                    const { children: e, onDismiss: t, onLayout: o, style: s } = this.props,
+                    const { children: e, onDismiss: t, onLayout: o, style: i } = this.props,
                         r = !!t;
-                    return n.createElement(i.Z, { onLayout: o, onTouchEnd: r ? this._handleTouchEnd : void 0, onTouchMove: r ? this._handleTouchMove : void 0, onTouchStart: r ? this._handleTouchStart : void 0, style: s, testID: "swipe-to-dismiss" }, e);
+                    return n.createElement(s.Z, { onLayout: o, onTouchEnd: r ? this._handleTouchEnd : void 0, onTouchMove: r ? this._handleTouchMove : void 0, onTouchStart: r ? this._handleTouchStart : void 0, style: i, testID: "swipe-to-dismiss" }, e);
                 }
             }
             const C = v;
@@ -235,12 +235,12 @@
                     (0, d.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), E._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
                 }
                 render() {
-                    const { dataSaver: e, imageStyle: t, onError: o, onLoad: s, onTap: r, onZoomed: a, photo: l, resetZoom: d, style: h, zoomable: c } = this.props,
+                    const { dataSaver: e, imageStyle: t, onError: o, onLoad: i, onTap: r, onZoomed: a, photo: l, resetZoom: d, style: h, zoomable: c } = this.props,
                         { loadingVariant: _ } = this.state,
                         p = (e && _ && Math.max(_.width, _.height) >= 680 ? _.uri : null) || E._selectSource(l);
                     if (!p || null === _) return null;
-                    const u = n.createElement(k.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : I, defaultSource: _ && _.uri, draggable: !0, onError: _ ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [P.img, t] });
-                    return n.createElement(i.Z, { style: h }, this.state.imageLoading ? L : null, c ? n.createElement(Z.Z, { onTap: r, onZoomed: a, resetZoom: d }, u) : u);
+                    const u = n.createElement(k.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : I, defaultSource: _ && _.uri, draggable: !0, onError: _ ? void 0 : o, onLoad: i, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: p, style: [P.img, t] });
+                    return n.createElement(s.Z, { style: h }, this.state.imageLoading ? L : null, c ? n.createElement(Z.Z, { onTap: r, onZoomed: a, resetZoom: d }, u) : u);
                 }
                 static _selectCachedVariant(e) {
                     const t = T.Z.getOriginalImage(e);
@@ -268,7 +268,7 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: q.root }, this._renderVideo()));
+                    return n.createElement(s.Z, { style: e }, n.createElement(s.Z, { style: A.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
@@ -276,13 +276,13 @@
                 }
                 _renderVideo() {
                     const { promotedContent: e, video: t, videoId: o } = this.props,
-                        [i, r] = t.video_info.aspect_ratio,
-                        a = s.Z.extractVideoProps(o, t);
-                    return (a.aspectRatio = i / r), n.createElement(M.Z, (0, u.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                        [s, r] = t.video_info.aspect_ratio,
+                        a = i.Z.extractVideoProps(o, t);
+                    return (a.aspectRatio = s / r), n.createElement(M.Z, (0, u.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const q = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                A = B,
+            const A = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                q = B,
                 G = b().ac85c6b2,
                 W = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: d, promotedContent: h, videoId: c, ..._ } = e,
@@ -322,7 +322,7 @@
                         p
                             ? null
                             : n.createElement(
-                                  i.Z,
+                                  s.Z,
                                   {
                                       onClick: (e) => {
                                           e.stopPropagation();
@@ -346,15 +346,15 @@
                                                 zoomable: !0,
                                             }),
                                         )
-                                      : s.Z.isVideo(a) && c
-                                        ? n.createElement(A, { isCurrentlyDisplayed: r, promotedContent: h, style: $.container, video: a, videoId: c })
+                                      : i.Z.isVideo(a) && c
+                                        ? n.createElement(q, { isCurrentlyDisplayed: r, promotedContent: h, style: $.container, video: a, videoId: c })
                                         : null,
                               ),
                     );
                 },
                 $ = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
                 R = n.memo(W, (e, t) => (0, d.Z)(e, t));
-            class U extends n.Component {
+            class N extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -401,31 +401,31 @@
                 render() {
                     const { businessAvatar: e, dataSaver: t, mediaIndex: o, mediaItems: r, onDismiss: a, onTap: l, promotedContent: d } = this.props,
                         { isZoomed: h } = this.state,
-                        c = r.map((i, c) => {
-                            const _ = s.Z.isVideo(i),
-                                p = this._getItemVideoId(i),
+                        c = r.map((s, c) => {
+                            const _ = i.Z.isVideo(s),
+                                p = this._getItemVideoId(s),
                                 u = o === c;
                             return _ && !p ? null : n.createElement(R, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: c, mediaDetail: r[c], onDismiss: h ? void 0 : a, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== c, videoId: p });
                         });
-                    return n.createElement(i.Z, { style: V.root }, r.length > 1 ? this._renderCarousel(c) : c);
+                    return n.createElement(s.Z, { style: U.root }, r.length > 1 ? this._renderCarousel(c) : c);
                 }
                 _renderCarousel(e) {
-                    const { dominantColor: t, mediaIndex: o, mediaItems: i, onMediaItemChanged: l } = this.props,
+                    const { dominantColor: t, mediaIndex: o, mediaItems: s, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
-                        h = s.Z.isVideo(i[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [V.dimensions, V.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: V.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !h, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                        h = i.Z.isVideo(s[o]);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [U.dimensions, U.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: U.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !h, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (U.contextType = _.rC), (U.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: h.Z, onMediaItemChanged: h.Z });
-            const V = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                Y = p(U);
+            (N.contextType = _.rC), (N.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: h.Z, onMediaItemChanged: h.Z });
+            const U = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                V = p(N);
         },
         827094: (e, t, o) => {
             "use strict";
             o.d(t, { Z: () => b });
             var n = o(202784),
-                i = o(325686),
-                s = o(108362),
+                s = o(325686),
+                i = o(108362),
                 r = o(530732),
                 a = o(154003),
                 l = o(386802),
@@ -464,12 +464,12 @@
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: T }, t, o ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.footerButtons, b && k, b && y.footerButtonsAbsolute, h && y.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(s.Z, { onClick: this._handleBackgroundPress, style: T }, t, o ? n.createElement(s.Z, { pointerEvents: h ? "none" : void 0, style: [y.footerButtons, b && k, b && y.footerButtonsAbsolute, h && y.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: h ? "none" : void 0, role: "none", style: [y.buttonWrapper, y.buttonWrapperLeft, u.nk, h && y.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(_.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: c || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
-                        v ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, u.nk, h && y.fadeOut] }, v) : null,
+                        v ? n.createElement(s.Z, { pointerEvents: h ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, u.nk, h && y.fadeOut] }, v) : null,
                         x
                             ? n.createElement(
-                                  i.Z,
+                                  s.Z,
                                   { style: [y.buttonWrapperBottomCenter, u.nk, h && y.fadeOut] },
                                   n.createElement(
                                       a.ZP,
@@ -500,7 +500,7 @@
                     return (
                         n.useEffect(() => {
                             e(t);
-                        }, [t]),
+                        }, [e, t]),
                         null
                     );
                 };
@@ -509,8 +509,8 @@
             "use strict";
             o.d(t, { Z: () => p });
             var n = o(202784),
-                i = o(476984),
-                s = o.n(i),
+                s = o(476984),
+                i = o.n(s),
                 r = o(143778),
                 a = o(750410),
                 l = o(682830);
@@ -522,13 +522,13 @@
                 shouldComponentUpdate(e) {
                     const t = e.fetchStatus === h,
                         o = this.props.fetchStatus !== e.fetchStatus;
-                    return !(!t && !o) || !s()(e, this.props);
+                    return !(!t && !o) || !i()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: o, fetchStatus: i, icon: s, loadingMessage: r, onRequestRetry: h, render: p, renderFailure: u, retryMessage: m, retryable: g } = this.props;
-                    switch (i) {
+                    const { "aria-label": e, color: t, failureMessage: o, fetchStatus: s, icon: i, loadingMessage: r, onRequestRetry: h, render: p, renderFailure: u, retryMessage: m, retryable: g } = this.props;
+                    switch (s) {
                         case d:
-                            return g ? n.createElement(a.Z, { icon: s, onRequestRetry: h, retryMessage: m }) : o ? n.createElement(l.m, { failureMessage: o }) : u();
+                            return g ? n.createElement(a.Z, { icon: i, onRequestRetry: h, retryMessage: m }) : o ? n.createElement(l.m, { failureMessage: o }) : u();
                         case c:
                             return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: r });
                         case _:
@@ -544,8 +544,8 @@
             "use strict";
             o.d(t, { Z: () => b });
             var n = o(202784),
-                i = o(196001),
-                s = o(325686),
+                s = o(196001),
+                i = o(325686),
                 r = o(837880),
                 a = o(516951),
                 l = o(933895),
@@ -576,9 +576,9 @@
                         }),
                         (this._handleTouchEnd = (e) => {
                             const { maxZoom: t, minZoom: o, onTap: n } = this.props,
-                                i = p(o, t, this.state.zoom),
-                                { zoom: s } = this.state;
-                            s !== i && 1 === i ? this.resetZoom() : this.setState({ lastX: 0, lastY: 0, zoom: i }), 0 === e.touches.length ? ((this._isTouching = !1), this._lastTouchTime && this._lastTouchTime + 300 > e.timeStamp ? (this._clickTimer && clearTimeout(this._clickTimer), this._handleDoubleTap(e)) : s <= 1 && !this._moved && (this._clickTimer = setTimeout(n, 300)), (this._lastTouchTime = e.timeStamp)) : e.preventDefault();
+                                s = p(o, t, this.state.zoom),
+                                { zoom: i } = this.state;
+                            i !== s && 1 === s ? this.resetZoom() : this.setState({ lastX: 0, lastY: 0, zoom: s }), 0 === e.touches.length ? ((this._isTouching = !1), this._lastTouchTime && this._lastTouchTime + 300 > e.timeStamp ? (this._clickTimer && clearTimeout(this._clickTimer), this._handleDoubleTap(e)) : i <= 1 && !this._moved && (this._clickTimer = setTimeout(n, 300)), (this._lastTouchTime = e.timeStamp)) : e.preventDefault();
                         }),
                         (this.state = { ...c });
                 }
@@ -589,11 +589,11 @@
                     if (!h) return this.props.children;
                     const { zoom: e, zoomCenter: t } = this.state,
                         o = this._moved,
-                        r = { zoom: this._isTouching ? e : (0, i.ST)(e), zoomCenterX: this._isTouching ? t.x : (0, i.ST)(t.x), zoomCenterY: this._isTouching ? t.y : (0, i.ST)(t.y) };
+                        r = { zoom: this._isTouching ? e : (0, s.ST)(e), zoomCenterX: this._isTouching ? t.x : (0, s.ST)(t.x), zoomCenterY: this._isTouching ? t.y : (0, s.ST)(t.y) };
                     return n.createElement(
-                        s.Z,
+                        i.Z,
                         { onTouchEnd: this._handleTouchEnd, onTouchStart: this._handleTouchStart, ref: this._setTouchableNode, style: f.fill },
-                        n.createElement(i.y_, { style: r }, ({ zoom: e, zoomCenterX: i, zoomCenterY: r }) => n.createElement(s.Z, { ref: this._ref, style: [f.fill, { transform: [{ scale: e }], transformOrigin: `${o ? i : t.x}px ${o ? r : t.y}px` }] }, this.props.children)),
+                        n.createElement(s.y_, { style: r }, ({ zoom: e, zoomCenterX: s, zoomCenterY: r }) => n.createElement(i.Z, { ref: this._ref, style: [f.fill, { transform: [{ scale: e }], transformOrigin: `${o ? s : t.x}px ${o ? r : t.y}px` }] }, this.props.children)),
                     );
                 }
                 componentDidMount() {
@@ -611,14 +611,14 @@
                     if (!this.state.lastX || !this.state.lastY) return void this.setState({ lastX: t, lastY: o });
                     const {
                             lastX: n,
-                            lastY: i,
-                            zoomCenter: { x: s, y: a },
+                            lastY: s,
+                            zoomCenter: { x: i, y: a },
                         } = this.state,
                         { height: l, width: d } = this._windowDimensions,
                         { height: h, width: c } = this._zoomedDimensions;
                     let _ = 0,
                         p = 0;
-                    c - d > 0 && (_ = t - n), h - l > 0 && (p = o - i), this.setState({ lastX: t, lastY: o, zoomCenter: { x: (0, r.Z)(s - _, 0, d), y: (0, r.Z)(a - p, 0, l) } });
+                    c - d > 0 && (_ = t - n), h - l > 0 && (p = o - s), this.setState({ lastX: t, lastY: o, zoomCenter: { x: (0, r.Z)(i - _, 0, d), y: (0, r.Z)(a - p, 0, l) } });
                 }
                 _handlePinchStart(e) {
                     const { touches: t } = e;
@@ -629,17 +629,17 @@
                 }
                 _handlePinchMove(e) {
                     const { touches: t } = e,
-                        { lastX: o, lastY: n, zoom: i, zoomCenter: s } = this.state,
+                        { lastX: o, lastY: n, zoom: s, zoomCenter: i } = this.state,
                         { maxZoom: a, maxZoomBounce: l, minZoom: d, minZoomBounce: h } = this.props;
-                    if (0 === s.x && 0 === s.y) return void (2 === e.touches.length && this._handlePinchStart(e));
+                    if (0 === i.x && 0 === i.y) return void (2 === e.touches.length && this._handlePinchStart(e));
                     const c = u(t[0], t[1]),
                         _ = this._lastDistance ? c / this._lastDistance : 1,
-                        g = p(d - h, a + l, i * _),
+                        g = p(d - h, a + l, s * _),
                         f = m(t[0], t[1]),
                         b = (() => {
-                            if (!this._windowDimensions || !o) return s;
+                            if (!this._windowDimensions || !o) return i;
                             const { height: e, width: t } = this._windowDimensions;
-                            return { x: (0, r.Z)(s.x - (f.x - o), 0, t), y: (0, r.Z)(s.y - (f.y - n), 0, e) };
+                            return { x: (0, r.Z)(i.x - (f.x - o), 0, t), y: (0, r.Z)(i.y - (f.y - n), 0, e) };
                         })();
                     (this._lastDistance = c), this.setState({ lastX: f.x, lastY: f.y, zoom: g, zoomCenter: b });
                 }
@@ -676,13 +676,13 @@
         890103: (e, t, o) => {
             "use strict";
             var n = o(609859),
-                i = o(807400),
-                s = o(396616),
+                s = o(807400),
+                i = o(396616),
                 r = o(730895),
                 a = o(824229),
                 l = n.RegExp,
                 d = l.prototype;
-            i &&
+            s &&
                 a(function () {
                     var e = !0;
                     try {
@@ -693,19 +693,19 @@
                     var t = {},
                         o = "",
                         n = e ? "dgimsy" : "gimsy",
-                        i = function (e, n) {
+                        s = function (e, n) {
                             Object.defineProperty(t, e, {
                                 get: function () {
                                     return (o += n), !0;
                                 },
                             });
                         },
-                        s = { dotAll: "s", global: "g", ignoreCase: "i", multiline: "m", sticky: "y" };
-                    for (var r in (e && (s.hasIndices = "d"), s)) i(r, s[r]);
+                        i = { dotAll: "s", global: "g", ignoreCase: "i", multiline: "m", sticky: "y" };
+                    for (var r in (e && (i.hasIndices = "d"), i)) s(r, i[r]);
                     return Object.getOwnPropertyDescriptor(d, "flags").get.call(t) !== n || o !== n;
                 }) &&
-                s(d, "flags", { configurable: !0, get: r });
+                i(d, "flags", { configurable: !0, get: r });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.143cc46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.0a060cda.js.map

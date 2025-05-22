@@ -30,7 +30,7 @@
             const s = n.Z,
                 u = ({ user: e, ...t }) => {
                     const r = o()(s, e);
-                    return i.createElement(c.Z, (0, a.Z)({}, t, { screenName: r.legacy?.screen_name, uri: r.avatar?.image_url ?? void 0 }));
+                    return i.createElement(c.Z, (0, a.Z)({}, t, { screenName: r.core?.screen_name, uri: r.avatar?.image_url ?? void 0 }));
                 };
         },
         421813: (e, t, r) => {
@@ -45,9 +45,9 @@
             const u = i.Z,
                 d = n.Z,
                 m = ({ user: e, viewer: t, ...r }) => {
-                    const { legacy: n } = c()(u, e),
-                        i = c()(d, t);
-                    return l.createElement(s.Z, (0, a.Z)({}, r, { followersCount: n?.followers_count ?? 0, friendsCount: n?.friends_count ?? 0, screenName: n?.screen_name ?? "", subscribersCount: i?.super_followers_count || void 0 }));
+                    const { core: n, legacy: i } = c()(u, e),
+                        o = c()(d, t);
+                    return l.createElement(s.Z, (0, a.Z)({}, r, { followersCount: i?.followers_count ?? 0, friendsCount: i?.friends_count ?? 0, screenName: n?.screen_name ?? "", subscribersCount: o?.super_followers_count || void 0 }));
                 };
         },
         148642: (e, t, r) => {
@@ -382,4 +382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-63cb1cc4.8d0b0a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-63cb1cc4.bdb3d6fa.js.map

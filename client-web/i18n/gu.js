@@ -12041,7 +12041,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(", " ફી)"];
                             },
                         },
                         {
@@ -12707,7 +12707,7 @@
                         {
                             key: "hf3108d3",
                             get: function () {
-                                return ["", ", અને "];
+                                return ["", " અને "];
                             },
                         },
                         {
@@ -13273,4 +13273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.b91f2b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.31504c3a.js.map

@@ -2,8 +2,8 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsMonetization-213f649d"],
     {
-        246489: (e, a, l) => {
-            l.d(a, { Z: () => m });
+        246489: (e, l, a) => {
+            a.d(l, { Z: () => m });
             var n,
                 i,
                 s,
@@ -88,14 +88,25 @@
                                                             {
                                                                 alias: null,
                                                                 args: null,
+                                                                concreteType: "UserCore",
+                                                                kind: "LinkedField",
+                                                                name: "core",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                            {
+                                                                alias: null,
+                                                                args: null,
                                                                 concreteType: "ApiUser",
                                                                 kind: "LinkedField",
                                                                 name: "legacy",
                                                                 plural: !1,
                                                                 selections: [
                                                                     { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null },
                                                                 ],
                                                                 storageKey: null,
@@ -219,30 +230,13 @@
                             },
                         ],
                     },
-                    params: { id: "AmsgiDwg9lH16aygiMiR3w", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
+                    params: { id: "NUPBb5BpK9sWG7nMoO34eg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
                 };
             g.hash = "b3a3da30429069de6ce258edaa91d161";
             const m = g;
         },
-        658156: (e, a, l) => {
-            l.d(a, { Z: () => i });
-            var n = {
-                argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
-                kind: "Fragment",
-                metadata: null,
-                name: "PayoutThresholdProgress_user",
-                selections: [
-                    { args: [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }], kind: "FragmentSpread", name: "useMonetizationPayoutAmount_user" },
-                    { args: null, kind: "FragmentSpread", name: "useMonetizationPayoutThresholdAmount_user" },
-                ],
-                type: "User",
-                abstractKey: null,
-                hash: "1f946f97a51b8e59702c211b210f1663",
-            };
-            const i = n;
-        },
-        158163: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        158163: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -259,13 +253,13 @@
             };
             const i = n;
         },
-        915814: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        915814: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "PayoutsList_creatorPayoutSlice", selections: [{ args: null, kind: "FragmentSpread", name: "useMonetizationHistory_creatorPayoutSlice" }], type: "CreatorPayoutSlice", abstractKey: null, hash: "7697338c8a5c8450e997d2b88465cb00" };
             const i = n;
         },
-        469363: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        469363: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -313,13 +307,13 @@
             };
             const i = n;
         },
-        564018: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        564018: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SubscribersList_superfollowsSubscriptionSlice", selections: [{ args: null, kind: "FragmentSpread", name: "useMonetizationHistory_superfollowsSubscriptionSlice" }], type: "SuperfollowsSubscriptionSlice", abstractKey: null, hash: "bf4c54adb11a4b93d0b2383aea71196b" };
             const i = n;
         },
-        102614: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        102614: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -346,8 +340,8 @@
             };
             const i = n;
         },
-        399384: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        399384: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -364,8 +358,8 @@
             };
             const i = n;
         },
-        371758: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        371758: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -381,33 +375,28 @@
             };
             const i = n;
         },
-        228820: (e, a, l) => {
-            l.d(a, { Z: () => i });
-            var n = { argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }], kind: "Fragment", metadata: null, name: "SuperFollowsSettingsInternalLinkPivot_user", selections: [{ args: [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }], kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }], type: "User", abstractKey: null, hash: "703fdd6a0065aec8ec26a16a33fa6bfe" };
-            const i = n;
-        },
-        470199: (e, a, l) => {
-            l.d(a, { x: () => n });
+        470199: (e, l, a) => {
+            a.d(l, { x: () => n });
             const n = Object.freeze({ AppStore: "AppStore", PlayStore: "PlayStore", Stripe: "Stripe", Web: "Web" });
         },
-        656166: (e, a, l) => {
-            l.d(a, { x: () => n });
+        656166: (e, l, a) => {
+            a.d(l, { x: () => n });
             const n = Object.freeze({ InitialSale: "InitialSale", Renewal: "Renewal" });
         },
-        428606: (e, a, l) => {
-            l.d(a, { Z: () => s });
+        428606: (e, l, a) => {
+            a.d(l, { Z: () => s });
             var n,
                 i = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsDeactivateMutation", selections: (n = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "awards_feature_deactivate", storageKey: 'awards_feature_deactivate(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useAwardsDeactivateMutation", selections: n }, params: { id: "01C9DqWmpi6YUNYaIWMBwA", metadata: {}, name: "useAwardsDeactivateMutation", operationKind: "mutation", text: null } };
             i.hash = "13e5f85637ab2360823b10c0eb64d939";
             const s = i;
         },
-        97141: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        97141: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsDeactivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "f0c8fb39a573eeb9f480e2b1452b75b1" };
             const i = n;
         },
-        58367: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        58367: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -435,8 +424,8 @@
             };
             const i = n;
         },
-        496790: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        496790: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -464,8 +453,8 @@
             };
             const i = n;
         },
-        483169: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        483169: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -493,51 +482,8 @@
             };
             const i = n;
         },
-        689438: (e, a, l) => {
-            l.d(a, { Z: () => s });
-            var n,
-                i = {
-                    argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
-                    kind: "Fragment",
-                    metadata: null,
-                    name: "useMonetizationPayoutAllTimeRevenueAmount_user",
-                    selections: [
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (n = [{ alias: null, args: null, kind: "ScalarField", name: "all_time_revenue_in_cents", storageKey: null }]), storageKey: null }, action: "THROW" },
-                        { condition: "awardsEnabled", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "awards_revenue", plural: !1, selections: n, storageKey: null }] },
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: n, storageKey: null }, action: "THROW" },
-                    ],
-                    type: "User",
-                    abstractKey: null,
-                };
-            i.hash = "59bfc4e16e122ddcd6f093657e137573";
-            const s = i;
-        },
-        737722: (e, a, l) => {
-            l.d(a, { Z: () => s });
-            var n,
-                i = {
-                    argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
-                    kind: "Fragment",
-                    metadata: null,
-                    name: "useMonetizationPayoutAmount_user",
-                    selections: [
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (n = [{ alias: null, args: null, kind: "ScalarField", name: "revenue_since_last_payout_in_cents", storageKey: null }]), storageKey: null }, action: "THROW" },
-                        { condition: "awardsEnabled", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "awards_revenue", plural: !1, selections: n, storageKey: null }] },
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: n, storageKey: null }, action: "THROW" },
-                    ],
-                    type: "User",
-                    abstractKey: null,
-                };
-            i.hash = "a3ddf3a7e3d949c0df6ebd21c029ca1e";
-            const s = i;
-        },
-        551652: (e, a, l) => {
-            l.d(a, { Z: () => i });
-            var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useMonetizationPayoutThresholdAmount_user", selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null }, action: "THROW" }], type: "User", abstractKey: null, hash: "a7feb1fb1419eed9ac574e03fea93d01" };
-            const i = n;
-        },
-        467874: (e, a, l) => {
-            l.d(a, { Z: () => r });
+        467874: (e, l, a) => {
+            a.d(l, { Z: () => r });
             var n,
                 i,
                 s = {
@@ -568,8 +514,8 @@
             s.hash = "dea793cfe7dbb7568b9c8c060ddb5557";
             const r = s;
         },
-        870242: (e, a, l) => {
-            l.d(a, { Z: () => i });
+        870242: (e, l, a) => {
+            a.d(l, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -587,4 +533,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.1e4bc81a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.18f9266a.js.map

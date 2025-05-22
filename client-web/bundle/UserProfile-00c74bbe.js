@@ -100,7 +100,7 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, (r = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                     {
@@ -118,7 +118,8 @@
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                    (r = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                                     {
                                                         alias: null,
@@ -460,8 +461,8 @@
                                                                                                                     },
                                                                                                                     { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "custom_banner_media", plural: !1, selections: k, storageKey: null },
                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                                                                                                                    r,
                                                                                                                     t,
+                                                                                                                    r,
                                                                                                                     c,
                                                                                                                 ],
                                                                                                                 type: "Community",
@@ -485,7 +486,7 @@
                                                                                 kind: "InlineFragment",
                                                                                 selections: [
                                                                                     { alias: null, args: null, concreteType: "JobsModuleConfig", kind: "LinkedField", name: "config", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "show_more_jobs", storageKey: null }], storageKey: null },
-                                                                                    { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, y], storageKey: null }, c], type: "ApiJob", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null },
+                                                                                    { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [r, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, y], storageKey: null }, c], type: "ApiJob", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null },
                                                                                 ],
                                                                                 type: "JobsModule",
                                                                                 abstractKey: null,
@@ -513,7 +514,7 @@
                             },
                         ],
                     },
-                    params: { id: "MGnbSjuSG9Eh9ExDkLx1Lw", metadata: {}, name: "ProfileSpotlightsQuery", operationKind: "query", text: null },
+                    params: { id: "1sAf0uU4-B2ZLJGUX5O7LQ", metadata: {}, name: "ProfileSpotlightsQuery", operationKind: "query", text: null },
                 };
             p.hash = "63e29ef0bb520445ada0b0d42a1ef0b2";
             const F = p;
@@ -672,13 +673,25 @@
                     {
                         alias: null,
                         args: null,
+                        concreteType: "UserCore",
+                        kind: "LinkedField",
+                        name: "core",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
+                    {
+                        alias: null,
+                        args: null,
                         concreteType: "ApiUser",
                         kind: "LinkedField",
                         name: "legacy",
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             {
                                 alias: null,
                                 args: null,
@@ -692,7 +705,6 @@
                                 ],
                                 storageKey: null,
                             },
-                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "want_retweets", storageKey: null },
                         ],
                         storageKey: null,
@@ -717,7 +729,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "b583f3965b45da993194ce4137f88e93",
+                hash: "5e75ecb101124a89bbaa2e657f2af39f",
             };
             const i = n;
         },
@@ -730,11 +742,11 @@
                 name: "UserAvatarWithPresenceRing_user",
                 selections: [
                     { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }, action: "THROW" },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "829af70e629b1ffba12a7e8ec9492066",
+                hash: "5e3adb48d1abb8917fd9b7322f8fe72f",
             };
             const i = n;
         },
@@ -791,13 +803,13 @@
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                     { args: null, kind: "FragmentSpread", name: "UserAvatar_user" },
                     { args: null, kind: "FragmentSpread", name: "UserAvatarWithPresenceRing_user" },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "5d8b3a81443821fd4debfe4bb1a036ea",
+                hash: "71aaa59e12f7ae14c2787e592cc031f1",
             };
             const i = n;
         },
@@ -809,6 +821,7 @@
                 metadata: null,
                 name: "UserProfileHeaderBanner_user",
                 selections: [
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -817,7 +830,6 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "profile_banner_url", storageKey: null },
                             {
                                 alias: null,
@@ -895,7 +907,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "b1e59d301a760263afca7f5f86a3be6e",
+                hash: "44a832ce67dfe31842d1c981fd62d30e",
             };
             const i = n;
         },
@@ -956,19 +968,8 @@
                 metadata: null,
                 name: "UserProfileHeaderDetails_user",
                 selections: [
-                    {
-                        alias: null,
-                        args: null,
-                        concreteType: "ApiUser",
-                        kind: "LinkedField",
-                        name: "legacy",
-                        plural: !1,
-                        selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
-                            { alias: null, args: null, concreteType: "UserEntities", kind: "LinkedField", name: "entities", plural: !1, selections: [{ alias: null, args: null, concreteType: "EntitySet", kind: "LinkedField", name: "url", plural: !1, selections: [{ alias: null, args: null, concreteType: "UrlsEntity", kind: "LinkedField", name: "urls", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "UserProfileUrlItem_urlsEntity" }], storageKey: null }], storageKey: null }], storageKey: null },
-                        ],
-                        storageKey: null,
-                    },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserEntities", kind: "LinkedField", name: "entities", plural: !1, selections: [{ alias: null, args: null, concreteType: "EntitySet", kind: "LinkedField", name: "url", plural: !1, selections: [{ alias: null, args: null, concreteType: "UrlsEntity", kind: "LinkedField", name: "urls", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "UserProfileUrlItem_urlsEntity" }], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
                     { args: null, kind: "FragmentSpread", name: "UserProfileTranslatableUserDescription_user" },
                     { args: null, kind: "FragmentSpread", name: "UserProfileBirthdateItem_user" },
                     { args: null, kind: "FragmentSpread", name: "UserProfileLocationItem_user" },
@@ -976,7 +977,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "d077e7fef20480197a862845446f60cf",
+                hash: "bf8532ddff0bed36ddccb02c15651bed",
             };
             const i = n;
         },
@@ -989,11 +990,11 @@
                 name: "UserProfileHeaderMute_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "be284acb5bec29e27f81252eb2cade7d",
+                hash: "c178c6e03f29a9bf30066eed7be5cdb5",
             };
             const i = n;
         },
@@ -1010,9 +1011,9 @@
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserCore",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "core",
                         plural: !1,
                         selections: [
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "LOG" },
@@ -1028,7 +1029,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "5cad42e9f6ab3176131e4864d88390d4",
+                hash: "1f4274e5a894cd6eac2ea60a409c6d5e",
             };
             const i = n;
         },
@@ -1219,6 +1220,7 @@
                 metadata: null,
                 name: "UserStats_user",
                 selections: [
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null },
                     {
                         alias: null,
                         args: null,
@@ -1229,14 +1231,13 @@
                         selections: [
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "friends_count", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "12132dd06b92feb32089b99fba6135fd",
+                hash: "157eefd30bef54e3ddf3641f695bf465",
             };
             const i = n;
         },
@@ -1740,14 +1741,14 @@
                 name: "useUserProfileRichTextEntityClick_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" },
+                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "3eaf46a238595718a20f68ecc2bacde2",
+                hash: "1b74d6f40cdbfa2307eff80fce2407ba",
             };
             const i = n;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.621694ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.834eb85a.js.map

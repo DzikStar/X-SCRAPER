@@ -217,7 +217,7 @@
                     return (
                         n.useEffect(() => {
                             e(t);
-                        }, [t]),
+                        }, [e, t]),
                         null
                     );
                 };
@@ -244,7 +244,7 @@
                 return (
                     n.useEffect(() => {
                         e(t);
-                    }, [t]),
+                    }, [e, t]),
                     null
                 );
             }
@@ -396,4 +396,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-9f4db315.cfff6dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-9f4db315.40e863fa.js.map

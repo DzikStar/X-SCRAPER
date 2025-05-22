@@ -14,7 +14,7 @@
                 u = ({ user: e, ...t }) => {
                     const n = c()(l, e),
                         a = "Business" === n.verification?.verified_type || "Square" === n.profile_image_shape ? "square" : "circle";
-                    return o.createElement(s.default, (0, r.Z)({}, t, { screenName: n.legacy?.screen_name, shape: a, uri: n.avatar?.image_url }));
+                    return o.createElement(s.default, (0, r.Z)({}, t, { screenName: n.core?.screen_name, shape: a, uri: n.avatar?.image_url }));
                 },
                 d = o.memo(u);
         },
@@ -28,10 +28,10 @@
                 s = n(366635);
             const l = a.Z,
                 u = ({ user: e, ...t }) => {
-                    const { affiliates_highlighted_label: n, is_blue_verified: a, legacy: i, privacy: u, verification: d } = c()(l, e),
+                    const { affiliates_highlighted_label: n, core: a, is_blue_verified: i, privacy: u, verification: d } = c()(l, e),
                         { badge: m, description: f, url: p, userLabelDisplayType: v, userLabelType: E } = n?.label || {},
                         h = { badge: m || void 0, description: f || "", url: p || void 0, userLabelType: E || void 0, userLabelDisplayType: v || void 0 };
-                    return o.createElement(s.Z, (0, r.Z)({}, t, { affiliateBadgeInfo: h, isBlueVerified: a || !1, isProtected: u?.protected ?? !1, isVerified: d?.verified ?? !1, name: i?.name, screenName: i?.screen_name, verifiedType: d?.verified_type || "" }));
+                    return o.createElement(s.Z, (0, r.Z)({}, t, { affiliateBadgeInfo: h, isBlueVerified: i || !1, isProtected: u?.protected ?? !1, isVerified: d?.verified ?? !1, name: a?.name, screenName: a?.screen_name, verifiedType: d?.verified_type || "" }));
                 },
                 d = o.memo(u);
         },
@@ -1276,4 +1276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.1434529a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.dae1960a.js.map

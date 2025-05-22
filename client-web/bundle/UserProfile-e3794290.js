@@ -31,8 +31,8 @@
                 b = (r(585488), r(277660)),
                 g = r.n(b),
                 w = r(530525),
-                y = r(708852),
-                E = r(433460),
+                E = r(708852),
+                y = r(433460),
                 v = r(823161),
                 Z = r(332920),
                 P = r.n(Z),
@@ -54,7 +54,7 @@
                 F = { opensProfilePhoto: P().f30795d0 },
                 W = n.memo((e) => {
                     const { isOwnProfile: t, isWithheld: r, profileImageUrlHttps: s, screenName: i, user: o, userId: a, userPresencePollingIntervalMs: c, userSpace: u } = e,
-                        d = (0, y.tj)(),
+                        d = (0, E.tj)(),
                         f = (0, B.z)(),
                         { featureSwitches: p, viewerUserId: h } = (0, l.QZ)(),
                         b = (0, k.I0)(),
@@ -80,12 +80,12 @@
                             };
                             return u && w ? { ...e, "aria-label": u["aria-label"], link: u.link } : P ? e : { ...e, "aria-label": F.opensProfilePhoto, link: { pathname: `/${i}/photo` } };
                         }, [P, w, i, u, f]);
-                    return u && w ? (o ? n.createElement(R.o, (0, _.Z)({ presenceRingType: u.presenceRingType, user: o }, N)) : n.createElement(E.Z, (0, _.Z)({ presenceRingType: u.presenceRingType, screenName: i, uri: x }, N))) : o ? n.createElement(O.Y, (0, _.Z)({ borderColor: "cellBackground", borderWidth: d ? "large" : "medium", user: o }, N)) : n.createElement(v.default, (0, _.Z)({ borderColor: "cellBackground", borderWidth: d ? "large" : "medium", screenName: i, uri: x }, N));
+                    return u && w ? (o ? n.createElement(R.o, (0, _.Z)({ presenceRingType: u.presenceRingType, user: o }, N)) : n.createElement(y.Z, (0, _.Z)({ presenceRingType: u.presenceRingType, screenName: i, uri: x }, N))) : o ? n.createElement(O.Y, (0, _.Z)({ borderColor: "cellBackground", borderWidth: d ? "large" : "medium", user: o }, N)) : n.createElement(v.default, (0, _.Z)({ borderColor: "cellBackground", borderWidth: d ? "large" : "medium", screenName: i, uri: x }, N));
                 }),
                 L = n.memo((e) => {
                     const { user: t, ...r } = e,
                         s = g()(h.Z, t);
-                    return n.createElement(W, (0, _.Z)({ profileImageUrlHttps: s.avatar?.image_url ?? "", screenName: s.legacy?.screen_name ?? "", user: s, userId: s.rest_id }, r));
+                    return n.createElement(W, (0, _.Z)({ profileImageUrlHttps: s.avatar?.image_url ?? "", screenName: s.core?.screen_name ?? "", user: s, userId: s.rest_id }, r));
                 });
             const V = n.memo(
                 D(function (e) {
@@ -120,7 +120,7 @@
                             const r = e.map(({ percentage: e, rgb: { blue: t, green: r, red: n } }) => ({ rgb: { red: n, green: r, blue: t }, percentage: e }));
                             return H.Z.get(r);
                         }, [t.legacy?.profile_banner_extensions]);
-                    return n.createElement(X, { dominantColor: r, isOwnProfile: e.isOwnProfile, isWithheld: e.isWithheld, profileBannerUrl: t.legacy?.profile_banner_url, screenName: t.legacy?.screen_name ?? "" });
+                    return n.createElement(X, { dominantColor: r, isOwnProfile: e.isOwnProfile, isWithheld: e.isWithheld, profileBannerUrl: t.legacy?.profile_banner_url, screenName: t.core?.screen_name ?? "" });
                 });
             function q(e) {
                 const t = n.useMemo(() => {
@@ -153,15 +153,15 @@
             const be = "sendDMFromProfile",
                 ge = "editProfileButton",
                 we = P().g7088266,
-                ye = P().gd7acb84,
-                Ee = P().b7636014,
+                Ee = P().gd7acb84,
+                ye = P().b7636014,
                 ve = n.createElement(te.default, null),
                 Ze = n.createElement(re.default, null),
                 Pe = P().haad225c,
                 Ce = P().fc7db594,
                 Ie = n.memo(({ blockedBy: e, blocking: t, canDm: r, defaultProfileImage: i, description: o, following: a, isWithheld: c, notifications: u, onFollowButtonOffscreen: d, profileBannerUrl: m, promotedContent: f, superFollowEligible: p, superFollowing: _, user: h, userId: b, userRef: g, viewerUserId: w }) => {
-                    const y = (0, B.z)(),
-                        E = (0, K.useHistory)(),
+                    const E = (0, B.z)(),
+                        y = (0, K.useHistory)(),
                         { userClaims: v } = n.useContext(l.rC),
                         Z = (0, de.hC)("super_follow_android_web_subscription_enabled"),
                         P = (0, de.hC)("responsive_web_profile_header_search_button_enabled"),
@@ -198,23 +198,23 @@
                                         hoverLabel: { label: Ce },
                                         icon: n.createElement(le.x1, null),
                                         onPress: () => {
-                                            h?.screen_name && (y.scribe({ element: "grok_profile_summary", action: "click" }), M({ text: `@${h.screen_name}`, autoSubmit: !0, source: "user_profile_summary" }));
+                                            h?.screen_name && (E.scribe({ element: "grok_profile_summary", action: "click" }), M({ text: `@${h.screen_name}`, autoSubmit: !0, source: "user_profile_summary" }));
                                         },
                                         style: Se.button,
                                     })
                                   : null,
-                              w && I && !$ ? n.createElement(ee.ZP, { link: H ? "/i/flow/setup_profile" : "/settings/profile", style: Se.lastButton, testID: ge, type: "primaryOutlined" }, H ? ye : we) : null,
+                              w && I && !$ ? n.createElement(ee.ZP, { link: H ? "/i/flow/setup_profile" : "/settings/profile", style: Se.lastButton, testID: ge, type: "primaryOutlined" }, H ? Ee : we) : null,
                               x && n.createElement(ae.r, { fullName: h?.name, screenName: h?.screen_name, style: Se.button, userId: b }),
                               !I &&
                                   O &&
                                   n.createElement(ee.ZP, {
-                                      "aria-label": Ee,
-                                      hoverLabel: { label: Ee },
+                                      "aria-label": ye,
+                                      hoverLabel: { label: ye },
                                       icon: ve,
                                       onPress: () => {
                                           if (w) {
                                               const e = (0, me.Z)(b, w);
-                                              y.scribe({ element: "message", action: "click", data: { conversation_id: e, conversation_participant_count: 2, conversation_type: pe.NK.ONE_TO_ONE, inbox_type: pe.H6.NOT_AVAILABLE } }), E.push(`/messages/${e}`);
+                                              E.scribe({ element: "message", action: "click", data: { conversation_id: e, conversation_participant_count: 2, conversation_type: pe.NK.ONE_TO_ONE, inbox_type: pe.H6.NOT_AVAILABLE } }), y.push(`/messages/${e}`);
                                           }
                                       },
                                       style: Se.button,
@@ -324,12 +324,12 @@
             const bt = n.memo(ht),
                 gt = n.memo(({ children: e }) => n.createElement(s.Z, { style: wt.details }, n.createElement(De.ZP, { style: wt.detailsText, testID: Ge }, e))),
                 wt = i.default.create((e) => ({ details: { display: "block", marginBottom: e.spaces.space12 }, detailsText: { lineHeight: e.spaces.space12 } }));
-            var yt = r(231684),
-                Et = r(733357),
+            var Et = r(231684),
+                yt = r(733357),
                 vt = r(665468);
-            const Zt = n.memo(({ location: e }) => (!e || (0, Et.Z)(e) ? null : n.createElement(dt.Z, { Icon: vt.default, testID: tt }, n.createElement(De.ZP, null, e)))),
+            const Zt = n.memo(({ location: e }) => (!e || (0, yt.Z)(e) ? null : n.createElement(dt.Z, { Icon: vt.default, testID: tt }, n.createElement(De.ZP, null, e)))),
                 Pt = n.memo((e) => {
-                    const t = g()(yt.Z, e.user);
+                    const t = g()(Et.Z, e.user);
                     return n.createElement(Zt, { location: t.location?.location });
                 });
             function Ct(e) {
@@ -415,7 +415,7 @@
                 nr = n.memo((e) => {
                     const t = g()(Re.Z, e.user),
                         r = t.legacy?.entities?.url?.urls?.[0];
-                    return n.createElement(rr, { createdAt: t.legacy?.created_at, isOwnProfile: e.isOwnProfile, professionalCategoryIcon: e.professionalCategoryIcon, professionalCategoryName: e.professionalCategoryName, urlEntityRef: r, userRef: t });
+                    return n.createElement(rr, { createdAt: t.core?.created_at, isOwnProfile: e.isOwnProfile, professionalCategoryIcon: e.professionalCategoryIcon, professionalCategoryName: e.professionalCategoryName, urlEntityRef: r, userRef: t });
                 });
             function sr(e) {
                 if (e.user) {
@@ -493,14 +493,14 @@
                 },
                 br = n.memo((e) => {
                     const t = g()(lr.Z, e.user);
-                    return n.createElement(hr, { screenName: t.legacy?.screen_name || "", userId: t.rest_id });
+                    return n.createElement(hr, { screenName: t.core?.screen_name || "", userId: t.rest_id });
                 });
             function gr(e) {
                 return e.user ? n.createElement(hr, { screenName: e.user.screen_name, userId: e.user.id_str }) : e.userRef ? n.createElement(br, { user: e.userRef }) : null;
             }
             const wr = i.default.create((e) => ({ mute: { marginVertical: e.spaces.space12 }, unmuteButton: { cursor: "pointer" } })),
-                yr = n.memo(gr);
-            var Er = r(696657),
+                Er = n.memo(gr);
+            var yr = r(696657),
                 vr = r(360917),
                 Zr = r.n(vr),
                 Pr = r(59871),
@@ -534,7 +534,7 @@
                     const t = g()(Ur.Z, e.user),
                         r = (function (e, t) {
                             const r = g()(Wr.Z, e);
-                            return Vr(t, r.rest_id, r.legacy.screen_name);
+                            return Vr(t, r.rest_id, r.core.screen_name);
                         })(t, e.namespace),
                         s = t.affiliates_highlighted_label?.label;
                     return s ? n.createElement(Fr.Z, { highlightedUserLabel: s, isIconLarge: !0, onRichTextEntityClick: r }) : null;
@@ -546,8 +546,8 @@
             var Hr = r(465067);
             const $r = n.memo(({ getVerifiedCardShouldShow: e, isBlueVerified: t, isFollowedBy: r, isOwnProfile: i, isProtected: o, isVerified: a, isWithheld: c, name: u, namespace: d, screenName: f, translatorType: p, user: h, userId: b, userRef: g }) => {
                     const w = h?.verified_type,
-                        y = h?.auxiliaryUserLabels,
-                        E = h?.highlightedLabel,
+                        E = h?.auxiliaryUserLabels,
+                        y = h?.highlightedLabel,
                         v = Boolean(u && f && !(c && !i)),
                         Z = v ? u : `@${f}`,
                         { featureSwitches: P, userClaims: C } = (0, l.QZ)(),
@@ -557,15 +557,15 @@
                         S = (0, Or.Z)(i, h?.screen_name, "x_vo_business_promotion");
                     let O = !1;
                     i && B && (O = P.isTrue("subscriptions_is_blue_verified_review_status_profile_enabled"));
-                    const R = c ? Zr() : { affiliateBadgeInfo: E, isBlueVerified: !!t, isProtected: !!o, isVerified: a, translatorType: p, verifiedType: w, auxiliaryUserLabels: I ? y : void 0 },
+                    const R = c ? Zr() : { affiliateBadgeInfo: y, isBlueVerified: !!t, isProtected: !!o, isVerified: a, translatorType: p, verifiedType: w, auxiliaryUserLabels: I ? E : void 0 },
                         x = h?.verification_info,
                         N = n.useMemo(() => {
-                            if (Pr.Z.getVerifiedDisplayType({ isBlueVerified: t, isVerified: a, verifiedType: w }) !== Pr.K.none || o) return (e, r) => n.createElement(xr.Z, { affiliateBadgeInfo: E, auxiliaryUserLabels: y, dismiss: e, isBlueVerified: t, isOwnProfile: i, isProtected: o, isVerified: a, type: r, verificationInfo: x, verifiedType: w });
-                        }, [a, t, w, x, o, E, y, i]);
+                            if (Pr.Z.getVerifiedDisplayType({ isBlueVerified: t, isVerified: a, verifiedType: w }) !== Pr.K.none || o) return (e, r) => n.createElement(xr.Z, { affiliateBadgeInfo: y, auxiliaryUserLabels: E, dismiss: e, isBlueVerified: t, isOwnProfile: i, isProtected: o, isVerified: a, type: r, verificationInfo: x, verifiedType: w });
+                        }, [a, t, w, x, o, y, E, i]);
                     return n.createElement(s.Z, { style: m.Z.names, testID: Nr }, n.createElement(s.Z, { style: m.Z.namesInner }, n.createElement(Cr.Z, (0, _.Z)({}, R, { badgeContext: "account", name: Z, nameSize: "headline1", renderVerifiedBadgeContext: N, screenName: f, weight: "heavy", withFollowsYou: r && !c, withNameWrap: !0, withScreenName: v, withStackedLayout: !0 })), n.createElement(jr, { namespace: d, user: h, userRef: g })), n.createElement(s.Z, { style: Z.length > 40 ? m.Z.longNameButtons : void 0 }, S ? n.createElement(kr.Z, null) : k && null !== e && !e ? n.createElement(Br.Z, null) : O ? n.createElement(Ir.Z, null) : null));
                 }),
                 Qr = n.memo((e) => {
-                    const t = g()(Er.Z, e.user),
+                    const t = g()(yr.Z, e.user),
                         r = (function (e) {
                             const t = g()(Hr.Z, e);
                             switch (t?.legacy?.translator_type_enum) {
@@ -579,7 +579,7 @@
                                     return "regular";
                             }
                         })(t);
-                    return t.legacy ? n.createElement($r, { getVerifiedCardShouldShow: e.getVerifiedCardShouldShow, isBlueVerified: !!t.is_blue_verified, isFollowedBy: t.relationship_perspectives?.followed_by ?? !1, isOwnProfile: e.isOwnProfile, isProtected: t.privacy?.protected ?? !1, isVerified: !!t.verification?.verified, isWithheld: e.isWithheld, name: t.legacy.name || "", namespace: e.namespace, screenName: t.legacy.screen_name, translatorType: r, userId: t.rest_id, userRef: t }) : null;
+                    return t.core ? n.createElement($r, { getVerifiedCardShouldShow: e.getVerifiedCardShouldShow, isBlueVerified: !!t.is_blue_verified, isFollowedBy: t.relationship_perspectives?.followed_by ?? !1, isOwnProfile: e.isOwnProfile, isProtected: t.privacy?.protected ?? !1, isVerified: !!t.verification?.verified, isWithheld: e.isWithheld, name: t.core.name || "", namespace: e.namespace, screenName: t.core.screen_name, translatorType: r, userId: t.rest_id, userRef: t }) : null;
                 });
             function Xr(e) {
                 if (e.user) {
@@ -663,7 +663,7 @@
                         "light" === i.default.theme.paletteName && _ && (h = _),
                         n.createElement(
                             s.Z,
-                            { style: [En.cardBlock, { backgroundColor: i.default.theme.colors[h] }], testID: "verified_profile_visitor_upsell" },
+                            { style: [yn.cardBlock, { backgroundColor: i.default.theme.colors[h] }], testID: "verified_profile_visitor_upsell" },
                             n.createElement(ee.ZP, {
                                 borderColor: "transparent",
                                 icon: n.createElement(cn.default, null),
@@ -671,13 +671,13 @@
                                     o.scribe({ component: d, action: "dismiss" }), e();
                                 },
                                 size: "xSmall",
-                                style: En.dismissButton,
+                                style: yn.dismissButton,
                             }),
                             n.createElement(
                                 s.Z,
-                                { style: En.inner },
-                                n.createElement(De.ZP, { style: En.heading, weight: "bold" }, gn(p)),
-                                n.createElement(De.ZP, { size: "body", style: En.subheading }, f[0], n.createElement(De.ZP, { weight: "bold" }, f[1]), f[2]),
+                                { style: yn.inner },
+                                n.createElement(De.ZP, { style: yn.heading, weight: "bold" }, gn(p)),
+                                n.createElement(De.ZP, { size: "body", style: yn.subheading }, f[0], n.createElement(De.ZP, { weight: "bold" }, f[1]), f[2]),
                                 n.createElement(
                                     ee.ZP,
                                     {
@@ -685,7 +685,7 @@
                                         onPress: () => {
                                             o.scribe({ component: d, action: "click" });
                                         },
-                                        style: En.button,
+                                        style: yn.button,
                                         type: "primaryFilled",
                                     },
                                     _n,
@@ -696,7 +696,7 @@
                 },
                 gn = (e) => {
                     const t = e.lastIndexOf(" ");
-                    return -1 !== t ? n.createElement(De.ZP, { style: En.heading, weight: "bold" }, e.slice(0, t + 1), n.createElement(De.ZP, { style: En.inlineVerified }, e.slice(t + 1), " ", n.createElement(un.default, { style: En.verifiedIcon }))) : n.createElement(s.Z, null, e, " ", n.createElement(un.default, { style: En.verifiedIcon }));
+                    return -1 !== t ? n.createElement(De.ZP, { style: yn.heading, weight: "bold" }, e.slice(0, t + 1), n.createElement(De.ZP, { style: yn.inlineVerified }, e.slice(t + 1), " ", n.createElement(un.default, { style: yn.verifiedIcon }))) : n.createElement(s.Z, null, e, " ", n.createElement(un.default, { style: yn.verifiedIcon }));
                 },
                 wn = (e) => {
                     const { dismiss: t, impress: r, shouldShow: s } = (0, c.ZP)({ showForMsec: null, reappearAfterMsec: null, dismissForMsec: c.$i, key: "verified_profile_visitor" });
@@ -707,7 +707,7 @@
                         s ? n.createElement(d.nO, { data: { referer: hn }, namespace: { component: "unified-upsell" } }, n.createElement(bn, (0, _.Z)({ dismiss: t }, e))) : null
                     );
                 },
-                yn = ({ userData: e }) => {
+                En = ({ userData: e }) => {
                     const { featureSwitches: t, userClaims: r } = (0, l.QZ)(),
                         s = (0, k.v9)(dr.ZP.selectViewerUser),
                         i = s?.screen_name === e?.screen_name,
@@ -719,18 +719,18 @@
                         m = r.isAnyPremiumSubscriber();
                     return !s || !e || a || c || !o || i || s?.is_blue_verified || u || (m && !d) ? null : t.isTrue("subscriptions_upsells_verified_profile_visitor_upsell_enabled") ? n.createElement(wn, { profileUser: e, viewerUser: s }) : null;
                 },
-                En = i.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, marginHorizontal: e.spaces.space16, overflow: "hidden", flexDirection: "row", justifyContent: "flex-start" }, dismissButton: { position: "absolute", end: e.spaces.space16, top: e.spaces.space12, zIndex: 1 }, inner: { padding: e.spaces.space16, maxWidth: "100%" }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { fontSize: e.fontSizes.headline2, marginBottom: e.spaces.space8, marginEnd: e.spaces.space24 }, subheading: { marginBottom: e.spaces.space8 }, verifiedIcon: { height: 20, width: 20 }, inlineVerified: { flexDirection: "row", flexWrap: "nowrap", display: "inline-flex" } })),
+                yn = i.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, marginHorizontal: e.spaces.space16, overflow: "hidden", flexDirection: "row", justifyContent: "flex-start" }, dismissButton: { position: "absolute", end: e.spaces.space16, top: e.spaces.space12, zIndex: 1 }, inner: { padding: e.spaces.space16, maxWidth: "100%" }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { fontSize: e.fontSizes.headline2, marginBottom: e.spaces.space8, marginEnd: e.spaces.space24 }, subheading: { marginBottom: e.spaces.space8 }, verifiedIcon: { height: 20, width: 20 }, inlineVerified: { flexDirection: "row", flexWrap: "nowrap", display: "inline-flex" } })),
                 vn = { page: "profile", section: "header" },
                 Zn = (e) => {
-                    const { isActiveCreator: t, isWithheld: r, onFollowButtonOffscreen: i, professionalCategoryIcon: _, professionalCategoryName: h, promotedContent: b, showBlockedTweets: g, superFollowersCount: w, user: y, viewerUserId: E } = e,
+                    const { isActiveCreator: t, isWithheld: r, onFollowButtonOffscreen: i, professionalCategoryIcon: _, professionalCategoryName: h, promotedContent: b, showBlockedTweets: g, superFollowersCount: w, user: E, viewerUserId: y } = e,
                         { featureSwitches: v } = (0, l.QZ)(),
                         Z = v.isTrue("xprofile_blocked_by_view_enabled"),
                         [P, C] = n.useState(!1),
                         I = n.useCallback(() => {
                             C(!1);
                         }, []),
-                        [B, k] = n.useState(y.id_str),
-                        [S, O] = n.useState(y.following),
+                        [B, k] = n.useState(E.id_str),
+                        [S, O] = n.useState(E.following),
                         R = { key: "verified_profile_card_upsell", showForMsec: c.IZ, reappearAfterMsec: c.IZ, dismissForMsec: null, dismissUntilNextReappear: !0 },
                         { dismiss: x, gotDismissed: N, impress: U, shouldShow: D } = (0, c.ZP)(R),
                         T = (0, a.z)();
@@ -738,18 +738,18 @@
                         U();
                     }, [U, D, N]);
                     const F = v.isTrue("subscriptions_upsells_get_verified_profile_rotation_enabled") && D;
-                    B !== y.id_str && (k(y.id_str), C(!1)), !1 === S && !0 === y.following && (O(y.following), C(!0));
-                    const W = (0, an.nf)(E, y),
-                        L = (0, an.ZQ)(E, r, y, Z),
-                        A = (0, an.jB)(E, r, y, Z),
-                        M = (0, an.Xy)(E, r, y, Z),
-                        z = (0, an.zi)({ isSoftBlockEnabled: Z, isWithheld: r, showBlockedTweets: g, user: y, viewerUserId: E }),
+                    B !== E.id_str && (k(E.id_str), C(!1)), !1 === S && !0 === E.following && (O(E.following), C(!0));
+                    const W = (0, an.nf)(y, E),
+                        L = (0, an.ZQ)(y, r, E, Z),
+                        A = (0, an.jB)(y, r, E, Z),
+                        M = (0, an.Xy)(y, r, E, Z),
+                        z = (0, an.zi)({ isSoftBlockEnabled: Z, isWithheld: r, showBlockedTweets: g, user: E, viewerUserId: y }),
                         [j, H] = n.useState(!1);
-                    return n.createElement(d.nO, { namespace: vn }, n.createElement(s.Z, { style: T && Pn.rootRedesign }, n.createElement(G, { isOwnProfile: W, isWithheld: r, user: y }), n.createElement(s.Z, { style: [m.Z.content, Pn.content, L && m.Z.withheld] }, n.createElement(s.Z, { style: m.Z.avatarAndButton }, n.createElement(V, { isOwnProfile: W, isWithheld: r, user: y, userId: y.id_str }), n.createElement(Oe, { isWithheld: r, onFollowButtonOffscreen: i, promotedContent: b, user: y, viewerUserId: E })), n.createElement(Yr, { getVerifiedCardShouldShow: F, isOwnProfile: W, isWithheld: r, namespace: vn, user: y }), L ? null : n.createElement(ir, { isOwnProfile: W, professionalCategoryIcon: _, professionalCategoryName: h, user: y, userRef: void 0 }), A ? null : n.createElement(on, { isActiveCreator: t, isOwnProfile: W, subscribersCount: w, user: y }), M ? null : n.createElement(s.Z, { style: Pn.marginTopXSmall }, n.createElement(o.Z, { userId: y.id_str, userScreenName: y.screen_name })), y.muting ? n.createElement(yr, { user: y, userRef: void 0 }) : null), z ? null : n.createElement(f.U, { setIsRenderingProfileSpotlight: H, user: y, viewerUserId: E }), !j && !y.possibly_sensitive && n.createElement(yn, { userData: y }), W && F ? n.createElement(p.Z, { dismissProfileUpsellCard: x, gotDismissedProfileUpsellCard: N, shouldShowProfileUpsellCard: F, user: y }) : null, P ? n.createElement(u.Z, { onRemoveClusterFollow: I, userId: y.id_str }) : null));
+                    return n.createElement(d.nO, { namespace: vn }, n.createElement(s.Z, { style: T && Pn.rootRedesign }, n.createElement(G, { isOwnProfile: W, isWithheld: r, user: E }), n.createElement(s.Z, { style: [m.Z.content, Pn.content, L && m.Z.withheld] }, n.createElement(s.Z, { style: m.Z.avatarAndButton }, n.createElement(V, { isOwnProfile: W, isWithheld: r, user: E, userId: E.id_str }), n.createElement(Oe, { isWithheld: r, onFollowButtonOffscreen: i, promotedContent: b, user: E, viewerUserId: y })), n.createElement(Yr, { getVerifiedCardShouldShow: F, isOwnProfile: W, isWithheld: r, namespace: vn, user: E }), L ? null : n.createElement(ir, { isOwnProfile: W, professionalCategoryIcon: _, professionalCategoryName: h, user: E, userRef: void 0 }), A ? null : n.createElement(on, { isActiveCreator: t, isOwnProfile: W, subscribersCount: w, user: E }), M ? null : n.createElement(s.Z, { style: Pn.marginTopXSmall }, n.createElement(o.Z, { userId: E.id_str, userScreenName: E.screen_name })), E.muting ? n.createElement(Er, { user: E, userRef: void 0 }) : null), z ? null : n.createElement(f.U, { setIsRenderingProfileSpotlight: H, user: E, viewerUserId: y }), !j && !E.possibly_sensitive && n.createElement(En, { userData: E }), W && F ? n.createElement(p.Z, { dismissProfileUpsellCard: x, gotDismissedProfileUpsellCard: N, shouldShowProfileUpsellCard: F, user: E }) : null, P ? n.createElement(u.Z, { onRemoveClusterFollow: I, userId: E.id_str }) : null));
                 },
                 Pn = i.default.create((e) => ({ rootRedesign: { paddingHorizontal: e.spaces.space16 }, content: { marginBottom: e.spaces.space16 }, marginTopXSmall: { marginTop: e.spaces.space12 } })),
                 Cn = n.memo(Zn);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.a7c7d8ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.07199b4a.js.map

@@ -255,22 +255,23 @@
                 const { height: t } = (0, y.Z)(),
                     a = (0, B.z)(),
                     i = (0, r.useHistory)(),
-                    o = e?.item.user_id_results?.result?.legacy,
-                    l = e?.item.original_post_id_results,
-                    c = l.result?.legacy,
-                    d = e?.prompt?.prompt,
-                    u = l.rest_id,
-                    [m, p] = n.useState(e?.stats.likes),
-                    [g, h] = n.useState(c?.favorited || !1),
-                    f = (c?.full_text || "").replace(/(?:https?:\/\/|www\.)[^\s]+$/i, "").trim();
-                const _ = (0, N.I0)(),
-                    w = n.useCallback(() => {
-                        const e = l.rest_id;
+                    o = e?.item.user_id_results?.result?.core,
+                    l = e?.item.user_id_results?.result?.avatar?.image_url,
+                    c = e?.item.original_post_id_results,
+                    d = c.result?.legacy,
+                    u = e?.prompt?.prompt,
+                    m = c.rest_id,
+                    [p, g] = n.useState(e?.stats.likes),
+                    [h, f] = n.useState(d?.favorited || !1),
+                    _ = (d?.full_text || "").replace(/(?:https?:\/\/|www\.)[^\s]+$/i, "").trim();
+                const w = (0, N.I0)(),
+                    b = n.useCallback(() => {
+                        const e = c.rest_id;
                         a.scribe({ section: "grok-feed-item", component: "like", action: "click", data: { tweet_id: e } }),
-                            h(!g),
-                            p((e) => e + (g ? -1 : 1)),
-                            _(
-                                g
+                            f(!h),
+                            g((e) => e + (h ? -1 : 1)),
+                            w(
+                                h
                                     ? (function (e) {
                                           return async (t, a, { api: n }) => {
                                               n.withEndpoint(v.ZP).unlike({ id: e }, {});
@@ -282,48 +283,48 @@
                                           };
                                       })(e),
                             );
-                    }, [l, g, h, _, a]),
-                    b = n.useCallback(() => {
-                        const e = l.rest_id;
+                    }, [c, h, f, w, a]),
+                    E = n.useCallback(() => {
+                        const e = c.rest_id;
                         a.scribe({ section: "grok-feed-item", component: "retweet", action: "click", data: { tweet_id: e } }),
-                            _(H.Z.fetchOne(e)).then((t) => {
+                            w(H.Z.fetchOne(e)).then((t) => {
                                 t?.entities?.tweets[e] && i.push({ state: { quotedStatus: t.entities.tweets[e], hasArticleNudge: !1 }, pathname: "/compose/post" });
                             });
-                    }, [l, _, i, a]),
-                    E = n.useCallback(() => {
-                        const e = l.rest_id;
+                    }, [c, w, i, a]),
+                    k = n.useCallback(() => {
+                        const e = c.rest_id;
                         a.scribe({ section: "grok-feed-item", component: "grok-feed-item", action: "impression", data: { tweet_id: e } });
-                    }, [a, l]),
-                    k = { avatarUri: o?.profile_image_url_https, entities: {}, name: o?.name, screenName: o?.screen_name, userId: "userId" },
-                    S = n.useMemo(() => ({ height: t - x }), [t]),
-                    { openGrok: Z } = (0, K.Z)(),
-                    [C, U] = n.useState(!1),
-                    $ = n.useCallback(() => {
-                        U(!0);
-                    }, [U]);
+                    }, [a, c]),
+                    S = { avatarUri: l, entities: {}, name: o?.name, screenName: o?.screen_name, userId: "userId" },
+                    Z = n.useMemo(() => ({ height: t - x }), [t]),
+                    { openGrok: C } = (0, K.Z)(),
+                    [U, $] = n.useState(!1),
+                    V = n.useCallback(() => {
+                        $(!0);
+                    }, [$]);
                 return n.createElement(
                     s.Z,
-                    { style: [S, j.imageContainer] },
-                    n.createElement(T.Z, { "aria-label": d, onLoad: $, resizeMode: "cover", source: { uri: e.item.image_url }, style: [j.image, C ? j.imageLoaded : j.imageLoading, { height: t - x - 140 }] }),
+                    { style: [Z, j.imageContainer] },
+                    n.createElement(T.Z, { "aria-label": u, onLoad: V, resizeMode: "cover", source: { uri: e.item.image_url }, style: [j.image, U ? j.imageLoaded : j.imageLoading, { height: t - x - 140 }] }),
                     n.createElement(
                         s.Z,
                         { style: j.footer },
                         n.createElement(
                             s.Z,
                             { style: j.imageFooterRow },
-                            n.createElement(P.ZP, (0, I.Z)({ displayMode: "SubscribableUser", style: j.flex, withLink: !0 }, k)),
+                            n.createElement(P.ZP, (0, I.Z)({ displayMode: "SubscribableUser", style: j.flex, withLink: !0 }, S)),
                             n.createElement(
                                 s.Z,
                                 { style: [{ gap: 20 }, j.imageFooterRow] },
-                                n.createElement(F.D, { id: `post_${u}`, onFullyVisible: E, position: "bottom", testID: `post_${u}` }),
-                                n.createElement(A.Z, { count: 0, enableKeyboardShortcuts: !1, excludeRetweetAction: !1, excludeRetweetWithCommentAction: !1, iconSize: "large", isRetweeted: !1, onPress: b }),
-                                n.createElement(L.Z, { count: m, iconSize: "large", isLiked: g, onPress: w, withCount: !0 }),
+                                n.createElement(F.D, { id: `post_${m}`, onFullyVisible: k, position: "bottom", testID: `post_${m}` }),
+                                n.createElement(A.Z, { count: 0, enableKeyboardShortcuts: !1, excludeRetweetAction: !1, excludeRetweetWithCommentAction: !1, iconSize: "large", isRetweeted: !1, onPress: E }),
+                                n.createElement(L.Z, { count: p, iconSize: "large", isLiked: h, onPress: b, withCount: !0 }),
                                 n.createElement(
                                     M.ZP,
                                     {
                                         icon: n.createElement(O.default, null),
                                         onClick: () => {
-                                            a.scribe({ section: "grok-feed-item", component: "make-your-version", action: "click", data: { tweet_id: u } }), Z({ text: d, autoSubmit: !0, source: "grok_image_feed" });
+                                            a.scribe({ section: "grok-feed-item", component: "make-your-version", action: "click", data: { tweet_id: m } }), C({ text: u, autoSubmit: !0, source: "grok_image_feed" });
                                         },
                                         size: "small",
                                         type: "primaryFilled",
@@ -332,7 +333,7 @@
                                 ),
                             ),
                         ),
-                        f ? n.createElement(z.Z, { link: `/${o?.screen_name}/status/${l.rest_id}`, style: j.tweetTextContainer, withoutInteractiveStyles: !0 }, n.createElement(D.Z, { color: "gray700", displayTextRange: [0, 124], lang: "en", numberOfLines: 1, text: f })) : null,
+                        _ ? n.createElement(z.Z, { link: `/${o?.screen_name}/status/${c.rest_id}`, style: j.tweetTextContainer, withoutInteractiveStyles: !0 }, n.createElement(D.Z, { color: "gray700", displayTextRange: [0, 124], lang: "en", numberOfLines: 1, text: _ })) : null,
                     ),
                 );
             }
@@ -417,4 +418,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-ea2f266f.1bb49a4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-ea2f266f.e2f62bda.js.map

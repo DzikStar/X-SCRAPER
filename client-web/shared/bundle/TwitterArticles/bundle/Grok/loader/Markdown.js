@@ -8,10 +8,9 @@
             const s = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.26"),
+                        n.e("icons.7"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -57,7 +56,7 @@
             function s() {
                 return { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             }
-            n.d(t, { TU: () => v });
+            n.d(t, { TU: () => T });
             let r = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             function i(e) {
                 r = e;
@@ -907,7 +906,7 @@
                     return n;
                 }
             }
-            class B {
+            class R {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -920,7 +919,7 @@
                     return e;
                 }
             }
-            const R = new (class {
+            const B = new (class {
                 defaults = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
                 options = this.setOptions;
                 parse = this.#e(_.lex, z.parse);
@@ -930,7 +929,7 @@
                 TextRenderer = D;
                 Lexer = _;
                 Tokenizer = S;
-                Hooks = B;
+                Hooks = R;
                 constructor(...e) {
                     this.use(...e);
                 }
@@ -1015,12 +1014,12 @@
                                 n.tokenizer = t;
                             }
                             if (e.hooks) {
-                                const t = this.defaults.hooks || new B();
+                                const t = this.defaults.hooks || new R();
                                 for (const n in e.hooks) {
                                     const s = e.hooks[n],
                                         r = n,
                                         i = t[r];
-                                    B.passThroughHooks.has(n)
+                                    R.passThroughHooks.has(n)
                                         ? (t[r] = (e) => {
                                               if (this.defaults.async) return Promise.resolve(s.call(t, e)).then((e) => i.call(t, e));
                                               const n = s.call(t, e);
@@ -1092,33 +1091,33 @@
                     };
                 }
             })();
-            function v(e, t) {
-                return R.parse(e, t);
+            function T(e, t) {
+                return B.parse(e, t);
             }
-            (v.options = v.setOptions =
+            (T.options = T.setOptions =
                 function (e) {
-                    return R.setOptions(e), (v.defaults = R.defaults), i(v.defaults), v;
+                    return B.setOptions(e), (T.defaults = B.defaults), i(T.defaults), T;
                 }),
-                (v.getDefaults = s),
-                (v.defaults = r),
-                (v.use = function (...e) {
-                    return R.use(...e), (v.defaults = R.defaults), i(v.defaults), v;
+                (T.getDefaults = s),
+                (T.defaults = r),
+                (T.use = function (...e) {
+                    return B.use(...e), (T.defaults = B.defaults), i(T.defaults), T;
                 }),
-                (v.walkTokens = function (e, t) {
-                    return R.walkTokens(e, t);
+                (T.walkTokens = function (e, t) {
+                    return B.walkTokens(e, t);
                 }),
-                (v.parseInline = R.parseInline),
-                (v.Parser = z),
-                (v.parser = z.parse),
-                (v.Renderer = $),
-                (v.TextRenderer = D),
-                (v.Lexer = _),
-                (v.lexer = _.lex),
-                (v.Tokenizer = S),
-                (v.Hooks = B),
-                (v.parse = v);
-            v.options, v.setOptions, v.use, v.walkTokens, v.parseInline, z.parse, _.lex;
+                (T.parseInline = B.parseInline),
+                (T.Parser = z),
+                (T.parser = z.parse),
+                (T.Renderer = $),
+                (T.TextRenderer = D),
+                (T.Lexer = _),
+                (T.lexer = _.lex),
+                (T.Tokenizer = S),
+                (T.Hooks = R),
+                (T.parse = T);
+            T.options, T.setOptions, T.use, T.walkTokens, T.parseInline, z.parse, _.lex;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.65ebeb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.d121b28a.js.map

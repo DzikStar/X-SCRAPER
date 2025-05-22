@@ -66,7 +66,7 @@
                 o = a(375839);
             const l = s().ec6e7d9a,
                 d = ({ activeSku: e }) => {
-                    const [t] = (0, c.Z)(e);
+                    const { status: t } = (0, c.Z)(e);
                     return "Pending" === t ? i.createElement(n.Z.Danger, { text: l }) : null;
                 },
                 p = () => {
@@ -521,7 +521,7 @@
                 h = a(782826),
                 E = a(725516),
                 y = a(125363),
-                Z = a(116868),
+                Z = a(488645),
                 _ = a(87690),
                 C = a(731822),
                 P = a(2430);
@@ -631,7 +631,7 @@
                         Z = (0, C.f)(d, c),
                         _ = (0, C.f)(a, e),
                         [P, w] = (0, ne.Z)(t),
-                        [k, x] = (0, re.Z)(t),
+                        { error: k, status: x } = (0, re.Z)(t),
                         S = P?.find((e) => e.price_id === Z.basePriceId),
                         I = !!S,
                         z = S?.product_sku,
@@ -666,10 +666,10 @@
                             return i.createElement(K.Z, { actionLabel: e, enableMaskForDismiss: !0, footer: i.createElement(ce.Z, { tier: d }), graphicDisplayMode: "none", headline: le, onAction: F, onClose: A, subtext: c });
                         }, [F, Z, s, d, _]),
                         L = i.createElement(m().I18NFormatMessage, { $i18n: "c9384b33" }, i.createElement(o.ZP, { link: ae.Ld }, m().b025ff5f));
-                    return "Pending" === k
+                    return "Pending" === x
                         ? i.createElement(l.Z.Danger, { style: he.errorCallout, text: me })
-                        : x
-                          ? i.createElement(l.Z.Danger, { style: he.errorCallout, text: x })
+                        : k
+                          ? i.createElement(l.Z.Danger, { style: he.errorCallout, text: k })
                           : w
                             ? i.createElement(l.Z.Danger, { style: he.errorCallout, text: w })
                             : i.createElement(
@@ -853,4 +853,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-c04190a6.4b63857a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-c04190a6.4c73a0fa.js.map

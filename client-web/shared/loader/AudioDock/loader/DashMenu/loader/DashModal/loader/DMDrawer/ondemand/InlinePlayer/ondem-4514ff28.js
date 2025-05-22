@@ -2,101 +2,6 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"],
     {
-        568320: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => h });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(717683),
-                s = n(347101);
-            const c = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: n } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12.957 4.54L20.414 12l-7.457 7.46-1.414-1.42L16.586 13H3v-2h13.586l-5.043-5.04 1.414-1.42z" })) }, { writingDirection: n });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const h = c;
-        },
-        63274: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 17 10", children: r.createElement("g", null, r.createElement("path", { d: "M.043 1.485L1.457.065 8.5 7.115l7.043-7.05 1.414 1.42L8.5 9.935.043 1.485z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 17, height: 10 };
-            const c = s;
-        },
-        360816: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => h });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(717683),
-                s = n(347101);
-            const c = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: n } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.457 2.04L9 7.59V3h2v8H3V9h4.586L2.043 3.46l1.414-1.42zM19.5 8H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" })) }, { writingDirection: n });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const h = c;
-        },
-        133272: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17 7v4c0 2.76-2.239 5-5 5s-5-2.24-5-5V7c0-2.76 2.239-5 5-5s5 2.24 5 5zm-4 12.947c4.677-.504 7.228-4.469 7.949-6.631l-1.896-.635c-.074.217-1.866 5.318-7.052 5.318s-6.979-5.102-7.051-5.316l-1.897.633c.721 2.162 3.271 6.127 7.949 6.631V22h2v-2.053H13z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
-        379327: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
-        98440: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
-        452693: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                i = n(890601),
-                o = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
         19697: (e, t, n) => {
             n.d(t, { q8: () => h, $i: () => o });
             n(571372);
@@ -115,34 +20,34 @@
                             let c = s.left,
                                 h = s.top,
                                 l = s.width,
-                                d = s.height,
-                                u = 0,
+                                u = s.height,
+                                d = 0,
                                 g = 0,
                                 f = n,
-                                m = i;
+                                w = i;
                             switch ((e.save(), o)) {
                                 case r.Z.TOP_RIGHT:
-                                    e.scale(-1, 1), (c = t.width - s.width - s.left), (u = -n);
+                                    e.scale(-1, 1), (c = t.width - s.width - s.left), (d = -n);
                                     break;
                                 case r.Z.BOTTOM_RIGHT:
-                                    e.rotate(Math.PI), (c = t.width - s.width - s.left), (h = t.height - s.height - s.top), (u = -n), (g = -i);
+                                    e.rotate(Math.PI), (c = t.width - s.width - s.left), (h = t.height - s.height - s.top), (d = -n), (g = -i);
                                     break;
                                 case r.Z.BOTTOM_LEFT:
                                     e.scale(1, -1), (h = t.height - s.height - s.top), (g = -i);
                                     break;
                                 case r.Z.LEFT_TOP:
-                                    e.translate(n / 2, i / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (c = s.top), (h = s.left), (l = s.height), (d = s.width), (u = -i / 2), (g = -n / 2), (f = i), (m = n);
+                                    e.translate(n / 2, i / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (c = s.top), (h = s.left), (l = s.height), (u = s.width), (d = -i / 2), (g = -n / 2), (f = i), (w = n);
                                     break;
                                 case r.Z.LEFT_BOTTOM:
-                                    e.translate(n / 2, i / 2), e.rotate(Math.PI / 2), (c = s.top), (h = t.height - s.width - s.left), (l = s.height), (d = s.width), (u = -i / 2), (g = -n / 2), (f = i), (m = n);
+                                    e.translate(n / 2, i / 2), e.rotate(Math.PI / 2), (c = s.top), (h = t.height - s.width - s.left), (l = s.height), (u = s.width), (d = -i / 2), (g = -n / 2), (f = i), (w = n);
                                     break;
                                 case r.Z.RIGHT_BOTTOM:
-                                    e.translate(n / 2, i / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (c = t.width - s.height - s.top), (h = t.height - s.width - s.left), (l = s.height), (d = s.width), (u = -i / 2), (g = -n / 2), (f = i), (m = n);
+                                    e.translate(n / 2, i / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (c = t.width - s.height - s.top), (h = t.height - s.width - s.left), (l = s.height), (u = s.width), (d = -i / 2), (g = -n / 2), (f = i), (w = n);
                                     break;
                                 case r.Z.RIGHT_TOP:
-                                    e.translate(n / 2, i / 2), e.rotate(-Math.PI / 2), (c = t.width - s.height - s.top), (h = s.left), (l = s.height), (d = s.width), (u = -i / 2), (g = -n / 2), (f = i), (m = n);
+                                    e.translate(n / 2, i / 2), e.rotate(-Math.PI / 2), (c = t.width - s.height - s.top), (h = s.left), (l = s.height), (u = s.width), (d = -i / 2), (g = -n / 2), (f = i), (w = n);
                             }
-                            e.drawImage(t, c, h, l, d, u, g, f, m), e.restore();
+                            e.drawImage(t, c, h, l, u, d, g, f, w), e.restore();
                         })(t.getContext("2d"), e, t.width, t.height, i, o),
                         t
                     ),
@@ -246,7 +151,7 @@
                 };
         },
         276259: (e, t, n) => {
-            n.d(t, { Lw: () => i, Re: () => d, VJ: () => s, ZF: () => u, hv: () => c, ku: () => r, qp: () => o, uv: () => a, v5: () => l });
+            n.d(t, { Lw: () => i, Re: () => u, VJ: () => s, ZF: () => d, hv: () => c, ku: () => r, qp: () => o, uv: () => a, v5: () => l });
             n(571372), n(875640), n(694898), n(38857), n(540171), n(157093), n(265688), n(270315), n(592529), n(86943), n(691157), n(543673), n(240753), n(128399);
             function r(e) {
                 const t = e.match(/=*$/);
@@ -275,7 +180,7 @@
                         const i = new FileReader();
                         t &&
                             (t.signal.onabort = () => {
-                                i.abort?.(), r(Error(u));
+                                i.abort?.(), r(Error(d));
                             }),
                             (i.onload = (e) => {
                                 e.target instanceof FileReader && e.target.result instanceof ArrayBuffer ? n(e.target.result) : r(Error("The FileReader result was not of type ArrayBuffer"));
@@ -335,8 +240,8 @@
                             (o.src = URL.createObjectURL(e));
                     }),
                 l = ["image/jpeg", "image/png", "image/webp"],
-                d = "image/gif",
-                u = "Reading aborted";
+                u = "image/gif",
+                d = "Reading aborted";
         },
         364837: (e, t, n) => {
             n.d(t, { R: () => h });
@@ -489,7 +394,7 @@
                         });
         },
         653843: (e, t, n) => {
-            n.d(t, { Y7: () => g, ZP: () => y, m2: () => p });
+            n.d(t, { Y7: () => g, ZP: () => I, m2: () => T });
             var r = n(19697),
                 i = n(790187),
                 o = n(549755),
@@ -502,8 +407,8 @@
                             const c = e.width > n || e.height > n,
                                 h = e.toDataURL("image/jpeg", r),
                                 l = h.split(";base64,")[1],
-                                d = (0, s.ku)(l);
-                            if (c || d > t) {
+                                u = (0, s.ku)(l);
+                            if (c || u > t) {
                                 let e = 0.8;
                                 return c && (e = o > a ? n / o : n / a), i(o * e, a * e);
                             }
@@ -519,34 +424,34 @@
                 return e instanceof HTMLCanvasElement && t <= i && n <= o ? Promise.resolve(e) : a <= i && s <= o ? (0, r.$i)(e, i, o) : (0, r.$i)(e, a, s).then((e) => h(e, e.width, e.height, i, o));
             }
             const l = 5242880,
-                d = 4096,
-                u = 0.85,
+                u = 4096,
+                d = 0.85,
                 g = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
                 f = (e) => e.orientation !== i.Z.TOP_LEFT && e.orientation !== i.Z.UNKNOWN,
-                m = (e, t = l, n = d) => {
+                w = (e, t = l, n = u) => {
                     const { height: r, size: i, width: o } = e;
                     return o > n || r > n || i > t;
                 },
-                w = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                v = (e, t) => {
-                    const { height: n, left: r, top: i, width: o } = w(e, t);
+                m = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
+                p = (e, t) => {
+                    const { height: n, left: r, top: i, width: o } = m(e, t);
                     return !(0 === i && 0 === r && o === e.width && n === e.height);
                 };
-            function p(e, t) {
-                const { maxFileSize: n = l, maxDimension: r = d, cropData: i, jpgPixelsPerByteForResize: o } = t || {},
+            function T(e, t) {
+                const { maxFileSize: n = l, maxDimension: r = u, cropData: i, jpgPixelsPerByteForResize: o } = t || {},
                     a = "image/jpeg" === e.type,
                     s = (e.width * e.height) / e.size;
-                return f(e) || m(e, n, r) || v(e, i) || (a && !!o && s < o);
+                return f(e) || w(e, n, r) || p(e, i) || (a && !!o && s < o);
             }
-            const E = (e, t) => {
+            const O = (e, t) => {
                     const { height: n, width: r } = e;
                     return r <= t && n <= t ? { width: r, height: n } : r > n ? { width: t, height: Math.round(n / (r / t)) } : { width: Math.round(r / (n / t)), height: t };
                 },
-                Z = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
-            function y(e, t) {
-                const { maxFileSize: n = l, maxDimension: i = d, targetQuality: s = u, cropData: h } = t || {},
-                    f = w(e, h);
-                if (!p(e, t)) return Promise.resolve(e.fileHandle);
+                E = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
+            function I(e, t) {
+                const { maxFileSize: n = l, maxDimension: i = u, targetQuality: s = d, cropData: h } = t || {},
+                    f = m(e, h);
+                if (!T(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, a.DS)(e)) {
                     const e = new o.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
@@ -555,14 +460,14 @@
                     const e = new o.Z("Gifs cannot be processed.", g.GIF_IS_TOO_LARGE);
                     return Promise.reject(e);
                 }
-                const m = (e) => c(e, { maxFileSize: n, maxDimension: i, targetQuality: s });
+                const w = (e) => c(e, { maxFileSize: n, maxDimension: i, targetQuality: s });
                 return e
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
                         const n = ({ height: n, width: i }) => (0, r.$i)(e, i, n, t, f);
-                        return Z(e)
-                            .then(() => ((e) => e(E(f, i)))(n))
-                            .then(m);
+                        return E(e)
+                            .then(() => ((e) => e(O(f, i)))(n))
+                            .then(w);
                     })
                     .catch(() => {
                         const e = new o.Z("Image cannot be processed", g.CANNOT_BE_PROCESSED);
@@ -589,12 +494,12 @@
                         }
                     );
                 }
-                function d() {
+                function u() {
                     h.forEach((e) => {
                         e(s);
                     });
                 }
-                function u(e) {
+                function d(e) {
                     return function (t) {
                         const n = e.current.slice,
                             r = e.current.state,
@@ -607,22 +512,22 @@
                         return s;
                     },
                     setState: function (e) {
-                        (s = (0, i.ZP)(s, (t) => e(t))), d();
+                        (s = (0, i.ZP)(s, (t) => e(t))), u();
                     },
                     reset: function () {
-                        (s = (0, o.Z)(n)), d();
+                        (s = (0, o.Z)(n)), u();
                     },
                     useSlice: function (e, t) {
                         const n = t?.equalityFn || c.equality,
                             i = a.Z,
                             o = r.useRef({ state: s, slice: e(s), selector: e, equality: n, onUpdate: i });
                         (o.current.selector = e), (o.current.equality = n);
-                        const [h, d] = r.useState(() => o.current.slice);
+                        const [h, u] = r.useState(() => o.current.slice);
                         return (
                             r.useEffect(() => {
                                 let e = !0;
-                                o.current.onUpdate = (e) => d(() => e);
-                                const t = u(o);
+                                o.current.onUpdate = (e) => u(() => e);
+                                const t = d(o);
                                 function n(n) {
                                     e && t(n);
                                 }
@@ -638,7 +543,7 @@
                     subscribe: function (e, t, n) {
                         const r = n?.equalityFn || c.equality,
                             i = { current: { state: s, slice: e(s), selector: e, equality: r, onUpdate: t } },
-                            o = l(u(i));
+                            o = l(d(i));
                         return i.current.onUpdate(i.current.slice), o;
                     },
                 };
@@ -749,4 +654,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28.92f76d9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28.57719bba.js.map

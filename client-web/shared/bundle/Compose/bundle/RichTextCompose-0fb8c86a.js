@@ -19,10 +19,10 @@
                 m = d().aa65a44a;
             const u = n.default.create((e) => ({ container: { width: "100%" } })),
                 _ = p(function ({ addEducationFlag: e, buttonRef: t, shouldShowEducation: s }) {
-                    const n = () => {
+                    const n = i.useCallback(() => {
                         e();
-                    };
-                    return i.useEffect(() => n, []), s ? i.createElement(o.Z, { style: u.container }, i.createElement(a.Z, { containerRef: t, onClose: n, text: m })) : null;
+                    }, [e]);
+                    return i.useEffect(() => n, [n]), s ? i.createElement(o.Z, { style: u.container }, i.createElement(a.Z, { containerRef: t, onClose: n, text: m })) : null;
                 });
         },
         472826: (e, t, s) => {
@@ -1079,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-0fb8c86a.0b3f6a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-0fb8c86a.c86b9b4a.js.map

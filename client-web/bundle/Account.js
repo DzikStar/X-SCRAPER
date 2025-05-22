@@ -9,12 +9,12 @@
                 l,
                 a,
                 o = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "affiliatesQuery", selections: [{ alias: null, args: null, concreteType: "Affiliations", kind: "LinkedField", name: "affiliations", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "affiliated_account_ids_results", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: (l = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), action: "THROW" }], storageKey: null }, action: "THROW" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "affiliatesQuery", selections: [{ alias: null, args: null, concreteType: "Affiliations", kind: "LinkedField", name: "affiliations", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "affiliated_account_ids_results", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: (l = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), action: "THROW" }], storageKey: null }, action: "THROW" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], type: "Query", abstractKey: null },
                     kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "affiliatesQuery", selections: [{ alias: null, args: null, concreteType: "Affiliations", kind: "LinkedField", name: "affiliations", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "affiliated_account_ids_results", plural: !0, selections: [i, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [l], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, a], storageKey: null }], storageKey: null }] },
-                    params: { id: "lre2gA0kvs0gf4XRNei6Qw", metadata: {}, name: "affiliatesQuery", operationKind: "query", text: null },
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "affiliatesQuery", selections: [{ alias: null, args: null, concreteType: "Affiliations", kind: "LinkedField", name: "affiliations", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "affiliated_account_ids_results", plural: !0, selections: [i, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [l], storageKey: null }, (a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, a], storageKey: null }], storageKey: null }] },
+                    params: { id: "1Sjin33Vk96OVlNTUG6zSg", metadata: {}, name: "affiliatesQuery", operationKind: "query", text: null },
                 };
-            o.hash = "10c9183ce406af8e8ffa48a4cfd593b4";
+            o.hash = "42f499bfb2697230967b662ad70f78f8";
             const s = o;
         },
         906433: (e, t, n) => {
@@ -139,8 +139,8 @@
                 C = n(175564),
                 Z = n(748138),
                 x = n(698891),
-                P = n(68290),
-                T = n(707570),
+                T = n(68290),
+                P = n(707570),
                 F = n(839),
                 S = n(593875),
                 I = n(829110),
@@ -152,16 +152,16 @@
                 V = n(997657),
                 U = n(306114),
                 O = n(279918),
-                R = n(722517),
-                z = n(880647),
-                B = n(655352),
+                z = n(722517),
+                B = n(880647),
+                R = n(655352),
                 $ = n(125363),
-                K = n(466036),
-                j = n(390387),
+                j = n(466036),
+                K = n(390387),
                 H = n(76920),
                 W = n(477403),
-                q = n(104119),
-                G = n(484633),
+                G = n(104119),
+                q = n(484633),
                 Q = n(381904),
                 X = n(206962);
             const Y = c().a15648a4,
@@ -192,15 +192,15 @@
                 Ee = "rweb.navItemDecorations",
                 Ce = ({ analytics: e, featureSwitches: t, onClose: n = D.Z, userClaims: s, viewerUser: c, acceptedFollowerCount: Ce, pendingFollowerCount: Ze }) => {
                     let xe = [],
-                        Pe = [];
-                    const Te = (0, R.Z)("PremiumNav"),
+                        Te = [];
+                    const Pe = (0, z.Z)("PremiumNav"),
                         Fe = t.isTrue("subscriptions_branding_checkmark_logo_enabled"),
                         Se = (0, r.Dv)(N.lZ),
                         [Ie, Ae] = i.useState(!1),
                         [De, Le] = i.useState(!1),
                         Me = t.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
                         Ne = t.getStringValue("subscriptions_upsells_vo_nav_decoration_variant"),
-                        Ve = (0, q.Md)(Ne);
+                        Ve = (0, G.Md)(Ne);
                     i.useEffect(() => {
                         Ve &&
                             Se.get(Ee).then((e) => {
@@ -209,29 +209,29 @@
                     }, [Se, Ve]);
                     const Ue = (0, $.I0)();
                     i.useEffect(() => {
-                        c?.protected && Ue(K.GE());
+                        c?.protected && Ue(j.GE());
                     }, [Ue, c]);
                     const Oe = (0, H.Zy)();
                     Oe.size > 0 && Oe.add("/settings");
-                    const Re = (0, $.v9)(j.Lz),
-                        ze = ({ link: e }) => !(Re && (("string" == typeof e && ((e.startsWith("/settings") && !Oe.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
-                        Be = c?.screen_name || "",
+                    const ze = (0, $.v9)(K.Lz),
+                        Be = ({ link: e }) => !(ze && (("string" == typeof e && ((e.startsWith("/settings") && !Oe.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
+                        Re = c?.screen_name || "",
                         $e = (0, l.iv)().width,
-                        Ke = z.Z.isOneColumnLayout($e) || z.Z.isOneColumnSquishedLayout($e),
-                        je = t.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Re,
+                        je = B.Z.isOneColumnLayout($e) || B.Z.isOneColumnSquishedLayout($e),
+                        Ke = t.isTrue("responsive_web_birdwatch_note_writing_enabled") && !ze,
                         He = t.isTrue("branded_like_preview_enabled"),
                         We = t.isTrue("subscriptions_sign_up_enabled"),
-                        qe = t.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
-                        Ge = t.isTrue("blue_business_vo_nav_for_legacy_verified"),
+                        Ge = t.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
+                        qe = t.isTrue("blue_business_vo_nav_for_legacy_verified"),
                         Qe = t.isTrue("rweb_xchat_enabled"),
                         Xe = s.isAnyPremiumSubscriber(),
                         Ye = s.isVerifiedOrg(),
                         Je = s.isTrueAndEnabled("subscriptions_feature_article_composer"),
                         et = Xe,
-                        tt = s.isTrueAndEnabled("subscriptions_feature_article_composer") && !(0, B.ZP)(),
+                        tt = s.isTrueAndEnabled("subscriptions_feature_article_composer") && !(0, R.ZP)(),
                         { role: nt } = (0, M.l7)(),
                         { activeItem: it } = (0, Q.Y)(),
-                        rt = t.isTrue("voice_rooms_web_space_creation") && nt !== G.Q.host && it?.type !== G.W.space,
+                        rt = t.isTrue("voice_rooms_web_space_creation") && nt !== q.Q.host && it?.type !== q.W.space,
                         lt = t.isTrue("rweb_go_live_enabled"),
                         at = t.isTrue("tweet_awards_web_coin_purchase_enabled"),
                         ot = t.isTrue("payments_enabled"),
@@ -249,9 +249,9 @@
                         bt = { icon: u.default, label: Y, link: "/i/communitynotes", onClick: pt("birdwatch") },
                         yt = { icon: m.default, label: J, link: "/i/bookmarks", onClick: pt("bookmarks_overflow_item") },
                         ht = { icon: p.default, label: ee, link: "/i/branded_likes_preview", onClick: pt("branded_likes_preview_overflow_item") },
-                        wt = (f.default, pt("labs_item"), { icon: g.default, label: ie, link: `/${Be}/lists`, onClick: pt("lists_overflow_item") }),
+                        wt = (f.default, pt("labs_item"), { icon: g.default, label: ie, link: `/${Re}/lists`, onClick: pt("lists_overflow_item") }),
                         vt = { badgeCount: Ze, icon: _.default, label: te, link: "/follower_requests", onClick: pt("follower_requests_overflow_item") },
-                        kt = { icon: b.default, label: ae, link: `/${Be}`, onClick: pt("profile_overflow_item") },
+                        kt = { icon: b.default, label: ae, link: `/${Re}`, onClick: pt("profile_overflow_item") },
                         Et = { icon: y.default, label: "Money", link: "/i/money", onClick: pt("payments_overflow_item") },
                         Ct = { icon: h.default, label: de, link: "/i/coins", onClick: pt("twitter_coins") },
                         Zt = () => ({
@@ -268,13 +268,13 @@
                         }),
                         xt = () => {
                             const e = t.isTrue("subscriptions_upsells_premium_nav_migration_enabled"),
-                                { upsellContent: n } = e ? Te : {},
+                                { upsellContent: n } = e ? Pe : {},
                                 r = "UpsellButtonRenderProperties" === n?.render_properties.__typename && n.render_properties.action_label ? n.render_properties.action_label : ge,
-                                l = "UpsellButtonRenderProperties" === Te?.upsellContent?.render_properties.__typename ? Te.upsellContent.render_properties.decoration_label : null;
+                                l = "UpsellButtonRenderProperties" === Pe?.upsellContent?.render_properties.__typename ? Pe.upsellContent.render_properties.decoration_label : null;
                             return { icon: Fe ? v.default : k.default, label: r, link: { pathname: "/i/premium_sign_up", state: { referring_page: "dash_menu" } }, onClick: pt("verified_overflow_item"), decoration: l ? i.createElement(o.ZP, { background: "blue500" }, l) : null };
                         },
-                        Pt = { icon: Fe ? v.default : k.default, label: ge, link: "/i/premium", onClick: pt("premium_hub") },
-                        Tt = { label: re, link: "/logout", icon: E.default, onClick: pt("logout_overflow_item"), testID: X.Z.logout },
+                        Tt = { icon: Fe ? v.default : k.default, label: ge, link: "/i/premium", onClick: pt("premium_hub") },
+                        Pt = { label: re, link: "/logout", icon: E.default, onClick: pt("logout_overflow_item"), testID: X.Z.logout },
                         Ft = { icon: C.default, label: ce, link: (0, a.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), onClick: pt("twitter_ads_item") },
                         St = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
                         It = { icon: Z.default, label: le, link: St ? "/i/monetization" : "/settings/monetization", onClick: pt("monetization") },
@@ -291,24 +291,24 @@
                                 pt("verified_organization_signup_item")()
                             ),
                             link: { pathname: "/i/verified-orgs-signup", state: { referring_page: "dash_menu" } },
-                            icon: P.default,
+                            icon: T.default,
                             decoration: De && Me && Ve ? i.createElement(o.ZP, { background: "blue500" }, Ve.label) : null,
                         }),
-                        Lt = { label: ue, onClick: pt("verified_organization_dashboard_item"), link: "/i/verified", icon: P.default },
-                        Mt = { label: me, onClick: pt("create_space_item"), link: "/i/spaces/start", icon: T.default },
+                        Lt = { label: ue, onClick: pt("verified_organization_dashboard_item"), link: "/i/verified", icon: T.default },
+                        Mt = { label: me, onClick: pt("create_space_item"), link: "/i/spaces/start", icon: P.default },
                         Nt = { label: pe, onClick: pt("go_live_item"), link: "/i/go-live", icon: F.default },
                         Vt = c ? { label: fe, onClick: pt("communities_item"), link: `/${c.screen_name}/communities`, icon: S.default } : void 0,
                         Ut = Qe && c ? { label: ve, onClick: pt("chat_item"), link: "/i/chat", icon: I.default, decoration: i.createElement(o.ZP, { background: "blue500" }, ke) } : void 0,
                         Ot = t.isTrue("spaces_conference_enabled") || !!ct,
-                        Rt = { label: "Conferences", onClick: pt("conferences_item"), link: "/i/conferences", icon: F.default },
-                        zt = { label: be, onClick: pt("jobs_item"), link: "/jobs", icon: A.default },
-                        Bt = [gt, _t],
+                        zt = { label: "Conferences", onClick: pt("conferences_item"), link: "/i/conferences", icon: F.default },
+                        Bt = { label: be, onClick: pt("jobs_item"), link: "/jobs", icon: A.default },
+                        Rt = [gt, _t],
                         $t = We && !Xe,
-                        Kt = Ge,
-                        jt = (0, L.Z)([Ut, kt, et ? Pt : void 0, ot ? Et : void 0, $t ? xt() : void 0, dt ? Vt : void 0, Be ? wt : void 0, yt, tt ? ft : void 0, Kt ? (Ye ? Lt : Dt()) : void 0, at ? Ct : void 0, je ? bt : void 0, Ze || Ce ? vt : void 0, mt ? Zt() : void 0, It, Ft, st ? zt : void 0, Ot ? Rt : void 0, At, Tt]).filter(ze),
+                        jt = qe,
+                        Kt = (0, L.Z)([Ut, kt, et ? Tt : void 0, ot ? Et : void 0, $t ? xt() : void 0, dt ? Vt : void 0, Re ? wt : void 0, yt, tt ? ft : void 0, jt ? (Ye ? Lt : Dt()) : void 0, at ? Ct : void 0, Ke ? bt : void 0, Ze || Ce ? vt : void 0, mt ? Zt() : void 0, It, Ft, st ? Bt : void 0, Ot ? zt : void 0, At, Pt]).filter(Be),
                         Ht = i.useContext(V.hC),
-                        Wt = (0, L.Z)([Ut, O.yw.Lists > Ht && Be ? wt : void 0, O.yw.Premium > Ht && et ? Pt : void 0, O.yw.PremiumSignup > Ht && $t ? xt() : void 0, O.yw.Bookmarks > Ht ? yt : void 0, O.yw.Payments > Ht && ot ? Et : void 0, O.yw.Communities > Ht && dt ? Vt : void 0, O.yw.Articles > Ht && Je ? ft : void 0, O.yw.CommunityNotes > Ht && je ? bt : void 0, O.yw.Analytics > Ht && mt ? Zt() : void 0, It, O.yw.VerifiedOrgDash > Ht && Kt && Ye ? Lt : void 0, (((!Ye || s.isLegacyVerifiedOrg()) && O.yw.VerifiedOrgSignup > Ht) || (s.isVerifiedOrgAffiliate() && !s.isVerifiedOrg())) && t.isTrue("blue_business_vo_nav_for_legacy_verified") ? Dt() : void 0, at ? Ct : void 0, He ? ht : void 0, Ze || Ce ? vt : void 0, Ft, O.yw.Jobs > Ht && st ? zt : void 0, void 0, rt ? Mt : void 0, lt ? Nt : void 0, Ot ? Rt : void 0, At]).filter(ze);
-                    return (0, B.ZP)() ? ((xe = xe.concat(Wt)), qe && Ke && (Pe = Bt)) : ((xe = xe.concat(jt)), qe && (Pe = Bt)), { coreItems: xe, countrySpecificItems: Pe };
+                        Wt = (0, L.Z)([Ut, O.yw.Lists > Ht && Re ? wt : void 0, O.yw.Premium > Ht && et ? Tt : void 0, O.yw.PremiumSignup > Ht && $t ? xt() : void 0, O.yw.Bookmarks > Ht ? yt : void 0, O.yw.Payments > Ht && ot ? Et : void 0, O.yw.Communities > Ht && dt ? Vt : void 0, O.yw.Articles > Ht && Je ? ft : void 0, O.yw.CommunityNotes > Ht && Ke ? bt : void 0, O.yw.Analytics > Ht && mt ? Zt() : void 0, It, O.yw.VerifiedOrgDash > Ht && jt && Ye ? Lt : void 0, (((!Ye || s.isLegacyVerifiedOrg()) && O.yw.VerifiedOrgSignup > Ht) || (s.isVerifiedOrgAffiliate() && !s.isVerifiedOrg())) && t.isTrue("blue_business_vo_nav_for_legacy_verified") ? Dt() : void 0, at ? Ct : void 0, He ? ht : void 0, Ze || Ce ? vt : void 0, Ft, O.yw.Jobs > Ht && st ? Bt : void 0, void 0, rt ? Mt : void 0, lt ? Nt : void 0, Ot ? zt : void 0, At]).filter(Be);
+                    return (0, R.ZP)() ? ((xe = xe.concat(Wt)), Ge && je && (Te = Rt)) : ((xe = xe.concat(Kt)), Ge && (Te = Rt)), { coreItems: xe, countrySpecificItems: Te };
                 };
         },
         206962: (e, t, n) => {
@@ -390,7 +390,7 @@
                         i = (
                             n?.flatMap(({ rest_id: e, result: t }) => {
                                 if ("User" !== t?.__typename) return [];
-                                return [{ name: t.legacy.name, id: e }];
+                                return [{ name: t.core.name, id: e }];
                             }) ?? []
                         ).filter(({ id: e }) => g.includes(e));
                     return t && !i.some(({ id: e }) => "783214" === e) ? [{ id: "783214", name: "X" }, ...i] : i;
@@ -424,8 +424,8 @@
                 C = n(291394),
                 Z = n(650093),
                 x = n(183822),
-                P = n(575626),
-                T = n(752475),
+                T = n(575626),
+                P = n(752475),
                 F = n(334113),
                 S = n(873930),
                 I = n(125363),
@@ -442,23 +442,23 @@
                         r = e.tv?.profile?.[i?.toLowerCase() || ""];
                     return r;
                 },
-                R = (e) => e.tv?.player,
-                z = (e, t) => {
+                z = (e) => e.tv?.player,
+                B = (e, t) => {
                     const { match: n } = t,
                         i = n.params.screenName;
                     return e.tv?.profile?.[i?.toLowerCase() || ""]?.cursor;
                 },
-                B = (e) => e.tv?.profileFetchStatus === M.Z.LOADING,
+                R = (e) => e.tv?.profileFetchStatus === M.Z.LOADING,
                 $ = (0, N.Z)()
-                    .propsFromState(() => ({ tvProfile: O, tvPlayer: R, cursor: z, isLoading: B }))
+                    .propsFromState(() => ({ tvProfile: O, tvPlayer: z, cursor: B, isLoading: R }))
                     .propsFromActions(() => ({ playerOpen: V.eX.playerOpen, fetchUserProfileAndVideos: U.Sn }))
                     .withAnalytics({ page: "profile" });
-            var K = n(708411),
-                j = n(154003),
+            var j = n(708411),
+                K = n(154003),
                 H = n(524483),
                 W = n(467537),
-                q = n(725516);
-            const G = "tv-follow-button",
+                G = n(725516);
+            const q = "tv-follow-button",
                 Q = p().eb5f060c,
                 X = p().d960b55c,
                 Y = p().c0f56044,
@@ -468,7 +468,7 @@
                 ne = ({ style: e, user: t }) => {
                     const { closeModal: n, openModal: r } = (0, H.N)(),
                         l = (0, I.I0)(),
-                        a = (0, q.z)(),
+                        a = (0, G.z)(),
                         o = i.useCallback(() => {
                             t?.following
                                 ? (a.scribe({ element: "unfollow-button", action: "click", data: { profile_id: t.id_str } }),
@@ -493,9 +493,9 @@
                                   }))
                                 : (a.scribe({ element: "follow-button", action: "click", data: { profile_id: t.id_str } }), l(U.ZN({ userId: t.id_str, screenName: t?.screen_name })));
                         }, [a, n, l, r, t?.following, t.id_str, t.screen_name]);
-                    return i.createElement(W.C, { "aria-label": t?.following ? Y : Q, focusedStyle: t?.following ? ie.interactiveViewUnfollowFocused : void 0, name: G, onPress: o, role: "button", style: [ie.interactiveView, e] }, ({ hasFocus: e }) => {
+                    return i.createElement(W.C, { "aria-label": t?.following ? Y : Q, focusedStyle: t?.following ? ie.interactiveViewUnfollowFocused : void 0, name: q, onPress: o, role: "button", style: [ie.interactiveView, e] }, ({ hasFocus: e }) => {
                         const n = t?.following ? (e ? Y : X) : Q;
-                        return i.createElement(j.ZP, { "aria-label": n, size: "small", style: ie.button, type: t?.following ? (e ? "destructiveOutlined" : "primaryOutlined") : "primaryFilled" }, n);
+                        return i.createElement(K.ZP, { "aria-label": n, size: "small", style: ie.button, type: t?.following ? (e ? "destructiveOutlined" : "primaryOutlined") : "primaryFilled" }, n);
                     });
                 },
                 ie = u.default.create((e) => ({ interactiveView: { borderRadius: e.borderRadii.infinite }, interactiveViewUnfollowFocused: { borderColor: e.colors.red500 }, button: { width: 128 * e.scaleMultiplier } }));
@@ -505,11 +505,11 @@
                 oe = p().iebc30ca,
                 se = ({ style: e, user: t }) => {
                     const n = (0, I.I0)(),
-                        r = (0, q.z)(),
+                        r = (0, G.z)(),
                         l = i.useCallback(() => {
                             r.scribe({ element: "notify-button", action: "click", data: { profile_id: t.id_str } }), n(U.BX({ userId: t.id_str, notificationsEnabled: !t.notifications, screenName: t?.screen_name }));
                         }, [r, n, t.id_str, t.notifications, t?.screen_name]);
-                    return i.createElement(W.C, { "aria-label": t?.notifications ? oe : ae, name: "tv-notify-button", onPress: l, role: "button", style: [ce.interactiveView, e] }, i.createElement(j.ZP, { icon: t?.notifications ? i.createElement(re.default, null) : i.createElement(le.default, null), size: "small", type: "primaryOutlined" }));
+                    return i.createElement(W.C, { "aria-label": t?.notifications ? oe : ae, name: "tv-notify-button", onPress: l, role: "button", style: [ce.interactiveView, e] }, i.createElement(K.ZP, { icon: t?.notifications ? i.createElement(re.default, null) : i.createElement(le.default, null), size: "small", type: "primaryOutlined" }));
                 },
                 ce = u.default.create((e) => ({ interactiveView: { borderRadius: e.borderRadii.infinite } })),
                 de = "profile-grid",
@@ -540,8 +540,8 @@
                     );
                 },
                 he = ({ user: e }) => i.createElement(a.Z, { style: [Ee.profileStats, Ee.marginBottom6] }, i.createElement(a.Z, { style: [Ee.profileStatsItem, Ee.marginEnd8] }, i.createElement(p().I18NFormatMessage, { $i18n: "d2924acb" }, i.createElement(s.Z.Value, { style: Ee.marginEnd4 }, p().ec08efe4({ formattedCount: c.ZP.getTruncatedCount(e?.followers_count || 0) })), i.createElement(s.Z.Label, { style: Ee.marginEnd4 }, p().h9f711f0({ count: e?.followers_count || 0 })))), i.createElement(a.Z, { style: [Ee.profileStatsItem, Ee.marginEnd8] }, i.createElement(p().I18NFormatMessage, { $i18n: "a8f9642d" }, i.createElement(s.Z.Value, { style: Ee.marginEnd4 }, p().bef78294({ formattedCount: c.ZP.getTruncatedCount(e?.friends_count || 0) })), i.createElement(s.Z.Label, { style: Ee.marginEnd4 }, p().hda3bb87({ count: e?.friends_count || 0 }))))),
-                we = (e) => `${P.sN}.${L.rQ}.${de}.carousel-${e}`,
-                ve = (e) => `${P.sN}.${L.rQ}.${de}.${ue}.video-${e}`,
+                we = (e) => `${T.sN}.${L.rQ}.${de}.carousel-${e}`,
+                ve = (e) => `${T.sN}.${L.rQ}.${de}.${ue}.video-${e}`,
                 ke = ({ cursor: e, fetchUserProfileAndVideos: t, history: n, isLoading: s, match: c, playerOpen: u, tvProfile: m }) => {
                     const p = c.params.screenName,
                         b = m?.user,
@@ -551,32 +551,32 @@
                         V = N && b && N.id_str === b.id_str,
                         U = (w?.length || 0) + 1,
                         O = i.useRef(null),
-                        R = i.useRef(Array(U).fill(null));
+                        z = i.useRef(Array(U).fill(null));
                     (0, g.q)(() => {
                         ((p && !b) || !M) && t({ screenName: p });
                     });
-                    const { clearVoiceHandlers: z, registerVoiceHandlers: B } = (0, y.B)();
+                    const { clearVoiceHandlers: B, registerVoiceHandlers: R } = (0, y.B)();
                     i.useEffect(
                         () => (
-                            B({ onupdatestate: () => h.E.List }),
+                            R({ onupdatestate: () => h.E.List }),
                             function () {
-                                z();
+                                B();
                             }
                         ),
-                        [z, B],
+                        [B, R],
                     );
                     const $ = i.useCallback(() => {
                             p && !s && t({ screenName: p, cursor: e });
                         }, [p, s, t, e]),
-                        j = (0, I.I0)(),
+                        K = (0, I.I0)(),
                         H = i.useCallback(
                             (e) => {
-                                j(u(e)), n.push((0, L.X5)(e));
+                                K(u(e)), n.push((0, L.X5)(e));
                             },
-                            [j, n, u],
+                            [K, n, u],
                         ),
-                        W = ((e) => ("https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" === e ? K.jz : e ? e.replace(K.KB, "_400x400.jpg") : K.jz))(b?.profile_image_url_https),
-                        q = i.useCallback(() => !1, []),
+                        W = ((e) => ("https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" === e ? j.jz : e ? e.replace(j.KB, "_400x400.jpg") : j.jz))(b?.profile_image_url_https),
+                        G = i.useCallback(() => !1, []),
                         Q = i.useMemo(
                             () =>
                                 w?.map((e, t) => () => {
@@ -595,13 +595,13 @@
                                         {
                                             key: t,
                                             ref: (e) => {
-                                                R.current[t] = e;
+                                                z.current[t] = e;
                                             },
                                         },
-                                        i.createElement(v.Z, { content: e.content, displayType: (0, F.qU)(e.displayType), handleNoriginArrowPress: q, name: `carousel-${t.toString()}`, onFocus: Q?.[t], onSelectVideo: H, title: e.title }),
+                                        i.createElement(v.Z, { content: e.content, displayType: (0, F.qU)(e.displayType), handleNoriginArrowPress: G, name: `carousel-${t.toString()}`, onFocus: Q?.[t], onSelectVideo: H, title: e.title }),
                                     ),
                                 ),
-                            [q, w, Q, H],
+                            [G, w, Q, H],
                         ),
                         J = i.useMemo(() => {
                             const e = w && w.length > 0;
@@ -610,12 +610,12 @@
                                     a.Z,
                                     {
                                         ref: (e) => {
-                                            R.current[U - 1] = e;
+                                            z.current[U - 1] = e;
                                         },
                                     },
-                                    i.createElement(Z.Z, { autoFocus: !e, content: M, handleNoriginArrowPress: q, name: ue, onFocus: X, onNearEnd: $, onSelectVideo: H, returnToFirstElementOnEscape: !0, style: Ee.content, title: e ? be : void 0, width: 4 }),
+                                    i.createElement(Z.Z, { autoFocus: !e, content: M, handleNoriginArrowPress: G, name: ue, onFocus: X, onNearEnd: $, onSelectVideo: H, returnToFirstElementOnEscape: !0, style: Ee.content, title: e ? be : void 0, width: 4 }),
                                 );
-                        }, [$, q, w, X, H, U, M]),
+                        }, [$, G, w, X, H, U, M]),
                         ee = i.useCallback((e) => {
                             O.current = e;
                         }, []),
@@ -626,7 +626,7 @@
                                 let n = 0;
                                 switch (e.key) {
                                     case "ArrowUp":
-                                        if (0 === t) return (0, r.setFocus)(`${P.sN}.${L.rQ}.${G}`), !0;
+                                        if (0 === t) return (0, r.setFocus)(`${T.sN}.${L.rQ}.${q}`), !0;
                                         (n = Math.max(t - 1, 0)), (0, r.setFocus)(we(n));
                                         break;
                                     case "ArrowDown":
@@ -634,20 +634,20 @@
                                         if (n === U - 1) return (0, r.setFocus)(ve(0)), !0;
                                         break;
                                     case "ArrowLeft":
-                                        (0, r.setFocus)(`${P.sN}.${P.TZ}`);
+                                        (0, r.setFocus)(`${T.sN}.${T.TZ}`);
                                 }
                                 return !0;
                             },
                             [U],
                         ),
                         ie = (0, S.Z)(),
-                        re = i.useMemo(() => (ie ? i.createElement(a.Z, null, Y, J) : i.createElement(C.k, { getGPUScrollerApi: ee, renderedItemRefs: R, scrollX: !1, scrollY: !0 }, Y, J)), [ee, Y, J, ie]),
+                        re = i.useMemo(() => (ie ? i.createElement(a.Z, null, Y, J) : i.createElement(C.k, { getGPUScrollerApi: ee, renderedItemRefs: z, scrollX: !1, scrollY: !0 }, Y, J)), [ee, Y, J, ie]),
                         le = (0, r.getCurrentFocusKey)(),
                         ae = i.useCallback((e) => (w?.length ? le !== we(0) && ((0, r.setFocus)(we(0)), !0) : !!M?.length && le !== ve(0) && ((0, r.setFocus)(ve(0)), !0)), [le, w?.length, M?.length]),
                         oe = i.useMemo(() => (M?.length || w?.length ? i.createElement(E.Z, { "aria-label": void 0, autoFocus: !0, name: de, onArrowPress: te, onEscapeOrBack: ae, role: "grid", saveLastFocusedChild: !0, trackChildren: !0 }, re) : i.createElement(a.Z, { style: Ee.noVideosContainer }, i.createElement(o.ZP, { size: "headline1", weight: "bold" }, V ? ge : _e({ name: `@${b?.screen_name || ""}` })))), [te, ae, V, w?.length, re, b?.screen_name, M?.length]),
                         ce = i.useCallback(() => (N ? oe : i.createElement(ye, { history: n, user: b })), [n, oe, b, N]),
                         me = i.useMemo(() => i.createElement(_.Z, { fetchStatus: b && M ? D.ZP.LOADED : D.ZP.LOADING, onRequestRetry: f.Z, render: ce, retryable: !1 }), [ce, b, M]);
-                    return i.createElement(i.Fragment, null, i.createElement(x.Z, null, i.createElement(a.Z, { style: Ee.header }, b ? i.createElement(a.Z, { style: Ee.profileInfo }, i.createElement(T.Z, { source: W, style: [Ee.userAvatar, Ee.marginEnd16], verifiedType: b.verified_type, withOuterBorder: !0 }), i.createElement(a.Z, { style: [Ee.profileDetails, V && Ee.ownProfileDetails, Ee.marginEnd16] }, i.createElement(d.Z, { affiliateBadgeInfo: b.highlightedLabel, badgeContext: "content", isBlueVerified: b.is_blue_verified, isProtected: b.protected, isVerified: b.verified, name: b.name, nameSize: "headline1", screenName: b.screen_name, screenNameSize: "body", style: Ee.marginBottom6, verifiedType: b.verified_type, withLink: !1, withNameWrap: !0 }), b.description ? i.createElement(o.ZP, { style: [Ee.profileDescription, Ee.marginBottom6] }, i.createElement(k.x, { text: b.description })) : null, i.createElement(he, { user: b }), N && !V ? i.createElement(a.Z, { style: [Ee.buttonSection, Ee.marginBottom6] }, i.createElement(ne, { style: Ee.marginEnd8, user: b }), i.createElement(se, { style: Ee.marginEnd8, user: b })) : null)) : null), ie ? i.createElement(l.Z, null, me) : i.createElement(a.Z, { style: ie ? void 0 : Ee.overflowHidden }, me)));
+                    return i.createElement(i.Fragment, null, i.createElement(x.Z, null, i.createElement(a.Z, { style: Ee.header }, b ? i.createElement(a.Z, { style: Ee.profileInfo }, i.createElement(P.Z, { source: W, style: [Ee.userAvatar, Ee.marginEnd16], verifiedType: b.verified_type, withOuterBorder: !0 }), i.createElement(a.Z, { style: [Ee.profileDetails, V && Ee.ownProfileDetails, Ee.marginEnd16] }, i.createElement(d.Z, { affiliateBadgeInfo: b.highlightedLabel, badgeContext: "content", isBlueVerified: b.is_blue_verified, isProtected: b.protected, isVerified: b.verified, name: b.name, nameSize: "headline1", screenName: b.screen_name, screenNameSize: "body", style: Ee.marginBottom6, verifiedType: b.verified_type, withLink: !1, withNameWrap: !0 }), b.description ? i.createElement(o.ZP, { style: [Ee.profileDescription, Ee.marginBottom6] }, i.createElement(k.x, { text: b.description })) : null, i.createElement(he, { user: b }), N && !V ? i.createElement(a.Z, { style: [Ee.buttonSection, Ee.marginBottom6] }, i.createElement(ne, { style: Ee.marginEnd8, user: b }), i.createElement(se, { style: Ee.marginEnd8, user: b })) : null)) : null), ie ? i.createElement(l.Z, null, me) : i.createElement(a.Z, { style: ie ? void 0 : Ee.overflowHidden }, me)));
                 },
                 Ee = u.default.create((e) => ({ header: { minHeight: 128 * e.scaleMultiplier, paddingHorizontal: e.spaces.space24, paddingTop: 60 * e.scaleMultiplier, paddingBottom: e.spaces.space32 }, userAvatar: { minHeight: 128 * e.scaleMultiplier, width: 128 * e.scaleMultiplier }, overflowHidden: { overflow: "hidden" }, marginBottom6: { marginBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, marginEnd4: { marginEnd: e.spaces.space4 }, marginEnd8: { marginEnd: e.spaces.space8 }, marginEnd16: { marginEnd: e.spaces.space16 }, marginBottom16: { marginBottom: e.spaces.space16 }, profileInfo: { flexDirection: "row" }, profileDetails: { justifyContent: "end" }, ownProfileDetails: { justifyContent: "center" }, profileDescription: { marginBottom: e.spaces.space4 }, profileStats: { marginBottom: e.spaces.space4, flexDirection: "row" }, profileStatsItem: { flexDirection: "row" }, buttonSection: { bottom: -e.borderWidthsPx.medium, flexDirection: "row", marginTop: e.spaces.space2, start: -e.borderWidthsPx.medium }, contentWrapper: { flex: 1 }, content: { paddingHorizontal: e.spaces.space24 }, loggedOutProfilePrompt: { display: "flex", flexDirection: "column", alignItems: "center", paddingTop: e.spaces.space64 }, noVideosContainer: { width: "100%", height: "100%", display: "flex", alignItems: "center", paddingTop: e.spaces.space64 } })),
                 Ce = $(ke);
@@ -773,4 +773,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.653f941a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.a118b56a.js.map

@@ -3,15 +3,15 @@
     ["ondemand.Verified-b08cea6e"],
     {
         550496: (e, r, t) => {
-            t.d(r, { DR: () => I, ZH: () => g, HF: () => b.Z, QG: () => i.Z, ao: () => v, kC: () => P.Z, n5: () => C });
+            t.d(r, { DR: () => E, ZH: () => g, HF: () => b.Z, QG: () => i.Z, ao: () => v, kC: () => P.Z, n5: () => C });
             var i = t(432883),
                 o = (t(571372), t(303626)),
                 n = t(796634),
                 s = t(202784),
                 a = (t(585488), t(277660)),
                 c = t.n(a),
-                d = t(351743),
-                _ = t.n(d),
+                _ = t(351743),
+                d = t.n(_),
                 u = t(236012),
                 l = t(700797);
             const p = n.Z,
@@ -19,7 +19,7 @@
                 v = ({ currentUserIds: e, itemRef: r }) => {
                     const t = c()(p, r),
                         i = t.invitee_id_results.result,
-                        [o, n] = _()(m);
+                        [o, n] = d()(m);
                     return [
                         s.useCallback(
                             () =>
@@ -50,9 +50,9 @@
                 };
             t(199232);
             var P = t(497110);
-            const E = t(391435).Z,
-                I = () => {
-                    const [e, r] = _()(E);
+            const k = t(391435).Z,
+                E = () => {
+                    const [e, r] = d()(k);
                     return [
                         s.useCallback(
                             ({ __id: r, forAdsAccountId: t, programId: i, scheduleId: o }) =>
@@ -155,16 +155,16 @@
                 s = (t(585488), t(277660)),
                 a = t.n(s),
                 c = t(351743),
-                d = t.n(c),
-                _ = t(550496),
+                _ = t.n(c),
+                d = t(550496),
                 u = t(236012),
                 l = t(700797);
             const p = o.Z,
                 m = i.Z,
                 v = ({ currentUserIds: e, itemRef: r }) => {
-                    const t = (0, _.ZH)(),
+                    const t = (0, d.ZH)(),
                         i = a()(p, r).invitee_id_results.result,
-                        [o, s] = d()(m);
+                        [o, s] = _()(m);
                     return [
                         n.useCallback(
                             () =>
@@ -196,7 +196,7 @@
             };
         },
         87690: (e, r, t) => {
-            t.d(r, { V5: () => _, ZP: () => m, xz: () => p });
+            t.d(r, { V5: () => d, ZP: () => m, xz: () => p });
             t(136728);
             var i = t(8710),
                 o = t(10622),
@@ -204,22 +204,22 @@
                 s = (t(585488), t(712696)),
                 a = t.n(s),
                 c = t(952793),
-                d = t(685731);
-            const _ = Object.freeze({ FullAccess: "FullAccess", FullAccessGov: "FullAccessGov", Basic: "Basic" }),
+                _ = t(685731);
+            const d = Object.freeze({ FullAccess: "FullAccess", FullAccessGov: "FullAccessGov", Basic: "Basic" }),
                 u = { FullAccess: { staging: "prod_Nbz7kwMFZ2FMr8", prod: "prod_NFUuzMG4B8QWwR" }, Basic: { staging: "prod_P68HlBVycbFEWg", prod: "prod_P67yo9jgLohMHV" }, FullAccessGov: { staging: "prod_NbzNYmcbcCvpf8", prod: "prod_NX6XvPozj4Veck" } },
                 l = i.Z,
                 p = ({ environment: e, featureSwitches: r, tierInterval: t, userClaims: i, voProduct: o, withDiscount: s }) => {
                     const a = r.isTrue("subscriptions_stripe_testing"),
                         c = u[o],
-                        _ = a ? c.staging : c.prod;
-                    return n()(e, l, { rest_id: _ })
+                        d = a ? c.staging : c.prod;
+                    return n()(e, l, { rest_id: d })
                         .toPromise()
                         .then((e) => {
                             const r = [],
                                 { web_subscription_product_details_by_rest_id: i } = e || {},
                                 { prices: o } = i || {},
-                                n = (0, d.pt)(o, !1, t),
-                                a = n ? (0, d.fS)(n, s, !1)?.program_id : null;
+                                n = (0, _.pt)(o, !1, t),
+                                a = n ? (0, _.fS)(n, s, !1)?.program_id : null;
                             return a && r.push({ program_id: a }), { externalPriceId: n?.external_price_id || "", promotionData: r };
                         })
                         .catch(() => ({}));
@@ -239,21 +239,21 @@
                 s = t(10622),
                 a = t.n(s),
                 c = (t(585488), t(712696)),
-                d = t.n(c),
-                _ = t(443781);
+                _ = t.n(c),
+                d = t(443781);
             const u = i.Z,
                 l = (e, { featureSwitches: r, selectedTier: t, userClaims: i }) => {
                     const { verified_organization_payment_info: o } = e,
                         s = r.isTrue("subscriptions_stripe_testing"),
                         a = r.isTrue("responsive_web_verified_organizations_free_upgrade_promo_enabled"),
                         c = i.isGovVerifiedOrg(),
-                        d = i.isFreeVerifiedOrg(),
-                        _ = () => (s ? n.MR : n.l9),
+                        _ = i.isFreeVerifiedOrg(),
+                        d = () => (s ? n.MR : n.l9),
                         u = () => (s ? n.fG : n.FO),
                         l = () => (s ? n.r1 : n.MH),
                         p = o?.target_product_sku;
                     let m;
-                    return (m = p ? (p === n.MH ? l() : p === n.l9 ? _() : p === n.FO ? u() : p) : c ? l() : a && d && "Basic" === t ? u() : _()), m;
+                    return (m = p ? (p === n.MH ? l() : p === n.l9 ? d() : p === n.FO ? u() : p) : c ? l() : a && _ && "Basic" === t ? u() : d()), m;
                 },
                 p = ({ environment: e, featureSwitches: r, selectedTier: t, userClaims: i }) =>
                     a()(e, u, {})
@@ -261,8 +261,8 @@
                         .then((e) => (e ? { data: e, finalProductSku: l(e, { userClaims: i, featureSwitches: r, selectedTier: t }) } : {}))
                         .catch(() => ({})),
                 m = (e) => {
-                    const { featureSwitches: r, userClaims: t } = o.useContext(_.rC),
-                        i = d()(u, {}, { fetchKey: e ?? void 0 });
+                    const { featureSwitches: r, userClaims: t } = o.useContext(d.rC),
+                        i = _()(u, {}, { fetchKey: e ?? void 0 });
                     return [i, l(i, { userClaims: t, featureSwitches: r })];
                 };
         },
@@ -295,15 +295,15 @@
                 s = t.n(n),
                 a = t(332920),
                 c = t.n(a),
-                d = t(97882);
-            const _ = i.Z,
+                _ = t(97882);
+            const d = i.Z,
                 u = (e) => {
-                    const { promotions: r } = s()(_, e);
+                    const { promotions: r } = s()(d, e);
                     return o.useMemo(() => (r || []).map((e) => ({ __id: e.__id, scheduledId: e.scheduled_id, programId: e.program_id, status: e.status, expires: p(e?.expires_at_msec), starts: p(e?.starts_at_msec), forAdsAccountId: l(e.promotion?.enrolled_for_ads_account_id), validUntil: p(e.promotion?.valid_until_msec), formattedCouponAmount: m(e.promotion?.coupon_amount_in_local), formattedUsedAmount: m(e.promotion?.used_amount_in_local), isCouponDone: v(e.promotion?.coupon_amount_in_local, e.promotion?.used_amount_in_local) })), [r]);
                 },
                 l = (e) => (e ? parseInt(e, 10).toString(36) : void 0),
                 p = (e) => (e ? new Date(parseInt(e, 10)) : void 0),
-                m = (e) => (e ? (0, d.x)({ amount: Math.max(0, e.amount), currencyCode: e.currency_code.toUpperCase(), formatter: 1, removeTrailingZeros: !0 }) : void 0),
+                m = (e) => (e ? (0, _.x)({ amount: Math.max(0, e.amount), currencyCode: e.currency_code.toUpperCase(), formatter: 1, removeTrailingZeros: !0 }) : void 0),
                 v = (e, r) => !(!e || !r) && r.amount >= e.amount,
                 f = c().h3629783;
         },
@@ -315,8 +315,8 @@
                 s = t.n(n),
                 a = t(332920),
                 c = t.n(a),
-                d = t(481326);
-            const _ = c().id67d953,
+                _ = t(481326);
+            const d = c().id67d953,
                 u = i.Z,
                 l = () => {
                     const [e, r] = s()(u),
@@ -336,7 +336,7 @@
                                                     } else window.location.href = e.subscriptioncheckoutsession_create?.session_url;
                                                 return a(e);
                                             },
-                                            onError: (e) => (i({ subscriptioncheckoutsession_create: { errors: [{ error_message: _({ supportEmail: d.M2 }), shared_error_code: "Undefined" }] } }), c(e)),
+                                            onError: (e) => (i({ subscriptioncheckoutsession_create: { errors: [{ error_message: d({ supportEmail: _.M2 }), shared_error_code: "Undefined" }] } }), c(e)),
                                         });
                                 }),
                             [e],
@@ -347,17 +347,17 @@
                 };
         },
         96545: (e, r, t) => {
-            t.d(r, { Z: () => _ });
+            t.d(r, { Z: () => d });
             var i = t(506889),
                 o = t(50982),
                 n = t(202784),
                 s = (t(585488), t(351743)),
                 a = t.n(s);
             const c = o.Z,
-                d = i.Z,
-                _ = () => {
+                _ = i.Z,
+                d = () => {
                     const [e] = a()(c),
-                        [r] = a()(d);
+                        [r] = a()(_);
                     return [
                         n.useCallback(
                             ({ targetPriceId: t }) =>
@@ -404,8 +404,9 @@
                 a = (e, r = !1) => {
                     const t = n()(s, { current_product_sku: e, find_target_product_sku: r }).viewer.user_results.result.web_tier_switch_progress,
                         i = "WebPaymentsTierSwitchProgress" === t?.__typename ? t.status : "NotStarted",
-                        o = "WebPaymentsTierSwitchProgress" === t?.__typename ? t.target_product_sku : null;
-                    return [i, "WebPaymentsGetTierSwitchProgressError" === t?.__typename ? t.message : void 0, o];
+                        o = "WebPaymentsTierSwitchProgress" === t?.__typename ? t.target_product_sku : null,
+                        a = "WebPaymentsTierSwitchProgress" === t?.__typename ? t.from_price_detail : null;
+                    return { status: i, error: "WebPaymentsGetTierSwitchProgressError" === t?.__typename ? t.message : void 0, targetProductSku: o, fromPrice: a };
                 };
         },
         505057: (e, r, t) => {
@@ -416,11 +417,11 @@
                 s = t.n(n),
                 a = (t(585488), t(351743)),
                 c = t.n(a),
-                d = t(184605),
-                _ = t(71620);
+                _ = t(184605),
+                d = t(71620);
             const u = i.Z,
                 l = (e, r) => {
-                    const t = (0, _.po)(),
+                    const t = (0, d.po)(),
                         [i, n] = c()(u);
                     return [
                         o.useCallback(
@@ -430,7 +431,7 @@
                                     const t = e.get(r);
                                     s()(t, "orgRecord must be specified");
                                     const i = e.get(`client:${r}:core`);
-                                    s()(i, "core must be specified"), (0, d.Z)(o.status) && i.setValue(o.status, "status"), (0, d.Z)(o.integrationStatus) && i.setValue(o.integrationStatus, "integration_status"), o.integrationServiceId && i.setValue(o.integrationServiceId, "integration_service_id"), t.setLinkedRecord(i, "core");
+                                    s()(i, "core must be specified"), (0, _.Z)(o.status) && i.setValue(o.status, "status"), (0, _.Z)(o.integrationStatus) && i.setValue(o.integrationStatus, "integration_status"), o.integrationServiceId && i.setValue(o.integrationServiceId, "integration_service_id"), t.setLinkedRecord(i, "core");
                                 };
                                 return new Promise((r, s) => {
                                     e || r(!1),
@@ -455,7 +456,7 @@
                 };
         },
         508574: (e, r, t) => {
-            t.d(r, { ZP: () => l, iX: () => d });
+            t.d(r, { ZP: () => l, iX: () => _ });
             t(571372);
             var i = t(352585),
                 o = t(202784),
@@ -463,17 +464,17 @@
                 s = t.n(n),
                 a = t(762522);
             const c = i.Z;
-            class d extends Error {
+            class _ extends Error {
                 constructor(e, ...r) {
-                    super(...r), Error.captureStackTrace && Error.captureStackTrace(this, d), (this.name = "EligibilityError"), (this.validationErrors = e);
+                    super(...r), Error.captureStackTrace && Error.captureStackTrace(this, _), (this.name = "EligibilityError"), (this.validationErrors = e);
                 }
                 get highestPriorityError() {
                     const [e] = this.validationErrors?.map((e) => u[e])?.sort((e, r) => e?.priority - r?.priority) ?? [];
                     return e && e.voError;
                 }
             }
-            const _ = { incorrectAccount: { voError: a.F.adsAccountIncorrect, priority: 1 }, invalidFunding: { voError: a.F.adsAccountInvalidFunding, priority: 2 }, reviewNeeded: { voError: a.F.adsAccountReviewNeeded, priority: 2 }, missingVOSubscription: { voError: a.F.missingVOSubscription, priority: 1 } },
-                u = { ads_account_exist: _.incorrectAccount, required_ads_approval_status: _.reviewNeeded, ads_credit_card: _.invalidFunding, promotion_owner_is_verified_org: _.missingVOSubscription, promotion_target_affiliated_to_owner: _.incorrectAccount, required_product: _.missingVOSubscription, supported_funding_instrument: _.invalidFunding },
+            const d = { incorrectAccount: { voError: a.F.adsAccountIncorrect, priority: 1 }, invalidFunding: { voError: a.F.adsAccountInvalidFunding, priority: 2 }, reviewNeeded: { voError: a.F.adsAccountReviewNeeded, priority: 2 }, missingVOSubscription: { voError: a.F.missingVOSubscription, priority: 1 } },
+                u = { ads_account_exist: d.incorrectAccount, required_ads_approval_status: d.reviewNeeded, ads_credit_card: d.invalidFunding, promotion_owner_is_verified_org: d.missingVOSubscription, promotion_target_affiliated_to_owner: d.incorrectAccount, required_product: d.missingVOSubscription, supported_funding_instrument: d.invalidFunding },
                 l = () => {
                     const [e, r] = s()(c);
                     return [
@@ -485,7 +486,7 @@
                                         variables: { for_ads_account_id: a, scheduled_id: o, program_id: i },
                                         onCompleted: (e, r) => {
                                             const { validate_and_activate_scheduled_promotion: t } = e;
-                                            t.is_eligible ? n() : s(new d(t?.eligibility_errors ?? []));
+                                            t.is_eligible ? n() : s(new _(t?.eligibility_errors ?? []));
                                         },
                                         updater: (e, t) => {
                                             if (r && (t?.validate_and_activate_scheduled_promotion?.is_eligible ?? !1)) {
@@ -513,4 +514,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-b08cea6e.d8cdc47a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-b08cea6e.e05f44ca.js.map

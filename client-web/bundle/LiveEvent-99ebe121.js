@@ -133,7 +133,7 @@
                     const i = t.match.params.screenName;
                     if (i) return i;
                     const n = fe(e, t);
-                    return n?.user_results?.result?.legacy?.screen_name || "";
+                    return n?.user_results?.result?.core?.screen_name || "";
                 },
                 be = (e, t) => {
                     const i = t.match.params.broadcastId;
@@ -703,4 +703,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-99ebe121.c42643fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-99ebe121.c4a5864a.js.map

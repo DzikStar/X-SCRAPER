@@ -194,7 +194,16 @@
                                                                                                         name: "tweet",
                                                                                                         plural: !1,
                                                                                                         selections: (T = [
-                                                                                                            { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [(y = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(k = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (h = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (F = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (K = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, K], storageKey: null }], storageKey: null },
+                                                                                                            {
+                                                                                                                alias: null,
+                                                                                                                args: null,
+                                                                                                                concreteType: "TweetCore",
+                                                                                                                kind: "LinkedField",
+                                                                                                                name: "core",
+                                                                                                                plural: !1,
+                                                                                                                selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [(y = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), (h = { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, (k = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }), { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(b = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (F = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (K = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, K], storageKey: null }],
+                                                                                                                storageKey: null,
+                                                                                                            },
                                                                                                             {
                                                                                                                 alias: null,
                                                                                                                 args: null,
@@ -267,7 +276,7 @@
                                                                                                                                             { kind: "InlineFragment", selections: [K, (w = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: f, type: "TimelineRichTextHashtag", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: [(E = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, K], type: "User", abstractKey: null }], storageKey: null }, K], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
-                                                                                                                                            { kind: "InlineFragment", selections: [E, h], type: "TimelineRichTextMention", abstractKey: null },
+                                                                                                                                            { kind: "InlineFragment", selections: [E, k], type: "TimelineRichTextMention", abstractKey: null },
                                                                                                                                             {
                                                                                                                                                 kind: "InlineFragment",
                                                                                                                                                 selections: [
@@ -337,7 +346,7 @@
                                                                                 type: "TweetResults",
                                                                                 abstractKey: null,
                                                                             },
-                                                                            { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [y, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [k, { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null }, b, h], storageKey: null }, F, K], type: "User", abstractKey: null }], storageKey: null }, K], type: "UserResults", abstractKey: null },
+                                                                            { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [y, h, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [b, { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null }, F, K], type: "User", abstractKey: null }], storageKey: null }, K], type: "UserResults", abstractKey: null },
                                                                         ],
                                                                         storageKey: null,
                                                                     },
@@ -364,11 +373,11 @@
                             },
                         ],
                     },
-                    params: { id: "x0camjI2ft0idEVUgtJn-Q", metadata: {}, name: "ReportDetailQuery", operationKind: "query", text: null },
+                    params: { id: "kpcqGWcRPfn_Fz8E5AblXQ", metadata: {}, name: "ReportDetailQuery", operationKind: "query", text: null },
                 };
             S.hash = "e9eed8d592e76b49f0c5ac5b9791f86b";
-            const x = S;
-            var L = a(202784),
+            const L = S;
+            var x = a(202784),
                 B = a(325686),
                 Z = (a(585488), a(107267)),
                 R = a(731708),
@@ -387,13 +396,13 @@
                 N = a(980407),
                 O = a(430759),
                 q = a(443781),
-                Q = a(736063),
-                G = a(725516),
+                G = a(736063),
+                Q = a(725516),
                 $ = a(535338),
                 j = a(17164);
-            const J = V().e37836f8,
+            const X = V().e37836f8,
                 Y = V().ccf2f24e,
-                X = V().fb35e52a,
+                J = V().fb35e52a,
                 ee = V().e238c590,
                 le = V().if218e60,
                 ae = V().b6dc1984,
@@ -412,24 +421,24 @@
                 ye = V().fb2ff552,
                 ke = V().bb57e8c0,
                 he = V().b9ce59ba,
-                be = x,
+                be = L,
                 Fe = (e) => {
                     const l = e?.verdict,
                         a = e?.outcome_text,
                         n = a ? a.replace(/\\n/g, "\n") : "",
                         t = e?.actioned_report_type,
                         r = [
-                            { decoration: L.createElement(D.default, { style: fe.icon }), label: ue, description: de },
-                            { decoration: L.createElement(A.default, { style: fe.icon }), label: pe, description: me },
+                            { decoration: x.createElement(D.default, { style: fe.icon }), label: ue, description: de },
+                            { decoration: x.createElement(A.default, { style: fe.icon }), label: pe, description: me },
                         ];
-                    return L.createElement(
-                        L.Fragment,
+                    return x.createElement(
+                        x.Fragment,
                         null,
                         l
-                            ? L.createElement(
+                            ? x.createElement(
                                   I.ZP,
                                   { style: fe.label },
-                                  L.createElement(
+                                  x.createElement(
                                       R.ZP,
                                       { style: fe.labelText },
                                       ((e) => {
@@ -445,47 +454,47 @@
                                   ),
                               )
                             : null,
-                        L.createElement(R.ZP, { color: ie }, n),
+                        x.createElement(R.ZP, { color: ie }, n),
                         (() => {
                             if ("EncouragingSelfHarm" === t)
-                                return L.createElement(
+                                return x.createElement(
                                     R.ZP,
                                     { color: ie },
                                     "\n",
-                                    L.createElement("strong", null, ge, " "),
+                                    x.createElement("strong", null, ge, " "),
                                     " ",
                                     ye,
                                     "\n\n",
-                                    L.createElement("strong", null, ke, " "),
+                                    x.createElement("strong", null, ke, " "),
                                     (() => {
-                                        const e = () => L.createElement(V().I18NFormatMessage, { $i18n: "ef72b01b" }, L.createElement(R.ZP, { link: "https://findahelpline.com/i/iasp" }, V().d42899ad));
-                                        return L.createElement(R.ZP, { style: fe.selfHarmLabel }, L.createElement(e, null));
+                                        const e = () => x.createElement(V().I18NFormatMessage, { $i18n: "ef72b01b" }, x.createElement(R.ZP, { link: "https://findahelpline.com/i/iasp" }, V().d42899ad));
+                                        return x.createElement(R.ZP, { style: fe.selfHarmLabel }, x.createElement(e, null));
                                     })(),
                                     "\n\n",
                                     he,
                                 );
                         })(),
                         (() => {
-                            if ("NonConsensualNudity" === t || "PrivateInfo" === t) return L.createElement(L.Fragment, null, L.createElement(R.ZP, { role: "heading", size: "headline1", style: fe.headline, weight: "heavy" }, ce), L.createElement(v.Z, { items: r }));
+                            if ("NonConsensualNudity" === t || "PrivateInfo" === t) return x.createElement(x.Fragment, null, x.createElement(R.ZP, { role: "heading", size: "headline1", style: fe.headline, weight: "heavy" }, ce), x.createElement(v.Z, { items: r }));
                         })(),
                     );
                 },
                 Ke = (e) => {
                     switch (e?.report_status || "") {
                         case "Open":
-                            return L.createElement(
-                                L.Fragment,
+                            return x.createElement(
+                                x.Fragment,
                                 null,
-                                L.createElement(R.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ee),
-                                L.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, le),
-                                L.createElement(R.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ae),
-                                L.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, ne),
-                                L.createElement(
+                                x.createElement(R.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ee),
+                                x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, le),
+                                x.createElement(R.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ae),
+                                x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, ne),
+                                x.createElement(
                                     "ul",
                                     null,
-                                    te.map((e, l) => L.createElement("li", { key: l }, L.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, e))),
+                                    te.map((e, l) => x.createElement("li", { key: l }, x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, e))),
                                 ),
-                                L.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, re),
+                                x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, re),
                             );
                         case "Reviewed":
                             return Fe(e);
@@ -508,19 +517,19 @@
                         t = a?.header,
                         r = a?.report_entities_results,
                         i = a?.rule_link;
-                    return L.createElement(L.Fragment, null, L.createElement(P.Z, { color: ie }, L.createElement(R.ZP, { color: ie, weight: "bold" }, Y), L.createElement(R.ZP, { color: ie }, n)), L.createElement(R.ZP, { size: "title4", style: fe.header, weight: "heavy" }, t), L.createElement(R.ZP, { link: i }, X), r ? L.createElement(O.Z, { report: (0, z.Z)(r) }) : null, Ke(a));
+                    return x.createElement(x.Fragment, null, x.createElement(P.Z, { color: ie }, x.createElement(R.ZP, { color: ie, weight: "bold" }, Y), x.createElement(R.ZP, { color: ie }, n)), x.createElement(R.ZP, { size: "title4", style: fe.header, weight: "heavy" }, t), x.createElement(R.ZP, { link: i }, J), r ? x.createElement(O.Z, { report: (0, z.Z)(r) }) : null, Ke(a));
                 },
-                _e = (0, G.Z)(
+                _e = (0, Q.Z)(
                     () => {
                         const e = (0, Z.useHistory)(),
-                            { isModal: l } = L.useContext(C.Z),
+                            { isModal: l } = x.useContext(C.Z),
                             a = H.Z,
                             n = W.ZP.isTwitterApp(),
                             t = (0, Z.useParams)(),
-                            { featureSwitches: r } = L.useContext(q.rC),
+                            { featureSwitches: r } = x.useContext(q.rC),
                             i = r.isTrue("sc_r4_enabled"),
-                            s = L.useMemo(() => (n ? a : void 0), [n, a]);
-                        return i && t.reportId ? L.createElement(j.Z, { to: `/i/safety_center/reports/${t.reportId}` }) : L.createElement(N.Z, { backButtonType: "close", containerStyle: fe.root, documentTitle: J, history: e, renderHeader: s }, L.createElement(B.Z, { style: [fe.contentBody, l ? fe.wideScreen : fe.narrowScreen] }, L.createElement(Q.H, { errorConfig: { context: "REPORT_DETAIL" } }, L.createElement(Te, null))));
+                            s = x.useMemo(() => (n ? a : void 0), [n, a]);
+                        return i && t.reportId ? x.createElement(j.Z, { to: `/i/safety_center/reports/${t.reportId}` }) : x.createElement(N.Z, { backButtonType: "close", containerStyle: fe.root, documentTitle: X, history: e, renderHeader: s }, x.createElement(B.Z, { style: [fe.contentBody, l ? fe.wideScreen : fe.narrowScreen] }, x.createElement(G.H, { errorConfig: { context: "REPORT_DETAIL" } }, x.createElement(Te, null))));
                     },
                     { page: "report_center", component: "report_detail" },
                 ),
@@ -528,4 +537,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReportCenter.7d83568a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReportCenter.b5d7438a.js.map

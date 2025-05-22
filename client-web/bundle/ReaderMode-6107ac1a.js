@@ -340,7 +340,7 @@
                     return (
                         n.useEffect(() => {
                             e(t);
-                        }, [t]),
+                        }, [e, t]),
                         null
                     );
                 };
@@ -899,4 +899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.063f8cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.89c2665a.js.map

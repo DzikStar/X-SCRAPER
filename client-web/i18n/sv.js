@@ -12025,7 +12025,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(", " i avgift)"];
                             },
                         },
                         {
@@ -12691,7 +12691,7 @@
                         {
                             key: "hf3108d3",
                             get: function () {
-                                return ["", ", och "];
+                                return ["", " och "];
                             },
                         },
                         {
@@ -13258,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.e3b8791a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.113155da.js.map

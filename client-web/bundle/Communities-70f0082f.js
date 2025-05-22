@@ -180,8 +180,7 @@
                                                                 ],
                                                                 storageKey: "community_memberships_slice(count:20)",
                                                             },
-                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
-                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                             s,
                                                         ],
                                                         type: "User",
@@ -199,7 +198,7 @@
                             },
                         ],
                     },
-                    params: { id: "xfgycRkhqXy90CmTQZ7Kig", metadata: {}, name: "CarouselQuery", operationKind: "query", text: null },
+                    params: { id: "7gBMELiDhLZ_MtyTElxYsA", metadata: {}, name: "CarouselQuery", operationKind: "query", text: null },
                 };
             r.hash = "56e20acf1c3634f06da2b3640cbeb947";
             const u = r;
@@ -254,11 +253,11 @@
                         ],
                         storageKey: "community_memberships_slice(count:20)",
                     },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "334c2443bc1c809d72d772b3d14e57c0",
+                hash: "58e55af5ade5f4431c54374247672f44",
             };
             const i = a;
         },
@@ -1260,7 +1259,7 @@
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                             { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                         ],
                                         type: "User",
@@ -1275,7 +1274,7 @@
                 ],
                 type: "Community",
                 abstractKey: null,
-                hash: "941d5f4f165bd7ec6873b4467fb8cefa",
+                hash: "b588ff6a3d95f8f6b35c92addcc70804",
             };
             const i = a;
         },
@@ -1323,4 +1322,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-70f0082f.20e3f9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-70f0082f.b3522cba.js.map

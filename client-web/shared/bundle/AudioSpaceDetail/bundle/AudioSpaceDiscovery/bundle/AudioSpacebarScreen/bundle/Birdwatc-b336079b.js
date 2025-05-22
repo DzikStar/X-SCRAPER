@@ -30,13 +30,12 @@
             const o = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.13"),
+                        r.e("icons.20"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.7"),
+                        r.e("icons.22"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -85,22 +84,24 @@
             const d = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.0"),
+                        r.e("icons.8"),
                         r.e("icons.13"),
-                        r.e("icons.29"),
-                        r.e("icons.22"),
-                        r.e("icons.5"),
-                        r.e("icons.15"),
+                        r.e("icons.21"),
+                        r.e("icons.20"),
+                        r.e("icons.14"),
                         r.e("icons.1"),
+                        r.e("icons.3"),
+                        r.e("icons.24"),
+                        r.e("icons.11"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.7"),
-                        r.e("icons.20"),
-                        r.e("icons.11"),
-                        r.e("icons.25"),
-                        r.e("icons.24"),
+                        r.e("icons.28"),
                         r.e("icons.10"),
+                        r.e("icons.17"),
+                        r.e("icons.4"),
+                        r.e("icons.12"),
                         r.e("icons.16"),
+                        r.e("icons.22"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -108,6 +109,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -131,8 +133,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -177,7 +178,7 @@
         },
         376293: (e, a, r) => {
             "use strict";
-            r.d(a, { $f: () => M, KV: () => f, LI: () => _, SC: () => k, Vt: () => v, ed: () => T, op: () => g });
+            r.d(a, { $f: () => M, KV: () => f, LI: () => _, SC: () => k, Vt: () => y, ed: () => T, op: () => g });
             var d = r(202784),
                 n = r(190286),
                 t = r(332920),
@@ -195,8 +196,8 @@
                 f = o().a9fd20be,
                 A = o().j546fb79,
                 m = o().c9623eeb,
-                v = o().e133be4e,
-                y = o().he43bca4,
+                y = o().e133be4e,
+                v = o().he43bca4,
                 w = o().f5f01af6,
                 k = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 M = (e, a) => ({ confirmButtonType: "destructiveFilled", headline: b({ screenName: e }), label: S, text: a ? D({ screenName: e }) : h({ screenName: e }) }),
@@ -225,7 +226,7 @@
                 B = (e) => (e ? l.default : c.default),
                 E = ({ blockSubtext: e, unblockSubtext: a, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? a : void 0),
                 P = (e) => (e.blocking ? m({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                _ = (e, a) => (e.blocking ? ((e, a) => ({ confirmButtonType: "primary", headline: A({ screenName: e }), label: v, text: a ? w : y }))(e.screen_name, a) : M(e.screen_name, a)),
+                _ = (e, a) => (e.blocking ? ((e, a) => ({ confirmButtonType: "primary", headline: A({ screenName: e }), label: y, text: a ? w : v }))(e.screen_name, a) : M(e.screen_name, a)),
                 T = ({ confirmation: e, handleConfirm: a, onClose: r }) => {
                     const { confirmButtonType: t, headline: o, label: c, text: l } = e;
                     return d.createElement(n.Z, { cancelButtonLabel: s, confirmButtonLabel: c, confirmButtonType: t, headline: o, onCancel: r, onConfirm: a, text: l });
@@ -289,8 +290,8 @@
                 f = r(725102),
                 A = r(421855),
                 m = r(854785),
-                v = r(716727),
-                y = r(552619),
+                y = r(716727),
+                v = r(552619),
                 w = r(736230),
                 k = r(333010),
                 M = r(39182),
@@ -318,16 +319,16 @@
                     [P] = (0, t.KO)(i.qc),
                     _ = P.getState(),
                     T = (0, p.F5)(_),
-                    j = Intl.DateTimeFormat().resolvedOptions().timeZone,
-                    I = (0, S.Z)(),
+                    I = Intl.DateTimeFormat().resolvedOptions().timeZone,
+                    j = (0, S.Z)(),
                     [O] = (0, t.KO)(B.k),
                     [C] = (0, t.KO)(i.f0),
                     x = location.host.includes("x.com") && C.isTrue("x_jetfuel_enable_test_cluster"),
                     Z = "darker" === u.default.theme.paletteName ? "dark" : "dark" === u.default.theme.paletteName ? "dim" : u.default.theme.paletteName,
                     L = d.useMemo(() => {
                         const e = {};
-                        return (e["x-jf-client-theme"] = Z), (e["x-jf-v"] = "JP-4"), j && (e.timezone = j), T && (e["accept-language"] = (0, b.o)(T)), e;
-                    }, [Z, j, T]),
+                        return (e["x-jf-client-theme"] = Z), (e["x-jf-v"] = "JP-4"), I && (e.timezone = I), T && (e["accept-language"] = (0, b.o)(T)), e;
+                    }, [Z, I, T]),
                     R = ((e, a) => (e ? w.mH : a ? w.OG : w.CP))(O, x),
                     N = d.useMemo(
                         () => ({
@@ -361,11 +362,11 @@
                 }, [Z]);
                 const H = d.useMemo(() => {
                     const e = (0, n.GZ)("svelte");
-                    (e.net = N), (e.history = s), (e.analytics = I);
-                    const a = { "x.com.GenericURT": D.Z, "x.com.Video": y.Z, "x.com.Broadcast": v.Z, StoryPager: A.Z, "StoryPager.Story": m.Z, SignupArkoseSecurityChallenge: f.Z };
+                    (e.net = N), (e.history = s), (e.analytics = j);
+                    const a = { "x.com.GenericURT": D.Z, "x.com.Video": v.Z, "x.com.Broadcast": y.Z, StoryPager: A.Z, "StoryPager.Story": m.Z, SignupArkoseSecurityChallenge: f.Z };
                     return e.addComponentOverride(a), e;
-                }, [N, s, I]);
-                return d.createElement(d.Fragment, null, c && r ? r() : d.createElement(n.mQ, { analytics: I, jfPath: location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : "", key: `${location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : ""}-${h}`, r: H }));
+                }, [N, s, j]);
+                return d.createElement(d.Fragment, null, c && r ? r() : d.createElement(n.mQ, { analytics: j, jfPath: location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : "", key: `${location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : ""}-${h}`, r: H }));
             };
         },
         996568: (e, a, r) => {
@@ -652,17 +653,17 @@
             function m(e, a) {
                 return a.atom(e)?.value;
             }
-            var v = (e, a) => {
+            var y = (e, a) => {
                 if (e === a) return !0;
                 if (null == e || null == a) return !1;
-                if (Array.isArray(e) && Array.isArray(a)) return e.length === a.length && e.every((e, r) => v(e, a[r]));
+                if (Array.isArray(e) && Array.isArray(a)) return e.length === a.length && e.every((e, r) => y(e, a[r]));
                 if ("object" == typeof e && "object" == typeof a) {
                     let r = Object.keys(e);
-                    return r.length === Object.keys(a).length && r.every((r) => v(e[r], a[r]));
+                    return r.length === Object.keys(a).length && r.every((r) => y(e[r], a[r]));
                 }
                 return !1;
             };
-            function y(e, a) {
+            function v(e, a) {
                 let [r, d] = e;
                 switch (r) {
                     case 0: {
@@ -671,21 +672,21 @@
                     }
                     case 1: {
                         let { ref: e, value: r } = d;
-                        return v(m(e, a), a.prop(r));
+                        return y(m(e, a), a.prop(r));
                     }
                     case 2: {
                         let { ref: e, value: r } = d;
-                        return !v(m(e, a), a.prop(r));
+                        return !y(m(e, a), a.prop(r));
                     }
                     case 3: {
                         let { ref: e, value: r } = d,
                             n = m(e, a);
-                        return r.some((e) => v(n, a.prop(e)));
+                        return r.some((e) => y(n, a.prop(e)));
                     }
                     case 4: {
                         let { ref: e, value: r } = d,
                             n = m(e, a);
-                        return r.every((e) => !v(n, a.prop(e)));
+                        return r.every((e) => !y(n, a.prop(e)));
                     }
                     case 5:
                         return k(d.ref, a, (e) => e > Number(g(a.prop(d.value), a)));
@@ -702,11 +703,11 @@
                     case 11:
                         return w(d.ref, a, (e) => e.includes(d.value));
                     case 12:
-                        return d.every((e) => y(e, a));
+                        return d.every((e) => v(e, a));
                     case 13:
-                        return d.some((e) => y(e, a));
+                        return d.some((e) => v(e, a));
                     case 14:
-                        return !y(d, a);
+                        return !v(d, a);
                     case 15: {
                         let { ref: e } = d;
                         return void 0 !== m(e, a);
@@ -788,7 +789,7 @@
                         case 17:
                             return Object.fromEntries(n.entries());
                         case 22:
-                            return y(n, a);
+                            return v(n, a);
                         case 25:
                         case 12:
                             return n;
@@ -1000,19 +1001,19 @@
                                             let [a, r, d, n, t, o, c, l, u, i, s, b, p, S, h, D, f] = e,
                                                 A = d,
                                                 m = u,
-                                                v = a({ type: c, props: n(c, A), children: t(A), id: o(m), extend: o(A) }),
-                                                y = S({ 0: b(0, a({ id: m })), 4: b(4, a({ id: m, root: A })), 1: b(1, a({ id: m, key: c, root: A })), 2: b(2, a({ id: m, key: p, root: A })), 3: b(3, a({ id: m, key: p, root: A })) }),
-                                                w = a({ ref: y, prop_ref: A, is_default: s }),
-                                                k = S({ 0: b(0, y), 1: b(1, h(y, A)), 2: b(2, h(y, c)), 3: b(3, h(y, p)), 4: b(4, D(y, A, o(c))), 5: b(5, h(y, A)), 6: b(6, h(y, o(h(A, A)))), 7: b(7, h(y, A)), 8: b(8, h(y, A)) }),
+                                                y = a({ type: c, props: n(c, A), children: t(A), id: o(m), extend: o(A) }),
+                                                v = S({ 0: b(0, a({ id: m })), 4: b(4, a({ id: m, root: A })), 1: b(1, a({ id: m, key: c, root: A })), 2: b(2, a({ id: m, key: p, root: A })), 3: b(3, a({ id: m, key: p, root: A })) }),
+                                                w = a({ ref: v, prop_ref: A, is_default: s }),
+                                                k = S({ 0: b(0, v), 1: b(1, h(v, A)), 2: b(2, h(v, c)), 3: b(3, h(v, p)), 4: b(4, D(v, A, o(c))), 5: b(5, h(v, A)), 6: b(6, h(v, o(h(A, A)))), 7: b(7, h(v, A)), 8: b(8, h(v, A)) }),
                                                 M = S({ 0: b(0, a({ url: A, preview: o(A), replace: s })), 9: b(9, a({ url: A, preview: o(A), replace: s })), 1: b(1, a({ url: A, body: o(A), preview: o(A), replace: s })), 2: f([2]), 8: b(8, a({ url: A })), 3: f([3]), 4: f([4]), 5: f([5]), 6: f([6]), 7: b(7, a({ id: A })) }),
                                                 g = S((e) => ({ 0: b(0, k), 1: b(1, a({ ref: A, action: e, cancel: o(e) })), 2: b(2, t(e)), 3: b(3, a({ url: A, body: A, complete: o(e), error: o(e), optimistic: o(e) })), 4: b(4, a({ action: e, intensity: c })), 5: b(5, a({ ref: A, type: r })), 6: b(6, M), 7: b(7, a({ type: r, id: o(m) })), 8: b(8, p), 9: b(9, a({ urls: t(p), priority: r })), 10: b(10, A), 11: b(11, a({ type: r, ref: A })), 12: b(12, a({ action: e, delaySeconds: c })), 13: b(13, a({ data: p, secret: p })) })),
-                                                B = S((e) => ({ 0: b(0, a({ ref: y })), 15: b(15, a({ ref: y })), 1: b(1, a({ ref: y, value: A })), 2: b(2, a({ ref: y, value: A })), 3: b(3, a({ ref: y, value: t(A) })), 4: b(4, a({ ref: y, value: t(A) })), 5: b(5, a({ ref: y, value: A })), 6: b(6, a({ ref: y, value: A })), 7: b(7, a({ ref: y, value: A })), 8: b(8, a({ ref: y, value: A })), 9: b(9, a({ ref: y, value: p })), 10: b(10, a({ ref: y, value: p })), 11: b(11, a({ ref: y, value: p })), 12: b(12, h(e, e)), 13: b(13, h(e, e)), 14: b(14, e) })),
+                                                B = S((e) => ({ 0: b(0, a({ ref: v })), 15: b(15, a({ ref: v })), 1: b(1, a({ ref: v, value: A })), 2: b(2, a({ ref: v, value: A })), 3: b(3, a({ ref: v, value: t(A) })), 4: b(4, a({ ref: v, value: t(A) })), 5: b(5, a({ ref: v, value: A })), 6: b(6, a({ ref: v, value: A })), 7: b(7, a({ ref: v, value: A })), 8: b(8, a({ ref: v, value: A })), 9: b(9, a({ ref: v, value: p })), 10: b(10, a({ ref: v, value: p })), 11: b(11, a({ ref: v, value: p })), 12: b(12, h(e, e)), 13: b(13, h(e, e)), 14: b(14, e) })),
                                                 E = t(t(l)),
                                                 P = t(D(r, p, o(p))),
                                                 _ = S({ 0: b(0, p), 1: b(1, l), 3: b(3, E), 25: b(25, t(h(E, B))), 4: b(4, m), 5: b(5, i), 6: b(6, s), 7: b(7, A), 8: b(8, t(A)), 10: b(10, d), 11: b(11, p), 12: b(12, P), 14: b(14, u), 15: b(15, A), 16: b(16, n(c, A)), 17: b(17, n(p, p)), 18: b(18, w), 19: b(19, g), 21: b(21, t(A)), 22: b(22, B), 24: b(24, t(A)), 26: b(26, t(p)), 27: b(27, t(l)), 28: b(28, t(i)), 29: b(29, t(s)), 13: b(13, f(void 0)) }),
-                                                T = a({ els: t(v), props: t(_), ts: l }),
-                                                j = a({ ref: A, t: o(l) });
-                                            return S({ 0: b(0, T), 1: b(1, j), 2: b(2, g) });
+                                                T = a({ els: t(y), props: t(_), ts: l }),
+                                                I = a({ ref: A, t: o(l) });
+                                            return S({ 0: b(0, T), 1: b(1, I), 2: b(2, g) });
                                         })([
                                             (e) => (a) => {
                                                 let r = {};
@@ -1168,7 +1169,7 @@
         },
         313129: (e, a, r) => {
             "use strict";
-            r.d(a, { wR: () => j, kp: () => I, $P: () => P, Ng: () => E, _3: () => y, Q_: () => w });
+            r.d(a, { wR: () => I, kp: () => j, $P: () => P, Ng: () => E, _3: () => v, Q_: () => w });
             r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(875640);
             var d = r(202784),
                 n = r(400752),
@@ -1188,16 +1189,16 @@
                 A = r(355335),
                 m = r(190674);
             r(543673), r(240753), r(128399);
-            const v = (e, a) => {
+            const y = (e, a) => {
                     const r = new URL(e, "https://x.com");
                     return r.searchParams.delete(a), r.pathname + r.search;
                 },
-                y = (e, a) => {
+                v = (e, a) => {
                     const r = (0, m.m)(),
                         t = (0, n.b9)(M),
                         o = d.useRef(a);
                     o.current = a;
-                    const c = v(e, "tabId");
+                    const c = y(e, "tabId");
                     return (
                         d.useEffect(() => {
                             const e = o.current;
@@ -1209,7 +1210,7 @@
                 w = (e, a = 0) => {
                     const r = (0, m.m)(),
                         t = (0, n.b9)(g),
-                        o = v(e, "tabId");
+                        o = y(e, "tabId");
                     return (
                         d.useEffect(() => {
                             if ((t(o, r), a > 0)) {
@@ -1263,11 +1264,11 @@
                     return (r["x-jf-client-theme"] = n), (r["x-jf-v"] = "JP-3"), d && (r.timezone = d), a && (r["accept-language"] = (0, s.o)(a)), r;
                 },
                 T = (e, a) => (e ? D.mH : a ? D.OG : D.CP),
-                j = async (e, a, r, d, n, t, o) => {
+                I = async (e, a, r, d, n, t, o) => {
                     if (!e) return {};
                     const c = _(r),
                         i = T(n, t),
-                        s = v(e, D.tX),
+                        s = y(e, D.tX),
                         b = (function (e, a) {
                             const r = l.ZP.isTwitterApp() ? (l.ZP.isAndroid() ? "android" : "ios") : "web",
                                 d = e ? `jf-test-${r}:api` : `jf-${r}:api`,
@@ -1310,11 +1311,11 @@
                         return (0, p.ZP)(e), e instanceof u.Z && 404 === e.status ? (b.record("not-found"), {}) : (b.record("error"), { error: D.TT });
                     }
                 },
-                I = async (e, a, r, d, n, t) => {
+                j = async (e, a, r, d, n, t) => {
                     if (!e) return {};
                     const o = _(r),
                         c = T(n, t),
-                        l = v(e, D.tX);
+                        l = y(e, D.tX);
                     try {
                         const e = a ? await d.jetfuelForm(l, o, a, c) : await d.jetfuel(l, o, c);
                         return { jsonResponse: JSON.parse(new TextDecoder().decode(e)) };
@@ -1342,7 +1343,7 @@
                                     t = r(i.f0),
                                     o = r(i.qc).getState(),
                                     c = location.host.includes("x.com") && t.isTrue("x_jetfuel_enable_test_cluster");
-                                return await j(e, void 0, o, n, d, c, a);
+                                return await I(e, void 0, o, n, d, c, a);
                             }),
                         )),
                         e);
@@ -1426,4 +1427,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.9d21d9fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.7195c27a.js.map

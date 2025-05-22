@@ -12034,7 +12034,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(手續費 ", ")"];
                             },
                         },
                         {
@@ -12688,7 +12688,7 @@
                         {
                             key: "i74be1ef",
                             get: function () {
-                                return ["", "又 "];
+                                return ["", " 和 "];
                             },
                         },
                         {
@@ -13266,4 +13266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0fac1afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.db146b3a.js.map

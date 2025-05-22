@@ -7,8 +7,8 @@
             var r = d(807896),
                 n = d(202784),
                 o = d(325686),
-                t = d(292627),
-                l = d(365023),
+                l = d(292627),
+                t = d(365023),
                 s = d(664064),
                 i = d(392237);
             const u = n.createContext({ query: null });
@@ -22,12 +22,12 @@
                     d = (0, b.D2)("hashfetti_duration_ms").getNumberValue(4e3),
                     r = (0, b.D2)("hashfetti_particle_count").getNumberValue(30),
                     { query: o } = n.useContext(u),
-                    t = (0, c.Ck)();
+                    l = (0, c.Ck)();
                 if (!e || !o || m.Z.reducedMotionEnabled) return null;
-                const l = (0, h.Z)(o);
+                const t = (0, h.Z)(o);
                 let s;
-                for (const e of l) {
-                    const a = t.getBrandedHashtag(e.hashtag);
+                for (const e of t) {
+                    const a = l.getBrandedHashtag(e.hashtag);
                     if (a) {
                         s = a;
                         break;
@@ -41,9 +41,9 @@
                 if (!e) return null;
                 const a = f.container;
                 return n.createElement(
-                    t.Z.Hashfetti,
+                    l.Z.Hashfetti,
                     null,
-                    n.createElement(l.Z, { id: "Hashfetti" }, (d, t) => n.createElement(o.Z, (0, r.Z)({ ref: d() }, t({ style: a })), n.createElement(s.Z, { autoplay: !0, count: e.count, duration: e.duration_ms, image_url: e.url, max_rotation: 0.125 * Math.PI, type: "image" }))),
+                    n.createElement(t.Z, { id: "Hashfetti" }, (d, l) => n.createElement(o.Z, (0, r.Z)({ ref: d() }, l({ style: a })), n.createElement(s.Z, { autoplay: !0, count: e.count, duration: e.duration_ms, image_url: e.url, max_rotation: 0.125 * Math.PI, type: "image" }))),
                 );
             }
             p.Provider = function (e) {
@@ -58,11 +58,11 @@
             var r = d(202784),
                 n = d(325686),
                 o = d(392237),
-                t = d(332920);
-            const l = d.n(t)().h63a5c3c,
-                s = ({ "aria-label": e = l, children: a, onClick: d, renderMenu: o, shouldMountMenu: t, style: s, testID: u }) => {
+                l = d(332920);
+            const t = d.n(l)().h63a5c3c,
+                s = ({ "aria-label": e = t, children: a, onClick: d, renderMenu: o, shouldMountMenu: l, style: s, testID: u }) => {
                     const [c, m] = r.useState(!1),
-                        h = t || c,
+                        h = l || c,
                         b = !c;
                     return r.createElement(
                         n.Z,
@@ -92,8 +92,8 @@
             var r = d(202784),
                 n = d(325686),
                 o = d(731708),
-                t = d(154003),
-                l = d(392237),
+                l = d(154003),
+                t = d(392237),
                 s = d(332920),
                 i = d.n(s),
                 u = d(211971),
@@ -108,8 +108,8 @@
                 w = i().bce3726a,
                 g = ({ entryPoint: e, originProduct: a }) => {
                     const d = (0, D.Z)(),
-                        { origin: l } = b.ZP.get(),
-                        s = (0, h.Z)({ returnUrl: `${l}/i/profile`, originProduct: a }),
+                        { origin: t } = b.ZP.get(),
+                        s = (0, h.Z)({ returnUrl: `${t}/i/profile`, originProduct: a }),
                         i = `payment_failure_alert_card_${e}_sidebar`;
                     r.useEffect(() => {
                         d.scribe({ component: i, action: "impression" });
@@ -117,7 +117,7 @@
                     const c = r.useCallback(() => {
                         d.scribe({ component: i, action: "click", element: `payment_failure_${e}_sidebar` }), s?.();
                     }, [s, d, i, e]);
-                    return r.createElement(n.Z, { style: C.cardBlock, testID: "paymentCardBlock" }, r.createElement(n.Z, { style: C.inner }, r.createElement(o.ZP, { size: "headline1", style: C.heading, weight: "heavy" }, r.createElement(u.default, { style: C.icon, testID: "errorIcon" }), M), r.createElement(o.ZP, { size: "body", style: C.subheading }, f), r.createElement(t.ZP, { onClick: c, style: C.button, type: "primaryFilled" }, w)));
+                    return r.createElement(n.Z, { style: C.cardBlock, testID: "paymentCardBlock" }, r.createElement(n.Z, { style: C.inner }, r.createElement(o.ZP, { size: "headline1", style: C.heading, weight: "heavy" }, r.createElement(u.default, { style: C.icon, testID: "errorIcon" }), M), r.createElement(o.ZP, { size: "body", style: C.subheading }, f), r.createElement(l.ZP, { onClick: c, style: C.button, type: "primaryFilled" }, w)));
                 },
                 y = ({ entryPoint: e }) => {
                     const { featureSwitches: a } = (0, c.QZ)(),
@@ -125,15 +125,15 @@
                     return (o && a.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (d && a.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? r.createElement(n.Z, { style: C.paddedContainer, testID: "paymentCardView" }, r.createElement(g, { entryPoint: e, originProduct: o ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
                 },
                 _ = ({ entryPoint: e }) => r.createElement(m.H, { errorConfig: { context: "payment_alert_card" } }, r.createElement(y, { entryPoint: e })),
-                C = l.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.red0, borderColor: e.colors.red100, borderWidth: "1px", borderRadius: e.borderRadii.medium, overflow: "hidden" }, inner: { padding: e.spaces.space16, maxWidth: "100%", gap: e.spaces.space8 }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { marginBottom: e.spaces.space8 }, subheading: { marginBottom: e.spaces.space8 }, icon: { color: l.default.theme.colors.red500, marginEnd: e.spaces.space4 }, paddedContainer: { paddingBottom: e.spaces.space16 } })),
+                C = t.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.red0, borderColor: e.colors.red100, borderWidth: "1px", borderRadius: e.borderRadii.medium, overflow: "hidden" }, inner: { padding: e.spaces.space16, maxWidth: "100%", gap: e.spaces.space8 }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { marginBottom: e.spaces.space8 }, subheading: { marginBottom: e.spaces.space8 }, icon: { color: t.default.theme.colors.red500, marginEnd: e.spaces.space4 }, paddedContainer: { paddingBottom: e.spaces.space16 } })),
                 P = r.memo(_);
         },
         680961: (e, a, d) => {
-            d.d(a, { Z: () => l });
+            d.d(a, { Z: () => t });
             var r = d(202784),
                 n = d(325686),
                 o = d(143778);
-            class t extends r.Component {
+            class l extends r.Component {
                 scrollToNewest(e) {}
                 isAtNewest() {
                     return !0;
@@ -152,23 +152,23 @@
                     return r.createElement(r.Fragment, null, a(e));
                 }
                 render() {
-                    const { footer: e, header: a, identityFunction: d, items: o, noItemsRenderer: t } = this.props;
-                    return r.createElement(n.Z, null, a, o?.length ? o.map((e) => r.cloneElement(this._getItemRenderer(e), { key: d(e) })) : t(), e);
+                    const { footer: e, header: a, identityFunction: d, items: o, noItemsRenderer: l } = this.props;
+                    return r.createElement(n.Z, null, a, o?.length ? o.map((e) => r.cloneElement(this._getItemRenderer(e), { key: d(e) })) : l(), e);
                 }
             }
-            (t.defaultProps = { noItemsRenderer: o.Z, footer: null, header: null }), (t.displayName = "SimpleScroller");
-            const l = t;
+            (l.defaultProps = { noItemsRenderer: o.Z, footer: null, header: null }), (l.displayName = "SimpleScroller");
+            const t = l;
         },
         334346: (e, a, d) => {
-            d.d(a, { C: () => s, Z: () => l });
+            d.d(a, { C: () => s, Z: () => t });
             var r = d(807896),
                 n = d(202784),
                 o = d(524084),
-                t = d(768572);
-            const l = "stable_sort_index",
+                l = d(768572);
+            const t = "stable_sort_index",
                 s = n.forwardRef((e, a) => {
                     const d = e.cacheKey;
-                    return n.createElement(t.ZP, { identifier: d }, n.createElement(o.Z, (0, r.Z)({ ref: a }, e)));
+                    return n.createElement(l.ZP, { identifier: d }, n.createElement(o.Z, (0, r.Z)({ ref: a }, e)));
                 });
         },
         674530: (e, a, d) => {
@@ -177,11 +177,11 @@
             const r = Object.freeze({ Carousel: "Carousel", CompactCarousel: "CompactCarousel", GridCarousel: "GridCarousel", PagedCarousel: "PagedCarousel", Vertical: "Vertical" });
         },
         252021: (e, a, d) => {
-            d.d(a, { Z: () => t });
+            d.d(a, { Z: () => l });
             var r = d(202784),
                 n = d(107267),
                 o = d(115553);
-            const t = (e) => {
+            const l = (e) => {
                 (0, n.useHistory)();
                 return r.createElement(o.A, e);
             };
@@ -191,8 +191,8 @@
             var r = d(202784),
                 n = d(858440),
                 o = d(325686),
-                t = d(844685),
-                l = d(392237),
+                l = d(844685),
+                t = d(392237),
                 s = d(332920),
                 i = d.n(s),
                 u = d(952793),
@@ -210,7 +210,7 @@
                 _ = d(451051),
                 C = d(379990);
             const P = i().ic1e826e,
-                A = ({ isFocused: e, isHovered: a, isPressed: d, onPress: n, style: t }) => r.createElement(o.Z, { "aria-label": P, onPress: n }, r.createElement(C.Z, { isFocused: e, isHovered: a, isPressed: d, style: t })),
+                A = ({ isFocused: e, isHovered: a, isPressed: d, onPress: n, style: l }) => r.createElement(o.Z, { "aria-label": P, onPress: n }, r.createElement(C.Z, { isFocused: e, isHovered: a, isPressed: d, style: l })),
                 k = ({ tweet: e }) => {
                     const a = r.useRef(),
                         d = (0, M.useHistory)(),
@@ -218,27 +218,27 @@
                             e?.id_str && e?.user?.screen_name && d.push(`/${e?.user?.screen_name}/status/${e.id_str}`);
                         }, [d, e?.id_str, e?.user?.screen_name]);
                     if (!e) return null;
-                    const t = e.extended_entities?.media?.find((e) => "video" === e.type);
-                    return t
+                    const l = e.extended_entities?.media?.find((e) => "video" === e.type);
+                    return l
                         ? r.createElement(
                               o.Z,
                               { style: E.container },
-                              r.createElement(f.Z, { "aria-label": t.ext_alt_text, onClick: n, ref: a, role: "link", style: E.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: a, isPressed: d }) => r.createElement(r.Fragment, null, r.createElement(w.Z, { "aria-label": t?.ext_alt_text, role: "img", source: t?.media_url_https, style: E.backgroundImage }), r.createElement(o.Z, { style: E.innerContentContainer }, r.createElement(A, { isFocused: e, isHovered: a, isPressed: d, onPress: n, style: E.button })))),
+                              r.createElement(f.Z, { "aria-label": l.ext_alt_text, onClick: n, ref: a, role: "link", style: E.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: a, isPressed: d }) => r.createElement(r.Fragment, null, r.createElement(w.Z, { "aria-label": l?.ext_alt_text, role: "img", source: l?.media_url_https, style: E.backgroundImage }), r.createElement(o.Z, { style: E.innerContentContainer }, r.createElement(A, { isFocused: e, isHovered: a, isPressed: d, onPress: n, style: E.button })))),
                               r.createElement(o.Z, { style: E.userRow }, r.createElement(g.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: E.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), r.createElement(y.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
                               r.createElement(o.Z, null, r.createElement(_.Z, { color: "gray700", displayTextRange: e?.display_text_range, isCondensed: !0, numberOfLines: 2, size: "subtext2", text: e?.text })),
                           )
                         : null;
                 },
-                E = l.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
+                E = t.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
                 Z = i().fce9ecce,
                 v = () => {
                     const e = (0, m.I0)(),
                         a = (0, m.v9)(b.jK),
                         d = (0, m.v9)(b.UD),
-                        l = (0, m.v9)(h.op),
+                        t = (0, m.v9)(h.op),
                         s = (0, u.hC)("rweb_sourcemap_migration_side_expand_by_default"),
                         i = (0, n.Z)(),
-                        M = c.Z.isTwoColumnWiderLayoutRedesign(i.width, l ?? s),
+                        M = c.Z.isTwoColumnWiderLayoutRedesign(i.width, t ?? s),
                         f = M ? 4 : 2,
                         w = r.useMemo(
                             () =>
@@ -253,7 +253,7 @@
                                 r.createElement(
                                     o.Z,
                                     null,
-                                    r.createElement(t.Z, { text: Z }),
+                                    r.createElement(l.Z, { text: Z }),
                                     r.createElement(
                                         o.Z,
                                         { style: [I.row, M && I.rowExpanded] },
@@ -275,7 +275,7 @@
                         })
                     );
                 },
-                I = l.default.create((e) => ({ row: { display: "grid", gridGap: e.spaces.space8, gridTemplateColumns: "1fr 1fr", maxWidth: "100%", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, width: "100%" }, rowExpanded: { gridTemplateColumns: "1fr 1fr 1fr 1fr" } }));
+                I = t.default.create((e) => ({ row: { display: "grid", gridGap: e.spaces.space8, gridTemplateColumns: "1fr 1fr", maxWidth: "100%", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, width: "100%" }, rowExpanded: { gridTemplateColumns: "1fr 1fr 1fr 1fr" } }));
         },
         61261: (e, a, d) => {
             d.d(a, { Z: () => r });
@@ -283,7 +283,7 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.29"),
+                        d.e("icons.24"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
                         d.e("modules.audio-6107ac1a"),
@@ -303,6 +303,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -363,13 +364,13 @@
             var r = d(202784),
                 n = d(107267),
                 o = d(523561),
-                t = d(337394),
-                l = d(443781);
+                l = d(337394),
+                t = d(443781);
             function s() {
                 const e = (0, n.useLocation)(),
-                    { featureSwitches: a, loggedInUserId: d, userClaims: o } = (0, l.QZ)(),
+                    { featureSwitches: a, loggedInUserId: d, userClaims: o } = (0, t.QZ)(),
                     s = a.isTrue("subscriptions_sign_up_enabled"),
-                    u = t.cX.some((e) => o.hasSubscription(e)),
+                    u = l.cX.some((e) => o.hasSubscription(e)),
                     c = "/home" === e.pathname,
                     m = e.pathname.startsWith("/i/lists");
                 return s && d && !u && (c || m) ? r.createElement(i, null) : null;
@@ -381,8 +382,8 @@
             var r = d(332920),
                 n = d.n(r),
                 o = d(833458),
-                t = d(530813);
-            const l = n().e40252de,
+                l = d(530813);
+            const t = n().e40252de,
                 s = n().ae225c26,
                 i = n().a96d2628,
                 u = n().d00abae0,
@@ -393,17 +394,17 @@
                 D = (e) => {
                     const { hideSubtext: a = !1, list: d } = e,
                         r = d.muting,
-                        n = { text: r ? s : l, Icon: r ? o.default : t.default, onClick: () => p(e), subText: r ? h : u };
+                        n = { text: r ? s : t, Icon: r ? o.default : l.default, onClick: () => p(e), subText: r ? h : u };
                     return a && ((n.text = r ? m : i), (n.subText = void 0)), n;
                 },
                 p = (e) => {
                     const { addToast: a, list: d, scribe: r, toggleMute: n } = e;
                     if (!d || !d.id_str) return;
-                    const { id_str: o, muting: t } = d,
-                        l = t ? b : c,
-                        s = t ? "unmute_list" : "mute_list";
-                    n(o, { mute: !t }).then(() => {
-                        a && a({ text: l });
+                    const { id_str: o, muting: l } = d,
+                        t = l ? b : c,
+                        s = l ? "unmute_list" : "mute_list";
+                    n(o, { mute: !l }).then(() => {
+                        a && a({ text: t });
                     }),
                         r({ action: "click", element: s });
                 };
@@ -413,8 +414,8 @@
             var r = d(202784),
                 n = d(420740),
                 o = d(108362),
-                t = d(731708),
-                l = d(154003),
+                l = d(731708),
+                t = d(154003),
                 s = d(392237),
                 i = d(332920),
                 u = d.n(i),
@@ -425,11 +426,11 @@
                 D = u().a9ae1e78;
             class p extends r.PureComponent {
                 render() {
-                    return r.createElement(n.Z, { testID: h }, r.createElement(m, null), r.createElement(o.Z, { style: M.root }, r.createElement(t.ZP, { align: "center", color: "gray700", style: M.retryText }, b), r.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, D)));
+                    return r.createElement(n.Z, { testID: h }, r.createElement(m, null), r.createElement(o.Z, { style: M.root }, r.createElement(l.ZP, { align: "center", color: "gray700", style: M.retryText }, b), r.createElement(t.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, D)));
                 }
             }
             const M = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.41bbedda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2.ca7c9aea.js.map

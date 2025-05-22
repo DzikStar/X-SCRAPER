@@ -2,104 +2,119 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsRevamp-8ed0fac5"],
     {
+        670094: (e, t, r) => {
+            r.d(t, { d: () => S });
+            var n = r(332920),
+                s = r.n(n),
+                E = r(88656),
+                a = r(601576),
+                o = r(163889);
+            const i = s().a5d4fda0,
+                S = (e = i, t = !0) => ({
+                    customErrorHandler: (r) => {
+                        const { context: n } = r;
+                        return (!r) instanceof E.Z && (r.message = `Strato error occurred in ${n.id}: ${n.action}`), (0, o.ZP)(r, { extra: { context: n, isStrato: !0 } }), t ? (0, a.mf)({ text: e }) : [];
+                    },
+                });
+        },
         831558: (e, t, r) => {
-            r.d(t, { HI: () => i, W1: () => R, oo: () => c, pe: () => o });
+            r.d(t, { HI: () => S, W1: () => d, oo: () => c, pe: () => i });
             r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
             var n = r(468811),
-                E = r.n(n),
-                a = r(704879);
-            const s = new Uint8Array([0, 0, 0, 1]);
-            async function S(e, t) {
-                return new Uint8Array(await crypto.subtle.digest("SHA-256", (0, a.cL)(e, s, t)));
+                s = r.n(n),
+                E = r(704879);
+            const a = new Uint8Array([0, 0, 0, 1]);
+            async function o(e, t) {
+                return new Uint8Array(await crypto.subtle.digest("SHA-256", (0, E.cL)(e, a, t)));
             }
-            const o = async (e) => {
-                const t = new Uint8Array((0, a.RG)(e)),
+            const i = async (e) => {
+                const t = new Uint8Array((0, E.RG)(e)),
                     r = await crypto.subtle.importKey("raw", t.subarray(0, 65), { name: "ECDH", namedCurve: "P-256" }, !0, []),
-                    n = await crypto.subtle.deriveBits({ name: "ECDH", public: r }, d, 256),
-                    E = await S(n, await crypto.subtle.exportKey("raw", r)),
-                    s = E.slice(0, 16),
-                    o = E.slice(16, 32),
-                    i = await crypto.subtle.importKey("raw", s, { name: "AES-GCM", length: 128 }, !0, ["decrypt"]);
-                return (0, a.Jx)(await crypto.subtle.decrypt({ name: "AES-GCM", iv: o }, i, t.subarray(65)));
+                    n = await crypto.subtle.deriveBits({ name: "ECDH", public: r }, u, 256),
+                    s = await o(n, await crypto.subtle.exportKey("raw", r)),
+                    a = s.slice(0, 16),
+                    i = s.slice(16, 32),
+                    S = await crypto.subtle.importKey("raw", a, { name: "AES-GCM", length: 128 }, !0, ["decrypt"]);
+                return (0, E.Jx)(await crypto.subtle.decrypt({ name: "AES-GCM", iv: i }, S, t.subarray(65)));
             };
-            async function i(e, t) {
+            async function S(e, t) {
                 const r = await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !0, ["deriveBits"]),
                     n = await crypto.subtle.deriveBits({ name: "ECDH", public: t }, r.privateKey, 256),
-                    E = await S(n, await crypto.subtle.exportKey("raw", r.publicKey)),
-                    s = E.slice(0, 16),
-                    o = E.slice(16, 32),
-                    i = await crypto.subtle.importKey("raw", s, { name: "AES-GCM", length: 128 }, !1, ["encrypt"]),
-                    c = await crypto.subtle.encrypt({ name: "AES-GCM", iv: o }, i, (0, a.cv)(e)),
-                    d = await crypto.subtle.exportKey("raw", r.publicKey);
-                return (0, a.sM)((0, a.cL)(d, c));
+                    s = await o(n, await crypto.subtle.exportKey("raw", r.publicKey)),
+                    a = s.slice(0, 16),
+                    i = s.slice(16, 32),
+                    S = await crypto.subtle.importKey("raw", a, { name: "AES-GCM", length: 128 }, !1, ["encrypt"]),
+                    c = await crypto.subtle.encrypt({ name: "AES-GCM", iv: i }, S, (0, E.cv)(e)),
+                    u = await crypto.subtle.exportKey("raw", r.publicKey);
+                return (0, E.sM)((0, E.cL)(u, c));
             }
-            const c = async (e) => ({ ...(await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !1, ["deriveBits"])), deviceId: e ?? E().v4(), isRegistered: !1 });
-            let d;
-            const R = (e) => {
-                d = e;
+            const c = async (e) => ({ ...(await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !1, ["deriveBits"])), deviceId: e ?? s().v4(), isRegistered: !1 });
+            let u;
+            const d = (e) => {
+                u = e;
             };
         },
         928233: (e, t, r) => {
-            r.d(t, { FM: () => _, eY: () => u, qi: () => R });
+            r.d(t, { FM: () => R, eY: () => _, qi: () => d });
             r(571372);
             var n = r(961111),
-                E = r.n(n),
-                a = r(878636),
-                s = r(390387),
-                S = r(163889),
-                o = r(831558),
-                i = r(704879);
+                s = r.n(n),
+                E = r(878636),
+                a = r(390387),
+                o = r(163889),
+                i = r(831558),
+                S = r(704879);
             const c = "rweb.dmCryptoKeys";
-            function d(e) {
+            function u(e) {
                 return c + 1 + e;
             }
-            const R = async (e, t, { api: r, devicePersistence: n }) => {
+            const d = async (e, t, { api: r, devicePersistence: n }) => {
                     try {
-                        const S = s.x0(t());
-                        if (!S) return;
-                        await n.delete(c + "" + S);
-                        const R = d(S);
-                        let u = await n.get(R);
-                        const _ = async () => {
-                            const e = (0, i.sM)(await crypto.subtle.exportKey("spki", u.publicKey));
-                            await E()(
+                        const o = a.x0(t());
+                        if (!o) return;
+                        await n.delete(c + "" + o);
+                        const d = u(o);
+                        let _ = await n.get(d);
+                        const R = async () => {
+                            const e = (0, S.sM)(await crypto.subtle.exportKey("spki", _.publicKey));
+                            await s()(
                                 async (t) => {
                                     try {
-                                        await n.set(R, u), (await n.get(R)) ? await r.withEndpoint(a.Z).register({ registration_id: Math.round(1e5 * Math.random()), identity_key: e, device_id: u.deviceId }) : t(new Error("Could not set value in IndexedDB. Bailing out."));
+                                        await n.set(d, _), (await n.get(d)) ? await r.withEndpoint(E.Z).register({ registration_id: Math.round(1e5 * Math.random()), identity_key: e, device_id: _.deviceId }) : t(new Error("Could not set value in IndexedDB. Bailing out."));
                                     } catch (e) {
-                                        if ((await n.delete(R), 403 !== e.status)) throw e;
+                                        if ((await n.delete(d), 403 !== e.status)) throw e;
                                         t(e);
                                     }
                                 },
                                 { minTimeout: 2e3, retries: 2 },
                             ),
-                                await n.set(R, { ...u, isRegistered: !0 });
+                                await n.set(d, { ..._, isRegistered: !0 });
                         };
-                        u || (u = await (0, o.oo)()), u.isRegistered || (await _()), (0, o.W1)(u.privateKey), e(s.Pv(u.deviceId));
+                        _ || (_ = await (0, i.oo)()), _.isRegistered || (await R()), (0, i.W1)(_.privateKey), e(a.Pv(_.deviceId));
                     } catch (e) {
-                        403 !== e.status && (0, S.Hj)(e);
+                        403 !== e.status && (0, o.Hj)(e);
                     }
                 },
-                u = async (e, t, { api: r, devicePersistence: n }) => {
-                    const E = s.x0(t());
-                    if (!E) return;
-                    const a = d(E),
-                        S = await n.get(a);
-                    S && "unregistered" !== S.status && ((S.status = "unregistered"), delete S.privateKey, delete S.publicKey, await n.set(a, S), (0, o.W1)(void 0));
-                },
                 _ = async (e, t, { api: r, devicePersistence: n }) => {
-                    const E = s.x0(t());
-                    if (!E) return;
-                    const a = d(E),
-                        S = await n.get(a);
-                    if (!S || "unregistered" !== S.status) return;
-                    const i = S.deviceId,
-                        c = await (0, o.oo)(i);
-                    await n.delete(a), await n.set(a, c), await e(R);
+                    const s = a.x0(t());
+                    if (!s) return;
+                    const E = u(s),
+                        o = await n.get(E);
+                    o && "unregistered" !== o.status && ((o.status = "unregistered"), delete o.privateKey, delete o.publicKey, await n.set(E, o), (0, i.W1)(void 0));
+                },
+                R = async (e, t, { api: r, devicePersistence: n }) => {
+                    const s = a.x0(t());
+                    if (!s) return;
+                    const E = u(s),
+                        o = await n.get(E);
+                    if (!o || "unregistered" !== o.status) return;
+                    const S = o.deviceId,
+                        c = await (0, i.oo)(S);
+                    await n.delete(E), await n.set(E, c), await e(d);
                 };
         },
         704879: (e, t, r) => {
-            r.d(t, { Jx: () => s, RG: () => n, cL: () => S, cv: () => a, sM: () => E });
+            r.d(t, { Jx: () => a, RG: () => n, cL: () => o, cv: () => E, sM: () => s });
             r(875640), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
             function n(e) {
                 const t = atob(e),
@@ -108,16 +123,16 @@
                 for (let e = 0; e < r; e++) n[e] = t.charCodeAt(e);
                 return n.buffer;
             }
-            function E(e) {
+            function s(e) {
                 let t = "";
                 const r = new Uint8Array(e),
                     n = r.byteLength;
                 for (let e = 0; e < n; e++) t += String.fromCharCode(r[e]);
                 return btoa(t);
             }
-            const a = (e) => new TextEncoder().encode(e),
-                s = (e) => new TextDecoder().decode(e);
-            function S(...e) {
+            const E = (e) => new TextEncoder().encode(e),
+                a = (e) => new TextDecoder().decode(e);
+            function o(...e) {
                 const t = e.map((e) => (e instanceof Uint8Array ? e : new Uint8Array(e))),
                     r = new Uint8Array(t.reduce((e, t) => e + t.length, 0));
                 let n = 0;
@@ -126,16 +141,16 @@
             }
         },
         199087: (e, t, r) => {
-            r.d(t, { Z: () => o });
+            r.d(t, { Z: () => i });
             var n = r(626593),
-                E = r(202784),
-                a = (r(585488), r(351743)),
-                s = r.n(a);
-            const S = n.Z,
-                o = () => {
-                    const [e, t] = s()(S);
+                s = r(202784),
+                E = (r(585488), r(351743)),
+                a = r.n(E);
+            const o = n.Z,
+                i = () => {
+                    const [e, t] = a()(o);
                     return [
-                        E.useCallback(
+                        s.useCallback(
                             (t) =>
                                 new Promise((r, n) => {
                                     e({ variables: t, onCompleted: (e, t) => r(e), onError: n });
@@ -147,78 +162,78 @@
                 };
         },
         661461: (e, t, r) => {
-            r.d(t, { Nr: () => u, ug: () => _, yt: () => b });
+            r.d(t, { Nr: () => _, ug: () => R, yt: () => O });
             var n = r(759851),
-                E = r(689048),
-                a = r(499627),
-                s = r(917799),
-                S = r(312771),
-                o = r(390387);
-            const i = "availableLanguages",
+                s = r(689048),
+                E = r(499627),
+                a = r(917799),
+                o = r(312771),
+                i = r(390387);
+            const S = "availableLanguages",
                 c = Object.freeze({ REQUEST: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_REQUEST", SUCCESS: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_SUCCESS", FAILURE: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_FAILURE" }),
-                d = { fetchStatus: S.ZP.NONE, languages: [] };
-            function R(e = d, t) {
+                u = { fetchStatus: o.ZP.NONE, languages: [] };
+            function d(e = u, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case c.REQUEST:
-                        return { ...e, fetchStatus: S.ZP.LOADING };
+                        return { ...e, fetchStatus: o.ZP.LOADING };
                     case c.FAILURE:
-                        return { ...e, error: t.payload, fetchStatus: S.ZP.FAILED };
+                        return { ...e, error: t.payload, fetchStatus: o.ZP.FAILED };
                     case c.SUCCESS: {
                         const { meta: r, payload: n } = t,
-                            E = r?.lang ? r.lang : "en",
-                            a = "undefined" != typeof Intl && Intl.Collator && new Intl.Collator(E),
-                            s = a ? (e, t) => a.compare(e.name, t.name) : void 0;
-                        return { ...e, languages: n?.slice().sort(s) || [], fetchStatus: S.ZP.LOADED };
+                            s = r?.lang ? r.lang : "en",
+                            E = "undefined" != typeof Intl && Intl.Collator && new Intl.Collator(s),
+                            a = E ? (e, t) => E.compare(e.name, t.name) : void 0;
+                        return { ...e, languages: n?.slice().sort(a) || [], fetchStatus: o.ZP.LOADED };
                     }
                     default:
                         return e;
                 }
             }
-            a.Z.register({ [i]: R });
-            const u = (e) => e[i].languages,
-                _ = (e, t) => {
-                    const r = (0, E.o)(t).toLowerCase(),
-                        n = e[i].languages.find((e) => e.code === r);
+            E.Z.register({ [S]: d });
+            const _ = (e) => e[S].languages,
+                R = (e, t) => {
+                    const r = (0, s.o)(t).toLowerCase(),
+                        n = e[S].languages.find((e) => e.code === r);
                     return n?.name;
                 },
-                b = () => (e, t) => (t()[i].fetchStatus === S.ZP.LOADED ? Promise.resolve() : e(O())),
-                O =
+                O = () => (e, t) => (t()[S].fetchStatus === o.ZP.LOADED ? Promise.resolve() : e(T())),
+                T =
                     () =>
                     (e, t, { api: r }) =>
-                        s._O(e, { request: r.withEndpoint(n.Z).fetchSupportedLanguages })({ actionTypes: c, context: "FETCH_AVAILABLE_LANGUAGES", meta: { lang: (0, o.VT)(t()) } });
+                        a._O(e, { request: r.withEndpoint(n.Z).fetchSupportedLanguages })({ actionTypes: c, context: "FETCH_AVAILABLE_LANGUAGES", meta: { lang: (0, i.VT)(t()) } });
         },
         576025: (e, t, r) => {
-            r.d(t, { Lf: () => i, Po: () => d, _t: () => c });
+            r.d(t, { Lf: () => S, Po: () => u, _t: () => c });
             r(571372);
             var n = r(499627),
-                E = r(312771);
-            const a = "countryNames",
-                s = { fetchStatus: E.ZP.NONE, countries: {} },
-                S = { REQUEST: `${a}_REQUEST`, FAILURE: `${a}_FAILURE`, SUCCESS: `${a}_SUCCESS` },
-                o = (e = s, t) => {
+                s = r(312771);
+            const E = "countryNames",
+                a = { fetchStatus: s.ZP.NONE, countries: {} },
+                o = { REQUEST: `${E}_REQUEST`, FAILURE: `${E}_FAILURE`, SUCCESS: `${E}_SUCCESS` },
+                i = (e = a, t) => {
                     if (!t) return e;
                     switch (t.type) {
-                        case S.REQUEST:
-                            return { ...e, fetchStatus: E.ZP.LOADING };
-                        case S.FAILURE:
-                            return { ...e, fetchStatus: E.ZP.NONE };
-                        case S.SUCCESS:
-                            return { ...e, countries: t.payload, fetchStatus: E.ZP.LOADED };
+                        case o.REQUEST:
+                            return { ...e, fetchStatus: s.ZP.LOADING };
+                        case o.FAILURE:
+                            return { ...e, fetchStatus: s.ZP.NONE };
+                        case o.SUCCESS:
+                            return { ...e, countries: t.payload, fetchStatus: s.ZP.LOADED };
                         default:
                             return e;
                     }
                 };
-            n.Z.register({ [a]: o });
-            const i = (e) => e[a].countries,
+            n.Z.register({ [E]: i });
+            const S = (e) => e[E].countries,
                 c = (e, t) => {
                     const r = t && t.toUpperCase();
-                    return e[a].countries[r];
+                    return e[E].countries[r];
                 },
-                d = (e) => (t, n) =>
-                    n()[a].fetchStatus === E.ZP.LOADED
+                u = (e) => (t, n) =>
+                    n()[E].fetchStatus === s.ZP.LOADED
                         ? Promise.resolve()
-                        : (t({ type: S.REQUEST }),
+                        : (t({ type: o.REQUEST }),
                           ((e) => {
                               switch (e) {
                                   case "ar":
@@ -325,188 +340,326 @@
                           })(e)
                               .then((r) => {
                                   const n = r.main[e].localeDisplayNames.territories;
-                                  t({ type: S.SUCCESS, payload: n });
+                                  t({ type: o.SUCCESS, payload: n });
                               })
                               .catch(() => {
-                                  t("en" === e ? { type: S.FAILURE } : d("en"));
+                                  t("en" === e ? { type: o.FAILURE } : u("en"));
                               }));
         },
         122743: (e, t, r) => {
-            r.d(t, { H: () => s });
+            r.d(t, { H: () => a });
             var n = r(6157),
-                E = r(917799),
-                a = r(189953);
-            const s =
+                s = r(917799),
+                E = r(189953);
+            const a =
                 () =>
                 (e, t, { api: r }) =>
-                    E._O(e, { request: r.withEndpoint(n.Z).clearConversations, params: {} })({ actionTypes: a.Dh, context: "CLEAR_CONVERSATIONS", meta: {} });
+                    s._O(e, { request: r.withEndpoint(n.Z).clearConversations, params: {} })({ actionTypes: E.Dh, context: "CLEAR_CONVERSATIONS", meta: {} });
         },
         189953: (e, t, r) => {
-            r.d(t, { $t: () => se, A0: () => be, BA: () => re, BS: () => P, CH: () => y, CR: () => W, Cr: () => U, DX: () => z, Dh: () => T, Dn: () => f, En: () => i, FF: () => Q, FV: () => m, Gy: () => G, HF: () => _, IK: () => E, JO: () => x, Jt: () => ne, KH: () => I, L0: () => q, Lc: () => s, OW: () => p, Oj: () => l, P9: () => Y, Q_: () => a, Qg: () => k, Qh: () => X, Sv: () => S, TY: () => K, Tv: () => B, UN: () => h, VK: () => o, WK: () => te, Ws: () => c, Xg: () => $, Xi: () => H, Y8: () => d, Yb: () => A, Yf: () => n, Yx: () => R, ZN: () => j, _i: () => oe, ar: () => V, cA: () => _e, cw: () => ae, dK: () => u, dO: () => C, dZ: () => D, dw: () => Re, f1: () => de, fH: () => Ce, ip: () => M, j$: () => Oe, lQ: () => ee, lh: () => b, lm: () => O, mq: () => Te, my: () => g, nK: () => L, o$: () => F, px: () => Se, qd: () => Z, ru: () => ue, ub: () => N, vc: () => v, vi: () => w, wG: () => Ee, x5: () => J, yB: () => ce, z2: () => ie });
+            r.d(t, { $t: () => ae, A0: () => Oe, BA: () => re, BS: () => f, CH: () => G, CR: () => $, Cr: () => U, DX: () => z, Dh: () => C, Dn: () => y, En: () => S, FF: () => M, FV: () => L, Gy: () => m, HF: () => R, IK: () => s, JO: () => Y, Jt: () => ne, KH: () => I, L0: () => W, Lc: () => a, OW: () => P, Oj: () => h, P9: () => x, Q_: () => E, Qg: () => v, Qh: () => X, Sv: () => o, TY: () => F, Tv: () => B, UN: () => p, VK: () => i, WK: () => te, Ws: () => c, Xg: () => q, Xi: () => K, Y8: () => u, Yb: () => A, Yf: () => n, Yx: () => d, ZN: () => j, _i: () => ie, ar: () => Q, cA: () => Re, cw: () => Ee, dK: () => _, dO: () => b, dZ: () => k, dw: () => de, f1: () => ue, fH: () => be, ip: () => Z, j$: () => Te, lQ: () => ee, lh: () => O, lm: () => T, mq: () => Ce, my: () => N, nK: () => g, o$: () => D, px: () => oe, qd: () => V, ru: () => _e, ub: () => l, vc: () => H, vi: () => w, wG: () => se, x5: () => J, yB: () => ce, z2: () => Se });
             const n = "grok",
-                E = Object.freeze({ FUN: "fun", REGULAR: "" }),
-                a = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
-                s = Object.freeze({ REQUEST: "rweb/FETCH_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/FETCH_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/FETCH_GROK_CONVERSATION/FAILURE" }),
-                S = Object.freeze({ REQUEST: "rweb/FETCH_GROK_HISTORY/REQUEST", SUCCESS: "rweb/FETCH_GROK_HISTORY/SUCCESS", FAILURE: "rweb/FETCH_GROK_HISTORY/FAILURE" }),
-                o = Object.freeze({ REQUEST: "rweb/DELETE_GROK_MESSAGE/REQUEST", SUCCESS: "rweb/DELETE_GROK_MESSAGE/SUCCESS", FAILURE: "rweb/DELETE_GROK_MESSAGE/FAILURE" }),
-                i = Object.freeze({ REQUEST: "rweb/FETCH_GROK_PINNED_CONVERSATIONS/REQUEST", SUCCESS: "rweb/FETCH_GROK_PINNED_CONVERSATIONS/SUCCESS", FAILURE: "rweb/FETCH_GROK_PINNED_CONVERSATIONS/FAILURE" }),
+                s = Object.freeze({ FUN: "fun", REGULAR: "" }),
+                E = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
+                a = Object.freeze({ REQUEST: "rweb/FETCH_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/FETCH_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/FETCH_GROK_CONVERSATION/FAILURE" }),
+                o = Object.freeze({ REQUEST: "rweb/FETCH_GROK_HISTORY/REQUEST", SUCCESS: "rweb/FETCH_GROK_HISTORY/SUCCESS", FAILURE: "rweb/FETCH_GROK_HISTORY/FAILURE" }),
+                i = Object.freeze({ REQUEST: "rweb/DELETE_GROK_MESSAGE/REQUEST", SUCCESS: "rweb/DELETE_GROK_MESSAGE/SUCCESS", FAILURE: "rweb/DELETE_GROK_MESSAGE/FAILURE" }),
+                S = Object.freeze({ REQUEST: "rweb/FETCH_GROK_PINNED_CONVERSATIONS/REQUEST", SUCCESS: "rweb/FETCH_GROK_PINNED_CONVERSATIONS/SUCCESS", FAILURE: "rweb/FETCH_GROK_PINNED_CONVERSATIONS/FAILURE" }),
                 c = Object.freeze({ REQUEST: "rweb/FETCH_GROK_MEDIA_HISTORY/REQUEST", SUCCESS: "rweb/FETCH_GROK_MEDIA_HISTORY/SUCCESS", FAILURE: "rweb/FETCH_GROK_MEDIA_HISTORY/FAILURE" }),
-                d = Object.freeze({ REQUEST: "rweb/SEARCH_GROK_HISTORY/REQUEST", SUCCESS: "rweb/SEARCH_GROK_HISTORY/SUCCESS", FAILURE: "rweb/SEARCH_GROK_HISTORY/FAILURE" }),
-                R = Object.freeze({ REQUEST: "rweb/FETCH_GROK_HOME/REQUEST", SUCCESS: "rweb/FETCH_GROK_HOME/SUCCESS", FAILURE: "rweb/FETCH_GROK_HOME/FAILURE" }),
-                u = Object.freeze({ REQUEST: "rweb/FETCH_GROK_SHARE/REQUEST", SUCCESS: "rweb/FETCH_GROK_SHARE/SUCCESS", FAILURE: "rweb/FETCH_GROK_SHARE/FAILURE" }),
-                _ = Object.freeze({ REQUEST: "rweb/SET_PREFERENCES/REQUEST", SUCCESS: "rweb/SET_PREFERENCES/SUCCESS", FAILURE: "rweb/SET_PREFERENCES/FAILURE" }),
-                b = Object.freeze({ REQUEST: "rweb/PIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/PIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/PIN_GROK_CONVERSATION/FAILURE" }),
-                O = Object.freeze({ REQUEST: "rweb/UNPIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/UNPIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/UNPIN_GROK_CONVERSATION/FAILURE" }),
-                T = Object.freeze({ REQUEST: "rweb/CLEAR_CONVERSATIONS/REQUEST", SUCCESS: "rweb/CLEAR_CONVERSATIONS/SUCCESS", FAILURE: "rweb/CLEAR_CONVERSATIONS/FAILURE" }),
-                C = Object.freeze({ REQUEST: "rweb/GROK_USER_EVENTS_LOG/REQUEST", SUCCESS: "rweb/GROK_USER_EVENTS_LOG/SUCCESS", FAILURE: "rweb/GROK_USER_EVENTS_LOG/FAILURE" }),
+                u = Object.freeze({ REQUEST: "rweb/SEARCH_GROK_HISTORY/REQUEST", SUCCESS: "rweb/SEARCH_GROK_HISTORY/SUCCESS", FAILURE: "rweb/SEARCH_GROK_HISTORY/FAILURE" }),
+                d = Object.freeze({ REQUEST: "rweb/FETCH_GROK_HOME/REQUEST", SUCCESS: "rweb/FETCH_GROK_HOME/SUCCESS", FAILURE: "rweb/FETCH_GROK_HOME/FAILURE" }),
+                _ = Object.freeze({ REQUEST: "rweb/FETCH_GROK_SHARE/REQUEST", SUCCESS: "rweb/FETCH_GROK_SHARE/SUCCESS", FAILURE: "rweb/FETCH_GROK_SHARE/FAILURE" }),
+                R = Object.freeze({ REQUEST: "rweb/SET_PREFERENCES/REQUEST", SUCCESS: "rweb/SET_PREFERENCES/SUCCESS", FAILURE: "rweb/SET_PREFERENCES/FAILURE" }),
+                O = Object.freeze({ REQUEST: "rweb/PIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/PIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/PIN_GROK_CONVERSATION/FAILURE" }),
+                T = Object.freeze({ REQUEST: "rweb/UNPIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/UNPIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/UNPIN_GROK_CONVERSATION/FAILURE" }),
+                C = Object.freeze({ REQUEST: "rweb/CLEAR_CONVERSATIONS/REQUEST", SUCCESS: "rweb/CLEAR_CONVERSATIONS/SUCCESS", FAILURE: "rweb/CLEAR_CONVERSATIONS/FAILURE" }),
+                b = Object.freeze({ REQUEST: "rweb/GROK_USER_EVENTS_LOG/REQUEST", SUCCESS: "rweb/GROK_USER_EVENTS_LOG/SUCCESS", FAILURE: "rweb/GROK_USER_EVENTS_LOG/FAILURE" }),
                 A = "rweb/grok/DELETE_CONVERSATION",
                 w = "rweb/grok/RENAME_CONVERSATION",
                 I = "rweb/grok/SET_ABORT_CONTROLLER",
                 U = "rweb/grok/CLEAR_CONVERSATION",
-                N = "rweb/grok/USER_SEND_MESSAGE",
-                g = "rweb/grok/REGENERATE_RESPONSE",
-                h = "rweb/grok/GROK_RESPONSE_TYPING",
-                l = "rweb/grok/GROK_RESPONSE_POSTS",
-                L = "rweb/grok/GROK_RESPONSE_MEDIA_POSTS",
-                G = "rweb/grok/GROK_RESPONSE_COMPLETE",
-                m = "rweb/grok/GROK_RESPONSE_ERROR",
-                p = "rweb/grok/GROK_RESPONSE_METADATA",
-                P = "rweb/grok/GROK_RESPONSE_DISCLAIMER",
-                f = "rweb/grok/GROK_RESPONSE_FILE_ATTACHMENTS",
-                y = "rweb/grok/GROK_RESPONSE_FEEDBACK_LABELS",
-                F = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTIONS",
-                D = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTED_MODE",
-                K = "rweb/grok/GROK_RESPONSE_CHAT_RESPONSE_ANNOTATIONS",
-                k = "rweb/grok/GROK_RESPONSE_UPSELL",
-                H = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENT",
-                v = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENTS",
-                M = "rweb/grok/GROK_RESPONSE_MESSAGE_STEP_ACCUMULATOR_UPDATE",
-                Q = "rweb/grok/GROK_RESPONSE_MEMORY_REFERENCES",
-                V = "rweb/grok/GROK_WEB_RESULTS",
-                Z = "rweb/grok/GROK_CITED_WEB_RESULTS",
-                Y = "rweb/grok/ABORT_MESSAGE",
-                x = "rweb/grok/SET_EXPECTED_IMAGE_ASPECT_RATIO",
+                l = "rweb/grok/USER_SEND_MESSAGE",
+                N = "rweb/grok/REGENERATE_RESPONSE",
+                p = "rweb/grok/GROK_RESPONSE_TYPING",
+                h = "rweb/grok/GROK_RESPONSE_POSTS",
+                g = "rweb/grok/GROK_RESPONSE_MEDIA_POSTS",
+                m = "rweb/grok/GROK_RESPONSE_COMPLETE",
+                L = "rweb/grok/GROK_RESPONSE_ERROR",
+                P = "rweb/grok/GROK_RESPONSE_METADATA",
+                f = "rweb/grok/GROK_RESPONSE_DISCLAIMER",
+                y = "rweb/grok/GROK_RESPONSE_FILE_ATTACHMENTS",
+                G = "rweb/grok/GROK_RESPONSE_FEEDBACK_LABELS",
+                D = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTIONS",
+                k = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTED_MODE",
+                F = "rweb/grok/GROK_RESPONSE_CHAT_RESPONSE_ANNOTATIONS",
+                v = "rweb/grok/GROK_RESPONSE_UPSELL",
+                K = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENT",
+                H = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENTS",
+                Z = "rweb/grok/GROK_RESPONSE_MESSAGE_STEP_ACCUMULATOR_UPDATE",
+                M = "rweb/grok/GROK_RESPONSE_MEMORY_REFERENCES",
+                Q = "rweb/grok/GROK_WEB_RESULTS",
+                V = "rweb/grok/GROK_CITED_WEB_RESULTS",
+                x = "rweb/grok/ABORT_MESSAGE",
+                Y = "rweb/grok/SET_EXPECTED_IMAGE_ASPECT_RATIO",
                 j = "rweb/grok/FETCH_CONVERSATION_ID_START",
                 z = "rweb/grok/FETCH_CONVERSATION_ID_SUCCESS",
                 B = "rweb/grok/FETCH_CONVERSATION_ID_FAILED",
-                W = "rweb/grok/EDITING_SET_ID",
-                $ = "rweb/grok/EDITING_CLEAR",
-                q = "rweb/grok/EDITING_COMMIT",
+                $ = "rweb/grok/EDITING_SET_ID",
+                q = "rweb/grok/EDITING_CLEAR",
+                W = "rweb/grok/EDITING_COMMIT",
                 J = "rweb/grok/RETRY_MESSAGE",
                 X = "rweb/grok/SET_INPUT_PREFILL",
                 ee = "rweb/grok/MODE_CHANGE",
                 te = "rweb/grok/MODEL_CHANGE",
                 re = "rweb/grok/SET_ACCESS_RESTRICTED_REASONS",
                 ne = "rweb/grok/SET_FREE_ACCESS",
-                Ee = "rweb/grok/SET_PREFERRED_PROMPTS",
-                ae = "rweb/grok/SET_PROMPT_SOURCE",
-                se = "rweb/grok/NEW_CONVERSATION",
-                Se = "rweb/grok/IMAGE_INTERMEDIATE_RESULT",
-                oe = "rweb/grok/SET_GROK_INPUT_FILTER_KEY",
-                ie = "rweb/grok/SET_GROK_INPUT_FOCUSED",
+                se = "rweb/grok/SET_PREFERRED_PROMPTS",
+                Ee = "rweb/grok/SET_PROMPT_SOURCE",
+                ae = "rweb/grok/NEW_CONVERSATION",
+                oe = "rweb/grok/IMAGE_INTERMEDIATE_RESULT",
+                ie = "rweb/grok/SET_GROK_INPUT_FILTER_KEY",
+                Se = "rweb/grok/SET_GROK_INPUT_FOCUSED",
                 ce = "rweb/grok/QUERY_TYPING",
-                de = "rweb/grok/ADD_BANNER_MESSAGE",
-                Re = "rweb/grok/DELETE_MEDIA_HISTORY_ITEM",
-                ue = "rweb/grok/UPDATE_PERFORMANCE_METRICS",
-                _e = "r/web/grok/SET_USING_EXPERIMENT",
-                be = "r/web/grok/SET_PREFERRED_RESPONSE",
-                Oe = "rweb/grok/SET_GROK_INPUT_ADVANCED_SETTINGS",
-                Te = "rweb/grok/SET_IS_PAST_THINKING_TRACE",
-                Ce = "rweb/grok/SET_REASONING_LAYOUT";
+                ue = "rweb/grok/ADD_BANNER_MESSAGE",
+                de = "rweb/grok/DELETE_MEDIA_HISTORY_ITEM",
+                _e = "rweb/grok/UPDATE_PERFORMANCE_METRICS",
+                Re = "r/web/grok/SET_USING_EXPERIMENT",
+                Oe = "r/web/grok/SET_PREFERRED_RESPONSE",
+                Te = "rweb/grok/SET_GROK_INPUT_ADVANCED_SETTINGS",
+                Ce = "rweb/grok/SET_IS_PAST_THINKING_TRACE",
+                be = "rweb/grok/SET_REASONING_LAYOUT";
         },
         231817: (e, t, r) => {
-            r.d(t, { LJ: () => w, UD: () => U, gQ: () => l, gw: () => N, n2: () => I, zU: () => h });
+            r.d(t, { LJ: () => w, UD: () => U, gQ: () => h, gw: () => l, n2: () => I, zU: () => p });
             var n = r(24949),
-                E = r(697926),
-                a = r(744531),
-                s = r(226395),
-                S = r(928233),
+                s = r(697926),
+                E = r(744531),
+                a = r(226395),
+                o = r(928233),
+                i = r(499627),
+                S = r(917799),
+                c = r(312771),
+                u = r(390387);
+            const d = `${r(291020).Y}/dm_registered_devices`,
+                _ = `rweb/${d}`,
+                R = S.dg(_, "FETCH_REGISTERED_DEVICES"),
+                O = S.dg(_, "DEREGISTER_DEVICE"),
+                T = { fetchStatus: c.ZP.NONE, devices: {} };
+            function C(e = T, t) {
+                if (!t) return e;
+                switch (t.type) {
+                    case R.REQUEST:
+                        return { ...e, fetchStatus: c.ZP.LOADING };
+                    case R.FAILURE:
+                        return { ...e, error: t.payload, fetchStatus: c.ZP.FAILED };
+                    case R.SUCCESS:
+                        return { ...e, error: null, fetchStatus: c.ZP.LOADED, devices: (0, s.Z)(b(t.payload), (e) => e.registration_token) };
+                    case O.SUCCESS:
+                        return { ...e, devices: (0, E.Z)(e.devices, t.meta.registration_token) };
+                    default:
+                        return e;
+                }
+            }
+            i.Z.register({ [d]: C });
+            const b = (e) => e?.public_keys || [],
+                A = (e) => e[d].devices,
+                w = (0, n.P1)(A, (e) => Object.values(e).sort((e, t) => t.registration_ts - e.registration_ts)),
+                I = (e, t) => A(e)[t],
+                U = (e) => e[d].fetchStatus,
+                l = (e) => (t, r) => (U(r()) === c.ZP.LOADED ? Promise.resolve() : t(N(e))),
+                N =
+                    (e) =>
+                    (t, r, { api: n }) =>
+                        S._O(t, { params: e, request: n.withEndpoint(a.Z).fetchEncryptedDMsPublicKeysAndDevices })({ actionTypes: R, context: "FETCH_SESSIONS" }),
+                p =
+                    (e) =>
+                    (t, r, { api: n }) => {
+                        const s = { registrationToken: e };
+                        return S._O(t, { params: s, request: n.withEndpoint(a.Z).deregisterDevice })({ actionTypes: O, context: "DEREGISTER_DEVICE", meta: { registrationToken: e } }).then(() => {
+                            const e = u.x0(r());
+                            t(N({ loggedInUserId: e }));
+                        });
+                    },
+                h =
+                    (e) =>
+                    (e, t, { api: r }) =>
+                        e(o.FM).then(() => {
+                            const r = u.x0(t());
+                            e(N({ loggedInUserId: r }));
+                        });
+        },
+        715684: (e, t, r) => {
+            r.d(t, { Fm: () => h, TG: () => w, UD: () => U, _1: () => p, dj: () => l, kz: () => I });
+            var n = r(24949),
+                s = r(697926),
+                E = r(744531),
+                a = r(226395),
                 o = r(499627),
                 i = r(917799),
-                c = r(312771),
-                d = r(390387);
-            const R = `${r(291020).Y}/dm_registered_devices`,
-                u = `rweb/${R}`,
-                _ = i.dg(u, "FETCH_REGISTERED_DEVICES"),
-                b = i.dg(u, "DEREGISTER_DEVICE"),
-                O = { fetchStatus: c.ZP.NONE, devices: {} };
+                S = r(312771);
+            const c = `${r(291020).Y}/sessions`,
+                u = `rweb/${c}`,
+                d = i.dg(u, "FETCH_SESSIONS"),
+                _ = i.dg(u, "REVOKE_SESSION"),
+                R = i.dg(u, "REVOKE_ALL_SESSIONS"),
+                O = { fetchStatus: S.ZP.NONE, sessions: {} };
             function T(e = O, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case _.REQUEST:
-                        return { ...e, fetchStatus: c.ZP.LOADING };
-                    case _.FAILURE:
-                        return { ...e, error: t.payload, fetchStatus: c.ZP.FAILED };
+                    case d.REQUEST:
+                        return { ...e, fetchStatus: S.ZP.LOADING };
+                    case d.FAILURE:
+                        return { ...e, error: t.payload, fetchStatus: S.ZP.FAILED };
+                    case d.SUCCESS:
+                        return { ...e, error: null, fetchStatus: S.ZP.LOADED, sessions: (0, s.Z)(b(t.payload), (e) => e.token) };
                     case _.SUCCESS:
-                        return { ...e, error: null, fetchStatus: c.ZP.LOADED, devices: (0, E.Z)(C(t.payload), (e) => e.registration_token) };
-                    case b.SUCCESS:
-                        return { ...e, devices: (0, a.Z)(e.devices, t.meta.registration_token) };
+                        return { ...e, sessions: (0, E.Z)(e.sessions, t.meta.hashed_token) };
                     default:
                         return e;
                 }
             }
-            o.Z.register({ [R]: T });
-            const C = (e) => e?.public_keys || [],
-                A = (e) => e[R].devices,
-                w = (0, n.P1)(A, (e) => Object.values(e).sort((e, t) => t.registration_ts - e.registration_ts)),
+            o.Z.register({ [c]: T });
+            function C(e) {
+                return { token: e.hashed_token, name: e.device_name, summary: e.device_summary, icon_type: e.icon_type, is_current_session: e.is_current_session, location: e.location, last_seen_time_ms: e.last_seen_at };
+            }
+            const b = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(C) : []),
+                A = (e) => e[c].sessions,
+                w = (0, n.P1)(A, (e) => Object.values(e)),
                 I = (e, t) => A(e)[t],
-                U = (e) => e[R].fetchStatus,
-                N = (e) => (t, r) => (U(r()) === c.ZP.LOADED ? Promise.resolve() : t(g(e))),
-                g =
+                U = (e) => e[c].fetchStatus,
+                l = (e) => (t, r) => (U(r()) === S.ZP.LOADED ? Promise.resolve() : t(N(e))),
+                N =
                     (e) =>
                     (t, r, { api: n }) =>
-                        i._O(t, { params: e, request: n.withEndpoint(s.Z).fetchEncryptedDMsPublicKeysAndDevices })({ actionTypes: _, context: "FETCH_SESSIONS" }),
-                h =
+                        i._O(t, { params: e, request: n.withEndpoint(a.Z).fetchSessions })({ actionTypes: d, context: "FETCH_SESSIONS" }),
+                p =
                     (e) =>
                     (t, r, { api: n }) => {
-                        const E = { registrationToken: e };
-                        return i
-                            ._O(t, { params: E, request: n.withEndpoint(s.Z).deregisterDevice })({ actionTypes: b, context: "DEREGISTER_DEVICE", meta: { registrationToken: e } })
-                            .then(() => {
-                                const e = d.x0(r());
-                                t(g({ loggedInUserId: e }));
-                            });
+                        const s = { hashed_token: e };
+                        return i._O(t, { params: s, request: n.withEndpoint(a.Z).revokeSession })({ actionTypes: _, context: "REVOKE_SESSION", meta: { hashed_token: e } });
+                    },
+                h =
+                    (e) =>
+                    (t, r, { api: n }) =>
+                        i
+                            ._O(t, { params: e, request: n.withEndpoint(a.Z).revokeAllSessions })({ actionTypes: R, context: "REVOKE_ALL_SESSIONS" })
+                            .then(() => N()(t, r, { api: n }));
+        },
+        948985: (e, t, r) => {
+            r.d(t, { $q: () => A, UD: () => w, wz: () => I, zw: () => U });
+            var n = r(24949),
+                s = r(166852),
+                E = r(226395),
+                a = r(499627),
+                o = r(917799),
+                i = r(312771),
+                S = r(56519),
+                c = r(502909),
+                u = r(600823);
+            const d = `${r(291020).Y}/applications`,
+                _ = `rweb/${d}`,
+                R = o.dg(_, "FETCH_APPLICATIONS"),
+                O = { fetchStatus: i.ZP.NONE };
+            function T(e = O, t) {
+                if (!t) return e;
+                switch (t.type) {
+                    case R.REQUEST:
+                        return { ...e, fetchStatus: i.ZP.LOADING };
+                    case R.FAILURE:
+                        return { ...e, error: t.payload, fetchStatus: i.ZP.FAILED };
+                    case R.SUCCESS:
+                        return { ...e, error: null, fetchStatus: i.ZP.LOADED };
+                    default:
+                        return e;
+                }
+            }
+            a.Z.register({ [d]: T });
+            const C = {
+                    revokeApplication: {
+                        reducer: (e, t) => {
+                            if (t.type === b.customActionTypes.revokeApplication.SUCCESS) {
+                                const { revoked: r } = t.payload,
+                                    { entityId: n } = t.meta,
+                                    s = e.entities[n];
+                                return { ...e, entities: { ...e.entities, [n]: { ...s, revoked: r } } };
+                            }
+                            return e;
+                        },
+                        getParams: (e) => ({ token: e }),
+                        getApiMethod: (e) => e.withEndpoint(E.Z).revokeApplication,
+                    },
+                    revokeOauth2Token: {
+                        reducer: (e, t) => {
+                            if (t.type === b.customActionTypes.revokeOauth2Token.SUCCESS) {
+                                const { revoked: r } = t.payload,
+                                    { entityId: n } = t.meta,
+                                    s = e.entities[n];
+                                return { ...e, entities: { ...e.entities, [n]: { ...s, revoked: r } } };
+                            }
+                            return e;
+                        },
+                        getParams: (e) => ({ token_hash: e }),
+                        getApiMethod: (e) => e.withEndpoint(E.Z).revokeOauth2Token,
+                    },
+                },
+                b = (0, c.ZP)({ namespace: "applications", customActions: C });
+            (b.selectUniqUnrevokedApps = (0, n.P1)(b.selectAll, (e) => {
+                const t = Object.values(e).filter((e) => !0 !== e.revoked);
+                return (0, s.Z)(t, (e) => e.app_id);
+            })),
+                (b.selectAppsById = (0, n.P1)(
+                    b.selectAll,
+                    (e, t) => t,
+                    (e, t) => Object.values(e).filter((e) => e.app_id === t),
+                ));
+            const A = u.Z.register(b),
+                w = (e) => e[d].fetchStatus,
+                I = (e) => (t, r) => (w(r()) === i.ZP.LOADED ? Promise.resolve() : t(l(e))),
+                U =
+                    (e, t, r) =>
+                    (r, n, { api: s }) => {
+                        const E = n();
+                        return b.selectAppsById(E, e).length > 0 ? Promise.resolve() : r(l(t));
                     },
                 l =
                     (e) =>
-                    (e, t, { api: r }) =>
-                        e(S.FM).then(() => {
-                            const r = d.x0(t());
-                            e(g({ loggedInUserId: r }));
+                    (t, r, { api: n }) =>
+                        o._O(t, { params: e, request: n.withEndpoint(E.Z).fetchApplications })({ actionTypes: R, context: "FETCH_APPLICATIONS" }, (e, t) => {
+                            if (e) return [(0, S.dP)(e.entities)];
                         });
         },
         818581: (e, t, r) => {
-            r.d(t, { kQ: () => u, xQ: () => _ });
+            r.d(t, { kQ: () => _, xQ: () => R });
             var n = r(226395),
-                E = r(499627),
-                a = r(917799),
-                s = r(312771),
-                S = r(390387);
-            const o = `${r(291020).Y}/user_preferences`,
-                i = `rweb/${o}`,
-                c = a.dg(i, "FETCH_USER_PREFERENCES"),
-                d = { userPreferences: {}, error: null, fetchStatus: s.ZP.NONE };
-            function R(e = d, t) {
+                s = r(499627),
+                E = r(917799),
+                a = r(312771),
+                o = r(390387);
+            const i = `${r(291020).Y}/user_preferences`,
+                S = `rweb/${i}`,
+                c = E.dg(S, "FETCH_USER_PREFERENCES"),
+                u = { userPreferences: {}, error: null, fetchStatus: a.ZP.NONE };
+            function d(e = u, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case c.REQUEST:
-                        return { ...e, fetchStatus: s.ZP.LOADING };
+                        return { ...e, fetchStatus: a.ZP.LOADING };
                     case c.FAILURE:
-                        return { ...e, error: t.payload, fetchStatus: s.ZP.FAILED };
+                        return { ...e, error: t.payload, fetchStatus: a.ZP.FAILED };
                     case c.SUCCESS:
-                        return { ...e, userPreferences: t.payload.user_preferences, error: null, fetchStatus: s.ZP.LOADED };
+                        return { ...e, userPreferences: t.payload.user_preferences, error: null, fetchStatus: a.ZP.LOADED };
                     default:
                         return e;
                 }
             }
-            E.Z.register({ [o]: R });
-            const u = (e) => e[o].userPreferences,
-                _ = () => (e, t) => (t()[o].fetchStatus === s.ZP.LOADED ? Promise.resolve() : e(b())),
-                b =
+            s.Z.register({ [i]: d });
+            const _ = (e) => e[i].userPreferences,
+                R = () => (e, t) => (t()[i].fetchStatus === a.ZP.LOADED ? Promise.resolve() : e(O())),
+                O =
                     () =>
                     (e, t, { api: r }) => {
-                        const E = S.x0(t());
-                        return a._O(e, { params: { userId: E }, request: r.withEndpoint(n.Z).fetchUserPreferences })({ actionTypes: c, context: "FETCH_USER_PREFERENCES" });
+                        const s = o.x0(t());
+                        return E._O(e, { params: { userId: s }, request: r.withEndpoint(n.Z).fetchUserPreferences })({ actionTypes: c, context: "FETCH_USER_PREFERENCES" });
                     };
         },
         643242: (e, t, r) => {
@@ -515,4 +668,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-8ed0fac5.1c9335fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-8ed0fac5.cfd33f8a.js.map

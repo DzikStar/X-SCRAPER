@@ -127,6 +127,106 @@
             s.hash = "9857083eaf2ad3aaf50054194774f8ce";
             const r = s;
         },
+        415706: (e, l, a) => {
+            a.d(l, { Z: () => r });
+            var n,
+                i,
+                s = {
+                    fragment: {
+                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "taskId" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "CustomerTasksCarouselDismissTaskMutation",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "s", value: "8cce" },
+                                    { kind: "Variable", name: "task_id", variableName: "taskId" },
+                                ],
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "dismiss_customer_task",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "CustomerTasksCarouselDismissTaskMutation", selections: i },
+                    params: { id: "_Oy4d_aH9GpiEuz5jgqU-Q", metadata: {}, name: "CustomerTasksCarouselDismissTaskMutation", operationKind: "mutation", text: null },
+                };
+            s.hash = "1e5b539a44950f857573fb1f5dd08e2b";
+            const r = s;
+        },
+        991744: (e, l, a) => {
+            a.d(l, { Z: () => r });
+            var n,
+                i,
+                s = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "CustomerTasksCarouselQuery",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "count", value: 10 },
+                                    { kind: "Literal", name: "s", value: "8cce" },
+                                ],
+                                concreteType: "XPaymentsCustomerTasksSlice",
+                                kind: "LinkedField",
+                                name: "get_payments_customer_tasks",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "XPaymentsCustomerTask",
+                                        kind: "LinkedField",
+                                        name: "items",
+                                        plural: !0,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
+                                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "icon", plural: !1, selections: [(n = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "icon_type", storageKey: null }], type: "XPaymentsCustomerTaskPredefinedIcon", abstractKey: null }, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], type: "XPaymentsCustomerTaskRemoteImageIcon", abstractKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "destination", plural: !1, selections: [n], storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "SliceInfo",
+                                        kind: "LinkedField",
+                                        name: "slice_info",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "previous_cursor", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'get_payments_customer_tasks(count:10,s:"8cce")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "CustomerTasksCarouselQuery", selections: i },
+                    params: { id: "aNk36yz17Xk-ogDezouazg", metadata: {}, name: "CustomerTasksCarouselQuery", operationKind: "query", text: null },
+                };
+            s.hash = "7af9b307c49bf62ee02b9b40e86e439b";
+            const r = s;
+        },
         882956: (e, l, a) => {
             a.d(l, { Z: () => i });
             var n = {
@@ -150,7 +250,7 @@
             const i = n;
         },
         120721: (e, l, a) => {
-            a.d(l, { Z: () => c });
+            a.d(l, { Z: () => o });
             var n,
                 i,
                 s,
@@ -174,7 +274,7 @@
                                 kind: "LinkedField",
                                 name: "user_result_by_rest_id",
                                 plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }, { args: null, kind: "FragmentSpread", name: "UserDetails_user" }], storageKey: null }],
+                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }, { args: null, kind: "FragmentSpread", name: "UserDetails_user" }], storageKey: null }],
                                 storageKey: null,
                             },
                         ],
@@ -207,8 +307,7 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }], storageKey: null },
-                                                    { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [r, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
@@ -267,13 +366,13 @@
                             },
                         ],
                     },
-                    params: { id: "Ji1kOaf_C0qoFsRrWDPPuQ", metadata: {}, name: "P2PTransferParticipantQuery", operationKind: "query", text: null },
+                    params: { id: "qs9bfc9XXzRDzydNmtp-1g", metadata: {}, name: "P2PTransferParticipantQuery", operationKind: "query", text: null },
                 };
-            d.hash = "83db4417d88d0f7cedaf205e10aa6842";
-            const c = d;
+            d.hash = "30b29b90f122eae14d40393775e9e8df";
+            const o = d;
         },
         597897: (e, l, a) => {
-            a.d(l, { Z: () => c });
+            a.d(l, { Z: () => o });
             var n,
                 i,
                 s,
@@ -309,7 +408,7 @@
                     params: { id: "UF7VUY_kIMLH98wWnXXcfQ", metadata: {}, name: "PaymentMethodPollerQuery", operationKind: "query", text: null },
                 };
             d.hash = "5fa5cabc8880578503a5697365528071";
-            const c = d;
+            const o = d;
         },
         724983: (e, l, a) => {
             a.d(l, { Z: () => y });
@@ -320,10 +419,10 @@
                 t,
                 u,
                 d,
-                c,
                 o,
-                g,
-                m = {
+                c,
+                m,
+                g = {
                     fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "RecentParticipantsQuery", selections: [{ alias: null, args: (n = [{ kind: "Literal", name: "s", value: "8cce" }]), concreteType: "User", kind: "LinkedField", name: "get_payments_recent_participants", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "UserCell_user" }, (i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "UserDetails_user" }, (s = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: 'get_payments_recent_participants(s:"8cce")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
@@ -344,17 +443,17 @@
                                     {
                                         alias: null,
                                         args: null,
-                                        concreteType: "ApiUser",
+                                        concreteType: "UserCore",
                                         kind: "LinkedField",
-                                        name: "legacy",
+                                        name: "core",
                                         plural: !1,
                                         selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                         ],
                                         storageKey: null,
                                     },
+                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null },
                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                     {
@@ -415,9 +514,9 @@
                                                         storageKey: null,
                                                     },
                                                     (d = { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [r], storageKey: null }),
-                                                    (c = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
-                                                    (o = { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }),
-                                                    (g = { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null }),
+                                                    (o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
+                                                    (c = { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }),
+                                                    (m = { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null }),
                                                 ],
                                                 storageKey: null,
                                             },
@@ -441,7 +540,7 @@
                                     i,
                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
-                                    { alias: "affiliates_highlighted_label", args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "identity_profile_labels_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [r, t], storageKey: null }, d, c, o, g], storageKey: null }], storageKey: null },
+                                    { alias: "affiliates_highlighted_label", args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "identity_profile_labels_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [r, t], storageKey: null }, d, o, c, m], storageKey: null }], storageKey: null },
                                     u,
                                     s,
                                 ],
@@ -449,10 +548,10 @@
                             },
                         ],
                     },
-                    params: { id: "gXCw43MaYE3KbHw2RNhLwg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
+                    params: { id: "cXWZkt5AgDnGLXm6SP8XfA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
                 };
-            m.hash = "098d419144f289b29c1421123e7cfb25";
-            const y = m;
+            g.hash = "098d419144f289b29c1421123e7cfb25";
+            const y = g;
         },
         73863: (e, l, a) => {
             a.d(l, { Z: () => u });
@@ -538,10 +637,10 @@
                 t,
                 u,
                 d,
-                c,
                 o,
-                g,
+                c,
                 m,
+                g,
                 y = {
                     argumentDefinitions: [],
                     kind: "Fragment",
@@ -572,7 +671,7 @@
                                 (i = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                 {
                                     kind: "InlineFragment",
-                                    selections: (c = [
+                                    selections: (o = [
                                         (d = {
                                             alias: null,
                                             args: null,
@@ -587,20 +686,20 @@
                                     type: "XPaymentsDepositDetails",
                                     abstractKey: null,
                                 },
-                                { kind: "InlineFragment", selections: c, type: "XPaymentsWithdrawalDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: o, type: "XPaymentsWithdrawalDetails", abstractKey: null },
                                 {
                                     kind: "InlineFragment",
                                     selections: [
-                                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "receiver_results", plural: !1, selections: (o = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [i, { kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "UserAvatar_user" }, { args: null, kind: "FragmentSpread", name: "UserName_user" }, s, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }]), storageKey: null },
-                                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "sender_results", plural: !1, selections: o, storageKey: null },
+                                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "receiver_results", plural: !1, selections: (c = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [i, { kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "UserAvatar_user" }, { args: null, kind: "FragmentSpread", name: "UserName_user" }, s, { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }]), storageKey: null },
+                                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "sender_results", plural: !1, selections: c, storageKey: null },
                                     ],
                                     type: "XPaymentsTransferDetails",
                                     abstractKey: null,
                                 },
                                 {
                                     kind: "InlineFragment",
-                                    selections: (m = [
-                                        (g = {
+                                    selections: (g = [
+                                        (m = {
                                             alias: null,
                                             args: null,
                                             concreteType: "XPaymentsMerchantDetails",
@@ -649,9 +748,9 @@
                                     type: "XPaymentsBankingDepositDetails",
                                     abstractKey: null,
                                 },
-                                { kind: "InlineFragment", selections: m, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: [g, d], type: "XPaymentsPaymentDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: [g, d, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: g, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: [m, d], type: "XPaymentsPaymentDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: [m, d, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                             ],
                             storageKey: null,
                         },
@@ -660,7 +759,7 @@
                     type: "XPaymentsTransaction",
                     abstractKey: null,
                 };
-            y.hash = "87c68ff1182f06ac8d46bfc98ff3f6f3";
+            y.hash = "a08a0183da4eb674dcb67ecfc54c961d";
             const k = y;
         },
         860648: (e, l, a) => {
@@ -712,4 +811,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.9317caba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.a771041a.js.map

@@ -17,13 +17,12 @@
             const a = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        i.e("icons.13"),
+                        i.e("icons.20"),
                         i.e("modules.common-e907d115"),
                         i.e("modules.common-e019dbda"),
-                        i.e("icons.7"),
+                        i.e("icons.22"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -77,8 +76,8 @@
                 l = i(163390);
             const u = a().cfd2f35e,
                 p = a().f9e45cfb,
-                b = a().fcd4d489,
-                m = a().a6450e84,
+                m = a().fcd4d489,
+                b = a().a6450e84,
                 S = a().g353ad73,
                 E = a().ad00a739,
                 f = a().a9fd20be,
@@ -88,7 +87,7 @@
                 T = a().he43bca4,
                 g = a().f5f01af6,
                 A = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                I = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: m, text: t ? E({ screenName: e }) : S({ screenName: e }) }),
+                I = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: b, text: t ? E({ screenName: e }) : S({ screenName: e }) }),
                 v = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: i, source: r, testID: n, unblockAction: o, unblockSubtext: a, user: s }) => {
                     let d,
                         u = c.Z;
@@ -113,7 +112,7 @@
                 },
                 P = (e) => (e ? d.default : s.default),
                 w = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
-                L = (e) => (e.blocking ? y({ screenName: e.screen_name }) : b({ screenName: e.screen_name })),
+                L = (e) => (e.blocking ? y({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
                 C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: h, text: t ? g : T }))(e.screen_name, t) : I(e.screen_name, t)),
                 O = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
                     const { confirmButtonType: o, headline: a, label: s, text: d } = e;
@@ -144,7 +143,7 @@
             const a = (0, o.wN)(o.PW, n());
         },
         163390: (e, t, i) => {
-            i.d(t, { OX: () => p, Od: () => l, PN: () => b, uq: () => c, wR: () => S });
+            i.d(t, { OX: () => p, Od: () => l, PN: () => m, uq: () => c, wR: () => S });
             var r = i(251067),
                 n = i(522171),
                 o = i(332920),
@@ -173,7 +172,7 @@
                     { description: a().eebdef38, keys: n.Z.shortcuts.openMediaModal, universal: !0 },
                     { description: a().b488758c, keys: c.toggleDMDrawer, universal: !1 },
                 ],
-                b = () => [
+                m = () => [
                     { description: a().c82314e0, keys: c.video.play1, universal: !0 },
                     { description: a().c82314e0, keys: c.video.play2, universal: !0 },
                     { description: a().b881560e, keys: c.video.mute, universal: !0 },
@@ -181,10 +180,10 @@
                     { description: a().a7e604c6, keys: c.audio.play, universal: !1 },
                     { description: a().f978c4fc, keys: c.audio.mute, universal: !1 },
                 ],
-                m = (0, s.Z)((e) => {
+                b = (0, s.Z)((e) => {
                     const t = l(e),
                         i = p(),
-                        r = b(),
+                        r = m(),
                         n = {};
                     return (
                         [...i, ...r, ...t].forEach(({ description: e, keys: t }) => {
@@ -198,7 +197,7 @@
                     );
                 }),
                 S = (e, t) => {
-                    if (t) return { dataSet: { "at-shortcutkeys": m(e) } };
+                    if (t) return { dataSet: { "at-shortcutkeys": b(e) } };
                 };
         },
         159440: (e, t, i) => {
@@ -268,7 +267,7 @@
                     (e, t = c) =>
                     (i, n, { scribe: o }) => {
                         const a = n(),
-                            s = Array.isArray(t.items) ? (0, r.Z)(t.items.map((e) => b(e, a))) : d,
+                            s = Array.isArray(t.items) ? (0, r.Z)(t.items.map((e) => m(e, a))) : d,
                             c = { ...t, items: s };
                         o.log(e, c);
                     },
@@ -280,7 +279,7 @@
                 p = (e) => {
                     if (e.disclosure_type && e.impression_id) return { disclosure_type: e.disclosure_type, impression_id: e.impression_id };
                 },
-                b = (e, t) => {
+                m = (e, t) => {
                     if (!e.id) return e;
                     switch (e.item_type) {
                         case n.Z.ItemType.USER: {
@@ -340,8 +339,8 @@
                 return { hasMultipleMediaItems: o, legacy: i, redesign: n };
             }
             var p = i(516951),
-                b = i(541837),
-                m = i(615656),
+                m = i(541837),
+                b = i(615656),
                 S = i(71620),
                 E = i(917799);
             const f = "FETCH_PREROLLS",
@@ -378,8 +377,8 @@
                                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                                 const o = { eligibleTweets: e, prerollDisplayLocation: n };
                                 t && (o.trigger_preroll = t);
-                                const a = (0, E._O)(i, { request: r.withEndpoint(b.Z).fetch, params: o }),
-                                    s = i((0, S.zr)(f)({ showToast: !1, [m.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
+                                const a = (0, E._O)(i, { request: r.withEndpoint(m.Z).fetch, params: o }),
+                                    s = i((0, S.zr)(f)({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
                                 return a({ actionTypes: _, context: "FETCH_PREROLLS" }).catch(s);
                             })(e, t, i, r, n),
                         ),
@@ -435,7 +434,7 @@
                         c = [],
                         l = {},
                         p = {},
-                        b = {};
+                        m = {};
                     e.forEach((e) => {
                         if (!e.content || e.type !== n.ZP.Tweet) return;
                         const t = e.content,
@@ -447,11 +446,11 @@
                             const { adMetadataContainer: e, disclosureType: t, impressionId: i } = a;
                             (r.promoted_content = { adMetadataContainer: e, disclosure_type: t, impression_id: i }), (p[r.id_str] = a);
                         }
-                        const m = u(r),
-                            S = m && m.hasMultipleMediaItems;
-                        (b[r.id_str] = m), o?.preroll?.mediaInfo && !S && (l[r.id_str] = o), m?.legacy && !S && c.push(r);
+                        const b = u(r),
+                            S = b && b.hasMultipleMediaItems;
+                        (m[r.id_str] = b), o?.preroll?.mediaInfo && !S && (l[r.id_str] = o), b?.legacy && !S && c.push(r);
                     });
-                    i({ type: I, payload: { ...{ eligibleTweets: c, prerollMetadataCollection: l, promotedMetadataCollection: p, prerollEligibilityCollection: b, prerollDisplayLocation: t } } });
+                    i({ type: I, payload: { ...{ eligibleTweets: c, prerollMetadataCollection: l, promotedMetadataCollection: p, prerollEligibilityCollection: m, prerollDisplayLocation: t } } });
                     return T(
                         c.filter((e) => void 0 === l[e.id_str]),
                         null,
@@ -467,8 +466,8 @@
                         const a = w(n(), t),
                             { dynamicIVCollection: s, eligibleTweets: d, prerollEligibilityCollection: c, prerollMetadataCollection: l, promotedMetadataCollection: u } = a,
                             p = s[e],
-                            b = u[e],
-                            m = c[e];
+                            m = u[e],
+                            b = c[e];
                         if (p) {
                             i({ type: A, payload: { prerollDisplayLocation: t } });
                             const { dynamic_preroll_type: e, preroll_id: n } = p;
@@ -492,7 +491,7 @@
                                         (o.advertiserName = e), (o.advertiserProfileImageUrl = i);
                                     }
                                     return o;
-                                })(0, p, b, m)
+                                })(0, p, m, b)
                             );
                         }
                         const S = l[e];
@@ -518,7 +517,7 @@
                                     (d.advertiserName = e), (d.advertiserProfileImageUrl = t);
                                 }
                                 return d;
-                            })(0, S, b, m);
+                            })(0, S, m, b);
                             if (e) return e;
                         }
                     }
@@ -539,8 +538,8 @@
                 l = i(466015),
                 u = i(538327),
                 p = i(281743),
-                b = i(917799),
-                m = i(56519),
+                m = i(917799),
+                b = i(56519),
                 S = i(502909),
                 E = i(600823),
                 f = i(558369),
@@ -555,8 +554,8 @@
                 P = i(78259),
                 w = i(919022),
                 L = i(206795);
-            const C = b.dg("lists", "UPLOAD_MEDIA"),
-                O = b.dg("lists", "UPDATE_MEDIA"),
+            const C = m.dg("lists", "UPLOAD_MEDIA"),
+                O = m.dg("lists", "UPDATE_MEDIA"),
                 D = (0, S.ZP)({ namespace: "lists" }),
                 M = (0, S.tb)(D, {
                     context: "FETCH_LIST",
@@ -569,7 +568,7 @@
                 }),
                 R = (e) => l.WE({ displayType: u.P.List, id: e, sortIndex: Date.now().toString() }),
                 k = (e) => l.$0({ id: e, sortIndex: Date.now().toString() }),
-                Z = (e, t) => (t && t.entities ? [(0, m.dP)(t.entities)] : []),
+                Z = (e, t) => (t && t.entities ? [(0, b.dP)(t.entities)] : []),
                 N = (0, r.P1)(
                     D.select,
                     (e) => e,
@@ -712,12 +711,12 @@
                     addLocalMediaId:
                         ({ listId: e, mediaId: t }) =>
                         (i, r, { api: n }) => {
-                            i((0, m.dP)({ lists: { [e]: { mediaId: t } } }));
+                            i((0, b.dP)({ lists: { [e]: { mediaId: t } } }));
                         },
                     createList:
                         (e) =>
                         (t, i, { api: r, featureSwitches: n }) =>
-                            b
+                            m
                                 ._O(t, { request: r.withEndpoint(a.ZP).createList, params: e })({ actionTypes: D.actionTypes.CREATE, context: "CREATE_LIST" }, (e) => {
                                     const t = (0, T._h)(i());
                                     if (e && t) {
@@ -725,7 +724,7 @@
                                             a = R(r),
                                             s = (0, v.Z)(t, t),
                                             d = n.isTrue("responsive_web_timeline_relay_lists_management_enabled");
-                                        return (0, o.Z)([e.entities && (0, m.dP)(e.entities), s.injectEntry(a), ...(0, g.s8)(d, i, g.Pq.ownedSubscribedList, r)]);
+                                        return (0, o.Z)([e.entities && (0, b.dP)(e.entities), s.injectEntry(a), ...(0, g.s8)(d, i, g.Pq.ownedSubscribedList, r)]);
                                     }
                                     return [];
                                 })
@@ -742,7 +741,7 @@
                                     if (i) {
                                         r([{ type: C.SUCCESS }, { type: O.REQUEST }]);
                                         const e = (e) => Z(0, e);
-                                        return b._O(r, { request: o.withEndpoint(a.ZP).editBannerImage, params: { listId: t, mediaId: i } })({ actionTypes: D.actionTypes.OPTIMISTIC_UPDATE, context: "EDIT_LIST_MEDIA" }, e);
+                                        return m._O(r, { request: o.withEndpoint(a.ZP).editBannerImage, params: { listId: t, mediaId: i } })({ actionTypes: D.actionTypes.OPTIMISTIC_UPDATE, context: "EDIT_LIST_MEDIA" }, e);
                                     }
                                     return r({ type: C.FAILURE }), Promise.reject(new Error("List media upload failed - no uploadId"));
                                 },
@@ -807,14 +806,14 @@
             const l = Object.freeze({ REQUEST: "rweb/lists/FETCH_LISTMEMBERSHIPS_REQUEST", SUCCESS: "rweb/lists/FETCH_LISTMEMBERSHIPS_SUCCESS", FAILURE: "rweb/lists/FETCH_LISTMEMBERSHIPS_FAILURE" }),
                 u = "rweb/lists/LISTMEMBERSHIPS_ADD_UPDATE",
                 p = "rweb/lists/LISTMEMBERSHIPS_REMOVE_UPDATE",
-                b = "listMemberships",
-                m = [],
+                m = "listMemberships",
+                b = [],
                 S = Object.freeze({}),
                 E = Object.freeze({ data: { lists: [] }, error: null, fetchStatus: { [c.Yj.BOTTOM]: s.ZP.NONE, [c.Yj.TOP]: s.ZP.NONE } });
-            const f = (e, t) => e[b][t],
+            const f = (e, t) => e[m][t],
                 _ = (e, t) => {
                     const i = f(e, t);
-                    return i?.data?.lists || m;
+                    return i?.data?.lists || b;
                 },
                 y = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
                 h = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
@@ -842,7 +841,7 @@
                         : Promise.resolve();
                 };
             o.Z.register({
-                [b]: function (e = S, t) {
+                [m]: function (e = S, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case l.REQUEST: {
@@ -904,9 +903,9 @@
                             const t = { tweetId: i, conversationId: p };
                             return (0, n.ZP)(`Pinned Replies: ${e} called with insufficient data.`, { extra: t }), Promise.resolve({ error: null, success: !1 });
                         }
-                        const b = (0, o._O)(s, { params: { conversationId: p, tweetId: u.id_str }, request: (e) => l(e).then(({ success: e }) => ({ error: null, success: e })) });
+                        const m = (0, o._O)(s, { params: { conversationId: p, tweetId: u.id_str }, request: (e) => l(e).then(({ success: e }) => ({ error: null, success: e })) });
                         return Promise.resolve()
-                            .then(() => b({ actionTypes: t, context: `PINNED_REPLIES_${e}` }))
+                            .then(() => m({ actionTypes: t, context: `PINNED_REPLIES_${e}` }))
                             .catch((e) => ({ error: e, success: !1 }));
                     };
             }
@@ -948,10 +947,10 @@
             const l = Object.freeze({ pinnedLists: "pinnedLists", ownedSubscribedList: "ownedSubscribedList" }),
                 u = (e, t) => `${e}-list-${t}`,
                 p = (e, t, i = d.P.List, r = Date.now().toString()) => s.WE({ id: e, customEntryId: t, displayType: i, sortIndex: r });
-            function b(e) {
+            function m(e) {
                 return e.startsWith("pinned-list-module") || e.startsWith("pinnedListModule");
             }
-            function m(e) {
+            function b(e) {
                 return e.startsWith("owned-subscribed-list-module") || e.startsWith("ownedSubscribedListModule");
             }
             const S = (e) => (e ? (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { query: r.Z, variables: ({ count: e, cursor: t }, i) => ({ count: e, cursor: "string" == typeof t ? t : void 0, isListMemberTargetUserId: "0", timelineId: "listsManagementPage", ...(0, o.d)(i.apiClient.featureSwitches) }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" }) : (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchListsManagementPageTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" })),
@@ -962,7 +961,7 @@
                     a = S(e),
                     s = a.selectEntries(o),
                     c = i === l.pinnedLists,
-                    E = c ? b : m,
+                    E = c ? m : b,
                     f = s.find(({ entryId: e }) => E(e));
                 if (f) {
                     const e = u(f.entryId, r),
@@ -977,7 +976,7 @@
                     o = t(),
                     a = S(e),
                     s = a.selectEntries(o),
-                    d = i === l.pinnedLists ? b : m,
+                    d = i === l.pinnedLists ? m : b,
                     c = s.find(({ entryId: e }) => d(e));
                 if (c) {
                     const e = u(c.entryId, r);
@@ -1051,8 +1050,8 @@
                 l = i(293115),
                 u = i(644829),
                 p = i(750085),
-                b = i(218951);
-            const m = () => (0, b.Z)({ timelineId: "video", network: { getEndpoint: (e) => e.withEndpoint(u.Z).fetchMediaTabVideoMixer, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: p.Z, context: "FETCH_MEDIA_TAB_VIDEO_TIMELINE", perfKey: "video" });
+                m = i(218951);
+            const b = () => (0, m.Z)({ timelineId: "video", network: { getEndpoint: (e) => e.withEndpoint(u.Z).fetchMediaTabVideoMixer, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: p.Z, context: "FETCH_MEDIA_TAB_VIDEO_TIMELINE", perfKey: "video" });
             var S = i(769471),
                 E = i(674530),
                 f = i(367879),
@@ -1063,7 +1062,7 @@
                 g = { page: "media" };
             function A({ history: e }) {
                 const t = !(0, c.ZP)(),
-                    i = r.useMemo(() => m(), []),
+                    i = r.useMemo(() => b(), []),
                     n = t ? r.createElement(o.Z, { style: I.icon }) : void 0;
                 return r.createElement(l.nO, { namespace: g }, r.createElement(s.Z, { locationKey: g.page }, r.createElement(a.Z, { centeredLogo: n, history: e, isFullWidth: !0, primaryContent: r.createElement(d.Z, { entryConfiguration: T, module: i, title: "Video Screen" }), sidebarContent: null })));
             }
@@ -1071,4 +1070,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-e4e3d8bb.019359da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-e4e3d8bb.375485ca.js.map

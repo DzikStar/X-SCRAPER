@@ -287,7 +287,7 @@
                 w = ({ user: e, viewer: t }) => {
                     const r = l()(v, e),
                         n = l()(y, t),
-                        { name: a, screen_name: s } = r?.legacy || {},
+                        { name: a, screen_name: s } = r?.core || {},
                         { image_url: p } = r?.avatar ?? {},
                         { protected: d } = r?.privacy || {},
                         { verified: m } = r.verification || {},
@@ -335,7 +335,7 @@
                     });
                     const g = p()(x, a),
                         h = p()(B, i),
-                        { screen_name: I } = g.legacy ?? {},
+                        { screen_name: I } = g.core ?? {},
                         { image_url: L } = g.avatar ?? {},
                         T = (0, _.fJ)(h),
                         $ = (0, _.NP)(h, "description");
@@ -405,7 +405,7 @@
                     });
                     const g = p()(x, a),
                         h = p()(B, i),
-                        { name: I } = g.legacy ?? {},
+                        { name: I } = g.core ?? {},
                         { image_url: L } = g.avatar ?? {},
                         T = (0, _.JG)(h),
                         $ = (0, _.NP)(h, "creator_intro");
@@ -699,7 +699,7 @@
                             F = (0, D.IH)(T),
                             N = (0, D.Ex)(T) ?? "offer2",
                             H = T.avatar?.image_url ?? void 0,
-                            O = T.legacy?.screen_name ?? void 0,
+                            O = T.core?.screen_name ?? void 0,
                             { new_price: j, price_change: U } = T.super_follow_pending_price_change || {},
                             R = (0, Y.Eo)(N, I, S),
                             W = (0, Y.Eo)(j || "", I, S),
@@ -941,4 +941,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-63cb1cc4.bcba508a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-63cb1cc4.375e6b0a.js.map

@@ -7,8 +7,8 @@
             n(543673), n(240753), n(128399);
             var a = n(395337),
                 o = n(202784),
-                i = (n(585488), n(516951)),
-                r = n(952793),
+                r = (n(585488), n(516951)),
+                i = n(952793),
                 s = n(16222),
                 c = n(125363),
                 l = n(919022),
@@ -19,7 +19,7 @@
             function p(e) {
                 return (function (e) {
                     if (!e) return;
-                    const t = (0, s.o)(() => new URL(e), i.Z);
+                    const t = (0, s.o)(() => new URL(e), r.Z);
                     if (!t || !m.includes(t.host)) return;
                     const n = t.pathname.slice(1).toLowerCase();
                     return v[n];
@@ -31,13 +31,13 @@
                 b = a.Z;
             function g() {
                 const e = (0, u.p)(b, {}),
-                    t = (0, r.hC)("spaces_conference_enabled");
+                    t = (0, i.hC)("spaces_conference_enabled");
                 return o.useMemo(() => {
                     const n = e.affiliations?.affiliated_account_ids_results,
                         a = (
                             n?.flatMap(({ rest_id: e, result: t }) => {
                                 if ("User" !== t?.__typename) return [];
-                                return [{ name: t.legacy.name, id: e }];
+                                return [{ name: t.core.name, id: e }];
                             }) ?? []
                         ).filter(({ id: e }) => f.includes(e));
                     return t && !a.some(({ id: e }) => "783214" === e) ? [{ id: "783214", name: "X" }, ...a] : a;
@@ -48,10 +48,10 @@
             n.d(t, { N: () => s });
             var a = n(789990),
                 o = (n(585488), n(351743)),
-                i = n.n(o);
-            const r = a.Z,
+                r = n.n(o);
+            const i = a.Z,
                 s = () => {
-                    const [e] = i()(r);
+                    const [e] = r()(i);
                     return (t) => {
                         e({ variables: { conversationId: t } }).dispose();
                     };
@@ -61,8 +61,8 @@
             n.d(t, { _g: () => U, fK: () => T });
             var a = n(807896),
                 o = (n(136728), n(202784)),
-                i = n(400752),
-                r = n(565058),
+                r = n(400752),
+                i = n(565058),
                 s = n(107267),
                 c = n(154003),
                 l = n(811176),
@@ -88,7 +88,7 @@
                 const t = (0, C.si)(),
                     n = o.useContext(U),
                     a = e.conversationId ?? n,
-                    i = (function (e) {
+                    r = (function (e) {
                         return (0, b.v9)((t) => {
                             if (!e) return !0;
                             const n = g.selectConversation(t, e)?.data,
@@ -97,19 +97,19 @@
                             return !a || (1 === a.length && a[0] === o);
                         });
                     })(a);
-                if (t.length && a && !i) return o.createElement(o.Suspense, { fallback: A }, o.createElement(k, { conversationId: a }));
+                if (t.length && a && !r) return o.createElement(o.Suspense, { fallback: A }, o.createElement(k, { conversationId: a }));
             }
             const A = o.createElement(O, null);
             function k({ conversationId: e }) {
-                (0, i.Dv)(N);
-                const t = (0, i.b9)(N),
+                (0, r.Dv)(N);
+                const t = (0, r.b9)(N),
                     n = (0, s.useHistory)(),
-                    r = (0, C.si)(),
-                    l = r[0].id,
+                    i = (0, C.si)(),
+                    l = i[0].id,
                     u = o.useCallback(() => {
                         t({ conversationId: e, conferenceAffiliateId: l, history: n });
                     }, [l, e, t, n]),
-                    d = r.length > 1 ? { renderMenu: Z(e) } : { onPress: u };
+                    d = i.length > 1 ? { renderMenu: Z(e) } : { onPress: u };
                 return o.createElement(c.ZP, (0, a.Z)({ "aria-label": E, hoverLabel: x, icon: S }, d, { type: "primaryText" }));
             }
             function O() {
@@ -119,7 +119,7 @@
             function w({ conversationId: e, onClose: t }) {
                 const n = (function (e) {
                     const t = (0, C.si)(),
-                        [, n] = (0, i.KO)(N),
+                        [, n] = (0, r.KO)(N),
                         a = (0, s.useHistory)();
                     return t.map(({ id: t, name: o }) => ({
                         text: o,
@@ -131,26 +131,26 @@
                 return o.createElement(l.Z, { items: n, onCloseRequested: t, shouldCloseOnClick: !0 });
             }
             const N = (0, v.Y)(async (e, t, n) => {
-                    const { conferenceAffiliateId: a, conversationId: o, history: i } = n,
-                        { title: r, userIds: s } = t(P, o);
-                    if (!r || !s) return;
+                    const { conferenceAffiliateId: a, conversationId: o, history: r } = n,
+                        { title: i, userIds: s } = t(P, o);
+                    if (!i || !s) return;
                     const c = e(f.F6),
-                        { key: l } = await c.scheduleConference({ title: r, attendeesUserIds: s, orgId: a }),
+                        { key: l } = await c.scheduleConference({ title: i, attendeesUserIds: s, orgId: a }),
                         u = `/i/conferences/${l}`,
                         d = `https://x.com${u}`;
-                    await t(I, { conversationId: o, text: `Join the conference: ${d}` }), i.push(u);
+                    await t(I, { conversationId: o, text: `Join the conference: ${d}` }), r.push(u);
                 }),
-                P = (0, r.cn)(null, (e, t, n) => {
+                P = (0, i.cn)(null, (e, t, n) => {
                     const a = e(d.qc).getState(),
                         o = g.selectConversation(a, n)?.data,
-                        i = _.ZP.selectAll(a),
-                        r = g.selectEntries(a),
-                        s = o && (0, p.E5)(o, r, i),
+                        r = _.ZP.selectAll(a),
+                        i = g.selectEntries(a),
+                        s = o && (0, p.E5)(o, i, r),
                         c = s && (0, m.ZP)(s),
                         l = o?.participants.map(({ user_id: e }) => e);
                     return { title: c, userIds: l };
                 });
-            const I = (0, r.cn)(null, (e, t, n) => {
+            const I = (0, i.cn)(null, (e, t, n) => {
                     const a = e(d.qc),
                         o = (0, y._h)(a.getState());
                     return a.dispatch(h.bG({ senderId: o, ...n }));
@@ -162,8 +162,8 @@
             n(136728);
             var a = n(202784),
                 o = n(325686),
-                i = n(107267),
-                r = n(731708),
+                r = n(107267),
+                i = n(731708),
                 s = n(190286),
                 c = n(392237),
                 l = n(332920),
@@ -192,17 +192,17 @@
             const Z = u().ccf2f24e,
                 w = u().ib3fe8aa,
                 N = ({ isGroup: e, onBlockClick: t, onReportClick: n, requestorScreenName: o }) => {
-                    const i = { type: "destructiveOutlined" },
-                        r = a.createElement(M.ZP, (0, A.Z)({}, i, { role: "button" }), w),
-                        s = a.createElement(M.ZP, (0, A.Z)({}, i, { onPress: n }), Z),
-                        c = a.useCallback((e, i) => a.createElement(O.ZP, { dismiss: e, flatBorders: "sheet" === i, onBlockClick: t, onReportClick: n, requestorScreenName: o, showBlock: !0, showCancel: "sheet" === i }), [t, n, o]);
-                    return e ? s : a.createElement(k.Z, { renderContent: c }, r);
+                    const r = { type: "destructiveOutlined" },
+                        i = a.createElement(M.ZP, (0, A.Z)({}, r, { role: "button" }), w),
+                        s = a.createElement(M.ZP, (0, A.Z)({}, r, { onPress: n }), Z),
+                        c = a.useCallback((e, r) => a.createElement(O.ZP, { dismiss: e, flatBorders: "sheet" === r, onBlockClick: t, onReportClick: n, requestorScreenName: o, showBlock: !0, showCancel: "sheet" === r }), [t, n, o]);
+                    return e ? s : a.createElement(k.Z, { renderContent: c }, i);
                 },
                 P = (e) => {
                     const t = a.useContext(d.rC),
                         { viewerUserId: n } = t,
-                        i = (0, T.yu)();
-                    return a.createElement(o.Z, { style: I.actionsContainer }, a.createElement(M.ZP, { onPress: () => e.onAccept(), size: "medium", style: [I.actionFullWidth, I.actionMarginBottom], type: "primaryOutlined" }, e.acceptButtonText), a.createElement(o.Z, { style: i ? I.actionFullWidth : [I.actionHalfWidth, I.actionMarginEnd] }, a.createElement(N, { isGroup: e.isGroup, onBlockClick: () => e.onBlock(), onReportClick: () => e.onReport(), requestorScreenName: (0, h.vm)(e.conversation, n).screenName })), a.createElement(M.ZP, { onPress: () => e.onLeave(), size: "medium", style: i ? [I.actionFullWidth, I.actionMarginTop] : [I.actionHalfWidth, I.actionMarginStart], type: "destructiveOutlined" }, e.declineButtonText));
+                        r = (0, T.yu)();
+                    return a.createElement(o.Z, { style: I.actionsContainer }, a.createElement(M.ZP, { onPress: () => e.onAccept(), size: "medium", style: [I.actionFullWidth, I.actionMarginBottom], type: "primaryOutlined" }, e.acceptButtonText), a.createElement(o.Z, { style: r ? I.actionFullWidth : [I.actionHalfWidth, I.actionMarginEnd] }, a.createElement(N, { isGroup: e.isGroup, onBlockClick: () => e.onBlock(), onReportClick: () => e.onReport(), requestorScreenName: (0, h.vm)(e.conversation, n).screenName })), a.createElement(M.ZP, { onPress: () => e.onLeave(), size: "medium", style: r ? [I.actionFullWidth, I.actionMarginTop] : [I.actionHalfWidth, I.actionMarginStart], type: "destructiveOutlined" }, e.declineButtonText));
                 },
                 I = c.default.create((e) => ({ actionsContainer: { display: "flex", flexWrap: "wrap", flexDirection: "row" }, actionFullWidth: { width: "100%" }, actionHalfWidth: { width: `calc(50% - ${e.spaces.space4})` }, actionMarginEnd: { marginEnd: e.spaces.space4 }, actionMarginStart: { marginStart: e.spaces.space4 }, actionMarginTop: { marginTop: e.spaces.space12 }, actionMarginBottom: { marginBottom: e.spaces.space12 } })),
                 U = u().da878dc0,
@@ -214,8 +214,8 @@
                 G = S((e) => {
                     const { analytics: t, conversation: n } = e,
                         c = a.useContext(d.rC),
-                        l = (0, i.useHistory)(),
-                        u = (0, i.useLocation)(),
+                        l = (0, r.useHistory)(),
+                        u = (0, r.useLocation)(),
                         [y, _] = a.useState(!1),
                         [C, E] = a.useState(!1),
                         x = a.useCallback(() => ({ items: [{ conversation_type: n.type === b.eD.GROUP ? g.NK.GROUP : g.NK.ONE_TO_ONE }] }), [n.type]),
@@ -236,11 +236,11 @@
                         },
                         A = () => {
                             const { conversationId: t, inboxType: a, leaveConversation: o } = e,
-                                i = n.type === b.eD.GROUP ? "leave_group" : "delete_thread",
-                                r = n?.participants.length || 0,
+                                r = n.type === b.eD.GROUP ? "leave_group" : "delete_thread",
+                                i = n?.participants.length || 0,
                                 s = u?.state?.position || 0,
-                                c = { conversation_type: n?.type === b.eD.GROUP ? g.NK.GROUP : g.NK.ONE_TO_ONE, conversation_id: t, conversation_participant_count: r, position: s, inbox_type: (0, h.e4)(a), entry_point: g.eR.REQUEST_ACTION_SHEET };
-                            _(!1), o({ conversationId: t }), S(i, c), k();
+                                c = { conversation_type: n?.type === b.eD.GROUP ? g.NK.GROUP : g.NK.ONE_TO_ONE, conversation_id: t, conversation_participant_count: i, position: s, inbox_type: (0, h.e4)(a), entry_point: g.eR.REQUEST_ACTION_SHEET };
+                            _(!1), o({ conversationId: t }), S(r, c), k();
                         },
                         k = () => {
                             const { inboxType: t } = e;
@@ -267,7 +267,7 @@
                             { style: V.root },
                             ((e) => {
                                 const { viewerUserId: t } = c;
-                                return a.createElement(r.ZP, { style: V.copy }, e ? B : D({ senderName: (0, h.vm)(n, t).name }));
+                                return a.createElement(i.ZP, { style: V.copy }, e ? B : D({ senderName: (0, h.vm)(n, t).name }));
                             })(w),
                             a.createElement(P, {
                                 acceptButtonText: U,
@@ -276,10 +276,10 @@
                                 isGroup: w,
                                 onAccept: () => {
                                     (() => {
-                                        const { acceptConversation: t, analytics: a, conversationId: o, inboxType: i } = e,
-                                            r = n?.participants.length || 0,
+                                        const { acceptConversation: t, analytics: a, conversationId: o, inboxType: r } = e,
+                                            i = n?.participants.length || 0,
                                             s = u?.state?.position || 0;
-                                        o && (t(o), a.scribe({ action: "accept", data: { conversation_id: o, conversation_type: n.type === b.eD.GROUP ? g.NK.GROUP : g.NK.ONE_TO_ONE, conversation_participant_count: r, entry_point: g.eR.REQUEST_ACTION_SHEET, inbox_type: (0, h.e4)(i), position: s } }));
+                                        o && (t(o), a.scribe({ action: "accept", data: { conversation_id: o, conversation_type: n.type === b.eD.GROUP ? g.NK.GROUP : g.NK.ONE_TO_ONE, conversation_participant_count: i, entry_point: g.eR.REQUEST_ACTION_SHEET, inbox_type: (0, h.e4)(r), position: s } }));
                                     })();
                                 },
                                 onBlock: () => {
@@ -314,42 +314,42 @@
             n(136728);
             var a = n(461756),
                 o = n(392237),
-                i = n(912021),
-                r = n(503196);
+                r = n(912021),
+                i = n(503196);
             const s = function (e, t) {
                     return c(e, a.Z.reducedMotionEnabled, t);
                 },
-                c = (0, i.Z)(function (e, t, n) {
-                    const i = (function (e) {
-                        const { DMUserAvatarSizePx: t, DMUserAvatarSpacerPx: n } = (0, r.Z)(o.default.theme.scale),
-                            i = d[o.default.theme.scale],
-                            s = l / i,
+                c = (0, r.Z)(function (e, t, n) {
+                    const r = (function (e) {
+                        const { DMUserAvatarSizePx: t, DMUserAvatarSpacerPx: n } = (0, i.Z)(o.default.theme.scale),
+                            r = d[o.default.theme.scale],
+                            s = l / r,
                             c = u / t,
                             v = u / 2,
                             f = u - v,
                             b = u - v - n;
-                        return { cssTransition: a.Z.reducedMotionEnabled ? {} : { transition: `transform ${m}, opacity ${m}` }, messageContainer: { base: { transform: [{ translateX: 0 }] }, active: { sent: { transform: [{ translateX: (e ? 1 : -1) * f }] }, received: { transform: [{ translateX: (e ? -1 : 1) * b }] } } }, actionsContainer: { base: { transform: [{ translateX: 0 }] }, active: { sent: { transform: [{ translateX: (e ? 1 : -1) * p[o.default.theme.scale] }] }, received: { transform: [{ translateX: (e ? -1 : 1) * (p[o.default.theme.scale] + b) - v }] } } }, voiceMessage: { container: { base: { height: i }, active: { height: l } }, base: { height: i, transform: [{ scale: 1 }] }, active: { base: { transform: [{ scale: s }] }, sent: { paddingEnd: v / s, transformOrigin: e ? "bottom left" : "bottom right" }, received: { paddingStart: v / s, transformOrigin: e ? "bottom right" : "bottom left" } } }, userAvatar: { base: { transform: [{ scale: 1 }] }, sent: { transformOrigin: e ? "bottom left" : "bottom right" }, received: { transformOrigin: e ? "bottom right" : "bottom left" }, active: { opacity: 1, pointerEvents: "all", transform: [{ scale: c }] }, visuallyHidden: { opacity: 0, pointerEvents: "none" } } };
+                        return { cssTransition: a.Z.reducedMotionEnabled ? {} : { transition: `transform ${m}, opacity ${m}` }, messageContainer: { base: { transform: [{ translateX: 0 }] }, active: { sent: { transform: [{ translateX: (e ? 1 : -1) * f }] }, received: { transform: [{ translateX: (e ? -1 : 1) * b }] } } }, actionsContainer: { base: { transform: [{ translateX: 0 }] }, active: { sent: { transform: [{ translateX: (e ? 1 : -1) * p[o.default.theme.scale] }] }, received: { transform: [{ translateX: (e ? -1 : 1) * (p[o.default.theme.scale] + b) - v }] } } }, voiceMessage: { container: { base: { height: r }, active: { height: l } }, base: { height: r, transform: [{ scale: 1 }] }, active: { base: { transform: [{ scale: s }] }, sent: { paddingEnd: v / s, transformOrigin: e ? "bottom left" : "bottom right" }, received: { paddingStart: v / s, transformOrigin: e ? "bottom right" : "bottom left" } } }, userAvatar: { base: { transform: [{ scale: 1 }] }, sent: { transformOrigin: e ? "bottom left" : "bottom right" }, received: { transformOrigin: e ? "bottom right" : "bottom left" }, active: { opacity: 1, pointerEvents: "all", transform: [{ scale: c }] }, visuallyHidden: { opacity: 0, pointerEvents: "none" } } };
                     })(n);
                     return {
                         actionsContainer: function ({ isSent: e, isVoiceMessageActive: t }) {
-                            const n = [i.cssTransition, i.actionsContainer.base];
-                            return t && n.push(e ? i.actionsContainer.active.sent : i.actionsContainer.active.received), n;
+                            const n = [r.cssTransition, r.actionsContainer.base];
+                            return t && n.push(e ? r.actionsContainer.active.sent : r.actionsContainer.active.received), n;
                         },
                         messageContainer: function ({ isSent: e, isVoiceMessageActive: t }) {
-                            const n = [i.cssTransition, i.messageContainer.base];
-                            return t && n.push(e ? i.messageContainer.active.sent : i.messageContainer.active.received), n;
+                            const n = [r.cssTransition, r.messageContainer.base];
+                            return t && n.push(e ? r.messageContainer.active.sent : r.messageContainer.active.received), n;
                         },
                         voiceMessageContainer: function ({ isSent: e, isVoiceMessageActive: t }) {
-                            const n = [i.cssTransition, i.voiceMessage.container.base];
-                            return t && n.push(i.voiceMessage.container.active), n;
+                            const n = [r.cssTransition, r.voiceMessage.container.base];
+                            return t && n.push(r.voiceMessage.container.active), n;
                         },
                         voiceMessage: function ({ isSent: e, isVoiceMessageActive: t }) {
-                            const n = [i.cssTransition, i.voiceMessage.base];
-                            return t && (n.push(i.voiceMessage.active.base), n.push(e ? i.voiceMessage.active.sent : i.voiceMessage.active.received)), n;
+                            const n = [r.cssTransition, r.voiceMessage.base];
+                            return t && (n.push(r.voiceMessage.active.base), n.push(e ? r.voiceMessage.active.sent : r.voiceMessage.active.received)), n;
                         },
                         userAvatar: function ({ isSent: e, isVoiceMessageActive: t }) {
-                            const n = [i.cssTransition, i.userAvatar.base, e ? i.userAvatar.sent : i.userAvatar.received];
-                            return t ? n.push(i.userAvatar.active) : e && n.push(i.userAvatar.visuallyHidden), n;
+                            const n = [r.cssTransition, r.userAvatar.base, e ? r.userAvatar.sent : r.userAvatar.received];
+                            return t ? n.push(r.userAvatar.active) : e && n.push(r.userAvatar.visuallyHidden), n;
                         },
                     };
                 });
@@ -363,13 +363,13 @@
             n.d(t, { kr: () => g, Eg: () => b });
             var a = n(202784),
                 o = n(443781),
-                i = n(593953),
-                r = n(135328);
+                r = n(593953),
+                i = n(135328);
             function s() {
                 const e = a.useContext(g),
                     [t, n] = e.activeVoiceMessage,
                     [, o] = e.playerApi,
-                    [, i] = e.playerState,
+                    [, r] = e.playerState,
                     [, s] = t;
                 const c = {
                     media: s,
@@ -377,9 +377,9 @@
                         n([null, null]), e.scribeAction && e.scribeAction.complete();
                     },
                     onPlayerApi: o,
-                    onPlayerState: i,
+                    onPlayerState: r,
                 };
-                return a.createElement(r.Z, c);
+                return a.createElement(i.Z, c);
             }
             n(571372);
             var c = n(481399),
@@ -394,8 +394,8 @@
                             return a.useMemo(() => {
                                 const t = { page: "messages", section: "thread", component: "message", element: "voice" };
                                 function n({ action: e, component: n = t.component }) {
-                                    const { element: a, page: o, section: i } = t;
-                                    return { page: o, section: i, component: n, element: a, action: e };
+                                    const { element: a, page: o, section: r } = t;
+                                    return { page: o, section: r, component: n, element: a, action: e };
                                 }
                                 const a = (t, a) => (a ? (a.data ? e.scribe({ ...n({ action: t }), data: a.data }) : e.scribe({ ...n({ action: t, component: p(a) }) })) : e.scribe({ ...n({ action: t }) }));
                                 return { impression: (e) => a("impression", e), report: (e) => a("report", e), play: (e) => a("play", e), pause: () => a("pause"), complete: () => a("complete") };
@@ -416,20 +416,20 @@
             }
             function b(e) {
                 const { featureSwitches: t } = a.useContext(o.rC);
-                return (0, i.LK)(t) ? a.createElement(u, null, e.children, a.createElement(s, null)) : e.children;
+                return (0, r.LK)(t) ? a.createElement(u, null, e.children, a.createElement(s, null)) : e.children;
             }
             const g = v;
         },
         956783: (e, t, n) => {
-            n.d(t, { Q: () => o, R: () => i });
+            n.d(t, { Q: () => o, R: () => r });
             var a = n(340130);
             const o = (e, t, n, o) => {
                     e.scribe({ ...e.contextualScribeNamespace, element: t, action: "send_dm", data: { conversation_id: n.conversation_id, conversation_participant_count: n?.participants ? n.participants.length : 0, conversation_type: o ? a.NK.GROUP : a.NK.ONE_TO_ONE } });
                 },
-                i = (e, t, n, o) => {
+                r = (e, t, n, o) => {
                     e.scribe({ ...e.contextualScribeNamespace, element: t, action: "send_dm", data: { conversation_id: n, conversation_participant_count: o ? o.length + 1 : 0, conversation_type: a.NK.GROUP } });
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6c5c183a.2fa4ab8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-6c5c183a.4b248fda.js.map

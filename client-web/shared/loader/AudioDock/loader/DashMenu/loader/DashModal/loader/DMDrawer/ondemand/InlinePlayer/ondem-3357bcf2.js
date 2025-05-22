@@ -40,7 +40,7 @@
                         case "livevideo":
                             t.scribe({ action: "impression", element: "livevideo_ring" });
                     }
-                }, [l]);
+                }, [t, l]);
                 const b = a.useCallback((e) => a.createElement(u.Z.Default, (0, n.Z)({}, e, { type: l })), [l]);
                 return a.createElement(
                     m.default,
@@ -578,4 +578,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2.37eba27a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2.b288d89a.js.map

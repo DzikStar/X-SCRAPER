@@ -34,13 +34,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: a, isFullWidth: s, isLarge: c, leftControl: u, middleControl: h, position: p, rightControl: m, secondaryBar: b, style: g, subtitle: C, title: f, titleDomId: E, titleIconCell: y, titleIconCellSize: _, withBackground: S, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: a, isFullWidth: s, isLarge: c, leftControl: u, middleControl: h, position: p, rightControl: m, secondaryBar: b, style: g, subtitle: C, title: f, titleDomId: E, titleIconCell: _, titleIconCellSize: y, withBackground: S, withWideContainer: w } = this.props,
                         { isModal: L } = this.context,
                         Z = a ? u : o.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         B = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!S, L, !!b);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: Z, middleControl: h, position: d(p, L, r), rightControl: m, style: g, subtitle: C, title: f, titleDomId: E, titleIconCell: y, titleIconCellSize: _, withBackground: B, withWideContainer: w }), b || null);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: Z, middleControl: h, position: d(p, L, r), rightControl: m, style: g, subtitle: C, title: f, titleDomId: E, titleIconCell: _, titleIconCellSize: y, withBackground: B, withWideContainer: w }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -72,7 +72,7 @@
         },
         253493: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => _ });
             var o = n(202784),
                 r = n(107267),
                 a = n(791632),
@@ -108,21 +108,21 @@
                     return o.createElement(o.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: r, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: d, middleControl: m, onBackClick: b, rightControl: g, screenType: f, searchBoxOptions: E, secondaryBar: y, showSubtitleOnRoot: _, showSubtitleOnWideDetail: S, subtitle: w, title: L, titleIconCell: Z, titleIconCellSize: B, withDetailOpen: A, withSearchBox: x, withTweetButton: k, withWideContainer: D } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: r, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: d, middleControl: m, onBackClick: b, rightControl: g, screenType: f, searchBoxOptions: E, secondaryBar: _, showSubtitleOnRoot: y, showSubtitleOnWideDetail: S, subtitle: w, title: L, titleIconCell: Z, titleIconCellSize: B, withDetailOpen: A, withSearchBox: x, withTweetButton: k, withWideContainer: D } = this.props,
                         T = "root" === f,
                         P = "secondaryRoot" === f,
                         U = "primaryDetail" === f,
-                        F = (U && S) || (T && _),
-                        v = T || (U && e),
-                        I = T ? u.ey : U ? u.vX : void 0,
-                        O = o.createElement(s.Z, { style: C.appBarContainer }, o.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: v, history: c, leftControl: d, middleControl: m, onBackClick: b, rightControl: g, secondaryBar: y, style: r, subtitle: F ? w : void 0, title: L, titleDomId: I, titleIconCell: Z, titleIconCellSize: B, withWideContainer: D })),
+                        F = (U && S) || (T && y),
+                        I = T || (U && e),
+                        v = T ? u.ey : U ? u.vX : void 0,
+                        O = o.createElement(s.Z, { style: C.appBarContainer }, o.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: I, history: c, leftControl: d, middleControl: m, onBackClick: b, rightControl: g, secondaryBar: _, style: r, subtitle: F ? w : void 0, title: L, titleDomId: v, titleIconCell: Z, titleIconCellSize: B, withWideContainer: D })),
                         M = T || (P && A) ? null : o.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: b, rightControl: g, searchBoxOptions: E, subtitle: w, title: L, withSearchBox: x, withTweetButton: k });
                     return o.createElement(o.Fragment, null, M, O);
                 }
             }
             (f.contextType = m.Z), (f.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
             const E = (0, d.ZP)(f),
-                y = (e) => {
+                _ = (e) => {
                     const t = (0, r.useHistory)();
                     return (0, a.HD)(t) ? e.children || null : o.createElement(E, e);
                 };
@@ -194,23 +194,23 @@
                 C = n(312771);
             const f = "accountTaxonomy",
                 E = r()({ account_label: { disableStatus: C.ZP.NONE, fetchStatus: C.ZP.NONE, managed_label: void 0 } }),
-                y = Object.freeze({ REQUEST: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_FAILURE" }),
-                _ = Object.freeze({ REQUEST: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE" });
+                _ = Object.freeze({ REQUEST: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/FETCH_USER_ACCOUNT_LABEL_FAILURE" }),
+                y = Object.freeze({ REQUEST: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_REQUEST", SUCCESS: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_SUCCESS", FAILURE: "rweb/accountTaxonomy/DISABLE_USER_ACCOUNT_LABEL_FAILURE" });
             b.Z.register({
                 [f]: function (e = E, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case y.REQUEST:
-                            return { ...e, account_label: { ...e.account_label, fetchStatus: C.ZP.LOADING } };
-                        case y.SUCCESS:
-                            return { ...e, account_label: { ...t?.payload?.user?.result?.account_label, fetchStatus: C.ZP.LOADED } };
-                        case y.FAILURE:
-                            return { ...e, account_label: { ...e.account_label, fetchStatus: C.ZP.FAILED } };
                         case _.REQUEST:
-                            return { ...e, account_label: { ...e.account_label, disableStatus: C.ZP.LOADING } };
+                            return { ...e, account_label: { ...e.account_label, fetchStatus: C.ZP.LOADING } };
                         case _.SUCCESS:
-                            return { ...e, account_label: { managed_label: void 0, fetchStatus: C.ZP.LOADED, disableStatus: C.ZP.LOADED } };
+                            return { ...e, account_label: { ...t?.payload?.user?.result?.account_label, fetchStatus: C.ZP.LOADED } };
                         case _.FAILURE:
+                            return { ...e, account_label: { ...e.account_label, fetchStatus: C.ZP.FAILED } };
+                        case y.REQUEST:
+                            return { ...e, account_label: { ...e.account_label, disableStatus: C.ZP.LOADING } };
+                        case y.SUCCESS:
+                            return { ...e, account_label: { managed_label: void 0, fetchStatus: C.ZP.LOADED, disableStatus: C.ZP.LOADED } };
+                        case y.FAILURE:
                             return { ...e, account_label: { ...e.account_label, disableStatus: C.ZP.FAILED } };
                         default:
                             return e;
@@ -223,11 +223,11 @@
                 Z =
                     (e) =>
                     (t, n, { api: o }) =>
-                        (0, g._O)(t, { request: o.withEndpoint(m).fetchUserAccountLabel, params: { userId: e } })({ actionTypes: y, context: "FETCH_USER_ACCOUNT_LABEL" }),
+                        (0, g._O)(t, { request: o.withEndpoint(m).fetchUserAccountLabel, params: { userId: e } })({ actionTypes: _, context: "FETCH_USER_ACCOUNT_LABEL" }),
                 B =
                     () =>
                     (e, t, { api: n }) =>
-                        (0, g._O)(e, { request: n.withEndpoint(m).disableUserAccountLabel, params: {} })({ actionTypes: _, context: "DISABLE_USER_ACCOUNT_LABEL" });
+                        (0, g._O)(e, { request: n.withEndpoint(m).disableUserAccountLabel, params: {} })({ actionTypes: y, context: "DISABLE_USER_ACCOUNT_LABEL" });
         },
         82999: (e, t, n) => {
             "use strict";
@@ -249,8 +249,8 @@
                 C = n(47086),
                 f = n(293723),
                 E = n(290402),
-                y = n(443781),
-                _ = n(652904),
+                _ = n(443781),
+                y = n(652904),
                 S = n(293115),
                 w = n(312771),
                 L = n(264922),
@@ -267,12 +267,12 @@
                 P = g().a2981062,
                 U = g().aff4540e,
                 F = g().b8b9d100,
-                v = o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, o.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, o.createElement(s.ZP, { link: k, size: "subtext2" }, g().f79acef3))),
-                I = g().e0bc51f6,
+                I = o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, o.createElement(g().I18NFormatMessage, { $i18n: "d79b6b7b" }, o.createElement(s.ZP, { link: k, size: "subtext2" }, g().f79acef3))),
+                v = g().e0bc51f6,
                 O = g().i9028824,
                 M = g().b92190c2,
-                z = g().fb03b39a,
-                R = g().bd51ddfa,
+                R = g().fb03b39a,
+                z = g().bd51ddfa,
                 N = { page: "settings", section: "account_information", component: "automation" },
                 H = { page: "system", section: "message" },
                 V = g().e91c15f6,
@@ -307,8 +307,8 @@
                         (this._handleToggleDisableConfirmation = () => {
                             this.setState({ showDisableConfirmation: !this.state.showDisableConfirmation });
                         }),
-                        (this._renderUnassignedManagingAccountView = () => o.createElement(r.Z, null, o.createElement(l.Z, { description: v, label: F, link: Q }), this.state.showCallout && this._renderCallout())),
-                        (this._renderAssignedManagingAccountView = () => o.createElement(r.Z, null, o.createElement(c.Z, { label: P, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), o.createElement(l.Z, { label: U, link: Q }), this.state.showCallout && this._renderCallout(), o.createElement(u.Z, null), o.createElement(d.Z, { color: "red500", label: I, onPress: this._handleToggleDisableConfirmation }))),
+                        (this._renderUnassignedManagingAccountView = () => o.createElement(r.Z, null, o.createElement(l.Z, { description: I, label: F, link: Q }), this.state.showCallout && this._renderCallout())),
+                        (this._renderAssignedManagingAccountView = () => o.createElement(r.Z, null, o.createElement(c.Z, { label: P, subtext: this.props.managingAccount || "", withBottomBorder: !1 }), o.createElement(l.Z, { label: U, link: Q }), this.state.showCallout && this._renderCallout(), o.createElement(u.Z, null), o.createElement(d.Z, { color: "red500", label: v, onPress: this._handleToggleDisableConfirmation }))),
                         (this._renderDisconnectConfirmation = () => o.createElement(h.Z, { actionLabel: j, graphicDisplayMode: "none", headline: V, onAction: this._handleDisableUserAccountLabel, onClose: this._handleToggleDisableConfirmation, onSecondaryAction: this._handleToggleDisableConfirmation, secondaryActionLabel: G, subtext: W, useBrandedActionButtons: !0, withCloseButton: !0 })),
                         (this._render = () => {
                             const e = this.props.managingAccount ? this._renderAssignedManagingAccountView() : this._renderUnassignedManagingAccountView(),
@@ -335,25 +335,25 @@
                     if ((c && u && l && (this._handleShowCallout(M), this._scribe({ ...N, action: "enabled" })), n !== a))
                         switch (a) {
                             case w.ZP.LOADED:
-                                this._handleShowCallout(z), this._scribe({ ...N, action: "disabled" });
+                                this._handleShowCallout(R), this._scribe({ ...N, action: "disabled" });
                                 break;
                             case w.ZP.FAILED:
-                                this._handleShowCallout(R, !0), this._scribe({ ...H, element: "automation_opt_out_error", action: "view" });
+                                this._handleShowCallout(z, !0), this._scribe({ ...H, element: "automation_opt_out_error", action: "view" });
                         }
                     return e !== this.props || t !== this.state;
                 }
                 render() {
                     const { managingAccountFetchStatus: e } = this.props;
-                    return o.createElement(S.nO, { namespace: N }, o.createElement(_.Z, null, o.createElement(E.Z, { "aria-label": O, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
+                    return o.createElement(S.nO, { namespace: N }, o.createElement(y.Z, null, o.createElement(E.Z, { "aria-label": O, fetchStatus: e, onRequestRetry: this._handleFetchUserAccountLabel, render: this._render })));
                 }
             }
-            q.contextType = y.rC;
+            q.contextType = _.rC;
             const $ = m.default.create((e) => ({ inlineCallout: { paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
                 Y = x(q);
         },
         264922: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => _ });
+            n.d(t, { Z: () => y });
             var o = n(202784),
                 r = n(108362),
                 a = n(420412),
@@ -381,7 +381,7 @@
                         }),
                         (this._render = () => {
                             const { children: e, onSubmit: t, submitDisabled: n, submitLabel: i, submitType: l, withMarginBottom: c } = this.props;
-                            return o.createElement(r.Z, { style: [y.contentRoot, c && y.withMarginBottom] }, e, t ? o.createElement(o.Fragment, null, o.createElement(a.Z, null), o.createElement(r.Z, { style: y.buttonContainer }, o.createElement(s.ZP, { disabled: n, onPress: t, style: y.button, testID: C, type: l }, i))) : null);
+                            return o.createElement(r.Z, { style: [_.contentRoot, c && _.withMarginBottom] }, e, t ? o.createElement(o.Fragment, null, o.createElement(a.Z, null), o.createElement(r.Z, { style: _.buttonContainer }, o.createElement(s.ZP, { disabled: n, onPress: t, style: _.button, testID: C, type: l }, i))) : null);
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
@@ -404,8 +404,8 @@
                 }
             }
             E.defaultProps = { submitLabel: f, submitType: "brandFilled", withMarginBottom: !0 };
-            const y = i.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${i.default.iPhoneOffsetBottom})` } })),
-                _ = g(E);
+            const _ = i.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${i.default.iPhoneOffsetBottom})` } })),
+                y = g(E);
         },
         242454: (e, t, n) => {
             "use strict";
@@ -502,13 +502,13 @@
                 l = n(952428),
                 c = n(392237);
             const u = (e) => {
-                    const { decoration: t, description: n, disabled: u = !1, isActive: h = !1, label: p, link: m, onPress: b, paddingHorizontal: g, renderRightContent: C, role: f = "tab", styleOverride: E, testID: y = "pivot", thumbnail: _, thumbnailSize: S, withoutArrow: w = !1 } = e,
+                    const { decoration: t, description: n, disabled: u = !1, isActive: h = !1, label: p, link: m, onPress: b, paddingHorizontal: g, renderRightContent: C, role: f = "tab", styleOverride: E, testID: _ = "pivot", thumbnail: y, thumbnailSize: S, withoutArrow: w = !1 } = e,
                         L = [d.thumbnailContainer, "medium" === S && d.thumbnailContainerMedium],
                         Z = "string" == typeof p ? o.createElement(i.ZP, null, p) : p,
                         B = "object" == typeof m && m.external && !m.openInSameFrame,
-                        A = n ? ("string" == typeof n ? o.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${y}-description` }, n) : n) : null,
+                        A = n ? ("string" == typeof n ? o.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${_}-description` }, n) : n) : null,
                         x = o.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? c.default.theme.spaces[g] : c.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return o.createElement(l.Z, { "aria-selected": "tab" === f ? h : null, disabled: u, link: u ? void 0 : m, onPress: b, role: f, style: [d.root, x, u && d.disabled, E], testID: y, withInteractiveStyling: !!m || !!b }, o.createElement(r.Z, { style: d.contentContainer }, _ ? o.createElement(r.Z, { style: L }, _) : null, o.createElement(r.Z, { style: d.content }, Z, A), C ? C() : null, (!m && !b) || u || w ? null : B ? o.createElement(a.default, { style: d.icon }) : o.createElement(s.default, { style: d.icon })), t);
+                    return o.createElement(l.Z, { "aria-selected": "tab" === f ? h : null, disabled: u, link: u ? void 0 : m, onPress: b, role: f, style: [d.root, x, u && d.disabled, E], testID: _, withInteractiveStyling: !!m || !!b }, o.createElement(r.Z, { style: d.contentContainer }, y ? o.createElement(r.Z, { style: L }, y) : null, o.createElement(r.Z, { style: d.content }, Z, A), C ? C() : null, (!m && !b) || u || w ? null : B ? o.createElement(a.default, { style: d.icon }) : o.createElement(s.default, { style: d.icon })), t);
                 },
                 d = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -563,20 +563,6 @@
             const l = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } })),
                 c = i;
         },
-        41065: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                r = n(890601),
-                a = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
         424869: (e) => {
             e.exports = function e(t) {
                 return (
@@ -590,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.9ecde3ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.de85f2fa.js.map

@@ -309,8 +309,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
-                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
@@ -377,7 +376,7 @@
                             },
                         ],
                     },
-                    params: { id: "oygnkNdbjZsBNweY1XD4mw", metadata: { features: ["responsive_web_ad_revenue_sharing_total_earnings_enabled"], sliceInfoPath: ["viewer", "user_results", "result", "ad_revenue_sharing_payouts", "slice_info"] }, name: "AdRevShareDashboardScreenQuery", operationKind: "query", text: null },
+                    params: { id: "gRS-1zW8O8Q_783UHeXD2g", metadata: { features: ["responsive_web_ad_revenue_sharing_total_earnings_enabled"], sliceInfoPath: ["viewer", "user_results", "result", "ad_revenue_sharing_payouts", "slice_info"] }, name: "AdRevShareDashboardScreenQuery", operationKind: "query", text: null },
                 };
             g.hash = "bea769b98fcb59dde534cc6601dab50f";
             const p = g;
@@ -634,12 +633,12 @@
                 metadata: null,
                 name: "SuperFollowsApplicationSubmitScreen_user",
                 selections: [
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                     { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "5085d570d3bf4e1443297d10266b983d",
+                hash: "427bb7565bbd7b9363ad0542c5a9fd73",
             };
             const r = l;
         },
@@ -1064,9 +1063,9 @@
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserCore",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "core",
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
@@ -1079,7 +1078,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "639f007e8299fe3ff4d909825dcfb0ba",
+                hash: "3d7506fbcfcae8b8a3f7aa763f8b3c55",
             };
             const r = l;
         },
@@ -1152,9 +1151,9 @@
                                                             {
                                                                 alias: null,
                                                                 args: null,
-                                                                concreteType: "ApiUser",
+                                                                concreteType: "UserCore",
                                                                 kind: "LinkedField",
-                                                                name: "legacy",
+                                                                name: "core",
                                                                 plural: !1,
                                                                 selections: [
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
@@ -1162,7 +1161,6 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                             { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
@@ -1213,7 +1211,7 @@
                             },
                         ],
                     },
-                    params: { id: "jf3spyqzL19w_zYenxYAuA", metadata: {}, name: "SuperFollowsSettingsQuery", operationKind: "query", text: null },
+                    params: { id: "WB5JImlsiHdskinT2dzIMA", metadata: {}, name: "SuperFollowsSettingsQuery", operationKind: "query", text: null },
                 };
             c.hash = "8bf7ec3c12a9cae9fe0ca1768db4b4ec";
             const g = c;
@@ -1567,7 +1565,7 @@
         207070: (e, a, n) => {
             n.d(a, { Z: () => g });
             var l = n(807896),
-                r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UserScreenName_user", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }], type: "User", abstractKey: null, hash: "7f06a4ed2567ecda36b0482367c1b006" };
+                r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UserScreenName_user", selections: [{ alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }], type: "User", abstractKey: null, hash: "c3df4f17e0008e3a1c535b3cd85a7909" };
             const i = r;
             var s = n(202784),
                 t = (n(585488), n(277660)),
@@ -1575,7 +1573,7 @@
                 u = n(601413);
             const d = i,
                 c = ({ user: e, ...a }) => {
-                    const { legacy: n } = o()(d, e);
+                    const { core: n } = o()(d, e);
                     return s.createElement(u.Z, (0, l.Z)({ screenName: n?.screen_name ?? "" }, a));
                 },
                 g = s.memo(c);
@@ -1606,4 +1604,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.c782a1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.6d84cb4a.js.map

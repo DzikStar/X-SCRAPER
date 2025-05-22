@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Verified-ee0d0da9"],
+    ["ondemand.Verified-a2dee9c7"],
     {
         95186: (e, a, l) => {
             l.d(a, { Z: () => d });
@@ -546,9 +546,9 @@
                                                             {
                                                                 alias: null,
                                                                 args: null,
-                                                                concreteType: "ApiUser",
+                                                                concreteType: "UserCore",
                                                                 kind: "LinkedField",
-                                                                name: "legacy",
+                                                                name: "core",
                                                                 plural: !1,
                                                                 selections: [
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
@@ -556,7 +556,6 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -619,7 +618,7 @@
                             { alias: null, args: s, filters: null, handle: "prependSliceItem", key: "", kind: "LinkedHandle", name: "verified_organization_invitation_create", handleArgs: [{ items: [{ kind: "Variable", name: "slices.0", variableName: "sliceID" }], kind: "ListValue", name: "slices" }] },
                         ],
                     },
-                    params: { id: "d0fp0yuOx_D9OL65-WtZ-Q", metadata: {}, name: "useCreateInvitationMutation", operationKind: "mutation", text: null },
+                    params: { id: "63ZKNh1m1ntVF0Xrt8DTlg", metadata: {}, name: "useCreateInvitationMutation", operationKind: "mutation", text: null },
                 };
             d.hash = "346b8662d16adcfa8ba7e4279249c2f5";
             const c = d;
@@ -1327,6 +1326,24 @@
                                                                                     selections: [
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null },
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "target_product_sku", storageKey: null },
+                                                                                        { alias: null, args: null, kind: "ScalarField", name: "from_external_product_id", storageKey: null },
+                                                                                        {
+                                                                                            alias: null,
+                                                                                            args: null,
+                                                                                            concreteType: "PriceDetail",
+                                                                                            kind: "LinkedField",
+                                                                                            name: "from_price_detail",
+                                                                                            plural: !1,
+                                                                                            selections: [
+                                                                                                { alias: null, args: null, kind: "ScalarField", name: "amount_local_micro", storageKey: null },
+                                                                                                { alias: null, args: null, kind: "ScalarField", name: "charge_interval", storageKey: null },
+                                                                                                { alias: null, args: null, kind: "ScalarField", name: "currency_code", storageKey: null },
+                                                                                                { alias: null, args: null, kind: "ScalarField", name: "external_price_id", storageKey: null },
+                                                                                                { alias: null, args: null, kind: "ScalarField", name: "price_type", storageKey: null },
+                                                                                                { alias: null, args: null, kind: "ScalarField", name: "tax_amount_local_micro", storageKey: null },
+                                                                                            ],
+                                                                                            storageKey: null,
+                                                                                        },
                                                                                     ],
                                                                                     type: "WebPaymentsTierSwitchProgress",
                                                                                     abstractKey: null,
@@ -1360,9 +1377,9 @@
                     },
                     kind: "Request",
                     operation: { argumentDefinitions: n, kind: "Operation", name: "useTierSwitchStatusQuery", selections: [{ alias: "viewer", args: i, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: r, concreteType: null, kind: "LinkedField", name: "web_tier_switch_progress", plural: !1, selections: [t, { kind: "TypeDiscriminator", abstractKey: "__isWebPaymentsGetTierSwitchProgressResult" }, s, u], storageKey: null }, (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, o], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
-                    params: { id: "wU3n9GpHHMz92VCWEBHbhA", metadata: {}, name: "useTierSwitchStatusQuery", operationKind: "query", text: null },
+                    params: { id: "kp2IvQH0Jim11U50WNO2PA", metadata: {}, name: "useTierSwitchStatusQuery", operationKind: "query", text: null },
                 };
-            d.hash = "96fd3c2b5f77434e2243b19987a1eb2f";
+            d.hash = "c456ddcd1359fa89cb54fd22c3f3eeba";
             const c = d;
         },
         685065: (e, a, l) => {
@@ -1498,6 +1515,25 @@
             i.hash = "969dbe5b8e30e6055f820ee5acab6932";
             const t = i;
         },
+        225258: (e, a, l) => {
+            l.d(a, { Z: () => i });
+            const n = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
+                i = ({ apiClient: e, featureSwitches: a }) => ({
+                    postConversion(a, l, i, t = {}) {
+                        const r = { conversions: [{ basePixel: a, eventPixel: l, twclid: i }] };
+                        return e.postUnversioned("/i/capi", r, { ...t, "content-type": "application/json" }, n).then((e) => e.data);
+                    },
+                });
+        },
+        798156: (e, a, l) => {
+            e.exports = l.p + "illustration-paper-plane.771a84da.png";
+        },
+        198433: (e, a, l) => {
+            e.exports = l.p + "illustration-traffic-light.1da0d6da.png";
+        },
+        491339: (e, a, l) => {
+            e.exports = l.p + "illustration-uturn.e2dcd6aa.png";
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-ee0d0da9.458b771a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-a2dee9c7.6fbe482a.js.map

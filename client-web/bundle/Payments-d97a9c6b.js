@@ -600,8 +600,8 @@
                         O = (0, E.qK)({ transactionType: D, description: z, productCode: R, accountName: Y ? (Y.accountType ? `${Y.accountType} ${Y.accountName.name}` : `${Y.accountName.name}`) : "", createdAt: C, statusLabel: U }),
                         B = (0, E._T)({ status: $ }),
                         J = (0, E.Gl)({ status: $ }),
-                        X = L?.legacy?.screen_name,
-                        j = F?.legacy?.screen_name,
+                        X = L?.core?.screen_name,
+                        j = F?.core?.screen_name,
                         G = (0, E.DK)({ isViewerSender: q, status: $, transactionType: D }),
                         Q = (0, E.pQ)({ productCode: R, transactionType: D, account: Y });
                     return r.createElement(i.Z, { key: N, link: `${p.bR}/${N}`, style: I.dE.listItem }, Q ? r.createElement(P.KR, { size: "xLarge", type: Q.iconType, uri: Q.uri }) : K ? r.createElement(h.Z, { size: "xLarge", user: K }) : W ? r.createElement(P.G7, { size: "xLarge", type: W.type, uri: W.logo }) : r.createElement(l.default, { size: "xLarge" }), r.createElement(s.Z, { style: I.dE.listItemFlex, testID: `transaction-item-${N}` }, r.createElement(s.Z, { style: I.dE.listItemContent }, r.createElement(s.Z, { style: I.dE.listItemFlex }, Q ? r.createElement(w.Z, { title: Q.title }) : K ? r.createElement(g.Z, { user: K, weight: "medium" }) : W ? r.createElement(Z.Z, { name: W.name, website: W.website }) : Y ? r.createElement(b.Z, { account: Y }) : r.createElement(m.ZP, null, "This account is unavailable"), G && a ? r.createElement(m.ZP, { color: "gray700" }, (0, E.lw)({ status: $, description: z, amount: a, currency: x })) : J ? r.createElement(m.ZP, { color: "gray700" }, U) : O ? r.createElement(m.ZP, { color: "gray700" }, O) : null), G ? r.createElement(v.Z, { amount: a, challengeId: c, currency: x, isViewerSender: q, receiverScreenName: j, recordId: n, senderScreenName: X, status: $, transactionId: N, transactionType: D, withPrimaryOnly: !0 }) : r.createElement(s.Z, { style: I.dE.alignEnd }, r.createElement(k.Z, { amount: a, currency: x, hasCompleted: B, size: "body", type: H, weight: "normal" }), r.createElement(d.Z, { style: I.dE.alignEnd, timestamp: parseInt(C, 10) })))));
@@ -695,4 +695,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d97a9c6b.851b0dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d97a9c6b.1a9afc8a.js.map

@@ -500,9 +500,9 @@
             const d = n.Z,
                 h = ({ user: e, ...t }) => {
                     const o = l()(d, e),
-                        { avatar: n, is_blue_verified: i, legacy: h, privacy: p, relationship_perspectives: u, verification: m } = o,
-                        _ = (0, c.H)(o?.identity_profile_labels_highlighted_label?.label);
-                    return s.createElement(a.ZP, (0, r.Z)({}, t, { affiliateBadgeInfo: _, avatarUri: n?.image_url ?? "", isBlueVerified: i || !1, isFollowedBy: u?.followed_by ?? !1, isProtected: p?.protected ?? !1, isVerified: m?.verified ?? !1, name: h?.name ?? "", screenName: h?.screen_name ?? "", userId: h?.id_str ?? "", verifiedType: m?.verified_type ?? void 0 }));
+                        { avatar: n, core: i, is_blue_verified: h, legacy: p, privacy: u, relationship_perspectives: m, verification: _ } = o,
+                        b = (0, c.H)(o?.identity_profile_labels_highlighted_label?.label);
+                    return s.createElement(a.ZP, (0, r.Z)({}, t, { affiliateBadgeInfo: b, avatarUri: n?.image_url ?? "", isBlueVerified: h || !1, isFollowedBy: m?.followed_by ?? !1, isProtected: u?.protected ?? !1, isVerified: _?.verified ?? !1, name: i?.name ?? "", screenName: i?.screen_name ?? "", userId: p?.id_str ?? "", verifiedType: _?.verified_type ?? void 0 }));
                 },
                 p = s.memo(h);
         },
@@ -612,4 +612,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.979b770a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.a5349eea.js.map

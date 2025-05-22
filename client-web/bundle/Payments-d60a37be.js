@@ -331,7 +331,7 @@
                 h = n(655352),
                 p = n(163889),
                 _ = n(514639),
-                g = n(351990),
+                g = n(412450),
                 f = n(441484),
                 y = n(99387),
                 b = n(743080),
@@ -749,7 +749,7 @@
         137882: (e, t, n) => {
             n.d(t, { b: () => r, v: () => s });
             n(543673), n(240753), n(128399);
-            var a = n(351990);
+            var a = n(412450);
             const r = ({ txId: e }) => {
                     const { supportUrl: t } = (0, a.Z)(),
                         n = new URL(t);
@@ -946,7 +946,7 @@
                 const { get_transaction_by_id: t } = (0, s.Z)(e),
                     { amount_local_micro: n, currency: o, details: c, transaction_status: i, transaction_type: l } = t ?? {},
                     d = c?.sender_results?.result,
-                    u = d?.legacy?.name ?? "",
+                    u = d?.core?.name ?? "",
                     m = parseFloat(n),
                     h = n ? (0, a.p2)({ amount: m, currency: o }) : null,
                     p = (0, r.Z)({ senderId: d?.rest_id });
@@ -1016,4 +1016,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.9bbf5c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.375f4eea.js.map

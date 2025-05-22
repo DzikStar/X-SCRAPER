@@ -777,18 +777,18 @@
                         L = "TweetUnpinned" === A,
                         B = N?.rest_id,
                         D = null != P,
-                        O = N?.core?.user_results?.result?.legacy?.screen_name,
-                        Y = N?.core?.user_results?.result?.legacy?.name || V,
-                        ee = R?.legacy?.name || U,
-                        te = R?.legacy?.screen_name,
+                        O = N?.core?.user_results?.result?.core?.screen_name,
+                        Y = N?.core?.user_results?.result?.core?.name || V,
+                        ee = R?.core?.name || U,
+                        te = R?.core?.screen_name,
                         re = te ? `/${te}` : null,
                         ne = p?.rule_ref?.name,
                         ae = re ? n.createElement(b().I18NFormatMessage, { $i18n: "b160df39" }, n.createElement(o.ZP, { link: re }, b().bb6299a7({ moderatorName: ee }))) : K({ moderatorName: ee }),
                         oe = re ? n.createElement(b().I18NFormatMessage, { $i18n: "h1513297" }, n.createElement(o.ZP, { link: re }, b().f0347599({ moderatorName: ee }))) : G({ moderatorName: ee }),
                         le = re ? n.createElement(b().I18NFormatMessage, { $i18n: "e523e9f1" }, n.createElement(o.ZP, { link: re }, b().e33d133b({ moderatorName: ee }))) : X({ moderatorName: ee }),
-                        ie = null != F?.legacy?.screen_name,
-                        se = F?.legacy?.name || U,
-                        ce = F?.legacy?.screen_name,
+                        ie = null != F?.core?.screen_name,
+                        se = F?.core?.name || U,
+                        ce = F?.core?.screen_name,
                         me = ce ? `/${ce}` : null,
                         de = me ? n.createElement(b().I18NFormatMessage, { $i18n: "g93119e7" }, n.createElement(o.ZP, { link: me }, b().c29ec092({ revertedModeratorName: se }))) : Q({ revertedModeratorName: se }),
                         ue = n.createElement(n.Fragment, null, T ? n.createElement(n.Fragment, null, n.createElement(y.default, { style: J.topIconStyle }), n.createElement(o.ZP, { style: J.topMessageStyle }, de)) : n.createElement(n.Fragment, null, n.createElement(h.default, { style: J.topIconStyle }), n.createElement(o.ZP, { style: J.topMessageStyle }, ae))),
@@ -905,7 +905,7 @@
                 s = r(23134);
             function c({ user: e, ...t }) {
                 const r = i()(a.Z, e),
-                    l = o.useMemo(() => (r ? { id_str: r.rest_id, screen_name: r.legacy?.screen_name || "", name: r.legacy?.name || "", follow_request_sent: r.legacy?.follow_request_sent || !1, protected: r.privacy?.protected || !1, following: r.relationship_perspectives?.following || !1, followed_by: r.relationship_perspectives?.followed_by || !1, super_following: r.super_following || void 0, super_follow_eligible: r.super_follow_eligible || void 0, super_followed_by: r.super_followed_by || void 0, blocking: r.relationship_perspectives?.blocking || void 0, highlightedLabel: r.affiliates_highlighted_label?.label ? { userLabelType: r.affiliates_highlighted_label.label.user_label_type || void 0 } : void 0 } : void 0), [r]);
+                    l = o.useMemo(() => (r ? { id_str: r.rest_id, screen_name: r.core?.screen_name || "", name: r.core?.name || "", follow_request_sent: r.legacy?.follow_request_sent || !1, protected: r.privacy?.protected || !1, following: r.relationship_perspectives?.following || !1, followed_by: r.relationship_perspectives?.followed_by || !1, super_following: r.super_following || void 0, super_follow_eligible: r.super_follow_eligible || void 0, super_followed_by: r.super_followed_by || void 0, blocking: r.relationship_perspectives?.blocking || void 0, highlightedLabel: r.affiliates_highlighted_label?.label ? { userLabelType: r.affiliates_highlighted_label.label.user_label_type || void 0 } : void 0 } : void 0), [r]);
                 return o.createElement(s.C, (0, n.Z)({}, t, { isRelay: !0, user: l, userId: r?.rest_id ?? "" }));
             }
         },
@@ -986,15 +986,16 @@
             const u = (0, c.Z)().propsFromState(() => ({ dataSaverMode: d.IX, pinnedTimelinesCount: m.Hm })),
                 p = [],
                 b = n.Z,
-                h = (e, t, r, n) => ({ id_str: e.id_str, name: e?.name ?? "", screen_name: e?.screen_name ?? "", profile_image_url_https: t?.image_url ?? "", protected: r?.protected ?? !1, verified: n ?? !1 }),
+                h = (e, t, r, n, a) => ({ id_str: e.id_str, name: r?.name ?? "", screen_name: r?.screen_name ?? "", profile_image_url_https: t?.image_url ?? "", protected: n?.protected ?? !1, verified: a ?? !1 }),
                 y = (e) => {
                     const t = l()(b, e.listRef),
                         r = (0, s.u)(t),
                         n = t.owner_results?.result?.author,
                         o = t.owner_results?.result?.privacy,
                         c = t.owner_results?.result?.verification?.verified,
-                        m = t.owner_results?.result?.avatar;
-                    return a.createElement(i.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls ?? p, followersContext: t.followers_context ?? "", isFollowing: Boolean(t.following), isListPinned: Boolean(t.pinning), isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode?.toLowerCase() ?? "public", media: r, memberCount: t.member_count ?? 0, membersContext: t.members_context ?? "", mode: e.mode, name: t.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? h(n, m, o, c) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
+                        m = t.owner_results?.result?.avatar,
+                        d = t.owner_results?.result?.core;
+                    return a.createElement(i.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls ?? p, followersContext: t.followers_context ?? "", isFollowing: Boolean(t.following), isListPinned: Boolean(t.pinning), isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode?.toLowerCase() ?? "public", media: r, memberCount: t.member_count ?? 0, membersContext: t.members_context ?? "", mode: e.mode, name: t.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: n ? h(n, m, d, o, c) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
                 },
                 g = a.memo(u(y));
         },
@@ -1166,4 +1167,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.21f5d41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.9d09ed4a.js.map

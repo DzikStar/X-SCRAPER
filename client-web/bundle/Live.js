@@ -146,9 +146,9 @@
                 y = a(837020),
                 E = a(125363),
                 M = a(601576),
-                v = a(919022);
-            const P = m().ia5e7488,
-                Z = { label: P },
+                P = a(919022);
+            const v = m().ia5e7488,
+                Z = { label: v },
                 T = m().j33d8902,
                 I = { label: T },
                 C = m().a8ab3d08,
@@ -157,7 +157,7 @@
             function A({ style: e, userId: t }) {
                 const a = (0, E.I0)(),
                     [i, c] = r.useState(!1),
-                    m = (0, E.v9)((e) => v.ZP.select(e, t));
+                    m = (0, E.v9)((e) => P.ZP.select(e, t));
                 if (!m) return null;
                 const { tipjar_settings: u } = m;
                 if (!u) return null;
@@ -182,7 +182,7 @@
                         ? r.createElement(
                               d.Z,
                               { onMaskClick: b, style: S.sheet, type: "bottom", withMask: !0 },
-                              r.createElement(l.ZP, { "aria-label": P, hoverLabel: Z, icon: r.createElement(y.default, null), onPress: b, style: S.close, type: "primaryText" }),
+                              r.createElement(l.ZP, { "aria-label": v, hoverLabel: Z, icon: r.createElement(y.default, null), onPress: b, style: S.close, type: "primaryText" }),
                               r.createElement(o.Z, { style: S.header }, r.createElement(s.ZP, { weight: "bold" }, C), r.createElement(s.ZP, null, `@${m.screen_name}`)),
                               Object.entries(p)
                                   .filter(([e, t]) => t)
@@ -219,6 +219,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -338,12 +339,12 @@
                     M = r.useCallback(() => {
                         c((e) => ({ ...e, draftTitle: e.currentTitle, isEditing: !1 }));
                     }, []),
-                    v = () => r.createElement(n.Z, { style: D.buttonContainer }, r.createElement(o.ZP, { onPress: M, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: w, onPress: E, size: "small", type: "primaryFilled" }, b.save));
+                    P = () => r.createElement(n.Z, { style: D.buttonContainer }, r.createElement(o.ZP, { onPress: M, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: w, onPress: E, size: "small", type: "primaryFilled" }, b.save));
                 return r.createElement(
                     n.Z,
                     { style: D.broadcastTitleRow },
                     i.isEditing
-                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: D.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: y, onSubmitEditing: w ? void 0 : E, placeholder: b.defaultTitle, rightContent: r.createElement(v, null), styleType: "selection", value: i.draftTitle })
+                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: D.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: y, onSubmitEditing: w ? void 0 : E, placeholder: b.defaultTitle, rightContent: r.createElement(P, null), styleType: "selection", value: i.draftTitle })
                         : r.createElement(
                               n.Z,
                               { style: D.broadcastTitleRow },
@@ -393,8 +394,8 @@
                 y = a(443781),
                 E = a(38293),
                 M = a(652904),
-                v = a(382285),
-                P = a(181142),
+                P = a(382285),
+                v = a(181142),
                 Z = a(310453),
                 T = a(51525),
                 I = a(655352),
@@ -501,7 +502,7 @@
                     const a = t.match.params.screenName;
                     if (a) return a;
                     const r = _e(e, t);
-                    return r?.user_results?.result?.legacy?.screen_name || "";
+                    return r?.user_results?.result?.core?.screen_name || "";
                 },
                 De = (e, t) => {
                     const a = t.match.params.broadcastId;
@@ -533,8 +534,8 @@
                 Me = (0, me.Z)()
                     .propsFromState(() => ({ broadcast: _e, broadcastId: De, broadcaster: ge, fetchStatus: Ee, latestBroadcastFetched: ye, screenName: fe, timecode: be, viewerUser: we }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, ie.zr)("LIVE_SCREEN"), fetchBroadcast: ue.Z.fetchOneIfNeeded, fetchLatestBroadcast: ue.Z.fetchLatestBroadcast })),
-                ve = 16 / 9,
-                Pe = { objectFitVideo: "contain" },
+                Pe = 16 / 9,
+                ve = { objectFitVideo: "contain" },
                 Ze = ({ windowWidth: e }) => e >= 920,
                 Te = (e) => (e ? { url: e.image_url, width: e.width, height: e.height } : null),
                 Ie = b().hd0bc1eb,
@@ -598,10 +599,10 @@
                         const e = t && t.media_key,
                             d = !a && l && B,
                             s = Te(t);
-                        return t && t.state === S.N8.NotStarted ? K() : d ? r.createElement(o.Z, { style: Ue.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, xe({ screenName: U }))) : t && l && a && s && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: s.url, property: "og:image" }), r.createElement("meta", { content: s.width, property: "og:image:width" }), r.createElement("meta", { content: s.height, property: "og:image:height" })), r.createElement(Z.Z, { "aria-label": Ae, aspectRatio: ve, displayOptions: Pe, poster: s, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
+                        return t && t.state === S.N8.NotStarted ? K() : d ? r.createElement(o.Z, { style: Ue.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, xe({ screenName: U }))) : t && l && a && s && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: s.url, property: "og:image" }), r.createElement("meta", { content: s.width, property: "og:image:width" }), r.createElement("meta", { content: s.height, property: "og:image:height" })), r.createElement(Z.Z, { "aria-label": Ae, aspectRatio: Pe, displayOptions: ve, poster: s, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
                     }, [t, a, l, B, K, U]),
-                    X = r.useMemo(() => r.createElement(o.Z, { style: Ue.chat }, r.createElement(v.Z, { broadcastId: a ?? "", defaultChatNotice: xe({ screenName: U }) })), [a, U]),
-                    J = r.useCallback(() => r.createElement(P.aM, null, r.createElement(o.Z, { style: [Ue.container, H ? Ue.navBorder : void 0] }, r.createElement(o.Z, { style: Ue.videoContainer }, r.createElement(L, null, Q), a && r.createElement(o.Z, { style: Ue.title }, r.createElement(A.H, { broadcastId: a, canEdit: j, remoteTitle: V })), r.createElement(de, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), z && X)), [X, Q, t, a, l, j, z, H, V]);
+                    X = r.useMemo(() => r.createElement(o.Z, { style: Ue.chat }, r.createElement(P.Z, { broadcastId: a ?? "", defaultChatNotice: xe({ screenName: U }) })), [a, U]),
+                    J = r.useCallback(() => r.createElement(v.aM, null, r.createElement(o.Z, { style: [Ue.container, H ? Ue.navBorder : void 0] }, r.createElement(o.Z, { style: Ue.videoContainer }, r.createElement(L, null, Q), a && r.createElement(o.Z, { style: Ue.title }, r.createElement(A.H, { broadcastId: a, canEdit: j, remoteTitle: V })), r.createElement(de, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), z && X)), [X, Q, t, a, l, j, z, H, V]);
                 return r.createElement(
                     C.nO,
                     { namespace: Ne },
@@ -620,7 +621,7 @@
                     ),
                 );
             }
-            const Ue = m.default.create((e) => ({ container: { display: "flex", flexDirection: "row", height: "100vh", overflow: "hidden" }, chat: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, height: "100vh", width: "340px" }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, navBorder: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, title: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-between", paddingHorizontal: e.spaces.space12, paddingTop: e.spaces.space12 }, offlineContainer: { aspectRatio: ve, backgroundColor: e.colors.gray0, flex: 1, justifyContent: "center", alignItems: "center" }, videoContainer: { flex: 1, WebkitOverflowScrolling: "touch", scrollbarWidth: "none", msOverflowStyle: "none", overflow: "auto" } })),
+            const Ue = m.default.create((e) => ({ container: { display: "flex", flexDirection: "row", height: "100vh", overflow: "hidden" }, chat: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, height: "100vh", width: "340px" }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, navBorder: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, title: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-between", paddingHorizontal: e.spaces.space12, paddingTop: e.spaces.space12 }, offlineContainer: { aspectRatio: Pe, backgroundColor: e.colors.gray0, flex: 1, justifyContent: "center", alignItems: "center" }, videoContainer: { flex: 1, WebkitOverflowScrolling: "touch", scrollbarWidth: "none", msOverflowStyle: "none", overflow: "auto" } })),
                 Oe = Me((0, k.Z)(Be));
         },
         978053: (e, t, a) => {
@@ -683,4 +684,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.38eb610a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.529f45da.js.map

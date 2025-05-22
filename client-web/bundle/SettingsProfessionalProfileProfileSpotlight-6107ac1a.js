@@ -85,7 +85,7 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                     {
@@ -103,7 +103,8 @@
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    (g = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                    (c = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                                     s,
                                                     {
@@ -457,8 +458,8 @@
                                                                                                                             },
                                                                                                                             { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "custom_banner_media", plural: !1, selections: _, storageKey: null },
                                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                                                                                                                            c,
                                                                                                                             g,
+                                                                                                                            c,
                                                                                                                             s,
                                                                                                                         ],
                                                                                                                         type: "Community",
@@ -482,7 +483,7 @@
                                                                                         kind: "InlineFragment",
                                                                                         selections: [
                                                                                             { alias: null, args: null, concreteType: "JobsModuleConfig", kind: "LinkedField", name: "config", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "show_more_jobs", storageKey: null }], storageKey: null },
-                                                                                            { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [g, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [d, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, K], storageKey: null }, s], type: "ApiJob", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
+                                                                                            { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [c, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [d, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, K], storageKey: null }, s], type: "ApiJob", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
                                                                                         ],
                                                                                         type: "JobsModule",
                                                                                         abstractKey: null,
@@ -514,7 +515,7 @@
                             },
                         ],
                     },
-                    params: { id: "OZw7-xO5Q6oKNIrLcsWNfA", metadata: {}, name: "ProfileSpotlights_EditableProfileSpotlightsQuery", operationKind: "query", text: null },
+                    params: { id: "5AwF_hm7YC6rOO50wJT82w", metadata: {}, name: "ProfileSpotlights_EditableProfileSpotlightsQuery", operationKind: "query", text: null },
                 };
             S.hash = "3cad100e92f949908a6299b2d5ae6046";
             const b = S;
@@ -675,7 +676,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }, (t = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                             {
@@ -693,7 +694,8 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            (o = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
                                                             {
                                                                 alias: null,
@@ -1035,8 +1037,8 @@
                                                                                                                             },
                                                                                                                             { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "custom_banner_media", plural: !1, selections: F, storageKey: null },
                                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                                                                                                                            t,
                                                                                                                             o,
+                                                                                                                            t,
                                                                                                                             y,
                                                                                                                         ],
                                                                                                                         type: "Community",
@@ -1060,7 +1062,7 @@
                                                                                         kind: "InlineFragment",
                                                                                         selections: [
                                                                                             { alias: null, args: null, concreteType: "JobsModuleConfig", kind: "LinkedField", name: "config", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "show_more_jobs", storageKey: null }], storageKey: null },
-                                                                                            { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [o, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [u, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, k], storageKey: null }, y], type: "ApiJob", abstractKey: null }], storageKey: null }, y], storageKey: null }], storageKey: null },
+                                                                                            { alias: null, args: null, concreteType: "JobsModuleData", kind: "LinkedField", name: "data", plural: !1, selections: [{ alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "featured_jobs_results", plural: !0, selections: [t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [u, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, k], storageKey: null }, y], type: "ApiJob", abstractKey: null }], storageKey: null }, y], storageKey: null }], storageKey: null },
                                                                                         ],
                                                                                         type: "JobsModule",
                                                                                         abstractKey: null,
@@ -1092,7 +1094,7 @@
                             },
                         ],
                     },
-                    params: { id: "d68d7_erR8awJ3Ez9tK-8Q", metadata: {}, name: "UpdateProfileSpotlightVisibilityMutation", operationKind: "mutation", text: null },
+                    params: { id: "gUUlOf5ataQs477FL2GgJA", metadata: {}, name: "UpdateProfileSpotlightVisibilityMutation", operationKind: "mutation", text: null },
                 };
             K.hash = "cedd98de922edbfcd091c67171c43f7a";
             const _ = K;
@@ -1134,19 +1136,6 @@
             const g = t.default.create((l) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: l.spaces.space20 } })),
                 y = c;
         },
-        41065: (l, e, a) => {
-            a.r(e), a.d(e, { default: () => t });
-            var n = a(202784),
-                i = a(890601),
-                s = a(783427),
-                r = a(347101);
-            const u = (l = {}) => {
-                const { direction: e } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...l, role: l["aria-label"] ? l.role || "img" : void 0, "aria-hidden": void 0 === l["aria-label"], style: [r.Z.root, l.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: e });
-            };
-            u.metadata = { width: 24, height: 24 };
-            const t = u;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.9b5798da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.8c2aaa3a.js.map

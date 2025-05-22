@@ -12034,7 +12034,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(комісія: ", ")"];
                             },
                         },
                         {
@@ -12688,7 +12688,7 @@
                         {
                             key: "i74be1ef",
                             get: function () {
-                                return ["", " і "];
+                                return ["", " та "];
                             },
                         },
                         {
@@ -12700,7 +12700,7 @@
                         {
                             key: "hf3108d3",
                             get: function () {
-                                return ["", " і "];
+                                return ["", " та "];
                             },
                         },
                         {
@@ -13271,4 +13271,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.7ad5a58a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.b216c25a.js.map

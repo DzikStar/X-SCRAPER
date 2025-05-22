@@ -30,7 +30,7 @@
                 K = a(910113);
             const L = ({ fallbackName: e, user: l }) => {
                     const a = d()(K.fR, l);
-                    return a && a.legacy && a.legacy.name && a.legacy.screen_name ? o.createElement(b.ZP, { size: "subtext2", style: w.userName }, o.createElement(u.Z, { style: w.name }, o.createElement(b.ZP, { numberOfLines: 1 }, a.legacy.name), o.createElement(f.Z, { isVerified: a.verification?.verified ?? !1, verifiedType: a.verification?.verified_type ?? void 0 })), o.createElement(_.Z, { screenName: a.legacy.screen_name, size: "subtext2" })) : e ? o.createElement(b.ZP, { size: "subtext2", weight: "normal" }, e) : null;
+                    return a && a.core && a.core.name && a.core.screen_name ? o.createElement(b.ZP, { size: "subtext2", style: w.userName }, o.createElement(u.Z, { style: w.name }, o.createElement(b.ZP, { numberOfLines: 1 }, a.core.name), o.createElement(f.Z, { isVerified: a.verification?.verified ?? !1, verifiedType: a.verification?.verified_type ?? void 0 })), o.createElement(_.Z, { screenName: a.core.screen_name, size: "subtext2" })) : e ? o.createElement(b.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
                 w = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: F.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
                 j = ({ companyProfile: e, formattedSalary: l, jobId: a, jobLocation: n, jobTitle: t, onClick: r, renderActions: i, salaryInterval: s, user: c, withBottomBorder: d = !0 }) => {
@@ -126,9 +126,9 @@
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserCore",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "core",
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
@@ -152,7 +152,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "260023464e8aca3b7ae13a5f7bf7d391",
+                hash: "27a5df32b6e468f19d7596bab1b6cd32",
             };
             const o = s;
             var u = {
@@ -440,4 +440,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.4153108a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.b7583dda.js.map

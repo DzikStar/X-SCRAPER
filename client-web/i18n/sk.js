@@ -12038,7 +12038,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(Poplatok: ", ")"];
                             },
                         },
                         {
@@ -12692,7 +12692,7 @@
                         {
                             key: "i74be1ef",
                             get: function () {
-                                return ["", " a "];
+                                return ["", " a "];
                             },
                         },
                         {
@@ -12704,7 +12704,7 @@
                         {
                             key: "hf3108d3",
                             get: function () {
-                                return ["", " a "];
+                                return ["", " a "];
                             },
                         },
                         {
@@ -13273,4 +13273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.87dfedea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.4d5b0bfa.js.map

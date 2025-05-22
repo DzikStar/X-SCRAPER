@@ -64,8 +64,8 @@
                     const { user: t, ...n } = e,
                         o = c()(s.Z, t),
                         i = a.useMemo(() => {
-                            const { avatar: e, legacy: t, privacy: n, relationship_perspectives: r } = o;
-                            return { id_str: o.rest_id, blocking: r?.blocking ?? !1, blocked_by: r?.blocked_by ?? !1, description: t?.description || "", following: r?.following ?? !1, followed_by: r?.followed_by ?? !1, muting: r?.muting || void 0, name: t?.name || "", profile_image_url_https: e?.image_url || "", promoted_content: t?.promoted_content ? { impression_id: t.promoted_content.impression_id || void 0, disclosure_type: t.promoted_content.disclosure_type || void 0 } : void 0, protected: n?.protected ?? !1, screen_name: t?.screen_name || "", want_retweets: t?.want_retweets || void 0 };
+                            const { avatar: e, core: t, legacy: n, privacy: r, relationship_perspectives: s } = o;
+                            return { id_str: o.rest_id, blocking: s?.blocking ?? !1, blocked_by: s?.blocked_by ?? !1, description: n?.description || "", following: s?.following ?? !1, followed_by: s?.followed_by ?? !1, muting: s?.muting || void 0, name: t?.name || "", profile_image_url_https: e?.image_url || "", promoted_content: n?.promoted_content ? { impression_id: n.promoted_content.impression_id || void 0, disclosure_type: n.promoted_content.disclosure_type || void 0 } : void 0, protected: r?.protected ?? !1, screen_name: t?.screen_name || "", want_retweets: n?.want_retweets || void 0 };
                         }, [o]);
                     return a.createElement(_, (0, r.Z)({}, n, { user: i }));
                 });
@@ -263,4 +263,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-82566a6c.e0da706a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-82566a6c.27c0389a.js.map

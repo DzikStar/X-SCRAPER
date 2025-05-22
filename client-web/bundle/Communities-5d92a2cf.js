@@ -31,7 +31,7 @@
                     const t = r()(v.Z, e.community),
                         n = i.useMemo(() => new Date(t.created_at).toLocaleString("default", { day: "numeric", month: "long", year: "numeric" }), [t.created_at]),
                         a = i.useMemo(() => {
-                            if ("User" === t.creator_results.result?.__typename) return i.createElement(I.Z, { isBlueVerified: t.creator_results.result.is_blue_verified || !1, isVerified: t.creator_results.result.verification?.verified || !1, screenName: t.creator_results.result.legacy?.screen_name || "", withLink: !0 });
+                            if ("User" === t.creator_results.result?.__typename) return i.createElement(I.Z, { isBlueVerified: t.creator_results.result.is_blue_verified || !1, isVerified: t.creator_results.result.verification?.verified || !1, screenName: t.creator_results.result.core?.screen_name || "", withLink: !0 });
                         }, [t]);
                     return t.creator_results && "User" === t.creator_results.result?.__typename ? i.createElement(p.ZP, { color: "gray700" }, i.createElement(s().I18NFormatMessage, { $i18n: "a346641b", date: n }, a)) : null;
                 },
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-5d92a2cf.e642a73a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-5d92a2cf.3574246a.js.map

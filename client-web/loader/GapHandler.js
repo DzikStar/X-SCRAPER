@@ -94,7 +94,7 @@
                     i.useEffect(() => {
                         const e = l === C.CursorType.Gap ? x : b;
                         t.scribe({ ...e, data: m });
-                    }, []);
+                    }, [t, l, m]);
                     const w = i.useCallback(
                             (e) => {
                                 r(o).then(e).catch(n());
@@ -163,4 +163,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GapHandler.0606c51a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GapHandler.5bfe0bfa.js.map

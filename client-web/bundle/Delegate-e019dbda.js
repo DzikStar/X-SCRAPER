@@ -274,19 +274,19 @@
             const b = n.Z;
             function y(e) {
                 const t = s()(b, e.user),
-                    { avatar: o, legacy: n, privacy: i, relationship_perspectives: l, verification: h } = t,
-                    y = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
-                    { cellClickable: C, decoration: g, displayMode: f } = e,
-                    B = (function () {
+                    { avatar: o, core: n, legacy: i, privacy: l, relationship_perspectives: h, verification: y } = t,
+                    C = t.identity_profile_labels_highlighted_label?.label ? (0, u.H)(t.identity_profile_labels_highlighted_label.label) : void 0,
+                    { cellClickable: g, decoration: f, displayMode: B } = e,
+                    w = (function () {
                         const { viewerUserId: e } = r.useContext(m.rC);
                         return a()(!!e, "viewerUserId is undefined!"), e;
                     })(),
-                    w = (0, c.useHistory)(),
-                    k = r.useCallback(() => ("function" == typeof g ? g({ displayMode: f, viewerUserId: B, userId: n?.id_str ?? "" }) : g), [g, B, n, f]),
-                    x = r.useCallback(() => {
-                        n?.screen_name && w.push({ pathname: `/${n.screen_name}` });
-                    }, [w, n]);
-                return r.createElement(d.ZP, { affiliateBadgeInfo: y, avatarUri: o?.image_url || "", decoration: k(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: l?.followed_by ?? !1, isProtected: i?.protected ?? !1, isVerified: h?.verified ?? !1, name: n?.name || "", onCellClick: C ? x : void 0, promotedItemType: p.bj.USER, screenName: n?.screen_name || "", userId: n?.id_str ?? "", verifiedType: h?.verified_type ?? void 0, withFollowsYou: !0 });
+                    k = (0, c.useHistory)(),
+                    x = r.useCallback(() => ("function" == typeof f ? f({ displayMode: B, viewerUserId: w, userId: i?.id_str ?? "" }) : f), [f, w, i, B]),
+                    Z = r.useCallback(() => {
+                        n?.screen_name && k.push({ pathname: `/${n.screen_name}` });
+                    }, [k, n]);
+                return r.createElement(d.ZP, { affiliateBadgeInfo: C, avatarUri: o?.image_url || "", decoration: x(), displayMode: "UserDetailed", displayNameLabel: e.displayNameLabel, isBlueVerified: !!t.is_blue_verified, isFollowedBy: h?.followed_by ?? !1, isProtected: l?.protected ?? !1, isVerified: y?.verified ?? !1, name: n?.name || "", onCellClick: g ? Z : void 0, promotedItemType: p.bj.USER, screenName: n?.screen_name || "", userId: i?.id_str ?? "", verifiedType: y?.verified_type ?? void 0, withFollowsYou: !0 });
             }
             y.defaultProps = { cellClickable: !0, decoration: null, displayMode: h.Z.UserCompact };
         },
@@ -375,4 +375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.226b08aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.550c55da.js.map

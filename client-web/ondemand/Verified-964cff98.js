@@ -657,11 +657,12 @@
                               null,
                               c ? g : null,
                               e?.map((e, t) => {
-                                  const { id_str: r, name: i, screen_name: l } = e.result?.legacy || {},
+                                  const { name: r, screen_name: i } = e.result?.core || {},
+                                      l = e.result?.legacy?.id_str,
                                       { image_url: c } = e.result?.avatar || {},
-                                      d = !!n.find((e) => e.result.legacy?.id_str === r),
+                                      d = !!n.find((e) => e.result.legacy?.id_str === l),
                                       u = () => b(e, !d);
-                                  return i && c && l && r ? a.createElement(s.ZP, { avatarUri: c, decoration: a.createElement(o.Z, { checked: d, onClick: u }), displayMode: "UserCompact", key: `affiliate-filter-${t}`, name: i, onAvatarClick: u, onCellClick: u, onScreenNameClick: u, screenName: l, userId: r, withLink: !1 }) : null;
+                                  return r && c && i && l ? a.createElement(s.ZP, { avatarUri: c, decoration: a.createElement(o.Z, { checked: d, onClick: u }), displayMode: "UserCompact", key: `affiliate-filter-${t}`, name: r, onAvatarClick: u, onCellClick: u, onScreenNameClick: u, screenName: i, userId: l, withLink: !1 }) : null;
                               }),
                           )
                         : null;
@@ -822,7 +823,7 @@
                         r.createElement(
                             r.Fragment,
                             null,
-                            m ? r.createElement(N.Z, { actionLabel: te, actionType: "primaryFilled", enableMaskForDismiss: !0, graphicDisplayMode: "none", headline: ee({ name: E.legacy?.screen_name }), onAction: k, onClose: _, onSecondaryAction: _, secondaryActionLabel: ae, secondaryActionType: "primaryOutlined", subtext: ne }) : null,
+                            m ? r.createElement(N.Z, { actionLabel: te, actionType: "primaryFilled", enableMaskForDismiss: !0, graphicDisplayMode: "none", headline: ee({ name: E.core?.screen_name }), onAction: k, onClose: _, onSecondaryAction: _, secondaryActionLabel: ae, secondaryActionType: "primaryOutlined", subtext: ne }) : null,
                             r.createElement(
                                 i.Z,
                                 { role: "listitem" },
@@ -1080,4 +1081,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.8493cf0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.9bf706fa.js.map

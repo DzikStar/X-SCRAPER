@@ -75,16 +75,16 @@
                     .propsFromState(() => ({ community: E, hydratedTweet: u.Z.createHydratedTweetSelector(y) }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, c.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: m.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: n, hydratedTweet: c, onAvatarClick: p, onMediaClick: m, onPress: u, onScreenNameClick: y, tweetId: E, withBirdwatchPivot: I = !0, ...C }) => {
                     const { featureSwitches: h, viewerUserId: T } = a.useContext(_.rC),
-                        g = (0, l.z)(),
-                        b = c?.community_id_str;
+                        b = (0, l.z)(),
+                        g = c?.community_id_str;
                     a.useEffect(() => {
-                        b && (0, d.Z)(e) && n(b).catch(t());
-                    }, [e, b, t, n]);
+                        g && (0, d.Z)(e) && n(g).catch(t());
+                    }, [e, g, t, n]);
                     const A = a.useCallback(
                             (e) => {
-                                g.scribeAction("click"), u && u(e);
+                                b.scribeAction("click"), u && u(e);
                             },
-                            [u, g],
+                            [u, b],
                         ),
                         f = !!I,
                         v = c && (0, r.D$)(c, T, e),
@@ -172,7 +172,7 @@
                         o = e.data.member_count;
                     return { type: l.Qe.TWITTER_LIST_DETAILS, data: { title: i, destination: n, memberCount: o, attribution: a } };
                 },
-                g = (e, t) => ({
+                b = (e, t) => ({
                     type: l.Qe.BUTTON_GROUP,
                     data: {
                         buttons: e.data.buttons.map((e, n) => {
@@ -182,7 +182,7 @@
                         }),
                     },
                 });
-            function b(e, t, n, i, a, o, s) {
+            function g(e, t, n, i, a, o, s) {
                 const {
                         destination: d,
                         media_id: r,
@@ -287,7 +287,7 @@
                     if (i)
                         switch (i.type) {
                             case "media_with_details_horizontal":
-                                return b(i, R, t, e, 0, M, L);
+                                return g(i, R, t, e, 0, M, L);
                             case "details":
                                 W[n] = m(i);
                                 break;
@@ -307,7 +307,7 @@
                                 W[n] = y(i, C);
                                 break;
                             case "button_group":
-                                W[n] = g(i, S);
+                                W[n] = b(i, S);
                                 break;
                             case "grok_share":
                                 W[n] = ((z = i), { type: l.Qe.GROK_SHARE, data: z.data });
@@ -358,8 +358,8 @@
                 C = n(649964),
                 h = n(163336),
                 T = n(824562),
-                g = n(734408),
-                b = (n(136728), n(85375)),
+                b = n(734408),
+                g = (n(136728), n(85375)),
                 A = n(323265),
                 f = n(538619),
                 v = n(542908);
@@ -384,7 +384,7 @@
                     switch (e.__typename) {
                         case "CardAppStoreDestination":
                         case "CardAppStoreWithDockedMediaDestination":
-                            return { type: "browser", data: { url_data: { url: R(e.app_store_data) || b.$H }, scribe: v.bQ.UC_APP_STORE_OPEN_LINK, promoted_log: v.YE.UNIFIED_CARD_COMPONENT_APP_STORE_CLICK } };
+                            return { type: "browser", data: { url_data: { url: R(e.app_store_data) || g.$H }, scribe: v.bQ.UC_APP_STORE_OPEN_LINK, promoted_log: v.YE.UNIFIED_CARD_COMPONENT_APP_STORE_CLICK } };
                         case "CardBrowserDestination":
                             return { type: "browser", data: { ...N(e) } };
                         case "CardBrowserWithDockedMediaDestination":
@@ -404,7 +404,7 @@
                 }
             }
             const F = (e) => {
-                    if (e.result?.legacy && e.result?.verification && e.result?.privacy) return { id_str: e.result.id, profile_image_url_https: e.result.avatar?.image_url || "", protected: e.result.privacy.protected || !1, verified: e.result.verification.verified || !1, is_blue_verified: !!e.result.is_blue_verified, name: e.result.legacy.name || "", screen_name: e.result.legacy.screen_name || "" };
+                    if (e.result?.core && e.result?.verification && e.result?.privacy) return { id_str: e.result.id, profile_image_url_https: e.result.avatar?.image_url || "", protected: e.result.privacy.protected || !1, verified: e.result.verification.verified || !1, is_blue_verified: !!e.result.is_blue_verified, name: e.result.core.name || "", screen_name: e.result.core.screen_name || "" };
                 },
                 U = ({ component: e }) => {
                     const t = e.media.media_id || "",
@@ -431,14 +431,14 @@
                     const d = L("media", i, n),
                         r = [d],
                         l = {},
-                        _ = { type: b.Qe.MEDIA, data: { destination: o, id: e.media.media_id } };
+                        _ = { type: g.Qe.MEDIA, data: { destination: o, id: e.media.media_id } };
                     l[d] = _;
                     const { mediaEntity: c, staticMediaEntity: p } = U({ component: e }),
                         m = [];
                     if ("uc_video" === c.entity?.type) {
                         const e = `${d}_static`,
                             t = c.entity ? c.entity.original_info.width / c.entity.original_info.height : null;
-                        m.push(e), (l[e] = { type: b.Qe.MEDIA, data: { aspect_ratio: t || void 0, destination: o, id: e, overlay: { type: b._5.PLAY } } });
+                        m.push(e), (l[e] = { type: g.Qe.MEDIA, data: { aspect_ratio: t || void 0, destination: o, id: e, overlay: { type: g._5.PLAY } } });
                     } else m.push(d);
                     return { componentKeys: r, staticComponentKeys: m, destinationObjects: a, mediaEntities: { [c.key]: c.entity, [p.key]: p.entity }, componentsData: l, destinationKey: o, mediaEntityKey: c.key };
                 },
@@ -470,7 +470,7 @@
                                     case "CardFollowButtonComponent":
                                         a = (({ component: e, componentIndex: t, slideIndex: n }) => {
                                             const i = L("follow_button", n, t),
-                                                a = { type: b.Qe.FOLLOW_BUTTON, data: { user_id: e.user.rest_id } };
+                                                a = { type: g.Qe.FOLLOW_BUTTON, data: { user_id: e.user.rest_id } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: {}, mediaEntities: {}, componentsData: { [i]: a } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                         break;
@@ -482,7 +482,7 @@
                                             i[a] = o;
                                             const s = e.users_results ? e.users_results.map(F).filter(Boolean) : [],
                                                 d = L("facepile", n, t),
-                                                r = { type: b.Qe.FACEPILE, data: { facepileUsers: s.reduce((e, t) => ({ ...e, [t.id_str]: t }), {}), total_user_count: e.total_user_count, type: e.user_relationship_type, destination: a } };
+                                                r = { type: g.Qe.FACEPILE, data: { facepileUsers: s.reduce((e, t) => ({ ...e, [t.id_str]: t }), {}), total_user_count: e.total_user_count, type: e.user_relationship_type, destination: a } };
                                             return { componentKeys: [d], staticComponentKeys: [d], destinationObjects: i, mediaEntities: {}, componentsData: { [d]: r } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                         break;
@@ -495,7 +495,7 @@
                                                 d = P(e.app_store_data) || {},
                                                 r = d.title,
                                                 l = d.category ? d.category.content : void 0,
-                                                _ = { type: b.Qe.APP_STORE_DETAILS, data: { title: r, footer: l, destination: a } };
+                                                _ = { type: g.Qe.APP_STORE_DETAILS, data: { title: r, footer: l, destination: a } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: s, mediaEntities: {}, componentsData: { [i]: _ } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                         break;
@@ -504,13 +504,13 @@
                                             const i = {},
                                                 a = L("button_group", n, t),
                                                 o = {
-                                                    type: b.Qe.BUTTON_GROUP,
+                                                    type: g.Qe.BUTTON_GROUP,
                                                     data: {
                                                         buttons: e.buttons.map((e, a) => {
                                                             const o = e.destination_obj?.__typename,
                                                                 s = w(n, t, a),
                                                                 d = e.destination_obj ? j(e.destination_obj) : {};
-                                                            return (i[s] = d), { type: v.lW.GENERIC, data: { index: a + 1, icon: e.icon_type?.toLowerCase(), destination: s, cta: "Cta" === e.button_type ? f.v.getCtaString(e.action || "") : e.text ? e.text.content : "", is_rtl: "Custom" === e.button_type ? e.text?.is_rtl : void 0, isAppDetails: o === b.TW.APP_STORE || o === b.TW.APP_STORE_WITH_DOCKED_MEDIA, styleType: M(e.style) } };
+                                                            return (i[s] = d), { type: v.lW.GENERIC, data: { index: a + 1, icon: e.icon_type?.toLowerCase(), destination: s, cta: "Cta" === e.button_type ? f.v.getCtaString(e.action || "") : e.text ? e.text.content : "", is_rtl: "Custom" === e.button_type ? e.text?.is_rtl : void 0, isAppDetails: o === g.TW.APP_STORE || o === g.TW.APP_STORE_WITH_DOCKED_MEDIA, styleType: M(e.style) } };
                                                         }),
                                                     },
                                                 };
@@ -523,7 +523,7 @@
                                                 a = w(n, t, 0),
                                                 o = e.destination_obj ? j(e.destination_obj) : {},
                                                 s = { [a]: o },
-                                                d = { type: b.Qe.DETAILS, data: { title: e.title, destination: a } };
+                                                d = { type: g.Qe.DETAILS, data: { title: e.title, destination: a } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: s, mediaEntities: {}, componentsData: { [i]: d } };
                                         })({ component: e, componentIndex: i, slideIndex: t });
                                         break;
@@ -548,7 +548,7 @@
                                                     const r = W({ component: e, slideIndex: n, componentIndex: t, componentDataIndex: i }),
                                                         l = { destination: r.destinationKey, id: r.mediaEntityKey };
                                                     if ((a.push(l), (o = { ...o, ...r.destinationObjects }), (s = { ...s, ...r.mediaEntities }), "ApiVideo" === e.media.media_info?.__typename)) {
-                                                        const e = { destination: r.destinationKey, id: x(r.mediaEntityKey), overlay: { type: b._5.PLAY } };
+                                                        const e = { destination: r.destinationKey, id: x(r.mediaEntityKey), overlay: { type: g._5.PLAY } };
                                                         d.push(e);
                                                     }
                                                     if ("ApiGif" === e.media.media_info?.__typename) {
@@ -556,9 +556,9 @@
                                                         d.push(e);
                                                     }
                                                 });
-                                            const r = { type: b.Qe.SWIPEABLE_MEDIA, data: { media_list: a } },
+                                            const r = { type: g.Qe.SWIPEABLE_MEDIA, data: { media_list: a } },
                                                 l = { [i]: r };
-                                            return d.length && (l[b.Fw.SWIPEABLE_MEDIA_STATIC] = { type: b.Qe.SWIPEABLE_MEDIA, data: { media_list: d } }), { componentKeys: [i], staticComponentKeys: d.length ? [b.Fw.SWIPEABLE_MEDIA_STATIC] : [i], destinationObjects: o, mediaEntities: s, componentsData: l };
+                                            return d.length && (l[g.Fw.SWIPEABLE_MEDIA_STATIC] = { type: g.Qe.SWIPEABLE_MEDIA, data: { media_list: d } }), { componentKeys: [i], staticComponentKeys: d.length ? [g.Fw.SWIPEABLE_MEDIA_STATIC] : [i], destinationObjects: o, mediaEntities: s, componentsData: l };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                         break;
                                     case "CardTwitterListDetailsComponent":
@@ -569,22 +569,22 @@
                                                 s = { [a]: o };
                                             let d = {};
                                             const r = e.user_results?.result;
-                                            r && r.legacy && (d = { id_str: r.id, profile_image_url_https: r.avatar?.image_url || "", protected: !!r.privacy?.protected, verified: !!r.verification?.verified, is_blue_verified: !!r.is_blue_verified, name: r.legacy.name || "", screen_name: r.legacy.screen_name || "" });
-                                            const l = { type: b.Qe.TWITTER_LIST_DETAILS, data: { title: e.name, destination: a, memberCount: e.member_count, attribution: d } };
+                                            r && r.core && (d = { id_str: r.id, profile_image_url_https: r.avatar?.image_url || "", protected: !!r.privacy?.protected, verified: !!r.verification?.verified, is_blue_verified: !!r.is_blue_verified, name: r.core.name || "", screen_name: r.core.screen_name || "" });
+                                            const l = { type: g.Qe.TWITTER_LIST_DETAILS, data: { title: e.name, destination: a, memberCount: e.member_count, attribution: d } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: s, mediaEntities: {}, componentsData: { [i]: l } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                         break;
                                     case "DeveloperBuiltCardRootContainer":
                                         a = (({ component: e, componentIndex: t, slideIndex: n }) => {
                                             const i = L("developer_built_card", n, t),
-                                                a = { type: b.Qe.DEVELOPER_BUILT_CARD, data: { config: e } };
+                                                a = { type: g.Qe.DEVELOPER_BUILT_CARD, data: { config: e } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: {}, mediaEntities: {}, componentsData: { [i]: a } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                         break;
                                     case "DeveloperBuiltCardContainer":
                                         a = (({ component: e, componentIndex: t, slideIndex: n }) => {
                                             const i = L("developer_built_card_deprecated", n, t),
-                                                a = { type: b.Qe.DEVELOPER_BUILT_CARD_DEPRECATED, data: { config: e } };
+                                                a = { type: g.Qe.DEVELOPER_BUILT_CARD_DEPRECATED, data: { config: e } };
                                             return { componentKeys: [i], staticComponentKeys: [i], destinationObjects: {}, mediaEntities: {}, componentsData: { [i]: a } };
                                         })({ component: e, slideIndex: t, componentIndex: i });
                                 }
@@ -610,12 +610,12 @@
                                             a = n.destination_obj ? j(n.destination_obj) : void 0;
                                         a && (a.data.scribe_element = "uc_media_with_details_horizontal");
                                         const o = { [i]: a },
-                                            s = { type: b.Qe.MEDIA, data: { aspect_ratio: 1, destination: i, id: n.media.media_id } },
+                                            s = { type: g.Qe.MEDIA, data: { aspect_ratio: 1, destination: i, id: n.media.media_id } },
                                             d = n.topic_detail?.subtitle,
                                             r = n.topic_detail?.title,
-                                            l = { type: b.Qe.TOPIC_DETAILS, data: { destination: i, ...(d?.content ? { description: { ...d } } : null), title: { content: r?.content || "", is_rtl: r?.is_rtl || !1 } } },
+                                            l = { type: g.Qe.TOPIC_DETAILS, data: { destination: i, ...(d?.content ? { description: { ...d } } : null), title: { content: r?.content || "", is_rtl: r?.is_rtl || !1 } } },
                                             { mediaEntity: _, staticMediaEntity: c } = U({ component: n });
-                                        return { cardState: b.uW.DEFAULT, layout: { [b.uW.DEFAULT]: { size: "small" }, [b.uW.CONDENSED]: { size: "small" }, [b.uW.STATIC]: { size: "small" } }, card: { card_name: t || "", on_visibility: { scribe: "show" }, id: e, components: { [b.uW.DEFAULT]: [b.Fw.MEDIA, b.Fw.TOPIC_DETAILS] }, destinations: o, media_entities: { [_.key]: _.entity, [c.key]: c.entity }, components_data: { [b.Fw.MEDIA]: s, [b.Fw.TOPIC_DETAILS]: l }, ucLayout: void 0 } };
+                                        return { cardState: g.uW.DEFAULT, layout: { [g.uW.DEFAULT]: { size: "small" }, [g.uW.CONDENSED]: { size: "small" }, [g.uW.STATIC]: { size: "small" } }, card: { card_name: t || "", on_visibility: { scribe: "show" }, id: e, components: { [g.uW.DEFAULT]: [g.Fw.MEDIA, g.Fw.TOPIC_DETAILS] }, destinations: o, media_entities: { [_.key]: _.entity, [c.key]: c.entity }, components_data: { [g.Fw.MEDIA]: s, [g.Fw.TOPIC_DETAILS]: l }, ucLayout: void 0 } };
                                     })({ component: t, cardId: e.card_uri || "", cardType: e.card_type });
                                 i({ components: o.components, slideIndex: 0 });
                             }
@@ -632,39 +632,39 @@
                             }),
                                 (n.ucLayout = { data: { slides: a }, type: "collection" });
                     }
-                    return { cardState: b.uW.DEFAULT, layout: { [b.uW.DEFAULT]: { size: "large" }, [b.uW.CONDENSED]: { size: "large" }, [b.uW.STATIC]: { size: "large" } }, card: { card_name: e.card_type || "", displayOptions: { shouldAutoAdvance: k(e) }, on_visibility: { scribe: "show" }, id: e.card_uri || "", components: { [b.uW.DEFAULT]: n.componentKeys, [b.uW.STATIC]: n.staticComponentKeys }, destinations: n.destinationObjects, media_entities: n.mediaEntities, components_data: n.componentsData, ucLayout: n.ucLayout } };
+                    return { cardState: g.uW.DEFAULT, layout: { [g.uW.DEFAULT]: { size: "large" }, [g.uW.CONDENSED]: { size: "large" }, [g.uW.STATIC]: { size: "large" } }, card: { card_name: e.card_type || "", displayOptions: { shouldAutoAdvance: k(e) }, on_visibility: { scribe: "show" }, id: e.card_uri || "", components: { [g.uW.DEFAULT]: n.componentKeys, [g.uW.STATIC]: n.staticComponentKeys }, destinations: n.destinationObjects, media_entities: n.mediaEntities, components_data: n.componentsData, ucLayout: n.ucLayout } };
                 };
             var H = n(94909);
             const B = Object.freeze({
-                    [b.sj.AMPLIFY]: { conversionHandler: a.R, shouldRenderCard: a.r },
-                    [b.sj.APP]: { conversionHandler: o.F, shouldRenderCard: o.V },
-                    [b.sj.AUDIOSPACE]: { conversionHandler: s.x, shouldRenderCard: s.W },
-                    [b.sj.BROADCAST]: { conversionHandler: d.K, shouldRenderCard: d.Q },
-                    [b.sj.DIRECT_STORE_LINK_APP]: { conversionHandler: r.T, shouldRenderCard: r.B },
-                    [b.sj.IMAGE_DIRECT_MESSAGE]: { conversionHandler: l.a, shouldRenderCard: l.R },
-                    [b.sj.LIVE_EVENT]: { conversionHandler: _.q, shouldRenderCard: _.C },
-                    [b.sj.MESSAGE_ME]: { conversionHandler: c.I, shouldRenderCard: c.i },
-                    [b.sj.MOMENT]: { conversionHandler: p.l, shouldRenderCard: p.Z },
-                    [b.sj.NEWSLETTER_ISSUE]: { conversionHandler: null, shouldRenderCard: () => !1 },
-                    [b.sj.NEWSLETTER_PUBLICATION]: { conversionHandler: null, shouldRenderCard: () => !1 },
-                    [b.sj.NOTE]: { conversionHandler: m.R, shouldRenderCard: m.q },
-                    [b.sj.PERISCOPE_BROADCAST]: { conversionHandler: u.w, shouldRenderCard: u.y },
-                    [b.sj.PLAYER]: { conversionHandler: y.L, shouldRenderCard: y.F },
-                    [b.sj.POLL_2_CHOICE_TEXT]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_3_CHOICE_TEXT]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_4_CHOICE_TEXT]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_2_CHOICE_IMAGE]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_3_CHOICE_IMAGE]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_4_CHOICE_IMAGE]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_2_CHOICE_VIDEO]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_3_CHOICE_VIDEO]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.POLL_4_CHOICE_VIDEO]: { conversionHandler: E.J, shouldRenderCard: E.l },
-                    [b.sj.PROMO_IMAGE_CONVO]: { conversionHandler: I.g, shouldRenderCard: I.o },
-                    [b.sj.PROMO_VIDEO_CONVO]: { conversionHandler: C.G, shouldRenderCard: C.T },
-                    [b.sj.SUMMARY]: { conversionHandler: h.n, shouldRenderCard: h.K },
-                    [b.sj.SUMMARY_LARGE_IMAGE]: { conversionHandler: T.N, shouldRenderCard: T.a },
-                    [b.sj.UNIFIED_CARD]: { conversionHandler: g.O4, shouldRenderCard: g.AU },
-                    [b.sj.VIDEO_DIRECT_MESSAGE]: {
+                    [g.sj.AMPLIFY]: { conversionHandler: a.R, shouldRenderCard: a.r },
+                    [g.sj.APP]: { conversionHandler: o.F, shouldRenderCard: o.V },
+                    [g.sj.AUDIOSPACE]: { conversionHandler: s.x, shouldRenderCard: s.W },
+                    [g.sj.BROADCAST]: { conversionHandler: d.K, shouldRenderCard: d.Q },
+                    [g.sj.DIRECT_STORE_LINK_APP]: { conversionHandler: r.T, shouldRenderCard: r.B },
+                    [g.sj.IMAGE_DIRECT_MESSAGE]: { conversionHandler: l.a, shouldRenderCard: l.R },
+                    [g.sj.LIVE_EVENT]: { conversionHandler: _.q, shouldRenderCard: _.C },
+                    [g.sj.MESSAGE_ME]: { conversionHandler: c.I, shouldRenderCard: c.i },
+                    [g.sj.MOMENT]: { conversionHandler: p.l, shouldRenderCard: p.Z },
+                    [g.sj.NEWSLETTER_ISSUE]: { conversionHandler: null, shouldRenderCard: () => !1 },
+                    [g.sj.NEWSLETTER_PUBLICATION]: { conversionHandler: null, shouldRenderCard: () => !1 },
+                    [g.sj.NOTE]: { conversionHandler: m.R, shouldRenderCard: m.q },
+                    [g.sj.PERISCOPE_BROADCAST]: { conversionHandler: u.w, shouldRenderCard: u.y },
+                    [g.sj.PLAYER]: { conversionHandler: y.L, shouldRenderCard: y.F },
+                    [g.sj.POLL_2_CHOICE_TEXT]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_3_CHOICE_TEXT]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_4_CHOICE_TEXT]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_2_CHOICE_IMAGE]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_3_CHOICE_IMAGE]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_4_CHOICE_IMAGE]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_2_CHOICE_VIDEO]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_3_CHOICE_VIDEO]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.POLL_4_CHOICE_VIDEO]: { conversionHandler: E.J, shouldRenderCard: E.l },
+                    [g.sj.PROMO_IMAGE_CONVO]: { conversionHandler: I.g, shouldRenderCard: I.o },
+                    [g.sj.PROMO_VIDEO_CONVO]: { conversionHandler: C.G, shouldRenderCard: C.T },
+                    [g.sj.SUMMARY]: { conversionHandler: h.n, shouldRenderCard: h.K },
+                    [g.sj.SUMMARY_LARGE_IMAGE]: { conversionHandler: T.N, shouldRenderCard: T.a },
+                    [g.sj.UNIFIED_CARD]: { conversionHandler: b.O4, shouldRenderCard: b.AU },
+                    [g.sj.VIDEO_DIRECT_MESSAGE]: {
                         conversionHandler: ({ cardId: e, cardType: t, converterOptions: n, data: i, users: a }) => {
                             const o = (0, H.FL)(i, "image_value", "player_image_original"),
                                 s = (0, H.SI)(i, "string_value", "player_stream_url"),
@@ -678,12 +678,12 @@
                                             return n && a ? { type: v.lW.DM, data: { icon: "dm", index: t, cta: n, wm_id: a, destination: e } } : null;
                                         })
                                         .filter(Boolean),
-                                _ = l(b.Fw.DESTINATION),
-                                c = l(b.Fw.DESTINATION_STATIC),
+                                _ = l(g.Fw.DESTINATION),
+                                c = l(g.Fw.DESTINATION_STATIC),
                                 p = (0, H.N8)(i, "user_value", "recipient"),
                                 m = p && a[p.id_str],
                                 u = p.id_str !== n.tweetUserId && m;
-                            return { cardState: b.uW.DEFAULT, layout: { [b.uW.DEFAULT]: { size: "large" }, [b.uW.CONDENSED]: { size: "large" }, [b.uW.STATIC]: { size: "large" } }, card: { card_name: t, on_visibility: { scribe: "show" }, id: e, components: { [b.uW.DEFAULT]: [b.Fw.MEDIA, ...(u ? [b.Fw.DETAILS] : []), b.Fw.BUTTON_GROUP], [b.uW.STATIC]: [b.Fw.MEDIA_STATIC, ...(u ? [b.Fw.DETAILS] : []), b.Fw.BUTTON_GROUP_STATIC] }, destinations: { [b.Fw.DESTINATION]: { type: b._g.ACTION, data: { action_data: { persist: !1, type: "dm", recipient: p.id_str }, auth_required: !0, scribe: "click", promoted_log: v.YE.DM_BUTTON_CLICK } }, [b.Fw.DESTINATION_STATIC]: { type: b._g.BROWSER, data: { url_data: { url: n.tweetPermalink || b.$H }, scribe: "open_link", promoted_log: v.YE.CARD_URL_CLICK } } }, media_entities: { [b.Fw.IMAGE_ENTITY]: (0, H.WW)(o || {}), [b.Fw.VIDEO_ENTITY]: { type: "video", aspect_ratio: d, content_id: (0, H.SI)(i, "string_value", "player_content_id") || (0, H.cT)(s), ...(r ? { duration_ms: 1e3 * parseInt(r, 10) } : null), vmap_url: s, poster_image: o, publisher_id: (0, H.SI)(i, "string_value", "player_owner_id") || n.tweetUserId, variants: [{ src: (0, H.SI)(i, "string_value", "player_hls_url"), type: "application/x-mpegURL" }] } }, components_data: { [b.Fw.MEDIA]: { type: b.Qe.MEDIA, data: { id: b.Fw.VIDEO_ENTITY } }, [b.Fw.MEDIA_STATIC]: { type: b.Qe.MEDIA, data: { id: b.Fw.IMAGE_ENTITY, destination: b.Fw.DESTINATION_STATIC } }, ...(u ? { [b.Fw.DETAILS]: { type: b.Qe.DETAILS, data: { attribution: m } } } : null), [b.Fw.BUTTON_GROUP]: { type: b.Qe.BUTTON_GROUP, data: { buttons: _ } }, [b.Fw.BUTTON_GROUP_STATIC]: { type: b.Qe.BUTTON_GROUP, data: { buttons: c } } } } };
+                            return { cardState: g.uW.DEFAULT, layout: { [g.uW.DEFAULT]: { size: "large" }, [g.uW.CONDENSED]: { size: "large" }, [g.uW.STATIC]: { size: "large" } }, card: { card_name: t, on_visibility: { scribe: "show" }, id: e, components: { [g.uW.DEFAULT]: [g.Fw.MEDIA, ...(u ? [g.Fw.DETAILS] : []), g.Fw.BUTTON_GROUP], [g.uW.STATIC]: [g.Fw.MEDIA_STATIC, ...(u ? [g.Fw.DETAILS] : []), g.Fw.BUTTON_GROUP_STATIC] }, destinations: { [g.Fw.DESTINATION]: { type: g._g.ACTION, data: { action_data: { persist: !1, type: "dm", recipient: p.id_str }, auth_required: !0, scribe: "click", promoted_log: v.YE.DM_BUTTON_CLICK } }, [g.Fw.DESTINATION_STATIC]: { type: g._g.BROWSER, data: { url_data: { url: n.tweetPermalink || g.$H }, scribe: "open_link", promoted_log: v.YE.CARD_URL_CLICK } } }, media_entities: { [g.Fw.IMAGE_ENTITY]: (0, H.WW)(o || {}), [g.Fw.VIDEO_ENTITY]: { type: "video", aspect_ratio: d, content_id: (0, H.SI)(i, "string_value", "player_content_id") || (0, H.cT)(s), ...(r ? { duration_ms: 1e3 * parseInt(r, 10) } : null), vmap_url: s, poster_image: o, publisher_id: (0, H.SI)(i, "string_value", "player_owner_id") || n.tweetUserId, variants: [{ src: (0, H.SI)(i, "string_value", "player_hls_url"), type: "application/x-mpegURL" }] } }, components_data: { [g.Fw.MEDIA]: { type: g.Qe.MEDIA, data: { id: g.Fw.VIDEO_ENTITY } }, [g.Fw.MEDIA_STATIC]: { type: g.Qe.MEDIA, data: { id: g.Fw.IMAGE_ENTITY, destination: g.Fw.DESTINATION_STATIC } }, ...(u ? { [g.Fw.DETAILS]: { type: g.Qe.DETAILS, data: { attribution: m } } } : null), [g.Fw.BUTTON_GROUP]: { type: g.Qe.BUTTON_GROUP, data: { buttons: _ } }, [g.Fw.BUTTON_GROUP_STATIC]: { type: g.Qe.BUTTON_GROUP, data: { buttons: c } } } } };
                         },
                         shouldRenderCard: (e) => (0, H.BY)(e, (e) => e("recipient").and("cta1").and("cta1_wm_id").and("player_width").and("player_height").and("player_stream_url")),
                     },
@@ -736,4 +736,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.a03a4eda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5.1d4de96a.js.map

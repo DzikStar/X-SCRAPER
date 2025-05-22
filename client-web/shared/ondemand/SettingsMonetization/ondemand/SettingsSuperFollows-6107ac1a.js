@@ -2,18 +2,18 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a"],
     {
-        829028: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        829028: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsManagementPerksConfirmScreen_user", selections: [{ args: null, kind: "FragmentSpread", name: "SuperFollowsPerksConfirmCore_user" }], type: "User", abstractKey: null, hash: "917f96d69ad720b93ab8f315cf935d4e" };
             const l = r;
         },
-        490188: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        490188: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsManagementPerksConfirmScreen_viewer", selections: [{ args: null, kind: "FragmentSpread", name: "SuperFollowsPerksConfirmCore_viewer" }], type: "Viewer", abstractKey: null, hash: "4c4388061d4dc4455ddbf56f7902c6ed" };
             const l = r;
         },
-        360462: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        360462: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -30,8 +30,8 @@
             };
             const l = r;
         },
-        538341: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        538341: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -47,8 +47,8 @@
             };
             const l = r;
         },
-        886733: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        886733: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -65,8 +65,8 @@
             };
             const l = r;
         },
-        116362: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        116362: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -82,23 +82,23 @@
             };
             const l = r;
         },
-        75277: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        75277: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsManagementSummaryPricing_user", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsCancelPriceChangeRequest_user" }], type: "User", abstractKey: null, hash: "8c04e240d5b719f04369f83927c31d66" };
             const l = r;
         },
-        585158: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        585158: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsManagementSummaryScreen_priceOfferings", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsOnboardingDraftSelectedPriceValue_priceOfferings" }], type: "SuperFollowsPriceOfferings", abstractKey: null, hash: "4d92ea635e5fbd3695288d7228ffe6ee" };
             const l = r;
         },
-        951503: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        951503: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsManagementSummaryScreen_subscriptionsPriceOfferings", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsOnboardingDraftSelectedPriceValue_subscriptionsPriceOfferings" }], type: "SubscriptionsPriceOfferings", abstractKey: null, hash: "f3fa3d2f0615b62b40942713378c0e8e" };
             const l = r;
         },
-        401301: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        401301: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -123,21 +123,21 @@
                         storageKey: null,
                     },
                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "a29402b93dcbf056a345a878a9cc6e64",
+                hash: "ad9c239186e627dac3b19dd4f015a885",
             };
             const l = r;
         },
-        949289: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        949289: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsManagementSummaryScreen_viewer", selections: [{ args: null, kind: "FragmentSpread", name: "SuperFollowsDeactivateButton_viewer" }], type: "Viewer", abstractKey: null, hash: "8a276cbc102a5ad8be1ae83387f39166" };
             const l = r;
         },
-        708196: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        708196: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -149,9 +149,9 @@
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserCore",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "core",
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
@@ -164,12 +164,12 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "6160a6213e27c605e86bdc94c7a54752",
+                hash: "f88fc83177d29296cf35e5c2351af482",
             };
             const l = r;
         },
-        824937: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        824937: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -186,8 +186,8 @@
             };
             const l = r;
         },
-        474436: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        474436: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -195,16 +195,16 @@
                 name: "SuperFollowsPerksDescriptionCore_user",
                 selections: [
                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "943a46a29f60854f99cff79f03ea8d93",
+                hash: "ae882d445d73e4aada544458571a673b",
             };
             const l = r;
         },
-        169781: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        169781: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -220,8 +220,8 @@
             };
             const l = r;
         },
-        885017: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        885017: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -229,16 +229,16 @@
                 name: "SuperFollowsPerksIntroCore_user",
                 selections: [
                     { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "cd3d2808b3a4eaa84f4369cb079b1940",
+                hash: "d62c14a2a8d9d4f9645805fd7ed93556",
             };
             const l = r;
         },
-        498292: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        498292: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -254,13 +254,13 @@
             };
             const l = r;
         },
-        42954: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        42954: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { kind: "InlineDataFragment", name: "superFollowsShared_viewer", hash: "7d93eb3778f44bb69f422e49ec09cd27" };
             const l = r;
         },
-        874010: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        874010: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -277,8 +277,8 @@
             };
             const l = r;
         },
-        155826: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        155826: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -296,8 +296,8 @@
             };
             const l = r;
         },
-        161475: (e, a, n) => {
-            n.d(a, { Z: () => s });
+        161475: (e, n, a) => {
+            a.d(n, { Z: () => s });
             var r,
                 l,
                 t = {
@@ -328,23 +328,23 @@
             t.hash = "87601e4efecb9526acb2a7e0892f43e4";
             const s = t;
         },
-        461715: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        461715: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsCancelPriceChangeRequest_user", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsOnboardingPriceChangeRequestId_user" }], type: "User", abstractKey: null, hash: "a00ed669a99e8f60e512a41c53868438" };
             const l = r;
         },
-        455379: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        455379: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingBenefitsId_user", selections: [{ alias: null, args: null, concreteType: "AudienceRewardsBenefitsData", kind: "LinkedField", name: "super_follow_creator_benefits", plural: !1, selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], storageKey: null }], type: "User", abstractKey: null, hash: "6d25264b378a634b21185a5d8eebd0b7" };
             const l = r;
         },
-        110930: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        110930: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingCreatorIntro_user", selections: [{ alias: null, args: null, concreteType: "AudienceRewardsBenefitsData", kind: "LinkedField", name: "super_follow_creator_benefits", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "creator_intro", storageKey: null }], storageKey: null }], type: "User", abstractKey: null, hash: "2c78fe8b9b3d66c42a2981bebc726b36" };
             const l = r;
         },
-        360895: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        360895: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -382,18 +382,18 @@
             };
             const l = r;
         },
-        608379: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        608379: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingDraftCreatorIntro_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, concreteType: "SuperFollowsOnboardingDraft", kind: "LinkedField", name: "super_follows_onboarding_draft", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "creator_intro", storageKey: null }], storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "17a492d43e8514a76d7864a04c0ed95c" };
             const l = r;
         },
-        791440: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        791440: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingDraftDescription_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, concreteType: "SuperFollowsOnboardingDraft", kind: "LinkedField", name: "super_follows_onboarding_draft", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }], storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "6f17367ec2cf59e4facac9cf8d0483cb" };
             const l = r;
         },
-        770094: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        770094: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -410,8 +410,8 @@
             };
             const l = r;
         },
-        117365: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        117365: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -438,34 +438,34 @@
             };
             const l = r;
         },
-        261685: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        261685: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingDraftSelectedPriceValue_priceOfferings", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsOnboardingDraftPrices__priceOfferings" }], type: "SuperFollowsPriceOfferings", abstractKey: null, hash: "48e3b9cc86226018495a607ac7191532" };
             const l = r;
         },
-        249817: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        249817: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingDraftSelectedPriceValue_subscriptionsPriceOfferings", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsOnboardingDraftPrices_subscriptionsPriceOfferings" }], type: "SubscriptionsPriceOfferings", abstractKey: null, hash: "3982844a184fcacd961d084e3185aa34" };
             const l = r;
         },
-        124778: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        124778: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingDraftSelectedPrice_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, concreteType: "SuperFollowsOnboardingDraft", kind: "LinkedField", name: "super_follows_onboarding_draft", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "selected_price", storageKey: null }], storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "465d5034703427b8cee56d8d91b4f27a" };
             const l = r;
         },
         325678: () => {},
-        816304: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        816304: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingPriceChangeRequestId_user", selections: [{ alias: null, args: null, concreteType: "PendingPriceChange", kind: "LinkedField", name: "super_follow_pending_price_change", plural: !1, selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], storageKey: null }], type: "User", abstractKey: null, hash: "0f697874f8a40e96bf1ad910caa1f3b5" };
             const l = r;
         },
-        57236: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        57236: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsOnboardingSelectedPrice_user", selections: [{ alias: null, args: null, concreteType: "SuperFollowsSelectedPrice", kind: "LinkedField", name: "super_follow_creator_price_metadata", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "selected_price", storageKey: null }], storageKey: null }], type: "User", abstractKey: null, hash: "24836cae0468e75f38acec52f2fbb824" };
             const l = r;
         },
-        696138: (e, a, n) => {
-            n.d(a, { Z: () => s });
+        696138: (e, n, a) => {
+            a.d(n, { Z: () => s });
             var r,
                 l,
                 t = {
@@ -499,8 +499,8 @@
             t.hash = "b142db4c70fbbc54fea0835c0bae56e8";
             const s = t;
         },
-        837390: (e, a, n) => {
-            n.d(a, { Z: () => l });
+        837390: (e, n, a) => {
+            a.d(n, { Z: () => l });
             var r = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -517,32 +517,32 @@
             };
             const l = r;
         },
-        229333: (e, a, n) => {
-            n.d(a, { Z: () => c });
-            var r = n(202784),
-                l = n(466999),
-                t = n(325686),
-                s = n(392237),
-                i = n(332920);
-            const o = n.n(i)().e5b0063d;
+        229333: (e, n, a) => {
+            a.d(n, { Z: () => c });
+            var r = a(202784),
+                l = a(466999),
+                t = a(325686),
+                s = a(392237),
+                i = a(332920);
+            const o = a.n(i)().e5b0063d;
             let d = 0;
             class u extends r.Component {
                 constructor() {
                     super(), (this._listDomId = `accessible-list-${d}`), (d += 1);
                 }
                 render() {
-                    const { children: e, title: a } = this.props,
-                        n = o({ title: a });
-                    return r.createElement(t.Z, { "aria-labelledby": this._listDomId, role: "region" }, r.createElement(l.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: s.default.visuallyHidden }, a), r.createElement(t.Z, { "aria-label": n }, e));
+                    const { children: e, title: n } = this.props,
+                        a = o({ title: n });
+                    return r.createElement(t.Z, { "aria-labelledby": this._listDomId, role: "region" }, r.createElement(l.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: s.default.visuallyHidden }, n), r.createElement(t.Z, { "aria-label": a }, e));
                 }
             }
             const c = u;
         },
-        414939: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            var r = n(202784),
-                l = n(325686),
-                t = n(392237);
+        414939: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var r = a(202784),
+                l = a(325686),
+                t = a(392237);
             class s extends r.Component {
                 shouldComponentUpdate() {
                     return !1;
@@ -554,121 +554,121 @@
             const i = t.default.create((e) => ({ root: { height: 10 * e.lineHeightsPx.body } })),
                 o = s;
         },
-        965245: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            var r = n(807896),
-                l = n(202784),
-                t = n(229333),
-                s = n(414939),
-                i = n(334346);
-            const o = ({ accessibilityTitle: e, footer: a = l.createElement(s.Z, null), ...n }) => {
-                const o = l.createElement(i.C, (0, r.Z)({}, n, { footer: a }));
+        965245: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var r = a(807896),
+                l = a(202784),
+                t = a(229333),
+                s = a(414939),
+                i = a(334346);
+            const o = ({ accessibilityTitle: e, footer: n = l.createElement(s.Z, null), ...a }) => {
+                const o = l.createElement(i.C, (0, r.Z)({}, a, { footer: n }));
                 return e ? l.createElement(t.Z, { title: e }, o) : o;
             };
         },
-        253493: (e, a, n) => {
-            n.d(a, { Z: () => k });
-            var r = n(202784),
-                l = n(107267),
-                t = n(791632),
-                s = n(325686),
-                i = n(537392),
-                o = n(10656),
-                d = n(655352),
-                u = n(555079),
-                c = n(500002),
-                m = n(625661),
-                p = n(449067),
-                g = n(655543),
-                b = n(715601),
-                f = n(392237);
-            const y = f.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...f.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+        253493: (e, n, a) => {
+            a.d(n, { Z: () => k });
+            var r = a(202784),
+                l = a(107267),
+                t = a(791632),
+                s = a(325686),
+                i = a(537392),
+                o = a(10656),
+                d = a(655352),
+                u = a(555079),
+                c = a(500002),
+                m = a(625661),
+                p = a(449067),
+                g = a(655543),
+                f = a(715601),
+                b = a(392237);
+            const y = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
             class h extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: y.fill }, r.createElement(b.Z, { style: y.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: y.fill }, r.createElement(f.Z, { style: y.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
                     return r.createElement(i.ZP, null, ({ containerWidth: e }) => (o.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
                 }
                 _renderForOneColumnLayout() {
-                    const { appBarStyle: e, children: a, leftControl: n, screenType: l, showSubtitleOnRoot: t, showSubtitleOnWideDetail: s, withBottomBorder: i, withDetailOpen: o, ...u } = this.props;
-                    return r.createElement(r.Fragment, null, (0, d.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : r.createElement(p.Z.Configure, u), a);
+                    const { appBarStyle: e, children: n, leftControl: a, screenType: l, showSubtitleOnRoot: t, showSubtitleOnWideDetail: s, withBottomBorder: i, withDetailOpen: o, ...u } = this.props;
+                    return r.createElement(r.Fragment, null, (0, d.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : r.createElement(p.Z.Configure, u), n);
                 }
                 _renderForTwoColumnLayout() {
                     const e = this.context.rootDetailPerColumnScroll;
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: a, TabBar: n, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: b, rightControl: f, screenType: h, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, subtitle: S, title: v, titleIconCell: C, titleIconCellSize: D, withDetailOpen: Z, withSearchBox: K, withTweetButton: E, withWideContainer: O } = this.props,
+                    const { SideNavButton: n, TabBar: a, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, screenType: h, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, subtitle: S, title: v, titleIconCell: C, titleIconCellSize: D, withDetailOpen: Z, withSearchBox: K, withTweetButton: E, withWideContainer: O } = this.props,
                         P = "root" === h,
                         B = "secondaryRoot" === h,
                         T = "primaryDetail" === h,
                         I = (T && _) || (P && w),
                         x = P || (T && e),
                         L = P ? u.ey : T ? u.vX : void 0,
-                        R = r.createElement(s.Z, { style: y.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: x, history: d, leftControl: c, middleControl: g, onBackClick: b, rightControl: f, secondaryBar: k, style: l, subtitle: I ? S : void 0, title: v, titleDomId: L, titleIconCell: C, titleIconCellSize: D, withWideContainer: O })),
-                        V = P || (B && Z) ? null : r.createElement(p.Z.Configure, { SideNavButton: a, TabBar: n, backLocation: t, documentTitle: i, headerless: o, middleControl: g, onBackClick: b, rightControl: f, searchBoxOptions: F, subtitle: S, title: v, withSearchBox: K, withTweetButton: E });
+                        R = r.createElement(s.Z, { style: y.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: x, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, secondaryBar: k, style: l, subtitle: I ? S : void 0, title: v, titleDomId: L, titleIconCell: C, titleIconCellSize: D, withWideContainer: O })),
+                        V = P || (B && Z) ? null : r.createElement(p.Z.Configure, { SideNavButton: n, TabBar: a, backLocation: t, documentTitle: i, headerless: o, middleControl: g, onBackClick: f, rightControl: b, searchBoxOptions: F, subtitle: S, title: v, withSearchBox: K, withTweetButton: E });
                     return r.createElement(r.Fragment, null, V, R);
                 }
             }
             (h.contextType = g.Z), (h.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
             const F = (0, c.ZP)(h),
                 k = (e) => {
-                    const a = (0, l.useHistory)();
-                    return (0, t.HD)(a) ? e.children || null : r.createElement(F, e);
+                    const n = (0, l.useHistory)();
+                    return (0, t.HD)(n) ? e.children || null : r.createElement(F, e);
                 };
         },
-        813254: (e, a, n) => {
-            n.d(a, { Z: () => d });
-            var r = n(202784),
-                l = n(325686),
-                t = n(708852),
-                s = n(392237);
-            const i = ({ children: e, style: a }) => r.createElement(l.Z, { style: [u.frame, a] }, r.createElement(l.Z, { style: u.browserBar }, r.createElement(l.Z, { style: u.browserBarButtons }, r.createElement(l.Z, { style: u.browserBarButton }), r.createElement(l.Z, { style: u.browserBarButton }), r.createElement(l.Z, { style: u.browserBarButton })), r.createElement(l.Z, { style: u.browserBarUrlInputWrapper }, r.createElement(l.Z, { style: u.browserBarUrlInput }))), e),
-                o = ({ children: e, style: a }) => r.createElement(l.Z, { style: a }, r.createElement(l.Z, { style: u.content }, e)),
-                d = ({ children: e, style: a }) => ((0, t.D2)() ? r.createElement(i, { style: a }, r.createElement(o, { style: u.contentWide }, e)) : r.createElement(o, { style: a }, e)),
+        813254: (e, n, a) => {
+            a.d(n, { Z: () => d });
+            var r = a(202784),
+                l = a(325686),
+                t = a(708852),
+                s = a(392237);
+            const i = ({ children: e, style: n }) => r.createElement(l.Z, { style: [u.frame, n] }, r.createElement(l.Z, { style: u.browserBar }, r.createElement(l.Z, { style: u.browserBarButtons }, r.createElement(l.Z, { style: u.browserBarButton }), r.createElement(l.Z, { style: u.browserBarButton }), r.createElement(l.Z, { style: u.browserBarButton })), r.createElement(l.Z, { style: u.browserBarUrlInputWrapper }, r.createElement(l.Z, { style: u.browserBarUrlInput }))), e),
+                o = ({ children: e, style: n }) => r.createElement(l.Z, { style: n }, r.createElement(l.Z, { style: u.content }, e)),
+                d = ({ children: e, style: n }) => ((0, t.D2)() ? r.createElement(i, { style: n }, r.createElement(o, { style: u.contentWide }, e)) : r.createElement(o, { style: n }, e)),
                 u = s.default.create((e) => ({ frame: { backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium, boxShadow: e.boxShadows.medium }, browserBar: { backgroundColor: e.colors.cellBackground, borderTopStartRadius: e.borderRadii.medium, borderTopEndRadius: e.borderRadii.medium, borderBottomWidth: e.spaces.space1, borderBottomColor: e.colors.gray200, display: "inline-flex", flexDirection: "row", gap: e.spaces.space36, paddingHorizontal: e.spaces.space20 }, browserBarButtons: { alignItems: "center", display: "inline-flex", flexDirection: "row", gap: e.spaces.space8, height: e.spaces.space40 }, browserBarButton: { backgroundColor: e.colors.gray200, borderColor: e.colors.gray400, borderRadius: e.borderRadii.infinite, borderWidth: e.borderWidths.small, height: e.spaces.space12, width: e.spaces.space12 }, browserBarUrlInputWrapper: { flex: 1, height: e.spaces.space40, justifyContent: "center" }, browserBarUrlInput: { backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.infinite, height: e.spaces.space28 }, contentWide: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32, paddingTop: e.spaces.space12 }, content: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.medium, minHeight: 358, overflow: "hidden" } }));
         },
-        272191: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            var r = n(807896),
-                l = n(202784),
-                t = n(813254),
-                s = n(734189);
-            const i = (e, a) => {
-                    const { style: n, ...i } = e;
-                    return l.createElement(t.Z, { style: n }, l.createElement(s.Z, (0, r.Z)({}, i, { ref: a, withVisibilityCallout: !0 })));
+        272191: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var r = a(807896),
+                l = a(202784),
+                t = a(813254),
+                s = a(734189);
+            const i = (e, n) => {
+                    const { style: a, ...i } = e;
+                    return l.createElement(t.Z, { style: a }, l.createElement(s.Z, (0, r.Z)({}, i, { ref: n, withVisibilityCallout: !0 })));
                 },
                 o = l.forwardRef(i);
         },
-        126819: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            var r = n(807896),
-                l = n(202784),
-                t = n(813254),
-                s = n(144861);
-            const i = (e, a) => {
-                    const { style: n, ...i } = e;
-                    return l.createElement(t.Z, { style: n }, l.createElement(s.Z, (0, r.Z)({}, i, { ref: a })));
+        126819: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var r = a(807896),
+                l = a(202784),
+                t = a(813254),
+                s = a(144861);
+            const i = (e, n) => {
+                    const { style: a, ...i } = e;
+                    return l.createElement(t.Z, { style: a }, l.createElement(s.Z, (0, r.Z)({}, i, { ref: n })));
                 },
                 o = l.forwardRef(i);
         },
-        779295: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            var r = n(202784),
-                l = n(325686),
-                t = n(392237),
-                s = n(813254),
-                i = n(8685);
+        779295: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var r = a(202784),
+                l = a(325686),
+                t = a(392237),
+                s = a(813254),
+                i = a(8685);
             const o = (e) => r.createElement(s.Z, null, r.createElement(l.Z, { style: d.browserContent }, r.createElement(i.Z, e))),
                 d = t.default.create((e) => ({ browserContent: { paddingBottom: e.spaces.space48 } }));
         },
-        105633: (e, a, n) => {
-            n.d(a, { Z: () => D });
+        105633: (e, n, a) => {
+            a.d(n, { Z: () => D });
             var r,
                 l,
                 t = {
@@ -703,14 +703,14 @@
             const s = t;
             var i = (function () {
                 var e = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }],
-                    a = [
+                    n = [
                         { kind: "Variable", name: "rest_id", variableName: "userId" },
                         { kind: "Literal", name: "s", value: "5551" },
                     ],
-                    n = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                    a = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
                     r = { alias: null, args: null, concreteType: "CreatorPreferences", kind: "LinkedField", name: "creator_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "previews_enabled", storageKey: null }], storageKey: null };
                 return {
-                    fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "PreviewsEnabledButtonQuery", selections: [{ alias: null, args: a, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [n, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [r], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "PreviewsEnabledButtonQuery", selections: [{ alias: null, args: n, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [a, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [r], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: e,
@@ -719,13 +719,13 @@
                         selections: [
                             {
                                 alias: null,
-                                args: a,
+                                args: n,
                                 concreteType: "UserResults",
                                 kind: "LinkedField",
                                 name: "user_result_by_rest_id",
                                 plural: !1,
                                 selections: [
-                                    n,
+                                    a,
                                     {
                                         alias: null,
                                         args: null,
@@ -735,7 +735,7 @@
                                         plural: !1,
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                            { kind: "InlineFragment", selections: [r, n], type: "User", abstractKey: null },
+                                            { kind: "InlineFragment", selections: [r, a], type: "User", abstractKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -749,19 +749,19 @@
             })();
             i.hash = "be43479767ec57325b544a99890b8ea2";
             const o = i;
-            var d = n(202784),
-                u = n(614983),
-                c = n.n(u),
-                m = (n(585488), n(712696)),
-                p = n.n(m),
-                g = n(351743),
-                b = n.n(g),
-                f = n(420412),
-                y = n(954110),
-                h = n(332920),
-                F = n.n(h),
-                k = n(125363),
-                w = n(390387);
+            var d = a(202784),
+                u = a(614983),
+                c = a.n(u),
+                m = (a(585488), a(712696)),
+                p = a.n(m),
+                g = a(351743),
+                f = a.n(g),
+                b = a(420412),
+                y = a(954110),
+                h = a(332920),
+                F = a.n(h),
+                k = a(125363),
+                w = a(390387);
             const _ = F().g40b2b30,
                 S = F().c1521804,
                 v = o,
@@ -769,74 +769,74 @@
             function D() {
                 const e = (0, k.v9)(w.x0);
                 c()(e, "UserID must be defined");
-                const a = p()(v, { userId: e }),
-                    [n] = b()(C),
-                    r = a?.user_result_by_rest_id?.result?.creator_preferences?.previews_enabled,
+                const n = p()(v, { userId: e }),
+                    [a] = f()(C),
+                    r = n?.user_result_by_rest_id?.result?.creator_preferences?.previews_enabled,
                     l = void 0 === r || r,
                     [t, s] = d.useState(l),
                     i = d.useCallback(() => {
                         s((e) => !e),
-                            n({
+                            a({
                                 optimisticUpdater: function (e) {
-                                    const n = a.user_result_by_rest_id?.id;
-                                    if (n) {
-                                        const a = e.get(n);
-                                        a && a.setValue(!t, "previewsEnabled");
+                                    const a = n.user_result_by_rest_id?.id;
+                                    if (a) {
+                                        const n = e.get(a);
+                                        n && n.setValue(!t, "previewsEnabled");
                                     }
                                 },
                                 variables: { previewsEnabled: !t, userId: e },
                             });
-                    }, [n, t, e, a]);
-                return d.createElement(d.Fragment, null, d.createElement(f.Z, null), d.createElement(y.Z, { checked: t, disabled: !1, helpText: S, label: _, name: "previewsEnabledTabCustomization", onChange: i }), d.createElement(f.Z, null));
+                    }, [a, t, e, n]);
+                return d.createElement(d.Fragment, null, d.createElement(b.Z, null), d.createElement(y.Z, { checked: t, disabled: !1, helpText: S, label: _, name: "previewsEnabledTabCustomization", onChange: i }), d.createElement(b.Z, null));
             }
         },
-        865721: (e, a, n) => {
-            n.d(a, { Z: () => x });
-            var r = n(807896),
+        865721: (e, n, a) => {
+            a.d(n, { Z: () => x });
+            var r = a(807896),
                 l = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SuperFollowsDeactivateButton_viewer", selections: [{ args: null, kind: "FragmentSpread", name: "useSuperFollowsDeactivate_viewer" }], type: "Viewer", abstractKey: null, hash: "4afbdff48be896080e44496b4cd6868e" };
             const t = l;
-            var s = n(202784),
-                i = (n(585488), n(277660)),
-                o = n.n(i),
-                d = n(154003),
-                u = n(190286),
-                c = n(332920),
-                m = n.n(c),
-                p = n(668214),
-                g = n(601576);
-            const b = (0, p.Z)().propsFromActions(() => ({ addToast: g.fz }));
-            var f,
-                y = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivateMutation", selections: (f = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "deactivate_super_follows_creator", storageKey: 'deactivate_super_follows_creator(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useSuperFollowsDeactivateMutation", selections: f }, params: { id: "K5_KjMpjdtjQXzKGLqyFXw", metadata: {}, name: "useSuperFollowsDeactivateMutation", operationKind: "mutation", text: null } };
+            var s = a(202784),
+                i = (a(585488), a(277660)),
+                o = a.n(i),
+                d = a(154003),
+                u = a(190286),
+                c = a(332920),
+                m = a.n(c),
+                p = a(668214),
+                g = a(601576);
+            const f = (0, p.Z)().propsFromActions(() => ({ addToast: g.fz }));
+            var b,
+                y = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivateMutation", selections: (b = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "deactivate_super_follows_creator", storageKey: 'deactivate_super_follows_creator(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useSuperFollowsDeactivateMutation", selections: b }, params: { id: "K5_KjMpjdtjQXzKGLqyFXw", metadata: {}, name: "useSuperFollowsDeactivateMutation", operationKind: "mutation", text: null } };
             y.hash = "c33de27607da73145e2d32d5855eaa27";
             const h = y;
             var F = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivate_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "be30a750d32c634903dac132ededc4bf" };
             const k = F;
-            var w = n(614983),
-                _ = n.n(w),
-                S = n(351743),
-                v = n.n(S);
+            var w = a(614983),
+                _ = a.n(w),
+                S = a(351743),
+                v = a.n(S);
             const C = k,
                 D = h,
                 Z = (e) => {
-                    const a = o()(C, e),
-                        [n, r] = v()(D);
+                    const n = o()(C, e),
+                        [a, r] = v()(D);
                     return [
                         s.useCallback(
                             () =>
                                 new Promise((e, r) => {
-                                    n({
+                                    a({
                                         variables: {},
-                                        onCompleted: (a, n) => e(),
+                                        onCompleted: (n, a) => e(),
                                         onError: r,
                                         updater: (e) => {
-                                            const n = a.__id;
-                                            _()(n, "viewerId must be specified");
-                                            const r = e.get(n);
+                                            const a = n.__id;
+                                            _()(a, "viewerId must be specified");
+                                            const r = e.get(a);
                                             _()(r, "viewerRecord must be specified"), r.setValue(!1, "is_active_creator");
                                         },
                                     });
                                 }),
-                            [n, a.__id],
+                            [a, n.__id],
                         ),
                         r,
                     ];
@@ -848,91 +848,91 @@
                 B = m().f82a23ec,
                 T = m().ef4602ec,
                 I = t,
-                x = b((e) => {
-                    const { addToast: a, disabled: n, label: l, onCancel: t, onConfirm: i, viewer: c, ...m } = e,
+                x = f((e) => {
+                    const { addToast: n, disabled: a, label: l, onCancel: t, onConfirm: i, viewer: c, ...m } = e,
                         p = o()(I, c),
-                        [g, b] = s.useState(!1),
-                        [f, y] = Z(p),
+                        [g, f] = s.useState(!1),
+                        [b, y] = Z(p),
                         h = s.useCallback(() => {
-                            b(!0);
+                            f(!0);
                         }, []),
                         F = s.useCallback(() => {
-                            f()
+                            b()
                                 .then(() => {
-                                    b(!1), a({ text: B }), i?.();
+                                    f(!1), n({ text: B }), i?.();
                                 })
                                 .catch(() => {
-                                    a({ text: T });
+                                    n({ text: T });
                                 });
-                        }, [a, f, i]),
+                        }, [n, b, i]),
                         k = s.useCallback(() => {
-                            b(!1), t?.();
+                            f(!1), t?.();
                         }, [t]);
-                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || n, onPress: h, type: "destructiveOutlined" }), l), g && s.createElement(u.Z, { cancelButtonLabel: O, confirmButtonLabel: P, confirmButtonType: "destructiveFilled", headline: K, onCancel: k, onConfirm: F, text: E }));
+                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || a, onPress: h, type: "destructiveOutlined" }), l), g && s.createElement(u.Z, { cancelButtonLabel: O, confirmButtonLabel: P, confirmButtonType: "destructiveFilled", headline: K, onCancel: k, onConfirm: F, text: E }));
                 });
         },
-        420412: (e, a, n) => {
-            n.d(a, { Z: () => o });
-            var r = n(202784),
-                l = n(325686),
-                t = n(235902),
-                s = n(885015),
-                i = n(392237);
-            function o({ borderColor: e = "borderColor", isSlim: a = !1, label: n }) {
+        420412: (e, n, a) => {
+            a.d(n, { Z: () => o });
+            var r = a(202784),
+                l = a(325686),
+                t = a(235902),
+                s = a(885015),
+                i = a(392237);
+            function o({ borderColor: e = "borderColor", isSlim: n = !1, label: a }) {
                 const { isWebRedesign: o } = t.ZP.useProps(),
                     u = "borderColor" === e || "nestedBorderColor" === e ? d[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
-                return n ? r.createElement(s.Z, { style: !a && d.root, withGutter: !0 }, r.createElement(l.Z, { style: d.gapColumn }, r.createElement(l.Z, { style: [d.gap, u] })), r.createElement(l.Z, { style: d.gapText }, n), r.createElement(l.Z, { style: d.gapColumn }, r.createElement(l.Z, { style: [d.gap, u] }))) : r.createElement(l.Z, { style: [!a && d.root, o() && d.rootRedesign, d.gap, u] });
+                return a ? r.createElement(s.Z, { style: !n && d.root, withGutter: !0 }, r.createElement(l.Z, { style: d.gapColumn }, r.createElement(l.Z, { style: [d.gap, u] })), r.createElement(l.Z, { style: d.gapText }, a), r.createElement(l.Z, { style: d.gapColumn }, r.createElement(l.Z, { style: [d.gap, u] }))) : r.createElement(l.Z, { style: [!n && d.root, o() && d.rootRedesign, d.gap, u] });
             }
             const d = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
-        885015: (e, a, n) => {
-            n.d(a, { Z: () => d });
-            var r = n(807896),
-                l = n(202784),
-                t = n(325686),
-                s = n(392237);
+        885015: (e, n, a) => {
+            a.d(n, { Z: () => d });
+            var r = a(807896),
+                l = a(202784),
+                t = a(325686),
+                s = a(392237);
             class i extends l.Component {
                 render() {
-                    const { children: e, style: a, withGutter: n, ...s } = this.props,
-                        i = l.Children.map(e, (e) => e && l.cloneElement(e, { style: [e.props.style, o.column, n && o.withGutterColumn] }));
-                    return l.createElement(t.Z, (0, r.Z)({ style: [a, o.root, n && o.withGutter] }, s), i);
+                    const { children: e, style: n, withGutter: a, ...s } = this.props,
+                        i = l.Children.map(e, (e) => e && l.cloneElement(e, { style: [e.props.style, o.column, a && o.withGutterColumn] }));
+                    return l.createElement(t.Z, (0, r.Z)({ style: [n, o.root, a && o.withGutter] }, s), i);
                 }
             }
             i.defaultProps = { withGutter: !1 };
             const o = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 d = i;
         },
-        466818: (e, a, n) => {
-            n.d(a, { ZP: () => y });
-            var r = n(202784),
-                l = n(325686),
-                t = n(487552),
-                s = n(302752),
-                i = n(183806),
-                o = n(731708),
-                d = n(950822),
-                u = n(224162),
-                c = n(392237);
-            const m = r.forwardRef((e, a) => (0, d.Z)("select", { ...e, ref: a })),
+        466818: (e, n, a) => {
+            a.d(n, { ZP: () => y });
+            var r = a(202784),
+                l = a(325686),
+                t = a(487552),
+                s = a(302752),
+                i = a(183806),
+                o = a(731708),
+                d = a(950822),
+                u = a(224162),
+                c = a(392237);
+            const m = r.forwardRef((e, n) => (0, d.Z)("select", { ...e, ref: n })),
                 p = (e) => (0, d.Z)("option", e);
             let g = 1;
-            class b extends r.PureComponent {
+            class f extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._selectRef = r.createRef()),
                         (this.state = { isFocused: !1 }),
                         (this._handleChange = (e) => {
-                            const { onChange: a, withEmptyOption: n } = this.props,
+                            const { onChange: n, withEmptyOption: a } = this.props,
                                 { selectedIndex: r, value: l } = e.target;
-                            a && a(l, r - (n ? 1 : 0));
+                            n && n(l, r - (a ? 1 : 0));
                         }),
                         (this._handleBlur = (e) => {
-                            const { onBlur: a } = this.props;
-                            this.setState({ isFocused: !1 }), a && a();
+                            const { onBlur: n } = this.props;
+                            this.setState({ isFocused: !1 }), n && n();
                         }),
                         (this._handleFocus = (e) => {
-                            const { onFocus: a } = this.props;
-                            this.setState({ isFocused: !0 }), a && a();
+                            const { onFocus: n } = this.props;
+                            this.setState({ isFocused: !0 }), n && n();
                         }),
                         (this._id = `SELECTOR_${g}`),
                         (this._errorID = `${this._id}_ERROR`),
@@ -944,12 +944,12 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: a, errorText: n, hasError: d, helperText: g, options: b, style: y, testID: h, value: F, withEmptyOption: k } = this.props,
+                    const { "aria-describedby": e, disabled: n, errorText: a, hasError: d, helperText: g, options: f, style: y, testID: h, value: F, withEmptyOption: k } = this.props,
                         { isFocused: w } = this.state,
                         _ = o.ZP.getLanguage(),
-                        S = void 0 === d ? !!n : d,
+                        S = void 0 === d ? !!a : d,
                         v = new Set();
-                    n && v.add(this._errorID), e && v.add(e), g && v.add(this._helperID);
+                    a && v.add(this._errorID), e && v.add(e), g && v.add(this._helperID);
                     const C = v.size ? [...v].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
@@ -958,40 +958,40 @@
                             const o = "ja" === _ ? c.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(_) ? c.default.theme.fontFamilies.rtl : c.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 l.Z,
-                                { style: [i.Z.border, f.container, a && i.Z.disabled, w && i.Z.focusedBorderValid, S && i.Z.invalidBorderColor, w && S && i.Z.focusedBorderInvalid, y] },
+                                { style: [i.Z.border, b.container, n && i.Z.disabled, w && i.Z.focusedBorderValid, S && i.Z.invalidBorderColor, w && S && i.Z.focusedBorderInvalid, y] },
                                 this._renderLabel(),
                                 r.createElement(
                                     m,
-                                    { "aria-describedby": C, "aria-invalid": S, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, a && i.Z.disabled], testID: h || "", value: F },
-                                    k ? r.createElement(p, { disabled: !0, style: f.option, value: "" }) : null,
-                                    b.map((e) => {
-                                        const { disabled: a, label: n, value: l } = e;
-                                        return r.createElement(p, { disabled: a, key: `${n}-${l}`, style: f.option, value: l }, n);
+                                    { "aria-describedby": C, "aria-invalid": S, "aria-labelledby": this._labelID, disabled: n, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, n && i.Z.disabled], testID: h || "", value: F },
+                                    k ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
+                                    f.map((e) => {
+                                        const { disabled: n, label: a, value: l } = e;
+                                        return r.createElement(p, { disabled: n, key: `${a}-${l}`, style: b.option, value: l }, a);
                                     }),
                                 ),
-                                r.createElement(t.default, { style: [f.dropdownCaret, w && i.Z.validColor, !(!d && !n) && i.Z.invalidColor] }),
+                                r.createElement(t.default, { style: [b.dropdownCaret, w && i.Z.validColor, !(!d && !a) && i.Z.invalidColor] }),
                             );
                         }),
                         g ? this._renderHelperText() : null,
-                        S && n ? this._renderErrorText() : null,
+                        S && a ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
-                    const { errorText: e, hasError: a, label: n } = this.props,
+                    const { errorText: e, hasError: n, label: a } = this.props,
                         { isFocused: l } = this.state;
-                    return r.createElement(o.ZP, { color: a || e ? "red500" : l ? "primary" : "gray700", id: this._labelID, role: "label", style: f.label }, n);
+                    return r.createElement(o.ZP, { color: n || e ? "red500" : l ? "primary" : "gray700", id: this._labelID, role: "label", style: b.label }, a);
                 }
                 _renderHelperText() {
-                    return r.createElement(l.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "gray700", id: this._helperID, style: f.helperText }, this.props.helperText));
+                    return r.createElement(l.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "gray700", id: this._helperID, style: b.helperText }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return r.createElement(l.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "red500", id: this._errorID, style: f.helperText }, this.props.errorText));
+                    return r.createElement(l.Z, { "aria-live": "polite" }, r.createElement(o.ZP, { color: "red500", id: this._errorID, style: b.helperText }, this.props.errorText));
                 }
             }
-            b.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const f = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                y = b;
+            f.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
+            const b = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                y = f;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.db4aaf6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.624c5a0a.js.map

@@ -12029,7 +12029,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(commissione: ", ")"];
                             },
                         },
                         {
@@ -12689,7 +12689,7 @@
                         {
                             key: "he2cc06d",
                             get: function () {
-                                return ["", " e "];
+                                return ["", ", "];
                             },
                         },
                         {
@@ -13262,4 +13262,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.ddd7f34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.ad93130a.js.map

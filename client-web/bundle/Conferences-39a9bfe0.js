@@ -37,7 +37,7 @@
                         r = (
                             n?.flatMap(({ rest_id: e, result: t }) => {
                                 if ("User" !== t?.__typename) return [];
-                                return [{ name: t.legacy.name, id: e }];
+                                return [{ name: t.core.name, id: e }];
                             }) ?? []
                         ).filter(({ id: e }) => E.includes(e));
                     return t && !r.some(({ id: e }) => "783214" === e) ? [{ id: "783214", name: "X" }, ...r] : r;
@@ -538,4 +538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.d0f5807a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.380e0d9a.js.map

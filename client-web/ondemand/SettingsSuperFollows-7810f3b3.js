@@ -40,8 +40,8 @@
                 Z = r(277660),
                 w = r.n(Z),
                 h = r(615027),
-                y = r(823508),
-                _ = r(628073),
+                _ = r(823508),
+                y = r(628073),
                 v = r(226445),
                 k = r(540769),
                 P = r(899382),
@@ -77,7 +77,7 @@
                         u = w()(j, a),
                         m = O(o, u),
                         p = l.useCallback(() => (m === R.LI ? c() : l.createElement(h.Z, { to: m })), [m, c]);
-                    return l.createElement(s.Switch, null, l.createElement(s.Route, { path: R.wU.root }, l.createElement(y.Z, { subscriptionsPriceOfferings: i, user: o, viewer: u })), l.createElement(s.Route, { path: R.NW.root }, l.createElement(v.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), l.createElement(s.Route, { path: R.D1.root }, l.createElement(_.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), l.createElement(s.Route, { exact: !0, path: R.o5 }, l.createElement(P.Z, null)), l.createElement(s.Route, { exact: !0, path: R.$w }, l.createElement(k.Z, null)), l.createElement(s.Route, { exact: !0, path: R.Km }, l.createElement(C.Z, null)), l.createElement(s.Route, { exact: !0, path: R.Jz }, p()));
+                    return l.createElement(s.Switch, null, l.createElement(s.Route, { path: R.wU.root }, l.createElement(_.Z, { subscriptionsPriceOfferings: i, user: o, viewer: u })), l.createElement(s.Route, { path: R.NW.root }, l.createElement(v.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), l.createElement(s.Route, { path: R.D1.root }, l.createElement(y.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), l.createElement(s.Route, { exact: !0, path: R.o5 }, l.createElement(P.Z, null)), l.createElement(s.Route, { exact: !0, path: R.$w }, l.createElement(k.Z, null)), l.createElement(s.Route, { exact: !0, path: R.Km }, l.createElement(C.Z, null)), l.createElement(s.Route, { exact: !0, path: R.Jz }, p()));
                 },
                 W = a.Z,
                 $ = () => {
@@ -175,21 +175,21 @@
                         o = t.getNumberValue("creator_subscriptions_eligibility_impressions", 5e6),
                         u = s.ZP.getTruncatedCount(i),
                         h = s.ZP.getTruncatedCount(o),
-                        _ = b({ minFollowersCount: u }),
+                        y = b({ minFollowersCount: u }),
                         v = [
                             { label: r ? f : g, checked: !e.includes("blue_subscription") },
-                            { label: _, checked: !e.includes("followers") },
+                            { label: y, checked: !e.includes("followers") },
                             { label: w({ count: h }), checked: !e.includes("impressions") },
                             { label: E, checked: !e.includes("tweets") },
                             { label: Z, checked: !e.includes("age") },
                         ];
                     return a.createElement(
                         l.Z,
-                        { style: y.root },
-                        v.map((e, t, r) => a.createElement(a.Fragment, { key: t }, a.createElement(l.Z, { key: e.label, style: y.item }, a.createElement(c.ZP, { style: y.label, weight: "bold" }, e.label), e.checked ? a.createElement(m.default, { style: y.iconChecked }) : a.createElement(p.default, { style: y.iconUnchecked })), r.length !== t + 1 && a.createElement(n.Z, null))),
+                        { style: _.root },
+                        v.map((e, t, r) => a.createElement(a.Fragment, { key: t }, a.createElement(l.Z, { key: e.label, style: _.item }, a.createElement(c.ZP, { style: _.label, weight: "bold" }, e.label), e.checked ? a.createElement(m.default, { style: _.iconChecked }) : a.createElement(p.default, { style: _.iconUnchecked })), r.length !== t + 1 && a.createElement(n.Z, null))),
                     );
                 },
-                y = i.default.create((e) => ({ root: { backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, gap: { gap: e.spaces.space24 }, item: { flexDirection: "row" }, label: { flex: 1, marginEnd: e.spaces.space8 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 } }));
+                _ = i.default.create((e) => ({ root: { backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, gap: { gap: e.spaces.space24 }, item: { flexDirection: "row" }, label: { flex: 1, marginEnd: e.spaces.space8 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 } }));
         },
         409771: (e, t, r) => {
             r.d(t, { Z: () => i });
@@ -224,12 +224,12 @@
                         a = t?.privacy?.protected ?? !1,
                         s = t?.verification?.verified ?? !1,
                         i = t?.is_blue_verified,
-                        o = t?.legacy?.name ?? void 0,
-                        u = t?.legacy?.screen_name ?? void 0;
+                        o = t?.core?.name ?? void 0,
+                        u = t?.core?.screen_name ?? void 0;
                     return l.createElement(l.Fragment, null, l.createElement(p.Z, { style: h.interstitial }, l.createElement(d.Z, { headline: b, subtext: E })), l.createElement(n.Z, null), l.createElement(p.Z, { style: h.previewCallout }, l.createElement(f.Z, { path: g.Km })), l.createElement(m.Z, { imageUrl: r, isBlueVerified: i || !1, isProtected: a, isVerified: s, name: o, screenName: u, style: h.preview, withBackgroundTweets: !0 }));
                 },
                 h = i.default.create((e) => ({ interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { margin: e.spaces.space16 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-7810f3b3.5c1bc7da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-7810f3b3.f9424b4a.js.map

@@ -155,8 +155,8 @@
                 b = n(293115),
                 h = n(87063),
                 g = n(652904),
-                f = n(507651),
-                D = n(3138),
+                D = n(507651),
+                f = n(3138),
                 w = n(655352),
                 y = n(503229),
                 M = n(71620),
@@ -180,7 +180,7 @@
                                 o = t ? t.scribeConfig : void 0;
                             return n().then(({ performed: a }) => {
                                 a && e.scribe({ ...this._getScribeNamespace(o), action: "get_initial" });
-                            }, a(D.M));
+                            }, a(f.M));
                         }),
                         (this._render = () => {
                             const { analytics: e, getTabLink: a, pageConfiguration: n, selectedTab: o } = this.props,
@@ -205,7 +205,7 @@
                                         }
                                     );
                                 });
-                                return t.createElement(t.Fragment, null, t.createElement(f.Z, { alignFirstItem: (0, w.ZP)(), links: s, visibleItemIndex: i }));
+                                return t.createElement(t.Fragment, null, t.createElement(D.Z, { alignFirstItem: (0, w.ZP)(), links: s, visibleItemIndex: i }));
                             }
                             return null;
                         });
@@ -239,7 +239,7 @@
             const B = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.29"),
+                        n.e("icons.24"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
                         n.e("modules.audio-6107ac1a"),
@@ -259,6 +259,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -450,10 +451,10 @@
                         h = (0, s.Z)({}, r, m);
                     return d ? t.createElement(b.nO, { data: p, namespace: h }, t.createElement(t.Fragment, null, i ? t.createElement(re.Z, { canonical: pe(a), description: d.description, title: d.name, type: "article" }) : null, l ? t.createElement(oe.Z, { deepLink: me(a) }) : null, t.createElement(W.Z, { style: he.rightControl }, t.createElement(W.Z, { style: he.followButtonContainer }, t.createElement(te.Z, { animateMount: !0, show: n, type: "fade" }, t.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? t.createElement(ie.ZP, { copyLinkShareLabel: be, scribeNamespace: h, url: pe(a) }) : null))) : null;
                 }),
-                fe = i().e9f1fbcc,
-                De = t.createElement(c.Z, null),
+                De = i().e9f1fbcc,
+                fe = t.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: a, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: A, pageConfiguration: k, prerollDisplayLocation: I, renderEmptyState: E, renderUnavailable: S, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: P, title: B, withAppLinks: _, withBottomLoginSignupBar: Z, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: O } = e,
+                    const { TabBar: a, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: D, history: f, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: A, pageConfiguration: k, prerollDisplayLocation: I, renderEmptyState: E, renderUnavailable: S, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: P, title: B, withAppLinks: _, withBottomLoginSignupBar: Z, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: O } = e,
                         W = (0, r.tj)(),
                         $ = t.useMemo(() => ({ ...l, ...(0, H.Z)({ isLegacy: !0, isWide: W }) }), [l, W]),
                         [z, U] = t.useState(!0),
@@ -473,10 +474,10 @@
                         ae = R ? u.Z : t.Fragment,
                         ne = t.createElement(t.Fragment, null, X, t.createElement(ae, null, t.createElement(F, { entryConfiguration: $, initialModule: C, prerollDisplayLocation: I, renderEmptyState: E, renderUnavailable: S, selectedTabId: x, timelinePrefix: P, title: B, withoutHeadroom: !0 }))),
                         te = i ? t.createElement(p.Z, { component: d.Z, fab: i }, ne) : ne,
-                        oe = c && f ? t.createElement(T, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
-                    return t.createElement(b.nO, { namespace: J }, t.createElement(g.Z, null, t.createElement(m.Z, { TabBar: a, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: A, primaryContent: te, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && z ? B : Y, withBottomLoginSignupBar: Z, withSearchBox: G, withTweetButton: O })));
+                        oe = c && D ? t.createElement(T, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
+                    return t.createElement(b.nO, { namespace: J }, t.createElement(g.Z, null, t.createElement(m.Z, { TabBar: a, backLocation: n, documentTitle: o, history: f, logoButton: M, onBackClick: A, primaryContent: te, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && z ? B : Y, withBottomLoginSignupBar: Z, withSearchBox: G, withTweetButton: O })));
                 };
-            we.defaultProps = { entryConfiguration: (0, O.G)({}), renderEmptyState: () => t.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
+            we.defaultProps = { entryConfiguration: (0, O.G)({}), renderEmptyState: () => t.createElement(o.Z, { header: De }), sidebarContent: fe, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const ye = ae(we);
         },
         337455: (e, a, n) => {
@@ -549,8 +550,8 @@
                 b = n(310088),
                 h = n(175993),
                 g = n(58881),
-                f = n(530732);
-            const D = c().d2414d31,
+                D = n(530732);
+            const f = c().d2414d31,
                 w = () => c().ce4e85ae,
                 y = c().fb9f6f39;
             class M extends o.Component {
@@ -594,7 +595,7 @@
                         S = s ? s(k) : I?.pathname === E?.pathname,
                         T = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0 }),
                         v = h ? "medium" : S ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": a, "aria-selected": S, focusable: !!S, interactiveStyles: T, link: E, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? C.pill : C.link, u && S ? C.active : null, c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, A], withoutInteractiveStyles: h || u }, ({ isFocused: a, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(S, s, h, u) }, c && C.compactText, h && a && C.focusedText], weight: v }, e && o.createElement(e, { style: C.icon }), r, h || u ? null : o.createElement(i.Z, { style: S && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(b.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : t ? o.createElement(b.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                    return o.createElement(D.Z, { "aria-label": a, "aria-selected": S, focusable: !!S, interactiveStyles: T, link: E, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? C.pill : C.link, u && S ? C.active : null, c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, A], withoutInteractiveStyles: h || u }, ({ isFocused: a, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(S, s, h, u) }, c && C.compactText, h && a && C.focusedText], weight: v }, e && o.createElement(e, { style: C.icon }), r, h || u ? null : o.createElement(i.Z, { style: S && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(b.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: f, withBorder: !1 }) : t ? o.createElement(b.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
             (M.contextType = h.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -638,4 +639,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.54eb380a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.6a3fda6a.js.map

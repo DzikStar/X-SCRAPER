@@ -2,247 +2,259 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["icons.24"],
     {
-        829077: (e, t, l) => {
-            l.d(t, { T: () => o });
-            var i = l(202784),
-                a = l(992942),
-                r = l(392237),
-                n = l(634171);
-            function o() {
-                return i.createElement(a.Z, { "aria-label": "", source: n, style: r.default.absoluteFill });
+        233040: (e, t, i) => {
+            i.d(t, { Z: () => n });
+            var l = i(807896),
+                r = i(202784),
+                a = i(392237),
+                c = i(404971);
+            function n(e) {
+                return r.createElement(c.default, (0, l.Z)({}, e, { style: a.default.flatten([e ? e.style : null, o.icon]) }));
             }
+            const o = a.default.create((e) => ({ icon: { fill: e.colors.purple500 } }));
         },
-        835152: (e, t, l) => {
-            l.d(t, { T: () => o });
-            var i = l(202784),
-                a = l(992942),
-                r = l(392237),
-                n = l(6885);
-            function o() {
-                return i.createElement(a.Z, { "aria-label": "", source: n, style: r.default.absoluteFill });
-            }
+        886767: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M6.05 2.83c-1.25.84-2.63 2.61-3.33 5.41L.78 7.76c.8-3.2 2.42-5.43 4.16-6.59l1.11 1.66zM2.86 18H7.1c.46 2.28 2.48 4 4.9 4s4.43-1.72 4.9-4h4.23l-1.14-8.96c-.51-4.02-3.94-7.04-8-7.04s-7.49 3.02-8 7.05L2.86 18zm11.97 0c-.41 1.17-1.53 2-2.83 2-1.31 0-2.42-.83-2.83-2h5.66zm8.39-10.24c-.8-3.2-2.42-5.43-4.17-6.59l-1.11 1.66c1.26.84 2.64 2.61 3.34 5.41l1.94-.48z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
         },
-        818088: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
+        259055: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M22 8.5H12v-3h10v3zm0 10H12v-3h10v3zM6 13c-2.21 0-4 1.791-4 4s1.79 4 4 4 4-1.791 4-4-1.79-4-4-4zm0 5.5c-.83 0-1.5-.672-1.5-1.5s.67-1.5 1.5-1.5 1.5.672 1.5 1.5-.67 1.5-1.5 1.5zM6 3C3.79 3 2 4.791 2 7s1.79 4 4 4 4-1.791 4-4-1.79-4-4-4z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        945819: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M15.5 6C16.88 6 18 7.12 18 8.5v7c0 1.21-.86 2.22-2 2.45V8.5c0-.28-.22-.5-.5-.5H6.05c.23-1.14 1.24-2 2.45-2h7zm-4 4c1.38 0 2.5 1.12 2.5 2.5v7c0 1.38-1.12 2.5-2.5 2.5h-7C3.12 22 2 20.88 2 19.5v-7C2 11.12 3.12 10 4.5 10h7zM4 19.5c0 .28.22.5.5.5h7c.28 0 .5-.22.5-.5v-7c0-.28-.22-.5-.5-.5h-7c-.28 0-.5.22-.5.5v7zM19.5 2C20.88 2 22 3.12 22 4.5v7c0 1.21-.86 2.22-2 2.45V4.5c0-.28-.22-.5-.5-.5h-9.45c.23-1.14 1.24-2 2.45-2h7z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        393118: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zm17.536 15.621L21.415 20l2.121-2.121-1.414-1.414-2.121 2.121-2.121-2.121-1.414 1.414L18.587 20l-2.121 2.121 1.414 1.414 2.121-2.121 2.121 2.121 1.414-1.414z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        971657: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        390587: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        215080: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M19.5 6H14V4h5.5C20.881 4 22 5.119 22 6.5v11c0 1.381-1.119 2.5-2.5 2.5H14v-2h5.5c.276 0 .5-.224.5-.5v-11c0-.276-.224-.5-.5-.5zM10 4H4.5C3.119 4 2 5.119 2 6.5v11C2 18.881 3.119 20 4.5 20H10v2h2V2h-2v2z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        246492: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        684361: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm6.543.04l1.414 1.42L20 10.41l2.043 2.05 1.414-1.42L21.414 9l2.043-2.04-1.414-1.42L20 7.59l-2.043-2.05-1.414 1.42L18.586 9l-2.043 2.04z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        608421: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M3.004 12h2m-2-5h3m-3 10h3m13.496-.5L22 19m-.996-7c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6 6 2.686 6 6z", fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        298479: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M21.77 10.138h-9.536v3.956h5.49c-.28 1.35-1.025 2.39-2.094 3.06-.922.59-2.075.896-3.396.896-2.69 0-4.95-1.733-5.74-4.152l-.008-.003.007-.005c-.205-.597-.307-1.23-.307-1.89 0-.66.103-1.303.308-1.898.792-2.42 3.05-4.15 5.74-4.15 1.44 0 2.744.51 3.767 1.348l2.978-2.978c-1.814-1.583-4.14-2.56-6.745-2.56-4.046 0-7.524 2.318-9.18 5.705C2.38 8.827 2 10.37 2 12s.38 3.17 1.05 4.533l.002-.002v.003c1.655 3.388 5.133 5.705 9.18 5.705 2.493 0 4.875-.884 6.66-2.55C20.783 17.948 22 15.34 22 12c0-.605-.093-1.257-.23-1.862z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        211814: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)(
+                    "svg",
+                    {
+                        ...e,
+                        role: e["aria-label"] ? e.role || "img" : void 0,
+                        "aria-hidden": void 0 === e["aria-label"],
+                        style: [c.Z.root, e.style],
+                        viewBox: "0 0 24 24",
+                        children: l.createElement(
+                            "g",
+                            null,
+                            l.createElement("path", { d: "M20.613 16.38c-.87-1.21-3.235-2.373-3.41-4.042 1.162-.458 1.99-1.385 1.88-2.247-.093-.713-.708-.894-1.993-.7.42-3.733-2.337-6.206-5.09-6.21-2.758-.002-5.512 2.472-5.09 6.21-1.268-.26-1.907.035-1.976.84-.07.836.71 1.71 1.805 2.056.326.994-1.304 2.53-2.175 3.093-1.965.636-1.532 2.144.093 2.325.424.08.728.8 1.163 1.023.797.482 1.657.284 2.582.628 1.095.496 1.8.988 3.59.998 1.782-.012 2.39-.53 3.48-1.022.92-.348 1.95-.168 2.744-.65.52-1.287 2.79-.593 2.397-2.303z" }),
+                            l.createElement("path", {
+                                d: "M21.36 16.15c-.13-.356-.38-.548-.664-.702-.053-.03-.1-.058-.145-.077l-.26-.13c-.884-.47-1.577-1.06-2.054-1.76-.135-.198-.255-.41-.35-.627-.045-.115-.04-.183-.01-.245.028-.05.066-.087.115-.12.155-.102.31-.203.415-.27.188-.126.342-.222.438-.29.36-.255.616-.524.775-.828.226-.424.255-.92.082-1.368-.242-.636-.84-1.026-1.566-1.026-.154 0-.303.015-.457.048l-.12.03c.004-.434-.006-.892-.044-1.344-.135-1.584-.694-2.413-1.27-3.072-.372-.414-.806-.766-1.292-1.04-.874-.5-1.87-.756-2.954-.756s-2.076.255-2.952.756c-.487.274-.92.626-1.29 1.04-.58.66-1.132 1.492-1.272 3.072-.038.452-.047.91-.042 1.343l-.12-.03c-.15-.032-.304-.047-.453-.047-.727 0-1.325.395-1.565 1.026-.174.448-.145.944.082 1.367.158.302.414.57.775.827.095.067.244.163.437.29l.4.26c.053.032.096.076.13.13.03.06.033.13-.015.254-.096.213-.212.42-.346.61-.468.686-1.142 1.27-2 1.736-.45.24-.923.4-1.126.944-.15.41-.053.872.328 1.267.14.144.303.27.48.366.372.202.767.36 1.18.472.088.024.165.058.237.106.14.12.12.305.303.575.092.14.212.26.347.356.39.27.828.285 1.29.305.42.014.89.033 1.436.21.226.074.457.218.727.387.65.4 1.536.944 3.024.944s2.38-.55 3.034-.948c.27-.164.5-.308.718-.38.54-.18 1.017-.198 1.436-.212.462-.02.9-.034 1.29-.304.164-.115.3-.26.395-.433.136-.227.13-.386.256-.497.067-.047.144-.08.22-.1.415-.11.82-.27 1.195-.477.188-.1.36-.236.506-.395l.005-.004c.376-.385.467-.837.318-1.232l-.003-.004zm-1.32.71c-.803.442-1.343.393-1.757.663-.356.226-.144.718-.4.896-.317.214-1.25-.017-2.455.383-.997.327-1.628 1.276-3.42 1.276-1.79 0-2.407-.945-3.418-1.277-1.204-.4-2.138-.164-2.456-.385-.255-.18-.048-.67-.4-.897-.418-.27-.953-.22-1.757-.664-.515-.284-.22-.457-.053-.54 2.918-1.41 3.385-3.59 3.405-3.755.022-.196.05-.35-.166-.55-.207-.19-1.132-.763-1.392-.942-.424-.298-.61-.592-.472-.958.098-.25.334-.346.58-.346.076 0 .153.01.23.024.467.1.92.332 1.18.4.034.01.063.014.096.014.14 0 .188-.072.178-.23-.028-.512-.1-1.504-.02-2.433.112-1.276.52-1.91 1.012-2.47.236-.27 1.34-1.435 3.453-1.435s3.215 1.16 3.45 1.43c.492.558.9 1.194 1.012 2.47.082.93.01 1.92-.024 2.432-.01.168.037.23.177.23.034 0 .062-.004.096-.014.26-.062.714-.298 1.18-.4.078-.018.155-.023.23-.023.248 0 .484.097.58.348.14.365-.05.66-.472.958-.255.178-1.18.75-1.392.943-.216.196-.188.35-.163.547.02.164.486 2.345 3.404 3.756.172.082.46.26-.05.544l.003.003z",
+                                fill: "#010101",
+                            }),
+                        ),
+                    },
+                    { writingDirection: t },
+                );
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        885724: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        780397: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M12 1.75C6.348 1.75 1.75 6.348 1.75 12S6.348 22.25 12 22.25 22.25 17.652 22.25 12 17.652 1.75 12 1.75zM14.5 7c.828 0 1.5 1.119 1.5 2.5s-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7zm-5 0c.828 0 1.5 1.119 1.5 2.5S10.328 12 9.5 12 8 10.881 8 9.5 8.672 7 9.5 7zM12 18c-3.678 0-4.898-3.533-4.949-3.684l1.897-.633c.031.09.828 2.316 3.051 2.316s3.021-2.227 3.053-2.322l1.896.638c-.05.15-1.271 3.684-4.949 3.684z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        19225: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M12 1.75C6.348 1.75 1.75 6.348 1.75 12S6.348 22.25 12 22.25 22.25 17.652 22.25 12 17.652 1.75 12 1.75zm5.83 16.081L6.17 6.169C7.664 4.675 9.726 3.75 12 3.75c4.549 0 8.25 3.701 8.25 8.25 0 2.275-.926 4.337-2.42 5.831z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        461512: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M15.704 8.99c.457-.05.891-.17 1.296-.35-.302.45-.685.84-1.125 1.15.004.1.006.19.006.29 0 2.94-2.269 6.32-6.421 6.32-1.274 0-2.46-.37-3.459-1 .177.02.357.03.539.03 1.057 0 2.03-.35 2.803-.95-.988-.02-1.821-.66-2.109-1.54.138.03.28.04.425.04.206 0 .405-.03.595-.08-1.033-.2-1.811-1.1-1.811-2.18v-.03c.305.17.652.27 1.023.28-.606-.4-1.004-1.08-1.004-1.85 0-.4.111-.78.305-1.11 1.113 1.34 2.775 2.22 4.652 2.32-.038-.17-.058-.33-.058-.51 0-1.23 1.01-2.22 2.256-2.22.649 0 1.235.27 1.647.7.514-.1.997-.28 1.433-.54-.168.52-.526.96-.992 1.23zM2 21h15c3.038 0 5.5-2.46 5.5-5.5 0-1.4-.524-2.68-1.385-3.65-.08-.09-.089-.22-.023-.32.574-.87.908-1.91.908-3.03C22 5.46 19.538 3 16.5 3H2v18zM16.5 5C18.433 5 20 6.57 20 8.5c0 1.01-.43 1.93-1.12 2.57-.468.43-.414 1.19.111 1.55.914.63 1.509 1.69 1.509 2.88 0 1.93-1.567 3.5-3.5 3.5H4V5h12.5z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const o = n;
+        },
+        376021: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => d });
+            var l = i(202784),
+                r = i(890601),
+                a = i(783427),
+                c = i(717683),
+                n = i(347101);
             const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
+                const t = l.useContext(c.Z),
+                    { direction: i } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style, t && n.Z.iconRTL], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: i });
             };
             o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        696711: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 2C6.477 2 2 6.477 2 12c0 1.523.34 2.968.951 4.262L2.17 20.07c-.214 1.044.698 1.972 1.745 1.776l3.95-.739c1.26.574 2.661.893 4.135.893 5.523 0 10-4.477 10-10S17.523 2 12 2z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        899667: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 6.59l8.457 8.45-1.414 1.42L12 9.41l-7.043 7.05-1.414-1.42L12 6.59z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        376278: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 1.28v.09c0 1.79 0 3.53-.829 5.18-.42-.78-1.061-1.36-1.707-1.94l-.268-.24c-.501 1-1.151 1.98-1.807 2.97C4.959 9.5 3.5 11.7 3.5 14.25c0 2.52.949 4.55 2.538 5.94 1.437 1.26 3.334 1.94 5.378 2.04.122.01.539.02.584.02 4.615 0 8.5-3.37 8.5-8C20.5 8.29 15.797 4 11 1.28zm2.534 18.08c-.521.56-1.144.87-1.681.89-.111 0-.221-.01-.331-.01-.454-.05-.684-.23-.82-.41-.192-.24-.313-.64-.313-1.14 0-.75.362-1.26 1.214-2.02.166-.14.35-.3.548-.46.47-.4 1.017-.86 1.56-1.41l.031.07c.35.83.647 1.78.647 2.54 0 .65-.317 1.38-.855 1.95zm2.572-.42c.18-.48.283-1 .283-1.53 0-1.17-.429-2.43-.804-3.32-.194-.46-.388-.85-.533-1.13-.073-.14-1.02-1.78-1.02-1.78l-.901 1.23c-.678.92-1.425 1.55-2.18 2.19-.224.19-.449.38-.673.58-.94.83-1.889 1.85-1.889 3.51 0 .22.014.44.047.67C6.673 18.38 5.5 16.6 5.5 14.25c0-2.01 1.133-3.61 2.246-5.18.284-.4.568-.8.831-1.21.419.89.419 2.18.173 3.08l.117-.11c1.971-1.7 3.514-3.03 3.969-6.06.632.47 1.415 1.12 2.195 1.93 1.79 1.84 3.469 4.42 3.469 7.55 0 1.92-.921 3.61-2.394 4.69z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        432181: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        894003: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M10.631 2.266a.716.716 0 00-.378.108c-.042.027-4.291 2.661-8.752 3.32a.712.712 0 00-.61.687c-.003.112-.179 11.158 9.444 15.54a.718.718 0 00.296.064V2.266z", fill: "#1DA1F2" }), i.createElement("path", { d: "M10.631 2.266c.131 0 .262.036.378.108.042.027 4.291 2.661 8.752 3.32.344.05.601.34.608.687.004.112.181 11.158-9.443 15.54a.703.703 0 01-.295.064V2.266z", fill: "#78C6EE" }), i.createElement("path", { d: "M22.586 15.928L18.71 9.213c-.244-.423-.68-.675-1.17-.675h-.01c-.49 0-.925.26-1.168.688l-3.764 6.715c-.238.424-.234.927.013 1.346.244.414.67.66 1.148.66h7.677c.477 0 .908-.246 1.15-.665.244-.422.244-.93 0-1.352z", fill: "#F4212E" }), i.createElement("path", { d: "M17.594 16.34c-.342 0-.62-.278-.62-.62 0-.342.278-.616.62-.616s.616.274.616.616c0 .342-.275.62-.616.62zm.773-4.06l-.418 1.974c-.032.17-.18.288-.356.288s-.32-.117-.36-.288l-.418-1.974c-.045-.234.013-.477.162-.66.3-.374.93-.374 1.232 0 .148.184.207.426.157.66z", fill: "#FFF" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        777131: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M13 .5V3h-2V.5h2zm7.84 4.08l-1.77 1.76-1.41-1.41 1.76-1.77 1.42 1.42zM4.93 6.34L3.16 4.58l1.42-1.42 1.76 1.77-1.41 1.41zm7.07.91c-2.63 0-4.75 2.13-4.75 4.75s2.12 4.75 4.75 4.75 4.75-2.13 4.75-4.75S14.62 7.25 12 7.25zM5.25 12c0-3.73 3.02-6.75 6.75-6.75s6.75 3.02 6.75 6.75-3.03 6.75-6.75 6.75S5.25 15.73 5.25 12zM3 13H.5v-2H3v2zm20.5 0H21v-2h2.5v2zM6.34 19.07l-1.76 1.77-1.42-1.42 1.77-1.76 1.41 1.41zm13.08 1.77l-1.76-1.77 1.41-1.41 1.77 1.76-1.42 1.42zM13 21v2.5h-2V21h2z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        721365: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M16 8l-3 9-2-4-4-2 9-3zm2.5-5C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13C3 4.12 4.119 3 5.5 3h13zM5 18.5c0 .28.224.5.5.5h13c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-13c-.276 0-.5.22-.5.5v13z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        419542: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 18 21", children: i.createElement("g", null, i.createElement("path", { d: "M9 0C6.746.003 4.586.899 2.993 2.493 1.399 4.086.503 6.246.5 8.5c0 5.967 7.621 11.116 7.945 11.332L9 20.2l.555-.37c.324-.216 7.945-5.365 7.945-11.332-.003-2.253-.9-4.413-2.493-6.006C13.413.899 11.253.002 9 0zm0 11.5c-.593 0-1.173-.176-1.667-.506-.493-.33-.878-.798-1.105-1.346-.227-.548-.286-1.151-.17-1.733.115-.582.401-1.117.82-1.536.42-.42.955-.706 1.537-.821.582-.116 1.185-.057 1.733.17s1.017.612 1.346 1.105c.33.494.506 1.074.506 1.667 0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 18, height: 21 };
-            const c = o;
-        },
-        119507: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4 5.5C4 4.12 5.12 3 6.5 3h11C18.88 3 20 4.12 20 5.5v13c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 21 4 19.88 4 18.5v-13zM6.5 5c-.28 0-.5.22-.5.5v13c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-13c0-.28-.22-.5-.5-.5h-11zM0 18V6h2v12H0zm22 0V6h2v12h-2zm-11-7V8h2v3h3v2h-3v3h-2v-3H8v-2h3z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        672738: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-.138 0-.276.038-.398.114-.044.028-4.515 2.8-9.21 3.494-.362.053-.632.358-.642.723-.003.118-.188 11.742 9.938 16.353.1.045.206.067.312.067V1.75z", fill: "#1DA1F2" }), i.createElement("path", { d: "M12 1.75c.138 0 .276.038.398.114.044.028 4.515 2.8 9.21 3.494.362.053.632.358.64.723.004.118.19 11.742-9.937 16.353-.098.045-.204.067-.31.067V1.75z", fill: "#78C6EE" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        278065: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75z", fill: "#FFAD1F" }), i.createElement("path", { d: "M12 16.3c-.6 0-1.1.5-1.1 1.1 0 .6.5 1.1 1.1 1.1.6 0 1.1-.5 1.1-1.1 0-.6-.5-1.1-1.1-1.1zm0-10.6c-2.3 0-4.2 1.9-4.2 4.2 0 .4.3.8.8.8s.8-.3.8-.8c0-1.5 1.2-2.7 2.7-2.7 1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7-.4 0-.8.3-.8.8v1.1c0 .4.3.8.8.8s.8-.3.8-.8v-.4c2-.4 3.4-2.1 3.4-4.1-.2-2.4-2-4.3-4.3-4.3z", fill: "#14171A" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        643442: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4 2h5v20H4V2zm11 20h5V2h-5v20z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        200112: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M18.914 13.207c-.755-.756-2.073-.756-2.828 0l-2.499 2.499c-2.611-1.113-4.664-3.33-5.569-6.019l2.774-2.773c.779-.779.779-2.049 0-2.828L8.894 2.188c-.767-.768-2.023-.778-2.8-.021C2.52 5.64 2.518 5.711 2.509 5.975c-.006.175-.009.351-.009.526 0 7.781 6.07 14.35 13.819 14.954.047.004.095.006.142.006.502 0 .991-.205 1.36-.575l2.971-2.971c.779-.779.779-2.049 0-2.828l-1.879-1.879z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        772794: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M2 3h2l.5 3m0 0L6 15h13.5L21 6H4.5zM9 19c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1zm9 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z", fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        83515: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M15 1.06v21.88L6.68 17H3.5C2.12 17 1 15.88 1 14.5v-5C1 8.12 2.12 7 3.5 7h3.18L15 1.06zM6 9H3.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H6V9zm2 6.49l5 3.57V4.94L8 8.51v6.98zm10.5-6.9l2 2 2-2L23.91 10l-2 2 2 2-1.41 1.41-2-2-2 2L17.09 14l2-2-2-2 1.41-1.41z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        299426: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => c });
-            var i = l(202784),
-                a = l(890601),
-                r = l(783427),
-                n = l(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17.65 4.22l-.7.71c-.59.58-.59 1.53 0 2.12.58.59 1.53.59 2.12 0l.7-.71 3.89 3.89-13.43 13.44-3.89-3.89.71-.71c.58-.58.58-1.53 0-2.12-.59-.59-1.54-.59-2.13 0l-.7.71-3.89-3.89L13.76.33l3.89 3.89zm-2.47 11.67l5.65-5.66-1.16-1.16c-1.33.72-3.02.52-4.14-.61-1.12-1.12-1.32-2.81-.6-4.14l-1.17-1.16-5.65 5.66 1.41 1.41-1.41 1.42-1.42-1.42-3.53 3.54 1.16 1.16c1.33-.72 3.02-.52 4.14.61 1.12 1.12 1.32 2.81.6 4.14l1.17 1.16 3.53-3.54-1.41-1.41 1.42-1.41 1.41 1.41zm-3.89-1.06l-2.12-2.12 1.41-1.41 2.13 2.12-1.42 1.41z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
+            const d = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons.24.0a5d4c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons.24.f7cb810a.js.map

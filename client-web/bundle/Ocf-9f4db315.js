@@ -113,7 +113,7 @@
             };
         },
         373554: (e, t, a) => {
-            a.d(t, { Z: () => v, h: () => m });
+            a.d(t, { Z: () => S, h: () => m });
             var i = a(807896),
                 n = a(202784),
                 d = a(449161),
@@ -127,10 +127,10 @@
                 b = o().b9960f32,
                 h = n.createElement(s.default, null),
                 m = ({ acceptGifs: e, acceptImages: t = !0, acceptVideo: a }) => (t ? c.v5 : []).concat(e ? [c.Re] : []).concat(a ? u.jn : []);
-            const S = r.default.create((e) => ({ root: { margin: `-${e.spaces.space12}` } })),
-                v = function ({ "aria-label": e = b, acceptGifs: t = !0, acceptImages: a = !0, acceptVideo: r = !0, customMimeTypes: l = [], icon: o = h, size: s = "medium", style: c, withIcon: u = !0, ...v }) {
+            const v = r.default.create((e) => ({ root: { margin: `-${e.spaces.space12}` } })),
+                S = function ({ "aria-label": e = b, acceptGifs: t = !0, acceptImages: a = !0, acceptVideo: r = !0, customMimeTypes: l = [], icon: o = h, size: s = "medium", style: c, withIcon: u = !0, ...S }) {
                     const f = m({ acceptGifs: t, acceptImages: a, acceptVideo: r }).concat(l).join(",");
-                    return n.createElement(d.Z, (0, i.Z)({}, v, { accept: f, "aria-label": e, icon: u ? o : void 0, size: s, style: [S.root, c], testID: p }));
+                    return n.createElement(d.Z, (0, i.Z)({}, S, { accept: f, "aria-label": e, icon: u ? o : void 0, size: s, style: [v.root, c], testID: p }));
                 };
         },
         751170: (e, t, a) => {
@@ -179,14 +179,14 @@
                         { imagePreviewUrl: s } = this.state || {},
                         c = a.mediaFile && a.mediaFile.isGif && !t && !s,
                         u = a.needsProcessing || c,
-                        p = [v.root, S[e], u && v.loadingBorder],
+                        p = [S.root, v[e], u && S.loadingBorder],
                         h = this._getImageSrc();
-                    return i.createElement(n.Z, { onClick: l, style: p }, u || !h ? i.createElement(d.Z, { "aria-label": b, style: v.activityIndicator }) : i.createElement(r.Z, { resizeMode: o, source: h, style: v.image }));
+                    return i.createElement(n.Z, { onClick: l, style: p }, u || !h ? i.createElement(d.Z, { "aria-label": b, style: S.activityIndicator }) : i.createElement(r.Z, { resizeMode: o, source: h, style: S.image }));
                 }
             }
             m.defaultProps = { borderRadius: h.NONE, enableGif: !0, resizeMode: "cover" };
-            const S = l.default.create((e) => ({ [h.INFINITE]: { borderRadius: e.borderRadii.infinite }, [h.MEDIUM]: { borderRadius: e.borderRadii.small }, [h.NONE]: { borderRadius: e.borderRadii.none } })),
-                v = l.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
+            const v = l.default.create((e) => ({ [h.INFINITE]: { borderRadius: e.borderRadii.infinite }, [h.MEDIUM]: { borderRadius: e.borderRadii.small }, [h.NONE]: { borderRadius: e.borderRadii.none } })),
+                S = l.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
                 f = m;
         },
         304059: (e, t, a) => {
@@ -204,13 +204,13 @@
                 b = a(678773),
                 h = a(597237),
                 m = a(254944),
-                S = a(837020),
-                v = a(276259),
+                v = a(837020),
+                S = a(276259),
                 f = a(443781),
                 y = a(10656),
                 A = a(716233),
-                w = a(946208),
-                _ = a(540387),
+                _ = a(946208),
+                w = a(540387),
                 g = a(950822),
                 D = a(303186),
                 E = a(954300);
@@ -236,11 +236,14 @@
             const B = (0, V.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.0"),
+                            a.e("icons.8"),
+                            a.e("icons.13"),
+                            a.e("icons.21"),
+                            a.e("icons.1"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.20"),
-                            a.e("icons.24"),
+                            a.e("icons.10"),
+                            a.e("icons.17"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -251,13 +254,9 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.10"),
-                            a.e("icons.14"),
-                            a.e("icons.26"),
-                            a.e("icons.3"),
+                            a.e("icons.29"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -353,14 +352,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: s, onEditSensitiveWarning: c, onRemove: u, role: p, style: f, withAltTextLabel: A, withCloseButton: w, withDragAndDropIndicator: _, withEditButton: g, withEditIcon: D, withEditSensitiveWarningButton: E } = this.props,
+                    const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: s, onEditSensitiveWarning: c, onRemove: u, role: p, style: f, withAltTextLabel: A, withCloseButton: _, withDragAndDropIndicator: w, withEditButton: g, withEditIcon: D, withEditSensitiveWarningButton: E } = this.props,
                         { mediaContainerSizeStyle: Z, playGif: C } = this.state,
-                        V = a.externalMediaDetails && a.externalMediaDetails.mediaType === v.Re,
+                        V = a.externalMediaDetails && a.externalMediaDetails.mediaType === S.Re,
                         I = V || (t && a.mediaFile && a.mediaFile.isGif),
                         B = !!a.mediaFile?.isVideo;
                     return i.createElement(d.ZP, null, ({ windowWidth: t }) => {
                         const a = void 0 !== D ? D : !y.Z.isTwoColumnLayout(t);
-                        return i.createElement(n.Z, { "aria-label": e || G, onLayout: this._handleMediaPreviewLayout, role: p, style: [f, L.cursor, V && L.gifPlayButton, Z] }, this._renderPreview(), V && !C && i.createElement(r.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), I ? i.createElement(P.ZP, { type: P.AM }) : null, A && !B ? i.createElement(l.Z, { align: "left", altLabel: e }) : null, i.createElement(n.Z, { style: L.editMedia }, _ ? i.createElement(o.ZP, { "aria-label": z, hoverLabel: { label: z }, icon: i.createElement(b.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, g && E ? i.createElement(o.ZP, { "aria-label": R, icon: i.createElement(h.default, { style: L.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, g ? i.createElement(o.ZP, { "aria-label": M, icon: a ? i.createElement(m.default, null) : void 0, onPress: s, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : F) : null), w ? i.createElement(o.ZP, { "aria-label": T, hoverLabel: { label: k }, icon: i.createElement(S.default, null), onPress: u, size: "small", style: L.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return i.createElement(n.Z, { "aria-label": e || G, onLayout: this._handleMediaPreviewLayout, role: p, style: [f, L.cursor, V && L.gifPlayButton, Z] }, this._renderPreview(), V && !C && i.createElement(r.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), I ? i.createElement(P.ZP, { type: P.AM }) : null, A && !B ? i.createElement(l.Z, { align: "left", altLabel: e }) : null, i.createElement(n.Z, { style: L.editMedia }, w ? i.createElement(o.ZP, { "aria-label": z, hoverLabel: { label: z }, icon: i.createElement(b.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, g && E ? i.createElement(o.ZP, { "aria-label": R, icon: i.createElement(h.default, { style: L.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, g ? i.createElement(o.ZP, { "aria-label": M, icon: a ? i.createElement(m.default, null) : void 0, onPress: s, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : F) : null), _ ? i.createElement(o.ZP, { "aria-label": T, hoverLabel: { label: k }, icon: i.createElement(v.default, null), onPress: u, size: "small", style: L.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -384,7 +383,7 @@
                 _renderVideoPreview(e, t, a, n) {
                     const { mediaItem: d } = this.props,
                         r = d.mediaMetadata?.subtitles;
-                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && n instanceof _.ZP) {
+                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && n instanceof w.ZP) {
                         let r = [];
                         (0, A.TO)(n.fileHandle) && (r = [{ src: t, type: e }]);
                         const l = d.mediaMetadata?.subtitles,
@@ -393,7 +392,7 @@
                     }
                     {
                         const a = (0, A.TO)(n.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return i.createElement(Z, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof _.ZP ? n.thumbnail : "", style: L.video, variants: a }, r?.upload?.mediaFile instanceof w.ZP ? i.createElement("track", { default: !0, kind: "subtitles", label: r.displayName, src: r.upload.mediaFile.vtt, srcLang: r.lang }) : null);
+                        return i.createElement(Z, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof w.ZP ? n.thumbnail : "", style: L.video, variants: a }, r?.upload?.mediaFile instanceof _.ZP ? i.createElement("track", { default: !0, kind: "subtitles", label: r.displayName, src: r.upload.mediaFile.vtt, srcLang: r.lang }) : null);
                     }
                 }
             }
@@ -419,7 +418,7 @@
             const o = i.memo(l);
         },
         977995: (e, t, a) => {
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => v });
             var i = a(202784),
                 n = a(637786),
                 d = a(325686),
@@ -433,7 +432,7 @@
                 b = c().b60eba9e,
                 h = c().ba939778,
                 m = c().bc6efc72;
-            class S extends i.Component {
+            class v extends i.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._handlePass = (e) => {
@@ -449,11 +448,11 @@
                 }
                 _renderConsentForm() {
                     const { nextButtonDisabled: e } = this.props;
-                    return i.createElement(d.Z, null, i.createElement(r.ZP, { style: v.guideCopy }, b), i.createElement(d.Z, { style: v.button }, i.createElement(l.ZP, { disabled: e, onPress: this._handleConsent, size: "xLarge", type: "brandOutlined" }, p)), i.createElement(r.ZP, { color: "gray700" }, i.createElement(c().I18NFormatMessage, { $i18n: "hc37d3bb" }, i.createElement(r.ZP, { link: "https://policies.google.com/privacy" }, m))));
+                    return i.createElement(d.Z, null, i.createElement(r.ZP, { style: S.guideCopy }, b), i.createElement(d.Z, { style: S.button }, i.createElement(l.ZP, { disabled: e, onPress: this._handleConsent, size: "xLarge", type: "brandOutlined" }, p)), i.createElement(r.ZP, { color: "gray700" }, i.createElement(c().I18NFormatMessage, { $i18n: "hc37d3bb" }, i.createElement(r.ZP, { link: "https://policies.google.com/privacy" }, m))));
                 }
                 _renderRecaptcha() {
                     const { withConsentForm: e } = this.props;
-                    return i.createElement(i.Fragment, null, e ? i.createElement(d.Z, { style: v.recaptchaTitle }, i.createElement(r.ZP, { style: v.guideCopy }, h)) : null, i.createElement(d.Z, { style: v.container }, i.createElement(n.Z, { "data-testid": u, onChange: this._handlePass, sitekey: "6LfOP30UAAAAAFBC4jbzu890rTdXBXBNHx9eVZEX" })));
+                    return i.createElement(i.Fragment, null, e ? i.createElement(d.Z, { style: S.recaptchaTitle }, i.createElement(r.ZP, { style: S.guideCopy }, h)) : null, i.createElement(d.Z, { style: S.container }, i.createElement(n.Z, { "data-testid": u, onChange: this._handlePass, sitekey: "6LfOP30UAAAAAFBC4jbzu890rTdXBXBNHx9eVZEX" })));
                 }
                 render() {
                     const { withConsentForm: e } = this.props,
@@ -461,7 +460,7 @@
                     return e && !t ? this._renderConsentForm() : this._renderRecaptcha();
                 }
             }
-            const v = o.default.create((e) => ({ container: { margin: "auto", transitionProperty: "opacity", transitionDelay: "2s" }, button: { paddingVertical: e.spaces.space20 }, guideCopy: { paddingTop: e.spaces.space12 }, recaptchaTitle: { paddingBottom: e.spaces.space20 } }));
+            const S = o.default.create((e) => ({ container: { margin: "auto", transitionProperty: "opacity", transitionDelay: "2s" }, button: { paddingVertical: e.spaces.space20 }, guideCopy: { paddingTop: e.spaces.space12 }, recaptchaTitle: { paddingBottom: e.spaces.space20 } }));
         },
         959587: (e, t, a) => {
             a.d(t, { AM: () => o, ZP: () => p, pX: () => s });
@@ -527,7 +526,7 @@
             }
         },
         53140: (e, t, a) => {
-            a.d(t, { Z: () => v });
+            a.d(t, { Z: () => S });
             var i = a(202784),
                 n = a(325686),
                 d = a(392237),
@@ -551,12 +550,12 @@
                 }
                 render() {
                     const { withTweetBorder: e } = this.props;
-                    return i.createElement(n.Z, { "aria-hidden": !0, style: [S.width, e && S.tweetBorder] }, i.createElement(s.ZP, { enableKeyboardShortcuts: !1, onAnalyticsClick: o.Z, onAvatarClick: this._handleTweetAction, onEngagementsClick: o.Z, onEntityClick: this._handleTweetAction, onMediaClick: this._handleTweetAction, onReplyContextClick: this._handleTweetAction, tweet: this._tweet, withActions: !1, withAvatarLink: !1, withTimestampLink: !1, withUserHoverCard: !1 }), i.createElement(n.Z, { style: d.default.absoluteFill }));
+                    return i.createElement(n.Z, { "aria-hidden": !0, style: [v.width, e && v.tweetBorder] }, i.createElement(s.ZP, { enableKeyboardShortcuts: !1, onAnalyticsClick: o.Z, onAvatarClick: this._handleTweetAction, onEngagementsClick: o.Z, onEntityClick: this._handleTweetAction, onMediaClick: this._handleTweetAction, onReplyContextClick: this._handleTweetAction, tweet: this._tweet, withActions: !1, withAvatarLink: !1, withTimestampLink: !1, withUserHoverCard: !1 }), i.createElement(n.Z, { style: d.default.absoluteFill }));
                 }
             }
             m.defaultProps = { tweet: h, withTweetBorder: !1 };
-            const S = d.default.create((e) => ({ tweetBorder: { borderStyle: "solid", borderWidth: e.borderWidths.small, borderColor: e.colors.borderColor, borderRadius: e.borderRadii.xLarge, outlineStyle: "none" }, width: { width: "100%" } })),
-                v = p(m);
+            const v = d.default.create((e) => ({ tweetBorder: { borderStyle: "solid", borderWidth: e.borderWidths.small, borderColor: e.colors.borderColor, borderRadius: e.borderRadii.xLarge, outlineStyle: "none" }, width: { width: "100%" } })),
+                S = p(m);
         },
         700613: (e, t, a) => {
             a.d(t, { Z: () => l });
@@ -653,4 +652,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.1801dc3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.9c730bba.js.map

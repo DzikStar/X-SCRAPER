@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: s, hideBackButton: r, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: m, rightControl: p, secondaryBar: _, style: g, subtitle: f, title: w, titleDomId: y, titleIconCell: T, titleIconCellSize: E, withBackground: b, withWideContainer: x } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: s, hideBackButton: r, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: m, rightControl: _, secondaryBar: p, style: g, subtitle: f, title: w, titleDomId: y, titleIconCell: T, titleIconCellSize: E, withBackground: b, withWideContainer: x } = this.props,
                         { isModal: C } = this.context,
                         D = r ? c : n.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         S = (function (e, t, i) {
                             return e && !(t && i);
-                        })(!!b, C, !!_);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: a, isLarge: d, leftControl: D, middleControl: h, position: u(m, C, s), rightControl: p, style: g, subtitle: f, title: w, titleDomId: y, titleIconCell: T, titleIconCellSize: E, withBackground: S, withWideContainer: x }), _ || null);
+                        })(!!b, C, !!p);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: a, isLarge: d, leftControl: D, middleControl: h, position: u(m, C, s), rightControl: _, style: g, subtitle: f, title: w, titleDomId: y, titleIconCell: T, titleIconCellSize: E, withBackground: S, withWideContainer: x }), p || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -46,7 +46,7 @@
             (h.contextType = c.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         290402: (e, t, i) => {
-            i.d(t, { Z: () => p });
+            i.d(t, { Z: () => _ });
             var n = i(807896),
                 s = i(202784),
                 r = i(182056),
@@ -61,10 +61,10 @@
                     return s.createElement(a.Z, (0, n.Z)({}, t, { icon: o ? void 0 : s.createElement(c.default, { style: m.icon }), retryMessage: o ? e : u }));
                 },
                 m = o.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                p = s.forwardRef(h);
+                _ = s.forwardRef(h);
         },
         980407: (e, t, i) => {
-            i.d(t, { Z: () => _, w: () => m });
+            i.d(t, { Z: () => p, w: () => m });
             var n = i(202784),
                 s = i(325686),
                 r = i(108362),
@@ -79,9 +79,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: r, centerTitle: a, hideBackButton: o, history: l, isFullWidth: u, isLarge: h, middleControl: m, onBackClick: _, rightControl: g, secondaryBar: f, subtitle: w, title: y } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: r, centerTitle: a, hideBackButton: o, history: l, isFullWidth: u, isLarge: h, middleControl: m, onBackClick: p, rightControl: g, secondaryBar: f, subtitle: w, title: y } = this.props,
                                 { isModal: T } = this.context;
-                            return n.createElement(s.Z, { style: T ? [p.childViewAppBarRoot, p.appBarZindex] : p.appBarZindex }, n.createElement(c.ZP, { backButtonType: i || (T ? "close" : "back"), backLocation: r, centerTitle: a, fixed: !T, hideBackButton: o, history: l, isFullWidth: u, isLarge: h, middleControl: m, onBackClick: _, ref: e, rightControl: g, secondaryBar: f, style: [T && p.appBarModal, t], subtitle: w, title: y, titleDomId: d.Q_ }));
+                            return n.createElement(s.Z, { style: T ? [_.childViewAppBarRoot, _.appBarZindex] : _.appBarZindex }, n.createElement(c.ZP, { backButtonType: i || (T ? "close" : "back"), backLocation: r, centerTitle: a, fixed: !T, hideBackButton: o, history: l, isFullWidth: u, isLarge: h, middleControl: m, onBackClick: p, ref: e, rightControl: g, secondaryBar: f, style: [T && _.appBarModal, t], subtitle: w, title: y, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -90,15 +90,15 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: a, documentTitle: o, isFullWidth: d, isLarge: c, renderHeader: m, title: _, withoutBottomBarMobile: g } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: a, documentTitle: o, isFullWidth: d, isLarge: c, renderHeader: m, title: p, withoutBottomBarMobile: g } = this.props,
                         { isModal: f } = this.context,
                         w = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(l.Z, null, n.createElement(u.Z.Configure, { documentTitle: o, headerless: !0, title: _ }), n.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [p.root, f && p.rootModal] }, !f && w, n.createElement(r.Z, { isFullWidth: d, isLarge: c, style: [p.container, f && p.containerModal, a] }, f ? n.createElement(h.Z, { style: p.viewport }, w, i) : i), t ? n.createElement(s.Z, { style: [p.bottomBarModal, !f && !g && p.bottomBarMobile] }, n.createElement(r.Z, { isFullWidth: d, isLarge: c }, t)) : null));
+                    return n.createElement(l.Z, null, n.createElement(u.Z.Configure, { documentTitle: o, headerless: !0, title: p }), n.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [_.root, f && _.rootModal] }, !f && w, n.createElement(r.Z, { isFullWidth: d, isLarge: c, style: [_.container, f && _.containerModal, a] }, f ? n.createElement(h.Z, { style: _.viewport }, w, i) : i), t ? n.createElement(s.Z, { style: [_.bottomBarModal, !f && !g && _.bottomBarMobile] }, n.createElement(r.Z, { isFullWidth: d, isLarge: c }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = a.Z);
-            const p = o.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: o.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
-                _ = m;
+            const _ = o.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: o.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+                p = m;
         },
         745475: (e, t, i) => {
             i.d(t, { Z: () => m });
@@ -263,7 +263,7 @@
                 };
         },
         964917: (e, t, i) => {
-            i.d(t, { FP: () => g, Hf: () => d, Q$: () => f, UD: () => _, V2: () => u, yD: () => p });
+            i.d(t, { FP: () => g, Hf: () => d, Q$: () => f, UD: () => p, V2: () => u, yD: () => _ });
             var n = i(439058),
                 s = i(499627),
                 r = i(917799),
@@ -295,8 +295,8 @@
                 return e;
             }
             s.Z.register({ [o]: m });
-            const p = (e) => e[o].scheduledTweets,
-                _ = (e) => e[o].fetchStatus,
+            const _ = (e) => e[o].scheduledTweets,
+                p = (e) => e[o].fetchStatus,
                 g =
                     () =>
                     (e, t, { api: i }) =>
@@ -320,8 +320,8 @@
                 u = i.n(c),
                 h = i(184605),
                 m = i(980407),
-                p = i(745475),
-                _ = i(566220),
+                _ = i(745475),
+                p = i(566220),
                 g = i(943245),
                 f = i(349745),
                 w = i(668214),
@@ -356,7 +356,7 @@
                 const T = (0, f.o3)(u),
                     E = !!u,
                     b = n.useRef(),
-                    x = (0, _.R)(),
+                    x = (0, p.R)(),
                     [C, H] = n.useState({ dateError: !1, timeError: !1, tooFarInFuture: !1, invalidDateTime: !1 }),
                     W = T || new Date(x().getTime() + M),
                     [O, V] = n.useState({ date: { year: W.getFullYear(), month: W.getMonth() + 1, day: W.getDate() }, time: { hour: W.getHours(), minute: W.getMinutes() } }),
@@ -433,7 +433,7 @@
                     })(c),
                     { dateError: ce, timeError: ue, tooFarInFuture: he } = C,
                     me = he ? A : L;
-                return n.createElement(m.Z, { appBarRef: b, backButtonType: "close", bottomBar: X, documentTitle: v, history: d, rightControl: J, title: v }, n.createElement(s.Z, { style: q.form }, n.createElement(s.Z, { style: q.formItem }, n.createElement(p.Z, { scheduledFor: O })), n.createElement(s.Z, { style: q.formItem }, n.createElement(a.ZP, { color: "gray700" }, F), n.createElement(o.Z, { day: se, errorMessage: ce ? me : "", errors: ce ? U : z, label: F, maxSelectableYear: le, minSelectableYear: oe, month: re, onChange: Y, style: q.date, withCalendar: !0, year: ae })), n.createElement(s.Z, { style: q.formItem }, n.createElement(l.Z, { errorText: ue ? L : "", hour: ie, invalid: ue, label: P, minute: ne, onChange: $ })), de && n.createElement(s.Z, { style: q.formItem }, n.createElement(a.ZP, { color: "gray700" }, R), n.createElement(a.ZP, { size: "headline1" }, de))));
+                return n.createElement(m.Z, { appBarRef: b, backButtonType: "close", bottomBar: X, documentTitle: v, history: d, rightControl: J, title: v }, n.createElement(s.Z, { style: q.form }, n.createElement(s.Z, { style: q.formItem }, n.createElement(_.Z, { scheduledFor: O })), n.createElement(s.Z, { style: q.formItem }, n.createElement(a.ZP, { color: "gray700" }, F), n.createElement(o.Z, { day: se, errorMessage: ce ? me : "", errors: ce ? U : z, label: F, maxSelectableYear: le, minSelectableYear: oe, month: re, onChange: Y, style: q.date, withCalendar: !0, year: ae })), n.createElement(s.Z, { style: q.formItem }, n.createElement(l.Z, { errorText: ue ? L : "", hour: ie, invalid: ue, label: P, minute: ne, onChange: $ })), de && n.createElement(s.Z, { style: q.formItem }, n.createElement(a.ZP, { color: "gray700" }, R), n.createElement(a.ZP, { size: "headline1" }, de))));
             }
             const q = d.default.create((e) => ({ actionButtonContainer: { flexDirection: "row" }, actionButton: { marginStart: e.spaces.space12 }, bottomBar: { display: "flex", justifyContent: "flex-start", flexDirection: "row", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, form: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, formItem: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 } })),
                 W = C(H);
@@ -452,8 +452,8 @@
                 u = i(392237),
                 h = i(332920),
                 m = i.n(h),
-                p = i(401388),
-                _ = i(803810),
+                _ = i(401388),
+                p = i(803810),
                 g = i(323265),
                 f = i(290402),
                 w = i(980407),
@@ -582,18 +582,19 @@
                             const { replied_tweet_results: e, tweet_create_request: t } = this.props.unsentTweet,
                                 i = e?.result,
                                 s = "Tweet" === i?.__typename ? i : void 0;
-                            if (!s || (0, p.Z)(s)) return n.createElement(E.ZP, { color: "gray700", size: "subtext2" }, oe);
+                            if (!s || (0, _.Z)(s)) return n.createElement(E.ZP, { color: "gray700", size: "subtext2" }, oe);
                             const r = (t && t.exclude_reply_user_ids) || [];
                             let a;
                             s.core && s.core.user_results?.result && "User" === s.core.user_results.result.__typename && (a = s.core.user_results.result);
                             const o = a?.legacy,
-                                l = o && o.id_str,
-                                d = o && o.screen_name,
-                                c = s.legacy && s.legacy.entities,
-                                u = (c && c.user_mentions) || [],
-                                h = this._getFilteredMentions(u, r),
-                                m = n.createElement(b.ZP, { displayTextRange: [280, 280], inReplyToScreenName: d, inReplyToUserIdStr: l, linkType: "none", size: "subtext2", tweetPermalink: "", userMentionsEntities: h });
-                            return n.createElement(x.Z, { contextType: "Reply", iconSize: "large", style: ce.socialContext, text: m, weight: "bold", withLeftPadding: !1 });
+                                l = a?.core,
+                                d = o && o.id_str,
+                                c = l && l.screen_name,
+                                u = s.legacy && s.legacy.entities,
+                                h = (u && u.user_mentions) || [],
+                                m = this._getFilteredMentions(h, r),
+                                p = n.createElement(b.ZP, { displayTextRange: [280, 280], inReplyToScreenName: c, inReplyToUserIdStr: d, linkType: "none", size: "subtext2", tweetPermalink: "", userMentionsEntities: m });
+                            return n.createElement(x.Z, { contextType: "Reply", iconSize: "large", style: ce.socialContext, text: p, weight: "bold", withLeftPadding: !1 });
                         }),
                         (this._handleImageClick = (e) => {
                             e && e.preventDefault();
@@ -613,7 +614,7 @@
                                       const t = e.tweet_create_request,
                                           i = e.replied_tweet_results?.result,
                                           n = "Tweet" === i?.__typename ? i : void 0,
-                                          s = e.replied_tweet_results?.result?.core?.user_results.result.legacy,
+                                          s = i?.core?.user_results.result?.legacy ? { ...i.core.user_results.result.legacy, screen_name: i.core.user_results.result.core?.screen_name } : void 0,
                                           r = e.media_entities,
                                           a = n?.legacy?.entities?.user_mentions || [],
                                           o = e.rest_id;
@@ -622,7 +623,7 @@
                                 : ((e) => {
                                       const t = "PostTweetRequest" === e.tweet_create_request?.type ? e.tweet_create_request : void 0,
                                           i = e.replied_tweet_results?.result,
-                                          n = "Tweet" === i?.__typename && "User" === i?.core?.user_results.result?.__typename ? i?.core?.user_results.result?.legacy : void 0,
+                                          n = "Tweet" === i?.__typename && "User" === i?.core?.user_results.result?.__typename && i?.core?.user_results.result?.legacy ? { ...i?.core?.user_results.result?.legacy, screen_name: i.core.user_results.result.core?.screen_name } : void 0,
                                           s = e.media_entities,
                                           r = "Tweet" === i?.__typename ? i?.legacy : void 0,
                                           a = r?.entities?.user_mentions || [],
@@ -633,16 +634,16 @@
                     if (!r || "PostTweetRequest" !== r.type) return null;
                     const h = r.attachment_url,
                         m = a ? (0, A.BR)(a) : void 0,
-                        _ = r.status || "",
+                        p = r.status || "",
                         g = "Failed" === o,
                         f = r.in_reply_to_status_id,
-                        w = Boolean(f && (0, p.Z)(d)),
-                        { displayRangeEnd: y, displayRangeStart: b, validRangeEnd: S, validRangeStart: v } = (0, Z.Z)(_),
-                        B = S - v < y - b ? `${_.substring(v, S + 1)}...` : _,
+                        w = Boolean(f && (0, _.Z)(d)),
+                        { displayRangeEnd: y, displayRangeStart: b, validRangeEnd: S, validRangeStart: v } = (0, Z.Z)(p),
+                        B = S - v < y - b ? `${p.substring(v, S + 1)}...` : p,
                         k = this._getImages(t),
                         I = this._getLabelInfo(t),
                         P = r?.thread_tweets?.length ?? 0;
-                    return n.createElement(s.Z, { style: [ce.listItem, g && ce.scheduleFail], testID: se }, c && u ? n.createElement(C.Z, { renderMedia: (e) => n.createElement(C.Z.Media, (0, T.Z)({}, e, { videoOptions: { ...e.videoOptions, hidePreviewPlayButton: !0 } })), renderReplyContext: (e) => (!d || (0, p.Z)(d) ? n.createElement(E.ZP, { color: "gray700", size: "subtext2" }, oe) : n.createElement(C.Z.ReplyContext, (0, T.Z)({}, e, { displayTextRange: [280, 280], linkType: "none", tweetPermalink: "" }))), renderText: (t) => n.createElement(n.Fragment, null, n.createElement(C.Z.Text, (0, T.Z)({}, t, { entities: void 0 })), g || w ? n.createElement(s.Z, { style: ce.leftColumn }, n.createElement(ee, { isDraft: !m, unsentTweetId: e.rest_id })) : null), renderTimestamp: (e) => this._renderLegend(o, m, w, e.id), renderUserAvatar: () => null, renderUserName: () => null, role: "button", tweet: u }) : n.createElement(s.Z, { style: ce.unsentTweet }, n.createElement(s.Z, { style: ce.content }, this._renderLegend(o, m, w)), n.createElement(s.Z, { style: ce.tweetContent }, f && this._renderReplyContext(), h && n.createElement(x.Z, { contextType: "Retweet", iconSize: "large", style: ce.socialContext, text: h, weight: "bold", withLeftPadding: !1 }), n.createElement(s.Z, { style: ce.content }, n.createElement(s.Z, { style: ce.leftColumn }, n.createElement(D.Z, { displayTextRange: [v, S], style: ce.tweetText, text: B }), P > 0 && n.createElement(E.ZP, { color: "gray500", size: "subtext1" }, le({ count: P })), (g || w) && n.createElement(ee, { isDraft: !m, unsentTweetId: e.rest_id })), k.length > 0 && n.createElement(s.Z, { style: [ce.imageContainer, ce.rightColumn] }, n.createElement(L, { cacheLocationKey: "unsentTweets", hideAcceptOverlay: !0, images: k, onClick: this._handleImageClick, singleImageMaxAspectRatio: 1, singleImageMinAspectRatio: 1 }), I && n.createElement(E.ZP, { size: "subtext3" }, n.createElement(te.ZP, { durationInMilliseconds: I.duration, type: I.type })))))));
+                    return n.createElement(s.Z, { style: [ce.listItem, g && ce.scheduleFail], testID: se }, c && u ? n.createElement(C.Z, { renderMedia: (e) => n.createElement(C.Z.Media, (0, T.Z)({}, e, { videoOptions: { ...e.videoOptions, hidePreviewPlayButton: !0 } })), renderReplyContext: (e) => (!d || (0, _.Z)(d) ? n.createElement(E.ZP, { color: "gray700", size: "subtext2" }, oe) : n.createElement(C.Z.ReplyContext, (0, T.Z)({}, e, { displayTextRange: [280, 280], linkType: "none", tweetPermalink: "" }))), renderText: (t) => n.createElement(n.Fragment, null, n.createElement(C.Z.Text, (0, T.Z)({}, t, { entities: void 0 })), g || w ? n.createElement(s.Z, { style: ce.leftColumn }, n.createElement(ee, { isDraft: !m, unsentTweetId: e.rest_id })) : null), renderTimestamp: (e) => this._renderLegend(o, m, w, e.id), renderUserAvatar: () => null, renderUserName: () => null, role: "button", tweet: u }) : n.createElement(s.Z, { style: ce.unsentTweet }, n.createElement(s.Z, { style: ce.content }, this._renderLegend(o, m, w)), n.createElement(s.Z, { style: ce.tweetContent }, f && this._renderReplyContext(), h && n.createElement(x.Z, { contextType: "Retweet", iconSize: "large", style: ce.socialContext, text: h, weight: "bold", withLeftPadding: !1 }), n.createElement(s.Z, { style: ce.content }, n.createElement(s.Z, { style: ce.leftColumn }, n.createElement(D.Z, { displayTextRange: [v, S], style: ce.tweetText, text: B }), P > 0 && n.createElement(E.ZP, { color: "gray500", size: "subtext1" }, le({ count: P })), (g || w) && n.createElement(ee, { isDraft: !m, unsentTweetId: e.rest_id })), k.length > 0 && n.createElement(s.Z, { style: [ce.imageContainer, ce.rightColumn] }, n.createElement(L, { cacheLocationKey: "unsentTweets", hideAcceptOverlay: !0, images: k, onClick: this._handleImageClick, singleImageMaxAspectRatio: 1, singleImageMinAspectRatio: 1 }), I && n.createElement(E.ZP, { size: "subtext3" }, n.createElement(te.ZP, { durationInMilliseconds: I.duration, type: I.type })))))));
                 }
                 _getFilteredMentions(e, t) {
                     return e
@@ -687,13 +688,13 @@
             var ue = i(128225),
                 he = i(716233),
                 me = i(122868),
-                pe = i(189244),
-                _e = i(497294),
+                _e = i(189244),
+                pe = i(497294),
                 ge = i(601576),
                 fe = i(632960);
             const we = (0, O.Z)()
                     .propsFromState(() => ({ draftTweets: V.Fq, draftsFetchStatus: V.UD, scheduledTweets: N.yD, scheduledFetchStatus: N.UD }))
-                    .propsFromActions(() => ({ addMedia: _e.rA, setMediaMetadata: _e._B, addToast: ge.fz, createDraftTweetApiErrorHandler: (0, W.zr)(V.CA), createScheduledTweetApiErrorHandler: (0, W.zr)(N.Hf), deleteDraftTweet: V.bR, deleteScheduledTweet: N.Q$, fetchDraftTweets: V.Le, fetchScheduledTweets: N.FP, updateComposerFromUnsentDraft: fe.JF, updateComposerFromUnsentScheduled: fe.qO }))
+                    .propsFromActions(() => ({ addMedia: pe.rA, setMediaMetadata: pe._B, addToast: ge.fz, createDraftTweetApiErrorHandler: (0, W.zr)(V.CA), createScheduledTweetApiErrorHandler: (0, W.zr)(N.Hf), deleteDraftTweet: V.bR, deleteScheduledTweet: N.Q$, fetchDraftTweets: V.Le, fetchScheduledTweets: N.FP, updateComposerFromUnsentDraft: fe.JF, updateComposerFromUnsentScheduled: fe.qO }))
                     .withAnalytics({ page: "unsent_tweets" }),
                 ye = m().d15af6da,
                 Te = m().a1e1b748,
@@ -771,7 +772,7 @@
                                         r = t?.result,
                                         a = "Tweet" === r?.__typename ? r : void 0,
                                         o = s && "PostTweetRequest" === s.type ? s.in_reply_to_status_id : void 0,
-                                        l = Boolean(o && (0, p.Z)(a)),
+                                        l = Boolean(o && (0, _.Z)(a)),
                                         d = e.scheduling_info ? e.scheduling_info.state : void 0,
                                         u = !this.isEditing && d !== A.X5.FAILED && !l,
                                         h = u ? this._handleClick(e) : void 0,
@@ -836,12 +837,12 @@
                                 a = "PostTweetRequest" === n?.type ? n.media_options : void 0,
                                 o = "PostTweetRequest" === n?.type ? n.in_reply_to_status_id : void 0,
                                 l = "PostTweetRequest" === n?.type ? n.attachment_url : void 0,
-                                d = l && l.split("/status/")[1].match(pe.Wq.id),
+                                d = l && l.split("/status/")[1].match(_e.Wq.id),
                                 c = d ? d[0] : void 0,
                                 u = e.media_entities ? (0, A.Dp)(e.media_entities) : {},
                                 h = (e.media_entities || []).reduce((e, t) => e || (t.media_origin ? { found_media_origin: t.media_origin } : void 0), void 0),
                                 m = n?.thread_tweets ?? [],
-                                p = "PostTweetRequest" === n?.type ? n.media_ids : void 0;
+                                _ = "PostTweetRequest" === n?.type ? n.media_ids : void 0;
                             let g = Promise.resolve([]);
                             const f = u.externalMedia?.map((e) => e.uploadId).filter(Boolean) ?? [];
                             if (u.externalMedia) {
@@ -851,14 +852,14 @@
                                     .then((t) =>
                                         t.map((t, i) => {
                                             const { altText: n, sensitiveMediaWarning: s } = e[i];
-                                            return (n || s) && this.props.setMediaMetadata(t.id, { ...(0, _.Z)(n ? { altText: n } : null), ...(0, _.Z)(s ? { sensitiveMediaWarning: s } : null) }), t.id;
+                                            return (n || s) && this.props.setMediaMetadata(t.id, { ...(0, p.Z)(n ? { altText: n } : null), ...(0, p.Z)(s ? { sensitiveMediaWarning: s } : null) }), t.id;
                                         }),
                                     );
                             }
                             g.then((e) => {
                                 const n = me.x.modal,
                                     l = e.reduce((e, t, i) => ((e[f[i]] = t), e), {}),
-                                    d = p?.map((e) => l[e]);
+                                    d = _?.map((e) => l[e]);
                                 if (this.isDraftsTab) {
                                     const e = { tweetId: i, gifMetadata: h, mediaIds: d, text: s, richtext_options: r, media_options: a, thread_tweets: m.map((e) => ({ text: e.status, media_options: e.media_options, richtext_options: e.richtext_options, mediaIds: e.media_ids?.map((e) => l[e]) ?? [] })) };
                                     this.props.updateComposerFromUnsentDraft({ data: e, parentKey: n });
@@ -916,4 +917,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-e019dbda.be92595a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-e019dbda.2241ec5a.js.map

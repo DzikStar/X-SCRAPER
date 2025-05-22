@@ -6,11 +6,11 @@
             s.d(t, { Z: () => d });
             var i,
                 a,
-                n,
                 l,
+                n,
                 r,
                 o = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SensitiveMediaSettingsQuery", selections: [{ alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "cd25" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(a = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(n = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserSensitiveMediaSettingsInfo", kind: "LinkedField", name: "sensitive_media_settings", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "SensitiveMediaOptions_userSensitiveMediaSettingsInfo" }, (l = { alias: null, args: null, kind: "ScalarField", name: "can_user_allow_sensitive_content", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"cd25")' }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SensitiveMediaSettingsQuery", selections: [{ alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "cd25" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(a = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(l = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserSensitiveMediaSettingsInfo", kind: "LinkedField", name: "sensitive_media_settings", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "SensitiveMediaOptions_userSensitiveMediaSettingsInfo" }, (n = { alias: null, args: null, kind: "ScalarField", name: "can_user_allow_sensitive_content", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"cd25")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: [],
@@ -45,7 +45,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            n,
+                                                            l,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -69,7 +69,7 @@
                                                                         ],
                                                                         storageKey: null,
                                                                     },
-                                                                    l,
+                                                                    n,
                                                                 ],
                                                                 storageKey: null,
                                                             },
@@ -108,17 +108,17 @@
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserCore",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "core",
                         plural: !1,
                         selections: [
-                            { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null },
                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                     {
                         alias: null,
@@ -164,7 +164,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "e17ff9a9f9405336e54b8c353fcae461",
+                hash: "2ed5f16889d23a8b1d55df8a2f7bb966",
             };
             const a = i;
         },
@@ -172,8 +172,8 @@
             s.d(t, { Z: () => d });
             var i,
                 a,
-                n,
                 l,
+                n,
                 r,
                 o = {
                     fragment: {
@@ -207,11 +207,11 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    (n = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                    (l = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            (l = {
+                                                            (n = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: "LegacyExtendedUserProfile",
@@ -254,7 +254,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "fetchDownloadSettingAllowedQuery", selections: [i, { alias: "viewer", args: a, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [n, { kind: "InlineFragment", selections: [l, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "fetchDownloadSettingAllowedQuery", selections: [i, { alias: "viewer", args: a, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [n, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
                     params: { id: "P4Y9VY-Vn1cJuBnjOVZ4xA", metadata: {}, name: "fetchDownloadSettingAllowedQuery", operationKind: "query", text: null },
                 };
             o.hash = "8a9c6728758bc2d477246d6d2dbf9e46";
@@ -335,30 +335,30 @@
                 let s = t;
                 const i = new Map();
                 let a = 0,
-                    n = 0,
                     l = 0,
+                    n = 0,
                     r = null;
                 function o() {
-                    i.clear(), (a = 0), (n = 0), (l = 0);
+                    i.clear(), (a = 0), (l = 0), (n = 0);
                 }
                 return {
                     uploadStart: function (e, t) {
-                        i.set(e, { time: Date.now(), bytes: t }), n || (n = Date.now());
+                        i.set(e, { time: Date.now(), bytes: t }), l || (l = Date.now());
                     },
                     uploadFinish: function (d, u) {
                         const c = i.get(d);
                         c &&
                             ((a += u - c.bytes),
                             i.delete(d),
-                            ++l === s &&
+                            ++n === s &&
                                 (function () {
-                                    if (!n) return;
-                                    const i = Date.now() - n;
+                                    if (!l) return;
+                                    const i = Date.now() - l;
                                     if (i <= 0) return;
                                     if (1 !== t) return;
-                                    const l = a / i;
-                                    if (l < 5e3 && 1 === s) return;
-                                    !r || r.byterate < l ? ((s += 1), e(), (r = { byterate: l, poolSize: s })) : ((s -= 2), (s = Math.max(s, 1)), (r = null));
+                                    const n = a / i;
+                                    if (n < 5e3 && 1 === s) return;
+                                    !r || r.byterate < n ? ((s += 1), e(), (r = { byterate: n, poolSize: s })) : ((s -= 2), (s = Math.max(s, 1)), (r = null));
                                     o();
                                 })());
                     },
@@ -379,18 +379,18 @@
                 }
                 return `&${String(t)}`;
             }
-            function n(e, t = r, s = l) {
+            function l(e, t = r, s = n) {
                 const i = Math.max(e, t);
                 return Math.min(i, s);
             }
-            const l = 5242880,
+            const n = 5242880,
                 r = 65536,
                 o = 2e3,
                 d = 1e4;
             class u {
                 constructor(e, t = F) {
                     var s;
-                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || h), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((s = this.totalBytes), n(Math.ceil(s / d)))), this._clearState();
+                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || g), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((s = this.totalBytes), l(Math.ceil(s / d)))), this._clearState();
                 }
                 upload(e) {
                     ((this.hasAttemptedFinalize && (this.uploadOptions.trimRanges !== e.trimRanges || this.uploadOptions.extraFinalizeParams !== e.extraFinalizeParams)) || this.uploadOptions.extraInitParams !== e.extraInitParams) && this._clearState(),
@@ -422,10 +422,10 @@
                                 const e = window.navigator.connection;
                                 if (e) {
                                     const t = e.type || e.effectiveType;
-                                    if (e.downlink) return n(((1e3 * e.downlink) / 8 / 2) * o);
-                                    if ("wifi" === t) return n(5 * r);
+                                    if (e.downlink) return l(((1e3 * e.downlink) / 8 / 2) * o);
+                                    if ("wifi" === t) return l(5 * r);
                                 }
-                                return n(2 * r);
+                                return l(2 * r);
                             })()),
                         (this.segmentIndex = 0),
                         (this.totalUploadDuration = 0),
@@ -437,12 +437,12 @@
                 }
                 uploadExternalMedia(e, t, s, i = F) {
                     (this.uploadOptions = i), (this.state = k.PENDING), (this.progressMode = "uploading");
-                    let n = a({ source_url: e, media_type: t, media_category: s });
-                    (n += this.uploadOptions.extraInitParams || ""), (n += this.uploadOptions.extraFinalizeParams || "");
+                    let l = a({ source_url: e, media_type: t, media_category: s });
+                    (l += this.uploadOptions.extraInitParams || ""), (l += this.uploadOptions.extraFinalizeParams || "");
                     this._sendXhr(
                         "POST",
                         "INIT",
-                        n,
+                        l,
                         (e) => {
                             (this.mediaId = e.media_id_string), this._getStatus();
                         },
@@ -484,7 +484,7 @@
                     }
                 }
                 _startNextAppendSegment() {
-                    if (this.hasAttemptedFinalize || this.inflightSegments.size >= (this._bitrateMonitor?.getPoolSize() ?? g)) return;
+                    if (this.hasAttemptedFinalize || this.inflightSegments.size >= (this._bitrateMonitor?.getPoolSize() ?? h)) return;
                     if (this.uploadedBytes === this.totalBytes) return this._postFinalize();
                     if (!this.fileHandle) return;
                     let e = 0;
@@ -497,17 +497,17 @@
                         const e = this.fileHandle.slice(t, t + s);
                         i.append("media", e);
                     }
-                    const n = this.segmentIndex;
+                    const l = this.segmentIndex;
                     this.segmentIndex += 1;
-                    const l = a({ media_id: this.mediaId, segment_index: String(n) }),
+                    const n = a({ media_id: this.mediaId, segment_index: String(l) }),
                         r = this._sendXhr(
                             "POST",
                             "APPEND",
-                            l,
+                            n,
                             () => {
                                 if (this.state === k.PENDING) {
-                                    const e = this.inflightSegments.get(n);
-                                    e && (this.inflightSegments.delete(n), (this.uploadedBytes += e.bytes)), this._notifyProgress(this._uploadProgress(), this.mediaId), 0 === this.inflightSegments.size && this._startNextAppendSegment();
+                                    const e = this.inflightSegments.get(l);
+                                    e && (this.inflightSegments.delete(l), (this.uploadedBytes += e.bytes)), this._notifyProgress(this._uploadProgress(), this.mediaId), 0 === this.inflightSegments.size && this._startNextAppendSegment();
                                 }
                             },
                             (...e) => this._uploadError(...e),
@@ -516,7 +516,7 @@
                             () => this._startNextAppendSegment(),
                             s,
                         );
-                    this.inflightSegments.set(n, { bytes: s, request: r });
+                    this.inflightSegments.set(l, { bytes: s, request: r });
                 }
                 _postFinalize() {
                     if (this.uploadOptions.pauseBeforeFinalize) (this.state = k.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
@@ -607,20 +607,20 @@
                         s.segmentBytes && (i.appendByteSize = s.segmentBytes), this.uploadOptions.stats(i);
                     }
                 }
-                _sendXhr(e, t, s, i, a, l, r, d, u = 0) {
+                _sendXhr(e, t, s, i, a, n, r, d, u = 0) {
                     const c = `${this.uploadUrl}?command=${t}${s}`;
                     let p = !1;
-                    const h = new Date(),
-                        g = (n) => {
-                            if (l) {
-                                const n = [c, l].join("-");
-                                this.timeoutIdMap[n] = setTimeout(() => {
-                                    this._sendXhr(e, t, s, i, a, l - 1, r, d, u);
+                    const g = new Date(),
+                        h = (l) => {
+                            if (n) {
+                                const l = [c, n].join("-");
+                                this.timeoutIdMap[l] = setTimeout(() => {
+                                    this._sendXhr(e, t, s, i, a, n - 1, r, d, u);
                                 }, _);
-                            } else f(n);
+                            } else f(l);
                         },
                         f = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: h, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS, mediaId: this.mediaId });
+                            this._stats(t, e || "unknown-error", { requestStartTime: g, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         k = new XMLHttpRequest();
                     k.open(e, c, !0),
@@ -629,12 +629,12 @@
                         (k.onload = () => {
                             if (k.status >= 200 && k.status < 400) {
                                 const e = T(k);
-                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: h, segmentBytes: u }), i(e || {}), !p && d && d()) : g("parsererror");
-                            } else k.status && 503 !== k.status ? f("invalid-response") : g("503");
+                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: g, segmentBytes: u }), i(e || {}), !p && d && d()) : h("parsererror");
+                            } else k.status && 503 !== k.status ? f("invalid-response") : h("503");
                         }),
-                        (k.onerror = () => g("error")),
+                        (k.onerror = () => h("error")),
                         (k.ontimeout = () => {
-                            (this.nextSegmentBytes = this.minSegmentBytes), g("timeout");
+                            (this.nextSegmentBytes = this.minSegmentBytes), h("timeout");
                         });
                     let F = !1;
                     k.upload.onprogress = (e) => {
@@ -642,13 +642,13 @@
                         const t = e.loaded,
                             s = ((this.uploadedBytes + t) / this.totalBytes) * 100;
                         if ((this._notifyProgress(s, this.mediaId), t / e.total > y && !p && ((p = !0), r))) {
-                            const e = Math.max(1, new Date().getTime() - h.getTime()),
+                            const e = Math.max(1, new Date().getTime() - g.getTime()),
                                 s = this.minSegmentBytes,
                                 i = this.sruParameterOverrides?.maxSegmentBytes;
                             (this.nextSegmentBytes = (function (e) {
                                 const t = e.idealUploadTimeMs || o,
                                     s = e.sentBytes / e.uploadTimeMs;
-                                return n(Math.round(t * s), e.minSegmentBytes, e.maxSegmentBytes);
+                                return l(Math.round(t * s), e.minSegmentBytes, e.maxSegmentBytes);
                             })({ minSegmentBytes: s, sentBytes: t, uploadTimeMs: e, maxSegmentBytes: i, idealUploadTimeMs: this.sruParameterOverrides?.idealUploadTimeMs })),
                                 "function" == typeof d && d();
                         }
@@ -660,8 +660,8 @@
             const c = 2147483647,
                 p = 1,
                 m = 45e3,
-                h = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
-                g = 2,
+                g = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
+                h = 2,
                 y = 0.95,
                 _ = 1e3,
                 S = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
@@ -686,4 +686,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.47685afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.3239342a.js.map

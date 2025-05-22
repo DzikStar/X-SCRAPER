@@ -12031,7 +12031,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["（手数料", "）"];
                             },
                         },
                         {
@@ -12685,7 +12685,7 @@
                         {
                             key: "i74be1ef",
                             get: function () {
-                                return ["", "と"];
+                                return ["", "さんと", "さん"];
                             },
                         },
                         {
@@ -13263,4 +13263,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.4f95ddaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.5532c6ea.js.map

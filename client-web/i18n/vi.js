@@ -12024,7 +12024,7 @@
                         {
                             key: "gfc900b9",
                             get: function () {
-                                return ["(", " Fee)"];
+                                return ["(Phí là ", ")"];
                             },
                         },
                         {
@@ -12690,7 +12690,7 @@
                         {
                             key: "hf3108d3",
                             get: function () {
-                                return ["", ", và "];
+                                return ["", " và "];
                             },
                         },
                         {
@@ -13256,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.d78284ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.5574e7aa.js.map

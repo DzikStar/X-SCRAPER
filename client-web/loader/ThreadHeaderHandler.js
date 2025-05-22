@@ -121,41 +121,41 @@
                 v = r(246492),
                 E = r(520913),
                 Z = r(731708),
-                k = r(642153),
-                S = r(879891),
+                S = r(642153),
+                k = r(879891),
                 P = r(392237),
                 F = r(54606);
-            const T = n().ae408b76,
-                I = n().j355f008,
+            const L = n().ae408b76,
+                T = n().j355f008,
                 B = n().habf9678,
-                L = n().db0798ed,
+                I = n().db0798ed,
                 R = n().dc716ec9,
-                Q = ({ text: e }) => {
-                    const { direction: t } = (0, S.Z)();
+                D = ({ text: e }) => {
+                    const { direction: t } = (0, k.Z)();
                     return o.createElement(Z.ZP, { dir: t, withHashflags: !0 }, e);
                 },
-                D = (e, t) =>
+                Q = (e, t) =>
                     t
-                        ? T
+                        ? L
                         : ((e) => {
-                              const t = o.createElement(Q, { text: e });
+                              const t = o.createElement(D, { text: e });
                               return o.createElement(n().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
                 _ = P.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
                 H = P.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                N = ({ contextType: e, iconColor: t, iconSize: r, link: a, retweetData: n, text: Z, topicData: S, userAvatarUrls: T }) => {
+                N = ({ contextType: e, iconColor: t, iconSize: r, link: a, retweetData: n, text: Z, topicData: k, userAvatarUrls: L }) => {
                     const { isSelfRetweet: N, name: W, screenName: z } = n || {},
                         A = ((e, t, r, a = []) => {
                             const n = _[t],
                                 Z = [r ? { color: P.default.theme.colors[r] } : H.colorDeepGray, n],
-                                S = o.createElement(i.default, { style: Z }),
-                                T = o.createElement(l.default, { style: Z }),
-                                I = o.createElement(s.default, { style: Z }),
+                                k = o.createElement(i.default, { style: Z }),
+                                L = o.createElement(l.default, { style: Z }),
+                                T = o.createElement(s.default, { style: Z }),
                                 B = o.createElement(c.default, { style: Z }),
-                                L = o.createElement(d.default, { style: Z }),
+                                I = o.createElement(d.default, { style: Z }),
                                 R = o.createElement(u.default, { style: H.circle }),
-                                Q = o.createElement(m.default, { style: Z }),
-                                D = o.createElement(p.default, { style: Z }),
+                                D = o.createElement(m.default, { style: Z }),
+                                Q = o.createElement(p.default, { style: Z }),
                                 N = o.createElement(h.default, { style: Z }),
                                 W = o.createElement(f.default, { style: Z }),
                                 z = o.createElement(y.default, { style: Z }),
@@ -165,27 +165,27 @@
                                 V = o.createElement(C.default, { style: Z }),
                                 $ = o.createElement(x.default, { style: Z }),
                                 j = o.createElement(v.default, { style: Z }),
-                                O = o.createElement(k.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: a }),
+                                O = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: a }),
                                 G = o.createElement(E.default, { style: Z });
                             switch (e) {
                                 case F.Q.Pin:
                                 case F.Q.ReplyPin:
-                                    return S;
+                                    return k;
                                 case F.Q.Retweet:
-                                    return T;
+                                    return L;
                                 case F.Q.Like:
-                                    return I;
+                                    return T;
                                 case F.Q.Follow:
                                     return B;
                                 case F.Q.Moment:
-                                    return L;
+                                    return I;
                                 case F.Q.NewTweets:
                                     return R;
                                 case F.Q.Reply:
                                 case F.Q.Conversation:
-                                    return Q;
-                                case F.Q.Feedback:
                                     return D;
+                                case F.Q.Feedback:
+                                    return Q;
                                 case F.Q.Topic:
                                     return N;
                                 case F.Q.List:
@@ -213,18 +213,18 @@
                                 default:
                                     return null;
                             }
-                        })(e, r, t, T);
+                        })(e, r, t, L);
                     switch (e) {
                         case F.Q.Retweet:
-                            return { Icon: A, text: Z || D(W, N), link: z ? `https://twitter.com/${z}` : void 0 };
+                            return { Icon: A, text: Z || Q(W, N), link: z ? `https://twitter.com/${z}` : void 0 };
                         case F.Q.Pin:
-                            return { Icon: A, text: Z || I };
+                            return { Icon: A, text: Z || T };
                         case F.Q.ReplyPin:
                             return { Icon: A, text: B };
                         case F.Q.Topic:
-                            return { Icon: A, "aria-label": "Recommendation" === S?.functionalityType || "RecWithEducation" === S?.functionalityType ? R({ topicName: Z }) : L({ topicName: Z }), text: Z ? o.createElement(Q, { text: Z }) : null, link: a };
+                            return { Icon: A, "aria-label": "Recommendation" === k?.functionalityType || "RecWithEducation" === k?.functionalityType ? R({ topicName: Z }) : I({ topicName: Z }), text: Z ? o.createElement(D, { text: Z }) : null, link: a };
                         default:
-                            return { Icon: A, text: Z ? o.createElement(Q, { text: Z }) : null, link: a };
+                            return { Icon: A, text: Z ? o.createElement(D, { text: Z }) : null, link: a };
                     }
                 };
         },
@@ -244,10 +244,10 @@
             class p extends o.PureComponent {
                 render() {
                     const { avatarSize: e, bottomControl: t, iconStyle: r, id: s, onLayout: c, rightControl: d, style: m, testID: p, textColor: f, textSize: y, topControl: g, weight: b, withBottomBorder: w, withLeftPadding: C, withTextCentered: x, ...v } = this.props,
-                        { Icon: E, "aria-label": Z, link: k, text: S } = (0, u.Z)(v),
-                        P = o.createElement(n.ZP, { "aria-label": Z, color: f, id: s, numberOfLines: 2, size: y, testID: p, weight: b, withoutTwemojiAndHashflags: !0 }, S),
-                        { cellStyle: F, viewStyle: T } = this._getStyles();
-                    return S ? o.createElement(l.ZP.UseProps, null, (n) => o.createElement(o.Fragment, null, g || null, o.createElement(a.Z, { onLayout: c, style: [m, T, n.socialContextRefreshEnabled() && !C && h.socialContextRefresh] }, o.createElement(i.Z, { avatarCell: E || (C ? null : void 0), avatarCellStyle: [r, h.socialContextIconColumn, !C && h.unsetIconWidth, n.socialContextRefreshEnabled() && !C && h.socialContextRefreshIcon], avatarSize: e, cellStyle: F }, o.createElement(a.Z, { style: h.cellWrapper }, o.createElement(a.Z, { style: [h.socialContextTextColumn, n.socialContextRefreshEnabled() && !C && h.socialContextRefreshTextColumn] }, k ? this._renderLink(k, P) : P), d || null)), t || null))) : null;
+                        { Icon: E, "aria-label": Z, link: S, text: k } = (0, u.Z)(v),
+                        P = o.createElement(n.ZP, { "aria-label": Z, color: f, id: s, numberOfLines: 2, size: y, testID: p, weight: b, withoutTwemojiAndHashflags: !0 }, k),
+                        { cellStyle: F, viewStyle: L } = this._getStyles();
+                    return k ? o.createElement(l.ZP.UseProps, null, (n) => o.createElement(o.Fragment, null, g || null, o.createElement(a.Z, { onLayout: c, style: [m, L, n.socialContextRefreshEnabled() && !C && h.socialContextRefresh] }, o.createElement(i.Z, { avatarCell: E || (C ? null : void 0), avatarCellStyle: [r, h.socialContextIconColumn, !C && h.unsetIconWidth, n.socialContextRefreshEnabled() && !C && h.socialContextRefreshIcon], avatarSize: e, cellStyle: F }, o.createElement(a.Z, { style: h.cellWrapper }, o.createElement(a.Z, { style: [h.socialContextTextColumn, n.socialContextRefreshEnabled() && !C && h.socialContextRefreshTextColumn] }, S ? this._renderLink(S, P) : P), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: r, id: a, onClick: i, retweetData: l, textColor: s, topicData: u } = this.props,
@@ -391,7 +391,7 @@
                         case "livevideo":
                             t.scribe({ action: "impression", element: "livevideo_ring" });
                     }
-                }, [s]);
+                }, [t, s]);
                 const y = a.useCallback((e) => a.createElement(u.Z.Default, (0, o.Z)({}, e, { type: s })), [s]);
                 return a.createElement(
                     p.default,
@@ -464,7 +464,7 @@
             r.d(t, { H: () => o });
             const o = ({ description: e, entities: t, withheldDescription: r, withheldEntities: o }) => (r ? { description: r, entities: o } : { description: e, entities: t });
         },
-        98440: (e, t, r) => {
+        76388: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var o = r(202784),
                 a = r(890601),
@@ -472,12 +472,12 @@
                 i = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        452693: (e, t, r) => {
+        264171: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var o = r(202784),
                 a = r(890601),
@@ -485,7 +485,20 @@
                 i = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        492140: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var o = r(202784),
+                a = r(890601),
+                n = r(783427),
+                i = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M7 4.5C7 3.12 8.12 2 9.5 2h5C15.88 2 17 3.12 17 4.5v5.26L20.12 16H13v5l-1 2-1-2v-5H3.88L7 9.76V4.5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -499,4 +512,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ThreadHeaderHandler.e6f49bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ThreadHeaderHandler.33e4501a.js.map

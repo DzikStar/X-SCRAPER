@@ -49,7 +49,7 @@
                     const r = (0, i.p)(),
                         l = t?.state?.delegateUser,
                         o = (0, c.Au)(l?.userId),
-                        v = o?.handle.result.legacy.screen_name,
+                        v = o?.handle.result.core.screen_name,
                         _ = (0, m.I0)(),
                         k = a.useCallback(() => {
                             l &&
@@ -239,11 +239,11 @@
                 R = d().cb04a824,
                 A = r.memo(({ decoration: e, group: t, userRole: n }) => {
                     const a = x()(P.Z, t),
-                        { avatar: l, id: o, legacy: c } = a,
-                        { name: s, screen_name: i } = c ?? {},
+                        { avatar: l, core: o, id: c } = a,
+                        { name: s, screen_name: i } = o ?? {},
                         { image_url: m } = l ?? {},
                         u = "Admin" === n ? I : R;
-                    return r.createElement(S.ZP, { avatarUri: m || "", decoration: e, displayNameLabel: n ? u : void 0, name: s || "", screenName: i || "", userId: o });
+                    return r.createElement(S.ZP, { avatarUri: m || "", decoration: e, displayNameLabel: n ? u : void 0, name: s || "", screenName: i || "", userId: c });
                 });
             var L = n(170497),
                 M = n(69477),
@@ -272,7 +272,7 @@
                     [i, m] = r.useState(null),
                     [u, d] = r.useState(!1),
                     g = x()(Y, a),
-                    p = g.legacy.screen_name,
+                    p = g.core.screen_name,
                     b = r.useMemo(() => Q({ screenName: p }), [p]),
                     C = r.useMemo(() => ("Admin" === l ? $ : W), [l]),
                     y = r.useMemo(() => q({ screenName: p }), [p]),
@@ -351,7 +351,7 @@
                     [i, m] = r.useState(null),
                     u = (0, f.I0)(),
                     d = (0, h.z)(),
-                    g = x()(he, n).legacy.screen_name;
+                    g = x()(he, n).core.screen_name;
                 if (i) throw i;
                 const p = r.useCallback(
                         (n) => {
@@ -414,7 +414,7 @@
                     c.map((t) => {
                         const c = t.members?.find((e) => e.user_results?.result?.id === l),
                             s = c?.role || "Contributor";
-                        if (c?.rest_id && t.handle_results.result?.legacy) {
+                        if (c?.rest_id && t.handle_results.result?.core) {
                             const l = e === v.z.InviteMenu ? r.createElement(fe, { membershipId: c.rest_id, refetch: n, user: t.handle_results.result, withDisabledAccept: o }) : e === v.z.ActionMenu ? r.createElement(K, { groupId: t.id, membershipId: c.rest_id, refetch: n, user: t.handle_results.result, userRole: c.role ?? "Contributor" }) : null;
                             if (t.handle_results.result) return r.createElement(A, { decoration: l, group: t.handle_results.result, key: t.rest_id, userRole: a ? s : void 0 });
                         }
@@ -805,7 +805,7 @@
                 O = s().h502484e;
             function T({ memberRole: e, onChangeRolePress: t, refetch: n, restId: l, status: c, userResults: s, viewerRole: u }) {
                 const d = o()(a.Z, s),
-                    { avatar: g, legacy: p } = d,
+                    { avatar: g, core: p } = d,
                     b = p?.screen_name || "",
                     h = p?.name || "",
                     f = g?.image_url || "",
@@ -1177,4 +1177,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-63cb1cc4.5ee7f69a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-63cb1cc4.574273da.js.map

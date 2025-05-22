@@ -50,7 +50,7 @@
                     return { container: [s.container, t], footer: [s.footer, t], root: [s.root, n], tile: [e ? s.tile : s.tileNarrow], pivotTileContainer: [s.actionsContainer, e ? null : s.actionsContainerNarrow], pivotTile: [s.action, e ? s.actionWide : s.actionNarrow] };
                 },
                 d = { width: 194, height: 146 },
-                p = a.default.create((e) => ({ listItem: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space12, gap: e.spaces.space8, flexDirection: "row", borderRadius: e.borderRadii.large }, listItemContent: { alignItems: "flex-start", justifyContent: "space-between", flexDirection: "row", gap: e.spaces.space8, display: "flex", flex: 1 }, listItemFlex: { flex: 1 }, alignEnd: { textAlign: "end", alignSelf: "end" } })),
+                p = a.default.create((e) => ({ listItem: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space8, flexDirection: "row", borderRadius: e.borderRadii.large }, listItemContent: { alignItems: "flex-start", justifyContent: "space-between", flexDirection: "row", gap: e.spaces.space8, display: "flex", flex: 1 }, listItemFlex: { flex: 1 }, alignEnd: { textAlign: "end", alignSelf: "end" } })),
                 u = a.default.create((e) => ({ content: { flexDirection: "column", justifyContent: "space-between", gap: e.spaces.space8 }, description: { flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, actions: { flexDirection: "column", gap: e.spaces.space12 }, gap: { gap: e.spaces.space8 }, marginTop: { marginTop: e.spaces.space16 }, arrow: { alignSelf: "center", color: e.colors.gray400, height: e.spaces.space28 } })),
                 l = s;
         },
@@ -348,7 +348,7 @@
                     const n = (0, c.getStorageKey)(v.Z.fragment.selections[0], {});
                     ze({ store: e, key: n });
                     const a = (0, c.getStorageKey)(D.Z.fragment.selections[0], {});
-                    $e(e, a);
+                    $e(e, a), Ze(e);
                 },
                 Ze = (e) => {
                     const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
@@ -448,4 +448,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.6d7bd66a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.9356c90a.js.map

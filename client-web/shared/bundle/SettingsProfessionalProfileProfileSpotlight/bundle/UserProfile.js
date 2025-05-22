@@ -447,12 +447,12 @@
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
                     { alias: null, args: null, kind: "ScalarField", name: "is_verified_organization", storageKey: null },
-                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
                     { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "16478ddec17d7602bb4852559635048e",
+                hash: "43e69f78d091b0224f6cc6b3fde7ed6e",
             };
             const b = f;
             var h = a(443781),
@@ -573,7 +573,7 @@
                         f = s.useCallback(() => {
                             r.scribe({ ...(0, j.yt)("jobs_module", "click", "view_more"), data: { ...(0, j.RV)(void 0, void 0, c, o) } });
                         }, [r, c, o]),
-                        b = l.legacy?.screen_name ? { pathname: `/${l.legacy.screen_name}/jobs`, external: !1 } : void 0,
+                        b = l.core?.screen_name ? { pathname: `/${l.core.screen_name}/jobs`, external: !1 } : void 0,
                         h = (0, C.yu)();
                     if (0 === _?.length) return null;
                     const k = [z.spotlightCard];
@@ -729,9 +729,9 @@
                     {
                         alias: null,
                         args: null,
-                        concreteType: "ApiUser",
+                        concreteType: "UserCore",
                         kind: "LinkedField",
-                        name: "legacy",
+                        name: "core",
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
@@ -755,7 +755,7 @@
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "d2e72cef3379f6111197f24a32190d0e",
+                hash: "dad144c45ef10d09cc56fb1f411ce928",
             };
             const ae = le;
             var ne = {
@@ -1214,4 +1214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.dea0a8fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.cd44df9a.js.map

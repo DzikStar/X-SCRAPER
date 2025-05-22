@@ -672,7 +672,7 @@
                 if (!t) return null;
                 const n = t.legacy?.reply_count,
                     i = t.rest_id,
-                    r = t.core?.user_results.result?.legacy?.screen_name,
+                    r = t.core?.user_results.result?.core?.screen_name,
                     c = i && r ? `/${r}/status/${i}` : void 0;
                 return a.createElement(d.ZP, { "aria-label": I({ count: n }), backgroundColor: "transparent", borderColor: "transparent", color: "text", hoverLabel: C, icon: Z, link: c, size: "medium", type: "primaryOutlined" }, n ? v(n) : void 0);
             }
@@ -1217,4 +1217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-76583d6c.5a7f359a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-76583d6c.b322ad4a.js.map

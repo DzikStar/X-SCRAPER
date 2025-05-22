@@ -244,7 +244,7 @@
             const p = (0, a.ZP)(l(c));
         },
         826033: (e, t, n) => {
-            n.r(t), n.d(t, { CookieComplianceBannerPadder: () => ae, LoggedOutHome: () => ie, default: () => se });
+            n.r(t), n.d(t, { CookieComplianceBannerPadder: () => oe, LoggedOutHome: () => ae, default: () => re });
             var o = n(202784),
                 a = n(272175),
                 i = n(325686),
@@ -261,59 +261,58 @@
                 b = n(194661),
                 f = n(99223),
                 y = n(520913),
-                B = n(187669),
-                E = n(640872),
-                S = n(31667),
-                x = n(788994),
-                k = n(651930),
-                _ = n(572067),
-                C = n(105019),
-                w = n(885824),
-                Z = n(664918),
-                P = n(38293),
-                v = n(652904),
-                I = n(3196),
-                T = n(487659),
-                W = n(911318),
-                z = n(655352),
-                D = n(182495),
-                A = n(668214),
-                N = n(390387);
-            const L = (0, A.Z)()
-                    .propsFromState(() => ({ userLanguage: N.VT }))
+                B = n(640872),
+                E = n(31667),
+                S = n(788994),
+                x = n(651930),
+                k = n(572067),
+                _ = n(105019),
+                C = n(885824),
+                w = n(664918),
+                Z = n(38293),
+                P = n(652904),
+                v = n(3196),
+                I = n(487659),
+                T = n(911318),
+                W = n(655352),
+                z = n(182495),
+                D = n(668214),
+                A = n(390387);
+            const N = (0, D.Z)()
+                    .propsFromState(() => ({ userLanguage: A.VT }))
                     .withAnalytics({ page: "front" }),
-                M = 380,
-                H = 1.15 * M,
-                G = 500,
-                O = 1e3,
-                F = 350,
-                j = "signupButton",
-                R = "loginButton",
-                V = [
+                L = 380,
+                M = 1.15 * L,
+                H = 500,
+                G = 1e3,
+                O = 350,
+                F = "signupButton",
+                j = "loginButton",
+                R = [
                     { text: u().a62c9c34, Icon: g.default },
                     { text: u().cf39fca2, Icon: h.default },
                     { text: u().j86184fe, Icon: b.default },
                 ],
-                U = u().ac2035f2,
-                $ = u().h0af9418,
-                q = u().eb022176,
-                K = u().eba1b198,
-                J = u().fa811c30,
-                X = u().b4bdfb3e,
-                Y = u().f991cfaa,
-                Q = u().e5b0e544,
-                ee = u().a4298bc0,
-                te = u().j3f49ff6,
-                ne = u().d65555c2,
-                oe = (0, r.ju)("https://x.com/");
-            function ae(e) {
+                V = u().ac2035f2,
+                U = u().h0af9418,
+                $ = u().eb022176,
+                q = u().eba1b198,
+                K = u().fa811c30,
+                J = u().b4bdfb3e,
+                X = u().f991cfaa,
+                Y = u().e5b0e544,
+                Q = u().a4298bc0,
+                ee = u().j3f49ff6,
+                te = u().d65555c2,
+                ne = (0, r.ju)("https://x.com/");
+            function oe(e) {
                 const [t, n] = o.useState(0),
                     a = o.useCallback((e) => {
                         n(e || 0);
                     }, []);
-                return o.createElement(o.Fragment, null, o.createElement(C.Z.Configure, { hideCookieBannerPicker: !0 }), o.createElement(S.Z, null, o.createElement(w.Z, { onHeightChange: a })), o.createElement(i.Z, { style: [{ marginBottom: t }, re.bannerPadderChildren] }, e.children));
+                return o.createElement(o.Fragment, null, o.createElement(_.Z.Configure, { hideCookieBannerPicker: !0 }), o.createElement(E.Z, null, o.createElement(C.Z, { onHeightChange: a })), o.createElement(i.Z, { style: [{ marginBottom: t }, ie.bannerPadderChildren] }, e.children));
             }
-            class ie extends o.Component {
+            class ae extends o.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._isPlaceholderSIWGButtonEnabled = this.context.featureSwitches.isTrue("responsive_web_placeholder_siwg_button_enabled")),
@@ -324,35 +323,30 @@
                         (this._showBlueBrandFilledButton = this.context.featureSwitches.isTrue("responsive_web_logged_out_blue_brand_button_enabled")),
                         (this._renderGrokButton = (e, t, n) => {
                             const { analytics: a } = this.props,
-                                i = t ? re.ctaButton : re.ctaButtonMobile,
+                                i = t ? ie.ctaButton : ie.ctaButtonMobile,
                                 r = () => {
                                     a.scribe({ component: "grok_button_logout_page", element: "grok", action: "click" });
                                 };
-                            return this._showGrokButton
-                                ? ((0, B.q)(() => {
-                                      a.scribe({ component: "grok_button_logout_page", element: "grok", action: "impression" });
-                                  }),
-                                  o.createElement(s.ZP, { icon: o.createElement(f.default, null), link: "desktop" !== t ? "https://grok.com/download" : "https://grok.com/", onPress: r, style: [i, re.ssoButtonStyles, re.redesignedSSOButtonStyles, { alignSelf: e }], textSizeOverride: "body" }, o.createElement(l.ZP, { style: re.grokLabel, weight: "medium" }, "desktop" !== t ? X : Y)))
-                                : null;
+                            return this._showGrokButton ? (a.scribe({ component: "grok_button_logout_page", element: "grok", action: "impression" }), o.createElement(s.ZP, { icon: o.createElement(f.default, null), link: "desktop" !== t ? "https://grok.com/download" : "https://grok.com/", onPress: r, style: [i, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, { alignSelf: e }], textSizeOverride: "body" }, o.createElement(l.ZP, { style: ie.grokLabel, weight: "medium" }, "desktop" !== t ? J : X))) : null;
                         }),
                         (this.renderBody = (e, t) => {
                             const n = "desktop" === e;
-                            return this._showPageRedesign ? o.createElement(i.Z, { style: [re.main, re.mainRedesignedWide] }, this._renderRedesignedCTA({ deviceSize: e, ssoButtonsWidth: t }), this._renderGrokButton("center", e, t)) : o.createElement(i.Z, { style: [re.main, n && re.mainWide] }, this._renderCTA({ deviceSize: e, ssoButtonsWidth: t }), n && this._renderHero());
+                            return this._showPageRedesign ? o.createElement(i.Z, { style: [ie.main, ie.mainRedesignedWide] }, this._renderRedesignedCTA({ deviceSize: e, ssoButtonsWidth: t }), this._renderGrokButton("center", e, t)) : o.createElement(i.Z, { style: [ie.main, n && ie.mainWide] }, this._renderCTA({ deviceSize: e, ssoButtonsWidth: t }), n && this._renderHero());
                         }),
                         (this._renderLoginSignupButtons = (e, t) => {
-                            const n = e ? re.ctaButton : re.ctaButtonMobile,
-                                { signUpLabel: a } = (0, D.M5)(this.context.featureSwitches);
-                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: re.gapContainer }, o.createElement(c.Z, { label: o.createElement(l.ZP, { children: ne }) })), o.createElement(s.ZP, { link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: D.mk }) } } }, onPress: this._handleSignupButton, size: "medium", style: [n, "tablet" === e && re.ctaButtonSplitSpacing, re.ssoButtonStyles], testID: j, type: "brandFilled" }, a), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [n, { width: W.fI }] }, D.K2), o.createElement(i.Z, { style: re.signInButtonContainer }, o.createElement(l.ZP, { size: "headline2", style: n, weight: "bold" }, J), o.createElement(s.ZP, { link: "/login", onPress: this._handleLoginButton, size: "medium", style: [n, "tablet" === e && re.ctaButtonSplitSpacing, re.ssoButtonStyles], testID: R, type: "brandOutlined" }, Q))));
+                            const n = e ? ie.ctaButton : ie.ctaButtonMobile,
+                                { signUpLabel: a } = (0, z.M5)(this.context.featureSwitches);
+                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.gapContainer }, o.createElement(c.Z, { label: o.createElement(l.ZP, { children: te }) })), o.createElement(s.ZP, { link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: z.mk }) } } }, onPress: this._handleSignupButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: F, type: "brandFilled" }, a), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [n, { width: T.fI }] }, z.K2), o.createElement(i.Z, { style: ie.signInButtonContainer }, o.createElement(l.ZP, { size: "headline2", style: n, weight: "bold" }, K), o.createElement(s.ZP, { link: "/login", onPress: this._handleLoginButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: j, type: "brandOutlined" }, Y))));
                         }),
                         (this._renderRedesignedLoginSignupButtons = (e, t) => {
-                            const n = e ? re.ctaButton : re.ctaButtonMobile;
-                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: re.redesignedGapContainer }, o.createElement(c.Z, { borderColor: "gray400", label: o.createElement(l.ZP, { children: ne, color: "alwaysDarkGray700" }) })), o.createElement(i.Z, null, o.createElement(s.ZP, { fontWeight: "medium", link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: D.mk }) } } }, onPress: this._handleSignupButton, style: [n, "tablet" === e && re.ctaButtonSplitSpacing, re.ssoButtonStyles, re.redesignedSSOButtonStyles], testID: j, textSizeOverride: "body", type: this._showBlueBrandFilledButton ? "brandFilled" : "primaryFilled" }, q), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [re.legalText, n, { width: W.fI }] }, D.K2)), o.createElement(i.Z, { style: re.redesignedSignInButtonContainer }, o.createElement(l.ZP, { size: "body", style: re.labelText, weight: "bold" }, J), o.createElement(s.ZP, { backgroundColor: "light" === p.default.theme.paletteName ? "transparent" : "buttonBlack", borderColor: "light" === p.default.theme.paletteName ? void 0 : "transparent", color: "primary", fontWeight: "medium", link: "/login", onPress: this._handleLoginButton, style: [n, "tablet" === e && re.ctaButtonSplitSpacing, re.ssoButtonStyles, re.redesignedSSOButtonStyles, re.redesignedSignInButton], testID: R }, Q))));
+                            const n = e ? ie.ctaButton : ie.ctaButtonMobile;
+                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.redesignedGapContainer }, o.createElement(c.Z, { borderColor: "gray400", label: o.createElement(l.ZP, { children: te, color: "alwaysDarkGray700" }) })), o.createElement(i.Z, null, o.createElement(s.ZP, { fontWeight: "medium", link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: z.mk }) } } }, onPress: this._handleSignupButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles], testID: F, textSizeOverride: "body", type: this._showBlueBrandFilledButton ? "brandFilled" : "primaryFilled" }, $), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [ie.legalText, n, { width: T.fI }] }, z.K2)), o.createElement(i.Z, { style: ie.redesignedSignInButtonContainer }, o.createElement(l.ZP, { size: "body", style: ie.labelText, weight: "bold" }, K), o.createElement(s.ZP, { backgroundColor: "light" === p.default.theme.paletteName ? "transparent" : "buttonBlack", borderColor: "light" === p.default.theme.paletteName ? void 0 : "transparent", color: "primary", fontWeight: "medium", link: "/login", onPress: this._handleLoginButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, ie.redesignedSignInButton], testID: j }, Y))));
                         }),
                         (this._renderSSOButtons = (e, t) => {
                             const { buttonState: n, isCookieCompliant: a } = this.state,
-                                i = e ? re.ctaButton : re.ctaButtonMobile,
-                                r = { ...re.ssoButtonStyles, width: t };
-                            return o.createElement(o.Fragment, null, o.createElement(T.Z, { buttonSize: "medium", buttonState: n, customWidth: t, displayType: W.qv.Button, isCookieCompliant: this._cookieComplianceGingersnapEnabled && this._isPlaceholderSIWGButtonEnabled ? a : void 0, onPress: this._handleCookieCompliance, style: [i, "tablet" === e && re.ctaButtonSplitSpacing, r] }), o.createElement(I.Z, { buttonSize: "medium", buttonState: n, style: [i, "tablet" === e && re.ctaButtonSplitSpacing, re.ssoButtonStyles, re.appleSsoButton] }));
+                                i = e ? ie.ctaButton : ie.ctaButtonMobile,
+                                r = { ...ie.ssoButtonStyles, width: t };
+                            return o.createElement(o.Fragment, null, o.createElement(I.Z, { buttonSize: "medium", buttonState: n, customWidth: t, displayType: T.qv.Button, isCookieCompliant: this._cookieComplianceGingersnapEnabled && this._isPlaceholderSIWGButtonEnabled ? a : void 0, onPress: this._handleCookieCompliance, style: [i, "tablet" === e && ie.ctaButtonSplitSpacing, r] }), o.createElement(v.Z, { buttonSize: "medium", buttonState: n, style: [i, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.appleSsoButton] }));
                         }),
                         (this._handleSignupButton = () => {
                             const { analytics: e } = this.props;
@@ -365,55 +359,55 @@
                         (this._handleCookieCompliance = () => {
                             this.setState({ isCookieCompliant: !0 });
                         }),
-                        (this.state = { buttonState: (0, D.BG)(this.context.featureSwitches), isCookieCompliant: (0, Z.D0)(this.context.featureSwitches) === Z.fD.AcceptAllCookies });
+                        (this.state = { buttonState: (0, z.BG)(this.context.featureSwitches), isCookieCompliant: (0, w.D0)(this.context.featureSwitches) === w.fD.AcceptAllCookies });
                 }
                 componentDidMount() {
-                    (0, z.ZP)() && this.context.setSideNavSupport(!1);
+                    (0, W.ZP)() && this.context.setSideNavSupport(!1);
                 }
                 componentWillUnmount() {
-                    (0, z.ZP)() && this.context.setSideNavSupport(!0);
+                    (0, W.ZP)() && this.context.setSideNavSupport(!0);
                 }
                 componentDidUpdate() {
-                    (0, z.ZP)() && this.context.setSideNavSupport(!1);
+                    (0, W.ZP)() && this.context.setSideNavSupport(!1);
                 }
                 render() {
                     const { analytics: e } = this.props;
                     return o.createElement(
-                        v.Z,
+                        P.Z,
                         null,
-                        o.createElement(P.Z, { title: ee }),
-                        o.createElement(_.Z, { canonical: oe, description: te, title: ee, type: "website" }),
-                        o.createElement(k.Z, { deepLink: "twitter://" }),
-                        o.createElement(a.ql, null, o.createElement("meta", { content: "NOODP", name: "robots" }), o.createElement("meta", { content: te, name: "description" })),
+                        o.createElement(Z.Z, { title: Q }),
+                        o.createElement(k.Z, { canonical: ne, description: ee, title: Q, type: "website" }),
+                        o.createElement(x.Z, { deepLink: "twitter://" }),
+                        o.createElement(a.ql, null, o.createElement("meta", { content: "NOODP", name: "robots" }), o.createElement("meta", { content: ee, name: "description" })),
                         o.createElement(d.ZP, null, ({ windowHeight: t, windowWidth: n }) => {
-                            const { deviceSize: a, ssoButtonsWidth: r } = ((e) => ({ deviceSize: e > O ? "desktop" : e > G ? "tablet" : void 0, ssoButtonsWidth: e < F ? W.ND : W.fI }))(n);
-                            return o.createElement(i.Z, { style: re.root }, this.renderBody(a, r), o.createElement(ae, null, o.createElement(x.Z, { align: "center", analytics: e, isMobile: "desktop" !== a })));
+                            const { deviceSize: a, ssoButtonsWidth: r } = ((e) => ({ deviceSize: e > G ? "desktop" : e > H ? "tablet" : void 0, ssoButtonsWidth: e < O ? T.ND : T.fI }))(n);
+                            return o.createElement(i.Z, { style: ie.root }, this.renderBody(a, r), o.createElement(oe, null, o.createElement(S.Z, { align: "center", analytics: e, isMobile: "desktop" !== a })));
                         }),
                     );
                 }
                 _renderHero() {
-                    return o.createElement(i.Z, { style: [re.block, re.communication, re.blockHero] }, o.createElement(i.Z, { style: re.blockImg }, o.createElement(y.default, { style: re.twitterIconHero })));
+                    return o.createElement(i.Z, { style: [ie.block, ie.communication, ie.blockHero] }, o.createElement(i.Z, { style: ie.blockImg }, o.createElement(y.default, { style: ie.twitterIconHero })));
                 }
                 _renderCommunicationItems() {
-                    const e = V.length;
+                    const e = R.length;
                     return o.createElement(
                         i.Z,
-                        { style: re.communicationItems },
-                        V.map(({ Icon: t, text: n }, a) => {
+                        { style: ie.communicationItems },
+                        R.map(({ Icon: t, text: n }, a) => {
                             const r = a + 1 === e;
-                            return o.createElement(i.Z, { key: n, style: [re.communicationItem, r && re.communicationItemLast] }, o.createElement(t, { style: re.communicationItemIcon }), o.createElement(l.ZP, { color: "white", size: "headline1", style: re.communicationItemText, weight: "bold" }, n));
+                            return o.createElement(i.Z, { key: n, style: [ie.communicationItem, r && ie.communicationItemLast] }, o.createElement(t, { style: ie.communicationItemIcon }), o.createElement(l.ZP, { color: "white", size: "headline1", style: ie.communicationItemText, weight: "bold" }, n));
                         }),
                     );
                 }
                 _renderCTA({ deviceSize: e, ssoButtonsWidth: t }) {
-                    return o.createElement(i.Z, { style: [re.block, re.blockCTA, "tablet" === e && re.blockTabletCTA] }, o.createElement(i.Z, { style: [re.blockInnerWrapper, "desktop" === e && re.blockInnerWrapperWide] }, "desktop" === e ? null : o.createElement(y.default, { style: re.twitterIcon }), o.createElement(l.ZP, { extendedWidth: !0, style: [e ? re.ctaTitleLarge : re.ctaTitle, this._showMarchMadnessPopup && { marginTop: 10, marginBottom: 35 }], weight: "bold" }, K), o.createElement(l.ZP, { extendedWidth: !0, size: e ? "title2" : "title4", style: e ? re.ctaTextLarge : re.ctaText, weight: "bold" }, U), this._renderLoginSignupButtons(e, t), this._renderGrokButton("flex-start", e, t)));
+                    return o.createElement(i.Z, { style: [ie.block, ie.blockCTA, "tablet" === e && ie.blockTabletCTA] }, o.createElement(i.Z, { style: [ie.blockInnerWrapper, "desktop" === e && ie.blockInnerWrapperWide] }, "desktop" === e ? null : o.createElement(y.default, { style: ie.twitterIcon }), o.createElement(l.ZP, { extendedWidth: !0, style: [e ? ie.ctaTitleLarge : ie.ctaTitle, this._showMarchMadnessPopup && { marginTop: 10, marginBottom: 35 }], weight: "bold" }, q), o.createElement(l.ZP, { extendedWidth: !0, size: e ? "title2" : "title4", style: e ? ie.ctaTextLarge : ie.ctaText, weight: "bold" }, V), this._renderLoginSignupButtons(e, t), this._renderGrokButton("flex-start", e, t)));
                 }
                 _renderRedesignedCTA({ deviceSize: e, ssoButtonsWidth: t }) {
-                    return o.createElement(i.Z, { style: re.block }, o.createElement(i.Z, null, o.createElement(y.default, { style: re.redesignedXIcon }), o.createElement(l.ZP, { size: "title4", style: [re.redesignedCtaText, e && re.ctaTextLarge], weight: "bold" }, $), this._renderRedesignedLoginSignupButtons(e, t)));
+                    return o.createElement(i.Z, { style: ie.block }, o.createElement(i.Z, null, o.createElement(y.default, { style: ie.redesignedXIcon }), o.createElement(l.ZP, { size: "title4", style: [ie.redesignedCtaText, e && ie.ctaTextLarge], weight: "bold" }, U), this._renderRedesignedLoginSignupButtons(e, t)));
                 }
             }
-            ie.contextType = E.Z;
-            const re = p.default.create((e) => ({
+            ae.contextType = B.Z;
+            const ie = p.default.create((e) => ({
                     appleSsoButton: { marginBottom: 0 },
                     bannerPadderChildren: { transitionProperty: "margin-bottom", transitionDuration: "100ms" },
                     block: { justifyContent: "center", padding: e.spaces.space16 },
@@ -421,7 +415,7 @@
                     blockHero: { flex: 1, padding: 0, minHeight: "45vh" },
                     blockImg: { ...p.default.absoluteFillObject, flex: 1, resizeMode: "cover", justifyContent: "center" },
                     blockInnerWrapper: { width: "100%", padding: e.spaces.space20 },
-                    blockInnerWrapperWide: { minWidth: `${H}px`, maxWidth: "760px" },
+                    blockInnerWrapperWide: { minWidth: `${M}px`, maxWidth: "760px" },
                     blockTabletCTA: { maxWidth: "600px", margin: "auto", width: "100%" },
                     bottomButton: { flexGrow: 1, maxWidth: "180px" },
                     bottomButtonLeft: { marginEnd: "10px" },
@@ -440,7 +434,7 @@
                     ctaTextLarge: { marginBottom: e.spaces.space32 },
                     ctaTitle: { fontSize: e.spaces.space40, letterSpacing: -0.8, lineHeight: `${p.default.theme.spacesPx.space40 + p.default.theme.spacesPx.space12}px`, marginVertical: e.spaces.space40 },
                     ctaTitleLarge: { fontSize: e.spaces.space64, letterSpacing: -1.2, lineHeight: `${p.default.theme.spacesPx.space64 + p.default.theme.spacesPx.space20}px`, marginVertical: e.spaces.space48 },
-                    gapContainer: { marginVertical: e.spaces.space4, maxWidth: "380px", width: W.fI },
+                    gapContainer: { marginVertical: e.spaces.space4, maxWidth: "380px", width: T.fI },
                     grokButton: { alignSelf: "flex-start" },
                     grokLabel: { paddingStart: e.spaces.space4 },
                     happeningButton: { marginBottom: e.spaces.space16 },
@@ -453,7 +447,7 @@
                     mainRedesignedWide: { flex: "auto", justifyContent: "center", alignSelf: "center" },
                     mainWide: { flex: "auto", flexDirection: "row-reverse" },
                     redesignedCtaText: { alignSelf: "center", marginBottom: e.spaces.space24 },
-                    redesignedGapContainer: { marginVertical: e.spaces.space16, maxWidth: "380px", width: W.fI },
+                    redesignedGapContainer: { marginVertical: e.spaces.space16, maxWidth: "380px", width: T.fI },
                     redesignedSignInButton: { marginTop: e.spaces.space16 },
                     redesignedSignInButtonContainer: { marginTop: p.default.theme.spaces.space16, display: "flex", flexDirection: "column", alignItems: "center" },
                     redesignedSSOButtonStyles: { paddingTop: e.spaces.space2, paddingBottom: e.spaces.space2 },
@@ -461,11 +455,11 @@
                     root: { flex: 1 },
                     seeWhatsHappening: { marginTop: e.spaces.space20 },
                     signInButtonContainer: { marginTop: p.default.theme.spaces.space40 },
-                    ssoButtonStyles: { marginBottom: e.spaces.space16, width: W.fI, height: e.spaces.space40, flex: "none" },
+                    ssoButtonStyles: { marginBottom: e.spaces.space16, width: T.fI, height: e.spaces.space40, flex: "none" },
                     twitterIcon: { alignSelf: "flex-start", color: e.colors.brandColor, height: "3rem", paddingBottom: e.spaces.space12 },
                     twitterIconHero: { color: e.colors.brandColor, height: "50%", justifyContent: "center", maxHeight: "380px", padding: e.spaces.space32 },
                 })),
-                se = L(ie);
+                re = N(ae);
         },
         420412: (e, t, n) => {
             n.d(t, { Z: () => l });
@@ -500,4 +494,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LoggedOutHome.72760c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LoggedOutHome.c55ebc4a.js.map

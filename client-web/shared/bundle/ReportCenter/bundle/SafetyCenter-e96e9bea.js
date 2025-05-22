@@ -251,17 +251,17 @@
                                                                                 {
                                                                                     alias: null,
                                                                                     args: null,
-                                                                                    concreteType: "ApiUser",
+                                                                                    concreteType: "UserCore",
                                                                                     kind: "LinkedField",
-                                                                                    name: "legacy",
+                                                                                    name: "core",
                                                                                     plural: !1,
                                                                                     selections: [
-                                                                                        { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                                                                                        { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                                                        { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                     ],
                                                                                     storageKey: null,
                                                                                 },
+                                                                                { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }], storageKey: null },
                                                                                 { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
                                                                                 { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                                                             ],
@@ -309,7 +309,7 @@
                     type: "TweetResults",
                     abstractKey: null,
                 };
-            m.hash = "6d52a5cf96c0121deafe315cb9ec8693";
+            m.hash = "212d4f2fd6edfc59f2a0e5d09b7f3bb6";
             const g = m;
             var y = n(325686),
                 p = n(386802),
@@ -344,12 +344,12 @@
                         if (e) return o.createElement(y.Z, { style: t && U.wideScreen }, o.createElement(F.Z, { withFooterGap: !1, withHeader: !1, withHorizontalPadding: !1 }, o.createElement(x.H, { timelineRichText: e })));
                     }
                     return ((l) => {
-                        if (l?.core?.user_results.result?.legacy && l.legacy) {
+                        if (l?.core?.user_results.result?.legacy && l?.core?.user_results.result?.core && l.legacy) {
                             const n = l.core.user_results.result.legacy,
-                                { avatar: a, privacy: i, verification: s } = l.core.user_results.result,
-                                u = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
-                                c = { tweet: { ...v, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: u, user: { ...E, description: n.description || "", profile_image_url_https: a?.image_url || "", protected: i?.protected || !1, screen_name: n.screen_name || "", name: n.name || "", verified: s?.verified || !1 } } };
-                            return o.createElement(y.Z, { style: [U.tweet, t && U.wideScreen] }, r ? o.createElement(k.Z, (0, d.Z)({}, c, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: K, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: U.avatarContainer }, o.createElement(T.default, { screenName: c.tweet.user.screen_name, size: "small", uri: c.tweet.user.profile_image_url_https }), o.createElement(k.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(k.Z, (0, d.Z)({}, c, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(k.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: K, renderUserAvatar: f, staticLinkConfig: null })));
+                                { avatar: a, core: i, privacy: s, verification: u } = l.core.user_results.result,
+                                c = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
+                                m = { tweet: { ...v, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: c, user: { ...E, description: n.description || "", profile_image_url_https: a?.image_url || "", protected: s?.protected || !1, screen_name: i.screen_name || "", name: i.name || "", verified: u?.verified || !1 } } };
+                            return o.createElement(y.Z, { style: [U.tweet, t && U.wideScreen] }, r ? o.createElement(k.Z, (0, d.Z)({}, m, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: K, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: U.avatarContainer }, o.createElement(T.default, { screenName: m.tweet.user.screen_name, size: "small", uri: m.tweet.user.profile_image_url_https }), o.createElement(k.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(k.Z, (0, d.Z)({}, m, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(k.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: K, renderUserAvatar: f, staticLinkConfig: null })));
                         }
                         return null;
                     })(s);
@@ -378,6 +378,19 @@
                                     {
                                         alias: null,
                                         args: null,
+                                        concreteType: "UserCore",
+                                        kind: "LinkedField",
+                                        name: "core",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    {
+                                        alias: null,
+                                        args: null,
                                         concreteType: "ApiUser",
                                         kind: "LinkedField",
                                         name: "legacy",
@@ -385,8 +398,6 @@
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                             { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -400,7 +411,7 @@
                 ],
                 type: "UserResults",
                 abstractKey: null,
-                hash: "622c0ecc3d4028f1ff99c10cd60fcc94",
+                hash: "fc14cf12cb9732e226e00fe74ac77ea2",
             };
             const B = I;
             var D = n(673510);
@@ -411,12 +422,11 @@
                         n = l.isTrue("report_center_mvp_r2_enabled"),
                         t = c()(B, e),
                         { isModal: a } = o.useContext(p.Z),
-                        r = t?.result?.legacy,
-                        i = r?.idStr || "",
-                        s = r?.name || "",
-                        u = t?.result?.avatar?.image_url || "",
-                        d = r?.screen_name || "";
-                    return i ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: s, screenName: d, userId: i })) : n ? o.createElement(F.Z, { indents: A }, W) : null;
+                        r = t?.result?.core?.name || "",
+                        i = t?.result?.core?.screen_name || "",
+                        s = t?.result?.legacy?.idStr || "",
+                        u = t?.result?.avatar?.image_url || "";
+                    return s ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: r, screenName: i, userId: s })) : n ? o.createElement(F.Z, { indents: A }, W) : null;
                 },
                 z = f.default.create((e) => ({ userCellContainer: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 } })),
                 H = ({ removeTweetContent: e, report_entity_results: l }) => {
@@ -464,4 +474,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.e64cda1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.409bc56a.js.map
