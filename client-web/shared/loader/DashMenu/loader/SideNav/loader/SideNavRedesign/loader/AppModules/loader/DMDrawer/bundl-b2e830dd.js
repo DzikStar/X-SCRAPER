@@ -333,6 +333,14 @@
                 return 0 == n.length ? [] : ((0, a.Z)(n), n);
             }
         },
+        730895: (t, e, n) => {
+            var r = n(821176);
+            t.exports = function () {
+                var t = r(this),
+                    e = "";
+                return t.hasIndices && (e += "d"), t.global && (e += "g"), t.ignoreCase && (e += "i"), t.multiline && (e += "m"), t.dotAll && (e += "s"), t.unicode && (e += "u"), t.unicodeSets && (e += "v"), t.sticky && (e += "y"), e;
+            };
+        },
         890103: (t, e, n) => {
             var r = n(609859),
                 o = n(807400),
@@ -367,4 +375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd.2c1b5f3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd.81285c1a.js.map

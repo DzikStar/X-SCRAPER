@@ -228,6 +228,7 @@
                 n("f65e7e91", function (e) {
                     return e.tier + " " + e.plan + " " + e.percentage + "% 할인";
                 }),
+                n("cbc38428", "Premium+로 계속해서 광고 없애기"),
                 n("a84a736e", "무료 광고 크레딧 받기"),
                 n("a0713d76", "인증된 조직으로 업그레이드하여 무료 광고 크레딧과 다양한 비즈니스 성장 도구를 받으세요."),
                 n("a07e13fc", "Premium 크리에이터 되기"),
@@ -903,9 +904,9 @@
                 n("e8e39f95", "Learn more"),
                 n("e126dd3f", "Learn more"),
                 n("i821844f", "Learn more"),
-                n("b0abbb17", "Learn more"),
-                n("e7e0d88b", "Learn more");
-            n("i560665f", "Learn more"),
+                n("b0abbb17", "Learn more");
+            n("e7e0d88b", "Learn more"),
+                n("i560665f", "Learn more"),
                 n("f6e774d9", "Learn more"),
                 n("h486f755", "Learn more"),
                 n("bab41dab", "Learn more"),
@@ -1919,9 +1920,9 @@
                 n("a8fdd09c", "아티클 게시하기"),
                 n("d8047cc8", "게시"),
                 n("ff7ddca2", "아티클을 게시하면 게시물로 표시됩니다. 내 프로필의 아티클 탭에서도 찾을 수 있습니다."),
-                n("ef34d7be", "아티클이 게시된 후에는 오디언스 및 답글 컨트롤을 수정할 수 없습니다."),
-                n("e52d4998", "오디언스를 선택하세요");
-            n("d7985b24", "이 아티클에 답글을 쓸 수 있는 사용자 선택하기"),
+                n("ef34d7be", "아티클이 게시된 후에는 오디언스 및 답글 컨트롤을 수정할 수 없습니다.");
+            n("e52d4998", "오디언스를 선택하세요"),
+                n("d7985b24", "이 아티클에 답글을 쓸 수 있는 사용자 선택하기"),
                 n("b5660338", "타임라인 미리보기"),
                 n("hff1b97a", "구독자만 답글을 쓸 수 있습니다."),
                 n("a330771e", "클립보드에 링크 복사"),
@@ -2903,12 +2904,6 @@
                 n("ada99498", "이 마크는 내 지역의 사용자들에게만 표시됩니다."),
                 n("a765e936", "긴 자기소개 삭제하기"),
                 n("d4d68e44", "저장"),
-                n("ie4f57d2", "Premium 구독을 갱신하세요"),
-                n("h293aa52", "Premium 구독이 곧 만료됩니다"),
-                n("j1923668", "최상의 환경에서 X를 즐기세요."),
-                n("ac7e97ee", "구독 갱신"),
-                n("f70c69b4", "답글 부스트, 게시물 수정, 맞춤 설정, 긴 게시물 등 다양한 혜택이 제공됩니다."),
-                n("f4cec4d2", "파란색 체크마크, 답글 부스트, Grok 한도 상향 등 다양한 혜택이 제공됩니다."),
                 n("b6de83a0", "직원 전용 스페이스"),
                 n("g3f251f2", "비공개 생방송"),
                 n("d08666ba", "개인 스페이스"),
@@ -2976,20 +2971,17 @@
                 n("b7388a56", "바닥글"),
                 n("hdabc3fc", "이용약관"),
                 n("bc6efc72", "개인정보 처리방침"),
-                n("h3161192", "쿠키 정책");
-            n("a7de64de", "광고 정보"),
+                n("h3161192", "쿠키 정책"),
+                n("a7de64de", "광고 정보"),
                 n("jb0a4c36", "블로그"),
                 n("ce6d095a", "채용"),
                 n("e0adec82", "브랜드 리소스"),
-                n("df1b7550", "마케팅"),
-                n("he258678", "비즈니스용 X"),
+                n("df1b7550", "마케팅");
+            n("he258678", "비즈니스용 X"),
                 n("c6f58084", "개발자"),
                 n("d83f18d2", "디렉터리"),
                 n("hc5aa17c", "X 앱 다운로드"),
                 n("j0693948", "Grok 앱 다운로드"),
-                n("fbf83158", "경고: 결제 실패"),
-                n("jadeb4da", "구독 혜택을 잃기 전에 지금 바로 결제 방법을 업데이트하세요."),
-                n("bce3726a", "결제 정보 업데이트"),
                 n("fce9ecce", "추천 동영상"),
                 n("j66b95a2", "깊이 있는 뉴스"),
                 n("ad35153e", "베타"),
@@ -3031,6 +3023,15 @@
                 }),
                 n("j7d0e836", "펼치기"),
                 n("d227d19e", "접기"),
+                n("fbf83158", "경고: 결제 실패"),
+                n("jadeb4da", "구독 혜택을 잃기 전에 지금 바로 결제 방법을 업데이트하세요."),
+                n("bce3726a", "결제 정보 업데이트"),
+                n("ie4f57d2", "Premium 구독을 갱신하세요"),
+                n("h293aa52", "Premium 구독이 곧 만료됩니다"),
+                n("j1923668", "최상의 환경에서 X를 즐기세요."),
+                n("ac7e97ee", "구독 갱신"),
+                n("f70c69b4", "답글 부스트, 게시물 수정, 맞춤 설정, 긴 게시물 등 다양한 혜택이 제공됩니다."),
+                n("f4cec4d2", "파란색 체크마크, 답글 부스트, Grok 한도 상향 등 다양한 혜택이 제공됩니다."),
                 n("h367e724", "긴 자기소개"),
                 n("ea5928d4", "나를 단순히 한마디로 소개하기는 어렵습니다. 프로필도 마찬가지입니다.\n나에 대해 좀 더 자세히 알리고 싶다면 긴 자기소개를 추가해 보세요."),
                 n("h7ef9dc8", "다음과 같은 내용을 추가해 보세요."),
@@ -3887,13 +3888,13 @@
                 n("caa8d928", "노이즈 제거 토글"),
                 n("b5d88f0c", "직원 전용"),
                 n("c855ab8e", "구독자 전용"),
-                n("ddeb0a3c", "커뮤니티를 소개합니다. 마음에 드는 사람이 있나요? 한번 둘러보세요."),
-                n("e111f531", function (e) {
-                    return e.count + " 청취";
-                });
-            n("cbef820f", function (e) {
-                return e.screenName + " 님이 이 스트리밍을 재게시했습니다";
+                n("ddeb0a3c", "커뮤니티를 소개합니다. 마음에 드는 사람이 있나요? 한번 둘러보세요.");
+            n("e111f531", function (e) {
+                return e.count + " 청취";
             }),
+                n("cbef820f", function (e) {
+                    return e.screenName + " 님이 이 스트리밍을 재게시했습니다";
+                }),
                 n("e3275464", "보내기"),
                 n("cededf2a", "진행자"),
                 n("i2caef48", "공동 진행자"),
@@ -4927,9 +4928,9 @@
                 n("d9f9dec0", "스페이스 보기"),
                 n("h0c1f37a", "스페이스 애널리틱스 보기"),
                 n("e41fffbc", "내 동영상의 총 시청 시간입니다."),
-                n("if2909ba", "시청 시간"),
-                n("i0e5bf4c", "내 동영상");
-            n("ed99baea", "사전 베타 체험"),
+                n("if2909ba", "시청 시간");
+            n("i0e5bf4c", "내 동영상"),
+                n("ed99baea", "사전 베타 체험"),
                 n("gf898b70", "고급 검색"),
                 n("d2a43a7a", '"AI" 및 "스타트업" 모두 포함'),
                 n("a8584698", "AI 스타트업"),
@@ -5893,9 +5894,9 @@
                     return e.timestamp + "에 종료";
                 }),
                 n("daca8a2c", "독에서 열기"),
-                n("e3aac82a", "생방송 불러오는 중"),
-                n("i0ed3f4e", "이벤트 이미지");
-            n("cbae35fa", "생방송 신고하기"),
+                n("e3aac82a", "생방송 불러오는 중");
+            n("i0ed3f4e", "이벤트 이미지"),
+                n("cbae35fa", "생방송 신고하기"),
                 n("fd12ab58", "컬렉션 게시물"),
                 n("a226497c", "새 커뮤니티 만들기"),
                 n("d7346632", "아직 가입한 커뮤니티가 없습니다"),
@@ -6891,9 +6892,9 @@
                 n("c0195168", "앱 아이콘과 탐색 옵션 변경"),
                 n("b6b5dc94", "인증받기"),
                 n("b06db848", "플랫폼에서 주목 받기"),
-                n("e3e3a97c", "게시물에서 얻은 수익 배분 받기"),
-                n("f15bc24e", "Grok 한도 상향");
-            n("c4666e1c", "X의 최신 모델 Grok 3 사용량 증대"),
+                n("e3e3a97c", "게시물에서 얻은 수익 배분 받기");
+            n("f15bc24e", "Grok 한도 상향"),
+                n("c4666e1c", "X의 최신 모델 Grok 3 사용량 증대"),
                 n("he74ae7a", "Grok 사용 한도 최대치"),
                 n("f5732cd4", "+ DeepSearch 및 Think까지 액세스 확대"),
                 n("e0198956", "X에 게시한 콘텐츠에 인증된 계정이 참여할 때 발생하는 수익을 배분받으세요."),
@@ -7209,6 +7210,36 @@
                 n("hd80bd3e", "게시물 프로모션하기"),
                 n("fe2b0008", "X 사용 방법 알아보기"),
                 n("h257d4aa", "프로모션할 게시물을 선택하세요"),
+                n("fe946974", "Your trial of X without ads"),
+                n("f6c50ec0", "Your ad-free trial has ended"),
+                n("b1319404", "Ads avoided"),
+                n("baa4acae", "You’re seeing more personalized content."),
+                n("c00e8600", "Estimated time saved"),
+                n("ic073e4e", "Your time is valuable."),
+                n("eb866e88", "Estimated 1-year time savings"),
+                n("aa77b70c", "Based on your usage."),
+                n("c534c6b4", "We’re crunching the numbers..."),
+                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("cc10f019", function (e) {
+                    return e.minutes + " 분";
+                }),
+                n("f9b6b7d3", function (e) {
+                    return e.hours + " 시간";
+                }),
+                n("a9af8753", function (e) {
+                    return e.days + " 일, " + e.hours + " 시간";
+                }),
+                n("b93d00e5", function (e) {
+                    return e.days + " 일";
+                }),
+                n("be88be23", function (e) {
+                    return e.durationInDays + "일 광고 안 보기 체험 기간이 시작되었습니다";
+                }),
+                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                n("ae3f3b0e", "Enjoy!"),
+                n("cdac8dc4", "See your new feed"),
+                n("dec99336", "Ad-free"),
+                n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Radar로 트렌드를 가장 먼저 파악하세요."),
                 n("fb70427a", "X의 가장 강력한 검색 도구를 소개합니다."),
                 n("i54bf620", "키워드 모니터링"),
@@ -7841,36 +7872,7 @@
                 n("j26dee0e", "제휴 계정 삭제"),
                 n("e30cbdf0", "이 제휴 계정은 인증된 조직 서비스를 구독 중이며 조직 계정으로 유지되어야 합니다. 개인 계정으로 변경할 수 없습니다."),
                 n("j3115ce8", "개인"),
-                n("d8bb1d84", "조직"),
-                n("e970bdbd", function (e) {
-                    return "초대장이 " + e.count + "장 남았습니다";
-                }),
-                n("id67d953", function (e) {
-                    return "Stripe 결제 세부정보를 불러오는 동안 문제가 발생했습니다. 문제가 지속될 경우 " + e.supportEmail + "으로 문의해 주세요.";
-                }),
-                n("f323d314", "재전송"),
-                n("ac645cde", "언제든지 다시 추가할 수 있습니다."),
-                n("d12af2dd", function (e) {
-                    return "@" + e.screenName + "에게 보낸 초대를 취소하시겠어요?";
-                }),
-                n("ib60b2d5", function (e) {
-                    return "@" + e.screenName + "에게 이 초대장을 다시 보내시겠어요?";
-                }),
-                n("ec6e7d9a", "보류 중인 등급 전환이 완료될 때까지 계정은 읽기 전용 모드로 전환됩니다. 성공적인 등급 전환을 위해 Stripe로 이동하여 결제 내역을 확인하세요."),
-                n("b33d1518", "지원되는 통합 또는 맞춤 XML 피드에서 채용 공고를 동기화하세요."),
-                n("dd2db402", "단계 1: 필요한 정보 수집"),
-                n("edb098c2", "2단계: 지원팀에 문의하기"),
-                n("c4474460", "단계 2: 지원팀에 이메일 전송"),
-                n("a08da0fa", "다음 단계"),
-                n("c127374e", "지원팀에 쪽지 보내기"),
-                n("b2cb2a0c", "인증된 조직 계정의 사용자 아이디"),
-                n("b8e64002", "지원자 추적 시스템 이름"),
-                n("acb99db6", "채용 공고가 등록된 채용 사이트 URL"),
-                n("a64a5b7a", "통합 절차를 시작하려면 지원팀에 필수 정보를 보내주세요."),
-                n("e3dffb4e", "통합 절차를 시작하려면 아래 지원 이메일 주소를 복사하여 필요한 정보를 지원팀에 보내주세요."),
-                n("b4fef99e", "지원팀에 요청이 접수되면 정보를 검토한 후 통합 설정을 도와드립니다."),
-                n("h37f2d96", "현재 모든 지원자 추적 시스템이 지원되는 것은 아닙니다."),
-                n("ce102a20", "Stripe에 리디렉션 중");
+                n("d8bb1d84", "조직");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7909,7 +7911,36 @@
                     d(e, c)
                 );
             }
-            n("ddfd6718", "결제 실패"),
+            n("e970bdbd", function (e) {
+                return "초대장이 " + e.count + "장 남았습니다";
+            }),
+                n("id67d953", function (e) {
+                    return "Stripe 결제 세부정보를 불러오는 동안 문제가 발생했습니다. 문제가 지속될 경우 " + e.supportEmail + "으로 문의해 주세요.";
+                }),
+                n("f323d314", "재전송"),
+                n("ac645cde", "언제든지 다시 추가할 수 있습니다."),
+                n("d12af2dd", function (e) {
+                    return "@" + e.screenName + "에게 보낸 초대를 취소하시겠어요?";
+                }),
+                n("ib60b2d5", function (e) {
+                    return "@" + e.screenName + "에게 이 초대장을 다시 보내시겠어요?";
+                }),
+                n("ec6e7d9a", "보류 중인 등급 전환이 완료될 때까지 계정은 읽기 전용 모드로 전환됩니다. 성공적인 등급 전환을 위해 Stripe로 이동하여 결제 내역을 확인하세요."),
+                n("b33d1518", "지원되는 통합 또는 맞춤 XML 피드에서 채용 공고를 동기화하세요."),
+                n("dd2db402", "단계 1: 필요한 정보 수집"),
+                n("edb098c2", "2단계: 지원팀에 문의하기"),
+                n("c4474460", "단계 2: 지원팀에 이메일 전송"),
+                n("a08da0fa", "다음 단계"),
+                n("c127374e", "지원팀에 쪽지 보내기"),
+                n("b2cb2a0c", "인증된 조직 계정의 사용자 아이디"),
+                n("b8e64002", "지원자 추적 시스템 이름"),
+                n("acb99db6", "채용 공고가 등록된 채용 사이트 URL"),
+                n("a64a5b7a", "통합 절차를 시작하려면 지원팀에 필수 정보를 보내주세요."),
+                n("e3dffb4e", "통합 절차를 시작하려면 아래 지원 이메일 주소를 복사하여 필요한 정보를 지원팀에 보내주세요."),
+                n("b4fef99e", "지원팀에 요청이 접수되면 정보를 검토한 후 통합 설정을 도와드립니다."),
+                n("h37f2d96", "현재 모든 지원자 추적 시스템이 지원되는 것은 아닙니다."),
+                n("ce102a20", "Stripe에 리디렉션 중"),
+                n("ddfd6718", "결제 실패"),
                 n("i90ea7d2", "혜택을 계속 받으려면 지금 바로 결제 정보를 업데이트하세요."),
                 n("a62359e6", "인증된 조직 설정"),
                 n("ge221b7c", "인증된 조직 구독을 업그레이드하면 제휴 계정 기능을 이용하고 더 많은 광고 크레딧을 받을 수 있습니다."),
@@ -8887,8 +8918,8 @@
                 n("c1658fc6", "미디어를 재생할 수 없습니다."),
                 n("h519ae04", "이 미디어는 저작권 침해 신고로 인해 비활성화되었습니다."),
                 n("ce871584", "이 생방송은 종료되었습니다."),
-                n("c101eb96", "이 생방송은 볼 수 없습니다."),
-                n("gb24a514", "이 미디어는 저작권자의 신고에 따른 조치로 이용이 불가능합니다."),
+                n("c101eb96", "이 생방송은 볼 수 없습니다.");
+            n("gb24a514", "이 미디어는 저작권자의 신고에 따른 조치로 이용이 불가능합니다."),
                 n("hcaf3e63", function (e) {
                     return "이 미디어는 " + e.holder + "의 저작권 침해 소송 때문에 비활성화되었습니다 .";
                 }),
@@ -8912,10 +8943,10 @@
                 n("ecda5f9e", "오해의 소지가 있음"),
                 n("a423473c", "법적 요구 통지"),
                 n("b3296688", "노출 범위 제한됨"),
-                n("ccd32094", "지금");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + " 전";
-            }),
+                n("ccd32094", "지금"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + " 전";
+                }),
                 n("ae408b76", "재게시했습니다"),
                 n("j355f008", "메인에 올린 게시물"),
                 n("habf9678", "작성자가 메인에 올렸습니다"),
@@ -12921,7 +12952,7 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     g
                 );
-            })(a(332920)._ActualI18NFormatMessage || b.Component);
+            })(a(111677)._ActualI18NFormatMessage || b.Component);
             n("_ActualI18NFormatMessage", m),
                 n("I18NFormatMessage", function (e) {
                     return b.createElement(m, e);
@@ -13276,4 +13307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.b69a2dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.4cd1ff0a.js.map

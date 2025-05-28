@@ -228,6 +228,7 @@
                 o("f65e7e91", function (e) {
                     return e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
+                o("cbc38428", "Stay ad-free with Premium+"),
                 o("a84a736e", "Get Free Ad Credit"),
                 o("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 o("a07e13fc", "Become a Premium Creator"),
@@ -903,9 +904,9 @@
                 o("e8e39f95", "Gehiago ikasi"),
                 o("e126dd3f", "Gehiago ikasi"),
                 o("i821844f", "Gehiago ikasi"),
-                o("b0abbb17", "Gehiago ikasi"),
-                o("e7e0d88b", "Gehiago ikasi");
-            o("i560665f", "Gehiago ikasi"),
+                o("b0abbb17", "Gehiago ikasi");
+            o("e7e0d88b", "Gehiago ikasi"),
+                o("i560665f", "Gehiago ikasi"),
                 o("f6e774d9", "Gehiago ikasi"),
                 o("h486f755", "Gehiago ikasi"),
                 o("bab41dab", "Gehiago ikasi"),
@@ -1919,9 +1920,9 @@
                 o("a8fdd09c", "Publish Article"),
                 o("d8047cc8", "Argitaratu"),
                 o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                o("e52d4998", "Choose your audience");
-            o("d7985b24", "Choose who can reply to this Article"),
+                o("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
+            o("e52d4998", "Choose your audience"),
+                o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
@@ -2903,12 +2904,6 @@
                 o("ada99498", "This mark will only be shown to others in your region."),
                 o("a765e936", "Delete your expanded bio"),
                 o("d4d68e44", "Saved"),
-                o("ie4f57d2", "Renew your Premium subscription"),
-                o("h293aa52", "Your Premium subscription is expiring!"),
-                o("j1923668", "Keep the best of X."),
-                o("ac7e97ee", "Renew subscription"),
-                o("f70c69b4", "Reply boost, Edit post, Customization, Longer posts and much more."),
-                o("f4cec4d2", "Blue checkmark, Reply boost, increased Grok limits and much more."),
                 o("b6de83a0", "Employees only Space"),
                 o("g3f251f2", "Private Broadcast"),
                 o("d08666ba", "Espazio pribatua"),
@@ -2976,20 +2971,17 @@
                 o("b7388a56", "Oina"),
                 o("hdabc3fc", "Zerbitzu-Baldintzak"),
                 o("bc6efc72", "Pribatutasun Politika"),
-                o("h3161192", "Cookiei buruzko gidalerroak");
-            o("a7de64de", "Ads info"),
+                o("h3161192", "Cookiei buruzko gidalerroak"),
+                o("a7de64de", "Ads info"),
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Lanbideak"),
                 o("e0adec82", "Markaren baliabideak"),
-                o("df1b7550", "Marketing"),
-                o("he258678", "X for Business"),
+                o("df1b7550", "Marketing");
+            o("he258678", "X for Business"),
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
-                o("fbf83158", "Warning: Payment failed"),
-                o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
-                o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
                 o("j66b95a2", "In-Depth News"),
                 o("ad35153e", "beta"),
@@ -3031,6 +3023,15 @@
                 }),
                 o("j7d0e836", "Hedatu"),
                 o("d227d19e", "Tolestu"),
+                o("fbf83158", "Warning: Payment failed"),
+                o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                o("bce3726a", "Update Billing"),
+                o("ie4f57d2", "Renew your Premium subscription"),
+                o("h293aa52", "Your Premium subscription is expiring!"),
+                o("j1923668", "Keep the best of X."),
+                o("ac7e97ee", "Renew subscription"),
+                o("f70c69b4", "Reply boost, Edit post, Customization, Longer posts and much more."),
+                o("f4cec4d2", "Blue checkmark, Reply boost, increased Grok limits and much more."),
                 o("h367e724", "Expanded Bio"),
                 o("ea5928d4", "You contain multitudes. So does your profile.\nAdd an expanded bio to tell people more about yourself."),
                 o("h7ef9dc8", "This can include:"),
@@ -3887,13 +3888,13 @@
                 o("caa8d928", "Toggle noise suppression"),
                 o("b5d88f0c", "Employees only"),
                 o("c855ab8e", "Subscribers only"),
-                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
-                o("e111f531", function (e) {
-                    return e.count + " sintonizatuta";
-                });
-            o("cbef820f", function (e) {
-                return e.screenName + " reposted the stream!";
+                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
+            o("e111f531", function (e) {
+                return e.count + " sintonizatuta";
             }),
+                o("cbef820f", function (e) {
+                    return e.screenName + " reposted the stream!";
+                }),
                 o("e3275464", "Bidali"),
                 o("cededf2a", "Anfitrioia"),
                 o("i2caef48", "Co-hosts"),
@@ -4927,9 +4928,9 @@
                 o("d9f9dec0", "View Space"),
                 o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
-                o("if2909ba", "Watch Time"),
-                o("i0e5bf4c", "Your videos");
-            o("ed99baea", "Early Beta Access"),
+                o("if2909ba", "Watch Time");
+            o("i0e5bf4c", "Your videos"),
+                o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
@@ -5893,9 +5894,9 @@
                     return "Ended " + e.timestamp;
                 }),
                 o("daca8a2c", "Open in Dock"),
-                o("e3aac82a", "Igorpena kargatzen"),
-                o("i0ed3f4e", "Gertaeraren irudia");
-            o("cbae35fa", "Report Broadcast"),
+                o("e3aac82a", "Igorpena kargatzen");
+            o("i0ed3f4e", "Gertaeraren irudia"),
+                o("cbae35fa", "Report Broadcast"),
                 o("fd12ab58", "Collection posts"),
                 o("a226497c", "Sortu komunitate berri bat"),
                 o("d7346632", "You haven’t joined any Communities yet"),
@@ -6891,9 +6892,9 @@
                 o("c0195168", "Change your app icon and navigation options"),
                 o("b6b5dc94", "Become verified"),
                 o("b06db848", "Stand out from others on the platform"),
-                o("e3e3a97c", "Earn a share of revenue from your posts"),
-                o("f15bc24e", "Increased Grok limits");
-            o("c4666e1c", "More usage of Grok 3, our latest model"),
+                o("e3e3a97c", "Earn a share of revenue from your posts");
+            o("f15bc24e", "Increased Grok limits"),
+                o("c4666e1c", "More usage of Grok 3, our latest model"),
                 o("he74ae7a", "Highest Grok usage limits"),
                 o("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
@@ -7209,6 +7210,36 @@
                 o("hd80bd3e", "Promote a post"),
                 o("fe2b0008", "Learn how to use X"),
                 o("h257d4aa", "Select a post to promote"),
+                o("fe946974", "Your trial of X without ads"),
+                o("f6c50ec0", "Your ad-free trial has ended"),
+                o("b1319404", "Ads avoided"),
+                o("baa4acae", "You’re seeing more personalized content."),
+                o("c00e8600", "Estimated time saved"),
+                o("ic073e4e", "Your time is valuable."),
+                o("eb866e88", "Estimated 1-year time savings"),
+                o("aa77b70c", "Based on your usage."),
+                o("c534c6b4", "We’re crunching the numbers..."),
+                o("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                o("cc10f019", function (e) {
+                    return e.minutes + " minute" + r(e.minutes, "", "s");
+                }),
+                o("f9b6b7d3", function (e) {
+                    return e.hours + " hour" + r(e.hours, "", "s");
+                }),
+                o("a9af8753", function (e) {
+                    return e.days + " day" + r(e.days, "", "s") + ", " + e.hours + " hour" + r(e.hours, "", "s");
+                }),
+                o("b93d00e5", function (e) {
+                    return e.days + " day" + r(e.days, "", "s");
+                }),
+                o("be88be23", function (e) {
+                    return "Your " + e.durationInDays + "-day ad-free trial is activated";
+                }),
+                o("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                o("ae3f3b0e", "Enjoy!"),
+                o("cdac8dc4", "See your new feed"),
+                o("dec99336", "Ad-free"),
+                o("i95803fa", "Unfortunately, you are not eligible at this time."),
                 o("d28a1d72", "Be the very first to spot trends with Radar"),
                 o("fb70427a", "Introducing the most powerful search tool on X."),
                 o("i54bf620", "Monitor keywords"),
@@ -7841,36 +7872,7 @@
                 o("j26dee0e", "Remove affiliate"),
                 o("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
                 o("j3115ce8", "Individual"),
-                o("d8bb1d84", "Organization"),
-                o("e970bdbd", function (e) {
-                    return e.count + " invites remaining";
-                }),
-                o("id67d953", function (e) {
-                    return "Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
-                }),
-                o("f323d314", "Resend"),
-                o("ac645cde", "You can always add them again."),
-                o("d12af2dd", function (e) {
-                    return "Are you sure you want to remove this invitation to @" + e.screenName + "?";
-                }),
-                o("ib60b2d5", function (e) {
-                    return "Are you sure you want to resend this invitation to @" + e.screenName + "?";
-                }),
-                o("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
-                o("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                o("dd2db402", "Step 1: Gather the required information"),
-                o("edb098c2", "Step 2: Contact our support team"),
-                o("c4474460", "Step 2: Email our support team"),
-                o("a08da0fa", "What happens next?"),
-                o("c127374e", "Send us a message"),
-                o("b2cb2a0c", "Username of your Verified Org account"),
-                o("b8e64002", "Name of your applicant tracking system"),
-                o("acb99db6", "Career site URL where your jobs are listed"),
-                o("a64a5b7a", "Send the required information to our support team to start the integration process."),
-                o("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
-                o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
-                o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                o("ce102a20", "Redirecting to Stripe");
+                o("d8bb1d84", "Organization");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7909,7 +7911,36 @@
                     u(e, a)
                 );
             }
-            o("ddfd6718", "Payment Failed"),
+            o("e970bdbd", function (e) {
+                return e.count + " invites remaining";
+            }),
+                o("id67d953", function (e) {
+                    return "Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
+                }),
+                o("f323d314", "Resend"),
+                o("ac645cde", "You can always add them again."),
+                o("d12af2dd", function (e) {
+                    return "Are you sure you want to remove this invitation to @" + e.screenName + "?";
+                }),
+                o("ib60b2d5", function (e) {
+                    return "Are you sure you want to resend this invitation to @" + e.screenName + "?";
+                }),
+                o("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
+                o("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
+                o("dd2db402", "Step 1: Gather the required information"),
+                o("edb098c2", "Step 2: Contact our support team"),
+                o("c4474460", "Step 2: Email our support team"),
+                o("a08da0fa", "What happens next?"),
+                o("c127374e", "Send us a message"),
+                o("b2cb2a0c", "Username of your Verified Org account"),
+                o("b8e64002", "Name of your applicant tracking system"),
+                o("acb99db6", "Career site URL where your jobs are listed"),
+                o("a64a5b7a", "Send the required information to our support team to start the integration process."),
+                o("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
+                o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
+                o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
+                o("ce102a20", "Redirecting to Stripe"),
+                o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 o("a62359e6", "Verified Organization Settings"),
                 o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
@@ -8887,8 +8918,8 @@
                 o("c1658fc6", "Ezin izan da erreproduzitu eduki hau."),
                 o("h519ae04", "The media has been disabled due to a copyright claim."),
                 o("ce871584", "Igorpen hau amaitu da."),
-                o("c101eb96", "Igorpen hau ez dago eskuragarri."),
-                o("gb24a514", "Eduki hau desgaitu da copyrightaren jabeak jarritako salaketa dela eta."),
+                o("c101eb96", "Igorpen hau ez dago eskuragarri.");
+            o("gb24a514", "Eduki hau desgaitu da copyrightaren jabeak jarritako salaketa dela eta."),
                 o("hcaf3e63", function (e) {
                     return e.holder + " erabiltzaileak multimedia-eduki hori desgaitu du copyright-erreklamazio bat dela eta.";
                 }),
@@ -8912,10 +8943,10 @@
                 o("ecda5f9e", "Engainagarria"),
                 o("a423473c", "Legez eskatzen den oharra"),
                 o("b3296688", "Visibility Limited"),
-                o("ccd32094", "Orain");
-            o("abfcce0d", function (e) {
-                return "Duela " + e.amountOfTime;
-            }),
+                o("ccd32094", "Orain"),
+                o("abfcce0d", function (e) {
+                    return "Duela " + e.amountOfTime;
+                }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
                 o("habf9678", "Egileak finkatuta"),
@@ -12909,7 +12940,7 @@
                     Object.defineProperty(o, "prototype", { writable: !1 }),
                     h
                 );
-            })(t(332920)._ActualI18NFormatMessage || d.Component);
+            })(t(111677)._ActualI18NFormatMessage || d.Component);
             o("_ActualI18NFormatMessage", b),
                 o("I18NFormatMessage", function (e) {
                     return d.createElement(b, e);
@@ -13264,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.cd1808fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.15bbaaea.js.map

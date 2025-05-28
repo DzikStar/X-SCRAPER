@@ -1,7 +1,25 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountVerification-6107ac1a"],
+    ["bundle.AccountVerification-6107ac1a", "icons/IconDraggable-js"],
     {
+        290402: (e, t, r) => {
+            r.d(t, { Z: () => u });
+            var o = r(807896),
+                a = r(202784),
+                n = r(182056),
+                i = r(879113),
+                l = r(392237),
+                s = r(111677),
+                c = r.n(s),
+                d = r(968478);
+            const h = c().aa6e3300,
+                p = ({ retryMessage: e, ...t }, r) => {
+                    const l = n.Z.isOnline();
+                    return a.createElement(i.Z, (0, o.Z)({}, t, { icon: l ? void 0 : a.createElement(d.default, { style: m.icon }), retryMessage: l ? e : h }));
+                },
+                m = l.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                u = a.forwardRef(p);
+        },
         980407: (e, t, r) => {
             r.d(t, { Z: () => b, w: () => m });
             var o = r(202784),
@@ -44,7 +62,7 @@
             r(571372);
             var o = r(202784),
                 a = r(946847),
-                n = r(332920),
+                n = r(111677),
                 i = r.n(n),
                 l = r(516951),
                 s = r(323265),
@@ -67,13 +85,13 @@
                 };
         },
         853137: (e, t, r) => {
-            r.d(t, { ZP: () => k });
+            r.d(t, { ZP: () => v });
             var o = r(202784),
                 a = r(325686),
                 n = r(731708),
                 i = r(946847),
                 l = r(154003),
-                s = r(332920),
+                s = r(111677),
                 c = r.n(s),
                 d = r(817480),
                 h = r(161821),
@@ -88,11 +106,11 @@
                 E = c().c69a40de,
                 f = c().c83a1662,
                 _ = { "10minutemail": [""], aol: ["aol.com"], gmail: ["googlemail.com", "gmail.com"], gmx: ["gmx.com"], icloud: ["icloud.com", "me.com", "mac.com"], "mail.com": ["mail.com"], outlook: ["outlook.com"], protonmail: ["protonmail.com", "pm.me"], sendinblue: ["sendinblue.com"], tutanota: ["tutanota.com"], yahoo: ["yahoo.com"], yandex: ["yandex.com"], zoho: ["zoho.com"] },
-                k = (e) => {
-                    const { accountSettingsLink: t, email: r, handleOnClickInvalid: s, handleOnClickValid: k, isNarrow: I } = e,
-                        v = 0 === r.length;
+                v = (e) => {
+                    const { accountSettingsLink: t, email: r, handleOnClickInvalid: s, handleOnClickValid: v, isNarrow: k } = e,
+                        I = 0 === r.length;
                     if (
-                        v ||
+                        I ||
                         ((e) => {
                             const [, t] = e.split("@"),
                                 r = `${(0, d.Z)((0, h.Z)(_))
@@ -102,12 +120,12 @@
                             return new RegExp(r, "i").test(t);
                         })(r)
                     ) {
-                        const e = v ? E : f,
-                            r = v ? ((e) => o.createElement(c().I18NFormatMessage, { $i18n: "jf9308af" }, o.createElement(n.ZP, { link: e }, c().e1e878ee)))(t) : ((e) => o.createElement(c().I18NFormatMessage, { $i18n: "e9976a41" }, o.createElement(n.ZP, { link: e }, c().b9635182)))(t);
+                        const e = I ? E : f,
+                            r = I ? ((e) => o.createElement(c().I18NFormatMessage, { $i18n: "jf9308af" }, o.createElement(n.ZP, { link: e }, c().e1e878ee)))(t) : ((e) => o.createElement(c().I18NFormatMessage, { $i18n: "e9976a41" }, o.createElement(n.ZP, { link: e }, c().b9635182)))(t);
                         return o.createElement(i.Z, { actionLabel: b, graphicDisplayMode: "none", headline: e, onAction: s, onClose: p.Z, subtext: r, withCloseButton: !1 });
                     }
-                    return o.createElement(a.Z, { style: [u.Z.container, I && u.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: m.Q_, role: "heading", size: "title4", style: u.Z.header, weight: "heavy" }, C), o.createElement(a.Z, { style: u.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, g), ((w = Z), o.createElement(n.ZP, { size: "subtext2", style: u.Z.subheading, weight: "heavy" }, w)), ((x = r), o.createElement(n.ZP, { style: u.Z.subtext }, x))), o.createElement(l.ZP, { onClick: k, style: u.Z.buttonFixed, type: "brandFilled" }, y));
-                    var x, w;
+                    return o.createElement(a.Z, { style: [u.Z.container, k && u.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: m.Q_, role: "heading", size: "title4", style: u.Z.header, weight: "heavy" }, C), o.createElement(a.Z, { style: u.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, g), ((x = Z), o.createElement(n.ZP, { size: "subtext2", style: u.Z.subheading, weight: "heavy" }, x)), ((w = r), o.createElement(n.ZP, { style: u.Z.subtext }, w))), o.createElement(l.ZP, { onClick: v, style: u.Z.buttonFixed, type: "brandFilled" }, y));
+                    var w, x;
                 };
         },
         878432: (e, t, r) => {
@@ -117,7 +135,7 @@
                 n = r(688715),
                 i = r(731708),
                 l = r(154003),
-                s = r(332920),
+                s = r(111677),
                 c = r.n(s),
                 d = r(555079),
                 h = r(695829),
@@ -133,7 +151,7 @@
             var o = r(202784),
                 a = r(325686),
                 n = r(731708),
-                i = r(332920),
+                i = r(111677),
                 l = r.n(i),
                 s = r(555079),
                 c = r(801501),
@@ -207,7 +225,7 @@
                 n = r(731708),
                 i = r(371344),
                 l = r(952428),
-                s = r(332920),
+                s = r(111677),
                 c = r.n(s),
                 d = r(178519),
                 h = r(197110),
@@ -276,7 +294,7 @@
             r.d(t, { qp: () => b, ZP: () => _, xn: () => g });
             var o = r(202784),
                 a = r(154003),
-                n = r(332920),
+                n = r(111677),
                 i = r.n(n),
                 l = r(316325),
                 s = r(133931),
@@ -314,7 +332,7 @@
             r.d(t, { Z: () => b });
             var o = r(202784),
                 a = r(946847),
-                n = r(332920),
+                n = r(111677),
                 i = r.n(n),
                 l = r(516951),
                 s = r(88656),
@@ -340,7 +358,7 @@
                 i = r(96083),
                 l = r(154003),
                 s = r(392237),
-                c = r(332920),
+                c = r(111677),
                 d = r.n(c),
                 h = r(555079),
                 p = r(716233),
@@ -363,13 +381,13 @@
                     .propsFromState(() => ({ backID: Z.$G, backImage: E, documentFormats: Z.kg, frontID: Z.B_, frontImage: f, idCountry: Z.Xu, idType: Z._g, isConfirmed: Z.aN, uploadEntityId: Z.QO, uploadErrors: Z.rT, uploadFetchStatus: Z._z, uploadRequestError: Z.Od }))
                     .propsFromActions(() => ({ addMedia: C.rA, createLocalApiErrorHandler: (0, y.zr)("ACCOUNT_VERIFICATION_INTAKE_UPLOAD"), processMultipleMedia: C.G$, removeMedia: C.TU, resetAuthenticationResult: Z.DA, resetDocumentIdProcess: Z.QH, resetIntakeUpload: Z.S5, setBackID: Z.Tc, setFrontID: Z.$q, setNextFlow: Z.JA, toggleCheckboxConfirmation: Z.yw, verifyIdDocument: Z.O2 }))
                     .withAnalytics();
-            var k = r(15038),
-                I = r(293615),
-                v = r(373554),
-                x = r(304059),
-                w = r(751170);
+            var v = r(15038),
+                k = r(293615),
+                I = r(373554),
+                w = r(304059),
+                x = r(751170);
             const P = ["application/pdf", "image/bmp", "image/jpeg", "image/png", "image/tiff"];
-            class F extends o.Component {
+            class D extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleDragDrop = (e) => {
@@ -379,7 +397,7 @@
                         }),
                         (this._renderDragDropTarget = () => {
                             const { "aria-label": e, onChange: t } = this.props;
-                            return o.createElement(v.Z, { acceptGifs: !1, acceptImages: !1, acceptVideo: !1, "aria-label": e, customMimeTypes: P, icon: o.createElement(I.default, { style: D.mediaPickerIcon }), onChange: t, size: "small", style: D.mediaPicker, withIcon: !0 });
+                            return o.createElement(I.Z, { acceptGifs: !1, acceptImages: !1, acceptVideo: !1, "aria-label": e, customMimeTypes: P, icon: o.createElement(k.default, { style: F.mediaPickerIcon }), onChange: t, size: "small", style: F.mediaPicker, withIcon: !0 });
                         }),
                         (this._getResizeIfNeeded = (e) => {
                             const t = e.externalMediaDetails && e.externalMediaDetails.height / e.externalMediaDetails.width;
@@ -387,18 +405,18 @@
                         }),
                         (this._renderPreview = (e) => {
                             const { onRemove: t } = this.props;
-                            return o.createElement(x.Z, { borderRadius: w.A.MEDIUM, mediaItem: e, onRemove: t, resizeIfNeeded: this._getResizeIfNeeded(e), style: D.mediaPreview, withCloseButton: !0 });
+                            return o.createElement(w.Z, { borderRadius: x.A.MEDIUM, mediaItem: e, onRemove: t, resizeIfNeeded: this._getResizeIfNeeded(e), style: F.mediaPreview, withCloseButton: !0 });
                         });
                 }
                 render() {
                     const { mediaItem: e, title: t } = this.props,
                         r = e ? this._renderPreview(e) : this._renderDragDropTarget();
-                    return o.createElement(a.Z, { style: D.dragDropContainer }, o.createElement(n.ZP, { weight: "bold" }, t), o.createElement(k.ZP, { onFilesAdded: this._handleDragDrop, style: D.dragDropComponent }, r));
+                    return o.createElement(a.Z, { style: F.dragDropContainer }, o.createElement(n.ZP, { weight: "bold" }, t), o.createElement(v.ZP, { onFilesAdded: this._handleDragDrop, style: F.dragDropComponent }, r));
                 }
             }
-            const D = s.default.create((e) => ({ dragDropContainer: { flex: 1, marginTop: e.spaces.space16, maxWidth: "50%", minWidth: `calc(${e.spaces.space80} + ${e.spaces.space48})` }, dragDropComponent: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: e.borderWidths.small, boxSizing: "border-box", flexGrow: 0, height: 135, marginVertical: e.spaces.space8, overflow: "hidden" }, mediaPicker: { borderStyle: "none", borderRadius: "none", flex: "auto" }, mediaPickerIcon: { color: e.colors.primary }, mediaPreview: { justifyContent: "center", flex: 1 } })),
-                T = F;
-            var S = r(326437);
+            const F = s.default.create((e) => ({ dragDropContainer: { flex: 1, marginTop: e.spaces.space16, maxWidth: "50%", minWidth: `calc(${e.spaces.space80} + ${e.spaces.space48})` }, dragDropComponent: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: e.borderWidths.small, boxSizing: "border-box", flexGrow: 0, height: 135, marginVertical: e.spaces.space8, overflow: "hidden" }, mediaPicker: { borderStyle: "none", borderRadius: "none", flex: "auto" }, mediaPickerIcon: { color: e.colors.primary }, mediaPreview: { justifyContent: "center", flex: 1 } })),
+                S = D;
+            var T = r(326437);
             const B = "verification-checkbox-label",
                 R = d().ff1d68f8,
                 A = o.createElement(d().I18NFormatMessage, { $i18n: "bfb355fb" }, o.createElement(n.ZP, { link: u.LT }, d().d20f76cb)),
@@ -409,8 +427,8 @@
                 W = d().b40ed190,
                 z = d().c6650b56,
                 U = d().d171ed16,
-                $ = o.createElement(d().I18NFormatMessage, { $i18n: "d65a41c3" }, o.createElement(n.ZP, { link: u.vW }, d().b8deb156)),
-                V = d().c1df579e;
+                V = o.createElement(d().I18NFormatMessage, { $i18n: "d65a41c3" }, o.createElement(n.ZP, { link: u.vW }, d().b8deb156)),
+                $ = d().c1df579e;
             class j extends o.Component {
                 constructor(...e) {
                     super(...e),
@@ -462,7 +480,7 @@
                         }),
                         (this._renderCheckbox = () => {
                             const { isConfirmed: e } = this.props;
-                            return o.createElement(a.Z, { style: [b.Z.contentContainer, b.Z.checkboxContainer] }, o.createElement(a.Z, { style: b.Z.checkbox }, o.createElement(i.Z, { "aria-labelledby": B, checked: e, onChange: this._handleCheckboxChange })), o.createElement(a.Z, { id: B, style: b.Z.checkboxText }, o.createElement(n.ZP, { color: "gray700" }, U), o.createElement(n.ZP, { color: "gray700", style: b.Z.text }, $)));
+                            return o.createElement(a.Z, { style: [b.Z.contentContainer, b.Z.checkboxContainer] }, o.createElement(a.Z, { style: b.Z.checkbox }, o.createElement(i.Z, { "aria-labelledby": B, checked: e, onChange: this._handleCheckboxChange })), o.createElement(a.Z, { id: B, style: b.Z.checkboxText }, o.createElement(n.ZP, { color: "gray700" }, U), o.createElement(n.ZP, { color: "gray700", style: b.Z.text }, V)));
                         }),
                         (this._needsBackside = () => {
                             const { documentFormats: e, idCountry: t, idType: r } = this.props;
@@ -473,7 +491,7 @@
                                 r = this._needsBackside(),
                                 n = r ? M : z,
                                 i = r ? N : W;
-                            return o.createElement(a.Z, { "aria-labelledby": h.Q_, role: "group", style: Q.gridContainer }, o.createElement(T, { "aria-label": n, mediaItem: t, onChange: this._handleAddFrontMedia, onRemove: this._handleRemoveFrontID, title: i }), r && o.createElement(T, { "aria-label": O, mediaItem: e, onChange: this._handleAddBackMedia, onRemove: this._handleRemoveBackID, title: L }));
+                            return o.createElement(a.Z, { "aria-labelledby": h.Q_, role: "group", style: Q.gridContainer }, o.createElement(S, { "aria-label": n, mediaItem: t, onChange: this._handleAddFrontMedia, onRemove: this._handleRemoveFrontID, title: i }), r && o.createElement(S, { "aria-label": O, mediaItem: e, onChange: this._handleAddBackMedia, onRemove: this._handleRemoveBackID, title: L }));
                         });
                 }
                 componentDidMount() {
@@ -495,12 +513,12 @@
                 }
                 _renderError() {
                     const { uploadRequestError: e } = this.props;
-                    return this._handleScribe("failure"), o.createElement(S.Z, { error: e, onButtonClick: this._handleErrorButtonClick });
+                    return this._handleScribe("failure"), o.createElement(T.Z, { error: e, onButtonClick: this._handleErrorButtonClick });
                 }
                 _render() {
                     const { backID: e, frontID: t, isConfirmed: r, isNarrow: i } = this.props,
                         s = (this._needsBackside() && !e) || !t || !r || this._isUploading();
-                    return o.createElement(a.Z, { style: [b.Z.container, i && b.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: h.Q_, role: "heading", size: "title4", style: b.Z.header, weight: "heavy" }, R), o.createElement(a.Z, { style: b.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, A), this._renderUploadTargets(), this._renderCheckbox()), o.createElement(l.ZP, { disabled: s, onPress: this._handleSubmit, style: b.Z.buttonFixed, type: "brandFilled" }, V));
+                    return o.createElement(a.Z, { style: [b.Z.container, i && b.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: h.Q_, role: "heading", size: "title4", style: b.Z.header, weight: "heavy" }, R), o.createElement(a.Z, { style: b.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, A), this._renderUploadTargets(), this._renderCheckbox()), o.createElement(l.ZP, { disabled: s, onPress: this._handleSubmit, style: b.Z.buttonFixed, type: "brandFilled" }, $));
                 }
                 render() {
                     return this._isErrorState() ? this._renderError() : this._render();
@@ -510,12 +528,12 @@
                 G = _(j);
         },
         594610: (e, t, r) => {
-            r.d(t, { FW: () => v, ZP: () => x });
+            r.d(t, { FW: () => I, ZP: () => w });
             var o = r(202784),
                 a = r(325686),
                 n = r(731708),
                 i = r(154003),
-                l = r(332920),
+                l = r(111677),
                 s = r.n(l),
                 c = r(744531),
                 d = r(555079),
@@ -533,22 +551,22 @@
                 E = s().c7942074,
                 f = s().b8121daa,
                 _ = s().d247ca70,
-                k = s().b51afbb2,
-                I = s().cc87b01c,
-                v = (e) => {
-                    const { authenticityType: t, createLocalApiErrorHandler: r, handleOnClick: l, isNarrow: u, notabilityCategory: b, notabilityData: y, notabilitySubcategory: v, verifyAccount: x } = e,
-                        w = (e) => o.createElement(n.ZP, { size: "subtext2", style: m.Z.subheading, weight: "heavy" }, e);
+                v = s().b51afbb2,
+                k = s().cc87b01c,
+                I = (e) => {
+                    const { authenticityType: t, createLocalApiErrorHandler: r, handleOnClick: l, isNarrow: u, notabilityCategory: b, notabilityData: y, notabilitySubcategory: I, verifyAccount: w } = e,
+                        x = (e) => o.createElement(n.ZP, { size: "subtext2", style: m.Z.subheading, weight: "heavy" }, e);
                     return o.createElement(
                         a.Z,
                         { style: [m.Z.container, u && m.Z.narrowContainer] },
-                        o.createElement(n.ZP, { "aria-level": 1, id: d.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, I),
+                        o.createElement(n.ZP, { "aria-level": 1, id: d.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, k),
                         o.createElement(
                             a.Z,
                             { style: m.Z.scrollableContainer },
                             o.createElement(n.ZP, { color: "gray700" }, _),
-                            w(C),
+                            x(C),
                             b && o.createElement(n.ZP, { style: m.Z.subtext }, p.aR[b]),
-                            v && ((P = p._v[v]), o.createElement(a.Z, null, w(E), o.createElement(n.ZP, { style: m.Z.subtext }, P))),
+                            I && ((P = p._v[I]), o.createElement(a.Z, null, x(E), o.createElement(n.ZP, { style: m.Z.subtext }, P))),
                             y &&
                                 ((e) => {
                                     const t = (0, c.Z)(e, "newsType"),
@@ -556,11 +574,11 @@
                                     return o.createElement(
                                         a.Z,
                                         null,
-                                        w(f),
+                                        x(f),
                                         r.map((e, t) => o.createElement(n.ZP, { key: t, style: m.Z.subtext }, e)),
                                     );
                                 })(y),
-                            w(k),
+                            x(v),
                             t &&
                                 ((e) => {
                                     const t = { [h.L_.IDENTITY_DOCUMENT]: s().e43425fa, [h.L_.EMAIL]: s().a411926a, [h.L_.WEBSITE]: s().e1c78796 };
@@ -573,7 +591,7 @@
                             i.ZP,
                             {
                                 onClick: () => {
-                                    x().catch(r()), l();
+                                    w().catch(r()), l();
                                 },
                                 style: m.Z.buttonFixed,
                                 type: "brandFilled",
@@ -583,7 +601,7 @@
                     );
                     var P;
                 },
-                x = y(v);
+                w = y(I);
         },
         804582: (e, t, r) => {
             r.d(t, { ZP: () => g });
@@ -592,7 +610,7 @@
                 n = r(891198),
                 i = r(731708),
                 l = r(154003),
-                s = r(332920),
+                s = r(111677),
                 c = r.n(s),
                 d = r(323265),
                 h = r(443781),
@@ -685,6 +703,19 @@
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        678773: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var o = r(202784),
+                a = r(890601),
+                n = r(783427),
+                i = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.5604cc9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.e769573a.js.map

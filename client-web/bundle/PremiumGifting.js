@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.PremiumGifting"],
+    ["bundle.PremiumGifting", "icons/IconChevronDown-js"],
     {
         310456: (e, a, t) => {
             t.d(a, { p: () => r });
@@ -139,7 +139,7 @@
         },
         97882: (e, a, t) => {
             t.d(a, { T: () => i, x: () => l });
-            var r = t(332920),
+            var r = t(111677),
                 n = t.n(r);
             const i = { AED: n().d857e44d, ALL: n().cb87e3db, ARS: n().a9d5ffd1, AUD: n().a0e8371d, BAM: n().gcc50dc9, BDT: n().a6a43585, BGN: n().a0cc8f2d, BHD: n().i31c32c5, BRL: n().i7dc69e9, BYR: n().c14a6c03, CAD: n().jaa3d537, CHF: n().a824080b, CLP: n().d9c0bedb, CNY: n().bf8c0613, COP: n().i8163625, CZK: n().adb53ba1, DKK: n().iabf697d, DZD: n().a1a0555b, EGP: n().f266f3d9, EUR: n().a9a8652b, GBP: n().dbf40761, GHS: n().b0d993d9, GTQ: n().ac1308e1, HKD: n().a7889ab3, HRK: n().c614f5cd, HUF: n().i55d57e3, IDR: n().e4b6002b, ILS: n().d28e983b, INR: n().e8c9232d, IQD: n().c8994ae1, ISK: n().f821c2a5, JPY: n().j348b9c9, KES: n().i6f93b9b, KRW: n().c6150bd5, KWD: n().i8921e09, KZT: n().ef239279, LBP: n().hecdb149, MAD: n().fdd039b7, MKD: n().f30c2c37, MXN: n().d9ea7bff, MYR: n().ea3df4b7, NGN: n().jaac21bb, NOK: n().hb435ced, NZD: n().ce699d81, PEN: n().bc56d3d7, PHP: n().f8561913, PKR: n().g6485d53, PLN: n().ff561cc1, QAR: n().b42011d3, RON: n().a6660bcd, RSD: n().f9b80449, RUB: n().gdee4d5d, SAR: n().h36f2103, SEK: n().a19ad037, SGD: n().g713f699, THB: n().ff2e39af, TND: n().be34316d, TRY: n().aef81b75, TWD: n().fcce70a5, TZS: n().jc9d352f, UAH: n().be1cb8c5, UGX: n().j9371501, USD: n().j7d4397d, VEF: n().d61441dd, VND: n().e2a99e97, ZAR: n().f7ce19ab, ZMW: n().b2a0213f },
                 l = ({ amount: e, currencyCode: a = "USD", formatter: t = 1e6, removeTrailingZeros: r = !1, strictAmount: n = !1 }) => {
@@ -154,7 +154,7 @@
         },
         548797: (e, a, t) => {
             t.d(a, { Ld: () => d, gS: () => c, pB: () => s, yv: () => o });
-            var r = t(332920),
+            var r = t(111677),
                 n = t.n(r),
                 i = t(337394);
             const l = n().b47d123d,
@@ -203,7 +203,7 @@
         685731: (e, a, t) => {
             t.d(a, { Gi: () => b, Mk: () => y, ZV: () => h, aU: () => g, d3: () => _, fS: () => k, pt: () => f });
             t(202784);
-            var r = t(332920),
+            var r = t(111677),
                 n = t.n(r),
                 i = t(336629),
                 l = t(862695),
@@ -257,7 +257,7 @@
                 l = t(731708),
                 s = t(154003),
                 o = t(392237),
-                c = t(332920),
+                c = t(111677),
                 d = t.n(c),
                 u = t(187669),
                 p = t(293115),
@@ -287,7 +287,7 @@
                 s = t(731708),
                 o = t(154003),
                 c = t(392237),
-                d = t(332920),
+                d = t(111677),
                 u = t.n(d),
                 p = t(187669),
                 m = t(293115),
@@ -480,7 +480,7 @@
                 v = t(731708),
                 B = t(466818),
                 P = t(392237),
-                F = t(332920),
+                F = t(111677),
                 S = t.n(F),
                 C = t(310456),
                 T = t(615656),
@@ -488,8 +488,8 @@
                 E = t(736063),
                 x = t(952793),
                 L = t(782642),
-                K = t(97882),
-                w = t(782826),
+                w = t(97882),
+                K = t(782826),
                 D = t(337394),
                 I = (function () {
                     var e = [{ defaultValue: null, kind: "LocalArgument", name: "stripeId" }],
@@ -566,11 +566,11 @@
                 O = t(412876),
                 U = t(553660),
                 W = t(615027),
-                H = t(688715),
-                z = t(847579);
-            const G = (0, H.ju)("https://legal.x.com/purchaser-terms"),
-                $ = (0, H.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(z.Z, { withoutBorder: !0 }, m.createElement(S().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, S().f3fddc98), m.createElement(v.ZP, { link: $ }, S().cff9c889)));
+                z = t(688715),
+                H = t(847579);
+            const G = (0, z.ju)("https://legal.x.com/purchaser-terms"),
+                $ = (0, z.ju)("https://help.x.com/using-x/x-premium/gifting"),
+                Q = () => m.createElement(H.Z, { withoutBorder: !0 }, m.createElement(S().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, S().f3fddc98), m.createElement(v.ZP, { link: $ }, S().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -644,7 +644,7 @@
                         [l, s] = m.useState("BlueVerifiedPlus"),
                         [o, c] = m.useState(!1),
                         d = f()(ce, { screenName: a }, { fetchPolicy: "network-only" }),
-                        { origin: u } = w.ZP.get(),
+                        { origin: u } = K.ZP.get(),
                         p = (0, L.p)(),
                         [h, P] = ee({ successUrl: `${u}/${a}/gift-premium/success`, cancelUrl: `${u}/${a}/gift-premium` }),
                         F = i[l],
@@ -652,8 +652,8 @@
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        H = I ? (0, K.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
-                        z = m.useCallback(() => {
+                        z = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        H = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
                         G = d?.user?.result,
@@ -664,7 +664,7 @@
                                 (r.scribe({ component: "purchase_button", action: "click" }),
                                 c(!0),
                                 h({ receiverId: $, productId: F })
-                                    .then((e) => w.ZP.navigateTo(e))
+                                    .then((e) => K.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
                                             t = a === T.ZP.GenericAccessDenied ? oe : se;
@@ -675,12 +675,12 @@
                         Y = m.useMemo(() => {
                             const e = o || P,
                                 a = !l || e;
-                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: H })), m.createElement(Q, null));
-                        }, [H, j, P, o, q, l]),
+                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: z })), m.createElement(Q, null));
+                        }, [z, j, P, o, q, l]),
                         X = m.useCallback((e) => s(C.p[e]), [s]),
                         J = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
                         le = D.St[l];
-                    return J && a && G && H && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: z }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(S().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(W.Z, { to: "/home" });
+                    return J && a && G && z && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: H }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(S().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: z }))))) : m.createElement(W.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -703,7 +703,7 @@
                 n = t(325686),
                 i = t(731708),
                 l = t(392237),
-                s = t(332920),
+                s = t(111677),
                 o = t.n(s),
                 c = t(336629);
             const d = o().i57aeafb,
@@ -814,6 +814,19 @@
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        487552: (e, a, t) => {
+            t.r(a), t.d(a, { default: () => o });
+            var r = t(202784),
+                n = t(890601),
+                i = t(783427),
+                l = t(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.dffec41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.0a27acca.js.map

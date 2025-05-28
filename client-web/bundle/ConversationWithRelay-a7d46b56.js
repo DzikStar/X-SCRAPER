@@ -12,7 +12,7 @@
                 l = a(661810),
                 c = a(731708),
                 m = a(392237),
-                d = a(332920),
+                d = a(111677),
                 p = a.n(d),
                 u = a(323265),
                 g = a(443781),
@@ -151,7 +151,7 @@
                 o = a(325686),
                 n = a(731708),
                 s = a(392237),
-                i = a(332920);
+                i = a(111677);
             const l = a.n(i)().de4def4e,
                 c = (e) => r.createElement(o.Z, null, r.createElement(n.ZP, { color: "gray700", size: "body", weight: "normal" }, e.text), e.showPromotion ? r.createElement(n.ZP, { color: "primary900", size: "subtext3", style: [m.promotionLabel, m.popoverPromotionLabel], weight: "bold" }, l) : null),
                 m = s.default.create((e) => ({ popoverPromotionLabel: { width: "fit-content", marginTop: e.spaces.space8 }, promotionLabel: { backgroundColor: e.colors.primary50, borderRadius: e.borderRadii.infinite, paddingVertical: e.spaces.space4, paddingHorizontal: e.spacesPx.space4 + e.spacesPx.space2 } })),
@@ -169,7 +169,7 @@
                 c = a(731708),
                 m = a(392237),
                 d = a(386802),
-                p = a(332920),
+                p = a(111677),
                 u = a.n(p),
                 g = a(323265),
                 b = a(443781),
@@ -419,4 +419,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a7d46b56.8da2459a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a7d46b56.be4e08ca.js.map

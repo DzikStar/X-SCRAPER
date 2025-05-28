@@ -82,27 +82,32 @@
             const m = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: l.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
                 b = h;
         },
-        231035: (e, t, o) => {
-            o.d(t, { Z: () => B });
+        349035: (e, t, o) => {
+            o.d(t, { Z: () => n });
+            var r = o(202784),
+                a = o(272175);
+            const n = (0, o(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), r.createElement(a.ql, null, r.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
+        },
+        56851: (e, t, o) => {
+            o.d(t, { Z: () => b });
             var r = o(202784),
                 a = o(420740),
                 n = o(108362),
                 i = o(731708),
                 l = o(154003),
                 s = o(392237),
-                c = o(332920),
+                c = o(111677),
                 d = o.n(c),
-                p = o(272175);
-            const u = (0, o(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), r.createElement(p.ql, null, r.createElement("meta", { content: "noindex, nofollow", name: "robots" })))),
-                h = "error-detail",
-                m = d().e49537c2,
-                b = d().a9ae1e78;
-            class B extends r.PureComponent {
+                p = o(349035);
+            const u = "error-detail",
+                h = d().e49537c2,
+                m = d().a9ae1e78;
+            class b extends r.PureComponent {
                 render() {
-                    return r.createElement(a.Z, { testID: h }, r.createElement(u, null), r.createElement(n.Z, { style: g.root }, r.createElement(i.ZP, { align: "center", color: "gray700", style: g.retryText }, m), r.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, b)));
+                    return r.createElement(a.Z, { testID: u }, r.createElement(p.Z, null), r.createElement(n.Z, { style: B.root }, r.createElement(i.ZP, { align: "center", color: "gray700", style: B.retryText }, h), r.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, m)));
                 }
             }
-            const g = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+            const B = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => d });
@@ -158,12 +163,12 @@
                 a = o(386802),
                 n = o(108362),
                 i = o(392237),
-                l = o(332920),
+                l = o(111677),
                 s = o.n(l),
                 c = o(187669),
                 d = o(449067),
                 p = o(38293),
-                u = o(231035),
+                u = o(56851),
                 h = o(652904),
                 m = o(952793),
                 b = o(163889),
@@ -186,4 +191,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.NotFound.6cd9109a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.NotFound.60a55a6a.js.map

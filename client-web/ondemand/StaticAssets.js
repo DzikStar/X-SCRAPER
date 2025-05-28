@@ -296,7 +296,7 @@
                 "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v2.png": 332220,
                 "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v2@2x.png": 804988,
                 "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v2@3x.png": 349386,
-                "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v3.png": 348562,
+                "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v3.png": 694804,
                 "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v3@2x.png": 731345,
                 "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature-v3@3x.png": 113376,
                 "./sticky/illustrations/twitter_blue_images_verification/longer-video-feature.png": 202750,
@@ -1759,7 +1759,7 @@
             "use strict";
             t.exports = i.p + "longer-video-feature-v2@3x.f5f8600a.png";
         },
-        348562: (t, e, i) => {
+        694804: (t, e, i) => {
             "use strict";
             t.exports = i.p + "longer-video-feature-v3.7226fa5a.png";
         },
@@ -1897,4 +1897,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.0518104a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.StaticAssets.1b801c1a.js.map

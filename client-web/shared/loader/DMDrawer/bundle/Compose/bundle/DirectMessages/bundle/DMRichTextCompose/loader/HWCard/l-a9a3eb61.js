@@ -43,12 +43,12 @@
                 P = a(894023),
                 x = a(761744),
                 k = a(500040),
-                A = a(630715),
-                T = a(190636),
+                T = a(630715),
+                A = a(190636),
                 O = a(902673),
                 M = a(25001),
                 U = a(142496);
-            const Z = { Award: w.default, Badge: B.default, Calendar: L.default, Coins: P.default, Heart: x.default, Information: k.default, Link: A.default, Money: T.default, News: O.default, Person: M.default, Rating: U.default },
+            const Z = { Award: w.default, Badge: B.default, Calendar: L.default, Coins: P.default, Heart: x.default, Information: k.default, Link: T.default, Money: A.default, News: O.default, Person: M.default, Rating: U.default },
                 N = (e) => {
                     switch (e) {
                         case "Right":
@@ -76,9 +76,9 @@
                             return "text";
                     }
                 },
-                Q = (e) => ("DeveloperBuiltCardHeaderProperties" === e.__typename ? "heavy" : G(e)),
-                G = (e) => ("Heavy" === e.font_weight ? "bold" : "normal"),
-                K = (e) => {
+                Q = (e) => ("DeveloperBuiltCardHeaderProperties" === e.__typename ? "heavy" : F(e)),
+                F = (e) => ("Heavy" === e.font_weight ? "bold" : "normal"),
+                G = (e) => {
                     switch (e) {
                         case "Small":
                             return "small";
@@ -90,7 +90,7 @@
                             return "none";
                     }
                 },
-                F = (e) => {
+                K = (e) => {
                     switch (e) {
                         case "Left":
                             return "start";
@@ -157,7 +157,7 @@
                         }
                         case "DeveloperBuiltCardImageComponent": {
                             const r = e.image_fill_type === E.FIXED;
-                            return i.createElement(p.Z, { key: t, style: [j.imageContainer, r ? { width: e.size.width } : j.imageFill, { borderRadius: u.default.theme.borderRadii[K(e.corner_radius)] }], testID: S }, i.createElement(_.Z, { componentType: "dev_built_card", destinationData: e.component_action?.url ? { type: n._g.BROWSER, data: { url_data: { url: e.component_action?.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } } : void 0, ignoreDataSaver: r, locationKey: a && r ? `${a}-fixed${e.size.width}x${e.size.height}` : a, mediaEntity: { altText: e.alt_text, media_url_https: e.url, type: "photo", original_info: { width: 1e3, height: 1e3 } }, ratio: e.size.width / e.size.height, testID: b }));
+                            return i.createElement(p.Z, { key: t, style: [j.imageContainer, r ? { width: e.size.width } : j.imageFill, { borderRadius: u.default.theme.borderRadii[G(e.corner_radius)] }], testID: S }, i.createElement(_.Z, { componentType: "dev_built_card", destinationData: e.component_action?.url ? { type: n._g.BROWSER, data: { url_data: { url: e.component_action?.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } } : void 0, ignoreDataSaver: r, locationKey: a && r ? `${a}-fixed${e.size.width}x${e.size.height}` : a, mediaEntity: { altText: e.alt_text, media_url_https: e.url, type: "photo", original_info: { width: 1e3, height: 1e3 } }, ratio: e.size.width / e.size.height, testID: b }));
                         }
                         case "DeveloperBuiltCardButtonComponent":
                             return i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.BROWSER, data: { url_data: { url: e.button_action.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } }, key: t }, ({ link: t, onClick: a }) => i.createElement(m.ZP, { link: t, onPress: a, size: "small", type: "primaryFilled" }, e.text));
@@ -179,7 +179,7 @@
                         i.createElement(l.ZP.Consumer, null, (o) => {
                             return i.createElement(
                                 g.Z,
-                                { interactive: !1, link: t ? o.withAnchorless(t) : void 0, onClick: r, style: [j.container, ((n = e.layout_behavior), { alignItems: F(n.container_alignment), flexDirection: q(n.axis), ...z(n.layout_margins) }), { borderWidth: e.border_color && u.default.theme.borderWidths.small, borderColor: u.default.theme.colors[$(e.border_color)], borderRadius: u.default.theme.borderRadii[K(e.corner_radius)] }], testID: y },
+                                { interactive: !1, link: t ? o.withAnchorless(t) : void 0, onClick: r, style: [j.container, ((n = e.layout_behavior), { alignItems: K(n.container_alignment), flexDirection: q(n.axis), ...z(n.layout_margins) }), { borderWidth: e.border_color && u.default.theme.borderWidths.small, borderColor: u.default.theme.colors[$(e.border_color)], borderRadius: u.default.theme.borderRadii[G(e.corner_radius)] }], testID: y },
                                 e.components.map((e, t) => H({ component: e, key: t, layoutCacheKey: a })),
                             );
                             var n;
@@ -267,21 +267,21 @@
                     const P = this._getAttributionData(),
                         x = this._getCurrentLayout(),
                         k = this._getDetailData() || this._getAppStoreDetailData(),
-                        A = this._getDetailWithMiddotGroupData(),
-                        T = this._getTwitterListDetailsData(),
+                        T = this._getDetailWithMiddotGroupData(),
+                        A = this._getTwitterListDetailsData(),
                         O = this._getCommunityDetailsData(),
                         M = this._getJobDetailsData(),
                         U = this._getTopicDetailsData(),
                         Z = this._getMediaData(),
                         N = this._getPollData(),
                         { buttons: W, layout: Q } = this._getButtonsData() || {},
-                        G = this._getBackgroundColorData(),
-                        K = this._getSwipeableMediaData(),
-                        F = this._getDeveloperBuiltCard(),
+                        F = this._getBackgroundColorData(),
+                        G = this._getSwipeableMediaData(),
+                        K = this._getDeveloperBuiltCard(),
                         q = this._getFollowButtonData(),
                         z = this._getSocialContextData(),
                         { get_fetch_interval_for_updates: V } = e,
-                        $ = this.props.withInteractiveStyling && !!((k && k.destination) || (A && A.destination) || (T && T.destination) || (U && U.destination) || (O && O.destination) || (M && M.destination)),
+                        $ = this.props.withInteractiveStyling && !!((k && k.destination) || (T && T.destination) || (A && A.destination) || (U && U.destination) || (O && O.destination) || (M && M.destination)),
                         H = { locationKey: n.locationKey, onLikelyInteraction: this._handleLikelyInteraction, id: s, testIDs: D, withInteractiveStyling: $ },
                         Y = g && V?.[t]?.(),
                         { shouldAutoAdvance: j } = e.displayOptions || {},
@@ -296,8 +296,8 @@
                         if (!B?.()) return null;
                         const e = Ce;
                         n.grokShareAttachment && (e.data.conversation_preview = n.grokShareAttachment), (_e = i.createElement(te.Z, { continueInGrokEnabled: R?.(), conversation: e.data.conversation_preview, destination: e.data.destination, grokUser: e.data.grok_user, mediaVisibilityResults: n.mediaVisibilityResults, metadata: e.data.metadata, openGrok: L, profileUser: e.data.profile_user }));
-                    } else if (F) _e = i.createElement(J, (0, r.Z)({}, H, { developerBuiltCard: F, withSquareBottomBorderRadius: f }));
-                    else if (re) A && (_e = i.createElement(le.Z, (0, r.Z)({}, H, { button: W && W.length > 0 ? W[0] : void 0, detailsWithMiddotGroup: A, media: Z || void 0 })));
+                    } else if (K) _e = i.createElement(J, (0, r.Z)({}, H, { developerBuiltCard: K, withSquareBottomBorderRadius: f }));
+                    else if (re) T && (_e = i.createElement(le.Z, (0, r.Z)({}, H, { button: W && W.length > 0 ? W[0] : void 0, detailsWithMiddotGroup: T, media: Z || void 0 })));
                     else if (he) me && Z && (_e = i.createElement(se.Z, (0, r.Z)({}, H, { details: me, dmSentOrReceived: d, isTopicCard: !!U, media: Z, reverse: x.reverse, withBorderShadow: b, withSquareBottomBorderRadius: f })));
                     else if (e.ucLayout) {
                         const a = e.ucLayout.type;
@@ -309,7 +309,7 @@
                             if (!w?.()) return null;
                             _e = i.createElement(pe.ZP, null);
                         }
-                    } else _e = i.createElement(de.ZP, (0, r.Z)({}, H, { attribution: P || void 0, backgroundColor: G || void 0, buttonLayout: Q, buttons: W || void 0, chromeless: x.chromeless, communityDetails: O || void 0, details: k, detailsWithMiddotGroup: A, dmSentOrReceived: d, followButtonData: q || void 0, initialCarouselIndex: a, isAuthor: X, jobDetails: M || void 0, listDetails: T || void 0, media: Z, poll: N || void 0, promotedContent: C, renderVideoPlayer: this.props.renderVideoPlayer, socialContextData: z || void 0, swipeableMedia: K, withActionsDisabled: n.withActionsDisabled, withBorder: v, withBorderShadow: b, withDetail: S, withRoundBorder: y, withSquareBottomBorderRadius: f }));
+                    } else _e = i.createElement(de.ZP, (0, r.Z)({}, H, { attribution: P || void 0, backgroundColor: F || void 0, buttonLayout: Q, buttons: W || void 0, chromeless: x.chromeless, communityDetails: O || void 0, details: k, detailsWithMiddotGroup: T, dmSentOrReceived: d, followButtonData: q || void 0, initialCarouselIndex: a, isAuthor: X, jobDetails: M || void 0, listDetails: A || void 0, media: Z, poll: N || void 0, pollTranslations: n.pollTranslations, promotedContent: C, renderTranslationFeedback: n.renderTranslationFeedback, renderVideoPlayer: this.props.renderVideoPlayer, socialContextData: z || void 0, swipeableMedia: G, withActionsDisabled: n.withActionsDisabled, withBorder: v, withBorderShadow: b, withDetail: S, withRoundBorder: y, withSquareBottomBorderRadius: f }));
                     return i.createElement(oe.Z.Provider, { value: { card: e, cardContext: n, carouselIndex: a, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, media: Z, promotedContent: C, onEventReminderClick: h, onCardLinkClick: p, onPollVote: m, onPromotedLogEvent: this._onPromotedLogEvent, onScribeEvent: _, scribeCardAction: this._scribeCardAction, shouldAutoAdvance: j, slideDetails: this._slideDetails, transformUrl: E, promotedLogData: o, updateCardState: this._updateCardState, updatePromotedLogState: this._updatePromotedLogState, updateCarouselEventDetailsState: this._updateCarouselEventDetailsState } }, this._renderPreconnectTags(), Y ? i.createElement(ne.ZP, { fetchIntervalConfig: Y, requestCardUpdate: this._requestCardUpdate }) : null, _e);
                 }
                 _getCurrentLayout() {
@@ -438,4 +438,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.3de2a04a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.a76e605a.js.map

@@ -104,7 +104,7 @@
             r.d(t, { Z: () => i });
             var a = r(202784),
                 l = r(731708),
-                s = r(332920),
+                s = r(111677),
                 c = r.n(s),
                 n = r(176544);
             const i = () => a.createElement(l.ZP, { color: "gray700" }, a.createElement(c().I18NFormatMessage, { $i18n: "a9c053c7" }, a.createElement(l.ZP, { color: "text", link: n.JD, weight: "bold" }, c().fde27650)));
@@ -115,7 +115,7 @@
                 l = r(325686),
                 s = r(731708),
                 c = r(392237),
-                n = r(332920),
+                n = r(111677),
                 i = r.n(n),
                 o = r(698537);
             const u = [
@@ -157,7 +157,7 @@
                 c = r(731708),
                 n = r(420412),
                 i = r(392237),
-                o = r(332920),
+                o = r(111677),
                 u = r.n(o),
                 m = r(293723),
                 p = r(263272),
@@ -195,7 +195,7 @@
             r.d(t, { Z: () => i });
             var a = r(202784),
                 l = r(731708),
-                s = r(332920),
+                s = r(111677),
                 c = r.n(s),
                 n = r(176544);
             const i = () => a.createElement(l.ZP, { color: "gray700" }, a.createElement(c().I18NFormatMessage, { $i18n: "fdf28443" }, a.createElement(l.ZP, { color: "text", link: n.JD, weight: "bold" }, c().b8a69fa0)));
@@ -208,7 +208,7 @@
                 c = r.n(s),
                 n = r(420412),
                 i = r(392237),
-                o = r(332920),
+                o = r(111677),
                 u = r.n(o),
                 m = r(733078),
                 p = r(724345),
@@ -232,4 +232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-7810f3b3.f9424b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-7810f3b3.108a233a.js.map

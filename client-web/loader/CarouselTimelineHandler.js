@@ -2,242 +2,207 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.CarouselTimelineHandler"],
     {
-        332878: (e, a, d) => {
-            d.d(a, { Z: () => c });
-            function r(e) {
+        332878: (e, o, r) => {
+            r.d(o, { Z: () => i });
+            function a(e) {
                 return "_listHeader" === e || "_listFooter" === e;
             }
-            const o = (e, a, d) => {
-                    const r = e(a),
-                        o = e(d);
-                    return !r && o ? -1 : r && !o ? 1 : 0;
+            const t = (e, o, r) => {
+                    const a = e(o),
+                        t = e(r);
+                    return !a && t ? -1 : a && !t ? 1 : 0;
                 },
-                n = (e, a, d) => l(e(d), e(a)),
-                l = (e, a) => (e < a ? -1 : e > a ? 1 : 0),
-                i = (e, a) => {
-                    if (e.length) return e.reduce((e, d) => (a(d, e) > 0 ? d : e));
+                n = (e, o, r) => d(e(r), e(o)),
+                d = (e, o) => (e < o ? -1 : e > o ? 1 : 0),
+                l = (e, o) => {
+                    if (e.length) return e.reduce((e, r) => (o(r, e) > 0 ? r : e));
                 },
-                t = ({ nextPos: e, prevPos: a }) => {
-                    const d = a.getForViewport(),
-                        l = (e) => e && e.doesIntersectWith(d),
-                        t = (e) => (e ? Math.abs(d.getTop() - e.getTop()) : 1 / 0),
-                        c = e.getList().filter(({ id: d }) => !r(d) && a.isRendered(d) && e.isRendered(d)),
-                        s =
-                            c.length > 0
-                                ? i(c, (e, d) => {
-                                      const r = a.getForItem(e.id),
-                                          i = a.getForItem(d.id);
-                                      return o(l, r, i) || n(t, r, i);
+                s = ({ nextPos: e, prevPos: o }) => {
+                    const r = o.getForViewport(),
+                        d = (e) => e && e.doesIntersectWith(r),
+                        s = (e) => (e ? Math.abs(r.getTop() - e.getTop()) : 1 / 0),
+                        i = e.getList().filter(({ id: r }) => !a(r) && o.isRendered(r) && e.isRendered(r)),
+                        c =
+                            i.length > 0
+                                ? l(i, (e, r) => {
+                                      const a = o.getForItem(e.id),
+                                          l = o.getForItem(r.id);
+                                      return t(d, a, l) || n(s, a, l);
                                   })
                                 : null;
-                    return s && s.id;
+                    return c && c.id;
                 },
-                c = {
+                i = {
                     initialScrollHeadroom: (e) => e.getRect().getHeight(),
-                    offsetToAnchor: (e, a) => {
-                        const { distanceToViewportBottom: d, distanceToViewportTop: r, id: o } = a;
-                        if ("number" == typeof r) {
-                            const a = e.getForViewport().getTop() + r;
-                            return e.getForItem(o).getTop() - a;
+                    offsetToAnchor: (e, o) => {
+                        const { distanceToViewportBottom: r, distanceToViewportTop: a, id: t } = o;
+                        if ("number" == typeof a) {
+                            const o = e.getForViewport().getTop() + a;
+                            return e.getForItem(t).getTop() - o;
                         }
-                        if ("number" == typeof d) {
-                            const a = e.getForViewport().getBottom() + d;
-                            return e.getForItem(o).getBottom() - a;
+                        if ("number" == typeof r) {
+                            const o = e.getForViewport().getBottom() + r;
+                            return e.getForItem(t).getBottom() - o;
                         }
                         return 0;
                     },
                     scrollHeadroom: (e) => {
-                        const a = e.getForList().getBottom(),
-                            d = e.getForViewport().getBottom();
-                        return Math.max(0, d - a);
+                        const o = e.getForList().getBottom(),
+                            r = e.getForViewport().getBottom();
+                        return Math.max(0, r - o);
                     },
                     anchorCandidates: (e) => {
-                        const a = e.getForViewport().getTop();
+                        const o = e.getForViewport().getTop();
                         return e
                             .findVisibleItems()
-                            .filter(({ id: e }) => !r(e))
-                            .map(({ id: e, rectangle: d }) => ({ id: e, distanceToViewportTop: d.getTop() - a }));
+                            .filter(({ id: e }) => !a(e))
+                            .map(({ id: e, rectangle: r }) => ({ id: e, distanceToViewportTop: r.getTop() - o }));
                     },
                     pinToNewestWhenAtNewest: !1,
-                    offsetCorrection(e, a) {
+                    offsetCorrection(e, o) {
                         if (e.getForViewport().getTop() <= e.getForList().getTop() && this.pinToNewestWhenAtNewest) return 0;
-                        const d = t({ prevPos: e, nextPos: a });
-                        if (d) {
-                            const r = e.getForItem(d).getTop() - e.getForViewport().getTop();
-                            return a.getForItem(d).getTop() - a.getForViewport().getTop() - r;
+                        const r = s({ prevPos: e, nextPos: o });
+                        if (r) {
+                            const a = e.getForItem(r).getTop() - e.getForViewport().getTop();
+                            return o.getForItem(r).getTop() - o.getForViewport().getTop() - a;
                         }
                         return 0;
                     },
                 };
         },
-        751594: (e, a, d) => {
-            d.r(a), d.d(a, { default: () => re });
-            var r = d(459643),
-                o = d(351322),
-                n = d(202784),
-                l = d(674530),
-                i = d(735e3),
-                t = (d(136728), d(392237)),
-                c = d(457311),
-                s = d(332920),
-                u = d.n(s),
-                p = d(516951),
-                b = d(807896),
-                D = d(154003),
-                h = d(731708),
-                m = d(174326),
-                S = d(73664),
-                A = d(725516);
-            const y = ({ onSelect: e, pillGroups: a, position: d, selectedPillGroup: r }) => {
-                    const o = a[d],
-                        l = (0, A.z)(),
-                        i = n.useRef(null),
-                        t = n.useRef(0),
-                        c = (0, S.R)(i);
+        751594: (e, o, r) => {
+            r.r(o), r.d(o, { default: () => ae });
+            var a = r(459643),
+                t = r(351322),
+                n = r(202784),
+                d = r(674530),
+                l = r(735e3),
+                s = (r(136728), r(392237)),
+                i = r(457311),
+                c = r(111677),
+                u = r.n(c),
+                m = r(516951),
+                p = r(807896),
+                h = r(154003),
+                D = r(731708),
+                M = r(174326),
+                y = r(73664),
+                g = r(725516);
+            const f = ({ onSelect: e, pillGroups: o, position: r, selectedPillGroup: a }) => {
+                    const t = o[r],
+                        d = (0, g.z)(),
+                        l = n.useRef(null),
+                        s = n.useRef(0),
+                        i = (0, y.R)(l);
                     n.useEffect(() => {
-                        c && ((t.current += 1), 1 === t.current && l.scribe({ action: "impression", element: "topic_pill", data: { module_id: o, position: d } }));
-                    }, [l, c, o, d]);
-                    const s = n.useCallback(() => {
-                        l.scribe({ action: "click", element: "topic_pill", data: { module_id: o, position: d } }), e(o);
-                    }, [l, e, o, d]);
-                    return n.createElement(D.ZP, { onClick: s, ref: i, type: r === o ? "primaryFilled" : "primaryOutlined" }, n.createElement(h.ZP, null, o));
+                        i && ((s.current += 1), 1 === s.current && d.scribe({ action: "impression", element: "topic_pill", data: { module_id: t, position: r } }));
+                    }, [d, i, t, r]);
+                    const c = n.useCallback(() => {
+                        d.scribe({ action: "click", element: "topic_pill", data: { module_id: t, position: r } }), e(t);
+                    }, [d, e, t, r]);
+                    return n.createElement(h.ZP, { onClick: c, ref: l, type: a === t ? "primaryFilled" : "primaryOutlined" }, n.createElement(D.ZP, null, t));
                 },
-                M = (e) => {
-                    const { pillGroups: a } = e;
-                    return a.length
+                w = (e) => {
+                    const { pillGroups: o } = e;
+                    return o.length
                         ? n.createElement(
-                              m.Z,
-                              { childrenStyle: w.buttons, style: w.container },
-                              a.map((a, d) => n.createElement(y, (0, b.Z)({ key: d }, e, { position: d }))),
+                              M.Z,
+                              { childrenStyle: P.buttons, style: P.container },
+                              o.map((o, r) => n.createElement(f, (0, p.Z)({ key: r }, e, { position: r }))),
                           )
                         : null;
                 },
-                w = t.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, buttons: { marginHorizontal: e.spaces.space2 } }));
-            var f = d(325686),
-                g = d(143778),
-                P = d(443781);
-            const v = n.createContext(Object.create(P.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: l.m.Carousel }))),
-                I = v;
-            var B = d(332878);
-            const k = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: a = B.Z, identityFunction: d, items: r, minimumOffscreenToViewportRatio: o = 0, nearEndProximityRatio: i = 0, nearStartProximityRatio: t = 0, noItemsRenderer: c = g.Z, preferredOffscreenToViewportRatio: s = 0, onAtEnd: u = p.Z, onAtStart: b = p.Z, onNearEnd: D = p.Z, onNearStart: h = p.Z, onPositionRestored: S = p.Z, renderer: y }, M) => {
-                    const { gap: w, horizontalPadding: P, numRowsFromMetadata: I, scrollerDisplayType: k = l.m.Carousel } = n.useContext(v),
-                        R = I || T(r.length, k),
-                        E = n.useRef(0),
-                        Z = (0, A.z)();
-                    n.useImperativeHandle(M, () => ({ isAtNewest: () => !0, scrollToNewest: () => (0, p.Z)(), adjustFocusBy: (e) => (0, p.Z)() }));
-                    const C = n.useMemo(() => {
+                P = s.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, buttons: { marginHorizontal: e.spaces.space2 } }));
+            var b = r(325686),
+                A = r(143778),
+                I = r(443781);
+            const k = n.createContext(Object.create(I.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: d.m.Carousel }))),
+                T = k;
+            var R = r(332878);
+            const E = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: o = R.Z, identityFunction: r, items: a, minimumOffscreenToViewportRatio: t = 0, nearEndProximityRatio: l = 0, nearStartProximityRatio: s = 0, noItemsRenderer: i = A.Z, preferredOffscreenToViewportRatio: c = 0, onAtEnd: u = m.Z, onAtStart: p = m.Z, onNearEnd: h = m.Z, onNearStart: D = m.Z, onPositionRestored: y = m.Z, renderer: f }, w) => {
+                    const { gap: P, horizontalPadding: I, numRowsFromMetadata: T, scrollerDisplayType: E = d.m.Carousel } = n.useContext(k),
+                        S = T || Z(a.length, E),
+                        C = n.useRef(0),
+                        F = (0, g.z)();
+                    n.useImperativeHandle(w, () => ({ isAtNewest: () => !0, scrollToNewest: () => (0, m.Z)(), adjustFocusBy: (e) => (0, m.Z)() }));
+                    const v = n.useMemo(() => {
                             const e = [];
-                            for (let a = 0, o = 0; a < r.length; a += R, o++) {
-                                const l = r.slice(a, a + R),
-                                    i = n.createElement(
-                                        f.Z,
-                                        { key: o },
-                                        l.map((e) => n.createElement(n.Fragment, { key: d(e) }, y(e))),
+                            for (let o = 0, t = 0; o < a.length; o += S, t++) {
+                                const d = a.slice(o, o + S),
+                                    l = n.createElement(
+                                        b.Z,
+                                        { key: t },
+                                        d.map((e) => n.createElement(n.Fragment, { key: r(e) }, f(e))),
                                     );
-                                e.push(i);
+                                e.push(l);
                             }
-                            return (E.current = e.length), e;
-                        }, [d, r, R, y]),
-                        F = n.useCallback(
-                            ({ index: e, intersectionRatio: a }) => {
-                                e === E.current - 1 && 1 === a && Z.scribeAction("reached_end");
-                            },
-                            [Z],
-                        ),
+                            return (C.current = e.length), e;
+                        }, [r, a, S, f]),
                         G = n.useCallback(
-                            ({ next: e, previous: a }) => {
-                                a > e ? Z.scribeAction("scroll_left") : a < e && Z.scribeAction("scroll_right");
+                            ({ index: e, intersectionRatio: o }) => {
+                                e === C.current - 1 && 1 === o && F.scribeAction("reached_end");
                             },
-                            [Z],
+                            [F],
+                        ),
+                        H = n.useCallback(
+                            ({ next: e, previous: o }) => {
+                                o > e ? F.scribeAction("scroll_left") : o < e && F.scribeAction("scroll_right");
+                            },
+                            [F],
                         );
-                    return r.length ? n.createElement(m.Z, { buttonsContainerStyle: { gap: w, paddingHorizontal: P }, onScroll: G, onVisibleRangeChange: F }, C) : c();
+                    return a.length ? n.createElement(M.Z, { buttonsContainerStyle: { gap: P, paddingHorizontal: I }, onScroll: H, onVisibleRangeChange: G }, v) : i();
                 }),
-                T = (e, a) => (a === l.m.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1),
-                R = k;
-            var E = d(523561),
-                Z = d(195560);
-            const C = (0, E.Z)({
+                Z = (e, o) => (o === d.m.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1),
+                S = E;
+            var C = r(523561),
+                F = r(195560);
+            const v = (0, C.Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1d6161e2"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c7141d9"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-87641eae"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-10bcc2eb"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2569c2fe"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0ad0de7e"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-abb249de"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                        d.e("ondemand.CarouselScroller"),
-                    ]).then(d.bind(d, 153841)),
-                renderPlaceholder: (e, a) => n.createElement(Z.Z, { hasError: e, onRetry: a }),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                        r.e("ondemand.CarouselScroller"),
+                    ]).then(r.bind(r, 153841)),
+                renderPlaceholder: (e, o) => n.createElement(F.Z, { hasError: e, onRetry: o }),
             });
-            var F = d(262785),
-                G = d(768572),
-                H = d(87063),
-                V = d(371277),
-                _ = d(769471),
-                x = d(962741),
-                z = d(263863),
-                K = d(801184),
-                N = d(269011),
-                O = d(335632);
+            var G = r(262785),
+                H = r(768572),
+                V = r(87063),
+                _ = r(371277),
+                x = r(769471),
+                z = r(962741),
+                B = r(263863),
+                K = r(801184),
+                N = r(269011),
+                O = r(335632);
             const L = u().afb4c24a,
                 j = u().fdd81500;
             class W extends n.Component {
@@ -249,32 +214,32 @@
                             if (void 0 === this.state.selectedPillGroup) return e;
                             return this.itemsByPillGroup.get(this.state.selectedPillGroup) ?? e;
                         }),
-                        (this.getGap = (e) => ("Media" === e[0]?.content.displayType ? t.default.theme.spacesPx.space16 : "MediaShort" === e[0]?.content.displayType ? t.default.theme.spacesPx.space8 : void 0)),
+                        (this.getGap = (e) => ("Media" === e[0]?.content.displayType ? s.default.theme.spacesPx.space16 : "MediaShort" === e[0]?.content.displayType ? s.default.theme.spacesPx.space8 : void 0)),
                         (this.getHorizontalPadding = (e) => {
-                            if ("Media" === e[0]?.content.displayType || "MediaShort" === e[0]?.content.displayType) return t.default.theme.componentDimensions.gutterHorizontalPx;
+                            if ("Media" === e[0]?.content.displayType || "MediaShort" === e[0]?.content.displayType) return s.default.theme.componentDimensions.gutterHorizontalPx;
                         });
-                    const { items: a } = this.props,
-                        d = new Map();
-                    a.forEach((e) => {
-                        const a = e.pill_group;
-                        if (void 0 === a) return;
-                        const r = d.get(a);
-                        r ? r.push(e) : d.set(a, [e]);
+                    const { items: o } = this.props,
+                        r = new Map();
+                    o.forEach((e) => {
+                        const o = e.pill_group;
+                        if (void 0 === o) return;
+                        const a = r.get(o);
+                        a ? a.push(e) : r.set(o, [e]);
                     }),
-                        (this.itemsByPillGroup = d),
-                        (this.pillGroups = Array.from(d.keys())),
+                        (this.itemsByPillGroup = r),
+                        (this.pillGroups = Array.from(r.keys())),
                         (this.state = { selectedPillGroup: this.pillGroups.length ? this.pillGroups[0] : void 0 });
                 }
                 render() {
-                    const { applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, module: r, moduleEntryId: o, numRowsFromMetadata: i, perfKey: t, renderEmptyState: c, richScribeAction: s, scrollerDisplayType: u } = this.props,
-                        b = this.getEntriesToRender(),
-                        D = this.getGap(b),
-                        h = this.getHorizontalPadding(b);
+                    const { applyReactionInstructions: e, canRefresh: o, dismissedEntries: r, module: a, moduleEntryId: t, numRowsFromMetadata: l, perfKey: s, renderEmptyState: i, richScribeAction: c, scrollerDisplayType: u } = this.props,
+                        p = this.getEntriesToRender(),
+                        h = this.getGap(p),
+                        D = this.getHorizontalPadding(p);
                     return n.createElement(
-                        I.Provider,
-                        { value: { gap: D, horizontalPadding: h, numRowsFromMetadata: i, scrollerDisplayType: u, ...this.context } },
+                        T.Provider,
+                        { value: { gap: h, horizontalPadding: D, numRowsFromMetadata: l, scrollerDisplayType: u, ...this.context } },
                         this.pillGroups.length > 1 && this.state.selectedPillGroup
-                            ? n.createElement(M, {
+                            ? n.createElement(w, {
                                   onSelect: (e) => {
                                       this.setState({ selectedPillGroup: e });
                                   },
@@ -282,34 +247,34 @@
                                   selectedPillGroup: this.state.selectedPillGroup,
                               })
                             : null,
-                        n.createElement(V.Z, { dismissedEntries: d, entries: this.getEntriesToRender(), entryConfiguration: (0, _.Z)({}, (0, O.G)({}), { [x.ZP.Tweet]: { handlers: { [z.Z.Media]: (0, K.mG)({ isCarouselItem: !0 }), [z.Z.MediaShort]: (0, K.UM)({ isCarouselItem: !0 }) } }, [x.ZP.User]: (0, N.Z)({ isCarouselItem: !0 }) }), perfKey: t }, (d, i) => n.createElement(G.ZP, { identifier: o }, n.createElement(F.Z, { applyReactionInstructions: e, canRefresh: a, clearActiveCover: p.Z, entries: i, handlerRegistry: d, initialFetchStatus: H.Z.LOADED, key: this.state.selectedPillGroup, module: r, onAtTop: p.Z, onRef: p.Z, perfKey: t, processCallback: p.Z, refreshControl: null, removeAlert: p.Z, renderEmptyState: c, richScribeAction: s, scroller: u === l.m.PagedCarousel ? C : R, timelineId: o, title: j, withKeyboardShortcuts: !1 }))),
+                        n.createElement(_.Z, { dismissedEntries: r, entries: this.getEntriesToRender(), entryConfiguration: (0, x.Z)({}, (0, O.G)({}), { [z.ZP.Tweet]: { handlers: { [B.Z.Media]: (0, K.mG)({ isCarouselItem: !0 }), [B.Z.MediaShort]: (0, K.UM)({ isCarouselItem: !0 }) } }, [z.ZP.User]: (0, N.Z)({ isCarouselItem: !0 }) }), perfKey: s }, (r, l) => n.createElement(H.ZP, { identifier: t }, n.createElement(G.Z, { applyReactionInstructions: e, canRefresh: o, clearActiveCover: m.Z, entries: l, handlerRegistry: r, initialFetchStatus: V.Z.LOADED, key: this.state.selectedPillGroup, module: a, onAtTop: m.Z, onRef: m.Z, perfKey: s, processCallback: m.Z, refreshControl: null, removeAlert: m.Z, renderEmptyState: i, richScribeAction: c, scroller: u === d.m.PagedCarousel ? v : S, timelineId: t, title: j, withKeyboardShortcuts: !1 }))),
                     );
                 }
             }
-            (W.contextType = P.rC), (W.defaultProps = { renderEmptyState: () => n.createElement(c.Z, { message: L }), scrollerDisplayType: l.m.Vertical });
+            (W.contextType = I.rC), (W.defaultProps = { renderEmptyState: () => n.createElement(i.Z, { message: L }), scrollerDisplayType: d.m.Vertical });
             const U = W;
-            var q = d(668214),
-                J = d(481242);
-            const Q = (e, { module: a }) => a.selectCanRefresh(e),
-                X = (e, { module: a }) => a.selectDismissedEntries(e),
-                Y = (e, { module: a }) => a.perfKey,
+            var q = r(668214),
+                J = r(481242);
+            const Q = (e, { module: o }) => o.selectCanRefresh(e),
+                X = (e, { module: o }) => o.selectDismissedEntries(e),
+                Y = (e, { module: o }) => o.perfKey,
                 $ = (0, q.Z)()
                     .propsFromState(() => ({ canRefresh: Q, dismissedEntries: X, perfKey: Y }))
                     .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, richScribeAction: J.richScribeAction })),
-                ee = (0, i.o)(),
-                ae = ({ applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, entry: r, module: o, perfKey: i, richScribeAction: t }) => {
+                ee = (0, l.o)(),
+                oe = ({ applyReactionInstructions: e, canRefresh: o, dismissedEntries: r, entry: a, module: t, perfKey: l, richScribeAction: s }) => {
                     const {
-                            content: { displayType: c, items: s = ee },
+                            content: { displayType: i, items: c = ee },
                             entryId: u,
-                            itemMetadata: p,
-                        } = r,
-                        b = c,
-                        D = b === l.m.GridCarousel ? p.moduleMetadata?.gridCarouselMetadata?.numRows : void 0;
-                    return n.createElement(U, { applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, items: s, module: o, moduleEntryId: u, numRowsFromMetadata: D, perfKey: i, richScribeAction: t, scrollerDisplayType: b });
+                            itemMetadata: m,
+                        } = a,
+                        p = i,
+                        h = p === d.m.GridCarousel ? m.moduleMetadata?.gridCarouselMetadata?.numRows : void 0;
+                    return n.createElement(U, { applyReactionInstructions: e, canRefresh: o, dismissedEntries: r, items: c, module: t, moduleEntryId: u, numRowsFromMetadata: h, perfKey: l, richScribeAction: s, scrollerDisplayType: p });
                 },
-                de = $(n.memo(ae)),
-                re = o.iH({ component: de, isFocusable: (0, r.Z)(!0) }).getHandler();
+                re = $(n.memo(oe)),
+                ae = t.iH({ component: re, isFocusable: (0, a.Z)(!0) }).getHandler();
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.6bc6e3ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.7b7a19ba.js.map

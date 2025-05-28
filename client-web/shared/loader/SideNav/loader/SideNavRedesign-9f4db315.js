@@ -21,7 +21,7 @@
         464097: (e, t, i) => {
             i.d(t, { Z: () => b });
             var a = i(202784),
-                r = i(332920),
+                r = i(111677),
                 o = i.n(r),
                 s = i(186444),
                 n = i(379327),
@@ -69,7 +69,7 @@
         166677: (e, t, i) => {
             i.d(t, { $r: () => K, O9: () => W, ZP: () => q, vK: () => J });
             var a = i(688715),
-                r = i(332920),
+                r = i(111677),
                 o = i.n(r),
                 s = i(653843),
                 n = i(122123),
@@ -524,7 +524,7 @@
                 o = i.n(r),
                 s = i(10622),
                 n = i.n(s),
-                d = i(332920),
+                d = i(111677),
                 l = i.n(d),
                 u = i(205074),
                 c = i(653843),
@@ -974,4 +974,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-9f4db315.4331d25a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-9f4db315.18d34fda.js.map

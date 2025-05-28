@@ -1,37 +1,37 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose"],
     {
-        743506: (e) => {
+        164918: (e) => {
             e.exports = { queryId: "QEMLEzEMzoPNbeauKCCLbg", operationName: "SetDefault", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        24492: (e) => {
+        795357: (e) => {
             e.exports = { queryId: "VaaLGwK5KNLoc7wsOmp4uw", operationName: "DeletePaymentMethod", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        795426: (e) => {
+        814142: (e) => {
             e.exports = { queryId: "mPF_G9okpbZuLcD6mN8K9g", operationName: "PaymentMethods", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        333279: (e) => {
+        903860: (e) => {
             e.exports = { queryId: "a8KxGfFQAmm3WxqemuqSRA", operationName: "AdAccounts", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        929204: (e) => {
+        859096: (e) => {
             e.exports = { queryId: "1LYVUabJBYkPlUAWRabB3g", operationName: "AudienceEstimate", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        207783: (e) => {
+        356886: (e) => {
             e.exports = { queryId: "hiAXpFX4zFb6vOvGctGYyQ", operationName: "BoostAudienceEstimate", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        772921: (e) => {
+        891742: (e) => {
             e.exports = { queryId: "mbK3oSQotwcJXyQIBE3uYw", operationName: "Budgets", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        479904: (e) => {
+        39022: (e) => {
             e.exports = { queryId: "R1h43jnAl2bsDoUkgZb7NQ", operationName: "Coupons", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        737493: (e) => {
+        720584: (e) => {
             e.exports = { queryId: "oDSoVgHhJxnd5IkckgPZdg", operationName: "CreateQuickPromotion", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        110136: (e) => {
+        127498: (e) => {
             e.exports = { queryId: "LtpCXh66W-uXh7u7XSRA8Q", operationName: "QuickPromoteEligibility", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        516117: (e) => {
+        959909: (e) => {
             e.exports = { queryId: "SOyGmNGaEXcvk15s5bqDrA", operationName: "EnrollCoupon", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         321099: (e, t, o) => {
@@ -40,27 +40,27 @@
             o(136728);
             var r = o(401388),
                 n = o(414742),
-                a = o(743506),
+                a = o(164918),
                 i = o.n(a),
-                c = o(24492),
+                c = o(795357),
                 u = o.n(c),
-                s = o(795426),
+                s = o(814142),
                 l = o.n(s),
-                d = o(333279),
+                d = o(903860),
                 p = o.n(d),
-                g = o(929204),
+                g = o(859096),
                 _ = o.n(g),
-                m = o(207783),
+                m = o(356886),
                 y = o.n(m),
-                b = o(772921),
+                b = o(891742),
                 h = o.n(b),
-                A = o(479904),
+                A = o(39022),
                 E = o.n(A),
-                f = o(737493),
+                f = o(720584),
                 k = o.n(f),
-                P = o(110136),
+                P = o(127498),
                 S = o.n(P),
-                w = o(516117),
+                w = o(959909),
                 v = o.n(w);
             const C = ({ apiClient: e, featureSwitches: t }) => ({
                     getQuickPromoteEligibility: (t) =>
@@ -489,7 +489,7 @@
             "use strict";
             o.d(t, { kb: () => V, gp: () => ue, br: () => ie, Ek: () => ee, WS: () => ne, Lm: () => W, fN: () => ae, c7: () => re, qL: () => j, E6: () => X, Jk: () => J, tN: () => H, oE: () => Y, sN: () => oe, $L: () => se, LK: () => K });
             o(136728), o(571372);
-            var r = o(332920),
+            var r = o(111677),
                 n = o.n(r),
                 a = o(852657);
             const i = ["ar", "da", "de", "en", "es", "fi", "fil", "fr", "id", "it", "ja", "ko", "nl", "no", "pt", "ru", "sv", "th", "tr", "zh-cn", "zh-tw"];
@@ -971,4 +971,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose.592ea45a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose.37d3a41a.js.map

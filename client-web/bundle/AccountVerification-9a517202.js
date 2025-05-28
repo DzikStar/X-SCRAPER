@@ -54,7 +54,7 @@
                 E = i(325686),
                 a = i(731708),
                 I = i(154003),
-                r = i(332920),
+                r = i(111677),
                 N = i.n(r),
                 p = i(555079),
                 T = i(316325),
@@ -134,7 +134,7 @@
                 p = i(96083),
                 T = i(154003),
                 s = i(392237),
-                o = i(332920),
+                o = i(111677),
                 n = i.n(o),
                 _ = i(161821),
                 A = i(665285),
@@ -746,4 +746,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-9a517202.5375f77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-9a517202.02031efa.js.map

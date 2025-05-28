@@ -3,7 +3,7 @@
     ["bundle.Payments-d60a37be"],
     {
         43429: (e, t, n) => {
-            n.d(t, { $W: () => r, DH: () => g, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => i, ah: () => c, cX: () => l, dX: () => u, hv: () => _, ic: () => a, q9: () => f, uc: () => p, w8: () => s, wC: () => d, wG: () => h });
+            n.d(t, { $W: () => r, DH: () => g, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => i, ah: () => c, cX: () => l, dX: () => u, hv: () => p, ic: () => a, q9: () => f, uc: () => _, w8: () => s, wC: () => d, wG: () => h });
             n(202784);
             const a = 25,
                 r = "xpayments-preset-all",
@@ -16,8 +16,8 @@
                 u = Object.freeze({ bank: "bank", card: "card", x: "x" }),
                 m = 4e3,
                 h = 4,
-                p = "https://money.x.com/articles/terms-and-conditions",
-                _ = "https://money.x.com/articles/privacy-policy",
+                _ = "https://money.x.com/articles/terms-and-conditions",
+                p = "https://money.x.com/articles/privacy-policy",
                 g = "https://money.x.com/articles/short-form-disclosure",
                 f = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
                 y = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
@@ -54,8 +54,8 @@
                 u = n(441484),
                 m = n(725516),
                 h = n(43429),
-                p = n(727384),
-                _ = n(413722),
+                _ = n(727384),
+                p = n(413722),
                 g = n(980407),
                 f = n(56495),
                 y = n(10622),
@@ -70,8 +70,8 @@
                                 n = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.error;
                             return { id: t?.id, error: n, verified: !!t?.verified };
                         });
-            var C = n(325686),
-                w = n(731708),
+            var w = n(325686),
+                C = n(731708),
                 k = n(855488),
                 I = n(154003),
                 Z = n(167630),
@@ -94,14 +94,14 @@
                         a.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-app", action: "impression" });
                         }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: i.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(C.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(Z.Z, null) : "Next")))
+                        a.createElement(a.Fragment, null, a.createElement(w.Z, { style: i.container }, a.createElement(C.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(w.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(Z.Z, null) : "Next")))
                     );
                 },
                 T = { context: "TwoFactorAppCode" };
-            function q(e) {
+            function F(e) {
                 return a.createElement(i.H, { errorConfig: T }, a.createElement(S, e));
             }
-            const F = a.memo(q),
+            const q = a.memo(F),
                 A = ({ onClose: e, onSubmit: t }) => {
                     const n = (0, m.z)(),
                         [r, s] = a.useState(""),
@@ -120,14 +120,14 @@
                         a.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-backup", action: "impression" });
                         }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: i.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(C.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(Z.Z, null) : "Next")))
+                        a.createElement(a.Fragment, null, a.createElement(w.Z, { style: i.container }, a.createElement(C.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(w.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(Z.Z, null) : "Next")))
                     );
                 },
-                R = { context: "TwoFactorBackupCode" };
-            function x(e) {
-                return a.createElement(i.H, { errorConfig: R }, a.createElement(A, e));
+                x = { context: "TwoFactorBackupCode" };
+            function R(e) {
+                return a.createElement(i.H, { errorConfig: x }, a.createElement(A, e));
             }
-            const H = a.memo(x),
+            const H = a.memo(R),
                 N = ({ error: e, onClose: t }) => {
                     const n = (0, m.z)(),
                         r = (0, E.jh)();
@@ -135,7 +135,7 @@
                         a.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-notsupported", action: "impression" });
                         }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: r.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "We were unable to verify you"), a.createElement(w.ZP, { color: "gray700" }, e)))
+                        a.createElement(a.Fragment, null, a.createElement(w.Z, { style: r.container }, a.createElement(C.ZP, { size: "title3", weight: "bold" }, "We were unable to verify you"), a.createElement(C.ZP, { color: "gray700" }, e)))
                     );
                 },
                 z = { context: "TwoFactorNotSupported" };
@@ -160,7 +160,7 @@
                                 r({ text: O.Kh }), t();
                             });
                     }, [r, e, t, n]),
-                    (0, O.iW)() ? a.createElement(Z.Z, null) : a.createElement(w.ZP, { align: "center" }, O.z_)
+                    (0, O.iW)() ? a.createElement(Z.Z, null) : a.createElement(C.ZP, { align: "center" }, O.z_)
                 );
             }
             const U = ({ onClose: e, onSubmit: t }) => {
@@ -181,7 +181,7 @@
                         a.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-sms", action: "impression" });
                         }, [n]),
-                        a.createElement(a.Fragment, null, a.createElement(C.Z, { style: i.container }, a.createElement(w.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(C.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(Z.Z, null) : "Next")))
+                        a.createElement(a.Fragment, null, a.createElement(w.Z, { style: i.container }, a.createElement(C.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), a.createElement(k.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: E.ZP.paddingNone, testID: "code", type: "password", value: r })), a.createElement(w.Z, { style: i.footer }, a.createElement(I.ZP, { disabled: !r || o, onPress: l, size: "large", type: "primaryFilled" }, o ? a.createElement(Z.Z, null) : "Next")))
                     );
                 },
                 W = { context: "TwoFactorSms" };
@@ -192,20 +192,20 @@
             var $ = n(800697),
                 B = n(482924);
             const G = $.Z,
-                X = ({ challengeId: e }) => {
+                Q = ({ challengeId: e }) => {
                     const { data: t } = (0, B.A)(G, { challengeId: e }, { fetchPolicy: "network-only" }),
                         n = t?.viewer_v2?.xp_start_two_factor_auth_challenge;
                     if (!n) return {};
                     const { error: a, login_request: r } = n;
                     return { error: a, ...(r && { challenge: r.challenge, loginRequestId: r.id, twoFactor: { id: r.two_factor_auth_method.id, type: r.two_factor_auth_method.two_factor_type }, verified: !!r.verified }) };
                 },
-                J = "Please try again later or contact support team.",
-                K = "The request expired, try again.",
-                Q = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
-                Y = "Too many attempts, try again later.",
-                ee = { DuplicatedRenameTwoFactorMethodDisplayName: Q, ExpiredLoginVerification: K, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: Q, InvalidRenameTwoFactorMethodDisplayName: Q, LoginVerificationUserReactivationRequired: Q, NoSecretForUser: Q, NoTwoFactorAuthMethod: Q, NotAllowed: Q, NotValidForTokenExchange: Q, NotYetApprovedLoginVerification: Q, OfflineCodeSync: Q, OverLoginVerificationAttemptLimit: Y, OverLoginVerificationConvertLimit: Y, OverResendLimit: Y, SmsOverPerUserLimit: Y, TwoFactorAuthMethodExpired: K, FailureSendingLoginVerificationRequest: J, OverLoginVerificationStartLimit: Y, SmsVerPerUserLimit: Y, TwoFactorAuthMethodDoesNotExist: Q },
+                X = "Please try again later or contact support team.",
+                Y = "The request expired, try again.",
+                J = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
+                K = "Too many attempts, try again later.",
+                ee = { DuplicatedRenameTwoFactorMethodDisplayName: J, ExpiredLoginVerification: Y, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: J, InvalidRenameTwoFactorMethodDisplayName: J, LoginVerificationUserReactivationRequired: J, NoSecretForUser: J, NoTwoFactorAuthMethod: J, NotAllowed: J, NotValidForTokenExchange: J, NotYetApprovedLoginVerification: J, OfflineCodeSync: J, OverLoginVerificationAttemptLimit: K, OverLoginVerificationConvertLimit: K, OverResendLimit: K, SmsOverPerUserLimit: K, TwoFactorAuthMethodExpired: Y, FailureSendingLoginVerificationRequest: X, OverLoginVerificationStartLimit: K, SmsVerPerUserLimit: K, TwoFactorAuthMethodDoesNotExist: J },
                 te = ({ challengeId: e, isNonModalScreen: t, onSuccess: n }) => {
-                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = X({ challengeId: e }),
+                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = Q({ challengeId: e }),
                         u = (0, o.useHistory)(),
                         h = (0, l.p)(),
                         f = u.location?.state,
@@ -220,19 +220,19 @@
                                     ? P({ environment: y, challengeId: e, loginRequestId: i, challengeResponse: t })
                                           .then((e) => {
                                               const { error: t, id: a, verified: r } = e;
-                                              return a === i && r ? n({ loginRequestId: i }) : t && h({ text: ee[t] ?? J }), e;
+                                              return a === i && r ? n({ loginRequestId: i }) : t && h({ text: ee[t] ?? X }), e;
                                           })
                                           .catch(() => {
-                                              h({ text: J });
+                                              h({ text: X });
                                           })
                                     : Promise.resolve(),
                             [i, y, e, n, h],
                         ),
-                        { challengeInitiator: C, closePath: w } = f ?? {},
+                        { challengeInitiator: w, closePath: C } = f ?? {},
                         k = a.useCallback(() => {
-                            (0, p.qc)({ environment: y, closePath: w, challengeInitiator: C, history: u });
-                        }, [C, w, y, u]),
-                        I = a.useMemo(() => (d?.type === _.O.BackupCode ? a.createElement(H, { onClose: k, onSubmit: v }) : r && d?.type === _.O.Passkey ? a.createElement(L, { challenge: r, onClose: k, onSubmit: v }) : d?.type === _.O.Sms ? a.createElement(V, { onClose: k, onSubmit: v }) : d?.type === _.O.Totp ? a.createElement(F, { onClose: k, onSubmit: v }) : a.createElement(D, { error: c ? (ee[c] ?? J) : J, onClose: k })), [r, c, k, v, d?.type]);
+                            (0, _.qc)({ environment: y, closePath: C, challengeInitiator: w, history: u });
+                        }, [w, C, y, u]),
+                        I = a.useMemo(() => (d?.type === p.O.BackupCode ? a.createElement(H, { onClose: k, onSubmit: v }) : r && d?.type === p.O.Passkey ? a.createElement(L, { challenge: r, onClose: k, onSubmit: v }) : d?.type === p.O.Sms ? a.createElement(V, { onClose: k, onSubmit: v }) : d?.type === p.O.Totp ? a.createElement(q, { onClose: k, onSubmit: v }) : a.createElement(D, { error: c ? (ee[c] ?? X) : X, onClose: k })), [r, c, k, v, d?.type]);
                     return a.createElement(g.Z, { backButtonType: "close", history: u, isFullWidth: t, onBackClick: k }, I);
                 },
                 ne = { context: "VerifyTwoFactorAuth" };
@@ -247,28 +247,28 @@
                 le = ({ challengeId: e, challengeInitiator: t, onSuccess: n }) => {
                     const r = (0, o.useHistory)(),
                         i = (0, m.z)(),
-                        _ = (0, l.p)(),
+                        p = (0, l.p)(),
                         g = r.location?.state,
-                        { challengeId: f, challengeInitiator: y, closePath: b, message: v, recordId: P, redirectPath: C, redirectState: w, successMessage: k } = g ?? {},
+                        { challengeId: f, challengeInitiator: y, closePath: b, message: v, recordId: P, redirectPath: w, redirectState: C, successMessage: k } = g ?? {},
                         [I, Z] = a.useState(e ?? f),
                         E = t ?? y,
                         [S, T] = a.useState(v ?? h.q9.initiate),
-                        [q, F] = a.useState(),
-                        [A, R] = a.useState(!1),
-                        x = s()(),
+                        [F, q] = a.useState(),
+                        [A, x] = a.useState(!1),
+                        R = s()(),
                         H = E === d.kW.auth,
                         N = (E ? ce[E] : void 0) ?? d.P_.challenge,
                         z = ie.includes(E),
                         M = (E ? oe[E] : void 0) ?? k,
                         D = a.useCallback((e) => {
-                            F(e.loginRequestId), T(h.q9.complete2fa), R(!1);
+                            q(e.loginRequestId), T(h.q9.complete2fa), x(!1);
                         }, []),
                         O = a.useCallback(
                             (e) => {
                                 const { authStatus: t, challengeId: a, message: s } = e.data;
                                 switch (s) {
                                     case se.T.success:
-                                        H && 1 === t && u.Z.updateSessionStatus(c.c.Active), P ? (0, p.Se)(x, P) : E === d.kW.activateCard ? (0, p.uN)(x) : (0, p.J$)(x), C ? r.replace(C, w) : n ? n() : r.goBack(), M && _({ text: M });
+                                        H && 1 === t && u.Z.updateSessionStatus(c.c.Active), P ? (0, _.Se)(R, P) : E === d.kW.activateCard ? (0, _.uN)(R) : (0, _.J$)(R), w ? r.replace(w, C) : n ? n() : r.goBack(), M && p({ text: M });
                                         break;
                                     case se.T.docvChallenge:
                                         r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeInitiator: E });
@@ -280,7 +280,7 @@
                                         r.replace(d.AU.selfie.verifyIdentityPath, { ...g, challengeInitiator: E });
                                         break;
                                     case se.T.twoFactorChallenge:
-                                        Z(a), R(!0);
+                                        Z(a), x(!0);
                                         break;
                                     case se.T.forgotPin:
                                         r.push(d.jR, { challengeInitiator: d.kW.forgotPin });
@@ -289,10 +289,10 @@
                                         H && u.Z.fetchNewSession();
                                         break;
                                     case se.T.close:
-                                        (0, p.qc)({ environment: x, closePath: b, challengeInitiator: E, history: r });
+                                        (0, _.qc)({ environment: R, closePath: b, challengeInitiator: E, history: r });
                                 }
                             },
-                            [H, P, E, C, n, M, r, g, x, b, w, _],
+                            [H, P, E, w, n, M, r, g, R, b, C, p],
                         );
                     a.useEffect(() => {
                         i && i.scribe({ page: "money", section: "verify-challenge", action: "impression" });
@@ -307,7 +307,7 @@
                             [E],
                         );
                     const L = H;
-                    return a.createElement(a.Fragment, null, I && A ? a.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || z ? a.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: A, isNonModalScreen: L, linkType: N, payload: { challengeId: I, loginRequestId: q, message: S }, redirectPath: C, redirectState: w }) : null);
+                    return a.createElement(a.Fragment, null, I && A ? a.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || z ? a.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: A, isNonModalScreen: L, linkType: N, payload: { challengeId: I, loginRequestId: F, message: S }, redirectPath: w, redirectState: C }) : null);
                 },
                 de = { context: "VerifyChallenge" };
             function ue(e) {
@@ -316,7 +316,7 @@
             const me = a.memo(ue);
         },
         160144: (e, t, n) => {
-            n.d(t, { T: () => w, Z: () => S });
+            n.d(t, { T: () => C, Z: () => S });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(202784),
                 r = n(325686),
@@ -329,9 +329,9 @@
                 u = n(980407),
                 m = n(943914),
                 h = n(655352),
-                p = n(163889),
-                _ = n(514639),
-                g = n(412450),
+                _ = n(163889),
+                p = n(514639),
+                g = n(351990),
                 f = n(441484),
                 y = n(99387),
                 b = n(743080),
@@ -346,7 +346,7 @@
                 }
                 static addHandler(e, t) {
                     P.handlers.add(t);
-                    const { isInlineFrame: n } = _.QU[e];
+                    const { isInlineFrame: n } = p.QU[e];
                     (P.activeHandler && n) || P._updateActiveHandler(e, t);
                 }
                 static removeHandler(e, t) {
@@ -357,7 +357,7 @@
                 }
             }
             P.handlers = new Set();
-            const C = ({ allowedOrigin: e, handler: t, linkType: n }) => {
+            const w = ({ allowedOrigin: e, handler: t, linkType: n }) => {
                     const r = a.useCallback(
                         (n) => {
                             n.origin === e && t(n);
@@ -366,63 +366,63 @@
                     );
                     a.useEffect(() => (P.addHandler(n, r), () => P.removeHandler(n, r)), [n, r]);
                 },
-                w = Object.freeze({ changePhone: "change-phone", success: "success", failure: "failure", ineligible: "ineligible", pendingReview: "pending-review", redirect: "redirect", close: "close", ready: "ready", initPorts: "initPorts", invalidChallenge: "invalid-challenge", docvChallenge: "challenge-docv-required", kycChallenge: "challenge-kyc-required", selfieChallenge: "challenge-selfie-required", twoFactorChallenge: "challenge-2fa-required", accountNumbercopiedToClipboard: "account-number-copied-to-clipboard", routingNumbercopiedToClipboard: "routing-number-copied-to-clipboard", edit: "edit", forgotPin: "forgot-pin", kyc: "kyc", stepUpDocv: "stepUpDocv" }),
+                C = Object.freeze({ changePhone: "change-phone", success: "success", failure: "failure", ineligible: "ineligible", pendingReview: "pending-review", redirect: "redirect", close: "close", ready: "ready", initPorts: "initPorts", invalidChallenge: "invalid-challenge", docvChallenge: "challenge-docv-required", kycChallenge: "challenge-kyc-required", selfieChallenge: "challenge-selfie-required", twoFactorChallenge: "challenge-2fa-required", accountNumbercopiedToClipboard: "account-number-copied-to-clipboard", routingNumbercopiedToClipboard: "routing-number-copied-to-clipboard", edit: "edit", forgotPin: "forgot-pin", kyc: "kyc", stepUpDocv: "stepUpDocv" }),
                 k = (0, v.bI)(),
                 I = ({ allowClipboardWrite: e, iframeUrl: t, isBackgroundHidden: n, isInlineFrame: s, isNonModalScreen: o }) => {
                     const d = (0, c.useHistory)(),
-                        [m, _] = a.useState(!1),
+                        [m, p] = a.useState(!1),
                         g = (0, h.ZP)() ? T.paddingSmall : null,
                         f = a.useCallback(() => {
-                            _(!0);
+                            p(!0);
                         }, []),
-                        y = a.createElement(r.Z, { style: n ? T.hide : T.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: f, reportError: p.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : g] : T.hide, title: "Money" })));
-                    return o || s || n ? y : a.createElement(u.Z, { history: d, renderHeader: () => null }, y);
+                        y = a.createElement(r.Z, { style: n ? T.hide : T.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: f, reportError: _.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : g] : T.hide, title: "Money" })));
+                    return o || s || n ? y : a.createElement(u.Z, { history: d, renderHeader: () => null }, a.createElement(r.Z, { style: T.modalContainer }, y));
                 },
                 Z = (e) => {
-                    const { additionalParams: t, linkType: n = _.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: p, challengeId: b } = e,
+                    const { additionalParams: t, linkType: n = p.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: _, challengeId: b } = e,
                         P = (0, c.useHistory)(),
                         { paymentsOrigin: Z } = (0, g.Z)(),
                         E = f.Z.getSession(),
                         S = f.Z.getProviderToken(),
                         T = (0, v.gh)(),
-                        [q, F] = a.useState(!1),
+                        [F, q] = a.useState(!1),
                         A = o()(),
-                        { allowClipboardWrite: R, defaultClosePath: x, invalidateOnClose: H, isInlineFrame: N, path: z, redirectOnCompletion: M } = _.QU[n],
+                        { allowClipboardWrite: x, defaultClosePath: R, invalidateOnClose: H, isInlineFrame: N, path: z, redirectOnCompletion: M } = p.QU[n],
                         D = a.useCallback(
                             (e) => {
                                 const { errors: t, message: n, url: a } = e.data;
                                 switch (n) {
-                                    case w.initPorts: {
+                                    case C.initPorts: {
                                         const t = e.ports?.[0];
                                         t && (u && t.postMessage(u), (t.onmessage = d));
                                         break;
                                     }
-                                    case w.changePhone:
+                                    case C.changePhone:
                                         P.push("/settings/phone");
                                         break;
-                                    case w.success:
-                                        M && F(!0);
+                                    case C.success:
+                                        M && q(!0);
                                         break;
-                                    case w.failure:
-                                        M && P.replace(s ?? _.D$, { errors: t });
+                                    case C.failure:
+                                        M && P.replace(s ?? p.D$, { errors: t });
                                         break;
-                                    case w.ineligible:
-                                        (0, v.J$)(A), P.replace(_.R);
+                                    case C.ineligible:
+                                        (0, v.J$)(A), P.replace(p.R);
                                         break;
-                                    case w.pendingReview:
-                                        (0, v.J$)(A), P.replace(_.vr);
+                                    case C.pendingReview:
+                                        (0, v.J$)(A), P.replace(p.vr);
                                         break;
-                                    case w.redirect:
+                                    case C.redirect:
                                         k && (window.location.href = a);
                                         break;
-                                    case w.close:
-                                        H && (0, v.J$)(A), P.replace(l ?? x);
+                                    case C.close:
+                                        H && (0, v.J$)(A), P.replace(l ?? R);
                                 }
                                 d?.(e);
                             },
-                            [d, P, M, A, H, l, x, u, s],
+                            [d, P, M, A, H, l, R, u, s],
                         );
-                    C({ allowedOrigin: Z, handler: D, linkType: n });
+                    w({ allowedOrigin: Z, handler: D, linkType: n });
                     const O = a.useMemo(() => {
                         if (!E || !Z || !S) return;
                         const e = new Map();
@@ -434,21 +434,21 @@
                                 e.set(
                                     "redirectUrl",
                                     (({ challengeId: e, challengeInitiator: t }) => {
-                                        const n = new URL(`https://${window.location.host}${_.$l}`);
+                                        const n = new URL(`https://${window.location.host}${p.$l}`);
                                         return e && n.searchParams.set("challengeId", e), t && n.searchParams.set("challengeInitiator", t), n.href;
-                                    })({ challengeId: b, challengeInitiator: p }),
+                                    })({ challengeId: b, challengeInitiator: _ }),
                                 ),
                             (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
                         );
-                    }, [E, Z, S, t, z, T, b, p]);
-                    return q ? a.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: R, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: N, isNonModalScreen: m });
+                    }, [E, Z, S, t, z, T, b, _]);
+                    return F ? a.createElement(y.default, { challengeId: b, challengeInitiator: _, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: x, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: N, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
                     return a.createElement(m.B, { fallback: t }, a.createElement(Z, e));
                 },
                 S = a.memo(E),
-                T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" } }));
+                T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px", overflow: "hidden" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" }, modalContainer: { width: 500, height: 600 } }));
         },
         412100: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -708,9 +708,9 @@
                         });
                     }, [u]);
                     const h = t?.check_transfers_eligibility,
-                        p = !!h?.eligible,
-                        { permissions: _, requirements: g, roles: f } = h ?? {};
-                    return { isEligible: e && p, hasLoaded: !m && (!!t || a), requirements: g, roles: f, permissions: _, paymentsRedirectPath: (0, l.rW)({ roles: f, permissions: _ }) };
+                        _ = !!h?.eligible,
+                        { permissions: p, requirements: g, roles: f } = h ?? {};
+                    return { isEligible: e && _, hasLoaded: !m && (!!t || a), requirements: g, roles: f, permissions: p, paymentsRedirectPath: (0, l.rW)({ roles: f, permissions: p }) };
                 };
         },
         934265: (e, t, n) => {
@@ -736,20 +736,40 @@
                 };
         },
         348340: (e, t, n) => {
-            n.d(t, { Z: () => o });
+            n.d(t, { Z: () => l, b: () => c });
+            n(901951);
             var a = n(576751),
-                r = (n(585488), n(482924));
-            const s = a.Z,
-                o = ({ type: e }) => {
-                    const { data: t } = (0, r.A)(s, { document_type: e }),
-                        n = t?.get_payments_documents;
-                    return { documents: n };
+                r = (n(585488), n(698478)),
+                s = n(930196),
+                o = n(727384);
+            const c = (e) => (t) => {
+                    const n = t?.get_payments_documents?.find((t) => {
+                            const n = (0, o.Qu)(t.start_date),
+                                a = `${n.getFullYear()}-${n.getMonth()}`;
+                            return e && a && a === e;
+                        }),
+                        { url: a, url_expiry_time_millis: s } = n ?? {};
+                    (a && s && !(0, r.x5)(s)) || window.open(a, "_blank");
+                },
+                i = a.Z,
+                l = ({ type: e }) => {
+                    const { data: t, refetch: n, refetchStatus: a } = (0, s.d)(i, { document_type: e }),
+                        r = t?.get_payments_documents;
+                    return {
+                        formattedDocuments: r?.reduce((e, t) => {
+                            const n = `${(0, o.Qu)(t.start_date).getFullYear()}`;
+                            let a = e.find((e) => e.year === n);
+                            return a || ((a = { year: n, documents: [] }), e.unshift(a)), a.documents.unshift(t), e;
+                        }, []),
+                        refetch: n,
+                        refetchStatus: a,
+                    };
                 };
         },
         137882: (e, t, n) => {
             n.d(t, { b: () => r, v: () => s });
             n(543673), n(240753), n(128399);
-            var a = n(412450);
+            var a = n(351990);
             const r = ({ txId: e }) => {
                     const { supportUrl: t } = (0, a.Z)(),
                         n = new URL(t);
@@ -837,11 +857,11 @@
                 u = n(482924),
                 m = n(746523),
                 h = n(351743),
-                p = n.n(h),
-                _ = n(727384);
+                _ = n.n(h),
+                p = n(727384);
             const g = m.Z,
                 f = () => {
-                    const [e, t] = p()(g);
+                    const [e, t] = _()(g);
                     return [
                         r.useCallback(
                             ({ preferences: t }) =>
@@ -853,7 +873,7 @@
                                                 s = e?.update_customer_preferences?.challenge_id;
                                             r ? a(r) : n({ challengeId: s });
                                         },
-                                        updater: _.Oc,
+                                        updater: p.Oc,
                                         onError: a,
                                     });
                                 }),
@@ -870,27 +890,27 @@
                         s = (0, i.p)(),
                         m = e?.get_customer?.preferences,
                         h = r.useMemo(() => ({ require_pin_to_create_transactions: !!m?.require_pin_to_create_transactions, require_pin_to_unlock: !!m?.require_pin_to_unlock, enable_bill_pay: !!m?.enable_bill_pay, require_pin_to_link_payment_method: !!m?.require_pin_to_link_payment_method, only_receive_transfer_from_following: !!m?.only_receive_transfer_from_following, only_allow_request_from_following: !!m?.only_allow_request_from_following, enable_card_payments: !!m?.enable_card_payments }), [m]),
-                        [p, _] = r.useState(h),
+                        [_, p] = r.useState(h),
                         [g, v] = f(),
                         P = r.useCallback(
                             (e, t) => {
-                                g({ preferences: { ...p, [e]: t } })
+                                g({ preferences: { ..._, [e]: t } })
                                     .then(({ challengeId: e }) => {
                                         e ? a.push(l.vw, { challengeId: e, successMessage: y, challengeInitiator: l.kW.preference }) : s({ text: y });
                                     })
                                     .catch(() => {
-                                        s({ text: "Something went wrong. Please try again later." }), _((n) => ({ ...n, [e]: !t }));
+                                        s({ text: "Something went wrong. Please try again later." }), p((n) => ({ ...n, [e]: !t }));
                                     });
                             },
-                            [s, g, a, p],
+                            [s, g, a, _],
                         ),
-                        C = r.useCallback(
+                        w = r.useCallback(
                             (e, t) => {
-                                _((n) => ({ ...n, [e]: t })), P(e, t);
+                                p((n) => ({ ...n, [e]: t })), P(e, t);
                             },
                             [P],
                         ),
-                        w = r.useCallback(
+                        C = r.useCallback(
                             (e, t) => {
                                 P(e, t);
                             },
@@ -899,12 +919,12 @@
                         k = e?.get_customer?.__id ?? "get_customer";
                     return (
                         r.useEffect(() => {
-                            n !== d.iF.LOADING && _(h);
+                            n !== d.iF.LOADING && p(h);
                         }, [h, n]),
                         o()([k], () => {
                             t();
                         }),
-                        { preferences: p, refetch: t, refetchStatus: n, handlePreferencesChange: C, handleDeferredPreferencesChange: w, isInProgress: v }
+                        { preferences: _, refetch: t, refetchStatus: n, handlePreferencesChange: w, handleDeferredPreferencesChange: C, isInProgress: v }
                     );
                 };
         },
@@ -949,8 +969,8 @@
                     u = d?.core?.name ?? "",
                     m = parseFloat(n),
                     h = n ? (0, a.p2)({ amount: m, currency: o }) : null,
-                    p = (0, r.Z)({ senderId: d?.rest_id });
-                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: p }), u && h ? { name: u, formattedAmount: h } : null];
+                    _ = (0, r.Z)({ senderId: d?.rest_id });
+                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: _ }), u && h ? { name: u, formattedAmount: h } : null];
             };
         },
         825941: (e, t, n) => {
@@ -1016,4 +1036,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.6889abca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.0095ac5a.js.map

@@ -2,618 +2,407 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.JobSearch-e6266db0"],
     {
-        246851: (e, t, n) => {
-            n.d(t, { Z: () => l });
-            var a = n(202784);
-            function l(e) {
-                const t = a.useRef();
+        246851: (e, a, n) => {
+            n.d(a, { Z: () => r });
+            var o = n(202784);
+            function r(e) {
+                const a = o.useRef();
                 return (
-                    a.useEffect(() => {
-                        t.current = e;
+                    o.useEffect(() => {
+                        a.current = e;
                     }),
-                    t.current
+                    a.current
                 );
             }
         },
-        482924: (e, t, n) => {
-            n.d(t, { A: () => p });
-            var a = n(202784),
-                l = n(437429),
-                r = n.n(l),
-                o = n(57074),
-                s = n.n(o),
+        524084: (e, a, n) => {
+            n.d(a, { Z: () => d });
+            var o = n(202784),
+                r = n(523561),
+                t = n(195560);
+            const d = (0, r.Z)({ loader: () => n.e("loader.AbsolutePower").then(n.bind(n, 590136)), renderPlaceholder: (e, a) => o.createElement(t.Z, { hasError: e, onRetry: a }) });
+        },
+        402058: (e, a, n) => {
+            n.d(a, { Z: () => o });
+            n(202784);
+            const o = (0, n(523561).Z)({
+                loader: () =>
+                    Promise.all([
+                        n.e("icons.23"),
+                        n.e("icons.0"),
+                        n.e("icons.2"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
+                        n.e("icons.10"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
+                        n.e("icons.17"),
+                        n.e("modules.common-e907d115"),
+                        n.e("modules.common-e019dbda"),
+                        n.e("icons.21"),
+                        n.e("icons.18"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-0157ee89"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
+                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        n.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
+                        n.e("loader.WideLayout"),
+                    ]).then(n.bind(n, 527969)),
+            });
+        },
+        478414: (e, a, n) => {
+            n.d(a, { Hx: () => i, K: () => t, bb: () => l, gv: () => d, kg: () => s, yW: () => c });
+            var o = n(779802),
+                r = n(392237);
+            const t = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext1" },
+                d = { h1FontSize: "title4", h2FontSize: "headline1", paragraphFontSize: "headline2" },
+                l = ({ h1FontSize: e, h2FontSize: a, paragraphFontSize: n }) => [
+                    { blockType: o.P7.header1, label: o.et, component: (0, o.LI)({ size: e, children: o.et, extendedWidth: !0 }) },
+                    { blockType: o.P7.header2, label: o.PW, component: (0, o.LI)({ size: a, weight: "bold", children: o.PW }) },
+                    { blockType: o.P7.paragraph, label: o.$u, component: (0, o.LI)({ size: n, children: o.$u }) },
+                ],
+                i = "extended-profile",
+                s = "extended-profile-mobile-webview",
+                c = (e, { h1FontSize: a, h2FontSize: n, paragraphFontSize: o }) =>
+                    `\n    .${e} .longform-header-one {\n        font-family: ${r.default.theme.fontFamilies.chirpExtended};\n        font-size: ${r.default.theme.fontSizes[a]};\n        line-height: ${r.default.theme.spaces.space28};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-header-one-narrow {\n        font-family: ${r.default.theme.fontFamilies.chirpExtended};\n        font-size: ${r.default.theme.fontSizes[a]};\n        line-height: ${r.default.theme.spaces.space28};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-header-two {\n        font-size: ${r.default.theme.fontSizes[n]};\n        font-weight: ${r.default.theme.fontWeights.bold};\n        line-height: ${r.default.theme.spaces.space24};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-header-two-narrow {\n        font-size: calc(${r.default.theme.fontSizes[n]} + 1px);\n        font-weight: ${r.default.theme.fontWeights.bold};\n        line-height: ${r.default.theme.spaces.space24};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-unstyled, \n    .${e} .longform-blockquote {\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-unstyled-narrow, \n    .${e} .longform-blockquote-narrow {\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: 0;\n        margin-top: 0;\n    }\n\n    .${e} .longform-unordered-list-item, \n    .${e} .longform-ordered-list-item {\n        display: block;\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: ${r.default.theme.spaces.space2};\n        margin-left: calc(${r.default.theme.spaces.space20} + ${r.default.theme.spaces.space2});\n        margin-top: 0;\n    }\n\n    .${e} .longform-unordered-list-item-narrow, \n    .${e} .longform-ordered-list-item-narrow {\n        display: block;\n        font-size: ${r.default.theme.fontSizes[o]};\n        line-height: ${r.default.theme.lineHeights.headline1};\n        margin-bottom: ${r.default.theme.spaces.space2};\n        margin-left: ${r.default.theme.spaces.space36};\n        margin-top: 0;\n    }\n\n    .${e} .longform-blockquote, \n    .${e} .longform-blockquote-narrow {\n        margin-bottom: 0;\n        margin-left: 0;\n        margin-top: calc(-${r.default.theme.spaces.space2});\n        padding-left: calc(${r.default.theme.spaces.space20} + 2px);\n        position: relative;\n    }\n\n    .${e} .longform-blockquote:before, \n    .${e} .longform-blockquote-narrow:before {\n        background: ${r.default.theme.colors.gray900};\n        border-radius: ${r.default.theme.borderRadii.infinite};\n        bottom: 0;\n        content: "";\n        left: 0;\n        position: absolute;\n        top: 0;\n        width: 3px;\n    }\n\n    .${e} .longform-header-one .public-DraftStyleDefault-block,\n    .${e} .longform-header-two .public-DraftStyleDefault-block,\n    .${e} .longform-unstyled .public-DraftStyleDefault-block,\n    .${e} .longform-unordered-list-item .public-DraftStyleDefault-block,\n    .${e} .longform-ordered-list-item .public-DraftStyleDefault-block,\n    .${e} .longform-header-one-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-header-two-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-unstyled-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-unordered-list-item-narrow .public-DraftStyleDefault-block,\n    .${e} .longform-ordered-list-item-narrow .public-DraftStyleDefault-block {\n        padding-bottom: 0;\n        padding-top: 0;\n    }\n\n    .${e} .public-DraftStyleDefault-ul, \n    .${e} .public-DraftStyleDefault-ol {\n        counter-reset: item;\n        margin-bottom: 0;\n        margin-top: 0;\n        padding-left: 0;\n    }\n\n    .${e} .longform-unordered-list-item:before, \n    .${e} .longform-ordered-list-item:before,\n    .${e} .longform-unordered-list-item-narrow:before, \n    .${e} .longform-ordered-list-item-narrow:before {\n        position: absolute;\n        margin-left: calc(-1 * (${r.default.theme.spaces.space20} + ${r.default.theme.spaces.space2}));\n    }\n\n    .${e} .longform-unordered-list-item:before {\n        content: counter(item, disc);\n        font-size: ${r.default.theme.fontSizes[o]}\n    }\n\n    .${e} .longform-unordered-list-item-narrow:before {\n        content: counter(item, disc);\n        font-size: ${r.default.theme.fontSizes[o]}\n    }\n\n    .${e} .longform-ordered-list-item:before, \n    .${e} .longform-ordered-list-item-narrow:before {\n        content: counter(item) ". ";\n        counter-increment: item;\n    }\n\n    .${e} .longform-ordered-list-item::marker, \n    .${e} .longform-ordered-list-item-narrow::marker {\n        font-variant-numeric: normal;\n    }\n`;
+        },
+        226298: (e, a, n) => {
+            n.d(a, { z: () => o });
+            const o = (e) => `/i/jobs/${e}`;
+        },
+        985124: (e, a, n) => {
+            n.d(a, { $J: () => l, WA: () => Z, ZC: () => S, cj: () => N, eo: () => o.eo, hb: () => H, kW: () => i, pg: () => $, rP: () => d, u4: () => O, xk: () => x });
+            var o = n(89217),
+                r = n(111677),
+                t = n.n(r);
+            const d = Object.freeze({ DISABLED: 0, ENABLED: 10, SYNC_IN_PROGRESS: 20, SYNC_FAILED: 30 }),
+                l = Object.freeze({ freshteam: "Freshteam", greenhouse: "Greenhouse", lever: "Lever", recruitee: "Recruitee", "sage-hr": "Sage HR", "sap-successfactors": "SAP SuccessFactors", teamtailor: "Teamtailor", workable: "Workable", workday: "Workday" }),
+                i = Object.entries(o.eo).map(([e, a]) => ({ label: String(a), value: e })),
+                s = t().d2b8da2c,
+                c = t().cd958040,
+                u = t().c5760ca2,
+                h = t().d31b4a2a,
+                m = t().df1b7550,
+                b = t().f38959a6,
+                f = t().bc78a26c,
+                D = t().ec28738e,
+                p = t().icb06308,
+                g = t().d0b978ec,
+                w = t().af19cdc2,
+                M = t().e4a51fca,
+                y = t().e8ca78ae,
+                k = t().c365dcc6,
+                S = Object.freeze({ software_engineering: s, data_analytics: c, product: u, design: h, marketing: m, sales_am: b, operations: f, people_hr: D, finance_accounting: p, legal_compliance: g, science_engineering: w, medical: M, construction_trades: y, other: k }),
+                $ = Object.entries(S).map(([e, a]) => ({ label: String(a), value: e })),
+                v = t().e25d75e4,
+                P = t().e89b3f04,
+                A = t().h55825dc,
+                E = t().cc537386,
+                I = t().jfc3cece,
+                C = t().e1b683aa,
+                z = t().c4627fda,
+                B = t().db75b47c,
+                Z = Object.freeze({ intern: v, entry_level: P, junior: A, mid_level: E, senior: I, lead: C, manager: z, executive: B }),
+                x = Object.entries(Z).map(([e, a]) => ({ label: String(a), value: e })),
+                R = t().i312f0ce,
+                _ = t().b4aff05e,
+                T = t().c08b9138,
+                j = t().ia5d6422,
+                F = t().h97c7f42,
+                L = t().ibed2d04,
+                N = Object.freeze({ onsite: { label: R, description: j, value: "onsite" }, remote: { label: T, description: L, value: "remote" }, hybrid: { label: _, description: F, value: "hybrid" } }),
+                O = Object.keys(N).map((e) => ({ label: N[e].label, value: e, description: N[e].description })),
+                H = Object.keys(o.Qw).map((e) => ({ ...o.Qw[e], value: String(o.Qw[e].value) }));
+        },
+        943052: (e, a, n) => {
+            n.d(a, { Z: () => t });
+            n(543673), n(240753), n(128399), n(136728);
+            var o = n(202784),
+                r = n(107267);
+            const t = () => {
+                const e = (0, r.useLocation)(),
+                    a = (0, r.useHistory)(),
+                    [n, t] = o.useState(new URLSearchParams(e.search));
+                o.useEffect(() => {
+                    t(new URLSearchParams(e.search));
+                }, [e.search]);
+                const d = o.useCallback(
+                        (o, r) => {
+                            const t = new URLSearchParams(n);
+                            t.set(o, r), a.push(`${e.pathname}?${t.toString()}`);
+                        },
+                        [a, e.pathname, n],
+                    ),
+                    l = o.useCallback(
+                        (o) => {
+                            const r = new URLSearchParams(n);
+                            for (const e in o) o[e] ? r.set(e, o[e]) : r.delete(e);
+                            a.push(`${e.pathname}?${r.toString()}`);
+                        },
+                        [a, e.pathname, n],
+                    );
+                return [o.useMemo(() => new URLSearchParams(e.search), [e.search]), d, l];
+            };
+        },
+        482924: (e, a, n) => {
+            n.d(a, { A: () => m });
+            var o = n(202784),
+                r = n(437429),
+                t = n.n(r),
+                d = n(57074),
+                l = n.n(d),
                 i = n(10622),
-                c = n.n(i),
-                d = n(71620),
-                m = n(312771),
-                u = n(535338);
-            function p(e, t, n) {
-                const l = s()(t),
-                    o = s()(n),
-                    i = r()(),
-                    p = (0, d.po)(),
-                    [h, b] = a.useState(null),
-                    [g, E] = a.useState(!1),
-                    f = a.useCallback(() => {
-                        g ||
-                            (E(!0),
-                            c()(i, e, l, { networkCacheConfig: o?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
+                s = n.n(i),
+                c = n(71620),
+                u = n(312771),
+                h = n(535338);
+            function m(e, a, n) {
+                const r = l()(a),
+                    d = l()(n),
+                    i = t()(),
+                    m = (0, c.po)(),
+                    [b, f] = o.useState(null),
+                    [D, p] = o.useState(!1),
+                    g = o.useCallback(() => {
+                        D ||
+                            (p(!0),
+                            s()(i, e, r, { networkCacheConfig: d?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
                                 complete: () => {
-                                    E(!1);
+                                    p(!1);
                                 },
                                 error: (e) => {
-                                    p(e), E(!1), b(e);
+                                    m(e), p(!1), f(e);
                                 },
                             }));
-                    }, [i, p, e, g, l, o]),
-                    y = (0, u.p)(e, t, n);
-                return a.useMemo(() => (h ? { data: y, refetch: f, refetchStatus: m.ZP.FAILED, refetchError: h } : { data: y, refetch: f, refetchStatus: g ? m.ZP.LOADING : m.ZP.NONE, refetchError: void 0 }), [y, h, g, f]);
+                    }, [i, m, e, D, r, d]),
+                    w = (0, h.p)(e, a, n);
+                return o.useMemo(() => (b ? { data: w, refetch: g, refetchStatus: u.ZP.FAILED, refetchError: b } : { data: w, refetch: g, refetchStatus: D ? u.ZP.LOADING : u.ZP.NONE, refetchError: void 0 }), [w, b, D, g]);
             }
         },
-        263870: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => N });
-            var a = n(202784),
-                l = n(247411),
-                r = n(736063),
-                o = n(325686),
-                s = n(107267),
+        127218: (e, a, n) => {
+            n.d(a, { C: () => p });
+            var o = n(202784),
+                r = n(614983),
+                t = n.n(r),
+                d = n(437429),
+                l = n.n(d),
+                i = n(57074),
+                s = n.n(i),
+                c = n(10622),
+                u = n.n(c),
+                h = n(585488),
+                m = n(71620),
+                b = n(163889),
+                f = n(312771),
+                D = n(535338);
+            function p(e, a, n) {
+                const [r, d] = o.useState(!1),
+                    [i, c] = o.useState(null),
+                    p = l()(),
+                    g = s()(a),
+                    w = (0, m.po)(),
+                    M = (0, D.p)(e, g, n);
+                return o.useMemo(() => {
+                    const a = (0, h.getRequest)(e).params?.metadata?.sliceInfoPath;
+                    t()(!!a, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
+                    const { next_cursor: n, previous_cursor: o } =
+                            (function (e, a) {
+                                try {
+                                    t()("slice_info" === a[a.length - 1], "Invalid sliceInfoPath!");
+                                    let n = e;
+                                    for (const e of a) t()(!!n, "The provided path is invalid."), t()("string" == typeof e, "Unexpected value for path!"), (n = n?.[e]);
+                                    return n;
+                                } catch (e) {
+                                    return void (0, b.ZP)(e.message);
+                                }
+                            })(M, a) || {},
+                        l = (a) => {
+                            r ||
+                                (d(!0),
+                                u()(p, e, { ...g, cursor: a }).subscribe({
+                                    complete: () => {
+                                        d(!1);
+                                    },
+                                    error: (e) => {
+                                        d(!1), c(e), w(e);
+                                    },
+                                }));
+                        },
+                        s = () => {
+                            n && l(n);
+                        },
+                        m = () => {
+                            o && l(o);
+                        },
+                        D = () => {
+                            l(void 0);
+                        };
+                    return i ? { subsequentFetchStatus: f.ZP.FAILED, error: i, fetchNext: s, fetchPrevious: m, refetch: D, data: M, hasNext: Boolean(n), hasPrevious: Boolean(o) } : { subsequentFetchStatus: r ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: s, fetchPrevious: m, refetch: D, data: M, hasNext: Boolean(n), hasPrevious: Boolean(o) };
+                }, [e, M, r, i, p, g, w]);
+            }
+        },
+        263870: (e, a, n) => {
+            n.r(a), n.d(a, { default: () => q });
+            var o = n(202784),
+                r = n(247411),
+                t = n(736063),
+                d = n(325686),
+                l = n(107267),
                 i = n(708852),
-                c = n(530732),
-                d = n(731708),
-                m = n(392237),
-                u = n(894966),
-                p = n(512549),
-                h = n(903233),
-                b = n(652904),
-                g = n(293115),
-                E = n(254221),
-                f = n(771741),
-                y = (n(585488), n(457311)),
-                x = n(154003),
-                Z = n(97301),
-                w = n(58399),
-                C = n(292546),
-                v = n(482924),
-                k = n(62941),
-                j = n(965245),
-                _ = n(609927),
-                P = n(715601),
+                s = n(530732),
+                c = n(731708),
+                u = n(392237),
+                h = n(894966),
+                m = n(318178),
+                b = n(903233),
+                f = n(652904),
+                D = n(293115),
+                p = n(254221),
+                g = n(771741),
+                w = (n(585488), n(457311)),
+                M = n(154003),
+                y = n(97301),
+                k = n(58399),
+                S = n(292546),
+                $ = n(482924),
+                v = n(62941),
+                P = n(965245),
+                A = n(609927),
+                E = n(715601),
                 I = n(768572),
-                S = n(46858);
-            const B = { isGlobal: !0, isSticky: !1 },
-                T = (e) => e.rest_id,
-                A = m.default.create((e) => ({ viewport: { overflow: "auto", height: "100%", flex: 1 }, mobileContainer: { position: "relative", height: "calc(100vh - 112px)", overflow: "auto" } })),
-                z = ({ items: e }) => {
-                    const t = (0, i.Ji)(),
-                        n = a.useCallback((t) => a.createElement(S.Z, { item: t.result, itemId: t.rest_id, itemIndex: e.findIndex((e) => e.rest_id === t.rest_id), pathPrefix: "/jobs/saved" }), [e]),
-                        l = a.useCallback(() => a.createElement(j.Z, { cacheKey: "jobSearchList", footer: null, identityFunction: T, items: e, renderer: n, withoutHeadroom: !0 }), [e, n]);
-                    return e ? (e.length && t ? a.createElement(_.Z.Provider, { value: B }, a.createElement(I.y3.Provider, { value: void 0 }, a.createElement(P.Z, { style: A.viewport }, l()))) : e.length && !t ? a.createElement(o.Z, { style: A.mobileContainer }, l()) : null) : null;
+                C = n(46858);
+            const z = { isGlobal: !0, isSticky: !1 },
+                B = (e) => e.rest_id,
+                Z = u.default.create((e) => ({ viewport: { overflow: "auto", height: "100%", flex: 1 }, mobileContainer: { position: "relative", height: "calc(100vh - 112px)", overflow: "auto" } })),
+                x = ({ items: e }) => {
+                    const a = (0, i.Ji)(),
+                        n = o.useCallback((a) => o.createElement(C.Z, { item: a.result, itemId: a.rest_id, itemIndex: e.findIndex((e) => e.rest_id === a.rest_id), pathPrefix: "/jobs/saved" }), [e]),
+                        r = o.useCallback(() => o.createElement(P.Z, { cacheKey: "jobSearchList", footer: null, identityFunction: B, items: e, renderer: n, withoutHeadroom: !0 }), [e, n]);
+                    return e ? (e.length && a ? o.createElement(A.Z.Provider, { value: z }, o.createElement(I.y3.Provider, { value: void 0 }, o.createElement(E.Z, { style: Z.viewport }, r()))) : e.length && !a ? o.createElement(d.Z, { style: Z.mobileContainer }, r()) : null) : null;
                 },
-                D = f.Z,
-                H = 10,
-                R = () => {
-                    const e = (0, s.useHistory)(),
-                        [t, n] = (0, C.Z)(),
-                        [l, r] = a.useState(!1),
-                        c = (0, i.Ji)(),
-                        m = t.get("page") ? parseInt(t?.get("page"), 10) : 1,
-                        { data: u, refetchStatus: p } = (0, v.A)(D, { limit: H, offset: ((h = m), (h - 1) * H) });
-                    var h;
-                    a.useEffect(() => {
-                        "none" === p && r(!1);
-                    }, [p]);
-                    const b = u?.viewer_v2?.user_results?.result,
-                        g = b?.saved_jobs ?? {},
-                        E = g.total || 0,
-                        f = Math.ceil(E / H),
-                        j = g.items_results ?? [],
-                        _ = j.length > 0 ? j[0].rest_id : null,
-                        P = !b || l;
-                    a.useEffect(() => {
-                        _ && "/jobs/saved" === location.pathname && c && !P && e.replace(`/jobs/saved/${_}?page=${m}`);
-                    }, [_, c, P, m, e]);
-                    const I = a.useCallback(() => {
-                            m < f && n("page", (m + 1).toString());
-                        }, [m, n, f]),
-                        S = a.useCallback(() => {
-                            m > 1 && n("page", (m - 1).toString());
-                        }, [m, n]);
-                    return P
-                        ? a.createElement(k.Z, null)
-                        : E <= 0
-                          ? a.createElement(y.Z, { header: "No saved jobs" })
-                          : a.createElement(
-                                a.Fragment,
+                R = g.Z,
+                _ = 10,
+                T = () => {
+                    const e = (0, l.useHistory)(),
+                        [a, n] = (0, S.Z)(),
+                        [r, t] = o.useState(!1),
+                        s = (0, i.Ji)(),
+                        u = a.get("page") ? parseInt(a?.get("page"), 10) : 1,
+                        { data: h, refetchStatus: m } = (0, $.A)(R, { limit: _, offset: ((b = u), (b - 1) * _) });
+                    var b;
+                    o.useEffect(() => {
+                        "none" === m && t(!1);
+                    }, [m]);
+                    const f = h?.viewer_v2?.user_results?.result,
+                        D = f?.saved_jobs ?? {},
+                        p = D.total || 0,
+                        g = Math.ceil(p / _),
+                        P = D.items_results ?? [],
+                        A = P.length > 0 ? P[0].rest_id : null,
+                        E = !f || r;
+                    o.useEffect(() => {
+                        A && "/jobs/saved" === location.pathname && s && !E && e.replace(`/jobs/saved/${A}?page=${u}`);
+                    }, [A, s, E, u, e]);
+                    const I = o.useCallback(() => {
+                            u < g && n("page", (u + 1).toString());
+                        }, [u, n, g]),
+                        C = o.useCallback(() => {
+                            u > 1 && n("page", (u - 1).toString());
+                        }, [u, n]);
+                    return E
+                        ? o.createElement(v.Z, null)
+                        : p <= 0
+                          ? o.createElement(w.Z, { header: "No saved jobs" })
+                          : o.createElement(
+                                o.Fragment,
                                 null,
-                                a.createElement(z, { items: j }),
-                                a.createElement(
-                                    o.Z,
-                                    { style: { ...L.actionBar, ...(c ? {} : L.mobileActionBar) } },
-                                    a.createElement(
-                                        o.Z,
-                                        { style: L.actionBarInner },
-                                        a.createElement(x.ZP, { disabled: 1 === m, icon: a.createElement(Z.default, null), onClick: S, type: "brandText" }),
-                                        a.createElement(
-                                            d.ZP,
+                                o.createElement(x, { items: P }),
+                                o.createElement(
+                                    d.Z,
+                                    { style: { ...j.actionBar, ...(s ? {} : j.mobileActionBar) } },
+                                    o.createElement(
+                                        d.Z,
+                                        { style: j.actionBarInner },
+                                        o.createElement(M.ZP, { disabled: 1 === u, icon: o.createElement(y.default, null), onClick: C, type: "brandText" }),
+                                        o.createElement(
+                                            c.ZP,
                                             { color: "gray900", size: "subtext1" },
-                                            ((e, t) => {
-                                                if (t > 0) {
-                                                    let n = e * H;
-                                                    return n > t && (n = t), `Viewing ${e * H - 9} - ${n} of ${t}`;
+                                            ((e, a) => {
+                                                if (a > 0) {
+                                                    let n = e * _;
+                                                    return n > a && (n = a), `Viewing ${e * _ - 9} - ${n} of ${a}`;
                                                 }
                                                 return "";
-                                            })(m, E),
+                                            })(u, p),
                                         ),
-                                        a.createElement(x.ZP, { disabled: m === f, icon: a.createElement(w.default, null), onClick: I, type: "brandText" }),
+                                        o.createElement(M.ZP, { disabled: u === g, icon: o.createElement(k.default, null), onClick: I, type: "brandText" }),
                                     ),
                                 ),
                             );
                 },
-                L = m.default.create((e) => ({ actionBar: { width: "100%", backgroundColor: e.colors.gray200 }, mobileActionBar: { width: "100%", backgroundColor: e.colors.gray200 }, actionBarInner: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space4 } })),
+                j = u.default.create((e) => ({ actionBar: { width: "100%", backgroundColor: e.colors.gray200 }, mobileActionBar: { width: "100%", backgroundColor: e.colors.gray200 }, actionBarInner: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space4 } })),
                 F = { context: "JobBookmarksList" },
-                J = () => a.createElement(r.H, { errorConfig: F }, a.createElement(R, null)),
-                W = { page: "saved_jobs", section: "all" },
-                M = () => {
-                    const e = (0, s.useLocation)(),
-                        t = (0, s.useHistory)(),
+                L = () => o.createElement(t.H, { errorConfig: F }, o.createElement(T, null)),
+                N = { page: "saved_jobs", section: "all" },
+                O = () => {
+                    const e = (0, l.useLocation)(),
+                        a = (0, l.useHistory)(),
                         n = !(0, i.Ji)(),
-                        l = /\/jobs\/saved\/\d+/.test(e.pathname),
-                        r = a.useCallback(() => {
-                            t.goBack();
-                        }, [t]);
-                    return a.createElement(g.nO, { namespace: W }, a.createElement(b.Z, { locationKey: W.page }, a.createElement(h.Z, { isRightRootActive: l, leftContent: a.createElement(o.Z, { style: { display: "flex", overflow: "auto", width: "30%" } }, a.createElement(J, null)), mobileRootStyles: { height: "calc(100vh - 68px)" }, rightContent: a.createElement(o.Z, null, n && a.createElement(c.Z, { onClick: r, style: V.mobileDetailBackButton }, a.createElement(u.default, null), a.createElement(d.ZP, { size: "body", weight: "bold" }, "Back to saved jobs")), a.createElement(E.Z, { actions: [p.h5] })), rootStyles: { height: "calc(100vh - 116px)" } })));
+                        r = /\/jobs\/saved\/\d+/.test(e.pathname),
+                        t = o.useCallback(() => {
+                            a.goBack();
+                        }, [a]);
+                    return o.createElement(D.nO, { namespace: N }, o.createElement(f.Z, { locationKey: N.page }, o.createElement(b.Z, { isRightRootActive: r, leftContent: o.createElement(d.Z, { style: { display: "flex", overflow: "auto", width: "30%" } }, o.createElement(L, null)), mobileRootStyles: { height: "calc(100vh - 68px)" }, rightContent: o.createElement(d.Z, null, n && o.createElement(s.Z, { onClick: t, style: H.mobileDetailBackButton }, o.createElement(h.default, null), o.createElement(c.ZP, { size: "body", weight: "bold" }, "Back to saved jobs")), o.createElement(p.Z, { actions: [m.h5] })), rootStyles: { height: "calc(100vh - 116px)" } })));
                 },
-                V = m.default.create((e) => ({ mobileDetailBackButton: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16 }, mobileDetailActionsItemBreak: { flexBasis: "100%" } })),
-                $ = { context: "JobRecommendations" },
-                N = () => a.createElement(r.H, { errorConfig: $ }, a.createElement(l.Z, null, a.createElement(M, null)));
-        },
-        879930: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => N });
-            var a = n(202784),
-                l = n(107267),
-                r = n(323265),
-                o = n(252021),
-                s = n(736063),
-                i = n(255875),
-                c = n(325686),
-                d = (n(585488), n(167630)),
-                m = n(482924),
-                u = (n(136728), n(731708)),
-                p = n(40610),
-                h = n(154003),
-                b = n(392237),
-                g = n(908478),
-                E = n(443781),
-                f = n(181666),
-                y = n(855488),
-                x = n(379327);
-            const Z = ({ onAdd: e }) => {
-                    const [t, n] = a.useState(""),
-                        [l, r] = a.useState(""),
-                        o = () => {
-                            t || r("Job title can't be empty"), e(t), n("");
-                        };
-                    return a.createElement(
-                        c.Z,
-                        null,
-                        a.createElement(
-                            c.Z,
-                            { style: w.inputField },
-                            a.createElement(
-                                c.Z,
-                                { style: w.inputWrapper },
-                                a.createElement(y.Z, {
-                                    label: "Job Title",
-                                    name: "jobTitle",
-                                    onChange: (e) => {
-                                        r(""), n(e.target.value);
-                                    },
-                                    onKeyPress: (e) => {
-                                        "Enter" === e.key && o();
-                                    },
-                                    style: w.textInput,
-                                    testID: "job-rec-title-input",
-                                    value: t,
-                                }),
-                            ),
-                            a.createElement(c.Z, { style: w.buttonWrapper }, a.createElement(h.ZP, { icon: a.createElement(x.default, null), onPress: o, size: "large", testID: "job-rec-title-btn", type: "primaryFilled" })),
-                        ),
-                        l ? a.createElement(u.ZP, { color: "red500", size: "subtext2" }, l) : a.createElement(u.ZP, { color: "gray700", size: "subtext2" }, "Press enter to add"),
-                    );
-                },
-                w = b.default.create((e) => ({ inputField: { display: "flex", flex: 1, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, inputWrapper: { position: "relative", flexGrow: 1, marginEnd: e.spaces.space16 }, buttonWrapper: { flexShrink: 0, marginTop: "-2px" }, textInput: { paddingStart: "0px", paddingBottom: "0px", paddingTop: "0px", paddingEnd: "0px" }, loader: { position: "absolute", end: "12px", top: "20px", zIndex: 5 } }));
-            var C = n(516951),
-                v = n(998693);
-            const k = ({ onAdd: e }) => {
-                    const [t, n] = a.useState("");
-                    return a.createElement(
-                        c.Z,
-                        { style: j.locationInputContainer },
-                        a.createElement(v.Z, {
-                            onChange: ({ value: e }) => {
-                                n(e || "");
-                            },
-                            onEnter: C.Z,
-                            onSelect: (t) => {
-                                e(t), n("");
-                            },
-                            value: t,
-                        }),
-                    );
-                },
-                j = b.default.create((e) => ({ locationInputContainer: { display: "flex", zIndex: 5, position: "relative" }, loader: { position: "absolute", end: "12px", top: "20px", zIndex: 6 } }));
-            var _ = n(837020);
-            const P = b.default.create((e) => ({ listItem: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, paddingHorizontal: e.spaces.space2, paddingVertical: e.spaces.space4, marginBottom: e.spaces.space2 }, icon: { cursor: "pointer" } })),
-                I = ({ item: e, onDelete: t, textPath: n }) => a.createElement(c.Z, { style: P.listItem }, a.createElement(u.ZP, null, S(e, n)), a.createElement(_.default, { onClick: () => t(e), style: P.icon, testID: "delete-matching-criteria-btn" })),
-                S = (e, t, n = "") => {
-                    const a = t.split(".");
-                    let l = e;
-                    for (const e of a) {
-                        if (!l || "object" != typeof l || !(e in l)) return n;
-                        l = l[e];
-                    }
-                    return void 0 !== l ? l : n;
-                };
-            var B = n(451566);
-            const T = ({ label: e, onChange: t, value: n }) => a.createElement(c.Z, { style: A.fieldContainer }, a.createElement(u.ZP, null, e), a.createElement(B.Z, { onValueChange: t, value: n })),
-                A = b.default.create((e) => ({ fieldContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, paddingVertical: e.spaces.space8 } }));
-            var z = n(594695),
-                D = n(351743),
-                H = n.n(D);
-            const R = z.Z,
-                L = () => {
-                    const [e, t] = H()(R);
-                    return [
-                        a.useCallback(
-                            (t) => {
-                                e(t);
-                            },
-                            [e],
-                        ),
-                        t,
-                    ];
-                },
-                F = ({ matchingProfile: e, refetch: t }) => {
-                    const n = ((r = e), { recommendationsEnabled: r?.recommendations_enabled ?? !0, remoteWorkAllowed: r?.remote_work_allowed ?? !0, jobTitles: [...(r?.job_titles || [])], locations: [...(r?.locations || [])].map((e) => ({ id: e.id, location_id: e.location_id, location_name: e.location?.core?.display_name })) });
-                    var r;
-                    const [o, s] = a.useState(n),
-                        [i, m] = a.useState(!1),
-                        [b] = L(),
-                        [y] = (0, f.Z)(),
-                        { viewerUserId: x } = (0, E.QZ)(),
-                        w = (0, l.useHistory)(),
-                        C = !e?.consented_at,
-                        v = 0 === o.jobTitles.length,
-                        j = (0, g.Z)(n, o),
-                        _ = a.useCallback(() => {
-                            if (x) {
-                                const e = ((e) => {
-                                    const t = [...e.jobTitles, ...e.locations].map((e) => ({ id: e.id, job_title: e.job_title, location_id: e.location_id }));
-                                    return { consented: !0, recommendationsEnabled: e.recommendationsEnabled, remoteWorkAllowed: e.remoteWorkAllowed, matchingCriteria: t };
-                                })(o);
-                                m(!0),
-                                    b({
-                                        variables: { userId: x, consented: !0, ...e },
-                                        onCompleted: () => {
-                                            y({
-                                                variables: { userId: x },
-                                                onCompleted: () => {
-                                                    m(!1), w.push("/jobs/recommended");
-                                                },
-                                            });
-                                        },
-                                    });
-                            }
-                        }, [b, y, o, w, x]),
-                        P = (e, t) => {
-                            s({ ...o, [e]: t });
-                        },
-                        S = (e) => {
-                            const t = [...o.jobTitles].filter((t) => (e.id ? e.id !== t.id : e.job_title !== t.job_title));
-                            s({ ...o, jobTitles: t });
-                        },
-                        B = (e) => {
-                            const t = [...o.locations].filter((t) => (e.id ? e.id !== t.id : e.location_id !== t.location_id));
-                            s({ ...o, locations: t });
-                        };
-                    return a.createElement(
-                        c.Z,
-                        { style: J.settingsContainer },
-                        a.createElement(c.Z, { style: J.pageHeader }, a.createElement(u.ZP, { size: "title4", style: J.pageTitle, weight: "bold" }, "Share your job preferences"), a.createElement(u.ZP, null, "Tell us what job titles and work locations you’re interested in and we’ll show you jobs that meet your preferences.")),
-                        a.createElement(
-                            W,
-                            { title: "Job Titles" },
-                            a.createElement(u.ZP, { color: "gray700", size: "subtext1", style: J.sectionHelpText }, "Enter the job titles you’re interested in."),
-                            v && a.createElement(p.Z.Primary, { style: J.jobTitleCallout, text: "You must add at least one job title", withIcon: !0 }),
-                            a.createElement(Z, {
-                                onAdd: (e) => {
-                                    e && s({ ...o, jobTitles: [...o.jobTitles, { job_title: e }] });
-                                },
-                            }),
-                            a.createElement(
-                                c.Z,
-                                null,
-                                o.jobTitles.map((e) => a.createElement(I, { item: e, key: e.id || e.job_title, onDelete: S, textPath: "job_title" })),
-                            ),
-                        ),
-                        a.createElement(
-                            W,
-                            { additionalStyles: J.locationSection, title: "Locations" },
-                            a.createElement(T, { label: "Open to remote work", onChange: (e) => P("remoteWorkAllowed", e), value: o.remoteWorkAllowed }),
-                            a.createElement(u.ZP, { color: "gray700", size: "subtext1", style: J.sectionHelpText }, "Enter the locations you’re interested in if performing the job on-site."),
-                            a.createElement(k, {
-                                onAdd: (e) => {
-                                    s({ ...o, locations: [...o.locations, { location_id: e.id, location_name: e.name }] });
-                                },
-                            }),
-                            a.createElement(
-                                c.Z,
-                                null,
-                                o.locations.map((e) => a.createElement(I, { item: e, key: e.id || e.location_id, onDelete: B, textPath: "location_name" })),
-                            ),
-                        ),
-                        a.createElement(W, { title: "Recommendation Preferences" }, a.createElement(T, { label: "See recommendations in your timeline", onChange: (e) => P("recommendationsEnabled", e), value: o.recommendationsEnabled })),
-                        a.createElement(h.ZP, { disabled: i || v || j, onClick: _, type: "brandFilled" }, i ? a.createElement(c.Z, { style: J.buttonLoader }, a.createElement(d.Z, { color: "white", size: "small" }), a.createElement(u.ZP, null, "Saving")) : a.createElement(a.Fragment, null, C ? "Agree and see recommendations" : "Save preferences")),
-                        C && a.createElement(u.ZP, { color: "gray700", size: "subtext3", style: J.disclaimerText }, "By clicking 'Agree and see recommendations,' you are agreeing to allow X to use your job preferences to provide personalized job recommendations and to enhance your overall experience. This information will be used to improve our services and deliver tailored content that aligns with your interests. Your privacy is important to us, and we will handle your data in accordance with our Privacy Policy."),
-                    );
-                },
-                J = b.default.create((e) => ({ settingsContainer: { padding: e.spaces.space16, zIndex: 1 }, pageHeader: { marginBottom: e.spaces.space20 }, pageTitle: { marginBottom: e.spaces.space12 }, settingsSection: { display: "flex", flexDirection: "column", gap: e.spaces.space8, marginBottom: e.spaces.space16, paddingBottom: e.spaces.space16, borderBottomWidth: "1px", borderBottomStyle: "solid", borderBottomColor: e.colors.gray200 }, locationSection: { zIndex: 5 }, sectionHeader: { marginBottom: e.spaces.space8 }, sectionHelpText: { marginBottom: e.spaces.space8 }, disclaimerText: { marginTop: e.spaces.space16 }, buttonLoader: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, jobTitleCallout: { marginBottom: e.spaces.space8 } })),
-                W = ({ children: e, title: t, additionalStyles: n = {} }) => {
-                    const l = { ...J.settingsSection, ...n };
-                    return a.createElement(c.Z, { style: l }, a.createElement(u.ZP, { color: "text", size: "headline2", style: J.sectionHeader, weight: "bold" }, t), e);
-                },
-                M = i.Z,
-                V = () => {
-                    const { data: e, refetch: t } = (0, m.A)(M, {}),
-                        n = !e,
-                        l = e?.viewer_v2?.user_results?.result?.matching_profile;
-                    return n ? a.createElement(c.Z, null, a.createElement(d.Z, { size: "large" })) : a.createElement(F, { matchingProfile: l, refetch: t });
-                },
-                $ = { context: "job_recommendations_onboarding" },
-                N = () => {
-                    const e = (0, l.useHistory)();
-                    return r.ZP.isWebView() ? a.createElement(s.H, { errorConfig: $ }, a.createElement(V, null)) : a.createElement(s.H, { errorConfig: $ }, a.createElement(o.Z, { backLocation: "/", history: e, primaryContent: V, sidebarContent: null, title: "Job Recommendations" }));
-                };
-        },
-        46858: (e, t, n) => {
-            n.d(t, { Z: () => c });
-            n(136728);
-            var a = n(202784),
-                l = n(277660),
-                r = n.n(l),
-                o = n(107267),
-                s = n(471957),
-                i = n(549599);
-            const c = ({ actions: e, item: t, itemId: n, itemIndex: l, pathPrefix: c }) => {
-                const d = (0, o.useHistory)(),
-                    { search: m } = (0, o.useLocation)(),
-                    u = r()(i.KM, t),
-                    p = u?.core,
-                    h = u?.user_results?.result,
-                    b = u?.company_profile_results?.result,
-                    g = u?.id || "",
-                    E = u?.user_sentiment,
-                    f = a.useCallback(() => {
-                        d.push({ pathname: `${c}/${n}`, search: m });
-                    }, [d, n, c, m]);
-                return u && p ? a.createElement(s.Z, { actions: e, companyProfile: b, job: p, jobId: n, jobIndex: l, onClick: f, relayId: g, user: h, userSentiment: E }) : null;
-            };
-        },
-        62941: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var a = n(202784),
-                l = n(325686),
-                r = n(392237);
-            const o = () => a.createElement(l.Z, null, a.createElement(s, null), a.createElement(s, null), a.createElement(s, null), a.createElement(s, null), a.createElement(s, null)),
-                s = () => a.createElement(l.Z, { style: i.stencilContainer }, a.createElement(l.Z, { style: i.stencilAvatarContainer }, a.createElement(l.Z, { style: i.stencilAvatar })), a.createElement(l.Z, { style: i.stencilText }, a.createElement(l.Z, { style: i.stencilTitle }), a.createElement(l.Z, { style: i.stencilCompany }), a.createElement(l.Z, { style: i.stencilLocation }), a.createElement(l.Z, { style: i.stencilActions }, a.createElement(l.Z, { style: i.stencilAction }), a.createElement(l.Z, { style: i.stencilAction })))),
-                i = r.default.create((e) => ({ stencilContainer: { flex: 1, display: "flex", flexDirection: "row", padding: e.spaces.space20, borderBottomColor: e.colors.gray200, borderBottomWidth: "1px" }, stencilAvatarContainer: { marginEnd: e.spaces.space16 }, stencilAvatar: { width: "40px", height: "40px", backgroundColor: e.colors.gray400 }, stencilText: { flex: 1, display: "flex", flexDirection: "column", gap: 6 }, stencilTitle: { width: "180px", height: "12px", backgroundColor: e.colors.gray400, borderRadius: "32px" }, stencilCompany: { width: "80px", height: "9px", backgroundColor: e.colors.gray400, borderRadius: "32px" }, stencilLocation: { width: "130px", height: "8px", backgroundColor: e.colors.gray300, borderRadius: "32px" }, stencilActions: { flex: 1, display: "flex", flexDirection: "row", justifyContent: "space-between", marginTop: e.spaces.space16 }, stencilAction: { width: "64px", height: "12px", backgroundColor: e.colors.gray400, borderRadius: "32px" } }));
-        },
-        947698: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => ee });
-            var a = n(202784),
-                l = n(247411),
-                r = n(736063),
-                o = n(335572),
-                s = n(325686),
-                i = (n(585488), n(107267)),
-                c = n(903233),
-                d = n(652904),
-                m = n(293115),
-                u = n(535338),
-                p = n(708852),
-                h = n(530732),
-                b = n(731708),
-                g = n(392237),
-                E = n(894966),
-                f = n(512549),
-                y = n(254221);
-            const x = ({ height: e }) => {
-                    const t = a.useMemo(() => ({ height: e || g.default.theme.spaces.space16 }), [e]);
-                    return a.createElement(s.Z, { style: t });
-                },
-                Z = ({ borderRadius: e, height: t, width: n }) => {
-                    const l = a.useMemo(() => ({ ...w.stencil, borderRadius: e || g.default.theme.borderRadii.infinite, width: n, height: t }), [e, n, t]);
-                    return a.createElement(s.Z, { style: l });
-                },
-                w = g.default.create((e) => ({ root: { padding: e.spaces.space20, flexGrow: 0, flexShrink: 1 }, header: { flexDirection: "row", gap: 16, flex: 1 }, container: { gap: 8 }, stencil: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.gray400 } })),
-                C = () => {
-                    const { theme: e } = g.default;
-                    return a.createElement(s.Z, { style: w.root }, a.createElement(s.Z, { style: w.container }, a.createElement(Z, { height: e.spaces.space16, width: "50%" }), a.createElement(Z, { height: e.spaces.space12, width: "25%" })), a.createElement(x, { height: e.spaces.space20 }), a.createElement(s.Z, { style: w.header }, a.createElement(Z, { borderRadius: e.borderRadii.small, height: e.spaces.space48, width: e.spaces.space48 }), a.createElement(s.Z, { style: { ...w.container, flex: 1 } }, a.createElement(Z, { height: e.spaces.space16, width: "50%" }), a.createElement(Z, { height: e.spaces.space12, width: "25%" }), a.createElement(Z, { height: e.spaces.space12, width: "100%" }), a.createElement(Z, { height: e.spaces.space12, width: "75%" }))), a.createElement(x, { height: e.spaces.space40 }), a.createElement(s.Z, { style: w.container }, a.createElement(Z, { height: e.spaces.space16, width: "25%" }), a.createElement(Z, { height: e.spaces.space12, width: "90%" }), a.createElement(Z, { height: e.spaces.space12, width: "95%" }), a.createElement(Z, { height: e.spaces.space12, width: "75%" })), a.createElement(x, { height: e.spaces.space20 }), a.createElement(s.Z, { style: w.container }, a.createElement(Z, { height: e.spaces.space16, width: "50%" }), a.createElement(Z, { height: e.spaces.space12, width: "85%" }), a.createElement(Z, { height: e.spaces.space12, width: "90%" }), a.createElement(Z, { height: e.spaces.space12, width: "75%" })));
-                },
-                v = g.default.create((e) => ({ mobileDetailBackButton: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16 } })),
-                k = ({ isLoading: e }) => {
-                    const t = (0, i.useHistory)(),
-                        n = !(0, p.Ji)(),
-                        l = a.useCallback(() => {
-                            t.goBack();
-                        }, [t]);
-                    return e ? (n ? null : a.createElement(C, null)) : a.createElement(s.Z, null, n && a.createElement(h.Z, { onClick: l, style: v.mobileDetailBackButton }, a.createElement(E.default, null), a.createElement(b.ZP, { size: "body", weight: "bold" }, "Back to recommendations")), a.createElement(y.Z, { actions: [f.h5, f.pN] }));
-                };
-            var j = n(893211),
-                _ = n(482924),
-                P = n(715601),
-                I = n(46858),
-                S = n(154003),
-                B = n(443781),
-                T = n(181666);
-            const A = ({ onClick: e, refetchList: t }) => {
-                    const [n, l] = (0, T.Z)(),
-                        r = (0, i.useHistory)(),
-                        { viewerUserId: o } = (0, B.QZ)(),
-                        s = a.useCallback(() => {
-                            o && (e(), r.replace("/jobs/recommended"), n({ variables: { userId: o }, onCompleted: t }));
-                        }, [n, o, t, e, r]);
-                    return a.createElement(S.ZP, { disabled: l, onPress: s, type: "primaryOutlined" }, "Refresh recommendations");
-                },
-                z = ({ item: e, items: t, shouldBeInView: n }) => {
-                    const l = a.useRef(null);
-                    return (
-                        a.useEffect(() => {
-                            n && l.current?.scrollIntoView({ behavior: "instant" });
-                        }, [n, l]),
-                        a.createElement(s.Z, { ref: l }, a.createElement(I.Z, { actions: [f.pN, f.h5], item: e.result, itemId: e.rest_id, itemIndex: t.findIndex((t) => t.rest_id === e.rest_id), pathPrefix: "/jobs/recommended" }))
-                    );
-                },
-                D = g.default.create((e) => ({ viewport: { overflow: "auto", height: "100%", flex: 1 }, mobileContainer: { height: "calc(100vh - 136px)", overflow: "auto" }, refreshButtonContainer: { display: "flex", alignItems: "center", padding: e.spaces.space16, backgroundColor: "rgba(255, 255, 255, .1)" }, mobileRefreshButtonContainer: { width: "100%", zIndex: 5, backgroundColor: e.colors.gray100 } })),
-                H = ({ items: e, refetchList: t, setIsLoading: n }) => {
-                    const [l, r] = a.useState(null),
-                        o = (0, i.useParams)(),
-                        c = (0, p.Ji)();
-                    a.useEffect(() => {
-                        !l && o.jobId && r(o.jobId);
-                    }, [l, o.jobId]);
-                    const d = a.useCallback(
-                            () =>
-                                a.createElement(
-                                    s.Z,
-                                    null,
-                                    e.map((t) => a.createElement(z, { item: t, items: e, key: t.rest_id, shouldBeInView: l === t.rest_id })),
-                                ),
-                            [l, e],
-                        ),
-                        m = a.useCallback(() => a.createElement(s.Z, { style: { ...D.refreshButtonContainer, ...(c ? {} : D.mobileRefreshButtonContainer) } }, a.createElement(A, { onClick: () => n(!0), refetchList: t })), [t, c, n]);
-                    return e ? (e.length && c ? a.createElement(a.Fragment, null, a.createElement(P.Z, { style: D.viewport }, d()), m()) : e.length && !c ? a.createElement(a.Fragment, null, a.createElement(s.Z, { style: D.mobileContainer }, d()), m()) : null) : null;
-                };
-            var R = n(293723),
-                L = n(757700);
-            const F = "first-time",
-                J = "criteria-changed",
-                W = g.default.create((e) => ({ modalContent: { padding: e.spaces.space48 }, modalHeader: { paddingBottom: e.spaces.space20 }, bodyText: { paddingBottom: e.spaces.space12 }, sentimentTextContainer: { display: "flex", flexDirection: "row", gap: 12, justify: "center", flex: 1 }, button: { marginTop: e.spaces.space12 }, icon: { marginEnd: e.spaces.space8 } })),
-                M = ({ onDismiss: e, refetchList: t, type: n }) => {
-                    const [l, r] = (0, T.Z)(),
-                        { viewerUserId: o } = (0, B.QZ)(),
-                        i = a.useCallback(() => {
-                            o &&
-                                l({
-                                    variables: { userId: o },
-                                    onCompleted: () => {
-                                        t(), e();
-                                    },
-                                });
-                        }, [l, o, t, e]);
-                    return a.createElement(
-                        L.ZP,
-                        { modalSize: "fitChildren", onMaskClick: e, withBackground: !0 },
-                        a.createElement(
-                            s.Z,
-                            { style: W.modalContent },
-                            ((e) => {
-                                switch (e) {
-                                    case F:
-                                        return a.createElement(a.Fragment, null, a.createElement(b.ZP, { size: "title4", style: W.modalHeader, weight: "bold" }, "How job recommendations work"), a.createElement(b.ZP, { size: "body", style: W.bodyText }, a.createElement(R.default, { style: W.icon }), "See jobs based on the job titles and locations you shared"), a.createElement(b.ZP, { size: "body", style: W.bodyText }, a.createElement(R.default, { style: W.icon }), "Update your recommendation settings at any point"), a.createElement(b.ZP, { size: "body", style: W.bodyText }, a.createElement(R.default, { style: W.icon }), "Help us fine tune your recommendations by using the ‘Save job’ and ‘Not interested’ buttons"));
-                                    case J:
-                                        return a.createElement(a.Fragment, null, a.createElement(b.ZP, { size: "title4", style: W.modalHeader, weight: "bold" }, "Your preferences have changed"), a.createElement(b.ZP, { size: "body", style: W.bodyText }, "Please refresh for updated job recommendations"));
-                                    default:
-                                        return a.createElement(s.Z, null);
-                                }
-                            })(n),
-                            a.createElement(
-                                S.ZP,
-                                { disabled: r, onPress: i, style: W.button, type: "brandFilled" },
-                                ((e) => {
-                                    switch (e) {
-                                        case J:
-                                            return "Refresh recommendations";
-                                        case F:
-                                            return "Show recommendations";
-                                        default:
-                                            return "";
-                                    }
-                                })(n),
-                            ),
-                        ),
-                    );
-                };
-            var V = n(62941);
-            const $ = j.Z,
-                N = ({ setActiveModal: e }) => {
-                    const [t, n] = a.useState(null),
-                        [l, r] = a.useState(!1),
-                        o = (0, p.Ji)(),
-                        s = (0, i.useHistory)(),
-                        { pathname: c } = (0, i.useLocation)(),
-                        { data: d, refetch: m, refetchStatus: u } = (0, _.A)($, { count: 10 }),
-                        h = d?.viewer_v2?.user_results?.result,
-                        b = h?.job_recommendations_results ?? [],
-                        g = h?.matching_profile ?? {},
-                        E = g.job_recommendations_refreshed_at,
-                        f = g.updated_at,
-                        y = b.find((e) => e.result)?.rest_id ?? null,
-                        x = !h || l || !E;
-                    return (
-                        a.useEffect(() => {
-                            "none" === u && r(!1);
-                        }, [u]),
-                        a.useEffect(() => {
-                            f && E && f > E && e(J);
-                        }, [E, f, e]),
-                        a.useEffect(() => {
-                            y && "/jobs/recommended" === c && o && !x && s.replace(`/jobs/recommended/${y}`);
-                        }, [y, s, c, o, x]),
-                        l ? a.createElement(V.Z, null) : a.createElement(a.Fragment, null, a.createElement(H, { items: b, refetchList: m, setIsLoading: r }), t && a.createElement(M, { onDismiss: () => n(null), refetchList: m, type: t }))
-                    );
-                },
-                O = { context: "JobRecommendationsList" },
-                U = (e) => a.createElement(r.H, { errorConfig: O }, a.createElement(N, e)),
-                K = g.default.create((e) => ({ emptyStateContainer: { display: "flex", flexDirection: "column", flex: 1, gap: 12, padding: e.spaces.space48, alignItems: "center" } })),
-                G = ({ subtext: e, title: t }) => a.createElement(s.Z, { style: K.emptyStateContainer }, a.createElement(b.ZP, { color: "text", size: "title3", weight: "bold" }, t), a.createElement(b.ZP, { color: "text" }, e), a.createElement(S.ZP, { link: "/jobs/get-recommendations", type: "primaryFilled" }, "Update preferences")),
-                Y = o.Z,
-                Q = { page: "job_recommendations", section: "all" },
-                X = () => {
-                    const [e, t] = a.useState(null),
-                        n = (0, i.useLocation)(),
-                        l = (0, u.p)(Y, {}),
-                        r = l?.viewer_v2?.user_results?.result?.job_recommendations_results ?? [],
-                        o = l?.viewer_v2?.user_results?.result?.matching_profile?.job_titles ?? [],
-                        p = a.useMemo(() => 0 === r.length, [r.length]),
-                        h = a.useMemo(() => 0 === o.length, [o.length]),
-                        b = a.useCallback(() => (h ? a.createElement(G, { subtext: "Share the job titles you’re interested in so we can find jobs that meet your preferences.", title: "You’re missing preferences" }) : p ? a.createElement(G, { subtext: "Update your preferences or check back soon for more job recommendations.", title: "Sorry, no jobs to see" }) : null), [h, p]),
-                        g = /\/jobs\/recommended\/\d+/.test(n.pathname);
-                    return a.createElement(m.nO, { namespace: Q }, a.createElement(d.Z, { locationKey: Q.page }, a.createElement(c.Z, { isRightRootActive: g, leftContent: a.createElement(s.Z, { style: { display: "flex", overflow: "auto", width: "30%" } }, a.createElement(U, { setActiveModal: t })), mobileRootStyles: { height: "calc(100vh - 68px)" }, overlay: b(), rightContent: a.createElement(k, { isLoading: Boolean(e) || p || h }), rootStyles: { height: "calc(100vh - 116px)" } })));
-                },
-                q = { context: "JobRecommendations" },
-                ee = () => a.createElement(r.H, { errorConfig: q }, a.createElement(l.Z, null, a.createElement(X, null)));
-        },
-        181666: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var a = n(488248),
-                l = n(202784),
-                r = (n(585488), n(351743)),
-                o = n.n(r);
-            const s = a.Z,
-                i = () => {
-                    const [e, t] = o()(s);
-                    return [
-                        l.useCallback(
-                            (t) => {
-                                e(t);
-                            },
-                            [e],
-                        ),
-                        t,
-                    ];
-                };
+                H = u.default.create((e) => ({ mobileDetailBackButton: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16 }, mobileDetailActionsItemBreak: { flexBasis: "100%" } })),
+                W = { context: "JobRecommendations" },
+                q = () => o.createElement(t.H, { errorConfig: W }, o.createElement(r.Z, null, o.createElement(O, null)));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-e6266db0.92cd31aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-e6266db0.10fc40ca.js.map

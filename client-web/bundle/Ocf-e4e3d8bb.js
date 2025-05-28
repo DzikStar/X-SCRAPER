@@ -2,52 +2,52 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Ocf-e4e3d8bb"],
     {
-        119754: (e, t, n) => {
-            n.d(t, { Z: () => r });
-            const r = () => n.e("ondemand.qrcode").then(n.t.bind(n, 374061, 19));
+        119754: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            const n = () => r.e("ondemand.qrcode").then(r.t.bind(r, 374061, 19));
         },
-        511473: (e, t, n) => {
-            n.d(t, { rf: () => l, uJ: () => p });
-            var r = n(332920),
-                a = n.n(r),
-                i = n(71620),
-                o = n(389073),
-                s = n(615656);
-            const c = a().e4ff75aa,
-                l = a().e4f6bd9e,
+        511473: (e, t, r) => {
+            r.d(t, { rf: () => l, uJ: () => p });
+            var n = r(111677),
+                i = r.n(n),
+                a = r(71620),
+                o = r(389073),
+                s = r(615656);
+            const c = i().e4ff75aa,
+                l = i().e4f6bd9e,
                 d = { [o.Z.Offline]: c },
-                p = (e, t, n) => {
-                    let r;
-                    const a = {
+                p = (e, t, r) => {
+                    let n;
+                    const i = {
                         [s.ZP.AccessDeniedByBouncer]: {
                             customAction: (t) => {
-                                (0, i.BJ)(t, { flow: e });
+                                (0, a.BJ)(t, { flow: e });
                             },
                         },
                     };
-                    if (n) r = { ...a, customErrorHandler: ({ errors: [r] }) => (r.code === s.ZP.AccessDeniedByBouncer ? (0, i.BJ)(r, { flow: e }) : n(t || (r.code && d[r.code]) || l), []) };
+                    if (r) n = { ...i, customErrorHandler: ({ errors: [n] }) => (n.code === s.ZP.AccessDeniedByBouncer ? (0, a.BJ)(n, { flow: e }) : r(t || (n.code && d[n.code]) || l), []) };
                     else if (t) {
                         const e = { toast: { text: t } };
-                        r = { [s.ZP.ValidationFailure]: e, [s.ZP.OnboardingFlowRetriableFailure]: e, [s.ZP.OnboardingFlowFailure]: e, defaultToast: { text: t }, showToast: !0, ...a };
-                    } else r = { ...a, [o.Z.Offline]: { toast: { text: d[o.Z.Offline] } }, defaultToast: { text: l }, showToast: !0 };
-                    return r;
+                        n = { [s.ZP.ValidationFailure]: e, [s.ZP.OnboardingFlowRetriableFailure]: e, [s.ZP.OnboardingFlowFailure]: e, defaultToast: { text: t }, showToast: !0, ...i };
+                    } else n = { ...i, [o.Z.Offline]: { toast: { text: d[o.Z.Offline] } }, defaultToast: { text: l }, showToast: !0 };
+                    return n;
                 };
         },
-        396987: (e, t, n) => {
-            n.d(t, { QF: () => s, Qo: () => c, hZ: () => o });
-            var r = n(918621);
-            const a = "external_referer",
-                i = 604800;
+        396987: (e, t, r) => {
+            r.d(t, { QF: () => s, Qo: () => c, hZ: () => o });
+            var n = r(918621);
+            const i = "external_referer",
+                a = 604800;
             function o(e) {
-                return (0, r.ej)({ cookieName: a, featureSwitches: e });
+                return (0, n.ej)({ cookieName: i, featureSwitches: e });
             }
             function s(e, t) {
-                const n = (t && t.encryptedReferralDetails) || "",
+                const r = (t && t.encryptedReferralDetails) || "",
                     o = (t && t.encryptedReferer) || "",
                     s = t && void 0 !== t.referralType ? `${t.referralType}` : "";
-                if (!n && !o && !s) return;
-                const c = `${encodeURIComponent(o)}|${s}|${encodeURIComponent(n)}`;
-                (0, r.d8)(a, c, { cookieOptions: { maxAge: i, encode: (e) => e }, featureSwitches: e });
+                if (!r && !o && !s) return;
+                const c = `${encodeURIComponent(o)}|${s}|${encodeURIComponent(r)}`;
+                (0, n.d8)(i, c, { cookieOptions: { maxAge: a, encode: (e) => e }, featureSwitches: e });
             }
             const c = (e) => {
                 const t = o(e);
@@ -57,80 +57,80 @@
                 }
             };
         },
-        553093: (e, t, n) => {
-            n.d(t, { Sz: () => r });
-            const r = (e) => {
+        553093: (e, t, r) => {
+            r.d(t, { Sz: () => n });
+            const n = (e) => {
                     const t = (JSON.stringify(e) || "").split("");
                     t.sort();
-                    const n = t.join("");
-                    return a(n, 0).toString();
+                    const r = t.join("");
+                    return i(r, 0).toString();
                 },
-                a = (e, t) => {
-                    const n = "string" == typeof e ? e : String(e);
-                    let r = t;
-                    for (let e = 0; e < n.length; e++) {
-                        (r = (r << 5) - r + n.charCodeAt(e)), (r |= 0);
+                i = (e, t) => {
+                    const r = "string" == typeof e ? e : String(e);
+                    let n = t;
+                    for (let e = 0; e < r.length; e++) {
+                        (n = (n << 5) - n + r.charCodeAt(e)), (n |= 0);
                     }
-                    return r;
+                    return n;
                 };
         },
-        221973: (e, t, n) => {
-            n.d(t, { ZP: () => c });
-            n(694898), n(38857), n(540171), n(157093), n(265688), n(270315), n(592529), n(86943), n(691157), n(875640);
-            const r = Object.freeze({ enrollment: "enrollment", verification: "verification" }),
-                a = (e) => {
+        221973: (e, t, r) => {
+            r.d(t, { ZP: () => c });
+            r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(875640);
+            const n = Object.freeze({ enrollment: "enrollment", verification: "verification" }),
+                i = (e) => {
                     const t = new Uint8Array(e);
-                    let n = "";
-                    return t.forEach((e) => (n += String.fromCharCode(e))), i(btoa(n));
+                    let r = "";
+                    return t.forEach((e) => (r += String.fromCharCode(e))), a(btoa(r));
                 },
-                i = (e) => e.replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, ""),
+                a = (e) => e.replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, ""),
                 o = (e) => {
-                    const t = (n = e).replace(/-/g, "+").replace(/_/g, "/") + "====".substring(0, (4 - (n.length % 4)) % 4);
-                    var n;
-                    const r = window.atob(t);
-                    return new Uint8Array(r.length).map((e, t) => r.charCodeAt(t)).buffer;
+                    const t = (r = e).replace(/-/g, "+").replace(/_/g, "/") + "====".substring(0, (4 - (r.length % 4)) % 4);
+                    var r;
+                    const n = window.atob(t);
+                    return new Uint8Array(n.length).map((e, t) => n.charCodeAt(t)).buffer;
                 },
                 s = window.__CHALLENGE_2FA__;
             delete window.__CHALLENGE_2FA__;
             const c = (e, t) => {
                 if (s) return Promise.resolve(s);
-                const n = ((e, t) => {
-                    if (t === r.enrollment) {
+                const r = ((e, t) => {
+                    if (t === n.enrollment) {
                         const t = { publicKey: { challenge: o(e.challenge), rp: e.rp, user: { ...e.user, id: o(e.user.id) }, pubKeyCredParams: e.pubKeyCredParams, attestation: e.attestation, excludeCredentials: e.excludeCredentials.map((e) => ({ ...e, id: o(e.id) })), extensions: e.extensions, timeout: 6e4, authenticatorSelection: { authenticatorAttachment: "cross-platform", userVerification: "discouraged" } } };
                         return () => navigator.credentials?.create(t) || Promise.resolve();
                     }
                     {
                         const { publicKeyCredentialRequestOptions: t } = e,
-                            r = { publicKey: { rpId: "twitter.com", extensions: { appid: t.extensions.appid }, challenge: o(t.challenge), userVerification: "discouraged", timeout: 6e4, allowCredentials: ((n = t.allowCredentials), n.map((e) => ({ type: "public-key", id: o(e.id) }))) } };
-                        return () => navigator.credentials?.get(r) || Promise.resolve();
+                            n = { publicKey: { rpId: "twitter.com", extensions: { appid: t.extensions.appid }, challenge: o(t.challenge), userVerification: "discouraged", timeout: 6e4, allowCredentials: ((r = t.allowCredentials), r.map((e) => ({ type: "public-key", id: o(e.id) }))) } };
+                        return () => navigator.credentials?.get(n) || Promise.resolve();
                     }
-                    var n;
+                    var r;
                 })(e, t);
-                return n().then((e) => {
+                return r().then((e) => {
                     if (e)
                         return ((e, t) => {
-                            const { id: n, response: i, type: o } = e;
+                            const { id: r, response: a, type: o } = e;
                             let s;
-                            return t === r.enrollment && i.attestationObject ? (s = { id: n, type: o, response: { clientDataJSON: a(i.clientDataJSON), attestationObject: a(i.attestationObject) }, clientExtensionResults: {} }) : t === r.verification && i.authenticatorData && (s = { id: n, type: o, response: { clientDataJSON: a(i.clientDataJSON), authenticatorData: a(i.authenticatorData), signature: a(i.signature), userHandle: "" }, clientExtensionResults: { appid: !0 } }), JSON.stringify(s || "");
+                            return t === n.enrollment && a.attestationObject ? (s = { id: r, type: o, response: { clientDataJSON: i(a.clientDataJSON), attestationObject: i(a.attestationObject) }, clientExtensionResults: {} }) : t === n.verification && a.authenticatorData && (s = { id: r, type: o, response: { clientDataJSON: i(a.clientDataJSON), authenticatorData: i(a.authenticatorData), signature: i(a.signature), userHandle: "" }, clientExtensionResults: { appid: !0 } }), JSON.stringify(s || "");
                         })(e, t);
                 });
             };
         },
-        343018: (e, t, n) => {
-            n.d(t, { n: () => r });
-            const r = Object.freeze({ TopicFollowCount: "topic_follow_count" });
+        343018: (e, t, r) => {
+            r.d(t, { n: () => n });
+            const n = Object.freeze({ TopicFollowCount: "topic_follow_count" });
         },
-        449850: (e, t, n) => {
-            n.d(t, { Zk: () => a, lq: () => r });
+        449850: (e, t, r) => {
+            r.d(t, { Zk: () => i, lq: () => n });
             Object.freeze({ icon: "icon", bullet_icon: "bullet_icon", image: "image" });
-            const r = Object.freeze({ headerTitle: "header_title", headerSubtitle: "header_subtitle", sectionTitle: "section_title", detailText: "detail" }),
-                a = Object.freeze({ TOP: "top", CENTER: "center", BOTTOM: "bottom" });
+            const n = Object.freeze({ headerTitle: "header_title", headerSubtitle: "header_subtitle", sectionTitle: "section_title", detailText: "detail" }),
+                i = Object.freeze({ TOP: "top", CENTER: "center", BOTTOM: "bottom" });
         },
-        730996: (e, t, n) => {
-            n.d(t, { W: () => a, g: () => r });
-            n(571372);
-            const r = Object.freeze({ AppealTweetWarning: "appealtweet", LimitedDiscoveryAppealTweet: "limiteddiscoveryappealtweet", ProfileOnlyDiscoveryAppealTweet: "profileonlydiscoveryappealtweet", DMConversation: "reportdmconversation", DMMessage: "reportdmconversation", HideCommunityTweet: "hidetweet", Moment: "reportmoment", RemoveCommunityMember: "removecommunitymember", Tweet: "reporttweet", List: "reportlist", User: "reportprofile", Space: "reportspace", AppealSuspension: "appealsuspension", Notification: "notification" });
-            function a(e) {
+        730996: (e, t, r) => {
+            r.d(t, { W: () => i, g: () => n });
+            r(571372);
+            const n = Object.freeze({ AppealTweetWarning: "appealtweet", LimitedDiscoveryAppealTweet: "limiteddiscoveryappealtweet", ProfileOnlyDiscoveryAppealTweet: "profileonlydiscoveryappealtweet", DMConversation: "reportdmconversation", DMMessage: "reportdmconversation", HideCommunityTweet: "hidetweet", Moment: "reportmoment", RemoveCommunityMember: "removecommunitymember", Tweet: "reporttweet", List: "reportlist", User: "reportprofile", Space: "reportspace", AppealSuspension: "appealsuspension", Notification: "notification" });
+            function i(e) {
                 switch (e) {
                     case "appealtweet":
                     case "limiteddiscoveryappealtweet":
@@ -151,42 +151,42 @@
                 }
             }
         },
-        946108: (e, t, n) => {
-            n.d(t, { m: () => r });
-            n(202784);
-            const r = Object.freeze({ TopicCategory: "topic_category", Topic: "topic" });
+        946108: (e, t, r) => {
+            r.d(t, { m: () => n });
+            r(202784);
+            const n = Object.freeze({ TopicCategory: "topic_category", Topic: "topic" });
         },
-        158272: (e, t, n) => {
-            n.d(t, { Kh: () => s, OQ: () => d, iW: () => l, xG: () => p, z_: () => c });
-            n(875640), n(694898), n(38857), n(540171), n(157093), n(265688), n(270315), n(592529), n(86943), n(691157), n(571372);
-            var r = n(332920),
-                a = n.n(r);
-            function i(e) {
+        158272: (e, t, r) => {
+            r.d(t, { Kh: () => s, OQ: () => d, iW: () => l, xG: () => p, z_: () => c });
+            r(875640), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(571372);
+            var n = r(111677),
+                i = r.n(n);
+            function a(e) {
                 const t = e.replace(/-/g, "+").replace(/_/g, "/"),
-                    n = atob(t),
-                    r = n.length,
-                    a = new ArrayBuffer(r),
-                    i = new Uint8Array(a);
-                for (let e = 0; e < r; e++) i[e] = n.charCodeAt(e);
-                return a;
+                    r = atob(t),
+                    n = r.length,
+                    i = new ArrayBuffer(n),
+                    a = new Uint8Array(i);
+                for (let e = 0; e < n; e++) a[e] = r.charCodeAt(e);
+                return i;
             }
             function o(e) {
                 const t = new Uint8Array(e),
-                    n = String.fromCharCode(...t);
-                return btoa(n).replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, "");
+                    r = String.fromCharCode(...t);
+                return btoa(r).replace(/\+/g, "-").replace(/(\/)/g, "_").replace(/=/g, "");
             }
-            const s = a().e4f6bd9e,
-                c = a().ac966f94;
+            const s = i().e4f6bd9e,
+                c = i().ac966f94;
             function l() {
                 return "undefined" != typeof window && !!window.PublicKeyCredential;
             }
             function d(e) {
                 const t = JSON.parse(e);
                 return (
-                    (t.challenge = i(t.challenge)),
-                    (t.user.id = i(t.user.id)),
+                    (t.challenge = a(t.challenge)),
+                    (t.user.id = a(t.user.id)),
                     t.excludeCredentials.forEach((e) => {
-                        e.id = i(e.id);
+                        e.id = a(e.id);
                     }),
                     "undefined" != typeof window && navigator.credentials
                         ? navigator.credentials.create({ publicKey: t }).then((e) => {
@@ -199,7 +199,7 @@
             function p(e) {
                 const t = JSON.parse(e).publicKeyCredentialRequestOptions;
                 return (
-                    (t.challenge = i(t.challenge)),
+                    (t.challenge = a(t.challenge)),
                     "undefined" != typeof window && navigator.credentials
                         ? navigator.credentials.get({ publicKey: t }).then((e) => {
                               if (!e) throw new Error("NotAllowedError");
@@ -209,136 +209,218 @@
                 );
             }
         },
-        146361: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var r = n(118823),
-                a = n(990350);
-            const i = (0, r.YW)({ task: (e) => e.withEndpoint(a.Z).task });
+        146361: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(118823),
+                i = r(990350);
+            const a = (0, n.YW)({ task: (e) => e.withEndpoint(i.Z).task });
         },
-        996563: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var r = n(118823),
-                a = n(447281);
-            const i = (0, r.YW)({ task: (e) => e.withEndpoint(a.Z).task });
+        996563: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(118823),
+                i = r(447281);
+            const a = (0, n.YW)({ task: (e) => e.withEndpoint(i.Z).task });
         },
-        395042: (e, t, n) => {
-            n.d(t, { El: () => d, HR: () => p, Zc: () => u });
-            var r = n(226395),
-                a = n(499627),
-                i = n(917799);
-            const o = "settings/usernames",
-                s = "rweb/settings/usernames/CLEAR_USERNAME_AVAILABILITY",
-                c = Object.freeze({ REQUEST: "rweb/settings/usernames/FETCH_USERNAMES_REQUEST", SUCCESS: "rweb/settings/usernames/FETCH_USERNAMES_SUCCESS", FAILURE: "rweb/settings/usernames/FETCH_USERNAMES_FAILURE" }),
-                l = { isLoaded: !1 };
-            const d = (e) => e[o],
-                p =
+        508765: (e, t, r) => {
+            r.d(t, { C6: () => A, GJ: () => M, HR: () => C, Il: () => N, NJ: () => T, OG: () => H, T_: () => V, Xw: () => y, Ys: () => U, _D: () => O, b4: () => B, ck: () => F, g3: () => v, o8: () => Z, u$: () => I, vW: () => h });
+            var n = r(226395),
+                i = r(499627),
+                a = r(917799),
+                o = r(56519),
+                s = r(497294);
+            const c = `${r(291020).Y}/profile`,
+                l = `rweb/${c}`,
+                d = a.dg(l, "REMOVE_PROFILE_BANNER"),
+                p = a.dg(l, "UPDATE_PROFILE"),
+                E = a.dg(l, "UPDATE_PROFILE_AVATAR"),
+                u = a.dg(l, "UPDATE_PROFILE_BANNER"),
+                f = a.dg(l, "UPLOAD_MEDIA"),
+                _ = Object.freeze({ REQUEST: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
+                m = Object.freeze({ REQUEST: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
+                g = Object.freeze({ REQUEST: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_FAILURE" }),
+                w = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null };
+            const A = (e) => e[c].avatarMediaId,
+                h = (e) => e[c].bannerMediaId,
+                I = (e) => e[c].profileSettings,
+                S = "rweb/settings/profile/ADD_AVATAR_MEDIA",
+                O = (e) => ({ meta: { mediaId: e }, type: S }),
+                b = "rweb/settings/profile/REMOVE_AVATAR_MEDIA",
+                y = (e) => ({ meta: { mediaId: e }, type: b }),
+                R = "rweb/settings/profile/ADD_BANNER_MEDIA",
+                T = (e) => ({ meta: { mediaId: e }, type: R }),
+                P = "rweb/settings/profile/REMOVE_BANNER_MEDIA",
+                C = (e) => ({ meta: { mediaId: e }, type: P }),
+                N =
+                    () =>
+                    (e, t, { api: r }) =>
+                        a._O(e, { request: r.withEndpoint(n.Z).fetchUserProfilePhoneState, params: {} })({ actionTypes: g, context: "ACTION_FETCH_VERIFIED_PHONE_LABEL" }, (e) => {
+                            if (e) return e;
+                        }),
+                L = "rweb/settings/profile/PERSIST_PROFILE_SETTINGS",
+                v = (e) => ({ meta: { profileSettings: e }, type: L }),
+                D = "rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS",
+                U = () => ({ type: D }),
+                Z =
                     (e) =>
-                    (t, n, { api: a }) =>
-                        (0, i._O)(t, { params: e, request: a.withEndpoint(r.Z).usernameAvailable })({ actionTypes: c, context: "FETCH_SETTINGS_USERNAME_AVAILABLE", meta: { username: e.username } }),
-                u = (e) => ({ type: s, meta: e });
-            a.Z.register({
-                [o]: function (e = l, t) {
+                    (t, r, { api: i }) =>
+                        a._O(t, { params: e, request: i.withEndpoint(n.Z).removeProfileBanner })({ actionTypes: d, context: "ACTION_REMOVE_USER_BANNER" }, (e) => {
+                            if (e) return [(0, o.dP)({ users: { [e.id_str]: { ...e, profile_banner_url: null } } })];
+                        }),
+                F =
+                    (e) =>
+                    (t, r, { api: i }) =>
+                        a._O(t, { params: e, request: i.withEndpoint(n.Z).updateProfile })({ actionTypes: p, context: "ACTION_UPDATE_PROFILE_SETTINGS" }, (e) => {
+                            if (e && e.entities) return [(0, o.dP)(e.entities)];
+                        }),
+                x =
+                    (e, t, r) =>
+                    (n) =>
+                    (i, c, { api: l }) => {
+                        i({ type: f.REQUEST });
+                        const d = s.$i(n);
+                        return i(d).then(
+                            ([n]) => {
+                                i([{ type: f.SUCCESS }, { type: e.REQUEST }]);
+                                return a._O(i, { params: { media_id: n.uploadId }, request: r(l) })({ actionTypes: p, context: t }, (e) => {
+                                    if (e) return [(0, o.dP)({ users: { [e.id_str]: e } })];
+                                });
+                            },
+                            (e) => (i({ type: f.FAILURE }), Promise.reject(e)),
+                        );
+                    },
+                B = x(E, "ACTION_UPDATE_USER_AVATAR", (e) => e.withEndpoint(n.Z).updateProfileAvatar),
+                V = x(u, "ACTION_UPDATE_USER_BANNER", (e) => e.withEndpoint(n.Z).updateProfileBanner),
+                H =
+                    () =>
+                    (e, t, { api: r }) =>
+                        a._O(e, { request: r.withEndpoint(n.Z).enableVerifiedPhoneLabel, params: {} })({ actionTypes: _, context: "ACTION_ENABLE_VERIFIED_PHONE_LABEL" }),
+                M =
+                    () =>
+                    (e, t, { api: r }) =>
+                        a._O(e, { request: r.withEndpoint(n.Z).disableVerifiedPhoneLabel, params: {} })({ actionTypes: m, context: "ACTION_DISABLE_VERIFIED_PHONE_LABEL" });
+            i.Z.register({
+                [c]: function (e = w, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case c.REQUEST:
-                            return { ...e, isLoading: !0 };
-                        case c.FAILURE:
-                            return { ...e, isLoading: !1 };
-                        case c.SUCCESS:
-                            return { ...e, ...t.payload, username: t.meta.username, isLoading: !1 };
-                        case s:
-                            return { isLoading: !1, suggestions: t.meta?.persistSuggestions ? e.suggestions : void 0 };
+                        case S:
+                            return { ...e, avatarMediaId: t.meta.mediaId };
+                        case b:
+                            return { ...e, avatarMediaId: null };
+                        case R:
+                            return { ...e, bannerMediaId: t.meta.mediaId };
+                        case P:
+                            return { ...e, bannerMediaId: null };
+                        case g.SUCCESS:
+                            return { ...e, hasVerifiedPhone: t?.payload?.user_phone_state?.has_verified_phone || !1, labelDisplayOptIn: t?.payload?.user_phone_state?.label_display_opt_in || !1 };
+                        case L:
+                            return { ...e, profileSettings: t.meta.profileSettings };
+                        case D:
+                            return { ...e, profileSettings: null };
+                        case f.REQUEST:
+                            return { ...e, isUploading: !0 };
+                        case f.FAILURE:
+                        case f.SUCCESS:
+                            return { ...e, isUploading: !1 };
                         default:
                             return e;
                     }
                 },
             });
         },
-        48498: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var r = n(644829),
-                a = n(218951);
-            const i = ({ flow_token: e, subtask_id: t }) => (0, a.Z)({ timelineId: `nux-user-recos-${t}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchNUXUserRecommendations, getEndpointParams: (n) => ({ ...n, subtask_id: t, flow_token: e }) }, context: "FETCH_NUX_USER_RECOS", perfKey: "nux-user-recos" });
+        383675: (e, t, r) => {
+            r.d(t, { R: () => c, Z: () => s });
+            var n = r(503768),
+                i = r(644829),
+                a = r(750085),
+                o = r(218951);
+            const s = ({ endpointParams: e, endpointUrl: t, isUserRefreshable: r, timelineId: n }) => (0, o.Z)({ timelineId: n, isUserRefreshable: r, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchGeneric, getEndpointParams: ({ count: r, cursor: n }) => ({ ...e, cursor: "string" == typeof n ? n : void 0, count: r, endpointUrl: t }) }, context: "FETCH_TIMELINE", perfKey: "generic" }),
+                c = (e, t) => (0, o.Z)({ timelineId: `generic-graphql-timeline-${e}`, isUserRefreshable: t, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchGenericTimelineById, getEndpointParams: ({ count: t, cursor: r }) => ({ cursor: "string" == typeof r ? r : void 0, count: t, timelineId: e }) }, formatResponse: a.Z, context: "FETCH_GENERIC_TIMELINE_GQL", perfKey: "genericGQL" });
         },
-        745888: (e, t, n) => {
-            n.d(t, { Z: () => p });
-            var r = n(360917),
-                a = n.n(r),
-                i = n(24949),
-                o = n(716406),
-                s = n(312771),
-                c = n(502909),
-                l = n(600823);
+        48498: (e, t, r) => {
+            r.d(t, { Z: () => a });
+            var n = r(644829),
+                i = r(218951);
+            const a = ({ flow_token: e, subtask_id: t }) => (0, i.Z)({ timelineId: `nux-user-recos-${t}`, network: { getEndpoint: (e) => e.withEndpoint(n.Z).fetchNUXUserRecommendations, getEndpointParams: (r) => ({ ...r, subtask_id: t, flow_token: e }) }, context: "FETCH_NUX_USER_RECOS", perfKey: "nux-user-recos" });
+        },
+        745888: (e, t, r) => {
+            r.d(t, { Z: () => p });
+            var n = r(360917),
+                i = r.n(n),
+                a = r(24949),
+                o = r(716406),
+                s = r(312771),
+                c = r(502909),
+                l = r(600823);
             const d = (e) => ({ valid: !0 });
             function p(e = {}) {
-                const { localValidator: t = d, ...n } = e,
-                    r = (0, c.ZP)({ customActions: { clear: { reducer: (e, t) => ({}) } }, ...n });
-                (r.clear = () => (e) => e({ type: r.customActionTypes.clear.SUCCESS })),
-                    (r.validate = (e, n) => (a) => {
-                        const i = t(e, n);
-                        return i.valid ? a(r.fetchOneIfNeeded(e, n)) : (a(r.add({ [e]: i })), Promise.resolve());
+                const { localValidator: t = d, ...r } = e,
+                    n = (0, c.ZP)({ customActions: { clear: { reducer: (e, t) => ({}) } }, ...r });
+                (n.clear = () => (e) => e({ type: n.customActionTypes.clear.SUCCESS })),
+                    (n.validate = (e, r) => (i) => {
+                        const a = t(e, r);
+                        return a.valid ? i(n.fetchOneIfNeeded(e, r)) : (i(n.add({ [e]: a })), Promise.resolve());
                     });
                 return (
-                    (r.selectEntitiesWithFetchStatus = (0, i.P1)(
-                        r.selectAll,
-                        (e) => r.selectState(e).fetchStatus || a(),
+                    (n.selectEntitiesWithFetchStatus = (0, a.P1)(
+                        n.selectAll,
+                        (e) => n.selectState(e).fetchStatus || i(),
                         (e, t) =>
-                            (0, o.Z)(t, (t, n) => {
-                                const r = e[n] || {};
-                                return { ...r, valid: !!r.valid || t === s.ZP.FAILED, isLoading: t === s.ZP.LOADING };
+                            (0, o.Z)(t, (t, r) => {
+                                const n = e[r] || {};
+                                return { ...n, valid: !!n.valid || t === s.ZP.FAILED, isLoading: t === s.ZP.LOADING };
                             }),
                     )),
-                    l.Z.register(r)
+                    l.Z.register(n)
                 );
             }
         },
-        917920: (e, t, n) => {
-            n.d(t, { Z: () => p });
-            var r = n(251067),
-                a = n(332920),
-                i = n.n(a),
-                o = n(335149),
-                s = n(745888);
+        917920: (e, t, r) => {
+            r.d(t, { Z: () => p });
+            var n = r(251067),
+                i = r(111677),
+                a = r.n(i),
+                o = r(183118),
+                s = r(745888);
             const c = new RegExp("^[a-zA-Z0-9_\\-+\\.!\\&]+@(?:[a-zA-Z0-9\\-_]+\\.)+[a-zA-Z]{2,63}$"),
-                l = i().hc72e1fc,
-                d = i().bc0ad88a,
-                p = (0, s.Z)({ namespace: "emailValidity", fetchOneContext: "FETCH_EMAIL_VALIDITY", fetchOneEndpoint: (e) => e.withEndpoint(o.Z).isEmailAvailable, fetchOneParams: ([e], t) => ({ email: e, ...t }), localValidator: (e) => (c.test(e) ? (!r.yV && /\+\d+@/.test(e) ? { errorMessage: d, valid: !1 } : { valid: !0 }) : { errorMessage: l, valid: !1 }) });
+                l = a().hc72e1fc,
+                d = a().bc0ad88a,
+                p = (0, s.Z)({ namespace: "emailValidity", fetchOneContext: "FETCH_EMAIL_VALIDITY", fetchOneEndpoint: (e) => e.withEndpoint(o.Z).isEmailAvailable, fetchOneParams: ([e], t) => ({ email: e, ...t }), localValidator: (e) => (c.test(e) ? (!n.yV && /\+\d+@/.test(e) ? { errorMessage: d, valid: !1 } : { valid: !0 }) : { errorMessage: l, valid: !1 }) });
         },
-        878137: (e, t, n) => {
-            n.d(t, { Z: () => d });
-            var r = n(332920),
-                a = n.n(r),
-                i = n(335149),
-                o = n(71620),
-                s = n(623109),
-                c = n(745888);
-            const l = a().d5568440,
+        878137: (e, t, r) => {
+            r.d(t, { Z: () => d });
+            var n = r(111677),
+                i = r.n(n),
+                a = r(183118),
+                o = r(71620),
+                s = r(623109),
+                c = r(745888);
+            const l = i().d5568440,
                 d = (0, c.Z)({
                     namespace: "passwordValidity",
                     fetchOneContext: "FETCH_PASSWORD_VALIDITY",
-                    fetchOneEndpoint: (e) => e.withEndpoint(i.Z).fetchPasswordStrength,
+                    fetchOneEndpoint: (e) => e.withEndpoint(a.Z).fetchPasswordStrength,
                     fetchOneParams: ([e], t) => ({ password: e, ...t }),
                     localValidator: (e, t) => {
-                        const n = !(!t || !t.username) && e === t.username,
-                            r = e.length >= s.l,
-                            a = e.length <= s.E;
-                        let i = l;
-                        return r ? a || (i = o.IM) : (i = o.px), { errorMessage: !n && r && a ? void 0 : i, valid: r && a && !n };
+                        const r = !(!t || !t.username) && e === t.username,
+                            n = e.length >= s.l,
+                            i = e.length <= s.E;
+                        let a = l;
+                        return n ? i || (a = o.IM) : (a = o.px), { errorMessage: !r && n && i ? void 0 : a, valid: n && i && !r };
                     },
                 });
         },
-        580134: (e, t, n) => {
-            n.d(t, { Z: () => l });
-            var r = n(332920),
-                a = n.n(r),
-                i = n(335149),
-                o = n(745888);
+        580134: (e, t, r) => {
+            r.d(t, { Z: () => l });
+            var n = r(111677),
+                i = r.n(n),
+                a = r(183118),
+                o = r(745888);
             const s = new RegExp("^\\+?[0-9\\-\\.\\(\\)\\s]{7,1000}$"),
-                c = a().cd24fe60,
+                c = i().cd24fe60,
                 l = (0, o.Z)({
                     namespace: "phoneNumberValidity",
                     fetchOneContext: "FETCH_PHONE_VALIDITY",
-                    fetchOneEndpoint: (e) => e.withEndpoint(i.Z).isPhoneNumberAvailable,
+                    fetchOneEndpoint: (e) => e.withEndpoint(a.Z).isPhoneNumberAvailable,
                     fetchOneParams: ([e], t) => ({ raw_phone_number: e, ...t }),
                     localValidator: (e) => {
                         const t = s.test(e);
@@ -346,16 +428,6 @@
                     },
                 });
         },
-        611423: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var r = n(553093),
-                a = n(383675);
-            const i = ({ timelinePrefix: e = "generic-timeline-", urtUrl: t }) => {
-                const { url: n, urtEndpointOptions: i } = t,
-                    { cacheId: o, requestParams: s, timeline: c } = i || {};
-                return c?.id ? (0, a.R)(c.id) : (0, a.Z)({ timelineId: o || `${e}${(0, r.Sz)(t)}`, endpointUrl: n, endpointParams: s || {} });
-            };
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-e4e3d8bb.a113740a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-e4e3d8bb.7d6478ca.js.map

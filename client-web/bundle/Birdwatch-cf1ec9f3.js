@@ -6,7 +6,7 @@
             n.d(t, { Z: () => f });
             var a = n(202784),
                 l = n(457311),
-                r = n(332920),
+                r = n(111677),
                 o = n.n(r),
                 s = n(443781);
             const i = { external: !0, pathname: "https://twitter.github.io/communitynotes/writing-notes" },
@@ -39,7 +39,7 @@
                 f = n(952428),
                 h = n(190286),
                 E = n(392237),
-                _ = n(332920),
+                _ = n(111677),
                 b = n.n(_),
                 w = n(698891),
                 y = n(47086),
@@ -304,7 +304,7 @@
                 c = n(420412),
                 d = n(247056),
                 u = n(392237),
-                m = n(332920),
+                m = n(111677),
                 p = n.n(m),
                 g = n(607127),
                 f = n(711223),
@@ -439,4 +439,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.bc8c3b7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.f3b756da.js.map

@@ -121,7 +121,7 @@
             const I = n.default.create((e) => ({ attachmentReceivedSquared: { borderBottomEndRadius: e.borderRadii.none }, attachmentSentSquared: { borderBottomStartRadius: e.borderRadii.none }, card: { marginBottom: e.spaces.space2 }, receivedMessageWrapper: { alignSelf: "flex-start" }, sentMessageWrapper: { alignSelf: "flex-end" }, vdlMessageWrapper: { paddingTop: e.spaces.space4 }, received: { borderBottomStartRadius: e.borderRadii.none }, sent: { borderBottomEndRadius: e.borderRadii.none }, textReceivedSquared: { borderTopEndRadius: e.borderRadii.none }, textSentSquared: { borderTopStartRadius: e.borderRadii.none } })),
                 P = F(W);
             var O = a(731708),
-                q = a(332920),
+                q = a(111677),
                 z = a.n(q);
             const H = z().f7204380;
             class U extends s.Component {
@@ -718,4 +718,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-2ace928a.8de8c36a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-2ace928a.dd2c80fa.js.map

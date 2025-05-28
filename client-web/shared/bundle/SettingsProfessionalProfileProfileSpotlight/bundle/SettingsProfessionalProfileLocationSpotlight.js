@@ -105,7 +105,7 @@
             o.d(t, { Z: () => I });
             o(136728);
             var n = o(202784),
-                r = o(332920),
+                r = o(111677),
                 a = o.n(r),
                 i = o(187669),
                 l = o(443781),
@@ -353,7 +353,7 @@
         },
         800536: (e, t, o) => {
             o.d(t, { Pl: () => c, V5: () => i, bL: () => l, openTimesTypes: () => s });
-            var n = o(332920),
+            var n = o(111677),
                 r = o.n(n),
                 a = o(709402);
             const i = "/settings/professional_profile/profile_spotlight",
@@ -382,4 +382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight.9a8f564a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight.230dda9a.js.map

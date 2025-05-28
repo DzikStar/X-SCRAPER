@@ -3,7 +3,7 @@
     ["node_modules_x-clients_features_messages_hu_json"],
     {
         762881: (e) => {
-            e.exports = JSON.parse('{"Retry":"Újrapróbálkozás","People":"Emberek","Edit":"Szerkesztés","Something went wrong.":"Valami hiba történt.","None":"Nincs","Conversation info":"Beszélgetés adatai","Add people":"Emberek hozzáadása","Group info":"Csoportinformációk","Something went wrong. Try reloading.":"Valami hiba történt. Próbáld meg újra betölteni!","Live on X":"Élőben az X-en"}');
+            e.exports = JSON.parse('{"Retry":"Újrapróbálkozás","Message":"Üzenet","Members":"Tagok","On":"Bekapcsolva","Edit":"Szerkesztés","Off":"Kikapcsolva","Dismiss":"Kihagyás","Something went wrong.":"Valami hiba történt.","None":"Nincs","Add members":"Tagok hozzáadása","Something went wrong. Try reloading.":"Valami hiba történt. Próbáld meg újra betölteni!","Live on X":"Élőben az X-en","Rate limit exceeded. Please try again later.":"Elérted az értékelési határt. Próbálkozz újra később!","Chats":"Csevegések"}');
         },
     },
 ]);

@@ -52,7 +52,7 @@
                 l = t(436059),
                 o = t(407250),
                 c = t(202784),
-                d = t(611463),
+                d = t(368301),
                 m = t(379342),
                 x = t(533476);
             const u = ({ groupId: e, token: s }) => {
@@ -119,13 +119,13 @@
                 c = t(887390),
                 d = t(921879),
                 m = t(202784),
-                x = t(611463),
+                x = t(368301),
                 u = t(533476),
                 p = t(658358),
                 h = t(466285),
                 f = t(620134),
-                g = t(889198),
-                v = t(107039);
+                g = t(458872),
+                v = t(875515);
             const j = ({ conversationId: e, onVisibilityChange: s }) => {
                     const [t, l] = (0, m.useState)(null),
                         o = (0, x.n)();
@@ -208,13 +208,13 @@
                 };
         },
         707513: (e, s, t) => {
-            t.d(s, { P: () => b });
+            t.d(s, { P: () => N });
             var n = t(552322),
                 a = t(159603),
                 i = t(289752),
                 r = t(130844),
                 l = t(941204),
-                o = t(861514),
+                o = t(89195),
                 c = t(517922),
                 d = t(556160);
             const m = a.com.x.models.dm.PostLoadingState,
@@ -230,20 +230,21 @@
                 let t = null;
                 return e instanceof h.UrlCard.Resolved && (t = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "max-w-[320px] max-h-[400px] rounded-t-2xl rounded-b-none border border-gray-200 shadow-md" })), e instanceof h.UrlCard.Loading && (t = (0, n.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, n.jsx)(p.P, {}) })), (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100", onClick: () => window.open(e.urlToOpen, "_blank"), children: [t, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4 hover:bg-gray-50/50", children: [e.displayTitle && (0, n.jsx)(l.x, { weight: "medium", children: e.displayTitle }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(l.x, { color: "gray900", size: "subtext2", children: e.displayHostname }), (0, n.jsx)(o.Z, { className: "text-gray-500 size-4" })] })] })] });
             }
-            var v = t(83083);
-            const j = a.com.x.dms.model.MessageItemAttachment,
-                y = a.com.x.dms.chat.DmEvent,
-                w = a.com.x.dms.model.MediaUriState;
-            function b({ attachment: e, isReceived: s, onEvent: t, className: r }) {
-                if (e instanceof j.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
-                if (e instanceof j.UrlCard) return (0, n.jsx)(g, { urlCard: e, onEvent: t });
-                if (e instanceof j.Media) {
-                    if (e instanceof j.Media.FromServer) {
-                        if ((e.uriState instanceof w.AttachmentNeedsResolving && t(new y.ResolveAttachment(e.uriState)), e.uriState instanceof w.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
-                        if (e.uriState instanceof w.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
-                        if (e.uriState === w.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
+            var v = t(83083),
+                j = t(858108);
+            const y = a.com.x.dms.model.MessageItemAttachment,
+                w = a.com.x.dms.chat.DmEvent,
+                b = a.com.x.dms.model.MediaUriState;
+            function N({ attachment: e, isReceived: s, onEvent: t, className: r }) {
+                if (e instanceof y.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
+                if (e instanceof y.UrlCard) return (0, n.jsx)(g, { urlCard: e, onEvent: t });
+                if (e instanceof y.Media) {
+                    if (e instanceof y.Media.FromServer) {
+                        if ((e.uriState instanceof b.AttachmentNeedsResolving && !(0, j.G)() && t(new w.ResolveAttachment(e.uriState)), e.uriState instanceof b.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
+                        if (e.uriState instanceof b.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                        if (e.uriState === b.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
                     }
-                    if (e instanceof j.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                    if (e instanceof y.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
                 }
                 return null;
             }
@@ -253,7 +254,7 @@
             var n = t(552322),
                 a = t(941204),
                 i = t(461222),
-                r = t(889122),
+                r = t(1357),
                 l = t(455091),
                 o = t(796309),
                 c = t(509597);
@@ -267,7 +268,7 @@
             t.d(s, { K: () => o });
             var n = t(552322),
                 a = t(941204),
-                i = t(889122),
+                i = t(1357),
                 r = t(796309),
                 l = t(509597);
             function o({ filename: e, fileSize: s, className: t }) {
@@ -278,13 +279,13 @@
         289752: (e, s, t) => {
             t.d(s, { DM: () => u, Et: () => m, _9: () => x });
             var n = t(552322),
-                a = t(891283),
+                a = t(59463),
                 i = t(335944),
                 r = t(702024),
                 l = t(941204),
                 o = t(796309),
                 c = t(202784),
-                d = t(770297);
+                d = t(697597);
             function m({ src: e, type: s, dimensions: t, className: a }) {
                 const { width: r, height: l } = p(t),
                     [m, x] = (0, c.useState)(!1),
@@ -323,7 +324,7 @@
             var n = t(552322),
                 a = t(159603),
                 i = t(941204),
-                r = t(861514);
+                r = t(89195);
             const l = a.com.x.dms.model.MessageItemAttachment;
             function o({ urlCard: e }) {
                 let s = null;
@@ -332,4 +333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.7bbbf68a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.0d40469a.js.map

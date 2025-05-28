@@ -14,7 +14,7 @@
                 d = r(284702),
                 m = r(310452),
                 g = r(354149),
-                p = r(332920),
+                p = r(111677),
                 u = r.n(p),
                 h = r(946409);
             const E = o.default.create((e) => ({ description: { marginTop: e.spaces.space12 } })),
@@ -114,4 +114,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.newsPreviewHandler.0297507a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.newsPreviewHandler.ba9f68ca.js.map

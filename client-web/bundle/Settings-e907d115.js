@@ -2,6 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Settings-e907d115"],
     {
+        661810: (e, t, r) => {
+            r.d(t, { Z: () => i });
+            var a = r(202784),
+                o = r(325686),
+                n = r(392237);
+            function i({ spacing: e, style: t }) {
+                return a.createElement(o.Z, { role: "separator", style: [l.divider, { marginVertical: null != e ? n.default.theme.spaces[e] : void 0 }, t] });
+            }
+            const l = n.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+        },
         779610: (e, t, r) => {
             r.d(t, { Z: () => d });
             var a = r(202784),
@@ -239,4 +249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-e907d115.8e12f1da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-e907d115.19f08aca.js.map

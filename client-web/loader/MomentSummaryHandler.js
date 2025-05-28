@@ -24,7 +24,7 @@
                 a = i(351322),
                 n = i(202784),
                 r = i(807896),
-                l = i(332920),
+                l = i(111677),
                 s = i.n(l),
                 c = i(500002),
                 d = i(325686),
@@ -122,4 +122,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MomentSummaryHandler.ad67e29a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MomentSummaryHandler.030f0fda.js.map

@@ -67,7 +67,7 @@
             o(136728);
             var n = o(202784),
                 a = o(325686),
-                i = o(332920),
+                i = o(111677),
                 r = o.n(i),
                 s = o(174326),
                 l = o(879891),
@@ -210,7 +210,7 @@
             o(136728);
             var n = o(202784),
                 a = o(325686),
-                i = o(332920),
+                i = o(111677),
                 r = o.n(i),
                 s = o(992942),
                 l = o(530732),
@@ -401,7 +401,7 @@
                 a = o(325686),
                 i = o(392237),
                 r = o(538619),
-                s = o(332920),
+                s = o(111677),
                 l = o.n(s),
                 d = o(833458),
                 c = o(731708);
@@ -419,18 +419,18 @@
                 };
             class h extends n.Component {
                 render() {
-                    const { choices: e, totalVotes: t } = this.props,
-                        o = Math.max(...e.map((e) => e.count));
+                    const { choices: e, totalVotes: t, translations: o } = this.props,
+                        i = Math.max(...e.map((e) => e.count));
                     return n.createElement(
                         a.Z,
                         { role: "list" },
-                        e.map((e, i) => n.createElement(a.Z, { key: e.index, role: "listitem", style: 0 !== i && y.topMargin }, this._renderChoiceResult(e, t, o))),
+                        e.map((e, r) => n.createElement(a.Z, { key: e.index, role: "listitem", style: 0 !== r && y.topMargin }, this._renderChoiceResult(e, t, i, o?.[r]))),
                     );
                 }
-                _renderChoiceResult(e, t, o) {
-                    const { isFinal: a, selectedChoice: i } = this.props,
-                        s = Math.round((e.count / t) * 1e3) / 10 || 0;
-                    return n.createElement(f, { isFinal: a, isSelected: i === e.index, isWinner: a && e.count === o, label: r.v.renderTwemojiText(e.cta, !0), noVotes: 0 === e.count, percentageOfTotalVote: s });
+                _renderChoiceResult(e, t, o, a) {
+                    const { isFinal: i, selectedChoice: s } = this.props,
+                        l = Math.round((e.count / t) * 1e3) / 10 || 0;
+                    return n.createElement(f, { isFinal: i, isSelected: s === e.index, isWinner: i && e.count === o, label: r.v.renderTwemojiText(a || e.cta, !0), noVotes: 0 === e.count, percentageOfTotalVote: l });
                 }
             }
             const y = i.default.create((e) => ({ topMargin: { marginTop: e.spaces.space4 } })),
@@ -495,4 +495,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-49ce3a1b.b4a8aa7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-49ce3a1b.e1a0017a.js.map

@@ -8,7 +8,7 @@
                 r = l(688715),
                 t = l(731708),
                 s = l(392237),
-                i = l(332920),
+                i = l(111677),
                 o = l.n(i);
             const c = (0, r.ju)("https://legal.x.com/purchaser-terms"),
                 u = o().bc42db1c,
@@ -17,7 +17,7 @@
         },
         359870: (e, a, l) => {
             l.d(a, { Z: () => i, b: () => s });
-            var n = l(332920);
+            var n = l(111677);
             const r = l.n(n)().g33c0564,
                 t = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}$/,
                 s = 385;
@@ -33,7 +33,7 @@
                 s = l(325686),
                 i = l(154003),
                 o = l(392237),
-                c = l(332920),
+                c = l(111677),
                 u = l.n(c),
                 d = l(980407),
                 m = l(569778),
@@ -201,7 +201,7 @@
             var f = l(107267),
                 S = l(154003),
                 F = l(392237),
-                v = l(332920),
+                v = l(111677),
                 h = l.n(v),
                 w = l(980407),
                 K = l(724345),
@@ -659,7 +659,7 @@
                 s = l(325686),
                 i = l(154003),
                 o = l(392237),
-                c = l(332920),
+                c = l(111677),
                 u = l.n(c),
                 d = l(980407),
                 m = l(569778),
@@ -697,4 +697,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.f012e99a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.6fafa35a.js.map

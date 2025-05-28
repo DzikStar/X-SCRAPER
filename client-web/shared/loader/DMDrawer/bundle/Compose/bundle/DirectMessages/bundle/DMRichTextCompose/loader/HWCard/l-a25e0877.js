@@ -205,18 +205,18 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderButton = (e, t) => {
-                            const { buttonLayout: n, buttonSize: a, buttonStyleType: o, cardContext: s, disableIcon: l, disabled: g, role: _, text: f } = this.props,
-                                v = e.data,
-                                E = this._getButtonIcon(v.icon) || void 0,
-                                S = t > 0 && "horizontal" !== n,
-                                x = t > 0 && "horizontal" === n,
-                                k = (0, y.v)(o, e),
-                                w = "radiogroup" === _ ? "radio" : "button";
-                            return "bookmark" === v.buttonType
-                                ? i.createElement(r.Z, { style: x && C.buttonLeftMargin }, h.v.renderBookmarkButton(s?.tweetId))
-                                : i.createElement(b.Z, { buttonData: e, componentType: "button_group", destinationKey: v.destination, key: v.index }, ({ link: e, onClick: t }) => {
-                                      const n = i.createElement(u.ZP, { "aria-label": v["aria-label"], disabled: g, icon: l ? void 0 : E, key: v.index, link: e, onPress: g ? void 0 : t, role: v.role || w, size: a, style: [C.button, !g && C.buttonWithPointer, S && C.buttonTopMargin, x && C.buttonLeftMargin], type: k }, v.isLoading ? i.createElement(c.Z, { color: m.default.theme.colors.buttonWhite, style: C.activityIndicator }) : f || v.cta);
-                                      return v.withSlidingAnimation && !d.Z.reducedMotionEnabled ? i.createElement(p.Z, { animateMount: !0, duration: "long", show: !0, type: "slide" }, n) : n;
+                            const { buttonLayout: n, buttonSize: a, buttonStyleType: o, cardContext: s, disableIcon: l, disabled: g, role: _, text: f, translations: v } = this.props,
+                                E = e.data,
+                                S = this._getButtonIcon(E.icon) || void 0,
+                                x = t > 0 && "horizontal" !== n,
+                                k = t > 0 && "horizontal" === n,
+                                w = (0, y.v)(o, e),
+                                L = "radiogroup" === _ ? "radio" : "button";
+                            return "bookmark" === E.buttonType
+                                ? i.createElement(r.Z, { style: k && C.buttonLeftMargin }, h.v.renderBookmarkButton(s?.tweetId))
+                                : i.createElement(b.Z, { buttonData: e, componentType: "button_group", destinationKey: E.destination, key: E.index }, ({ link: e, onClick: n }) => {
+                                      const r = i.createElement(u.ZP, { "aria-label": E["aria-label"], disabled: g, icon: l ? void 0 : S, key: E.index, link: e, onPress: g ? void 0 : n, role: E.role || L, size: a, style: [C.button, !g && C.buttonWithPointer, x && C.buttonTopMargin, k && C.buttonLeftMargin], type: w }, E.isLoading ? i.createElement(c.Z, { color: m.default.theme.colors.buttonWhite, style: C.activityIndicator }) : f || v?.[t] || E.cta);
+                                      return E.withSlidingAnimation && !d.Z.reducedMotionEnabled ? i.createElement(p.Z, { animateMount: !0, duration: "long", show: !0, type: "slide" }, r) : r;
                                   });
                         }),
                         (this._scribeImpression = (e) => {
@@ -258,7 +258,7 @@
             var a = n(807896),
                 i = n(202784),
                 r = n(325686),
-                o = n(332920),
+                o = n(111677),
                 s = n.n(o),
                 l = n(803810),
                 d = n(461756),
@@ -427,7 +427,7 @@
             n.d(t, { Z: () => f });
             var a = n(202784),
                 i = n(325686),
-                r = n(332920),
+                r = n(111677),
                 o = n.n(r),
                 s = n(731708),
                 l = n(154003),
@@ -531,4 +531,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a25e0877.0051b42a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a25e0877.7ce685ca.js.map

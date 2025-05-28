@@ -11,7 +11,7 @@
                 r = s(731708),
                 l = s(260706),
                 c = s(392237),
-                d = s(332920),
+                d = s(111677),
                 u = s.n(d),
                 p = s(38293),
                 h = s(700613),
@@ -213,7 +213,7 @@
             var a = s(807896),
                 i = s(202784),
                 n = s(107267),
-                o = s(332920),
+                o = s(111677),
                 r = s.n(o),
                 l = s(114777),
                 c = s(983389),
@@ -251,7 +251,7 @@
                 n = s(325686),
                 o = s(855488),
                 r = s(392237),
-                l = s(332920),
+                l = s(111677),
                 c = s.n(l),
                 d = s(227991),
                 u = s(663951),
@@ -363,7 +363,7 @@
                 l = s(138099),
                 c = s(529356),
                 d = s(392237),
-                u = s(332920),
+                u = s(111677),
                 p = s.n(u),
                 h = s(873990),
                 _ = s(942893),
@@ -372,7 +372,7 @@
                 k = s(280947),
                 g = s(975364),
                 f = s(909377),
-                y = s(970187),
+                y = s(723587),
                 w = s(530732),
                 I = s(815858),
                 x = s(452693),
@@ -526,7 +526,7 @@
             var a = s(807896),
                 i = s(202784),
                 n = s(218093),
-                o = s(231035),
+                o = s(56851),
                 r = s(810641),
                 l = s(163889),
                 c = s(847933),
@@ -609,7 +609,7 @@
                 o = s(823161),
                 r = s(973014),
                 l = s(392237),
-                c = s(332920),
+                c = s(111677),
                 d = s.n(c),
                 u = s(874088),
                 p = s(27951),
@@ -705,7 +705,7 @@
                 o = s(912021),
                 r = s(370751),
                 l = s(218093),
-                c = s(231035),
+                c = s(56851),
                 d = s(810641),
                 u = s(163889),
                 p = s(87063),
@@ -719,7 +719,7 @@
                 y = (0, g.Z)()
                     .propsFromState(() => ({ getModuleFetchStatus: f }))
                     .withAnalytics({ page: "onboarding", section: "user_recommendations" });
-            var w = s(970187),
+            var w = s(723587),
                 I = s(392237),
                 x = s(269011),
                 v = s(335632),
@@ -901,7 +901,7 @@
                 i = s(325686),
                 n = s(823161),
                 o = s(366635),
-                r = s(970187);
+                r = s(723587);
             const l = ({ groupId: e, id: t, isBlueVerified: s, isSelected: l, isVerified: d, name: u, onFollow: p, onUnfollow: h, profileImageUrl: _, style: m, userName: b }) => {
                     const k = a.useCallback(() => {
                             p([t], e);
@@ -926,7 +926,7 @@
                 c = s(891198),
                 d = s(157130),
                 u = s(392237),
-                p = s(332920),
+                p = s(111677),
                 h = s.n(p),
                 _ = s(435021),
                 m = s(370751),
@@ -1123,4 +1123,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-167ef047.0a9e8d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-167ef047.662f406a.js.map

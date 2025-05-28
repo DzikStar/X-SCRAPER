@@ -228,7 +228,7 @@
         24546: (e, t, o) => {
             o.d(t, { Ed: () => O, MH: () => M, NS: () => F, Ox: () => Z, Qx: () => U, Qz: () => f, W: () => b, dD: () => x, wz: () => A });
             o(136728);
-            var i = o(332920),
+            var i = o(111677),
                 r = o.n(i),
                 s = o(161821),
                 n = o(88656),
@@ -1116,4 +1116,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8.b8bbdf0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8.e839d84a.js.map

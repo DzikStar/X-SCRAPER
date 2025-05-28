@@ -12,7 +12,7 @@
                 l = d(392237),
                 s = d(442730),
                 i = d(371344),
-                u = d(332920),
+                u = d(111677),
                 c = d.n(u),
                 h = d(666536),
                 m = d(403808),
@@ -24,8 +24,8 @@
                 g = d(125363),
                 w = d(389071),
                 y = d(958602),
-                C = d(100326),
-                k = d(309373),
+                k = d(100326),
+                C = d(309373),
                 A = d(327597),
                 I = d(620988),
                 S = d(305442),
@@ -54,11 +54,11 @@
                     re = (0, M.z)(),
                     le = (0, r.useHistory)(),
                     { clearFilterKey: se, hasValue: ie, isCreateImageEnabled: ue, isFileInputDisabled: ce, isImageEditEnabled: he, isInputCompact: me, isInputFocused: be, isInputMobile: pe, isInputMobileSize: De, isReasoningEnabled: fe, isResearchEnabled: Me, setFocused: ge, setHasValue: we, setPendingModeButtonFilterKey: ye } = (0, N.w)(),
-                    { isGrokDrawer: Ce } = (0, x.ZP)(),
-                    ke = (0, w.bD)(a),
-                    Ae = (0, g.v9)(ke.selectEditingMessageId);
-                let Ie = (0, g.v9)(ke.selectEditingMessage);
-                const Se = (0, g.v9)(ke.selectInputPrefill),
+                    { isGrokDrawer: ke } = (0, x.ZP)(),
+                    Ce = (0, w.bD)(a),
+                    Ae = (0, g.v9)(Ce.selectEditingMessageId);
+                let Ie = (0, g.v9)(Ce.selectEditingMessage);
+                const Se = (0, g.v9)(Ce.selectInputPrefill),
                     Ee = n.useRef(null),
                     { showInputEdit: ve } = (0, z.u)();
                 Ie = ve ? Ie : void 0;
@@ -110,7 +110,7 @@
                             }, [t, e, l]),
                             s
                         );
-                    })(We, ke, !de || !!Ae || !!u),
+                    })(We, Ce, !de || !!Ae || !!u),
                     ea = n.useCallback(
                         (e) => {
                             let a = e.target.value;
@@ -160,13 +160,13 @@
                                     isDeepsearch: Me,
                                 });
                             else if (u) {
-                                const e = await (0, C.X)({ analytics: re, api: Ve, dispatch: te, grokModule: ke, fromShareId: u });
+                                const e = await (0, k.X)({ analytics: re, api: Ve, dispatch: te, grokModule: Ce, fromShareId: u });
                                 e ? (Te(!1), ze.forEach((e) => Ke(e)), We(""), le.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ue)}`)) : $e({ text: H });
                             } else
                                 Ae
                                     ? Ie &&
                                       (await te(
-                                          (0, k.X)({ analytics: re, conversationKey: a })({
+                                          (0, C.X)({ analytics: re, conversationKey: a })({
                                               editingMessageId: Ae,
                                               text: Ue,
                                               fileAttachments: oa,
@@ -191,7 +191,7 @@
                                               attachments: oa,
                                               mode: q,
                                               returnCitations: Be,
-                                              isGrokDrawer: Ce,
+                                              isGrokDrawer: ke,
                                               promptMetadata: ia.promptMetadata,
                                               onStart: () => {
                                                   Te(!1),
@@ -297,14 +297,14 @@
                     ga || la();
                 }, [ga, la]);
                 const ya = n.useMemo(() => n.createElement(L.Z, { fadeIn: Fe.current, isInProgress: !Q, isInputCompact: me, isLoading: Ze || He, isSendEnabled: na, onSend: ca, onStop: ha, useMagicWandIcon: ne }), [Q, Ze, He, na, ca, ha, ne, me]),
-                    Ca = n.useMemo(
+                    ka = n.useMemo(
                         () =>
                             n.createElement(
                                 t.Z,
                                 { style: V.contentBelowContainer },
                                 n.createElement(
                                     t.Z,
-                                    { style: [V.contentBelowLeft, (me || Ce) && V.compactContentBelowLeft] },
+                                    { style: [V.contentBelowLeft, (me || ke) && V.compactContentBelowLeft] },
                                     Ma &&
                                         n.createElement(
                                             n.Fragment,
@@ -322,9 +322,9 @@
                                             }),
                                         ),
                                 ),
-                                n.createElement(t.Z, { style: [V.contentBelowRight, (me || Ce) && V.compactContentBelowRight] }, Re && n.createElement(O.t, { conversationKey: a, disabled: J, fadeIn: Fe.current, focused: be, inputAtBottom: W, inputAtHome: X }), !1, me && !Ce ? (0 === Ue.length && Q && !aa ? n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }) : ya) : n.createElement(n.Fragment, null, n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }), ya)),
+                                n.createElement(t.Z, { style: [V.contentBelowRight, (me || ke) && V.compactContentBelowRight] }, Re && n.createElement(O.t, { conversationKey: a, disabled: J, fadeIn: Fe.current, focused: be, inputAtBottom: W, inputAtHome: X }), !1, me && !ke ? (0 === Ue.length && Q && !aa ? n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }) : ya) : n.createElement(n.Fragment, null, n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }), ya)),
                             ),
-                        [Ce, me, Ma, !0, ce, be, Je, Re, a, J, W, X, Ue, ya, Q, aa],
+                        [ke, me, Ma, !0, ce, be, Je, Re, a, J, W, X, Ue, ya, Q, aa],
                     );
                 return (
                     n.useEffect(() => {
@@ -392,7 +392,7 @@
                                           n.createElement(i.Z, {
                                               autoFocus: !De,
                                               contentAbove: fa,
-                                              contentBelow: Ca,
+                                              contentBelow: ka,
                                               editable: ga,
                                               inputStyle: [V.inputStyle, wa],
                                               leftAligned: !0,
@@ -523,12 +523,11 @@
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -546,4 +545,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.e037625a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.34b5583a.js.map

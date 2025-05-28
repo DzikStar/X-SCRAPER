@@ -196,7 +196,7 @@
                                             "randombytes_uniform",
                                             "sodium_version_string",
                                         ],
-                                        a = [x, E, k, S, w, T, Y, B, A, K, M, I, N, L, O, U, C, R, P, G, X, F, D, j, V, H, q, z, W, $, J, Q, Z, ee, re, te, ae, _e, ne, se, ce, oe, he, pe, ie, ye, le, ue, de, ve, ge, be, fe, me, xe, Ee, ke, Se, we, Te, Ye, Be, Ae, Ke, Me, Ie, Ne, Le, Oe, Ue, Ce, Re, Pe, Ge, Xe, Fe, De, je, Ve, He, qe, ze, We, $e, Je, Qe, Ze, er, rr, tr, ar, _r, nr, sr, cr, or, hr, pr, ir, yr, lr, ur, dr, vr, gr, br, fr, mr, xr, Er, kr, Sr, wr, Tr, Yr, Br, Ar, Kr, Mr, Ir, Nr, Lr, Or, Ur, Cr, Rr, Pr, Gr, Xr, Fr, Dr, jr, Vr, Hr, qr, zr, Wr, $r, Jr, Qr, Zr, et, rt, tt, at, _t, nt, st, ct, ot, ht, pt, it, yt, lt, ut, dt, vt, gt, bt, ft, mt, xt, Et, kt, St, wt, Tt, Yt, Bt, At, Kt, Mt, It, Nt, Lt, Ot, Ut, Ct, Rt, Pt, Gt],
+                                        a = [x, E, k, S, w, T, Y, B, A, K, M, I, N, L, O, U, C, R, P, G, X, F, D, j, V, H, q, W, z, $, J, Z, Q, ee, re, te, ae, _e, ne, se, ce, oe, he, pe, ie, ye, le, ue, de, ve, ge, be, fe, me, xe, Ee, ke, Se, we, Te, Ye, Be, Ae, Ke, Me, Ie, Ne, Le, Oe, Ue, Ce, Re, Pe, Ge, Xe, Fe, De, je, Ve, He, qe, We, ze, $e, Je, Ze, Qe, er, rr, tr, ar, _r, nr, sr, cr, or, hr, pr, ir, yr, lr, ur, dr, vr, gr, br, fr, mr, xr, Er, kr, Sr, wr, Tr, Yr, Br, Ar, Kr, Mr, Ir, Nr, Lr, Or, Ur, Cr, Rr, Pr, Gr, Xr, Fr, Dr, jr, Vr, Hr, qr, Wr, zr, $r, Jr, Zr, Qr, et, rt, tt, at, _t, nt, st, ct, ot, ht, pt, it, yt, lt, ut, dt, vt, gt, bt, ft, mt, xt, Et, kt, St, wt, Tt, Yt, Bt, At, Kt, Mt, It, Nt, Lt, Ot, Ut, Ct, Rt, Pt, Gt],
                                         _ = 0;
                                     _ < a.length;
                                     _++
@@ -1177,7 +1177,7 @@
                         }
                         g(_, "invalid usage");
                     }
-                    function z(e, r) {
+                    function W(e, r) {
                         var a = [];
                         y(r), f(a, e, "state_address");
                         var _ = new l(0 | t._crypto_auth_hmacsha256_bytes()),
@@ -1188,7 +1188,7 @@
                         }
                         g(a, "invalid usage");
                     }
-                    function W(e, r) {
+                    function z(e, r) {
                         var a = [];
                         y(r);
                         var _ = null,
@@ -1217,7 +1217,7 @@
                             s = r.length;
                         _.push(n), !!(0 | t._crypto_auth_hmacsha256_update(e, n, s)) && g(_, "invalid usage"), v(_);
                     }
-                    function Q(e, r, a) {
+                    function Z(e, r, a) {
                         var _ = [];
                         e = m(_, e, "tag");
                         var n,
@@ -1232,7 +1232,7 @@
                         var i = !(0 | t._crypto_auth_hmacsha256_verify(n, c, o, 0, h));
                         return v(_), i;
                     }
-                    function Z(e, r, a) {
+                    function Q(e, r, a) {
                         var _ = [];
                         y(a);
                         var n = u((e = m(_, e, "message"))),
@@ -2055,7 +2055,7 @@
                         }
                         g(_, "input is an invalid element");
                     }
-                    function ze(e, r) {
+                    function We(e, r) {
                         var a = [];
                         y(r);
                         var _ = u((e = m(a, e, "r")));
@@ -2068,7 +2068,7 @@
                         }
                         g(a, "invalid usage");
                     }
-                    function We(e, r) {
+                    function ze(e, r) {
                         var a = [];
                         y(r), (e = m(a, e, "repr"));
                         var _,
@@ -2101,7 +2101,7 @@
                         var d = p(h, a);
                         return v(_), d;
                     }
-                    function Qe(e, r) {
+                    function Ze(e, r) {
                         var a = [];
                         y(r), (e = m(a, e, "s"));
                         var _,
@@ -2113,7 +2113,7 @@
                         var o = p(s, r);
                         return v(a), o;
                     }
-                    function Ze(e, r) {
+                    function Qe(e, r) {
                         var a = [];
                         y(r), (e = m(a, e, "s"));
                         var _,
@@ -2774,7 +2774,7 @@
                         }
                         g(_, "result is identity element");
                     }
-                    function zr(e, r) {
+                    function Wr(e, r) {
                         var a = [];
                         y(r), (e = m(a, e, "scalar"));
                         var _,
@@ -2788,7 +2788,7 @@
                         }
                         g(a, "scalar is 0");
                     }
-                    function Wr(e, r, a, _) {
+                    function zr(e, r, a, _) {
                         var n = [];
                         y(_);
                         var s = u((e = m(n, e, "message"))),
@@ -2840,7 +2840,7 @@
                         var n = p(a, e);
                         return v(r), n;
                     }
-                    function Qr(e, r, a, _, n) {
+                    function Zr(e, r, a, _, n) {
                         var s = [];
                         y(n);
                         var c = u((e = m(s, e, "ciphertext"))),
@@ -2863,7 +2863,7 @@
                         }
                         g(s, "wrong secret key for the given ciphertext");
                     }
-                    function Zr(e, r, a, _) {
+                    function Qr(e, r, a, _) {
                         var n = [];
                         y(_), (e = m(n, e, "ciphertext"));
                         var s,
@@ -3764,6 +3764,27 @@
                 }
             }
         },
+        840489: (e, r, t) => {
+            "use strict";
+            function a(e) {
+                var r,
+                    t,
+                    _ = "";
+                if ("string" == typeof e || "number" == typeof e) _ += e;
+                else if ("object" == typeof e)
+                    if (Array.isArray(e)) {
+                        var n = e.length;
+                        for (r = 0; r < n; r++) e[r] && (t = a(e[r])) && (_ && (_ += " "), (_ += t));
+                    } else for (t in e) e[t] && (_ && (_ += " "), (_ += t));
+                return _;
+            }
+            function _() {
+                for (var e, r, t = 0, _ = "", n = arguments.length; t < n; t++) (e = arguments[t]) && (r = a(e)) && (_ && (_ += " "), (_ += r));
+                return _;
+            }
+            t.d(r, { W: () => _, Z: () => n });
+            const n = _;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-43dd7041.fb28b9ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-43dd7041.8932fe1a.js.map

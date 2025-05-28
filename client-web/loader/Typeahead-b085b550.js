@@ -17,7 +17,7 @@
                 E = a(992942),
                 u = a(823161),
                 p = a(310088),
-                g = a(332920),
+                g = a(111677),
                 h = a.n(g),
                 C = a(275365);
             const T = l.default.create((e) => ({ circle: { borderRadius: e.borderRadii.infinite, overflow: "hidden" }, container: { height: "auto", width: "100%" }, itemAccessory: { top: -e.spacesPx.space24 + e.spacesPx.space1, end: -e.spacesPx.space16 - e.spacesPx.space1 }, userDecoration: { fontSize: e.fontSizes.subtext3, position: "absolute", backgroundColor: e.colors.gray100, marginStart: e.spaces.space8, boxSizing: "border-box", width: e.spaces.space24, height: e.spaces.space24, fontWeight: e.fontWeights.regular } })),
@@ -26,8 +26,8 @@
                 O = T,
                 f = "DMConversationAvatarBadge",
                 N = "MutlipleParticipantAvatarContainer",
-                v = h().fd48249b,
-                b = ({ left: e, right: t }) => r.createElement(i.Z, { style: S.container }, r.createElement(i.Z, { style: S.left }, e), r.createElement(i.Z, { style: S.right }, t)),
+                b = h().fd48249b,
+                v = ({ left: e, right: t }) => r.createElement(i.Z, { style: S.container }, r.createElement(i.Z, { style: S.left }, e), r.createElement(i.Z, { style: S.right }, t)),
                 I = ({ bottom: e, top: t }) => r.createElement(i.Z, { style: A.container }, r.createElement(i.Z, { style: A.top }, t), r.createElement(i.Z, { style: A.bottom }, e)),
                 P = (e) => {
                     const t = e.length,
@@ -35,18 +35,18 @@
                             const n = 2 === t || (3 === t && 0 === a) ? 0.5 : 1;
                             return e.profile_image_url_https ? r.createElement(i.Z, { key: e.id_str, style: O.container }, r.createElement(u.default, { aspectRatio: n, shape: "none", size: "custom", uri: e.profile_image_url_https })) : null;
                         });
-                    if (2 === t) return r.createElement(s.Z, { ratio: 1 }, r.createElement(b, { left: a[1], right: a[0] }));
+                    if (2 === t) return r.createElement(s.Z, { ratio: 1 }, r.createElement(v, { left: a[1], right: a[0] }));
                     {
                         const e = r.createElement(I, { bottom: a[2], top: a[1] }),
                             t = a[0];
-                        return r.createElement(b, { left: e, right: t });
+                        return r.createElement(v, { left: e, right: t });
                     }
                 },
                 y = (e, t) => (e.profile_image_url_https ? r.createElement(i.Z, { key: e.id_str, style: O.container }, r.createElement(u.default, { size: t || u.default.defaultSize, uri: e.profile_image_url_https })) : null);
             function R(e) {
                 const { avatar: t, avatarLink: a, badgeCount: n, size: l, withLock: _ } = e,
                     m = [x.lockContainer, "large" === l && x.lockPositionLarge];
-                return r.createElement(r.Fragment, null, r.createElement(s.Z, { ratio: 1 }, a ? r.createElement(o.Z, { interactiveStyles: null, link: a, testID: c.Z.conversationAvatar }, t) : t), n ? (({ badgeCount: e }) => r.createElement(i.Z, { style: O.itemAccessory, testID: f }, r.createElement(p.Z, { "aria-live": "none", count: e, standalone: !0, style: O.userDecoration, textColor: "text", truncatedCountFormatter: () => "", unreadCountLabel: v, withTruncatedCount: !1 })))({ badgeCount: n }) : null, _ ? r.createElement(i.Z, { style: m }, r.createElement(d.Z, { size: l })) : null);
+                return r.createElement(r.Fragment, null, r.createElement(s.Z, { ratio: 1 }, a ? r.createElement(o.Z, { interactiveStyles: null, link: a, testID: c.Z.conversationAvatar }, t) : t), n ? (({ badgeCount: e }) => r.createElement(i.Z, { style: O.itemAccessory, testID: f }, r.createElement(p.Z, { count: e, standalone: !0, style: O.userDecoration, textColor: "text", truncatedCountFormatter: () => "", unreadCountLabel: b, withTruncatedCount: !1 })))({ badgeCount: n }) : null, _ ? r.createElement(i.Z, { style: m }, r.createElement(d.Z, { size: l })) : null);
             }
             const x = l.default.create((e) => ({ lockContainer: { display: "flex", alignItems: "center", top: -e.spacesPx.space24 + e.spacesPx.space1, end: -e.spacesPx.space16 - e.spacesPx.space1 }, lockPositionLarge: { top: -e.spacesPx.space20 + e.spacesPx.space1, end: -e.spacesPx.space12 - e.spacesPx.space1 } })),
                 L = (e) => {
@@ -96,7 +96,7 @@
                 c = a(366635),
                 d = a(470397),
                 _ = a(392237),
-                m = a(332920),
+                m = a(111677),
                 E = a.n(m),
                 u = a(593953);
             const p = "DMGroupConversationTitle",
@@ -167,7 +167,7 @@
             const r = { conversationAvatar: "DM_Conversation_Avatar", reaction: "DM_Reaction", reactions: "DM_Reactions", reactionUserCell: "DM_Reaction_UserCell", newDM: "NewDM_Button", untrustedThumbnail: "DM_Untrusted_Thumbnail" };
         },
         593953: (e, t, a) => {
-            a.d(t, { BB: () => I, FW: () => T, Fb: () => y, KC: () => C, LK: () => v, Ly: () => x, NL: () => M, Qu: () => O, SM: () => S, Ss: () => p, Xx: () => L, Y: () => A, bZ: () => g, dI: () => b, e4: () => N, k2: () => R, oK: () => f, rR: () => h, vg: () => D, vm: () => P, y9: () => w });
+            a.d(t, { BB: () => I, FW: () => T, Fb: () => y, KC: () => C, LK: () => b, Ly: () => x, NL: () => M, Qu: () => O, SM: () => S, Ss: () => p, Xx: () => L, Y: () => A, bZ: () => g, dI: () => v, e4: () => N, k2: () => R, oK: () => f, rR: () => h, vg: () => D, vm: () => P, y9: () => w });
             a(543673), a(240753), a(128399);
             var r = a(202784),
                 n = a(310452),
@@ -235,11 +235,11 @@
             function N(e) {
                 return e === m._2.SECONDARY ? u.H6.REQUEST : e === m._2.TERTIARY ? u.H6.LOW_QUALITY : u.H6.PRIMARY;
             }
-            function v(e) {
+            function b(e) {
                 return e.isTrue("dm_voice_rendering_enabled");
             }
-            function b(e, t) {
-                return !!(e && e.video && v(t)) && !!e.video.audio_only;
+            function v(e, t) {
+                return !!(e && e.video && b(t)) && !!e.video.audio_only;
             }
             function I(e, t, a, r) {
                 return { pathname: `/i/report/dm_conversation/${e}`, state: { clientReferer: t, inboxType: r, scribeNamespace: a } };
@@ -273,4 +273,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-b085b550.80a3d7da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-b085b550.86bac4ba.js.map

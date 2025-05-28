@@ -126,7 +126,7 @@
             o.d(t, { OX: () => u, Od: () => d, PN: () => h, uq: () => c, wR: () => g });
             var r = o(251067),
                 i = o(522171),
-                s = o(332920),
+                s = o(111677),
                 a = o.n(s),
                 n = o(912021),
                 l = o(323265);
@@ -188,7 +188,7 @@
                 a = o(844685),
                 n = o(731708),
                 l = o(392237),
-                c = o(332920),
+                c = o(111677),
                 d = o.n(c),
                 p = o(980407),
                 u = o(443781),
@@ -262,4 +262,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.KeyboardShortcuts.2459e35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.KeyboardShortcuts.cbbf7a7a.js.map

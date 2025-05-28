@@ -55,7 +55,7 @@
                 u = n(2430),
                 d = n(297608),
                 g = n(615027),
-                h = n(332920),
+                h = n(111677),
                 m = n.n(h),
                 _ = n(676145),
                 f = n(668214),
@@ -142,4 +142,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Login.981f044a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Login.663cddfa.js.map

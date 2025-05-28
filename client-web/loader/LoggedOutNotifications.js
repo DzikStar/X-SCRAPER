@@ -1,7 +1,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.LoggedOutNotifications"],
     {
-        328777: (e) => {
+        380890: (e) => {
             e.exports = { queryId: "BqIHKmwZKtiUBPi07jKctg", operationName: "EnableLoggedOutWebNotifications", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         6613: (e, t, o) => {
@@ -9,7 +9,7 @@
             o.d(t, { Z: () => p });
             var s = o(163889),
                 r = o(414742),
-                i = o(328777),
+                i = o(380890),
                 n = o.n(i),
                 a = o(503768);
             const c = (e, t) => {
@@ -149,4 +149,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.LoggedOutNotifications.8e3c174a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.LoggedOutNotifications.acac7bea.js.map

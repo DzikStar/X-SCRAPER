@@ -72,7 +72,7 @@
                 c = o(107267),
                 i = o(731708),
                 u = o(392237),
-                d = o(332920),
+                d = o(111677),
                 m = o.n(d),
                 p = o(991617),
                 b = o(980407),
@@ -526,7 +526,7 @@
                 a = o(614983),
                 l = o.n(a),
                 s = o(154003),
-                c = o(332920),
+                c = o(111677),
                 i = o.n(c),
                 u = o(952793),
                 d = o(72130),
@@ -687,4 +687,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-63cb1cc4.755c477a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-63cb1cc4.1aaba5ca.js.map

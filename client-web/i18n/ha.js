@@ -228,6 +228,7 @@
                 t("f65e7e91", function (a) {
                     return a.percentage + "% off " + a.tier + " " + a.plan;
                 }),
+                t("cbc38428", "Stay ad-free with Premium+"),
                 t("a84a736e", "Get Free Ad Credit"),
                 t("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 t("a07e13fc", "Become a Premium Creator"),
@@ -903,9 +904,9 @@
                 t("e8e39f95", "Ƙara koyo"),
                 t("e126dd3f", "Ƙara koyo"),
                 t("i821844f", "Ƙara koyo"),
-                t("b0abbb17", "Ƙara koyo"),
-                t("e7e0d88b", "Ƙara koyo");
-            t("i560665f", "Ƙara koyo"),
+                t("b0abbb17", "Ƙara koyo");
+            t("e7e0d88b", "Ƙara koyo"),
+                t("i560665f", "Ƙara koyo"),
                 t("f6e774d9", "Ƙara koyo"),
                 t("h486f755", "Ƙara koyo"),
                 t("bab41dab", "Ƙara koyo"),
@@ -1919,9 +1920,9 @@
                 t("a8fdd09c", "Publish Article"),
                 t("d8047cc8", "Buga"),
                 t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
-                t("e52d4998", "Choose your audience");
-            t("d7985b24", "Choose who can reply to this Article"),
+                t("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
+            t("e52d4998", "Choose your audience"),
+                t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
                 t("a330771e", "Copy link to your clipboard"),
@@ -2903,12 +2904,6 @@
                 t("ada99498", "Za a nuna wannan maki kawai ga wasu a yankinka."),
                 t("a765e936", "Delete your expanded bio"),
                 t("d4d68e44", "Saved"),
-                t("ie4f57d2", "Renew your Premium subscription"),
-                t("h293aa52", "Your Premium subscription is expiring!"),
-                t("j1923668", "Keep the best of X."),
-                t("ac7e97ee", "Renew subscription"),
-                t("f70c69b4", "Reply boost, Edit post, Customization, Longer posts and much more."),
-                t("f4cec4d2", "Blue checkmark, Reply boost, increased Grok limits and much more."),
                 t("b6de83a0", "Employees only Space"),
                 t("g3f251f2", "Private Broadcast"),
                 t("d08666ba", "Keɓaɓɓen Sarari"),
@@ -2976,20 +2971,17 @@
                 t("b7388a56", "Kanun ƙasa"),
                 t("hdabc3fc", "Sharuɗɗan Sabis"),
                 t("bc6efc72", "Tsare Sirri"),
-                t("h3161192", "Dokar Kuki");
-            t("a7de64de", "Bayanin Talla"),
+                t("h3161192", "Dokar Kuki"),
+                t("a7de64de", "Bayanin Talla"),
                 t("jb0a4c36", "Bulogi"),
                 t("ce6d095a", "Sana'o'i"),
                 t("e0adec82", "Albarkatun Samfuri"),
-                t("df1b7550", "Kasuwanci"),
-                t("he258678", "X for Business"),
+                t("df1b7550", "Kasuwanci");
+            t("he258678", "X for Business"),
                 t("c6f58084", "Masu samarwa"),
                 t("d83f18d2", "Jagora"),
                 t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
-                t("fbf83158", "Warning: Payment failed"),
-                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
-                t("bce3726a", "Update Billing"),
                 t("fce9ecce", "Suggested Videos"),
                 t("j66b95a2", "In-Depth News"),
                 t("ad35153e", "beta"),
@@ -3031,6 +3023,15 @@
                 }),
                 t("j7d0e836", "Faɗaɗa"),
                 t("d227d19e", "Rushe"),
+                t("fbf83158", "Warning: Payment failed"),
+                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                t("bce3726a", "Update Billing"),
+                t("ie4f57d2", "Renew your Premium subscription"),
+                t("h293aa52", "Your Premium subscription is expiring!"),
+                t("j1923668", "Keep the best of X."),
+                t("ac7e97ee", "Renew subscription"),
+                t("f70c69b4", "Reply boost, Edit post, Customization, Longer posts and much more."),
+                t("f4cec4d2", "Blue checkmark, Reply boost, increased Grok limits and much more."),
                 t("h367e724", "Expanded Bio"),
                 t("ea5928d4", "You contain multitudes. So does your profile.\nAdd an expanded bio to tell people more about yourself."),
                 t("h7ef9dc8", "This can include:"),
@@ -3887,13 +3888,13 @@
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
                 t("c855ab8e", "Masu rijistan biyan kaɗai"),
-                t("ddeb0a3c", "Ga Al'ummar. Ana son mutanen? Duba shi."),
-                t("e111f531", function (a) {
-                    return a.count + " na sauraro";
-                });
-            t("cbef820f", function (a) {
-                return a.screenName + " reposted the stream!";
+                t("ddeb0a3c", "Ga Al'ummar. Ana son mutanen? Duba shi.");
+            t("e111f531", function (a) {
+                return a.count + " na sauraro";
             }),
+                t("cbef820f", function (a) {
+                    return a.screenName + " reposted the stream!";
+                }),
                 t("e3275464", "Aika"),
                 t("cededf2a", "Mai masauki"),
                 t("i2caef48", "Masu masauki"),
@@ -4927,9 +4928,9 @@
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time"),
-                t("i0e5bf4c", "Your videos");
-            t("ed99baea", "Early Beta Access"),
+                t("if2909ba", "Watch Time");
+            t("i0e5bf4c", "Your videos"),
+                t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
@@ -5893,9 +5894,9 @@
                     return "Ended " + a.timestamp;
                 }),
                 t("daca8a2c", "Open in Dock"),
-                t("e3aac82a", "Ana Loada Watsawa"),
-                t("i0ed3f4e", "Hoton taro");
-            t("cbae35fa", "Watsa Bayanan Rahoto"),
+                t("e3aac82a", "Ana Loada Watsawa");
+            t("i0ed3f4e", "Hoton taro"),
+                t("cbae35fa", "Watsa Bayanan Rahoto"),
                 t("fd12ab58", "Collection posts"),
                 t("a226497c", "Ƙirƙiri sabuwar Al'umma"),
                 t("d7346632", "Ba ka shiga wasu Al'ummomi ba tukuna"),
@@ -6891,9 +6892,9 @@
                 t("c0195168", "Change your app icon and navigation options"),
                 t("b6b5dc94", "Become verified"),
                 t("b06db848", "Stand out from others on the platform"),
-                t("e3e3a97c", "Earn a share of revenue from your posts"),
-                t("f15bc24e", "Increased Grok limits");
-            t("c4666e1c", "More usage of Grok 3, our latest model"),
+                t("e3e3a97c", "Earn a share of revenue from your posts");
+            t("f15bc24e", "Increased Grok limits"),
+                t("c4666e1c", "More usage of Grok 3, our latest model"),
                 t("he74ae7a", "Highest Grok usage limits"),
                 t("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
                 t("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
@@ -7209,6 +7210,36 @@
                 t("hd80bd3e", "Promote a post"),
                 t("fe2b0008", "Learn how to use X"),
                 t("h257d4aa", "Select a post to promote"),
+                t("fe946974", "Your trial of X without ads"),
+                t("f6c50ec0", "Your ad-free trial has ended"),
+                t("b1319404", "Ads avoided"),
+                t("baa4acae", "You’re seeing more personalized content."),
+                t("c00e8600", "Estimated time saved"),
+                t("ic073e4e", "Your time is valuable."),
+                t("eb866e88", "Estimated 1-year time savings"),
+                t("aa77b70c", "Based on your usage."),
+                t("c534c6b4", "We’re crunching the numbers..."),
+                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("cc10f019", function (a) {
+                    return a.minutes + " minute" + o(a.minutes, "", "s");
+                }),
+                t("f9b6b7d3", function (a) {
+                    return a.hours + " hour" + o(a.hours, "", "s");
+                }),
+                t("a9af8753", function (a) {
+                    return a.days + " day" + o(a.days, "", "s") + ", " + a.hours + " hour" + o(a.hours, "", "s");
+                }),
+                t("b93d00e5", function (a) {
+                    return a.days + " day" + o(a.days, "", "s");
+                }),
+                t("be88be23", function (a) {
+                    return "Your " + a.durationInDays + "-day ad-free trial is activated";
+                }),
+                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                t("ae3f3b0e", "Enjoy!"),
+                t("cdac8dc4", "See your new feed"),
+                t("dec99336", "Ad-free"),
+                t("i95803fa", "Unfortunately, you are not eligible at this time."),
                 t("d28a1d72", "Be the very first to spot trends with Radar"),
                 t("fb70427a", "Introducing the most powerful search tool on X."),
                 t("i54bf620", "Monitor keywords"),
@@ -7841,36 +7872,7 @@
                 t("j26dee0e", "Remove affiliate"),
                 t("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
                 t("j3115ce8", "Individual"),
-                t("d8bb1d84", "Organization"),
-                t("e970bdbd", function (a) {
-                    return a.count + " invites remaining";
-                }),
-                t("id67d953", function (a) {
-                    return "Something went wrong while retrieving your Stripe checkout details. Please contact " + a.supportEmail + " if this problem continues.";
-                }),
-                t("f323d314", "Resend"),
-                t("ac645cde", "You can always add them again."),
-                t("d12af2dd", function (a) {
-                    return "Are you sure you want to remove this invitation to @" + a.screenName + "?";
-                }),
-                t("ib60b2d5", function (a) {
-                    return "Are you sure you want to resend this invitation to @" + a.screenName + "?";
-                }),
-                t("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
-                t("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                t("dd2db402", "Step 1: Gather the required information"),
-                t("edb098c2", "Step 2: Contact our support team"),
-                t("c4474460", "Step 2: Email our support team"),
-                t("a08da0fa", "What happens next?"),
-                t("c127374e", "Send us a message"),
-                t("b2cb2a0c", "Username of your Verified Org account"),
-                t("b8e64002", "Name of your applicant tracking system"),
-                t("acb99db6", "Career site URL where your jobs are listed"),
-                t("a64a5b7a", "Send the required information to our support team to start the integration process."),
-                t("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
-                t("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
-                t("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                t("ce102a20", "Redirecting to Stripe");
+                t("d8bb1d84", "Organization");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7909,7 +7911,36 @@
                     u(a, e)
                 );
             }
-            t("ddfd6718", "Payment Failed"),
+            t("e970bdbd", function (a) {
+                return a.count + " invites remaining";
+            }),
+                t("id67d953", function (a) {
+                    return "Something went wrong while retrieving your Stripe checkout details. Please contact " + a.supportEmail + " if this problem continues.";
+                }),
+                t("f323d314", "Resend"),
+                t("ac645cde", "You can always add them again."),
+                t("d12af2dd", function (a) {
+                    return "Are you sure you want to remove this invitation to @" + a.screenName + "?";
+                }),
+                t("ib60b2d5", function (a) {
+                    return "Are you sure you want to resend this invitation to @" + a.screenName + "?";
+                }),
+                t("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
+                t("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
+                t("dd2db402", "Step 1: Gather the required information"),
+                t("edb098c2", "Step 2: Contact our support team"),
+                t("c4474460", "Step 2: Email our support team"),
+                t("a08da0fa", "What happens next?"),
+                t("c127374e", "Send us a message"),
+                t("b2cb2a0c", "Username of your Verified Org account"),
+                t("b8e64002", "Name of your applicant tracking system"),
+                t("acb99db6", "Career site URL where your jobs are listed"),
+                t("a64a5b7a", "Send the required information to our support team to start the integration process."),
+                t("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
+                t("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
+                t("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
+                t("ce102a20", "Redirecting to Stripe"),
+                t("ddfd6718", "Payment Failed"),
                 t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 t("a62359e6", "Verified Organization Settings"),
                 t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
@@ -8887,8 +8918,8 @@
                 t("c1658fc6", "The media could not be played."),
                 t("h519ae04", "An kashe wannan midiya saboda da'awar haƙƙin mallaka."),
                 t("ce871584", "This broadcast has ended."),
-                t("c101eb96", "This broadcast is not available."),
-                t("gb24a514", "This media has been disabled in response to a report by the copyright owner."),
+                t("c101eb96", "This broadcast is not available.");
+            t("gb24a514", "This media has been disabled in response to a report by the copyright owner."),
                 t("hcaf3e63", function (a) {
                     return "This media has been disabled due to a copyright claim by " + a.holder + ".";
                 }),
@@ -8912,10 +8943,10 @@
                 t("ecda5f9e", "Misleading"),
                 t("a423473c", "Legally Required Notice"),
                 t("b3296688", "Visibility Limited"),
-                t("ccd32094", "Yanzu");
-            t("abfcce0d", function (a) {
-                return a.amountOfTime + " da ya wuce";
-            }),
+                t("ccd32094", "Yanzu"),
+                t("abfcce0d", function (a) {
+                    return a.amountOfTime + " da ya wuce";
+                }),
                 t("ae408b76", "You reposted"),
                 t("j355f008", "Pinned post"),
                 t("habf9678", "Mawallafi ya kafa"),
@@ -12905,7 +12936,7 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     m
                 );
-            })(n(332920)._ActualI18NFormatMessage || s.Component);
+            })(n(111677)._ActualI18NFormatMessage || s.Component);
             t("_ActualI18NFormatMessage", f),
                 t("I18NFormatMessage", function (a) {
                     return s.createElement(f, a);
@@ -13260,4 +13291,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.9521924a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.87929dfa.js.map

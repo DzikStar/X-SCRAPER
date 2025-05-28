@@ -3,24 +3,24 @@
     {
         625661: (E, e, I) => {
             "use strict";
-            I.d(e, { ZP: () => C });
+            I.d(e, { ZP: () => r });
             var T = I(202784),
                 N = I(614983),
-                _ = I.n(N),
-                t = I(325686),
+                t = I.n(N),
+                _ = I(325686),
                 n = I(370006),
-                R = I(786998),
-                a = I(929028),
+                a = I(786998),
+                R = I(929028),
                 A = I(386802);
             function o(E, e, I) {
                 return E || (!e && I ? "fixed" : void 0);
             }
-            class C extends T.Component {
+            class r extends T.Component {
                 constructor(...E) {
                     super(...E),
                         (this._handleBackClick = () => {
                             const { history: E, onBackClick: e } = this.props;
-                            _()(e || E, "Either onBackClick must be specified, or history should be supplied"), e ? e(this.goBack) : this.goBack();
+                            t()(e || E, "Either onBackClick must be specified, or history should be supplied"), e ? e(this.goBack) : this.goBack();
                         }),
                         (this.goBack = () => {
                             const { backLocation: E, history: e } = this.props;
@@ -28,35 +28,35 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: E, centerTitle: e, centeredLogo: I, fixed: N, hideBackButton: _, isFullWidth: t, isLarge: a, leftControl: A, middleControl: C, position: O, rightControl: r, secondaryBar: i, style: c, subtitle: S, title: L, titleDomId: s, titleIconCell: l, titleIconCellSize: U, withBackground: D, withWideContainer: u } = this.props,
+                    const { backButtonType: E, centerTitle: e, centeredLogo: I, fixed: N, hideBackButton: t, isFullWidth: _, isLarge: R, leftControl: A, middleControl: r, position: C, rightControl: i, secondaryBar: O, style: c, subtitle: S, title: L, titleDomId: s, titleIconCell: l, titleIconCellSize: U, withBackground: D, withWideContainer: u } = this.props,
                         { isModal: p } = this.context,
-                        F = _ ? A : T.createElement(n.Z, { backButtonType: E, onClick: this._handleBackClick }),
+                        F = t ? A : T.createElement(n.Z, { backButtonType: E, onClick: this._handleBackClick }),
                         P = (function (E, e, I) {
                             return E && !(e && I);
-                        })(!!D, p, !!i);
-                    return T.createElement(T.Fragment, null, T.createElement(R.Z, { centerTitle: e, centeredLogo: I, isFullWidth: t, isLarge: a, leftControl: F, middleControl: C, position: o(O, p, N), rightControl: r, style: c, subtitle: S, title: L, titleDomId: s, titleIconCell: l, titleIconCellSize: U, withBackground: P, withWideContainer: u }), i || null);
+                        })(!!D, p, !!O);
+                    return T.createElement(T.Fragment, null, T.createElement(a.Z, { centerTitle: e, centeredLogo: I, isFullWidth: _, isLarge: R, leftControl: F, middleControl: r, position: o(C, p, N), rightControl: i, style: c, subtitle: S, title: L, titleDomId: s, titleIconCell: l, titleIconCellSize: U, withBackground: P, withWideContainer: u }), O || null);
                 }
                 render() {
                     const { secondaryBar: E } = this.props,
                         { isModal: e } = this.context,
-                        I = a.Z.getBackgroundStyles();
-                    return e ? T.createElement(t.Z, { style: !!E && I }, this._renderContent()) : this._renderContent();
+                        I = R.Z.getBackgroundStyles();
+                    return e ? T.createElement(_.Z, { style: !!E && I }, this._renderContent()) : this._renderContent();
                 }
             }
-            (C.contextType = A.Z), (C.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (r.contextType = A.Z), (r.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         652904: (E, e, I) => {
             "use strict";
             I.d(e, { Z: () => A });
             var T = I(202784),
                 N = I(500002),
-                _ = I(668214),
-                t = I(997174),
+                t = I(668214),
+                _ = I(997174),
                 n = I(118823);
-            const R = (0, _.Z)()
-                .propsFromActions(() => ({ updateLocation: n.YF, updateTweetDetailNav: t.NH }))
+            const a = (0, t.Z)()
+                .propsFromActions(() => ({ updateLocation: n.YF, updateTweetDetailNav: _.NH }))
                 .withAnalytics();
-            class a extends T.Component {
+            class R extends T.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -67,13 +67,13 @@
                             locationKey: N,
                         } = this.props,
                         {
-                            location: { pathname: _, search: t },
+                            location: { pathname: t, search: _ },
                             locationKey: n,
                         } = E;
-                    let R = !1;
-                    e.pathname !== I ? (this._isInBackground = !0) : this._isInBackground && e.pathname === I && ((this._isInBackground = !1), (R = !0));
-                    const a = N || n;
-                    ((a && N !== n) || (!a && I !== _) || T !== t || R) && this._performPageUpdates(this.props);
+                    let a = !1;
+                    e.pathname !== I ? (this._isInBackground = !0) : this._isInBackground && e.pathname === I && ((this._isInBackground = !1), (a = !0));
+                    const R = N || n;
+                    ((R && N !== n) || (!R && I !== t) || T !== _ || a) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -83,15 +83,15 @@
                     e.scribePageImpression(), I(e.contextualScribeNamespace, e.contextualScribeData), T(e.contextualScribeNamespace);
                 }
             }
-            a.defaultProps = { children: null };
-            const A = (0, N.ZP)(R(a));
+            R.defaultProps = { children: null };
+            const A = (0, N.ZP)(a(R));
         },
         946194: (E, e, I) => {
             "use strict";
-            I.d(e, { $J: () => PE, ls: () => FE, yE: () => ME, q0: () => YE, kb: () => dE, pD: () => hE, Eo: () => fE, DA: () => xE, QH: () => VE, UZ: () => vE, S5: () => BE, g9: () => WE, kD: () => K, YC: () => Q, sn: () => z, Z$: () => J, EK: () => q, rX: () => $, zH: () => eE, XV: () => EE, $G: () => IE, XC: () => TE, Sb: () => NE, aN: () => _E, TC: () => nE, J9: () => tE, kg: () => RE, QO: () => AE, rT: () => OE, _z: () => CE, Od: () => oE, B_: () => rE, Xu: () => iE, Wv: () => cE, _g: () => SE, P6: () => LE, tC: () => pE, Ep: () => sE, Sh: () => UE, Bf: () => lE, St: () => DE, h8: () => uE, Tc: () => bE, eW: () => QE, $q: () => GE, k8: () => mE, Rg: () => yE, JA: () => gE, Jj: () => wE, yw: () => HE, AM: () => ZE, s8: () => kE, O2: () => KE });
+            I.d(e, { $J: () => PE, ls: () => FE, yE: () => ME, q0: () => YE, kb: () => dE, pD: () => hE, Eo: () => fE, DA: () => xE, QH: () => VE, UZ: () => vE, S5: () => BE, g9: () => WE, kD: () => K, YC: () => Q, sn: () => z, Z$: () => J, EK: () => q, rX: () => $, zH: () => eE, XV: () => EE, $G: () => IE, XC: () => TE, Sb: () => NE, aN: () => tE, TC: () => nE, J9: () => _E, kg: () => aE, QO: () => AE, rT: () => CE, _z: () => rE, Od: () => oE, B_: () => iE, Xu: () => OE, Wv: () => cE, _g: () => SE, P6: () => LE, tC: () => pE, Ep: () => sE, Sh: () => UE, Bf: () => lE, St: () => DE, h8: () => uE, Tc: () => bE, eW: () => QE, $q: () => mE, k8: () => GE, Rg: () => yE, JA: () => gE, Jj: () => wE, yw: () => HE, AM: () => ZE, s8: () => kE, O2: () => KE });
             var T = I(424869),
                 N = I.n(T);
-            const _ = ({ apiClient: E, featureSwitches: e }) => ({
+            const t = ({ apiClient: E, featureSwitches: e }) => ({
                 fetchAccess: (e = {}, I = {}) => E.getUnversioned("/verify/1.0/access", e, I),
                 fetchAccountEligibility: (e = {}, I = {}) => E.getUnversioned("/verify/1.0/account-eligibility", e, I),
                 fetchAccountViolations: (e = {}, I = {}) => E.getUnversioned("/verify/1.0/badge-violation/violations", e, I),
@@ -101,21 +101,21 @@
                 verifyAccount: (e, I = {}) => E.postUnversioned("/verify/1.0/intake", e, { ...I, "content-type": "application/json" }),
                 verifyIdDocument(e, I = {}) {
                     const T = { ...I, "content-type": "multipart/form-data" },
-                        { backImage: N, country: _, frontImage: t, idType: n } = e,
-                        R = new FormData();
-                    return n && R.append("id_type", n), _ && R.append("country", _), N && R.append("back", N), t && R.append("front", t), E.postUnversioned("/verify/1.0/id-document", R, T);
+                        { backImage: N, country: t, frontImage: _, idType: n } = e,
+                        a = new FormData();
+                    return n && a.append("id_type", n), t && a.append("country", t), N && a.append("back", N), _ && a.append("front", _), E.postUnversioned("/verify/1.0/id-document", a, T);
                 },
             });
-            var t = I(499627),
+            var _ = I(499627),
                 n = I(917799),
-                R = I(312771),
-                a = I(257166),
+                a = I(312771),
+                R = I(257166),
                 A = I(497294),
                 o = I(316325);
-            const C = "accountVerification",
-                O = "rweb/accountVerification/APPEND_NOTABILITY_ARTICLE_DATA",
-                r = "rweb/accountVerification/APPEND_NOTABILITY_MAIN_REFERENCE_DATA",
-                i = "rweb/accountVerification/APPEND_NOTABILITY_NEWS_DATA",
+            const r = "accountVerification",
+                C = "rweb/accountVerification/APPEND_NOTABILITY_ARTICLE_DATA",
+                i = "rweb/accountVerification/APPEND_NOTABILITY_MAIN_REFERENCE_DATA",
+                O = "rweb/accountVerification/APPEND_NOTABILITY_NEWS_DATA",
                 c = "rweb/accountVerification/APPEND_NOTABILITY_PUBLIC_REFERENCE_DATA",
                 S = "rweb/accountVerification/RESET_AUTHENTICATION_RESULT",
                 L = "rweb/accountVerification/RESET_AUTHENTICITY_TYPE",
@@ -132,8 +132,8 @@
                 d = "rweb/accountVerification/SET_NEXT_FLOW",
                 f = "rweb/accountVerification/SET_NOTABILITY_CATEGORY",
                 b = "rweb/accountVerification/SET_NOTABILITY_DATA",
-                G = "rweb/accountVerification/SET_NOTABILITY_SUBCATEGORY",
-                m = "rweb/accountVerification/SET_PREV_FLOW",
+                m = "rweb/accountVerification/SET_NOTABILITY_SUBCATEGORY",
+                G = "rweb/accountVerification/SET_PREV_FLOW",
                 y = "rweb/accountVerification/TOGGLE_CHECKBOX_CONFIRMATION",
                 B = "rweb/accountVerification/UPDATE_FORM_HISTORY",
                 V = Object.freeze({ REQUEST: "rweb/accountVerification/FETCH_ACCESS_REQUEST", SUCCESS: "rweb/accountVerification/FETCH_ACCESS_SUCCESS", FAILURE: "rweb/accountVerification/FETCH_ACCESS_FAILURE" }),
@@ -145,71 +145,71 @@
                 w = Object.freeze({ REQUEST: "rweb/accountVerification/VERIFY_ACCOUNT_REQUEST", SUCCESS: "rweb/accountVerification/VERIFY_ACCOUNT_SUCCESS", FAILURE: "rweb/accountVerification/VERIFY_ACCOUNT_FAILURE" }),
                 v = Object.freeze({ REQUEST: "rweb/accountVerification/VERIFY_ID_DOCUMENT_REQUEST", SUCCESS: "rweb/accountVerification/VERIFY_ID_DOCUMENT_SUCCESS", FAILURE: "rweb/accountVerification/VERIFY_ID_DOCUMENT_FAILURE" }),
                 Z = o.pl.LANDING_PAGE,
-                k = N()({ access: { data: { applicationSubmissionTimeInMs: void 0, decisionMadeTimeInMs: void 0, status: o.pY.DISABLED }, error: null, fetchStatus: R.ZP.NONE }, accountEligibility: { data: { followers_eligible: !1, mentions_eligible: !1 }, error: null, fetchStatus: R.ZP.NONE }, accountViolations: { data: { violations: [] }, error: null, fetchStatus: R.ZP.NONE }, authenticationResult: { data: { errors: [], status: void 0 }, error: null, fetchStatus: R.ZP.NONE }, badgeViolations: { data: { button_text: "", debadge_timestamp_ms: 0, violation_modal_title: "", violation_modal_desc: { entities: [], text: "" }, violations: [] }, error: null, fetchStatus: R.ZP.NONE }, documentFormats: { data: void 0, error: null, fetchStatus: R.ZP.NONE }, documentIdProcess: { data: { errors: [], entity_id: void 0 }, error: null, fetchStatus: R.ZP.NONE }, formData: { authenticityType: void 0, authenticityData: void 0, notabilityCategory: void 0, notabilityData: void 0, notabilitySubcategory: void 0 }, backID: void 0, formHistory: {}, frontID: void 0, idCountry: void 0, idCountryName: void 0, idType: void 0, idTypeName: void 0, isConfirmed: !1, currentStep: Z, stepsTaken: [Z], surveyUrl: void 0, verifyAccount: { error: null, fetchStatus: R.ZP.NONE } });
-            t.Z.register({
-                [C]: function (E = k, e) {
+                k = N()({ access: { data: { applicationSubmissionTimeInMs: void 0, decisionMadeTimeInMs: void 0, status: o.pY.DISABLED }, error: null, fetchStatus: a.ZP.NONE }, accountEligibility: { data: { followers_eligible: !1, mentions_eligible: !1 }, error: null, fetchStatus: a.ZP.NONE }, accountViolations: { data: { violations: [] }, error: null, fetchStatus: a.ZP.NONE }, authenticationResult: { data: { errors: [], status: void 0 }, error: null, fetchStatus: a.ZP.NONE }, badgeViolations: { data: { button_text: "", debadge_timestamp_ms: 0, violation_modal_title: "", violation_modal_desc: { entities: [], text: "" }, violations: [] }, error: null, fetchStatus: a.ZP.NONE }, documentFormats: { data: void 0, error: null, fetchStatus: a.ZP.NONE }, documentIdProcess: { data: { errors: [], entity_id: void 0 }, error: null, fetchStatus: a.ZP.NONE }, formData: { authenticityType: void 0, authenticityData: void 0, notabilityCategory: void 0, notabilityData: void 0, notabilitySubcategory: void 0 }, backID: void 0, formHistory: {}, frontID: void 0, idCountry: void 0, idCountryName: void 0, idType: void 0, idTypeName: void 0, isConfirmed: !1, currentStep: Z, stepsTaken: [Z], surveyUrl: void 0, verifyAccount: { error: null, fetchStatus: a.ZP.NONE } });
+            _.Z.register({
+                [r]: function (E = k, e) {
                     if (!e) return E;
                     switch (e.type) {
                         case V.REQUEST:
-                            return { ...E, access: { ...E.access, fetchStatus: R.ZP.LOADING, error: null } };
+                            return { ...E, access: { ...E.access, fetchStatus: a.ZP.LOADING, error: null } };
                         case V.SUCCESS:
-                            if (e.payload) return { ...E, access: { data: { ...E.access.data, applicationSubmissionTimeInMs: e.payload.application_submission_time_in_ms, decisionMadeTimeInMs: e.payload.decision_made_time_in_ms, status: e.payload.status || o.pY.DISABLED }, error: null, fetchStatus: R.ZP.LOADED } };
+                            if (e.payload) return { ...E, access: { data: { ...E.access.data, applicationSubmissionTimeInMs: e.payload.application_submission_time_in_ms, decisionMadeTimeInMs: e.payload.decision_made_time_in_ms, status: e.payload.status || o.pY.DISABLED }, error: null, fetchStatus: a.ZP.LOADED } };
                             break;
                         case V.FAILURE:
-                            return { ...E, access: { ...E.access, error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, access: { ...E.access, error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case W.REQUEST:
-                            return { ...E, accountEligibility: { ...E.accountEligibility, fetchStatus: R.ZP.LOADING, error: null } };
+                            return { ...E, accountEligibility: { ...E.accountEligibility, fetchStatus: a.ZP.LOADING, error: null } };
                         case W.SUCCESS:
-                            if (e.payload) return { ...E, accountEligibility: { data: { ...e.payload }, error: null, fetchStatus: R.ZP.LOADED } };
+                            if (e.payload) return { ...E, accountEligibility: { data: { ...e.payload }, error: null, fetchStatus: a.ZP.LOADED } };
                             break;
                         case W.FAILURE:
-                            return { ...E, accountEligibility: { ...E.accountEligibility, error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, accountEligibility: { ...E.accountEligibility, error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case h.REQUEST:
-                            return { ...E, accountViolations: { ...E.accountViolations, fetchStatus: R.ZP.LOADING, error: null } };
+                            return { ...E, accountViolations: { ...E.accountViolations, fetchStatus: a.ZP.LOADING, error: null } };
                         case h.SUCCESS:
-                            if (e.payload) return { ...E, accountViolations: { data: { ...e.payload }, error: null, fetchStatus: R.ZP.LOADED } };
+                            if (e.payload) return { ...E, accountViolations: { data: { ...e.payload }, error: null, fetchStatus: a.ZP.LOADED } };
                             break;
                         case h.FAILURE:
-                            return { ...E, accountViolations: { ...E.accountViolations, error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, accountViolations: { ...E.accountViolations, error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case H.REQUEST:
-                            return { ...E, authenticationResult: { ...E.authenticationResult, error: null, fetchStatus: R.ZP.LOADING } };
+                            return { ...E, authenticationResult: { ...E.authenticationResult, error: null, fetchStatus: a.ZP.LOADING } };
                         case H.SUCCESS:
-                            return { ...E, authenticationResult: { data: { ...E.authenticationResult.data, ...e.payload }, error: null, fetchStatus: R.ZP.LOADED } };
+                            return { ...E, authenticationResult: { data: { ...E.authenticationResult.data, ...e.payload }, error: null, fetchStatus: a.ZP.LOADED } };
                         case H.FAILURE:
-                            return { ...E, authenticationResult: { ...E.authenticationResult, error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, authenticationResult: { ...E.authenticationResult, error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case x.REQUEST:
-                            return { ...E, badgeViolations: { ...E.badgeViolations, fetchStatus: R.ZP.LOADING } };
+                            return { ...E, badgeViolations: { ...E.badgeViolations, fetchStatus: a.ZP.LOADING } };
                         case x.SUCCESS:
-                            if (e.payload) return { ...E, badgeViolations: { data: { ...e.payload }, error: null, fetchStatus: R.ZP.LOADED } };
+                            if (e.payload) return { ...E, badgeViolations: { data: { ...e.payload }, error: null, fetchStatus: a.ZP.LOADED } };
                             break;
                         case x.FAILURE:
-                            return { ...E, badgeViolations: { ...E.badgeViolations, error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, badgeViolations: { ...E.badgeViolations, error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case g.REQUEST:
-                            return { ...E, documentFormats: { ...E.documentFormats, error: null, fetchStatus: R.ZP.LOADING } };
+                            return { ...E, documentFormats: { ...E.documentFormats, error: null, fetchStatus: a.ZP.LOADING } };
                         case g.SUCCESS:
-                            if (e.payload) return { ...E, documentFormats: { data: { ...e.payload }, error: null, fetchStatus: R.ZP.LOADED } };
+                            if (e.payload) return { ...E, documentFormats: { data: { ...e.payload }, error: null, fetchStatus: a.ZP.LOADED } };
                             break;
                         case g.FAILURE:
-                            return { ...E, documentFormats: { ...E.documentFormats, error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, documentFormats: { ...E.documentFormats, error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case w.REQUEST:
-                            return { ...E, verifyAccount: { error: null, fetchStatus: R.ZP.LOADING } };
+                            return { ...E, verifyAccount: { error: null, fetchStatus: a.ZP.LOADING } };
                         case w.SUCCESS: {
                             let I;
-                            return e.payload && (I = e.payload.survey_url), { ...E, surveyUrl: I, verifyAccount: { error: null, fetchStatus: R.ZP.LOADED } };
+                            return e.payload && (I = e.payload.survey_url), { ...E, surveyUrl: I, verifyAccount: { error: null, fetchStatus: a.ZP.LOADED } };
                         }
                         case w.FAILURE:
-                            return { ...E, verifyAccount: { error: e.payload, fetchStatus: R.ZP.FAILED } };
+                            return { ...E, verifyAccount: { error: e.payload, fetchStatus: a.ZP.FAILED } };
                         case v.REQUEST:
-                            return { ...E, documentIdProcess: { ...E.documentIdProcess, error: null, fetchStatus: R.ZP.LOADING } };
+                            return { ...E, documentIdProcess: { ...E.documentIdProcess, error: null, fetchStatus: a.ZP.LOADING } };
                         case v.SUCCESS:
-                            return { ...E, documentIdProcess: { data: { ...E.documentIdProcess.data, ...e.payload }, error: null, fetchStatus: R.ZP.LOADED } };
+                            return { ...E, documentIdProcess: { data: { ...E.documentIdProcess.data, ...e.payload }, error: null, fetchStatus: a.ZP.LOADED } };
                         case v.FAILURE:
-                            return { ...E, documentIdProcess: { ...E.documentIdProcess, error: e.payload, fetchStatus: R.ZP.FAILED } };
-                        case O:
+                            return { ...E, documentIdProcess: { ...E.documentIdProcess, error: e.payload, fetchStatus: a.ZP.FAILED } };
+                        case C:
                             return { ...E, formData: { ...E.formData, notabilityData: { ...E.formData.notabilityData, articleReferenceUrls: e.payload?.articleReferenceUrls } } };
-                        case r:
-                            return { ...E, formData: { ...E.formData, notabilityData: { ...E.formData.notabilityData, mainReferenceUrl: e.payload?.mainReferenceUrl } } };
                         case i:
+                            return { ...E, formData: { ...E.formData, notabilityData: { ...E.formData.notabilityData, mainReferenceUrl: e.payload?.mainReferenceUrl } } };
+                        case O:
                             return { ...E, formData: { ...E.formData, notabilityData: { ...E.formData.notabilityData, newsReferenceUrls: e.payload?.newsReferenceUrls } } };
                         case c:
                             return { ...E, formData: { ...E.formData, notabilityData: { ...E.formData.notabilityData, publicReferenceUrl: e.payload?.publicReferenceUrl } } };
@@ -227,7 +227,7 @@
                             return { ...E, backID: k.backID, frontID: k.frontID, isConfirmed: k.isConfirmed };
                         case D: {
                             const { previousStep: e, remainingSteps: I } = zE(E.stepsTaken);
-                            return { ...E, currentStep: e, stepsTaken: [...I], verifyAccount: { error: null, fetchStatus: R.ZP.NONE } };
+                            return { ...E, currentStep: e, stepsTaken: [...I], verifyAccount: { error: null, fetchStatus: a.ZP.NONE } };
                         }
                         case y:
                             return { ...E, isConfirmed: !E.isConfirmed };
@@ -238,7 +238,7 @@
                         case d:
                             if (e.payload) return { ...E, currentStep: e.payload, stepsTaken: [...E.stepsTaken, e.payload] };
                             break;
-                        case m: {
+                        case G: {
                             const { previousStep: e, remainingSteps: I } = zE(E.stepsTaken);
                             return { ...E, currentStep: e, stepsTaken: [...I] };
                         }
@@ -250,7 +250,7 @@
                             return { ...E, formData: { ...E.formData, notabilityData: { ...e.payload } } };
                         case "rweb/accountVerification/RESET_NOTABILITY_DATA":
                             return { ...E, formData: { ...E.formData, notabilityData: k.formData.notabilityData } };
-                        case G:
+                        case m:
                             return { ...E, formData: { ...E.formData, notabilitySubcategory: e.payload } };
                         case p:
                             return { ...E, backID: k.backID, frontID: k.frontID, isConfirmed: k.isConfirmed, idType: k.idType, idTypeName: k.idTypeName, formData: { ...E.formData, authenticityType: e.payload, authenticityData: k.formData.authenticityData } };
@@ -272,101 +272,101 @@
                     return E;
                 },
             });
-            const K = (E) => E[C].access.data,
-                Q = (E) => E[C].access.fetchStatus,
-                z = (E) => E[C].accountEligibility.data,
-                j = (E) => E[C].accountEligibility.fetchStatus,
-                J = (E) => E[C].accountViolations.data,
-                X = (E) => E[C].accountViolations.fetchStatus,
-                q = (E) => E[C].authenticationResult.data.errors || [],
-                $ = (E) => E[C].authenticationResult.data.status,
-                EE = (E) => E[C].formData.authenticityType,
-                eE = (E) => E[C].formData.authenticityData,
-                IE = (E) => E[C].backID,
-                TE = (E) => E[C].badgeViolations.data,
-                NE = (E) => E[C].badgeViolations.fetchStatus,
-                _E = (E) => E[C].isConfirmed,
-                tE = (E) => E[C].currentStep,
+            const K = (E) => E[r].access.data,
+                Q = (E) => E[r].access.fetchStatus,
+                z = (E) => E[r].accountEligibility.data,
+                j = (E) => E[r].accountEligibility.fetchStatus,
+                J = (E) => E[r].accountViolations.data,
+                X = (E) => E[r].accountViolations.fetchStatus,
+                q = (E) => E[r].authenticationResult.data.errors || [],
+                $ = (E) => E[r].authenticationResult.data.status,
+                EE = (E) => E[r].formData.authenticityType,
+                eE = (E) => E[r].formData.authenticityData,
+                IE = (E) => E[r].backID,
+                TE = (E) => E[r].badgeViolations.data,
+                NE = (E) => E[r].badgeViolations.fetchStatus,
+                tE = (E) => E[r].isConfirmed,
+                _E = (E) => E[r].currentStep,
                 nE = (E) => {
-                    const e = tE(E);
-                    return E[C].formHistory[e] || void 0;
+                    const e = _E(E);
+                    return E[r].formHistory[e] || void 0;
                 },
-                RE = (E) => E[C].documentFormats.data,
-                aE = (E) => E[C].documentFormats.fetchStatus,
-                AE = (E) => E[C].documentIdProcess.data.entity_id,
-                oE = (E) => E[C].documentIdProcess.error,
-                CE = (E) => E[C].documentIdProcess.fetchStatus,
-                OE = (E) => E[C].documentIdProcess.data.errors || [],
-                rE = (E) => E[C].frontID,
-                iE = (E) => E[C].idCountry,
-                cE = (E) => E[C].idCountryName,
-                SE = (E) => E[C].idType,
-                LE = (E) => E[C].idTypeName,
-                sE = (E) => E[C].formData.notabilityCategory,
+                aE = (E) => E[r].documentFormats.data,
+                RE = (E) => E[r].documentFormats.fetchStatus,
+                AE = (E) => E[r].documentIdProcess.data.entity_id,
+                oE = (E) => E[r].documentIdProcess.error,
+                rE = (E) => E[r].documentIdProcess.fetchStatus,
+                CE = (E) => E[r].documentIdProcess.data.errors || [],
+                iE = (E) => E[r].frontID,
+                OE = (E) => E[r].idCountry,
+                cE = (E) => E[r].idCountryName,
+                SE = (E) => E[r].idType,
+                LE = (E) => E[r].idTypeName,
+                sE = (E) => E[r].formData.notabilityCategory,
                 lE = (E) => {
-                    const { notabilityCategory: e, notabilityData: I, notabilitySubcategory: T } = E[C].formData;
+                    const { notabilityCategory: e, notabilityData: I, notabilitySubcategory: T } = E[r].formData;
                     return e === o.eV.NEWS ? I?.newsType : T;
                 },
-                UE = (E) => E[C].formData.notabilityData,
-                DE = (E) => E[C].surveyUrl,
-                uE = (E) => E[C].verifyAccount.fetchStatus,
+                UE = (E) => E[r].formData.notabilityData,
+                DE = (E) => E[r].surveyUrl,
+                uE = (E) => E[r].verifyAccount.fetchStatus,
                 pE = (E) => {
                     const e = Q(E),
                         I = j(E),
                         T = X(E),
-                        N = (0, a.selectFetchStatus)(E),
-                        _ = aE(E);
-                    return [e, I, T, N, _].includes(R.ZP.FAILED) ? R.ZP.FAILED : ((E) => E.includes(R.ZP.LOADING))([e, I, T, N, _]) ? R.ZP.LOADING : R.ZP.LOADED;
+                        N = (0, R.selectFetchStatus)(E),
+                        t = RE(E);
+                    return [e, I, T, N, t].includes(a.ZP.FAILED) ? a.ZP.FAILED : ((E) => E.includes(a.ZP.LOADING))([e, I, T, N, t]) ? a.ZP.LOADING : a.ZP.LOADED;
                 },
                 FE =
                     () =>
                     (E, e, { api: I }) => {
                         const T = e(),
                             N = Q(T);
-                        return N !== R.ZP.LOADING && N !== R.ZP.LOADED ? E(PE()) : Promise.resolve();
+                        return N !== a.ZP.LOADING && N !== a.ZP.LOADED ? E(PE()) : Promise.resolve();
                     },
                 PE =
                     () =>
                     (E, e, { api: I }) =>
-                        (0, n._O)(E, { request: I.withEndpoint(_).fetchAccess })({ actionTypes: V, context: "FETCH_ACCESS" }),
+                        (0, n._O)(E, { request: I.withEndpoint(t).fetchAccess })({ actionTypes: V, context: "FETCH_ACCESS" }),
                 ME =
                     () =>
                     (E, e, { api: I }) => {
                         const T = e(),
                             N = j(T);
-                        return N !== R.ZP.LOADING && N !== R.ZP.LOADED ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(_).fetchAccountEligibility })({ actionTypes: W, context: "FETCH_ACCOUNT_ELIGIBILITY" })) : Promise.resolve();
+                        return N !== a.ZP.LOADING && N !== a.ZP.LOADED ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(t).fetchAccountEligibility })({ actionTypes: W, context: "FETCH_ACCOUNT_ELIGIBILITY" })) : Promise.resolve();
                     },
                 YE =
                     () =>
                     (E, e, { api: I }) => {
                         const T = e(),
                             N = X(T);
-                        return N !== R.ZP.LOADING && N !== R.ZP.LOADED ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(_).fetchAccountViolations })({ actionTypes: h, context: "FETCH_ACCOUNT_VIOLATIONS" })) : Promise.resolve();
+                        return N !== a.ZP.LOADING && N !== a.ZP.LOADED ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(t).fetchAccountViolations })({ actionTypes: h, context: "FETCH_ACCOUNT_VIOLATIONS" })) : Promise.resolve();
                     },
                 dE =
                     () =>
                     (E, e, { api: I }) => {
-                        const T = ((E) => E[C].authenticationResult.fetchStatus)(e());
-                        return T !== R.ZP.LOADING ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(_).fetchAuthenticationResult })({ actionTypes: H, context: "FETCH_AUTHENTICATION_RESULT" })) : Promise.resolve();
+                        const T = ((E) => E[r].authenticationResult.fetchStatus)(e());
+                        return T !== a.ZP.LOADING ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(t).fetchAuthenticationResult })({ actionTypes: H, context: "FETCH_AUTHENTICATION_RESULT" })) : Promise.resolve();
                     },
                 fE =
                     () =>
                     (E, e, { api: I }) => {
                         const T = e(),
-                            N = aE(T);
-                        return N !== R.ZP.LOADING && N !== R.ZP.LOADED ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(_).fetchDocumentFormats })({ actionTypes: g, context: "FETCH_DOCUMENT_FORMATS" })) : Promise.resolve();
+                            N = RE(T);
+                        return N !== a.ZP.LOADING && N !== a.ZP.LOADED ? E((E, e, { api: I }) => (0, n._O)(E, { request: I.withEndpoint(t).fetchDocumentFormats })({ actionTypes: g, context: "FETCH_DOCUMENT_FORMATS" })) : Promise.resolve();
                     },
                 bE =
                     (E) =>
                     (e, I, { api: T }) => {
                         e({ type: F, payload: E });
                     },
-                GE =
+                mE =
                     (E) =>
                     (e, I, { api: T }) => {
                         e({ type: P, payload: E });
                     },
-                mE =
+                GE =
                     (E, e) =>
                     (I, T, { api: N }) => {
                         I({ type: M, payload: { countryCode: E, countryName: e } });
@@ -394,7 +394,7 @@
                 hE =
                     () =>
                     (E, e, { api: I }) =>
-                        (0, n._O)(E, { request: I.withEndpoint(_).fetchBadgeViolations })({ actionTypes: x, context: "FETCH_BADGE_VIOLATIONS" }),
+                        (0, n._O)(E, { request: I.withEndpoint(t).fetchBadgeViolations })({ actionTypes: x, context: "FETCH_BADGE_VIOLATIONS" }),
                 HE =
                     () =>
                     (E, e, { api: I }) => {
@@ -408,12 +408,12 @@
                 gE =
                     (E) =>
                     (e, I, { api: T }) => {
-                        e({ payload: E || o.CT[tE(I())].next, type: d });
+                        e({ payload: E || o.CT[_E(I())].next, type: d });
                     },
                 wE =
                     () =>
                     (E, e, { api: I }) => {
-                        E({ type: m });
+                        E({ type: G });
                     },
                 vE =
                     () =>
@@ -430,44 +430,44 @@
                     (E, e, { api: I }) => {
                         const T = e(),
                             N = EE(T) || void 0,
-                            t = eE(T) || void 0,
-                            R = sE(T) || void 0,
-                            a = UE(T) || {},
+                            _ = eE(T) || void 0,
+                            a = sE(T) || void 0,
+                            R = UE(T) || {},
                             A = lE(T) || void 0,
-                            C = A && R !== o.eV.NEWS;
-                        let O = { authenticity_type: N };
-                        t?.siteUrl && (O = { ...O, site_url: t?.siteUrl?.[0] }), t?.email && (O = { ...O, verified_email: t?.email?.[0] });
-                        let r = { category: R };
-                        C && (r = { ...r, notability_subcategory: A }), a?.articleReferenceUrls && (r = { ...r, article_reference_urls: a?.articleReferenceUrls }), a?.authorReferenceUrl && (r = { ...r, author_reference_url: a?.authorReferenceUrl?.[0] }), a?.googleTrendsReferenceUrl && (r = { ...r, google_trends_reference_url: a?.googleTrendsReferenceUrl?.[0] }), a?.hashtagReferenceUrl && (r = { ...r, hashtag_reference_url: a?.hashtagReferenceUrl?.[0] }), a?.imdbReferenceUrl && (r = { ...r, imdb_reference_url: a?.imdbReferenceUrl?.[0] }), a?.leadershipReferenceUrl && (r = { ...r, leadership_reference_url: a?.leadershipReferenceUrl?.[0] }), a?.mainReferenceUrl && (r = { ...r, main_reference_url: a?.mainReferenceUrl?.[0] }), a?.newsReferenceUrls && (r = { ...r, news_reference_urls: a?.newsReferenceUrls }), a?.newsType && (r = { ...r, news_type: a?.newsType }), a?.publicReferenceUrl && (r = { ...r, public_reference_url: a?.publicReferenceUrl?.[0] }), a?.publicationReferenceUrl && (r = { ...r, publication_reference_url: a?.publicationReferenceUrl?.[0] }), a?.stockReferenceUrl && (r = { ...r, stock_reference_url: a?.stockReferenceUrl?.[0] }), a?.teamReferenceUrl && (r = { ...r, team_reference_url: a?.teamReferenceUrl?.[0] }), a?.wikipediaReferenceUrl && (r = { ...r, wikipedia_reference_url: a?.wikipediaReferenceUrl?.[0] });
-                        const i = { authenticity_claim: O, notability_claim: r };
-                        return (0, n._O)(E, { params: i, request: I.withEndpoint(_).verifyAccount })({ actionTypes: w, context: "VERIFY_ACCOUNT" });
+                            r = A && a !== o.eV.NEWS;
+                        let C = { authenticity_type: N };
+                        _?.siteUrl && (C = { ...C, site_url: _?.siteUrl?.[0] }), _?.email && (C = { ...C, verified_email: _?.email?.[0] });
+                        let i = { category: a };
+                        r && (i = { ...i, notability_subcategory: A }), R?.articleReferenceUrls && (i = { ...i, article_reference_urls: R?.articleReferenceUrls }), R?.authorReferenceUrl && (i = { ...i, author_reference_url: R?.authorReferenceUrl?.[0] }), R?.googleTrendsReferenceUrl && (i = { ...i, google_trends_reference_url: R?.googleTrendsReferenceUrl?.[0] }), R?.hashtagReferenceUrl && (i = { ...i, hashtag_reference_url: R?.hashtagReferenceUrl?.[0] }), R?.imdbReferenceUrl && (i = { ...i, imdb_reference_url: R?.imdbReferenceUrl?.[0] }), R?.leadershipReferenceUrl && (i = { ...i, leadership_reference_url: R?.leadershipReferenceUrl?.[0] }), R?.mainReferenceUrl && (i = { ...i, main_reference_url: R?.mainReferenceUrl?.[0] }), R?.newsReferenceUrls && (i = { ...i, news_reference_urls: R?.newsReferenceUrls }), R?.newsType && (i = { ...i, news_type: R?.newsType }), R?.publicReferenceUrl && (i = { ...i, public_reference_url: R?.publicReferenceUrl?.[0] }), R?.publicationReferenceUrl && (i = { ...i, publication_reference_url: R?.publicationReferenceUrl?.[0] }), R?.stockReferenceUrl && (i = { ...i, stock_reference_url: R?.stockReferenceUrl?.[0] }), R?.teamReferenceUrl && (i = { ...i, team_reference_url: R?.teamReferenceUrl?.[0] }), R?.wikipediaReferenceUrl && (i = { ...i, wikipedia_reference_url: R?.wikipediaReferenceUrl?.[0] });
+                        const O = { authenticity_claim: C, notability_claim: i };
+                        return (0, n._O)(E, { params: O, request: I.withEndpoint(t).verifyAccount })({ actionTypes: w, context: "VERIFY_ACCOUNT" });
                     },
                 KE =
                     () =>
                     (E, e, { api: I }) => {
                         const T = e(),
                             N = IE(T),
-                            t = rE(T),
-                            R = SE(T),
-                            a = iE(T);
-                        let o, C;
+                            _ = iE(T),
+                            a = SE(T),
+                            R = OE(T);
+                        let o, r;
                         if (N) {
                             const [E] = (0, A.m3)(T, N);
-                            C = E?.originalMediaFile?.fileHandle;
+                            r = E?.originalMediaFile?.fileHandle;
                         }
-                        if (t) {
-                            const [E] = (0, A.m3)(T, t);
+                        if (_) {
+                            const [E] = (0, A.m3)(T, _);
                             o = E?.originalMediaFile?.fileHandle;
                         }
-                        const O = { backImage: C, country: a, frontImage: o, idType: R };
-                        return (0, n._O)(E, { params: O, request: I.withEndpoint(_).verifyIdDocument })({ actionTypes: v, context: "VERIFY_ID_DOCUMENT" });
+                        const C = { backImage: r, country: R, frontImage: o, idType: a };
+                        return (0, n._O)(E, { params: C, request: I.withEndpoint(t).verifyIdDocument })({ actionTypes: v, context: "VERIFY_ID_DOCUMENT" });
                     },
                 QE =
                     (E, e) =>
                     (I, T, { api: N }) => {
-                        const _ = T(),
-                            t = UE(_)?.newsType,
-                            { followers_eligible: n, mentions_eligible: R } = z(_);
+                        const t = T(),
+                            _ = UE(t)?.newsType,
+                            { followers_eligible: n, mentions_eligible: a } = z(t);
                         switch (E) {
                             case o.pl.NOTABILITY_CATEGORY_SELECT:
                                 I({ payload: e, type: f });
@@ -479,13 +479,13 @@
                             case o.pl.GOVERNMENT_SUBCATEGORY:
                             case o.pl.INFLUENCER_SUBCATEGORY:
                             case o.pl.SPORTS_SUBCATEGORY:
-                                "string" == typeof e && (I({ payload: o.W5[e], type: f }), o.W5[e] === o.eV.NEWS ? I({ payload: { newsType: e }, type: b }) : I({ payload: e, type: G }));
+                                "string" == typeof e && (I({ payload: o.W5[e], type: f }), o.W5[e] === o.eV.NEWS ? I({ payload: { newsType: e }, type: b }) : I({ payload: e, type: m }));
                                 break;
                             case o.pl.NEWS_QUALIFICATIONS:
                                 I({ payload: { newsType: e }, type: b });
                                 break;
                             case o.pl.ACTIVIST_QUALIFICATIONS:
-                                I({ payload: o.Y_.ACTIVIST, type: G });
+                                I({ payload: o.Y_.ACTIVIST, type: m });
                                 break;
                             case o.pl.ACTIVIST_GOOGLE_TRENDS:
                             case o.pl.ACTIVIST_LEADERSHIP:
@@ -525,15 +525,15 @@
                                 break;
                             case o.pl.COMPANY_NEWS_REFERENCE:
                             case o.pl.SPORTS_ENTITY_NEWS_REFERENCE:
-                                I(n ? { payload: e, type: b } : { payload: e, type: i });
+                                I(n ? { payload: e, type: b } : { payload: e, type: O });
                                 break;
                             case o.pl.CREATOR_PROFILE:
                             case o.pl.ENTERTAINMENT_INDIVIDUAL_MAIN_REFERENCE_URL:
-                                I({ payload: e, type: r });
+                                I({ payload: e, type: i });
                                 break;
                             case o.pl.ENTERTAINMENT_COMPANY_NEWS_REFERENCE:
                             case o.pl.ENTERTAINMENT_PRODUCTION_ORGANIZATION_NEWS_REFERENCE:
-                                I(n || R ? { payload: e, type: b } : { payload: e, type: i });
+                                I(n || a ? { payload: e, type: b } : { payload: e, type: O });
                                 break;
                             case o.pl.GOVERNMENT_CANDIDATE_PUBLIC_REFERENCE_URL:
                             case o.pl.GOVERNMENT_OFFICE_PUBLIC_REFERENCE_URL:
@@ -547,10 +547,10 @@
                             case o.pl.NEWS_CREDIBILITY_STOCK_REFERENCE_URL:
                             case o.pl.NEWS_CREDIBILITY_WIKIPEDIA_REFERENCE_URL:
                             case o.pl.NEWS_FREELANCER_CREDIBILITY_ARTICLE_REFERENCE_URLS:
-                                I({ payload: { ...e, newsType: t }, type: b });
+                                I({ payload: { ...e, newsType: _ }, type: b });
                                 break;
                             case o.pl.NEWS_ORGANIZATION_CREDIBILITY_ARTICLE_REFERENCE_URLS:
-                                I(n || R ? { payload: { ...e, newsType: t }, type: b } : { payload: { ...e }, type: O });
+                                I(n || a ? { payload: { ...e, newsType: _ }, type: b } : { payload: { ...e }, type: C });
                                 break;
                             case o.pl.AUTHENTICITY_TYPE_SELECT:
                                 I({ payload: e, type: p });
@@ -573,24 +573,24 @@
         },
         316325: (E, e, I) => {
             "use strict";
-            I.d(e, { CT: () => D, DY: () => c, GG: () => A, L_: () => t, M_: () => l, QP: () => C, R2: () => S, S: () => n, Tq: () => T, W5: () => s, WS: () => R, Y_: () => o, Yp: () => i, aF: () => r, an: () => L, eV: () => a, fX: () => N, nS: () => O, pY: () => _, pl: () => U });
+            I.d(e, { CT: () => D, DY: () => c, GG: () => A, L_: () => _, M_: () => l, QP: () => r, R2: () => S, S: () => n, Tq: () => T, W5: () => s, WS: () => a, Y_: () => o, Yp: () => O, aF: () => i, an: () => L, eV: () => R, fX: () => N, nS: () => C, pY: () => t, pl: () => U });
             const T = Object.freeze({ IN_COMPLIANCE: "in_compliance", OUT_OF_COMPLIANCE: "out_of_compliance" }),
                 N = Object.freeze({ PROFILE_COMPLETION: "profile_completion", ACCOUNT_SECURITY: "account_security" }),
-                _ = Object.freeze({ DISABLED: "disabled", INTAKE_PROGRESS: "intake_progress", LOCKED: "locked", NEW_ACCOUNT: "new_account", NOT_ELIGIBLE: "not_eligible", NOT_STARTED: "not_started", VERIFICATION_DENIED: "verification_denied", VERIFICATION_PENDING: "verification_pending", VERIFIED: "verified" }),
-                t = Object.freeze({ IDENTITY_DOCUMENT: "identity_document", EMAIL: "email", WEBSITE: "website" }),
+                t = Object.freeze({ DISABLED: "disabled", INTAKE_PROGRESS: "intake_progress", LOCKED: "locked", NEW_ACCOUNT: "new_account", NOT_ELIGIBLE: "not_eligible", NOT_STARTED: "not_started", VERIFICATION_DENIED: "verification_denied", VERIFICATION_PENDING: "verification_pending", VERIFIED: "verified" }),
+                _ = Object.freeze({ IDENTITY_DOCUMENT: "identity_document", EMAIL: "email", WEBSITE: "website" }),
                 n = { WEBSITE: "siteUrl" },
-                R = Object.freeze({ CONCLUSIVE: "conclusive", INCONCLUSIVE: "inconclusive", NOT_STARTED: "not_started", PENDING: "pending" }),
-                a = Object.freeze({ ACTIVISM: "activism", COMPANY: "brand_company_organization", ENTERTAINMENT: "entertainment", GAMING: "gaming", GOVERNMENT: "government", INFLUENCER_OTHER: "influencer_other", NEWS: "news", SPORTS: "sports" }),
+                a = Object.freeze({ CONCLUSIVE: "conclusive", INCONCLUSIVE: "inconclusive", NOT_STARTED: "not_started", PENDING: "pending" }),
+                R = Object.freeze({ ACTIVISM: "activism", COMPANY: "brand_company_organization", ENTERTAINMENT: "entertainment", GAMING: "gaming", GOVERNMENT: "government", INFLUENCER_OTHER: "influencer_other", NEWS: "news", SPORTS: "sports" }),
                 A = { ARTICLES: "articleReferenceUrls", AUTHOR: "authorReferenceUrl", GOOGLE: "googleTrendsReferenceUrl", HASHTAG: "hashtagReferenceUrl", IMDB: "imdbReferenceUrl", LEADERSHIP: "leadershipReferenceUrl", MAIN: "mainReferenceUrl", NEWS: "newsReferenceUrls", PUBLIC: "publicReferenceUrl", PUBLICATION: "publicationReferenceUrl", STOCK: "stockReferenceUrl", TEAM: "teamReferenceUrl", WIKIPEDIA: "wikipediaReferenceUrl" },
                 o = Object.freeze({ ACTIVIST: "activist" }),
-                C = Object.freeze({ COMPANY: "company", EXECUTIVE: "executive" }),
-                O = Object.freeze({ ENTERTAINMENT_COMPANY: "entertainment_company", ENTERTAINMENT_INDIVIDUAL: "entertainment_individual", PRODUCTION: "production" }),
-                r = Object.freeze({ CANDIDATE: "candidate", OFFICE: "office", OFFICIAL: "official" }),
-                i = Object.freeze({ CONTENT_CREATOR: "content_creator", INFLUENTIAL_INDIVIDUAL: "influential_individual" }),
+                r = Object.freeze({ COMPANY: "company", EXECUTIVE: "executive" }),
+                C = Object.freeze({ ENTERTAINMENT_COMPANY: "entertainment_company", ENTERTAINMENT_INDIVIDUAL: "entertainment_individual", PRODUCTION: "production" }),
+                i = Object.freeze({ CANDIDATE: "candidate", OFFICE: "office", OFFICIAL: "official" }),
+                O = Object.freeze({ CONTENT_CREATOR: "content_creator", INFLUENTIAL_INDIVIDUAL: "influential_individual" }),
                 c = Object.freeze({ FREELANCER: "freelancer", JOURNALIST: "journalist", ORGANIZATION: "organization" }),
                 S = Object.freeze({ SPORTS_INDIVIDUAL: "sports_individual", SPORTS_ENTITY: "sports_entity", GAMING_INDIVIDUAL: "gaming_individual" }),
-                L = Object.freeze({ ...o, ...C, ...O, ...r, ...i, ...c, ...S }),
-                s = Object.freeze({ [o.ACTIVIST]: a.ACTIVISM, [C.COMPANY]: a.COMPANY, [C.EXECUTIVE]: a.COMPANY, [O.ENTERTAINMENT_COMPANY]: a.ENTERTAINMENT, [O.ENTERTAINMENT_INDIVIDUAL]: a.ENTERTAINMENT, [O.PRODUCTION]: a.ENTERTAINMENT, [r.CANDIDATE]: a.GOVERNMENT, [r.OFFICE]: a.GOVERNMENT, [r.OFFICIAL]: a.GOVERNMENT, [i.CONTENT_CREATOR]: a.INFLUENCER_OTHER, [i.INFLUENTIAL_INDIVIDUAL]: a.INFLUENCER_OTHER, [c.FREELANCER]: a.NEWS, [c.JOURNALIST]: a.NEWS, [c.ORGANIZATION]: a.NEWS, [S.SPORTS_INDIVIDUAL]: a.SPORTS, [S.SPORTS_ENTITY]: a.SPORTS, [S.GAMING_INDIVIDUAL]: a.SPORTS }),
+                L = Object.freeze({ ...o, ...r, ...C, ...i, ...O, ...c, ...S }),
+                s = Object.freeze({ [o.ACTIVIST]: R.ACTIVISM, [r.COMPANY]: R.COMPANY, [r.EXECUTIVE]: R.COMPANY, [C.ENTERTAINMENT_COMPANY]: R.ENTERTAINMENT, [C.ENTERTAINMENT_INDIVIDUAL]: R.ENTERTAINMENT, [C.PRODUCTION]: R.ENTERTAINMENT, [i.CANDIDATE]: R.GOVERNMENT, [i.OFFICE]: R.GOVERNMENT, [i.OFFICIAL]: R.GOVERNMENT, [O.CONTENT_CREATOR]: R.INFLUENCER_OTHER, [O.INFLUENTIAL_INDIVIDUAL]: R.INFLUENCER_OTHER, [c.FREELANCER]: R.NEWS, [c.JOURNALIST]: R.NEWS, [c.ORGANIZATION]: R.NEWS, [S.SPORTS_INDIVIDUAL]: R.SPORTS, [S.SPORTS_ENTITY]: R.SPORTS, [S.GAMING_INDIVIDUAL]: R.SPORTS }),
                 l = Object.freeze({ LANDING_PAGE: "landing_page", NOTABILITY_CATEGORY: "notability_category_select", NOTABILITY_SUBCATEGORY: "notability_subtype_select", NOTABILITY_METHOD: "notability_qualifications_select", NOTABILITY_INPUT: "notability_qualifications_input", AUTHENTICITY_TYPE: "authenticity_type_select", ADD_EMAIL: "authenticity_add_email", ADD_WEBSITE: "authenticity_add_website", ID_UPLOAD: "authenticity_id_upload", REVIEW_SUBMIT: "review_submit", THANK_YOU: "thank_you" }),
                 U = Object.freeze({
                     ACTIVIST_GOOGLE_TRENDS: "ACTIVIST_GOOGLE_TRENDS",
@@ -805,6 +805,41 @@
                     [U.TEST_RADIO]: { next: U.THANK_YOU, scribeComponent: null },
                 });
         },
+        879113: (E, e, I) => {
+            "use strict";
+            I.d(e, { Z: () => C });
+            var T = I(202784),
+                N = I(476984),
+                t = I.n(N),
+                _ = I(143778),
+                n = I(750410),
+                a = I(682830);
+            const R = "failed",
+                A = "loaded",
+                o = "loading",
+                r = "none";
+            class C extends T.Component {
+                shouldComponentUpdate(E) {
+                    const e = E.fetchStatus === A,
+                        I = this.props.fetchStatus !== E.fetchStatus;
+                    return !(!e && !I) || !t()(E, this.props);
+                }
+                render() {
+                    const { "aria-label": E, color: e, failureMessage: I, fetchStatus: N, icon: t, loadingMessage: _, onRequestRetry: A, render: C, renderFailure: i, retryMessage: O, retryable: c } = this.props;
+                    switch (N) {
+                        case R:
+                            return c ? T.createElement(n.Z, { icon: t, onRequestRetry: A, retryMessage: O }) : I ? T.createElement(a.m, { failureMessage: I }) : i();
+                        case o:
+                            return T.createElement(a.J, { "aria-label": E, color: e, loadingMessage: _ });
+                        case r:
+                            return null;
+                        default:
+                            return C();
+                    }
+                }
+            }
+            C.defaultProps = { renderFailure: _.Z, retryable: !0 };
+        },
         424869: (E) => {
             E.exports = function E(e) {
                 return (
@@ -818,4 +853,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.BadgeViolationsNotification~bundle.SettingsRevamp.192783ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.BadgeViolationsNotification~bundle.SettingsRevamp.f4a12f6a.js.map

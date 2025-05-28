@@ -13,13 +13,13 @@
                 o = a(407250),
                 d = a(236379),
                 m = a(323788),
-                u = a(368567),
-                x = a(4744),
-                h = a(588607),
-                p = a(66822),
-                v = a(378973),
-                g = a(990714),
-                f = a(98474),
+                u = a(453436),
+                x = a(679804),
+                h = a(702823),
+                p = a(417957),
+                v = a(659289),
+                g = a(14313),
+                f = a(97759),
                 j = a(796309),
                 b = a(430962),
                 y = a(598705),
@@ -363,7 +363,7 @@
                 f = a(422821),
                 j = a(86982),
                 b = a(707326),
-                y = a(762373);
+                y = a(288894);
             const w = ({ estimatedRevenueByDay: e = !1 }) => {
                 const { currentMetricData: t, currentTotals: a, prevTotals: i } = (0, x.C)(),
                     { analytics: n } = (0, c.M1)(),
@@ -440,7 +440,7 @@
             }
             var B = a(130844),
                 A = a(236379),
-                P = a(182605),
+                P = a(995348),
                 z = a(796309);
             function I({ hasMoreData: e = !1, showNewVideoDetails: t = !1, showEstimatedRevenue: a = !1, videoList: i, onLoadMore: n, newVideoList: r = !1, isLoading: o = !1, videoDetailsPath: d }) {
                 const { analytics: m } = (0, c.M1)(),
@@ -602,4 +602,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.f70955fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.35f2041a.js.map

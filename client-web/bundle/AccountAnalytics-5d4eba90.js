@@ -355,8 +355,8 @@
                 r = a(430962),
                 d = a(968025),
                 u = a(72100),
-                o = a(770297),
-                c = a(889198),
+                o = a(697597),
+                c = a(458872),
                 m = a(777301),
                 g = a(52277),
                 y = a(598705),
@@ -390,7 +390,7 @@
             }
             var _ = a(407250),
                 j = a(669833),
-                F = a(762373);
+                F = a(288894);
             function K({ estimatedRevenueVideoDetails: e = !1 }) {
                 const { analytics: l } = (0, r.M1)(),
                     { formattedVideo: a } = (0, g.Mh)(),
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5d4eba90.0179854a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5d4eba90.29106b6a.js.map

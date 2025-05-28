@@ -280,7 +280,7 @@
                 m = a(211205),
                 g = a(840489),
                 x = a(995961),
-                y = a(521634),
+                y = a(52053),
                 p = a(991732);
             function h({ compactView: e = !1 }) {
                 const { activeTimesData: t, loadingStates: a, selectedMetric: s } = (0, m.a)(),
@@ -872,4 +872,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-aedc5392.e427cf3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-aedc5392.0b77d35a.js.map

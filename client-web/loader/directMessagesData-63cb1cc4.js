@@ -119,7 +119,7 @@
                 o = i.n(a),
                 n = i(10622),
                 s = i.n(n),
-                d = i(332920),
+                d = i(111677),
                 l = i.n(d),
                 u = i(205074),
                 p = i(653843),
@@ -569,4 +569,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-63cb1cc4.0935552a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-63cb1cc4.37ead41a.js.map

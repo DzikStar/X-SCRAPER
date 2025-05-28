@@ -1,7 +1,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.ProfileClusterFollow"],
+    ["loader.ProfileClusterFollow", "icons/IconFeedback-js"],
     {
-        785225: (e) => {
+        801301: (e) => {
             e.exports = { queryId: "apoLb8lvGh-n59pXrJY9aQ", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         864479: (e, t, r) => {
@@ -22,7 +22,7 @@
                 l = r(420412),
                 i = r(844685),
                 c = r(392237),
-                d = r(332920),
+                d = r(111677),
                 u = r.n(d),
                 m = r(837020),
                 p = r(62857),
@@ -64,19 +64,19 @@
                     .propsFromState(() => ({ fetchStatus: P, recommendations: U }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: S.yY }))
                     .withAnalytics(),
-                R = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
-                v = { component: "suggest_profile_cluster_follow", element: "close_button", action: "click" };
+                v = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
+                R = { component: "suggest_profile_cluster_follow", element: "close_button", action: "click" };
             class F extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handleImpression = (e) => {
                             const { analytics: t } = this.props,
                                 r = e && e.slice(0, 3).map((e) => ({ ...C.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
-                            t.scribe({ ...R, data: { items: r } });
+                            t.scribe({ ...v, data: { items: r } });
                         }),
                         (this._handleCloseButtonImpression = () => {
                             const { analytics: e, onRemoveClusterFollow: t } = this.props;
-                            e.scribe(v), t();
+                            e.scribe(R), t();
                         });
                 }
                 componentDidMount() {
@@ -110,7 +110,7 @@
                 s = r(202784),
                 n = r(476984),
                 a = r.n(n),
-                l = r(332920),
+                l = r(111677),
                 i = r.n(l),
                 c = r(615656),
                 d = r(290402),
@@ -269,14 +269,14 @@
         },
         994305: (e, t, r) => {
             "use strict";
-            r.d(t, { yY: () => v, UD: () => R, Ic: () => Z });
+            r.d(t, { yY: () => R, UD: () => v, Ic: () => Z });
             var o = r(360917),
                 s = r.n(o),
                 n = r(506899),
                 a = r(414742),
                 l = r(125199);
             const i = new n.fK.Entity("recommendations", { user: l.Z }, { idAttribute: (e) => e.user?.rest_id });
-            var c = r(785225),
+            var c = r(801301),
                 d = r.n(c),
                 u = r(304819);
             const m = new n.fK.Entity("recommendations", { user: u.Z }, { idAttribute: (e) => e.user?.id_str });
@@ -343,15 +343,15 @@
                     const o = e[C][L({ displayLocation: t, similarToUserId: r })];
                     return o && o.recommendations ? o.recommendations : U;
                 },
-                R = (e, { displayLocation: t, similarToUserId: r }) => {
+                v = (e, { displayLocation: t, similarToUserId: r }) => {
                     const o = e[C][L({ displayLocation: t, similarToUserId: r })];
                     return o ? o.fetchStatus : w.ZP.NONE;
                 },
-                v = (e) => (t, r, o) => {
+                R = (e) => (t, r, o) => {
                     const n = r(),
                         { displayLocation: a, similarToUserId: l } = e,
                         i = Z(n, { displayLocation: a, similarToUserId: l }),
-                        c = R(n, { displayLocation: a, similarToUserId: l }) === w.ZP.LOADED;
+                        c = v(n, { displayLocation: a, similarToUserId: l }) === w.ZP.LOADED;
                     return i && c
                         ? Promise.resolve(s())
                         : t(
@@ -373,7 +373,7 @@
             r.d(t, { Z: () => y });
             var o = r(202784),
                 s = r(325686),
-                n = r(332920),
+                n = r(111677),
                 a = r.n(n),
                 l = r(283379),
                 i = r(731708),
@@ -409,7 +409,7 @@
             "use strict";
             r.d(t, { Z: () => k });
             var o = r(202784),
-                s = r(332920),
+                s = r(111677),
                 n = r.n(s),
                 a = r(492140),
                 l = r(720600),
@@ -436,8 +436,8 @@
                 U = r(54606);
             const P = n().ae408b76,
                 Z = n().j355f008,
-                R = n().habf9678,
-                v = n().db0798ed,
+                v = n().habf9678,
+                R = n().db0798ed,
                 F = n().dc716ec9,
                 O = ({ text: e }) => {
                     const { direction: t } = (0, T.Z)();
@@ -460,8 +460,8 @@
                                 T = o.createElement(a.default, { style: x }),
                                 P = o.createElement(l.default, { style: x }),
                                 Z = o.createElement(i.default, { style: x }),
-                                R = o.createElement(c.default, { style: x }),
-                                v = o.createElement(d.default, { style: x }),
+                                v = o.createElement(c.default, { style: x }),
+                                R = o.createElement(d.default, { style: x }),
                                 F = o.createElement(u.default, { style: D.circle }),
                                 O = o.createElement(m.default, { style: x }),
                                 N = o.createElement(p.default, { style: x }),
@@ -470,11 +470,11 @@
                                 B = o.createElement(y.default, { style: x }),
                                 M = o.createElement(_.default, { style: x }),
                                 H = o.createElement(E.default, { style: x }),
-                                G = o.createElement(w.default, { style: x }),
-                                z = o.createElement(b.default, { style: x }),
-                                W = o.createElement(C.default, { style: x }),
-                                $ = o.createElement(g.default, { style: x }),
-                                j = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
+                                z = o.createElement(w.default, { style: x }),
+                                G = o.createElement(b.default, { style: x }),
+                                j = o.createElement(C.default, { style: x }),
+                                W = o.createElement(g.default, { style: x }),
+                                $ = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
                                 q = o.createElement(I.default, { style: x });
                             switch (e) {
                                 case U.Q.Pin:
@@ -485,9 +485,9 @@
                                 case U.Q.Like:
                                     return Z;
                                 case U.Q.Follow:
-                                    return R;
-                                case U.Q.Moment:
                                     return v;
+                                case U.Q.Moment:
+                                    return R;
                                 case U.Q.NewTweets:
                                     return F;
                                 case U.Q.Reply:
@@ -506,16 +506,16 @@
                                 case U.Q.Spaces:
                                     return H;
                                 case U.Q.Sparkle:
-                                    return G;
+                                    return z;
                                 case U.Q.SocialProof:
                                 case U.Q.FollowFollowed:
-                                    return $;
-                                case U.Q.FollowMutual:
                                     return W;
-                                case U.Q.FollowFollowing:
-                                    return z;
-                                case U.Q.Facepile:
+                                case U.Q.FollowMutual:
                                     return j;
+                                case U.Q.FollowFollowing:
+                                    return G;
+                                case U.Q.Facepile:
+                                    return $;
                                 case U.Q.Bird:
                                     return q;
                                 case U.Q.TextOnly:
@@ -529,9 +529,9 @@
                         case U.Q.Pin:
                             return { Icon: M, text: x || Z };
                         case U.Q.ReplyPin:
-                            return { Icon: M, text: R };
+                            return { Icon: M, text: v };
                         case U.Q.Topic:
-                            return { Icon: M, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: M, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : R({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
                         default:
                             return { Icon: M, text: x ? o.createElement(O, { text: x }) : null, link: s };
                     }
@@ -583,6 +583,20 @@
             r(202784);
             const o = Object.freeze({ FacepileGroup: "FacepileGroup", Bird: "Bird", Community: "Community", Conversation: "Conversation", Facepile: "Facepile", Feedback: "Feedback", Follow: "Follow", FollowFollowed: "FollowFollowed", FollowFollowing: "FollowFollowing", FollowMutual: "FollowMutual", Like: "Like", List: "List", Location: "Location", Megaphone: "Megaphone", Moment: "Moment", NewTweets: "NewTweets", NewUser: "NewUser", Pin: "Pin", Reply: "Reply", RelatedTweets: "RelatedTweets", ReplyPin: "ReplyPin", Retweet: "Retweet", SmartBlockExpiration: "SmartBlockExpiration", SocialProof: "SocialProof", Spaces: "Spaces", Sparkle: "Sparkle", TextOnly: "TextOnly", Topic: "Topic", Trending: "Trending" });
         },
+        790093: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => i });
+            var o = r(202784),
+                s = r(890601),
+                n = r(783427),
+                a = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const i = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.f9386a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.19a5c14a.js.map

@@ -12,7 +12,7 @@
                 l = n(952428),
                 c = n(392237),
                 d = n(167630),
-                p = n(332920);
+                p = n(111677);
             const h = n.n(p)().aebb6546,
                 g = c.default.create((e) => ({ connectors: { zIndex: 1 }, content: { flexGrow: 1 }, conversationConnector: { alignItems: "center", display: "flex", position: "relative", height: e.spaces.space36, flexGrow: 0 }, conversationLine: { backgroundColor: e.colors.gray200, width: e.componentDimensions.conversationLineWidth, height: e.spaces.space8 }, dot: { display: "block", backgroundColor: e.colors.gray200, height: e.componentDimensions.conversationLineWidth, width: e.componentDimensions.conversationLineWidth }, ellipsis: { alignItems: "center", justifyContent: "space-between", height: e.spaces.space16, marginVertical: "auto" }, ellipsisWithConversationLines: { height: e.spaces.space12 }, enlargeTouchTarget: { paddingVertical: e.spaces.space8 }, gap: { overflow: "hidden" }, hoverBox: { flexGrow: 1, marginStart: e.spaces.space12, paddingStart: e.spaces.space4 }, hoverBoxIndented: { marginStart: 0 }, hoverBoxTopLevel: { marginStart: 0 }, loadingIndicator: { paddingVertical: e.spaces.space4 }, treeContent: { paddingHorizontal: e.spaces.space4 }, treeGap: { flexDirection: "row", paddingStart: e.spaces.space16 }, treeGapTopLevel: { paddingStart: 0 } })),
                 m = a.createElement(d.Z, { "aria-label": h, style: g.loadingIndicator }),
@@ -27,7 +27,7 @@
             var a = n(459643),
                 o = n(351322),
                 i = n(202784),
-                s = n(332920),
+                s = n(111677),
                 r = n.n(s),
                 l = n(258132),
                 c = n(725516),
@@ -70,4 +70,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ConversationGapHandler.623c364a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ConversationGapHandler.5d5041fa.js.map

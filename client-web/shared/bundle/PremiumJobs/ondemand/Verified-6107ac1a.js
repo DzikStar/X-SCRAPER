@@ -168,7 +168,7 @@
             const i = n;
         },
         992152: (e, l, a) => {
-            a.d(l, { Z: () => I });
+            a.d(l, { Z: () => V });
             var n,
                 i,
                 r,
@@ -183,9 +183,9 @@
                 y,
                 k,
                 p,
-                b,
                 F,
                 _,
+                b,
                 K,
                 f,
                 S,
@@ -195,7 +195,7 @@
                 A,
                 T,
                 R,
-                O = {
+                I = {
                     fragment: {
                         argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "includeAdvertiserAccounts" }), (i = { defaultValue: null, kind: "LocalArgument", name: "jobFilterParams" }), (r = { defaultValue: null, kind: "LocalArgument", name: "jobShareFilterParams" }), (t = { defaultValue: null, kind: "LocalArgument", name: "keywordSearchCount" }), (s = { defaultValue: null, kind: "LocalArgument", name: "keywordSearchCursor" }), (u = { defaultValue: null, kind: "LocalArgument", name: "pageParams" }), (o = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (d = { defaultValue: null, kind: "LocalArgument", name: "sortParams" })],
                         kind: "Fragment",
@@ -293,13 +293,13 @@
                                                                                                             ],
                                                                                                             storageKey: null,
                                                                                                         }),
-                                                                                                        (b = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
+                                                                                                        (F = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                 },
-                                                                                                { alias: null, args: (K = [{ kind: "Variable", name: "filter_params", variableName: "jobFilterParams" }, (F = { kind: "Variable", name: "page_params", variableName: "pageParams" }), (_ = { kind: "Variable", name: "sort_params", variableName: "sortParams" })]), concreteType: "JobListSlice", kind: "LinkedField", name: "admin_jobs", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_items" }, b], storageKey: null },
-                                                                                                { alias: null, args: (f = [{ kind: "Variable", name: "filter_params", variableName: "jobShareFilterParams" }, F, _]), concreteType: "JobShareListSlice", kind: "LinkedField", name: "admin_job_shares", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_shares" }, b], storageKey: null },
-                                                                                                b,
+                                                                                                { alias: null, args: (K = [{ kind: "Variable", name: "filter_params", variableName: "jobFilterParams" }, (_ = { kind: "Variable", name: "page_params", variableName: "pageParams" }), (b = { kind: "Variable", name: "sort_params", variableName: "sortParams" })]), concreteType: "JobListSlice", kind: "LinkedField", name: "admin_jobs", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_items" }, F], storageKey: null },
+                                                                                                { alias: null, args: (f = [{ kind: "Variable", name: "filter_params", variableName: "jobShareFilterParams" }, _, b]), concreteType: "JobShareListSlice", kind: "LinkedField", name: "admin_job_shares", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_shares" }, F], storageKey: null },
+                                                                                                F,
                                                                                             ],
                                                                                             type: "ApiRecruitingOrganization",
                                                                                             abstractKey: null,
@@ -310,7 +310,7 @@
                                                                             ],
                                                                             storageKey: null,
                                                                         },
-                                                                        b,
+                                                                        F,
                                                                     ],
                                                                     type: "User",
                                                                     abstractKey: null,
@@ -561,13 +561,13 @@
                                                                                                 storageKey: null,
                                                                                             }),
                                                                                             p,
-                                                                                            b,
+                                                                                            F,
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
-                                                                                    { alias: null, args: K, concreteType: "JobListSlice", kind: "LinkedField", name: "admin_jobs", plural: !1, selections: [k, R, b], storageKey: null },
-                                                                                    { alias: null, args: f, concreteType: "JobShareListSlice", kind: "LinkedField", name: "admin_job_shares", plural: !1, selections: [k, { alias: null, args: null, concreteType: "ApiJobShareItemResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [v, m, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobShareItemCore", kind: "LinkedField", name: "core", plural: !1, selections: [L, h, A, { alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "job_results", plural: !1, selections: T, storageKey: null }], storageKey: null }, v], type: "ApiJobShareItem", abstractKey: null }], storageKey: null }], storageKey: null }, b], storageKey: null },
-                                                                                    b,
+                                                                                    { alias: null, args: K, concreteType: "JobListSlice", kind: "LinkedField", name: "admin_jobs", plural: !1, selections: [k, R, F], storageKey: null },
+                                                                                    { alias: null, args: f, concreteType: "JobShareListSlice", kind: "LinkedField", name: "admin_job_shares", plural: !1, selections: [k, { alias: null, args: null, concreteType: "ApiJobShareItemResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [v, m, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "JobShareItemCore", kind: "LinkedField", name: "core", plural: !1, selections: [L, h, A, { alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "job_results", plural: !1, selections: T, storageKey: null }], storageKey: null }, v], type: "ApiJobShareItem", abstractKey: null }], storageKey: null }], storageKey: null }, F], storageKey: null },
+                                                                                    F,
                                                                                     v,
                                                                                 ],
                                                                                 type: "ApiRecruitingOrganization",
@@ -580,7 +580,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            b,
+                                                            F,
                                                             v,
                                                         ],
                                                         type: "User",
@@ -600,8 +600,8 @@
                     },
                     params: { id: "jA1FRlrrfnsQHIAvwnsHXA", metadata: {}, name: "JobListQuery", operationKind: "query", text: null },
                 };
-            O.hash = "f0810e6aba812cb6658e74738033a8c8";
-            const I = O;
+            I.hash = "f0810e6aba812cb6658e74738033a8c8";
+            const V = I;
         },
         630673: (e, l, a) => {
             a.d(l, { Z: () => t });
@@ -805,7 +805,7 @@
             const t = r;
         },
         126582: (e, l, a) => {
-            a.d(l, { Z: () => F });
+            a.d(l, { Z: () => _ });
             var n,
                 i,
                 r,
@@ -820,7 +820,7 @@
                 y,
                 k,
                 p,
-                b = {
+                F = {
                     fragment: {
                         argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "includeAdvertiserAccounts" }), (i = { defaultValue: null, kind: "LocalArgument", name: "keyword" })],
                         kind: "Fragment",
@@ -1073,8 +1073,8 @@
                     },
                     params: { id: "oeRzYwdNvarF30P9o93Vbg", metadata: {}, name: "useFetchAdminJobsQuery", operationKind: "query", text: null },
                 };
-            b.hash = "15831875002bd659829b7ac19ef93a3b";
-            const F = b;
+            F.hash = "15831875002bd659829b7ac19ef93a3b";
+            const _ = F;
         },
         396840: (e, l, a) => {
             a.d(l, { Z: () => i });
@@ -1212,6 +1212,43 @@
                 };
             s.hash = "0ab230adff094b29074b4fcfb89b6554";
             const u = s;
+        },
+        196973: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var n,
+                i,
+                r,
+                t = {
+                    fragment: {
+                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "status" }), (i = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useSetupOrgMutation",
+                        selections: (r = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "s", value: "4721" },
+                                    { kind: "Variable", name: "status", variableName: "status" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "ConfigureOrganizationResult",
+                                kind: "LinkedField",
+                                name: "configure_organization",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [i, n], kind: "Operation", name: "useSetupOrgMutation", selections: r },
+                    params: { id: "oLe4Lwz_ozrlSO5yPyzFLg", metadata: {}, name: "useSetupOrgMutation", operationKind: "mutation", text: null },
+                };
+            t.hash = "439dfdcba4832cc106164180b8ada679";
+            const s = t;
         },
         691493: (e, l, a) => {
             a.d(l, { Z: () => t });
@@ -1468,7 +1505,7 @@
                 i = a(466999),
                 r = a(325686),
                 t = a(392237),
-                s = a(332920);
+                s = a(111677);
             const u = a.n(s)().e5b0063d;
             let o = 0;
             class d extends n.Component {
@@ -1511,176 +1548,21 @@
                 return e ? i.createElement(r.Z, { title: e }, u) : u;
             };
         },
-        664727: (e, l, a) => {
-            a.d(l, { Z: () => g });
-            var n,
-                i,
-                r,
-                t = {
-                    fragment: {
-                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "status" }), (i = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useSetupOrgMutation",
-                        selections: (r = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Literal", name: "s", value: "4721" },
-                                    { kind: "Variable", name: "status", variableName: "status" },
-                                    { kind: "Variable", name: "user_id", variableName: "userId" },
-                                ],
-                                concreteType: "ConfigureOrganizationResult",
-                                kind: "LinkedField",
-                                name: "configure_organization",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [i, n], kind: "Operation", name: "useSetupOrgMutation", selections: r },
-                    params: { id: "oLe4Lwz_ozrlSO5yPyzFLg", metadata: {}, name: "useSetupOrgMutation", operationKind: "mutation", text: null },
-                };
-            t.hash = "439dfdcba4832cc106164180b8ada679";
-            const s = t;
-            var u = a(202784),
-                o = (a(585488), a(351743)),
-                d = a.n(o);
-            const c = s,
-                g = () => {
-                    const [e, l] = d()(c);
-                    return [
-                        u.useCallback(
-                            (l) => {
-                                e(l);
-                            },
-                            [e],
-                        ),
-                        l,
-                    ];
-                };
-        },
-        985124: (e, l, a) => {
-            a.d(l, { $J: () => s, WA: () => z, ZC: () => v, cj: () => N, eo: () => n.eo, hb: () => E, kW: () => u, pg: () => L, rP: () => t, u4: () => Z, xk: () => J });
-            var n = a(89217),
-                i = a(332920),
-                r = a.n(i);
-            const t = Object.freeze({ DISABLED: 0, ENABLED: 10, SYNC_IN_PROGRESS: 20, SYNC_FAILED: 30 }),
-                s = Object.freeze({ freshteam: "Freshteam", greenhouse: "Greenhouse", lever: "Lever", recruitee: "Recruitee", "sage-hr": "Sage HR", "sap-successfactors": "SAP SuccessFactors", teamtailor: "Teamtailor", workable: "Workable", workday: "Workday" }),
-                u = Object.entries(n.eo).map(([e, l]) => ({ label: String(l), value: e })),
-                o = r().d2b8da2c,
-                d = r().cd958040,
-                c = r().c5760ca2,
-                g = r().d31b4a2a,
-                m = r().df1b7550,
-                y = r().f38959a6,
-                k = r().bc78a26c,
-                p = r().ec28738e,
-                b = r().icb06308,
-                F = r().d0b978ec,
-                _ = r().af19cdc2,
-                K = r().e4a51fca,
-                f = r().e8ca78ae,
-                S = r().c365dcc6,
-                v = Object.freeze({ software_engineering: o, data_analytics: d, product: c, design: g, marketing: m, sales_am: y, operations: k, people_hr: p, finance_accounting: b, legal_compliance: F, science_engineering: _, medical: K, construction_trades: f, other: S }),
-                L = Object.entries(v).map(([e, l]) => ({ label: String(l), value: e })),
-                h = r().e25d75e4,
-                A = r().e89b3f04,
-                T = r().h55825dc,
-                R = r().cc537386,
-                O = r().jfc3cece,
-                I = r().e1b683aa,
-                j = r().c4627fda,
-                V = r().db75b47c,
-                z = Object.freeze({ intern: h, entry_level: A, junior: T, mid_level: R, senior: O, lead: I, manager: j, executive: V }),
-                J = Object.entries(z).map(([e, l]) => ({ label: String(l), value: e })),
-                w = r().i312f0ce,
-                D = r().b4aff05e,
-                C = r().c08b9138,
-                U = r().ia5d6422,
-                M = r().h97c7f42,
-                P = r().ibed2d04,
-                N = Object.freeze({ onsite: { label: w, description: U, value: "onsite" }, remote: { label: C, description: P, value: "remote" }, hybrid: { label: D, description: M, value: "hybrid" } }),
-                Z = Object.keys(N).map((e) => ({ label: N[e].label, value: e, description: N[e].description })),
-                E = Object.keys(n.Qw).map((e) => ({ ...n.Qw[e], value: String(n.Qw[e].value) }));
-        },
-        943052: (e, l, a) => {
-            a.d(l, { Z: () => r });
-            a(543673), a(240753), a(128399), a(136728);
-            var n = a(202784),
-                i = a(107267);
-            const r = () => {
-                const e = (0, i.useLocation)(),
-                    l = (0, i.useHistory)(),
-                    [a, r] = n.useState(new URLSearchParams(e.search));
-                n.useEffect(() => {
-                    r(new URLSearchParams(e.search));
-                }, [e.search]);
-                const t = n.useCallback(
-                        (n, i) => {
-                            const r = new URLSearchParams(a);
-                            r.set(n, i), l.push(`${e.pathname}?${r.toString()}`);
-                        },
-                        [l, e.pathname, a],
-                    ),
-                    s = n.useCallback(
-                        (n) => {
-                            const i = new URLSearchParams(a);
-                            for (const e in n) n[e] ? i.set(e, n[e]) : i.delete(e);
-                            l.push(`${e.pathname}?${i.toString()}`);
-                        },
-                        [l, e.pathname, a],
-                    );
-                return [n.useMemo(() => new URLSearchParams(e.search), [e.search]), t, s];
-            };
-        },
-        540819: (e, l, a) => {
-            a.d(l, { n: () => i, p: () => n });
-            const n = Object.freeze({ ACCOUNTS: "Accounts", INVITATIONS: "Invitations" }),
-                i = Object.freeze({ JOBS: "All", FEATURED_JOBS: "Featured", ARCHIVED: "Archived" });
-        },
-        482924: (e, l, a) => {
-            a.d(l, { A: () => m });
-            var n = a(202784),
-                i = a(437429),
-                r = a.n(i),
-                t = a(57074),
-                s = a.n(t),
-                u = a(10622),
-                o = a.n(u),
-                d = a(71620),
-                c = a(312771),
-                g = a(535338);
-            function m(e, l, a) {
-                const i = s()(l),
-                    t = s()(a),
-                    u = r()(),
-                    m = (0, d.po)(),
-                    [y, k] = n.useState(null),
-                    [p, b] = n.useState(!1),
-                    F = n.useCallback(() => {
-                        p ||
-                            (b(!0),
-                            o()(u, e, i, { networkCacheConfig: t?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
-                                complete: () => {
-                                    b(!1);
-                                },
-                                error: (e) => {
-                                    m(e), b(!1), k(e);
-                                },
-                            }));
-                    }, [u, m, e, p, i, t]),
-                    _ = (0, g.p)(e, l, a);
-                return n.useMemo(() => (y ? { data: _, refetch: F, refetchStatus: c.ZP.FAILED, refetchError: y } : { data: _, refetch: F, refetchStatus: p ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [_, y, p, F]);
-            }
+        334346: (e, l, a) => {
+            a.d(l, { C: () => u, Z: () => s });
+            var n = a(807896),
+                i = a(202784),
+                r = a(524084),
+                t = a(768572);
+            const s = "stable_sort_index",
+                u = i.forwardRef((e, l) => {
+                    const a = e.cacheKey;
+                    return i.createElement(t.ZP, { identifier: a }, i.createElement(r.Z, (0, n.Z)({ ref: l }, e)));
+                });
         },
         89217: (e, l, a) => {
             a.d(l, { Ju: () => g, Qw: () => m, eo: () => o });
-            var n = a(332920),
+            var n = a(111677),
                 i = a.n(n);
             const r = i().c69eb656,
                 t = i().g46ae43c,
@@ -1696,7 +1578,7 @@
             a.d(l, { G: () => o, M: () => u });
             a(571372);
             var n = a(301503),
-                i = a(332920),
+                i = a(111677),
                 r = a.n(i),
                 t = a(89217);
             const s = r().b75b8ffd,
@@ -1716,4 +1598,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.2c5baa2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.5f503eba.js.map

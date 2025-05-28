@@ -3,7 +3,7 @@
     ["node_modules_x-clients_features_messages_fr_json"],
     {
         933146: (e) => {
-            e.exports = JSON.parse('{"Retry":"Réessayer","People":"Personnes","Edit":"Éditer","Something went wrong.":"Une erreur s\'est produite.","None":"Aucun","Conversation info":"Infos de la conversation","Add people":"Ajouter des personnes","Group info":"Informations sur le groupe","Something went wrong. Try reloading.":"Une erreur s\'est produite. Essayez de recharger la page.","Live on X":"En direct sur X"}');
+            e.exports = JSON.parse('{"Retry":"Réessayer","Message":"Message","Members":"Membres","On":"Activé","Edit":"Éditer","Off":"Désactivé","Dismiss":"Ignorer","Something went wrong.":"Une erreur s\'est produite.","None":"Aucun","Add members":"Ajouter des membres","Something went wrong. Try reloading.":"Une erreur s\'est produite. Essayez de recharger la page.","Live on X":"En direct sur X","Rate limit exceeded. Please try again later.":"Limite de taux dépassée. Veuillez réessayer ultérieurement.","Chats":"Chats"}');
         },
     },
 ]);

@@ -8,7 +8,7 @@
                 n = r(325686),
                 i = r(167630),
                 a = r(392237),
-                o = r(332920);
+                o = r(111677);
             const l = r.n(o)().ffde2fdc,
                 c = a.default.create((e) => ({ spinner: { alignItems: "center", marginVertical: "30px" } })),
                 d = () => s.createElement(n.Z, { style: c.spinner }, s.createElement(i.Z, { "aria-label": l }));
@@ -21,7 +21,7 @@
                 a = r(420412),
                 o = r(108362),
                 l = r(392237),
-                c = r(332920),
+                c = r(111677),
                 d = r.n(c),
                 u = r(334346),
                 p = r(373981),
@@ -259,7 +259,7 @@
                 i = r(731708),
                 a = r(688715),
                 o = r(392237),
-                l = r(332920),
+                l = r(111677),
                 c = r.n(l),
                 d = r(442713),
                 u = r(427266);
@@ -286,4 +286,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-1a48af1c.feeda9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-1a48af1c.f1206b8a.js.map

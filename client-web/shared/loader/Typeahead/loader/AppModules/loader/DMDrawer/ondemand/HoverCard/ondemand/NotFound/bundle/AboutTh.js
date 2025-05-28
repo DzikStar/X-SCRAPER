@@ -3,7 +3,7 @@
     {
         804027: (e, t, r) => {
             "use strict";
-            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => I, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => y, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => T, qJ: () => F, vY: () => j });
+            r.d(t, { $T: () => B, $b: () => G, AA: () => v, Ae: () => z, CE: () => V, C_: () => L, D7: () => C, Dk: () => W, GN: () => J, Hm: () => U, IN: () => H, Iq: () => E, J$: () => N, QS: () => S, R8: () => m, RA: () => Y, TT: () => x, Ti: () => R, WZ: () => O, XD: () => D, Xb: () => I, YI: () => Z, ZF: () => k, ZJ: () => b, __: () => A, aD: () => T, bc: () => w, h0: () => P, ho: () => q, lS: () => M, q0: () => Q, qE: () => y, qJ: () => F, vY: () => j });
             var n = r(261214),
                 o = r(956056),
                 i = r(41065),
@@ -22,8 +22,8 @@
                 w = Object.freeze({ Allow: "allow", CancelFlow: "cancel_flow", HideExplicitCta: "hide_explicit_cta", Disallow: "disallow" }),
                 m = Object.freeze({ Default: "default", BulletList: "bullet_list" }),
                 b = Object.freeze({ DestructiveSecondary: "destructive_secondary", Primary: "primary", Secondary: "secondary", Text: "text", Brand: "brand", TwitterBrand: "twitter_brand" }),
-                T = Object.freeze({ Small: "small", NormalCompact: "normal_compact", Normal: "normal", LargeCompact: "large_compact", Large: "large" }),
-                y = (Object.freeze({ CheckmarkAndClose: "checkmark", Text: "text", ThumbsUpAndDown: "thumbs" }), Object.freeze({ Toolbar: "toolbar" }), Object.freeze({ Scrollable: "scrollable", Centered: "centered", CenteredHeader: "centered_header", HalfCover: "half_cover" })),
+                y = Object.freeze({ Small: "small", NormalCompact: "normal_compact", Normal: "normal", LargeCompact: "large_compact", Large: "large" }),
+                T = (Object.freeze({ CheckmarkAndClose: "checkmark", Text: "text", ThumbsUpAndDown: "thumbs" }), Object.freeze({ Toolbar: "toolbar" }), Object.freeze({ Scrollable: "scrollable", Centered: "centered", CenteredHeader: "centered_header", HalfCover: "half_cover" })),
                 S = Object.freeze({ Success: "success", Failure: "failure", Cancel: "cancel" }),
                 A = Object.freeze({ Icon: "icon", FullWidth: "full_width", FullBleedTop: "full_bleed_top" }),
                 v = Object.freeze({ PhoneOnly: "phone_only", EmailOnly: "email_only", PhoneThenEmail: "phone_then_email", EmailThenPhone: "email_then_phone" }),
@@ -75,8 +75,8 @@
                 w = Object.freeze({ REQUEST: "rweb/ocf/FETCH_REQUEST", SUCCESS: "rweb/ocf/FETCH_SUCCESS", FAILURE: "rweb/ocf/FETCH_FAILURE" }),
                 m = Object.freeze({ REQUEST: "rweb/ocf/START_REQUEST", SUCCESS: "rweb/ocf/START_SUCCESS", FAILURE: "rweb/ocf/START_FAILURE" }),
                 b = "rweb/ocf/CLEAR",
-                T = "rweb/ocf/UPDATE",
-                y = "rweb/ocf/NAVIGATE",
+                y = "rweb/ocf/UPDATE",
+                T = "rweb/ocf/NAVIGATE",
                 S = "rweb/ocf/RESUME",
                 A = "rweb/ocf/ATTRIBUTE",
                 v = Object.freeze({ REQUEST: "rweb/ocf/VERIFY_IDENTIFIER_REQUEST", SUCCESS: "rweb/ocf/VERIFY_IDENTIFIER_SUCCESS", FAILURE: "rweb/ocf/VERIFY_IDENTIFIER_FAILURE" }),
@@ -96,7 +96,7 @@
                             return { ...P, fetchStatus: d.ZP.LOADING, flowName: t.meta?.flowName, startLocation: e.startLocation };
                         case w.REQUEST:
                             return { ...e, fetchStatus: d.ZP.LOADING, submitFailed: !1 };
-                        case y: {
+                        case T: {
                             const { navigationContext: r, navigationStack: n, sendPinCode: o, subtaskInputs: i } = t.payload ?? {},
                                 a = { ...e.subtaskInputs };
                             for (const e in a) i[e] && delete a[e];
@@ -104,7 +104,7 @@
                         }
                         case A:
                             return { ...e, startLocation: t.payload };
-                        case T: {
+                        case y: {
                             const { flowData: r, subtaskInputs: n } = t.payload ?? {};
                             return { ...e, subtaskInputs: { ...e.subtaskInputs, ...n }, flowData: { ...e.flowData, ...r } };
                         }
@@ -244,7 +244,7 @@
                         updateFlow:
                             (e, t = {}, r = {}) =>
                             (n, o) => {
-                                n({ type: T, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
+                                n({ type: y, payload: { subtaskId: e, subtaskInputs: { [e]: t }, flowData: r } });
                             },
                     };
                 },
@@ -271,7 +271,7 @@
                             d = p === l.vY.ResendSms || p === l.vY.ResendVoice || p === l.vY.ResendEmail;
                         "clear" === p && n && (f[n] = {});
                         const g = I(h) && (!p || d);
-                        o({ type: y, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
+                        o({ type: T, payload: { navigationContext: { action: "", ...r }, sendPinCode: g, subtaskId: n, subtaskInputs: f, navigationStack: c } });
                     },
                 X = (e, t) =>
                     Object.keys(t)
@@ -342,7 +342,7 @@
         },
         153925: (e, t, r) => {
             "use strict";
-            r.d(t, { $1: () => l, Di: () => m, Ds: () => s, JJ: () => E, OA: () => _, OG: () => a, Rs: () => c, Yr: () => f, _w: () => b, cR: () => T, eU: () => h, jb: () => u, sI: () => p, uL: () => w });
+            r.d(t, { $1: () => l, Di: () => m, Ds: () => s, JJ: () => E, OA: () => _, OG: () => a, Rs: () => c, Yr: () => f, _w: () => b, cR: () => y, eU: () => h, jb: () => u, sI: () => p, uL: () => w });
             r(202784);
             var n = r(370751),
                 o = r(163889),
@@ -481,7 +481,21 @@
                     return !!t && g.has(t);
                 },
                 b = (e) => e === i.h0.Boolean || e === i.h0.PreciseLocation,
-                T = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
+                y = (e) => ({ uri: e.image_info.url, width: e.image_info.width, height: e.image_info.height });
+        },
+        916910: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => u });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.786c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25c1.595 0 3.081-.451 4.341-1.233l1.054 1.7c-1.568.972-3.418 1.534-5.395 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.786 12 1.786s10.25 4.589 10.25 10.25c0 .901-.21 1.77-.452 2.477-.592 1.731-2.343 2.477-3.917 2.334-1.242-.113-2.307-.74-3.013-1.647-.961 1.253-2.45 2.011-4.092 1.78-2.581-.363-4.127-2.971-3.76-5.578.366-2.606 2.571-4.688 5.152-4.325 1.019.143 1.877.637 2.519 1.342l1.803.258-.507 3.549c-.187 1.31.761 2.509 2.079 2.629.915.083 1.627-.356 1.843-.99.2-.585.345-1.224.345-1.83 0-4.556-3.694-8.25-8.25-8.25zm-.111 5.274c-1.247-.175-2.645.854-2.893 2.623-.249 1.769.811 3.143 2.058 3.319 1.247.175 2.645-.854 2.893-2.623.249-1.769-.811-3.144-2.058-3.319z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const u = s;
         },
         595766: (e, t) => {
             "use strict";
@@ -725,7 +739,7 @@
             function b(e, t, r, n) {
                 return Z(j(t, e.length - r), e, r, n);
             }
-            function T(e, t, r, n) {
+            function y(e, t, r, n) {
                 return Z(
                     (function (e) {
                         for (var t = [], r = 0; r < e.length; ++r) t.push(255 & e.charCodeAt(r));
@@ -736,8 +750,8 @@
                     n,
                 );
             }
-            function y(e, t, r, n) {
-                return T(e, t, r, n);
+            function T(e, t, r, n) {
+                return y(e, t, r, n);
             }
             function S(e, t, r, n) {
                 return Z(z(t), e, r, n);
@@ -955,10 +969,10 @@
                             case "utf-8":
                                 return b(this, e, t, r);
                             case "ascii":
-                                return T(this, e, t, r);
+                                return y(this, e, t, r);
                             case "latin1":
                             case "binary":
-                                return y(this, e, t, r);
+                                return T(this, e, t, r);
                             case "base64":
                                 return S(this, e, t, r);
                             case "ucs2":
@@ -1378,4 +1392,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.e3946ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.ad107b1a.js.map

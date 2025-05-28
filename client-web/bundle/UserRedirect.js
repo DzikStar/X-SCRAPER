@@ -9,7 +9,7 @@
                 n = r(182056),
                 o = r(879113),
                 c = r(392237),
-                i = r(332920),
+                i = r(111677),
                 d = r.n(i),
                 l = r(968478);
             const p = d().aa6e3300,
@@ -63,7 +63,7 @@
         604989: (e, t, r) => {
             r.r(t), r.d(t, { UserRedirectScreen: () => N, default: () => P });
             var s = r(202784),
-                a = r(332920),
+                a = r(111677),
                 n = r.n(a),
                 o = r(143778),
                 c = r(290402),
@@ -164,4 +164,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserRedirect.575178fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserRedirect.fc87403a.js.map

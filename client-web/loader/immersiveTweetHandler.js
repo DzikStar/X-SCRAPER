@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.immersiveTweetHandler"],
+    ["loader.immersiveTweetHandler", "icons/IconChevronDown-js"],
     {
         311554: (e, t, n) => {
             n.r(t), n.d(t, { DEFAULT_SCRIBE_NAMESPACE: () => tt, default: () => ot, getScribeDataItem: () => nt });
@@ -21,15 +21,15 @@
                 g = n(124964),
                 y = n(966582),
                 C = n(815858),
-                f = n(154003),
-                v = n(542610),
+                v = n(154003),
+                f = n(542610),
                 E = n(155727),
                 T = n(530732),
                 S = n(366635),
                 _ = n(366985),
                 k = n(731708),
                 x = n(451051),
-                I = n(332920),
+                I = n(111677),
                 P = n.n(I),
                 Z = n(894966),
                 A = n(899667),
@@ -47,8 +47,8 @@
                 z = n(756632),
                 R = n(459284),
                 U = n(335636),
-                G = n(443781),
-                j = n(23134),
+                j = n(443781),
+                G = n(23134),
                 X = n(778955),
                 q = n(250165),
                 Y = n(738584),
@@ -92,7 +92,7 @@
                 oe = l.default.create((e) => ({ controlsContainer: { width: "100%", height: "100%", display: "flex", flexDirection: "column" } })),
                 ae = r.memo(ne),
                 ie = te((e) => {
-                    const { featureSwitches: t } = r.useContext(G.rC),
+                    const { featureSwitches: t } = r.useContext(j.rC),
                         { analytics: n, getTwitterAuthedHttpClient: o, onPlayerState: a, source: i } = e,
                         s = r.useMemo(() => o(), [o]),
                         l = i?.variants?.map((e) => ({ src: e.url, type: e.content_type })) || [];
@@ -134,15 +134,15 @@
                 ge = { label: se },
                 ye = { label: pe },
                 Ce = { label: he },
-                fe = r.createElement(Z.default, null),
-                ve = r.createElement(A.default, null),
+                ve = r.createElement(Z.default, null),
+                fe = r.createElement(A.default, null),
                 Ee = r.createElement(M.default, null),
                 Te = { avatarSize: "xLarge" },
                 Se = P().ic1e826e,
                 _e = P().b89c5a50;
             function ke(e) {
                 const { analytics: t, isActiveCreator: n, isNsfwUser: o, isPinned: a, mediaType: i, photo: l, style: c, tweet: d, userCountry: I, userLanguage: P, videoPlayerApi: Z, videoPlayerState: A, videoProps: M } = e,
-                    { featureSwitches: N } = r.useContext(G.rC),
+                    { featureSwitches: N } = r.useContext(j.rC),
                     Y = r.useContext(p.Z),
                     J = N.isTrue("explore_relaunch_enable_immersive_web_navigation_button"),
                     { adjustFocusBy: K, currentIndex: Q, totalItems: ee } = (0, W.Y)(),
@@ -200,13 +200,13 @@
                     Ue = r.useCallback(() => {
                         t.scribe({ element: "caret", action: "click" });
                     }, [t]),
-                    Ge = r.useCallback(
+                    je = r.useCallback(
                         (e) => {
                             ke(!oe), e?.stopPropagation();
                         },
                         [ke, oe],
                     ),
-                    je = r.useCallback(
+                    Ge = r.useCallback(
                         (e, n) => {
                             n === w.Z.HASHTAG ? t.scribe({ element: "hashtag", action: "search" }) : n === w.Z.URL ? t.scribe({ action: "open_link" }) : n === w.Z.TEXT && t.scribe({ element: "tweet", action: "click" });
                         },
@@ -249,7 +249,7 @@
                     ut = r.useCallback(() => {
                         t.scribe({ element: "avatar", action: "profile_click" });
                     }, [t]),
-                    dt = r.useMemo(() => r.createElement(s.Z, { style: xe.screenNameSuffix }, r.createElement(b.Z, { style: xe.relativeTimestamp, timestamp: d.created_at }), r.createElement(g.Z, null), r.createElement(j.C, { isTransparent: !0, promotedContent: d.promoted_content, size: "medium", style: xe.followUserButton, userId: d.user.id_str })), [d.created_at, d.user.id_str, d.promoted_content]),
+                    dt = r.useMemo(() => r.createElement(s.Z, { style: xe.screenNameSuffix }, r.createElement(b.Z, { style: xe.relativeTimestamp, timestamp: d.created_at }), r.createElement(g.Z, null), r.createElement(G.C, { isTransparent: !0, promotedContent: d.promoted_content, size: "medium", style: xe.followUserButton, userId: d.user.id_str })), [d.created_at, d.user.id_str, d.promoted_content]),
                     mt = y.Z.isPromoted(d.promoted_content);
                 return r.createElement(
                     s.Z,
@@ -274,7 +274,7 @@
                         r.createElement(
                             s.Z,
                             { style: xe.tweetForegroundContainer },
-                            r.createElement(s.Z, { style: xe.tweetTopContent }, J && r.createElement(s.Z, { style: Qe }, r.createElement(C.Z, { duration: "longer", show: !ae, type: "fade" }, r.createElement(f.ZP, { "aria-label": he, disabled: !nt, hoverLabel: Ce, icon: ve, onClick: it, size: "xSmall", style: Ke, testID: `immersive-tweet-previous-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" }))), r.createElement(f.ZP, { "aria-label": se, hoverLabel: ge, icon: fe, onClick: Re, style: xe.backButton, testID: `immersive-tweet-back-button-${Fe}`, type: "onMediaDominantColorFilled" })),
+                            r.createElement(s.Z, { style: xe.tweetTopContent }, J && r.createElement(s.Z, { style: Qe }, r.createElement(C.Z, { duration: "longer", show: !ae, type: "fade" }, r.createElement(v.ZP, { "aria-label": he, disabled: !nt, hoverLabel: Ce, icon: fe, onClick: it, size: "xSmall", style: Ke, testID: `immersive-tweet-previous-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" }))), r.createElement(v.ZP, { "aria-label": se, hoverLabel: ge, icon: ve, onClick: Re, style: xe.backButton, testID: `immersive-tweet-back-button-${Fe}`, type: "onMediaDominantColorFilled" })),
                             r.createElement(
                                 C.Z,
                                 { duration: "longer", show: !ae, type: "fade" },
@@ -284,13 +284,13 @@
                                     r.createElement(
                                         s.Z,
                                         { onLayout: Xe, style: xe.tweetContentContainer },
-                                        Le && r.createElement(s.Z, { style: xe.verticalButtonContainer }, r.createElement(f.ZP, { "aria-label": oe ? ce : le, hoverLabel: et, icon: tt, onClick: Ge, size: "xSmall", style: xe.button, testID: `immersive-tweet-mute-button-${Fe}`, type: "onMediaDominantColorFilled" }), r.createElement(f.ZP, { "aria-label": A?.areCaptionsShown ? ue : de, disabled: !Oe?.hasCaptions, hoverLabel: lt, icon: ct, onClick: qe, size: "xSmall", style: xe.button, testID: `immersive-tweet-closed-captioning-button-${Fe}`, type: "onMediaDominantColorFilled" })),
-                                        !!Z && r.createElement(s.Z, { style: xe.scrubberContainerWithPlayButton }, r.createElement(f.ZP, { "aria-label": A?.isPlaying ? _e : Se, icon: st, onClick: A?.isPlaying ? Z?.pause : Z?.play, size: "medium", style: xe.playPauseButton, type: "onMediaText" }), r.createElement(s.Z, { style: xe.scrubberFlexContainer }, r.createElement(v.Z, { "aria-label": me, currentTime: Oe ? (0, re.Ot)(Oe) || 0 : void 0, duration: Oe ? (0, re.MU)(Oe) : void 0, isScrubbing: !!A?.isScrubbing && A.isScrubbing, isSeeking: !!A?.isSeeking && A.isSeeking, playerApi: Z }))),
+                                        Le && r.createElement(s.Z, { style: xe.verticalButtonContainer }, r.createElement(v.ZP, { "aria-label": oe ? ce : le, hoverLabel: et, icon: tt, onClick: je, size: "xSmall", style: xe.button, testID: `immersive-tweet-mute-button-${Fe}`, type: "onMediaDominantColorFilled" }), r.createElement(v.ZP, { "aria-label": A?.areCaptionsShown ? ue : de, disabled: !Oe?.hasCaptions, hoverLabel: lt, icon: ct, onClick: qe, size: "xSmall", style: xe.button, testID: `immersive-tweet-closed-captioning-button-${Fe}`, type: "onMediaDominantColorFilled" })),
+                                        !!Z && r.createElement(s.Z, { style: xe.scrubberContainerWithPlayButton }, r.createElement(v.ZP, { "aria-label": A?.isPlaying ? _e : Se, icon: st, onClick: A?.isPlaying ? Z?.pause : Z?.play, size: "medium", style: xe.playPauseButton, type: "onMediaText" }), r.createElement(s.Z, { style: xe.scrubberFlexContainer }, r.createElement(f.Z, { "aria-label": me, currentTime: Oe ? (0, re.Ot)(Oe) || 0 : void 0, duration: Oe ? (0, re.MU)(Oe) : void 0, isScrubbing: !!A?.isScrubbing && A.isScrubbing, isSeeking: !!A?.isSeeking && A.isSeeking, playerApi: Z }))),
                                         r.createElement(s.Z, { style: xe.userInfoContainer }, r.createElement(s.Z, null, r.createElement(E.Z.Provider, { value: Te }, r.createElement(z.Z, { onClick: ut, promotedContent: d.promoted_content, screenName: d.user.screen_name, uri: d.user.profile_image_url_https, userId: d.user.id_str, withLink: !0 }))), r.createElement(s.Z, { style: xe.userNameContainer }, r.createElement(T.Z, { link: We }, r.createElement(S.Z, { color: "white", isBlueVerified: d.user.is_blue_verified, isVerified: d.user.verified, name: d.user.name, screenName: d.user.screen_name, screenNameSize: "body", screenNameSuffix: dt, weight: "bold", withName: !0, withScreenName: !0, withStackedLayout: !0 }))), r.createElement(s.Z, { style: xe.promotedLabel }, mt ? r.createElement(_.j, { tweet: d }, ([e]) => (e ? r.createElement(k.ZP, { "aria-label": e.promotedLabel, color: "gray700", testID: "immersive-tweet-ad-label" }, we) : null)) : null), r.createElement(s.Z, { style: xe.tweetActionMenuContainer }, r.createElement(q.g, { downloadLink: M?.source.downloadLink }, r.createElement(R.Z, { isActiveCreator: n || !1, isNsfwUser: o || !1, isPinned: a, menuControlProps: Ie, onMenuClick: Ue, promotedContent: d.promoted_content, tweet: d, userCountry: I, userLanguage: P, withMuteConversation: !1 })))),
-                                        r.createElement(s.Z, { style: xe.tweetTextContainer }, r.createElement(x.Z, { displayTextRange: d.display_text_range, entities: d.entities, lang: d.lang, link: d.permalink, linkify: !0, numberOfLines: 5, onEntityClick: je, style: xe.tweetText, testID: `immersive-tweet-text-${Fe}`, text: d.text })),
+                                        r.createElement(s.Z, { style: xe.tweetTextContainer }, r.createElement(x.Z, { displayTextRange: d.display_text_range, entities: d.entities, lang: d.lang, link: d.permalink, linkify: !0, numberOfLines: 5, onEntityClick: Ge, style: xe.tweetText, testID: `immersive-tweet-text-${Fe}`, text: d.text })),
                                     ),
                                     r.createElement(s.Z, { style: xe.tweetActionsBarContainer }, r.createElement(s.Z, { style: xe.primaryTweetActionsContainer }, r.createElement(X.Z, { activeColor: "white", allowBookmarkInActionsBar: !0, color: "white", forwardPivotInfo: d.softIntervention || te, style: xe.actionsBar, tweet: d, withAnalyticsAction: !0, withCount: !0 }))),
-                                    J && r.createElement(s.Z, { style: xe.navigationButtonContainer }, r.createElement(f.ZP, { "aria-label": pe, disabled: !ot, hoverLabel: ye, icon: Ee, onClick: rt, size: "xSmall", style: Je, testID: `immersive-tweet-next-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" })),
+                                    J && r.createElement(s.Z, { style: xe.navigationButtonContainer }, r.createElement(v.ZP, { "aria-label": pe, disabled: !ot, hoverLabel: ye, icon: Ee, onClick: rt, size: "xSmall", style: Je, testID: `immersive-tweet-next-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" })),
                                 ),
                             ),
                         ),
@@ -374,18 +374,18 @@
                     const n = t.entry.content.promotedMetadata;
                     return n ? He.ZP.select(e, n.advertiserId) : null;
                 },
-                Ge = (e, { urtAdvertiser: t, urtPromotedContent: n }) => {
+                je = (e, { urtAdvertiser: t, urtPromotedContent: n }) => {
                     if (e && n) {
                         const o = e.promoted_content;
                         return { ...e, promoted_content: { adMetadataContainer: n.adMetadataContainer, disclosure_type: n.disclosureType, experiment_values: n.experimentValues, impression_id: n.impressionId, advertiser: t ? { id_str: t.id_str } : void 0, advertiser_name: t?.name || void 0, click_tracking_info: n.clickTrackingInfo, ...o } };
                     }
                     return e;
                 },
-                je = (0, Q.Z)()
+                Ge = (0, Q.Z)()
                     .propsFromState(() => ({ tweet: Ne.Z.createHydratedTweetSelector(We), isActiveCreator: $e.WM, isNsfwUser: Ve.EF, isPinned: ze, onboardingMobileViewCount: Le, userCountry: $e.GG, userLanguage: $e.VT, urtAdvertiser: Ue, urtPromotedContent: Re }))
                     .adjustStateProps((e) => {
                         const { tweet: t, urtAdvertiser: n, urtPromotedContent: o, ...a } = e;
-                        return { tweet: Ge(t, { urtPromotedContent: o, urtAdvertiser: n }), ...a };
+                        return { tweet: je(t, { urtPromotedContent: o, urtAdvertiser: n }), ...a };
                     })
                     .propsFromActions(() => ({ immersiveViewerOnboardingViewed: Oe }))
                     .withAnalytics({ page: "gallery", section: "immersive" }),
@@ -417,10 +417,10 @@
                         w = l ? Je(l) : null,
                         [b, g] = r.useState(),
                         [y, C] = r.useState(),
-                        [f, v] = r.useState(window.innerHeight);
+                        [v, f] = r.useState(window.innerHeight);
                     (0, u.q)(() => {
                         window.addEventListener("resize", () => {
-                            v(window.innerHeight);
+                            f(window.innerHeight);
                         });
                     });
                     const E = d.Z.forTweet(l ? l.id_str : ""),
@@ -436,10 +436,10 @@
                               }
                             : void 0,
                         S = r.useMemo(() => Ke(l), [l]),
-                        _ = r.useMemo(() => ({ height: Xe ? "100dvh" : `${f}px`, maxHeight: Xe ? "100dvh" : `${f}px`, userSelect: "none" }), [f]);
+                        _ = r.useMemo(() => ({ height: Xe ? "100dvh" : `${v}px`, maxHeight: Xe ? "100dvh" : `${v}px`, userSelect: "none" }), [v]);
                     return l ? r.createElement(s.Z, { style: _ }, r.createElement(ke, { analytics: e, isActiveCreator: n, isNsfwUser: o, isPinned: a, mediaType: S, photo: w, tweet: l, userCountry: m, userLanguage: p, videoPlayerApi: b, videoPlayerState: y, videoProps: T })) : null;
                 },
-                et = je(r.memo(Qe)),
+                et = Ge(r.memo(Qe)),
                 tt = { component: "tweet" },
                 nt = (e) => a.Z.getTweetURTEntryItem(e),
                 ot = (e) => i.iH({ component: et, defaultScribeNamespace: tt, isFocusable: (0, o.Z)(!0), getScribeDataItem: nt }).getHandler();
@@ -447,7 +447,7 @@
         542610: (e, t, n) => {
             n.d(t, { Z: () => d });
             var o = n(202784),
-                a = n(332920),
+                a = n(111677),
                 i = n.n(a),
                 r = n(2138),
                 s = n(173739),
@@ -500,9 +500,9 @@
                 l = 720;
         },
         424713: (e, t, n) => {
-            n.d(t, { Ci: () => Z, Fv: () => B, MU: () => S, Ot: () => v, Ov: () => k, SY: () => T, XE: () => y, _5: () => M, aZ: () => I, c9: () => C, mr: () => D, sI: () => P, us: () => x, xB: () => A, zm: () => _ });
+            n.d(t, { Ci: () => Z, Fv: () => B, MU: () => S, Ot: () => f, Ov: () => k, SY: () => T, XE: () => y, _5: () => M, aZ: () => I, c9: () => C, mr: () => D, sI: () => P, us: () => x, xB: () => A, zm: () => _ });
             n(136728);
-            var o = n(332920),
+            var o = n(111677),
                 a = n.n(o),
                 i = n(837880),
                 r = n(891198),
@@ -529,28 +529,28 @@
                             r = t || n ? m : d,
                             s = n ? h : p;
                         if ((i.push(s({ locVideoType: r })), "number" == typeof e && e && !n)) {
-                            const { hoursWord: t, minutesWord: n, secondsWord: o } = f(e);
+                            const { hoursWord: t, minutesWord: n, secondsWord: o } = v(e);
                             i.push(w({ hoursWord: t, minutesWord: n, secondsWord: o }));
                         }
                         if ("number" == typeof o && o) {
-                            const { hoursWord: e, minutesWord: t, secondsWord: n } = f(o);
+                            const { hoursWord: e, minutesWord: t, secondsWord: n } = v(o);
                             i.push(b({ hoursWord: e, minutesWord: t, secondsWord: n }));
                         }
                         const l = a && y(a);
                         return l && i.push(l), i.join(". ");
                     })({ isLive: e.isLive, isBroadcast: e.contentType === s.wF.BROADCAST, durationSeconds: x(e), timecode: M(e), videoTrack: e });
                 },
-                f = (e) => {
+                v = (e) => {
                     const { hours: t, minutes: n, seconds: o } = L(e),
                         a = { hoursWord: "", minutesWord: "", secondsWord: "" };
                     return 0 === o && 0 === n && 0 === t && 0 === n ? ((a.secondsWord = l(0)), a) : ((a.hoursWord = t > 0 ? u(t) : ""), (a.minutesWord = n > 0 ? c(n) : ""), (a.secondsWord = o > 0 ? l(o) : ""), a);
                 },
-                v = (e) => (e ? (e.currentTimeMs || 0) / 1e3 : void 0),
+                f = (e) => (e ? (e.currentTimeMs || 0) / 1e3 : void 0),
                 E = (e) => e.endTimeS - e.startTimeS,
                 T = (e) => {
                     const t = e?.controls?.playbackTimeRange,
                         n = Z(e),
-                        o = v(n);
+                        o = f(n);
                     if (void 0 === o) return 0;
                     if (!t) return o;
                     const a = o - t.startTimeS;
@@ -564,7 +564,7 @@
                     return o ? (t ? E(t) : o) : 0;
                 },
                 k = (e) => {
-                    const t = v(e);
+                    const t = f(e);
                     return t && Math.round(t);
                 },
                 x = (e) => {
@@ -595,6 +595,23 @@
                 },
                 L = (e) => ({ hours: Math.floor(e / 3600), minutes: Math.floor((e % 3600) / 60), seconds: Math.floor(e % 60) });
         },
+        487552: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                a = n(890601),
+                i = n(783427),
+                r = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        614425: (e, t, n) => {
+            n.d(t, { Y7: () => o });
+            const o = n(795897).default;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.c045650a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.52c6f50a.js.map

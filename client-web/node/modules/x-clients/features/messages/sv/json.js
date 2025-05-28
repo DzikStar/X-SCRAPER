@@ -3,7 +3,7 @@
     ["node_modules_x-clients_features_messages_sv_json"],
     {
         483460: (e) => {
-            e.exports = JSON.parse('{"Retry":"Försök igen","People":"Personer","Edit":"Redigera","Something went wrong.":"Ett fel inträffade.","None":"Inget","Conversation info":"Information om konversationen","Add people":"Lägg till personer","Group info":"Gruppinfo","Something went wrong. Try reloading.":"Något gick fel. Försök läsa in igen.","Live on X":"Live på X"}');
+            e.exports = JSON.parse('{"Retry":"Försök igen","Message":"Meddelande","Members":"Medlemmar","On":"På","Edit":"Redigera","Off":"Av","Dismiss":"Avfärda","Something went wrong.":"Ett fel inträffade.","None":"Inget","Add members":"Lägg till medlemmar","Something went wrong. Try reloading.":"Något gick fel. Försök läsa in igen.","Live on X":"Live på X","Rate limit exceeded. Please try again later.":"Gränsen har överskridits. Försök igen senare.","Chats":"Chattar"}');
         },
     },
 ]);

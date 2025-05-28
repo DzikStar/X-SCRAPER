@@ -3,17 +3,17 @@
     ["bundle.TV-e019dbda"],
     {
         664918: (e, t, r) => {
-            r.d(t, { D0: () => i, c$: () => u, fD: () => o, iB: () => h, jk: () => l });
+            r.d(t, { D0: () => l, c$: () => u, fD: () => o, iB: () => h, jk: () => i });
             var a = r(366097),
                 s = r(163889);
             const c = 2,
                 n = 1e3,
                 o = Object.freeze({ AcceptAllCookies: "acceptAllCookies", RefuseNonEssentialCookies: "refuseNonEssentialCookies", Invalid: "invalid", NotSet: "notSet" });
-            function i(e) {
+            function l(e) {
                 const t = (0, a.bL)(e);
                 return t ? (d(t) ? (p(t) ? (t[1] ? o.AcceptAllCookies : t[2] ? o.RefuseNonEssentialCookies : ((0, s.ZP)("Invalid consent signal state"), o.Invalid)) : o.NotSet) : o.Invalid) : o.NotSet;
             }
-            function l(e) {
+            function i(e) {
                 (0, a.kA)({ consent_version: c, text_version: n, 1: !0 }, e);
             }
             function u(e) {
@@ -35,38 +35,59 @@
             const a = { page: "cookie_compliance_banner" };
         },
         6116: (e, t, r) => {
-            r.d(t, { O: () => l });
+            r.d(t, { O: () => i });
             var a = r(202784),
                 s = r(323265),
                 c = r(725516),
                 n = r(443781),
                 o = r(664918),
-                i = r(421023);
-            function l() {
+                l = r(421023);
+            function i() {
                 const e = (0, c.z)(),
                     { featureSwitches: t } = a.useContext(n.rC),
                     r = !!s.ZP.getTwitterAppVersion(),
-                    [l, u] = a.useState(() => o.iB(t) && !r);
+                    [i, u] = a.useState(() => o.iB(t) && !r);
                 return {
-                    isBannerOpen: l,
+                    isBannerOpen: i,
                     acceptAllCookies() {
-                        e.scribe({ ...i.A, action: "click", element: "accept_all" }), o.jk(t), u(!1);
+                        e.scribe({ ...l.A, action: "click", element: "accept_all" }), o.jk(t), u(!1);
                     },
                     refuseNonEssentialCookies() {
-                        e.scribe({ ...i.A, action: "click", element: "refuse_non_essential" }), o.c$(t), u(!1);
+                        e.scribe({ ...l.A, action: "click", element: "refuse_non_essential" }), o.c$(t), u(!1);
                     },
                 };
             }
         },
+        56851: (e, t, r) => {
+            r.d(t, { Z: () => y });
+            var a = r(202784),
+                s = r(420740),
+                c = r(108362),
+                n = r(731708),
+                o = r(154003),
+                l = r(392237),
+                i = r(111677),
+                u = r.n(i),
+                d = r(349035);
+            const p = "error-detail",
+                h = u().e49537c2,
+                m = u().a9ae1e78;
+            class y extends a.PureComponent {
+                render() {
+                    return a.createElement(s.Z, { testID: p }, a.createElement(d.Z, null), a.createElement(c.Z, { style: f.root }, a.createElement(n.ZP, { align: "center", color: "gray700", style: f.retryText }, h), a.createElement(o.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, m)));
+                }
+            }
+            const f = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+        },
         301410: (e, t, r) => {
-            r.d(t, { i: () => m.ZP, z: () => k });
+            r.d(t, { i: () => m.ZP, z: () => b });
             var a = r(202784),
                 s = r(928123),
                 c = r.n(s),
                 n = r(72845),
                 o = r.n(n),
-                i = r(57074),
-                l = r.n(i),
+                l = r(57074),
+                i = r.n(l),
                 u = r(516951),
                 d = r(88656),
                 p = r(71620),
@@ -92,18 +113,18 @@
                     const a = c()(e, t);
                     return r({ fetchStatus: m.ZP.LOADED, data: a, error: null, retry: u.Z });
                 },
-                k = (e, t) =>
+                b = (e, t) =>
                     function ({ fetchPolicy: r = "store-or-network", render: s, variables: c }) {
-                        const [n, i] = o()(e),
+                        const [n, l] = o()(e),
                             u = (0, p.n7)(t.errorConfig.context),
-                            d = l()(c),
+                            d = i()(c),
                             h = a.useCallback(() => {
-                                i(d, { fetchPolicy: "network-only" });
-                            }, [i, d]);
+                                l(d, { fetchPolicy: "network-only" });
+                            }, [l, d]);
                         return (
                             a.useLayoutEffect(() => {
-                                i(d, { fetchPolicy: r });
-                            }, [r, i, d]),
+                                l(d, { fetchPolicy: r });
+                            }, [r, l, d]),
                             n
                                 ? a.createElement(
                                       a.Suspense,
@@ -122,9 +143,9 @@
                 c = r(325686),
                 n = r(879891),
                 o = r(420412),
-                i = r(392237),
-                l = r(332920),
-                u = r.n(l),
+                l = r(392237),
+                i = r(111677),
+                u = r.n(i),
                 d = r(2138),
                 p = r(187669),
                 h = r(363047),
@@ -132,36 +153,36 @@
                 y = r(273413),
                 f = r(602737),
                 g = r(91946),
-                k = r(686010),
-                b = r(787557),
+                b = r(686010),
+                k = r(787557),
                 v = r(734261),
-                S = r(815846),
-                C = r(721152),
-                _ = r(479890),
-                w = r(183822),
+                C = r(815846),
+                S = r(721152),
+                w = r(479890),
+                _ = r(183822),
                 E = r(575626),
-                R = r(898063),
-                Z = r(602070),
+                Z = r(898063),
+                R = r(602070),
                 T = r(883432),
                 P = r(125363),
-                q = r(903558),
-                x = r(919022),
+                x = r(903558),
+                q = r(919022),
                 $ = r(673932),
                 A = r(708411),
-                L = r(283512),
-                V = r(668214),
-                N = r(250901),
-                D = r(682461);
-            const O = (0, V.Z)()
-                .propsFromState(() => ({ search: N.IF }))
+                D = r(283512),
+                L = r(668214),
+                V = r(250901),
+                N = r(682461);
+            const O = (0, L.Z)()
+                .propsFromState(() => ({ search: V.IF }))
                 .adjustStateProps(({ search: e }) => ({ typeaheadResults: e?.typeaheadResults }))
-                .propsFromActions(() => ({ fetchTVSearchTypeaheadResults: D.H7, tvSearchStart: q.eX.tvSearchStart }))
+                .propsFromActions(() => ({ fetchTVSearchTypeaheadResults: N.H7, tvSearchStart: x.eX.tvSearchStart }))
                 .withAnalytics({ page: "tv-search" });
             var B = r(366635),
                 F = r(949626),
                 z = r(965612),
-                H = r(467537),
-                I = r(752475),
+                I = r(467537),
+                H = r(752475),
                 M = r(382880);
             var Q = r(725516);
             const U = { behavior: "smooth", block: "end", inline: "nearest" },
@@ -202,24 +223,24 @@
                             o.scribe({ element: "typeahead", action: "impression", data: X(s) });
                         }, [o, s]),
                     });
-                    const i = a.useCallback(() => {
+                    const l = a.useCallback(() => {
                             o.scribe({ element: "typeahead", action: "focus", data: X(s) });
                         }, [o, s]),
-                        l = a.useCallback(() => {
+                        i = a.useCallback(() => {
                             o.scribe({ element: "typeahead", action: "click", data: X(s) }), r?.(s);
                         }, [o, r, s]);
                     let u;
-                    return "user" === s?.type ? (u = a.createElement(H.C, { "aria-label": void 0, name: t, onFocus: i, onPress: l, role: "link", scrollOptions: U, style: [K.root, e && K.selected], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, s?.profile_image_url_https ? a.createElement(I.Z, { source: s?.profile_image_url_https, style: K.avatar, verifiedType: s.verified_type }) : null, a.createElement(c.Z, { style: K.userDetails }, a.createElement(B.Z, { affiliateBadgeInfo: s.highlightedLabel, badgeContext: "content", isBlueVerified: s.is_blue_verified, isProtected: s.is_protected, isVerified: s.verified, name: s.name, nameSize: "subtext1", screenName: s.screen_name, screenNameSize: "subtext2", verifiedType: s.verified_type, withLink: !1, withNameWrap: !0, withStackedLayout: !0 }))))) : "topic" === s?.type && (u = a.createElement(H.C, { "aria-label": void 0, name: t, onFocus: i, onPress: () => r?.(s), role: "link", style: [K.root, K.topicResult], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, a.createElement(g.Kh, { size: "subtext1" }, s?.topic)))), a.createElement(c.Z, { ref: n }, u);
+                    return "user" === s?.type ? (u = a.createElement(I.C, { "aria-label": void 0, name: t, onFocus: l, onPress: i, role: "link", scrollOptions: U, style: [K.root, e && K.selected], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, s?.profile_image_url_https ? a.createElement(H.Z, { source: s?.profile_image_url_https, style: K.avatar, verifiedType: s.verified_type }) : null, a.createElement(c.Z, { style: K.userDetails }, a.createElement(B.Z, { affiliateBadgeInfo: s.highlightedLabel, badgeContext: "content", isBlueVerified: s.is_blue_verified, isProtected: s.is_protected, isVerified: s.verified, name: s.name, nameSize: "subtext1", screenName: s.screen_name, screenNameSize: "subtext2", verifiedType: s.verified_type, withLink: !1, withNameWrap: !0, withStackedLayout: !0 }))))) : "topic" === s?.type && (u = a.createElement(I.C, { "aria-label": void 0, name: t, onFocus: l, onPress: () => r?.(s), role: "link", style: [K.root, K.topicResult], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, a.createElement(g.Kh, { size: "subtext1" }, s?.topic)))), a.createElement(c.Z, { ref: n }, u);
                 },
-                K = i.default.create((e) => ({ root: { alignItems: "center", borderRadius: e.borderRadii.small, color: e.colors.text, display: "flex", flexDirection: "row", gap: e.spaces.space8, marginVertical: e.spaces.space4, paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space8, scrollMargin: e.spaces.space8, width: "100%" }, placeholder: { height: e.spaces.space48, width: 100 * e.scaleMultiplier }, topicResult: { paddingVertical: e.spaces.space12 }, selected: { backgroundColor: e.colors.gray200 }, avatar: { minWidth: e.spaces.space48, height: e.spaces.space48, width: e.spaces.space48 }, userAvatar: { borderRadius: e.borderRadii.infinite }, businessAvatar: { borderRadius: e.borderRadii.small }, userDetails: { flexDirection: "column" } })),
-                W = u().b86c2e12,
-                G = u().e5b0e544,
-                J = /https:\/\/(?:www\.)?(?:x|twitter)\.com\/i\/tv\/trending\/([0-9]*)/,
-                Y = ({ history: e }) =>
+                K = l.default.create((e) => ({ root: { alignItems: "center", borderRadius: e.borderRadii.small, color: e.colors.text, display: "flex", flexDirection: "row", gap: e.spaces.space8, marginVertical: e.spaces.space4, paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space8, scrollMargin: e.spaces.space8, width: "100%" }, placeholder: { height: e.spaces.space48, width: 100 * e.scaleMultiplier }, topicResult: { paddingVertical: e.spaces.space12 }, selected: { backgroundColor: e.colors.gray200 }, avatar: { minWidth: e.spaces.space48, height: e.spaces.space48, width: e.spaces.space48 }, userAvatar: { borderRadius: e.borderRadii.infinite }, businessAvatar: { borderRadius: e.borderRadii.small }, userDetails: { flexDirection: "column" } })),
+                G = u().b86c2e12,
+                W = u().e5b0e544,
+                Y = /https:\/\/(?:www\.)?(?:x|twitter)\.com\/i\/tv\/trending\/([0-9]*)/,
+                J = ({ history: e }) =>
                     a.createElement(
                         c.Z,
                         { style: te.loggedOutSearchPrompt },
-                        a.createElement(g.Kh, { size: "headline2" }, W),
+                        a.createElement(g.Kh, { size: "headline2" }, G),
                         a.createElement(
                             f.K,
                             {
@@ -229,20 +250,20 @@
                                     e.push(h.C2);
                                 },
                             },
-                            G,
+                            W,
                         ),
                     ),
-                ee = ({ fetchTVSearchTypeaheadResults: e, history: t, tvSearchStart: r, typeaheadResults: i = { topics: [], users: [], size: 0 } }) => {
-                    const l = (0, P.v9)(x.ZP.selectViewerUser),
+                ee = ({ fetchTVSearchTypeaheadResults: e, history: t, tvSearchStart: r, typeaheadResults: l = { topics: [], users: [], size: 0 } }) => {
+                    const i = (0, P.v9)(q.ZP.selectViewerUser),
                         [u, f] = a.useState(""),
                         g = (0, P.I0)(),
-                        { direction: V } = (0, n.Z)(),
-                        N = "rtl" === V,
-                        D = a.useRef({ id: 0, lastEventTimeMs: 0, query: "" }),
+                        { direction: L } = (0, n.Z)(),
+                        V = "rtl" === L,
+                        N = a.useRef({ id: 0, lastEventTimeMs: 0, query: "" }),
                         O = new URLSearchParams(t.location.search).get("q"),
                         [B, F] = a.useState(O || ""),
                         z = a.useRef(B),
-                        [H, I] = a.useState(!1),
+                        [I, H] = a.useState(!1),
                         M = a.useCallback(
                             (e) => {
                                 F(e), (z.current = e);
@@ -271,13 +292,13 @@
                         ),
                         X = a.useCallback(
                             (e) => {
-                                switch ((I(!1), e.value)) {
+                                switch ((H(!1), e.value)) {
                                     case "Backspace":
                                         return void U(z.current.substring(0, z.current.length - 1));
                                     case " ":
                                         return void U(`${z.current} `);
                                     case "Clear":
-                                        return U(""), void g(q.eX.tvSearchResultsClear("search"));
+                                        return U(""), void g(x.eX.tvSearchResultsClear("search"));
                                     default:
                                         return void U(`${z.current}${e.value}`);
                                 }
@@ -287,21 +308,21 @@
                         K = a.useCallback(
                             (e) => {
                                 let t;
-                                return (0, s.setFocus)(`${E.sN}.${$.rQ}.${_.U}`), (t = "Backspace" === e.code || "Delete" === e.code ? { displayName: "Backspace", value: "Backspace" } : "Space" === e.code ? { displayName: "Space", value: " " } : { displayName: S.y[e.key[0].toLowerCase()] || "", value: S.y[e.key[0].toLowerCase()] || "" }), X(t), !0;
+                                return (0, s.setFocus)(`${E.sN}.${$.rQ}.${w.U}`), (t = "Backspace" === e.code || "Delete" === e.code ? { displayName: "Backspace", value: "Backspace" } : "Space" === e.code ? { displayName: "Space", value: " " } : { displayName: C.y[e.key[0].toLowerCase()] || "", value: C.y[e.key[0].toLowerCase()] || "" }), X(t), !0;
                             },
                             [X],
                         ),
-                        W = a.useCallback((e) => ("Backspace" === e.code || 8 === e.keyCode) && (K(e), !0), [K]);
-                    (0, R.ZP)("AlphaNumeric", K, `${E.sN}.${$.rQ}`), (0, R.ZP)("Space", K, `${E.sN}.${$.rQ}`), (0, R.ZP)("Backspace", K, `${E.sN}.${$.rQ}`), (0, R.ZP)("Delete", K, `${E.sN}.${$.rQ}`);
-                    const G = a.useCallback(
+                        G = a.useCallback((e) => ("Backspace" === e.code || 8 === e.keyCode) && (K(e), !0), [K]);
+                    (0, Z.ZP)("AlphaNumeric", K, `${E.sN}.${$.rQ}`), (0, Z.ZP)("Space", K, `${E.sN}.${$.rQ}`), (0, Z.ZP)("Backspace", K, `${E.sN}.${$.rQ}`), (0, Z.ZP)("Delete", K, `${E.sN}.${$.rQ}`);
+                    const W = a.useCallback(
                         (e) => {
                             if ("user" === e.type) t.push((0, A.dX)(e.screen_name.toLowerCase()));
                             else if ("topic" === e.type) {
                                 f("");
                                 const r = e?.result_context?.redirect_url_tv || "",
-                                    a = J.exec(r),
+                                    a = Y.exec(r),
                                     s = a?.[1] || "";
-                                s ? t.push((0, $.Lc)(s)) : (M(e.topic), Q({ q: e.topic }, z), I(!0));
+                                s ? t.push((0, $.Lc)(s)) : (M(e.topic), Q({ q: e.topic }, z), H(!0));
                             }
                         },
                         [t, M, Q],
@@ -310,7 +331,7 @@
                         const a = "string" == typeof t?.location?.query?.q ? t?.location?.query?.q : "";
                         r(a), a ? M(a) : t?.location?.pathname?.includes(h.sH) && e({ q: "" });
                     }, [e, t?.location?.pathname, t?.location?.query?.q, M, r]),
-                        (0, Z.ZP)();
+                        (0, R.ZP)();
                     const { clearVoiceHandlers: ee, registerVoiceHandlers: re } = (0, m.B)();
                     a.useEffect(
                         () => (
@@ -321,39 +342,39 @@
                         ),
                         [ee, re],
                     );
-                    const ae = a.useMemo(() => i.topics.map((e, t) => a.createElement(j, { key: `typeaheadResult-${t}`, name: `typeaheadResult-${t}`, onSelect: G, result: e })), [G, i.topics]),
+                    const ae = a.useMemo(() => l.topics.map((e, t) => a.createElement(j, { key: `typeaheadResult-${t}`, name: `typeaheadResult-${t}`, onSelect: W, result: e })), [W, l.topics]),
                         se = a.useMemo(
                             () =>
-                                i.users.map((e, t) => {
-                                    const r = i.topics.length + t;
-                                    return a.createElement(j, { isSelected: u === e.screen_name, key: `typeaheadResult-${r}`, name: `typeaheadResult-${r}`, onSelect: G, result: e });
+                                l.users.map((e, t) => {
+                                    const r = l.topics.length + t;
+                                    return a.createElement(j, { isSelected: u === e.screen_name, key: `typeaheadResult-${r}`, name: `typeaheadResult-${r}`, onSelect: W, result: e });
                                 }),
-                            [G, u, i.topics.length, i.users],
+                            [W, u, l.topics.length, l.users],
                         ),
                         ce = a.useCallback(() => {
-                            D.current = { id: D.current.id + 1, lastEventTimeMs: Date.now(), query: z.current };
+                            N.current = { id: N.current.id + 1, lastEventTimeMs: Date.now(), query: z.current };
                         }, []),
                         ne = a.useCallback(
                             (e) => {
                                 let t = !1;
-                                return ((!N && "ArrowLeft" === e.key) || (N && "ArrowRight" === e.key)) && ((0, s.setFocus)(`${E.sN}.${$.rQ}.${v.o}`), (t = !0)), t;
+                                return ((!V && "ArrowLeft" === e.key) || (V && "ArrowRight" === e.key)) && ((0, s.setFocus)(`${E.sN}.${$.rQ}.${v.o}`), (t = !0)), t;
                             },
-                            [N],
+                            [V],
                         );
-                    return a.createElement(w.Z, { preferredChildName: "keyboard" }, a.createElement(c.Z, { style: te.root }, a.createElement(C.o, { focusable: !0, onEscapeOrBack: W, showValue: !0, value: B }), a.createElement(c.Z, { style: te.searchPageLayout }, a.createElement(c.Z, { style: te.searchSideBar }, a.createElement(b.Z, { disabled: !l, onArrowPress: ce, onKeyPress: X }), a.createElement(k.Z, { "aria-label": void 0, focusable: !!l, name: "typeahead-results", role: "list", style: te.searchTypeaheadResults }, ae, i.topics.length > 0 && i.users.length > 0 ? a.createElement(o.Z, null) : null, se)), a.createElement(c.Z, { style: te.resultsGridContainer }, l ? a.createElement(L.Z, { autoFocus: H, debounceStateRef: D, name: "search-content", onArrowPress: ne, product: "Videos", query: B, queryRef: z, querySource: T.Z.TVSearch, searchTab: "search", style: te.content, width: 4, withCategories: !0 }) : a.createElement(Y, { history: t })))));
+                    return a.createElement(_.Z, { preferredChildName: "keyboard" }, a.createElement(c.Z, { style: te.root }, a.createElement(S.o, { focusable: !0, onEscapeOrBack: G, showValue: !0, value: B }), a.createElement(c.Z, { style: te.searchPageLayout }, a.createElement(c.Z, { style: te.searchSideBar }, a.createElement(k.Z, { disabled: !i, onArrowPress: ce, onKeyPress: X }), a.createElement(b.Z, { "aria-label": void 0, focusable: !!i, name: "typeahead-results", role: "list", style: te.searchTypeaheadResults }, ae, l.topics.length > 0 && l.users.length > 0 ? a.createElement(o.Z, null) : null, se)), a.createElement(c.Z, { style: te.resultsGridContainer }, i ? a.createElement(D.Z, { autoFocus: I, debounceStateRef: N, name: "search-content", onArrowPress: ne, product: "Videos", query: B, queryRef: z, querySource: T.Z.TVSearch, searchTab: "search", style: te.content, width: 4, withCategories: !0 }) : a.createElement(J, { history: t })))));
                 },
-                te = i.default.create((e) => ({ root: { height: "100%", paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, overflow: "hidden" }, searchSideBar: { height: "100%", paddingTop: e.spaces.space20, paddingEnd: e.spaces.space36 }, searchTypeaheadResults: { display: "flex", flexDirection: "column", flex: 1, overflowY: "auto", paddingHorizontal: e.spaces.space2, paddingVertical: e.spaces.space16, width: "100%" }, searchPageLayout: { display: "grid", flex: 1, gridTemplateColumns: 300 * e.scaleMultiplier + "px 3fr", maxHeight: "100%", paddingTop: e.spaces.space4 }, resultsGridContainer: { height: "100%", overflow: "hidden", paddingTop: e.spaces.space20 }, content: { paddingHorizontal: e.spacesPx.space8 + e.borderWidthsPx.medium }, loggedOutSearchPrompt: { display: "flex", flexDirection: "column", gap: e.spaces.space16, alignItems: "center", paddingTop: "20%" } })),
+                te = l.default.create((e) => ({ root: { height: "100%", paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, overflow: "hidden" }, searchSideBar: { height: "100%", paddingTop: e.spaces.space20, paddingEnd: e.spaces.space36 }, searchTypeaheadResults: { display: "flex", flexDirection: "column", flex: 1, overflowY: "auto", paddingHorizontal: e.spaces.space2, paddingVertical: e.spaces.space16, width: "100%" }, searchPageLayout: { display: "grid", flex: 1, gridTemplateColumns: 300 * e.scaleMultiplier + "px 3fr", maxHeight: "100%", paddingTop: e.spaces.space4 }, resultsGridContainer: { height: "100%", overflow: "hidden", paddingTop: e.spaces.space20 }, content: { paddingHorizontal: e.spacesPx.space8 + e.borderWidthsPx.medium }, loggedOutSearchPrompt: { display: "flex", flexDirection: "column", gap: e.spaces.space16, alignItems: "center", paddingTop: "20%" } })),
                 re = O(ee);
         },
         283512: (e, t, r) => {
-            r.d(t, { Z: () => k });
+            r.d(t, { Z: () => b });
             var a = r(807896),
                 s = (r(136728), r(202784)),
                 c = r(107267),
                 n = r(516951),
                 o = r(187669),
-                i = r(290402),
-                l = r(650093),
+                l = r(290402),
+                i = r(650093),
                 u = r(305332),
                 d = r(725516),
                 p = r(125363),
@@ -362,57 +383,95 @@
                 y = r(682461),
                 f = r(673932),
                 g = r(301410);
-            const k = function ({ autoFocus: e = !0, debounceStateRef: t, name: r, onArrowPress: k, product: b, query: v, queryRef: S, querySource: C, searchTab: _, withCategories: w, ...E }) {
-                const R = (0, c.useHistory)(),
-                    Z = (0, p.I0)(),
+            const b = function ({ autoFocus: e = !0, debounceStateRef: t, name: r, onArrowPress: b, product: k, query: v, queryRef: C, querySource: S, searchTab: w, withCategories: _, ...E }) {
+                const Z = (0, c.useHistory)(),
+                    R = (0, p.I0)(),
                     T = (0, d.z)(),
-                    P = (0, p.v9)((0, m.bW)(_)),
-                    q = P?.cursor,
-                    x = P?.lastCompletedQuery,
+                    P = (0, p.v9)((0, m.bW)(w)),
+                    x = P?.cursor,
+                    q = P?.lastCompletedQuery,
                     $ = P?.results,
                     A = P?.searchFetchStatus,
+                    D = s.useCallback(
+                        (e) => {
+                            R(h.eX.playerOpen(e)), Z.push((0, f.X5)(e));
+                        },
+                        [R, Z],
+                    ),
                     L = s.useCallback(
                         (e) => {
-                            Z(h.eX.playerOpen(e)), R.push((0, f.X5)(e));
+                            T.scribe({ element: "tv-search", action: "search", data: { search_details: { query: e.query } } }), R((0, y.i6)(e));
                         },
-                        [Z, R],
+                        [T, R],
                     ),
-                    V = s.useCallback(
-                        (e) => {
-                            T.scribe({ element: "tv-search", action: "search", data: { search_details: { query: e.query } } }), Z((0, y.i6)(e));
-                        },
-                        [T, Z],
-                    ),
-                    N = s.useMemo(
+                    V = s.useMemo(
                         () => (e) => {
                             let r = t.current.id;
                             !(function a(s) {
                                 s <= 0 ||
                                     setTimeout(() => {
-                                        if (r === t.current.id) return V({ ...e, query: S.current });
-                                        if (v === S.current) {
+                                        if (r === t.current.id) return L({ ...e, query: C.current });
+                                        if (v === C.current) {
                                             r = t.current.id;
                                             a(2e3 - (t.current.lastEventTimeMs ? Date.now() - t.current.lastEventTimeMs : 0));
                                         }
                                     }, s);
                             })(2e3);
                         },
-                        [V, t, v, S],
+                        [L, t, v, C],
                     ),
-                    D = s.useCallback(() => {
-                        N({ query: v, cursor: q, product: b, querySource: C, searchTab: _, withCategories: w });
-                    }, [q, N, b, v, C, _, w]),
-                    O = s.useCallback((t = $) => (t ? s.createElement(l.Z, (0, a.Z)({}, E, { autoFocus: e, content: v ? t : void 0, name: r, onNearEnd: D, onSelectVideo: L, returnToFirstElementOnEscape: !0 })) : null), [e, D, r, L, v, E, $]),
-                    B = s.useCallback(() => (1 === $?.length && $[0].content ? O($[0].content) : s.createElement(u.Z, { autoFocus: e, categories: v && $ ? $ : [], name: r, onArrowPress: k, onSelectVideo: L, returnToFirstElementOnEscape: !0 })), [e, r, k, L, v, O, $]);
+                    N = s.useCallback(() => {
+                        V({ query: v, cursor: x, product: k, querySource: S, searchTab: w, withCategories: _ });
+                    }, [x, V, k, v, S, w, _]),
+                    O = s.useCallback((t = $) => (t ? s.createElement(i.Z, (0, a.Z)({}, E, { autoFocus: e, content: v ? t : void 0, name: r, onNearEnd: N, onSelectVideo: D, returnToFirstElementOnEscape: !0 })) : null), [e, N, r, D, v, E, $]),
+                    B = s.useCallback(() => (1 === $?.length && $[0].content ? O($[0].content) : s.createElement(u.Z, { autoFocus: e, categories: v && $ ? $ : [], name: r, onArrowPress: b, onSelectVideo: D, returnToFirstElementOnEscape: !0 })), [e, r, b, D, v, O, $]);
                 return (
                     s.useEffect(() => {
-                        void 0 !== t.current.id && v !== x && N({ cursor: q, query: v, product: b, querySource: C, searchTab: _, withCategories: w });
-                    }, [v, b, C, w, N, Z, x, q, t, _]),
+                        void 0 !== t.current.id && v !== q && V({ cursor: x, query: v, product: k, querySource: S, searchTab: w, withCategories: _ });
+                    }, [v, k, S, _, V, R, q, x, t, w]),
                     (0, o.q)(() => {
-                        x && v !== x && Z(h.eX.tvSearchResultsClear(_));
+                        q && v !== q && R(h.eX.tvSearchResultsClear(w));
                     }),
-                    s.createElement(i.Z, { fetchStatus: q ? g.i.LOADED : A, onRequestRetry: n.Z, render: !$ || ("Carousel" !== $[0]?.displayType && "CompactCarousel" !== $[0]?.displayType && "TVCarousel" !== $[0]?.displayType && "TVShortCarousel" !== $[0]?.displayType) ? O : B, retryable: !1 })
+                    s.createElement(l.Z, { fetchStatus: x ? g.i.LOADED : A, onRequestRetry: n.Z, render: !$ || ("Carousel" !== $[0]?.displayType && "CompactCarousel" !== $[0]?.displayType && "TVCarousel" !== $[0]?.displayType && "TVShortCarousel" !== $[0]?.displayType) ? O : B, retryable: !1 })
                 );
+            };
+        },
+        648839: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var a = r(202784);
+            const s = ({ direction: e, handleFraction: t, handleSwipe: r, handleTap: s, swipeItemLength: c, swipeDistanceThreshold: n = c / 20, swipeTimeThreshold: o = 150 }) => {
+                const l = a.useRef(0),
+                    i = a.useRef(0),
+                    u = a.useRef(0),
+                    d = a.useCallback((t) => ("horizontal" === e ? t.clientX : t.clientY), [e]);
+                return [
+                    a.useCallback(
+                        (e) => {
+                            l.current || ((l.current = Date.now()), (i.current = d(e)));
+                        },
+                        [d],
+                    ),
+                    a.useCallback(
+                        (e) => {
+                            if (!l.current) return;
+                            u.current = d(e);
+                            const r = (u.current - i.current) / c;
+                            t?.(r);
+                        },
+                        [d, t, c],
+                    ),
+                    a.useCallback(
+                        (e) => {
+                            if (((u.current = d(e)), !l.current)) return;
+                            const a = Date.now() - l.current > o,
+                                c = u.current - i.current,
+                                p = Math.abs(c) > n;
+                            t?.(0), (l.current = 0), a || p ? r?.(c < 0 ? 1 : -1) : s?.(e);
+                        },
+                        [d, t, r, s, n, o],
+                    ),
+                    !!l.current,
+                ];
             };
         },
         943052: (e, t, r) => {
@@ -477,4 +536,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-e019dbda.74b20c3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-e019dbda.284e86ca.js.map

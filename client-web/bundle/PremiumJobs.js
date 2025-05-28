@@ -2,6 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.PremiumJobs"],
     {
+        252021: (e, t, s) => {
+            s.d(t, { Z: () => n });
+            var o = s(202784),
+                a = s(107267),
+                i = s(115553);
+            const n = (e) => {
+                (0, a.useHistory)();
+                return o.createElement(i.A, e);
+            };
+        },
         507651: (e, t, s) => {
             s.d(t, { Z: () => l });
             var o = s(807896),
@@ -45,12 +55,12 @@
                 n = s(235902),
                 r = s(392237),
                 c = s(325686),
-                l = s(332920),
+                l = s(111677),
                 d = s.n(l),
                 p = s(912021),
                 u = s(516951),
-                h = s(731708),
-                m = s(310088),
+                m = s(731708),
+                h = s(310088),
                 g = s(175993),
                 b = s(58881),
                 f = s(530732);
@@ -96,9 +106,9 @@
                         { location: v } = this.state,
                         P = w ? this._getMemoizedLink(w, k) : void 0,
                         _ = l ? l(w) : v?.pathname === P?.pathname,
-                        B = b.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
-                        Z = g ? "medium" : _ ? "bold" : "medium";
-                    return a.createElement(f.Z, { "aria-label": t, "aria-selected": _, focusable: !!_, interactiveStyles: B, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [p ? R.pill : R.link, p && _ ? R.active : null, d ? (p ? R.compactPill : R.compactLink) : null, u ? R.roundedRect : null, S], withoutInteractiveStyles: g || p }, ({ isFocused: t, isHovered: l }) => a.createElement(c.Z, { style: p && R.flexGrow }, a.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [R.text, { color: this._getTextColor(_, l, g, p) }, d && R.compactText, g && t && R.focusedText], weight: Z }, e && a.createElement(e, { style: R.icon }), i, g || p ? null : a.createElement(c.Z, { style: _ && [R.border, { backgroundColor: r.default.theme.colors[n] }] })), s ? a.createElement(m.Z, { count: s, standalone: !0, style: [R.badge, s >= 10 && R.multiDigitBadge, s >= 20 && R.truncatedCountBadge], truncatedCountFormatter: C, unreadCountLabel: y, withBorder: !1 }) : o ? a.createElement(m.Z, { pip: !0, standalone: !0, style: R.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
+                        Z = b.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
+                        B = g ? "medium" : _ ? "bold" : "medium";
+                    return a.createElement(f.Z, { "aria-label": t, "aria-selected": _, focusable: !!_, interactiveStyles: Z, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [p ? R.pill : R.link, p && _ ? R.active : null, d ? (p ? R.compactPill : R.compactLink) : null, u ? R.roundedRect : null, S], withoutInteractiveStyles: g || p }, ({ isFocused: t, isHovered: l }) => a.createElement(c.Z, { style: p && R.flexGrow }, a.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [R.text, { color: this._getTextColor(_, l, g, p) }, d && R.compactText, g && t && R.focusedText], weight: B }, e && a.createElement(e, { style: R.icon }), i, g || p ? null : a.createElement(c.Z, { style: _ && [R.border, { backgroundColor: r.default.theme.colors[n] }] })), s ? a.createElement(h.Z, { count: s, standalone: !0, style: [R.badge, s >= 10 && R.multiDigitBadge, s >= 20 && R.truncatedCountBadge], truncatedCountFormatter: C, unreadCountLabel: y, withBorder: !1 }) : o ? a.createElement(h.Z, { pip: !0, standalone: !0, style: R.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = g.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -127,17 +137,17 @@
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: h } = n.ZP.useProps(),
-                        m = h() && !r,
+                        { isWebRedesign: m } = n.ZP.useProps(),
+                        h = m() && !r,
                         g = a.useMemo(
                             () =>
                                 l.filter(Boolean).map(({ label: t, viewType: i, ...n }, l) => {
-                                    const d = m ? [w.linkRedesign, 0 === l && w.firstLinkRedesign, e && 0 === l && w.withNoPaddingStart] : void 0;
-                                    return a.createElement(S, (0, o.Z)({ viewType: i }, n, { isCompact: s, isPillLink: r, isRoundedRect: c, isWebRedesign: m, style: d }), t);
+                                    const d = h ? [w.linkRedesign, 0 === l && w.firstLinkRedesign, e && 0 === l && w.withNoPaddingStart] : void 0;
+                                    return a.createElement(S, (0, o.Z)({ viewType: i }, n, { isCompact: s, isPillLink: r, isRoundedRect: c, isWebRedesign: h, style: d }), t);
                                 }),
-                            [e, s, r, c, m, l],
+                            [e, s, r, c, h, l],
                         );
-                    return a.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && w.gap, childrenStyle: !m && w.flexGrow, key: u, style: [r ? null : w.segmentedControl, m && w.leftAligned, d], visibleItemIndex: p }, g);
+                    return a.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && w.gap, childrenStyle: !h && w.flexGrow, key: u, style: [r ? null : w.segmentedControl, h && w.leftAligned, d], visibleItemIndex: p }, g);
                 };
         },
         353391: (e, t, s) => {
@@ -174,4 +184,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumJobs.bc9778ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumJobs.8d1e407a.js.map

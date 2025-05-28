@@ -11,7 +11,7 @@
                 r = a(721266),
                 s = a(952428),
                 c = a(392237),
-                d = a(332920),
+                d = a(111677),
                 p = a.n(d),
                 u = a(473026),
                 h = a(630715),
@@ -20,7 +20,7 @@
                 f = a(301758),
                 _ = a(686689),
                 w = a(177371),
-                g = a(145766),
+                g = a(720728),
                 E = a(942893),
                 y = a(933610),
                 Z = a(531187),
@@ -234,7 +234,7 @@
                 p = a(779610),
                 u = a(529356),
                 h = a(392237),
-                m = a(332920),
+                m = a(111677),
                 b = a.n(m),
                 f = a(323265),
                 _ = a(980407),
@@ -342,7 +342,7 @@
                 p = a(138099),
                 u = a(247056),
                 h = a(392237),
-                m = a(332920),
+                m = a(111677),
                 b = a.n(m),
                 f = a(607127),
                 _ = a(885724),
@@ -592,7 +592,7 @@
         },
         629963: (e, t, a) => {
             a.d(t, { RY: () => N, Wh: () => k, di: () => P, ju: () => i, m9: () => A, mo: () => I, z9: () => B });
-            var n = a(332920),
+            var n = a(111677),
                 l = a.n(n);
             const o = Object.freeze({ Informative: "Informative", Clear: "Clear", Empathetic: "Empathetic", GoodSources: "GoodSources", UniqueContext: "UniqueContext", AddressesClaim: "AddressesClaim", ImportantContext: "ImportantContext", UnbiasedLanguage: "UnbiasedLanguage", Other: "Other" }),
                 i = Object.freeze({ NoSources: "NoSources", Incorrect: "Incorrect", Outdated: "Outdated", Biased: "Biased", MissingKeyPoints: "MissingKeyPoints", Unclear: "Unclear", Rude: "Rude", OffTopic: "OffTopic", TwitterViolationAny: "TwitterViolationAny", IrrelevantSources: "IrrelevantSources", OpinionSpeculation: "OpinionSpeculation", NoteNotNeeded: "NoteNotNeeded", Other: "Other" }),
@@ -635,7 +635,7 @@
                 c = a(593866),
                 d = a(30183),
                 p = a(392237),
-                u = a(332920),
+                u = a(111677),
                 h = a.n(u),
                 m = a(777131),
                 b = a(201889),
@@ -699,7 +699,7 @@
                 i = a(731708),
                 r = a(154003),
                 s = a(392237),
-                c = a(332920),
+                c = a(111677),
                 d = a.n(c),
                 p = a(143778),
                 u = a(323265),
@@ -766,7 +766,7 @@
         486361: (e, t, a) => {
             a.d(t, { Z: () => I });
             var n = a(202784),
-                l = a(332920),
+                l = a(111677),
                 o = a.n(l),
                 i = a(625271),
                 r = a(286406),
@@ -834,7 +834,7 @@
                 d = a(731708),
                 p = a(593866),
                 u = a(392237),
-                h = a(332920),
+                h = a(111677),
                 m = a.n(h),
                 b = a(97369),
                 f = a(831489),
@@ -869,7 +869,7 @@
                 i = a(731708),
                 r = a(593866),
                 s = a(154003),
-                c = a(332920),
+                c = a(111677),
                 d = a.n(c),
                 p = a(121791),
                 u = a(126089),
@@ -929,4 +929,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.5a5f5eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.07803cca.js.map

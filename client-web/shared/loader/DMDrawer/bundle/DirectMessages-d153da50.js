@@ -9,7 +9,7 @@
                 s = n(154003),
                 o = n(731708),
                 i = n(392237),
-                c = n(332920),
+                c = n(111677),
                 l = n.n(c),
                 d = n(725516);
             const p = l().b08821f4,
@@ -48,7 +48,7 @@
                 c = n(731708),
                 l = n(154003),
                 d = n(392237),
-                p = n(332920),
+                p = n(111677),
                 u = n.n(p),
                 m = n(956272),
                 h = n(837020);
@@ -80,7 +80,7 @@
                 m = n(530732),
                 h = n(952428),
                 v = n(872405),
-                g = n(332920),
+                g = n(111677),
                 _ = n.n(g),
                 b = n(165243),
                 E = n(7330),
@@ -582,7 +582,7 @@
                 o = n(731708),
                 i = n(682830),
                 c = n(392237),
-                l = n(332920),
+                l = n(111677),
                 d = n.n(l),
                 p = n(736063),
                 u = n(792098),
@@ -661,7 +661,7 @@
                 u = n.n(p),
                 m = (n(585488), n(10622)),
                 h = n.n(m),
-                v = n(332920),
+                v = n(111677),
                 g = n.n(v),
                 _ = n(771613),
                 b = n(965245),
@@ -861,4 +861,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-d153da50.f8bfadea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-d153da50.cd6b844a.js.map

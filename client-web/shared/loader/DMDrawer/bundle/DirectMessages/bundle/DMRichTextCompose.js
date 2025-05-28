@@ -9,7 +9,7 @@
         },
         225351: (e, t, n) => {
             n.d(t, { RU: () => C, T5: () => v, eN: () => x });
-            var a = n(332920),
+            var a = n(111677),
                 i = n.n(a),
                 s = n(516951),
                 r = n(615656);
@@ -73,7 +73,7 @@
                 s = n(143670),
                 r = n(154003),
                 o = n(392237),
-                l = n(332920),
+                l = n(111677),
                 c = n.n(l),
                 d = n(607127),
                 u = n(616894),
@@ -107,7 +107,7 @@
                 i = n(688715),
                 s = n(439592),
                 r = n(530732),
-                o = n(332920),
+                o = n(111677),
                 l = n.n(o),
                 c = n(449950),
                 d = n(965728);
@@ -184,7 +184,7 @@
                 i = n(325686),
                 s = n(392237),
                 r = n(731708),
-                o = n(332920),
+                o = n(111677),
                 l = n.n(o),
                 c = n(575522);
             const d = s.default.create((e) => ({ root: { paddingBottom: e.spaces.space20 } })),
@@ -203,7 +203,7 @@
                 i = n(868634),
                 s = n(731708),
                 r = n(392237),
-                o = n(332920);
+                o = n(111677);
             const l = n.n(o)().bcc13060,
                 c = (e) => a.createElement(i.ZP, { background: "gray50", style: d.label }, a.createElement(s.ZP, { color: "gray700", numberOfLines: 1, size: "subtext3", style: d.content, weight: "medium" }, l)),
                 d = r.default.create((e) => ({ label: { alignSelf: "center", borderRadius: e.borderRadii.infinite, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.gray200 }, content: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space8, textTransform: "uppercase" } }));
@@ -212,7 +212,7 @@
             n.d(t, { FC: () => h, Mk: () => g });
             var a = n(202784),
                 i = n(124964),
-                s = n(332920),
+                s = n(111677),
                 r = n.n(s),
                 o = n(275365);
             const l = r().e2cd3b7c,
@@ -268,7 +268,7 @@
                 l = n(682474),
                 c = n(154003),
                 d = n(157130),
-                u = n(332920),
+                u = n(111677),
                 p = n.n(u),
                 m = n(826363),
                 h = n(19197),
@@ -805,7 +805,7 @@
             n.d(t, { FC: () => h, Fn: () => p });
             var a = n(202784),
                 i = n(731708),
-                s = n(332920),
+                s = n(111677),
                 r = n.n(s),
                 o = n(275365);
             const l = r().c1d4ac84,
@@ -1023,4 +1023,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose.e84ce7ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose.d29f81da.js.map

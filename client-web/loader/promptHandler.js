@@ -35,7 +35,7 @@
                         ),
                     );
                 };
-            var y = n(332920),
+            var y = n(111677),
                 C = n.n(y),
                 b = n(725516),
                 f = n(927389),
@@ -350,4 +350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.promptHandler.4a52f05a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.promptHandler.bbfb120a.js.map

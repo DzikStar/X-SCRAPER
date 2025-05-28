@@ -89,7 +89,7 @@
         32677: (e, t, r) => {
             r.d(t, { Z: () => d });
             var o = r(202784),
-                a = r(332920),
+                a = r(111677),
                 n = r.n(a),
                 s = r(186444),
                 l = r(355883);
@@ -107,7 +107,7 @@
             r(136728);
             var o = r(202784),
                 a = r(811176),
-                n = r(332920),
+                n = r(111677),
                 s = r.n(n),
                 l = r(885724),
                 c = r(912021),
@@ -169,7 +169,7 @@
             var o = r(202784),
                 a = r(457311),
                 n = r(108362),
-                s = r(332920),
+                s = r(111677),
                 l = r.n(s),
                 c = r(789831),
                 i = r(32677),
@@ -195,7 +195,7 @@
                 n = r(457311),
                 s = r(420412),
                 l = r(392237),
-                c = r(332920),
+                c = r(111677),
                 i = r.n(c),
                 m = r(223090),
                 d = r(718e3),
@@ -301,4 +301,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Bookmarks.f05946ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Bookmarks.7c067e5a.js.map

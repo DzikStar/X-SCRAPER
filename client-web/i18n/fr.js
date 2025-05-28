@@ -229,6 +229,7 @@
                 n("f65e7e91", function (e) {
                     return e.percentage + " % de remise sur l'abonnement " + e.tier + " " + e.plan;
                 }),
+                n("cbc38428", "Conservez une expérience sans publicités avec Premium+"),
                 n("a84a736e", "Profitez d'un crédit publicitaire offert"),
                 n("a0713d76", "Abonnez‑vous au service Organisations certifiées pour profiter d'un crédit publicitaire offert et d'une suite d'outils conçus pour booster la croissance de votre entreprise."),
                 n("a07e13fc", "Devenir créateur Premium"),
@@ -904,9 +905,9 @@
                 n("e8e39f95", "En savoir plus"),
                 n("e126dd3f", "En savoir plus"),
                 n("i821844f", "En savoir plus"),
-                n("b0abbb17", "En savoir plus"),
-                n("e7e0d88b", "En savoir plus");
-            n("i560665f", "En savoir plus"),
+                n("b0abbb17", "En savoir plus");
+            n("e7e0d88b", "En savoir plus"),
+                n("i560665f", "En savoir plus"),
                 n("f6e774d9", "En savoir plus"),
                 n("h486f755", "En savoir plus"),
                 n("bab41dab", "En savoir plus"),
@@ -1920,9 +1921,9 @@
                 n("a8fdd09c", "Publier l'Article"),
                 n("d8047cc8", "Publier"),
                 n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
-                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
-                n("e52d4998", "Choisissez votre audience");
-            n("d7985b24", "Choisissez qui peut répondre à cet Article"),
+                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié.");
+            n("e52d4998", "Choisissez votre audience"),
+                n("d7985b24", "Choisissez qui peut répondre à cet Article"),
                 n("b5660338", "Aperçu du fil"),
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
@@ -2904,12 +2905,6 @@
                 n("ada99498", "Cette marque ne sera affichée que pour les autres utilisateurs dans votre région."),
                 n("a765e936", "Supprimer ma biographie détaillée"),
                 n("d4d68e44", "Enregistrés"),
-                n("ie4f57d2", "Renouvelez votre abonnement Premium"),
-                n("h293aa52", "Votre abonnement Premium expire !"),
-                n("j1923668", "Gardez le meilleur de X."),
-                n("ac7e97ee", "Renouveler"),
-                n("f70c69b4", "Boostage des réponses, édition des posts, personnalisation, posts plus longs et bien plus encore."),
-                n("f4cec4d2", "Coche bleue, boostage des réponses, limites Grok repoussées et bien plus encore."),
                 n("b6de83a0", "Espace réservé aux employés"),
                 n("g3f251f2", "Diffusion privée"),
                 n("d08666ba", "Espace privé"),
@@ -2977,20 +2972,17 @@
                 n("b7388a56", "Pied de page"),
                 n("hdabc3fc", "Conditions d’utilisation"),
                 n("bc6efc72", "Politique de Confidentialité"),
-                n("h3161192", "Politique relative aux cookies");
-            n("a7de64de", "Informations sur les publicités"),
+                n("h3161192", "Politique relative aux cookies"),
+                n("a7de64de", "Informations sur les publicités"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Carrières"),
                 n("e0adec82", "Ressources de la marque"),
-                n("df1b7550", "Marketing"),
-                n("he258678", "X pour les professionnels"),
+                n("df1b7550", "Marketing");
+            n("he258678", "X pour les professionnels"),
                 n("c6f58084", "Développeurs"),
                 n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
-                n("fbf83158", "Avertissement : échec du paiement"),
-                n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
-                n("bce3726a", "Mettre les paramètres de facturation à jour"),
                 n("fce9ecce", "Vidéos suggérées"),
                 n("j66b95a2", "Actualités détaillées"),
                 n("ad35153e", "bêta"),
@@ -3032,6 +3024,15 @@
                 }),
                 n("j7d0e836", "Ouvrir"),
                 n("d227d19e", "Réduire"),
+                n("fbf83158", "Avertissement : échec du paiement"),
+                n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
+                n("bce3726a", "Mettre les paramètres de facturation à jour"),
+                n("ie4f57d2", "Renouvelez votre abonnement Premium"),
+                n("h293aa52", "Votre abonnement Premium expire !"),
+                n("j1923668", "Gardez le meilleur de X."),
+                n("ac7e97ee", "Renouveler"),
+                n("f70c69b4", "Boostage des réponses, édition des posts, personnalisation, posts plus longs et bien plus encore."),
+                n("f4cec4d2", "Coche bleue, boostage des réponses, limites Grok repoussées et bien plus encore."),
                 n("h367e724", "Biographie détaillée"),
                 n("ea5928d4", "Vous êtes multiple. Et votre profil aussi.\nAjoutez une biographie détaillée pour en dire plus sur vous."),
                 n("h7ef9dc8", "Par exemple :"),
@@ -3888,13 +3889,13 @@
                 n("caa8d928", "Activer/désactiver la suppression du bruit"),
                 n("b5d88f0c", "Employés uniquement"),
                 n("c855ab8e", "Réservé aux Souscripteurs"),
-                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
-                n("e111f531", function (e) {
-                    return e.count + " " + r(e.count, "a", "ont") + " écouté";
-                });
-            n("cbef820f", function (e) {
-                return e.screenName + " a reposté le stream !";
+                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look.");
+            n("e111f531", function (e) {
+                return e.count + " " + r(e.count, "a", "ont") + " écouté";
             }),
+                n("cbef820f", function (e) {
+                    return e.screenName + " a reposté le stream !";
+                }),
                 n("e3275464", "Envoyer"),
                 n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
@@ -4928,9 +4929,9 @@
                 n("d9f9dec0", "Voir l'Espace"),
                 n("h0c1f37a", "Voir les statistiques de l'Espace"),
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
-                n("if2909ba", "Temps de visionnage"),
-                n("i0e5bf4c", "Vos vidéos");
-            n("ed99baea", "Accès anticipé à la version bêta"),
+                n("if2909ba", "Temps de visionnage");
+            n("i0e5bf4c", "Vos vidéos"),
+                n("ed99baea", "Accès anticipé à la version bêta"),
                 n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
@@ -5894,9 +5895,9 @@
                     return "Terminé le " + e.timestamp;
                 }),
                 n("daca8a2c", "Ouvrir dans Dock"),
-                n("e3aac82a", "Chargement de la diffusion"),
-                n("i0ed3f4e", "Image de l'événement");
-            n("cbae35fa", "Signaler la diffusion"),
+                n("e3aac82a", "Chargement de la diffusion");
+            n("i0ed3f4e", "Image de l'événement"),
+                n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
                 n("a226497c", "Créer une Communauté"),
                 n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
@@ -6892,9 +6893,9 @@
                 n("c0195168", "Modifiez l'icône de votre application et les options de navigation"),
                 n("b6b5dc94", "Obtenez la certification"),
                 n("b06db848", "Démarquez‑vous des autres sur la plateforme"),
-                n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts"),
-                n("f15bc24e", "Limites Grok repoussées");
-            n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
+                n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts");
+            n("f15bc24e", "Limites Grok repoussées"),
+                n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
                 n("he74ae7a", "Limites d'utilisation les plus élevées pour Grok"),
                 n("f5732cd4", "Plus un accès élargi aux modes DeepSearch et Réflexion"),
                 n("e0198956", "Recevez une part des revenus générés par l'engagement de comptes certifiés avec les contenus que vous postez sur X."),
@@ -7210,6 +7211,36 @@
                 n("hd80bd3e", "Sponsoriser un post"),
                 n("fe2b0008", "Découvrir comment utiliser X"),
                 n("h257d4aa", "Choisir un post à sponsoriser"),
+                n("fe946974", "Your trial of X without ads"),
+                n("f6c50ec0", "Your ad-free trial has ended"),
+                n("b1319404", "Ads avoided"),
+                n("baa4acae", "You’re seeing more personalized content."),
+                n("c00e8600", "Estimated time saved"),
+                n("ic073e4e", "Your time is valuable."),
+                n("eb866e88", "Estimated 1-year time savings"),
+                n("aa77b70c", "Based on your usage."),
+                n("c534c6b4", "We’re crunching the numbers..."),
+                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("cc10f019", function (e) {
+                    return e.minutes + " minute" + o(e.minutes, "", "s");
+                }),
+                n("f9b6b7d3", function (e) {
+                    return e.hours + " hour" + o(e.hours, "", "s");
+                }),
+                n("a9af8753", function (e) {
+                    return e.days + " day" + o(e.days, "", "s") + ", " + e.hours + " hour" + o(e.hours, "", "s");
+                }),
+                n("b93d00e5", function (e) {
+                    return e.days + " day" + o(e.days, "", "s");
+                }),
+                n("be88be23", function (e) {
+                    return "Votre essai sans publicités de " + e.durationInDays + " jours est activé.";
+                }),
+                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                n("ae3f3b0e", "Enjoy!"),
+                n("cdac8dc4", "See your new feed"),
+                n("dec99336", "Ad-free"),
+                n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Repérez les tendances avant tout le monde grâce à Radar"),
                 n("fb70427a", "Nous lançons l'outil de recherche le plus puissant sur X."),
                 n("i54bf620", "Suivez des mots‑clés"),
@@ -7842,36 +7873,7 @@
                 n("j26dee0e", "Supprimer l'affilié"),
                 n("e30cbdf0", "Cet affilié est abonné au service Organisations certifiées et doit rester une organisation. Il n'est pas possible d'indiquer qu'il s'agit maintenant d'une personne."),
                 n("j3115ce8", "Personne"),
-                n("d8bb1d84", "Organisation"),
-                n("e970bdbd", function (e) {
-                    return e.count + " invitations restantes";
-                }),
-                n("id67d953", function (e) {
-                    return "Un erreur s'est produite lors de la récupération de vos détails de paiement Stripe. Veuillez envoyer un message à l'adresse " + e.supportEmail + " si ce problème persiste.";
-                }),
-                n("f323d314", "Renvoyer"),
-                n("ac645cde", "Vous pouvez toujours les ajouter à nouveau."),
-                n("d12af2dd", function (e) {
-                    return "Vous voulez supprimer cette invitation à @" + e.screenName + " ?";
-                }),
-                n("ib60b2d5", function (e) {
-                    return "Vous voulez renvoyer cette invitation à @" + e.screenName + " ?";
-                }),
-                n("ec6e7d9a", "Votre compte est en mode lecture seule jusqu'à ce que votre changement d'abonnement soit effectif. Veuillez accéder à Stripe pour vérifier votre paiement afin de garantir la prise en compte de votre nouvel abonnement."),
-                n("b33d1518", "Synchroniser les offres d'emploi depuis une intégration prise en charge ou un flux XML personnalisé"),
-                n("dd2db402", "Étape 1 : rassembler les informations requises"),
-                n("edb098c2", "Étape 2 : contactez notre équipe d'assistance"),
-                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance"),
-                n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
-                n("c127374e", "Nous envoyer un message"),
-                n("b2cb2a0c", "Nom d'utilisateur de votre compte Organisations certifiées"),
-                n("b8e64002", "Nom de votre système de suivi des candidatures"),
-                n("acb99db6", "URL du site de carrières où vos emplois sont répertoriés"),
-                n("a64a5b7a", "Envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
-                n("e3dffb4e", "Copiez l'adresse email de notre service d'assistance ci-dessous et envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
-                n("b4fef99e", "Après réception de votre demande par notre équipe d'assistance, nous examinerons vos informations et vous aiderons à configurer votre intégration."),
-                n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
-                n("ce102a20", "Redirection vers Stripe");
+                n("d8bb1d84", "Organisation");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7910,7 +7912,36 @@
                     i(e, t)
                 );
             }
-            n("ddfd6718", "Échec du paiement"),
+            n("e970bdbd", function (e) {
+                return e.count + " invitations restantes";
+            }),
+                n("id67d953", function (e) {
+                    return "Un erreur s'est produite lors de la récupération de vos détails de paiement Stripe. Veuillez envoyer un message à l'adresse " + e.supportEmail + " si ce problème persiste.";
+                }),
+                n("f323d314", "Renvoyer"),
+                n("ac645cde", "Vous pouvez toujours les ajouter à nouveau."),
+                n("d12af2dd", function (e) {
+                    return "Vous voulez supprimer cette invitation à @" + e.screenName + " ?";
+                }),
+                n("ib60b2d5", function (e) {
+                    return "Vous voulez renvoyer cette invitation à @" + e.screenName + " ?";
+                }),
+                n("ec6e7d9a", "Votre compte est en mode lecture seule jusqu'à ce que votre changement d'abonnement soit effectif. Veuillez accéder à Stripe pour vérifier votre paiement afin de garantir la prise en compte de votre nouvel abonnement."),
+                n("b33d1518", "Synchroniser les offres d'emploi depuis une intégration prise en charge ou un flux XML personnalisé"),
+                n("dd2db402", "Étape 1 : rassembler les informations requises"),
+                n("edb098c2", "Étape 2 : contactez notre équipe d'assistance"),
+                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance"),
+                n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
+                n("c127374e", "Nous envoyer un message"),
+                n("b2cb2a0c", "Nom d'utilisateur de votre compte Organisations certifiées"),
+                n("b8e64002", "Nom de votre système de suivi des candidatures"),
+                n("acb99db6", "URL du site de carrières où vos emplois sont répertoriés"),
+                n("a64a5b7a", "Envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
+                n("e3dffb4e", "Copiez l'adresse email de notre service d'assistance ci-dessous et envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
+                n("b4fef99e", "Après réception de votre demande par notre équipe d'assistance, nous examinerons vos informations et vous aiderons à configurer votre intégration."),
+                n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
+                n("ce102a20", "Redirection vers Stripe"),
+                n("ddfd6718", "Échec du paiement"),
                 n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
                 n("a62359e6", "Paramètres d'organisation certifiée"),
                 n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
@@ -8888,8 +8919,8 @@
                 n("c1658fc6", "Le média n'a pas pu être lu."),
                 n("h519ae04", "Le média a été désactivé suite à une revendication des droits d'auteur."),
                 n("ce871584", "Cette diffusion est terminée."),
-                n("c101eb96", "Cette diffusion n'est pas disponible."),
-                n("gb24a514", "Ce média a été désactivé suite à un signalement du détenteur des droits d'auteur."),
+                n("c101eb96", "Cette diffusion n'est pas disponible.");
+            n("gb24a514", "Ce média a été désactivé suite à un signalement du détenteur des droits d'auteur."),
                 n("hcaf3e63", function (e) {
                     return "Ce média a été désactivé suite à la revendication des droits d'auteur par " + e.holder + ".";
                 }),
@@ -8913,10 +8944,10 @@
                 n("ecda5f9e", "Trompeur"),
                 n("a423473c", "Avis requis par la loi"),
                 n("b3296688", "Visibilité limitée"),
-                n("ccd32094", "Maintenant");
-            n("abfcce0d", function (e) {
-                return "Il y a " + e.amountOfTime;
-            }),
+                n("ccd32094", "Maintenant"),
+                n("abfcce0d", function (e) {
+                    return "Il y a " + e.amountOfTime;
+                }),
                 n("ae408b76", "Vous avez reposté"),
                 n("j355f008", "Post épinglé"),
                 n("habf9678", "Épinglé par l'auteur"),
@@ -12906,7 +12937,7 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(s(332920)._ActualI18NFormatMessage || u.Component);
+            })(s(111677)._ActualI18NFormatMessage || u.Component);
             n("_ActualI18NFormatMessage", p),
                 n("I18NFormatMessage", function (e) {
                     return u.createElement(p, e);
@@ -13261,4 +13292,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.7e4c9f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1e627d9a.js.map

@@ -3,7 +3,7 @@
     ["node_modules_x-clients_features_messages_ga_json"],
     {
         120178: (e) => {
-            e.exports = JSON.parse('{"None":"Dada","People":"Daoine","Conversation info":"Faisnéis an chomhrá","Edit":"Cuir in eagar","Add people":"Cuir daoine leis","Retry":"Bain triail as arís","Group info":"Faisnéis an ghrúpa","Something went wrong.":"Tharla earráid éigin.","Something went wrong. Try reloading.":"Tharla earráid. Déan iarracht athlódáil a dhéanamh."}');
+            e.exports = JSON.parse('{"On":"Ar siúl","Dismiss":"Ruaig","None":"Dada","Message":"Teachtaireacht","Off":"Múchta","Members":"Baill","Edit":"Cuir in eagar","Retry":"Bain triail as arís","Something went wrong.":"Tharla earráid éigin.","Add members":"Cuir baill leis","Something went wrong. Try reloading.":"Tharla earráid. Déan iarracht athlódáil a dhéanamh."}');
         },
     },
 ]);

@@ -8,7 +8,7 @@
                 a = r(466999),
                 n = r(325686),
                 l = r(392237),
-                s = r(332920);
+                s = r(111677);
             const i = r.n(s)().e5b0063d;
             let c = 0;
             class d extends o.Component {
@@ -71,7 +71,7 @@
                 a = r(325686),
                 n = r(731708),
                 l = r(392237),
-                s = r(332920),
+                s = r(111677),
                 i = r.n(s),
                 c = r(171482);
             const d = ({ datetime: e, statusLabel: t }) => o.createElement(a.Z, { style: u.root }, o.createElement(a.Z, { style: u.statusLabel }, o.createElement(c.b, { statusLabel: t })), o.createElement(n.ZP, { size: "body", style: u.date }, ((e) => (0, i().da44942d)(new Date(e)))(e))),
@@ -134,6 +134,18 @@
                     return (0, n.HD)(t) ? e.children || null : o.createElement(E, e);
                 };
         },
+        334346: (e, t, r) => {
+            r.d(t, { C: () => i, Z: () => s });
+            var o = r(807896),
+                a = r(202784),
+                n = r(524084),
+                l = r(768572);
+            const s = "stable_sort_index",
+                i = a.forwardRef((e, t) => {
+                    const r = e.cacheKey;
+                    return a.createElement(l.ZP, { identifier: r }, a.createElement(n.Z, (0, o.Z)({ ref: t }, e)));
+                });
+        },
         507651: (e, t, r) => {
             r.d(t, { Z: () => c });
             var o = r(807896),
@@ -146,6 +158,13 @@
                     return a.createElement(l.Z, (0, o.Z)({}, e, { isCompact: (0, s.HD)(t) }));
                 },
                 c = a.memo(i);
+        },
+        524084: (e, t, r) => {
+            r.d(t, { Z: () => l });
+            var o = r(202784),
+                a = r(523561),
+                n = r(195560);
+            const l = (0, a.Z)({ loader: () => r.e("loader.AbsolutePower").then(r.bind(r, 590136)), renderPlaceholder: (e, t) => o.createElement(n.Z, { hasError: e, onRetry: t }) });
         },
         127218: (e, t, r) => {
             r.d(t, { C: () => y });
@@ -218,7 +237,7 @@
                 s = r(537392),
                 i = r(731708),
                 c = r(392237),
-                d = r(332920),
+                d = r(111677),
                 u = r.n(d),
                 p = r(450681),
                 m = r(187669),
@@ -289,8 +308,8 @@
                 j = u().e3647d08,
                 $ = { link: a.createElement(i.ZP, { link: (0, O.ju)("https://help.x.com/rules-and-policies/twitter-law-enforcement-support") }) },
                 G = { link: a.createElement(i.ZP, { link: "https://findahelpline.com/i/iasp" }) },
-                U = u().h7fa9240,
-                K = u().fb2ff552,
+                K = u().h7fa9240,
+                U = u().fb2ff552,
                 X = u().bb57e8c0,
                 Y = u().b9ce59ba,
                 J = ({ actionedReportType: e }) => {
@@ -300,7 +319,7 @@
                     ];
                     switch (e) {
                         case "EncouragingSelfHarm":
-                            return a.createElement(a.Fragment, null, a.createElement(i.ZP, { color: M }, "\n", a.createElement("strong", null, U, " "), " ", K, "\n\n", a.createElement("strong", null, X, " "), a.createElement(i.ZP, { style: Q.selfHarmLabel }, a.createElement(u().I18NFormatMessage, { $i18n: "ef72b01b" }, a.cloneElement(G.link, null, u().d42899ad))), "\n\n", Y));
+                            return a.createElement(a.Fragment, null, a.createElement(i.ZP, { color: M }, "\n", a.createElement("strong", null, K, " "), " ", U, "\n\n", a.createElement("strong", null, X, " "), a.createElement(i.ZP, { style: Q.selfHarmLabel }, a.createElement(u().I18NFormatMessage, { $i18n: "ef72b01b" }, a.cloneElement(G.link, null, u().d42899ad))), "\n\n", Y));
                         case "NonConsensualNudity":
                         case "PrivateInfo":
                             return a.createElement(a.Fragment, null, a.createElement(i.ZP, { role: "heading", size: "headline1", style: Q.headline, weight: "heavy" }, H), a.createElement(z.Z, { items: t }));
@@ -392,7 +411,7 @@
         655152: (e, t, r) => {
             r.r(t), r.d(t, { default: () => fe });
             var o = r(202784),
-                a = r(332920),
+                a = r(111677),
                 n = r.n(a),
                 l = r(744891),
                 s = (r(585488), r(457311)),
@@ -538,16 +557,16 @@
                 j = o.memo(V),
                 $ = (e) => e.id,
                 G = (e, t) => (m.Z.isNarrowScreenWidth(e) ? (e) => o.createElement(j, { payload: e }) : (e) => o.createElement(F, { activeReportId: t, payload: e })),
-                U = (e) => {
+                K = (e) => {
                     if (!m.Z.isNarrowScreenWidth(e)) return "tablist";
                 },
-                K = ({ cacheKey: e, handleFetchNext: t, hasNext: r, items: a, renderEmptyState: n }) => {
+                U = ({ cacheKey: e, handleFetchNext: t, hasNext: r, items: a, renderEmptyState: n }) => {
                     const { pathname: l } = (0, p.useLocation)(),
                         s = o.useMemo(() => {
                             const e = (0, p.matchPath)(l, { path: "/i/safety_center/reports/:reportId" });
                             return e?.params.reportId;
                         }, [l]);
-                    return a ? (0 !== a.length ? o.createElement(h.ZP, null, ({ screenWidth: r }) => o.createElement(b.Z, { cacheKey: e, identityFunction: $, items: a, noItemsRenderer: n, onNearEnd: t, renderer: G(r, s), role: U(r), withoutHeadroom: !0 })) : r ? (t(), null) : o.createElement(o.Fragment, null, n())) : null;
+                    return a ? (0 !== a.length ? o.createElement(h.ZP, null, ({ screenWidth: r }) => o.createElement(b.Z, { cacheKey: e, identityFunction: $, items: a, noItemsRenderer: n, onNearEnd: t, renderer: G(r, s), role: K(r), withoutHeadroom: !0 })) : r ? (t(), null) : o.createElement(o.Fragment, null, n())) : null;
                 },
                 X = l.Z,
                 Y = n().i07c24fa,
@@ -562,7 +581,7 @@
                     const n = e.viewer_v2?.user_results?.result;
                     if ("User" !== n?.__typename) return null;
                     const l = n?.open_reports?.items;
-                    return o.createElement(K, { cacheKey: "SlicesRelay_OpenReportItemTimeline_SafetyCenter", handleFetchNext: t, hasNext: r, items: l, renderEmptyState: Q });
+                    return o.createElement(U, { cacheKey: "SlicesRelay_OpenReportItemTimeline_SafetyCenter", handleFetchNext: t, hasNext: r, items: l, renderEmptyState: Q });
                 };
             function te() {
                 return o.createElement(c.H, { errorConfig: J }, o.createElement(ee, null));
@@ -580,7 +599,7 @@
                     const n = e.viewer_v2?.user_results?.result;
                     if ("User" !== n?.__typename) return null;
                     const l = n?.reviewed_reports?.items;
-                    return o.createElement(K, { cacheKey: "SlicesRelay_ResolvedReportItemTimeline_SafetyCenter", handleFetchNext: t, hasNext: r, items: l, renderEmptyState: ne });
+                    return o.createElement(U, { cacheKey: "SlicesRelay_ResolvedReportItemTimeline_SafetyCenter", handleFetchNext: t, hasNext: r, items: l, renderEmptyState: ne });
                 };
             function se() {
                 return o.createElement(c.H, { errorConfig: ae }, o.createElement(le, null));
@@ -645,4 +664,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-e019dbda.3951acca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-e019dbda.2626a91a.js.map

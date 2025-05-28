@@ -43,7 +43,7 @@
         166677: (e, t, i) => {
             i.d(t, { $r: () => Y, O9: () => K, ZP: () => q, vK: () => Q });
             var a = i(688715),
-                s = i(332920),
+                s = i(111677),
                 o = i.n(s),
                 r = i(653843),
                 n = i(122123),
@@ -383,4 +383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-9f4db315.f8305cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-9f4db315.69410a3a.js.map

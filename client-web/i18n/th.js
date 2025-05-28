@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, c, a) => {
-            var n = a(292426)._register("th", {
+        743834: (e, a, c) => {
+            var n = c(292426)._register("th", {
                 get emoji() {
-                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
+                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
                 },
             });
-            function t(e, c) {
-                return c;
+            function t(e, a) {
+                return a;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ไม่มี"),
@@ -224,6 +224,7 @@
                 n("f65e7e91", function (e) {
                     return "ส่วนลด " + e.percentage + "% " + e.tier + " " + e.plan;
                 }),
+                n("cbc38428", "ใช้งานแบบไม่มีโฆษณาด้วย Premium+"),
                 n("a84a736e", "รับเครดิตโฆษณาฟรี"),
                 n("a0713d76", "อัปเกรดเป็นองค์กรที่ได้รับการยืนยันเพื่อรับเครดิตโฆษณาฟรีและชุดเครื่องมือการเติบโตของธุรกิจ"),
                 n("a07e13fc", "มาเป็นผู้สร้าง Premium กันเถอะ"),
@@ -899,9 +900,9 @@
                 n("e8e39f95", "Learn more"),
                 n("e126dd3f", "Learn more"),
                 n("i821844f", "Learn more"),
-                n("b0abbb17", "Learn more"),
-                n("e7e0d88b", "Learn more");
-            n("i560665f", "Learn more"),
+                n("b0abbb17", "Learn more");
+            n("e7e0d88b", "Learn more"),
+                n("i560665f", "Learn more"),
                 n("f6e774d9", "Learn more"),
                 n("h486f755", "Learn more"),
                 n("bab41dab", "Learn more"),
@@ -1915,9 +1916,9 @@
                 n("a8fdd09c", "เผยแพร่บทความ"),
                 n("d8047cc8", "เผยแพร่"),
                 n("ff7ddca2", "บทความของคุณจะปรากฏเป็นโพสต์เมื่อคุณเผยแพร่ นอกจากนี้ ให้ค้นหาได้ภายใต้แท็บบทความในข้อมูลส่วนตัวของคุณ"),
-                n("ef34d7be", "การควบคุมผู้ชมและการตอบกลับจะไม่สามารถแก้ไขได้หลังจากที่บทความได้รับการเผยแพร่แล้ว"),
-                n("e52d4998", "เลือกกลุ่มเป้าหมายของคุณ");
-            n("d7985b24", "เลือกผู้ที่สามารถตอบกลับบทความนี้ได้"),
+                n("ef34d7be", "การควบคุมผู้ชมและการตอบกลับจะไม่สามารถแก้ไขได้หลังจากที่บทความได้รับการเผยแพร่แล้ว");
+            n("e52d4998", "เลือกกลุ่มเป้าหมายของคุณ"),
+                n("d7985b24", "เลือกผู้ที่สามารถตอบกลับบทความนี้ได้"),
                 n("b5660338", "ตัวอย่างลําดับเหตุการณ์"),
                 n("hff1b97a", "มีเพียงสมาชิกเท่านั้นที่สามารถตอบกลับได้"),
                 n("a330771e", "คัดลอกลิงก์ไปยังคลิปบอร์ดของคุณ"),
@@ -2899,12 +2900,6 @@
                 n("ada99498", "เครื่องหมายนี้จะแสดงต่อผู้อื่นที่อยู่ในภูมิภาคของคุณเท่านั้น"),
                 n("a765e936", "ลบประวัติแบบขยายของคุณ"),
                 n("d4d68e44", "บันทึกแล้ว"),
-                n("ie4f57d2", "ต่ออายุระบบสมาชิก Premium ของคุณ"),
-                n("h293aa52", "ระบบสมาชิก Premium ของคุณกำลังจะหมดอายุ!"),
-                n("j1923668", "รักษาสิ่งที่ดีที่สุดของ X"),
-                n("ac7e97ee", "ต่ออายุระบบสมาชิก"),
-                n("f70c69b4", "การบูสต์การตอบกลับ การแก้ไขโพสต์ การปรับแต่ง โพสต์ที่ยาวขึ้น และอื่นๆ อีกมากมาย"),
-                n("f4cec4d2", "เครื่องหมายถูกสีฟ้า การบูสต์การตอบกลับ การเพิ่มขีดจำกัด Grok และอื่นๆ อีกมากมาย"),
                 n("b6de83a0", "พื้นที่สนทนาสำหรับพนักงานเท่านั้น"),
                 n("g3f251f2", "การออกอากาศส่วนตัว"),
                 n("d08666ba", "พื้นที่สนทนาส่วนตัว"),
@@ -2972,20 +2967,17 @@
                 n("b7388a56", "ส่วนท้าย"),
                 n("hdabc3fc", "ข้อตกลงการให้บริการ"),
                 n("bc6efc72", "นโยบายความเป็นส่วนตัว"),
-                n("h3161192", "นโยบายคุกกี้");
-            n("a7de64de", "ข้อมูลโฆษณา"),
+                n("h3161192", "นโยบายคุกกี้"),
+                n("a7de64de", "ข้อมูลโฆษณา"),
                 n("jb0a4c36", "บล็อก"),
                 n("ce6d095a", "อาชีพ"),
                 n("e0adec82", "ทรัพยากรด้านแบรนด์"),
-                n("df1b7550", "การตลาด"),
-                n("he258678", "X สำหรับธุรกิจ"),
+                n("df1b7550", "การตลาด");
+            n("he258678", "X สำหรับธุรกิจ"),
                 n("c6f58084", "นักพัฒนา"),
                 n("d83f18d2", "ไดเรกทอรี"),
                 n("hc5aa17c", "รับแอพ X"),
                 n("j0693948", "รับแอพ Grok"),
-                n("fbf83158", "คำเตือน: การชำระเงินล้มเหลว"),
-                n("jadeb4da", "อัปเดตวิธีการชำระเงินของคุณโดยทันทีก่อนที่จะสูญเสียสิทธิประโยชน์ของระบบสมาชิก"),
-                n("bce3726a", "อัปเดตการเรียกเก็บเงิน"),
                 n("fce9ecce", "วิดีโอแนะนำ"),
                 n("j66b95a2", "ข่าวเจาะลึก"),
                 n("ad35153e", "เบต้า"),
@@ -3027,6 +3019,15 @@
                 }),
                 n("j7d0e836", "ขยาย"),
                 n("d227d19e", "ยุบ"),
+                n("fbf83158", "คำเตือน: การชำระเงินล้มเหลว"),
+                n("jadeb4da", "อัปเดตวิธีการชำระเงินของคุณโดยทันทีก่อนที่จะสูญเสียสิทธิประโยชน์ของระบบสมาชิก"),
+                n("bce3726a", "อัปเดตการเรียกเก็บเงิน"),
+                n("ie4f57d2", "ต่ออายุระบบสมาชิก Premium ของคุณ"),
+                n("h293aa52", "ระบบสมาชิก Premium ของคุณกำลังจะหมดอายุ!"),
+                n("j1923668", "รักษาสิ่งที่ดีที่สุดของ X"),
+                n("ac7e97ee", "ต่ออายุระบบสมาชิก"),
+                n("f70c69b4", "การบูสต์การตอบกลับ การแก้ไขโพสต์ การปรับแต่ง โพสต์ที่ยาวขึ้น และอื่นๆ อีกมากมาย"),
+                n("f4cec4d2", "เครื่องหมายถูกสีฟ้า การบูสต์การตอบกลับ การเพิ่มขีดจำกัด Grok และอื่นๆ อีกมากมาย"),
                 n("h367e724", "ประวัติแบบขยาย"),
                 n("ea5928d4", "คุณมีข้อมูลที่หลากหลาย ซึ่งสามารถเพิ่มลงในข้อมูลส่วนตัวของคุณได้ไม่จำกัด\nเพิ่มประวัติแบบขยายเพื่อบอกคนอื่นเกี่ยวกับตัวคุณมากขึ้น"),
                 n("h7ef9dc8", "ซึ่งอาจรวมถึง:"),
@@ -3883,13 +3884,13 @@
                 n("caa8d928", "เปิด/ปิดการลดเสียงรบกวน"),
                 n("b5d88f0c", "พนักงานเท่านั้น"),
                 n("c855ab8e", "เฉพาะสมาชิกเท่านั้น"),
-                n("ddeb0a3c", "ที่นี่คือชุมชน ชอบผู้คนไหม ลองดูสิ"),
-                n("e111f531", function (e) {
-                    return e.count + " รับฟัง";
-                });
-            n("cbef820f", function (e) {
-                return e.screenName + " รีโพสต์สตรีม!";
+                n("ddeb0a3c", "ที่นี่คือชุมชน ชอบผู้คนไหม ลองดูสิ");
+            n("e111f531", function (e) {
+                return e.count + " รับฟัง";
             }),
+                n("cbef820f", function (e) {
+                    return e.screenName + " รีโพสต์สตรีม!";
+                }),
                 n("e3275464", "ส่ง"),
                 n("cededf2a", "โฮสต์"),
                 n("i2caef48", "โฮสต์ร่วม"),
@@ -4923,9 +4924,9 @@
                 n("d9f9dec0", "ดูพื้นที่สนทนา"),
                 n("h0c1f37a", "ดูการวิเคราะห์พื้นที่สนทนา"),
                 n("e41fffbc", "เวลาที่รับชมวิดีโอของคุณทั้งหมด"),
-                n("if2909ba", "เวลาที่รับชม"),
-                n("i0e5bf4c", "วิดีโอของคุณ");
-            n("ed99baea", "เข้าถึงเบต้าได้ก่อนใคร"),
+                n("if2909ba", "เวลาที่รับชม");
+            n("i0e5bf4c", "วิดีโอของคุณ"),
+                n("ed99baea", "เข้าถึงเบต้าได้ก่อนใคร"),
                 n("gf898b70", "การค้นหาขั้นสูง"),
                 n("d2a43a7a", 'มีทั้ง "ai" และ "startup"'),
                 n("a8584698", "ai startup"),
@@ -5889,9 +5890,9 @@
                     return "สิ้นสุดเมื่อ " + e.timestamp;
                 }),
                 n("daca8a2c", "เปิดในด็อค"),
-                n("e3aac82a", "กำลังโหลดการออกอากาศ"),
-                n("i0ed3f4e", "รูปภาพเหตุการณ์");
-            n("cbae35fa", "รายงานการออกอากาศ"),
+                n("e3aac82a", "กำลังโหลดการออกอากาศ");
+            n("i0ed3f4e", "รูปภาพเหตุการณ์"),
+                n("cbae35fa", "รายงานการออกอากาศ"),
                 n("fd12ab58", "โพสต์คอลเลคชั่น"),
                 n("a226497c", "สร้างชุมชนใหม่"),
                 n("d7346632", "คุณยังไม่ได้เข้าร่วมชุมชนใดๆ"),
@@ -6887,9 +6888,9 @@
                 n("c0195168", "เปลี่ยนไอคอนแอปและตัวเลือกการนำทางของคุณ"),
                 n("b6b5dc94", "ยืนยันบัญชีของคุณ"),
                 n("b06db848", "โดดเด่นกว่าคนอื่นบนแพลตฟอร์ม"),
-                n("e3e3a97c", "รับส่วนแบ่งรายได้จากโพสต์ของคุณ"),
-                n("f15bc24e", "เพิ่มขีดจำกัด Grok");
-            n("c4666e1c", "ใช้งาน Grok 3 โมเดลรุ่นล่าสุดของเราได้มากขึ้น"),
+                n("e3e3a97c", "รับส่วนแบ่งรายได้จากโพสต์ของคุณ");
+            n("f15bc24e", "เพิ่มขีดจำกัด Grok"),
+                n("c4666e1c", "ใช้งาน Grok 3 โมเดลรุ่นล่าสุดของเราได้มากขึ้น"),
                 n("he74ae7a", "ขีดจำกัดการใช้งาน Grok สูงสุด"),
                 n("f5732cd4", "นอกจากนี้ยังเพิ่มการเข้าถึง DeepSearch และการคิด"),
                 n("e0198956", "รับส่วนแบ่งรายได้ที่เกิดจากการมีส่วนร่วมของบัญชีที่ได้รับการยืนยันกับเนื้อหาที่คุณโพสต์บน X"),
@@ -7205,6 +7206,36 @@
                 n("hd80bd3e", "ประชาสัมพันธ์โพสต์"),
                 n("fe2b0008", "เรียนรู้วิธีการใช้ X"),
                 n("h257d4aa", "เลือกโพสต์เพื่อประชาสัมพันธ์"),
+                n("fe946974", "Your trial of X without ads"),
+                n("f6c50ec0", "Your ad-free trial has ended"),
+                n("b1319404", "Ads avoided"),
+                n("baa4acae", "You’re seeing more personalized content."),
+                n("c00e8600", "Estimated time saved"),
+                n("ic073e4e", "Your time is valuable."),
+                n("eb866e88", "Estimated 1-year time savings"),
+                n("aa77b70c", "Based on your usage."),
+                n("c534c6b4", "We’re crunching the numbers..."),
+                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("cc10f019", function (e) {
+                    return e.minutes + " นาที";
+                }),
+                n("f9b6b7d3", function (e) {
+                    return e.hours + " ชั่วโมง";
+                }),
+                n("a9af8753", function (e) {
+                    return e.days + " วัน, " + e.hours + " ชั่วโมง";
+                }),
+                n("b93d00e5", function (e) {
+                    return e.days + " วัน";
+                }),
+                n("be88be23", function (e) {
+                    return "ช่วงทดลองใช้งานฟรี " + e.durationInDays + " วันแบบไม่มีโฆษณาของคุณถูกเปิดใช้งานแล้ว";
+                }),
+                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                n("ae3f3b0e", "Enjoy!"),
+                n("cdac8dc4", "See your new feed"),
+                n("dec99336", "Ad-free"),
+                n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "ค้นพบความนิยมเป็นคนแรกด้วย Radar"),
                 n("fb70427a", "ขอแนะนำเครื่องมือค้นหาที่ทรงพลังที่สุดบน X"),
                 n("i54bf620", "ตรวจสอบคําสำคัญ"),
@@ -7837,10 +7868,48 @@
                 n("j26dee0e", "ลบพันธมิตร"),
                 n("e30cbdf0", "พันธมิตรนี้เป็นสมาชิกองค์กรที่ได้รับการยืนยันและจะต้องยังคงเป็นองค์กร ไม่สามารถเปลี่ยนเป็นบุคคลได้"),
                 n("j3115ce8", "บุคคล"),
-                n("d8bb1d84", "องค์กร"),
-                n("e970bdbd", function (e) {
-                    return "เหลืออีก " + e.count + " คำเชิญ";
-                }),
+                n("d8bb1d84", "องค์กร");
+            function f(e, a) {
+                for (var c = 0; c < a.length; c++) {
+                    var n = a[c];
+                    (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(
+                            e,
+                            ((t = n.key),
+                            (f = void 0),
+                            "symbol" ==
+                            typeof (f = (function (e, a) {
+                                if ("object" != typeof e || null === e) return e;
+                                var c = e[Symbol.toPrimitive];
+                                if (void 0 !== c) {
+                                    var n = c.call(e, a || "default");
+                                    if ("object" != typeof n) return n;
+                                    throw new TypeError("@@toPrimitive must return a primitive value.");
+                                }
+                                return ("string" === a ? String : Number)(e);
+                            })(t, "string"))
+                                ? f
+                                : String(f)),
+                            n,
+                        );
+                }
+                var t, f;
+            }
+            function r(e, a) {
+                return (
+                    (r = Object.setPrototypeOf
+                        ? Object.setPrototypeOf.bind()
+                        : function (e, a) {
+                              return (e.__proto__ = a), e;
+                          }),
+                    r(e, a)
+                );
+            }
+            n("e970bdbd", function (e) {
+                return "เหลืออีก " + e.count + " คำเชิญ";
+            }),
                 n("id67d953", function (e) {
                     return "เกิดข้อผิดพลาดขณะเรียกดูรายละเอียดการชำระเงิน Stripe ของคุณ โปรดติดต่อ " + e.supportEmail + " หากปัญหานี้ยังคงอยู่";
                 }),
@@ -7866,46 +7935,8 @@
                 n("e3dffb4e", "คัดลอกที่อยู่อีเมลสนับสนุนของเราด้านล่างและส่งข้อมูลที่จำเป็นไปยังทีมสนับสนุนเพื่อเริ่มต้นกระบวนการผสานรวม"),
                 n("b4fef99e", "หลังจากที่ทีมสนับสนุนของเราได้รับคำขอของคุณ เราจะตรวจสอบข้อมูลของคุณและจะช่วยในการกำหนดค่าการผสานรวม"),
                 n("h37f2d96", "โปรดทราบว่าขณะนี้มีการรองรับระบบติดตามผู้สมัครบางรายการเท่านั้น"),
-                n("ce102a20", "กำลังเปลี่ยนเส้นทางไปยัง Stripe");
-            function f(e, c) {
-                for (var a = 0; a < c.length; a++) {
-                    var n = c[a];
-                    (n.enumerable = n.enumerable || !1),
-                        (n.configurable = !0),
-                        "value" in n && (n.writable = !0),
-                        Object.defineProperty(
-                            e,
-                            ((t = n.key),
-                            (f = void 0),
-                            "symbol" ==
-                            typeof (f = (function (e, c) {
-                                if ("object" != typeof e || null === e) return e;
-                                var a = e[Symbol.toPrimitive];
-                                if (void 0 !== a) {
-                                    var n = a.call(e, c || "default");
-                                    if ("object" != typeof n) return n;
-                                    throw new TypeError("@@toPrimitive must return a primitive value.");
-                                }
-                                return ("string" === c ? String : Number)(e);
-                            })(t, "string"))
-                                ? f
-                                : String(f)),
-                            n,
-                        );
-                }
-                var t, f;
-            }
-            function r(e, c) {
-                return (
-                    (r = Object.setPrototypeOf
-                        ? Object.setPrototypeOf.bind()
-                        : function (e, c) {
-                              return (e.__proto__ = c), e;
-                          }),
-                    r(e, c)
-                );
-            }
-            n("ddfd6718", "การชำระเงินล้มเหลว"),
+                n("ce102a20", "กำลังเปลี่ยนเส้นทางไปยัง Stripe"),
+                n("ddfd6718", "การชำระเงินล้มเหลว"),
                 n("i90ea7d2", "โปรดอัปเดตการเรียกเก็บเงินของคุณโดยทันทีเพื่อรักษาสิทธิประโยชน์ของคุณ"),
                 n("a62359e6", "การตั้งค่าองค์กรที่ได้รับการยืนยัน"),
                 n("ge221b7c", "อัปเกรดระบบสมาชิกองค์กรที่ได้รับการยืนยันเพื่อเข้าถึงพันธมิตรและเครดิตโฆษณาเพิ่มเติม"),
@@ -8883,8 +8914,8 @@
                 n("c1658fc6", "ไม่สามารถเล่นสื่อนี้ได้"),
                 n("h519ae04", "สื่อนี้ถูกปิดใช้งานเนื่องจากมีการอ้างสิทธิ์ของลิขสิทธิ์"),
                 n("ce871584", "การออกอากาศนี้สิ้นสุดแล้ว"),
-                n("c101eb96", "การออกอากาศนี้ไม่สามารถใช้งานได้"),
-                n("gb24a514", "สื่อนี้ถูกปิดการใช้งานตามที่มีการรายงานโดยเจ้าของลิขสิทธิ์"),
+                n("c101eb96", "การออกอากาศนี้ไม่สามารถใช้งานได้");
+            n("gb24a514", "สื่อนี้ถูกปิดการใช้งานตามที่มีการรายงานโดยเจ้าของลิขสิทธิ์"),
                 n("hcaf3e63", function (e) {
                     return "สื่อนี้ถูกปิดใช้งานเนื่องจากมีการเรียกร้องลิขสิทธิ์จาก " + e.holder;
                 }),
@@ -8908,10 +8939,10 @@
                 n("ecda5f9e", "การทำให้เข้าใจผิด"),
                 n("a423473c", "ประกาศที่จำเป็นตามกฎหมาย"),
                 n("b3296688", "การมองเห็นถูกจำกัด"),
-                n("ccd32094", "ขณะนี้");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + " ที่แล้ว";
-            }),
+                n("ccd32094", "ขณะนี้"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + " ที่แล้ว";
+                }),
                 n("ae408b76", "คุณรีโพสต์แล้ว"),
                 n("j355f008", "โพสต์ที่ปักหมุด"),
                 n("habf9678", "ปักหมุดโดยผู้เขียน"),
@@ -9456,22 +9487,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var d = a(202784),
+            var d = c(202784),
                 b = [],
                 u = {};
             function i(e) {
                 return e;
             }
             var o = (function (e) {
-                var c, a, n, t, o;
+                var a, c, n, t, o;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (a = e),
-                    ((c = m).prototype = Object.create(a.prototype)),
-                    (c.prototype.constructor = c),
-                    r(c, a),
+                    (c = e),
+                    ((a = m).prototype = Object.create(c.prototype)),
+                    (a.prototype.constructor = a),
+                    r(a, c),
                     (m.prototype.render = function () {
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
@@ -12889,10 +12920,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    c = d.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), b[u[e]] || i);
+                                    a = d.Children.toArray(this.props.children),
+                                    c = ((e = this.props.$i18n), b[u[e]] || i);
                                 return function (e, n, t) {
-                                    return e.concat(n, c[a(t)]);
+                                    return e.concat(n, a[c(t)]);
                                 };
                             },
                         },
@@ -12901,13 +12932,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(a(332920)._ActualI18NFormatMessage || d.Component);
+            })(c(111677)._ActualI18NFormatMessage || d.Component);
             n("_ActualI18NFormatMessage", o),
                 n("I18NFormatMessage", function (e) {
                     return d.createElement(o, e);
                 });
-            var m = a(495075);
-            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
+            var m = c(495075);
+            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
             m._validateParameterTypeNumber, m._validateParameterPresence;
             var g = m._numberRound,
                 h = (m._numberFormat, m._numberFormatterFn),
@@ -13256,4 +13287,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.0efa34ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.2794be8a.js.map

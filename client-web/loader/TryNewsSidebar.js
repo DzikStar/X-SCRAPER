@@ -9,7 +9,7 @@
                 s = n(731708),
                 r = n(30183),
                 i = n(392237),
-                o = n(332920),
+                o = n(111677),
                 c = n.n(o),
                 d = n(306677),
                 u = n(725405),
@@ -19,7 +19,7 @@
                 y = n(125363),
                 h = n(836255),
                 f = n(448301),
-                k = n(669636),
+                k = n(695356),
                 b = n(287627);
             function _({ article: e, onClick: t, style: n }) {
                 const r = (0, u.Z)(),
@@ -145,7 +145,7 @@
                 l = n(325686),
                 s = n(525271),
                 r = n(392237),
-                i = n(332920),
+                i = n(111677),
                 o = n.n(i),
                 c = n(400196),
                 d = n(306677),
@@ -376,7 +376,7 @@
             }
             n.d(t, { ZW: () => s, pi: () => a, uf: () => l });
         },
-        669636: (e, t, n) => {
+        695356: (e, t, n) => {
             function a(e, t) {
                 c(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
             }
@@ -452,7 +452,7 @@
             n.d(t, { Z: () => C });
             var a = n(202784),
                 l = n(325686),
-                s = n(332920),
+                s = n(111677),
                 r = n.n(s),
                 i = n(837020),
                 o = n(461756),
@@ -531,4 +531,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.e6f532ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.26df1c9a.js.map

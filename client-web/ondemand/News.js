@@ -14,7 +14,7 @@
                 m = (a(136728), a(107267)),
                 d = a(154003),
                 u = a(731708),
-                p = a(332920),
+                p = a(111677),
                 g = a.n(p),
                 h = a(894966),
                 y = a(837020),
@@ -235,7 +235,7 @@
                 p = a(221972),
                 g = a(507504),
                 h = a(246728),
-                y = a(669636),
+                y = a(695356),
                 f = a(118368),
                 w = a(555874),
                 _ = a(858440);
@@ -565,7 +565,7 @@
                 c = a(125363),
                 m = a(836255),
                 d = a(246728),
-                u = a(669636),
+                u = a(695356),
                 p = a(790167),
                 g = a(287627),
                 h = a(992942);
@@ -725,4 +725,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.f250570a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.6ddb84da.js.map

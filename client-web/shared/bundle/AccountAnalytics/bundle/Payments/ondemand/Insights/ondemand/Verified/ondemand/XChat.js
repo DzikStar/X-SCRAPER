@@ -2,6 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"],
     {
+        252021: (e, n, r) => {
+            r.d(n, { Z: () => o });
+            var t = r(202784),
+                i = r(107267),
+                a = r(115553);
+            const o = (e) => {
+                (0, i.useHistory)();
+                return t.createElement(a.A, e);
+            };
+        },
         588386: (e, n, r) => {
             var t = r(982317),
                 i = r(437429),
@@ -446,8 +456,8 @@
                               C = a(),
                               D = C.isFetchingRef,
                               N = C.startFetch,
-                              w = C.disposeFetch,
-                              A = C.completeFetch,
+                              A = C.disposeFetch,
+                              w = C.completeFetch,
                               x = b(r, _).identifierInfo,
                               M = null != (null == x ? void 0 : x.identifierField) && null != g && "object" == typeof g ? g[x.identifierField] : null,
                               O = o(),
@@ -458,7 +468,7 @@
                               j = T[0],
                               L = T[1],
                               G = l(r, u);
-                          (S === q && s === j) || (w(), I(), V(S), L(s));
+                          (S === q && s === j) || (A(), I(), V(S), L(s));
                           var U = i(n, r, g, h),
                               B = U.cursor,
                               Y = U.hasMore;
@@ -466,10 +476,10 @@
                               v(
                                   function () {
                                       return function () {
-                                          w();
+                                          A();
                                       };
                                   },
-                                  [w],
+                                  [A],
                               ),
                               [
                                   d(
@@ -496,21 +506,21 @@
                                                               N(e), F.start && F.start(e);
                                                           },
                                                           complete: function () {
-                                                              A(), F.complete && F.complete(), a && a(null);
+                                                              w(), F.complete && F.complete(), a && a(null);
                                                           },
                                                           error: function (e) {
-                                                              A(), F.error && F.error(e), a && a(e);
+                                                              w(), F.error && F.error(e), a && a(e);
                                                           },
                                                       },
                                                   ),
                                               ),
-                                              { dispose: w }
+                                              { dispose: A }
                                           );
                                       },
-                                      [S, M, n, B, N, w, A, D, G, g, r.name, u, _],
+                                      [S, M, n, B, N, A, w, D, G, g, r.name, u, _],
                                   ),
                                   Y,
-                                  w,
+                                  A,
                               ]
                           );
                       })(e);
@@ -551,8 +561,8 @@
                     C = null != (null == S ? void 0 : S.identifierField) && null != P && "object" == typeof P ? P[S.identifierField] : null,
                     D = s({ kind: "none" }),
                     N = d(I),
-                    w = N[0],
-                    A = N[1],
+                    A = N[0],
+                    w = N[1],
                     x = d(v),
                     M = x[0],
                     O = x[1],
@@ -560,7 +570,7 @@
                     q = c(function () {
                         "fetching" === D.current.kind && D.current.subscription.unsubscribe(), (D.current = { kind: "none" });
                     }, []);
-                (I !== w || v !== M) && (q(), F(), A(I), O(v));
+                (I !== A || v !== M) && (q(), F(), w(I), O(v));
                 var V = i(n, r, P, b),
                     T = V.cursor,
                     j = V.hasMore,
@@ -754,8 +764,8 @@
                     C = g(k, { fetchPolicy: void 0, mirroredEnvironment: d, mirroredFragmentIdentifier: S, onComplete: void 0, refetchEnvironment: null, refetchQuery: null, renderPolicy: void 0 }),
                     D = C[0],
                     N = C[1],
-                    w = D.fetchPolicy,
-                    A = D.mirroredEnvironment,
+                    A = D.fetchPolicy,
+                    w = D.mirroredEnvironment,
                     x = D.mirroredFragmentIdentifier,
                     M = D.onComplete,
                     O = D.refetchEnvironment,
@@ -764,7 +774,7 @@
                     V = null != O ? O : d,
                     T = a(V),
                     j = p(i),
-                    L = V !== A || S !== x,
+                    L = V !== w || S !== x,
                     G = f(_),
                     U = G[0],
                     B = G[1],
@@ -781,7 +791,7 @@
                             return T.prepare(
                                 Q,
                                 X,
-                                w,
+                                A,
                                 q,
                                 {
                                     error: W,
@@ -793,11 +803,11 @@
                                 j,
                             );
                         }),
-                        z = o(V, K.fragmentNode, K.fragmentRef, r).data;
-                    null == z && s(!1), (H = E(z, F));
+                        Z = o(V, K.fragmentNode, K.fragmentRef, r).data;
+                    null == Z && s(!1), (H = E(Z, F));
                 }
-                var J = l(e, H, r),
-                    Z = (function (e, n, r, i, a, o, l, f, c, s, d) {
+                var z = l(e, H, r),
+                    J = (function (e, n, r, i, a, o, l, f, c, s, d) {
                         var p = u(),
                             g = null != (null == f ? void 0 : f.identifierField) && null != i && "object" == typeof i ? i[f.identifierField] : null;
                         return v(
@@ -822,8 +832,8 @@
                             },
                             [a, n, r, g, c],
                         );
-                    })(0, N, Y, J, S, e, 0, I, B, n, _);
-                return { fragmentData: J, fragmentRef: H, refetch: Z };
+                    })(0, N, Y, z, S, e, 0, I, B, n, _);
+                return { fragmentData: z, fragmentRef: H, refetch: J };
             };
         },
         353391: (e, n, r) => {
@@ -875,4 +885,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat.6782d40a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat.6a495d9a.js.map

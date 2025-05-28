@@ -88,7 +88,7 @@
                 r = t(688715),
                 l = t(731708),
                 i = t(392237),
-                o = t(332920),
+                o = t(111677),
                 s = t.n(o);
             const c = (0, r.ju)("https://legal.x.com/purchaser-terms"),
                 d = s().bc42db1c,
@@ -193,7 +193,7 @@
         },
         97882: (e, a, t) => {
             t.d(a, { T: () => l, x: () => i });
-            var n = t(332920),
+            var n = t(111677),
                 r = t.n(n);
             const l = { AED: r().d857e44d, ALL: r().cb87e3db, ARS: r().a9d5ffd1, AUD: r().a0e8371d, BAM: r().gcc50dc9, BDT: r().a6a43585, BGN: r().a0cc8f2d, BHD: r().i31c32c5, BRL: r().i7dc69e9, BYR: r().c14a6c03, CAD: r().jaa3d537, CHF: r().a824080b, CLP: r().d9c0bedb, CNY: r().bf8c0613, COP: r().i8163625, CZK: r().adb53ba1, DKK: r().iabf697d, DZD: r().a1a0555b, EGP: r().f266f3d9, EUR: r().a9a8652b, GBP: r().dbf40761, GHS: r().b0d993d9, GTQ: r().ac1308e1, HKD: r().a7889ab3, HRK: r().c614f5cd, HUF: r().i55d57e3, IDR: r().e4b6002b, ILS: r().d28e983b, INR: r().e8c9232d, IQD: r().c8994ae1, ISK: r().f821c2a5, JPY: r().j348b9c9, KES: r().i6f93b9b, KRW: r().c6150bd5, KWD: r().i8921e09, KZT: r().ef239279, LBP: r().hecdb149, MAD: r().fdd039b7, MKD: r().f30c2c37, MXN: r().d9ea7bff, MYR: r().ea3df4b7, NGN: r().jaac21bb, NOK: r().hb435ced, NZD: r().ce699d81, PEN: r().bc56d3d7, PHP: r().f8561913, PKR: r().g6485d53, PLN: r().ff561cc1, QAR: r().b42011d3, RON: r().a6660bcd, RSD: r().f9b80449, RUB: r().gdee4d5d, SAR: r().h36f2103, SEK: r().a19ad037, SGD: r().g713f699, THB: r().ff2e39af, TND: r().be34316d, TRY: r().aef81b75, TWD: r().fcce70a5, TZS: r().jc9d352f, UAH: r().be1cb8c5, UGX: r().j9371501, USD: r().j7d4397d, VEF: r().d61441dd, VND: r().e2a99e97, ZAR: r().f7ce19ab, ZMW: r().b2a0213f },
                 i = ({ amount: e, currencyCode: a = "USD", formatter: t = 1e6, removeTrailingZeros: n = !1, strictAmount: r = !1 }) => {
@@ -280,7 +280,7 @@
                 l = t(731708),
                 i = t(154003),
                 o = t(392237),
-                s = t(332920),
+                s = t(111677),
                 c = t.n(s),
                 d = t(293115);
             const u = { page: "coin_purchase_failure" },
@@ -304,7 +304,7 @@
                 c = t(138099),
                 d = t(154003),
                 u = t(392237),
-                p = t(332920),
+                p = t(111677),
                 m = t.n(p),
                 g = t(293115),
                 b = t(312771),
@@ -467,18 +467,18 @@
                 w = t(782947),
                 E = t(40610),
                 T = t(392237),
-                Z = t(332920),
+                Z = t(111677),
                 B = t.n(Z);
-            const v = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
-            var x = t(980407),
+            const x = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
+            var v = t(980407),
                 P = t(879101),
                 S = t(443781),
                 L = t(301410),
                 F = t(782642),
                 D = t(97882),
                 R = t(782826),
-                I = t(293115),
-                K = t(725516),
+                K = t(293115),
+                I = t(725516),
                 M = t(312771),
                 A = t(668214),
                 W = t(390387);
@@ -556,12 +556,12 @@
                 ie = (e) => {
                     const { featureSwitches: a } = m.useContext(S.rC),
                         { currentCountry: t, history: n } = e,
-                        r = (0, K.z)(),
+                        r = (0, I.z)(),
                         [l, i] = m.useState(""),
                         [o, s] = m.useState(!1),
                         { origin: c } = R.ZP.get(),
                         d = a.isTrue("tweet_awards_web_coin_purchase_sandbox_enabled"),
-                        u = m.useMemo(() => ({ environment: d ? v.Sandbox : v.Live, countryCode: t || "US" }), [d, t]),
+                        u = m.useMemo(() => ({ environment: d ? x.Sandbox : x.Live, countryCode: t || "US" }), [d, t]),
                         p = (0, F.p)(),
                         [g, T] = G({ successUrl: `${c}/i/coins/success`, cancelUrl: `${c}/i/coins/failure` }),
                         Z = m.useCallback(() => {
@@ -611,13 +611,13 @@
                                 if (a === M.ZP.LOADED) {
                                     const a = e?.viewer_v2?.account_balance.amount || 0,
                                         t = !!e?.viewer_v2?.account_balance.at_limit;
-                                    return m.createElement(x.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: Z, secondaryBar: B(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(E.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: H, variables: u })));
+                                    return m.createElement(v.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: Z, secondaryBar: B(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(E.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: H, variables: u })));
                                 }
                                 return null;
                             },
                             [A, u, B, H, Z, n],
                         );
-                    return m.createElement(I.nO, { namespace: ne }, m.createElement(O.XB, { render: V, variables: b() }));
+                    return m.createElement(K.nO, { namespace: ne }, m.createElement(O.XB, { render: V, variables: b() }));
                 },
                 oe = T.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space8 }, header: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space32, marginTop: e.spaces.space16, marginBottom: e.spaces.space8 }, subtext: { marginBottom: e.spaces.space16 }, footer: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space16 }, disclaimer: { marginBottom: e.spaces.space8, marginHorizontal: "auto", maxWidth: "500px", textAlign: "center" }, image: { height: e.spaces.space40, width: e.spaces.space40 }, iconTwitter: { color: e.colors.primary } })),
                 se = N(ie);
@@ -637,18 +637,18 @@
                 m = t(392237);
             const g = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 b = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: k, horizontal: f, illustration: C, infoLabel: _, infoLabelType: w, inlineCallout: E, label: T, name: Z, onChange: B, pillText: v, pillType: x, reverseLabels: P, secondaryContent: S, secondaryDescription: L, switchStyle: F, testID: D }) => {
+                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: k, horizontal: f, illustration: C, infoLabel: _, infoLabelType: w, inlineCallout: E, label: T, name: Z, onChange: B, pillText: x, pillType: v, reverseLabels: P, secondaryContent: S, secondaryDescription: L, switchStyle: F, testID: D }) => {
                     const R = (0, p.b)(),
-                        I = (0, p.b)(),
                         K = (0, p.b)(),
-                        M = r.createElement(c.ZP, { color: "text", id: R, role: "label", size: F ? "body" : "headline2", testID: "headline-label", weight: F ? "normal" : "bold" }, T),
-                        A = !!m && r.createElement(c.ZP, { color: "gray700", id: I, size: "subtext1", style: v ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
+                        I = (0, p.b)(),
+                        M = r.createElement(c.ZP, { color: F ? (n ? "text" : "gray800") : "text", id: R, role: "label", size: F ? "body" : "headline2", testID: "headline-label", weight: F ? "normal" : "bold" }, T),
+                        A = !!m && r.createElement(c.ZP, { color: "gray700", id: K, size: "subtext1", style: x ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
                         W = r.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, L),
-                        N = v ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: x }, v) : null,
+                        N = x ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: v }, x) : null,
                         O = r.createElement(r.Fragment, null, l ? N : null, r.createElement(i.Z, { style: [g.row, _ && g.marginBottom8] }, P ? A : M, l ? null : N), r.createElement(i.Z, { style: [g.row, P && g.marginTop4] }, P ? M : A), S || (L ? W : void 0)),
                         H = F ? "unset" : (t ? 100 / t : 100) + "%",
-                        V = F ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
-                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...V, f ? { maxWidth: H, ...g.grow } : null, 1 === a || f ? null : g.withMarginTop, a !== t && f && !F && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !F }, !!C && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), r.createElement(i.Z, { style: [g.labelContainer, F && g.alignCenter] }, !!_ && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, r.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, _)), "red" !== w && "yellow" !== w && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), O, n && !!E && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!k && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(c.ZP, { id: K, size: "subtext1", weight: "bold" }, k)), r.createElement("input", { "aria-describedby": `${I} ${K}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: Z, onChange: n ? s.Z : B, style: b, type: "radio" })), y && h ? h : null);
+                        V = F ? [g.padding8, g.borderRadiusLarge, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
+                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...V, f ? { maxWidth: H, ...g.grow } : null, 1 === a || f ? null : g.withMarginTop, a !== t && f && !F && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !F }, !!C && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), r.createElement(i.Z, { style: [g.labelContainer, F && g.alignCenter] }, !!_ && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, r.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, _)), "red" !== w && "yellow" !== w && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), O, n && !!E && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!k && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(c.ZP, { id: I, size: "subtext1", weight: "bold" }, k)), r.createElement("input", { "aria-describedby": `${K} ${I}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: Z, onChange: n ? s.Z : B, style: b, type: "radio" })), y && h ? h : null);
                 },
                 h = (e) => {
                     const a = r.useCallback(({ value: e, ...a }) => r.createElement(y, (0, n.Z)({}, a, { key: e })), []);
@@ -657,4 +657,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.6f44198a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.dc0fbb1a.js.map

@@ -32,7 +32,7 @@
             var a = n(202784),
                 i = n(731708),
                 l = n(626820),
-                o = n(332920),
+                o = n(111677),
                 r = n.n(o),
                 s = n(443781),
                 c = n(507824),
@@ -87,7 +87,7 @@
                 l = n(721266),
                 o = n(40610),
                 r = n(688715),
-                s = n(332920),
+                s = n(111677),
                 c = n.n(s),
                 d = n(837880),
                 u = n(417144),
@@ -212,7 +212,7 @@
             n.d(t, { Z: () => d });
             var a = n(202784),
                 i = n(392237),
-                l = n(332920),
+                l = n(111677),
                 o = n.n(l),
                 r = n(473026),
                 s = n(47743),
@@ -288,7 +288,7 @@
                 l = n(392237),
                 o = n(731708),
                 r = n(834324),
-                s = n(332920),
+                s = n(111677),
                 c = n.n(s);
             const d = l.default.create((e) => ({ container: { marginBottom: e.spaces.space4 }, link: { color: "black" } })),
                 u = c().efa265fc,
@@ -315,7 +315,7 @@
                 r = n(731708),
                 s = n(154003),
                 c = n(392237),
-                d = n(332920),
+                d = n(111677),
                 u = n.n(d),
                 m = n(254990),
                 p = n(388941),
@@ -376,7 +376,7 @@
                 d = n(96083),
                 u = n(154003),
                 m = n(392237),
-                p = n(332920),
+                p = n(111677),
                 b = n.n(p),
                 f = n(14284),
                 h = n(531564),
@@ -486,7 +486,7 @@
             var a = n(202784),
                 i = n(154003),
                 l = n(392237),
-                o = n(332920),
+                o = n(111677),
                 r = n.n(o),
                 s = n(937450),
                 c = n(725516);
@@ -506,7 +506,7 @@
             var a = n(202784),
                 i = n(731708),
                 l = n(392237),
-                o = n(332920),
+                o = n(111677),
                 r = n.n(o),
                 s = n(674306),
                 c = n(566220),
@@ -523,4 +523,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-42018f38.16bef84a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-42018f38.3ff4041a.js.map

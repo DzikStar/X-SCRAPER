@@ -71,7 +71,7 @@
                 _ = a(154003),
                 f = a(167630),
                 h = a(392237),
-                v = a(332920),
+                v = a(111677),
                 E = a.n(v),
                 F = a(980407),
                 Z = a(698537),
@@ -181,4 +181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.a02ebc0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.0157a9aa.js.map

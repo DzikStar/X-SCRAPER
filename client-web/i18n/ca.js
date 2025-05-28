@@ -225,6 +225,7 @@
                 t("f65e7e91", function (e) {
                     return e.percentage + " % de descompte en " + e.plan + " " + e.tier;
                 }),
+                t("cbc38428", "Deixa de veure anuncis amb Premium+"),
                 t("a84a736e", "Obtén crèdit gratuït per a publicitat"),
                 t("a0713d76", "Actualitza a Organitzacions verificades per aconseguir crèdit gratuït per a publicitat i un conjunt d'eines de creixement empresarial."),
                 t("a07e13fc", "Fes-te creador Premium"),
@@ -308,9 +309,9 @@
                 t("d68773a4", "Visualitza les tendències amb Radar"),
                 t("f677fed6", "Monitoritza les paraules clau, visualitza l'activitat de les tendències i filtra converses. En temps real."),
                 t("ha49eac2", "Vols créixer ràpidament a X?"),
-                t("f27018b4", "Utilitza Premium Analytics per fer créixer els seguidors amb estadístiques de dades intel·ligents."),
-                t("dfea1f08", "No et perdis informació valuosa"),
-                t("da8c5244", "Amb Premium Analytics, pots accedir a estadístiques de dades intel·ligents per fer créixer els seguidors."),
+                t("f27018b4", "Utilitza Premium Analytics per fer créixer el teu nombre de seguidors amb estadístiques de dades intel·ligents."),
+                t("dfea1f08", "No et perdis estadístiques valuoses"),
+                t("da8c5244", "Amb Premium Analytics, pots accedir a estadístiques de dades intel·ligents per fer créixer el teu nombre de seguidors."),
                 t("b081baea", "T'estàs perdent estadístiques!"),
                 t("d5effffc", "Afegeix una insígnia"),
                 t("c3653d44", "Verifica la teva empresa"),
@@ -900,9 +901,9 @@
                 t("e8e39f95", "Més informació"),
                 t("e126dd3f", "Més informació"),
                 t("i821844f", "Més informació"),
-                t("b0abbb17", "Més informació"),
-                t("e7e0d88b", "Més informació");
-            t("i560665f", "Més informació"),
+                t("b0abbb17", "Més informació");
+            t("e7e0d88b", "Més informació"),
+                t("i560665f", "Més informació"),
                 t("f6e774d9", "Més informació"),
                 t("h486f755", "Més informació"),
                 t("bab41dab", "Més informació"),
@@ -1916,9 +1917,9 @@
                 t("a8fdd09c", "Publica l'article"),
                 t("d8047cc8", "Publica"),
                 t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
-                t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
-                t("e52d4998", "Tria la teva audiència");
-            t("d7985b24", "Tria qui pot respondre a aquest article"),
+                t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article.");
+            t("e52d4998", "Tria la teva audiència"),
+                t("d7985b24", "Tria qui pot respondre a aquest article"),
                 t("b5660338", "Vista prèvia de la cronologia"),
                 t("hff1b97a", "Només els subscriptors hi poden respondre."),
                 t("a330771e", "Copia l'enllaç al porta-retalls"),
@@ -2505,7 +2506,7 @@
                 t("h259fd86", "Oest "),
                 t("a7b2545a", "Sud"),
                 t("fdf7819a", "Oest Mitjà"),
-                t("i899e9b0", "Envia el quadre de competició"),
+                t("i899e9b0", "Envia la taula de partits"),
                 t("c5b04394", "Mostra les seleccions"),
                 t("h836bbae", "Mostra el torneig"),
                 t("e1059d6c", "1a ronda"),
@@ -2530,10 +2531,10 @@
                 t("cca5d499", function (e) {
                     return "Explica'm coses sobre " + e.selectedText + " en 1 o 2 frases.";
                 }),
-                t("d231a76a", "Crea la millor taula i guanya 100.000 USD 🏀"),
+                t("d231a76a", "Crea la millor taula de partits i guanya 100.000 USD 🏀"),
                 t("heaba5d8", "Dissenya la teva taula de partits universitaris de bàsquet a X. La taula perfecta guanyarà un viatge a Mart!"),
                 t("i57d3ea0", "Consulta les normes."),
-                t("a0440af6", "Crea un quadre de competició"),
+                t("a0440af6", "Crea una taula de partits"),
                 t("aaad27c8", "Autor"),
                 t("eb748f7e", "Mostra les analítiques de la publicació"),
                 t("b7cff250", function (e) {
@@ -2900,12 +2901,6 @@
                 t("ada99498", "Aquesta marca només es mostrarà a altres usuaris de la teva regió."),
                 t("a765e936", "Suprimeix la biografia ampliada"),
                 t("d4d68e44", "Desat"),
-                t("ie4f57d2", "Renova la subscripció a Premium"),
-                t("h293aa52", "La subscripció a Premium caducarà aviat!"),
-                t("j1923668", "Conserva el millor de X."),
-                t("ac7e97ee", "Renova la subscripció"),
-                t("f70c69b4", "Potencia les respostes, Edita la publicació, Personalització, Publicacions més llargues i molt més."),
-                t("f4cec4d2", "Marca de verificació blava, Potencia les respostes, augment dels límits de Grok i molt més."),
                 t("b6de83a0", "Espai només per a empleats"),
                 t("g3f251f2", "Emissió privada"),
                 t("d08666ba", "Espai privat"),
@@ -2951,7 +2946,7 @@
                 t("dad69faa", "Actualitza el mètode de pagament"),
                 t("daf3248a", "Aplicació incompleta"),
                 t("eb71036f", function (e) {
-                    return "Carrega i verifica els documents de l'organització abans del " + e.date;
+                    return "Carrega i verifica els documents de l'organització abans del dia " + e.date;
                 }),
                 t("a1d3f1f2", "Col·laborem amb Persona per verificar la teva identitat i els teus documents comercials per la seguretat a X. Persona pot emmagatzemar les teves dades fins a 30 dies."),
                 t("ea8c295a", "Inicia la verificació del document"),
@@ -2973,20 +2968,17 @@
                 t("b7388a56", "Peu de pàgina"),
                 t("hdabc3fc", "Condicions del servei"),
                 t("bc6efc72", "Política de privacitat"),
-                t("h3161192", "Política de galetes");
-            t("a7de64de", "Informació sobre els anuncis"),
+                t("h3161192", "Política de galetes"),
+                t("a7de64de", "Informació sobre els anuncis"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Professions"),
                 t("e0adec82", "Recursos de marca"),
-                t("df1b7550", "Màrqueting"),
-                t("he258678", "X per a empreses"),
+                t("df1b7550", "Màrqueting");
+            t("he258678", "X per a empreses"),
                 t("c6f58084", "Desenvolupadors"),
                 t("d83f18d2", "Directori"),
                 t("hc5aa17c", "Obtén l'aplicació de X"),
                 t("j0693948", "Obtén l'aplicació de Grok"),
-                t("fbf83158", "Advertència: ha fallat el pagament"),
-                t("jadeb4da", "Actualitza urgentment el mètode de pagament per no perdre els beneficis de la subscripció."),
-                t("bce3726a", "Actualitza la facturació"),
                 t("fce9ecce", "Vídeos suggerits"),
                 t("j66b95a2", "Notícies detallades"),
                 t("ad35153e", "versió beta"),
@@ -3028,6 +3020,15 @@
                 }),
                 t("j7d0e836", "Desplega"),
                 t("d227d19e", "Replega"),
+                t("fbf83158", "Advertència: ha fallat el pagament"),
+                t("jadeb4da", "Actualitza urgentment el mètode de pagament per no perdre els beneficis de la subscripció."),
+                t("bce3726a", "Actualitza la facturació"),
+                t("ie4f57d2", "Renova la subscripció a Premium"),
+                t("h293aa52", "La subscripció a Premium caducarà aviat!"),
+                t("j1923668", "Conserva el millor de X."),
+                t("ac7e97ee", "Renova la subscripció"),
+                t("f70c69b4", "Potencia les respostes, Edita la publicació, Personalització, Publicacions més llargues i molt més."),
+                t("f4cec4d2", "Marca de verificació blava, Potencia les respostes, augment dels límits de Grok i molt més."),
                 t("h367e724", "Biografia ampliada"),
                 t("ea5928d4", "Tens una infinitat de coses per ensenyar. El teu perfil també.\nAfegeix una biografia ampliada per mostrar més coses de tu mateix/a."),
                 t("h7ef9dc8", "Això pot incloure:"),
@@ -3827,7 +3828,7 @@
                 t("db6796f6", "Si desactives aquesta etiqueta, se suprimirà del teu perfil i les teves publicacions anteriors. Comprova que compleixes la política d'autenticitat. Després d'aquesta actualització, no en podràs fer més durant 48 hores."),
                 t("c700b6be", "Després d'aquesta actualització, no en podràs fer més durant 48 hores."),
                 t("ff1739ae", "Etiqueta de perfil"),
-                t("h70c602c", "No s'ha pogut actualitzar l'etiqueta del perfil"),
+                t("h70c602c", "No es pot actualitzar l'etiqueta del perfil"),
                 t("c818c60c", "Analítiques"),
                 t("ha9f14b1", function (e) {
                     return "L'espai començarà el " + e.scheduleDate + " a les " + e.scheduleTime;
@@ -3884,13 +3885,13 @@
                 t("caa8d928", "Activa la supressió de soroll"),
                 t("b5d88f0c", "Només empleats"),
                 t("c855ab8e", "Només per a Subscriptors"),
-                t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull."),
-                t("e111f531", function (e) {
-                    return e.count + " estan escoltant";
-                });
-            t("cbef820f", function (e) {
-                return e.screenName + " ha republicat la transmissió!";
+                t("ddeb0a3c", "Aquí tens la Comunitat. Te n'agraden els usuaris? Dona-hi un cop d'ull.");
+            t("e111f531", function (e) {
+                return e.count + " estan escoltant";
             }),
+                t("cbef820f", function (e) {
+                    return e.screenName + " ha republicat la transmissió!";
+                }),
                 t("e3275464", "Envia"),
                 t("cededf2a", "Amfitrió"),
                 t("i2caef48", "Coamfitrions"),
@@ -4884,7 +4885,7 @@
                 t("a83c2a9a", "Temps real"),
                 t("e9d72896", "Enregistrat"),
                 t("gede4932", "Torna-ho a reproduir"),
-                t("h0de359c", "Total de respostes d'aquest contingut."),
+                t("h0de359c", "Nombre de vegades que aquest contingut s'ha republicat."),
                 t("e0568f2c", "S'ha programat per a: "),
                 t("gd86baa8", "Inici programat"),
                 t("fef3bfae", "Selecciona la mètrica secundària"),
@@ -4924,9 +4925,9 @@
                 t("d9f9dec0", "Mostra l'espai"),
                 t("h0c1f37a", "Mostra les analítiques dels espais"),
                 t("e41fffbc", "Temps total de visualització dels vídeos."),
-                t("if2909ba", "Temps de visualització"),
-                t("i0e5bf4c", "Els teus vídeos");
-            t("ed99baea", "Accès beta anticipat"),
+                t("if2909ba", "Temps de visualització");
+            t("i0e5bf4c", "Els teus vídeos"),
+                t("ed99baea", "Accès beta anticipat"),
                 t("gf898b70", "Cerca avançada"),
                 t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
                 t("a8584698", "empresa emergent d'ia"),
@@ -5009,7 +5010,7 @@
                 t("ded395ae", "Accedeix a totes les analítiques de la teva empresa des del mateix lloc"),
                 t("a47a20d4", "Analítiques avançades"),
                 t("b56d3ec6", "Totes les organitzacions i afiliats obtenen Premium+ amb accés a Grok 3"),
-                t("ie663a1a", "Rep assistència ràpida i escalades amb un equip de clients dedicat"),
+                t("ie663a1a", "Rep ajuda i escala els problemes ràpidament amb un equip dedicat d'assistència al client"),
                 t("j7f75bec", "Assistència VIP"),
                 t("ebf5ec26", "Pròximament"),
                 t("eeb424e2", "Escriu la teva pròpia història."),
@@ -5482,7 +5483,7 @@
                 t("a4ec7004", "Ara passarà el següent:"),
                 t("c4093274", "Sobre les Notes de la Comunitat després de l'enviament"),
                 t("bc8746a6", "Puntua almenys una nota abans d'escriure'n una de nova."),
-                t("ce3c80b8", "La qualitat de les Notes de la Comunitat depèn de les teves valoracions."),
+                t("ce3c80b8", "La qualitat de Notes de la Comunitat depèn de les teves valoracions."),
                 t("fa6a075a", "Anotacions que suggereixen context que es mostrarà juntament amb les publicacions"),
                 t("acb7ecae", "Anotacions que expliquen per què no cal afegir context"),
                 t("d9a5fc06", "Valora la publicació"),
@@ -5890,9 +5891,9 @@
                     return "Finalitzat " + e.timestamp;
                 }),
                 t("daca8a2c", "Obre acoblat"),
-                t("e3aac82a", "S'està carregant l'emissió"),
-                t("i0ed3f4e", "Imatge de l'esdeveniment");
-            t("cbae35fa", "Denuncia l'emissió"),
+                t("e3aac82a", "S'està carregant l'emissió");
+            t("i0ed3f4e", "Imatge de l'esdeveniment"),
+                t("cbae35fa", "Denuncia l'emissió"),
                 t("fd12ab58", "Publicacions de recull"),
                 t("a226497c", "Crea una Comunitat nova"),
                 t("d7346632", "Encara no t'has unit a cap Comunitat"),
@@ -6739,15 +6740,15 @@
                 t("accbcc78", "S'ha actualitzat correctament"),
                 t("e957c20e", "Prova gratuïta d'accés complet"),
                 t("a1436e70", "Ara pots afegir feines al teu perfil i fer que estiguin visibles per a la teva xarxa. Quan s'aprovi la teva sol·licitud, les teves feines podran ser descobertes per milions d'usuaris a la cerca de feina."),
-                t("f9c85cec", "Acció necessària: penjar i verificar documents"),
+                t("f9c85cec", "Acció necessària: penja i verifica els documents"),
                 t("f178f393", function (e) {
-                    return "Envia els documents requerits abans del " + e.date + ". No tardaràs més de 10 minuts.";
+                    return "Envia els documents requerits abans del dia " + e.date + ". No tardaràs més de 10 minuts.";
                 }),
                 t("f9fbeabc", "Documents de constitució de la teva organització"),
                 t("b4c80f5c", "Un document nacional d'identitat"),
                 t("f0915094", "Càmera d'un dispositiu que funciona"),
                 t("f259d3f3", function (e) {
-                    return "Important: cal enviar els documents abans del " + e.date + " o la sol·licitud es rebutjarà sense reemborsament.";
+                    return "Important: cal enviar els documents abans del dia " + e.date + " o la sol·licitud es rebutjarà sense reemborsament.";
                 }),
                 t("d35f645b", function (e) {
                     return "Actives (" + e.count + ")";
@@ -6888,9 +6889,9 @@
                 t("c0195168", "Canvia la icona de l'aplicació i les opcions de navegació"),
                 t("b6b5dc94", "Verifica't"),
                 t("b06db848", "Distingeix-te dels altres a la plataforma"),
-                t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions"),
-                t("f15bc24e", "Els límits de Grok s'han ampliat");
-            t("c4666e1c", "Més ús de Grok 3, el nostre model més recent"),
+                t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions");
+            t("f15bc24e", "Els límits de Grok s'han ampliat"),
+                t("c4666e1c", "Més ús de Grok 3, el nostre model més recent"),
                 t("he74ae7a", "Límits d'ús màxim de Grok"),
                 t("f5732cd4", "A més d'un accés ampliat a DeepSearch i Raonament"),
                 t("e0198956", "Obtén una part dels ingressos generats per la interacció de comptes verificats amb el contingut que publiques a X."),
@@ -6938,16 +6939,16 @@
                 t("c0c25b6c", "Carpetes de preferits"),
                 t("ab31c79e", "Icones personalitzades de l'aplicació"),
                 t("a8a702ae", "Personalitza la navegació"),
-                t("d5ab1b50", "Distintiu verificat"),
+                t("d5ab1b50", "Obtén un distintiu verificat"),
                 t("ac298984", "Prioritat de resposta més alta"),
                 t("g20df450", "Suprimeix el 50 % dels anuncis"),
-                t("h8dfc4de", "Límits d'ús de Grok més alts"),
+                t("h8dfc4de", "Límits d'ús més alts de Grok"),
                 t("bf7614d4", "Subscripcions a creadors"),
                 t("gadc9f4a", "Màxima prioritat de resposta"),
                 t("c127c5c2", "Suprimeix tots els anuncis"),
                 t("c1e0f3c8", "Accedeix a les funcions DeepSearch i Raonament de Grok"),
                 t("aac0bbb6", "Accés a Radar"),
-                t("a6722922", "Sense anuncis"),
+                t("a6722922", "S'han suprimit els anuncis"),
                 t("ba016532", "Prioritza les respostes"),
                 t("a06f8a3e", "Grok 3"),
                 t("b9e16610", "MÀX."),
@@ -6991,8 +6992,8 @@
                 t("bb4998fb", function (e) {
                     return "Fins a aquesta data: " + e.date;
                 }),
-                t("c0847ebc", "Totes les actualitzacions des de Basic més..."),
-                t("ed672bfa", "Totes les actualitzacions des de Basic i Premium més..."),
+                t("c0847ebc", "Totes les actualitzacions de Basic, més..."),
+                t("ed672bfa", "Totes les actualitzacions de Basic i Premium, més..."),
                 t("db63fa1c", "Selecciona un pla premium"),
                 t("b128c6bc", "Aconsegueix una insígnia verificada i desenes d'altres avantatges i beneficis increïbles"),
                 t("a9904a1c", "Estalvia en X Premium durant un temps limitat"),
@@ -7206,6 +7207,36 @@
                 t("hd80bd3e", "Patrocina una publicació"),
                 t("fe2b0008", "Aprèn a utilitzar X"),
                 t("h257d4aa", "Selecciona una publicació per patrocinar-la"),
+                t("fe946974", "Your trial of X without ads"),
+                t("f6c50ec0", "Your ad-free trial has ended"),
+                t("b1319404", "Ads avoided"),
+                t("baa4acae", "You’re seeing more personalized content."),
+                t("c00e8600", "Estimated time saved"),
+                t("ic073e4e", "Your time is valuable."),
+                t("eb866e88", "Estimated 1-year time savings"),
+                t("aa77b70c", "Based on your usage."),
+                t("c534c6b4", "We’re crunching the numbers..."),
+                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("cc10f019", function (e) {
+                    return e.minutes + " minut" + r(e.minutes, "", "s");
+                }),
+                t("f9b6b7d3", function (e) {
+                    return e.hours + " hor" + r(e.hours, "a", "es");
+                }),
+                t("a9af8753", function (e) {
+                    return e.days + " di" + r(e.days, "a", "es") + ", " + e.hours + " hor" + r(e.hours, "a", "es");
+                }),
+                t("b93d00e5", function (e) {
+                    return e.days + " di" + r(e.days, "a", "es");
+                }),
+                t("be88be23", function (e) {
+                    return "S'ha activat la teva prova sense anuncis de " + e.durationInDays + " dies";
+                }),
+                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                t("ae3f3b0e", "Enjoy!"),
+                t("cdac8dc4", "See your new feed"),
+                t("dec99336", "Ad-free"),
+                t("i95803fa", "Unfortunately, you are not eligible at this time."),
                 t("d28a1d72", "Sigues el primer de detectar tendències amb Radar"),
                 t("fb70427a", "Et presentem l'eina de cerca més potent d'X."),
                 t("i54bf620", "Monitoritza les paraules clau"),
@@ -7434,7 +7465,7 @@
                 }),
                 t("h4cbba3e", "< 5 %"),
                 t("f4f0094c", "<5 % de priorització"),
-                t("h1cdac12", "< 5 % de promoció"),
+                t("h1cdac12", "< 5% de promoció"),
                 t("g884b2cc", "< 5 % de no seguidors"),
                 t("b32334a0", "Comptes als quals s'ha arribat"),
                 t("h142a79c", "Nombre de visualitzacions úniques de la publicació"),
@@ -7591,9 +7622,9 @@
                 t("df8d4fa0", "Selecciona un gènere"),
                 t("i982d424", "Quant vols invertir?"),
                 t("b9ff6cb0", "No s'ha seleccionat cap mètode de pagament"),
-                t("i8b90688", "condicions i les directrius de publicitat"),
-                t("a93bd26d", "condicions per als cupons"),
-                t("d31dc460", "condicions i les directrius de publicitat"),
+                t("i8b90688", "Condicions i les directrius de publicitat"),
+                t("a93bd26d", "Condicions per als cupons"),
+                t("d31dc460", "Condicions i les directrius de publicitat"),
                 t("ga845597", function (e) {
                     return "Total per a " + e.durationLabel;
                 }),
@@ -7838,36 +7869,7 @@
                 t("j26dee0e", "Elimina l'afiliat"),
                 t("e30cbdf0", "L'afiliat és subscriptor d'Organitzacions verificades i ha de seguir sent una organització. No pot passar a ser una persona."),
                 t("j3115ce8", "Persona"),
-                t("d8bb1d84", "Organització"),
-                t("e970bdbd", function (e) {
-                    return e.count + " invitacions restants";
-                }),
-                t("id67d953", function (e) {
-                    return "Alguna cosa ha anat malament en recuperar els detalls de finalització de la compra de Stripe. Si el problema continua, posa't en contacte amb " + e.supportEmail + " .";
-                }),
-                t("f323d314", "Reenvia"),
-                t("ac645cde", "Sempre podràs tornar a afegir-ne."),
-                t("d12af2dd", function (e) {
-                    return "Segur que vols eliminar aquesta invitació per a @" + e.screenName + "?";
-                }),
-                t("ib60b2d5", function (e) {
-                    return "Segur que vols reenviar aquesta invitació a @" + e.screenName + "?";
-                }),
-                t("ec6e7d9a", "El compte està en mode només de lectura fins que es completi el canvi de nivell pendent. Ves a Stripe per comprovar el pagament i assegurar-te que el canvi es produeix correctament."),
-                t("b33d1518", "Sincronitza feines des d'una integració admesa o un canal XML personalitzat"),
-                t("dd2db402", "Pas 1: recull la informació necessària"),
-                t("edb098c2", "Pas 2: contacta amb el nostre equip d'assistència"),
-                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència"),
-                t("a08da0fa", "I ara què passarà?"),
-                t("c127374e", "Envia'ns un missatge"),
-                t("b2cb2a0c", "Nom d'usuari del teu compte d'Organització verificada"),
-                t("b8e64002", "Nom del teu sistema de seguiment d'aspirants"),
-                t("acb99db6", "URL del lloc web professional on es mostren les feines"),
-                t("a64a5b7a", "Envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
-                t("e3dffb4e", "Copia l'adreça de correu electrònic d'assistència següent i envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
-                t("b4fef99e", "Després que l'equip d'assistència rebi la teva sol·licitud, revisarem la teva informació i t'ajudarem amb la configuració de la integració."),
-                t("h37f2d96", "Tingues en compte que ara per ara no s'admeten tots els sistemes de seguiment d'aspirants."),
-                t("ce102a20", "Redirigint-te a Stripe");
+                t("d8bb1d84", "Organització");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7906,7 +7908,36 @@
                     n(e, a)
                 );
             }
-            t("ddfd6718", "Ha fallat el pagament"),
+            t("e970bdbd", function (e) {
+                return e.count + " invitacions restants";
+            }),
+                t("id67d953", function (e) {
+                    return "Alguna cosa ha anat malament en recuperar els detalls de finalització de la compra de Stripe. Si el problema continua, posa't en contacte amb " + e.supportEmail + " .";
+                }),
+                t("f323d314", "Reenvia"),
+                t("ac645cde", "Sempre podràs tornar a afegir-ne."),
+                t("d12af2dd", function (e) {
+                    return "Segur que vols eliminar aquesta invitació per a @" + e.screenName + "?";
+                }),
+                t("ib60b2d5", function (e) {
+                    return "Segur que vols reenviar aquesta invitació a @" + e.screenName + "?";
+                }),
+                t("ec6e7d9a", "El compte està en mode només de lectura fins que es completi el canvi de nivell pendent. Ves a Stripe per comprovar el pagament i assegurar-te que el canvi es produeix correctament."),
+                t("b33d1518", "Sincronitza feines des d'una integració admesa o un canal XML personalitzat"),
+                t("dd2db402", "Pas 1: recull la informació necessària"),
+                t("edb098c2", "Pas 2: contacta amb el nostre equip d'assistència"),
+                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència"),
+                t("a08da0fa", "I ara què passarà?"),
+                t("c127374e", "Envia'ns un missatge"),
+                t("b2cb2a0c", "Nom d'usuari del teu compte d'Organització verificada"),
+                t("b8e64002", "Nom del teu sistema de seguiment d'aspirants"),
+                t("acb99db6", "URL del lloc web professional on es mostren les feines"),
+                t("a64a5b7a", "Envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
+                t("e3dffb4e", "Copia l'adreça de correu electrònic d'assistència següent i envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
+                t("b4fef99e", "Després que l'equip d'assistència rebi la teva sol·licitud, revisarem la teva informació i t'ajudarem amb la configuració de la integració."),
+                t("h37f2d96", "Tingues en compte que ara per ara no s'admeten tots els sistemes de seguiment d'aspirants."),
+                t("ce102a20", "Redirigint-te a Stripe"),
+                t("ddfd6718", "Ha fallat el pagament"),
                 t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
                 t("a62359e6", "Configuració d'organització verificada"),
                 t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
@@ -8061,7 +8092,7 @@
                 t("gdd3fa68", "Quan s'hagi revisat i aprovat, el teu compte quedarà verificat automàticament i podràs registrar-te i afegir afiliats."),
                 t("e6389996", "Els comptes que no s'aprovin no rebran un reembossament."),
                 t("a889b460", "El pagament s'ha realitzat correctament"),
-                t("d1c886dc", "Següent pas: carrega i verifica els documents"),
+                t("d1c886dc", "Següent pas: penja i verifica els documents"),
                 t("b13e9454", "La teva aplicació encara no està completa. Envia els documents requerits. No tardaràs més de 10 minuts."),
                 t("e6b0965a", "La teva comanda"),
                 t("a1b58798", "Revisa la teva comanda a continuació"),
@@ -8884,8 +8915,8 @@
                 t("c1658fc6", "El contingut no s'ha pogut reproduir."),
                 t("h519ae04", "Els continguts s'han desactivat a causa d'una reclamació de copyright."),
                 t("ce871584", "L'emissió ha finalitzat."),
-                t("c101eb96", "L'emissió no està disponible."),
-                t("gb24a514", "El contingut s'ha desactivat en resposta a una denúncia del titular dels drets d'autor."),
+                t("c101eb96", "L'emissió no està disponible.");
+            t("gb24a514", "El contingut s'ha desactivat en resposta a una denúncia del titular dels drets d'autor."),
                 t("hcaf3e63", function (e) {
                     return "Aquests continguts s'han desactivat a causa d'una reclamació de copyright per part de: " + e.holder + ".";
                 }),
@@ -8909,10 +8940,10 @@
                 t("ecda5f9e", "Enganyós"),
                 t("a423473c", "Avís legalment requerit"),
                 t("b3296688", "Visibilitat limitada"),
-                t("ccd32094", "Ara");
-            t("abfcce0d", function (e) {
-                return "Fa " + e.amountOfTime;
-            }),
+                t("ccd32094", "Ara"),
+                t("abfcce0d", function (e) {
+                    return "Fa " + e.amountOfTime;
+                }),
                 t("ae408b76", "Ho has republicat"),
                 t("j355f008", "Publicació fixada"),
                 t("habf9678", "Fixat per l'autor"),
@@ -12902,7 +12933,7 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     p
                 );
-            })(i(332920)._ActualI18NFormatMessage || c.Component);
+            })(i(111677)._ActualI18NFormatMessage || c.Component);
             t("_ActualI18NFormatMessage", d),
                 t("I18NFormatMessage", function (e) {
                     return c.createElement(d, e);
@@ -13258,4 +13289,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.9c1cd01a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.01766cfa.js.map

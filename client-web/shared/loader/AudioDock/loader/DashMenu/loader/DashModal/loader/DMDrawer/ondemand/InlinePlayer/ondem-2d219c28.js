@@ -17,7 +17,7 @@
                 u = a(992942),
                 E = a(823161),
                 p = a(310088),
-                g = a(332920),
+                g = a(111677),
                 h = a.n(g),
                 C = a(275365);
             const T = l.default.create((e) => ({ circle: { borderRadius: e.borderRadii.infinite, overflow: "hidden" }, container: { height: "auto", width: "100%" }, itemAccessory: { top: -e.spacesPx.space24 + e.spacesPx.space1, end: -e.spacesPx.space16 - e.spacesPx.space1 }, userDecoration: { fontSize: e.fontSizes.subtext3, position: "absolute", backgroundColor: e.colors.gray100, marginStart: e.spaces.space8, boxSizing: "border-box", width: e.spaces.space24, height: e.spaces.space24, fontWeight: e.fontWeights.regular } })),
@@ -46,7 +46,7 @@
             function R(e) {
                 const { avatar: t, avatarLink: a, badgeCount: n, size: l, withLock: _ } = e,
                     m = [x.lockContainer, "large" === l && x.lockPositionLarge];
-                return r.createElement(r.Fragment, null, r.createElement(s.Z, { ratio: 1 }, a ? r.createElement(o.Z, { interactiveStyles: null, link: a, testID: c.Z.conversationAvatar }, t) : t), n ? (({ badgeCount: e }) => r.createElement(i.Z, { style: O.itemAccessory, testID: f }, r.createElement(p.Z, { "aria-live": "none", count: e, standalone: !0, style: O.userDecoration, textColor: "text", truncatedCountFormatter: () => "", unreadCountLabel: v, withTruncatedCount: !1 })))({ badgeCount: n }) : null, _ ? r.createElement(i.Z, { style: m }, r.createElement(d.Z, { size: l })) : null);
+                return r.createElement(r.Fragment, null, r.createElement(s.Z, { ratio: 1 }, a ? r.createElement(o.Z, { interactiveStyles: null, link: a, testID: c.Z.conversationAvatar }, t) : t), n ? (({ badgeCount: e }) => r.createElement(i.Z, { style: O.itemAccessory, testID: f }, r.createElement(p.Z, { count: e, standalone: !0, style: O.userDecoration, textColor: "text", truncatedCountFormatter: () => "", unreadCountLabel: v, withTruncatedCount: !1 })))({ badgeCount: n }) : null, _ ? r.createElement(i.Z, { style: m }, r.createElement(d.Z, { size: l })) : null);
             }
             const x = l.default.create((e) => ({ lockContainer: { display: "flex", alignItems: "center", top: -e.spacesPx.space24 + e.spacesPx.space1, end: -e.spacesPx.space16 - e.spacesPx.space1 }, lockPositionLarge: { top: -e.spacesPx.space20 + e.spacesPx.space1, end: -e.spacesPx.space12 - e.spacesPx.space1 } })),
                 M = (e) => {
@@ -96,7 +96,7 @@
                 c = a(366635),
                 d = a(470397),
                 _ = a(392237),
-                m = a(332920),
+                m = a(111677),
                 u = a.n(m),
                 E = a(593953);
             const p = "DMGroupConversationTitle",
@@ -278,4 +278,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28.07cbb84a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28.a4d193fa.js.map

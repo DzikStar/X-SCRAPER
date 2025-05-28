@@ -6,7 +6,7 @@
             n.d(e, { Nr: () => k, ZP: () => C });
             var i = n(202784),
                 r = n(325686),
-                a = n(332920),
+                a = n(111677),
                 s = n.n(a),
                 o = n(894966),
                 l = n(568320),
@@ -986,4 +986,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle.533e1c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle.3de97c0a.js.map

@@ -2,6 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AccountAnalytics~ondemand.Verified-6107ac1a"],
     {
+        661810: (t, e, n) => {
+            n.d(e, { Z: () => i });
+            var r = n(202784),
+                a = n(325686),
+                o = n(392237);
+            function i({ spacing: t, style: e }) {
+                return r.createElement(a.Z, { role: "separator", style: [s.divider, { marginVertical: null != t ? o.default.theme.spaces[t] : void 0 }, e] });
+            }
+            const s = o.default.create((t) => ({ divider: { backgroundColor: t.colors.borderColor, height: t.borderWidths.small } }));
+        },
         466818: (t, e, n) => {
             n.d(e, { ZP: () => w });
             var r = n(202784),
@@ -47,10 +57,10 @@
                     const { "aria-describedby": t, disabled: e, errorText: n, hasError: u, helperText: g, options: m, style: w, testID: b, value: x, withEmptyOption: y } = this.props,
                         { isFocused: E } = this.state,
                         T = c.ZP.getLanguage(),
-                        M = void 0 === u ? !!n : u,
-                        v = new Set();
-                    n && v.add(this._errorID), t && v.add(t), g && v.add(this._helperID);
-                    const _ = v.size ? [...v].join(" ") : void 0;
+                        v = void 0 === u ? !!n : u,
+                        M = new Set();
+                    n && M.add(this._errorID), t && M.add(t), g && M.add(this._helperID);
+                    const _ = M.size ? [...M].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
                         null,
@@ -58,11 +68,11 @@
                             const c = "ja" === T ? l.default.theme.fontFamilies.japan : "rtl" === t || i.Z.isLocaleRTL(T) ? l.default.theme.fontFamilies.rtl : l.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 a.Z,
-                                { style: [s.Z.border, p.container, e && s.Z.disabled, E && s.Z.focusedBorderValid, M && s.Z.invalidBorderColor, E && M && s.Z.focusedBorderInvalid, w] },
+                                { style: [s.Z.border, p.container, e && s.Z.disabled, E && s.Z.focusedBorderValid, v && s.Z.invalidBorderColor, E && v && s.Z.focusedBorderInvalid, w] },
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": _, "aria-invalid": M, "aria-labelledby": this._labelID, disabled: e, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [p.select, { fontFamily: c }, e && s.Z.disabled], testID: b || "", value: x },
+                                    { "aria-describedby": _, "aria-invalid": v, "aria-labelledby": this._labelID, disabled: e, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [p.select, { fontFamily: c }, e && s.Z.disabled], testID: b || "", value: x },
                                     y ? r.createElement(f, { disabled: !0, style: p.option, value: "" }) : null,
                                     m.map((t) => {
                                         const { disabled: e, label: n, value: a } = t;
@@ -73,7 +83,7 @@
                             );
                         }),
                         g ? this._renderHelperText() : null,
-                        M && n ? this._renderErrorText() : null,
+                        v && n ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
@@ -649,4 +659,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-6107ac1a.c4a8e77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-6107ac1a.19000f3a.js.map

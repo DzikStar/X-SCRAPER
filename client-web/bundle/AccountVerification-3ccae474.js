@@ -8,7 +8,7 @@
                 i = o(202784),
                 r = o(537392),
                 a = o(392237),
-                c = o(332920),
+                c = o(111677),
                 s = o.n(c),
                 p = o(912021),
                 l = o(143778),
@@ -280,4 +280,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-3ccae474.4275603a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-3ccae474.f9b1721a.js.map

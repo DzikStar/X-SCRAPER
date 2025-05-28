@@ -224,6 +224,7 @@
                 f("f65e7e91", function (e) {
                     return e.tier + " " + e.plan + "可享 " + e.percentage + "% 优惠";
                 }),
+                f("cbc38428", "通过 Premium+ 免广告"),
                 f("a84a736e", "获取免费广告积分"),
                 f("a0713d76", "升级为“认证组织 ”可获得免费广告积分和一整套业务增长工具。"),
                 f("a07e13fc", "成为 Premium 创作者"),
@@ -899,9 +900,9 @@
                 f("e8e39f95", "了解更多"),
                 f("e126dd3f", "了解更多"),
                 f("i821844f", "了解更多"),
-                f("b0abbb17", "了解更多"),
-                f("e7e0d88b", "了解更多");
-            f("i560665f", "了解更多"),
+                f("b0abbb17", "了解更多");
+            f("e7e0d88b", "了解更多"),
+                f("i560665f", "了解更多"),
                 f("f6e774d9", "了解更多"),
                 f("h486f755", "了解更多"),
                 f("bab41dab", "了解更多"),
@@ -1915,9 +1916,9 @@
                 f("a8fdd09c", "发布文章"),
                 f("d8047cc8", "发布"),
                 f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。"),
-                f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。"),
-                f("e52d4998", "选择你的受众");
-            f("d7985b24", "选择谁可以回复这篇文章"),
+                f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。");
+            f("e52d4998", "选择你的受众"),
+                f("d7985b24", "选择谁可以回复这篇文章"),
                 f("b5660338", "时间线预览"),
                 f("hff1b97a", "只有“已订阅”用户才能回复。"),
                 f("a330771e", "将链接复制到剪贴板"),
@@ -2899,12 +2900,6 @@
                 f("ada99498", "该标记只会向你所在地区的其他人显示。"),
                 f("a765e936", "删除你的扩展简历"),
                 f("d4d68e44", "已保存"),
-                f("ie4f57d2", "续订 Premium"),
-                f("h293aa52", "你的 Premium 订阅即将过期！"),
-                f("j1923668", "保留 X 最好的一面。"),
-                f("ac7e97ee", "续订"),
-                f("f70c69b4", "回复增强、编辑帖子、自定义、长帖以及更多。"),
-                f("f4cec4d2", "蓝色对号标志、恢复推广、更高的 Grok 限额以及更多。"),
                 f("b6de83a0", "仅限员工的空间"),
                 f("g3f251f2", "私人直播"),
                 f("d08666ba", "私密空间"),
@@ -2972,20 +2967,17 @@
                 f("b7388a56", "页脚"),
                 f("hdabc3fc", "服务条款"),
                 f("bc6efc72", "隐私政策"),
-                f("h3161192", "Cookie 政策");
-            f("a7de64de", "广告信息"),
+                f("h3161192", "Cookie 政策"),
+                f("a7de64de", "广告信息"),
                 f("jb0a4c36", "博客"),
                 f("ce6d095a", "职业"),
                 f("e0adec82", "品牌资源"),
-                f("df1b7550", "市场营销"),
-                f("he258678", "企业版 X"),
+                f("df1b7550", "市场营销");
+            f("he258678", "企业版 X"),
                 f("c6f58084", "开发者"),
                 f("d83f18d2", "目录"),
                 f("hc5aa17c", "获取 X 应用"),
                 f("j0693948", "获取 Grok 应用"),
-                f("fbf83158", "警告：付款失败"),
-                f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。"),
-                f("bce3726a", "更新账单"),
                 f("fce9ecce", "建议的视频"),
                 f("j66b95a2", "深度新闻"),
                 f("ad35153e", "测试版"),
@@ -3027,6 +3019,15 @@
                 }),
                 f("j7d0e836", "展开"),
                 f("d227d19e", "收起"),
+                f("fbf83158", "警告：付款失败"),
+                f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。"),
+                f("bce3726a", "更新账单"),
+                f("ie4f57d2", "续订 Premium"),
+                f("h293aa52", "你的 Premium 订阅即将过期！"),
+                f("j1923668", "保留 X 最好的一面。"),
+                f("ac7e97ee", "续订"),
+                f("f70c69b4", "回复增强、编辑帖子、自定义、长帖以及更多。"),
+                f("f4cec4d2", "蓝色对号标志、恢复推广、更高的 Grok 限额以及更多。"),
                 f("h367e724", "扩展简介"),
                 f("ea5928d4", "你包罗万象。你的个人资料也是如此。添加扩展简介，告诉大家更多关于你本人的信息。"),
                 f("h7ef9dc8", "这可以包括："),
@@ -3883,13 +3884,13 @@
                 f("caa8d928", "切换噪声抑制"),
                 f("b5d88f0c", "仅限员工"),
                 f("c855ab8e", "仅限订阅者"),
-                f("ddeb0a3c", "这里是社群。喜欢这些人吗？来看一看。"),
-                f("e111f531", function (e) {
-                    return e.count + " 已收听";
-                });
-            f("cbef820f", function (e) {
-                return e.screenName + " 重新发布了直播流！";
+                f("ddeb0a3c", "这里是社群。喜欢这些人吗？来看一看。");
+            f("e111f531", function (e) {
+                return e.count + " 已收听";
             }),
+                f("cbef820f", function (e) {
+                    return e.screenName + " 重新发布了直播流！";
+                }),
                 f("e3275464", "发送"),
                 f("cededf2a", "主持人"),
                 f("i2caef48", "共同主持人"),
@@ -4923,9 +4924,9 @@
                 f("d9f9dec0", "查看空间"),
                 f("h0c1f37a", "查看空间分析"),
                 f("e41fffbc", "你视频的总观看时间。"),
-                f("if2909ba", "观看时间"),
-                f("i0e5bf4c", "您的视频");
-            f("ed99baea", "抢先体验测试版"),
+                f("if2909ba", "观看时间");
+            f("i0e5bf4c", "您的视频"),
+                f("ed99baea", "抢先体验测试版"),
                 f("gf898b70", "高级搜索"),
                 f("d2a43a7a", '同时包含 "ai" 和 "startup"'),
                 f("a8584698", "ai startup"),
@@ -5889,9 +5890,9 @@
                     return e.timestamp + "已结束";
                 }),
                 f("daca8a2c", "在悬浮窗中打开"),
-                f("e3aac82a", "正在加载播客"),
-                f("i0ed3f4e", "事件图片");
-            f("cbae35fa", "举报播客"),
+                f("e3aac82a", "正在加载播客");
+            f("i0ed3f4e", "事件图片"),
+                f("cbae35fa", "举报播客"),
                 f("fd12ab58", "贴文集"),
                 f("a226497c", "创建新社群"),
                 f("d7346632", "你尚未加入任何社群"),
@@ -6887,9 +6888,9 @@
                 f("c0195168", "更改你的应用图标和导航选项"),
                 f("b6b5dc94", "通过认证"),
                 f("b06db848", "在平台上脱颖而出"),
-                f("e3e3a97c", "通过你的帖子赚取收入分成"),
-                f("f15bc24e", "提高 Grok 限额");
-            f("c4666e1c", "更多使用我们的最新模型 Grok 3。"),
+                f("e3e3a97c", "通过你的帖子赚取收入分成");
+            f("f15bc24e", "提高 Grok 限额"),
+                f("c4666e1c", "更多使用我们的最新模型 Grok 3。"),
                 f("he74ae7a", "最高的 Grok 使用限额"),
                 f("f5732cd4", "此外，已扩大 DeepSearch 和思考功能的使用范围"),
                 f("e0198956", "赚取认证账号与你在 X 上发布的内容互动而产生的收入分成。"),
@@ -7205,6 +7206,36 @@
                 f("hd80bd3e", "推广帖子"),
                 f("fe2b0008", "了解如何使用 X"),
                 f("h257d4aa", "选择要推广的帖子"),
+                f("fe946974", "Your trial of X without ads"),
+                f("f6c50ec0", "Your ad-free trial has ended"),
+                f("b1319404", "Ads avoided"),
+                f("baa4acae", "You’re seeing more personalized content."),
+                f("c00e8600", "Estimated time saved"),
+                f("ic073e4e", "Your time is valuable."),
+                f("eb866e88", "Estimated 1-year time savings"),
+                f("aa77b70c", "Based on your usage."),
+                f("c534c6b4", "We’re crunching the numbers..."),
+                f("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                f("cc10f019", function (e) {
+                    return e.minutes + " 分钟";
+                }),
+                f("f9b6b7d3", function (e) {
+                    return e.hours + " 小时";
+                }),
+                f("a9af8753", function (e) {
+                    return e.days + " 天、" + e.hours + " 小时";
+                }),
+                f("b93d00e5", function (e) {
+                    return e.days + " 天";
+                }),
+                f("be88be23", function (e) {
+                    return "你的 " + e.durationInDays + " 天免广告试用已激活";
+                }),
+                f("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                f("ae3f3b0e", "Enjoy!"),
+                f("cdac8dc4", "See your new feed"),
+                f("dec99336", "Ad-free"),
+                f("i95803fa", "Unfortunately, you are not eligible at this time."),
                 f("d28a1d72", '通过 Radar 抢先发现趋势"'),
                 f("fb70427a", "推出 X 上功能最强大的搜索工具。"),
                 f("i54bf620", "监控关键词"),
@@ -7837,36 +7868,7 @@
                 f("j26dee0e", "删除附属账号"),
                 f("e30cbdf0", "这个附属账号是一个认证组织订阅者并且必须保持组织身份。不能将它们更改为个人。"),
                 f("j3115ce8", "个人"),
-                f("d8bb1d84", "组织"),
-                f("e970bdbd", function (e) {
-                    return "剩余 " + e.count + " 次邀请";
-                }),
-                f("id67d953", function (e) {
-                    return "在检索你的 Stripe 结账详细信息时遇到问题。如果该问题始终存在，请联系 " + e.supportEmail + "。";
-                }),
-                f("f323d314", "重新发送"),
-                f("ac645cde", "你可以随时再次添加它们。"),
-                f("d12af2dd", function (e) {
-                    return "你确定要删除给 @" + e.screenName + " 的这个邀请吗？";
-                }),
-                f("ib60b2d5", function (e) {
-                    return "你确定要向 @" + e.screenName + " 重新发送这个邀请吗？";
-                }),
-                f("ec6e7d9a", "在完成待处理的级别切换之前，你的账号将处于只读模式。请前往 Stripe 检查你的付款，以确保级别切换成功。"),
-                f("b33d1518", "从支持的集成或自定义 XML Feed 同步工作机会"),
-                f("dd2db402", "第 1 步：收集所需信息"),
-                f("edb098c2", "第 2 步：联系我们的支持团队"),
-                f("c4474460", "第 2 步：发送电子邮件给我们的支持团队"),
-                f("a08da0fa", "接下来会发生什么？"),
-                f("c127374e", "给我们发送私信"),
-                f("b2cb2a0c", "你的认证组织账号的用户名"),
-                f("b8e64002", "你的申请人跟踪系统的名称"),
-                f("acb99db6", "你发布工作机会的求职网站 URL"),
-                f("a64a5b7a", "将所需的信息发送给我们的支持团队，以便开始集成过程。"),
-                f("e3dffb4e", "复制下面的支持邮件地址，并将所需的信息发送给我们的支持团队，以便开始集成过程。"),
-                f("b4fef99e", "我们的支持团队收到你的请求后，将对你的信息进行审查，并协助你配置集成。"),
-                f("h37f2d96", "请注意，目前并未支持所有的申请人跟踪系统。"),
-                f("ce102a20", "重定向至 Stripe");
+                f("d8bb1d84", "组织");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7905,7 +7907,36 @@
                     r(e, c)
                 );
             }
-            f("ddfd6718", "付款失败"),
+            f("e970bdbd", function (e) {
+                return "剩余 " + e.count + " 次邀请";
+            }),
+                f("id67d953", function (e) {
+                    return "在检索你的 Stripe 结账详细信息时遇到问题。如果该问题始终存在，请联系 " + e.supportEmail + "。";
+                }),
+                f("f323d314", "重新发送"),
+                f("ac645cde", "你可以随时再次添加它们。"),
+                f("d12af2dd", function (e) {
+                    return "你确定要删除给 @" + e.screenName + " 的这个邀请吗？";
+                }),
+                f("ib60b2d5", function (e) {
+                    return "你确定要向 @" + e.screenName + " 重新发送这个邀请吗？";
+                }),
+                f("ec6e7d9a", "在完成待处理的级别切换之前，你的账号将处于只读模式。请前往 Stripe 检查你的付款，以确保级别切换成功。"),
+                f("b33d1518", "从支持的集成或自定义 XML Feed 同步工作机会"),
+                f("dd2db402", "第 1 步：收集所需信息"),
+                f("edb098c2", "第 2 步：联系我们的支持团队"),
+                f("c4474460", "第 2 步：发送电子邮件给我们的支持团队"),
+                f("a08da0fa", "接下来会发生什么？"),
+                f("c127374e", "给我们发送私信"),
+                f("b2cb2a0c", "你的认证组织账号的用户名"),
+                f("b8e64002", "你的申请人跟踪系统的名称"),
+                f("acb99db6", "你发布工作机会的求职网站 URL"),
+                f("a64a5b7a", "将所需的信息发送给我们的支持团队，以便开始集成过程。"),
+                f("e3dffb4e", "复制下面的支持邮件地址，并将所需的信息发送给我们的支持团队，以便开始集成过程。"),
+                f("b4fef99e", "我们的支持团队收到你的请求后，将对你的信息进行审查，并协助你配置集成。"),
+                f("h37f2d96", "请注意，目前并未支持所有的申请人跟踪系统。"),
+                f("ce102a20", "重定向至 Stripe"),
+                f("ddfd6718", "付款失败"),
                 f("i90ea7d2", "请立即更新你的账单，以保留你的特权。"),
                 f("a62359e6", "认证组织设置"),
                 f("ge221b7c", "升级认证组织订阅，以便访问附属账号并获取更多广告积分。"),
@@ -8883,8 +8914,8 @@
                 f("c1658fc6", "无法播放该媒体。"),
                 f("h519ae04", "由于版权声明，此媒体已被禁用。"),
                 f("ce871584", "此播客已结束。"),
-                f("c101eb96", "此播客不可用。"),
-                f("gb24a514", "该媒体已因版权所有方的举报而被禁用。"),
+                f("c101eb96", "此播客不可用。");
+            f("gb24a514", "该媒体已因版权所有方的举报而被禁用。"),
                 f("hcaf3e63", function (e) {
                     return "由于 " + e.holder + " 声称拥有版权，此媒体已被禁用。";
                 }),
@@ -8908,10 +8939,10 @@
                 f("ecda5f9e", "误导"),
                 f("a423473c", "法律要求的声明"),
                 f("b3296688", "展示受限"),
-                f("ccd32094", "现在");
-            f("abfcce0d", function (e) {
-                return e.amountOfTime + " 前";
-            }),
+                f("ccd32094", "现在"),
+                f("abfcce0d", function (e) {
+                    return e.amountOfTime + " 前";
+                }),
                 f("ae408b76", "你已转帖"),
                 f("j355f008", "已置顶帖子"),
                 f("habf9678", "已被作者置顶"),
@@ -12917,7 +12948,7 @@
                     Object.defineProperty(f, "prototype", { writable: !1 }),
                     m
                 );
-            })(a(332920)._ActualI18NFormatMessage || d.Component);
+            })(a(111677)._ActualI18NFormatMessage || d.Component);
             f("_ActualI18NFormatMessage", o),
                 f("I18NFormatMessage", function (e) {
                     return d.createElement(o, e);
@@ -13272,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.1076c0da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.9f8e79aa.js.map

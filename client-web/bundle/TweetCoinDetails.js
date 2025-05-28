@@ -8,7 +8,7 @@
                 n = l(466999),
                 r = l(325686),
                 i = l(392237),
-                s = l(332920);
+                s = l(111677);
             const o = l.n(s)().e5b0063d;
             let d = 0;
             class c extends a.Component {
@@ -131,6 +131,12 @@
                 return e ? n.createElement(r.Z, { title: e }, o) : o;
             };
         },
+        349035: (e, t, l) => {
+            l.d(t, { Z: () => r });
+            var a = l(202784),
+                n = l(272175);
+            const r = (0, l(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), a.createElement(n.ql, null, a.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
+        },
         334346: (e, t, l) => {
             l.d(t, { C: () => o, Z: () => s });
             var a = l(807896),
@@ -143,27 +149,26 @@
                     return n.createElement(i.ZP, { identifier: l }, n.createElement(r.Z, (0, a.Z)({ ref: t }, e)));
                 });
         },
-        231035: (e, t, l) => {
-            l.d(t, { Z: () => h });
+        56851: (e, t, l) => {
+            l.d(t, { Z: () => y });
             var a = l(202784),
                 n = l(420740),
                 r = l(108362),
                 i = l(731708),
                 s = l(154003),
                 o = l(392237),
-                d = l(332920),
+                d = l(111677),
                 c = l.n(d),
-                u = l(272175);
-            const p = (0, l(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), a.createElement(u.ql, null, a.createElement("meta", { content: "noindex, nofollow", name: "robots" })))),
-                m = "error-detail",
-                g = c().e49537c2,
-                y = c().a9ae1e78;
-            class h extends a.PureComponent {
+                u = l(349035);
+            const p = "error-detail",
+                m = c().e49537c2,
+                g = c().a9ae1e78;
+            class y extends a.PureComponent {
                 render() {
-                    return a.createElement(n.Z, { testID: m }, a.createElement(p, null), a.createElement(r.Z, { style: k.root }, a.createElement(i.ZP, { align: "center", color: "gray700", style: k.retryText }, g), a.createElement(s.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, y)));
+                    return a.createElement(n.Z, { testID: p }, a.createElement(u.Z, null), a.createElement(r.Z, { style: h.root }, a.createElement(i.ZP, { align: "center", color: "gray700", style: h.retryText }, m), a.createElement(s.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, g)));
                 }
             }
-            const k = o.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+            const h = o.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         652904: (e, t, l) => {
             l.d(t, { Z: () => c });
@@ -275,12 +280,12 @@
                 n = l(386802),
                 r = l(108362),
                 i = l(392237),
-                s = l(332920),
+                s = l(111677),
                 o = l.n(s),
                 d = l(187669),
                 c = l(449067),
                 u = l(38293),
-                p = l(231035),
+                p = l(56851),
                 m = l(652904),
                 g = l(952793),
                 y = l(163889),
@@ -591,12 +596,12 @@
                 T = l(844685),
                 C = l(167630),
                 F = l(392237),
-                L = l(332920),
+                L = l(111677),
                 B = l.n(L),
                 x = l(856151),
                 K = l(980407),
-                S = l(965245),
-                v = l(301410),
+                v = l(965245),
+                S = l(301410),
                 D = l(293115),
                 R = l(312771),
                 I = l(466441),
@@ -615,7 +620,7 @@
                 G = B().fbb7764b,
                 j = { page: "tweet_coin_details" },
                 $ = _,
-                X = (0, v.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
+                X = (0, S.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
                 Y = (e) => `${e.rank}`,
                 J = (e) => null != e && e > 0,
                 ee = (e) => {
@@ -637,7 +642,7 @@
                                         c = J(n),
                                         u = e?.viewer_v2?.user_results?.result,
                                         p = E.ZP.getTruncatedCount(Number(l));
-                                    return b.createElement(K.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(T.Z, { text: O }), J(o) ? b.createElement(z, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(z, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(T.Z, { text: Q }), b.createElement(S.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
+                                    return b.createElement(K.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(T.Z, { text: O }), J(o) ? b.createElement(z, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(z, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(T.Z, { text: Q }), b.createElement(v.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
                                 }
                                 return b.createElement(C.Z, null);
                             },
@@ -650,4 +655,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.a3b15e2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.246c0f8a.js.map

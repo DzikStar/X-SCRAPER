@@ -10,7 +10,7 @@
                 i = n(107267),
                 s = n(731708),
                 r = n(392237),
-                o = n(332920),
+                o = n(111677),
                 c = n.n(o),
                 d = n(306677),
                 u = n(725405),
@@ -209,7 +209,7 @@
                 );
             };
         },
-        669636: (e, t, n) => {
+        695356: (e, t, n) => {
             function a(e, t) {
                 c(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
             }
@@ -243,7 +243,7 @@
                 r = n(154003),
                 o = n(392237),
                 c = n(757483),
-                d = n(332920),
+                d = n(111677),
                 u = n.n(d),
                 m = n(323265),
                 p = n(725405),
@@ -251,7 +251,7 @@
                 g = n(390387),
                 h = n(530732),
                 f = n(306677),
-                b = n(669636);
+                b = n(695356);
             function k({ chartData: e, typeMetadata: t }) {
                 const n = a.useMemo(() => {
                         if (!e.length) return [];
@@ -462,4 +462,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NewsSentimentSidebar.a9f1daca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NewsSentimentSidebar.54a8ec8a.js.map

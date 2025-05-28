@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.AudioContextSpaceClip", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
+    ["loader.AudioContextSpaceClip", "loader.AudioContextVoiceMedia"],
     {
         97837: (t, e, s) => {
-            s.d(e, { Z: () => u });
+            s.d(e, { Z: () => h });
             var o = s(202784),
                 i = s(525744),
                 n = s(859799),
@@ -90,7 +90,7 @@
                 }
             }
             l.defaultProps = { obstructionDetection: i.Z };
-            const u = (0, n.Z)(l);
+            const h = (0, n.Z)(l);
         },
         420412: (t, e, s) => {
             s.d(e, { Z: () => a });
@@ -101,8 +101,8 @@
                 c = s(392237);
             function a({ borderColor: t = "borderColor", isSlim: e = !1, label: s }) {
                 const { isWebRedesign: a } = n.ZP.useProps(),
-                    u = "borderColor" === t || "nestedBorderColor" === t ? l[t] : { backgroundColor: c.default.theme.colors[t] ?? c.default.theme.colors.borderColor };
-                return s ? o.createElement(r.Z, { style: !e && l.root, withGutter: !0 }, o.createElement(i.Z, { style: l.gapColumn }, o.createElement(i.Z, { style: [l.gap, u] })), o.createElement(i.Z, { style: l.gapText }, s), o.createElement(i.Z, { style: l.gapColumn }, o.createElement(i.Z, { style: [l.gap, u] }))) : o.createElement(i.Z, { style: [!e && l.root, a() && l.rootRedesign, l.gap, u] });
+                    h = "borderColor" === t || "nestedBorderColor" === t ? l[t] : { backgroundColor: c.default.theme.colors[t] ?? c.default.theme.colors.borderColor };
+                return s ? o.createElement(r.Z, { style: !e && l.root, withGutter: !0 }, o.createElement(i.Z, { style: l.gapColumn }, o.createElement(i.Z, { style: [l.gap, h] })), o.createElement(i.Z, { style: l.gapText }, s), o.createElement(i.Z, { style: l.gapColumn }, o.createElement(i.Z, { style: [l.gap, h] }))) : o.createElement(i.Z, { style: [!e && l.root, a() && l.rootRedesign, l.gap, h] });
             }
             const l = c.default.create((t) => ({ borderColor: { backgroundColor: c.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: c.default.theme.colors.nestedBorderColor }, gap: { height: t.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: t.spaces.space4 }, rootRedesign: { marginHorizontal: t.spaces.space16 } }));
         },
@@ -141,4 +141,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceClip.4a3f450a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceClip.f1e69bba.js.map

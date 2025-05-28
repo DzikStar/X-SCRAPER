@@ -22,7 +22,7 @@
                 m = (0, c.Z)().propsFromState(() => ({ conversationId: d, inboxType: u }));
             var p = n(554518),
                 h = n(271702),
-                b = n(332920),
+                b = n(111677),
                 f = n.n(b),
                 E = n(640872),
                 y = n(740633),
@@ -408,7 +408,7 @@
             n.r(t), n.d(t, { DMParticipantsScreen: () => _, default: () => S });
             var r = n(202784),
                 s = n(392237),
-                o = n(332920),
+                o = n(111677),
                 a = n.n(o),
                 c = n(290402),
                 l = n(253493),
@@ -456,7 +456,7 @@
                 a = n(731708),
                 c = n(868634),
                 l = n(392237),
-                i = n(332920);
+                i = n(111677);
             const d = n.n(i)().ca9af866;
             function u(e) {
                 const t = [],
@@ -609,4 +609,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.e4850dba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.3d1f41ca.js.map

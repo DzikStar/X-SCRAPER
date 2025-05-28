@@ -15,7 +15,7 @@
             var l = a(202784),
                 n = a(107267),
                 s = a(67369),
-                i = a(332920),
+                i = a(111677),
                 c = a.n(i),
                 r = a(323265),
                 o = a(252021),
@@ -337,7 +337,7 @@
                 c = a(98996),
                 r = a(247291),
                 o = a(392237),
-                m = a(332920),
+                m = a(111677),
                 u = a.n(m),
                 d = a(952793);
             const p = ({ content: e, subtitle: t, title: a }) => l.createElement(n.Z, { style: b.root }, l.createElement(i.ZP, { size: "headline1", weight: "heavy" }, a), t && l.createElement(i.ZP, { size: "subtext1", style: b.subtitle }, t), e && l.createElement(n.Z, { style: b.content }, e)),
@@ -373,7 +373,7 @@
                 i = a(731708),
                 c = a(154003),
                 r = a(392237),
-                o = a(332920),
+                o = a(111677),
                 m = a.n(o),
                 u = a(468670),
                 d = a(72591),
@@ -517,4 +517,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e4e3d8bb.98db206a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e4e3d8bb.82e87b1a.js.map

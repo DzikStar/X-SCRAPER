@@ -1,13 +1,13 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.MediaPreviewVideoPlayer"],
+    ["loader.MediaPreviewVideoPlayer", "icons/IconMediaCollapse-js"],
     {
         298607: (e, t, r) => {
             r.r(t), r.d(t, { __DANGEROUS_IMPORT_VIDEOPLAYER__: () => q });
             var n = r(202784),
                 o = r(738584),
-                i = r(332920),
-                a = r.n(i),
+                a = r(111677),
+                i = r.n(a),
                 s = r(789403),
                 l = r(908629),
                 c = r(864386),
@@ -16,24 +16,24 @@
                 h = r(325686),
                 p = r(643442),
                 m = r(737691),
-                b = r(466445),
-                S = r(841972),
-                v = r(647174),
-                g = r(38502),
-                f = r(804579),
-                y = r(912021),
+                S = r(466445),
+                b = r(841972),
+                g = r(647174),
+                v = r(38502),
+                y = r(804579),
+                f = r(912021),
                 C = r(392237),
                 _ = r(41871),
-                w = r(458774),
-                E = r(420922),
-                T = r(103849),
-                P = r(70889),
-                k = r(445014),
+                E = r(458774),
+                P = r(420922),
+                w = r(103849),
+                T = r(70889),
+                R = r(445014),
                 x = r(986460),
-                R = r(424713),
-                Z = r(2138),
-                M = r(173739);
-            const A = a().f06f2e53;
+                Z = r(424713),
+                k = r(2138),
+                A = r(173739);
+            const M = i().f06f2e53;
             class B extends n.PureComponent {
                 constructor(e) {
                     super(e),
@@ -43,7 +43,7 @@
                             const r = t?.(e) ?? this._defaultGetScrubToFraction(e);
                             "number" == typeof r && this._throttledPlayerSeek(r);
                         }),
-                        (this._throttledPlayerSeek = (0, Z.Z)(
+                        (this._throttledPlayerSeek = (0, k.Z)(
                             (e) => {
                                 this.props.playerApi.scrubToFraction(e);
                             },
@@ -61,70 +61,70 @@
                 }
                 render() {
                     const { "aria-label": e, currentTime: t, duration: r, isSeeking: o } = this.props,
-                        i = this.state.isScrubbing || o ? this.state.scrubTo : t;
-                    return "number" == typeof i && "number" == typeof r && r > 0 ? n.createElement(M.Z, { accessibilityLabelValueText: A({ currentTime: (0, R.mr)(i), durationTime: (0, R.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: i, withHidingThumb: !0 }) : null;
+                        a = this.state.isScrubbing || o ? this.state.scrubTo : t;
+                    return "number" == typeof a && "number" == typeof r && r > 0 ? n.createElement(A.Z, { accessibilityLabelValueText: M({ currentTime: (0, Z.mr)(a), durationTime: (0, Z.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: a, withHidingThumb: !0 }) : null;
                 }
             }
             const F = B,
-                L = a().j25d7cca,
-                O = a().a858b25c,
-                z = a().hea01798,
-                H = "PreviewControlBar-",
-                D = { CAPTIONS: `${H}Captions`, FULLSCREEN: `${H}Fullscreen` },
-                I = (e) => e === w.c.narrow || e === w.c.veryNarrow;
-            class G extends n.PureComponent {
+                O = i().j25d7cca,
+                L = i().a858b25c,
+                H = i().hea01798,
+                z = "PreviewControlBar-",
+                D = { CAPTIONS: `${z}Captions`, FULLSCREEN: `${z}Fullscreen` },
+                I = (e) => e === E.c.narrow || e === E.c.veryNarrow;
+            class U extends n.PureComponent {
                 constructor(e) {
                     if (
                         (super(e),
-                        (this.state = { currentBreakpoint: w.c.wide, showScrubber: !0, scrubTime: 0 }),
+                        (this.state = { currentBreakpoint: E.c.wide, showScrubber: !0, scrubTime: 0 }),
                         (this._parentRef = n.createRef()),
                         (this._renderActionButton = (e, t) => {
                             const { controls: r, isPlaying: o } = t,
-                                { pause: i, play: a, replay: s } = e,
+                                { pause: a, play: i, replay: s } = e,
                                 { currentBreakpoint: l } = this.state,
-                                c = (0, R.Ci)(t),
+                                c = (0, Z.Ci)(t),
                                 u = I(l) ? "xSmall" : "medium";
-                            return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(T.Z, { "aria-label": x.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: i, size: u }) : r.isReplayButtonShown ? n.createElement(T.Z, { "aria-label": x.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(T.Z, { "aria-label": x.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(b.default, null), onPress: a, size: u });
+                            return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(w.Z, { "aria-label": x.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: a, size: u }) : r.isReplayButtonShown ? n.createElement(w.Z, { "aria-label": x.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(w.Z, { "aria-label": x.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(S.default, null), onPress: i, size: u });
                         }),
                         (this._renderFullScreenButton = (e, t) => {
                             const { fullscreen: r } = t,
                                 { currentBreakpoint: o } = this.state,
-                                i = this._fullScreenIcon,
-                                a = I(o) ? "xSmall" : "medium";
-                            return r.isFullscreen ? n.createElement(T.Z, { "aria-label": x.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._exitFullScreen(e), size: a }) : n.createElement(T.Z, { "aria-label": x.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._requestFullScreen(e), size: a });
+                                a = this._fullScreenIcon,
+                                i = I(o) ? "xSmall" : "medium";
+                            return r.isFullscreen ? n.createElement(w.Z, { "aria-label": x.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(a, { isFullscreen: r.isFullscreen }), onPress: this._exitFullScreen(e), size: i }) : n.createElement(w.Z, { "aria-label": x.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(a, { isFullscreen: r.isFullscreen }), onPress: this._requestFullScreen(e), size: i });
                         }),
                         (this._fullScreenIcon = ({ isFullscreen: e, style: t }) => {
-                            const { hidden: r, shown: o } = N;
-                            return n.createElement(n.Fragment, null, n.createElement(S.default, { style: e ? r : o }), n.createElement(v.default, { style: e ? o : r }));
+                            const { hidden: r, shown: o } = G;
+                            return n.createElement(n.Fragment, null, n.createElement(b.default, { style: e ? r : o }), n.createElement(g.default, { style: e ? o : r }));
                         }),
                         (this._requestFullScreen = (e) => () => {
                             e.fullScreen(this.props.containerRef);
                         }),
                         (this._exitFullScreen = (e) => () => e.exitFullScreen()),
-                        (this._getScrubToFraction = (0, y.Z)((e) => (t) => (0, R.aZ)(e, t))),
+                        (this._getScrubToFraction = (0, f.Z)((e) => (t) => (0, Z.aZ)(e, t))),
                         (this._renderScrubber = (e) =>
                             this.props.showScrubber && this.state.showScrubber
                                 ? n.createElement(
                                       h.Z,
-                                      { style: k.ZP.scrubber },
-                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": z, currentTime: (0, R.SY)(t), duration: (0, R.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
+                                      { style: R.ZP.scrubber },
+                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": H, currentTime: (0, Z.SY)(t), duration: (0, Z.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
                                   )
                                 : null),
                         (this._renderVolume = (e, t) => {
                             const { isMuted: r, volume: o } = t,
-                                { mute: i, setVolume: a, unmute: s } = e,
+                                { mute: a, setVolume: i, unmute: s } = e,
                                 { containerHeight: l, currentBreakpoint: c } = this.state,
-                                u = r ? s : i,
+                                u = r ? s : a,
                                 d = r ? x.cm : x.GS;
-                            return n.createElement(_.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: x.Nj, containerHeight: l, isMuted: r, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(a), size: I(c) ? "xSmall" : "medium", volumePercent: 100 * o });
+                            return n.createElement(_.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: x.Nj, containerHeight: l, isMuted: r, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(i), size: I(c) ? "xSmall" : "medium", volumePercent: 100 * o });
                         }),
                         (this._renderCaptionsButton = (e, t) => {
-                            const r = (0, R.Ci)(t);
+                            const r = (0, Z.Ci)(t);
                             if (r && r.hasCaptions) {
                                 const { currentBreakpoint: r } = this.state,
                                     { areCaptionsShown: o } = t,
-                                    { toggleCaptions: i } = e;
-                                return n.createElement(T.Z, { "aria-label": o ? L : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(f.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
+                                    { toggleCaptions: a } = e;
+                                return n.createElement(w.Z, { "aria-label": o ? O : L, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(v.default, null) : n.createElement(y.default, null), onPress: a, size: I(r) ? "xSmall" : "medium", testID: "captions" });
                             }
                         }),
                         (this._renderTimePlayed = () =>
@@ -132,23 +132,23 @@
                                 const { currentBreakpoint: t } = this.state,
                                     r = this._getTimestampValues(e);
                                 if (!r) return null;
-                                const o = this._formatTimePlayed({ ...r, isCompact: t === w.c.veryNarrow });
-                                return n.createElement(P.Z, { style: I(t) && { fontSize: C.default.theme.fontSizes.subtext2 } }, o);
+                                const o = this._formatTimePlayed({ ...r, isCompact: t === E.c.veryNarrow });
+                                return n.createElement(T.Z, { style: I(t) && { fontSize: C.default.theme.fontSizes.subtext2 } }, o);
                             })),
                         (this._getTimestampValues = (e) => {
                             const { controls: t, isSeeking: r } = e,
                                 { playbackTimeRange: n, scrubToFraction: o } = t,
-                                i = (0, R.MU)((0, R.Ci)(e)),
-                                a = (0, R.zm)(e);
-                            if (!i || !a) return null;
-                            if (r && void 0 !== o && i) {
-                                return { duration: a, currentTime: o * i - (n?.startTimeS ?? 0) };
+                                a = (0, Z.MU)((0, Z.Ci)(e)),
+                                i = (0, Z.zm)(e);
+                            if (!a || !i) return null;
+                            if (r && void 0 !== o && a) {
+                                return { duration: i, currentTime: o * a - (n?.startTimeS ?? 0) };
                             }
-                            return { duration: a, currentTime: (0, R.SY)(e) };
+                            return { duration: i, currentTime: (0, Z.SY)(e) };
                         }),
                         (this._formatTimePlayed = ({ currentTime: e, duration: t, isCompact: r }) => {
                             const n = t - e;
-                            return r ? `${(0, R.mr)(Math.round(n))}` : `${(0, R.mr)(Math.round(e))} / ${(0, R.mr)(Math.round(t))}`;
+                            return r ? `${(0, Z.mr)(Math.round(n))}` : `${(0, Z.mr)(Math.round(e))} / ${(0, Z.mr)(Math.round(t))}`;
                         }),
                         (this._showScrubberHandler = (e) => () => this.setState({ showScrubber: e })),
                         (this._setVolumePercent = (e) => (t) => {
@@ -162,7 +162,7 @@
                         }),
                         (this._convertWidthToBreakpoint = (e) => {
                             let t;
-                            return e > w.U.wide ? (t = w.c.wide) : e < w.U.veryNarrow ? (t = w.c.veryNarrow) : e < w.U.narrow && (t = w.c.narrow), t;
+                            return e > E.U.wide ? (t = E.c.wide) : e < E.U.veryNarrow ? (t = E.c.veryNarrow) : e < E.U.narrow && (t = E.c.narrow), t;
                         }),
                         e.containerRef)
                     ) {
@@ -175,35 +175,35 @@
                 }
                 render() {
                     const { hideControls: e, playerApi: t, playerState: r } = this.props;
-                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: k.i3 }, n.createElement(E.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: D.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: D.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
+                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: R.i3 }, n.createElement(P.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: D.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: D.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
                 }
             }
-            G.defaultProps = { showScrubber: !0 };
-            const U = G,
-                N = { hidden: { display: "none", height: "1.5em" }, shown: { display: "block", height: "1.5em" } },
-                W = ({ playerApi: e, playerState: t }) =>
+            U.defaultProps = { showScrubber: !0 };
+            const W = U,
+                G = { hidden: { display: "none", height: "1.5em" }, shown: { display: "block", height: "1.5em" } },
+                N = ({ playerApi: e, playerState: t }) =>
                     n.createElement(h.Z, {
                         onClick: () => {
                             t?.isPlaying ? e.pause() : e.play();
                         },
                         style: C.default.absoluteFill,
                     }),
-                V = { MEDIA_NOT_SUPPORTED: a().f0e1fb48 },
-                Y = (e, t) => (t ? V[s.Z.MEDIA_NOT_SUPPORTED] : e ? V[e] : d.I);
-            const X = function (e) {
-                const { containerRef: t, hideControls: r, isBrowserSupported: o, playerApi: i, playerState: a, showScrubber: s } = e;
-                if (!i || !a || !t) return null;
+                V = { MEDIA_NOT_SUPPORTED: i().f0e1fb48 },
+                j = (e, t) => (t ? V[s.Z.MEDIA_NOT_SUPPORTED] : e ? V[e] : d.I);
+            const Y = function (e) {
+                const { containerRef: t, hideControls: r, isBrowserSupported: o, playerApi: a, playerState: i, showScrubber: s } = e;
+                if (!a || !i || !t) return null;
                 const d = !1 === o,
-                    h = Boolean(a.error) || d;
-                return n.createElement(n.Fragment, null, n.createElement(W, { playerApi: i, playerState: a }), n.createElement(c.Z, null, n.createElement(U, { containerRef: t, hideControls: r, playerApi: i, playerState: a, showScrubber: s })), n.createElement(l.Z, { show: h }, h && n.createElement(u.Z, { displayBackgroundImage: !0, errorMessage: Y(a.error, d), imageSrc: a.posterImage })));
+                    h = Boolean(i.error) || d;
+                return n.createElement(n.Fragment, null, n.createElement(N, { playerApi: a, playerState: i }), n.createElement(c.Z, null, n.createElement(W, { containerRef: t, hideControls: r, playerApi: a, playerState: i, showScrubber: s })), n.createElement(l.Z, { show: h }, h && n.createElement(u.Z, { displayBackgroundImage: !0, errorMessage: j(i.error, d), imageSrc: i.posterImage })));
             };
-            var j = r(640290),
+            var X = r(640290),
                 $ = r(614425),
                 K = r(946208);
             const q = function (e) {
                 const [t, r] = n.useState(null),
-                    i = e.mediaFile.duration,
-                    a = 1e3 * i,
+                    a = e.mediaFile.duration,
+                    i = 1e3 * a,
                     { subtitles: s, trimData: l } = e;
                 let c, u;
                 if (s?.upload?.mediaFile instanceof K.ZP) {
@@ -215,20 +215,20 @@
                     n.useEffect(() => {
                         if (t && l) {
                             const e = l.startTime || 0,
-                                r = l.endTime || i;
-                            t.scrubToFraction(e / i), t.setPlaybackTimeRange({ startTimeS: e, endTimeS: r });
+                                r = l.endTime || a;
+                            t.scrubToFraction(e / a), t.setPlaybackTimeRange({ startTimeS: e, endTimeS: r });
                         }
-                    }, [i, l, t]),
-                    n.createElement(o.Z, { aspectRatio: e.mediaFile.width / e.mediaFile.height, basePlayerClass: $.Y7, configType: "static", contentId: e.mediaId, contentType: "media_entity", durationMs: a, httpClient: J, initiallyMuted: !0, key: u, loop: !0, onApiReady: r, playerId: "composer_media_preview", poster: e.mediaFile.thumbnail, size: "fill", variants: e.variants, videoEl: c }, ({ containerRef: t, playerApi: r, playerState: o }) => n.createElement(X, { containerRef: t, isBrowserSupported: e.mediaFile.isBrowserSupported, playerApi: r, playerState: o, showScrubber: !0 }))
+                    }, [a, l, t]),
+                    n.createElement(o.Z, { aspectRatio: e.mediaFile.width / e.mediaFile.height, basePlayerClass: $.Y7, configType: "static", contentId: e.mediaId, contentType: "media_entity", durationMs: i, httpClient: J, initiallyMuted: !0, key: u, loop: !0, onApiReady: r, playerId: "composer_media_preview", poster: e.mediaFile.thumbnail, size: "fill", variants: e.variants, videoEl: c }, ({ containerRef: t, playerApi: r, playerState: o }) => n.createElement(Y, { containerRef: t, isBrowserSupported: e.mediaFile.isBrowserSupported, playerApi: r, playerState: o, showScrubber: !0 }))
                 );
             };
-            const J = new j.ZP();
+            const J = new X.ZP();
         },
         215337: (e, t, r) => {
-            r.d(t, { Z: () => a });
+            r.d(t, { Z: () => i });
             var n = r(202784),
                 o = r(325686);
-            class i extends n.Component {
+            class a extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.getColors = () => {
@@ -243,54 +243,144 @@
                         });
                 }
                 render() {
-                    const { angle: e, angleUnit: t, children: r, style: i } = this.props;
-                    return n.createElement(o.Z, { style: [i, { backgroundImage: `linear-gradient(${e}${t},${this.getColors()})` }] }, r);
+                    const { angle: e, angleUnit: t, children: r, style: a } = this.props;
+                    return n.createElement(o.Z, { style: [a, { backgroundImage: `linear-gradient(${e}${t},${this.getColors()})` }] }, r);
                 }
             }
-            i.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
-            const a = i;
+            a.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
+            const i = a;
         },
         173739: (e, t, r) => {
-            r.d(t, { Z: () => a });
+            r.d(t, { Z: () => i });
             var n = r(202784),
                 o = r(31501),
-                i = r(879891);
-            const a = ({ accessibilityLabelValueText: e, "aria-label": t, onChange: r, onDarkBackground: a, thumbLabel: s, value: l, ...c }) => {
-                const { direction: u } = (0, i.Z)(),
-                    d = { ...c, endThumbAccessibilityLabel: t, endThumbAccessibilityLabelValueText: e, endThumbLabel: s, onDarkBackground: a, value: [c.min, l], onChange: (e) => r(e[1]), isSingleSlider: !0, languageWritingDirection: u };
+                a = r(879891);
+            const i = ({ accessibilityLabelValueText: e, "aria-label": t, onChange: r, onDarkBackground: i, thumbLabel: s, value: l, ...c }) => {
+                const { direction: u } = (0, a.Z)(),
+                    d = { ...c, endThumbAccessibilityLabel: t, endThumbAccessibilityLabelValueText: e, endThumbLabel: s, onDarkBackground: i, value: [c.min, l], onChange: (e) => r(e[1]), isSingleSlider: !0, languageWritingDirection: u };
                 return n.createElement(o.Z, d);
             };
+        },
+        738584: (e, t, r) => {
+            r.d(t, { o: () => p, Z: () => b });
+            var n = r(807896),
+                o = r(202784),
+                a = r(928316),
+                i = r(682474),
+                s = r(392237),
+                l = r(893164),
+                c = r(395367),
+                u = r(908478);
+            function d(e) {
+                let t = h(e);
+                return (e) => {
+                    const r = h(e);
+                    return (0, u.Z)(t, r) || (t = r), t;
+                };
+            }
+            function h(e) {
+                if (!e || "object" != typeof e) return e;
+                const t = JSON.parse(JSON.stringify(e));
+                return delete t.dataUsageBytes, (t.tracks = t.tracks.map((e) => ("number" == typeof e.currentTimeMs && delete e.currentTimeMs, e))), t;
+            }
+            function p({ children: e, periodic: t }) {
+                const r = t ? m.PeriodicContext.Consumer : m.Context.Consumer;
+                return o.createElement(r, null, (t) => {
+                    const { aspectRatio: r, containerRef: n, guestsState: o, playerApi: a, playerState: i } = t;
+                    return a && n && i ? e({ aspectRatio: r, guestsState: o, playerApi: a, playerState: i, containerRef: n }) : null;
+                });
+            }
+            class m extends o.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._cache = { stablePlayerState: d(null) }),
+                        (this.state = { hasError: null, guestsState: null, playerApi: null, playerState: null, stablePlayerState: null }),
+                        (this._renderCustomOverlay = () => {
+                            const { children: e, enablePiP: t } = this.props,
+                                { guestsState: r, playerApi: n, stablePlayerState: o } = this.state;
+                            return n && e ? ("function" == typeof e ? e({ enablePiP: t, guestsState: r, playerApi: n, playerState: o, containerRef: this._containerRef }) : e) : null;
+                        }),
+                        (this._handleReload = () => this.setState(() => ({ hasError: null }))),
+                        (this._handlePlayerApi = (e) => (t) => {
+                            const { playerId: r } = this.props;
+                            this.setState({ playerApi: t }),
+                                this.props.onApiReady && this.props.onApiReady(t),
+                                r && e && (this._unregister = e(r, t)),
+                                (this._unsubscribe = t.subscribe((e, t) => {
+                                    const r = this._cache.stablePlayerState(e);
+                                    this.setState({ stablePlayerState: r, playerState: e, guestsState: t }), this.props.onStateUpdate && this.props.onStateUpdate(e, t);
+                                }));
+                        });
+                }
+                componentWillUnmount() {
+                    this._unregister && this._unregister(), this._unsubscribe && this._unsubscribe();
+                }
+                componentDidUpdate() {
+                    if (!this._containerRef) {
+                        const e = a.findDOMNode(this);
+                        e && e instanceof HTMLElement && (this._containerRef = e);
+                    }
+                }
+                componentDidCatch(e, t) {
+                    const r = { error: e, info: t };
+                    this.setState(() => ({ hasError: r }));
+                }
+                render() {
+                    const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: a } = this.state,
+                        { additionalBadges: s, aspectRatio: u, basePlayerClass: d, children: h, includeDisputeLinkInCopyrightErrorMessage: p, isFullScreen: b, objectFitVideo: g, onApiReady: v, onScroll: y, onStateUpdate: f, playerId: C, size: _, ...E } = this.props,
+                        P = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
+                        w = { ...P, playerState: a };
+                    return o.createElement(
+                        i.Z,
+                        { isFullScreen: b, onScroll: y, ratio: u, style: [S.root, S[_]] },
+                        this.state.hasError
+                            ? o.createElement(l.Z, { onReloadPress: this._handleReload })
+                            : o.createElement(
+                                  m.Context.Provider,
+                                  { value: w },
+                                  o.createElement(
+                                      m.PeriodicContext.Provider,
+                                      { value: P },
+                                      o.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => o.createElement(d, (0, n.Z)({}, E, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: g }, setPlayerApi: this._handlePlayerApi(e) }))),
+                                  ),
+                              ),
+                    );
+                }
+            }
+            (m.Consumer = p), (m.defaultProps = { aspectRatio: s.default.theme.aspectRatios.landscape, size: "fill" }), (m.Context = o.createContext({ aspectRatio: s.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null })), (m.PeriodicContext = o.createContext({ aspectRatio: s.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null }));
+            const S = s.default.create({ root: { position: "relative" }, fill: { width: "100%", height: "100%" }, small: { width: 480, height: 270 }, medium: { width: 640, height: 360 }, large: { width: 800, height: 450 } }),
+                b = m;
         },
         420922: (e, t, r) => {
             r.d(t, { Z: () => c });
             var n = r(202784),
                 o = r(325686),
-                i = r(908629),
-                a = r(215337),
+                a = r(908629),
+                i = r(215337),
                 s = r(392237),
                 l = r(445014);
-            const c = ({ actionButton: e, displayDismissableControls: t = !0, leftContent: r, rightContent: c, scrubber: u, skipButton: d, viewCountGraph: h }) => n.createElement(n.Fragment, null, n.createElement(i.Z, { show: t }, n.createElement(a.Z, { colors: [s.default.theme.colors.transparent, s.default.theme.colors.translucentBlack77], style: l.ZP.absoluteContainer })), n.createElement(o.Z, { style: l.ZP.controlContainer }, n.createElement(o.Z, { style: l.ZP.flex }, n.createElement(i.Z, { show: t }, n.createElement(o.Z, { style: l.ZP.controlsBottomOffset }, h, u, n.createElement(o.Z, { style: l.A9 }, n.createElement(o.Z, { style: l.rq }, e, n.createElement(o.Z, { style: [l.ZP.flexRow, l.ZP.flexShrink] }, r)), n.createElement(o.Z, { style: l.Xo }, c))))), d && n.createElement(o.Z, { style: l.ZP.controlsBottomOffset }, d)));
+            const c = ({ actionButton: e, displayDismissableControls: t = !0, leftContent: r, rightContent: c, scrubber: u, skipButton: d, viewCountGraph: h }) => n.createElement(n.Fragment, null, n.createElement(a.Z, { show: t }, n.createElement(i.Z, { colors: [s.default.theme.colors.transparent, s.default.theme.colors.translucentBlack77], style: l.ZP.absoluteContainer })), n.createElement(o.Z, { style: l.ZP.controlContainer }, n.createElement(o.Z, { style: l.ZP.flex }, n.createElement(a.Z, { show: t }, n.createElement(o.Z, { style: l.ZP.controlsBottomOffset }, h, u, n.createElement(o.Z, { style: l.A9 }, n.createElement(o.Z, { style: l.rq }, e, n.createElement(o.Z, { style: [l.ZP.flexRow, l.ZP.flexShrink] }, r)), n.createElement(o.Z, { style: l.Xo }, c))))), d && n.createElement(o.Z, { style: l.ZP.controlsBottomOffset }, d)));
         },
         103849: (e, t, r) => {
             r.d(t, { Z: () => c, g: () => l });
             var n = r(807896),
                 o = r(202784),
-                i = r(154003),
-                a = r(336373);
+                a = r(154003),
+                i = r(336373);
             const s = (e) => {
-                    const { hoverLabelPreferredHorizontalOrientation: t, hoverLabelWithExtraSpace: r, ...a } = e,
+                    const { hoverLabelPreferredHorizontalOrientation: t, hoverLabelWithExtraSpace: r, ...i } = e,
                         s = e["aria-label"] ? { label: e["aria-label"], preferredVerticalOrientation: "up", preferredHorizontalOrientation: e.hoverLabelPreferredHorizontalOrientation, withLayer: !1, withExtraSpace: e.hoverLabelWithExtraSpace } : void 0;
-                    return o.createElement(i.ZP, (0, n.Z)({}, a, { hoverLabel: s, size: e.size || "medium", type: "onMediaText" }));
+                    return o.createElement(a.ZP, (0, n.Z)({}, i, { hoverLabel: s, size: e.size || "medium", type: "onMediaText" }));
                 },
                 l = (e) => {
-                    const { icon: t, onPress: r, scribeNamespace: i, size: l, testID: c, ...u } = e,
-                        d = a.Z.useAnalytics();
+                    const { icon: t, onPress: r, scribeNamespace: a, size: l, testID: c, ...u } = e,
+                        d = i.Z.useAnalytics();
                     return o.createElement(
                         s,
                         (0, n.Z)({}, u, {
                             icon: t,
                             onPress: (e) => {
-                                r && r(e), d.scribe(i);
+                                r && r(e), d.scribe(a);
                             },
                             size: l,
                             testID: c,
@@ -303,9 +393,9 @@
             r.d(t, { Z: () => s });
             var n = r(202784),
                 o = r(731708);
-            const i = (e) => n.createElement(o.ZP, { color: "white", numberOfLines: 1, style: [a.withMargin, e.style] }, e.children),
-                a = r(392237).default.create((e) => ({ withMargin: { marginHorizontal: e.spaces.space4 } })),
-                s = n.memo(i);
+            const a = (e) => n.createElement(o.ZP, { color: "white", numberOfLines: 1, style: [i.withMargin, e.style] }, e.children),
+                i = r(392237).default.create((e) => ({ withMargin: { marginHorizontal: e.spaces.space4 } })),
+                s = n.memo(a);
         },
         458774: (e, t, r) => {
             r.d(t, { U: () => o, c: () => n });
@@ -313,22 +403,22 @@
                 o = Object.freeze({ [n.wide]: 500, [n.narrow]: 300, [n.veryNarrow]: 200 });
         },
         445014: (e, t, r) => {
-            r.d(t, { A9: () => a, Nk: () => i, Xo: () => l, ZP: () => u, eR: () => c, i3: () => o, rq: () => s });
+            r.d(t, { A9: () => i, Nk: () => a, Xo: () => l, ZP: () => u, eR: () => c, i3: () => o, rq: () => s });
             const n = r(392237).default.create((e) => ({ root: { writingDirection: "ltr", position: "absolute", bottom: 0, cursor: "auto", width: "100%" }, container: { paddingHorizontal: e.spaces.space4, paddingBottom: e.spaces.space2 }, absoluteContainer: { paddingHorizontal: e.spaces.space4, paddingBottom: e.spaces.space2, width: "100%", position: "absolute", minHeight: "100%" }, scrubber: { paddingStart: e.spaces.space4, paddingEnd: e.spaces.space4 }, bottomBar: { width: "100%", justifyContent: "space-between" }, actionContainer: { minHeight: e.spaces.space40 }, flex: { flex: 1 }, flexShrink: { flexShrink: 1 }, flexRow: { alignItems: "center", flexDirection: "row" }, rightContainer: { justifyContent: "flex-end" }, leftContainer: { justifyContent: "flex-start", flexGrow: 1 }, controlContainer: { flexDirection: "row", paddingHorizontal: e.spaces.space4 }, controlsBottomOffset: { display: "flex", paddingBottom: e.spaces.space2 }, viewCountGraph: { top: e.spaces.space12, zIndex: -1, paddingStart: e.spaces.space4, paddingEnd: e.spaces.space4 }, liveCircle: { color: e.colors.red500, width: e.spaces.space4 }, notLiveCircle: { color: e.colors.gray100, width: e.spaces.space4 }, barGraphItem: { backgroundColor: "rgba(255, 255, 255, 0.7)", borderColor: "rgba(255, 255, 255, 0.7)", zIndex: 0 }, withMargin: { marginHorizontal: e.spaces.space2, paddingHorizontal: e.spaces.space2 }, skipButtonAffordance: { opacity: 0 }, skipAdText: { fontVariant: "tabular-nums" } })),
                 o = n.root,
-                i = n.container,
-                a = [n.flexRow, n.bottomBar],
+                a = n.container,
+                i = [n.flexRow, n.bottomBar],
                 s = [n.actionContainer, n.leftContainer, n.flexShrink, n.flexRow],
                 l = [n.actionContainer, n.rightContainer, n.flexRow],
                 c = n.skipAdText,
                 u = n;
         },
         864386: (e, t, r) => {
-            r.d(t, { Z: () => b });
+            r.d(t, { Z: () => S });
             var n = r(807896),
                 o = (r(571372), r(202784)),
-                i = r(24812);
-            const a = "click",
+                a = r(24812);
+            const i = "click",
                 s = "focused",
                 l = "mousemove",
                 c = "mouseover",
@@ -343,7 +433,7 @@
                 },
                 p = o.createContext({ observed: { click: new Set(), focused: new Set(), mousemove: new Set(), mouseover: new Set() }, Observer: () => null }),
                 m = o.createContext(() => null);
-            class b extends o.Component {
+            class S extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._timeoutCollection = { click: {}, focused: {}, mousemove: {}, mouseover: {}, touch: {} }),
@@ -358,12 +448,12 @@
                                 const t = this._interactionWatcherRefs[e];
                                 return !t || !t.contains(document.activeElement);
                             })),
-                        (this._renderObserver = ({ children: e, interactionKey: t, click: r, focus: i, mousemove: a, mouseover: s, touch: l, interactionTimeoutMs: c = 2e3 }) => {
+                        (this._renderObserver = ({ children: e, interactionKey: t, click: r, focus: a, mousemove: i, mouseover: s, touch: l, interactionTimeoutMs: c = 2e3 }) => {
                             const u = {};
                             return (
                                 r && (u.onClick = this._handleClick(t, c)),
-                                i && ((u.onBlur = this._handleBlur(t, c)), (u.onFocus = this._handleActive(t))),
-                                a && (u.onMouseMove = this._handleMouseMove(t, c)),
+                                a && ((u.onBlur = this._handleBlur(t, c)), (u.onFocus = this._handleActive(t))),
+                                i && (u.onMouseMove = this._handleMouseMove(t, c)),
                                 s && ((u.onMouseEnter = this._handleMouseEnter(t)), (u.onMouseLeave = this._handleMouseLeave(t))),
                                 l && ((u.onTouchStart = this._handleTouchStart(t)), (u.onTouchEnd = this._handleTouchEnd(t, c))),
                                 o.createElement(
@@ -396,14 +486,14 @@
                             this.state.observed[r].has(e) || this.setState(d(r, e)), clearTimeout(this._timeoutCollection[r][e]), (this._timeoutCollection[r][e] = setTimeout(() => this.setState(h(r, e)), t));
                         }),
                         (this._handleClick = (e, t) => () => {
-                            const r = a;
+                            const r = i;
                             this.state.observed[r].has(e) || this.setState(d(r, e)), clearTimeout(this._timeoutCollection[r][e]), (this._timeoutCollection[r][e] = setTimeout(() => this.setState(h(r, e)), t));
                         }),
                         (this._handleActive = (e) => () => {
                             const t = s;
                             clearTimeout(this._timeoutCollection[t][e]);
                             const r = this.hasActiveInteractionWatcherChildren();
-                            i.ZP.hadKeyboardEvent && r && this.setState(d(t, e));
+                            a.ZP.hadKeyboardEvent && r && this.setState(d(t, e));
                         }),
                         (this._handleBlur = (e, t) => () => {
                             const r = s;
@@ -426,17 +516,76 @@
                     const { children: e } = this.props;
                     if (!e) throw new Error("component requires children prop.");
                     const t = this._renderObserver;
-                    return o.createElement(b.ObserverContext.Provider, { value: t }, o.createElement(b.Context.Provider, { value: this.getContext() }, e));
+                    return o.createElement(S.ObserverContext.Provider, { value: t }, o.createElement(S.Context.Provider, { value: this.getContext() }, e));
                 }
             }
-            (b.Context = p), (b.ObserverContext = m);
+            (S.Context = p), (S.ObserverContext = m);
+        },
+        395367: (e, t, r) => {
+            r.d(t, { Z: () => i });
+            var n,
+                o = r(202784);
+            class a extends o.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.state = { playerApi: void 0, playerState: void 0, guestsState: void 0 }),
+                        (this._initializeState = (e) => {
+                            e && (this._unsubscribe && this._unsubscribe(), this.setState({ playerApi: e }), (this._unsubscribe = e.subscribe((e, t) => this.setState({ playerState: e, guestsState: t }))));
+                        });
+                }
+                componentDidMount() {
+                    this._initializeState(this.props.playerApi);
+                }
+                componentDidUpdate(e) {
+                    const { playerApi: t } = this.props;
+                    t !== e.playerApi && this._initializeState(t);
+                }
+                render() {
+                    return this.props.children(this.state);
+                }
+            }
+            class i extends o.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.state = { players: {} }),
+                        (this._mounted = !1),
+                        (this._registerPlayer = (e, t) => {
+                            const r = new Promise((r) => {
+                                setTimeout(() => {
+                                    this._mounted ? this.setState((r) => ({ players: { ...r.players, [e]: t } }), r) : r();
+                                });
+                            });
+                            return () => {
+                                r.then(() => this._unregisterPlayer(e));
+                            };
+                        }),
+                        (this._unregisterPlayer = (e) => {
+                            this._mounted &&
+                                this.setState((t) => {
+                                    const { [e]: r, ...n } = this.state.players;
+                                    return { players: n };
+                                });
+                        }),
+                        (this._registrationContext = { registerPlayer: this._registerPlayer });
+                }
+                componentDidMount() {
+                    this._mounted = !0;
+                }
+                componentWillUnmount() {
+                    this._mounted = !1;
+                }
+                render() {
+                    return o.createElement(i.RegistrationContext.Provider, { value: this._registrationContext }, o.createElement(i.ProviderContext.Provider, { value: this.state }, this.props.children));
+                }
+            }
+            (n = i), (i.MetadataSubscriber = ({ children: e, playerId: t }) => o.createElement(n.ProviderContext.Consumer, null, ({ players: r }) => o.createElement(a, { playerApi: r && r[t] }, e))), (i.RegistrationContext = o.createContext({ registerPlayer: void 0 })), (i.ProviderContext = o.createContext({ players: {} }));
         },
         986460: (e, t, r) => {
-            r.d(t, { GS: () => c, Js: () => a, M2: () => s, Nj: () => d, cm: () => u, gF: () => i, iG: () => p, kA: () => l, lO: () => h });
-            var n = r(332920),
+            r.d(t, { GS: () => c, Js: () => i, M2: () => s, Nj: () => d, cm: () => u, gF: () => a, iG: () => p, kA: () => l, lO: () => h });
+            var n = r(111677),
                 o = r.n(n);
-            const i = o().fb236728,
-                a = o().e9bd453e,
+            const a = o().fb236728,
+                i = o().e9bd453e,
                 s = o().f17dfdb6,
                 l = o().d46b00b0,
                 c = o().ec8ab8b4,
@@ -445,13 +594,31 @@
                 h = o().c27e60b0,
                 p = o().d2969f10;
         },
+        893164: (e, t, r) => {
+            r.d(t, { Z: () => p });
+            var n = r(202784),
+                o = r(325686),
+                a = r(111677),
+                i = r.n(a),
+                s = r(355830),
+                l = r(731708),
+                c = r(154003),
+                u = r(992942),
+                d = r(392237);
+            const h = i().a9edea48;
+            function p(e) {
+                const { displayBackgroundImage: t = !1, errorMessage: r, iconPlayError: a, imageSrc: i, onReloadPress: p } = e;
+                return n.createElement(o.Z, { style: [d.default.absoluteFill, t ? null : m.blankOverlay] }, t ? n.createElement(n.Fragment, null, n.createElement(o.Z, { style: m.backgroundImage }, i && n.createElement(u.Z, { resizeMode: "cover", source: i, style: d.default.absoluteFill })), n.createElement(o.Z, { style: m.overlay })) : null, n.createElement(o.Z, { style: m.errorContainer }, n.createElement(o.Z, null, a ? n.createElement(s.default, { style: m.playErrorIcon }) : null), n.createElement(o.Z, { focusable: !0 }, n.createElement(l.ZP, { style: t ? m.errorMsgTextWhite : m.errorMsgTextGray }, r)), p ? n.createElement(c.ZP, { onPress: p, style: m.buttonContainer, type: "brandFilled" }, h) : null));
+            }
+            const m = d.default.create((e) => ({ backgroundImage: { ...d.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...d.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
+        },
         41871: (e, t, r) => {
-            r.d(t, { Z: () => f });
+            r.d(t, { Z: () => y });
             var n = r(807896),
                 o = r(202784),
-                i = r(325686),
-                a = r(332920),
-                s = r.n(a),
+                a = r(325686),
+                i = r(111677),
+                s = r.n(i),
                 l = r(83515),
                 c = r(926628),
                 u = r(301049),
@@ -459,8 +626,8 @@
                 h = r(466792),
                 p = r(173739),
                 m = r(392237);
-            const b = s().b3160a69;
-            class S extends o.PureComponent {
+            const S = s().b3160a69;
+            class b extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { showSlider: !1, isSliderActive: !1 }),
@@ -480,16 +647,16 @@
                         (this._normalizeValue = (e) => Math.max(0, Math.min(e, 100))),
                         (this._getSliderMarginStyles = (e) => {
                             const t = e ?? "medium";
-                            return g["large" === t ? "xLarge" : t];
+                            return v["large" === t ? "xLarge" : t];
                         }),
                         (this._handleKeyDown = (e) => {
                             const { onSliderChange: t, volumePercent: r } = this.props,
-                                { altKey: n, ctrlKey: o, metaKey: i } = e;
-                            if (n || o || i) return;
-                            const a = e.key === u.Z.ArrowUp || e.key === u.Z.ArrowRight,
+                                { altKey: n, ctrlKey: o, metaKey: a } = e;
+                            if (n || o || a) return;
+                            const i = e.key === u.Z.ArrowUp || e.key === u.Z.ArrowRight,
                                 s = e.key === u.Z.ArrowDown || e.key === u.Z.ArrowLeft;
-                            if (a || s) {
-                                const n = this._normalizeValue(r + 10 * (a ? 1 : -1));
+                            if (i || s) {
+                                const n = this._normalizeValue(r + 10 * (i ? 1 : -1));
                                 t && t(n), e.preventDefault();
                             }
                         });
@@ -503,52 +670,45 @@
                     }
                 }
                 render() {
-                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: r, isMuted: a, onHideSlider: s, onMuteToggle: u, onShowSlider: S, onSliderChange: g, pullRight: f, sliderColor: y, volumePercent: C, withGraySliderTrack: _, withNavigationSliderBackground: w, ...E } = this.props,
-                        T = a ? o.createElement(l.default, null) : o.createElement(c.default, null),
-                        P = w ? v.sliderWithNavigationBackground : v.sliderWithDefaultBackground;
-                    return o.createElement(h.Z, { disabled: !g, onFocusRingGained: g ? this._showSlider : void 0, onFocusRingLost: g ? this._hideSlider : void 0, onHoverIn: g ? this._showSlider : void 0, onHoverOut: g ? this._hideSlider : void 0 }, o.createElement(i.Z, { onKeyDown: g ? this._handleKeyDown : void 0 }, o.createElement(d.ZP, (0, n.Z)({ "aria-label": e, icon: T, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: f, type: "onMediaText" }, E)), g && o.createElement(h.Z, { onFocusRingGained: S, onFocusRingLost: s }, ({ isFocusedWithin: e }) => o.createElement(i.Z, { style: [v.sliderBackground, P, this._getSliderMarginStyles(E.size), e || this._shouldShowSlider(this.state) ? null : m.default.visuallyHidden, !!r && { maxHeight: this.state.sliderMaxHeight }] }, o.createElement(p.Z, { accessibilityLabelValueText: b({ volumePercent: C }), "aria-label": t, color: y || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: g, step: 1, value: a ? 0 : C || 0, withGrayBackground: _ })))));
+                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: r, isMuted: i, onHideSlider: s, onMuteToggle: u, onShowSlider: b, onSliderChange: v, pullRight: y, sliderColor: f, volumePercent: C, withGraySliderTrack: _, withNavigationSliderBackground: E, ...P } = this.props,
+                        w = i ? o.createElement(l.default, null) : o.createElement(c.default, null),
+                        T = E ? g.sliderWithNavigationBackground : g.sliderWithDefaultBackground;
+                    return o.createElement(h.Z, { disabled: !v, onFocusRingGained: v ? this._showSlider : void 0, onFocusRingLost: v ? this._hideSlider : void 0, onHoverIn: v ? this._showSlider : void 0, onHoverOut: v ? this._hideSlider : void 0 }, o.createElement(a.Z, { onKeyDown: v ? this._handleKeyDown : void 0 }, o.createElement(d.ZP, (0, n.Z)({ "aria-label": e, icon: w, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: y, type: "onMediaText" }, P)), v && o.createElement(h.Z, { onFocusRingGained: b, onFocusRingLost: s }, ({ isFocusedWithin: e }) => o.createElement(a.Z, { style: [g.sliderBackground, T, this._getSliderMarginStyles(P.size), e || this._shouldShowSlider(this.state) ? null : m.default.visuallyHidden, !!r && { maxHeight: this.state.sliderMaxHeight }] }, o.createElement(p.Z, { accessibilityLabelValueText: S({ volumePercent: C }), "aria-label": t, color: f || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: v, step: 1, value: i ? 0 : C || 0, withGrayBackground: _ })))));
                 }
             }
-            S.defaultProps = { pullRight: !1 };
-            const v = m.default.create((e) => ({ sliderBackground: { bottom: 0, borderRadius: e.borderRadii.xLarge, height: `calc(${e.spaces.space64}*2)`, start: e.spaces.space4, position: "absolute", padding: e.spaces.space12, paddingVertical: e.spaces.space16, end: e.spaces.space4 }, sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 }, sliderWithNavigationBackground: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall } })),
-                g = m.default.create(({ spaces: e, spacesPx: t }) => {
+            b.defaultProps = { pullRight: !1 };
+            const g = m.default.create((e) => ({ sliderBackground: { bottom: 0, borderRadius: e.borderRadii.xLarge, height: `calc(${e.spaces.space64}*2)`, start: e.spaces.space4, position: "absolute", padding: e.spaces.space12, paddingVertical: e.spaces.space16, end: e.spaces.space4 }, sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 }, sliderWithNavigationBackground: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall } })),
+                v = m.default.create(({ spaces: e, spacesPx: t }) => {
                     const r = `${t.space16 + t.space4 + t.space2}px`,
                         n = `${t.space20 + t.space24}px`,
                         o = `${t.space12 + t.space40}px`;
                     return { xSmall: { marginBottom: e.space24 }, small: { marginBottom: e.space32 }, medium: { marginBottom: e.space36 }, large: { marginBottom: n }, xLarge: { marginBotom: o }, smallCompact: { marginBottom: r }, DEPRECATED_normalCompact: { marginBottom: e.space32 }, DEPRECATED_normal: { marginBottom: e.space40 } };
                 }),
-                f = S;
+                y = b;
         },
         27137: (e, t, r) => {
             r.d(t, { Z: () => o });
             var n = r(157396);
             const o = (0, r(587878).Z)({ palette: n.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        804579: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
+        647174: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => c });
             var n = r(202784),
                 o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M5.747 12c0-1.8 1.388-3.22 3.26-3.22 1.26 0 2.075.53 2.62 1.29l-1.207.94c-.306-.42-.798-.7-1.357-.7-.93 0-1.684.76-1.684 1.69s.755 1.68 1.685 1.68c.578 0 1.087-.29 1.39-.73l1.22.87c-.583.8-1.368 1.39-2.737 1.39h-.003c-1.766 0-3.187-1.35-3.187-3.19V12zm6.584.02c0 1.84 1.421 3.19 3.185 3.19 1.368 0 2.154-.59 2.738-1.39l-1.22-.87c-.304.44-.813.73-1.39.73-.93 0-1.684-.75-1.684-1.68s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.94c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.42-3.258 3.22v.02zM18.5 3C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13C3 4.12 4.119 3 5.5 3h13zM5 18.5c0 .28.224.5.5.5h13c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-13c-.276 0-.5.22-.5.5v13z" })) }, { writingDirection: t });
+                a = r(783427),
+                i = r(717683),
+                s = r(347101);
+            const l = (e = {}) => {
+                const t = n.useContext(i.Z),
+                    { direction: r } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" })) }, { writingDirection: r });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
         },
-        926628: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+        614425: (e, t, r) => {
+            r.d(t, { Y7: () => n });
+            const n = r(795897).default;
         },
         151624: (e, t, r) => {
             r.d(t, { Z: () => n });
@@ -558,8 +718,8 @@
             r.d(t, { Z: () => m });
             var n = r(18198),
                 o = r(661841),
-                i = o.Z.currentCentroidXOfTouchesChangedAfter,
-                a = o.Z.currentCentroidYOfTouchesChangedAfter,
+                a = o.Z.currentCentroidXOfTouchesChangedAfter,
+                i = o.Z.currentCentroidYOfTouchesChangedAfter,
                 s = o.Z.previousCentroidXOfTouchesChangedAfter,
                 l = o.Z.previousCentroidYOfTouchesChangedAfter,
                 c = o.Z.currentCentroidX,
@@ -569,12 +729,12 @@
                         (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
                     },
                     _updateGestureStateOnMove(e, t) {
-                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = i(t, e._accountsForMovesUpTo)), (e.moveY = a(t, e._accountsForMovesUpTo));
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = a(t, e._accountsForMovesUpTo)), (e.moveY = i(t, e._accountsForMovesUpTo));
                         var r = e._accountsForMovesUpTo,
                             n = s(t, r),
-                            o = i(t, r),
+                            o = a(t, r),
                             c = l(t, r),
-                            u = a(t, r),
+                            u = i(t, r),
                             d = e.dx + (o - n),
                             h = e.dy + (u - c),
                             p = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
@@ -650,19 +810,19 @@
             r.d(t, { Z: () => o });
             var n = {
                 centroidDimension: function (e, t, r, o) {
-                    var i = e.touchBank,
-                        a = 0,
+                    var a = e.touchBank,
+                        i = 0,
                         s = 0,
                         l = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
-                    if (null !== l) l.touchActive && l.currentTimeStamp > t && ((a += o && r ? l.currentPageX : o && !r ? l.currentPageY : !o && r ? l.previousPageX : l.previousPageY), (s = 1));
+                    if (null !== l) l.touchActive && l.currentTimeStamp > t && ((i += o && r ? l.currentPageX : o && !r ? l.currentPageY : !o && r ? l.previousPageX : l.previousPageY), (s = 1));
                     else
-                        for (var c = 0; c < i.length; c++) {
-                            var u = i[c];
+                        for (var c = 0; c < a.length; c++) {
+                            var u = a[c];
                             if (null != u && u.touchActive && u.currentTimeStamp >= t) {
-                                (a += o && r ? u.currentPageX : o && !r ? u.currentPageY : !o && r ? u.previousPageX : u.previousPageY), s++;
+                                (i += o && r ? u.currentPageX : o && !r ? u.currentPageY : !o && r ? u.previousPageX : u.previousPageY), s++;
                             }
                         }
-                    return s > 0 ? a / s : n.noCentroid;
+                    return s > 0 ? i / s : n.noCentroid;
                 },
                 currentCentroidXOfTouchesChangedAfter: function (e, t) {
                     return n.centroidDimension(e, t, !0, !0);
@@ -688,4 +848,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.e675a30a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.fd4dfa2a.js.map

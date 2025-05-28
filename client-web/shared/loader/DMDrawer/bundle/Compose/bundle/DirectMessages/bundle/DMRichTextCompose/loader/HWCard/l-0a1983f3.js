@@ -13,8 +13,8 @@
                 d = i(757483),
                 c = i(530732),
                 u = i(659651),
-                m = i(392237),
-                p = i(336961),
+                p = i(392237),
+                m = i(336961),
                 h = i(538619),
                 y = i(85375),
                 b = i(94909),
@@ -41,8 +41,8 @@
                 }
                 _renderDestinationWrapper(e) {
                     const { hasMediaError: t, isMediaLoaded: i } = this.state,
-                        { "aria-hidden": a, "aria-label": o, componentType: n, destination: s, destinationData: l, focusable: u, mediaEntity: m, onClick: p, style: h, testID: y } = this.props,
-                        g = (0, b.j9)(m);
+                        { "aria-hidden": a, "aria-label": o, componentType: n, destination: s, destinationData: l, focusable: u, mediaEntity: p, onClick: m, style: h, testID: y } = this.props,
+                        g = (0, b.j9)(p);
                     let E;
                     g && (E = d.Z.rgbaToCss({ ...g.rgb, alpha: 1 }));
                     const _ = i ? {} : { backgroundColor: E },
@@ -59,7 +59,7 @@
                                 interactive: !1,
                                 link: i,
                                 onClick: (e) => {
-                                    p && p(e), n && n(e);
+                                    m && m(e), n && n(e);
                                 },
                                 style: C,
                                 testID: y,
@@ -71,9 +71,9 @@
                 _renderImage({ isDataSaverEnabled: e, isPromoted: t }) {
                     const { hideImageDataSaverOverlay: i, ignoreDataSaver: a, locationKey: o, mediaEntity: n, ratio: s } = this.props,
                         { altText: l = "", cropCandidates: d, media_url_https: c } = n || {},
-                        { height: u, width: m } = n?.original_info || {};
-                    let p;
-                    return e && (p = t || a ? "suboptimal" : "preview"), r.createElement(r.Fragment, null, h.v.renderImage({ source: { uri: c, width: m, height: u }, ratio: s, quality: p, layoutCacheKey: o, cropCandidates: d, altText: l, hideDataSaverOverlay: i, onLoad: this._handleMediaLoad, onError: this._handleMediaError }), this._renderOverlay());
+                        { height: u, width: p } = n?.original_info || {};
+                    let m;
+                    return e && (m = t || a ? "suboptimal" : "preview"), r.createElement(r.Fragment, null, h.v.renderImage({ source: { uri: c, width: p, height: u }, ratio: s, quality: m, layoutCacheKey: o, cropCandidates: d, altText: l, hideDataSaverOverlay: i, onLoad: this._handleMediaLoad, onError: this._handleMediaError }), this._renderOverlay());
                 }
                 _renderIcon(e) {
                     return r.createElement(
@@ -102,7 +102,7 @@
                         case y._5.MOMENTS:
                             return r.createElement(u.Z, { align: "left", square: !0 }, r.createElement(s.default, null));
                         case y._5.PLAY:
-                            return r.createElement(a.Z, { style: w.playOverlay }, r.createElement(p.Z, { size: t }));
+                            return r.createElement(a.Z, { style: w.playOverlay }, r.createElement(m.Z, { size: t }));
                         case y._5.LABEL:
                             return r.createElement(u.Z, { align: "left", style: w.mediaLabelText, type: "urlCardTitle", wrapperStyle: w.mediaLabelWrapper }, e.text);
                         default:
@@ -111,7 +111,7 @@
                 }
             }
             E.defaultProps = { playOverlaySize: "small", componentType: v, enableDestinationWrapper: !0, focusable: !1 };
-            const w = m.default.create((e) => ({ root: { width: "100%", overflow: "hidden" }, image: { width: "100%", height: "100%" }, playOverlay: { position: "absolute", width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, mediaMissing: { backgroundColor: e.colors.gray0 }, mediaMissingIconContainer: { display: "flex", alignItems: "center", justifyContent: "center" }, newsIcon: { color: e.colors.gray700, height: "2em" }, offIcon: { color: e.colors.white, opacity: 0.3, height: "40%" }, mediaLabelWrapper: { end: e.spaces.space12 }, mediaLabelText: { maxWidth: "100%" } })),
+            const w = p.default.create((e) => ({ root: { width: "100%", overflow: "hidden" }, image: { width: "100%", height: "100%" }, playOverlay: { position: "absolute", width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, mediaMissing: { backgroundColor: e.colors.gray0 }, mediaMissingIconContainer: { display: "flex", alignItems: "center", justifyContent: "center" }, newsIcon: { color: e.colors.gray700, height: "2em" }, offIcon: { color: e.colors.white, opacity: 0.3, height: "40%" }, mediaLabelWrapper: { end: e.spaces.space12 }, mediaLabelText: { maxWidth: "100%" } })),
                 _ = E;
         },
         592180: (e, t, i) => {
@@ -119,14 +119,14 @@
             var r = i(807896),
                 a = i(202784),
                 o = i(325686),
-                n = i(332920),
+                n = i(111677),
                 s = i.n(n),
                 l = i(803810),
                 d = i(731708),
                 c = i(235902),
                 u = i(58881),
-                m = i(530732),
-                p = i(952428),
+                p = i(530732),
+                m = i(952428),
                 h = i(352924),
                 y = i(392237),
                 b = i(935341),
@@ -142,20 +142,20 @@
                 L = i(366635);
             const M = y.default.create((e) => ({ wrapper: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, backgroundColor: e.colors.navigationBackground }, container: { display: "flex", flexDirection: "column", gap: e.spaces.space16 } })),
                 Z = (e) => {
-                    const { destination: t, employmentType: i, formattedSalary: r, formattedSalaryMax: n, formattedSalaryMin: s, location: l, profileUser: d, salaryInterval: c, salaryMax: u, salaryMin: p, shortDescription: h, title: y } = e;
-                    return a.createElement(g.Z, { componentType: "job_details", destinationKey: t }, ({ link: e, onClick: t }) => a.createElement(m.Z, { interactive: !1, link: e, onClick: t, style: M.wrapper }, a.createElement(o.Z, { style: M.container }, a.createElement(L.Z, { isBlueVerified: d.is_blue_verified, isVerified: d.verified, name: d.name, profileImageUrl: d.profile_image_url_https, screenName: d.screen_name, verifiedType: d.verified_type }), a.createElement(C.Z, { displayType: "full", employmentType: i, formattedSalary: r, formattedSalaryMax: n, formattedSalaryMin: s, location: l, salaryInterval: c, salaryMax: u, salaryMin: p, shortDescription: h, title: y, titleSize: "headline2" }))));
+                    const { destination: t, employmentType: i, formattedSalary: r, formattedSalaryMax: n, formattedSalaryMin: s, location: l, profileUser: d, salaryInterval: c, salaryMax: u, salaryMin: m, shortDescription: h, title: y } = e;
+                    return a.createElement(g.Z, { componentType: "job_details", destinationKey: t }, ({ link: e, onClick: t }) => a.createElement(p.Z, { interactive: !1, link: e, onClick: t, style: M.wrapper }, a.createElement(o.Z, { style: M.container }, a.createElement(L.Z, { isBlueVerified: d.is_blue_verified, isVerified: d.verified, name: d.name, profileImageUrl: d.profile_image_url_https, screenName: d.screen_name, verifiedType: d.verified_type }), a.createElement(C.Z, { displayType: "full", employmentType: i, formattedSalary: r, formattedSalaryMax: n, formattedSalaryMin: s, location: l, salaryInterval: c, salaryMax: u, salaryMin: m, shortDescription: h, title: y, titleSize: "headline2" }))));
                 };
             var I = i(532738),
                 R = i(218440),
                 D = i(361996),
                 B = i(529509),
                 W = i(94909),
-                P = i(542908);
-            const k = (e) => {
+                k = i(542908);
+            const P = (e) => {
                 const { destination: t } = e;
                 return a.createElement(g.Z, { componentType: "card_social_context", destinationKey: t }, ({ link: t, onClick: i }) =>
                     a.createElement(
-                        m.Z,
+                        p.Z,
                         { interactive: !1, link: t, onClick: i },
                         a.createElement(
                             o.Z,
@@ -164,7 +164,7 @@
                                 const { facepileUsers: t, totalUsers: i, type: r } = e,
                                     o = (0, W.VR)(t),
                                     n = (0, W.Ur)(t);
-                                return r === P.Og.FOLLOWERS ? a.createElement(B.Z, { knownFollowersAvatarUrls: o, knownFollowersCount: i, knownFollowersNames: n, withFacepile: !0 }) : null;
+                                return r === k.Og.FOLLOWERS ? a.createElement(B.Z, { knownFollowersAvatarUrls: o, knownFollowersCount: i, knownFollowersNames: n, withFacepile: !0 }) : null;
                             })(),
                         ),
                     ),
@@ -175,9 +175,9 @@
             const z = ({ backgroundColor: e, withFocusWithinFocusRing: t, withInteractiveStyling: i, withOutsetFocusRing: o, ...n }) => {
                 if (e) {
                     const s = i ? u.Z.generate({ color: y.default.theme.colors.primary, backgroundColor: y.default.theme.colors[e], insetFocusRing: !o, withFocusWithinFocusRing: t }) : null;
-                    return a.createElement(m.Z, (0, r.Z)({}, n, { interactiveStyles: s }));
+                    return a.createElement(p.Z, (0, r.Z)({}, n, { interactiveStyles: s }));
                 }
-                return a.createElement(p.Z, (0, r.Z)({}, n, { withFocusWithinFocusRing: t, withInteractiveStyling: i, withOutsetFocusRing: o }));
+                return a.createElement(m.Z, (0, r.Z)({}, n, { withFocusWithinFocusRing: t, withInteractiveStyling: i, withOutsetFocusRing: o }));
             };
             class F extends a.Component {
                 constructor(e) {
@@ -213,33 +213,33 @@
                     this._mounted = !1;
                 }
                 render() {
-                    const { backgroundColor: e, buttons: t, chromeless: i, details: r, dmSentOrReceived: n, followButtonData: s, id: l, media: d, onLikelyInteraction: u, poll: m, swipeableMedia: p, testIDs: h, withBorder: b, withBorderShadow: g, withDetail: f, withInteractiveStyling: v, withRoundBorder: E, withSquareBottomBorderRadius: w } = this.props,
+                    const { backgroundColor: e, buttons: t, chromeless: i, details: r, dmSentOrReceived: n, followButtonData: s, id: l, media: d, onLikelyInteraction: u, poll: p, swipeableMedia: m, testIDs: h, withBorder: b, withBorderShadow: g, withDetail: f, withInteractiveStyling: v, withRoundBorder: E, withSquareBottomBorderRadius: w } = this.props,
                         _ = e && { backgroundColor: y.default.theme.colors[e], ...(y.default.isDarkMode() ? { borderColor: "rgba(255, 255, 255, 0.15)" } : {}) };
                     return a.createElement(c.ZP.UseProps, null, ({ renderCompactCardDetail: c, withEdgeToEdgeContent: y }) => {
                         const S = c(),
-                            x = !f || (S && (d?.mediaEntity || p) && !!r?.vanity),
+                            x = !f || (S && (d?.mediaEntity || m) && !!r?.vanity),
                             C = d?.mediaEntity ? this._renderMedia(S, x) : this._renderSwipeableMedia(S),
-                            L = !!m,
-                            M = !(i || p || (s && !C)),
-                            Z = i && !p,
-                            I = !!(m || t || s || (r && !x)) && !p,
-                            R = y() && !p,
+                            L = !!p,
+                            M = !(i || m || (s && !C)),
+                            Z = i && !m,
+                            I = !!(p || t || s || (r && !x)) && !m,
+                            R = y() && !m,
                             D = this._shouldApplyFullBleedGrayDetailStyles(R);
-                        return a.createElement(a.Fragment, null, a.createElement(z, { "aria-labelledby": [this.cardMediaNativeId, this.cardDetailNativeId].join(" "), backgroundColor: e, id: l, onHoverIn: u, onLayout: this._handleLayout, onPressIn: u, style: [g ? N.borderShadow : n && N[n], b && M && !R && N.border, E && N.roundBorder, w && !R && O[w], p && N.rootWithCarousel, D && N.grayDetails, R && N.negativeMargins, _], testID: h?.wrapper, viewRef: this._setRootNode, withFocusWithinFocusRing: !0, withInteractiveStyling: v, withOutsetFocusRing: !0 }, a.createElement(a.Fragment, null, C ? a.createElement(o.Z, { "aria-hidden": !x, id: this.cardMediaNativeId, style: [N.media, Z && !R && N.border, I && !R && N.mediaBottomBorder, L && N.mediaBottomSpace, !!r && O.both], testID: h?.layoutLarge.media }, C) : null, a.createElement(o.Z, { id: this.cardDetailNativeId, style: p && N.carouselBottomContent }, x ? null : this._renderDetail(), this._renderDetailWithMiddotGroup(), this._renderCommunityDetail(), this._renderJobDetail(), this._renderFollowButton(), this._renderSocialContext(), this._renderListDetail(), this._renderAttribution(), this._renderButtons(), this._renderPoll(R)))), this._renderMediaVanityURL(S));
+                        return a.createElement(a.Fragment, null, a.createElement(z, { "aria-labelledby": [this.cardMediaNativeId, this.cardDetailNativeId].join(" "), backgroundColor: e, id: l, onHoverIn: u, onLayout: this._handleLayout, onPressIn: u, style: [g ? N.borderShadow : n && N[n], b && M && !R && N.border, E && N.roundBorder, w && !R && O[w], m && N.rootWithCarousel, D && N.grayDetails, R && N.negativeMargins, _], testID: h?.wrapper, viewRef: this._setRootNode, withFocusWithinFocusRing: !0, withInteractiveStyling: v, withOutsetFocusRing: !0 }, a.createElement(a.Fragment, null, C ? a.createElement(o.Z, { "aria-hidden": !x, id: this.cardMediaNativeId, style: [N.media, Z && !R && N.border, I && !R && N.mediaBottomBorder, L && N.mediaBottomSpace, !!r && O.both], testID: h?.layoutLarge.media }, C) : null, a.createElement(o.Z, { id: this.cardDetailNativeId, style: m && N.carouselBottomContent }, x ? null : this._renderDetail(), this._renderDetailWithMiddotGroup(), this._renderCommunityDetail(), this._renderJobDetail(), this._renderFollowButton(), this._renderSocialContext(), this._renderListDetail(), this._renderAttribution(), this._renderButtons(), this._renderPoll(R)))), this._renderMediaVanityURL(S));
                     });
                 }
                 _renderDetail() {
                     if (!this.props.details) return null;
                     const { descriptionMaxLines: e, titleMaxLines: t } = this.state,
                         { buttons: i, chromeless: r, details: o, testIDs: n } = this.props,
-                        { attribution: s, category: l, description: d, destination: c, footer: u, title: m, vanity: p } = o;
-                    return a.createElement(_.Z, { attribution: s, category: l, chromeless: r, description: 0 !== e ? d : void 0, descriptionMaxLines: e, destination: c, footer: u, testID: n?.layoutLarge.detail, title: m, titleMaxLines: t, vanity: p, withBottomPadding: !i });
+                        { attribution: s, category: l, description: d, destination: c, footer: u, title: p, vanity: m } = o;
+                    return a.createElement(_.Z, { attribution: s, category: l, chromeless: r, description: 0 !== e ? d : void 0, descriptionMaxLines: e, destination: c, footer: u, testID: n?.layoutLarge.detail, title: p, titleMaxLines: t, vanity: m, withBottomPadding: !i });
                 }
                 _renderDetailWithMiddotGroup() {
                     const { attribution: e, detailsWithMiddotGroup: t } = this.props;
                     if (!t) return null;
-                    const { description: i, descriptionMaxLines: r, descriptionTextColor: o, destination: n, label: s, middotGroupContents: l, middotGroupOnTop: d, middotGroupSize: c, middotGroupTextColor: u, showDescriptionOnSmallScreens: m, title: p, titleMaxLines: h, titleSize: y, titleWeight: b } = t;
-                    return a.createElement(S.ZP, { description: i, descriptionMaxLines: r, descriptionTextColor: o, destination: n, label: s, middotGroupContents: l, middotGroupOnTop: d, middotGroupSize: c, middotGroupTextColor: u, showDescriptionOnSmallScreens: m, title: p, titleMaxLines: h, titleSize: y, titleWeight: b, withBottomPadding: !!e });
+                    const { description: i, descriptionMaxLines: r, descriptionTextColor: o, destination: n, label: s, middotGroupContents: l, middotGroupOnTop: d, middotGroupSize: c, middotGroupTextColor: u, showDescriptionOnSmallScreens: p, title: m, titleMaxLines: h, titleSize: y, titleWeight: b } = t;
+                    return a.createElement(S.ZP, { description: i, descriptionMaxLines: r, descriptionTextColor: o, destination: n, label: s, middotGroupContents: l, middotGroupOnTop: d, middotGroupSize: c, middotGroupTextColor: u, showDescriptionOnSmallScreens: p, title: m, titleMaxLines: h, titleSize: y, titleWeight: b, withBottomPadding: !!e });
                 }
                 _renderAttribution() {
                     const { attribution: e } = this.props;
@@ -257,7 +257,7 @@
                     const { socialContextData: e } = this.props;
                     if (!e) return null;
                     const { destination: t, facepileUsers: i, total_user_count: r, type: o } = e;
-                    return a.createElement(k, { destination: t, facepileUsers: i, totalUsers: r, type: o });
+                    return a.createElement(P, { destination: t, facepileUsers: i, totalUsers: r, type: o });
                 }
                 _renderCommunityDetail() {
                     const { communityDetails: e } = this.props,
@@ -269,8 +269,8 @@
                 _renderJobDetail() {
                     const { jobDetails: e } = this.props;
                     if (!e) return null;
-                    const { destination: t, employment_type: i, formatted_salary: r, formatted_salary_max: o, formatted_salary_min: n, location: s, profile_user: l, salary_interval: d, salary_max: c, salary_min: u, short_description: m, title: p } = e;
-                    return a.createElement(Z, { destination: t, employmentType: i, formattedSalary: r, formattedSalaryMax: o, formattedSalaryMin: n, location: s, profileUser: l, salaryInterval: d, salaryMax: c, salaryMin: u, shortDescription: m, title: p });
+                    const { destination: t, employment_type: i, formatted_salary: r, formatted_salary_max: o, formatted_salary_min: n, location: s, profile_user: l, salary_interval: d, salary_max: c, salary_min: u, short_description: p, title: m } = e;
+                    return a.createElement(Z, { destination: t, employmentType: i, formattedSalary: r, formattedSalaryMax: o, formattedSalaryMin: n, location: s, profileUser: l, salaryInterval: d, salaryMax: c, salaryMin: u, shortDescription: p, title: m });
                 }
                 _renderListDetail() {
                     const { listDetails: e } = this.props,
@@ -285,8 +285,8 @@
                     return i ? a.createElement(v.Z, { buttonLayout: t, buttonSize: e, buttons: i, chromeless: r }) : null;
                 }
                 _renderPoll(e = !1) {
-                    const { isAuthor: t, poll: i, withActionsDisabled: o } = this.props;
-                    return i ? a.createElement(D.Z, (0, r.Z)({}, i, { isAuthor: !!t, style: e && N.horizontalPadding, votingDisabled: o })) : null;
+                    const { isAuthor: t, poll: i, pollTranslations: o, renderTranslationFeedback: n, withActionsDisabled: s } = this.props;
+                    return i ? a.createElement(D.Z, (0, r.Z)({}, i, { isAuthor: !!t, renderTranslationFeedback: n, style: e && N.horizontalPadding, translations: o, votingDisabled: s })) : null;
                 }
                 _renderSwipeableMedia(e) {
                     const { details: t, renderVideoPlayer: i, swipeableMedia: r } = this.props;
@@ -333,8 +333,8 @@
                 d = i(325686),
                 c = i(734408),
                 u = i(85375),
-                m = i(94909),
-                p = i(268181),
+                p = i(94909),
+                m = i(268181),
                 h = i(719282),
                 y = i(532738),
                 b = i(218440),
@@ -344,23 +344,23 @@
                 E = (e, t, i) => {
                     const { descriptionMaxLines: r, titleMaxLines: a } = (0, l.IW)("large", e, i),
                         o = i.destination && t[i.destination];
-                    return { titleMaxLines: a, descriptionMaxLines: r, vanity: o && (0, m.Yd)(o), description: 0 !== r ? i.description : void 0 };
+                    return { titleMaxLines: a, descriptionMaxLines: r, vanity: o && (0, p.Yd)(o), description: 0 !== r ? i.description : void 0 };
                 },
                 w = ({ "aria-hidden": e, card: t, cardWidth: i, chromeless: o, componentName: n, forcedMediaAspectRatio: s, id: w, isAuthor: _, isBottomStackItem: S, isFirstSlide: x, isLastSlide: C, isTopStackItem: L, locationKey: M, nextComponentName: Z, renderVideoPlayer: I, shouldRenderSwipeableMedia: R = !0, shouldRenderVideo: D, testIDs: B, withActionsDisabled: W }) => {
-                    const P = t.components_data[n];
-                    if (!P) return null;
-                    const k = Z ? t.components_data[Z].type : void 0,
-                        T = "media" === P.type,
+                    const k = t.components_data[n];
+                    if (!k) return null;
+                    const P = Z ? t.components_data[Z].type : void 0,
+                        T = "media" === k.type,
                         z = [L && (!T || x) && v.roundedTopLeft, L && (!T || C) && v.roundedTopRight, S && (!T || x) && v.roundedBottomLeft, S && (!T || C) && v.roundedBottomRight],
                         { destinations: F, media_entities: O } = t,
                         N = i < u.SN ? "small" : "normal";
-                    if ("details" === P.type || "topic_details" === P.type || "app_store_details" === P.type || "dpa_details" === P.type) {
-                        const t = P.data,
+                    if ("details" === k.type || "topic_details" === k.type || "app_store_details" === k.type || "dpa_details" === k.type) {
+                        const t = k.data,
                             n = E(i, F, t);
-                        return a.createElement(h.Z, (0, r.Z)({}, t, n, { "aria-hidden": e, chromeless: o, style: z, testID: B?.layoutLarge.detail, withBottomPadding: "button_group" !== k }));
+                        return a.createElement(h.Z, (0, r.Z)({}, t, n, { "aria-hidden": e, chromeless: o, style: z, testID: B?.layoutLarge.detail, withBottomPadding: "button_group" !== P }));
                     }
-                    if ("twitter_list_details" === P.type) {
-                        const e = P.data,
+                    if ("twitter_list_details" === k.type) {
+                        const e = k.data,
                             { titleMaxLines: t } = (0, l.IW)("large", i, e);
                         return a.createElement(y.Z, (0, r.Z)({}, e, { style: z, titleMaxLines: t }));
                     }
@@ -368,12 +368,12 @@
                     const G = (e) => (t) => {
                         e && t.preventDefault();
                     };
-                    if ("swipeable_media" === P.type) {
+                    if ("swipeable_media" === k.type) {
                         if (!R) return null;
-                        const e = (0, m.xV)(P.data.media_list, O);
+                        const e = (0, p.xV)(k.data.media_list, O);
                         A = a.createElement(f.ZP, { playOverlaySize: N, renderVideoPlayer: I, swipeableMedia: e });
-                    } else if ("media" === P.type) {
-                        const t = P.data,
+                    } else if ("media" === k.type) {
+                        const t = k.data,
                             { aspect_ratio: i, destination: r, overlay: o } = t;
                         let n = t.id && O[t.id],
                             l = !1;
@@ -384,24 +384,24 @@
                         A = a.createElement(d.Z, { onClick: G(l), testID: "mediaWrapper" }, a.createElement(b.Z, { "aria-hidden": e, forcedMediaAspectRatio: s, hideImageDataSaverOverlay: l, locationKey: M, media: { aspect_ratio: i, destination: r, mediaEntity: n, overlay: o }, playOverlaySize: N, renderVideoPlayer: I, useDestination: !l }));
                     }
                     if (A) {
-                        const e = "swipeable_media" === P.type;
-                        return a.createElement(d.Z, { "aria-hidden": !0, id: w, style: [v.media, z, !e && v.border, v.overflowHidden, "poll" === k && v.mediaBottomSpace], testID: B?.layoutLarge.media }, A);
+                        const e = "swipeable_media" === k.type;
+                        return a.createElement(d.Z, { "aria-hidden": !0, id: w, style: [v.media, z, !e && v.border, v.overflowHidden, "poll" === P && v.mediaBottomSpace], testID: B?.layoutLarge.media }, A);
                     }
-                    if ("button_group" === P.type) {
-                        const e = P.data.buttons;
+                    if ("button_group" === k.type) {
+                        const e = k.data.buttons;
                         if (!e) return null;
                         const t = (0, l.CO)(i);
-                        return a.createElement(p.Z, { buttonSize: t, buttons: e, chromeless: o, style: z });
+                        return a.createElement(m.Z, { buttonSize: t, buttons: e, chromeless: o, style: z });
                     }
-                    if ("poll" === P.type) {
-                        const e = P.data;
+                    if ("poll" === k.type) {
+                        const e = k.data;
                         return a.createElement(g.Z, (0, r.Z)({}, e, { isAuthor: !!_, style: z, votingDisabled: W }));
                     }
                     return null;
                 },
                 _ = (e, t) => ((0, l.Jz)(e, t) ? t : e),
                 S = s.default.create((e) => ({ container: { flexGrow: 1, alignItems: "space-between" }, containerWithChrome: { boxShadow: `inset 0 0 0 ${e.borderWidths.small} ${e.colors.nestedBorderColor}`, backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                x = ({ componentNames: e, id: t, isCurrentSlide: i, isFirst: s, isLast: l, onLikelyInteraction: d, shouldRenderSwipeableMedia: c, withActionsDisabled: u, withInteractiveStyling: m, ...p }) => {
+                x = ({ componentNames: e, id: t, isCurrentSlide: i, isFirst: s, isLast: l, onLikelyInteraction: d, shouldRenderSwipeableMedia: c, withActionsDisabled: u, withInteractiveStyling: p, ...m }) => {
                     const [h, y] = a.useReducer(_, 0),
                         b = a.useCallback((e) => {
                             y(e.nativeEvent.layout.width);
@@ -413,8 +413,8 @@
                         v = a.useMemo(() => Array.from({ length: f }, () => (0, n.F)()), [f]);
                     return a.createElement(
                         o.Z,
-                        { "aria-hidden": !i, "aria-labelledby": v.join(" "), id: t, onHoverIn: d, onLayout: b, onPressIn: d, style: [!p.chromeless && S.containerWithChrome, S.container], testID: p.testIDs?.wrapper, viewRef: g, withFocusWithinFocusRing: !0, withInteractiveStyling: m, withOutsetFocusRing: !0 },
-                        e.map((t, o) => a.createElement(w, (0, r.Z)({}, p, { "aria-hidden": !i, cardWidth: h, componentName: t, id: v[o], isBottomStackItem: o === f - 1, isFirstSlide: s, isLastSlide: l, isTopStackItem: 0 === o, key: `${o}_${t}`, nextComponentName: e[o + 1], shouldRenderSwipeableMedia: c, withActionsDisabled: u }))),
+                        { "aria-hidden": !i, "aria-labelledby": v.join(" "), id: t, onHoverIn: d, onLayout: b, onPressIn: d, style: [!m.chromeless && S.containerWithChrome, S.container], testID: m.testIDs?.wrapper, viewRef: g, withFocusWithinFocusRing: !0, withInteractiveStyling: p, withOutsetFocusRing: !0 },
+                        e.map((t, o) => a.createElement(w, (0, r.Z)({}, m, { "aria-hidden": !i, cardWidth: h, componentName: t, id: v[o], isBottomStackItem: o === f - 1, isFirstSlide: s, isLastSlide: l, isTopStackItem: 0 === o, key: `${o}_${t}`, nextComponentName: e[o + 1], shouldRenderSwipeableMedia: c, withActionsDisabled: u }))),
                     );
                 };
         },
@@ -422,15 +422,15 @@
             i.d(t, { Z: () => E });
             var r = i(202784),
                 a = i(325686),
-                o = i(332920),
+                o = i(111677),
                 n = i.n(o),
                 s = i(952428),
                 l = i(352924),
                 d = i(392237),
                 c = i(935341),
                 u = i(596036),
-                m = i(719282),
-                p = i(447986);
+                p = i(719282),
+                m = i(447986);
             const h = n().a3efd2c4,
                 y = n().b91c8e53,
                 b = n().b3826295;
@@ -472,15 +472,15 @@
                 }
                 render() {
                     const { dmSentOrReceived: e, id: t, isTopicCard: i, onLikelyInteraction: o, reverse: n, testIDs: l, withBorderShadow: d, withInteractiveStyling: c, withSquareBottomBorderRadius: u } = this.props,
-                        { imageWidthStyle: m } = this.state,
-                        p = r.createElement(a.Z, { key: "details", style: v.details }, i ? this._renderTopicDetail() : this._renderDetail()),
-                        h = r.createElement(a.Z, { "aria-hidden": !0, id: this.cardMediaNativeId, key: "media", style: [v.media, { width: m }, u && f[u], n ? v.mediaLeftBorder : v.mediaRightBorder], testID: l?.layoutSmall.media }, this._renderMedia());
-                    return r.createElement(s.Z, { "aria-labelledby": [this.cardMediaNativeId, this.cardDetailNativeId].join(" "), id: t, onHoverIn: o, onLayout: this._handleLayout, onPressIn: o, style: [v.root, d ? v.borderShadow : e && v[e], u && f[u]], testID: l?.wrapper, viewRef: this._setRootNode, withFocusWithinFocusRing: !0, withInteractiveStyling: c, withOutsetFocusRing: !0 }, n ? [p, h] : [h, p]);
+                        { imageWidthStyle: p } = this.state,
+                        m = r.createElement(a.Z, { key: "details", style: v.details }, i ? this._renderTopicDetail() : this._renderDetail()),
+                        h = r.createElement(a.Z, { "aria-hidden": !0, id: this.cardMediaNativeId, key: "media", style: [v.media, { width: p }, u && f[u], n ? v.mediaLeftBorder : v.mediaRightBorder], testID: l?.layoutSmall.media }, this._renderMedia());
+                    return r.createElement(s.Z, { "aria-labelledby": [this.cardMediaNativeId, this.cardDetailNativeId].join(" "), id: t, onHoverIn: o, onLayout: this._handleLayout, onPressIn: o, style: [v.root, d ? v.borderShadow : e && v[e], u && f[u]], testID: l?.wrapper, viewRef: this._setRootNode, withFocusWithinFocusRing: !0, withInteractiveStyling: c, withOutsetFocusRing: !0 }, n ? [m, h] : [h, m]);
                 }
                 _renderDetail() {
                     const { descriptionMaxLines: e, titleMaxLines: t } = this.state,
                         { details: i, testIDs: a } = this.props;
-                    return r.createElement(m.Z, { attribution: i.attribution, category: i.category, description: 0 !== e ? i.description : void 0, descriptionMaxLines: e, destination: i.destination, footer: i.footer, id: this.cardDetailNativeId, testID: a?.layoutSmall.detail, title: i.title, titleMaxLines: t, vanity: i.vanity, withBottomPadding: !0 });
+                    return r.createElement(p.Z, { attribution: i.attribution, category: i.category, description: 0 !== e ? i.description : void 0, descriptionMaxLines: e, destination: i.destination, footer: i.footer, id: this.cardDetailNativeId, testID: a?.layoutSmall.detail, title: i.title, titleMaxLines: t, vanity: i.vanity, withBottomPadding: !0 });
                 }
                 _renderTopicDetail() {
                     if (!this.props.isTopicCard) return null;
@@ -489,7 +489,7 @@
                             details: { description: i, destination: a, title: o },
                         } = this.props,
                         n = { is_rtl: i?.is_rtl || o?.is_rtl, content: i && i.content ? i.content : h };
-                    return r.createElement(m.Z, { "aria-label": o ? this._composeTopicCardAccessibilityLabel(o, i) : void 0, description: n, descriptionMaxLines: e, destination: a, title: o, titleMaxLines: t, withBottomPadding: !0 });
+                    return r.createElement(p.Z, { "aria-label": o ? this._composeTopicCardAccessibilityLabel(o, i) : void 0, description: n, descriptionMaxLines: e, destination: a, title: o, titleMaxLines: t, withBottomPadding: !0 });
                 }
                 _renderMedia() {
                     const { locationKey: e, media: t } = this.props,
@@ -498,7 +498,7 @@
                         ? null
                         : r.createElement(u.Z.Consumer, null, ({ isDataSaverEnabled: t, isPromoted: n }) => {
                               const s = t && !n;
-                              return r.createElement(p.Z, { destination: i, locationKey: e && `${e}-smallCard`, mediaEntity: a, overlay: o, ratio: 1, renderPlaceholder: s });
+                              return r.createElement(m.Z, { destination: i, locationKey: e && `${e}-smallCard`, mediaEntity: a, overlay: o, ratio: 1, renderPlaceholder: s });
                           });
                 }
             }
@@ -518,8 +518,8 @@
                 d = i(392237),
                 c = i(94909),
                 u = i(596036),
-                m = i(747101),
-                p = i(268181),
+                p = i(747101),
+                m = i(268181),
                 h = i(822025),
                 y = i(447986),
                 b = i(615919);
@@ -546,8 +546,8 @@
                                 })(),
                             );
                         },
-                        D = (e) => (t ? r.createElement(p.Z, { buttons: [t], style: [v.buttonPadding, !e && v.buttonLeftAlign] }) : null),
-                        B = () => (C ? r.createElement(m.Z, { componentType: "card_layout_small_with_button", destinationKey: L }, ({ link: e, onClick: i }) => r.createElement(n.Z, { interactive: !1, link: e, onClick: i }, r.createElement(a.Z, { style: [v.descriptionMobileLayout, !t && v.bottomPadding] }, r.createElement(b.Z, { dir: (0, c.XP)(C.is_rtl), numberOfLines: 3, type: "description" }, C.content)))) : null);
+                        D = (e) => (t ? r.createElement(m.Z, { buttons: [t], style: [v.buttonPadding, !e && v.buttonLeftAlign] }) : null),
+                        B = () => (C ? r.createElement(p.Z, { componentType: "card_layout_small_with_button", destinationKey: L }, ({ link: e, onClick: i }) => r.createElement(n.Z, { interactive: !1, link: e, onClick: i }, r.createElement(a.Z, { style: [v.descriptionMobileLayout, !t && v.bottomPadding] }, r.createElement(b.Z, { dir: (0, c.XP)(C.is_rtl), numberOfLines: 3, type: "description" }, C.content)))) : null);
                     return r.createElement(l.ZP, null, ({ containerWidth: e }) => {
                         const t = e <= d.default.theme.breakpoints.small;
                         return r.createElement(
@@ -567,26 +567,26 @@
             i.d(t, { Z: () => w });
             var r = i(202784),
                 a = i(325686),
-                o = i(332920),
+                o = i(111677),
                 n = i.n(o),
                 s = i(544367),
                 l = i(731708),
                 d = i(235902),
                 c = i(530732),
                 u = i(470397),
-                m = i(891198),
-                p = i(392237),
+                p = i(891198),
+                m = i(392237),
                 h = i(366635),
                 y = i(538619),
                 b = i(94909),
                 g = i(747101),
                 f = i(615919);
             const v = n().c5954d30,
-                E = p.default.create((e) => ({ contentWrapper: { flexGrow: 1, flexShrink: 1, justifyContent: "center" }, attributionWrapper: { alignItems: "flex-start" }, detailItemsWrapper: { flexDirection: "row", justifyContent: "space-between", flexGrow: 1 }, horizontalPadding: { paddingHorizontal: e.spaces.space12 }, edgeToEdgeHorizontalPadding: { paddingHorizontal: e.spaces.space16 }, verticalPadding: { paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12 }, spaceBelow: { marginBottom: e.spaces.space4 }, icon: { marginEnd: e.spaces.space2 }, innerRow: { flexDirection: "row", flexShrink: 1 } })),
-                w = ({ attribution: e, destination: t, memberCount: i, style: o, title: p, titleMaxLines: w }) =>
+                E = m.default.create((e) => ({ contentWrapper: { flexGrow: 1, flexShrink: 1, justifyContent: "center" }, attributionWrapper: { alignItems: "flex-start" }, detailItemsWrapper: { flexDirection: "row", justifyContent: "space-between", flexGrow: 1 }, horizontalPadding: { paddingHorizontal: e.spaces.space12 }, edgeToEdgeHorizontalPadding: { paddingHorizontal: e.spaces.space16 }, verticalPadding: { paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12 }, spaceBelow: { marginBottom: e.spaces.space4 }, icon: { marginEnd: e.spaces.space2 }, innerRow: { flexDirection: "row", flexShrink: 1 } })),
+                w = ({ attribution: e, destination: t, memberCount: i, style: o, title: m, titleMaxLines: w }) =>
                     r.createElement(d.ZP.UseProps, null, ({ withEdgeToEdgeContent: d }) => {
                         const _ = d();
-                        return r.createElement(g.Z, { componentType: "twitter_list_details", destinationKey: t }, ({ link: t, onClick: d }) => r.createElement(c.Z, { interactive: !1, link: t, onClick: d, style: [E.contentWrapper, _ ? E.edgeToEdgeHorizontalPadding : E.horizontalPadding, E.verticalPadding, o] }, r.createElement(a.Z, { style: [E.innerRow, E.spaceBelow] }, r.createElement(u.Z, null, r.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, r.createElement(s.default, { style: E.icon }), v), r.createElement(l.ZP, { color: "gray700", size: "subtext2" }, r.createElement(n().I18NFormatMessage, { $i18n: "d6b02329", formattedCount: (0, m.wl)(i), count: i })))), r.createElement(a.Z, { style: E.spaceBelow }, r.createElement(f.Z, { dir: (0, b.XP)(p.is_rtl), numberOfLines: y.v.shouldLimitTextToSingleLine() ? 1 : w, type: "title", weight: "bold" }, p.content)), r.createElement(h.Z, { avatarSize: "small", isBlueVerified: e.is_blue_verified, isProtected: e.protected, isVerified: e.verified, name: e.name, nameSize: "subtext2", profileImageUrl: e.profile_image_url_https, screenName: e.screen_name, screenNameSize: "subtext2", style: E.attributionWrapper, verifiedType: e.verified_type, withLink: !1 })));
+                        return r.createElement(g.Z, { componentType: "twitter_list_details", destinationKey: t }, ({ link: t, onClick: d }) => r.createElement(c.Z, { interactive: !1, link: t, onClick: d, style: [E.contentWrapper, _ ? E.edgeToEdgeHorizontalPadding : E.horizontalPadding, E.verticalPadding, o] }, r.createElement(a.Z, { style: [E.innerRow, E.spaceBelow] }, r.createElement(u.Z, null, r.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, r.createElement(s.default, { style: E.icon }), v), r.createElement(l.ZP, { color: "gray700", size: "subtext2" }, r.createElement(n().I18NFormatMessage, { $i18n: "d6b02329", formattedCount: (0, p.wl)(i), count: i })))), r.createElement(a.Z, { style: E.spaceBelow }, r.createElement(f.Z, { dir: (0, b.XP)(m.is_rtl), numberOfLines: y.v.shouldLimitTextToSingleLine() ? 1 : w, type: "title", weight: "bold" }, m.content)), r.createElement(h.Z, { avatarSize: "small", isBlueVerified: e.is_blue_verified, isProtected: e.protected, isVerified: e.verified, name: e.name, nameSize: "subtext2", profileImageUrl: e.profile_image_url_https, screenName: e.screen_name, screenNameSize: "subtext2", style: E.attributionWrapper, verifiedType: e.verified_type, withLink: !1 })));
                     });
         },
         218440: (e, t, i) => {
@@ -599,9 +599,9 @@
                 l = i(392237),
                 d = i(596036),
                 c = i(447986);
-            const u = function ({ "aria-hidden": e, focusable: t, forcedMediaAspectRatio: i, hideImageDataSaverOverlay: l, locationKey: u, media: p, playOverlaySize: h, renderVideoPlayer: y, title: b, useDestination: g = !0, vanity: f }) {
-                    if (!p || !p.mediaEntity) return null;
-                    const { aspect_ratio: v, destination: E, mediaEntity: w, overlay: _ } = p,
+            const u = function ({ "aria-hidden": e, focusable: t, forcedMediaAspectRatio: i, hideImageDataSaverOverlay: l, locationKey: u, media: m, playOverlaySize: h, renderVideoPlayer: y, title: b, useDestination: g = !0, vanity: f }) {
+                    if (!m || !m.mediaEntity) return null;
+                    const { aspect_ratio: v, destination: E, mediaEntity: w, overlay: _ } = m,
                         S = [f, b?.content].join(" ");
                     if ("photo" === w.type) {
                         const { height: a, width: o } = w.original_info,
@@ -609,28 +609,28 @@
                             s = _ ?? (b?.content ? { type: "label", text: b.content } : void 0);
                         return r.createElement(c.Z, { "aria-hidden": e, "aria-label": S, destination: g ? E : void 0, focusable: t, hideImageDataSaverOverlay: l, locationKey: u && `${u}-largeCard`, mediaEntity: w, overlay: s, playOverlaySize: h, ratio: n });
                     }
-                    if ("iframe" === w.type) return r.createElement(o.Z, { ratio: Math.max(w.aspect_ratio, 1) }, r.createElement(n.Z, { src: w.url, style: m.iframe }));
+                    if ("iframe" === w.type) return r.createElement(o.Z, { ratio: Math.max(w.aspect_ratio, 1) }, r.createElement(n.Z, { src: w.url, style: p.iframe }));
                     if ("video" === w.type || "uc_video" === w.type || "live_broadcast" === w.type || "vine" === w.type || "tweet_video" === w.type || "animated_gif" === w.type) {
-                        const e = b?.content ? [r.createElement(s.ZP, { key: "title", style: m.mediaLabelText, type: "urlCardTitle" }, r.createElement(a.ZP, null, b.content))] : [];
+                        const e = b?.content ? [r.createElement(s.ZP, { key: "title", style: p.mediaLabelText, type: "urlCardTitle" }, r.createElement(a.ZP, null, b.content))] : [];
                         return y ? r.createElement(d.Z.Consumer, { "aria-label": S }, ({ isDataSaverEnabled: t, isPromoted: i }) => y(w, t ? (i ? "suboptimal" : "preview") : void 0, void 0, void 0, void 0, e)) : null;
                     }
                     return null;
                 },
-                m = l.default.create({ iframe: { height: "100%" }, mediaLabelText: { maxWidth: "95%" } });
+                p = l.default.create({ iframe: { height: "100%" }, mediaLabelText: { maxWidth: "95%" } });
         },
         361996: (e, t, i) => {
             i.d(t, { Z: () => _ });
             var r = i(202784),
                 a = i(325686),
-                o = i(332920),
+                o = i(111677),
                 n = i.n(o),
                 s = i(731708),
                 l = i(470397),
                 d = i(891198),
                 c = i(352924),
                 u = i(392237),
-                m = i(818080),
-                p = i(542908),
+                p = i(818080),
+                m = i(542908),
                 h = i(268181),
                 y = i(495108);
             const b = "cardPoll",
@@ -639,11 +639,11 @@
                 v = n().a3edf99a,
                 E = n().c2b81e9d,
                 w = u.default.create((e) => ({ pollDescription: { display: "none" }, pollStatus: { marginTop: e.spaces.space12 } })),
-                _ = ({ choices: e, endDatetimeUtc: t, isAuthor: i, isFinal: o, resultTextSize: n, selectedChoice: u, style: _, totalVotes: S, votingDisabled: x }) => {
-                    const C = (0, c.b)(),
-                        L = r.useMemo(() => e.map(({ cta: e, destination: t, index: i }) => ({ type: p.lW.GENERIC, data: { cta: e, index: i, destination: t } })), [e]);
-                    return r.createElement(a.Z, { style: _, testID: b }, u || o || i ? r.createElement(y.Z, { choices: e, isFinal: o, selectedChoice: u, totalVotes: S }) : r.createElement(r.Fragment, null, r.createElement(s.ZP, { id: C, style: w.pollDescription }, g), r.createElement(h.Z, { "aria-describedby": C, "aria-label": f, buttonSize: "DEPRECATED_normalCompact", buttons: L, chromeless: !0, disabled: x, role: "radiogroup" })), r.createElement(s.ZP, { color: "gray700", size: n, style: w.pollStatus }, r.createElement(l.Z, null, r.createElement(s.ZP, null, E({ count: (M = S), formattedCount: (0, d.Gb)(M) })), r.createElement(s.ZP, null, o ? v : m.Z.getTimeLeftLabel(t)))));
-                    var M;
+                _ = ({ choices: e, endDatetimeUtc: t, isAuthor: i, isFinal: o, renderTranslationFeedback: n, resultTextSize: u, selectedChoice: _, style: S, totalVotes: x, translations: C, votingDisabled: L }) => {
+                    const M = (0, c.b)(),
+                        Z = r.useMemo(() => e.map(({ cta: e, destination: t, index: i }) => ({ type: m.lW.GENERIC, data: { cta: e, index: i, destination: t } })), [e]);
+                    return r.createElement(a.Z, { style: S, testID: b }, _ || o || i ? r.createElement(y.Z, { choices: e, isFinal: o, selectedChoice: _, totalVotes: x, translations: C }) : r.createElement(r.Fragment, null, r.createElement(s.ZP, { id: M, style: w.pollDescription }, g), r.createElement(h.Z, { "aria-describedby": M, "aria-label": f, buttonSize: "DEPRECATED_normalCompact", buttons: Z, chromeless: !0, disabled: L, role: "radiogroup", translations: C })), r.createElement(s.ZP, { color: "gray700", size: u, style: w.pollStatus }, r.createElement(l.Z, null, r.createElement(s.ZP, null, E({ count: (I = x), formattedCount: (0, d.Gb)(I) })), r.createElement(s.ZP, null, o ? v : p.Z.getTimeLeftLabel(t)))), n?.());
+                    var I;
                 };
         },
         615919: (e, t, i) => {
@@ -655,11 +655,11 @@
                 s = i(538619);
             const l = n.default.create((e) => ({ icon: { marginEnd: e.spaces.space2 } })),
                 d = (e) => {
-                    const { children: t, color: i, dir: n = "auto", disableIcon: d, numberOfLines: c, size: u, type: m, weight: p } = e,
-                        h = "vanity" === m || "description" === m ? "gray700" : "text";
-                    return r.createElement(o.ZP, { color: i ?? h, dir: n, numberOfLines: c, size: u, weight: p }, "vanity" !== m || d ? null : r.createElement(o.ZP, { size: "subtext2", style: l.icon }, r.createElement(a.default, null)), s.v.renderTwemojiText(t));
+                    const { children: t, color: i, dir: n = "auto", disableIcon: d, numberOfLines: c, size: u, type: p, weight: m } = e,
+                        h = "vanity" === p || "description" === p ? "gray700" : "text";
+                    return r.createElement(o.ZP, { color: i ?? h, dir: n, numberOfLines: c, size: u, weight: m }, "vanity" !== p || d ? null : r.createElement(o.ZP, { size: "subtext2", style: l.icon }, r.createElement(a.default, null)), s.v.renderTwemojiText(t));
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0a1983f3.5516d80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0a1983f3.074f2b9a.js.map

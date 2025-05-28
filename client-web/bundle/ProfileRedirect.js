@@ -9,7 +9,7 @@
                 n = t(182056),
                 o = t(879113),
                 c = t(392237),
-                l = t(332920),
+                l = t(111677),
                 i = t.n(l),
                 u = t(968478);
             const d = i().aa6e3300,
@@ -80,4 +80,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfileRedirect.703c879a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfileRedirect.11b8399a.js.map

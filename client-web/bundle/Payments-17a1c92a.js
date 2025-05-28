@@ -12,7 +12,7 @@
         },
         605446: (e, n, a) => {
             a.d(n, { T: () => l });
-            const l = Object.freeze({ BankCardLinkingSessionRejectionReasonCardAlreadyExists: "BankCardLinkingSessionRejectionReasonCardAlreadyExists", BankCardLinkingSessionRejectionReasonInaccurateCardDetails: "BankCardLinkingSessionRejectionReasonInaccurateCardDetails", BankCardLinkingSessionRejectionReasonProviderFailedToAuthorizeCard: "BankCardLinkingSessionRejectionReasonProviderFailedToAuthorizeCard", BankCardLinkingSessionRejectionReasonProviderFailedToVerifyAddress: "BankCardLinkingSessionRejectionReasonProviderFailedToVerifyAddress", BankCardLinkingSessionRejectionReasonProviderFailedToVerifyCardholderName: "BankCardLinkingSessionRejectionReasonProviderFailedToVerifyCardholderName", BankCardLinkingSessionRejectionReasonProviderInternalFailure: "BankCardLinkingSessionRejectionReasonProviderInternalFailure", BankCardLinkingSessionRejectionReasonUnspecified: "BankCardLinkingSessionRejectionReasonUnspecified", BankCardLinkingSessionRejectionReasonUnsupportedCardType: "BankCardLinkingSessionRejectionReasonUnsupportedCardType", BankCardLinkingSessionRejectionReasonUnsupportedIssuerCountry: "BankCardLinkingSessionRejectionReasonUnsupportedIssuerCountry", BankCardLinkingSessionRejectionReasonUnusableCard: "BankCardLinkingSessionRejectionReasonUnusableCard" });
+            const l = Object.freeze({ BankCardLinkingSessionRejectionReasonCardAlreadyExists: "BankCardLinkingSessionRejectionReasonCardAlreadyExists", BankCardLinkingSessionRejectionReasonInaccurateCardDetails: "BankCardLinkingSessionRejectionReasonInaccurateCardDetails", BankCardLinkingSessionRejectionReasonProviderDidNotCarryNameVerificationCheck: "BankCardLinkingSessionRejectionReasonProviderDidNotCarryNameVerificationCheck", BankCardLinkingSessionRejectionReasonProviderFailedToAuthorizeCard: "BankCardLinkingSessionRejectionReasonProviderFailedToAuthorizeCard", BankCardLinkingSessionRejectionReasonProviderFailedToVerifyAddress: "BankCardLinkingSessionRejectionReasonProviderFailedToVerifyAddress", BankCardLinkingSessionRejectionReasonProviderFailedToVerifyCardholderName: "BankCardLinkingSessionRejectionReasonProviderFailedToVerifyCardholderName", BankCardLinkingSessionRejectionReasonProviderInternalFailure: "BankCardLinkingSessionRejectionReasonProviderInternalFailure", BankCardLinkingSessionRejectionReasonUnspecified: "BankCardLinkingSessionRejectionReasonUnspecified", BankCardLinkingSessionRejectionReasonUnsupportedCardType: "BankCardLinkingSessionRejectionReasonUnsupportedCardType", BankCardLinkingSessionRejectionReasonUnsupportedIssuerCountry: "BankCardLinkingSessionRejectionReasonUnsupportedIssuerCountry", BankCardLinkingSessionRejectionReasonUnusableCard: "BankCardLinkingSessionRejectionReasonUnusableCard" });
         },
         622769: (e, n, a) => {
             a.d(n, { G: () => l });
@@ -44,7 +44,7 @@
         },
         829464: (e, n, a) => {
             a.d(n, { h: () => l });
-            const l = Object.freeze({ Interest: "Interest", Premium: "Premium" });
+            const l = Object.freeze({ Geography: "Geography", Interest: "Interest", Premium: "Premium" });
         },
         463963: (e, n, a) => {
             a.d(n, { E: () => l });
@@ -91,6 +91,10 @@
             a.d(n, { _: () => l });
             const l = Object.freeze({ ThreeDsAuthenticationResponseAllow: "ThreeDsAuthenticationResponseAllow", ThreeDsAuthenticationResponseDeny: "ThreeDsAuthenticationResponseDeny", ThreeDsAuthenticationResponseUnspecified: "ThreeDsAuthenticationResponseUnspecified" });
         },
+        582456: (e, n, a) => {
+            a.d(n, { y: () => l });
+            const l = Object.freeze({ Chip: "Chip", Contactless: "Contactless", KeyedIn: "KeyedIn", Online: "Online", Swipe: "Swipe" });
+        },
         671830: (e, n, a) => {
             a.d(n, { W: () => l });
             const l = Object.freeze({ Clock: "Clock", CreditCardBack: "CreditCardBack", FollowArrows: "FollowArrows", PeopleStroke: "PeopleStroke" });
@@ -102,10 +106,6 @@
         357818: (e, n, a) => {
             a.d(n, { x: () => l });
             const l = Object.freeze({ AtmWithdrawal: "AtmWithdrawal", Deposit: "Deposit", DisputeCredit: "DisputeCredit", Payment: "Payment", Refund: "Refund", Reverse: "Reverse", Transfer: "Transfer", Unspecified: "Unspecified", Withdraw: "Withdraw" });
-        },
-        848739: (e, n, a) => {
-            a.d(n, { l: () => l });
-            const l = Object.freeze({ Delayed: "Delayed", RealTime: "RealTime" });
         },
         539660: (e, n, a) => {
             a.d(n, { P: () => l });
@@ -283,6 +283,7 @@
                                                     { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "availability_date", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "transaction_status", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "authorization_method", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null },
                                                     {
                                                         alias: null,
@@ -436,7 +437,7 @@
                             { alias: null, args: d, filters: ["s"], handle: "slice", key: "useActionableItemsQuery_TransactionActions_slice", kind: "LinkedHandle", name: "get_payments_customer_actions" },
                         ],
                     },
-                    params: { id: "fnszHRGPEqYUMkjyrmmPRQ", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
+                    params: { id: "_2l5s-hJ9VBtfNyNRzGIyw", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
                 };
             K.hash = "a6a8f048d1caef1c671f17a2b72cb546";
             const h = K;
@@ -969,4 +970,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.a53b88aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.7d92eb2a.js.map

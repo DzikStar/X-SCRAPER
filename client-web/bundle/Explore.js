@@ -7,7 +7,7 @@
             var d = a(202784),
                 o = a(154003),
                 r = a(392237),
-                t = a(332920),
+                t = a(111677),
                 l = a.n(t),
                 s = a(698891);
             const i = "settingsAppBar",
@@ -24,6 +24,12 @@
                 t = a(572067);
             const l = ({ children: e, description: n, includeOpenGraphMeta: a = !0, title: l }) => d.createElement(d.Fragment, null, l && d.createElement(r.Z, { title: l, withMeta: a }), a && d.createElement(t.Z, { description: n, title: l }), d.createElement(o.ql, null, d.createElement("meta", { description: n, name: "description" })), e),
                 s = d.memo(l);
+        },
+        349035: (e, n, a) => {
+            a.d(n, { Z: () => r });
+            var d = a(202784),
+                o = a(272175);
+            const r = (0, a(500002).ZP)(({ staticContext: e, status: n = 404 }) => (e && (e.statusCode = n), d.createElement(o.ql, null, d.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
         },
         387524: (e, n, a) => {
             a.d(n, { Z: () => p });
@@ -50,7 +56,7 @@
                             [M, p, w],
                         ),
                         y = u.ZM.useCollapsibleNavBars(),
-                        A = [...u.Ah({ elementPosition: "bottom" }), y && m.fabStaysAboveSafeArea];
+                        E = [...u.Ah({ elementPosition: "bottom" }), y && m.fabStaysAboveSafeArea];
                     return g
                         ? o.createElement(
                               t.Z.FloatingAction,
@@ -60,7 +66,7 @@
                                       l = e > s.default.theme.breakpoints.medium,
                                       u = e < s.default.theme.breakpoints.micro,
                                       b = [m.root, l && m.rootMedium, t && m.rootLarge],
-                                      h = [m.fab, t && m.fabLarge, u && m.fabMicro, A];
+                                      h = [m.fab, t && m.fabLarge, u && m.fabMicro, E];
                                   return o.createElement(
                                       r.Z,
                                       { "aria-label": n, pointerEvents: "box-none", role: "complementary", style: b },
@@ -98,7 +104,7 @@
         32677: (e, n, a) => {
             a.d(n, { Z: () => u });
             var d = a(202784),
-                o = a(332920),
+                o = a(111677),
                 r = a.n(o),
                 t = a(186444),
                 l = a(355883);
@@ -110,6 +116,27 @@
         635510: (e, n, a) => {
             a.d(n, { Z: () => d });
             const d = { createList: "FloatingActionButtons_CreateList_Button", tweet: "FloatingActionButtons_Tweet_Button", message: "FloatingActionButtons_Message_Button" };
+        },
+        56851: (e, n, a) => {
+            a.d(n, { Z: () => p });
+            var d = a(202784),
+                o = a(420740),
+                r = a(108362),
+                t = a(731708),
+                l = a(154003),
+                s = a(392237),
+                i = a(111677),
+                c = a.n(i),
+                u = a(349035);
+            const b = "error-detail",
+                h = c().e49537c2,
+                m = c().a9ae1e78;
+            class p extends d.PureComponent {
+                render() {
+                    return d.createElement(o.Z, { testID: b }, d.createElement(u.Z, null), d.createElement(r.Z, { style: w.root }, d.createElement(t.ZP, { align: "center", color: "gray700", style: w.retryText }, h), d.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, m)));
+                }
+            }
+            const w = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         371493: (e, n, a) => {
             a.d(n, { $N: () => M, G0: () => g, Jj: () => f, O9: () => m, S: () => p, fy: () => w, jz: () => y, nm: () => D, qk: () => u, uI: () => b });
@@ -154,11 +181,11 @@
                 y = (e) => (0, i.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(o.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: t.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         16800: (e, n, a) => {
-            a.r(n), a.d(n, { ExploreScreen: () => L, default: () => v });
+            a.r(n), a.d(n, { ExploreScreen: () => v, default: () => L });
             var d = a(202784),
                 o = a(457311),
                 r = a(688715),
-                t = a(332920),
+                t = a(111677),
                 l = a.n(t),
                 s = a(233935),
                 i = a(718e3),
@@ -198,12 +225,11 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
@@ -214,7 +240,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                             a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
                             a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
-                            a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-3ba4c741"),
+                            a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b75711ed"),
                             a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
                             a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
                             a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
@@ -236,18 +262,18 @@
                 m = (0, b.Z)({ loader: () => a.e("loader.TryFullNewsSidebar").then(a.bind(a, 426873)) });
             var p = a(443781),
                 w = a(32677),
-                D = a(231035),
+                D = a(56851),
                 g = a(337523),
                 M = a(519896),
                 f = a(371493),
                 y = a(24949),
-                A = a(912021),
-                E = a(668214),
+                E = a(912021),
+                A = a(668214),
                 k = a(558369);
             const I = (e, n) => n.match?.params?.tabId || void 0,
-                _ = () => {
-                    const e = (0, A.Z)((e) => (0, f.fy)(e)),
-                        n = (0, A.Z)((e, n) => (0, f.fy)(e, n));
+                P = () => {
+                    const e = (0, E.Z)((e) => (0, f.fy)(e)),
+                        n = (0, E.Z)((e, n) => (0, f.fy)(e, n));
                     return (0, y.P1)(
                         (e) => !0 === (0, k.FG)(e, "explore_graphql_enabled"),
                         I,
@@ -255,19 +281,19 @@
                         (e, a, d) => n(e, d ? d?.tabs?.initialTabId : a),
                     );
                 },
-                P = (0, E.Z)()
-                    .propsFromState(() => ({ initialTabModule: _(), selectedTabId: I }))
+                _ = (0, A.Z)()
+                    .propsFromState(() => ({ initialTabModule: P(), selectedTabId: I }))
                     .withAnalytics({ page: "guide", section: "main" });
             const x = { ...(0, a(335632).G)({ withThirdPartyCards: !0, errorContext: "EXPLORE_SCREEN" }) },
-                C = l().fcf3e54c,
-                T = l().c797b44e,
-                Z = l().a19ce060,
+                Z = l().fcf3e54c,
+                C = l().c797b44e,
+                T = l().a19ce060,
                 S = () => d.createElement(D.Z, null),
-                N = () => d.createElement(o.Z, { message: Z }),
+                N = () => d.createElement(o.Z, { message: T }),
                 B = 600,
                 R = 315,
                 G = "https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg";
-            class L extends d.Component {
+            class v extends d.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getTabLink = (e) => ({ pathname: `/explore/tabs/${e}` })),
@@ -287,18 +313,18 @@
                         p = l.isTrue("responsive_web_trends_setting_new_endpoints") ? "/settings/explore" : "/settings/trends",
                         D = d.createElement(s.Z, { onPress: this._handleSettingsClick, pullRight: !0, to: p }),
                         y = o.state && o.state.searchFocused,
-                        A = this.context.featureSwitches.isTrue("responsive_web_grok_05221996"),
-                        E = A && !!t && "news" !== t && "for_you" !== t,
-                        k = A && "news" === t,
-                        I = A && "news" === t,
-                        _ = d.createElement(i.Z, { withNews: E, withSearchBox: !1, withTrends: !1 }, k && d.createElement(h, null), I && d.createElement(m, null)),
-                        P = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
-                        Z = e.contextualScribeNamespace;
-                    return d.createElement(d.Fragment, null, d.createElement(c.Z, { description: T, includeOpenGraphMeta: !1, title: C }), d.createElement(u.Z, { canonical: (0, r.ju)("https://x.com/explore"), description: T, image: G, imageH: R, imageW: B, title: C, type: "article" }), d.createElement(g.Z, { entryConfiguration: x, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: Z, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: M.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: D, selectedTabId: t, sidebarContent: _, timelinePrefix: f.uI, title: C, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: P }), !1);
+                        E = this.context.featureSwitches.isTrue("responsive_web_grok_05221996"),
+                        A = E && !!t && "news" !== t && "for_you" !== t,
+                        k = E && "news" === t,
+                        I = E && "news" === t,
+                        P = d.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, k && d.createElement(h, null), I && d.createElement(m, null)),
+                        _ = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
+                        T = e.contextualScribeNamespace;
+                    return d.createElement(d.Fragment, null, d.createElement(c.Z, { description: C, includeOpenGraphMeta: !1, title: Z }), d.createElement(u.Z, { canonical: (0, r.ju)("https://x.com/explore"), description: C, image: G, imageH: R, imageW: B, title: Z, type: "article" }), d.createElement(g.Z, { entryConfiguration: x, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: M.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: D, selectedTabId: t, sidebarContent: P, timelinePrefix: f.uI, title: Z, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: _ }), !1);
                 }
             }
-            L.contextType = p.rC;
-            const v = P(L);
+            v.contextType = p.rC;
+            const L = _(v);
         },
         392027: (e, n, a) => {
             a.d(n, { Z: () => s });
@@ -318,4 +344,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.6c89295a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.94e20e5a.js.map

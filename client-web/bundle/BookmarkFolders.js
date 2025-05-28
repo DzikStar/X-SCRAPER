@@ -86,7 +86,7 @@
             o.d(t, { ZP: () => T });
             var r = o(202784),
                 a = o(457311),
-                n = o(332920),
+                n = o(111677),
                 l = o.n(n),
                 i = o(901646),
                 s = o(325686),
@@ -145,7 +145,7 @@
                 i = o(530732),
                 s = o(731708),
                 c = o(392237),
-                d = o(332920),
+                d = o(111677),
                 m = o.n(d),
                 u = o(322771),
                 k = o(913973),
@@ -247,7 +247,7 @@
             var r = o(202784),
                 a = o(154003),
                 n = o(855488),
-                l = o(332920),
+                l = o(111677),
                 i = o.n(l),
                 s = o(187669),
                 c = o(615656),
@@ -330,7 +330,7 @@
                 n = o(855488),
                 l = o(242454),
                 i = o(190286),
-                s = o(332920),
+                s = o(111677),
                 c = o.n(s),
                 d = o(615656),
                 m = o(980407),
@@ -450,7 +450,7 @@
             var r = o(202784),
                 a = o(325686),
                 n = o(601413),
-                l = o(332920),
+                l = o(111677),
                 i = o.n(l),
                 s = o(223090),
                 c = o(718e3),
@@ -498,4 +498,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BookmarkFolders.f19be76a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BookmarkFolders.5d43795a.js.map

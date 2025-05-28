@@ -832,7 +832,7 @@
         381904: (e, t, n) => {
             n.d(t, { e: () => q, Y: () => K });
             var o = {};
-            n.r(o), n.d(o, { buildDockConfig: () => D, useBuildPlayerProps: () => Z });
+            n.r(o), n.d(o, { buildDockConfig: () => L, useBuildPlayerProps: () => Z });
             var s = {};
             n.r(s), n.d(s, { buildDockConfig: () => R, buildPlayerProps: () => N });
             n(571372);
@@ -925,14 +925,14 @@
                     [e, t, n],
                 );
             }
-            function D({ audioDockProps: e, commonApi: t, context: n, history: o }) {
+            function L({ audioDockProps: e, commonApi: t, context: n, history: o }) {
                 const s = A(n);
                 if (!s) return null;
                 const { activeItem: i } = s;
                 return r.createElement(P, (0, d.Z)({ key: i.id, audioSpaceId: i.id, onRequestClose: function () {} }, e));
             }
             n(136728);
-            var L = n(118149),
+            var D = n(118149),
                 M = n(425474),
                 x = n(337637);
             function O(e) {
@@ -977,7 +977,7 @@
                     S = l.full_text,
                     w = _ && S ? S.replace(_, "").trim() : S,
                     T = l.user;
-                return r.createElement(L.uP, {
+                return r.createElement(D.uP, {
                     isWide: e.isSideNavLayout,
                     width: e.width,
                     isMuted: f,
@@ -1137,7 +1137,7 @@
             var o = n(202784),
                 s = n(400752),
                 r = n(776342),
-                i = n(332920),
+                i = n(111677),
                 a = n.n(i),
                 c = n(316118),
                 u = n(809674),
@@ -1243,7 +1243,7 @@
                         }
                         return { fetch: c, get: u, subscribe: l, unsubscribe: d, audioContext: n, report: m() };
                     })(e, w),
-                    { audioContext: A, report: Z, subscribe: D, unsubscribe: L } = E,
+                    { audioContext: A, report: Z, subscribe: L, unsubscribe: D } = E,
                     M = E.get(),
                     x = M.data,
                     O = x?.state;
@@ -1286,36 +1286,36 @@
                         },
                     },
                     Q = p.w.initialized(),
-                    W = o.useRef({ utils: q, audioSpaceMetadata: E });
-                (W.current.utils = q), (W.current.audioSpaceMetadata = E);
-                const { isUserSpeakingRole: B } = (0, l.l7)();
+                    J = o.useRef({ utils: q, audioSpaceMetadata: E });
+                (J.current.utils = q), (J.current.audioSpaceMetadata = E);
+                const { isUserSpeakingRole: W } = (0, l.l7)();
                 o.useEffect(() => {
                     let e;
-                    const t = B ? C : P;
+                    const t = W ? C : P;
                     return (
                         Q &&
                             (function n() {
-                                const o = W.current.utils.is.loaded,
-                                    s = W.current.utils.is.Running;
-                                (o && !s) || (W.current.audioSpaceMetadata.fetch(t, { skipListeners: w }), (e = setTimeout(n, 1e3 * t)));
+                                const o = J.current.utils.is.loaded,
+                                    s = J.current.utils.is.Running;
+                                (o && !s) || (J.current.audioSpaceMetadata.fetch(t, { skipListeners: w }), (e = setTimeout(n, 1e3 * t)));
                             })(),
                         function () {
                             clearTimeout(e);
                         }
                     );
-                }, [Q, e, O, w, B]);
-                const U = (0, k.Hz)(),
-                    J = (0, s.b9)(S.e);
+                }, [Q, e, O, w, W]);
+                const B = (0, k.Hz)(),
+                    U = (0, s.b9)(S.e);
                 return {
                     space: x,
                     audioContext: A,
                     utils: q,
                     handlers: {
-                        subscribe: D,
-                        unsubscribe: L,
+                        subscribe: L,
+                        unsubscribe: D,
                         report: Z,
                         join: function ({ forceReplay: t, isAnonymous: n, origin: o, role: s } = {}) {
-                            x && x.media_key && N.joinable && (0, m.j)({ contentType: x?.content_type, id: e, mediaKey: x.media_key, isLive: N.Running, isReplay: t || N.replayable, isAnonymous: !!n, isSuperFollowersOnly: N.superFollowersOnly, addToast: a, scribe: q.scribe, started_at: x?.started_at, origin: o, role: s, clearAndLoadSpace: J, resetExpandedDockStore: U });
+                            x && x.media_key && N.joinable && (0, m.j)({ contentType: x?.content_type, id: e, mediaKey: x.media_key, isLive: N.Running, isReplay: t || N.replayable, isAnonymous: !!n, isSuperFollowersOnly: N.superFollowersOnly, addToast: a, scribe: q.scribe, started_at: x?.started_at, origin: o, role: s, clearAndLoadSpace: U, resetExpandedDockStore: B });
                         },
                     },
                 };
@@ -1537,8 +1537,8 @@
                     return null;
                 const A = Boolean(i && r && f),
                     Z = !A && T,
-                    D = A ? s.W.SPACE : s.W.NORMAL;
-                const L = (function (e, t) {
+                    L = A ? s.W.SPACE : s.W.NORMAL;
+                const D = (function (e, t) {
                         const n = e.analytics.contextualScribeNamespace,
                             o = { isAnonymous: e.isAnonymous, enableShortFormCompleteLogging: t.isTrue("responsive_web_video_pcomplete_enabled"), periscopeAuthToken: h.w.proxsee.authToken(), scribeContext: { ...n }, userType: h.w.proxsee.userType() },
                             s = {
@@ -1550,7 +1550,7 @@
                         return new m.Z(s, { log: () => {} }, e.getTwitterAuthedHttpClient(), o);
                     })(e, t),
                     M = {
-                        analytics: L,
+                        analytics: D,
                         basePlayerClass: P,
                         httpClient: _,
                         onApiReady: function (t) {
@@ -1564,7 +1564,7 @@
                                 onPauseRequest: function () {
                                     e.disablePlaybackCoordination || t.pause();
                                 },
-                                playbackPriority: D,
+                                playbackPriority: L,
                                 canAutoplay: Boolean(T),
                                 isLooping: Boolean(d),
                             };
@@ -1611,7 +1611,7 @@
             n(202784);
             const o = (0, n(523561).Z)({
                 loader: () =>
-                    Promise.all([n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("icons.4"), n.e("loader.AudioOnlyVideoPlayer-6107ac1a"), n.e("loader.AudioOnlyVideoPlayer-e96e9bea"), n.e("loader.AudioOnlyVideoPlayer-3e608b8e")])
+                    Promise.all([n.e("icons.0"), n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("shared~ondemand.InlinePlayer~bundle.LiveEvent~loader.AudioOnlyVideoPlayer~loader.JetfuelFrame~loader-4648150b"), n.e("shared~ondemand.InlinePlayer~bundle.LiveEvent~loader.AudioOnlyVideoPlayer~loader.JetfuelFrame~loader-6ff35035"), n.e("shared~ondemand.InlinePlayer~bundle.LiveEvent~loader.AudioOnlyVideoPlayer~loader.JetfuelFrame~loader-147738cd"), n.e("loader.AudioOnlyVideoPlayer")])
                         .then(n.bind(n, 744130))
                         .then((e) => ({ default: e.__DANGEROUS_IMPORT__ })),
             });
@@ -1675,10 +1675,10 @@
                 u = n(813323),
                 l = n(277660),
                 d = n.n(l),
-                p = n(970187),
+                p = n(723587),
                 f = n(154003),
                 m = n(731708),
-                h = n(332920),
+                h = n(111677),
                 y = n.n(h),
                 g = n(516951),
                 b = n(443781),
@@ -1697,7 +1697,7 @@
                     {
                         link: n,
                         onPress: () => {
-                            e(D.viewDetailsClick);
+                            e(L.viewDetailsClick);
                         },
                         type: "onMediaOutlined",
                     },
@@ -1712,7 +1712,7 @@
                                     color: "whiteOnColor",
                                     link: `/${t}`,
                                     onPress: () => {
-                                        e(D.viewProfileClick);
+                                        e(L.viewProfileClick);
                                     },
                                     weight: "bold",
                                 },
@@ -1724,8 +1724,8 @@
                 },
                 A = { followHost: y().a1a0e6d8, unfollowHost: y().a3c4e396, viewProfile: y().j58e7b00, viewDetails: y().eca4e32a },
                 Z = { follow: A.followHost, following: "", unfollow: A.unfollowHost },
-                D = { followHostClick: ":audiospace:audiospace_card:speaker_list:button:click", toastImpression: ":audiospace::follow_host:toast:impression", viewProfileClick: ":audiospace::follow_host:toast:click", viewDetailsClick: ":audiospace:audiospace_card:speaker_list:button:click" },
-                L = P(function (e) {
+                L = { followHostClick: ":audiospace:audiospace_card:speaker_list:button:click", toastImpression: ":audiospace::follow_host:toast:impression", viewProfileClick: ":audiospace::follow_host:toast:click", viewDetailsClick: ":audiospace:audiospace_card:speaker_list:button:click" },
+                D = P(function (e) {
                     const { scribe: t, spaceId: n, user: o } = e,
                         r = d()(C, o),
                         i = r?.relationship_perspectives?.following,
@@ -1741,13 +1741,13 @@
                                       isFollowing: r.relationship_perspectives?.following || !1,
                                       onFollow: n(() =>
                                           (() => {
-                                              t(D.followHostClick);
+                                              t(L.followHostClick);
                                               const { addToast: n, createLocalApiErrorHandler: o, follow: s } = e;
                                               r &&
                                                   s(r.rest_id, {}).then(
                                                       () => {
                                                           const e = r.core?.screen_name;
-                                                          e && (t(D.toastImpression), n({ text: E(t, e) }));
+                                                          e && (t(L.toastImpression), n({ text: E(t, e) }));
                                                       },
                                                       o({ showToast: !0 }),
                                                   );
@@ -1767,10 +1767,10 @@
                     r = n?.rest_id,
                     u = i()(M, { restId: o }),
                     l = { context: "FollowHostButtonContainerQuery", options: a.F };
-                return s.createElement(c.H, { errorConfig: l }, s.createElement(L, { scribe: t, spaceId: r, user: u.user.result }));
+                return s.createElement(c.H, { errorConfig: l }, s.createElement(D, { scribe: t, spaceId: r, user: u.user.result }));
             }
             const O = s.memo(x);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.69c03bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.0552dbda.js.map

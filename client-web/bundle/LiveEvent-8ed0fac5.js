@@ -3,42 +3,42 @@
     ["bundle.LiveEvent-8ed0fac5"],
     {
         810430: (e, t, i) => {
-            i.d(t, { AJ: () => I, AZ: () => p, BG: () => W, Ju: () => E, Op: () => w, Q_: () => D, Qv: () => O, Tr: () => h, a9: () => L, aE: () => _, d5: () => S, fF: () => U, mZ: () => z, r5: () => G, tO: () => j, to: () => P, vy: () => F, yC: () => $, yU: () => x, zd: () => m });
+            i.d(t, { AJ: () => h, AZ: () => _, BG: () => K, Ju: () => p, Op: () => R, Q_: () => P, Qv: () => O, Tr: () => I, a9: () => L, aE: () => m, d5: () => b, fF: () => x, mZ: () => q, r5: () => j, tO: () => k, to: () => D, vy: () => F, yC: () => $, yU: () => N, zd: () => u });
             i(543673), i(240753), i(128399);
             var n = i(688715),
                 r = i(309854),
                 s = i(284702),
-                a = i(332920),
+                a = i(111677),
                 o = i.n(a),
                 d = i(282874),
                 c = i(912021),
                 l = i(337637),
-                u = i(197914);
-            const E = (e) => (0, n.ju)(`https://x.com/i/events/${e}`),
-                p = o().c39b0e24,
-                m = o().ad16f482,
-                _ = "1",
+                E = i(197914);
+            const p = (e) => (0, n.ju)(`https://x.com/i/events/${e}`),
+                _ = o().c39b0e24,
+                u = o().ad16f482,
+                m = "1",
                 v = "RUNNING",
-                f = { "600x1200": 4, "1024x2048": 3, "340x680": 2, "150x150": 1 },
-                T = o().i0ed3f4e,
-                h = Object.freeze({ LIVE_BROADCAST: "liveBroadcast", REPLAY_BROADCAST: "replayBroadcast", AUDIOSPACE: "audiospace", VOD: "vod", GIF: "gif", SLATE: "slate" }),
-                I = Object.freeze({ New: "New" }),
-                S = (e, t, i) => {
+                T = { "600x1200": 4, "1024x2048": 3, "340x680": 2, "150x150": 1 },
+                f = o().i0ed3f4e,
+                I = Object.freeze({ LIVE_BROADCAST: "liveBroadcast", REPLAY_BROADCAST: "replayBroadcast", AUDIOSPACE: "audiospace", VOD: "vod", GIF: "gif", SLATE: "slate" }),
+                h = Object.freeze({ New: "New" }),
+                b = (e, t, i) => {
                     if (i && i.url) return ((e) => -1 !== e.url.indexOf("pscp.tv"))(i) ? [...(e ? [{ width: 128, height: 128, uri: e }] : []), ...(t ? [{ width: 360, height: 360, uri: t }] : []), { width: i.width, height: i.height, uri: i.url }] : void 0;
                 },
-                y = (0, c.Z)((e, t) => e.slates && t && e.slates[t]),
-                b = (e, t) => {
+                S = (0, c.Z)((e, t) => e.slates && t && e.slates[t]),
+                w = (e, t) => {
                     const i = (e.slate || e.fallback_slate || {}).id,
                         n = ((e, t) => {
-                            const i = y(e, t),
+                            const i = S(e, t),
                                 n = (i && i.variants) || [];
                             return (0, d.Z)(n, (e) => {
                                 const { name: t } = e;
-                                return f[t] || 0;
+                                return T[t] || 0;
                             });
                         })(t, i),
                         s = ((e, t, i) => {
-                            const n = y(e, t);
+                            const n = S(e, t);
                             let s;
                             if (i && n) {
                                 const { focus_rects: i = [], tweet_id: a } = n;
@@ -51,19 +51,19 @@
                             return s;
                         })(t, i, n),
                         a = ((e, t, i) => (e ? t.slates[i].label : void 0))(n, t, i),
-                        { attribution: o, tweet_id: c } = y(t, i) || {},
+                        { attribution: o, tweet_id: c } = S(t, i) || {},
                         l =
                             ((e, t) => {
                                 if (t.broadcast && t.broadcast.id) {
                                     const i = t.broadcast.id,
-                                        n = R(e, i);
+                                        n = g(e, i);
                                     return n && { small: n.image_url_small, medium: n.image_url_medium };
                                 }
                             })(t, e) || {},
-                        u = n && S(l.small, l.medium, n);
-                    return i && n ? { id: i, image: n, imageAttribution: o, periscopeVariants: u, cropCandidates: s, label: a, tweetId: c } : void 0;
+                        E = n && b(l.small, l.medium, n);
+                    return i && n ? { id: i, image: n, imageAttribution: o, periscopeVariants: E, cropCandidates: s, label: a, tweetId: c } : void 0;
                 },
-                w = (e, t) => {
+                R = (e, t) => {
                     const i = ((e) => {
                             const { attribution_user_id: t } = e.liveEventDetails;
                             return e.users && t ? e.users[t] : void 0;
@@ -71,72 +71,72 @@
                         { category: n, description: r, description_entities: s, remind_me_subscription: a, short_title: o, time_string: d, title: c } = t.liveEventDetails;
                     return { author: i, category: n, description: r, descriptionEntities: s, eventId: e, remindMeSubscription: a, shortTitle: o || c, timeString: d, title: c };
                 },
-                R = (e, t) => (e.broadcasts && t ? e.broadcasts[t] : void 0),
-                g = (e, t) => {
+                g = (e, t) => (e.broadcasts && t ? e.broadcasts[t] : void 0),
+                y = (e, t) => {
                     const { extended_entities: i = {} } = e,
                         { media: n = [] } = i;
                     return n.find((e) => e.media_key === t || "photo" !== e.type);
                 },
-                A = (e, t, i) => {
+                C = (e, t, i) => {
                     const { media: n = {} } = e,
                         { mediaEntity: r } = n;
                     return !r || (r.broadcast_id !== t && r.media_tweet_id !== i) ? void 0 : e.promotedContent;
                 },
-                C = (e, t, i, n, r) => {
-                    const s = t && n ? g(t, n) : void 0,
-                        a = R(i, e),
+                A = (e, t, i, n, r) => {
+                    const s = t && n ? y(t, n) : void 0,
+                        a = g(i, e),
                         o = a ? e : void 0,
                         d = a?.media_key,
                         c = a?.status,
                         l = a?.twitter_user_id,
-                        u = a?.user_display_name,
-                        E = a?.username,
-                        p = a?.width,
-                        m = a?.height,
-                        _ = a?.broadcast_source,
-                        f = a?.camera_rotation,
-                        T = a?.image_url,
-                        h = a?.media_id,
-                        I = ((e) => !!e && e.state === v)(a);
-                    return { mediaId: h, coverTweet: t, coverMedia: s, broadcastId: o, broadcastMediaKey: d, broadcastTitle: c, broadcastTwitterId: l, broadcastDisplayName: u, broadcastUsername: E, broadcastWidth: p, broadcastHeight: m, broadcastThumbnail: T, broadcastSource: _, broadcastOrientation: f, isLive: I, promotedContent: r && A(r, o, n) };
+                        E = a?.user_display_name,
+                        p = a?.username,
+                        _ = a?.width,
+                        u = a?.height,
+                        m = a?.broadcast_source,
+                        T = a?.camera_rotation,
+                        f = a?.image_url,
+                        I = a?.media_id,
+                        h = ((e) => !!e && e.state === v)(a);
+                    return { mediaId: I, coverTweet: t, coverMedia: s, broadcastId: o, broadcastMediaKey: d, broadcastTitle: c, broadcastTwitterId: l, broadcastDisplayName: E, broadcastUsername: p, broadcastWidth: _, broadcastHeight: u, broadcastThumbnail: f, broadcastSource: m, broadcastOrientation: T, isLive: h, promotedContent: r && C(r, o, n) };
                 },
-                O = (e, t) => (e && e.image ? { media_url_https: e.image.url, original_info: { focus_rects: e.cropCandidates, height: e.image.height, width: e.image.width }, ext_alt_text: t ? t.ext_alt_text : T, id_str: e.id, expanded_url: "", type: "photo" } : void 0),
-                Z = (e, t) => t !== W.SHOP || e,
+                O = (e, t) => (e && e.image ? { media_url_https: e.image.url, original_info: { focus_rects: e.cropCandidates, height: e.image.height, width: e.image.width }, ext_alt_text: t ? t.ext_alt_text : f, id_str: e.id, expanded_url: "", type: "photo" } : void 0),
+                Z = (e, t) => t !== K.SHOP || e,
                 L = (e, t, i, n) => {
                     const r = t.liveEventDetails.timelines || [],
-                        s = r.length ? r[0].timeline_id : _,
+                        s = r.length ? r[0].timeline_id : m,
                         a = r.length ? r[0].hashtag : void 0,
                         o = r.length ? r[0].compose_semantic_core_id : void 0;
                     let d,
                         c,
                         l = 0;
-                    const u = i && r.some((e) => e.timeline_id === i),
-                        E = Z(n, i),
-                        p = r
+                    const E = i && r.some((e) => e.timeline_id === i),
+                        p = Z(n, i),
+                        _ = r
                             .filter(({ timeline_id: e }) => Z(n, e))
-                            .map(({ compose_semantic_core_id: t, customization_info: n, hashtag: r, label_type: a, timeline_id: o, timeline_source_id: E, timeline_source_type: p, title: m }, _) => {
+                            .map(({ compose_semantic_core_id: t, customization_info: n, hashtag: r, label_type: a, timeline_id: o, timeline_source_id: p, timeline_source_type: _, title: u }, m) => {
                                 const v = o === s;
-                                return ((u && o === i) || v) && ((l = _), (d = r), (c = t)), { isActive: () => (u ? o === i : v), to: { pathname: `/i/events/${e}`, query: { timeline: o } }, label: m, labelType: a && I[a], customizationInfo: n, hashtag: r, timelineId: o, timelineSourceId: E, timelineSourceType: p };
+                                return ((E && o === i) || v) && ((l = m), (d = r), (c = t)), { isActive: () => (E ? o === i : v), to: { pathname: `/i/events/${e}`, query: { timeline: o } }, label: u, labelType: a && h[a], customizationInfo: n, hashtag: r, timelineId: o, timelineSourceId: p, timelineSourceType: _ };
                             }),
-                        m = d || a;
-                    return { composeDetails: { composeSemanticCoreId: c || o, ...(m ? { defaultText: ` ${m}`, positionCursorAtBeginning: !0 } : { defaultText: "" }) }, eventId: e, hashtag: m, timelineId: u && E && i ? i : s, timelineIndex: l, timelineLinks: p };
+                        u = d || a;
+                    return { composeDetails: { composeSemanticCoreId: c || o, ...(u ? { defaultText: ` ${u}`, positionCursorAtBeginning: !0 } : { defaultText: "" }) }, eventId: e, hashtag: u, timelineId: E && p && i ? i : s, timelineIndex: l, timelineLinks: _ };
                 },
-                P = (e, t) => {
+                D = (e, t) => {
                     if (!e) return;
-                    const i = t && N(e, t),
-                        n = D(e);
+                    const i = t && U(e, t),
+                        n = P(e);
                     return i || e[n];
                 },
-                D = (e) => {
+                P = (e) => {
                     const t = (0, l.Z)(e, (e) => e.selected);
                     return -1 === t ? 0 : t;
                 },
-                N = (e, t) => e && e.find((e) => e.id === t),
-                x = (e) => {
+                U = (e, t) => e && e.find((e) => e.id === t),
+                N = (e) => {
                     const t = e?.response?.polling_interval_seconds;
                     return t && t > 0 ? t : 0;
                 },
-                U = (e) => {
+                x = (e) => {
                     const { score: t } = e?.response || {};
                     return t && t.data && t.data.moments ? t.data : void 0;
                 },
@@ -149,58 +149,58 @@
                         .map((i) => {
                             let r;
                             const { entry_id: s } = i,
-                                a = b(i, e),
+                                a = w(i, e),
                                 o = a && a.id,
                                 d = (i.tweet_media && i.tweet_media.id) || (a && a.tweetId),
-                                c = d ? u.Z.selectHydratedTweet(e, d) : void 0,
-                                l = C(s, c, e, o, t);
-                            let E;
+                                c = d ? E.Z.selectHydratedTweet(e, d) : void 0,
+                                l = A(s, c, e, o, t);
+                            let p;
                             if (i.broadcast) {
                                 const t = e.broadcasts ? e.broadcasts[i.broadcast.id] : void 0;
-                                (E = (t && t.twitter_user_id && e.users && e.users[t.twitter_user_id]) || void 0), (r = t ? Q(E, t) : void 0);
+                                (p = (t && t.twitter_user_id && e.users && e.users[t.twitter_user_id]) || void 0), (r = t ? M(p, t) : void 0);
                             } else if (i.audiospace) {
                                 const t = e.audiospaces ? e.audiospaces[i.audiospace.id] : void 0;
-                                (E = (t && t.creator_twitter_user_id && e.users && e.users[t.creator_twitter_user_id]) || void 0), (r = t ? k(E, t) : void 0);
+                                (p = (t && t.creator_twitter_user_id && e.users && e.users[t.creator_twitter_user_id]) || void 0), (r = t ? V(p, t) : void 0);
                             } else if ((i.slate && d) || i.tweet_media) {
                                 const t = d && e.tweets ? e.tweets[d] : void 0;
-                                (E = t && e.users ? e.users[t.user] : void 0), (r = E ? H(E, !!i.tweet_media, o, t, e) : void 0);
-                            } else i.slate && a && (r = { type: h.SLATE });
-                            return r || !a || i.tweet_media || (r = { type: h.SLATE }), !M(E) && r && a ? { id: s, carouselItemInfo: { ...r, socialProof: i.social_proof }, mediaDetails: l, slate: a, selected: !!i.selected, isMoment: n } : void 0;
+                                (p = t && e.users ? e.users[t.user] : void 0), (r = p ? H(p, !!i.tweet_media, o, t, e) : void 0);
+                            } else i.slate && a && (r = { type: I.SLATE });
+                            return r || !a || i.tweet_media || (r = { type: I.SLATE }), !Q(p) && r && a ? { id: s, carouselItemInfo: { ...r, socialProof: i.social_proof }, mediaDetails: l, slate: a, selected: !!i.selected, isMoment: n } : void 0;
                         })
                         .filter(Boolean);
                 },
-                M = (e) => (e && (e.blocking || e.blocked_by)) || !1,
-                j = Object.freeze({ TWITTER: "twitter", PERISCOPE: "periscope" }),
-                Q = (e, t) => ({ verified: !!e && e.verified, screenName: e ? e.screen_name : void 0, name: e ? e.name : t.user_display_name, userId: e ? e.id_str : t.user_id, type: t.state === v ? h.LIVE_BROADCAST : h.REPLAY_BROADCAST, accountType: e ? j.TWITTER : j.PERISCOPE, profileImageUrl: e ? e.profile_image_url_https : void 0 }),
-                k = (e, t) => ({ audiospace: { ...t, hostPalette: e?.profile_image_extensions_media_color?.palette || [] }, verified: !!e && e.verified, screenName: e ? e.screen_name : t.host.username, name: e ? e.name : t.host.display_name, userId: e ? e.id_str : t.creator_twitter_user_id, type: h.AUDIOSPACE, accountType: e ? j.TWITTER : j.PERISCOPE, profileImageUrl: e ? e.profile_image_url_https : t.host.avatar_url }),
+                Q = (e) => (e && (e.blocking || e.blocked_by)) || !1,
+                k = Object.freeze({ TWITTER: "twitter", PERISCOPE: "periscope" }),
+                M = (e, t) => ({ verified: !!e && e.verified, screenName: e ? e.screen_name : void 0, name: e ? e.name : t.user_display_name, userId: e ? e.id_str : t.user_id, type: t.state === v ? I.LIVE_BROADCAST : I.REPLAY_BROADCAST, accountType: e ? k.TWITTER : k.PERISCOPE, profileImageUrl: e ? e.profile_image_url_https : void 0 }),
+                V = (e, t) => ({ audiospace: { ...t, hostPalette: e?.profile_image_extensions_media_color?.palette || [] }, verified: !!e && e.verified, screenName: e ? e.screen_name : t.host.username, name: e ? e.name : t.host.display_name, userId: e ? e.id_str : t.creator_twitter_user_id, type: I.AUDIOSPACE, accountType: e ? k.TWITTER : k.PERISCOPE, profileImageUrl: e ? e.profile_image_url_https : t.host.avatar_url }),
                 H = (e, t, i, n, r) => {
                     let a, o, d;
                     if (t && n && i) {
-                        const e = g(n, i);
+                        const e = y(n, i);
                         if (e) {
                             const { type: t } = e;
-                            o = K(t);
+                            o = z(t);
                             const i = s.Z.getVideoFromCoverMedia(e),
                                 { source_user_id_str: n, video_info: c } = i || {};
-                            (a = c && c.duration_millis), (d = n && V(n, r));
+                            (a = c && c.duration_millis), (d = n && G(n, r));
                         }
-                    } else o = h.SLATE;
-                    const { id_str: c, name: l, screen_name: u, verified: E } = d || e || {};
-                    return o ? { accountType: j.TWITTER, verified: E, screenName: u, name: l, type: o, playbackDuration: a, userId: c } : void 0;
+                    } else o = I.SLATE;
+                    const { id_str: c, name: l, screen_name: E, verified: p } = d || e || {};
+                    return o ? { accountType: k.TWITTER, verified: p, screenName: E, name: l, type: o, playbackDuration: a, userId: c } : void 0;
                 },
-                V = (e, t) => t.users && t.users[e],
-                K = (e) => {
+                G = (e, t) => t.users && t.users[e],
+                z = (e) => {
                     switch (e) {
                         case "animated_gif":
-                            return h.GIF;
+                            return I.GIF;
                         case "vine":
                         case "video":
-                            return h.VOD;
+                            return I.VOD;
                         default:
                             return;
                     }
                 },
-                G = (e) => {
+                j = (e) => {
                     let t;
                     if (e) {
                         const i = new URL(e).pathname.split("/");
@@ -208,13 +208,13 @@
                     }
                     return t;
                 },
-                B = (e) => !!e && !!e.carouselItemInfo && e.carouselItemInfo.type !== h.GIF && e.carouselItemInfo.type !== h.AUDIOSPACE && e.carouselItemInfo.type !== h.SLATE,
-                z = (e, t = []) => {
+                B = (e) => !!e && !!e.carouselItemInfo && e.carouselItemInfo.type !== I.GIF && e.carouselItemInfo.type !== I.AUDIOSPACE && e.carouselItemInfo.type !== I.SLATE,
+                q = (e, t = []) => {
                     const i = e + 1,
                         n = t.slice(i).findIndex(B);
                     return n > -1 ? n + i : n;
                 },
-                W = Object.freeze({ SHOP: "shop" });
+                K = Object.freeze({ SHOP: "shop" });
         },
         62338: (e, t, i) => {
             i.d(t, { y: () => n });
@@ -312,7 +312,7 @@
             const s = (e) => (0, r.Z)({ contextSuffix: "LIVE_COMMERCE_ITEMS_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchLiveCommerceItemsSlice, getEndpointParams: () => ({ liveEventId: e }), sliceKey: `liveCommerceItemsSlice-${e}` });
         },
         125793: (e, t, i) => {
-            i.d(t, { At: () => m, d_: () => p, mF: () => E });
+            i.d(t, { At: () => u, d_: () => _, mF: () => p });
             var n = i(499627),
                 r = i(312771);
             const s = "liveEventInterstitials",
@@ -321,13 +321,13 @@
                 d = { seenEvents: [], fetchStatus: r.ZP.NONE };
             const c = () => ({ type: o.FAILURE }),
                 l = (e) => ({ type: o.SUCCESS, payload: e }),
-                u = (e) => e[s].seenEvents,
-                E = (e, t) => {
-                    const i = u(e),
+                E = (e) => e[s].seenEvents,
+                p = (e, t) => {
+                    const i = E(e),
                         n = i?.find(({ eventId: e }) => e === t);
                     return !!n && Date.now() - n.lastSeenTimestamp < 24192e5;
                 },
-                p =
+                _ =
                     () =>
                     (e, t, { userPersistence: i }) =>
                         t()[s].fetchStatus === r.ZP.LOADED
@@ -341,8 +341,8 @@
                                   .catch(() => {
                                       e(c());
                                   })),
-                m = (e) => (t, i) => {
-                    const n = [...u(i()), { eventId: e, lastSeenTimestamp: Date.now() }];
+                u = (e) => (t, i) => {
+                    const n = [...E(i()), { eventId: e, lastSeenTimestamp: Date.now() }];
                     return (
                         t(l(n)),
                         t(
@@ -404,160 +404,13 @@
             const c = (e, t) => {
                     const { entities: i, result: n } = e,
                         { audiospaces: r, broadcasts: s, liveEvents: a, slates: o, tweets: d, users: c, ...l } = i,
-                        u = { liveEventDetails: a[t], audiospaces: r, broadcasts: s, response: n.response, slates: o, tweets: d, users: c };
-                    return { entities: { ...l, liveEvents: { [t]: u } } };
+                        E = { liveEventDetails: a[t], audiospaces: r, broadcasts: s, response: n.response, slates: o, tweets: d, users: c };
+                    return { entities: { ...l, liveEvents: { [t]: E } } };
                 },
                 l = s.Z.register(d);
         },
-        545521: (e, t, i) => {
-            i.d(t, { Z: () => u });
-            var n = i(99107),
-                r = i(166852),
-                s = i(841198),
-                a = i(917799),
-                o = i(312771),
-                d = i(56519),
-                c = i(877848);
-            const l = (e) => [(0, d.dP)(e)];
-            function u({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: i, mapEntitiesToActions: d = l, sliceKey: u, injectionOptions: { identityFunction: E } = {} }) {
-                const p = [],
-                    m = (e) => e[s.Yf]?.[u],
-                    _ = (e) => {
-                        const t = m(e);
-                        if (!t) return p;
-                        const i = t.items || p,
-                            n = t.injections;
-                        return n?.length > 0 ? (0, r.Z)(n.concat(i), E) : i;
-                    },
-                    v = (e) => {
-                        const t = m(e),
-                            i = _(e),
-                            n = i?.length > 0;
-                        return t ? (0, o.ke)(t.fetchStatus, n) : o.ZP.NONE;
-                    },
-                    f =
-                        (n) =>
-                        (r, o, { api: c }) => {
-                            const l = t(n);
-                            return (0, a._O)(r, { params: l, request: i(c) })(s.t5({ contextSuffix: e, params: n, sliceKey: u }), (e) => {
-                                if (e) return d(e.entities);
-                            });
-                        };
-                return {
-                    select: m,
-                    selectItems: _,
-                    selectFetchStatus: v,
-                    fetch: f,
-                    fetchIfNeeded: (e) => (t, i) => {
-                        const r = i(),
-                            s = m(r),
-                            a = v(r);
-                        return !s || (a !== o.ZP.LOADING && a !== o.ZP.LOADED) ? t(f(e)) : n.O4.resolve();
-                    },
-                    fetchBottom: (e) => (t, i) => {
-                        const r = i(),
-                            s = m(r),
-                            a = ((e) => {
-                                const t = m(e);
-                                return t?.cursors?.next_cursor;
-                            })(r);
-                        return s.fetchStatus[c.Yj.BOTTOM] !== o.ZP.LOADING && a ? t(f({ ...e, cursor: a })) : n.O4.resolve();
-                    },
-                    injectItems: (e) => s.WC({ items: e, sliceKey: u, identityFunction: E }),
-                    removeItems: (e) => s.Er({ items: e, sliceKey: u, identityFunction: E }),
-                };
-            }
-        },
-        841198: (e, t, i) => {
-            i.d(t, { Be: () => T, Er: () => b, Ev: () => v, WC: () => S, Yf: () => u, t5: () => w });
-            i(571372);
-            var n = i(166852),
-                r = i(370751),
-                s = i(499627),
-                a = i(917799),
-                o = i(312771),
-                d = i(877848);
-            const c = {},
-                l = [],
-                u = "slices",
-                E = () => ({ cursors: {}, fetchStatus: { top: o.ZP.NONE, bottom: o.ZP.NONE }, items: l, injections: l }),
-                p = (0, a.dg)("rweb/slices", "FETCH");
-            const m = (e, t) => {
-                    if (!t) return e;
-                    switch (t.type) {
-                        case p.REQUEST: {
-                            const { direction: i } = t.meta;
-                            return i ? { ...e, fetchStatus: { ...e.fetchStatus, [i]: o.ZP.LOADING } } : e;
-                        }
-                        case p.SUCCESS: {
-                            const { direction: i } = t.meta,
-                                r = t.payload,
-                                s = e.items;
-                            return !i || r instanceof Error ? e : { ...e, items: (0, n.Z)(s.concat(r?.result)), cursors: { ...r?.slice_info }, error: null, fetchStatus: { ...e.fetchStatus, [i]: o.ZP.LOADED } };
-                        }
-                        case p.FAILURE: {
-                            const { direction: i } = t.meta;
-                            return i ? { ...e, error: t.payload, fetchStatus: { ...e.fetchStatus, [i]: o.ZP.FAILED } } : e;
-                        }
-                        default:
-                            return e;
-                    }
-                },
-                _ = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
-                v = (e) => ({ type: _, meta: { sliceKey: e } }),
-                f = "rweb/slices/DELETE_SLICE",
-                T = (e) => ({ type: f, meta: { sliceKey: e } }),
-                h = "rweb/slices/RESTORE_SLICE",
-                I = "rweb/slices/INJECT_ITEMS_SLICE",
-                S = ({ identityFunction: e, items: t, sliceKey: i }) => ({ type: I, meta: { sliceKey: i, identityFunction: e }, payload: t }),
-                y = "rweb/slices/REMOVE_ITEMS_SLICE",
-                b = ({ identityFunction: e, items: t, sliceKey: i }) => ({ type: y, meta: { sliceKey: i, identityFunction: e }, payload: t }),
-                w = ({ contextSuffix: e, params: t, sliceKey: i }) => ({ actionTypes: p, context: `FETCH_${e}`, meta: { sliceKey: i, direction: t?.cursor ? d.Yj.BOTTOM : d.Yj.TOP } });
-            s.Z.register({
-                [u]: function (e = c, t) {
-                    if (!t) return e;
-                    const { sliceKey: i } = t.meta || {};
-                    if (!i) return e;
-                    switch (t.type) {
-                        case f: {
-                            const t = { ...e };
-                            return delete t[i], t;
-                        }
-                        case h:
-                            return { ...e, [i]: t.payload };
-                        case _: {
-                            const t = { ...e };
-                            return (
-                                Object.keys(t).forEach((e) => {
-                                    e.includes(i) && delete t[e];
-                                }),
-                                t
-                            );
-                        }
-                        case I: {
-                            const r = e[i] || E(),
-                                s = t.meta.identityFunction ? t.meta.identityFunction : void 0,
-                                a = Array.isArray(t.payload) ? t.payload : void 0;
-                            return a?.length ? { ...e, [i]: { ...r, injections: (0, n.Z)(a.concat(r.injections), s) } } : e;
-                        }
-                        case y: {
-                            const n = e[i] || E(),
-                                s = t.meta.identityFunction ? t.meta.identityFunction : void 0,
-                                a = Array.isArray(t.payload) ? (0, r.Z)(s ? t.payload.map(s) : t.payload) : void 0,
-                                o = (e, t) => !a?.has(s ? s(e, t, n.injections) : e);
-                            return a?.size ? { ...e, [i]: { ...n, injections: n.injections.filter(o), items: n.items.filter(o) } } : e;
-                        }
-                        default: {
-                            const n = e[i] || E(),
-                                r = m(n, t);
-                            return { ...e, [i]: { ...r } };
-                        }
-                    }
-                },
-            });
-        },
         371493: (e, t, i) => {
-            i.d(t, { $N: () => h, G0: () => T, Jj: () => I, O9: () => m, S: () => _, fy: () => v, jz: () => S, nm: () => f, qk: () => u, uI: () => E });
+            i.d(t, { $N: () => I, G0: () => f, Jj: () => h, O9: () => u, S: () => m, fy: () => v, jz: () => b, nm: () => T, qk: () => E, uI: () => p });
             var n = i(912021),
                 r = i(644829),
                 s = i(740527),
@@ -566,37 +419,37 @@
                 d = i(899105),
                 c = i(218951);
             const l = Object.freeze({ Trends: "trends" }),
-                u = Object.freeze({ WebSidebar: "web_sidebar" }),
-                E = "explore-",
-                p = 9e5;
-            const m = ({ contentType: e, displayLocation: t, exploreGraphQLEnabled: i = !1, focalTweetId: n, includePageConfiguration: a = !1, initialTabId: o, profileUserId: l }) => {
-                    const u = e || t || "main",
-                        m = (function (e, t, i, n) {
+                E = Object.freeze({ WebSidebar: "web_sidebar" }),
+                p = "explore-",
+                _ = 9e5;
+            const u = ({ contentType: e, displayLocation: t, exploreGraphQLEnabled: i = !1, focalTweetId: n, includePageConfiguration: a = !1, initialTabId: o, profileUserId: l }) => {
+                    const E = e || t || "main",
+                        u = (function (e, t, i, n) {
                             return i ? `${e}${t}-tweet-${i}` : n ? `${e}${t}-user-${n}` : `${e}${t}`;
-                        })(i ? "explore-graphql-" : E, u, n, l),
-                        _ = { timelineId: m, formatResponse: d.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchExplore, getEndpointParams: (i) => ({ ...i, candidate_source: e, display_location: t, focal_tweet_id: n, include_page_configuration: a, initial_tab_id: o, profile_user_id: l, entity_tokens: !1 }) }, context: i ? "FETCH_EXPLORE_GQL" : "FETCH_EXPLORE", perfKey: `${E}${u}`, staleIntervalMs: p };
-                    return i ? (0, c.Z)({ ..._, formatResponse: s.Z, network: { ..._.network, getEndpoint: (e) => e.withEndpoint(r.Z).fetchExploreGraphQL } }) : (0, c.Z)(_);
+                        })(i ? "explore-graphql-" : p, E, n, l),
+                        m = { timelineId: u, formatResponse: d.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchExplore, getEndpointParams: (i) => ({ ...i, candidate_source: e, display_location: t, focal_tweet_id: n, include_page_configuration: a, initial_tab_id: o, profile_user_id: l, entity_tokens: !1 }) }, context: i ? "FETCH_EXPLORE_GQL" : "FETCH_EXPLORE", perfKey: `${p}${E}`, staleIntervalMs: _ };
+                    return i ? (0, c.Z)({ ...m, formatResponse: s.Z, network: { ...m.network, getEndpoint: (e) => e.withEndpoint(r.Z).fetchExploreGraphQL } }) : (0, c.Z)(m);
                 },
-                _ = () => {
+                m = () => {
                     const e = "explore-sidebar-gql",
-                        t = { timelineId: e, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchExploreSidebarGraphQL, getEndpointParams: () => ({}) }, context: "FETCH_EXPLORE_SIDEBAR", perfKey: e, staleIntervalMs: p };
+                        t = { timelineId: e, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchExploreSidebarGraphQL, getEndpointParams: () => ({}) }, context: "FETCH_EXPLORE_SIDEBAR", perfKey: e, staleIntervalMs: _ };
                     return (0, c.Z)(t);
                 },
-                v = (e, t) => m({ exploreGraphQLEnabled: e, includePageConfiguration: !0, initialTabId: t }),
-                f = (0, n.Z)((e) => m({ exploreGraphQLEnabled: e, contentType: l.Trends })),
-                T = (0, n.Z)((e) => m({ exploreGraphQLEnabled: e, displayLocation: u.WebSidebar })),
-                h = () => (e, t) =>
+                v = (e, t) => u({ exploreGraphQLEnabled: e, includePageConfiguration: !0, initialTabId: t }),
+                T = (0, n.Z)((e) => u({ exploreGraphQLEnabled: e, contentType: l.Trends })),
+                f = (0, n.Z)((e) => u({ exploreGraphQLEnabled: e, displayLocation: E.WebSidebar })),
+                I = () => (e, t) =>
                     e(
                         (0, o.CY)(t())
-                            .filter((e) => 0 === e.indexOf(E))
+                            .filter((e) => 0 === e.indexOf(p))
                             .map((e) => (0, o.$q)(e)),
                     ),
-                I = (e) => {
+                h = (e) => {
                     const t = `trend-relevant-users-${e}-gql`,
-                        i = { timelineId: t, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendRelevantUsersGraphQL, getEndpointParams: () => ({ trendId: e }) }, context: "FETCH_TREND_RELEVANT_USERS", perfKey: t, staleIntervalMs: p };
+                        i = { timelineId: t, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendRelevantUsersGraphQL, getEndpointParams: () => ({ trendId: e }) }, context: "FETCH_TREND_RELEVANT_USERS", perfKey: t, staleIntervalMs: _ };
                     return (0, c.Z)(i);
                 },
-                S = (e) => (0, c.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
+                b = (e) => (0, c.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         730717: (e, t, i) => {
             i.d(t, { Z: () => s });
@@ -606,4 +459,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-8ed0fac5.addc465a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-8ed0fac5.bee677aa.js.map

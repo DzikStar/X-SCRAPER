@@ -93,7 +93,7 @@
             const L = f.default.create((e) => ({ block: { flex: 1, flexDirection: "row", justifyContent: "center", width: "100%", paddingTop: "0.75rem", paddingBottom: "1.75rem" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(543673), n(240753), n(128399);
             const $ = ["http:", "https:"];
-            function v({ disableLinks: e, token: t }) {
+            function S({ disableLinks: e, token: t }) {
                 let n;
                 try {
                     t.href && (n = new URL(t.href));
@@ -104,12 +104,12 @@
                 }
                 return r.createElement(k.ZP, { link: t.href }, t.text);
             }
-            const S = ({ disableLinks: e, item: t }) => {
+            const v = ({ disableLinks: e, item: t }) => {
                 const n = [];
                 return (
                     t.tokens?.length &&
                         t.tokens.forEach((t, a) => {
-                            n.push(r.createElement(W, { disableLinks: e, key: `token-${a}`, token: t }));
+                            n.push(r.createElement(I, { disableLinks: e, key: `token-${a}`, token: t }));
                         }),
                     r.createElement("li", { style: P.listItem }, n)
                 );
@@ -119,7 +119,7 @@
                 return (
                     t.items?.length &&
                         t.items.forEach((t, a) => {
-                            n.push(r.createElement(S, { disableLinks: e, item: t, key: `li-${a.toString()}` }));
+                            n.push(r.createElement(v, { disableLinks: e, item: t, key: `li-${a.toString()}` }));
                         }),
                     t.ordered ? r.createElement("ol", { start: t.start, style: P.list }, n) : r.createElement("ul", { style: P.list }, n)
                 );
@@ -133,15 +133,15 @@
                 const n = t.header
                         ? r.createElement(
                               "tr",
-                              { style: I.tableRow },
+                              { style: W.tableRow },
                               t.header?.map((t, n) =>
                                   r.createElement(
                                       "th",
-                                      { style: I.tableHeaderCell },
+                                      { style: W.tableHeaderCell },
                                       r.createElement(
                                           l.Z,
-                                          { style: I.cellContent },
-                                          t.tokens?.map((t, a) => r.createElement(W, { disableLinks: e, key: `th-${n}-${a}`, token: t })),
+                                          { style: W.cellContent },
+                                          t.tokens?.map((t, a) => r.createElement(I, { disableLinks: e, key: `th-${n}-${a}`, token: t })),
                                       ),
                                   ),
                               ),
@@ -151,32 +151,32 @@
                         ? t.rows?.map((t, n) =>
                               r.createElement(
                                   "tr",
-                                  { style: I.tableRow },
+                                  { style: W.tableRow },
                                   t.map((t, a) =>
                                       r.createElement(
                                           "td",
-                                          { style: I.tableCell },
+                                          { style: W.tableCell },
                                           r.createElement(
                                               l.Z,
-                                              { style: I.cellContent },
-                                              t.tokens?.map((t, l) => r.createElement(W, { disableLinks: e, key: `td-${n}-${a}-${l}`, token: t })),
+                                              { style: W.cellContent },
+                                              t.tokens?.map((t, l) => r.createElement(I, { disableLinks: e, key: `td-${n}-${a}-${l}`, token: t })),
                                           ),
                                       ),
                                   ),
                               ),
                           )
                         : null;
-                return r.createElement(l.Z, { style: I.tableContainer }, r.createElement("table", { style: I.table }, n, a));
+                return r.createElement(l.Z, { style: W.tableContainer }, r.createElement("table", { style: W.table }, n, a));
             }
-            const I = f.default.create((e) => ({ codeSpan: { display: "inline", fontFamily: "monospace", fontSize: e.fontSizesPx.subtext1, color: f.default.isDarkMode() ? "rgb(230, 192, 123)" : "rgb(193, 132, 1)", paddingTop: e.spaces.space1, paddingBottom: e.spaces.space1, paddingStart: e.spaces.space4, paddingEnd: e.spaces.space4, borderRadius: e.borderRadii.small, backgroundColor: e.colors.gray50 }, paragraph: { display: "block" }, listItem: { fontFamily: e.fontFamilies.normal, fontSize: e.fontSizesPx.body, fontWeight: e.fontWeights.regular }, tableContainer: { paddingVertical: e.spaces.space16 }, table: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.small, borderCollapse: "collapse" }, tableRow: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse" }, tableHeaderCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", fontWeight: e.fontWeights.bold, backgroundColor: e.colors.gray50 }, tableCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space2 }, cellContent: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, display: "block" } }));
-            function W({ disableLinks: e, isRootLevel: t, token: n }) {
+            const W = f.default.create((e) => ({ codeSpan: { display: "inline", fontFamily: "monospace", fontSize: e.fontSizesPx.subtext1, color: f.default.isDarkMode() ? "rgb(230, 192, 123)" : "rgb(193, 132, 1)", paddingTop: e.spaces.space1, paddingBottom: e.spaces.space1, paddingStart: e.spaces.space4, paddingEnd: e.spaces.space4, borderRadius: e.borderRadii.small, backgroundColor: e.colors.gray50 }, paragraph: { display: "block" }, listItem: { fontFamily: e.fontFamilies.normal, fontSize: e.fontSizesPx.body, fontWeight: e.fontWeights.regular }, tableContainer: { paddingVertical: e.spaces.space16 }, table: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.small, borderCollapse: "collapse" }, tableRow: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse" }, tableHeaderCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", fontWeight: e.fontWeights.bold, backgroundColor: e.colors.gray50 }, tableCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space2 }, cellContent: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, display: "block" } }));
+            function I({ disableLinks: e, isRootLevel: t, token: n }) {
                 const a = r.useMemo(() => {
                     const t = [];
                     return (
                         n.tokens?.length &&
                             n.tokens.forEach((n, a) => {
                                 const l = `${a}`;
-                                t.push(r.createElement(W, { disableLinks: e, key: l, token: n }));
+                                t.push(r.createElement(I, { disableLinks: e, key: l, token: n }));
                             }),
                         t
                     );
@@ -195,7 +195,7 @@
                     case "text":
                         return r.createElement(E, { token: n }, a);
                     case "link":
-                        return r.createElement(v, { disableLinks: e, token: n });
+                        return r.createElement(S, { disableLinks: e, token: n });
                     case "heading":
                         return r.createElement(w, { token: n }, a);
                     case "strong":
@@ -211,7 +211,7 @@
             a.TU.use({ extensions: p });
             const z = r.memo(({ disableLinks: e, markdownText: t, style: n }) => {
                     const o = r.useMemo(() => a.TU.lexer(t), [t]),
-                        s = r.useMemo(() => o.map((t, n) => r.createElement(W, { disableLinks: !!e, isRootLevel: !0, key: `parsedToken-${n}`, token: t })), [o, e]);
+                        s = r.useMemo(() => o.map((t, n) => r.createElement(I, { disableLinks: !!e, isRootLevel: !0, key: `parsedToken-${n}`, token: t })), [o, e]);
                     return r.createElement(l.Z, { style: n }, s);
                 }),
                 A = z;
@@ -253,18 +253,10 @@
                         ),
                         L = !!f,
                         $ = m && (0, i.D$)(m, E, e),
-                        v = $ && (0, i.rl)($);
-                    return a.createElement(l.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => g.isTrue("responsive_web_edit_tweet_enabled") || g.isTrue("subscriptions_feature_labs_1004") } }, a.createElement(o.Z, (0, r.Z)({}, y, { loggedInUserId: E, onAvatarClick: u, onMediaClick: p, onPress: x, onScreenNameClick: b, shouldShowAltLabelAlways: !0, socialContextProps: v, tweet: m, withBirdwatchPivot: L })));
+                        S = $ && (0, i.rl)($);
+                    return a.createElement(l.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => g.isTrue("responsive_web_edit_tweet_enabled") || g.isTrue("subscriptions_feature_labs_1004") } }, a.createElement(o.Z, (0, r.Z)({}, y, { loggedInUserId: E, onAvatarClick: u, onMediaClick: p, onPress: x, onScreenNameClick: b, shouldShowAltLabelAlways: !0, socialContextProps: S, tweet: m, withBirdwatchPivot: L })));
                 });
-        },
-        730895: (e, t, n) => {
-            var r = n(821176);
-            e.exports = function () {
-                var e = r(this),
-                    t = "";
-                return e.hasIndices && (t += "d"), e.global && (t += "g"), e.ignoreCase && (t += "i"), e.multiline && (t += "m"), e.dotAll && (t += "s"), e.unicode && (t += "u"), e.unicodeSets && (t += "v"), e.sticky && (t += "y"), t;
-            };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Markdown.a112e19a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Markdown.bbc5883a.js.map

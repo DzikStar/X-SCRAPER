@@ -1,22 +1,29 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.GetVerifiedSidebar"],
+    ["loader.GetVerifiedSidebar", "icons/IconBookmarkCollectionsStroke-js", "icons/IconDocument-js", "icons/IconWriteStroke-js"],
     {
-        463236: (e, r, t) => {
-            t.d(r, { Z: () => S });
-            var s = t(202784),
-                a = t(325686),
+        920603: (e, r, t) => {
+            t.d(r, { Z: () => M });
+            var a = t(202784),
+                n = t(325686),
                 i = t(73664),
-                n = t(952793),
-                o = t(293115),
+                s = t(952793),
+                l = t(293115),
                 c = t(725405);
-            const l = (e) => {
+            const o = (e) => {
                     let r = "/i/premium_sign_up";
-                    switch (e) {
+                    switch (e.product_category) {
                         case "PremiumBasic":
                         case "BlueVerified":
                         case "BlueVerifiedPlus":
                             r = "/i/premium_sign_up";
+                            break;
+                        case "QuickFreeTrial": {
+                            let t = "";
+                            if ("NoAds" === e.quick_free_trial_product_type) t = "/no-ads";
+                            r = `/i/quick-free-trial${t}`;
+                            break;
+                        }
                     }
                     return r;
                 },
@@ -34,7 +41,7 @@
                     }
                     return r;
                 },
-                p = (e) => {
+                d = (e) => {
                     let r = "Year";
                     switch (e) {
                         case "Year":
@@ -45,84 +52,217 @@
                     }
                     return r;
                 },
-                d = (e, r) => ({ pathname: l(r.product_category), state: { referring_page: e.referrer, tier: u(r.product_category), plan: p(r.charge_interval) } });
+                p = (e, r) => ({ pathname: o(r), state: { referring_page: e.referrer, tier: u(r.product_category), plan: d(r.charge_interval) } });
             var m = t(807896),
-                b = t(154003);
-            const k = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: a } }) => s.createElement(b.ZP, { link: r, onClick: t, type: e?.type }, a);
-            var _ = t(992942),
-                C = t(439592),
-                f = t(731708),
-                h = t(392237);
-            const P = ({ destinationLink: e, onDestinationClick: r, renderProperties: { cta: t, image_url: i, primary_label: n, secondary_label: o } }) => {
-                    const c = i ? "whiteOnColor" : void 0;
-                    return s.createElement(a.Z, { style: g.cardOuter }, i ? s.createElement(_.Z, { aspectMode: C.Z.COVER, source: { uri: i }, style: g.image }) : null, s.createElement(a.Z, { style: g.cardInner }, s.createElement(f.ZP, { color: c, size: "headline1", weight: "heavy" }, n), o ? s.createElement(f.ZP, { color: c }, o) : null, s.createElement(k, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: r, renderProperties: t })));
+                k = t(154003),
+                h = t(731708),
+                f = t(392237),
+                b = t(498514);
+            const v = ({ renderProperties: e, wrapperStyles: r }) => {
+                    const t = (0, b.U)(e.icon_type),
+                        n = e.icon_color ? { color: f.default.theme.colors[e.icon_color] } : null;
+                    return a.createElement(t, { style: [r, n] });
                 },
-                g = h.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large } })),
-                y = ({ destinationLink: e, onDestinationClick: r, renderProperties: t }) => {
-                    const i = s.useMemo(() => {
-                        const a = { destinationLink: e, onDestinationClick: r };
+                C = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: i, icon: s } }) => a.createElement(k.ZP, { link: r, onClick: t, type: e?.type }, a.createElement(n.Z, { style: _.buttonInner }, s ? a.createElement(v, { renderProperties: s, wrapperStyles: [_.iconWrapper, "CircleFill" === s.icon_type ? _.smallIconWrapper : null] }) : null, a.createElement(h.ZP, null, i))),
+                _ = f.default.create((e) => ({ buttonInner: { flexDirection: "row", alignItems: "center" }, iconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" }, smallIconWrapper: { height: ".6em" } }));
+            var g = t(992942),
+                y = t(439592);
+            const E = ({ destinationLink: e, onDestinationClick: r, renderProperties: { cta: t, image_url: i, primary_label: s, secondary_label: l } }) => {
+                    const c = i ? "whiteOnColor" : void 0;
+                    return a.createElement(n.Z, { style: P.cardOuter }, i ? a.createElement(g.Z, { aspectMode: y.Z.COVER, source: { uri: i }, style: P.image }) : null, a.createElement(n.Z, { style: P.cardInner }, a.createElement(h.ZP, { color: c, size: "headline1", weight: "heavy" }, s), l ? a.createElement(h.ZP, { color: c }, l) : null, a.createElement(C, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: r, renderProperties: t })));
+                },
+                P = f.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large } })),
+                Z = ({ destinationLink: e, onDestinationClick: r, renderProperties: t }) => {
+                    const i = a.useMemo(() => {
+                        const n = { destinationLink: e, onDestinationClick: r };
                         switch (t.__typename) {
                             case "UpsellButtonRenderProperties":
-                                return s.createElement(k, (0, m.Z)({}, a, { renderProperties: t }));
+                                return a.createElement(C, (0, m.Z)({}, n, { renderProperties: t }));
                             case "UpsellCardRenderProperties":
-                                return s.createElement(P, (0, m.Z)({}, a, { renderProperties: t }));
+                                return a.createElement(E, (0, m.Z)({}, n, { renderProperties: t }));
                             default:
                                 return null;
                         }
                     }, [t, e, r]);
-                    return s.createElement(a.Z, { testID: `super-upsell-${t.__typename ?? "default"}` }, i);
+                    return a.createElement(n.Z, { testID: `super-upsell-${t.__typename ?? "default"}` }, i);
                 },
-                E = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: a }) => {
-                    const o = (0, c.Z)(),
-                        l = s.useRef(),
-                        u = (0, i.R)(l, { threshold: 1 }),
-                        p = (0, n.hC)("subscriptions_upsells_track_interactions_enabled");
-                    s.useEffect(() => {
-                        u && (p ? t() : o.scribeAction("impression"));
-                    }, [u, o, t, p]);
-                    const m = d(e, a.destination),
-                        b = s.useCallback(() => {
-                            p ? r() : o.scribeAction("click");
-                        }, [o, r, p]);
-                    return s.createElement("div", { ref: l }, s.createElement(y, { destinationLink: m, onDestinationClick: b, renderProperties: a.render_properties }));
+                S = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: n }) => {
+                    const l = (0, c.Z)(),
+                        o = a.useRef(),
+                        u = (0, i.R)(o, { threshold: 1 }),
+                        d = (0, s.hC)("subscriptions_upsells_track_interactions_enabled");
+                    a.useEffect(() => {
+                        u && (d ? t() : l.scribeAction("impression"));
+                    }, [u, l, t, d]);
+                    const m = p(e, n.destination),
+                        k = a.useCallback(() => {
+                            d ? r() : l.scribeAction("click");
+                        }, [l, r, d]);
+                    return a.createElement("div", { ref: o }, a.createElement(Z, { destinationLink: m, onDestinationClick: k, renderProperties: n.render_properties }));
                 },
-                Z = (e) => s.createElement(o.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, s.createElement(E, e));
-            var w = t(722517);
-            const v = ({ attributionParams: e, surfaceKey: r, trackClick: t, trackDismiss: a, trackImpression: i, upsellContent: n }) => s.useMemo(() => s.createElement(Z, { attributionParams: e, trackClick: t, trackDismiss: a, trackImpression: i, upsellContent: n }), [e, t, a, i, n]),
-                D = ({ surfaceKey: e, wrapperStyles: r }) => {
-                    const { attributionParams: t, trackClick: i, trackDismiss: n, trackImpression: o, upsellContent: c } = (0, w.Z)(e);
-                    return s.useMemo(() => (c && t ? s.createElement(a.Z, { style: r }, s.createElement(v, { attributionParams: t, surfaceKey: e, trackClick: i, trackDismiss: n, trackImpression: o, upsellContent: c })) : null), [t, c, e, i, n, o, r]);
+                w = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(S, e));
+            var D = t(722517);
+            const B = ({ attributionParams: e, surfaceKey: r, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }) => a.useMemo(() => a.createElement(w, { attributionParams: e, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }), [e, t, n, i, s]),
+                I = ({ surfaceKey: e, wrapperStyles: r }) => {
+                    const { attributionParams: t, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c } = (0, D.Z)(e);
+                    return a.useMemo(() => (c && t ? a.createElement(n.Z, { style: r }, a.createElement(B, { attributionParams: t, surfaceKey: e, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c })) : null), [t, c, e, i, s, l, r]);
                 },
-                S = s.memo(D);
+                M = a.memo(I);
         },
         86029: (e, r, t) => {
-            t.r(r), t.d(r, { default: () => p });
-            var s = t(202784),
-                a = t(392237),
+            t.r(r), t.d(r, { default: () => d });
+            var a = t(202784),
+                n = t(392237),
                 i = t(727828),
-                n = t(463236),
-                o = t(952793),
+                s = t(920603),
+                l = t(952793),
                 c = t(584770),
-                l = t(668214),
+                o = t(668214),
                 u = t(919022);
-            const p = (0, l.Z)().propsFromState(() => ({ viewerUser: u.ZP.selectViewerUser }))(({ viewerUser: e }) => {
+            const d = (0, o.Z)().propsFromState(() => ({ viewerUser: u.ZP.selectViewerUser }))(({ viewerUser: e }) => {
                     const r = (0, c.Z)(),
-                        t = (0, o.hC)("subscriptions_upsells_home_sidebar_migration_enabled"),
-                        a = "Business" === e?.verified_type ? "SidebarVerifiedOrgs" : r ? "SidebarPremiumPlus" : "SidebarDefault";
-                    return "SidebarDefault" === a && t ? s.createElement(n.Z, { surfaceKey: "HomeSidebar", wrapperStyles: d.upsellWrapper }) : s.createElement(i.Z, { variant: a });
+                        t = (0, l.hC)("subscriptions_upsells_home_sidebar_migration_enabled"),
+                        n = "Business" === e?.verified_type ? "SidebarVerifiedOrgs" : r ? "SidebarPremiumPlus" : "SidebarDefault";
+                    return "SidebarDefault" === n && t ? a.createElement(s.Z, { surfaceKey: "HomeSidebar", wrapperStyles: p.upsellWrapper }) : a.createElement(i.Z, { variant: n });
                 }),
-                d = a.default.create((e) => ({ upsellWrapper: { marginBottom: e.spaces.space16 } }));
+                p = n.default.create((e) => ({ upsellWrapper: { marginBottom: e.spaces.space16 } }));
         },
         584770: (e, r, t) => {
-            t.d(r, { Z: () => n });
-            var s = t(202784),
-                a = t(443781),
+            t.d(r, { Z: () => s });
+            var a = t(202784),
+                n = t(443781),
                 i = t(337394);
-            const n = () => {
-                const { userClaims: e } = s.useContext(a.rC);
+            const s = () => {
+                const { userClaims: e } = a.useContext(n.rC);
                 return !i.cX.some((r) => e.hasSubscription(r)) && (e.hasSubscription("premium_standard") || e.hasSubscription("premium_basic"));
             };
         },
+        498514: (e, r, t) => {
+            t.d(r, { U: () => D });
+            t(202784);
+            var a = t(521058),
+                n = t(847988),
+                i = t(616894),
+                s = t(376021),
+                l = t(625823),
+                c = t(839),
+                o = t(266151),
+                u = t(468670),
+                d = t(913973),
+                p = t(1753),
+                m = t(748138),
+                k = t(53674),
+                h = t(164174),
+                f = t(926981),
+                b = t(642317),
+                v = t(28862),
+                C = t(376278),
+                _ = t(511323),
+                g = t(254944),
+                y = t(465072),
+                E = t(189700),
+                P = t(520489),
+                Z = t(297938),
+                S = t(136483),
+                w = t(457566);
+            const D = (e) => {
+                switch (e) {
+                    case "Fire":
+                        return a.default;
+                    case "BookStrokeOn":
+                        return n.default;
+                    case "No":
+                        return i.default;
+                    case "WriteStroke":
+                        return s.default;
+                    case "AccountNft":
+                        return l.default;
+                    case "CameraVideoStroke":
+                        return c.default;
+                    case "Feather":
+                        return o.default;
+                    case "LockStroke":
+                        return u.default;
+                    case "Checkmark":
+                        return d.default;
+                    case "NotesStroke":
+                        return p.default;
+                    case "Grok":
+                        return w.x1;
+                    case "MoneyStroke":
+                        return m.default;
+                    case "BarChart":
+                        return k.default;
+                    case "DeckStroke":
+                        return h.default;
+                    case "Film":
+                        return f.default;
+                    case "RocketStroke":
+                        return b.default;
+                    case "BookmarkCollectionsStroke":
+                        return v.default;
+                    case "FireStroke":
+                        return C.default;
+                    case "PersonStroke":
+                        return _.default;
+                    case "PaintbrushStroke":
+                        return g.default;
+                    case "ModeratorStroke":
+                        return y.default;
+                    case "Document":
+                        return E.default;
+                    case "RadarStroke":
+                        return P.default;
+                    case "SearchPersonStroke":
+                        return Z.default;
+                    case "CircleFill":
+                        return S.default;
+                    default:
+                        return () => null;
+                }
+            };
+        },
+        28862: (e, r, t) => {
+            t.r(r), t.d(r, { default: () => c });
+            var a = t(202784),
+                n = t(890601),
+                i = t(783427),
+                s = t(347101);
+            const l = (e = {}) => {
+                const { direction: r } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M2.998 8.5c0-1.38 1.119-2.5 2.5-2.5h9c1.381 0 2.5 1.12 2.5 2.5v14.12l-7-3.5-7 3.5V8.5zm2.5-.5c-.276 0-.5.22-.5.5v10.88l5-2.5 5 2.5V8.5c0-.28-.224-.5-.5-.5h-9zM18.5 2H8.998c-1.105 0-2 .9-2 2H18.5c.276 0 .5.22.5.5v9.82l-.002-.01v2.28L21 17.68V4.5C21 3.12 19.881 2 18.5 2z" })) }, { writingDirection: r });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
+        189700: (e, r, t) => {
+            t.r(r), t.d(r, { default: () => c });
+            var a = t(202784),
+                n = t(890601),
+                i = t(783427),
+                s = t(347101);
+            const l = (e = {}) => {
+                const { direction: r } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M8 11h8v2H8zm0-4h5v2H8z" }), a.createElement("path", { d: "M17.5 2h-11C5.12 2 4 3.12 4 4.5v15C4 20.88 5.12 22 6.5 22h6c4.14 0 7.5-3.36 7.5-7.5v-10C20 3.12 18.88 2 17.5 2zm-2.52 17.41c.01-.1.02-.21.02-.32v-1.27c0-.48.32-.82.84-.82h1.28c.09 0 .19 0 .29-.01-.53 1.04-1.39 1.89-2.43 2.42zM18 14c0 .58-.46 1-.88 1h-1.28C14.26 15 13 16.19 13 17.82v1.27c0 .46-.43.91-.97.91H6.5c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h11c.27 0 .5.22.5.5V14z" })) }, { writingDirection: r });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
+        376021: (e, r, t) => {
+            t.r(r), t.d(r, { default: () => o });
+            var a = t(202784),
+                n = t(890601),
+                i = t(783427),
+                s = t(717683),
+                l = t(347101);
+            const c = (e = {}) => {
+                const r = a.useContext(s.Z),
+                    { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, r && l.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: t });
+            };
+            c.metadata = { width: 24, height: 24 };
+            const o = c;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.da8b2dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.d3f6d5ba.js.map

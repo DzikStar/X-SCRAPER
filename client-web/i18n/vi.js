@@ -224,6 +224,7 @@
                 t("f65e7e91", function (n) {
                     return "Giảm " + n.percentage + "% cho " + n.tier + " " + n.plan;
                 }),
+                t("cbc38428", "Tiếp tục sử dụng mà không có quảng cáo nhờ gói Premium+ "),
                 t("a84a736e", "Nhận tín dụng quảng cáo miễn phí"),
                 t("a0713d76", "Nâng cấp lên Tổ chức đã xác nhận để nhận tín dụng quảng cáo miễn phí và bộ công cụ phát triển doanh nghiệp."),
                 t("a07e13fc", "Trở thành người sáng tạo nội dung Premium"),
@@ -899,9 +900,9 @@
                 t("e8e39f95", "Learn more"),
                 t("e126dd3f", "Learn more"),
                 t("i821844f", "Learn more"),
-                t("b0abbb17", "Learn more"),
-                t("e7e0d88b", "Learn more");
-            t("i560665f", "Learn more"),
+                t("b0abbb17", "Learn more");
+            t("e7e0d88b", "Learn more"),
+                t("i560665f", "Learn more"),
                 t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
@@ -1915,9 +1916,9 @@
                 t("a8fdd09c", "Xuất bản Bài viết"),
                 t("d8047cc8", "Đăng"),
                 t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
-                t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
-                t("e52d4998", "Chọn đối tượng người xem");
-            t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
+                t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời.");
+            t("e52d4998", "Chọn đối tượng người xem"),
+                t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
                 t("b5660338", "Xem trước dòng thời gian"),
                 t("hff1b97a", "Chỉ Người đã đăng ký có thể trả lời."),
                 t("a330771e", "Sao chép liên kết vào bảng nhớ tạm"),
@@ -2899,12 +2900,6 @@
                 t("ada99498", "Dấu này sẽ chỉ được hiển thị cho những người khác trong khu vực của bạn."),
                 t("a765e936", "Xóa tiểu sử mở rộng của bạn"),
                 t("d4d68e44", "Đã lưu"),
-                t("ie4f57d2", "Gia hạn gói đăng ký Premium của bạn"),
-                t("h293aa52", "Gói đăng ký Premium của bạn sắp hết hạn!"),
-                t("j1923668", "Giữ lại những tính năng tốt nhất trên X."),
-                t("ac7e97ee", "Gia hạn gói đăng ký"),
-                t("f70c69b4", "Ưu tiên câu trả lời, Chỉnh sửa bài đăng, Tùy chỉnh, Bài đăng dài hơn và nhiều tính năng khác."),
-                t("f4cec4d2", "Dấu tích màu xanh lam, tính năng Ưu tiên câu trả lời, giới hạn sử dụng Grok cao hơn cùng nhiều lợi ích khác."),
                 t("b6de83a0", "Phòng chỉ dành cho nhân viên"),
                 t("g3f251f2", "Nguồn phát Riêng tư"),
                 t("d08666ba", "Phòng riêng"),
@@ -2972,20 +2967,17 @@
                 t("b7388a56", "Chân trang"),
                 t("hdabc3fc", "Điều khoản Dịch vụ"),
                 t("bc6efc72", "Chính sách Riêng tư"),
-                t("h3161192", "Chính sách cookie");
-            t("a7de64de", "Thông tin quảng cáo"),
+                t("h3161192", "Chính sách cookie"),
+                t("a7de64de", "Thông tin quảng cáo"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Nghề nghiệp"),
                 t("e0adec82", "Tài nguyên thương hiệu"),
-                t("df1b7550", "Tiếp thị"),
-                t("he258678", "X dành cho doanh nghiệp"),
+                t("df1b7550", "Tiếp thị");
+            t("he258678", "X dành cho doanh nghiệp"),
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
                 t("j0693948", "Tải ứng dụng Grok"),
-                t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
-                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
-                t("bce3726a", "Cập nhật thông tin thanh toán"),
                 t("fce9ecce", "Các video được đề xuất"),
                 t("j66b95a2", "Tin tức chuyên sâu"),
                 t("ad35153e", "bản thử nghiệm"),
@@ -3027,6 +3019,15 @@
                 }),
                 t("j7d0e836", "Mở rộng"),
                 t("d227d19e", "Thu hẹp"),
+                t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
+                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
+                t("bce3726a", "Cập nhật thông tin thanh toán"),
+                t("ie4f57d2", "Gia hạn gói đăng ký Premium của bạn"),
+                t("h293aa52", "Gói đăng ký Premium của bạn sắp hết hạn!"),
+                t("j1923668", "Giữ lại những tính năng tốt nhất trên X."),
+                t("ac7e97ee", "Gia hạn gói đăng ký"),
+                t("f70c69b4", "Ưu tiên câu trả lời, Chỉnh sửa bài đăng, Tùy chỉnh, Bài đăng dài hơn và nhiều tính năng khác."),
+                t("f4cec4d2", "Dấu tích màu xanh lam, tính năng Ưu tiên câu trả lời, giới hạn sử dụng Grok cao hơn cùng nhiều lợi ích khác."),
                 t("h367e724", "Tiểu sử mở rộng"),
                 t("ea5928d4", "Bạn vốn đa diện. Hồ sơ của bạn cũng vậy.\nThêm tiểu sử mở rộng để giới thiệu thêm về bản thân với mọi người."),
                 t("h7ef9dc8", "Nội dung có thể bao gồm:"),
@@ -3883,13 +3884,13 @@
                 t("caa8d928", "Bật/tắt khử tiếng ồn"),
                 t("b5d88f0c", "Chỉ dành cho nhân viên"),
                 t("c855ab8e", "Chỉ dành cho Người đăng ký"),
-                t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
-                t("e111f531", function (n) {
-                    return n.count + " đã nghe";
-                });
-            t("cbef820f", function (n) {
-                return n.screenName + " đã đăng lại buổi phát trực tuyến!";
+                t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem.");
+            t("e111f531", function (n) {
+                return n.count + " đã nghe";
             }),
+                t("cbef820f", function (n) {
+                    return n.screenName + " đã đăng lại buổi phát trực tuyến!";
+                }),
                 t("e3275464", "Gửi"),
                 t("cededf2a", "Chủ phòng"),
                 t("i2caef48", "Đ.chủ phòng"),
@@ -4923,9 +4924,9 @@
                 t("d9f9dec0", "Xem phòng"),
                 t("h0c1f37a", "Xem số liệu phân tích phòng"),
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
-                t("if2909ba", "Thời gian xem"),
-                t("i0e5bf4c", "Video của bạn");
-            t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("if2909ba", "Thời gian xem");
+            t("i0e5bf4c", "Video của bạn"),
+                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
                 t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
@@ -5889,9 +5890,9 @@
                     return "Kết thúc vào " + n.timestamp;
                 }),
                 t("daca8a2c", "Mở trong thanh Dock"),
-                t("e3aac82a", "Đang tải nguồn phát"),
-                t("i0ed3f4e", "Hình ảnh sự kiện");
-            t("cbae35fa", "Báo cáo Nguồn phát"),
+                t("e3aac82a", "Đang tải nguồn phát");
+            t("i0ed3f4e", "Hình ảnh sự kiện"),
+                t("cbae35fa", "Báo cáo Nguồn phát"),
                 t("fd12ab58", "Bài đăng trong bộ sưu tập"),
                 t("a226497c", "Tạo một Cộng đồng mới"),
                 t("d7346632", "Bạn chưa tham gia bất kỳ Cộng đồng nào"),
@@ -6887,9 +6888,9 @@
                 t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng"),
                 t("b6b5dc94", "Xác nhận tài khoản"),
                 t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
-                t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
-                t("f15bc24e", "Đã tăng giới hạn dùng Grok");
-            t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
+                t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn");
+            t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
+                t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
                 t("he74ae7a", "Hạn mức sử dụng Grok cao nhất"),
                 t("f5732cd4", "Ngoài ra, còn có quyền truy cập mở rộng vào DeepSearch và Suy nghĩ"),
                 t("e0198956", "Nhận một phần doanh thu được tạo ra từ hoạt động tương tác của các tài khoản đã xác nhận với nội dung bạn đăng trên X."),
@@ -7205,6 +7206,36 @@
                 t("hd80bd3e", "Quảng bá một bài đăng"),
                 t("fe2b0008", "Tìm hiểu cách sử dụng X"),
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
+                t("fe946974", "Your trial of X without ads"),
+                t("f6c50ec0", "Your ad-free trial has ended"),
+                t("b1319404", "Ads avoided"),
+                t("baa4acae", "You’re seeing more personalized content."),
+                t("c00e8600", "Estimated time saved"),
+                t("ic073e4e", "Your time is valuable."),
+                t("eb866e88", "Estimated 1-year time savings"),
+                t("aa77b70c", "Based on your usage."),
+                t("c534c6b4", "We’re crunching the numbers..."),
+                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("cc10f019", function (n) {
+                    return n.minutes + " phút";
+                }),
+                t("f9b6b7d3", function (n) {
+                    return n.hours + " giờ";
+                }),
+                t("a9af8753", function (n) {
+                    return n.days + " ngày, " + n.hours + " giờ";
+                }),
+                t("b93d00e5", function (n) {
+                    return n.days + " ngày";
+                }),
+                t("be88be23", function (n) {
+                    return n.durationInDays + " ngày dùng thử không quảng cáo của bạn đã được kích hoạt";
+                }),
+                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                t("ae3f3b0e", "Enjoy!"),
+                t("cdac8dc4", "See your new feed"),
+                t("dec99336", "Ad-free"),
+                t("i95803fa", "Unfortunately, you are not eligible at this time."),
                 t("d28a1d72", "Trở thành người đầu tiên nắm bắt chủ đề phổ biến bằng Radar"),
                 t("fb70427a", "Công cụ tìm kiếm mạnh mẽ nhất trên X sắp ra mắt."),
                 t("i54bf620", "Theo dõi từ khóa"),
@@ -7837,36 +7868,7 @@
                 t("j26dee0e", "Xóa bên liên kết"),
                 t("e30cbdf0", "Bên liên kết này có đăng ký Tổ chức đã xác nhận và phải được giữ nguyên là Tổ chức. Không thể thay đổi bên liên kết này thành Cá nhân."),
                 t("j3115ce8", "Cá nhân"),
-                t("d8bb1d84", "Tổ chức"),
-                t("e970bdbd", function (n) {
-                    return "Còn " + n.count + " lời mời";
-                }),
-                t("id67d953", function (n) {
-                    return "Đã xảy ra lỗi khi truy xuất chi tiết thanh toán của bạn trên Stripe. Hãy liên hệ với " + n.supportEmail + " nếu vấn đề này tiếp diễn.";
-                }),
-                t("f323d314", "Gửi lại"),
-                t("ac645cde", "Bạn luôn có thể thêm lại họ."),
-                t("d12af2dd", function (n) {
-                    return "Bạn có chắc chắn muốn xóa lời mời gửi đến @" + n.screenName + " không?";
-                }),
-                t("ib60b2d5", function (n) {
-                    return "Bạn có chắc chắn muốn gửi lại lời mời này đến @" + n.screenName + " không?";
-                }),
-                t("ec6e7d9a", "Tài khoản của bạn sẽ ở chế độ chỉ đọc cho đến khi quá trình xử lý việc chuyển cấp hoàn tất. Hãy truy cập vào Stripe để kiểm tra quá trình thanh toán nhằm đảm bảo chuyển cấp thành công."),
-                t("b33d1518", "Đồng bộ hóa việc làm từ các phần tích hợp được hỗ trợ hoặc nguồn cấp dữ liệu XML tùy chỉnh"),
-                t("dd2db402", "Bước 1: Thu thập thông tin cần thiết"),
-                t("edb098c2", "Bước 2: Liên hệ nhóm hỗ trợ của chúng tôi"),
-                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi"),
-                t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
-                t("c127374e", "Gửi tin nhắn cho chúng tôi"),
-                t("b2cb2a0c", "Tên người dùng của tài khoản Tổ chức đã xác nhận của bạn"),
-                t("b8e64002", "Tên hệ thống theo dõi ứng viên của bạn"),
-                t("acb99db6", "URL trang sự nghiệp nơi đăng tải các việc làm của bạn"),
-                t("a64a5b7a", "Gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
-                t("e3dffb4e", "Sao chép địa chỉ email hỗ trợ của chúng tôi ở dưới và gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
-                t("b4fef99e", "Sau khi nhóm hỗ trợ của chúng tôi nhận được yêu cầu của bạn, chúng tôi sẽ xem xét thông tin và hỗ trợ định cấu hình phần tích hợp của bạn."),
-                t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
-                t("ce102a20", "Đang chuyển hướng đến Stripe");
+                t("d8bb1d84", "Tổ chức");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7905,7 +7907,36 @@
                     a(n, h)
                 );
             }
-            t("ddfd6718", "Thanh toán không thành công"),
+            t("e970bdbd", function (n) {
+                return "Còn " + n.count + " lời mời";
+            }),
+                t("id67d953", function (n) {
+                    return "Đã xảy ra lỗi khi truy xuất chi tiết thanh toán của bạn trên Stripe. Hãy liên hệ với " + n.supportEmail + " nếu vấn đề này tiếp diễn.";
+                }),
+                t("f323d314", "Gửi lại"),
+                t("ac645cde", "Bạn luôn có thể thêm lại họ."),
+                t("d12af2dd", function (n) {
+                    return "Bạn có chắc chắn muốn xóa lời mời gửi đến @" + n.screenName + " không?";
+                }),
+                t("ib60b2d5", function (n) {
+                    return "Bạn có chắc chắn muốn gửi lại lời mời này đến @" + n.screenName + " không?";
+                }),
+                t("ec6e7d9a", "Tài khoản của bạn sẽ ở chế độ chỉ đọc cho đến khi quá trình xử lý việc chuyển cấp hoàn tất. Hãy truy cập vào Stripe để kiểm tra quá trình thanh toán nhằm đảm bảo chuyển cấp thành công."),
+                t("b33d1518", "Đồng bộ hóa việc làm từ các phần tích hợp được hỗ trợ hoặc nguồn cấp dữ liệu XML tùy chỉnh"),
+                t("dd2db402", "Bước 1: Thu thập thông tin cần thiết"),
+                t("edb098c2", "Bước 2: Liên hệ nhóm hỗ trợ của chúng tôi"),
+                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi"),
+                t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
+                t("c127374e", "Gửi tin nhắn cho chúng tôi"),
+                t("b2cb2a0c", "Tên người dùng của tài khoản Tổ chức đã xác nhận của bạn"),
+                t("b8e64002", "Tên hệ thống theo dõi ứng viên của bạn"),
+                t("acb99db6", "URL trang sự nghiệp nơi đăng tải các việc làm của bạn"),
+                t("a64a5b7a", "Gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
+                t("e3dffb4e", "Sao chép địa chỉ email hỗ trợ của chúng tôi ở dưới và gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
+                t("b4fef99e", "Sau khi nhóm hỗ trợ của chúng tôi nhận được yêu cầu của bạn, chúng tôi sẽ xem xét thông tin và hỗ trợ định cấu hình phần tích hợp của bạn."),
+                t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
+                t("ce102a20", "Đang chuyển hướng đến Stripe"),
+                t("ddfd6718", "Thanh toán không thành công"),
                 t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
                 t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
                 t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
@@ -8883,8 +8914,8 @@
                 t("c1658fc6", "Không thể phát phương tiện."),
                 t("h519ae04", "Phương tiện này đã bị vô hiệu hóa do khiếu nại về bản quyền."),
                 t("ce871584", "Nguồn phát này đã kết thúc."),
-                t("c101eb96", "Nguồn phát này không khả dụng."),
-                t("gb24a514", "Phương tiện này đã bị vô hiệu hóa do báo cáo từ chủ bản quyền."),
+                t("c101eb96", "Nguồn phát này không khả dụng.");
+            t("gb24a514", "Phương tiện này đã bị vô hiệu hóa do báo cáo từ chủ bản quyền."),
                 t("hcaf3e63", function (n) {
                     return "Nội dung này đã bị vô hiệu hóa do khiếu nại về bản quyền của " + n.holder + ".";
                 }),
@@ -8908,10 +8939,10 @@
                 t("ecda5f9e", "Lừa dối"),
                 t("a423473c", "Thông báo theo quy định của pháp luật"),
                 t("b3296688", "Hạn chế khả năng hiển thị"),
-                t("ccd32094", "Bây giờ");
-            t("abfcce0d", function (n) {
-                return n.amountOfTime + " trước";
-            }),
+                t("ccd32094", "Bây giờ"),
+                t("abfcce0d", function (n) {
+                    return n.amountOfTime + " trước";
+                }),
                 t("ae408b76", "Bạn đã đăng lại"),
                 t("j355f008", "Bài đăng đã ghim"),
                 t("habf9678", "Đã được Tác giả ghim"),
@@ -12901,7 +12932,7 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     d
                 );
-            })(c(332920)._ActualI18NFormatMessage || e.Component);
+            })(c(111677)._ActualI18NFormatMessage || e.Component);
             t("_ActualI18NFormatMessage", r),
                 t("I18NFormatMessage", function (n) {
                     return e.createElement(r, n);
@@ -13256,4 +13287,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.5574e7aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.93d54aaa.js.map

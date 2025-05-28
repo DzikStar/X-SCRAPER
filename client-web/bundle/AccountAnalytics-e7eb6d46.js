@@ -8,8 +8,8 @@
                 l = a(446368),
                 r = a(702024),
                 i = a(469745),
-                n = a(790491),
-                o = a(182605),
+                n = a(65738),
+                o = a(995348),
                 c = a(840489),
                 d = a(202784),
                 m = a(430962),
@@ -301,7 +301,7 @@
                 );
             }
             var N = a(236379),
-                C = a(630804),
+                C = a(668631),
                 M = a(796309),
                 F = a(840489),
                 _ = a(995961),
@@ -354,7 +354,7 @@
                 return (0, s.jsxs)("div", { className: "bg-gray-0 rounded-2xl relative flex h-[170px] w-full flex-col gap-4 md:h-[200px] border border-gray-200", children: [(0, s.jsxs)("div", { className: "flex items-center justify-between px-4 pt-4", children: [(0, s.jsx)("div", { className: "text-subtext1 md:text-body font-medium text-gray-900", children: a.followsOverTime }), (0, s.jsxs)(_.cu, { children: [(0, s.jsx)(_.ag, { children: (0, s.jsx)("button", { className: "text-gray-700", type: "button", children: (0, s.jsx)(C.Z, {}) }) }), (0, s.jsx)(_.hC, { title: a.followsOverTime, description: a.followsOverTimeInfo })] })] }), (0, s.jsx)(X, { data: l }), (0, s.jsx)("div", { className: (0, F.Z)("bg-gray-0/50 pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity delay-100 duration-200", { "opacity-0": !t, "opacity-100": t }), children: (0, s.jsx)(m.P, { size: "large" }) })] });
             };
             var H = a(469745),
-                J = a(796542),
+                J = a(808116),
                 ee = a(85349),
                 te = a(991732);
             const ae = ["Impressions", "EngagementRate", "Engagements", "ProfileVisits", "Replies", "Likes", "Retweets", "Bookmark", "Share"],
@@ -443,4 +443,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e7eb6d46.d273d2ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e7eb6d46.4d0a769a.js.map

@@ -390,7 +390,7 @@
             class u {
                 constructor(e, t = F) {
                     var s;
-                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || g), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((s = this.totalBytes), l(Math.ceil(s / d)))), this._clearState();
+                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || h), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((s = this.totalBytes), l(Math.ceil(s / d)))), this._clearState();
                 }
                 upload(e) {
                     ((this.hasAttemptedFinalize && (this.uploadOptions.trimRanges !== e.trimRanges || this.uploadOptions.extraFinalizeParams !== e.extraFinalizeParams)) || this.uploadOptions.extraInitParams !== e.extraInitParams) && this._clearState(),
@@ -484,7 +484,7 @@
                     }
                 }
                 _startNextAppendSegment() {
-                    if (this.hasAttemptedFinalize || this.inflightSegments.size >= (this._bitrateMonitor?.getPoolSize() ?? h)) return;
+                    if (this.hasAttemptedFinalize || this.inflightSegments.size >= (this._bitrateMonitor?.getPoolSize() ?? g)) return;
                     if (this.uploadedBytes === this.totalBytes) return this._postFinalize();
                     if (!this.fileHandle) return;
                     let e = 0;
@@ -610,8 +610,8 @@
                 _sendXhr(e, t, s, i, a, n, r, d, u = 0) {
                     const c = `${this.uploadUrl}?command=${t}${s}`;
                     let p = !1;
-                    const g = new Date(),
-                        h = (l) => {
+                    const h = new Date(),
+                        g = (l) => {
                             if (n) {
                                 const l = [c, n].join("-");
                                 this.timeoutIdMap[l] = setTimeout(() => {
@@ -620,7 +620,7 @@
                             } else f(l);
                         },
                         f = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: g, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS, mediaId: this.mediaId });
+                            this._stats(t, e || "unknown-error", { requestStartTime: h, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         k = new XMLHttpRequest();
                     k.open(e, c, !0),
@@ -629,12 +629,12 @@
                         (k.onload = () => {
                             if (k.status >= 200 && k.status < 400) {
                                 const e = T(k);
-                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: g, segmentBytes: u }), i(e || {}), !p && d && d()) : h("parsererror");
-                            } else k.status && 503 !== k.status ? f("invalid-response") : h("503");
+                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: h, segmentBytes: u }), i(e || {}), !p && d && d()) : g("parsererror");
+                            } else k.status && 503 !== k.status ? f("invalid-response") : g("503");
                         }),
-                        (k.onerror = () => h("error")),
+                        (k.onerror = () => g("error")),
                         (k.ontimeout = () => {
-                            (this.nextSegmentBytes = this.minSegmentBytes), h("timeout");
+                            (this.nextSegmentBytes = this.minSegmentBytes), g("timeout");
                         });
                     let F = !1;
                     k.upload.onprogress = (e) => {
@@ -642,7 +642,7 @@
                         const t = e.loaded,
                             s = ((this.uploadedBytes + t) / this.totalBytes) * 100;
                         if ((this._notifyProgress(s, this.mediaId), t / e.total > y && !p && ((p = !0), r))) {
-                            const e = Math.max(1, new Date().getTime() - g.getTime()),
+                            const e = Math.max(1, new Date().getTime() - h.getTime()),
                                 s = this.minSegmentBytes,
                                 i = this.sruParameterOverrides?.maxSegmentBytes;
                             (this.nextSegmentBytes = (function (e) {
@@ -660,8 +660,8 @@
             const c = 2147483647,
                 p = 1,
                 m = 45e3,
-                g = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
-                h = 2,
+                h = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
+                g = 2,
                 y = 0.95,
                 _ = 1e3,
                 S = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
@@ -676,14 +676,6 @@
                 }
             }
         },
-        730895: (e, t, s) => {
-            var i = s(821176);
-            e.exports = function () {
-                var e = i(this),
-                    t = "";
-                return e.hasIndices && (t += "d"), e.global && (t += "g"), e.ignoreCase && (t += "i"), e.multiline && (t += "m"), e.dotAll && (t += "s"), e.unicode && (t += "u"), e.unicodeSets && (t += "v"), e.sticky && (t += "y"), t;
-            };
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.3239342a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.6a17fc6a.js.map
