@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.TV-6107ac1a", "icons/IconFastforward-js"],
+    ["bundle.TV-6107ac1a", "icons/IconUndo-js"],
     {
         988401: (e, d, a) => {
             a.d(d, { F: () => o });
@@ -50,8 +50,8 @@
             };
             var f = a(111677),
                 A = a.n(f),
-                v = a(300497),
-                P = a(455025),
+                P = a(300497),
+                v = a(455025),
                 g = a(163208),
                 k = a(189244),
                 I = a(717988),
@@ -65,28 +65,28 @@
                 L = a(898063),
                 Z = a(602070),
                 x = a(873930),
-                N = a(134609),
-                F = a(863040),
+                F = a(134609),
+                N = a(863040),
                 O = a(731708),
                 $ = a(524483),
                 _ = a(602737),
                 H = a(686010);
-            const z = (e) => {
+            const J = (e) => {
                     const { closeModal: d, modalConfig: a } = (0, $.N)(),
                         o = r.useCallback(() => {
                             a?.handleEscape?.(), d();
                         }, [d, a]);
-                    return a ? r.createElement(r.Fragment, null, r.createElement(S.Z, { style: J.mask }), r.createElement(H.Z, { "aria-label": void 0, autoFocus: !0, autoRestoreFocus: a.autoRestoreFocus, isFocusBoundary: !0, name: "tv-modal", onEscapeOrBack: o, role: "dialog", style: J.dialogContainer, trackChildren: !0 }, r.createElement(O.ZP, { size: "title4", style: J.primaryText }, a.primaryText), r.createElement(O.ZP, { size: "body", style: J.secondaryText }, a.secondaryText), a.primaryAction ? r.createElement(_.K, { name: "tv-modal-primary-button", onPress: a.primaryAction.onClick, style: J.button, type: "primaryFilled" }, a.primaryAction.buttonText) : null, a.secondaryAction ? r.createElement(_.K, { name: "tv-modal-secondary-button", onPress: a.secondaryAction?.onClick, style: J.button, type: "primaryOutlined" }, a.secondaryAction.buttonText) : null)) : null;
+                    return a ? r.createElement(r.Fragment, null, r.createElement(S.Z, { style: z.mask }), r.createElement(H.Z, { "aria-label": void 0, autoFocus: !0, autoRestoreFocus: a.autoRestoreFocus, isFocusBoundary: !0, name: "tv-modal", onEscapeOrBack: o, role: "dialog", style: z.dialogContainer, trackChildren: !0 }, r.createElement(O.ZP, { size: "title4", style: z.primaryText }, a.primaryText), r.createElement(O.ZP, { size: "body", style: z.secondaryText }, a.secondaryText), a.primaryAction ? r.createElement(_.K, { name: "tv-modal-primary-button", onPress: a.primaryAction.onClick, style: z.button, type: "primaryFilled" }, a.primaryAction.buttonText) : null, a.secondaryAction ? r.createElement(_.K, { name: "tv-modal-secondary-button", onPress: a.secondaryAction?.onClick, style: z.button, type: "primaryOutlined" }, a.secondaryAction.buttonText) : null)) : null;
                 },
-                J = R.default.create((e) => ({ mask: { ...R.default.absoluteFillObject, backgroundColor: e.colors.cellBackground, opacity: 0.75, position: "fixed", zIndex: 1 }, dialogContainer: { position: "absolute", top: "50%", left: "50%", start: "50%", margin: "0", transform: "translate(-50%, -50%)", zIndex: e.componentZIndices.appBarZIndex, minHeight: `calc(${e.spaces.space64} * 3)`, minWidth: `calc(${e.spaces.space64} * 5)`, borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space40, paddingVertical: e.spaces.space24, backgroundColor: "rgb(0,0,0)", border: "none", outlineStyle: "none", display: "flex", marginBottom: `-${e.spaces.space16}`, flexDirection: "column", alignItems: "center", justifyContent: "center" }, primaryText: { color: e.colors.text, marginBottom: e.spaces.space16 }, secondaryText: { color: e.colors.gray700, marginBottom: e.spaces.space16 }, button: { minWidth: 2 * e.spacesPx.space64, width: 2 * e.spacesPx.space64, marginBottom: e.spaces.space16 } }));
+                z = R.default.create((e) => ({ mask: { ...R.default.absoluteFillObject, backgroundColor: e.colors.cellBackground, opacity: 0.75, position: "fixed", zIndex: 1 }, dialogContainer: { position: "absolute", top: "50%", left: "50%", start: "50%", margin: "0", transform: "translate(-50%, -50%)", zIndex: e.componentZIndices.appBarZIndex, minHeight: `calc(${e.spaces.space64} * 3)`, minWidth: `calc(${e.spaces.space64} * 5)`, borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space40, paddingVertical: e.spaces.space24, backgroundColor: "rgb(0,0,0)", border: "none", outlineStyle: "none", display: "flex", marginBottom: `-${e.spaces.space16}`, flexDirection: "column", alignItems: "center", justifyContent: "center" }, primaryText: { color: e.colors.text, marginBottom: e.spaces.space16 }, secondaryText: { color: e.colors.gray700, marginBottom: e.spaces.space16 }, button: { minWidth: 2 * e.spacesPx.space64, width: 2 * e.spacesPx.space64, marginBottom: e.spaces.space16 } }));
             var U = a(520913);
-            function K() {
-                return r.createElement(S.Z, { "aria-label": "Loading", id: "placeholder", style: X.root }, r.createElement(U.default, { style: X.logo }));
+            function j() {
+                return r.createElement(S.Z, { "aria-label": "Loading", id: "placeholder", style: K.root }, r.createElement(U.default, { style: K.logo }));
             }
-            const X = R.default.create((e) => ({ root: { ...R.default.absoluteFillObject, backgroundColor: "#000000", position: "fixed" }, logo: { ...R.default.absoluteFillObject, color: e.colors.buttonAlwaysWhite, height: e.spaces.space72, width: e.spaces.space72, margin: "auto" } })),
-                G = "rtl" === document?.documentElement?.getAttribute("dir");
-            (0, T.init)({ shouldFocusDOMNode: !0, isRtl: G });
-            const j = Object.freeze({ xSmall: "xSmall", small: "small", normal: "normal", large: "large", xLarge: "xLarge" }),
+            const K = R.default.create((e) => ({ root: { ...R.default.absoluteFillObject, backgroundColor: "#000000", position: "fixed" }, logo: { ...R.default.absoluteFillObject, color: e.colors.buttonAlwaysWhite, height: e.spaces.space72, width: e.spaces.space72, margin: "auto" } })),
+                X = "rtl" === document?.documentElement?.getAttribute("dir");
+            (0, T.init)({ shouldFocusDOMNode: !0, isRtl: X });
+            const G = Object.freeze({ xSmall: "xSmall", small: "small", normal: "normal", large: "large", xLarge: "xLarge" }),
                 W = { [E.default.ThemeScaleNames.xSmall]: 0.9, [E.default.ThemeScaleNames.small]: 0.95, [E.default.ThemeScaleNames.normal]: 1, [E.default.ThemeScaleNames.large]: 1.1, [E.default.ThemeScaleNames.xLarge]: 1.2 },
                 Q = (e, d = !1) => {
                     const a = d ? 1.15 : 1,
@@ -103,7 +103,7 @@
                 const { children: d } = e,
                     a = r.useRef(R.default.theme.scales).current,
                     o = r.useRef(R.default.theme.paletteName).current,
-                    n = ((e = !1) => ({ [j.xSmall]: { scales: Q(0.75, e), width: 0 }, [j.small]: { scales: Q(0.75, e), width: 960 }, [j.normal]: { scales: Q(1, e), width: 1024 }, [j.large]: { scales: Q(1.5, e), width: 1919 }, [j.xLarge]: { scales: Q(2.25, e), width: 3839 } }))((0, x.Z)()),
+                    n = ((e = !1) => ({ [G.xSmall]: { scales: Q(0.75, e), width: 0 }, [G.small]: { scales: Q(0.75, e), width: 960 }, [G.normal]: { scales: Q(1, e), width: 1024 }, [G.large]: { scales: Q(1.5, e), width: 1919 }, [G.xLarge]: { scales: Q(2.25, e), width: 3839 } }))((0, x.Z)()),
                     l = (0, B.Zx)(({ windowWidth: e }) =>
                         (function (e, d) {
                             const a = Object.keys(e);
@@ -111,15 +111,15 @@
                                 const r = a[o];
                                 if (d > (e[r]?.width || 0)) return r;
                             }
-                            return j.small;
+                            return G.small;
                         })(n, e),
                     ),
                     [s, t] = r.useState(!1);
                 (0, Z.nP)(),
                     (0, L.$R)(),
                     (0, L.bH)(),
-                    (0, F.u)(),
-                    (0, N.J)(),
+                    (0, N.u)(),
+                    (0, F.J)(),
                     r.useEffect(() => {
                         const e = n[l]?.scales || q;
                         return (
@@ -134,26 +134,25 @@
                 const i = r.useCallback((e) => {
                     e.target.scrollTop = 0;
                 }, []);
-                return s ? r.createElement(S.Z, { dir: G ? "rtl" : "ltr", onScroll: i, style: ee.root }, r.createElement(V.Qu, null, r.createElement(z, null), d)) : r.createElement(K, null);
+                return s ? r.createElement(S.Z, { dir: X ? "rtl" : "ltr", onScroll: i, style: ee.root }, r.createElement(V.Qu, null, r.createElement(J, null), d)) : r.createElement(j, null);
             }
             const ee = R.default.create(() => ({ root: { height: R.default.supports("height: 100dvh") ? "100dvh" : "100vh", maxHeight: R.default.supports("height: 100dvh") ? "100dvh" : "100vh", overflow: "hidden", width: "100%" } })),
                 de = A().d960b55c,
                 ae = A().i3145aa0,
                 oe = (e) => "/i/tv/login",
-                re = (0, P.c)(
+                re = (0, v.c)(
                     (0, I.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.23"),
-                                a.e("icons.0"),
-                                a.e("icons.2"),
-                                a.e("icons.16"),
-                                a.e("icons.19"),
-                                a.e("icons.10"),
-                                a.e("icons.13"),
-                                a.e("icons.22"),
-                                a.e("icons.27"),
-                                a.e("icons.26"),
+                                a.e("icons.8"),
+                                a.e("icons.15"),
+                                a.e("icons.7"),
+                                a.e("icons.3"),
+                                a.e("icons.24"),
+                                a.e("icons.12"),
+                                a.e("icons.9"),
+                                a.e("icons.14"),
+                                a.e("icons.5"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -164,10 +163,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.8"),
-                                a.e("icons.4"),
-                                a.e("icons.28"),
                                 a.e("icons.21"),
+                                a.e("icons.17"),
+                                a.e("icons.27"),
+                                a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -214,6 +213,7 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                                a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -238,20 +238,19 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                ne = (0, P.c)(
+                ne = (0, v.c)(
                     (0, I.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.23"),
-                                a.e("icons.0"),
-                                a.e("icons.2"),
-                                a.e("icons.16"),
-                                a.e("icons.19"),
-                                a.e("icons.10"),
-                                a.e("icons.13"),
-                                a.e("icons.22"),
-                                a.e("icons.27"),
-                                a.e("icons.26"),
+                                a.e("icons.8"),
+                                a.e("icons.15"),
+                                a.e("icons.7"),
+                                a.e("icons.3"),
+                                a.e("icons.24"),
+                                a.e("icons.12"),
+                                a.e("icons.9"),
+                                a.e("icons.14"),
+                                a.e("icons.5"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -262,10 +261,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.8"),
-                                a.e("icons.4"),
-                                a.e("icons.28"),
                                 a.e("icons.21"),
+                                a.e("icons.17"),
+                                a.e("icons.27"),
+                                a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -312,6 +311,7 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                                a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -336,20 +336,19 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                le = (0, P.c)(
+                le = (0, v.c)(
                     (0, I.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.23"),
-                                a.e("icons.0"),
-                                a.e("icons.2"),
-                                a.e("icons.16"),
-                                a.e("icons.19"),
-                                a.e("icons.10"),
-                                a.e("icons.13"),
-                                a.e("icons.22"),
-                                a.e("icons.27"),
-                                a.e("icons.26"),
+                                a.e("icons.8"),
+                                a.e("icons.15"),
+                                a.e("icons.7"),
+                                a.e("icons.3"),
+                                a.e("icons.24"),
+                                a.e("icons.12"),
+                                a.e("icons.9"),
+                                a.e("icons.14"),
+                                a.e("icons.5"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -360,10 +359,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.8"),
-                                a.e("icons.4"),
-                                a.e("icons.28"),
                                 a.e("icons.21"),
+                                a.e("icons.17"),
+                                a.e("icons.27"),
+                                a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -410,6 +409,7 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                                a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -437,16 +437,15 @@
                 se = (0, I.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.23"),
-                            a.e("icons.0"),
-                            a.e("icons.2"),
-                            a.e("icons.16"),
-                            a.e("icons.19"),
-                            a.e("icons.10"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
-                            a.e("icons.27"),
-                            a.e("icons.26"),
+                            a.e("icons.8"),
+                            a.e("icons.15"),
+                            a.e("icons.7"),
+                            a.e("icons.3"),
+                            a.e("icons.24"),
+                            a.e("icons.12"),
+                            a.e("icons.9"),
+                            a.e("icons.14"),
+                            a.e("icons.5"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -457,10 +456,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.8"),
-                            a.e("icons.4"),
-                            a.e("icons.28"),
                             a.e("icons.21"),
+                            a.e("icons.17"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -507,6 +506,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                            a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -532,16 +532,15 @@
                 te = (0, I.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.23"),
-                            a.e("icons.0"),
-                            a.e("icons.2"),
-                            a.e("icons.16"),
-                            a.e("icons.19"),
-                            a.e("icons.10"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
-                            a.e("icons.27"),
-                            a.e("icons.26"),
+                            a.e("icons.8"),
+                            a.e("icons.15"),
+                            a.e("icons.7"),
+                            a.e("icons.3"),
+                            a.e("icons.24"),
+                            a.e("icons.12"),
+                            a.e("icons.9"),
+                            a.e("icons.14"),
+                            a.e("icons.5"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -552,10 +551,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.8"),
-                            a.e("icons.4"),
-                            a.e("icons.28"),
                             a.e("icons.21"),
+                            a.e("icons.17"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -602,6 +601,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                            a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -627,16 +627,15 @@
                 ie = (0, I.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.23"),
-                            a.e("icons.0"),
-                            a.e("icons.2"),
-                            a.e("icons.16"),
-                            a.e("icons.19"),
-                            a.e("icons.10"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
-                            a.e("icons.27"),
-                            a.e("icons.26"),
+                            a.e("icons.8"),
+                            a.e("icons.15"),
+                            a.e("icons.7"),
+                            a.e("icons.3"),
+                            a.e("icons.24"),
+                            a.e("icons.12"),
+                            a.e("icons.9"),
+                            a.e("icons.14"),
+                            a.e("icons.5"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -647,10 +646,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.8"),
-                            a.e("icons.4"),
-                            a.e("icons.28"),
                             a.e("icons.21"),
+                            a.e("icons.17"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -697,6 +696,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                            a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -719,26 +719,26 @@
                         ]).then(a.bind(a, 225287)),
                     { shouldMigrateToX: !1 },
                 ),
-                ue = (0, P.c)(
+                ue = (0, v.c)(
                     (0, I.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.23"),
-                                a.e("icons.0"),
-                                a.e("icons.2"),
-                                a.e("icons.16"),
-                                a.e("icons.19"),
-                                a.e("icons.10"),
-                                a.e("icons.13"),
-                                a.e("icons.24"),
+                                a.e("icons.8"),
+                                a.e("icons.15"),
                                 a.e("icons.7"),
+                                a.e("icons.3"),
+                                a.e("icons.24"),
+                                a.e("icons.12"),
                                 a.e("icons.22"),
-                                a.e("icons.27"),
-                                a.e("icons.17"),
+                                a.e("icons.2"),
+                                a.e("icons.18"),
+                                a.e("icons.9"),
+                                a.e("icons.1"),
+                                a.e("icons.6"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.11"),
-                                a.e("icons.26"),
+                                a.e("icons.14"),
+                                a.e("icons.5"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -749,13 +749,13 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.8"),
-                                a.e("icons.4"),
-                                a.e("icons.14"),
-                                a.e("icons.28"),
                                 a.e("icons.21"),
-                                a.e("icons.3"),
-                                a.e("icons.1"),
+                                a.e("icons.16"),
+                                a.e("icons.28"),
+                                a.e("icons.17"),
+                                a.e("icons.27"),
+                                a.e("icons.19"),
+                                a.e("icons.0"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -805,20 +805,19 @@
                     ),
                     { withLoggedInUserOnly: !0, getReplacePath: oe },
                 ),
-                ce = (0, P.c)(
+                ce = (0, v.c)(
                     (0, I.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.23"),
-                                a.e("icons.0"),
-                                a.e("icons.2"),
-                                a.e("icons.16"),
-                                a.e("icons.19"),
-                                a.e("icons.10"),
-                                a.e("icons.13"),
-                                a.e("icons.22"),
-                                a.e("icons.27"),
-                                a.e("icons.26"),
+                                a.e("icons.8"),
+                                a.e("icons.15"),
+                                a.e("icons.7"),
+                                a.e("icons.3"),
+                                a.e("icons.24"),
+                                a.e("icons.12"),
+                                a.e("icons.9"),
+                                a.e("icons.14"),
+                                a.e("icons.5"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -829,10 +828,10 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.8"),
-                                a.e("icons.4"),
-                                a.e("icons.28"),
                                 a.e("icons.21"),
+                                a.e("icons.17"),
+                                a.e("icons.27"),
+                                a.e("icons.19"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -879,6 +878,7 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                                a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                                 a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                                 a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -906,16 +906,15 @@
                 be = (0, I.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.23"),
-                            a.e("icons.0"),
-                            a.e("icons.2"),
-                            a.e("icons.16"),
-                            a.e("icons.19"),
-                            a.e("icons.10"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
-                            a.e("icons.27"),
-                            a.e("icons.26"),
+                            a.e("icons.8"),
+                            a.e("icons.15"),
+                            a.e("icons.7"),
+                            a.e("icons.3"),
+                            a.e("icons.24"),
+                            a.e("icons.12"),
+                            a.e("icons.9"),
+                            a.e("icons.14"),
+                            a.e("icons.5"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -926,10 +925,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.8"),
-                            a.e("icons.4"),
-                            a.e("icons.28"),
                             a.e("icons.21"),
+                            a.e("icons.17"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -976,6 +975,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                            a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -1001,16 +1001,15 @@
                 he = (0, I.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.23"),
-                            a.e("icons.0"),
-                            a.e("icons.2"),
-                            a.e("icons.16"),
-                            a.e("icons.19"),
-                            a.e("icons.10"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
-                            a.e("icons.27"),
-                            a.e("icons.26"),
+                            a.e("icons.8"),
+                            a.e("icons.15"),
+                            a.e("icons.7"),
+                            a.e("icons.3"),
+                            a.e("icons.24"),
+                            a.e("icons.12"),
+                            a.e("icons.9"),
+                            a.e("icons.14"),
+                            a.e("icons.5"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -1021,10 +1020,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.8"),
-                            a.e("icons.4"),
-                            a.e("icons.28"),
                             a.e("icons.21"),
+                            a.e("icons.17"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -1071,6 +1070,7 @@
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
+                            a.e("shared~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~icons/IconAccountsStroke-js~icon"),
                             a.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"),
                             a.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"),
@@ -1094,17 +1094,17 @@
                     { shouldMigrateToX: !1 },
                 ),
                 me = (e) => r.createElement(be, e),
-                De = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: re, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                Me = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(he, (0, o.Z)({}, e, { pageName: "following", query: "filter:follows filter:videos", searchTab: "following", title: de })), fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                we = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(he, (0, o.Z)({}, e, { pageName: "bookmarks", query: "filter:videos", searchTab: "bookmarks", title: ae })), fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                ye = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: ne, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                De = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: re, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                Me = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(he, (0, o.Z)({}, e, { pageName: "following", query: "filter:follows filter:videos", searchTab: "following", title: de })), fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                we = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: (e) => r.createElement(he, (0, o.Z)({}, e, { pageName: "bookmarks", query: "filter:videos", searchTab: "bookmarks", title: ae })), fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                ye = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: ne, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
                 pe = (e) => r.createElement(se, (0, o.Z)({}, e, { match: e.match })),
                 fe = (e) => r.createElement(te, (0, o.Z)({}, e, { match: e.match })),
                 Ae = (e) => r.createElement(ie, (0, o.Z)({}, e, { match: e.match })),
-                ve = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: ue, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                Pe = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: ce, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
-                ge = (e) => r.createElement(v.Z, (0, o.Z)({}, e, { component: le, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", key: e.match.params.tweetId, match: e.match })),
-                ke = () => r.createElement(i.Switch, null, r.createElement(i.Route, null, r.createElement(Y, null, r.createElement(g.Z, null, [r.createElement(i.Route, { component: De, exact: !0, key: "tvHomeScreen", path: "/i/tv" }), r.createElement(i.Route, { component: ge, exact: !0, key: "tvSearchScreen", path: w.sH }), r.createElement(i.Route, { component: pe, exact: !0, key: "tvLoginScreen", path: w.C2 }), r.createElement(i.Route, { component: fe, exact: !0, key: "tvCastLandingScreen", path: w.ZW }), r.createElement(i.Route, { component: Ae, exact: !0, key: "tvCookieComplianceScreen", path: w.BO }), r.createElement(i.Route, { component: ve, exact: !0, key: "tvProfileScreen", path: `/i/tv/profile/${k.qX}` }), r.createElement(i.Route, { component: Pe, exact: !0, key: "tvProfileScreen", path: `/i/tv/trend/${k.tH}` }), r.createElement(i.Route, { component: Me, exact: !0, key: "tvFollowingScreen", path: D.CW }), r.createElement(i.Route, { component: we, exact: !0, key: "tvBookmarksScreen", path: D.Qf }), r.createElement(i.Route, { component: ye, exact: !0, key: "tvSettingsScreen", path: D.n4 }), r.createElement(i.Route, { exact: !0, key: "/i/tv/player/:tweetId/", path: [`/i/tv/player/${k.A2}`], render: me }), r.createElement(i.Route, { component: C.NotFoundScreen, key: "not_found" })]))));
+                Pe = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: ue, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                ve = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: ce, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", match: e.match })),
+                ge = (e) => r.createElement(P.Z, (0, o.Z)({}, e, { component: le, fallbackRedirect: w.C2, featureSwitchName: "responsive_web_messages_enabled", key: e.match.params.tweetId, match: e.match })),
+                ke = () => r.createElement(i.Switch, null, r.createElement(i.Route, null, r.createElement(Y, null, r.createElement(g.Z, null, [r.createElement(i.Route, { component: De, exact: !0, key: "tvHomeScreen", path: "/i/tv" }), r.createElement(i.Route, { component: ge, exact: !0, key: "tvSearchScreen", path: w.sH }), r.createElement(i.Route, { component: pe, exact: !0, key: "tvLoginScreen", path: w.C2 }), r.createElement(i.Route, { component: fe, exact: !0, key: "tvCastLandingScreen", path: w.ZW }), r.createElement(i.Route, { component: Ae, exact: !0, key: "tvCookieComplianceScreen", path: w.BO }), r.createElement(i.Route, { component: Pe, exact: !0, key: "tvProfileScreen", path: `/i/tv/profile/${k.qX}` }), r.createElement(i.Route, { component: ve, exact: !0, key: "tvProfileScreen", path: `/i/tv/trend/${k.tH}` }), r.createElement(i.Route, { component: Me, exact: !0, key: "tvFollowingScreen", path: D.CW }), r.createElement(i.Route, { component: we, exact: !0, key: "tvBookmarksScreen", path: D.Qf }), r.createElement(i.Route, { component: ye, exact: !0, key: "tvSettingsScreen", path: D.n4 }), r.createElement(i.Route, { exact: !0, key: "/i/tv/player/:tweetId/", path: [`/i/tv/player/${k.A2}`], render: me }), r.createElement(i.Route, { component: C.NotFoundScreen, key: "not_found" })]))));
             var Ie = a(902641),
                 Ce = a(426200),
                 Te = a(944800);
@@ -1202,7 +1202,7 @@
                         w = o.useRef(),
                         [y, p] = o.useState(!1),
                         [f, A] = o.useState(!1),
-                        [v, P] = o.useState(),
+                        [P, v] = o.useState(),
                         { logMessageToScreen: g } = (0, b.n)();
                     g("Rendering the cast receiver...");
                     const k = (0, s.hC)("tv_app_casting_log_focused_element_every_10s");
@@ -1218,10 +1218,10 @@
                                 if (!window.CastReceiver || !d) return;
                                 const a = (0, l.Ci)(d);
                                 if (!a) return;
-                                const o = { type: "status", statusID: v || "", currentTimeMs: Math.floor(a.currentTimeMs), durationMs: "broadcast" === d.source?.type && a.isLive ? -1 : a.durationMs || 0, playerState: d.isPlaying ? "PLAYING" : "PAUSED", captionsEnabled: !!d?.areCaptionsShown, captionsAvailable: !!a.hasCaptions, playbackRate: d.playbackRate || 1, isMuted: d.isMuted };
+                                const o = { type: "status", statusID: P || "", currentTimeMs: Math.floor(a.currentTimeMs), durationMs: "broadcast" === d.source?.type && a.isLive ? -1 : a.durationMs || 0, playerState: d.isPlaying ? "PLAYING" : "PAUSED", captionsEnabled: !!d?.areCaptionsShown, captionsAvailable: !!a.hasCaptions, playbackRate: d.playbackRate || 1, isMuted: d.isMuted };
                                 window.CastReceiver.updateCurrentStatus(JSON.stringify(o));
                             },
-                            [v],
+                            [P],
                         ),
                         C = o.useCallback(
                             (e) => {
@@ -1236,7 +1236,7 @@
                             w.current = e;
                         }, []),
                         S = o.useCallback((e) => {
-                            P(e);
+                            v(e);
                         }, []),
                         E = o.useCallback(
                             (e) => {
@@ -1398,7 +1398,7 @@
                 y = { behavior: "smooth", block: "start", inline: "nearest" },
                 p = (e) => `${w}-${e}`,
                 f = (e) => e.id,
-                A = ({ autoFocus: e, categories: d, focusBoundaryDirections: a, isFocusBoundary: r, name: i, onArrowPress: w, onSelectVideo: A, playVideoPreview: P, returnToFirstElementOnEscape: g, withScrollRestoration: k = !0 }) => {
+                A = ({ autoFocus: e, categories: d, focusBoundaryDirections: a, isFocusBoundary: r, name: i, onArrowPress: w, onSelectVideo: A, playVideoPreview: v, returnToFirstElementOnEscape: g, withScrollRestoration: k = !0 }) => {
                     const I = (0, b.z)(),
                         { direction: C } = (0, t.Z)(),
                         T = (0, u.Z)(`${i}.${p("0")}.${(0, m.X)("0")}`),
@@ -1413,7 +1413,7 @@
                             ({ index: e, item: d }) =>
                                 o.createElement(
                                     s.Z,
-                                    { key: d.id, style: e === S.length - 1 ? null : v.carouselMarginBottom },
+                                    { key: d.id, style: e === S.length - 1 ? null : P.carouselMarginBottom },
                                     o.createElement(h.Z, {
                                         content: d.content,
                                         displayType: (0, M.qU)(d.displayType),
@@ -1423,12 +1423,12 @@
                                             e === S.length - 1 && I.scribe({ element: "tv-grid-with-categories", action: "reached_end" });
                                         },
                                         onSelectVideo: A,
-                                        playVideoPreview: P,
+                                        playVideoPreview: v,
                                         scrollOptions: y,
                                         title: d.title,
                                     }),
                                 ),
-                            [I, S.length, A, P],
+                            [I, S.length, A, v],
                         );
                     (0, c.ZP)(k);
                     const B = o.useCallback(
@@ -1451,14 +1451,14 @@
                         },
                         [I, C, w],
                     );
-                    return o.createElement(D.Z, { "aria-label": void 0, autoFocus: e, focusBoundaryDirections: a, isFocusBoundary: r, name: i, onArrowPress: B, onEscapeOrBack: E, role: "grid", style: v.root, trackChildren: !0 }, o.createElement(l.Z, { contentContainerStyle: v.flatListContentContainer, data: S, initialNumToRender: 3, keyExtractor: f, renderItem: R, showsVerticalScrollIndicator: !1, style: v.flatList, vertical: !0 }));
+                    return o.createElement(D.Z, { "aria-label": void 0, autoFocus: e, focusBoundaryDirections: a, isFocusBoundary: r, name: i, onArrowPress: B, onEscapeOrBack: E, role: "grid", style: P.root, trackChildren: !0 }, o.createElement(l.Z, { contentContainerStyle: P.flatListContentContainer, data: S, initialNumToRender: 3, keyExtractor: f, renderItem: R, showsVerticalScrollIndicator: !1, style: P.flatList, vertical: !0 }));
                 },
-                v = i.default.create((e) => ({ root: { height: "100%", display: "block", overflowY: "visible", overflowX: "visible", width: "100%" }, flatList: { width: "100%", height: "100%" }, flatListContentContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
-            var P = a(291394);
+                P = i.default.create((e) => ({ root: { height: "100%", display: "block", overflowY: "visible", overflowX: "visible", width: "100%" }, flatList: { width: "100%", height: "100%" }, flatListContentContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
+            var v = a(291394);
             const g = (e) => `${w}-${e}`,
                 k = RegExp(`\\.${w}-([0-9]*)\\.${m.m}-([0-9]*)`),
                 I = ({ autoFocus: e, categories: d, focusBoundaryDirections: a, handleNoriginArrowPress: r, isFocusBoundary: l, name: i, onArrowPress: w, onSelectVideo: y, playVideoPreview: p, returnToFirstElementOnEscape: f, withScrollRestoration: A = !0 }) => {
-                    const v = o.useRef(null),
+                    const P = o.useRef(null),
                         I = o.useRef(new Map()),
                         T = (0, b.z)(),
                         { direction: S } = (0, t.Z)(),
@@ -1475,11 +1475,11 @@
                         x = o.useMemo(
                             () =>
                                 B.map((e, d) => () => {
-                                    v.current?.positionRef.current !== d && v.current?.setPosition(d);
+                                    P.current?.positionRef.current !== d && P.current?.setPosition(d);
                                 }),
                             [B],
                         ),
-                        N = o.useMemo(
+                        F = o.useMemo(
                             () =>
                                 B.map((e, d) => (e) => {
                                     const a = `${E}.${g(d.toString())}`;
@@ -1487,15 +1487,15 @@
                                 }),
                             [B, E],
                         ),
-                        F = o.useCallback((e) => {
+                        N = o.useCallback((e) => {
                             const d = k.exec(e);
                             if (d) {
                                 const e = parseInt(d[1], 10) || 0,
                                     a = parseInt(d[2], 10) || 0;
-                                v.current?.setPosition(e), L.current[e]?.(a);
+                                P.current?.setPosition(e), L.current[e]?.(a);
                             }
                         }, []),
-                        O = (0, c.KN)(A, F),
+                        O = (0, c.KN)(A, N),
                         $ = o.useCallback(
                             ({ index: e, item: d }) => {
                                 const a = Z.current[e];
@@ -1508,22 +1508,22 @@
                                         },
                                         style: e === B.length - 1 ? null : C.carouselMarginBottom,
                                     },
-                                    o.createElement(h.Z, { content: d.content, displayType: (0, M.qU)(d.displayType), getSetPositionFn: a, handleNoriginArrowPress: r || (() => !1), name: g(e.toString()), onFocus: x[e], onFocusChild: N[e], onReady: O, onSelectVideo: y, playVideoPreview: p, title: d.title }),
+                                    o.createElement(h.Z, { content: d.content, displayType: (0, M.qU)(d.displayType), getSetPositionFn: a, handleNoriginArrowPress: r || (() => !1), name: g(e.toString()), onFocus: x[e], onFocusChild: F[e], onReady: O, onSelectVideo: y, playVideoPreview: p, title: d.title }),
                                 );
                             },
-                            [B.length, r, x, N, O, y, p],
+                            [B.length, r, x, F, O, y, p],
                         ),
                         _ = o.useMemo(() => B.map((e, d) => $({ index: d, item: e })), [B, $]),
                         H = o.useCallback(
                             (e) => {
-                                if (f && R && (0, n.getCurrentFocusKey)() !== R) return (0, n.setFocus)(R), v.current?.setPosition(0), L.current[0]?.(0), !0;
+                                if (f && R && (0, n.getCurrentFocusKey)() !== R) return (0, n.setFocus)(R), P.current?.setPosition(0), L.current[0]?.(0), !0;
                             },
                             [R, f],
                         ),
-                        z = o.useCallback(
+                        J = o.useCallback(
                             (e) => {
-                                if (v.current?.isAnimating.current) return !0;
-                                const d = v.current?.positionRef.current || 0;
+                                if (P.current?.isAnimating.current) return !0;
+                                const d = P.current?.positionRef.current || 0;
                                 let a,
                                     o = "scroll";
                                 switch (e.key) {
@@ -1541,14 +1541,14 @@
                                 }
                                 if ((T.scribe({ element: "tv-category-grid", action: o }), void 0 === a || a === d)) return w?.(e);
                                 const r = I.current.get(`${E}.${g(a.toString())}`);
-                                return r ? (0, n.setFocus)(r) : (0, n.setFocus)(`${E}.${g(a.toString())}.${(0, m.X)("0")}`), v.current?.setPosition(a), !0;
+                                return r ? (0, n.setFocus)(r) : (0, n.setFocus)(`${E}.${g(a.toString())}.${(0, m.X)("0")}`), P.current?.setPosition(a), !0;
                             },
                             [T, S, B.length, E, w],
                         ),
-                        J = o.useCallback((e) => {
-                            v.current = e;
+                        z = o.useCallback((e) => {
+                            P.current = e;
                         }, []);
-                    return o.createElement(D.Z, { "aria-label": void 0, autoFocus: e, autoRestoreFocus: !0, focusBoundaryDirections: a, isFocusBoundary: l, name: i, onArrowPress: z, onEscapeOrBack: H, role: "grid", saveLastFocusedChild: !0, style: C.root, trackChildren: !0 }, o.createElement(P.k, { getGPUScrollerApi: J, renderedItemRefs: V, scrollX: !1, scrollY: !0 }, o.createElement(s.Z, { style: C.itemContainer }, _)));
+                    return o.createElement(D.Z, { "aria-label": void 0, autoFocus: e, autoRestoreFocus: !0, focusBoundaryDirections: a, isFocusBoundary: l, name: i, onArrowPress: J, onEscapeOrBack: H, role: "grid", saveLastFocusedChild: !0, style: C.root, trackChildren: !0 }, o.createElement(v.k, { getGPUScrollerApi: z, renderedItemRefs: V, scrollX: !1, scrollY: !0 }, o.createElement(s.Z, { style: C.itemContainer }, _)));
                 },
                 C = i.default.create((e) => ({ root: { display: "block", overflow: "hidden", width: "100%", height: "100%" }, itemContainer: { display: "flex", flexDirection: "column" }, carouselMarginBottom: { marginBottom: e.spaces.space12 } }));
             function T(e) {
@@ -1738,8 +1738,8 @@
                 p = a(682461),
                 f = a(673932),
                 A = a(833453),
-                v = a(686010),
-                P = a(305332),
+                P = a(686010),
+                v = a(305332),
                 g = a(521878);
             const k = u().cd3f5206,
                 I = u().c930299f,
@@ -1754,8 +1754,8 @@
                     const [i, u] = o.useState(5),
                         [L, Z] = o.useState(!0),
                         x = (0, h.Z)(g.R) || g.R,
-                        N = (0, w.v9)(R),
-                        F = (0, w.v9)(B),
+                        F = (0, w.v9)(R),
+                        N = (0, w.v9)(B),
                         O = (0, w.I0)(),
                         $ = (0, l.useHistory)(),
                         _ = (0, m.Z)(),
@@ -1765,18 +1765,18 @@
                             },
                             [O, $],
                         ),
-                        z = N[0],
-                        J = o.useMemo(() => N.slice(1) || [], [N]);
+                        J = F[0],
+                        z = o.useMemo(() => F.slice(1) || [], [F]);
                     o.useEffect(() => {
-                        F === M.Z.FAILED && $.goBack();
-                    }, [$, F]);
+                        N === M.Z.FAILED && $.goBack();
+                    }, [$, N]);
                     const U = o.useCallback(() => {
                         Z(!1);
                     }, []);
                     o.useEffect(() => {
                         e && U();
                     }, [e, U]);
-                    const K = o.useCallback(
+                    const j = o.useCallback(
                             (e) => {
                                 let d = !1;
                                 if ("ArrowUp" === e.key) (0, r.setFocus)(`${x}.${E}`), (d = !0);
@@ -1784,28 +1784,28 @@
                             },
                             [x],
                         ),
-                        X = o.useCallback(() => (U(), !1), [U]);
+                        K = o.useCallback(() => (U(), !1), [U]);
                     o.useEffect(() => {
                         if (L) {
                             const e = setInterval(() => {
-                                u((d) => (d > 0 ? d - 1 : (clearInterval(e), z && H(z), d)));
+                                u((d) => (d > 0 ? d - 1 : (clearInterval(e), J && H(J), d)));
                             }, 1e3);
                             return () => {
                                 clearInterval(e);
                             };
                         }
-                    }, [z, H, L]),
+                    }, [J, H, L]),
                         o.useEffect(() => {
-                            !N.length && d && O((0, p._B)({ tweetId: d }));
-                        }, [d, O, N]);
-                    const G = o.useMemo(() => {
+                            !F.length && d && O((0, p._B)({ tweetId: d }));
+                        }, [d, O, F]);
+                    const X = o.useMemo(() => {
                         const e = i > 0 && L ? I({ count: i }) : k;
                         return [
-                            { id: "up-next", content: [z], title: e, displayType: "Carousel" },
-                            { id: "suggestions", content: J, title: C, displayType: "Carousel" },
+                            { id: "up-next", content: [J], title: e, displayType: "Carousel" },
+                            { id: "suggestions", content: z, title: C, displayType: "Carousel" },
                         ];
-                    }, [J, i, z, L]);
-                    return o.createElement(D.nO, { namespace: { section: "play-next" } }, o.createElement(v.Z, { "aria-label": void 0, name: g.R, onArrowPress: U, onEscapeOrBack: a, preferredChildName: "next-video", role: "layout", style: V.root, trackChildren: !0 }, o.createElement(n.Z, { style: V.content }, o.createElement(n.Z, { style: V.header }, o.createElement(A.K, { "aria-label": void 0, name: E, onPress: t, role: "button", scrollOptions: S, style: V.replayContainer }, o.createElement(c.default, { style: V.iconReload }), o.createElement(s.ZP, { color: "text", size: "body", weight: "bold" }, T))), o.createElement(n.Z, { onTouchStart: U, style: _ ? [V.videoCards, V.videoCardsScrollable] : V.videoCards }, o.createElement(P.Z, { autoFocus: !0, categories: G, focusBoundaryDirections: ["down", "left", "right"], handleNoriginArrowPress: X, isFocusBoundary: !0, name: g.P, onArrowPress: K, onSelectVideo: H }))), o.createElement(b.default, { style: V.logo })));
+                    }, [z, i, J, L]);
+                    return o.createElement(D.nO, { namespace: { section: "play-next" } }, o.createElement(P.Z, { "aria-label": void 0, name: g.R, onArrowPress: U, onEscapeOrBack: a, preferredChildName: "next-video", role: "layout", style: V.root, trackChildren: !0 }, o.createElement(n.Z, { style: V.content }, o.createElement(n.Z, { style: V.header }, o.createElement(A.K, { "aria-label": void 0, name: E, onPress: t, role: "button", scrollOptions: S, style: V.replayContainer }, o.createElement(c.default, { style: V.iconReload }), o.createElement(s.ZP, { color: "text", size: "body", weight: "bold" }, T))), o.createElement(n.Z, { onTouchStart: U, style: _ ? [V.videoCards, V.videoCardsScrollable] : V.videoCards }, o.createElement(v.Z, { autoFocus: !0, categories: X, focusBoundaryDirections: ["down", "left", "right"], handleNoriginArrowPress: K, isFocusBoundary: !0, name: g.P, onArrowPress: j, onSelectVideo: H }))), o.createElement(b.default, { style: V.logo })));
                 };
         },
         406483: (e, d, a) => {
@@ -1829,14 +1829,14 @@
                 p = a(971813);
             const f = (e, d) => e.tv?.relatedVideos?.cursor,
                 A = (e) => e.tv?.relatedVideos?.fetchStatus === M.Z.LOADING,
-                v = (0, w.Z)()
+                P = (0, w.Z)()
                     .propsFromState(() => ({ tweets: p.G, cursor: f, isLoading: A }))
                     .propsFromActions(() => ({ fetchRelatedVideosGraphQL: y._B }))
                     .withAnalytics({ element: "tvPlayNext" }),
-                P = i().de65c756,
+                v = i().de65c756,
                 g = { behavior: "smooth", block: "center", inline: "nearest" },
                 k = s.default.create((e) => ({ root: { height: "60vh", position: "absolute", width: "100%", bottom: 0, backgroundColor: e.colors.translucentBlack30, padding: e.spaces.space32, paddingBottom: "0" }, title: { marginBottom: e.spaces.space16 }, gridContainer: { flex: 1, overflow: "hidden" } })),
-                I = v(({ currentTweetId: e, cursor: d, fetchRelatedVideosGraphQL: a, isLoading: s, onEscapeOrBack: t, tweets: i }) => {
+                I = P(({ currentTweetId: e, cursor: d, fetchRelatedVideosGraphQL: a, isLoading: s, onEscapeOrBack: t, tweets: i }) => {
                     const M = (0, c.I0)(),
                         w = (0, n.useHistory)(),
                         y = o.useCallback((e) => (M(b.eX.tvRelatedVideosClear()), M(b.eX.playerSetVideo(e)), w.replace((0, h.X5)(e)), !0), [M, w]),
@@ -1852,7 +1852,7 @@
                         A = o.useCallback((e) => {
                             e.target.scrollTop = 0;
                         }, []);
-                    return o.createElement(u.nO, { namespace: { section: "suggestions" } }, o.createElement(m.Z, { "aria-label": void 0, autoRestoreFocus: !0, name: "related-videos", onEscapeOrBack: t, role: "grid", style: k.root, trackChildren: !0 }, o.createElement(m.Z, { "aria-label": void 0, name: "related-videos-fake-focus-trap", onFocus: p, role: "none" }), o.createElement(l.ZP, { size: "headline1", style: k.title, weight: "bold" }, P), o.createElement(r.Z, { onScroll: A, style: k.gridContainer }, o.createElement(D.Z, { autoFocus: !0, content: i, name: "related-videos-grid", onNearEnd: f, onSelectVideo: y, scrollOptions: g, width: 4 }))));
+                    return o.createElement(u.nO, { namespace: { section: "suggestions" } }, o.createElement(m.Z, { "aria-label": void 0, autoRestoreFocus: !0, name: "related-videos", onEscapeOrBack: t, role: "grid", style: k.root, trackChildren: !0 }, o.createElement(m.Z, { "aria-label": void 0, name: "related-videos-fake-focus-trap", onFocus: p, role: "none" }), o.createElement(l.ZP, { size: "headline1", style: k.title, weight: "bold" }, v), o.createElement(r.Z, { onScroll: A, style: k.gridContainer }, o.createElement(D.Z, { autoFocus: !0, content: i, name: "related-videos-grid", onNearEnd: f, onSelectVideo: y, scrollOptions: g, width: 4 }))));
                 });
         },
         971813: (e, d, a) => {
@@ -1923,14 +1923,14 @@
                 m = a(686010);
             const D = i().ed170a6a;
             const M = function (e) {
-                    const { formatLabel: d, min: a = 0, value: t = a, max: i, name: M, onArrowPress: y, step: p, fasterStep: f = p, fastestStep: A = p, onChange: v, onActive: P, withLabel: g, onMouseEnter: k, onMouseLeave: I, onMouseDown: C, ...T } = e,
+                    const { formatLabel: d, min: a = 0, value: t = a, max: i, name: M, onArrowPress: y, step: p, fasterStep: f = p, fastestStep: A = p, onChange: P, onActive: v, withLabel: g, onMouseEnter: k, onMouseLeave: I, onMouseDown: C, ...T } = e,
                         [S, E] = r.useState(t),
                         R = r.useRef(),
                         B = S / i,
                         [V, L] = r.useState(!1),
                         [Z, x] = r.useState(!1),
-                        N = r.useRef(0),
-                        F = r.useRef(),
+                        F = r.useRef(0),
+                        N = r.useRef(),
                         O = r.useRef(!1),
                         $ = r.useMemo(() => [w.progress, { flexGrow: B }], [B]),
                         _ = r.useCallback(
@@ -1945,27 +1945,27 @@
                             },
                             [I],
                         ),
-                        z = r.useCallback(
+                        J = r.useCallback(
                             (e) => {
-                                x(e), P && P(e);
-                            },
-                            [P],
-                        ),
-                        J = r.useCallback(() => {
-                            Z && ((N.current = 0), (F.current = void 0), z(!1));
-                        }, [Z, z]),
-                        [U, K] = (0, h.K)(J, 1e3),
-                        X = r.useCallback(() => {
-                            K(), (O.current = !0), z(!0);
-                        }, [K, z]),
-                        G = r.useCallback(() => {
-                            (O.current = !1), z(!1);
-                        }, [z]),
-                        j = r.useCallback(
-                            (e) => {
-                                E(e), v && v(e);
+                                x(e), v && v(e);
                             },
                             [v],
+                        ),
+                        z = r.useCallback(() => {
+                            Z && ((F.current = 0), (N.current = void 0), J(!1));
+                        }, [Z, J]),
+                        [U, j] = (0, h.K)(z, 1e3),
+                        K = r.useCallback(() => {
+                            j(), (O.current = !0), J(!0);
+                        }, [j, J]),
+                        X = r.useCallback(() => {
+                            (O.current = !1), J(!1);
+                        }, [J]),
+                        G = r.useCallback(
+                            (e) => {
+                                E(e), P && P(e);
+                            },
+                            [P],
                         ),
                         W = r.useCallback(
                             (e) => {
@@ -1973,56 +1973,56 @@
                                 switch (d) {
                                     case b.QK:
                                     case b.Qs:
-                                        Z || z(!0),
-                                            F.current === d ? (N.current += 1) : ((F.current = d), (N.current = 1)),
-                                            j(
+                                        Z || J(!0),
+                                            N.current === d ? (F.current += 1) : ((N.current = d), (F.current = 1)),
+                                            G(
                                                 (function (e, d, a, o, r) {
                                                     const n = "RIGHT" === a ? d : -d;
                                                     return (0, u.Z)(e + n, o, r);
-                                                })(S, N.current <= 20 ? p : N.current <= 40 ? f : A, d === b.Qs ? "RIGHT" : "LEFT", a, i),
+                                                })(S, F.current <= 20 ? p : F.current <= 40 ? f : A, d === b.Qs ? "RIGHT" : "LEFT", a, i),
                                             ),
                                             U();
                                         break;
                                     case b.WX:
                                     case b.kl:
-                                        J();
+                                        z();
                                 }
                                 y && y(e);
                             },
-                            [Z, f, A, i, a, y, J, U, p, z, j, S],
+                            [Z, f, A, i, a, y, z, U, p, J, G, S],
                         ),
                         Q = r.useCallback(
                             (e) => {
                                 R.current &&
-                                    j(
+                                    G(
                                         (function (e, d, a, o, r) {
                                             const n = (e - d) / a;
                                             return o + (r - o) * (0, u.Z)(n, 0, 1);
                                         })(e, l.default.theme.spacesPx.space32, R.current.clientWidth, a, i),
                                     );
                             },
-                            [j, a, i],
+                            [G, a, i],
                         ),
                         q = r.useCallback(
                             (e) => {
-                                X(), Q(e.clientX), C && C(e);
+                                K(), Q(e.clientX), C && C(e);
                             },
-                            [X, C, Q],
+                            [K, C, Q],
                         );
                     return (
                         r.useEffect(() => {
                             if (!R.current) return;
                             const e = (0, c.Z)((e) => {
-                                O.current && !F.current && Q(e.clientX);
+                                O.current && !N.current && Q(e.clientX);
                             }, 100);
                             return (
                                 document.addEventListener("mousemove", e),
-                                document.addEventListener("mouseup", G),
+                                document.addEventListener("mouseup", X),
                                 () => {
-                                    document.removeEventListener("mousemove", e), document.removeEventListener("mouseup", G);
+                                    document.removeEventListener("mousemove", e), document.removeEventListener("mouseup", X);
                                 }
                             );
-                        }, [Z, G, Q]),
+                        }, [Z, X, Q]),
                         r.useEffect(() => {
                             const e = (0, c.Z)((e) => {
                                     O.current && Q(e.touches?.[0].clientX);
@@ -2031,17 +2031,17 @@
                                     const d = R.current?.getBoundingClientRect?.(),
                                         a = e.touches?.[0].clientX,
                                         o = e.touches?.[0].clientY;
-                                    a >= (d?.left || 0) && a <= (d?.right || 0) && o <= (d?.bottom || 0) && o >= (d?.top || 0) && X();
+                                    a >= (d?.left || 0) && a <= (d?.right || 0) && o <= (d?.bottom || 0) && o >= (d?.top || 0) && K();
                                 };
                             return (
                                 document.addEventListener("touchstart", d),
-                                document.addEventListener("touchend", G),
+                                document.addEventListener("touchend", X),
                                 document.addEventListener("touchmove", e),
                                 () => {
-                                    document.removeEventListener("touchstart", d), document.removeEventListener("touchend", G), document.removeEventListener("touchmove", e);
+                                    document.removeEventListener("touchstart", d), document.removeEventListener("touchend", X), document.removeEventListener("touchmove", e);
                                 }
                             );
-                        }, [X, G, Q]),
+                        }, [K, X, Q]),
                         r.useEffect(() => {
                             Z || E(t);
                         }, [Z, t]),
@@ -2050,19 +2050,21 @@
                 },
                 w = l.default.create((e) => ({ root: { flexDirection: "column", height: 30 * e.scaleMultiplier, justifyContent: "flex-end", marginBottom: e.spaces.space4, writingDirection: "ltr" }, line: { alignItems: "center", backgroundColor: e.colors.gray700, borderRadius: e.borderRadii.small, flexDirection: "row", height: 6 * e.scaleMultiplier, width: "100%" }, progress: { backgroundColor: e.colors.white, borderRadius: e.borderRadii.small, height: "100%" }, circle: { alignItems: "center", backgroundColor: e.colors.brandColor, borderRadius: e.borderRadii.infinite, bottom: 0, cursor: "pointer", end: -e.spacesPx.space8, height: e.spaces.space16, justifyContent: "center", margin: "auto", position: "absolute", top: 0, width: e.spaces.space16, zIndex: 100 }, outerCircle: { backgroundColor: e.colors.brandColor, borderRadius: e.borderRadii.infinite, height: e.spaces.space28, opacity: 0.5, width: e.spaces.space28 }, labelContainer: { flexDirection: "row", marginBottom: e.spacesPx.space12 } }));
         },
-        831489: (e, d, a) => {
-            a.r(d), a.d(d, { default: () => t });
+        775042: (e, d, a) => {
+            a.r(d), a.d(d, { default: () => i });
             var o = a(202784),
                 r = a(890601),
                 n = a(783427),
-                l = a(347101);
-            const s = (e = {}) => {
-                const { direction: d } = (0, n.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M11 13.67V22l12-10L11 2v8.33L1 2v20l10-8.33z" })) }, { writingDirection: d });
+                l = a(717683),
+                s = a(347101);
+            const t = (e = {}) => {
+                const d = o.useContext(l.Z),
+                    { direction: a } = (0, n.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, d && s.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.29 2.29l1.42 1.42L5.41 6H15c3.87 0 7 3.13 7 7s-3.13 7-7 7H8v-2h7c2.76 0 5-2.24 5-5s-2.24-5-5-5H5.41l2.3 2.29-1.42 1.42L1.59 7l4.7-4.71z" })) }, { writingDirection: a });
             };
-            s.metadata = { width: 24, height: 24 };
-            const t = s;
+            t.metadata = { width: 24, height: 24 };
+            const i = t;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-6107ac1a.7b890d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-6107ac1a.d716552a.js.map

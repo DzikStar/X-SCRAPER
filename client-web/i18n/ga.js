@@ -1332,6 +1332,7 @@
                 }),
                 n("d4d35bea", "Translating..."),
                 n("he9c9634", "Níorbh fhéidir teacht ar an aistriúchán"),
+                n("deaf5b16", "Bain triail as arís"),
                 n("j2198c98", "Hide translated post"),
                 n("i73a7d48", "Aistrithe ag Google"),
                 n("eeadb767", function (e) {
@@ -1931,9 +1932,9 @@
                 n("da8ac57c", "Edit Caption"),
                 n("a8fdd09c", "Publish Article"),
                 n("d8047cc8", "Foilsigh"),
-                n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                n("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            n("e52d4998", "Choose your audience"),
+                n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            n("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                n("e52d4998", "Choose your audience"),
                 n("d7985b24", "Choose who can reply to this Article"),
                 n("b5660338", "Timeline preview"),
                 n("hff1b97a", "Only Subscribed can reply."),
@@ -2662,7 +2663,6 @@
                 n("c776f523", "Ads Revenue Share"),
                 n("ab9f38f8", "Creator Subscription"),
                 n("d5cab8b0", "Creator Revenue Share"),
-                n("deaf5b16", "Bain triail as arís"),
                 n("g1a4a1b6", "ID verification error"),
                 n("e24305e4", "Your identity verification session was stale or invalid, please try again."),
                 n("f7954a0c", "Sonraí na n-eochracha slándála á lódáil"),
@@ -13305,4 +13305,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.9f55f8aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.f6466b8a.js.map

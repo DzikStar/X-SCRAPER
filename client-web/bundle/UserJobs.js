@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.UserJobs", "icons/IconChevronDown-js"],
+    ["bundle.UserJobs"],
     {
         229333: (e, a, l) => {
             l.d(a, { Z: () => u });
@@ -146,22 +146,23 @@
             const n = (0, l(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        l.e("icons.23"),
-                        l.e("icons.0"),
-                        l.e("icons.2"),
-                        l.e("icons.16"),
-                        l.e("icons.19"),
-                        l.e("icons.10"),
-                        l.e("icons.13"),
-                        l.e("icons.24"),
+                        l.e("icons.8"),
+                        l.e("icons.15"),
                         l.e("icons.7"),
+                        l.e("icons.3"),
+                        l.e("icons.24"),
+                        l.e("icons.12"),
                         l.e("icons.22"),
-                        l.e("icons.27"),
-                        l.e("icons.17"),
+                        l.e("icons.2"),
+                        l.e("icons.18"),
+                        l.e("icons.9"),
+                        l.e("icons.6"),
                         l.e("modules.common-e907d115"),
                         l.e("modules.common-e019dbda"),
-                        l.e("icons.21"),
-                        l.e("icons.18"),
+                        l.e("icons.14"),
+                        l.e("icons.5"),
+                        l.e("icons.16"),
+                        l.e("icons.19"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -191,8 +192,8 @@
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         l.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        l.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                         l.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
+                        l.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         l.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         l.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                         l.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
@@ -248,14 +249,14 @@
                 h = t().df1b7550,
                 p = t().f38959a6,
                 b = t().bc78a26c,
-                g = t().ec28738e,
-                f = t().icb06308,
+                f = t().ec28738e,
+                g = t().icb06308,
                 y = t().d0b978ec,
                 k = t().af19cdc2,
                 _ = t().e4a51fca,
                 D = t().e8ca78ae,
                 S = t().c365dcc6,
-                w = Object.freeze({ software_engineering: d, data_analytics: c, product: u, design: m, marketing: h, sales_am: p, operations: b, people_hr: g, finance_accounting: f, legal_compliance: y, science_engineering: k, medical: _, construction_trades: D, other: S }),
+                w = Object.freeze({ software_engineering: d, data_analytics: c, product: u, design: m, marketing: h, sales_am: p, operations: b, people_hr: f, finance_accounting: g, legal_compliance: y, science_engineering: k, medical: _, construction_trades: D, other: S }),
                 v = Object.entries(w).map(([e, a]) => ({ label: String(a), value: e })),
                 F = t().e25d75e4,
                 C = t().e89b3f04,
@@ -263,9 +264,9 @@
                 I = t().cc537386,
                 E = t().jfc3cece,
                 Z = t().e1b683aa,
-                x = t().c4627fda,
-                P = t().db75b47c,
-                $ = Object.freeze({ intern: F, entry_level: C, junior: M, mid_level: I, senior: E, lead: Z, manager: x, executive: P }),
+                P = t().c4627fda,
+                x = t().db75b47c,
+                $ = Object.freeze({ intern: F, entry_level: C, junior: M, mid_level: I, senior: E, lead: Z, manager: P, executive: x }),
                 z = Object.entries($).map(([e, a]) => ({ label: String(a), value: e })),
                 T = t().i312f0ce,
                 A = t().b4aff05e,
@@ -330,7 +331,7 @@
                 };
         },
         127218: (e, a, l) => {
-            l.d(a, { C: () => f });
+            l.d(a, { C: () => g });
             var n = l(202784),
                 r = l(614983),
                 t = l.n(r),
@@ -344,14 +345,14 @@
                 h = l(71620),
                 p = l(163889),
                 b = l(312771),
-                g = l(535338);
-            function f(e, a, l) {
+                f = l(535338);
+            function g(e, a, l) {
                 const [r, o] = n.useState(!1),
                     [i, c] = n.useState(null),
-                    f = s()(),
+                    g = s()(),
                     y = d()(a),
                     k = (0, h.po)(),
-                    _ = (0, g.p)(e, y, l);
+                    _ = (0, f.p)(e, y, l);
                 return n.useMemo(() => {
                     const a = (0, m.getRequest)(e).params?.metadata?.sliceInfoPath;
                     t()(!!a, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
@@ -369,7 +370,7 @@
                         s = (a) => {
                             r ||
                                 (o(!0),
-                                u()(f, e, { ...y, cursor: a }).subscribe({
+                                u()(g, e, { ...y, cursor: a }).subscribe({
                                     complete: () => {
                                         o(!1);
                                     },
@@ -384,11 +385,11 @@
                         h = () => {
                             n && s(n);
                         },
-                        g = () => {
+                        f = () => {
                             s(void 0);
                         };
-                    return i ? { subsequentFetchStatus: b.ZP.FAILED, error: i, fetchNext: d, fetchPrevious: h, refetch: g, data: _, hasNext: Boolean(l), hasPrevious: Boolean(n) } : { subsequentFetchStatus: r ? b.ZP.LOADING : b.ZP.NONE, error: void 0, fetchNext: d, fetchPrevious: h, refetch: g, data: _, hasNext: Boolean(l), hasPrevious: Boolean(n) };
-                }, [e, _, r, i, f, y, k]);
+                    return i ? { subsequentFetchStatus: b.ZP.FAILED, error: i, fetchNext: d, fetchPrevious: h, refetch: f, data: _, hasNext: Boolean(l), hasPrevious: Boolean(n) } : { subsequentFetchStatus: r ? b.ZP.LOADING : b.ZP.NONE, error: void 0, fetchNext: d, fetchPrevious: h, refetch: f, data: _, hasNext: Boolean(l), hasPrevious: Boolean(n) };
+                }, [e, _, r, i, g, y, k]);
             }
         },
         499102: (e, a, l) => {
@@ -407,8 +408,8 @@
                 h = l(106186),
                 p = l(786272),
                 b = l(443781),
-                g = l(952793),
-                f = l(782642),
+                f = l(952793),
+                g = l(782642),
                 y = l(226298),
                 k = l(701796);
             const _ = d().f508c49c,
@@ -419,15 +420,15 @@
                 F = d().c791d3fc,
                 C = { label: d().ifea3114, withDelay: !0 },
                 M = ({ iconSize: e = "normal", jobId: a, jobUserId: l }) => {
-                    const i = (0, f.p)(),
+                    const i = (0, g.p)(),
                         d = (0, t.useHistory)(),
                         { userClaims: M, viewerUserId: I } = (0, b.QZ)(),
-                        E = (0, g.hC)("recruiting_jobs_list_share_enabled"),
-                        Z = (0, g.hC)("recruiting_pin_job_enabled") && (M.isTrueAndEnabled("subscriptions_feature_premium_jobs") || M.isVerifiedOrg()) && I !== l,
-                        x = n.useCallback(() => {
+                        E = (0, f.hC)("recruiting_jobs_list_share_enabled"),
+                        Z = (0, f.hC)("recruiting_pin_job_enabled") && (M.isTrueAndEnabled("subscriptions_feature_premium_jobs") || M.isVerifiedOrg()) && I !== l,
+                        P = n.useCallback(() => {
                             d.push({ query: { text: (0, k.w)((0, y.z)(a)) }, pathname: "/messages/compose" });
                         }, [d, a]),
-                        P = n.useCallback(() => {
+                        x = n.useCallback(() => {
                             r.Z.setString((0, k.w)((0, y.z)(a))), i({ text: D });
                         }, [i, a]),
                         $ = n.useCallback(() => {
@@ -438,8 +439,8 @@
                         }, [d, a]),
                         T = n.useCallback(() => {
                             const e = [];
-                            return r.Z.isAvailable() && e.push({ text: _, onClick: P, Icon: c.default }), I && (e.push(((e) => ({ text: S, onClick: e, Icon: u.default }))(x)), e.push(((e) => ({ text: w, onClick: e, Icon: m.default }))($))), Z && e.push(((e) => ({ text: v, onClick: e, Icon: h.default }))(z)), e;
-                        }, [P, x, z, $, Z, I]),
+                            return r.Z.isAvailable() && e.push({ text: _, onClick: x, Icon: c.default }), I && (e.push(((e) => ({ text: S, onClick: e, Icon: u.default }))(P)), e.push(((e) => ({ text: w, onClick: e, Icon: m.default }))($))), Z && e.push(((e) => ({ text: v, onClick: e, Icon: h.default }))(z)), e;
+                        }, [x, P, z, $, Z, I]),
                         A = n.useCallback(
                             (e) => {
                                 const a = T();
@@ -464,25 +465,25 @@
                     const [c, u, m] = (0, i.Z)(),
                         [h, p] = n.useState(c.get("q") || ""),
                         b = (0, r.useHistory)(),
-                        g = n.useRef(!1);
+                        f = n.useRef(!1);
                     n.useEffect(
                         () => (
-                            (g.current = !0),
+                            (f.current = !0),
                             () => {
-                                g.current = !1;
+                                f.current = !1;
                             }
                         ),
                         [],
                     );
-                    const f = n.useCallback(() => {
+                    const g = n.useCallback(() => {
                             p(""), b.replace(e);
                         }, [e, b]),
                         y = n.useMemo(
                             () =>
                                 (0, s.Z)((e) => {
-                                    g.current && (e.length > 0 ? (l ? m({ q: e, p: "1" }) : u("q", e)) : f());
+                                    f.current && (e.length > 0 ? (l ? m({ q: e, p: "1" }) : u("q", e)) : g());
                                 }, 1e3),
-                            [f, u, m, l],
+                            [g, u, m, l],
                         ),
                         k = n.useCallback(
                             (e) => {
@@ -491,7 +492,7 @@
                             },
                             [y],
                         );
-                    return n.createElement(t.Z, { Icon: o.default, autoComplete: "off", isCompact: a, leftAligned: !0, onChange: k, onClear: f, placeholder: "Search jobs", styleType: d || "pill", testID: "search-jobs-input", value: h, withClearButton: !0 });
+                    return n.createElement(t.Z, { Icon: o.default, autoComplete: "off", isCompact: a, leftAligned: !0, onChange: k, onClear: g, placeholder: "Search jobs", styleType: d || "pill", testID: "search-jobs-input", value: h, withClearButton: !0 });
                 },
                 c = n.memo(d);
         },
@@ -510,8 +511,8 @@
                 h = l(252021),
                 p = l(443781),
                 b = l(952793),
-                g = l(835546),
-                f = l(615027),
+                f = l(835546),
+                g = l(615027),
                 y = l(771035),
                 k = l(668214),
                 _ = l(919022);
@@ -530,8 +531,8 @@
                 I,
                 E,
                 Z,
-                x,
                 P,
+                x,
                 $,
                 z,
                 T,
@@ -581,7 +582,7 @@
                                                             name: "recruiting_organization_results",
                                                             plural: !1,
                                                             selections: [
-                                                                (x = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                                (P = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                                 {
                                                                     alias: null,
                                                                     args: null,
@@ -595,7 +596,7 @@
                                                                             selections: [
                                                                                 {
                                                                                     alias: "consumer_job_search",
-                                                                                    args: [(P = { kind: "Variable", name: "search_params", variableName: "searchParams" })],
+                                                                                    args: [(x = { kind: "Variable", name: "search_params", variableName: "searchParams" })],
                                                                                     concreteType: "JobSearchSlice",
                                                                                     kind: "LinkedField",
                                                                                     name: "__UserJobListQueryScreen_consumer_job_search_slice_slice",
@@ -701,7 +702,7 @@
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
-                                                    x,
+                                                    P,
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -710,7 +711,7 @@
                                                         name: "recruiting_organization_results",
                                                         plural: !1,
                                                         selections: [
-                                                            x,
+                                                            P,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -725,7 +726,7 @@
                                                                         selections: [
                                                                             {
                                                                                 alias: null,
-                                                                                args: (A = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, P]),
+                                                                                args: (A = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, x]),
                                                                                 concreteType: "JobSearchSlice",
                                                                                 kind: "LinkedField",
                                                                                 name: "consumer_job_search",
@@ -740,7 +741,7 @@
                                                                                         plural: !0,
                                                                                         selections: [
                                                                                             (K = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
-                                                                                            x,
+                                                                                            P,
                                                                                             {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -902,23 +903,23 @@
                 he = l(856438),
                 pe = l(910113),
                 be = l(478414),
-                ge = l(499102);
-            const fe = ({ fallbackName: e, user: a }) => {
+                fe = l(499102);
+            const ge = ({ fallbackName: e, user: a }) => {
                     const l = Q()(pe.fR, a);
                     return l && l.core && l.core.name && l.core.screen_name ? n.createElement(re.Z, { avatarSize: "small", isVerified: l.verification?.verified ?? !1, name: l.core.name, nameSize: "subtext2", screenName: l.core.screen_name, screenNameSize: "subtext2", verifiedType: l.verification?.verified_type ?? void 0, weight: "normal" }) : e ? n.createElement(s.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
                 ye = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext2" },
                 ke = "user-job-list-item-short-description",
                 _e = d.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, itemRow: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, shortDescription: { color: e.colors.text }, timestamp: { fontSize: e.fontSizes.subtext3 }, lastRow: { marginTop: e.spaces.space4 } })),
-                De = ({ allowShare: e = !1, companyName: a, createdAt: l, formattedSalary: t, isFeatured: o, isVerifiedOrg: i, jobId: d, jobTitle: c, location: u, onClick: m, profileId: h, redirectUrl: p, salaryInterval: b, shortDescription: g, user: f, withUserInfo: y = !1 }) => {
+                De = ({ allowShare: e = !1, companyName: a, createdAt: l, formattedSalary: t, isFeatured: o, isVerifiedOrg: i, jobId: d, jobTitle: c, location: u, onClick: m, profileId: h, redirectUrl: p, salaryInterval: b, shortDescription: f, user: g, withUserInfo: y = !1 }) => {
                     (0, ue.q)(() => {
                         (0, te.fH)((0, be.yW)(ke, ye), ke);
                     });
                     const k = n.useMemo(() => ({ label: c }), [c]),
-                        _ = n.useMemo(() => oe.Z.getContentStateFromRaw(g), [g]),
+                        _ = n.useMemo(() => oe.Z.getContentStateFromRaw(f), [f]),
                         D = n.useMemo(() => _ && (0, ne.convertFromRaw)(_).hasText(), [_]),
                         S = n.useMemo(() => `/i/jobs/${d}`, [d]);
-                    return n.createElement(se.Z, { interactive: !0, link: i ? { pathname: S, external: !0 } : p || "", onClick: m, style: _e.listContainer }, n.createElement(r.Z, { style: _e.items }, n.createElement(s.ZP, { hoverLabel: k, numberOfLines: 2, size: "subtext1", weight: "bold" }, c), y ? n.createElement(fe, { fallbackName: a, user: f }) : null, n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, u), t ? n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, ie.M)(t, b)) : null, _ && D ? n.createElement(r.Z, { style: _e.shortDescription }, n.createElement(me.Z, { className: ke }, n.createElement(de.Z, { contentState: _, paragraphFontSizeOverride: ye.paragraphFontSize }))) : null), n.createElement(r.Z, { style: _e.lastRow }, n.createElement(r.Z, { style: _e.itemRow }, n.createElement(r.Z, { style: _e.itemRow }, l ? n.createElement(ce.Z, { cutoff: "years", humanReadable: !0, style: _e.timestamp, timestamp: l }) : null, o ? n.createElement(he.Z, null) : null), e ? n.createElement(ge.Z, { iconSize: "small", jobId: d, jobUserId: h }) : null)));
+                    return n.createElement(se.Z, { interactive: !0, link: i ? { pathname: S, external: !0 } : p || "", onClick: m, style: _e.listContainer }, n.createElement(r.Z, { style: _e.items }, n.createElement(s.ZP, { hoverLabel: k, numberOfLines: 2, size: "subtext1", weight: "bold" }, c), y ? n.createElement(ge, { fallbackName: a, user: g }) : null, n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, u), t ? n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, ie.M)(t, b)) : null, _ && D ? n.createElement(r.Z, { style: _e.shortDescription }, n.createElement(me.Z, { className: ke }, n.createElement(de.Z, { contentState: _, paragraphFontSizeOverride: ye.paragraphFontSize }))) : null), n.createElement(r.Z, { style: _e.lastRow }, n.createElement(r.Z, { style: _e.itemRow }, n.createElement(r.Z, { style: _e.itemRow }, l ? n.createElement(ce.Z, { cutoff: "years", humanReadable: !0, style: _e.timestamp, timestamp: l }) : null, o ? n.createElement(he.Z, null) : null), e ? n.createElement(fe.Z, { iconSize: "small", jobId: d, jobUserId: h }) : null)));
                 },
                 Se = le,
                 we = ({ isViewerFollowsUser: e, item: a, jobId: l, jobIndex: r, profileId: t, user: o }) => {
@@ -958,14 +959,14 @@
                 Ie = n.memo(Me),
                 Ee = { page: "jobs_list", section: "all" },
                 Ze = (e = "") => (e ? `Jobs created by ${e}` : "Jobs"),
-                xe = j,
-                Pe = (e) => {
+                Pe = j,
+                xe = (e) => {
                     const { query: a, screenName: l, user: r } = e,
                         t = n.useMemo(() => {
                             const e = a?.keyword ? { keyword: a.keyword } : null;
                             return { userId: r.id_str, count: 50, cursor: null, searchParams: e };
                         }, [a, r.id_str]),
-                        { data: o, fetchNext: s } = (0, J.C)(xe, t),
+                        { data: o, fetchNext: s } = (0, J.C)(Pe, t),
                         i = o?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
                     return i ? n.createElement(H.nO, { namespace: Ee }, n.createElement(N.Z, null, n.createElement(n.Fragment, null, n.createElement(B.Z, { title: Ze(l) }), n.createElement(Ie, { fetchNext: s, isViewerFollowsUser: r.following, profileId: r.id_str, slice: i, user: o.data.result })))) : null;
                 },
@@ -973,7 +974,7 @@
                 ze = (e) => {
                     const [a] = (0, O.Z)(),
                         l = n.useMemo(() => ({ keyword: a.get("q") }), [a]);
-                    return n.createElement(U.H, { errorConfig: $e }, n.createElement(Pe, (0, L.Z)({}, e, { query: l })));
+                    return n.createElement(U.H, { errorConfig: $e }, n.createElement(xe, (0, L.Z)({}, e, { query: l })));
                 },
                 Te = n.memo(ze);
             var Ae = l(138099),
@@ -1008,7 +1009,7 @@
                         u && d(u);
                     }, [d, u]);
                     const v = k?.id_str === _,
-                        F = !k || (k && (0, g.n5)({ isOwnProfile: v, isSoftBlockEnabled: w, user: k })),
+                        F = !k || (k && (0, f.n5)({ isOwnProfile: v, isSoftBlockEnabled: w, user: k })),
                         C = n.useCallback(() => {
                             l(!1);
                         }, []);
@@ -1017,13 +1018,13 @@
                             const e = "Business" === k?.verified_type || "Square" === k?.profile_image_shape ? "square" : "circle";
                             return n.createElement(r.Z, { style: Je.rightControlContainer }, n.createElement(r.Z, null, k ? n.createElement(o.default, { screenName: u, shape: e, size: "large", uri: k.profile_image_url_https }) : n.createElement(o.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(r.Z, null, n.createElement(s.ZP, { size: "body", weight: "bold" }, Oe), n.createElement(i.Z, { screenName: u, size: "subtext1", style: { fontWeight: "normal" } })));
                         };
-                        return F ? n.createElement(n.Fragment, null, n.createElement(h.Z, { backLocation: "/", history: c, primaryContent: k ? (!k?.protected || k?.following || v ? n.createElement(n.Fragment, null, D && u ? n.createElement(r.Z, { style: Je.rightControlContainer }, n.createElement(r.Z, { style: Je.searchContainer }, n.createElement(y.Z, { basePath: `/${u}/jobs`, styleType: "selection" }))) : null, n.createElement(Te, { screenName: u, user: k })) : n.createElement(t.Z, { header: He })) : null, primaryContentLabel: Oe, sidebarContent: S ? n.createElement(r.Z, { style: Je.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), a ? n.createElement(Ue, { onDismiss: C, screenName: u }) : null) : n.createElement(f.Z, { to: `/${u}` });
+                        return F ? n.createElement(n.Fragment, null, n.createElement(h.Z, { backLocation: "/", history: c, primaryContent: k ? (!k?.protected || k?.following || v ? n.createElement(n.Fragment, null, D && u ? n.createElement(r.Z, { style: Je.rightControlContainer }, n.createElement(r.Z, { style: Je.searchContainer }, n.createElement(y.Z, { basePath: `/${u}/jobs`, styleType: "selection" }))) : null, n.createElement(Te, { screenName: u, user: k })) : n.createElement(t.Z, { header: He })) : null, primaryContentLabel: Oe, sidebarContent: S ? n.createElement(r.Z, { style: Je.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), a ? n.createElement(Ue, { onDismiss: C, screenName: u }) : null) : n.createElement(g.Z, { to: `/${u}` });
                     }
                     return null;
                 });
         },
         466818: (e, a, l) => {
-            l.d(a, { ZP: () => f });
+            l.d(a, { ZP: () => g });
             var n = l(202784),
                 r = l(325686),
                 t = l(487552),
@@ -1064,7 +1065,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: a, errorText: l, hasError: d, helperText: p, options: b, style: f, testID: y, value: k, withEmptyOption: _ } = this.props,
+                    const { "aria-describedby": e, disabled: a, errorText: l, hasError: d, helperText: p, options: b, style: g, testID: y, value: k, withEmptyOption: _ } = this.props,
                         { isFocused: D } = this.state,
                         S = i.ZP.getLanguage(),
                         w = void 0 === d ? !!l : d,
@@ -1078,18 +1079,18 @@
                             const i = "ja" === S ? u.default.theme.fontFamilies.japan : "rtl" === e || o.Z.isLocaleRTL(S) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return n.createElement(
                                 r.Z,
-                                { style: [s.Z.border, g.container, a && s.Z.disabled, D && s.Z.focusedBorderValid, w && s.Z.invalidBorderColor, D && w && s.Z.focusedBorderInvalid, f] },
+                                { style: [s.Z.border, f.container, a && s.Z.disabled, D && s.Z.focusedBorderValid, w && s.Z.invalidBorderColor, D && w && s.Z.focusedBorderInvalid, g] },
                                 this._renderLabel(),
                                 n.createElement(
                                     m,
-                                    { "aria-describedby": F, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [g.select, { fontFamily: i }, a && s.Z.disabled], testID: y || "", value: k },
-                                    _ ? n.createElement(h, { disabled: !0, style: g.option, value: "" }) : null,
+                                    { "aria-describedby": F, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: i }, a && s.Z.disabled], testID: y || "", value: k },
+                                    _ ? n.createElement(h, { disabled: !0, style: f.option, value: "" }) : null,
                                     b.map((e) => {
                                         const { disabled: a, label: l, value: r } = e;
-                                        return n.createElement(h, { disabled: a, key: `${l}-${r}`, style: g.option, value: r }, l);
+                                        return n.createElement(h, { disabled: a, key: `${l}-${r}`, style: f.option, value: r }, l);
                                     }),
                                 ),
-                                n.createElement(t.default, { style: [g.dropdownCaret, D && s.Z.validColor, !(!d && !l) && s.Z.invalidColor] }),
+                                n.createElement(t.default, { style: [f.dropdownCaret, D && s.Z.validColor, !(!d && !l) && s.Z.invalidColor] }),
                             );
                         }),
                         p ? this._renderHelperText() : null,
@@ -1099,36 +1100,23 @@
                 _renderLabel() {
                     const { errorText: e, hasError: a, label: l } = this.props,
                         { isFocused: r } = this.state;
-                    return n.createElement(i.ZP, { color: a || e ? "red500" : r ? "primary" : "gray700", id: this._labelID, role: "label", style: g.label }, l);
+                    return n.createElement(i.ZP, { color: a || e ? "red500" : r ? "primary" : "gray700", id: this._labelID, role: "label", style: f.label }, l);
                 }
                 _renderHelperText() {
-                    return n.createElement(r.Z, { "aria-live": "polite" }, n.createElement(i.ZP, { color: "gray700", id: this._helperID, style: g.helperText }, this.props.helperText));
+                    return n.createElement(r.Z, { "aria-live": "polite" }, n.createElement(i.ZP, { color: "gray700", id: this._helperID, style: f.helperText }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return n.createElement(r.Z, { "aria-live": "polite" }, n.createElement(i.ZP, { color: "red500", id: this._errorID, style: g.helperText }, this.props.errorText));
+                    return n.createElement(r.Z, { "aria-live": "polite" }, n.createElement(i.ZP, { color: "red500", id: this._errorID, style: f.helperText }, this.props.errorText));
                 }
             }
             b.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const g = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                f = b;
+            const f = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+                g = b;
         },
         183806: (e, a, l) => {
             l.d(a, { Z: () => n });
             const n = l(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => i });
-            var n = l(202784),
-                r = l(890601),
-                t = l(783427),
-                o = l(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const i = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.c7f1835a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.c11a8e8a.js.map

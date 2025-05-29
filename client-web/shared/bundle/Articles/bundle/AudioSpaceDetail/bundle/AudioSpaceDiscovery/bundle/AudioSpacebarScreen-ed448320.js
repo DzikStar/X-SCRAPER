@@ -14,7 +14,7 @@
             var r = i(202784),
                 n = i(523561),
                 s = i(195560);
-            const o = (0, n.Z)({ loader: () => Promise.all([i.e("icons.23"), i.e("icons.19"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"), i.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"), i.e("loader.TimelineRenderer")]).then(i.bind(i, 22371)), renderPlaceholder: (e, t) => r.createElement(s.Z, { hasError: e, onRetry: t }) });
+            const o = (0, n.Z)({ loader: () => Promise.all([i.e("icons.8"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"), i.e("loader.TimelineRenderer")]).then(i.bind(i, 22371)), renderPlaceholder: (e, t) => r.createElement(s.Z, { hasError: e, onRetry: t }) });
         },
         3138: (e, t, i) => {
             i.d(t, { M: () => s });
@@ -92,7 +92,7 @@
                     (e, t = l) =>
                     (i, n, { scribe: s }) => {
                         const o = n(),
-                            a = Array.isArray(t.items) ? (0, r.Z)(t.items.map((e) => m(e, o))) : d,
+                            a = Array.isArray(t.items) ? (0, r.Z)(t.items.map((e) => p(e, o))) : d,
                             l = { ...t, items: a };
                         s.log(e, l);
                     },
@@ -101,20 +101,20 @@
                     (e, t, { scribe: i }) => {
                         i.flushImmediate();
                     },
-                p = (e) => {
+                m = (e) => {
                     if (e.disclosure_type && e.impression_id) return { disclosure_type: e.disclosure_type, impression_id: e.impression_id };
                 },
-                m = (e, t) => {
+                p = (e, t) => {
                     if (!e.id) return e;
                     switch (e.item_type) {
                         case n.Z.ItemType.USER: {
                             const i = a.ZP.select(t, e.id),
-                                r = p(e);
+                                r = m(e);
                             return i ? { ...e, ...s.Z.getUserItem(i, r) } : e;
                         }
                         case n.Z.ItemType.TWEET: {
                             const i = o.Z.selectHydrated(t, e.id),
-                                r = p(e);
+                                r = m(e);
                             return i ? { ...e, ...s.Z.getTweetItem(i, r, void 0, void 0, e) } : e;
                         }
                         default:
@@ -163,8 +163,8 @@
                     { hasMultipleMediaItems: s } = t;
                 return { hasMultipleMediaItems: s, legacy: i, redesign: n };
             }
-            var p = i(516951),
-                m = i(541837),
+            var m = i(516951),
+                p = i(541837),
                 E = i(615656),
                 _ = i(71620),
                 T = i(917799);
@@ -188,7 +188,7 @@
                     i
                 );
             }
-            function S(e, t, i, r, n) {
+            function P(e, t, i, r, n) {
                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                 let s = [];
                 const o = [s];
@@ -202,8 +202,8 @@
                                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                                 const s = { eligibleTweets: e, prerollDisplayLocation: n };
                                 t && (s.trigger_preroll = t);
-                                const o = (0, T._O)(i, { request: r.withEndpoint(m.Z).fetch, params: s }),
-                                    a = i((0, _.zr)(f)({ showToast: !1, [E.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
+                                const o = (0, T._O)(i, { request: r.withEndpoint(p.Z).fetch, params: s }),
+                                    a = i((0, _.zr)(f)({ showToast: !1, [E.ZP.AccessDeniedByBouncer]: { customAction: m.Z } }));
                                 return o({ actionTypes: I, context: "FETCH_PREROLLS" }).catch(a);
                             })(e, t, i, r, n),
                         ),
@@ -217,11 +217,11 @@
                     })
                 );
             }
-            const P = { fetchStatus: o.ZP.NONE, eligibleTweets: [], promotedMetadataCollection: {}, prerollMetadataCollection: {}, dynamicIVCollection: {}, prerollEligibilityCollection: {} },
+            const S = { fetchStatus: o.ZP.NONE, eligibleTweets: [], promotedMetadataCollection: {}, prerollMetadataCollection: {}, dynamicIVCollection: {}, prerollEligibilityCollection: {} },
                 g = "rweb/instreamVideo/DYNAMIC_RESET",
                 b = "rweb/instreamVideo/STORE_METADATA",
                 L = "rweb/instreamVideo/DYNAMIC_STORE",
-                O = { [d.Nw.OTHER]: P };
+                O = { [d.Nw.OTHER]: S };
             s.Z.register({
                 [d.Yf]: function (e = O, t) {
                     if (!t) return e;
@@ -229,19 +229,19 @@
                         case b:
                             if (t.payload) {
                                 const { eligibleTweets: i, prerollDisplayLocation: r, prerollEligibilityCollection: n, prerollMetadataCollection: s, promotedMetadataCollection: o } = t.payload;
-                                return { ...e, [r]: { ...P, ...e[r], eligibleTweets: i, prerollMetadataCollection: s, promotedMetadataCollection: o, prerollEligibilityCollection: n } };
+                                return { ...e, [r]: { ...S, ...e[r], eligibleTweets: i, prerollMetadataCollection: s, promotedMetadataCollection: o, prerollEligibilityCollection: n } };
                             }
                             break;
                         case L:
                             if (t.payload) {
                                 const { dynamicIVCollection: i, prerollDisplayLocation: r } = t.payload;
-                                return { ...e, [r]: { ...P, ...e[r], dynamicIVCollection: i } };
+                                return { ...e, [r]: { ...S, ...e[r], dynamicIVCollection: i } };
                             }
                             break;
                         case g:
                             if (t.payload) {
                                 const { prerollDisplayLocation: i } = t.payload;
-                                return { ...e, [i]: { ...P, ...e[i], dynamicIVCollection: {} } };
+                                return { ...e, [i]: { ...S, ...e[i], dynamicIVCollection: {} } };
                             }
                             break;
                         default:
@@ -250,7 +250,7 @@
                     return e;
                 },
             });
-            const A = (e, t) => e[d.Yf][t] || P;
+            const A = (e, t) => e[d.Yf][t] || S;
             function M(e, t = d.Nw.OTHER) {
                 return (i, r, { api: s, featureSwitches: o }) => {
                     if (!Array.isArray(e)) throw new Error("unable to fetch prerolls without timeline entries");
@@ -258,8 +258,8 @@
                     const d = r(),
                         l = [],
                         c = {},
-                        p = {},
-                        m = {};
+                        m = {},
+                        p = {};
                     e.forEach((e) => {
                         if (!e.content || e.type !== n.ZP.Tweet) return;
                         const t = e.content,
@@ -269,14 +269,14 @@
                             { prerollMetadata: s, promotedMetadata: o } = t;
                         if (o) {
                             const { adMetadataContainer: e, disclosureType: t, impressionId: i } = o;
-                            (r.promoted_content = { adMetadataContainer: e, disclosure_type: t, impression_id: i }), (p[r.id_str] = o);
+                            (r.promoted_content = { adMetadataContainer: e, disclosure_type: t, impression_id: i }), (m[r.id_str] = o);
                         }
                         const E = u(r),
                             _ = E && E.hasMultipleMediaItems;
-                        (m[r.id_str] = E), s?.preroll?.mediaInfo && !_ && (c[r.id_str] = s), E?.legacy && !_ && l.push(r);
+                        (p[r.id_str] = E), s?.preroll?.mediaInfo && !_ && (c[r.id_str] = s), E?.legacy && !_ && l.push(r);
                     });
-                    i({ type: b, payload: { ...{ eligibleTweets: l, prerollMetadataCollection: c, promotedMetadataCollection: p, prerollEligibilityCollection: m, prerollDisplayLocation: t } } });
-                    return S(
+                    i({ type: b, payload: { ...{ eligibleTweets: l, prerollMetadataCollection: c, promotedMetadataCollection: m, prerollEligibilityCollection: p, prerollDisplayLocation: t } } });
+                    return P(
                         l.filter((e) => void 0 === c[e.id_str]),
                         null,
                         i,
@@ -290,14 +290,14 @@
                     if (e) {
                         const o = A(n(), t),
                             { dynamicIVCollection: a, eligibleTweets: d, prerollEligibilityCollection: l, prerollMetadataCollection: c, promotedMetadataCollection: u } = o,
-                            p = a[e],
-                            m = u[e],
+                            m = a[e],
+                            p = u[e],
                             E = l[e];
-                        if (p) {
+                        if (m) {
                             i({ type: g, payload: { prerollDisplayLocation: t } });
-                            const { dynamic_preroll_type: e, preroll_id: n } = p;
+                            const { dynamic_preroll_type: e, preroll_id: n } = m;
                             return (
-                                S(d, { preroll_id: n, dynamic_preroll_type: e }, i, s, t),
+                                P(d, { preroll_id: n, dynamic_preroll_type: e }, i, s, t),
                                 (function (e, t, i, n) {
                                     const s = { adId: t.preroll_id, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: null, duration_millis: t.media_info.duration_millis, publisher_id_str: t.media_info.publisher_id_str, variants: t.media_info.variants }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: t.videoAnalyticsScribePassthrough };
                                     if ((t.promoted_content && !i && ((s.promotedContent.impressionId = t.promoted_content.impression_id), (s.promotedContent.disclosureType = t.promoted_content.disclosure_type)), t.media_info.call_to_action)) {
@@ -316,7 +316,7 @@
                                         (s.advertiserName = e), (s.advertiserProfileImageUrl = i);
                                     }
                                     return s;
-                                })(0, p, m, E)
+                                })(0, m, p, E)
                             );
                         }
                         const _ = c[e];
@@ -342,7 +342,7 @@
                                     (d.advertiserName = e), (d.advertiserProfileImageUrl = t);
                                 }
                                 return d;
-                            })(0, _, m, E);
+                            })(0, _, p, E);
                             if (e) return e;
                         }
                     }
@@ -362,8 +362,8 @@
                 l = i(962741),
                 c = i(466015),
                 u = i(538327),
-                p = i(281743),
-                m = i(917799),
+                m = i(281743),
+                p = i(917799),
                 E = i(56519),
                 _ = i(502909),
                 T = i(600823),
@@ -371,16 +371,16 @@
                 I = i(497294),
                 h = i(709318),
                 y = i(872788),
-                S = i(390387),
-                P = i(652881),
+                P = i(390387),
+                S = i(652881),
                 g = i(780936),
                 b = i(823885),
                 L = i(164692),
                 O = i(78259),
                 A = i(919022),
                 M = i(206795);
-            const R = m.dg("lists", "UPLOAD_MEDIA"),
-                C = m.dg("lists", "UPDATE_MEDIA"),
+            const R = p.dg("lists", "UPLOAD_MEDIA"),
+                C = p.dg("lists", "UPDATE_MEDIA"),
                 v = (0, _.ZP)({ namespace: "lists" }),
                 w = (0, _.tb)(v, {
                     context: "FETCH_LIST",
@@ -456,11 +456,11 @@
                             const r = i(),
                                 n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 s = v.select(r, e),
-                                o = (0, S._h)(r);
+                                o = (0, P._h)(r);
                             if (!s || !o) return [];
                             const a = c.Re(e),
                                 d = (0, L.Z)(o, o);
-                            return [(0, h.Vu)({ id: s.id_str, name: s.name, type: y.FO.LIST }), d.removeEntry(a), ...(0, P.C2)(n, i, P.Pq.ownedSubscribedList, e)];
+                            return [(0, h.Vu)({ id: s.id_str, name: s.name, type: y.FO.LIST }), d.removeEntry(a), ...(0, S.C2)(n, i, S.Pq.ownedSubscribedList, e)];
                         },
                     }),
                     deleteListMedia: (0, _.Tx)(v, "deleteListMedia", { getParams: (e) => ({ listId: e }), getApiMethod: (e) => e.withEndpoint(o.ZP).deleteBannerImage, context: "DELETE_LIST_MEDIA", mapResponseToActions: (e, t, i) => (t) => (t && t.entities ? [v.updateOne(e, { customBanner: void 0 })] : []) }),
@@ -492,11 +492,11 @@
                                 n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 s = [],
                                 o = t?.entities?.lists?.[e],
-                                a = (0, S._h)(r);
+                                a = (0, P._h)(r);
                             if (o && a) {
                                 const t = N(a),
                                     r = (0, O.Z)(e);
-                                s.push(v.updateOne(e, o)), s.push(r.injectEntry(t)), s.push(...(0, P.s8)(n, i, P.Pq.ownedSubscribedList, e)), o.pinning && s.push((0, h.Co)({ id: o.id_str, name: o.name, type: y.FO.LIST }));
+                                s.push(v.updateOne(e, o)), s.push(r.injectEntry(t)), s.push(...(0, S.s8)(n, i, S.Pq.ownedSubscribedList, e)), o.pinning && s.push((0, h.Co)({ id: o.id_str, name: o.name, type: y.FO.LIST }));
                             }
                             return s;
                         },
@@ -509,7 +509,7 @@
                         mapResponseToActions: (e, t, i) => (r) => {
                             const n = i(),
                                 s = v.select(n, e),
-                                o = (0, S._h)(n);
+                                o = (0, P._h)(n);
                             return s && o && s.muting !== t.mute && r ? [v.updateOne(e, { muting: t.mute })] : [];
                         },
                     }),
@@ -523,10 +523,10 @@
                                 n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 s = [],
                                 o = t?.entities?.lists?.[e],
-                                a = (0, S._h)(r);
+                                a = (0, P._h)(r);
                             if (o && a) {
                                 const t = (0, O.Z)(e);
-                                s.push(...(0, P.C2)(n, i, P.Pq.ownedSubscribedList, e)), s.push(v.updateOne(e, o)), s.push(t.removeEntry(c._Y(a))), s.push((0, h.Vu)({ id: o.id_str, name: o.name, type: y.FO.LIST }));
+                                s.push(...(0, S.C2)(n, i, S.Pq.ownedSubscribedList, e)), s.push(v.updateOne(e, o)), s.push(t.removeEntry(c._Y(a))), s.push((0, h.Vu)({ id: o.id_str, name: o.name, type: y.FO.LIST }));
                             }
                             return s;
                         },
@@ -541,15 +541,15 @@
                     createList:
                         (e) =>
                         (t, i, { api: r, featureSwitches: n }) =>
-                            m
+                            p
                                 ._O(t, { request: r.withEndpoint(o.ZP).createList, params: e })({ actionTypes: v.actionTypes.CREATE, context: "CREATE_LIST" }, (e) => {
-                                    const t = (0, S._h)(i());
+                                    const t = (0, P._h)(i());
                                     if (e && t) {
                                         const { result: r } = e,
                                             o = Z(r),
                                             a = (0, L.Z)(t, t),
                                             d = n.isTrue("responsive_web_timeline_relay_lists_management_enabled");
-                                        return (0, s.Z)([e.entities && (0, E.dP)(e.entities), a.injectEntry(o), ...(0, P.s8)(d, i, P.Pq.ownedSubscribedList, r)]);
+                                        return (0, s.Z)([e.entities && (0, E.dP)(e.entities), a.injectEntry(o), ...(0, S.s8)(d, i, S.Pq.ownedSubscribedList, r)]);
                                     }
                                     return [];
                                 })
@@ -566,7 +566,7 @@
                                     if (i) {
                                         r([{ type: R.SUCCESS }, { type: C.REQUEST }]);
                                         const e = (e) => F(0, e);
-                                        return m._O(r, { request: s.withEndpoint(o.ZP).editBannerImage, params: { listId: t, mediaId: i } })({ actionTypes: v.actionTypes.OPTIMISTIC_UPDATE, context: "EDIT_LIST_MEDIA" }, e);
+                                        return p._O(r, { request: s.withEndpoint(o.ZP).editBannerImage, params: { listId: t, mediaId: i } })({ actionTypes: v.actionTypes.OPTIMISTIC_UPDATE, context: "EDIT_LIST_MEDIA" }, e);
                                     }
                                     return r({ type: R.FAILURE }), Promise.reject(new Error("List media upload failed - no uploadId"));
                                 },
@@ -580,20 +580,20 @@
                         ({ listId: e, targetUserId: t }) =>
                         (i, r, { api: n }) => {
                             const s = r(),
-                                o = (0, S._h)(s);
+                                o = (0, P._h)(s);
                             if (!o) return;
                             const a = (0, L.Z)(o, t),
                                 d = a.selectEntries(s),
                                 u = c.Re(e),
-                                p = d.find((e) => e.entryId === u);
-                            if (p && p.type === l.ZP.TwitterList) {
-                                const e = p.content.isMember;
+                                m = d.find((e) => e.entryId === u);
+                            if (m && m.type === l.ZP.TwitterList) {
+                                const e = m.content.isMember;
                                 return i(a.updateEntry(u, { isMember: !e }));
                             }
                         },
                 },
                 B = { ...v, ...w, selectListAuthorScreenName: D, ...U, ...k, ...x };
-            p.sv.addForEntity(B, "List", {
+            m.sv.addForEntity(B, "List", {
                 rest_id: (e) => e.id_str,
                 name: (e) => e.name,
                 description: (e) => e.description,
@@ -613,14 +613,14 @@
                 custom_banner_media_results: (e) => (e.customBanner ? j.reference(e.customBanner) : null),
                 default_banner_media_results: (e) => j.reference(e.defaultBanner),
             });
-            const j = p.sv.addForObjectType("ApiMediaResults", { result: (e) => H.reference(e) }),
-                H = p.sv.addForObjectType("ApiMedia", { media_info: (e) => G.reference(e) }),
-                G = p.sv.addForObjectType("ApiImage", { original_img_url: (e) => e.image.url, original_img_width: (e) => e.image.width, original_img_height: (e) => e.image.height, salient_rect: (e) => (e.crop[0] ? W.reference(e.crop[0]) : null) }),
-                W = p.sv.addForObjectType("ApiMediaRect", { height: (e) => e.h, left: (e) => e.x, top: (e) => e.y, width: (e) => e.w }),
+            const j = m.sv.addForObjectType("ApiMediaResults", { result: (e) => H.reference(e) }),
+                H = m.sv.addForObjectType("ApiMedia", { media_info: (e) => G.reference(e) }),
+                G = m.sv.addForObjectType("ApiImage", { original_img_url: (e) => e.image.url, original_img_width: (e) => e.image.width, original_img_height: (e) => e.image.height, salient_rect: (e) => (e.crop[0] ? W.reference(e.crop[0]) : null) }),
+                W = m.sv.addForObjectType("ApiMediaRect", { height: (e) => e.h, left: (e) => e.x, top: (e) => e.y, width: (e) => e.w }),
                 z = T.Z.register(B);
         },
         206795: (e, t, i) => {
-            i.d(t, { Hi: () => h, NU: () => S, pO: () => y, g$: () => I });
+            i.d(t, { Hi: () => h, NU: () => P, pO: () => y, g$: () => I });
             var r = i(166852),
                 n = i(483557),
                 s = i(499627),
@@ -630,27 +630,27 @@
                 l = i(877848);
             const c = Object.freeze({ REQUEST: "rweb/lists/FETCH_LISTMEMBERSHIPS_REQUEST", SUCCESS: "rweb/lists/FETCH_LISTMEMBERSHIPS_SUCCESS", FAILURE: "rweb/lists/FETCH_LISTMEMBERSHIPS_FAILURE" }),
                 u = "rweb/lists/LISTMEMBERSHIPS_ADD_UPDATE",
-                p = "rweb/lists/LISTMEMBERSHIPS_REMOVE_UPDATE",
-                m = "listMemberships",
+                m = "rweb/lists/LISTMEMBERSHIPS_REMOVE_UPDATE",
+                p = "listMemberships",
                 E = [],
                 _ = Object.freeze({}),
                 T = Object.freeze({ data: { lists: [] }, error: null, fetchStatus: { [l.Yj.BOTTOM]: a.ZP.NONE, [l.Yj.TOP]: a.ZP.NONE } });
-            const f = (e, t) => e[m][t],
+            const f = (e, t) => e[p][t],
                 I = (e, t) => {
                     const i = f(e, t);
                     return i?.data?.lists || E;
                 },
                 h = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
-                y = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
-                S = (e, t) => (i, r) => {
+                y = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: m }),
+                P = (e, t) => (i, r) => {
                     const s = r(),
                         u = f(s, e),
-                        p = ((e, t) => {
+                        m = ((e, t) => {
                             const i = f(e, t),
                                 r = I(e, t);
                             return i ? (0, a.ke)(i.fetchStatus, !!r.length) : a.ZP.NONE;
                         })(s, e);
-                    return !u || (p !== a.ZP.LOADING && p !== a.ZP.LOADED)
+                    return !u || (m !== a.ZP.LOADING && m !== a.ZP.LOADED)
                         ? i(
                               (
                                   (e, t) =>
@@ -666,7 +666,7 @@
                         : Promise.resolve();
                 };
             s.Z.register({
-                [m]: function (e = _, t) {
+                [p]: function (e = _, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case c.REQUEST: {
@@ -696,7 +696,7 @@
                                 a = (0, r.Z)([...i, ...o]);
                             return { ...e, [n]: { ...s, data: { ...s.data, lists: a } } };
                         }
-                        case p: {
+                        case m: {
                             const { item: i, key: r } = t.payload || {},
                                 n = e[r] || T,
                                 s = (n.data && n.data.lists) || [];
@@ -723,14 +723,14 @@
                     (a, d, { api: l }) => {
                         const c = l.withEndpoint(r.Z)[e],
                             u = o.Z.selectHydrated(d(), i),
-                            p = u?.conversation_id_str;
-                        if (!u || !p) {
-                            const t = { tweetId: i, conversationId: p };
+                            m = u?.conversation_id_str;
+                        if (!u || !m) {
+                            const t = { tweetId: i, conversationId: m };
                             return (0, n.ZP)(`Pinned Replies: ${e} called with insufficient data.`, { extra: t }), Promise.resolve({ error: null, success: !1 });
                         }
-                        const m = (0, s._O)(a, { params: { conversationId: p, tweetId: u.id_str }, request: (e) => c(e).then(({ success: e }) => ({ error: null, success: e })) });
+                        const p = (0, s._O)(a, { params: { conversationId: m, tweetId: u.id_str }, request: (e) => c(e).then(({ success: e }) => ({ error: null, success: e })) });
                         return Promise.resolve()
-                            .then(() => m({ actionTypes: t, context: `PINNED_REPLIES_${e}` }))
+                            .then(() => p({ actionTypes: t, context: `PINNED_REPLIES_${e}` }))
                             .catch((e) => ({ error: e, success: !1 }));
                     };
             }
@@ -749,8 +749,8 @@
                 l = i(218951);
             const c = Object.freeze({ pinnedLists: "pinnedLists", ownedSubscribedList: "ownedSubscribedList" }),
                 u = (e, t) => `${e}-list-${t}`,
-                p = (e, t, i = d.P.List, r = Date.now().toString()) => a.WE({ id: e, customEntryId: t, displayType: i, sortIndex: r });
-            function m(e) {
+                m = (e, t, i = d.P.List, r = Date.now().toString()) => a.WE({ id: e, customEntryId: t, displayType: i, sortIndex: r });
+            function p(e) {
                 return e.startsWith("pinned-list-module") || e.startsWith("pinnedListModule");
             }
             function E(e) {
@@ -764,11 +764,11 @@
                     o = _(e),
                     a = o.selectEntries(s),
                     l = i === c.pinnedLists,
-                    T = l ? m : E,
+                    T = l ? p : E,
                     f = a.find(({ entryId: e }) => T(e));
                 if (f) {
                     const e = u(f.entryId, r),
-                        t = l ? p(r, e, d.P.ListTile, "-1") : p(r, e, d.P.ListWithPin),
+                        t = l ? m(r, e, d.P.ListTile, "-1") : m(r, e, d.P.ListWithPin),
                         i = !l;
                     l && (n.push(o.removeEntry(`${f.entryId}-emptyStateMessage`, !0)), n.push(o.removeEntry(`${f.entryId}-messageprompt-PinnedListsEmptyPrompt`, !0))), n.push(o.injectTimelineModuleEntry(t, f.entryId, { atTop: i }));
                 }
@@ -779,7 +779,7 @@
                     s = t(),
                     o = _(e),
                     a = o.selectEntries(s),
-                    d = i === c.pinnedLists ? m : E,
+                    d = i === c.pinnedLists ? p : E,
                     l = a.find(({ entryId: e }) => d(e));
                 if (l) {
                     const e = u(l.entryId, r);
@@ -843,4 +843,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320.42408cba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320.07cbc64a.js.map

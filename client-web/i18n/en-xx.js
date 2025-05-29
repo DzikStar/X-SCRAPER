@@ -1317,6 +1317,7 @@
                 }),
                 s("d4d35bea", "[Tråänslåätïíng...]"),
                 s("he9c9634", "[Unåäbléê töø féêtch tråänslåätïíöøn]"),
+                s("deaf5b16", "[Réêtry]"),
                 s("j2198c98", "[Hïídéê tråänslåätéêd pöøst]"),
                 s("i73a7d48", "[Tråänslåätéêd by Göøöøgléê]"),
                 s("eeadb767", function (t) {
@@ -1916,9 +1917,9 @@
                 s("da8ac57c", "[Edïít Cåäptïíöøn]"),
                 s("a8fdd09c", "[Püblïísh Artïícléê]"),
                 s("d8047cc8", "[Püblïísh]"),
-                s("ff7ddca2", "[Yöøür Artïícléê wïíll åäppéêåär åäs åä pöøst öøncéê yöøü püblïísh. Alsöø, fïínd ïít ündéêr théê Artïícléês tåäb öøn yöøür pröøfïíléê.]"),
-                s("ef34d7be", "[Aüdïíéêncéê åänd réêply cöøntröøls åäréê nöøt éêdïítåäbléê åäftéêr åän åärtïícléê håäs béêéên püblïíshéêd.]");
-            s("e52d4998", "[Chöøöøséê yöøür åäüdïíéêncéê]"),
+                s("ff7ddca2", "[Yöøür Artïícléê wïíll åäppéêåär åäs åä pöøst öøncéê yöøü püblïísh. Alsöø, fïínd ïít ündéêr théê Artïícléês tåäb öøn yöøür pröøfïíléê.]");
+            s("ef34d7be", "[Aüdïíéêncéê åänd réêply cöøntröøls åäréê nöøt éêdïítåäbléê åäftéêr åän åärtïícléê håäs béêéên püblïíshéêd.]"),
+                s("e52d4998", "[Chöøöøséê yöøür åäüdïíéêncéê]"),
                 s("d7985b24", "[Chöøöøséê whöø cåän réêply töø thïís Artïícléê]"),
                 s("b5660338", "[Tïíméêlïínéê préêvïíéêw]"),
                 s("hff1b97a", "[Only Sübscrïíbéêd cåän réêply.]"),
@@ -2647,7 +2648,6 @@
                 s("c776f523", "Ads Réêvéênüéê Shåäréê"),
                 s("ab9f38f8", "Créêåätöør Sübscrïíptïíöøn"),
                 s("d5cab8b0", "Créêåätöør Réêvéênüéê Shåäréê"),
-                s("deaf5b16", "[Réêtry]"),
                 s("g1a4a1b6", "[ID véêrïífïícåätïíöøn éêrröør]"),
                 s("e24305e4", "[Yöøür ïídéêntïíty véêrïífïícåätïíöøn séêssïíöøn wåäs ståäléê öør ïínvåälïíd, pléêåäséê try åägåäïín.]"),
                 s("f7954a0c", "[Löøåädïíng séêcürïíty kéêys dåätåä]"),
@@ -13289,4 +13289,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.8d13bc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.eb9ff04a.js.map

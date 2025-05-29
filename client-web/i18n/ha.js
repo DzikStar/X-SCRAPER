@@ -1320,6 +1320,7 @@
                 }),
                 t("d4d35bea", "Translating..."),
                 t("he9c9634", "An kasa ɗebo fassara"),
+                t("deaf5b16", "Sake gwadawa"),
                 t("j2198c98", "Hide translated post"),
                 t("i73a7d48", "Google ta fassara"),
                 t("eeadb767", function (a) {
@@ -1919,9 +1920,9 @@
                 t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
                 t("d8047cc8", "Buga"),
-                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                t("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            t("e52d4998", "Choose your audience"),
+                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
@@ -2650,7 +2651,6 @@
                 t("c776f523", "Ads Revenue Share"),
                 t("ab9f38f8", "Creator Subscription"),
                 t("d5cab8b0", "Creator Revenue Share"),
-                t("deaf5b16", "Sake gwadawa"),
                 t("g1a4a1b6", "ID verification error"),
                 t("e24305e4", "Your identity verification session was stale or invalid, please try again."),
                 t("f7954a0c", "Ana loda bayanan makullan tsaro"),
@@ -13291,4 +13291,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.87929dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.5b57cc0a.js.map

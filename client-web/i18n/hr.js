@@ -1324,6 +1324,7 @@
                 }),
                 o("d4d35bea", "Prevođenje..."),
                 o("he9c9634", "Nije moguće dohvatiti prijevod"),
+                o("deaf5b16", "Pokušaj ponovno"),
                 o("j2198c98", "Sakrij prevedenu objavu"),
                 o("i73a7d48", "Prevedeno pomoću Googlea"),
                 o("eeadb767", function (a) {
@@ -1923,9 +1924,9 @@
                 o("da8ac57c", "Uredi titlove"),
                 o("a8fdd09c", "Objavi članak"),
                 o("d8047cc8", "Objavi"),
-                o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu."),
-                o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka.");
-            o("e52d4998", "Odaberite publiku"),
+                o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu.");
+            o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
+                o("e52d4998", "Odaberite publiku"),
                 o("d7985b24", "Odaberite tko sve može odgovoriti na ovaj članak"),
                 o("b5660338", "Pretpregled vremenske crte"),
                 o("hff1b97a", "Odgovoriti mogu samo pretplatnici."),
@@ -2654,7 +2655,6 @@
                 o("c776f523", "Udio u prihodu od oglasa"),
                 o("ab9f38f8", "Pretplata za autora sadržaja"),
                 o("d5cab8b0", "Udio u prihodu za autore sadržaja"),
-                o("deaf5b16", "Pokušaj ponovno"),
                 o("g1a4a1b6", "Pogreška prilikom provjere osobnog dokumenta"),
                 o("e24305e4", "Vaša sesija provjere identiteta bila je spora ili nevaljana, pokušajte ponovno."),
                 o("f7954a0c", "Učitavanje podataka o sigurnosnim ključevima"),
@@ -13310,4 +13310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.ab2c5cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.f97e7a9a.js.map

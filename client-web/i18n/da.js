@@ -1317,6 +1317,7 @@
                 }),
                 t("d4d35bea", "Oversætter ..."),
                 t("he9c9634", "Oversættelsen kunne ikke hentes"),
+                t("deaf5b16", "Prøv igen"),
                 t("j2198c98", "Skjul oversat post"),
                 t("i73a7d48", "Oversat af Google"),
                 t("eeadb767", function (e) {
@@ -1916,9 +1917,9 @@
                 t("da8ac57c", "Rediger billedtekst"),
                 t("a8fdd09c", "Udgiv Artikel"),
                 t("d8047cc8", "Udgiv"),
-                t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
-                t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet.");
-            t("e52d4998", "Vælg din målgruppe"),
+                t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil.");
+            t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
+                t("e52d4998", "Vælg din målgruppe"),
                 t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
                 t("b5660338", "Forhåndsvisning af tidslinje"),
                 t("hff1b97a", "Kun abonnenter kan svare."),
@@ -2647,7 +2648,6 @@
                 t("c776f523", "Andel af annonceindtægter"),
                 t("ab9f38f8", "Skaberabonnement"),
                 t("d5cab8b0", "Indtægtsdeling for skabere"),
-                t("deaf5b16", "Prøv igen"),
                 t("g1a4a1b6", "Fejl ved id-verifikation"),
                 t("e24305e4", "Din identitetsverifikationssession var forældet eller ugyldig, prøv igen."),
                 t("f7954a0c", "Indlæser data fra sikkerhedsnøgler"),
@@ -13291,4 +13291,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.3a72f78a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.f47a29ea.js.map

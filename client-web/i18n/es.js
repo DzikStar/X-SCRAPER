@@ -1316,6 +1316,7 @@
                 }),
                 o("d4d35bea", "Traduciendo..."),
                 o("he9c9634", "No es posible obtener la traducción"),
+                o("deaf5b16", "Intentar de nuevo"),
                 o("j2198c98", "Ocultar post traducido"),
                 o("i73a7d48", "Traducido por Google"),
                 o("eeadb767", function (e) {
@@ -1915,9 +1916,9 @@
                 o("da8ac57c", "Editar descripción"),
                 o("a8fdd09c", "Publicar Artículo"),
                 o("d8047cc8", "Publicar"),
-                o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
-                o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo.");
-            o("e52d4998", "Elige tu audiencia"),
+                o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil.");
+            o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo."),
+                o("e52d4998", "Elige tu audiencia"),
                 o("d7985b24", "Elige quién puede responder a este artículo"),
                 o("b5660338", "Vista previa de la cronología"),
                 o("hff1b97a", "Solo pueden responder los suscriptores."),
@@ -2646,7 +2647,6 @@
                 o("c776f523", "Cuota de ingresos por anuncios"),
                 o("ab9f38f8", "Suscripción a creadores"),
                 o("d5cab8b0", "Cuota de ingresos para creadores"),
-                o("deaf5b16", "Intentar de nuevo"),
                 o("g1a4a1b6", "Error de verificación de documento de identidad"),
                 o("e24305e4", "Tu sesión de verificación de identidad era antigua o no es válida, inténtalo nuevamente."),
                 o("f7954a0c", "Cargando datos de llaves de seguridad"),
@@ -13300,4 +13300,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.cef3a42a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.432a6bea.js.map

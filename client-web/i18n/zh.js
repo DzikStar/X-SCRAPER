@@ -1316,6 +1316,7 @@
                 }),
                 f("d4d35bea", "正在翻译..."),
                 f("he9c9634", "无法获取翻译"),
+                f("deaf5b16", "重试"),
                 f("j2198c98", "隐藏已翻译帖子"),
                 f("i73a7d48", "由 Google 提供翻译"),
                 f("eeadb767", function (e) {
@@ -1915,9 +1916,9 @@
                 f("da8ac57c", "编辑字幕"),
                 f("a8fdd09c", "发布文章"),
                 f("d8047cc8", "发布"),
-                f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。"),
-                f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。");
-            f("e52d4998", "选择你的受众"),
+                f("ff7ddca2", "在发布后，你的文章将显示为帖子。此外，你还可以在个人资料的“文章”选项卡中找到它。");
+            f("ef34d7be", "文章发布后，受众和回复控制无法再编辑。"),
+                f("e52d4998", "选择你的受众"),
                 f("d7985b24", "选择谁可以回复这篇文章"),
                 f("b5660338", "时间线预览"),
                 f("hff1b97a", "只有“已订阅”用户才能回复。"),
@@ -2646,7 +2647,6 @@
                 f("c776f523", "广告收入分成"),
                 f("ab9f38f8", "创作者订阅"),
                 f("d5cab8b0", "创作者收入分成"),
-                f("deaf5b16", "重试"),
                 f("g1a4a1b6", "ID 认证错误"),
                 f("e24305e4", "你的身份认证会话已过期或无效，请重试。"),
                 f("f7954a0c", "正在加载安全密钥数据"),
@@ -13303,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.9f8e79aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.a221a6ea.js.map

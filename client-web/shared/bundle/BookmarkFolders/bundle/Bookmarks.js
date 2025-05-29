@@ -746,4 +746,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.a8df970a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.b79e971a.js.map

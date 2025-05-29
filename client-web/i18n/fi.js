@@ -1317,6 +1317,7 @@
                 }),
                 e("d4d35bea", "Käännetään..."),
                 e("he9c9634", "Käännöstä ei voitu hakea"),
+                e("deaf5b16", "Yritä uudelleen"),
                 e("j2198c98", "Piilota käännetty julkaisu"),
                 e("i73a7d48", "Kääntänyt Google"),
                 e("eeadb767", function (a) {
@@ -1916,9 +1917,9 @@
                 e("da8ac57c", "Muokkaa kuvatekstiä"),
                 e("a8fdd09c", "Julkaise artikkeli"),
                 e("d8047cc8", "Julkaise"),
-                e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
-                e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen.");
-            e("e52d4998", "Valitse yleisösi"),
+                e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä.");
+            e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen."),
+                e("e52d4998", "Valitse yleisösi"),
                 e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
                 e("b5660338", "Aikajanan esikatselu"),
                 e("hff1b97a", "Vain tilaajat voivat vastata."),
@@ -2647,7 +2648,6 @@
                 e("c776f523", "Osuus mainostuloista"),
                 e("ab9f38f8", "Sisällöntuottajien tilaukset"),
                 e("d5cab8b0", "Sisällöntuottajien tulonjako"),
-                e("deaf5b16", "Yritä uudelleen"),
                 e("g1a4a1b6", "Tunnistautumisvirhe"),
                 e("e24305e4", "Tunnistautumisistuntosi ehti vanheta tai se oli muuten virheellinen. Yritä uudelleen."),
                 e("f7954a0c", "Ladataan suojausavaindataa"),
@@ -13302,4 +13302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c61e982a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ef6a255a.js.map

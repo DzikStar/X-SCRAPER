@@ -270,9 +270,9 @@
                 k = ({ account: e, calculatedFee: t, handleRemove: a, isDisabled: p, isSelected: k, onClick: C, withChevron: P, withInteractiveStyling: w }) => {
                     const v = e.id,
                         I = e.config,
-                        { Icon: _, fees: T, settleTimeMessage: D } = I ?? {},
-                        z = !p && (w ?? !!C),
-                        S = r.useCallback(() => {
+                        { Icon: _, fees: T, settleTimeMessage: S } = I ?? {},
+                        D = !p && (w ?? !!C),
+                        z = r.useCallback(() => {
                             v && !p && C?.(v);
                         }, [v, C, p]),
                         L = r.useCallback(
@@ -281,7 +281,7 @@
                             },
                             [a],
                         );
-                    return r.createElement(c.Z, { onClick: z ? S : void 0, withInteractiveStyling: z }, r.createElement(o.Z, { style: Z.account }, e.type === g.dX.x ? r.createElement(l.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(b.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: Z.accountName }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== g.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === g.dX.x ? r.createElement(u.Z, e.accountName) : I ? r.createElement(o.Z, { style: Z.row }, r.createElement(i.ZP, { color: "gray700" }, _ ? r.createElement(_, { style: Z.icon }) : null, D), T ? r.createElement(E.Z, { calculatedFee: t, fees: T }) : null) : e.type === g.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === g.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(m.ZP, { style: Z.decoration, type: "warning" }, e.label) : null, k ? r.createElement(y.default, { style: [Z.decoration, Z.selected] }) : null, a ? r.createElement(d.ZP, { "aria-label": x, hoverLabel: { label: x }, icon: r.createElement(h.default, null), onClick: L, size: "small", style: Z.decoration, testID: "btn-remove", type: "destructiveText" }) : null, P ? r.createElement(f.default, { style: Z.decoration }) : null));
+                    return r.createElement(c.Z, { onClick: D ? z : void 0, withInteractiveStyling: D }, r.createElement(o.Z, { style: Z.account }, e.type === g.dX.x ? r.createElement(l.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(b.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: Z.accountName }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== g.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === g.dX.x ? r.createElement(u.Z, e.accountName) : I ? r.createElement(o.Z, { style: Z.row }, r.createElement(i.ZP, { color: "gray700" }, _ ? r.createElement(_, { style: Z.icon }) : null, S), T ? r.createElement(E.Z, { calculatedFee: t, fees: T }) : null) : e.type === g.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === g.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(m.ZP, { style: Z.decoration, type: "warning" }, e.label) : null, k ? r.createElement(y.default, { style: [Z.decoration, Z.selected] }) : null, a ? r.createElement(d.ZP, { "aria-label": x, hoverLabel: { label: x }, icon: r.createElement(h.default, null), onClick: L, size: "small", style: Z.decoration, testID: "btn-remove", type: "destructiveText" }) : null, P ? r.createElement(f.default, { style: Z.decoration }) : null));
                 },
                 Z = p.default.create((e) => ({ account: { flexDirection: "row", gap: e.spaces.space8, display: "flex" }, row: { gap: e.spaces.space4, flexDirection: "row" }, accountName: { flexDirection: "column", gap: e.spaces.space4, justifyContent: "center", flex: 1 }, decoration: { alignSelf: "center", marginStart: "auto", marginEnd: e.spaces.space4, flexShrink: 0 }, selected: { color: e.colors.green500 }, icon: { marginEnd: e.spaces.space4, alignSelf: "center" } })),
                 C = r.memo(k);
@@ -343,6 +343,18 @@
                 },
                 x = u.default.create((e) => ({ noticeTile: { backgroundColor: e.colors.gray0, marginTop: e.spaces.space8 }, noticeContainer: { marginTop: `-${e.spaces.space8}` } })),
                 k = r.memo(E);
+        },
+        370347: (e, t, a) => {
+            a.d(t, { Z: () => s });
+            var n = a(807896),
+                r = a(202784),
+                o = a(953035),
+                c = a(743080);
+            const l = (e) => {
+                    const t = (0, c.jh)();
+                    return r.createElement(o.Z, (0, n.Z)({}, e, { containerStyle: t.pivotTile, iconColor: "text", interactiveStyles: c.LR, isCompact: !0, textStyle: c.ZP.actionText, withInteractiveStyling: !0 }));
+                },
+                s = r.memo(l);
         },
         634455: (e, t, a) => {
             a.d(t, { Z: () => u });
@@ -486,7 +498,7 @@
                 I = l.default.create((e) => ({ logo: { color: e.colors.text, flexShrink: 0 }, rounded: { borderRadius: e.borderRadii.infinite }, iconContainer: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, justifyContent: "center", alignItems: "center" } }));
         },
         819404: (e, t, a) => {
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => z });
             var n = a(415706),
                 r = a(991744),
                 o = a(202784),
@@ -558,7 +570,7 @@
                 I = o.memo(w),
                 _ = r.Z,
                 T = n.Z,
-                D = () => {
+                S = () => {
                     const [e, t] = o.useState(0),
                         a = (0, p.p)(_, {}).get_payments_customer_tasks.items,
                         [n, r] = o.useState(a),
@@ -578,19 +590,19 @@
                         ? null
                         : o.createElement(
                               c.Z,
-                              { style: z.carouselContainer },
+                              { style: D.carouselContainer },
                               o.createElement(i.ZP, null, "Things you should know"),
                               o.createElement(
                                   c.Z,
-                                  { style: z.carouselOuterWrapper },
+                                  { style: D.carouselOuterWrapper },
                                   o.createElement(
                                       c.Z,
-                                      { style: z.carouselInnerWrapper },
+                                      { style: D.carouselInnerWrapper },
                                       o.createElement(
                                           u.Z,
                                           {
                                               "aria-label": "Customer tasks carousel",
-                                              childrenStyle: z.carouselChildrenStyle,
+                                              childrenStyle: D.carouselChildrenStyle,
                                               onVisibleRangeChange: ({ index: e, intersectionRatio: a }) => {
                                                   return (n = e), void (1 === a && t(n));
                                                   var n;
@@ -604,9 +616,9 @@
                               ),
                           );
                 },
-                z = d.default.create((e) => ({ carouselChildrenStyle: { marginEnd: e.spaces.space8 }, carouselContainer: { marginBottom: e.spaces.space80, gap: e.spaces.space16 }, carouselOuterWrapper: { width: "100%" }, carouselInnerWrapper: { position: "relative", width: "100%" } })),
-                S = o.memo(D);
+                D = d.default.create((e) => ({ carouselChildrenStyle: { marginEnd: e.spaces.space8 }, carouselContainer: { marginBottom: e.spaces.space80, gap: e.spaces.space16 }, carouselOuterWrapper: { width: "100%" }, carouselInnerWrapper: { position: "relative", width: "100%" } })),
+                z = o.memo(S);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.87b34f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.b889fc8a.js.map

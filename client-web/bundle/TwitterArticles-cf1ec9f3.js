@@ -383,12 +383,11 @@
                 v = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.23"),
-                            r.e("icons.0"),
-                            r.e("icons.2"),
-                            r.e("icons.16"),
-                            r.e("icons.19"),
-                            r.e("icons.10"),
+                            r.e("icons.8"),
+                            r.e("icons.15"),
+                            r.e("icons.7"),
+                            r.e("icons.3"),
+                            r.e("icons.24"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -434,12 +433,11 @@
                 Z = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.23"),
-                            r.e("icons.0"),
-                            r.e("icons.2"),
-                            r.e("icons.16"),
-                            r.e("icons.19"),
-                            r.e("icons.10"),
+                            r.e("icons.8"),
+                            r.e("icons.15"),
+                            r.e("icons.7"),
+                            r.e("icons.3"),
+                            r.e("icons.24"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -827,4 +825,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.af44e70a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.af5f7f9a.js.map

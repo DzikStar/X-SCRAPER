@@ -1316,6 +1316,7 @@
                 }),
                 s("d4d35bea", "Fordítás..."),
                 s("he9c9634", "A fordítás nem olvasható be"),
+                s("deaf5b16", "Újrapróbálkozás"),
                 s("j2198c98", "Lefordított bejegyzés elrejtése"),
                 s("i73a7d48", "A Google fordítása"),
                 s("eeadb767", function (e) {
@@ -1915,9 +1916,9 @@
                 s("da8ac57c", "Felirat szerkesztése"),
                 s("a8fdd09c", "Cikk közzététele"),
                 s("d8047cc8", "Közzététel"),
-                s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
-                s("ef34d7be", "A célközönség és a válaszok beállításai a cikk közzététele után már nem módosíthatók.");
-            s("e52d4998", "Célközönség kiválasztása"),
+                s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod.");
+            s("ef34d7be", "A célközönség és a válaszok beállításai a cikk közzététele után már nem módosíthatók."),
+                s("e52d4998", "Célközönség kiválasztása"),
                 s("d7985b24", "Válaszd ki, hogy ki válaszolhat erre a Cikkre"),
                 s("b5660338", "Idővonal előnézete"),
                 s("hff1b97a", "Csak az előfizetők válaszolhatnak."),
@@ -2646,7 +2647,6 @@
                 s("c776f523", "Részesedés a hirdetési bevételekből"),
                 s("ab9f38f8", "Alkotói előfizetések"),
                 s("d5cab8b0", "Részesedés az Alkotói bevételekből"),
-                s("deaf5b16", "Újrapróbálkozás"),
                 s("g1a4a1b6", "Ellenőrzés azonosító okmánnyal – hiba"),
                 s("e24305e4", "A személyazonosságod ellenőrzéséhez használt munkamenet lejárt vagy érvénytelen volt. Kérünk, próbáld meg újra!"),
                 s("f7954a0c", "Biztonsági kulcsok adatainak betöltése"),
@@ -13297,4 +13297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.481a12aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.d7a06b6a.js.map

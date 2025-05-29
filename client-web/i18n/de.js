@@ -1317,6 +1317,7 @@
                 }),
                 t("d4d35bea", "Übersetzung läuft..."),
                 t("he9c9634", "Übersetzung konnte nicht abgerufen werden"),
+                t("deaf5b16", "Erneut versuchen"),
                 t("j2198c98", "Übersetzten Post ausblenden"),
                 t("i73a7d48", "Übersetzt von Google"),
                 t("eeadb767", function (e) {
@@ -1916,9 +1917,9 @@
                 t("da8ac57c", "Beschriftung bearbeiten"),
                 t("a8fdd09c", "Artikel veröffentlichen"),
                 t("d8047cc8", "Veröffentlichen"),
-                t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
-                t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde.");
-            t("e52d4998", "Deine Zielgruppe wählen"),
+                t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil.");
+            t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde."),
+                t("e52d4998", "Deine Zielgruppe wählen"),
                 t("d7985b24", "Wählen, wer auf diesen Artikel antworten kann"),
                 t("b5660338", "Timeline-Vorschau"),
                 t("hff1b97a", "Nur Abonnent*innen können antworten."),
@@ -2647,7 +2648,6 @@
                 t("c776f523", "Anteil an Werbeeinnahmen"),
                 t("ab9f38f8", "Gestalterabonnements"),
                 t("d5cab8b0", "Anteil an Einnahmen für Gestalter*innen"),
-                t("deaf5b16", "Erneut versuchen"),
                 t("g1a4a1b6", "Fehler bei der ID-Verifizierung"),
                 t("e24305e4", "Deine ID-Verifizierungssitzung war zu alt oder ungültig. Bitte versuche es erneut."),
                 t("f7954a0c", "Sicherheitsschlüsseldaten werden geladen"),
@@ -13302,4 +13302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.e80fc4ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.f8156a5a.js.map

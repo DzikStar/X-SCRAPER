@@ -361,8 +361,8 @@
                     return { estimatedViewCount: t.viewer_v2?.ads_stats_for_viewer?.estimated_view_counts ?? null, estimatedViewTimeSeconds: t.viewer_v2?.ads_stats_for_viewer?.estimated_view_time_in_seconds ?? null, lookbackDays: e };
                 },
                 W = f().fe946974,
-                A = f().f6c50ec0,
-                z = f().b1319404,
+                z = f().f6c50ec0,
+                A = f().b1319404,
                 Q = f().baa4acae,
                 q = f().c00e8600,
                 O = f().ic073e4e,
@@ -382,10 +382,10 @@
                             n.scribe({ action: "impression" });
                         });
                     const o = "Ended" === t,
-                        s = r.useMemo(() => r.createElement(y.ZP, { size: "title2", style: [X.title, Z(0)], weight: "bold" }, o ? A : W), [o]),
+                        s = r.useMemo(() => r.createElement(y.ZP, { size: "title2", style: [X.title, Z(0)], weight: "bold" }, o ? z : W), [o]),
                         c = r.useMemo(() => {
                             const { timeSpent: t, timeSpentAnnualized: a, viewCount: n } = v(e);
-                            return r.createElement(i.Z, { style: X.metricCards }, r.createElement(i.Z, { style: [X.metricCard, Z(1)], testID: "ads_not_seen_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, z), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, Q), r.createElement("div", { style: X.metricTextBlue }, n)), r.createElement(i.Z, { style: [X.metricCard, Z(2)], testID: "time_saved_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, q), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, O), r.createElement("div", { style: X.metricTextYellow }, t)), r.createElement(i.Z, { style: [X.metricCard, Z(3)], testID: "time_saved_annualized_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, V), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, R), r.createElement("div", { style: X.metricTextGreen }, a)));
+                            return r.createElement(i.Z, { style: X.metricCards }, r.createElement(i.Z, { style: [X.metricCard, Z(1)], testID: "ads_not_seen_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, A), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, Q), r.createElement("div", { style: X.metricTextBlue }, n)), r.createElement(i.Z, { style: [X.metricCard, Z(2)], testID: "time_saved_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, q), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, O), r.createElement("div", { style: X.metricTextYellow }, t)), r.createElement(i.Z, { style: [X.metricCard, Z(3)], testID: "time_saved_annualized_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, V), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, R), r.createElement("div", { style: X.metricTextGreen }, a)));
                         }, [e]),
                         u = r.useMemo(() => r.createElement(i.Z, { style: X.footer }, r.createElement(i.Z, { style: X.gradient }), r.createElement(w.Z, { variant: "AdFreeTrial", wrapperStyles: [X.button, X.buttonAnimation] })), []);
                     return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: a ? X.containerSmall : X.containerLarge }, s, c), u);
@@ -652,25 +652,26 @@
                         k = !!y;
                     return (
                         r.useEffect(() => {
-                            !g &&
-                                k &&
-                                i({ productId: Me.NoAds })
+                            g ||
+                                !k ||
+                                s ||
+                                i({ productId: Me[e] })
                                     .then(() => {
                                         c(!0), t(!0), a.scribe({ component: "activation", action: "success" });
                                     })
                                     .catch(() => {
                                         a.scribe({ component: "activation", action: "failure" }), u(!0);
                                     });
-                        }, [k, g, i, a, t]),
+                        }, [k, g, i, a, t, s, e]),
                         d ? r.createElement(ke, null) : s && y?.duration_in_minutes ? r.createElement(ue, { durationInMinutes: y.duration_in_minutes }) : g && p?.status && p.duration?.start_at ? r.createElement(J, { trialStartDate: new Date(p.duration.start_at), trialStatus: p.status }) : g || k ? r.createElement(l.Z, null) : r.createElement(we, null)
                     );
                 },
                 We = (e) => {
                     (0, d.ZP)();
                     const [t, a] = r.useState(!1);
-                    return r.createElement(c.H, { errorConfig: { context: "quick-free-trial" } }, r.createElement(u.nO, { namespace: { page: "quick-free-trial", section: e.quickFreeTrialProductType } }, r.createElement(s.Z, { appBarStyle: Ae.appBar, hideBackButton: t, history: e.history, withoutBottomBarMobile: !0 }, r.createElement(i.Z, { style: Ae.backgroundShadow }), r.createElement(Ke, (0, n.Z)({ setHideBackButton: a }, e)))));
+                    return r.createElement(c.H, { errorConfig: { context: "quick-free-trial" } }, r.createElement(u.nO, { namespace: { page: "quick-free-trial", section: e.quickFreeTrialProductType } }, r.createElement(s.Z, { appBarStyle: ze.appBar, hideBackButton: t, history: e.history, withoutBottomBarMobile: !0 }, r.createElement(i.Z, { style: ze.backgroundShadow }), r.createElement(Ke, (0, n.Z)({ setHideBackButton: a }, e)))));
                 },
-                Ae = o.default.create((e) => {
+                ze = o.default.create((e) => {
                     const t = "light" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgb(52 147 239 / 30%) 0%, rgb(255, 255, 255) 100%)" : "dark" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgba(52, 147, 239, 0.3) 0%, rgb(21 32 44) 100%)" : "radial-gradient(56.15141888052253% 56.15141888052254% at 49.97201160183933% 38.95898881943194%,#273649 0%,rgba(0,0,0,1) 100%)";
                     return { appBar: { backgroundColor: e.colors.transparent }, backgroundShadow: { position: "absolute", top: -300 * e.scaleMultiplier, left: -100 * e.scaleMultiplier, start: -150, minHeight: 650 * e.scaleMultiplier, width: "100%", backgroundImage: t } };
                 });
@@ -724,4 +725,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.6add1bda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.f2b23fba.js.map

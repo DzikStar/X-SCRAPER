@@ -1321,6 +1321,7 @@
                 }),
                 o("d4d35bea", "Traduzione in corso..."),
                 o("he9c9634", "Impossibile recuperare la traduzione"),
+                o("deaf5b16", "Riprova"),
                 o("j2198c98", "Nascondi post tradotto"),
                 o("i73a7d48", "Traduzione di Google"),
                 o("eeadb767", function (e) {
@@ -1920,9 +1921,9 @@
                 o("da8ac57c", "Modifica didascalia"),
                 o("a8fdd09c", "Pubblica articolo"),
                 o("d8047cc8", "Pubblica"),
-                o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo."),
-                o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo.");
-            o("e52d4998", "Scegli il pubblico"),
+                o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo.");
+            o("ef34d7be", "I controlli su pubblico e risposte non possono essere modificati in seguito alla pubblicazione dell'articolo."),
+                o("e52d4998", "Scegli il pubblico"),
                 o("d7985b24", "Scegli chi può rispondere a questo articolo"),
                 o("b5660338", "Anteprima cronologia"),
                 o("hff1b97a", "Solo gli abbonati possono rispondere."),
@@ -2651,7 +2652,6 @@
                 o("c776f523", "ripartizione del ricavato pubblicitario"),
                 o("ab9f38f8", "abbonamenti per creator"),
                 o("d5cab8b0", "ripartizione del ricavato per creator"),
-                o("deaf5b16", "Riprova"),
                 o("g1a4a1b6", "Errore di verifica dell'identità"),
                 o("e24305e4", "La sessione di verifica dell'identità è scaduta o invalida. Riprova."),
                 o("f7954a0c", "Caricamento dei dati per i token di sicurezza"),
@@ -13293,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.bc47228a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.36cda5ba.js.map

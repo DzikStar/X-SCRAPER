@@ -80,13 +80,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: n, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: f, secondaryBar: g, style: m, subtitle: b, title: y, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: E, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: n, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: f, secondaryBar: g, style: m, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: E, withWideContainer: w } = this.props,
                         { isModal: x } = this.context,
                         S = s ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        _ = (function (e, t, r) {
+                        Z = (function (e, t, r) {
                             return e && !(t && r);
                         })(!!E, x, !!g);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: i, isLarge: c, leftControl: S, middleControl: p, position: u(h, x, n), rightControl: f, style: m, subtitle: b, title: y, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: _, withWideContainer: w }), g || null);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: i, isLarge: c, leftControl: S, middleControl: p, position: u(h, x, n), rightControl: f, style: m, subtitle: y, title: b, titleDomId: v, titleIconCell: k, titleIconCellSize: C, withBackground: Z, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -114,6 +114,25 @@
             const a = s.default.create((e) => ({ root: { height: 10 * e.lineHeightsPx.body } })),
                 l = i;
         },
+        290402: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => f });
+            var o = r(807896),
+                n = r(202784),
+                s = r(182056),
+                i = r(879113),
+                a = r(392237),
+                l = r(111677),
+                c = r.n(l),
+                d = r(968478);
+            const u = c().aa6e3300,
+                p = ({ retryMessage: e, ...t }, r) => {
+                    const a = s.Z.isOnline();
+                    return n.createElement(i.Z, (0, o.Z)({}, t, { icon: a ? void 0 : n.createElement(d.default, { style: h.icon }), retryMessage: a ? e : u }));
+                },
+                h = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                f = n.forwardRef(p);
+        },
         980407: (e, t, r) => {
             "use strict";
             r.d(t, { Z: () => g, w: () => h });
@@ -131,9 +150,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: i, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, rightControl: m, secondaryBar: b, subtitle: y, title: v } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: i, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, rightControl: m, secondaryBar: y, subtitle: b, title: v } = this.props,
                                 { isModal: k } = this.context;
-                            return o.createElement(n.Z, { style: k ? [f.childViewAppBarRoot, f.appBarZindex] : f.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (k ? "close" : "back"), backLocation: s, centerTitle: i, fixed: !k, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, ref: e, rightControl: m, secondaryBar: b, style: [k && f.appBarModal, t], subtitle: y, title: v, titleDomId: c.Q_ }));
+                            return o.createElement(n.Z, { style: k ? [f.childViewAppBarRoot, f.appBarZindex] : f.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (k ? "close" : "back"), backLocation: s, centerTitle: i, fixed: !k, hideBackButton: a, history: l, isFullWidth: u, isLarge: p, middleControl: h, onBackClick: g, ref: e, rightControl: m, secondaryBar: y, style: [k && f.appBarModal, t], subtitle: b, title: v, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -143,9 +162,9 @@
                 }
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: i, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: h, title: g, withoutBottomBarMobile: m } = this.props,
-                        { isModal: b } = this.context,
-                        y = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return o.createElement(l.Z, null, o.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: g }), o.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [f.root, b && f.rootModal] }, !b && y, o.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [f.container, b && f.containerModal, i] }, b ? o.createElement(p.Z, { style: f.viewport }, y, r) : r), t ? o.createElement(n.Z, { style: [f.bottomBarModal, !b && !m && f.bottomBarMobile] }, o.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                        { isModal: y } = this.context,
+                        b = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return o.createElement(l.Z, null, o.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: g }), o.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [f.root, y && f.rootModal] }, !y && b, o.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [f.container, y && f.containerModal, i] }, y ? o.createElement(p.Z, { style: f.viewport }, b, r) : r), t ? o.createElement(n.Z, { style: [f.bottomBarModal, !y && !m && f.bottomBarMobile] }, o.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = i.Z);
@@ -237,7 +256,7 @@
         },
         376293: (e, t, r) => {
             "use strict";
-            r.d(t, { $f: () => x, KV: () => b, LI: () => I, SC: () => w, Vt: () => k, ed: () => B, op: () => S });
+            r.d(t, { $f: () => x, KV: () => y, LI: () => I, SC: () => w, Vt: () => k, ed: () => B, op: () => S });
             var o = r(202784),
                 n = r(190286),
                 s = r(111677),
@@ -252,8 +271,8 @@
                 f = i().a6450e84,
                 g = i().g353ad73,
                 m = i().ad00a739,
-                b = i().a9fd20be,
-                y = i().j546fb79,
+                y = i().a9fd20be,
+                b = i().j546fb79,
                 v = i().c9623eeb,
                 k = i().e133be4e,
                 C = i().he43bca4,
@@ -280,12 +299,12 @@
                                     a.blocking ? s(p) : e(p);
                                 });
                     }
-                    return { confirmation: p, onClick: u, testID: n, shortcutKey: l, Icon: _(a.blocking), text: T(a), subText: Z({ user: a, blockSubtext: t, unblockSubtext: i }) };
+                    return { confirmation: p, onClick: u, testID: n, shortcutKey: l, Icon: Z(a.blocking), text: T(a), subText: _({ user: a, blockSubtext: t, unblockSubtext: i }) };
                 },
-                _ = (e) => (e ? l.default : a.default),
-                Z = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
+                Z = (e) => (e ? l.default : a.default),
+                _ = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
                 T = (e) => (e.blocking ? v({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: k, text: t ? E : C }))(e.screen_name, t) : x(e.screen_name, t)),
+                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: k, text: t ? E : C }))(e.screen_name, t) : x(e.screen_name, t)),
                 B = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: s, headline: i, label: a, text: l } = e;
                     return o.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: s, headline: i, onCancel: r, onConfirm: t, text: l });
@@ -442,8 +461,8 @@
                 f = r(952793),
                 g = r(163889),
                 m = r(725516);
-            const b = l().ba929da8,
-                y = l().d203e242;
+            const y = l().ba929da8,
+                b = l().d203e242;
             function v(e) {
                 const { splat: t } = e.match.params,
                     { isModal: r } = o.useContext(n.Z),
@@ -452,7 +471,7 @@
                     (0, c.q)(() => {
                         i && t && (0, g.ZP)(new Error(`Page not found: ${t}`));
                     }),
-                    o.createElement(h.Z, null, o.createElement(d.Z.Configure, { backLocation: "/", documentTitle: b, title: y }), o.createElement(s.Z, { style: r && k.modal }, o.createElement(p.Z, null)), o.createElement(u.Z, { title: b, withMeta: !1 }))
+                    o.createElement(h.Z, null, o.createElement(d.Z.Configure, { backLocation: "/", documentTitle: y, title: b }), o.createElement(s.Z, { style: r && k.modal }, o.createElement(p.Z, null)), o.createElement(u.Z, { title: y, withMeta: !1 }))
                 );
             }
             const k = i.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
@@ -474,6 +493,41 @@
                     return n.createElement(s.Z, { style: d.container }, n.createElement(l.Z, (0, o.Z)({}, u, { interactiveStyles: p, style: d.root }), n.createElement(i.ZP, { align: e, color: t }, r)));
                 };
         },
+        879113: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => h });
+            var o = r(202784),
+                n = r(476984),
+                s = r.n(n),
+                i = r(143778),
+                a = r(750410),
+                l = r(682830);
+            const c = "failed",
+                d = "loaded",
+                u = "loading",
+                p = "none";
+            class h extends o.Component {
+                shouldComponentUpdate(e) {
+                    const t = e.fetchStatus === d,
+                        r = this.props.fetchStatus !== e.fetchStatus;
+                    return !(!t && !r) || !s()(e, this.props);
+                }
+                render() {
+                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: n, icon: s, loadingMessage: i, onRequestRetry: d, render: h, renderFailure: f, retryMessage: g, retryable: m } = this.props;
+                    switch (n) {
+                        case c:
+                            return m ? o.createElement(a.Z, { icon: s, onRequestRetry: d, retryMessage: g }) : r ? o.createElement(l.m, { failureMessage: r }) : f();
+                        case u:
+                            return o.createElement(l.J, { "aria-label": e, color: t, loadingMessage: i });
+                        case p:
+                            return null;
+                        default:
+                            return h();
+                    }
+                }
+            }
+            h.defaultProps = { renderFailure: i.Z, retryable: !0 };
+        },
         779610: (e, t, r) => {
             "use strict";
             r.d(t, { Z: () => d });
@@ -485,13 +539,13 @@
                 l = r(952428),
                 c = r(392237);
             const d = (e) => {
-                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: f, onPress: g, paddingHorizontal: m, renderRightContent: b, role: y = "tab", styleOverride: v, testID: k = "pivot", thumbnail: C, thumbnailSize: E, withoutArrow: w = !1 } = e,
+                    const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: f, onPress: g, paddingHorizontal: m, renderRightContent: y, role: b = "tab", styleOverride: v, testID: k = "pivot", thumbnail: C, thumbnailSize: E, withoutArrow: w = !1 } = e,
                         x = [u.thumbnailContainer, "medium" === E && u.thumbnailContainerMedium],
                         S = "string" == typeof h ? o.createElement(a.ZP, null, h) : h,
-                        _ = "object" == typeof f && f.external && !f.openInSameFrame,
-                        Z = r ? ("string" == typeof r ? o.createElement(a.ZP, { color: "gray700", size: "subtext2", testID: `${k}-description` }, r) : r) : null,
+                        Z = "object" == typeof f && f.external && !f.openInSameFrame,
+                        _ = r ? ("string" == typeof r ? o.createElement(a.ZP, { color: "gray700", size: "subtext2", testID: `${k}-description` }, r) : r) : null,
                         T = o.useMemo(() => ("space0" === m ? { paddingHorizontal: 0 } : { paddingHorizontal: m ? c.default.theme.spaces[m] : c.default.theme.componentDimensions.gutterHorizontal }), [m]);
-                    return o.createElement(l.Z, { "aria-selected": "tab" === y ? p : null, disabled: d, link: d ? void 0 : f, onPress: g, role: y, style: [u.root, T, d && u.disabled, v], testID: k, withInteractiveStyling: !!f || !!g }, o.createElement(n.Z, { style: u.contentContainer }, C ? o.createElement(n.Z, { style: x }, C) : null, o.createElement(n.Z, { style: u.content }, S, Z), b ? b() : null, (!f && !g) || d || w ? null : _ ? o.createElement(s.default, { style: u.icon }) : o.createElement(i.default, { style: u.icon })), t);
+                    return o.createElement(l.Z, { "aria-selected": "tab" === b ? p : null, disabled: d, link: d ? void 0 : f, onPress: g, role: b, style: [u.root, T, d && u.disabled, v], testID: k, withInteractiveStyling: !!f || !!g }, o.createElement(n.Z, { style: u.contentContainer }, C ? o.createElement(n.Z, { style: x }, C) : null, o.createElement(n.Z, { style: u.content }, S, _), y ? y() : null, (!f && !g) || d || w ? null : Z ? o.createElement(s.default, { style: u.icon }) : o.createElement(i.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -754,4 +808,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.Ocf.8e45689a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsInternals~bundle.Ocf.ae8e0bba.js.map

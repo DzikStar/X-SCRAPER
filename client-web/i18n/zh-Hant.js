@@ -1316,6 +1316,7 @@
                 }),
                 n("d4d35bea", "翻譯中…"),
                 n("he9c9634", "無法取得翻譯"),
+                n("deaf5b16", "重試"),
                 n("j2198c98", "隱藏翻譯的貼文"),
                 n("i73a7d48", "由 Google 翻譯"),
                 n("eeadb767", function (e) {
@@ -1915,9 +1916,9 @@
                 n("da8ac57c", "編輯說明文字"),
                 n("a8fdd09c", "發佈文章"),
                 n("d8047cc8", "發佈"),
-                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。"),
-                n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。");
-            n("e52d4998", "選擇你的受眾"),
+                n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。");
+            n("ef34d7be", "文章發佈後，就無法編輯受眾和回覆控制項。"),
+                n("e52d4998", "選擇你的受眾"),
                 n("d7985b24", "選擇誰可以回覆此文章"),
                 n("b5660338", "時間軸預覽"),
                 n("hff1b97a", "只有訂閱者可以回覆。"),
@@ -2646,7 +2647,6 @@
                 n("c776f523", "廣告收益分成"),
                 n("ab9f38f8", "創作者訂閱"),
                 n("d5cab8b0", "創作者收益分成"),
-                n("deaf5b16", "重試"),
                 n("g1a4a1b6", "身分認證錯誤"),
                 n("e24305e4", "你的身分認證工作階段已過期或無效，請再試一次。"),
                 n("f7954a0c", "正在載入安全金鑰資料"),
@@ -13297,4 +13297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.4744264a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.dadb1eba.js.map

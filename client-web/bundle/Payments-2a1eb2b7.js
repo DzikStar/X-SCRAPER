@@ -3,11 +3,12 @@
     ["bundle.Payments-2a1eb2b7"],
     {
         743080: (e, t, n) => {
-            n.d(t, { JU: () => c, YP: () => p, ZP: () => u, dE: () => d, jh: () => o });
+            n.d(t, { JU: () => c, LR: () => l, YP: () => u, ZP: () => g, dE: () => p, jh: () => d });
             var a = n(392237),
-                s = n(708852),
+                r = n(708852),
+                s = n(58881),
                 i = n(655352);
-            const r = a.default.create((e) => ({
+            const o = a.default.create((e) => ({
                     container: { display: "flex", flexDirection: "column", flexGrow: 1, paddingBottom: e.spaces.space24, paddingTop: e.spaces.space16, gap: e.spaces.space16 },
                     paddingWide: { paddingHorizontal: e.spaces.space72 },
                     modalPaddingWide: { paddingHorizontal: e.spaces.space32 },
@@ -41,33 +42,35 @@
                     row: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" },
                     actionsContainer: { flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-evenly" },
                     actionsContainerNarrow: { flexWrap: "wrap" },
-                    action: { backgroundColor: e.colors.gray0, padding: e.spaces.space16, borderRadius: e.spaces.space16, textAlign: "center", fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium },
-                    actionNarrow: { flex: "40%", borderRadius: e.spaces.space16, fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium },
-                    actionWide: { flex: 1, borderRadius: e.spaces.space16, fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium },
+                    actionText: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium },
+                    action: { backgroundColor: e.colors.gray0, padding: e.spaces.space16, borderRadius: e.spaces.space16, textAlign: "center" },
+                    actionNarrow: { flex: "40%" },
+                    actionWide: { flex: 1 },
                     column: { flexDirection: "column", gap: e.spaces.space12 },
                     rowSpaceBetween: { flexDirection: "row", gap: e.spaces.space16, justifyContent: "space-between", alignItems: "center" },
                     icon: { height: e.spaces.space32, width: e.spaces.space32, alignSelf: "center", color: e.colors.text },
                 })),
                 c = () => ((0, i.ZP)() ? "medium" : "small"),
-                o = () => {
-                    const e = (0, s.D2)(),
-                        t = e ? r.modalPaddingWide : r.paddingSmall,
-                        n = e ? r.paddingWide : r.paddingSmall;
-                    return { container: [r.container, t], footer: [r.footer, t], root: [r.root, n], tile: [e ? r.tile : r.tileNarrow], tileList: [e ? r.tileList : r.tileListNarrow], pivotTileContainer: [r.actionsContainer, e ? null : r.actionsContainerNarrow], pivotTile: [r.action, e ? r.actionWide : r.actionNarrow] };
+                d = () => {
+                    const e = (0, r.D2)(),
+                        t = e ? o.modalPaddingWide : o.paddingSmall,
+                        n = e ? o.paddingWide : o.paddingSmall;
+                    return { container: [o.container, t], footer: [o.footer, t], root: [o.root, n], tile: [e ? o.tile : o.tileNarrow], tileList: [e ? o.tileList : o.tileListNarrow], pivotTileContainer: [o.actionsContainer, e ? null : o.actionsContainerNarrow], pivotTile: [o.action, e ? o.actionWide : o.actionNarrow] };
                 },
-                d = a.default.create((e) => ({ listItem: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space12, flexDirection: "row", alignItems: "center", borderRadius: e.borderRadii.large }, listItemContent: { alignItems: "flex-start", justifyContent: "space-between", flexDirection: "row", display: "flex", flex: 1 }, listItemFlex: { flex: 1 }, alignEnd: { textAlign: "end", alignSelf: "end" } })),
-                p = a.default.create((e) => ({ content: { flexDirection: "column", justifyContent: "space-between", gap: e.spaces.space8 }, description: { flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, actions: { flexDirection: "column", gap: e.spaces.space12 }, gap: { gap: e.spaces.space8 }, marginTop: { marginTop: e.spaces.space16 }, arrow: { alignSelf: "center", color: e.colors.gray400, height: e.spaces.space28 } })),
-                u = r;
+                p = a.default.create((e) => ({ listItem: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space12, flexDirection: "row", alignItems: "center", borderRadius: e.borderRadii.large }, listItemContent: { alignItems: "flex-start", justifyContent: "space-between", flexDirection: "row", display: "flex", flex: 1 }, listItemFlex: { flex: 1 }, alignEnd: { textAlign: "end", alignSelf: "end" } })),
+                u = a.default.create((e) => ({ content: { flexDirection: "column", justifyContent: "space-between", gap: e.spaces.space8 }, description: { flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, actions: { flexDirection: "column", gap: e.spaces.space12 }, gap: { gap: e.spaces.space8 }, marginTop: { marginTop: e.spaces.space16 }, arrow: { alignSelf: "center", color: e.colors.gray400, height: e.spaces.space28 } })),
+                l = s.Z.generate({ backgroundColor: a.default.theme.colors.transparent, color: a.default.theme.colors.primary, customFocusBackgroundColor: a.default.theme.colors.gray100, customHoverBackgroundColor: a.default.theme.colors.gray100, customPressedBackgroundColor: a.default.theme.colors.gray50 }),
+                g = o;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Se, BR: () => Te, Bj: () => xt, Bl: () => Ne, DK: () => ke, DO: () => pt, Dc: () => H, EQ: () => $e, FW: () => ut, Fs: () => tt, GU: () => oe, Gl: () => Ve, Gs: () => nt, H_: () => Xe, Ix: () => bt, J$: () => Ye, M9: () => Pe, MO: () => dt, Oc: () => Je, Ou: () => Oe, Q1: () => he, QE: () => Ke, Qu: () => mt, Se: () => Qe, So: () => st, T3: () => Ae, T7: () => Pt, Tp: () => ve, Ts: () => Ee, UM: () => De, UV: () => ft, V9: () => je, XT: () => Ie, _T: () => Ue, aY: () => at, ab: () => ct, bI: () => et, cI: () => ye, dN: () => Q, fq: () => Ct, gh: () => lt, gx: () => G, i7: () => Re, iv: () => rt, jm: () => it, lD: () => ce, lw: () => ee, nV: () => X, p2: () => L, p6: () => we, pQ: () => Y, qK: () => J, qQ: () => He, qU: () => _e, qc: () => ht, uG: () => gt, uN: () => Le, ve: () => Ze, vw: () => Z, wu: () => yt, xe: () => qe, y4: () => Tt, yH: () => ot, zK: () => Me, zx: () => te });
+            n.d(t, { BC: () => Se, BR: () => Te, Bj: () => Rt, Bl: () => Ne, DK: () => Ae, DO: () => pt, Dc: () => H, EQ: () => $e, FW: () => ut, Fs: () => tt, GU: () => ce, Gl: () => Ve, Gs: () => nt, H_: () => Xe, Ix: () => Ct, J$: () => Ye, M9: () => Pe, MO: () => dt, Oc: () => Je, Ou: () => We, Q1: () => he, QE: () => Ke, Qu: () => mt, Se: () => Qe, So: () => rt, T3: () => ke, T7: () => Pt, Tp: () => ve, Ts: () => Le, UM: () => De, UV: () => ft, V9: () => je, XT: () => Ie, _T: () => Ue, aY: () => at, ab: () => ot, bI: () => et, cI: () => ye, dN: () => Q, fq: () => xt, gh: () => lt, gx: () => G, i7: () => be, iv: () => it, jm: () => st, lD: () => oe, lw: () => ee, nV: () => X, p2: () => E, p6: () => we, pQ: () => Y, qK: () => J, qQ: () => He, qU: () => _e, qc: () => ht, uG: () => gt, uN: () => Ee, ve: () => Ze, vw: () => Z, wu: () => yt, xe: () => qe, y4: () => Tt, yH: () => ct, zK: () => Me, zx: () => te });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
-                s = n.n(a),
-                i = n(53647),
-                r = n.n(i),
-                c = n(108475),
-                o = n(157396),
+                r = n.n(a),
+                s = n(53647),
+                i = n.n(s),
+                o = n(108475),
+                c = n(157396),
                 d = n(392237),
                 p = n(111677),
                 u = n.n(p),
@@ -78,24 +81,24 @@
                 y = n(436117),
                 h = n(515510),
                 w = n(642004),
-                b = n(87877),
-                R = n(922281),
-                x = n(880428),
-                C = n(582456),
+                C = n(87877),
+                b = n(922281),
+                R = n(880428),
+                x = n(582456),
                 P = n(810088),
                 T = n(357818),
                 v = n(539660),
                 S = n(724983),
                 D = n(297679),
-                A = n(217995),
-                k = n(183276),
+                k = n(217995),
+                A = n(183276),
                 I = n(703325),
                 N = n(215285),
                 U = n(258074),
                 V = n(97882),
-                z = n(514639),
-                W = n(441484),
-                O = n(43429);
+                O = n(514639),
+                z = n(441484),
+                W = n(43429);
             const j = "Interest Payout",
                 q = "Deposit",
                 _ = "Withdrawal",
@@ -104,18 +107,18 @@
                 B = "Redeemed Cash Back",
                 F = u().d0a77c9b,
                 K = u().g727ddcf,
-                E = u().da44942d,
-                L = ({ amount: e, currency: t }) => {
+                L = u().da44942d,
+                E = ({ amount: e, currency: t }) => {
                     const n = Q({ amount: e, formatter: 1e6 });
                     return (0, V.x)({ currencyCode: t?.toUpperCase(), amount: n, formatter: 1, strictAmount: !0, removeTrailingZeros: !0 });
                 },
                 Z = ({ amount: e, currency: t }) => {
                     const n = parseFloat(e);
-                    return L({ amount: n, currency: t });
+                    return E({ amount: n, currency: t });
                 },
                 H = (e) => {
-                    const t = new (s())(e);
-                    return new (s())(t.toFixed(2, s().ROUND_DOWN)).times(1e6).toDecimalPlaces(0).toNumber();
+                    const t = new (r())(e);
+                    return new (r())(t.toFixed(2, r().ROUND_DOWN)).times(1e6).toDecimalPlaces(0).toNumber();
                 },
                 G = (e) => {
                     const t = parseFloat(e);
@@ -127,31 +130,31 @@
                 return t.setDate(0), K(t);
             }
             function Y({ account: e, productCode: t, transactionType: n }) {
-                if (t === x.O.Interest) return { title: j, iconType: O.Ms.interest };
-                if (t === x.O.Cashback) return { title: B, iconType: O.Ms.cashback };
-                const a = t === x.O.Banking;
+                if (t === R.O.Interest) return { title: j, iconType: W.Ms.interest };
+                if (t === R.O.Cashback) return { title: B, iconType: W.Ms.cashback };
+                const a = t === R.O.Banking;
                 switch (n) {
                     case T.x.AtmWithdrawal:
-                        return { title: $, iconType: O.Ms.atm };
+                        return { title: $, iconType: W.Ms.atm };
                     case T.x.Deposit:
-                        return a ? void 0 : { title: q, iconType: O.Ms.deposit, uri: e?.avatar?.uri };
+                        return a ? void 0 : { title: q, iconType: W.Ms.deposit, uri: e?.avatar?.uri };
                     case T.x.Withdraw:
-                        return a ? void 0 : { title: _, iconType: O.Ms.withdraw, uri: e?.avatar?.uri };
+                        return a ? void 0 : { title: _, iconType: W.Ms.withdraw, uri: e?.avatar?.uri };
                     default:
                         return;
                 }
             }
-            function J({ accountName: e, createdAt: t, description: n, productCode: a, statusLabel: s, transactionType: i }) {
-                const r = a === x.O.Banking;
-                if (a === x.O.Interest) return X(t);
-                if (a === x.O.Cashback) return s;
-                switch (i) {
+            function J({ accountName: e, createdAt: t, description: n, productCode: a, statusLabel: r, transactionType: s }) {
+                const i = a === R.O.Banking;
+                if (a === R.O.Interest) return X(t);
+                if (a === R.O.Cashback) return r;
+                switch (s) {
                     case T.x.Transfer:
-                        return n ? `For "${n}"` : s;
+                        return n ? `For "${n}"` : r;
                     case T.x.Deposit:
-                        return r ? "Direct Deposit" : e ? `From ${e}` : "";
+                        return i ? "Direct Deposit" : e ? `From ${e}` : "";
                     case T.x.Withdraw:
-                        return r ? "Payment" : e ? `To ${e}` : "";
+                        return i ? "Payment" : e ? `To ${e}` : "";
                     case T.x.Refund:
                         return "Refund";
                     case T.x.Reverse:
@@ -159,29 +162,29 @@
                     case T.x.Payment:
                         return "Card purchase";
                     case T.x.AtmWithdrawal:
-                        return s;
+                        return r;
                     default:
                         return "";
                 }
             }
             function ee({ amount: e, currency: t, description: n, status: a }) {
-                const s = Z({ amount: e, currency: t });
+                const r = Z({ amount: e, currency: t });
                 switch (a) {
                     case P.g.AwaitingRequestAcceptance:
                     case P.g.RequestVerificationRequired:
-                        return n ? `Requested ${s} for "${n}"` : `Requested ${s}`;
+                        return n ? `Requested ${r} for "${n}"` : `Requested ${r}`;
                     case P.g.PendingRecipientAcceptance:
-                        return n ? `Sent ${s} for "${n}"` : `Sent ${s}`;
+                        return n ? `Sent ${r} for "${n}"` : `Sent ${r}`;
                     case P.g.AwaitingUnrecognizedConfirmation:
-                        return n ? `Card purchase of ${s} for "${n}"` : `Card purchase of ${s}`;
+                        return n ? `Card purchase of ${r} for "${n}"` : `Card purchase of ${r}`;
                     default:
                         return;
                 }
             }
-            const te = ({ referenceTransactionId: e, transactionType: t }) => ([T.x.Refund, T.x.Reverse].includes(t) && e ? `${z.bR}/${e}` : null);
+            const te = ({ referenceTransactionId: e, transactionType: t }) => ([T.x.Refund, T.x.Reverse].includes(t) && e ? `${O.bR}/${e}` : null);
             function ne({ productCode: e, transactionType: t }) {
-                if (e === x.O.Interest) return j;
-                const n = e === x.O.Banking;
+                if (e === R.O.Interest) return j;
+                const n = e === R.O.Banking;
                 switch (t) {
                     case T.x.Transfer:
                         return "Peer-to-peer transfer";
@@ -202,88 +205,88 @@
                 }
             }
             const ae = Object.freeze({ [P.g.Cancelled]: "Cancelled", [P.g.Failed]: "Failed", [P.g.Expired]: "Expired", [P.g.Pending]: "Pending", [P.g.Hold]: "Pending", [P.g.AuthorizationOpen]: "Pending", [P.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [P.g.PendingReview]: "Under review", [P.g.PendingRecipientAction]: "Pending", [P.g.PendingRecipientOnboarding]: "Pending", [P.g.AwaitingRequestAcceptance]: "Pending", [P.g.PendingRecipientAcceptance]: "Pending", [P.g.PinVerificationRequired]: "Pending", [P.g.RequestVerificationRequired]: "Pending", [P.g.VerificationRequired]: "Pending", [P.g.RejectedByRecipient]: "Rejected", [P.g.RequestRejected]: "Rejected", [P.g.Settled]: "Completed", [P.g.SoftSettled]: "Completed", [P.g.AuthorizationClosed]: "Completed" }),
-                se = Object.freeze({ [v.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [v.P.InReview]: "Under review", [v.P.RejectedByUnsupportedRegion]: "Unsupported region", [v.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [v.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [v.P.UnrecognizedActivityConfirmed]: "Declined", [v.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
-                ie = Object.freeze({ [P.g.PendingRecipientAcceptance]: M, [P.g.PendingRecipientOnboarding]: M, [P.g.PendingRecipientAction]: M }),
-                re = Object.freeze({ [P.g.AwaitingRequestAcceptance]: M, [P.g.PendingRequestAcceptance]: M, [P.g.RequestVerificationRequired]: M });
-            function ce({ isViewerSender: e, reasonCode: t, status: n }) {
-                const a = t ? se[t] : void 0,
-                    s = n ? (e ? re[n] : ie[n]) : void 0,
-                    i = n ? ae[n] : void 0;
-                return a ?? s ?? i ?? "";
+                re = Object.freeze({ [v.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [v.P.InReview]: "Under review", [v.P.RejectedByUnsupportedRegion]: "Unsupported region", [v.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [v.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [v.P.UnrecognizedActivityConfirmed]: "Declined", [v.P.UnrecognizedActivityRejected]: "Flagged as suspicious" }),
+                se = Object.freeze({ [P.g.PendingRecipientAcceptance]: M, [P.g.PendingRecipientOnboarding]: M, [P.g.PendingRecipientAction]: M }),
+                ie = Object.freeze({ [P.g.AwaitingRequestAcceptance]: M, [P.g.PendingRequestAcceptance]: M, [P.g.RequestVerificationRequired]: M });
+            function oe({ isViewerSender: e, reasonCode: t, status: n }) {
+                const a = t ? re[t] : void 0,
+                    r = n ? (e ? ie[n] : se[n]) : void 0,
+                    s = n ? ae[n] : void 0;
+                return a ?? r ?? s ?? "";
             }
-            function oe({ isViewerSender: e, productCode: t, transactionType: n }) {
-                if (t === x.O.Cashback) return O.NU.credit;
+            function ce({ isViewerSender: e, productCode: t, transactionType: n }) {
+                if (t === R.O.Cashback) return W.NU.credit;
                 switch (n) {
                     case T.x.Deposit:
-                        return O.NU.credit;
+                        return W.NU.credit;
                     case T.x.Withdraw:
                     case T.x.Payment:
                     case T.x.AtmWithdrawal:
-                        return O.NU.debit;
+                        return W.NU.debit;
                     case T.x.Refund:
-                        return O.NU.credit;
+                        return W.NU.credit;
                     default:
-                        return e ? O.NU.debit : O.NU.credit;
+                        return e ? W.NU.debit : W.NU.credit;
                 }
             }
             const de = Object.freeze({ [g.t.Checking]: "Checking", [g.t.Savings]: "Savings" }),
                 pe = Object.freeze({ [w.W.IssuedCardTypePhysical]: "Physical Card", [w.W.IssuedCardTypeVirtual]: "Virtual Card" }),
                 ue = Object.freeze({ [m.l.Charge]: "Charge", [m.l.Combo]: "Combo", [m.l.Debit]: "Debit", [m.l.Credit]: "Credit", [m.l.DeferredDebit]: "DeferredDebit", [m.l.Prepaid]: "Prepaid" }),
                 le = Object.freeze({ [f.U.AmericanExpress]: "American Express", [f.U.Mastercard]: "Mastercard", [f.U.Visa]: "Visa" }),
-                ge = Object.freeze({ [R.D.LoginRequired]: "Login required", [R.D.Invalid]: "Invalid", [R.D.Pending]: "Pending", [R.D.Revoked]: "Revoked", [R.D.Canceled]: "Canceled", [R.D.Inactive]: "Inactive" });
+                ge = Object.freeze({ [b.D.LoginRequired]: "Login required", [b.D.Invalid]: "Invalid", [b.D.Pending]: "Pending", [b.D.Revoked]: "Revoked", [b.D.Canceled]: "Canceled", [b.D.Inactive]: "Inactive" });
             function fe({ status: e }) {
                 return (e ? ge[e] : "") ?? "";
             }
-            const me = Object.freeze({ [C.y.Online]: "Online", [C.y.Chip]: "Chip", [C.y.Contactless]: "Contactless", [C.y.KeyedIn]: "Keyed In", [C.y.Swipe]: "Swipe" });
+            const me = Object.freeze({ [x.y.Online]: "Online", [x.y.Chip]: "Chip", [x.y.Contactless]: "Contactless", [x.y.KeyedIn]: "Keyed In", [x.y.Swipe]: "Swipe" });
             function ye({ method: e }) {
                 return (e ? me[e] : "") ?? "";
             }
-            const he = ({ createdAt: e, description: t, isViewerSender: n, productCode: a, reasonCode: s, status: i, transactionType: r }) => {
-                return { amountType: r ? oe({ transactionType: r, isViewerSender: n, productCode: a }) : void 0, type: r ? ne({ transactionType: r, productCode: a }) : void 0, status: i ? ce({ status: i, reasonCode: s, isViewerSender: n }) : void 0, createdAt: ((c = e), c ? F(new Date(parseInt(c, 10))) : ""), description: t };
-                var c;
+            const he = ({ createdAt: e, description: t, isViewerSender: n, productCode: a, reasonCode: r, status: s, transactionType: i }) => {
+                return { amountType: i ? ce({ transactionType: i, isViewerSender: n, productCode: a }) : void 0, type: i ? ne({ transactionType: i, productCode: a }) : void 0, status: s ? oe({ status: s, reasonCode: r, isViewerSender: n }) : void 0, createdAt: ((o = e), o ? F(new Date(parseInt(o, 10))) : ""), description: t };
+                var o;
             };
             function we(e) {
                 const t = e ? parseInt(e, 10) : null;
-                return t ? E(new Date(t)) : "";
-            }
-            function be({ status: e, transactionType: t }) {
-                return t === T.x.Transfer && e === P.g.PendingRecipientAcceptance;
-            }
-            function Re({ status: e }) {
-                return e === P.g.VerificationRequired || e === P.g.RequestVerificationRequired || e === P.g.AwaitingUnrecognizedConfirmation;
-            }
-            function xe({ status: e, transactionType: t }) {
-                return t === T.x.Transfer && e === P.g.AwaitingRequestAcceptance;
+                return t ? L(new Date(t)) : "";
             }
             function Ce({ status: e, transactionType: t }) {
+                return t === T.x.Transfer && e === P.g.PendingRecipientAcceptance;
+            }
+            function be({ status: e }) {
+                return e === P.g.VerificationRequired || e === P.g.RequestVerificationRequired || e === P.g.AwaitingUnrecognizedConfirmation;
+            }
+            function Re({ status: e, transactionType: t }) {
+                return t === T.x.Transfer && e === P.g.AwaitingRequestAcceptance;
+            }
+            function xe({ status: e, transactionType: t }) {
                 return t === T.x.Transfer && e === P.g.PendingRecipientOnboarding;
             }
-            const Pe = ({ isViewerSender: e, status: t, transactionType: n }) => (be({ status: t, transactionType: n }) || Ce({ status: t, transactionType: n })) && !e;
+            const Pe = ({ isViewerSender: e, status: t, transactionType: n }) => (Ce({ status: t, transactionType: n }) || xe({ status: t, transactionType: n })) && !e;
             function Te({ isViewerSender: e, status: t, transactionType: n }) {
-                return be({ status: t, transactionType: n }) && !e;
+                return Ce({ status: t, transactionType: n }) && !e;
             }
             function ve({ isViewerSender: e, status: t, transactionType: n }) {
-                return (be({ status: t, transactionType: n }) || Ce({ status: t, transactionType: n })) && e;
+                return (Ce({ status: t, transactionType: n }) || xe({ status: t, transactionType: n })) && e;
             }
             function Se({ status: e }) {
                 return e === P.g.AwaitingUnrecognizedConfirmation;
             }
             function De({ isViewerSender: e, status: t, transactionType: n }) {
                 return (
-                    (xe({ status: t, transactionType: n }) && e) ||
+                    (Re({ status: t, transactionType: n }) && e) ||
                     (function ({ isViewerSender: e, status: t, transactionType: n }) {
                         return t === P.g.RequestVerificationRequired && e && n === T.x.Transfer;
                     })({ isViewerSender: e, status: t, transactionType: n })
                 );
             }
-            function Ae({ isViewerSender: e, status: t, transactionType: n }) {
-                return xe({ status: t, transactionType: n }) && !e;
+            function ke({ isViewerSender: e, status: t, transactionType: n }) {
+                return Re({ status: t, transactionType: n }) && !e;
             }
-            function ke(e) {
+            function Ae(e) {
                 return De(e) || Te(e) || Se({ status: e.status });
             }
             function Ie(e) {
-                return ke(e) || Ae(e) || ve(e);
+                return Ae(e) || ke(e) || ve(e);
             }
             function Ne({ status: e }) {
                 return [P.g.Cancelled, P.g.Failed, P.g.Expired, P.g.RejectedByRecipient, P.g.RequestRejected].includes(e);
@@ -294,16 +297,16 @@
             function Ve({ status: e }) {
                 return !Ue({ status: e });
             }
-            const ze = (e) => (e ? `data:image/png;base64,${e}` : ""),
-                We = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
-                Oe = (e) => {
+            const Oe = (e) => (e ? `data:image/png;base64,${e}` : ""),
+                ze = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
+                We = (e) => {
                     if (!e) return null;
                     const { core: t, rest_id: n } = e,
                         a = t?.details ?? {},
-                        { account_number_mask: s, bank_account_type: i, bank_name: r, card_brand: c, card_number_mask: o, card_type: d, issued_card_type: p, logo: u, status: l } = a,
-                        g = c ? le[c] : "",
-                        f = c ? We[c] : "";
-                    return i && s ? { accountName: { name: `${de[i]} (...${s})` }, avatar: { shape: "square", uri: ze(u) }, id: n, accountType: r, type: O.dX.bank, label: fe({ status: l }) } : d && o ? { accountName: { name: `${ue[d]} (...${o})` }, avatar: { shape: "square", uri: f }, id: n, accountType: r, brandName: g, type: O.dX.card, label: fe({ status: l }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${pe[p]} (...${o})` } : null;
+                        { account_number_mask: r, bank_account_type: s, bank_name: i, card_brand: o, card_number_mask: c, card_type: d, issued_card_type: p, logo: u, status: l } = a,
+                        g = o ? le[o] : "",
+                        f = o ? ze[o] : "";
+                    return s && r ? { accountName: { name: `${de[s]} (...${r})` }, avatar: { shape: "square", uri: Oe(u) }, id: n, accountType: i, type: W.dX.bank, label: fe({ status: l }) } : d && c ? { accountName: { name: `${ue[d]} (...${c})` }, avatar: { shape: "square", uri: f }, id: n, accountType: i, brandName: g, type: W.dX.card, label: fe({ status: l }), issuedCardAccountName: !p || (p !== w.W.IssuedCardTypePhysical && p !== w.W.IssuedCardTypeVirtual) ? void 0 : `${pe[p]} (...${c})` } : null;
                 },
                 je = (e) => {
                     const t = e?.core?.supported_transfer_methods,
@@ -312,22 +315,22 @@
                     return { debitMethod: n, creditMethod: a };
                 },
                 qe = ({ method: e, methodConfigs: t, transferDirection: n }) => {
-                    const a = Oe(e),
-                        { creditMethod: s, debitMethod: i } = je(e),
-                        r = n === O.Rz.debit && i ? t.debitMethodConfigs?.get(i) : n === O.Rz.credit && s ? t.creditMethodConfigs?.get(s) : null;
-                    return a ? { ...a, config: r, debitMethod: i, creditMethod: s } : null;
+                    const a = We(e),
+                        { creditMethod: r, debitMethod: s } = je(e),
+                        i = n === W.Rz.debit && s ? t.debitMethodConfigs?.get(s) : n === W.Rz.credit && r ? t.creditMethodConfigs?.get(r) : null;
+                    return a ? { ...a, config: i, debitMethod: s, creditMethod: r } : null;
                 },
-                _e = ({ productCode: e, transactionType: t }) => e === x.O.Issuing && (t === T.x.Payment || t === T.x.Refund || t === T.x.AtmWithdrawal),
-                $e = ({ productCode: e, transactionType: t }) => e === x.O.Banking && (t === T.x.Deposit || t === T.x.Withdraw),
+                _e = ({ productCode: e, transactionType: t }) => e === R.O.Issuing && (t === T.x.Payment || t === T.x.Refund || t === T.x.AtmWithdrawal),
+                $e = ({ productCode: e, transactionType: t }) => e === R.O.Banking && (t === T.x.Deposit || t === T.x.Withdraw),
                 Me = ({ amountType: e, merchantDetails: t, productCode: n, transactionType: a }) => {
-                    const s = a === T.x.AtmWithdrawal,
-                        i = _e({ productCode: n, transactionType: a });
-                    return ($e({ productCode: n, transactionType: a }) || i) && t ? { ...t, type: s ? O.wC.atm : i ? O.wC.card : e === O.NU.credit ? O.wC.bankDeposit : O.wC.bankWithdraw } : void 0;
+                    const r = a === T.x.AtmWithdrawal,
+                        s = _e({ productCode: n, transactionType: a });
+                    return ($e({ productCode: n, transactionType: a }) || s) && t ? { ...t, type: r ? W.wC.atm : s ? W.wC.card : e === W.NU.credit ? W.wC.bankDeposit : W.wC.bankWithdraw } : void 0;
                 },
                 Be = ({ handleEmptyList: e, key: t, store: n }) => {
                     const a = n.getRoot(),
-                        s = t ? a.getLinkedRecords(t) : null;
-                    s && s.length > 0 ? s.forEach((e) => e?.invalidateRecord?.()) : e && a.invalidateRecord();
+                        r = t ? a.getLinkedRecords(t) : null;
+                    r && r.length > 0 ? r.forEach((e) => e?.invalidateRecord?.()) : e && a.invalidateRecord();
                 },
                 Fe = (e, t) => {
                     const n = e.getRoot(),
@@ -335,37 +338,37 @@
                     a && a.invalidateRecord();
                 },
                 Ke = (e) => {
-                    const t = (0, c.getStorageKey)(I.Z.fragment.selections[0], { filter: b.U.PaymentMethodFilterFunding, withIssuedSpend: !1 });
-                    Be({ store: e, key: t, handleEmptyList: !0 });
-                },
-                Ee = (e) => {
-                    const t = (0, c.getStorageKey)(I.Z.fragment.selections[0], { filter: b.U.PaymentMethodFilterSpending, withIssuedSpend: !0 });
+                    const t = (0, o.getStorageKey)(I.Z.fragment.selections[0], { filter: C.U.PaymentMethodFilterFunding, withIssuedSpend: !1 });
                     Be({ store: e, key: t, handleEmptyList: !0 });
                 },
                 Le = (e) => {
-                    r()(e, (e) => {
-                        Ee(e);
+                    const t = (0, o.getStorageKey)(I.Z.fragment.selections[0], { filter: C.U.PaymentMethodFilterSpending, withIssuedSpend: !0 });
+                    Be({ store: e, key: t, handleEmptyList: !0 });
+                },
+                Ee = (e) => {
+                    i()(e, (e) => {
+                        Le(e);
                     });
                 },
                 Ze = (e) => {
-                    r()(e, (e) => {
+                    i()(e, (e) => {
                         Ke(e);
                     });
                 },
                 He = (e) => {
-                    const t = (0, c.getStorageKey)(U.Z.fragment.selections[0], { search_filter_id: O.$W });
+                    const t = (0, o.getStorageKey)(U.Z.fragment.selections[0], { search_filter_id: W.$W });
                     Fe(e, t);
-                    const n = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
+                    const n = (0, o.getStorageKey)(S.Z.fragment.selections[0], {});
                     Be({ store: e, key: n });
-                    const a = (0, c.getStorageKey)(D.Z.fragment.selections[0], {});
+                    const a = (0, o.getStorageKey)(D.Z.fragment.selections[0], {});
                     Fe(e, a), Ge(e);
                 },
                 Ge = (e) => {
-                    const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], {});
+                    const t = (0, o.getStorageKey)(A.Z.fragment.selections[0], {});
                     Be({ store: e, key: t });
                 },
                 Qe = (e, t) => {
-                    r()(e, (e) => {
+                    i()(e, (e) => {
                         t &&
                             ((e, t) => {
                                 const n = e.get(t);
@@ -376,15 +379,15 @@
                     });
                 },
                 Xe = (e, { reasonCode: t, recordId: n, status: a }) => {
-                    if ((Re({ status: a }) || (He(e), Ge(e)), n && a)) {
-                        const s = e.get(n);
-                        s && (s.setValue(a, "transaction_status"), s.setValue(t, "reason_code"));
+                    if ((be({ status: a }) || (He(e), Ge(e)), n && a)) {
+                        const r = e.get(n);
+                        r && (r.setValue(a, "transaction_status"), r.setValue(t, "reason_code"));
                     }
                 },
                 Ye = (e) => {
-                    r()(e, (e) => {
+                    i()(e, (e) => {
                         ((e) => {
-                            const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
+                            const t = (0, o.getStorageKey)(k.Z.fragment.selections[0], {});
                             Fe(e, t);
                         })(e),
                             He(e),
@@ -392,60 +395,60 @@
                     });
                 },
                 Je = (e) => {
-                    const t = (0, c.getStorageKey)(N.Z.fragment.selections[0], {});
+                    const t = (0, o.getStorageKey)(N.Z.fragment.selections[0], {});
                     Fe(e, t);
                 },
                 et = () => l.ZP.isMobileOS(),
                 tt = ({ permission: e, permissions: t }) => !!t?.includes(e),
                 nt = (e) => tt({ permissions: e, permission: y.d.VerifyIdentity }),
                 at = (e) => tt({ permissions: e, permission: y.d.UpdateCustomerPreferences }),
-                st = ({ roles: e }) => !!e?.includes(h.N.Ineligible),
-                it = ({ roles: e }) => !!e?.includes(h.N.PendingBalanceAutoClaim),
-                rt = ({ roles: e }) => !!e?.includes(h.N.RestrictedGeolocationUsState) || !!e?.includes(h.N.RestrictedOnboardingUsState),
-                ct = ({ roles: e }) => !!e?.includes(h.N.KycFailed) || !!e?.includes(h.N.PendingReview),
-                ot = ({ roles: e }) => !!e?.includes(h.N.PendingKycUnverifiedLimitExceeded),
+                rt = ({ roles: e }) => !!e?.includes(h.N.Ineligible),
+                st = ({ roles: e }) => !!e?.includes(h.N.PendingBalanceAutoClaim),
+                it = ({ roles: e }) => !!e?.includes(h.N.RestrictedGeolocationUsState) || !!e?.includes(h.N.RestrictedOnboardingUsState),
+                ot = ({ roles: e }) => !!e?.includes(h.N.KycFailed) || !!e?.includes(h.N.PendingReview),
+                ct = ({ roles: e }) => !!e?.includes(h.N.PendingKycUnverifiedLimitExceeded),
                 dt = ({ permissions: e }) => tt({ permissions: e, permission: y.d.RequestTransfer }),
                 pt = ({ actionPermission: e, permissions: t, roles: n }) => (nt(t) && !tt({ permissions: t, permission: e }) ? ut({ roles: n }) : null),
                 ut = ({ roles: e }) => {
                     const t = e?.includes(h.N.PendingSelfieVerification) || e?.includes(h.N.KycDocumentsVerified),
                         n = e?.includes(h.N.KycPendingDocumentUpload) || e?.includes(h.N.KycVerified);
-                    return t ? z.AU.selfie.verifyIdentityPath : n ? z.AU.tier3.verifyIdentityPath : z.AU.tier2.verifyIdentityPath;
+                    return t ? O.AU.selfie.verifyIdentityPath : n ? O.AU.tier3.verifyIdentityPath : O.AU.tier2.verifyIdentityPath;
                 },
                 lt = () => {
                     if (l.ZP.isTwitterApp()) return window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-                    return { [o.default.ThemePaletteNames.light]: "light", [o.default.ThemePaletteNames.dark]: "dim", [o.default.ThemePaletteNames.darker]: "dark", [o.default.ThemePaletteNames.business]: "dark" }[d.default.theme.paletteName] || "light";
+                    return { [c.default.ThemePaletteNames.light]: "light", [c.default.ThemePaletteNames.dark]: "dim", [c.default.ThemePaletteNames.darker]: "dark", [c.default.ThemePaletteNames.business]: "dark" }[d.default.theme.paletteName] || "light";
                 },
-                gt = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: s, xPaymentsSession: i }) => {
-                    if (!n || !i || !a) return null;
-                    const r = new URL(`${n}${e}`);
-                    if ((r.searchParams.set("sessionId", i), r.searchParams.set("providerToken", a), r.searchParams.set("theme", s), t)) for (const [e, n] of t) r.searchParams.set(e, n);
-                    return r.href;
+                gt = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: r, xPaymentsSession: s }) => {
+                    if (!n || !s || !a) return null;
+                    const i = new URL(`${n}${e}`);
+                    if ((i.searchParams.set("sessionId", s), i.searchParams.set("providerToken", a), i.searchParams.set("theme", r), t)) for (const [e, n] of t) i.searchParams.set(e, n);
+                    return i.href;
                 },
                 ft = ({ amount: e, balanceAmountMicro: t }) => {
                     const n = parseFloat(t);
                     return parseFloat(e) <= Q({ amount: n });
                 },
                 mt = (e) => new Date(e.year, e.month - 1, e.day),
-                yt = ({ challengeId: e, status: t }) => (Re({ status: t }) && e ? z.vw : null),
+                yt = ({ challengeId: e, status: t }) => (be({ status: t }) && e ? O.vw : null),
                 ht = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
                     switch ((Ye(n), e)) {
-                        case z.kW.auth:
-                            W.Z.closeChallenge();
+                        case O.kW.auth:
+                            z.Z.closeChallenge();
                             break;
-                        case z.kW.preference:
+                        case O.kW.preference:
                             ((e) => {
-                                r()(e, (e) => {
+                                i()(e, (e) => {
                                     Je(e);
                                 });
                             })(n);
                     }
                     t ? a.replace(t) : a.goBack();
                 },
-                wt = { [z.kW.forgotPin]: z.jR, [z.kW.changeCardPin]: z.SR },
-                bt = ({ challengeInitiator: e }) => (e ? wt[e] : void 0) ?? z.vw,
-                Rt = (e) => parseInt(e, 10) / 100,
-                xt = ({ apy: e }) => `${Rt(e).toFixed(2)}% APY`,
-                Ct = ({ rate: e }) => `${Rt(e)}% Everywhere`,
+                wt = { [O.kW.forgotPin]: O.jR, [O.kW.changeCardPin]: O.SR },
+                Ct = ({ challengeInitiator: e }) => (e ? wt[e] : void 0) ?? O.vw,
+                bt = (e) => parseInt(e, 10) / 100,
+                Rt = ({ apy: e }) => `${bt(e).toFixed(2)}% APY`,
+                xt = ({ rate: e }) => `${bt(e)}% Everywhere`,
                 Pt = (e) => {
                     const t = e?.address,
                         n = t?.postal_code;
@@ -458,4 +461,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.aceef8ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.a6fff18a.js.map

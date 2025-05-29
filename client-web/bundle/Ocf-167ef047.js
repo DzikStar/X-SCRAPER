@@ -372,7 +372,7 @@
                 k = s(280947),
                 g = s(975364),
                 f = s(909377),
-                y = s(723587),
+                y = s(970187),
                 w = s(530732),
                 I = s(815858),
                 x = s(452693),
@@ -719,7 +719,7 @@
                 y = (0, g.Z)()
                     .propsFromState(() => ({ getModuleFetchStatus: f }))
                     .withAnalytics({ page: "onboarding", section: "user_recommendations" });
-            var w = s(723587),
+            var w = s(970187),
                 I = s(392237),
                 x = s(269011),
                 v = s(335632),
@@ -901,7 +901,7 @@
                 i = s(325686),
                 n = s(823161),
                 o = s(366635),
-                r = s(723587);
+                r = s(970187);
             const l = ({ groupId: e, id: t, isBlueVerified: s, isSelected: l, isVerified: d, name: u, onFollow: p, onUnfollow: h, profileImageUrl: _, style: m, userName: b }) => {
                     const k = a.useCallback(() => {
                             p([t], e);
@@ -1123,4 +1123,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-167ef047.662f406a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-167ef047.d916edaa.js.map

@@ -1321,6 +1321,7 @@
                 }),
                 o("d4d35bea", "Translating..."),
                 o("he9c9634", "ترجمہ فراہم کرنے سے قاصر"),
+                o("deaf5b16", "دوبارہ کوشش کریں"),
                 o("j2198c98", "Hide translated post"),
                 o("i73a7d48", "Google سے ترجمہ شدہ"),
                 o("eeadb767", function (e) {
@@ -1920,9 +1921,9 @@
                 o("da8ac57c", "Edit Caption"),
                 o("a8fdd09c", "Publish Article"),
                 o("d8047cc8", "شائع کریں"),
-                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                o("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            o("e52d4998", "Choose your audience"),
+                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                o("e52d4998", "Choose your audience"),
                 o("d7985b24", "Choose who can reply to this Article"),
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
@@ -2651,7 +2652,6 @@
                 o("c776f523", "Ads Revenue Share"),
                 o("ab9f38f8", "Creator Subscription"),
                 o("d5cab8b0", "Creator Revenue Share"),
-                o("deaf5b16", "دوبارہ کوشش کریں"),
                 o("g1a4a1b6", "ID verification error"),
                 o("e24305e4", "Your identity verification session was stale or invalid, please try again."),
                 o("f7954a0c", "سیکیورٹی کلیدوں سے متعلق ڈیٹا لوڈ ہو رہا ہے"),
@@ -13297,4 +13297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.beb50a4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.fc70c6da.js.map

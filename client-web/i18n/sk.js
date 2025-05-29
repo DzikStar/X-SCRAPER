@@ -1326,6 +1326,7 @@
                 }),
                 n("d4d35bea", "Prekladá sa…"),
                 n("he9c9634", "Nepodarilo sa načítať preklad"),
+                n("deaf5b16", "Skúsiť znova"),
                 n("j2198c98", "Skryť preložený príspevok"),
                 n("i73a7d48", "Preložené spoločnosťou Google"),
                 n("eeadb767", function (e) {
@@ -1925,9 +1926,9 @@
                 n("da8ac57c", "Upraviť opis"),
                 n("a8fdd09c", "Zverejnenie článku"),
                 n("d8047cc8", "Publikovať"),
-                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články."),
-                n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať.");
-            n("e52d4998", "Vyberte svoje publikum"),
+                n("ff7ddca2", "Zverejnený článok sa bude zobrazovať ako príspevok a nájdete ho aj vo svojom profile na karte Články.");
+            n("ef34d7be", "Nastavenia publika a odpovedí sa po zverejnení článku nedajú upravovať."),
+                n("e52d4998", "Vyberte svoje publikum"),
                 n("d7985b24", "Vyberte, kto môže na tento článok odpovedať"),
                 n("b5660338", "Ukážka časovej osi"),
                 n("hff1b97a", "Odpovedať môžu len predplatitelia."),
@@ -2656,7 +2657,6 @@
                 n("c776f523", "Zdieľanie výnosov z reklám"),
                 n("ab9f38f8", "Predplatné tvorcu"),
                 n("d5cab8b0", "Zdieľanie výnosov s tvorcami"),
-                n("deaf5b16", "Skúsiť znova"),
                 n("g1a4a1b6", "Chyba overenia preukazu totožnosti"),
                 n("e24305e4", "Vaša relácia overenia totožnosti bola zastaraná alebo neplatná. Skúste to znova."),
                 n("f7954a0c", "Načítavajú sa údaje bezpečnostných kľúčov"),
@@ -13304,4 +13304,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.7faa09fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.3e3a95fa.js.map

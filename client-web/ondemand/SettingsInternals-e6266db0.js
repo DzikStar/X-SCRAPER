@@ -151,28 +151,6 @@
                 },
                 u = (e) => ({ confirmButtonType: "destructiveFilled", headline: i, label: c, text: d({ screenName: e.screen_name }) });
         },
-        666670: (e, t, r) => {
-            r.d(t, { F: () => n });
-            var s = r(516951),
-                a = r(615656),
-                o = r(51525);
-            const n = { [a.ZP.AddressBookLookupNotFound]: { customAction: o.vv }, [a.ZP.GenericUserNotFound]: { customAction: s.Z }, [a.ZP.OtherUserSuspended]: { customAction: s.Z }, showToast: !0 };
-        },
-        757953: (e, t, r) => {
-            r.d(t, { H: () => h });
-            var s = r(111677),
-                a = r.n(s),
-                o = r(516951),
-                n = r(615656),
-                i = r(51525);
-            const c = a().j4292c24,
-                d = a().a0ba5842,
-                l = a().i859a9d4,
-                u = a().a5202b82,
-                E = a().f8cbf714,
-                S = a().f2e66452,
-                h = { defaultToast: { text: u }, [n.ZP.CurrentUserSuspended]: { toast: { text: S, action: { label: l, link: "https://support.twitter.com/articles/15790" } } }, [n.ZP.DuplicateFollowRequest]: { customAction: o.Z }, [n.ZP.FollowBlockedUserError]: { toast: { text: c } }, [n.ZP.FollowError]: { customAction: i.w1 }, [n.ZP.FollowRateLimitExceeded]: { toast: { action: { label: l, link: "https://support.twitter.com/articles/66885" }, text: d } }, [n.ZP.TargetUserNotFound]: { toast: { text: E } } };
-        },
         775412: (e, t, r) => {
             r.d(t, { W: () => i });
             var s = r(111677),
@@ -200,11 +178,6 @@
                         return (!r) instanceof o.Z && (r.message = `Strato error occurred in ${s.id}: ${s.action}`), (0, i.ZP)(r, { extra: { context: s, isStrato: !0 } }), t ? (0, n.mf)({ text: e }) : [];
                     },
                 });
-        },
-        323683: (e, t, r) => {
-            r.d(t, { X: () => a });
-            var s = r(111677);
-            const a = { defaultToast: { text: r.n(s)().e1a0aaca }, showToast: !0 };
         },
         837731: (e, t, r) => {
             r.d(t, { G: () => i });
@@ -333,7 +306,7 @@
                     addWelcomeMessageToConversation: () => o.Qe,
                     clearRecentSearch: () => U,
                     clearRecentSearches: () => N,
-                    clearSearchCache: () => A,
+                    clearSearchCache: () => C,
                     default: () => b,
                     deleteConversations: () => o.S9,
                     disableMentionNotifications: () => o.BW,
@@ -425,15 +398,15 @@
                 f = "rweb/directMessages/ADD_RECENT_SEARCHES",
                 I = (e) => ({ payload: e, type: f }),
                 D = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                A = () => ({ type: D }),
-                C = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                C = () => ({ type: D }),
+                A = "rweb/directMessages/CLEAR_RECENT_SEARCH",
                 T = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
                 y = { searchResults: {}, recentSearches: [] };
             function O(e = y, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case f:
-                    case C:
+                    case A:
                         return { ...e, recentSearches: t.payload || [] };
                     case T:
                         return { ...e, recentSearches: [] };
@@ -518,7 +491,7 @@
                     (t, r, { userPersistence: s }) =>
                         s.get(p).then((r) => {
                             const a = r?.recentSearches || [];
-                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: C }), s.set(p, { recentSearches: a });
+                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: A }), s.set(p, { recentSearches: a });
                         }),
                 N =
                     () =>
@@ -585,7 +558,7 @@
                 a = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 });
         },
         642721: (e, t, r) => {
-            r.d(t, { $o: () => P, AE: () => F, Lk: () => C, R_: () => b, UD: () => D, UK: () => T, WW: () => I, ck: () => Z, fd: () => f, kM: () => L, mz: () => A, xZ: () => N });
+            r.d(t, { $o: () => P, AE: () => F, Lk: () => A, R_: () => b, UD: () => D, UK: () => T, WW: () => I, ck: () => M, fd: () => f, kM: () => L, mz: () => C, xZ: () => N });
             var s = r(745978),
                 a = r(499627),
                 o = r(917799),
@@ -627,8 +600,8 @@
             const f = (e) => e[i].discouragedKeywords,
                 I = (e) => e[i].mutedKeywords,
                 D = (e) => e[i].fetchStatus,
-                A = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
-                C = (e, t) => e[i].defaultOptions,
+                C = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
+                A = (e, t) => e[i].defaultOptions,
                 T =
                     () =>
                     (e, t, { userPersistence: r }) =>
@@ -677,7 +650,7 @@
                         const n = { ids: e.join(",") };
                         return o._O(t, { params: n, request: a.withEndpoint(s.Z).deleteMutedKeyword })({ actionTypes: h, context: "ACTION_DELETE_MUTED_KEYWORD", meta: { ids: e } });
                     },
-                Z =
+                M =
                     (e) =>
                     (t, r, { api: a }) =>
                         o._O(t, { params: e, request: a.withEndpoint(s.Z).updateMutedKeyword })({ actionTypes: _, context: "ACTION_UPDATE_MUTED_KEYWORD", meta: { params: e } });
@@ -797,7 +770,7 @@
             });
         },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => D, H$: () => E, OB: () => A, Ww: () => l, YB: () => u, hj: () => p, qF: () => f });
+            r.d(t, { DI: () => D, H$: () => E, OB: () => C, Ww: () => l, YB: () => u, hj: () => p, qF: () => f });
             r(901951);
             var s = r(499627),
                 a = r(390387);
@@ -862,7 +835,7 @@
                             n = l(o);
                         return (0, a.Qb)(o) ? t(i(n)) : Promise.resolve();
                     },
-                A =
+                C =
                     () =>
                     (e, t, { userPersistence: r }) => {
                         const s = t();
@@ -995,7 +968,7 @@
             const s = Object.freeze({ Filtering: "optInFiltering", Blocking: "optInBlocking" });
         },
         715684: (e, t, r) => {
-            r.d(t, { Fm: () => w, TG: () => D, UD: () => C, _1: () => O, dj: () => T, kz: () => A });
+            r.d(t, { Fm: () => w, TG: () => D, UD: () => A, _1: () => O, dj: () => T, kz: () => C });
             var s = r(24949),
                 a = r(697926),
                 o = r(744531),
@@ -1031,9 +1004,9 @@
             const f = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(m) : []),
                 I = (e) => e[l].sessions,
                 D = (0, s.P1)(I, (e) => Object.values(e)),
-                A = (e, t) => I(e)[t],
-                C = (e) => e[l].fetchStatus,
-                T = (e) => (t, r) => (C(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
+                C = (e, t) => I(e)[t],
+                A = (e) => e[l].fetchStatus,
+                T = (e) => (t, r) => (A(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
                 y =
                     (e) =>
                     (t, r, { api: s }) =>
@@ -1052,7 +1025,7 @@
                             .then(() => y()(t, r, { api: s }));
         },
         948985: (e, t, r) => {
-            r.d(t, { $q: () => I, UD: () => D, wz: () => A, zw: () => C });
+            r.d(t, { $q: () => I, UD: () => D, wz: () => C, zw: () => A });
             var s = r(24949),
                 a = r(166852),
                 o = r(226395),
@@ -1120,8 +1093,8 @@
                 ));
             const I = u.Z.register(f),
                 D = (e) => e[E].fetchStatus,
-                A = (e) => (t, r) => (D(r()) === c.ZP.LOADED ? Promise.resolve() : t(T(e))),
-                C =
+                C = (e) => (t, r) => (D(r()) === c.ZP.LOADED ? Promise.resolve() : t(T(e))),
+                A =
                     (e, t, r) =>
                     (r, s, { api: a }) => {
                         const o = s();
@@ -1278,7 +1251,7 @@
                     };
         },
         446418: (e, t, r) => {
-            r.d(t, { DG: () => D, DY: () => f, J2: () => I, UD: () => p, aX: () => A, vi: () => _, zl: () => m });
+            r.d(t, { DG: () => D, DY: () => f, J2: () => I, UD: () => p, aX: () => C, vi: () => _, zl: () => m });
             var s = r(226395),
                 a = r(499627),
                 o = r(917799),
@@ -1357,7 +1330,7 @@
                     () =>
                     (e, t, { api: r }) =>
                         (0, o.AB)(e, { request: r.withEndpoint(s.Z).disable2FA })({ actionTypes: E, context: "DISABLE_LOGIN_VERIFICATION" }),
-                A =
+                C =
                     ({ method: e }) =>
                     (t, r, { api: a }) => {
                         const n = _(r()).methods[e];
@@ -1460,4 +1433,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.2b1c732a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.994509ca.js.map

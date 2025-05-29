@@ -1317,6 +1317,7 @@
                 }),
                 t("d4d35bea", "S'està traduint…"),
                 t("he9c9634", "No es pot obtenir la traducció"),
+                t("deaf5b16", "Torna-ho a provar"),
                 t("j2198c98", "Amaga la publicació traduïda"),
                 t("i73a7d48", "Traduït per Google"),
                 t("eeadb767", function (e) {
@@ -1916,9 +1917,9 @@
                 t("da8ac57c", "Edita la llegenda"),
                 t("a8fdd09c", "Publica l'article"),
                 t("d8047cc8", "Publica"),
-                t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil."),
-                t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article.");
-            t("e52d4998", "Tria la teva audiència"),
+                t("ff7ddca2", "Quan el publiquis, l'article es mostrarà com una publicació. A més, el podràs trobar a la pestanya Articles del teu perfil.");
+            t("ef34d7be", "Els controls d'audiència i de resposta no es poden editar un cop s'ha publicat l'article."),
+                t("e52d4998", "Tria la teva audiència"),
                 t("d7985b24", "Tria qui pot respondre a aquest article"),
                 t("b5660338", "Vista prèvia de la cronologia"),
                 t("hff1b97a", "Només els subscriptors hi poden respondre."),
@@ -2647,7 +2648,6 @@
                 t("c776f523", "Repartiment d'ingressos publicitaris"),
                 t("ab9f38f8", "Subscripció a creadors"),
                 t("d5cab8b0", "Repartiment d'ingressos del creador/creadora"),
-                t("deaf5b16", "Torna-ho a provar"),
                 t("g1a4a1b6", "Error de verificació de la identitat"),
                 t("e24305e4", "La teva sessió de verificació de la identitat és antiga o no és vàlida. Torna-ho a provar."),
                 t("f7954a0c", "S'estan carregant les dades de les claus de seguretat"),
@@ -13289,4 +13289,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.01766cfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.b62bd71a.js.map

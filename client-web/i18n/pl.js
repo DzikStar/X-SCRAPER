@@ -1326,6 +1326,7 @@
                 }),
                 i("d4d35bea", "Trwa tłumaczenie..."),
                 i("he9c9634", "Nie udało się pobrać tłumaczenia"),
+                i("deaf5b16", "Ponów próbę"),
                 i("j2198c98", "Ukryj przetłumaczony wpis"),
                 i("i73a7d48", "Przetłumaczone przez Google"),
                 i("eeadb767", function (e) {
@@ -1925,9 +1926,9 @@
                 i("da8ac57c", "Edytuj podpis"),
                 i("a8fdd09c", "Opublikuj artykuł"),
                 i("d8047cc8", "Opublikuj"),
-                i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
-                i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu.");
-            i("e52d4998", "Wybierz odbiorców"),
+                i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu.");
+            i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu."),
+                i("e52d4998", "Wybierz odbiorców"),
                 i("d7985b24", "Określ, kto może odpowiadać na ten artykuł"),
                 i("b5660338", "Podgląd osi czasu"),
                 i("hff1b97a", "Odpowiadać mogą tylko subskrybenci."),
@@ -2656,7 +2657,6 @@
                 i("c776f523", "Udział w dochodach z reklam"),
                 i("ab9f38f8", "Subskrypcja twórcy treści"),
                 i("d5cab8b0", "Udział w dochodach dla twórców treści"),
-                i("deaf5b16", "Ponów próbę"),
                 i("g1a4a1b6", "Błąd weryfikacji dokumentu tożsamości"),
                 i("e24305e4", "Sesja weryfikacji dokumentu tożsamości była nieważna lub nieaktualna. Spróbuj ponownie."),
                 i("f7954a0c", "Wczytywanie danych kluczy bezpieczeństwa"),
@@ -13302,4 +13302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.0a85444a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.bddaf21a.js.map

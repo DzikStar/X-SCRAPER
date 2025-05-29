@@ -1317,6 +1317,7 @@
                 }),
                 t("d4d35bea", "Översätter …"),
                 t("he9c9634", "Det gick inte att hämta översättningen"),
+                t("deaf5b16", "Försök igen"),
                 t("j2198c98", "Dölj det översatta inlägget"),
                 t("i73a7d48", "Översatt av Google"),
                 t("eeadb767", function (e) {
@@ -1916,9 +1917,9 @@
                 t("da8ac57c", "Redigera överskriften"),
                 t("a8fdd09c", "Publicera artikeln"),
                 t("d8047cc8", "Publicera"),
-                t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil."),
-                t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats.");
-            t("e52d4998", "Välj målgrupp"),
+                t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil.");
+            t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats."),
+                t("e52d4998", "Välj målgrupp"),
                 t("d7985b24", "Välj vilka som får svara på den här artikeln"),
                 t("b5660338", "Förhandsgranska tidslinjen"),
                 t("hff1b97a", "Endast prenumeranter får svara."),
@@ -2647,7 +2648,6 @@
                 t("c776f523", "programmet för delning av annonsintäkter"),
                 t("ab9f38f8", "kreatörsprenumeration"),
                 t("d5cab8b0", "programmet för intäktsdelning för kreatörer"),
-                t("deaf5b16", "Försök igen"),
                 t("g1a4a1b6", "Id-verifieringsfel"),
                 t("e24305e4", "Identitetsverifieringssessionen var för gammal eller ogiltig. Försök igen."),
                 t("f7954a0c", "Läser in säkerhetsnyckeldata"),
@@ -13289,4 +13289,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.064a9fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.bd7937ea.js.map

@@ -5,7 +5,7 @@
         989816: (e, t, n) => {
             n.d(t, { Z: () => w });
             var r = n(202784),
-                s = n(723587),
+                s = n(970187),
                 i = n(392237),
                 o = n(379327),
                 l = n(913973),
@@ -384,4 +384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.UserLists~ondemand.HoverCard.5b3476da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.UserLists~ondemand.HoverCard.68786eda.js.map

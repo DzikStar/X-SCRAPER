@@ -1321,6 +1321,7 @@
                 }),
                 n("d4d35bea", "Traduction en cours..."),
                 n("he9c9634", "Impossible de récupérer la traduction"),
+                n("deaf5b16", "Réessayer"),
                 n("j2198c98", "Masquer le post traduit"),
                 n("i73a7d48", "Traduit par Google"),
                 n("eeadb767", function (e) {
@@ -1920,9 +1921,9 @@
                 n("da8ac57c", "Éditer la légende"),
                 n("a8fdd09c", "Publier l'Article"),
                 n("d8047cc8", "Publier"),
-                n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
-                n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié.");
-            n("e52d4998", "Choisissez votre audience"),
+                n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil.");
+            n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
+                n("e52d4998", "Choisissez votre audience"),
                 n("d7985b24", "Choisissez qui peut répondre à cet Article"),
                 n("b5660338", "Aperçu du fil"),
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
@@ -2651,7 +2652,6 @@
                 n("c776f523", "Partage des revenus publicitaires"),
                 n("ab9f38f8", "Souscriptions de créateurs"),
                 n("d5cab8b0", "Partage des revenus des créateurs"),
-                n("deaf5b16", "Réessayer"),
                 n("g1a4a1b6", "Erreur de vérification de l'identité"),
                 n("e24305e4", "La session de vérification de votre identité était arrivée à expiration ou n'était pas valide, veuillez réessayer."),
                 n("f7954a0c", "Chargement des données des clés de sécurité"),
@@ -13292,4 +13292,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1e627d9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.a9436f8a.js.map

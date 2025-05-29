@@ -1316,6 +1316,7 @@
                 }),
                 n("d4d35bea", "Çevriliyor..."),
                 n("he9c9634", "Çeviri alınamadı"),
+                n("deaf5b16", "Yeniden dene"),
                 n("j2198c98", "Gönderi çevirisini gizle"),
                 n("i73a7d48", "Google tarafından çevrildi"),
                 n("eeadb767", function (e) {
@@ -1915,9 +1916,9 @@
                 n("da8ac57c", "Altyazıyı Düzenle"),
                 n("a8fdd09c", "Makaleyi Yayınla"),
                 n("d8047cc8", "Yayınla"),
-                n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
-                n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez.");
-            n("e52d4998", "Hedef kitleni seç"),
+                n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek.");
+            n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez."),
+                n("e52d4998", "Hedef kitleni seç"),
                 n("d7985b24", "Bu makaleye kimlerin yanıt verebileceğini seç"),
                 n("b5660338", "Zaman Akışı önizlemesi"),
                 n("hff1b97a", "Yalnızca Aboneler yanıtlayabilir."),
@@ -2646,7 +2647,6 @@
                 n("c776f523", "Reklam Geliri Paylaşımı"),
                 n("ab9f38f8", "İçerik Üreticisi Aboneliği"),
                 n("d5cab8b0", "İçerik Üreticisi Gelir Paylaşımı"),
-                n("deaf5b16", "Yeniden dene"),
                 n("g1a4a1b6", "Kimlik onaylama hatası"),
                 n("e24305e4", "Kimlik onaylama oturumunun süresi doldu veya oturum geçersiz. Lütfen tekrar dene."),
                 n("f7954a0c", "Güvenlik anahtarları verisi yükleniyor"),
@@ -13297,4 +13297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.c5d8559a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.8a43a70a.js.map

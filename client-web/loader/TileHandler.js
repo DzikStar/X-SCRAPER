@@ -70,8 +70,8 @@
             var S = n(946409),
                 b = n(927389),
                 f = n(497181),
-                v = n(151587),
-                y = n(668214),
+                y = n(151587),
+                v = n(668214),
                 k = n(919022);
             const Z = (e, t) => {
                     if (t.entry.content.content.broadcast) return k.ZP.select(e, t.entry.content.content.broadcast.userId);
@@ -88,9 +88,9 @@
                         { handleTileClick: p } = (0, f.U)(t),
                         h = r.useMemo(() => (u ? (0, S.s9)(u) : ""), [u]),
                         g = r.useMemo(() => (s ? r.createElement(b.Z, { feedbackItems: n }) : null), [s, n]);
-                    return r.createElement(C, { "aria-label": a || "", attribution: e, badge: m, containerStyle: v.g.containerStyle, description: s, image: d, link: h, onClick: p, rightControl: g });
+                    return r.createElement(C, { "aria-label": a || "", attribution: e, badge: m, containerStyle: y.g.containerStyle, description: s, image: d, link: h, onClick: p, rightControl: g });
                 },
-                E = (0, y.Z)().propsFromState(() => ({ broadcastUser: Z }))(r.memo(T));
+                E = (0, v.Z)().propsFromState(() => ({ broadcastUser: Z }))(r.memo(T));
         },
         407920: (e, t, n) => {
             n.r(t), n.d(t, { default: () => i });
@@ -253,10 +253,10 @@
                 i = n(530732),
                 s = n(392237);
             const c = s.default.create((e) => ({ root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large }, defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: "flex-end" }, defaultUpperContainerStyle: { height: `calc(${e.spaces.space48}*2)`, overflow: "hidden", borderRadius: e.borderRadii.large } })),
-                l = ({ "aria-label": e, containerStyle: t, disabled: n, isCompact: l, link: d, lower: u, onClick: m, stackLayoutLowerStyle: p, stackLayoutUpperStyle: h, upper: g, withInsetFocusRing: C = !0, withInteractiveStyling: S = !1 }) => {
-                    const b = a.Z.generate({ backgroundColor: s.default.theme.colors.transparent, color: s.default.theme.colors.primary, insetFocusRing: C }),
-                        f = r.createElement(r.Fragment, null, r.createElement(o.Z, { style: [c.defaultUpperContainerStyle, h, l && { height: "auto" }] }, g), u ? r.createElement(o.Z, { style: [c.defaultLowerContainerStyle, p] }, u) : null);
-                    return r.createElement(i.Z, { "aria-label": e, disabled: n, interactive: S, interactiveStyles: S ? b : void 0, link: d, onClick: m, style: [c.root, t] }, f);
+                l = ({ "aria-label": e, containerStyle: t, disabled: n, interactiveStyles: l, isCompact: d, link: u, lower: m, onClick: p, stackLayoutLowerStyle: h, stackLayoutUpperStyle: g, upper: C, withInsetFocusRing: S = !0, withInteractiveStyling: b = !1 }) => {
+                    const f = l ?? a.Z.generate({ backgroundColor: s.default.theme.colors.transparent, color: s.default.theme.colors.primary, insetFocusRing: S }),
+                        y = r.createElement(r.Fragment, null, r.createElement(o.Z, { style: [c.defaultUpperContainerStyle, g, d && { height: "auto" }] }, C), m ? r.createElement(o.Z, { style: [c.defaultLowerContainerStyle, h] }, m) : null);
+                    return r.createElement(i.Z, { "aria-label": e, disabled: n, interactive: b, interactiveStyles: b ? f : void 0, link: u, onClick: p, style: [c.root, t] }, y);
                 };
         },
         953035: (e, t, n) => {
@@ -269,11 +269,11 @@
                 c = n(165822);
             const l = s.default.create((e) => {
                     const t = `calc(2 * ${e.spaces.space32})`;
-                    return { upper: { height: t, justifyContent: "flex-end" }, lower: { height: t, justifyContent: "flex-start" }, container: { alignItems: "center" }, icon: { height: e.spaces.space32, width: e.spaces.space32 }, compact: { height: "auto" } };
+                    return { upper: { height: t, justifyContent: "flex-end" }, lower: { height: t, justifyContent: "flex-start" }, container: { alignItems: "center" }, icon: { height: e.spaces.space32, width: e.spaces.space32 }, compact: { height: "auto", marginTop: e.spaces.space8 } };
                 }),
-                d = ({ containerStyle: e, icon: t = o.default, iconColor: n = "primary", link: d, onClick: u, text: m, isCompact: p, disabled: h, isLoading: g, withInteractiveStyling: C }) => {
-                    const S = r.useMemo(() => ({ color: s.default.theme.colors[n] }), [n]);
-                    return r.createElement(c.Z, { "aria-label": m, containerStyle: [l.container, e], disabled: h, isCompact: p, link: d, lower: g ? r.createElement(a.Z, { size: "small" }) : r.createElement(i.ZP, { style: S }, m), onClick: u, stackLayoutLowerStyle: [l.lower, p ? l.compact : null], stackLayoutUpperStyle: l.upper, upper: r.createElement(t, { style: [l.icon, S] }), withInteractiveStyling: C });
+                d = ({ containerStyle: e, icon: t = o.default, iconColor: n = "primary", link: d, onClick: u, text: m, isCompact: p, disabled: h, isLoading: g, withInteractiveStyling: C, interactiveStyles: S, textStyle: b }) => {
+                    const f = r.useMemo(() => ({ color: s.default.theme.colors[n] }), [n]);
+                    return r.createElement(c.Z, { "aria-label": m, containerStyle: [l.container, e], disabled: h, interactiveStyles: S, isCompact: p, link: d, lower: g ? r.createElement(a.Z, { size: "small" }) : r.createElement(i.ZP, { style: [b, f] }, m), onClick: u, stackLayoutLowerStyle: [l.lower, p ? l.compact : null], stackLayoutUpperStyle: l.upper, upper: r.createElement(t, { style: [l.icon, f] }), withInteractiveStyling: C });
                 };
         },
         745185: (e, t, n) => {
@@ -320,9 +320,9 @@
                                 S = t === m.D.Completed && !u && !h,
                                 b = this._shouldRenderScore(),
                                 f = this._getTeamScoreSize(p.SCORE),
-                                v = d ? this._getTeamScoreSize(p.SECONDARY_SCORE) : void 0,
-                                y = "Cricket" === e ? l?.split(" ")[0] : l;
-                            return b ? r.createElement(i.Z, { style: [C.teamScore, S && C.losingTeamScore] }, r.createElement(c.ZP, { color: g(a), numberOfLines: 1, size: f, weight: "heavy" }, y), d ? r.createElement(c.ZP, { color: g(a), numberOfLines: 1, size: v, weight: "bold" }, d) : null) : null;
+                                y = d ? this._getTeamScoreSize(p.SECONDARY_SCORE) : void 0,
+                                v = "Cricket" === e ? l?.split(" ")[0] : l;
+                            return b ? r.createElement(i.Z, { style: [C.teamScore, S && C.losingTeamScore] }, r.createElement(c.ZP, { color: g(a), numberOfLines: 1, size: f, weight: "heavy" }, v), d ? r.createElement(c.ZP, { color: g(a), numberOfLines: 1, size: y, weight: "bold" }, d) : null) : null;
                         }),
                         (this._getTeamScoreSize = (e) => {
                             const {
@@ -391,7 +391,7 @@
             b.defaultProps = { isCompact: !1 };
         },
         854582: (e, t, n) => {
-            n.d(t, { Z: () => v });
+            n.d(t, { Z: () => y });
             var r = n(202784),
                 o = n(111677),
                 a = n.n(o),
@@ -409,7 +409,7 @@
                 S = a().d2dbfa92,
                 b = a().cd734f66,
                 f = a().c8891d06;
-            class v extends r.Component {
+            class y extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderCategory = () => {
@@ -489,7 +489,7 @@
                     );
                 }
             }
-            v.defaultProps = { withCategory: !0 };
+            y.defaultProps = { withCategory: !0 };
         },
         615084: (e, t, n) => {
             n.d(t, { D: () => r });
@@ -638,4 +638,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TileHandler.9b6547da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TileHandler.06ce5d8a.js.map

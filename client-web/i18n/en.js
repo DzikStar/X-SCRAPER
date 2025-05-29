@@ -1317,6 +1317,7 @@
                 }),
                 a("d4d35bea", "Translating..."),
                 a("he9c9634", "Unable to fetch translation"),
+                a("deaf5b16", "Retry"),
                 a("j2198c98", "Hide translated post"),
                 a("i73a7d48", "Translated by Google"),
                 a("eeadb767", function (e) {
@@ -1916,9 +1917,9 @@
                 a("da8ac57c", "Edit Caption"),
                 a("a8fdd09c", "Publish Article"),
                 a("d8047cc8", "Publish"),
-                a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
-                a("ef34d7be", "Audience and reply controls are not editable after an article has been published.");
-            a("e52d4998", "Choose your audience"),
+                a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile.");
+            a("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
+                a("e52d4998", "Choose your audience"),
                 a("d7985b24", "Choose who can reply to this Article"),
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
@@ -2647,7 +2648,6 @@
                 a("c776f523", "Ads Revenue Share"),
                 a("ab9f38f8", "Creator Subscription"),
                 a("d5cab8b0", "Creator Revenue Share"),
-                a("deaf5b16", "Retry"),
                 a("g1a4a1b6", "ID verification error"),
                 a("e24305e4", "Your identity verification session was stale or invalid, please try again."),
                 a("f7954a0c", "Loading security keys data"),
@@ -13289,4 +13289,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.e98460da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.e501564a.js.map

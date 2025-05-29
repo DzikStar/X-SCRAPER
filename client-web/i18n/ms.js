@@ -1316,6 +1316,7 @@
                 }),
                 i("d4d35bea", "Menterjemah..."),
                 i("he9c9634", "Tidak dapat mengambil terjemahan"),
+                i("deaf5b16", "Cuba semula"),
                 i("j2198c98", "Sembunyikan siaran yang diterjemahkan"),
                 i("i73a7d48", "Diterjemahkan oleh Google"),
                 i("eeadb767", function (a) {
@@ -1915,9 +1916,9 @@
                 i("da8ac57c", "Edit Kapsyen"),
                 i("a8fdd09c", "Terbitkan Artikel"),
                 i("d8047cc8", "Terbitkan"),
-                i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda."),
-                i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan.");
-            i("e52d4998", "Pilih khalayak anda"),
+                i("ff7ddca2", "Artikel anda akan muncul sebagai siaran sebaik sahaja diterbitkan. Anda juga boleh menemukan Artikel itu di bawah tab Artikel pada profil anda.");
+            i("ef34d7be", "Kawalan khalayak dan balasan tidak dapat diedit selepas sesebuah artikel diterbitkan."),
+                i("e52d4998", "Pilih khalayak anda"),
                 i("d7985b24", "Pilih orang yang boleh membalas kepada Artikel ini"),
                 i("b5660338", "Pratonton Garis masa"),
                 i("hff1b97a", "Hanya yang Melanggan boleh membalas."),
@@ -2646,7 +2647,6 @@
                 i("c776f523", "Perkongsian Hasil Iklan"),
                 i("ab9f38f8", "Langganan Pencipta"),
                 i("d5cab8b0", "Perkongsian Hasil Pencipta"),
-                i("deaf5b16", "Cuba semula"),
                 i("g1a4a1b6", "Ralat pengesahan ID"),
                 i("e24305e4", "Sesi pengesahan identiti anda sudah tamat tempoh atau tidak sah, sila cuba lagi."),
                 i("f7954a0c", "Memuatkan data kunci keselamatan"),
@@ -13287,4 +13287,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.ed8cfd1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f70a7c6a.js.map

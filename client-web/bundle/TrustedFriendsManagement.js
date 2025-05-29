@@ -9,8 +9,8 @@
                 l = o.n(r),
                 n = o(325686),
                 t = o(370006),
-                s = o(786998),
-                i = o(929028),
+                i = o(786998),
+                s = o(929028),
                 c = o(386802);
             function u(e, a, o) {
                 return e || (!a && o ? "fixed" : void 0);
@@ -28,18 +28,18 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: i, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: A, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: s, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: A, withWideContainer: w } = this.props,
                         { isModal: S } = this.context,
                         P = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         C = (function (e, a, o) {
                             return e && !(a && o);
                         })(!!A, S, !!m);
-                    return d.createElement(d.Fragment, null, d.createElement(s.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: i, leftControl: P, middleControl: h, position: u(D, S, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: C, withWideContainer: w }), m || null);
+                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: P, middleControl: h, position: u(D, S, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: C, withWideContainer: w }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: a } = this.context,
-                        o = i.Z.getBackgroundStyles();
+                        o = s.Z.getBackgroundStyles();
                     return a ? d.createElement(n.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
                 }
             }
@@ -52,8 +52,8 @@
                 l = o(108362),
                 n = o(386802),
                 t = o(392237),
-                s = o(652904),
-                i = o(555079),
+                i = o(652904),
+                s = o(555079),
                 c = o(625661),
                 u = o(449067),
                 h = o(715601);
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: a, backButtonType: o, backLocation: l, centerTitle: n, hideBackButton: t, history: s, isFullWidth: u, isLarge: h, middleControl: D, onBackClick: m, rightControl: b, secondaryBar: M, subtitle: f, title: y } = this.props,
+                            const { appBarRef: e, appBarStyle: a, backButtonType: o, backLocation: l, centerTitle: n, hideBackButton: t, history: i, isFullWidth: u, isLarge: h, middleControl: D, onBackClick: m, rightControl: b, secondaryBar: M, subtitle: f, title: y } = this.props,
                                 { isModal: g } = this.context;
-                            return d.createElement(r.Z, { style: g ? [p.childViewAppBarRoot, p.appBarZindex] : p.appBarZindex }, d.createElement(c.ZP, { backButtonType: o || (g ? "close" : "back"), backLocation: l, centerTitle: n, fixed: !g, hideBackButton: t, history: s, isFullWidth: u, isLarge: h, middleControl: D, onBackClick: m, ref: e, rightControl: b, secondaryBar: M, style: [g && p.appBarModal, a], subtitle: f, title: y, titleDomId: i.Q_ }));
+                            return d.createElement(r.Z, { style: g ? [p.childViewAppBarRoot, p.appBarZindex] : p.appBarZindex }, d.createElement(c.ZP, { backButtonType: o || (g ? "close" : "back"), backLocation: l, centerTitle: n, fixed: !g, hideBackButton: t, history: i, isFullWidth: u, isLarge: h, middleControl: D, onBackClick: m, ref: e, rightControl: b, secondaryBar: M, style: [g && p.appBarModal, a], subtitle: f, title: y, titleDomId: s.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: a } = this.props,
@@ -72,10 +72,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: a, children: o, containerStyle: n, documentTitle: t, isFullWidth: i, isLarge: c, renderHeader: D, title: m, withoutBottomBarMobile: b } = this.props,
+                    const { "aria-hidden": e, bottomBar: a, children: o, containerStyle: n, documentTitle: t, isFullWidth: s, isLarge: c, renderHeader: D, title: m, withoutBottomBarMobile: b } = this.props,
                         { isModal: M } = this.context,
                         f = D ? D(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return d.createElement(s.Z, null, d.createElement(u.Z.Configure, { documentTitle: t, headerless: !0, title: m }), d.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [p.root, M && p.rootModal] }, !M && f, d.createElement(l.Z, { isFullWidth: i, isLarge: c, style: [p.container, M && p.containerModal, n] }, M ? d.createElement(h.Z, { style: p.viewport }, f, o) : o), a ? d.createElement(r.Z, { style: [p.bottomBarModal, !M && !b && p.bottomBarMobile] }, d.createElement(l.Z, { isFullWidth: i, isLarge: c }, a)) : null));
+                    return d.createElement(i.Z, null, d.createElement(u.Z.Configure, { documentTitle: t, headerless: !0, title: m }), d.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [p.root, M && p.rootModal] }, !M && f, d.createElement(l.Z, { isFullWidth: s, isLarge: c, style: [p.container, M && p.containerModal, n] }, M ? d.createElement(h.Z, { style: p.viewport }, f, o) : o), a ? d.createElement(r.Z, { style: [p.bottomBarModal, !M && !b && p.bottomBarMobile] }, d.createElement(l.Z, { isFullWidth: s, isLarge: c }, a)) : null));
                 }
             }
             (D.defaultProps = { isFullWidth: !1, isLarge: !1 }), (D.contextType = n.Z);
@@ -89,17 +89,17 @@
             const l = (0, o(500002).ZP)(({ staticContext: e, status: a = 404 }) => (e && (e.statusCode = a), d.createElement(r.ql, null, d.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
         },
         507651: (e, a, o) => {
-            o.d(a, { Z: () => i });
+            o.d(a, { Z: () => s });
             var d = o(807896),
                 r = o(202784),
                 l = o(107267),
                 n = o(403556),
                 t = o(791632);
-            const s = (e) => {
+            const i = (e) => {
                     const a = (0, l.useHistory)();
                     return r.createElement(n.Z, (0, d.Z)({}, e, { isCompact: (0, t.HD)(a) }));
                 },
-                i = r.memo(s);
+                s = r.memo(i);
         },
         56851: (e, a, o) => {
             o.d(a, { Z: () => m });
@@ -108,9 +108,9 @@
                 l = o(108362),
                 n = o(731708),
                 t = o(154003),
-                s = o(392237),
-                i = o(111677),
-                c = o.n(i),
+                i = o(392237),
+                s = o(111677),
+                c = o.n(s),
                 u = o(349035);
             const h = "error-detail",
                 D = c().e49537c2,
@@ -120,7 +120,7 @@
                     return d.createElement(r.Z, { testID: h }, d.createElement(u.Z, null), d.createElement(l.Z, { style: b.root }, d.createElement(n.ZP, { align: "center", color: "gray700", style: b.retryText }, D), d.createElement(t.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, p)));
                 }
             }
-            const b = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+            const b = i.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         652904: (e, a, o) => {
             o.d(a, { Z: () => c });
@@ -129,10 +129,10 @@
                 l = o(668214),
                 n = o(997174),
                 t = o(118823);
-            const s = (0, l.Z)()
+            const i = (0, l.Z)()
                 .propsFromActions(() => ({ updateLocation: t.YF, updateTweetDetailNav: n.NH }))
                 .withAnalytics();
-            class i extends d.Component {
+            class s extends d.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -146,10 +146,10 @@
                             location: { pathname: l, search: n },
                             locationKey: t,
                         } = e;
-                    let s = !1;
-                    a.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && a.pathname === o && ((this._isInBackground = !1), (s = !0));
-                    const i = r || t;
-                    ((i && r !== t) || (!i && o !== l) || d !== n || s) && this._performPageUpdates(this.props);
+                    let i = !1;
+                    a.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && a.pathname === o && ((this._isInBackground = !1), (i = !0));
+                    const s = r || t;
+                    ((s && r !== t) || (!s && o !== l) || d !== n || i) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -159,8 +159,8 @@
                     a.scribePageImpression(), o(a.contextualScribeNamespace, a.contextualScribeData), d(a.contextualScribeNamespace);
                 }
             }
-            i.defaultProps = { children: null };
-            const c = (0, r.ZP)(s(i));
+            s.defaultProps = { children: null };
+            const c = (0, r.ZP)(i(s));
         },
         466441: (e, a, o) => {
             o.r(a), o.d(a, { NotFoundScreen: () => y, default: () => k });
@@ -170,8 +170,8 @@
                 l = o(108362),
                 n = o(392237),
                 t = o(111677),
-                s = o.n(t),
-                i = o(187669),
+                i = o.n(t),
+                s = o(187669),
                 c = o(449067),
                 u = o(38293),
                 h = o(56851),
@@ -179,14 +179,14 @@
                 p = o(952793),
                 m = o(163889),
                 b = o(725516);
-            const M = s().ba929da8,
-                f = s().d203e242;
+            const M = i().ba929da8,
+                f = i().d203e242;
             function y(e) {
                 const { splat: a } = e.match.params,
                     { isModal: o } = d.useContext(r.Z),
                     n = (0, p.hC)("responsive_web_report_page_not_found");
                 return (
-                    (0, i.q)(() => {
+                    (0, s.q)(() => {
                         n && a && (0, m.ZP)(new Error(`Page not found: ${a}`));
                     }),
                     d.createElement(D.Z, null, d.createElement(c.Z.Configure, { backLocation: "/", documentTitle: M, title: f }), d.createElement(l.Z, { style: o && g.modal }, d.createElement(h.Z, null)), d.createElement(u.Z, { title: M, withMeta: !1 }))
@@ -202,8 +202,8 @@
                 l = o(688715),
                 n = o(111677),
                 t = o.n(n),
-                s = o(980407),
-                i = o(507651),
+                i = o(980407),
+                s = o(507651),
                 c = o(293115),
                 u = o(725516),
                 h = o(717988),
@@ -216,22 +216,20 @@
                 y = (0, h.p)(
                     () =>
                         Promise.all([
-                            o.e("icons.23"),
-                            o.e("icons.0"),
-                            o.e("icons.2"),
-                            o.e("icons.16"),
-                            o.e("icons.19"),
-                            o.e("icons.10"),
-                            o.e("icons.13"),
-                            o.e("icons.24"),
+                            o.e("icons.8"),
+                            o.e("icons.15"),
                             o.e("icons.7"),
+                            o.e("icons.3"),
+                            o.e("icons.24"),
+                            o.e("icons.12"),
                             o.e("icons.22"),
-                            o.e("icons.27"),
-                            o.e("icons.17"),
+                            o.e("icons.2"),
+                            o.e("icons.18"),
+                            o.e("icons.1"),
+                            o.e("icons.6"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.11"),
-                            o.e("icons.26"),
+                            o.e("icons.14"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -242,10 +240,11 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.8"),
-                            o.e("icons.4"),
-                            o.e("icons.14"),
                             o.e("icons.21"),
+                            o.e("icons.16"),
+                            o.e("icons.28"),
+                            o.e("icons.17"),
+                            o.e("icons.4"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -275,7 +274,6 @@
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -283,6 +281,7 @@
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                            o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             o.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-c6537f3f"),
                             o.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-1fa591c2"),
                             o.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-7290f522"),
@@ -293,8 +292,8 @@
                             o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
                             o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
                             o.e("shared~bundle.UserLists~ondemand.HoverCard"),
-                            o.e("bundle.UserLists-bc6ccf4c"),
-                            o.e("bundle.UserLists-2a1252f0"),
+                            o.e("shared~bundle.HomeTimeline~bundle.UserLists"),
+                            o.e("bundle.UserLists-6107ac1a"),
                             o.e("bundle.UserLists-e019dbda"),
                             o.e("bundle.UserLists-63cb1cc4"),
                         ]).then(o.bind(o, 696705)),
@@ -303,22 +302,20 @@
                 g = (0, h.p)(
                     () =>
                         Promise.all([
-                            o.e("icons.23"),
-                            o.e("icons.0"),
-                            o.e("icons.2"),
-                            o.e("icons.16"),
-                            o.e("icons.19"),
-                            o.e("icons.10"),
-                            o.e("icons.13"),
-                            o.e("icons.24"),
+                            o.e("icons.8"),
+                            o.e("icons.15"),
                             o.e("icons.7"),
+                            o.e("icons.3"),
+                            o.e("icons.24"),
+                            o.e("icons.12"),
                             o.e("icons.22"),
-                            o.e("icons.27"),
-                            o.e("icons.17"),
+                            o.e("icons.2"),
+                            o.e("icons.18"),
+                            o.e("icons.1"),
+                            o.e("icons.6"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.11"),
-                            o.e("icons.26"),
+                            o.e("icons.14"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -329,10 +326,11 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.8"),
-                            o.e("icons.4"),
-                            o.e("icons.14"),
                             o.e("icons.21"),
+                            o.e("icons.16"),
+                            o.e("icons.28"),
+                            o.e("icons.17"),
+                            o.e("icons.4"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -362,7 +360,6 @@
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -370,6 +367,7 @@
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                             o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                            o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             o.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-c6537f3f"),
                             o.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-1fa591c2"),
                             o.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-7290f522"),
@@ -380,8 +378,8 @@
                             o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
                             o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
                             o.e("shared~bundle.UserLists~ondemand.HoverCard"),
-                            o.e("bundle.UserLists-bc6ccf4c"),
-                            o.e("bundle.UserLists-2a1252f0"),
+                            o.e("shared~bundle.HomeTimeline~bundle.UserLists"),
+                            o.e("bundle.UserLists-6107ac1a"),
                             o.e("bundle.UserLists-e019dbda"),
                             o.e("bundle.UserLists-63cb1cc4"),
                         ]).then(o.bind(o, 582313)),
@@ -397,13 +395,13 @@
                                 { to: { pathname: `/i/circles/${l}/members`, state: o.state }, label: m, key: m },
                                 { to: { pathname: `/i/circles/${l}/members/suggested`, state: o.state }, label: b, key: b },
                             ];
-                            return d.createElement(i.Z, { "aria-label": p, links: e });
+                            return d.createElement(s.Z, { "aria-label": p, links: e });
                         }, [o, l]);
                     return d.createElement(
                         c.nO,
                         { namespace: f },
                         d.createElement(
-                            s.Z,
+                            i.Z,
                             {
                                 backButtonType: "close",
                                 history: a,
@@ -426,9 +424,9 @@
                 l = o(194504),
                 n = o(235902),
                 t = o(392237),
-                s = o(325686),
-                i = o(111677),
-                c = o.n(i),
+                i = o(325686),
+                s = o(111677),
+                c = o.n(s),
                 u = o(912021),
                 h = o(516951),
                 D = o(731708),
@@ -474,13 +472,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: i, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: k, style: w, to: S } = this.props,
+                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: k, style: w, to: S } = this.props,
                         { location: P } = this.state,
                         C = S ? this._getMemoizedLink(S, k) : void 0,
-                        I = i ? i(S) : P?.pathname === C?.pathname,
-                        v = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0 }),
-                        x = m ? "medium" : I ? "bold" : "medium";
-                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": I, focusable: !!I, interactiveStyles: v, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? A.pill : A.link, u && I ? A.active : null, c ? (u ? A.compactPill : A.compactLink) : null, h ? A.roundedRect : null, w], withoutInteractiveStyles: m || u }, ({ isFocused: a, isHovered: i }) => r.createElement(s.Z, { style: u && A.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [A.text, { color: this._getTextColor(I, i, m, u) }, c && A.compactText, m && a && A.focusedText], weight: x }, e && r.createElement(e, { style: A.icon }), l, m || u ? null : r.createElement(s.Z, { style: I && [A.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [A.badge, o >= 10 && A.multiDigitBadge, o >= 20 && A.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: A.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
+                        I = s ? s(S) : P?.pathname === C?.pathname,
+                        B = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0 }),
+                        v = m ? "medium" : I ? "bold" : "medium";
+                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": I, focusable: !!I, interactiveStyles: B, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? A.pill : A.link, u && I ? A.active : null, c ? (u ? A.compactPill : A.compactLink) : null, h ? A.roundedRect : null, w], withoutInteractiveStyles: m || u }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && A.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [A.text, { color: this._getTextColor(I, s, m, u) }, c && A.compactText, m && a && A.focusedText], weight: v }, e && r.createElement(e, { style: A.icon }), l, m || u ? null : r.createElement(i.Z, { style: I && [A.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [A.badge, o >= 10 && A.multiDigitBadge, o >= 20 && A.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: A.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = m.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -504,8 +502,8 @@
                 })),
                 w = k,
                 S = t.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                P = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: s, links: i, style: c, visibleItemIndex: u }) => {
-                    const h = i
+                P = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
+                    const h = s
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
@@ -513,15 +511,15 @@
                         p = D() && !t,
                         m = r.useMemo(
                             () =>
-                                i.filter(Boolean).map(({ label: a, viewType: l, ...n }, i) => {
-                                    const c = p ? [S.linkRedesign, 0 === i && S.firstLinkRedesign, e && 0 === i && S.withNoPaddingStart] : void 0;
-                                    return r.createElement(w, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: s, isWebRedesign: p, style: c }), a);
+                                s.filter(Boolean).map(({ label: a, viewType: l, ...n }, s) => {
+                                    const c = p ? [S.linkRedesign, 0 === s && S.firstLinkRedesign, e && 0 === s && S.withNoPaddingStart] : void 0;
+                                    return r.createElement(w, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: i, isWebRedesign: p, style: c }), a);
                                 }),
-                            [e, o, t, s, p, i],
+                            [e, o, t, i, p, s],
                         );
                     return r.createElement(l.Z, { "aria-label": a, buttonsContainerStyle: t && S.gap, childrenStyle: !p && S.flexGrow, key: h, style: [t ? null : S.segmentedControl, p && S.leftAligned, c], visibleItemIndex: u }, m);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.bd1c475a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.0381c92a.js.map

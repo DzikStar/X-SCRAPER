@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "5d080c0d6cc9b7fc80ac60fda5977c513bc4937b",
+    feature_set_token: "699b835c4d2827c8c9b7a3e97c173de77fabd76b",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -1860,6 +1860,7 @@ var manifest = {
         premium_failed_payment_profile_card_17219: { name: "premium_failed_payment_profile_card_17219", type: "experiment", enumeration_values: ["control", "holdback"] },
         premium_home_nav_upgrade_upsell__variant_key_fs: { name: "premium_home_nav_upgrade_upsell__variant_key_fs", type: "string", defaultValue: "" },
         premium_module_v1_17146: { name: "premium_module_v1_17146", type: "experiment", enumeration_values: ["control", "treatment"] },
+        premium_paywall_web_refresh_17409: { name: "premium_paywall_web_refresh_17409", type: "experiment", enumeration_values: ["control", "treatment"] },
         premium_post_analytics_post_details_upsell_17122: { name: "premium_post_analytics_post_details_upsell_17122", type: "experiment", enumeration_values: [] },
         premium_reply_boost_popup_web_17100: { name: "premium_reply_boost_popup_web_17100", type: "experiment", enumeration_values: [] },
         premium_verified_icon_logo_update_web_17126: { name: "premium_verified_icon_logo_update_web_17126", type: "experiment", enumeration_values: [] },

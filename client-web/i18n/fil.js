@@ -1317,6 +1317,7 @@
                 }),
                 i("d4d35bea", "Isinasalin..."),
                 i("he9c9634", "Hindi nakuha ang pagsasalin"),
+                i("deaf5b16", "Subukan muli"),
                 i("j2198c98", "Itago ang isinaling post"),
                 i("i73a7d48", "Isinalin ng Google"),
                 i("eeadb767", function (a) {
@@ -1916,9 +1917,9 @@
                 i("da8ac57c", "I-edit ang Caption"),
                 i("a8fdd09c", "I-publish ang Article"),
                 i("d8047cc8", "I-publish"),
-                i("ff7ddca2", "Makikita bilang isang post ang Article mo kapag nag-publish ka na. Makikita rin ito sa ilalim ng tab na Articles sa profile mo."),
-                i("ef34d7be", "Hindi na mae-edit ang mga kontrol sa Audience at reply pagkatapos ma-publish ang isang article");
-            i("e52d4998", "Piliin ang audience mo"),
+                i("ff7ddca2", "Makikita bilang isang post ang Article mo kapag nag-publish ka na. Makikita rin ito sa ilalim ng tab na Articles sa profile mo.");
+            i("ef34d7be", "Hindi na mae-edit ang mga kontrol sa Audience at reply pagkatapos ma-publish ang isang article"),
+                i("e52d4998", "Piliin ang audience mo"),
                 i("d7985b24", "Piliin kung sino ang puwedeng mag-reply sa Article na ito"),
                 i("b5660338", "Preview ng timeline"),
                 i("hff1b97a", "Mga Subscriber lang ang puwedeng mag-reply."),
@@ -2647,7 +2648,6 @@
                 i("c776f523", "Ads Revenue Share"),
                 i("ab9f38f8", "Creator Subscription"),
                 i("d5cab8b0", "Creator Revenue Share"),
-                i("deaf5b16", "Subukan muli"),
                 i("g1a4a1b6", "Error sa beripikasyon ng ID"),
                 i("e24305e4", "Nag-expire o hindi valid ang session ng beripikasyon ng pagkakakilanlan mo, pakisubukan ulit."),
                 i("f7954a0c", "Nilo-load ang data ng mga panseguridad na key"),
@@ -13301,4 +13301,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.de74504a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.aeb1e98a.js.map

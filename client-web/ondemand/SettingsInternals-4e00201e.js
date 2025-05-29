@@ -23,16 +23,16 @@
                 g = t(290402),
                 A = t(811105),
                 y = t(652904),
-                S = t(264922),
-                _ = t(396634),
-                E = t(71620),
+                _ = t(264922),
+                E = t(396634),
+                S = t(71620),
                 k = t(668214),
                 P = t(948985);
             const w = (e, a) => a.match.params.appId,
                 Z = (e, a) => P.$q.selectAppsById(e, w(0, a)),
                 I = (0, k.Z)()
                     .propsFromState(() => ({ appId: w, fetchStatus: P.UD, details: Z }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, E.zr)("APPLICATION_DETAIL"), fetchApplication: P.zw, revokeApplication: P.$q.revokeApplication, revokeOauth2Token: P.$q.revokeOauth2Token }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("APPLICATION_DETAIL"), fetchApplication: P.zw, revokeApplication: P.$q.revokeApplication, revokeOauth2Token: P.$q.revokeOauth2Token }))
                     .withAnalytics({ page: "settings", section: "application_detail" }),
                 v = f().g8d1b99b,
                 C = f().eafcc76a,
@@ -41,9 +41,9 @@
                 L = f().b2347f7c,
                 N = f().e1fda16e,
                 F = f().b8f3ed46,
-                R = f().gb8d09ba,
-                z = f().g6dc09a0,
-                B = f().a6e6e898,
+                B = f().gb8d09ba,
+                R = f().g6dc09a0,
+                z = f().a6e6e898,
                 O = f().cde3b9ae,
                 H = f().g0d7813a,
                 U = f().c9b35b9e,
@@ -80,8 +80,8 @@
                                 a.organization_url ? n.createElement(u.Z, { color: "primary", label: a.organization_url, link: a.organization_url }) : null,
                                 n.createElement(r.Z, { style: K.itemContainer }, n.createElement(s.ZP, { color: "gray700", size: "subtext2" }, a.description)),
                                 d,
-                                n.createElement(m.Z, { text: z }),
-                                e.map((e) => n.createElement(r.Z, { key: e.token }, this._renderPermissions(e), e.ios ? null : n.createElement(_.Z, { onRevoke: this._handleRevokeApp, reportApplicationHref: `${q}?${(0, o.stringify)(t)}`, revoked: !!e.revoked, token: e.token, tokenType: e.token_type || "oauth1" }))),
+                                n.createElement(m.Z, { text: R }),
+                                e.map((e) => n.createElement(r.Z, { key: e.token }, this._renderPermissions(e), e.ios ? null : n.createElement(E.Z, { onRevoke: this._handleRevokeApp, reportApplicationHref: `${q}?${(0, o.stringify)(t)}`, revoked: !!e.revoked, token: e.token, tokenType: e.token_type || "oauth1" }))),
                                 a.ios ? n.createElement(h.Z, { link: V, style: [K.itemContainer, K.center] }, n.createElement(s.ZP, { color: "link" }, $)) : null,
                             );
                         });
@@ -106,10 +106,10 @@
                 }
                 _renderReadWritePermissions(e) {
                     let a = null;
-                    return e.can_read_dms ? (a = H) : e.can_write ? (a = O) : e.can_read && (a = B), a ? n.createElement(p.Z, { label: a }) : null;
+                    return e.can_read_dms ? (a = H) : e.can_write ? (a = O) : e.can_read && (a = z), a ? n.createElement(p.Z, { label: a }) : null;
                 }
                 _renderEmailPermission(e) {
-                    return e.email_access ? n.createElement(p.Z, { label: R }) : null;
+                    return e.email_access ? n.createElement(p.Z, { label: B }) : null;
                 }
                 _renderAdsPermission(e) {
                     let a = null;
@@ -132,7 +132,7 @@
                     const { details: e, fetchStatus: a, location: t } = this.props,
                         o = e[0],
                         r = o ? o.name : "";
-                    return n.createElement(y.Z, null, n.createElement(S.Z, { location: t, title: r }, n.createElement(g.Z, { "aria-label": L, fetchStatus: a, onRequestRetry: this._handleRetry, render: this._render })));
+                    return n.createElement(y.Z, null, n.createElement(_.Z, { location: t, title: r }, n.createElement(g.Z, { "aria-label": L, fetchStatus: a, onRequestRetry: this._handleRetry, render: this._render })));
                 }
             }
             const X = I(W),
@@ -171,9 +171,9 @@
             var g = t(269011),
                 A = t(335632),
                 y = t(962741),
-                S = t(154003),
-                _ = t(712816),
-                E = t(879596),
+                _ = t(154003),
+                E = t(712816),
+                S = t(879596),
                 k = t(942893),
                 P = t(71620),
                 w = t(601576),
@@ -195,17 +195,17 @@
                             o?.blocking
                                 ? n(r).then((a) => {
                                       e({ text: x }), this._scribeAction("unblock");
-                                  }, t(E.D))
+                                  }, t(S.D))
                                 : a(r).then((a) => {
                                       e({ text: L }), this._scribeAction("block");
-                                  }, t(_.d));
+                                  }, t(E.d));
                         });
                 }
                 render() {
                     const { user: e } = this.props;
                     if (e) {
                         const a = e.blocking ? C : T;
-                        return o.createElement(S.ZP, { "aria-label": a, onPress: this._handleUnblockToggle, size: "medium", type: e.blocking ? "destructiveFilled" : "destructiveOutlined" }, a);
+                        return o.createElement(_.ZP, { "aria-label": a, onPress: this._handleUnblockToggle, size: "medium", type: e.blocking ? "destructiveFilled" : "destructiveOutlined" }, a);
                     }
                     return null;
                 }
@@ -216,9 +216,9 @@
                 }
             }
             const F = v(N),
-                R = { ...(0, A.G)({}), [y.ZP.User]: (0, g.Z)({ decoration: ({ userId: e }) => o.createElement(F, { userId: e }) }) },
-                z = c().a5f32aa2,
-                B = c().ef731b14,
+                B = { ...(0, A.G)({}), [y.ZP.User]: (0, g.Z)({ decoration: ({ userId: e }) => o.createElement(F, { userId: e }) }) },
+                R = c().a5f32aa2,
+                z = c().ef731b14,
                 O = c().i859a9d4,
                 H = o.createElement(c().I18NFormatMessage, { $i18n: "ab3bf5a7" }, o.createElement(r.ZP, { link: (0, d.ju)("https://support.x.com/articles/117063") }, c().e554ba83));
             class U extends o.Component {
@@ -243,7 +243,7 @@
                     e(this._getLegacyModule());
                 }
                 render() {
-                    return o.createElement(m.Z, null, o.createElement("div", null, o.createElement(b.Z, null, H), o.createElement(s.Z, null)), o.createElement(h.Z, { entryConfiguration: R, loadingAccessibilityLabel: B, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: z }));
+                    return o.createElement(m.Z, null, o.createElement("div", null, o.createElement(b.Z, null, H), o.createElement(s.Z, null)), o.createElement(h.Z, { entryConfiguration: B, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: R }));
                 }
             }
             const j = ({ blockType: e, emptyStateMessage: a, emptyStateTitle: t, scribeNamespace: r, supportUrl: d }) => M((l) => o.createElement(p.nO, { namespace: r }, o.createElement(U, (0, n.Z)({}, l, { blockType: e, emptyStateMessage: a, emptyStateTitle: t, supportUrl: d }))));
@@ -261,7 +261,7 @@
                 u = (0, l.v)({ scribeNamespace: { page: "blocked", section: "imported_blocked_accounts" }, blockType: d.kH.Imported, emptyStateTitle: i, emptyStateMessage: s, supportUrl: c });
         },
         689044: (e, a, t) => {
-            t.r(a), t.d(a, { BlockedAccountsScreen: () => y, default: () => S });
+            t.r(a), t.d(a, { BlockedAccountsScreen: () => y, default: () => _ });
             var n = t(202784),
                 o = t(107267),
                 r = t(111677),
@@ -281,22 +281,22 @@
                 g = (0, u.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.23"),
-                            t.e("icons.0"),
-                            t.e("icons.2"),
-                            t.e("icons.16"),
-                            t.e("icons.19"),
-                            t.e("icons.10"),
-                            t.e("icons.13"),
-                            t.e("icons.24"),
+                            t.e("icons.8"),
+                            t.e("icons.15"),
                             t.e("icons.7"),
+                            t.e("icons.3"),
+                            t.e("icons.24"),
+                            t.e("icons.12"),
                             t.e("icons.22"),
-                            t.e("icons.27"),
-                            t.e("icons.17"),
+                            t.e("icons.2"),
+                            t.e("icons.18"),
+                            t.e("icons.9"),
+                            t.e("icons.1"),
+                            t.e("icons.6"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
-                            t.e("icons.11"),
-                            t.e("icons.26"),
+                            t.e("icons.14"),
+                            t.e("icons.5"),
                             t.e("modules.audio-6107ac1a"),
                             t.e("modules.audio-b953418a"),
                             t.e("modules.audio-7c51e6a7"),
@@ -307,9 +307,12 @@
                             t.e("modules.audio-e019dbda"),
                             t.e("modules.audio-262c94d4"),
                             t.e("modules.audio-c6fe4ea4"),
-                            t.e("icons.8"),
                             t.e("icons.21"),
-                            t.e("icons.1"),
+                            t.e("icons.16"),
+                            t.e("icons.17"),
+                            t.e("icons.19"),
+                            t.e("icons.0"),
+                            t.e("icons.4"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -339,8 +342,8 @@
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             t.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            t.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                             t.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
+                            t.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-c6537f3f"),
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-1fa591c2"),
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-7290f522"),
@@ -348,7 +351,6 @@
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320"),
                             t.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             t.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
-                            t.e("shared~ondemand.SensitiveMediaSettings~ondemand.SettingsRevamp~ondemand.SettingsInternals~bundle.SettingsTran"),
                             t.e("shared~ondemand.SettingsInternals~bundle.Ocf"),
                             t.e("ondemand.SettingsInternals-6107ac1a"),
                             t.e("ondemand.SettingsInternals-9f4db315"),
@@ -364,22 +366,22 @@
                 A = (0, u.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.23"),
-                            t.e("icons.0"),
-                            t.e("icons.2"),
-                            t.e("icons.16"),
-                            t.e("icons.19"),
-                            t.e("icons.10"),
-                            t.e("icons.13"),
-                            t.e("icons.24"),
+                            t.e("icons.8"),
+                            t.e("icons.15"),
                             t.e("icons.7"),
+                            t.e("icons.3"),
+                            t.e("icons.24"),
+                            t.e("icons.12"),
                             t.e("icons.22"),
-                            t.e("icons.27"),
-                            t.e("icons.17"),
+                            t.e("icons.2"),
+                            t.e("icons.18"),
+                            t.e("icons.9"),
+                            t.e("icons.1"),
+                            t.e("icons.6"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
-                            t.e("icons.11"),
-                            t.e("icons.26"),
+                            t.e("icons.14"),
+                            t.e("icons.5"),
                             t.e("modules.audio-6107ac1a"),
                             t.e("modules.audio-b953418a"),
                             t.e("modules.audio-7c51e6a7"),
@@ -390,9 +392,12 @@
                             t.e("modules.audio-e019dbda"),
                             t.e("modules.audio-262c94d4"),
                             t.e("modules.audio-c6fe4ea4"),
-                            t.e("icons.8"),
                             t.e("icons.21"),
-                            t.e("icons.1"),
+                            t.e("icons.16"),
+                            t.e("icons.17"),
+                            t.e("icons.19"),
+                            t.e("icons.0"),
+                            t.e("icons.4"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -422,8 +427,8 @@
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             t.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                            t.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                             t.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
+                            t.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-c6537f3f"),
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-1fa591c2"),
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-7290f522"),
@@ -431,7 +436,6 @@
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320"),
                             t.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             t.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
-                            t.e("shared~ondemand.SensitiveMediaSettings~ondemand.SettingsRevamp~ondemand.SettingsInternals~bundle.SettingsTran"),
                             t.e("shared~ondemand.SettingsInternals~bundle.Ocf"),
                             t.e("ondemand.SettingsInternals-6107ac1a"),
                             t.e("ondemand.SettingsInternals-9f4db315"),
@@ -460,7 +464,7 @@
                 }
             }
             y.contextType = s.rC;
-            const S = y;
+            const _ = y;
         },
         720217: (e, a, t) => {
             t.r(a), t.d(a, { ConnectedAccounts: () => x, default: () => L });
@@ -484,13 +488,13 @@
                 g = t(264922),
                 A = t(71620),
                 y = t(668214),
-                S = t(257166),
-                _ = t(38562),
-                E = t(673110),
+                _ = t(257166),
+                E = t(38562),
+                S = t(673110),
                 k = t(601576);
             const P = (0, y.Z)()
-                    .propsFromState(() => ({ userEmail: S.selectFirstEmail, fetchStatus: _.UD, ssoConnections: _.An }))
-                    .propsFromActions(() => ({ addToast: k.fz, createLocalApiErrorHandler: (0, A.zr)("SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT"), deleteSSOConnection: _.O5, fetchDevicesIfNeeded: S.fetchDevicesIfNeeded, fetchSettingsIfNeeded: _.Sb, fetchSettings: _.wv, verifyPassword: E.Gv }))
+                    .propsFromState(() => ({ userEmail: _.selectFirstEmail, fetchStatus: E.UD, ssoConnections: E.An }))
+                    .propsFromActions(() => ({ addToast: k.fz, createLocalApiErrorHandler: (0, A.zr)("SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT"), deleteSSOConnection: E.O5, fetchDevicesIfNeeded: _.fetchDevicesIfNeeded, fetchSettingsIfNeeded: E.Sb, fetchSettings: E.wv, verifyPassword: S.Gv }))
                     .withAnalytics({ page: "settings", section: "connected_accounts", component: "delete_sso_connection" }),
                 w = p().h1abfbce,
                 Z = p().f8e46b90,
@@ -588,9 +592,9 @@
                 g = u().ab987f3c,
                 A = u().b033248c,
                 y = u().c69b4798,
-                S = u().eca117e6,
-                _ = u().acd36386,
-                E = u().gd8511ca,
+                _ = u().eca117e6,
+                E = u().acd36386,
+                S = u().gd8511ca,
                 k = u().eca935ec,
                 P = (0, o.ju)("https://help.x.com/safety-and-security/email-and-phone-discoverability-settings"),
                 w = u().ac77c66c,
@@ -606,12 +610,12 @@
                         },
                         [a, u],
                     );
-                return n.createElement(m.Z, null, n.createElement(h.Z, { location: c, title: M }, n.createElement(r.Z, { description: g }), n.createElement(d.Z, { text: A }), n.createElement(r.Z, { description: y }), n.createElement(l.Z, { checked: t, helpText: _, label: S, learnMoreLink: P, name: "discoverable_by_email", onChange: p }), n.createElement(l.Z, { checked: o, helpText: k, label: E, learnMoreLink: P, name: "discoverable_by_mobile_phone", onChange: p }), n.createElement(s.Z, null), n.createElement(d.Z, { text: w }), n.createElement(r.Z, { description: I, learnMoreLabel: C, learnMoreLink: v }), n.createElement(i.Z, { label: Z, link: "/settings/contacts_dashboard" })));
+                return n.createElement(m.Z, null, n.createElement(h.Z, { location: c, title: M }, n.createElement(r.Z, { description: g }), n.createElement(d.Z, { text: A }), n.createElement(r.Z, { description: y }), n.createElement(l.Z, { checked: t, helpText: E, label: _, learnMoreLink: P, name: "discoverable_by_email", onChange: p }), n.createElement(l.Z, { checked: o, helpText: k, label: S, learnMoreLink: P, name: "discoverable_by_mobile_phone", onChange: p }), n.createElement(s.Z, null), n.createElement(d.Z, { text: w }), n.createElement(r.Z, { description: I, learnMoreLabel: C, learnMoreLink: v }), n.createElement(i.Z, { label: Z, link: "/settings/contacts_dashboard" })));
             }
             const x = f(T);
         },
         221930: (e, a, t) => {
-            t.r(a), t.d(a, { SettingsContactsDashboardScreen: () => z, default: () => O });
+            t.r(a), t.d(a, { SettingsContactsDashboardScreen: () => R, default: () => O });
             var n = t(202784),
                 o = t(325686),
                 r = t(731708),
@@ -631,9 +635,9 @@
                 g = t(652904),
                 A = t(293115),
                 y = t(312771),
-                S = t(170069),
-                _ = t(609848),
-                E = t(264922),
+                _ = t(170069),
+                E = t(609848),
+                S = t(264922),
                 k = t(267966),
                 P = t(71620),
                 w = t(668214),
@@ -648,23 +652,23 @@
                 L = u().b864be7a,
                 N = { headline: u().g5fa1090, text: u().h3e420fc, confirmButtonLabel: u().e68b09b4 },
                 F = u().ca24589e,
-                R = (e) => e.id_str;
-            class z extends n.Component {
+                B = (e) => e.id_str;
+            class R extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { verificationRequired: !1 }),
                         (this._renderTimeline = () => {
                             const { contacts: e, fetchStatus: a } = this.props;
-                            return n.createElement(f.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: R, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
+                            return n.createElement(f.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: B, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
                         }),
                         (this._renderContact = (e) => {
                             const { id_str: a, import_source: t, vcard: d } = e,
                                 s = this._getContactProp(d.get("fn")) || F,
                                 i = this._getContactProperties(d.get("tel")),
                                 c = [...this._getContactProperties(d.get("email")), ...i];
-                            return n.createElement(o.Z, { key: a, style: [[k.Z.infoText, k.Z.bottomBorder], B.contactContainer] }, n.createElement(l.Z, { Icon: m.default, color: "neutral", style: B.personIcon }), n.createElement(o.Z, null, n.createElement(r.ZP, null, s), c ? c.map((e) => n.createElement(r.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, t ? n.createElement(r.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${t}`) : null));
+                            return n.createElement(o.Z, { key: a, style: [[k.Z.infoText, k.Z.bottomBorder], z.contactContainer] }, n.createElement(l.Z, { Icon: m.default, color: "neutral", style: z.personIcon }), n.createElement(o.Z, null, n.createElement(r.ZP, null, s), c ? c.map((e) => n.createElement(r.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, t ? n.createElement(r.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${t}`) : null));
                         }),
-                        (this._renderFooter = (e) => (e === y.ZP.LOADING ? n.createElement(o.Z, { style: B.loadingContainer }, n.createElement(b.Z, { fetchStatus: e, render: h.Z })) : null)),
+                        (this._renderFooter = (e) => (e === y.ZP.LOADING ? n.createElement(o.Z, { style: z.loadingContainer }, n.createElement(b.Z, { fetchStatus: e, render: h.Z })) : null)),
                         (this._handleRemoveContacts = () => {
                             const { createLocalApiErrorHandler: e, deleteContacts: a } = this.props;
                             a().catch(e({ showToast: !0 }));
@@ -678,12 +682,12 @@
                 }
                 render() {
                     const { contacts: e, fetchContactsIfNeeded: a, fetchStatus: t, location: o } = this.props;
-                    return n.createElement(A.nO, { namespace: C }, n.createElement(g.Z, null, n.createElement(E.Z, { location: o, title: T }, n.createElement(D.Z, { confirmationSheetConfirmButtonLabel: N.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: N.headline, confirmationSheetText: N.text, label: L, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(S.Z, null, x), n.createElement(s.Z, null), n.createElement(_.Z, { fetch: a, fetchStatus: e.length > 0 ? y.ZP.LOADED : t, render: () => this._renderTimeline() }))));
+                    return n.createElement(A.nO, { namespace: C }, n.createElement(g.Z, null, n.createElement(S.Z, { location: o, title: T }, n.createElement(D.Z, { confirmationSheetConfirmButtonLabel: N.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: N.headline, confirmationSheetText: N.text, label: L, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(_.Z, null, x), n.createElement(s.Z, null), n.createElement(E.Z, { fetch: a, fetchStatus: e.length > 0 ? y.ZP.LOADED : t, render: () => this._renderTimeline() }))));
                 }
             }
-            z.contextType = M.rC;
-            const B = i.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
-                O = v(z);
+            R.contextType = M.rC;
+            const z = i.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
+                O = v(R);
         },
         412483: (e, a, t) => {
             t.r(a), t.d(a, { ContentPreferencesPage: () => I, default: () => v });
@@ -708,9 +712,9 @@
                 g = i().fcf3e54c,
                 A = i().hfb77cf6,
                 y = i().d495680e,
-                S = i().f350f0c0,
-                _ = i().fd3369a2,
-                E = i().h1ef00dc,
+                _ = i().f350f0c0,
+                E = i().fd3369a2,
+                S = i().h1ef00dc,
                 k = i().e8f57e08,
                 P = i().e8f57e08,
                 w = i().hfc86556,
@@ -726,7 +730,7 @@
                 render() {
                     const { location: e } = this.props,
                         a = this.context.featureSwitches.isTrue("responsive_web_trends_setting_new_endpoints") ? "/settings/explore" : "/settings/trends";
-                    return n.createElement(u.Z, null, n.createElement(m.Z, { location: e, screenType: "primaryDetail", title: M }, n.createElement(o.Z, { testID: f, text: g }), n.createElement(r.Z, { label: E, link: "/settings/search" }), n.createElement(r.Z, { label: this._trendsLabel, link: a }), n.createElement(d.Z, null), n.createElement(o.Z, { text: y }), n.createElement(r.Z, { label: S, link: "/i/flow/language_selector" }), n.createElement(l.Z, { description: _ }), n.createElement(d.Z, null), n.createElement(o.Z, { text: A }), n.createElement(r.Z, { label: w, link: "/settings/mute" }), n.createElement(r.Z, { label: Z, link: "/settings/blocked/all" }), n.createElement(d.Z, null), n.createElement(o.Z, { text: k }), n.createElement(r.Z, { description: this._renderPersonalizationDescription(), label: P, link: "/settings/account/personalization" })));
+                    return n.createElement(u.Z, null, n.createElement(m.Z, { location: e, screenType: "primaryDetail", title: M }, n.createElement(o.Z, { testID: f, text: g }), n.createElement(r.Z, { label: S, link: "/settings/search" }), n.createElement(r.Z, { label: this._trendsLabel, link: a }), n.createElement(d.Z, null), n.createElement(o.Z, { text: y }), n.createElement(r.Z, { label: _, link: "/i/flow/language_selector" }), n.createElement(l.Z, { description: E }), n.createElement(d.Z, null), n.createElement(o.Z, { text: A }), n.createElement(r.Z, { label: w, link: "/settings/mute" }), n.createElement(r.Z, { label: Z, link: "/settings/blocked/all" }), n.createElement(d.Z, null), n.createElement(o.Z, { text: k }), n.createElement(r.Z, { description: this._renderPersonalizationDescription(), label: P, link: "/settings/account/personalization" })));
                 }
             }
             I.contextType = c.rC;
@@ -770,11 +774,11 @@
                 g = t(71620),
                 A = t(668214),
                 y = t(558477);
-            const S = (0, A.Z)()
+            const _ = (0, A.Z)()
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("DEACTIVATE"), deactivate: y.Z }))
                     .withAnalytics({ page: "settings", section: "deactivate" }),
-                _ = h().j035733c,
-                E = h().j4a29d52,
+                E = h().j035733c,
+                S = h().j4a29d52,
                 k = h().ea989810,
                 P = h().f6e73faa,
                 w = h().c3743328,
@@ -804,12 +808,12 @@
                     const { location: e } = this.props,
                         { viewerUserId: a } = this.context,
                         { showPasswordDialog: t } = this.state;
-                    return r()(!!a, "viewerUserId must be defined"), n.createElement(D.Z, null, n.createElement(f.Z, { location: e, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: t, reenterPasswordLabel: v, saveChangesHeaderLabel: I, submitLabel: P, submitType: "destructiveFilled", title: k }, n.createElement(d.Z, null, n.createElement(b.ZP, { key: a, userId: a, withLink: !1 }), n.createElement(i.Z, { text: w }), n.createElement(x, { withBottomBorder: !1 }, _), n.createElement(i.Z, { text: Z }), n.createElement(x, null, E), n.createElement(x, null, n.createElement(h().I18NFormatMessage, { $i18n: "g124fce9" }, n.createElement(s.ZP, { link: T }, h().fc025d1d))), n.createElement(x, null, n.createElement(h().I18NFormatMessage, { $i18n: "d9ef8fbb" }, n.createElement(s.ZP, { link: C }, h().bb5e039c))), n.createElement(x, null, n.createElement(h().I18NFormatMessage, { $i18n: "b7a3adc1" }, n.createElement(s.ZP, { link: C }, h().j37efff6))), n.createElement(x, { withBottomBorder: !1 }, n.createElement(h().I18NFormatMessage, { $i18n: "f3613d0b" }, n.createElement(s.ZP, { link: "/settings/download_your_data" }, h().ce5bfe12))), n.createElement(c.Z, null), n.createElement(u.Z, { color: "red500", label: P, onPress: this._handleDeactivateRequest }))));
+                    return r()(!!a, "viewerUserId must be defined"), n.createElement(D.Z, null, n.createElement(f.Z, { location: e, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: t, reenterPasswordLabel: v, saveChangesHeaderLabel: I, submitLabel: P, submitType: "destructiveFilled", title: k }, n.createElement(d.Z, null, n.createElement(b.ZP, { key: a, userId: a, withLink: !1 }), n.createElement(i.Z, { text: w }), n.createElement(x, { withBottomBorder: !1 }, E), n.createElement(i.Z, { text: Z }), n.createElement(x, null, S), n.createElement(x, null, n.createElement(h().I18NFormatMessage, { $i18n: "g124fce9" }, n.createElement(s.ZP, { link: T }, h().fc025d1d))), n.createElement(x, null, n.createElement(h().I18NFormatMessage, { $i18n: "d9ef8fbb" }, n.createElement(s.ZP, { link: C }, h().bb5e039c))), n.createElement(x, null, n.createElement(h().I18NFormatMessage, { $i18n: "b7a3adc1" }, n.createElement(s.ZP, { link: C }, h().j37efff6))), n.createElement(x, { withBottomBorder: !1 }, n.createElement(h().I18NFormatMessage, { $i18n: "f3613d0b" }, n.createElement(s.ZP, { link: "/settings/download_your_data" }, h().ce5bfe12))), n.createElement(c.Z, null), n.createElement(u.Z, { color: "red500", label: P, onPress: this._handleDeactivateRequest }))));
                 }
             }
             L.contextType = p.rC;
-            const N = S(L);
+            const N = _(L);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-4e00201e.3e6b2b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-4e00201e.a5429e0a.js.map

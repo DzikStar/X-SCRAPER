@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Debugger", "icons/IconChevronDown-js"],
+    ["ondemand.Debugger"],
     {
         232678: (e, t, n) => {
             n.r(t), n.d(t, { default: () => xe });
@@ -141,7 +141,7 @@
             function M(e, t) {
                 return `data:${t};base64,${e}`;
             }
-            async function D(e, t, n) {
+            async function F(e, t, n) {
                 const r = await fetch(e, t);
                 if (404 === r.status) throw new Error(`Resource "${r.url}" not found`);
                 const o = await r.blob();
@@ -158,17 +158,17 @@
                         i.readAsDataURL(o);
                 });
             }
-            const F = {};
+            const D = {};
             async function H(e, t, n) {
                 const r = (function (e, t, n) {
                     let r = e.replace(/\?.*/, "");
                     return n && (r = e), /ttf|otf|eot|woff2?/i.test(r) && (r = r.replace(/.*\//, "")), t ? `[${t}]${r}` : r;
                 })(e, t, n.includeQueryParams);
-                if (null != F[r]) return F[r];
+                if (null != D[r]) return D[r];
                 let o;
                 n.cacheBust && (e += (/\?/.test(e) ? "&" : "?") + new Date().getTime());
                 try {
-                    const r = await D(
+                    const r = await F(
                         e,
                         n.fetchRequestInit,
                         ({ res: e, result: n }) => (
@@ -184,7 +184,7 @@
                     let r = `Failed to fetch resource: ${e}`;
                     t && (r = "string" == typeof t ? t : t.message);
                 }
-                return (F[r] = o), o;
+                return (D[r] = o), o;
             }
             async function N(e, t) {
                 return _(e, HTMLCanvasElement)
@@ -408,7 +408,7 @@
                 const r = /url\(["']?([^"')]+)["']?\)/g,
                     o = (n.match(/url\([^)]+\)/g) || []).map(async (o) => {
                         let i = o.replace(r, "$1");
-                        return i.startsWith("https://") || (i = new URL(i, e.url).href), D(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
+                        return i.startsWith("https://") || (i = new URL(i, e.url).href), F(i, t.fetchRequestInit, ({ result: e }) => ((n = n.replace(o, `url(${e})`)), [o, e]));
                     });
                 return Promise.all(o).then(() => n);
             }
@@ -975,19 +975,6 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.9dec43aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.fd5fd35a.js.map

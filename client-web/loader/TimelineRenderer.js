@@ -4,53 +4,53 @@
     {
         229333: (e, t, s) => {
             s.d(t, { Z: () => d });
-            var n = s(202784),
-                i = s(466999),
+            var i = s(202784),
+                n = s(466999),
                 r = s(325686),
                 o = s(392237),
                 a = s(111677);
             const l = s.n(a)().e5b0063d;
             let c = 0;
-            class h extends n.Component {
+            class h extends i.Component {
                 constructor() {
                     super(), (this._listDomId = `accessible-list-${c}`), (c += 1);
                 }
                 render() {
                     const { children: e, title: t } = this.props,
                         s = l({ title: t });
-                    return n.createElement(r.Z, { "aria-labelledby": this._listDomId, role: "region" }, n.createElement(i.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: o.default.visuallyHidden }, t), n.createElement(r.Z, { "aria-label": s }, e));
+                    return i.createElement(r.Z, { "aria-labelledby": this._listDomId, role: "region" }, i.createElement(n.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: o.default.visuallyHidden }, t), i.createElement(r.Z, { "aria-label": s }, e));
                 }
             }
             const d = h;
         },
         414939: (e, t, s) => {
             s.d(t, { Z: () => l });
-            var n = s(202784),
-                i = s(325686),
+            var i = s(202784),
+                n = s(325686),
                 r = s(392237);
-            class o extends n.Component {
+            class o extends i.Component {
                 shouldComponentUpdate() {
                     return !1;
                 }
                 render() {
-                    return n.createElement(i.Z, { style: a.root });
+                    return i.createElement(n.Z, { style: a.root });
                 }
             }
             const a = r.default.create((e) => ({ root: { height: 10 * e.lineHeightsPx.body } })),
                 l = o;
         },
         46705: (e, t, s) => {
-            s.d(t, { X: () => n, g: () => i });
-            const n = (e) => ({ id: e, distanceToViewportTop: 0 }),
-                i = (e) => ({ id: e, distanceToViewportBottom: 0 });
+            s.d(t, { X: () => i, g: () => n });
+            const i = (e) => ({ id: e, distanceToViewportTop: 0 }),
+                n = (e) => ({ id: e, distanceToViewportBottom: 0 });
         },
         144256: (e, t, s) => {
             s.d(t, { Z: () => l });
-            var n = s(807896),
-                i = s(202784),
+            var i = s(807896),
+                n = s(202784),
                 r = s(149202),
                 o = s(725516);
-            class a extends i.PureComponent {
+            class a extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handleRefresh = () => {
@@ -61,15 +61,15 @@
                 }
                 render() {
                     const { analytics: e, canRefresh: t, onRefresh: s, ...o } = this.props;
-                    return i.createElement(r.Z, (0, n.Z)({}, o, { canRefresh: t, onRefresh: this._handleRefresh }));
+                    return n.createElement(r.Z, (0, i.Z)({}, o, { canRefresh: t, onRefresh: this._handleRefresh }));
                 }
             }
             const l = (0, o.Z)(a);
         },
         22371: (e, t, s) => {
-            s.r(t), s.d(t, { EmptyState: () => qe, TimelineRenderer: () => je, default: () => $e });
-            var n = s(807896),
-                i = (s(136728), s(202784)),
+            s.r(t), s.d(t, { EmptyState: () => qe, TimelineRenderer: () => $e, default: () => je });
+            var i = s(807896),
+                n = (s(136728), s(202784)),
                 r = s(400752),
                 o = s(516951),
                 a = s(912021),
@@ -92,8 +92,8 @@
                 S = s(144256),
                 T = s(993547),
                 I = s(666536);
-            const R = { threshold: [0.01, 0.5] };
-            const k = class {
+            const k = { threshold: [0.01, 0.5] };
+            const R = class {
                 constructor(e) {
                     (this._itemsUnderObservation = {}),
                         (this._lingerCandidates = new Map()),
@@ -111,8 +111,8 @@
                         (this._getOngoingLingerEvents = (e) => {
                             const t = [];
                             return (
-                                this._lingerCandidates.forEach((s, n) => {
-                                    e - s >= 500 && t.push({ id: n, start: s, end: e });
+                                this._lingerCandidates.forEach((s, i) => {
+                                    e - s >= 500 && t.push({ id: i, start: s, end: e });
                                 }),
                                 t
                             );
@@ -126,11 +126,11 @@
                                         { boundingClientRect: o, intersectionRatio: a, rootBounds: l } = e;
                                     if (a >= 0.01) {
                                         const e = null != o && null != l;
-                                        this._createImpressionCandidate(r, e ? ((n = o.height), (i = l.height), Math.floor((n / i) * 1e5)) : void 0);
+                                        this._createImpressionCandidate(r, e ? ((i = o.height), (n = l.height), Math.floor((i / n) * 1e5)) : void 0);
                                     }
                                     a >= 0.5 ? (this._createLingerCandidate(r, t), this._createReactivityCandidate(r, t)) : (this._transitionCandidateToLingerEvent(r, t), this._removeReactivityCandidate(r));
                                 }
-                                var n, i;
+                                var i, n;
                             }),
                                 this._onEventsTriggeredCallback && this._handleOnEventsTriggered();
                         }),
@@ -161,7 +161,7 @@
                             window.clearTimeout(this._reactivityCandidates.get(e)), this._reactivityCandidates.delete(e);
                         }),
                         e?.root && e.root === window.document && (e.root = null);
-                    const t = { ...R, ...e };
+                    const t = { ...k, ...e };
                     (this._onEventsTriggeredCallback = e?.onEventsTriggeredCallback), (this._observer = new window.IntersectionObserver(this._processIntersectionEntries, t)), (this._reactivityCallback = (e && e.reactivityCallback) || o.Z);
                 }
                 observe(e, t) {
@@ -185,8 +185,8 @@
             };
             var Z = s(880598);
             const P = ({ children: e, impressionTracker: t }) => {
-                const s = i.useMemo(() => ({ impressionTracker: t }), [t]);
-                return t ? i.createElement(Z.Z.Provider, { value: s }, e) : e;
+                const s = n.useMemo(() => ({ impressionTracker: t }), [t]);
+                return t ? n.createElement(Z.Z.Provider, { value: s }, e) : e;
             };
             var x = s(614983),
                 A = s.n(x),
@@ -203,11 +203,11 @@
                     this._eventCallbacks = {};
                 }
                 _dispatchEvent(e) {
-                    for (var t = arguments.length, s = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) s[n - 1] = arguments[n];
-                    var i = this._eventCallbacks[e];
-                    null != i &&
-                        Array.isArray(i) &&
-                        i.map((e) => {
+                    for (var t = arguments.length, s = new Array(t > 1 ? t - 1 : 0), i = 1; i < t; i++) s[i - 1] = arguments[i];
+                    var n = this._eventCallbacks[e];
+                    null != n &&
+                        Array.isArray(n) &&
+                        n.map((e) => {
                             e(...s);
                         });
                 }
@@ -218,8 +218,8 @@
                         s._eventCallbacks[e].push(t),
                         {
                             remove() {
-                                var n = s._eventCallbacks[e].filter((e) => e.toString() !== t.toString());
-                                s._eventCallbacks[e] = n;
+                                var i = s._eventCallbacks[e].filter((e) => e.toString() !== t.toString());
+                                s._eventCallbacks[e] = i;
                             },
                         }
                     );
@@ -249,32 +249,32 @@
             var F = s(325686),
                 M = s(530525),
                 O = s(439592),
-                H = s(529356),
-                U = s(392237),
+                U = s(529356),
+                H = s(392237),
                 V = s(520913),
                 W = s(946409),
                 z = s(947992);
             const G = Object.freeze({ Icon: "Icon", IconSmall: "IconSmall", FullWidth: "FullWidth" });
             var q = s(500002),
-                j = s(686689),
-                $ = s(668214),
+                $ = s(686689),
+                j = s(668214),
                 K = s(601576);
-            const Y = (0, $.Z)()
+            const Y = (0, j.Z)()
                 .propsFromActions(() => ({ addToast: K.fz }))
                 .withAnalytics();
-            class X extends i.PureComponent {
+            class X extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._getGraphicProps = (0, a.Z)((e, t) => {
-                            const s = e ? ({ style: t }) => i.createElement(F.Z, { style: t }, i.createElement(M.Z, { "aria-label": "", aspectMode: O.Z.exact(e.width / e.height), image: e })) : V.default;
-                            let n,
+                            const s = e ? ({ style: t }) => n.createElement(F.Z, { style: t }, n.createElement(M.Z, { "aria-label": "", aspectMode: O.Z.exact(e.width / e.height), image: e })) : V.default;
+                            let i,
                                 r = "illustration";
-                            return e && t !== G.IconSmall ? t === G.FullWidth && (e.width > e.height ? (n = J.fullWidthNoBleedTop) : (r = "illustrationFullWidth")) : (r = "icon"), { graphic: s, graphicDisplayMode: r, graphicStyle: n };
+                            return e && t !== G.IconSmall ? t === G.FullWidth && (e.width > e.height ? (i = J.fullWidthNoBleedTop) : (r = "illustrationFullWidth")) : (r = "icon"), { graphic: s, graphicDisplayMode: r, graphicStyle: i };
                         })),
                         (this._scribeAction = (e, t) => {
                             const { analytics: s } = this.props,
-                                { action: n, component: i, element: r } = t || {};
-                            s.scribe({ action: n || e, component: i || "cover", element: r });
+                                { action: i, component: n, element: r } = t || {};
+                            s.scribe({ action: i || e, component: n || "cover", element: r });
                         }),
                         (this._handleDismiss = () => {
                             const { dismissInfo: e, processCallback: t } = this.props,
@@ -291,11 +291,11 @@
                         (this._handleSecondaryCtaClick = () => {
                             this.props.secondaryCta && this._handleCtaClick(this.props.secondaryCta, "secondary_cta");
                         }),
-                        (this._handleCtaClick = ({ callbacks: e, clientEventInfo: t, ctaBehavior: s }, n) => {
-                            const { addToast: i, history: r, processCallback: o } = this.props;
-                            if ((this.props.onClose(), this._scribeAction("click", { element: n, ...t }), s.dismiss)) {
+                        (this._handleCtaClick = ({ callbacks: e, clientEventInfo: t, ctaBehavior: s }, i) => {
+                            const { addToast: n, history: r, processCallback: o } = this.props;
+                            if ((this.props.onClose(), this._scribeAction("click", { element: i, ...t }), s.dismiss)) {
                                 const { dismiss: e } = s;
-                                e && e.feedbackMessage && i({ text: e.feedbackMessage.text });
+                                e && e.feedbackMessage && n({ text: e.feedbackMessage.text });
                             }
                             if (s.navigate) {
                                 const { navigate: e } = s,
@@ -309,25 +309,25 @@
                     this.props.onImpression && this.props.onImpression();
                 }
                 render() {
-                    const { details: e, dismissInfo: t, displayType: s, image: n, imageDisplayType: r, primaryCta: a, primaryText: l, secondaryCta: c, secondaryText: h, type: d } = this.props,
-                        p = i.createElement(j.Z, { entities: l.entities, text: l.text }),
-                        u = h ? i.createElement(j.Z, { entities: h.entities, text: h.text }) : null,
-                        { graphic: m, graphicDisplayMode: _, graphicStyle: g } = this._getGraphicProps(n, r);
+                    const { details: e, dismissInfo: t, displayType: s, image: i, imageDisplayType: r, primaryCta: a, primaryText: l, secondaryCta: c, secondaryText: h, type: d } = this.props,
+                        p = n.createElement($.Z, { entities: l.entities, text: l.text }),
+                        u = h ? n.createElement($.Z, { entities: h.entities, text: h.text }) : null,
+                        { graphic: m, graphicDisplayMode: _, graphicStyle: g } = this._getGraphicProps(i, r);
                     if (d === z.Z.Full) {
-                        const n = e ? i.createElement(j.Z, { entities: e.entities, text: e.text }) : null;
-                        return i.createElement(H.Z, { actionLabel: a.text, footer: n, graphic: m, graphicDisplayMode: _, graphicStyle: g, headline: p, isFullHeightOnMobile: !t && "CenterCover" !== s, onAction: this._handlePrimaryCtaClick, onClose: this._handleDismiss, onTertiaryAction: this._handleSecondaryCtaClick, subtext: u, tertiaryActionLabel: c && c.text, withCloseButton: !!t });
+                        const i = e ? n.createElement($.Z, { entities: e.entities, text: e.text }) : null;
+                        return n.createElement(U.Z, { actionLabel: a.text, footer: i, graphic: m, graphicDisplayMode: _, graphicStyle: g, headline: p, isFullHeightOnMobile: !t && "CenterCover" !== s, onAction: this._handlePrimaryCtaClick, onClose: this._handleDismiss, onTertiaryAction: this._handleSecondaryCtaClick, subtext: u, tertiaryActionLabel: c && c.text, withCloseButton: !!t });
                     }
-                    return i.createElement(H.Z, { actionLabel: a.text, graphic: m, graphicDisplayMode: r === G.FullWidth ? _ : "none", graphicStyle: g, headline: p, onAction: this._handlePrimaryCtaClick, onClose: o.Z, onSecondaryAction: this._handleSecondaryCtaClick, secondaryActionLabel: c && c.text, subtext: u, withCloseButton: !1 });
+                    return n.createElement(U.Z, { actionLabel: a.text, graphic: m, graphicDisplayMode: r === G.FullWidth ? _ : "none", graphicStyle: g, headline: p, onAction: this._handlePrimaryCtaClick, onClose: o.Z, onSecondaryAction: this._handleSecondaryCtaClick, secondaryActionLabel: c && c.text, subtext: u, withCloseButton: !1 });
                 }
             }
             X.defaultProps = { imageDisplayType: G.Icon };
-            const J = U.default.create((e) => ({ fullWidthNoBleedTop: { width: "100%", height: "auto" } })),
+            const J = H.default.create((e) => ({ fullWidthNoBleedTop: { width: "100%", height: "auto" } })),
                 Q = (0, q.ZP)(Y(X));
             var ee = s(370006),
                 te = s(731708),
                 se = s(308158),
-                ne = s(154003),
-                ie = s(885015),
+                ie = s(154003),
+                ne = s(885015),
                 re = s(58881),
                 oe = s(530732),
                 ae = s(786998),
@@ -339,13 +339,13 @@
                 ue = s(3196),
                 me = s(487659),
                 _e = s(911318);
-            class ge extends i.PureComponent {
+            class ge extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._scribeAction = (e, t) => {
                             const { analytics: s } = this.props,
-                                { action: n, component: i, element: r } = t || {};
-                            s.scribe({ action: n || e, component: i || "cover", element: r });
+                                { action: i, component: n, element: r } = t || {};
+                            s.scribe({ action: i || e, component: n || "cover", element: r });
                         }),
                         (this._handleButtonPress =
                             ({ clientEventInfo: e, ctaBehavior: t }) =>
@@ -353,14 +353,14 @@
                                 const { history: s } = this.props;
                                 if ((this.props.onClose(), this._scribeAction("click", { ...e }), t.navigate)) {
                                     const { navigate: e } = t,
-                                        n = e && (0, W.s9)(e.url);
-                                    n && (n.external ? N.openURL(n.pathname) : s.push(n.pathname));
+                                        i = e && (0, W.s9)(e.url);
+                                    i && (i.external ? N.openURL(i.pathname) : s.push(i.pathname));
                                 }
                             }),
                         (this._handleButtonRefUpdate = (e) => {
                             e && !this._wasFocused && (e.focus(), (this._wasFocused = !0));
                         }),
-                        (this._renderCloseButton = () => i.createElement(ee.Z, { backButtonType: "close", onClick: this._handleDismiss })),
+                        (this._renderCloseButton = () => n.createElement(ee.Z, { backButtonType: "close", onClick: this._handleDismiss })),
                         (this._handleDismiss = () => {
                             const { dismissInfo: e, processCallback: t } = this.props,
                                 { callbacks: s } = e || {};
@@ -385,28 +385,28 @@
                     this.props.onImpression?.();
                 }
                 _renderHeading({ image: e, primaryText: t, secondaryText: s }) {
-                    return i.createElement(F.Z, null, e ? i.createElement(F.Z, { style: be.imageContainer }, i.createElement(M.Z, { "aria-label": "", aspectMode: O.Z.exact(e.width / e.height), image: e })) : null, i.createElement(F.Z, { style: be.headingContainer }, i.createElement(te.ZP, { align: "left", size: "title3", style: be.headline, weight: "heavy" }, i.createElement(se.Z, { entities: t.entities, text: t.text })), s ? i.createElement(te.ZP, { align: "left", color: "gray700", weight: "normal" }, i.createElement(se.Z, { entities: s.entities, text: s.text })) : null));
+                    return n.createElement(F.Z, null, e ? n.createElement(F.Z, { style: be.imageContainer }, n.createElement(M.Z, { "aria-label": "", aspectMode: O.Z.exact(e.width / e.height), image: e })) : null, n.createElement(F.Z, { style: be.headingContainer }, n.createElement(te.ZP, { align: "left", size: "title3", style: be.headline, weight: "heavy" }, n.createElement(se.Z, { entities: t.entities, text: t.text })), s ? n.createElement(te.ZP, { align: "left", color: "gray700", weight: "normal" }, n.createElement(se.Z, { entities: s.entities, text: s.text })) : null));
                 }
                 _renderButton({ isSwitchToAppButton: e = !1, valueData: t }) {
                     const s = t && t.coverCta ? (e ? this._handleSwitchToApp({ clientEventInfo: t.coverCta.clientEventInfo }) : this._handleButtonPress(t.coverCta)) : void 0;
-                    return i.createElement(ne.ZP, { onPress: s, ref: this._handleButtonRefUpdate, size: "medium", style: [ve.button, ve.ssoButton], type: "brandFilled" }, t?.coverCta?.text);
+                    return n.createElement(ie.ZP, { onPress: s, ref: this._handleButtonRefUpdate, size: "medium", style: [ve.button, ve.ssoButton], type: "brandFilled" }, t?.coverCta?.text);
                 }
                 _renderAppleSsoButton() {
                     const e = he.yX.LogIn;
-                    return i.createElement(ue.Z, { buttonSize: "medium", buttonState: e, style: [ve.button, ve.ssoButton] });
+                    return n.createElement(ue.Z, { buttonSize: "medium", buttonState: e, style: [ve.button, ve.ssoButton] });
                 }
                 _renderGoogleSsoButton() {
                     const e = he.yX.LogIn;
-                    return i.createElement(me.Z, { buttonSize: "medium", buttonState: e, displayType: _e.qv.Button, style: [ve.button, ve.ssoButton] });
+                    return n.createElement(me.Z, { buttonSize: "medium", buttonState: e, displayType: _e.qv.Button, style: [ve.button, ve.ssoButton] });
                 }
                 _renderSeparator(e) {
-                    return e ? i.createElement(ie.Z, { style: we.separatorContainer, withGutter: !0 }, i.createElement(F.Z, { style: we.separatorColumn }, i.createElement(F.Z, { style: we.separator })), i.createElement(te.ZP, { size: "headline2", style: we.separatorText }, i.createElement(se.Z, { entities: e.entities, text: e.text })), i.createElement(F.Z, { style: we.separatorColumn }, i.createElement(F.Z, { style: we.separator }))) : i.createElement(F.Z, { style: we.separator, testID: "separator" });
+                    return e ? n.createElement(ne.Z, { style: we.separatorContainer, withGutter: !0 }, n.createElement(F.Z, { style: we.separatorColumn }, n.createElement(F.Z, { style: we.separator })), n.createElement(te.ZP, { size: "headline2", style: we.separatorText }, n.createElement(se.Z, { entities: e.entities, text: e.text })), n.createElement(F.Z, { style: we.separatorColumn }, n.createElement(F.Z, { style: we.separator }))) : n.createElement(F.Z, { style: we.separator, testID: "separator" });
                 }
                 _returnStaticText(e) {
                     const {
                         detailText: { entities: t, text: s },
                     } = e;
-                    return i.createElement(F.Z, { style: Ee.container }, i.createElement(te.ZP, { align: "left", weight: "normal" }, i.createElement(se.Z, { entities: t, onEntityClick: this._handleRichTextEntityClick({ clientEventInfo: e.clientEventInfo }), text: s })));
+                    return n.createElement(F.Z, { style: Ee.container }, n.createElement(te.ZP, { align: "left", weight: "normal" }, n.createElement(se.Z, { entities: t, onEntityClick: this._handleRichTextEntityClick({ clientEventInfo: e.clientEventInfo }), text: s })));
                 }
                 _renderSettingValue({ valueData: e, valueType: t }) {
                     switch (t) {
@@ -427,49 +427,49 @@
                     }
                 }
                 _renderSettings(e) {
-                    return i.createElement(
+                    return n.createElement(
                         F.Z,
-                        { style: { marginBottom: U.default.theme.spaces.space20 } },
-                        e.map((e, t) => i.createElement(F.Z, { key: t }, this._renderSettingValue(e))),
+                        { style: { marginBottom: H.default.theme.spaces.space20 } },
+                        e.map((e, t) => n.createElement(F.Z, { key: t }, this._renderSettingValue(e))),
                     );
                 }
-                _renderFooter({ branchInfo: e, clientEventInfo: t, icon: s, primaryText: n }) {
-                    const { entities: r, text: o } = n,
+                _renderFooter({ branchInfo: e, clientEventInfo: t, icon: s, primaryText: i }) {
+                    const { entities: r, text: o } = i,
                         a = e?.enable_branch,
-                        l = re.Z.generate({ backgroundColor: "transparent", color: U.default.theme.colors.primary });
-                    return i.createElement(oe.Z, { interactive: !!a, onClick: a ? this._handleSwitchToApp({ clientEventInfo: t }) : void 0, style: ye.footer }, ({ isFocused: e, isHovered: n, isPressed: c }) => {
-                        const h = [l.transitionStyle, n && l.hoverStyle, c && l.pressedStyle, e && l.focusedStyle];
-                        return i.createElement(F.Z, { style: h }, i.createElement(te.ZP, { align: "left", size: "body", weight: "bold" }, s && this._renderIcon(s), i.createElement(se.Z, { entities: r, onEntityClick: a ? void 0 : this._handleRichTextEntityClick({ clientEventInfo: t }), style: { marginStart: U.default.theme.spaces.space12 }, text: o })));
+                        l = re.Z.generate({ backgroundColor: "transparent", color: H.default.theme.colors.primary });
+                    return n.createElement(oe.Z, { interactive: !!a, onClick: a ? this._handleSwitchToApp({ clientEventInfo: t }) : void 0, style: ye.footer }, ({ isFocused: e, isHovered: i, isPressed: c }) => {
+                        const h = [l.transitionStyle, i && l.hoverStyle, c && l.pressedStyle, e && l.focusedStyle];
+                        return n.createElement(F.Z, { style: h }, n.createElement(te.ZP, { align: "left", size: "body", weight: "bold" }, s && this._renderIcon(s), n.createElement(se.Z, { entities: r, onEntityClick: a ? void 0 : this._handleRichTextEntityClick({ clientEventInfo: t }), style: { marginStart: H.default.theme.spaces.space12 }, text: o })));
                     });
                 }
                 _renderIcon(e) {
-                    if (e === pe.Z.LOGO) return i.createElement(V.default, { style: { color: U.default.theme.colors.primary } });
+                    if (e === pe.Z.LOGO) return n.createElement(V.default, { style: { color: H.default.theme.colors.primary } });
                 }
                 _renderAppBarCloseButton(e) {
-                    return e ? i.createElement(ae.Z, { leftControl: this._renderCloseButton(), withBackground: !0 }) : null;
+                    return e ? n.createElement(ae.Z, { leftControl: this._renderCloseButton(), withBackground: !0 }) : null;
                 }
                 render() {
-                    const { dismissInfo: e, displayType: t, footer: s, header: n, onClose: r, settings: o } = this.props,
+                    const { dismissInfo: e, displayType: t, footer: s, header: i, onClose: r, settings: o } = this.props,
                         a = !!e,
                         l = !e && "HalfCover" !== t;
-                    return i.createElement(le.ZP, null, ({ windowHeight: e, windowWidth: t }) => {
-                        const c = t > U.default.theme.breakpoints.medium,
+                    return n.createElement(le.ZP, null, ({ windowHeight: e, windowWidth: t }) => {
+                        const c = t > H.default.theme.breakpoints.medium,
                             h = c;
-                        return i.createElement(ce.Z, { enableMaskForDismiss: !0, onMaskClick: a ? r : void 0, style: c && fe.roundedBorders, type: l ? "full" : "bottom", withMask: !0 }, i.createElement(F.Z, { style: [fe.root, h && fe.withBottomPadding, !a && (h ? fe.appBarReplacementSpacer : fe.appBarReplacementSpacerThin)] }, this._renderAppBarCloseButton(a), i.createElement(F.Z, { style: fe.contentContainer }, i.createElement(F.Z, { style: fe.centeredContent }, i.createElement(F.Z, { style: [fe.content, !!s && fe.contentWithFooter] }, n && this._renderHeading(n), o && this._renderSettings(o))))), s && this._renderFooter(s));
+                        return n.createElement(ce.Z, { enableMaskForDismiss: !0, onMaskClick: a ? r : void 0, style: c && fe.roundedBorders, type: l ? "full" : "bottom", withMask: !0 }, n.createElement(F.Z, { style: [fe.root, h && fe.withBottomPadding, !a && (h ? fe.appBarReplacementSpacer : fe.appBarReplacementSpacerThin)] }, this._renderAppBarCloseButton(a), n.createElement(F.Z, { style: fe.contentContainer }, n.createElement(F.Z, { style: fe.centeredContent }, n.createElement(F.Z, { style: [fe.content, !!s && fe.contentWithFooter] }, i && this._renderHeading(i), o && this._renderSettings(o))))), s && this._renderFooter(s));
                     });
                 }
             }
             ge.contextType = C.rC;
-            const ve = U.default.create((e) => ({ button: { width: "100%", margin: "auto", marginVertical: e.spaces.space12 }, ssoButton: { width: _e.fI, height: e.spaces.space40 } })),
-                fe = U.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, overflow: "auto", paddingBottom: e.spaces.space12 }, roundedBorders: { borderRadius: e.borderRadii.xLarge }, withBottomPadding: { paddingBottom: e.spaces.space48 }, appBarReplacementSpacer: { paddingTop: e.spaces.space48 }, appBarReplacementSpacerThin: { paddingTop: e.spaces.space20 }, contentWithFooter: { marginBottom: 0 }, content: { maxWidth: `calc((${e.spaces.space80} * 5) - ${e.spaces.space36})`, margin: e.spaces.space32, paddingHorizontal: e.spaces.space32 }, contentContainer: { alignItems: "center", flexGrow: 1 }, centeredContent: { width: "100%", flexGrow: 1, alignItems: "center", justifyContent: "center" } })),
-                ye = U.default.create((e) => ({ footer: { width: "100%", maxWidth: `calc((${e.spaces.space80} * 5)`, paddingVertical: e.spaces.space48, borderTopStyle: "solid", borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, alignItems: "center" } })),
-                be = U.default.create((e) => ({ headingContainer: { marginVertical: e.spaces.space20 }, content: { marginBottom: e.spaces.space32, justifyContent: "center" }, headline: { marginBottom: e.spaces.space8 }, imageContainer: { marginHorizontal: "auto", height: "initial", width: "initial" } })),
-                we = U.default.create((e) => ({ separatorContainer: { width: "100%" }, separatorColumn: { flex: 1, justifyContent: "center" }, separator: { width: "100%", height: e.spaces.space1, backgroundColor: e.colors.gray200, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, separatorText: { "flex-basis": "auto" } })),
-                Ee = U.default.create((e) => ({ container: { marginTop: e.spaces.space20 } })),
+            const ve = H.default.create((e) => ({ button: { width: "100%", margin: "auto", marginVertical: e.spaces.space12 }, ssoButton: { width: _e.fI, height: e.spaces.space40 } })),
+                fe = H.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, overflow: "auto", paddingBottom: e.spaces.space12 }, roundedBorders: { borderRadius: e.borderRadii.xLarge }, withBottomPadding: { paddingBottom: e.spaces.space48 }, appBarReplacementSpacer: { paddingTop: e.spaces.space48 }, appBarReplacementSpacerThin: { paddingTop: e.spaces.space20 }, contentWithFooter: { marginBottom: 0 }, content: { maxWidth: `calc((${e.spaces.space80} * 5) - ${e.spaces.space36})`, margin: e.spaces.space32, paddingHorizontal: e.spaces.space32 }, contentContainer: { alignItems: "center", flexGrow: 1 }, centeredContent: { width: "100%", flexGrow: 1, alignItems: "center", justifyContent: "center" } })),
+                ye = H.default.create((e) => ({ footer: { width: "100%", maxWidth: `calc((${e.spaces.space80} * 5)`, paddingVertical: e.spaces.space48, borderTopStyle: "solid", borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, alignItems: "center" } })),
+                be = H.default.create((e) => ({ headingContainer: { marginVertical: e.spaces.space20 }, content: { marginBottom: e.spaces.space32, justifyContent: "center" }, headline: { marginBottom: e.spaces.space8 }, imageContainer: { marginHorizontal: "auto", height: "initial", width: "initial" } })),
+                we = H.default.create((e) => ({ separatorContainer: { width: "100%" }, separatorColumn: { flex: 1, justifyContent: "center" }, separator: { width: "100%", height: e.spaces.space1, backgroundColor: e.colors.gray200, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, separatorText: { "flex-basis": "auto" } })),
+                Ee = H.default.create((e) => ({ container: { marginTop: e.spaces.space20 } })),
                 Ce = (0, q.ZP)((0, b.Z)(ge)),
                 Se = { component: "cover", action: "impression" },
                 Te = ({ activeCover: e, clearActiveCover: t, processCallback: s }) => {
-                    const n = ((e) => {
+                    const i = ((e) => {
                             let t = { ...Se };
                             return e && (e.component && (t = { ...t, component: e.component }), e.element && (t = { ...t, element: e.element }), e.action && (t = { ...t, action: e.action })), t;
                         })(e.clientEventInfo),
@@ -478,19 +478,19 @@
                             const {
                                 cover: { impressionCallbacks: t },
                             } = e;
-                            t && t.forEach((e) => s(e)), r.scribe({ ...n });
+                            t && t.forEach((e) => s(e)), r.scribe({ ...i });
                         };
                     switch (e.type) {
                         case "full":
-                            return (a = e.cover), i.createElement(Q, { details: a.details || void 0, dismissInfo: a.dismissInfo, displayType: a.displayType, image: a.image, imageDisplayType: a.imageDisplayType || void 0, onClose: t, onImpression: o, primaryCta: a.primaryCoverCta, primaryText: a.primaryText, processCallback: s, secondaryCta: a.secondaryCoverCta, secondaryText: a.secondaryText, type: "full" });
+                            return (a = e.cover), n.createElement(Q, { details: a.details || void 0, dismissInfo: a.dismissInfo, displayType: a.displayType, image: a.image, imageDisplayType: a.imageDisplayType || void 0, onClose: t, onImpression: o, primaryCta: a.primaryCoverCta, primaryText: a.primaryText, processCallback: s, secondaryCta: a.secondaryCoverCta, secondaryText: a.secondaryText, type: "full" });
                         case "half":
                             return (function (e) {
-                                const n = "CenterCover" === e.displayType ? "full" : "half";
-                                return i.createElement(Q, { displayType: e.displayType, image: e.coverImage ? e.coverImage.image : void 0, imageDisplayType: e.coverImage ? e.coverImage.imageDisplayType : void 0, onClose: t, onImpression: o, primaryCta: e.primaryCoverCta, primaryText: e.primaryText, processCallback: s, secondaryCta: e.secondaryCoverCta, secondaryText: e.secondaryText, type: n });
+                                const i = "CenterCover" === e.displayType ? "full" : "half";
+                                return n.createElement(Q, { displayType: e.displayType, image: e.coverImage ? e.coverImage.image : void 0, imageDisplayType: e.coverImage ? e.coverImage.imageDisplayType : void 0, onClose: t, onImpression: o, primaryCta: e.primaryCoverCta, primaryText: e.primaryText, processCallback: s, secondaryCta: e.secondaryCoverCta, secondaryText: e.secondaryText, type: i });
                             })(e.cover);
                         case "settings_list":
                             return (function (e) {
-                                return i.createElement(Ce, { dismissInfo: e.dismissInfo, displayType: e.displayType, footer: e.footer, header: e.header, impressionCallbacks: e.impressionCallbacks, onClose: t, onImpression: o, processCallback: s, settings: e.settings });
+                                return n.createElement(Ce, { dismissInfo: e.dismissInfo, displayType: e.displayType, footer: e.footer, header: e.header, impressionCallbacks: e.impressionCallbacks, onClose: t, onImpression: o, processCallback: s, settings: e.settings });
                             })(e.cover);
                         default:
                             return null;
@@ -498,28 +498,28 @@
                     var a;
                 };
             var Ie = s(459643),
-                Re = s(143778),
-                ke = s(414939),
+                ke = s(143778),
+                Re = s(414939),
                 Ze = s(290402);
-            const Pe = (0, Ie.Z)(i.createElement(ke.Z, null)),
-                xe = ({ bottomFetchStatus: e, onBottomRetry: t, withEndOfContent: s }) => i.createElement(F.Z, { style: s && Ae.footer }, i.createElement(Ze.Z, { fetchStatus: e, onRequestRetry: t, render: s ? Pe : Re.Z })),
-                Ae = U.default.create((e) => ({ footer: { height: 10 * e.lineHeightsPx.body } })),
-                Le = i.memo(xe);
+            const Pe = (0, Ie.Z)(n.createElement(Re.Z, null)),
+                xe = ({ bottomFetchStatus: e, onBottomRetry: t, withEndOfContent: s }) => n.createElement(F.Z, { style: s && Ae.footer }, n.createElement(Ze.Z, { fetchStatus: e, onRequestRetry: t, render: s ? Pe : ke.Z })),
+                Ae = H.default.create((e) => ({ footer: { height: 10 * e.lineHeightsPx.body } })),
+                Le = n.memo(xe);
             var Be = s(726499);
-            function De({ children: e, entries: t, getScroller: s, withFasterCellEntrance: n = !1 }) {
-                const [r, o] = i.useState(null),
+            function De({ children: e, entries: t, getScroller: s, withFasterCellEntrance: i = !1 }) {
+                const [r, o] = n.useState(null),
                     a = t.findIndex((e) => e.entryId === r),
                     l = (function (e) {
-                        const [t, s] = i.useState(0),
-                            [n, r] = i.useState(Oe);
+                        const [t, s] = n.useState(0),
+                            [i, r] = n.useState(Oe);
                         if (e > t) {
                             s(e);
-                            Math.max(Me - He * e, 0);
+                            Math.max(Me - Ue * e, 0);
                             r(Math.min(Oe));
                         } else 0 === e && 0 !== t && s(0);
-                        return n;
+                        return i;
                     })(a);
-                i.useEffect(() => {
+                n.useEffect(() => {
                     const e = setTimeout(
                         () => {
                             if (t.length)
@@ -529,11 +529,11 @@
                                     for (; e > 0; --e) {
                                         const s = t[e].position;
                                         if ("number" == typeof s) {
-                                            let n = e - 1;
-                                            for (; n >= 0; --n) {
-                                                const i = t[n].position;
-                                                if ("number" == typeof i && s !== i) break;
-                                                e = n;
+                                            let i = e - 1;
+                                            for (; i >= 0; --i) {
+                                                const n = t[i].position;
+                                                if ("number" == typeof n && s !== n) break;
+                                                e = i;
                                             }
                                             break;
                                         }
@@ -541,12 +541,12 @@
                                     o(t[e].entryId);
                                 }
                         },
-                        a > 0 ? (n ? 500 : l) : 0,
+                        a > 0 ? (i ? 500 : l) : 0,
                     );
                     return () => {
                         clearTimeout(e);
                     };
-                }, [t.length, a, t, l, s, n]);
+                }, [t.length, a, t, l, s, i]);
                 const c = -1 === a ? 0 : a;
                 if (Fe) return e(t);
                 return e(t.slice(c));
@@ -563,8 +563,8 @@
             });
             const Me = 8e3,
                 Oe = 1e3,
-                He = 200;
-            const Ue = (e) => e.entryId,
+                Ue = 200;
+            const He = (e) => e.entryId,
                 Ve = (e) => e.sortIndex;
             const We = new Map(),
                 ze = new Map(),
@@ -580,23 +580,23 @@
                 };
             function qe({ analytics: e, renderEmptyState: t, richScribeAction: s }) {
                 return (
-                    i.useEffect(() => {
+                    n.useEffect(() => {
                         s({ ...e.contextualScribeNamespace, action: "empty" }, e.contextualScribeData);
                     }, [s, e]),
                     t()
                 );
             }
-            class je extends i.PureComponent {
+            class $e extends n.PureComponent {
                 constructor(e, t) {
                     var s;
                     super(e, t),
                         (this._promotedTweetDistanceMap = new Map()),
                         (this._getScroller = () => this._scroller),
                         (this._renderScroller = (e) => {
-                            const { anchoring: t, handlerRegistry: s, header: n, isInitialFocusEntry: r, module: o, nearStartProximityRatio: a, scroller: l, timelineId: c, withKeyboardShortcuts: h, withoutHeadroom: d } = this.props,
+                            const { anchoring: t, handlerRegistry: s, header: i, isInitialFocusEntry: r, module: o, nearStartProximityRatio: a, scroller: l, timelineId: c, withKeyboardShortcuts: h, withoutHeadroom: d } = this.props,
                                 p = this._getInitialFocusedEntry(e, r),
-                                u = p && m.X(Ue(p));
-                            return i.createElement(l, { anchoring: t, assumedItemHeight: Ge, cacheKey: c, footer: this._renderFooter(), header: n, identityFunction: Ue, initialAnchor: u, items: e, nearStartProximityRatio: a, onAtEnd: this._handleAtBottom, onAtStart: this._handleAtTop, onItemsRendered: this._handleItemsRendered, onKeyboardRefresh: this._handleKeyboardRefresh, onNearEnd: this._handleNearBottom, onNearStart: this._handleNearTop, onPositionRestored: this._handlePositionRestored, ref: this._setScroller, renderer: this._getCellRenderer(s, o), sortIndexFunction: Ve, withKeyboardShortcuts: h, withoutHeadroom: d });
+                                u = p && m.X(He(p));
+                            return n.createElement(l, { anchoring: t, assumedItemHeight: Ge, cacheKey: c, footer: this._renderFooter(), header: i, identityFunction: He, initialAnchor: u, items: e, nearStartProximityRatio: a, onAtEnd: this._handleAtBottom, onAtStart: this._handleAtTop, onItemsRendered: this._handleItemsRendered, onKeyboardRefresh: this._handleKeyboardRefresh, onNearEnd: this._handleNearBottom, onNearStart: this._handleNearTop, onPositionRestored: this._handlePositionRestored, ref: this._setScroller, renderer: this._getCellRenderer(s, o), sortIndexFunction: Ve, withKeyboardShortcuts: h, withoutHeadroom: d });
                         }),
                         (this._isAtNewest = () => this._scroller?.isAtNewest() ?? !0),
                         (this._scrollViewportToTopAndUpdate = () => {
@@ -604,21 +604,21 @@
                             e.scrollToTop();
                         }),
                         (this._renderFooter = () => {
-                            const { bottomFetchStatus: e, footer: t = null, onBottomRetry: s, showLoadingFooter: n } = this.props;
-                            return n ? i.createElement(i.Fragment, null, i.createElement(Le, { bottomFetchStatus: e, onBottomRetry: s, withEndOfContent: !t }), t) : t;
+                            const { bottomFetchStatus: e, footer: t = null, onBottomRetry: s, showLoadingFooter: i } = this.props;
+                            return i ? n.createElement(n.Fragment, null, n.createElement(Le, { bottomFetchStatus: e, onBottomRetry: s, withEndOfContent: !t }), t) : t;
                         }),
                         (this._refreshControlWrapper = (e) => {
-                            const { canRefresh: t, onRefresh: s, refreshControl: n, topFetchStatus: r } = this.props;
-                            return n ? i.createElement(n, { canRefresh: t, isRefreshing: r === f.Z.LOADING, onRefresh: s }, e) : e;
+                            const { canRefresh: t, onRefresh: s, refreshControl: i, topFetchStatus: r } = this.props;
+                            return i ? n.createElement(i, { canRefresh: t, isRefreshing: r === f.Z.LOADING, onRefresh: s }, e) : e;
                         }),
                         (this._getCellRenderer = (0, a.Z)((e, t) => {
                             let s;
-                            const n = { module: t, renderEntry: (e) => s(e) };
+                            const i = { module: t, renderEntry: (e) => s(e) };
                             return (
                                 (s = (t, s) => {
-                                    const i = e.getHandler(t),
+                                    const n = e.getHandler(t),
                                         r = e.getDisplayType(t) || void 0;
-                                    return i && i.render ? i.render(t, n, s, r) : null;
+                                    return n && n.render ? n.render(t, i, s, r) : null;
                                 }),
                                 s
                             );
@@ -648,9 +648,9 @@
                             e();
                         })),
                         (this._handleAtTop = this._proximityHandler(() => {
-                            const { analytics: e, onAtTop: t, removeAlert: s, richScribeAction: n } = this.props;
+                            const { analytics: e, onAtTop: t, removeAlert: s, richScribeAction: i } = this.props;
                             s?.(), t?.();
-                            n({ ...e.contextualScribeNamespace, component: "stream", element: "top", action: "show" });
+                            i({ ...e.contextualScribeNamespace, component: "stream", element: "top", action: "show" });
                         })),
                         (this._handleItemsRendered = this._proximityHandler(({ positions: e, viewport: t }) => {
                             if ((this.props.onEntriesRendered && this.props.onEntriesRendered(), !this._impressionTrackerRefactorEnabled)) {
@@ -662,11 +662,11 @@
                         (this._scribeImpressionEvents = (e) => {
                             const t = this._getEntryIndex(),
                                 s = this.context.featureSwitches?.isTrue("responsive_web_element_size_impression_scribe_enabled"),
-                                n = (0, c.Z)(e, (e) => {
-                                    const n = t[e.id];
-                                    return null != n ? { entry: n, relativeElementHeight: s ? e.relativeElementHeight : void 0 } : null;
+                                i = (0, c.Z)(e, (e) => {
+                                    const i = t[e.id];
+                                    return null != i ? { entry: i, relativeElementHeight: s ? e.relativeElementHeight : void 0 } : null;
                                 });
-                            this._scribeNewEntries(n);
+                            this._scribeNewEntries(i);
                         }),
                         (this._handleOnEventsTriggeredCallback = ({ impressionEvents: e, lingerEvents: t }) => {
                             this._scribeStreamEvents({ impressionEvents: e, lingerEvents: t });
@@ -687,8 +687,8 @@
                         (this._scheduleNewEntriesScribing =
                             ((s = (e) => {
                                 const { analytics: t, richScribeAction: s } = this.props,
-                                    n = this._buildStreamScribeData(e);
-                                n.length > 0 && s({ ...t.contextualScribeNamespace, component: "stream", action: "results" }, { items: n });
+                                    i = this._buildStreamScribeData(e);
+                                i.length > 0 && s({ ...t.contextualScribeNamespace, component: "stream", action: "results" }, { items: i });
                             }),
                             window.requestIdleCallback
                                 ? (e) => {
@@ -708,9 +708,9 @@
                                 const e = new Set();
                                 t.set(s, e);
                             }
-                            const n = t.get(s);
-                            if (!n) return [];
-                            const { handlerRegistry: i } = this.props,
+                            const i = t.get(s);
+                            if (!i) return [];
+                            const { handlerRegistry: n } = this.props,
                                 r = { component: "stream", element: "linger", action: "results" },
                                 o = this._getEntryIndex(),
                                 a = [],
@@ -719,9 +719,9 @@
                                 (e.forEach(({ end: e, id: t, start: s }) => {
                                     const r = o[t];
                                     if (!r) return;
-                                    if (n.has(t) || i.getNeedsLoad(r)) return;
-                                    n.add(t);
-                                    const c = this._getScribeDataItem(i, r);
+                                    if (i.has(t) || n.getNeedsLoad(r)) return;
+                                    i.add(t);
+                                    const c = this._getScribeDataItem(n, r);
                                     let h;
                                     if (r.type === v.ZP.Tweet) {
                                         h = r.content.id;
@@ -745,7 +745,7 @@
                         (this._setScroller = (e) => {
                             this._scroller = e;
                         }),
-                        (this._newImpressionTrackerV2 = () => (window.IntersectionObserver ? new k({ onEventsTriggeredCallback: this._impressionTrackerRefactorEnabled ? this._handleOnEventsTriggeredCallback : void 0, root: this.props.viewport.getViewport(), rootMargin: this.props.viewport.getRootMargin(), reactivityCallback: this._handleOnLingerEvent }) : void 0)),
+                        (this._newImpressionTrackerV2 = () => (window.IntersectionObserver ? new R({ onEventsTriggeredCallback: this._impressionTrackerRefactorEnabled ? this._handleOnEventsTriggeredCallback : void 0, root: this.props.viewport.getViewport(), rootMargin: this.props.viewport.getRootMargin(), reactivityCallback: this._handleOnLingerEvent }) : void 0)),
                         performance?.mark?.(`${e.perfKey}-initial-render-start`),
                         (this._impressionTrackerRefactorEnabled = t.featureSwitches.isTrue("responsive_web_impression_tracker_refactor_enabled")),
                         (this._streamScribeCancelCallbacks = []),
@@ -766,31 +766,31 @@
                     this._flushLingerScribes(), this._cancelStreamScribeCallbacks(), window.removeEventListener("beforelogout", this._handleBeforeWindowUnload), window.removeEventListener("beforeunload", this._handleBeforeWindowUnload), e && e(void 0), this._impressionTrackerV2?.disconnect();
                 }
                 componentDidUpdate(e) {
-                    const { entries: t, handlerRegistry: s, onRef: n, timelineId: i } = this.props;
-                    i !== e.timelineId ? this._initialize() : (t === e.entries && s === e.handlerRegistry) || this._initialize(), n && n !== e.onRef && n(this);
+                    const { entries: t, handlerRegistry: s, onRef: i, timelineId: n } = this.props;
+                    n !== e.timelineId ? this._initialize() : (t === e.entries && s === e.handlerRegistry) || this._initialize(), i && i !== e.onRef && i(this);
                 }
                 render() {
-                    const { entries: e, renderEmptyState: t, timelineId: s, title: n, withProgressiveRender: r } = this.props,
+                    const { entries: e, renderEmptyState: t, timelineId: s, title: i, withProgressiveRender: r } = this.props,
                         { featureSwitches: o, verifiedCrawlerName: a } = this.context,
-                        l = this._shouldRenderEmptyState(e) ? i.createElement(qe, { analytics: this.props.analytics, key: `empty-${s}`, renderEmptyState: t, richScribeAction: this.props.richScribeAction }) : i.createElement(P, { impressionTracker: this._impressionTrackerV2 }, i.createElement(d.Z, { title: n }, this._renderActiveCover(), this._renderPill(), r ? i.createElement(De, { entries: e, getScroller: this._getScroller, key: s, withFasterCellEntrance: o.isTrue("gryphon_faster_cell_entrance") }, this._renderScroller) : this._renderScroller(e)));
+                        l = this._shouldRenderEmptyState(e) ? n.createElement(qe, { analytics: this.props.analytics, key: `empty-${s}`, renderEmptyState: t, richScribeAction: this.props.richScribeAction }) : n.createElement(P, { impressionTracker: this._impressionTrackerV2 }, n.createElement(d.Z, { title: i }, this._renderActiveCover(), this._renderPill(), r ? n.createElement(De, { entries: e, getScroller: this._getScroller, key: s, withFasterCellEntrance: o.isTrue("gryphon_faster_cell_entrance") }, this._renderScroller) : this._renderScroller(e)));
                     return this._refreshControlWrapper(l);
                 }
                 _renderPill() {
-                    const { alert: e, applyNewTweetsBarInstructions: t, clientSideAlert: s, newTweetsPill: n, removeAlert: r, withNewTweetsPill: o } = this.props,
-                        a = n;
-                    return o ? i.createElement(a.Configure, { alert: e ?? s, applyNewTweetsBarInstructions: t, isAtNewest: this._isAtNewest, removeAlert: r, scrollToTop: this._scrollViewportToTopAndUpdate }) : null;
+                    const { alert: e, applyNewTweetsBarInstructions: t, clientSideAlert: s, newTweetsPill: i, removeAlert: r, withNewTweetsPill: o } = this.props,
+                        a = i;
+                    return o ? n.createElement(a.Configure, { alert: e ?? s, applyNewTweetsBarInstructions: t, isAtNewest: this._isAtNewest, removeAlert: r, scrollToTop: this._scrollViewportToTopAndUpdate }) : null;
                 }
                 _renderActiveCover() {
                     const { activeCover: e, clearActiveCover: t, processCallback: s } = this.props,
-                        n = e && e.cover,
+                        i = e && e.cover,
                         r = this.context.featureSwitches.isTrue("responsive_web_timeline_cover_killswitch_enabled");
-                    return e && n && !r ? i.createElement(Te, { activeCover: e, clearActiveCover: t, processCallback: s }) : null;
+                    return e && i && !r ? n.createElement(Te, { activeCover: e, clearActiveCover: t, processCallback: s }) : null;
                 }
                 _shouldRenderEmptyState(e) {
-                    const { activeCover: t, hasPendingHandlers: s, initialFetchStatus: n } = this.props,
-                        i = n === f.Z.LOADED,
+                    const { activeCover: t, hasPendingHandlers: s, initialFetchStatus: i } = this.props,
+                        n = i === f.Z.LOADED,
                         r = 0 === e.length;
-                    return i && r && !t && !s;
+                    return n && r && !t && !s;
                 }
                 _getEntryIndex() {
                     return this._createEntryIndex(this.props.entries);
@@ -827,23 +827,23 @@
                     for (this._streamScribeCancelCallbacks.push(t); this._streamScribeCancelCallbacks.length >= 20; ) this._streamScribeCancelCallbacks.shift();
                 }
                 _buildStreamScribeData(e) {
-                    const { handlerRegistry: t, impressionCache: s, timelineId: n } = this.props;
-                    if (!s.has(n)) {
+                    const { handlerRegistry: t, impressionCache: s, timelineId: i } = this.props;
+                    if (!s.has(i)) {
                         const e = new Set();
-                        s.set(n, e);
+                        s.set(i, e);
                     }
-                    const i = s.get(n);
-                    return i
-                        ? e.reduce((e, s, n) => {
+                    const n = s.get(i);
+                    return n
+                        ? e.reduce((e, s, i) => {
                               const { entry: r, relativeElementHeight: o } = s,
                                   { entryId: a } = r;
-                              if (!i.has(a) && !t.getNeedsLoad(r)) {
-                                  i.add(a);
+                              if (!n.has(a) && !t.getNeedsLoad(r)) {
+                                  n.add(a);
                                   const s = this._getScribeDataItem(t, r);
                                   if (s) {
                                       const t = !!r.content?.promotedMetadata,
-                                          n = this._promotedTweetDistanceMap.get(a);
-                                      t && n && (s.tweet_count = n), null != o && (s.percent_screen_height_100k = o), e.push(s);
+                                          i = this._promotedTweetDistanceMap.get(a);
+                                      t && i && (s.tweet_count = i), null != o && (s.percent_screen_height_100k = o), e.push(s);
                                   }
                               }
                               return e;
@@ -862,13 +862,13 @@
                     this._streamScribeCancelCallbacks.forEach((e) => e());
                 }
             }
-            (je.contextType = C.rC), (je.defaultProps = { impressionCache: We, lingerCache: ze, onBottomRetry: o.Z, onNearBottom: o.Z, onNearTop: o.Z, onRefresh: o.Z, refreshControl: S.Z, scroller: u.C, newTweetsPill: _.Z, withoutHeadroom: !1, showLoadingFooter: !0, withKeyboardShortcuts: !0 });
-            const $e = (0, T.Z)(
+            ($e.contextType = C.rC), ($e.defaultProps = { impressionCache: We, lingerCache: ze, onBottomRetry: o.Z, onNearBottom: o.Z, onNearTop: o.Z, onRefresh: o.Z, refreshControl: S.Z, scroller: u.C, newTweetsPill: _.Z, withoutHeadroom: !1, showLoadingFooter: !0, withKeyboardShortcuts: !0 });
+            const je = (0, T.Z)(
                 (0, b.Z)(
-                    ((Ke = je),
-                    i.forwardRef((e, t) => {
+                    ((Ke = $e),
+                    n.forwardRef((e, t) => {
                         const s = (0, r.oR)();
-                        return i.createElement(Ke, (0, n.Z)({}, e, { jotaiStore: s }));
+                        return n.createElement(Ke, (0, i.Z)({}, e, { jotaiStore: s }));
                     })),
                 ),
             );
@@ -877,8 +877,8 @@
         3196: (e, t, s) => {
             s.d(t, { Z: () => S });
             s(136728);
-            var n = s(202784),
-                i = s(99107),
+            var i = s(202784),
+                n = s(99107),
                 r = s(688715),
                 o = s(154003),
                 a = s(111677),
@@ -897,7 +897,7 @@
                 b = l().dcc304d6,
                 w = l().g61ed8a4,
                 E = { clientId: v.fp, scope: "name email", usePopup: !0 };
-            class C extends n.PureComponent {
+            class C extends i.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isScriptLoaded: !1 }),
@@ -918,13 +918,13 @@
                             const { AppleID: e } = window,
                                 { fetchSsoInitToken: t } = this.props;
                             e &&
-                                t(i.Bm.Apple).then(({ state: t }) => {
+                                t(n.Bm.Apple).then(({ state: t }) => {
                                     e.auth.init({ ...E, redirectURI: (0, r.ju)("https://x.com"), state: t });
                                 });
                         }),
                         (this._handleOnPress = () => {
                             const { AppleID: e } = window,
-                                { analytics: t, buttonState: s, history: n, loginReturnPath: r, personalizationSettings: o, shouldPropagateP13nSettings: a, ssoInitTokens: l } = this.props,
+                                { analytics: t, buttonState: s, history: i, loginReturnPath: r, personalizationSettings: o, shouldPropagateP13nSettings: a, ssoInitTokens: l } = this.props,
                                 { allowCookieUse: c, allowDeviceAccess: h, allowPartnerships: d, allowPersonalization: p } = o || {};
                             t.scribe({ component: "apple_sign_in", element: s, action: "click" }),
                                 e.auth
@@ -932,12 +932,12 @@
                                     .then((e) => {
                                         t.scribe({ component: "apple_sign_in", element: s, action: "success" });
                                         const o = e.user && e.user.name && e.user.name.firstName && e.user.name.lastName;
-                                        n.push({ pathname: "/i/flow/single_sign_on", state: { input: { cookie_personalization_settings: a && { allow_cookie_use: !!c, allow_device_personalization: !!h, allow_partnerships: !!d, allow_ads_personalization: !!p }, requested_variant: JSON.stringify({ display_name: o && `${e.user.name.firstName} ${e.user.name.lastName}`, id_token: e.authorization.id_token, provider: i.Bm.Apple, state: l[i.Bm.Apple], redirect_uri: this._isSSORedirectEnabled ? r : void 0 }) } } });
+                                        i.push({ pathname: "/i/flow/single_sign_on", state: { input: { cookie_personalization_settings: a && { allow_cookie_use: !!c, allow_device_personalization: !!h, allow_partnerships: !!d, allow_ads_personalization: !!p }, requested_variant: JSON.stringify({ display_name: o && `${e.user.name.firstName} ${e.user.name.lastName}`, id_token: e.authorization.id_token, provider: n.Bm.Apple, state: l[n.Bm.Apple], redirect_uri: this._isSSORedirectEnabled ? r : void 0 }) } } });
                                     })
                                     .catch((e) => {
-                                        const { addToast: n } = this.props,
-                                            { error: i } = e;
-                                        i !== v.IN ? (t.scribe({ component: "apple_sign_in", element: s, action: "failure" }), n({ text: w })) : t.scribe({ component: "apple_sign_in", element: "auth", action: "user_closed_popup" });
+                                        const { addToast: i } = this.props,
+                                            { error: n } = e;
+                                        n !== v.IN ? (t.scribe({ component: "apple_sign_in", element: s, action: "failure" }), i({ text: w })) : t.scribe({ component: "apple_sign_in", element: "auth", action: "user_closed_popup" });
                                     });
                         });
                 }
@@ -954,28 +954,60 @@
                 render() {
                     const { buttonSize: e, style: t } = this.props,
                         { isScriptLoaded: s } = this.state,
-                        i = this._getButtonLabel();
-                    return this._is3rdPartyIntegrationDisabled ? null : n.createElement(o.ZP, { backgroundColor: "white", borderColor: "gray200", children: i, color: "alwaysBaseGray1100", disabled: !s, fontWeight: "normal", icon: n.createElement(c.default, null), onPress: this._handleOnPress, size: e, style: t, testID: g.Z.apple });
+                        n = this._getButtonLabel();
+                    return this._is3rdPartyIntegrationDisabled ? null : i.createElement(o.ZP, { backgroundColor: "white", borderColor: "gray200", children: n, color: "alwaysBaseGray1100", disabled: !s, fontWeight: "normal", icon: i.createElement(c.default, null), onPress: this._handleOnPress, size: e, style: t, testID: g.Z.apple });
                 }
             }
             (C.contextType = m.rC), (C.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
             const S = (0, u.ZP)((0, _.Z)(C));
         },
+        951790: (e, t, s) => {
+            s.d(t, { Z: () => o });
+            var i = s(323265);
+            const n = {
+                    setLocation(e) {
+                        document.location = e;
+                    },
+                    getAppStoreURLs(e = "rwoiah") {
+                        const t = r(e),
+                            s = [t.android, t.ios],
+                            i = s.find((e) => e.matches());
+                        return i ? [i] : s;
+                    },
+                    getiOSAppStoreLink(e) {
+                        const t = r(e);
+                        return t.ios.matches() ? t.ios.url : t.ios.webUrl;
+                    },
+                    getAndroidAppStoreLink(e) {
+                        const t = r(e);
+                        return t.android.matches() ? t.android.url : t.android.webUrl;
+                    },
+                    goToAppStore(e) {
+                        const t = this.getAppStoreURLs(e);
+                        t[0] && n.setLocation(t[0].url);
+                    },
+                    openApp(e = "twitter://timeline") {
+                        n.setLocation(e);
+                    },
+                },
+                r = (e = "rwoiah") => ({ android: { platform: "android", matches: () => i.ZP.isAndroid(), url: `market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}`, webUrl: `https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}` }, ios: { platform: "ios", matches: () => i.ZP.isIOS(), url: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8`, webUrl: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8` } }),
+                o = n;
+        },
         23679: (e, t, s) => {
-            s.d(t, { K: () => n });
-            const n = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
+            s.d(t, { K: () => i });
+            const i = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
         885015: (e, t, s) => {
             s.d(t, { Z: () => c });
-            var n = s(807896),
-                i = s(202784),
+            var i = s(807896),
+                n = s(202784),
                 r = s(325686),
                 o = s(392237);
-            class a extends i.Component {
+            class a extends n.Component {
                 render() {
                     const { children: e, style: t, withGutter: s, ...o } = this.props,
-                        a = i.Children.map(e, (e) => e && i.cloneElement(e, { style: [e.props.style, l.column, s && l.withGutterColumn] }));
-                    return i.createElement(r.Z, (0, n.Z)({ style: [t, l.root, s && l.withGutter] }, o), a);
+                        a = n.Children.map(e, (e) => e && n.cloneElement(e, { style: [e.props.style, l.column, s && l.withGutterColumn] }));
+                    return n.createElement(r.Z, (0, i.Z)({ style: [t, l.root, s && l.withGutter] }, o), a);
                 }
             }
             a.defaultProps = { withGutter: !1 };
@@ -984,8 +1016,8 @@
         },
         149202: (e, t, s) => {
             s.d(t, { Z: () => y });
-            var n = s(202784),
-                i = s(928316),
+            var i = s(202784),
+                n = s(928316),
                 r = s(196001),
                 o = s(900664),
                 a = s(325686),
@@ -998,7 +1030,7 @@
                 m = s(392237),
                 _ = s(393058);
             const g = c().gdd51574;
-            class v extends n.Component {
+            class v extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._unmounted = !1),
@@ -1034,12 +1066,12 @@
                 render() {
                     const { children: e, isRefreshing: t } = this.props,
                         { pullDistance: s } = this.state,
-                        i = t && s ? n.createElement(u.Z, null) : n.createElement(h.default, { "aria-label": g, style: [f.refreshArrow, 1 === this.state.pull ? f.refreshArrowReady : null] }),
+                        n = t && s ? i.createElement(u.Z, null) : i.createElement(h.default, { "aria-label": g, style: [f.refreshArrow, 1 === this.state.pull ? f.refreshArrowReady : null] }),
                         o = { pullDistance: (0, r.ST)(s, r.um.stiff) };
-                    return n.createElement(
+                    return i.createElement(
                         a.Z,
                         { style: f.root },
-                        n.createElement(r.y_, { style: o }, ({ pullDistance: t }) => n.createElement(a.Z, { ref: this._getListViewRef, style: !!t && { transform: [{ translate3d: `0,${t}px,0` }] } }, n.createElement(a.Z, { ref: this._getPullViewRef, style: f.ptrCell }, i), n.createElement(a.Z, { style: t ? f.children : void 0 }, e))),
+                        i.createElement(r.y_, { style: o }, ({ pullDistance: t }) => i.createElement(a.Z, { ref: this._getListViewRef, style: !!t && { transform: [{ translate3d: `0,${t}px,0` }] } }, i.createElement(a.Z, { ref: this._getPullViewRef, style: f.ptrCell }, n), i.createElement(a.Z, { style: t ? f.children : void 0 }, e))),
                     );
                 }
                 componentDidMount() {
@@ -1056,7 +1088,7 @@
                     this.props.isRefreshing && !e.isRefreshing && (this._disablePTR(), this._resetPullInfo(), window.requestAnimationFrame(this._enablePTRIfNeeded));
                 }
                 _getScrollParent() {
-                    return (this._scrollParent = this._scrollParent || (0, p.r)(i.findDOMNode(this))), this._scrollParent;
+                    return (this._scrollParent = this._scrollParent || (0, p.r)(n.findDOMNode(this))), this._scrollParent;
                 }
                 _getScrollTop() {
                     const e = this._getScrollParent();
@@ -1095,53 +1127,66 @@
                 }
             }
             const f = m.default.create((e) => ({ root: { display: "block", position: "relative" }, ptrCell: { alignItems: "center", borderBottomWidth: "1px", borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, height: "4rem", justifyContent: "center", start: "0", position: "absolute", end: "0", top: "-4rem" }, children: { transform: [{ translate3d: "0, 0, 0" }] }, refreshArrow: { height: "2rem", color: e.colors.gray300, transitionProperty: "transform", transitionDuration: "250ms" }, refreshArrowReady: { transform: [{ rotate: "180deg" }] } })),
-                y = function ({ canRefresh: e = !0, children: t, isRefreshing: s = !1, onRefresh: i }) {
+                y = function ({ canRefresh: e = !0, children: t, isRefreshing: s = !1, onRefresh: n }) {
                     return _.Z.isTouchSupported() && e
-                        ? n.createElement(v, {
+                        ? i.createElement(v, {
                               canRefresh: e,
                               children: t,
                               isRefreshing: s,
                               onRefresh: () => {
-                                  i();
+                                  n();
                               },
                           })
                         : Array.isArray(t)
-                          ? n.createElement(n.Fragment, null, t)
+                          ? i.createElement(i.Fragment, null, t)
                           : t;
                 };
         },
         393058: (e, t, s) => {
             s.d(t, { Z: () => r });
-            const n = {},
-                i = ["touchend", "touchmove", "touchstart"];
+            const i = {},
+                n = ["touchend", "touchmove", "touchstart"];
             const r = {
                 isTouchSupported: () =>
-                    i.some(
+                    n.some(
                         (e) =>
                             !!(function (e, t) {
-                                if (void 0 !== n[e]) return n[e];
+                                if (void 0 !== i[e]) return i[e];
                                 const s = document.createElement(t || "div"),
-                                    i = `on${e}`;
-                                let r = i in s;
-                                return r || (s.setAttribute(i, "return;"), (r = "function" == typeof s[i])), (n[e] = r), r;
+                                    n = `on${e}`;
+                                let r = n in s;
+                                return r || (s.setAttribute(n, "return;"), (r = "function" == typeof s[n])), (i[e] = r), r;
                             })(e),
                     ),
             };
         },
+        668430: (e, t, s) => {
+            s.r(t), s.d(t, { default: () => l });
+            var i = s(202784),
+                n = s(890601),
+                r = s(783427),
+                o = s(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M13 3v13.59l5.043-5.05 1.414 1.42L12 20.41l-7.457-7.45 1.414-1.42L11 16.59V3h2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
         900664: (e, t, s) => {
-            s.d(t, { Z: () => i });
-            var n = (e) => {
+            s.d(t, { Z: () => n });
+            var i = (e) => {
                 "vibrate" in window.navigator && window.navigator.vibrate(e);
             };
-            const i = {
+            const n = {
                 cancel() {
-                    n(0);
+                    i(0);
                 },
                 vibrate(e) {
-                    void 0 === e && (e = 400), n(e);
+                    void 0 === e && (e = 400), i(e);
                 },
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineRenderer.9974c76a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineRenderer.270d8d5a.js.map

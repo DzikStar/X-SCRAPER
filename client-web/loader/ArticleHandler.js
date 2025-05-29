@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.ArticleHandler", "icons/IconFeedback-js"],
+    ["loader.ArticleHandler"],
     {
         415725: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -13,7 +13,7 @@
                 s = ({ children: e, ...t }) => i.createElement(o.Z, t, (t) => i.createElement(a.Z, { style: t && c.activeRoot, testID: l }, "function" == typeof e ? e(t) : e, t ? i.createElement(a.Z, { pointerEvents: "none", style: c.overlay }) : null));
         },
         546608: (e, t, r) => {
-            r.d(t, { Z: () => P });
+            r.d(t, { Z: () => R });
             var i = r(202784),
                 a = r(325686),
                 n = r(638009),
@@ -29,10 +29,10 @@
                 h = r(126962),
                 g = r(952428),
                 Z = r(530732),
-                v = r(111677),
-                E = r.n(v),
-                x = r(490359),
-                y = r(769471),
+                x = r(111677),
+                E = r.n(x),
+                y = r(490359),
+                v = r(769471),
                 C = r(415725),
                 w = r(725405),
                 f = r(500002),
@@ -47,29 +47,29 @@
                     .propsFromState(() => ({ article: D }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("ARTICLE_SUMMARY") })),
                 L = E().afb7e8f8,
-                F = u.default.create((e) => ({ horizontalContainer: { flex: 1, flexDirection: "row" }, textContainer: { flex: 1 }, text: { marginBottom: e.spaces.space4 }, buttonContainer: { alignItems: "flex-start", marginTop: e.spaces.space12, marginBottom: e.spaces.space16 }, imageContainer: { borderRadius: e.borderRadii.large, height: 100, marginStart: e.componentDimensions.gutterHorizontal, overflow: "hidden", width: 100 }, container: { flexDirection: "column", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, middotGroup: { marginBottom: e.spaces.space8 } })),
-                P = (0, f.ZP)(
-                    B(({ article: e, createLocalApiErrorHandler: t, id: r, location: v, socialContext: E, withInternalLink: f }) => {
+                P = u.default.create((e) => ({ horizontalContainer: { flex: 1, flexDirection: "row" }, textContainer: { flex: 1 }, text: { marginBottom: e.spaces.space4 }, buttonContainer: { alignItems: "flex-start", marginTop: e.spaces.space12, marginBottom: e.spaces.space16 }, imageContainer: { borderRadius: e.borderRadii.large, height: 100, marginStart: e.componentDimensions.gutterHorizontal, overflow: "hidden", width: 100 }, container: { flexDirection: "column", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, middotGroup: { marginBottom: e.spaces.space8 } })),
+                R = (0, f.ZP)(
+                    B(({ article: e, createLocalApiErrorHandler: t, id: r, location: x, socialContext: E, withInternalLink: f }) => {
                         const _ = (0, w.Z)(),
                             k = i.useContext(n.ZP),
                             { article_url: z, description: I, domain: S, image_url: A, publish_date: D, title: B } = e || {},
-                            P = { domain: o.b(), timestamp: o.b(), title: o.b(), description: o.b(), adFree: o.b(), socialContext: o.b() },
-                            R = [P.domain, P.timestamp, P.title, P.description, P.socialContext],
+                            R = { domain: o.b(), timestamp: o.b(), title: o.b(), description: o.b(), adFree: o.b(), socialContext: o.b() },
+                            F = [R.domain, R.timestamp, R.title, R.description, R.socialContext],
                             H = i.useMemo(() => {
-                                const e = (0, x.Z)(_.contextualScribeData.items || []) || {};
-                                return { url: z, items: [(0, y.Z)({}, e, { article_details: { publisher_name: S, is_showing_label: !1, is_ad_free: !1 } })] };
+                                const e = (0, y.Z)(_.contextualScribeData.items || []) || {};
+                                return { url: z, items: [(0, v.Z)({}, e, { article_details: { publisher_name: S, is_showing_label: !1, is_ad_free: !1 } })] };
                             }, [_.contextualScribeData.items, z, S]),
-                            M = i.useCallback(() => {
+                            U = i.useCallback(() => {
                                 _.scribe({ action: "impression", data: H });
                             }, [_, H]);
                         if (
                             (i.useEffect(() => {
-                                M();
-                            }, [M]),
+                                U();
+                            }, [U]),
                             !e)
                         )
                             return null;
-                        const { contextImageUrls: U, landingUrl: O, text: T } = E || {},
+                        const { contextImageUrls: M, landingUrl: O, text: T } = E || {},
                             W = A ? { url: A, height: 750, width: 1250 } : void 0,
                             j = { pathname: z, external: !0 },
                             q = (e) => {
@@ -84,13 +84,13 @@
                                 ? {
                                       ...$,
                                       pathname: `${$.pathname}?time_window=${(() => {
-                                          const e = v?.query?.time_window;
+                                          const e = x?.query?.time_window;
                                           return Number(e) || 24;
                                       })()}`,
                                   }
                                 : void 0,
-                            Q = i.createElement(i.Fragment, null, i.createElement(a.Z, { style: F.horizontalContainer }, i.createElement(a.Z, { style: F.textContainer }, i.createElement(l.Z, { style: F.middotGroup }, S && i.createElement(c.ZP, { color: "gray700", id: P.domain, size: "subtext2", weight: "bold" }, S), D && i.createElement(c.ZP, { color: "gray700", id: P.timestamp, size: "subtext2" }, i.createElement(s.Z, { timestamp: D }))), i.createElement(c.ZP, { color: "text", id: P.title, link: N, numberOfLines: 3, size: "headline2", style: F.text, weight: "bold", withInteractiveStyling: !1 }, B), I ? i.createElement(c.ZP, { id: P.description, numberOfLines: 2 }, I) : null, f ? i.createElement(a.Z, { style: F.buttonContainer }, i.createElement(d.ZP, { link: j, onClick: q, size: "xSmall", type: "primaryOutlined" }, L)) : null), W ? i.createElement(a.Z, { style: F.imageContainer }, i.createElement(m.Z, { ratio: u.default.theme.aspectRatios.square }, i.createElement(p.Z, { "aria-label": "", aspectMode: b.Z.SQUARE, image: W }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: P.socialContext, text: T, textSize: "subtext2", userAvatarUrls: U, withLeftPadding: !1, withTextCentered: !0 }));
-                        return f ? i.createElement(C.Z, { exact: !1, path: N?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": R.join(" "), "aria-selected": e, link: N, onClick: G, role: "article", style: F.container }, Q)) : i.createElement(Z.Z, { link: j, onClick: q, style: [F.container, F.bottomBorder] }, Q);
+                            Q = i.createElement(i.Fragment, null, i.createElement(a.Z, { style: P.horizontalContainer }, i.createElement(a.Z, { style: P.textContainer }, i.createElement(l.Z, { style: P.middotGroup }, S && i.createElement(c.ZP, { color: "gray700", id: R.domain, size: "subtext2", weight: "bold" }, S), D && i.createElement(c.ZP, { color: "gray700", id: R.timestamp, size: "subtext2" }, i.createElement(s.Z, { timestamp: D }))), i.createElement(c.ZP, { color: "text", id: R.title, link: N, numberOfLines: 3, size: "headline2", style: P.text, weight: "bold", withInteractiveStyling: !1 }, B), I ? i.createElement(c.ZP, { id: R.description, numberOfLines: 2 }, I) : null, f ? i.createElement(a.Z, { style: P.buttonContainer }, i.createElement(d.ZP, { link: j, onClick: q, size: "xSmall", type: "primaryOutlined" }, L)) : null), W ? i.createElement(a.Z, { style: P.imageContainer }, i.createElement(m.Z, { ratio: u.default.theme.aspectRatios.square }, i.createElement(p.Z, { "aria-label": "", aspectMode: b.Z.SQUARE, image: W }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: R.socialContext, text: T, textSize: "subtext2", userAvatarUrls: M, withLeftPadding: !1, withTextCentered: !0 }));
+                        return f ? i.createElement(C.Z, { exact: !1, path: N?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": F.join(" "), "aria-selected": e, link: N, onClick: G, role: "article", style: P.container }, Q)) : i.createElement(Z.Z, { link: j, onClick: q, style: [P.container, P.bottomBorder] }, Q);
                     }),
                 );
         },
@@ -118,19 +118,6 @@
                     })
                     .getHandler();
         },
-        790093: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var i = r(202784),
-                a = r(890601),
-                n = r(783427),
-                o = r(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
         98440: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
             var i = r(202784),
@@ -150,4 +137,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ArticleHandler.72d6c62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ArticleHandler.1e8468aa.js.map

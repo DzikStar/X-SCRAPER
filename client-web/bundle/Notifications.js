@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Notifications", "icons/IconNotificationsOff-js"],
+    ["bundle.Notifications", "icons/IconAtOff-js"],
     {
         405008: (e) => {
             e.exports = { queryId: "fB969Wl-2wXUawz0OmcG0w", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -437,20 +437,21 @@
                     (0, f.p)(
                         () =>
                             Promise.all([
-                                d.e("icons.23"),
-                                d.e("icons.0"),
-                                d.e("icons.2"),
-                                d.e("icons.16"),
-                                d.e("icons.19"),
-                                d.e("icons.10"),
-                                d.e("icons.13"),
-                                d.e("icons.24"),
+                                d.e("icons.8"),
+                                d.e("icons.15"),
                                 d.e("icons.7"),
+                                d.e("icons.3"),
+                                d.e("icons.24"),
+                                d.e("icons.12"),
                                 d.e("icons.22"),
+                                d.e("icons.2"),
+                                d.e("icons.18"),
+                                d.e("icons.9"),
+                                d.e("icons.1"),
+                                d.e("icons.6"),
                                 d.e("modules.common-e907d115"),
                                 d.e("modules.common-e019dbda"),
-                                d.e("icons.11"),
-                                d.e("icons.26"),
+                                d.e("icons.5"),
                                 d.e("modules.audio-6107ac1a"),
                                 d.e("modules.audio-b953418a"),
                                 d.e("modules.audio-7c51e6a7"),
@@ -461,7 +462,6 @@
                                 d.e("modules.audio-e019dbda"),
                                 d.e("modules.audio-262c94d4"),
                                 d.e("modules.audio-c6fe4ea4"),
-                                d.e("icons.8"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -523,20 +523,21 @@
                     (0, f.p)(
                         () =>
                             Promise.all([
-                                d.e("icons.23"),
-                                d.e("icons.0"),
-                                d.e("icons.2"),
-                                d.e("icons.16"),
-                                d.e("icons.19"),
-                                d.e("icons.10"),
-                                d.e("icons.13"),
-                                d.e("icons.24"),
+                                d.e("icons.8"),
+                                d.e("icons.15"),
                                 d.e("icons.7"),
+                                d.e("icons.3"),
+                                d.e("icons.24"),
+                                d.e("icons.12"),
                                 d.e("icons.22"),
+                                d.e("icons.2"),
+                                d.e("icons.18"),
+                                d.e("icons.9"),
+                                d.e("icons.1"),
+                                d.e("icons.6"),
                                 d.e("modules.common-e907d115"),
                                 d.e("modules.common-e019dbda"),
-                                d.e("icons.11"),
-                                d.e("icons.26"),
+                                d.e("icons.5"),
                                 d.e("modules.audio-6107ac1a"),
                                 d.e("modules.audio-b953418a"),
                                 d.e("modules.audio-7c51e6a7"),
@@ -547,7 +548,6 @@
                                 d.e("modules.audio-e019dbda"),
                                 d.e("modules.audio-262c94d4"),
                                 d.e("modules.audio-c6fe4ea4"),
-                                d.e("icons.8"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -609,20 +609,21 @@
                     (0, f.p)(
                         () =>
                             Promise.all([
-                                d.e("icons.23"),
-                                d.e("icons.0"),
-                                d.e("icons.2"),
-                                d.e("icons.16"),
-                                d.e("icons.19"),
-                                d.e("icons.10"),
-                                d.e("icons.13"),
-                                d.e("icons.24"),
+                                d.e("icons.8"),
+                                d.e("icons.15"),
                                 d.e("icons.7"),
+                                d.e("icons.3"),
+                                d.e("icons.24"),
+                                d.e("icons.12"),
                                 d.e("icons.22"),
+                                d.e("icons.2"),
+                                d.e("icons.18"),
+                                d.e("icons.9"),
+                                d.e("icons.1"),
+                                d.e("icons.6"),
                                 d.e("modules.common-e907d115"),
                                 d.e("modules.common-e019dbda"),
-                                d.e("icons.11"),
-                                d.e("icons.26"),
+                                d.e("icons.5"),
                                 d.e("modules.audio-6107ac1a"),
                                 d.e("modules.audio-b953418a"),
                                 d.e("modules.audio-7c51e6a7"),
@@ -633,7 +634,6 @@
                                 d.e("modules.audio-e019dbda"),
                                 d.e("modules.audio-262c94d4"),
                                 d.e("modules.audio-c6fe4ea4"),
-                                d.e("icons.8"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -695,20 +695,21 @@
                     (0, f.p)(
                         () =>
                             Promise.all([
-                                d.e("icons.23"),
-                                d.e("icons.0"),
-                                d.e("icons.2"),
-                                d.e("icons.16"),
-                                d.e("icons.19"),
-                                d.e("icons.10"),
-                                d.e("icons.13"),
-                                d.e("icons.24"),
+                                d.e("icons.8"),
+                                d.e("icons.15"),
                                 d.e("icons.7"),
+                                d.e("icons.3"),
+                                d.e("icons.24"),
+                                d.e("icons.12"),
                                 d.e("icons.22"),
+                                d.e("icons.2"),
+                                d.e("icons.18"),
+                                d.e("icons.9"),
+                                d.e("icons.1"),
+                                d.e("icons.6"),
                                 d.e("modules.common-e907d115"),
                                 d.e("modules.common-e019dbda"),
-                                d.e("icons.11"),
-                                d.e("icons.26"),
+                                d.e("icons.5"),
                                 d.e("modules.audio-6107ac1a"),
                                 d.e("modules.audio-b953418a"),
                                 d.e("modules.audio-7c51e6a7"),
@@ -719,7 +720,6 @@
                                 d.e("modules.audio-e019dbda"),
                                 d.e("modules.audio-262c94d4"),
                                 d.e("modules.audio-c6fe4ea4"),
-                                d.e("icons.8"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -780,8 +780,8 @@
                 N = { to: S._N, key: P, label: P, retainScrollPosition: !1 },
                 F = { to: S.JV, key: C, label: C, retainScrollPosition: !1 },
                 z = { to: S.JK, key: I, label: I, retainScrollPosition: !1 },
-                H = { to: S.ag, key: T, label: T, retainScrollPosition: !1 },
-                W = () => o.createElement(w.Z, { to: S._N }),
+                W = { to: S.ag, key: T, label: T, retainScrollPosition: !1 },
+                H = () => o.createElement(w.Z, { to: S._N }),
                 O = (e) => {
                     const { featureSwitches: a } = o.useContext(h.rC),
                         { history: d, isLoggedInUserActiveCreator: t } = e,
@@ -789,10 +789,10 @@
                         s = t && l,
                         M = o.useMemo(() => {
                             const e = [N, z, F];
-                            return s && e.splice(2, 0, H), e;
+                            return s && e.splice(2, 0, W), e;
                         }, [s]),
-                        w = s ? L : W,
-                        f = o.createElement(n.Switch, null, o.createElement(n.Route, { component: Z, exact: !0, path: S._N }), o.createElement(n.Route, { component: R, exact: !0, path: S.JV }), o.createElement(n.Route, { component: x, exact: !0, path: S.JK }), o.createElement(n.Route, { component: w, exact: !0, path: S.ag }), o.createElement(n.Route, { component: W, exact: !0, path: S.Im })),
+                        w = s ? L : H,
+                        f = o.createElement(n.Switch, null, o.createElement(n.Route, { component: Z, exact: !0, path: S._N }), o.createElement(n.Route, { component: R, exact: !0, path: S.JV }), o.createElement(n.Route, { component: x, exact: !0, path: S.JK }), o.createElement(n.Route, { component: w, exact: !0, path: S.ag }), o.createElement(n.Route, { component: H, exact: !0, path: S.Im })),
                         A = o.useMemo(() => o.createElement(b.Z, { alignFirstItem: (0, D.ZP)(), "aria-label": v, links: M }), [M]);
                     return o.createElement(
                         p.Z,
@@ -927,8 +927,8 @@
                 N = d(525202),
                 F = d(912021),
                 z = d(962741),
-                H = d(668214),
-                W = d(806960),
+                W = d(668214),
+                H = d(806960),
                 O = d(175856),
                 U = d(5849);
             const V = (0, F.Z)((e, a) => a && a.notificationsModule(e, void 0));
@@ -1004,7 +1004,7 @@
                     (0, L.C)(
                         ((e) => {
                             const a = (0, F.Z)(V);
-                            return (0, H.Z)()
+                            return (0, W.Z)()
                                 .propsFromState(() => ({
                                     shouldShowUnmentionEducation: (e) => (0, O.t5)(e, O.QV),
                                     unreadCount: (d, { history: o, ntabData: n }) => a(e, n)?.selectUnreadEntriesCount(d),
@@ -1017,13 +1017,13 @@
                                 }))
                                 .propsFromActions(({ history: d, ntabData: o }) => ({
                                     setNotificationsPageLoaded: (e) => (a) => {
-                                        a((0, W.Wl)(e));
+                                        a((0, H.Wl)(e));
                                     },
                                     addLeaveThisConversationEducationFlag: () => (0, O.pj)(O.QV),
                                     markAllAsRead: a(e, o)?.markAllAsRead,
                                     updateLastRead: (e) => (a, d) => {
                                         const n = o?.updateLastSeenCursor;
-                                        n && a(n(e)), a((0, W.SE)(0));
+                                        n && a(n(e)), a((0, H.SE)(0));
                                     },
                                     setNotificationsType: U.BZ,
                                 }))
@@ -1227,7 +1227,7 @@
                     return n.createElement(r.Z, { "aria-label": a, buttonsContainerStyle: l && S.gap, childrenStyle: !m && S.flexGrow, key: b, style: [l ? null : S.segmentedControl, m && S.leftAligned, c], visibleItemIndex: u }, p);
                 };
         },
-        165243: (e, a, d) => {
+        890899: (e, a, d) => {
             "use strict";
             d.r(a), d.d(a, { default: () => s });
             var o = d(202784),
@@ -1236,11 +1236,11 @@
                 t = d(347101);
             const l = (e = {}) => {
                 const { direction: a } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M20.29 2.29l-2.34 2.34C16.47 3.01 14.34 2 12 2 7.93 2 4.51 5.02 4 9.05L2.87 18h1.72l-2.3 2.29 1.42 1.42 18-18-1.42-1.42zM6.59 16H5.13l.85-6.7C6.36 6.27 8.94 4 12 4c1.79 0 3.42.78 4.54 2.05L6.59 16zM12 22c-1.57 0-2.98-.73-3.89-1.86l1.42-1.43c.55.78 1.45 1.29 2.47 1.29 1.31 0 2.42-.83 2.83-2H12v-2h6.86l-.74-5.87 1.76-1.76c.05.22.08.44.11.67L21.14 18H16.9c-.46 2.28-2.48 4-4.9 4z" })) }, { writingDirection: a });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M20.29 2.293L18.5 4.081C16.73 2.625 14.47 1.75 12 1.75 6.33 1.75 1.75 6.339 1.75 12c0 2.471.87 4.739 2.33 6.509l-1.79 1.784 1.42 1.414 18-18-1.42-1.414zM9.21 13.377c-.2-.498-.28-1.086-.19-1.725.25-1.769 1.65-2.798 2.89-2.623.41.057.79.242 1.12.525l-3.82 3.823zm5.24-5.245c-.6-.567-1.37-.958-2.26-1.083-2.58-.363-4.79 1.719-5.15 4.325-.18 1.243.08 2.487.68 3.487L5.5 17.086C4.4 15.685 3.75 13.919 3.75 12c0-4.556 3.69-8.25 8.25-8.25 1.91 0 3.68.655 5.08 1.754l-2.63 2.628zM7.2 21.06l1.49-1.497c1.02.442 2.13.687 3.31.687 1.59 0 3.08-.451 4.34-1.233l1.05 1.7c-1.57.972-3.42 1.533-5.39 1.533-1.74 0-3.37-.43-4.8-1.19zm4.07-4.069l4.72-4.722-.03.321c.03 1.145.92 2.122 2.1 2.23.91.083 1.62-.357 1.84-.99.2-.585.35-1.224.35-1.83 0-1.174-.25-2.29-.69-3.301l1.5-1.497c.76 1.432 1.19 3.065 1.19 4.798 0 .901-.21 1.77-.46 2.477-.59 1.731-2.34 2.478-3.91 2.334-1.24-.112-2.29-.729-3-1.626-.87 1.125-2.16 1.847-3.61 1.806z" })) }, { writingDirection: a });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.7e409cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.95dbe20a.js.map

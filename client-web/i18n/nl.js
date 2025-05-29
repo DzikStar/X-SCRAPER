@@ -1317,6 +1317,7 @@
                 }),
                 a("d4d35bea", "Vertalen ..."),
                 a("he9c9634", "Vertaling kon niet worden opgehaald"),
+                a("deaf5b16", "Opnieuw proberen"),
                 a("j2198c98", "Vertaalde post verbergen"),
                 a("i73a7d48", "Vertaald door Google"),
                 a("eeadb767", function (e) {
@@ -1916,9 +1917,9 @@
                 a("da8ac57c", "Bijschrift bewerken"),
                 a("a8fdd09c", "Artikel publiceren"),
                 a("d8047cc8", "Publiceren"),
-                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
-                a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd.");
-            a("e52d4998", "Kies je publiek"),
+                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel.");
+            a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
+                a("e52d4998", "Kies je publiek"),
                 a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
                 a("b5660338", "Voorvertoning tijdlijn"),
                 a("hff1b97a", "Alleen abonnees kunnen antwoorden."),
@@ -2647,7 +2648,6 @@
                 a("c776f523", "Advertentie-inkomsten delen"),
                 a("ab9f38f8", "Makersabonnement-"),
                 a("d5cab8b0", "Inkomsten delen voor makers"),
-                a("deaf5b16", "Opnieuw proberen"),
                 a("g1a4a1b6", "Fout ID-verificatie"),
                 a("e24305e4", "Je ID-verificatie is verlopen of ongeldig, probeer het opnieuw."),
                 a("f7954a0c", "Gegevens veiligheidssleutel laden"),
@@ -13302,4 +13302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.ae33201a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.c6e6d8ba.js.map

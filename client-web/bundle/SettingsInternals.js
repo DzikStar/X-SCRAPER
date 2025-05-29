@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsInternals", "icons/IconChevronDown-js"],
+    ["bundle.SettingsInternals"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => h });
@@ -100,7 +100,7 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: v, withSearchBox: k, withTweetButton: T, withWideContainer: I } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: k, withSearchBox: T, withTweetButton: v, withWideContainer: I } = this.props,
                         x = "root" === f,
                         F = "secondaryRoot" === f,
                         A = "primaryDetail" === f,
@@ -108,7 +108,7 @@
                         P = x || (A && e),
                         R = x ? d.ey : A ? d.vX : void 0,
                         N = r.createElement(s.Z, { style: C.appBarContainer }, r.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, secondaryBar: E, style: o, subtitle: D ? w : void 0, title: Z, titleDomId: R, titleIconCell: L, titleIconCellSize: B, withWideContainer: I })),
-                        U = x || (F && v) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: k, withTweetButton: T });
+                        U = x || (F && k) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: T, withTweetButton: v });
                     return r.createElement(r.Fragment, null, U, N);
                 }
             }
@@ -394,9 +394,9 @@
                     .withAnalytics({ page: "settings", section: "country" }),
                 L = "Settings_Country_Selector",
                 B = d().c21037d0,
-                v = d().i2209530,
-                k = d().j924d222,
-                T = (0, a.ju)("https://support.x.com/articles/20169220");
+                k = d().i2209530,
+                T = d().j924d222,
+                v = (0, a.ju)("https://support.x.com/articles/20169220");
             class I extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -415,8 +415,8 @@
                 }
                 render() {
                     const { countryCode: e, countryList: t, location: n } = this.props,
-                        a = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: T }, d().e9310157));
-                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: v, title: k }, r.createElement(o.Z, { style: x.countrySelector }, r.createElement(i.ZP, { helperText: a, label: B, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
+                        a = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: v }, d().e9310157));
+                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: k, title: T }, r.createElement(o.Z, { style: x.countrySelector }, r.createElement(i.ZP, { helperText: a, label: B, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
                 }
             }
             const x = l.default.create((e) => ({ countrySelector: { margin: e.spaces.space20 } })),
@@ -703,19 +703,6 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.f7d356da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.59a4053a.js.map

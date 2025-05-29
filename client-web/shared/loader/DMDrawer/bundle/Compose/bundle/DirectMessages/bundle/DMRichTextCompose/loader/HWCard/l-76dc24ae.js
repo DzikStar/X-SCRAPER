@@ -23,8 +23,8 @@
                 v = d(329491),
                 C = d(942893),
                 E = d(500002),
-                A = d(443781),
-                f = d(288955),
+                f = d(443781),
+                A = d(288955),
                 M = d(325686),
                 g = d(682474),
                 S = d(392237),
@@ -67,7 +67,7 @@
                     return a ? t.createElement(g.Z, { ratio: e }, t.createElement(M.Z, { style: S.default.absoluteFill }, t.createElement(k.Z, { "aria-label": G, fetchStatus: d, onRequestRetry: this._handleFetchTweet, render: this._renderInlinePlayer }))) : null;
                 }
             }
-            O.contextType = A.rC;
+            O.contextType = f.rC;
             const U = L(O);
             var Z = d(676145),
                 V = d(775141),
@@ -143,22 +143,22 @@
             const re = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.23"),
-                        d.e("icons.0"),
-                        d.e("icons.2"),
-                        d.e("icons.16"),
-                        d.e("icons.19"),
-                        d.e("icons.10"),
-                        d.e("icons.13"),
-                        d.e("icons.24"),
+                        d.e("icons.8"),
+                        d.e("icons.15"),
                         d.e("icons.7"),
+                        d.e("icons.3"),
+                        d.e("icons.24"),
+                        d.e("icons.12"),
                         d.e("icons.22"),
-                        d.e("icons.27"),
-                        d.e("icons.17"),
+                        d.e("icons.2"),
+                        d.e("icons.18"),
+                        d.e("icons.9"),
+                        d.e("icons.1"),
+                        d.e("icons.6"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.11"),
-                        d.e("icons.26"),
+                        d.e("icons.14"),
+                        d.e("icons.5"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -169,14 +169,14 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.8"),
-                        d.e("icons.4"),
-                        d.e("icons.14"),
-                        d.e("icons.28"),
                         d.e("icons.21"),
-                        d.e("icons.3"),
-                        d.e("icons.1"),
-                        d.e("icons.18"),
+                        d.e("icons.16"),
+                        d.e("icons.28"),
+                        d.e("icons.17"),
+                        d.e("icons.27"),
+                        d.e("icons.19"),
+                        d.e("icons.0"),
+                        d.e("icons.4"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -206,7 +206,6 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -215,7 +214,7 @@
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                         d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
-                        d.e("shared~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders~ico"),
+                        d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
@@ -260,6 +259,7 @@
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
+                        d.e("shared~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         d.e("shared~bundle.Grok~loader.Markdown"),
@@ -321,8 +321,8 @@
                     .propsFromState(() => ({ tweet: ve }))
                     .propsFromActions(() => ({ addToast: De.fz, createLocalApiErrorHandler: (0, x.zr)("BOOKMARK_BUTTON_CONTAINER"), onBookmark: P.Z.bookmark, onUnbookmark: P.Z.unbookmark, removeTweetsFromBookmarksTimeline: we.qk })),
                 Ee = _().gb303814,
-                Ae = _().h6f99ac4,
-                fe = _().c2453318,
+                fe = _().h6f99ac4,
+                Ae = _().c2453318,
                 Me = _().j08dd2d4,
                 ge = _().g1c463f6,
                 Se = t.createElement(ue.default, null),
@@ -330,7 +330,7 @@
                 Ie = (0, E.ZP)(
                     Ce((e) => {
                         const { addToast: a, createLocalApiErrorHandler: d, history: r, onBookmark: n, onUnbookmark: o, removeTweetsFromBookmarksTimeline: l, tweet: i } = e,
-                            { featureSwitches: s, userClaims: c, viewerUserId: u } = t.useContext(A.rC),
+                            { featureSwitches: s, userClaims: c, viewerUserId: u } = t.useContext(f.rC),
                             b = (0, pe.z)(),
                             _ = (0, ie.Zz)(),
                             m = i && !(0, he.$y)(s, i, he.d.AddToBookmarks);
@@ -339,7 +339,7 @@
                             { bookmarked: h } = i.retweeted_status ?? i,
                             D = () => {
                                 const e = c?.isTrueAndEnabled("subscriptions_feature_1002");
-                                a({ action: { label: fe, onAction: e ? w : v }, text: Ae });
+                                a({ action: { label: Ae, onAction: e ? w : v }, text: fe });
                             },
                             w = () => {
                                 n(p.id_str), r.push({ pathname: "/i/bookmarks/add", state: { tweet_id: p.id_str } });
@@ -353,7 +353,7 @@
                             E = (e) => {
                                 b.scribeAction(e);
                             },
-                            f = h
+                            A = h
                                 ? () => {
                                       o(p.id_str).then(C, d(me.j)), E("unbookmark");
                                   }
@@ -361,7 +361,7 @@
                                       n(p.id_str).then(D, d(_e.h)), E("bookmark");
                                   },
                             M = S.default.isDarkMode() ? "translucentWhite35" : "gray200";
-                        return t.createElement(ce.ZP, { "aria-label": h ? Me : Ee, borderColor: M, icon: h ? Se : ke, onClick: f, size: _ ? "medium" : "large" });
+                        return t.createElement(ce.ZP, { "aria-label": h ? Me : Ee, borderColor: M, icon: h ? Se : ke, onClick: A, size: _ ? "medium" : "large" });
                     }),
                 );
             var ye = d(632658),
@@ -532,10 +532,10 @@
                             if (c && !D) return;
                             const E = C.Z.getClickTrackingEmbedDetails(h, r);
                             if (w === l.bQ.CLICK_ID_EMBED && !E) return;
-                            let A = s;
-                            n.default.isFollowerCard(a) && (A = "user_recommendation");
-                            const f = _ && this._isLiveEventCard() ? n.default.getBindingValue(_.binding_values, "event_id") : void 0,
-                                M = { ...(A ? { element: A } : null), action: w, data: { ...(E && { click_tracking_embed_details: E }), items: [{ ...C.Z.getHWCardItem({ action: w, adFreeLabelEligible: !1, componentType: t, cardName: a, carouselEventDetails: d, clickContext: r, ctaIndex: i, impressionId: v, isDataSaverEnabled: p, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: f, tweetId: m.tweetId, tweetUserId: m.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
+                            let f = s;
+                            n.default.isFollowerCard(a) && (f = "user_recommendation");
+                            const A = _ && this._isLiveEventCard() ? n.default.getBindingValue(_.binding_values, "event_id") : void 0,
+                                M = { ...(f ? { element: f } : null), action: w, data: { ...(E && { click_tracking_embed_details: E }), items: [{ ...C.Z.getHWCardItem({ action: w, adFreeLabelEligible: !1, componentType: t, cardName: a, carouselEventDetails: d, clickContext: r, ctaIndex: i, impressionId: v, isDataSaverEnabled: p, isUCAppInstall: "unified_card_app_store_open_link" === e, liveEventId: A, tweetId: m.tweetId, tweetUserId: m.tweetUserId, ...(u ? { viewingUserId: D } : null) }) }] } };
                             b.scribe(M);
                         }),
                         (this._handlePollVote = ({ cardId: e, choice: a }) => {
@@ -594,8 +594,8 @@
                             if ("uc_video" === e.type || "animated_gif" === e.type) {
                                 const { original_info: _, type: m, ...h } = e,
                                     { "aria-label": D, backgroundColor: w, primaryLabel: v, secondaryLabel: C, ...E } = s.Z.extractVideoProps(p.Z.forTweet(i || "", b), { ext_alt_text: null, ...h, original_info: { ..._ }, type: this._getTypeForEntity(e) }),
-                                    A = { ...E };
-                                return d && (A.aspectRatio = d), t.createElement(T.Z, (0, r.Z)({ additionalBadges: l, forceFullPreviewImage: "suboptimal" === a, shouldAutoplayWithoutMuting: n }, A, { "aria-label": aa, onClickBackground: this._onClickVideoBackground(e.id_str), preventPlayback: c, promotedContent: u }, o));
+                                    f = { ...E };
+                                return d && (f.aspectRatio = d), t.createElement(T.Z, (0, r.Z)({ additionalBadges: l, forceFullPreviewImage: "suboptimal" === a, shouldAutoplayWithoutMuting: n }, f, { "aria-label": aa, onClickBackground: this._onClickVideoBackground(e.id_str), preventPlayback: c, promotedContent: u }, o));
                             }
                             {
                                 const { aspect_ratio: r, content_id: n, duration_ms: o, poster_image: s, variants: b, vmap_url: _ } = e,
@@ -613,7 +613,7 @@
                 }
                 render() {
                     const { card: e, cardContext: a, dmSentOrReceived: d, id: r, initialCarouselIndex: n, isDataSaverEnabled: o, isInteractive: l, onCardLinkClick: i, promotedContent: s, unifiedCard: b, withBorder: _, withBorderShadow: m, withDetail: p, withRoundBorder: h, withSquareBottomBorderRadius: D } = this.props;
-                    return t.createElement(f.Z, null, (w) =>
+                    return t.createElement(A.Z, null, (w) =>
                         t.createElement(
                             c.ZP.Provider,
                             { value: this._getFeatureConfigurationContextProviderValue() },
@@ -627,7 +627,7 @@
                     );
                 }
             }
-            ta.contextType = A.rC;
+            ta.contextType = f.rC;
             const na = (0, E.ZP)(ee(ta));
         },
         702001: (e, a, d) => {
@@ -638,4 +638,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.0ea3c5da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae.d92791aa.js.map

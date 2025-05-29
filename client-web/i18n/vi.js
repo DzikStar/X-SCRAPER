@@ -1316,6 +1316,7 @@
                 }),
                 t("d4d35bea", "Đang dịch..."),
                 t("he9c9634", "Không thể tải phần dịch"),
+                t("deaf5b16", "Thử lại"),
                 t("j2198c98", "Ẩn bài đăng đã dịch"),
                 t("i73a7d48", "Được dịch bởi Google"),
                 t("eeadb767", function (n) {
@@ -1915,9 +1916,9 @@
                 t("da8ac57c", "Chỉnh sửa chú thích"),
                 t("a8fdd09c", "Xuất bản Bài viết"),
                 t("d8047cc8", "Đăng"),
-                t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
-                t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời.");
-            t("e52d4998", "Chọn đối tượng người xem"),
+                t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình.");
+            t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
+                t("e52d4998", "Chọn đối tượng người xem"),
                 t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
                 t("b5660338", "Xem trước dòng thời gian"),
                 t("hff1b97a", "Chỉ Người đã đăng ký có thể trả lời."),
@@ -2646,7 +2647,6 @@
                 t("c776f523", "Chia sẻ doanh thu từ quảng cáo"),
                 t("ab9f38f8", "Gói thuê bao cho người sáng tạo nội dung"),
                 t("d5cab8b0", "Chia sẻ doanh thu cho người sáng tạo nội dung"),
-                t("deaf5b16", "Thử lại"),
                 t("g1a4a1b6", "Lỗi xác nhận giấy tờ tùy thân"),
                 t("e24305e4", "Phiên xác nhận giấy tờ tùy thân của bạn đã hết hiệu lực hoặc không hợp lệ, vui lòng thử lại."),
                 t("f7954a0c", "Đang tải dữ liệu khóa bảo mật"),
@@ -13287,4 +13287,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.93d54aaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.3cfecefa.js.map

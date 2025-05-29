@@ -1326,6 +1326,7 @@
                 }),
                 a("d4d35bea", "Překládání..."),
                 a("he9c9634", "Nemůžeme načíst překlad."),
+                a("deaf5b16", "Opakovat"),
                 a("j2198c98", "Skrýt přeložený post"),
                 a("i73a7d48", "Přeložil Google"),
                 a("eeadb767", function (e) {
@@ -1925,9 +1926,9 @@
                 a("da8ac57c", "Upravit popisek"),
                 a("a8fdd09c", "Zveřejnit článek"),
                 a("d8047cc8", "Publikovat"),
-                a("ff7ddca2", "Po zveřejnění se váš článek zobrazí jako post. Najdete jej také ve svém profilu na kartě Články."),
-                a("ef34d7be", "Ovládací prvky publika a odpovědí nelze po zveřejnění článku upravovat.");
-            a("e52d4998", "Zvolte cílovou skupinu"),
+                a("ff7ddca2", "Po zveřejnění se váš článek zobrazí jako post. Najdete jej také ve svém profilu na kartě Články.");
+            a("ef34d7be", "Ovládací prvky publika a odpovědí nelze po zveřejnění článku upravovat."),
+                a("e52d4998", "Zvolte cílovou skupinu"),
                 a("d7985b24", "Zvolte, kdo může odpovídat na tento článek"),
                 a("b5660338", "Náhled časové osy"),
                 a("hff1b97a", "Odpovídat mohou pouze odběratelé."),
@@ -2656,7 +2657,6 @@
                 a("c776f523", "Sdílení výnosů z reklamy"),
                 a("ab9f38f8", "Předplatné pro tvůrce"),
                 a("d5cab8b0", "Podíly z výnosů pro tvůrce"),
-                a("deaf5b16", "Opakovat"),
                 a("g1a4a1b6", "Chyba při ověřování ID"),
                 a("e24305e4", "Vaše relace ověření identity byla zastaralá nebo neplatná, zkuste to znovu."),
                 a("f7954a0c", "Načítání dat o bezpečnostních klíčích"),
@@ -13300,4 +13300,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.ebb35b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.77d5feba.js.map

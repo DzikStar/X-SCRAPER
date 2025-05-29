@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.GetVerifiedSidebar", "icons/IconBookmarkCollectionsStroke-js", "icons/IconDocument-js", "icons/IconWriteStroke-js"],
+    ["loader.GetVerifiedSidebar", "icons/IconFireStroke-js"],
     {
         920603: (e, r, t) => {
-            t.d(r, { Z: () => M });
+            t.d(r, { Z: () => R });
             var a = t(202784),
                 n = t(325686),
                 i = t(73664),
@@ -55,29 +55,30 @@
                 p = (e, r) => ({ pathname: o(r), state: { referring_page: e.referrer, tier: u(r.product_category), plan: d(r.charge_interval) } });
             var m = t(807896),
                 k = t(154003),
-                h = t(731708),
-                f = t(392237),
-                b = t(498514);
-            const v = ({ renderProperties: e, wrapperStyles: r }) => {
-                    const t = (0, b.U)(e.icon_type),
-                        n = e.icon_color ? { color: f.default.theme.colors[e.icon_color] } : null;
-                    return a.createElement(t, { style: [r, n] });
+                f = t(731708),
+                b = t(392237),
+                _ = t(498514);
+            const h = ({ renderProperties: e, wrapperStyles: r }) => {
+                    const t = (0, _.U)(e.icon_type),
+                        n = e.icon_color ? { color: b.default.theme.colors[e.icon_color] } : null;
+                    return a.createElement(t, { style: [r, n, "CircleFill" === e.icon_type ? C.smallIcon : null] });
                 },
-                C = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: i, icon: s } }) => a.createElement(k.ZP, { link: r, onClick: t, type: e?.type }, a.createElement(n.Z, { style: _.buttonInner }, s ? a.createElement(v, { renderProperties: s, wrapperStyles: [_.iconWrapper, "CircleFill" === s.icon_type ? _.smallIconWrapper : null] }) : null, a.createElement(h.ZP, null, i))),
-                _ = f.default.create((e) => ({ buttonInner: { flexDirection: "row", alignItems: "center" }, iconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" }, smallIconWrapper: { height: ".6em" } }));
-            var g = t(992942),
-                y = t(439592);
-            const E = ({ destinationLink: e, onDestinationClick: r, renderProperties: { cta: t, image_url: i, primary_label: s, secondary_label: l } }) => {
-                    const c = i ? "whiteOnColor" : void 0;
-                    return a.createElement(n.Z, { style: P.cardOuter }, i ? a.createElement(g.Z, { aspectMode: y.Z.COVER, source: { uri: i }, style: P.image }) : null, a.createElement(n.Z, { style: P.cardInner }, a.createElement(h.ZP, { color: c, size: "headline1", weight: "heavy" }, s), l ? a.createElement(h.ZP, { color: c }, l) : null, a.createElement(C, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: r, renderProperties: t })));
+                C = b.default.create((e) => ({ smallIcon: { height: ".6em" } })),
+                y = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: i, icon: s } }) => a.createElement(k.ZP, { link: r, onClick: t, type: e?.type }, a.createElement(n.Z, { style: g.buttonInner }, s ? a.createElement(h, { renderProperties: s, wrapperStyles: g.iconWrapper }) : null, a.createElement(f.ZP, null, i))),
+                g = b.default.create((e) => ({ buttonInner: { flexDirection: "row", alignItems: "center" }, iconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } }));
+            var P = t(992942),
+                S = t(439592);
+            const E = ({ destinationLink: e, onDestinationClick: r, renderProperties: { cta: t, image_url: i, primary_label: s, primary_label_icon: l, secondary_label: c } }) => {
+                    const o = i ? "whiteOnColor" : void 0;
+                    return a.createElement(n.Z, { style: w.cardOuter }, i ? a.createElement(P.Z, { aspectMode: S.Z.COVER, source: { uri: i }, style: w.image }) : null, a.createElement(n.Z, { style: w.cardInner }, a.createElement(n.Z, { style: w.primaryLabelContainer }, l ? a.createElement(h, { renderProperties: l, wrapperStyles: w.primaryLabelIconWrapper }) : null, a.createElement(f.ZP, { color: o, size: "headline1", weight: "heavy" }, s)), c ? a.createElement(f.ZP, { color: o }, c) : null, a.createElement(y, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: r, renderProperties: t })));
                 },
-                P = f.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large } })),
+                w = b.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large }, primaryLabelContainer: { flexDirection: "row", alignItems: "center" }, primaryLabelIconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } })),
                 Z = ({ destinationLink: e, onDestinationClick: r, renderProperties: t }) => {
                     const i = a.useMemo(() => {
                         const n = { destinationLink: e, onDestinationClick: r };
                         switch (t.__typename) {
                             case "UpsellButtonRenderProperties":
-                                return a.createElement(C, (0, m.Z)({}, n, { renderProperties: t }));
+                                return a.createElement(y, (0, m.Z)({}, n, { renderProperties: t }));
                             case "UpsellCardRenderProperties":
                                 return a.createElement(E, (0, m.Z)({}, n, { renderProperties: t }));
                             default:
@@ -86,7 +87,7 @@
                     }, [t, e, r]);
                     return a.createElement(n.Z, { testID: `super-upsell-${t.__typename ?? "default"}` }, i);
                 },
-                S = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: n }) => {
+                v = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: n }) => {
                     const l = (0, c.Z)(),
                         o = a.useRef(),
                         u = (0, i.R)(o, { threshold: 1 }),
@@ -100,14 +101,14 @@
                         }, [l, r, d]);
                     return a.createElement("div", { ref: o }, a.createElement(Z, { destinationLink: m, onDestinationClick: k, renderProperties: n.render_properties }));
                 },
-                w = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(S, e));
-            var D = t(722517);
-            const B = ({ attributionParams: e, surfaceKey: r, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }) => a.useMemo(() => a.createElement(w, { attributionParams: e, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }), [e, t, n, i, s]),
-                I = ({ surfaceKey: e, wrapperStyles: r }) => {
-                    const { attributionParams: t, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c } = (0, D.Z)(e);
+                D = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(v, e));
+            var I = t(722517);
+            const B = ({ attributionParams: e, surfaceKey: r, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }) => a.useMemo(() => a.createElement(D, { attributionParams: e, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }), [e, t, n, i, s]),
+                L = ({ surfaceKey: e, wrapperStyles: r }) => {
+                    const { attributionParams: t, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c } = (0, I.Z)(e);
                     return a.useMemo(() => (c && t ? a.createElement(n.Z, { style: r }, a.createElement(B, { attributionParams: t, surfaceKey: e, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c })) : null), [t, c, e, i, s, l, r]);
                 },
-                M = a.memo(I);
+                R = a.memo(L);
         },
         86029: (e, r, t) => {
             t.r(r), t.d(r, { default: () => d });
@@ -152,19 +153,19 @@
                 p = t(1753),
                 m = t(748138),
                 k = t(53674),
-                h = t(164174),
-                f = t(926981),
-                b = t(642317),
-                v = t(28862),
+                f = t(164174),
+                b = t(926981),
+                _ = t(642317),
+                h = t(28862),
                 C = t(376278),
-                _ = t(511323),
+                y = t(511323),
                 g = t(254944),
-                y = t(465072),
-                E = t(189700),
-                P = t(520489),
-                Z = t(297938),
-                S = t(136483),
-                w = t(457566);
+                P = t(465072),
+                S = t(189700),
+                E = t(520489),
+                w = t(297938),
+                Z = t(136483),
+                v = t(457566);
             const D = (e) => {
                 switch (e) {
                     case "Fire":
@@ -188,41 +189,41 @@
                     case "NotesStroke":
                         return p.default;
                     case "Grok":
-                        return w.x1;
+                        return v.x1;
                     case "MoneyStroke":
                         return m.default;
                     case "BarChart":
                         return k.default;
                     case "DeckStroke":
-                        return h.default;
-                    case "Film":
                         return f.default;
-                    case "RocketStroke":
+                    case "Film":
                         return b.default;
+                    case "RocketStroke":
+                        return _.default;
                     case "BookmarkCollectionsStroke":
-                        return v.default;
+                        return h.default;
                     case "FireStroke":
                         return C.default;
                     case "PersonStroke":
-                        return _.default;
+                        return y.default;
                     case "PaintbrushStroke":
                         return g.default;
                     case "ModeratorStroke":
-                        return y.default;
-                    case "Document":
-                        return E.default;
-                    case "RadarStroke":
                         return P.default;
-                    case "SearchPersonStroke":
-                        return Z.default;
-                    case "CircleFill":
+                    case "Document":
                         return S.default;
+                    case "RadarStroke":
+                        return E.default;
+                    case "SearchPersonStroke":
+                        return w.default;
+                    case "CircleFill":
+                        return Z.default;
                     default:
                         return () => null;
                 }
             };
         },
-        28862: (e, r, t) => {
+        376278: (e, r, t) => {
             t.r(r), t.d(r, { default: () => c });
             var a = t(202784),
                 n = t(890601),
@@ -230,39 +231,11 @@
                 s = t(347101);
             const l = (e = {}) => {
                 const { direction: r } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M2.998 8.5c0-1.38 1.119-2.5 2.5-2.5h9c1.381 0 2.5 1.12 2.5 2.5v14.12l-7-3.5-7 3.5V8.5zm2.5-.5c-.276 0-.5.22-.5.5v10.88l5-2.5 5 2.5V8.5c0-.28-.224-.5-.5-.5h-9zM18.5 2H8.998c-1.105 0-2 .9-2 2H18.5c.276 0 .5.22.5.5v9.82l-.002-.01v2.28L21 17.68V4.5C21 3.12 19.881 2 18.5 2z" })) }, { writingDirection: r });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M11 1.28v.09c0 1.79 0 3.53-.829 5.18-.42-.78-1.061-1.36-1.707-1.94l-.268-.24c-.501 1-1.151 1.98-1.807 2.97C4.959 9.5 3.5 11.7 3.5 14.25c0 2.52.949 4.55 2.538 5.94 1.437 1.26 3.334 1.94 5.378 2.04.122.01.539.02.584.02 4.615 0 8.5-3.37 8.5-8C20.5 8.29 15.797 4 11 1.28zm2.534 18.08c-.521.56-1.144.87-1.681.89-.111 0-.221-.01-.331-.01-.454-.05-.684-.23-.82-.41-.192-.24-.313-.64-.313-1.14 0-.75.362-1.26 1.214-2.02.166-.14.35-.3.548-.46.47-.4 1.017-.86 1.56-1.41l.031.07c.35.83.647 1.78.647 2.54 0 .65-.317 1.38-.855 1.95zm2.572-.42c.18-.48.283-1 .283-1.53 0-1.17-.429-2.43-.804-3.32-.194-.46-.388-.85-.533-1.13-.073-.14-1.02-1.78-1.02-1.78l-.901 1.23c-.678.92-1.425 1.55-2.18 2.19-.224.19-.449.38-.673.58-.94.83-1.889 1.85-1.889 3.51 0 .22.014.44.047.67C6.673 18.38 5.5 16.6 5.5 14.25c0-2.01 1.133-3.61 2.246-5.18.284-.4.568-.8.831-1.21.419.89.419 2.18.173 3.08l.117-.11c1.971-1.7 3.514-3.03 3.969-6.06.632.47 1.415 1.12 2.195 1.93 1.79 1.84 3.469 4.42 3.469 7.55 0 1.92-.921 3.61-2.394 4.69z" })) }, { writingDirection: r });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
-        },
-        189700: (e, r, t) => {
-            t.r(r), t.d(r, { default: () => c });
-            var a = t(202784),
-                n = t(890601),
-                i = t(783427),
-                s = t(347101);
-            const l = (e = {}) => {
-                const { direction: r } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M8 11h8v2H8zm0-4h5v2H8z" }), a.createElement("path", { d: "M17.5 2h-11C5.12 2 4 3.12 4 4.5v15C4 20.88 5.12 22 6.5 22h6c4.14 0 7.5-3.36 7.5-7.5v-10C20 3.12 18.88 2 17.5 2zm-2.52 17.41c.01-.1.02-.21.02-.32v-1.27c0-.48.32-.82.84-.82h1.28c.09 0 .19 0 .29-.01-.53 1.04-1.39 1.89-2.43 2.42zM18 14c0 .58-.46 1-.88 1h-1.28C14.26 15 13 16.19 13 17.82v1.27c0 .46-.43.91-.97.91H6.5c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h11c.27 0 .5.22.5.5V14z" })) }, { writingDirection: r });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
-        376021: (e, r, t) => {
-            t.r(r), t.d(r, { default: () => o });
-            var a = t(202784),
-                n = t(890601),
-                i = t(783427),
-                s = t(717683),
-                l = t(347101);
-            const c = (e = {}) => {
-                const r = a.useContext(s.Z),
-                    { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, r && l.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const o = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.d3f6d5ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.eaeb023a.js.map

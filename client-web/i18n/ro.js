@@ -1328,6 +1328,7 @@
                 }),
                 t("d4d35bea", "Se traduce..."),
                 t("he9c9634", "Nu s-a putut prelua traducerea"),
+                t("deaf5b16", "Reîncearcă"),
                 t("j2198c98", "Ascunde postarea tradusă"),
                 t("i73a7d48", "Tradus de Google"),
                 t("eeadb767", function (e) {
@@ -1927,9 +1928,9 @@
                 t("da8ac57c", "Editează legenda"),
                 t("a8fdd09c", "Publică articolul"),
                 t("d8047cc8", "Publică"),
-                t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău."),
-                t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului.");
-            t("e52d4998", "Alege-ți publicul"),
+                t("ff7ddca2", "După publicare, articolul va apărea ca postare. Îl vei găsi și în fila Articole de pe profilul tău.");
+            t("ef34d7be", "Publicul și controalele asupra răspunsurilor nu se pot edita după publicarea articolului."),
+                t("e52d4998", "Alege-ți publicul"),
                 t("d7985b24", "Alege cine poate răspunde la acest articol"),
                 t("b5660338", "Previzualizare Cronologie"),
                 t("hff1b97a", "Doar utilizatorii abonați pot răspunde."),
@@ -2658,7 +2659,6 @@
                 t("c776f523", "Cotă de venituri din reclame"),
                 t("ab9f38f8", "Abonament la creatori"),
                 t("d5cab8b0", "Cota-parte din venituri pentru creatori"),
-                t("deaf5b16", "Reîncearcă"),
                 t("g1a4a1b6", "Eroare de verificare a identității"),
                 t("e24305e4", "Sesiunea de verificare a identității tale a expirat sau a fost nevalidă; încearcă din nou."),
                 t("f7954a0c", "Se încarcă datele despre cheile de securitate"),
@@ -13302,4 +13302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.41e7adaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.abbb601a.js.map
