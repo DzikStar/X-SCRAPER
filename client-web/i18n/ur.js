@@ -1276,8 +1276,6 @@
                     return "Read " + e.replyCount + " replies";
                 }),
                 o("dc0c8266", "Ask Grok"),
-                o("i7ac410e", "Show Original"),
-                o("c67f09e8", "Show Translation"),
                 o("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1319,15 +1317,13 @@
                 o("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + r(e.count, "", "s");
                 }),
-                o("d4d35bea", "Translating..."),
-                o("he9c9634", "ترجمہ فراہم کرنے سے قاصر"),
-                o("deaf5b16", "دوبارہ کوشش کریں"),
-                o("j2198c98", "Hide translated post"),
+                o("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                o("d56779a2", "easy to understand"),
+                o("b6fe8a56", "confusing or unclear"),
                 o("i73a7d48", "Google سے ترجمہ شدہ"),
                 o("eeadb767", function (e) {
                     return "گوگل کے ذریعے " + e.originLanguage + " سے ترجمہ شدہ";
                 }),
-                o("be9b9fb8", "Translated by Grok"),
                 o("d9c6f69d", function (e) {
                     return "Translated from " + e.originLanguage + " by Grok";
                 }),
@@ -1339,15 +1335,19 @@
                 o("caa5ba3d", function (e) {
                     return "Translated from " + e.originLanguage + " by X";
                 }),
+                o("deaf5b16", "دوبارہ کوشش کریں"),
+                o("a66d80d0", "Translate post"),
+                o("be9b9fb8", "Translated by Grok"),
+                o("he9c9634", "ترجمہ فراہم کرنے سے قاصر"),
+                o("j2198c98", "Hide translated post"),
+                o("d4d35bea", "Translating..."),
+                o("i7ac410e", "Show Original"),
+                o("c67f09e8", "Show Translation"),
                 o("e0f81ff3", "Translation:"),
                 o("j2862695", function (e) {
                     return e.originLanguage + " سے ترجمہ شدہ";
                 }),
                 o("b7cb4fab", "ترجمہ شدہ از"),
-                o("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
-                o("d56779a2", "easy to understand"),
-                o("b6fe8a56", "confusing or unclear"),
-                o("a66d80d0", "Translate post"),
                 o("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12074,6 +12074,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["By purchasing, you agree to our ", " and our ", ". Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime."];
@@ -13297,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.fc70c6da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.131ccc5a.js.map

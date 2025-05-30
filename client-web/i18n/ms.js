@@ -1271,8 +1271,6 @@
                     return "Baca " + a.replyCount + " balasan";
                 }),
                 i("dc0c8266", "Tanya Grok"),
-                i("i7ac410e", "Tunjukkan Asal"),
-                i("c67f09e8", "Tunjukkan Terjemahan"),
                 i("f396c105", function (a) {
                     return "" + a.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 i("j77292b7", function (a) {
                     return "Hanya pilih sehingga " + a.count + " fail";
                 }),
-                i("d4d35bea", "Menterjemah..."),
-                i("he9c9634", "Tidak dapat mengambil terjemahan"),
-                i("deaf5b16", "Cuba semula"),
-                i("j2198c98", "Sembunyikan siaran yang diterjemahkan"),
+                i("cbc8fed4", "Adakah terjemahan ini tepat? Beri maklum balas kepada kami supaya kami boleh melakukan penambahbaikan:"),
+                i("d56779a2", "mudah untuk difahami"),
+                i("b6fe8a56", "mengelirukan atau tidak jelas"),
                 i("i73a7d48", "Diterjemahkan oleh Google"),
                 i("eeadb767", function (a) {
                     return "Diterjemahkan daripada " + a.originLanguage + " oleh Google";
                 }),
-                i("be9b9fb8", "Diterjemahkan oleh Grok"),
                 i("d9c6f69d", function (a) {
                     return "Diterjemahkan daripada " + a.originLanguage + " oleh Grok";
                 }),
@@ -1334,15 +1330,19 @@
                 i("caa5ba3d", function (a) {
                     return "Diterjemahkan daripada " + a.originLanguage + " oleh X";
                 }),
+                i("deaf5b16", "Cuba semula"),
+                i("a66d80d0", "Terjemahkan siaran"),
+                i("be9b9fb8", "Diterjemahkan oleh Grok"),
+                i("he9c9634", "Tidak dapat mengambil terjemahan"),
+                i("j2198c98", "Sembunyikan siaran yang diterjemahkan"),
+                i("d4d35bea", "Menterjemah..."),
+                i("i7ac410e", "Tunjukkan Asal"),
+                i("c67f09e8", "Tunjukkan Terjemahan"),
                 i("e0f81ff3", "Terjemahan:"),
                 i("j2862695", function (a) {
                     return "Diterjemahkan daripada " + a.originLanguage + " oleh";
                 }),
                 i("b7cb4fab", "Diterjemahkan oleh"),
-                i("cbc8fed4", "Adakah terjemahan ini tepat? Beri maklum balas kepada kami supaya kami boleh melakukan penambahbaikan:"),
-                i("d56779a2", "mudah untuk difahami"),
-                i("b6fe8a56", "mengelirukan atau tidak jelas"),
-                i("a66d80d0", "Terjemahkan siaran"),
                 i("d4c339b9", function (a) {
                     return "Siaran daripada " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -12065,6 +12065,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Dengan membuat pembelian, anda bersetuju dengan ", " kami dan ", " kami. Langganan akan dibaharui secara automatik sehinggalah dibatalkan, seperti yang diterangkan dalam Terma. Batalkan pada bila-bila masa."];
@@ -13287,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f70a7c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.fcd3df1a.js.map

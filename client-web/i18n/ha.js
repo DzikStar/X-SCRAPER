@@ -1275,8 +1275,6 @@
                     return "Read " + a.replyCount + " replies";
                 }),
                 t("dc0c8266", "Ask Grok"),
-                t("i7ac410e", "Show Original"),
-                t("c67f09e8", "Show Translation"),
                 t("f396c105", function (a) {
                     return "" + a.displayCount;
                 }),
@@ -1318,15 +1316,13 @@
                 t("j77292b7", function (a) {
                     return "Please only select up to " + a.count + " file" + o(a.count, "", "s");
                 }),
-                t("d4d35bea", "Translating..."),
-                t("he9c9634", "An kasa ɗebo fassara"),
-                t("deaf5b16", "Sake gwadawa"),
-                t("j2198c98", "Hide translated post"),
+                t("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                t("d56779a2", "easy to understand"),
+                t("b6fe8a56", "confusing or unclear"),
                 t("i73a7d48", "Google ta fassara"),
                 t("eeadb767", function (a) {
                     return "An fassara daga " + a.originLanguage + " daga Google";
                 }),
-                t("be9b9fb8", "Translated by Grok"),
                 t("d9c6f69d", function (a) {
                     return "Translated from " + a.originLanguage + " by Grok";
                 }),
@@ -1338,15 +1334,19 @@
                 t("caa5ba3d", function (a) {
                     return "Translated from " + a.originLanguage + " by X";
                 }),
+                t("deaf5b16", "Sake gwadawa"),
+                t("a66d80d0", "Translate post"),
+                t("be9b9fb8", "Translated by Grok"),
+                t("he9c9634", "An kasa ɗebo fassara"),
+                t("j2198c98", "Hide translated post"),
+                t("d4d35bea", "Translating..."),
+                t("i7ac410e", "Show Original"),
+                t("c67f09e8", "Show Translation"),
                 t("e0f81ff3", "Translation:"),
                 t("j2862695", function (a) {
                     return "Fassarawa daga " + a.originLanguage + " daga";
                 }),
                 t("b7cb4fab", "Fassarawa daga"),
-                t("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
-                t("d56779a2", "easy to understand"),
-                t("b6fe8a56", "confusing or unclear"),
-                t("a66d80d0", "Translate post"),
                 t("d4c339b9", function (a) {
                     return "Post from " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -12069,6 +12069,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["By purchasing, you agree to our ", " and our ", ". Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime."];
@@ -13291,4 +13297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.5b57cc0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.07a0c7ca.js.map

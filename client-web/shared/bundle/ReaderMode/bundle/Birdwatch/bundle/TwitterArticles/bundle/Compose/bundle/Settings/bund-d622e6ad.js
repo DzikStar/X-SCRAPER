@@ -55,7 +55,7 @@
                 c = (e) => ({ type: o, payload: e });
         },
         694180: (e, t, n) => {
-            n.d(t, { cM: () => E, dS: () => y, iY: () => h });
+            n.d(t, { cM: () => E, dS: () => y, iY: () => _ });
             var s = n(370751),
                 r = n(399896),
                 i = n(663550),
@@ -86,12 +86,12 @@
                             y = `${n}-${t ?? "undefined"}-${p ?? "undefined"}-${l ?? "undefined"}`;
                         if (u.has(l) && f(o(), y)) return Promise.resolve();
                         const E = e && "earned" === e.toLowerCase() ? "1" : null,
-                            h = { ...s, earned: E, epoch_ms: Date.now() };
-                        return (0, a._O)(i, { params: h, request: c.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: h }, (e, t) => {
+                            _ = { ...s, earned: E, epoch_ms: Date.now() };
+                        return (0, a._O)(i, { params: _, request: c.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: _ }, (e, t) => {
                             if (!t && u.has(l)) return [m(y)];
                         });
                     },
-                h =
+                _ =
                     (e) =>
                     (t, n, { api: s }) =>
                         (0, a._O)(t, { params: e, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -166,7 +166,7 @@
                             s = n?.length > 0;
                         return t ? (0, a.ke)(t.fetchStatus, s) : a.ZP.NONE;
                     },
-                    h =
+                    _ =
                         (s) =>
                         (r, a, { api: d }) => {
                             const l = t(s);
@@ -178,12 +178,12 @@
                     select: f,
                     selectItems: y,
                     selectFetchStatus: E,
-                    fetch: h,
+                    fetch: _,
                     fetchIfNeeded: (e) => (t, n) => {
                         const r = n(),
                             i = f(r),
                             o = E(r);
-                        return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? t(h(e)) : s.O4.resolve();
+                        return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? t(_(e)) : s.O4.resolve();
                     },
                     fetchBottom: (e) => (t, n) => {
                         const r = n(),
@@ -192,7 +192,7 @@
                                 const t = f(e);
                                 return t?.cursors?.next_cursor;
                             })(r);
-                        return i.fetchStatus[d.Yj.BOTTOM] !== a.ZP.LOADING && o ? t(h({ ...e, cursor: o })) : s.O4.resolve();
+                        return i.fetchStatus[d.Yj.BOTTOM] !== a.ZP.LOADING && o ? t(_({ ...e, cursor: o })) : s.O4.resolve();
                     },
                     injectItems: (e) => i.WC({ items: e, sliceKey: u, identityFunction: p }),
                     removeItems: (e) => i.Er({ items: e, sliceKey: u, identityFunction: p }),
@@ -200,7 +200,7 @@
             }
         },
         841198: (e, t, n) => {
-            n.d(t, { Be: () => _, Er: () => g, Ev: () => E, WC: () => O, Yf: () => u, t5: () => Z });
+            n.d(t, { Be: () => h, Er: () => g, Ev: () => E, WC: () => O, Yf: () => u, t5: () => P });
             n(571372);
             var s = n(166852),
                 r = n(370751),
@@ -236,21 +236,21 @@
                 },
                 y = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
                 E = (e) => ({ type: y, meta: { sliceKey: e } }),
-                h = "rweb/slices/DELETE_SLICE",
-                _ = (e) => ({ type: h, meta: { sliceKey: e } }),
+                _ = "rweb/slices/DELETE_SLICE",
+                h = (e) => ({ type: _, meta: { sliceKey: e } }),
                 T = "rweb/slices/RESTORE_SLICE",
                 w = "rweb/slices/INJECT_ITEMS_SLICE",
                 O = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: e }, payload: t }),
                 S = "rweb/slices/REMOVE_ITEMS_SLICE",
                 g = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                Z = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
+                P = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
             i.Z.register({
                 [u]: function (e = d, t) {
                     if (!t) return e;
                     const { sliceKey: n } = t.meta || {};
                     if (!n) return e;
                     switch (t.type) {
-                        case h: {
+                        case _: {
                             const t = { ...e };
                             return delete t[n], t;
                         }
@@ -346,7 +346,7 @@
                     p.has(e) ||
                         (p.add(e),
                         u.addTask(() => {
-                            const n = { content_type: "POST", id: e, dst_lang: t.userLanguage };
+                            const n = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls };
                             return r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(n) }, "https://api.x.com").then((e) => e.text());
                         }));
                 };
@@ -432,4 +432,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.9451e69a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.b374fc2a.js.map

@@ -1271,8 +1271,6 @@
                     return "Les " + e.replyCount + " svar";
                 }),
                 t("dc0c8266", "Spør Grok"),
-                t("i7ac410e", "Vis original"),
-                t("c67f09e8", "Vis oversettelse"),
                 t("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 t("j77292b7", function (e) {
                     return "Velg kun opptil " + e.count + " fil" + i(e.count, "", "er");
                 }),
-                t("d4d35bea", "Oversetter …"),
-                t("he9c9634", "Kan ikke hente oversettelse"),
-                t("deaf5b16", "Prøv igjen"),
-                t("j2198c98", "Skjul oversatt innlegg"),
+                t("cbc8fed4", "Var denne oversettelsen nøyaktig? Gi oss tilbakemelding for å hjelpe oss å bli bedre:"),
+                t("d56779a2", "lett å forstå"),
+                t("b6fe8a56", "forvirrende eller uklar"),
                 t("i73a7d48", "Oversatt av Google"),
                 t("eeadb767", function (e) {
                     return "Oversatt fra " + e.originLanguage + " av Google";
                 }),
-                t("be9b9fb8", "Oversatt av Grok"),
                 t("d9c6f69d", function (e) {
                     return "Oversatt fra " + e.originLanguage + " av Grok";
                 }),
@@ -1334,15 +1330,19 @@
                 t("caa5ba3d", function (e) {
                     return "Oversatt fra " + e.originLanguage + " av X";
                 }),
+                t("deaf5b16", "Prøv igjen"),
+                t("a66d80d0", "Oversett innlegg"),
+                t("be9b9fb8", "Oversatt av Grok"),
+                t("he9c9634", "Kan ikke hente oversettelse"),
+                t("j2198c98", "Skjul oversatt innlegg"),
+                t("d4d35bea", "Oversetter …"),
+                t("i7ac410e", "Vis original"),
+                t("c67f09e8", "Vis oversettelse"),
                 t("e0f81ff3", "Oversettelse:"),
                 t("j2862695", function (e) {
                     return "Oversatt fra " + e.originLanguage + " av";
                 }),
                 t("b7cb4fab", "Oversatt av"),
-                t("cbc8fed4", "Var denne oversettelsen nøyaktig? Gi oss tilbakemelding for å hjelpe oss å bli bedre:"),
-                t("d56779a2", "lett å forstå"),
-                t("b6fe8a56", "forvirrende eller uklar"),
-                t("a66d80d0", "Oversett innlegg"),
                 t("d4c339b9", function (e) {
                     return "Innlegg fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12065,6 +12065,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ved å kjøpe samtykker du i ", " og ", ". Abonnementer fornyes automatisk inntil de kanselleres, slik det er beskrevet i vilkårene. Du kan kansellere når som helst."];
@@ -13287,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.a08be7ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.f3eb795a.js.map

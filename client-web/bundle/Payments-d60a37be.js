@@ -3,25 +3,24 @@
     ["bundle.Payments-d60a37be"],
     {
         43429: (e, t, n) => {
-            n.d(t, { $W: () => r, DH: () => g, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => i, ah: () => c, cX: () => l, dX: () => u, hv: () => p, ic: () => a, q9: () => f, uc: () => _, w8: () => s, wC: () => d, wG: () => h });
+            n.d(t, { $W: () => r, DH: () => p, Ln: () => u, Ms: () => y, NU: () => f, Rz: () => o, ah: () => c, cX: () => i, dX: () => d, hv: () => _, ic: () => a, q9: () => g, uc: () => h, w8: () => s, wC: () => l, wG: () => m });
             n(202784);
             const a = 25,
                 r = "xpayments-preset-all",
                 s = (Object.freeze({ onboarding: "onboarding", upgradeToKycDocumentsVerified: "upgradeToKycDocumentsVerified" }), 280),
                 o = Object.freeze({ credit: "credit", debit: "debit" }),
                 c = (Object.freeze({ XPayments: "XPayments" }), Object.freeze({ reviewPane: "reviewPane", amountPane: "amountPane", successPane: "successPane" })),
-                i = Object.freeze({ termsPane: "termsPane" }),
-                l = Object.freeze({ reviewPane: "reviewPane", participantPane: "participantPane" }),
-                d = Object.freeze({ bankDeposit: "bankDeposit", bankWithdraw: "bankWithdraw", card: "card", atm: "atm" }),
-                u = Object.freeze({ bank: "bank", card: "card", x: "x" }),
-                m = 4e3,
-                h = 4,
-                _ = "https://money.x.com/articles/terms-and-conditions",
-                p = "https://money.x.com/articles/privacy-policy",
-                g = "https://money.x.com/articles/short-form-disclosure",
-                f = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
-                y = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
-                b = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
+                i = Object.freeze({ reviewPane: "reviewPane", participantPane: "participantPane" }),
+                l = Object.freeze({ bankDeposit: "bankDeposit", bankWithdraw: "bankWithdraw", card: "card", atm: "atm" }),
+                d = Object.freeze({ bank: "bank", card: "card", x: "x" }),
+                u = 4e3,
+                m = 4,
+                h = "https://money.x.com/articles/terms-and-conditions",
+                _ = "https://money.x.com/articles/privacy-policy",
+                p = "https://money.x.com/articles/short-form-disclosure",
+                g = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
+                f = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
+                y = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
         },
         452275: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -127,8 +126,8 @@
             function R(e) {
                 return a.createElement(i.H, { errorConfig: x }, a.createElement(A, e));
             }
-            const H = a.memo(R),
-                N = ({ error: e, onClose: t }) => {
+            const N = a.memo(R),
+                H = ({ error: e, onClose: t }) => {
                     const n = (0, m.z)(),
                         r = (0, E.jh)();
                     return (
@@ -140,7 +139,7 @@
                 },
                 z = { context: "TwoFactorNotSupported" };
             function M(e) {
-                return a.createElement(i.H, { errorConfig: z }, a.createElement(N, e));
+                return a.createElement(i.H, { errorConfig: z }, a.createElement(H, e));
             }
             const D = a.memo(M);
             var O = n(158272);
@@ -232,7 +231,7 @@
                         k = a.useCallback(() => {
                             (0, _.qc)({ environment: y, closePath: C, challengeInitiator: w, history: u });
                         }, [w, C, y, u]),
-                        I = a.useMemo(() => (d?.type === p.O.BackupCode ? a.createElement(H, { onClose: k, onSubmit: v }) : r && d?.type === p.O.Passkey ? a.createElement(L, { challenge: r, onClose: k, onSubmit: v }) : d?.type === p.O.Sms ? a.createElement(V, { onClose: k, onSubmit: v }) : d?.type === p.O.Totp ? a.createElement(q, { onClose: k, onSubmit: v }) : a.createElement(D, { error: c ? (ee[c] ?? X) : X, onClose: k })), [r, c, k, v, d?.type]);
+                        I = a.useMemo(() => (d?.type === p.O.BackupCode ? a.createElement(N, { onClose: k, onSubmit: v }) : r && d?.type === p.O.Passkey ? a.createElement(L, { challenge: r, onClose: k, onSubmit: v }) : d?.type === p.O.Sms ? a.createElement(V, { onClose: k, onSubmit: v }) : d?.type === p.O.Totp ? a.createElement(q, { onClose: k, onSubmit: v }) : a.createElement(D, { error: c ? (ee[c] ?? X) : X, onClose: k })), [r, c, k, v, d?.type]);
                     return a.createElement(g.Z, { backButtonType: "close", history: u, isFullWidth: t, onBackClick: k }, I);
                 },
                 ne = { context: "VerifyTwoFactorAuth" };
@@ -256,8 +255,8 @@
                         [F, q] = a.useState(),
                         [A, x] = a.useState(!1),
                         R = s()(),
-                        H = E === d.kW.auth,
-                        N = (E ? ce[E] : void 0) ?? d.P_.challenge,
+                        N = E === d.kW.auth,
+                        H = (E ? ce[E] : void 0) ?? d.P_.challenge,
                         z = ie.includes(E),
                         M = (E ? oe[E] : void 0) ?? k,
                         D = a.useCallback((e) => {
@@ -268,7 +267,7 @@
                                 const { authStatus: t, challengeId: a, message: s } = e.data;
                                 switch (s) {
                                     case se.T.success:
-                                        H && 1 === t && u.Z.updateSessionStatus(c.c.Active), P ? (0, _.Se)(R, P) : E === d.kW.activateCard ? (0, _.uN)(R) : (0, _.J$)(R), w ? r.replace(w, C) : n ? n() : r.goBack(), M && p({ text: M });
+                                        N && 1 === t && u.Z.updateSessionStatus(c.c.Active), P ? (0, _.Se)(R, P) : E === d.kW.activateCard ? (0, _.uN)(R) : (0, _.J$)(R), w ? r.replace(w, C) : n ? n() : r.goBack(), M && p({ text: M });
                                         break;
                                     case se.T.docvChallenge:
                                         r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeInitiator: E });
@@ -286,13 +285,13 @@
                                         r.push(d.jR, { challengeInitiator: d.kW.forgotPin });
                                         break;
                                     case se.T.invalidChallenge:
-                                        H && u.Z.fetchNewSession();
+                                        N && u.Z.fetchNewSession();
                                         break;
                                     case se.T.close:
                                         (0, _.qc)({ environment: R, closePath: b, challengeInitiator: E, history: r });
                                 }
                             },
-                            [H, P, E, w, n, M, r, g, R, b, C, p],
+                            [N, P, E, w, n, M, r, g, R, b, C, p],
                         );
                     a.useEffect(() => {
                         i && i.scribe({ page: "money", section: "verify-challenge", action: "impression" });
@@ -306,8 +305,8 @@
                             ),
                             [E],
                         );
-                    const L = H;
-                    return a.createElement(a.Fragment, null, I && A ? a.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || z ? a.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: A, isNonModalScreen: L, linkType: N, payload: { challengeId: I, loginRequestId: F, message: S }, redirectPath: w, redirectState: C }) : null);
+                    const L = N;
+                    return a.createElement(a.Fragment, null, I && A ? a.createElement(re, { challengeId: I, isNonModalScreen: L, onSuccess: D }) : null, I || z ? a.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: A, isNonModalScreen: L, linkType: H, payload: { challengeId: I, loginRequestId: F, message: S }, redirectPath: w, redirectState: C }) : null);
                 },
                 de = { context: "VerifyChallenge" };
             function ue(e) {
@@ -371,12 +370,13 @@
                 I = ({ allowClipboardWrite: e, iframeUrl: t, isBackgroundHidden: n, isInlineFrame: s, isNonModalScreen: o }) => {
                     const d = (0, c.useHistory)(),
                         [m, p] = a.useState(!1),
-                        g = (0, h.ZP)() ? T.paddingSmall : null,
-                        f = a.useCallback(() => {
+                        g = (0, h.ZP)(),
+                        f = g ? T.paddingSmall : null,
+                        y = a.useCallback(() => {
                             p(!0);
                         }, []),
-                        y = a.createElement(r.Z, { style: n ? T.hide : T.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: f, reportError: _.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : g] : T.hide, title: "Money" })));
-                    return o || s || n ? y : a.createElement(u.Z, { history: d, renderHeader: () => null }, a.createElement(r.Z, { style: T.modalContainer }, y));
+                        v = a.createElement(r.Z, { style: n ? T.hide : T.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: y, reportError: _.ZP, src: t, style: m ? [T.idvIframe, s ? void 0 : f] : T.hide, title: "Money" })));
+                    return o || s || n ? v : a.createElement(u.Z, { history: d, renderHeader: () => null }, a.createElement(r.Z, { style: g ? T.modalContainer : T.modalContainerNarrow }, v));
                 },
                 Z = (e) => {
                     const { additionalParams: t, linkType: n = p.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: _, challengeId: b } = e,
@@ -387,7 +387,7 @@
                         T = (0, v.gh)(),
                         [F, q] = a.useState(!1),
                         A = o()(),
-                        { allowClipboardWrite: x, defaultClosePath: R, invalidateOnClose: H, isInlineFrame: N, path: z, redirectOnCompletion: M } = p.QU[n],
+                        { allowClipboardWrite: x, defaultClosePath: R, invalidateOnClose: N, isInlineFrame: H, path: z, redirectOnCompletion: M } = p.QU[n],
                         D = a.useCallback(
                             (e) => {
                                 const { errors: t, message: n, url: a } = e.data;
@@ -416,11 +416,11 @@
                                         k && (window.location.href = a);
                                         break;
                                     case C.close:
-                                        H && (0, v.J$)(A), P.replace(l ?? R);
+                                        N && (0, v.J$)(A), P.replace(l ?? R);
                                 }
                                 d?.(e);
                             },
-                            [d, P, M, A, H, l, R, u, s],
+                            [d, P, M, A, N, l, R, u, s],
                         );
                     w({ allowedOrigin: Z, handler: D, linkType: n });
                     const O = a.useMemo(() => {
@@ -441,14 +441,14 @@
                             (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
                         );
                     }, [E, Z, S, t, z, T, b, _]);
-                    return F ? a.createElement(y.default, { challengeId: b, challengeInitiator: _, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: x, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: N, isNonModalScreen: m });
+                    return F ? a.createElement(y.default, { challengeId: b, challengeInitiator: _, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: x, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: H, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
                     return a.createElement(m.B, { fallback: t }, a.createElement(Z, e));
                 },
                 S = a.memo(E),
-                T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px", overflow: "hidden" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" }, modalContainer: { width: 500, height: 600 } }));
+                T = d.default.create((e) => ({ idvIframe: { width: "100%", height: "100%", paddingTop: "0px", overflow: "hidden" }, paddingSmall: { paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, hide: { display: "none" }, modal: { width: "100%", height: "100%" }, modalContainer: { width: 500, height: 600 }, modalContainerNarrow: { width: "100%", height: "100%" } }));
         },
         412100: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -1036,4 +1036,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.1e26903a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.3846016a.js.map

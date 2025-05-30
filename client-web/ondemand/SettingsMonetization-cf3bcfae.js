@@ -452,11 +452,12 @@
                 c = a(403556),
                 l = a(791632);
             const i = (e) => {
-                    const t = (0, s.useHistory)();
-                    return n.createElement(c.Z, (0, r.Z)({}, e, { isCompact: (0, l.HD)(t) }));
+                    const t = (0, s.useHistory)(),
+                        { isCompact: a, ...i } = e;
+                    return n.createElement(c.Z, (0, r.Z)({}, i, { isCompact: a || (0, l.HD)(t) }));
                 },
                 o = n.memo(i);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-cf3bcfae.b2ad550a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-cf3bcfae.4aad224a.js.map

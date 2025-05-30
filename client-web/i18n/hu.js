@@ -1271,8 +1271,6 @@
                     return e.replyCount + " válasz elolvasása";
                 }),
                 s("dc0c8266", "Kérdezz a Groktól"),
-                s("i7ac410e", "Eredeti megjelenítése"),
-                s("c67f09e8", "Fordítás megjelenítése"),
                 s("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 s("j77292b7", function (e) {
                     return "Max. " + e.count + " fájlt válassz ki!";
                 }),
-                s("d4d35bea", "Fordítás..."),
-                s("he9c9634", "A fordítás nem olvasható be"),
-                s("deaf5b16", "Újrapróbálkozás"),
-                s("j2198c98", "Lefordított bejegyzés elrejtése"),
+                s("cbc8fed4", "Pontos volt a fordítás? Küldd el a visszajelzésed, hogy fejlődhessünk:"),
+                s("d56779a2", "könnyen érthető"),
+                s("b6fe8a56", "zavaros vagy nem világos"),
                 s("i73a7d48", "A Google fordítása"),
                 s("eeadb767", function (e) {
                     return e.originLanguage + " nyelvről fordította a Google";
                 }),
-                s("be9b9fb8", "A Grok fordítása"),
                 s("d9c6f69d", function (e) {
                     return "A Grok fordította " + e.originLanguage + " nyelvről";
                 }),
@@ -1334,15 +1330,19 @@
                 s("caa5ba3d", function (e) {
                     return e.originLanguage + " nyelvről fordította az X";
                 }),
+                s("deaf5b16", "Újrapróbálkozás"),
+                s("a66d80d0", "Bejegyzés lefordítása"),
+                s("be9b9fb8", "A Grok fordítása"),
+                s("he9c9634", "A fordítás nem olvasható be"),
+                s("j2198c98", "Lefordított bejegyzés elrejtése"),
+                s("d4d35bea", "Fordítás..."),
+                s("i7ac410e", "Eredeti megjelenítése"),
+                s("c67f09e8", "Fordítás megjelenítése"),
                 s("e0f81ff3", "Fordítás:"),
                 s("j2862695", function (e) {
                     return e.originLanguage + " nyelvről fordította a(z)";
                 }),
                 s("b7cb4fab", "A(z)"),
-                s("cbc8fed4", "Pontos volt a fordítás? Küldd el a visszajelzésed, hogy fejlődhessünk:"),
-                s("d56779a2", "könnyen érthető"),
-                s("b6fe8a56", "zavaros vagy nem világos"),
-                s("a66d80d0", "Bejegyzés lefordítása"),
                 s("d4c339b9", function (e) {
                     return e.fullName + " bejegyzése (@" + e.screenName + ")";
                 }),
@@ -12075,6 +12075,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["A vásárlással elfogadod a következőket: ", " és ", ". Az Előfizetések a Feltételekben leírt módon automatikusan megújulnak, amíg le nem mondod a szolgáltatást. Az előfizetés bármikor lemondható."];
@@ -13297,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.d7a06b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.b95eacba.js.map

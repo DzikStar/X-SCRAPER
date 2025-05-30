@@ -1287,8 +1287,6 @@
                     return "Read " + e.replyCount + " replies";
                 }),
                 n("dc0c8266", "Ask Grok"),
-                n("i7ac410e", "Show Original"),
-                n("c67f09e8", "Show Translation"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1330,15 +1328,13 @@
                 n("j77292b7", function (e) {
                     return "Please only select up to " + e.count + " file" + o(e.count, "", "s");
                 }),
-                n("d4d35bea", "Translating..."),
-                n("he9c9634", "Níorbh fhéidir teacht ar an aistriúchán"),
-                n("deaf5b16", "Bain triail as arís"),
-                n("j2198c98", "Hide translated post"),
+                n("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
+                n("d56779a2", "easy to understand"),
+                n("b6fe8a56", "confusing or unclear"),
                 n("i73a7d48", "Aistrithe ag Google"),
                 n("eeadb767", function (e) {
                     return "Aistrithe ó " + e.originLanguage + " ag Google";
                 }),
-                n("be9b9fb8", "Translated by Grok"),
                 n("d9c6f69d", function (e) {
                     return "Translated from " + e.originLanguage + " by Grok";
                 }),
@@ -1350,15 +1346,19 @@
                 n("caa5ba3d", function (e) {
                     return "Translated from " + e.originLanguage + " by X";
                 }),
+                n("deaf5b16", "Bain triail as arís"),
+                n("a66d80d0", "Translate post"),
+                n("be9b9fb8", "Translated by Grok"),
+                n("he9c9634", "Níorbh fhéidir teacht ar an aistriúchán"),
+                n("j2198c98", "Hide translated post"),
+                n("d4d35bea", "Translating..."),
+                n("i7ac410e", "Show Original"),
+                n("c67f09e8", "Show Translation"),
                 n("e0f81ff3", "Translation:"),
                 n("j2862695", function (e) {
                     return "Aistrithe ó " + e.originLanguage + " ag";
                 }),
                 n("b7cb4fab", "Aistrithe ag"),
-                n("cbc8fed4", "Was this translation accurate? Give us feedback so we can improve:"),
-                n("d56779a2", "easy to understand"),
-                n("b6fe8a56", "confusing or unclear"),
-                n("a66d80d0", "Translate post"),
                 n("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12081,6 +12081,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["By purchasing, you agree to our ", " and our ", ". Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime."];
@@ -13305,4 +13311,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.f6466b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.be09c06a.js.map

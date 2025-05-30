@@ -1272,8 +1272,6 @@
                     return "Ler " + e.replyCount + " respostas";
                 }),
                 s("dc0c8266", "Perguntar ao Grok"),
-                s("i7ac410e", "Mostrar original"),
-                s("c67f09e8", " Mostrar tradução"),
                 s("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 s("j77292b7", function (e) {
                     return "Selecione somente até " + e.count + " arquivo" + r(e.count, "", "s");
                 }),
-                s("d4d35bea", "Traduzindo..."),
-                s("he9c9634", "Não foi possível obter a tradução"),
-                s("deaf5b16", "Tentar novamente"),
-                s("j2198c98", "Ocultar post traduzido"),
+                s("cbc8fed4", "Essa tradução está exata? Faça o seu comentário para conseguirmos melhorar:"),
+                s("d56779a2", "fácil de entender"),
+                s("b6fe8a56", "confuso ou pouco claro"),
                 s("i73a7d48", "Traduzido pelo Google"),
                 s("eeadb767", function (e) {
                     return "Traduzido do " + e.originLanguage + " pelo Google";
                 }),
-                s("be9b9fb8", "Traduzido pelo Grok"),
                 s("d9c6f69d", function (e) {
                     return "Traduzido de " + e.originLanguage + " por Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 s("caa5ba3d", function (e) {
                     return "Traduzido do " + e.originLanguage + " por X";
                 }),
+                s("deaf5b16", "Tentar novamente"),
+                s("a66d80d0", "Traduzir post"),
+                s("be9b9fb8", "Traduzido pelo Grok"),
+                s("he9c9634", "Não foi possível obter a tradução"),
+                s("j2198c98", "Ocultar post traduzido"),
+                s("d4d35bea", "Traduzindo..."),
+                s("i7ac410e", "Mostrar original"),
+                s("c67f09e8", " Mostrar tradução"),
                 s("e0f81ff3", "Tradução:"),
                 s("j2862695", function (e) {
                     return "Traduzido do " + e.originLanguage + " por";
                 }),
                 s("b7cb4fab", "Traduzido por"),
-                s("cbc8fed4", "Essa tradução está exata? Faça o seu comentário para conseguirmos melhorar:"),
-                s("d56779a2", "fácil de entender"),
-                s("b6fe8a56", "confuso ou pouco claro"),
-                s("a66d80d0", "Traduzir post"),
                 s("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12066,6 +12066,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ao comprar, você concorda com ", " e com ", ". As assinaturas são renovadas automaticamente até serem canceladas, conforme descrito nos Termos. Você pode cancelar a qualquer momento."];
@@ -13289,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.537b767a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.c0f43b6a.js.map

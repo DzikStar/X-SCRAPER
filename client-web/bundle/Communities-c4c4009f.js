@@ -384,11 +384,12 @@
                 l = n(403556),
                 i = n(791632);
             const c = (e) => {
-                    const t = (0, a.useHistory)();
-                    return r.createElement(l.Z, (0, o.Z)({}, e, { isCompact: (0, i.HD)(t) }));
+                    const t = (0, a.useHistory)(),
+                        { isCompact: n, ...c } = e;
+                    return r.createElement(l.Z, (0, o.Z)({}, c, { isCompact: n || (0, i.HD)(t) }));
                 },
                 s = r.memo(c);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-c4c4009f.214a094a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-c4c4009f.2b6dd89a.js.map

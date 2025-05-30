@@ -1281,8 +1281,6 @@
                     return "Prečítať si odpovede (" + e.replyCount + ")";
                 }),
                 n("dc0c8266", "Položte Grokovi otázku"),
-                n("i7ac410e", "Zobraziť pôvodný text"),
-                n("c67f09e8", "Zobraziť preklad"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1324,15 +1322,13 @@
                 n("j77292b7", function (e) {
                     return "Vyberte maximálne " + e.count + " súbor" + t(e.count, "y", "u", "", "ov");
                 }),
-                n("d4d35bea", "Prekladá sa…"),
-                n("he9c9634", "Nepodarilo sa načítať preklad"),
-                n("deaf5b16", "Skúsiť znova"),
-                n("j2198c98", "Skryť preložený príspevok"),
+                n("cbc8fed4", "Bol tento preklad presný? Poskytnite nám spätnú väzbu, aby sme preklady mohli zlepšiť:"),
+                n("d56779a2", "dobre zrozumiteľný"),
+                n("b6fe8a56", "mätúci alebo nejasný"),
                 n("i73a7d48", "Preložené spoločnosťou Google"),
                 n("eeadb767", function (e) {
                     return "Preložené z jazyka " + e.originLanguage + " spoločnosťou Google";
                 }),
-                n("be9b9fb8", "Preložené Grokom"),
                 n("d9c6f69d", function (e) {
                     return "Preložené Grokom z jazyka " + e.originLanguage;
                 }),
@@ -1344,15 +1340,19 @@
                 n("caa5ba3d", function (e) {
                     return "Preložené z jazyka " + e.originLanguage + " službou X";
                 }),
+                n("deaf5b16", "Skúsiť znova"),
+                n("a66d80d0", "Preložiť príspevok"),
+                n("be9b9fb8", "Preložené Grokom"),
+                n("he9c9634", "Nepodarilo sa načítať preklad"),
+                n("j2198c98", "Skryť preložený príspevok"),
+                n("d4d35bea", "Prekladá sa…"),
+                n("i7ac410e", "Zobraziť pôvodný text"),
+                n("c67f09e8", "Zobraziť preklad"),
                 n("e0f81ff3", "Preklad:"),
                 n("j2862695", function (e) {
                     return "Preložené z jazyka " + e.originLanguage + " spoločnosťou";
                 }),
                 n("b7cb4fab", "Preklad poskytuje"),
-                n("cbc8fed4", "Bol tento preklad presný? Poskytnite nám spätnú väzbu, aby sme preklady mohli zlepšiť:"),
-                n("d56779a2", "dobre zrozumiteľný"),
-                n("b6fe8a56", "mätúci alebo nejasný"),
-                n("a66d80d0", "Preložiť príspevok"),
                 n("d4c339b9", function (e) {
                     return "Príspevok z " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12079,6 +12079,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Nákupom súhlasíte s týmito našimi dokumentmi: ", " a ", ". Vaše predplatné sa budú automaticky obnovovať, až kým ich nezrušíte, ako je uvedené v podmienkach."];
@@ -13304,4 +13310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.3e3a95fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.924474ea.js.map

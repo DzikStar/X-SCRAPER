@@ -1271,8 +1271,6 @@
                     return "Прочети " + e.replyCount + " отговора";
                 }),
                 n("dc0c8266", "Попитай Grok"),
-                n("i7ac410e", "Показване на оригинал"),
-                n("c67f09e8", "Показване на превод"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 n("j77292b7", function (e) {
                     return "Моля, изберете само до " + e.count + " файл" + t(e.count, "", "а");
                 }),
-                n("d4d35bea", "Превеждане..."),
-                n("he9c9634", "Преводът не може да се извлече"),
-                n("deaf5b16", "Нов опит"),
-                n("j2198c98", "Скриване на преведената публикация"),
+                n("cbc8fed4", "Този превод верен ли е? Остави ни отзив, за да можем да се подобрим:"),
+                n("d56779a2", "разбираем"),
+                n("b6fe8a56", "объркващ или неясен"),
                 n("i73a7d48", "Преведено от Google"),
                 n("eeadb767", function (e) {
                     return "Преведено от " + e.originLanguage + " от Google";
                 }),
-                n("be9b9fb8", "Преведено от Grok"),
                 n("d9c6f69d", function (e) {
                     return "Преведено от " + e.originLanguage + " от Grok";
                 }),
@@ -1334,15 +1330,19 @@
                 n("caa5ba3d", function (e) {
                     return "Преведено от " + e.originLanguage + " от X";
                 }),
+                n("deaf5b16", "Нов опит"),
+                n("a66d80d0", "Превод на публикация"),
+                n("be9b9fb8", "Преведено от Grok"),
+                n("he9c9634", "Преводът не може да се извлече"),
+                n("j2198c98", "Скриване на преведената публикация"),
+                n("d4d35bea", "Превеждане..."),
+                n("i7ac410e", "Показване на оригинал"),
+                n("c67f09e8", "Показване на превод"),
                 n("e0f81ff3", "Превод:"),
                 n("j2862695", function (e) {
                     return "Преведено от " + e.originLanguage + " от";
                 }),
                 n("b7cb4fab", "Преведено от"),
-                n("cbc8fed4", "Този превод верен ли е? Остави ни отзив, за да можем да се подобрим:"),
-                n("d56779a2", "разбираем"),
-                n("b6fe8a56", "объркващ или неясен"),
-                n("a66d80d0", "Превод на публикация"),
                 n("d4c339b9", function (e) {
                     return "Публикация от " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12065,6 +12065,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Като купиш, приемаш ", " и ", ". Абонаментите се подновяват автоматично, докато не ги анулираш, както е описано в Условията. Можеш да анулираш по всяко време."];
@@ -13287,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.1232301a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.92903b8a.js.map

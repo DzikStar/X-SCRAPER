@@ -42,22 +42,22 @@
             n.d(l, { Z: () => T });
             var a,
                 i,
-                s,
                 t,
+                s,
                 r,
                 u,
                 o,
                 d,
                 c,
                 g,
-                p,
                 y,
+                p,
                 m,
                 k,
                 F,
                 K,
                 _ = {
-                    fragment: { argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]), kind: "Fragment", metadata: null, name: "OpenReportItemTimelineQuery", selections: [{ alias: null, args: (i = [{ kind: "Literal", name: "s", value: "7f13" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "open_reports", args: null, concreteType: "OpenReportsSlice", kind: "LinkedField", name: "__Reports_Open_SafetyCenter_Query_slice_slice", plural: !1, selections: [{ alias: null, args: null, concreteType: "ReportItem", kind: "LinkedField", name: "items", plural: !0, selections: [s, (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "DesktopReportItem_reportItem" }, { args: null, kind: "FragmentSpread", name: "MobileReportItem_reportItem" }], storageKey: null }, (r = { alias: null, args: null, concreteType: "SliceInfo", kind: "LinkedField", name: "slice_info", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }], storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"7f13")' }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]), kind: "Fragment", metadata: null, name: "OpenReportItemTimelineQuery", selections: [{ alias: null, args: (i = [{ kind: "Literal", name: "s", value: "7f13" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "open_reports", args: null, concreteType: "OpenReportsSlice", kind: "LinkedField", name: "__Reports_Open_SafetyCenter_Query_slice_slice", plural: !1, selections: [{ alias: null, args: null, concreteType: "ReportItem", kind: "LinkedField", name: "items", plural: !0, selections: [t, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "DesktopReportItem_reportItem" }, { args: null, kind: "FragmentSpread", name: "MobileReportItem_reportItem" }], storageKey: null }, (r = { alias: null, args: null, concreteType: "SliceInfo", kind: "LinkedField", name: "slice_info", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }], storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"7f13")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: a,
@@ -88,7 +88,7 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    s,
+                                                    t,
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
@@ -108,8 +108,8 @@
                                                                         name: "items",
                                                                         plural: !0,
                                                                         selections: [
-                                                                            s,
                                                                             t,
+                                                                            s,
                                                                             { alias: null, args: null, kind: "ScalarField", name: "report_flow_id", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "report_status", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "report_status_label", storageKey: null },
@@ -125,7 +125,7 @@
                                                                                 name: "first_report_entity_results",
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                    s,
+                                                                                    t,
                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isReportEntityResults" },
                                                                                     {
                                                                                         kind: "InlineFragment",
@@ -138,7 +138,7 @@
                                                                                                 name: "result",
                                                                                                 plural: !1,
                                                                                                 selections: [
-                                                                                                    s,
+                                                                                                    t,
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -149,8 +149,8 @@
                                                                                                                 kind: "LinkedField",
                                                                                                                 name: "tweet",
                                                                                                                 plural: !1,
-                                                                                                                selections: (y = [
-                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), (c = { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }), { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, t], type: "User", abstractKey: null }], storageKey: null }, t], storageKey: null }], storageKey: null },
+                                                                                                                selections: (p = [
+                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), (c = { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }), { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (y = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
                                                                                                                     {
                                                                                                                         alias: null,
                                                                                                                         args: null,
@@ -166,8 +166,8 @@
                                                                                                                         ],
                                                                                                                         storageKey: null,
                                                                                                                     },
-                                                                                                                    p,
-                                                                                                                    t,
+                                                                                                                    y,
+                                                                                                                    s,
                                                                                                                 ]),
                                                                                                                 storageKey: null,
                                                                                                             },
@@ -175,7 +175,7 @@
                                                                                                         type: "TweetWithVisibilityResults",
                                                                                                         abstractKey: null,
                                                                                                     },
-                                                                                                    { kind: "InlineFragment", selections: y, type: "Tweet", abstractKey: null },
+                                                                                                    { kind: "InlineFragment", selections: p, type: "Tweet", abstractKey: null },
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -187,7 +187,7 @@
                                                                                                                 name: "tombstone",
                                                                                                                 plural: !1,
                                                                                                                 selections: [
-                                                                                                                    s,
+                                                                                                                    t,
                                                                                                                     {
                                                                                                                         kind: "InlineFragment",
                                                                                                                         selections: [
@@ -217,12 +217,12 @@
                                                                                                                                                 name: "ref",
                                                                                                                                                 plural: !1,
                                                                                                                                                 selections: [
-                                                                                                                                                    s,
+                                                                                                                                                    t,
                                                                                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isTimelineReferenceObject" },
                                                                                                                                                     { kind: "InlineFragment", selections: (k = [(m = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
-                                                                                                                                                    { kind: "InlineFragment", selections: [t, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
+                                                                                                                                                    { kind: "InlineFragment", selections: [s, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: k, type: "TimelineRichTextHashtag", abstractKey: null },
-                                                                                                                                                    { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, t], type: "User", abstractKey: null }], storageKey: null }, t], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
+                                                                                                                                                    { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: [K, d], type: "TimelineRichTextMention", abstractKey: null },
                                                                                                                                                     {
                                                                                                                                                         kind: "InlineFragment",
@@ -252,7 +252,7 @@
                                                                                                                                                                         storageKey: null,
                                                                                                                                                                     },
                                                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
-                                                                                                                                                                    { alias: "timelineWithContext", args: null, concreteType: "TimelineWithContext", kind: "LinkedField", name: "timeline_with_context", plural: !1, selections: [t, { alias: null, args: null, kind: "ScalarField", name: "context", storageKey: null }], storageKey: null },
+                                                                                                                                                                    { alias: "timelineWithContext", args: null, concreteType: "TimelineWithContext", kind: "LinkedField", name: "timeline_with_context", plural: !1, selections: [s, { alias: null, args: null, kind: "ScalarField", name: "context", storageKey: null }], storageKey: null },
                                                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
                                                                                                                                                                 ],
                                                                                                                                                                 storageKey: null,
@@ -288,12 +288,12 @@
                                                                                                 ],
                                                                                                 storageKey: null,
                                                                                             },
-                                                                                            t,
+                                                                                            s,
                                                                                         ],
                                                                                         type: "TweetResults",
                                                                                         abstractKey: null,
                                                                                     },
-                                                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [o, c, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [g, { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null }, p, t], type: "User", abstractKey: null }], storageKey: null }, t], type: "UserResults", abstractKey: null },
+                                                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [o, c, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [g, { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null }, y, s], type: "User", abstractKey: null }], storageKey: null }, s], type: "UserResults", abstractKey: null },
                                                                                 ],
                                                                                 storageKey: null,
                                                                             },
@@ -305,7 +305,7 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: u, filters: null, handle: "slice", key: "Reports_Open_SafetyCenter_Query_slice", kind: "LinkedHandle", name: "open_reports" },
-                                                            t,
+                                                            s,
                                                         ],
                                                         type: "User",
                                                         abstractKey: null,
@@ -313,7 +313,7 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            t,
+                                            s,
                                         ],
                                         storageKey: null,
                                     },
@@ -331,16 +331,16 @@
             n.d(l, { Z: () => C });
             var a,
                 i,
-                s,
                 t,
+                s,
                 r,
                 u,
                 o,
                 d,
                 c,
                 g,
-                p,
                 y,
+                p,
                 m,
                 k,
                 F,
@@ -392,12 +392,12 @@
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: (s = [{ kind: "Variable", name: "report_notification_id", variableName: "reportId" }]),
+                                                                args: (t = [{ kind: "Variable", name: "report_notification_id", variableName: "reportId" }]),
                                                                 concreteType: "ReportDetailV2",
                                                                 kind: "LinkedField",
                                                                 name: "report_detail",
                                                                 plural: !1,
-                                                                selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "actioned_report_type", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "header", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "last_update_time", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "outcome_text", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "remediation", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "report_entities_results", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "ReportEntityList_reportEntityResults" }], storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "report_status", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "report_status_label", storageKey: null }), (p = { alias: null, args: null, kind: "ScalarField", name: "report_status_label_text", storageKey: null }), (y = { alias: null, args: null, kind: "ScalarField", name: "rule_link", storageKey: null }), (m = { alias: null, args: null, kind: "ScalarField", name: "verdict", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "report_flow_id", storageKey: null }), (F = { alias: null, args: null, concreteType: "ProgressStep", kind: "LinkedField", name: "progress_steps", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "progress", storageKey: null }, r, g, p, { alias: null, args: null, kind: "ScalarField", name: "message", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link_text", storageKey: null }], storageKey: null })],
+                                                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "actioned_report_type", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "header", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "last_update_time", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "outcome_text", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "remediation", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "report_entities_results", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "ReportEntityList_reportEntityResults" }], storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "report_status", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "report_status_label", storageKey: null }), (y = { alias: null, args: null, kind: "ScalarField", name: "report_status_label_text", storageKey: null }), (p = { alias: null, args: null, kind: "ScalarField", name: "rule_link", storageKey: null }), (m = { alias: null, args: null, kind: "ScalarField", name: "verdict", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "report_flow_id", storageKey: null }), (F = { alias: null, args: null, concreteType: "ProgressStep", kind: "LinkedField", name: "progress_steps", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "progress", storageKey: null }, r, g, y, { alias: null, args: null, kind: "ScalarField", name: "message", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "inline_link_text", storageKey: null }], storageKey: null })],
                                                                 storageKey: null,
                                                             },
                                                         ],
@@ -453,13 +453,13 @@
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: s,
+                                                                args: t,
                                                                 concreteType: "ReportDetailV2",
                                                                 kind: "LinkedField",
                                                                 name: "report_detail",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    t,
+                                                                    s,
                                                                     r,
                                                                     u,
                                                                     o,
@@ -655,8 +655,8 @@
                                                                     },
                                                                     c,
                                                                     g,
-                                                                    p,
                                                                     y,
+                                                                    p,
                                                                     m,
                                                                     k,
                                                                     F,
@@ -723,22 +723,22 @@
             n.d(l, { Z: () => T });
             var a,
                 i,
-                s,
                 t,
+                s,
                 r,
                 u,
                 o,
                 d,
                 c,
                 g,
-                p,
                 y,
+                p,
                 m,
                 k,
                 F,
                 K,
                 _ = {
-                    fragment: { argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]), kind: "Fragment", metadata: null, name: "ResolvedReportItemTimelineQuery", selections: [{ alias: null, args: (i = [{ kind: "Literal", name: "s", value: "7f13" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "reviewed_reports", args: null, concreteType: "ReviewedReportsSlice", kind: "LinkedField", name: "__Reports_Resolved_SafetyCenter_Query_slice_slice", plural: !1, selections: [{ alias: null, args: null, concreteType: "ReportItem", kind: "LinkedField", name: "items", plural: !0, selections: [s, (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "DesktopReportItem_reportItem" }, { args: null, kind: "FragmentSpread", name: "MobileReportItem_reportItem" }], storageKey: null }, (r = { alias: null, args: null, concreteType: "SliceInfo", kind: "LinkedField", name: "slice_info", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }], storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"7f13")' }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]), kind: "Fragment", metadata: null, name: "ResolvedReportItemTimelineQuery", selections: [{ alias: null, args: (i = [{ kind: "Literal", name: "s", value: "7f13" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "reviewed_reports", args: null, concreteType: "ReviewedReportsSlice", kind: "LinkedField", name: "__Reports_Resolved_SafetyCenter_Query_slice_slice", plural: !1, selections: [{ alias: null, args: null, concreteType: "ReportItem", kind: "LinkedField", name: "items", plural: !0, selections: [t, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "DesktopReportItem_reportItem" }, { args: null, kind: "FragmentSpread", name: "MobileReportItem_reportItem" }], storageKey: null }, (r = { alias: null, args: null, concreteType: "SliceInfo", kind: "LinkedField", name: "slice_info", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }], storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"7f13")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: a,
@@ -769,7 +769,7 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    s,
+                                                    t,
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
@@ -789,8 +789,8 @@
                                                                         name: "items",
                                                                         plural: !0,
                                                                         selections: [
-                                                                            s,
                                                                             t,
+                                                                            s,
                                                                             { alias: null, args: null, kind: "ScalarField", name: "report_flow_id", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "report_status", storageKey: null },
                                                                             { alias: null, args: null, kind: "ScalarField", name: "report_status_label", storageKey: null },
@@ -806,7 +806,7 @@
                                                                                 name: "first_report_entity_results",
                                                                                 plural: !1,
                                                                                 selections: [
-                                                                                    s,
+                                                                                    t,
                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isReportEntityResults" },
                                                                                     {
                                                                                         kind: "InlineFragment",
@@ -819,7 +819,7 @@
                                                                                                 name: "result",
                                                                                                 plural: !1,
                                                                                                 selections: [
-                                                                                                    s,
+                                                                                                    t,
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -830,8 +830,8 @@
                                                                                                                 kind: "LinkedField",
                                                                                                                 name: "tweet",
                                                                                                                 plural: !1,
-                                                                                                                selections: (y = [
-                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), (c = { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }), { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, t], type: "User", abstractKey: null }], storageKey: null }, t], storageKey: null }], storageKey: null },
+                                                                                                                selections: (p = [
+                                                                                                                    { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), (c = { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, (d = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null })], storageKey: null }), { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (y = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }], storageKey: null },
                                                                                                                     {
                                                                                                                         alias: null,
                                                                                                                         args: null,
@@ -847,8 +847,8 @@
                                                                                                                         ],
                                                                                                                         storageKey: null,
                                                                                                                     },
-                                                                                                                    p,
-                                                                                                                    t,
+                                                                                                                    y,
+                                                                                                                    s,
                                                                                                                 ]),
                                                                                                                 storageKey: null,
                                                                                                             },
@@ -856,7 +856,7 @@
                                                                                                         type: "TweetWithVisibilityResults",
                                                                                                         abstractKey: null,
                                                                                                     },
-                                                                                                    { kind: "InlineFragment", selections: y, type: "Tweet", abstractKey: null },
+                                                                                                    { kind: "InlineFragment", selections: p, type: "Tweet", abstractKey: null },
                                                                                                     {
                                                                                                         kind: "InlineFragment",
                                                                                                         selections: [
@@ -868,7 +868,7 @@
                                                                                                                 name: "tombstone",
                                                                                                                 plural: !1,
                                                                                                                 selections: [
-                                                                                                                    s,
+                                                                                                                    t,
                                                                                                                     {
                                                                                                                         kind: "InlineFragment",
                                                                                                                         selections: [
@@ -898,12 +898,12 @@
                                                                                                                                                 name: "ref",
                                                                                                                                                 plural: !1,
                                                                                                                                                 selections: [
-                                                                                                                                                    s,
+                                                                                                                                                    t,
                                                                                                                                                     { kind: "TypeDiscriminator", abstractKey: "__isTimelineReferenceObject" },
                                                                                                                                                     { kind: "InlineFragment", selections: (k = [(m = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
-                                                                                                                                                    { kind: "InlineFragment", selections: [t, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
+                                                                                                                                                    { kind: "InlineFragment", selections: [s, (F = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: k, type: "TimelineRichTextHashtag", abstractKey: null },
-                                                                                                                                                    { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, t], type: "User", abstractKey: null }], storageKey: null }, t], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
+                                                                                                                                                    { kind: "InlineFragment", selections: [(K = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
                                                                                                                                                     { kind: "InlineFragment", selections: [K, d], type: "TimelineRichTextMention", abstractKey: null },
                                                                                                                                                     {
                                                                                                                                                         kind: "InlineFragment",
@@ -933,7 +933,7 @@
                                                                                                                                                                         storageKey: null,
                                                                                                                                                                     },
                                                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
-                                                                                                                                                                    { alias: "timelineWithContext", args: null, concreteType: "TimelineWithContext", kind: "LinkedField", name: "timeline_with_context", plural: !1, selections: [t, { alias: null, args: null, kind: "ScalarField", name: "context", storageKey: null }], storageKey: null },
+                                                                                                                                                                    { alias: "timelineWithContext", args: null, concreteType: "TimelineWithContext", kind: "LinkedField", name: "timeline_with_context", plural: !1, selections: [s, { alias: null, args: null, kind: "ScalarField", name: "context", storageKey: null }], storageKey: null },
                                                                                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
                                                                                                                                                                 ],
                                                                                                                                                                 storageKey: null,
@@ -969,12 +969,12 @@
                                                                                                 ],
                                                                                                 storageKey: null,
                                                                                             },
-                                                                                            t,
+                                                                                            s,
                                                                                         ],
                                                                                         type: "TweetResults",
                                                                                         abstractKey: null,
                                                                                     },
-                                                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [o, c, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [g, { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null }, p, t], type: "User", abstractKey: null }], storageKey: null }, t], type: "UserResults", abstractKey: null },
+                                                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [o, c, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [g, { alias: "idStr", args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null }, y, s], type: "User", abstractKey: null }], storageKey: null }, s], type: "UserResults", abstractKey: null },
                                                                                 ],
                                                                                 storageKey: null,
                                                                             },
@@ -986,7 +986,7 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: u, filters: null, handle: "slice", key: "Reports_Resolved_SafetyCenter_Query_slice", kind: "LinkedHandle", name: "reviewed_reports" },
-                                                            t,
+                                                            s,
                                                         ],
                                                         type: "User",
                                                         abstractKey: null,
@@ -994,7 +994,7 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            t,
+                                            s,
                                         ],
                                         storageKey: null,
                                     },
@@ -1012,16 +1012,16 @@
             n.d(l, { Z: () => L });
             var a = n(807896),
                 i = n(202784),
-                s = n(194504),
-                t = n(235902),
+                t = n(194504),
+                s = n(235902),
                 r = n(392237),
                 u = n(325686),
                 o = n(111677),
                 d = n.n(o),
                 c = n(912021),
                 g = n(516951),
-                p = n(731708),
-                y = n(310088),
+                y = n(731708),
+                p = n(310088),
                 m = n(175993),
                 k = n(58881),
                 F = n(530732);
@@ -1039,8 +1039,8 @@
                         (this.state = { location: this.context.location }),
                         (this._getTextColor = (e, l, n, a) => {
                             const i = r.default.theme.colors.text,
-                                s = r.default.theme.colors.gray700;
-                            return n || a ? (e || l ? i : s) : e ? i : s;
+                                t = r.default.theme.colors.gray700;
+                            return n || a ? (e || l ? i : t) : e ? i : t;
                         }),
                         (this._setRef = (e) => {
                             this._ref = e;
@@ -1063,13 +1063,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": l, badgeCount: n, badgePip: a, children: s, color: t, isActive: o, isCompact: d, isPillLink: c, isRoundedRect: g, isWebRedesign: m, retainScrollPosition: S, style: f, to: h } = this.props,
+                    const { Icon: e, "aria-label": l, badgeCount: n, badgePip: a, children: t, color: s, isActive: o, isCompact: d, isPillLink: c, isRoundedRect: g, isWebRedesign: m, retainScrollPosition: S, style: f, to: h } = this.props,
                         { location: L } = this.state,
                         R = h ? this._getMemoizedLink(h, S) : void 0,
                         x = o ? o(h) : L?.pathname === R?.pathname,
-                        I = k.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
+                        I = k.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: c ? b.pillHoverStyle.backgroundColor : void 0 }),
                         v = m ? "medium" : x ? "bold" : "medium";
-                    return i.createElement(F.Z, { "aria-label": l, "aria-selected": x, focusable: !!x, interactiveStyles: I, link: R, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [c ? b.pill : b.link, c && x ? b.active : null, d ? (c ? b.compactPill : b.compactLink) : null, g ? b.roundedRect : null, f], withoutInteractiveStyles: m || c }, ({ isFocused: l, isHovered: o }) => i.createElement(u.Z, { style: c && b.flexGrow }, i.createElement(p.ZP, { size: m ? "headline2" : void 0, style: [b.text, { color: this._getTextColor(x, o, m, c) }, d && b.compactText, m && l && b.focusedText], weight: v }, e && i.createElement(e, { style: b.icon }), s, m || c ? null : i.createElement(u.Z, { style: x && [b.border, { backgroundColor: r.default.theme.colors[t] }] })), n ? i.createElement(y.Z, { count: n, standalone: !0, style: [b.badge, n >= 10 && b.multiDigitBadge, n >= 20 && b.truncatedCountBadge], truncatedCountFormatter: T, unreadCountLabel: K, withBorder: !1 }) : a ? i.createElement(y.Z, { pip: !0, standalone: !0, style: b.badgePip, textColor: "red500", unreadCountLabel: _, withBorder: !1 }) : null));
+                    return i.createElement(F.Z, { "aria-label": l, "aria-selected": x, focusable: !!x, interactiveStyles: I, link: R, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(c ? [b.pillStyle] : [b.link]), ...(c && x ? [b.pillActiveStyle] : []), d ? (c ? b.compactPill : b.compactLink) : null, g ? b.roundedRect : null, f], withoutInteractiveStyles: m }, ({ isFocused: l, isHovered: o }) => i.createElement(u.Z, { style: c && b.flexGrow }, i.createElement(y.ZP, { size: m ? "headline2" : void 0, style: [b.text, { color: this._getTextColor(x, o, m, c) }, d && b.compactText, m && l && b.focusedText, c && b.pillTextStyle, c && x && b.pillActiveTextStyle, c && o && b.pillHoverTextStyle], weight: v }, e && i.createElement(e, { style: b.icon }), t, m || c ? null : i.createElement(u.Z, { style: x && [b.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(p.Z, { count: n, standalone: !0, style: [b.badge, n >= 10 && b.multiDigitBadge, n >= 20 && b.truncatedCountBadge], truncatedCountFormatter: T, unreadCountLabel: K, withBorder: !1 }) : a ? i.createElement(p.Z, { pip: !0, standalone: !0, style: b.badgePip, textColor: "red500", unreadCountLabel: _, withBorder: !1 }) : null));
                 }
             }
             (S.contextType = m.Z), (S.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1084,9 +1084,14 @@
                     focusedText: { position: "relative", top: `calc(${e.borderWidths.medium} / 2)`, marginBottom: `-${e.spaces.space16}`, borderStyle: "solid", borderBottomWidth: e.borderWidths.medium, borderColor: e.colors.text, boxSizing: "border-box" },
                     compactText: { paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8 },
                     border: { height: e.borderWidths.large, position: "absolute", bottom: 0, width: "100%", minWidth: "56px", alignSelf: "center", borderRadius: e.borderRadii.infinite },
-                    pill: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
                     compactPill: { height: e.spaces.space36 },
                     active: { backgroundColor: e.colors.gray50 },
+                    pillStyle: { backgroundColor: e.colors.transparent, borderColor: e.colors.gray50, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
+                    pillTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillHoverStyle: { backgroundColor: e.colors.gray100, borderColor: e.colors.gray50 },
+                    pillHoverTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillActiveStyle: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50 },
+                    pillActiveTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
                     flexGrow: { flexGrow: 1 },
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
@@ -1098,19 +1103,19 @@
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: p } = t.ZP.useProps(),
-                        y = p() && !r,
+                        { isWebRedesign: y } = s.ZP.useProps(),
+                        p = y() && !r,
                         m = i.useMemo(
                             () =>
-                                o.filter(Boolean).map(({ label: l, viewType: s, ...t }, o) => {
-                                    const d = y ? [h.linkRedesign, 0 === o && h.firstLinkRedesign, e && 0 === o && h.withNoPaddingStart] : void 0;
-                                    return i.createElement(f, (0, a.Z)({ viewType: s }, t, { isCompact: n, isPillLink: r, isRoundedRect: u, isWebRedesign: y, style: d }), l);
+                                o.filter(Boolean).map(({ label: l, viewType: t, ...s }, o) => {
+                                    const d = p ? [h.linkRedesign, 0 === o && h.firstLinkRedesign, e && 0 === o && h.withNoPaddingStart] : void 0;
+                                    return i.createElement(f, (0, a.Z)({ viewType: t }, s, { isCompact: n, isPillLink: r, isRoundedRect: u, isWebRedesign: p, style: d }), l);
                                 }),
-                            [e, n, r, u, y, o],
+                            [e, n, r, u, p, o],
                         );
-                    return i.createElement(s.Z, { "aria-label": l, buttonsContainerStyle: r && h.gap, childrenStyle: !y && h.flexGrow, key: g, style: [r ? null : h.segmentedControl, y && h.leftAligned, d], visibleItemIndex: c }, m);
+                    return i.createElement(t.Z, { "aria-label": l, buttonsContainerStyle: r && h.gap, childrenStyle: !p && h.flexGrow, key: g, style: [r ? null : h.segmentedControl, p && h.leftAligned, d], visibleItemIndex: c }, m);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-6107ac1a.047e426a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-6107ac1a.ab09f5ca.js.map

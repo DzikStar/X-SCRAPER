@@ -200,7 +200,7 @@
                         w = e ? y : C,
                         v = (0, c.Z)("input", { "aria-describedby": this._labelId, checked: e, disabled: t, onChange: this._handleChange, ref: this._setCheckboxRef, style: [b.nativeControl, b.cursorInherit], type: "checkbox" }),
                         E = n.createElement(d.Z, { disabled: t }, (o) => n.createElement(i.Z, (0, r.Z)({ role: "label" }, g, { style: [f, !t && b.interactive] }), n.createElement(i.Z, { style: b.topContainer }, a ? n.createElement(s.ZP, null, a) : null, n.createElement(i.Z, { style: b.checkboxContainer }, ((o) => n.createElement(p.Z, { interactiveStyles: w, interactivityState: o, style: b.fakeControlInteractiveStyles }, n.createElement(i.Z, { style: [b.fakeControl, e && b.fakeControlChecked, t && b.fakeControlDisabled, e && t && b.fakeControlCheckedAndDisabled] }, e ? n.createElement(l.default, { style: b.icon }) : null)))(o), v))));
-                    return o ? n.createElement(i.Z, null, E, n.createElement(s.ZP, { color: "gray700", nativeID: this._labelId, size: "subtext2", style: b.helpText }, o)) : E;
+                    return o ? n.createElement(i.Z, null, E, n.createElement(s.ZP, { color: "gray700", id: this._labelId, size: "subtext2", style: b.helpText }, o)) : E;
                 }
             }
             f.defaultProps = { checked: !1, disabled: !1 };
@@ -424,4 +424,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561.c6743e4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561.59c0ca5a.js.map

@@ -3,7 +3,7 @@
     ["bundle.Payments-6cc66b21"],
     {
         351190: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => D });
+            a.r(t), a.d(t, { default: () => W });
             var r = a(202784),
                 l = a(325686),
                 n = a(107267),
@@ -34,24 +34,24 @@
                         g = (0, Z.jh)(),
                         f = (0, n.useHistory)(),
                         _ = (0, k.Gs)(t),
-                        { handlePreferencesChange: I, isInProgress: v, preferences: T, refetch: D } = (0, P.Z)(),
+                        { handlePreferencesChange: I, isInProgress: v, preferences: T, refetch: W } = (0, P.Z)(),
                         z = r.useMemo(() => T.enable_bill_pay, [T]),
                         A = r.useMemo(() => t?.includes(u.d.CreateWithdrawal) || t?.includes(u.d.CreateDeposit), [t]),
                         S = r.useCallback(() => {
-                            I("enable_bill_pay", !0), D();
-                        }, [I, D]),
+                            I("enable_bill_pay", !0), W();
+                        }, [I, W]),
                         N = r.useCallback(() => {
                             f.replace(y.C2);
                         }, [f]),
                         F = t?.includes(u.d.CreateDeposit),
                         L = r.useCallback(() => f.goBack(), [f]),
                         V = F ? r.createElement(l.Z, { style: g.footer }, z ? r.createElement(c.ZP, { backgroundColor: "gray0", borderColor: "transparent", color: "red500", disabled: v, fontWeight: "normal", onClick: N, size: "xLarge" }, v ? r.createElement(o.Z, null) : "Disable Outgoing Payments") : r.createElement(c.ZP, { backgroundColor: "gray0", borderColor: "transparent", color: "text", disabled: v, fontWeight: "normal", onClick: S, size: "xLarge" }, v ? r.createElement(o.Z, null) : "Enable Outgoing Payments"), r.createElement(c.ZP, { backgroundColor: "gray0", borderColor: "transparent", color: "text", fontWeight: "normal", link: y.IN, size: "xLarge" }, "Deposit funds")) : !A && _ ? r.createElement(l.Z, { style: g.footer }, r.createElement(c.ZP, { backgroundColor: "gray0", borderColor: "transparent", color: "text", fontWeight: "normal", icon: r.createElement(d.default, null), link: { pathname: y.AU.tier2.verifyIdentityPath, state: { closePath: y.l_, redirectPath: y.l_ } }, size: "xLarge" }, x)) : null;
-                    return r.createElement(p.Z, { backButtonType: "close", bottomBar: V, history: f, onBackClick: L }, r.createElement(l.Z, { style: g.container }, r.createElement(l.Z, { style: W.accountContainer }, r.createElement(l.Z, { style: W.balanceContainer, testID: "account-balance" }, r.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Balance"), r.createElement(l.Z, null, a ? r.createElement(E.Z, { amount: a.available_amount_local_micro, size: "title0", style: W.veritcalPadding }) : null)), m ? r.createElement(l.Z, { style: W.interest }, m.apy && r.createElement(l.Z, { style: W.flexGap }, r.createElement(i.ZP, { color: "gray700", size: "subtext1" }, "Current interest rate"), r.createElement(i.ZP, { size: "subtext1", weight: "medium" }, (0, k.Bj)({ apy: m.apy }))), r.createElement(l.Z, { style: W.flexGap }, r.createElement(i.ZP, { color: "gray700", size: "subtext1" }, "Total interest earned"), r.createElement(E.Z, { amount: m.earned.local_micro, currency: m.pending.currency, size: "subtext1", weight: "medium" })), m.pending && r.createElement(l.Z, { style: W.flexGap }, r.createElement(i.ZP, { color: "gray700", size: "subtext1" }, "Pending interest"), r.createElement(E.Z, { amount: m.pending.local_micro, currency: m.pending.currency, size: "subtext1", weight: "medium" }))) : null, A ? r.createElement(r.Fragment, null, r.createElement(s.Z, { spacing: "space8" }), r.createElement(l.Z, { style: W.flexCol, testID: "account-details" }, r.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Account details"), r.createElement(b.Z, { ariaLabel: w }))) : null)));
+                    return r.createElement(p.Z, { backButtonType: "close", bottomBar: V, history: f, onBackClick: L }, r.createElement(l.Z, { style: g.container }, r.createElement(l.Z, { style: D.accountContainer }, r.createElement(l.Z, { style: D.balanceContainer, testID: "account-balance" }, r.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Balance"), r.createElement(l.Z, null, a ? r.createElement(E.Z, { amount: a.available_amount_local_micro, size: "title0", style: D.veritcalPadding }) : null)), m ? r.createElement(l.Z, { style: D.interest }, m.apy && r.createElement(l.Z, { style: D.flexGap }, r.createElement(i.ZP, { color: "gray700", size: "subtext1" }, "Current interest rate"), r.createElement(i.ZP, { size: "subtext1", weight: "medium" }, (0, k.Bj)({ apy: m.apy }))), r.createElement(l.Z, { style: D.flexGap }, r.createElement(i.ZP, { color: "gray700", size: "subtext1" }, "Total interest earned"), r.createElement(E.Z, { amount: m.earned.local_micro, currency: m.pending.currency, size: "subtext1", weight: "medium" })), m.pending && r.createElement(l.Z, { style: D.flexGap }, r.createElement(i.ZP, { color: "gray700", size: "subtext1" }, "Pending interest"), r.createElement(E.Z, { amount: m.pending.local_micro, currency: m.pending.currency, size: "subtext1", weight: "medium" }))) : null, A ? r.createElement(r.Fragment, null, r.createElement(s.Z, { spacing: "space8" }), r.createElement(l.Z, { style: D.flexCol, testID: "account-details" }, r.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Account details"), r.createElement(b.Z, { ariaLabel: w }))) : null)));
                 },
                 v = { context: "ACCOUNT_DETAILS" },
                 T = (e) => r.createElement(f.nO, { namespace: _ }, r.createElement(g.H, { errorConfig: v }, r.createElement(I, e))),
-                W = m.default.create((e) => ({ flexGap: { flexDirection: "row", justifyContent: "space-between" }, icon: { color: e.colors.text }, flexCol: { flexDirection: "column", gap: e.spaces.space24, flexShrink: 1 }, padding: { padding: e.spaces.space8 }, interest: { display: "flex", flexDirection: "column", gap: e.spaces.space16 }, veritcalPadding: { paddingVertical: e.spaces.space16 }, accountContainer: { flex: 1, gap: e.spaces.space24 }, balanceContainer: { flex: 1, gap: e.spaces.space16 } })),
-                D = r.memo(T);
+                D = m.default.create((e) => ({ flexGap: { flexDirection: "row", justifyContent: "space-between" }, icon: { color: e.colors.text }, flexCol: { flexDirection: "column", gap: e.spaces.space24, flexShrink: 1 }, padding: { padding: e.spaces.space8 }, interest: { display: "flex", flexDirection: "column", gap: e.spaces.space16 }, veritcalPadding: { paddingVertical: e.spaces.space16 }, accountContainer: { flex: 1, gap: e.spaces.space24 }, balanceContainer: { flex: 1, gap: e.spaces.space16 } })),
+                W = r.memo(T);
         },
         99387: (e, t, a) => {
             a.r(t), a.d(t, { default: () => T });
@@ -83,17 +83,17 @@
                         w = c()(),
                         I = (0, h.z)(),
                         v = (0, u.p)(),
-                        { headline: T, errorMessage: W = k, targetRole: D, subtext: z = Z, challengeCompleteMessage: A } = x[n],
-                        S = P ?? D,
+                        { headline: T, errorMessage: D = k, targetRole: W, subtext: z = Z, challengeCompleteMessage: A } = x[n],
+                        S = P ?? W,
                         N = r.useMemo(() => r.createElement(l.Z, { style: { width: "100%" } }, r.createElement(i.ZP, null, z), r.createElement(s.Z, { style: E.ZP.poller })), [z]);
                     r.useEffect(() => {
                         I.scribe({ page: "payments-poller", section: "polling", action: "impression" });
                     }, [I]);
                     const F = r.useCallback(
                         (e) => {
-                            clearInterval(e), _.replace(a ?? p.gp), v({ text: W });
+                            clearInterval(e), _.replace(a ?? p.gp), v({ text: D });
                         },
-                        [_, a, v, W],
+                        [_, a, v, D],
                     );
                     return (
                         r.useEffect(() => {
@@ -177,8 +177,8 @@
                 I = a(412100),
                 v = a(825941);
             const T = p.Z,
-                W = { [Z.W.CreditCardBack]: b.default, [Z.W.FollowArrows]: E.default, [Z.W.PeopleStroke]: C.default, [Z.W.Clock]: P.default },
-                D = (e) => {
+                D = { [Z.W.CreditCardBack]: b.default, [Z.W.FollowArrows]: E.default, [Z.W.PeopleStroke]: C.default, [Z.W.Clock]: P.default },
+                W = (e) => {
                     const { selectedFilter: t, withHeader: a } = e,
                         { data: l, fetchNext: n } = (0, v.Z)({ searchFilterId: t }),
                         c = l?.get_transactions;
@@ -186,17 +186,17 @@
                 },
                 z = (e) => {
                     const { data: t, fetchNext: a, hasPendingTransactions: l } = (0, I.Z)();
-                    return r.createElement(r.Fragment, null, l ? r.createElement(_.Z, { data: t, fetchNext: a, type: "transaction" }) : null, r.createElement(D, (0, u.Z)({}, e, { withHeader: l })));
+                    return r.createElement(r.Fragment, null, l ? r.createElement(_.Z, { data: t, fetchNext: a, type: "transaction" }) : null, r.createElement(W, (0, u.Z)({}, e, { withHeader: l })));
                 },
-                A = f.default.create(() => ({ tabStrip: { width: "100%", fontWeight: 400 } })),
+                A = f.default.create(() => ({ tabStrip: { width: "100%" } })),
                 S = { context: "TRANSACTIONS_LIST" },
                 N = (e) => {
                     const t = e.location.query?.filter?.toString() || w.$W,
                         [a, l] = r.useState(t),
                         n = (0, y.useLazyLoadQuery)(T),
-                        o = (n.get_payments_transaction_search_filters?.filter(({ details: e }) => !!e?.title).map(({ details: e, rest_id: t }) => ({ id: t, title: e?.title || "", icon: e?.icon })) || []).map(({ icon: t, id: r, title: n }) => ({ key: r, label: n, Icon: t ? W[t] : void 0, to: { pathname: e.location.pathname, query: { filter: r } }, isActive: () => a === r, onClick: () => l(r) })),
+                        o = (n.get_payments_transaction_search_filters?.filter(({ details: e }) => !!e?.title).map(({ details: e, rest_id: t }) => ({ id: t, title: e?.title || "", icon: e?.icon })) || []).map(({ icon: t, id: r, title: n }) => ({ key: r, label: n, Icon: t ? D[t] : void 0, to: { pathname: e.location.pathname, query: { filter: r } }, isActive: () => a === r, onClick: () => l(r) })),
                         i = a === w.$W;
-                    return r.createElement(r.Fragment, null, o.length && r.createElement(k.Z, { isCompact: !0, isPillLink: !0, isRoundedRect: !0, links: o, style: A.tabStrip }), r.createElement(c.H, { errorConfig: S }, i ? r.createElement(z, (0, u.Z)({}, e, { selectedFilter: a })) : r.createElement(D, (0, u.Z)({}, e, { selectedFilter: a }))));
+                    return r.createElement(r.Fragment, null, o.length && r.createElement(k.Z, { isCompact: !0, isPillLink: !0, isRoundedRect: !0, links: o, style: A.tabStrip }), r.createElement(c.H, { errorConfig: S }, i ? r.createElement(z, (0, u.Z)({}, e, { selectedFilter: a })) : r.createElement(W, (0, u.Z)({}, e, { selectedFilter: a }))));
                 },
                 F = r.memo(N),
                 L = { page: "money", section: "balance" },
@@ -222,4 +222,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.93667cfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.6f7e91ba.js.map

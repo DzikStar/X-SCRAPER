@@ -128,8 +128,9 @@
                 a = i(403556),
                 o = i(791632);
             const l = (e) => {
-                    const t = (0, r.useHistory)();
-                    return s.createElement(a.Z, (0, n.Z)({}, e, { isCompact: (0, o.HD)(t) }));
+                    const t = (0, r.useHistory)(),
+                        { isCompact: i, ...l } = e;
+                    return s.createElement(a.Z, (0, n.Z)({}, l, { isCompact: i || (0, o.HD)(t) }));
                 },
                 d = s.memo(l);
         },
@@ -917,4 +918,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-e019dbda.3a35829a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-e019dbda.3535d1ca.js.map

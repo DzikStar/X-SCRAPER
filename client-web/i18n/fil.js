@@ -1272,8 +1272,6 @@
                     return "Basahin ang " + a.replyCount + " (na) sagot";
                 }),
                 i("dc0c8266", "Magtanong sa Grok"),
-                i("i7ac410e", "Ipakita ang Orihinal"),
-                i("c67f09e8", "Ipakita ang Pagsasalin"),
                 i("f396c105", function (a) {
                     return "" + a.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 i("j77292b7", function (a) {
                     return "Pumili lang ng hanggang " + a.count + " " + e(a.count, "", "(na) ") + "file";
                 }),
-                i("d4d35bea", "Isinasalin..."),
-                i("he9c9634", "Hindi nakuha ang pagsasalin"),
-                i("deaf5b16", "Subukan muli"),
-                i("j2198c98", "Itago ang isinaling post"),
+                i("cbc8fed4", "Tumpak ba ang pagsasalin na ito? Bigyan kami ng feedback para mapaganda pa namin ito:"),
+                i("d56779a2", "madaling maunawaan"),
+                i("b6fe8a56", "nakakalito o hindi malinaw"),
                 i("i73a7d48", "Isinalin ng Google"),
                 i("eeadb767", function (a) {
                     return "Isinalin ng Google mula sa " + a.originLanguage;
                 }),
-                i("be9b9fb8", "Isinalin ng Grok"),
                 i("d9c6f69d", function (a) {
                     return "Isinalin ng Grok mula sa " + a.originLanguage;
                 }),
@@ -1335,15 +1331,19 @@
                 i("caa5ba3d", function (a) {
                     return "Isinalin ng X mula sa " + a.originLanguage;
                 }),
+                i("deaf5b16", "Subukan muli"),
+                i("a66d80d0", "Isalin ang post"),
+                i("be9b9fb8", "Isinalin ng Grok"),
+                i("he9c9634", "Hindi nakuha ang pagsasalin"),
+                i("j2198c98", "Itago ang isinaling post"),
+                i("d4d35bea", "Isinasalin..."),
+                i("i7ac410e", "Ipakita ang Orihinal"),
+                i("c67f09e8", "Ipakita ang Pagsasalin"),
                 i("e0f81ff3", "Pagsasalin:"),
                 i("j2862695", function (a) {
                     return "Isinalin mula sa " + a.originLanguage + " ng";
                 }),
                 i("b7cb4fab", "Isinalin ng"),
-                i("cbc8fed4", "Tumpak ba ang pagsasalin na ito? Bigyan kami ng feedback para mapaganda pa namin ito:"),
-                i("d56779a2", "madaling maunawaan"),
-                i("b6fe8a56", "nakakalito o hindi malinaw"),
-                i("a66d80d0", "Isalin ang post"),
                 i("d4c339b9", function (a) {
                     return "Post mula kay " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -12073,6 +12073,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Sa pagbili, sumasang-ayon ka sa aming ", " at sa aming ", ". Awtomatikong mare-renew ang mga subscription hanggang sa kanselahin ang mga ito, gaya ng nakasaan sa mga Tuntunan. Magkansela kahit kailan."];
@@ -13301,4 +13307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.aeb1e98a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.43eee0ea.js.map

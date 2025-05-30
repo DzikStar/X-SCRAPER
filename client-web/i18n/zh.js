@@ -1271,8 +1271,6 @@
                     return "查看 " + e.replyCount + " 条回复";
                 }),
                 f("dc0c8266", "问 Grok"),
-                f("i7ac410e", "显示原帖"),
-                f("c67f09e8", "显示翻译"),
                 f("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 f("j77292b7", function (e) {
                     return "请仅选择最多 " + e.count + " 文件 个";
                 }),
-                f("d4d35bea", "正在翻译..."),
-                f("he9c9634", "无法获取翻译"),
-                f("deaf5b16", "重试"),
-                f("j2198c98", "隐藏已翻译帖子"),
+                f("cbc8fed4", "翻译得准确吗？请提供反馈，以便我们加以改进："),
+                f("d56779a2", "易于理解"),
+                f("b6fe8a56", "不清楚或令人困惑"),
                 f("i73a7d48", "由 Google 提供翻译"),
                 f("eeadb767", function (e) {
                     return "由 Google 翻译自" + e.originLanguage;
                 }),
-                f("be9b9fb8", "由 Grok 翻译"),
                 f("d9c6f69d", function (e) {
                     return "由 Grok 从" + e.originLanguage + "翻译";
                 }),
@@ -1334,15 +1330,19 @@
                 f("caa5ba3d", function (e) {
                     return "由 X 翻译自 " + e.originLanguage;
                 }),
+                f("deaf5b16", "重试"),
+                f("a66d80d0", "翻译帖子"),
+                f("be9b9fb8", "由 Grok 翻译"),
+                f("he9c9634", "无法获取翻译"),
+                f("j2198c98", "隐藏已翻译帖子"),
+                f("d4d35bea", "正在翻译..."),
+                f("i7ac410e", "显示原帖"),
+                f("c67f09e8", "显示翻译"),
                 f("e0f81ff3", "翻译："),
                 f("j2862695", function (e) {
                     return "翻译自 " + e.originLanguage;
                 }),
                 f("b7cb4fab", "提供翻译"),
-                f("cbc8fed4", "翻译得准确吗？请提供反馈，以便我们加以改进："),
-                f("d56779a2", "易于理解"),
-                f("b6fe8a56", "不清楚或令人困惑"),
-                f("a66d80d0", "翻译帖子"),
                 f("d4c339b9", function (e) {
                     return "来自 " + e.fullName + " (@" + e.screenName + ") 的帖子";
                 }),
@@ -12081,6 +12081,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["一经购买，即表示你同意我们的", "和", "。如条款中所述，除非提前取消，否则订阅服务将自动续订。目前你只能在网站上订阅。订阅需提供一个经认证的手机号码。随时可取消。"];
@@ -13303,4 +13309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.a221a6ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.3d5b8e3a.js.map

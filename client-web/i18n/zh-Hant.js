@@ -1271,8 +1271,6 @@
                     return "閱讀 " + e.replyCount + " 則回覆";
                 }),
                 n("dc0c8266", "詢問 Grok"),
-                n("i7ac410e", "顯示原始貼文"),
-                n("c67f09e8", "顯示翻譯"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 n("j77292b7", function (e) {
                     return "請選取最多 " + e.count + " 個檔案";
                 }),
-                n("d4d35bea", "翻譯中…"),
-                n("he9c9634", "無法取得翻譯"),
-                n("deaf5b16", "重試"),
-                n("j2198c98", "隱藏翻譯的貼文"),
+                n("cbc8fed4", "這個翻譯正確嗎？請提供回饋，讓我們可以改進："),
+                n("d56779a2", "容易理解"),
+                n("b6fe8a56", "令人困惑或不清楚"),
                 n("i73a7d48", "由 Google 翻譯"),
                 n("eeadb767", function (e) {
                     return "翻譯自" + e.originLanguage + "，由 Google 翻譯";
                 }),
-                n("be9b9fb8", "由 Grok 翻譯"),
                 n("d9c6f69d", function (e) {
                     return "由 Grok 翻譯自" + e.originLanguage;
                 }),
@@ -1334,15 +1330,19 @@
                 n("caa5ba3d", function (e) {
                     return "由 X 翻譯自" + e.originLanguage;
                 }),
+                n("deaf5b16", "重試"),
+                n("a66d80d0", "翻譯貼文"),
+                n("be9b9fb8", "由 Grok 翻譯"),
+                n("he9c9634", "無法取得翻譯"),
+                n("j2198c98", "隱藏翻譯的貼文"),
+                n("d4d35bea", "翻譯中…"),
+                n("i7ac410e", "顯示原始貼文"),
+                n("c67f09e8", "顯示翻譯"),
                 n("e0f81ff3", "翻譯："),
                 n("j2862695", function (e) {
                     return "Translated from " + e.originLanguage + " by";
                 }),
                 n("b7cb4fab", "由"),
-                n("cbc8fed4", "這個翻譯正確嗎？請提供回饋，讓我們可以改進："),
-                n("d56779a2", "容易理解"),
-                n("b6fe8a56", "令人困惑或不清楚"),
-                n("a66d80d0", "翻譯貼文"),
                 n("d4c339b9", function (e) {
                     return "來自 " + e.fullName + " (@" + e.screenName + ") 的貼文";
                 }),
@@ -12075,6 +12075,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["如果購買，即表示你同意我們的", "和", "。如條款中所述，訂閱服務會自動續訂，直到取消為止。可隨時取消訂閱。"];
@@ -13297,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.dadb1eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.fa66494a.js.map

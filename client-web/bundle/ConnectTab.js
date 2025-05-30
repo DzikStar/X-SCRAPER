@@ -2,156 +2,157 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.ConnectTab"],
     {
-        233935: (e, t, n) => {
-            n.d(t, { Z: () => m });
-            var o = n(202784),
-                a = n(154003),
-                s = n(392237),
-                i = n(111677),
-                r = n.n(i),
-                l = n(698891);
+        233935: (e, t, o) => {
+            o.d(t, { Z: () => m });
+            var n = o(202784),
+                a = o(154003),
+                l = o(392237),
+                r = o(111677),
+                s = o.n(r),
+                i = o(698891);
             const c = "settingsAppBar",
-                d = r().bb081ea2,
-                p = o.memo(({ onPress: e, pullRight: t, to: n }) => o.createElement(a.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: o.createElement(l.default, null), link: n, onPress: e, pullRight: t, style: u.button, testID: c, type: "primaryText" })),
-                u = s.default.create((e) => ({ button: { marginVertical: `calc(-${e.spaces.space12})` } })),
+                d = s().bb081ea2,
+                p = n.memo(({ onPress: e, pullRight: t, to: o }) => n.createElement(a.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: n.createElement(i.default, null), link: o, onPress: e, pullRight: t, style: u.button, testID: c, type: "primaryText" })),
+                u = l.default.create((e) => ({ button: { marginVertical: `calc(-${e.spaces.space12})` } })),
                 m = p;
         },
-        349035: (e, t, n) => {
-            n.d(t, { Z: () => s });
-            var o = n(202784),
-                a = n(272175);
-            const s = (0, n(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), o.createElement(a.ql, null, o.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
+        349035: (e, t, o) => {
+            o.d(t, { Z: () => l });
+            var n = o(202784),
+                a = o(272175);
+            const l = (0, o(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), n.createElement(a.ql, null, n.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
         },
-        507651: (e, t, n) => {
-            n.d(t, { Z: () => c });
-            var o = n(807896),
-                a = n(202784),
-                s = n(107267),
-                i = n(403556),
-                r = n(791632);
-            const l = (e) => {
-                    const t = (0, s.useHistory)();
-                    return a.createElement(i.Z, (0, o.Z)({}, e, { isCompact: (0, r.HD)(t) }));
+        507651: (e, t, o) => {
+            o.d(t, { Z: () => c });
+            var n = o(807896),
+                a = o(202784),
+                l = o(107267),
+                r = o(403556),
+                s = o(791632);
+            const i = (e) => {
+                    const t = (0, l.useHistory)(),
+                        { isCompact: o, ...i } = e;
+                    return a.createElement(r.Z, (0, n.Z)({}, i, { isCompact: o || (0, s.HD)(t) }));
                 },
-                c = a.memo(l);
+                c = a.memo(i);
         },
-        56851: (e, t, n) => {
-            n.d(t, { Z: () => b });
-            var o = n(202784),
-                a = n(420740),
-                s = n(108362),
-                i = n(731708),
-                r = n(154003),
-                l = n(392237),
-                c = n(111677),
-                d = n.n(c),
-                p = n(349035);
+        56851: (e, t, o) => {
+            o.d(t, { Z: () => b });
+            var n = o(202784),
+                a = o(420740),
+                l = o(108362),
+                r = o(731708),
+                s = o(154003),
+                i = o(392237),
+                c = o(111677),
+                d = o.n(c),
+                p = o(349035);
             const u = "error-detail",
                 m = d().e49537c2,
-                h = d().a9ae1e78;
-            class b extends o.PureComponent {
+                g = d().a9ae1e78;
+            class b extends n.PureComponent {
                 render() {
-                    return o.createElement(a.Z, { testID: u }, o.createElement(p.Z, null), o.createElement(s.Z, { style: g.root }, o.createElement(i.ZP, { align: "center", color: "gray700", style: g.retryText }, m), o.createElement(r.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, h)));
+                    return n.createElement(a.Z, { testID: u }, n.createElement(p.Z, null), n.createElement(l.Z, { style: h.root }, n.createElement(r.ZP, { align: "center", color: "gray700", style: h.retryText }, m), n.createElement(s.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, g)));
                 }
             }
-            const g = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
+            const h = i.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
-        756007: (e, t, n) => {
-            n.r(t), n.d(t, { ConnectTabs: () => Z, TabConfig: () => T, default: () => W });
-            var o = n(202784),
-                a = n(392237),
-                s = n(111677),
-                i = n.n(s),
-                r = n(233935),
-                l = n(718e3),
-                c = n(252021),
-                d = n(507651),
-                p = n(443781),
-                u = n(56851),
-                m = n(810641),
-                h = n(952793),
-                b = n(163889),
-                g = n(847933),
-                f = n(725516),
-                y = n(644829),
-                C = n(750085),
-                x = n(218951);
-            var _ = n(2430);
-            const k = (0, n(668214).Z)()
+        756007: (e, t, o) => {
+            o.r(t), o.d(t, { ConnectTabs: () => k, TabConfig: () => R, default: () => O });
+            var n = o(202784),
+                a = o(392237),
+                l = o(111677),
+                r = o.n(l),
+                s = o(233935),
+                i = o(718e3),
+                c = o(252021),
+                d = o(507651),
+                p = o(443781),
+                u = o(56851),
+                m = o(810641),
+                g = o(952793),
+                b = o(163889),
+                h = o(847933),
+                f = o(725516),
+                y = o(644829),
+                C = o(750085),
+                x = o(218951);
+            var _ = o(2430);
+            const S = (0, o(668214).Z)()
                     .propsFromState(() => ({ cursor: (0, _.jK)("cursor"), moduleId: (0, _.jK)("module_id"), moduleName: (0, _.jK)("module_name"), subtitle: (0, _.jK)("subtitle"), templateName: (0, _.KT)("template_name"), title: (0, _.jK)("title"), userId: (0, _.KT)("user_id"), isCreatorOnly: (0, _.KT)("is_creator_only") }))
                     .withAnalytics({ page: "people" }),
-                Z = Object.freeze({ FOLLOWS: "follows", CREATORS: "creators" }),
-                R = i().a526aa66,
-                E = i().b4f8b518,
-                w = [Z.FOLLOWS, Z.CREATORS],
-                T = Object.freeze({ [Z.FOLLOWS]: { label: R, url: "/i/connect_people" }, [Z.CREATORS]: { label: E, url: "/i/connect_people?is_creator_only=true" } }),
-                v = i().b5298d92,
-                S = o.createElement(r.Z, { pullRight: !0, to: "/settings/contacts" }),
-                P = (e) => (e === g.Z.NOT_FOUND ? o.createElement(u.Z, null) : ((0, b.ZP)(`Unhandled timeline unavailable reason: ${e}`), null)),
-                I = () => o.createElement(u.Z, null),
-                L = o.createElement(l.Z, { withWhoToFollow: !1 }),
-                B = (e) => {
-                    const { url: t } = T[e];
+                k = Object.freeze({ FOLLOWS: "follows", CREATORS: "creators" }),
+                v = r().a526aa66,
+                Z = r().b4f8b518,
+                T = [k.FOLLOWS, k.CREATORS],
+                R = Object.freeze({ [k.FOLLOWS]: { label: v, url: "/i/connect_people" }, [k.CREATORS]: { label: Z, url: "/i/connect_people?is_creator_only=true" } }),
+                E = r().b5298d92,
+                w = n.createElement(s.Z, { pullRight: !0, to: "/settings/contacts" }),
+                P = (e) => (e === h.Z.NOT_FOUND ? n.createElement(u.Z, null) : ((0, b.ZP)(`Unhandled timeline unavailable reason: ${e}`), null)),
+                W = () => n.createElement(u.Z, null),
+                I = n.createElement(i.Z, { withWhoToFollow: !1 }),
+                L = (e) => {
+                    const { url: t } = R[e];
                     return t;
                 },
-                O = a.default.create((e) => ({ connectTabs: { marginBottom: e.spaces.space8 } })),
-                W = k(({ cursor: e, history: t, isCreatorOnly: n, moduleId: a, moduleName: s, subtitle: i, templateName: r, title: l, userId: u }) => {
-                    const { viewerUserId: b } = o.useContext(p.rC),
-                        g = (0, f.z)(),
-                        _ = (0, h.hC)("creator_subscriptions_connect_tab_enabled"),
-                        k = _ && "true" === n,
-                        R = k ? Z.CREATORS : Z.FOLLOWS,
-                        E = o.useMemo(
+                B = a.default.create((e) => ({ connectTabs: { marginBottom: e.spaces.space8 } })),
+                O = S(({ cursor: e, history: t, isCreatorOnly: o, moduleId: a, moduleName: l, subtitle: r, templateName: s, title: i, userId: u }) => {
+                    const { viewerUserId: b } = n.useContext(p.rC),
+                        h = (0, f.z)(),
+                        _ = (0, g.hC)("creator_subscriptions_connect_tab_enabled"),
+                        S = _ && "true" === o,
+                        v = S ? k.CREATORS : k.FOLLOWS,
+                        Z = n.useMemo(
                             () =>
                                 (function (e) {
-                                    const { is_creator_only: t, module_id: n, template_name: o, user_id: a } = e,
-                                        s = o ?? "default",
-                                        i = n ?? "default",
-                                        r = a ?? "default",
-                                        l = t ? "creators" : "default",
+                                    const { is_creator_only: t, module_id: o, template_name: n, user_id: a } = e,
+                                        l = n ?? "default",
+                                        r = o ?? "default",
+                                        s = a ?? "default",
+                                        i = t ? "creators" : "default",
                                         c = { contextualUserId: a, ...(t ? { isCreatorOnlyConnectTab: !0 } : null) };
-                                    return (0, x.Z)({ timelineId: `connect-tab-graphql-${s}-${i}-${r}-${l}`, network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchRichConnectTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, count: e, context: JSON.stringify(c) }) }, formatResponse: C.Z, context: "CONNECT_TAB_GRAPHQL", perfKey: "connectTabGraphQL" });
-                                })({ template_name: r, module_name: s, module_id: a, cursor: e, title: l, subtitle: i, user_id: u === b ? void 0 : u, is_creator_only: k }),
-                            [r, s, a, e, l, i, u, b, k],
+                                    return (0, x.Z)({ timelineId: `connect-tab-graphql-${l}-${r}-${s}-${i}`, network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchRichConnectTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, count: e, context: JSON.stringify(c) }) }, formatResponse: C.Z, context: "CONNECT_TAB_GRAPHQL", perfKey: "connectTabGraphQL" });
+                                })({ template_name: s, module_name: l, module_id: a, cursor: e, title: i, subtitle: r, user_id: u === b ? void 0 : u, is_creator_only: S }),
+                            [s, l, a, e, i, r, u, b, S],
                         ),
-                        W = ((e) => {
-                            const t = w.indexOf(e);
+                        O = ((e) => {
+                            const t = T.indexOf(e);
                             return t > -1 ? t : 0;
-                        })(R),
-                        $ = o.useMemo(
+                        })(v),
+                        z = n.useMemo(
                             () =>
-                                w.map((e) => ({
+                                T.map((e) => ({
                                     key: e,
-                                    label: T[e].label,
-                                    isActive: () => e === R,
-                                    to: { pathname: B(e) },
+                                    label: R[e].label,
+                                    isActive: () => e === v,
+                                    to: { pathname: L(e) },
                                     onClick: () => {
-                                        g.scribe({ action: "click", element: "tab", section: `connect_${e}` });
+                                        h.scribe({ action: "click", element: "tab", section: `connect_${e}` });
                                     },
                                 })),
-                            [g, R],
+                            [h, v],
                         ),
-                        j = o.useMemo(() => o.createElement(o.Fragment, null, _ ? o.createElement(d.Z, { links: $, style: O.connectTabs, visibleItemIndex: W }) : null, o.createElement(m.Z, { module: E, renderEmptyState: I, renderUnavailable: P, title: v })), [_, E, $, W]);
-                    return o.createElement(c.Z, { backLocation: "/", history: t, primaryContent: j, rightControl: S, sidebarContent: L, title: v });
+                        $ = n.useMemo(() => n.createElement(n.Fragment, null, _ ? n.createElement(d.Z, { links: z, style: B.connectTabs, visibleItemIndex: O }) : null, n.createElement(m.Z, { module: Z, renderEmptyState: W, renderUnavailable: P, title: E })), [_, Z, z, O]);
+                    return n.createElement(c.Z, { backLocation: "/", history: t, primaryContent: $, rightControl: w, sidebarContent: I, title: E });
                 });
         },
-        403556: (e, t, n) => {
-            n.d(t, { Z: () => E });
-            var o = n(807896),
-                a = n(202784),
-                s = n(194504),
-                i = n(235902),
-                r = n(392237),
-                l = n(325686),
-                c = n(111677),
-                d = n.n(c),
-                p = n(912021),
-                u = n(516951),
-                m = n(731708),
-                h = n(310088),
-                b = n(175993),
-                g = n(58881),
-                f = n(530732);
+        403556: (e, t, o) => {
+            o.d(t, { Z: () => Z });
+            var n = o(807896),
+                a = o(202784),
+                l = o(194504),
+                r = o(235902),
+                s = o(392237),
+                i = o(325686),
+                c = o(111677),
+                d = o.n(c),
+                p = o(912021),
+                u = o(516951),
+                m = o(731708),
+                g = o(310088),
+                b = o(175993),
+                h = o(58881),
+                f = o(530732);
             const y = d().d2414d31,
                 C = () => d().ce4e85ae,
                 x = d().fb9f6f39;
@@ -159,15 +160,15 @@
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizedLink = (0, p.Z)((e, t) => {
-                            const { pathname: n, query: o, state: a } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
-                            return { pathname: n, query: o, method: "push", state: { ...a, lockScroll: t } };
+                            const { pathname: o, query: n, state: a } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
+                            return { pathname: o, query: n, method: "push", state: { ...a, lockScroll: t } };
                         })),
                         (this._unlisten = u.Z),
                         (this.state = { location: this.context.location }),
-                        (this._getTextColor = (e, t, n, o) => {
-                            const a = r.default.theme.colors.text,
-                                s = r.default.theme.colors.gray700;
-                            return n || o ? (e || t ? a : s) : e ? a : s;
+                        (this._getTextColor = (e, t, o, n) => {
+                            const a = s.default.theme.colors.text,
+                                l = s.default.theme.colors.gray700;
+                            return o || n ? (e || t ? a : l) : e ? a : l;
                         }),
                         (this._setRef = (e) => {
                             this._ref = e;
@@ -190,17 +191,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: o, children: s, color: i, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: b, retainScrollPosition: _, style: Z, to: R } = this.props,
-                        { location: E } = this.state,
-                        w = R ? this._getMemoizedLink(R, _) : void 0,
-                        T = c ? c(R) : E?.pathname === w?.pathname,
-                        v = g.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
-                        S = b ? "medium" : T ? "bold" : "medium";
-                    return a.createElement(f.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: v, link: w, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [p ? k.pill : k.link, p && T ? k.active : null, d ? (p ? k.compactPill : k.compactLink) : null, u ? k.roundedRect : null, Z], withoutInteractiveStyles: b || p }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && k.flexGrow }, a.createElement(m.ZP, { size: b ? "headline2" : void 0, style: [k.text, { color: this._getTextColor(T, c, b, p) }, d && k.compactText, b && t && k.focusedText], weight: S }, e && a.createElement(e, { style: k.icon }), s, b || p ? null : a.createElement(l.Z, { style: T && [k.border, { backgroundColor: r.default.theme.colors[i] }] })), n ? a.createElement(h.Z, { count: n, standalone: !0, style: [k.badge, n >= 10 && k.multiDigitBadge, n >= 20 && k.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : o ? a.createElement(h.Z, { pip: !0, standalone: !0, style: k.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: n, children: l, color: r, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: b, retainScrollPosition: _, style: k, to: v } = this.props,
+                        { location: Z } = this.state,
+                        T = v ? this._getMemoizedLink(v, _) : void 0,
+                        R = c ? c(v) : Z?.pathname === T?.pathname,
+                        E = h.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? S.pillHoverStyle.backgroundColor : void 0 }),
+                        w = b ? "medium" : R ? "bold" : "medium";
+                    return a.createElement(f.Z, { "aria-label": t, "aria-selected": R, focusable: !!R, interactiveStyles: E, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [S.pillStyle] : [S.link]), ...(p && R ? [S.pillActiveStyle] : []), d ? (p ? S.compactPill : S.compactLink) : null, u ? S.roundedRect : null, k], withoutInteractiveStyles: b }, ({ isFocused: t, isHovered: c }) => a.createElement(i.Z, { style: p && S.flexGrow }, a.createElement(m.ZP, { size: b ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(R, c, b, p) }, d && S.compactText, b && t && S.focusedText, p && S.pillTextStyle, p && R && S.pillActiveTextStyle, p && c && S.pillHoverTextStyle], weight: w }, e && a.createElement(e, { style: S.icon }), l, b || p ? null : a.createElement(i.Z, { style: R && [S.border, { backgroundColor: s.default.theme.colors[r] }] })), o ? a.createElement(g.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : n ? a.createElement(g.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
                 }
             }
             (_.contextType = b.Z), (_.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const k = r.default.create((e) => ({
+            const S = s.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -211,33 +212,38 @@
                     focusedText: { position: "relative", top: `calc(${e.borderWidths.medium} / 2)`, marginBottom: `-${e.spaces.space16}`, borderStyle: "solid", borderBottomWidth: e.borderWidths.medium, borderColor: e.colors.text, boxSizing: "border-box" },
                     compactText: { paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8 },
                     border: { height: e.borderWidths.large, position: "absolute", bottom: 0, width: "100%", minWidth: "56px", alignSelf: "center", borderRadius: e.borderRadii.infinite },
-                    pill: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
                     compactPill: { height: e.spaces.space36 },
                     active: { backgroundColor: e.colors.gray50 },
+                    pillStyle: { backgroundColor: e.colors.transparent, borderColor: e.colors.gray50, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
+                    pillTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillHoverStyle: { backgroundColor: e.colors.gray100, borderColor: e.colors.gray50 },
+                    pillHoverTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillActiveStyle: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50 },
+                    pillActiveTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
                     flexGrow: { flexGrow: 1 },
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                Z = _,
-                R = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                E = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: r, isRoundedRect: l, links: c, style: d, visibleItemIndex: p }) => {
+                k = _,
+                v = s.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                Z = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: s, isRoundedRect: i, links: c, style: d, visibleItemIndex: p }) => {
                     const u = c
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: m } = i.ZP.useProps(),
-                        h = m() && !r,
+                        { isWebRedesign: m } = r.ZP.useProps(),
+                        g = m() && !s,
                         b = a.useMemo(
                             () =>
-                                c.filter(Boolean).map(({ label: t, viewType: s, ...i }, c) => {
-                                    const d = h ? [R.linkRedesign, 0 === c && R.firstLinkRedesign, e && 0 === c && R.withNoPaddingStart] : void 0;
-                                    return a.createElement(Z, (0, o.Z)({ viewType: s }, i, { isCompact: n, isPillLink: r, isRoundedRect: l, isWebRedesign: h, style: d }), t);
+                                c.filter(Boolean).map(({ label: t, viewType: l, ...r }, c) => {
+                                    const d = g ? [v.linkRedesign, 0 === c && v.firstLinkRedesign, e && 0 === c && v.withNoPaddingStart] : void 0;
+                                    return a.createElement(k, (0, n.Z)({ viewType: l }, r, { isCompact: o, isPillLink: s, isRoundedRect: i, isWebRedesign: g, style: d }), t);
                                 }),
-                            [e, n, r, l, h, c],
+                            [e, o, s, i, g, c],
                         );
-                    return a.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: r && R.gap, childrenStyle: !h && R.flexGrow, key: u, style: [r ? null : R.segmentedControl, h && R.leftAligned, d], visibleItemIndex: p }, b);
+                    return a.createElement(l.Z, { "aria-label": t, buttonsContainerStyle: s && v.gap, childrenStyle: !g && v.flexGrow, key: u, style: [s ? null : v.segmentedControl, g && v.leftAligned, d], visibleItemIndex: p }, b);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConnectTab.63c568ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConnectTab.e692145a.js.map

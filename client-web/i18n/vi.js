@@ -1271,8 +1271,6 @@
                     return "Đọc " + n.replyCount + " câu trả lời";
                 }),
                 t("dc0c8266", "Hỏi Grok"),
-                t("i7ac410e", "Hiện bản gốc"),
-                t("c67f09e8", "Hiện bản dịch"),
                 t("f396c105", function (n) {
                     return "" + n.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 t("j77292b7", function (n) {
                     return "Vui lòng chọn tối đa " + n.count + " tệp";
                 }),
-                t("d4d35bea", "Đang dịch..."),
-                t("he9c9634", "Không thể tải phần dịch"),
-                t("deaf5b16", "Thử lại"),
-                t("j2198c98", "Ẩn bài đăng đã dịch"),
+                t("cbc8fed4", "Bản dịch này có chính xác không? Hãy góp ý để chúng tôi có thể cải thiện:"),
+                t("d56779a2", "dễ hiểu"),
+                t("b6fe8a56", "khó hiểu hoặc không rõ ràng"),
                 t("i73a7d48", "Được dịch bởi Google"),
                 t("eeadb767", function (n) {
                     return "Được dịch từ " + n.originLanguage + " bởi Google";
                 }),
-                t("be9b9fb8", "Bản dịch của Grok"),
                 t("d9c6f69d", function (n) {
                     return "Bản dịch từ " + n.originLanguage + " của Grok";
                 }),
@@ -1334,15 +1330,19 @@
                 t("caa5ba3d", function (n) {
                     return "Bản dịch từ " + n.originLanguage + " của X";
                 }),
+                t("deaf5b16", "Thử lại"),
+                t("a66d80d0", "Dịch bài đăng"),
+                t("be9b9fb8", "Bản dịch của Grok"),
+                t("he9c9634", "Không thể tải phần dịch"),
+                t("j2198c98", "Ẩn bài đăng đã dịch"),
+                t("d4d35bea", "Đang dịch..."),
+                t("i7ac410e", "Hiện bản gốc"),
+                t("c67f09e8", "Hiện bản dịch"),
                 t("e0f81ff3", "Bản dịch:"),
                 t("j2862695", function (n) {
                     return "Được dịch từ " + n.originLanguage + " bởi";
                 }),
                 t("b7cb4fab", "Được dịch bởi"),
-                t("cbc8fed4", "Bản dịch này có chính xác không? Hãy góp ý để chúng tôi có thể cải thiện:"),
-                t("d56779a2", "dễ hiểu"),
-                t("b6fe8a56", "khó hiểu hoặc không rõ ràng"),
-                t("a66d80d0", "Dịch bài đăng"),
                 t("d4c339b9", function (n) {
                     return "Bài đăng từ " + n.fullName + " (@" + n.screenName + ")";
                 }),
@@ -12065,6 +12065,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Bằng việc thực hiện giao dịch mua, bạn đồng ý với ", " và ", " của chúng tôi. Gói thuê bao sẽ tự động gia hạn cho đến khi bạn hủy, như được mô tả trong Điều khoản. Bạn có thể hủy bất cứ lúc nào."];
@@ -13287,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.3cfecefa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.db44df4a.js.map

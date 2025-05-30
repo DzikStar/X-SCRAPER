@@ -225,18 +225,21 @@
                                     if (t.flowName) {
                                         const r = t.subtasks?.find(({ security_key: e }) => e)?.security_key,
                                             n = a.set(g, { [t.flowName]: t.subtasks.length && (e.statusText === E || r) ? t : void 0 });
-                                        if (r && window.location.host.includes("x.com"))
-                                            return n.then(
-                                                () => (
-                                                    ((e) => {
-                                                        const t = document.createElement("form");
-                                                        t.setAttribute("action", window.location.href), t.setAttribute("method", "post"), t.setAttribute("name", "f");
-                                                        const r = document.createElement("input");
-                                                        r.setAttribute("type", "hidden"), r.setAttribute("name", "payload"), r.setAttribute("value", encodeURIComponent(e)), t.appendChild(r), document.body.appendChild(t), t.submit();
-                                                    })(JSON.stringify({ action: r.action_type, challenge: JSON.parse(r.challenge), timeout: 6e4 })),
-                                                    e
-                                                ),
-                                            );
+                                        if (r) {
+                                            const t = JSON.parse(r.challenge);
+                                            if (window.location.host.includes("x.com") && "x.com" !== t.rp?.id)
+                                                return n.then(
+                                                    () => (
+                                                        ((e) => {
+                                                            const t = document.createElement("form");
+                                                            t.setAttribute("action", window.location.href), t.setAttribute("method", "post"), t.setAttribute("name", "f");
+                                                            const r = document.createElement("input");
+                                                            r.setAttribute("type", "hidden"), r.setAttribute("name", "payload"), r.setAttribute("value", encodeURIComponent(e)), t.appendChild(r), document.body.appendChild(t), t.submit();
+                                                        })(JSON.stringify({ action: r.action_type, challenge: JSON.parse(r.challenge), timeout: 6e4 })),
+                                                        e
+                                                    ),
+                                                );
+                                        }
                                     }
                                     return e;
                                 });
@@ -1392,4 +1395,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.b26a1c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh.fee7a51a.js.map

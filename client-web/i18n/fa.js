@@ -1272,8 +1272,6 @@
                     return "خواندن " + e.replyCount + " پاسخ";
                 }),
                 n("dc0c8266", "از Grok بپرسید"),
-                n("i7ac410e", "نمایش متن اصلی"),
-                n("c67f09e8", "نمایش ترجمه"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 n("j77292b7", function (e) {
                     return "لطفاً فقط تا " + e.count + " فایل انتخاب کنید";
                 }),
-                n("d4d35bea", "درحال ترجمه…"),
-                n("he9c9634", "ترجمه ایجاد نشد"),
-                n("deaf5b16", "امتحان دوباره"),
-                n("j2198c98", "پست ترجمه‌شده پنهان شود"),
+                n("cbc8fed4", "این ترجمه دقیق بود؟ بازخورد دهید تا بتوانیم بهبود دهیم."),
+                n("d56779a2", "درک آسان"),
+                n("b6fe8a56", "گیج‌کننده یا مبهم"),
                 n("i73a7d48", "ترجمه Google"),
                 n("eeadb767", function (e) {
                     return "ترجمه Google از " + e.originLanguage;
                 }),
-                n("be9b9fb8", "ترجمه توسط Grok"),
                 n("d9c6f69d", function (e) {
                     return "ترجمه از " + e.originLanguage + " توسط Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 n("caa5ba3d", function (e) {
                     return "ترجمه از " + e.originLanguage + " توسط X";
                 }),
+                n("deaf5b16", "امتحان دوباره"),
+                n("a66d80d0", "ترجمه پست"),
+                n("be9b9fb8", "ترجمه توسط Grok"),
+                n("he9c9634", "ترجمه ایجاد نشد"),
+                n("j2198c98", "پست ترجمه‌شده پنهان شود"),
+                n("d4d35bea", "درحال ترجمه…"),
+                n("i7ac410e", "نمایش متن اصلی"),
+                n("c67f09e8", "نمایش ترجمه"),
                 n("e0f81ff3", "ترجمه:"),
                 n("j2862695", function (e) {
                     return "ترجمه‌شده از " + e.originLanguage + " توسط";
                 }),
                 n("b7cb4fab", "ترجمه‌شده توسط"),
-                n("cbc8fed4", "این ترجمه دقیق بود؟ بازخورد دهید تا بتوانیم بهبود دهیم."),
-                n("d56779a2", "درک آسان"),
-                n("b6fe8a56", "گیج‌کننده یا مبهم"),
-                n("a66d80d0", "ترجمه پست"),
                 n("d4c339b9", function (e) {
                     return "پستی از " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12073,6 +12073,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["خریداری کردن به‌معنای موافقت با ", " و ", " است. همان‌طور که در «شرایط» شرح داده شده است، «اشتراک‌ها» تا وقتی لغو نشود به‌صورت خودکار تمدید می‌شود. هروقت خواستید می‌توانید لغو کنید."];
@@ -13295,4 +13301,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.1da5524a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.3d64b8aa.js.map

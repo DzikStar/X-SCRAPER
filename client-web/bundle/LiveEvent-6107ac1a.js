@@ -508,11 +508,11 @@
                 render() {
                     const { Icon: e, "aria-label": t, badgeCount: l, badgePip: a, children: r, color: n, isActive: c, isCompact: d, isPillLink: h, isRoundedRect: u, isWebRedesign: v, retainScrollPosition: E, style: C, to: z } = this.props,
                         { location: _ } = this.state,
-                        k = z ? this._getMemoizedLink(z, E) : void 0,
-                        L = c ? c(z) : _?.pathname === k?.pathname,
-                        M = p.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0 }),
-                        S = v ? "medium" : L ? "bold" : "medium";
-                    return i.createElement(y.Z, { "aria-label": t, "aria-selected": L, focusable: !!L, interactiveStyles: M, link: k, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [h ? Z.pill : Z.link, h && L ? Z.active : null, d ? (h ? Z.compactPill : Z.compactLink) : null, u ? Z.roundedRect : null, C], withoutInteractiveStyles: v || h }, ({ isFocused: t, isHovered: c }) => i.createElement(s.Z, { style: h && Z.flexGrow }, i.createElement(m.ZP, { size: v ? "headline2" : void 0, style: [Z.text, { color: this._getTextColor(L, c, v, h) }, d && Z.compactText, v && t && Z.focusedText], weight: S }, e && i.createElement(e, { style: Z.icon }), r, v || h ? null : i.createElement(s.Z, { style: L && [Z.border, { backgroundColor: o.default.theme.colors[n] }] })), l ? i.createElement(g.Z, { count: l, standalone: !0, style: [Z.badge, l >= 10 && Z.multiDigitBadge, l >= 20 && Z.truncatedCountBadge], truncatedCountFormatter: w, unreadCountLabel: f, withBorder: !1 }) : a ? i.createElement(g.Z, { pip: !0, standalone: !0, style: Z.badgePip, textColor: "red500", unreadCountLabel: b, withBorder: !1 }) : null));
+                        S = z ? this._getMemoizedLink(z, E) : void 0,
+                        k = c ? c(z) : _?.pathname === S?.pathname,
+                        L = p.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: h ? Z.pillHoverStyle.backgroundColor : void 0 }),
+                        M = v ? "medium" : k ? "bold" : "medium";
+                    return i.createElement(y.Z, { "aria-label": t, "aria-selected": k, focusable: !!k, interactiveStyles: L, link: S, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(h ? [Z.pillStyle] : [Z.link]), ...(h && k ? [Z.pillActiveStyle] : []), d ? (h ? Z.compactPill : Z.compactLink) : null, u ? Z.roundedRect : null, C], withoutInteractiveStyles: v }, ({ isFocused: t, isHovered: c }) => i.createElement(s.Z, { style: h && Z.flexGrow }, i.createElement(m.ZP, { size: v ? "headline2" : void 0, style: [Z.text, { color: this._getTextColor(k, c, v, h) }, d && Z.compactText, v && t && Z.focusedText, h && Z.pillTextStyle, h && k && Z.pillActiveTextStyle, h && c && Z.pillHoverTextStyle], weight: M }, e && i.createElement(e, { style: Z.icon }), r, v || h ? null : i.createElement(s.Z, { style: k && [Z.border, { backgroundColor: o.default.theme.colors[n] }] })), l ? i.createElement(g.Z, { count: l, standalone: !0, style: [Z.badge, l >= 10 && Z.multiDigitBadge, l >= 20 && Z.truncatedCountBadge], truncatedCountFormatter: w, unreadCountLabel: f, withBorder: !1 }) : a ? i.createElement(g.Z, { pip: !0, standalone: !0, style: Z.badgePip, textColor: "red500", unreadCountLabel: b, withBorder: !1 }) : null));
                 }
             }
             (E.contextType = v.Z), (E.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -527,9 +527,14 @@
                     focusedText: { position: "relative", top: `calc(${e.borderWidths.medium} / 2)`, marginBottom: `-${e.spaces.space16}`, borderStyle: "solid", borderBottomWidth: e.borderWidths.medium, borderColor: e.colors.text, boxSizing: "border-box" },
                     compactText: { paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8 },
                     border: { height: e.borderWidths.large, position: "absolute", bottom: 0, width: "100%", minWidth: "56px", alignSelf: "center", borderRadius: e.borderRadii.infinite },
-                    pill: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
                     compactPill: { height: e.spaces.space36 },
                     active: { backgroundColor: e.colors.gray50 },
+                    pillStyle: { backgroundColor: e.colors.transparent, borderColor: e.colors.gray50, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
+                    pillTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillHoverStyle: { backgroundColor: e.colors.gray100, borderColor: e.colors.gray50 },
+                    pillHoverTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillActiveStyle: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50 },
+                    pillActiveTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
                     flexGrow: { flexGrow: 1 },
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
@@ -1111,4 +1116,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.fc39bcba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.0db3c9ea.js.map

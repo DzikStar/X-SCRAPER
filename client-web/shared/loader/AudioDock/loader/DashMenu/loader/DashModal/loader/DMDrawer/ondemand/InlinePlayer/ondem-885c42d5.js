@@ -3,7 +3,7 @@
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"],
     {
         645708: (e, n, t) => {
-            t.d(n, { GG: () => E, Lv: () => b, _3: () => _, bq: () => D, dB: () => y, vM: () => g, x0: () => x });
+            t.d(n, { GG: () => E, Lv: () => b, _3: () => w, bq: () => T, dB: () => y, vM: () => g, x0: () => x });
             var s = t(202784),
                 i = t(565058),
                 c = t(400752),
@@ -14,18 +14,18 @@
                 u = t(516951),
                 l = t(420182),
                 f = t(333259),
-                p = t(359127),
-                m = t(495707),
+                m = t(359127),
+                p = t(495707),
                 h = t(526250),
                 v = t(251836);
             const g = (0, i.cn)(),
                 b = (0, i.cn)((e) => !!e(g));
-            function _() {
+            function w() {
                 (0, h.N)(I);
-                const e = (0, c.b9)(w);
+                const e = (0, c.b9)(_);
                 s.useEffect(() => () => e(), [e]);
             }
-            const w = (0, i.cn)(null, (e, n) => {
+            const _ = (0, i.cn)(null, (e, n) => {
                     const t = e(g);
                     t && (n(R, void 0), t.close(), n(g, void 0));
                 }),
@@ -44,7 +44,7 @@
                 Z = { label: S },
                 I = (0, h.v)((e, n) => {
                     const { remove: t } = f.aB.addEventListener("change", (e) => {
-                        e === f.$7.active && n(w);
+                        e === f.$7.active && n(_);
                     });
                     return () => t();
                 }),
@@ -53,9 +53,9 @@
                     e(M)?.fn(), n(M, t);
                 }),
                 A = (0, i.cn)(null, async (e, n) => {
-                    if (e(g) || !p.zI) return;
+                    if (e(g) || !m.zI) return;
                     const t = e(l.f0),
-                        { dispose: s, dpip: i } = await (0, p.Q$)({ options: { width: 400, height: 400 }, featureSwitches: t });
+                        { dispose: s, dpip: i } = await (0, m.Q$)({ options: { width: 400, height: 400 }, featureSwitches: t });
                     n(g, i),
                         i.addEventListener("pagehide", () => {
                             n(g, void 0);
@@ -71,15 +71,15 @@
                         t();
                     }, 500);
                 });
-            function D() {
+            function T() {
                 const e = (0, c.b9)(A);
-                (0, m.E)(() => {
+                (0, p.E)(() => {
                     e();
                 });
             }
         },
         4427: (e, n, t) => {
-            t.d(n, { MG: () => g, MM: () => M, Qg: () => b, Uk: () => A, Xk: () => w, bu: () => _, fJ: () => R, oK: () => y, pv: () => k, rK: () => Z, sB: () => S });
+            t.d(n, { MG: () => g, MM: () => M, Qg: () => b, Uk: () => A, Xk: () => _, bu: () => w, fJ: () => R, oK: () => y, pv: () => k, rK: () => Z, sB: () => S });
             var s = t(202784),
                 i = t(565058),
                 c = t(400752),
@@ -90,15 +90,15 @@
                 u = t(614646),
                 l = t(396963),
                 f = t(163889),
-                p = t(536387),
-                m = t(526250),
+                m = t(536387),
+                p = t(526250),
                 h = t(790997),
                 v = t(509599);
             const g = (0, i.cn)(!1);
             function b() {
                 return (0, c.Dv)(g);
             }
-            function _() {
+            function w() {
                 const e = (0, c.b9)(g);
                 e(!0),
                     s.useLayoutEffect(
@@ -111,10 +111,10 @@
                         [e],
                     );
             }
-            const w = (0, o.xu)((e) => (0, p.K9)(() => a.E.joinConference(e).then(({ spaces_id: e }) => e))),
-                y = (0, i.cn)(null, (e, n, t) => n(w(t)));
+            const _ = (0, o.xu)((e) => (0, m.K9)(() => a.E.joinConference(e).then(({ spaces_id: e }) => e))),
+                y = (0, i.cn)(null, (e, n, t) => n(_(t)));
             function k(e) {
-                return (0, c.Dv)(w(e));
+                return (0, c.Dv)(_(e));
             }
             const x = (0, i.cn)(),
                 S = (0, i.cn)((e) => e(x));
@@ -132,7 +132,7 @@
             }
             const I = (0, o.xu)((e) =>
                 (0, i.cn)((n) =>
-                    n(w(e)).then(
+                    n(_(e)).then(
                         () => !0,
                         (e) => {
                             if (e instanceof u.$ && [403, 412].includes(e.status)) return !1;
@@ -147,12 +147,12 @@
             }
             const R = (0, i.cn)(!1);
             function A() {
-                (0, m.N)(E);
+                (0, p.N)(E);
             }
-            const E = (0, m.v)((e, n) => {
+            const E = (0, p.v)((e, n) => {
                 const t = e(S);
                 if (!t) return d.Z;
-                const s = e(w(t).resolved);
+                const s = e(_(t).resolved);
                 if (!s) return d.Z;
                 const i = e((0, v.tq)(s).resolved);
                 return i
@@ -202,7 +202,7 @@
                 o = { app_component: "audio-room", content_type: s.zc.AUDIO, conversation_controls: i.InvitedOnly, description: "", height: 1080, is_360: !1, is_space_available_for_clipping: !1, is_space_available_for_replay: !1, is_webrtc: !0, languages: [], narrow_cast_space_type: c.All, region: "us-west-1", replaykit_app_bundle: "", replaykit_app_name: "", requires_psp_version: [], scheduled_start_time: 0, source: "", ticket_group_id: "", tickets_total: 0, topics: [], width: 1920 };
         },
         790997: (e, n, t) => {
-            t.d(n, { $R: () => ve, B$: () => it, Bz: () => vn, Cr: () => Nn, De: () => gn, Dg: () => Gn, E3: () => En, Eg: () => We, Gz: () => kn, Hs: () => xt, M6: () => Tt, Mh: () => Rt, My: () => Sn, Q6: () => rt, Rz: () => St, Sk: () => ge, UQ: () => yn, Xm: () => ht, YX: () => Ke, Yq: () => Cn, Z8: () => cn, ZD: () => Fe, bq: () => hn, d4: () => Ye, ee: () => Ln, f: () => _n, gu: () => be, jo: () => It, kD: () => xn, kw: () => sn, l5: () => Ze, n0: () => He, nX: () => fn, pI: () => Mt, qx: () => Se, r1: () => xe, tB: () => Me, u1: () => Vn, uV: () => lt, xQ: () => qn, xZ: () => Ie, yA: () => Wn });
+            t.d(n, { $R: () => ve, B$: () => it, Bz: () => vn, Cr: () => Nn, De: () => gn, Dg: () => Gn, E3: () => En, Eg: () => We, Gz: () => kn, Hs: () => xt, M6: () => Dt, Mh: () => Rt, My: () => Sn, Q6: () => rt, Rz: () => St, Sk: () => ge, UQ: () => yn, Xm: () => ht, YX: () => Ke, Yq: () => Cn, Z8: () => cn, ZD: () => Fe, bq: () => hn, d4: () => Ye, ee: () => Ln, f: () => wn, gu: () => be, jo: () => It, kD: () => xn, kw: () => sn, l5: () => Ze, n0: () => He, nX: () => fn, pI: () => Mt, qx: () => Se, r1: () => xe, tB: () => Me, u1: () => Vn, uV: () => lt, xQ: () => qn, xZ: () => Ie, yA: () => Wn });
             t(136728);
             var s = t(565058),
                 i = t(400752),
@@ -214,14 +214,14 @@
                 u = t(730086),
                 l = t(662678),
                 f = t(358809),
-                p = t(456766),
-                m = t(759013),
+                m = t(456766),
+                p = t(759013),
                 h = t(400915),
                 v = t(219442),
                 g = t(420182),
                 b = t(42134),
-                _ = t(484633),
-                w = t(610214),
+                w = t(484633),
+                _ = t(610214),
                 y = t(25252),
                 k = t(253547),
                 x = t(445250),
@@ -233,8 +233,8 @@
                 A = t(908599),
                 E = t(608925),
                 P = t(358572),
-                D = t(24466),
-                T = t(108922),
+                T = t(24466),
+                D = t(108922),
                 j = t(613533),
                 L = t(802222),
                 C = t(159573),
@@ -268,8 +268,8 @@
                 ue = t(611702),
                 le = t(825177),
                 fe = t(509599),
-                pe = t(622388),
-                me = t(520197);
+                me = t(622388),
+                pe = t(520197);
             const he = (0, s.cn)(null, (e, n) => {
                     const t = e(G.F6),
                         s = e(G.yj),
@@ -292,45 +292,45 @@
                     }
                     (!e(F.MG) || e(fe.RS).length > 6) && n(ie.Dy, !0),
                         await d,
-                        n(wt.add, () => {
+                        n(_t.add, () => {
                             (e(G.yj).initialized = !1), n((0, fe.Go)(c));
                         }),
                         n(Ct),
-                        n(wt.add, n(Q._$)),
-                        n(wt.add, () => n(V.S, !1)),
-                        n(wt.add, () => n(U.lV, 1)),
-                        await n(_e, s);
+                        n(_t.add, n(Q._$)),
+                        n(_t.add, () => n(V.S, !1)),
+                        n(_t.add, () => n(U.lV, 1)),
+                        await n(we, s);
                 }),
                 ge = (0, s.cn)(null, async (e, n, t) => {
                     const { role: s } = t,
                         i = e(be),
                         c = e(b.lR);
-                    (i && c) || (n(h.ri, !1), await n(oe.gP), n(we), n(b.cI, s));
+                    (i && c) || (n(h.ri, !1), await n(oe.gP), n(_e), n(b.cI, s));
                 }),
                 be = (0, s.cn)(!1),
-                _e = (0, s.cn)(null, async (e, n, t) => {
+                we = (0, s.cn)(null, async (e, n, t) => {
                     await n(Xe), n(he);
                     const s = e(ae.lY);
                     s ? (n(yt.add, () => n(en)), await n(tn).then((e) => n(We, e))) : await n(nn), n(on), s || n(Lt), n(jt), n(Re), s || n(un);
                     const i = e(We);
                     if (!s && t) {
-                        const n = e(w._Z);
+                        const n = e(_._Z);
                         await i.createRoom({ withDummyPublisher: n });
                     }
                     await e(We).joinRoomAsPublisher(), n(yt.add, n(Xn)), n(yt.add, n(Fn)), n(yt.add, n(re.Y5)), n(be, !0), n(yt.add, () => n(be, !1)), n(ye);
                 }),
-                we = (0, s.cn)(null, async (e, n) => {
-                    n(yt.add, () => n(en)), await n(tn).then((e) => n(He, e)), n(on), n(Dt), n(Lt), n(un), n(be, !0), n(yt.add, () => n(be, !1));
+                _e = (0, s.cn)(null, async (e, n) => {
+                    n(yt.add, () => n(en)), await n(tn).then((e) => n(He, e)), n(on), n(Tt), n(Lt), n(un), n(be, !0), n(yt.add, () => n(be, !1));
                 }),
                 ye = (0, s.cn)(null, (e, n) => {
                     const t = e(g.f0),
-                        s = e(w.gc),
+                        s = e(_.gc),
                         i = !t.isTrue("rweb_conf_multi_video_enabled");
                     if (!s || i) n(Be);
                     else {
-                        const e = n(Te, { trackAtom: N.nq, transceiverAtom: je, isSimulcast: !0 }),
-                            t = n(Te, { trackAtom: z.mb, transceiverAtom: Le, isPresentation: !0, isSimulcast: !0 });
-                        n(wt.add, () => {
+                        const e = n(De, { trackAtom: N.nq, transceiverAtom: je, isSimulcast: !0 }),
+                            t = n(De, { trackAtom: z.mb, transceiverAtom: Le, isPresentation: !0, isSimulcast: !0 });
+                        n(_t.add, () => {
                             e(), t();
                         });
                     }
@@ -339,7 +339,7 @@
             function ke(e) {
                 return "disconnected" === e || "failed" === e;
             }
-            const xe = (0, s.cn)((e) => e(Se).filter((n) => !e(_n(n)))),
+            const xe = (0, s.cn)((e) => e(Se).filter((n) => !e(wn(n)))),
                 Se = (0, s.cn)([]),
                 Ze = (0, c.xu)((e) =>
                     (0, s.cn)((n) => {
@@ -370,17 +370,17 @@
                     })(() => {
                         s();
                     })),
-                        n(pt, !1),
+                        n(mt, !1),
                         n(yt.add, n(ne.g)),
                         n(yt.add, n($.V)),
-                        e(F.MG) && n(wt.add, n(X.GG)),
+                        e(F.MG) && n(_t.add, n(X.GG)),
                         t.addEventListener("iceconnectionstatechange", function (i) {
                             const c = t.iceConnectionState;
-                            ke(c) ? ("stable" === t.signalingState ? (e(dn).handleFlakyNetwork(), s({ iceRestart: !0 }), n(pt, !1)) : n(pt, !0)) : "connected" === c && n(pt, !1);
+                            ke(c) ? ("stable" === t.signalingState ? (e(dn).handleFlakyNetwork(), s({ iceRestart: !0 }), n(mt, !1)) : n(mt, !0)) : "connected" === c && n(mt, !1);
                         }),
                         t.addEventListener("signalingstatechange", function (i) {
                             const c = t.iceConnectionState;
-                            "stable" === t.signalingState && ke(c) && e(pt) && (s({ iceRestart: !0 }), n(pt, !1));
+                            "stable" === t.signalingState && ke(c) && e(mt) && (s({ iceRestart: !0 }), n(mt, !1));
                         });
                 });
             const Ae = (0, s.cn)(() => new C.z()),
@@ -389,10 +389,10 @@
                     const t = e(B.Ny);
                     if (!t) return;
                     const s = n($e, { track: t });
-                    n(Pe, s), n(wt.add, n(De));
+                    n(Pe, s), n(_t.add, n(Te));
                 }),
                 Pe = (0, s.cn)(),
-                De =
+                Te =
                     ((0, M.X)((e) => (0, s.cn)()),
                     (0, I.v)((e, n) => {
                         const t = e(B.Ny);
@@ -402,13 +402,13 @@
                         }
                         return r.Z;
                     })),
-                Te = (0, I.v)((e, n, t) => {
+                De = (0, I.v)((e, n, t) => {
                     const { isPresentation: s, isSimulcast: i, trackAtom: c, transceiverAtom: o } = t,
                         d = e(c),
                         a = e(g.zE).get(o);
                     if (!a && d) {
                         const e = n($e, { track: d, isSimulcast: i, isPresentation: s });
-                        n(o, e), n(wt.add, () => n(o, void 0));
+                        n(o, e), n(_t.add, () => n(o, void 0));
                     } else if (a && (d ? (a.sender.replaceTrack(d), "inactive" === a.direction && (a.direction = "sendonly")) : (a.direction = "inactive"), s && a.mid)) {
                         const n = a.mid,
                             t = e(We),
@@ -419,8 +419,8 @@
                 }),
                 je = (0, s.cn)(),
                 Le = (0, s.cn)(),
-                Ce = (0, D.L)((e) => e(je)?.mid, 1e3),
-                Ne = (0, D.L)((e) => e(Le)?.mid, 1e3),
+                Ce = (0, T.L)((e) => e(je)?.mid, 1e3),
+                Ne = (0, T.L)((e) => e(Le)?.mid, 1e3),
                 qe = (0, M.X)((e) => (0, s.cn)((n) => (n(N.nq) === e ? Ce : Ne))),
                 ze = (0, M.X)((e) =>
                     (0, s.cn)((n) => {
@@ -445,7 +445,7 @@
                             if (!o && i) {
                                 const t = n($e, { track: i, isSimulcast: e(fe.C), isPresentation: c });
                                 n(Ge, t),
-                                    n(wt.add, () => {
+                                    n(_t.add, () => {
                                         n(Ge, void 0);
                                     });
                             } else if (o && (i ? (o.sender.replaceTrack(i), "inactive" === o.direction && (o.direction = "sendonly")) : (o.direction = "inactive"), o.mid)) {
@@ -460,7 +460,7 @@
                     );
                     t();
                     const s = e(g.zE).sub(Ue, t);
-                    n(wt.add, s);
+                    n(_t.add, s);
                 }),
                 Ue = (0, s.cn)((e) => e(H.eN)?.[0]?.track ?? e(O.U)),
                 Oe = (0, s.cn)(() => new C.z()),
@@ -520,13 +520,13 @@
                     return t.attachVideoRoom(i).then((n) => {
                         if ("success" !== n.janus) throw n;
                         const t = n.data.id;
-                        return new m.x({ janusSessionId: i, handlerId: t, periscopeUserId: e(G.t9), vidManToken: s.vidManToken, roomId: s.roomID, streamName: s.streamName, janusURL: s.janusURL, guestServicesSessionUuid: s.guestServicesSessionUuid }, e(g.zE), e(ae.p_) ? void 0 : e(v.r));
+                        return new p.x({ janusSessionId: i, handlerId: t, periscopeUserId: e(G.t9), vidManToken: s.vidManToken, roomId: s.roomID, streamName: s.streamName, janusURL: s.janusURL, guestServicesSessionUuid: s.guestServicesSessionUuid }, e(g.zE), e(ae.p_) ? void 0 : e(v.r));
                     });
                 }),
                 sn = (0, s.cn)(),
                 cn = (0, c.xu)((e) => (0, s.cn)((n) => !e || n(sn) === e)),
                 on = (0, s.cn)(null, (e, n) => {
-                    const t = new p.h({
+                    const t = new m.h({
                         handlers: {
                             onJsep: (e, t) => {
                                 n(et, e);
@@ -578,30 +578,38 @@
                     const t = e(ut);
                     n(yt.add, () => t.clear()), n(yt.add, () => n(Pn.reset)), n(yt.add, n(ct));
                     const s = e(oe.V3);
+                    function i() {
+                        const t = s.iceConnectionState;
+                        if (ke(t))
+                            if ("stable" === s.signalingState) {
+                                const t = e(He);
+                                e(dn).handleFlakyNetwork(), t.restartIce(), n(pt, !1);
+                            } else n(pt, !0);
+                        else "connected" === t && n(pt, !1);
+                    }
+                    function c() {
+                        const t = s.iceConnectionState;
+                        if ("stable" === s.signalingState && ke(t) && e(pt)) {
+                            const t = e(He);
+                            e(dn).handleFlakyNetwork(), t.restartIce(), n(pt, !1);
+                        }
+                    }
                     (s.ontrack = (t) => {
                         const s = t.transceiver.mid;
                         if (!s) return;
                         const i = t.track;
-                        n(Pn(s), i), "audio" !== i.kind || e(V.v) || n(U.sq, { track: i, mid: s });
+                        if ((n(Pn(s), i), "audio" === i.kind))
+                            if (e(V.v)) {
+                                const e = new MediaStream();
+                                e.addTrack(i), (new Audio().srcObject = e);
+                            } else n(U.sq, { track: i, mid: s });
                         const c = e(b.rm);
                         c && n((0, ee.A5)((0, W.Rq)(c)).finish);
                     }),
-                        s.addEventListener("iceconnectionstatechange", function (t) {
-                            const i = s.iceConnectionState;
-                            if (ke(i))
-                                if ("stable" === s.signalingState) {
-                                    const t = e(He);
-                                    e(dn).handleFlakyNetwork(), t.restartIce(), n(mt, !1);
-                                } else n(mt, !0);
-                            else "connected" === i && n(mt, !1);
-                        }),
-                        s.addEventListener("signalingstatechange", function (t) {
-                            const i = s.iceConnectionState;
-                            if ("stable" === s.signalingState && ke(i) && e(mt)) {
-                                const t = e(He);
-                                e(dn).handleFlakyNetwork(), t.restartIce(), n(mt, !1);
-                            }
-                        });
+                        s.addEventListener("iceconnectionstatechange", i),
+                        n(yt.add, () => s.removeEventListener("iceconnectionstatechange", i)),
+                        s.addEventListener("signalingstatechange", c),
+                        n(yt.add, () => s.removeEventListener("signalingstatechange", c));
                 }),
                 ln = (0, Z.dX)((e) => (0, s.cn)()),
                 fn = (0, c.xu)((e) =>
@@ -610,7 +618,7 @@
                         if (t) return (0, a.Z)(t.streams, ({ disabled: e, mid: n, type: t }) => ("video" !== t || e ? void 0 : n));
                     }),
                 ),
-                pn = (0, c.xu)((e) =>
+                mn = (0, c.xu)((e) =>
                     (0, P.u)((n) => {
                         const t = n(ln(e));
                         if (!t) return;
@@ -620,7 +628,7 @@
                         return i ? s.filter((e) => e !== i) : s;
                     }),
                 ),
-                mn = (0, c.xu)((e) =>
+                pn = (0, c.xu)((e) =>
                     (0, P.u)((n) => {
                         const t = n(ln(e));
                         if (!t) return;
@@ -642,8 +650,8 @@
                     }),
                 );
             let bn = 100;
-            const _n = (0, c.xu)((e) => (0, s.cn)((n) => n(ln(e))?.dummy)),
-                wn = (0, s.cn)(null, (e, n, { feed: t, mid: s }) => e(Zn).find(({ feed_id: e, feed_mid: n }) => e === t && n === s)),
+            const wn = (0, c.xu)((e) => (0, s.cn)((n) => n(ln(e))?.dummy)),
+                _n = (0, s.cn)(null, (e, n, { feed: t, mid: s }) => e(Zn).find(({ feed_id: e, feed_mid: n }) => e === t && n === s)),
                 yn = (0, c.xu)((e) =>
                     (0, c.xu)((n) =>
                         (0, s.cn)((t) => {
@@ -660,7 +668,7 @@
                 ),
                 kn = (0, c.xu)((e) =>
                     (0, s.cn)((n) => {
-                        const t = e && n(_n(e)) ? n(Gn) : e;
+                        const t = e && n(wn(e)) ? n(Gn) : e;
                         if (!t || n(cn(e))) return !!n(H.eN)?.length;
                         const s = n(ln(t));
                         return s?.streams.some(({ disabled: e, type: n }) => "video" === n && !e) ?? !1;
@@ -675,10 +683,10 @@
                 Sn = (0, c.xu)((e) =>
                     (0, c.xu)((n) =>
                         (0, s.cn)((t) => {
-                            if (_n(e)) {
+                            if (wn(e)) {
                                 const n = t(Gn),
                                     s = t(Bn);
-                                if (n && s && !t(_n(n)) && n !== e) return t(Sn(n)(s));
+                                if (n && s && !t(wn(n)) && n !== e) return t(Sn(n)(s));
                             }
                             return !!t(ln(e))?.streams.find(({ description: e, disabled: t, mid: s, type: i }) => !t && s === n && "presentation" === e && "video" === i);
                         }),
@@ -723,14 +731,14 @@
                     return (0, a.Z)(t.streams, ({ disabled: e, mid: n, type: t }) => ("audio" !== t || e ? void 0 : n)).map((t) => e(Mn(n)(t)));
                 }),
                 Pn = (0, Z.dX)((e) => (0, s.cn)()),
-                Dn = (0, c.xu)((e) =>
+                Tn = (0, c.xu)((e) =>
                     (0, P.u)((n) => {
                         const t = n(An(e));
                         return t ? (t.sort(), t.map((e) => n(Pn(e))).filter(Boolean)) : [];
                     }),
                 ),
-                Tn = (0, c.xu)((e) => (0, P.u)((n) => n(Dn(e)).filter(({ kind: e }) => "audio" === e))),
-                jn = (0, c.xu)((e) => (0, P.u)((n) => n(Dn(e)).filter(({ kind: e }) => "video" === e))),
+                Dn = (0, c.xu)((e) => (0, P.u)((n) => n(Tn(e)).filter(({ kind: e }) => "audio" === e))),
+                jn = (0, c.xu)((e) => (0, P.u)((n) => n(Tn(e)).filter(({ kind: e }) => "video" === e))),
                 Ln = (0, c.xu)((e) =>
                     (0, c.xu)((n) =>
                         (0, s.cn)((t) => {
@@ -743,18 +751,18 @@
                 ),
                 Cn = (0, c.xu)((e) =>
                     (0, P.u)((n) => {
-                        const t = n(pn(e));
+                        const t = n(mn(e));
                         return t ? (0, a.Z)(t, (t) => ({ feedMid: t, track: n(Mn(e)(t)) })) : [];
                     }),
                 ),
                 Nn = (0, c.xu)((e) =>
                     (0, P.u)((n) => {
-                        const t = n(mn(e));
+                        const t = n(pn(e));
                         return t ? (0, a.Z)(t, (t) => ({ feedMid: t, track: n(Mn(e)(t)) })) : [];
                     }),
                 ),
-                qn = (0, c.xu)((e) => (0, s.cn)((n) => n(Tn(e))[0] ?? n(Qn(e)))),
-                zn = (0, c.xu)((e) => (0, T.J)(3e3)),
+                qn = (0, c.xu)((e) => (0, s.cn)((n) => n(Dn(e))[0] ?? n(Qn(e)))),
+                zn = (0, c.xu)((e) => (0, D.J)(3e3)),
                 Yn = (0, s.cn)(null, (e, n, t) => {
                     const s = e(Se).indexOf(t);
                     if (-1 === s) return;
@@ -778,12 +786,12 @@
                     for (const r of t)
                         if ("video" === r.t) {
                             const t = r.feed ?? e(vn(r.uid));
-                            t && !e(_n(t)) ? (n(Gn, t), n(Bn, r.mid)) : (n(Gn, void 0), n(Bn, void 0));
+                            t && !e(wn(t)) ? (n(Gn, t), n(Bn, r.mid)) : (n(Gn, void 0), n(Bn, void 0));
                         } else if ("audio" === r.t) {
                             const n = r.feed ?? e(vn(r.uid));
                             if ((o.push(n), n)) {
                                 if (c && r.uid !== e(G.t9)) {
-                                    const t = e(Dn(c))[r.tr];
+                                    const t = e(Tn(c))[r.tr];
                                     t && i.set(n, t);
                                 }
                                 s[n] = 1 - r.lvl / 255;
@@ -831,7 +839,7 @@
                         n(ce.t8, t);
                         const s = e(oe.V3);
                         await s.setRemoteDescription(t);
-                        const i = await s.createAnswer(_t);
+                        const i = await s.createAnswer(wt);
                         n(ce.Qr, i), await s.setLocalDescription(i);
                         return e(He).sendSdpAnswer(i);
                     }
@@ -843,7 +851,7 @@
                             return void (e(F.MG)
                                 ? n(J.R, t)
                                 : n(xt, { spaceId: t, wasKicked: !0 }).finally(() => {
-                                      n(b.cI, _.Q.listener);
+                                      n(b.cI, w.Q.listener);
                                   }));
                     }
                     n(ln(t), void 0), n(Se, (e) => e.filter((e) => e !== t));
@@ -853,9 +861,9 @@
                     (0, c.xu)((n) =>
                         (0, s.cn)((t) => {
                             if (t(F.MG)) {
-                                return !t(_n(n)) || "video" === e;
+                                return !t(wn(n)) || "video" === e;
                             }
-                            const s = t(_n(n));
+                            const s = t(wn(n));
                             return "video" === e ? !s : s;
                         }),
                     ),
@@ -872,7 +880,7 @@
                 at = (0, s.cn)(null, (e, n, t) => {
                     const s = e(F.MG);
                     t.forEach((e) => {
-                        n(ln(e.id), e), n(vn(e.periscope_user_id), e.id), e.dummy && (n(st, e.id), n(wt.add, () => n(st, void 0)));
+                        n(ln(e.id), e), n(vn(e.periscope_user_id), e.id), e.dummy && (n(st, e.id), n(_t.add, () => n(st, void 0)));
                     });
                     const i = t.map((e) => e.id);
                     n(Se, (e) => {
@@ -903,7 +911,7 @@
                     }
                 }),
                 ut = (0, s.cn)(() => new Map()),
-                lt = (0, me.m1)(
+                lt = (0, pe.m1)(
                     (e, n, t) => {
                         const s = e(ut),
                             [i, c] = (0, l.G)(t, (e) => !!e.unsub),
@@ -915,7 +923,7 @@
                                 const e = t.subscribeNewStreams(r);
                                 d.push(e);
                             } else {
-                                n(dt, !0), n(wt.add, () => n(dt, !1)), n(ft);
+                                n(dt, !0), n(_t.add, () => n(dt, !1)), n(ft);
                                 const e = t.joinRoomAsSubscriber(r);
                                 d.push(e);
                             }
@@ -926,7 +934,7 @@
                         }
                         if (o.length) {
                             const t = (0, a.Z)(o, ({ feed: e, mid: t, send: s, substream: i }) => {
-                                const c = n(wn, { feed: e, mid: t });
+                                const c = n(_n, { feed: e, mid: t });
                                 return c ? { mid: c.mid, send: s, substream: i } : void 0;
                             });
                             if (t.length) {
@@ -953,10 +961,10 @@
                     const t = e(b.rm);
                     t && (n((0, ee.A5)((0, W.Rq)(t)).init), n((0, ee.xi)((0, W.Rq)(t)).init));
                     const s = n(te.Z);
-                    n(wt.add, s);
+                    n(_t.add, s);
                 });
-            const pt = (0, s.cn)(!1),
-                mt = (0, s.cn)(!1),
+            const mt = (0, s.cn)(!1),
+                pt = (0, s.cn)(!1),
                 ht = (0, s.cn)(null, (e, n) => {
                     const t = e(Se),
                         s = e(sn);
@@ -969,12 +977,12 @@
                 ),
                 gt = (0, s.cn)(null, (e, n, t) => {
                     const s = e(oe.V3),
-                        i = [...e(jn(t)), ...e(Tn(t))].filter(Boolean);
+                        i = [...e(jn(t)), ...e(Dn(t))].filter(Boolean);
                     return Promise.all(i.map((e) => s.getStats(e).then((e) => [...e.values()]))).then((e) => e.flat());
                 }),
                 bt = { offerToReceiveAudio: !1, offerToReceiveVideo: !1 },
-                _t = { offerToReceiveAudio: !0, offerToReceiveVideo: !0 },
-                wt = (0, L.h)(),
+                wt = { offerToReceiveAudio: !0, offerToReceiveVideo: !0 },
+                _t = (0, L.h)(),
                 yt = (0, L.h)(),
                 kt = (0, s.cn)(null, (e, n) => {
                     n(G.re.reset), n(oe.Og), n(Fe.reset), n(Ke.reset), n(He.reset), n(We.reset), n(dn.reset);
@@ -984,16 +992,16 @@
                     const c = e(b.cI) ?? s,
                         o = [],
                         r = [];
-                    e(h.ri) && o.push(n(G.Vp)), c === _.Q.cohost && o.push(n(G.iq)), c === _.Q.host || i ? r.push(Promise.all(o).then(() => {})) : r.push(Promise.all(o).then(() => n(G.NG, t)));
+                    e(h.ri) && o.push(n(G.Vp)), c === w.Q.cohost && o.push(n(G.iq)), c === w.Q.host || i ? r.push(Promise.all(o).then(() => {})) : r.push(Promise.all(o).then(() => n(G.NG, t)));
                     return (
                         e(be) && r.push(n(Zt)),
                         e(ae.lY) && n(de.c),
                         Promise.allSettled(r).then(() => {
-                            n(wt.disposeAll), n(kt);
+                            n(_t.disposeAll), n(kt);
                         })
                     );
                 }),
-                St = (0, s.cn)(null, (e, n, t) => (n(se.oN), e(ae.lY) && n(de.c), n(wt.disposeAll), n(kt), n(Y.HQ, t))),
+                St = (0, s.cn)(null, (e, n, t) => (n(se.oN), e(ae.lY) && n(de.c), n(_t.disposeAll), n(kt), n(Y.HQ, t))),
                 Zt = (0, s.cn)(null, (e, n) => {
                     if (e(ae.p_))
                         return Promise.all([e(He).leave(), n(ee.CA)])
@@ -1047,13 +1055,13 @@
                         for (const e of i) n(U.zb, e);
                         t = s;
                     });
-                    n(wt.add, s);
+                    n(_t.add, s);
                 });
             const Pt = (0, s.cn)([]),
-                Dt = (0, s.cn)(null, (e, n) => {
+                Tt = (0, s.cn)(null, (e, n) => {
                     e(Pt).forEach((n) => e(dn).handleResponse(n)), n(Pt, []);
                 }),
-                Tt = (0, s.cn)(null, (e, n, t) => {
+                Dt = (0, s.cn)(null, (e, n, t) => {
                     if (!e(dn.isInit)) return void n(Pt, (e) => e.concat(t));
                     e(dn).handleResponse(t);
                 }),
@@ -1078,9 +1086,9 @@
                     };
                 }),
                 Ct = (0, s.cn)(null, (e, n) => {
-                    e(ae.Fn) || n(wt.add, n(pe.C));
+                    e(ae.Fn) || n(_t.add, n(me.C));
                 });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5.02e5978a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5.ecef0bfa.js.map

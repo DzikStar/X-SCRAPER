@@ -152,13 +152,13 @@
                             },
                         ],
                     },
-                    params: { id: "IbbH1V7NoUYOQ-NW_b0SXg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "o70ZhWcB94MDvNwAySL8aA", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
                 };
             h.hash = "5b66468936446aae49ccfb5965fb93f4";
             const L = h;
         },
         483557: (e, t, n) => {
-            n.d(t, { ZP: () => fe });
+            n.d(t, { ZP: () => we });
             n(571372);
             var i = n(506899),
                 r = n(538327),
@@ -176,11 +176,11 @@
                 b = n(226994),
                 h = n.n(b),
                 L = n(470888),
-                k = n.n(L),
-                v = n(381452),
-                f = n.n(v),
-                w = n(782416),
-                y = n.n(w),
+                v = n.n(L),
+                k = n(381452),
+                w = n.n(k),
+                y = n(782416),
+                f = n.n(y),
                 F = n(921936),
                 I = n.n(F),
                 T = n(80131),
@@ -188,13 +188,13 @@
                 S = n(942792),
                 Z = n.n(S),
                 K = n(124314),
-                V = n.n(K),
-                C = n(354847),
-                G = n.n(C),
-                A = n(590426),
-                j = n.n(A),
-                E = n(463817),
-                M = n.n(E),
+                C = n.n(K),
+                V = n(354847),
+                A = n.n(V),
+                G = n(590426),
+                M = n.n(G),
+                j = n(463817),
+                E = n.n(j),
                 z = n(626619),
                 D = n.n(z),
                 P = n(946256),
@@ -203,14 +203,14 @@
                 U = n.n(N),
                 q = n(174607),
                 x = n.n(q),
-                Y = n(241622),
-                B = n.n(Y),
+                B = n(241622),
+                Y = n.n(B),
                 O = n(348562),
                 H = n.n(O),
                 W = n(499414),
-                X = n.n(W),
-                J = n(181490),
-                $ = n.n(J),
+                J = n.n(W),
+                X = n(181490),
+                $ = n.n(X),
                 ee = n(96734),
                 te = n.n(ee),
                 ne = n(153791),
@@ -260,22 +260,22 @@
                     const t = e?.list?.subscribers_timeline?.timeline;
                     return !t;
                 }, "GQL List: Failed to fetch Subscribers timeline"),
-                ke = (0, l.kj)((e) => {
+                ve = (0, l.kj)((e) => {
                     const t = e?.list?.members_timeline?.timeline;
                     return !t;
                 }, "GQL List: Failed to fetch Members timeline"),
-                ve = (0, l.kj)((e) => {
+                ke = (0, l.kj)((e) => {
                     const t = e?.list?.recommended_users?.timeline;
                     return !t;
                 }, "GQL List: Failed to fetch Recommended Users timeline"),
-                fe = ({ apiClient: e, featureSwitches: t }) => ({
+                we = ({ apiClient: e, featureSwitches: t }) => ({
                     addToList(n, r) {
                         const { list_id: l, user_id: o } = n;
                         return e.graphQL(u(), { listId: l, userId: o, ...(0, a.S)(t) }, _e).then((e) => (0, i.Fv)(e.list, s.Z));
                     },
                     createList(n, r) {
                         const { description: l, mode: o, name: d } = n;
-                        return e.graphQL(k(), { isPrivate: "private" === o.toLowerCase(), name: d, description: l, ...(0, a.S)(t) }).then((e) => (0, i.Fv)(e.list, s.Z));
+                        return e.graphQL(v(), { isPrivate: "private" === o.toLowerCase(), name: d, description: l, ...(0, a.S)(t) }).then((e) => (0, i.Fv)(e.list, s.Z));
                     },
                     editBannerImage(n, r) {
                         const { listId: l, mediaId: o } = n;
@@ -283,14 +283,14 @@
                     },
                     deleteList(t, n) {
                         const { list_id: i } = t;
-                        return e.graphQL(y(), { listId: i });
+                        return e.graphQL(f(), { listId: i });
                     },
                     deleteBannerImage(n, r) {
                         const { listId: l } = n;
                         return e.graphQL(_(), { listId: l, ...(0, a.S)(t) }).then((e) => (0, i.Fv)(e.list, s.Z));
                     },
                     fetchList(n, r) {
-                        if (n.list_id) return e.graphQL(M(), { listId: n.list_id, ...(0, a.S)(t) }, pe).then((e) => (0, i.Fv)(e.list, s.Z));
+                        if (n.list_id) return e.graphQL(E(), { listId: n.list_id, ...(0, a.S)(t) }, pe).then((e) => (0, i.Fv)(e.list, s.Z));
                         if (n.slug) {
                             const { owner_screen_name: r, slug: l } = n;
                             return e.graphQL(h(), { screenName: r, listSlug: l, ...(0, a.S)(t) }, be).then((e) => (0, i.Fv)({ ...e.user_by_screen_name?.list, slug: l }, s.Z));
@@ -314,16 +314,16 @@
                     },
                     fetchMembersGraphQL(n, i) {
                         const { count: r, cursor: l, listId: s } = n;
-                        return e.graphQL(Z(), { listId: s, count: r, cursor: l, ...(0, a.d)(t) }, ke).then((e) => {
+                        return e.graphQL(Z(), { listId: s, count: r, cursor: l, ...(0, a.d)(t) }, ve).then((e) => {
                             const t = e.list.members_timeline?.timeline;
                             return t || ie.cY;
                         });
                     },
                     fetchRecommendedUsersGraphQL(n, i) {
                         const { count: l, cursor: s, displayLocation: o, listId: d } = n,
-                            c = o === r.O.Creation ? f() : I(),
+                            c = o === r.O.Creation ? w() : I(),
                             u = { listId: d, count: l, cursor: s, ...(0, a.d)(t) };
-                        return e.graphQL(c, u, ve).then((e) => {
+                        return e.graphQL(c, u, ke).then((e) => {
                             const t = e.list.recommended_users?.timeline;
                             return t || ie.cY;
                         });
@@ -338,12 +338,12 @@
                     fetchSuggestedLists: ({ count: n, cursor: i }) => e.graphQL(U(), { count: n, cursor: i, ...(0, a.d)(t) }, de).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ie.cY),
                     fetchOwnershipsGraphQL(n, i) {
                         const { count: r, cursor: l, targetUserId: s, userId: o } = n;
-                        return e.graphQL(j(), { userId: o, isListMemberTargetUserId: s, count: r, cursor: l, ...(0, a.d)(t) }, oe).then(re.k7);
+                        return e.graphQL(M(), { userId: o, isListMemberTargetUserId: s, count: r, cursor: l, ...(0, a.d)(t) }, oe).then(re.k7);
                     },
                     fetchMemberships: (n, r) => e.get("lists/memberships", { ...se(t), ...n }, r || {}).then((e) => (0, i.Fv)(e, ne.kD)),
                     fetchMembershipsGraphQL(n, i) {
                         const { count: r, cursor: l, userId: s } = n;
-                        return e.graphQL(V(), { userId: s, count: r, cursor: l, ...(0, a.d)(t) }, oe).then(re.k7);
+                        return e.graphQL(C(), { userId: s, count: r, cursor: l, ...(0, a.d)(t) }, oe).then(re.k7);
                     },
                     removeFromList(n, r) {
                         const { list_id: l, user_id: o } = n;
@@ -351,7 +351,7 @@
                     },
                     createSubscribers(n, r) {
                         const { list_id: l } = n;
-                        return e.graphQL(B(), { listId: l, ...(0, a.S)(t) }, ue).then((e) => (0, i.Fv)(e.list_subscribe_v3, s.Z));
+                        return e.graphQL(Y(), { listId: l, ...(0, a.S)(t) }, ue).then((e) => (0, i.Fv)(e.list_subscribe_v3, s.Z));
                     },
                     destroySubscribers(n, r) {
                         const { list_id: l } = n;
@@ -359,7 +359,7 @@
                     },
                     toggleMute(t, n) {
                         const { listId: i, mute: r } = t;
-                        return r ? e.graphQL(G(), { listId: i }) : e.graphQL(X(), { listId: i });
+                        return r ? e.graphQL(A(), { listId: i }) : e.graphQL(J(), { listId: i });
                     },
                     editList(n, r) {
                         const { description: l, list_id: o, mode: d, name: c } = n;
@@ -437,4 +437,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-c6537f3f.6dd20d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-c6537f3f.028dbd6a.js.map

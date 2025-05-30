@@ -1272,8 +1272,6 @@
                     return "Llegeix " + e.replyCount + " respostes";
                 }),
                 t("dc0c8266", "Pregunta-ho a Grok"),
-                t("i7ac410e", "Mostra l'original"),
-                t("c67f09e8", "Mostra la traducció"),
                 t("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 t("j77292b7", function (e) {
                     return "Selecciona fins a " + e.count + " fitxer" + r(e.count, "", "s");
                 }),
-                t("d4d35bea", "S'està traduint…"),
-                t("he9c9634", "No es pot obtenir la traducció"),
-                t("deaf5b16", "Torna-ho a provar"),
-                t("j2198c98", "Amaga la publicació traduïda"),
+                t("cbc8fed4", "És correcta la traducció? Envia'ns comentaris perquè puguem millorar."),
+                t("d56779a2", "és fàcil d'entendre"),
+                t("b6fe8a56", "és confusa o poc clara"),
                 t("i73a7d48", "Traduït per Google"),
                 t("eeadb767", function (e) {
                     return "Traduït per Google del: " + e.originLanguage;
                 }),
-                t("be9b9fb8", "Traduït per Grok"),
                 t("d9c6f69d", function (e) {
                     return "Traduït per Grok des del: " + e.originLanguage;
                 }),
@@ -1335,15 +1331,19 @@
                 t("caa5ba3d", function (e) {
                     return "Traduït per X des del: " + e.originLanguage;
                 }),
+                t("deaf5b16", "Torna-ho a provar"),
+                t("a66d80d0", "Tradueix la publicació"),
+                t("be9b9fb8", "Traduït per Grok"),
+                t("he9c9634", "No es pot obtenir la traducció"),
+                t("j2198c98", "Amaga la publicació traduïda"),
+                t("d4d35bea", "S'està traduint…"),
+                t("i7ac410e", "Mostra l'original"),
+                t("c67f09e8", "Mostra la traducció"),
                 t("e0f81ff3", "Traducció:"),
                 t("j2862695", function (e) {
                     return "Traduït del: " + e.originLanguage + " per";
                 }),
                 t("b7cb4fab", "Traduït per:"),
-                t("cbc8fed4", "És correcta la traducció? Envia'ns comentaris perquè puguem millorar."),
-                t("d56779a2", "és fàcil d'entendre"),
-                t("b6fe8a56", "és confusa o poc clara"),
-                t("a66d80d0", "Tradueix la publicació"),
                 t("d4c339b9", function (e) {
                     return "Publicació de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12066,6 +12066,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["En fer la compra, acceptes les nostres ", " i ", ". Les subscripcions es renovaran automàticament fins que les cancel·lis, tal com es descriu a les condicions. Pots cancel·lar-les en qualsevol moment."];
@@ -13289,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.b62bd71a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.27261fca.js.map

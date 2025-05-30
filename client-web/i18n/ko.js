@@ -1275,8 +1275,6 @@
                     return "답글 " + e.replyCount + "개 읽기";
                 }),
                 n("dc0c8266", "그록에게 물어보세요"),
-                n("i7ac410e", "원본 보기"),
-                n("c67f09e8", "번역 보기"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1318,15 +1316,13 @@
                 n("j77292b7", function (e) {
                     return "최대 " + e.count + " 개의 파일만 선택하세요";
                 }),
-                n("d4d35bea", "번역 중"),
-                n("he9c9634", "번역을 불러올 수 없습니다."),
-                n("deaf5b16", "다시 시도"),
-                n("j2198c98", "번역된 게시물 숨기기"),
+                n("cbc8fed4", "이 번역이 정확한가요? X에 의견을 남겨주시면 서비스 개선에 도움이 됩니다."),
+                n("d56779a2", "이해하기 쉬움"),
+                n("b6fe8a56", "혼동스럽거나 명확하지 않음"),
                 n("i73a7d48", "Google 제공 번역"),
                 n("eeadb767", function (e) {
                     return e.originLanguage + "에서 번역함(Google 제공)";
                 }),
-                n("be9b9fb8", "번역 제공: Grok"),
                 n("d9c6f69d", function (e) {
                     return e.originLanguage + " 번역 제공: Grok";
                 }),
@@ -1338,15 +1334,19 @@
                 n("caa5ba3d", function (e) {
                     return e.originLanguage + "에서 번역함(X 제공)";
                 }),
+                n("deaf5b16", "다시 시도"),
+                n("a66d80d0", "게시물 번역하기"),
+                n("be9b9fb8", "번역 제공: Grok"),
+                n("he9c9634", "번역을 불러올 수 없습니다."),
+                n("j2198c98", "번역된 게시물 숨기기"),
+                n("d4d35bea", "번역 중"),
+                n("i7ac410e", "원본 보기"),
+                n("c67f09e8", "번역 보기"),
                 n("e0f81ff3", "번역:"),
                 n("j2862695", function (e) {
                     return e.originLanguage + "에서 번역";
                 }),
                 n("b7cb4fab", "제공 번역"),
-                n("cbc8fed4", "이 번역이 정확한가요? X에 의견을 남겨주시면 서비스 개선에 도움이 됩니다."),
-                n("d56779a2", "이해하기 쉬움"),
-                n("b6fe8a56", "혼동스럽거나 명확하지 않음"),
-                n("a66d80d0", "게시물 번역하기"),
                 n("d4c339b9", function (e) {
                     return e.fullName + "(@" + e.screenName + ") 님이 게시";
                 }),
@@ -12085,6 +12085,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["구매하시면 X의 ", " 및 ", "에 동의하는 것으로 간주됩니다. 이용약관에 명시된 것과 같이, 취소하기 전까지 구독은 자동으로 갱신됩니다. 언제든지 취소할 수 있습니다."];
@@ -13307,4 +13313,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.6ad0171a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.ccfab8fa.js.map

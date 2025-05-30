@@ -245,8 +245,9 @@
                 s = a(403556),
                 i = a(791632);
             const d = (e) => {
-                    const t = (0, n.useHistory)();
-                    return r.createElement(s.Z, (0, o.Z)({}, e, { isCompact: (0, i.HD)(t) }));
+                    const t = (0, n.useHistory)(),
+                        { isCompact: a, ...d } = e;
+                    return r.createElement(s.Z, (0, o.Z)({}, d, { isCompact: a || (0, i.HD)(t) }));
                 },
                 l = r.memo(d);
         },
@@ -1315,4 +1316,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-9f4db315.3d53232a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-9f4db315.2c6cc70a.js.map

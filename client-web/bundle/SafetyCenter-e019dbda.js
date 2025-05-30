@@ -154,8 +154,9 @@
                 l = r(403556),
                 s = r(791632);
             const i = (e) => {
-                    const t = (0, n.useHistory)();
-                    return a.createElement(l.Z, (0, o.Z)({}, e, { isCompact: (0, s.HD)(t) }));
+                    const t = (0, n.useHistory)(),
+                        { isCompact: r, ...i } = e;
+                    return a.createElement(l.Z, (0, o.Z)({}, i, { isCompact: r || (0, s.HD)(t) }));
                 },
                 c = a.memo(i);
         },
@@ -664,4 +665,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-e019dbda.2626a91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SafetyCenter-e019dbda.3e94661a.js.map

@@ -1281,8 +1281,6 @@
                     return "קרא " + e.replyCount + " תשובות";
                 }),
                 n("dc0c8266", "שאל את Grok"),
-                n("i7ac410e", "הצגת טקסט מקורי"),
-                n("c67f09e8", "הצגת תרגום"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1324,15 +1322,13 @@
                 n("j77292b7", function (e) {
                     return "בחר עד " + e.count + " ק" + t(e.count, "בצים", "ובץ", "בצים", "בצים");
                 }),
-                n("d4d35bea", "מתרגם..."),
-                n("he9c9634", "לא ניתן לאחזר את התרגום"),
-                n("deaf5b16", "נסה שוב"),
-                n("j2198c98", "הסתרת פוסט מתורגם"),
+                n("cbc8fed4", "האם התרגום הזה מדויק? שלח לנו משוב כדי שנוכל להשתפר:"),
+                n("d56779a2", "קל להבנה"),
+                n("b6fe8a56", "מבלבל ולא ברור"),
                 n("i73a7d48", "תורגם על-ידי Google"),
                 n("eeadb767", function (e) {
                     return "תורגם מ" + e.originLanguage + " על-ידי Google";
                 }),
-                n("be9b9fb8", "תרגום של Grok"),
                 n("d9c6f69d", function (e) {
                     return "תורגם מ-" + e.originLanguage + " על ידי Grok";
                 }),
@@ -1344,15 +1340,19 @@
                 n("caa5ba3d", function (e) {
                     return "תורגם מ-" + e.originLanguage + " על-ידי X";
                 }),
+                n("deaf5b16", "נסה שוב"),
+                n("a66d80d0", "תרגם את הפוסט"),
+                n("be9b9fb8", "תרגום של Grok"),
+                n("he9c9634", "לא ניתן לאחזר את התרגום"),
+                n("j2198c98", "הסתרת פוסט מתורגם"),
+                n("d4d35bea", "מתרגם..."),
+                n("i7ac410e", "הצגת טקסט מקורי"),
+                n("c67f09e8", "הצגת תרגום"),
                 n("e0f81ff3", "תרגום:"),
                 n("j2862695", function (e) {
                     return "תורגם מ" + e.originLanguage + " על-ידי";
                 }),
                 n("b7cb4fab", "תורגם על-ידי"),
-                n("cbc8fed4", "האם התרגום הזה מדויק? שלח לנו משוב כדי שנוכל להשתפר:"),
-                n("d56779a2", "קל להבנה"),
-                n("b6fe8a56", "מבלבל ולא ברור"),
-                n("a66d80d0", "תרגם את הפוסט"),
                 n("d4c339b9", function (e) {
                     return "פוסט מאת " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12075,6 +12075,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["רכישה מהווה את הסכמתך לאמור ב-", " וב-", " שלנו. מינויים מתחדשים באופן אוטומטי עד לביטולם, כמתואר בתנאים. ניתן לבטל את המינוי בכל עת."];
@@ -13302,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.38f6597a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.8aa9aada.js.map

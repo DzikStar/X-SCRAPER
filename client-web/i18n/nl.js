@@ -1272,8 +1272,6 @@
                     return e.replyCount + " antwoorden lezen";
                 }),
                 a("dc0c8266", "Vraag 't aan Grok"),
-                a("i7ac410e", "Oorspronkelijke post tonen"),
-                a("c67f09e8", "Vertaling tonen"),
                 a("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 a("j77292b7", function (e) {
                     return "Selecteer maximaal " + e.count + " bestand" + r(e.count, "", "en");
                 }),
-                a("d4d35bea", "Vertalen ..."),
-                a("he9c9634", "Vertaling kon niet worden opgehaald"),
-                a("deaf5b16", "Opnieuw proberen"),
-                a("j2198c98", "Vertaalde post verbergen"),
+                a("cbc8fed4", "Klopte deze vertaling? Geef ons feedback zodat wij verbeteringen kunnen doorvoeren:"),
+                a("d56779a2", "eenvoudig te begrijpen"),
+                a("b6fe8a56", "verwarrend of onduidelijk"),
                 a("i73a7d48", "Vertaald door Google"),
                 a("eeadb767", function (e) {
                     return "Vertaald uit het " + e.originLanguage + " door Google";
                 }),
-                a("be9b9fb8", "Vertaald door Grok"),
                 a("d9c6f69d", function (e) {
                     return "Vertaald uit het " + e.originLanguage + " door Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 a("caa5ba3d", function (e) {
                     return "Vertaald vanuit het " + e.originLanguage + " door X";
                 }),
+                a("deaf5b16", "Opnieuw proberen"),
+                a("a66d80d0", "Post vertalen"),
+                a("be9b9fb8", "Vertaald door Grok"),
+                a("he9c9634", "Vertaling kon niet worden opgehaald"),
+                a("j2198c98", "Vertaalde post verbergen"),
+                a("d4d35bea", "Vertalen ..."),
+                a("i7ac410e", "Oorspronkelijke post tonen"),
+                a("c67f09e8", "Vertaling tonen"),
                 a("e0f81ff3", "Vertaling:"),
                 a("j2862695", function (e) {
                     return "Vertaald vanuit het " + e.originLanguage + " door";
                 }),
                 a("b7cb4fab", "Vertaald door"),
-                a("cbc8fed4", "Klopte deze vertaling? Geef ons feedback zodat wij verbeteringen kunnen doorvoeren:"),
-                a("d56779a2", "eenvoudig te begrijpen"),
-                a("b6fe8a56", "verwarrend of onduidelijk"),
-                a("a66d80d0", "Post vertalen"),
                 a("d4c339b9", function (e) {
                     return "Post van " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12079,6 +12079,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Door de aankoop te doen, ga je akkoord met onze ", " en onze ", ". Je Abonnement wordt automatisch verlengd totdat je opzegt, zoals beschreven in de Voorwaarden. Je kan op elk moment opzeggen."];
@@ -13302,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.c6e6d8ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.7c1fca8a.js.map

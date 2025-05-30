@@ -1272,8 +1272,6 @@
                     return "[[291975]] Read " + e.replyCount + " replies";
                 }),
                 a("dc0c8266", "[[285077]] Ask Grok"),
-                a("i7ac410e", "[[293587]] Show Original"),
-                a("c67f09e8", "[[293586]] Show Translation"),
                 a("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 a("j77292b7", function (e) {
                     return "[[293197]] Please only select up to " + e.count + " file" + n(e.count, "", "s");
                 }),
-                a("d4d35bea", "[[292636]] Translating..."),
-                a("he9c9634", "[[190233]] Unable to fetch translation"),
-                a("deaf5b16", "[[176304]] Retry"),
-                a("j2198c98", "[[283742]] Hide translated post"),
+                a("cbc8fed4", "[[286299]] Was this translation accurate? Give us feedback so we can improve:"),
+                a("d56779a2", "[[286300]] easy to understand"),
+                a("b6fe8a56", "[[286301]] confusing or unclear"),
                 a("i73a7d48", "[[196575]] Translated by Google"),
                 a("eeadb767", function (e) {
                     return "[[196576]] Translated from " + e.originLanguage + " by Google";
                 }),
-                a("be9b9fb8", "[[292374]] Translated by Grok"),
                 a("d9c6f69d", function (e) {
                     return "[[292375]] Translated from " + e.originLanguage + " by Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 a("caa5ba3d", function (e) {
                     return "[[286339]] Translated from " + e.originLanguage + " by X";
                 }),
+                a("deaf5b16", "[[176304]] Retry"),
+                a("a66d80d0", "[[281783]] Translate post"),
+                a("be9b9fb8", "[[292374]] Translated by Grok"),
+                a("he9c9634", "[[190233]] Unable to fetch translation"),
+                a("j2198c98", "[[283742]] Hide translated post"),
+                a("d4d35bea", "[[292636]] Translating..."),
+                a("i7ac410e", "[[293587]] Show Original"),
+                a("c67f09e8", "[[293586]] Show Translation"),
                 a("e0f81ff3", "Translation:"),
                 a("j2862695", function (e) {
                     return "Translated from " + e.originLanguage + " by";
                 }),
                 a("b7cb4fab", "Translated by"),
-                a("cbc8fed4", "[[286299]] Was this translation accurate? Give us feedback so we can improve:"),
-                a("d56779a2", "[[286300]] easy to understand"),
-                a("b6fe8a56", "[[286301]] confusing or unclear"),
-                a("a66d80d0", "[[281783]] Translate post"),
                 a("d4c339b9", function (e) {
                     return "[[281741]] Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12066,6 +12066,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["[[287356]] By purchasing, you agree to our ", " and our ", ". Subscriptions auto-renew until canceled, as described in the Terms. Cancel anytime."];
@@ -13289,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.99edfc3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.fa6615ba.js.map

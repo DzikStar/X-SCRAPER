@@ -1283,8 +1283,6 @@
                     return "Citește " + e.replyCount + " (de) răspunsuri";
                 }),
                 t("dc0c8266", "Întrebă Grok"),
-                t("i7ac410e", "Afișează versiunea originală"),
-                t("c67f09e8", "Afișează traducerea"),
                 t("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1326,15 +1324,13 @@
                 t("j77292b7", function (e) {
                     return "Selectează maximum " + e.count + " fișier" + r(e.count, "e", "", "e");
                 }),
-                t("d4d35bea", "Se traduce..."),
-                t("he9c9634", "Nu s-a putut prelua traducerea"),
-                t("deaf5b16", "Reîncearcă"),
-                t("j2198c98", "Ascunde postarea tradusă"),
+                t("cbc8fed4", "Traducerea a fost fidelă? Spune-ne ce crezi pentru a o putea îmbunătăți:"),
+                t("d56779a2", "ușor de înțeles"),
+                t("b6fe8a56", "confuză și neclară"),
                 t("i73a7d48", "Tradus de Google"),
                 t("eeadb767", function (e) {
                     return "Tradus din " + e.originLanguage + " de Google";
                 }),
-                t("be9b9fb8", "Tradus de Grok"),
                 t("d9c6f69d", function (e) {
                     return "Tradus din " + e.originLanguage + " de Grok";
                 }),
@@ -1346,15 +1342,19 @@
                 t("caa5ba3d", function (e) {
                     return "Tradus din " + e.originLanguage + " de X";
                 }),
+                t("deaf5b16", "Reîncearcă"),
+                t("a66d80d0", "Tradu postarea"),
+                t("be9b9fb8", "Tradus de Grok"),
+                t("he9c9634", "Nu s-a putut prelua traducerea"),
+                t("j2198c98", "Ascunde postarea tradusă"),
+                t("d4d35bea", "Se traduce..."),
+                t("i7ac410e", "Afișează versiunea originală"),
+                t("c67f09e8", "Afișează traducerea"),
                 t("e0f81ff3", "Traducere:"),
                 t("j2862695", function (e) {
                     return "Traducere din " + e.originLanguage + " de";
                 }),
                 t("b7cb4fab", "Traducere de"),
-                t("cbc8fed4", "Traducerea a fost fidelă? Spune-ne ce crezi pentru a o putea îmbunătăți:"),
-                t("d56779a2", "ușor de înțeles"),
-                t("b6fe8a56", "confuză și neclară"),
-                t("a66d80d0", "Tradu postarea"),
                 t("d4c339b9", function (e) {
                     return "Postare de la " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12077,6 +12077,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Prin achiziționare, ești de acord cu ", " și ", ". Abonamentele se reînnoiesc automat până când le anulezi, așa cum se descrie în Condiții. Poți anula oricând."];
@@ -13302,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.abbb601a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.86a0f72a.js.map

@@ -5,7 +5,7 @@
             e.exports = { queryId: "imr0xefZmILHTgb6-9pe3g", operationName: "ActionTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         572524: (e) => {
-            e.exports = { queryId: "5Ppv9KHPbZ5aITaeSHTIng", operationName: "AiTrendByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "exl-olCcAxc-6w3XozpC_g", operationName: "AiTrendByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         64129: (e) => {
             e.exports = { queryId: "3BZlCEmD645zQ-MpJM19CA", operationName: "ReportTrend", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -140,7 +140,7 @@
         },
         219770: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => H });
+            n.d(t, { Z: () => U });
             n(136728);
             var r = n(202784),
                 i = n(325686),
@@ -161,15 +161,15 @@
                 v = n(601576),
                 w = n(190286),
                 y = n(415506),
-                T = n(782642);
-            const k = d().ed54bc32,
+                k = n(782642);
+            const T = d().ed54bc32,
                 E = d().f89bcc50,
                 C = d().ed54bc32,
                 Z = (e) => {
                     const { trendId: t } = e,
                         [n, i] = r.useState(!1),
                         [o, s] = r.useState(!1),
-                        l = (0, T.p)(),
+                        l = (0, k.p)(),
                         c = (0, g.I0)();
                     return (
                         r.useEffect(() => {
@@ -180,9 +180,9 @@
                             null,
                             !o &&
                                 r.createElement(a.ZP, {
-                                    "aria-label": k,
-                                    hoverLabel: { label: k },
-                                    icon: r.createElement(y.default, { "aria-label": k, style: P.button }),
+                                    "aria-label": T,
+                                    hoverLabel: { label: T },
+                                    icon: r.createElement(y.default, { "aria-label": T, style: P.button }),
                                     onClick: () => {
                                         c((0, h.x)(t)), i(!0);
                                     },
@@ -205,9 +205,9 @@
                     );
                 },
                 P = l.default.create((e) => ({ button: { color: e.colors.text } })),
-                S = r.memo(Z);
-            var I = n(73416),
-                x = n(883069),
+                x = r.memo(Z);
+            var S = n(73416),
+                I = n(883069),
                 q = n(148843);
             const D = d().i2209530,
                 O = d().gde7b6b0,
@@ -215,7 +215,7 @@
                     const { isSaved: t, trendId: n } = e,
                         i = t ? O : D,
                         o = (0, g.I0)(),
-                        s = t ? r.createElement(I.default, { style: N.button }) : r.createElement(x.default, { style: N.button });
+                        s = t ? r.createElement(S.default, { style: N.button }) : r.createElement(I.default, { style: N.button });
                     return r.createElement(a.ZP, {
                         "aria-label": i,
                         hoverLabel: { label: i },
@@ -229,14 +229,14 @@
                 },
                 N = l.default.create((e) => ({ button: { marginEnd: e.spaces.space4, color: e.colors.text } })),
                 L = r.memo(B);
-            var R = n(688715),
-                A = n(907552);
+            var A = n(688715),
+                R = n(907552);
             const z = { page: "trending_event_timeline", section: "trending_event_header" },
                 M = l.default.create((e) => ({ button: { marginEnd: e.spaces.space8 } })),
                 F = (e) => {
                     const { hashtag: t, id: n } = e,
-                        o = (0, R.ju)(`https://x.com/i/trending/${n}`);
-                    return r.createElement(i.Z, { style: M.button }, r.createElement(A.ZP, { scribeNamespace: z, shareText: t, url: o }));
+                        o = (0, A.ju)(`https://x.com/i/trending/${n}`);
+                    return r.createElement(i.Z, { style: M.button }, r.createElement(R.ZP, { scribeNamespace: z, shareText: t, url: o }));
                 },
                 j = { page: "trending_event_timeline", section: "trending_event_header", element: "contribute_to_birdwatch" },
                 Q = d().a9042b6c,
@@ -244,23 +244,23 @@
                     const t = (0, f.z)(),
                         { additionalActions: n, communityNoteUrl: l, id: c, isSaved: w } = e,
                         y = (0, o.useHistory)(),
-                        { featureSwitches: T } = r.useContext(b.rC),
-                        k = (0, g.I0)(),
+                        { featureSwitches: k } = r.useContext(b.rC),
+                        T = (0, g.I0)(),
                         E = r.useCallback(() => {
                             y.push(`/i/trending/${c}/history`);
                         }, [y, c]),
                         C = r.useCallback(
                             (e) => {
-                                k((0, h.V)(c, e)), (0, v.fz)({ text: "Your input has been submitted." });
+                                T((0, h.V)(c, e)), (0, v.fz)({ text: "Your input has been submitted." });
                             },
-                            [c, k],
+                            [c, T],
                         ),
                         Z = d().ef1042f8,
                         P = () => {
                             const e = [{ Icon: u.default, onClick: E, text: Q }, ...n.map((e) => ({ Icon: _.default, onClick: () => C(e.action_value), text: e.name }))];
                             return (
-                                T.isTrue("responsive_web_trends_ui_community_notes_enabled") &&
-                                    T.isTrue("responsive_web_birdwatch_note_writing_enabled") &&
+                                k.isTrue("responsive_web_trends_ui_community_notes_enabled") &&
+                                    k.isTrue("responsive_web_birdwatch_note_writing_enabled") &&
                                     l &&
                                     e.push({
                                         Icon: m.default,
@@ -273,10 +273,10 @@
                                 e
                             );
                         };
-                    return r.createElement(i.Z, { style: U.headerRoot }, r.createElement(L, { isSaved: w, trendId: c }), r.createElement(S, { trendId: c }), r.createElement(F, { id: c }), r.createElement(a.ZP, { icon: r.createElement(p.default, { style: U.button }), renderMenu: (e) => r.createElement(s.Z, { items: P(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "medium", style: U.button, type: "onMediaText" }));
+                    return r.createElement(i.Z, { style: Y.headerRoot }, r.createElement(L, { isSaved: w, trendId: c }), r.createElement(x, { trendId: c }), r.createElement(F, { id: c }), r.createElement(a.ZP, { icon: r.createElement(p.default, { style: Y.button }), renderMenu: (e) => r.createElement(s.Z, { items: P(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "medium", style: Y.button, type: "onMediaText" }));
                 },
-                H = r.memo($),
-                U = l.default.create((e) => ({ root: { flexDirection: "row", end: -e.spacesPx.space2 }, headerRoot: { flexDirection: "row" }, button: { marginEnd: e.spaces.space4, color: e.colors.text } }));
+                U = r.memo($),
+                Y = l.default.create((e) => ({ root: { flexDirection: "row", end: -e.spacesPx.space2 }, headerRoot: { flexDirection: "row" }, button: { marginEnd: e.spaces.space4, color: e.colors.text } }));
         },
         208560: (e, t, n) => {
             "use strict";
@@ -389,8 +389,8 @@
                     );
                 },
                 y = d().e839db3a,
-                T = d().a7a119ec;
-            class k extends r.PureComponent {
+                k = d().a7a119ec;
+            class T extends r.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isOffscreen: !1 }),
@@ -417,12 +417,12 @@
                     return r.createElement(o.Z, { rightControl: this._renderDockingControls(e, t), subtitle: n, title: i });
                 }
                 _renderDockingControls(e, t) {
-                    return r.createElement(i.Z, { style: E.dockingControls }, r.createElement(a.ZP, { "aria-label": T, icon: r.createElement(u.default, null), onPress: e, type: "brandText" }), r.createElement(a.ZP, { "aria-label": y, icon: r.createElement(_.default, null), onPress: t, type: "brandText" }));
+                    return r.createElement(i.Z, { style: E.dockingControls }, r.createElement(a.ZP, { "aria-label": k, icon: r.createElement(u.default, null), onPress: e, type: "brandText" }), r.createElement(a.ZP, { "aria-label": y, icon: r.createElement(_.default, null), onPress: t, type: "brandText" }));
                 }
             }
-            k.defaultProps = { placeholder: r.createElement(s.Z, { ratio: l.default.theme.aspectRatios.landscape }), visibleThreshold: 0 };
+            T.defaultProps = { placeholder: r.createElement(s.Z, { ratio: l.default.theme.aspectRatios.landscape }), visibleThreshold: 0 };
             const E = l.default.create((e) => ({ root: { zIndex: 1 }, dockedContainer: { bottom: 0, end: 0, marginEnd: e.spaces.space20, boxShadow: e.boxShadows.small, maxWidth: m.Z.columnWidths.secondary.normal, position: "fixed", width: m.Z.columnWidths.secondary.normal }, dockingControls: { flexDirection: "row", alignItems: "baseline" } })),
-                C = k;
+                C = T;
         },
         789831: (e, t, n) => {
             "use strict";
@@ -498,10 +498,10 @@
                 y = ({ author: e, coverTweet: t, description: n, descriptionEntities: s, imageAttribution: c, isTOO: d, mediaType: u, pivotText: _, preTitle: m, remindMeButton: p, time: b, title: f, withHashflags: g }) => {
                     const h = () => (e ? r.createElement(i.Z, null, r.createElement(l.S3, { author: e, size: "body", withLink: !0, withScreenName: !0 }), b ? y(!0) : null) : null),
                         y = (e = !1) => r.createElement(o.ZP, { color: "gray700", numberOfLines: 1, size: "body", style: [w.timeString, e && w.timeStringMargin] }, b),
-                        T = () => (m ? r.createElement(a.Z, null, r.createElement(o.ZP, { color: "gray700", numberOfLines: 1, size: "body", weight: "bold" }, m), b ? y() : null) : null);
-                    return r.createElement(r.Fragment, null, d && m ? T() : h() || T(), r.createElement(o.ZP, { dir: "auto", size: "title4", style: w.title, weight: "heavy", withHashflags: g }, f), n || t || c ? r.createElement(v, { coverTweet: t, description: n, descriptionEntities: s, imageAttribution: c, mediaType: u, pivotText: _ }) : null, p ? r.createElement(i.Z, { style: w.remindMeButton }, p) : null);
+                        k = () => (m ? r.createElement(a.Z, null, r.createElement(o.ZP, { color: "gray700", numberOfLines: 1, size: "body", weight: "bold" }, m), b ? y() : null) : null);
+                    return r.createElement(r.Fragment, null, d && m ? k() : h() || k(), r.createElement(o.ZP, { dir: "auto", size: "title4", style: w.title, weight: "heavy", withHashflags: g }, f), n || t || c ? r.createElement(v, { coverTweet: t, description: n, descriptionEntities: s, imageAttribution: c, mediaType: u, pivotText: _ }) : null, p ? r.createElement(i.Z, { style: w.remindMeButton }, p) : null);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.7f2eac9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.4d8761ea.js.map

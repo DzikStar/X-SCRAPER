@@ -1281,8 +1281,6 @@
                     return "Přečíst odpovědi (" + e.replyCount + ")";
                 }),
                 a("dc0c8266", "Zeptejte se Grok"),
-                a("i7ac410e", "Zobrazit originál"),
-                a("c67f09e8", "Zobrazit překlad"),
                 a("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1324,15 +1322,13 @@
                 a("j77292b7", function (e) {
                     return "Vyberte pouze maximálně " + e.count + " soubor" + n(e.count, "y", "y", "", "y");
                 }),
-                a("d4d35bea", "Překládání..."),
-                a("he9c9634", "Nemůžeme načíst překlad."),
-                a("deaf5b16", "Opakovat"),
-                a("j2198c98", "Skrýt přeložený post"),
+                a("cbc8fed4", "Byl tento překlad přesný? Dejte nám zpětnou vazbu, abychom se mohli zlepšit:"),
+                a("d56779a2", "snadno pochopitelný"),
+                a("b6fe8a56", "matoucí nebo nejasný"),
                 a("i73a7d48", "Přeložil Google"),
                 a("eeadb767", function (e) {
                     return "Přeložil Google z: " + e.originLanguage;
                 }),
-                a("be9b9fb8", "Přeložil Grok"),
                 a("d9c6f69d", function (e) {
                     return "Přeloženo z jazyka " + e.originLanguage + " pomocí Groka";
                 }),
@@ -1344,15 +1340,19 @@
                 a("caa5ba3d", function (e) {
                     return "Přeloženo z jazyka " + e.originLanguage + " pomocí platformy X";
                 }),
+                a("deaf5b16", "Opakovat"),
+                a("a66d80d0", "Přeložit post"),
+                a("be9b9fb8", "Přeložil Grok"),
+                a("he9c9634", "Nemůžeme načíst překlad."),
+                a("j2198c98", "Skrýt přeložený post"),
+                a("d4d35bea", "Překládání..."),
+                a("i7ac410e", "Zobrazit originál"),
+                a("c67f09e8", "Zobrazit překlad"),
                 a("e0f81ff3", "Překlad:"),
                 a("j2862695", function (e) {
                     return "Překlad z " + e.originLanguage + " od";
                 }),
                 a("b7cb4fab", "Překlad od"),
-                a("cbc8fed4", "Byl tento překlad přesný? Dejte nám zpětnou vazbu, abychom se mohli zlepšit:"),
-                a("d56779a2", "snadno pochopitelný"),
-                a("b6fe8a56", "matoucí nebo nejasný"),
-                a("a66d80d0", "Přeložit post"),
                 a("d4c339b9", function (e) {
                     return "Post od uživatele " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12075,6 +12075,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Zakoupením souhlasíte s našimi ", " a našimi ", ". Předplatné se automaticky obnovuje, dokud nebude zrušeno, jak je popsáno v podmínkách. Zrušit ho můžete kdykoli."];
@@ -13300,4 +13306,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.77d5feba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.ffa5854a.js.map

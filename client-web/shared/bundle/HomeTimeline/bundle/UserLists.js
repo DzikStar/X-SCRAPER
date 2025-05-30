@@ -24,8 +24,9 @@
                 n = o(403556),
                 i = o(791632);
             const l = (e) => {
-                    const t = (0, r.useHistory)();
-                    return a.createElement(n.Z, (0, s.Z)({}, e, { isCompact: (0, i.HD)(t) }));
+                    const t = (0, r.useHistory)(),
+                        { isCompact: o, ...l } = e;
+                    return a.createElement(n.Z, (0, s.Z)({}, l, { isCompact: o || (0, i.HD)(t) }));
                 },
                 c = a.memo(l);
         },
@@ -54,7 +55,7 @@
                             [C, g, b],
                         ),
                         Z = p.ZM.useCollapsibleNavBars(),
-                        w = [...p.Ah({ elementPosition: "bottom" }), Z && h.fabStaysAboveSafeArea];
+                        k = [...p.Ah({ elementPosition: "bottom" }), Z && h.fabStaysAboveSafeArea];
                     return y
                         ? a.createElement(
                               n.Z.FloatingAction,
@@ -64,7 +65,7 @@
                                       i = e > l.default.theme.breakpoints.medium,
                                       p = e < l.default.theme.breakpoints.micro,
                                       u = [h.root, i && h.rootMedium, n && h.rootLarge],
-                                      m = [h.fab, n && h.fabLarge, p && h.fabMicro, w];
+                                      m = [h.fab, n && h.fabLarge, p && h.fabMicro, k];
                                   return a.createElement(
                                       r.Z,
                                       { "aria-label": t, pointerEvents: "box-none", role: "complementary", style: u },
@@ -173,7 +174,7 @@
                 c = i;
         },
         403556: (e, t, o) => {
-            o.d(t, { Z: () => E });
+            o.d(t, { Z: () => v });
             var s = o(807896),
                 a = o(202784),
                 r = o(194504),
@@ -227,17 +228,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: s, children: r, color: n, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: g, retainScrollPosition: Z, style: k, to: P } = this.props,
-                        { location: E } = this.state,
-                        v = P ? this._getMemoizedLink(P, Z) : void 0,
-                        B = c ? c(P) : E?.pathname === v?.pathname,
-                        R = b.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
-                        _ = g ? "medium" : B ? "bold" : "medium";
-                    return a.createElement(f.Z, { "aria-label": t, "aria-selected": B, focusable: !!B, interactiveStyles: R, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [p ? w.pill : w.link, p && B ? w.active : null, d ? (p ? w.compactPill : w.compactLink) : null, u ? w.roundedRect : null, k], withoutInteractiveStyles: g || p }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && w.flexGrow }, a.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [w.text, { color: this._getTextColor(B, c, g, p) }, d && w.compactText, g && t && w.focusedText], weight: _ }, e && a.createElement(e, { style: w.icon }), r, g || p ? null : a.createElement(l.Z, { style: B && [w.border, { backgroundColor: i.default.theme.colors[n] }] })), o ? a.createElement(h.Z, { count: o, standalone: !0, style: [w.badge, o >= 10 && w.multiDigitBadge, o >= 20 && w.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : s ? a.createElement(h.Z, { pip: !0, standalone: !0, style: w.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: s, children: r, color: n, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: g, retainScrollPosition: Z, style: w, to: S } = this.props,
+                        { location: v } = this.state,
+                        P = S ? this._getMemoizedLink(S, Z) : void 0,
+                        E = c ? c(S) : v?.pathname === P?.pathname,
+                        B = b.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? k.pillHoverStyle.backgroundColor : void 0 }),
+                        R = g ? "medium" : E ? "bold" : "medium";
+                    return a.createElement(f.Z, { "aria-label": t, "aria-selected": E, focusable: !!E, interactiveStyles: B, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [k.pillStyle] : [k.link]), ...(p && E ? [k.pillActiveStyle] : []), d ? (p ? k.compactPill : k.compactLink) : null, u ? k.roundedRect : null, w], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && k.flexGrow }, a.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [k.text, { color: this._getTextColor(E, c, g, p) }, d && k.compactText, g && t && k.focusedText, p && k.pillTextStyle, p && E && k.pillActiveTextStyle, p && c && k.pillHoverTextStyle], weight: R }, e && a.createElement(e, { style: k.icon }), r, g || p ? null : a.createElement(l.Z, { style: E && [k.border, { backgroundColor: i.default.theme.colors[n] }] })), o ? a.createElement(h.Z, { count: o, standalone: !0, style: [k.badge, o >= 10 && k.multiDigitBadge, o >= 20 && k.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : s ? a.createElement(h.Z, { pip: !0, standalone: !0, style: k.badgePip, textColor: "red500", unreadCountLabel: C, withBorder: !1 }) : null));
                 }
             }
             (Z.contextType = g.Z), (Z.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const w = i.default.create((e) => ({
+            const k = i.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -248,16 +249,21 @@
                     focusedText: { position: "relative", top: `calc(${e.borderWidths.medium} / 2)`, marginBottom: `-${e.spaces.space16}`, borderStyle: "solid", borderBottomWidth: e.borderWidths.medium, borderColor: e.colors.text, boxSizing: "border-box" },
                     compactText: { paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8 },
                     border: { height: e.borderWidths.large, position: "absolute", bottom: 0, width: "100%", minWidth: "56px", alignSelf: "center", borderRadius: e.borderRadii.infinite },
-                    pill: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
                     compactPill: { height: e.spaces.space36 },
                     active: { backgroundColor: e.colors.gray50 },
+                    pillStyle: { backgroundColor: e.colors.transparent, borderColor: e.colors.gray50, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
+                    pillTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillHoverStyle: { backgroundColor: e.colors.gray100, borderColor: e.colors.gray50 },
+                    pillHoverTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillActiveStyle: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50 },
+                    pillActiveTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
                     flexGrow: { flexGrow: 1 },
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                k = Z,
-                P = i.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                E = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: i, isRoundedRect: l, links: c, style: d, visibleItemIndex: p }) => {
+                w = Z,
+                S = i.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                v = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: i, isRoundedRect: l, links: c, style: d, visibleItemIndex: p }) => {
                     const u = c
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -267,14 +273,14 @@
                         g = a.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: r, ...n }, c) => {
-                                    const d = h ? [P.linkRedesign, 0 === c && P.firstLinkRedesign, e && 0 === c && P.withNoPaddingStart] : void 0;
-                                    return a.createElement(k, (0, s.Z)({ viewType: r }, n, { isCompact: o, isPillLink: i, isRoundedRect: l, isWebRedesign: h, style: d }), t);
+                                    const d = h ? [S.linkRedesign, 0 === c && S.firstLinkRedesign, e && 0 === c && S.withNoPaddingStart] : void 0;
+                                    return a.createElement(w, (0, s.Z)({ viewType: r }, n, { isCompact: o, isPillLink: i, isRoundedRect: l, isWebRedesign: h, style: d }), t);
                                 }),
                             [e, o, i, l, h, c],
                         );
-                    return a.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: i && P.gap, childrenStyle: !h && P.flexGrow, key: u, style: [i ? null : P.segmentedControl, h && P.leftAligned, d], visibleItemIndex: p }, g);
+                    return a.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: i && S.gap, childrenStyle: !h && S.flexGrow, key: u, style: [i ? null : S.segmentedControl, h && S.leftAligned, d], visibleItemIndex: p }, g);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.HomeTimeline~bundle.UserLists.1eef1f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.HomeTimeline~bundle.UserLists.37a2e08a.js.map

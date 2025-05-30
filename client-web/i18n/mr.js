@@ -1272,8 +1272,6 @@
                     return e.replyCount + " प्रत्युत्तरे वाचा";
                 }),
                 n("dc0c8266", "Grokला विचारा"),
-                n("i7ac410e", "मूळ दाखवा"),
-                n("c67f09e8", "भाषांतर दाखवा"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 n("j77292b7", function (e) {
                     return "कृपया केवळ " + e.count + " फा" + f(e.count, "ईल", "यली") + " पर्यंतच निवडा";
                 }),
-                n("d4d35bea", "भाषांतर होत आहे..."),
-                n("he9c9634", "भाषांतर मिळवणे शक्य नाही"),
-                n("deaf5b16", "पुन्हा प्रयत्न करा"),
-                n("j2198c98", "अनुवादित पोस्ट लपवा"),
+                n("cbc8fed4", "हे भाषांतर अचूक होते का? आम्हाला अभिप्राय द्या जेणेकरून आम्ही सुधारणा करू शकू:"),
+                n("d56779a2", "समजण्यास सोपी"),
+                n("b6fe8a56", "गोंधळात टाकणारे किंवा अस्पष्ट"),
                 n("i73a7d48", "Google ने अनुवादित केले"),
                 n("eeadb767", function (e) {
                     return "Google ने " + e.originLanguage + "मधून अनुवादित केले";
                 }),
-                n("be9b9fb8", "Grok द्वारा अनुवादित"),
                 n("d9c6f69d", function (e) {
                     return "Grok द्वारा " + e.originLanguage + "मधून अनुवादित";
                 }),
@@ -1335,15 +1331,19 @@
                 n("caa5ba3d", function (e) {
                     return "X ने " + e.originLanguage + "मधून अनुवादित केले";
                 }),
+                n("deaf5b16", "पुन्हा प्रयत्न करा"),
+                n("a66d80d0", "पोस्ट भाषांतरित करा"),
+                n("be9b9fb8", "Grok द्वारा अनुवादित"),
+                n("he9c9634", "भाषांतर मिळवणे शक्य नाही"),
+                n("j2198c98", "अनुवादित पोस्ट लपवा"),
+                n("d4d35bea", "भाषांतर होत आहे..."),
+                n("i7ac410e", "मूळ दाखवा"),
+                n("c67f09e8", "भाषांतर दाखवा"),
                 n("e0f81ff3", "भाषांतर:"),
                 n("j2862695", function (e) {
                     return " " + e.originLanguage + "मधून अनुवादित केले ";
                 }),
                 n("b7cb4fab", " "),
-                n("cbc8fed4", "हे भाषांतर अचूक होते का? आम्हाला अभिप्राय द्या जेणेकरून आम्ही सुधारणा करू शकू:"),
-                n("d56779a2", "समजण्यास सोपी"),
-                n("b6fe8a56", "गोंधळात टाकणारे किंवा अस्पष्ट"),
-                n("a66d80d0", "पोस्ट भाषांतरित करा"),
                 n("d4c339b9", function (e) {
                     return e.fullName + " (@" + e.screenName + ") कडून पोस्ट";
                 }),
@@ -12073,6 +12073,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["खरेदी करून, आपण आमच्या ", " शी आणि आमच्या ", " शी सहमत आहात. अटींमध्ये वर्णन केल्याप्रमाणे, सबस्क्रीप्शन्स रद्द होईपर्यंत स्वयंचलितपणे नूतनीकरण होते. कधीही रद्द करा."];
@@ -13295,4 +13301,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.a3e5c32a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.7cef13fa.js.map

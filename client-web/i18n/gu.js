@@ -1272,8 +1272,6 @@
                     return e.replyCount + " પ્રત્યુત્તરો વાંચો";
                 }),
                 n("dc0c8266", "Grokને પૂછો"),
-                n("i7ac410e", "મૂળભૂત બતાવો"),
-                n("c67f09e8", "અનુવાદ બતાવો"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 n("j77292b7", function (e) {
                     return "કૃપા કરીને માત્ર " + e.count + " ફાઇલ" + f(e.count, "", "ો") + "સુધી પસંદ કરો";
                 }),
-                n("d4d35bea", "અનુવાદ થઈ રહ્યો છે..."),
-                n("he9c9634", "અનુવાદનું આનયન કરવામાં અક્ષમ"),
-                n("deaf5b16", "ફરી પ્રયાસ કરો"),
-                n("j2198c98", "અનુવાદિત પોસ્ટ છુપાવો"),
+                n("cbc8fed4", "શું આ અનુવાદ સાચો હતો? અમને પ્રતિભાવ આપો, જેથી અમે આ સેવાને બહેતર બનાવી શકીએ:"),
+                n("d56779a2", "સમજવામાં સરળ"),
+                n("b6fe8a56", "મૂંઝવણકારી અથવા અસ્પષ્ટ"),
                 n("i73a7d48", "Google દ્વારા અનુવાદિત"),
                 n("eeadb767", function (e) {
                     return "Google દ્વારા " + e.originLanguage + " માંથી અનુવાદિત";
                 }),
-                n("be9b9fb8", "Grok દ્વારા અનુવાદિત"),
                 n("d9c6f69d", function (e) {
                     return " Grok દ્વારા " + e.originLanguage + " માંથી અનુવાદ ";
                 }),
@@ -1335,15 +1331,19 @@
                 n("caa5ba3d", function (e) {
                     return e.originLanguage + "માંથી X દ્વારા અનુવાદિત";
                 }),
+                n("deaf5b16", "ફરી પ્રયાસ કરો"),
+                n("a66d80d0", "પોસ્ટનો અનુવાદ કરો"),
+                n("be9b9fb8", "Grok દ્વારા અનુવાદિત"),
+                n("he9c9634", "અનુવાદનું આનયન કરવામાં અક્ષમ"),
+                n("j2198c98", "અનુવાદિત પોસ્ટ છુપાવો"),
+                n("d4d35bea", "અનુવાદ થઈ રહ્યો છે..."),
+                n("i7ac410e", "મૂળભૂત બતાવો"),
+                n("c67f09e8", "અનુવાદ બતાવો"),
                 n("e0f81ff3", "અનુવાદ:"),
                 n("j2862695", function (e) {
                     return "દ્વારા " + e.originLanguage + "માંથી અનુવાદિત";
                 }),
                 n("b7cb4fab", "દ્વારા અનુવાદિત"),
-                n("cbc8fed4", "શું આ અનુવાદ સાચો હતો? અમને પ્રતિભાવ આપો, જેથી અમે આ સેવાને બહેતર બનાવી શકીએ:"),
-                n("d56779a2", "સમજવામાં સરળ"),
-                n("b6fe8a56", "મૂંઝવણકારી અથવા અસ્પષ્ટ"),
-                n("a66d80d0", "પોસ્ટનો અનુવાદ કરો"),
                 n("d4c339b9", function (e) {
                     return e.fullName + " (@" + e.screenName + ")ની પોસ્ટ";
                 }),
@@ -12082,6 +12082,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["ખરીદી કરીને, તમે અમારા ", " અને ", " સાથે સંમત થાઓ છો. શરતોમાં વર્ણવ્યા મુજબ, જ્યાં સુધી સબ્સ્ક્રિપ્શન રદ ન થાય ત્યાં સુધી તે આપમેળે-રિન્યૂ થાય છે. કોઈ પણ સમયે રદ કરો."];
@@ -13304,4 +13310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.e8e716ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.fd70ad9a.js.map

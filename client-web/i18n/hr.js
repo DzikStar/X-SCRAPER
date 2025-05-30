@@ -1279,8 +1279,6 @@
                     return "Pročitajte " + a.replyCount + " odgovor/a";
                 }),
                 o("dc0c8266", "Pitajte Groka"),
-                o("i7ac410e", "Prikaži izvorno"),
-                o("c67f09e8", "Prikaži prijevod"),
                 o("f396c105", function (a) {
                     return "" + a.displayCount;
                 }),
@@ -1322,15 +1320,13 @@
                 o("j77292b7", function (a) {
                     return "Odaberite najviše " + a.count + " datotek" + n(a.count, "e", "u", "a");
                 }),
-                o("d4d35bea", "Prevođenje..."),
-                o("he9c9634", "Nije moguće dohvatiti prijevod"),
-                o("deaf5b16", "Pokušaj ponovno"),
-                o("j2198c98", "Sakrij prevedenu objavu"),
+                o("cbc8fed4", "Je li taj prijevod točan? Pošaljite nam povratne informacije kako bismo se mogli poboljšati:"),
+                o("d56779a2", "lako razumljivo"),
+                o("b6fe8a56", "zbunjujuće ili nejasno"),
                 o("i73a7d48", "Prevedeno pomoću Googlea"),
                 o("eeadb767", function (a) {
                     return "Prevedeno pomoću Googlea sa sljedećeg jezika: " + a.originLanguage;
                 }),
-                o("be9b9fb8", "Preveo Grok"),
                 o("d9c6f69d", function (a) {
                     return "Preveo Grok s jezika " + a.originLanguage;
                 }),
@@ -1342,15 +1338,19 @@
                 o("caa5ba3d", function (a) {
                     return "S jezika " + a.originLanguage + " prevela platforma X";
                 }),
+                o("deaf5b16", "Pokušaj ponovno"),
+                o("a66d80d0", "Prevedi objavu"),
+                o("be9b9fb8", "Preveo Grok"),
+                o("he9c9634", "Nije moguće dohvatiti prijevod"),
+                o("j2198c98", "Sakrij prevedenu objavu"),
+                o("d4d35bea", "Prevođenje..."),
+                o("i7ac410e", "Prikaži izvorno"),
+                o("c67f09e8", "Prikaži prijevod"),
                 o("e0f81ff3", "Prijevod:"),
                 o("j2862695", function (a) {
                     return "Translated from " + a.originLanguage + " by";
                 }),
                 o("b7cb4fab", "Prevedeno pomoću servisa "),
-                o("cbc8fed4", "Je li taj prijevod točan? Pošaljite nam povratne informacije kako bismo se mogli poboljšati:"),
-                o("d56779a2", "lako razumljivo"),
-                o("b6fe8a56", "zbunjujuće ili nejasno"),
-                o("a66d80d0", "Prevedi objavu"),
                 o("d4c339b9", function (a) {
                     return "Objava korisnika/ce " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -12080,6 +12080,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Kupnjom prihvaćate naše dokumente ", " i ", ". Pretplate se automatski obnavljaju dok ih ne otkažete, kao što je navedeno u Uvjetima. Otkažite u bilo kojem trenutku."];
@@ -13310,4 +13316,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.f97e7a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.c063f9ea.js.map

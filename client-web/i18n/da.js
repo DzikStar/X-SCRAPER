@@ -1272,8 +1272,6 @@
                     return "Læs " + e.replyCount + " svar";
                 }),
                 t("dc0c8266", "Spørg Grok"),
-                t("i7ac410e", "Vis original"),
-                t("c67f09e8", "Vis oversættelse"),
                 t("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 t("j77292b7", function (e) {
                     return "Vælg kun op til " + e.count + " fil" + i(e.count, "", "er");
                 }),
-                t("d4d35bea", "Oversætter ..."),
-                t("he9c9634", "Oversættelsen kunne ikke hentes"),
-                t("deaf5b16", "Prøv igen"),
-                t("j2198c98", "Skjul oversat post"),
+                t("cbc8fed4", "Var denne oversættelse korrekt? Giv os feedback, så vi kan blive bedre:"),
+                t("d56779a2", "nem at forstå"),
+                t("b6fe8a56", "forvirrende eller uklar"),
                 t("i73a7d48", "Oversat af Google"),
                 t("eeadb767", function (e) {
                     return "Oversat fra " + e.originLanguage + " af Google";
                 }),
-                t("be9b9fb8", "Oversat af Grok"),
                 t("d9c6f69d", function (e) {
                     return "Oversat fra " + e.originLanguage + " af Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 t("caa5ba3d", function (e) {
                     return "Oversat fra " + e.originLanguage + " af X";
                 }),
+                t("deaf5b16", "Prøv igen"),
+                t("a66d80d0", "Oversæt post"),
+                t("be9b9fb8", "Oversat af Grok"),
+                t("he9c9634", "Oversættelsen kunne ikke hentes"),
+                t("j2198c98", "Skjul oversat post"),
+                t("d4d35bea", "Oversætter ..."),
+                t("i7ac410e", "Vis original"),
+                t("c67f09e8", "Vis oversættelse"),
                 t("e0f81ff3", "Oversættelse:"),
                 t("j2862695", function (e) {
                     return "Oversat fra " + e.originLanguage + " af";
                 }),
                 t("b7cb4fab", "Oversat af"),
-                t("cbc8fed4", "Var denne oversættelse korrekt? Giv os feedback, så vi kan blive bedre:"),
-                t("d56779a2", "nem at forstå"),
-                t("b6fe8a56", "forvirrende eller uklar"),
-                t("a66d80d0", "Oversæt post"),
                 t("d4c339b9", function (e) {
                     return "Post fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12066,6 +12066,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ved at købe accepterer du vores ", " og vores ", ". Abonnementer fornys automatisk, indtil de opsiges, som beskrevet i vilkårene. Kan altid opsiges."];
@@ -13291,4 +13297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.f47a29ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.46be044a.js.map

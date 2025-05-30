@@ -104,9 +104,8 @@
                                 .then((e) => {
                                     E(Z, { challenge_response: e, link: u.next_link.link_id }), t(u.next_link);
                                 })
-                                .catch((e) => {
-                                    if ((w({ text: d.Kh }), "NotAllowedError" === e.name)) return E(Z, { challenge_response: "", link: u.next_link.link_id }), void t(u.next_link);
-                                    t({ ...u.fail_link, link_type: c.Iq.Abort });
+                                .catch(() => {
+                                    w({ text: d.Kh }), E(Z, { challenge_response: "", link: u.next_link.link_id }), t(u.next_link);
                                 });
                     }, [u.passkey_challenge, u.fail_link, w, t, u.next_link, E, Z]),
                     u.passkey_challenge
@@ -992,4 +991,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5b3c9a00.5c47586a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5b3c9a00.babfde3a.js.map

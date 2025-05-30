@@ -1271,8 +1271,6 @@
                     return "Baca " + a.replyCount + " balasan";
                 }),
                 i("dc0c8266", "Tanya Grok"),
-                i("i7ac410e", "Tampilkan Asli"),
-                i("c67f09e8", "Tampilkan Terjemahan"),
                 i("f396c105", function (a) {
                     return "" + a.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 i("j77292b7", function (a) {
                     return "Harap pilih hingga " + a.count + " file";
                 }),
-                i("d4d35bea", "Menerjemahkan..."),
-                i("he9c9634", "Gagal memuat terjemahan"),
-                i("deaf5b16", "Coba lagi"),
-                i("j2198c98", "Sembunyikan postingan yang sudah diterjemahkan"),
+                i("cbc8fed4", "Apakah terjemahan ini akurat? Berikan masukan agar kami dapat menyempurnakannya lebih lanjut:"),
+                i("d56779a2", "mudah dipahami"),
+                i("b6fe8a56", "membingungkan atau tidak jelas"),
                 i("i73a7d48", "Diterjemahkan oleh Google"),
                 i("eeadb767", function (a) {
                     return "Diterjemahkan dari bahasa " + a.originLanguage + " oleh Google";
                 }),
-                i("be9b9fb8", "Diterjemahkan oleh Grok"),
                 i("d9c6f69d", function (a) {
                     return "Diterjemahkan dari bahasa " + a.originLanguage + " oleh Grok";
                 }),
@@ -1334,15 +1330,19 @@
                 i("caa5ba3d", function (a) {
                     return "Diterjemahkan dari bahasa " + a.originLanguage + " oleh X";
                 }),
+                i("deaf5b16", "Coba lagi"),
+                i("a66d80d0", "Terjemahkan postingan"),
+                i("be9b9fb8", "Diterjemahkan oleh Grok"),
+                i("he9c9634", "Gagal memuat terjemahan"),
+                i("j2198c98", "Sembunyikan postingan yang sudah diterjemahkan"),
+                i("d4d35bea", "Menerjemahkan..."),
+                i("i7ac410e", "Tampilkan Asli"),
+                i("c67f09e8", "Tampilkan Terjemahan"),
                 i("e0f81ff3", "Terjemahan:"),
                 i("j2862695", function (a) {
                     return "Diterjemahkan dari bahasa " + a.originLanguage + " oleh";
                 }),
                 i("b7cb4fab", "Diterjemahkan oleh"),
-                i("cbc8fed4", "Apakah terjemahan ini akurat? Berikan masukan agar kami dapat menyempurnakannya lebih lanjut:"),
-                i("d56779a2", "mudah dipahami"),
-                i("b6fe8a56", "membingungkan atau tidak jelas"),
-                i("a66d80d0", "Terjemahkan postingan"),
                 i("d4c339b9", function (a) {
                     return "Postingan dari " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -12065,6 +12065,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Dengan membeli, Anda menyetujui ", " kami dan ", " kami. Langganan diperpanjang otomatis hingga dibatalkan, seperti yang dijelaskan dalam Persyaratan. Batalkan kapan saja."];
@@ -13287,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.f94f289a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.7e0b1e2a.js.map

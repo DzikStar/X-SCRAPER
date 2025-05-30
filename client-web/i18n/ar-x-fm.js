@@ -1285,8 +1285,6 @@
                     return "قراءة " + e.replyCount + " من الردود";
                 }),
                 n("dc0c8266", "اسألي Grok"),
-                n("i7ac410e", "عرض الأصلي"),
-                n("c67f09e8", "إظهار الترجمة"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1328,15 +1326,13 @@
                 n("j77292b7", function (e) {
                     return "يُرجى تحديد ما يصل إلى " + e.count + " ملف" + t(e.count, "ات", "ات", " واحد", "ٍ", "ين", "ٍ");
                 }),
-                n("d4d35bea", "جارٍ الترجمة..."),
-                n("he9c9634", "تعذر علينا إحضار الترجمة"),
-                n("deaf5b16", "إعادة المحاولة"),
-                n("j2198c98", "إخفاء المنشور المترجم"),
+                n("cbc8fed4", "هل كانت هذه الترجمة دقيقة؟ أرسلي إلينا تعليقاتكِ لنتمكن من توفير تجربة أفضل:"),
+                n("d56779a2", "سهلة الفهم"),
+                n("b6fe8a56", "غير مفهومة أو غير واضحة"),
                 n("i73a7d48", "تمت ترجمته بواسطة Google"),
                 n("eeadb767", function (e) {
                     return "تمت ترجمته من " + e.originLanguage + " بواسطة Google";
                 }),
-                n("be9b9fb8", "تمت الترجمة بواسطة Grok"),
                 n("d9c6f69d", function (e) {
                     return "تمت الترجمة من " + e.originLanguage + " بواسطة Grok";
                 }),
@@ -1348,15 +1344,19 @@
                 n("caa5ba3d", function (e) {
                     return "تمت الترجمة من " + e.originLanguage + " بواسطة X";
                 }),
+                n("deaf5b16", "إعادة المحاولة"),
+                n("a66d80d0", "ترجمة المنشور"),
+                n("be9b9fb8", "تمت الترجمة بواسطة Grok"),
+                n("he9c9634", "تعذر علينا إحضار الترجمة"),
+                n("j2198c98", "إخفاء المنشور المترجم"),
+                n("d4d35bea", "جارٍ الترجمة..."),
+                n("i7ac410e", "عرض الأصلي"),
+                n("c67f09e8", "إظهار الترجمة"),
                 n("e0f81ff3", "الترجمة:"),
                 n("j2862695", function (e) {
                     return "تم ترجمته من " + e.originLanguage + " بواسطة";
                 }),
                 n("b7cb4fab", "تمت الترجمة بواسطة"),
-                n("cbc8fed4", "هل كانت هذه الترجمة دقيقة؟ أرسلي إلينا تعليقاتكِ لنتمكن من توفير تجربة أفضل:"),
-                n("d56779a2", "سهلة الفهم"),
-                n("b6fe8a56", "غير مفهومة أو غير واضحة"),
-                n("a66d80d0", "ترجمة المنشور"),
                 n("d4c339b9", function (e) {
                     return "منشور من " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12079,6 +12079,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["من خلال الشراء فإنكِ توافقين على ", " و", "المتبعة لدينا. يتم تجديد الاشتراكات تلقائيًا إلى أن يتم إلغاؤها، كما هو موضح في الشروط. يمكنكِ الإلغاء في أي وقت."];
@@ -13303,4 +13309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.3e6b2fea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.1c289cea.js.map

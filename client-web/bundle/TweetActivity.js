@@ -2,47 +2,47 @@
     ["bundle.TweetActivity"],
     {
         270422: (e) => {
-            e.exports = { queryId: "RVKeGalYV850rVzuS2D5uw", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "7igcsko9GEFrWgnFAVvo6A", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         607959: (e) => {
-            e.exports = { queryId: "bj_shCV5CJmwiHVY-gExTg", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "nLstTBzKxVp_gsayODje6w", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         348271: (e) => {
-            e.exports = { queryId: "gIVkxozo1j4rqC0IFBElDw", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "Dl6RZ-rTWP1d4JSCxm79Jw", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
-        413798: (e, t, i) => {
+        413798: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => _ });
-            var r = i(703710),
-                s = i(270422),
-                o = i.n(s),
-                n = i(607959),
-                a = i.n(n),
-                l = i(348271),
-                c = i.n(l),
-                d = i(934309);
-            const _ = ({ apiClient: e, featureSwitches: t }) => ({ fetchLikedBy: ({ count: i, cursor: s, tweetId: n }) => e.graphQL(o(), { tweetId: n, count: i, cursor: s, includePromotedContent: !0, ...(0, r.d)(t) }, (e, t) => !t?.favoriters_timeline?.timeline).then((e) => e?.favoriters_timeline?.timeline || d.cY), fetchRetweetedBy: ({ count: i, cursor: s, tweetId: o }) => e.graphQL(a(), { tweetId: o, count: i, cursor: s, includePromotedContent: !0, ...(0, r.d)(t) }, (e, t) => !t?.retweeters_timeline?.timeline).then((e) => e?.retweeters_timeline?.timeline || d.cY), fetchEditHistory: ({ tweetId: i }) => e.graphQL(c(), { tweetId: i, ...(0, r.d)(t), withQuickPromoteEligibilityTweetFields: !0 }, (e, t) => !t?.tweet_result_by_rest_id?.result).then((e) => (e?.tweet_result_by_rest_id?.result && e.tweet_result_by_rest_id.result.edit_history_timeline && e.tweet_result_by_rest_id.result.edit_history_timeline?.timeline) || d.cY) });
+            r.d(t, { Z: () => _ });
+            var i = r(703710),
+                o = r(270422),
+                s = r.n(o),
+                n = r(607959),
+                a = r.n(n),
+                l = r(348271),
+                c = r.n(l),
+                d = r(934309);
+            const _ = ({ apiClient: e, featureSwitches: t }) => ({ fetchLikedBy: ({ count: r, cursor: o, tweetId: n }) => e.graphQL(s(), { tweetId: n, count: r, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.favoriters_timeline?.timeline).then((e) => e?.favoriters_timeline?.timeline || d.cY), fetchRetweetedBy: ({ count: r, cursor: o, tweetId: s }) => e.graphQL(a(), { tweetId: s, count: r, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.retweeters_timeline?.timeline).then((e) => e?.retweeters_timeline?.timeline || d.cY), fetchEditHistory: ({ tweetId: r }) => e.graphQL(c(), { tweetId: r, ...(0, i.d)(t), withQuickPromoteEligibilityTweetFields: !0 }, (e, t) => !t?.tweet_result_by_rest_id?.result).then((e) => (e?.tweet_result_by_rest_id?.result && e.tweet_result_by_rest_id.result.edit_history_timeline && e.tweet_result_by_rest_id.result.edit_history_timeline?.timeline) || d.cY) });
         },
-        625661: (e, t, i) => {
+        625661: (e, t, r) => {
             "use strict";
-            i.d(t, { ZP: () => p });
-            var r = i(202784),
-                s = i(614983),
-                o = i.n(s),
-                n = i(325686),
-                a = i(370006),
-                l = i(786998),
-                c = i(929028),
-                d = i(386802);
-            function _(e, t, i) {
-                return e || (!t && i ? "fixed" : void 0);
+            r.d(t, { ZP: () => p });
+            var i = r(202784),
+                o = r(614983),
+                s = r.n(o),
+                n = r(325686),
+                a = r(370006),
+                l = r(786998),
+                c = r(929028),
+                d = r(386802);
+            function _(e, t, r) {
+                return e || (!t && r ? "fixed" : void 0);
             }
-            class p extends r.Component {
+            class p extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
                             const { history: e, onBackClick: t } = this.props;
-                            o()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
+                            s()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
                         }),
                         (this.goBack = () => {
                             const { backLocation: e, history: t } = this.props;
@@ -50,207 +50,208 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: s, hideBackButton: o, isFullWidth: n, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: h, secondaryBar: m, style: b, subtitle: w, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: k, withBackground: v, withWideContainer: C } = this.props,
-                        { isModal: E } = this.context,
-                        x = o ? d : r.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        T = (function (e, t, i) {
-                            return e && !(t && i);
-                        })(!!v, E, !!m);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: c, leftControl: x, middleControl: p, position: _(u, E, s), rightControl: h, style: b, subtitle: w, title: g, titleDomId: f, titleIconCell: y, titleIconCellSize: k, withBackground: T, withWideContainer: C }), m || null);
+                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: o, hideBackButton: s, isFullWidth: n, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: h, secondaryBar: m, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: v, withWideContainer: C } = this.props,
+                        { isModal: x } = this.context,
+                        S = s ? d : i.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        E = (function (e, t, r) {
+                            return e && !(t && r);
+                        })(!!v, x, !!m);
+                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: n, isLarge: c, leftControl: S, middleControl: p, position: _(u, x, o), rightControl: h, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: E, withWideContainer: C }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: t } = this.context,
-                        i = c.Z.getBackgroundStyles();
-                    return t ? r.createElement(n.Z, { style: !!e && i }, this._renderContent()) : this._renderContent();
+                        r = c.Z.getBackgroundStyles();
+                    return t ? i.createElement(n.Z, { style: !!e && r }, this._renderContent()) : this._renderContent();
                 }
             }
             (p.contextType = d.Z), (p.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
-        980407: (e, t, i) => {
+        980407: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => m, w: () => u });
-            var r = i(202784),
-                s = i(325686),
-                o = i(108362),
-                n = i(386802),
-                a = i(392237),
-                l = i(652904),
-                c = i(555079),
-                d = i(625661),
-                _ = i(449067),
-                p = i(715601);
-            class u extends r.Component {
+            r.d(t, { Z: () => m, w: () => u });
+            var i = r(202784),
+                o = r(325686),
+                s = r(108362),
+                n = r(386802),
+                a = r(392237),
+                l = r(652904),
+                c = r(555079),
+                d = r(625661),
+                _ = r(449067),
+                p = r(715601);
+            class u extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: o, centerTitle: n, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, rightControl: b, secondaryBar: w, subtitle: g, title: f } = this.props,
-                                { isModal: y } = this.context;
-                            return r.createElement(s.Z, { style: y ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, r.createElement(d.ZP, { backButtonType: i || (y ? "close" : "back"), backLocation: o, centerTitle: n, fixed: !y, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, ref: e, rightControl: b, secondaryBar: w, style: [y && h.appBarModal, t], subtitle: g, title: f, titleDomId: c.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: s, centerTitle: n, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, rightControl: b, secondaryBar: w, subtitle: g, title: y } = this.props,
+                                { isModal: f } = this.context;
+                            return i.createElement(o.Z, { style: f ? [h.childViewAppBarRoot, h.appBarZindex] : h.appBarZindex }, i.createElement(d.ZP, { backButtonType: r || (f ? "close" : "back"), backLocation: s, centerTitle: n, fixed: !f, hideBackButton: a, history: l, isFullWidth: _, isLarge: p, middleControl: u, onBackClick: m, ref: e, rightControl: b, secondaryBar: w, style: [f && h.appBarModal, t], subtitle: g, title: y, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
-                                { isModal: i } = this.context;
-                            t && (i ? window.requestAnimationFrame(() => t(e)) : t(e));
+                                { isModal: r } = this.context;
+                            t && (r ? window.requestAnimationFrame(() => t(e)) : t(e));
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: n, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: u, title: m, withoutBottomBarMobile: b } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: n, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: u, title: m, withoutBottomBarMobile: b } = this.props,
                         { isModal: w } = this.context,
                         g = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(l.Z, null, r.createElement(_.Z.Configure, { documentTitle: a, headerless: !0, title: m }), r.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [h.root, w && h.rootModal] }, !w && g, r.createElement(o.Z, { isFullWidth: c, isLarge: d, style: [h.container, w && h.containerModal, n] }, w ? r.createElement(p.Z, { style: h.viewport }, g, i) : i), t ? r.createElement(s.Z, { style: [h.bottomBarModal, !w && !b && h.bottomBarMobile] }, r.createElement(o.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return i.createElement(l.Z, null, i.createElement(_.Z.Configure, { documentTitle: a, headerless: !0, title: m }), i.createElement(o.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [h.root, w && h.rootModal] }, !w && g, i.createElement(s.Z, { isFullWidth: c, isLarge: d, style: [h.container, w && h.containerModal, n] }, w ? i.createElement(p.Z, { style: h.viewport }, g, r) : r), t ? i.createElement(o.Z, { style: [h.bottomBarModal, !w && !b && h.bottomBarMobile] }, i.createElement(s.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = n.Z);
             const h = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: a.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
                 m = u;
         },
-        507651: (e, t, i) => {
+        507651: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => c });
-            var r = i(807896),
-                s = i(202784),
-                o = i(107267),
-                n = i(403556),
-                a = i(791632);
+            r.d(t, { Z: () => c });
+            var i = r(807896),
+                o = r(202784),
+                s = r(107267),
+                n = r(403556),
+                a = r(791632);
             const l = (e) => {
-                    const t = (0, o.useHistory)();
-                    return s.createElement(n.Z, (0, r.Z)({}, e, { isCompact: (0, a.HD)(t) }));
+                    const t = (0, s.useHistory)(),
+                        { isCompact: r, ...l } = e;
+                    return o.createElement(n.Z, (0, i.Z)({}, l, { isCompact: r || (0, a.HD)(t) }));
                 },
-                c = s.memo(l);
+                c = o.memo(l);
         },
-        652904: (e, t, i) => {
+        652904: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => d });
-            var r = i(202784),
-                s = i(500002),
-                o = i(668214),
-                n = i(997174),
-                a = i(118823);
-            const l = (0, o.Z)()
+            r.d(t, { Z: () => d });
+            var i = r(202784),
+                o = r(500002),
+                s = r(668214),
+                n = r(997174),
+                a = r(118823);
+            const l = (0, s.Z)()
                 .propsFromActions(() => ({ updateLocation: a.YF, updateTweetDetailNav: n.NH }))
                 .withAnalytics();
-            class c extends r.Component {
+            class c extends i.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
                 componentDidUpdate(e) {
                     const {
                             history: { location: t },
-                            location: { pathname: i, search: r },
-                            locationKey: s,
+                            location: { pathname: r, search: i },
+                            locationKey: o,
                         } = this.props,
                         {
-                            location: { pathname: o, search: n },
+                            location: { pathname: s, search: n },
                             locationKey: a,
                         } = e;
                     let l = !1;
-                    t.pathname !== i ? (this._isInBackground = !0) : this._isInBackground && t.pathname === i && ((this._isInBackground = !1), (l = !0));
-                    const c = s || a;
-                    ((c && s !== a) || (!c && i !== o) || r !== n || l) && this._performPageUpdates(this.props);
+                    t.pathname !== r ? (this._isInBackground = !0) : this._isInBackground && t.pathname === r && ((this._isInBackground = !1), (l = !0));
+                    const c = o || a;
+                    ((c && o !== a) || (!c && r !== s) || i !== n || l) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
                 }
                 _performPageUpdates(e) {
-                    const { analytics: t, updateLocation: i, updateTweetDetailNav: r } = e;
-                    t.scribePageImpression(), i(t.contextualScribeNamespace, t.contextualScribeData), r(t.contextualScribeNamespace);
+                    const { analytics: t, updateLocation: r, updateTweetDetailNav: i } = e;
+                    t.scribePageImpression(), r(t.contextualScribeNamespace, t.contextualScribeData), i(t.contextualScribeNamespace);
                 }
             }
             c.defaultProps = { children: null };
-            const d = (0, s.ZP)(l(c));
+            const d = (0, o.ZP)(l(c));
         },
-        886191: (e, t, i) => {
+        886191: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => k });
-            var r = i(202784),
-                s = i(731708),
-                o = i(457311),
-                n = i(111677),
-                a = i.n(n),
-                l = i(912021),
-                c = i(864702),
-                d = i(479506),
-                _ = i(903019),
-                p = i(519896),
-                u = i(774006),
-                h = i(443781),
-                m = i(810641),
-                b = i(335632);
+            r.d(t, { Z: () => k });
+            var i = r(202784),
+                o = r(731708),
+                s = r(457311),
+                n = r(111677),
+                a = r.n(n),
+                l = r(912021),
+                c = r(864702),
+                d = r(479506),
+                _ = r(903019),
+                p = r(519896),
+                u = r(774006),
+                h = r(443781),
+                m = r(810641),
+                b = r(335632);
             const w = a().c09de2d4,
                 g = a().ae111c99,
-                f = r.createElement(a().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(s.ZP, { link: "/settings/search" }, a().f191a2ba));
-            class y extends r.Component {
+                y = i.createElement(a().I18NFormatMessage, { $i18n: "e7e44bab" }, i.createElement(o.ZP, { link: "/settings/search" }, a().f191a2ba));
+            class f extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._shouldStoreTypeaheadItem = (e) => e === d.Z.ItemType.USER || e === d.Z.ItemType.TOPIC || e === d.Z.ItemType.EVENT),
                         (this._getModule = () => {
-                            const { query: e, querySrc: t, searchFilters: i, searchMode: r, urtEndpointOptions: s, vertical: o } = this.props,
+                            const { query: e, querySrc: t, searchFilters: r, searchMode: i, urtEndpointOptions: o, vertical: s } = this.props,
                                 { featureSwitches: n } = this.context,
                                 a = n.isTrue("search_timelines_graphql_enabled");
-                            return this._getMemoizedModule(e, t, r, i, o, s, a);
+                            return this._getMemoizedModule(e, t, i, r, s, o, a);
                         }),
                         (this._renderEmptyTimeline = () => {
                             const { emptyStateComponent: e, query: t } = this.props;
-                            return e || r.createElement(o.Z, { header: g({ query: t }), message: f });
+                            return e || i.createElement(s.Z, { header: g({ query: t }), message: y });
                         }),
-                        (this._getMemoizedModule = (0, l.Z)((e, t, i, r, s, o, n) => (0, u.Z)({ query: e, searchMode: i, querySource: t, searchFilters: r, vertical: s, urtEndpointOptions: o, searchTimelinesGraphQLEnabled: n }))),
+                        (this._getMemoizedModule = (0, l.Z)((e, t, r, i, o, s, n) => (0, u.Z)({ query: e, searchMode: r, querySource: t, searchFilters: i, vertical: o, urtEndpointOptions: s, searchTimelinesGraphQLEnabled: n }))),
                         (this._getMemoizedEntryConfiguration = (0, l.Z)((e) => (({ shouldStoreTypeaheadItem: e, withUserPresence: t }) => ({ ...(0, b.G)({ tweetDismissable: !0, displayBlocked: !0, shouldStoreTypeaheadItem: e, withUserPresence: t }) }))({ shouldStoreTypeaheadItem: this._shouldStoreTypeaheadItem, withUserPresence: e })));
                 }
                 render() {
                     const e = this.props.searchMode !== _.N3.Live;
-                    return r.createElement(m.Z, { apiErrorHandlerMap: c.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: p.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: w });
+                    return i.createElement(m.Z, { apiErrorHandlerMap: c.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: p.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: w });
                 }
             }
-            y.contextType = h.rC;
-            const k = y;
+            f.contextType = h.rC;
+            const k = f;
         },
-        864702: (e, t, i) => {
+        864702: (e, t, r) => {
             "use strict";
-            i.d(t, { d: () => l });
-            var r = i(111677),
-                s = i.n(r),
-                o = i(615656),
-                n = i(51525);
-            const a = s().i1801686,
-                l = { [o.ZP.GenericForbidden]: { toast: (0, n.j)() }, [o.ZP.InvalidRequestUrl]: { toast: { text: a, withClearButton: !0 } }, showToast: !0 };
+            r.d(t, { d: () => l });
+            var i = r(111677),
+                o = r.n(i),
+                s = r(615656),
+                n = r(51525);
+            const a = o().i1801686,
+                l = { [s.ZP.GenericForbidden]: { toast: (0, n.j)() }, [s.ZP.InvalidRequestUrl]: { toast: { text: a, withClearButton: !0 } }, showToast: !0 };
         },
-        883432: (e, t, i) => {
+        883432: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => r });
-            const r = { AdvancedSearchPage: "advanced_search_page", CashtagClick: "cashtag_click", HashtagClick: "hashtag_click", PromotedTrendClick: "promoted_trend_click", RecentSearchClick: "recent_search_click", SavedSearchClick: "saved_search_click", RelatedQueryClick: "related_query_click", SpellingCorrectionClick: "spelling_correction_click", SpellingCorrectionRevertClick: "spelling_suggestion_revert_click", SpellingExpansionClick: "spelling_expansion_click", SpellingExpansionRevertClick: "spelling_expansion_revert_click", SpellingSuggestionClick: "spelling_suggestion_click", TrendClick: "trend_click", TrendView: "trend_view", TypeaheadClick: "typeahead_click", Typed: "typed_query", TVSearch: "TvSearch", TweetDetailQuoteTweet: "tdqt", TweetDetailSimilarPost: "tweet_detail_similar_posts" };
+            r.d(t, { Z: () => i });
+            const i = { AdvancedSearchPage: "advanced_search_page", CashtagClick: "cashtag_click", HashtagClick: "hashtag_click", PromotedTrendClick: "promoted_trend_click", RecentSearchClick: "recent_search_click", SavedSearchClick: "saved_search_click", RelatedQueryClick: "related_query_click", SpellingCorrectionClick: "spelling_correction_click", SpellingCorrectionRevertClick: "spelling_suggestion_revert_click", SpellingExpansionClick: "spelling_expansion_click", SpellingExpansionRevertClick: "spelling_expansion_revert_click", SpellingSuggestionClick: "spelling_suggestion_click", TrendClick: "trend_click", TrendView: "trend_view", TypeaheadClick: "typeahead_click", Typed: "typed_query", TVSearch: "TvSearch", TweetDetailQuoteTweet: "tdqt", TweetDetailSimilarPost: "tweet_detail_similar_posts" };
         },
-        153386: (e, t, i) => {
+        153386: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => a });
-            var r = i(413798),
-                s = i(750085),
-                o = i(218951),
-                n = i(952257);
-            const a = (e) => (0, o.Z)({ timelineId: `favoritersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchLikedBy, getEndpointParams: ({ count: t, cursor: i }) => ({ count: t, cursor: "string" == typeof i ? i : void 0, tweetId: e }) }, formatResponse: s.Z, context: "FETCH_TWEET_ACTIVITY_LIKES", perfKey: "favoritersGraphQL", staleIntervalMs: n.J });
+            r.d(t, { Z: () => a });
+            var i = r(413798),
+                o = r(750085),
+                s = r(218951),
+                n = r(952257);
+            const a = (e) => (0, s.Z)({ timelineId: `favoritersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchLikedBy, getEndpointParams: ({ count: t, cursor: r }) => ({ count: t, cursor: "string" == typeof r ? r : void 0, tweetId: e }) }, formatResponse: o.Z, context: "FETCH_TWEET_ACTIVITY_LIKES", perfKey: "favoritersGraphQL", staleIntervalMs: n.J });
         },
-        481918: (e, t, i) => {
+        481918: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => a });
-            var r = i(413798),
-                s = i(750085),
-                o = i(218951),
-                n = i(952257);
-            const a = (e) => (0, o.Z)({ timelineId: `retweetersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchRetweetedBy, getEndpointParams: ({ count: t, cursor: i }) => ({ count: t, cursor: "string" == typeof i ? i : void 0, tweetId: e }) }, formatResponse: s.Z, context: "FETCH_TWEET_ACTIVITY_RETWEETS", perfKey: "retweetersGraphQL", staleIntervalMs: n.J });
+            r.d(t, { Z: () => a });
+            var i = r(413798),
+                o = r(750085),
+                s = r(218951),
+                n = r(952257);
+            const a = (e) => (0, s.Z)({ timelineId: `retweetersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchRetweetedBy, getEndpointParams: ({ count: t, cursor: r }) => ({ count: t, cursor: "string" == typeof r ? r : void 0, tweetId: e }) }, formatResponse: o.Z, context: "FETCH_TWEET_ACTIVITY_RETWEETS", perfKey: "retweetersGraphQL", staleIntervalMs: n.J });
         },
-        774006: (e, t, i) => {
+        774006: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => m, u: () => h });
-            var r = i(644829),
-                s = i(750085),
-                o = i(903019),
-                n = i(883432),
-                a = i(555875),
-                l = i(218951);
+            r.d(t, { Z: () => m, u: () => h });
+            var i = r(644829),
+                o = r(750085),
+                s = r(903019),
+                n = r(883432),
+                a = r(555875),
+                l = r(218951);
             const c = "search-",
                 d = " near:me",
                 _ = " filter:follows",
-                p = { [o.N3.Image]: { result_filter: o.N3.Image }, [o.N3.List]: { result_filter: o.N3.List }, [o.N3.Live]: { tweet_search_mode: o.N3.Live }, [o.N3.Media]: { result_filter: o.N3.Media }, [o.N3.Top]: {}, [o.N3.User]: { result_filter: o.N3.User }, [o.N3.Video]: { result_filter: o.N3.Video } },
+                p = { [s.N3.Image]: { result_filter: s.N3.Image }, [s.N3.List]: { result_filter: s.N3.List }, [s.N3.Live]: { tweet_search_mode: s.N3.Live }, [s.N3.Media]: { result_filter: s.N3.Media }, [s.N3.Top]: {}, [s.N3.User]: { result_filter: s.N3.User }, [s.N3.Video]: { result_filter: s.N3.Video } },
                 u = (e) => (((e) => e === n.Z.SpellingCorrectionRevertClick || e === n.Z.SpellingExpansionRevertClick)(e) ? "-revert" : ""),
                 h = () => (e, t) => {
                     e(
@@ -259,132 +260,132 @@
                             .map((e) => (0, a.$q)(e)),
                     );
                 },
-                m = ({ query: e, searchMode: t = o.N3.Top, querySource: i, searchFilters: n, vertical: a, urtEndpointOptions: h, searchTimelinesGraphQLEnabled: m }) => {
-                    const b = u(i),
+                m = ({ query: e, searchMode: t = s.N3.Top, querySource: r, searchFilters: n, vertical: a, urtEndpointOptions: h, searchTimelinesGraphQLEnabled: m }) => {
+                    const b = u(r),
                         w = n && n.peopleFilter ? "searcher_follows" : void 0,
                         g = w ? "-pf" : "",
-                        f = n && n.locationFilter && !e.includes(d) ? `${e}${d}` : e,
-                        y = { timelineId: `${c}${f}-${t}${b}${g}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearch, getEndpointParams: (e) => ({ ...h?.requestParams, q: f, social_filter: w, vertical: a, ...p[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === o.N3.Live ? 5e3 : void 0, timelineType: "search" };
+                        y = n && n.locationFilter && !e.includes(d) ? `${e}${d}` : e,
+                        f = { timelineId: `${c}${y}-${t}${b}${g}`, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchSearch, getEndpointParams: (e) => ({ ...h?.requestParams, q: y, social_filter: w, vertical: a, ...p[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === s.N3.Live ? 5e3 : void 0, timelineType: "search" };
                     if (m) {
-                        const e = w && !f.includes(_) ? `${f}${_}` : f,
+                        const e = w && !y.includes(_) ? `${y}${_}` : y,
                             n = ((e) => {
                                 switch (e) {
-                                    case o.N3.Image:
+                                    case s.N3.Image:
                                         return "Photos";
-                                    case o.N3.List:
+                                    case s.N3.List:
                                         return "Lists";
-                                    case o.N3.Media:
+                                    case s.N3.Media:
                                         return "Media";
-                                    case o.N3.Top:
+                                    case s.N3.Top:
                                         return "Top";
-                                    case o.N3.User:
+                                    case s.N3.User:
                                         return "People";
-                                    case o.N3.Video:
+                                    case s.N3.Video:
                                         return "Videos";
-                                    case o.N3.Live:
+                                    case s.N3.Live:
                                     default:
                                         return "Latest";
                                 }
                             })(t),
-                            a = `gql-${c}${f}-${t}${b}${g}`;
-                        return (0, l.Z)({ ...y, timelineId: a, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: s.Z, network: { getEndpointParams: ({ count: t, cursor: r }) => ({ rawQuery: e, count: t, product: n, querySource: i, cursor: "string" == typeof r ? r : void 0 }), getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearchGraphQL } });
+                            a = `gql-${c}${y}-${t}${b}${g}`;
+                        return (0, l.Z)({ ...f, timelineId: a, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: o.Z, network: { getEndpointParams: ({ count: t, cursor: i }) => ({ rawQuery: e, count: t, product: n, querySource: r, cursor: "string" == typeof i ? i : void 0 }), getEndpoint: (e) => e.withEndpoint(i.Z).fetchSearchGraphQL } });
                     }
-                    return (0, l.Z)(y);
+                    return (0, l.Z)(f);
                 };
         },
-        952257: (e, t, i) => {
+        952257: (e, t, r) => {
             "use strict";
-            i.d(t, { J: () => r });
-            const r = 1e4;
+            r.d(t, { J: () => i });
+            const i = 1e4;
         },
-        394660: (e, t, i) => {
+        394660: (e, t, r) => {
             "use strict";
-            i.r(t), i.d(t, { ShowSimilarPostsScreen: () => A, default: () => F });
-            var r = i(202784),
-                s = i(457311),
-                o = i(782261),
-                n = i(111677),
-                a = i.n(n),
-                l = i(912021),
-                c = i(718e3),
-                d = i(252021),
-                _ = i(443781),
-                p = i(652904),
-                u = i(810641),
-                h = i(688715),
-                m = i(907552),
-                b = i(668214),
-                w = i(601576);
+            r.r(t), r.d(t, { ShowSimilarPostsScreen: () => $, default: () => W });
+            var i = r(202784),
+                o = r(457311),
+                s = r(782261),
+                n = r(111677),
+                a = r.n(n),
+                l = r(912021),
+                c = r(718e3),
+                d = r(252021),
+                _ = r(443781),
+                p = r(652904),
+                u = r(810641),
+                h = r(688715),
+                m = r(907552),
+                b = r(668214),
+                w = r(601576);
             const g = (0, b.Z)()
                     .propsFromActions(() => ({ addToast: w.fz }))
                     .withAnalytics(),
-                f = a().fd67deaa,
-                y = a().f9183bb6;
+                y = a().fd67deaa,
+                f = a().f9183bb6;
             const k = g(function (e) {
-                    const { postId: t, scribeNamespace: i } = e,
-                        s = ((e) => (0, h.ju)(`https://x.com/i/status/${e}/similar`))(t);
-                    return r.createElement(m.S0, { scribeNamespace: i, url: s }, r.createElement(m.by, { label: f, type: "dm" }), r.createElement(m.by, { label: y, type: "copy" }));
+                    const { postId: t, scribeNamespace: r } = e,
+                        o = ((e) => (0, h.ju)(`https://x.com/i/status/${e}/similar`))(t);
+                    return i.createElement(m.S0, { scribeNamespace: r, url: o }, i.createElement(m.by, { label: y, type: "dm" }), i.createElement(m.by, { label: f, type: "copy" }));
                 }),
                 v = k;
-            var C = i(644829),
-                E = i(750085),
-                x = i(218951);
-            const T = (e) => (0, x.Z)({ timelineId: `similarPostsGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(C.Z).fetchSimilarPosts, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: E.Z, context: "FETCH_SIMILAR_POSTS", perfKey: "similarPostsGraphQL" });
-            var Z = i(836255);
-            const S = { page: "similar_posts", section: "similar_posts" },
+            var C = r(644829),
+                x = r(750085),
+                S = r(218951);
+            const E = (e) => (0, S.Z)({ timelineId: `similarPostsGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(C.Z).fetchSimilarPosts, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: x.Z, context: "FETCH_SIMILAR_POSTS", perfKey: "similarPostsGraphQL" });
+            var T = r(836255);
+            const Z = { page: "similar_posts", section: "similar_posts" },
                 I = (e, t) => t.match.params.statusId,
                 B = (e, t) => t.match.params.screenName,
                 L = (e, t) => {
-                    const i = I(0, t);
-                    return i ? Z.Z.selectHydrated(e, i) : void 0;
+                    const r = I(0, t);
+                    return r ? T.Z.selectHydrated(e, r) : void 0;
                 },
-                P = () => S,
+                P = () => Z,
                 R = (0, b.Z)()
                     .propsFromState(() => ({ screenName: B, statusId: I, scribeNamespace: P, tweet: L }))
-                    .withAnalytics(S),
+                    .withAnalytics(Z),
                 q = a().hea3f8ac,
                 M = a().a09331e0,
                 N = a().a5ab75ae,
-                $ = a().ce637c0e;
-            class A extends r.Component {
+                A = a().ce637c0e;
+            class $ extends i.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._renderEmptyState = (e) => () => r.createElement(s.Z, { header: e })),
-                        (this._render = (e, t, i) => r.createElement(u.Z, { fetchOptions: e, module: this._getModule(), renderEmptyState: this._renderEmptyState(i), title: t })),
-                        (this._getMemoizedModule = (0, l.Z)((e) => T(e))),
+                        (this._renderEmptyState = (e) => () => i.createElement(o.Z, { header: e })),
+                        (this._render = (e, t, r) => i.createElement(u.Z, { fetchOptions: e, module: this._getModule(), renderEmptyState: this._renderEmptyState(r), title: t })),
+                        (this._getMemoizedModule = (0, l.Z)((e) => E(e))),
                         (this._getModule = () => {
                             const { statusId: e } = this.props;
                             return this._getMemoizedModule(e);
                         });
                 }
                 render() {
-                    const { history: e, screenName: t, scribeNamespace: i, statusId: s, tweet: n } = this.props,
+                    const { history: e, screenName: t, scribeNamespace: r, statusId: o, tweet: n } = this.props,
                         { featureSwitches: a } = this.context,
-                        l = n && o.Z.isArticlePost(n),
+                        l = n && s.Z.isArticlePost(n),
                         _ = l ? M : q,
-                        u = l ? $ : N,
+                        u = l ? A : N,
                         h = { count: a.getNumberValue("responsive_web_show_similar_posts_count") || 50 },
-                        m = r.createElement(v, { postId: s, scribeNamespace: i });
-                    return r.createElement(p.Z, null, r.createElement(d.Z, { backLocation: `/${t}/status/${s}`, documentTitle: _, history: e, primaryContent: this._render(h, _, u), rightControl: m, sidebarContent: r.createElement(c.Z, null), title: _ }));
+                        m = i.createElement(v, { postId: o, scribeNamespace: r });
+                    return i.createElement(p.Z, null, i.createElement(d.Z, { backLocation: `/${t}/status/${o}`, documentTitle: _, history: e, primaryContent: this._render(h, _, u), rightControl: m, sidebarContent: i.createElement(c.Z, null), title: _ }));
                 }
             }
-            A.contextType = _.rC;
-            const F = R(A);
+            $.contextType = _.rC;
+            const W = R($);
         },
-        955875: (e, t, i) => {
+        955875: (e, t, r) => {
             "use strict";
-            i.r(t), i.d(t, { TweetActivityScreen: () => T, default: () => Z });
-            var r = i(202784),
-                s = i(457311),
-                o = i(111677),
-                n = i.n(o),
-                a = i(980407),
-                l = i(810641),
-                c = i(615027),
-                d = i(24949),
-                _ = i(668214),
-                p = i(153386),
-                u = i(481918);
+            r.r(t), r.d(t, { TweetActivityScreen: () => E, default: () => T });
+            var i = r(202784),
+                o = r(457311),
+                s = r(111677),
+                n = r.n(s),
+                a = r(980407),
+                l = r(810641),
+                c = r(615027),
+                d = r(24949),
+                _ = r(668214),
+                p = r(153386),
+                u = r(481918);
             const h = (e, t) => t.match.params.statusId,
                 m = (e, t) => t.match.params.screenName,
                 b = (e, t) => t.match.params.tweetEngagementsSubroute,
@@ -392,63 +393,63 @@
                 g = (0, _.Z)()
                     .propsFromState(() => ({ activityType: b, screenName: m, statusId: h, urtModule: (0, d.P1)(b, h, (e, t) => w[e]?.(t)) }))
                     .withAnalytics({ page: "tweet_activity", section: "tweet_activity" }),
-                f = n().f08d8d08,
-                y = n().f0ccff52,
+                y = n().f08d8d08,
+                f = n().f0ccff52,
                 k = n().fc1acb54,
                 v = n().e3527230,
                 C = { likes: n().i3e8b808, retweets: n().c69fd704 },
-                E = { likes: n().f12858d4, retweets: n().fe62cfec },
-                x = { likes: () => r.createElement(s.Z, { header: k, message: v }), retweets: () => r.createElement(s.Z, { header: f, message: y }) };
-            function T({ activityType: e, history: t, screenName: i, statusId: s, urtModule: o }) {
-                const n = `/${i.toLowerCase()}/status/${s}`;
-                return o ? r.createElement(a.Z, { backLocation: n, history: t, title: E[e] }, r.createElement(l.Z, { loadingAccessibilityLabel: C[e], module: o, renderEmptyState: x[e], title: E[e] })) : r.createElement(c.Z, { to: n });
+                x = { likes: n().f12858d4, retweets: n().fe62cfec },
+                S = { likes: () => i.createElement(o.Z, { header: k, message: v }), retweets: () => i.createElement(o.Z, { header: y, message: f }) };
+            function E({ activityType: e, history: t, screenName: r, statusId: o, urtModule: s }) {
+                const n = `/${r.toLowerCase()}/status/${o}`;
+                return s ? i.createElement(a.Z, { backLocation: n, history: t, title: x[e] }, i.createElement(l.Z, { loadingAccessibilityLabel: C[e], module: s, renderEmptyState: S[e], title: x[e] })) : i.createElement(c.Z, { to: n });
             }
-            const Z = g(T);
+            const T = g(E);
         },
-        913162: (e, t, i) => {
+        913162: (e, t, r) => {
             "use strict";
-            i.r(t), i.d(t, { TweetEngagementsScreen: () => A, default: () => F });
-            i(136728);
-            var r = i(202784),
-                s = i(457311),
-                o = i(111677),
-                n = i.n(o),
-                a = i(718e3),
-                l = i(727828),
-                c = i(252021),
-                d = i(507651),
-                _ = i(443781),
-                p = i(652904),
-                u = i(886191),
-                h = i(810641),
-                m = i(903019),
-                b = i(883432),
-                w = i(615027),
-                g = i(24949),
-                f = i(668214),
-                y = i(836255),
-                k = i(153386),
-                v = i(481918),
-                C = i(919022);
-            const E = { likes: k.Z, retweets: v.Z, quotes: void 0 },
-                x = (e, t) => t.match.params.statusId,
-                T = (e, t) => t.match.params.screenName,
-                Z = (e, t) => t.match.params.tweetEngagementsSubroute,
-                S = (0, f.Z)()
+            r.r(t), r.d(t, { TweetEngagementsScreen: () => $, default: () => W });
+            r(136728);
+            var i = r(202784),
+                o = r(457311),
+                s = r(111677),
+                n = r.n(s),
+                a = r(718e3),
+                l = r(727828),
+                c = r(252021),
+                d = r(507651),
+                _ = r(443781),
+                p = r(652904),
+                u = r(886191),
+                h = r(810641),
+                m = r(903019),
+                b = r(883432),
+                w = r(615027),
+                g = r(24949),
+                y = r(668214),
+                f = r(836255),
+                k = r(153386),
+                v = r(481918),
+                C = r(919022);
+            const x = { likes: k.Z, retweets: v.Z, quotes: void 0 },
+                S = (e, t) => t.match.params.statusId,
+                E = (e, t) => t.match.params.screenName,
+                T = (e, t) => t.match.params.tweetEngagementsSubroute,
+                Z = (0, y.Z)()
                     .propsFromState(() => ({
-                        mode: Z,
-                        screenName: T,
-                        statusId: x,
+                        mode: T,
+                        screenName: E,
+                        statusId: S,
                         tweet: (0, g.P1)(
                             (e) => e,
-                            x,
-                            (e, t) => y.Z.selectHydrated(e, t),
+                            S,
+                            (e, t) => f.Z.selectHydrated(e, t),
                         ),
-                        urtModule: (0, g.P1)(Z, x, (e, t) => E[e]?.(t)),
+                        urtModule: (0, g.P1)(T, S, (e, t) => x[e]?.(t)),
                         viewer: C.ZP.selectViewerUser,
                     }))
                     .withAnalytics({ page: "full_tweet_activity", section: "full_tweet_activity" });
-            var I = i(545389);
+            var I = r(545389);
             const B = n().e35f2534,
                 L = n().i60dfa72,
                 P = { likes: n().dc604dda, retweets: n().cdd4ef4a, quotes: n().icc72234 },
@@ -456,76 +457,76 @@
                 q = { likes: n().hc35b530, retweets: n().e0d6a246, quotes: n().aea3c420 },
                 M = { likes: n().i2a26cb4, retweets: n().f0ccff52, quotes: n().i9b724e8 },
                 N = { vertical: "tweet_detail_quote" };
-            function $(e, t) {
-                const i = q[t],
-                    o = M[t];
-                return r.createElement(s.Z, { header: i, message: o });
+            function A(e, t) {
+                const r = q[t],
+                    s = M[t];
+                return i.createElement(o.Z, { header: r, message: s });
             }
-            class A extends r.Component {
+            class $ extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
-                            const { mode: e, screenName: t, statusId: i, urtModule: s } = this.props,
-                                o = `quoted_tweet_id:${i}`,
-                                n = `/${t.toLowerCase()}/status/${i}`;
-                            if ("likes" === e && !this._isOwnTweet()) return r.createElement(w.Z, { to: n });
-                            if ("quotes" === e) return r.createElement(u.Z, { emptyStateComponent: $(0, e), fetchOptions: N, query: o, querySrc: b.Z.TweetDetailQuoteTweet, searchMode: m.N3.Top });
-                            return s ? r.createElement(h.Z, { loadingAccessibilityLabel: B, module: s, renderEmptyState: () => $(0, e), title: R[e] }) : r.createElement(w.Z, { to: n });
+                            const { mode: e, screenName: t, statusId: r, urtModule: o } = this.props,
+                                s = `quoted_tweet_id:${r}`,
+                                n = `/${t.toLowerCase()}/status/${r}`;
+                            if ("likes" === e && !this._isOwnTweet()) return i.createElement(w.Z, { to: n });
+                            if ("quotes" === e) return i.createElement(u.Z, { emptyStateComponent: A(0, e), fetchOptions: N, query: s, querySrc: b.Z.TweetDetailQuoteTweet, searchMode: m.N3.Top });
+                            return o ? i.createElement(h.Z, { loadingAccessibilityLabel: B, module: o, renderEmptyState: () => A(0, e), title: R[e] }) : i.createElement(w.Z, { to: n });
                         });
                 }
                 _isOwnTweet() {
-                    const { screenName: e, tweet: t, viewer: i } = this.props;
-                    return t?.user.id_str === i?.id_str || e === i?.screen_name;
+                    const { screenName: e, tweet: t, viewer: r } = this.props;
+                    return t?.user.id_str === r?.id_str || e === r?.screen_name;
                 }
                 render() {
-                    const { history: e, mode: t, screenName: i, statusId: s } = this.props,
-                        o = P[t],
+                    const { history: e, mode: t, screenName: r, statusId: o } = this.props,
+                        s = P[t],
                         n = [
-                            { key: "quotes", to: `/${i}/status/${s}/quotes`, label: R.quotes },
-                            { key: "retweets", to: `/${i}/status/${s}/retweets`, label: R.retweets },
+                            { key: "quotes", to: `/${r}/status/${o}/quotes`, label: R.quotes },
+                            { key: "retweets", to: `/${r}/status/${o}/retweets`, label: R.retweets },
                         ];
-                    this._isOwnTweet() && n.push({ key: "likes", to: `/${i}/status/${s}/likes`, label: R.likes });
+                    this._isOwnTweet() && n.push({ key: "likes", to: `/${r}/status/${o}/likes`, label: R.likes });
                     const _ = (0, I.Z)({ featureSwitches: this.context.featureSwitches, isOwnPost: this._isOwnTweet(), isPremium: this.context.userClaims.isAnyPremiumSubscriber(), tweet: this.props.tweet, surface: "engagements_screen" });
-                    return r.createElement(p.Z, null, r.createElement(c.Z, { backLocation: `/${i}/status/${s}`, documentTitle: o, history: e, primaryContent: this._render, secondaryBar: r.createElement(r.Fragment, null, _ ? r.createElement(l.Z, { variant: "PostAnalytics" }) : null, r.createElement(d.Z, { links: n })), sidebarContent: r.createElement(a.Z, null), title: L }));
+                    return i.createElement(p.Z, null, i.createElement(c.Z, { backLocation: `/${r}/status/${o}`, documentTitle: s, history: e, primaryContent: this._render, secondaryBar: i.createElement(i.Fragment, null, _ ? i.createElement(l.Z, { variant: "PostAnalytics" }) : null, i.createElement(d.Z, { links: n })), sidebarContent: i.createElement(a.Z, null), title: L }));
                 }
             }
-            A.contextType = _.rC;
-            const F = S(A);
+            $.contextType = _.rC;
+            const W = Z($);
         },
-        403556: (e, t, i) => {
+        403556: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => x });
-            var r = i(807896),
-                s = i(202784),
-                o = i(194504),
-                n = i(235902),
-                a = i(392237),
-                l = i(325686),
-                c = i(111677),
-                d = i.n(c),
-                _ = i(912021),
-                p = i(516951),
-                u = i(731708),
-                h = i(310088),
-                m = i(175993),
-                b = i(58881),
-                w = i(530732);
+            r.d(t, { Z: () => S });
+            var i = r(807896),
+                o = r(202784),
+                s = r(194504),
+                n = r(235902),
+                a = r(392237),
+                l = r(325686),
+                c = r(111677),
+                d = r.n(c),
+                _ = r(912021),
+                p = r(516951),
+                u = r(731708),
+                h = r(310088),
+                m = r(175993),
+                b = r(58881),
+                w = r(530732);
             const g = d().d2414d31,
-                f = () => d().ce4e85ae,
-                y = d().fb9f6f39;
-            class k extends s.Component {
+                y = () => d().ce4e85ae,
+                f = d().fb9f6f39;
+            class k extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizedLink = (0, _.Z)((e, t) => {
-                            const { pathname: i, query: r, state: s } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
-                            return { pathname: i, query: r, method: "push", state: { ...s, lockScroll: t } };
+                            const { pathname: r, query: i, state: o } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
+                            return { pathname: r, query: i, method: "push", state: { ...o, lockScroll: t } };
                         })),
                         (this._unlisten = p.Z),
                         (this.state = { location: this.context.location }),
-                        (this._getTextColor = (e, t, i, r) => {
-                            const s = a.default.theme.colors.text,
-                                o = a.default.theme.colors.gray700;
-                            return i || r ? (e || t ? s : o) : e ? s : o;
+                        (this._getTextColor = (e, t, r, i) => {
+                            const o = a.default.theme.colors.text,
+                                s = a.default.theme.colors.gray700;
+                            return r || i ? (e || t ? o : s) : e ? o : s;
                         }),
                         (this._setRef = (e) => {
                             this._ref = e;
@@ -548,13 +549,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: i, badgePip: r, children: o, color: n, isActive: c, isCompact: d, isPillLink: _, isRoundedRect: p, isWebRedesign: m, retainScrollPosition: k, style: C, to: E } = this.props,
-                        { location: x } = this.state,
-                        T = E ? this._getMemoizedLink(E, k) : void 0,
-                        Z = c ? c(E) : x?.pathname === T?.pathname,
-                        S = b.Z.generate({ backgroundColor: "transparent", color: a.default.theme.colors.text, insetFocusRing: !0 }),
-                        I = m ? "medium" : Z ? "bold" : "medium";
-                    return s.createElement(w.Z, { "aria-label": t, "aria-selected": Z, focusable: !!Z, interactiveStyles: S, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [_ ? v.pill : v.link, _ && Z ? v.active : null, d ? (_ ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: m || _ }, ({ isFocused: t, isHovered: c }) => s.createElement(l.Z, { style: _ && v.flexGrow }, s.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(Z, c, m, _) }, d && v.compactText, m && t && v.focusedText], weight: I }, e && s.createElement(e, { style: v.icon }), o, m || _ ? null : s.createElement(l.Z, { style: Z && [v.border, { backgroundColor: a.default.theme.colors[n] }] })), i ? s.createElement(h.Z, { count: i, standalone: !0, style: [v.badge, i >= 10 && v.multiDigitBadge, i >= 20 && v.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: g, withBorder: !1 }) : r ? s.createElement(h.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: f, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": t, badgeCount: r, badgePip: i, children: s, color: n, isActive: c, isCompact: d, isPillLink: _, isRoundedRect: p, isWebRedesign: m, retainScrollPosition: k, style: C, to: x } = this.props,
+                        { location: S } = this.state,
+                        E = x ? this._getMemoizedLink(x, k) : void 0,
+                        T = c ? c(x) : S?.pathname === E?.pathname,
+                        Z = b.Z.generate({ backgroundColor: "transparent", color: a.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: _ ? v.pillHoverStyle.backgroundColor : void 0 }),
+                        I = m ? "medium" : T ? "bold" : "medium";
+                    return o.createElement(w.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: Z, link: E, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(_ ? [v.pillStyle] : [v.link]), ...(_ && T ? [v.pillActiveStyle] : []), d ? (_ ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: m }, ({ isFocused: t, isHovered: c }) => o.createElement(l.Z, { style: _ && v.flexGrow }, o.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(T, c, m, _) }, d && v.compactText, m && t && v.focusedText, _ && v.pillTextStyle, _ && T && v.pillActiveTextStyle, _ && c && v.pillHoverTextStyle], weight: I }, e && o.createElement(e, { style: v.icon }), s, m || _ ? null : o.createElement(l.Z, { style: T && [v.border, { backgroundColor: a.default.theme.colors[n] }] })), r ? o.createElement(h.Z, { count: r, standalone: !0, style: [v.badge, r >= 10 && v.multiDigitBadge, r >= 20 && v.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: g, withBorder: !1 }) : i ? o.createElement(h.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = m.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -569,33 +570,38 @@
                     focusedText: { position: "relative", top: `calc(${e.borderWidths.medium} / 2)`, marginBottom: `-${e.spaces.space16}`, borderStyle: "solid", borderBottomWidth: e.borderWidths.medium, borderColor: e.colors.text, boxSizing: "border-box" },
                     compactText: { paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8 },
                     border: { height: e.borderWidths.large, position: "absolute", bottom: 0, width: "100%", minWidth: "56px", alignSelf: "center", borderRadius: e.borderRadii.infinite },
-                    pill: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
                     compactPill: { height: e.spaces.space36 },
                     active: { backgroundColor: e.colors.gray50 },
+                    pillStyle: { backgroundColor: e.colors.transparent, borderColor: e.colors.gray50, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: e.spaces.space1, flexGrow: 1, flexShrink: 1, height: e.spaces.space40, paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, minWidth: "56px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" },
+                    pillTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillHoverStyle: { backgroundColor: e.colors.gray100, borderColor: e.colors.gray50 },
+                    pillHoverTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
+                    pillActiveStyle: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50 },
+                    pillActiveTextStyle: { fontSize: e.fontSizes.subtext2, fontWeight: e.fontWeights.medium, color: e.colors.text },
                     flexGrow: { flexGrow: 1 },
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
                 C = k,
-                E = a.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                x = ({ alignFirstItem: e, "aria-label": t, isCompact: i, isPillLink: a, isRoundedRect: l, links: c, style: d, visibleItemIndex: _ }) => {
+                x = a.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                S = ({ alignFirstItem: e, "aria-label": t, isCompact: r, isPillLink: a, isRoundedRect: l, links: c, style: d, visibleItemIndex: _ }) => {
                     const p = c
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
                         { isWebRedesign: u } = n.ZP.useProps(),
                         h = u() && !a,
-                        m = s.useMemo(
+                        m = o.useMemo(
                             () =>
-                                c.filter(Boolean).map(({ label: t, viewType: o, ...n }, c) => {
-                                    const d = h ? [E.linkRedesign, 0 === c && E.firstLinkRedesign, e && 0 === c && E.withNoPaddingStart] : void 0;
-                                    return s.createElement(C, (0, r.Z)({ viewType: o }, n, { isCompact: i, isPillLink: a, isRoundedRect: l, isWebRedesign: h, style: d }), t);
+                                c.filter(Boolean).map(({ label: t, viewType: s, ...n }, c) => {
+                                    const d = h ? [x.linkRedesign, 0 === c && x.firstLinkRedesign, e && 0 === c && x.withNoPaddingStart] : void 0;
+                                    return o.createElement(C, (0, i.Z)({ viewType: s }, n, { isCompact: r, isPillLink: a, isRoundedRect: l, isWebRedesign: h, style: d }), t);
                                 }),
-                            [e, i, a, l, h, c],
+                            [e, r, a, l, h, c],
                         );
-                    return s.createElement(o.Z, { "aria-label": t, buttonsContainerStyle: a && E.gap, childrenStyle: !h && E.flexGrow, key: p, style: [a ? null : E.segmentedControl, h && E.leftAligned, d], visibleItemIndex: _ }, m);
+                    return o.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: a && x.gap, childrenStyle: !h && x.flexGrow, key: p, style: [a ? null : x.segmentedControl, h && x.leftAligned, d], visibleItemIndex: _ }, m);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.0e933e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.87f2c45a.js.map

@@ -1272,8 +1272,6 @@
                     return "Lue " + a.replyCount + " vastausta";
                 }),
                 e("dc0c8266", "Kysy Grokilta"),
-                e("i7ac410e", "Näytä alkuperäinen"),
-                e("c67f09e8", "Näytä käännös"),
                 e("f396c105", function (a) {
                     return "" + a.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 e("j77292b7", function (a) {
                     return "Valitse enintään " + a.count + " tiedosto" + n(a.count, "", "a");
                 }),
-                e("d4d35bea", "Käännetään..."),
-                e("he9c9634", "Käännöstä ei voitu hakea"),
-                e("deaf5b16", "Yritä uudelleen"),
-                e("j2198c98", "Piilota käännetty julkaisu"),
+                e("cbc8fed4", "Vastaako käännös alkutekstiä? Anna palautetta, jotta laatu paranee:"),
+                e("d56779a2", "helppo ymmärtää"),
+                e("b6fe8a56", "sekava tai epäselvä"),
                 e("i73a7d48", "Kääntänyt Google"),
                 e("eeadb767", function (a) {
                     return "Kielestä " + a.originLanguage + " kääntänyt Google";
                 }),
-                e("be9b9fb8", "Kääntänyt Grok"),
                 e("d9c6f69d", function (a) {
                     return "Kielestä " + a.originLanguage + " kääntänyt Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 e("caa5ba3d", function (a) {
                     return "Kielestä " + a.originLanguage + " kääntänyt X";
                 }),
+                e("deaf5b16", "Yritä uudelleen"),
+                e("a66d80d0", "Käännä julkaisu"),
+                e("be9b9fb8", "Kääntänyt Grok"),
+                e("he9c9634", "Käännöstä ei voitu hakea"),
+                e("j2198c98", "Piilota käännetty julkaisu"),
+                e("d4d35bea", "Käännetään..."),
+                e("i7ac410e", "Näytä alkuperäinen"),
+                e("c67f09e8", "Näytä käännös"),
                 e("e0f81ff3", "Käännös:"),
                 e("j2862695", function (a) {
                     return "Kielestä " + a.originLanguage + " kääntänyt";
                 }),
                 e("b7cb4fab", "Kääntänyt"),
-                e("cbc8fed4", "Vastaako käännös alkutekstiä? Anna palautetta, jotta laatu paranee:"),
-                e("d56779a2", "helppo ymmärtää"),
-                e("b6fe8a56", "sekava tai epäselvä"),
-                e("a66d80d0", "Käännä julkaisu"),
                 e("d4c339b9", function (a) {
                     return "Julkaisu käyttäjältä " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -12079,6 +12079,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Ostamalla hyväksyt ", " ja ", ". Tilaus uusiutuu automaattisesti, kunnes se perutaan, kuten ehtoihin on kirjattu. Peru milloin tahansa."];
@@ -13302,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ef6a255a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.b9753d3a.js.map

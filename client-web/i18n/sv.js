@@ -1272,8 +1272,6 @@
                     return "Läs " + e.replyCount + " svar";
                 }),
                 t("dc0c8266", "Fråga Grok"),
-                t("i7ac410e", "Visa originalet"),
-                t("c67f09e8", "Visa översättningen"),
                 t("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 t("j77292b7", function (e) {
                     return "Välj högst " + e.count + " undertextfil" + r(e.count, "", "er");
                 }),
-                t("d4d35bea", "Översätter …"),
-                t("he9c9634", "Det gick inte att hämta översättningen"),
-                t("deaf5b16", "Försök igen"),
-                t("j2198c98", "Dölj det översatta inlägget"),
+                t("cbc8fed4", "Var den här översättningen korrekt? Ge oss återkoppling så att vi kan bli bättre:"),
+                t("d56779a2", "lätt att förstå"),
+                t("b6fe8a56", "fövirrande eller oklart"),
                 t("i73a7d48", "Översatt av Google"),
                 t("eeadb767", function (e) {
                     return "Översatt från " + e.originLanguage + " av Google";
                 }),
-                t("be9b9fb8", "Översatt av Grok"),
                 t("d9c6f69d", function (e) {
                     return "Översatt från " + e.originLanguage + " av Grok";
                 }),
@@ -1335,15 +1331,19 @@
                 t("caa5ba3d", function (e) {
                     return "Översatt från " + e.originLanguage + " av X";
                 }),
+                t("deaf5b16", "Försök igen"),
+                t("a66d80d0", "Översätt inlägget"),
+                t("be9b9fb8", "Översatt av Grok"),
+                t("he9c9634", "Det gick inte att hämta översättningen"),
+                t("j2198c98", "Dölj det översatta inlägget"),
+                t("d4d35bea", "Översätter …"),
+                t("i7ac410e", "Visa originalet"),
+                t("c67f09e8", "Visa översättningen"),
                 t("e0f81ff3", "Översättning:"),
                 t("j2862695", function (e) {
                     return "Översatt från " + e.originLanguage + " av";
                 }),
                 t("b7cb4fab", "Översatt av"),
-                t("cbc8fed4", "Var den här översättningen korrekt? Ge oss återkoppling så att vi kan bli bättre:"),
-                t("d56779a2", "lätt att förstå"),
-                t("b6fe8a56", "fövirrande eller oklart"),
-                t("a66d80d0", "Översätt inlägget"),
                 t("d4c339b9", function (e) {
                     return "Inlägg av " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12066,6 +12066,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Genom köpet samtycker du till våra ", " och ", ". Prenumerationen förlängs automatiskt tills den sägs upp, enligt beskrivningen i Villkoren. Du kan säga upp den när du vill."];
@@ -13289,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.bd7937ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.5dd4bd1a.js.map

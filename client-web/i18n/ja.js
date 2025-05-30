@@ -1271,8 +1271,6 @@
                     return e.replyCount + "件の返信を読む";
                 }),
                 f("dc0c8266", "Grokに質問する"),
-                f("i7ac410e", "元のポストを表示"),
-                f("c67f09e8", "翻訳を表示"),
                 f("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 f("j77292b7", function (e) {
                     return "最大" + e.count + " 件のファイルを選択してください";
                 }),
-                f("d4d35bea", "翻訳中..."),
-                f("he9c9634", "翻訳を取得できません"),
-                f("deaf5b16", "やりなおす"),
-                f("j2198c98", "翻訳済みポストを非表示"),
+                f("cbc8fed4", "この翻訳は正確でしたか？改善のため、フィードバックをお寄せください:"),
+                f("d56779a2", "わかりやすい"),
+                f("b6fe8a56", "わかりにくい"),
                 f("i73a7d48", "Googleによる翻訳"),
                 f("eeadb767", function (e) {
                     return "Googleによる" + e.originLanguage + "からの翻訳";
                 }),
-                f("be9b9fb8", "Grokによる翻訳"),
                 f("d9c6f69d", function (e) {
                     return "Grokによる" + e.originLanguage + "からの翻訳";
                 }),
@@ -1334,15 +1330,19 @@
                 f("caa5ba3d", function (e) {
                     return "Xによる" + e.originLanguage + "からの翻訳";
                 }),
+                f("deaf5b16", "やりなおす"),
+                f("a66d80d0", "ポストを翻訳"),
+                f("be9b9fb8", "Grokによる翻訳"),
+                f("he9c9634", "翻訳を取得できません"),
+                f("j2198c98", "翻訳済みポストを非表示"),
+                f("d4d35bea", "翻訳中..."),
+                f("i7ac410e", "元のポストを表示"),
+                f("c67f09e8", "翻訳を表示"),
                 f("e0f81ff3", "翻訳:"),
                 f("j2862695", function (e) {
                     return "による" + e.originLanguage + "からの翻訳";
                 }),
                 f("b7cb4fab", "による翻訳"),
-                f("cbc8fed4", "この翻訳は正確でしたか？改善のため、フィードバックをお寄せください:"),
-                f("d56779a2", "わかりやすい"),
-                f("b6fe8a56", "わかりにくい"),
-                f("a66d80d0", "ポストを翻訳"),
                 f("d4c339b9", function (e) {
                     return e.fullName + "さん（@" + e.screenName + "）からのポスト";
                 }),
@@ -12072,6 +12072,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["購入することにより、", "と", "に同意したものとみなされます。利用規約に記載されているとおり、サブスクリプションはキャンセルするまで自動更新されます。いつでもキャンセルできます。"];
@@ -13294,4 +13300,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.0c7d386a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.52a4974a.js.map

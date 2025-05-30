@@ -173,8 +173,9 @@
                 l = r(403556),
                 s = r(791632);
             const u = (e) => {
-                    const t = (0, i.useHistory)();
-                    return n.createElement(l.Z, (0, a.Z)({}, e, { isCompact: (0, s.HD)(t) }));
+                    const t = (0, i.useHistory)(),
+                        { isCompact: r, ...u } = e;
+                    return n.createElement(l.Z, (0, a.Z)({}, u, { isCompact: r || (0, s.HD)(t) }));
                 },
                 c = n.memo(u);
         },
@@ -685,4 +686,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-a2dee9c7.db80674a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-a2dee9c7.64864c0a.js.map

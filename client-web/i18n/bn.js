@@ -1272,8 +1272,6 @@
                     return e.replyCount + "টি উত্তর পড়ুন";
                 }),
                 n("dc0c8266", "Grok-কে জিজ্ঞেস করুন"),
-                n("i7ac410e", "আসল দেখান"),
-                n("c67f09e8", "অনুবাদ দেখান"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1315,15 +1313,13 @@
                 n("j77292b7", function (e) {
                     return "অনুগ্রহ করে কেবল " + e.count + " ফাইল" + f(e.count, "", "সমূহ") + " অবধি নির্বাচন করুন";
                 }),
-                n("d4d35bea", "অনুবাদ করা হচ্ছে..."),
-                n("he9c9634", "অনুবাদ আনতে অক্ষম"),
-                n("deaf5b16", "আবার চেষ্টা করুন"),
-                n("j2198c98", "অনুবাদ করা পোস্ট লোকান"),
+                n("cbc8fed4", "অনুবাদটি কি যথাযথ ছিল? আমাদের আপনার প্রতিক্রিয়া জানান, যাতে আমরা উন্নতি করতে পারি: "),
+                n("d56779a2", "সহজেই বোঝা যায়"),
+                n("b6fe8a56", "বিভ্রান্তিকর বা অস্পষ্ট"),
                 n("i73a7d48", "Google অনুবাদ করেছে"),
                 n("eeadb767", function (e) {
                     return "Google " + e.originLanguage + " থেকে অনুবাদ করেছে";
                 }),
-                n("be9b9fb8", "Grok দ্বারা অনুবাদ করা"),
                 n("d9c6f69d", function (e) {
                     return e.originLanguage + " থেকে Grok দ্বারা অনুবাদ করা";
                 }),
@@ -1335,15 +1331,19 @@
                 n("caa5ba3d", function (e) {
                     return e.originLanguage + " থেকে X দ্বারা অনুবাদ করা হয়েছে";
                 }),
+                n("deaf5b16", "আবার চেষ্টা করুন"),
+                n("a66d80d0", "পোস্ট অনুবাদ করুন"),
+                n("be9b9fb8", "Grok দ্বারা অনুবাদ করা"),
+                n("he9c9634", "অনুবাদ আনতে অক্ষম"),
+                n("j2198c98", "অনুবাদ করা পোস্ট লোকান"),
+                n("d4d35bea", "অনুবাদ করা হচ্ছে..."),
+                n("i7ac410e", "আসল দেখান"),
+                n("c67f09e8", "অনুবাদ দেখান"),
                 n("e0f81ff3", "অনুবাদ:"),
                 n("j2862695", function (e) {
                     return " " + e.originLanguage + " থেকে";
                 }),
                 n("b7cb4fab", " "),
-                n("cbc8fed4", "অনুবাদটি কি যথাযথ ছিল? আমাদের আপনার প্রতিক্রিয়া জানান, যাতে আমরা উন্নতি করতে পারি: "),
-                n("d56779a2", "সহজেই বোঝা যায়"),
-                n("b6fe8a56", "বিভ্রান্তিকর বা অস্পষ্ট"),
-                n("a66d80d0", "পোস্ট অনুবাদ করুন"),
                 n("d4c339b9", function (e) {
                     return e.fullName + "-এর (@" + e.screenName + ") পোস্ট ";
                 }),
@@ -12082,6 +12082,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["কেনার মাধ্যমে, আপনি আমাদের ", " এবং আমাদের ", "-তে সম্মত হচ্ছেন। শর্তাবলীতে দেওয়া বর্ণনা অনুযায়ী, বাতিল না করা পর্যন্ত সাবস্ক্রিপশনগুলি স্বয়ংক্রিয়ভাবে রিনিউ করা হয়। যখন খুশি বাতিল করুন।"];
@@ -13304,4 +13310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.88c7e75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.7878004a.js.map

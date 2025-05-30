@@ -1281,8 +1281,6 @@
                     return "Przeczytaj " + e.replyCount + " odpowiedzi";
                 }),
                 i("dc0c8266", "Zapytaj Groka"),
-                i("i7ac410e", "Pokaż oryginał"),
-                i("c67f09e8", "Pokaż tłumaczenie"),
                 i("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1324,15 +1322,13 @@
                 i("j77292b7", function (e) {
                     return "Wybierz maksymalnie " + e.count + " plik" + n(e.count, "i", "ów", "", "u");
                 }),
-                i("d4d35bea", "Trwa tłumaczenie..."),
-                i("he9c9634", "Nie udało się pobrać tłumaczenia"),
-                i("deaf5b16", "Ponów próbę"),
-                i("j2198c98", "Ukryj przetłumaczony wpis"),
+                i("cbc8fed4", "Czy to tłumaczenie było dokładne? Przekaż opinię, co umożliwi nam wprowadzenie ulepszeń:"),
+                i("d56779a2", "łatwe do zrozumienia"),
+                i("b6fe8a56", "wątpliwe lub niejasne"),
                 i("i73a7d48", "Przetłumaczone przez Google"),
                 i("eeadb767", function (e) {
                     return "Przetłumaczone z " + e.originLanguage + " przez Google";
                 }),
-                i("be9b9fb8", "Przetłumaczone przez Groka"),
                 i("d9c6f69d", function (e) {
                     return "Przetłumaczone z języka " + e.originLanguage + " przez Groka";
                 }),
@@ -1344,15 +1340,19 @@
                 i("caa5ba3d", function (e) {
                     return "Przetłumaczone z języka " + e.originLanguage + " przez: X";
                 }),
+                i("deaf5b16", "Ponów próbę"),
+                i("a66d80d0", "Przetłumacz wpis"),
+                i("be9b9fb8", "Przetłumaczone przez Groka"),
+                i("he9c9634", "Nie udało się pobrać tłumaczenia"),
+                i("j2198c98", "Ukryj przetłumaczony wpis"),
+                i("d4d35bea", "Trwa tłumaczenie..."),
+                i("i7ac410e", "Pokaż oryginał"),
+                i("c67f09e8", "Pokaż tłumaczenie"),
                 i("e0f81ff3", "Tłumaczenie:"),
                 i("j2862695", function (e) {
                     return "Przetłumaczone z " + e.originLanguage + " przez";
                 }),
                 i("b7cb4fab", "Źródło tłumaczenia"),
-                i("cbc8fed4", "Czy to tłumaczenie było dokładne? Przekaż opinię, co umożliwi nam wprowadzenie ulepszeń:"),
-                i("d56779a2", "łatwe do zrozumienia"),
-                i("b6fe8a56", "wątpliwe lub niejasne"),
-                i("a66d80d0", "Przetłumacz wpis"),
                 i("d4c339b9", function (e) {
                     return "Wpis użytkownika " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12075,6 +12075,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Kupując, akceptujesz nasze ", " i ", ". Zgodnie z Warunkami subskrypcje są odnawiane automatycznie do momentu anulowania. Subskrypcję można anulować w dowolnym momencie."];
@@ -13302,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.bddaf21a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.e5286b4a.js.map

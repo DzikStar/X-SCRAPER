@@ -1271,8 +1271,6 @@
                     return "อ่าน " + e.replyCount + " การตอบกลับ";
                 }),
                 n("dc0c8266", "ถาม Grok"),
-                n("i7ac410e", "แสดงต้นฉบับ"),
-                n("c67f09e8", "แสดงคำแปล"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 n("j77292b7", function (e) {
                     return "โปรดเลือกไม่เกิน " + e.count + " ไฟล์ เท่านั้น";
                 }),
-                n("d4d35bea", "กำลังแปล..."),
-                n("he9c9634", "ไม่สามารถดึงคำแปลได้"),
-                n("deaf5b16", "ลองอีกครั้ง"),
-                n("j2198c98", "ซ่อนโพสต์ที่แปล"),
+                n("cbc8fed4", "การแปลนี้ถูกต้องหรือไม่ โปรดให้ข้อเสนอแนะเพื่อให้เราสามารถปรับปรุง:"),
+                n("d56779a2", "เข้าใจง่าย"),
+                n("b6fe8a56", "สับสนหรือไม่ชัดเจน"),
                 n("i73a7d48", "แปลโดย Google"),
                 n("eeadb767", function (e) {
                     return "แปลจาก " + e.originLanguage + " โดย Google";
                 }),
-                n("be9b9fb8", "แปลโดย Grok"),
                 n("d9c6f69d", function (e) {
                     return "แปลจาก " + e.originLanguage + " โดย Grok";
                 }),
@@ -1334,15 +1330,19 @@
                 n("caa5ba3d", function (e) {
                     return "แปลจาก " + e.originLanguage + " โดย X";
                 }),
+                n("deaf5b16", "ลองอีกครั้ง"),
+                n("a66d80d0", "แปลโพสต์"),
+                n("be9b9fb8", "แปลโดย Grok"),
+                n("he9c9634", "ไม่สามารถดึงคำแปลได้"),
+                n("j2198c98", "ซ่อนโพสต์ที่แปล"),
+                n("d4d35bea", "กำลังแปล..."),
+                n("i7ac410e", "แสดงต้นฉบับ"),
+                n("c67f09e8", "แสดงคำแปล"),
                 n("e0f81ff3", "การแปลภาษา:"),
                 n("j2862695", function (e) {
                     return "แปลจาก " + e.originLanguage + " โดย ";
                 }),
                 n("b7cb4fab", "แปลโดย"),
-                n("cbc8fed4", "การแปลนี้ถูกต้องหรือไม่ โปรดให้ข้อเสนอแนะเพื่อให้เราสามารถปรับปรุง:"),
-                n("d56779a2", "เข้าใจง่าย"),
-                n("b6fe8a56", "สับสนหรือไม่ชัดเจน"),
-                n("a66d80d0", "แปลโพสต์"),
                 n("d4c339b9", function (e) {
                     return "โพสต์จาก " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -12065,6 +12065,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["เมื่อซื้อแสดงว่าคุณยอมรับ ", " และ ", " ของเรา ระบบสมาชิกจะต่ออายุโดยอัตโนมัติจนกว่าจะยกเลิกตามที่อธิบายไว้ในข้อกำหนด คุณสามารถยกเลิกได้ทุกเมื่อ"];
@@ -13287,4 +13293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.c97eef1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.c700230a.js.map

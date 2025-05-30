@@ -1271,8 +1271,6 @@
                     return e.replyCount + " yanıtı oku";
                 }),
                 n("dc0c8266", "Grok'a soru sor"),
-                n("i7ac410e", "Orijinali Göster"),
-                n("c67f09e8", "Çeviriyi Göster"),
                 n("f396c105", function (e) {
                     return "" + e.displayCount;
                 }),
@@ -1314,15 +1312,13 @@
                 n("j77292b7", function (e) {
                     return "Lütfen en fazla " + e.count + " dosya seç";
                 }),
-                n("d4d35bea", "Çevriliyor..."),
-                n("he9c9634", "Çeviri alınamadı"),
-                n("deaf5b16", "Yeniden dene"),
-                n("j2198c98", "Gönderi çevirisini gizle"),
+                n("cbc8fed4", "Bu çeviri doğru mu? İyileştirebilmemiz için bize geri bildirimde bulun:"),
+                n("d56779a2", "kolay anlaşılır"),
+                n("b6fe8a56", "kafa karıştırıcı veya anlaşılmıyor"),
                 n("i73a7d48", "Google tarafından çevrildi"),
                 n("eeadb767", function (e) {
                     return "Google tarafından " + e.originLanguage + " dilinden çevrildi";
                 }),
-                n("be9b9fb8", "Grok tarafından çevrildi"),
                 n("d9c6f69d", function (e) {
                     return "Grok tarafından " + e.originLanguage + " dilinden çevrildi";
                 }),
@@ -1334,15 +1330,19 @@
                 n("caa5ba3d", function (e) {
                     return "X tarafından " + e.originLanguage + " dilinden çevrildi";
                 }),
+                n("deaf5b16", "Yeniden dene"),
+                n("a66d80d0", "Gönderiyi çevir"),
+                n("be9b9fb8", "Grok tarafından çevrildi"),
+                n("he9c9634", "Çeviri alınamadı"),
+                n("j2198c98", "Gönderi çevirisini gizle"),
+                n("d4d35bea", "Çevriliyor..."),
+                n("i7ac410e", "Orijinali Göster"),
+                n("c67f09e8", "Çeviriyi Göster"),
                 n("e0f81ff3", "Çeviri:"),
                 n("j2862695", function (e) {
                     return "tarafından " + e.originLanguage + " dilinden çevrildi";
                 }),
                 n("b7cb4fab", "tarafından çevrildi"),
-                n("cbc8fed4", "Bu çeviri doğru mu? İyileştirebilmemiz için bize geri bildirimde bulun:"),
-                n("d56779a2", "kolay anlaşılır"),
-                n("b6fe8a56", "kafa karıştırıcı veya anlaşılmıyor"),
-                n("a66d80d0", "Gönderiyi çevir"),
                 n("d4c339b9", function (e) {
                     return e.fullName + " (@" + e.screenName + ") adlı kullanıcıdan gönderi";
                 }),
@@ -12075,6 +12075,12 @@
                             },
                         },
                         {
+                            key: "b5648ffb",
+                            get: function () {
+                                return ["", "% Fee, Min. "];
+                            },
+                        },
+                        {
                             key: "da2a091b",
                             get: function () {
                                 return ["Satın alma işlemi yaparak ", " ve ", " şartlarımızı kabul etmiş olursun. Abonelikler, Şartlar'da açıklandığı gibi iptal edilene kadar otomatik olarak yenilenir. Dilediğin zaman iptal edebilirsin."];
@@ -13297,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.8a43a70a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.77b676fa.js.map
