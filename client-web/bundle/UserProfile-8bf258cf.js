@@ -4,8 +4,8 @@
     {
         416699: (e, d, a) => {
             a.d(d, { Z: () => h });
-            var o = a(807896),
-                r = a(202784),
+            var r = a(807896),
+                o = a(202784),
                 l = a(457311),
                 n = a(392237),
                 s = a(668214),
@@ -18,21 +18,21 @@
                 c = (0, s.Z)().propsFromState(() => ({ isBlocking: t, isSuspended: u })),
                 b = (e) => {
                     const { isBlocking: d, isSuspended: a, screenName: n, ...s } = e;
-                    return r.createElement(r.Fragment, null, null, r.createElement(l.Z, (0, o.Z)({}, s, { style: [D.root, D.verticalPadding] })));
+                    return o.createElement(o.Fragment, null, null, o.createElement(l.Z, (0, r.Z)({}, s, { style: [D.root, D.verticalPadding] })));
                 },
                 D = n.default.create((e) => ({ root: { backgroundColor: n.default.theme.colors.cellBackground, paddingHorizontal: n.default.theme.spaces.space20 }, verticalPadding: { paddingVertical: n.default.theme.spaces.space40 } })),
-                h = c(r.memo(b));
+                h = c(o.memo(b));
         },
         252233: (e, d, a) => {
             a.d(d, { Z: () => s });
-            var o = a(202784),
-                r = a(224162),
+            var r = a(202784),
+                o = a(224162),
                 l = a(731708),
                 n = a(392237);
-            class s extends o.PureComponent {
+            class s extends r.PureComponent {
                 render() {
                     const { Icon: e, children: d, link: a, onPress: n, style: s, testID: u, withInteractiveStyling: t } = this.props;
-                    return o.createElement(r.RD.Consumer, null, ({ direction: r }) => o.createElement(l.ZP, { color: a ? "primary" : "gray700", dir: r, link: a, onPress: n, role: "none", style: [i.root, s], testID: u, withInteractiveStyling: t ?? (!!a || !!n) }, o.createElement(e, { style: i.icon }), d));
+                    return r.createElement(o.RD.Consumer, null, ({ direction: o }) => r.createElement(l.ZP, { color: a ? "primary" : "gray700", dir: o, link: a, onPress: n, role: "none", style: [i.root, s], testID: u, withInteractiveStyling: t ?? (!!a || !!n) }, r.createElement(e, { style: i.icon }), d));
                 }
             }
             const i = n.default.create((e) => ({ root: { display: "inline-block", marginEnd: e.spaces.space12 }, icon: { color: e.colors.gray700, marginEnd: e.spaces.space4 } }));
@@ -40,76 +40,76 @@
         290213: (e, d, a) => {
             a.d(d, { Z: () => t });
             a(257215);
-            var o = a(202784),
-                r = (a(585488), a(277660), a(111677)),
-                l = a.n(r),
+            var r = a(202784),
+                o = (a(585488), a(277660), a(111677)),
+                l = a.n(o),
                 n = a(97043),
                 s = a(252233);
             const i = l().cf249089,
                 u = (e) => {
-                    const { joinDate: d, testID: a, withoutIcon: r = !1 } = e,
+                    const { joinDate: d, testID: a, withoutIcon: o = !1 } = e,
                         u = ((e) => {
                             const d = new Date(e),
                                 a = l().g727ddcf;
                             return i({ joinDate: a(d) });
                         })(d);
-                    return r ? u : o.createElement(s.Z, { Icon: n.default, testID: a }, u);
+                    return o ? u : r.createElement(s.Z, { Icon: n.default, testID: a }, u);
                 },
-                t = o.memo(u);
+                t = r.memo(u);
         },
         484163: (e, d, a) => {
             a.d(d, { Y: () => u, Z: () => t });
-            var o = a(202784),
-                r = a(111677),
-                l = a.n(r),
+            var r = a(202784),
+                o = a(111677),
+                l = a.n(o),
                 n = a(416699);
             const s = l().c9a1cb5e,
                 i = l().e7b201de,
                 u = (e) => {
                     const { screenName: d } = e;
-                    return o.createElement(n.Z, { header: s, message: i, screenName: d });
+                    return r.createElement(n.Z, { header: s, message: i, screenName: d });
                 },
-                t = o.memo(u);
+                t = r.memo(u);
         },
         972796: (e, d, a) => {
             a.d(d, { T: () => c, Z: () => b });
-            var o = a(202784),
-                r = a(688715),
+            var r = a(202784),
+                o = a(688715),
                 l = a(731708),
                 n = a(111677),
                 s = a.n(n),
                 i = a(416699);
             const u = s().ica87fde,
-                t = (0, r.ju)("https://support.x.com/articles/20172060"),
+                t = (0, o.ju)("https://support.x.com/articles/20172060"),
                 c = (e) => {
                     const { screenName: d } = e,
-                        a = o.useMemo(() => o.createElement(s().I18NFormatMessage, { $i18n: "e6264621", screenName: d }, o.createElement(l.ZP, { link: t }, s().c7ec6faf)), [d]);
-                    return o.createElement(i.Z, { header: u, message: a, screenName: d });
+                        a = r.useMemo(() => r.createElement(s().I18NFormatMessage, { $i18n: "e6264621", screenName: d }, r.createElement(l.ZP, { link: t }, s().c7ec6faf)), [d]);
+                    return r.createElement(i.Z, { header: u, message: a, screenName: d });
                 },
-                b = o.memo(c);
+                b = r.memo(c);
         },
         189490: (e, d, a) => {
             a.d(d, { Z: () => D });
-            var o = a(202784),
-                r = a(688715),
+            var r = a(202784),
+                o = a(688715),
                 l = a(731708),
                 n = a(111677),
                 s = a.n(n),
                 i = a(416699);
             const u = s().e79ed125,
-                t = (0, r.ju)("https://support.x.com/articles/117063"),
+                t = (0, o.ju)("https://support.x.com/articles/117063"),
                 c = s().gba95028,
                 b = ({ onShowBlockedTweets: e, screenName: d }) => {
                     const a = u({ screenName: d }),
-                        r = o.createElement(s().I18NFormatMessage, { $i18n: "f98ecc47", screenName: d }, o.createElement(l.ZP, { link: t }, s().a2216a79));
-                    return o.createElement(i.Z, { buttonText: c, header: a, message: r, onButtonPress: e, screenName: d });
+                        o = r.createElement(s().I18NFormatMessage, { $i18n: "f98ecc47", screenName: d }, r.createElement(l.ZP, { link: t }, s().a2216a79));
+                    return r.createElement(i.Z, { buttonText: c, header: a, message: o, onButtonPress: e, screenName: d });
                 },
-                D = o.memo(b);
+                D = r.memo(b);
         },
         379205: (e, d, a) => {
             a.d(d, { Z: () => X });
-            var o = a(807896),
-                r = a(202784),
+            var r = a(807896),
+                o = a(202784),
                 l = a(325686),
                 n = a(107267),
                 s = a(392237),
@@ -122,8 +122,8 @@
                 h = a(703738),
                 m = a(919022),
                 M = a(615027),
-                f = a(189244),
-                w = a(717988);
+                w = a(189244),
+                f = a(717988);
             const p = u().a2811f96,
                 A = u().fa4e68ca,
                 P = u().jdceda60,
@@ -140,24 +140,27 @@
                 v = "articles",
                 E = "with_replies",
                 U = "affiliates",
-                Z = (0, w.p)(
+                Z = (0, f.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
-                            a.e("icons.6"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -168,10 +171,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -226,12 +230,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
                             a.e("bundle.UserProfile-6107ac1a"),
                             a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -241,24 +245,27 @@
                         ]).then(a.bind(a, 642692)),
                     { shouldMigrateToX: !0 },
                 ),
-                $ = (0, w.p)(
+                $ = (0, f.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
-                            a.e("icons.6"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -269,10 +276,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -327,12 +335,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
                             a.e("bundle.UserProfile-6107ac1a"),
                             a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -342,24 +350,27 @@
                         ]).then(a.bind(a, 34655)),
                     { shouldMigrateToX: !0 },
                 ),
-                N = (0, w.p)(
+                N = (0, f.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
-                            a.e("icons.6"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -370,10 +381,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -428,12 +440,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
                             a.e("bundle.UserProfile-6107ac1a"),
                             a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -443,24 +455,27 @@
                         ]).then(a.bind(a, 30801)),
                     { shouldMigrateToX: !0 },
                 ),
-                x = (0, w.p)(
+                x = (0, f.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.8"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.12"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.9"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("icons.1"),
-                            a.e("icons.6"),
+                            a.e("icons.19"),
+                            a.e("icons.0"),
+                            a.e("icons.23"),
+                            a.e("icons.8"),
+                            a.e("icons.2"),
+                            a.e("icons.3"),
+                            a.e("icons.15"),
+                            a.e("icons.4"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.5"),
+                            a.e("icons.9"),
+                            a.e("icons.7"),
+                            a.e("icons.26"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -471,10 +486,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.16"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
-                            a.e("icons.0"),
+                            a.e("icons.18"),
+                            a.e("icons.13"),
+                            a.e("icons.29"),
+                            a.e("icons.27"),
+                            a.e("icons.25"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -529,12 +545,12 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~bundle"),
-                            a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight"),
                             a.e("shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"),
                             a.e("shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified"),
                             a.e("shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile"),
                             a.e("bundle.UserProfile-6107ac1a"),
                             a.e("bundle.UserProfile-00c74bbe"),
+                            a.e("bundle.UserProfile-0127dd92"),
                             a.e("bundle.UserProfile-e019dbda"),
                             a.e("bundle.UserProfile-63cb1cc4"),
                             a.e("bundle.UserProfile-70e212e1"),
@@ -546,46 +562,46 @@
                 ),
                 q = (e) => {
                     const { isActiveCreator: d, onEntriesRendered: a, showBlockedTweets: s, user: i } = e,
-                        { featureSwitches: u, userClaims: w, viewerUserId: q } = r.useContext(b.rC),
+                        { featureSwitches: u, userClaims: f, viewerUserId: q } = o.useContext(b.rC),
                         X = (0, n.useLocation)(),
-                        L = (0, h.z)();
+                        F = (0, h.z)();
                     if (!i) return null;
-                    const { screen_name: F } = i,
-                        V = X.query,
-                        O = i && q === i.id_str,
-                        j = u.isTrue("creator_monetization_profile_subscription_tweets_tab_enabled") ? i.super_follow_eligible : (O && d) || i.super_following,
+                    const { screen_name: V } = i,
+                        O = X.query,
+                        L = i && q === i.id_str,
+                        j = u.isTrue("creator_monetization_profile_subscription_tweets_tab_enabled") ? i.super_follow_eligible : (L && d) || i.super_following,
                         z = S,
                         W = u.isTrue("responsive_web_twitter_article_notes_tab_enabled"),
                         G = u.isTrue("subscriptions_feature_article_composer"),
-                        Q = w.isTrueAndEnabled("subscriptions_feature_article_composer"),
-                        Y = W && O && G && !Q,
-                        J = O && Q,
+                        Q = f.isTrueAndEnabled("subscriptions_feature_article_composer"),
+                        Y = W && L && G && !Q,
+                        J = L && Q,
                         K = W && ((i.user_seed_tweet_count && i.user_seed_tweet_count > 0) || J || Y),
                         ee = i.business_account?.affiliates_count && i.business_account.affiliates_count > 0,
                         de = i && m.D8 in i,
                         ae = u.isTrue("highlights_tweets_tab_ui_enabled"),
-                        oe = u.isTrue("highlights_tweets_tab_upsell_enabled"),
-                        re = i.highlights_info?.can_highlight_tweets && i.highlights_info?.highlighted_tweets && parseInt(i.highlights_info.highlighted_tweets, 10) > 0,
-                        le = oe && i.highlights_info?.can_highlight_tweets && O,
-                        ne = de && oe && u.isTrue("subscriptions_sign_up_enabled") && O && !i.highlights_info?.can_highlight_tweets,
-                        se = ae && (re || le || ne),
-                        ie = (e) => [{ isActive: () => X.pathname.toLowerCase() === `/${F}`.toLowerCase() || X.pathname.toLowerCase() === `/${F}/`.toLowerCase() || X.pathname.indexOf("/intent/follow") > -1 || X.pathname.indexOf("/intent/user") > -1, to: { pathname: `/${F}`, query: V }, key: A, label: A, viewType: "tweets" }, ee ? { to: { pathname: `/${F}/${U}`, query: V }, key: _, label: _, viewType: "affiliates", onClick: e() } : void 0, { to: { pathname: `/${F}/${E}`, query: V }, key: P, label: P, viewType: "tweets_replies", onClick: e() }, j ? { to: { pathname: `/${F}/${R}`, query: V }, key: z, label: z, color: "plum500", viewType: "super_follows_tweets" } : void 0, se ? { to: { pathname: `/${F}/${B}`, query: V }, key: y, label: y, viewType: "highlight_tweets" } : void 0, K ? { to: { pathname: `/${F}/${v}`, query: V }, key: g, label: g, onClick: e(), viewType: "articles" } : void 0, { to: { pathname: `/${F}/${T}`, query: V }, key: k, label: k, onClick: e(), viewType: "media" }, O ? { to: { pathname: `/${F}/${C}`, query: V }, key: I, label: I, onClick: e(), viewType: "likes" } : void 0],
+                        re = u.isTrue("highlights_tweets_tab_upsell_enabled"),
+                        oe = i.highlights_info?.can_highlight_tweets && i.highlights_info?.highlighted_tweets && parseInt(i.highlights_info.highlighted_tweets, 10) > 0,
+                        le = re && i.highlights_info?.can_highlight_tweets && L,
+                        ne = de && re && u.isTrue("subscriptions_sign_up_enabled") && L && !i.highlights_info?.can_highlight_tweets,
+                        se = ae && (oe || le || ne),
+                        ie = (e) => [{ isActive: () => X.pathname.toLowerCase() === `/${V}`.toLowerCase() || X.pathname.toLowerCase() === `/${V}/`.toLowerCase() || X.pathname.indexOf("/intent/follow") > -1 || X.pathname.indexOf("/intent/user") > -1, to: { pathname: `/${V}`, query: O }, key: A, label: A, viewType: "tweets" }, ee ? { to: { pathname: `/${V}/${U}`, query: O }, key: _, label: _, viewType: "affiliates", onClick: e() } : void 0, { to: { pathname: `/${V}/${E}`, query: O }, key: P, label: P, viewType: "tweets_replies", onClick: e() }, j ? { to: { pathname: `/${V}/${R}`, query: O }, key: z, label: z, color: "plum500", viewType: "super_follows_tweets" } : void 0, se ? { to: { pathname: `/${V}/${B}`, query: O }, key: y, label: y, viewType: "highlight_tweets" } : void 0, K ? { to: { pathname: `/${V}/${v}`, query: O }, key: g, label: g, onClick: e(), viewType: "articles" } : void 0, { to: { pathname: `/${V}/${T}`, query: O }, key: k, label: k, onClick: e(), viewType: "media" }, L ? { to: { pathname: `/${V}/${C}`, query: O }, key: I, label: I, onClick: e(), viewType: "likes" } : void 0],
                         ue = { displayBlocked: s, fullName: i.name, screenName: i.screen_name, userId: i.id_str },
                         te = { isActiveCreator: d, isSuperFollowing: i.super_following, isSuperEligible: i.super_follow_eligible };
-                    return r.createElement(
-                        r.Fragment,
+                    return o.createElement(
+                        o.Fragment,
                         null,
-                        r.createElement(D.Z, null, (e) => r.createElement(l.Z, { style: L && H.tabsRedesign }, r.createElement(c.Z, { "aria-label": p, links: ie(e) }))),
-                        r.createElement(n.Switch, null, r.createElement(n.Route, { exact: !0, path: "/intent/follow" }, r.createElement(Z, (0, o.Z)({}, ue, te))), r.createElement(n.Route, { exact: !0, path: "/intent/user" }, r.createElement(Z, (0, o.Z)({}, ue, te))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}` }, r.createElement(Z, (0, o.Z)({}, ue, te, { onEntriesRendered: a }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${E}` }, r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "with_replies" }))), r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${R}` }, r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "superfollows" }))), se ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${B}` }, ne ? r.createElement(t.Z, { variant: "HighlightsProfile" }) : r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "highlights" }))) : null, K ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${v}` }, Y ? r.createElement(t.Z, { variant: "ArticlesProfile" }) : r.createElement(Z, (0, o.Z)({}, ue, te, { mode: "articles" }))) : null, r.createElement(n.Route, { exact: !0, path: `/${f.qX}/${T}` }, r.createElement(N, ue)), O ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${C})` }, r.createElement($, (0, o.Z)({ isOwnProfile: O }, ue))) : null, ee ? r.createElement(n.Route, { exact: !0, path: `/${f.qX}/(${U})` }, r.createElement(x, ue)) : null, de ? r.createElement(M.Z, { to: `/${F}` }) : null),
+                        o.createElement(D.Z, null, (e) => o.createElement(l.Z, { style: F && H.tabsRedesign }, o.createElement(c.Z, { "aria-label": p, links: ie(e) }))),
+                        o.createElement(n.Switch, null, o.createElement(n.Route, { exact: !0, path: "/intent/follow" }, o.createElement(Z, (0, r.Z)({}, ue, te))), o.createElement(n.Route, { exact: !0, path: "/intent/user" }, o.createElement(Z, (0, r.Z)({}, ue, te))), o.createElement(n.Route, { exact: !0, path: `/${w.qX}` }, o.createElement(Z, (0, r.Z)({}, ue, te, { onEntriesRendered: a }))), o.createElement(n.Route, { exact: !0, path: `/${w.qX}/${E}` }, o.createElement(Z, (0, r.Z)({}, ue, te, { mode: "with_replies" }))), o.createElement(n.Route, { exact: !0, path: `/${w.qX}/${R}` }, o.createElement(Z, (0, r.Z)({}, ue, te, { mode: "superfollows" }))), se ? o.createElement(n.Route, { exact: !0, path: `/${w.qX}/${B}` }, ne ? o.createElement(t.Z, { variant: "HighlightsProfile" }) : o.createElement(Z, (0, r.Z)({}, ue, te, { mode: "highlights" }))) : null, K ? o.createElement(n.Route, { exact: !0, path: `/${w.qX}/${v}` }, Y ? o.createElement(t.Z, { variant: "ArticlesProfile" }) : o.createElement(Z, (0, r.Z)({}, ue, te, { mode: "articles" }))) : null, o.createElement(n.Route, { exact: !0, path: `/${w.qX}/${T}` }, o.createElement(N, ue)), L ? o.createElement(n.Route, { exact: !0, path: `/${w.qX}/(${C})` }, o.createElement($, (0, r.Z)({ isOwnProfile: L }, ue))) : null, ee ? o.createElement(n.Route, { exact: !0, path: `/${w.qX}/(${U})` }, o.createElement(x, ue)) : null, de ? o.createElement(M.Z, { to: `/${V}` }) : null),
                     );
                 },
                 H = s.default.create((e) => ({ tabsRedesign: { paddingHorizontal: e.spaces.space16 } })),
-                X = r.memo(q);
+                X = o.memo(q);
         },
         12333: (e, d, a) => {
             a.d(d, { Z: () => p });
-            var o = a(202784),
-                r = a(325686),
+            var r = a(202784),
+                o = a(325686),
                 l = a(731708),
                 n = a(392237),
                 s = a(111677),
@@ -599,35 +615,35 @@
                 m = ({ screenName: e }) => {
                     const { user_result_by_screen_name: d } = (0, D.p)(b.nZ, { screenName: e }),
                         a = d?.result;
-                    return a && a.can_view_expanded_profile ? o.createElement(r.Z, { style: M.container }, o.createElement(l.ZP, { link: `/${e}/bio`, size: "subtext1" }, h)) : null;
+                    return a && a.can_view_expanded_profile ? r.createElement(o.Z, { style: M.container }, r.createElement(l.ZP, { link: `/${e}/bio`, size: "subtext1" }, h)) : null;
                 },
                 M = n.default.create((e) => ({ container: { marginTop: `calc(${e.spaces.space8} * -1)`, marginBottom: e.spaces.space12, flexDirection: "row" } })),
-                f = { context: "EXTENDED_USER_PROFILE_EXISTS" },
-                w = (e) => {
+                w = { context: "EXTENDED_USER_PROFILE_EXISTS" },
+                f = (e) => {
                     const d = (0, c.hC)("xprofile_consumption_enabled") && !0,
-                        a = o.useMemo(() => ({ type: "CustomRetry", content: () => null }), []);
-                    return e.screenName && d ? o.createElement(u.N, { errorConfig: f, fallback: a }, o.createElement(t.B, null, o.createElement(m, { screenName: e.screenName }))) : null;
+                        a = r.useMemo(() => ({ type: "CustomRetry", content: () => null }), []);
+                    return e.screenName && d ? r.createElement(u.N, { errorConfig: w, fallback: a }, r.createElement(t.B, null, r.createElement(m, { screenName: e.screenName }))) : null;
                 },
-                p = o.memo(w);
+                p = r.memo(f);
         },
         35468: (e, d, a) => {
             a.d(d, { U: () => i });
-            var o = a(202784),
-                r = a(634090),
+            var r = a(202784),
+                o = a(634090),
                 l = a(952793),
                 n = a(731305);
             function s(e) {
                 const { user: d, viewerUserId: a } = e,
                     s = (0, l.hC)("responsive_web_profile_spotlight_v0_display"),
                     i = (0, l.hC)("responsive_web_professional_journeys_holdback_enabled");
-                return ((0, n.nf)(a, d) || !i) && s ? (e.setIsRenderingProfileSpotlight && e.setIsRenderingProfileSpotlight(!0), o.createElement(r.Z, { setIsRenderingProfileSpotlight: e.setIsRenderingProfileSpotlight, userScreenName: d.screen_name })) : null;
+                return ((0, n.nf)(a, d) || !i) && s ? (e.setIsRenderingProfileSpotlight && e.setIsRenderingProfileSpotlight(!0), r.createElement(o.Z, { setIsRenderingProfileSpotlight: e.setIsRenderingProfileSpotlight, userScreenName: d.screen_name })) : null;
             }
-            const i = o.memo(s);
+            const i = r.memo(s);
         },
         975950: (e, d, a) => {
             a.d(d, { Z: () => c });
-            var o = a(202784),
-                r = a(325686),
+            var r = a(202784),
+                o = a(325686),
                 l = a(392237),
                 n = a(727828),
                 s = a(998118),
@@ -642,11 +658,11 @@
                         h = a.isGovVerifiedOrg(),
                         m = "business" === e.user?.verified_type?.toLowerCase(),
                         M = "government" === e.user?.verified_type?.toLowerCase();
-                    if ((0, t.Z)() > 0 && !l && !c && !D && !m && !h && !M && d.isTrue("vo_upsell_profile_page_enabled")) return o.createElement(r.Z, { style: b.container }, o.createElement(n.Z, { variant: "VerifiedOrgProfileUpsell" }));
-                    return (0, s.Z)({ isOwnProfile: !0, userClaims: a, user: e.user, verifiedType: e.user?.verified_type, featureSwitch: "subscriptions_upsells_get_verified_profile_card", featureSwitches: d }) && e.shouldShowProfileUpsellCard ? o.createElement(r.Z, { style: b.container }, o.createElement(n.Z, { fatigueDismiss: e.dismissProfileUpsellCard, variant: "GetVerifiedProfileCard" })) : e.gotDismissedProfileUpsellCard ? void 0 : o.createElement(i.Z, null);
+                    if ((0, t.Z)() > 0 && !l && !c && !D && !m && !h && !M && d.isTrue("vo_upsell_profile_page_enabled")) return r.createElement(o.Z, { style: b.container }, r.createElement(n.Z, { variant: "VerifiedOrgProfileUpsell" }));
+                    return (0, s.Z)({ isOwnProfile: !0, userClaims: a, user: e.user, verifiedType: e.user?.verified_type, featureSwitch: "subscriptions_upsells_get_verified_profile_card", featureSwitches: d }) && e.shouldShowProfileUpsellCard ? r.createElement(o.Z, { style: b.container }, r.createElement(n.Z, { fatigueDismiss: e.dismissProfileUpsellCard, variant: "GetVerifiedProfileCard" })) : e.gotDismissedProfileUpsellCard ? void 0 : r.createElement(i.Z, null);
                 },
                 b = l.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-8bf258cf.f3410ada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-8bf258cf.dc140eea.js.map

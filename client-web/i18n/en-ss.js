@@ -7207,16 +7207,16 @@
                 a("hd80bd3e", "[[282216]] Promote a post"),
                 a("fe2b0008", "[[282210]] Learn how to use X"),
                 a("h257d4aa", "[[282221]] Select a post to promote"),
-                a("fe946974", "Your trial of X without ads"),
-                a("f6c50ec0", "Your ad-free trial has ended"),
-                a("b1319404", "Ads avoided"),
-                a("baa4acae", "You’re seeing more personalized content."),
-                a("c00e8600", "Estimated time saved"),
-                a("ic073e4e", "Your time is valuable."),
-                a("eb866e88", "Estimated 1-year time savings"),
-                a("aa77b70c", "Based on your usage."),
-                a("c534c6b4", "We’re crunching the numbers..."),
-                a("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                a("fe946974", "[[295801]] Your trial of X without ads"),
+                a("f6c50ec0", "[[295800]] Your ad-free trial has ended"),
+                a("b1319404", "[[295788]] Ads avoided"),
+                a("baa4acae", "[[295799]] You’re seeing more personalized content."),
+                a("c00e8600", "[[295790]] Estimated time saved"),
+                a("ic073e4e", "[[295798]] Your time is valuable."),
+                a("eb866e88", "[[295791]] Estimated 1-year time savings"),
+                a("aa77b70c", "[[295789]] Based on your usage."),
+                a("c534c6b4", "[[295797]] We’re crunching the numbers..."),
+                a("i57332f0", "[[295793]] Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
                 a("cc10f019", function (e) {
                     return "[[295627]] " + e.minutes + " minute" + n(e.minutes, "", "s");
                 }),
@@ -7232,11 +7232,11 @@
                 a("be88be23", function (e) {
                     return "[[295680]] Your " + e.durationInDays + "-day ad-free trial is activated";
                 }),
-                a("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                a("ae3f3b0e", "Enjoy!"),
-                a("cdac8dc4", "See your new feed"),
-                a("dec99336", "Ad-free"),
-                a("i95803fa", "Unfortunately, you are not eligible at this time."),
+                a("a4413462", "[[295795]] Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
+                a("ae3f3b0e", "[[295792]] Enjoy!"),
+                a("cdac8dc4", "[[295794]] See your new feed"),
+                a("dec99336", "[[295787]] Ad-free"),
+                a("i95803fa", "[[295796]] Unfortunately, you are not eligible at this time."),
                 a("d28a1d72", "[[290255]] Be the very first to spot trends with Radar"),
                 a("fb70427a", "[[290257]] Introducing the most powerful search tool on X."),
                 a("i54bf620", "[[290258]] Monitor keywords"),
@@ -12068,7 +12068,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["[[295850]] ", "% Fee, Min. "];
                             },
                         },
                         {
@@ -13295,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.fa6615ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.dcfb266a.js.map

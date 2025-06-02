@@ -270,33 +270,34 @@
                         }),
                         (this._renderTweetTextHWTweet = (e) => {
                             const { hitHighlights: t, isFocal: i, linkify: o, onEntityClick: s, onShowMoreClick: a, to: l, tweet: c, tweetTextSize: h, withCardLinks: u, withInlineMedia: p, withQuotedTweetLinks: _, withReaderModeActive: m } = this.props,
-                                { isExpanded: w } = this.state,
-                                g = d.Z.getOriginalTweet(c),
-                                T = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled");
-                            let C;
-                            C = h || e.size;
-                            const b = g?.community_id_str,
-                                f = b ? (e, t) => new URL(`/i/communities/${b}/hashtag/${t}`, e) : void 0;
-                            let k;
-                            !w &&
-                                !m &&
-                                g.note_tweet &&
-                                g.note_tweet.is_expandable &&
-                                (k = this.context.featureSwitches.isTrue("rweb_timeline_inline_show_more_enabled")
+                                { isExpanded: w, showGrokTranslation: g } = this.state,
+                                T = d.Z.getOriginalTweet(c),
+                                C = !!T.grok_translated_post,
+                                b = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled");
+                            let f;
+                            f = h || e.size;
+                            const k = T?.community_id_str,
+                                y = k ? (e, t) => new URL(`/i/communities/${k}/hashtag/${t}`, e) : void 0;
+                            let E;
+                            const x = T.note_tweet && T.note_tweet.is_expandable,
+                                S = null != T.grok_translated_post?.preview_translation;
+                            w ||
+                                m ||
+                                !(g ? S : x) ||
+                                (E = this.context.featureSwitches.isTrue("rweb_timeline_inline_show_more_enabled")
                                     ? () => {
                                           a && a(), this.setState({ isExpanded: !0 });
                                       }
                                     : this._getMaybeRedirectedTweetLink(l, !0));
-                            const y = { ...e, transformHashtagLink: f, hitHighlights: t, linkify: o, onEntityClick: s, size: C, transformUrl: this._transformUrl, unmentionedUserIds: g.unmentioned_user_ids, withCardLinks: u, withMediaLinks: !p, withShowMore: k, withQuoteLinks: _ || d.Z.isQuotedTweetUnavailable(g), withUnicodeEmojis: !1, article: T ? g?.article : void 0 };
-                            let E;
-                            E = w || m ? fe.Bq(g, { featureSwitches: this.context.featureSwitches }) : { text: g.text, entities: g.entities, display_text_range: g.display_text_range };
-                            const x = !i && !this.context.featureSwitches.isTrue("longform_notetweets_rich_text_timeline_enabled");
-                            let S = null;
-                            g.note_tweet && (S = { ...g.note_tweet, richtext_tags: x ? [] : g.note_tweet.richtext_tags });
-                            const I = m ? this._getInlineMediaSpec(S, g) : void 0,
-                                Z = !!g.grok_translated_post,
-                                P = { text: g.grok_translated_post?.translation ?? "", entities: g.grok_translated_post?.entities ?? {}, display_text_range: [0, g.grok_translated_post?.translation?.length ?? 0] };
-                            return r.createElement(r.Fragment, null, r.createElement(Fe.Z, null, r.createElement(v.z, { context: S }, r.createElement(Oe.Z, null, r.createElement(de.Z, (0, n.Z)({}, y, { disableTranslation: Z || g.user.protected, displayTextRange: this.state.showGrokTranslation ? P.display_text_range : E.display_text_range, entities: this.state.showGrokTranslation ? P.entities : E.entities, headerWhenTranslationDisabled: Z ? this._renderGrokTranslationHeader() : void 0, inlineMediaSpec: I, isFocal: i, isPreviewDisplay: g.isPreviewDisplay, isTranslatable: !Z && g.is_translatable, lang: g.lang, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: g.permalink, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), supplementalLang: g.supplemental_language, text: this.state.showGrokTranslation ? P.text : E.text, tweetId: g.id_str, withOriginalText: i }))))), g.isPreviewDisplay && this._renderPreviewCta(), this._renderAtGrokPromo());
+                            const I = { ...e, transformHashtagLink: y, hitHighlights: t, linkify: o, onEntityClick: s, size: f, transformUrl: this._transformUrl, unmentionedUserIds: T.unmentioned_user_ids, withCardLinks: u, withMediaLinks: !p, withShowMore: E, withQuoteLinks: _ || d.Z.isQuotedTweetUnavailable(T), withUnicodeEmojis: !1, article: b ? T?.article : void 0 };
+                            let Z;
+                            Z = w || m ? fe.Bq(T, { featureSwitches: this.context.featureSwitches }) : { text: T.text, entities: T.entities, display_text_range: T.display_text_range };
+                            const P = !i && !this.context.featureSwitches.isTrue("longform_notetweets_rich_text_timeline_enabled");
+                            let A = null;
+                            T.note_tweet && (A = { ...T.note_tweet, richtext_tags: P ? [] : T.note_tweet.richtext_tags });
+                            const L = m ? this._getInlineMediaSpec(A, T) : void 0,
+                                U = { text: (S && !w ? T.grok_translated_post?.preview_translation : T.grok_translated_post?.translation) ?? "", entities: T.grok_translated_post?.entities ?? {}, display_text_range: [0, T.grok_translated_post?.translation?.length ?? 0] };
+                            return r.createElement(r.Fragment, null, r.createElement(Fe.Z, null, r.createElement(v.z, { context: A }, r.createElement(Oe.Z, null, r.createElement(de.Z, (0, n.Z)({}, I, { disableTranslation: C || T.user.protected, displayTextRange: this.state.showGrokTranslation ? U.display_text_range : Z.display_text_range, entities: this.state.showGrokTranslation ? U.entities : Z.entities, headerWhenTranslationDisabled: C ? this._renderGrokTranslationHeader() : void 0, inlineMediaSpec: L, isFocal: i, isPreviewDisplay: T.isPreviewDisplay, isTranslatable: !C && T.is_translatable, lang: T.lang, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: T.permalink, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), supplementalLang: T.supplemental_language, text: this.state.showGrokTranslation ? U.text : Z.text, tweetId: T.id_str, withOriginalText: i }))))), T.isPreviewDisplay && this._renderPreviewCta(), this._renderAtGrokPromo());
                         }),
                         (this._renderGrokTranslationHeader = () => {
                             const e = this.state.showGrokTranslation ? Ue.ZP.LOADED : Ue.ZP.NONE;
@@ -917,4 +918,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.2b02b41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.ea1d626a.js.map

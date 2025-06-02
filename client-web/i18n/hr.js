@@ -4849,7 +4849,7 @@
                 o("gc10a3b0", "Osobe koje su vas počele pratiti tijekom vremena"),
                 o("efa0f858", "Broj osoba koje su vas počele i prestale pratiti tijekom vremena. To ne utječe nužno na vaš broj osoba koje vas prate."),
                 o("g2b06cc6", "Podaci o rodu možda su izvedeni"),
-                o("b66b3baa", "sati"),
+                o("b66b3baa", "h"),
                 o("cf8a0772", "Prikazi u odnosu na preglede"),
                 o("g13d8010", "U posljednjih 48 h"),
                 o("d5627596", "U posljednjih 1 h"),
@@ -7242,7 +7242,7 @@
                 o("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 o("ae3f3b0e", "Enjoy!"),
                 o("cdac8dc4", "See your new feed"),
-                o("dec99336", "Ad-free"),
+                o("dec99336", "Bez oglasa"),
                 o("i95803fa", "Unfortunately, you are not eligible at this time."),
                 o("d28a1d72", "Prvi uočite trendove pomoću značajke Radar"),
                 o("fb70427a", "Uvodimo najmoćniji alat za pretraživanje na platformi X."),
@@ -13316,4 +13316,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.c063f9ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.13fe7b4a.js.map

@@ -7235,7 +7235,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "ಜಾಹೀರಾತು ರಹಿತ"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Radar ನೊಂದಿಗೆ ಪ್ರವೃತ್ತಿಗಳನ್ನು ಗುರುತಿಸುವಲ್ಲಿ ಮೊದಲಿಗರಾಗಿರಿ"),
                 n("fb70427a", "X ನಲ್ಲಿ ಅತ್ಯಂತ ಶಕ್ತಿಶಾಲಿ ಹುಡುಕಾಟ ಸಾಧನವನ್ನು ಪರಿಚಯಿಸಲಾಗುತ್ತಿದೆ."),
@@ -13307,4 +13307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.fdb7aaca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.c8c4480a.js.map

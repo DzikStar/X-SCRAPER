@@ -9,7 +9,7 @@
                 s = n(58881),
                 i = n(655352);
             const c = a.default.create((e) => ({
-                    container: { display: "flex", flexDirection: "column", flexGrow: 1, paddingBottom: e.spaces.space24, paddingTop: e.spaces.space16, gap: e.spaces.space16 },
+                    container: { display: "flex", flexDirection: "column", flexGrow: 1, paddingBottom: e.spaces.space24, paddingTop: e.spaces.space16, gap: e.spaces.space24 },
                     paddingWide: { paddingHorizontal: e.spaces.space72 },
                     modalPaddingWide: { paddingHorizontal: e.spaces.space32 },
                     paddingSmall: { paddingHorizontal: e.spaces.space16 },
@@ -49,7 +49,7 @@
                     actionWide: { flex: 1 },
                     column: { flexDirection: "column", gap: e.spaces.space12 },
                     rowSpaceBetween: { flexDirection: "row", gap: e.spaces.space16, justifyContent: "space-between", alignItems: "center" },
-                    icon: { height: e.spaces.space32, width: e.spaces.space32, alignSelf: "center", color: e.colors.text },
+                    icon: { height: e.spaces.space24, width: e.spaces.space24, alignSelf: "center", color: e.colors.text },
                 })),
                 o = () => ((0, i.ZP)() ? "medium" : "small"),
                 d = () => {
@@ -469,4 +469,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.1844b94a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.4b46ea8a.js.map

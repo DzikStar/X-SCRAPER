@@ -4841,7 +4841,7 @@
                 s("gc10a3b0", "Követések az idők során"),
                 s("efa0f858", "A követések és a követések megszüntetésének száma az idők során. Ez nem minden esetben azonos a követők számával."),
                 s("g2b06cc6", "A nemre vonatkozó adatok következtetettek lehetnek"),
-                s("b66b3baa", "óránként"),
+                s("b66b3baa", "óra"),
                 s("cf8a0772", "Hatás a megtekintésekre"),
                 s("g13d8010", "Utolsó 48 óra"),
                 s("d5627596", "Utolsó óra"),
@@ -7234,7 +7234,7 @@
                 s("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 s("ae3f3b0e", "Enjoy!"),
                 s("cdac8dc4", "See your new feed"),
-                s("dec99336", "Ad-free"),
+                s("dec99336", "Reklámmentes"),
                 s("i95803fa", "Unfortunately, you are not eligible at this time."),
                 s("d28a1d72", "Légy az elsők között a trendek felfedezésében a Radarral!"),
                 s("fb70427a", "Bemutatjuk az X leghatékonyabb keresőeszközét."),
@@ -13303,4 +13303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.b95eacba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.b04e8c9a.js.map

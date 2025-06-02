@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.JobSearch-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconDoubleChevronUp-js"],
+    ["bundle.JobSearch-6107ac1a", "loader.AudioContextVoiceMedia"],
     {
         771741: (e, l, a) => {
             a.d(l, { Z: () => g });
@@ -1431,6 +1431,40 @@
             r.hash = "492b79a53d8f9fbe4f7ba82e23dbab65";
             const s = r;
         },
+        879113: (e, l, a) => {
+            a.d(l, { Z: () => m });
+            var n = a(202784),
+                i = a(476984),
+                r = a.n(i),
+                s = a(143778),
+                t = a(750410),
+                u = a(682830);
+            const o = "failed",
+                d = "loaded",
+                c = "loading",
+                g = "none";
+            class m extends n.Component {
+                shouldComponentUpdate(e) {
+                    const l = e.fetchStatus === d,
+                        a = this.props.fetchStatus !== e.fetchStatus;
+                    return !(!l && !a) || !r()(e, this.props);
+                }
+                render() {
+                    const { "aria-label": e, color: l, failureMessage: a, fetchStatus: i, icon: r, loadingMessage: s, onRequestRetry: d, render: m, renderFailure: y, retryMessage: k, retryable: p } = this.props;
+                    switch (i) {
+                        case o:
+                            return p ? n.createElement(t.Z, { icon: r, onRequestRetry: d, retryMessage: k }) : a ? n.createElement(u.m, { failureMessage: a }) : y();
+                        case c:
+                            return n.createElement(u.J, { "aria-label": e, color: l, loadingMessage: s });
+                        case g:
+                            return null;
+                        default:
+                            return m();
+                    }
+                }
+            }
+            m.defaultProps = { renderFailure: s.Z, retryable: !0 };
+        },
         420412: (e, l, a) => {
             a.d(l, { Z: () => u });
             var n = a(202784),
@@ -1461,23 +1495,6 @@
             t.defaultProps = { withGutter: !1 };
             const u = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 o = t;
-        },
-        183806: (e, l, a) => {
-            a.d(l, { Z: () => n });
-            const n = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
-        },
-        377782: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => u });
-            var n = a(202784),
-                i = a(890601),
-                r = a(783427),
-                s = a(347101);
-            const t = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2.59l9.46 9.45-1.42 1.42L12 5.41l-8.04 8.05-1.42-1.42L12 2.59zm0 7l9.46 9.45-1.42 1.42L12 12.41l-8.04 8.05-1.42-1.42L12 9.59z" })) }, { writingDirection: l });
-            };
-            t.metadata = { width: 24, height: 24 };
-            const u = t;
         },
         662678: (e, l, a) => {
             a.d(l, { G: () => i, Z: () => n });
@@ -1513,4 +1530,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.cccf411a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.fcba577a.js.map

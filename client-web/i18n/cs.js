@@ -7244,7 +7244,7 @@
                 a("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 a("ae3f3b0e", "Enjoy!"),
                 a("cdac8dc4", "See your new feed"),
-                a("dec99336", "Ad-free"),
+                a("dec99336", "Bez reklam"),
                 a("i95803fa", "Unfortunately, you are not eligible at this time."),
                 a("d28a1d72", "Buďte první, kdo zjistí trendy s Radarem"),
                 a("fb70427a", "Představujeme nejvýkonnější vyhledávací nástroj na X."),
@@ -13306,4 +13306,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.ffa5854a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.c3e8438a.js.map

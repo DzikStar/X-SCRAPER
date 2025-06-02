@@ -357,7 +357,7 @@
             var P = a(482924);
             const M = I,
                 K = ({ lookbackDays: e }) => {
-                    const t = (0, P.A)(M, { lookbackDays: e }, { fetchPolicy: "network-only" }).data;
+                    const t = (0, P.A)(M, { lookback_days: e }, { fetchPolicy: "network-only" }).data;
                     return { estimatedViewCount: t.viewer_v2?.ads_stats_for_viewer?.estimated_view_counts ?? null, estimatedViewTimeSeconds: t.viewer_v2?.ads_stats_for_viewer?.estimated_view_time_in_seconds ?? null, lookbackDays: e };
                 },
                 A = f().fe946974,
@@ -413,7 +413,7 @@
                 },
                 G = (e) => {
                     const t = new Date().getTime() - e.trialStartDate.getTime(),
-                        a = Math.ceil(t / 1e3 / 60 / 60 / 24),
+                        a = Math.floor(t / 1e3 / 60 / 60 / 24),
                         i = K({ lookbackDays: a });
                     return 0 === i.estimatedViewCount ? r.createElement(j, null) : r.createElement($, (0, n.Z)({ adStats: i }, e));
                 },
@@ -721,4 +721,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.561115da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.959113ca.js.map

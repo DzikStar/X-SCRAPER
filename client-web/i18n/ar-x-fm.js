@@ -7248,7 +7248,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "بلا إعلانات"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "كوني أول من يكتشف الموضوعات المتداوَلة باستخدام Radar"),
                 n("fb70427a", "نقدم لكم أقوى أداة بحث على X."),
@@ -13309,4 +13309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.1c289cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.7a207bfa.js.map

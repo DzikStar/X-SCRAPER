@@ -1075,7 +1075,7 @@
                 n("c9bc33fa", "Appareils"),
                 n("f95ed3e6", "Appareil actuel"),
                 n("a787669a", "Inscriptions d'autres appareils"),
-                n("gbefe730", "Vous êtes inscrit aux Messages Privés cryptés sur ces autres appareils."),
+                n("gbefe730", "Vous êtes inscrit aux Messages Privés chiffrés sur ces autres appareils."),
                 n("d7a9796e", "Chargement des appareils"),
                 n("b5635e86", "Inscrire cet appareil"),
                 n("bb4a95dc", "Inscrire votre appareil ?"),
@@ -1085,7 +1085,7 @@
                 n("h7797d18", "Inscrit"),
                 n("hc48a042", "Annuler l'inscription de cet appareil"),
                 n("d5bafb20", "Annuler l'inscription de cet appareil ?"),
-                n("i12dee70", "Si vous annulez l'inscription d'un appareil, vous n'aurez plus accès aux messages cryptés."),
+                n("i12dee70", "Si vous annulez l'inscription d'un appareil, vous n'aurez plus accès aux messages chiffrés."),
                 n("d4b9db26", "Annuler l'inscription…"),
                 n("c18b1b34", "Date et heure d'inscription"),
                 n("e7c9d60a", "L'inscription de l'appareil sélectionné a été annulée."),
@@ -3963,7 +3963,7 @@
                 n("ee230734", "Afficher plus d'options"),
                 n("ic8c615e", "Choisissez et envoyez une option de réponse rapide"),
                 n("a04077c4", "Veuillez choisir 1 photo, 1 vidéo ou 1 GIF."),
-                n("c07367d8", "Le média n'est actuellement pas pris en charge pour les messages cryptés."),
+                n("c07367d8", "Le média n'est actuellement pas pris en charge pour les messages chiffrés."),
                 n("af71ef68", "Voix"),
                 n("fc64990e", "Vidéo"),
                 n("ca0ce0e4", "Démarrer un nouveau message"),
@@ -6400,7 +6400,7 @@
                 n("d87bff5a", "Les infos de votre conversation sont en cours de chargement."),
                 n("cabb453e", "Nom du groupe"),
                 n("eb1bb5a2", "Voir toutes les personnes"),
-                n("a70436ac", "Commencez un message crypté"),
+                n("a70436ac", "Commencez un message chiffré"),
                 n("a7f20223", function (e) {
                     return "Mettre les notifications de " + e.name + " en sommeil";
                 }),
@@ -6453,7 +6453,7 @@
                 n("i78153dd", function (e) {
                     return "Vous avez définitivement mis " + e.name + " en sommeil.";
                 }),
-                n("je9455da", "Les messages sont cryptés."),
+                n("je9455da", "Les messages sont chiffrés."),
                 n("b5b0afa4", "Personnalisez votre affichage"),
                 n("ec5880e6", "Ces paramètres affectent tous les comptes X sur ce navigateur."),
                 n("babfa32c", "Personnalisez rapidement votre affichage."),
@@ -6915,7 +6915,7 @@
                 n("c3148608", "Profitez d'une assistance plus rapide en cas de besoin."),
                 n("b485ca6e", "Onglet Posts marquants"),
                 n("d438955e", "Mettez vos meilleurs posts en avant."),
-                n("f373a352", "MP cryptés"),
+                n("f373a352", "MP chiffrés"),
                 n("g7405aca", "Discutez en toute sécurité grâce au cryptage de bout en bout."),
                 n("j659fa0c", "Le meilleur de Grok 3"),
                 n("ibff5694", "Profitez des limites d'utilisation les plus élevées, des modes DeepSearch et Réflexion ainsi que d'un accès anticipé aux nouvelles fonctionnalités."),
@@ -6959,7 +6959,7 @@
                 n("b1492c6c", "La plus élevée"),
                 n("fb5e2c14", "Mettez des posts en avant avec X Premium"),
                 n("gd1f4cfa", "Mettez vos meilleurs posts en avant sur votre profil"),
-                n("h59250bc", "Messages cryptés avec X Premium"),
+                n("h59250bc", "Messages chiffrés avec X Premium"),
                 n("ed62d546", "Des posts plus longs avec X Premium"),
                 n("ca447200", "Authentification par SMS avec X Premium"),
                 n("af2b99ea", "Éditez des posts avec X Premium"),
@@ -7239,7 +7239,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "Sans publicités"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Repérez les tendances avant tout le monde grâce à Radar"),
                 n("fb70427a", "Nous lançons l'outil de recherche le plus puissant sur X."),
@@ -10986,13 +10986,13 @@
                         {
                             key: "c51866e3",
                             get: function () {
-                                return ["Les messages sont cryptés. "];
+                                return ["Les messages sont chiffrés. "];
                             },
                         },
                         {
                             key: "af0bb3eb",
                             get: function () {
-                                return ["Vous ne pouvez pas envoyer de Messages Privés cryptés à cette personne. "];
+                                return ["Vous ne pouvez pas envoyer de Messages Privés chiffrés à cette personne. "];
                             },
                         },
                         {
@@ -13298,4 +13298,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.67a974ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.4340d4da.js.map

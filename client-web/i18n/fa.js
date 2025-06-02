@@ -7235,7 +7235,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "بدون آگهی"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "با Radar، نخستین کسی باشید که متوجه موضوع‌های داغ می‌شود"),
                 n("fb70427a", "معرفی قدرتمندترین ابزار جست‌وجو در X."),
@@ -13301,4 +13301,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.3d64b8aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.32bb2cfa.js.map

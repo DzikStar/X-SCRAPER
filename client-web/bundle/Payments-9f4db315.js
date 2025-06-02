@@ -668,6 +668,9 @@
         988600: (e, t, n) => {
             e.exports = n.p + "icon-link-account.0f8c318a.svg";
         },
+        530159: (e, t, n) => {
+            e.exports = n.p + "icon-link-card.9eae817a.svg";
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-9f4db315.a9aa89ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-9f4db315.8bbc4f0a.js.map

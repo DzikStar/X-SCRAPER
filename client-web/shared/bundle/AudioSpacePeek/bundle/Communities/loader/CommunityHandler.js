@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler"],
+    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconChevronRight-js"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => m });
@@ -46,7 +46,7 @@
             (m.contextType = d.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         544239: (e, t, n) => {
-            n.d(t, { Z: () => L });
+            n.d(t, { Z: () => A });
             var r = n(202784),
                 i = n(325686),
                 o = n(107267),
@@ -83,13 +83,13 @@
                         { featureSwitches: E } = r.useContext(C.rC),
                         Z = E.isTrue("communities_adult_content_setting_display"),
                         w = E.isTrue("communities_topic_display");
-                    return r.createElement(m.Z, { link: f, onPress: c, style: [M.root, d] }, r.createElement(i.Z, { style: M.container }, r.createElement(i.Z, { style: M.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: M.attribution }, r.createElement(i.Z, { style: M.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", v) : null), r.createElement(k, { communityId: e, count: o }), y && w ? r.createElement(i.Z, { style: M.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, y)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: M.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(A, { communityId: e, onActionButtonJoinClick: s, withActionButton: b, withPinAction: g })));
+                    return r.createElement(m.Z, { link: f, onPress: c, style: [M.root, d] }, r.createElement(i.Z, { style: M.container }, r.createElement(i.Z, { style: M.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: M.attribution }, r.createElement(i.Z, { style: M.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", v) : null), r.createElement(k, { communityId: e, count: o }), y && w ? r.createElement(i.Z, { style: M.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, y)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: M.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(L, { communityId: e, onActionButtonJoinClick: s, withActionButton: b, withPinAction: g })));
                 },
                 I = b().c5d23126,
                 _ = b().j44ec610,
                 S = { label: I },
                 B = { label: _ };
-            function A(e) {
+            function L(e) {
                 const t = (0, o.useRouteMatch)(),
                     { communityId: n, onActionButtonJoinClick: a, withActionButton: l, withPinAction: s } = e;
                 return l ? r.createElement(i.Z, { style: M.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(R, s) : null;
@@ -105,7 +105,7 @@
                     );
                 return r.createElement(i.Z, { style: M.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : S, icon: o, onPress: a, type: "brandText" }));
             }
-            const L = r.memo(P),
+            const A = r.memo(P),
                 M = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
         },
         980407: (e, t, n) => {
@@ -173,7 +173,7 @@
                 };
         },
         699910: (e, t, n) => {
-            n.d(t, { L: () => _, Z: () => A });
+            n.d(t, { L: () => _, Z: () => L });
             var r = n(202784),
                 i = n(325686),
                 o = n(731708),
@@ -252,7 +252,7 @@
                     return r.createElement(i.Z, { style: [B.badge, n], testID: w }, r.createElement(o.ZP, { align: "center", color: "text", weight: "bold" }, e));
                 },
                 B = l.default.create((e) => ({ badge: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.infinite, justifyContent: "center", overflow: "hidden", height: e.spaces.space32, width: e.spaces.space32 }, bottomMargin: { marginBottom: s.h$ } })),
-                A = ({ badgeStyle: e, displayType: t = _.Default, explanation: n, getPivotLink: o, headerContainerStyle: l, headerExplanationStyle: s, heading: c, limit: d, onReorder: u, ruleContainerStyle: m, rules: p, withBottomMargin: y = !1, withHeader: g = !0 }) => {
+                L = ({ badgeStyle: e, displayType: t = _.Default, explanation: n, getPivotLink: o, headerContainerStyle: l, headerExplanationStyle: s, heading: c, limit: d, onReorder: u, ruleContainerStyle: m, rules: p, withBottomMargin: y = !1, withHeader: g = !0 }) => {
                     const f = { badgeStyle: e },
                         E = ((e, t, n) => (t ? e.slice(0, t) : e).map((e, t) => ({ label: e.name, description: e.description, decoration: S(t + 1, n) })))(p, d, f),
                         C = (e) => S(e, f);
@@ -592,9 +592,9 @@
             const _ = i.memo(I);
             var S = n(731708);
             const B = m().bc7a7af4,
-                A = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: R.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(S.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(S.ZP, null, B)),
+                L = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: R.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(S.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(S.ZP, null, B)),
                 R = d.default.create((e) => ({ offendingRule: { display: "flex", marginBottom: e.spaces.space12 } })),
-                L = m().hafa07f2,
+                A = m().hafa07f2,
                 M = m().e7969518,
                 D = m().c15bee32,
                 T = m().efa265fc,
@@ -635,9 +635,9 @@
                                         case z.joinUnavailable:
                                             switch (a) {
                                                 case W.ViewerIsRemoved:
-                                                    return s({ headline: D, text: i.createElement(A, { offendingRule: n?.name }) });
+                                                    return s({ headline: D, text: i.createElement(L, { offendingRule: n?.name }) });
                                                 case W.ViewerNotInvited:
-                                                    return s({ headline: L, text: M });
+                                                    return s({ headline: A, text: M });
                                                 case W.ViewerIsProtected:
                                                     return t ? s({ headline: T, text: F }) : l();
                                                 case W.Unavailable:
@@ -721,9 +721,9 @@
                     .withAnalytics({ page: "community", section: "rules", component: "modal" }),
                 S = m().h4fbfa58,
                 B = m().ea8cfb1e,
-                A = m().dc1b14a1,
+                L = m().dc1b14a1,
                 R = m().fc2a5c92,
-                L = m().c966ac64,
+                A = m().c966ac64,
                 M = m().g690e07e,
                 D = m().a5d21bf4,
                 T = (e) => {
@@ -744,7 +744,7 @@
                     r.useEffect(() => {
                         O && !t && u !== E.Z.LOADED && d(O).catch(n());
                     });
-                    const W = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, A({ communityName: e })), []),
+                    const W = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, L({ communityName: e })), []),
                         q = U ? B : S,
                         $ = r.useCallback(() => {
                             if (t) {
@@ -760,7 +760,7 @@
                             }
                         }, [I, t, n, H, w, U, x, k, P]),
                         K = r.useCallback(() => r.createElement(a.ZP, { onPress: $, size: "small", type: "brandFilled" }, q), [q, $]),
-                        J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: R, text: L, type: "danger" })) : void 0;
+                        J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: R, text: A, type: "danger" })) : void 0;
                     if (t) {
                         const { name: e, question: n, rules: a } = t;
                         return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: k, rightControl: K(), title: (0, b.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: D, label: M, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: T }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(y.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: W(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
@@ -875,6 +875,21 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        58399: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var r = n(202784),
+                i = n(890601),
+                o = n(783427),
+                a = n(717683),
+                l = n(347101);
+            const s = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: n } = (0, o.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.c08f358a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.d067a9ea.js.map

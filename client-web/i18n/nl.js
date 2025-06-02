@@ -4249,7 +4249,7 @@
                 a("g06a67e2", "Deze deelpagina bevat berichten tot dit punt"),
                 a("a0428662", "Niet nuttig"),
                 a("fe4fd310", "Nuttig"),
-                a("bfd161bc", "Vergelijken"),
+                a("bfd161bc", "Vergelijk"),
                 a("j5dcf1b2", "Bijgewerkt"),
                 a("a50aaa10", "Voorbeurs"),
                 a("dd614d10", "Nabeurs"),
@@ -7207,16 +7207,16 @@
                 a("hd80bd3e", "Een post uitlichten"),
                 a("fe2b0008", "Ontdek hoe je X gebruikt"),
                 a("h257d4aa", "Een post selecteren om uit te lichten"),
-                a("fe946974", "Your trial of X without ads"),
-                a("f6c50ec0", "Your ad-free trial has ended"),
-                a("b1319404", "Ads avoided"),
-                a("baa4acae", "You’re seeing more personalized content."),
-                a("c00e8600", "Estimated time saved"),
-                a("ic073e4e", "Your time is valuable."),
-                a("eb866e88", "Estimated 1-year time savings"),
-                a("aa77b70c", "Based on your usage."),
-                a("c534c6b4", "We’re crunching the numbers..."),
-                a("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                a("fe946974", "Je proefversie van X zonder advertenties"),
+                a("f6c50ec0", "Je reclamevrije proefperiode is afgelopen"),
+                a("b1319404", "Vermeden advertenties"),
+                a("baa4acae", "Je krijgt meer gepersonaliseerde content te zien."),
+                a("c00e8600", "Geschatte tijdsbesparing"),
+                a("ic073e4e", "Jouw tijd is kostbaar."),
+                a("eb866e88", "Geschatte tijdsbesparing per jaar"),
+                a("aa77b70c", "Gebaseerd op jouw gebruik."),
+                a("c534c6b4", "We berekenen de cijfers ..."),
+                a("i57332f0", "Blijf scrollen en kom later terug om te zien hoeveel advertenties je hebt vermeden en hoeveel tijd je hebt bespaard"),
                 a("cc10f019", function (e) {
                     return e.minutes + " minu" + r(e.minutes, "ut", "ten");
                 }),
@@ -7232,11 +7232,11 @@
                 a("be88be23", function (e) {
                     return "Je advertentievrije proefperiode van " + e.durationInDays + " dagen is geactiveerd";
                 }),
-                a("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                a("ae3f3b0e", "Enjoy!"),
-                a("cdac8dc4", "See your new feed"),
-                a("dec99336", "Ad-free"),
-                a("i95803fa", "Unfortunately, you are not eligible at this time."),
+                a("a4413462", "Tijdens de hele proefperiode kan je statistieken bekijken over hoeveel advertenties je niet hebt gezien en hoeveel tijd je hebt bespaard."),
+                a("ae3f3b0e", "Geniet ervan!"),
+                a("cdac8dc4", "Je nieuwe feed bekijken"),
+                a("dec99336", "Reclamevrij"),
+                a("i95803fa", "Helaas kom je op dit moment hiervoor niet in aanmerking."),
                 a("d28a1d72", "Signaleer trends als eerste met Radar"),
                 a("fb70427a", "Maak kennis met de krachtigste zoekfunctie op X."),
                 a("i54bf620", "Monitor trefwoorden"),
@@ -12081,7 +12081,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% kosten, min. "];
                             },
                         },
                         {
@@ -13308,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.7c1fca8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.4a85104a.js.map

@@ -462,7 +462,7 @@
                                                                   p = d && d.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   m = ge(r, i, { featureSwitches: t, userClaims: s }),
                                                                   _ = m ? `&media_category=${m}` : "";
-                                                              c?.reportOperationStart(v.BX.SruUpload), r.uploader?.upload({ success: g, progress: f, pause: h, error: y, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ce(r), pauseBeforeFinalize: a, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", 1), enable_1080p_variant: !u || o, mediaItem: r });
+                                                              c?.reportOperationStart(v.BX.SruUpload), r.uploader?.upload({ success: g, progress: f, pause: h, error: y, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ce(r), pauseBeforeFinalize: a, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", d && d.size > 2e9 ? 4 : 1), enable_1080p_variant: !u || o, mediaItem: r });
                                                           }
                                                       });
                                                   return a({ id: u, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
@@ -588,4 +588,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2.9235ffca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2.9d6af6ba.js.map

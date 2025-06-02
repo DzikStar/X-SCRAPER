@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.TwitterArticles-bc6ccf4c", "icons/IconFolderArrowLeft-js", "icons/IconSearchPlusStroke-js"],
+    ["bundle.TwitterArticles-bc6ccf4c", "icons/IconCameraPlusStroke-js", "icons/IconSearchPlusStroke-js"],
     {
         661810: (e, t, s) => {
             s.d(t, { Z: () => r });
@@ -31,10 +31,10 @@
                     return !(!t && !s) || !a()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: s, fetchStatus: i, icon: a, loadingMessage: r, onRequestRetry: c, render: u, renderFailure: m, retryMessage: g, retryable: _ } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: s, fetchStatus: i, icon: a, loadingMessage: r, onRequestRetry: c, render: u, renderFailure: m, retryMessage: g, retryable: v } = this.props;
                     switch (i) {
                         case h:
-                            return _ ? o.createElement(n.Z, { icon: a, onRequestRetry: c, retryMessage: g }) : s ? o.createElement(l.m, { failureMessage: s }) : m();
+                            return v ? o.createElement(n.Z, { icon: a, onRequestRetry: c, retryMessage: g }) : s ? o.createElement(l.m, { failureMessage: s }) : m();
                         case d:
                             return o.createElement(l.J, { "aria-label": e, color: t, loadingMessage: r });
                         case p:
@@ -94,7 +94,7 @@
                 h = n;
         },
         548485: (e, t, s) => {
-            s.d(t, { Z: () => H });
+            s.d(t, { Z: () => W });
             var o = s(202784),
                 i = s(928316),
                 a = s(325686),
@@ -108,16 +108,16 @@
                 u = s(323265),
                 m = s(154003),
                 g = s(992942),
-                _ = s(782578),
-                f = s(173739),
-                v = s(392237),
+                v = s(782578),
+                _ = s(173739),
+                f = s(392237),
                 y = s(393058);
-            const b = v.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
+            const b = f.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
                 C = ({ circle: e, height: t, width: s }) => o.createElement(a.Z, { pointerEvents: "none", style: [b.mask, { width: s, height: t }, e && b.circle] });
             var S = s(807896),
                 w = s(151624),
                 E = s(933895);
-            class P extends o.Component {
+            class M extends o.Component {
                 constructor(e) {
                     super(e),
                         (this._previousTouchDistance = 0),
@@ -175,20 +175,20 @@
                     this._removeTouchMoveToScrollListener && this._removeTouchMoveToScrollListener(), this._removeScrollToScaleListener && this._removeScrollToScaleListener(), this._removeSelectStartListener();
                 }
             }
-            const Z = P,
-                x = n().d85bc1b8,
-                M = n().f596ace8,
+            const P = M,
+                Z = n().d85bc1b8,
+                x = n().f596ace8,
                 R = n().df031fca,
                 D = n().b40332c6,
                 k = n().e547b368,
                 T = n().f7571204,
-                I = n().e6e16812,
-                L =
+                z = n().e6e16812,
+                I =
                     Math.log2 ||
                     function (e) {
                         return Math.log(e) * Math.LOG2E;
                     };
-            class W extends o.Component {
+            class H extends o.Component {
                 constructor(e) {
                     var t;
                     super(e),
@@ -201,7 +201,7 @@
                                 { aspectRatio: s } = this.state,
                                 i = e.width / e.height,
                                 r = this._shouldShowZoomControl();
-                            return t || r ? o.createElement(a.Z, { style: z.controlsContainer }, t ? o.createElement(a.Z, { style: z.ratioContainer }, o.createElement(m.ZP, { "aria-label": M, borderColor: "transparent", color: s === i ? "primary" : "gray700", hoverLabel: { label: k }, icon: o.createElement(l.default, null), onPress: this._setAspectRatio(i), size: "medium" }), o.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: s === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: T }, icon: o.createElement(h.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), o.createElement(m.ZP, { "aria-label": D, borderColor: "transparent", color: 1 === s ? "primary" : "gray700", hoverLabel: { label: I }, icon: o.createElement(c.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, r ? o.createElement(a.Z, { style: z.zoomContainer }, o.createElement(f.Z, { "aria-label": x, max: this._maxScale, maxIcon: o.createElement(d.default, { style: z.icon }), min: 0, minIcon: o.createElement(p.default, { style: z.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
+                            return t || r ? o.createElement(a.Z, { style: L.controlsContainer }, t ? o.createElement(a.Z, { style: L.ratioContainer }, o.createElement(m.ZP, { "aria-label": x, borderColor: "transparent", color: s === i ? "primary" : "gray700", hoverLabel: { label: k }, icon: o.createElement(l.default, null), onPress: this._setAspectRatio(i), size: "medium" }), o.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: s === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: T }, icon: o.createElement(h.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), o.createElement(m.ZP, { "aria-label": D, borderColor: "transparent", color: 1 === s ? "primary" : "gray700", hoverLabel: { label: z }, icon: o.createElement(c.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, r ? o.createElement(a.Z, { style: L.zoomContainer }, o.createElement(_.Z, { "aria-label": Z, max: this._maxScale, maxIcon: o.createElement(d.default, { style: L.icon }), min: 0, minIcon: o.createElement(p.default, { style: L.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
                         }),
                         (this._handleScaleChange = (e) => {
                             this.setState({ imageScale: e });
@@ -210,12 +210,12 @@
                             const { imageScale: e } = this.state,
                                 t = this.props.image.width / this.props.image.height,
                                 { height: s, width: o } = this._getMaskDimensions(),
-                                { height: i, width: a } = _.Z.getCoverDimensions({ width: o, height: s }, t);
+                                { height: i, width: a } = v.Z.getCoverDimensions({ width: o, height: s }, t);
                             return { width: a * Math.pow(2, e), height: i * Math.pow(2, e) };
                         }),
                         (this._getMaskDimensions = () => {
                             const { aspectRatio: e, containerHeight: t, containerWidth: s } = this.state,
-                                { height: o, width: i } = _.Z.getContainDimensions({ width: s - 50, height: t - 50 }, e);
+                                { height: o, width: i } = v.Z.getContainDimensions({ width: s - 50, height: t - 50 }, e);
                             return { width: i, height: o };
                         }),
                         (this._handleLayout = (e) => {
@@ -228,7 +228,7 @@
                             const { width: s } = this._getImageDimensions(),
                                 { width: o } = this._getMaskDimensions(),
                                 i = s / t.width,
-                                a = L(o / (e.width * i));
+                                a = I(o / (e.width * i));
                             this.setState({ imageScale: a });
                             const { left: r, top: n } = this._getUnscaledCropData();
                             (this._panStyles.top = n - e.top * i * Math.pow(2, a)), (this._previousTop = this._panStyles.top), (this._panStyles.left = r - e.left * i * Math.pow(2, a)), (this._previousLeft = this._panStyles.left), this._updateStyles();
@@ -283,7 +283,7 @@
                             this.setState({ aspectRatio: e });
                         }),
                         (this.state = { aspectRatio: e.defaultAspectRatio || e.image.width / e.image.height, imageScale: 0, containerHeight: 0, containerWidth: 0 }),
-                        (this._maxScale = ((t = e.image), Math.max(Math.min(L(t.width / 150), L(t.height / 150), 3), 0.5)));
+                        (this._maxScale = ((t = e.image), Math.max(Math.min(I(t.width / 150), I(t.height / 150), 3), 0.5)));
                 }
                 render() {
                     const { circle: e, image: t, withZoomControl: s } = this.props,
@@ -291,7 +291,7 @@
                         { height: r, width: n } = this._getImageDimensions(),
                         { height: l, width: h } = this._getMaskDimensions(),
                         c = this.state.containerWidth && this.state.containerHeight;
-                    return o.createElement(a.Z, { style: z.container }, o.createElement(Z, { onLayout: this._handleLayout, onPanEnd: this._handlePanEnd, onPanMove: this._handlePanMove, onPinchMove: s ? this._handlePinchMove : void 0, onWheel: s ? this._handleWheel : void 0, style: z.root }, c ? o.createElement(o.Fragment, null, o.createElement(g.Z, { source: { uri: t.src, width: n, height: r }, style: [z.image, i] }), o.createElement(C, { circle: e, height: l, width: h })) : null), c ? this._renderControls() : null);
+                    return o.createElement(a.Z, { style: L.container }, o.createElement(P, { onLayout: this._handleLayout, onPanEnd: this._handlePanEnd, onPanMove: this._handlePanMove, onPinchMove: s ? this._handlePinchMove : void 0, onWheel: s ? this._handleWheel : void 0, style: L.root }, c ? o.createElement(o.Fragment, null, o.createElement(g.Z, { source: { uri: t.src, width: n, height: r }, style: [L.image, i] }), o.createElement(C, { circle: e, height: l, width: h })) : null), c ? this._renderControls() : null);
                 }
                 componentDidUpdate(e, t) {
                     this._updateStyles(), this._adjustToInBounds();
@@ -303,12 +303,12 @@
                     return { aspectRatio: this.state.aspectRatio, top: Math.round(t * s.top), left: Math.round(t * s.left), width: Math.round(t * s.width), height: Math.round(t * s.height) };
                 }
             }
-            W.defaultProps = { circle: !1, withZoomControl: !0 };
-            const z = v.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
-                H = W;
+            H.defaultProps = { circle: !1, withZoomControl: !0 };
+            const L = f.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
+                W = H;
         },
         449479: (e, t, s) => {
-            s.d(t, { Z: () => v });
+            s.d(t, { Z: () => f });
             var o = s(202784),
                 i = s(325686),
                 a = s(913973),
@@ -333,11 +333,11 @@
                         });
                 }
                 render() {
-                    const { "aria-posinset": e, "aria-setsize": t, checked: s, disabled: d, helpText: u, label: g, name: _, testID: f } = this.props,
-                        v = h.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
+                    const { "aria-posinset": e, "aria-setsize": t, checked: s, disabled: d, helpText: u, label: g, name: v, testID: _ } = this.props,
+                        f = h.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
                         y = h.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
-                        b = s ? v : y;
-                    return o.createElement(l.Z, { disabled: d }, (l) => o.createElement(i.Z, { role: "label", style: [m.root, !d && m.interactive], testID: f }, o.createElement(i.Z, { style: m.topContainer }, o.createElement(r.ZP, { id: this.labelId }, g), o.createElement(i.Z, { style: m.radioContainer }, o.createElement(c.Z, { interactiveStyles: b, interactivityState: l, style: m.radioBackground }, o.createElement(i.Z, { style: [m.circle, s && m.circleActive, d && m.circleDisabled, s && d && m.circleCheckedAndDisabled] }, s ? o.createElement(a.default, { style: m.checkMark }) : null)), (0, n.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: s, disabled: d, name: _, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), u ? o.createElement(r.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, u) : null));
+                        b = s ? f : y;
+                    return o.createElement(l.Z, { disabled: d }, (l) => o.createElement(i.Z, { role: "label", style: [m.root, !d && m.interactive], testID: _ }, o.createElement(i.Z, { style: m.topContainer }, o.createElement(r.ZP, { id: this.labelId }, g), o.createElement(i.Z, { style: m.radioContainer }, o.createElement(c.Z, { interactiveStyles: b, interactivityState: l, style: m.radioBackground }, o.createElement(i.Z, { style: [m.circle, s && m.circleActive, d && m.circleDisabled, s && d && m.circleCheckedAndDisabled] }, s ? o.createElement(a.default, { style: m.checkMark }) : null)), (0, n.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: s, disabled: d, name: v, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), u ? o.createElement(r.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, u) : null));
                 }
                 focus() {
                     this._ref && this._ref.focus();
@@ -346,9 +346,9 @@
             u.defaultProps = { disabled: !1, checked: !1 };
             const m = p.default.create((e) => ({ root: { paddingVertical: e.spaces.space4 }, topContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", flexGrow: 1 }, interactive: { cursor: "pointer" }, circleDisabled: { borderColor: e.colors.gray200 }, circleCheckedAndDisabled: { backgroundColor: e.colors.gray300, borderColor: e.colors.gray300 }, radioContainer: { userSelect: "none", marginStart: e.spaces.space20 }, radioBackground: { borderRadius: e.borderRadii.infinite, margin: `-${e.spaces.space8}`, padding: e.spaces.space8 }, circle: { alignItems: "center", backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray700, borderStyle: "solid", borderWidth: e.borderWidths.medium, borderRadius: e.spaces.space32, height: e.spaces.space20, justifyContent: "center", width: e.spaces.space20 }, circleActive: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, checkMark: { width: "18px", height: "18px", color: e.colors.whiteOnColor }, nativeControl: { ...p.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" }, helpText: { paddingTop: e.spaces.space4 } })),
                 g = u,
-                _ = "radioGroup";
-            let f = 1;
-            class v extends o.Component {
+                v = "radioGroup";
+            let _ = 1;
+            class f extends o.Component {
                 constructor() {
                     super(),
                         (this._radioRefs = {}),
@@ -364,23 +364,23 @@
                                 t = e ? this._radioRefs[e] : this._radioRefs[0];
                             t && t.focus();
                         }),
-                        (this._labelId = `RADIO_GROUP_${f}_LABEL`),
-                        (f += 1);
+                        (this._labelId = `RADIO_GROUP_${_}_LABEL`),
+                        (_ += 1);
                 }
                 render() {
                     const { "aria-label": e, description: t, disabled: s, label: a, name: n, options: l, value: h } = this.props;
                     return o.createElement(
                         i.Z,
-                        { "aria-label": e, "aria-labelledby": a && !e ? this._labelId : void 0, role: "radiogroup", style: s && y.disabled, testID: `${_}${n}` },
+                        { "aria-label": e, "aria-labelledby": a && !e ? this._labelId : void 0, role: "radiogroup", style: s && y.disabled, testID: `${v}${n}` },
                         a ? o.createElement(i.Z, { id: this._labelId, role: "label", style: y.header }, o.createElement(r.ZP, { style: y.label, weight: "bold" }, a), t ? o.createElement(r.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
                         l.map((e, t) => o.createElement(g, { "aria-posinset": t + 1, "aria-setsize": l.length, checked: e.value === h, disabled: s, helpText: e.helpText, key: e.value, label: e.label, name: n, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(t, e.value === h), testID: e.testID })),
                     );
                 }
             }
-            v.defaultProps = { disabled: !1 };
+            f.defaultProps = { disabled: !1 };
             const y = p.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
         },
-        745088: (e, t, s) => {
+        293615: (e, t, s) => {
             s.r(t), s.d(t, { default: () => l });
             var o = s(202784),
                 i = s(890601),
@@ -388,7 +388,20 @@
                 r = s(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M11 18v2H4.502c-1.378 0-2.5-1.121-2.5-2.5V3h8.535l2 3h9.465v7h-2V8h-8.535l-2-3H4.002v12.5c0 .275.224.5.5.5H11zm8.502 0h-2.073l2-2-1.414-1.414L13.601 19l4.414 4.414L19.429 22l-2-2H23v-2h-3.498z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
+            };
+            n.metadata = { width: 24, height: 24 };
+            const l = n;
+        },
+        648539: (e, t, s) => {
+            s.r(t), s.d(t, { default: () => l });
+            var o = s(202784),
+                i = s(890601),
+                a = s(783427),
+                r = s(347101);
+            const n = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
@@ -408,4 +421,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-bc6ccf4c.1f2fa4fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-bc6ccf4c.841ba76a.js.map

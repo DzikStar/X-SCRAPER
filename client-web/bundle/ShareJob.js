@@ -52,13 +52,13 @@
                 d = l(725516),
                 m = l(272590);
             const g = i.default.create((e) => ({ card: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space20, height: "100%" }, cardLayout: { display: "flex", flexDirection: "column", gap: e.spaces.space8, height: "100%" }, cardMeta: { display: "flex", flexDirection: "column", gap: 8 }, cardSubtext: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 12 }, withIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 } })),
-                y = ({ formattedSalary: e, id: a, isVerifiedOrg: l, isViewerFollowsUser: y, jobIndex: p, location: b, profileId: k, redirectUrl: f, salaryInterval: _, timestamp: h, title: F }) => {
-                    const E = (0, d.z)(),
+                y = ({ formattedSalary: e, id: a, isVerifiedOrg: l, isViewerFollowsUser: y, jobIndex: p, location: b, profileId: k, redirectUrl: f, salaryInterval: h, timestamp: _, title: E }) => {
+                    const F = (0, d.z)(),
                         v = n.useCallback(() => {
-                            E.scribe({ ...(0, m.yt)("jobs_module", "click", "job"), data: { profile_id: k, items: [{ position: p, id: a, is_viewer_follows_user: y }] } });
-                        }, [E, a, y, p, k]),
+                            F.scribe({ ...(0, m.yt)("jobs_module", "click", "job"), data: { profile_id: k, items: [{ position: p, id: a, is_viewer_follows_user: y }] } });
+                        }, [F, a, y, p, k]),
                         w = n.useMemo(() => `/i/jobs/${a}`, [a]);
-                    return n.createElement(r.Z, { link: l ? { pathname: w, external: !0 } : f || "", onClick: v, role: "link", style: [g.card, i.default.isDarkMode() ? g.darkModeContentBackground : g.contentBackground] }, n.createElement(t.Z, { style: g.cardLayout }, n.createElement(s.ZP, { hoverLabel: { label: F, withDelay: !0 }, numberOfLines: 1, size: "subtext2", weight: "bold" }, F), n.createElement(t.Z, { style: g.cardMeta }, n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(o.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", weight: "normal" }, b)), e || h ? n.createElement(t.Z, { style: g.cardSubtext }, e ? n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(c.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", style: g.withIcon, weight: "normal" }, (0, u.M)(e, _))) : null, h ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, h) : null) : null)));
+                    return n.createElement(r.Z, { link: l ? { pathname: w, external: !0 } : f || "", onClick: v, role: "link", style: [g.card, i.default.isDarkMode() ? g.darkModeContentBackground : g.contentBackground] }, n.createElement(t.Z, { style: g.cardLayout }, n.createElement(s.ZP, { hoverLabel: { label: E, withDelay: !0 }, numberOfLines: 1, size: "subtext2", weight: "bold" }, E), n.createElement(t.Z, { style: g.cardMeta }, n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(o.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", weight: "normal" }, b)), e || _ ? n.createElement(t.Z, { style: g.cardSubtext }, e ? n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(c.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", style: g.withIcon, weight: "normal" }, (0, u.M)(e, h))) : null, _ ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, _) : null) : null)));
                 };
         },
         272590: (e, a, l) => {
@@ -97,7 +97,7 @@
                 };
         },
         638679: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => Ee });
+            l.r(a), l.d(a, { default: () => Fe });
             var n,
                 t,
                 r,
@@ -154,8 +154,8 @@
                     return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "AddJobMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "AddJobMutation", selections: a }, params: { id: "Jpo1B2QEin48EYWnH55r1w", metadata: {}, name: "AddJobMutation", operationKind: "mutation", text: null } };
                 })();
             f.hash = "5536f9946dcfe5afd51e8f6ffecde72c";
-            const _ = f;
-            var h = (function () {
+            const h = f;
+            var _ = (function () {
                 var e = [{ defaultValue: null, kind: "LocalArgument", name: "jobId" }],
                     a = [
                         { kind: "Variable", name: "rest_id", variableName: "jobId" },
@@ -220,49 +220,49 @@
                     params: { id: "k6yQNpBSEO93ZgAM113Qgw", metadata: {}, name: "AddJobQuery", operationKind: "query", text: null },
                 };
             })();
-            h.hash = "d1623fcb8bdbdb0fa14bb939cf0849a7";
-            const F = h;
-            var E = l(351743),
-                v = l.n(E),
+            _.hash = "d1623fcb8bdbdb0fa14bb939cf0849a7";
+            const E = _;
+            var F = l(351743),
+                v = l.n(F),
                 w = l(107267),
-                K = l(731708),
+                Z = l(731708),
                 x = l(154003),
-                S = l(111677),
-                Z = l.n(S),
+                K = l(111677),
+                S = l.n(K),
                 C = l(9577),
                 I = l(2430),
                 L = l(454104);
-            const z = Z().caa352f0,
-                j = Z().i08bee0e,
-                O = Z().d7ccaea2,
-                P = Z().h05e4a7a,
-                R = Z().b518daae,
-                J = Z().cfd2f35e,
-                T = Z().fc2a5c92,
-                M = Z().d338f53e,
+            const z = S().caa352f0,
+                j = S().i08bee0e,
+                O = S().d7ccaea2,
+                P = S().h05e4a7a,
+                R = S().b518daae,
+                J = S().cfd2f35e,
+                M = S().fc2a5c92,
+                T = S().d338f53e,
                 D = ({ onClose: e }) => {
                     const { isVerifiedOrg: a } = (0, L.Z)();
-                    return d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, a ? j : z), d.createElement(K.ZP, { color: "gray700", size: "subtext1", style: V.root }, a ? P : O), d.createElement(x.ZP, { link: { pathname: a ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "brandFilled" }, R), d.createElement(x.ZP, { onClick: e, type: "primaryOutlined" }, J));
+                    return d.createElement(d.Fragment, null, d.createElement(Z.ZP, { color: "text", size: "headline1", weight: "bold" }, a ? j : z), d.createElement(Z.ZP, { color: "gray700", size: "subtext1", style: V.root }, a ? P : O), d.createElement(x.ZP, { link: { pathname: a ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "brandFilled" }, R), d.createElement(x.ZP, { onClick: e, type: "primaryOutlined" }, J));
                 },
                 V = y.default.create((e) => ({ root: { maxWidth: "400px" } })),
-                A = ({ errorMsg: e, onClose: a, retry: l, title: n = T }) => ("too many active job share items" === e ? d.createElement(D, { onClose: a }) : d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, n), d.createElement(K.ZP, { color: "gray700", size: "subtext1" }, e), d.createElement(x.ZP, { onClick: l, type: "brandFilled" }, M), d.createElement(x.ZP, { onClick: a, type: "primaryOutlined" }, J))),
-                N = Z().f48e9c52,
-                Q = Z().f6757978,
-                q = Z().i329c5a6,
-                B = Z().j58e7b00,
-                H = Z().ia5e7488,
+                A = ({ errorMsg: e, onClose: a, retry: l, title: n = M }) => ("too many active job share items" === e ? d.createElement(D, { onClose: a }) : d.createElement(d.Fragment, null, d.createElement(Z.ZP, { color: "text", size: "headline1", weight: "bold" }, n), d.createElement(Z.ZP, { color: "gray700", size: "subtext1" }, e), d.createElement(x.ZP, { onClick: l, type: "brandFilled" }, T), d.createElement(x.ZP, { onClick: a, type: "primaryOutlined" }, J))),
+                N = S().f48e9c52,
+                Q = S().f6757978,
+                B = S().i329c5a6,
+                q = S().j58e7b00,
+                H = S().ia5e7488,
                 U = y.default.create((e) => ({ root: { maxWidth: "400px" } })),
                 W = ({ onClose: e, screenName: a }) => {
                     const { isVerifiedOrg: l } = (0, L.Z)();
-                    return d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, N), d.createElement(K.ZP, { color: "gray700", size: "subtext1", style: U.root }, Q), d.createElement(x.ZP, { link: { pathname: l ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "primaryFilled" }, q), d.createElement(x.ZP, { link: { pathname: `/${a}`, method: "replace" }, type: "primaryFilled" }, B), d.createElement(x.ZP, { onClick: e, type: "primaryOutlined" }, H));
+                    return d.createElement(d.Fragment, null, d.createElement(Z.ZP, { color: "text", size: "headline1", weight: "bold" }, N), d.createElement(Z.ZP, { color: "gray700", size: "subtext1", style: U.root }, Q), d.createElement(x.ZP, { link: { pathname: l ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "primaryFilled" }, B), d.createElement(x.ZP, { link: { pathname: `/${a}`, method: "replace" }, type: "primaryFilled" }, q), d.createElement(x.ZP, { onClick: e, type: "primaryOutlined" }, H));
                 },
-                $ = Z().bae2f5f0,
-                G = Z().cbcaaa1a,
-                X = Z().f58cf1ac,
-                Y = Z().cfd2f35e,
-                ee = Z().j4ae9960,
-                ae = F,
-                le = _,
+                $ = S().bae2f5f0,
+                G = S().cbcaaa1a,
+                X = S().f58cf1ac,
+                Y = S().cfd2f35e,
+                ee = S().j4ae9960,
+                ae = E,
+                le = h,
                 ne = "SUCCESS",
                 te = ({ job: e, jobId: a, screenName: l, userId: n }) => {
                     const t = (0, w.useHistory)(),
@@ -282,7 +282,7 @@
                         u = d.useCallback(() => {
                             t.goBack();
                         }, [t]);
-                    return r === ne ? d.createElement(W, { onClose: u, screenName: l }) : r ? d.createElement(A, { errorMsg: r, onClose: u, retry: c, screenName: l }) : d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, $), d.createElement(K.ZP, { color: "gray700", size: "subtext1" }, G), d.createElement(m.Z, { style: re.spotlightCard }, d.createElement(C.Z, { formattedSalary: e.formatted_salary, id: a, jobIndex: 0, location: e.location, maxSalary: e.salary_max, minSalary: e.salary_min, redirectUrl: "", salaryInterval: e.salary_interval, title: e.title || "" })), d.createElement(x.ZP, { disabled: o, onClick: c, type: "brandFilled" }, X), d.createElement(x.ZP, { disabled: o, onClick: u, type: "primaryOutlined" }, Y));
+                    return r === ne ? d.createElement(W, { onClose: u, screenName: l }) : r ? d.createElement(A, { errorMsg: r, onClose: u, retry: c, screenName: l }) : d.createElement(d.Fragment, null, d.createElement(Z.ZP, { color: "text", size: "headline1", weight: "bold" }, $), d.createElement(Z.ZP, { color: "gray700", size: "subtext1" }, G), d.createElement(m.Z, { style: re.spotlightCard }, d.createElement(C.Z, { formattedSalary: e.formatted_salary, id: a, jobIndex: 0, location: e.location, maxSalary: e.salary_max, minSalary: e.salary_min, redirectUrl: "", salaryInterval: e.salary_interval, title: e.title || "" })), d.createElement(x.ZP, { disabled: o, onClick: c, type: "brandFilled" }, X), d.createElement(x.ZP, { disabled: o, onClick: u, type: "primaryOutlined" }, Y));
                 },
                 re = y.default.create((e) => ({ spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 } })),
                 ie = ({ jobId: e, screenName: a, userId: l }) => {
@@ -300,9 +300,9 @@
                 ue = l(992942),
                 de = l(817524),
                 me = l(62668);
-            const ge = Z().h39a5448,
-                ye = Z().d204515c,
-                pe = Z().hc67be9e,
+            const ge = S().h39a5448,
+                ye = S().d204515c,
+                pe = S().hc67be9e,
                 be = y.default.create((e) => ({ imageContainer: { flex: 1 }, image: { minHeight: "300px" } })),
                 ke = ({ orgQueryId: e, userId: a }) => {
                     const [l, n] = (0, de.Z)(),
@@ -319,10 +319,10 @@
                                     },
                                 });
                         }, [e, l, a]);
-                    return d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, ge), d.createElement(K.ZP, { color: "gray700", size: "subtext1" }, ye), d.createElement(m.Z, { style: be.imageContainer }, d.createElement(ue.Z, { "aria-label": "Jobs preview", resizeMode: "contain", source: me, style: be.image })), d.createElement(x.ZP, { disabled: n, onClick: t, type: "brandFilled" }, pe));
+                    return d.createElement(d.Fragment, null, d.createElement(Z.ZP, { color: "text", size: "headline1", weight: "bold" }, ge), d.createElement(Z.ZP, { color: "gray700", size: "subtext1" }, ye), d.createElement(m.Z, { style: be.imageContainer }, d.createElement(ue.Z, { "aria-label": "Jobs preview", resizeMode: "contain", source: me, style: be.image })), d.createElement(x.ZP, { disabled: n, onClick: t, type: "brandFilled" }, pe));
                 },
                 fe = u,
-                _e = () => {
+                he = () => {
                     const {
                             viewer: {
                                 user_results: { result: e },
@@ -335,9 +335,9 @@
                         r = d.useCallback(() => (e ? (a && n && t ? d.createElement(se, { screenName: t, userId: n }) : d.createElement(ke, { orgQueryId: l, userId: n })) : d.createElement(g.Z, null)), [a, l, e, t, n]);
                     return d.createElement(d.Fragment, null, r());
                 },
-                he = { context: "ShareJob" },
-                Fe = y.default.create((e) => ({ modalStyles: { padding: e.spaces.space16, gap: e.spaces.space16 } })),
-                Ee = ({ history: e }) => d.createElement(b.H, { errorConfig: he }, d.createElement(p.ZP, { clickMaskToClose: !0, history: e, modalSize: "fitChildren", withBackground: !0 }, d.createElement(m.Z, { style: Fe.modalStyles }, d.createElement(_e, null))));
+                _e = { context: "ShareJob" },
+                Ee = y.default.create((e) => ({ modalStyles: { padding: e.spaces.space16, gap: e.spaces.space16 } })),
+                Fe = ({ history: e }) => d.createElement(b.H, { errorConfig: _e }, d.createElement(p.ZP, { clickMaskToClose: !0, history: e, modalSize: "fitChildren", withBackground: !0 }, d.createElement(m.Z, { style: Ee.modalStyles }, d.createElement(he, null))));
         },
         454104: (e, a, l) => {
             l.d(a, { Z: () => t });
@@ -384,9 +384,22 @@
                         } catch (e) {}
                 };
         },
+        264171: (e, a, l) => {
+            l.r(a), l.d(a, { default: () => o });
+            var n = l(202784),
+                t = l(890601),
+                r = l(783427),
+                i = l(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
         62668: (e, a, l) => {
             e.exports = l.p + "splash-preview.9856fd5a.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ShareJob.b698deba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ShareJob.967adbea.js.map

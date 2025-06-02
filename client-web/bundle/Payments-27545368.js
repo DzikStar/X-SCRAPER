@@ -56,7 +56,7 @@
                     for (r = 0; r < i.length; r++) (n = i[r]), t.indexOf(n) >= 0 || (o[n] = e[n]);
                     return o;
                 }
-                function c(e, t) {
+                function a(e, t) {
                     if (null == e) return {};
                     var n,
                         r,
@@ -67,35 +67,35 @@
                     }
                     return o;
                 }
-                function a(e, t) {
-                    return s(e) || l(e, t) || f(e, t) || d();
+                function c(e, t) {
+                    return l(e) || s(e, t) || d(e, t) || f();
                 }
-                function s(e) {
+                function l(e) {
                     if (Array.isArray(e)) return e;
                 }
-                function l(e, t) {
+                function s(e, t) {
                     var n = e && (("undefined" != typeof Symbol && e[Symbol.iterator]) || e["@@iterator"]);
                     if (null != n) {
                         var r,
                             o,
                             i = [],
                             u = !0,
-                            c = !1;
+                            a = !1;
                         try {
                             for (n = n.call(e); !(u = (r = n.next()).done) && (i.push(r.value), !t || i.length !== t); u = !0);
                         } catch (e) {
-                            (c = !0), (o = e);
+                            (a = !0), (o = e);
                         } finally {
                             try {
                                 u || null == n.return || n.return();
                             } finally {
-                                if (c) throw o;
+                                if (a) throw o;
                             }
                         }
                         return i;
                     }
                 }
-                function f(e, t) {
+                function d(e, t) {
                     if (e) {
                         if ("string" == typeof e) return p(e, t);
                         var n = Object.prototype.toString.call(e).slice(8, -1);
@@ -107,7 +107,7 @@
                     for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
                     return r;
                 }
-                function d() {
+                function f() {
                     throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
                 }
                 function m(e) {
@@ -118,13 +118,13 @@
                     v,
                     b,
                     E = { exports: {} };
-                function g() {
+                function S() {
                     return h ? y : ((h = 1), (y = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"));
                 }
-                function S() {
+                function g() {
                     if (b) return v;
                     b = 1;
-                    var e = g();
+                    var e = S();
                     function t() {}
                     function n() {}
                     return (
@@ -132,8 +132,8 @@
                         (v = function () {
                             function r(t, n, r, o, i, u) {
                                 if (u !== e) {
-                                    var c = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-                                    throw ((c.name = "Invariant Violation"), c);
+                                    var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+                                    throw ((a.name = "Invariant Violation"), a);
                                 }
                             }
                             function o() {
@@ -145,7 +145,7 @@
                         })
                     );
                 }
-                E.exports = S()();
+                E.exports = g()();
                 var C = m(E.exports),
                     k = function (e, n, r) {
                         var o = !!r,
@@ -194,7 +194,7 @@
                         return w(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment;
                     },
                     x = "[object Object]",
-                    I = function e(t, n) {
+                    R = function e(t, n) {
                         if (!w(t) || !w(n)) return t === n;
                         var r = Array.isArray(t);
                         if (r !== Array.isArray(n)) return !1;
@@ -204,48 +204,48 @@
                         var i = Object.keys(t),
                             u = Object.keys(n);
                         if (i.length !== u.length) return !1;
-                        for (var c = {}, a = 0; a < i.length; a += 1) c[i[a]] = !0;
-                        for (var s = 0; s < u.length; s += 1) c[u[s]] = !0;
-                        var l = Object.keys(c);
-                        if (l.length !== i.length) return !1;
-                        var f = t,
+                        for (var a = {}, c = 0; c < i.length; c += 1) a[i[c]] = !0;
+                        for (var l = 0; l < u.length; l += 1) a[u[l]] = !0;
+                        var s = Object.keys(a);
+                        if (s.length !== i.length) return !1;
+                        var d = t,
                             p = n,
-                            d = function (t) {
-                                return e(f[t], p[t]);
+                            f = function (t) {
+                                return e(d[t], p[t]);
                             };
-                        return l.every(d);
+                        return s.every(f);
                     },
-                    _ = function (e, t, n) {
+                    T = function (e, t, n) {
                         return w(e)
                             ? Object.keys(e).reduce(function (o, u) {
-                                  var c = !w(t) || !I(e[u], t[u]);
-                                  return n.includes(u) ? o : c ? r(r({}, o || {}), {}, i({}, u, e[u])) : o;
+                                  var a = !w(t) || !R(e[u], t[u]);
+                                  return n.includes(u) ? o : a ? r(r({}, o || {}), {}, i({}, u, e[u])) : o;
                               }, null)
                             : null;
                     },
-                    N = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
-                    A = function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : N;
+                    I = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
+                    _ = function (e) {
+                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I;
                         if (null === e || j(e)) return e;
                         throw new Error(t);
                     },
-                    T = function (e) {
-                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : N;
+                    N = function (e) {
+                        var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I;
                         if (P(e))
                             return {
                                 tag: "async",
                                 stripePromise: Promise.resolve(e).then(function (e) {
-                                    return A(e, t);
+                                    return _(e, t);
                                 }),
                             };
-                        var n = A(e, t);
+                        var n = _(e, t);
                         return null === n ? { tag: "empty" } : { tag: "sync", stripe: n };
                     },
-                    L = function (e) {
+                    A = function (e) {
                         e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({ name: "react-stripe-js", version: "3.6.0" }), e.registerAppInfo({ name: "react-stripe-js", version: "3.6.0", url: "https://stripe.com/docs/stripe-js/react" }));
                     },
-                    R = t.createContext(null);
-                R.displayName = "ElementsContext";
+                    L = t.createContext(null);
+                L.displayName = "ElementsContext";
                 var F = function (e, t) {
                         if (!e) throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
                         return e;
@@ -256,29 +256,29 @@
                             o = e.children,
                             i = t.useMemo(
                                 function () {
-                                    return T(n);
+                                    return N(n);
                                 },
                                 [n],
                             ),
-                            u = a(
+                            u = c(
                                 t.useState(function () {
                                     return { stripe: "sync" === i.tag ? i.stripe : null, elements: "sync" === i.tag ? i.stripe.elements(r) : null };
                                 }),
                                 2,
                             ),
-                            c = u[0],
-                            s = u[1];
+                            a = u[0],
+                            l = u[1];
                         t.useEffect(
                             function () {
                                 var e = !0,
                                     t = function (e) {
-                                        s(function (t) {
+                                        l(function (t) {
                                             return t.stripe ? t : { stripe: e, elements: e.elements(r) };
                                         });
                                     };
                                 return (
-                                    "async" !== i.tag || c.stripe
-                                        ? "sync" !== i.tag || c.stripe || t(i.stripe)
+                                    "async" !== i.tag || a.stripe
+                                        ? "sync" !== i.tag || a.stripe || t(i.stripe)
                                         : i.stripePromise.then(function (n) {
                                               n && e && t(n);
                                           }),
@@ -287,33 +287,33 @@
                                     }
                                 );
                             },
-                            [i, c, r],
+                            [i, a, r],
                         );
-                        var l = O(n);
-                        t.useEffect(function () {}, [l, n]);
-                        var f = O(r);
+                        var s = O(n);
+                        t.useEffect(function () {}, [s, n]);
+                        var d = O(r);
                         return (
                             t.useEffect(
                                 function () {
-                                    if (c.elements) {
-                                        var e = _(r, f, ["clientSecret", "fonts"]);
-                                        e && c.elements.update(e);
+                                    if (a.elements) {
+                                        var e = T(r, d, ["clientSecret", "fonts"]);
+                                        e && a.elements.update(e);
                                     }
                                 },
-                                [r, f, c.elements],
+                                [r, d, a.elements],
                             ),
                             t.useEffect(
                                 function () {
-                                    L(c.stripe);
+                                    A(a.stripe);
                                 },
-                                [c.stripe],
+                                [a.stripe],
                             ),
-                            t.createElement(R.Provider, { value: c }, o)
+                            t.createElement(L.Provider, { value: a }, o)
                         );
                     };
                 M.propTypes = { stripe: C.any, options: C.object };
                 var D = function (e) {
-                        var n = t.useContext(R);
+                        var n = t.useContext(L);
                         return F(n, e);
                     },
                     B = function () {
@@ -323,44 +323,44 @@
                         return (0, e.children)(D("mounts <ElementsConsumer>"));
                     };
                 q.propTypes = { children: C.func.isRequired };
-                var Y = ["on", "session"],
-                    U = t.createContext(null);
-                U.displayName = "CheckoutSdkContext";
-                var W = function (e, t) {
+                var U = ["on", "session"],
+                    H = t.createContext(null);
+                H.displayName = "CheckoutSdkContext";
+                var K = function (e, t) {
                         if (!e) throw new Error("Could not find CheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CheckoutProvider> provider."));
                         return e;
                     },
-                    H = t.createContext(null);
-                H.displayName = "CheckoutContext";
-                var Q = function (e, t) {
+                    Z = t.createContext(null);
+                Z.displayName = "CheckoutContext";
+                var Y = function (e, t) {
                         if (!e) return null;
                         e.on, e.session;
-                        var n = c(e, Y);
+                        var n = a(e, U);
                         return t ? Object.assign(t, n) : Object.assign(e.session(), n);
                     },
-                    K = "Invalid prop `stripe` supplied to `CheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
-                    V = function (e) {
+                    W = "Invalid prop `stripe` supplied to `CheckoutProvider`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
+                    z = function (e) {
                         var n = e.stripe,
                             r = e.options,
                             o = e.children,
                             i = t.useMemo(
                                 function () {
-                                    return T(n, K);
+                                    return N(n, W);
                                 },
                                 [n],
                             ),
-                            u = a(t.useState(null), 2),
-                            c = u[0],
-                            s = u[1],
-                            l = a(
+                            u = c(t.useState(null), 2),
+                            a = u[0],
+                            l = u[1],
+                            s = c(
                                 t.useState(function () {
                                     return { stripe: "sync" === i.tag ? i.stripe : null, checkoutSdk: null };
                                 }),
                                 2,
                             ),
-                            f = l[0],
-                            p = l[1],
-                            d = function (e, t) {
+                            d = s[0],
+                            p = s[1],
+                            f = function (e, t) {
                                 p(function (n) {
                                     return n.stripe && n.checkoutSdk ? n : { stripe: e, checkoutSdk: t };
                                 });
@@ -370,13 +370,13 @@
                             function () {
                                 var e = !0;
                                 return (
-                                    "async" !== i.tag || f.stripe
+                                    "async" !== i.tag || d.stripe
                                         ? "sync" === i.tag &&
                                           i.stripe &&
                                           !m.current &&
                                           ((m.current = !0),
                                           i.stripe.initCheckout(r).then(function (e) {
-                                              e && (d(i.stripe, e), e.on("change", s));
+                                              e && (f(i.stripe, e), e.on("change", l));
                                           }))
                                         : i.stripePromise.then(function (t) {
                                               t &&
@@ -384,7 +384,7 @@
                                                   !m.current &&
                                                   ((m.current = !0),
                                                   t.initCheckout(r).then(function (e) {
-                                                      e && (d(t, e), e.on("change", s));
+                                                      e && (f(t, e), e.on("change", l));
                                                   }));
                                           }),
                                     function () {
@@ -392,7 +392,7 @@
                                     }
                                 );
                             },
-                            [i, f, r, s],
+                            [i, d, r, l],
                         );
                         var y = O(n);
                         t.useEffect(function () {}, [y, n]);
@@ -400,54 +400,54 @@
                         t.useEffect(
                             function () {
                                 var e, t;
-                                if (f.checkoutSdk) {
+                                if (d.checkoutSdk) {
                                     var n = null == h || null === (e = h.elementsOptions) || void 0 === e ? void 0 : e.appearance,
                                         o = null == r || null === (t = r.elementsOptions) || void 0 === t ? void 0 : t.appearance;
-                                    o && !I(o, n) && f.checkoutSdk.changeAppearance(o);
+                                    o && !R(o, n) && d.checkoutSdk.changeAppearance(o);
                                 }
                             },
-                            [r, h, f.checkoutSdk],
+                            [r, h, d.checkoutSdk],
                         ),
                             t.useEffect(
                                 function () {
-                                    L(f.stripe);
+                                    A(d.stripe);
                                 },
-                                [f.stripe],
+                                [d.stripe],
                             );
                         var v = t.useMemo(
                             function () {
-                                return Q(f.checkoutSdk, c);
+                                return Y(d.checkoutSdk, a);
                             },
-                            [f.checkoutSdk, c],
+                            [d.checkoutSdk, a],
                         );
-                        return f.checkoutSdk ? t.createElement(U.Provider, { value: f }, t.createElement(H.Provider, { value: v }, o)) : null;
+                        return d.checkoutSdk ? t.createElement(H.Provider, { value: d }, t.createElement(Z.Provider, { value: v }, o)) : null;
                     };
-                V.propTypes = { stripe: C.any, options: C.shape({ fetchClientSecret: C.func.isRequired, elementsOptions: C.object }).isRequired };
-                var $ = function (e) {
-                        var n = t.useContext(U);
-                        return W(n, e);
+                z.propTypes = { stripe: C.any, options: C.shape({ fetchClientSecret: C.func.isRequired, elementsOptions: C.object }).isRequired };
+                var Q = function (e) {
+                        var n = t.useContext(H);
+                        return K(n, e);
                     },
-                    z = function (e) {
-                        var n = t.useContext(U),
-                            r = t.useContext(R);
+                    V = function (e) {
+                        var n = t.useContext(H),
+                            r = t.useContext(L);
                         if (n && r) throw new Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
-                        return n ? W(n, e) : F(r, e);
+                        return n ? K(n, e) : F(r, e);
                     },
-                    G = function () {
-                        $("calls useCheckout()");
-                        var e = t.useContext(H);
+                    $ = function () {
+                        Q("calls useCheckout()");
+                        var e = t.useContext(Z);
                         if (!e) throw new Error("Could not find Checkout Context; You need to wrap the part of your app that calls useCheckout() in an <CheckoutProvider> provider.");
                         return e;
                     },
-                    X = ["mode"],
+                    G = ["mode"],
                     J = function (e) {
                         return e.charAt(0).toUpperCase() + e.slice(1);
                     },
-                    Z = function (e, n) {
+                    X = function (e, n) {
                         var r = "".concat(J(e), "Element"),
                             o = n
                                 ? function (e) {
-                                      z("mounts <".concat(r, ">"));
+                                      V("mounts <".concat(r, ">"));
                                       var n = e.id,
                                           o = e.className;
                                       return t.createElement("div", { id: n, className: o });
@@ -456,62 +456,62 @@
                                       var o,
                                           i = n.id,
                                           u = n.className,
-                                          s = n.options,
-                                          l = void 0 === s ? {} : s,
-                                          f = n.onBlur,
+                                          l = n.options,
+                                          s = void 0 === l ? {} : l,
+                                          d = n.onBlur,
                                           p = n.onFocus,
-                                          d = n.onReady,
+                                          f = n.onReady,
                                           m = n.onChange,
                                           y = n.onEscape,
                                           h = n.onClick,
                                           v = n.onLoadError,
                                           b = n.onLoaderStart,
                                           E = n.onNetworksChange,
-                                          g = n.onConfirm,
-                                          S = n.onCancel,
+                                          S = n.onConfirm,
+                                          g = n.onCancel,
                                           C = n.onShippingAddressChange,
                                           w = n.onShippingRateChange,
-                                          P = z("mounts <".concat(r, ">")),
+                                          P = V("mounts <".concat(r, ">")),
                                           j = "elements" in P ? P.elements : null,
                                           x = "checkoutSdk" in P ? P.checkoutSdk : null,
-                                          I = a(t.useState(null), 2),
-                                          N = I[0],
-                                          A = I[1],
-                                          T = t.useRef(null),
-                                          L = t.useRef(null);
-                                      k(N, "blur", f),
-                                          k(N, "focus", p),
-                                          k(N, "escape", y),
-                                          k(N, "click", h),
-                                          k(N, "loaderror", v),
-                                          k(N, "loaderstart", b),
-                                          k(N, "networkschange", E),
-                                          k(N, "confirm", g),
-                                          k(N, "cancel", S),
-                                          k(N, "shippingaddresschange", C),
-                                          k(N, "shippingratechange", w),
-                                          k(N, "change", m),
-                                          d &&
+                                          R = c(t.useState(null), 2),
+                                          I = R[0],
+                                          _ = R[1],
+                                          N = t.useRef(null),
+                                          A = t.useRef(null);
+                                      k(I, "blur", d),
+                                          k(I, "focus", p),
+                                          k(I, "escape", y),
+                                          k(I, "click", h),
+                                          k(I, "loaderror", v),
+                                          k(I, "loaderstart", b),
+                                          k(I, "networkschange", E),
+                                          k(I, "confirm", S),
+                                          k(I, "cancel", g),
+                                          k(I, "shippingaddresschange", C),
+                                          k(I, "shippingratechange", w),
+                                          k(I, "change", m),
+                                          f &&
                                               (o =
                                                   "expressCheckout" === e
-                                                      ? d
+                                                      ? f
                                                       : function () {
-                                                            d(N);
+                                                            f(I);
                                                         }),
-                                          k(N, "ready", o),
+                                          k(I, "ready", o),
                                           t.useLayoutEffect(
                                               function () {
-                                                  if (null === T.current && null !== L.current && (j || x)) {
+                                                  if (null === N.current && null !== A.current && (j || x)) {
                                                       var t = null;
                                                       if (x)
                                                           switch (e) {
                                                               case "payment":
-                                                                  t = x.createPaymentElement(l);
+                                                                  t = x.createPaymentElement(s);
                                                                   break;
                                                               case "address":
-                                                                  if (!("mode" in l)) throw new Error("You must supply options.mode. mode must be 'billing' or 'shipping'.");
-                                                                  var n = l.mode,
-                                                                      o = c(l, X);
+                                                                  if (!("mode" in s)) throw new Error("You must supply options.mode. mode must be 'billing' or 'shipping'.");
+                                                                  var n = s.mode,
+                                                                      o = a(s, G);
                                                                   if ("shipping" === n) t = x.createShippingAddressElement(o);
                                                                   else {
                                                                       if ("billing" !== n) throw new Error("Invalid options.mode. mode must be 'billing' or 'shipping'.");
@@ -519,7 +519,7 @@
                                                                   }
                                                                   break;
                                                               case "expressCheckout":
-                                                                  t = x.createExpressCheckoutElement(l);
+                                                                  t = x.createExpressCheckoutElement(s);
                                                                   break;
                                                               case "currencySelector":
                                                                   t = x.createCurrencySelectorElement();
@@ -527,32 +527,32 @@
                                                               default:
                                                                   throw new Error("Invalid Element type ".concat(r, ". You must use either the <PaymentElement />, <AddressElement options={{mode: 'shipping'}} />, <AddressElement options={{mode: 'billing'}} />, or <ExpressCheckoutElement />."));
                                                           }
-                                                      else j && (t = j.create(e, l));
-                                                      (T.current = t), A(t), t && t.mount(L.current);
+                                                      else j && (t = j.create(e, s));
+                                                      (N.current = t), _(t), t && t.mount(A.current);
                                                   }
                                               },
-                                              [j, x, l],
+                                              [j, x, s],
                                           );
-                                      var R = O(l);
+                                      var L = O(s);
                                       return (
                                           t.useEffect(
                                               function () {
-                                                  if (T.current) {
-                                                      var e = _(l, R, ["paymentRequest"]);
-                                                      e && "update" in T.current && T.current.update(e);
+                                                  if (N.current) {
+                                                      var e = T(s, L, ["paymentRequest"]);
+                                                      e && "update" in N.current && N.current.update(e);
                                                   }
                                               },
-                                              [l, R],
+                                              [s, L],
                                           ),
                                           t.useLayoutEffect(function () {
                                               return function () {
-                                                  if (T.current && "function" == typeof T.current.destroy)
+                                                  if (N.current && "function" == typeof N.current.destroy)
                                                       try {
-                                                          T.current.destroy(), (T.current = null);
+                                                          N.current.destroy(), (N.current = null);
                                                       } catch (e) {}
                                               };
                                           }, []),
-                                          t.createElement("div", { id: i, className: u, ref: L })
+                                          t.createElement("div", { id: i, className: u, ref: A })
                                       );
                                   };
                         return (o.propTypes = { id: C.string, className: C.string, onChange: C.func, onBlur: C.func, onFocus: C.func, onReady: C.func, onEscape: C.func, onClick: C.func, onLoadError: C.func, onLoaderStart: C.func, onNetworksChange: C.func, onConfirm: C.func, onCancel: C.func, onShippingAddressChange: C.func, onShippingRateChange: C.func, options: C.object }), (o.displayName = r), (o.__elementType = e), o;
@@ -572,65 +572,65 @@
                             o = e.children,
                             i = t.useMemo(
                                 function () {
-                                    return T(n, re);
+                                    return N(n, re);
                                 },
                                 [n],
                             ),
                             u = t.useRef(null),
-                            c = t.useRef(null),
-                            s = a(t.useState({ embeddedCheckout: null }), 2),
-                            l = s[0],
-                            f = s[1];
+                            a = t.useRef(null),
+                            l = c(t.useState({ embeddedCheckout: null }), 2),
+                            s = l[0],
+                            d = l[1];
                         t.useEffect(
                             function () {
-                                if (!c.current && !u.current) {
+                                if (!a.current && !u.current) {
                                     var e = function (e) {
-                                        c.current ||
+                                        a.current ||
                                             u.current ||
-                                            ((c.current = e),
-                                            (u.current = c.current.initEmbeddedCheckout(r).then(function (e) {
-                                                f({ embeddedCheckout: e });
+                                            ((a.current = e),
+                                            (u.current = a.current.initEmbeddedCheckout(r).then(function (e) {
+                                                d({ embeddedCheckout: e });
                                             })));
                                     };
-                                    "async" !== i.tag || c.current || (!r.clientSecret && !r.fetchClientSecret)
-                                        ? "sync" !== i.tag || c.current || (!r.clientSecret && !r.fetchClientSecret) || e(i.stripe)
+                                    "async" !== i.tag || a.current || (!r.clientSecret && !r.fetchClientSecret)
+                                        ? "sync" !== i.tag || a.current || (!r.clientSecret && !r.fetchClientSecret) || e(i.stripe)
                                         : i.stripePromise.then(function (t) {
                                               t && e(t);
                                           });
                                 }
                             },
-                            [i, r, l, c],
+                            [i, r, s, a],
                         ),
                             t.useEffect(
                                 function () {
                                     return function () {
-                                        l.embeddedCheckout
-                                            ? ((u.current = null), l.embeddedCheckout.destroy())
+                                        s.embeddedCheckout
+                                            ? ((u.current = null), s.embeddedCheckout.destroy())
                                             : u.current &&
                                               u.current.then(function () {
-                                                  (u.current = null), l.embeddedCheckout && l.embeddedCheckout.destroy();
+                                                  (u.current = null), s.embeddedCheckout && s.embeddedCheckout.destroy();
                                               });
                                     };
                                 },
-                                [l.embeddedCheckout],
+                                [s.embeddedCheckout],
                             ),
                             t.useEffect(
                                 function () {
-                                    L(c);
+                                    A(a);
                                 },
-                                [c],
+                                [a],
                             );
                         var p = O(n);
                         t.useEffect(function () {}, [p, n]);
-                        var d = O(r);
+                        var f = O(r);
                         return (
                             t.useEffect(
                                 function () {
-                                    null != d && null != r && (void 0 === r.clientSecret && r.fetchClientSecret, null != d.clientSecret && (r.clientSecret, d.clientSecret), null != d.fetchClientSecret && (r.fetchClientSecret, d.fetchClientSecret), null != d.onComplete && (r.onComplete, d.onComplete), null != d.onShippingDetailsChange && (r.onShippingDetailsChange, d.onShippingDetailsChange), null != d.onLineItemsChange && (r.onLineItemsChange, d.onLineItemsChange));
+                                    null != f && null != r && (void 0 === r.clientSecret && r.fetchClientSecret, null != f.clientSecret && (r.clientSecret, f.clientSecret), null != f.fetchClientSecret && (r.fetchClientSecret, f.fetchClientSecret), null != f.onComplete && (r.onComplete, f.onComplete), null != f.onShippingDetailsChange && (r.onShippingDetailsChange, f.onShippingDetailsChange), null != f.onLineItemsChange && (r.onLineItemsChange, f.onLineItemsChange));
                                 },
-                                [d, r],
+                                [f, r],
                             ),
-                            t.createElement(te.Provider, { value: l }, o)
+                            t.createElement(te.Provider, { value: s }, o)
                         );
                     },
                     ie = function (e) {
@@ -662,31 +662,31 @@
                             r = e.className;
                         return ne(), t.createElement("div", { id: n, className: r });
                     },
-                    ce = ee ? ue : ie,
-                    ae = function () {
-                        return z("calls useStripe()").stripe;
+                    ae = ee ? ue : ie,
+                    ce = function () {
+                        return V("calls useStripe()").stripe;
                     },
-                    se = Z("auBankAccount", ee),
-                    le = Z("card", ee),
-                    fe = Z("cardNumber", ee),
-                    pe = Z("cardExpiry", ee),
-                    de = Z("cardCvc", ee),
-                    me = Z("fpxBank", ee),
-                    ye = Z("iban", ee),
-                    he = Z("idealBank", ee),
-                    ve = Z("p24Bank", ee),
-                    be = Z("epsBank", ee),
-                    Ee = Z("payment", ee),
-                    ge = Z("expressCheckout", ee),
-                    Se = Z("currencySelector", ee),
-                    Ce = Z("paymentRequestButton", ee),
-                    ke = Z("linkAuthentication", ee),
-                    Oe = Z("address", ee),
-                    we = Z("shippingAddress", ee),
-                    Pe = Z("paymentMethodMessaging", ee),
-                    je = Z("affirmMessage", ee),
-                    xe = Z("afterpayClearpayMessage", ee);
-                (e.AddressElement = Oe), (e.AffirmMessageElement = je), (e.AfterpayClearpayMessageElement = xe), (e.AuBankAccountElement = se), (e.CardCvcElement = de), (e.CardElement = le), (e.CardExpiryElement = pe), (e.CardNumberElement = fe), (e.CheckoutProvider = V), (e.CurrencySelectorElement = Se), (e.Elements = M), (e.ElementsConsumer = q), (e.EmbeddedCheckout = ce), (e.EmbeddedCheckoutProvider = oe), (e.EpsBankElement = be), (e.ExpressCheckoutElement = ge), (e.FpxBankElement = me), (e.IbanElement = ye), (e.IdealBankElement = he), (e.LinkAuthenticationElement = ke), (e.P24BankElement = ve), (e.PaymentElement = Ee), (e.PaymentMethodMessagingElement = Pe), (e.PaymentRequestButtonElement = Ce), (e.ShippingAddressElement = we), (e.useCheckout = G), (e.useElements = B), (e.useStripe = ae);
+                    le = X("auBankAccount", ee),
+                    se = X("card", ee),
+                    de = X("cardNumber", ee),
+                    pe = X("cardExpiry", ee),
+                    fe = X("cardCvc", ee),
+                    me = X("fpxBank", ee),
+                    ye = X("iban", ee),
+                    he = X("idealBank", ee),
+                    ve = X("p24Bank", ee),
+                    be = X("epsBank", ee),
+                    Ee = X("payment", ee),
+                    Se = X("expressCheckout", ee),
+                    ge = X("currencySelector", ee),
+                    Ce = X("paymentRequestButton", ee),
+                    ke = X("linkAuthentication", ee),
+                    Oe = X("address", ee),
+                    we = X("shippingAddress", ee),
+                    Pe = X("paymentMethodMessaging", ee),
+                    je = X("affirmMessage", ee),
+                    xe = X("afterpayClearpayMessage", ee);
+                (e.AddressElement = Oe), (e.AffirmMessageElement = je), (e.AfterpayClearpayMessageElement = xe), (e.AuBankAccountElement = le), (e.CardCvcElement = fe), (e.CardElement = se), (e.CardExpiryElement = pe), (e.CardNumberElement = de), (e.CheckoutProvider = z), (e.CurrencySelectorElement = ge), (e.Elements = M), (e.ElementsConsumer = q), (e.EmbeddedCheckout = ae), (e.EmbeddedCheckoutProvider = oe), (e.EpsBankElement = be), (e.ExpressCheckoutElement = Se), (e.FpxBankElement = me), (e.IbanElement = ye), (e.IdealBankElement = he), (e.LinkAuthenticationElement = ke), (e.P24BankElement = ve), (e.PaymentElement = Ee), (e.PaymentMethodMessagingElement = Pe), (e.PaymentRequestButtonElement = Ce), (e.ShippingAddressElement = we), (e.useCheckout = $), (e.useElements = B), (e.useStripe = ce);
             })(t, n(202784));
         },
         85160: (e, t) => {
@@ -708,9 +708,9 @@
                 o = "basil",
                 i = "https://js.stripe.com",
                 u = "".concat(i, "/").concat(o, "/stripe.js"),
-                c = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
-                a = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/,
-                s = function (e) {
+                a = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+                c = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/,
+                l = function (e) {
                     var t = e && !e.advancedFraudSignals ? "?advancedFraudSignals=false" : "",
                         n = document.createElement("script");
                     n.src = "".concat(u).concat(t);
@@ -718,13 +718,13 @@
                     if (!r) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
                     return r.appendChild(n), n;
                 },
-                l = null,
-                f = null,
+                s = null,
+                d = null,
                 p = null,
-                d = function (e) {
-                    return null !== l
-                        ? l
-                        : (l = new Promise(function (t, n) {
+                f = function (e) {
+                    return null !== s
+                        ? s
+                        : (s = new Promise(function (t, n) {
                               if ("undefined" != typeof window && "undefined" != typeof document)
                                   if ((window.Stripe, window.Stripe)) t(window.Stripe);
                                   else
@@ -732,35 +732,35 @@
                                           var r = (function () {
                                               for (var e, t = document.querySelectorAll('script[src^="'.concat(i, '"]')), n = 0; n < t.length; n++) {
                                                   var r = t[n];
-                                                  if (((e = r.src), c.test(e) || a.test(e))) return r;
+                                                  if (((e = r.src), a.test(e) || c.test(e))) return r;
                                               }
                                               return null;
                                           })();
                                           if (r && e);
                                           else if (r) {
-                                              if (r && null !== p && null !== f) {
+                                              if (r && null !== p && null !== d) {
                                                   var o;
-                                                  r.removeEventListener("load", p), r.removeEventListener("error", f), null === (o = r.parentNode) || void 0 === o || o.removeChild(r), (r = s(e));
+                                                  r.removeEventListener("load", p), r.removeEventListener("error", d), null === (o = r.parentNode) || void 0 === o || o.removeChild(r), (r = l(e));
                                               }
-                                          } else r = s(e);
+                                          } else r = l(e);
                                           (p = (function (e, t) {
                                               return function () {
                                                   window.Stripe ? e(window.Stripe) : t(new Error("Stripe.js not available"));
                                               };
                                           })(t, n)),
-                                              (f = (function (e) {
+                                              (d = (function (e) {
                                                   return function (t) {
                                                       e(new Error("Failed to load Stripe.js", { cause: t }));
                                                   };
                                               })(n)),
                                               r.addEventListener("load", p),
-                                              r.addEventListener("error", f);
+                                              r.addEventListener("error", d);
                                       } catch (e) {
                                           return void n(e);
                                       }
                               else t(null);
                           })).catch(function (e) {
-                              return (l = null), Promise.reject(e);
+                              return (s = null), Promise.reject(e);
                           });
                 },
                 m = function (e) {
@@ -774,7 +774,7 @@
                     for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
                     y = !0;
                     var o = Date.now();
-                    return d(r).then(function (e) {
+                    return f(r).then(function (e) {
                         return (function (e, t, n) {
                             if (null === e) return null;
                             t[0].match(/^pk_test/), e.version;
@@ -806,6 +806,225 @@
         },
         497366: (e, t, n) => {
             e.exports = n(85160);
+        },
+        3348: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => g });
+            var r = n(202784),
+                o = n(890601),
+                i = n(730464),
+                u = n(389641),
+                a = n(317709),
+                c = n(156905),
+                l = n(752778),
+                s = n(805719),
+                d = n(111453),
+                p = n(981040),
+                f = n(297689),
+                m = n(901736),
+                y = n(180612),
+                h = (e, t) => {
+                    if (
+                        ((e, t) => {
+                            var n = e.selectionEnd,
+                                r = e.selectionStart,
+                                o = t.start,
+                                i = t.end;
+                            return o !== r || i !== n;
+                        })(e, t)
+                    ) {
+                        var n = t.start,
+                            r = t.end;
+                        try {
+                            e.setSelectionRange(n, r || n);
+                        } catch (e) {}
+                    }
+                },
+                v = Object.assign({}, i.lG, i.LO, i._T, i.YB, i.Uy, i.hJ, i.E5, i.vr, { autoCapitalize: !0, autoComplete: !0, autoCorrect: !0, autoFocus: !0, defaultValue: !0, disabled: !0, lang: !0, maxLength: !0, onChange: !0, onScroll: !0, placeholder: !0, pointerEvents: !0, readOnly: !0, rows: !0, spellCheck: !0, value: !0, type: !0 });
+            var b = null,
+                E = r.forwardRef((e, t) => {
+                    var n,
+                        i,
+                        f = e.autoCapitalize,
+                        E = void 0 === f ? "sentences" : f,
+                        g = e.autoComplete,
+                        C = e.autoCompleteType,
+                        k = e.autoCorrect,
+                        O = void 0 === k || k,
+                        w = e.blurOnSubmit,
+                        P = e.caretHidden,
+                        j = e.clearTextOnFocus,
+                        x = e.dir,
+                        R = e.editable,
+                        T = e.enterKeyHint,
+                        I = e.inputMode,
+                        _ = e.keyboardType,
+                        N = e.multiline,
+                        A = void 0 !== N && N,
+                        L = e.numberOfLines,
+                        F = e.onBlur,
+                        M = e.onChange,
+                        D = e.onChangeText,
+                        B = e.onContentSizeChange,
+                        q = e.onFocus,
+                        U = e.onKeyPress,
+                        H = e.onLayout,
+                        K = e.onMoveShouldSetResponder,
+                        Z = e.onMoveShouldSetResponderCapture,
+                        Y = e.onResponderEnd,
+                        W = e.onResponderGrant,
+                        z = e.onResponderMove,
+                        Q = e.onResponderReject,
+                        V = e.onResponderRelease,
+                        $ = e.onResponderStart,
+                        G = e.onResponderTerminate,
+                        J = e.onResponderTerminationRequest,
+                        X = e.onScrollShouldSetResponder,
+                        ee = e.onScrollShouldSetResponderCapture,
+                        te = e.onSelectionChange,
+                        ne = e.onSelectionChangeShouldSetResponder,
+                        re = e.onSelectionChangeShouldSetResponderCapture,
+                        oe = e.onStartShouldSetResponder,
+                        ie = e.onStartShouldSetResponderCapture,
+                        ue = e.onSubmitEditing,
+                        ae = e.placeholderTextColor,
+                        ce = e.readOnly,
+                        le = void 0 !== ce && ce,
+                        se = e.returnKeyType,
+                        de = e.rows,
+                        pe = e.secureTextEntry,
+                        fe = void 0 !== pe && pe,
+                        me = e.selection,
+                        ye = e.selectTextOnFocus,
+                        he = e.showSoftInputOnFocus,
+                        ve = e.spellCheck;
+                    if (null != I) (i = I), (n = "email" === I ? "email" : "tel" === I ? "tel" : "search" === I ? "search" : "url" === I ? "url" : "text");
+                    else if (null != _)
+                        switch (((0, y.O)("keyboardType", "keyboardType is deprecated. Use inputMode."), _)) {
+                            case "email-address":
+                                n = "email";
+                                break;
+                            case "number-pad":
+                            case "numeric":
+                                i = "numeric";
+                                break;
+                            case "decimal-pad":
+                                i = "decimal";
+                                break;
+                            case "phone-pad":
+                                n = "tel";
+                                break;
+                            case "search":
+                            case "web-search":
+                                n = "search";
+                                break;
+                            case "url":
+                                n = "url";
+                                break;
+                            default:
+                                n = "text";
+                        }
+                    fe && (n = "password");
+                    var be = r.useRef({ height: null, width: null }),
+                        Ee = r.useRef(null),
+                        Se = r.useRef(null),
+                        ge = r.useRef(!1);
+                    r.useEffect(() => {
+                        Ee.current && Se.current && h(Ee.current, Se.current), (ge.current = fe);
+                    }, [fe]);
+                    var Ce = r.useCallback(
+                            (e) => {
+                                if (A && B && null != e) {
+                                    var t = e.scrollHeight,
+                                        n = e.scrollWidth;
+                                    (t === be.current.height && n === be.current.width) || ((be.current.height = t), (be.current.width = n), B({ nativeEvent: { contentSize: { height: be.current.height, width: be.current.width } } }));
+                                }
+                            },
+                            [A, B],
+                        ),
+                        ke = r.useMemo(
+                            () => (e) => {
+                                null != e &&
+                                    ((e.clear = function () {
+                                        null != e && (e.value = "");
+                                    }),
+                                    (e.isFocused = function () {
+                                        return null != e && m.Z.currentlyFocusedField() === e;
+                                    }),
+                                    Ce(e));
+                            },
+                            [Ce],
+                        );
+                    (0, c.Z)(() => {
+                        var e = Ee.current;
+                        null != e && null != me && h(e, me), document.activeElement === e && (m.Z._currentlyFocusedNode = e);
+                    }, [Ee, me]);
+                    var Oe = A ? "textarea" : "input";
+                    (0, a.Z)(Ee, H), (0, d.Z)(Ee, { onMoveShouldSetResponder: K, onMoveShouldSetResponderCapture: Z, onResponderEnd: Y, onResponderGrant: W, onResponderMove: z, onResponderReject: Q, onResponderRelease: V, onResponderStart: $, onResponderTerminate: G, onResponderTerminationRequest: J, onScrollShouldSetResponder: X, onScrollShouldSetResponderCapture: ee, onSelectionChangeShouldSetResponder: ne, onSelectionChangeShouldSetResponderCapture: re, onStartShouldSetResponder: oe, onStartShouldSetResponderCapture: ie });
+                    var we = (0, p.PE)().direction,
+                        Pe = ((e) => (0, u.Z)(e, v))(e);
+                    (Pe.autoCapitalize = E),
+                        (Pe.autoComplete = g || C || "on"),
+                        (Pe.autoCorrect = O ? "on" : "off"),
+                        (Pe.dir = void 0 !== x ? x : "auto"),
+                        null != se && (0, y.O)("returnKeyType", "returnKeyType is deprecated. Use enterKeyHint."),
+                        (Pe.enterKeyHint = T || se),
+                        (Pe.inputMode = i),
+                        (Pe.onBlur = function (e) {
+                            (m.Z._currentlyFocusedNode = null), F && ((e.nativeEvent.text = e.target.value), F(e));
+                        }),
+                        (Pe.onChange = function (e) {
+                            var t = e.target,
+                                n = t.value;
+                            (e.nativeEvent.text = n), Ce(t), M && M(e), D && D(n);
+                        }),
+                        (Pe.onFocus = function (e) {
+                            var t = e.target;
+                            q && ((e.nativeEvent.text = t.value), q(e)),
+                                null != t &&
+                                    ((m.Z._currentlyFocusedNode = t),
+                                    j && (t.value = ""),
+                                    ye &&
+                                        (null != b && clearTimeout(b),
+                                        (b = setTimeout(() => {
+                                            null != t && t.select();
+                                        }, 0))));
+                        }),
+                        (Pe.onKeyDown = function (e) {
+                            var t = e.target;
+                            e.stopPropagation();
+                            var n = null == w ? !A : w,
+                                r = e.nativeEvent,
+                                o = (function (e) {
+                                    return e.isComposing || 229 === e.keyCode;
+                                })(r);
+                            U && U(e), "Enter" !== e.key || e.shiftKey || o || e.isDefaultPrevented() || ((!w && A) || !ue || (e.preventDefault(), (r.text = e.target.value), ue(e)), n && null != t && setTimeout(() => t.blur(), 0));
+                        }),
+                        (Pe.onSelect = function (e) {
+                            try {
+                                var t = e.target,
+                                    n = { start: t.selectionStart, end: t.selectionEnd };
+                                te && ((e.nativeEvent.selection = n), (e.nativeEvent.text = e.target.value), te(e)), ge.current === fe && (Se.current = n);
+                            } catch (e) {}
+                        }),
+                        null != R && (0, y.O)("editable", "editable is deprecated. Use readOnly."),
+                        (Pe.readOnly = !0 === le || !1 === R),
+                        null != L && (0, y.O)("numberOfLines", "TextInput numberOfLines is deprecated. Use rows."),
+                        (Pe.rows = A ? (null != de ? de : L) : 1),
+                        (Pe.spellCheck = null != ve ? ve : O),
+                        (Pe.style = [{ "--placeholderTextColor": ae }, S.textinput$raw, S.placeholder, e.style, P && S.caretHidden]),
+                        (Pe.type = A ? void 0 : n),
+                        (Pe.virtualkeyboardpolicy = !1 === he ? "manual" : "auto");
+                    var je = (0, s.Z)(Pe),
+                        xe = (0, l.Z)(Ee, je, ke, t);
+                    Pe.ref = xe;
+                    var Re = null != e.lang ? (0, p.w1)(e.lang) : null,
+                        Te = e.dir || Re || we;
+                    return (0, o.Z)(Oe, Pe, { writingDirection: Te });
+                });
+            (E.displayName = "TextInput"), (E.State = m.Z);
+            var S = f.Z.create({ textinput$raw: { MozAppearance: "textfield", WebkitAppearance: "none", backgroundColor: "transparent", border: "0 solid black", borderRadius: 0, boxSizing: "border-box", font: "14px System", margin: 0, padding: 0, resize: "none" }, placeholder: { placeholderTextColor: "var(--placeholderTextColor)" }, caretHidden: { caretColor: "transparent" } });
+            const g = E;
         },
         40567: function (e, t, n) {
             !(function (e, t) {
@@ -841,7 +1060,7 @@
                 function u(e, t, n) {
                     return t in e ? Object.defineProperty(e, t, { value: n, enumerable: !0, configurable: !0, writable: !0 }) : (e[t] = n), e;
                 }
-                function c(e, t) {
+                function a(e, t) {
                     if (null == e) return {};
                     var n,
                         r,
@@ -850,40 +1069,40 @@
                     for (r = 0; r < i.length; r++) (n = i[r]), t.indexOf(n) >= 0 || (o[n] = e[n]);
                     return o;
                 }
-                function a(e, t) {
+                function c(e, t) {
                     if (null == e) return {};
                     var n,
                         r,
-                        o = c(e, t);
+                        o = a(e, t);
                     if (Object.getOwnPropertySymbols) {
                         var i = Object.getOwnPropertySymbols(e);
                         for (r = 0; r < i.length; r++) (n = i[r]), t.indexOf(n) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]));
                     }
                     return o;
                 }
-                function s(e, t) {
-                    return l(e) || f(e, t) || p(e, t) || m();
+                function l(e, t) {
+                    return s(e) || d(e, t) || p(e, t) || m();
                 }
-                function l(e) {
+                function s(e) {
                     if (Array.isArray(e)) return e;
                 }
-                function f(e, t) {
+                function d(e, t) {
                     var n = null == e ? null : ("undefined" != typeof Symbol && e[Symbol.iterator]) || e["@@iterator"];
                     if (null != n) {
                         var r,
                             o,
                             i = [],
                             u = !0,
-                            c = !1;
+                            a = !1;
                         try {
                             for (n = n.call(e); !(u = (r = n.next()).done) && (i.push(r.value), !t || i.length !== t); u = !0);
                         } catch (e) {
-                            (c = !0), (o = e);
+                            (a = !0), (o = e);
                         } finally {
                             try {
                                 u || null == n.return || n.return();
                             } finally {
-                                if (c) throw o;
+                                if (a) throw o;
                             }
                         }
                         return i;
@@ -891,12 +1110,12 @@
                 }
                 function p(e, t) {
                     if (e) {
-                        if ("string" == typeof e) return d(e, t);
+                        if ("string" == typeof e) return f(e, t);
                         var n = Object.prototype.toString.call(e).slice(8, -1);
-                        return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? d(e, t) : void 0;
+                        return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(e) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? f(e, t) : void 0;
                     }
                 }
-                function d(e, t) {
+                function f(e, t) {
                     (null == t || t > e.length) && (t = e.length);
                     for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
                     return r;
@@ -930,15 +1149,15 @@
                     };
                     function i(e) {
                         var i = e.src,
-                            c = e.checkForExisting,
-                            a = void 0 !== c && c,
-                            s = n(e, ["src", "checkForExisting"]),
-                            l = i ? t.scripts[i] : void 0;
-                        !l && a && i && u && (l = o(i));
-                        var f = (0, r.useState)(l ? l.loading : Boolean(i)),
-                            p = f[0],
-                            d = f[1],
-                            m = (0, r.useState)(l ? l.error : null),
+                            a = e.checkForExisting,
+                            c = void 0 !== a && a,
+                            l = n(e, ["src", "checkForExisting"]),
+                            s = i ? t.scripts[i] : void 0;
+                        !s && c && i && u && (s = o(i));
+                        var d = (0, r.useState)(s ? s.loading : Boolean(i)),
+                            p = d[0],
+                            f = d[1],
+                            m = (0, r.useState)(s ? s.error : null),
                             y = m[0],
                             h = m[1];
                         return (
@@ -946,19 +1165,19 @@
                                 function () {
                                     if (u && i && p && !y) {
                                         var e;
-                                        !(l = t.scripts[i]) && a && (l = o(i)),
-                                            l
-                                                ? (e = l.scriptEl)
+                                        !(s = t.scripts[i]) && c && (s = o(i)),
+                                            s
+                                                ? (e = s.scriptEl)
                                                 : (((e = document.createElement("script")).src = i),
-                                                  Object.keys(s).forEach(function (t) {
-                                                      void 0 === e[t] ? e.setAttribute(t, s[t]) : (e[t] = s[t]);
+                                                  Object.keys(l).forEach(function (t) {
+                                                      void 0 === e[t] ? e.setAttribute(t, l[t]) : (e[t] = l[t]);
                                                   }),
-                                                  (l = t.scripts[i] = { loading: !0, error: null, scriptEl: e }));
+                                                  (s = t.scripts[i] = { loading: !0, error: null, scriptEl: e }));
                                         var n = function () {
-                                                l && (l.loading = !1), d(!1);
+                                                s && (s.loading = !1), f(!1);
                                             },
                                             r = function (e) {
-                                                l && (l.error = e), h(e);
+                                                s && (s.error = e), h(e);
                                             };
                                         return (
                                             e.addEventListener("load", n),
@@ -1000,8 +1219,8 @@
                                 },
                             });
                     }),
-                    g = h(E),
-                    S =
+                    S = h(E),
+                    g =
                         (E.scripts,
                         function (e, t, n) {
                             var r = {};
@@ -1036,28 +1255,28 @@
                         );
                     },
                     k = function (e, t) {
-                        var n = S(e, "publicKey", "key");
+                        var n = g(e, "publicKey", "key");
                         return C(n, t);
                     },
                     O = "https://cdn.plaid.com/link/v2/stable/link-initialize.js",
                     w = function () {},
                     P = function (e) {
-                        var n = s(g({ src: O, checkForExisting: !0 }), 2),
+                        var n = l(S({ src: O, checkForExisting: !0 }), 2),
                             r = n[0],
                             o = n[1],
-                            u = s(t.useState(null), 2),
-                            c = u[0],
-                            a = u[1],
-                            l = s(t.useState(!1), 2),
-                            f = l[0],
-                            p = l[1],
-                            d = (e.product || []).slice().sort().join(",");
+                            u = l(t.useState(null), 2),
+                            a = u[0],
+                            c = u[1],
+                            s = l(t.useState(!1), 2),
+                            d = s[0],
+                            p = s[1],
+                            f = (e.product || []).slice().sort().join(",");
                         t.useEffect(
                             function () {
                                 if (!r && (e.token || e.publicKey || e.receivedRedirectUri) && !o && window.Plaid) {
-                                    null != c &&
-                                        c.exit({ force: !0 }, function () {
-                                            return c.destroy();
+                                    null != a &&
+                                        a.exit({ force: !0 }, function () {
+                                            return a.destroy();
                                         });
                                     var t = k(
                                         i(
@@ -1072,7 +1291,7 @@
                                         window.Plaid.create,
                                     );
                                     return (
-                                        a(t),
+                                        c(t),
                                         function () {
                                             return t.exit({ force: !0 }, function () {
                                                 return t.destroy();
@@ -1081,63 +1300,63 @@
                                     );
                                 }
                             },
-                            [r, o, e.publicKey, e.token, d],
+                            [r, o, e.publicKey, e.token, f],
                         );
                         var m = function () {
                             e.token;
                         };
-                        return { error: o, ready: null != c && (!r || f), exit: c ? c.exit : w, open: c ? c.open : m };
+                        return { error: o, ready: null != a && (!r || d), exit: a ? a.exit : w, open: a ? a.open : m };
                     },
                     j = ["children", "style", "className"],
                     x = function (e) {
                         var t = e.children,
                             n = e.style,
                             o = e.className,
-                            u = a(e, j),
-                            c = P(i({}, u)),
-                            s = c.error,
-                            l = c.open;
+                            u = c(e, j),
+                            a = P(i({}, u)),
+                            l = a.error,
+                            s = a.open;
                         return r.createElement(
                             "button",
                             {
-                                disabled: Boolean(s),
+                                disabled: Boolean(l),
                                 type: "button",
                                 className: o,
                                 style: i({ padding: "6px 4px", outline: "none", background: "#FFFFFF", border: "2px solid #F1F1F1", borderRadius: "4px" }, n),
                                 onClick: function () {
-                                    return l();
+                                    return s();
                                 },
                             },
                             t,
                         );
                     };
                 x.displayName = "PlaidLink";
-                var I,
-                    _ = ["style", "className"],
-                    N = function (e) {
+                var R,
+                    T = ["style", "className"],
+                    I = function (e) {
                         var n = e.style,
                             o = e.className,
-                            u = a(e, _),
-                            c = s(g({ src: O, checkForExisting: !0 }), 2),
-                            l = c[0],
-                            f = c[1],
+                            u = c(e, T),
+                            a = l(S({ src: O, checkForExisting: !0 }), 2),
+                            s = a[0],
+                            d = a[1],
                             p = t.useRef(null);
                         return (
                             t.useEffect(
                                 function () {
-                                    if (!l && !f && window.Plaid && null != u.token && "" != u.token) {
+                                    if (!s && !d && window.Plaid && null != u.token && "" != u.token) {
                                         var e = window.Plaid.createEmbedded(i({}, u), p.current).destroy;
                                         return function () {
                                             e();
                                         };
                                     }
                                 },
-                                [l, f, u, p],
+                                [s, d, u, p],
                             ),
                             r.createElement("div", { style: n, className: o, ref: p })
                         );
                     };
-                ((I = e.PlaidLinkStableEvent || (e.PlaidLinkStableEvent = {})).OPEN = "OPEN"), (I.EXIT = "EXIT"), (I.HANDOFF = "HANDOFF"), (I.SELECT_INSTITUTION = "SELECT_INSTITUTION"), (I.ERROR = "ERROR"), (I.BANK_INCOME_INSIGHTS_COMPLETED = "BANK_INCOME_INSIGHTS_COMPLETED"), (I.IDENTITY_VERIFICATION_PASS_SESSION = "IDENTITY_VERIFICATION_PASS_SESSION"), (I.IDENTITY_VERIFICATION_FAIL_SESSION = "IDENTITY_VERIFICATION_FAIL_SESSION"), (e.PlaidEmbeddedLink = N), (e.PlaidLink = x), (e.usePlaidLink = P), Object.defineProperty(e, "__esModule", { value: !0 });
+                ((R = e.PlaidLinkStableEvent || (e.PlaidLinkStableEvent = {})).OPEN = "OPEN"), (R.EXIT = "EXIT"), (R.HANDOFF = "HANDOFF"), (R.SELECT_INSTITUTION = "SELECT_INSTITUTION"), (R.ERROR = "ERROR"), (R.BANK_INCOME_INSIGHTS_COMPLETED = "BANK_INCOME_INSIGHTS_COMPLETED"), (R.IDENTITY_VERIFICATION_PASS_SESSION = "IDENTITY_VERIFICATION_PASS_SESSION"), (R.IDENTITY_VERIFICATION_FAIL_SESSION = "IDENTITY_VERIFICATION_FAIL_SESSION"), (e.PlaidEmbeddedLink = I), (e.PlaidLink = x), (e.usePlaidLink = P), Object.defineProperty(e, "__esModule", { value: !0 });
             })(t, n(202784));
         },
         500200: (e, t, n) => {
@@ -1146,21 +1365,21 @@
                 o = n(151210),
                 i = n(606161).loadQuery,
                 u = n(982317),
-                c = n(490434),
-                a = n(265933),
-                s = n(277660),
-                l = n(712696),
-                f = n(351743),
+                a = n(490434),
+                c = n(265933),
+                l = n(277660),
+                s = n(712696),
+                d = n(351743),
                 p = n(598),
-                d = n(928123),
+                f = n(928123),
                 m = n(72845),
                 y = n(463836),
                 h = n(437429),
                 v = n(353391),
                 b = n(19663),
                 E = n(703383);
-            e.exports = { ConnectionHandler: E.ConnectionHandler, applyOptimisticMutation: E.applyOptimisticMutation, commitLocalUpdate: E.commitLocalUpdate, commitMutation: E.commitMutation, graphql: E.graphql, readInlineData: E.readInlineData, requestSubscription: E.requestSubscription, EntryPointContainer: r, RelayEnvironmentProvider: c, ProfilerContext: u, fetchQuery: E.fetchQuery, loadQuery: i, loadEntryPoint: o, useFragment: s, useLazyLoadQuery: l, useEntryPointLoader: a, useQueryLoader: m, useMutation: f, usePaginationFragment: p, usePreloadedQuery: d, useRefetchableFragment: y, useRelayEnvironment: h, useSubscribeToInvalidationState: v, useSubscription: b };
+            e.exports = { ConnectionHandler: E.ConnectionHandler, applyOptimisticMutation: E.applyOptimisticMutation, commitLocalUpdate: E.commitLocalUpdate, commitMutation: E.commitMutation, graphql: E.graphql, readInlineData: E.readInlineData, requestSubscription: E.requestSubscription, EntryPointContainer: r, RelayEnvironmentProvider: a, ProfilerContext: u, fetchQuery: E.fetchQuery, loadQuery: i, loadEntryPoint: o, useFragment: l, useLazyLoadQuery: s, useEntryPointLoader: c, useQueryLoader: m, useMutation: d, usePaginationFragment: p, usePreloadedQuery: f, useRefetchableFragment: y, useRelayEnvironment: h, useSubscribeToInvalidationState: v, useSubscription: b };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-27545368.e19a98fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-27545368.23fe382a.js.map

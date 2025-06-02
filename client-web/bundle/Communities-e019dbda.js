@@ -955,7 +955,7 @@
         753291: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.8"), n.e("icons.3"), n.e("icons.17"), n.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"), n.e("loader.MediaPickerWithPreview")]).then(n.bind(n, 199127)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.9"), n.e("icons.26"), n.e("icons.18"), n.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"), n.e("loader.MediaPickerWithPreview")]).then(n.bind(n, 199127)) });
         },
         854594: (e, t, n) => {
             n.d(t, { l: () => o, v: () => a });
@@ -1121,4 +1121,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.524b8f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e019dbda.9d1b557a.js.map

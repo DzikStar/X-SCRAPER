@@ -2,7 +2,7 @@
     ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315"],
     {
         721879: (e) => {
-            e.exports = { queryId: "CuEXIqY2dDqY6S4YGFaUOg", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "OWPV1TNQqTFs9bOL51X2Ow", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         218276: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -11,7 +11,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         549186: (e) => {
-            e.exports = { queryId: "EEfEQj4M1hsE-PcgQTellg", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "-wtVKQGJgMWDUhJhRT1TOQ", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         769948: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -46,28 +46,28 @@
                 h = o.n(_),
                 b = o(769948),
                 f = o.n(b),
-                g = o(871585),
-                w = o.n(g),
+                w = o(871585),
+                g = o.n(w),
                 v = o(418631),
                 y = o.n(v),
                 k = o(734701),
                 P = o.n(k),
                 I = o(630986),
-                E = o.n(I),
-                F = o(934309);
+                F = o.n(I),
+                E = o(934309);
             const C = { result: [], entities: {}, slice_info: {} },
                 Z = (e, t) => {
                     const o = t?.bookmark_all_delete,
                         r = "Done" === o;
                     return r || (0, a.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, i.jB)(e) || !r;
                 },
-                S = (0, i.kj)((e) => {
+                T = (0, i.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         o = "User" === t?.__typename ? t : void 0,
                         r = o?.bookmark_collections_slice?.items;
                     return !r;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                T = (0, i.kj)((e) => {
+                S = (0, i.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
@@ -84,7 +84,7 @@
                             { ...t },
                             (0, i.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(w(), {}, Z).then((e) => e),
+                    deleteAll: () => e.graphQL(g(), {}, Z).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: o } = t;
                         return e.graphQL(y(), { bookmark_collection_id: o });
@@ -95,13 +95,13 @@
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: o, tweetId: r } = t;
-                        return e.graphQL(E(), { bookmark_collection_id: o, tweet_id: r });
+                        return e.graphQL(F(), { bookmark_collection_id: o, tweet_id: r });
                     },
-                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(m(), { count: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || F.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, T).then((e) => e?.bookmark_collection_timeline?.timeline || F.cY),
+                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(m(), { count: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || E.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, S).then((e) => e?.bookmark_collection_timeline?.timeline || E.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(d(), t, S).then((e) => {
+                            ? e.graphQL(d(), t, T).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       o = "User" === t?.__typename ? t : void 0,
                                       a = o?.bookmark_collections_slice;
@@ -133,13 +133,13 @@
             const h = "block",
                 b = "mute",
                 f = "removeFollower",
-                g = "report",
-                w = "share",
+                w = "report",
+                g = "share",
                 v = n().j7bb1a43,
                 y = n().hef5960c,
                 k = (0, _.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: o, onClose: s, onMute: n, onRemoveFollower: _, onReportUser: k, onShare: P, onUnblock: I, onUnmute: E, user: F } = e,
+                        { onBlock: o, onClose: s, onMute: n, onRemoveFollower: _, onReportUser: k, onShare: P, onUnblock: I, onUnmute: F, user: E } = e,
                         C = [],
                         Z = (t, o) => {
                             const { confirm: r, onClose: a } = e;
@@ -151,51 +151,51 @@
                             } else o();
                         };
                     !!window.navigator.share &&
-                        !F.protected &&
-                        !F.blocking &&
-                        !F.blocked_by &&
+                        !E.protected &&
+                        !E.blocking &&
+                        !E.blocked_by &&
                         C.push({
                             Icon: a.Z,
                             onClick: () => {
                                 s(), P();
                             },
-                            testID: w,
+                            testID: g,
                             text: y,
                         });
-                    !F.blocking &&
+                    !E.blocking &&
                         C.push({
                             ...(0, u.N1)(
-                                F,
+                                E,
                                 () => {
                                     s(), n();
                                 },
                                 () => {
-                                    s(), E();
+                                    s(), F();
                                 },
                             ),
                             testID: b,
                         });
-                    F.followed_by &&
+                    E.followed_by &&
                         C.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     Z(e, _);
                                 },
-                                user: F,
+                                user: E,
                             }),
                             testID: f,
                         }),
-                        C.push((0, p.op)({ blockAction: (e) => Z(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: p.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => Z(e, I), user: F })),
+                        C.push((0, p.op)({ blockAction: (e) => Z(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: p.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => Z(e, I), user: E })),
                         C.push({
                             Icon: l.default,
                             onClick: () => {
                                 s(), k();
                             },
-                            testID: g,
-                            text: v({ screenName: F.screen_name }),
+                            testID: w,
+                            text: v({ screenName: E.screen_name }),
                         });
-                    const S = C.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(i.Z, { items: S, onCloseRequested: s });
+                    const T = C.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(i.Z, { items: T, onCloseRequested: s });
                 });
         },
         113392: (e, t, o) => {
@@ -238,13 +238,13 @@
                 h = ({ acceptGifs: e, acceptImages: t = !0, acceptVideo: o }) => (t ? c.v5 : []).concat(e ? [c.Re] : []).concat(o ? p.jn : []);
             const b = s.default.create((e) => ({ root: { margin: `-${e.spaces.space12}` } })),
                 f = function ({ "aria-label": e = m, acceptGifs: t = !0, acceptImages: o = !0, acceptVideo: s = !0, customMimeTypes: n = [], icon: l = _, size: d = "medium", style: c, withIcon: p = !0, ...f }) {
-                    const g = h({ acceptGifs: t, acceptImages: o, acceptVideo: s }).concat(n).join(",");
-                    return a.createElement(i.Z, (0, r.Z)({}, f, { accept: g, "aria-label": e, icon: p ? l : void 0, size: d, style: [b.root, c], testID: u }));
+                    const w = h({ acceptGifs: t, acceptImages: o, acceptVideo: s }).concat(n).join(",");
+                    return a.createElement(i.Z, (0, r.Z)({}, f, { accept: w, "aria-label": e, icon: p ? l : void 0, size: d, style: [b.root, c], testID: u }));
                 };
         },
         751170: (e, t, o) => {
             "use strict";
-            o.d(t, { A: () => _, Z: () => g });
+            o.d(t, { A: () => _, Z: () => w });
             var r = o(202784),
                 a = o(325686),
                 i = o(167630),
@@ -297,7 +297,7 @@
             h.defaultProps = { borderRadius: _.NONE, enableGif: !0, resizeMode: "cover" };
             const b = n.default.create((e) => ({ [_.INFINITE]: { borderRadius: e.borderRadii.infinite }, [_.MEDIUM]: { borderRadius: e.borderRadii.small }, [_.NONE]: { borderRadius: e.borderRadii.none } })),
                 f = n.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
-                g = h;
+                w = h;
         },
         304059: (e, t, o) => {
             "use strict";
@@ -317,15 +317,15 @@
                 h = o(254944),
                 b = o(837020),
                 f = o(276259),
-                g = o(443781),
-                w = o(10656),
+                w = o(443781),
+                g = o(10656),
                 v = o(716233),
                 y = o(946208),
                 k = o(540387),
                 P = o(950822),
                 I = o(303186),
-                E = o(954300);
-            class F extends r.Component {
+                F = o(954300);
+            class E extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -335,28 +335,28 @@
                 }
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: o, style: a, variants: i, ...s } = this.props,
-                        n = (0, I.IM)((0, E.rD)(i), t);
+                        n = (0, I.IM)((0, F.rD)(i), t);
                     return (0, P.Z)("video", { ...s, children: [n.map((e) => r.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: a });
                 }
             }
-            F.defaultProps = { dataSaverMode: !1, variants: [] };
+            E.defaultProps = { dataSaverMode: !1, variants: [] };
             var C = o(959587),
                 Z = o(751170),
-                S = o(523561),
-                T = o(195560);
-            const D = (0, S.Z)({
+                T = o(523561),
+                S = o(195560);
+            const D = (0, T.Z)({
                     loader: () =>
-                        Promise.all([o.e("icons.2"), o.e("icons.9"), o.e("modules.common-e907d115"), o.e("modules.common-e019dbda"), o.e("icons.14"), o.e("icons.5"), o.e("modules.audio-6107ac1a"), o.e("modules.audio-b953418a"), o.e("modules.audio-7c51e6a7"), o.e("modules.audio-04db59e9"), o.e("modules.audio-76583d6c"), o.e("modules.audio-b7a8a5fb"), o.e("modules.audio-51f6e793"), o.e("modules.audio-e019dbda"), o.e("modules.audio-262c94d4"), o.e("modules.audio-c6fe4ea4"), o.e("icons.17"), o.e("icons.27"), o.e("icons.19"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), o.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), o.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([o.e("icons.21"), o.e("icons.16"), o.e("icons.10"), o.e("icons.4"), o.e("modules.common-e907d115"), o.e("modules.common-e019dbda"), o.e("icons.28"), o.e("icons.24"), o.e("modules.audio-6107ac1a"), o.e("modules.audio-b953418a"), o.e("modules.audio-7c51e6a7"), o.e("modules.audio-04db59e9"), o.e("modules.audio-76583d6c"), o.e("modules.audio-b7a8a5fb"), o.e("modules.audio-51f6e793"), o.e("modules.audio-e019dbda"), o.e("modules.audio-262c94d4"), o.e("modules.audio-c6fe4ea4"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), o.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), o.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), o.e("loader.MediaPreviewVideoPlayer")])
                             .then(o.bind(o, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
-                    renderPlaceholder: (e, t) => r.createElement(T.Z, { hasError: e, onRetry: t }),
+                    renderPlaceholder: (e, t) => r.createElement(S.Z, { hasError: e, onRetry: t }),
                 }),
                 L = u().gd80afba,
                 A = u().j322caee,
                 M = u().abd845fe,
                 x = u().df1b0708,
-                U = u().cd959e5c,
-                N = u().e68b09b4,
+                N = u().cd959e5c,
+                U = u().e68b09b4,
                 B = u().add55c98,
                 R = u().f350cf46;
             class V extends r.Component {
@@ -404,14 +404,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: o, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: g, withAltTextLabel: v, withCloseButton: y, withDragAndDropIndicator: k, withEditButton: P, withEditIcon: I, withEditSensitiveWarningButton: E } = this.props,
-                        { mediaContainerSizeStyle: F, playGif: Z } = this.state,
-                        S = o.externalMediaDetails && o.externalMediaDetails.mediaType === f.Re,
-                        T = S || (t && o.mediaFile && o.mediaFile.isGif),
+                    const { "aria-label": e, enableGif: t, mediaItem: o, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: w, withAltTextLabel: v, withCloseButton: y, withDragAndDropIndicator: k, withEditButton: P, withEditIcon: I, withEditSensitiveWarningButton: F } = this.props,
+                        { mediaContainerSizeStyle: E, playGif: Z } = this.state,
+                        T = o.externalMediaDetails && o.externalMediaDetails.mediaType === f.Re,
+                        S = T || (t && o.mediaFile && o.mediaFile.isGif),
                         D = !!o.mediaFile?.isVideo;
                     return r.createElement(i.ZP, null, ({ windowWidth: t }) => {
-                        const o = void 0 !== I ? I : !w.Z.isTwoColumnLayout(t);
-                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [g, z.cursor, S && z.gifPlayButton, F] }, this._renderPreview(), S && !Z && r.createElement(s.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), T ? r.createElement(C.ZP, { type: C.AM }) : null, v && !D ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && E ? r.createElement(l.ZP, { "aria-label": A, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": L, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : M) : null), y ? r.createElement(l.ZP, { "aria-label": U, hoverLabel: { label: N }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        const o = void 0 !== I ? I : !g.Z.isTwoColumnLayout(t);
+                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [w, z.cursor, T && z.gifPlayButton, E] }, this._renderPreview(), T && !Z && r.createElement(s.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), S ? r.createElement(C.ZP, { type: C.AM }) : null, v && !D ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": A, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": L, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : M) : null), y ? r.createElement(l.ZP, { "aria-label": N, hoverLabel: { label: U }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -444,11 +444,11 @@
                     }
                     {
                         const o = (0, v.TO)(a.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return r.createElement(F, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: a instanceof k.ZP ? a.thumbnail : "", style: z.video, variants: o }, s?.upload?.mediaFile instanceof y.ZP ? r.createElement("track", { default: !0, kind: "subtitles", label: s.displayName, src: s.upload.mediaFile.vtt, srcLang: s.lang }) : null);
+                        return r.createElement(E, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: a instanceof k.ZP ? a.thumbnail : "", style: z.video, variants: o }, s?.upload?.mediaFile instanceof y.ZP ? r.createElement("track", { default: !0, kind: "subtitles", label: s.displayName, src: s.upload.mediaFile.vtt, srcLang: s.lang }) : null);
                     }
                 }
             }
-            (V.contextType = g.rC), (V.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
+            (V.contextType = w.rC), (V.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
             const z = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
                 O = V;
         },
@@ -608,8 +608,8 @@
                 h = o(260137),
                 b = o(71620),
                 f = o(668214),
-                g = o(276001),
-                w = o(798538),
+                w = o(276001),
+                g = o(798538),
                 v = o(465814),
                 y = o(632960);
             function k(e, t, o) {
@@ -619,18 +619,18 @@
                 for (const t of a.reverse()) if (((i = o(e, t)), i)) break;
                 return i;
             }
-            const P = (e, t) => k(e, t, g.Z.select),
+            const P = (e, t) => k(e, t, w.Z.select),
                 I = (e, t) => k(e, t, v.Z.select),
-                E = (0, f.Z)()
+                F = (0, f.Z)()
                     .propsFromState(() => ({ card: P, legacyAndUnifiedCard: I }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: g.Z.fetchCardPreviewIfNeeded, updateDMComposer: w.G6, updateTweetComposer: y.zi })),
-                F = d().f6fec9f6,
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: w.Z.fetchCardPreviewIfNeeded, updateDMComposer: g.G6, updateTweetComposer: y.zi })),
+                E = d().f6fec9f6,
                 C = /^https?:\/\//i,
                 Z = (e) => {
                     const t = (0, m.Z)(e);
                     if (t.length) return t.map((e) => (!C.test(e) && `http://${e}`) || e);
                 };
-            class S extends r.Component {
+            class T extends r.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._fetchCardPreviewIfNeeded = () => {
@@ -663,7 +663,7 @@
                         { viewerUserId: o } = this.context;
                     if (e || !o) return null;
                     const a = this._getCards();
-                    return a ? r.createElement(i.Z, { style: t }, r.createElement(h.default, { card: a.legacyCard, cardContext: { tweetUserId: o, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: a.unifiedCard }), r.createElement(s.ZP, { "aria-label": F, icon: r.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: T.closeButton, type: "onMediaDominantColorFilled" })) : null;
+                    return a ? r.createElement(i.Z, { style: t }, r.createElement(h.default, { card: a.legacyCard, cardContext: { tweetUserId: o, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: a.unifiedCard }), r.createElement(s.ZP, { "aria-label": E, icon: r.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: S.closeButton, type: "onMediaDominantColorFilled" })) : null;
                 }
                 _getCards() {
                     const { card: e, legacyAndUnifiedCard: t } = this.props,
@@ -671,9 +671,9 @@
                     if (o.legacyCard || o.unifiedCard) return o;
                 }
             }
-            S.contextType = _.rC;
-            const T = n.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space4, start: e.spaces.space4 } })),
-                D = E(S);
+            T.contextType = _.rC;
+            const S = n.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space4, start: e.spaces.space4 } })),
+                D = F(T);
         },
         449950: (e, t, o) => {
             "use strict";
@@ -722,9 +722,9 @@
                         n = (0, d.v9)(c.Lz),
                         l = (0, d.v9)(p.ZP.selectViewerUser),
                         b = n ? l?.screen_name : void 0,
-                        g = r.useMemo(() => [f.root, o], [o]);
-                    let w = u({ screenName: b });
-                    return "Tweet" === s && t ? (w = m({ screenName: b })) : "DM" === s ? (w = _({ screenName: b })) : "List" === s && (w = h({ screenName: b })), b ? r.createElement(a.Z, { style: g }, r.createElement(i.Z, { text: w })) : null;
+                        w = r.useMemo(() => [f.root, o], [o]);
+                    let g = u({ screenName: b });
+                    return "Tweet" === s && t ? (g = m({ screenName: b })) : "DM" === s ? (g = _({ screenName: b })) : "List" === s && (g = h({ screenName: b })), b ? r.createElement(a.Z, { style: w }, r.createElement(i.Z, { text: g })) : null;
                 },
                 f = s.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingBottom: e.spaces.space12 } }));
         },
@@ -749,8 +749,8 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, p.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: _.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
                 f = s().bdba3e1a,
-                g = s().c4da7d28,
-                w = s().j87c21f4,
+                w = s().c4da7d28,
+                g = s().j87c21f4,
                 v = s().iebc30ca,
                 y = s().dc740eb2;
             class k extends r.PureComponent {
@@ -758,7 +758,7 @@
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(a.ZP, { "aria-label": g, hoverLabel: { label: v }, icon: r.createElement(n.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(a.ZP, { "aria-label": f, hoverLabel: { label: w }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(a.ZP, { "aria-label": w, hoverLabel: { label: v }, icon: r.createElement(n.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(a.ZP, { "aria-label": f, hoverLabel: { label: g }, icon: r.createElement(l.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -791,7 +791,7 @@
         },
         490834: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => T });
+            o.d(t, { Z: () => S });
             var r = o(202784),
                 a = o(576648),
                 i = o(811176),
@@ -815,19 +815,19 @@
                 }
                 render() {
                     const { cancelButtonLabel: e, description: t, headerText: o, link: a, onCancel: i } = this.props,
-                        n = (0, m.Z)("input", { autoFocus: !0, onFocus: this._handleOnFocus, readOnly: !0, style: g.linkInput, value: a });
-                    return r.createElement(_.Z, { onMaskClick: i, style: g.container, type: "center", withMask: !0 }, o && r.createElement(s.ZP, { align: "center", style: g.headerText, weight: "bold" }, o), t && r.createElement(s.ZP, { align: "center", color: "gray700", style: g.labelText }, t), n, r.createElement(h.ZP, { onPress: i, size: "xLarge", style: g.cancelButton, type: "brandText" }, e));
+                        n = (0, m.Z)("input", { autoFocus: !0, onFocus: this._handleOnFocus, readOnly: !0, style: w.linkInput, value: a });
+                    return r.createElement(_.Z, { onMaskClick: i, style: w.container, type: "center", withMask: !0 }, o && r.createElement(s.ZP, { align: "center", style: w.headerText, weight: "bold" }, o), t && r.createElement(s.ZP, { align: "center", color: "gray700", style: w.labelText }, t), n, r.createElement(h.ZP, { onPress: i, size: "xLarge", style: w.cancelButton, type: "brandText" }, e));
                 }
             }
             f.defaultProps = { cancelButtonLabel: b };
-            const g = d.default.create((e) => ({ container: { alignItems: "center", paddingVertical: e.spaces.space32, paddingHorizontal: e.spaces.space12, position: "relative" }, headerText: { marginBottom: e.spaces.space16 }, labelText: { marginBottom: e.spaces.space16, width: "100%" }, linkInput: { backgroundColor: e.colors.gray0, borderColor: "transparent", color: e.colors.gray700, fontSize: e.fontSizes.body, marginBottom: e.spaces.space12, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space20 }, cancelButton: { width: "100%" } })),
-                w = f,
+            const w = d.default.create((e) => ({ container: { alignItems: "center", paddingVertical: e.spaces.space32, paddingHorizontal: e.spaces.space12, position: "relative" }, headerText: { marginBottom: e.spaces.space16 }, labelText: { marginBottom: e.spaces.space16, width: "100%" }, linkInput: { backgroundColor: e.colors.gray0, borderColor: "transparent", color: e.colors.gray700, fontSize: e.fontSizes.body, marginBottom: e.spaces.space12, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space20 }, cancelButton: { width: "100%" } })),
+                g = f,
                 v = p().e05c00b4,
                 y = p().eabf2209,
                 k = p().a613e720,
                 P = p().f88553c8,
                 I = { riffsy: "https://abs.twimg.com/a/1501527574/img/t1/icon_riffsy.png", giphy: "https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png" };
-            class E extends r.PureComponent {
+            class F extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderMenu = (e) => r.createElement(i.Z, { items: [{ text: k, Icon: u.default, onClick: this._handleCopyGifLinkButtonClick }], onCloseRequested: e })),
@@ -845,17 +845,17 @@
                         { gifUrl: t, provider: o } = this.props,
                         { display_name: a, name: i } = o,
                         n = I[i];
-                    return n ? r.createElement(r.Fragment, null, e ? r.createElement(w, { description: y({ providerName: a }), headerText: v, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, r.createElement(s.ZP, { align: "center", color: "gray700", style: [F.root, F.verticalAlign] }, r.createElement(p().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(a, n)))) : null;
+                    return n ? r.createElement(r.Fragment, null, e ? r.createElement(g, { description: y({ providerName: a }), headerText: v, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, r.createElement(s.ZP, { align: "center", color: "gray700", style: [E.root, E.verticalAlign] }, r.createElement(p().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(a, n)))) : null;
                 }
                 _renderAttribution(e, t) {
-                    return r.createElement(n.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, r.createElement(s.ZP, { style: F.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, r.createElement(l.Z, { source: { uri: t }, style: F.image }), r.createElement(s.ZP, null, e.toUpperCase())));
+                    return r.createElement(n.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, r.createElement(s.ZP, { style: E.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, r.createElement(l.Z, { source: { uri: t }, style: E.image }), r.createElement(s.ZP, null, e.toUpperCase())));
                 }
             }
-            const F = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                C = E;
+            const E = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
+                C = F;
             var Z = o(668214),
-                S = o(601576);
-            const T = (0, Z.Z)().propsFromActions(() => ({ addToast: S.fz }))(({ addToast: e, gifUrl: t, provider: o }) => r.createElement(C, { addToast: e, gifUrl: t, provider: o }));
+                T = o(601576);
+            const S = (0, Z.Z)().propsFromActions(() => ({ addToast: T.fz }))(({ addToast: e, gifUrl: t, provider: o }) => r.createElement(C, { addToast: e, gifUrl: t, provider: o }));
         },
         170371: (e, t, o) => {
             "use strict";
@@ -963,8 +963,8 @@
                 );
             var b = o(312771),
                 f = o(71620),
-                g = o(973572),
-                w = o(668214),
+                w = o(973572),
+                g = o(668214),
                 v = o(919022);
             const y = (e, t) => t.userIds,
                 k = (e, t) => {
@@ -981,10 +981,10 @@
                         return r && (t[o] = r === b.ZP.NONE ? b.ZP.LOADING : r), t;
                     }, {});
                 },
-                I = (0, w.Z)()
+                I = (0, g.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, g.Z)(k, (e) => e),
-                        fetchStatus: (0, g.Z)(k, P, y, (e, t, o) => {
+                        availableUserIds: (0, w.Z)(k, (e) => e),
+                        fetchStatus: (0, w.Z)(k, P, y, (e, t, o) => {
                             let r = b.ZP.LOADED;
                             for (let a = 0; a < o.length; a++) {
                                 const i = o[a];
@@ -998,8 +998,8 @@
                         }),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: v.ZP.fetchManyIfNeeded })),
-                E = l().f5b426c2;
-            class F extends a.Component {
+                F = l().f5b426c2;
+            class E extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -1018,7 +1018,7 @@
                     s()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return a.createElement(c.Z, { "aria-label": E, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return a.createElement(c.Z, { "aria-label": F, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: o, userIds: r } = this.props;
@@ -1041,7 +1041,7 @@
                     );
                 }
             }
-            const C = I(F);
+            const C = I(E);
         },
         246851: (e, t, o) => {
             "use strict";
@@ -1059,4 +1059,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.cba43a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.c63d9a2a.js.map

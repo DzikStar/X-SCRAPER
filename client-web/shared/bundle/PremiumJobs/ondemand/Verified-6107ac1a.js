@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a"],
+    ["shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a", "icons/IconStarStroke-js"],
     {
         322633: (e, l, a) => {
             a.d(l, { Z: () => t });
@@ -1596,6 +1596,19 @@
                         } catch (e) {}
                 };
         },
+        106186: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => u });
+            var n = a(202784),
+                i = a(890601),
+                r = a(783427),
+                t = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [t.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23.426 9.29L15.54 8.15 12.013 1 8.486 8.15.6 9.29l5.707 5.56-1.348 7.86L12.013 19l7.053 3.71-1.347-7.86 5.707-5.56zm-11.413 7.45l-4.397 2.31.84-4.89-3.558-3.47 4.916-.72 2.199-4.45 2.198 4.45 4.917.72-3.558 3.47.84 4.89-4.397-2.31z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const u = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.5f503eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.c69ec78a.js.map

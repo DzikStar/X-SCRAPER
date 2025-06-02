@@ -5034,7 +5034,7 @@
                     return "プロモーション終了日: " + e.endDate;
                 }),
                 f("b29b2e69", function (e) {
-                    return e.endDate + "まで" + e.percentOff + "%オフ";
+                    return e.endDate + "まで" + e.percentOff + "%の割引";
                 }),
                 f("j3cfae29", function (e) {
                     return "最初の1年間は年額" + e.discountedCost + "、その後は年額" + e.baseCost + "になります。";
@@ -5076,7 +5076,7 @@
                 f("dbb3fc54", "共同創設者およびCEO"),
                 f("c1600210", "「Xのビジネス活用を迷わずおすすめします。市場に関するインサイトを手に入れることで、顧客を獲得できました。」"),
                 f("fb3e127a", "期間限定の新年プロモーション"),
-                f("a5fee980", "次の期限までにサブスクライブすると、1年プランが30%オフになり、最大12,000ドルの無料広告クレジットを獲得できます:"),
+                f("a5fee980", "次の期限までにサブスクライブすると、1年プランが30%の割引になり、最大12,000ドルの無料広告クレジットを獲得できます:"),
                 f("c9051cac", "日"),
                 f("ie035790", "秒"),
                 f("cbd3dfaa", "ベータ版を試す"),
@@ -7234,7 +7234,7 @@
                 f("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 f("ae3f3b0e", "Enjoy!"),
                 f("cdac8dc4", "See your new feed"),
-                f("dec99336", "Ad-free"),
+                f("dec99336", "広告なし"),
                 f("i95803fa", "Unfortunately, you are not eligible at this time."),
                 f("d28a1d72", "Radarを使ってトレンドをいち早く見つけましょう"),
                 f("fb70427a", "非常に強力な検索ツールがXに導入されます。"),
@@ -13300,4 +13300,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.52a4974a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.e2d3446a.js.map

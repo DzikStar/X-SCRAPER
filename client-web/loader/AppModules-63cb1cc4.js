@@ -590,7 +590,7 @@
                                                                   p = c && c.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   m = _e(i, r, { featureSwitches: t, userClaims: n }),
                                                                   S = m ? `&media_category=${m}` : "";
-                                                              u?.reportOperationStart(P.BX.SruUpload), i.uploader?.upload({ success: _, progress: f, pause: h, error: E, extraInitParams: e + S, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: o, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", 1), enable_1080p_variant: !d || a, mediaItem: i });
+                                                              u?.reportOperationStart(P.BX.SruUpload), i.uploader?.upload({ success: _, progress: f, pause: h, error: E, extraInitParams: e + S, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: o, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", c && c.size > 2e9 ? 4 : 1), enable_1080p_variant: !d || a, mediaItem: i });
                                                           }
                                                       });
                                                   return o({ id: d, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
@@ -1016,4 +1016,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-63cb1cc4.39c550da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-63cb1cc4.55844d6a.js.map

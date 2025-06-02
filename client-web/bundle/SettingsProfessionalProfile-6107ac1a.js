@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfessionalProfile-6107ac1a"],
+    ["bundle.SettingsProfessionalProfile-6107ac1a", "icons/IconChevronRight-js"],
     {
         100863: (l, e, n) => {
             n.d(e, { Z: () => u });
@@ -623,12 +623,27 @@
                         L = [c.thumbnailContainer, "medium" === b && c.thumbnailContainerMedium],
                         h = "string" == typeof m ? a.createElement(t.ZP, null, m) : m,
                         P = "object" == typeof y && y.external && !y.openInSameFrame,
-                        C = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${f}-description` }, n) : n) : null,
-                        v = a.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? o.default.theme.spaces[k] : o.default.theme.componentDimensions.gutterHorizontal }), [k]);
-                    return a.createElement(u.Z, { "aria-selected": "tab" === K ? g : null, disabled: d, link: d ? void 0 : y, onPress: p, role: K, style: [c.root, v, d && c.disabled, _], testID: f, withInteractiveStyling: !!y || !!p }, a.createElement(s.Z, { style: c.contentContainer }, S ? a.createElement(s.Z, { style: L }, S) : null, a.createElement(s.Z, { style: c.content }, h, C), F ? F() : null, (!y && !p) || d || T ? null : P ? a.createElement(i.default, { style: c.icon }) : a.createElement(r.default, { style: c.icon })), e);
+                        v = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${f}-description` }, n) : n) : null,
+                        C = a.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? o.default.theme.spaces[k] : o.default.theme.componentDimensions.gutterHorizontal }), [k]);
+                    return a.createElement(u.Z, { "aria-selected": "tab" === K ? g : null, disabled: d, link: d ? void 0 : y, onPress: p, role: K, style: [c.root, C, d && c.disabled, _], testID: f, withInteractiveStyling: !!y || !!p }, a.createElement(s.Z, { style: c.contentContainer }, S ? a.createElement(s.Z, { style: L }, S) : null, a.createElement(s.Z, { style: c.content }, h, v), F ? F() : null, (!y && !p) || d || T ? null : P ? a.createElement(i.default, { style: c.icon }) : a.createElement(r.default, { style: c.icon })), e);
                 },
                 c = o.default.create((l) => ({ root: { justifyContent: "space-between", minHeight: `calc(${o.default.theme.lineHeights.headline1} + 2 * ${l.componentDimensions.gutterVertical})`, paddingVertical: l.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: l.colors.gray700, paddingStart: l.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: l.spaces.space48, width: l.spaces.space48, marginEnd: l.spaces.space16 }, thumbnailContainerMedium: { height: l.spaces.space32, width: l.spaces.space32 } }));
         },
+        58399: (l, e, n) => {
+            n.r(e), n.d(e, { default: () => o });
+            var a = n(202784),
+                s = n(890601),
+                i = n(783427),
+                r = n(717683),
+                t = n(347101);
+            const u = (l = {}) => {
+                const e = a.useContext(r.Z),
+                    { direction: n } = (0, i.Z)();
+                return (0, s.Z)("svg", { ...l, role: l["aria-label"] ? l.role || "img" : void 0, "aria-hidden": void 0 === l["aria-label"], style: [t.Z.root, l.style, e && t.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
+            };
+            u.metadata = { width: 24, height: 24 };
+            const o = u;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfile-6107ac1a.3f253c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfile-6107ac1a.44342aba.js.map

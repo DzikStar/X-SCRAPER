@@ -7234,7 +7234,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "விளம்பரமற்றது"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Radar மூலம் நடப்புகளை அறியும் முதல் நபராக இருங்கள்"),
                 n("fb70427a", "X -இல் மிகவும் சக்திவாய்ந்த தேடல் கருவியை அறிமுகப்படுத்துகிறோம்."),
@@ -13312,4 +13312,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.4ab93a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.ea00676a.js.map

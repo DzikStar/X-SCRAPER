@@ -7214,7 +7214,7 @@
                 a("fe946974", "Your trial of X without ads"),
                 a("f6c50ec0", "Your ad-free trial has ended"),
                 a("b1319404", "Ads avoided"),
-                a("baa4acae", "You’re seeing more personalized content."),
+                a("baa4acae", "You’re seeing more personalised content."),
                 a("c00e8600", "Estimated time saved"),
                 a("ic073e4e", "Your time is valuable."),
                 a("eb866e88", "Estimated 1-year time savings"),
@@ -13312,4 +13312,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.75574b2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.a843419a.js.map

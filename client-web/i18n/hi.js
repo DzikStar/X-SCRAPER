@@ -5081,7 +5081,7 @@
                 n("dbb3fc54", "सह-संस्थापक और CEO"),
                 n("c1600210", "“व्यवसाय के लिए X एक बिना सोचे समझे काम करने वाली चीज़ है. इसने बाजार की इनसाइट हासिल करके ग्राहकों को सुरक्षित करने में हमारी मदद की."),
                 n("fb3e127a", "सीमित समय के लिए नव वर्ष ऑफ़र"),
-                n("a5fee980", "पहले सब्सक्राइब करने पर वार्षिक योजनाओं पर 30% की छूट और $12,000 तक मुफ़्त विज्ञापन क्रेडिट का दावा करें"),
+                n("a5fee980", "पहले सब्सक्राइब करने पर वार्षिक प्लान पर 30% की छूट और $12,000 तक मुफ़्त विज्ञापन क्रेडिट का दावा करें"),
                 n("c9051cac", "दिन"),
                 n("ie035790", "सेकंड"),
                 n("cbd3dfaa", "बीटा को आज़माएं"),
@@ -7239,7 +7239,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "विज्ञापन-मुक्त"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Radar के साथ रुझानों का पता लगाने वाले सबसे पहले व्यक्ति बनें"),
                 n("fb70427a", "पेश है X पर सबसे शक्तिशाली खोज खोज टूल"),
@@ -13302,4 +13302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.7762178a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.35db26aa.js.map

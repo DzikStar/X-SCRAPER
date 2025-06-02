@@ -7210,16 +7210,16 @@
                 n("hd80bd3e", "게시물 프로모션하기"),
                 n("fe2b0008", "X 사용 방법 알아보기"),
                 n("h257d4aa", "프로모션할 게시물을 선택하세요"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
-                n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("fe946974", "광고 없는 X 무료 체험"),
+                n("f6c50ec0", "광고 안 보기 무료 체험 기간 종료"),
+                n("b1319404", "표시되지 않은 광고 수"),
+                n("baa4acae", "보다 맞춤화된 콘텐츠가 표시되고 있습니다."),
+                n("c00e8600", "절약한 시간 추정치"),
+                n("ic073e4e", "여러분의 시간은 중요합니다."),
+                n("eb866e88", "1년간 절약한 시간 추정치"),
+                n("aa77b70c", "사용량 기준"),
+                n("c534c6b4", "계산 중입니다..."),
+                n("i57332f0", "계속해서 스크롤하세요. 나중에 다시 확인하면 표시되지 않은 광고 수와 절약한 시간을 확인하실 수 있습니다."),
                 n("cc10f019", function (e) {
                     return e.minutes + " 분";
                 }),
@@ -7235,11 +7235,11 @@
                 n("be88be23", function (e) {
                     return e.durationInDays + "일 광고 안 보기 체험 기간이 시작되었습니다";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("a4413462", "무료 체험 기간 동안 내게 표시되지 않은 광고의 수와 절약한 시간에 대한 통계 정보를 확인할 수 있습니다."),
+                n("ae3f3b0e", "마음껏 즐기세요"),
+                n("cdac8dc4", "새 피드 보기"),
+                n("dec99336", "광고 없음"),
+                n("i95803fa", "죄송합니다. 지금은 요건을 충족하지 않습니다."),
                 n("d28a1d72", "Radar로 트렌드를 가장 먼저 파악하세요."),
                 n("fb70427a", "X의 가장 강력한 검색 도구를 소개합니다."),
                 n("i54bf620", "키워드 모니터링"),
@@ -12087,7 +12087,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["수수료 ", "%, 최소 "];
                             },
                         },
                         {
@@ -13313,4 +13313,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.ccfab8fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.8753afea.js.map

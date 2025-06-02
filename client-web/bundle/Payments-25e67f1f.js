@@ -3,7 +3,7 @@
     ["bundle.Payments-25e67f1f"],
     {
         897340: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => W });
+            n.r(t), n.d(t, { default: () => D });
             var a = n(202784),
                 r = n(325686),
                 o = n(952428),
@@ -31,38 +31,39 @@
                 w = n(370347),
                 T = n(634455),
                 A = n(819404),
-                S = n(575123),
-                I = n(452275),
-                q = n(412100),
-                B = n(934265),
-                H = n(743080),
-                z = n(727384);
-            const N = { page: "money", section: "balance" },
-                M = "Money",
-                L = "Balance",
-                $ = (e) => {
-                    const { balance: t, interest: n, refetchStatus: u } = (0, B.Z)(),
+                S = n(601463),
+                I = n(575123),
+                q = n(452275),
+                B = n(412100),
+                H = n(934265),
+                z = n(743080),
+                N = n(727384);
+            const M = { page: "money", section: "balance" },
+                L = "Money",
+                $ = "Balance",
+                F = (e) => {
+                    const { balance: t, interest: n, refetchStatus: u } = (0, H.Z)(),
                         m = (0, k.hC)("payments_tasks_carousel_enabled"),
-                        E = (0, H.jh)(),
+                        E = (0, z.jh)(),
                         { permissions: f } = (0, v.Z)({ fetchKey: "Payments" }),
-                        { data: C, fetchNext: S, hasNotices: I } = (0, q.Z)(),
-                        N = (0, z.Gs)(f),
-                        M = (0, _.nK)(f),
-                        $ = N || f?.includes(h.d.CreateDeposit),
-                        F = N || f?.includes(h.d.CreateWithdrawal),
-                        j = a.createElement(o.Z, { link: Z.l_, style: H.ZP.column, testID: "account-balance" }, a.createElement(r.Z, { style: H.ZP.rowSpaceBetween }, a.createElement(i.ZP, { color: "gray700", size: "subtext1", weight: "medium" }, L), n?.apy && a.createElement(l.ZP, { background: "green0", style: H.ZP.label, type: "bestValue" }, a.createElement(i.ZP, { color: "green500", size: "subtext1", weight: "medium" }, (0, z.Bj)({ apy: n.apy })))), u === P.iF.LOADING ? a.createElement(c.Z, { style: U.balanceLoader }) : t ? a.createElement(T.Z, { amount: t.available_amount_local_micro, size: "title0", style: U.veritcalPadding }) : null, a.createElement(r.Z, { style: U.centeredRow }, a.createElement(i.ZP, { size: "subtext2", weight: "medium" }, "Account & Routing Number"), a.createElement(d.default, { style: U.icon })));
-                    return a.createElement(a.Fragment, null, a.createElement(s.Z, { "aria-label": L, containerStyle: E.tile, stackLayoutUpperStyle: H.ZP.upper, upper: j, withInteractiveStyling: !1 }), I ? a.createElement(x.Z, { data: C, fetchNext: S, type: "notice" }) : null, a.createElement(r.Z, { style: E.pivotTileContainer }, a.createElement(w.Z, { disabled: !M, icon: p.default, link: M ? Z.HM : void 0, text: "Send" }), a.createElement(w.Z, { disabled: !M, icon: y.default, link: M ? Z.Jv : void 0, text: "Request" }), a.createElement(w.Z, { disabled: !$, icon: b.default, link: $ ? Z.IN : void 0, text: "Deposit" }), a.createElement(w.Z, { disabled: !F, icon: g.default, link: F ? Z.r0 : void 0, text: "Withdraw" })), m && a.createElement(A.Z, null));
+                        { data: C, fetchNext: I, hasNotices: q } = (0, B.Z)(),
+                        M = (0, N.Gs)(f),
+                        L = (0, _.nK)(f),
+                        F = M || f?.includes(h.d.CreateDeposit),
+                        U = M || f?.includes(h.d.CreateWithdrawal),
+                        W = a.createElement(o.Z, { link: Z.l_, style: z.ZP.column, testID: "account-balance" }, a.createElement(r.Z, { style: z.ZP.rowSpaceBetween }, a.createElement(i.ZP, { color: "gray700", size: "subtext1", weight: "medium" }, $), n?.apy && a.createElement(l.ZP, { background: "green0", style: z.ZP.label, type: "bestValue" }, a.createElement(i.ZP, { color: "green500", size: "subtext1", weight: "medium" }, (0, N.Bj)({ apy: n.apy })))), u === P.iF.LOADING ? a.createElement(c.Z, { style: j.balanceLoader }) : t ? a.createElement(T.Z, { amount: t.available_amount_local_micro, size: "title0", style: j.veritcalPadding }) : null, a.createElement(r.Z, { style: j.centeredRow }, a.createElement(i.ZP, { size: "subtext2", weight: "medium" }, "Account & Routing Number"), a.createElement(d.default, { style: j.icon })));
+                    return a.createElement(a.Fragment, null, a.createElement(s.Z, { "aria-label": $, containerStyle: E.tile, stackLayoutUpperStyle: z.ZP.upper, upper: W, withInteractiveStyling: !1 }), q ? a.createElement(x.Z, { data: C, fetchNext: I, type: "notice" }) : null, a.createElement(r.Z, { style: E.pivotTileContainer }, a.createElement(w.Z, { disabled: !L, icon: p.default, link: L ? Z.HM : void 0, text: "Send" }), a.createElement(w.Z, { disabled: !L, icon: y.default, link: L ? Z.Jv : void 0, text: "Request" }), a.createElement(w.Z, { disabled: !F, icon: b.default, link: F ? Z.IN : void 0, text: "Deposit" }), a.createElement(w.Z, { disabled: !U, icon: g.default, link: U ? Z.r0 : void 0, text: "Withdraw" })), m && a.createElement(A.Z, null), a.createElement(S.Z, null));
                 },
-                F = { context: "ACCOUNT_BALANCE" },
-                U = u.default.create((e) => ({ balanceLoader: { minHeight: e.spaces.space72 }, padding: { padding: e.spaces.space8 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space8, flexShrink: 0, height: e.spaces.space16, width: e.spaces.space16 }, centeredRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, veritcalPadding: { paddingVertical: e.spaces.space16 } })),
-                j = (e) => {
+                U = { context: "ACCOUNT_BALANCE" },
+                j = u.default.create((e) => ({ balanceLoader: { minHeight: e.spaces.space72 }, padding: { padding: e.spaces.space8 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space8, flexShrink: 0, height: e.spaces.space16, width: e.spaces.space16 }, centeredRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, veritcalPadding: { paddingVertical: e.spaces.space16 } })),
+                W = (e) => {
                     const { history: t } = e,
-                        n = (0, H.jh)(),
-                        r = a.useCallback(() => a.createElement(m.Z, { style: n.root, withWideContainer: !0 }, a.createElement(f.H, { errorConfig: F }, a.createElement(I.Z, null), a.createElement(f.H, { errorConfig: F }, a.createElement($, e)))), [n.root, e]),
+                        n = (0, z.jh)(),
+                        r = a.useCallback(() => a.createElement(m.Z, { style: n.root, withWideContainer: !0 }, a.createElement(f.H, { errorConfig: U }, a.createElement(q.Z, null), a.createElement(f.H, { errorConfig: U }, a.createElement(F, e)))), [n.root, e]),
                         o = a.useCallback(() => t.goBack(), [t]);
-                    return a.createElement(C.nO, { namespace: N }, a.createElement(E.Z, { documentTitle: M, history: t, isFullWidth: !0, onBackClick: o, primaryContent: r(), rightControl: a.createElement(S.Z, null), sidebarContent: null, title: M }));
+                    return a.createElement(C.nO, { namespace: M }, a.createElement(E.Z, { documentTitle: L, history: t, isFullWidth: !0, onBackClick: o, primaryContent: r(), rightControl: a.createElement(I.Z, null), sidebarContent: null, title: L }));
                 },
-                W = a.memo(j);
+                D = a.memo(W);
         },
         708186: (e, t, n) => {
             n.r(t), n.d(t, { LinkAccount: () => k, default: () => _ });
@@ -407,4 +408,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.0b51dd9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.86dbf85a.js.map

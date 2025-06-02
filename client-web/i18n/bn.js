@@ -7235,7 +7235,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "বিজ্ঞাপন-মুক্ত"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Radar-এর সাহায্যে সবার আগে প্রবণতা খুঁজে নিন।"),
                 n("fb70427a", "X-এ সবচেয়ে শক্তিশালী সার্চ টুল উপস্থাপিত হচ্ছে।"),
@@ -13310,4 +13310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.7878004a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.44eacf3a.js.map

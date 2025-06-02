@@ -31,10 +31,10 @@
                     const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: s, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: S, withWideContainer: A } = this.props,
                         { isModal: w } = this.context,
                         P = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        C = (function (e, a, o) {
+                        x = (function (e, a, o) {
                             return e && !(a && o);
                         })(!!S, w, !!m);
-                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: P, middleControl: h, position: u(D, w, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: C, withWideContainer: A }), m || null);
+                    return d.createElement(d.Fragment, null, d.createElement(i.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: s, leftControl: P, middleControl: h, position: u(D, w, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: x, withWideContainer: A }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -217,20 +217,24 @@
                 y = (0, h.p)(
                     () =>
                         Promise.all([
-                            o.e("icons.8"),
-                            o.e("icons.15"),
-                            o.e("icons.7"),
-                            o.e("icons.3"),
-                            o.e("icons.24"),
-                            o.e("icons.12"),
-                            o.e("icons.22"),
-                            o.e("icons.2"),
-                            o.e("icons.18"),
+                            o.e("icons.21"),
+                            o.e("icons.16"),
+                            o.e("icons.10"),
                             o.e("icons.1"),
-                            o.e("icons.6"),
+                            o.e("icons.19"),
+                            o.e("icons.0"),
+                            o.e("icons.23"),
+                            o.e("icons.8"),
+                            o.e("icons.2"),
+                            o.e("icons.3"),
+                            o.e("icons.15"),
+                            o.e("icons.4"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.14"),
+                            o.e("icons.9"),
+                            o.e("icons.7"),
+                            o.e("icons.28"),
+                            o.e("icons.26"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -241,11 +245,9 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.21"),
-                            o.e("icons.16"),
-                            o.e("icons.28"),
-                            o.e("icons.17"),
-                            o.e("icons.4"),
+                            o.e("icons.18"),
+                            o.e("icons.29"),
+                            o.e("icons.27"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -292,31 +294,35 @@
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
                             o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
-                            o.e("shared~bundle.UserLists~ondemand.HoverCard"),
-                            o.e("shared~bundle.HomeTimeline~bundle.UserLists"),
-                            o.e("bundle.UserLists-6107ac1a"),
+                            o.e("bundle.UserLists-bc6ccf4c"),
+                            o.e("bundle.UserLists-2a1252f0"),
                             o.e("bundle.UserLists-e019dbda"),
                             o.e("bundle.UserLists-63cb1cc4"),
+                            o.e("bundle.UserLists-6df79b50"),
                         ]).then(o.bind(o, 696705)),
                     { shouldMigrateToX: !1 },
                 ),
                 g = (0, h.p)(
                     () =>
                         Promise.all([
-                            o.e("icons.8"),
-                            o.e("icons.15"),
-                            o.e("icons.7"),
-                            o.e("icons.3"),
-                            o.e("icons.24"),
-                            o.e("icons.12"),
-                            o.e("icons.22"),
-                            o.e("icons.2"),
-                            o.e("icons.18"),
+                            o.e("icons.21"),
+                            o.e("icons.16"),
+                            o.e("icons.10"),
                             o.e("icons.1"),
-                            o.e("icons.6"),
+                            o.e("icons.19"),
+                            o.e("icons.0"),
+                            o.e("icons.23"),
+                            o.e("icons.8"),
+                            o.e("icons.2"),
+                            o.e("icons.3"),
+                            o.e("icons.15"),
+                            o.e("icons.4"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.14"),
+                            o.e("icons.9"),
+                            o.e("icons.7"),
+                            o.e("icons.28"),
+                            o.e("icons.26"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -327,11 +333,9 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.21"),
-                            o.e("icons.16"),
-                            o.e("icons.28"),
-                            o.e("icons.17"),
-                            o.e("icons.4"),
+                            o.e("icons.18"),
+                            o.e("icons.29"),
+                            o.e("icons.27"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -378,11 +382,11 @@
                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             o.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview"),
                             o.e("shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists"),
-                            o.e("shared~bundle.UserLists~ondemand.HoverCard"),
-                            o.e("shared~bundle.HomeTimeline~bundle.UserLists"),
-                            o.e("bundle.UserLists-6107ac1a"),
+                            o.e("bundle.UserLists-bc6ccf4c"),
+                            o.e("bundle.UserLists-2a1252f0"),
                             o.e("bundle.UserLists-e019dbda"),
                             o.e("bundle.UserLists-63cb1cc4"),
+                            o.e("bundle.UserLists-6df79b50"),
                         ]).then(o.bind(o, 582313)),
                     { shouldMigrateToX: !1 },
                 ),
@@ -475,11 +479,11 @@
                 render() {
                     const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: k, style: A, to: w } = this.props,
                         { location: P } = this.state,
-                        C = w ? this._getMemoizedLink(w, k) : void 0,
-                        x = s ? s(w) : P?.pathname === C?.pathname,
+                        x = w ? this._getMemoizedLink(w, k) : void 0,
+                        C = s ? s(w) : P?.pathname === x?.pathname,
                         v = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
-                        I = m ? "medium" : x ? "bold" : "medium";
-                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": x, focusable: !!x, interactiveStyles: v, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && x ? [S.pillActiveStyle] : []), c ? (u ? S.compactPill : S.compactLink) : null, h ? S.roundedRect : null, A], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && S.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(x, s, m, u) }, c && S.compactText, m && a && S.focusedText, u && S.pillTextStyle, u && x && S.pillActiveTextStyle, u && s && S.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: S.icon }), l, m || u ? null : r.createElement(i.Z, { style: x && [S.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
+                        I = m ? "medium" : C ? "bold" : "medium";
+                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": C, focusable: !!C, interactiveStyles: v, link: x, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && C ? [S.pillActiveStyle] : []), c ? (u ? S.compactPill : S.compactLink) : null, h ? S.roundedRect : null, A], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: s }) => r.createElement(i.Z, { style: u && S.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(C, s, m, u) }, c && S.compactText, m && a && S.focusedText, u && S.pillTextStyle, u && C && S.pillActiveTextStyle, u && s && S.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: S.icon }), l, m || u ? null : r.createElement(i.Z, { style: C && [S.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = m.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -528,4 +532,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.c8c0931a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.561dd01a.js.map

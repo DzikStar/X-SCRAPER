@@ -3891,7 +3891,7 @@
                 n("c371fb9a", "סוף"),
                 n("c0ce822e", "הגדרות המיקרופון"),
                 n("a2bf8b8a", "עבור להאזנה"),
-                n("caa8d928", "מעבר למצב בשתקת רעשים"),
+                n("caa8d928", "מעבר למצב השתקת רעשים"),
                 n("b5d88f0c", "עובדים בלבד"),
                 n("c855ab8e", "למנויים בלבד"),
                 n("ddeb0a3c", "זאת הקהילה. האנשים מוצאים חן בעיניך? בוא לראות.");
@@ -7244,7 +7244,7 @@
                 n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 n("ae3f3b0e", "Enjoy!"),
                 n("cdac8dc4", "See your new feed"),
-                n("dec99336", "Ad-free"),
+                n("dec99336", "ללא מודעות"),
                 n("i95803fa", "Unfortunately, you are not eligible at this time."),
                 n("d28a1d72", "Radar יאפשר לך להיות הראשון שמזהה נושאים חמים"),
                 n("fb70427a", "אנחנו גאים להציג את כלי החיפוש העוצמתי ביותר ב-X."),
@@ -13308,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.8aa9aada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.c50dbdaa.js.map

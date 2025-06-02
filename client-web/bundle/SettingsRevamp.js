@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsRevamp", "icons/IconHeartBrokenStroke-js", "icons/IconKeyStroke-js"],
+    ["bundle.SettingsRevamp", "icons/IconDeviceNotification-js", "icons/IconFilter-js"],
     {
         129270: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -275,8 +275,8 @@
                 _ = n(593866),
                 Z = n(138099),
                 w = n(786998),
-                P = n(370006),
-                C = n(520913),
+                C = n(370006),
+                P = n(520913),
                 S = n(323265),
                 k = n(668214);
             const v = (0, k.Z)().withAnalytics();
@@ -338,7 +338,7 @@
                         });
                 }
                 render() {
-                    return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: this.props.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(C.default, { style: A.headerIcon }), leftControl: a.createElement(P.Z, { backButtonType: "close", onClick: this.props.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, this._renderHeader(), this._renderContent()), this._renderFooter()));
+                    return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: this.props.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(P.default, { style: A.headerIcon }), leftControl: a.createElement(C.Z, { backButtonType: "close", onClick: this.props.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, this._renderHeader(), this._renderContent()), this._renderFooter()));
                 }
             }
             const $ = v(G),
@@ -367,7 +367,7 @@
                 return a.createElement(r.Z, { style: A.footer }, a.createElement(E.ZP, { backgroundColor: "teal600", color: "white", onClick: e, size: "xLarge" }, j));
             }
             const X = function (e) {
-                return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: e.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(C.default, { style: A.headerIcon }), leftControl: a.createElement(P.Z, { backButtonType: "close", onClick: e.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, a.createElement(K, null), a.createElement(Q, null)), a.createElement(J, { onConfirm: e.onConfirm })));
+                return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: e.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(P.default, { style: A.headerIcon }), leftControl: a.createElement(C.Z, { backButtonType: "close", onClick: e.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, a.createElement(K, null), a.createElement(Q, null)), a.createElement(J, { onConfirm: e.onConfirm })));
             };
             var ee = n(609848),
                 te = n(264922),
@@ -401,8 +401,8 @@
                 _e = c().d1f6d336,
                 Ze = c().a3841918,
                 we = c().f70cd5ee,
-                Pe = c().ib6f1694,
-                Ce = c().a8d0108e,
+                Ce = c().ib6f1694,
+                Pe = c().a8d0108e,
                 Se = c().de323650,
                 ke = c().b6ab31be,
                 ve = c().c21037d0,
@@ -451,10 +451,10 @@
                                 m ? a.createElement(i.Z, { description: s, label: Ze, link: "/settings/email" }) : null,
                                 m ? this._renderVerified() : null,
                                 m ? a.createElement(i.Z, { description: m.protected ? xe : Re, label: Ve, link: "/settings/audience_and_tagging" }) : null,
-                                m ? a.createElement(r.Z, { style: [ge.infoItem, ge.bottomBorder], testID: "account-creation" }, a.createElement(o.ZP, null, Pe), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, ye(new Date(m.created_at))), u.creation_ip && u.country ? a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, `${u.creation_ip} (${u.country})`) : null) : null,
+                                m ? a.createElement(r.Z, { style: [ge.infoItem, ge.bottomBorder], testID: "account-creation" }, a.createElement(o.ZP, null, Ce), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, ye(new Date(m.created_at))), u.creation_ip && u.country ? a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, `${u.creation_ip} (${u.country})`) : null) : null,
                                 m ? a.createElement(i.Z, { description: n, label: ve, link: "/settings/country" }) : null,
                                 a.createElement(i.Z, { description: f, label: He, link: "/settings/languages" }),
-                                a.createElement(i.Z, { description: this._renderGender(l.value), label: Ce, link: "/settings/your_twitter_data/gender" }),
+                                a.createElement(i.Z, { description: this._renderGender(l.value), label: Pe, link: "/settings/your_twitter_data/gender" }),
                                 m ? a.createElement(i.Z, { description: a.createElement(a.Fragment, null, a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, g), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, t ? ze : Ue)), label: Me, link: "/settings/profile" }) : null,
                                 a.createElement(i.Z, { description: b, label: Be, link: "/settings/your_twitter_data/age" }),
                                 m ? this._renderAutomation() : null,
@@ -561,11 +561,11 @@
                 _ = n(264922),
                 Z = n(569291),
                 w = n(71620),
-                P = n(668214),
-                C = n(601576);
-            const S = (0, P.Z)()
+                C = n(668214),
+                P = n(601576);
+            const S = (0, C.Z)()
                 .propsFromState(() => ({ fetchStatus: E.UD, downloads: E.NK, isUserDataUnavailable: E.c }))
-                .propsFromActions(() => ({ addToast: C.fz, createDataDownload: E.fm, createLocalApiErrorHandler: (0, w.zr)("DOWNLOAD_YOUR_DATA"), fetchDownloads: E._d }))
+                .propsFromActions(() => ({ addToast: P.fz, createDataDownload: E.fm, createLocalApiErrorHandler: (0, w.zr)("DOWNLOAD_YOUR_DATA"), fetchDownloads: E._d }))
                 .withAnalytics({ page: "settings", section: "account", component: "download_your_data" });
             const k = n(392237).default.create((e) => ({ description: { flexShrink: 1 }, helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, errorText: { marginEnd: e.spaces.space20 }, floatingLink: { paddingStart: e.spaces.space20 }, labelContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", width: "100%" }, narrowButton: { alignSelf: "center", marginStart: e.spaces.space12, paddingStart: e.spaces.space20 }, narrowButtonRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, noShrink: { flexShrink: 0 } })),
                 v = "/settings/your_twitter_data/data",
@@ -624,11 +624,11 @@
                 };
             function te(e) {
                 const { viewerUserId: t } = a.useContext(g.rC),
-                    { addToast: n, analytics: o, createDataDownload: l, createLocalApiErrorHandler: p, downloads: h, fetchDownloads: w, fetchStatus: P, isUserDataUnavailable: C, location: S } = e,
+                    { addToast: n, analytics: o, createDataDownload: l, createLocalApiErrorHandler: p, downloads: h, fetchDownloads: w, fetchStatus: C, isUserDataUnavailable: P, location: S } = e,
                     D = !!t,
                     M = !D,
-                    U = C,
-                    z = !C && D;
+                    U = P,
+                    z = !P && D;
                 function B() {
                     o.scribe({ element: "request_button", action: "click" }),
                         l()
@@ -648,7 +648,7 @@
                             z
                                 ? a.createElement(Z.Z, {
                                       fetch: () => w(),
-                                      fetchStatus: P,
+                                      fetchStatus: C,
                                       renderChildren: () =>
                                           a.createElement(
                                               a.Fragment,
@@ -707,8 +707,8 @@
                 _ = s().idca4742,
                 Z = s().b6ded35e,
                 w = s().ab1f7ee0,
-                P = s().f56af9cc,
-                C = s().cce24bf4,
+                C = s().f56af9cc,
+                P = s().cce24bf4,
                 S = s().hfb92b14,
                 k = s().i203df96,
                 v = { page: "settings", section: "account" },
@@ -717,7 +717,7 @@
                         () => [
                             { description: _, label: E, link: "/settings/your_twitter_data/account", Icon: l.default },
                             { description: Z, label: w, link: "/settings/password", Icon: c.default },
-                            { description: C, label: P, link: "/settings/download_your_data", Icon: d.default },
+                            { description: P, label: C, link: "/settings/download_your_data", Icon: d.default },
                             { description: k, label: S, link: "/settings/deactivate", Icon: u.default },
                         ],
                         [],
@@ -765,8 +765,8 @@
                 _ = n(293115),
                 Z = n(125363),
                 w = n(919022),
-                P = n(264922),
-                C = {
+                C = n(264922),
+                P = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "parodyProfileLabel" }]),
                         kind: "Fragment",
@@ -797,8 +797,8 @@
                     operation: { argumentDefinitions: a, kind: "Operation", name: "AccountParodyScreenImplV2ParodyLabelMutation", selections: [{ alias: null, args: r, concreteType: null, kind: "LinkedField", name: "update_parody_label", plural: !1, selections: [o, { kind: "InlineFragment", selections: [i], type: "PCFLabelUpdateError", abstractKey: null }, { kind: "InlineFragment", selections: [s], type: "PCFLabelSettings", abstractKey: null }], storageKey: null }] },
                     params: { id: "73OvlPaHKjWcU21X1w9SKA", metadata: {}, name: "AccountParodyScreenImplV2ParodyLabelMutation", operationKind: "mutation", text: null },
                 };
-            C.hash = "808e0b00a04d3c0255492c2f267b77e2";
-            const S = C;
+            P.hash = "808e0b00a04d3c0255492c2f267b77e2";
+            const S = P;
             var k = (function () {
                 var e = [
                     {
@@ -883,7 +883,7 @@
                         f.Z,
                         null,
                         l.createElement(
-                            P.Z,
+                            C.Z,
                             { title: T },
                             l.createElement(u.Z, { description: O, learnMoreLabel: V, learnMoreLink: N }),
                             l.createElement(I.Z, {
@@ -959,7 +959,7 @@
                         f.Z,
                         null,
                         l.createElement(
-                            P.Z,
+                            C.Z,
                             { title: te },
                             l.createElement(u.Z, { description: ne }),
                             l.createElement(m.Z, {
@@ -985,7 +985,7 @@
             }
         },
         780709: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => C });
+            n.r(t), n.d(t, { default: () => P });
             var a = n(807896),
                 r = n(202784),
                 o = n(325686),
@@ -1006,11 +1006,11 @@
                 _ = l().bcd81cac,
                 Z = l().da867c58,
                 w = { page: "settings", section: "notification" },
-                P = [
+                C = [
                     { description: E, label: y, link: "/settings/notifications/filters", Icon: c.default, testID: "testIconFilter" },
                     { description: Z, label: _, link: "/settings/notifications/preferences", Icon: d.default, testID: "testIconDeviceNotification" },
                 ],
-                C = ({ location: e }) =>
+                P = ({ location: e }) =>
                     r.createElement(
                         p.nO,
                         { namespace: w },
@@ -1024,7 +1024,7 @@
                                     o.Z,
                                     { testID: b },
                                     r.createElement(i.Z, { description: f }),
-                                    P.map((e) => r.createElement(u.H, (0, a.Z)({}, e, { key: e.link }))),
+                                    C.map((e) => r.createElement(u.H, (0, a.Z)({}, e, { key: e.link }))),
                                 ),
                             ),
                         ),
@@ -1052,10 +1052,10 @@
                 _ = n(267966),
                 Z = n(71620),
                 w = n(668214),
-                P = n(673110);
-            const C = (0, w.Z)()
-                    .propsFromState(() => ({ verifyPasswordFetchStatus: P.UD }))
-                    .propsFromActions(() => ({ verifyPassword: P.Gv, createLocalApiErrorHandler: (0, Z.zr)("PASSWORD_GATEWAY") })),
+                C = n(673110);
+            const P = (0, w.Z)()
+                    .propsFromState(() => ({ verifyPasswordFetchStatus: C.UD }))
+                    .propsFromActions(() => ({ verifyPassword: C.Gv, createLocalApiErrorHandler: (0, Z.zr)("PASSWORD_GATEWAY") })),
                 S = p().fe36fe10,
                 k = p().dec3c9b8,
                 v = p().hccd9dbe,
@@ -1120,7 +1120,7 @@
             }
             (x.contextType = g.rC), (x.defaultProps = { titleHeader: S });
             const L = u.default.create((e) => ({ buttonContainer: { flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingBottom: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal } })),
-                F = C(x),
+                F = P(x),
                 N = (0, f.ZP)(F);
         },
         569291: (e, t, n) => {
@@ -1264,7 +1264,7 @@
             n.d(t, { Z: () => a });
             const a = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        247520: (e, t, n) => {
+        744649: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var a = n(202784),
                 r = n(890601),
@@ -1272,12 +1272,12 @@
                 i = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M21.398 6.52c-.887-1.79-2.647-2.91-4.601-3.01-1.65-.09-3.367.56-4.796 2.01-1.43-1.45-3.147-2.1-4.798-2.01-1.954.1-3.714 1.22-4.601 3.01-.896 1.81-.846 4.17.514 6.67 1.353 2.48 4.003 5.12 8.382 7.67l.504.3.503-.3c4.378-2.55 7.028-5.19 8.379-7.67 1.36-2.5 1.41-4.86.514-6.67zm-2.27 5.71c-1.074 1.97-3.256 4.27-7.126 6.61-3.872-2.34-6.055-4.64-7.129-6.61-1.112-2.04-1.031-3.7-.479-4.82.561-1.13 1.667-1.84 2.91-1.91 1.077-.05 2.338.38 3.452 1.61L8.588 10.3l4.009 2.5-1.428 2.15 1.665 1.1 2.569-3.85-3.991-2.5 1.405-2.06c1.21-1.63 2.662-2.2 3.88-2.14 1.242.07 2.347.78 2.908 1.91.553 1.12.634 2.78-.477 4.82z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M7 17h6v2H7v-2zm7.5-15C15.88 2 17 3.12 17 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-9C4.12 22 3 20.88 3 19.5v-15C3 3.12 4.12 2 5.5 2h9zM5 19.5c0 .28.22.5.5.5h9c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-9c-.28 0-.5.22-.5.5v15zm15.74-3.49l1.64 1.15C23.4 15.7 24 13.92 24 12s-.6-3.7-1.62-5.16l-1.64 1.15C21.53 9.13 22 10.51 22 12s-.47 2.87-1.26 4.01zm-.82-7.45l-1.64 1.15c.45.65.72 1.43.72 2.29 0 .85-.27 1.64-.72 2.29l1.64 1.15C20.6 14.47 21 13.28 21 12s-.4-2.47-1.08-3.44z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        581543: (e, t, n) => {
+        517747: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var a = n(202784),
                 r = n(890601),
@@ -1285,7 +1285,7 @@
                 i = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13 9.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5zm9.14 1.77l-5.83 5.84-4-1L6.41 22H2v-4.41l5.89-5.9-1-4 5.84-5.83 7.06 2.35 2.35 7.06zm-12.03 1.04L4 18.41V20h1.59l6.1-6.11 4 1 4.17-4.16-1.65-4.94-4.94-1.65-4.16 4.17 1 4z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -1309,4 +1309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.fc3aa91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.420764aa.js.map

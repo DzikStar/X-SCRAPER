@@ -5043,7 +5043,7 @@
                 s("jb74aea4", "Cada conta afiliada adicional custa $50 por usuário por mês, e os créditos de anúncio estão sujeitos a limitações."),
                 s("fc9fc856", "Cada conta afiliada adicional custa $600 por usuário por ano, e os créditos de anúncio estão sujeitos a limitações."),
                 s("fc785aec", "Obtenha o Basic"),
-                s("edf32072", "Tudo no Premium+ mais::"),
+                s("edf32072", "Tudo no Premium+ mais:"),
                 s("b3caf146", "Selo Verificado Gold"),
                 s("a1dbf70c", "$ 200 em crédito de anúncio mensal grátis"),
                 s("i2a2286c", "$ 2.500 em crédito de anúncio grátis"),
@@ -7235,7 +7235,7 @@
                 s("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 s("ae3f3b0e", "Enjoy!"),
                 s("cdac8dc4", "See your new feed"),
-                s("dec99336", "Ad-free"),
+                s("dec99336", "Sem anúncios"),
                 s("i95803fa", "Unfortunately, you are not eligible at this time."),
                 s("d28a1d72", "Seja o primeiro a identificar tendências com o Radar"),
                 s("fb70427a", "Apresentando a ferramenta de busca mais poderosa no X."),
@@ -13295,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.c0f43b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.19d8cf8a.js.map

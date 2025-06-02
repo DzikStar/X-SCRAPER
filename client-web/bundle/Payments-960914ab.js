@@ -222,9 +222,9 @@
                     },
                     kind: "Request",
                     operation: { argumentDefinitions: [], kind: "Operation", name: "CustomerTasksCarouselQuery", selections: i },
-                    params: { id: "aNk36yz17Xk-ogDezouazg", metadata: {}, name: "CustomerTasksCarouselQuery", operationKind: "query", text: null },
+                    params: { id: "AqIlghbXAQbZewoYkhA0_g", metadata: {}, name: "CustomerTasksCarouselQuery", operationKind: "query", text: null },
                 };
-            s.hash = "7af9b307c49bf62ee02b9b40e86e439b";
+            s.hash = "8cfc0ef9bc36e9684604e6727c2e49cc";
             const r = s;
         },
         882956: (e, l, a) => {
@@ -742,6 +742,7 @@
                                                     ],
                                                     storageKey: null,
                                                 },
+                                                { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "merchant_results", plural: !1, selections: c, storageKey: null },
                                             ],
                                             storageKey: null,
                                         }),
@@ -760,7 +761,7 @@
                     type: "XPaymentsTransaction",
                     abstractKey: null,
                 };
-            y.hash = "6ac2de273213f162162c8c411f3eb4b1";
+            y.hash = "29bfe64d5b13e41d1f71ae1e5c805c66";
             const k = y;
         },
         860648: (e, l, a) => {
@@ -812,4 +813,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.6068ed5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.a240d46a.js.map

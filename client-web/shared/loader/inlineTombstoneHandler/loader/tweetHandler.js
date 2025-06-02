@@ -14,26 +14,26 @@
                 c = o(725516),
                 h = o(111677),
                 u = o.n(h);
-            const p = o.p + "MarchMadnessBannerDark.42aa2dea.png",
-                m = o.p + "MarchMadnessBannerLight.02bf82ca.png",
-                b = { header: u().d231a76a, description: u().heaba5d8, legalDisclaimer: u().i57d3ea0, buttonText: u().a0440af6, image: { darkMode: p, lightMode: m } },
+            const m = o.p + "MarchMadnessBannerDark.42aa2dea.png",
+                p = o.p + "MarchMadnessBannerLight.02bf82ca.png",
+                b = { header: u().d231a76a, description: u().heaba5d8, legalDisclaimer: u().i57d3ea0, buttonText: u().a0440af6, image: { darkMode: m, lightMode: p } },
                 _ = Object.freeze({ MarchMadness: "MarchMadness" }),
                 w = ({ buttonOnSameLine: e, link: t, occasion: o, styleOverrides: h, withBackgroundImage: u }) => {
-                    const p = (0, c.z)(),
-                        m = _[o] || "Occasion",
-                        w = u ? `${m}WithBackgroundImage` : m;
+                    const m = (0, c.z)(),
+                        p = _[o] || "Occasion",
+                        w = u ? `${p}WithBackgroundImage` : p;
                     n.useEffect(() => {
-                        p.scribe({ component: w, action: "impression" });
-                    }, [p, w]);
+                        m.scribe({ component: w, action: "impression" });
+                    }, [m, w]);
                     const D = () => {
-                            p.scribe({ component: w, action: "click", element: "card" });
+                            m.scribe({ component: w, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: g, cardWidth: M, marginbottom: k, textcolor: y } = h ?? {},
-                        A = f ? r.default.theme.colors[f] : r.default.theme.colors.gray0,
+                        { backgroundcolor: g, buttonSize: f, cardWidth: M, marginbottom: k, textcolor: y } = h ?? {},
+                        A = g ? r.default.theme.colors[g] : r.default.theme.colors.gray0,
                         I = y ? r.default.theme.colors[y] : r.default.theme.colors.gray900,
-                        T = k ? r.default.theme.spaces[k] : r.default.theme.spaces.space16,
-                        v = { [_.MarchMadness]: { header: b.header, description: b.description, legalDisclaimer: b.legalDisclaimer, buttonText: b.buttonText, image: b.image } }[o];
-                    return u ? n.createElement(a.Z, { interactiveStyles: null, link: t, onPress: D, style: C.bannerContainer }, n.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === r.default.theme.paletteName ? v.image.lightMode : v.image.darkMode }, style: { height: 85 } })) : n.createElement(i.Z, { style: [C.card, { backgroundColor: A }, { maxWidth: M }, { marginBottom: T }], testID: "popupCard" }, n.createElement(i.Z, { style: e ? C.horizontalContent : C.verticalContent }, n.createElement(i.Z, { style: e ? C.textContainer : null }, n.createElement(d.ZP, { size: "headline2", style: [C.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, v.header), n.createElement(d.ZP, { size: "subtext1", style: [C.popupDescription, { color: I }] }, v.description, " ", e ? null : v.legalDisclaimer)), n.createElement(i.Z, { style: C.buttonContainer }, n.createElement(l.ZP, { backgroundColor: "light" === r.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: D, size: "medium", style: [C.popupButton, { width: g }] }, v.buttonText), e && n.createElement(d.ZP, { size: "subtext3", style: [C.legalDisclaimer, { color: I }] }, v.legalDisclaimer))));
+                        v = k ? r.default.theme.spaces[k] : r.default.theme.spaces.space16,
+                        T = { [_.MarchMadness]: { header: b.header, description: b.description, legalDisclaimer: b.legalDisclaimer, buttonText: b.buttonText, image: b.image } }[o];
+                    return u ? n.createElement(a.Z, { interactiveStyles: null, link: t, onPress: D, style: C.bannerContainer }, n.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === r.default.theme.paletteName ? T.image.lightMode : T.image.darkMode }, style: { height: 85 } })) : n.createElement(i.Z, { style: [C.card, { backgroundColor: A }, { maxWidth: M }, { marginBottom: v }], testID: "popupCard" }, n.createElement(i.Z, { style: e ? C.horizontalContent : C.verticalContent }, n.createElement(i.Z, { style: e ? C.textContainer : null }, n.createElement(d.ZP, { size: "headline2", style: [C.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, T.header), n.createElement(d.ZP, { size: "subtext1", style: [C.popupDescription, { color: I }] }, T.description, " ", e ? null : T.legalDisclaimer)), n.createElement(i.Z, { style: C.buttonContainer }, n.createElement(l.ZP, { backgroundColor: "light" === r.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: D, size: "medium", style: [C.popupButton, { width: f }] }, T.buttonText), e && n.createElement(d.ZP, { size: "subtext3", style: [C.legalDisclaimer, { color: I }] }, T.legalDisclaimer))));
                 },
                 C = r.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -47,8 +47,8 @@
             const d = a.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
                 l = ({ children: e, component: t, fab: o, shouldRenderFab: a = !0, style: l, withoutBottomPadding: c, ...h }) => {
                     const u = t || r.Z,
-                        p = a && !(0, s.ZP)();
-                    return i.createElement(u, (0, n.Z)({}, h, { style: [p && !c && d.root, l] }), e, p ? o : null);
+                        m = a && !(0, s.ZP)();
+                    return i.createElement(u, (0, n.Z)({}, h, { style: [m && !c && d.root, l] }), e, m ? o : null);
                 };
         },
         387524: (e, t, o) => {
@@ -63,20 +63,20 @@
                 c = o(392027),
                 h = o(774654),
                 u = o(725516),
-                p = o(443781);
-            const m = d.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${d.default.iPhoneOffsetBottom} - ${h.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
+                m = o(443781);
+            const p = d.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${d.default.iPhoneOffsetBottom} - ${h.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 b = (e) => {
                     const { "aria-label": t, label: o, onPress: b, scribeComponent: _, ...w } = e,
-                        { loggedInUserId: C } = i.useContext(p.rC),
+                        { loggedInUserId: C } = i.useContext(m.rC),
                         D = (0, u.z)(),
-                        f = i.useCallback(
+                        g = i.useCallback(
                             (e) => {
                                 D.scribe({ component: _, action: "click" }), b && b(e);
                             },
                             [D, b, _],
                         ),
-                        g = h.ZM.useCollapsibleNavBars(),
-                        M = [...h.Ah({ elementPosition: "bottom" }), g && m.fabStaysAboveSafeArea];
+                        f = h.ZM.useCollapsibleNavBars(),
+                        M = [...h.Ah({ elementPosition: "bottom" }), f && p.fabStaysAboveSafeArea];
                     return C
                         ? i.createElement(
                               a.Z.FloatingAction,
@@ -85,12 +85,12 @@
                                   const a = e > d.default.theme.breakpoints.large,
                                       s = e > d.default.theme.breakpoints.medium,
                                       h = e < d.default.theme.breakpoints.micro,
-                                      u = [m.root, s && m.rootMedium, a && m.rootLarge],
-                                      p = [m.fab, a && m.fabLarge, h && m.fabMicro, M];
+                                      u = [p.root, s && p.rootMedium, a && p.rootLarge],
+                                      m = [p.fab, a && p.fabLarge, h && p.fabMicro, M];
                                   return i.createElement(
                                       r.Z,
                                       { "aria-label": t, pointerEvents: "box-none", role: "complementary", style: u },
-                                      i.createElement(l.Z, { id: "FloatingActionButtonBase" }, (e, s) => i.createElement(r.Z, (0, n.Z)({ ref: e() }, s({ style: p })), i.createElement(c.Z, (0, n.Z)({}, w, { "aria-label": t, label: a ? o : void 0, onPress: f, style: h && m.buttonMicro })))),
+                                      i.createElement(l.Z, { id: "FloatingActionButtonBase" }, (e, s) => i.createElement(r.Z, (0, n.Z)({ ref: e() }, s({ style: m })), i.createElement(c.Z, (0, n.Z)({}, w, { "aria-label": t, label: a ? o : void 0, onPress: g, style: h && p.buttonMicro })))),
                                   );
                               }),
                           )
@@ -137,33 +137,33 @@
                 c = o(111677),
                 h = o.n(c),
                 u = o(912021),
-                p = o(908478),
-                m = o(803810),
+                m = o(908478),
+                p = o(803810),
                 b = o(789831),
                 _ = o(933794),
                 w = o(808692),
                 C = o(622200),
                 D = o(459284),
-                f = o(376293),
-                g = o(655352),
+                g = o(376293),
+                f = o(655352),
                 M = o(270130),
                 k = o(663550),
                 y = o(293115),
                 A = o(395067),
                 I = o(831757),
-                T = o(942893),
-                v = o(801501),
+                v = o(942893),
+                T = o(801501),
                 S = o(214647),
                 P = o(725516),
                 x = o(500002),
                 E = o(886404),
-                R = o(443781),
-                Z = o(194661),
+                Z = o(443781),
+                R = o(194661),
                 B = o(355883);
             const U = h().j0179e90,
                 L = h().ee69d769({ verb: "" }),
                 N = ({ getLocationState: e, history: t }) => i.createElement(B.Z, { "aria-label": U, getLocationState: e, history: t, icon: F, label: L, scribeComponent: "floating_compose_button" }),
-                F = i.createElement(Z.default, null);
+                F = i.createElement(R.default, null);
             var O = o(231214),
                 H = o(177371),
                 W = o(533128),
@@ -172,22 +172,25 @@
             const K = (0, z.Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.8"),
-                        o.e("icons.15"),
-                        o.e("icons.7"),
-                        o.e("icons.3"),
-                        o.e("icons.24"),
-                        o.e("icons.12"),
-                        o.e("icons.22"),
-                        o.e("icons.2"),
-                        o.e("icons.18"),
-                        o.e("icons.9"),
+                        o.e("icons.21"),
+                        o.e("icons.16"),
+                        o.e("icons.10"),
                         o.e("icons.1"),
-                        o.e("icons.6"),
+                        o.e("icons.19"),
+                        o.e("icons.0"),
+                        o.e("icons.23"),
+                        o.e("icons.8"),
+                        o.e("icons.2"),
+                        o.e("icons.3"),
+                        o.e("icons.15"),
+                        o.e("icons.4"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.14"),
-                        o.e("icons.5"),
+                        o.e("icons.9"),
+                        o.e("icons.7"),
+                        o.e("icons.28"),
+                        o.e("icons.26"),
+                        o.e("icons.24"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -198,14 +201,11 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.21"),
-                        o.e("icons.16"),
-                        o.e("icons.28"),
-                        o.e("icons.17"),
+                        o.e("icons.18"),
+                        o.e("icons.13"),
+                        o.e("icons.29"),
                         o.e("icons.27"),
-                        o.e("icons.19"),
-                        o.e("icons.0"),
-                        o.e("icons.4"),
+                        o.e("icons.25"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -281,8 +281,8 @@
                 renderPlaceholder: (e, t) => i.createElement(q.Z, { hasError: e, onRetry: t }),
             });
             var $ = o(352975),
-                Q = o(383494),
-                V = o(966582),
+                V = o(383494),
+                Q = o(966582),
                 G = o(71620),
                 j = o(870358),
                 J = o(163889),
@@ -301,14 +301,14 @@
                 ce = o(466380),
                 he = o(251441),
                 ue = o(836255),
-                pe = o(919022);
-            const me = (e, t) => (0, ne.MW)(e, t.tweetId),
+                me = o(919022);
+            const pe = (e, t) => (0, ne.MW)(e, t.tweetId),
                 be = (e, t) => t.tweetId,
                 _e = (e, t) => t.contextTweetId,
                 we = (e, t) => {
                     const { promotedContent: o, tweetId: n } = t;
-                    if (o && o.advertiser) return pe.ZP.select(e, o.advertiser.id_str);
-                    if (o && V.Z.isPromoted(o)) {
+                    if (o && o.advertiser) return me.ZP.select(e, o.advertiser.id_str);
+                    if (o && Q.Z.isPromoted(o)) {
                         const { advertiser_name: e } = o;
                         (0, J.ZP)("No advertiser info for non-URT promoted tweet", { extra: { advertiser_name: e, tweetId: n } });
                     }
@@ -318,11 +318,11 @@
                     const o = t && t.topicContext;
                     return o ? ce.Z.select(e, o.topicId) : void 0;
                 },
-                fe = (e, t) => {
+                ge = (e, t) => {
                     const o = ue.Z.createHydratedTweetSelector(be)(e, t);
                     return o?.community_id_str ? oe.ZP.select(e, o?.community_id_str) : void 0;
                 },
-                ge = (e, t) => {
+                fe = (e, t) => {
                     const o = ue.Z.createHydratedTweetSelector(be)(e, t),
                         n = o?.quoted_status,
                         i = n?.community_id_str;
@@ -331,36 +331,36 @@
                 Me = (e, t) => "PUSH" === t.history.action,
                 ke = (e, t) => he.Z.select(e, t.tweetId),
                 ye = (0, Y.Z)()
-                    .propsFromState(() => ({ articleDomains: te.cb, community: fe, contextTweet: ue.Z.createHydratedTweetSelector(_e), displaySensitiveMedia: se.f1, explicitSocialContext: Ce, isActiveCreator: ae.WM, isForwardNavigation: Me, isNsfwUser: se.EF, isPinned: me, viewerUser: pe.ZP.selectViewerUser, promotedContentAdvertiser: we, quoteTweetCommunity: ge, topic: De, tweet: ue.Z.createHydratedTweetSelector(be), userCountry: ae.GG, userLanguage: ae.VT, translation: ke }))
-                    .adjustStateProps(({ articleDomains: e, community: t, contextTweet: o, displaySensitiveMedia: n, explicitSocialContext: i, isActiveCreator: r, isForwardNavigation: a, isNsfwUser: s, isPinned: d, promotedContentAdvertiser: l, quoteTweetCommunity: c, topic: h, translation: u, tweet: p, userCountry: m, userLanguage: b, viewerUser: _ }) => {
-                        const w = o ? (0, X.D$)(o, _?.id_str, t) : p ? (0, X.D$)(p, _?.id_str, t) : void 0,
-                            C = p?.card?.binding_values?.domain?.string_value,
+                    .propsFromState(() => ({ articleDomains: te.cb, community: ge, contextTweet: ue.Z.createHydratedTweetSelector(_e), displaySensitiveMedia: se.f1, explicitSocialContext: Ce, isActiveCreator: ae.WM, isForwardNavigation: Me, isNsfwUser: se.EF, isPinned: pe, viewerUser: me.ZP.selectViewerUser, promotedContentAdvertiser: we, quoteTweetCommunity: fe, topic: De, tweet: ue.Z.createHydratedTweetSelector(be), userCountry: ae.GG, userLanguage: ae.VT, translation: ke }))
+                    .adjustStateProps(({ articleDomains: e, community: t, contextTweet: o, displaySensitiveMedia: n, explicitSocialContext: i, isActiveCreator: r, isForwardNavigation: a, isNsfwUser: s, isPinned: d, promotedContentAdvertiser: l, quoteTweetCommunity: c, topic: h, translation: u, tweet: m, userCountry: p, userLanguage: b, viewerUser: _ }) => {
+                        const w = o ? (0, X.D$)(o, _?.id_str, t) : m ? (0, X.D$)(m, _?.id_str, t) : void 0,
+                            C = m?.card?.binding_values?.domain?.string_value,
                             D = (0, te.ex)(e, C),
-                            f = p?.quoted_status,
-                            g = f ? (0, X.D$)(f, _?.id_str, c) : void 0,
-                            M = g && (0, X.rl)(g),
+                            g = m?.quoted_status,
+                            f = g ? (0, X.D$)(g, _?.id_str, c) : void 0,
+                            M = f && (0, X.rl)(f),
                             k = (0, j.uA)(t?.role),
                             y = i || w;
-                        return { community: t, contextTweet: o, displaySensitiveMedia: n, isActiveCreator: r, isCardArticle: D, isForwardNavigation: a, isNsfwUser: s, isPinned: d, viewerUser: _, promotedContentAdvertiser: l, quoteTweetSocialContextProps: M, socialContext: y, socialContextColor: (0, j.J2)(t, y), topic: h, tweet: p, userCountry: m, userLanguage: b, withCommunityModerationAuthority: k, translation: u };
+                        return { community: t, contextTweet: o, displaySensitiveMedia: n, isActiveCreator: r, isCardArticle: D, isForwardNavigation: a, isNsfwUser: s, isPinned: d, viewerUser: _, promotedContentAdvertiser: l, quoteTweetSocialContextProps: M, socialContext: y, socialContextColor: (0, j.J2)(t, y), topic: h, tweet: m, userCountry: p, userLanguage: b, withCommunityModerationAuthority: k, translation: u };
                     })
-                    .propsFromActions(() => ({ addToast: le.fz, block: pe.ZP.block, createLocalApiErrorHandler: (0, G.zr)("TWEET_DETAIL_CONTAINER"), fetchCommunityIfNeeded: oe.ZP.fetchOneIfNeeded, fetchSettings: de.wv, fetchTopicIfNeeded: ce.Z.fetchOneIfNeeded, log: ie.cM, mute: re.r, updateHeadsUp: ue.Z.updateHeadsUp, richScribeAction: ee.richScribeAction, setArticlesVisited: te.Ji, unblock: pe.ZP.unblock, undoTopicNotInterested: ce.Z.undoNotInterested, unmute: pe.ZP.unmute }));
+                    .propsFromActions(() => ({ addToast: le.fz, block: me.ZP.block, createLocalApiErrorHandler: (0, G.zr)("TWEET_DETAIL_CONTAINER"), fetchCommunityIfNeeded: oe.ZP.fetchOneIfNeeded, fetchSettings: de.wv, fetchTopicIfNeeded: ce.Z.fetchOneIfNeeded, log: ie.cM, mute: re.r, updateHeadsUp: ue.Z.updateHeadsUp, richScribeAction: ee.richScribeAction, setArticlesVisited: te.Ji, unblock: me.ZP.unblock, undoTopicNotInterested: ce.Z.undoNotInterested, unmute: me.ZP.unmute }));
             var Ae = o(688715),
                 Ie = o(834324),
-                Te = o(392237),
-                ve = o(500040),
+                ve = o(392237),
+                Te = o(500040),
                 Se = o(187669);
             const Pe = h().de21174c,
                 xe = h().haebcf52,
                 Ee = h().i859a9d4,
-                Re = (0, Ae.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
-                Ze = Te.default.create((e) => ({ callout: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space16 } })),
+                Ze = (0, Ae.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
+                Re = ve.default.create((e) => ({ callout: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space16 } })),
                 Be = () => {
                     const e = (0, P.z)();
                     return (
                         (0, Se.q)(() => {
                             e.scribe({ element: "left_conversation_banner", action: "impression" });
                         }),
-                        i.createElement(r.Z, { style: Ze.callout }, i.createElement(Ie.Z, { Icon: ve.default, action: { label: Ee, link: Re }, headline: Pe, text: xe, type: "primary" }))
+                        i.createElement(r.Z, { style: Re.callout }, i.createElement(Ie.Z, { Icon: Te.default, action: { label: Ee, link: Ze }, headline: Pe, text: xe, type: "primary" }))
                     );
                 },
                 Ue = h().f277e94a,
@@ -377,9 +377,9 @@
                         (this._isEditTweetConsumptionEnabled = () => this.context.featureSwitches.isTrue("responsive_web_edit_tweet_enabled") || this.context.featureSwitches.isTrue("subscriptions_feature_labs_1004")),
                         (this._getScribeData = (0, u.Z)((e, t, o) => {
                             const n = (function (e, t, o) {
-                                return { ...(o || {}), items: T.Z.addTweetToItems(o?.items || [], e, t) };
+                                return { ...(o || {}), items: v.Z.addTweetToItems(o?.items || [], e, t) };
                             })(e, t, o);
-                            return (this._cachedScribeData && (0, p.Z)(n, this._cachedScribeData)) || (this._cachedScribeData = n), this._cachedScribeData;
+                            return (this._cachedScribeData && (0, m.Z)(n, this._cachedScribeData)) || (this._cachedScribeData = n), this._cachedScribeData;
                         })),
                         (this._renderConversationControlsTooltip = () => {
                             const { viewerUserId: e } = this.context,
@@ -395,7 +395,7 @@
                             const { tweet: e } = this.props;
                             if (!e) return null;
                             const { user: t } = e;
-                            return (0, f.ed)({ confirmation: (0, f.LI)(t, this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled")), onClose: this._handleBlockOrUnblockConfirmClose, handleConfirm: this._handleBlockOrUnblockUserConfirm });
+                            return (0, g.ed)({ confirmation: (0, g.LI)(t, this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled")), onClose: this._handleBlockOrUnblockConfirmClose, handleConfirm: this._handleBlockOrUnblockUserConfirm });
                         }),
                         (this._fabReply = (0, u.Z)((e) => i.createElement(N, { getLocationState: this._getReplyLocationState, history: e }))),
                         (this._getInlineCalloutInfo = () => {
@@ -468,11 +468,11 @@
                                         this._scribeAction({ element: e, action: "click" });
                                     },
                                 };
-                            return (0, Q.Z)({ ...d, mute: n, unmute: a, user: s, promotedContent: i, history: o, muteAdUpsellEnabled: this._muteAdUpsellEnabled, hasPremiumPlus: this._hasPremiumPlus });
+                            return (0, V.Z)({ ...d, mute: n, unmute: a, user: s, promotedContent: i, history: o, muteAdUpsellEnabled: this._muteAdUpsellEnabled, hasPremiumPlus: this._hasPremiumPlus });
                         }),
                         (this._getRenderCurationActionMenu = (0, u.Z)(
-                            (e, t, o, n, r, s, d, l, c, h, u, p, m, b, _, w, C, f) => () =>
-                                !!p &&
+                            (e, t, o, n, r, s, d, l, c, h, u, m, p, b, _, w, C, g) => () =>
+                                !!m &&
                                 i.createElement(D.Z, {
                                     feedbackItems: e,
                                     forwardPivotDisplayType: t,
@@ -482,16 +482,16 @@
                                     isPinned: d,
                                     onDeleteTweet: () => {
                                         const { fromApp: e, usedFallback: t } = l.state || {},
-                                            o = p && a.Z.getOriginalTweet(p).isEdited;
+                                            o = m && a.Z.getOriginalTweet(m).isEdited;
                                         e && !t && !o ? n.goBack() : n.push("/");
                                     },
                                     onMenuClick: c,
                                     onTweetDismiss: h,
                                     promotedContent: u,
-                                    tweet: p,
+                                    tweet: m,
                                     userCountry: C,
-                                    userLanguage: f,
-                                    withChangeConversationControls: m,
+                                    userLanguage: g,
+                                    withChangeConversationControls: p,
                                     withChangeConversationControlsTooltip: b,
                                     withCommunityModerationAuthority: w,
                                     withHideReply: _,
@@ -504,16 +504,16 @@
                                 c = a.location.state?.overflow,
                                 h = r.contextualScribeNamespace,
                                 { items: u = [] } = r.contextualScribeData || {},
-                                p = i && l && l.quoted_status ? T.Z.getTweetItem(l, s, void 0, c, {}, !0) : l ? T.Z.getTweetItem(l, s, void 0, c, {}, !1) : void 0,
-                                b = { items: T.Z.leftMergeScribeItems(p ? [p] : [], u), ...(0, m.Z)(o ? { click_tracking_embed_details: o } : null), ...t };
+                                m = i && l && l.quoted_status ? v.Z.getTweetItem(l, s, void 0, c, {}, !0) : l ? v.Z.getTweetItem(l, s, void 0, c, {}, !1) : void 0,
+                                b = { items: v.Z.leftMergeScribeItems(m ? [m] : [], u), ...(0, p.Z)(o ? { click_tracking_embed_details: o } : null), ...t };
                             if (n && l)
                                 if (i) {
                                     if (l.quoted_status && l.quoted_status.user) {
-                                        const e = T.Z.getUserItem(l.quoted_status.user, s);
+                                        const e = v.Z.getUserItem(l.quoted_status.user, s);
                                         b.items.push(e);
                                     }
                                 } else {
-                                    const e = T.Z.getUserItem(l.user, s);
+                                    const e = v.Z.getUserItem(l.user, s);
                                     b.items.push(e);
                                 }
                             d({ ...h, ...e }, b);
@@ -543,7 +543,7 @@
                         (this._handleEntityClick = (e, t, o) => {
                             const n = k._4[t],
                                 i = I.Z[t],
-                                r = T.Z.getClickTrackingEmbedDetails(this.props.promotedContent, o);
+                                r = v.Z.getClickTrackingEmbedDetails(this.props.promotedContent, o);
                             if (n) {
                                 const t = n === k.dx.URL_CLICK && e.currentTarget instanceof window.HTMLElement ? { url: e.currentTarget.href } : void 0;
                                 this._handleAsyncPromotedEvent(n, t);
@@ -632,7 +632,7 @@
                 componentDidMount() {
                     this._handleTopicFetch(),
                         this._handleCommunityFetch(),
-                        (this._fetchUserSettingsTimer = new v.Z(18e5).interval(() => {
+                        (this._fetchUserSettingsTimer = new T.Z(18e5).interval(() => {
                             this._handleFetchUserSettings();
                         })),
                         this._fetchUserSettingsTimer.start();
@@ -665,18 +665,18 @@
                     if (n && t.location.pathname.indexOf("/intent/") > -1) return i.createElement(O.Z, { forwardPivotInfo: e, history: t, location: t.location, nudges: o, tweetId: n.id_str });
                 }
                 _renderTweetComponent() {
-                    const { analytics: e, contextTweet: t, feedbackItems: o, forwardPivotInfo: r, hasModeratedReplies: s, history: d, innerForwardPivotInfo: l, innerNudges: c, isActiveCreator: h, isNsfwUser: u, isPinned: p, location: m, nudges: b, onTweetDismiss: C, promotedContent: D, promotedContentAdvertiser: f, quoteTweetSocialContextProps: g, quotedTweetTombstoneInfo: M, readerModeAvailable: k, replyBadge: A, replyContext: I, rootTweetAuthorId: T, showReplyFilterInlineCallout: v, socialContext: S, socialContextColor: P, topic: x, topicFollowPrompt: E, translation: R, tweet: Z, userCountry: B, userLanguage: U, viewerUser: L, withActions: N, withCommunityModerationAuthority: F, withHideReply: O, withInlineMedia: H, withSocialContext: W } = this.props;
-                    if (!Z) return null;
+                    const { analytics: e, contextTweet: t, feedbackItems: o, forwardPivotInfo: r, hasModeratedReplies: s, history: d, innerForwardPivotInfo: l, innerNudges: c, isActiveCreator: h, isNsfwUser: u, isPinned: m, location: p, nudges: b, onTweetDismiss: C, promotedContent: D, promotedContentAdvertiser: g, quoteTweetSocialContextProps: f, quotedTweetTombstoneInfo: M, readerModeAvailable: k, replyBadge: A, replyContext: I, rootTweetAuthorId: v, showReplyFilterInlineCallout: T, socialContext: S, socialContextColor: P, topic: x, topicFollowPrompt: E, translation: Z, tweet: R, userCountry: B, userLanguage: U, viewerUser: L, withActions: N, withCommunityModerationAuthority: F, withHideReply: O, withInlineMedia: H, withSocialContext: W } = this.props;
+                    if (!R) return null;
                     const { viewerUserId: z } = this.context,
                         { enableKeyboardShortcuts: q } = this.state,
-                        K = a.Z.getOriginalTweet(Z),
-                        $ = { contextTweet: t, enableKeyboardShortcuts: q, forwardPivotInfo: r, hasModeratedReplies: s, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: v, innerForwardPivotInfo: l, viewerUser: L, promotedContent: D, promotedContentAdvertiser: f, quotedTweetTombstoneInfo: M, quoteTweetSocialContextProps: g, readerModeAvailable: k, socialContext: S, socialContextColor: P, topic: x, topicFollowPrompt: E, tweet: Z, replyBadge: A, replyContext: I, rootTweetAuthorId: T, withActions: N, withAltTextBadge: !0, withInlineMedia: H, withSocialContext: W, nudges: b, innerNudges: c, translation: R },
-                        Q = K.user.id_str === z,
-                        V = !K.in_reply_to_status_id_str && Q && !K.community_id_str,
+                        K = a.Z.getOriginalTweet(R),
+                        $ = { contextTweet: t, enableKeyboardShortcuts: q, forwardPivotInfo: r, hasModeratedReplies: s, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: T, innerForwardPivotInfo: l, viewerUser: L, promotedContent: D, promotedContentAdvertiser: g, quotedTweetTombstoneInfo: M, quoteTweetSocialContextProps: f, readerModeAvailable: k, socialContext: S, socialContextColor: P, topic: x, topicFollowPrompt: E, tweet: R, replyBadge: A, replyContext: I, rootTweetAuthorId: v, withActions: N, withAltTextBadge: !0, withInlineMedia: H, withSocialContext: W, nudges: b, innerNudges: c, translation: Z },
+                        V = K.user.id_str === z,
+                        Q = !K.in_reply_to_status_id_str && V && !K.community_id_str,
                         G = this._renderConversationControlsTooltip();
                     return i.createElement(
                         y.nO,
-                        { data: this._getScribeData(Z.retweeted_status || Z, D, e.contextualScribeData) },
+                        { data: this._getScribeData(R.retweeted_status || R, D, e.contextualScribeData) },
                         i.createElement(
                             _.Z,
                             { enabled: !!q, handlers: this._getShortcutKeyHandlers() },
@@ -719,7 +719,7 @@
                                     onUserFollowIndicatorClick: this._handleUserFollowIndicator,
                                     onUserFollowIndicatorDismissClick: this._handleUserFollowIndicatorDismiss,
                                     onUserFollowIndicatorLearnMoreClick: this._handleUserFollowIndicatorLearnMoreClick,
-                                    renderCurationActionMenu: this._getRenderCurationActionMenu(o, r?.displayType, r?.landingUrl, d, h, u, p, m, this._handleCaretClick, C, D, a.Z.getOriginalTweet(Z), V, G, O, F, B, U),
+                                    renderCurationActionMenu: this._getRenderCurationActionMenu(o, r?.displayType, r?.landingUrl, d, h, u, m, p, this._handleCaretClick, C, D, a.Z.getOriginalTweet(R), Q, G, O, F, B, U),
                                 }),
                             ),
                             this._renderInlineReply(),
@@ -737,7 +737,7 @@
                         { replyPressToggle: r } = this.state,
                         { viewerUserId: a } = this.context;
                     if (!o) return null;
-                    return a && !this._shouldDisable(o, W.d.Reply) ? i.createElement(E.c_, null, (0, g.ZP)() ? i.createElement(K, { history: e, location: t, parentTweetId: n, replyPressToggle: r }) : i.createElement(b.Z, { container: l.Z, fab: this._fabReply(e), withoutBottomPadding: !0 })) : null;
+                    return a && !this._shouldDisable(o, W.d.Reply) ? i.createElement(E.c_, null, (0, f.ZP)() ? i.createElement(K, { history: e, location: t, parentTweetId: n, replyPressToggle: r }) : i.createElement(b.Z, { container: l.Z, fab: this._fabReply(e), withoutBottomPadding: !0 })) : null;
                 }
                 _renderWithheldTweet() {
                     const { tweet: e } = this.props;
@@ -759,7 +759,7 @@
                     }
                 }
             }
-            Ne.contextType = R.rC;
+            Ne.contextType = Z.rC;
             const Fe = (0, x.ZP)(ye(Ne)),
                 Oe = (0, P.Z)(Fe),
                 He = (0, P.Z)(Fe, { component: "tweet" });
@@ -800,14 +800,27 @@
                 r = o(392237);
             class a extends n.PureComponent {
                 render() {
-                    const { "aria-label": e, backgroundColor: t, color: o, disabled: r, href: a, icon: d, label: l, onPress: c, renderMenu: h, style: u, testID: p } = this.props,
-                        m = ((e, t) => ("primary" === e && "white" === t ? "whiteOnColor" : "white" === e && "primary" === t ? "primaryOnWhite" : t))(t, o);
-                    return n.createElement(i.ZP, { "aria-label": e, backgroundColor: t, color: m, disabled: r, icon: d, link: a, onPress: c, renderMenu: h, size: "xLarge", style: [s.root, !l && s.iconOnly, u], testID: p }, l);
+                    const { "aria-label": e, backgroundColor: t, color: o, disabled: r, href: a, icon: d, label: l, onPress: c, renderMenu: h, style: u, testID: m } = this.props,
+                        p = ((e, t) => ("primary" === e && "white" === t ? "whiteOnColor" : "white" === e && "primary" === t ? "primaryOnWhite" : t))(t, o);
+                    return n.createElement(i.ZP, { "aria-label": e, backgroundColor: t, color: p, disabled: r, icon: d, link: a, onPress: c, renderMenu: h, size: "xLarge", style: [s.root, !l && s.iconOnly, u], testID: m }, l);
                 }
             }
             a.defaultProps = { backgroundColor: "primary", color: "white", disabled: !1 };
             const s = r.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 d = a;
+        },
+        452693: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => d });
+            var n = o(202784),
+                i = o(890601),
+                r = o(783427),
+                a = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const d = s;
         },
         662678: (e, t, o) => {
             o.d(t, { G: () => i, Z: () => n });
@@ -827,4 +840,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.31bc22fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.c3a4f8ea.js.map

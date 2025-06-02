@@ -7207,16 +7207,16 @@
                 s("hd80bd3e", "[Pröømöøtéê åä pöøst]"),
                 s("fe2b0008", "[Léêåärn höøw töø üséê X]"),
                 s("h257d4aa", "[Séêléêct åä pöøst töø pröømöøtéê]"),
-                s("fe946974", "Your trial of X without ads"),
-                s("f6c50ec0", "Your ad-free trial has ended"),
-                s("b1319404", "Ads avoided"),
-                s("baa4acae", "You’re seeing more personalized content."),
-                s("c00e8600", "Estimated time saved"),
-                s("ic073e4e", "Your time is valuable."),
-                s("eb866e88", "Estimated 1-year time savings"),
-                s("aa77b70c", "Based on your usage."),
-                s("c534c6b4", "We’re crunching the numbers..."),
-                s("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                s("fe946974", "[Yöøür trïíåäl öøf X wïíthöøüt åäds]"),
+                s("f6c50ec0", "[Yöøür åäd-fréêéê trïíåäl håäs éêndéêd]"),
+                s("b1319404", "[Ads åävöøïídéêd]"),
+                s("baa4acae", "[Yöøü’réê séêéêïíng möøréê péêrsöønåälïízéêd cöøntéênt.]"),
+                s("c00e8600", "[Estïímåätéêd tïíméê såävéêd]"),
+                s("ic073e4e", "[Yöøür tïíméê ïís våälüåäbléê.]"),
+                s("eb866e88", "[Estïímåätéêd 1-yéêåär tïíméê såävïíngs]"),
+                s("aa77b70c", "[Båäséêd öøn yöøür üsåägéê.]"),
+                s("c534c6b4", "[Wéê’réê crünchïíng théê nümbéêrs...]"),
+                s("i57332f0", "[Kéêéêp scröøllïíng åänd chéêck båäck låätéêr töø séêéê höøw måäny åäds yöøü’véê åävöøïídéêd åänd höøw müch yöøü’véê tïíméê såävéêd]"),
                 s("cc10f019", function (t) {
                     return "[" + t.minutes + " mïínütéê" + c(t.minutes, "", "s") + "]";
                 }),
@@ -7232,11 +7232,11 @@
                 s("be88be23", function (t) {
                     return "[Yöøür " + t.durationInDays + "-dåäy åäd-fréêéê trïíåäl ïís åäctïívåätéêd]";
                 }),
-                s("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                s("ae3f3b0e", "Enjoy!"),
-                s("cdac8dc4", "See your new feed"),
-                s("dec99336", "Ad-free"),
-                s("i95803fa", "Unfortunately, you are not eligible at this time."),
+                s("a4413462", "[Thröøüghöøüt théê trïíåäl yöøü cåän séêéê ståäts åäböøüt höøw måäny åäds yöøü håävéên’t séêéên åänd höøw müch tïíméê yöøü’véê såävéêd.]"),
+                s("ae3f3b0e", "[Enjöøy!]"),
+                s("cdac8dc4", "[Séêéê yöøür néêw féêéêd]"),
+                s("dec99336", "[Ad-fréêéê]"),
+                s("i95803fa", "[Unföørtünåätéêly, yöøü åäréê nöøt éêlïígïíbléê åät thïís tïíméê.]"),
                 s("d28a1d72", "[Béê théê véêry fïírst töø spöøt tréênds wïíth Råädåär]"),
                 s("fb70427a", "[Intröødücïíng théê möøst pöøwéêrfül séêåärch töøöøl öøn X.]"),
                 s("i54bf620", "[Möønïítöør kéêywöørds]"),
@@ -12068,7 +12068,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["[", "% Féêéê, Mïín. ", "]"];
                             },
                         },
                         {
@@ -13295,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.73a424fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.5b9a8dda.js.map

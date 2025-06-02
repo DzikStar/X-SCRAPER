@@ -213,8 +213,8 @@
                 p,
                 F,
                 _,
-                f,
                 S,
+                f,
                 K = {
                     fragment: {
                         argumentDefinitions: (l = [
@@ -375,8 +375,8 @@
                                                             },
                                                             {
                                                                 kind: "InlineFragment",
-                                                                selections: (S = [
-                                                                    (f = {
+                                                                selections: (f = [
+                                                                    (S = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: "XPaymentsMerchantDetails",
@@ -418,6 +418,7 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                             },
+                                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "merchant_results", plural: !1, selections: _, storageKey: null },
                                                                         ],
                                                                         storageKey: null,
                                                                     }),
@@ -425,9 +426,9 @@
                                                                 type: "XPaymentsBankingDepositDetails",
                                                                 abstractKey: null,
                                                             },
-                                                            { kind: "InlineFragment", selections: S, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
-                                                            { kind: "InlineFragment", selections: [f, y], type: "XPaymentsPaymentDetails", abstractKey: null },
-                                                            { kind: "InlineFragment", selections: [f, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: f, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [S, y], type: "XPaymentsPaymentDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [S, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -449,7 +450,7 @@
                             { alias: null, args: d, filters: ["s"], handle: "slice", key: "useActionableItemsQuery_TransactionActions_slice", kind: "LinkedHandle", name: "get_payments_customer_actions" },
                         ],
                     },
-                    params: { id: "_2l5s-hJ9VBtfNyNRzGIyw", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
+                    params: { id: "8T8IBOeMMcb_qeRMIk2ZnQ", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
                 };
             K.hash = "a6a8f048d1caef1c671f17a2b72cb546";
             const h = K;
@@ -982,4 +983,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.59e3beca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.ce19bc9a.js.map

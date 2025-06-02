@@ -7235,7 +7235,7 @@
                 t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 t("ae3f3b0e", "Enjoy!"),
                 t("cdac8dc4", "See your new feed"),
-                t("dec99336", "Ad-free"),
+                t("dec99336", "Annonsfritt"),
                 t("i95803fa", "Unfortunately, you are not eligible at this time."),
                 t("d28a1d72", "Bli den första att upptäcka trender med Radar"),
                 t("fb70427a", "Nu lanserar vi det mest kraftfulla sökverktyget på X."),
@@ -13295,4 +13295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.5dd4bd1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.6fd0ddca.js.map

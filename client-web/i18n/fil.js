@@ -7235,7 +7235,7 @@
                 i("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 i("ae3f3b0e", "Enjoy!"),
                 i("cdac8dc4", "See your new feed"),
-                i("dec99336", "Ad-free"),
+                i("dec99336", "Walang ad"),
                 i("i95803fa", "Unfortunately, you are not eligible at this time."),
                 i("d28a1d72", "Maunang matukoy ang mga trend gamit ang Radar"),
                 i("fb70427a", "Ipinapakilala ang pinakamakapangyarihang tool sa paghahanap sa X."),
@@ -13307,4 +13307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.43eee0ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.69438a8a.js.map

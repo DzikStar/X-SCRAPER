@@ -4851,7 +4851,7 @@
                 i("gc10a3b0", "Obserwowania z biegiem czasu"),
                 i("efa0f858", "Liczba zdarzeń rozpoczęcia i zakończenia obserwowania z biegiem czasu. Ta wartość nie musi odpowiadać liczbie obserwujących."),
                 i("g2b06cc6", "Dane dotyczące płci mogą być wnioskowane"),
-                i("b66b3baa", "godziny"),
+                i("b66b3baa", "godzin"),
                 i("cf8a0772", "Wyświetlenia"),
                 i("g13d8010", "Ostatnie 48 godzin"),
                 i("d5627596", "Ostatnia godzina"),
@@ -7244,7 +7244,7 @@
                 i("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 i("ae3f3b0e", "Enjoy!"),
                 i("cdac8dc4", "See your new feed"),
-                i("dec99336", "Ad-free"),
+                i("dec99336", "Bez reklam"),
                 i("i95803fa", "Unfortunately, you are not eligible at this time."),
                 i("d28a1d72", "Dołącz do grona osób, które najwcześniej zaczną śledzić trendy za pomocą funkcji Radar"),
                 i("fb70427a", "Wprowadzamy najbardziej zaawansowane narzędzie do wyszukiwania w serwisie X."),
@@ -13308,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.e5286b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.bbae60ea.js.map

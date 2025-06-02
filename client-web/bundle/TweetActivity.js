@@ -2,13 +2,13 @@
     ["bundle.TweetActivity"],
     {
         270422: (e) => {
-            e.exports = { queryId: "7igcsko9GEFrWgnFAVvo6A", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "66LDcsUUazjiPtzoS-rfUA", operationName: "Favoriters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         607959: (e) => {
-            e.exports = { queryId: "nLstTBzKxVp_gsayODje6w", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "e3GU8b5qSCfKo7CY-Osa2A", operationName: "Retweeters", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         348271: (e) => {
-            e.exports = { queryId: "Dl6RZ-rTWP1d4JSCxm79Jw", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "aj6FaUjCesV4nTbhXWTNMA", operationName: "TweetEditHistory", operationType: "query", metadata: { featureSwitches: ["premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "rweb_video_screen_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         413798: (e, t, r) => {
             "use strict";
@@ -51,12 +51,12 @@
                 }
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: o, hideBackButton: s, isFullWidth: n, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: h, secondaryBar: m, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: v, withWideContainer: C } = this.props,
-                        { isModal: x } = this.context,
-                        S = s ? d : i.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        { isModal: S } = this.context,
+                        x = s ? d : i.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         E = (function (e, t, r) {
                             return e && !(t && r);
-                        })(!!v, x, !!m);
-                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: n, isLarge: c, leftControl: S, middleControl: p, position: _(u, x, o), rightControl: h, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: E, withWideContainer: C }), m || null);
+                        })(!!v, S, !!m);
+                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: r, isFullWidth: n, isLarge: c, leftControl: x, middleControl: p, position: _(u, S, o), rightControl: h, style: b, subtitle: w, title: g, titleDomId: y, titleIconCell: f, titleIconCellSize: k, withBackground: E, withWideContainer: C }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -328,9 +328,9 @@
                 }),
                 v = k;
             var C = r(644829),
-                x = r(750085),
-                S = r(218951);
-            const E = (e) => (0, S.Z)({ timelineId: `similarPostsGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(C.Z).fetchSimilarPosts, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: x.Z, context: "FETCH_SIMILAR_POSTS", perfKey: "similarPostsGraphQL" });
+                S = r(750085),
+                x = r(218951);
+            const E = (e) => (0, x.Z)({ timelineId: `similarPostsGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(C.Z).fetchSimilarPosts, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: S.Z, context: "FETCH_SIMILAR_POSTS", perfKey: "similarPostsGraphQL" });
             var T = r(836255);
             const Z = { page: "similar_posts", section: "similar_posts" },
                 I = (e, t) => t.match.params.statusId,
@@ -398,11 +398,11 @@
                 k = n().fc1acb54,
                 v = n().e3527230,
                 C = { likes: n().i3e8b808, retweets: n().c69fd704 },
-                x = { likes: n().f12858d4, retweets: n().fe62cfec },
-                S = { likes: () => i.createElement(o.Z, { header: k, message: v }), retweets: () => i.createElement(o.Z, { header: y, message: f }) };
+                S = { likes: n().f12858d4, retweets: n().fe62cfec },
+                x = { likes: () => i.createElement(o.Z, { header: k, message: v }), retweets: () => i.createElement(o.Z, { header: y, message: f }) };
             function E({ activityType: e, history: t, screenName: r, statusId: o, urtModule: s }) {
                 const n = `/${r.toLowerCase()}/status/${o}`;
-                return s ? i.createElement(a.Z, { backLocation: n, history: t, title: x[e] }, i.createElement(l.Z, { loadingAccessibilityLabel: C[e], module: s, renderEmptyState: S[e], title: x[e] })) : i.createElement(c.Z, { to: n });
+                return s ? i.createElement(a.Z, { backLocation: n, history: t, title: S[e] }, i.createElement(l.Z, { loadingAccessibilityLabel: C[e], module: s, renderEmptyState: x[e], title: S[e] })) : i.createElement(c.Z, { to: n });
             }
             const T = g(E);
         },
@@ -431,21 +431,21 @@
                 k = r(153386),
                 v = r(481918),
                 C = r(919022);
-            const x = { likes: k.Z, retweets: v.Z, quotes: void 0 },
-                S = (e, t) => t.match.params.statusId,
+            const S = { likes: k.Z, retweets: v.Z, quotes: void 0 },
+                x = (e, t) => t.match.params.statusId,
                 E = (e, t) => t.match.params.screenName,
                 T = (e, t) => t.match.params.tweetEngagementsSubroute,
                 Z = (0, y.Z)()
                     .propsFromState(() => ({
                         mode: T,
                         screenName: E,
-                        statusId: S,
+                        statusId: x,
                         tweet: (0, g.P1)(
                             (e) => e,
-                            S,
+                            x,
                             (e, t) => f.Z.selectHydrated(e, t),
                         ),
-                        urtModule: (0, g.P1)(T, S, (e, t) => x[e]?.(t)),
+                        urtModule: (0, g.P1)(T, x, (e, t) => S[e]?.(t)),
                         viewer: C.ZP.selectViewerUser,
                     }))
                     .withAnalytics({ page: "full_tweet_activity", section: "full_tweet_activity" });
@@ -495,7 +495,7 @@
         },
         403556: (e, t, r) => {
             "use strict";
-            r.d(t, { Z: () => S });
+            r.d(t, { Z: () => x });
             var i = r(807896),
                 o = r(202784),
                 s = r(194504),
@@ -549,10 +549,10 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: r, badgePip: i, children: s, color: n, isActive: c, isCompact: d, isPillLink: _, isRoundedRect: p, isWebRedesign: m, retainScrollPosition: k, style: C, to: x } = this.props,
-                        { location: S } = this.state,
-                        E = x ? this._getMemoizedLink(x, k) : void 0,
-                        T = c ? c(x) : S?.pathname === E?.pathname,
+                    const { Icon: e, "aria-label": t, badgeCount: r, badgePip: i, children: s, color: n, isActive: c, isCompact: d, isPillLink: _, isRoundedRect: p, isWebRedesign: m, retainScrollPosition: k, style: C, to: S } = this.props,
+                        { location: x } = this.state,
+                        E = S ? this._getMemoizedLink(S, k) : void 0,
+                        T = c ? c(S) : x?.pathname === E?.pathname,
                         Z = b.Z.generate({ backgroundColor: "transparent", color: a.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: _ ? v.pillHoverStyle.backgroundColor : void 0 }),
                         I = m ? "medium" : T ? "bold" : "medium";
                     return o.createElement(w.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: Z, link: E, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(_ ? [v.pillStyle] : [v.link]), ...(_ && T ? [v.pillActiveStyle] : []), d ? (_ ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, C], withoutInteractiveStyles: m }, ({ isFocused: t, isHovered: c }) => o.createElement(l.Z, { style: _ && v.flexGrow }, o.createElement(u.ZP, { size: m ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(T, c, m, _) }, d && v.compactText, m && t && v.focusedText, _ && v.pillTextStyle, _ && T && v.pillActiveTextStyle, _ && c && v.pillHoverTextStyle], weight: I }, e && o.createElement(e, { style: v.icon }), s, m || _ ? null : o.createElement(l.Z, { style: T && [v.border, { backgroundColor: a.default.theme.colors[n] }] })), r ? o.createElement(h.Z, { count: r, standalone: !0, style: [v.badge, r >= 10 && v.multiDigitBadge, r >= 20 && v.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: g, withBorder: !1 }) : i ? o.createElement(h.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
@@ -583,8 +583,8 @@
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
                 C = k,
-                x = a.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                S = ({ alignFirstItem: e, "aria-label": t, isCompact: r, isPillLink: a, isRoundedRect: l, links: c, style: d, visibleItemIndex: _ }) => {
+                S = a.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                x = ({ alignFirstItem: e, "aria-label": t, isCompact: r, isPillLink: a, isRoundedRect: l, links: c, style: d, visibleItemIndex: _ }) => {
                     const p = c
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -594,14 +594,14 @@
                         m = o.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: s, ...n }, c) => {
-                                    const d = h ? [x.linkRedesign, 0 === c && x.firstLinkRedesign, e && 0 === c && x.withNoPaddingStart] : void 0;
+                                    const d = h ? [S.linkRedesign, 0 === c && S.firstLinkRedesign, e && 0 === c && S.withNoPaddingStart] : void 0;
                                     return o.createElement(C, (0, i.Z)({ viewType: s }, n, { isCompact: r, isPillLink: a, isRoundedRect: l, isWebRedesign: h, style: d }), t);
                                 }),
                             [e, r, a, l, h, c],
                         );
-                    return o.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: a && x.gap, childrenStyle: !h && x.flexGrow, key: p, style: [a ? null : x.segmentedControl, h && x.leftAligned, d], visibleItemIndex: _ }, m);
+                    return o.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: a && S.gap, childrenStyle: !h && S.flexGrow, key: p, style: [a ? null : S.segmentedControl, h && S.leftAligned, d], visibleItemIndex: _ }, m);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.87f2c45a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.651a1eda.js.map

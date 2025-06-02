@@ -4853,7 +4853,7 @@
                 t("gc10a3b0", "Urmăriri în timp"),
                 t("efa0f858", "Numărul de urmăriri și de opriri ale urmării, în timp. Aceste date nu reflectă neapărat numărul tău de urmăritori."),
                 t("g2b06cc6", "Este posibil ca datele despre gen să fie deduse"),
-                t("b66b3baa", "ore"),
+                t("b66b3baa", "(de) ore"),
                 t("cf8a0772", "Impresii la vizualizări"),
                 t("g13d8010", "Ultimele 48 de ore"),
                 t("d5627596", "Ultima oră"),
@@ -7246,7 +7246,7 @@
                 t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 t("ae3f3b0e", "Enjoy!"),
                 t("cdac8dc4", "See your new feed"),
-                t("dec99336", "Ad-free"),
+                t("dec99336", "Fără reclame"),
                 t("i95803fa", "Unfortunately, you are not eligible at this time."),
                 t("d28a1d72", "Detectează tendințele înaintea tuturor cu Radar"),
                 t("fb70427a", "Îți prezentăm cel mai puternic instrument de căutare de pe X."),
@@ -13308,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.86a0f72a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.31cd12da.js.map

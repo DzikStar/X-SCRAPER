@@ -7235,7 +7235,7 @@
                 e("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 e("ae3f3b0e", "Enjoy!"),
                 e("cdac8dc4", "See your new feed"),
-                e("dec99336", "Ad-free"),
+                e("dec99336", "Ilman mainoksia"),
                 e("i95803fa", "Unfortunately, you are not eligible at this time."),
                 e("d28a1d72", "Hoksaa trendit ensimmäisenä Radarilla"),
                 e("fb70427a", "Esittelyssä X:n tehokkain hakutyökalu."),
@@ -13308,4 +13308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.b9753d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2e6ee3ea.js.map

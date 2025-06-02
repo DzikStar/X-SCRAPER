@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsExtendedProfile", "icons/IconItalic-js", "icons/IconNumberedList-js"],
+    ["bundle.SettingsExtendedProfile", "icons/IconNumberedList-js"],
     {
         681488: (e, t, n) => {
             n.d(t, { Z: () => c });
@@ -717,7 +717,7 @@
                 .withAnalytics({ page: "settings", section: "extendedprofile" });
         },
         992915: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => Le });
+            n.r(t), n.d(t, { default: () => Pe });
             var l,
                 a,
                 r = n(807896),
@@ -776,8 +776,8 @@
                 $ = n.n(T),
                 F = (n(585488), n(351743)),
                 z = n.n(F),
-                L = n(731708),
-                P = n(593866),
+                P = n(731708),
+                L = n(593866),
                 R = n(154003),
                 K = n(40610),
                 B = n(715417);
@@ -820,7 +820,7 @@
                                     },
                                 });
                         }, [a, e]);
-                    return o.createElement(i.Z, { style: U.consentRoot }, o.createElement(L.ZP, { size: "title3", weight: "bold" }, A), o.createElement(L.ZP, { size: "body" }, O), o.createElement(L.ZP, { weight: "bold" }, M), o.createElement(P.Z, { items: l }), o.createElement(R.ZP, { disabled: r, onClick: s, size: "large", type: "brandFilled" }, N), t ? o.createElement(K.Z.Danger, { text: t, withIcon: !0 }) : null);
+                    return o.createElement(i.Z, { style: U.consentRoot }, o.createElement(P.ZP, { size: "title3", weight: "bold" }, A), o.createElement(P.ZP, { size: "body" }, O), o.createElement(P.ZP, { weight: "bold" }, M), o.createElement(L.Z, { items: l }), o.createElement(R.ZP, { disabled: r, onClick: s, size: "large", type: "brandFilled" }, N), t ? o.createElement(K.Z.Danger, { text: t, withIcon: !0 }) : null);
                 },
                 G = o.memo(Q);
             var X = n(301503),
@@ -888,20 +888,20 @@
                         ),
                         T = o.useMemo(() => ({ editorState: g, element: ne.Z, stripPastedStyles: !0 }), [g]),
                         $ = o.useMemo(() => {
-                            if (b) return o.createElement(i.Z, { style: we.flexRow }, o.createElement(le.Z, { size: "small" }), o.createElement(L.ZP, { size: "subtext1" }, "Saving"));
+                            if (b) return o.createElement(i.Z, { style: we.flexRow }, o.createElement(le.Z, { size: "small" }), o.createElement(P.ZP, { size: "subtext1" }, "Saving"));
                             const e = !!x.j3 && w > x.j3;
-                            return o.createElement(i.Z, null, o.createElement(L.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: we.textCountLabel }, Ee({ count: D })));
+                            return o.createElement(i.Z, null, o.createElement(P.ZP, { color: e ? "red500" : "gray900", numberOfLines: 1, size: "subtext1", style: we.textCountLabel }, Ee({ count: D })));
                         }, [w, D, b]),
                         F = (0, ae.Zz)(),
                         z = o.useMemo(() => {
                             const e = [we.stickyButton];
                             return F && !(0, he.ZP)() ? e.push(we.mobileButton) : e.push(we.desktopButton), e;
                         }, [F]),
-                        P = o.useCallback(() => (u ? o.createElement(me.Z, { editorState: g, onChange: I }) : null), [g, u, I]),
+                        L = o.useCallback(() => (u ? o.createElement(me.Z, { editorState: g, onChange: I }) : null), [g, u, I]),
                         R = o.useCallback(
                             () => (e) =>
                                 o.createElement(re.b, {
-                                    emojiPickerButton: P,
+                                    emojiPickerButton: L,
                                     inputStyle: we.root,
                                     maxNumberOfLines: 100,
                                     numberOfLines: 30,
@@ -913,7 +913,7 @@
                                     textSizesOverride: (0, be.bb)(be.K),
                                     toolbarRightControl: $,
                                 }),
-                            [I, P, T, $],
+                            [I, L, T, $],
                         );
                     return o.createElement(i.Z, null, f ? o.createElement(i.Z, { style: we.error }, o.createElement(K.Z.Danger, { text: f, withIcon: !0 })) : null, o.createElement(oe.Z, { fallbackBackPath: "/", history: m, onNavigation: v, shouldBlockNavigation: S, shouldBlockUnload: y }, o.createElement(de.Z, { className: be.Hx }, o.createElement(pe.Z, { contextText: (0, fe.iT)(g), isInline: !0, onTextUpdated: I, onTypeaheadStateChange: se.Z, source: ye._4.LongformComposer }, R()))), o.createElement(i.Z, { style: z }, o.createElement(Se.Z, { blockId: t, characterCount: w, disabled: b || !y || !C || w > x.j3, editorState: g, onSave: r, queryId: n, setDirty: _, setError: p, setSaving: k, userId: d })), c && t ? o.createElement(ue.Z, { blockId: t, headline: ve, onClose: l, onCompleted: E, queryId: n, subtext: xe, userId: d }) : null);
                 }),
@@ -985,7 +985,7 @@
                     return o.createElement(Te, (0, r.Z)({ hasConsented: a, profileBlocksRef: l, queryId: i, refetch: n }, e));
                 },
                 ze = { context: "EXTENDED_PROFILE_SETTINGS" },
-                Le = (0, D.Z)((e) => o.createElement(S.H, { errorConfig: ze }, o.createElement(Fe, e)));
+                Pe = (0, D.Z)((e) => o.createElement(S.H, { errorConfig: ze }, o.createElement(Fe, e)));
         },
         751475: (e, t, n) => {
             n.d(t, { Z: () => u });
@@ -1155,19 +1155,6 @@
             }
             const c = [];
         },
-        856661: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var l = n(202784),
-                a = n(890601),
-                r = n(783427),
-                o = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
         89085: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var l = n(202784),
@@ -1183,4 +1170,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsExtendedProfile.8aceeffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsExtendedProfile.95d5d95a.js.map

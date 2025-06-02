@@ -8,7 +8,7 @@
             e.exports = { queryId: "YUpv7YPz8uB7j6rAaCCF7g", operationName: "DmGroupSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         407737: (e) => {
-            e.exports = { queryId: "YOMS4Io4E2aTL5HQ3h_y5A", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "r5r9mifbTV1gL64zkmkR1g", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         845308: (e) => {
             e.exports = { queryId: "W26fnOQ7uTdektooZAiuYw", operationName: "DmPeopleSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -363,8 +363,8 @@
                 S = (0, p.M)((e) => {
                     const { featureSwitches: t } = (0, u.QZ)(),
                         { onBlock: n, onClose: o, onMute: a, onRemoveFollower: p, onReportUser: S, onShare: C, onUnblock: T, onUnmute: Z, user: E } = e,
-                        P = [],
-                        k = (t, n) => {
+                        k = [],
+                        P = (t, n) => {
                             const { confirm: r, onClose: i } = e;
                             if (t) {
                                 const { label: e, ...s } = t;
@@ -377,7 +377,7 @@
                         !E.protected &&
                         !E.blocking &&
                         !E.blocked_by &&
-                        P.push({
+                        k.push({
                             Icon: i.Z,
                             onClick: () => {
                                 o(), C();
@@ -386,7 +386,7 @@
                             text: v,
                         });
                     !E.blocking &&
-                        P.push({
+                        k.push({
                             ...(0, m.N1)(
                                 E,
                                 () => {
@@ -399,17 +399,17 @@
                             testID: g,
                         });
                     E.followed_by &&
-                        P.push({
+                        k.push({
                             ...(0, _.l)({
                                 removeFollowerAction: (e) => {
-                                    k(e, p);
+                                    P(e, p);
                                 },
                                 user: E,
                             }),
                             testID: f,
                         }),
-                        P.push((0, d.op)({ blockAction: (e) => k(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: d.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => k(e, T), user: E })),
-                        P.push({
+                        k.push((0, d.op)({ blockAction: (e) => P(e, n), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: d.SC.FOLLOWERS_LIST, testID: h, unblockAction: (e) => P(e, T), user: E })),
+                        k.push({
                             Icon: l.default,
                             onClick: () => {
                                 o(), S();
@@ -417,7 +417,7 @@
                             testID: b,
                             text: w({ screenName: E.screen_name }),
                         });
-                    const I = P.map(({ Icon: e, onClick: t, testID: n, text: r }) => ({ text: r, onClick: t, Icon: e, testID: n }));
+                    const I = k.map(({ Icon: e, onClick: t, testID: n, text: r }) => ({ text: r, onClick: t, Icon: e, testID: n }));
                     return r.createElement(s.Z, { items: I, onCloseRequested: o });
                 });
         },
@@ -459,7 +459,7 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: l, history: c, leftControl: d, middleControl: p, onBackClick: h, rightControl: g, screenType: b, searchBoxOptions: y, secondaryBar: w, showSubtitleOnRoot: v, showSubtitleOnWideDetail: S, subtitle: C, title: T, titleIconCell: Z, titleIconCellSize: E, withDetailOpen: P, withSearchBox: k, withTweetButton: I, withWideContainer: D } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: l, history: c, leftControl: d, middleControl: p, onBackClick: h, rightControl: g, screenType: b, searchBoxOptions: y, secondaryBar: w, showSubtitleOnRoot: v, showSubtitleOnWideDetail: S, subtitle: C, title: T, titleIconCell: Z, titleIconCellSize: E, withDetailOpen: k, withSearchBox: P, withTweetButton: I, withWideContainer: D } = this.props,
                         O = "root" === b,
                         x = "secondaryRoot" === b,
                         A = "primaryDetail" === b,
@@ -467,7 +467,7 @@
                         L = O || (A && e),
                         N = O ? u.ey : A ? u.vX : void 0,
                         B = r.createElement(o.Z, { style: f.appBarContainer }, r.createElement(m.ZP, { backLocation: s, fixed: !1, hideBackButton: L, history: c, leftControl: d, middleControl: p, onBackClick: h, rightControl: g, secondaryBar: w, style: i, subtitle: U ? C : void 0, title: T, titleDomId: N, titleIconCell: Z, titleIconCellSize: E, withWideContainer: D })),
-                        F = O || (x && P) ? null : r.createElement(_.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: l, middleControl: p, onBackClick: h, rightControl: g, searchBoxOptions: y, subtitle: C, title: T, withSearchBox: k, withTweetButton: I });
+                        F = O || (x && k) ? null : r.createElement(_.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: l, middleControl: p, onBackClick: h, rightControl: g, searchBoxOptions: y, subtitle: C, title: T, withSearchBox: P, withTweetButton: I });
                     return r.createElement(r.Fragment, null, F, B);
                 }
             }
@@ -867,4 +867,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.66ae9efa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.3a12ba6a.js.map

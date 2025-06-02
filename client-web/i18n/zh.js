@@ -4251,7 +4251,7 @@
                 f("bfd161bc", "比较"),
                 f("j5dcf1b2", "已更新"),
                 f("a50aaa10", "盘前"),
-                f("dd614d10", "小时后"),
+                f("dd614d10", "盘后"),
                 f("d6b0b0d5", function (e) {
                     return "开盘价" + e.ttc_stock_details;
                 }),
@@ -4360,7 +4360,7 @@
                 f("f4146dda", "你更喜欢哪个答案？"),
                 f("a2c2be32", "这将有助于改进 Grok。"),
                 f("g01599b6", "回答 1"),
-                f("e02694e0", "答案 2"),
+                f("e02694e0", "回答 2"),
                 f("h6867fcc", "我更喜欢这个答案"),
                 f("acc4496c", "尝试 Grok 语音模式"),
                 f("jd36d190", "通过 Grok Android 应用访问高级功能"),
@@ -5018,7 +5018,7 @@
                 f("e7930f82", "脱颖而出"),
                 f("e77ea57e", "有助于促进销售、招募最优秀人才和获取独家市场见解的最强大工具。"),
                 f("a558a254", "通过认证组织在 X 上实现成长"),
-                f("b099f256", "只需按一下 Radar 按钮，即可了解市场趋势和公众舆论。"),
+                f("b099f256", "借助 Radar，一键洞悉市场趋势和公众舆论。"),
                 f("ecb7fa02", "商业智能"),
                 f("cb5faa2a", "使用您的广告积分，覆盖地球上最聪明的人群。"),
                 f("c67b260c", "职位推广"),
@@ -5031,7 +5031,7 @@
                 f("ie132f40", "升级以保留完全功能"),
                 f("b0d26232", "保存"),
                 f("f563b353", function (e) {
-                    return "优惠过期 " + e.endDate;
+                    return "优惠即将到期 " + e.endDate;
                 }),
                 f("b29b2e69", function (e) {
                     return e.endDate + "前 " + e.percentOff + "% 优惠 ";
@@ -5050,7 +5050,7 @@
                 f("cf038828", "专属支持服务"),
                 f("efd56302", "添加附属账号到你的页面"),
                 f("bc1bb6aa", "每月 1,000 美元免费广告额度"),
-                f("e1669560", "12,000 美元免费广告积分"),
+                f("e1669560", "12,000 美元免费广告额度"),
                 f("hb973da4", "Radar全面访问"),
                 f("g444c82e", "抢先体验企业功能"),
                 f("a1bc0bcf", function (e) {
@@ -7234,7 +7234,7 @@
                 f("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
                 f("ae3f3b0e", "Enjoy!"),
                 f("cdac8dc4", "See your new feed"),
-                f("dec99336", "Ad-free"),
+                f("dec99336", "无广告"),
                 f("i95803fa", "Unfortunately, you are not eligible at this time."),
                 f("d28a1d72", '通过 Radar 抢先发现趋势"'),
                 f("fb70427a", "推出 X 上功能最强大的搜索工具。"),
@@ -9056,7 +9056,7 @@
                 f("i308d42c", "这个帖子有新的版本"),
                 f("h092d520", "这个帖子有新的版本。"),
                 f("b74bf8b8", "图像"),
-                f("ha9ed08c", "创建工具"),
+                f("ha9ed08c", "生成自"),
                 f("bff61470", "点击此处进行编辑"),
                 f("f4393d0f", function (e) {
                     return "引自 " + e.name;
@@ -13309,4 +13309,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.3d5b8e3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.6d6ec21a.js.map
