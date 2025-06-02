@@ -5511,13 +5511,35 @@
                 n("g22c8c30", "אם מספיק כותבים מורשים דרגו את ההערות האלה כמועילות, כולל כאלה שבמקרים רבים אינם מסכימים עם דירוגים קודמים שהן קיבלו, הן יוצגו באופן ציבורי עם הפוסטים כהקשר נוסף."),
                 n("jf04b084", "הערות אלה נוספות על ידי כותבים מורשים שסבורים שהפוסט אינו מטעה ואינו מחייב הקשר נוסף."),
                 n("g5a72e98", "These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful."),
-                n("h53cb7de", "מה אתה חושב על הפוסט הזה?"),
-                n("dc3bfc82", "מה, אם בכלל, אהבת בפוסט הזה?"),
-                n("b4704bf4", "מה, אם בכלל, לא אהבת בפוסט הזה?"),
+                n("b8719c22", "עזור לזהות את הפוסטים קיבלו סימוני 'אהבתי' ממשתמשים עם נקודות מבט שונות."),
+                n("jcdf97d4", "מה אהבת בפוסט הזה?"),
+                n("d4d7b67e", "מה לא אהבת בפוסט הזה?"),
                 n("ed5156fa", "אירעה שגיאה בשמירת הדירוג שלך, נסה שוב."),
-                n("d5f9fb42", "דירגת את הגברת הקהילה הזאת"),
+                n("d0ed3636", "דרגת את הפוסט הזה"),
                 n("j6aa6172", "למחוק דירוג?"),
                 n("i4112750", "לא ניתן לבטל את זה."),
+                n("i6f6191a", "תודה!"),
+                n("h5575012", "Agree and submit"),
+                n("f9171e52", "הפוסט הזה קיבל מספר סימוני 'אהבתי' ממשתמשים שברוב המקרים לא מסכימים, אבל הקלט עד כה מוגבל."),
+                n("j0f9919a", "הדירוג שלך לא ישפיע באופן שלילי על הפוסט, אבל יוכל לעזור לזהות באופן חיובי פוסטים אהובים באופן רחב."),
+                n("b3af830c", "הקלט שלך:"),
+                n("d0b29562", "דרג יותר פוסטים עכשיו"),
+                n("i36ea87a", "אני מסכים עם האמור"),
+                n("d5befc34", "למדתי משהו מעניין"),
+                n("je26ecf2", "זה מציג נקודה רבת משמעות"),
+                n("e4e331aa", "זה מאחד נושא שלרוב מפלג"),
+                n("ed61ff2a", "זה מלבב ומחמם את הלב"),
+                n("gc3104d8", "זה מעניין ומעניק השראה"),
+                n("j8c4400e", "זה מצחיק"),
+                n("j4738406", "לא רלוונטי: אין שום דבר שאני אוהב בו"),
+                n("d93d1666", "אינני מסכים עם האמור"),
+                n("d6130466", "אין בו כל תוכן בעל משמעות"),
+                n("d96835b6", "זה לא מעניין אותי"),
+                n("b7ba4150", "לא רלוונטי: אין שום דבר שאינני אוהב בו"),
+                n("g0402b3b", "שקיבלו סימוני 'אהבתי' ממשתמשים עם נקודות מבט שונות"),
+                n("ged62c2b", "להאיר בזרקור"),
+                n("b5d5f7f1", "עיצוב הכיוון"),
+                n("a42fef87", "Learn more"),
                 n("bd7eb888", "הצגת כל ההערות המשויכות לפוסט זה"),
                 n("i97b83f6", "אירעה שגיאה בעת שליחת הערעור שלך, נסה שוב."),
                 n("a038ab9a", "הערת תרגום"),
@@ -5868,8 +5890,8 @@
                 n("e41c9b4f", function (e) {
                     return "נשמר ב-" + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "מחק תיקייה"),
-                n("f4ea967a", "התיקיה נמחקה"),
+                n("h18f86a4", "מחק תיקייה");
+            n("f4ea967a", "התיקיה נמחקה"),
                 n("b670aa62", "שם תיקייה"),
                 n("aece5462", "שם התיקיה שלך עודכן בהצלחה"),
                 n("e3299b94", "משהו השתבש. נסה לעדכן התיקיה הבאה שוב בעוד דקה."),
@@ -5900,8 +5922,8 @@
                     return "הסתיים בתאריך " + e.timestamp;
                 }),
                 n("daca8a2c", "פתיחה במצב 'עיגון'"),
-                n("e3aac82a", "טוען שידור");
-            n("i0ed3f4e", "תמונת אירוע"),
+                n("e3aac82a", "טוען שידור"),
+                n("i0ed3f4e", "תמונת אירוע"),
                 n("cbae35fa", "דווח על שידור"),
                 n("fd12ab58", "פוסטים באוספים"),
                 n("a226497c", "צור קהילה חדשה"),
@@ -6872,8 +6894,8 @@
                 n("b925c18c", "סוג שכר"),
                 n("j3d242ce", "טווח לא חוקי"),
                 n("f4d07bd2", "הוסף פרטים אופציונליים כדי להקל על מועמדים לגלות את התפקידים באמצעות חיפוש."),
-                n("b8cbb51a", "סיכום התפקיד"),
-                n("bda6881e", "תפקיד זה יובא מהמערכת למעקב אחרי מועמדים (ATS). שים לב שאפשר לשנות שדות ספציפיים בלבד."),
+                n("b8cbb51a", "סיכום התפקיד");
+            n("bda6881e", "תפקיד זה יובא מהמערכת למעקב אחרי מועמדים (ATS). שים לב שאפשר לשנות שדות ספציפיים בלבד."),
                 n("b075c68a", "עריכת עבודה"),
                 n("d4b6a6e0", "זרקור על פרופיל"),
                 n("j2dd3686", "משרות שמוצגות באופן מודגש מעל הפוסטים שלך."),
@@ -6898,8 +6920,8 @@
                 n("c0195168", "שנה את סמל היישום ואת אפשרויות הניווט"),
                 n("b6b5dc94", "קבלת אימות"),
                 n("b06db848", "התבלט על פני אחרים בפלטפורמה שלנו"),
-                n("e3e3a97c", "קבל חלק וההכנסות מהפוסטים שלך");
-            n("f15bc24e", "מגבלת Grok גבוהה יותר"),
+                n("e3e3a97c", "קבל חלק וההכנסות מהפוסטים שלך"),
+                n("f15bc24e", "מגבלת Grok גבוהה יותר"),
                 n("c4666e1c", "יותר שימש ב-Grok 3, המודל העדכני ביותר שלנו"),
                 n("he74ae7a", "מגבלות השימוש הגבוהות ביותר ב-Grok"),
                 n("f5732cd4", "בנוסף, גישה מורחבת לתכונה DeepSearch & Think"),
@@ -7850,35 +7872,7 @@
                 n("c29e3a88", "בחירת חשבונות משויכים"),
                 n("j8318d57", function (e) {
                     return e.number + " חשבו" + t(e.number, "נות משויכים", "ן משויך", "נות משויכים", "נות משויכים");
-                }),
-                n("bf809ec0", "בחירת חשבונות משויכים"),
-                n("b719e224", "אין תוצאות"),
-                n("c9938100", "תוצאות חיפוש"),
-                n("d1a35ec6", "הוסף חשבונות"),
-                n("b437adda", "שדרוג למינוי בתשלום"),
-                n("f1f6c88b", function (e) {
-                    return "חשבונות (" + e.count + ")";
-                }),
-                n("b02156b8", "הזמנות"),
-                n("gd67d29b", function (e) {
-                    return "הזמנות (" + e.count + ")";
-                }),
-                n("daf646e6", "לידיעתך: עליך לסמן חשבונות כהלכה."),
-                n("i3895c32", "החשבון שלך בבדיקה מכיוון ששינית את הכינוי שלך (handle@) ב-X"),
-                n("i5f8b628", "אין אפשרותך לשנות חשבונות משויכים לפני בדיקת החשבון שלך."),
-                n("e9e663ac", "מועד התשלום שלך עבר."),
-                n("c3ddd22c", "בתנאים"),
-                n("c9729d8a", "בתנאים"),
-                n("cdcd1d2c", "הוסף חשבונות משויכים לארגון שלך"),
-                n("d30ea6f3", function (e) {
-                    return "האם אתה בטוח שברצונך להסיר את @" + e.name + "?";
-                }),
-                n("c2dfbb86", "כן, לבצע"),
-                n("ba047f76", "הסרת שיוך תסיר מיד את סימן האישור ותג השיוך. החיוב יימשך עד סיום החודש."),
-                n("j26dee0e", "הסר חשבון משויך"),
-                n("e30cbdf0", "חשבון משויך זה מנוי ב'ארגונים מאומתים' ועליו להישאר 'ארגון'. לא ניתן לשנות אותו לאדם."),
-                n("j3115ce8", "יחיד"),
-                n("d8bb1d84", "ארגון");
+                });
             function f(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var n = a[c];
@@ -7917,9 +7911,37 @@
                     r(e, a)
                 );
             }
-            n("e970bdbd", function (e) {
-                return "נותרו " + e.count + " הזמנות";
-            }),
+            n("bf809ec0", "בחירת חשבונות משויכים"),
+                n("b719e224", "אין תוצאות"),
+                n("c9938100", "תוצאות חיפוש"),
+                n("d1a35ec6", "הוסף חשבונות"),
+                n("b437adda", "שדרוג למינוי בתשלום"),
+                n("f1f6c88b", function (e) {
+                    return "חשבונות (" + e.count + ")";
+                }),
+                n("b02156b8", "הזמנות"),
+                n("gd67d29b", function (e) {
+                    return "הזמנות (" + e.count + ")";
+                }),
+                n("daf646e6", "לידיעתך: עליך לסמן חשבונות כהלכה."),
+                n("i3895c32", "החשבון שלך בבדיקה מכיוון ששינית את הכינוי שלך (handle@) ב-X"),
+                n("i5f8b628", "אין אפשרותך לשנות חשבונות משויכים לפני בדיקת החשבון שלך."),
+                n("e9e663ac", "מועד התשלום שלך עבר."),
+                n("c3ddd22c", "בתנאים"),
+                n("c9729d8a", "בתנאים"),
+                n("cdcd1d2c", "הוסף חשבונות משויכים לארגון שלך"),
+                n("d30ea6f3", function (e) {
+                    return "האם אתה בטוח שברצונך להסיר את @" + e.name + "?";
+                }),
+                n("c2dfbb86", "כן, לבצע"),
+                n("ba047f76", "הסרת שיוך תסיר מיד את סימן האישור ותג השיוך. החיוב יימשך עד סיום החודש."),
+                n("j26dee0e", "הסר חשבון משויך"),
+                n("e30cbdf0", "חשבון משויך זה מנוי ב'ארגונים מאומתים' ועליו להישאר 'ארגון'. לא ניתן לשנות אותו לאדם."),
+                n("j3115ce8", "יחיד"),
+                n("d8bb1d84", "ארגון"),
+                n("e970bdbd", function (e) {
+                    return "נותרו " + e.count + " הזמנות";
+                }),
                 n("id67d953", function (e) {
                     return "משהו השתבש בעת אחזור פרטי התשלום עבור Stripe. אם הבעיה נמשכת, יש ליצור קשר עם " + e.supportEmail + ".";
                 }),
@@ -8892,8 +8914,8 @@
                 n("ha3efce4", "אוטומטי"),
                 n("hd8d044d", function (e) {
                     return "אוטומטי (" + e.quality + ")";
-                }),
-                n("a7bf9962", "הורד סרטון"),
+                });
+            n("a7bf9962", "הורד סרטון"),
                 n("ccc97152", "מהירות הצפייה"),
                 n("h531ade0", "איכות וידאו"),
                 n("e8b5757c", "0.25x"),
@@ -8924,8 +8946,8 @@
                 n("c1658fc6", "לא ניתן להציג את המדיה."),
                 n("h519ae04", "המדיה הושבתה בשל תביעת זכויות יוצרים."),
                 n("ce871584", "השידור הזה הסתיים."),
-                n("c101eb96", "השידור הזה לא זמין.");
-            n("gb24a514", "המדיה הזו הושבתה בתגובה לדיווח מבעל זכויות היוצרים."),
+                n("c101eb96", "השידור הזה לא זמין."),
+                n("gb24a514", "המדיה הזו הושבתה בתגובה לדיווח מבעל זכויות היוצרים."),
                 n("hcaf3e63", function (e) {
                     return "מדיה זו הושבתה בשל תביעת זכויות יוצרים שהוגשה על ידי " + e.holder + ".";
                 }),
@@ -11487,6 +11509,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["עזור לנו למצוא פוסטים "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["הדבר לא יפגע בפוסטים, אבל יוכל לעזור ", " פוסטים שאהובים על מספר רב של משתמשים"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " של התכונה הניסיונית הזאת"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["כמחבר הפוסט, תוכל "];
@@ -12960,8 +13006,8 @@
                 g = (m._numberFormat, m._numberFormatterFn),
                 h = m._pluralGeneratorFn,
                 y = (m._currencyNameFormat, m._currencyFormatterFn),
-                p = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
-                k = (m._dateFormat, m._dateFormatterFn),
+                k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
+                p = (m._dateFormat, m._dateFormatterFn),
                 l = m._relativeTimeFormatterFn,
                 N = m._unitFormatterFn;
             (m.a988371250 = g(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", s("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "‎+", "-": "‎-", E: "E", "‰": "‰" }, , { 3: { one: "0K", two: "0K", many: "0K", other: "0K" }, 4: { one: "00K", two: "00K", many: "00K", other: "00K" }, 5: { one: "000K", two: "000K", many: "000K", other: "000K" }, 6: { one: "0M", two: "0M", many: "0M", other: "0M" }, 7: { one: "00M", two: "00M", many: "00M", other: "00M" }, 8: { one: "000M", two: "000M", many: "000M", other: "000M" }, 9: { one: "0B", two: "0B", many: "0B", other: "0B" }, 10: { one: "00B", two: "00B", many: "00B", other: "00B" }, 11: { one: "000B", two: "000B", many: "000B", other: "000B" }, 12: { one: "0T", two: "0T", many: "0T", other: "0T" }, 13: { one: "00T", two: "00T", many: "00T", other: "00T" }, 14: { one: "000T", two: "000T", many: "000T", other: "000T" }, maxExponent: 14 }], m("he").pluralGenerator({}))),
@@ -13123,50 +13169,50 @@
                 (m.b243013950 = y(m("he").numberFormatter({ raw: "‏#,##0 '₫';‏-#,##0 '₫'" }))),
                 (m.b113545053 = y(m("he").numberFormatter({ raw: "‏#,##0.00 'ZAR';‏-#,##0.00 'ZAR'" }))),
                 (m.a2089710282 = y(m("he").numberFormatter({ raw: "‏#,##0.00 'ZMW';‏-#,##0.00 'ZMW'" }))),
-                (m.a1871789920 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMM", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.a1545794941 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMM y", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.b110751694 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
-                (m.b2130803935 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "E, d בMMM", timeSeparator: ":", days: { E: { 1: { sun: "יום א׳", mon: "יום ב׳", tue: "יום ג׳", wed: "יום ד׳", thu: "יום ה׳", fri: "יום ו׳", sat: "שבת" } } }, months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.a648253604 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "E, d בMMM y", timeSeparator: ":", days: { E: { 1: { sun: "יום א׳", mon: "יום ב׳", tue: "יום ג׳", wed: "יום ד׳", thu: "יום ה׳", fri: "יום ו׳", sat: "שבת" } } }, months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.b2123415767 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMMM", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
-                (m.b610879543 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMMM y בשעה H:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } }, gmtFormat: "GMT{0}‎", gmtZeroFormat: "GMT", hourFormat: ["‎+H;-H", "‎+H:mm;-H:mm‎"] })),
-                (m.b485629032 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } }, dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
-                (m.a1461506364 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
-                (m.b737066821 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } }, dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
-                (m.b204619312 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d.M.y", timeSeparator: ":" })),
-                (m.a1382337844 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
-                (m.b2028406269 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.b1470857514 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, d בMMMM y בשעה H:mm:ss zzzz", timeSeparator: ":", days: { E: { 4: { sun: "יום ראשון", mon: "יום שני", tue: "יום שלישי", wed: "יום רביעי", thu: "יום חמישי", fri: "יום שישי", sat: "יום שבת" } } }, months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } }, gmtFormat: "GMT{0}‎", gmtZeroFormat: "GMT", hourFormat: "‎+HH:mm;-HH:mm‎" })),
-                (m.b852130960 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMM y, H:mm:ss", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.a1567035924 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "dd.MM.y", timeSeparator: ":" })),
-                (m.a450725201 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "H:mm", timeSeparator: ":" })),
-                (m.b142825149 = p({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "יום א׳", mon: "יום ב׳", tue: "יום ג׳", wed: "יום ד׳", thu: "יום ה׳", fri: "יום ו׳", sat: "שבת" } } }, dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
-                (m.a1545109748 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
-                (m.a2140867619 = p({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMM y", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
-                (m.a1871104727 = p({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
-                (m.b1170617129 = p({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "יום ראשון", mon: "יום שני", tue: "יום שלישי", wed: "יום רביעי", thu: "יום חמישי", fri: "יום שישי", sat: "יום שבת" } } } })),
-                (m.a1480382839 = k(m("he").dateToPartsFormatter({ skeleton: "MMMd" }))),
-                (m.b1997889978 = k(m("he").dateToPartsFormatter({ skeleton: "yMMMd" }))),
-                (m.b946912247 = k(m("he").dateToPartsFormatter({ skeleton: "hm" }))),
-                (m.b1379521558 = k(m("he").dateToPartsFormatter({ skeleton: "MMMEd" }))),
-                (m.b1831796485 = k(m("he").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
-                (m.b1372133390 = k(m("he").dateToPartsFormatter({ skeleton: "MMMMd" }))),
-                (m.b1002286624 = k(m("he").dateToPartsFormatter({ datetime: "long" }))),
-                (m.b57770463 = k(m("he").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
-                (m.b1931538733 = k(m("he").dateToPartsFormatter({ date: "long" }))),
-                (m.a1077850386 = k(m("he").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
-                (m.a1985165081 = k(m("he").dateToPartsFormatter({ date: "short" }))),
-                (m.b722845059 = k(m("he").dateToPartsFormatter({ skeleton: "y" }))),
-                (m.a1875153946 = k(m("he").dateToPartsFormatter({ skeleton: "yMMM" }))),
-                (m.b1862264595 = k(m("he").dateToPartsFormatter({ datetime: "full" }))),
-                (m.a962786247 = k(m("he").dateToPartsFormatter({ datetime: "medium" }))),
-                (m.b1976648995 = k(m("he").dateToPartsFormatter({ skeleton: "yMMdd" }))),
-                (m.b1654457702 = k(m("he").dateToPartsFormatter({ time: "short" }))),
-                (m.b293998516 = k(m("he").dateToPartsFormatter({ skeleton: "Ehm" }))),
-                (m.b1998575171 = k(m("he").dateToPartsFormatter({ skeleton: "yMMMM" }))),
-                (m.a1304707066 = k(m("he").dateToPartsFormatter({ date: "medium" }))),
-                (m.a1479697646 = k(m("he").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.b1562024210 = k(m("he").dateToPartsFormatter({ skeleton: "EEEE" }))),
+                (m.a1871789920 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMM", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.a1545794941 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMM y", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.b110751694 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "h:mm a", timeSeparator: ":", dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
+                (m.b2130803935 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "E, d בMMM", timeSeparator: ":", days: { E: { 1: { sun: "יום א׳", mon: "יום ב׳", tue: "יום ג׳", wed: "יום ד׳", thu: "יום ה׳", fri: "יום ו׳", sat: "שבת" } } }, months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.a648253604 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "E, d בMMM y", timeSeparator: ":", days: { E: { 1: { sun: "יום א׳", mon: "יום ב׳", tue: "יום ג׳", wed: "יום ד׳", thu: "יום ה׳", fri: "יום ו׳", sat: "שבת" } } }, months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.b2123415767 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMMM", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
+                (m.b610879543 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMMM y בשעה H:mm:ss z", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } }, gmtFormat: "GMT{0}‎", gmtZeroFormat: "GMT", hourFormat: ["‎+H;-H", "‎+H:mm;-H:mm‎"] })),
+                (m.b485629032 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMM y, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } }, dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
+                (m.a1461506364 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
+                (m.b737066821 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMM, h:mm a", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } }, dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
+                (m.b204619312 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d.M.y", timeSeparator: ":" })),
+                (m.a1382337844 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "y", timeSeparator: ":" })),
+                (m.b2028406269 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "MMM y", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.b1470857514 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "EEEE, d בMMMM y בשעה H:mm:ss zzzz", timeSeparator: ":", days: { E: { 4: { sun: "יום ראשון", mon: "יום שני", tue: "יום שלישי", wed: "יום רביעי", thu: "יום חמישי", fri: "יום שישי", sat: "יום שבת" } } }, months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } }, gmtFormat: "GMT{0}‎", gmtZeroFormat: "GMT", hourFormat: "‎+HH:mm;-HH:mm‎" })),
+                (m.b852130960 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "d בMMM y, H:mm:ss", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.a1567035924 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "dd.MM.y", timeSeparator: ":" })),
+                (m.a450725201 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "H:mm", timeSeparator: ":" })),
+                (m.b142825149 = k({ 1: m("he").numberFormatter({ raw: "0" }), 2: m("he").numberFormatter({ raw: "00" }) }, { pattern: "E h:mm a", timeSeparator: ":", days: { E: { 1: { sun: "יום א׳", mon: "יום ב׳", tue: "יום ג׳", wed: "יום ד׳", thu: "יום ה׳", fri: "יום ו׳", sat: "שבת" } } }, dayPeriods: { am: "לפנה״צ", pm: "אחה״צ" } })),
+                (m.a1545109748 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "MMMM y", timeSeparator: ":", months: { M: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
+                (m.a2140867619 = k({ 1: m("he").numberFormatter({ raw: "0" }) }, { pattern: "d בMMM y", timeSeparator: ":", months: { M: { 3: { 1: "ינו׳", 2: "פבר׳", 3: "מרץ", 4: "אפר׳", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוג׳", 9: "ספט׳", 10: "אוק׳", 11: "נוב׳", 12: "דצמ׳" } } } })),
+                (m.a1871104727 = k({}, { pattern: "LLLL", timeSeparator: ":", months: { L: { 4: { 1: "ינואר", 2: "פברואר", 3: "מרץ", 4: "אפריל", 5: "מאי", 6: "יוני", 7: "יולי", 8: "אוגוסט", 9: "ספטמבר", 10: "אוקטובר", 11: "נובמבר", 12: "דצמבר" } } } })),
+                (m.b1170617129 = k({}, { pattern: "cccc", timeSeparator: ":", days: { c: { 4: { sun: "יום ראשון", mon: "יום שני", tue: "יום שלישי", wed: "יום רביעי", thu: "יום חמישי", fri: "יום שישי", sat: "יום שבת" } } } })),
+                (m.a1480382839 = p(m("he").dateToPartsFormatter({ skeleton: "MMMd" }))),
+                (m.b1997889978 = p(m("he").dateToPartsFormatter({ skeleton: "yMMMd" }))),
+                (m.b946912247 = p(m("he").dateToPartsFormatter({ skeleton: "hm" }))),
+                (m.b1379521558 = p(m("he").dateToPartsFormatter({ skeleton: "MMMEd" }))),
+                (m.b1831796485 = p(m("he").dateToPartsFormatter({ skeleton: "yMMMEd" }))),
+                (m.b1372133390 = p(m("he").dateToPartsFormatter({ skeleton: "MMMMd" }))),
+                (m.b1002286624 = p(m("he").dateToPartsFormatter({ datetime: "long" }))),
+                (m.b57770463 = p(m("he").dateToPartsFormatter({ skeleton: "yMMMdhm" }))),
+                (m.b1931538733 = p(m("he").dateToPartsFormatter({ date: "long" }))),
+                (m.a1077850386 = p(m("he").dateToPartsFormatter({ skeleton: "MMMdhm" }))),
+                (m.a1985165081 = p(m("he").dateToPartsFormatter({ date: "short" }))),
+                (m.b722845059 = p(m("he").dateToPartsFormatter({ skeleton: "y" }))),
+                (m.a1875153946 = p(m("he").dateToPartsFormatter({ skeleton: "yMMM" }))),
+                (m.b1862264595 = p(m("he").dateToPartsFormatter({ datetime: "full" }))),
+                (m.a962786247 = p(m("he").dateToPartsFormatter({ datetime: "medium" }))),
+                (m.b1976648995 = p(m("he").dateToPartsFormatter({ skeleton: "yMMdd" }))),
+                (m.b1654457702 = p(m("he").dateToPartsFormatter({ time: "short" }))),
+                (m.b293998516 = p(m("he").dateToPartsFormatter({ skeleton: "Ehm" }))),
+                (m.b1998575171 = p(m("he").dateToPartsFormatter({ skeleton: "yMMMM" }))),
+                (m.a1304707066 = p(m("he").dateToPartsFormatter({ date: "medium" }))),
+                (m.a1479697646 = p(m("he").dateToPartsFormatter({ skeleton: "MMMM" }))),
+                (m.b1562024210 = p(m("he").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b1307220214 = l(m("he").numberFormatter({}), m("he").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "בעוד יום {0}", "relativeTimePattern-count-two": "בעוד יומיים", "relativeTimePattern-count-many": "בעוד {0} ימים", "relativeTimePattern-count-other": "בעוד {0} ימים" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "לפני יום {0}", "relativeTimePattern-count-two": "לפני יומיים", "relativeTimePattern-count-many": "לפני {0} ימים", "relativeTimePattern-count-other": "לפני {0} ימים" }, "relative-type--2": "שלשום", "relative-type--1": "אתמול", "relative-type-0": "היום", "relative-type-1": "מחר", "relative-type-2": "מחרתיים" })),
                 (m.a1281908463 = N(m("he").numberFormatter({}), m("he").pluralGenerator({}), { compoundUnitPattern: "{0} לכל {1}", unitProperties: { displayName: "שניות", one: "שניה", two: "שתי שניות", many: "‏{0} שניות", other: "{0} שניות", perUnitPattern: "{0} לשניה" } })),
                 (m.b605054833 = N(m("he").numberFormatter({}), m("he").pluralGenerator({}), { compoundUnitPattern: "{0} לכל {1}", unitProperties: { displayName: "דקות", one: "דקה", two: "שתי דקות", many: "{0} דקות", other: "{0} דקות", perUnitPattern: "{0}/דקה" } })),
@@ -13308,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.c50dbdaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.1696626a.js.map

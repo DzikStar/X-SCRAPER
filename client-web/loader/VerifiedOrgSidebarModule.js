@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.VerifiedOrgSidebarModule", "icons/IconChevronRight-js"],
+    ["loader.VerifiedOrgSidebarModule"],
     {
         150943: (e, n, a) => {
             a.d(n, { Z: () => b });
@@ -377,12 +377,12 @@
                 v = a(177210),
                 h = a(693510),
                 E = a(97882),
-                Z = a(782826),
-                S = a(725516),
+                S = a(782826),
+                Z = a(725516),
                 K = a(336678),
-                w = a(854219),
+                F = a(854219),
                 C = a(481326),
-                F = a(199232),
+                w = a(199232),
                 P = a(241989),
                 R = a(794271),
                 I = a(443781),
@@ -395,8 +395,8 @@
                 U = _().d0924f58,
                 z = _().j8d53b64,
                 O = _().jd26f2a6,
-                M = _().aaa798fc,
-                H = _().e0a492e6,
+                H = _().aaa798fc,
+                M = _().e0a492e6,
                 B = _().d9cbd02c,
                 N = _().ed4759a6,
                 j = _().dad69faa,
@@ -420,16 +420,16 @@
                     );
                 },
                 Y = () => {
-                    const e = (0, S.z)(),
+                    const e = (0, Z.z)(),
                         { userClaims: n } = t.useContext(I.rC),
                         a = n.hasSubscription("verified_org_basic"),
                         i = (0, k.hC)("responsive_web_verified_organizations_idv_enabled"),
                         { completedByDate: r, enabled: m, status: _ } = (0, P.Z)(),
                         E = i && m && "CanVerifyIdentity" === _,
                         K = (0, k.hC)("responsive_web_verified_organizations_intercom_enabled"),
-                        { origin: D } = Z.ZP.get(),
+                        { origin: D } = S.ZP.get(),
                         T = (0, v.Z)({ returnUrl: `${D}/home`, originProduct: "VerifiedOrganizations" }),
-                        Y = (0, F.Z)(["VerifiedOrganization"]).hasVerifiedOrgPaymentFailure,
+                        Y = (0, w.Z)(["VerifiedOrganization"]).hasVerifiedOrgPaymentFailure,
                         { hasApplicationStatus: $, hasVerifiedOrgFeature: ee } = (0, h.ZP)(),
                         ne = t.useMemo(() => ee(h.ny.BusinessPreapprovalAdminPortalAccess), [ee]),
                         ae = t.useMemo(() => $(f.i.ApplicationInReview), [$]);
@@ -455,18 +455,18 @@
                                     t.Fragment,
                                     null,
                                     t.createElement(X, { onClick: te }),
-                                    a ? t.createElement(s.Z, { link: { pathname: "/i/verified-orgs-tier-switch", state: { referring_page: "vo_sidebar_module" } }, onClick: te("switch_tier"), style: J.link, testID: "affiliateUpgradeLink" }, t.createElement(o.ZP, { weight: "medium" }, O), t.createElement(l.Z, { style: { flexDirection: "row" } }, t.createElement(u.ZP, { background: "primary" }, M), t.createElement(p.default, { style: J.icon }))) : null,
+                                    a ? t.createElement(s.Z, { link: { pathname: "/i/verified-orgs-tier-switch", state: { referring_page: "vo_sidebar_module" } }, onClick: te("switch_tier"), style: J.link, testID: "affiliateUpgradeLink" }, t.createElement(o.ZP, { weight: "medium" }, O), t.createElement(l.Z, { style: { flexDirection: "row" } }, t.createElement(u.ZP, { background: "primary" }, H), t.createElement(p.default, { style: J.icon }))) : null,
                                     Y ? t.createElement(s.Z, { interactiveStyles: ie, onClick: le, style: J.paymentAlert }, t.createElement(l.Z, { style: J.rowContainer }, t.createElement(l.Z, { style: J.textContainer }, t.createElement(g.default, { style: J.alertIcon }), t.createElement(o.ZP, { weight: "medium" }, j)), t.createElement(y.default, { style: J.linkIcon }))) : null,
                                     t.createElement(s.Z, { link: "/i/verified-advertising", onClick: te("manage_ad_credits"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, A), t.createElement(p.default, { style: J.icon })),
                                     t.createElement(s.Z, { link: "https://ads.x.com", onClick: te("setup_ads_campaign"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, x), t.createElement(p.default, { style: J.icon })),
-                                    t.createElement(s.Z, { link: "/i/verified/jobs", onClick: te("manage_jobs"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, H), t.createElement(p.default, { style: J.icon })),
-                                    K ? t.createElement(w.Z, { onClick: te("get_support") }, t.createElement(s.Z, { style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon }))) : t.createElement(s.Z, { link: C.A9, onClick: te("get_support"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon })),
+                                    t.createElement(s.Z, { link: "/i/verified/jobs", onClick: te("manage_jobs"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, M), t.createElement(p.default, { style: J.icon })),
+                                    K ? t.createElement(F.Z, { onClick: te("get_support") }, t.createElement(s.Z, { style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon }))) : t.createElement(s.Z, { link: C.A9, onClick: te("get_support"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, U), t.createElement(p.default, { style: J.icon })),
                                     t.createElement(s.Z, { link: "/i/verified", onClick: te("vo_home"), style: J.link }, t.createElement(o.ZP, { color: "blue500", weight: "medium" }, z), t.createElement(p.default, { style: J.icon })),
                                 ),
                             [a, K, te, Y, le, ie],
                         ),
                         se = t.useMemo(() => t.createElement(l.Z, { style: [J.callout, E ? J.warningBackground : J.infoBackground] }, t.createElement(l.Z, { style: J.calloutHeader }, t.createElement(g.default, { style: J.linkIcon }), t.createElement(o.ZP, { weight: "bold" }, E ? Q : B)), E ? null : t.createElement(o.ZP, { size: "subtext1", weight: "normal" }, N), E ? t.createElement(l.Z, { style: J.idvEntrypoint }, t.createElement(o.ZP, { size: "subtext1", weight: "normal" }, q({ date: r })), t.createElement(R.Z, { redirectPath: location.pathname }), t.createElement(o.ZP, { color: "gray900", size: "subtext2" }, W, " ", t.createElement(o.ZP, { link: "https://help.x.com/rules-and-policies/verification-policy" }, G))) : null), [E, r]),
-                        oe = t.useMemo(() => t.createElement(t.Fragment, null, ae ? se : null, t.createElement(s.Z, { link: "/i/verified/jobs", onClick: te("manage_jobs"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, H), t.createElement(p.default, { style: J.icon })), t.createElement(s.Z, { link: "/i/verified", onClick: te("vo_home"), style: J.link }, t.createElement(o.ZP, { color: "blue500", weight: "medium" }, z), t.createElement(p.default, { style: J.icon }))), [ae, te, se]);
+                        oe = t.useMemo(() => t.createElement(t.Fragment, null, ae ? se : null, t.createElement(s.Z, { link: "/i/verified/jobs", onClick: te("manage_jobs"), style: J.link }, t.createElement(o.ZP, { weight: "medium" }, M), t.createElement(p.default, { style: J.icon })), t.createElement(s.Z, { link: "/i/verified", onClick: te("vo_home"), style: J.link }, t.createElement(o.ZP, { color: "blue500", weight: "medium" }, z), t.createElement(p.default, { style: J.icon }))), [ae, te, se]);
                     return t.createElement(b.g, { testID: "verifiedOrgSidebarModule" }, t.createElement(l.Z, null, t.createElement(o.ZP, { size: "headline1", style: J.header, weight: "bold" }, V), ne ? oe : re));
                 },
                 $ = () => t.createElement(D.H, { errorConfig: { context: "VerifiedOrgSidebarModule" } }, t.createElement(Y, null)),
@@ -605,7 +605,7 @@
             const l = t.Z;
         },
         794271: (e, n, a) => {
-            a.d(n, { Z: () => S });
+            a.d(n, { Z: () => Z });
             var t = a(807896),
                 l = a(202784),
                 i = a(325686),
@@ -647,11 +647,11 @@
                         }, [n, p, u, c]);
                     return l.createElement(i.Z, { style: K.container, testID: "identity-verification-entrypoint" }, y);
                 },
-                Z = (e) => {
+                S = (e) => {
                     const { enabled: n, status: a } = (0, k.Z)();
                     return n && a ? l.createElement(E, (0, t.Z)({}, e, { status: a })) : null;
                 },
-                S = (e) => ((0, p.hC)("responsive_web_verified_organizations_idv_enabled") ? l.createElement(_.H, { errorConfig: { context: "identity_verification_entrypoint" } }, l.createElement(y.nO, { namespace: { component: "vo_idv_entrypoint" } }, l.createElement(Z, e))) : null),
+                Z = (e) => ((0, p.hC)("responsive_web_verified_organizations_idv_enabled") ? l.createElement(_.H, { errorConfig: { context: "identity_verification_entrypoint" } }, l.createElement(y.nO, { namespace: { component: "vo_idv_entrypoint" } }, l.createElement(S, e))) : null),
                 K = c.default.create((e) => ({ container: { gap: e.spaces.space12 } }));
         },
         241989: (e, n, a) => {
@@ -667,21 +667,6 @@
                     return { enabled: a, status: n, completedByDate: t ? new Date(t).toLocaleDateString(void 0, { year: "numeric", month: "long", day: "numeric" }) : null };
                 };
         },
-        58399: (e, n, a) => {
-            a.r(n), a.d(n, { default: () => c });
-            var t = a(202784),
-                l = a(890601),
-                i = a(783427),
-                r = a(717683),
-                s = a(347101);
-            const o = (e = {}) => {
-                const n = t.useContext(r.Z),
-                    { direction: a } = (0, i.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, n && s.Z.iconRTL], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: a });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.ca3c390a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.256ba90a.js.map

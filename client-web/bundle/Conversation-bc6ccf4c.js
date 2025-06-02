@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Conversation-bc6ccf4c", "icons/IconFilter-js"],
+    ["bundle.Conversation-bc6ccf4c", "icons/IconMediaExpand-js", "icons/IconTrashcan-js"],
     {
         362075: (e, t, r) => {
             r.d(t, { Z: () => h });
@@ -66,11 +66,11 @@
             const d = (e) => {
                     const { decoration: t, description: r, disabled: d = !1, isActive: h = !1, label: u, link: g, onPress: m, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: w, testID: C = "pivot", thumbnail: v, thumbnailSize: E, withoutArrow: Z = !1 } = e,
                         x = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
-                        k = "string" == typeof u ? a.createElement(l.ZP, null, u) : u,
-                        I = "object" == typeof g && g.external && !g.openInSameFrame,
+                        I = "string" == typeof u ? a.createElement(l.ZP, null, u) : u,
+                        k = "object" == typeof g && g.external && !g.openInSameFrame,
                         D = r ? ("string" == typeof r ? a.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, r) : r) : null,
                         R = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : g, onPress: m, role: y, style: [p.root, R, d && p.disabled, w], testID: C, withInteractiveStyling: !!g || !!m }, a.createElement(o.Z, { style: p.contentContainer }, v ? a.createElement(o.Z, { style: x }, v) : null, a.createElement(o.Z, { style: p.content }, k, D), f ? f() : null, (!g && !m) || d || Z ? null : I ? a.createElement(n.default, { style: p.icon }) : a.createElement(i.default, { style: p.icon })), t);
+                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : g, onPress: m, role: y, style: [p.root, R, d && p.disabled, w], testID: C, withInteractiveStyling: !!g || !!m }, a.createElement(o.Z, { style: p.contentContainer }, v ? a.createElement(o.Z, { style: x }, v) : null, a.createElement(o.Z, { style: p.content }, I, D), f ? f() : null, (!g && !m) || d || Z ? null : k ? a.createElement(n.default, { style: p.icon }) : a.createElement(i.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -173,18 +173,18 @@
                 u = r(392237);
             const g = u.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 m = { ...u.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: a, dedicatedPillRow: n, description: u, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: w, illustration: C, infoLabel: v, infoLabelType: E, inlineCallout: Z, label: x, name: k, onChange: I, pillText: D, pillType: R, reverseLabels: _, secondaryContent: S, secondaryDescription: P, switchStyle: z, testID: T }) => {
-                    const $ = (0, h.b)(),
-                        M = (0, h.b)(),
+                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: a, dedicatedPillRow: n, description: u, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: w, illustration: C, infoLabel: v, infoLabelType: E, inlineCallout: Z, label: x, name: I, onChange: k, pillText: D, pillType: R, reverseLabels: _, secondaryContent: z, secondaryDescription: S, switchStyle: P, testID: T }) => {
+                    const M = (0, h.b)(),
+                        $ = (0, h.b)(),
                         W = (0, h.b)(),
-                        B = o.createElement(c.ZP, { color: z ? (a ? "text" : "gray800") : "text", id: $, role: "label", size: z ? "body" : "headline2", testID: "headline-label", weight: z ? "normal" : "bold" }, x),
-                        j = !!u && o.createElement(c.ZP, { color: "gray700", id: M, size: "subtext1", style: D ? g.descriptionWithPill : g.description, testID: "description-label" }, u),
-                        F = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, P),
+                        B = o.createElement(c.ZP, { color: P ? (a ? "text" : "gray800") : "text", id: M, role: "label", size: P ? "body" : "headline2", testID: "headline-label", weight: P ? "normal" : "bold" }, x),
+                        j = !!u && o.createElement(c.ZP, { color: "gray700", id: $, size: "subtext1", style: D ? g.descriptionWithPill : g.description, testID: "description-label" }, u),
+                        L = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, S),
                         H = D ? o.createElement(d.ZP, { style: n ? g.pill : g.inlinePill, type: R }, D) : null,
-                        L = o.createElement(o.Fragment, null, n ? H : null, o.createElement(i.Z, { style: [g.row, v && g.marginBottom8] }, _ ? j : B, n ? null : H), o.createElement(i.Z, { style: [g.row, _ && g.marginTop4] }, _ ? B : j), S || (P ? F : void 0)),
-                        O = z ? "unset" : (r ? 100 / r : 100) + "%",
-                        V = z ? [g.padding8, g.borderRadiusLarge, a ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, a ? g.checked : null, g.backgroundDefault];
-                    return o.createElement(o.Fragment, null, o.createElement(p.Z, { disabled: b, style: [g.root, ...V, w ? { maxWidth: O, ...g.grow } : null, 1 === t || w ? null : g.withMarginTop, t !== r && w && !z && g.withMarginEnd, !b && g.interactive], testID: T, withInteractiveStyling: !z }, !!C && o.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), o.createElement(i.Z, { style: [g.labelContainer, z && g.alignCenter] }, !!v && o.createElement(i.Z, { style: g.info }, o.createElement(d.ZP, { background: "green" === E ? "green500" : "red" === E ? "magenta500" : "yellow" === E ? "orange50" : "gray500" }, o.createElement(c.ZP, { color: "yellow" === E ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== E && "yellow" !== E && o.createElement(l.default, { style: g.infoIcon, testID: "infoIcon" })), L, a && !!Z && o.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, Z)), !!y && o.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, o.createElement(c.ZP, { id: W, size: "subtext1", weight: "bold" }, y)), o.createElement("input", { "aria-describedby": `${M} ${W}`, "aria-label": e, "aria-labelledby": $, "aria-posinset": t, "aria-setsize": r, checked: a, disabled: b, name: k, onChange: a ? s.Z : I, style: m, type: "radio" })), b && f ? f : null);
+                        F = o.createElement(o.Fragment, null, n ? H : null, o.createElement(i.Z, { style: [g.row, v && g.marginBottom8] }, _ ? j : B, n ? null : H), o.createElement(i.Z, { style: [g.row, _ && g.marginTop4] }, _ ? B : j), z || (S ? L : void 0)),
+                        V = P ? "unset" : (r ? 100 / r : 100) + "%",
+                        O = P ? [g.padding8, g.borderRadiusLarge, a ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, a ? g.checked : null, g.backgroundDefault];
+                    return o.createElement(o.Fragment, null, o.createElement(p.Z, { disabled: b, style: [g.root, ...O, w ? { maxWidth: V, ...g.grow } : null, 1 === t || w ? null : g.withMarginTop, t !== r && w && !P && g.withMarginEnd, !b && g.interactive], testID: T, withInteractiveStyling: !P }, !!C && o.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), o.createElement(i.Z, { style: [g.labelContainer, P && g.alignCenter] }, !!v && o.createElement(i.Z, { style: g.info }, o.createElement(d.ZP, { background: "green" === E ? "green500" : "red" === E ? "magenta500" : "yellow" === E ? "orange50" : "gray500" }, o.createElement(c.ZP, { color: "yellow" === E ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== E && "yellow" !== E && o.createElement(l.default, { style: g.infoIcon, testID: "infoIcon" })), F, a && !!Z && o.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, Z)), !!y && o.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, o.createElement(c.ZP, { id: W, size: "subtext1", weight: "bold" }, y)), o.createElement("input", { "aria-describedby": `${$} ${W}`, "aria-label": e, "aria-labelledby": M, "aria-posinset": t, "aria-setsize": r, checked: a, disabled: b, name: I, onChange: a ? s.Z : k, style: m, type: "radio" })), b && f ? f : null);
                 },
                 f = (e) => {
                     const t = o.useCallback(({ value: e, ...t }) => o.createElement(b, (0, a.Z)({}, t, { key: e })), []);
@@ -195,7 +195,22 @@
             r.d(t, { Z: () => a });
             const a = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        517747: (e, t, r) => {
+        841972: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => c });
+            var a = r(202784),
+                o = r(890601),
+                n = r(783427),
+                i = r(717683),
+                l = r(347101);
+            const s = (e = {}) => {
+                const t = a.useContext(i.Z),
+                    { direction: r } = (0, n.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: r });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
+        250195: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var a = r(202784),
                 o = r(890601),
@@ -203,11 +218,11 @@
                 i = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M16 6V4.5C16 3.12 14.88 2 13.5 2h-3C9.11 2 8 3.12 8 4.5V6H3v2h1.06l.81 11.21C4.98 20.78 6.28 22 7.86 22h8.27c1.58 0 2.88-1.22 3-2.79L19.93 8H21V6h-5zm-6-1.5c0-.28.22-.5.5-.5h3c.27 0 .5.22.5.5V6h-4V4.5zM11 17H9v-6h2v6zm4 0h-2v-6h2v6z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-bc6ccf4c.086e80fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-bc6ccf4c.b62eb78a.js.map

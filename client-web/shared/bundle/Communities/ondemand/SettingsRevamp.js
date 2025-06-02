@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconUndo-js"],
     {
         947135: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -44,20 +44,20 @@
                 s = n(530525),
                 c = n(439592),
                 d = n(530732),
-                h = n(725516);
-            const u = "upsell-card",
+                u = n(725516);
+            const h = "upsell-card",
                 f = (e) => {
-                    const { Icon: t, decoration: n, header: f, iconColor: g, imageUrl: m, link: y, onClick: v, primaryText: x, secondaryText: w } = e,
-                        b = (0, h.z)(),
+                    const { Icon: t, decoration: n, header: f, iconColor: g, imageUrl: m, link: y, onClick: v, primaryText: x, secondaryText: b } = e,
+                        w = (0, u.z)(),
                         Z = r.useCallback(() => {
-                            b.scribeAction("click"), v && v();
-                        }, [b, v]),
+                            w.scribeAction("click"), v && v();
+                        }, [w, v]),
                         C = i.Z.generate({ backgroundColor: a.default.theme.colors.transparent, color: a.default.theme.colors.gray300 }),
-                        S = () => r.createElement(o.Z, { style: p.header }, t && r.createElement(t, { style: [p.icon, g && { color: a.default.theme.colors[g] }], testID: `${u}-icon` }), r.createElement(l.ZP, { size: "subtext1" }, f)),
-                        E = () => r.createElement(r.Fragment, null, r.createElement(l.ZP, { size: "headline2", weight: "bold" }, x), w && r.createElement(l.ZP, { color: "gray700" }, w)),
-                        k = () => r.createElement(o.Z, { style: p.decoration, testID: `${u}-decoration` }, n),
-                        O = () => !!m && r.createElement(o.Z, { style: p.decoration, testID: `${u}-img` }, r.createElement(s.Z, { "aria-label": "", aspectMode: c.Z.exact(1), image: { url: m, width: 88, height: 88 } }));
-                    return r.createElement(d.Z, { interactiveStyles: C, link: y, onClick: Z, style: p.root }, r.createElement(o.Z, { style: p.content }, r.createElement(S, { Icon: t, header: f, iconColor: g }), r.createElement(E, { primaryText: x, secondaryText: w })), n ? r.createElement(k, { decoration: n }) : r.createElement(O, { imageUrl: m }));
+                        S = () => r.createElement(o.Z, { style: p.header }, t && r.createElement(t, { style: [p.icon, g && { color: a.default.theme.colors[g] }], testID: `${h}-icon` }), r.createElement(l.ZP, { size: "subtext1" }, f)),
+                        E = () => r.createElement(r.Fragment, null, r.createElement(l.ZP, { size: "headline2", weight: "bold" }, x), b && r.createElement(l.ZP, { color: "gray700" }, b)),
+                        k = () => r.createElement(o.Z, { style: p.decoration, testID: `${h}-decoration` }, n),
+                        O = () => !!m && r.createElement(o.Z, { style: p.decoration, testID: `${h}-img` }, r.createElement(s.Z, { "aria-label": "", aspectMode: c.Z.exact(1), image: { url: m, width: 88, height: 88 } }));
+                    return r.createElement(d.Z, { interactiveStyles: C, link: y, onClick: Z, style: p.root }, r.createElement(o.Z, { style: p.content }, r.createElement(S, { Icon: t, header: f, iconColor: g }), r.createElement(E, { primaryText: x, secondaryText: b })), n ? r.createElement(k, { decoration: n }) : r.createElement(O, { imageUrl: m }));
                 },
                 p = a.default.create((e) => ({ root: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderWidth: e.borderWidths.medium, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, content: { flexShrink: 1 }, header: { alignItems: "center", flexDirection: "row", marginBottom: e.spaces.space12 }, icon: { height: e.spaces.space20, width: e.spaces.space20, marginEnd: e.spaces.space8 }, decoration: { width: `calc(${e.spaces.space80} + ${e.spaces.space8})`, marginStart: e.spaces.space16 } })),
                 g = r.memo(f);
@@ -72,13 +72,13 @@
                 s = n(392237),
                 c = n(111677),
                 d = n.n(c),
-                h = n(349035);
-            const u = "error-detail",
+                u = n(349035);
+            const h = "error-detail",
                 f = d().e49537c2,
                 p = d().a9ae1e78;
             class g extends r.PureComponent {
                 render() {
-                    return r.createElement(o.Z, { testID: u }, r.createElement(h.Z, null), r.createElement(i.Z, { style: m.root }, r.createElement(a.ZP, { align: "center", color: "gray700", style: m.retryText }, f), r.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, p)));
+                    return r.createElement(o.Z, { testID: h }, r.createElement(u.Z, null), r.createElement(i.Z, { style: m.root }, r.createElement(a.ZP, { align: "center", color: "gray700", style: m.retryText }, f), r.createElement(l.ZP, { link: { pathname: "/search" }, type: "brandFilled" }, p)));
                 }
             }
             const m = s.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
@@ -93,8 +93,8 @@
                 s = n(57074),
                 c = n.n(s),
                 d = n(516951),
-                h = n(88656),
-                u = n(71620),
+                u = n(88656),
+                h = n(71620),
                 f = n(163889),
                 p = n(312771);
             const g = ({ render: e }) => e({ fetchStatus: p.ZP.LOADING, data: null, error: null, retry: d.Z });
@@ -106,7 +106,7 @@
                     return { error: e };
                 }
                 componentDidCatch(e, t) {
-                    if (!(e instanceof h.Z)) throw e;
+                    if (!(e instanceof u.Z)) throw e;
                     this.props.errorHandler(e), (0, f.Hj)(e, { level: "warning", tags: { userVisible: !0 } });
                 }
                 render() {
@@ -120,15 +120,15 @@
                 v = (e, t) =>
                     function ({ fetchPolicy: n = "store-or-network", render: o, variables: i }) {
                         const [a, s] = l()(e),
-                            d = (0, u.n7)(t.errorConfig.context),
-                            h = c()(i),
+                            d = (0, h.n7)(t.errorConfig.context),
+                            u = c()(i),
                             f = r.useCallback(() => {
-                                s(h, { fetchPolicy: "network-only" });
-                            }, [s, h]);
+                                s(u, { fetchPolicy: "network-only" });
+                            }, [s, u]);
                         return (
                             r.useLayoutEffect(() => {
-                                s(h, { fetchPolicy: n });
-                            }, [n, s, h]),
+                                s(u, { fetchPolicy: n });
+                            }, [n, s, u]),
                             a
                                 ? r.createElement(
                                       r.Suspense,
@@ -140,7 +140,7 @@
                     };
         },
         466441: (e, t, n) => {
-            n.r(t), n.d(t, { NotFoundScreen: () => x, default: () => b });
+            n.r(t), n.d(t, { NotFoundScreen: () => x, default: () => w });
             n(571372);
             var r = n(202784),
                 o = n(386802),
@@ -150,8 +150,8 @@
                 s = n.n(l),
                 c = n(187669),
                 d = n(449067),
-                h = n(38293),
-                u = n(56851),
+                u = n(38293),
+                h = n(56851),
                 f = n(652904),
                 p = n(952793),
                 g = n(163889),
@@ -166,14 +166,14 @@
                     (0, c.q)(() => {
                         a && t && (0, g.ZP)(new Error(`Page not found: ${t}`));
                     }),
-                    r.createElement(f.Z, null, r.createElement(d.Z.Configure, { backLocation: "/", documentTitle: y, title: v }), r.createElement(i.Z, { style: n && w.modal }, r.createElement(u.Z, null)), r.createElement(h.Z, { title: y, withMeta: !1 }))
+                    r.createElement(f.Z, null, r.createElement(d.Z.Configure, { backLocation: "/", documentTitle: y, title: v }), r.createElement(i.Z, { style: n && b.modal }, r.createElement(h.Z, null)), r.createElement(u.Z, { title: y, withMeta: !1 }))
                 );
             }
-            const w = a.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
-                b = (0, m.Z)(x, { page: "not_found" });
+            const b = a.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
+                w = (0, m.Z)(x, { page: "not_found" });
         },
         242454: (e, t, n) => {
-            n.d(t, { Z: () => h });
+            n.d(t, { Z: () => u });
             var r = n(807896),
                 o = n(202784),
                 i = n(325686),
@@ -182,65 +182,28 @@
                 s = n(530732),
                 c = n(392237);
             const d = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, root: { justifyContent: "center", minHeight: e.spaces.space48, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 } })),
-                h = ({ align: e = "center", color: t, label: n, ...h }) => {
-                    const u = l.Z.generate({ backgroundColor: c.default.theme.colors.transparent, color: c.default.theme.colors[t], insetFocusRing: !0 });
-                    return o.createElement(i.Z, { style: d.container }, o.createElement(s.Z, (0, r.Z)({}, h, { interactiveStyles: u, style: d.root }), o.createElement(a.ZP, { align: e, color: t }, n)));
+                u = ({ align: e = "center", color: t, label: n, ...u }) => {
+                    const h = l.Z.generate({ backgroundColor: c.default.theme.colors.transparent, color: c.default.theme.colors[t], insetFocusRing: !0 });
+                    return o.createElement(i.Z, { style: d.container }, o.createElement(s.Z, (0, r.Z)({}, u, { interactiveStyles: h, style: d.root }), o.createElement(a.ZP, { align: e, color: t }, n)));
                 };
         },
-        246492: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
+        775042: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
                 i = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+                a = n(717683),
+                l = n(347101);
+            const s = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: n } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.29 2.29l1.42 1.42L5.41 6H15c3.87 0 7 3.13 7 7s-3.13 7-7 7H8v-2h7c2.76 0 5-2.24 5-5s-2.24-5-5-5H5.41l2.3 2.29-1.42 1.42L1.59 7l4.7-4.71z" })) }, { writingDirection: n });
             };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        264171: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        98440: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        262009: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
         },
         716042: (e, t, n) => {
-            n.d(t, { JN: () => Q, W8: () => ne, JV: () => F });
+            n.d(t, { JN: () => Q, W8: () => ne, JV: () => U });
             var r = n(807896);
             var o = n(759147);
             function i(e, t) {
@@ -302,8 +265,8 @@
             var s = n(709249),
                 c = n(887371),
                 d = n(411987),
-                h = n(695058),
-                u = n(545754),
+                u = n(695058),
+                h = n(545754),
                 f = n(580753),
                 p = n(202784),
                 g = n(928316),
@@ -311,8 +274,8 @@
                 y = n.n(m),
                 v = n(238777),
                 x = n(213980),
-                w = n.n(x),
-                b = (function () {
+                b = n.n(x),
+                w = (function () {
                     function e() {
                         (0, s.Z)(this, e), (0, a.Z)(this, "refs", {});
                     }
@@ -410,21 +373,21 @@
                 var n = t.displayName || t.name;
                 return n ? "".concat(e, "(").concat(n, ")") : e;
             }
-            function A(e, t) {
+            function N(e, t) {
                 var n = e.getBoundingClientRect();
                 return { top: n.top + t.top, left: n.left + t.left };
             }
-            function N(e) {
+            function A(e) {
                 return e.touches && e.touches.length ? { x: e.touches[0].pageX, y: e.touches[0].pageY } : e.changedTouches && e.changedTouches.length ? { x: e.changedTouches[0].pageX, y: e.changedTouches[0].pageY } : { x: e.pageX, y: e.pageY };
             }
-            function M(e, t) {
+            function L(e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : { left: 0, top: 0 };
                 if (e) {
                     var r = { left: n.left + e.offsetLeft, top: n.top + e.offsetTop };
-                    return e.parentNode === t ? r : M(e.parentNode, t, r);
+                    return e.parentNode === t ? r : L(e.parentNode, t, r);
                 }
             }
-            function L(e) {
+            function M(e) {
                 var t = e.lockOffset,
                     n = e.width,
                     r = e.height,
@@ -450,14 +413,14 @@
                         : W(e.parentNode)
                     : null;
             }
-            var j = 27,
-                H = 32,
+            var H = 27,
+                j = 32,
                 _ = 37,
                 B = 38,
                 K = 39,
                 G = 40,
-                z = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
-            function F(e) {
+                F = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
+            function U(e) {
                 var t,
                     n,
                     o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { withRef: !1 };
@@ -468,10 +431,10 @@
                                 var e, t;
                                 (0, s.Z)(this, n);
                                 for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i];
-                                return (t = (0, d.Z)(this, (e = (0, h.Z)(n)).call.apply(e, [this].concat(o)))), (0, a.Z)((0, f.Z)((0, f.Z)(t)), "wrappedInstance", (0, p.createRef)()), t;
+                                return (t = (0, d.Z)(this, (e = (0, u.Z)(n)).call.apply(e, [this].concat(o)))), (0, a.Z)((0, f.Z)((0, f.Z)(t)), "wrappedInstance", (0, p.createRef)()), t;
                             }
                             return (
-                                (0, u.Z)(n, t),
+                                (0, h.Z)(n, t),
                                 (0, c.Z)(n, [
                                     {
                                         key: "componentDidMount",
@@ -500,10 +463,10 @@
                     n
                 );
             }
-            function V(e) {
+            function z(e) {
                 return null != e.sortableHandle;
             }
-            var U = (function () {
+            var V = (function () {
                 function e(t, n) {
                     (0, s.Z)(this, e), (this.container = t), (this.onScrollCallback = n);
                 }
@@ -528,15 +491,15 @@
                                     s = { x: 1, y: 1 },
                                     c = 10,
                                     d = 10,
-                                    h = this.container,
-                                    u = h.scrollTop,
-                                    f = h.scrollLeft,
-                                    p = h.scrollHeight,
-                                    g = h.scrollWidth,
-                                    m = 0 === u,
-                                    y = p - u - h.clientHeight == 0,
+                                    u = this.container,
+                                    h = u.scrollTop,
+                                    f = u.scrollLeft,
+                                    p = u.scrollHeight,
+                                    g = u.scrollWidth,
+                                    m = 0 === h,
+                                    y = p - h - u.clientHeight == 0,
                                     v = 0 === f,
-                                    x = g - f - h.clientWidth == 0;
+                                    x = g - f - u.clientWidth == 0;
                                 n.y >= o.y - a / 2 && !y ? ((l.y = 1), (s.y = d * Math.abs((o.y - a / 2 - n.y) / a))) : n.x >= o.x - i / 2 && !x ? ((l.x = 1), (s.x = c * Math.abs((o.x - i / 2 - n.x) / i))) : n.y <= r.y + a / 2 && !m ? ((l.y = -1), (s.y = d * Math.abs((n.y - a / 2 - r.y) / a))) : n.x <= r.x + i / 2 && !v && ((l.x = -1), (s.x = c * Math.abs((n.x - i / 2 - r.x) / i))),
                                     this.interval && (this.clear(), (this.isAutoScrolling = !1)),
                                     (0 === l.x && 0 === l.y) ||
@@ -551,8 +514,8 @@
                     e
                 );
             })();
-            var X = { axis: w().oneOf(["x", "y", "xy"]), contentWindow: w().any, disableAutoscroll: w().bool, distance: w().number, getContainer: w().func, getHelperDimensions: w().func, helperClass: w().string, helperContainer: w().oneOfType([w().func, "undefined" == typeof HTMLElement ? w().any : w().instanceOf(HTMLElement)]), hideSortableGhost: w().bool, keyboardSortingTransitionDuration: w().number, lockAxis: w().string, lockOffset: w().oneOfType([w().number, w().string, w().arrayOf(w().oneOfType([w().number, w().string]))]), lockToContainerEdges: w().bool, onSortEnd: w().func, onSortMove: w().func, onSortOver: w().func, onSortStart: w().func, pressDelay: w().number, pressThreshold: w().number, keyCodes: w().shape({ lift: w().arrayOf(w().number), drop: w().arrayOf(w().number), cancel: w().arrayOf(w().number), up: w().arrayOf(w().number), down: w().arrayOf(w().number) }), shouldCancelStart: w().func, transitionDuration: w().number, updateBeforeSortStart: w().func, useDragHandle: w().bool, useWindowAsScrollContainer: w().bool },
-                q = { lift: [H], drop: [H], cancel: [j], up: [B, _], down: [G, K] },
+            var X = { axis: b().oneOf(["x", "y", "xy"]), contentWindow: b().any, disableAutoscroll: b().bool, distance: b().number, getContainer: b().func, getHelperDimensions: b().func, helperClass: b().string, helperContainer: b().oneOfType([b().func, "undefined" == typeof HTMLElement ? b().any : b().instanceOf(HTMLElement)]), hideSortableGhost: b().bool, keyboardSortingTransitionDuration: b().number, lockAxis: b().string, lockOffset: b().oneOfType([b().number, b().string, b().arrayOf(b().oneOfType([b().number, b().string]))]), lockToContainerEdges: b().bool, onSortEnd: b().func, onSortMove: b().func, onSortOver: b().func, onSortStart: b().func, pressDelay: b().number, pressThreshold: b().number, keyCodes: b().shape({ lift: b().arrayOf(b().number), drop: b().arrayOf(b().number), cancel: b().arrayOf(b().number), up: b().arrayOf(b().number), down: b().arrayOf(b().number) }), shouldCancelStart: b().func, transitionDuration: b().number, updateBeforeSortStart: b().func, useDragHandle: b().bool, useWindowAsScrollContainer: b().bool },
+                q = { lift: [j], drop: [j], cancel: [H], up: [B, _], down: [G, K] },
                 Y = {
                     axis: "y",
                     disableAutoscroll: !1,
@@ -569,7 +532,7 @@
                     keyCodes: q,
                     shouldCancelStart: function (e) {
                         return (
-                            -1 !== [z.Input, z.Textarea, z.Select, z.Option, z.Button].indexOf(e.target.tagName) ||
+                            -1 !== [F.Input, F.Textarea, F.Select, F.Option, F.Button].indexOf(e.target.tagName) ||
                             !!I(e.target, function (e) {
                                 return "true" === e.contentEditable;
                             })
@@ -590,14 +553,14 @@
                             function n(e) {
                                 var t;
                                 (0, s.Z)(this, n),
-                                    (t = (0, d.Z)(this, (0, h.Z)(n).call(this, e))),
+                                    (t = (0, d.Z)(this, (0, u.Z)(n).call(this, e))),
                                     (0, a.Z)((0, f.Z)((0, f.Z)(t)), "state", {}),
                                     (0, a.Z)((0, f.Z)((0, f.Z)(t)), "handleStart", function (e) {
                                         var n = t.props,
                                             r = n.distance,
                                             o = n.shouldCancelStart;
                                         if (2 !== e.button && !o(e)) {
-                                            (t.touched = !0), (t.position = N(e));
+                                            (t.touched = !0), (t.position = A(e));
                                             var i = I(e.target, function (e) {
                                                 return null != e.sortableInfo;
                                             });
@@ -607,12 +570,12 @@
                                                     s = l.index,
                                                     c = l.collection;
                                                 if (l.disabled) return;
-                                                if (a && !I(e.target, V)) return;
+                                                if (a && !I(e.target, z)) return;
                                                 (t.manager.active = { collection: c, index: s }),
                                                     (function (e) {
                                                         return (e.touches && e.touches.length) || (e.changedTouches && e.changedTouches.length);
                                                     })(e) ||
-                                                        e.target.tagName !== z.Anchor ||
+                                                        e.target.tagName !== F.Anchor ||
                                                         e.preventDefault(),
                                                     r ||
                                                         (0 === t.props.pressDelay
@@ -631,7 +594,7 @@
                                             r = n.distance,
                                             o = n.pressThreshold;
                                         if (!t.state.sorting && t.touched && !t._awaitingUpdateBeforeSortStart) {
-                                            var i = N(e),
+                                            var i = A(e),
                                                 a = { x: t.position.x - i.x, y: t.position.y - i.y },
                                                 l = Math.abs(a.x) + Math.abs(a.y);
                                             (t.delta = a), r || (o && !(l >= o)) ? r && l >= r && t.manager.isActive() && t.handlePress(e) : (clearTimeout(t.cancelTimer), (t.cancelTimer = setTimeout(t.cancel, 0)));
@@ -657,8 +620,8 @@
                                                                     m,
                                                                     y,
                                                                     x = f.sortableInfo.index,
-                                                                    w = ((n = f), { bottom: R((r = window.getComputedStyle(n)).marginBottom), left: R(r.marginLeft), right: R(r.marginRight), top: R(r.marginTop) }),
-                                                                    b = (function (e) {
+                                                                    b = ((n = f), { bottom: R((r = window.getComputedStyle(n)).marginBottom), left: R(r.marginLeft), right: R(r.marginRight), top: R(r.marginTop) }),
+                                                                    w = (function (e) {
                                                                         var t = window.getComputedStyle(e);
                                                                         return "grid" === t.display ? { x: R(t.gridColumnGap), y: R(t.gridRowGap) } : { x: 0, y: 0 };
                                                                     })(t.container),
@@ -666,8 +629,8 @@
                                                                     C = a({ index: x, node: f, collection: p });
                                                                 if (
                                                                     ((t.node = f),
-                                                                    (t.margin = w),
-                                                                    (t.gridGap = b),
+                                                                    (t.margin = b),
+                                                                    (t.gridGap = w),
                                                                     (t.width = C.width),
                                                                     (t.height = C.height),
                                                                     (t.marginOffset = { x: t.margin.left + t.margin.right + t.gridGap.x, y: Math.max(t.margin.top, t.margin.bottom, t.gridGap.y) }),
@@ -676,8 +639,8 @@
                                                                     (t.index = x),
                                                                     (t.newIndex = x),
                                                                     (t.axis = { x: i.indexOf("x") >= 0, y: i.indexOf("y") >= 0 }),
-                                                                    (t.offsetEdge = M(f, t.container)),
-                                                                    (t.initialOffset = N(g ? l({}, e, { pageX: t.boundingClientRect.left, pageY: t.boundingClientRect.top }) : e)),
+                                                                    (t.offsetEdge = L(f, t.container)),
+                                                                    (t.initialOffset = A(g ? l({}, e, { pageX: t.boundingClientRect.left, pageY: t.boundingClientRect.top }) : e)),
                                                                     (t.initialScroll = { left: t.scrollContainer.scrollLeft, top: t.scrollContainer.scrollTop }),
                                                                     (t.initialWindowScroll = { left: window.pageXOffset, top: window.pageYOffset }),
                                                                     (t.helper = t.helperContainer.appendChild(
@@ -685,25 +648,25 @@
                                                                         (m = (o = f).querySelectorAll(d)),
                                                                         (y = o.cloneNode(!0)),
                                                                         (0, v.Z)(y.querySelectorAll(d)).forEach(function (e, t) {
-                                                                            "file" !== e.type && (e.value = m[t].value), "radio" === e.type && e.name && (e.name = "__sortableClone__".concat(e.name)), e.tagName === z.Canvas && m[t].width > 0 && m[t].height > 0 && e.getContext("2d").drawImage(m[t], 0, 0);
+                                                                            "file" !== e.type && (e.value = m[t].value), "radio" === e.type && e.name && (e.name = "__sortableClone__".concat(e.name)), e.tagName === F.Canvas && m[t].width > 0 && m[t].height > 0 && e.getContext("2d").drawImage(m[t], 0, 0);
                                                                         }),
                                                                         y),
                                                                     )),
-                                                                    k(t.helper, { boxSizing: "border-box", height: "".concat(t.height, "px"), left: "".concat(t.boundingClientRect.left - w.left, "px"), pointerEvents: "none", position: "fixed", top: "".concat(t.boundingClientRect.top - w.top, "px"), width: "".concat(t.width, "px") }),
+                                                                    k(t.helper, { boxSizing: "border-box", height: "".concat(t.height, "px"), left: "".concat(t.boundingClientRect.left - b.left, "px"), pointerEvents: "none", position: "fixed", top: "".concat(t.boundingClientRect.top - b.top, "px"), width: "".concat(t.width, "px") }),
                                                                     g && t.helper.focus(),
                                                                     c && ((t.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" })),
                                                                     (t.minTranslate = {}),
                                                                     (t.maxTranslate = {}),
                                                                     g)
                                                                 ) {
-                                                                    var E = u ? { top: 0, left: 0, width: t.contentWindow.innerWidth, height: t.contentWindow.innerHeight } : t.containerBoundingRect,
+                                                                    var E = h ? { top: 0, left: 0, width: t.contentWindow.innerWidth, height: t.contentWindow.innerHeight } : t.containerBoundingRect,
                                                                         O = E.top,
                                                                         T = E.left,
                                                                         I = E.width,
                                                                         D = O + E.height,
                                                                         P = T + I;
                                                                     t.axis.x && ((t.minTranslate.x = T - t.boundingClientRect.left), (t.maxTranslate.x = P - (t.boundingClientRect.left + t.width))), t.axis.y && ((t.minTranslate.y = O - t.boundingClientRect.top), (t.maxTranslate.y = D - (t.boundingClientRect.top + t.height)));
-                                                                } else t.axis.x && ((t.minTranslate.x = (u ? 0 : Z.left) - t.boundingClientRect.left - t.width / 2), (t.maxTranslate.x = (u ? t.contentWindow.innerWidth : Z.left + Z.width) - t.boundingClientRect.left - t.width / 2)), t.axis.y && ((t.minTranslate.y = (u ? 0 : Z.top) - t.boundingClientRect.top - t.height / 2), (t.maxTranslate.y = (u ? t.contentWindow.innerHeight : Z.top + Z.height) - t.boundingClientRect.top - t.height / 2));
+                                                                } else t.axis.x && ((t.minTranslate.x = (h ? 0 : Z.left) - t.boundingClientRect.left - t.width / 2), (t.maxTranslate.x = (h ? t.contentWindow.innerWidth : Z.left + Z.width) - t.boundingClientRect.left - t.width / 2)), t.axis.y && ((t.minTranslate.y = (h ? 0 : Z.top) - t.boundingClientRect.top - t.height / 2), (t.maxTranslate.y = (h ? t.contentWindow.innerHeight : Z.top + Z.height) - t.boundingClientRect.top - t.height / 2));
                                                                 s &&
                                                                     s.split(" ").forEach(function (e) {
                                                                         return t.helper.classList.add(e);
@@ -718,7 +681,7 @@
                                                                               return t.listenerNode.addEventListener(e, t.handleSortEnd, !1);
                                                                           })),
                                                                     t.setState({ sorting: !0, sortingIndex: x }),
-                                                                    h && h({ node: f, index: x, collection: p, isKeySorting: g, nodes: t.manager.getOrderedRefs(), helper: t.helper }, e),
+                                                                    u && u({ node: f, index: x, collection: p, isKeySorting: g, nodes: t.manager.getOrderedRefs(), helper: t.helper }, e),
                                                                     g && t.keyMove(0);
                                                             },
                                                             o = t.props,
@@ -727,8 +690,8 @@
                                                             s = o.helperClass,
                                                             c = o.hideSortableGhost,
                                                             d = o.updateBeforeSortStart,
-                                                            h = o.onSortStart,
-                                                            u = o.useWindowAsScrollContainer,
+                                                            u = o.onSortStart,
+                                                            h = o.useWindowAsScrollContainer,
                                                             f = n.node,
                                                             p = n.collection,
                                                             g = t.manager.isKeySorting,
@@ -787,9 +750,9 @@
                                             t.helper.parentNode.removeChild(t.helper),
                                             r && t.sortableGhost && k(t.sortableGhost, { opacity: "", visibility: "" });
                                         for (var c = 0, d = s.length; c < d; c++) {
-                                            var h = s[c],
-                                                u = h.node;
-                                            (h.edgeOffset = null), (h.boundingClientRect = null), O(u, null), T(u, null), (h.translate = null);
+                                            var u = s[c],
+                                                h = u.node;
+                                            (u.edgeOffset = null), (u.boundingClientRect = null), O(h, null), T(h, null), (u.translate = null);
                                         }
                                         t.autoScroller.clear(), (t.manager.active = null), (t.manager.isKeySorting = !1), t.setState({ sorting: !1, sortingIndex: null }), "function" == typeof o && o({ collection: a, newIndex: t.newIndex, oldIndex: t.index, isKeySorting: l, nodes: s }, e), (t.touched = !1);
                                     }),
@@ -842,14 +805,14 @@
                                                 }),
                                                 s = l.node,
                                                 c = t.containerScrollDelta,
-                                                d = l.boundingClientRect || A(s, c),
-                                                h = l.translate || { x: 0, y: 0 },
-                                                u = d.top + h.y - c.top,
-                                                f = d.left + h.x - c.left,
+                                                d = l.boundingClientRect || N(s, c),
+                                                u = l.translate || { x: 0, y: 0 },
+                                                h = d.top + u.y - c.top,
+                                                f = d.left + u.x - c.left,
                                                 p = i < o,
                                                 g = p && t.axis.x ? s.offsetWidth - t.width : 0,
                                                 m = p && t.axis.y ? s.offsetHeight - t.height : 0;
-                                            t.handleSortMove({ pageX: f + g, pageY: u + m, ignoreTransition: 0 === e });
+                                            t.handleSortMove({ pageX: f + g, pageY: h + m, ignoreTransition: 0 === e });
                                         }
                                     }),
                                     (0, a.Z)((0, f.Z)((0, f.Z)(t)), "keyDrop", function (e) {
@@ -864,9 +827,9 @@
                                             o = I(r, function (e) {
                                                 return null != e.sortableInfo;
                                             });
-                                        return o && o.sortableInfo && !o.sortableInfo.disabled && (n ? V(r) : r.sortableInfo);
+                                        return o && o.sortableInfo && !o.sortableInfo.disabled && (n ? z(r) : r.sortableInfo);
                                     });
-                                var r = new b();
+                                var r = new w();
                                 return (
                                     (function (e) {
                                         y()(!(e.distance && e.pressDelay), "Attempted to set both `pressDelay` and `distance` on SortableContainer, you may only use one or the other, not both at the same time.");
@@ -879,7 +842,7 @@
                                 );
                             }
                             return (
-                                (0, u.Z)(n, t),
+                                (0, h.Z)(n, t),
                                 (0, c.Z)(n, [
                                     {
                                         key: "componentDidMount",
@@ -892,7 +855,7 @@
                                                 var r = e.props.contentWindow || e.document.defaultView || window;
                                                 (e.contentWindow = "function" == typeof r ? r() : r),
                                                     (e.scrollContainer = t ? e.document.scrollingElement || e.document.documentElement : W(e.container) || e.container),
-                                                    (e.autoScroller = new U(e.scrollContainer, e.onAutoScroll)),
+                                                    (e.autoScroller = new V(e.scrollContainer, e.onAutoScroll)),
                                                     Object.keys(e.events).forEach(function (t) {
                                                         return S[t].forEach(function (n) {
                                                             return e.container.addEventListener(n, e.events[t], !1);
@@ -928,9 +891,9 @@
                                                 s = void 0 === l ? a : l,
                                                 c = this.manager.isKeySorting,
                                                 d = e.ignoreTransition,
-                                                h = N(e),
-                                                u = { x: h.x - this.initialOffset.x, y: h.y - this.initialOffset.y };
-                                            if (((u.y -= window.pageYOffset - this.initialWindowScroll.top), (u.x -= window.pageXOffset - this.initialWindowScroll.left), (this.translate = u), o)) {
+                                                u = A(e),
+                                                h = { x: u.x - this.initialOffset.x, y: u.y - this.initialOffset.y };
+                                            if (((h.y -= window.pageYOffset - this.initialWindowScroll.top), (h.x -= window.pageXOffset - this.initialWindowScroll.left), (this.translate = h), o)) {
                                                 var f = (function (e) {
                                                         var t = e.height,
                                                             n = e.width,
@@ -940,16 +903,16 @@
                                                         var a = i(o, 2),
                                                             l = a[0],
                                                             s = a[1];
-                                                        return [L({ height: t, lockOffset: l, width: n }), L({ height: t, lockOffset: s, width: n })];
+                                                        return [M({ height: t, lockOffset: l, width: n }), M({ height: t, lockOffset: s, width: n })];
                                                     })({ height: this.height, lockOffset: r, width: this.width }),
                                                     p = i(f, 2),
                                                     g = p[0],
                                                     m = p[1],
                                                     v = { x: this.width / 2 - g.x, y: this.height / 2 - g.y },
                                                     x = { x: this.width / 2 - m.x, y: this.height / 2 - m.y };
-                                                (u.x = D(this.minTranslate.x + v.x, this.maxTranslate.x - x.x, u.x)), (u.y = D(this.minTranslate.y + v.y, this.maxTranslate.y - x.y, u.y));
+                                                (h.x = D(this.minTranslate.x + v.x, this.maxTranslate.x - x.x, h.x)), (h.y = D(this.minTranslate.y + v.y, this.maxTranslate.y - x.y, h.y));
                                             }
-                                            "x" === n ? (u.y = 0) : "y" === n && (u.x = 0), c && s && !d && T(this.helper, s), O(this.helper, u);
+                                            "x" === n ? (h.y = 0) : "y" === n && (h.x = 0), c && s && !d && T(this.helper, s), O(this.helper, h);
                                         },
                                     },
                                     {
@@ -967,20 +930,20 @@
                                                 c = this.manager.isKeySorting,
                                                 d = this.newIndex;
                                             this.newIndex = null;
-                                            for (var h = 0, u = a.length; h < u; h++) {
-                                                var f = a[h].node,
+                                            for (var u = 0, h = a.length; u < h; u++) {
+                                                var f = a[u].node,
                                                     p = f.sortableInfo.index,
                                                     g = f.offsetWidth,
                                                     m = f.offsetHeight,
                                                     y = { height: this.height > m ? m / 2 : this.height / 2, width: this.width > g ? g / 2 : this.width / 2 },
                                                     v = c && p > this.index && p <= d,
                                                     x = c && p < this.index && p >= d,
-                                                    w = { x: 0, y: 0 },
-                                                    b = a[h].edgeOffset;
-                                                b || ((b = M(f, this.container)), (a[h].edgeOffset = b), c && (a[h].boundingClientRect = A(f, o)));
-                                                var Z = h < a.length - 1 && a[h + 1],
-                                                    C = h > 0 && a[h - 1];
-                                                Z && !Z.edgeOffset && ((Z.edgeOffset = M(Z.node, this.container)), c && (Z.boundingClientRect = A(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (x || (p < this.index && ((l + i.left - y.width <= b.left && s + i.top <= b.top + y.height) || s + i.top + y.height <= b.top)) ? ((w.x = this.width + this.marginOffset.x), b.left + w.x > this.containerBoundingRect.width - y.width && Z && ((w.x = Z.edgeOffset.left - b.left), (w.y = Z.edgeOffset.top - b.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= b.left && s + i.top + y.height >= b.top) || s + i.top + y.height >= b.top + m))) && ((w.x = -(this.width + this.marginOffset.x)), b.left + w.x < this.containerBoundingRect.left + y.width && C && ((w.x = C.edgeOffset.left - b.left), (w.y = C.edgeOffset.top - b.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= b.left) ? ((w.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (x || (p < this.index && l + i.left <= b.left + y.width)) && ((w.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= b.top) ? ((w.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (x || (p < this.index && s + i.top <= b.top + y.height)) && ((w.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), O(f, w), (a[h].translate = w)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
+                                                    b = { x: 0, y: 0 },
+                                                    w = a[u].edgeOffset;
+                                                w || ((w = L(f, this.container)), (a[u].edgeOffset = w), c && (a[u].boundingClientRect = N(f, o)));
+                                                var Z = u < a.length - 1 && a[u + 1],
+                                                    C = u > 0 && a[u - 1];
+                                                Z && !Z.edgeOffset && ((Z.edgeOffset = L(Z.node, this.container)), c && (Z.boundingClientRect = N(Z.node, o))), p !== this.index ? (t && T(f, t), this.axis.x ? (this.axis.y ? (x || (p < this.index && ((l + i.left - y.width <= w.left && s + i.top <= w.top + y.height) || s + i.top + y.height <= w.top)) ? ((b.x = this.width + this.marginOffset.x), w.left + b.x > this.containerBoundingRect.width - y.width && Z && ((b.x = Z.edgeOffset.left - w.left), (b.y = Z.edgeOffset.top - w.top)), null === this.newIndex && (this.newIndex = p)) : (v || (p > this.index && ((l + i.left + y.width >= w.left && s + i.top + y.height >= w.top) || s + i.top + y.height >= w.top + m))) && ((b.x = -(this.width + this.marginOffset.x)), w.left + b.x < this.containerBoundingRect.left + y.width && C && ((b.x = C.edgeOffset.left - w.left), (b.y = C.edgeOffset.top - w.top)), (this.newIndex = p))) : v || (p > this.index && l + i.left + y.width >= w.left) ? ((b.x = -(this.width + this.marginOffset.x)), (this.newIndex = p)) : (x || (p < this.index && l + i.left <= w.left + y.width)) && ((b.x = this.width + this.marginOffset.x), null == this.newIndex && (this.newIndex = p))) : this.axis.y && (v || (p > this.index && s + i.top + y.height >= w.top) ? ((b.y = -(this.height + this.marginOffset.y)), (this.newIndex = p)) : (x || (p < this.index && s + i.top <= w.top + y.height)) && ((b.y = this.height + this.marginOffset.y), null == this.newIndex && (this.newIndex = p))), O(f, b), (a[u].translate = b)) : n && ((this.sortableGhost = f), k(f, { opacity: 0, visibility: "hidden" }));
                                             }
                                             null == this.newIndex && (this.newIndex = this.index), c && (this.newIndex = d);
                                             var S = c ? this.prevIndex : d;
@@ -1036,7 +999,7 @@
                     n
                 );
             }
-            var ee = { index: w().number.isRequired, collection: w().oneOfType([w().number, w().string]), disabled: w().bool },
+            var ee = { index: b().number.isRequired, collection: b().oneOfType([b().number, b().string]), disabled: b().bool },
                 te = Object.keys(ee);
             function ne(e) {
                 var t,
@@ -1049,10 +1012,10 @@
                                 var e, t;
                                 (0, s.Z)(this, n);
                                 for (var r = arguments.length, o = new Array(r), i = 0; i < r; i++) o[i] = arguments[i];
-                                return (t = (0, d.Z)(this, (e = (0, h.Z)(n)).call.apply(e, [this].concat(o)))), (0, a.Z)((0, f.Z)((0, f.Z)(t)), "wrappedInstance", (0, p.createRef)()), t;
+                                return (t = (0, d.Z)(this, (e = (0, u.Z)(n)).call.apply(e, [this].concat(o)))), (0, a.Z)((0, f.Z)((0, f.Z)(t)), "wrappedInstance", (0, p.createRef)()), t;
                             }
                             return (
-                                (0, u.Z)(n, t),
+                                (0, h.Z)(n, t),
                                 (0, c.Z)(n, [
                                     {
                                         key: "componentDidMount",
@@ -1186,4 +1149,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.4847d27a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.428792aa.js.map

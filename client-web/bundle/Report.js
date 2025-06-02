@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: s, hideBackButton: n, isFullWidth: a, isLarge: l, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: f, style: C, subtitle: y, title: _, titleDomId: v, titleIconCell: w, titleIconCellSize: b, withBackground: g, withWideContainer: T } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: r, fixed: s, hideBackButton: n, isFullWidth: a, isLarge: l, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: f, style: C, subtitle: v, title: y, titleDomId: _, titleIconCell: w, titleIconCellSize: g, withBackground: b, withWideContainer: T } = this.props,
                         { isModal: S } = this.context,
                         R = n ? d : o.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         k = (function (e, t, r) {
                             return e && !(t && r);
-                        })(!!g, S, !!f);
-                    return o.createElement(o.Fragment, null, o.createElement(c.Z, { centerTitle: t, centeredLogo: r, isFullWidth: a, isLarge: l, leftControl: R, middleControl: u, position: p(h, S, s), rightControl: m, style: C, subtitle: y, title: _, titleDomId: v, titleIconCell: w, titleIconCellSize: b, withBackground: k, withWideContainer: T }), f || null);
+                        })(!!b, S, !!f);
+                    return o.createElement(o.Fragment, null, o.createElement(c.Z, { centerTitle: t, centeredLogo: r, isFullWidth: a, isLarge: l, leftControl: R, middleControl: u, position: p(h, S, s), rightControl: m, style: C, subtitle: v, title: y, titleDomId: _, titleIconCell: w, titleIconCellSize: g, withBackground: k, withWideContainer: T }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -79,9 +79,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: n, centerTitle: a, hideBackButton: i, history: c, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: f, rightControl: C, secondaryBar: y, subtitle: _, title: v } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: n, centerTitle: a, hideBackButton: i, history: c, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: f, rightControl: C, secondaryBar: v, subtitle: y, title: _ } = this.props,
                                 { isModal: w } = this.context;
-                            return o.createElement(s.Z, { style: w ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (w ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !w, hideBackButton: i, history: c, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: f, ref: e, rightControl: C, secondaryBar: y, style: [w && m.appBarModal, t], subtitle: _, title: v, titleDomId: l.Q_ }));
+                            return o.createElement(s.Z, { style: w ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (w ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !w, hideBackButton: i, history: c, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: f, ref: e, rightControl: C, secondaryBar: v, style: [w && m.appBarModal, t], subtitle: y, title: _, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -91,9 +91,9 @@
                 }
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: a, documentTitle: i, isFullWidth: l, isLarge: d, renderHeader: h, title: f, withoutBottomBarMobile: C } = this.props,
-                        { isModal: y } = this.context,
-                        _ = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return o.createElement(c.Z, null, o.createElement(p.Z.Configure, { documentTitle: i, headerless: !0, title: f }), o.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, y && m.rootModal] }, !y && _, o.createElement(n.Z, { isFullWidth: l, isLarge: d, style: [m.container, y && m.containerModal, a] }, y ? o.createElement(u.Z, { style: m.viewport }, _, r) : r), t ? o.createElement(s.Z, { style: [m.bottomBarModal, !y && !C && m.bottomBarMobile] }, o.createElement(n.Z, { isFullWidth: l, isLarge: d }, t)) : null));
+                        { isModal: v } = this.context,
+                        y = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return o.createElement(c.Z, null, o.createElement(p.Z.Configure, { documentTitle: i, headerless: !0, title: f }), o.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, v && m.rootModal] }, !v && y, o.createElement(n.Z, { isFullWidth: l, isLarge: d, style: [m.container, v && m.containerModal, a] }, v ? o.createElement(u.Z, { style: m.viewport }, y, r) : r), t ? o.createElement(s.Z, { style: [m.bottomBarModal, !v && !C && m.bottomBarMobile] }, o.createElement(n.Z, { isFullWidth: l, isLarge: d }, t)) : null));
                 }
             }
             (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = a.Z);
@@ -146,7 +146,7 @@
             const s = r.n(o)().gf5e9ea6;
         },
         847607: (e, t, r) => {
-            r.d(t, { Aq: () => p, FK: () => _, GS: () => i, N1: () => h, PY: () => u, X6: () => v, cm: () => c });
+            r.d(t, { Aq: () => p, FK: () => y, GS: () => i, N1: () => h, PY: () => u, X6: () => _, cm: () => c });
             r(202784);
             var o = r(111677),
                 s = r.n(o),
@@ -165,9 +165,9 @@
                 m = s().h59f52ee,
                 f = s().eea0cbee,
                 C = s().i29533b3,
-                y = s().h129c3c3,
-                _ = (e) => (e ? ((e) => C({ screenName: e }))(e) : m),
-                v = (e) => (e ? ((e) => y({ screenName: e }))(e) : f);
+                v = s().h129c3c3,
+                y = (e) => (e ? ((e) => C({ screenName: e }))(e) : m),
+                _ = (e) => (e ? ((e) => v({ screenName: e }))(e) : f);
         },
         712816: (e, t, r) => {
             r.d(t, { d: () => s });
@@ -211,11 +211,11 @@
                     acceptConversation: () => n.tF,
                     addAvatarMedia: () => n._D,
                     addParticipants: () => n.ck,
-                    addRecentSearches: () => I,
+                    addRecentSearches: () => Z,
                     addWelcomeMessageToConversation: () => n.Qe,
-                    clearRecentSearch: () => Z,
+                    clearRecentSearch: () => I,
                     clearRecentSearches: () => x,
-                    clearSearchCache: () => b,
+                    clearSearchCache: () => g,
                     default: () => L,
                     deleteConversations: () => n.S9,
                     disableMentionNotifications: () => n.BW,
@@ -303,35 +303,35 @@
                 m = r(849585),
                 f = r(147143);
             const C = "rweb.recentDMSearches",
-                y = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
-                _ = "rweb/directMessages/ADD_RECENT_SEARCHES",
-                v = (e) => ({ payload: e, type: _ }),
+                v = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
+                y = "rweb/directMessages/ADD_RECENT_SEARCHES",
+                _ = (e) => ({ payload: e, type: y }),
                 w = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                b = () => ({ type: w }),
-                g = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                g = () => ({ type: w }),
+                b = "rweb/directMessages/CLEAR_RECENT_SEARCH",
                 T = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
                 S = { searchResults: {}, recentSearches: [] };
             function R(e = S, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case _:
-                    case g:
+                    case y:
+                    case b:
                         return { ...e, recentSearches: t.payload || [] };
                     case T:
                         return { ...e, recentSearches: [] };
-                    case y.REQUEST: {
+                    case v.REQUEST: {
                         const { fetchNextPage: r, preserveResults: o, query: s } = t.meta || {},
                             n = e.searchResults ? e.searchResults[s] : {},
                             a = { ...e.searchResults, [s]: { ...n, fetchStatus: o || r ? n?.fetchStatus : u.ZP.LOADING } };
                         return { ...e, searchResults: a };
                     }
-                    case y.FAILURE: {
+                    case v.FAILURE: {
                         const { fetchNextPage: r, preserveResults: o, query: s } = t.meta || {},
                             n = e.searchResults ? e.searchResults[s] : {},
                             a = { ...e.searchResults, [s]: { ...n, fetchStatus: o || r ? n?.fetchStatus : u.ZP.FAILED, error: t.payload } };
                         return { ...e, searchResults: a };
                     }
-                    case y.SUCCESS: {
+                    case v.SUCCESS: {
                         const { query: r } = t.meta || {},
                             o = t.payload && t.payload.result ? t.payload.result : null,
                             { conversations: s, error: n } = o || {},
@@ -374,9 +374,9 @@
                             })(s, c),
                             m = ((e) => e[f.Yf].search?.searchResults)(s),
                             C = m ? m[c] : void 0,
-                            _ = !!h;
+                            y = !!h;
                         h && c && n && (u.cursor = h);
-                        const v = p._O(t, { params: u, request: o.withEndpoint(d.Z).search }),
+                        const _ = p._O(t, { params: u, request: o.withEndpoint(d.Z).search }),
                             w = (e) => {
                                 if (e && e.result) {
                                     const { conversations: t } = e.result,
@@ -384,23 +384,23 @@
                                     return t && Object.values(t).forEach((e) => (e.isSearchResult = !0)), t ? (0, i.s0)({ conversations: t, users: r }) : null;
                                 }
                             };
-                        return !C || C?.error || a || (n && _) ? v({ actionTypes: y, context: "SEARCH", meta: { query: u.query, cursor: u.cursor, preserveResults: a, fetchNextPage: n } }, w) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: C }, meta: { query: c, cursor: h } }), Promise.resolve());
+                        return !C || C?.error || a || (n && y) ? _({ actionTypes: v, context: "SEARCH", meta: { query: u.query, cursor: u.cursor, preserveResults: a, fetchNextPage: n } }, w) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: C }, meta: { query: c, cursor: h } }), Promise.resolve());
                     },
-                I =
+                Z =
                     (e) =>
                     (t, r, { featureSwitches: o, userPersistence: s }) => {
                         const n = o.getNumberValue("dm_inbox_search_max_recent_searches_stored");
                         return s.get(C).then((r) => {
                             const o = r?.recentSearches || [];
-                            return !o.includes(e) && o.push(e), o.length > n && o.shift(), t(v(o)), s.set(C, { recentSearches: o });
+                            return !o.includes(e) && o.push(e), o.length > n && o.shift(), t(_(o)), s.set(C, { recentSearches: o });
                         });
                     },
-                Z =
+                I =
                     (e) =>
                     (t, r, { userPersistence: o }) =>
                         o.get(C).then((r) => {
                             const s = r?.recentSearches || [];
-                            return s.splice(s.indexOf(e), 1), t({ payload: s, type: g }), o.set(C, { recentSearches: s });
+                            return s.splice(s.indexOf(e), 1), t({ payload: s, type: b }), o.set(C, { recentSearches: s });
                         }),
                 x =
                     () =>
@@ -413,7 +413,7 @@
                             ? Promise.resolve(
                                   r.get(C).then((t) => {
                                       const r = t?.recentSearches;
-                                      r && e(v(r));
+                                      r && e(_(r));
                                   }),
                               ).then(() => {})
                             : Promise.resolve(),
@@ -487,7 +487,7 @@
                 };
         },
         294010: (e, t, r) => {
-            r.r(t), r.d(t, { ReportFlowComplete: () => M, default: () => Z });
+            r.r(t), r.d(t, { ReportFlowComplete: () => M, default: () => I });
             r(136728);
             var o = r(202784),
                 s = r(325686),
@@ -503,12 +503,12 @@
                 m = r(712816),
                 f = r(879596),
                 C = r(312771),
-                y = r(71620),
-                _ = r(208115),
-                v = r(668214),
+                v = r(71620),
+                y = r(208115),
+                _ = r(668214),
                 w = r(629196),
-                b = r(601576),
-                g = r(919022);
+                g = r(601576),
+                b = r(919022);
             const T = (e, t) => {
                     const r = t.location.query.action;
                     if ("string" == typeof r) return r;
@@ -521,9 +521,9 @@
                     const r = t.location.query.reported_screen_name;
                     if ("string" == typeof r) return r;
                 },
-                k = (0, v.Z)()
-                    .propsFromState(() => ({ action: T, canGoBack: _.q, reportedUserId: S, reportedScreenName: R }))
-                    .propsFromActions(() => ({ addToast: b.fz, block: g.ZP.block, createLocalApiErrorHandler: (0, y.zr)("REPORT_SCREEN"), mute: w.r, unblock: g.ZP.unblock, unfollow: g.ZP.unfollow, unmute: g.ZP.unmute })),
+                k = (0, _.Z)()
+                    .propsFromState(() => ({ action: T, canGoBack: y.q, reportedUserId: S, reportedScreenName: R }))
+                    .propsFromActions(() => ({ addToast: g.fz, block: b.ZP.block, createLocalApiErrorHandler: (0, v.zr)("REPORT_SCREEN"), mute: w.r, unblock: b.ZP.unblock, unfollow: b.ZP.unfollow, unmute: b.ZP.unmute })),
                 E = i().a9fd20be,
                 A = i().i2b9632e;
             function M(e) {
@@ -578,14 +578,14 @@
                               a.goBackThroughModals())
                             : a.push("/");
                     }),
-                    o.createElement(s.Z, { style: I.root }, o.createElement(p.Z, { fetchStatus: C.ZP.LOADING, onRequestRetry: c.Z, render: l.Z, retryable: !1 }))
+                    o.createElement(s.Z, { style: Z.root }, o.createElement(p.Z, { fetchStatus: C.ZP.LOADING, onRequestRetry: c.Z, render: l.Z, retryable: !1 }))
                 );
             }
-            const I = n.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 } })),
-                Z = k(M);
+            const Z = n.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 } })),
+                I = k(M);
         },
         679406: (e, t, r) => {
-            r.r(t), r.d(t, { ReportScreen: () => Ce, default: () => ye });
+            r.r(t), r.d(t, { ReportScreen: () => Ce, default: () => ve });
             r(136728);
             var o = r(202784),
                 s = r(468811),
@@ -601,12 +601,12 @@
                 m = r(980407),
                 f = r(443781),
                 C = r(545334),
-                y = r(847607),
-                _ = r(712816),
-                v = r(879596),
+                v = r(847607),
+                y = r(712816),
+                _ = r(879596),
                 w = r(323683),
-                b = r(163889),
-                g = r(730996),
+                g = r(163889),
+                b = r(730996),
                 T = r(395067),
                 S = r(479506),
                 R = r(942893),
@@ -614,8 +614,8 @@
                 E = r(71620),
                 A = r(208115),
                 M = r(2430),
-                I = r(668214),
-                Z = r(481242),
+                Z = r(668214),
+                I = r(481242),
                 x = r(837455),
                 D = r(296196),
                 B = r(275365),
@@ -628,14 +628,14 @@
                 O = r(601576),
                 W = r(836255),
                 q = r(919022);
-            const G = (e, t) => t.location && t.location.state && t.location.state.clientReferer,
-                $ = (e, t) => t.location && t.location.state && t.location.state.inboxType,
-                z = (e, t) => t.location && t.location.state && t.location.state.scribeNamespace,
+            const z = (e, t) => t.location && t.location.state && t.location.state.clientReferer,
+                G = (e, t) => t.location && t.location.state && t.location.state.inboxType,
+                $ = (e, t) => t.location && t.location.state && t.location.state.scribeNamespace,
                 j = (e, t) => !!(t.location && t.location.state && t.location.state.isMedia) || !1,
-                Y = (e, t) => t.location && t.location.state && t.location.state.promotedContent,
-                Q = (e, t) => t.location && t.location.state && t.location.state.conversationSection,
-                K = (e, t) => t.location && t.location.query && (0, M.BX)(t.location.query.community_id),
-                V = (e, t) => (0, T.HO)(X(e, t)),
+                V = (e, t) => t.location && t.location.state && t.location.state.promotedContent,
+                Y = (e, t) => t.location && t.location.state && t.location.state.conversationSection,
+                Q = (e, t) => t.location && t.location.query && (0, M.BX)(t.location.query.community_id),
+                K = (e, t) => (0, T.HO)(X(e, t)),
                 X = (e, t) => t.match.params.reportType,
                 J = (e, t) => t.match.params.reportedId,
                 ee = (e, t) => {
@@ -680,9 +680,9 @@
                     const r = X(e, t) === T.C2.Moment ? J(0, t) : void 0;
                     return r ? P.Z.select(e, r) : void 0;
                 },
-                ie = (0, I.Z)()
-                    .propsFromState(() => ({ canGoBack: A.q, clientReferer: G, communityId: K, dmConversation: re, reportedId: J, inboxType: $, isMedia: j, lang: H.VT, liveEvent: ae, moment: se, list: ne, promotedContent: Y, conversationSection: Q, reportType: X, reportSource: V, scribeNamespace: z, tweet: ee, user: te }))
-                    .propsFromActions(() => ({ addToast: O.fz, block: q.ZP.block, createLocalApiErrorHandler: (0, E.zr)("REPORT_SCREEN"), fetchUpdates: D.fetchUpdates, mute: F.r, markTweetAsReported: W.Z.markAsReported, markTweetsAsRemovedFromCommunity: W.Z.markTweetsAsRemovedFromCommunity, markUserAsRemovedFromCommunity: x.Z.markUserAsRemovedFromCommunity, richScribeAction: Z.richScribeAction, unblock: q.ZP.unblock, unfollow: q.ZP.unfollow, unmute: q.ZP.unmute })),
+                ie = (0, Z.Z)()
+                    .propsFromState(() => ({ canGoBack: A.q, clientReferer: z, communityId: Q, dmConversation: re, reportedId: J, inboxType: G, isMedia: j, lang: H.VT, liveEvent: ae, moment: se, list: ne, promotedContent: V, conversationSection: Y, reportType: X, reportSource: K, scribeNamespace: $, tweet: ee, user: te }))
+                    .propsFromActions(() => ({ addToast: O.fz, block: q.ZP.block, createLocalApiErrorHandler: (0, E.zr)("REPORT_SCREEN"), fetchUpdates: D.fetchUpdates, mute: F.r, markTweetAsReported: W.Z.markAsReported, markTweetsAsRemovedFromCommunity: W.Z.markTweetsAsRemovedFromCommunity, markUserAsRemovedFromCommunity: x.Z.markUserAsRemovedFromCommunity, richScribeAction: I.richScribeAction, unblock: q.ZP.unblock, unfollow: q.ZP.unfollow, unmute: q.ZP.unmute })),
                 ce = p().f1824804,
                 le = p().h030c24c,
                 de = p().b12ffee6,
@@ -734,13 +734,13 @@
                             const { addToast: t, createLocalApiErrorHandler: r, promotedContent: o, unblock: s } = this.props;
                             s(e, { promotedContent: o }).then(() => {
                                 t({ text: he });
-                            }, r(v.D));
+                            }, r(_.D));
                         }),
                         (this._handleUndoMute = (e, t) => () => {
                             const { addToast: r, createLocalApiErrorHandler: o, unmute: s } = this.props;
                             s(e).then(
                                 () => {
-                                    r({ text: (0, y.X6)(t) });
+                                    r({ text: (0, v.X6)(t) });
                                 },
                                 o({ showToast: !0 }),
                             );
@@ -796,7 +796,7 @@
                                 case T.C2.RemoveCommunityMember:
                                     return a;
                                 default:
-                                    return void (0, b.ZP)(`Unknown report type ${n}`);
+                                    return void (0, g.ZP)(`Unknown report type ${n}`);
                             }
                         }),
                         (this._getReportedUserScreenName = (e) => {
@@ -824,13 +824,13 @@
                                 m = d === T.C2.DMConversation,
                                 f = d === T.C2.DMMessage,
                                 C = d === T.C2.Moment,
-                                y = d === T.C2.List,
-                                _ = { client_location: [u?.page, u?.section, u?.component].join(":"), client_referer: e, client_app_id: (0, h.Z)().clientAppId, conversation_section: t, source: l, report_flow_id: this._reportFlowId, reported_user_id: this._getReportedUserId(), reported_tweet_id: this._getReportedTweetId(), reported_direct_message_conversation_id: (f || m) && r && r.conversationId, reported_direct_message_id: f && p, reported_moment_id: C ? (a && a.liveEventDetails.id) || (i && i.id_str) : void 0, reported_list_id: y ? n && n.id_str : void 0, is_promoted: !!c, impression_id: c?.impression_id, is_media: o, initiated_in_app: "1", lang: s, community_id: this._getCommunityId() },
-                                v = Object.keys(_)
-                                    .filter((e) => !!_[e])
-                                    .map((e) => `${encodeURIComponent(e)}=${encodeURIComponent(_[e])}`)
+                                v = d === T.C2.List,
+                                y = { client_location: [u?.page, u?.section, u?.component].join(":"), client_referer: e, client_app_id: (0, h.Z)().clientAppId, conversation_section: t, source: l, report_flow_id: this._reportFlowId, reported_user_id: this._getReportedUserId(), reported_tweet_id: this._getReportedTweetId(), reported_direct_message_conversation_id: (f || m) && r && r.conversationId, reported_direct_message_id: f && p, reported_moment_id: C ? (a && a.liveEventDetails.id) || (i && i.id_str) : void 0, reported_list_id: v ? n && n.id_str : void 0, is_promoted: !!c, impression_id: c?.impression_id, is_media: o, initiated_in_app: "1", lang: s, community_id: this._getCommunityId() },
+                                _ = Object.keys(y)
+                                    .filter((e) => !!y[e])
+                                    .map((e) => `${encodeURIComponent(e)}=${encodeURIComponent(y[e])}`)
                                     .join("&");
-                            return `${fe}/i/safety/report_story?${v}`;
+                            return `${fe}/i/safety/report_story?${_}`;
                         }),
                         (this._messageHandler = (e) => {
                             const { addToast: t, markTweetAsReported: r, markTweetsAsRemovedFromCommunity: o, markUserAsRemovedFromCommunity: s, reportSource: n } = this.props;
@@ -842,7 +842,7 @@
                                     p &&
                                         a(p, { promotedContent: l }).then(() => {
                                             t({ action: { label: C.d, onAction: this._handleUndoBlock(p) }, text: ue });
-                                        }, i(_.d));
+                                        }, i(y.d));
                                     break;
                                 case "unfollow":
                                     p && d(p, { promotedContent: l }).catch(i(w.X));
@@ -852,7 +852,7 @@
                                         c(p).then(
                                             () => {
                                                 const r = this._getReportedUserScreenName(e);
-                                                t({ action: { label: C.d, onAction: this._handleUndoMute(p, r) }, text: (0, y.FK)(r) });
+                                                t({ action: { label: C.d, onAction: this._handleUndoMute(p, r) }, text: (0, v.FK)(r) });
                                             },
                                             i({ showToast: !0 }),
                                         );
@@ -860,7 +860,7 @@
                                 case "complete": {
                                     this.setState({ isDone: !0 });
                                     const e = this._getReportedTweetId();
-                                    if ((e && (n === g.g.Tweet && r(e, T.az.Tombstone), n === g.g.HideCommunityTweet && r(e, T.az.HiddenCommunityTweet)), n === g.g.RemoveCommunityMember)) {
+                                    if ((e && (n === b.g.Tweet && r(e, T.az.Tombstone), n === b.g.HideCommunityTweet && r(e, T.az.HiddenCommunityTweet)), n === b.g.RemoveCommunityMember)) {
                                         const e = this._getReportedUserId(),
                                             t = this._getCommunityId();
                                         e && t && (o(e, t, T.az.RemovedCommunityMember), s(`${t}_${e}`));
@@ -943,7 +943,7 @@
                 }
             }
             (Ce.defaultProps = { addMessageListener: (e) => window.addEventListener("message", e), isMedia: !1, removeMessageListener: (e) => window.removeEventListener("message", e) }), (Ce.contextType = f.rC);
-            const ye = ie(Ce);
+            const ve = ie(Ce);
         },
         879113: (e, t, r) => {
             r.d(t, { Z: () => h });
@@ -1031,6 +1031,19 @@
             const p = l.default.create((e) => ({ root: { overflow: "auto", WebkitOverflowScrolling: "touch" }, modalPadding: { paddingTop: e.componentDimensions.appBarHeight }, iframe: { borderWidth: 0, flexGrow: 1 } })),
                 u = s.forwardRef((e, t) => s.createElement(d, (0, o.Z)({ forwardedRef: t }, e)));
         },
+        748138: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => c });
+            var o = r(202784),
+                s = r(890601),
+                n = r(783427),
+                a = r(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const c = i;
+        },
         662678: (e, t, r) => {
             r.d(t, { G: () => s, Z: () => o });
             r(136728);
@@ -1049,4 +1062,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Report.cab1d85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Report.5acc7eaa.js.map

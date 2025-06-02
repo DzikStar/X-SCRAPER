@@ -5506,13 +5506,35 @@
                 o("g22c8c30", "Se queste note vengono valutate come utili da un numero sufficiente di collaboratori, inclusi coloro che solitamente in passato hanno avuto pareri discordanti nelle valutazioni, le mostreremo pubblicamente insieme al post poiché si tratta di ulteriori informazioni contestuali."),
                 o("jf04b084", "Queste note vengono aggiunte dai collaboratori che non ritengono il post fuorviante e che credono non siano necessarie ulteriori informazioni contestuali."),
                 o("g5a72e98", "Sono visibili solo su Note della collettività sotto forma di ulteriori informazioni contestuali per i valutatori e non vengono mostrate come informazioni contestuali insieme al post, anche se hanno ottenuto lo stato di Utile."),
-                o("h53cb7de", "Cosa pensi di questo post?"),
-                o("dc3bfc82", "Cosa, in caso, ti piace di questo post?"),
-                o("b4704bf4", "Cosa, in caso, non ti piace di questo post?"),
+                o("b8719c22", "Aiutaci a capire se i post sono nei Mi piace di utenti con punti di vista diversi."),
+                o("jcdf97d4", "Cosa ti piace di questo post?"),
+                o("d4d7b67e", "Cosa non ti piace di questo post?"),
                 o("ed5156fa", "Si è verificato un errore nel salvataggio della valutazione, riprova."),
-                o("d5f9fb42", "Hai valutato questa messa in risalto della community "),
+                o("d0ed3636", "Hai valutato questo post"),
                 o("j6aa6172", "Eliminare la valutazione?"),
                 o("i4112750", "Questa operazione non può essere annullata."),
+                o("i6f6191a", "Grazie!"),
+                o("h5575012", "Agree and submit"),
+                o("f9171e52", "Questo post è nei Mi piace di utenti solitamente in disaccordo, ma il numero di pareri disponibili è attualmente limitato."),
+                o("j0f9919a", "La tua valutazione non influirà negativamente sul post ma potrebbe avere un impatto positivo sui post veramente apprezzati."),
+                o("b3af830c", "Il tuo contributo:"),
+                o("d0b29562", "Valuta ora altri post"),
+                o("i36ea87a", "Sono d'accordo"),
+                o("d5befc34", "Ho appreso qualcosa di interessante"),
+                o("je26ecf2", "Fa un'osservazione interessante"),
+                o("e4e331aa", "Mette d’accordo su un tema che solitamente divide"),
+                o("ed61ff2a", "È commovente o suscita tenerezza"),
+                o("gc3104d8", "È stimolante o intrigante"),
+                o("j8c4400e", "È divertente"),
+                o("j4738406", "N.a.: non ha niente di speciale"),
+                o("d93d1666", "Non sono d'accordo"),
+                o("d6130466", "È poco significativo"),
+                o("d96835b6", "Non mi interessa"),
+                o("b7ba4150", "N.a.: non ha niente che non va"),
+                o("g0402b3b", "sono nei Mi piace di utenti con punti di vista diversi"),
+                o("ged62c2b", "mettere in risalto"),
+                o("b5d5f7f1", "Contribuisci allo sviluppo"),
+                o("a42fef87", "Learn more"),
                 o("bd7eb888", "Vedi tutte le note su questo post"),
                 o("i97b83f6", "Si è verificato un errore nell'invio del ricorso. Riprova."),
                 o("a038ab9a", "Traduci nota"),
@@ -5863,8 +5885,8 @@
                 o("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Elimina cartella"),
-                o("f4ea967a", "La cartella è stata eliminata"),
+                o("h18f86a4", "Elimina cartella");
+            o("f4ea967a", "La cartella è stata eliminata"),
                 o("b670aa62", "Nome cartella"),
                 o("aece5462", "Il nome della cartella è stato aggiornato correttamente"),
                 o("e3299b94", "Qualcosa è andato storto. Prova ad aggiornare nuovamente la cartella tra un minuto."),
@@ -5895,8 +5917,8 @@
                     return "Termine: " + e.timestamp;
                 }),
                 o("daca8a2c", "Apri nel dock"),
-                o("e3aac82a", "Caricamento trasmissione in corso");
-            o("i0ed3f4e", "Immagine evento"),
+                o("e3aac82a", "Caricamento trasmissione in corso"),
+                o("i0ed3f4e", "Immagine evento"),
                 o("cbae35fa", "Segnala trasmissione"),
                 o("fd12ab58", "Post della raccolta"),
                 o("a226497c", "Crea una nuova community"),
@@ -6867,8 +6889,8 @@
                 o("b925c18c", "Tipo di retribuzione"),
                 o("j3d242ce", "Range non valido"),
                 o("f4d07bd2", "Includi i dettagli facoltativi affinché i candidati possano trovare le offerte più facilmente con una ricerca."),
-                o("b8cbb51a", "Riepilogo offerta"),
-                o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
+                o("b8cbb51a", "Riepilogo offerta");
+            o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
                 o("b075c68a", "Modifica offerta"),
                 o("d4b6a6e0", "Profile Spotlight"),
                 o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
@@ -6893,8 +6915,8 @@
                 o("c0195168", "Modifica l'icona app e le opzioni di navigazione"),
                 o("b6b5dc94", "Ottieni la verifica"),
                 o("b06db848", "Spicca tra tutti sulla piattaforma"),
-                o("e3e3a97c", "Guadagna una parte del ricavato generato dai tuoi post");
-            o("f15bc24e", "Meno limiti per Grok"),
+                o("e3e3a97c", "Guadagna una parte del ricavato generato dai tuoi post"),
+                o("f15bc24e", "Meno limiti per Grok"),
                 o("c4666e1c", "Meno limiti per Grok 3, il nostro ultimo modello"),
                 o("he74ae7a", "Meno limiti d'uso per Grok in assoluto"),
                 o("f5732cd4", "Inoltre, accesso potenziato a DeepSearch e Ragionamento"),
@@ -7845,35 +7867,7 @@
                 o("c29e3a88", "Seleziona affiliati"),
                 o("j8318d57", function (e) {
                     return e.number + " affiliat" + t(e.number, "o", "i");
-                }),
-                o("bf809ec0", "Seleziona affiliati"),
-                o("b719e224", "Nessun risultato"),
-                o("c9938100", "Risultati di ricerca"),
-                o("d1a35ec6", "Aggiungi account"),
-                o("b437adda", "Esegui l'upgrade alla versione a pagamento"),
-                o("f1f6c88b", function (e) {
-                    return "Account (" + e.count + ")";
-                }),
-                o("b02156b8", "Inviti"),
-                o("gd67d29b", function (e) {
-                    return "Inviti (" + e.count + ")";
-                }),
-                o("daf646e6", "Nota: devi etichettare il tuo account correttamente."),
-                o("i3895c32", "Stiamo esaminando il tuo account in quanto hai cambiato @identificativo X"),
-                o("i5f8b628", "Finché il tuo account non verrà esaminato, gli affiliati non potranno essere modificati."),
-                o("e9e663ac", "Il pagamento deve essere rinnovato."),
-                o("c3ddd22c", "termini"),
-                o("c9729d8a", "termini"),
-                o("cdcd1d2c", "Aggiungi affiliazioni alla tua organizzazione"),
-                o("d30ea6f3", function (e) {
-                    return "Vuoi davvero rimuovere @" + e.name + "?";
-                }),
-                o("c2dfbb86", "Sì, procedi"),
-                o("ba047f76", "Procedendo alla rimozione dell'affiliazione, l'affiliato perderà la sua spunta e il suo badge di account affiliato. L'addebito terminerà con la fine del mese."),
-                o("j26dee0e", "Rimuovi affiliato"),
-                o("e30cbdf0", "Questo affiliato è abbonato a Organizzazioni verificate e deve continuare a essere contrassegnato come organizzazione, pertanto adesso non può essere considerato come persona."),
-                o("j3115ce8", "Persona"),
-                o("d8bb1d84", "Organizzazione");
+                });
             function r(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7912,9 +7906,37 @@
                     c(e, i)
                 );
             }
-            o("e970bdbd", function (e) {
-                return e.count + " inviti rimanenti";
-            }),
+            o("bf809ec0", "Seleziona affiliati"),
+                o("b719e224", "Nessun risultato"),
+                o("c9938100", "Risultati di ricerca"),
+                o("d1a35ec6", "Aggiungi account"),
+                o("b437adda", "Esegui l'upgrade alla versione a pagamento"),
+                o("f1f6c88b", function (e) {
+                    return "Account (" + e.count + ")";
+                }),
+                o("b02156b8", "Inviti"),
+                o("gd67d29b", function (e) {
+                    return "Inviti (" + e.count + ")";
+                }),
+                o("daf646e6", "Nota: devi etichettare il tuo account correttamente."),
+                o("i3895c32", "Stiamo esaminando il tuo account in quanto hai cambiato @identificativo X"),
+                o("i5f8b628", "Finché il tuo account non verrà esaminato, gli affiliati non potranno essere modificati."),
+                o("e9e663ac", "Il pagamento deve essere rinnovato."),
+                o("c3ddd22c", "termini"),
+                o("c9729d8a", "termini"),
+                o("cdcd1d2c", "Aggiungi affiliazioni alla tua organizzazione"),
+                o("d30ea6f3", function (e) {
+                    return "Vuoi davvero rimuovere @" + e.name + "?";
+                }),
+                o("c2dfbb86", "Sì, procedi"),
+                o("ba047f76", "Procedendo alla rimozione dell'affiliazione, l'affiliato perderà la sua spunta e il suo badge di account affiliato. L'addebito terminerà con la fine del mese."),
+                o("j26dee0e", "Rimuovi affiliato"),
+                o("e30cbdf0", "Questo affiliato è abbonato a Organizzazioni verificate e deve continuare a essere contrassegnato come organizzazione, pertanto adesso non può essere considerato come persona."),
+                o("j3115ce8", "Persona"),
+                o("d8bb1d84", "Organizzazione"),
+                o("e970bdbd", function (e) {
+                    return e.count + " inviti rimanenti";
+                }),
                 o("id67d953", function (e) {
                     return "Qualcosa è andato storto durante il recupero dei dettagli di pagamento relativi a Stripe. Se il problema persiste, scrivi all'indirizzo email " + e.supportEmail + ".";
                 }),
@@ -8887,8 +8909,8 @@
                 o("ha3efce4", "Automatica"),
                 o("hd8d044d", function (e) {
                     return "Automatica (" + e.quality + ")";
-                }),
-                o("a7bf9962", "Scarica video"),
+                });
+            o("a7bf9962", "Scarica video"),
                 o("ccc97152", "Velocità di riproduzione"),
                 o("h531ade0", "Qualità video"),
                 o("e8b5757c", "0,25x"),
@@ -8919,8 +8941,8 @@
                 o("c1658fc6", "Il contenuto multimediale non può essere riprodotto."),
                 o("h519ae04", "Il contenuto è stato disabilitato in seguito a un reclamo in materia di copyright."),
                 o("ce871584", "Questa trasmissione è terminata."),
-                o("c101eb96", "Questa trasmissione non è disponibile.");
-            o("gb24a514", "Questo contenuto è stato disabilitato in seguito a una segnalazione da parte del titolare del copyright."),
+                o("c101eb96", "Questa trasmissione non è disponibile."),
+                o("gb24a514", "Questo contenuto è stato disabilitato in seguito a una segnalazione da parte del titolare del copyright."),
                 o("hcaf3e63", function (e) {
                     return "Questo contenuto è stato disabilitato in seguito a un reclamo in materia di copyright da parte di " + e.holder + ".";
                 }),
@@ -9069,10 +9091,10 @@
                 o("f8e8e32e", "Tu"),
                 o("df6703d3", "Tu"),
                 o("c20f7e9f", function (e) {
-                    return t(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), "altri " + e.otherUsersCount);
+                    return t(e.otherUsersCount, u.createElement(u.Fragment, null, "", e.secondName), "altri " + e.otherUsersCount);
                 }),
                 o("he26f627", function (e) {
-                    return t(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), "altri " + e.otherUsersCount);
+                    return t(e.otherUsersCount, u.createElement(u.Fragment, null, "", e.secondName), "altri " + e.otherUsersCount);
                 }),
                 o("gea7aa3c", "Avanti"),
                 o("b6462b32", "Precedente"),
@@ -9492,8 +9514,8 @@
                 o("acddd4d4", "Rosso"),
                 o("cef9b062", "Foglia di tè"),
                 o("d9daefca", "Grigio scuro");
-            var l = a(202784),
-                u = [],
+            var u = a(202784),
+                l = [],
                 s = {};
             function d(e) {
                 return e;
@@ -9509,7 +9531,7 @@
                     (i.prototype.constructor = i),
                     c(i, a),
                     (m.prototype.render = function () {
-                        return l.createElement.apply(l, this[this.props.$i18n].reduce(this.templateReducer, [l.Fragment, null]));
+                        return u.createElement.apply(u, this[this.props.$i18n].reduce(this.templateReducer, [u.Fragment, null]));
                     }),
                     (o = m),
                     (p = [
@@ -11482,6 +11504,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Aiutaci a trovare post che "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Non influirà negativamente sui post ma potrebbe ", " quelli veramente apprezzati"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " di questa funzione sperimentatale"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["In quanto autore del post, puoi "];
@@ -12931,8 +12977,8 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    i = l.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), u[s[e]] || d);
+                                    i = u.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), l[s[e]] || d);
                                 return function (e, o, t) {
                                     return e.concat(o, i[a(t)]);
                                 };
@@ -12943,10 +12989,10 @@
                     Object.defineProperty(o, "prototype", { writable: !1 }),
                     m
                 );
-            })(a(111677)._ActualI18NFormatMessage || l.Component);
+            })(a(111677)._ActualI18NFormatMessage || u.Component);
             o("_ActualI18NFormatMessage", p),
                 o("I18NFormatMessage", function (e) {
-                    return l.createElement(p, e);
+                    return u.createElement(p, e);
                 });
             var f = a(495075);
             a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
@@ -13299,4 +13345,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.b03c815a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.db6bc25a.js.map

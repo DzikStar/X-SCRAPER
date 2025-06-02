@@ -5502,13 +5502,35 @@
                 i("g22c8c30", "Kung binigyan ng rating ang mga note na ito bilang Kapaki-pakinabang ng sapat na bilang ng mga contributor, kabilang ang mga taong karaniwang hindi nagkakasundo sa mga dati nilang rating, makikita na ng publiko ang mga iyon kasama ng post bilang dagdag na konteksto."),
                 i("jf04b084", "Idinaragdag ang mga note na ito ng mga contributor na naniniwalang hindi mapanlinlang at hindi nangangailangan ng dagdag na konteksto ang post."),
                 i("g5a72e98", "Nakikita lang ang mga ito sa Mga Note ng Komunidad bilang dagdag na impormasyon sa mga rater, at hindi ipinapakita bilang konteksto kasama ng post, kahit na magkaroon ito ng status na Kapaki-pakinabang."),
-                i("h53cb7de", "Ano ang palagay mo sa post na ito?"),
-                i("dc3bfc82", "Ano, kung mayroon man, ang nagustuhan mo tungkol sa post na ito?"),
-                i("b4704bf4", "Ano, kung mayroon man, ang hindi mo nagustuhan tungkol sa post na ito?"),
+                i("b8719c22", "Tumutulong na tukuyin kung ni-like ang mga post ng mga taong may iba't ibang pananaw."),
+                i("jcdf97d4", "Ano ang nagustuhan mo sa post?"),
+                i("d4d7b67e", "Ano ang hindi mo nagustuhan sa post?"),
                 i("ed5156fa", "Nagkaroon ng error sa pag-save sa iyong rating, pakisubukan ulit."),
-                i("d5f9fb42", "Ni-rate mo ang boost na ito ng komunidad"),
+                i("d0ed3636", "Ni-rate mo ang post na ito"),
                 i("j6aa6172", "I-delete ang rating?"),
                 i("i4112750", "Hindi ito maa-undo."),
+                i("i6f6191a", "Salamat!"),
+                i("h5575012", "Agree and submit"),
+                i("f9171e52", "Nakakuha ang post na ito ng ilang like mula sa mga taong karaniwang hindi nagkakasundo, pero limitado sa ngayon ang input."),
+                i("j0f9919a", "Hindi negatibong makakaapekto ang rating mo sa isang post, pero makakatulong itong positibong kilalanin ang mga post na marami ang nag-like."),
+                i("b3af830c", "Input mo:"),
+                i("d0b29562", "I-rate ang iba pang post ngayon"),
+                i("i36ea87a", "Sumasangayon ako rito"),
+                i("d5befc34", "May natutunan akong bagay na interesado"),
+                i("je26ecf2", "Mayroon itong makabuluhang ideya"),
+                i("e4e331aa", "Pinag-iisa nito ang paksa na madalas na magkasalungat"),
+                i("ed61ff2a", "Nakaka-touch o nakakakilig ito"),
+                i("gc3104d8", "Nagbibigay ito ng inspirasyon o nakaka-excite"),
+                i("j8c4400e", "Nakakatawa ito"),
+                i("j4738406", "n/a Wala akong hindi nagustuhan tungkol dito"),
+                i("d93d1666", "Hindi ako sumasang-ayon dito"),
+                i("d6130466", "Wala itong makabuluhang ideya "),
+                i("d96835b6", "Hindi ako interesado rito"),
+                i("b7ba4150", "n/a Wala akong hindi nagustuhan tungkol dito"),
+                i("g0402b3b", "ni-like ng mga taong may iba't ibang pananaw"),
+                i("ged62c2b", "i-spotlight"),
+                i("b5d5f7f1", "Hinuhubog ang direksyon"),
+                i("a42fef87", "Learn more"),
                 i("bd7eb888", "Tingnan ang lahat ng note sa post na ito"),
                 i("i97b83f6", "Nagkaroon ng error sa pagsusumite ng iyong apela, pakisubukan ulit."),
                 i("a038ab9a", "Isalin ang note"),
@@ -5859,8 +5881,8 @@
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "I-delete ang Folder"),
-                i("f4ea967a", "Na-delete na ang folder"),
+                i("h18f86a4", "I-delete ang Folder");
+            i("f4ea967a", "Na-delete na ang folder"),
                 i("b670aa62", "Pangalan ng Folder"),
                 i("aece5462", "Matagumpay na na-update ang pangalan ng folder"),
                 i("e3299b94", "Nagkaproblema. Subukang i-update ang folder na iyon sa loob ng ilang sandali."),
@@ -5891,8 +5913,8 @@
                     return "Nagtapos nang " + a.timestamp;
                 }),
                 i("daca8a2c", "Buksan sa Dock"),
-                i("e3aac82a", "Naglo-load ng Broadcast");
-            i("i0ed3f4e", "Larawan ng kaganapan"),
+                i("e3aac82a", "Naglo-load ng Broadcast"),
+                i("i0ed3f4e", "Larawan ng kaganapan"),
                 i("cbae35fa", "Iulat ang Broadcast"),
                 i("fd12ab58", "Mga post ng Koleksyon"),
                 i("a226497c", "Gumawa ng bagong Komunidad"),
@@ -6863,8 +6885,8 @@
                 i("b925c18c", "Uri ng Sahod"),
                 i("j3d242ce", "Invalid na range"),
                 i("f4d07bd2", "Magsama ng mga opsyonal na detalye para maging mas madali sa mga candidate na mahanap ang mga trabaho mo gamit ang paghahanap."),
-                i("b8cbb51a", "Buod ng Trabaho"),
-                i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
+                i("b8cbb51a", "Buod ng Trabaho");
+            i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
                 i("b075c68a", "I-edit ang trabaho"),
                 i("d4b6a6e0", "Spotlight ng Profile"),
                 i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko."),
@@ -6889,8 +6911,8 @@
                 i("c0195168", "Palitan ang app icon mo at mga opsyon mo sa pag-navigate"),
                 i("b6b5dc94", "Magpa-verify"),
                 i("b06db848", "Maging kapansin-pansin mula sa iba pang nasa platform"),
-                i("e3e3a97c", "Makakuha ng share ng kita mula sa mga post mo");
-            i("f15bc24e", "Mas mataas na limitasyon ng Grok"),
+                i("e3e3a97c", "Makakuha ng share ng kita mula sa mga post mo"),
+                i("f15bc24e", "Mas mataas na limitasyon ng Grok"),
                 i("c4666e1c", "Higit pang usage ng Grok 3, ang aming pinakabagong model"),
                 i("he74ae7a", "Pinakamatataas na limitasyon ng usage ng Grok"),
                 i("f5732cd4", "At, mas pinalawak na access sa DeepSearch at Mag-isip"),
@@ -7207,16 +7229,16 @@
                 i("hd80bd3e", "Mag-promote ng post"),
                 i("fe2b0008", "Alamin kung paano gamitin ang X"),
                 i("h257d4aa", "Pumili ng ipo-promote na post"),
-                i("fe946974", "Your trial of X without ads"),
-                i("f6c50ec0", "Your ad-free trial has ended"),
-                i("b1319404", "Ads avoided"),
-                i("baa4acae", "You’re seeing more personalized content."),
-                i("c00e8600", "Estimated time saved"),
-                i("ic073e4e", "Your time is valuable."),
-                i("eb866e88", "Estimated 1-year time savings"),
-                i("aa77b70c", "Based on your usage."),
-                i("c534c6b4", "We’re crunching the numbers..."),
-                i("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                i("fe946974", "Ang trial mo ng X nang walang ads"),
+                i("f6c50ec0", "Natapos na ang walang ads na trial mo"),
+                i("b1319404", "Iniwasan ang ads"),
+                i("baa4acae", "Nakakakita ka ng mas naka-personalize na content."),
+                i("c00e8600", "Tinatayang natipid na oras"),
+                i("ic073e4e", "Mahalaga ang oras mo."),
+                i("eb866e88", "Tinatayang 1 taong natipid na oras"),
+                i("aa77b70c", "Batay sa paggamit mo."),
+                i("c534c6b4", "Kinakalkula namin ang mga number..."),
+                i("i57332f0", "Patuloy na mag-scroll at bumalik sa ibang pagkakataon para makita kung ilang ads ang naiwasan mo at gaano karaming oras ang natipid"),
                 i("cc10f019", function (a) {
                     return a.minutes + " " + e(a.minutes, "", "(na) ") + "minuto";
                 }),
@@ -7232,11 +7254,11 @@
                 i("be88be23", function (a) {
                     return "Naka-activate na ang " + a.durationInDays + " araw na walang ads na trial mo";
                 }),
-                i("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                i("ae3f3b0e", "Enjoy!"),
-                i("cdac8dc4", "See your new feed"),
+                i("a4413462", "Sa buong panahon ng trial, may makikita kang stats tungkol sa ilang ads ang hindi mo nakita at ilang oras ang na-save mo."),
+                i("ae3f3b0e", "Mag-enjoy!"),
+                i("cdac8dc4", "Tingnan ang bago mong feed"),
                 i("dec99336", "Walang ad"),
-                i("i95803fa", "Unfortunately, you are not eligible at this time."),
+                i("i95803fa", "Sa kasamaang palad, hindi ka kuwalipikado sa ngayon."),
                 i("d28a1d72", "Maunang matukoy ang mga trend gamit ang Radar"),
                 i("fb70427a", "Ipinapakilala ang pinakamakapangyarihang tool sa paghahanap sa X."),
                 i("i54bf620", "Bantayan ang mga keyword"),
@@ -7841,35 +7863,7 @@
                 i("c29e3a88", "Pumili ng mga affiliate"),
                 i("j8318d57", function (a) {
                     return a.number + " " + e(a.number, "", "(na) ") + "affiliate";
-                }),
-                i("bf809ec0", "Pumili ng Mga Affiliate"),
-                i("b719e224", "Walang resulta"),
-                i("c9938100", "Mga resulta ng paghahanap"),
-                i("d1a35ec6", "Magdagdag ng mga account"),
-                i("b437adda", "I-upgrade sa may bayad"),
-                i("f1f6c88b", function (a) {
-                    return "Mga Account (" + a.count + ")";
-                }),
-                i("b02156b8", "Mga Imbitasyon"),
-                i("gd67d29b", function (a) {
-                    return "Mga Imbitasyon (" + a.count + ")";
-                }),
-                i("daf646e6", "Pakitandaan: kailangan mong lagyan ng label ang mga account nang tama."),
-                i("i3895c32", "Kasalukuyang sinusuri ang account mo dahil pinalitan mo ang X @handle mo"),
-                i("i5f8b628", "Hindi mo puwedeng palitan ang mga affiliate mo hanggang sa masuri ang account mo."),
-                i("e9e663ac", "Lampas na sa takdang petsa ang pagbabayad mo."),
-                i("c3ddd22c", "mga tuntunin"),
-                i("c9729d8a", "mga tuntunin"),
-                i("cdcd1d2c", "Magdagdag ng mga affiliation sa inyong organisasyon"),
-                i("d30ea6f3", function (a) {
-                    return "Sigurado ka ba na gusto mong tanggalin si @" + a.name + "?";
-                }),
-                i("c2dfbb86", "Oo gawin ito"),
-                i("ba047f76", "Kapag inalis ang affiliation, kaagad na maaalis ang iyong checkmark at affiliation badge. Patuloy kang sisingilin hanggang sa katapusan ng buwan."),
-                i("j26dee0e", "Alisin ang affiliate"),
-                i("e30cbdf0", "Ang affiliate na ito ay isang subscriber ng Mga Beripikadong Organisasyon at kailangang manatili bilang isang Organisasyon. Hindi ito puwedeng palitan para maging indibidwal."),
-                i("j3115ce8", "Indibidwal"),
-                i("d8bb1d84", "Organisasyon");
+                });
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7908,9 +7902,37 @@
                     o(a, n)
                 );
             }
-            i("e970bdbd", function (a) {
-                return "may natitirang " + a.count + " (na) imbitasyon";
-            }),
+            i("bf809ec0", "Pumili ng Mga Affiliate"),
+                i("b719e224", "Walang resulta"),
+                i("c9938100", "Mga resulta ng paghahanap"),
+                i("d1a35ec6", "Magdagdag ng mga account"),
+                i("b437adda", "I-upgrade sa may bayad"),
+                i("f1f6c88b", function (a) {
+                    return "Mga Account (" + a.count + ")";
+                }),
+                i("b02156b8", "Mga Imbitasyon"),
+                i("gd67d29b", function (a) {
+                    return "Mga Imbitasyon (" + a.count + ")";
+                }),
+                i("daf646e6", "Pakitandaan: kailangan mong lagyan ng label ang mga account nang tama."),
+                i("i3895c32", "Kasalukuyang sinusuri ang account mo dahil pinalitan mo ang X @handle mo"),
+                i("i5f8b628", "Hindi mo puwedeng palitan ang mga affiliate mo hanggang sa masuri ang account mo."),
+                i("e9e663ac", "Lampas na sa takdang petsa ang pagbabayad mo."),
+                i("c3ddd22c", "mga tuntunin"),
+                i("c9729d8a", "mga tuntunin"),
+                i("cdcd1d2c", "Magdagdag ng mga affiliation sa inyong organisasyon"),
+                i("d30ea6f3", function (a) {
+                    return "Sigurado ka ba na gusto mong tanggalin si @" + a.name + "?";
+                }),
+                i("c2dfbb86", "Oo gawin ito"),
+                i("ba047f76", "Kapag inalis ang affiliation, kaagad na maaalis ang iyong checkmark at affiliation badge. Patuloy kang sisingilin hanggang sa katapusan ng buwan."),
+                i("j26dee0e", "Alisin ang affiliate"),
+                i("e30cbdf0", "Ang affiliate na ito ay isang subscriber ng Mga Beripikadong Organisasyon at kailangang manatili bilang isang Organisasyon. Hindi ito puwedeng palitan para maging indibidwal."),
+                i("j3115ce8", "Indibidwal"),
+                i("d8bb1d84", "Organisasyon"),
+                i("e970bdbd", function (a) {
+                    return "may natitirang " + a.count + " (na) imbitasyon";
+                }),
                 i("id67d953", function (a) {
                     return "Nagkaproblema habang kinukuha ang mga detalye ng pag-checkout mo sa Stripe. Makipag-ugnayan sa " + a.supportEmail + " kapag nagpatuloy ang problema.";
                 }),
@@ -8883,8 +8905,8 @@
                 i("ha3efce4", "Auto"),
                 i("hd8d044d", function (a) {
                     return "Auto (" + a.quality + ")";
-                }),
-                i("a7bf9962", "I-download ang video"),
+                });
+            i("a7bf9962", "I-download ang video"),
                 i("ccc97152", "Bilis ng playback"),
                 i("h531ade0", "Video quality"),
                 i("e8b5757c", "0.25x"),
@@ -8915,8 +8937,8 @@
                 i("c1658fc6", "Hindi ma-play ang media."),
                 i("h519ae04", "Na-disable ang media dahil sa habol sa copyright."),
                 i("ce871584", "Natapos na ang broadcast na ito."),
-                i("c101eb96", "Hindi available ang broadcast na ito.");
-            i("gb24a514", "Na-disable ang media na ito bilang tugon sa isang ulat ng may-ari ng copyright."),
+                i("c101eb96", "Hindi available ang broadcast na ito."),
+                i("gb24a514", "Na-disable ang media na ito bilang tugon sa isang ulat ng may-ari ng copyright."),
                 i("hcaf3e63", function (a) {
                     return "Na-disable ang media na ito dahil sa habol ni " + a.holder + " sa copyright.";
                 }),
@@ -11485,6 +11507,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Tumutulong na mahanap ang mga post na "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Hindi makakapinsala sa mga post pero puwedeng makatulong na ", " ang mga post na ni-like ng maraming tao"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " ng experimental feature na ito"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Bilang author ng post, puwede kang "];
@@ -12075,7 +12121,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["(", "% Bayarin, Min. ", ")"];
                             },
                         },
                         {
@@ -13307,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.69438a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b4515b6a.js.map

@@ -76,13 +76,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: g, style: f, subtitle: y, title: b, titleDomId: C, titleIconCell: k, titleIconCellSize: v, withBackground: x, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: s, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: g, style: f, subtitle: y, title: b, titleDomId: C, titleIconCell: v, titleIconCellSize: k, withBackground: x, withWideContainer: w } = this.props,
                         { isModal: S } = this.context,
                         T = s ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         E = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!x, S, !!g);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: i, isLarge: c, leftControl: T, middleControl: p, position: u(h, S, r), rightControl: m, style: f, subtitle: y, title: b, titleDomId: C, titleIconCell: k, titleIconCellSize: v, withBackground: E, withWideContainer: w }), g || null);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: i, isLarge: c, leftControl: T, middleControl: p, position: u(h, S, r), rightControl: m, style: f, subtitle: y, title: b, titleDomId: C, titleIconCell: v, titleIconCellSize: k, withBackground: E, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -112,7 +112,7 @@
                 m = r.forwardRef(p);
         },
         253493: (e, t, n) => {
-            n.d(t, { Z: () => k });
+            n.d(t, { Z: () => v });
             var o = n(202784),
                 r = n(107267),
                 s = n(791632),
@@ -148,21 +148,21 @@
                     return o.createElement(o.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: r, backLocation: s, documentTitle: a, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: f, screenType: b, searchBoxOptions: C, secondaryBar: k, showSubtitleOnRoot: v, showSubtitleOnWideDetail: x, subtitle: w, title: S, titleIconCell: T, titleIconCellSize: E, withDetailOpen: _, withSearchBox: Z, withTweetButton: I, withWideContainer: B } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: r, backLocation: s, documentTitle: a, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: f, screenType: b, searchBoxOptions: C, secondaryBar: v, showSubtitleOnRoot: k, showSubtitleOnWideDetail: x, subtitle: w, title: S, titleIconCell: T, titleIconCellSize: E, withDetailOpen: _, withSearchBox: Z, withTweetButton: I, withWideContainer: B } = this.props,
                         D = "root" === b,
                         L = "secondaryRoot" === b,
                         P = "primaryDetail" === b,
-                        F = (P && x) || (D && v),
+                        F = (P && x) || (D && k),
                         R = D || (P && e),
                         M = D ? d.ey : P ? d.vX : void 0,
-                        O = o.createElement(i.Z, { style: y.appBarContainer }, o.createElement(p.ZP, { backLocation: s, fixed: !1, hideBackButton: R, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: f, secondaryBar: k, style: r, subtitle: F ? w : void 0, title: S, titleDomId: M, titleIconCell: T, titleIconCellSize: E, withWideContainer: B })),
+                        O = o.createElement(i.Z, { style: y.appBarContainer }, o.createElement(p.ZP, { backLocation: s, fixed: !1, hideBackButton: R, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: f, secondaryBar: v, style: r, subtitle: F ? w : void 0, title: S, titleDomId: M, titleIconCell: T, titleIconCellSize: E, withWideContainer: B })),
                         A = D || (L && _) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: l, middleControl: m, onBackClick: g, rightControl: f, searchBoxOptions: C, subtitle: w, title: S, withSearchBox: Z, withTweetButton: I });
                     return o.createElement(o.Fragment, null, A, O);
                 }
             }
             (b.contextType = m.Z), (b.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
             const C = (0, u.ZP)(b),
-                k = (e) => {
+                v = (e) => {
                     const t = (0, r.useHistory)();
                     return (0, s.HD)(t) ? e.children || null : o.createElement(C, e);
                 };
@@ -234,7 +234,7 @@
             const u = d;
         },
         376293: (e, t, n) => {
-            n.d(t, { $f: () => S, KV: () => y, LI: () => I, SC: () => w, Vt: () => k, ed: () => B, op: () => T });
+            n.d(t, { $f: () => S, KV: () => y, LI: () => I, SC: () => w, Vt: () => v, ed: () => B, op: () => T });
             var o = n(202784),
                 r = n(190286),
                 s = n(111677),
@@ -252,8 +252,8 @@
                 y = i().a9fd20be,
                 b = i().j546fb79,
                 C = i().c9623eeb,
-                k = i().e133be4e,
-                v = i().he43bca4,
+                v = i().e133be4e,
+                k = i().he43bca4,
                 x = i().f5f01af6,
                 w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 S = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: m, text: t ? f({ screenName: e }) : g({ screenName: e }) }),
@@ -282,7 +282,7 @@
                 E = (e) => (e ? l.default : a.default),
                 _ = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
                 Z = (e) => (e.blocking ? C({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
-                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: k, text: t ? x : v }))(e.screen_name, t) : S(e.screen_name, t)),
+                I = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: b({ screenName: e }), label: v, text: t ? x : k }))(e.screen_name, t) : S(e.screen_name, t)),
                 B = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: s, headline: i, label: a, text: l } = e;
                     return o.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: s, headline: i, onCancel: n, onConfirm: t, text: l });
@@ -379,11 +379,11 @@
                 y = n(919022),
                 b = n(593953);
             const C = (e, t) => t.match.params.conversationId,
-                k = (e, t) => p.selectConversation(e, C(0, t)),
-                v = (e, t) => h.q9(e, C(0, t)),
+                v = (e, t) => p.selectConversation(e, C(0, t)),
+                k = (e, t) => h.q9(e, C(0, t)),
                 x = (e, t) => h.W8(e, C(0, t)),
                 w = (0, u.Z)()
-                    .propsFromState(() => ({ conversation: k, entries: p.selectEntries, conversationId: C, isNewGroupConversation: b.rR, perspective: g._h, newConversationParticipants: b.bZ, tweetAttachment: b.Ss, users: y.ZP.selectAll, isUploading: v, media: x }))
+                    .propsFromState(() => ({ conversation: v, entries: p.selectEntries, conversationId: C, isNewGroupConversation: b.rR, perspective: g._h, newConversationParticipants: b.bZ, tweetAttachment: b.Ss, users: y.ZP.selectAll, isUploading: k, media: x }))
                     .adjustStateProps(({ conversation: e, conversationId: t, entries: n, isNewGroupConversation: o, isUploading: r, media: s, newConversationParticipants: i, perspective: a, tweetAttachment: l, users: c }) => {
                         const u = e?.data;
                         return { conversation: (u && (0, d.lk)(u, n, c)) || void 0, conversationId: t, isNewGroupConversation: o, isUploading: r, media: s, newConversationParticipants: i, perspective: a };
@@ -414,8 +414,8 @@
                 A = n(198506),
                 N = n(275365),
                 W = n(503115),
-                K = n(356738),
-                z = n(255534),
+                z = n(356738),
+                K = n(255534),
                 H = n(276032),
                 U = n(164383);
             const V = L().d4986f86,
@@ -437,8 +437,8 @@
                         return o.createElement(S.Z, { style: X.facePile }, o.createElement(E.Z, { userAvatarSize: "large", userAvatarUrls: n }));
                     },
                     u = (e) => {
-                        const t = s && s.participants.length ? (0, z.E)({ conversation: s, perspective: l }) : a ? (0, z.E)({ newConversationParticipants: a, perspective: l }) : V,
-                            n = s?.participants.length ? o.createElement(z.Z, { conversation: s, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(z.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, V),
+                        const t = s && s.participants.length ? (0, K.E)({ conversation: s, perspective: l }) : a ? (0, K.E)({ newConversationParticipants: a, perspective: l }) : V,
+                            n = s?.participants.length ? o.createElement(K.Z, { conversation: s, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(K.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, V),
                             r = s && l ? (0, A.Z)(s, l) : void 0,
                             c = (0, b.NL)(i);
                         let u = "large",
@@ -454,7 +454,7 @@
                     R.Z,
                     (() => {
                         const t = u(e.showTitle);
-                        return { backLocation: "/messages", onBackClick: c, rightControl: p(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(K.Z, null) : void 0, ...t };
+                        return { backLocation: "/messages", onBackClick: c, rightControl: p(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(z.Z, null) : void 0, ...t };
                     })(),
                     e.children,
                 );
@@ -463,12 +463,12 @@
             function Y({ conversationId: e, history: t, location: n, isNewGroupConversation: d = !1, conversation: u, newConversationParticipants: p, perspective: h, richTextInputContext: m, setLastViewedDmInboxPath: g, typeaheadWrapper: f = s.Z }) {
                 const y = (0, a.Z)(e),
                     [b, C] = o.useState(!1),
-                    k = (0, l.N)();
+                    v = (0, l.N)();
                 e || d || n.pathname !== window.location.pathname || t.replace({ pathname: "/messages" });
                 o.useEffect(() => {
                     e !== y && g(n.pathname);
                 }, [e, n.pathname, y, g]);
-                const v = "string" == typeof n.query.text ? n.query.text : void 0,
+                const k = "string" == typeof n.query.text ? n.query.text : void 0,
                     x = (0, r.Y4)();
                 return o.createElement(
                     i.Z,
@@ -484,10 +484,10 @@
                             onConversationProfileVisibilityChange: (e) => {
                                 b !== e && C(e);
                             },
-                            prefillText: v,
+                            prefillText: k,
                             richTextInputContext: m,
                             typeaheadWrapper: f,
-                            typingNotifier: k,
+                            typingNotifier: v,
                         }),
                     ),
                 );
@@ -565,10 +565,10 @@
                     const l = o.useCallback(() => {
                         n(t.id);
                     }, [n, t.id]);
-                    return t ? o.createElement(r.Z, { role: "listitem" }, o.createElement(s.Z, { onClick: l, style: v.root }, o.createElement(b.Z, { checked: e }), o.createElement(i.ZP, { size: "subtext2" }, t.name))) : null;
+                    return t ? o.createElement(r.Z, { role: "listitem" }, o.createElement(s.Z, { onClick: l, style: k.root }, o.createElement(b.Z, { checked: e }), o.createElement(i.ZP, { size: "subtext2" }, t.name))) : null;
                 },
-                k = o.memo(C),
-                v = l.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12, gap: e.spaces.space4 } })),
+                v = o.memo(C),
+                k = l.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12, gap: e.spaces.space4 } })),
                 x = { buttonLink: "/setting/labels", buttonText: "Manage Labels", buttonType: "brandOutlined" },
                 w = c.Z;
             function S(e) {
@@ -588,7 +588,7 @@
                         },
                         [e, a],
                     ),
-                    d = o.useCallback((e) => o.createElement(k, { checked: !1, label: e, onToggleCheck: c, refetch: i }), [i, c]);
+                    d = o.useCallback((e) => o.createElement(v, { checked: !1, label: e, onToggleCheck: c, refetch: i }), [i, c]);
                 if ("User" !== l.__typename) return null;
                 const h = l.labeled_conversation_collection_slice?.items;
                 return h ? (h.length ? o.createElement(m.Z, { assumedItemHeight: 64, cacheKey: "dmLabelsList", footer: t, identityFunction: S, items: h, onNearEnd: s, renderer: d, withoutHeadroom: !0 }) : o.createElement(p.Z, x)) : null;
@@ -695,8 +695,8 @@
                                         const t = o.index,
                                             s = n.lastIndex,
                                             i = e.text.substring(t, s),
-                                            a = v(i, x.start_newline),
-                                            l = v(i, x.end_newline);
+                                            a = k(i, x.start_newline),
+                                            l = k(i, x.end_newline);
                                         r.push([a, l]);
                                     }
                                     const i = [];
@@ -756,14 +756,14 @@
             function y(e, t) {
                 const n = t.inlineStyleRanges || [],
                     o = [],
-                    r = e.longformRichTextTransform ? k : C;
+                    r = e.longformRichTextTransform ? v : C;
                 for (const t of n) !e.stripPastedStyles && r.has(t.style) && o.push(t);
                 return (t.inlineStyleRanges = o), t;
             }
             const b = [m.DraftJS.Bold, m.DraftJS.Italic],
                 C = (0, p.Z)(b),
-                k = (0, p.Z)([...C, m.DraftJS.Strikethrough]);
-            function v(e, t) {
+                v = (0, p.Z)([...C, m.DraftJS.Strikethrough]);
+            function k(e, t) {
                 const n = e.match(t);
                 if (!n) return 0;
                 const [o] = n;
@@ -898,6 +898,19 @@
                     ),
                 );
         },
+        314948: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                s = n(783427),
+                i = n(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
         452693: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
@@ -929,4 +942,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.98eb358a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.38c781da.js.map

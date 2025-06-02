@@ -31,8 +31,8 @@
             var w = n(336636);
             const D = h().d7f8a117,
                 M = h().cae20e93,
-                T = h().gc767fda,
-                P = h().c7c85e0c,
+                P = h().gc767fda,
+                T = h().c7c85e0c,
                 I = ({ config: e, data: t, dismiss: n, impress: a }) => {
                     const o = (0, g.Z)();
                     r.useEffect(() => {
@@ -61,7 +61,7 @@
                         i = r.useCallback(() => {
                             o.scribe({ action: "dismiss" }), n();
                         }, [n, o]);
-                    return r.createElement(d.Z, { style: k.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: k.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, T), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: k.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: k.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: k.unlockButton, type: "primaryFilled" }, P)));
+                    return r.createElement(d.Z, { style: k.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: k.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, P), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: k.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: k.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: k.unlockButton, type: "primaryFilled" }, T)));
                 },
                 E = (e) => {
                     const t = (0, w.Z)({ metrics: e.config.metrics, periodInDays: e.config.periodInDays }),
@@ -335,25 +335,23 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.10"),
-                        n.e("icons.1"),
-                        n.e("icons.19"),
                         n.e("icons.0"),
-                        n.e("icons.23"),
-                        n.e("icons.8"),
+                        n.e("icons.5"),
+                        n.e("icons.12"),
+                        n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.3"),
-                        n.e("icons.15"),
-                        n.e("icons.4"),
+                        n.e("icons.21"),
+                        n.e("icons.28"),
+                        n.e("icons.10"),
+                        n.e("icons.17"),
+                        n.e("icons.9"),
+                        n.e("icons.23"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.9"),
-                        n.e("icons.7"),
-                        n.e("icons.28"),
-                        n.e("icons.26"),
+                        n.e("icons.22"),
                         n.e("icons.24"),
+                        n.e("icons.25"),
+                        n.e("icons.14"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -364,11 +362,9 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.18"),
-                        n.e("icons.13"),
-                        n.e("icons.29"),
-                        n.e("icons.27"),
-                        n.e("icons.25"),
+                        n.e("icons.6"),
+                        n.e("icons.3"),
+                        n.e("icons.8"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -403,15 +399,15 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
                         n.e("shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"),
                         n.e("shared~bundle.Payments~bundle.TV"),
+                        n.e("shared~bundle.Payments~bundle.PaymentShared"),
                         n.e("bundle.Payments-bc6ccf4c"),
                         n.e("bundle.Payments-27545368"),
                         n.e("bundle.Payments-960914ab"),
                         n.e("bundle.Payments-17a1c92a"),
                         n.e("bundle.Payments-39d0705d"),
-                        n.e("bundle.Payments-fd087ba8"),
                         n.e("bundle.Payments-7e6638bc"),
                         n.e("bundle.Payments-9f4db315"),
-                        n.e("bundle.Payments-6cc66b21"),
+                        n.e("bundle.Payments-63cb1cc4"),
                         n.e("bundle.Payments-b8e4b837"),
                         n.e("bundle.Payments-49827288"),
                         n.e("bundle.Payments-25e67f1f"),
@@ -522,12 +518,12 @@
                     .withAnalytics(),
                 D = d().b63c46ed,
                 M = d().ja66a2b5,
-                T = (e) => {
+                P = (e) => {
                     const { analytics: t, createLocalApiErrorHandler: n, isFollowing: i, isSuperFollowing: l, promotedContent: d, style: b, unfollow: g, user: y, userId: _ } = e,
                         w = (0, a.useHistory)(),
-                        T = (0, a.useLocation)(),
+                        P = (0, a.useLocation)(),
                         I = y?.screen_name,
-                        E = i ? r.createElement(c.default, null) : r.createElement(u.default, { style: P.superFollowsIcon }),
+                        E = i ? r.createElement(c.default, null) : r.createElement(u.default, { style: T.superFollowsIcon }),
                         S = r.useCallback(
                             (e) => {
                                 const { action: n, element: r } = e,
@@ -535,10 +531,10 @@
                                     o = a?.find((e) => e.item_type === h.Z.ItemType.USER && e.id),
                                     s = [];
                                 y ? s.push({ ...o, ...f.Z.getUserItem(y, d) }) : o && s.push(o);
-                                const i = T.query && T.query.screen_name ? { items: s, context: "profile_intent" } : { items: s };
+                                const i = P.query && P.query.screen_name ? { items: s, context: "profile_intent" } : { items: s };
                                 return t.scribe({ element: r, action: n, data: i });
                             },
-                            [t, T, d, y],
+                            [t, P, d, y],
                         ),
                         k = r.useCallback(
                             (e) => {
@@ -567,8 +563,8 @@
                         type: l && i ? "primaryOutlined" : void 0,
                     });
                 },
-                P = i.default.create((e) => ({ superFollowsIcon: { color: e.colors.plum500 } })),
-                I = w(r.memo(T));
+                T = i.default.create((e) => ({ superFollowsIcon: { color: e.colors.plum500 } })),
+                I = w(r.memo(P));
         },
         241304: (e, t, n) => {
             n.d(t, { Z: () => C });
@@ -592,8 +588,8 @@
                 w = n(748138),
                 D = n(837020),
                 M = n(125363),
-                T = n(601576),
-                P = n(919022);
+                P = n(601576),
+                T = n(919022);
             const I = u().ia5e7488,
                 E = { label: I },
                 S = u().j33d8902,
@@ -604,7 +600,7 @@
             function C({ style: e, userId: t }) {
                 const n = (0, M.I0)(),
                     [d, c] = r.useState(!1),
-                    u = (0, M.v9)((e) => P.ZP.select(e, t));
+                    u = (0, M.v9)((e) => T.ZP.select(e, t));
                 if (!u) return null;
                 const { tipjar_settings: m } = u;
                 if (!m) return null;
@@ -639,7 +635,7 @@
                                           const s = o.url
                                                   ? void 0
                                                   : function () {
-                                                        a.Z.setString(String(t)), n((0, T.fz)({ text: Z({ service: o.label }) }));
+                                                        a.Z.setString(String(t)), n((0, P.fz)({ text: Z({ service: o.label }) }));
                                                     },
                                               i = o.url ? `${o.url}${String(t)}` : void 0;
                                           return r.createElement(l.ZP, { color: "text", key: e, link: i, onPress: s, style: F.service, withInteractiveStyling: !1 }, o.icon, o.label);
@@ -711,11 +707,11 @@
                 w = g.Z.register(y),
                 D = (e, t) => w.select(e, t.userId),
                 M = (e, t) => w.selectFetchStatus(e, t.userId),
-                T = (0, m.Z)()
+                P = (0, m.Z)()
                     .propsFromState(() => ({ translation: D, translationFetchStatus: M, userLanguage: p.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("TRANSLATE_USER_BIO"), fetchTranslation: w.fetchOneIfNeeded, fetchStreamedGrokTranslation: w.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
-                P = i().ad7a451e;
+                T = i().ad7a451e;
             class I extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -738,11 +734,11 @@
                 }
                 render() {
                     const { analytics: e, createLocalApiErrorHandler: t, disableTranslation: n, fetchStreamedGrokTranslation: s, fetchTranslation: i, style: d, translation: c, translationFetchStatus: u, userId: m, userLanguage: p, withOriginalText: h, ...f } = this.props;
-                    return a.createElement(l.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: m, originLanguage: c && c.profileTranslation.localizedSourceLanguage, scribeElement: "translate_bio", streamedTranslationFetchStatus: c && c.profileTranslation.streamedTranslationFetchStatus, style: d, translateButtonText: P, translatedMessage: this._renderTranslation(), translationFetchStatus: u, translationSource: c && c.profileTranslation.translationSource, translationState: c && c.profileTranslation.translationState, useGrokTranslation: this._useGrokTranslation(), withOriginalText: h }, a.createElement(o.Z, (0, r.Z)({}, f, { userId: m })));
+                    return a.createElement(l.Z, { disableTranslation: this.props.disableTranslation, fetchTranslation: this._fetchTranslation, key: m, originLanguage: c && c.profileTranslation.localizedSourceLanguage, scribeElement: "translate_bio", streamedTranslationFetchStatus: c && c.profileTranslation.streamedTranslationFetchStatus, style: d, translateButtonText: T, translatedMessage: this._renderTranslation(), translationFetchStatus: u, translationSource: c && c.profileTranslation.translationSource, translationState: c && c.profileTranslation.translationState, useGrokTranslation: this._useGrokTranslation(), withOriginalText: h }, a.createElement(o.Z, (0, r.Z)({}, f, { userId: m })));
                 }
             }
             I.contextType = c.rC;
-            const E = T(I);
+            const E = P(I);
         },
         703738: (e, t, n) => {
             n.d(t, { z: () => s });
@@ -754,7 +750,7 @@
         507986: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.21"), n.e("icons.3"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.7"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.0"), n.e("icons.20"), n.e("icons.10"), n.e("icons.9"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.6"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
         },
         103335: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -1111,4 +1107,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.e945ffea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.60b949da.js.map

@@ -19,7 +19,7 @@
                 m = { label: d.pip };
         },
         645903: (e, t, n) => {
-            n.d(t, { Y: () => y });
+            n.d(t, { Y: () => h });
             var a = n(202784),
                 r = n(325686),
                 i = n(157130),
@@ -34,9 +34,9 @@
                 f = n(321835),
                 b = n(4427),
                 g = n(217220),
-                h = n(920325),
-                E = n(812702);
-            function y(e) {
+                E = n(920325),
+                y = n(812702);
+            function h(e) {
                 const { audioSpaceId: t, disabled: n, onDisabledClick: r } = e,
                     o = (0, b.Qg)();
                 return a.createElement(
@@ -53,13 +53,13 @@
                         },
                         withFixedPosition: !0,
                     },
-                    a.createElement(E.B, { "aria-label": S.reactions, borderColor: "transparent", color: "text", icon: a.createElement(d.default, null), onPress: n ? r : void 0, size: o ? "large" : "medium", type: "primaryOutlined" }),
+                    a.createElement(y.B, { "aria-label": S.reactions, borderColor: "transparent", color: "text", icon: a.createElement(d.default, null), onPress: n ? r : void 0, size: o ? "large" : "medium", type: "primaryOutlined" }),
                 );
             }
             const k = "✋";
             function v(e) {
                 const t = (0, m.bd)(),
-                    n = a.useRef(new h.Z(e.audioSpaceId)).current;
+                    n = a.useRef(new E.Z(e.audioSpaceId)).current;
                 const i = w.map((r) => {
                         const i = S.reactWithEmoji({ emoji: r.emoji });
                         return a.createElement(
@@ -125,7 +125,7 @@
                 return a.createElement(
                     o.Z,
                     {
-                        "aria-label": h.recordingActive,
+                        "aria-label": E.recordingActive,
                         onPress: () => {
                             t(m.IX.recordingEducation), n(":audiospace::recording:icon:click");
                         },
@@ -134,10 +134,10 @@
                 );
             }
             function b(e) {
-                return a.createElement(i.Z, { style: g.indicatorWrapper }, a.createElement(l.ZP, { background: "navigationBackground" }, a.createElement(i.Z, { style: g.indicatorContainer }, a.createElement(i.Z, { style: [g.indicatorDot, e.withoutPulse ? null : g.indicatorDotAnimation] }), a.createElement(r.Z, { role: "none", selectable: !1, style: g.recordingIndicatorText }, h.REC))));
+                return a.createElement(i.Z, { style: g.indicatorWrapper }, a.createElement(l.ZP, { background: "navigationBackground" }, a.createElement(i.Z, { style: g.indicatorContainer }, a.createElement(i.Z, { style: [g.indicatorDot, e.withoutPulse ? null : g.indicatorDotAnimation] }), a.createElement(r.Z, { role: "none", selectable: !1, style: g.recordingIndicatorText }, E.REC))));
             }
             const g = c.default.create((e) => ({ indicatorWrapper: { width: "fit-content" }, recordingIndicatorText: { color: e.colors.text, fontWeight: e.fontWeights.bold }, indicatorContainer: { flexDirection: "row", alignItems: "center" }, indicatorDot: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.borderRadii.infinite, marginEnd: e.spaces.space4, backgroundColor: "#E0245E" }, indicatorDotAnimation: { opacity: 0.2, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0.2 }, "50%": { opacity: 1 }, "100%": { opacity: 0.2 } }], animationTimingFunction: "cubic-bezier(0.44, 0.01, 0.48, 0.96)", animationIterationCount: "infinite" } })),
-                h = { REC: "REC", recordingActive: u().b4f91a8a };
+                E = { REC: "REC", recordingActive: u().b4f91a8a };
         },
         812702: (e, t, n) => {
             n.d(t, { B: () => s });
@@ -153,7 +153,7 @@
             const u = l.default.create((e) => ({ button: { height: "100%" } }));
         },
         265399: (e, t, n) => {
-            n.d(t, { gt: () => x });
+            n.d(t, { gt: () => _ });
             var a = n(202784),
                 r = n(400752),
                 i = n(325686),
@@ -168,9 +168,9 @@
                 f = n(545937),
                 b = n(877506),
                 g = n(537801),
-                h = n(610214),
-                E = n(384509),
-                y = n(812702),
+                E = n(610214),
+                y = n(384509),
+                h = n(812702),
                 k = n(811176),
                 v = n(731708),
                 w = n(859918),
@@ -186,7 +186,7 @@
                             t(":audiospace:replay:recording:speed:click"), r && r.setPlaybackRate(e);
                         },
                     }));
-                return a.createElement(y.B, { "aria-label": P.accessibility({ rate: `${n}` }), icon: a.createElement(S.Icon, { playbackRate: n }), renderMenu: (e) => a.createElement(k.Z, { isFixed: !0, items: i, onCloseRequested: e, shouldCloseOnClick: !0 }) });
+                return a.createElement(h.B, { "aria-label": P.accessibility({ rate: `${n}` }), icon: a.createElement(S.Icon, { playbackRate: n }), renderMenu: (e) => a.createElement(k.Z, { isFixed: !0, items: i, onCloseRequested: e, shouldCloseOnClick: !0 }) });
             }
             S.Icon = function ({ playbackRate: e }) {
                 return a.createElement(i.Z, { style: Z.playbackRateIcon }, a.createElement(v.ZP, { style: Z.playbackRateIconText, weight: "normal" }, e), a.createElement(w.default, { style: Z.playbackRateIconSvg }));
@@ -199,11 +199,11 @@
                     { text: s().j0e5c2ce, rate: 1.5 },
                     { text: s().b3f2318e, rate: 2 },
                 ];
-            function x(e) {
-                return a.createElement(i.Z, { style: R.controlsContainer }, a.createElement(x.SeekSlider, null), a.createElement(i.Z, { style: R.buttonsContainer }, a.createElement(x.Captions, { audioSpaceId: e.audioSpaceId }), a.createElement(S, { audioSpaceId: e.audioSpaceId }), a.createElement(x.SkipRewind, null), a.createElement(x.Play, null), a.createElement(x.SkipAhead, null), a.createElement(g.O, { audioSpaceId: e.audioSpaceId, usePlaceholder: !0 })));
+            function _(e) {
+                return a.createElement(i.Z, { style: R.controlsContainer }, a.createElement(_.SeekSlider, null), a.createElement(i.Z, { style: R.buttonsContainer }, a.createElement(_.Captions, { audioSpaceId: e.audioSpaceId }), a.createElement(S, { audioSpaceId: e.audioSpaceId }), a.createElement(_.SkipRewind, null), a.createElement(_.Play, null), a.createElement(_.SkipAhead, null), a.createElement(g.O, { audioSpaceId: e.audioSpaceId, usePlaceholder: !0 })));
             }
-            function _() {
-                const e = (0, h.Qt)(),
+            function x() {
+                const e = (0, E.Qt)(),
                     t = a.useRef(e);
                 t.current = e;
                 const n = b.Z.useGetCurrentTrack(),
@@ -221,24 +221,24 @@
                     [i, n, o],
                 );
             }
-            (x.SeekSlider = function () {
-                const e = x.useSeekSliderProps();
+            (_.SeekSlider = function () {
+                const e = _.useSeekSliderProps();
                 return a.createElement(o.S, { durationMs: e.durationMs, externalSeeking: e.externalSeeking, onSeek: e.onSeek, progressMs: e.currentTimeMs, withTimes: !0 });
             }),
-                (x.useSeekSliderProps = function () {
+                (_.useSeekSliderProps = function () {
                     const e = b.Z.useIsSeeking(),
                         t = b.Z.useCurrentTrackDurationMs();
-                    return { currentTimeMs: b.Z.useCurrentTrackTimeMs() || 0, durationMs: t || 1, externalSeeking: e, onSeek: _() };
+                    return { currentTimeMs: b.Z.useCurrentTrackTimeMs() || 0, durationMs: t || 1, externalSeeking: e, onSeek: x() };
                 }),
-                (x.Captions = function (e) {
-                    const t = (0, E.q)(e);
-                    return a.createElement(y.B, { "aria-label": t.label, disabled: t.disabled, icon: a.createElement(t.Icon, null), onPress: t.onPress });
+                (_.Captions = function (e) {
+                    const t = (0, y.q)(e);
+                    return a.createElement(h.B, { "aria-label": t.label, disabled: t.disabled, icon: a.createElement(t.Icon, null), onPress: t.onPress });
                 }),
-                (x.Play = function () {
-                    const { isPlaying: e, togglePlayback: t } = x.usePlayButtonProps();
-                    return a.createElement(y.B, { "aria-label": e ? D.pause : D.play, icon: e ? a.createElement(u.default, null) : a.createElement(d.default, null), onPress: t, size: "xLarge" });
+                (_.Play = function () {
+                    const { isPlaying: e, togglePlayback: t } = _.usePlayButtonProps();
+                    return a.createElement(h.B, { "aria-label": e ? D.pause : D.play, icon: e ? a.createElement(u.default, null) : a.createElement(d.default, null), onPress: t, size: "xLarge" });
                 }),
-                (x.usePlayButtonProps = () => {
+                (_.usePlayButtonProps = () => {
                     const e = b.Z.useIsPlaying(),
                         t = b.Z.usePlayerApi();
                     return {
@@ -248,34 +248,34 @@
                         },
                     };
                 }),
-                (x.SkipRewind = function () {
+                (_.SkipRewind = function () {
                     const e = (function () {
-                        const e = _(),
+                        const e = x(),
                             t = b.Z.useGetCurrentTrack();
                         return a.useCallback(() => {
                             const n = t();
                             n && n?.currentTimeMs && e(n.currentTimeMs - H);
                         }, [t, e]);
                     })();
-                    return a.createElement(y.B, { "aria-label": D.skipRewind, icon: a.createElement(m.default, null), onPress: e });
+                    return a.createElement(h.B, { "aria-label": D.skipRewind, icon: a.createElement(m.default, null), onPress: e });
                 }),
-                (x.SkipAhead = function () {
+                (_.SkipAhead = function () {
                     const e = (function () {
-                        const e = _(),
+                        const e = x(),
                             t = b.Z.useGetCurrentTrack();
                         return a.useCallback(() => {
                             const n = t();
                             n && n?.currentTimeMs && e(n.currentTimeMs + H);
                         }, [t, e]);
                     })();
-                    return a.createElement(y.B, { "aria-label": D.skipForward, icon: a.createElement(p.default, null), onPress: e });
+                    return a.createElement(h.B, { "aria-label": D.skipForward, icon: a.createElement(p.default, null), onPress: e });
                 });
             const R = l.default.create((e) => ({ controlsContainer: { width: "100%", alignSelf: "start", marginVertical: e.spaces.space8 }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, buttonPlaceholderContainer: { opacity: 0, pointerEvents: "none" } })),
                 D = { skipForward: s().jf9f3e54, skipRewind: s().hdd1aba0, play: s().ic1e826e, pause: s().b89c5a50 },
                 H = 15e3;
         },
         890091: (e, t, n) => {
-            n.d(t, { U: () => h });
+            n.d(t, { U: () => E });
             var a = n(202784),
                 r = n(400752),
                 i = n(325686),
@@ -294,7 +294,7 @@
                     { label: p.peopleYouFollow, value: f.peopleYouFollow },
                     { label: p.onlyInvited, value: f.onlyInvited },
                 ];
-            function h(e) {
+            function E(e) {
                 const { audioSpaceId: t } = e,
                     n = (0, r.Dv)(d.Cm.conversationControlsAtom),
                     c = 2 === n ? f.everyone : 1 === n ? f.peopleYouFollow : f.onlyInvited,
@@ -302,16 +302,16 @@
                 a.useEffect(() => {
                     u(c);
                 }, [c]);
-                const h = (0, r.b9)(m.H_),
-                    y = a.useCallback(
+                const E = (0, r.b9)(m.H_),
+                    h = a.useCallback(
                         (e, n) => {
-                            u(n), h(t, b[n]);
+                            u(n), E(t, b[n]);
                         },
-                        [t, h],
+                        [t, E],
                     );
-                return a.createElement(i.Z, { style: E.container }, a.createElement(o.Z, { subtext: p.speakersSubtitle, text: p.speakers }), a.createElement(l.Z, { name: "speaker settings", onChange: y, options: g, value: s }));
+                return a.createElement(i.Z, { style: y.container }, a.createElement(o.Z, { subtext: p.speakersSubtitle, text: p.speakers }), a.createElement(l.Z, { name: "speaker settings", onChange: h, options: g, value: s }));
             }
-            const E = c.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space8 } }));
+            const y = c.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space8 } }));
         },
         947433: (e, t, n) => {
             n.d(t, { c: () => P, v: () => C });
@@ -329,11 +329,11 @@
                 f = n(4427),
                 b = n(758614),
                 g = n(251836),
-                h = n(811233);
-            const E = u().f17bc95a,
-                y = u().b11a74b2,
-                k = { label: E, preferredVerticalOrientation: "up" },
-                v = { label: y, preferredVerticalOrientation: "up" },
+                E = n(811233);
+            const y = u().f17bc95a,
+                h = u().b11a74b2,
+                k = { label: y, preferredVerticalOrientation: "up" },
+                v = { label: h, preferredVerticalOrientation: "up" },
                 w = a.createElement(d.default, null);
             function C() {
                 const e = (0, b.$t)(),
@@ -341,9 +341,9 @@
                     n = (0, g.cj)(),
                     l = (0, i.tj)(),
                     c = (0, f.Qg)(),
-                    s = (0, h.gt)(),
+                    s = (0, E.gt)(),
                     u = (0, r.b9)(p.dB);
-                return !(0, g.Db)() || s || (!l && c) ? null : t ? a.createElement(o.ZP, { "aria-label": y, disabled: n, hoverLabel: v, icon: w, onClick: u, renderMenu: S, size: c ? "large" : "xLarge", type: "primaryFilled" }) : a.createElement(o.ZP, { "aria-label": E, disabled: n, hoverLabel: k, icon: w, onClick: e, size: c ? "large" : "xLarge", style: I.blurred, type: "primaryOutlined" });
+                return !(0, g.Db)() || s || (!l && c) ? null : t ? a.createElement(o.ZP, { "aria-label": h, disabled: n, hoverLabel: v, icon: w, onClick: u, renderMenu: S, size: c ? "large" : "xLarge", type: "primaryFilled" }) : a.createElement(o.ZP, { "aria-label": y, disabled: n, hoverLabel: k, icon: w, onClick: e, size: c ? "large" : "xLarge", style: I.blurred, type: "primaryOutlined" });
             }
             const S = (e) => a.createElement(Z, { onClose: e });
             function Z({ onClose: e }) {
@@ -360,7 +360,7 @@
                             },
                             {
                                 Icon: m.default,
-                                text: y,
+                                text: h,
                                 onClick: () => {
                                     n();
                                 },
@@ -377,7 +377,7 @@
                     a = (0, g.cj)(),
                     r = (0, i.tj)(),
                     o = (0, f.Qg)();
-                return (0, g.Db)() ? (r && o ? null : n ? { Icon: d.default, text: y, disabled: a, onClick: t } : { Icon: d.default, text: E, disabled: a, onClick: e }) : null;
+                return (0, g.Db)() ? (r && o ? null : n ? { Icon: d.default, text: h, disabled: a, onClick: t } : { Icon: d.default, text: y, disabled: a, onClick: e }) : null;
             }
             const I = c.default.create((e) => ({ blurred: { backdropFilter: "blur(12px)", backgroundColor: e.colors.appBarBackground } }));
         },
@@ -397,9 +397,9 @@
                 f = n(521799),
                 b = n(400915),
                 g = n(582129),
-                h = n(625555),
-                E = n(712612),
-                y = n(443781),
+                E = n(625555),
+                y = n(712612),
+                h = n(443781),
                 k = n(484633),
                 v = n(36809),
                 w = n(905443),
@@ -408,34 +408,34 @@
             const Z = d().db3de1d2,
                 P = d().d7f4bc44,
                 I = d().edcf15e9,
-                x = d().h13957aa,
-                _ = d().ge6372fa;
+                _ = d().h13957aa,
+                x = d().ge6372fa;
             function R(e) {
                 const { audioSpaceId: t, handleShowManageView: n } = e,
                     [r, s] = (0, i.KO)(w.ZO),
                     [u] = (0, i.KO)(w.UD),
                     d = S.g5(),
-                    { isUserAdminRole: R, isUserSpeakingRole: L, role: T } = (0, b.l7)(),
+                    { isUserAdminRole: R, isUserSpeakingRole: T, role: L } = (0, b.l7)(),
                     A = (0, p.zC)(),
-                    { featureSwitches: F } = (0, y.QZ)(),
-                    M = (0, i.b9)(E.F3),
-                    j = (0, i.b9)(g.JE),
+                    { featureSwitches: F } = (0, h.QZ)(),
+                    j = (0, i.b9)(y.F3),
+                    M = (0, i.b9)(g.JE),
                     z = a.useCallback(() => {
-                        M().then((e) => {
-                            e && (j({ spaceId: t, role: k.Q.speaker, shouldAutoJoin: !0 }), s(!1));
+                        j().then((e) => {
+                            e && (M({ spaceId: t, role: k.Q.speaker, shouldAutoJoin: !0 }), s(!1));
                         });
-                    }, [t, j, s, M]),
+                    }, [t, M, s, j]),
                     B = (0, C.k)(),
                     V = a.useCallback(() => {
                         B(!0);
                     }, [B]),
-                    U = T === k.Q.listener && r,
-                    W = F.isTrue("voice_rooms_cohosts_enabled") && (T === k.Q.listener || T === k.Q.speaker) && u,
-                    { cohosts: N, speakers: G } = (0, i.Dv)(v.Lg),
-                    Q = (0, i.Dv)(m.Cm.isMutedAtom) ?? !1,
-                    [Y, $] = a.useState(Q),
-                    K = (0, i.b9)(h.bX),
-                    X = (0, i.b9)(h.cH),
+                    U = L === k.Q.listener && r,
+                    N = F.isTrue("voice_rooms_cohosts_enabled") && (L === k.Q.listener || L === k.Q.speaker) && u,
+                    { cohosts: W, speakers: Q } = (0, i.Dv)(v.Lg),
+                    Y = (0, i.Dv)(m.Cm.isMutedAtom) ?? !1,
+                    [G, $] = a.useState(Y),
+                    K = (0, i.b9)(E.bX),
+                    X = (0, i.b9)(E.cH),
                     q = a.useCallback(() => {
                         K(t).then(() => {
                             $(!0);
@@ -447,18 +447,18 @@
                         });
                     }, [t, X]);
                 a.useEffect(() => {
-                    $(Q);
-                }, [Q]);
-                const ee = R && (G.length + N.length > 0 || Y),
-                    te = (0, i.Dv)(E.fg);
-                return d ? null : a.createElement(o.Z, { style: O.container }, te && a.createElement(o.Z, { style: O.redBackground }, a.createElement(l.ZP, { color: "white", weight: "bold" }, "Muted by host")), U && a.createElement(c.ZP, { onPress: z }, Z), W && a.createElement(c.ZP, { onPress: V }, P), R && A.length > 0 && a.createElement(c.ZP, { onPress: n }, I({ count: A.length })), ee && (Y ? a.createElement(c.ZP, { onPress: J, type: "destructiveFilled" }, _) : a.createElement(c.ZP, { onPress: q }, x)), D() && L && a.createElement(c.ZP, { onPress: f.yu }, H));
+                    $(Y);
+                }, [Y]);
+                const ee = R && (Q.length + W.length > 0 || G),
+                    te = (0, i.Dv)(y.fg);
+                return d ? null : a.createElement(o.Z, { style: O.container }, te && a.createElement(o.Z, { style: O.redBackground }, a.createElement(l.ZP, { color: "white", weight: "bold" }, "Muted by host")), U && a.createElement(c.ZP, { onPress: z }, Z), N && a.createElement(c.ZP, { onPress: V }, P), R && A.length > 0 && a.createElement(c.ZP, { onPress: n }, I({ count: A.length })), ee && (G ? a.createElement(c.ZP, { onPress: J, type: "destructiveFilled" }, x) : a.createElement(c.ZP, { onPress: q }, _)), D() && T && a.createElement(c.ZP, { onPress: f.yu }, H));
             }
             const D = () => !(0, r.fH)(r.vw.prod),
                 H = "⇩ debug",
                 O = s.default.create((e) => ({ container: { display: "flex", flexDirection: "row", overflow: "auto", gap: e.spaces.space12, scrollbarWidth: "none" }, redBackground: { backgroundColor: e.colors.red500, minWidth: e.spaces.space36, minHeight: e.spaces.space36, paddingHorizontal: e.spaces.space16, borderRadius: e.borderRadii.infinite, display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
         283370: (e, t, n) => {
-            n.d(t, { D: () => Z, t: () => x });
+            n.d(t, { D: () => Z, t: () => _ });
             var a = n(807896),
                 r = n(202784),
                 i = n(400752),
@@ -473,9 +473,9 @@
                 f = n(545457),
                 b = n(125363),
                 g = n(550293),
-                h = n(447854),
-                E = n(192767),
-                y = n(153668),
+                E = n(447854),
+                y = n(192767),
+                h = n(153668),
                 k = n(610214),
                 v = n(821681),
                 w = n(67291),
@@ -498,13 +498,13 @@
                     o = (0, i.Dv)(k.bZ),
                     c = (0, f.Q4)(),
                     m = o ? c : e.width + n.shadowOffset,
-                    p = (0, C.UH)() ? _.fullHeight : e.isSideNavLayout ? [R.root, { width: m }] : null,
-                    [h, E] = r.useState(),
-                    y = r.useRef(null),
+                    p = (0, C.UH)() ? x.fullHeight : e.isSideNavLayout ? [R.root, { width: m }] : null,
+                    [E, y] = r.useState(),
+                    h = r.useRef(null),
                     v = (0, u.iv)();
                 function w() {
-                    const e = y.current?.getBoundingClientRect();
-                    e && E(e);
+                    const e = h.current?.getBoundingClientRect();
+                    e && y(e);
                 }
                 return (
                     r.useLayoutEffect(w, [v.height]),
@@ -512,7 +512,7 @@
                         const e = setTimeout(w, d.s + 250);
                         return () => clearTimeout(e);
                     }, [t]),
-                    r.createElement(l.Z, { ref: y, style: p }, r.createElement(I, (0, a.Z)({}, e, { layout: h })))
+                    r.createElement(l.Z, { ref: h, style: p }, r.createElement(I, (0, a.Z)({}, e, { layout: E })))
                 );
             }
             function I(e) {
@@ -537,7 +537,7 @@
                         const t = m.shellHeights.full;
                         o.Z.spring(e, { toValue: t, useNativeDriver: !1 }).start();
                     }, [m?.shellHeights?.full, u]);
-                const [g, S] = r.useState(y.X),
+                const [g, S] = r.useState(h.X),
                     [Z, P] = r.useState(w.A.mainView),
                     I = r.useCallback(() => {
                         P(Z === w.A.mainView ? w.A.manageView : w.A.mainView);
@@ -561,16 +561,16 @@
                         e.layout;
                         const { animatedHeight: t, animation: i, contentProps: c, footerHeight: s, handleFooterLayout: d, spaceDockContentState: m } = H.current;
                         let p;
-                        p = e.isSideNavLayout ? R.container : u ? _.containerPip : _.container;
-                        const f = e.isSideNavLayout ? R.expandedShellContainer : _.expandedShellContainer,
-                            b = e.isSideNavLayout ? R.footerContainer : _.footerContainer,
+                        p = e.isSideNavLayout ? R.container : u ? x.containerPip : x.container;
+                        const f = e.isSideNavLayout ? R.expandedShellContainer : x.expandedShellContainer,
+                            b = e.isSideNavLayout ? R.footerContainer : x.footerContainer,
                             g = u ? { height: "100%" } : { height: t, opacity: i.animatedPan.interpolate({ inputRange: [i.shellHeights.collapse, i.shellHeights.full], outputRange: [1, 0] }) };
-                        return r.createElement(o.Z.View, { style: [p, _.forceGPULayer, g] }, r.createElement(l.Z, { style: f }, r.createElement(v.Q, (0, a.Z)({}, c, { footerHeight: s, setSpaceDockContentState: P, spaceDockContentState: m, togglePip: n }))), r.createElement(l.Z, { style: b }, r.createElement(h.Z, { audioSpaceId: e.audioSpaceId, height: x }), r.createElement(y.x, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout, onLayout: d, toggleSpaceDockContentState: I })), r.createElement(E.Z, { audioSpaceId: e.audioSpaceId, dockAnimation: i, isSideNavLayout: e.isSideNavLayout }));
+                        return r.createElement(o.Z.View, { style: [p, x.forceGPULayer, g] }, r.createElement(l.Z, { style: f }, r.createElement(v.Q, (0, a.Z)({}, c, { footerHeight: s, setSpaceDockContentState: P, spaceDockContentState: m, togglePip: n }))), r.createElement(l.Z, { style: b }, r.createElement(E.Z, { audioSpaceId: e.audioSpaceId, height: _ }), r.createElement(h.x, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout, onLayout: d, toggleSpaceDockContentState: I })), r.createElement(y.Z, { audioSpaceId: e.audioSpaceId, dockAnimation: i, isSideNavLayout: e.isSideNavLayout }));
                     }, [e.isSideNavLayout, e.audioSpaceId, u, n, I, e.layout, c])
                 );
             }
-            const x = 100,
-                _ = s.default.create((e) => {
+            const _ = 100,
+                x = s.default.create((e) => {
                     const t = (0, S.Hx)(e).borderRadius;
                     return { forceGPULayer: { transform: [{ translate3d: "0, 0, 0" }] }, fullHeight: { height: "100%" }, container: { position: "fixed", bottom: 0, width: "100%", backgroundColor: e.colors.maskColor }, containerPip: { bottom: 0, width: "100%" }, expandedShellContainer: { width: "100%", borderRadius: t }, footerContainer: { position: "absolute", bottom: 0, width: "100%" } };
                 }),
@@ -595,9 +595,9 @@
                 f = n(741810),
                 b = n(400915),
                 g = n(484633),
-                h = n(381904),
-                E = n(982790),
-                y = n(731708),
+                E = n(381904),
+                y = n(982790),
+                h = n(731708),
                 k = n(776342),
                 v = n(157130),
                 w = n(868634),
@@ -606,49 +606,49 @@
                 Z = n(159340),
                 P = n(901832),
                 I = n(400752),
-                x = n(470397),
-                _ = n(794215),
+                _ = n(470397),
+                x = n(794215),
                 R = n(279046),
                 D = n(656898);
             function H(e) {
                 const t = (0, I.Dv)(D.Cm.endedAtAtom),
                     n = (0, I.Dv)(D.Cm.tunedInCountAtom);
-                return a.createElement(x.Z, { color: F.color, style: T.container }, a.createElement(O, { ended_at: t }), a.createElement(L, { count: n }));
+                return a.createElement(_.Z, { color: F.color, style: L.container }, a.createElement(O, { ended_at: t }), a.createElement(T, { count: n }));
             }
             function O({ ended_at: e }) {
                 if (!e) return null;
                 let t = null;
                 const n = Date.now() - e;
-                return (t = n < j ? a.createElement(u().I18NFormatMessage, { $i18n: "f0e84609" }, a.createElement(_.Z, { short: !0, timeMs: n })) : M(new Date(e))), a.createElement(y.ZP, F, t);
+                return (t = n < M ? a.createElement(u().I18NFormatMessage, { $i18n: "f0e84609" }, a.createElement(x.Z, { short: !0, timeMs: n })) : j(new Date(e))), a.createElement(h.ZP, F, t);
             }
-            function L({ count: e }) {
-                return e ? a.createElement(y.ZP, F, A.tunedIn({ count: R.Z.formatCountShort(e) })) : null;
+            function T({ count: e }) {
+                return e ? a.createElement(h.ZP, F, A.tunedIn({ count: R.Z.formatCountShort(e) })) : null;
             }
-            const T = c.default.create((e) => ({ container: { marginBottom: e.spaces.space4 } })),
+            const L = c.default.create((e) => ({ container: { marginBottom: e.spaces.space4 } })),
                 A = { tunedIn: u().e111f531 },
                 F = { color: "text", size: "subtext2" },
-                M = u().e18e399b,
-                j = 864e5;
+                j = u().e18e399b,
+                M = 864e5;
             function z(e) {
-                return a.createElement(a.Fragment, null, a.createElement(r.Z, { style: K.titleLabelRow }, a.createElement(U, e), a.createElement(B, e), a.createElement(V, e), a.createElement(N, e)), a.createElement(W, e));
+                return a.createElement(a.Fragment, null, a.createElement(r.Z, { style: K.titleLabelRow }, a.createElement(U, e), a.createElement(B, e), a.createElement(V, e), a.createElement(W, e)), a.createElement(N, e));
             }
             function B(e) {
                 const { space: t } = e;
-                return t?.is_employee_only ? a.createElement(Q, null, a.createElement(y.ZP, null, $.employeesOnly)) : null;
+                return t?.is_employee_only ? a.createElement(Y, null, a.createElement(h.ZP, null, $.employeesOnly)) : null;
             }
             function V(e) {
                 const { space: t } = e;
-                return t?.narrow_cast_space_type !== k.default.AudienceEnum.superFollowersOnly ? null : a.createElement(Q, null, a.createElement(S.default, { style: K.superFollowsIcon }), a.createElement(y.ZP, null, $.superFollowersOnly));
+                return t?.narrow_cast_space_type !== k.default.AudienceEnum.superFollowersOnly ? null : a.createElement(Y, null, a.createElement(S.default, { style: K.superFollowsIcon }), a.createElement(h.ZP, null, $.superFollowersOnly));
             }
             function U(e) {
                 const { spaceState: t } = e;
-                return t?.recording ? a.createElement(G, null, a.createElement(P.Vs, { audioSpaceId: e.audioSpaceId, withEducationOnClick: !e.isOutsideDock })) : null;
-            }
-            function W(e) {
-                const { spaceState: t } = e;
-                return t?.replayable ? a.createElement(r.Z, { style: K.metadataLabelRow }, a.createElement(G, null, a.createElement(H, { audioSpaceId: e.audioSpaceId }))) : null;
+                return t?.recording ? a.createElement(Q, null, a.createElement(P.Vs, { audioSpaceId: e.audioSpaceId, withEducationOnClick: !e.isOutsideDock })) : null;
             }
             function N(e) {
+                const { spaceState: t } = e;
+                return t?.replayable ? a.createElement(r.Z, { style: K.metadataLabelRow }, a.createElement(Q, null, a.createElement(H, { audioSpaceId: e.audioSpaceId }))) : null;
+            }
+            function W(e) {
                 const { space: t } = e;
                 if (!t || !t.community || !t.community.name) return null;
                 return a.createElement(
@@ -657,21 +657,21 @@
                         contentStyle: K.communitiesPopover,
                         enableHover: !0,
                         renderContent: function () {
-                            return a.createElement(y.ZP, null, $.communityToolTip);
+                            return a.createElement(h.ZP, null, $.communityToolTip);
                         },
                         withArrow: !0,
                     },
-                    a.createElement(Y, { link: `/i/communities/${t.community.rest_id}` }, a.createElement(Z.default, { style: [K.communitiesIcon, { color: t.community.color }] }), a.createElement(y.ZP, null, t.community.name)),
+                    a.createElement(G, { link: `/i/communities/${t.community.rest_id}` }, a.createElement(Z.default, { style: [K.communitiesIcon, { color: t.community.color }] }), a.createElement(h.ZP, null, t.community.name)),
                 );
             }
-            function G(e) {
+            function Q(e) {
                 return a.createElement(r.Z, { style: K.titleLabelSpacer }, e.children);
             }
-            function Q(e) {
-                return a.createElement(G, null, a.createElement(w.ZP, { background: "navigationBackground", bold: !0 }, a.createElement(r.Z, { style: K.centeredFlexRow }, e.children)));
-            }
             function Y(e) {
-                return a.createElement(G, null, a.createElement(C.Z, { link: e.link }, a.createElement(w.ZP, { background: "navigationBackground", bold: !0 }, a.createElement(r.Z, { style: K.centeredFlexRow }, e.children))));
+                return a.createElement(Q, null, a.createElement(w.ZP, { background: "navigationBackground", bold: !0 }, a.createElement(r.Z, { style: K.centeredFlexRow }, e.children)));
+            }
+            function G(e) {
+                return a.createElement(Q, null, a.createElement(C.Z, { link: e.link }, a.createElement(w.ZP, { background: "navigationBackground", bold: !0 }, a.createElement(r.Z, { style: K.centeredFlexRow }, e.children))));
             }
             const $ = { employeesOnly: u().b5d88f0c, superFollowersOnly: u().c855ab8e, communityToolTip: u().ddeb0a3c },
                 K = c.default.create((e) => {
@@ -685,11 +685,11 @@
                 X = { edit: u().abd845fe };
             function q(e) {
                 const { audioSpaceId: t } = e,
-                    n = (0, E.$)(t),
+                    n = (0, y.$)(t),
                     { isUserAdminRole: c } = (0, b.l7)(),
                     [s, u] = a.useState(""),
-                    { activeItem: y } = (0, h.Y)(),
-                    k = y?.type === g.W.space ? y?.id : null,
+                    { activeItem: h } = (0, E.Y)(),
+                    k = h?.type === g.W.space ? h?.id : null,
                     [v, w] = a.useState(!1),
                     C = n.utils.title();
                 a.useEffect(() => {
@@ -710,7 +710,7 @@
                         }),
                         user_mentions: (0, p.Z)(C),
                     },
-                    x = [0, C.length];
+                    _ = [0, C.length];
                 return a.createElement(
                     a.Fragment,
                     null,
@@ -720,7 +720,7 @@
                         a.createElement(
                             r.Z,
                             { style: J.spaceTitleRow },
-                            a.createElement(o.Z, { displayTextRange: x, entities: I, linkify: !0, size: "headline1", style: J.spaceTitle, text: s || C, weight: "heavy" }),
+                            a.createElement(o.Z, { displayTextRange: _, entities: I, linkify: !0, size: "headline1", style: J.spaceTitle, text: s || C, weight: "heavy" }),
                             S &&
                                 a.createElement(l.ZP, {
                                     "aria-label": X.edit,
@@ -738,7 +738,7 @@
             const J = c.default.create((e) => ({ titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, spaceTitleRow: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, spaceTitle: { flex: 1 } }));
         },
         220919: (e, t, n) => {
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => h });
             var a = n(202784),
                 r = n(325686),
                 i = n(823161),
@@ -753,13 +753,13 @@
                 f = n(666536);
             const b = m().gdb7bc25,
                 g = m().fe7a1910,
-                h = m().ic3c757e,
-                E = u.default.create((e) => ({ root: { flex: 1, backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.medium, padding: e.spaces.space8 }, selectionPill: { margin: e.spaces.space4, maxWidth: `calc(100% - ${e.spaces.space16})` }, selectedUsersList: { flexDirection: "row", flexWrap: "wrap", padding: e.spaces.space4 }, modalDropdown: { backgroundColor: e.colors.cellBackground, flex: 1, minHeight: 300, maxHeight: "40vh", position: "relative", overflowY: "auto", overscrollBehavior: "auto" } })),
-                y = (e) => {
+                E = m().ic3c757e,
+                y = u.default.create((e) => ({ root: { flex: 1, backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.medium, padding: e.spaces.space8 }, selectionPill: { margin: e.spaces.space4, maxWidth: `calc(100% - ${e.spaces.space16})` }, selectedUsersList: { flexDirection: "row", flexWrap: "wrap", padding: e.spaces.space4 }, modalDropdown: { backgroundColor: e.colors.cellBackground, flex: 1, minHeight: 300, maxHeight: "40vh", position: "relative", overflowY: "auto", overscrollBehavior: "auto" } })),
+                h = (e) => {
                     const { handleInvites: t, users: n } = e,
                         [u, d] = a.useState([]),
                         m = a.useRef(null),
-                        [y, k] = a.useState(n),
+                        [h, k] = a.useState(n),
                         v = (e) => {
                             const t = a.createElement(i.default, { "aria-hidden": !0, focusable: !1, size: "custom", uri: e.avatar_url });
                             return a.createElement(o.Z, {
@@ -771,7 +771,7 @@
                                 onClick: () => {
                                     d([...u].filter((t) => t.user_id !== e.user_id));
                                 },
-                                style: E.selectionPill,
+                                style: y.selectionPill,
                                 text: e.display_name || "",
                             });
                         },
@@ -788,13 +788,13 @@
                         }, 500);
                     return a.createElement(
                         r.Z,
-                        { style: E.root },
-                        a.createElement(l.Z, { Icon: p.default, onChange: C, placeholder: h, ref: m }),
-                        a.createElement(r.Z, { style: E.selectedUsersList }, u.map(v)),
+                        { style: y.root },
+                        a.createElement(l.Z, { Icon: p.default, onChange: C, placeholder: E, ref: m }),
+                        a.createElement(r.Z, { style: y.selectedUsersList }, u.map(v)),
                         a.createElement(
                             r.Z,
-                            { "aria-multiselectable": !0, role: "listbox", style: E.modalDropdown },
-                            y.map((e) => {
+                            { "aria-multiselectable": !0, role: "listbox", style: y.modalDropdown },
+                            h.map((e) => {
                                 const t = e;
                                 if (t.user_id && t.display_name && t.twitter_screen_name && t.avatar_url)
                                     return a.createElement(c.ZP, {
@@ -836,9 +836,9 @@
                 f = n(933794),
                 b = n(4427),
                 g = n(712612),
-                h = n(254810),
-                E = n(484633);
-            const y = { mute: c().hb568af4, unmute: c().bb1cbeb6 },
+                E = n(254810),
+                y = n(484633);
+            const h = { mute: c().hb568af4, unmute: c().bb1cbeb6 },
                 k = d.ZP.isMac() ? " (⌘+d)" : d.ZP.isDesktopOS() ? " (ctrl+d)" : "",
                 v = `Mute${k}`,
                 w = `Unmute${k}`,
@@ -849,26 +849,26 @@
                         c = a.useCallback(() => {
                             l(t ? ":audiospace::speaker:unmute_button:click" : ":audiospace::controls:mute_button:click"), n(!t);
                         }, [t, n, l]),
-                        d = (0, r.Dv)(h.pL),
+                        d = (0, r.Dv)(E.pL),
                         k = t || i || !d,
-                        C = k ? y.unmute : y.mute,
+                        C = k ? h.unmute : h.mute,
                         S = { label: C, preferredVerticalOrientation: "up" },
                         { role: Z } = (0, p.l7)(),
                         P = (0, r.Dv)(b.MG),
-                        I = (0, h.LK)();
+                        I = (0, E.LK)();
                     if (P) {
                         const e = k ? w : v,
                             t = { label: e, preferredVerticalOrientation: "up" },
                             n = { "mod+d": c };
-                        return a.createElement(f.Z, { handlers: n }, a.createElement(o.ZP, { "aria-label": e, disabled: (i && Z !== E.Q.host) || I, hoverLabel: t, icon: k ? a.createElement(s.default, null) : a.createElement(u.default, null), onPress: c, size: "large", type: k ? "destructiveFilled" : "primaryFilled" }));
+                        return a.createElement(f.Z, { handlers: n }, a.createElement(o.ZP, { "aria-label": e, disabled: (i && Z !== y.Q.host) || I, hoverLabel: t, icon: k ? a.createElement(s.default, null) : a.createElement(u.default, null), onPress: c, size: "large", type: k ? "destructiveFilled" : "primaryFilled" }));
                     }
-                    return a.createElement(o.ZP, { "aria-label": C, disabled: i && Z !== E.Q.host, hoverLabel: S, icon: k ? a.createElement(s.default, null) : a.createElement(u.default, null), onPress: c, size: "xLarge", type: k ? "destructiveFilled" : "primaryFilled" });
+                    return a.createElement(o.ZP, { "aria-label": C, disabled: i && Z !== y.Q.host, hoverLabel: S, icon: k ? a.createElement(s.default, null) : a.createElement(u.default, null), onPress: c, size: "xLarge", type: k ? "destructiveFilled" : "primaryFilled" });
                 },
                 S = (0, i.cn)(null, (e, t, n) => t(g.Dy, !e(g.Dy))),
                 Z = () => {
-                    const e = (0, r.Dv)(h.pL),
+                    const e = (0, r.Dv)(E.pL),
                         t = (0, r.Dv)(g.Dy) || !e,
-                        n = (0, h.LK)(),
+                        n = (0, E.LK)(),
                         i = t ? w : v,
                         l = a.useMemo(() => ({ label: i }), [i]),
                         c = (0, r.b9)(S),
@@ -969,18 +969,6 @@
                 return { borderRadius: t, paddingHorizontal: n, marginVertical: e.spaces.space20, marginVerticalPx: e.spacesPx.space20, shadowOffset: a };
             }
         },
-        159246: (e, t, n) => {
-            n.d(t, { W: () => l });
-            var a = n(202784),
-                r = n(950822),
-                i = n(181054),
-                o = n(392237);
-            function l(e = {}) {
-                return (0, r.Z)("svg", { ...e, style: [c.root, e.style], viewBox: "0 0 24 24", children: a.createElement(a.Fragment, null, a.createElement(i.Z.SVGLinearGradient, null), a.createElement("g", { fill: i.Z.SVGLinearGradient.fill }, a.createElement("path", { d: "M17.97 7.585c-.552 0-1 .448-1 1v3.417c0 2.588-2.156 4.693-4.806 4.693h-.328c-2.65 0-4.806-2.105-4.806-4.693V8.585c0-.552-.448-1-1-1s-1 .448-1 1v3.417c0 3.416 2.618 6.237 5.983 6.64l-.01 1.858H8.27c-.553 0-1 .448-1 1s.447 1 1 1h7.46c.552 0 1-.448 1-1s-.448-1-1-1h-2.726l.01-1.863c3.35-.413 5.955-3.228 5.955-6.635V8.585c0-.552-.448-1-1-1z" }), a.createElement("path", { d: "M12 15.42c2.077 0 3.766-1.688 3.766-3.765v-6.14c0-2.076-1.69-3.765-3.766-3.765S8.234 3.44 8.234 5.516v6.14c0 2.075 1.69 3.765 3.766 3.765z" }))) });
-            }
-            l.metadata = { width: 24, height: 24 };
-            const c = o.default.create((e) => ({ root: { display: "inline-block", fill: "currentcolor", height: "1.25em", maxWidth: "100%", position: "relative", userSelect: "none", verticalAlign: "text-bottom" } }));
-        },
         905443: (e, t, n) => {
             n.d(t, { UD: () => d, ZO: () => u, d5: () => m });
             var a = n(202784),
@@ -1008,4 +996,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-51f6e793.cb568bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-51f6e793.3d1a06ba.js.map

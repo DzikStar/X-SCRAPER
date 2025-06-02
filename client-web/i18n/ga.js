@@ -5517,13 +5517,35 @@
                 n("g22c8c30", "If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the post as added context."),
                 n("jf04b084", "These notes are added by contributors who believe the post isn’t misleading and does not need additional context."),
                 n("g5a72e98", "These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful."),
-                n("h53cb7de", "What do you think about this post?"),
-                n("dc3bfc82", "What, if anything, do you like about this post?"),
-                n("b4704bf4", "What, if anything, do you not like about this post?"),
+                n("b8719c22", "Help identify whether posts are liked by people from different perspectives."),
+                n("jcdf97d4", "What do you like about the post?"),
+                n("d4d7b67e", "What don’t you like about the post?"),
                 n("ed5156fa", "Tharla earráid agus do rátáil á sábháil, triail arís."),
-                n("d5f9fb42", "You rated this community boost"),
+                n("d0ed3636", "You rated this post"),
                 n("j6aa6172", "Scrios rátáil?"),
                 n("i4112750", "Ní féidir é sin a chealú."),
+                n("i6f6191a", "Thank you!"),
+                n("h5575012", "Agree and submit"),
+                n("f9171e52", "This post got some likes from people who normally disagree, but input so far is limited."),
+                n("j0f9919a", "Your rating won’t negatively impact a post, but can help positively recognize posts that are widely liked."),
+                n("b3af830c", "Your input:"),
+                n("d0b29562", "Rate more posts now"),
+                n("i36ea87a", "I agree with it"),
+                n("d5befc34", "I learned something interesting"),
+                n("je26ecf2", "It makes a meaningful point"),
+                n("e4e331aa", "It’s unifying on a topic that’s often polarizing"),
+                n("ed61ff2a", "It’s heartwarming or endearing"),
+                n("gc3104d8", "It’s inspiring or exciting"),
+                n("j8c4400e", "It’s funny"),
+                n("j4738406", "N/A: There’s nothing I like about it"),
+                n("d93d1666", "I don’t agree with it"),
+                n("d6130466", "There is no meaningful substance to it"),
+                n("d96835b6", "It doesn’t interest me"),
+                n("b7ba4150", "N/A: There’s nothing I dislike about it"),
+                n("g0402b3b", "liked by people from different perspectives"),
+                n("ged62c2b", "spotlight"),
+                n("b5d5f7f1", "Shapes the direction"),
+                n("a42fef87", "Learn more"),
                 n("bd7eb888", "See all notes on this post"),
                 n("i97b83f6", "Tharla earráid agus d'achomharc á chur isteach, bain triail eile as."),
                 n("a038ab9a", "Translate note"),
@@ -5874,8 +5896,8 @@
                 n("e41c9b4f", function (e) {
                     return "Sábháilte go " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Scrios an Fillteán"),
-                n("f4ea967a", "Scriosadh an fillteán"),
+                n("h18f86a4", "Scrios an Fillteán");
+            n("f4ea967a", "Scriosadh an fillteán"),
                 n("b670aa62", "Ainm an Fhillteáin"),
                 n("aece5462", "D'éirigh linn ainm an fhillteáin a nuashonrú"),
                 n("e3299b94", "Tharla earráid. Bain triail as an bhfillteán a nuashonrú arís i gceann nóiméid."),
@@ -5906,8 +5928,8 @@
                     return "Ended " + e.timestamp;
                 }),
                 n("daca8a2c", "Open in Dock"),
-                n("e3aac82a", "Craolachán á Lódáil");
-            n("i0ed3f4e", "Íomhá na hócáide"),
+                n("e3aac82a", "Craolachán á Lódáil"),
+                n("i0ed3f4e", "Íomhá na hócáide"),
                 n("cbae35fa", "Report Broadcast"),
                 n("fd12ab58", "Collection posts"),
                 n("a226497c", "Cruthaigh Pobal nua"),
@@ -6878,8 +6900,8 @@
                 n("b925c18c", "Salary Type"),
                 n("j3d242ce", "Invalid range"),
                 n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                n("b8cbb51a", "Job Summary"),
-                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                n("b8cbb51a", "Job Summary");
+            n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 n("b075c68a", "Edit job"),
                 n("d4b6a6e0", "Profile Spotlight"),
                 n("j2dd3686", "Highlight featured jobs above my posts."),
@@ -6904,8 +6926,8 @@
                 n("c0195168", "Change your app icon and navigation options"),
                 n("b6b5dc94", "Become verified"),
                 n("b06db848", "Stand out from others on the platform"),
-                n("e3e3a97c", "Earn a share of revenue from your posts");
-            n("f15bc24e", "Increased Grok limits"),
+                n("e3e3a97c", "Earn a share of revenue from your posts"),
+                n("f15bc24e", "Increased Grok limits"),
                 n("c4666e1c", "More usage of Grok 3, our latest model"),
                 n("he74ae7a", "Highest Grok usage limits"),
                 n("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
@@ -7856,35 +7878,7 @@
                 n("c29e3a88", "Select affiliates"),
                 n("j8318d57", function (e) {
                     return e.number + " affiliate" + o(e.number, "", "s");
-                }),
-                n("bf809ec0", "Select Affiliates"),
-                n("b719e224", "Gan toradh"),
-                n("c9938100", "Torthaí Cuardaigh"),
-                n("d1a35ec6", "Add accounts"),
-                n("b437adda", "Upgrade to paid"),
-                n("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
-                n("b02156b8", "Invitations"),
-                n("gd67d29b", function (e) {
-                    return "Invitations (" + e.count + ")";
-                }),
-                n("daf646e6", "Please note: you must label accounts appropriately."),
-                n("i3895c32", "Your account is under review because you changed your X @handle"),
-                n("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
-                n("e9e663ac", "Your payment is past due."),
-                n("c3ddd22c", "terms"),
-                n("c9729d8a", "terms"),
-                n("cdcd1d2c", "Add affiliations to your organization"),
-                n("d30ea6f3", function (e) {
-                    return "Are you sure you want to remove @" + e.name + "?";
-                }),
-                n("c2dfbb86", "Yes, do it"),
-                n("ba047f76", "Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
-                n("j26dee0e", "Remove affiliate"),
-                n("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
-                n("j3115ce8", "Individual"),
-                n("d8bb1d84", "Organization");
+                });
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7923,9 +7917,37 @@
                     c(e, a)
                 );
             }
-            n("e970bdbd", function (e) {
-                return e.count + " invites remaining";
-            }),
+            n("bf809ec0", "Select Affiliates"),
+                n("b719e224", "Gan toradh"),
+                n("c9938100", "Torthaí Cuardaigh"),
+                n("d1a35ec6", "Add accounts"),
+                n("b437adda", "Upgrade to paid"),
+                n("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                n("b02156b8", "Invitations"),
+                n("gd67d29b", function (e) {
+                    return "Invitations (" + e.count + ")";
+                }),
+                n("daf646e6", "Please note: you must label accounts appropriately."),
+                n("i3895c32", "Your account is under review because you changed your X @handle"),
+                n("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
+                n("e9e663ac", "Your payment is past due."),
+                n("c3ddd22c", "terms"),
+                n("c9729d8a", "terms"),
+                n("cdcd1d2c", "Add affiliations to your organization"),
+                n("d30ea6f3", function (e) {
+                    return "Are you sure you want to remove @" + e.name + "?";
+                }),
+                n("c2dfbb86", "Yes, do it"),
+                n("ba047f76", "Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
+                n("j26dee0e", "Remove affiliate"),
+                n("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
+                n("j3115ce8", "Individual"),
+                n("d8bb1d84", "Organization"),
+                n("e970bdbd", function (e) {
+                    return e.count + " invites remaining";
+                }),
                 n("id67d953", function (e) {
                     return "Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
                 }),
@@ -8898,8 +8920,8 @@
                 n("ha3efce4", "Auto"),
                 n("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                }),
-                n("a7bf9962", "Download video"),
+                });
+            n("a7bf9962", "Download video"),
                 n("ccc97152", "Playback speed"),
                 n("h531ade0", "Video quality"),
                 n("e8b5757c", "0.25x"),
@@ -8930,8 +8952,8 @@
                 n("c1658fc6", "Níorbh fhéidir an meán a sheinm."),
                 n("h519ae04", "The media has been disabled due to a copyright claim."),
                 n("ce871584", "Tá an craoladh seo críochnaithe."),
-                n("c101eb96", "Níl an craoladh seo ar fáil.");
-            n("gb24a514", "Tá an meán seo díchumasaithe mar fhreagairt ar thuairisc le sealbhóir an chóipchirt."),
+                n("c101eb96", "Níl an craoladh seo ar fáil."),
+                n("gb24a514", "Tá an meán seo díchumasaithe mar fhreagairt ar thuairisc le sealbhóir an chóipchirt."),
                 n("hcaf3e63", function (e) {
                     return "Tá na meáin seo díchumasaithe mar gheall ar éileamh cóipchirt atá déanta ag " + e.holder + ".";
                 }),
@@ -11493,6 +11515,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Helps find posts "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Won’t hurt posts but could help ", " widely liked ones"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " of this experimental feature"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["As the post author, you can "];
@@ -13311,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.be09c06a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.4f81491a.js.map

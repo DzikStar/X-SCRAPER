@@ -5511,13 +5511,35 @@
                 a("g22c8c30", "Pokud tyto poznámky ohodnotí jako užitečné dostatečný počet přispěvatelů (včetně těch, kteří se ve svých dřívějších hodnoceních obvykle neshodovali), začnou se u postu veřejně zobrazovat jako dodatečný kontext."),
                 a("jf04b084", "Tyto poznámky přidávají přispěvatelé, kteří si myslí, že post není zavádějící a nepotřebuje dodatečný kontext."),
                 a("g5a72e98", "Tyto poznámky jsou viditelné jen v programu Komunitní poznámky jako dodatečné informace pro hodnotitele. Jako kontext se u postů nezobrazují, a to ani v případě, že dosáhnou stavu Užitečná."),
-                a("h53cb7de", "Co si o tomto postu myslíte?"),
-                a("dc3bfc82", "Co se vám na tomto postu líbí, pokud vůbec něco?"),
-                a("b4704bf4", "Co se vám na tomto postu nelíbí, pokud vůbec něco?"),
+                a("b8719c22", "Pomozte nám identifikovat, zda posty lajkovali lidé z různých úhlů pohledu."),
+                a("jcdf97d4", "Co se vám na tom postu líbí?"),
+                a("d4d7b67e", "Co se vám na tom postu nelíbí?"),
                 a("ed5156fa", "Při ukládání vašeho hodnocení došlo k chybě. Zkuste to prosím znovu."),
-                a("d5f9fb42", "Ohodnotil jste tento zvýšení komunity"),
+                a("d0ed3636", "Ohodnotil jste tento post"),
                 a("j6aa6172", "Smazat hodnocení?"),
                 a("i4112750", "Tuto akci nelze vzít zpět."),
+                a("i6f6191a", "Děkujeme!"),
+                a("h5575012", "Agree and submit"),
+                a("f9171e52", "Tento post získal několik lajků od lidí, kteří s ním obvykle nesouhlasí, množství údajů je ale zatím omezené."),
+                a("j0f9919a", "Vaše hodnocení nebude mít negativní vliv na post, může ale pomoci pozitivně rozpoznat posty, které se líbí mnoha lidem."),
+                a("b3af830c", "Váš vstup:"),
+                a("d0b29562", "Ohodnoťte nyní více postů"),
+                a("i36ea87a", "Souhlasím s tím"),
+                a("d5befc34", "Zjistil jsem něco zajímavého"),
+                a("je26ecf2", "Má to smysluplný význam"),
+                a("e4e331aa", "Sjednocuje to ohledně tématu, které často lidi rozděluje"),
+                a("ed61ff2a", "Je to potěšující nebo roztomilé"),
+                a("gc3104d8", "Je to inspirativní nebo vzrušující"),
+                a("j8c4400e", "Je to zábavné"),
+                a("j4738406", "Není k dispozici: Neexistuje nic, co by se mi na tom líbilo "),
+                a("d93d1666", "Nesouhlasím s tím"),
+                a("d6130466", "Nemá to žádný smysluplný obsah"),
+                a("d96835b6", "Nezajímá mě to"),
+                a("b7ba4150", "Není k dispozici: Neexistuje nic, co by se mi na tom nelíbilo "),
+                a("g0402b3b", "které se líbí lidem z různých úhlů pohledu"),
+                a("ged62c2b", "zvýraznit"),
+                a("b5d5f7f1", "Utváří směr"),
+                a("a42fef87", "Learn more"),
                 a("bd7eb888", "Zobrazte si všechny poznámky k tomuto postu"),
                 a("i97b83f6", "Při odesílání vašeho odvolání došlo k chybě. Zkuste to prosím znovu."),
                 a("a038ab9a", "Přeložit zápisek"),
@@ -5868,8 +5890,8 @@
                 a("e41c9b4f", function (e) {
                     return "Uloženo do kolekce " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Smazat složku"),
-                a("f4ea967a", "Složka byla smazána"),
+                a("h18f86a4", "Smazat složku");
+            a("f4ea967a", "Složka byla smazána"),
                 a("b670aa62", "Název složky"),
                 a("aece5462", "Název složky byl úspěšně aktualizován"),
                 a("e3299b94", "Něco se pokazilo. Zkuste složku aktualizovat znovu za minutku."),
@@ -5900,8 +5922,8 @@
                     return "Skončilo: " + e.timestamp;
                 }),
                 a("daca8a2c", "Otevřít v Doku"),
-                a("e3aac82a", "Načítání vysílání");
-            a("i0ed3f4e", "Obrázek události"),
+                a("e3aac82a", "Načítání vysílání"),
+                a("i0ed3f4e", "Obrázek události"),
                 a("cbae35fa", "Nahlásit vysílání"),
                 a("fd12ab58", "Posty v kolekci"),
                 a("a226497c", "Vytvoření nové komunity"),
@@ -6872,8 +6894,8 @@
                 a("b925c18c", "Typ platu"),
                 a("j3d242ce", "Neplatný rozsah"),
                 a("f4d07bd2", "Uveďte nepovinné údaje, které uchazečům usnadní nalezení vašich pracovních pozic."),
-                a("b8cbb51a", "Shrnutí pracovní pozice"),
-                a("bda6881e", "Toto pracovní místo bylo importováno ze systému sledování uchazečů (ATS). Vezměte prosím na vědomí, že lze upravovat pouze určitá pole."),
+                a("b8cbb51a", "Shrnutí pracovní pozice");
+            a("bda6881e", "Toto pracovní místo bylo importováno ze systému sledování uchazečů (ATS). Vezměte prosím na vědomí, že lze upravovat pouze určitá pole."),
                 a("b075c68a", "Upravit pracovní pozici"),
                 a("d4b6a6e0", "Zvýraznění v profilu"),
                 a("j2dd3686", "Zvýrazněte propagované pracovní pozice nad svými posty."),
@@ -6898,8 +6920,8 @@
                 a("c0195168", "Změňte ikonu aplikace a možnosti navigace"),
                 a("b6b5dc94", "Nechte se ověřit"),
                 a("b06db848", "Odlište se od ostatních na platformě"),
-                a("e3e3a97c", "Získejte podíl z příjmů ze svých postů");
-            a("f15bc24e", "Zvýšené limity funkce Grok"),
+                a("e3e3a97c", "Získejte podíl z příjmů ze svých postů"),
+                a("f15bc24e", "Zvýšené limity funkce Grok"),
                 a("c4666e1c", "Větší využití funkce Grok 3, našeho nejnovějšího modelu "),
                 a("he74ae7a", "Omezení nejvyššího počtu použití funkce Grok"),
                 a("f5732cd4", "Navíc rozšířený přístup k funkcím DeepSearch a Přemýšlet"),
@@ -7216,16 +7238,16 @@
                 a("hd80bd3e", "Sponzorovat post"),
                 a("fe2b0008", "Zjistěte, jak používat platformu X"),
                 a("h257d4aa", "Vyberte post ke sponzorování"),
-                a("fe946974", "Your trial of X without ads"),
-                a("f6c50ec0", "Your ad-free trial has ended"),
-                a("b1319404", "Ads avoided"),
-                a("baa4acae", "You’re seeing more personalized content."),
-                a("c00e8600", "Estimated time saved"),
-                a("ic073e4e", "Your time is valuable."),
-                a("eb866e88", "Estimated 1-year time savings"),
-                a("aa77b70c", "Based on your usage."),
-                a("c534c6b4", "We’re crunching the numbers..."),
-                a("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                a("fe946974", "Vaše zkušební verze X bez reklam"),
+                a("f6c50ec0", "Platnost vaší bezplatné zkušební verze skončila"),
+                a("b1319404", "Vyhýbejte se reklamám"),
+                a("baa4acae", "Uvidíte více přizpůsobeného obsahu."),
+                a("c00e8600", "Odhadovaný ušetřený čas"),
+                a("ic073e4e", "Váš čas je vzácný."),
+                a("eb866e88", "Odhadovaný ušetřený čas během 1 roku"),
+                a("aa77b70c", "Založeno na vašem používání."),
+                a("c534c6b4", "Zpracováváme čísla..."),
+                a("i57332f0", "Pokračujte v procházení a zkuste se později podívat, kolika reklamám jste se vyhnuli a kolik času jste ušetřili"),
                 a("cc10f019", function (e) {
                     return e.minutes + " minut" + n(e.minutes, "y", "", "a", "");
                 }),
@@ -7241,11 +7263,11 @@
                 a("be88be23", function (e) {
                     return "Vaše " + e.durationInDays + "denní bezplatná zkušební verze byla aktivována";
                 }),
-                a("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                a("ae3f3b0e", "Enjoy!"),
-                a("cdac8dc4", "See your new feed"),
+                a("a4413462", "Během zkušební doby si můžete prohlížet statistiky o tom, kolik reklam jste neviděli a kolik času jste ušetřili."),
+                a("ae3f3b0e", "Užijte si to!"),
+                a("cdac8dc4", "Zobrazit váš nový kanál"),
                 a("dec99336", "Bez reklam"),
-                a("i95803fa", "Unfortunately, you are not eligible at this time."),
+                a("i95803fa", "Bohužel v tuto chvíli nejste způsobilí."),
                 a("d28a1d72", "Buďte první, kdo zjistí trendy s Radarem"),
                 a("fb70427a", "Představujeme nejvýkonnější vyhledávací nástroj na X."),
                 a("i54bf620", "Sledujte klíčová slova"),
@@ -7850,35 +7872,7 @@
                 a("c29e3a88", "Vyberte si partnerské účty"),
                 a("j8318d57", function (e) {
                     return e.number + " partnersk" + n(e.number, "é účty", "é účty", "ý účet", "é účty");
-                }),
-                a("bf809ec0", "Vyberte si partnerské účty"),
-                a("b719e224", "Žádné výsledky"),
-                a("c9938100", "Výsledky hledání"),
-                a("d1a35ec6", "Přidat účty"),
-                a("b437adda", "Upgradujte k platbě"),
-                a("f1f6c88b", function (e) {
-                    return "Účty (" + e.count + ")";
-                }),
-                a("b02156b8", "Pozvánky"),
-                a("gd67d29b", function (e) {
-                    return "Pozvánky (" + e.count + ")";
-                }),
-                a("daf646e6", "Upozornění: účty je nutno označit vhodným způsobem."),
-                a("i3895c32", "Váš účet prochází kontrolou, protože jste změnili svoje @uživatelské jméno na platformě X"),
-                a("i5f8b628", "Dokud nebude váš účet zkontrolován, nemůžete upravovat své partnerské účty."),
-                a("e9e663ac", "Vaše platba je po splatnosti."),
-                a("c3ddd22c", "podmínky"),
-                a("c9729d8a", "podmínky"),
-                a("cdcd1d2c", "Přidat partnery k vaší organizaci"),
-                a("d30ea6f3", function (e) {
-                    return "Jste si jistí, že chcete odebrat @" + e.name + "?";
-                }),
-                a("c2dfbb86", "Ano, udělejte to"),
-                a("ba047f76", "Odebráním partnerského účtu okamžitě odeberete jeho zaškrtnutí a odznak partnera. Do konce měsíce vám budou nadále účtovány poplatky."),
-                a("j26dee0e", "Odebrat partnerský účet"),
-                a("e30cbdf0", "Tato partnerský účet je předplatitelem ověřených organizací a musí zůstat organizací. Nelze jej změnit na individuální."),
-                a("j3115ce8", "Jednotlivec"),
-                a("d8bb1d84", "Organizace");
+                });
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7917,9 +7911,37 @@
                     i(e, o)
                 );
             }
-            a("e970bdbd", function (e) {
-                return "Zbývá " + e.count + " pozvánek";
-            }),
+            a("bf809ec0", "Vyberte si partnerské účty"),
+                a("b719e224", "Žádné výsledky"),
+                a("c9938100", "Výsledky hledání"),
+                a("d1a35ec6", "Přidat účty"),
+                a("b437adda", "Upgradujte k platbě"),
+                a("f1f6c88b", function (e) {
+                    return "Účty (" + e.count + ")";
+                }),
+                a("b02156b8", "Pozvánky"),
+                a("gd67d29b", function (e) {
+                    return "Pozvánky (" + e.count + ")";
+                }),
+                a("daf646e6", "Upozornění: účty je nutno označit vhodným způsobem."),
+                a("i3895c32", "Váš účet prochází kontrolou, protože jste změnili svoje @uživatelské jméno na platformě X"),
+                a("i5f8b628", "Dokud nebude váš účet zkontrolován, nemůžete upravovat své partnerské účty."),
+                a("e9e663ac", "Vaše platba je po splatnosti."),
+                a("c3ddd22c", "podmínky"),
+                a("c9729d8a", "podmínky"),
+                a("cdcd1d2c", "Přidat partnery k vaší organizaci"),
+                a("d30ea6f3", function (e) {
+                    return "Jste si jistí, že chcete odebrat @" + e.name + "?";
+                }),
+                a("c2dfbb86", "Ano, udělejte to"),
+                a("ba047f76", "Odebráním partnerského účtu okamžitě odeberete jeho zaškrtnutí a odznak partnera. Do konce měsíce vám budou nadále účtovány poplatky."),
+                a("j26dee0e", "Odebrat partnerský účet"),
+                a("e30cbdf0", "Tato partnerský účet je předplatitelem ověřených organizací a musí zůstat organizací. Nelze jej změnit na individuální."),
+                a("j3115ce8", "Jednotlivec"),
+                a("d8bb1d84", "Organizace"),
+                a("e970bdbd", function (e) {
+                    return "Zbývá " + e.count + " pozvánek";
+                }),
                 a("id67d953", function (e) {
                     return "Při načítání podrobností o vaší pokladně Stripe se něco pokazilo. Pokud tento problém přetrvává, kontaktujte " + e.supportEmail + ".";
                 }),
@@ -8892,8 +8914,8 @@
                 a("ha3efce4", "Auto"),
                 a("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                }),
-                a("a7bf9962", "Stáhnout video"),
+                });
+            a("a7bf9962", "Stáhnout video"),
                 a("ccc97152", "Rychlost přehrávání"),
                 a("h531ade0", "Kvalita videa"),
                 a("e8b5757c", "0,25x"),
@@ -8924,8 +8946,8 @@
                 a("c1658fc6", "Média nejde přehrát."),
                 a("h519ae04", "Toto médium bylo zakázáno kvůli autorským právům."),
                 a("ce871584", "Toto vysílání skončilo."),
-                a("c101eb96", "Toto vysílání není dostupné.");
-            a("gb24a514", "Toto médium bylo odebráno v reakci na hlášení vlastníka autorských práv."),
+                a("c101eb96", "Toto vysílání není dostupné."),
+                a("gb24a514", "Toto médium bylo odebráno v reakci na hlášení vlastníka autorských práv."),
                 a("hcaf3e63", function (e) {
                     return "Toto médium bylo zakázáno v souvislosti s nárokem ohledně autorských práv vzneseným ze strany " + e.holder + ".";
                 }),
@@ -11487,6 +11509,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Pomáhá najít posty, "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Postům to neuškodí, mohlo by to ale pomoci ", " ty, které se líbí hodně uživatelům"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " této experimentální funkce"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Jako autor postu můžete "];
@@ -12077,7 +12123,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% poplatek, min. "];
                             },
                         },
                         {
@@ -13306,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.c3e8438a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.828067ca.js.map

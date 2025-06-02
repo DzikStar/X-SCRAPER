@@ -102,7 +102,7 @@
             const i = o(392237).default.create((e) => ({ root: { position: "relative", pointerEvents: "none", userSelect: "none" }, overlay: { height: "100%", pointerEvents: "none", position: "absolute", userSelect: "none", width: "100%", zIndex: 1 } }));
         },
         617041: (e, t, o) => {
-            o.d(t, { Z: () => I });
+            o.d(t, { Z: () => H });
             o(136728);
             var n = o(202784),
                 r = o(111677),
@@ -139,7 +139,7 @@
                     return ((e) => new Date().toLocaleString("en-US", { weekday: "long" }) === e)(e) ? m({ time: n }) : u({ day: e, time: n });
                 },
                 Z = Object.freeze({ directMessage: a().h845f282, email: a().a3841918, callFormatter: a().ha9b8035, textFormatter: a().g2244521 });
-            function L(e) {
+            function v(e) {
                 const { location: t, onClose: o, user: r } = e,
                     a = (0, s.z)(),
                     l = n.useMemo(() => {
@@ -160,17 +160,17 @@
                     n.createElement(p.Z, { items: l, onCloseRequested: o })
                 );
             }
-            var v = o(444178),
-                S = o(392237),
-                M = o(264171);
-            const R = S.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.gray200, backgroundRepeat: "no-repeat", backgroundSize: "contain", cursor: "pointer", display: "flex", height: "100%", justifyContent: "center" }, iconLocation: { color: e.colors.alwaysBaseGray1100, height: e.spaces.space32 } })),
-                P = ({ imageUrl: e, link: t, onClick: o }) => {
+            var L = o(444178),
+                M = o(392237),
+                S = o(264171);
+            const R = M.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.gray200, backgroundRepeat: "no-repeat", backgroundSize: "contain", cursor: "pointer", display: "flex", height: "100%", justifyContent: "center" }, iconLocation: { color: e.colors.alwaysBaseGray1100, height: e.spaces.space32 } })),
+                z = ({ imageUrl: e, link: t, onClick: o }) => {
                     const r = e ? { backgroundImage: `url(${e})` } : null;
-                    return n.createElement(v.Z, { link: t, onClick: o, role: "img", style: [R.root, r] }, e ? null : n.createElement(M.default, { style: R.iconLocation, testID: "iconLocation" }));
+                    return n.createElement(L.Z, { link: t, onClick: o, role: "img", style: [R.root, r] }, e ? null : n.createElement(S.default, { style: R.iconLocation, testID: "iconLocation" }));
                 },
-                T = a().dc12a126,
-                A = a().e2acb642;
-            function I(e) {
+                P = a().dc12a126,
+                T = a().e2acb642;
+            function H(e) {
                 const { label: t, location: o, showUpdatedHours: r, user: a } = e,
                     { featureSwitches: p } = n.useContext(l.rC),
                     u = (0, s.z)(),
@@ -184,13 +184,13 @@
                         return (
                             m &&
                                 e.push({
-                                    label: T,
+                                    label: P,
                                     link: m,
                                     onClick: (e) => {
                                         e?.preventDefault(), u.scribe((0, c.dm)("click", "directions"));
                                     },
                                 }),
-                            C(o) && e.push({ label: A, renderMenu: (e) => n.createElement(L, { location: o, onClose: e, user: a }) }),
+                            C(o) && e.push({ label: T, renderMenu: (e) => n.createElement(v, { location: o, onClose: e, user: a }) }),
                             e
                         );
                     })(),
@@ -224,7 +224,7 @@
                         })(),
                     ],
                     label: t,
-                    media: n.createElement(P, {
+                    media: n.createElement(z, {
                         imageUrl: p.isTrue("responsive_web_location_spotlight_display_map") ? o.data.google_verification_data?.static_map_image_url : null,
                         link: m,
                         onClick: (e) => {
@@ -380,6 +380,19 @@
                     return r.createElement(a.Z, { style: d.container }, r.createElement(s.Z, (0, n.Z)({}, p, { interactiveStyles: u, style: d.root }), r.createElement(i.ZP, { align: e, color: t }, o)));
                 };
         },
+        748138: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => s });
+            var n = o(202784),
+                r = o(890601),
+                a = o(783427),
+                i = o(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight.230dda9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.SettingsProfessionalProfileLocationSpotlight.e72874fa.js.map

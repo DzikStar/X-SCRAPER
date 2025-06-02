@@ -66,7 +66,7 @@
         },
         119260: (e, t, _) => {
             "use strict";
-            _.r(t), _.d(t, { TweetEditHistoryScreen: () => C, default: () => L });
+            _.r(t), _.d(t, { TweetEditHistoryScreen: () => Z, default: () => C });
             var n = _(202784),
                 i = _(325686),
                 a = _(457311),
@@ -76,34 +76,48 @@
                 l = _(718e3),
                 d = _(252021),
                 p = _(652904),
-                b = _(810641),
-                c = _(24949),
+                c = _(810641),
+                b = _(24949),
                 w = _(782261),
                 m = _(668214),
-                u = _(836255),
-                h = _(912021),
-                f = _(413798),
-                g = _(750085),
-                v = _(218951);
-            const y = (0, h.Z)((e) => (0, v.Z)({ timelineId: `tweet-edit-history-${e}`, network: { getEndpoint: (e) => e.withEndpoint(f.Z).fetchEditHistory, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: g.Z, context: "FETCH_EDIT_HISTORY_TIMELINE", perfKey: "editHistoryGraphQL" })),
+                h = _(836255),
+                u = _(912021),
+                g = _(413798),
+                v = _(750085),
+                f = _(218951);
+            const y = (0, u.Z)((e) => (0, f.Z)({ timelineId: `tweet-edit-history-${e}`, network: { getEndpoint: (e) => e.withEndpoint(g.Z).fetchEditHistory, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: v.Z, context: "FETCH_EDIT_HISTORY_TIMELINE", perfKey: "editHistoryGraphQL" })),
                 k = (e, t) => t.match.params.statusId,
-                I = (0, m.Z)()
-                    .propsFromState(() => ({ tweetLatestEditVersionId: (0, c.P1)(u.Z.createHydratedTweetSelector(k), k, (e, t) => (e ? w.Z.getTweetLatestVersionId(e) : t)) }))
+                E = (0, m.Z)()
+                    .propsFromState(() => ({ tweetLatestEditVersionId: (0, b.P1)(h.Z.createHydratedTweetSelector(k), k, (e, t) => (e ? w.Z.getTweetLatestVersionId(e) : t)) }))
                     .adjustStateProps(({ tweetLatestEditVersionId: e }) => ({ urtModule: y(e) }))
                     .withAnalytics({ page: "edit_history" }),
-                T = s().f345dcda,
-                q = s().h2fcc532,
-                E = s().e9f1fbcc,
-                x = n.createElement(l.Z, null),
-                A = () => n.createElement(a.Z, { header: E });
-            function C(e) {
+                I = s().f345dcda,
+                T = s().h2fcc532,
+                q = s().e9f1fbcc,
+                z = n.createElement(l.Z, null),
+                x = () => n.createElement(a.Z, { header: q });
+            function Z(e) {
                 const { history: t, urtModule: _ } = e,
-                    a = n.createElement(i.Z, { style: S.root }, n.createElement(b.Z, { loadingAccessibilityLabel: q, module: _, renderEmptyState: A, title: T }));
-                return n.createElement(p.Z, null, n.createElement(d.Z, { backLocation: "/", history: t, primaryContent: a, sidebarContent: x, title: T }));
+                    a = n.createElement(i.Z, { style: A.root }, n.createElement(c.Z, { loadingAccessibilityLabel: T, module: _, renderEmptyState: x, title: I }));
+                return n.createElement(p.Z, null, n.createElement(d.Z, { backLocation: "/", history: t, primaryContent: a, sidebarContent: z, title: I }));
             }
-            const S = r.default.create((e) => ({ root: { paddingVertical: e.componentDimensions.gutterVertical } })),
-                L = I(C);
+            const A = r.default.create((e) => ({ root: { paddingVertical: e.componentDimensions.gutterVertical } })),
+                C = E(Z);
+        },
+        748138: (e, t, _) => {
+            "use strict";
+            _.r(t), _.d(t, { default: () => s });
+            var n = _(202784),
+                i = _(890601),
+                a = _(783427),
+                r = _(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const s = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetEditHistory.7304453a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetEditHistory.67f785da.js.map

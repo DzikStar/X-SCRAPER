@@ -5502,13 +5502,35 @@
                 a("g22c8c30", "[[280574]] If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the post as added context."),
                 a("jf04b084", "[[280606]] These notes are added by contributors who believe the post isn’t misleading and does not need additional context."),
                 a("g5a72e98", "[[280599]] These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful."),
-                a("h53cb7de", "[[291776]] What do you think about this post?"),
-                a("dc3bfc82", "[[291774]] What, if anything, do you like about this post?"),
-                a("b4704bf4", "[[291775]] What, if anything, do you not like about this post?"),
+                a("b8719c22", "[[295587]] Help identify whether posts are liked by people from different perspectives."),
+                a("jcdf97d4", "[[295599]] What do you like about the post?"),
+                a("d4d7b67e", "[[295600]] What don’t you like about the post?"),
                 a("ed5156fa", "[[228494]] There was an error saving your rating, please try again."),
-                a("d5f9fb42", "[[292083]] You rated this community boost"),
+                a("d0ed3636", "[[295625]] You rated this post"),
                 a("j6aa6172", "[[228428]] Delete rating?"),
                 a("i4112750", "[[228475]] This can’t be undone."),
+                a("i6f6191a", "[[273398]] Thank you!"),
+                a("h5575012", "Agree and submit"),
+                a("f9171e52", "[[295597]] This post got some likes from people who normally disagree, but input so far is limited."),
+                a("j0f9919a", "[[295601]] Your rating won’t negatively impact a post, but can help positively recognize posts that are widely liked."),
+                a("b3af830c", "[[295626]] Your input:"),
+                a("d0b29562", "[[295622]] Rate more posts now"),
+                a("i36ea87a", "[[295585]] I agree with it"),
+                a("d5befc34", "[[295588]] I learned something interesting"),
+                a("je26ecf2", "[[295594]] It makes a meaningful point"),
+                a("e4e331aa", "[[295592]] It’s unifying on a topic that’s often polarizing"),
+                a("ed61ff2a", "[[295590]] It’s heartwarming or endearing"),
+                a("gc3104d8", "[[295593]] It’s inspiring or exciting"),
+                a("j8c4400e", "[[295591]] It’s funny"),
+                a("j4738406", "[[295596]] N/A: There’s nothing I like about it"),
+                a("d93d1666", "[[295586]] I don’t agree with it"),
+                a("d6130466", "[[295598]] There is no meaningful substance to it"),
+                a("d96835b6", "[[295589]] It doesn’t interest me"),
+                a("b7ba4150", "[[295595]] N/A: There’s nothing I dislike about it"),
+                a("g0402b3b", "liked by people from different perspectives"),
+                a("ged62c2b", "spotlight"),
+                a("b5d5f7f1", "Shapes the direction"),
+                a("a42fef87", "Learn more"),
                 a("bd7eb888", "[[280596]] See all notes on this post"),
                 a("i97b83f6", "[[247826]] There was an error submitting your appeal, please try again."),
                 a("a038ab9a", "[[287584]] Translate note"),
@@ -5859,8 +5881,8 @@
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "[[242318]] Delete Folder"),
-                a("f4ea967a", "[[242841]] Folder has been deleted"),
+                a("h18f86a4", "[[242318]] Delete Folder");
+            a("f4ea967a", "[[242841]] Folder has been deleted"),
                 a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
@@ -5891,8 +5913,8 @@
                     return "[[287843]] Ended " + e.timestamp;
                 }),
                 a("daca8a2c", "[[292665]] Open in Dock"),
-                a("e3aac82a", "[[180609]] Loading Broadcast");
-            a("i0ed3f4e", "[[187199]] Event image"),
+                a("e3aac82a", "[[180609]] Loading Broadcast"),
+                a("i0ed3f4e", "[[187199]] Event image"),
                 a("cbae35fa", "[[271596]] Report Broadcast"),
                 a("fd12ab58", "[[282500]] Collection posts"),
                 a("a226497c", "[[243330]] Create a new Community"),
@@ -6863,8 +6885,8 @@
                 a("b925c18c", "[[283691]] Salary Type"),
                 a("j3d242ce", "[[276541]] Invalid range"),
                 a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "[[282457]] Job Summary"),
-                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("b8cbb51a", "[[282457]] Job Summary");
+            a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "[[276392]] Edit job"),
                 a("d4b6a6e0", "[[249571]] Profile Spotlight"),
                 a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
@@ -6889,8 +6911,8 @@
                 a("c0195168", "[[293318]] Change your app icon and navigation options"),
                 a("b6b5dc94", "[[293315]] Become verified"),
                 a("b06db848", "[[293329]] Stand out from others on the platform"),
-                a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts");
-            a("f15bc24e", "[[293323]] Increased Grok limits"),
+                a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts"),
+                a("f15bc24e", "[[293323]] Increased Grok limits"),
                 a("c4666e1c", "[[293327]] More usage of Grok 3, our latest model"),
                 a("he74ae7a", "[[293324]] Highest Grok usage limits"),
                 a("f5732cd4", "[[293328]] Plus, expanded access to DeepSearch & Think"),
@@ -7841,35 +7863,7 @@
                 a("c29e3a88", "[[288072]] Select affiliates"),
                 a("j8318d57", function (e) {
                     return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
-                }),
-                a("bf809ec0", "[[288071]] Select Affiliates"),
-                a("b719e224", "[[196494]] No results"),
-                a("c9938100", "[[220491]] Search results"),
-                a("d1a35ec6", "[[274371]] Add accounts"),
-                a("b437adda", "[[281591]] Upgrade to paid"),
-                a("f1f6c88b", function (e) {
-                    return "[[274679]] Accounts (" + e.count + ")";
-                }),
-                a("b02156b8", "[[274681]] Invitations"),
-                a("gd67d29b", function (e) {
-                    return "[[274680]] Invitations (" + e.count + ")";
-                }),
-                a("daf646e6", "[[275431]] Please note: you must label accounts appropriately."),
-                a("i3895c32", "[[280469]] Your account is under review because you changed your X @handle"),
-                a("i5f8b628", "[[276205]] You cannot modify your affiliates until your account is reviewed."),
-                a("e9e663ac", "[[283912]] Your payment is past due."),
-                a("c3ddd22c", "terms"),
-                a("c9729d8a", "terms"),
-                a("cdcd1d2c", "[[274372]] Add affiliations to your organization"),
-                a("d30ea6f3", function (e) {
-                    return "[[274601]] Are you sure you want to remove @" + e.name + "?";
-                }),
-                a("c2dfbb86", "[[274603]] Yes, do it"),
-                a("ba047f76", "[[274602]] Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
-                a("j26dee0e", "[[275010]] Remove affiliate"),
-                a("e30cbdf0", "[[275315]] This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
-                a("j3115ce8", "[[275078]] Individual"),
-                a("d8bb1d84", "[[240839]] Organization");
+                });
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7908,9 +7902,37 @@
                     r(e, t)
                 );
             }
-            a("e970bdbd", function (e) {
-                return "[[276244]] " + e.count + " invites remaining";
-            }),
+            a("bf809ec0", "[[288071]] Select Affiliates"),
+                a("b719e224", "[[196494]] No results"),
+                a("c9938100", "[[220491]] Search results"),
+                a("d1a35ec6", "[[274371]] Add accounts"),
+                a("b437adda", "[[281591]] Upgrade to paid"),
+                a("f1f6c88b", function (e) {
+                    return "[[274679]] Accounts (" + e.count + ")";
+                }),
+                a("b02156b8", "[[274681]] Invitations"),
+                a("gd67d29b", function (e) {
+                    return "[[274680]] Invitations (" + e.count + ")";
+                }),
+                a("daf646e6", "[[275431]] Please note: you must label accounts appropriately."),
+                a("i3895c32", "[[280469]] Your account is under review because you changed your X @handle"),
+                a("i5f8b628", "[[276205]] You cannot modify your affiliates until your account is reviewed."),
+                a("e9e663ac", "[[283912]] Your payment is past due."),
+                a("c3ddd22c", "terms"),
+                a("c9729d8a", "terms"),
+                a("cdcd1d2c", "[[274372]] Add affiliations to your organization"),
+                a("d30ea6f3", function (e) {
+                    return "[[274601]] Are you sure you want to remove @" + e.name + "?";
+                }),
+                a("c2dfbb86", "[[274603]] Yes, do it"),
+                a("ba047f76", "[[274602]] Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
+                a("j26dee0e", "[[275010]] Remove affiliate"),
+                a("e30cbdf0", "[[275315]] This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
+                a("j3115ce8", "[[275078]] Individual"),
+                a("d8bb1d84", "[[240839]] Organization"),
+                a("e970bdbd", function (e) {
+                    return "[[276244]] " + e.count + " invites remaining";
+                }),
                 a("id67d953", function (e) {
                     return "[[289294]] Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
                 }),
@@ -8883,8 +8905,8 @@
                 a("ha3efce4", "[[286136]] Auto"),
                 a("hd8d044d", function (e) {
                     return "[[286308]] Auto (" + e.quality + ")";
-                }),
-                a("a7bf9962", "[[276485]] Download video"),
+                });
+            a("a7bf9962", "[[276485]] Download video"),
                 a("ccc97152", "[[238866]] Playback speed"),
                 a("h531ade0", "[[286295]] Video quality"),
                 a("e8b5757c", "[[246420]] 0.25x"),
@@ -8915,8 +8937,8 @@
                 a("c1658fc6", "[[209674]] The media could not be played."),
                 a("h519ae04", "[[270563]] The media has been disabled due to a copyright claim."),
                 a("ce871584", "[[209679]] This broadcast has ended."),
-                a("c101eb96", "[[209687]] This broadcast is not available.");
-            a("gb24a514", "[[209678]] This media has been disabled in response to a report by the copyright owner."),
+                a("c101eb96", "[[209687]] This broadcast is not available."),
+                a("gb24a514", "[[209678]] This media has been disabled in response to a report by the copyright owner."),
                 a("hcaf3e63", function (e) {
                     return "[[225736]] This media has been disabled due to a copyright claim by " + e.holder + ".";
                 }),
@@ -11478,6 +11500,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["[[295621]] Helps find posts "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["[[295623]] Won’t hurt posts but could help ", " widely liked ones"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["[[295624]] ", " of this experimental feature"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["[[280565]] As the post author, you can "];
@@ -13295,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.dcfb266a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.095c1cda.js.map

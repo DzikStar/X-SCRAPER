@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.NotificationHandler", "icons/IconHeartPlus-js"],
+    ["loader.NotificationHandler", "icons/IconBarChartHorizontal-js", "icons/IconNotificationsSafety-js", "icons/IconNotificationsSecurityAlert-js"],
     {
         41903: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => At });
+            n.r(t), n.d(t, { default: () => Dt });
             var o = n(459643),
                 l = n(942893),
                 a = n(351322),
@@ -18,34 +18,34 @@
                 f = n(996548),
                 p = n(286406),
                 y = n(720930),
-                _ = n(159340),
+                h = n(159340),
                 E = n(597237),
-                h = n(761744),
+                _ = n(761744),
                 v = n(517890),
                 b = n(544367),
-                x = n(453333),
-                w = n(213279),
+                w = n(453333),
+                x = n(213279),
                 C = n(121791),
                 Z = n(902673),
-                k = n(772722),
-                z = n(856151),
+                z = n(772722),
+                k = n(856151),
                 I = n(25001),
-                A = n(466445),
-                D = n(259055),
-                P = n(283379),
+                D = n(466445),
+                A = n(259055),
+                M = n(283379),
                 S = n(720600),
-                T = n(933288),
-                H = n(672738),
-                M = n(452693),
+                H = n(933288),
+                P = n(672738),
+                T = n(452693),
                 j = n(520913),
-                O = n(98440),
-                R = n(134878),
-                B = n(503089),
-                U = n(278065),
-                V = n(491831),
-                L = n(211971),
-                N = n(792618),
-                F = n(144251),
+                B = n(98440),
+                O = n(134878),
+                R = n(503089),
+                V = n(278065),
+                U = n(491831),
+                F = n(211971),
+                L = n(792618),
+                N = n(144251),
                 G = n(80361),
                 Q = n(520489),
                 W = n(791632),
@@ -96,22 +96,22 @@
                     },
                 },
                 ye = ce.Z.register(pe);
-            var _e = n(233040),
+            var he = n(233040),
                 Ee = n(443781),
-                he = n(686689),
+                _e = n(686689),
                 ve = n(988245),
                 be = n(927389),
-                xe = n(731708);
-            const we = ({ focused: e, link: t, onClick: n, template: o }) => {
+                we = n(731708);
+            const xe = ({ focused: e, link: t, onClick: n, template: o }) => {
                     const {
                         aggregateUserActionsV1: { showAllLinkText: l },
                     } = o;
-                    return l && t ? r.createElement(xe.ZP, { id: e ? "notification-show-more-text" : void 0, link: t, onClick: n, style: Ce.showMore }, l) : null;
+                    return l && t ? r.createElement(we.ZP, { id: e ? "notification-show-more-text" : void 0, link: t, onClick: n, style: Ce.showMore }, l) : null;
                 },
                 Ce = s.default.create((e) => ({ showMore: { marginTop: e.spaces.space12 } }));
             var Ze = n(530338),
-                ke = n(451051);
-            const ze = ({ focused: e, text: t }) => r.createElement(he.Z, { alignment: t.alignment, color: "gray700", entities: t.entities, id: e ? "notification-additional-context" : void 0, rtl: t.rtl, text: t.text }),
+                ze = n(451051);
+            const ke = ({ focused: e, text: t }) => r.createElement(_e.Z, { alignment: t.alignment, color: "gray700", entities: t.entities, id: e ? "notification-additional-context" : void 0, rtl: t.rtl, text: t.text }),
                 Ie = ({ focused: e, template: t }) => {
                     const { aggregateUserActionsV1: n } = t,
                         { additionalContext: o, targetObjects: l } = n,
@@ -120,70 +120,70 @@
                     return i
                         ? r.createElement(
                               c.Z,
-                              { style: Ae.target },
+                              { style: De.target },
                               ((t) => {
                                   const n = t.retweeted_status || t,
                                       o = n.article;
-                                  return o ? r.createElement(Ze.Z, { articleEntity: o, hasSensitiveContent: n.possibly_sensitive, mediaVisibilityResults: n.mediaVisibilityResults, style: Ae.article }) : r.createElement(ke.Z, { color: "gray700", displayTextRange: n.display_text_range, entities: n.entities, id: e ? "notification-tweet-text" : void 0, lang: n.lang, text: n.text, withMediaLinks: !0, withQuoteLinks: !0 });
+                                  return o ? r.createElement(Ze.Z, { articleEntity: o, hasSensitiveContent: n.possibly_sensitive, mediaVisibilityResults: n.mediaVisibilityResults, style: De.article }) : r.createElement(ze.Z, { color: "gray700", displayTextRange: n.display_text_range, entities: n.entities, id: e ? "notification-tweet-text" : void 0, lang: n.lang, text: n.text, withMediaLinks: !0, withQuoteLinks: !0 });
                               })(i),
                           )
                         : o && o.contextText
-                          ? r.createElement(c.Z, { style: Ae.target }, r.createElement(ze, { focused: e, text: o.contextText }))
+                          ? r.createElement(c.Z, { style: De.target }, r.createElement(ke, { focused: e, text: o.contextText }))
                           : null;
                 },
-                Ae = s.default.create((e) => ({ target: { marginTop: e.spaces.space12 }, article: { marginTop: 0 } })),
-                De = "notification",
-                Pe = "notification-message-text",
+                De = s.default.create((e) => ({ target: { marginTop: e.spaces.space12 }, article: { marginTop: 0 } })),
+                Ae = "notification",
+                Me = "notification-message-text",
                 Se = "notification-tweet-text",
-                Te = "notification-show-more-text",
-                He = "notification-additional-context",
-                Me = s.default.create((e) => ({ root: { cursor: "pointer", paddingVertical: e.componentDimensions.gutterVertical }, rootRedesign: { paddingHorizontal: e.spaces.space16 }, horizontalPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, reducedHorizontalPadding: { paddingHorizontal: "6px" }, compactContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space8 }, edgeToEdgeSocialContext: { paddingStart: "10px" }, isTweet: { padding: 0 }, unread: { backgroundColor: e.colors.unreadCellBackground }, itemIcon: { alignItems: "flex-end" }, itemIconRedesign: { alignItems: "flex-start" }, edgeToEdgeItemIcon: { alignItems: "center" }, itemContent: { flexGrow: 1 }, curationControl: { position: "absolute", top: e.componentDimensions.gutterVertical, end: e.componentDimensions.gutterHorizontal }, curationControlRedesign: { end: 0 }, curationPadding: { paddingEnd: e.spaces.space20 }, icon: { height: "2em" }, colorDeepGray: { color: e.colors.gray700 }, colorRed: { color: e.colors.magenta500 }, socialContext: { marginBottom: e.spaces.space4 }, twitterIcon: { color: e.colors.brandColor }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorPlum: { color: e.colors.plum500 }, colorPurple: { color: e.colors.purple500 }, userAvatarList: { marginBottom: e.spaces.space12, paddingEnd: e.spaces.space20 }, timelineRowText: { justifyContent: "center" }, avatarDecoration: { width: "1.2em", height: "1.2em", position: "absolute", top: "1em", end: 0 } })),
-                je = Object.freeze([Me.colorPurple, Me.icon]),
-                Oe = Object.freeze([Me.colorBlue, Me.icon]),
-                Re = Object.freeze([Me.colorRed, Me.icon]),
-                Be = Object.freeze([Me.colorDeepGray, Me.icon]),
-                Ue = Object.freeze([Me.colorGreen, Me.icon]),
-                Ve = Object.freeze([Me.colorOrange, Me.icon]),
-                Le = Object.freeze([Me.colorPlum, Me.icon]),
-                Ne = Object.freeze([Me.colorPrimary, Me.icon]),
-                Fe = Object.freeze([Me.twitterIcon, Me.icon]),
+                He = "notification-show-more-text",
+                Pe = "notification-additional-context",
+                Te = s.default.create((e) => ({ root: { cursor: "pointer", paddingVertical: e.componentDimensions.gutterVertical }, rootRedesign: { paddingHorizontal: e.spaces.space16 }, horizontalPadding: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, reducedHorizontalPadding: { paddingHorizontal: "6px" }, compactContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space8 }, edgeToEdgeSocialContext: { paddingStart: "10px" }, isTweet: { padding: 0 }, unread: { backgroundColor: e.colors.unreadCellBackground }, itemIcon: { alignItems: "flex-end" }, itemIconRedesign: { alignItems: "flex-start" }, edgeToEdgeItemIcon: { alignItems: "center" }, itemContent: { flexGrow: 1 }, curationControl: { position: "absolute", top: e.componentDimensions.gutterVertical, end: e.componentDimensions.gutterHorizontal }, curationControlRedesign: { end: 0 }, curationPadding: { paddingEnd: e.spaces.space20 }, icon: { height: "2em" }, colorDeepGray: { color: e.colors.gray700 }, colorRed: { color: e.colors.magenta500 }, socialContext: { marginBottom: e.spaces.space4 }, twitterIcon: { color: e.colors.brandColor }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorPlum: { color: e.colors.plum500 }, colorPurple: { color: e.colors.purple500 }, userAvatarList: { marginBottom: e.spaces.space12, paddingEnd: e.spaces.space20 }, timelineRowText: { justifyContent: "center" }, avatarDecoration: { width: "1.2em", height: "1.2em", position: "absolute", top: "1em", end: 0 } })),
+                je = Object.freeze([Te.colorPurple, Te.icon]),
+                Be = Object.freeze([Te.colorBlue, Te.icon]),
+                Oe = Object.freeze([Te.colorRed, Te.icon]),
+                Re = Object.freeze([Te.colorDeepGray, Te.icon]),
+                Ve = Object.freeze([Te.colorGreen, Te.icon]),
+                Ue = Object.freeze([Te.colorOrange, Te.icon]),
+                Fe = Object.freeze([Te.colorPlum, Te.icon]),
+                Le = Object.freeze([Te.colorPrimary, Te.icon]),
+                Ne = Object.freeze([Te.twitterIcon, Te.icon]),
                 Ge = r.createElement(g.default, { style: je }),
-                Qe = r.createElement(f.default, { style: Oe }),
-                We = r.createElement(p.default, { style: Oe }),
-                Ye = r.createElement(y.default, { style: Oe }),
-                $e = r.createElement(_.default, { style: Oe }),
-                qe = r.createElement(E.default, { style: Re }),
-                Je = r.createElement(h.default, { style: Re }),
-                Ke = r.createElement(v.default, { style: Re }),
-                Xe = r.createElement(b.default, { style: Be }),
-                et = r.createElement(x.default, { style: Oe }),
-                tt = r.createElement(w.default, { style: Re }),
-                nt = r.createElement(C.default, { style: Be }),
-                ot = r.createElement(Z.default, { style: Be }),
-                lt = r.createElement(k.default, { style: Me.icon }),
-                at = r.createElement(z.default, { style: Me.icon }),
-                it = r.createElement(I.default, { style: Oe }),
-                rt = r.createElement(A.default, { style: Oe }),
-                ct = r.createElement(D.default, { style: Be }),
-                st = r.createElement(P.default, { style: Oe }),
-                dt = r.createElement(S.default, { style: Ue }),
-                mt = r.createElement(T.default, { style: Me.icon }),
-                ut = r.createElement(H.default, { style: Me.icon }),
-                gt = r.createElement(_e.Z, { style: Me.icon }),
-                ft = r.createElement(M.default, { style: Ne }),
-                pt = r.createElement(j.default, { style: Fe }),
-                yt = r.createElement(O.default, { style: Ve }),
-                _t = r.createElement(R.default, { style: Ve }),
-                Et = r.createElement(B.default, { style: Me.icon }),
-                ht = r.createElement(U.default, { style: Me.icon }),
-                vt = r.createElement(V.default, { style: Le }),
-                bt = r.createElement(L.default, { style: Re }),
-                xt = r.createElement(N.default, { style: Oe }),
-                wt = r.createElement(F.default, { style: Oe }),
-                Ct = r.createElement(G.default, { style: Ue }),
-                Zt = r.createElement(Q.default, { style: Me.icon }),
-                kt = { alert_bell_icon: Qe, bar_chart_icon: Ge, bell_icon: Qe, birdwatch_icon: We, bird_icon: pt, briefcase_icon: Ye, coin_icon: at, communities_icon: $e, conversation_bubble_icon: yt, heart_icon: Je, heart_plus_icon: Ke, histogram_icon: ct, lightning_bolt_icon: et, list_icon: Xe, live_icon: tt, lock_icon: nt, magic_rec_icon: pt, milestone_icon: lt, news_icon: ot, person_icon: it, play_icon: rt, promoted_icon: st, radar_stroke_icon: Zt, reply_icon: yt, report_icon: qe, recommendation_icon: mt, retweet_icon: dt, safety_icon: ut, security_alert_icon: Et, security_unknown_icon: ht, shield_icon: _t, spaces_icon: gt, stacked_cards_icon: pt, super_follows_icon: vt, super_follows_error_icon: bt, topic_icon: ft, trending_icon: pt, verified_general_icon: xt, verified_notable_icon: wt, money_icon: Ct },
-                zt = (e) => {
+                Qe = r.createElement(f.default, { style: Be }),
+                We = r.createElement(p.default, { style: Be }),
+                Ye = r.createElement(y.default, { style: Be }),
+                $e = r.createElement(h.default, { style: Be }),
+                qe = r.createElement(E.default, { style: Oe }),
+                Je = r.createElement(_.default, { style: Oe }),
+                Ke = r.createElement(v.default, { style: Oe }),
+                Xe = r.createElement(b.default, { style: Re }),
+                et = r.createElement(w.default, { style: Be }),
+                tt = r.createElement(x.default, { style: Oe }),
+                nt = r.createElement(C.default, { style: Re }),
+                ot = r.createElement(Z.default, { style: Re }),
+                lt = r.createElement(z.default, { style: Te.icon }),
+                at = r.createElement(k.default, { style: Te.icon }),
+                it = r.createElement(I.default, { style: Be }),
+                rt = r.createElement(D.default, { style: Be }),
+                ct = r.createElement(A.default, { style: Re }),
+                st = r.createElement(M.default, { style: Be }),
+                dt = r.createElement(S.default, { style: Ve }),
+                mt = r.createElement(H.default, { style: Te.icon }),
+                ut = r.createElement(P.default, { style: Te.icon }),
+                gt = r.createElement(he.Z, { style: Te.icon }),
+                ft = r.createElement(T.default, { style: Le }),
+                pt = r.createElement(j.default, { style: Ne }),
+                yt = r.createElement(B.default, { style: Ue }),
+                ht = r.createElement(O.default, { style: Ue }),
+                Et = r.createElement(R.default, { style: Te.icon }),
+                _t = r.createElement(V.default, { style: Te.icon }),
+                vt = r.createElement(U.default, { style: Fe }),
+                bt = r.createElement(F.default, { style: Oe }),
+                wt = r.createElement(L.default, { style: Be }),
+                xt = r.createElement(N.default, { style: Be }),
+                Ct = r.createElement(G.default, { style: Ve }),
+                Zt = r.createElement(Q.default, { style: Te.icon }),
+                zt = { alert_bell_icon: Qe, bar_chart_icon: Ge, bell_icon: Qe, birdwatch_icon: We, bird_icon: pt, briefcase_icon: Ye, coin_icon: at, communities_icon: $e, conversation_bubble_icon: yt, heart_icon: Je, heart_plus_icon: Ke, histogram_icon: ct, lightning_bolt_icon: et, list_icon: Xe, live_icon: tt, lock_icon: nt, magic_rec_icon: pt, milestone_icon: lt, news_icon: ot, person_icon: it, play_icon: rt, promoted_icon: st, radar_stroke_icon: Zt, reply_icon: yt, report_icon: qe, recommendation_icon: mt, retweet_icon: dt, safety_icon: ut, security_alert_icon: Et, security_unknown_icon: _t, shield_icon: ht, spaces_icon: gt, stacked_cards_icon: pt, super_follows_icon: vt, super_follows_error_icon: bt, topic_icon: ft, trending_icon: pt, verified_general_icon: wt, verified_notable_icon: xt, money_icon: Ct },
+                kt = (e) => {
                     const { featureSwitches: t, history: n } = r.useContext(Ee.rC),
                         [o, l] = r.useState(!1),
                         {
@@ -200,36 +200,36 @@
                     const y = r.useCallback(() => {
                             a.scribeAction("navigate");
                         }, [a]),
-                        _ = r.useCallback(() => {
+                        h = r.useCallback(() => {
                             l(!0);
                         }, [l]),
                         E = r.useCallback(() => {
                             l(!1);
                         }, [l]),
-                        { icon: h, message: v, template: b } = f,
-                        x = i.url && (0, X.s9)(i.url),
-                        w = i.socialContext && i.socialContext.generalContext && i.socialContext.generalContext,
+                        { icon: _, message: v, template: b } = f,
+                        w = i.url && (0, X.s9)(i.url),
+                        x = i.socialContext && i.socialContext.generalContext && i.socialContext.generalContext,
                         C = s ? r.createElement(be.Z, { feedbackItems: s }) : null,
                         Z = (0, W.HD)(n),
-                        k = r.useMemo(() => b.aggregateUserActionsV1.fromUsers.map((e) => e.user).filter(Boolean), [b.aggregateUserActionsV1.fromUsers]),
-                        z = C && !k.length && !w,
-                        I = h && h.id && kt[h.id] ? kt[h.id] : pt,
-                        A = x && ("string" == typeof x ? { pathname: x } : x),
-                        D = (0, K.hC)("rweb_sourcemap_migration"),
-                        P = (0, J.z)(),
-                        S = r.useMemo(() => [Me.root, p ? Me.reducedHorizontalPadding : Me.horizontalPadding, P && Me.rootRedesign, g && Me.unread, Z && Me.compactContainer], [p, P, g, Z]),
-                        T = r.useMemo(() => [Me.itemContent, Me.timelineRowText, z && Me.curationPadding], [z]),
-                        H = Z ? "medium" : void 0;
-                    return r.createElement(d.$6, null, (e) => r.createElement(m.Z, { "aria-labelledby": o ? [Pe, Se, Te, He].join(" ") : void 0, link: A ? e.withAnchorless(A) : void 0, onBlur: E, onClick: y, onFocus: _, role: "article", style: S, testID: De }, w ? r.createElement(ve.Z, { avatarSize: H, contextType: w.contextType, link: w.landingUrl ? (0, X.s9)(w.landingUrl) : void 0, style: Me.socialContext, text: w.text }) : null, r.createElement(u.Z, { avatarCell: I, avatarCellStyle: [Me.itemIcon, p && Me.edgeToEdgeItemIcon, D && Me.itemIconRedesign], avatarSize: H, cellStyle: T, style: p && Me.edgeToEdgeSocialContext }, k.length ? r.createElement(c.Z, { style: Me.userAvatarList }, r.createElement(q, { users: k })) : null, r.createElement(he.Z, { alignment: v.alignment, entities: v.entities, id: o ? Pe : void 0, rtl: v.rtl, text: v.text }), r.createElement(Ie, { focused: o, template: b }), r.createElement(we, { focused: o, link: x, template: b })), C ? r.createElement(c.Z, { style: [Me.curationControl, P && Me.curationControlRedesign] }, C) : null));
+                        z = r.useMemo(() => b.aggregateUserActionsV1.fromUsers.map((e) => e.user).filter(Boolean), [b.aggregateUserActionsV1.fromUsers]),
+                        k = C && !z.length && !x,
+                        I = _ && _.id && zt[_.id] ? zt[_.id] : pt,
+                        D = w && ("string" == typeof w ? { pathname: w } : w),
+                        A = (0, K.hC)("rweb_sourcemap_migration"),
+                        M = (0, J.z)(),
+                        S = r.useMemo(() => [Te.root, p ? Te.reducedHorizontalPadding : Te.horizontalPadding, M && Te.rootRedesign, g && Te.unread, Z && Te.compactContainer], [p, M, g, Z]),
+                        H = r.useMemo(() => [Te.itemContent, Te.timelineRowText, k && Te.curationPadding], [k]),
+                        P = Z ? "medium" : void 0;
+                    return r.createElement(d.$6, null, (e) => r.createElement(m.Z, { "aria-labelledby": o ? [Me, Se, He, Pe].join(" ") : void 0, link: D ? e.withAnchorless(D) : void 0, onBlur: E, onClick: y, onFocus: h, role: "article", style: S, testID: Ae }, x ? r.createElement(ve.Z, { avatarSize: P, contextType: x.contextType, link: x.landingUrl ? (0, X.s9)(x.landingUrl) : void 0, style: Te.socialContext, text: x.text }) : null, r.createElement(u.Z, { avatarCell: I, avatarCellStyle: [Te.itemIcon, p && Te.edgeToEdgeItemIcon, A && Te.itemIconRedesign], avatarSize: P, cellStyle: H, style: p && Te.edgeToEdgeSocialContext }, z.length ? r.createElement(c.Z, { style: Te.userAvatarList }, r.createElement(q, { users: z })) : null, r.createElement(_e.Z, { alignment: v.alignment, entities: v.entities, id: o ? Me : void 0, rtl: v.rtl, text: v.text }), r.createElement(Ie, { focused: o, template: b }), r.createElement(xe, { focused: o, link: w, template: b })), C ? r.createElement(c.Z, { style: [Te.curationControl, M && Te.curationControlRedesign] }, C) : null));
                 },
                 It = (e) => {
                     const t = ((n = e.entry.content.id), (0, te.v9)((e) => ye.selectNotification(e, n), ne.Z));
                     var n;
                     const o = (0, ee.z)(),
                         l = (0, te.v9)((t) => e.module.selectIsUnread(t, e.entry.entryId));
-                    return t ? r.createElement(zt, (0, i.Z)({}, e, { analytics: o, isUnread: l, notification: t })) : null;
+                    return t ? r.createElement(kt, (0, i.Z)({}, e, { analytics: o, isUnread: l, notification: t })) : null;
                 },
-                At = a.iH({ isFocusable: (0, o.Z)(!0), component: It, shouldDisplayBorder: (0, o.Z)(!0), getScribeDataItem: ({ itemMetadata: { clientEventInfo: e } }) => l.Z.getAllSurfaceDetails(e) }).getHandler();
+                Dt = a.iH({ isFocusable: (0, o.Z)(!0), component: It, shouldDisplayBorder: (0, o.Z)(!0), getScribeDataItem: ({ itemMetadata: { clientEventInfo: e } }) => l.Z.getAllSurfaceDetails(e) }).getHandler();
         },
         927389: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -254,7 +254,7 @@
                 a = n(952793);
             const i = () => (0, a.hC)("rweb_sourcemap_migration") && (0, l.ZP)() && !o.ZP.isMobileOS();
         },
-        517890: (e, t, n) => {
+        259055: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var o = n(202784),
                 l = n(890601),
@@ -262,7 +262,33 @@
                 i = n(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M15.002 19v.097c-.766.537-1.585 1.072-2.497 1.603l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.737 1.488.82 3.351.075 5.356-.139-.969-.964-1.716-1.971-1.716h-2.501c-1.104 0-2 .896-2 2v1h-.998c-1.104 0-2 .896-2 2v2c0 1.104.896 2 2 2h1zM19 15v-3h-2v3h-3v2h3v3h2v-3h3v-2h-3z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M22 8.5H12v-3h10v3zm0 10H12v-3h10v3zM6 13c-2.21 0-4 1.791-4 4s1.79 4 4 4 4-1.791 4-4-1.79-4-4-4zm0 5.5c-.83 0-1.5-.672-1.5-1.5s.67-1.5 1.5-1.5 1.5.672 1.5 1.5-.67 1.5-1.5 1.5zM6 3C3.79 3 2 4.791 2 7s1.79 4 4 4 4-1.791 4-4-1.79-4-4-4z" })) }, { writingDirection: t });
+            };
+            r.metadata = { width: 24, height: 24 };
+            const c = r;
+        },
+        672738: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var o = n(202784),
+                l = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const r = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-.138 0-.276.038-.398.114-.044.028-4.515 2.8-9.21 3.494-.362.053-.632.358-.642.723-.003.118-.188 11.742 9.938 16.353.1.045.206.067.312.067V1.75z", fill: "#1DA1F2" }), o.createElement("path", { d: "M12 1.75c.138 0 .276.038.398.114.044.028 4.515 2.8 9.21 3.494.362.053.632.358.64.723.004.118.19 11.742-9.937 16.353-.098.045-.204.067-.31.067V1.75z", fill: "#78C6EE" })) }, { writingDirection: t });
+            };
+            r.metadata = { width: 24, height: 24 };
+            const c = r;
+        },
+        503089: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var o = n(202784),
+                l = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const r = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23.098 17.97l-8.62-14.93c-.54-.94-1.51-1.5-2.6-1.5h-.02c-1.09 0-2.06.58-2.6 1.53L.888 18c-.53.94-.52 2.06.03 2.99.54.92 1.49 1.47 2.55 1.47h17.07c1.06 0 2.02-.55 2.56-1.48.54-.94.54-2.07 0-3.01z", fill: "#F4212E" }), o.createElement("path", { d: "M11.998 18.89c-.76 0-1.38-.62-1.38-1.38s.62-1.37 1.38-1.37 1.37.61 1.37 1.37-.61 1.38-1.37 1.38zm1.72-9.03l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z", fill: "#FFF" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const c = r;
@@ -282,4 +308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NotificationHandler.76d5c48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.NotificationHandler.967f01ba.js.map

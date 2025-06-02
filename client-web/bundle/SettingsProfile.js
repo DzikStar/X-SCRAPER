@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfile", "loader.MediaPickerWithPreview", "icons/IconCameraPlusStroke-js", "icons/IconChevronRight-js"],
+    ["bundle.SettingsProfile", "loader.MediaPickerWithPreview"],
     {
         850496: (e, t, i) => {
             i.d(t, { Z: () => S });
@@ -18,8 +18,8 @@
                 _ = i(219229),
                 m = i(373554),
                 f = i(304059),
-                g = i(751170);
-            const E = h().b87ca51a,
+                E = i(751170);
+            const g = h().b87ca51a,
                 b = h().eebff22c,
                 C = a.createElement(p.default, null);
             class S extends a.Component {
@@ -31,7 +31,7 @@
                 }
                 _renderMediaRemove() {
                     const { onRemove: e } = this.props;
-                    return a.createElement(s.ZP, { "aria-label": E, hoverLabel: { label: E }, icon: a.createElement(u.default, null), onPress: e, size: "large", style: y.buttonLeftPadding, type: "onMediaDominantColorFilled" });
+                    return a.createElement(s.ZP, { "aria-label": g, hoverLabel: { label: g }, icon: a.createElement(u.default, null), onPress: e, size: "large", style: y.buttonLeftPadding, type: "onMediaDominantColorFilled" });
                 }
                 _renderMediaCrop() {
                     const { onCrop: e } = this.props;
@@ -46,7 +46,7 @@
                     return n ? a.createElement(l.Z, { ratio: e }, a.createElement(f.Z, { borderRadius: t, enableGif: !1, mediaItem: n, style: y.mediaPreview, withCloseButton: !1 })) : i;
                 }
             }
-            S.defaultProps = { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: g.A.NONE, icon: C };
+            S.defaultProps = { acceptGifs: !1, acceptVideo: !1, aspectRatio: 1, borderRadius: E.A.NONE, icon: C };
             const P = d.default.create((e) => ({ infinite: { borderRadius: e.borderRadii.infinite }, medium: { borderRadius: e.borderRadii.small }, none: { borderRadius: e.borderRadii.none } })),
                 y = d.default.create((e) => ({ mediaPreview: { height: "100%" }, overlaidContent: { alignItems: "center", height: "100%", justifyContent: "center", opacity: 0.75, position: "absolute", top: 0, width: "100%" }, buttonsContainer: { alignItems: "center", flexDirection: "row", justifyContent: "center" }, buttonLeftPadding: { marginStart: e.spaces.space20 }, mask: { backgroundColor: e.colors.translucentBlack30, height: "100%", position: "absolute", top: 0, width: "100%" }, container: { justifyContent: "center", overflow: "hidden" }, dragDropContainer: { borderWidth: e.borderWidths.medium, borderColor: e.colors.transparent, borderStyle: "solid" }, mediaPicker: { margin: 0 }, description: { marginTop: e.spaces.space16 } }));
         },
@@ -90,7 +90,7 @@
             const u = a.memo(p);
         },
         330815: (e, t, i) => {
-            i.d(t, { Z: () => v });
+            i.d(t, { Z: () => B });
             var a = i(202784),
                 n = i(392237),
                 r = i(154003),
@@ -108,8 +108,8 @@
                     .propsFromActions(() => ({ processMedia: p.C4, updateMediaUpload: p._J }))
                     .withAnalytics({ page: "media", section: "edit" }),
                 f = "applyButton",
-                g = s().gd80afba,
-                E = s().a753a870;
+                E = s().gd80afba,
+                g = s().a753a870;
             class b extends a.Component {
                 constructor(e) {
                     super(e),
@@ -119,7 +119,7 @@
                         }),
                         (this._renderAppBarRightControl = () => {
                             const { isProcessing: e } = this.state;
-                            return a.createElement(r.ZP, { disabled: e, onPress: this._handleApplyButtonClick, size: "small", testID: f, type: "primaryFilled" }, E);
+                            return a.createElement(r.ZP, { disabled: e, onPress: this._handleApplyButtonClick, size: "small", testID: f, type: "primaryFilled" }, g);
                         }),
                         (this._handleBackClick = () => {
                             const { analytics: e, onCancel: t } = this.props;
@@ -150,14 +150,14 @@
                 render() {
                     const { defaultAspectRatio: e, history: t, title: i, withAspectRatioOptions: n, withZoomControl: r } = this.props,
                         o = this._getMedia();
-                    return a.createElement(d.Z, { backButtonType: "back", containerStyle: C.root, documentTitle: i || g, history: t, onBackClick: this._handleBackClick, rightControl: this._renderAppBarRightControl(), title: i || g }, a.createElement(c.Z, { defaultAspectRatio: e, media: o, ref: this._cropper, withAspectRatioOptions: n, withZoomControl: r }));
+                    return a.createElement(d.Z, { backButtonType: "back", containerStyle: C.root, documentTitle: i || E, history: t, onBackClick: this._handleBackClick, rightControl: this._renderAppBarRightControl(), title: i || E }, a.createElement(c.Z, { defaultAspectRatio: e, media: o, ref: this._cropper, withAspectRatioOptions: n, withZoomControl: r }));
                 }
             }
             const C = n.default.create((e) => ({ root: { flexShrink: 1, height: 650 } })),
                 S = m(b);
             var P = i(757700);
             const y = n.default.create((e) => ({ modal: { width: 600, maxWidth: "90vw" } })),
-                v = (e) => a.createElement(P.ZP, { clickMaskToClose: !1, modalSize: "fitChildren", style: y.modal }, a.createElement(S, e));
+                B = (e) => a.createElement(P.ZP, { clickMaskToClose: !1, modalSize: "fitChildren", style: y.modal }, a.createElement(S, e));
         },
         199127: (e, t, i) => {
             i.r(t), i.d(t, { MediaPickerWithPreview: () => d, default: () => c });
@@ -220,7 +220,7 @@
             i.d(t, { Lr: () => r, _L: () => a, ti: () => o, yL: () => n });
         },
         508765: (e, t, i) => {
-            i.d(t, { C6: () => b, GJ: () => V, HR: () => A, Il: () => I, NJ: () => R, OG: () => O, T_: () => k, Xw: () => B, Ys: () => U, _D: () => y, b4: () => x, ck: () => Z, g3: () => D, o8: () => F, u$: () => S, vW: () => C });
+            i.d(t, { C6: () => b, GJ: () => V, HR: () => M, Il: () => I, NJ: () => R, OG: () => O, T_: () => k, Xw: () => v, Ys: () => U, _D: () => y, b4: () => x, ck: () => N, g3: () => T, o8: () => F, u$: () => S, vW: () => C });
             var a = i(226395),
                 n = i(499627),
                 r = i(917799),
@@ -235,42 +235,42 @@
                 _ = r.dg(d, "UPLOAD_MEDIA"),
                 m = Object.freeze({ REQUEST: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/ENABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
                 f = Object.freeze({ REQUEST: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/DISABLE_VERIFIED_PHONE_LABEL_FAILURE" }),
-                g = Object.freeze({ REQUEST: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_FAILURE" }),
-                E = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null };
+                E = Object.freeze({ REQUEST: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_REQUEST", SUCCESS: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_SUCCESS", FAILURE: "rweb/settings/profile/FETCH_VERIFIED_PHONE_LABEL_FAILURE" }),
+                g = { avatarMediaId: null, bannerMediaId: null, isUploading: !1, profileSettings: null };
             const b = (e) => e[l].avatarMediaId,
                 C = (e) => e[l].bannerMediaId,
                 S = (e) => e[l].profileSettings,
                 P = "rweb/settings/profile/ADD_AVATAR_MEDIA",
                 y = (e) => ({ meta: { mediaId: e }, type: P }),
-                v = "rweb/settings/profile/REMOVE_AVATAR_MEDIA",
-                B = (e) => ({ meta: { mediaId: e }, type: v }),
+                B = "rweb/settings/profile/REMOVE_AVATAR_MEDIA",
+                v = (e) => ({ meta: { mediaId: e }, type: B }),
                 w = "rweb/settings/profile/ADD_BANNER_MEDIA",
                 R = (e) => ({ meta: { mediaId: e }, type: w }),
-                M = "rweb/settings/profile/REMOVE_BANNER_MEDIA",
-                A = (e) => ({ meta: { mediaId: e }, type: M }),
+                A = "rweb/settings/profile/REMOVE_BANNER_MEDIA",
+                M = (e) => ({ meta: { mediaId: e }, type: A }),
                 I =
                     () =>
                     (e, t, { api: i }) =>
-                        r._O(e, { request: i.withEndpoint(a.Z).fetchUserProfilePhoneState, params: {} })({ actionTypes: g, context: "ACTION_FETCH_VERIFIED_PHONE_LABEL" }, (e) => {
+                        r._O(e, { request: i.withEndpoint(a.Z).fetchUserProfilePhoneState, params: {} })({ actionTypes: E, context: "ACTION_FETCH_VERIFIED_PHONE_LABEL" }, (e) => {
                             if (e) return e;
                         }),
                 L = "rweb/settings/profile/PERSIST_PROFILE_SETTINGS",
-                D = (e) => ({ meta: { profileSettings: e }, type: L }),
-                T = "rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS",
-                U = () => ({ type: T }),
+                T = (e) => ({ meta: { profileSettings: e }, type: L }),
+                D = "rweb/settings/profile/RESET_PERSISTED_PROFILE_SETTINGS",
+                U = () => ({ type: D }),
                 F =
                     (e) =>
                     (t, i, { api: n }) =>
                         r._O(t, { params: e, request: n.withEndpoint(a.Z).removeProfileBanner })({ actionTypes: c, context: "ACTION_REMOVE_USER_BANNER" }, (e) => {
                             if (e) return [(0, o.dP)({ users: { [e.id_str]: { ...e, profile_banner_url: null } } })];
                         }),
-                Z =
+                N =
                     (e) =>
                     (t, i, { api: n }) =>
                         r._O(t, { params: e, request: n.withEndpoint(a.Z).updateProfile })({ actionTypes: h, context: "ACTION_UPDATE_PROFILE_SETTINGS" }, (e) => {
                             if (e && e.entities) return [(0, o.dP)(e.entities)];
                         }),
-                N =
+                Z =
                     (e, t, i) =>
                     (a) =>
                     (n, l, { api: d }) => {
@@ -286,8 +286,8 @@
                             (e) => (n({ type: _.FAILURE }), Promise.reject(e)),
                         );
                     },
-                x = N(p, "ACTION_UPDATE_USER_AVATAR", (e) => e.withEndpoint(a.Z).updateProfileAvatar),
-                k = N(u, "ACTION_UPDATE_USER_BANNER", (e) => e.withEndpoint(a.Z).updateProfileBanner),
+                x = Z(p, "ACTION_UPDATE_USER_AVATAR", (e) => e.withEndpoint(a.Z).updateProfileAvatar),
+                k = Z(u, "ACTION_UPDATE_USER_BANNER", (e) => e.withEndpoint(a.Z).updateProfileBanner),
                 O =
                     () =>
                     (e, t, { api: i }) =>
@@ -297,22 +297,22 @@
                     (e, t, { api: i }) =>
                         r._O(e, { request: i.withEndpoint(a.Z).disableVerifiedPhoneLabel, params: {} })({ actionTypes: f, context: "ACTION_DISABLE_VERIFIED_PHONE_LABEL" });
             n.Z.register({
-                [l]: function (e = E, t) {
+                [l]: function (e = g, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case P:
                             return { ...e, avatarMediaId: t.meta.mediaId };
-                        case v:
+                        case B:
                             return { ...e, avatarMediaId: null };
                         case w:
                             return { ...e, bannerMediaId: t.meta.mediaId };
-                        case M:
+                        case A:
                             return { ...e, bannerMediaId: null };
-                        case g.SUCCESS:
+                        case E.SUCCESS:
                             return { ...e, hasVerifiedPhone: t?.payload?.user_phone_state?.has_verified_phone || !1, labelDisplayOptIn: t?.payload?.user_phone_state?.label_display_opt_in || !1 };
                         case L:
                             return { ...e, profileSettings: t.meta.profileSettings };
-                        case T:
+                        case D:
                             return { ...e, profileSettings: null };
                         case _.REQUEST:
                             return { ...e, isUploading: !0 };
@@ -342,26 +342,26 @@
                 _ = i(190286),
                 m = i(720283),
                 f = i(310452),
-                g = i(731708),
-                E = i(779610),
+                E = i(731708),
+                g = i(779610),
                 b = i(111677),
                 C = i.n(b),
                 S = i(908478),
                 P = i(323265),
                 y = i(88656),
-                v = i(980407),
-                B = i(751170),
+                B = i(980407),
+                v = i(751170),
                 w = i(160664),
                 R = i(443781),
-                M = i(330815),
-                A = i(199127),
+                A = i(330815),
+                M = i(199127),
                 I = i(96206),
                 L = i(747576),
-                D = i(716233),
-                T = i(166677),
+                T = i(716233),
+                D = i(166677),
                 U = i(656520),
                 F = i(620482),
-                Z = {
+                N = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -389,13 +389,13 @@
                     operation: { argumentDefinitions: [], kind: "Operation", name: "BlueVerifiedProfileEditCalloutQuery", selections: n },
                     params: { id: "myAwUDICwB5gFdJhNB7xsg", metadata: {}, name: "BlueVerifiedProfileEditCalloutQuery", operationKind: "query", text: null },
                 };
-            Z.hash = "451e17c2bc1e752adf2af7cb2591f649";
-            const N = Z;
+            N.hash = "451e17c2bc1e752adf2af7cb2591f649";
+            const Z = N;
             i(585488);
             var x = i(712696),
                 k = i.n(x),
                 O = i(40610);
-            const V = N,
+            const V = Z,
                 H = ({ onCancel: e, onConfirm: t, showBadgeRemovalWarning: i = !1 }) => {
                     const { blue_profile_edit_warning_message_config: a } = k()(V, {}),
                         { label: n, link: o, text: s } = a?.callout || {},
@@ -431,8 +431,8 @@
                     const i = r.useCallback(() => {
                             e.scribe({ ...(0, X.Rz)() });
                         }, [e]),
-                        a = r.useMemo(() => r.createElement(g.ZP, { size: "headline1" }, t ? ae : ne), [t]);
-                    return r.createElement(E.Z, { label: a, link: "/settings/bio", onPress: i, testID: ie.Z.editExtendedProfile });
+                        a = r.useMemo(() => r.createElement(E.ZP, { size: "headline1" }, t ? ae : ne), [t]);
+                    return r.createElement(g.Z, { label: a, link: "/settings/bio", onPress: i, testID: ie.Z.editExtendedProfile });
                 },
                 oe = (e) => {
                     const { user_result_by_screen_name: t } = (0, te.p)(ee.NG, { screenName: e.screenName }),
@@ -443,7 +443,7 @@
             var se = i(124964),
                 le = i(523561),
                 de = i(195560);
-            const ce = (0, le.Z)({ loader: () => Promise.all([i.e("icons.10"), i.e("icons.19"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
+            const ce = (0, le.Z)({ loader: () => Promise.all([i.e("icons.21"), i.e("icons.24"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
                 he = C().c119dee8,
                 pe = C().cfd2f35e,
                 ue = C().bbf0afc8,
@@ -473,27 +473,27 @@
                     const { isEditing: e, showConfirmationModal: t } = this.state,
                         { birthdate: i, errors: a, onChange: n, showBirthdateRemoveButton: s } = this.props,
                         l = i.month && i.day && i.year;
-                    return e ? r.createElement(o.Z, { style: fe.root }, r.createElement(o.Z, { style: fe.container }, r.createElement(g.ZP, { weight: "bold" }, he), r.createElement(se.Z, null), r.createElement(g.ZP, { color: "link", onPress: this._handleCancelEditPress, role: "button", withInteractiveStyling: !0 }, pe)), r.createElement(ce, { birthdate: i, errors: a, onChange: n, onRemoveBirthdate: this._handleRemoveBirthdate, showBirthdateRemoveButton: s })) : r.createElement(r.Fragment, null, r.createElement(E.Z, { description: l ? r.createElement(w.Z, { birthdate: i }) : ue, label: he, onPress: this._handleEditPress, role: "button" }), t ? r.createElement(_.Z, { confirmButtonLabel: _e.confirmButtonLabel, headline: _e.headline, onCancel: this._handleModalCancel, onConfirm: this._handleModalConfirmed, text: _e.text, withForwardFocusOnConfirm: !0 }) : null);
+                    return e ? r.createElement(o.Z, { style: fe.root }, r.createElement(o.Z, { style: fe.container }, r.createElement(E.ZP, { weight: "bold" }, he), r.createElement(se.Z, null), r.createElement(E.ZP, { color: "link", onPress: this._handleCancelEditPress, role: "button", withInteractiveStyling: !0 }, pe)), r.createElement(ce, { birthdate: i, errors: a, onChange: n, onRemoveBirthdate: this._handleRemoveBirthdate, showBirthdateRemoveButton: s })) : r.createElement(r.Fragment, null, r.createElement(g.Z, { description: l ? r.createElement(w.Z, { birthdate: i }) : ue, label: he, onPress: this._handleEditPress, role: "button" }), t ? r.createElement(_.Z, { confirmButtonLabel: _e.confirmButtonLabel, headline: _e.headline, onCancel: this._handleModalCancel, onConfirm: this._handleModalConfirmed, text: _e.text, withForwardFocusOnConfirm: !0 }) : null);
                 }
             }
             const fe = d.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, container: { flexDirection: "row" }, containerItem: { marginStart: e.spaces.space4 } }));
-            var ge = i(954110),
-                Ee = i(688715);
+            var Ee = i(954110),
+                ge = i(688715);
             const be = C().e9603d88,
                 Ce = C().ada99498;
             const Se = function (e) {
                 const { onChange: t, verifiedPhoneStatus: i } = e;
-                return r.createElement(ge.Z, { checked: i, helpText: Ce, label: be, learnMoreLink: (0, Ee.ju)("https://help.x.com/rules-and-policies/twitter-india"), name: "verified_phone_status_toggle", onChange: t, testID: "Verified_Phone_Status", type: "switch" });
+                return r.createElement(Ee.Z, { checked: i, helpText: Ce, label: be, learnMoreLink: (0, ge.ju)("https://help.x.com/rules-and-policies/twitter-india"), name: "verified_phone_status_toggle", onChange: t, testID: "Verified_Phone_Status", type: "switch" });
             };
             var Pe = i(161821);
             const ye = Object.freeze({ SUPERSCRIPT_AND_SUBSCRIPT: "superscript_and_subscript", CURRENCY: "currency", LETTER_LIKE: "letter_like", NUMBER_FORMS: "number_forms", ARROWS: "arrows", MATHEMATICAL: "mathematical", GENERAL_PUNCTUATION: "general_punctuation", ENCLOSED_ALPHANUMERICS: "enclosed_alphanumerics", BOX: "box", GEOMETRIC: "geometric", SPACING_MODIFIER: "spacing_modifier", PUNCTUATION: "punctuation", MISC: "miscellaneous" }),
-                ve = (0, Pe.Z)(ye),
-                Be = { [ye.SUPERSCRIPT_AND_SUBSCRIPT]: { base: "[⁰-ⁱ]|[⁴-₎]|[ₐ-ₜ]", specialChars: {} }, [ye.CURRENCY]: { base: "[₠-₿]", specialChars: { $: "[$]" } }, [ye.LETTER_LIKE]: { base: "[℀-⅏]", specialChars: {} }, [ye.NUMBER_FORMS]: { base: "[⅐-↋]", specialChars: {} }, [ye.ARROWS]: { base: "[←-⇿]", specialChars: {} }, [ye.MATHEMATICAL]: { base: "[∀-⋿]|[⊓-⊕]|[⨀-⫿]|[⟀-⟯]|[⦀-⧿]", specialChars: {} }, [ye.GENERAL_PUNCTUATION]: { base: "[ -⁯]|[⸀-⹿]", specialChars: {} }, [ye.ENCLOSED_ALPHANUMERICS]: { base: "[①-⓿]", specialChars: {} }, [ye.BOX]: { base: "[─-╿]|[▀-▟]", specialChars: {} }, [ye.GEOMETRIC]: { base: "[■-▩]|[▬-▵]|[▷-▿]|[◁-◺]|[◿]", specialChars: {} }, [ye.SPACING_MODIFIER]: { base: "[ʰ-˿]", specialChars: {} }, [ye.PUNCTUATION]: { base: "[ -⁯]", specialChars: {} }, [ye.MISC]: { base: "[⌀-⌙]|[⌜-⌧]|[〈-⏎]|[⏐-⏨]|[⏴-⏷]|[⏻-⏿]|[★-☐]|[☒-☓]|[☖-☗]|[☙-☜]|[☞-☟]|[☡]|[☤-☥]|[☧-☩]|[☫-☭]|[☰-☷]|[☻-☿]|[♁]|[♃-♇]|[♔-♞]|[♡-♢]|[♤]|[♧]|[♩-♺]|[♼-♽]|[⚀-⚑]|[⚘]|[⚚]|[⚝-⚟]|[⚢-⚦]|[⚨-⚩]|[⚬-⚯]|[⚲-⚼]|[⚿-⛃]|[⛆-⛇]|[⛉-⛍]|[⛐]|[⛒]|[⛕-⛨]|[⛫-⛯]|[⛶]|[⛻-⛼]|[⛾-⛿]", specialChars: {} } },
-                we = ({ text: e, keys: t = ve, includeSpecialChars: i = !0 }) => {
+                Be = (0, Pe.Z)(ye),
+                ve = { [ye.SUPERSCRIPT_AND_SUBSCRIPT]: { base: "[⁰-ⁱ]|[⁴-₎]|[ₐ-ₜ]", specialChars: {} }, [ye.CURRENCY]: { base: "[₠-₿]", specialChars: { $: "[$]" } }, [ye.LETTER_LIKE]: { base: "[℀-⅏]", specialChars: {} }, [ye.NUMBER_FORMS]: { base: "[⅐-↋]", specialChars: {} }, [ye.ARROWS]: { base: "[←-⇿]", specialChars: {} }, [ye.MATHEMATICAL]: { base: "[∀-⋿]|[⊓-⊕]|[⨀-⫿]|[⟀-⟯]|[⦀-⧿]", specialChars: {} }, [ye.GENERAL_PUNCTUATION]: { base: "[ -⁯]|[⸀-⹿]", specialChars: {} }, [ye.ENCLOSED_ALPHANUMERICS]: { base: "[①-⓿]", specialChars: {} }, [ye.BOX]: { base: "[─-╿]|[▀-▟]", specialChars: {} }, [ye.GEOMETRIC]: { base: "[■-▩]|[▬-▵]|[▷-▿]|[◁-◺]|[◿]", specialChars: {} }, [ye.SPACING_MODIFIER]: { base: "[ʰ-˿]", specialChars: {} }, [ye.PUNCTUATION]: { base: "[ -⁯]", specialChars: {} }, [ye.MISC]: { base: "[⌀-⌙]|[⌜-⌧]|[〈-⏎]|[⏐-⏨]|[⏴-⏷]|[⏻-⏿]|[★-☐]|[☒-☓]|[☖-☗]|[☙-☜]|[☞-☟]|[☡]|[☤-☥]|[☧-☩]|[☫-☭]|[☰-☷]|[☻-☿]|[♁]|[♃-♇]|[♔-♞]|[♡-♢]|[♤]|[♧]|[♩-♺]|[♼-♽]|[⚀-⚑]|[⚘]|[⚚]|[⚝-⚟]|[⚢-⚦]|[⚨-⚩]|[⚬-⚯]|[⚲-⚼]|[⚿-⛃]|[⛆-⛇]|[⛉-⛍]|[⛐]|[⛒]|[⛕-⛨]|[⛫-⛯]|[⛶]|[⛻-⛼]|[⛾-⛿]", specialChars: {} } },
+                we = ({ text: e, keys: t = Be, includeSpecialChars: i = !0 }) => {
                     const a = t
                         .map((e) =>
                             ((e, t = !0) => {
-                                const i = Be[e];
+                                const i = ve[e];
                                 let a = `${i.base}`;
                                 if (t) {
                                     const { specialChars: e } = i;
@@ -506,16 +506,16 @@
                     return new RegExp(a, "g").test(e);
                 },
                 Re = C().g7088266,
-                Me = C().d4e220b4,
-                Ae = C().d9d293b8,
+                Ae = C().d4e220b4,
+                Me = C().d9d293b8,
                 Ie = C().a990900c,
                 Le = C().jaaa8984,
-                De = C().i2209530,
-                Te = C().cb469ff6,
+                Te = C().i2209530,
+                De = C().cb469ff6,
                 Ue = C().e784846c,
                 Fe = C().g511f468,
-                Ze = C().ec3a116e,
-                Ne = C().j94599ec,
+                Ne = C().ec3a116e,
+                Ze = C().j94599ec,
                 xe = C().df31d76a,
                 ke = { confirmButtonLabel: C().g9677c6e, headline: C().c01a0e1a },
                 Oe = { switchToProfessionalLabel: C().df2c469a, editProfessionalProfileLabel: C().e1f76978 },
@@ -652,9 +652,9 @@
                         }),
                         (this._handleMediaUpdateFailureFactory = (e, t) => (i) => {
                             const { addToast: a, createLocalApiErrorHandler: n, removeMediaUpload: r } = this.props,
-                                o = (0, T.$r)(i);
+                                o = (0, D.$r)(i);
                             if (o) {
-                                const e = (0, T.ZP)(o, t);
+                                const e = (0, D.ZP)(o, t);
                                 e && a(e);
                             } else i instanceof y.Z && i.errors && "Denied by user validation." === i.errors[0]?.message && "ACTION_UPDATE_USER_AVATAR" === i.context?.action && this._isBlueVerifiedEditProfileErrorMessageEnabled ? a({ text: Ue }) : n({ showToast: !0 })(i);
                             r(e.id);
@@ -727,7 +727,7 @@
                         {
                             displayNameMaxLength: n,
                             errors: m,
-                            profileSettings: { description: f, location: g, name: E, shouldDeleteBanner: b, url: C },
+                            profileSettings: { description: f, location: E, name: g, shouldDeleteBanner: b, url: C },
                             showAvatarCropper: S,
                             showBadgeRemovalWarning: P,
                             showBannerCropper: y,
@@ -736,15 +736,15 @@
                         R = r.createElement(s.default, { size: "custom", uri: e.profile_image_url_https }),
                         I = i || (e.profile_banner_url && !b),
                         L = r.createElement(l.Z, { ratio: d.default.theme.aspectRatios.profileBanner }, I ? r.createElement(c.Z, { source: { uri: e.profile_banner_url }, style: je.banner }) : null),
-                        T = void 0 !== E && (0, h.Z)(E),
-                        U = !!((t && !t.uploader) || (i && !i.uploader)) || !!Object.keys(m).length || T,
-                        F = r.createElement(p.ZP, { disabled: U, onPress: this._handleSubmit, size: "small", testID: ie.Z.save, type: "primaryFilled" }, De);
+                        D = void 0 !== g && (0, h.Z)(g),
+                        U = !!((t && !t.uploader) || (i && !i.uploader)) || !!Object.keys(m).length || D,
+                        F = r.createElement(p.ZP, { disabled: U, onPress: this._handleSubmit, size: "small", testID: ie.Z.save, type: "primaryFilled" }, Te);
                     return r.createElement(
-                        v.Z,
+                        B.Z,
                         { history: a, onBackClick: this._handleCancel, rightControl: F, title: Re },
-                        r.createElement(o.Z, { style: je.container }, r.createElement(A.default, { "aria-label": xe, aspectRatio: 3, currentContent: L, location: D.vC.ProfileBanner, mediaItem: i, onChange: this._handleBannerMediaChange, onFailure: this._handleBannerMediaFailure, onRemove: I ? this._handleBannerMediaRemove : void 0, rootStyle: je.bannerContainer }), r.createElement(A.default, { "aria-label": Ne, borderRadius: B.A.INFINITE, currentContent: R, location: D.vC.Avatar, mediaItem: t, onChange: this._handleAvatarMediaChange, onFailure: this._handleAvatarMediaFailure, rootStyle: je.avatarContainer }), r.createElement(u.Z, { autoComplete: "off", defaultValue: E, errorText: Te, helperText: this._renderInputHelperText(), invalid: T, label: Me, maxLength: n, name: "displayName", onChange: this._handleChangeDisplayName }), r.createElement(H, { onCancel: this._handleCancelBadgeRemovalWarning, onConfirm: this._handleBlueVerifiedSaveConfirmation, showBadgeRemovalWarning: P }), r.createElement(u.Z, { defaultValue: f, label: Ie, maxLength: 160, multiline: !0, name: "description", numberOfLines: 3, onChange: this._handleChangeDescription }), r.createElement(u.Z, { defaultValue: g, label: Le, maxLength: 30, name: "location", onChange: this._handleChangeLocation }), r.createElement(u.Z, { defaultValue: C || "", label: Ae, maxLength: 100, name: "url", onChange: this._handleChangeURL }), this._renderProfileBirthdate(), this._renderBirthdateConfirmationModal(), this._isExtendedProfileEnabled ? this._renderEditExtendedProfilesButton() : null, this._renderProfessionalProfilesButton(), this._isVerifiedPhoneLabelEnabled && this.state.profileSettings.user_phone_state?.has_verified_phone ? this._renderEditPhoneStatus() : null),
-                        S ? r.createElement(M.Z, { circle: !0, defaultAspectRatio: 1, media: t, onCancel: this._handleAvatarCropCancel, onDone: this._handleAvatarCropDone }) : null,
-                        y ? r.createElement(M.Z, { defaultAspectRatio: 3, media: i, onCancel: this._handleBannerCropCancel, onDone: this._handleBannerCropDone }) : null,
+                        r.createElement(o.Z, { style: je.container }, r.createElement(M.default, { "aria-label": xe, aspectRatio: 3, currentContent: L, location: T.vC.ProfileBanner, mediaItem: i, onChange: this._handleBannerMediaChange, onFailure: this._handleBannerMediaFailure, onRemove: I ? this._handleBannerMediaRemove : void 0, rootStyle: je.bannerContainer }), r.createElement(M.default, { "aria-label": Ze, borderRadius: v.A.INFINITE, currentContent: R, location: T.vC.Avatar, mediaItem: t, onChange: this._handleAvatarMediaChange, onFailure: this._handleAvatarMediaFailure, rootStyle: je.avatarContainer }), r.createElement(u.Z, { autoComplete: "off", defaultValue: g, errorText: De, helperText: this._renderInputHelperText(), invalid: D, label: Ae, maxLength: n, name: "displayName", onChange: this._handleChangeDisplayName }), r.createElement(H, { onCancel: this._handleCancelBadgeRemovalWarning, onConfirm: this._handleBlueVerifiedSaveConfirmation, showBadgeRemovalWarning: P }), r.createElement(u.Z, { defaultValue: f, label: Ie, maxLength: 160, multiline: !0, name: "description", numberOfLines: 3, onChange: this._handleChangeDescription }), r.createElement(u.Z, { defaultValue: E, label: Le, maxLength: 30, name: "location", onChange: this._handleChangeLocation }), r.createElement(u.Z, { defaultValue: C || "", label: Me, maxLength: 100, name: "url", onChange: this._handleChangeURL }), this._renderProfileBirthdate(), this._renderBirthdateConfirmationModal(), this._isExtendedProfileEnabled ? this._renderEditExtendedProfilesButton() : null, this._renderProfessionalProfilesButton(), this._isVerifiedPhoneLabelEnabled && this.state.profileSettings.user_phone_state?.has_verified_phone ? this._renderEditPhoneStatus() : null),
+                        S ? r.createElement(A.Z, { circle: !0, defaultAspectRatio: 1, media: t, onCancel: this._handleAvatarCropCancel, onDone: this._handleAvatarCropDone }) : null,
+                        y ? r.createElement(A.Z, { defaultAspectRatio: 3, media: i, onCancel: this._handleBannerCropCancel, onDone: this._handleBannerCropDone }) : null,
                         w ? r.createElement(_.Z, { confirmButtonLabel: Ve.confirmLabel, confirmButtonType: "destructiveFilled", headline: Ve.headline, onCancel: this._handleCancelDiscardSettings, onConfirm: this._handleConfirmDiscardSettings, text: Ve.text }) : null,
                         this.props.__dangerousTestProp && this.state.profileSettings.user_phone_state ? r.createElement("div", { "data-testid": "didFetchPhoneState", style: { display: "none" } }) : null,
                     );
@@ -784,13 +784,13 @@
                     return e?.professional ? this._renderEditProfessionalProfileButton() : this._renderSwitchToProfessionalButton();
                 }
                 _renderSwitchToProfessionalButton() {
-                    const e = r.createElement(g.ZP, { size: "headline1" }, Oe.switchToProfessionalLabel),
+                    const e = r.createElement(E.ZP, { size: "headline1" }, Oe.switchToProfessionalLabel),
                         t = "editprofile" + (this._isProfessionalHomeEnabled ? "-professionalHomeEnabled" : "");
-                    return r.createElement(E.Z, { label: e, link: { pathname: "/i/flow/convert_to_professional", state: { input: { requested_variant: t } }, method: "push" }, onPress: this._handleProfessionalConversionClick, testID: ie.Z.switchToProfessional });
+                    return r.createElement(g.Z, { label: e, link: { pathname: "/i/flow/convert_to_professional", state: { input: { requested_variant: t } }, method: "push" }, onPress: this._handleProfessionalConversionClick, testID: ie.Z.switchToProfessional });
                 }
                 _renderEditProfessionalProfileButton() {
-                    const e = r.createElement(g.ZP, { size: "headline1" }, Oe.editProfessionalProfileLabel);
-                    return r.createElement(E.Z, { label: e, link: "/settings/professional_profile", onPress: this._handleProfessionalSettingsClick, testID: ie.Z.editProfessionalProfile });
+                    const e = r.createElement(E.ZP, { size: "headline1" }, Oe.editProfessionalProfileLabel);
+                    return r.createElement(g.Z, { label: e, link: "/settings/professional_profile", onPress: this._handleProfessionalSettingsClick, testID: ie.Z.editProfessionalProfile });
                 }
                 _renderEditExtendedProfilesButton() {
                     const { analytics: e, viewerUser: t } = this.props;
@@ -812,7 +812,7 @@
                               () => {
                                   e.scribe({ component: "banner", action: "edit" }), o(i.id);
                               },
-                              this._handleMediaUpdateFailureFactory(i, Ze),
+                              this._handleMediaUpdateFailureFactory(i, Ne),
                           )
                         : this.state.profileSettings.shouldDeleteBanner &&
                           s()
@@ -879,44 +879,16 @@
                 l = i(952428),
                 d = i(392237);
             const c = (e) => {
-                    const { decoration: t, description: i, disabled: c = !1, isActive: p = !1, label: u, link: _, onPress: m, paddingHorizontal: f, renderRightContent: g, role: E = "tab", styleOverride: b, testID: C = "pivot", thumbnail: S, thumbnailSize: P, withoutArrow: y = !1 } = e,
-                        v = [h.thumbnailContainer, "medium" === P && h.thumbnailContainerMedium],
-                        B = "string" == typeof u ? a.createElement(s.ZP, null, u) : u,
+                    const { decoration: t, description: i, disabled: c = !1, isActive: p = !1, label: u, link: _, onPress: m, paddingHorizontal: f, renderRightContent: E, role: g = "tab", styleOverride: b, testID: C = "pivot", thumbnail: S, thumbnailSize: P, withoutArrow: y = !1 } = e,
+                        B = [h.thumbnailContainer, "medium" === P && h.thumbnailContainerMedium],
+                        v = "string" == typeof u ? a.createElement(s.ZP, null, u) : u,
                         w = "object" == typeof _ && _.external && !_.openInSameFrame,
                         R = i ? ("string" == typeof i ? a.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, i) : i) : null,
-                        M = a.useMemo(() => ("space0" === f ? { paddingHorizontal: 0 } : { paddingHorizontal: f ? d.default.theme.spaces[f] : d.default.theme.componentDimensions.gutterHorizontal }), [f]);
-                    return a.createElement(l.Z, { "aria-selected": "tab" === E ? p : null, disabled: c, link: c ? void 0 : _, onPress: m, role: E, style: [h.root, M, c && h.disabled, b], testID: C, withInteractiveStyling: !!_ || !!m }, a.createElement(n.Z, { style: h.contentContainer }, S ? a.createElement(n.Z, { style: v }, S) : null, a.createElement(n.Z, { style: h.content }, B, R), g ? g() : null, (!_ && !m) || c || y ? null : w ? a.createElement(r.default, { style: h.icon }) : a.createElement(o.default, { style: h.icon })), t);
+                        A = a.useMemo(() => ("space0" === f ? { paddingHorizontal: 0 } : { paddingHorizontal: f ? d.default.theme.spaces[f] : d.default.theme.componentDimensions.gutterHorizontal }), [f]);
+                    return a.createElement(l.Z, { "aria-selected": "tab" === g ? p : null, disabled: c, link: c ? void 0 : _, onPress: m, role: g, style: [h.root, A, c && h.disabled, b], testID: C, withInteractiveStyling: !!_ || !!m }, a.createElement(n.Z, { style: h.contentContainer }, S ? a.createElement(n.Z, { style: B }, S) : null, a.createElement(n.Z, { style: h.content }, v, R), E ? E() : null, (!_ && !m) || c || y ? null : w ? a.createElement(r.default, { style: h.icon }) : a.createElement(o.default, { style: h.icon })), t);
                 },
                 h = d.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${d.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
-        293615: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var a = i(202784),
-                n = i(890601),
-                r = i(783427),
-                o = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        58399: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => d });
-            var a = i(202784),
-                n = i(890601),
-                r = i(783427),
-                o = i(717683),
-                s = i(347101);
-            const l = (e = {}) => {
-                const t = a.useContext(o.Z),
-                    { direction: i } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: i });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const d = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.aafacc2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.549ef8da.js.map

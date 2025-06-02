@@ -5506,13 +5506,35 @@
                 a("g22c8c30", "If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the post as added context."),
                 a("jf04b084", "These notes are added by contributors who believe the post isn’t misleading and does not need additional context."),
                 a("g5a72e98", "These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful."),
-                a("h53cb7de", "What do you think about this post?"),
-                a("dc3bfc82", "What, if anything, do you like about this post?"),
-                a("b4704bf4", "What, if anything, do you not like about this post?"),
+                a("b8719c22", "Help identify whether posts are liked by people from different perspectives."),
+                a("jcdf97d4", "What do you like about the post?"),
+                a("d4d7b67e", "What don’t you like about the post?"),
                 a("ed5156fa", "There was an error saving your rating, please try again."),
-                a("d5f9fb42", "You rated this community boost"),
+                a("d0ed3636", "You rated this post"),
                 a("j6aa6172", "Delete rating?"),
                 a("i4112750", "This can’t be undone."),
+                a("i6f6191a", "Thank you!"),
+                a("h5575012", "Agree and submit"),
+                a("f9171e52", "This post got some likes from people who normally disagree, but input so far is limited."),
+                a("j0f9919a", "Your rating won’t negatively impact a post, but can help positively recognise posts that are widely liked."),
+                a("b3af830c", "Your input:"),
+                a("d0b29562", "Rate more posts now"),
+                a("i36ea87a", "I agree with it"),
+                a("d5befc34", "I learned something interesting"),
+                a("je26ecf2", "It makes a meaningful point"),
+                a("e4e331aa", "It’s unifying on a topic that’s often polarising"),
+                a("ed61ff2a", "It’s heartwarming or endearing"),
+                a("gc3104d8", "It’s inspiring or exciting"),
+                a("j8c4400e", "It’s funny"),
+                a("j4738406", "N/A: There’s nothing I like about it"),
+                a("d93d1666", "I don’t agree with it"),
+                a("d6130466", "There is no meaningful substance to it"),
+                a("d96835b6", "It doesn’t interest me"),
+                a("b7ba4150", "N/A: There’s nothing I dislike about it"),
+                a("g0402b3b", "liked by people from different perspectives"),
+                a("ged62c2b", "spotlight"),
+                a("b5d5f7f1", "Shapes the direction"),
+                a("a42fef87", "Learn more"),
                 a("bd7eb888", "See all notes on this post"),
                 a("i97b83f6", "There was an error submitting your appeal, please try again."),
                 a("a038ab9a", "Translate note"),
@@ -5863,8 +5885,8 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Delete Folder"),
-                a("f4ea967a", "Folder has been deleted"),
+                a("h18f86a4", "Delete Folder");
+            a("f4ea967a", "Folder has been deleted"),
                 a("b670aa62", "Folder Name"),
                 a("aece5462", "Folder name has been updated successfully"),
                 a("e3299b94", "Something went wrong. Try updating that folder again in a minute."),
@@ -5895,8 +5917,8 @@
                     return "Ended " + e.timestamp;
                 }),
                 a("daca8a2c", "Open in Dock"),
-                a("e3aac82a", "Loading Broadcast");
-            a("i0ed3f4e", "Event image"),
+                a("e3aac82a", "Loading Broadcast"),
+                a("i0ed3f4e", "Event image"),
                 a("cbae35fa", "Report Broadcast"),
                 a("fd12ab58", "Collection posts"),
                 a("a226497c", "Create a new Community"),
@@ -6867,8 +6889,8 @@
                 a("b925c18c", "Salary Type"),
                 a("j3d242ce", "Invalid range"),
                 a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                a("b8cbb51a", "Job summary"),
-                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                a("b8cbb51a", "Job summary");
+            a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Profile Spotlight"),
                 a("j2dd3686", "Highlight featured jobs above my posts."),
@@ -6893,8 +6915,8 @@
                 a("c0195168", "Change your app icon and navigation options"),
                 a("b6b5dc94", "Become verified"),
                 a("b06db848", "Stand out from others on the platform"),
-                a("e3e3a97c", "Earn a share of revenue from your posts");
-            a("f15bc24e", "Increased Grok limits"),
+                a("e3e3a97c", "Earn a share of revenue from your posts"),
+                a("f15bc24e", "Increased Grok limits"),
                 a("c4666e1c", "More usage of Grok 3, our latest model"),
                 a("he74ae7a", "Highest Grok usage limits"),
                 a("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
@@ -7845,35 +7867,7 @@
                 a("c29e3a88", "Select affiliates"),
                 a("j8318d57", function (e) {
                     return e.number + " affiliate" + n(e.number, "", "s");
-                }),
-                a("bf809ec0", "Select Affiliates"),
-                a("b719e224", "No results"),
-                a("c9938100", "Search results"),
-                a("d1a35ec6", "Add accounts"),
-                a("b437adda", "Upgrade to paid"),
-                a("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
-                a("b02156b8", "Invitations"),
-                a("gd67d29b", function (e) {
-                    return "Invitations (" + e.count + ")";
-                }),
-                a("daf646e6", "Please note: you must label accounts appropriately."),
-                a("i3895c32", "Your account is under review because you changed your X @handle"),
-                a("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
-                a("e9e663ac", "Your payment is overdue."),
-                a("c3ddd22c", "terms"),
-                a("c9729d8a", "terms"),
-                a("cdcd1d2c", "Add affiliations to your organisation"),
-                a("d30ea6f3", function (e) {
-                    return "Are you sure you want to remove @" + e.name + "?";
-                }),
-                a("c2dfbb86", "Yes, do it"),
-                a("ba047f76", "Removing an affiliation immediately removes their tick and affiliation badge. You will continue to be billed until the end of the month."),
-                a("j26dee0e", "Remove affiliate"),
-                a("e30cbdf0", "This affiliate is a Verified Organisations subscriber and must remain an Organisation. They cannot be changed to an Individual."),
-                a("j3115ce8", "Individual"),
-                a("d8bb1d84", "Organisation");
+                });
             function r(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7912,9 +7906,37 @@
                     s(e, t)
                 );
             }
-            a("e970bdbd", function (e) {
-                return e.count + " invitations remaining";
-            }),
+            a("bf809ec0", "Select Affiliates"),
+                a("b719e224", "No results"),
+                a("c9938100", "Search results"),
+                a("d1a35ec6", "Add accounts"),
+                a("b437adda", "Upgrade to paid"),
+                a("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                a("b02156b8", "Invitations"),
+                a("gd67d29b", function (e) {
+                    return "Invitations (" + e.count + ")";
+                }),
+                a("daf646e6", "Please note: you must label accounts appropriately."),
+                a("i3895c32", "Your account is under review because you changed your X @handle"),
+                a("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
+                a("e9e663ac", "Your payment is overdue."),
+                a("c3ddd22c", "terms"),
+                a("c9729d8a", "terms"),
+                a("cdcd1d2c", "Add affiliations to your organisation"),
+                a("d30ea6f3", function (e) {
+                    return "Are you sure you want to remove @" + e.name + "?";
+                }),
+                a("c2dfbb86", "Yes, do it"),
+                a("ba047f76", "Removing an affiliation immediately removes their tick and affiliation badge. You will continue to be billed until the end of the month."),
+                a("j26dee0e", "Remove affiliate"),
+                a("e30cbdf0", "This affiliate is a Verified Organisations subscriber and must remain an Organisation. They cannot be changed to an Individual."),
+                a("j3115ce8", "Individual"),
+                a("d8bb1d84", "Organisation"),
+                a("e970bdbd", function (e) {
+                    return e.count + " invitations remaining";
+                }),
                 a("id67d953", function (e) {
                     return "Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
                 }),
@@ -8887,8 +8909,8 @@
                 a("ha3efce4", "Auto"),
                 a("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                }),
-                a("a7bf9962", "Download video"),
+                });
+            a("a7bf9962", "Download video"),
                 a("ccc97152", "Playback speed"),
                 a("h531ade0", "Video quality"),
                 a("e8b5757c", "0.25x"),
@@ -8919,8 +8941,8 @@
                 a("c1658fc6", "The media could not be played."),
                 a("h519ae04", "The media has been disabled due to a copyright claim."),
                 a("ce871584", "This broadcast has ended."),
-                a("c101eb96", "This broadcast is not available.");
-            a("gb24a514", "This media has been disabled in response to a report by the copyright owner."),
+                a("c101eb96", "This broadcast is not available."),
+                a("gb24a514", "This media has been disabled in response to a report by the copyright owner."),
                 a("hcaf3e63", function (e) {
                     return "This media has been disabled due to a copyright claim by " + e.holder + ".";
                 }),
@@ -11495,6 +11517,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Helps find posts "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Won’t hurt posts but could help ", " widely liked ones"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " of this experimental feature"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["As the post author, you can "];
@@ -13312,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.a843419a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.4431759a.js.map

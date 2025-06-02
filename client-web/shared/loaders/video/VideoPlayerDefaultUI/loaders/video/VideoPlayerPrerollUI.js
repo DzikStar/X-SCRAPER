@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI", "icons/IconSound-js"],
+    ["shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI", "icons/IconMediaExpand-js"],
     {
         215337: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -86,26 +86,26 @@
                                 d({ type: "START_ANIMATION" });
                             });
                         }, []),
-                        S = r.useCallback(() => {
+                        g = r.useCallback(() => {
                             d({ type: "FINISH_ANIMATION" });
                         }, []);
                     return (
                         r.useEffect(() => {
-                            t || S();
-                        }, [t, S]),
+                            t || g();
+                        }, [t, g]),
                         r.useEffect(() => {
                             "FINISH_ANIMATION" === h && n && n();
                         }, [n, h]),
                         r.useEffect(() => {
                             if ("START_ANIMATION" === h) {
                                 const e = setTimeout(() => {
-                                    S();
+                                    g();
                                 }, 300);
                                 return function () {
                                     clearTimeout(e);
                                 };
                             }
-                        }, [h, S]),
+                        }, [h, g]),
                         r.createElement(
                             a.Z,
                             { ref: f, style: i.default.absoluteFill },
@@ -115,7 +115,7 @@
                                     { scaleX: n, scaleY: a, translateX: i, translateY: s } = p,
                                     l = { transform: `matrix(${n}, 0, 0, ${a}, ${i}, ${s})` },
                                     c = { ...u.imageWrapperBaseStyles, ...e, ...l };
-                                return r.createElement("div", { onTransitionEnd: S, style: c }, r.createElement(o.Z, { ref: b, source: t, style: u.imageFill }));
+                                return r.createElement("div", { onTransitionEnd: g, style: c }, r.createElement(o.Z, { ref: b, source: t, style: u.imageFill }));
                             })(),
                         )
                     );
@@ -155,8 +155,8 @@
                 p = n(864386),
                 f = n(591354),
                 b = n(424713),
-                S = n(272879),
-                g = n(643442),
+                g = n(272879),
+                S = n(643442),
                 v = n(466445),
                 y = n(841972),
                 C = n(647174),
@@ -186,12 +186,12 @@
                         d = u < 7e3,
                         h = (d ? u : 5e3) - (c.currentTimeMs || 0),
                         p = h > 250,
-                        S = h < 0,
-                        g = (0, b.Ov)(c) || 0,
+                        g = h < 0,
+                        S = (0, b.Ov)(c) || 0,
                         v = (0, b.us)(c) || 0,
-                        y = (d ? v : 5) - g,
+                        y = (d ? v : 5) - S,
                         C = (0, f.bl)({ seconds: (0, f.Cf)(y) });
-                    return r.createElement(L.Z, { "aria-label": S ? f.DP : C, focusable: !0, interactive: !0, interactiveStyles: null, onClick: S && e ? e : A.Z, role: "button", testID: "ControlBar-containerView" }, (e) => r.createElement(r.Fragment, null, !S && r.createElement(i.Z, { show: p }, r.createElement(a.Z, { style: [D.thumbnail, { flexDirection: l ? "row-reverse" : "row" }, e.isFocused && D.thumbnailFocused], testID: "ControlBar-videoThumbnail" }, r.createElement(o.ZP, { color: "white", size: "subtext2", style: D.countdownTime }, y), r.createElement(Z.Z, { source: n.posterImage, style: (0, I.K)(t) }))), r.createElement(i.Z, { show: S }, r.createElement(k.ZP, { focusable: !1, interactivityState: e, pointerEvents: "auto", size: "small", testID: "ControlBar-skipButton", type: "onMediaDominantColorFilled" }, r.createElement(o.ZP, { dir: "ltr", weight: "normal" }, f.Be, r.createElement(P.default, { style: l ? D.iconMarginRtl : D.iconMargin }))))));
+                    return r.createElement(L.Z, { "aria-label": g ? f.DP : C, focusable: !0, interactive: !0, interactiveStyles: null, onClick: g && e ? e : A.Z, role: "button", testID: "ControlBar-containerView" }, (e) => r.createElement(r.Fragment, null, !g && r.createElement(i.Z, { show: p }, r.createElement(a.Z, { style: [D.thumbnail, { flexDirection: l ? "row-reverse" : "row" }, e.isFocused && D.thumbnailFocused], testID: "ControlBar-videoThumbnail" }, r.createElement(o.ZP, { color: "white", size: "subtext2", style: D.countdownTime }, y), r.createElement(Z.Z, { source: n.posterImage, style: (0, I.K)(t) }))), r.createElement(i.Z, { show: g }, r.createElement(k.ZP, { focusable: !1, interactivityState: e, pointerEvents: "auto", size: "small", testID: "ControlBar-skipButton", type: "onMediaDominantColorFilled" }, r.createElement(o.ZP, { dir: "ltr", weight: "normal" }, f.Be, r.createElement(P.default, { style: l ? D.iconMarginRtl : D.iconMargin }))))));
                 },
                 O = "PrerollControlBar-",
                 N = { CAPTIONS: `${O}Captions`, FULLSCREEN: `${O}Fullscreen` };
@@ -209,7 +209,7 @@
                             const { controls: n, isPlaying: a } = t,
                                 { pause: o, play: i } = e,
                                 s = (0, b.Ci)(t);
-                            return !s || s.isLive ? null : a || (n && "PLAY_REQUESTED" === n.playState) ? r.createElement(w.Z, { "aria-label": _.gF, hoverLabelPreferredHorizontalOrientation: "end", icon: r.createElement(g.default, null), onPress: o }) : r.createElement(w.Z, { "aria-label": _.M2, hoverLabelPreferredHorizontalOrientation: "end", icon: r.createElement(v.default, null), onPress: i });
+                            return !s || s.isLive ? null : a || (n && "PLAY_REQUESTED" === n.playState) ? r.createElement(w.Z, { "aria-label": _.gF, hoverLabelPreferredHorizontalOrientation: "end", icon: r.createElement(S.default, null), onPress: o }) : r.createElement(w.Z, { "aria-label": _.M2, hoverLabelPreferredHorizontalOrientation: "end", icon: r.createElement(v.default, null), onPress: i });
                         }),
                         (this._renderAdText = () => r.createElement(x.Z, null, f.DD)),
                         (this._renderTimePlayed = () =>
@@ -231,7 +231,7 @@
                         }),
                         (this._renderFullScreenButton = (e, t) => {
                             const { fullscreen: n } = t;
-                            return n.isFullscreen ? r.createElement(w.Z, { "aria-label": _.iG, hoverLabelPreferredHorizontalOrientation: "start", icon: r.createElement(z, { isFullscreen: n.isFullscreen }), onPress: this._exitFullScreen(e) }) : r.createElement(w.Z, { "aria-label": _.lO, hoverLabelPreferredHorizontalOrientation: "start", icon: r.createElement(z, { isFullscreen: n.isFullscreen }), onPress: this._requestFullScreen(e) });
+                            return n.isFullscreen ? r.createElement(w.Z, { "aria-label": _.iG, hoverLabelPreferredHorizontalOrientation: "start", icon: r.createElement(U, { isFullscreen: n.isFullscreen }), onPress: this._exitFullScreen(e) }) : r.createElement(w.Z, { "aria-label": _.lO, hoverLabelPreferredHorizontalOrientation: "start", icon: r.createElement(U, { isFullscreen: n.isFullscreen }), onPress: this._requestFullScreen(e) });
                         }),
                         (this._requestFullScreen = (e) => () => {
                             e.fullScreen(this.props.containerRef);
@@ -245,11 +245,11 @@
                 }
             }
             const W = d.default.create((e) => ({ root: { writingDirection: "ltr", cursor: "auto", width: "100%" }, skipAffordance: { marginStart: e.spaces.space12, pointEvents: "none", visibility: "hidden" } }));
-            function z({ isFullscreen: e, style: t }) {
-                const { hidden: n, shown: a } = U;
+            function U({ isFullscreen: e, style: t }) {
+                const { hidden: n, shown: a } = z;
                 return r.createElement(r.Fragment, null, r.createElement(y.default, { style: e ? n : a }), r.createElement(C.default, { style: e ? a : n }));
             }
-            const U = { hidden: { display: "none", height: "1.5em" }, shown: { display: "block", height: "1.5em" } },
+            const z = { hidden: { display: "none", height: "1.5em" }, shown: { display: "block", height: "1.5em" } },
                 G = H;
             class V extends r.PureComponent {
                 constructor(...e) {
@@ -306,11 +306,11 @@
                             const { containerRef: t, onSkip: n, playerApi: o, playerState: s } = this.props;
                             if (!o || !s) return null;
                             const { Observer: l, observed: u } = e,
-                                d = (0, S.JN)(s, u, S.i2),
+                                d = (0, g.JN)(s, u, g.i2),
                                 h = s.fullscreen.isFullscreen;
                             return r.createElement(c.ZP.Consumer, null, ({ direction: e }) => {
                                 const c = "rtl" === e;
-                                return r.createElement(a.Z, { style: $.bottomContentContainer }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.forceFullWidth, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(l, { focus: !0, interactionKey: S.IG.A11YHook }, r.createElement(a.Z, { focusable: !0 })), r.createElement(a.Z, { style: $.flexExpand }, r.createElement(a.Z, { style: [$.labelOuterContainerBase, c ? $.labelOuterContainerRtl : $.labelOuterContainerLtr] }, r.createElement(i.Z, { show: d }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }, $.rowBottomSpace] }, this._renderLabels(c)))), h ? null : r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailAbsoluteRtl : $.skipThumbnailAbsolute], testID: q.floatSkipThumbnail }, r.createElement(F, { onClick: n }))), r.createElement(l, { focus: !0, interactionKey: S.IG.ControlBar, mouseover: !0, touch: !0 }, r.createElement(G, { containerRef: t, displayDismissableControls: !d, playerApi: o, playerState: s, skipButton: h ? r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailRelativeRtl : $.skipThumbnailRelative], testID: q.inlineSkipThumbnail }, r.createElement(F, { onClick: n })) : null }))))));
+                                return r.createElement(a.Z, { style: $.bottomContentContainer }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.forceFullWidth, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(l, { focus: !0, interactionKey: g.IG.A11YHook }, r.createElement(a.Z, { focusable: !0 })), r.createElement(a.Z, { style: $.flexExpand }, r.createElement(a.Z, { style: [$.labelOuterContainerBase, c ? $.labelOuterContainerRtl : $.labelOuterContainerLtr] }, r.createElement(i.Z, { show: d }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }, $.rowBottomSpace] }, this._renderLabels(c)))), h ? null : r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailAbsoluteRtl : $.skipThumbnailAbsolute], testID: q.floatSkipThumbnail }, r.createElement(F, { onClick: n }))), r.createElement(l, { focus: !0, interactionKey: g.IG.ControlBar, mouseover: !0, touch: !0 }, r.createElement(G, { containerRef: t, displayDismissableControls: !d, playerApi: o, playerState: s, skipButton: h ? r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailRelativeRtl : $.skipThumbnailRelative], testID: q.inlineSkipThumbnail }, r.createElement(F, { onClick: n })) : null }))))));
                             });
                         }),
                         (this._renderWithIntentionContext = (e) => {
@@ -332,8 +332,8 @@
                                     h = [u.W.borderRadiusLeft, this.state.stackedLabels && u.W.borderRadiusRight],
                                     m = [u.W.borderRadiusRight, this.state.stackedLabels && u.W.borderRadiusLeft],
                                     p = n && "number" == typeof c && !n.isLive ? r.createElement(a.Z, { ref: this._durationLabelRef }, r.createElement(s.ZP, { key: "PrerollVideoOverlay-DurationLabel", style: [u.W.label, e ? $.labelSpaceLeft : u.W.spaceRight, this.state.stackedLabels && $.labelBottomSpace, ...(e ? m : h)] }, r.createElement(o.ZP, { numberOfLines: 1 }, (0, b.mr)(c)))) : null,
-                                    S = r.createElement(a.Z, { ref: this._descriptionLabelRef }, r.createElement(s.ZP, { key: "PrerollVideoOverlay-DescriptionLabel", style: [u.W.label, e ? $.labelSpaceLeft : u.W.spaceRight, ...(e ? h : m)] }, r.createElement(o.ZP, { numberOfLines: 1 }, f.DD)));
-                                return r.createElement(a.Z, { onLayout: this._handleLayout, pointerEvents: "none", style: d }, p, S);
+                                    g = r.createElement(a.Z, { ref: this._descriptionLabelRef }, r.createElement(s.ZP, { key: "PrerollVideoOverlay-DescriptionLabel", style: [u.W.label, e ? $.labelSpaceLeft : u.W.spaceRight, ...(e ? h : m)] }, r.createElement(o.ZP, { numberOfLines: 1 }, f.DD)));
+                                return r.createElement(a.Z, { onLayout: this._handleLayout, pointerEvents: "none", style: d }, p, g);
                             }));
                 }
                 render() {
@@ -409,7 +409,7 @@
                         (this._normalizeValue = (e) => Math.max(0, Math.min(e, 100))),
                         (this._getSliderMarginStyles = (e) => {
                             const t = e ?? "medium";
-                            return g["large" === t ? "xLarge" : t];
+                            return S["large" === t ? "xLarge" : t];
                         }),
                         (this._handleKeyDown = (e) => {
                             const { onSliderChange: t, volumePercent: n } = this.props,
@@ -432,15 +432,15 @@
                     }
                 }
                 render() {
-                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: n, isMuted: i, onHideSlider: s, onMuteToggle: u, onShowSlider: b, onSliderChange: g, pullRight: v, sliderColor: y, volumePercent: C, withGraySliderTrack: T, withNavigationSliderBackground: E, ...R } = this.props,
+                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: n, isMuted: i, onHideSlider: s, onMuteToggle: u, onShowSlider: b, onSliderChange: S, pullRight: v, sliderColor: y, volumePercent: C, withGraySliderTrack: T, withNavigationSliderBackground: E, ...R } = this.props,
                         w = i ? a.createElement(l.default, null) : a.createElement(c.default, null),
-                        x = E ? S.sliderWithNavigationBackground : S.sliderWithDefaultBackground;
-                    return a.createElement(h.Z, { disabled: !g, onFocusRingGained: g ? this._showSlider : void 0, onFocusRingLost: g ? this._hideSlider : void 0, onHoverIn: g ? this._showSlider : void 0, onHoverOut: g ? this._hideSlider : void 0 }, a.createElement(o.Z, { onKeyDown: g ? this._handleKeyDown : void 0 }, a.createElement(d.ZP, (0, r.Z)({ "aria-label": e, icon: w, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: v, type: "onMediaText" }, R)), g && a.createElement(h.Z, { onFocusRingGained: b, onFocusRingLost: s }, ({ isFocusedWithin: e }) => a.createElement(o.Z, { style: [S.sliderBackground, x, this._getSliderMarginStyles(R.size), e || this._shouldShowSlider(this.state) ? null : p.default.visuallyHidden, !!n && { maxHeight: this.state.sliderMaxHeight }] }, a.createElement(m.Z, { accessibilityLabelValueText: f({ volumePercent: C }), "aria-label": t, color: y || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: g, step: 1, value: i ? 0 : C || 0, withGrayBackground: T })))));
+                        x = E ? g.sliderWithNavigationBackground : g.sliderWithDefaultBackground;
+                    return a.createElement(h.Z, { disabled: !S, onFocusRingGained: S ? this._showSlider : void 0, onFocusRingLost: S ? this._hideSlider : void 0, onHoverIn: S ? this._showSlider : void 0, onHoverOut: S ? this._hideSlider : void 0 }, a.createElement(o.Z, { onKeyDown: S ? this._handleKeyDown : void 0 }, a.createElement(d.ZP, (0, r.Z)({ "aria-label": e, icon: w, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: v, type: "onMediaText" }, R)), S && a.createElement(h.Z, { onFocusRingGained: b, onFocusRingLost: s }, ({ isFocusedWithin: e }) => a.createElement(o.Z, { style: [g.sliderBackground, x, this._getSliderMarginStyles(R.size), e || this._shouldShowSlider(this.state) ? null : p.default.visuallyHidden, !!n && { maxHeight: this.state.sliderMaxHeight }] }, a.createElement(m.Z, { accessibilityLabelValueText: f({ volumePercent: C }), "aria-label": t, color: y || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: S, step: 1, value: i ? 0 : C || 0, withGrayBackground: T })))));
                 }
             }
             b.defaultProps = { pullRight: !1 };
-            const S = p.default.create((e) => ({ sliderBackground: { bottom: 0, borderRadius: e.borderRadii.xLarge, height: `calc(${e.spaces.space64}*2)`, start: e.spaces.space4, position: "absolute", padding: e.spaces.space12, paddingVertical: e.spaces.space16, end: e.spaces.space4 }, sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 }, sliderWithNavigationBackground: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall } })),
-                g = p.default.create(({ spaces: e, spacesPx: t }) => {
+            const g = p.default.create((e) => ({ sliderBackground: { bottom: 0, borderRadius: e.borderRadii.xLarge, height: `calc(${e.spaces.space64}*2)`, start: e.spaces.space4, position: "absolute", padding: e.spaces.space12, paddingVertical: e.spaces.space16, end: e.spaces.space4 }, sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 }, sliderWithNavigationBackground: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall } })),
+                S = p.default.create(({ spaces: e, spacesPx: t }) => {
                     const n = `${t.space16 + t.space4 + t.space2}px`,
                         r = `${t.space20 + t.space24}px`,
                         a = `${t.space12 + t.space40}px`;
@@ -453,18 +453,20 @@
             var r = n(157396);
             const a = (0, n(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        926628: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
+        841972: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 a = n(890601),
                 o = n(783427),
-                i = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" })) }, { writingDirection: t });
+                i = n(717683),
+                s = n(347101);
+            const l = (e = {}) => {
+                const t = r.useContext(i.Z),
+                    { direction: n } = (0, o.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: n });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
         },
         151624: (e, t, n) => {
             n.d(t, { Z: () => r });
@@ -604,4 +606,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.0db8e4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.74a3aefa.js.map

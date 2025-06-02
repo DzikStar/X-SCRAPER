@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountVerification-6107ac1a", "icons/IconCameraPlusStroke-js", "icons/IconChevronRight-js"],
+    ["bundle.AccountVerification-6107ac1a", "icons/IconEye-js"],
     {
         290402: (e, t, r) => {
             r.d(t, { Z: () => u });
-            var o = r(807896),
-                a = r(202784),
+            var a = r(807896),
+                o = r(202784),
                 n = r(182056),
                 i = r(879113),
                 l = r(392237),
@@ -15,15 +15,15 @@
             const h = c().aa6e3300,
                 p = ({ retryMessage: e, ...t }, r) => {
                     const l = n.Z.isOnline();
-                    return a.createElement(i.Z, (0, o.Z)({}, t, { icon: l ? void 0 : a.createElement(d.default, { style: m.icon }), retryMessage: l ? e : h }));
+                    return o.createElement(i.Z, (0, a.Z)({}, t, { icon: l ? void 0 : o.createElement(d.default, { style: m.icon }), retryMessage: l ? e : h }));
                 },
                 m = l.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                u = a.forwardRef(p);
+                u = o.forwardRef(p);
         },
         980407: (e, t, r) => {
             r.d(t, { Z: () => b, w: () => m });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(108362),
                 i = r(386802),
                 l = r(392237),
@@ -32,13 +32,13 @@
                 d = r(625661),
                 h = r(449067),
                 p = r(715601);
-            class m extends o.Component {
+            class m extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: r, backLocation: n, centerTitle: i, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: g, subtitle: Z, title: C } = this.props,
                                 { isModal: E } = this.context;
-                            return o.createElement(a.Z, { style: E ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, o.createElement(d.ZP, { backButtonType: r || (E ? "close" : "back"), backLocation: n, centerTitle: i, fixed: !E, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: y, secondaryBar: g, style: [E && u.appBarModal, t], subtitle: Z, title: C, titleDomId: c.Q_ }));
+                            return a.createElement(o.Z, { style: E ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, a.createElement(d.ZP, { backButtonType: r || (E ? "close" : "back"), backLocation: n, centerTitle: i, fixed: !E, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: y, secondaryBar: g, style: [E && u.appBarModal, t], subtitle: Z, title: C, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -50,7 +50,7 @@
                     const { "aria-hidden": e, bottomBar: t, children: r, containerStyle: i, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: m, title: b, withoutBottomBarMobile: y } = this.props,
                         { isModal: g } = this.context,
                         Z = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return o.createElement(s.Z, null, o.createElement(h.Z.Configure, { documentTitle: l, headerless: !0, title: b }), o.createElement(a.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, g && u.rootModal] }, !g && Z, o.createElement(n.Z, { isFullWidth: c, isLarge: d, style: [u.container, g && u.containerModal, i] }, g ? o.createElement(p.Z, { style: u.viewport }, Z, r) : r), t ? o.createElement(a.Z, { style: [u.bottomBarModal, !g && !y && u.bottomBarMobile] }, o.createElement(n.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return a.createElement(s.Z, null, a.createElement(h.Z.Configure, { documentTitle: l, headerless: !0, title: b }), a.createElement(o.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, g && u.rootModal] }, !g && Z, a.createElement(n.Z, { isFullWidth: c, isLarge: d, style: [u.container, g && u.containerModal, i] }, g ? a.createElement(p.Z, { style: u.viewport }, Z, r) : r), t ? a.createElement(o.Z, { style: [u.bottomBarModal, !g && !y && u.bottomBarMobile] }, a.createElement(n.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = i.Z);
@@ -60,8 +60,8 @@
         537668: (e, t, r) => {
             r.d(t, { Dh: () => g, ZP: () => Z });
             r(571372);
-            var o = r(202784),
-                a = r(946847),
+            var a = r(202784),
+                o = r(946847),
                 n = r(111677),
                 i = r.n(n),
                 l = r(516951),
@@ -81,13 +81,13 @@
                         n = t.find((t) => e.violations?.some((e) => e.violation_category === t && e.violation_status === c.Tq.OUT_OF_COMPLIANCE));
                     if (void 0 === n) throw new Error("cannot render Account violations without valid violations");
                     const { actionLink: i, buttonText: s, description: Z, title: C } = r[n];
-                    return o.createElement(a.Z, { actionLabel: s, actionLink: i, graphicDisplayMode: "none", headline: C, onAction: l.Z, onClose: l.Z, subtext: Z, withCloseButton: !1 });
+                    return a.createElement(o.Z, { actionLabel: s, actionLink: i, graphicDisplayMode: "none", headline: C, onAction: l.Z, onClose: l.Z, subtext: Z, withCloseButton: !1 });
                 };
         },
         853137: (e, t, r) => {
             r.d(t, { ZP: () => v });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(731708),
                 i = r(946847),
                 l = r(154003),
@@ -121,17 +121,17 @@
                         })(r)
                     ) {
                         const e = I ? E : f,
-                            r = I ? ((e) => o.createElement(c().I18NFormatMessage, { $i18n: "jf9308af" }, o.createElement(n.ZP, { link: e }, c().e1e878ee)))(t) : ((e) => o.createElement(c().I18NFormatMessage, { $i18n: "e9976a41" }, o.createElement(n.ZP, { link: e }, c().b9635182)))(t);
-                        return o.createElement(i.Z, { actionLabel: b, graphicDisplayMode: "none", headline: e, onAction: s, onClose: p.Z, subtext: r, withCloseButton: !1 });
+                            r = I ? ((e) => a.createElement(c().I18NFormatMessage, { $i18n: "jf9308af" }, a.createElement(n.ZP, { link: e }, c().e1e878ee)))(t) : ((e) => a.createElement(c().I18NFormatMessage, { $i18n: "e9976a41" }, a.createElement(n.ZP, { link: e }, c().b9635182)))(t);
+                        return a.createElement(i.Z, { actionLabel: b, graphicDisplayMode: "none", headline: e, onAction: s, onClose: p.Z, subtext: r, withCloseButton: !1 });
                     }
-                    return o.createElement(a.Z, { style: [u.Z.container, k && u.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: m.Q_, role: "heading", size: "title4", style: u.Z.header, weight: "heavy" }, C), o.createElement(a.Z, { style: u.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, g), ((x = Z), o.createElement(n.ZP, { size: "subtext2", style: u.Z.subheading, weight: "heavy" }, x)), ((w = r), o.createElement(n.ZP, { style: u.Z.subtext }, w))), o.createElement(l.ZP, { onClick: v, style: u.Z.buttonFixed, type: "brandFilled" }, y));
+                    return a.createElement(o.Z, { style: [u.Z.container, k && u.Z.narrowContainer] }, a.createElement(n.ZP, { "aria-level": 1, id: m.Q_, role: "heading", size: "title4", style: u.Z.header, weight: "heavy" }, C), a.createElement(o.Z, { style: u.Z.scrollableContainer }, a.createElement(n.ZP, { color: "gray700" }, g), ((x = Z), a.createElement(n.ZP, { size: "subtext2", style: u.Z.subheading, weight: "heavy" }, x)), ((w = r), a.createElement(n.ZP, { style: u.Z.subtext }, w))), a.createElement(l.ZP, { onClick: v, style: u.Z.buttonFixed, type: "brandFilled" }, y));
                     var w, x;
                 };
         },
         878432: (e, t, r) => {
             r.d(t, { Z: () => g });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(688715),
                 i = r(731708),
                 l = r(154003),
@@ -143,13 +143,13 @@
             const m = c().j163be32,
                 u = c().gaf821c8,
                 b = (0, n.ju)("https://help.x.com/managing-your-account/twitter-verified-accounts"),
-                y = o.createElement(c().I18NFormatMessage, { $i18n: "e5b4cc43" }, o.createElement(i.ZP, { link: b }, c().e1ac0f9b)),
-                g = ({ handleOnClick: e, isNarrow: t }) => o.createElement(a.Z, { style: h.Z.largeBannerContainer }, o.createElement(p.Z, { isNarrow: t, type: p.l.START }), o.createElement(a.Z, { style: [h.Z.container, h.Z.verticalCenter, t && h.Z.narrowContainer] }, o.createElement(i.ZP, { "aria-level": 1, id: d.Q_, role: "heading", size: "title4", style: h.Z.header, weight: "heavy" }, u), o.createElement(i.ZP, { color: "gray700" }, y), o.createElement(l.ZP, { onClick: e, style: h.Z.buttonPadded, type: "brandFilled" }, m)));
+                y = a.createElement(c().I18NFormatMessage, { $i18n: "e5b4cc43" }, a.createElement(i.ZP, { link: b }, c().e1ac0f9b)),
+                g = ({ handleOnClick: e, isNarrow: t }) => a.createElement(o.Z, { style: h.Z.largeBannerContainer }, a.createElement(p.Z, { isNarrow: t, type: p.l.START }), a.createElement(o.Z, { style: [h.Z.container, h.Z.verticalCenter, t && h.Z.narrowContainer] }, a.createElement(i.ZP, { "aria-level": 1, id: d.Q_, role: "heading", size: "title4", style: h.Z.header, weight: "heavy" }, u), a.createElement(i.ZP, { color: "gray700" }, y), a.createElement(l.ZP, { onClick: e, style: h.Z.buttonPadded, type: "brandFilled" }, m)));
         },
         748869: (e, t, r) => {
             r.d(t, { ZP: () => f });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(731708),
                 i = r(111677),
                 l = r.n(i),
@@ -168,7 +168,7 @@
                     .withAnalytics(),
                 Z = l().h2d4ba56,
                 C = l().i2051842;
-            class E extends o.Component {
+            class E extends a.Component {
                 constructor(e) {
                     super(e),
                         (this._handleErrorButtonClick = () => {
@@ -188,9 +188,9 @@
                         this._pollingTimer.start();
                 }
                 componentDidUpdate(e, t) {
-                    const { errors: r, setNextFlow: o, status: a } = this.props,
+                    const { errors: r, setNextFlow: a, status: o } = this.props,
                         { retryCount: n } = this.state;
-                    ((a !== e.status && this._isPollingDone(a)) || (r.length !== e.errors.length && r.length) || (n !== t.retryCount && 5 === n)) && this._stopTimer(), a === e.status || a !== d.WS.CONCLUSIVE || r.length || (this._handleScribe("success"), o());
+                    ((o !== e.status && this._isPollingDone(o)) || (r.length !== e.errors.length && r.length) || (n !== t.retryCount && 5 === n)) && this._stopTimer(), o === e.status || o !== d.WS.CONCLUSIVE || r.length || (this._handleScribe("success"), a());
                 }
                 componentWillUnmount() {
                     this._stopTimer();
@@ -207,10 +207,10 @@
                     this._pollingTimer && this._pollingTimer.stop();
                 }
                 _renderError() {
-                    return this._handleScribe("failure"), o.createElement(h.Z, { onButtonClick: this._handleErrorButtonClick });
+                    return this._handleScribe("failure"), a.createElement(h.Z, { onButtonClick: this._handleErrorButtonClick });
                 }
                 _renderLoading() {
-                    return o.createElement(a.Z, { style: p.Z.largeBannerContainer }, o.createElement(m.Z, { isNarrow: this.props.isNarrow, type: m.l.LOADING }), o.createElement(a.Z, { style: [p.Z.container, p.Z.verticalCenter, this.props.isNarrow && p.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: s.Q_, role: "heading", size: "title4", style: p.Z.header, weight: "heavy" }, Z), o.createElement(n.ZP, { color: "gray700" }, C)));
+                    return a.createElement(o.Z, { style: p.Z.largeBannerContainer }, a.createElement(m.Z, { isNarrow: this.props.isNarrow, type: m.l.LOADING }), a.createElement(o.Z, { style: [p.Z.container, p.Z.verticalCenter, this.props.isNarrow && p.Z.narrowContainer] }, a.createElement(n.ZP, { "aria-level": 1, id: s.Q_, role: "heading", size: "title4", style: p.Z.header, weight: "heavy" }, Z), a.createElement(n.ZP, { color: "gray700" }, C)));
                 }
                 render() {
                     return this._isErrorState() ? this._renderError() : this._renderLoading();
@@ -220,8 +220,8 @@
         },
         71448: (e, t, r) => {
             r.d(t, { Z: () => b });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(731708),
                 i = r(371344),
                 l = r(952428),
@@ -233,19 +233,19 @@
                 m = r(695829);
             const u = c().h9270b1c,
                 b = ({ documentFormats: e, isNarrow: t, onCountryClick: r }) => {
-                    const [s, c] = o.useState(new RegExp("", "i")),
-                        b = o.useMemo(() => (e ? Object.keys(e).sort((t, r) => e[t].country.localeCompare(e[r].country)) : []), [e]);
-                    return o.createElement(
-                        a.Z,
+                    const [s, c] = a.useState(new RegExp("", "i")),
+                        b = a.useMemo(() => (e ? Object.keys(e).sort((t, r) => e[t].country.localeCompare(e[r].country)) : []), [e]);
+                    return a.createElement(
+                        o.Z,
                         { "aria-labelledby": p.Q_, role: "group", style: [m.Z.container, t && m.Z.narrowContainer] },
-                        o.createElement(
-                            a.Z,
+                        a.createElement(
+                            o.Z,
                             { style: m.Z.fixedContainer },
-                            o.createElement(n.ZP, { "aria-level": 1, id: p.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, h.qp),
-                            o.createElement(
-                                a.Z,
+                            a.createElement(n.ZP, { "aria-level": 1, id: p.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, h.qp),
+                            a.createElement(
+                                o.Z,
                                 { style: [m.Z.contentContainer, m.Z.topPaddingSmall] },
-                                o.createElement(i.Z, {
+                                a.createElement(i.Z, {
                                     Icon: d.default,
                                     onChange: (e) =>
                                         c(
@@ -258,18 +258,18 @@
                                 }),
                             ),
                         ),
-                        o.createElement(
-                            a.Z,
+                        a.createElement(
+                            o.Z,
                             { style: m.Z.scrollableContainer },
-                            b.map((t) => (e && e[t].country.match(s) ? o.createElement(l.Z, { key: t, onClick: () => r(t, e[t].country), style: [m.Z.listItem, m.Z.bottomBorder], withInteractiveStyling: !0 }, o.createElement(n.ZP, null, e[t].country)) : null)),
+                            b.map((t) => (e && e[t].country.match(s) ? a.createElement(l.Z, { key: t, onClick: () => r(t, e[t].country), style: [m.Z.listItem, m.Z.bottomBorder], withInteractiveStyling: !0 }, a.createElement(n.ZP, null, e[t].country)) : null)),
                         ),
                     );
                 };
         },
         240550: (e, t, r) => {
             r.d(t, { Z: () => h });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(731708),
                 i = r(952428),
                 l = r(161821),
@@ -277,23 +277,23 @@
                 c = r(555079),
                 d = r(695829);
             const h = ({ documentFormats: e, idCountry: t, isNarrow: r, onTypeClick: h }) => {
-                const p = o.useMemo(() => (e && t ? (0, l.Z)(e[t].id_types).sort((e, t) => e.name.localeCompare(t.name)) : []), [e, t]);
-                return o.createElement(
-                    a.Z,
+                const p = a.useMemo(() => (e && t ? (0, l.Z)(e[t].id_types).sort((e, t) => e.name.localeCompare(t.name)) : []), [e, t]);
+                return a.createElement(
+                    o.Z,
                     { "aria-labelledby": c.Q_, role: "group", style: [d.Z.container, r && d.Z.narrowContainer] },
-                    o.createElement(a.Z, { style: d.Z.fixedContainer }, o.createElement(n.ZP, { "aria-level": 1, id: c.Q_, role: "heading", size: "title4", style: d.Z.header, weight: "heavy" }, s.xn)),
-                    o.createElement(
-                        a.Z,
+                    a.createElement(o.Z, { style: d.Z.fixedContainer }, a.createElement(n.ZP, { "aria-level": 1, id: c.Q_, role: "heading", size: "title4", style: d.Z.header, weight: "heavy" }, s.xn)),
+                    a.createElement(
+                        o.Z,
                         { style: [d.Z.contentContainer, d.Z.scrollableContainer, d.Z.topPaddingSmall] },
-                        p.map(({ id_type: e, name: t }) => o.createElement(i.Z, { key: e, onClick: () => h(e, t), style: [d.Z.listItem, d.Z.bottomBorder], withInteractiveStyling: !0 }, o.createElement(n.ZP, null, t))),
+                        p.map(({ id_type: e, name: t }) => a.createElement(i.Z, { key: e, onClick: () => h(e, t), style: [d.Z.listItem, d.Z.bottomBorder], withInteractiveStyling: !0 }, a.createElement(n.ZP, null, t))),
                     ),
                 );
             };
         },
         197110: (e, t, r) => {
             r.d(t, { qp: () => b, ZP: () => _, xn: () => g });
-            var o = r(202784),
-                a = r(154003),
+            var a = r(202784),
+                o = r(154003),
                 n = r(111677),
                 i = r.n(n),
                 l = r(316325),
@@ -316,8 +316,8 @@
                 f = (e, t, r) => (e && t && r ? e[t].id_types[r].name : Z),
                 _ = p((e) => {
                     const { documentFormats: t, idCountry: r, idType: n, isNarrow: i, setNextFlow: d } = e;
-                    return o.createElement(s.Z, {
-                        button: o.createElement(a.ZP, { disabled: !(r && n), onClick: () => d(), style: c.Z.buttonFixed, type: "brandFilled" }, C),
+                    return a.createElement(s.Z, {
+                        button: a.createElement(o.ZP, { disabled: !(r && n), onClick: () => d(), style: c.Z.buttonFixed, type: "brandFilled" }, C),
                         description: u,
                         isNarrow: i,
                         items: [
@@ -330,8 +330,8 @@
         },
         326437: (e, t, r) => {
             r.d(t, { Z: () => b });
-            var o = r(202784),
-                a = r(946847),
+            var a = r(202784),
+                o = r(946847),
                 n = r(111677),
                 i = r.n(n),
                 l = r(516951),
@@ -347,13 +347,13 @@
                     let n = u,
                         i = d,
                         b = h;
-                    return 429 === r && ((n = c.k6), (i = p), (b = m)), o.createElement(a.Z, { actionLabel: n, graphicDisplayMode: "none", headline: i, onAction: t, onClose: l.Z, subtext: b, withCloseButton: !1 });
+                    return 429 === r && ((n = c.k6), (i = p), (b = m)), a.createElement(o.Z, { actionLabel: n, graphicDisplayMode: "none", headline: i, onAction: t, onClose: l.Z, subtext: b, withCloseButton: !1 });
                 };
         },
         778434: (e, t, r) => {
             r.d(t, { Z: () => G });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(731708),
                 i = r(96083),
                 l = r(154003),
@@ -387,7 +387,7 @@
                 w = r(304059),
                 x = r(751170);
             const P = ["application/pdf", "image/bmp", "image/jpeg", "image/png", "image/tiff"];
-            class D extends o.Component {
+            class D extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleDragDrop = (e) => {
@@ -397,7 +397,7 @@
                         }),
                         (this._renderDragDropTarget = () => {
                             const { "aria-label": e, onChange: t } = this.props;
-                            return o.createElement(I.Z, { acceptGifs: !1, acceptImages: !1, acceptVideo: !1, "aria-label": e, customMimeTypes: P, icon: o.createElement(k.default, { style: F.mediaPickerIcon }), onChange: t, size: "small", style: F.mediaPicker, withIcon: !0 });
+                            return a.createElement(I.Z, { acceptGifs: !1, acceptImages: !1, acceptVideo: !1, "aria-label": e, customMimeTypes: P, icon: a.createElement(k.default, { style: F.mediaPickerIcon }), onChange: t, size: "small", style: F.mediaPicker, withIcon: !0 });
                         }),
                         (this._getResizeIfNeeded = (e) => {
                             const t = e.externalMediaDetails && e.externalMediaDetails.height / e.externalMediaDetails.width;
@@ -405,13 +405,13 @@
                         }),
                         (this._renderPreview = (e) => {
                             const { onRemove: t } = this.props;
-                            return o.createElement(w.Z, { borderRadius: x.A.MEDIUM, mediaItem: e, onRemove: t, resizeIfNeeded: this._getResizeIfNeeded(e), style: F.mediaPreview, withCloseButton: !0 });
+                            return a.createElement(w.Z, { borderRadius: x.A.MEDIUM, mediaItem: e, onRemove: t, resizeIfNeeded: this._getResizeIfNeeded(e), style: F.mediaPreview, withCloseButton: !0 });
                         });
                 }
                 render() {
                     const { mediaItem: e, title: t } = this.props,
                         r = e ? this._renderPreview(e) : this._renderDragDropTarget();
-                    return o.createElement(a.Z, { style: F.dragDropContainer }, o.createElement(n.ZP, { weight: "bold" }, t), o.createElement(v.ZP, { onFilesAdded: this._handleDragDrop, style: F.dragDropComponent }, r));
+                    return a.createElement(o.Z, { style: F.dragDropContainer }, a.createElement(n.ZP, { weight: "bold" }, t), a.createElement(v.ZP, { onFilesAdded: this._handleDragDrop, style: F.dragDropComponent }, r));
                 }
             }
             const F = s.default.create((e) => ({ dragDropContainer: { flex: 1, marginTop: e.spaces.space16, maxWidth: "50%", minWidth: `calc(${e.spaces.space80} + ${e.spaces.space48})` }, dragDropComponent: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: e.borderWidths.small, boxSizing: "border-box", flexGrow: 0, height: 135, marginVertical: e.spaces.space8, overflow: "hidden" }, mediaPicker: { borderStyle: "none", borderRadius: "none", flex: "auto" }, mediaPickerIcon: { color: e.colors.primary }, mediaPreview: { justifyContent: "center", flex: 1 } })),
@@ -419,7 +419,7 @@
             var T = r(326437);
             const B = "verification-checkbox-label",
                 R = d().ff1d68f8,
-                A = o.createElement(d().I18NFormatMessage, { $i18n: "bfb355fb" }, o.createElement(n.ZP, { link: u.LT }, d().d20f76cb)),
+                A = a.createElement(d().I18NFormatMessage, { $i18n: "bfb355fb" }, a.createElement(n.ZP, { link: u.LT }, d().d20f76cb)),
                 M = d().bdada5a6,
                 N = d().edfed0f6,
                 L = d().def5015d({ back_of_document: "" }),
@@ -427,9 +427,9 @@
                 z = d().b40ed190,
                 W = d().c6650b56,
                 U = d().d171ed16,
-                V = o.createElement(d().I18NFormatMessage, { $i18n: "d65a41c3" }, o.createElement(n.ZP, { link: u.vW }, d().b8deb156)),
+                V = a.createElement(d().I18NFormatMessage, { $i18n: "d65a41c3" }, a.createElement(n.ZP, { link: u.vW }, d().b8deb156)),
                 $ = d().c1df579e;
-            class j extends o.Component {
+            class j extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleSubmit = () => {
@@ -437,11 +437,11 @@
                             r().catch(e()), t();
                         }),
                         (this._handleAddBackMedia = (e) => {
-                            const { addMedia: t, processMultipleMedia: r, setBackID: o } = this.props;
+                            const { addMedia: t, processMultipleMedia: r, setBackID: a } = this.props;
                             t(e, { location: p.vC.Verification }).then((e) => {
                                 e.map((e) => {
                                     const t = e.id;
-                                    o(t);
+                                    a(t);
                                 }),
                                     r(e, { onFailure: this._handleRemoveBackID });
                             });
@@ -451,11 +451,11 @@
                             e && (t(e), r(void 0));
                         }),
                         (this._handleAddFrontMedia = (e) => {
-                            const { addMedia: t, processMultipleMedia: r, setFrontID: o } = this.props;
+                            const { addMedia: t, processMultipleMedia: r, setFrontID: a } = this.props;
                             t(e, { location: p.vC.Verification }).then((e) => {
                                 e.map((e) => {
                                     const t = e.id;
-                                    o(t);
+                                    a(t);
                                 }),
                                     r(e, { onFailure: this._handleRemoveFrontID });
                             });
@@ -480,7 +480,7 @@
                         }),
                         (this._renderCheckbox = () => {
                             const { isConfirmed: e } = this.props;
-                            return o.createElement(a.Z, { style: [b.Z.contentContainer, b.Z.checkboxContainer] }, o.createElement(a.Z, { style: b.Z.checkbox }, o.createElement(i.Z, { "aria-labelledby": B, checked: e, onChange: this._handleCheckboxChange })), o.createElement(a.Z, { id: B, style: b.Z.checkboxText }, o.createElement(n.ZP, { color: "gray700" }, U), o.createElement(n.ZP, { color: "gray700", style: b.Z.text }, V)));
+                            return a.createElement(o.Z, { style: [b.Z.contentContainer, b.Z.checkboxContainer] }, a.createElement(o.Z, { style: b.Z.checkbox }, a.createElement(i.Z, { "aria-labelledby": B, checked: e, onChange: this._handleCheckboxChange })), a.createElement(o.Z, { id: B, style: b.Z.checkboxText }, a.createElement(n.ZP, { color: "gray700" }, U), a.createElement(n.ZP, { color: "gray700", style: b.Z.text }, V)));
                         }),
                         (this._needsBackside = () => {
                             const { documentFormats: e, idCountry: t, idType: r } = this.props;
@@ -491,7 +491,7 @@
                                 r = this._needsBackside(),
                                 n = r ? N : W,
                                 i = r ? M : z;
-                            return o.createElement(a.Z, { "aria-labelledby": h.Q_, role: "group", style: Q.gridContainer }, o.createElement(S, { "aria-label": n, mediaItem: t, onChange: this._handleAddFrontMedia, onRemove: this._handleRemoveFrontID, title: i }), r && o.createElement(S, { "aria-label": O, mediaItem: e, onChange: this._handleAddBackMedia, onRemove: this._handleRemoveBackID, title: L }));
+                            return a.createElement(o.Z, { "aria-labelledby": h.Q_, role: "group", style: Q.gridContainer }, a.createElement(S, { "aria-label": n, mediaItem: t, onChange: this._handleAddFrontMedia, onRemove: this._handleRemoveFrontID, title: i }), r && a.createElement(S, { "aria-label": O, mediaItem: e, onChange: this._handleAddBackMedia, onRemove: this._handleRemoveBackID, title: L }));
                         });
                 }
                 componentDidMount() {
@@ -513,12 +513,12 @@
                 }
                 _renderError() {
                     const { uploadRequestError: e } = this.props;
-                    return this._handleScribe("failure"), o.createElement(T.Z, { error: e, onButtonClick: this._handleErrorButtonClick });
+                    return this._handleScribe("failure"), a.createElement(T.Z, { error: e, onButtonClick: this._handleErrorButtonClick });
                 }
                 _render() {
                     const { backID: e, frontID: t, isConfirmed: r, isNarrow: i } = this.props,
                         s = (this._needsBackside() && !e) || !t || !r || this._isUploading();
-                    return o.createElement(a.Z, { style: [b.Z.container, i && b.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: h.Q_, role: "heading", size: "title4", style: b.Z.header, weight: "heavy" }, R), o.createElement(a.Z, { style: b.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, A), this._renderUploadTargets(), this._renderCheckbox()), o.createElement(l.ZP, { disabled: s, onPress: this._handleSubmit, style: b.Z.buttonFixed, type: "brandFilled" }, $));
+                    return a.createElement(o.Z, { style: [b.Z.container, i && b.Z.narrowContainer] }, a.createElement(n.ZP, { "aria-level": 1, id: h.Q_, role: "heading", size: "title4", style: b.Z.header, weight: "heavy" }, R), a.createElement(o.Z, { style: b.Z.scrollableContainer }, a.createElement(n.ZP, { color: "gray700" }, A), this._renderUploadTargets(), this._renderCheckbox()), a.createElement(l.ZP, { disabled: s, onPress: this._handleSubmit, style: b.Z.buttonFixed, type: "brandFilled" }, $));
                 }
                 render() {
                     return this._isErrorState() ? this._renderError() : this._render();
@@ -529,8 +529,8 @@
         },
         594610: (e, t, r) => {
             r.d(t, { FW: () => I, ZP: () => w });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(731708),
                 i = r(154003),
                 l = r(111677),
@@ -555,39 +555,39 @@
                 k = s().cc87b01c,
                 I = (e) => {
                     const { authenticityType: t, createLocalApiErrorHandler: r, handleOnClick: l, isNarrow: u, notabilityCategory: b, notabilityData: y, notabilitySubcategory: I, verifyAccount: w } = e,
-                        x = (e) => o.createElement(n.ZP, { size: "subtext2", style: m.Z.subheading, weight: "heavy" }, e);
-                    return o.createElement(
-                        a.Z,
+                        x = (e) => a.createElement(n.ZP, { size: "subtext2", style: m.Z.subheading, weight: "heavy" }, e);
+                    return a.createElement(
+                        o.Z,
                         { style: [m.Z.container, u && m.Z.narrowContainer] },
-                        o.createElement(n.ZP, { "aria-level": 1, id: d.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, k),
-                        o.createElement(
-                            a.Z,
+                        a.createElement(n.ZP, { "aria-level": 1, id: d.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, k),
+                        a.createElement(
+                            o.Z,
                             { style: m.Z.scrollableContainer },
-                            o.createElement(n.ZP, { color: "gray700" }, _),
+                            a.createElement(n.ZP, { color: "gray700" }, _),
                             x(C),
-                            b && o.createElement(n.ZP, { style: m.Z.subtext }, p.aR[b]),
-                            I && ((P = p._v[I]), o.createElement(a.Z, null, x(E), o.createElement(n.ZP, { style: m.Z.subtext }, P))),
+                            b && a.createElement(n.ZP, { style: m.Z.subtext }, p.aR[b]),
+                            I && ((P = p._v[I]), a.createElement(o.Z, null, x(E), a.createElement(n.ZP, { style: m.Z.subtext }, P))),
                             y &&
                                 ((e) => {
                                     const t = (0, c.Z)(e, "newsType"),
                                         r = Object.values(t).flat();
-                                    return o.createElement(
-                                        a.Z,
+                                    return a.createElement(
+                                        o.Z,
                                         null,
                                         x(f),
-                                        r.map((e, t) => o.createElement(n.ZP, { key: t, style: m.Z.subtext }, e)),
+                                        r.map((e, t) => a.createElement(n.ZP, { key: t, style: m.Z.subtext }, e)),
                                     );
                                 })(y),
                             x(v),
                             t &&
                                 ((e) => {
                                     const t = { [h.L_.IDENTITY_DOCUMENT]: s().e43425fa, [h.L_.EMAIL]: s().a411926a, [h.L_.WEBSITE]: s().e1c78796 };
-                                    return (r = t[e]), o.createElement(n.ZP, { style: m.Z.subtext }, r);
+                                    return (r = t[e]), a.createElement(n.ZP, { style: m.Z.subtext }, r);
                                     var r;
                                 })(t),
-                            o.createElement(n.ZP, { color: "gray700", style: m.Z.contentContainer }, Z),
+                            a.createElement(n.ZP, { color: "gray700", style: m.Z.contentContainer }, Z),
                         ),
-                        o.createElement(
+                        a.createElement(
                             i.ZP,
                             {
                                 onClick: () => {
@@ -605,8 +605,8 @@
         },
         804582: (e, t, r) => {
             r.d(t, { ZP: () => g });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(891198),
                 i = r(731708),
                 l = r(154003),
@@ -620,16 +620,16 @@
             const b = c().ec6801cc,
                 y = c().j24c37b2,
                 g = ({ daysForDecision: e = 14, isNarrow: t, link: r, onSurveyClick: s, surveyUrl: g }) => {
-                    const { featureSwitches: Z } = o.useContext(h.rC),
+                    const { featureSwitches: Z } = a.useContext(h.rC),
                         C = Z.isTrue("identity_verification_notable_demo_survey");
-                    return o.createElement(a.Z, { style: m.Z.largeBannerContainer }, o.createElement(u.Z, { isNarrow: t, type: u.l.SENT }), o.createElement(a.Z, { style: [m.Z.container, m.Z.verticalCenter, t && m.Z.narrowContainer] }, o.createElement(i.ZP, { "aria-level": 1, id: p.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, b), o.createElement(i.ZP, { color: "gray700" }, ((E = e), o.createElement(c().I18NFormatMessage, { $i18n: "a1c39f5b", days: n.ZP.getFormattedCount(E) }))), C && g && o.createElement(i.ZP, { color: "gray700", style: m.Z.text }, o.createElement(c().I18NFormatMessage, { $i18n: "ja826537" }, o.createElement(i.ZP, { link: { pathname: g, openInSameFrame: d.ZP.isAndroid() && d.ZP.isTwitterApp() }, onClick: s }, c().i6ef95ec))), o.createElement(l.ZP, { link: { pathname: r, openInSameFrame: !0 }, style: m.Z.buttonPadded, type: "brandFilled" }, y)));
+                    return a.createElement(o.Z, { style: m.Z.largeBannerContainer }, a.createElement(u.Z, { isNarrow: t, type: u.l.SENT }), a.createElement(o.Z, { style: [m.Z.container, m.Z.verticalCenter, t && m.Z.narrowContainer] }, a.createElement(i.ZP, { "aria-level": 1, id: p.Q_, role: "heading", size: "title4", style: m.Z.header, weight: "heavy" }, b), a.createElement(i.ZP, { color: "gray700" }, ((E = e), a.createElement(c().I18NFormatMessage, { $i18n: "a1c39f5b", days: n.ZP.getFormattedCount(E) }))), C && g && a.createElement(i.ZP, { color: "gray700", style: m.Z.text }, a.createElement(c().I18NFormatMessage, { $i18n: "ja826537" }, a.createElement(i.ZP, { link: { pathname: g, openInSameFrame: d.ZP.isAndroid() && d.ZP.isTwitterApp() }, onClick: s }, c().i6ef95ec))), a.createElement(l.ZP, { link: { pathname: r, openInSameFrame: !0 }, style: m.Z.buttonPadded, type: "brandFilled" }, y)));
                     var E;
                 };
         },
         449479: (e, t, r) => {
             r.d(t, { Z: () => Z });
-            var o = r(202784),
-                a = r(325686),
+            var a = r(202784),
+                o = r(325686),
                 n = r(913973),
                 i = r(731708),
                 l = r(950822),
@@ -638,7 +638,7 @@
                 d = r(530732),
                 h = r(352924),
                 p = r(392237);
-            class m extends o.Component {
+            class m extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.labelId = (0, h.F)()),
@@ -656,7 +656,7 @@
                         Z = c.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
                         C = c.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
                         E = r ? Z : C;
-                    return o.createElement(s.Z, { disabled: h }, (s) => o.createElement(a.Z, { role: "label", style: [u.root, !h && u.interactive], testID: g }, o.createElement(a.Z, { style: u.topContainer }, o.createElement(i.ZP, { id: this.labelId }, b), o.createElement(a.Z, { style: u.radioContainer }, o.createElement(d.Z, { interactiveStyles: E, interactivityState: s, style: u.radioBackground }, o.createElement(a.Z, { style: [u.circle, r && u.circleActive, h && u.circleDisabled, r && h && u.circleCheckedAndDisabled] }, r ? o.createElement(n.default, { style: u.checkMark }) : null)), (0, l.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: r, disabled: h, name: y, onChange: this._handleChange, ref: this._setRef, style: [u.nativeControl], type: "radio" }))), m ? o.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: u.helpText }, m) : null));
+                    return a.createElement(s.Z, { disabled: h }, (s) => a.createElement(o.Z, { role: "label", style: [u.root, !h && u.interactive], testID: g }, a.createElement(o.Z, { style: u.topContainer }, a.createElement(i.ZP, { id: this.labelId }, b), a.createElement(o.Z, { style: u.radioContainer }, a.createElement(d.Z, { interactiveStyles: E, interactivityState: s, style: u.radioBackground }, a.createElement(o.Z, { style: [u.circle, r && u.circleActive, h && u.circleDisabled, r && h && u.circleCheckedAndDisabled] }, r ? a.createElement(n.default, { style: u.checkMark }) : null)), (0, l.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: r, disabled: h, name: y, onChange: this._handleChange, ref: this._setRef, style: [u.nativeControl], type: "radio" }))), m ? a.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: u.helpText }, m) : null));
                 }
                 focus() {
                     this._ref && this._ref.focus();
@@ -667,7 +667,7 @@
                 b = m,
                 y = "radioGroup";
             let g = 1;
-            class Z extends o.Component {
+            class Z extends a.Component {
                 constructor() {
                     super(),
                         (this._radioRefs = {}),
@@ -688,11 +688,11 @@
                 }
                 render() {
                     const { "aria-label": e, description: t, disabled: r, label: n, name: l, options: s, value: c } = this.props;
-                    return o.createElement(
-                        a.Z,
+                    return a.createElement(
+                        o.Z,
                         { "aria-label": e, "aria-labelledby": n && !e ? this._labelId : void 0, role: "radiogroup", style: r && C.disabled, testID: `${y}${l}` },
-                        n ? o.createElement(a.Z, { id: this._labelId, role: "label", style: C.header }, o.createElement(i.ZP, { style: C.label, weight: "bold" }, n), t ? o.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
-                        s.map((e, t) => o.createElement(b, { "aria-posinset": t + 1, "aria-setsize": s.length, checked: e.value === c, disabled: r, helpText: e.helpText, key: e.value, label: e.label, name: l, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(t, e.value === c), testID: e.testID })),
+                        n ? a.createElement(o.Z, { id: this._labelId, role: "label", style: C.header }, a.createElement(i.ZP, { style: C.label, weight: "bold" }, n), t ? a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
+                        s.map((e, t) => a.createElement(b, { "aria-posinset": t + 1, "aria-setsize": s.length, checked: e.value === c, disabled: r, helpText: e.helpText, key: e.value, label: e.label, name: l, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(t, e.value === c), testID: e.testID })),
                     );
                 }
             }
@@ -700,37 +700,35 @@
             const C = p.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
         },
         183806: (e, t, r) => {
-            r.d(t, { Z: () => o });
-            const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+            r.d(t, { Z: () => a });
+            const a = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        293615: (e, t, r) => {
+        988227: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
-            var o = r(202784),
-                a = r(890601),
+            var a = r(202784),
+                o = r(890601),
                 n = r(783427),
                 i = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var o = r(202784),
-                a = r(890601),
+        748138: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var a = r(202784),
+                o = r(890601),
                 n = r(783427),
-                i = r(717683),
-                l = r(347101);
-            const s = (e = {}) => {
-                const t = o.useContext(i.Z),
-                    { direction: r } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
+                i = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.10726e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.d138185a.js.map

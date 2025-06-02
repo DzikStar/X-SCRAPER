@@ -5509,13 +5509,35 @@
                 o("g22c8c30", "Ako te bilješke dovoljan broj suradnika ocijeni korisnima, uključujući one koji se obično ne slažu oko ocjena, one će postati javno vidljive uz objavu kao dodatni kontekst."),
                 o("jf04b084", "Te su bilješke dodali suradnici koji smatraju da ta objava ne sadrži netočne informacije te da nije potreban dodatni kontekst."),
                 o("g5a72e98", "Vidljive su samo u Bilješkama zajednice kao dodatne informacije za ocjenjivače te se ne prikazuju kao dodatni kontekst uz objavu, čak i ako imaju status Korisno."),
-                o("h53cb7de", "Što mislite o ovoj objavi?"),
-                o("dc3bfc82", "Što vam se, ako išta, sviđa o ovoj objavi?"),
-                o("b4704bf4", "Što vam se, ako išta, ne sviđa o ovoj objavi?"),
+                o("b8719c22", "Pomognite utvrditi jesu li objave oznakom „sviđa mi se” označile osobe različitih stajališta."),
+                o("jcdf97d4", "Što vam se u toj objavi sviđa?"),
+                o("d4d7b67e", "Što vam se u toj objavi ne sviđa?"),
                 o("ed5156fa", "Pri spremanju ocjene pojavila se pogreška. Pokušajte ponovno."),
-                o("d5f9fb42", "Ocijenili ste to isticanje zajednice"),
+                o("d0ed3636", "Tu ste objavu ocijenili"),
                 o("j6aa6172", "Želite izbrisati ocjenu?"),
                 o("i4112750", "Ta se radnja ne može poništiti."),
+                o("i6f6191a", "Hvala!"),
+                o("h5575012", "Agree and submit"),
+                o("f9171e52", "Ta je objava dobila nekoliko oznaka „sviđa mi se” od osoba koje se obično ne slažu, no dosadašnji su podaci ograničeni."),
+                o("j0f9919a", "Vaša ocjena neće negativno utjecati na objavu, no može pomoći u pozitivnom prepoznavanju objava koje mnogi označavaju oznakom „sviđa mi se”."),
+                o("b3af830c", "Vaš unos:"),
+                o("d0b29562", "Ocijenite još objava"),
+                o("i36ea87a", "Slažem se"),
+                o("d5befc34", "Saznao sam nešto zanimljivo"),
+                o("je26ecf2", "Izjavljuje nešto smisleno"),
+                o("e4e331aa", "Objedinjuje temu o kojoj su mišljenja često podijeljena"),
+                o("ed61ff2a", "Dirljivo je ili simpatično"),
+                o("gc3104d8", "Inspirativno je ili uzbudljivo"),
+                o("j8c4400e", "Zabavno je"),
+                o("j4738406", "N/A: nema ničega što mi se sviđa"),
+                o("d93d1666", "Ne slažem se"),
+                o("d6130466", "Ne sadrži ništa smisleno"),
+                o("d96835b6", "Ne zanima me"),
+                o("b7ba4150", "N/A: nema ničega što mi se ne sviđa"),
+                o("g0402b3b", "koje su oznakom „sviđa mi se” označile osobe različitih stajališta"),
+                o("ged62c2b", "istaknuti"),
+                o("b5d5f7f1", "Usmjerava"),
+                o("a42fef87", "Learn more"),
                 o("bd7eb888", "Pogledajte sve bilješke o ovoj objavi"),
                 o("i97b83f6", "Pri slanju žalbe došlo je do pogreške. Pokušajte ponovno."),
                 o("a038ab9a", "Prevedi zabilješku"),
@@ -5866,8 +5888,8 @@
                 o("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Izbriši mapu"),
-                o("f4ea967a", "Mapa je izbrisana"),
+                o("h18f86a4", "Izbriši mapu");
+            o("f4ea967a", "Mapa je izbrisana"),
                 o("b670aa62", "Naziv mape"),
                 o("aece5462", "Naziv mape uspješno je ažuriran"),
                 o("e3299b94", "Došlo je do pogreške. Ponovno pokušajte tu mapu ažurirati za koju minutu."),
@@ -5898,8 +5920,8 @@
                     return "Završeno " + a.timestamp;
                 }),
                 o("daca8a2c", "Otvori u oknu"),
-                o("e3aac82a", "Učitavanje prijenosa uživo");
-            o("i0ed3f4e", "Slika događaja"),
+                o("e3aac82a", "Učitavanje prijenosa uživo"),
+                o("i0ed3f4e", "Slika događaja"),
                 o("cbae35fa", "Prijavi prijenos uživo"),
                 o("fd12ab58", "Objave u Kolekciji"),
                 o("a226497c", "Stvaranje nove zajednice"),
@@ -6870,8 +6892,8 @@
                 o("b925c18c", "Vrsta plaće"),
                 o("j3d242ce", "Raspon nije valjan"),
                 o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja."),
-                o("b8cbb51a", "Sažetak posla"),
-                o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti."),
+                o("b8cbb51a", "Sažetak posla");
+            o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti."),
                 o("b075c68a", "Uredi posao"),
                 o("d4b6a6e0", "Pojedinosti o profilu"),
                 o("j2dd3686", "Istakni izdvojene poslove iznad mojih objava."),
@@ -6896,8 +6918,8 @@
                 o("c0195168", "Promijenite ikonu aplikacije i opcije navigacije"),
                 o("b6b5dc94", "Provjerite svoju autentičnost"),
                 o("b06db848", "Istaknite se među ostalima na platformi"),
-                o("e3e3a97c", "Zarađujte udio u prihodu od objava");
-            o("f15bc24e", "Povećana ograničenja značajke Grok"),
+                o("e3e3a97c", "Zarađujte udio u prihodu od objava"),
+                o("f15bc24e", "Povećana ograničenja značajke Grok"),
                 o("c4666e1c", "Veće mogućnosti upotrebe značajke Grok 3, našeg najnovijeg modela"),
                 o("he74ae7a", "Najveća ograničenja upotrebe značajke Grok"),
                 o("f5732cd4", "Plus, proširen pristup značajkama DeepSearch i Razmišljanje"),
@@ -7214,16 +7236,16 @@
                 o("hd80bd3e", "Promovirajte objavu"),
                 o("fe2b0008", "Saznajte kako upotrebljavati X"),
                 o("h257d4aa", "Odaberite objavu za promoviranje"),
-                o("fe946974", "Your trial of X without ads"),
-                o("f6c50ec0", "Your ad-free trial has ended"),
-                o("b1319404", "Ads avoided"),
-                o("baa4acae", "You’re seeing more personalized content."),
-                o("c00e8600", "Estimated time saved"),
-                o("ic073e4e", "Your time is valuable."),
-                o("eb866e88", "Estimated 1-year time savings"),
-                o("aa77b70c", "Based on your usage."),
-                o("c534c6b4", "We’re crunching the numbers..."),
-                o("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                o("fe946974", "Vaša probna verzija platforme X bez oglasa"),
+                o("f6c50ec0", "Vaše probno razdoblje bez oglasa završilo je"),
+                o("b1319404", "Izbjegnuti oglasi"),
+                o("baa4acae", "Prikazuje vam se više personaliziranog sadržaja."),
+                o("c00e8600", "Procijenjena ušteda vremena"),
+                o("ic073e4e", "Vaše je vrijeme vrijedno."),
+                o("eb866e88", "Procijenjena jednogodišnja ušteda vremena"),
+                o("aa77b70c", "Na temelju vaše upotrebe."),
+                o("c534c6b4", "Zbrajamo..."),
+                o("i57332f0", "Nastavite pregledavati i provjerite kasnije kako biste vidjeli koliko ste oglasa izbjegli i koliko ste vremena uštedjeli"),
                 o("cc10f019", function (a) {
                     return a.minutes + " minut" + n(a.minutes, "e", "a", "a");
                 }),
@@ -7239,11 +7261,11 @@
                 o("be88be23", function (a) {
                     return "Aktivirano je vaše " + a.durationInDays + "-dnevno probno razdoblje bez oglasa";
                 }),
-                o("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                o("ae3f3b0e", "Enjoy!"),
-                o("cdac8dc4", "See your new feed"),
+                o("a4413462", "Tijekom probnog razdoblja možete vidjeti statistiku o tome koliko ste oglasa izbjegli i koliko ste vremena uštedjeli."),
+                o("ae3f3b0e", "Uživajte!"),
+                o("cdac8dc4", "Pogledajte svoj novi sažetak sadržaja"),
                 o("dec99336", "Bez oglasa"),
-                o("i95803fa", "Unfortunately, you are not eligible at this time."),
+                o("i95803fa", "Nažalost, trenutačno ne ispunjavate uvjete."),
                 o("d28a1d72", "Prvi uočite trendove pomoću značajke Radar"),
                 o("fb70427a", "Uvodimo najmoćniji alat za pretraživanje na platformi X."),
                 o("i54bf620", "Pratite ključne riječi"),
@@ -7848,35 +7870,7 @@
                 o("c29e3a88", "Odaberite povezane račune"),
                 o("j8318d57", function (a) {
                     return a.number + " povezan" + n(a.number, "a računa", "i račun", "ih računa");
-                }),
-                o("bf809ec0", "Odaberite povezane račune"),
-                o("b719e224", "Nema rezultata"),
-                o("c9938100", "Rezultati pretraživanja"),
-                o("d1a35ec6", "Dodaj račune"),
-                o("b437adda", "Nadogradite da biste primali isplatu"),
-                o("f1f6c88b", function (a) {
-                    return "Računi (" + a.count + ")";
-                }),
-                o("b02156b8", "Pozivnice"),
-                o("gd67d29b", function (a) {
-                    return "Pozivnice (" + a.count + ")";
-                }),
-                o("daf646e6", "Imajte na umu: račune morate označiti na odgovarajući način."),
-                o("i3895c32", "Vaš se račun pregledava jer ste promijenili @nadimak na X-u"),
-                o("i5f8b628", "Svoje povezane račune ne možete mijenjati dok se vaš račun ne pregleda."),
-                o("e9e663ac", "Vaše plaćanje kasni."),
-                o("c3ddd22c", "uvjetima"),
-                o("c9729d8a", "uvjetima"),
-                o("cdcd1d2c", "Dodajte povezane račune svojoj organizaciji"),
-                o("d30ea6f3", function (a) {
-                    return "Želite li sigurno ukloniti korisnika @" + a.name + "?";
-                }),
-                o("c2dfbb86", "Da, nastavi"),
-                o("ba047f76", "Uklanjanjem suradnika odmah se uklanja njegova kvačica i suradnička značka. Naplaćivat će vam se do kraja mjeseca."),
-                o("j26dee0e", "Ukloni povezani račun"),
-                o("e30cbdf0", "Ovaj povezani račun pretplatnik je značajke Provjerene organizacije i mora ostati organizacija. Ne može se promijeniti u pojedinca."),
-                o("j3115ce8", "Pojedinac"),
-                o("d8bb1d84", "Organizacija");
+                });
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7915,9 +7909,37 @@
                     r(a, e)
                 );
             }
-            o("e970bdbd", function (a) {
-                return "Preostaje još ovoliko pozivnica: " + a.count + " ";
-            }),
+            o("bf809ec0", "Odaberite povezane račune"),
+                o("b719e224", "Nema rezultata"),
+                o("c9938100", "Rezultati pretraživanja"),
+                o("d1a35ec6", "Dodaj račune"),
+                o("b437adda", "Nadogradite da biste primali isplatu"),
+                o("f1f6c88b", function (a) {
+                    return "Računi (" + a.count + ")";
+                }),
+                o("b02156b8", "Pozivnice"),
+                o("gd67d29b", function (a) {
+                    return "Pozivnice (" + a.count + ")";
+                }),
+                o("daf646e6", "Imajte na umu: račune morate označiti na odgovarajući način."),
+                o("i3895c32", "Vaš se račun pregledava jer ste promijenili @nadimak na X-u"),
+                o("i5f8b628", "Svoje povezane račune ne možete mijenjati dok se vaš račun ne pregleda."),
+                o("e9e663ac", "Vaše plaćanje kasni."),
+                o("c3ddd22c", "uvjetima"),
+                o("c9729d8a", "uvjetima"),
+                o("cdcd1d2c", "Dodajte povezane račune svojoj organizaciji"),
+                o("d30ea6f3", function (a) {
+                    return "Želite li sigurno ukloniti korisnika @" + a.name + "?";
+                }),
+                o("c2dfbb86", "Da, nastavi"),
+                o("ba047f76", "Uklanjanjem suradnika odmah se uklanja njegova kvačica i suradnička značka. Naplaćivat će vam se do kraja mjeseca."),
+                o("j26dee0e", "Ukloni povezani račun"),
+                o("e30cbdf0", "Ovaj povezani račun pretplatnik je značajke Provjerene organizacije i mora ostati organizacija. Ne može se promijeniti u pojedinca."),
+                o("j3115ce8", "Pojedinac"),
+                o("d8bb1d84", "Organizacija"),
+                o("e970bdbd", function (a) {
+                    return "Preostaje još ovoliko pozivnica: " + a.count + " ";
+                }),
                 o("id67d953", function (a) {
                     return "Došlo je do pogreške prilikom dohvaćanja podataka o odjavi za Stripe. Ako se problem nastavi pojavljivati, obratite se na" + a.supportEmail + ".";
                 }),
@@ -8890,8 +8912,8 @@
                 o("ha3efce4", "Automatski"),
                 o("hd8d044d", function (a) {
                     return "Automatski (" + a.quality + ")";
-                }),
-                o("a7bf9962", "Preuzmi videozapis"),
+                });
+            o("a7bf9962", "Preuzmi videozapis"),
                 o("ccc97152", "Brzina reprodukcije"),
                 o("h531ade0", "Kvaliteta videozapisa"),
                 o("e8b5757c", "0,25x"),
@@ -8922,8 +8944,8 @@
                 o("c1658fc6", "Taj medijski sadržaj nije moguće reproducirati."),
                 o("h519ae04", "Ti su medijski sadržaji onemogućeni zbog kršenja autorskih prava."),
                 o("ce871584", "To je emitiranje uživo završilo."),
-                o("c101eb96", "Taj prijenos uživo nije dostupan.");
-            o("gb24a514", "Taj je medijski sadržaj onemogućen na temelju prijave vlasnika autorskih prava."),
+                o("c101eb96", "Taj prijenos uživo nije dostupan."),
+                o("gb24a514", "Taj je medijski sadržaj onemogućen na temelju prijave vlasnika autorskih prava."),
                 o("hcaf3e63", function (a) {
                     return "Ti su medijski sadržaji onemogućeni zbog kršenja autorskih prava čiji je vlasnik " + a.holder + ".";
                 }),
@@ -11492,6 +11514,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Pomaže pronaći objave "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Objavama neće štetiti, ali moglo bi ", " one koje mnogi označavaju oznakom „sviđa mi se”"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " tu eksperimentalnu značajku"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Kao autor objave možete "];
@@ -12082,7 +12128,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", " % naknade, min. "];
                             },
                         },
                         {
@@ -13316,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.13fe7b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.d44e57ba.js.map

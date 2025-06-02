@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a", "icons/IconSparkle-js"],
+    ["bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a"],
     {
         184329: (l, e, a) => {
             a.d(e, { Z: () => b });
@@ -1136,32 +1136,6 @@
             const g = t.default.create((l) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: l.spaces.space20 } })),
                 y = c;
         },
-        264171: (l, e, a) => {
-            a.r(e), a.d(e, { default: () => t });
-            var n = a(202784),
-                i = a(890601),
-                s = a(783427),
-                r = a(347101);
-            const u = (l = {}) => {
-                const { direction: e } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...l, role: l["aria-label"] ? l.role || "img" : void 0, "aria-hidden": void 0 === l["aria-label"], style: [r.Z.root, l.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: e });
-            };
-            u.metadata = { width: 24, height: 24 };
-            const t = u;
-        },
-        262009: (l, e, a) => {
-            a.r(e), a.d(e, { default: () => t });
-            var n = a(202784),
-                i = a(890601),
-                s = a(783427),
-                r = a(347101);
-            const u = (l = {}) => {
-                const { direction: e } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...l, role: l["aria-label"] ? l.role || "img" : void 0, "aria-hidden": void 0 === l["aria-label"], style: [r.Z.root, l.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: e });
-            };
-            u.metadata = { width: 24, height: 24 };
-            const t = u;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.56f4980a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-6107ac1a.8c2aaa3a.js.map

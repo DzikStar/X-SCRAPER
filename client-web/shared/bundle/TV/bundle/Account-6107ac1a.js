@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TV~bundle.Account-6107ac1a"],
+    ["shared~bundle.TV~bundle.Account-6107ac1a", "icons/IconExiting-js"],
     {
         396342: function (t, e, o) {
             var n, s, i, r, a, u, c, l, d, f, h, p;
@@ -93,12 +93,12 @@
                                     K = "up",
                                     w = "down",
                                     D = "enter",
-                                    P = (((n = {}).left = [37, "ArrowLeft"]), (n.up = [38, "ArrowUp"]), (n.right = [39, "ArrowRight"]), (n.down = [40, "ArrowDown"]), (n.enter = [13, "Enter"]), n);
+                                    E = (((n = {}).left = [37, "ArrowLeft"]), (n.up = [38, "ArrowUp"]), (n.right = [39, "ArrowRight"]), (n.down = [40, "ArrowDown"]), (n.enter = [13, "Enter"]), n);
                                 e.ROOT_FOCUS_KEY = "SN:ROOT";
-                                var E = { leading: !0, trailing: !1 },
+                                var P = { leading: !0, trailing: !1 },
                                     L = (function () {
                                         function t() {
-                                            (this.focusableComponents = {}), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.useGetBoundingClientRect = !1), (this.shouldFocusDOMNode = !1), (this.shouldUseNativeEvents = !1), (this.writingDirection = C.default.LTR), (this.pressedKeys = {}), (this.paused = !1), (this.keyDownEventListener = null), (this.keyUpEventListener = null), (this.keyMap = P), (this.onKeyEvent = this.onKeyEvent.bind(this)), (this.pause = this.pause.bind(this)), (this.resume = this.resume.bind(this)), (this.setFocus = this.setFocus.bind(this)), (this.updateAllLayouts = this.updateAllLayouts.bind(this)), (this.navigateByDirection = this.navigateByDirection.bind(this)), (this.init = this.init.bind(this)), (this.setThrottle = this.setThrottle.bind(this)), (this.destroy = this.destroy.bind(this)), (this.setKeyMap = this.setKeyMap.bind(this)), (this.getCurrentFocusKey = this.getCurrentFocusKey.bind(this)), (this.doesFocusableExist = this.doesFocusableExist.bind(this)), (this.setFocusDebounced = (0, c.default)(this.setFocus, 300, { leading: !1, trailing: !0 })), (this.debug = !1), (this.visualDebugger = null), (this.logIndex = 0);
+                                            (this.focusableComponents = {}), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.useGetBoundingClientRect = !1), (this.shouldFocusDOMNode = !1), (this.shouldUseNativeEvents = !1), (this.writingDirection = C.default.LTR), (this.pressedKeys = {}), (this.paused = !1), (this.keyDownEventListener = null), (this.keyUpEventListener = null), (this.keyMap = E), (this.onKeyEvent = this.onKeyEvent.bind(this)), (this.pause = this.pause.bind(this)), (this.resume = this.resume.bind(this)), (this.setFocus = this.setFocus.bind(this)), (this.updateAllLayouts = this.updateAllLayouts.bind(this)), (this.navigateByDirection = this.navigateByDirection.bind(this)), (this.init = this.init.bind(this)), (this.setThrottle = this.setThrottle.bind(this)), (this.destroy = this.destroy.bind(this)), (this.setKeyMap = this.setKeyMap.bind(this)), (this.getCurrentFocusKey = this.getCurrentFocusKey.bind(this)), (this.doesFocusableExist = this.doesFocusableExist.bind(this)), (this.setFocusDebounced = (0, c.default)(this.setFocus, 300, { leading: !1, trailing: !0 })), (this.debug = !1), (this.visualDebugger = null), (this.logIndex = 0);
                                         }
                                         return (
                                             (t.getCutoffCoordinate = function (t, e, o, n, s) {
@@ -217,7 +217,7 @@
                                                 e();
                                             }),
                                             (t.prototype.destroy = function () {
-                                                this.enabled && ((this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.focusableComponents = {}), (this.paused = !1), (this.keyMap = P), this.unbindEventHandlers());
+                                                this.enabled && ((this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.focusableComponents = {}), (this.paused = !1), (this.keyMap = E), this.unbindEventHandlers());
                                             }),
                                             (t.prototype.getEventType = function (t) {
                                                 return (0, f.default)(this.getKeyMap(), function (e) {
@@ -243,7 +243,7 @@
                                                             }
                                                         }
                                                     }),
-                                                    this.throttle && (this.keyDownEventListenerThrottled = (0, g.default)(this.keyDownEventListener.bind(this), this.throttle, E)),
+                                                    this.throttle && (this.keyDownEventListenerThrottled = (0, g.default)(this.keyDownEventListener.bind(this), this.throttle, P)),
                                                     (this.keyUpEventListener = function (o) {
                                                         var n = t.getKeyCode(o),
                                                             s = e.getEventType(n);
@@ -751,13 +751,13 @@
                                         K = void 0 === x ? i.default : x,
                                         w = e.onEnterRelease,
                                         D = void 0 === w ? i.default : w,
-                                        P = e.onArrowPress,
-                                        E =
-                                            void 0 === P
+                                        E = e.onArrowPress,
+                                        P =
+                                            void 0 === E
                                                 ? function () {
                                                       return !0;
                                                   }
-                                                : P,
+                                                : E,
                                         L = e.onFocus,
                                         M = void 0 === L ? i.default : L,
                                         N = e.onBlur,
@@ -777,9 +777,9 @@
                                         ),
                                         B = (0, s.useCallback)(
                                             function (t, e) {
-                                                return E(t, R, e);
+                                                return P(t, R, e);
                                             },
-                                            [R, E],
+                                            [R, P],
                                         ),
                                         k = (0, s.useCallback)(
                                             function (t, e) {
@@ -799,8 +799,8 @@
                                         H = U[1],
                                         I = (0, s.useState)(!1),
                                         Y = I[0],
-                                        W = I[1],
-                                        Z = (0, u.useFocusContext)(),
+                                        Z = I[1],
+                                        W = (0, u.useFocusContext)(),
                                         G = (0, s.useMemo)(
                                             function () {
                                                 return F || (0, r.default)("sn:focusable-item-");
@@ -820,7 +820,7 @@
                                                 a.SpatialNavigation.addFocusable({
                                                     focusKey: G,
                                                     node: t,
-                                                    parentFocusKey: Z,
+                                                    parentFocusKey: W,
                                                     preferredChildFocusKey: m,
                                                     onEnterPress: _,
                                                     onEnterRelease: O,
@@ -831,7 +831,7 @@
                                                         return void 0 === t && (t = !1), H(t);
                                                     },
                                                     onUpdateHasFocusedChild: function (t) {
-                                                        return void 0 === t && (t = !1), W(t);
+                                                        return void 0 === t && (t = !1), Z(t);
                                                     },
                                                     saveLastFocusedChild: l,
                                                     trackChildren: f,
@@ -961,6 +961,20 @@
                         return [n.getUTCFullYear(), r, c];
                     },
                 };
+        },
+        297896: (t, e, o) => {
+            "use strict";
+            o.r(e), o.d(e, { default: () => u });
+            var n = o(202784),
+                s = o(890601),
+                i = o(783427),
+                r = o(347101);
+            const a = (t = {}) => {
+                const { direction: e } = (0, i.Z)();
+                return (0, s.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: e });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const u = a;
         },
         614425: (t, e, o) => {
             "use strict";
@@ -1504,9 +1518,9 @@
                     K = (0, s.Z)(t, d),
                     w = (0, i.useRef)(null),
                     D = (0, r.Z)(e, w),
-                    P = (0, i.useState)("0s"),
-                    E = P[0],
-                    L = P[1],
+                    E = (0, i.useState)("0s"),
+                    P = E[0],
+                    L = E[1],
                     M = (0, i.useState)(null),
                     N = M[0],
                     T = M[1],
@@ -1548,7 +1562,7 @@
                         [p, u, f, y, g, b, C, F, m, _, O],
                     ),
                     k = (0, a.Z)(w, B);
-                return i.createElement(c.Z, (0, n.Z)({}, K, k, { accessibilityDisabled: y, focusable: !y && !1 !== v, pointerEvents: y ? "box-none" : void 0, ref: D, style: [h.root, !y && h.actionable, x, null != N && { opacity: N }, { transitionDuration: E }] }));
+                return i.createElement(c.Z, (0, n.Z)({}, K, k, { accessibilityDisabled: y, focusable: !y && !1 !== v, pointerEvents: y ? "box-none" : void 0, ref: D, style: [h.root, !y && h.actionable, x, null != N && { opacity: N }, { transitionDuration: P }] }));
             }
             var h = u.Z.create({ root: { transitionProperty: "opacity", transitionDuration: "0.15s", userSelect: "none" }, actionable: { cursor: "pointer", touchAction: "manipulation" } }),
                 p = i.memo(i.forwardRef(f));
@@ -1557,4 +1571,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.34bd407a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.4788a33a.js.map

@@ -8,7 +8,7 @@
             const n = (e) => e === o.p_;
         },
         999769: (e, t, s) => {
-            s.d(t, { ZP: () => u });
+            s.d(t, { ZP: () => p });
             var o = s(807896),
                 n = s(202784),
                 i = s(154003),
@@ -18,8 +18,8 @@
                 c = s(111677),
                 d = s.n(c),
                 h = s(982790),
-                p = s(907552);
-            function u(e) {
+                u = s(907552);
+            function p(e) {
                 const { audioSpaceId: t, type: s } = e,
                     { space: o, utils: i } = (0, h.$)(t),
                     r = i.hashtags().join(" ");
@@ -27,7 +27,7 @@
                 "icon" === s ? (a = f) : "icon-borderless" === s && (a = g);
                 const l = i.is.replayable ? void 0 : b.dmText,
                     c = Boolean(o?.is_employee_only);
-                return n.createElement(p.ZP.Custom, { ButtonComponent: a, isFixed: e.isFixed, pullRight: e.pullRight, scribeNamespace: _, url: y(t) }, c ? null : n.createElement(p.ZP.Action, { scribeNamespace: w.tweet, shareText: r, type: "tweet" }), n.createElement(p.ZP.Action, { scribeNamespace: w.dm, shareText: l, type: "dm" }), n.createElement(p.ZP.Action, { scribeNamespace: w.copy, shareText: r, type: "copy" }), n.createElement(p.ZP.Action, { scribeNamespace: w.via, shareText: r, type: "via" }));
+                return n.createElement(u.ZP.Custom, { ButtonComponent: a, isFixed: e.isFixed, pullRight: e.pullRight, scribeNamespace: _, url: y(t) }, c ? null : n.createElement(u.ZP.Action, { scribeNamespace: w.tweet, shareText: r, type: "tweet" }), n.createElement(u.ZP.Action, { scribeNamespace: w.dm, shareText: l, type: "dm" }), n.createElement(u.ZP.Action, { scribeNamespace: w.copy, shareText: r, type: "copy" }), n.createElement(u.ZP.Action, { scribeNamespace: w.via, shareText: r, type: "via" }));
             }
             function m(e) {
                 return n.createElement(i.ZP, (0, o.Z)({}, e, { borderColor: "transparent", style: C.shareButton, type: "primaryOutlined" }), b.share);
@@ -56,8 +56,8 @@
                 c = s.n(l),
                 d = s(177371),
                 h = s(295417),
-                p = s(321449),
-                u = s(443781),
+                u = s(321449),
+                p = s(443781),
                 m = s(807896),
                 f = s(154003);
             const g = c().a0e81a2e,
@@ -74,8 +74,8 @@
                     .withAnalytics(),
                 x = c().f277e94a,
                 I = { text: o.createElement(h.Z, null), isGlobalSensitiveMedia: !0, withBlurredMedia: !1 },
-                E = { MessageComponent: p.Z, isGlobalSensitiveMedia: !1, withBlurredMedia: !0 },
-                D = { MessageComponent: p.Z, isGlobalSensitiveMedia: !0, withBlurredMedia: !0 };
+                E = { MessageComponent: u.Z, isGlobalSensitiveMedia: !1, withBlurredMedia: !0 },
+                D = { MessageComponent: u.Z, isGlobalSensitiveMedia: !0, withBlurredMedia: !0 };
             class Z extends o.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -110,7 +110,7 @@
                     return e.withBlurredMedia ? this._renderBlurredMediaTombstone() : this._renderStaticTombstone();
                 }
             }
-            (Z.contextType = u.rC), (Z.defaultProps = { withRoundedCorners: !0 });
+            (Z.contextType = p.rC), (Z.defaultProps = { withRoundedCorners: !0 });
             const T = a.default.create((e) => ({ blur: { filter: "blur(30px)" }, flexGrow: { flexGrow: 1 }, blurredMediaTombstoneContainer: { overflow: "hidden", minHeight: "16em" }, roundedBorders: { borderRadius: e.borderRadii.xLarge }, hideButton: { position: "absolute", end: e.spaces.space16, bottom: e.spaces.space12 }, positiveMargins: { marginHorizontal: e.spacesPx.space16 }, negativeMargins: { marginHorizontal: -e.spacesPx.space16 } })),
                 R = v(Z);
         },
@@ -124,7 +124,7 @@
                 l = () => o.createElement(r.Z, { inline: !0 }, a);
         },
         177371: (e, t, s) => {
-            s.d(t, { Z: () => u });
+            s.d(t, { Z: () => p });
             var o = s(807896),
                 n = s(202784),
                 i = s(325686),
@@ -142,22 +142,22 @@
                         }),
                         (this._renderCarouselTombstone = (e) => {
                             const { children: t } = this.props;
-                            return n.createElement(i.Z, { style: p.carouselTombstone }, n.createElement(r.Z, (0, o.Z)({}, e, { actionButtonWrapperStyle: p.carouselButton, style: p.carouselContent }), t ?? null));
+                            return n.createElement(i.Z, { style: u.carouselTombstone }, n.createElement(r.Z, (0, o.Z)({}, e, { actionButtonWrapperStyle: u.carouselButton, style: u.carouselContent }), t ?? null));
                         }),
                         (this._renderTweetTombstone = (e) => {
                             const { additionalActions: t, children: s, conversationPosition: i, conversationTreeMetadata: r, inline: c, role: d } = this.props,
-                                { isEnd: h, isStart: p } = i || {},
-                                u = r && r.indents,
+                                { isEnd: h, isStart: u } = i || {},
+                                p = r && r.indents,
                                 m = r && r.ancestorConnector,
                                 f = r && r.descendantConnector,
-                                g = u ? "side" === m : void 0,
-                                y = u ? "top" === m : !p,
-                                _ = u ? f : !h;
+                                g = p ? "side" === m : void 0,
+                                y = p ? "top" === m : !u,
+                                _ = p ? f : !h;
                             this._getTombstoneType(s);
                             return n.createElement(
                                 n.Fragment,
                                 null,
-                                n.createElement(a.Z.Consumer, null, ({ avatarSize: i }) => n.createElement(l.Z, (0, o.Z)({}, e, { additionalActions: t, avatarSize: "xxLarge" === i ? "xLarge" : i, indents: u, role: d, withBottomLine: _, withElbow: g, withFooterGap: !c, withHeader: !c, withHorizontalPadding: !c, withTopLine: y }), s)),
+                                n.createElement(a.Z.Consumer, null, ({ avatarSize: i }) => n.createElement(l.Z, (0, o.Z)({}, e, { additionalActions: t, avatarSize: "xxLarge" === i ? "xLarge" : i, indents: p, role: d, withBottomLine: _, withElbow: g, withFooterGap: !c, withHeader: !c, withHorizontalPadding: !c, withTopLine: y }), s)),
                                 !1,
                             );
                         }),
@@ -182,8 +182,8 @@
                 }
             }
             h.defaultProps = { additionalActions: [], carousel: !1, conversationPosition: { isStart: !0, isEnd: !0 }, inline: !1 };
-            const p = c.default.create((e) => ({ carouselTombstone: { padding: e.spaces.space12 }, carouselContent: { borderRadius: e.borderRadii.small, flexDirection: "column" }, carouselButton: { marginVertical: 0 } })),
-                u = (0, d.Z)(h, { component: "tombstone" });
+            const u = c.default.create((e) => ({ carouselTombstone: { padding: e.spaces.space12 }, carouselContent: { borderRadius: e.borderRadii.small, flexDirection: "column" }, carouselButton: { marginVertical: 0 } })),
+                p = (0, d.Z)(h, { component: "tombstone" });
         },
         928875: (e, t, s) => {
             s.d(t, { T: () => l, t: () => a });
@@ -219,13 +219,13 @@
                 c = s(666418),
                 d = s(392237),
                 h = s(954300),
-                p = s(443781),
-                u = s(24949),
+                u = s(443781),
+                p = s(24949),
                 m = s(782261),
                 f = s(668214),
                 g = s(836255),
                 y = s(919022);
-            const _ = (0, u.P1)(
+            const _ = (0, p.P1)(
                     (e, t) => {
                         const s = "tweet" === t.videoConfig.source?.videoId?.type,
                             o = g.Z.createHydratedSelector(e);
@@ -241,33 +241,37 @@
                 ),
                 w = (0, f.Z)().propsFromState(() => ({ includeDisputeLinkInCopyrightErrorMessage: _ })),
                 C = ({ includeDisputeLinkInCopyrightErrorMessage: e, onClick: t, shouldUseCompactUI: s, testID: i, videoConfig: d }) => {
-                    const { aspectRatio: u, autoplayGroupOptions: m, expandedUrl: f, liveBroadcastRewindEnabled: g, type: y, ..._ } = d,
-                        [w, C] = n.useState(u),
-                        { history: v } = n.useContext(p.rC),
-                        x = n.useCallback((e) => {
+                    const { aspectRatio: p, autoplayGroupOptions: m, expandedUrl: f, liveBroadcastRewindEnabled: g, type: y, ..._ } = d,
+                        [w, C] = n.useState(p),
+                        v = n.useRef(!1),
+                        { history: x } = n.useContext(u.rC),
+                        I = n.useCallback((e) => {
                             const {
                                 nativeEvent: {
                                     layout: { height: t, width: s },
                                 },
                             } = e;
-                            s && t && C(s / t);
+                            if (s && t) {
+                                if (v.current) return void (v.current = !1);
+                                (v.current = !0), C(s / t);
+                            }
                         }, []),
-                        I = (0, a.GS)(),
-                        E = n.useCallback(
-                            ({ playerApi: e }) => {
-                                e?.pause(), f && v.push("string" == typeof f ? f : { pathname: f.pathname, state: f.state });
-                            },
-                            [f, v, I],
-                        ),
+                        E = (0, a.GS)(),
                         D = n.useCallback(
+                            ({ playerApi: e }) => {
+                                e?.pause(), f && x.push("string" == typeof f ? f : { pathname: f.pathname, state: f.state });
+                            },
+                            [f, x, E],
+                        ),
+                        Z = n.useCallback(
                             (e) => {
                                 t?.(e);
                             },
-                            [f, v, I, t],
+                            [f, x, E, t],
                         ),
-                        Z = _["aria-label"],
-                        T = n.useCallback(({ containerRef: t, playerApi: s, playerState: o }) => n.createElement(l.Z, { "aria-label": Z, containerRef: t, includeDisputeLinkInCopyrightErrorMessage: e, liveBroadcastRewindEnabled: g, onClick: E, playerApi: s, playerDisplayOptions: _.displayOptions, playerState: o, poster: _.poster?.url, shouldShowAltLabel: _.shouldShowAltLabel, showWatchAgain: (0, h.I4)({ source: _.source, withPostPlayback: _.withPostPlayback }), useKeyboardShortcuts: !0 }), [Z, E, _.source, e, _.displayOptions, _.poster?.url, _.shouldShowAltLabel, _.withPostPlayback, g]);
-                    return n.createElement(r.Z, { onClick: D, onLayout: x, style: b.video, testID: i }, n.createElement(c.Z, (0, o.Z)({}, _, { aspectRatio: w, autoplayGroupOptions: m, uiStack: s ? T : void 0 })));
+                        T = _["aria-label"],
+                        R = n.useCallback(({ containerRef: t, playerApi: s, playerState: o }) => n.createElement(l.Z, { "aria-label": T, containerRef: t, includeDisputeLinkInCopyrightErrorMessage: e, liveBroadcastRewindEnabled: g, onClick: D, playerApi: s, playerDisplayOptions: _.displayOptions, playerState: o, poster: _.poster?.url, shouldShowAltLabel: _.shouldShowAltLabel, showWatchAgain: (0, h.I4)({ source: _.source, withPostPlayback: _.withPostPlayback }), useKeyboardShortcuts: !0 }), [T, D, _.source, e, _.displayOptions, _.poster?.url, _.shouldShowAltLabel, _.withPostPlayback, g]);
+                    return n.createElement(r.Z, { onClick: Z, onLayout: I, style: b.video, testID: i }, n.createElement(c.Z, (0, o.Z)({}, _, { aspectRatio: w, autoplayGroupOptions: m, uiStack: s ? R : void 0 })));
                 },
                 b = d.default.create((e) => ({ video: { height: "100%" } })),
                 v = w(n.memo(C));
@@ -312,8 +316,8 @@
                 c = s(942893),
                 d = s(339110),
                 h = s(575211),
-                p = s(962741),
-                u = s(312771),
+                u = s(962741),
+                p = s(312771),
                 m = s(443781),
                 f = (s(136728), s(24949)),
                 g = s(459679),
@@ -379,10 +383,10 @@
                             const a = (0, g.Z)(o || [], (e) => (e.type === d.El.User ? e.data.id_str : void 0)),
                                 c = t.filter((e) => a.indexOf(e.id) < 0),
                                 h = e.filter((e) => a.indexOf(e.id) < 0),
-                                p = (0, w.sY)(c, h).slice(0, r || 10),
-                                m = s === u.ZP.LOADED,
+                                u = (0, w.sY)(c, h).slice(0, r || 10),
+                                m = s === p.ZP.LOADED,
                                 f = i && i({ query: n, hasResults: !!e.length, isLoaded: m, remoteUsers: e }),
-                                y = f ? [...p, f] : p;
+                                y = f ? [...u, f] : u;
                             return { users: y.length ? y : (0, l.o)(), userExactMatch: f, filteredPrefetchUsers: c, filteredRemoteUsers: h };
                         },
                     ),
@@ -419,7 +423,7 @@
                             (e, t) => t.maxTopics,
                             (e, t) => t.getTopicExactMatch,
                             (e, t, s, o, n) => {
-                                const i = t === u.ZP.LOADED,
+                                const i = t === p.ZP.LOADED,
                                     r = n && n({ query: s, hasResults: !!e.length, isLoaded: i }),
                                     a = e.slice(0, o || 3);
                                 return r && a.push(r), a.length ? a : (0, l.o)();
@@ -444,10 +448,10 @@
                             const { fetchUsersIfNeeded: t, items: s, source: o } = this.props;
                             if (this.context.featureSwitches.isTrue("follow_nudge_search_enabled") && this.context.loggedInUserId && o === d._4.SearchBox) {
                                 const o = (0, i.Z)(e)
-                                        .filter((e) => e.type === p.ZP.User)
+                                        .filter((e) => e.type === u.ZP.User)
                                         .map((e) => e.id),
                                     n = (0, i.Z)(s)
-                                        .filter((e) => e.type === p.ZP.User)
+                                        .filter((e) => e.type === u.ZP.User)
                                         .filter((e) => !o.includes(e.id))
                                         .map((e) => e.id);
                                 n?.length && t(n);
@@ -492,25 +496,25 @@
                         }
                         if (_) {
                             const e = (0, i.Z)(r)
-                                .filter((e) => e.type === p.ZP.User)
+                                .filter((e) => e.type === u.ZP.User)
                                 .map((e) => e.id);
                             e && o(e).catch(t({}));
                         }
                         this._fetchUsersIfNeeded(e.items);
                     }
-                    e.fetchStatus === u.ZP.LOADED && (this._previouslyLoadedResults = e.items),
+                    e.fetchStatus === p.ZP.LOADED && (this._previouslyLoadedResults = e.items),
                         (l === f && n === m && d === g) ||
                             (this._debouncedFetchTypeaheadResultsIfNeeded(this.props),
                             c &&
                                 (clearTimeout(this._prefetchResultsTimer),
                                 this.setState({ shouldShowPrefetchResults: !1 }),
                                 (this._prefetchResultsTimer = setTimeout(() => {
-                                    this.props.query && this.props.fetchStatus !== u.ZP.LOADED && this.setState({ shouldShowPrefetchResults: !0 });
+                                    this.props.query && this.props.fetchStatus !== p.ZP.LOADED && this.setState({ shouldShowPrefetchResults: !0 });
                                 }, h.n))));
                 }
                 render() {
-                    const { analytics: e, communityId: t, contextText: s, createLocalApiErrorHandler: i, dropdownRef: r, fetchStatus: l, fetchTypeaheadIfNeeded: c, fetchUsersIfNeeded: d, fetchUsersPresenceIfNeeded: h, filter: p, getTopicExactMatch: m, getUserExactMatch: f, injectedItems: g, items: y, maxEvents: _, maxLists: w, maxTopics: C, onItemClick: b, onItemsChanged: v, prefetchTypeaheadUsersIfNeeded: x, query: I, shouldDeferPrefetch: E, topicType: D, trustedFriendsId: Z, userLimit: T, ...R } = this.props,
-                        S = I && l !== u.ZP.LOADED;
+                    const { analytics: e, communityId: t, contextText: s, createLocalApiErrorHandler: i, dropdownRef: r, fetchStatus: l, fetchTypeaheadIfNeeded: c, fetchUsersIfNeeded: d, fetchUsersPresenceIfNeeded: h, filter: u, getTopicExactMatch: m, getUserExactMatch: f, injectedItems: g, items: y, maxEvents: _, maxLists: w, maxTopics: C, onItemClick: b, onItemsChanged: v, prefetchTypeaheadUsersIfNeeded: x, query: I, shouldDeferPrefetch: E, topicType: D, trustedFriendsId: Z, userLimit: T, ...R } = this.props,
+                        S = I && l !== p.ZP.LOADED;
                     let P;
                     return (P = S ? (this.state.shouldShowPrefetchResults && y.length ? y : this._previouslyLoadedResults) : y), n.createElement(a.Z, (0, o.Z)({}, R, { isLoading: !!S, items: P, onItemClick: this._handleItemClick, query: I, ref: r }));
                 }
@@ -530,8 +534,8 @@
                 c = s(567447),
                 d = s(537392),
                 h = s(111677),
-                p = s.n(h),
-                u = s(956272),
+                u = s.n(h),
+                p = s(956272),
                 m = s(323265),
                 f = s(649872),
                 g = s(110548),
@@ -541,22 +545,22 @@
                 C = s(456910),
                 b = s(443781),
                 v = s(131364);
-            const x = p().f065ba8c;
+            const x = u().f065ba8c;
             let I = 1;
             class E extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._render = ({ containerWidth: e }) => {
-                            const { alwaysOpen: t, disableClearButton: s, inputStyle: l, isCompact: c, isOnHomepage: d, placeholder: h, renderCustomInput: p, renderInSearchField: m, rounded: g, shouldAutoFocus: y, shouldFocusOnClear: _, style: w, testID: C } = this.props,
+                            const { alwaysOpen: t, disableClearButton: s, inputStyle: l, isCompact: c, isOnHomepage: d, placeholder: h, renderCustomInput: u, renderInSearchField: m, rounded: g, shouldAutoFocus: y, shouldFocusOnClear: _, style: w, testID: C } = this.props,
                                 b = this.state.showTypeaheadDropdown || t,
-                                v = { Icon: u.default, ariaActiveDescendant: this.state.ariaDescendantId, ariaAutocomplete: "list", ariaExpanded: b, ariaLabel: x, ariaOwns: this._dropdownDomId, ariaRole: "combobox", autoComplete: "off", autoCorrect: !1, autoFocus: y, contentBelow: m && m(), focusOnClear: _, isCompact: c, leftAligned: d, onBlur: this._handleInputBlur, onChange: this._handleInputChange, onClear: this._handleInputClear, onFocus: this._handleInputFocus, onLayout: this._handleInputLayoutChanged, placeholder: h, returnKeyType: "search", spellCheck: "false", styleType: g ? "pill" : "selection", testID: C, value: this.state.query, withClearButton: !s && this.state.showTypeaheadDropdown };
-                            return n.createElement(i.Z, { onLayout: this._handleLayout, ref: this._setRootContainerNode, style: [D.root, w] }, n.createElement(r.Z, { onKeyDown: this._handleKeyDown, style: D.keydownInputListener }, n.createElement(f.Z, { "aria-label": h, onSubmit: this._handleFormSubmit, role: "search", style: D.wrapper }, n.createElement(i.Z, { ref: this._setInputContainerNode, style: l }, p ? p({ ...v, handleReturn: this._handleRichTextInputReturn }) : n.createElement(a.Z, (0, o.Z)({}, v, { ref: this._setInputRef }))), n.createElement(i.Z, { style: [D.typeaheadContainer, !g && D.topBorder] }, b ? this._renderDropdown(e) : null))));
+                                v = { Icon: p.default, ariaActiveDescendant: this.state.ariaDescendantId, ariaAutocomplete: "list", ariaExpanded: b, ariaLabel: x, ariaOwns: this._dropdownDomId, ariaRole: "combobox", autoComplete: "off", autoCorrect: !1, autoFocus: y, contentBelow: m && m(), focusOnClear: _, isCompact: c, leftAligned: d, onBlur: this._handleInputBlur, onChange: this._handleInputChange, onClear: this._handleInputClear, onFocus: this._handleInputFocus, onLayout: this._handleInputLayoutChanged, placeholder: h, returnKeyType: "search", spellCheck: "false", styleType: g ? "pill" : "selection", testID: C, value: this.state.query, withClearButton: !s && this.state.showTypeaheadDropdown };
+                            return n.createElement(i.Z, { onLayout: this._handleLayout, ref: this._setRootContainerNode, style: [D.root, w] }, n.createElement(r.Z, { onKeyDown: this._handleKeyDown, style: D.keydownInputListener }, n.createElement(f.Z, { "aria-label": h, onSubmit: this._handleFormSubmit, role: "search", style: D.wrapper }, n.createElement(i.Z, { ref: this._setInputContainerNode, style: l }, u ? u({ ...v, handleReturn: this._handleRichTextInputReturn }) : n.createElement(a.Z, (0, o.Z)({}, v, { ref: this._setInputRef }))), n.createElement(i.Z, { style: [D.typeaheadContainer, !g && D.topBorder] }, b ? this._renderDropdown(e) : null))));
                         }),
                         (this._renderDropdown = (e) => {
-                            const { communityId: t, filter: s, getItemDisabledMessage: o, getItemIsDisabled: i, getTopicExactMatch: r, getUserDisplayNameLabel: a, getUserDisplayNameType: c, getUserExactMatch: d, injectedItems: h, isModal: p, isOnHomepage: u, maxEvents: m, maxLists: f, maxTopics: g, onItemsChanged: _, renderAvatarDecoration: w, renderCallout: b, renderCustomDropdown: x, renderEmptyState: I, renderHeader: E, renderNoResultsState: Z, renderUserDecoration: T, selectedItems: R, shouldDeferPrefetch: S, source: P, trustedFriendsId: k, userLimit: L, withFixedPositioning: M, withSectionDivider: F, withUserHoverCard: N } = this.props,
+                            const { communityId: t, filter: s, getItemDisabledMessage: o, getItemIsDisabled: i, getTopicExactMatch: r, getUserDisplayNameLabel: a, getUserDisplayNameType: c, getUserExactMatch: d, injectedItems: h, isModal: u, isOnHomepage: p, maxEvents: m, maxLists: f, maxTopics: g, onItemsChanged: _, renderAvatarDecoration: w, renderCallout: b, renderCustomDropdown: x, renderEmptyState: I, renderHeader: E, renderNoResultsState: Z, renderUserDecoration: T, selectedItems: R, shouldDeferPrefetch: S, source: P, trustedFriendsId: k, userLimit: L, withFixedPositioning: M, withSectionDivider: F, withUserHoverCard: N } = this.props,
                                 U = e >= l.default.theme.breakpoints.medium || (0, y.ZP)(),
                                 { dropdownOffset: A, query: B } = this.state,
-                                H = p ? D.modalDropdown : [D.dropdown, !U && M && A ? [(0, C.xX)(A), { height: `calc(100vh - ${A}px)` }] : null, (U || u) && D.wideModeDropdown, u && D.shortModeDropdown, !U && u && D.shortModeDropdownMobile],
+                                H = u ? D.modalDropdown : [D.dropdown, !U && M && A ? [(0, C.xX)(A), { height: `calc(100vh - ${A}px)` }] : null, (U || p) && D.wideModeDropdown, p && D.shortModeDropdown, !U && p && D.shortModeDropdownMobile],
                                 O = { ariaDescendantId: this.state.ariaDescendantId, domId: this._dropdownDomId, onDismiss: this._handleOnEmptyStateDismiss, onItemFocusChanged: this._handleItemFocusChanged, ref: this._handleDropdownRef, style: H },
                                 z = { ariaDescendantId: this.state.ariaDescendantId, communityId: t, domId: this._dropdownDomId, filter: s, getItemDisabledMessage: o, getItemIsDisabled: i, getTopicExactMatch: r, getUserDisplayNameType: c, getUserDisplayNameLabel: a, getUserExactMatch: d, injectedItems: h, maxEvents: m, maxLists: f, maxTopics: g, onItemClick: this._handleItemClick, onItemFocusChanged: this._handleItemFocusChanged, onItemsChanged: _, query: B, ref: this._handleDropdownRef, renderAvatarDecoration: w, renderCallout: b, renderHeader: E, renderNoResultsState: Z, renderUserDecoration: T, selectedItems: R, shouldDeferPrefetch: S, source: P, style: H, trustedFriendsId: k, userLimit: L, withSectionDivider: F, withUserHoverCard: N };
                             return I && !B ? I(O) : x ? x(z) : n.createElement(v.Z, z);
@@ -699,8 +703,8 @@
                 c = s(913973),
                 d = s(339110),
                 h = s(443781),
-                p = s(823161);
-            const u = a.default.create((e) => ({ container: { flexDirection: "row", padding: e.spaces.space8, gap: 4, alignItems: "center" }, name: { flexDirection: "row", alignItems: "center" } })),
+                u = s(823161);
+            const p = a.default.create((e) => ({ container: { flexDirection: "row", padding: e.spaces.space8, gap: 4, alignItems: "center" }, name: { flexDirection: "row", alignItems: "center" } })),
                 m = ({ name: e, query: t, url: s }) => {
                     const i = o.useCallback(() => {
                         const s = e.split(new RegExp(`(${t})`, "gi"));
@@ -710,7 +714,7 @@
                             s.map((e, s) => o.createElement(r.ZP, { key: s, size: "subtext1", weight: e?.toLowerCase() === t?.toLowerCase() ? "bold" : "normal" }, e)),
                         );
                     }, [e, t]);
-                    return o.createElement(n.Z, { style: u.container }, o.createElement(p.default, { shape: "square", size: "medium", uri: s || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(n.Z, { style: u.name }, i()));
+                    return o.createElement(n.Z, { style: p.container }, o.createElement(u.default, { shape: "square", size: "medium", uri: s || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(n.Z, { style: p.name }, i()));
                 };
             var f = s(872405),
                 g = s(503115),
@@ -788,17 +792,17 @@
                             null,
                             d.map((e, t) => o.createElement(M.ZP, { key: `${e.text}${t}`, part: e })),
                         ),
-                        p = "xLarge",
-                        u = o.createElement(o.Fragment, null, h, i ? o.createElement(n.Z, { style: B.context }, i && i.types[0] && "followable_topic" === i.types[0].type ? o.createElement(N.default, { style: B.icon }) : null, o.createElement(r.ZP, { color: "gray700" }, i.display_string || " ")) : null);
+                        u = "xLarge",
+                        p = o.createElement(o.Fragment, null, h, i ? o.createElement(n.Z, { style: B.context }, i && i.types[0] && "followable_topic" === i.types[0].type ? o.createElement(N.default, { style: B.icon }) : null, o.createElement(r.ZP, { color: "gray700" }, i.display_string || " ")) : null);
                     return o.createElement(
                         n.Z,
                         { style: [B.root, t && B.disabled, l] },
                         a
                             ? ((e) => {
-                                  const t = o.createElement(F.Z, { Icon: U.default, color: "neutral", size: p, style: B.searchIcon });
-                                  return o.createElement(f.Z, { avatarCell: t, avatarCellStyle: B.searchIconCell, avatarSize: p, cellStyle: B.wrapperCellStyle }, e);
-                              })(u)
-                            : u,
+                                  const t = o.createElement(F.Z, { Icon: U.default, color: "neutral", size: u, style: B.searchIcon });
+                                  return o.createElement(f.Z, { avatarCell: t, avatarCellStyle: B.searchIconCell, avatarSize: u, cellStyle: B.wrapperCellStyle }, e);
+                              })(p)
+                            : p,
                     );
                 };
             var O = s(673510),
@@ -826,12 +830,12 @@
                         });
                 }
                 render() {
-                    const { affiliateBadgeInfo: e, avatarDecoration: t, avatarUri: s, decoration: n, disabledMessage: i, displayNameLabel: r, displayNameType: a, isBlueVerified: l, isDisabled: c, isProtected: h, isVerified: p, name: u, screenName: m, source: f, userId: g, userSpace: y, verifiedType: _, withHoverCard: w } = this.props,
+                    const { affiliateBadgeInfo: e, avatarDecoration: t, avatarUri: s, decoration: n, disabledMessage: i, displayNameLabel: r, displayNameType: a, isBlueVerified: l, isDisabled: c, isProtected: h, isVerified: u, name: p, screenName: m, source: f, userId: g, userSpace: y, verifiedType: _, withHoverCard: w } = this.props,
                         { featureSwitches: C } = this.context,
                         { context: b, highlightedLabel: v } = this._getItemContext(),
                         x = f === d._4.SearchBox,
                         I = y && C.isTrue("voice_rooms_typeahead_audiospace_ring_enabled") ? y : void 0;
-                    return I && (I["aria-label"] = Y({ screenName: m })), o.createElement(O.ZP, { affiliateBadgeInfo: e, avatarDecoration: t, avatarSize: "xLarge", avatarUri: s, decoration: n, disabledMessage: c ? i : void 0, displayMode: "UserCompact", displayNameLabel: r, displayNameLabelType: a, highlightedLabel: v, isBlueVerified: l, isDisabled: c, isProtected: h, isVerified: p, name: u, onAvatarClick: this._handleAvatarClick, onCellClick: this._handleClick, onScreenNameClick: this._handleClick, presenceIndicator: x ? I : void 0, screenName: m, socialContext: b, testID: Q, userId: g, verifiedType: _, withBottomSocialContext: !0, withInteractiveStyling: !1, withLink: w });
+                    return I && (I["aria-label"] = Y({ screenName: m })), o.createElement(O.ZP, { affiliateBadgeInfo: e, avatarDecoration: t, avatarSize: "xLarge", avatarUri: s, decoration: n, disabledMessage: c ? i : void 0, displayMode: "UserCompact", displayNameLabel: r, displayNameLabelType: a, highlightedLabel: v, isBlueVerified: l, isDisabled: c, isProtected: h, isVerified: u, name: p, onAvatarClick: this._handleAvatarClick, onCellClick: this._handleClick, onScreenNameClick: this._handleClick, presenceIndicator: x ? I : void 0, screenName: m, socialContext: b, testID: Q, userId: g, verifiedType: _, withBottomSocialContext: !0, withInteractiveStyling: !1, withLink: w });
                 }
                 _getItemContext() {
                     const e = this._getResultContext();
@@ -889,11 +893,11 @@
                 render() {
                     const { domId: e, isDisabled: t, isFocused: s, isInMultiSelect: r, isSelected: a, item: l, style: c } = this.props,
                         h = l.type === d.El.User,
-                        p = r ? "checkbox" : h ? "none" : "button";
-                    return o.createElement(n.Z, { "aria-checked": !(!r || !a) || void 0, "aria-selected": t ? void 0 : (r && a) || (!r && !!s), id: e, role: "option", testID: te }, o.createElement(i.Z, { actAsButtonRole: "none" === p, disabled: t, focusable: !0, onPress: this._handleClick, role: p, style: [s && ie.focused, ie.transitionStyles, this._loaded && ie.loaded, c], viewRef: this._onViewRef }, this._renderResult()));
+                        u = r ? "checkbox" : h ? "none" : "button";
+                    return o.createElement(n.Z, { "aria-checked": !(!r || !a) || void 0, "aria-selected": t ? void 0 : (r && a) || (!r && !!s), id: e, role: "option", testID: te }, o.createElement(i.Z, { actAsButtonRole: "none" === u, disabled: t, focusable: !0, onPress: this._handleClick, role: u, style: [s && ie.focused, ie.transitionStyles, this._loaded && ie.loaded, c], viewRef: this._onViewRef }, this._renderResult()));
                 }
                 _renderResult() {
-                    const { disabledMessage: e, getUserDisplayNameLabel: t, getUserDisplayNameType: s, isDisabled: i, isSelected: a, item: c, onClick: h, renderAvatarDecoration: p, renderUserDecoration: u, source: f, withUserHoverCard: g } = this.props;
+                    const { disabledMessage: e, getUserDisplayNameLabel: t, getUserDisplayNameType: s, isDisabled: i, isSelected: a, item: c, onClick: h, renderAvatarDecoration: u, renderUserDecoration: p, source: f, withUserHoverCard: g } = this.props;
                     switch (c.type) {
                         case d.El.CompanyProfile: {
                             const { data: e } = c;
@@ -935,8 +939,8 @@
                         }
                         case d.El.User: {
                             const { data: n } = c,
-                                r = p?.(),
-                                l = u ? u({ userId: n.id_str, user: n, isSelected: a }) : void 0,
+                                r = u?.(),
+                                l = p ? p({ userId: n.id_str, user: n, isSelected: a }) : void 0,
                                 d = s ? s(c, n) : void 0,
                                 m = t ? t(c, n) : void 0;
                             return o.createElement(ee, { affiliateBadgeInfo: n.highlightedLabel, avatarDecoration: r || void 0, avatarUri: n.profile_image_url_https, canDm: !!n.can_dm, canMediaTag: !!n.can_media_tag, decoration: l || void 0, disabledMessage: e, displayNameLabel: m, displayNameType: d, isBlueVerified: n.is_blue_verified, isDisabled: i, isProtected: !!n.protected, isVerified: !!n.verified, item: c, name: n.name, onItemClick: h, resultContext: n.result_context, screenName: n.screen_name, socialContext: n.social_context, source: f, userId: n.id_str, verifiedType: n.verified_type, withHoverCard: g });
@@ -981,4 +985,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c.0e6c71ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c.b8ff272a.js.map

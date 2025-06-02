@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountAutomation", "icons/IconChevronRight-js"],
+    ["bundle.AccountAutomation"],
     {
         625661: (e, t, o) => {
             "use strict";
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: n, hideBackButton: s, isFullWidth: a, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: g, style: C, subtitle: f, title: b, titleDomId: y, titleIconCell: k, titleIconCellSize: Z, withBackground: w, withWideContainer: B } = this.props,
-                        { isModal: x } = this.context,
-                        E = s ? d : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        _ = (function (e, t, o) {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: n, hideBackButton: s, isFullWidth: a, isLarge: c, leftControl: d, middleControl: p, position: h, rightControl: m, secondaryBar: g, style: C, subtitle: f, title: b, titleDomId: y, titleIconCell: k, titleIconCellSize: w, withBackground: Z, withWideContainer: B } = this.props,
+                        { isModal: v } = this.context,
+                        x = s ? d : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        E = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!w, x, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: E, middleControl: p, position: u(h, x, n), rightControl: m, style: C, subtitle: f, title: b, titleDomId: y, titleIconCell: k, titleIconCellSize: Z, withBackground: _, withWideContainer: B }), g || null);
+                        })(!!Z, v, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: x, middleControl: p, position: u(h, v, n), rightControl: m, style: C, subtitle: f, title: b, titleDomId: y, titleIconCell: k, titleIconCellSize: w, withBackground: E, withWideContainer: B }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -154,21 +154,19 @@
             const l = a.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = i;
         },
-        58399: (e, t, o) => {
+        748138: (e, t, o) => {
             "use strict";
-            o.r(t), o.d(t, { default: () => c });
+            o.r(t), o.d(t, { default: () => l });
             var r = o(202784),
                 n = o(890601),
                 s = o(783427),
-                a = o(717683),
-                i = o(347101);
-            const l = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style, t && i.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: o });
+                a = o(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
+            i.metadata = { width: 24, height: 24 };
+            const l = i;
         },
         424869: (e) => {
             e.exports = function e(t) {
@@ -183,4 +181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.f8144dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAutomation.a20a414a.js.map

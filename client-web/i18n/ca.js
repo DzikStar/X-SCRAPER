@@ -5502,13 +5502,35 @@
                 t("g22c8c30", "Si prou col·laboradors, inclosos els que no solen estar d'acord en les seves valoracions anteriors, consideren que aquestes anotacions són útils, aquestes es començaran a mostrar públicament com a context afegit de les publicacions."),
                 t("jf04b084", "Aquestes anotacions les afegeixen els col·laboradors que creuen que les publicacions no són enganyoses i no necessiten context addicional."),
                 t("g5a72e98", "Només són visibles a les Anotacions de la Comunitat com a informació addicional per als avaluadors i no es mostren com a context juntament amb les publicacions, encara que aconsegueixin l'estatus d'útil."),
-                t("h53cb7de", "Què t'ha semblat aquesta publicació?"),
-                t("dc3bfc82", "Què t'agrada d'aquesta publicació, si és que t'agrada alguna cosa?"),
-                t("b4704bf4", "Què no t'agrada d'aquesta publicació, si és que no t'agrada alguna cosa?"),
+                t("b8719c22", "Ajuda a identificar si a la gent amb punts de vista diferents li agraden les publicacions."),
+                t("jcdf97d4", "Què t'agrada de la publicació?"),
+                t("d4d7b67e", "Què no t'agrada de la publicació?"),
                 t("ed5156fa", "S'ha produït un error en desar la valoració. Torna-ho a provar."),
-                t("d5f9fb42", "Has valorat aquesta priorització de la comunitat"),
+                t("d0ed3636", "Has valorat aquesta publicació"),
                 t("j6aa6172", "Vols suprimir la valoració?"),
                 t("i4112750", "Aquesta acció no es pot desfer."),
+                t("i6f6191a", "Gràcies!"),
+                t("h5575012", "Agree and submit"),
+                t("f9171e52", "Aquesta publicació agrada a persones que normalment no hi estan d'acord, però la informació que tenim fins ara és limitada."),
+                t("j0f9919a", "La teva valoració no afectarà negativament cap publicació, però pot contribuir al reconeixement positiu de publicacions que agraden a molta gent."),
+                t("b3af830c", "Els teus comentaris:"),
+                t("d0b29562", "Valora més publicacions ara"),
+                t("i36ea87a", "Hi estic d'acord"),
+                t("d5befc34", "He après alguna cosa interessant"),
+                t("je26ecf2", "Té un missatge significatiu"),
+                t("e4e331aa", "És integradora amb un tema que sovint genera divisió"),
+                t("ed61ff2a", "És adorable o commovedora"),
+                t("gc3104d8", "És inspiradora o emocionant"),
+                t("j8c4400e", "És divertida"),
+                t("j4738406", "N/A: no m'ha agradat res"),
+                t("d93d1666", "No hi estic d'acord"),
+                t("d6130466", "No transmet cap missatge important"),
+                t("d96835b6", "No m'interessa"),
+                t("b7ba4150", "N/A: m'ha agradat tot"),
+                t("g0402b3b", "que agraden a persones amb diferents punts de vista"),
+                t("ged62c2b", "visibilitat"),
+                t("b5d5f7f1", "Defineix la direcció"),
+                t("a42fef87", "Learn more"),
                 t("bd7eb888", "Mostra totes les notes d'aquesta publicació"),
                 t("i97b83f6", "Hi ha hagut un error en enviar l'apel·lació. Torna-ho a provar."),
                 t("a038ab9a", "Tradueix l'anotació"),
@@ -5859,8 +5881,8 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Suprimeix la carpeta"),
-                t("f4ea967a", "S'ha suprimit la carpeta"),
+                t("h18f86a4", "Suprimeix la carpeta");
+            t("f4ea967a", "S'ha suprimit la carpeta"),
                 t("b670aa62", "Nom de la carpeta"),
                 t("aece5462", "El nom de la carpeta s'ha actualitzat correctament"),
                 t("e3299b94", "Alguna cosa ha anat malament. Torna a provar d'actualitzar la carpeta d'aquí a un minut."),
@@ -5891,8 +5913,8 @@
                     return "Finalitzat " + e.timestamp;
                 }),
                 t("daca8a2c", "Obre acoblat"),
-                t("e3aac82a", "S'està carregant l'emissió");
-            t("i0ed3f4e", "Imatge de l'esdeveniment"),
+                t("e3aac82a", "S'està carregant l'emissió"),
+                t("i0ed3f4e", "Imatge de l'esdeveniment"),
                 t("cbae35fa", "Denuncia l'emissió"),
                 t("fd12ab58", "Publicacions de recull"),
                 t("a226497c", "Crea una Comunitat nova"),
@@ -6863,8 +6885,8 @@
                 t("b925c18c", "Tipus de salari"),
                 t("j3d242ce", "Interval no vàlid"),
                 t("f4d07bd2", "Inclou detalls opcionals perquè els candidats puguin trobar fàcilment les funcions amb la cerca."),
-                t("b8cbb51a", "Resum de la feina"),
-                t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets."),
+                t("b8cbb51a", "Resum de la feina");
+            t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets."),
                 t("b075c68a", "Edita la feina"),
                 t("d4b6a6e0", "Spotlight de perfil"),
                 t("j2dd3686", "Mostra les feines destacades a sobre de les meves publicacions."),
@@ -6889,8 +6911,8 @@
                 t("c0195168", "Canvia la icona de l'aplicació i les opcions de navegació"),
                 t("b6b5dc94", "Verifica't"),
                 t("b06db848", "Distingeix-te dels altres a la plataforma"),
-                t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions");
-            t("f15bc24e", "Els límits de Grok s'han ampliat"),
+                t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions"),
+                t("f15bc24e", "Els límits de Grok s'han ampliat"),
                 t("c4666e1c", "Més ús de Grok 3, el nostre model més recent"),
                 t("he74ae7a", "Límits d'ús màxim de Grok"),
                 t("f5732cd4", "A més d'un accés ampliat a DeepSearch i Raonament"),
@@ -7207,16 +7229,16 @@
                 t("hd80bd3e", "Patrocina una publicació"),
                 t("fe2b0008", "Aprèn a utilitzar X"),
                 t("h257d4aa", "Selecciona una publicació per patrocinar-la"),
-                t("fe946974", "Your trial of X without ads"),
-                t("f6c50ec0", "Your ad-free trial has ended"),
-                t("b1319404", "Ads avoided"),
-                t("baa4acae", "You’re seeing more personalized content."),
-                t("c00e8600", "Estimated time saved"),
-                t("ic073e4e", "Your time is valuable."),
-                t("eb866e88", "Estimated 1-year time savings"),
-                t("aa77b70c", "Based on your usage."),
-                t("c534c6b4", "We’re crunching the numbers..."),
-                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("fe946974", "La prova de X sense anuncis"),
+                t("f6c50ec0", "La prova sense anuncis ha finalitzat"),
+                t("b1319404", "Anuncis evitats"),
+                t("baa4acae", "Estàs veient contingut més personalitzat."),
+                t("c00e8600", "Estimació de temps estalviat"),
+                t("ic073e4e", "El teu temps és valuós."),
+                t("eb866e88", "Estimació de temps estalviat en 1 any"),
+                t("aa77b70c", "En funció de l'ús."),
+                t("c534c6b4", "Estem fent números..."),
+                t("i57332f0", "Continua desplaçant-te i comprova més tard quants anuncis has evitat i quant de temps has estalviat."),
                 t("cc10f019", function (e) {
                     return e.minutes + " minut" + r(e.minutes, "", "s");
                 }),
@@ -7232,11 +7254,11 @@
                 t("be88be23", function (e) {
                     return "S'ha activat la teva prova sense anuncis de " + e.durationInDays + " dies";
                 }),
-                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                t("ae3f3b0e", "Enjoy!"),
-                t("cdac8dc4", "See your new feed"),
+                t("a4413462", "Al llarg de la prova, podràs veure estadístiques sobre quants anuncis has deixat de veure i quant de temps has estalviat."),
+                t("ae3f3b0e", "Gaudeix!"),
+                t("cdac8dc4", "Visualitza el teu canal nou"),
                 t("dec99336", "Sense anuncis"),
-                t("i95803fa", "Unfortunately, you are not eligible at this time."),
+                t("i95803fa", "Malauradament, ara mateix no compleixes els requisits."),
                 t("d28a1d72", "Sigues el primer de detectar tendències amb Radar"),
                 t("fb70427a", "Et presentem l'eina de cerca més potent d'X."),
                 t("i54bf620", "Monitoritza les paraules clau"),
@@ -7841,35 +7863,7 @@
                 t("c29e3a88", "Selecciona afiliats"),
                 t("j8318d57", function (e) {
                     return e.number + " afiliat" + r(e.number, "", "s");
-                }),
-                t("bf809ec0", "Selecciona afiliats"),
-                t("b719e224", "No hi ha resultats"),
-                t("c9938100", "Resultats de la cerca"),
-                t("d1a35ec6", "Afegeix comptes"),
-                t("b437adda", "Actualitza a la versió de pagament"),
-                t("f1f6c88b", function (e) {
-                    return "Comptes (" + e.count + ")";
-                }),
-                t("b02156b8", "Invitacions"),
-                t("gd67d29b", function (e) {
-                    return "Invitacions (" + e.count + ")";
-                }),
-                t("daf646e6", "Nota: cal etiquetar els comptes de manera adequada."),
-                t("i3895c32", "S'està revisant el teu compte perquè has canviat el teu @identificador de X"),
-                t("i5f8b628", "No podràs modificar els teus afiliats fins que es revisi el teu compte."),
-                t("e9e663ac", "El pagament ha vençut."),
-                t("c3ddd22c", "condicions"),
-                t("c9729d8a", "condicions"),
-                t("cdcd1d2c", "Afegeix afiliacions a la teva organització"),
-                t("d30ea6f3", function (e) {
-                    return "Segur que vols eliminar @" + e.name + "?";
-                }),
-                t("c2dfbb86", "Sí, fes-ho."),
-                t("ba047f76", "Si elimines l'afiliació, s'eliminaran immediatament la marca de verificació i la insígnia d'afiliació. Es mantindrà la facturació fins a finals de mes."),
-                t("j26dee0e", "Elimina l'afiliat"),
-                t("e30cbdf0", "L'afiliat és subscriptor d'Organitzacions verificades i ha de seguir sent una organització. No pot passar a ser una persona."),
-                t("j3115ce8", "Persona"),
-                t("d8bb1d84", "Organització");
+                });
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7908,9 +7902,37 @@
                     n(e, a)
                 );
             }
-            t("e970bdbd", function (e) {
-                return e.count + " invitacions restants";
-            }),
+            t("bf809ec0", "Selecciona afiliats"),
+                t("b719e224", "No hi ha resultats"),
+                t("c9938100", "Resultats de la cerca"),
+                t("d1a35ec6", "Afegeix comptes"),
+                t("b437adda", "Actualitza a la versió de pagament"),
+                t("f1f6c88b", function (e) {
+                    return "Comptes (" + e.count + ")";
+                }),
+                t("b02156b8", "Invitacions"),
+                t("gd67d29b", function (e) {
+                    return "Invitacions (" + e.count + ")";
+                }),
+                t("daf646e6", "Nota: cal etiquetar els comptes de manera adequada."),
+                t("i3895c32", "S'està revisant el teu compte perquè has canviat el teu @identificador de X"),
+                t("i5f8b628", "No podràs modificar els teus afiliats fins que es revisi el teu compte."),
+                t("e9e663ac", "El pagament ha vençut."),
+                t("c3ddd22c", "condicions"),
+                t("c9729d8a", "condicions"),
+                t("cdcd1d2c", "Afegeix afiliacions a la teva organització"),
+                t("d30ea6f3", function (e) {
+                    return "Segur que vols eliminar @" + e.name + "?";
+                }),
+                t("c2dfbb86", "Sí, fes-ho."),
+                t("ba047f76", "Si elimines l'afiliació, s'eliminaran immediatament la marca de verificació i la insígnia d'afiliació. Es mantindrà la facturació fins a finals de mes."),
+                t("j26dee0e", "Elimina l'afiliat"),
+                t("e30cbdf0", "L'afiliat és subscriptor d'Organitzacions verificades i ha de seguir sent una organització. No pot passar a ser una persona."),
+                t("j3115ce8", "Persona"),
+                t("d8bb1d84", "Organització"),
+                t("e970bdbd", function (e) {
+                    return e.count + " invitacions restants";
+                }),
                 t("id67d953", function (e) {
                     return "Alguna cosa ha anat malament en recuperar els detalls de finalització de la compra de Stripe. Si el problema continua, posa't en contacte amb " + e.supportEmail + " .";
                 }),
@@ -8883,8 +8905,8 @@
                 t("ha3efce4", "Automàtic"),
                 t("hd8d044d", function (e) {
                     return "Automàtica (" + e.quality + ")";
-                }),
-                t("a7bf9962", "Baixa el vídeo"),
+                });
+            t("a7bf9962", "Baixa el vídeo"),
                 t("ccc97152", "Velocitat de reproducció"),
                 t("h531ade0", "Qualitat del vídeo"),
                 t("e8b5757c", "x0,25"),
@@ -8915,8 +8937,8 @@
                 t("c1658fc6", "El contingut no s'ha pogut reproduir."),
                 t("h519ae04", "Els continguts s'han desactivat a causa d'una reclamació de copyright."),
                 t("ce871584", "L'emissió ha finalitzat."),
-                t("c101eb96", "L'emissió no està disponible.");
-            t("gb24a514", "El contingut s'ha desactivat en resposta a una denúncia del titular dels drets d'autor."),
+                t("c101eb96", "L'emissió no està disponible."),
+                t("gb24a514", "El contingut s'ha desactivat en resposta a una denúncia del titular dels drets d'autor."),
                 t("hcaf3e63", function (e) {
                     return "Aquests continguts s'han desactivat a causa d'una reclamació de copyright per part de: " + e.holder + ".";
                 }),
@@ -11478,6 +11500,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Ajuda a trobar publicacions "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["No perjudicarà cap publicació, però podria donar ", " a les que agraden a molta gent"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " d'aquesta funció experimental"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Com a autor de la publicació, pots "];
@@ -12068,7 +12114,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["Comissió del ", " %, mín. "];
                             },
                         },
                         {
@@ -13295,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.600d196a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.34ebfe9a.js.map

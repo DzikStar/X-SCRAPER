@@ -1340,7 +1340,7 @@
                 n("be9b9fb8", "Traduit par Grok"),
                 n("he9c9634", "Impossible de récupérer la traduction"),
                 n("j2198c98", "Masquer le post traduit"),
-                n("d4d35bea", "Traduction en cours..."),
+                n("d4d35bea", "Traduction en cours…"),
                 n("i7ac410e", "Afficher l'original"),
                 n("c67f09e8", "Afficher la traduction"),
                 n("e0f81ff3", "Traduction :"),
@@ -5506,13 +5506,35 @@
                 n("g22c8c30", "Si ces notes sont jugées utiles par un nombre suffisant de contributeurs, y compris ceux qui ne sont généralement pas d'accord dans leurs évaluations antérieures, elles seront affichées publiquement avec le post comme contexte supplémentaire."),
                 n("jf04b084", "Ces notes sont ajoutées par les contributeurs qui estiment que le post est véridique et ne nécessite pas de contexte supplémentaire."),
                 n("g5a72e98", "Elles ne sont visibles dans la fonctionnalité Notes de la Communauté que comme informations supplémentaires pour les évaluateurs, et ne sont pas affichées comme contexte du post, même si elles obtiennent le statut Utile."),
-                n("h53cb7de", "Que pensez‑vous de ce post ?"),
-                n("dc3bfc82", "Qu'est‑ce qui vous plaît, le cas échéant, dans ce post ?"),
-                n("b4704bf4", "Qu'est‑ce qui ne vous plaît pas, le cas échéant, dans ce post ?"),
+                n("b8719c22", "Aidez‑nous à identifier si des posts sont aimés par des personnes ayant des points de vue différents."),
+                n("jcdf97d4", "Qu'est‑ce qui vous plaît dans ce post ?"),
+                n("d4d7b67e", "Qu'est‑ce qui vous déplaît dans ce post ?"),
                 n("ed5156fa", "Une erreur est survenue lors de l'enregistrement de votre évaluation. Veuillez réessayer."),
-                n("d5f9fb42", "Vous avez évalué ce boostage de la Communauté."),
+                n("d0ed3636", "Vous avez évalué ce post."),
                 n("j6aa6172", "Supprimer l'évaluation ?"),
                 n("i4112750", "Cette opération ne peut pas être annulée."),
+                n("i6f6191a", "Merci !"),
+                n("h5575012", "Agree and submit"),
+                n("f9171e52", "Ce post a été aimé par des personnes qui ne sont en général pas d'accord, mais les contributions sont pour le moment limitées."),
+                n("j0f9919a", "Votre évaluation n'aura pas d'impact négatif sur le post, mais elle pourra contribuer à la reconnaissance des posts qui sont très appréciés."),
+                n("b3af830c", "Votre contribution :"),
+                n("d0b29562", "Évaluez plus de posts"),
+                n("i36ea87a", "Je suis d'accord"),
+                n("d5befc34", "J'ai appris quelque chose d'intéressant"),
+                n("je26ecf2", "Ce post est pertinent"),
+                n("e4e331aa", "Ce post est fédérateur sur un sujet souvent polarisant"),
+                n("ed61ff2a", "Ce post est réconfortant ou attachant"),
+                n("gc3104d8", "Ce post est inspirant ou enthousiasmant"),
+                n("j8c4400e", "Ce post est drôle"),
+                n("j4738406", "N/A : rien ne me plaît dans ce post"),
+                n("d93d1666", "Je ne suis pas d'accord"),
+                n("d6130466", "Le contenu de ce post n'est pas pertinent"),
+                n("d96835b6", "Ce post ne m'intéresse pas"),
+                n("b7ba4150", "N/A : rien ne me déplaît dans ce post"),
+                n("g0402b3b", "aimés par des personnes ayant des points de vue différents"),
+                n("ged62c2b", "mettre en avant"),
+                n("b5d5f7f1", "Définit la direction à suivre"),
+                n("a42fef87", "Learn more"),
                 n("bd7eb888", "Voir toutes les notes sur ce post"),
                 n("i97b83f6", "Une erreur est survenue lors de l'envoi de votre appel. Veuillez réessayer."),
                 n("a038ab9a", "Traduire la Note"),
@@ -5863,8 +5885,8 @@
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Supprimer le dossier"),
-                n("f4ea967a", "Le dossier a été supprimé."),
+                n("h18f86a4", "Supprimer le dossier");
+            n("f4ea967a", "Le dossier a été supprimé."),
                 n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
@@ -5895,8 +5917,8 @@
                     return "Terminé le " + e.timestamp;
                 }),
                 n("daca8a2c", "Ouvrir dans Dock"),
-                n("e3aac82a", "Chargement de la diffusion");
-            n("i0ed3f4e", "Image de l'événement"),
+                n("e3aac82a", "Chargement de la diffusion"),
+                n("i0ed3f4e", "Image de l'événement"),
                 n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
                 n("a226497c", "Créer une Communauté"),
@@ -6867,8 +6889,8 @@
                 n("b925c18c", "Type de salaire "),
                 n("j3d242ce", "Plage non valide"),
                 n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
-                n("b8cbb51a", "Résumé du poste"),
-                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
+                n("b8cbb51a", "Résumé du poste");
+            n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
                 n("b075c68a", "Modifier l'offre d'emploi"),
                 n("d4b6a6e0", "Spotlight sur le profil"),
                 n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts."),
@@ -6893,8 +6915,8 @@
                 n("c0195168", "Modifiez l'icône de votre application et les options de navigation"),
                 n("b6b5dc94", "Obtenez la certification"),
                 n("b06db848", "Démarquez‑vous des autres sur la plateforme"),
-                n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts");
-            n("f15bc24e", "Limites Grok repoussées"),
+                n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts"),
+                n("f15bc24e", "Limites Grok repoussées"),
                 n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
                 n("he74ae7a", "Limites d'utilisation les plus élevées pour Grok"),
                 n("f5732cd4", "Plus un accès élargi aux modes DeepSearch et Réflexion"),
@@ -6916,7 +6938,7 @@
                 n("b485ca6e", "Onglet Posts marquants"),
                 n("d438955e", "Mettez vos meilleurs posts en avant."),
                 n("f373a352", "MP chiffrés"),
-                n("g7405aca", "Discutez en toute sécurité grâce au cryptage de bout en bout."),
+                n("g7405aca", "Discutez en toute sécurité grâce au chiffrement de bout en bout."),
                 n("j659fa0c", "Le meilleur de Grok 3"),
                 n("ibff5694", "Profitez des limites d'utilisation les plus élevées, des modes DeepSearch et Réflexion ainsi que d'un accès anticipé aux nouvelles fonctionnalités."),
                 n("i824f4da", "Moins de publicités"),
@@ -7211,16 +7233,16 @@
                 n("hd80bd3e", "Sponsoriser un post"),
                 n("fe2b0008", "Découvrir comment utiliser X"),
                 n("h257d4aa", "Choisir un post à sponsoriser"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
-                n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("fe946974", "Votre essai de X sans publicités"),
+                n("f6c50ec0", "Votre essai sans publicités est terminé"),
+                n("b1319404", "Publicités évitées"),
+                n("baa4acae", "Le contenu que vous voyez est plus personnalisé."),
+                n("c00e8600", "Estimation du temps gagné"),
+                n("ic073e4e", "Votre temps est précieux."),
+                n("eb866e88", "Estimation du temps gagné sur un an"),
+                n("aa77b70c", "Sur la base de votre utilisation."),
+                n("c534c6b4", "Nous préparons les chiffres…"),
+                n("i57332f0", "Continuez à utiliser X et revenez plus tard pour voir combien de publicités vous avez évitées et combien de temps vous avez gagné."),
                 n("cc10f019", function (e) {
                     return e.minutes + " minute" + o(e.minutes, "", "s");
                 }),
@@ -7236,11 +7258,11 @@
                 n("be88be23", function (e) {
                     return "Votre essai sans publicités de " + e.durationInDays + " jours est activé.";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("a4413462", "Tout au long de votre essai, vous verrez des statistiques sur le nombre de publicités que vous n'avez pas vues et sur le temps que vous avez ainsi gagné."),
+                n("ae3f3b0e", "Profitez‑en !"),
+                n("cdac8dc4", "Découvrir mon nouveau fil"),
                 n("dec99336", "Sans publicités"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("i95803fa", "Malheureusement, vous ne respectez actuellement pas les critères requis."),
                 n("d28a1d72", "Repérez les tendances avant tout le monde grâce à Radar"),
                 n("fb70427a", "Nous lançons l'outil de recherche le plus puissant sur X."),
                 n("i54bf620", "Suivez des mots‑clés"),
@@ -7845,35 +7867,7 @@
                 n("c29e3a88", "Sélectionner des affiliés"),
                 n("j8318d57", function (e) {
                     return e.number + " affilié" + r(e.number, "", "s");
-                }),
-                n("bf809ec0", "Sélectionner des affiliés"),
-                n("b719e224", "Aucun résultat"),
-                n("c9938100", "Résultats de recherche"),
-                n("d1a35ec6", "Ajouter des comptes"),
-                n("b437adda", "Mettre à niveau vers la version payante"),
-                n("f1f6c88b", function (e) {
-                    return "Comptes (" + e.count + ")";
-                }),
-                n("b02156b8", "Invitations"),
-                n("gd67d29b", function (e) {
-                    return "Invitations (" + e.count + ")";
-                }),
-                n("daf646e6", "Merci de noter que vous devez libeller les comptes de manière appropriée."),
-                n("i3895c32", "Votre compte est en cours d'examen suite à la modification de votre @nomdutilisateur X."),
-                n("i5f8b628", "Il n'est pas possible de modifier vos affiliés tant que votre compte est en cours d'examen."),
-                n("e9e663ac", "Votre paiement aurait déjà dû être effectué."),
-                n("c3ddd22c", "conditions"),
-                n("c9729d8a", "conditions"),
-                n("cdcd1d2c", "Ajoutez des affiliations à votre organisation"),
-                n("d30ea6f3", function (e) {
-                    return "Voulez‑vous vraiment supprimer @" + e.name + " ?";
-                }),
-                n("c2dfbb86", "Oui"),
-                n("ba047f76", "La suppression d'une affiliation supprime immédiatement la coche du compte et son badge d'affiliation. La facturation se poursuivra jusqu'à la fin du mois."),
-                n("j26dee0e", "Supprimer l'affilié"),
-                n("e30cbdf0", "Cet affilié est abonné au service Organisations certifiées et doit rester une organisation. Il n'est pas possible d'indiquer qu'il s'agit maintenant d'une personne."),
-                n("j3115ce8", "Personne"),
-                n("d8bb1d84", "Organisation");
+                });
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7912,9 +7906,37 @@
                     i(e, t)
                 );
             }
-            n("e970bdbd", function (e) {
-                return e.count + " invitations restantes";
-            }),
+            n("bf809ec0", "Sélectionner des affiliés"),
+                n("b719e224", "Aucun résultat"),
+                n("c9938100", "Résultats de recherche"),
+                n("d1a35ec6", "Ajouter des comptes"),
+                n("b437adda", "Mettre à niveau vers la version payante"),
+                n("f1f6c88b", function (e) {
+                    return "Comptes (" + e.count + ")";
+                }),
+                n("b02156b8", "Invitations"),
+                n("gd67d29b", function (e) {
+                    return "Invitations (" + e.count + ")";
+                }),
+                n("daf646e6", "Merci de noter que vous devez libeller les comptes de manière appropriée."),
+                n("i3895c32", "Votre compte est en cours d'examen suite à la modification de votre @nomdutilisateur X."),
+                n("i5f8b628", "Il n'est pas possible de modifier vos affiliés tant que votre compte est en cours d'examen."),
+                n("e9e663ac", "Votre paiement aurait déjà dû être effectué."),
+                n("c3ddd22c", "conditions"),
+                n("c9729d8a", "conditions"),
+                n("cdcd1d2c", "Ajoutez des affiliations à votre organisation"),
+                n("d30ea6f3", function (e) {
+                    return "Voulez‑vous vraiment supprimer @" + e.name + " ?";
+                }),
+                n("c2dfbb86", "Oui"),
+                n("ba047f76", "La suppression d'une affiliation supprime immédiatement la coche du compte et son badge d'affiliation. La facturation se poursuivra jusqu'à la fin du mois."),
+                n("j26dee0e", "Supprimer l'affilié"),
+                n("e30cbdf0", "Cet affilié est abonné au service Organisations certifiées et doit rester une organisation. Il n'est pas possible d'indiquer qu'il s'agit maintenant d'une personne."),
+                n("j3115ce8", "Personne"),
+                n("d8bb1d84", "Organisation"),
+                n("e970bdbd", function (e) {
+                    return e.count + " invitations restantes";
+                }),
                 n("id67d953", function (e) {
                     return "Un erreur s'est produite lors de la récupération de vos détails de paiement Stripe. Veuillez envoyer un message à l'adresse " + e.supportEmail + " si ce problème persiste.";
                 }),
@@ -8887,8 +8909,8 @@
                 n("ha3efce4", "Automatique"),
                 n("hd8d044d", function (e) {
                     return "Automatique (" + e.quality + ")";
-                }),
-                n("a7bf9962", "Télécharger la vidéo"),
+                });
+            n("a7bf9962", "Télécharger la vidéo"),
                 n("ccc97152", "Vitesse de lecture"),
                 n("h531ade0", "Qualité de la vidéo"),
                 n("e8b5757c", "x 0,25"),
@@ -8919,8 +8941,8 @@
                 n("c1658fc6", "Le média n'a pas pu être lu."),
                 n("h519ae04", "Le média a été désactivé suite à une revendication des droits d'auteur."),
                 n("ce871584", "Cette diffusion est terminée."),
-                n("c101eb96", "Cette diffusion n'est pas disponible.");
-            n("gb24a514", "Ce média a été désactivé suite à un signalement du détenteur des droits d'auteur."),
+                n("c101eb96", "Cette diffusion n'est pas disponible."),
+                n("gb24a514", "Ce média a été désactivé suite à un signalement du détenteur des droits d'auteur."),
                 n("hcaf3e63", function (e) {
                     return "Ce média a été désactivé suite à la revendication des droits d'auteur par " + e.holder + ".";
                 }),
@@ -11482,6 +11504,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Contribue à identifier des posts "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Cela ne nuira pas aux posts, mais pourrait contribuer à ", " ceux qui sont très appréciés."];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " pour cette fonctionnalité expérimentale"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["En tant qu'auteur du post, vous pouvez demander ", "."];
@@ -12072,7 +12118,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["Frais de ", " %, minimum "];
                             },
                         },
                         {
@@ -13298,4 +13344,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.4340d4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.a48a5a7a.js.map

@@ -5506,13 +5506,35 @@
                 o("g22c8c30", "If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the post as added context."),
                 o("jf04b084", "These notes are added by contributors who believe the post isn’t misleading and does not need additional context."),
                 o("g5a72e98", "These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful."),
-                o("h53cb7de", "What do you think about this post?"),
-                o("dc3bfc82", "What, if anything, do you like about this post?"),
-                o("b4704bf4", "What, if anything, do you not like about this post?"),
+                o("b8719c22", "Help identify whether posts are liked by people from different perspectives."),
+                o("jcdf97d4", "What do you like about the post?"),
+                o("d4d7b67e", "What don’t you like about the post?"),
                 o("ed5156fa", "آپ کی درجہ بندی کو محفوظ کرتے ہوئے ایک نقص آ گیا تھا، براہ مہربانی دوبارہ کوشش کریں۔"),
-                o("d5f9fb42", "You rated this community boost"),
+                o("d0ed3636", "You rated this post"),
                 o("j6aa6172", "ریٹنگ کو حذف کر دیں؟"),
                 o("i4112750", "اس کو کالعدم نہیں کیا جا سکتا ہے۔"),
+                o("i6f6191a", "شکریہ"),
+                o("h5575012", "Agree and submit"),
+                o("f9171e52", "This post got some likes from people who normally disagree, but input so far is limited."),
+                o("j0f9919a", "Your rating won’t negatively impact a post, but can help positively recognize posts that are widely liked."),
+                o("b3af830c", "Your input:"),
+                o("d0b29562", "Rate more posts now"),
+                o("i36ea87a", "I agree with it"),
+                o("d5befc34", "I learned something interesting"),
+                o("je26ecf2", "It makes a meaningful point"),
+                o("e4e331aa", "It’s unifying on a topic that’s often polarizing"),
+                o("ed61ff2a", "It’s heartwarming or endearing"),
+                o("gc3104d8", "It’s inspiring or exciting"),
+                o("j8c4400e", "It’s funny"),
+                o("j4738406", "N/A: There’s nothing I like about it"),
+                o("d93d1666", "I don’t agree with it"),
+                o("d6130466", "There is no meaningful substance to it"),
+                o("d96835b6", "It doesn’t interest me"),
+                o("b7ba4150", "N/A: There’s nothing I dislike about it"),
+                o("g0402b3b", "liked by people from different perspectives"),
+                o("ged62c2b", "spotlight"),
+                o("b5d5f7f1", "Shapes the direction"),
+                o("a42fef87", "Learn more"),
                 o("bd7eb888", "See all notes on this post"),
                 o("i97b83f6", "آپ کی اپیل جمع کرانے میں کوئی مسئلہ ہوا، براہ کرم دوبارہ کوشش کریں۔"),
                 o("a038ab9a", "Translate note"),
@@ -5863,8 +5885,8 @@
                 o("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " میں محفوظ کر دیا گیا";
                 }),
-                o("h18f86a4", "فولڈر حذف کریں"),
-                o("f4ea967a", "فولڈر حذف کر دیا گیا ہے"),
+                o("h18f86a4", "فولڈر حذف کریں");
+            o("f4ea967a", "فولڈر حذف کر دیا گیا ہے"),
                 o("b670aa62", "فولڈر کا نام"),
                 o("aece5462", "فولڈر کا نام کامیابی کے ساتھ اپ ڈیٹ ہو گیا ہے"),
                 o("e3299b94", "کچھ نقص واقع ہوا ہے۔ ایک منٹ بعد اس فولڈر کو دوبارہ اپ ڈیٹ کرنے کی کوشش کریں۔"),
@@ -5895,8 +5917,8 @@
                     return "Ended " + e.timestamp;
                 }),
                 o("daca8a2c", "Open in Dock"),
-                o("e3aac82a", "نشریہ ہو رہا ہے");
-            o("i0ed3f4e", "ایونٹ کی تصویر"),
+                o("e3aac82a", "نشریہ ہو رہا ہے"),
+                o("i0ed3f4e", "ایونٹ کی تصویر"),
                 o("cbae35fa", "نشریہ کی رپورٹ کریں"),
                 o("fd12ab58", "Collection posts"),
                 o("a226497c", "ایک نئی کمیونٹی بنائيں"),
@@ -6867,8 +6889,8 @@
                 o("b925c18c", "Salary Type"),
                 o("j3d242ce", "Invalid range"),
                 o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                o("b8cbb51a", "Job Summary"),
-                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                o("b8cbb51a", "Job Summary");
+            o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "پروفائل اسپاٹ لائٹ"),
                 o("j2dd3686", "Highlight featured jobs above my posts."),
@@ -6893,8 +6915,8 @@
                 o("c0195168", "Change your app icon and navigation options"),
                 o("b6b5dc94", "Become verified"),
                 o("b06db848", "Stand out from others on the platform"),
-                o("e3e3a97c", "Earn a share of revenue from your posts");
-            o("f15bc24e", "Increased Grok limits"),
+                o("e3e3a97c", "Earn a share of revenue from your posts"),
+                o("f15bc24e", "Increased Grok limits"),
                 o("c4666e1c", "More usage of Grok 3, our latest model"),
                 o("he74ae7a", "Highest Grok usage limits"),
                 o("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
@@ -7845,35 +7867,7 @@
                 o("c29e3a88", "Select affiliates"),
                 o("j8318d57", function (e) {
                     return e.number + " affiliate" + r(e.number, "", "s");
-                }),
-                o("bf809ec0", "Select Affiliates"),
-                o("b719e224", "کوئی نتائج نہیں"),
-                o("c9938100", "تلاش کے نتائج"),
-                o("d1a35ec6", "اکاؤنٹس شامل کریں"),
-                o("b437adda", "Upgrade to paid"),
-                o("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
-                o("b02156b8", "Invitations"),
-                o("gd67d29b", function (e) {
-                    return "Invitations (" + e.count + ")";
-                }),
-                o("daf646e6", "Please note: you must label accounts appropriately."),
-                o("i3895c32", "Your account is under review because you changed your X @handle"),
-                o("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
-                o("e9e663ac", "Your payment is past due."),
-                o("c3ddd22c", "terms"),
-                o("c9729d8a", "terms"),
-                o("cdcd1d2c", "Add affiliations to your organization"),
-                o("d30ea6f3", function (e) {
-                    return "Are you sure you want to remove @" + e.name + "?";
-                }),
-                o("c2dfbb86", "Yes, do it"),
-                o("ba047f76", "Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
-                o("j26dee0e", "Remove affiliate"),
-                o("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
-                o("j3115ce8", "Individual"),
-                o("d8bb1d84", "ادارہ");
+                });
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7912,9 +7906,37 @@
                     c(e, t)
                 );
             }
-            o("e970bdbd", function (e) {
-                return e.count + " invites remaining";
-            }),
+            o("bf809ec0", "Select Affiliates"),
+                o("b719e224", "کوئی نتائج نہیں"),
+                o("c9938100", "تلاش کے نتائج"),
+                o("d1a35ec6", "اکاؤنٹس شامل کریں"),
+                o("b437adda", "Upgrade to paid"),
+                o("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                o("b02156b8", "Invitations"),
+                o("gd67d29b", function (e) {
+                    return "Invitations (" + e.count + ")";
+                }),
+                o("daf646e6", "Please note: you must label accounts appropriately."),
+                o("i3895c32", "Your account is under review because you changed your X @handle"),
+                o("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
+                o("e9e663ac", "Your payment is past due."),
+                o("c3ddd22c", "terms"),
+                o("c9729d8a", "terms"),
+                o("cdcd1d2c", "Add affiliations to your organization"),
+                o("d30ea6f3", function (e) {
+                    return "Are you sure you want to remove @" + e.name + "?";
+                }),
+                o("c2dfbb86", "Yes, do it"),
+                o("ba047f76", "Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
+                o("j26dee0e", "Remove affiliate"),
+                o("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
+                o("j3115ce8", "Individual"),
+                o("d8bb1d84", "ادارہ"),
+                o("e970bdbd", function (e) {
+                    return e.count + " invites remaining";
+                }),
                 o("id67d953", function (e) {
                     return "Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
                 }),
@@ -8887,8 +8909,8 @@
                 o("ha3efce4", "Auto"),
                 o("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                }),
-                o("a7bf9962", "Download video"),
+                });
+            o("a7bf9962", "Download video"),
                 o("ccc97152", "Playback speed"),
                 o("h531ade0", "Video quality"),
                 o("e8b5757c", "0.25x"),
@@ -8919,8 +8941,8 @@
                 o("c1658fc6", "میڈیا نہیں چلایا جا سکتا۔"),
                 o("h519ae04", "جملہ حقوق کے دعوے کی وجہ سے میڈیا کو غیر فعال کر دیا گیا ہے۔"),
                 o("ce871584", "یہ نشریہ ختم ہو گیا ہے۔"),
-                o("c101eb96", "یہ نشریہ دستیاب نہیں ہے۔");
-            o("gb24a514", "یہ میڈیا کاپی رائٹ کے مالک کی ایک رپورٹ کے جواب میں غیر فعال کر دیا گیا ہے۔"),
+                o("c101eb96", "یہ نشریہ دستیاب نہیں ہے۔"),
+                o("gb24a514", "یہ میڈیا کاپی رائٹ کے مالک کی ایک رپورٹ کے جواب میں غیر فعال کر دیا گیا ہے۔"),
                 o("hcaf3e63", function (e) {
                     return e.holder + " کے ذریعہ کاپی رائٹ دعوی کی وجہ سے اس میڈیا کو غیر فعال بنادیا گیا ہے۔";
                 }),
@@ -11486,6 +11508,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Helps find posts "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Won’t hurt posts but could help ", " widely liked ones"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " of this experimental feature"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["As the post author, you can "];
@@ -13303,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.131ccc5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.1fc45a5a.js.map

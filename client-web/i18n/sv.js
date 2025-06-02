@@ -5502,13 +5502,35 @@
                 t("g22c8c30", "Om dessa anmärkningar anses vara till hjälp av tillräckligt många medarbetare, däribland sådana som normalt inte har hållit med tidigare bedömningar, börjar de visas offentligt med inlägget som ytterligare sammanhang."),
                 t("jf04b084", "Dessa anmärkningar läggs till av medarbetare som menar att inlägget inte är vilseledande och inte behöver mer sammanhang."),
                 t("g5a72e98", "De är bara synliga i Gruppanmärkningar som ytterligare information för bedömare och visas inte som sammanhang med inlägget ens om de uppnår statusen Till hjälp."),
-                t("h53cb7de", "Vad tycker du om detta inlägg?"),
-                t("dc3bfc82", "Vad gillar du med detta inlägg, om något?"),
-                t("b4704bf4", "Vad gillar du inte med detta inlägg, om något?"),
+                t("b8719c22", "Hjälp till att identifiera om inlägg gillas av personer med olika perspektiv."),
+                t("jcdf97d4", "Vad gillar du med det här inlägget?"),
+                t("d4d7b67e", "Vad gillar du inte med det här inlägget?"),
                 t("ed5156fa", "Det gick inte att spara bedömningen, försök igen."),
-                t("d5f9fb42", "Du bedömde denna gruppboost"),
+                t("d0ed3636", "Du bedömde det här inlägget"),
                 t("j6aa6172", "Vill du radera bedömningen?"),
                 t("i4112750", "Detta går inte att ångra."),
+                t("i6f6191a", "Tack!"),
+                t("h5575012", "Agree and submit"),
+                t("f9171e52", "Det här inlägget fick en del gilla-markeringar från folk som normalt inte håller med varandra, men inte många har gjort något än."),
+                t("j0f9919a", "Din bedömning påverkar inte inlägget negativt, men det kan ge erkännande åt inlägg som många gillar."),
+                t("b3af830c", "Din kommentar:"),
+                t("d0b29562", "Bedöm fler inlägg nu"),
+                t("i36ea87a", "Jag samtycker"),
+                t("d5befc34", "Jag fick reda på något intressant"),
+                t("je26ecf2", "Det argumenterar meningsfullt"),
+                t("e4e331aa", "Det förenar i en sak som ofta brukar vara polariserande"),
+                t("ed61ff2a", "Det är hjärtevärmande"),
+                t("gc3104d8", "Det är inspirerande eller spännande"),
+                t("j8c4400e", "Det är roligt"),
+                t("j4738406", "Inte aktuellt: Det finns inget jag gillar med det"),
+                t("d93d1666", "Jag samtycker inte"),
+                t("d6130466", "Det saknar substans"),
+                t("d96835b6", "Det intresserar mig inte"),
+                t("b7ba4150", "Inte aktuellt: Det finns inget jag ogillar med det"),
+                t("g0402b3b", "gillas av personer med olika perspektiv"),
+                t("ged62c2b", "framhäva"),
+                t("b5d5f7f1", "Formar riktningen"),
+                t("a42fef87", "Learn more"),
                 t("bd7eb888", "Se alla anmärkningar om detta inlägg"),
                 t("i97b83f6", "Det gick inte att skicka in din överklagan, försök igen."),
                 t("a038ab9a", "Översätt anmärkningen"),
@@ -5859,8 +5881,8 @@
                 t("e41c9b4f", function (e) {
                     return "Sparat på " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Radera mappen"),
-                t("f4ea967a", "Mappen har raderats"),
+                t("h18f86a4", "Radera mappen");
+            t("f4ea967a", "Mappen har raderats"),
                 t("b670aa62", "Mappnamn"),
                 t("aece5462", "Mappnamnet har ändrats"),
                 t("e3299b94", "Något gick fel. Försök uppdatera mappen igen om en stund."),
@@ -5891,8 +5913,8 @@
                     return "Avslutades " + e.timestamp;
                 }),
                 t("daca8a2c", "Öppna i dockan"),
-                t("e3aac82a", "Läser in sändningen");
-            t("i0ed3f4e", "Evenemangsbild"),
+                t("e3aac82a", "Läser in sändningen"),
+                t("i0ed3f4e", "Evenemangsbild"),
                 t("cbae35fa", "Rapportera sändningen"),
                 t("fd12ab58", "Samlingsinlägg"),
                 t("a226497c", "Skapa en ny grupp"),
@@ -6863,8 +6885,8 @@
                 t("b925c18c", "Lönetyp"),
                 t("j3d242ce", "Ogiltigt intervall"),
                 t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka."),
-                t("b8cbb51a", "Jobböversikt"),
-                t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
+                t("b8cbb51a", "Jobböversikt");
+            t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
                 t("b075c68a", "Redigera jobbet"),
                 t("d4b6a6e0", "Profilspotlight"),
                 t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg"),
@@ -6889,8 +6911,8 @@
                 t("c0195168", "Ändra din appikon och dina navigeringsalternativ"),
                 t("b6b5dc94", "Bli verifierad"),
                 t("b06db848", "Märks bland andra på plattformen"),
-                t("e3e3a97c", "Få en del av intäkterna från dina inlägg");
-            t("f15bc24e", "Ökade Grok-gränser"),
+                t("e3e3a97c", "Få en del av intäkterna från dina inlägg"),
+                t("f15bc24e", "Ökade Grok-gränser"),
                 t("c4666e1c", "Använd vår senaste modell Grok 3 mer"),
                 t("he74ae7a", "Högsta användningsgränser för Grok"),
                 t("f5732cd4", "Plus utökad åtkomst till DeepSearch och Tänk"),
@@ -7207,16 +7229,16 @@
                 t("hd80bd3e", "Marknadsför ett inlägg"),
                 t("fe2b0008", "Lär dig använda X"),
                 t("h257d4aa", "Välj ett inlägg att marknadsföra"),
-                t("fe946974", "Your trial of X without ads"),
-                t("f6c50ec0", "Your ad-free trial has ended"),
-                t("b1319404", "Ads avoided"),
-                t("baa4acae", "You’re seeing more personalized content."),
-                t("c00e8600", "Estimated time saved"),
-                t("ic073e4e", "Your time is valuable."),
-                t("eb866e88", "Estimated 1-year time savings"),
-                t("aa77b70c", "Based on your usage."),
-                t("c534c6b4", "We’re crunching the numbers..."),
-                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("fe946974", "Din testperiod med X utan annonser"),
+                t("f6c50ec0", "Din annonsfria testperiod är över"),
+                t("b1319404", "Annonser undviks"),
+                t("baa4acae", "Du ser mer anpassat innehåll."),
+                t("c00e8600", "Tid du har beräknats spara"),
+                t("ic073e4e", "Din tid är värdefull."),
+                t("eb866e88", "Uppskattad besparing på ett år"),
+                t("aa77b70c", "Utifrån ditt bruk"),
+                t("c534c6b4", "Vi genomför beräkningarna …"),
+                t("i57332f0", "Rulla vidare och kom tillbaka senare för att se hur många annonser du har sluppit och hur mycket tid du har sparat"),
                 t("cc10f019", function (e) {
                     return e.minutes + " minut" + r(e.minutes, "", "er");
                 }),
@@ -7232,11 +7254,11 @@
                 t("be88be23", function (e) {
                     return "Din " + e.durationInDays + " dagar långa testperiod utan annonser har aktiverats";
                 }),
-                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                t("ae3f3b0e", "Enjoy!"),
-                t("cdac8dc4", "See your new feed"),
+                t("a4413462", "Under provperioden kan du se statistik om hur många annonser du inte har sett och hur mycket tid du har sparat."),
+                t("ae3f3b0e", "Ha så kul!"),
+                t("cdac8dc4", "Se ditt nya flöde"),
                 t("dec99336", "Annonsfritt"),
-                t("i95803fa", "Unfortunately, you are not eligible at this time."),
+                t("i95803fa", "Tyvärr är du inte kvalificerad nu."),
                 t("d28a1d72", "Bli den första att upptäcka trender med Radar"),
                 t("fb70427a", "Nu lanserar vi det mest kraftfulla sökverktyget på X."),
                 t("i54bf620", "Övervaka nyckelord"),
@@ -7841,35 +7863,7 @@
                 t("c29e3a88", "Välj anknutna konton"),
                 t("j8318d57", function (e) {
                     return e.number + " anknut" + r(e.number, "et konto", "na konton");
-                }),
-                t("bf809ec0", "Välj anknutna konton"),
-                t("b719e224", "Inga resultat"),
-                t("c9938100", "Sökresultat"),
-                t("d1a35ec6", "Lägg till konton"),
-                t("b437adda", "Uppgradera till betalversionen"),
-                t("f1f6c88b", function (e) {
-                    return "Konton (" + e.count + ")";
-                }),
-                t("b02156b8", "Inbjudningar"),
-                t("gd67d29b", function (e) {
-                    return "Inbjudningar (" + e.count + ")";
-                }),
-                t("daf646e6", "Obs! Du måste etikettera konton på rätt sätt."),
-                t("i3895c32", "Ditt konto granskas eftersom du har ändrat ditt @användarnamn på X"),
-                t("i5f8b628", "Du kan inte ändra dina anknutna konton förrän ditt konto har granskats."),
-                t("e9e663ac", "Betalningen är försenad."),
-                t("c3ddd22c", "villkor"),
-                t("c9729d8a", "villkor"),
-                t("cdcd1d2c", "Lägg till anknutna konton till din organisation"),
-                t("d30ea6f3", function (e) {
-                    return "Vill du verkligen ta bort @" + e.name + "?";
-                }),
-                t("c2dfbb86", "Ja, gör det"),
-                t("ba047f76", "Om du tar bort ett anknutet konto tas personens bock och märke för ett anknutet konto bort direkt. Du debiteras tills slutet av månaden."),
-                t("j26dee0e", "Ta bort det anknutna kontot"),
-                t("e30cbdf0", "Detta anknutna konto är prenumerant på Verifierade organisationer och måste förbli en organisation. Det kan inte ändras till ett konto för en enskild person."),
-                t("j3115ce8", "Enskild"),
-                t("d8bb1d84", "Organisation");
+                });
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7908,9 +7902,37 @@
                     d(e, a)
                 );
             }
-            t("e970bdbd", function (e) {
-                return e.count + " inbjudningar kvar";
-            }),
+            t("bf809ec0", "Välj anknutna konton"),
+                t("b719e224", "Inga resultat"),
+                t("c9938100", "Sökresultat"),
+                t("d1a35ec6", "Lägg till konton"),
+                t("b437adda", "Uppgradera till betalversionen"),
+                t("f1f6c88b", function (e) {
+                    return "Konton (" + e.count + ")";
+                }),
+                t("b02156b8", "Inbjudningar"),
+                t("gd67d29b", function (e) {
+                    return "Inbjudningar (" + e.count + ")";
+                }),
+                t("daf646e6", "Obs! Du måste etikettera konton på rätt sätt."),
+                t("i3895c32", "Ditt konto granskas eftersom du har ändrat ditt @användarnamn på X"),
+                t("i5f8b628", "Du kan inte ändra dina anknutna konton förrän ditt konto har granskats."),
+                t("e9e663ac", "Betalningen är försenad."),
+                t("c3ddd22c", "villkor"),
+                t("c9729d8a", "villkor"),
+                t("cdcd1d2c", "Lägg till anknutna konton till din organisation"),
+                t("d30ea6f3", function (e) {
+                    return "Vill du verkligen ta bort @" + e.name + "?";
+                }),
+                t("c2dfbb86", "Ja, gör det"),
+                t("ba047f76", "Om du tar bort ett anknutet konto tas personens bock och märke för ett anknutet konto bort direkt. Du debiteras tills slutet av månaden."),
+                t("j26dee0e", "Ta bort det anknutna kontot"),
+                t("e30cbdf0", "Detta anknutna konto är prenumerant på Verifierade organisationer och måste förbli en organisation. Det kan inte ändras till ett konto för en enskild person."),
+                t("j3115ce8", "Enskild"),
+                t("d8bb1d84", "Organisation"),
+                t("e970bdbd", function (e) {
+                    return e.count + " inbjudningar kvar";
+                }),
                 t("id67d953", function (e) {
                     return "Något gick fel när vi skulle hämta dina Stripe-uppgifter. Kontakta " + e.supportEmail + " om problemet inte försvinner.";
                 }),
@@ -8883,8 +8905,8 @@
                 t("ha3efce4", "Auto"),
                 t("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                }),
-                t("a7bf9962", "Hämta videon"),
+                });
+            t("a7bf9962", "Hämta videon"),
                 t("ccc97152", "Uppspelningstakt"),
                 t("h531ade0", "Videokvalitet"),
                 t("e8b5757c", "0,25 ×"),
@@ -8915,8 +8937,8 @@
                 t("c1658fc6", "Mediet kunde inte spelas upp."),
                 t("h519ae04", "Mediet har inaktiverats på grund av ett upphovsrättsyrkande."),
                 t("ce871584", "Denna sändning har avslutats."),
-                t("c101eb96", "Denna sändning är inte tillgänglig.");
-            t("gb24a514", "Detta medium har inaktiverats efter en rapport från upphovsrättsinnehavaren."),
+                t("c101eb96", "Denna sändning är inte tillgänglig."),
+                t("gb24a514", "Detta medium har inaktiverats efter en rapport från upphovsrättsinnehavaren."),
                 t("hcaf3e63", function (e) {
                     return "Detta medium har inaktiverats på grund av ett upphovsrättsyrkande från " + e.holder + ".";
                 }),
@@ -11478,6 +11500,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Hjälper till att hitta inlägg som "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Skadar inte inlägg men skulle kunna ", " sådana som många gillar"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " för denna experimentella funktion"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Som inläggets upphovsman kan du "];
@@ -12068,7 +12114,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", " % i avgift, minst "];
                             },
                         },
                         {
@@ -13295,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.6fd0ddca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.0754d04a.js.map

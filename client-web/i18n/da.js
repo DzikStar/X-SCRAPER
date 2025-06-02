@@ -5502,13 +5502,35 @@
                 t("g22c8c30", "Hvis disse notater bliver bedømt som nyttige af nok bidragydere, inklusive dem, der plejer at være uenige i deres tidligere bedømmelser, begynder de at blive vist offentligt sammen med posten som tilføjet kontekst."),
                 t("jf04b084", "Disse notater er tilføjet af bidragydere, der mener, at posten ikke er vildledende og ikke har brug for yderligere kontekst."),
                 t("g5a72e98", "Disse notater er kun synlige i Fællesskabsnoter som yderligere oplysninger til bedømmere og bliver ikke vist som kontekst til posten, selvom de opnår status som nyttige."),
-                t("h53cb7de", "Hvad synes du om opslaget?"),
-                t("dc3bfc82", "Hvad, hvis noget, kan du lide ved opslaget?"),
-                t("b4704bf4", "Hvad, hvis noget, kan du ikke lide ved opslaget?"),
+                t("b8719c22", "Hjælp med at finde ud af, om folk med forskellige perspektiver har liket posts."),
+                t("jcdf97d4", "Hvad kan du lide ved denne post?"),
+                t("d4d7b67e", "Hvad kan du ikke lide ved denne post?"),
                 t("ed5156fa", "Der opstod en fejl under lagring af din bedømmelse. Prøv igen."),
-                t("d5f9fb42", "Du har bedømt dette Fællesskabs-boost"),
+                t("d0ed3636", "Du har bedømt denne post"),
                 t("j6aa6172", "Slet bedømmelse?"),
                 t("i4112750", "Dette kan ikke fortrydes."),
+                t("i6f6191a", "Tak!"),
+                t("h5575012", "Agree and submit"),
+                t("f9171e52", "Denne post fik nogle likes fra folk, der normalt er uenige, men inputtene er indtil videre begrænsede."),
+                t("j0f9919a", "Din bedømmelse har ingen negativ indflydelse på en post, men kan bidrage til at synliggøre posts, der er meget populære."),
+                t("b3af830c", "Dit input:"),
+                t("d0b29562", "Bedøm flere posts nu"),
+                t("i36ea87a", "Jeg er enig med den"),
+                t("d5befc34", "Jeg har lært noget interessant"),
+                t("je26ecf2", "Den har en vigtig pointe"),
+                t("e4e331aa", "Den er samlende omkring et emne, der ofte er polariserende"),
+                t("ed61ff2a", "Den er hjerteligt eller rørende"),
+                t("gc3104d8", "Den er inspirerende eller spændende"),
+                t("j8c4400e", "Den er sjov"),
+                t("j4738406", "Der er ikke noget, jeg kan lide ved den"),
+                t("d93d1666", "Jeg er ikke enig med den"),
+                t("d6130466", "Der er intet meningsfuldt indhold i den"),
+                t("d96835b6", "Den interesserer mig ikke"),
+                t("b7ba4150", "Der er ikke noget, jeg ikke kan lide ved den"),
+                t("g0402b3b", "som folk med forskellige perspektiver har liket"),
+                t("ged62c2b", "fremhæve"),
+                t("b5d5f7f1", "Bestemmer retningen"),
+                t("a42fef87", "Learn more"),
                 t("bd7eb888", "Se alle notater i denne post"),
                 t("i97b83f6", "Der opstod en fejl under afsendelse af din appel. Prøv igen."),
                 t("a038ab9a", "Oversæt notat"),
@@ -5859,8 +5881,8 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slet mappe"),
-                t("f4ea967a", "Mappen er blevet slettet"),
+                t("h18f86a4", "Slet mappe");
+            t("f4ea967a", "Mappen er blevet slettet"),
                 t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er blevet opdateret"),
                 t("e3299b94", "Noget gik galt. Prøv at opdatere mappen igen om et øjeblik."),
@@ -5891,8 +5913,8 @@
                     return "Afsluttet " + e.timestamp;
                 }),
                 t("daca8a2c", "Åbn i Dock"),
-                t("e3aac82a", "Indlæser udsendelse");
-            t("i0ed3f4e", "Begivenhedsbillede"),
+                t("e3aac82a", "Indlæser udsendelse"),
+                t("i0ed3f4e", "Begivenhedsbillede"),
                 t("cbae35fa", "Indberet udsendelse"),
                 t("fd12ab58", "Samlings-posts"),
                 t("a226497c", "Opret et nyt Fællesskab"),
@@ -6863,8 +6885,8 @@
                 t("b925c18c", "Løntype"),
                 t("j3d242ce", "Ugyldigt interval"),
                 t("f4d07bd2", "Inkluder valgfrie oplysninger for at gøre det lettere for ansøgere at finde dine stillinger med søgning."),
-                t("b8cbb51a", "Stillingsoversigt"),
-                t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres."),
+                t("b8cbb51a", "Stillingsoversigt");
+            t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres."),
                 t("b075c68a", "Rediger stilling"),
                 t("d4b6a6e0", "Profil-spotlight"),
                 t("j2dd3686", "Giv mere fokus til fremhævede stillinger end til mine poster."),
@@ -6889,8 +6911,8 @@
                 t("c0195168", "Skift dit app-ikon og dine navigationsmuligheder"),
                 t("b6b5dc94", "Bliv verificeret"),
                 t("b06db848", "Skil dig ud fra andre på platformen"),
-                t("e3e3a97c", "Tjen en del af indtægterne fra dine opslag");
-            t("f15bc24e", "Højere grænser i Grok"),
+                t("e3e3a97c", "Tjen en del af indtægterne fra dine opslag"),
+                t("f15bc24e", "Højere grænser i Grok"),
                 t("c4666e1c", "Brug mere af Grok 3, vores nyeste model"),
                 t("he74ae7a", "Højeste brugergrænse for Grok"),
                 t("f5732cd4", "Plus udvidet adgang til DeepSearch & Think"),
@@ -7207,16 +7229,16 @@
                 t("hd80bd3e", "Promover en post"),
                 t("fe2b0008", "Lær at bruge X"),
                 t("h257d4aa", "Vælg en post at promovere"),
-                t("fe946974", "Your trial of X without ads"),
-                t("f6c50ec0", "Your ad-free trial has ended"),
-                t("b1319404", "Ads avoided"),
-                t("baa4acae", "You’re seeing more personalized content."),
-                t("c00e8600", "Estimated time saved"),
-                t("ic073e4e", "Your time is valuable."),
-                t("eb866e88", "Estimated 1-year time savings"),
-                t("aa77b70c", "Based on your usage."),
-                t("c534c6b4", "We’re crunching the numbers..."),
-                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("fe946974", "Din prøveversion af X uden annoncer"),
+                t("f6c50ec0", "Din reklamefri prøveperiode er slut"),
+                t("b1319404", "Annoncer undgås"),
+                t("baa4acae", "Du ser mere personaliseret indhold."),
+                t("c00e8600", "Anslået sparet tid"),
+                t("ic073e4e", "Din tid er dyrebar."),
+                t("eb866e88", "Anslået 1-årig tidsbesparelse"),
+                t("aa77b70c", "Baseret på dit forbrug."),
+                t("c534c6b4", "Vi er i gang med at regne på det..."),
+                t("i57332f0", "Bliv ved med at scrolle og kom tilbage senere for at se, hvor mange annoncer du har undgået, og hvor meget tid du har sparet."),
                 t("cc10f019", function (e) {
                     return e.minutes + " minut" + i(e.minutes, "", "ter");
                 }),
@@ -7232,11 +7254,11 @@
                 t("be88be23", function (e) {
                     return "Din " + e.durationInDays + " dages annoncefri prøveperiode er aktiveret";
                 }),
-                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                t("ae3f3b0e", "Enjoy!"),
-                t("cdac8dc4", "See your new feed"),
+                t("a4413462", "I løbet af prøveperioden kan du se statistik over, hvor mange annoncer du ikke har set, og hvor meget tid du har sparet."),
+                t("ae3f3b0e", "God fornøjelse!"),
+                t("cdac8dc4", "Se dit nye feed"),
                 t("dec99336", "Annoncefri"),
-                t("i95803fa", "Unfortunately, you are not eligible at this time."),
+                t("i95803fa", "Desværre er du ikke kvalificeret på nuværende tidspunkt."),
                 t("d28a1d72", "Vær den allerførste til at spotte trends med Radar"),
                 t("fb70427a", "Vi introducerer det mest effektive søgeværktøj på X."),
                 t("i54bf620", "Overvåg keywords"),
@@ -7841,35 +7863,7 @@
                 t("c29e3a88", "Vælg tilknytninger"),
                 t("j8318d57", function (e) {
                     return e.number + " tilknytning" + i(e.number, "", "er");
-                }),
-                t("bf809ec0", "Vælg tilknytninger"),
-                t("b719e224", "Ingen resultater"),
-                t("c9938100", "Søgeresultater"),
-                t("d1a35ec6", "Tilføj konti"),
-                t("b437adda", "Opgrader til betalt"),
-                t("f1f6c88b", function (e) {
-                    return "Konti (" + e.count + ")";
-                }),
-                t("b02156b8", "Invitationer"),
-                t("gd67d29b", function (e) {
-                    return "Invitationer (" + e.count + ")";
-                }),
-                t("daf646e6", "Bemærk: Du skal mærke konti korrekt."),
-                t("i3895c32", "Din konto er under gennemgang, fordi du har ændret dit X-@brugernavn"),
-                t("i5f8b628", "Du kan ikke ændre dine tilknytninger, før din konto er gennemgået."),
-                t("e9e663ac", "Betalingsfristen er overskredet."),
-                t("c3ddd22c", "vilkår"),
-                t("c9729d8a", "vilkår"),
-                t("cdcd1d2c", "Føj tilknytninger til din organisation"),
-                t("d30ea6f3", function (e) {
-                    return "Er du sikker på, at du vil fjerne @" + e.name + "?";
-                }),
-                t("c2dfbb86", "Ja, gør det"),
-                t("ba047f76", "Fjernelse af en tilknytning fjerner straks vedkommendes flueben og tilknytningsbadge. Du vil fortsat blive faktureret indtil udgangen af måneden."),
-                t("j26dee0e", "Fjern tilknytning"),
-                t("e30cbdf0", "Denne tilknytning abonnerer på Verificerede organisationer og skal forblive en organisation. Den kan ikke ændres til en person."),
-                t("j3115ce8", "Individuel"),
-                t("d8bb1d84", "Organisation");
+                });
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7908,9 +7902,37 @@
                     a(e, r)
                 );
             }
-            t("e970bdbd", function (e) {
-                return e.count + " invitationer tilbage";
-            }),
+            t("bf809ec0", "Vælg tilknytninger"),
+                t("b719e224", "Ingen resultater"),
+                t("c9938100", "Søgeresultater"),
+                t("d1a35ec6", "Tilføj konti"),
+                t("b437adda", "Opgrader til betalt"),
+                t("f1f6c88b", function (e) {
+                    return "Konti (" + e.count + ")";
+                }),
+                t("b02156b8", "Invitationer"),
+                t("gd67d29b", function (e) {
+                    return "Invitationer (" + e.count + ")";
+                }),
+                t("daf646e6", "Bemærk: Du skal mærke konti korrekt."),
+                t("i3895c32", "Din konto er under gennemgang, fordi du har ændret dit X-@brugernavn"),
+                t("i5f8b628", "Du kan ikke ændre dine tilknytninger, før din konto er gennemgået."),
+                t("e9e663ac", "Betalingsfristen er overskredet."),
+                t("c3ddd22c", "vilkår"),
+                t("c9729d8a", "vilkår"),
+                t("cdcd1d2c", "Føj tilknytninger til din organisation"),
+                t("d30ea6f3", function (e) {
+                    return "Er du sikker på, at du vil fjerne @" + e.name + "?";
+                }),
+                t("c2dfbb86", "Ja, gør det"),
+                t("ba047f76", "Fjernelse af en tilknytning fjerner straks vedkommendes flueben og tilknytningsbadge. Du vil fortsat blive faktureret indtil udgangen af måneden."),
+                t("j26dee0e", "Fjern tilknytning"),
+                t("e30cbdf0", "Denne tilknytning abonnerer på Verificerede organisationer og skal forblive en organisation. Den kan ikke ændres til en person."),
+                t("j3115ce8", "Individuel"),
+                t("d8bb1d84", "Organisation"),
+                t("e970bdbd", function (e) {
+                    return e.count + " invitationer tilbage";
+                }),
                 t("id67d953", function (e) {
                     return "Noget gik galt under hentningen af dine Stripe-betalingsoplysninger. Kontakt " + e.supportEmail + ", hvis problemet fortsætter.";
                 }),
@@ -8883,8 +8905,8 @@
                 t("ha3efce4", "Automatisk"),
                 t("hd8d044d", function (e) {
                     return "Automatisk (" + e.quality + ")";
-                }),
-                t("a7bf9962", "Download video"),
+                });
+            t("a7bf9962", "Download video"),
                 t("ccc97152", "Afspilningshastighed"),
                 t("h531ade0", "Videokvalitet"),
                 t("e8b5757c", "0,25x"),
@@ -8915,8 +8937,8 @@
                 t("c1658fc6", "Mediet kunne ikke afspilles."),
                 t("h519ae04", "Mediet er blevet deaktiveret pga. et ophavsretligt krav."),
                 t("ce871584", "Denne udsendelse er afsluttet."),
-                t("c101eb96", "Denne udsendelse er ikke tilgængelig.");
-            t("gb24a514", "Dette medie er blevet deaktiveret som følge af en indberetning fra ophavsretindehaveren."),
+                t("c101eb96", "Denne udsendelse er ikke tilgængelig."),
+                t("gb24a514", "Dette medie er blevet deaktiveret som følge af en indberetning fra ophavsretindehaveren."),
                 t("hcaf3e63", function (e) {
                     return "Dette medie er blevet deaktiveret pga. et ophavsretligt krav fra " + e.holder + ".";
                 }),
@@ -11478,6 +11500,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Hjælper med at finde posts, "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Det skader ikke posts, men kan hjælpe med at ", " populære posts"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " for denne eksperimentelle funktion"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Som post-forfatter kan du "];
@@ -12068,7 +12114,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% gebyr, min. "];
                             },
                         },
                         {
@@ -13297,4 +13343,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.a66b69ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.233180aa.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c", "icons/IconChevronRight-js", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c", "icons/IconPlus-js"],
     {
         642153: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -19,40 +19,6 @@
                     );
                 },
                 l = i.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
-        },
-        879113: (e, t, r) => {
-            r.d(t, { Z: () => m });
-            var n = r(202784),
-                o = r(476984),
-                i = r.n(o),
-                a = r(143778),
-                s = r(750410),
-                l = r(682830);
-            const c = "failed",
-                d = "loaded",
-                u = "loading",
-                h = "none";
-            class m extends n.Component {
-                shouldComponentUpdate(e) {
-                    const t = e.fetchStatus === d,
-                        r = this.props.fetchStatus !== e.fetchStatus;
-                    return !(!t && !r) || !i()(e, this.props);
-                }
-                render() {
-                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: o, icon: i, loadingMessage: a, onRequestRetry: d, render: m, renderFailure: p, retryMessage: g, retryable: f } = this.props;
-                    switch (o) {
-                        case c:
-                            return f ? n.createElement(s.Z, { icon: i, onRequestRetry: d, retryMessage: g }) : r ? n.createElement(l.m, { failureMessage: r }) : p();
-                        case u:
-                            return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: a });
-                        case h:
-                            return null;
-                        default:
-                            return m();
-                    }
-                }
-            }
-            m.defaultProps = { renderFailure: a.Z, retryable: !0 };
         },
         529509: (e, t, r) => {
             r.d(t, { Z: () => g });
@@ -264,108 +230,108 @@
                 C = r(246492),
                 x = r(520913),
                 T = r(731708),
-                Z = r(642153),
-                _ = r(879891),
-                F = r(392237),
-                I = r(54606);
-            const S = i().ae408b76,
-                P = i().j355f008,
-                L = i().habf9678,
-                k = i().db0798ed,
+                _ = r(642153),
+                Z = r(879891),
+                I = r(392237),
+                F = r(54606);
+            const P = i().ae408b76,
+                S = i().j355f008,
+                k = i().habf9678,
+                L = i().db0798ed,
                 A = i().dc716ec9,
                 N = ({ text: e }) => {
-                    const { direction: t } = (0, _.Z)();
+                    const { direction: t } = (0, Z.Z)();
                     return n.createElement(T.ZP, { dir: t, withHashflags: !0 }, e);
                 },
                 O = (e, t) =>
                     t
-                        ? S
+                        ? P
                         : ((e) => {
                               const t = n.createElement(N, { text: e });
                               return n.createElement(i().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
-                B = F.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
-                D = F.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                R = ({ contextType: e, iconColor: t, iconSize: r, link: o, retweetData: i, text: T, topicData: _, userAvatarUrls: S }) => {
-                    const { isSelfRetweet: R, name: M, screenName: U } = i || {},
+                B = I.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
+                D = I.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                R = ({ contextType: e, iconColor: t, iconSize: r, link: o, retweetData: i, text: T, topicData: Z, userAvatarUrls: P }) => {
+                    const { isSelfRetweet: R, name: U, screenName: M } = i || {},
                         H = ((e, t, r, o = []) => {
                             const i = B[t],
-                                T = [r ? { color: F.default.theme.colors[r] } : D.colorDeepGray, i],
-                                _ = n.createElement(a.default, { style: T }),
-                                S = n.createElement(s.default, { style: T }),
-                                P = n.createElement(l.default, { style: T }),
-                                L = n.createElement(c.default, { style: T }),
-                                k = n.createElement(d.default, { style: T }),
+                                T = [r ? { color: I.default.theme.colors[r] } : D.colorDeepGray, i],
+                                Z = n.createElement(a.default, { style: T }),
+                                P = n.createElement(s.default, { style: T }),
+                                S = n.createElement(l.default, { style: T }),
+                                k = n.createElement(c.default, { style: T }),
+                                L = n.createElement(d.default, { style: T }),
                                 A = n.createElement(u.default, { style: D.circle }),
                                 N = n.createElement(h.default, { style: T }),
                                 O = n.createElement(m.default, { style: T }),
                                 R = n.createElement(p.default, { style: T }),
-                                M = n.createElement(g.default, { style: T }),
-                                U = n.createElement(f.default, { style: T }),
+                                U = n.createElement(g.default, { style: T }),
+                                M = n.createElement(f.default, { style: T }),
                                 H = n.createElement(w.default, { style: T }),
-                                z = n.createElement(y.default, { style: T }),
-                                W = n.createElement(b.default, { style: T }),
-                                G = n.createElement(E.default, { style: T }),
+                                W = n.createElement(y.default, { style: T }),
+                                G = n.createElement(b.default, { style: T }),
+                                z = n.createElement(E.default, { style: T }),
                                 V = n.createElement(v.default, { style: T }),
                                 j = n.createElement(C.default, { style: T }),
-                                Q = n.createElement(Z.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
+                                Q = n.createElement(_.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
                                 $ = n.createElement(x.default, { style: T });
                             switch (e) {
-                                case I.Q.Pin:
-                                case I.Q.ReplyPin:
-                                    return _;
-                                case I.Q.Retweet:
-                                    return S;
-                                case I.Q.Like:
+                                case F.Q.Pin:
+                                case F.Q.ReplyPin:
+                                    return Z;
+                                case F.Q.Retweet:
                                     return P;
-                                case I.Q.Follow:
-                                    return L;
-                                case I.Q.Moment:
+                                case F.Q.Like:
+                                    return S;
+                                case F.Q.Follow:
                                     return k;
-                                case I.Q.NewTweets:
+                                case F.Q.Moment:
+                                    return L;
+                                case F.Q.NewTweets:
                                     return A;
-                                case I.Q.Reply:
-                                case I.Q.Conversation:
+                                case F.Q.Reply:
+                                case F.Q.Conversation:
                                     return N;
-                                case I.Q.Feedback:
+                                case F.Q.Feedback:
                                     return O;
-                                case I.Q.Topic:
+                                case F.Q.Topic:
                                     return R;
-                                case I.Q.List:
-                                    return M;
-                                case I.Q.Location:
+                                case F.Q.List:
                                     return U;
-                                case I.Q.Community:
+                                case F.Q.Location:
+                                    return M;
+                                case F.Q.Community:
                                     return H;
-                                case I.Q.Spaces:
-                                    return z;
-                                case I.Q.Sparkle:
+                                case F.Q.Spaces:
                                     return W;
-                                case I.Q.SocialProof:
-                                case I.Q.FollowFollowed:
-                                    return j;
-                                case I.Q.FollowMutual:
-                                    return V;
-                                case I.Q.FollowFollowing:
+                                case F.Q.Sparkle:
                                     return G;
-                                case I.Q.Facepile:
+                                case F.Q.SocialProof:
+                                case F.Q.FollowFollowed:
+                                    return j;
+                                case F.Q.FollowMutual:
+                                    return V;
+                                case F.Q.FollowFollowing:
+                                    return z;
+                                case F.Q.Facepile:
                                     return Q;
-                                case I.Q.Bird:
+                                case F.Q.Bird:
                                     return $;
-                                case I.Q.TextOnly:
+                                case F.Q.TextOnly:
                                 default:
                                     return null;
                             }
-                        })(e, r, t, S);
+                        })(e, r, t, P);
                     switch (e) {
-                        case I.Q.Retweet:
-                            return { Icon: H, text: T || O(M, R), link: U ? `https://twitter.com/${U}` : void 0 };
-                        case I.Q.Pin:
-                            return { Icon: H, text: T || P };
-                        case I.Q.ReplyPin:
-                            return { Icon: H, text: L };
-                        case I.Q.Topic:
-                            return { Icon: H, "aria-label": "Recommendation" === _?.functionalityType || "RecWithEducation" === _?.functionalityType ? A({ topicName: T }) : k({ topicName: T }), text: T ? n.createElement(N, { text: T }) : null, link: o };
+                        case F.Q.Retweet:
+                            return { Icon: H, text: T || O(U, R), link: M ? `https://twitter.com/${M}` : void 0 };
+                        case F.Q.Pin:
+                            return { Icon: H, text: T || S };
+                        case F.Q.ReplyPin:
+                            return { Icon: H, text: k };
+                        case F.Q.Topic:
+                            return { Icon: H, "aria-label": "Recommendation" === Z?.functionalityType || "RecWithEducation" === Z?.functionalityType ? A({ topicName: T }) : L({ topicName: T }), text: T ? n.createElement(N, { text: T }) : null, link: o };
                         default:
                             return { Icon: H, text: T ? n.createElement(N, { text: T }) : null, link: o };
                     }
@@ -387,10 +353,10 @@
             class m extends n.PureComponent {
                 render() {
                     const { avatarSize: e, bottomControl: t, iconStyle: r, id: l, onLayout: c, rightControl: d, style: h, testID: m, textColor: g, textSize: f, topControl: w, weight: y, withBottomBorder: b, withLeftPadding: E, withTextCentered: v, ...C } = this.props,
-                        { Icon: x, "aria-label": T, link: Z, text: _ } = (0, u.Z)(C),
-                        F = n.createElement(i.ZP, { "aria-label": T, color: g, id: l, numberOfLines: 2, size: f, testID: m, weight: y, withoutTwemojiAndHashflags: !0 }, _),
-                        { cellStyle: I, viewStyle: S } = this._getStyles();
-                    return _ ? n.createElement(s.ZP.UseProps, null, (i) => n.createElement(n.Fragment, null, w || null, n.createElement(o.Z, { onLayout: c, style: [h, S, i.socialContextRefreshEnabled() && !E && p.socialContextRefresh] }, n.createElement(a.Z, { avatarCell: x || (E ? null : void 0), avatarCellStyle: [r, p.socialContextIconColumn, !E && p.unsetIconWidth, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshIcon], avatarSize: e, cellStyle: I }, n.createElement(o.Z, { style: p.cellWrapper }, n.createElement(o.Z, { style: [p.socialContextTextColumn, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshTextColumn] }, Z ? this._renderLink(Z, F) : F), d || null)), t || null))) : null;
+                        { Icon: x, "aria-label": T, link: _, text: Z } = (0, u.Z)(C),
+                        I = n.createElement(i.ZP, { "aria-label": T, color: g, id: l, numberOfLines: 2, size: f, testID: m, weight: y, withoutTwemojiAndHashflags: !0 }, Z),
+                        { cellStyle: F, viewStyle: P } = this._getStyles();
+                    return Z ? n.createElement(s.ZP.UseProps, null, (i) => n.createElement(n.Fragment, null, w || null, n.createElement(o.Z, { onLayout: c, style: [h, P, i.socialContextRefreshEnabled() && !E && p.socialContextRefresh] }, n.createElement(a.Z, { avatarCell: x || (E ? null : void 0), avatarCellStyle: [r, p.socialContextIconColumn, !E && p.unsetIconWidth, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshIcon], avatarSize: e, cellStyle: F }, n.createElement(o.Z, { style: p.cellWrapper }, n.createElement(o.Z, { style: [p.socialContextTextColumn, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshTextColumn] }, _ ? this._renderLink(_, I) : I), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: r, id: o, onClick: a, retweetData: s, textColor: l, topicData: u } = this.props,
@@ -761,22 +727,7 @@
             r.d(t, { H: () => n });
             const n = ({ description: e, entities: t, withheldDescription: r, withheldEntities: n }) => (r ? { description: r, entities: n } : { description: e, entities: t });
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(717683),
-                s = r(347101);
-            const l = (e = {}) => {
-                const t = n.useContext(a.Z),
-                    { direction: r } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
-        246492: (e, t, r) => {
+        379327: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 o = r(890601),
@@ -784,46 +735,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        264171: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        98440: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        262009: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -1280,4 +1192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c.5c4ab19a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c.26b21caa.js.map

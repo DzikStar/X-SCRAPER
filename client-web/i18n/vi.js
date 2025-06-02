@@ -5501,13 +5501,35 @@
                 t("g22c8c30", "Nếu những ghi chép này được một số người cộng tác nhất định đánh giá là Hữu ích, bao gồm cả những người thường không đồng ý trong đánh giá trước đây, chúng sẽ bắt đầu hiển thị công khai cùng bài đăng ở dạng ngữ cảnh bổ sung."),
                 t("jf04b084", "Những ghi chép này được thêm vào bởi những người cộng tác cho rằng bài đăng không gây hiểu lầm và không cần ngữ cảnh bổ sung."),
                 t("g5a72e98", "Chúng chỉ hiển thị ở Ghi chép cho cộng đồng dưới dạng thông tin bổ sung cho người đánh giá và không được hiển thị dưới dạng ngữ cảnh kèm theo bài đăng, ngay cả khi chúng đạt được trạng thái Hữu ích."),
-                t("h53cb7de", "Bạn nghĩ gì về bài đăng này?"),
-                t("dc3bfc82", "Bạn thích điều gì (nếu có) ở bài đăng này?"),
-                t("b4704bf4", "Bạn không thích điều gì (nếu có) ở bài đăng này?"),
+                t("b8719c22", "Giúp xác định xem bài đăng có được mọi người từ các góc nhìn khác nhau thích hay không."),
+                t("jcdf97d4", "Bạn thích gì ở bài đăng?"),
+                t("d4d7b67e", "Bạn không thích gì ở bài đăng?"),
                 t("ed5156fa", "Đã xảy ra lỗi khi lưu xếp hạng của bạn, vui lòng thử lại."),
-                t("d5f9fb42", "Bạn đã đánh giá điều này là thúc đẩy cộng đồng"),
+                t("d0ed3636", "Bạn đã đánh giá bài đăng này"),
                 t("j6aa6172", "Xóa xếp hạng?"),
                 t("i4112750", "Không thể hoàn tác điều này."),
+                t("i6f6191a", "Cảm ơn bạn!"),
+                t("h5575012", "Agree and submit"),
+                t("f9171e52", "Bài đăng này nhận được một vài lượt thích từ những người thường bất đồng quan điểm, nhưng hiện tại ý kiến đóng góp vẫn còn hạn chế."),
+                t("j0f9919a", "Đánh giá của bạn sẽ không ảnh hưởng tiêu cực đến bài đăng, nhưng có thể giúp ghi nhận tích cực các bài đăng được nhiều người thích."),
+                t("b3af830c", "Nội dung bạn nhập:"),
+                t("d0b29562", "Đánh giá bài đăng khác ngay"),
+                t("i36ea87a", "Tôi đồng ý với bài đăng này"),
+                t("d5befc34", "Tôi đã học được điều thú vị"),
+                t("je26ecf2", "Bài đăng đưa ra một quan điểm có ý nghĩa"),
+                t("e4e331aa", "Bài đăng thống nhất một chủ đề thường gây chia rẽ"),
+                t("ed61ff2a", "Bài đăng ấm lòng hoặc dễ thương"),
+                t("gc3104d8", "Bài đăng truyền cảm hứng hoặc thú vị"),
+                t("j8c4400e", "Bài đăng hài hước"),
+                t("j4738406", "Không áp dụng: Tôi không thấy bài đăng có điểm gì hay"),
+                t("d93d1666", "Tôi không đồng ý với bài đăng này"),
+                t("d6130466", "Bài đăng không có gì ý nghĩa"),
+                t("d96835b6", "Bài đăng này không làm tôi thấy hứng thú"),
+                t("b7ba4150", "Không áp dụng: Tôi không thấy bài đăng có gì không hay"),
+                t("g0402b3b", "được yêu thích từ nhiều góc nhìn khác nhau"),
+                t("ged62c2b", "làm nổi bật"),
+                t("b5d5f7f1", "Định hướng"),
+                t("a42fef87", "Learn more"),
                 t("bd7eb888", "Xem tất cả ghi chép trên bài đăng này"),
                 t("i97b83f6", "Đã xảy ra lỗi khi gửi kháng nghị của bạn, vui lòng thử lại."),
                 t("a038ab9a", "Dịch ghi chép"),
@@ -5858,8 +5880,8 @@
                 t("e41c9b4f", function (n) {
                     return "Saved to " + n.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Xóa thư mục"),
-                t("f4ea967a", "Thư mục đã bị xóa"),
+                t("h18f86a4", "Xóa thư mục");
+            t("f4ea967a", "Thư mục đã bị xóa"),
                 t("b670aa62", "Tên thư mục"),
                 t("aece5462", "Tên thư mục đã được cập nhật thành công"),
                 t("e3299b94", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
@@ -5890,8 +5912,8 @@
                     return "Kết thúc vào " + n.timestamp;
                 }),
                 t("daca8a2c", "Mở trong thanh Dock"),
-                t("e3aac82a", "Đang tải nguồn phát");
-            t("i0ed3f4e", "Hình ảnh sự kiện"),
+                t("e3aac82a", "Đang tải nguồn phát"),
+                t("i0ed3f4e", "Hình ảnh sự kiện"),
                 t("cbae35fa", "Báo cáo Nguồn phát"),
                 t("fd12ab58", "Bài đăng trong bộ sưu tập"),
                 t("a226497c", "Tạo một Cộng đồng mới"),
@@ -6862,8 +6884,8 @@
                 t("b925c18c", "Loại lương"),
                 t("j3d242ce", "Khoảng không hợp lệ"),
                 t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm."),
-                t("b8cbb51a", "Tóm tắt công việc"),
-                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
+                t("b8cbb51a", "Tóm tắt công việc");
+            t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
                 t("b075c68a", "Chỉnh sửa việc làm"),
                 t("d4b6a6e0", "Tiêu điểm hồ sơ"),
                 t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi."),
@@ -6888,8 +6910,8 @@
                 t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng"),
                 t("b6b5dc94", "Xác nhận tài khoản"),
                 t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
-                t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn");
-            t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
+                t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
+                t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
                 t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
                 t("he74ae7a", "Hạn mức sử dụng Grok cao nhất"),
                 t("f5732cd4", "Ngoài ra, còn có quyền truy cập mở rộng vào DeepSearch và Suy nghĩ"),
@@ -7206,16 +7228,16 @@
                 t("hd80bd3e", "Quảng bá một bài đăng"),
                 t("fe2b0008", "Tìm hiểu cách sử dụng X"),
                 t("h257d4aa", "Chọn một bài đăng để quảng bá"),
-                t("fe946974", "Your trial of X without ads"),
-                t("f6c50ec0", "Your ad-free trial has ended"),
-                t("b1319404", "Ads avoided"),
-                t("baa4acae", "You’re seeing more personalized content."),
-                t("c00e8600", "Estimated time saved"),
-                t("ic073e4e", "Your time is valuable."),
-                t("eb866e88", "Estimated 1-year time savings"),
-                t("aa77b70c", "Based on your usage."),
-                t("c534c6b4", "We’re crunching the numbers..."),
-                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("fe946974", "Thời gian dùng thử X (không có quảng cáo) của bạn"),
+                t("f6c50ec0", "Thời gian dùng thử không quảng cáo của bạn đã kết thúc"),
+                t("b1319404", "Số quảng cáo đã tránh"),
+                t("baa4acae", "Bạn sẽ thấy nhiều nội dung được cá nhân hóa hơn."),
+                t("c00e8600", "Ước tính thời gian tiết kiệm được"),
+                t("ic073e4e", "Thời gian của bạn rất quý giá."),
+                t("eb866e88", "Ước tính thời gian tiết kiệm được trong 1 năm"),
+                t("aa77b70c", "Dựa trên hoạt động sử dụng của bạn."),
+                t("c534c6b4", "Chúng tôi đang tính toán số liệu..."),
+                t("i57332f0", "Tiếp tục cuộn và kiểm tra lại sau để xem bạn đã tránh được bao nhiêu quảng cáo và tiết kiệm được bao nhiêu thời gian"),
                 t("cc10f019", function (n) {
                     return n.minutes + " phút";
                 }),
@@ -7231,11 +7253,11 @@
                 t("be88be23", function (n) {
                     return n.durationInDays + " ngày dùng thử không quảng cáo của bạn đã được kích hoạt";
                 }),
-                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                t("ae3f3b0e", "Enjoy!"),
-                t("cdac8dc4", "See your new feed"),
+                t("a4413462", "Trong suốt thời gian dùng thử, bạn có thể xem số liệu thống kê về số quảng cáo bạn không xem và thời gian bạn đã tiết kiệm được."),
+                t("ae3f3b0e", "Hãy tận hưởng nhé!"),
+                t("cdac8dc4", "Xem bảng tin mới của bạn"),
                 t("dec99336", "Không có quảng cáo"),
-                t("i95803fa", "Unfortunately, you are not eligible at this time."),
+                t("i95803fa", "Rất tiếc, hiện tại, bạn chưa đủ điều kiện tham gia."),
                 t("d28a1d72", "Trở thành người đầu tiên nắm bắt chủ đề phổ biến bằng Radar"),
                 t("fb70427a", "Công cụ tìm kiếm mạnh mẽ nhất trên X sắp ra mắt."),
                 t("i54bf620", "Theo dõi từ khóa"),
@@ -7840,35 +7862,7 @@
                 t("c29e3a88", "Chọn bên liên kết"),
                 t("j8318d57", function (n) {
                     return n.number + " bên liên kết";
-                }),
-                t("bf809ec0", "Chọn bên liên kết"),
-                t("b719e224", "Không có kết quả"),
-                t("c9938100", "Kết quả tìm kiếm"),
-                t("d1a35ec6", "Thêm tài khoản"),
-                t("b437adda", "Nâng cấp lên gói trả phí"),
-                t("f1f6c88b", function (n) {
-                    return "Tài khoản (" + n.count + ")";
-                }),
-                t("b02156b8", "Lời mời"),
-                t("gd67d29b", function (n) {
-                    return "Lời mời (" + n.count + ")";
-                }),
-                t("daf646e6", "Lưu ý: bạn phải gắn thẻ phù hợp cho tài khoản."),
-                t("i3895c32", "Tài khoản của bạn đang được xét duyệt vì bạn đã đổi @tendangnhap X của mình"),
-                t("i5f8b628", "Bạn chỉ sửa được các bên liên kết sau khi tài khoản của bạn được xét duyệt."),
-                t("e9e663ac", "Khoản thanh toán của bạn đã quá hạn."),
-                t("c3ddd22c", "điều khoản"),
-                t("c9729d8a", "điều khoản"),
-                t("cdcd1d2c", "Thêm các bên liên kết với tổ chức của bạn"),
-                t("d30ea6f3", function (n) {
-                    return "Bạn có chắc chắn muốn xóa @" + n.name + " không?";
-                }),
-                t("c2dfbb86", "Có, hãy tiến hành"),
-                t("ba047f76", "Việc xóa một mối quan hệ liên kết sẽ ngay lập tức xóa dấu tích và huy hiệu liên kết của họ. Bạn sẽ tiếp tục phải trả phí cho đến cuối tháng."),
-                t("j26dee0e", "Xóa bên liên kết"),
-                t("e30cbdf0", "Bên liên kết này có đăng ký Tổ chức đã xác nhận và phải được giữ nguyên là Tổ chức. Không thể thay đổi bên liên kết này thành Cá nhân."),
-                t("j3115ce8", "Cá nhân"),
-                t("d8bb1d84", "Tổ chức");
+                });
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7907,9 +7901,37 @@
                     a(n, h)
                 );
             }
-            t("e970bdbd", function (n) {
-                return "Còn " + n.count + " lời mời";
-            }),
+            t("bf809ec0", "Chọn bên liên kết"),
+                t("b719e224", "Không có kết quả"),
+                t("c9938100", "Kết quả tìm kiếm"),
+                t("d1a35ec6", "Thêm tài khoản"),
+                t("b437adda", "Nâng cấp lên gói trả phí"),
+                t("f1f6c88b", function (n) {
+                    return "Tài khoản (" + n.count + ")";
+                }),
+                t("b02156b8", "Lời mời"),
+                t("gd67d29b", function (n) {
+                    return "Lời mời (" + n.count + ")";
+                }),
+                t("daf646e6", "Lưu ý: bạn phải gắn thẻ phù hợp cho tài khoản."),
+                t("i3895c32", "Tài khoản của bạn đang được xét duyệt vì bạn đã đổi @tendangnhap X của mình"),
+                t("i5f8b628", "Bạn chỉ sửa được các bên liên kết sau khi tài khoản của bạn được xét duyệt."),
+                t("e9e663ac", "Khoản thanh toán của bạn đã quá hạn."),
+                t("c3ddd22c", "điều khoản"),
+                t("c9729d8a", "điều khoản"),
+                t("cdcd1d2c", "Thêm các bên liên kết với tổ chức của bạn"),
+                t("d30ea6f3", function (n) {
+                    return "Bạn có chắc chắn muốn xóa @" + n.name + " không?";
+                }),
+                t("c2dfbb86", "Có, hãy tiến hành"),
+                t("ba047f76", "Việc xóa một mối quan hệ liên kết sẽ ngay lập tức xóa dấu tích và huy hiệu liên kết của họ. Bạn sẽ tiếp tục phải trả phí cho đến cuối tháng."),
+                t("j26dee0e", "Xóa bên liên kết"),
+                t("e30cbdf0", "Bên liên kết này có đăng ký Tổ chức đã xác nhận và phải được giữ nguyên là Tổ chức. Không thể thay đổi bên liên kết này thành Cá nhân."),
+                t("j3115ce8", "Cá nhân"),
+                t("d8bb1d84", "Tổ chức"),
+                t("e970bdbd", function (n) {
+                    return "Còn " + n.count + " lời mời";
+                }),
                 t("id67d953", function (n) {
                     return "Đã xảy ra lỗi khi truy xuất chi tiết thanh toán của bạn trên Stripe. Hãy liên hệ với " + n.supportEmail + " nếu vấn đề này tiếp diễn.";
                 }),
@@ -8882,8 +8904,8 @@
                 t("ha3efce4", "Tự động"),
                 t("hd8d044d", function (n) {
                     return "Tự động (" + n.quality + ")";
-                }),
-                t("a7bf9962", "Tải xuống video"),
+                });
+            t("a7bf9962", "Tải xuống video"),
                 t("ccc97152", "Tốc độ phát lại"),
                 t("h531ade0", "Chất lượng video"),
                 t("e8b5757c", "0.25x"),
@@ -8914,8 +8936,8 @@
                 t("c1658fc6", "Không thể phát phương tiện."),
                 t("h519ae04", "Phương tiện này đã bị vô hiệu hóa do khiếu nại về bản quyền."),
                 t("ce871584", "Nguồn phát này đã kết thúc."),
-                t("c101eb96", "Nguồn phát này không khả dụng.");
-            t("gb24a514", "Phương tiện này đã bị vô hiệu hóa do báo cáo từ chủ bản quyền."),
+                t("c101eb96", "Nguồn phát này không khả dụng."),
+                t("gb24a514", "Phương tiện này đã bị vô hiệu hóa do báo cáo từ chủ bản quyền."),
                 t("hcaf3e63", function (n) {
                     return "Nội dung này đã bị vô hiệu hóa do khiếu nại về bản quyền của " + n.holder + ".";
                 }),
@@ -11477,6 +11499,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Giúp tìm các bài đăng "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Không gây hại cho các bài viết, nhưng có thể giúp ", " những bài được nhiều người yêu thích"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " cho tính năng thử nghiệm này"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Là tác giả của bài đăng, bạn có thể "];
@@ -12067,7 +12113,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["Phí ", "%, Tối thiểu "];
                             },
                         },
                         {
@@ -13293,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.a21db16a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.58b6281a.js.map

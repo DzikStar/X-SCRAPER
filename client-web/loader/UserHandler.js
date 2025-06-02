@@ -1,13 +1,13 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.UserHandler", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["loader.UserHandler"],
     {
         333241: (e, o, r) => {
             r.d(o, { Z: () => _ });
             r(136728);
             var t = r(202784),
-                a = r(638236),
-                n = r(811176),
+                n = r(638236),
+                a = r(811176),
                 l = r(111677),
                 d = r.n(l),
                 s = r(415506),
@@ -21,36 +21,36 @@
                 w = "mute",
                 f = "removeFollower",
                 b = "report",
-                v = "share",
-                M = d().j7bb1a43,
+                M = "share",
+                v = d().j7bb1a43,
                 y = d().hef5960c,
                 _ = (0, D.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
                         { onBlock: r, onClose: l, onMute: d, onRemoveFollower: D, onReportUser: _, onShare: I, onUnblock: P, onUnmute: k, user: E } = e,
-                        C = [],
-                        S = (o, r) => {
-                            const { confirm: t, onClose: a } = e;
+                        S = [],
+                        C = (o, r) => {
+                            const { confirm: t, onClose: n } = e;
                             if (o) {
-                                const { label: e, ...n } = o;
-                                t({ confirmButtonLabel: e, ...n })
+                                const { label: e, ...a } = o;
+                                t({ confirmButtonLabel: e, ...a })
                                     .then(r, i.Z)
-                                    .finally(a);
+                                    .finally(n);
                             } else r();
                         };
                     !!window.navigator.share &&
                         !E.protected &&
                         !E.blocking &&
                         !E.blocked_by &&
-                        C.push({
-                            Icon: a.Z,
+                        S.push({
+                            Icon: n.Z,
                             onClick: () => {
                                 l(), I();
                             },
-                            testID: v,
+                            testID: M,
                             text: y,
                         });
                     !E.blocking &&
-                        C.push({
+                        S.push({
                             ...(0, h.N1)(
                                 E,
                                 () => {
@@ -63,41 +63,41 @@
                             testID: w,
                         });
                     E.followed_by &&
-                        C.push({
+                        S.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
-                                    S(e, D);
+                                    C(e, D);
                                 },
                                 user: E,
                             }),
                             testID: f,
                         }),
-                        C.push((0, u.op)({ blockAction: (e) => S(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => S(e, P), user: E })),
-                        C.push({
+                        S.push((0, u.op)({ blockAction: (e) => C(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => C(e, P), user: E })),
+                        S.push({
                             Icon: s.default,
                             onClick: () => {
                                 l(), _();
                             },
                             testID: b,
-                            text: M({ screenName: E.screen_name }),
+                            text: v({ screenName: E.screen_name }),
                         });
-                    const g = C.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
-                    return t.createElement(n.Z, { items: g, onCloseRequested: l });
+                    const A = S.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
+                    return t.createElement(a.Z, { items: A, onCloseRequested: l });
                 });
         },
         864479: (e, o, r) => {
             r.d(o, { Z: () => l });
             var t = r(807896),
-                a = r(202784),
-                n = r(771099);
-            const l = (e) => (o) => a.createElement(n.$6, null, (r) => a.createElement(e, (0, t.Z)({}, o, { isInSidebar: r })));
+                n = r(202784),
+                a = r(771099);
+            const l = (e) => (o) => n.createElement(a.$6, null, (r) => n.createElement(e, (0, t.Z)({}, o, { isInSidebar: r })));
         },
         293988: (e, o, r) => {
             r.d(o, { Z: () => I });
             var t = r(202784),
-                a = r(154003),
-                n = r(111677),
-                l = r.n(n),
+                n = r(154003),
+                a = r(111677),
+                l = r.n(a),
                 d = r(74514),
                 s = r(405303),
                 i = r(684511),
@@ -113,15 +113,15 @@
                     .withAnalytics({ element: "mobile_notifications" }),
                 f = l().bdba3e1a,
                 b = l().c4da7d28,
-                v = l().j87c21f4,
-                M = l().iebc30ca,
+                M = l().j87c21f4,
+                v = l().iebc30ca,
                 y = l().dc740eb2;
             class _ extends t.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: o } = this.props;
-                            return e ? t.createElement(a.ZP, { "aria-label": b, hoverLabel: { label: M }, icon: t.createElement(d.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : t.createElement(a.ZP, { "aria-label": f, hoverLabel: { label: v }, icon: t.createElement(s.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
+                            return e ? t.createElement(n.ZP, { "aria-label": b, hoverLabel: { label: v }, icon: t.createElement(d.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : t.createElement(n.ZP, { "aria-label": f, hoverLabel: { label: M }, icon: t.createElement(s.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: o } = this.props;
@@ -155,8 +155,8 @@
         168222: (e, o, r) => {
             r.r(o), r.d(o, { default: () => P });
             var t = r(459643),
-                a = r(942893),
-                n = r(409438),
+                n = r(942893),
+                a = r(409438),
                 l = r(240089),
                 d = r(351322),
                 s = r(202784),
@@ -173,36 +173,36 @@
                     const { id: r } = ((e, o) => o.entry.content)(0, o);
                     return r ? f.ZP.select(e, r) : void 0;
                 },
-                v = (0, p.Z)()
+                M = (0, p.Z)()
                     .propsFromState(() => ({ user: b }))
                     .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: w.DI, applyReactionInstructions: e.applyReactionInstructions }))
                     .withAnalytics(),
-                M = (e) => {
-                    const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: d, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: v, shouldStoreTypeaheadItem: M, user: _, withFollowsYou: I, withLink: P } = e,
+                v = (e) => {
+                    const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: d, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: v, user: _, withFollowsYou: I, withLink: P } = e,
                         {
-                            content: { id: k, promotedMetadata: E, socialContext: C },
+                            content: { id: k, promotedMetadata: E, socialContext: S },
                         } = i,
-                        S = D(E),
-                        g = (C && C.generalContext) || void 0,
-                        A = e.displayMode,
-                        Z = (0, u.hC)("super_follow_android_web_subscription_enabled") && A === n.Z.SubscribableUser ? l.dk : l.ET,
+                        C = D(E),
+                        A = (S && S.generalContext) || void 0,
+                        g = e.displayMode,
+                        Z = (0, u.hC)("super_follow_android_web_subscription_enabled") && g === a.Z.SubscribableUser ? l.dk : l.ET,
                         O = d || Z,
                         L = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
                     (0, c.q)(() => {
                         if ("WhoToFollow" === L) {
-                            const e = _ ? [a.Z.getUserItem(_)] : [];
+                            const e = _ ? [n.Z.getUserItem(_)] : [];
                             _?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : _?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : _?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
                         }
                     });
                     const T = s.useCallback(() => {
                         r({ entry: i, triggerName: m.K.ON_FOLLOW });
                     }, [r, i]);
-                    return s.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: A, isConcise: p, onClick: w, onFollowClick: T, promotedContent: S, promotedItemType: h.bj.USER, referringPage: A, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: v, shouldStoreTypeaheadItem: M, socialContext: g, style: p && y.isCarouselItem, userId: k, withFollowsYou: I, withLink: P });
+                    return s.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: g, isConcise: p, onClick: w, onFollowClick: T, promotedContent: C, promotedItemType: h.bj.USER, referringPage: g, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: v, socialContext: A, style: p && y.isCarouselItem, userId: k, withFollowsYou: I, withLink: P });
                 },
                 y = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
-                _ = v(s.memo(M)),
+                _ = M(s.memo(v)),
                 I = [l.ET, l.C_],
-                P = ({ cellClickable: e = !0, decoration: o, displayMode: r = n.Z.UserCompact, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
+                P = ({ cellClickable: e = !0, decoration: o, displayMode: r = a.Z.UserCompact, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
                     d
                         .iH({
                             component: _,
@@ -211,12 +211,12 @@
                                 const {
                                         content: { id: o, promotedMetadata: r },
                                         cursor: t,
-                                        itemMetadata: n,
+                                        itemMetadata: a,
                                         position: l,
                                     } = e,
-                                    d = n.clientEventInfo,
+                                    d = a.clientEventInfo,
                                     s = D(r);
-                                return a.Z.getUserItem({ id_str: o, promoted_content: s }, void 0, l, t, d);
+                                return n.Z.getUserItem({ id_str: o, promoted_content: s }, void 0, l, t, d);
                             },
                             isFocusable: (0, t.Z)(!0),
                         })
@@ -263,71 +263,71 @@
             });
         },
         545334: (e, o, r) => {
-            r.d(o, { d: () => a });
+            r.d(o, { d: () => n });
             var t = r(111677);
-            const a = r.n(t)().gf5e9ea6;
+            const n = r.n(t)().gf5e9ea6;
         },
         916585: (e, o, r) => {
             r.d(o, { k: () => l });
             var t = r(111677),
-                a = r.n(t),
-                n = r(437358);
+                n = r.n(t),
+                a = r(437358);
             const l = (e, o) => {
                 const { id_str: r, screen_name: t } = e,
-                    l = (0, a().d78131b9)({ screenName: t });
-                return { Icon: n.default, text: l, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: o };
+                    l = (0, n().d78131b9)({ screenName: t });
+                return { Icon: a.default, text: l, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: o };
             };
         },
         847607: (e, o, r) => {
-            r.d(o, { Aq: () => u, FK: () => b, GS: () => d, N1: () => m, PY: () => h, X6: () => v, cm: () => s });
+            r.d(o, { Aq: () => u, FK: () => b, GS: () => d, N1: () => m, PY: () => h, X6: () => M, cm: () => s });
             r(202784);
             var t = r(111677),
-                a = r.n(t),
-                n = r(391366),
+                n = r.n(t),
+                a = r(391366),
                 l = r(40904);
-            const d = a().hb568af4,
-                s = a().bb1cbeb6,
-                i = (a().h2f62206, a().e67b2d65),
-                c = a().f05597b3,
+            const d = n().hb568af4,
+                s = n().bb1cbeb6,
+                i = (n().h2f62206, n().e67b2d65),
+                c = n().f05597b3,
                 u = (e) => i({ screenName: e }),
                 h = (e) => c({ screenName: e }),
                 m = (e, o, r) => {
-                    const { muting: t, screen_name: a } = e;
-                    return { text: t ? h(a) : u(a), onClick: t ? r : o, Icon: t ? n.default : l.default };
+                    const { muting: t, screen_name: n } = e;
+                    return { text: t ? h(n) : u(n), onClick: t ? r : o, Icon: t ? a.default : l.default };
                 },
-                D = a().h59f52ee,
-                p = a().eea0cbee,
-                w = a().i29533b3,
-                f = a().h129c3c3,
+                D = n().h59f52ee,
+                p = n().eea0cbee,
+                w = n().i29533b3,
+                f = n().h129c3c3,
                 b = (e) => (e ? ((e) => w({ screenName: e }))(e) : D),
-                v = (e) => (e ? ((e) => f({ screenName: e }))(e) : p);
+                M = (e) => (e ? ((e) => f({ screenName: e }))(e) : p);
         },
         417714: (e, o, r) => {
             r.d(o, { l: () => c });
             r(202784);
             var t = r(111677),
-                a = r.n(t),
-                n = r(224823);
-            const l = a().b3036480,
-                d = a().b3036480,
-                s = a().e68b09b4,
-                i = a().h27b7407,
+                n = r.n(t),
+                a = r(224823);
+            const l = n().b3036480,
+                d = n().b3036480,
+                s = n().e68b09b4,
+                i = n().h27b7407,
                 c = ({ removeFollowerAction: e, user: o }) => {
                     const r = u(o);
-                    return { Icon: n.default, text: l, onClick: () => e(r) };
+                    return { Icon: a.default, text: l, onClick: () => e(r) };
                 },
                 u = (e) => ({ confirmButtonType: "destructiveFilled", headline: d, label: s, text: i({ screenName: e.screen_name }) });
         },
         48886: (e, o, r) => {
-            r.d(o, { q: () => a });
+            r.d(o, { q: () => n });
             var t = r(111677);
-            const a = { defaultToast: { text: r.n(t)().a30b63da }, showToast: !0 };
+            const n = { defaultToast: { text: r.n(t)().a30b63da }, showToast: !0 };
         },
         860174: (e, o, r) => {
-            r.d(o, { Z: () => n });
+            r.d(o, { Z: () => a });
             var t = r(615656),
-                a = r(51525);
-            const n = { [t.ZP.FollowError]: { customAction: a.w1 } };
+                n = r(51525);
+            const a = { [t.ZP.FollowError]: { customAction: n.w1 } };
         },
         23679: (e, o, r) => {
             r.d(o, { K: () => t });
@@ -336,18 +336,18 @@
         988823: (e, o, r) => {
             r.d(o, { M: () => l });
             var t = r(807896),
-                a = r(202784),
-                n = r(190286);
+                n = r(202784),
+                a = r(190286);
             const l = (e) => (o) => {
-                const [r, l] = a.useState(null),
+                const [r, l] = n.useState(null),
                     d = (e) =>
                         new Promise((o, r) => {
                             l({ resolve: o, reject: r, confirmationSheetProps: e });
                         });
                 if (r) {
                     const { confirmationSheetProps: e, reject: o, resolve: d } = r;
-                    return a.createElement(
-                        n.Z,
+                    return n.createElement(
+                        a.Z,
                         (0, t.Z)({}, e, {
                             onCancel: () => {
                                 o(), l(null);
@@ -358,50 +358,50 @@
                         }),
                     );
                 }
-                return a.createElement(e, (0, t.Z)({}, o, { confirm: d }));
+                return n.createElement(e, (0, t.Z)({}, o, { confirm: d }));
             };
         },
         694180: (e, o, r) => {
             r.d(o, { cM: () => w, dS: () => p, iY: () => f });
             var t = r(370751),
-                a = r(399896),
-                n = r(663550),
+                n = r(399896),
+                a = r(663550),
                 l = r(499627),
                 d = r(917799);
             const s = {},
                 i = Object.freeze({ REQUEST: "rweb/promotedContent/LOG_REQUEST", SUCCESS: "rweb/promotedContent/LOG_SUCCESS", FAILURE: "rweb/promotedContent/LOG_FAILURE" }),
                 c = "rweb/promotedContent/LOG_UNIQUE_EVENT",
-                u = (0, t.Z)([n.dx.IMPRESSION, n.dx.DWELL]),
-                h = (0, t.Z)([n.AJ.TREND_VIEW, n.AJ.SPOTLIGHT_IMPRESSION]),
+                u = (0, t.Z)([a.dx.IMPRESSION, a.dx.DWELL]),
+                h = (0, t.Z)([a.AJ.TREND_VIEW, a.AJ.SPOTLIGHT_IMPRESSION]),
                 m = (e) => ({ payload: { eventKey: e }, type: c });
             const D = (e, o) => !!e.promotedContent[o],
                 p =
                     (e) =>
                     (o, r, { api: t }) => {
-                        const { event: n, impression_id: l, promoted_trend_id: s } = e,
-                            c = `trend-${s}-${n}`;
-                        if (h.has(n) && D(r(), c)) return Promise.resolve();
-                        const u = { promoted_trend_id: s, event: n, impression_id: l };
-                        return (0, d._O)(o, { params: u, request: t.withEndpoint(a.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, o) => {
-                            if (!o && h.has(n)) return [m(c)];
+                        const { event: a, impression_id: l, promoted_trend_id: s } = e,
+                            c = `trend-${s}-${a}`;
+                        if (h.has(a) && D(r(), c)) return Promise.resolve();
+                        const u = { promoted_trend_id: s, event: a, impression_id: l };
+                        return (0, d._O)(o, { params: u, request: t.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, o) => {
+                            if (!o && h.has(a)) return [m(c)];
                         });
                     },
                 w =
                     ({ disclosureType: e, itemId: o, itemType: r, params: t }) =>
-                    (n, l, { api: s }) => {
+                    (a, l, { api: s }) => {
                         const { event: c, impression_id: h } = t,
                             p = `${r}-${o ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
                         if (u.has(c) && D(l(), p)) return Promise.resolve();
                         const w = e && "earned" === e.toLowerCase() ? "1" : null,
                             f = { ...t, earned: w, epoch_ms: Date.now() };
-                        return (0, d._O)(n, { params: f, request: s.withEndpoint(a.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, o) => {
+                        return (0, d._O)(a, { params: f, request: s.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, o) => {
                             if (!o && u.has(c)) return [m(p)];
                         });
                     },
                 f =
                     (e) =>
                     (o, r, { api: t }) =>
-                        (0, d._O)(o, { params: e, request: t.withEndpoint(a.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
+                        (0, d._O)(o, { params: e, request: t.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
             l.Z.register({
                 promotedContent: function (e = s, o) {
                     if (!o) return e;
@@ -415,11 +415,11 @@
             });
         },
         204744: (e, o, r) => {
-            r.d(o, { DI: () => M, H$: () => h, OB: () => y, Ww: () => c, YB: () => u, hj: () => w, qF: () => b });
+            r.d(o, { DI: () => v, H$: () => h, OB: () => y, Ww: () => c, YB: () => u, hj: () => w, qF: () => b });
             r(901951);
             var t = r(499627),
-                a = r(390387);
-            const n = "recentSearches",
+                n = r(390387);
+            const a = "recentSearches",
                 l = "rweb.recentSearches",
                 d =
                     (e) =>
@@ -448,9 +448,9 @@
                     return r;
                 },
                 i = { fetched: !1, recentSearches: [] };
-            const c = (e) => e[n].recentSearches,
+            const c = (e) => e[a].recentSearches,
                 u = (e) => c(e)[0] || null,
-                h = (e) => e[n].fetched,
+                h = (e) => e[a].fetched,
                 m = "rweb/recentSearches/INIT_FROM_CACHE",
                 D = (e) => ({ type: m, payload: e }),
                 p = "rweb/recentSearches/REMOVE_QUERY",
@@ -458,9 +458,9 @@
                     (e) =>
                     (o, r, { userPersistence: t }) => {
                         o({ payload: e, type: p });
-                        const n = r(),
-                            l = c(n);
-                        return (0, a.Qb)(n) ? o(d(l)) : Promise.resolve();
+                        const a = r(),
+                            l = c(a);
+                        return (0, n.Qb)(a) ? o(d(l)) : Promise.resolve();
                     },
                 f = "rweb/recentSearches/CLEAR_ALL",
                 b =
@@ -468,17 +468,17 @@
                     (e, o, { userPersistence: r }) => {
                         e({ type: f });
                         const t = o(),
-                            n = c(t);
-                        return (0, a.Qb)(t) ? e(d(n)) : Promise.resolve();
+                            a = c(t);
+                        return (0, n.Qb)(t) ? e(d(a)) : Promise.resolve();
                     },
-                v = "rweb/recentSearches/ADD_QUERY",
-                M =
+                M = "rweb/recentSearches/ADD_QUERY",
+                v =
                     (e) =>
                     (o, r, { userPersistence: t }) => {
-                        o({ payload: e, type: v });
-                        const n = r(),
-                            l = c(n);
-                        return (0, a.Qb)(n) ? o(d(l)) : Promise.resolve();
+                        o({ payload: e, type: M });
+                        const a = r(),
+                            l = c(a);
+                        return (0, n.Qb)(a) ? o(d(l)) : Promise.resolve();
                     },
                 y =
                     () =>
@@ -488,7 +488,7 @@
                             ? Promise.resolve()
                             : e((e, o, { userPersistence: r }) => {
                                   const t = o();
-                                  return (0, a.Qb)(t)
+                                  return (0, n.Qb)(t)
                                       ? r
                                             .get(l)
                                             .then((o) => {
@@ -501,10 +501,10 @@
                               });
                     };
             t.Z.register({
-                [n]: function (e = i, o) {
+                [a]: function (e = i, o) {
                     if (!o) return e;
                     switch (o.type) {
-                        case v: {
+                        case M: {
                             const r = o.payload,
                                 t = r ? s(r, e.recentSearches) : [];
                             return t.length > 49 && t.splice(49, 1), r && t.unshift(r), { ...e, recentSearches: t };
@@ -528,8 +528,8 @@
             r.d(o, { r: () => i });
             r(136728);
             var t = r(161821),
-                a = r(390387),
-                n = r(836255),
+                n = r(390387),
+                a = r(836255),
                 l = r(255117),
                 d = r(166506),
                 s = r(919022);
@@ -538,16 +538,16 @@
                 (r, i, { api: c, featureSwitches: u }) =>
                     r(s.ZP.mute(e, o)).then(() => {
                         const o = i(),
-                            s = (0, t.Z)(n.Z.selectAll(o)).reduce((r, t) => {
+                            s = (0, t.Z)(a.Z.selectAll(o)).reduce((r, t) => {
                                 if (null != t)
                                     if (t.user === e) r[t.id_str] = !0;
                                     else if (t.retweeted_status) {
-                                        const a = n.Z.select(o, t.retweeted_status);
-                                        a?.user === e && (r[t.id_str] = !0);
+                                        const n = a.Z.select(o, t.retweeted_status);
+                                        n?.user === e && (r[t.id_str] = !0);
                                     }
                                 return r;
                             }, {}),
-                            c = (0, a._h)(i()),
+                            c = (0, n._h)(i()),
                             u = c ? [(0, l.ZP)({ useLatest: !1, userId: c }).removeTweets(s), (0, l.ZP)({ useLatest: !0, userId: c }).removeTweets(s)] : [],
                             h = (0, d.k9)();
                         if (h.selectInitialFetchStatus(o) && !h.selectCanRefresh(o)) {
@@ -560,19 +560,19 @@
         166506: (e, o, r) => {
             r.d(o, { du: () => c, f8: () => u, k9: () => i });
             var t = r(503768),
-                a = r(750085),
-                n = r(962741),
+                n = r(750085),
+                a = r(962741),
                 l = r(466015),
                 d = r(919022),
                 s = r(218951);
-            const i = () => (0, s.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(t.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: a.Z }),
+            const i = () => (0, s.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(t.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: n.Z }),
                 c = (e) => (o, r) => {
                     const t = r();
                     o(
                         e
                             .selectEntries(t)
                             .filter((e) => {
-                                const o = e.type === n.ZP.User ? e.content.id : "",
+                                const o = e.type === a.ZP.User ? e.content.id : "",
                                     r = d.ZP.select(t, o);
                                 return r && !r.muting;
                             })
@@ -580,74 +580,48 @@
                     );
                 },
                 u = (e, o, r) => {
-                    if (!r.selectEntries(o).find((o) => o.type === n.ZP.User && o.content.id === e)) {
+                    if (!r.selectEntries(o).find((o) => o.type === a.ZP.User && o.content.id === e)) {
                         const o = (0, l.OD)(e),
                             t = (0, l.$0)({ entryId: o, id: e, sortIndex: Date.now().toString() });
                         return r.injectEntry(t);
                     }
                 };
         },
-        246492: (e, o, r) => {
+        748138: (e, o, r) => {
             r.r(o), r.d(o, { default: () => s });
             var t = r(202784),
-                a = r(890601),
-                n = r(783427),
+                n = r(890601),
+                a = r(783427),
                 l = r(347101);
             const d = (e = {}) => {
-                const { direction: o } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: o });
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: o });
             };
             d.metadata = { width: 24, height: 24 };
             const s = d;
         },
-        264171: (e, o, r) => {
+        74514: (e, o, r) => {
             r.r(o), r.d(o, { default: () => s });
             var t = r(202784),
-                a = r(890601),
-                n = r(783427),
+                n = r(890601),
+                a = r(783427),
                 l = r(347101);
             const d = (e = {}) => {
-                const { direction: o } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: o });
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: o });
             };
             d.metadata = { width: 24, height: 24 };
             const s = d;
         },
-        98440: (e, o, r) => {
+        155353: (e, o, r) => {
             r.r(o), r.d(o, { default: () => s });
             var t = r(202784),
-                a = r(890601),
-                n = r(783427),
+                n = r(890601),
+                a = r(783427),
                 l = r(347101);
             const d = (e = {}) => {
-                const { direction: o } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: o });
-            };
-            d.metadata = { width: 24, height: 24 };
-            const s = d;
-        },
-        226597: (e, o, r) => {
-            r.r(o), r.d(o, { default: () => s });
-            var t = r(202784),
-                a = r(890601),
-                n = r(783427),
-                l = r(347101);
-            const d = (e = {}) => {
-                const { direction: o } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
-            };
-            d.metadata = { width: 24, height: 24 };
-            const s = d;
-        },
-        262009: (e, o, r) => {
-            r.r(o), r.d(o, { default: () => s });
-            var t = r(202784),
-                a = r(890601),
-                n = r(783427),
-                l = r(347101);
-            const d = (e = {}) => {
-                const { direction: o } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: o });
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
             };
             d.metadata = { width: 24, height: 24 };
             const s = d;
@@ -655,16 +629,16 @@
         452693: (e, o, r) => {
             r.r(o), r.d(o, { default: () => s });
             var t = r(202784),
-                a = r(890601),
-                n = r(783427),
+                n = r(890601),
+                a = r(783427),
                 l = r(347101);
             const d = (e = {}) => {
-                const { direction: o } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: o });
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: o });
             };
             d.metadata = { width: 24, height: 24 };
             const s = d;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.266b22fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.ad7b52ba.js.map

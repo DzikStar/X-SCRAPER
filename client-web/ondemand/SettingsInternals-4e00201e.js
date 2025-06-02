@@ -41,8 +41,8 @@
                 L = f().b2347f7c,
                 N = f().e1fda16e,
                 F = f().b8f3ed46,
-                B = f().gb8d09ba,
-                R = f().g6dc09a0,
+                R = f().gb8d09ba,
+                B = f().g6dc09a0,
                 z = f().a6e6e898,
                 O = f().cde3b9ae,
                 H = f().g0d7813a,
@@ -80,7 +80,7 @@
                                 a.organization_url ? n.createElement(u.Z, { color: "primary", label: a.organization_url, link: a.organization_url }) : null,
                                 n.createElement(r.Z, { style: K.itemContainer }, n.createElement(s.ZP, { color: "gray700", size: "subtext2" }, a.description)),
                                 d,
-                                n.createElement(m.Z, { text: R }),
+                                n.createElement(m.Z, { text: B }),
                                 e.map((e) => n.createElement(r.Z, { key: e.token }, this._renderPermissions(e), e.ios ? null : n.createElement(E.Z, { onRevoke: this._handleRevokeApp, reportApplicationHref: `${q}?${(0, o.stringify)(t)}`, revoked: !!e.revoked, token: e.token, tokenType: e.token_type || "oauth1" }))),
                                 a.ios ? n.createElement(h.Z, { link: V, style: [K.itemContainer, K.center] }, n.createElement(s.ZP, { color: "link" }, $)) : null,
                             );
@@ -109,7 +109,7 @@
                     return e.can_read_dms ? (a = H) : e.can_write ? (a = O) : e.can_read && (a = z), a ? n.createElement(p.Z, { label: a }) : null;
                 }
                 _renderEmailPermission(e) {
-                    return e.email_access ? n.createElement(p.Z, { label: B }) : null;
+                    return e.email_access ? n.createElement(p.Z, { label: R }) : null;
                 }
                 _renderAdsPermission(e) {
                     let a = null;
@@ -216,8 +216,8 @@
                 }
             }
             const F = v(N),
-                B = { ...(0, A.G)({}), [y.ZP.User]: (0, g.Z)({ decoration: ({ userId: e }) => o.createElement(F, { userId: e }) }) },
-                R = c().a5f32aa2,
+                R = { ...(0, A.G)({}), [y.ZP.User]: (0, g.Z)({ decoration: ({ userId: e }) => o.createElement(F, { userId: e }) }) },
+                B = c().a5f32aa2,
                 z = c().ef731b14,
                 O = c().i859a9d4,
                 H = o.createElement(c().I18NFormatMessage, { $i18n: "ab3bf5a7" }, o.createElement(r.ZP, { link: (0, d.ju)("https://support.x.com/articles/117063") }, c().e554ba83));
@@ -243,7 +243,7 @@
                     e(this._getLegacyModule());
                 }
                 render() {
-                    return o.createElement(m.Z, null, o.createElement("div", null, o.createElement(b.Z, null, H), o.createElement(s.Z, null)), o.createElement(h.Z, { entryConfiguration: B, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: R }));
+                    return o.createElement(m.Z, null, o.createElement("div", null, o.createElement(b.Z, null, H), o.createElement(s.Z, null)), o.createElement(h.Z, { entryConfiguration: R, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: B }));
                 }
             }
             const j = ({ blockType: e, emptyStateMessage: a, emptyStateTitle: t, scribeNamespace: r, supportUrl: d }) => M((l) => o.createElement(p.nO, { namespace: r }, o.createElement(U, (0, n.Z)({}, l, { blockType: e, emptyStateMessage: a, emptyStateTitle: t, supportUrl: d }))));
@@ -281,25 +281,23 @@
                 g = (0, u.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.21"),
-                            t.e("icons.16"),
-                            t.e("icons.10"),
-                            t.e("icons.1"),
-                            t.e("icons.19"),
                             t.e("icons.0"),
-                            t.e("icons.23"),
-                            t.e("icons.8"),
+                            t.e("icons.5"),
+                            t.e("icons.12"),
+                            t.e("icons.20"),
                             t.e("icons.2"),
-                            t.e("icons.3"),
-                            t.e("icons.15"),
-                            t.e("icons.4"),
+                            t.e("icons.21"),
+                            t.e("icons.28"),
+                            t.e("icons.10"),
+                            t.e("icons.17"),
+                            t.e("icons.9"),
+                            t.e("icons.23"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
-                            t.e("icons.9"),
-                            t.e("icons.7"),
-                            t.e("icons.28"),
-                            t.e("icons.26"),
+                            t.e("icons.22"),
                             t.e("icons.24"),
+                            t.e("icons.14"),
+                            t.e("icons.13"),
                             t.e("modules.audio-6107ac1a"),
                             t.e("modules.audio-b953418a"),
                             t.e("modules.audio-7c51e6a7"),
@@ -310,10 +308,9 @@
                             t.e("modules.audio-e019dbda"),
                             t.e("modules.audio-262c94d4"),
                             t.e("modules.audio-c6fe4ea4"),
-                            t.e("icons.18"),
-                            t.e("icons.13"),
-                            t.e("icons.29"),
-                            t.e("icons.27"),
+                            t.e("icons.6"),
+                            t.e("icons.3"),
+                            t.e("icons.8"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -352,9 +349,9 @@
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320"),
                             t.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             t.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
+                            t.e("shared~ondemand.SensitiveMediaSettings~ondemand.SettingsRevamp~ondemand.SettingsInternals~bundle.SettingsTran"),
                             t.e("shared~ondemand.SettingsInternals~bundle.Ocf"),
                             t.e("ondemand.SettingsInternals-6107ac1a"),
-                            t.e("ondemand.SettingsInternals-9f4db315"),
                             t.e("ondemand.SettingsInternals-e6266db0"),
                             t.e("ondemand.SettingsInternals-948b2c60"),
                             t.e("ondemand.SettingsInternals-4e00201e"),
@@ -367,25 +364,23 @@
                 A = (0, u.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.21"),
-                            t.e("icons.16"),
-                            t.e("icons.10"),
-                            t.e("icons.1"),
-                            t.e("icons.19"),
                             t.e("icons.0"),
-                            t.e("icons.23"),
-                            t.e("icons.8"),
+                            t.e("icons.5"),
+                            t.e("icons.12"),
+                            t.e("icons.20"),
                             t.e("icons.2"),
-                            t.e("icons.3"),
-                            t.e("icons.15"),
-                            t.e("icons.4"),
+                            t.e("icons.21"),
+                            t.e("icons.28"),
+                            t.e("icons.10"),
+                            t.e("icons.17"),
+                            t.e("icons.9"),
+                            t.e("icons.23"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
-                            t.e("icons.9"),
-                            t.e("icons.7"),
-                            t.e("icons.28"),
-                            t.e("icons.26"),
+                            t.e("icons.22"),
                             t.e("icons.24"),
+                            t.e("icons.14"),
+                            t.e("icons.13"),
                             t.e("modules.audio-6107ac1a"),
                             t.e("modules.audio-b953418a"),
                             t.e("modules.audio-7c51e6a7"),
@@ -396,10 +391,9 @@
                             t.e("modules.audio-e019dbda"),
                             t.e("modules.audio-262c94d4"),
                             t.e("modules.audio-c6fe4ea4"),
-                            t.e("icons.18"),
-                            t.e("icons.13"),
-                            t.e("icons.29"),
-                            t.e("icons.27"),
+                            t.e("icons.6"),
+                            t.e("icons.3"),
+                            t.e("icons.8"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -438,9 +432,9 @@
                             t.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320"),
                             t.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             t.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
+                            t.e("shared~ondemand.SensitiveMediaSettings~ondemand.SettingsRevamp~ondemand.SettingsInternals~bundle.SettingsTran"),
                             t.e("shared~ondemand.SettingsInternals~bundle.Ocf"),
                             t.e("ondemand.SettingsInternals-6107ac1a"),
-                            t.e("ondemand.SettingsInternals-9f4db315"),
                             t.e("ondemand.SettingsInternals-e6266db0"),
                             t.e("ondemand.SettingsInternals-948b2c60"),
                             t.e("ondemand.SettingsInternals-4e00201e"),
@@ -617,7 +611,7 @@
             const x = f(T);
         },
         221930: (e, a, t) => {
-            t.r(a), t.d(a, { SettingsContactsDashboardScreen: () => R, default: () => O });
+            t.r(a), t.d(a, { SettingsContactsDashboardScreen: () => B, default: () => O });
             var n = t(202784),
                 o = t(325686),
                 r = t(731708),
@@ -654,14 +648,14 @@
                 L = u().b864be7a,
                 N = { headline: u().g5fa1090, text: u().h3e420fc, confirmButtonLabel: u().e68b09b4 },
                 F = u().ca24589e,
-                B = (e) => e.id_str;
-            class R extends n.Component {
+                R = (e) => e.id_str;
+            class B extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { verificationRequired: !1 }),
                         (this._renderTimeline = () => {
                             const { contacts: e, fetchStatus: a } = this.props;
-                            return n.createElement(f.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: B, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
+                            return n.createElement(f.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: R, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
                         }),
                         (this._renderContact = (e) => {
                             const { id_str: a, import_source: t, vcard: d } = e,
@@ -687,9 +681,9 @@
                     return n.createElement(A.nO, { namespace: C }, n.createElement(g.Z, null, n.createElement(S.Z, { location: o, title: T }, n.createElement(D.Z, { confirmationSheetConfirmButtonLabel: N.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: N.headline, confirmationSheetText: N.text, label: L, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(_.Z, null, x), n.createElement(s.Z, null), n.createElement(E.Z, { fetch: a, fetchStatus: e.length > 0 ? y.ZP.LOADED : t, render: () => this._renderTimeline() }))));
                 }
             }
-            R.contextType = M.rC;
+            B.contextType = M.rC;
             const z = i.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
-                O = v(R);
+                O = v(B);
         },
         412483: (e, a, t) => {
             t.r(a), t.d(a, { ContentPreferencesPage: () => I, default: () => v });
@@ -818,4 +812,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-4e00201e.2f93963a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-4e00201e.b882bf1a.js.map

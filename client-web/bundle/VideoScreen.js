@@ -3,7 +3,7 @@
     ["bundle.VideoScreen"],
     {
         290402: (e, t, o) => {
-            o.d(t, { Z: () => g });
+            o.d(t, { Z: () => m });
             var n = o(807896),
                 s = o(202784),
                 r = o(182056),
@@ -15,10 +15,10 @@
             const u = l().aa6e3300,
                 p = ({ retryMessage: e, ...t }, o) => {
                     const a = r.Z.isOnline();
-                    return s.createElement(i.Z, (0, n.Z)({}, t, { icon: a ? void 0 : s.createElement(d.default, { style: m.icon }), retryMessage: a ? e : u }));
+                    return s.createElement(i.Z, (0, n.Z)({}, t, { icon: a ? void 0 : s.createElement(d.default, { style: g.icon }), retryMessage: a ? e : u }));
                 },
-                m = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                g = s.forwardRef(p);
+                g = a.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                m = s.forwardRef(p);
         },
         252021: (e, t, o) => {
             o.d(t, { Z: () => i });
@@ -71,7 +71,7 @@
             const d = (0, s.ZP)(c(l));
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => w, KV: () => v, LI: () => x, SC: () => C, Vt: () => y, ed: () => M, op: () => Z });
+            o.d(t, { $f: () => C, KV: () => b, LI: () => x, SC: () => w, Vt: () => v, ed: () => P, op: () => Z });
             var n = o(202784),
                 s = o(190286),
                 r = o(111677),
@@ -82,33 +82,33 @@
                 d = o(163390);
             const u = i().cfd2f35e,
                 p = i().f9e45cfb,
-                m = i().fcd4d489,
-                g = i().a6450e84,
+                g = i().fcd4d489,
+                m = i().a6450e84,
                 f = i().g353ad73,
                 h = i().ad00a739,
-                v = i().a9fd20be,
+                b = i().a9fd20be,
                 k = i().j546fb79,
-                b = i().c9623eeb,
-                y = i().e133be4e,
+                y = i().c9623eeb,
+                v = i().e133be4e,
                 T = i().he43bca4,
                 E = i().f5f01af6,
-                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                w = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: g, text: t ? h({ screenName: e }) : f({ screenName: e }) }),
+                w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                C = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: m, text: t ? h({ screenName: e }) : f({ screenName: e }) }),
                 Z = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: n, testID: s, unblockAction: r, unblockSubtext: i, user: a }) => {
                     let c,
                         u = l.Z;
                     const p = x(a, o);
                     switch (n) {
-                        case C.PROFILE:
-                        case C.LIST_DETAIL:
-                        case C.FOLLOWERS_LIST:
+                        case w.PROFILE:
+                        case w.LIST_DETAIL:
+                        case w.FOLLOWERS_LIST:
                             u = () => {
                                 a.blocking ? r(p) : e(p);
                             };
                             break;
-                        case C.TWEET:
-                        case C.TWEET_CARET:
-                        case C.RICH_FEEDBACK:
+                        case w.TWEET:
+                        case w.TWEET_CARET:
+                        case w.RICH_FEEDBACK:
                             (c = d.uq.block),
                                 (u = () => {
                                     a.blocking ? r(p) : e(p);
@@ -118,9 +118,9 @@
                 },
                 I = (e) => (e ? c.default : a.default),
                 _ = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                S = (e) => (e.blocking ? b({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                x = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: y, text: t ? E : T }))(e.screen_name, t) : w(e.screen_name, t)),
-                M = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
+                S = (e) => (e.blocking ? y({ screenName: e.screen_name }) : g({ screenName: e.screen_name })),
+                x = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: v, text: t ? E : T }))(e.screen_name, t) : C(e.screen_name, t)),
+                P = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: r, headline: i, label: a, text: c } = e;
                     return n.createElement(s.Z, { cancelButtonLabel: u, confirmButtonLabel: a, confirmButtonType: r, headline: i, onCancel: o, onConfirm: t, text: c });
                 };
@@ -136,7 +136,7 @@
             const s = { defaultToast: { text: o.n(n)().ca96fe6e }, showToast: !0 };
         },
         163390: (e, t, o) => {
-            o.d(t, { OX: () => p, Od: () => d, PN: () => m, uq: () => l, wR: () => f });
+            o.d(t, { OX: () => p, Od: () => d, PN: () => g, uq: () => l, wR: () => f });
             var n = o(251067),
                 s = o(522171),
                 r = o(111677),
@@ -165,7 +165,7 @@
                     { description: i().eebdef38, keys: s.Z.shortcuts.openMediaModal, universal: !0 },
                     { description: i().b488758c, keys: l.toggleDMDrawer, universal: !1 },
                 ],
-                m = () => [
+                g = () => [
                     { description: i().c82314e0, keys: l.video.play1, universal: !0 },
                     { description: i().c82314e0, keys: l.video.play2, universal: !0 },
                     { description: i().b881560e, keys: l.video.mute, universal: !0 },
@@ -173,10 +173,10 @@
                     { description: i().a7e604c6, keys: l.audio.play, universal: !1 },
                     { description: i().f978c4fc, keys: l.audio.mute, universal: !1 },
                 ],
-                g = (0, a.Z)((e) => {
+                m = (0, a.Z)((e) => {
                     const t = d(e),
                         o = p(),
-                        n = m(),
+                        n = g(),
                         s = {};
                     return (
                         [...o, ...n, ...t].forEach(({ description: e, keys: t }) => {
@@ -190,7 +190,7 @@
                     );
                 }),
                 f = (e, t) => {
-                    if (t) return { dataSet: { "at-shortcutkeys": g(e) } };
+                    if (t) return { dataSet: { "at-shortcutkeys": m(e) } };
                 };
         },
         409438: (e, t, o) => {
@@ -220,7 +220,7 @@
                 p = r.Z.register(u);
         },
         460283: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => C });
+            o.r(t), o.d(t, { default: () => w });
             var n = o(202784),
                 s = o(392237),
                 r = o(205705),
@@ -231,26 +231,26 @@
                 d = o(293115),
                 u = o(644829),
                 p = o(750085),
-                m = o(218951);
-            const g = () => (0, m.Z)({ timelineId: "video", network: { getEndpoint: (e) => e.withEndpoint(u.Z).fetchMediaTabVideoMixer, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: p.Z, context: "FETCH_MEDIA_TAB_VIDEO_TIMELINE", perfKey: "video" });
+                g = o(218951);
+            const m = () => (0, g.Z)({ timelineId: "video", network: { getEndpoint: (e) => e.withEndpoint(u.Z).fetchMediaTabVideoMixer, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: p.Z, context: "FETCH_MEDIA_TAB_VIDEO_TIMELINE", perfKey: "video" });
             var f = o(769471),
                 h = o(674530),
-                v = o(367879),
+                b = o(367879),
                 k = o(335632),
-                b = o(962741),
-                y = o(742742);
-            const T = (0, f.Z)({}, (0, k.G)({}), { [b.ZP.TimelineModule]: { handlers: { [y.Z.Carousel]: (0, v.Z)({ moduleDisplayType: h.m.Carousel, divider: { top: !1, bottom: !1 } }), [y.Z.CompactCarousel]: (0, v.Z)({ moduleDisplayType: h.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
+                y = o(962741),
+                v = o(742742);
+            const T = (0, f.Z)({}, (0, k.G)({}), { [y.ZP.TimelineModule]: { handlers: { [v.Z.Carousel]: (0, b.Z)({ moduleDisplayType: h.m.Carousel, divider: { top: !1, bottom: !1 } }), [v.Z.CompactCarousel]: (0, b.Z)({ moduleDisplayType: h.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
                 E = { page: "media" };
-            function C({ history: e }) {
+            function w({ history: e }) {
                 const t = !(0, l.ZP)(),
-                    o = n.useMemo(() => g(), []),
-                    s = t ? n.createElement(r.Z, { style: w.icon }) : void 0;
+                    o = n.useMemo(() => m(), []),
+                    s = t ? n.createElement(r.Z, { style: C.icon }) : void 0;
                 return n.createElement(d.nO, { namespace: E }, n.createElement(a.Z, { locationKey: E.page }, n.createElement(i.Z, { centeredLogo: s, history: e, isFullWidth: !0, primaryContent: n.createElement(c.Z, { entryConfiguration: T, module: o, title: "Video Screen" }), sidebarContent: null })));
             }
-            const w = s.default.create((e) => ({ icon: { flexGrow: 1, height: "1.75rem", color: e.colors.brandColor } }));
+            const C = s.default.create((e) => ({ icon: { flexGrow: 1, height: "1.75rem", color: e.colors.brandColor } }));
         },
         879113: (e, t, o) => {
-            o.d(t, { Z: () => m });
+            o.d(t, { Z: () => g });
             var n = o(202784),
                 s = o(476984),
                 r = o.n(s),
@@ -261,29 +261,29 @@
                 d = "loaded",
                 u = "loading",
                 p = "none";
-            class m extends n.Component {
+            class g extends n.Component {
                 shouldComponentUpdate(e) {
                     const t = e.fetchStatus === d,
                         o = this.props.fetchStatus !== e.fetchStatus;
                     return !(!t && !o) || !r()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: o, fetchStatus: s, icon: r, loadingMessage: i, onRequestRetry: d, render: m, renderFailure: g, retryMessage: f, retryable: h } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: o, fetchStatus: s, icon: r, loadingMessage: i, onRequestRetry: d, render: g, renderFailure: m, retryMessage: f, retryable: h } = this.props;
                     switch (s) {
                         case l:
-                            return h ? n.createElement(a.Z, { icon: r, onRequestRetry: d, retryMessage: f }) : o ? n.createElement(c.m, { failureMessage: o }) : g();
+                            return h ? n.createElement(a.Z, { icon: r, onRequestRetry: d, retryMessage: f }) : o ? n.createElement(c.m, { failureMessage: o }) : m();
                         case u:
                             return n.createElement(c.J, { "aria-label": e, color: t, loadingMessage: i });
                         case p:
                             return null;
                         default:
-                            return m();
+                            return g();
                     }
                 }
             }
-            m.defaultProps = { renderFailure: i.Z, retryable: !0 };
+            g.defaultProps = { renderFailure: i.Z, retryable: !0 };
         },
-        648539: (e, t, o) => {
+        748138: (e, t, o) => {
             o.r(t), o.d(t, { default: () => c });
             var n = o(202784),
                 s = o(890601),
@@ -291,11 +291,24 @@
                 i = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const c = a;
+        },
+        314948: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
+            var n = o(202784),
+                s = o(890601),
+                r = o(783427),
+                i = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const c = a;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen.de9b396a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen.31bb2f0a.js.map

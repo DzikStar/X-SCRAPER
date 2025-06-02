@@ -5501,13 +5501,35 @@
                 i("g22c8c30", "Jika cukup banyak kontributor yang menilai catatan ini Membantu, termasuk mereka yang umumnya tidak sepakat dalam penilaian sebelumnya, catatan ini akan ditampilkan kepada publik sebagai konteks tambahan untuk postingan."),
                 i("jf04b084", "Catatan ini ditambahkan oleh kontributor yang meyakini bahwa postingan terkait tidak menyesatkan dan tidak memerlukan konteks tambahan."),
                 i("g5a72e98", "Ini hanya terlihat di Catatan Komunitas sebagai informasi tambahan bagi penilai, dan tidak ditampilkan sebagai konteks pada postingan, bahkan jika statusnya Membantu."),
-                i("h53cb7de", "Apa pendapat Anda tentang postingan ini?"),
-                i("dc3bfc82", "Jika ada, apa yang Anda sukai dari postingan ini?"),
-                i("b4704bf4", "Jika ada, apa yang tidak Anda sukai dari postingan ini?"),
+                i("b8719c22", "Bantu identifikasi apakah postingan disukai orang-orang dari perspektif yang berbeda."),
+                i("jcdf97d4", "Apa yang Anda sukai dari postingan ini?"),
+                i("d4d7b67e", "Apa yang tidak Anda sukai dari postingan ini?"),
                 i("ed5156fa", "Terjadi kesalahan saat menyimpan penilaian Anda, coba lagi."),
-                i("d5f9fb42", "Anda memberi nilai pada peningkatan komunitas ini"),
+                i("d0ed3636", "Anda memberi nilai postingan ini"),
                 i("j6aa6172", "Hapus penilaian?"),
                 i("i4112750", "Tindakan ini tidak dapat dibatalkan."),
+                i("i6f6191a", "Terima kasih!"),
+                i("h5575012", "Agree and submit"),
+                i("f9171e52", "Postingan ini mendapatkan suka dari orang-orang yang biasanya tidak sependapat, tetapi sejauh ini inputnya masih terbatas."),
+                i("j0f9919a", "Penilaian Anda tidak akan berdampak negatif terhadap postingan, tetapi dapat memberi apresiasi positif pada postingan yang banyak disukai."),
+                i("b3af830c", "Input Anda:"),
+                i("d0b29562", "Nilai lebih banyak postingan sekarang"),
+                i("i36ea87a", "Saya sepakat"),
+                i("d5befc34", "Saya belajar sesuatu yang menarik"),
+                i("je26ecf2", "Memaparkan poinnya dengan baik"),
+                i("e4e331aa", "Menyatukan dalam sebuah topik yang biasanya memunculkan pendapat yang berseberangan"),
+                i("ed61ff2a", "Menghangatkan hati atau menyentuh"),
+                i("gc3104d8", "Inspiratif atau menarik"),
+                i("j8c4400e", "Lucu"),
+                i("j4738406", "T/A: Tidak ada hal yang saya sukai dari hal ini"),
+                i("d93d1666", "Saya tidak sepakat"),
+                i("d6130466", "Tidak memiliki substansi yang bermakna"),
+                i("d96835b6", "Tidak menarik minat saya"),
+                i("b7ba4150", "T/A: Tidak ada hal yang saya tidak sukai dari hal ini"),
+                i("g0402b3b", "disukai orang-orang dari perspektif yang berbeda"),
+                i("ged62c2b", "menyorot"),
+                i("b5d5f7f1", "Membentuk arah"),
+                i("a42fef87", "Learn more"),
                 i("bd7eb888", "Lihat semua catatan pada postingan ini"),
                 i("i97b83f6", "Ada gangguan saat mengirimkan banding Anda, silakan coba lagi."),
                 i("a038ab9a", "Terjemahkan catatan"),
@@ -5858,8 +5880,8 @@
                 i("e41c9b4f", function (a) {
                     return "Disimpan ke " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Hapus Folder?"),
-                i("f4ea967a", "Folder sudah dihapus"),
+                i("h18f86a4", "Hapus Folder?");
+            i("f4ea967a", "Folder sudah dihapus"),
                 i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder berhasil diperbarui"),
                 i("e3299b94", "Ada kesalahan teknis. Coba perbarui lagi folder tersebut dalam satu menit."),
@@ -5890,8 +5912,8 @@
                     return "Berakhir " + a.timestamp;
                 }),
                 i("daca8a2c", "Buka di Dok"),
-                i("e3aac82a", "Memuat Siaran");
-            i("i0ed3f4e", "Gambar peristiwa"),
+                i("e3aac82a", "Memuat Siaran"),
+                i("i0ed3f4e", "Gambar peristiwa"),
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Postingan koleksi"),
                 i("a226497c", "Buat Komunitas baru"),
@@ -6862,8 +6884,8 @@
                 i("b925c18c", "Jenis Gaji"),
                 i("j3d242ce", "Rentang tidak valid"),
                 i("f4d07bd2", "Cantumkan detail opsional untuk memudahkan kandidat menemukan posisi Anda melalui pencarian."),
-                i("b8cbb51a", "Ringkasan Pekerjaan"),
-                i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
+                i("b8cbb51a", "Ringkasan Pekerjaan");
+            i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
                 i("b075c68a", "Edit lowongan kerja"),
                 i("d4b6a6e0", "Spotlight Profil"),
                 i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
@@ -6888,8 +6910,8 @@
                 i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda"),
                 i("b6b5dc94", "Mendapatkan verifikasi"),
                 i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini"),
-                i("e3e3a97c", "Dapatkan bagi hasil pendapatan dari postingan Anda");
-            i("f15bc24e", "Batas Grok yang lebih tinggi"),
+                i("e3e3a97c", "Dapatkan bagi hasil pendapatan dari postingan Anda"),
+                i("f15bc24e", "Batas Grok yang lebih tinggi"),
                 i("c4666e1c", "Lebih leluasa menggunakan Grok 3, model terbaru kami"),
                 i("he74ae7a", "Batas penggunaan Grok tertinggi"),
                 i("f5732cd4", "Plus, akses yang lebih luas ke DeepSearch dan Berpikir"),
@@ -7206,16 +7228,16 @@
                 i("hd80bd3e", "Promosikan sebuah postingan"),
                 i("fe2b0008", "Pelajari cara menggunakan X"),
                 i("h257d4aa", "Pilih postingan untuk dipromosikan"),
-                i("fe946974", "Your trial of X without ads"),
-                i("f6c50ec0", "Your ad-free trial has ended"),
-                i("b1319404", "Ads avoided"),
-                i("baa4acae", "You’re seeing more personalized content."),
-                i("c00e8600", "Estimated time saved"),
-                i("ic073e4e", "Your time is valuable."),
-                i("eb866e88", "Estimated 1-year time savings"),
-                i("aa77b70c", "Based on your usage."),
-                i("c534c6b4", "We’re crunching the numbers..."),
-                i("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                i("fe946974", "Uji coba X Anda tanpa iklan"),
+                i("f6c50ec0", "Uji coba bebas iklan Anda sudah berakhir"),
+                i("b1319404", "Iklan yang berhasil Anda hindari"),
+                i("baa4acae", "Anda melihat lebih banyak konten yang dipersonalisasi."),
+                i("c00e8600", "Estimasi waktu yang dihemat "),
+                i("ic073e4e", "Waktu Anda berharga."),
+                i("eb866e88", "Estimasi penghematan waktu 1 tahun"),
+                i("aa77b70c", "Berdasarkan penggunaan Anda."),
+                i("c534c6b4", "Kami sedang mengumpulkan penghitungannya..."),
+                i("i57332f0", "Terus menjelajah dan periksa lagi nanti untuk mengetahui berapa banyak iklan yang berhasil Anda hindari dan berapa lama waktu yang Anda hemat"),
                 i("cc10f019", function (a) {
                     return a.minutes + " menit";
                 }),
@@ -7231,11 +7253,11 @@
                 i("be88be23", function (a) {
                     return "Uji coba bebas iklan " + a.durationInDays + " hari sudah diaktifkan untuk Anda";
                 }),
-                i("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                i("ae3f3b0e", "Enjoy!"),
-                i("cdac8dc4", "See your new feed"),
+                i("a4413462", "Dalam uji coba ini, Anda bisa melihat statistik tentang berapa banyak iklan yang Anda hindari dan waktu yang Anda hemat."),
+                i("ae3f3b0e", "Nikmatilah!"),
+                i("cdac8dc4", "Lihat feed baru Anda"),
                 i("dec99336", "Bebas iklan"),
-                i("i95803fa", "Unfortunately, you are not eligible at this time."),
+                i("i95803fa", "Sayangnya, saat ini Anda belum memenuhi syarat."),
                 i("d28a1d72", "Jadilah yang pertama mengetahui tren dengan Radar"),
                 i("fb70427a", "Memperkenalkan alat pencarian paling canggih di X."),
                 i("i54bf620", "Pantau kata kunci"),
@@ -7840,35 +7862,7 @@
                 i("c29e3a88", "Pilih Afiliasi"),
                 i("j8318d57", function (a) {
                     return a.number + " afiliasi";
-                }),
-                i("bf809ec0", "Pilih Afiliasi"),
-                i("b719e224", "Tidak ada hasil"),
-                i("c9938100", "Hasil pencarian"),
-                i("d1a35ec6", "Tambahkan akun"),
-                i("b437adda", "Tingkatkan ke versi berbayar"),
-                i("f1f6c88b", function (a) {
-                    return "Akun (" + a.count + ")";
-                }),
-                i("b02156b8", "Undangan"),
-                i("gd67d29b", function (a) {
-                    return "Undangan (" + a.count + ")";
-                }),
-                i("daf646e6", "Perhatikan: Anda harus melabeli akun dengan sesuai."),
-                i("i3895c32", "Akun Anda sedang ditinjau karena Anda mengubah @pegangan X Anda"),
-                i("i5f8b628", "Anda tidak dapat mengubah afiliasi sampai akun Anda ditinjau."),
-                i("e9e663ac", "Pembayaran Anda sudah lewat jatuh tempo."),
-                i("c3ddd22c", "persyaratan"),
-                i("c9729d8a", "persyaratan"),
-                i("cdcd1d2c", "Tambahkan afiliasi untuk organisasi Anda"),
-                i("d30ea6f3", function (a) {
-                    return "Yakin ingin menghapus @" + a.name + "?";
-                }),
-                i("c2dfbb86", "Ya, hapus saja"),
-                i("ba047f76", "Menghapus afiliasi akan langsung menghapus tanda centang dan lencana afiliasi yang dimilikinya. Anda akan tetap dikenai tagihan hingga akhir bulan."),
-                i("j26dee0e", "Hapus afiliasi"),
-                i("e30cbdf0", "Afiliasi ini adalah pelanggan Organisasi Terverifikasi dan harus tetap berupa Organisasi. Afiliasi tidak dapat diubah menjadi Individu."),
-                i("j3115ce8", "Individual"),
-                i("d8bb1d84", "Organisasi");
+                });
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7907,9 +7901,37 @@
                     d(a, n)
                 );
             }
-            i("e970bdbd", function (a) {
-                return a.count + " undangan tersisa";
-            }),
+            i("bf809ec0", "Pilih Afiliasi"),
+                i("b719e224", "Tidak ada hasil"),
+                i("c9938100", "Hasil pencarian"),
+                i("d1a35ec6", "Tambahkan akun"),
+                i("b437adda", "Tingkatkan ke versi berbayar"),
+                i("f1f6c88b", function (a) {
+                    return "Akun (" + a.count + ")";
+                }),
+                i("b02156b8", "Undangan"),
+                i("gd67d29b", function (a) {
+                    return "Undangan (" + a.count + ")";
+                }),
+                i("daf646e6", "Perhatikan: Anda harus melabeli akun dengan sesuai."),
+                i("i3895c32", "Akun Anda sedang ditinjau karena Anda mengubah @pegangan X Anda"),
+                i("i5f8b628", "Anda tidak dapat mengubah afiliasi sampai akun Anda ditinjau."),
+                i("e9e663ac", "Pembayaran Anda sudah lewat jatuh tempo."),
+                i("c3ddd22c", "persyaratan"),
+                i("c9729d8a", "persyaratan"),
+                i("cdcd1d2c", "Tambahkan afiliasi untuk organisasi Anda"),
+                i("d30ea6f3", function (a) {
+                    return "Yakin ingin menghapus @" + a.name + "?";
+                }),
+                i("c2dfbb86", "Ya, hapus saja"),
+                i("ba047f76", "Menghapus afiliasi akan langsung menghapus tanda centang dan lencana afiliasi yang dimilikinya. Anda akan tetap dikenai tagihan hingga akhir bulan."),
+                i("j26dee0e", "Hapus afiliasi"),
+                i("e30cbdf0", "Afiliasi ini adalah pelanggan Organisasi Terverifikasi dan harus tetap berupa Organisasi. Afiliasi tidak dapat diubah menjadi Individu."),
+                i("j3115ce8", "Individual"),
+                i("d8bb1d84", "Organisasi"),
+                i("e970bdbd", function (a) {
+                    return a.count + " undangan tersisa";
+                }),
                 i("id67d953", function (a) {
                     return "Ada kesalahan saat mengambil detail checkout Stripe Anda. silakan hubungi " + a.supportEmail + " jika masalah ini berlanjut.";
                 }),
@@ -8882,8 +8904,8 @@
                 i("ha3efce4", "Otomatis"),
                 i("hd8d044d", function (a) {
                     return "Otomatis (" + a.quality + ")";
-                }),
-                i("a7bf9962", "Unduh video"),
+                });
+            i("a7bf9962", "Unduh video"),
                 i("ccc97152", "Kecepatan pemutaran"),
                 i("h531ade0", "Kualitas video"),
                 i("e8b5757c", "0,25x"),
@@ -8914,8 +8936,8 @@
                 i("c1658fc6", "Media tidak dapat dimainkan."),
                 i("h519ae04", "Media tersebut telah dinonaktifkan karena adanya klaim hak cipta."),
                 i("ce871584", "Siaran ini telah berakhir."),
-                i("c101eb96", "Siaran ini tidak tersedia.");
-            i("gb24a514", "Media ini telah dinonaktifkan sebagai tanggapan atas laporan dari pemegang hak cipta."),
+                i("c101eb96", "Siaran ini tidak tersedia."),
+                i("gb24a514", "Media ini telah dinonaktifkan sebagai tanggapan atas laporan dari pemegang hak cipta."),
                 i("hcaf3e63", function (a) {
                     return "Media ini telah dinonaktifkan karena adanya klaim hak cipta oleh " + a.holder + ".";
                 }),
@@ -11477,6 +11499,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Bantu temukan postingan yang "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Tidak akan berdampak negatif tetapi dapat membantu ", " postingan yang banyak disukai"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " fitur eksperimental ini"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Sebagai penulis postingan, Anda dapat "];
@@ -12067,7 +12113,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["Biaya ", "%, Min. "];
                             },
                         },
                         {
@@ -13293,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.2011d38a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.446fc5ca.js.map

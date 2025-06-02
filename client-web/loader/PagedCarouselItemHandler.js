@@ -1,232 +1,152 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.PagedCarouselItemHandler", "icons/IconChevronRight-js", "icons/IconFollowArrowLeft-js", "icons/IconSound-js", "icons/IconSparkle-js"],
+    ["loader.PagedCarouselItemHandler"],
     {
         64899: (e, t, r) => {
-            r.d(t, { H: () => a });
+            r.d(t, { H: () => s });
             var o = r(202784),
                 n = r(516951);
-            const a = o.createContext({ handleNextSlide: n.Z });
+            const s = o.createContext({ handleNextSlide: n.Z });
         },
         301758: (e, t, r) => {
-            r.d(t, { Z: () => g });
+            r.d(t, { Z: () => b });
             var o = r(807896),
                 n = r(202784),
-                a = r(235902),
-                i = r(521288),
+                s = r(235902),
+                a = r(521288),
                 c = r(401388),
-                l = r(988566),
-                s = r(725516),
+                i = r(988566),
+                l = r(725516),
                 d = r(443781),
-                m = r(71620),
-                u = r(668214),
-                h = r(491963),
-                p = r(836255);
-            const w = (e, t) => t.tweetId,
-                v = (e, t) => {
+                u = r(71620),
+                m = r(668214),
+                p = r(491963),
+                w = r(836255);
+            const C = (e, t) => t.tweetId,
+                h = (e, t) => {
                     const r = t.tweetId,
-                        o = r && p.Z.select(e, r);
-                    return o ? (0, h.z0)(e, o) : void 0;
+                        o = r && w.Z.select(e, r);
+                    return o ? (0, p.z0)(e, o) : void 0;
                 },
-                g = (0, u.Z)()
-                    .propsFromState(() => ({ community: v, hydratedTweet: p.Z.createHydratedTweetSelector(w) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: h.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: m, onAvatarClick: u, onMediaClick: h, onPress: p, onScreenNameClick: w, tweetId: v, withBirdwatchPivot: g = !0, ...C }) => {
-                    const { featureSwitches: b, viewerUserId: y } = n.useContext(d.rC),
-                        E = (0, s.z)(),
-                        Z = m?.community_id_str;
+                b = (0, m.Z)()
+                    .propsFromState(() => ({ community: h, hydratedTweet: w.Z.createHydratedTweetSelector(C) }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: w, onScreenNameClick: C, tweetId: h, withBirdwatchPivot: b = !0, ..._ }) => {
+                    const { featureSwitches: y, viewerUserId: E } = n.useContext(d.rC),
+                        x = (0, l.z)(),
+                        g = u?.community_id_str;
                     n.useEffect(() => {
-                        Z && (0, c.Z)(e) && r(Z).catch(t());
-                    }, [e, Z, t, r]);
-                    const x = n.useCallback(
+                        g && (0, c.Z)(e) && r(g).catch(t());
+                    }, [e, g, t, r]);
+                    const v = n.useCallback(
                             (e) => {
-                                E.scribeAction("click"), p && p(e);
+                                x.scribeAction("click"), w && w(e);
                             },
-                            [p, E],
+                            [w, x],
                         ),
-                        _ = !!g,
-                        f = m && (0, l.D$)(m, y, e),
-                        k = f && (0, l.rl)(f);
-                    return n.createElement(a.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => b.isTrue("responsive_web_edit_tweet_enabled") || b.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(i.Z, (0, o.Z)({}, C, { loggedInUserId: y, onAvatarClick: u, onMediaClick: h, onPress: x, onScreenNameClick: w, shouldShowAltLabelAlways: !0, socialContextProps: k, tweet: m, withBirdwatchPivot: _ })));
+                        k = !!b,
+                        T = u && (0, i.D$)(u, E, e),
+                        Z = T && (0, i.rl)(T);
+                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: Z, tweet: u, withBirdwatchPivot: k })));
                 });
         },
         562154: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => x });
+            r.r(t), r.d(t, { default: () => v });
             var o = r(459643),
                 n = r(942893),
-                a = r(351322),
-                i = r(202784),
+                s = r(351322),
+                a = r(202784),
                 c = r(325686),
-                l = r(154003),
-                s = r(392237),
+                i = r(154003),
+                l = r(392237),
                 d = r(725516),
-                m = r(64899);
-            const u = s.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden", marginStart: e.spaces.space16, marginEnd: e.spaces.space16 }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } })),
-                h = (e) => {
-                    const { content: t, showLessOnClick: r, showLessText: o, showMoreOnClick: n, showMoreText: a } = e,
-                        s = i.useRef(),
-                        h = (0, d.z)(),
-                        p = (e) => (t) => {
-                            h.scribeAction("show_more"), n(), s.current?.blur(), e(t);
-                        },
+                u = r(64899);
+            const m = l.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden", marginStart: e.spaces.space16, marginEnd: e.spaces.space16 }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } })),
+                p = (e) => {
+                    const { content: t, showLessOnClick: r, showLessText: o, showMoreOnClick: n, showMoreText: s } = e,
+                        l = a.useRef(),
+                        p = (0, d.z)(),
                         w = (e) => (t) => {
-                            h.scribeAction("show_less"), r(), s.current?.focus(), s.current?.blur(), e(t);
+                            p.scribeAction("show_more"), n(), l.current?.blur(), e(t);
                         },
-                        v = () => {
-                            h.scribeAction("click");
+                        C = (e) => (t) => {
+                            p.scribeAction("show_less"), r(), l.current?.focus(), l.current?.blur(), e(t);
+                        },
+                        h = () => {
+                            p.scribeAction("click");
                         };
-                    return i.createElement(m.H.Consumer, null, ({ handleNextSlide: e }) => i.createElement(c.Z, { style: u.root }, i.createElement(c.Z, { onClick: v }, t), i.createElement(c.Z, { style: u.buttonsContainer }, i.createElement(l.ZP, { onPress: w(e), size: "medium", style: [u.button, u.leftControl], type: "primaryOutlined" }, o), i.createElement(l.ZP, { onPress: p(e), ref: s, size: "medium", style: [u.button, u.rightControl], type: "primaryFilled" }, a))));
+                    return a.createElement(u.H.Consumer, null, ({ handleNextSlide: e }) => a.createElement(c.Z, { style: m.root }, a.createElement(c.Z, { onClick: h }, t), a.createElement(c.Z, { style: m.buttonsContainer }, a.createElement(i.ZP, { onPress: C(e), size: "medium", style: [m.button, m.leftControl], type: "primaryOutlined" }, o), a.createElement(i.ZP, { onPress: w(e), ref: l, size: "medium", style: [m.button, m.rightControl], type: "primaryFilled" }, s))));
                 };
-            var p = r(23679),
-                w = r(301758),
-                v = r(71620),
-                g = r(668214),
-                C = r(836255),
-                b = r(960919);
-            const y = (e, t) => {
+            var w = r(23679),
+                C = r(301758),
+                h = r(71620),
+                b = r(668214),
+                _ = r(836255),
+                y = r(960919);
+            const E = (e, t) => {
                     const { entry: r } = t,
                         o = r.content.content.pagedCarouselFeedbackItem ? r.content.content.pagedCarouselFeedbackItem.content.tweet.id : void 0;
-                    return o ? C.Z.select(e, o) : void 0;
+                    return o ? _.Z.select(e, o) : void 0;
                 },
-                E = (e) => {
-                    const { applyReactionInstructions: t, createLocalApiErrorHandler: r, entry: o, processCallback: n, tweet: a } = e,
-                        c = a?.id_str,
-                        l = o.content.content.pagedCarouselFeedbackItem ? o.content.content.pagedCarouselFeedbackItem : void 0,
-                        s = i.useCallback(() => {
-                            l && (n(l.showMoreCallback).catch(r()), t({ entry: o, triggerName: p.K.ON_SHOW_MORE }));
-                        }, [r, t, o, n, l]),
-                        d = i.useCallback(() => {
-                            l && n(l.showLessCallback).catch(r());
-                        }, [r, n, l]),
-                        m = i.useMemo(() => (c ? i.createElement(w.Z, { shouldShowBorder: !1, tweetId: c }) : null), [c]);
-                    return l && a ? i.createElement(h, { content: m, showLessOnClick: d, showLessText: l.showLessText, showMoreOnClick: s, showMoreText: l.showMoreText }) : null;
+                x = (e) => {
+                    const { applyReactionInstructions: t, createLocalApiErrorHandler: r, entry: o, processCallback: n, tweet: s } = e,
+                        c = s?.id_str,
+                        i = o.content.content.pagedCarouselFeedbackItem ? o.content.content.pagedCarouselFeedbackItem : void 0,
+                        l = a.useCallback(() => {
+                            i && (n(i.showMoreCallback).catch(r()), t({ entry: o, triggerName: w.K.ON_SHOW_MORE }));
+                        }, [r, t, o, n, i]),
+                        d = a.useCallback(() => {
+                            i && n(i.showLessCallback).catch(r());
+                        }, [r, n, i]),
+                        u = a.useMemo(() => (c ? a.createElement(C.Z, { shouldShowBorder: !1, tweetId: c }) : null), [c]);
+                    return i && s ? a.createElement(p, { content: u, showLessOnClick: d, showLessText: i.showLessText, showMoreOnClick: l, showMoreText: i.showMoreText }) : null;
                 },
-                Z = (0, g.Z)()
-                    .propsFromState(() => ({ tweet: y }))
-                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, v.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: b.Z }))(i.memo(E)),
-                x = a.iH({ component: Z, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                g = (0, b.Z)()
+                    .propsFromState(() => ({ tweet: E }))
+                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(x)),
+                v = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         988566: (e, t, r) => {
-            r.d(t, { D$: () => c, Du: () => d, GK: () => s, Iv: () => u, pz: () => h, rl: () => m });
+            r.d(t, { D$: () => c, Du: () => d, GK: () => l, Iv: () => m, pz: () => p, rl: () => u });
             var o = r(202784),
                 n = r(688715),
-                a = r(946409),
-                i = r(788993);
-            const c = (e, t, r) => (e.retweeted_status ? l(e, t) : e.community_id_str && r ? s(e, r) : void 0),
-                l = (e, t) => {
-                    if (e.retweeted_status) return { contextType: i.Z.Retweet, isSelfRetweet: e.user.id_str === t, name: e.user.name, screenName: e.user.screen_name };
+                s = r(946409),
+                a = r(788993);
+            const c = (e, t, r) => (e.retweeted_status ? i(e, t) : e.community_id_str && r ? l(e, r) : void 0),
+                i = (e, t) => {
+                    if (e.retweeted_status) return { contextType: a.Z.Retweet, isSelfRetweet: e.user.id_str === t, name: e.user.name, screenName: e.user.screen_name };
                 },
-                s = (e, t) => ({ contextType: i.Z.Community, landingUrl: { url: (0, n.ju)(`https://x.com/i/communities/${t.id_str}`), urlType: "ExternalUrl" }, text: t.name }),
+                l = (e, t) => ({ contextType: a.Z.Community, landingUrl: { url: (0, n.ju)(`https://x.com/i/communities/${t.id_str}`), urlType: "ExternalUrl" }, text: t.name }),
                 d = ({ isCellWithProminentSocialContext: e, socialContext: t, topic: r }) => {
                     if (t?.topicContext) {
                         const o = t.topicContext;
-                        return { contextType: e ? i.Z.TextOnly : i.Z.Topic, landingUrl: { url: `twitter://topics_timeline?id=${o.topicId}`, urlType: "DeepLink" }, text: r?.name, topicContext: o };
+                        return { contextType: e ? a.Z.TextOnly : a.Z.Topic, landingUrl: { url: `twitter://topics_timeline?id=${o.topicId}`, urlType: "DeepLink" }, text: r?.name, topicContext: o };
                     }
                     if (t?.generalContext) return { ...t.generalContext };
                 },
-                m = (e) => {
+                u = (e) => {
                     const { contextType: t, landingUrl: r, text: o } = e;
-                    return { link: r ? (0, a.s9)(r) : void 0, text: o, contextType: t };
+                    return { link: r ? (0, s.s9)(r) : void 0, text: o, contextType: t };
                 },
-                u = { contextType: i.Z.Pin, text: "" },
-                h = o.createContext(void 0);
+                m = { contextType: a.Z.Pin, text: "" },
+                p = o.createContext(void 0);
         },
         23679: (e, t, r) => {
             r.d(t, { K: () => o });
             const o = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
-        58399: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                i = r(717683),
-                c = r(347101);
-            const l = (e = {}) => {
-                const t = o.useContext(i.Z),
-                    { direction: r } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style, t && c.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        246492: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                i = r(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
-        },
-        264171: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                i = r(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
-        },
-        98440: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                i = r(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
-        },
-        926628: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                i = r(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
-        },
-        262009: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                i = r(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
-        },
         452693: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
+            r.r(t), r.d(t, { default: () => i });
             var o = r(202784),
                 n = r(890601),
-                a = r(783427),
-                i = r(347101);
+                s = r(783427),
+                a = r(347101);
             const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
-            const l = c;
+            const i = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.a2d00aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.921ccf4a.js.map

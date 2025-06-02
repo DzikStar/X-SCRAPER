@@ -5502,13 +5502,35 @@
                 a("g22c8c30", "Als deze Notes als 'Nuttig' worden beoordeeld door genoeg bijdragers, met inbegrip van degenen die het in het verleden oneens waren in hun beoordelingen, worden ze toegevoegd aan de post als context en voor iedereen zichtbaar."),
                 a("jf04b084", "Deze Notes zijn toegevoegd door bijdragers die van mening zijn dat de post niet misleidend is en geen aanvullende context nodig heeft."),
                 a("g5a72e98", "Deze zijn alleen zichtbaar in Community-opmerkingen als aanvullende informatie voor beoordelaars en worden niet getoond als context bij de post, zelfs niet wanneer ze de status 'Nuttig' hebben verdiend."),
-                a("h53cb7de", "Wat vind je van deze post?"),
-                a("dc3bfc82", "Wat vind je leuk aan deze post?"),
-                a("b4704bf4", "Wat vind je niet leuk aan deze post?"),
+                a("b8719c22", "Help bij het identificeren of posts vind-ik-leuks krijgen van mensen met verschillende perspectieven."),
+                a("jcdf97d4", "Wat vind je leuk aan deze post?"),
+                a("d4d7b67e", "Wat vind je niet leuk aan deze post?"),
                 a("ed5156fa", "Er is een fout opgetreden bij het opslaan van je beoordeling. Probeer het opnieuw."),
-                a("d5f9fb42", "Je hebt deze Community-boost beoordeeld"),
+                a("d0ed3636", "Je hebt deze post beoordeeld"),
                 a("j6aa6172", "Beoordeling verwijderen?"),
                 a("i4112750", "Dit kan niet ongedaan worden gemaakt."),
+                a("i6f6191a", "Bedankt!"),
+                a("h5575012", "Agree and submit"),
+                a("f9171e52", "Deze post heeft wat vind-ik-leuks gekregen van mensen die het normaal niet met elkaar eens zijn, maar de input tot nu toe is beperkt."),
+                a("j0f9919a", "Je beoordeling heeft geen negatieve invloed op een post, maar kan helpen om posts die op een brede schaal leuk worden gevonden positief te herkennen."),
+                a("b3af830c", "Jouw input:"),
+                a("d0b29562", "Beoordeel nu meer posts"),
+                a("i36ea87a", "Ik ga ermee akkoord"),
+                a("d5befc34", "Ik heb iets interessants geleerd"),
+                a("je26ecf2", "Deze post maakt een zinvol punt"),
+                a("e4e331aa", "Deze post verenigt mensen over een vaak polariserend onderwerp"),
+                a("ed61ff2a", "Deze post is hartverwarmend of vertederend"),
+                a("gc3104d8", "Deze post is inspirerend of superleuk"),
+                a("j8c4400e", "Deze post is grappig"),
+                a("j4738406", "N.v.t.: er is niets wat ik er leuk aan vind"),
+                a("d93d1666", "Ik ga er niet mee akkoord"),
+                a("d6130466", "Deze post is niet betekenisvol"),
+                a("d96835b6", "Deze post interesseert me niet"),
+                a("b7ba4150", "N.v.t.: er is niets wat ik er niet leuk aan vind"),
+                a("g0402b3b", "vind-ik-leuks krijgen van mensen met verschillende perspectieven"),
+                a("ged62c2b", "onder de aandacht te brengen"),
+                a("b5d5f7f1", "Geeft de richting aan"),
+                a("a42fef87", "Learn more"),
                 a("bd7eb888", "Bekijk alle Notes op deze post"),
                 a("i97b83f6", "Er is een fout opgetreden bij het versturen van je bezwaar. Probeer het opnieuw."),
                 a("a038ab9a", "Opmerking vertalen"),
@@ -5859,8 +5881,8 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Map verwijderen"),
-                a("f4ea967a", "Map is verwijderd"),
+                a("h18f86a4", "Map verwijderen");
+            a("f4ea967a", "Map is verwijderd"),
                 a("b670aa62", "Naam map"),
                 a("aece5462", "Mapnaam is bijgewerkt"),
                 a("e3299b94", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw bij te werken."),
@@ -5891,8 +5913,8 @@
                     return "Beëindigd op " + e.timestamp;
                 }),
                 a("daca8a2c", "Openen in Dock"),
-                a("e3aac82a", "Uitzending laden");
-            a("i0ed3f4e", "Afbeelding gebeurtenis"),
+                a("e3aac82a", "Uitzending laden"),
+                a("i0ed3f4e", "Afbeelding gebeurtenis"),
                 a("cbae35fa", "Uitzending rapporteren"),
                 a("fd12ab58", "Postverzameling"),
                 a("a226497c", "Een nieuwe Community maken"),
@@ -6863,8 +6885,8 @@
                 a("b925c18c", "Soort salaris"),
                 a("j3d242ce", "Ongeldig bereik"),
                 a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten."),
-                a("b8cbb51a", "Samenvatting vacature"),
-                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
+                a("b8cbb51a", "Samenvatting vacature");
+            a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
                 a("b075c68a", "Vacature bewerken"),
                 a("d4b6a6e0", "Profielspotlight"),
                 a("j2dd3686", "Licht vacatures uit boven mijn posts."),
@@ -6889,8 +6911,8 @@
                 a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden"),
                 a("b6b5dc94", "Word geverifieerd"),
                 a("b06db848", "Onderscheid je van anderen op het platform"),
-                a("e3e3a97c", "Verdien een deel van de inkomsten van je posts");
-            a("f15bc24e", "Verhoogde Grok-limieten"),
+                a("e3e3a97c", "Verdien een deel van de inkomsten van je posts"),
+                a("f15bc24e", "Verhoogde Grok-limieten"),
                 a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
                 a("he74ae7a", "De hoogste Grok-gebruikslimieten"),
                 a("f5732cd4", "Plus uitgebreide toegang tot DeepSearch en Denken"),
@@ -7841,35 +7863,7 @@
                 a("c29e3a88", "Gelieerde accounts selecteren"),
                 a("j8318d57", function (e) {
                     return e.number + " gelieerd" + r(e.number, " account", "e accounts");
-                }),
-                a("bf809ec0", "Gelieerde accounts selecteren"),
-                a("b719e224", "Geen resultaten"),
-                a("c9938100", "Zoekresultaten"),
-                a("d1a35ec6", "Accounts toevoegen"),
-                a("b437adda", "Upgrade naar betaald"),
-                a("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
-                a("b02156b8", "Uitnodigingen"),
-                a("gd67d29b", function (e) {
-                    return "Uitnodigingen (" + e.count + ")";
-                }),
-                a("daf646e6", "Let op: je moet accounts op de juiste manier van labels voorzien."),
-                a("i3895c32", "Je account wordt beoordeeld omdat je je @gebruikersnaam van X hebt gewijzigd"),
-                a("i5f8b628", "Je kan je gelieerde accounts niet bewerken totdat je account is beoordeeld."),
-                a("e9e663ac", "Je betaling is achterstallig."),
-                a("c3ddd22c", "voorwaarden"),
-                a("c9729d8a", "voorwaarden"),
-                a("cdcd1d2c", "Gelieerde accounts toevoegen aan je organisatie"),
-                a("d30ea6f3", function (e) {
-                    return "Weet je zeker dat je @" + e.name + " wil verwijderen?";
-                }),
-                a("c2dfbb86", "Ja, doorgaan"),
-                a("ba047f76", "Als je een gelieerd account verwijdert, worden onmiddellijk het vinkje en de gelieerd accountbadge ervan verwijderd. Er worden tot aan het einde van de maand kosten in rekening gebracht."),
-                a("j26dee0e", "Gelieerd account verwijderen"),
-                a("e30cbdf0", "Dit gelieerde account is abonnee op Geverifieerde Organisaties en moet een Organisatie blijven. Dit kan niet worden gewijzigd in een individueel account."),
-                a("j3115ce8", "Individu"),
-                a("d8bb1d84", "Organisatie");
+                });
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7908,9 +7902,37 @@
                     o(e, n)
                 );
             }
-            a("e970bdbd", function (e) {
-                return e.count + " uitnodigingen resterend";
-            }),
+            a("bf809ec0", "Gelieerde accounts selecteren"),
+                a("b719e224", "Geen resultaten"),
+                a("c9938100", "Zoekresultaten"),
+                a("d1a35ec6", "Accounts toevoegen"),
+                a("b437adda", "Upgrade naar betaald"),
+                a("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                a("b02156b8", "Uitnodigingen"),
+                a("gd67d29b", function (e) {
+                    return "Uitnodigingen (" + e.count + ")";
+                }),
+                a("daf646e6", "Let op: je moet accounts op de juiste manier van labels voorzien."),
+                a("i3895c32", "Je account wordt beoordeeld omdat je je @gebruikersnaam van X hebt gewijzigd"),
+                a("i5f8b628", "Je kan je gelieerde accounts niet bewerken totdat je account is beoordeeld."),
+                a("e9e663ac", "Je betaling is achterstallig."),
+                a("c3ddd22c", "voorwaarden"),
+                a("c9729d8a", "voorwaarden"),
+                a("cdcd1d2c", "Gelieerde accounts toevoegen aan je organisatie"),
+                a("d30ea6f3", function (e) {
+                    return "Weet je zeker dat je @" + e.name + " wil verwijderen?";
+                }),
+                a("c2dfbb86", "Ja, doorgaan"),
+                a("ba047f76", "Als je een gelieerd account verwijdert, worden onmiddellijk het vinkje en de gelieerd accountbadge ervan verwijderd. Er worden tot aan het einde van de maand kosten in rekening gebracht."),
+                a("j26dee0e", "Gelieerd account verwijderen"),
+                a("e30cbdf0", "Dit gelieerde account is abonnee op Geverifieerde Organisaties en moet een Organisatie blijven. Dit kan niet worden gewijzigd in een individueel account."),
+                a("j3115ce8", "Individu"),
+                a("d8bb1d84", "Organisatie"),
+                a("e970bdbd", function (e) {
+                    return e.count + " uitnodigingen resterend";
+                }),
                 a("id67d953", function (e) {
                     return "Er ging iets mis bij het ophalen van je afrekengegevens van Stripe. Neem contact op met " + e.supportEmail + " als dit probleem zich blijft voordoen.";
                 }),
@@ -8883,8 +8905,8 @@
                 a("ha3efce4", "Automatisch"),
                 a("hd8d044d", function (e) {
                     return "Automatisch (" + e.quality + ")";
-                }),
-                a("a7bf9962", "Video downloaden"),
+                });
+            a("a7bf9962", "Video downloaden"),
                 a("ccc97152", "Afspeelsnelheid"),
                 a("h531ade0", "Videokwaliteit"),
                 a("e8b5757c", "0,25 x"),
@@ -8915,8 +8937,8 @@
                 a("c1658fc6", "Kan media niet afspelen."),
                 a("h519ae04", "Het materiaal is niet toegankelijk als gevolg van een auteursrechtenclaim."),
                 a("ce871584", "Deze uitzending is afgelopen."),
-                a("c101eb96", "Deze uitzending is niet beschikbaar.");
-            a("gb24a514", "Media niet beschikbaar als gevolg van een melding door de eigenaar van de auteursrechten."),
+                a("c101eb96", "Deze uitzending is niet beschikbaar."),
+                a("gb24a514", "Media niet beschikbaar als gevolg van een melding door de eigenaar van de auteursrechten."),
                 a("hcaf3e63", function (e) {
                     return "Dit materiaal is niet toegankelijk als gevolg van een auteursrechtenclaim van " + e.holder + ".";
                 }),
@@ -11491,6 +11513,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Helpt bij het vinden van posts die "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Kan geen kwaad voor posts, maar kan helpen om posts die op brede schaal leuk worden gevonden "];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " van deze experimentele functie"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Als de auteur van de post kan je "];
@@ -13308,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.4a85104a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.9244682a.js.map

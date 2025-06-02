@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~ondemand.SettingsRevamp~bundle.TwitterBlue", "icons/IconChevronRight-js"],
+    ["shared~ondemand.SettingsRevamp~bundle.TwitterBlue"],
     {
         376920: (e) => {
             e.exports = { queryId: "V8-RP7SxlI4qzRmpCmEqgw", operationName: "ListProductSubscriptions", operationType: "query", metadata: { featureSwitches: ["subscriptions_management_fetch_next_billing_time", "subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
@@ -126,7 +126,7 @@
         },
         685731: (e, t, r) => {
             "use strict";
-            r.d(t, { Gi: () => b, Mk: () => T, ZV: () => f, aU: () => m, d3: () => h, fS: () => E, pt: () => S });
+            r.d(t, { Gi: () => b, Mk: () => T, ZV: () => m, aU: () => f, d3: () => h, fS: () => E, pt: () => S });
             r(202784);
             var n = r(111677),
                 i = r.n(n),
@@ -139,7 +139,7 @@
                 l = i().f8d3b50a,
                 p = i().i2c32253,
                 _ = i().c41e1023;
-            function m(e, t = !0, r) {
+            function f(e, t = !0, r) {
                 let n = "number" == typeof e?.amount_local_micro ? e.amount_local_micro : 0;
                 if (
                     (t &&
@@ -152,7 +152,7 @@
                 }
                 return n;
             }
-            function f(e) {
+            function m(e) {
                 return "number" == typeof e?.tax_amount_local_micro ? l : d;
             }
             const S = (e, t, r) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === r && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
@@ -161,7 +161,7 @@
             }
             function h(e, t = !1, r, n = !1, i = !0) {
                 const d = (0, u.gS)(r, "Discount", { status: n ? "pending" : "active" }),
-                    l = (0, o.x)({ amount: m(e, t), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
+                    l = (0, o.x)({ amount: f(e, t), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
                 return d && e.charge_interval ? (0, c.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, a.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: t, annualPriceMonthly: !1 }), formattedPrice: l, includeDiscountedPrice: !0, includeThenLabel: i }) : e.charge_interval === s.rv.Year ? _({ price: l }) : e.charge_interval === s.rv.Month ? p({ price: l }) : "";
             }
             const T = (e) => {
@@ -176,7 +176,7 @@
         },
         365265: (e, t, r) => {
             "use strict";
-            r.d(t, { $B: () => b, F$: () => h, Ne: () => g, RC: () => C, VR: () => T, dF: () => P, h9: () => S, hu: () => I, pC: () => E, qB: () => U, tF: () => f, v1: () => v, xN: () => R });
+            r.d(t, { $B: () => b, F$: () => h, Ne: () => U, RC: () => C, VR: () => T, dF: () => P, h9: () => S, hu: () => I, pC: () => E, qB: () => g, tF: () => m, v1: () => R, xN: () => v });
             var n = r(372551),
                 i = r(147595),
                 a = r(499627),
@@ -188,8 +188,8 @@
                 l = Object.freeze({ REQUEST: "rweb/subscriptionPayments/FETCH_SUBSCRIPTION_PRODUCT_CHECKOUT_URL_REQUEST", SUCCESS: "rweb/subscriptionPayments/FETCH_SUBSCRIPTION_PRODUCT_CHECKOUT_URL_SUCCESS", FAILURE: "rweb/subscriptionPayments/FETCH_SUBSCRIPTION_PRODUCT_CHECKOUT_URL_FAILURE" }),
                 p = Object.freeze({ REQUEST: "rweb/subscriptionPayments/FETCH_PRODUCT_SUBSCRIPTIONS_REQUEST", SUCCESS: "rweb/subscriptionPayments/FETCH_PRODUCT_SUBSCRIPTIONS_SUCCESS", FAILURE: "rweb/subscriptionPayments/FETCH_PRODUCT_SUBSCRIPTIONS_FAILURE" }),
                 _ = Object.freeze({ REQUEST: "rweb/subscriptionPayments/TIER_SWITCH_REQUEST", SUCCESS: "rweb/subscriptionPayments/TIER_SWITCH_SUCCESS", FAILURE: "rweb/subscriptionPayments/TIER_SWITCH_FAILURE" }),
-                m = { products: {}, checkoutUrls: {}, productSubscriptions: { fetchStatus: o.ZP.NONE }, switchTier: { fetchStatus: o.ZP.NONE } };
-            const f = (e, t) => {
+                f = { products: {}, checkoutUrls: {}, productSubscriptions: { fetchStatus: o.ZP.NONE }, switchTier: { fetchStatus: o.ZP.NONE } };
+            const m = (e, t) => {
                     const r = e[s].products[t];
                     return r?.fetchStatus || o.ZP.NONE;
                 },
@@ -215,14 +215,14 @@
                     const t = e[s].switchTier;
                     return t?.fetchStatus || o.ZP.NONE;
                 },
-                g =
+                U =
                     (e) =>
                     (t, r, { api: i }) => {
                         const a = (0, c._O)(t, { params: { id: e }, request: i.withEndpoint(n.Z).fetchSubscriptionProductDetails }),
-                            s = f(r(), e);
+                            s = m(r(), e);
                         return s !== o.ZP.NONE && s !== o.ZP.FAILED ? Promise.resolve() : a({ actionTypes: d, context: "FETCH_SUBSCRIPTION_PRODUCT_DETAILS", meta: { id: e } });
                     },
-                U =
+                g =
                     (e) =>
                     (t, r, { api: i }) => {
                         const a = (0, c._O)(t, { params: { external_product_id: e.externalProductId, success_url: e.successUrl, cancel_url: e.cancelUrl, external_price_id: e.externalPriceId, promotion_data: e.promotion_data }, request: i.withEndpoint(n.Z).fetchSubscriptionProductCheckoutUrl }),
@@ -236,14 +236,14 @@
                             s = b(r(), e.id);
                         return s !== o.ZP.NONE && s !== o.ZP.FAILED ? Promise.resolve() : a({ actionTypes: l, context: u, meta: { id: e.id } });
                     },
-                v =
+                R =
                     () =>
                     (e, t, { api: r }) => {
                         const i = (0, c._O)(e, { params: { fetchPrices: !1 }, request: r.withEndpoint(n.Z).fetchProductSubscriptions }),
                             a = T(t());
                         return a !== o.ZP.NONE && a !== o.ZP.FAILED ? Promise.resolve() : i({ actionTypes: p, context: "FETCH_PRODUCT_SUBSCRIPTIONS", meta: {} });
                     },
-                R =
+                v =
                     (e) =>
                     (t, r, { api: i }) => {
                         const a = (0, c._O)(t, { params: { price_id: e }, request: i.withEndpoint(n.Z).switchTier }),
@@ -251,7 +251,7 @@
                         return s !== o.ZP.NONE && s !== o.ZP.FAILED ? Promise.resolve() : a({ actionTypes: _, context: "TIER_SWITCH" });
                     };
             a.Z.register({
-                [s]: function (e = m, t) {
+                [s]: function (e = f, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case d.REQUEST: {
@@ -321,13 +321,13 @@
                 l = s().ae3e3723,
                 p = s().ade4c757,
                 _ = s().f7798e11,
-                m = s().e0b39888,
-                f = s().b67c37de,
+                f = s().e0b39888,
+                m = s().b67c37de,
                 S = s().a8363765,
-                b = ({ activeDiscountInfo: e, discountInfo: t, formattedPrice: r, includeTax: n, isFreeTrial: i, isTierSwitching: a, price: c, selectedInterval: o, shouldRemoveExtraStep: s, withAnnualPriceMonthly: d }) => (i ? ("Month" === o ? p({ price: r }) : _({ price: r })) : t || e ? h({ formattedPrice: r, selectedInterval: o, includeDiscountedPrice: "Year" === o && d, discountedFormattedPrice: (0, u.T)({ price: c, includeTax: n, percentOff: a ? e?.promotion_metadata?.percent_off : t?.metadata.percent_off, annualPriceMonthly: !1 }), duration: a ? e?.promotion_metadata?.duration_in_interval : t?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === o && s ? S({ price: r }) : "Month" === o ? m : f),
+                b = ({ activeDiscountInfo: e, discountInfo: t, formattedPrice: r, includeTax: n, isFreeTrial: i, isTierSwitching: a, price: c, selectedInterval: o, shouldRemoveExtraStep: s, withAnnualPriceMonthly: d }) => (i ? ("Month" === o ? p({ price: r }) : _({ price: r })) : t || e ? h({ formattedPrice: r, selectedInterval: o, includeDiscountedPrice: "Year" === o && d, discountedFormattedPrice: (0, u.T)({ price: c, includeTax: n, percentOff: a ? e?.promotion_metadata?.percent_off : t?.metadata.percent_off, annualPriceMonthly: !1 }), duration: a ? e?.promotion_metadata?.duration_in_interval : t?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === o && s ? S({ price: r }) : "Month" === o ? f : m),
                 h = ({ discountedFormattedPrice: e, duration: t, formattedPrice: r, includeDiscountedPrice: c, includeThenLabel: o, selectedInterval: u }) => {
-                    let m;
-                    return (m = "Month" === u ? (c ? n.createElement(s().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: t ?? "" }, n.createElement(a.ZP, { style: { textDecorationLine: "line-through" } }, s().df3ed1c8({ standardPrice: r }))) : d({ duration: t, standardPrice: r })) : c ? n.createElement(s().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: t ?? "" }, n.createElement(a.ZP, { style: { textDecorationLine: "line-through" } }, s().g261b098({ standardPrice: r }))) : l({ duration: t, standardPrice: r })), o && (m = n.createElement(i.Z, null, n.createElement(a.ZP, { style: T.marginBottom }, m), n.createElement(a.ZP, null, "Year" === u ? _({ price: r }) : p({ price: r })))), m;
+                    let f;
+                    return (f = "Month" === u ? (c ? n.createElement(s().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: t ?? "" }, n.createElement(a.ZP, { style: { textDecorationLine: "line-through" } }, s().df3ed1c8({ standardPrice: r }))) : d({ duration: t, standardPrice: r })) : c ? n.createElement(s().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: t ?? "" }, n.createElement(a.ZP, { style: { textDecorationLine: "line-through" } }, s().g261b098({ standardPrice: r }))) : l({ duration: t, standardPrice: r })), o && (f = n.createElement(i.Z, null, n.createElement(a.ZP, { style: T.marginBottom }, f), n.createElement(a.ZP, null, "Year" === u ? _({ price: r }) : p({ price: r })))), f;
                 },
                 T = c.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
         },
@@ -342,7 +342,7 @@
         },
         280278: (e, t, r) => {
             "use strict";
-            r.d(t, { ZP: () => f });
+            r.d(t, { ZP: () => m });
             var n = r(202784),
                 i = r(325686),
                 a = r(827515),
@@ -363,10 +363,10 @@
                 p[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
             });
             const _ = { position: "absolute" },
-                m = s.default.create({ root: { overflow: "hidden" } }),
-                f = (e) => {
+                f = s.default.create({ root: { overflow: "hidden" } }),
+                m = (e) => {
                     const { children: t, containerStyle: r, count: s, ...d } = e,
-                        [f, S] = n.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
+                        [m, S] = n.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
                         b = n.useRef(!1);
                     return (
                         n.useEffect(
@@ -381,31 +381,31 @@
                         n.useEffect(() => {
                             if (b.current)
                                 if (c.Z.reducedMotionEnabled) S((r) => ({ ...r, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (t !== f.pendingText) {
-                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? S((e) => ({ ...e, pendingCount: null, pendingText: null })) : (S((r) => ({ ...r, pendingCount: e.count, pendingText: t })), f.animating || l(e.count, t, S));
+                                else if (t !== m.pendingText) {
+                                    t === m.text || ((0, a.Z)(e.count) && m.count === e.count) ? S((e) => ({ ...e, pendingCount: null, pendingText: null })) : (S((r) => ({ ...r, pendingCount: e.count, pendingText: t })), m.animating || l(e.count, t, S));
                                 }
                         }, [t]),
                         n.useEffect(() => {
                             b.current &&
-                                !1 === f.animating &&
-                                (f.oldText
+                                !1 === m.animating &&
+                                (m.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
                                               b.current && S((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : f.pendingText && l(f.pendingCount, f.pendingText, S));
-                        }, [f.animating, f.oldText]),
+                                    : m.pendingText && l(m.pendingCount, m.pendingText, S));
+                        }, [m.animating, m.oldText]),
                         n.useMemo(() => {
-                            const e = p[f.transitionDirection],
-                                t = f.oldText && !c.Z.reducedMotionEnabled,
-                                a = !f.animating && f.oldText && !c.Z.reducedMotionEnabled,
-                                s = { ..._, ...(f.animating ? e.post : e.active) },
+                            const e = p[m.transitionDirection],
+                                t = m.oldText && !c.Z.reducedMotionEnabled,
+                                a = !m.animating && m.oldText && !c.Z.reducedMotionEnabled,
+                                s = { ..._, ...(m.animating ? e.post : e.active) },
                                 u = { ...(a ? e.pre : e.active) };
                             return n.createElement(
                                 i.Z,
-                                { style: [m.root, r] },
-                                t ? n.createElement("span", { style: s }, n.createElement(o.ZP, d, f.oldText)) : null,
+                                { style: [f.root, r] },
+                                t ? n.createElement("span", { style: s }, n.createElement(o.ZP, d, m.oldText)) : null,
                                 n.createElement(
                                     "span",
                                     {
@@ -416,29 +416,13 @@
                                             })(b.current, S),
                                         style: u,
                                     },
-                                    n.createElement(o.ZP, d, f.text),
+                                    n.createElement(o.ZP, d, m.text),
                                 ),
                             );
-                        }, [r, d, f, b, S])
+                        }, [r, d, m, b, S])
                     );
                 };
         },
-        58399: (e, t, r) => {
-            "use strict";
-            r.r(t), r.d(t, { default: () => u });
-            var n = r(202784),
-                i = r(890601),
-                a = r(783427),
-                c = r(717683),
-                o = r(347101);
-            const s = (e = {}) => {
-                const t = n.useContext(c.Z),
-                    { direction: r } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style, t && o.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const u = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsRevamp~bundle.TwitterBlue.50c6111a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsRevamp~bundle.TwitterBlue.5fb47a6a.js.map

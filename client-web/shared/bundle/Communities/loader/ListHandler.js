@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~loader.ListHandler"],
+    ["shared~bundle.Communities~loader.ListHandler", "icons/IconNewsStroke-js"],
     {
         346252: (e, a, l) => {
             l.d(a, { Z: () => f });
@@ -55,28 +55,28 @@
                 g = l(989816),
                 f = l(269950),
                 y = l(154003),
-                D = l(678773),
-                w = l(492140),
+                w = l(678773),
+                D = l(492140),
                 S = l(833057),
                 C = l(872788),
                 k = l(71620),
                 _ = l(668214),
                 M = l(709318),
-                I = l(601576);
-            const E = (0, _.Z)()
-                    .propsFromActions(() => ({ addToast: I.fz, createLocalApiErrorHandler: (0, k.zr)("TOGGLE_PIN_LIST"), pinTimeline: M.qM, unpinTimeline: M.bK }))
+                v = l(601576);
+            const I = (0, _.Z)()
+                    .propsFromActions(() => ({ addToast: v.fz, createLocalApiErrorHandler: (0, k.zr)("TOGGLE_PIN_LIST"), pinTimeline: M.qM, unpinTimeline: M.bK }))
                     .withAnalytics(),
-                P = m().c5d23126,
-                v = m().j44ec610,
+                E = m().c5d23126,
+                P = m().j44ec610,
                 A = m().d8a032a2,
                 T = m().fa816a0a,
                 Z = m().ac832ae4,
                 x = m().cdb33880,
                 F = (e) => {
                     const { addToast: a, analytics: l, couldPinList: n, createLocalApiErrorHandler: t, isListPinned: o, listId: i, mode: d, name: s, pinTimeline: c, unpinTimeline: u } = e,
-                        m = r.useMemo(() => (d === f.H.Reordering ? r.createElement(D.default, null) : o ? r.createElement(w.default, null) : r.createElement(S.default, { style: n ? null : R.disabledPin })), [n, o, d]),
+                        m = r.useMemo(() => (d === f.H.Reordering ? r.createElement(w.default, null) : o ? r.createElement(D.default, null) : r.createElement(S.default, { style: n ? null : R.disabledPin })), [n, o, d]),
                         h = r.useMemo(() => {
-                            if (d === f.H.Pinning) return { label: o ? v : P };
+                            if (d === f.H.Pinning) return { label: o ? P : E };
                         }, [o, d]),
                         b = r.useCallback(() => {
                             if (n || o) {
@@ -88,32 +88,32 @@
                     return r.createElement(y.ZP, { "aria-label": p, hoverLabel: h, icon: m, onPress: d === f.H.Pinning ? b : void 0, testID: "list-icon-button", type: "brandText" });
                 },
                 R = c.default.create((e) => ({ disabledPin: { color: e.colors.gray300 } })),
-                L = E(r.memo(F));
+                L = I(r.memo(F));
             var B = l(725516),
                 z = l(346252),
                 K = l(878162),
                 H = l(845738);
-            const O = "cellThumbnail",
-                U = "listCell",
-                N = (m().d58baa7f, m().j681933e),
+            const U = "cellThumbnail",
+                N = "listCell",
+                O = (m().d58baa7f, m().j681933e),
                 $ = (e) => {
-                    const { dataSaverMode: a, decoration: l, facepileUrls: c, followersContext: u, isFollowing: m, isListPinned: y, isSelected: D, listId: w, listVisibility: S, media: C, memberCount: k, membersContext: _, mode: M, name: I, onClick: E, pinnedTimelinesCount: P, role: v, user: A, withBottomBorder: T, withHoverCard: Z, withSubscribe: x = !1 } = e,
+                    const { dataSaverMode: a, decoration: l, facepileUrls: c, followersContext: u, isFollowing: m, isListPinned: y, isSelected: w, listId: D, listVisibility: S, media: C, memberCount: k, membersContext: _, mode: M, name: v, onClick: I, pinnedTimelinesCount: E, role: P, user: A, withBottomBorder: T, withHoverCard: Z, withSubscribe: x = !1 } = e,
                         { featureSwitches: F } = (0, p.QZ)(),
                         R = F.getNumberValue("home_timeline_spheres_max_user_owned_or_subscribed_lists_count", H.F),
-                        $ = !P || P < R,
-                        W = `/i/lists/${w}`,
-                        G = r.useCallback((e) => (e ? r.createElement(K.Z, { basePath: W, listId: w, wrapperStyle: { maxWidth: "100%" } }, e) : null), [W, w]),
-                        j = r.useMemo(() => r.createElement(n.Z, { style: V.name }, r.createElement(t.ZP, { numberOfLines: 1, weight: "bold" }, I), "private" === S ? r.createElement(t.ZP, { size: "body", style: V.icon }, r.createElement(h.default, { "aria-label": N, style: V.iconLock })) : null), [S, I]),
-                        Q = r.useMemo(() => r.createElement(n.Z, { style: V.thumbnailImage, testID: O }, r.createElement(z.Z, { cropCandidates: C.crop, dataSaverMode: a, icon: "lists", image: C.image, type: "fixed" })), [a, C.crop, C.image]),
-                        Y = r.useMemo(() => l || (D ? r.createElement(b.default, { style: V.iconCheckmark }) : M === f.H.Reordering || M === f.H.Pinning ? r.createElement(L, { couldPinList: $, isListPinned: y, listId: w, mode: M, name: I }) : x ? r.createElement(g.Z, { isFollowing: m, isMinimal: !0, listId: w, listName: I, user: A }) : void 0), [$, l, y, m, D, w, M, I, A, x]),
+                        $ = !E || E < R,
+                        W = `/i/lists/${D}`,
+                        j = r.useCallback((e) => (e ? r.createElement(K.Z, { basePath: W, listId: D, wrapperStyle: { maxWidth: "100%" } }, e) : null), [W, D]),
+                        G = r.useMemo(() => r.createElement(n.Z, { style: V.name }, r.createElement(t.ZP, { numberOfLines: 1, weight: "bold" }, v), "private" === S ? r.createElement(t.ZP, { size: "body", style: V.icon }, r.createElement(h.default, { "aria-label": O, style: V.iconLock })) : null), [S, v]),
+                        Q = r.useMemo(() => r.createElement(n.Z, { style: V.thumbnailImage, testID: U }, r.createElement(z.Z, { cropCandidates: C.crop, dataSaverMode: a, icon: "lists", image: C.image, type: "fixed" })), [a, C.crop, C.image]),
+                        Y = r.useMemo(() => l || (w ? r.createElement(b.default, { style: V.iconCheckmark }) : M === f.H.Reordering || M === f.H.Pinning ? r.createElement(L, { couldPinList: $, isListPinned: y, listId: D, mode: M, name: v }) : x ? r.createElement(g.Z, { isFollowing: m, isMinimal: !0, listId: D, listName: v, user: A }) : void 0), [$, l, y, m, w, D, M, v, A, x]),
                         q = (0, B.z)(),
                         X = r.useCallback(
                             (e) => {
-                                q.contextualScribeNamespace.element ? q.scribeAction("click") : q.scribe({ component: "list", action: "click" }), E?.(e, { listId: w, member_count: k });
+                                q.contextualScribeNamespace.element ? q.scribeAction("click") : q.scribe({ component: "list", action: "click" }), I?.(e, { listId: D, member_count: k });
                             },
-                            [q, E, w, k],
+                            [q, I, D, k],
                         );
-                    return r.createElement(o.Z, { "aria-checked": D, link: { pathname: W, anchorless: !0 }, onPress: X, role: v, style: [V.root, T && V.bottomBorder], testID: U }, r.createElement(n.Z, { style: V.listContainer }, r.createElement(n.Z, { style: V.leftColumn }, G(Q), r.createElement(n.Z, { style: V.listAttribution }, r.createElement(n.Z, { style: V.nameContainer }, G(j), _ ? r.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, r.createElement(i.Z, null), _) : null), c && u ? r.createElement(n.Z, { style: V.rowContainer }, r.createElement(d.Z, { style: V.facepile, userAvatarUrls: c }), r.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, u)) : A ? r.createElement(s.Z, { affiliateBadgeInfo: A.highlightedLabel, avatarSize: "small", color: "text", isBlueVerified: A.is_blue_verified, isProtected: A.protected, isVerified: A.verified, name: A.name, nameSize: "subtext2", profileImageUrl: A.profile_image_url_https, screenName: A.screen_name, screenNameSize: "subtext2", verifiedType: A.verified_type, withHoverCard: Z, withLink: !0, withScreenName: !0 }) : null)), r.createElement(n.Z, { style: V.rightColumn }, Y)));
+                    return r.createElement(o.Z, { "aria-checked": w, link: { pathname: W, anchorless: !0 }, onPress: X, role: P, style: [V.root, T && V.bottomBorder], testID: N }, r.createElement(n.Z, { style: V.listContainer }, r.createElement(n.Z, { style: V.leftColumn }, j(Q), r.createElement(n.Z, { style: V.listAttribution }, r.createElement(n.Z, { style: V.nameContainer }, j(G), _ ? r.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, r.createElement(i.Z, null), _) : null), c && u ? r.createElement(n.Z, { style: V.rowContainer }, r.createElement(d.Z, { style: V.facepile, userAvatarUrls: c }), r.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, u)) : A ? r.createElement(s.Z, { affiliateBadgeInfo: A.highlightedLabel, avatarSize: "small", color: "text", isBlueVerified: A.is_blue_verified, isProtected: A.protected, isVerified: A.verified, name: A.name, nameSize: "subtext2", profileImageUrl: A.profile_image_url_https, screenName: A.screen_name, screenNameSize: "subtext2", verifiedType: A.verified_type, withHoverCard: Z, withLink: !0, withScreenName: !0 }) : null)), r.createElement(n.Z, { style: V.rightColumn }, Y)));
                 },
                 V = c.default.create((e) => ({ bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, description: { marginBottom: e.spaces.space2 }, facepile: { marginEnd: e.spaces.space4 }, followButton: { marginStart: e.spaces.space12 }, icon: { paddingStart: e.spaces.space4 }, iconCheckmark: { color: e.colors.primary, paddingHorizontal: e.spaces.space12 }, iconLock: { color: e.colors.text }, listAttribution: { flex: 1, alignItems: "flex-start" }, listContainer: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, name: { flexDirection: "row" }, nameContainer: { alignItems: "center", flexDirection: "row", marginBottom: e.spaces.space2, width: "100%" }, rightColumn: { flexShrink: 0, justifyContent: "center" }, rowContainer: { alignItems: "center", flexDirection: "row", width: "100%" }, root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, thumbnailImage: { alignItems: "flex-start", height: "100%", marginEnd: e.spaces.space16 } })),
                 W = r.memo($);
@@ -133,17 +133,14 @@
             const d = (0, l(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        l.e("icons.21"),
-                        l.e("icons.16"),
-                        l.e("icons.10"),
-                        l.e("icons.1"),
-                        l.e("icons.19"),
                         l.e("icons.0"),
-                        l.e("icons.23"),
-                        l.e("icons.8"),
+                        l.e("icons.5"),
+                        l.e("icons.12"),
+                        l.e("icons.20"),
                         l.e("icons.2"),
-                        l.e("icons.9"),
-                        l.e("icons.26"),
+                        l.e("icons.21"),
+                        l.e("icons.28"),
+                        l.e("icons.17"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         l.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -194,6 +191,7 @@
                         l.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-7290f522"),
                         l.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-bfc056f9"),
                         l.e("shared~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen-ed448320"),
+                        l.e("shared~bundle.UserLists~ondemand.HoverCard"),
                         l.e("ondemand.HoverCard"),
                     ]).then(l.bind(l, 527409)),
             });
@@ -246,10 +244,10 @@
                         y = r.useCallback(() => {
                             a.scribeAction("follow"), o(m).catch(l(d.lg));
                         }, [a, l, o, m]),
-                        D = r.useCallback(() => {
+                        w = r.useCallback(() => {
                             a.scribeAction("unfollow"), b(m).catch(l(d.Sm));
                         }, [a, l, m, b]);
-                    return r.createElement(c.Z, { customText: h, displayMode: s.BH.subscribe, userFullName: g?.name }, (e) => r.createElement(n.Z, { buttonIcons: u ? p : void 0, disabled: t, displayMode: u ? "only-icon" : void 0, isFollowing: i, onFollow: e(y), onUnfollow: e(D), showRelationshipChangeConfirmation: !1, size: "small", style: f.followButton, type: "list" }));
+                    return r.createElement(c.Z, { customText: h, displayMode: s.BH.subscribe, userFullName: g?.name }, (e) => r.createElement(n.Z, { buttonIcons: u ? p : void 0, disabled: t, displayMode: u ? "only-icon" : void 0, isFollowing: i, onFollow: e(y), onUnfollow: e(w), showRelationshipChangeConfirmation: !1, size: "small", style: f.followButton, type: "list" }));
                 },
                 f = t.default.create((e) => ({ followButton: { marginStart: e.spaces.space12 } })),
                 y = b(r.memo(g));
@@ -260,7 +258,7 @@
             const r = Object.freeze({ Pinning: "Pinning", Reordering: "Reordering" });
         },
         379873: (e, a, l) => {
-            l.d(a, { z4: () => y, ZP: () => D, Dx: () => g });
+            l.d(a, { z4: () => y, ZP: () => w, Dx: () => g });
             var r,
                 n = {
                     argumentDefinitions: [],
@@ -341,7 +339,7 @@
                         u = a.owner_results?.result?.core;
                     return o.createElement(s.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: a.facepile_urls ?? p, followersContext: a.followers_context ?? "", isFollowing: Boolean(a.following), isListPinned: Boolean(a.pinning), isSelected: e.isMember, listId: a.id_str, listVisibility: a.mode?.toLowerCase() ?? "public", media: l, memberCount: a.member_count ?? 0, membersContext: a.members_context ?? "", mode: e.mode, name: a.name ?? "", onClick: e.onClick, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: r ? f(r, i, u, n, t) : void 0, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe });
                 },
-                D = o.memo(b(y));
+                w = o.memo(b(y));
         },
         250672: (e, a, l) => {
             l.d(a, { bH: () => u });
@@ -521,9 +519,9 @@
                 i = l(392237);
             const d = i.default.create((e) => ({ root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large }, defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: "flex-end" }, defaultUpperContainerStyle: { height: `calc(${e.spaces.space48}*2)`, overflow: "hidden", borderRadius: e.borderRadii.large } })),
                 s = ({ "aria-label": e, containerStyle: a, disabled: l, interactiveStyles: s, isCompact: c, link: u, lower: m, onClick: h, stackLayoutLowerStyle: b, stackLayoutUpperStyle: p, upper: g, withInsetFocusRing: f = !0, withInteractiveStyling: y = !1 }) => {
-                    const D = s ?? t.Z.generate({ backgroundColor: i.default.theme.colors.transparent, color: i.default.theme.colors.primary, insetFocusRing: f }),
-                        w = r.createElement(r.Fragment, null, r.createElement(n.Z, { style: [d.defaultUpperContainerStyle, p, c && { height: "auto" }] }, g), m ? r.createElement(n.Z, { style: [d.defaultLowerContainerStyle, b] }, m) : null);
-                    return r.createElement(o.Z, { "aria-label": e, disabled: l, interactive: y, interactiveStyles: y ? D : void 0, link: u, onClick: h, style: [d.root, a] }, w);
+                    const w = s ?? t.Z.generate({ backgroundColor: i.default.theme.colors.transparent, color: i.default.theme.colors.primary, insetFocusRing: f }),
+                        D = r.createElement(r.Fragment, null, r.createElement(n.Z, { style: [d.defaultUpperContainerStyle, p, c && { height: "auto" }] }, g), m ? r.createElement(n.Z, { style: [d.defaultLowerContainerStyle, b] }, m) : null);
+                    return r.createElement(o.Z, { "aria-label": e, disabled: l, interactive: y, interactiveStyles: y ? w : void 0, link: u, onClick: h, style: [d.root, a] }, D);
                 };
         },
         745185: (e, a, l) => {
@@ -569,10 +567,10 @@
                                 b = !n,
                                 f = a === m.D.Completed && !u && !b,
                                 y = this._shouldRenderScore(),
-                                D = this._getTeamScoreSize(h.SCORE),
-                                w = c ? this._getTeamScoreSize(h.SECONDARY_SCORE) : void 0,
+                                w = this._getTeamScoreSize(h.SCORE),
+                                D = c ? this._getTeamScoreSize(h.SECONDARY_SCORE) : void 0,
                                 S = "Cricket" === e ? s?.split(" ")[0] : s;
-                            return y ? r.createElement(o.Z, { style: [g.teamScore, f && g.losingTeamScore] }, r.createElement(d.ZP, { color: p(t), numberOfLines: 1, size: D, weight: "heavy" }, S), c ? r.createElement(d.ZP, { color: p(t), numberOfLines: 1, size: w, weight: "bold" }, c) : null) : null;
+                            return y ? r.createElement(o.Z, { style: [g.teamScore, f && g.losingTeamScore] }, r.createElement(d.ZP, { color: p(t), numberOfLines: 1, size: w, weight: "heavy" }, S), c ? r.createElement(d.ZP, { color: p(t), numberOfLines: 1, size: D, weight: "bold" }, c) : null) : null;
                         }),
                         (this._getTeamScoreSize = (e) => {
                             const {
@@ -641,7 +639,7 @@
             y.defaultProps = { isCompact: !1 };
         },
         854582: (e, a, l) => {
-            l.d(a, { Z: () => w });
+            l.d(a, { Z: () => D });
             var r = l(202784),
                 n = l(111677),
                 t = l.n(n),
@@ -658,8 +656,8 @@
                 g = t().a7391708,
                 f = t().d2dbfa92,
                 y = t().cd734f66,
-                D = t().c8891d06;
-            class w extends r.Component {
+                w = t().c8891d06;
+            class D extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderCategory = () => {
@@ -681,7 +679,7 @@
                         }),
                         (this._renderTodayTomorrow = (e, a) => {
                             const l = u(a);
-                            return r.createElement(i.Z, null, r.createElement(o.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, 0 === e ? y : D), r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, l));
+                            return r.createElement(i.Z, null, r.createElement(o.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, 0 === e ? y : w), r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, l));
                         }),
                         (this._renderDateTime = (e) => {
                             const a = u(e),
@@ -739,12 +737,25 @@
                     );
                 }
             }
-            w.defaultProps = { withCategory: !0 };
+            D.defaultProps = { withCategory: !0 };
         },
         615084: (e, a, l) => {
             l.d(a, { D: () => r });
             const r = Object.freeze({ Scheduled: "Scheduled", InProgress: "InProgress", Completed: "Completed", Postponed: "Postponed", Cancelled: "Cancelled", Unused6: "_Unused6", Unused7: "_Unused7" });
         },
+        784732: (e, a, l) => {
+            l.r(a), l.d(a, { default: () => d });
+            var r = l(202784),
+                n = l(890601),
+                t = l(783427),
+                o = l(347101);
+            const i = (e = {}) => {
+                const { direction: a } = (0, t.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: a });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const d = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~loader.ListHandler.b6243afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~loader.ListHandler.8f91053a.js.map

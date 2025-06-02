@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Ocf-9f4db315"],
+    ["bundle.Ocf-9f4db315", "loader.MediaPickerWithPreview"],
     {
         990350: (e, t, i) => {
             i.d(t, { Z: () => a });
@@ -61,12 +61,30 @@
                         },
                         { backgroundcolor: v, buttonSize: w, cardWidth: C, marginbottom: E, textcolor: P } = p ?? {},
                         Z = v ? s.default.theme.colors[v] : s.default.theme.colors.gray0,
-                        I = P ? s.default.theme.colors[P] : s.default.theme.colors.gray900,
-                        M = E ? s.default.theme.spaces[E] : s.default.theme.spaces.space16,
+                        M = P ? s.default.theme.colors[P] : s.default.theme.colors.gray900,
+                        I = E ? s.default.theme.spaces[E] : s.default.theme.spaces.space16,
                         S = { [g.MarchMadness]: { header: f.header, description: f.description, legalDisclaimer: f.legalDisclaimer, buttonText: f.buttonText, image: f.image } }[i];
-                    return u ? a.createElement(o.Z, { interactiveStyles: null, link: t, onPress: y, style: _.bannerContainer }, a.createElement(r.Z, { resizeMode: "contain", source: { uri: "light" === s.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : a.createElement(n.Z, { style: [_.card, { backgroundColor: Z }, { maxWidth: C }, { marginBottom: M }], testID: "popupCard" }, a.createElement(n.Z, { style: e ? _.horizontalContent : _.verticalContent }, a.createElement(n.Z, { style: e ? _.textContainer : null }, a.createElement(l.ZP, { size: "headline2", style: [_.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), a.createElement(l.ZP, { size: "subtext1", style: [_.popupDescription, { color: I }] }, S.description, " ", e ? null : S.legalDisclaimer)), a.createElement(n.Z, { style: _.buttonContainer }, a.createElement(d.ZP, { backgroundColor: "light" === s.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: y, size: "medium", style: [_.popupButton, { width: w }] }, S.buttonText), e && a.createElement(l.ZP, { size: "subtext3", style: [_.legalDisclaimer, { color: I }] }, S.legalDisclaimer))));
+                    return u ? a.createElement(o.Z, { interactiveStyles: null, link: t, onPress: y, style: _.bannerContainer }, a.createElement(r.Z, { resizeMode: "contain", source: { uri: "light" === s.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : a.createElement(n.Z, { style: [_.card, { backgroundColor: Z }, { maxWidth: C }, { marginBottom: I }], testID: "popupCard" }, a.createElement(n.Z, { style: e ? _.horizontalContent : _.verticalContent }, a.createElement(n.Z, { style: e ? _.textContainer : null }, a.createElement(l.ZP, { size: "headline2", style: [_.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), a.createElement(l.ZP, { size: "subtext1", style: [_.popupDescription, { color: M }] }, S.description, " ", e ? null : S.legalDisclaimer)), a.createElement(n.Z, { style: _.buttonContainer }, a.createElement(d.ZP, { backgroundColor: "light" === s.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: y, size: "medium", style: [_.popupButton, { width: w }] }, S.buttonText), e && a.createElement(l.ZP, { size: "subtext3", style: [_.legalDisclaimer, { color: M }] }, S.legalDisclaimer))));
                 },
                 _ = s.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
+        },
+        290402: (e, t, i) => {
+            i.d(t, { Z: () => m });
+            var a = i(807896),
+                n = i(202784),
+                s = i(182056),
+                o = i(879113),
+                r = i(392237),
+                l = i(111677),
+                d = i.n(l),
+                c = i(968478);
+            const p = d().aa6e3300,
+                u = ({ retryMessage: e, ...t }, i) => {
+                    const r = s.Z.isOnline();
+                    return n.createElement(o.Z, (0, a.Z)({}, t, { icon: r ? void 0 : n.createElement(c.default, { style: h.icon }), retryMessage: r ? e : p }));
+                },
+                h = r.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                m = n.forwardRef(u);
         },
         850496: (e, t, i) => {
             i.d(t, { Z: () => w });
@@ -290,7 +308,7 @@
                 E = i(950822),
                 P = i(303186),
                 Z = i(954300);
-            class I extends a.Component {
+            class M extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -304,14 +322,14 @@
                     return (0, E.Z)("video", { ...o, children: [r.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: n });
                 }
             }
-            I.defaultProps = { dataSaverMode: !1, variants: [] };
-            var M = i(959587),
+            M.defaultProps = { dataSaverMode: !1, variants: [] };
+            var I = i(959587),
                 S = i(751170),
                 R = i(523561),
                 k = i(195560);
             const D = (0, R.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.21"), i.e("icons.16"), i.e("icons.10"), i.e("icons.4"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.28"), i.e("icons.24"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.5"), i.e("icons.28"), i.e("icons.17"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.25"), i.e("icons.13"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.4"), i.e("icons.1"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-85aa903d"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-c8e3a520"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-658f42e4"), i.e("shared~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.LiveEvent~loader.M-1f16c288"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
                     renderPlaceholder: (e, t) => a.createElement(k.Z, { hasError: e, onRetry: t }),
@@ -370,13 +388,13 @@
                 }
                 render() {
                     const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: _, withAltTextLabel: v, withCloseButton: w, withDragAndDropIndicator: C, withEditButton: E, withEditIcon: P, withEditSensitiveWarningButton: Z } = this.props,
-                        { mediaContainerSizeStyle: I, playGif: S } = this.state,
+                        { mediaContainerSizeStyle: M, playGif: S } = this.state,
                         R = i.externalMediaDetails && i.externalMediaDetails.mediaType === b.Re,
                         k = R || (t && i.mediaFile && i.mediaFile.isGif),
                         D = !!i.mediaFile?.isVideo;
                     return a.createElement(s.ZP, null, ({ windowWidth: t }) => {
                         const i = void 0 !== P ? P : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(n.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: u, style: [_, O.cursor, R && O.gifPlayButton, I] }, this._renderPreview(), R && !S && a.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), k ? a.createElement(M.ZP, { type: M.AM }) : null, v && !D ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(n.Z, { style: O.editMedia }, C ? a.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: a.createElement(h.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && Z ? a.createElement(l.ZP, { "aria-label": V, icon: a.createElement(m.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(l.ZP, { "aria-label": A, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : F) : null), w ? a.createElement(l.ZP, { "aria-label": T, hoverLabel: { label: B }, icon: a.createElement(g.default, null), onPress: p, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return a.createElement(n.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: u, style: [_, O.cursor, R && O.gifPlayButton, M] }, this._renderPreview(), R && !S && a.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), k ? a.createElement(I.ZP, { type: I.AM }) : null, v && !D ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(n.Z, { style: O.editMedia }, C ? a.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: a.createElement(h.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && Z ? a.createElement(l.ZP, { "aria-label": V, icon: a.createElement(m.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(l.ZP, { "aria-label": A, icon: i ? a.createElement(f.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : F) : null), w ? a.createElement(l.ZP, { "aria-label": T, hoverLabel: { label: B }, icon: a.createElement(g.default, null), onPress: p, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -409,7 +427,7 @@
                     }
                     {
                         const i = (0, v.TO)(n.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(I, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof C.ZP ? n.thumbnail : "", style: O.video, variants: i }, o?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        return a.createElement(M, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof C.ZP ? n.thumbnail : "", style: O.video, variants: i }, o?.upload?.mediaFile instanceof w.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
@@ -859,4 +877,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.d5e80f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-9f4db315.630c00ea.js.map

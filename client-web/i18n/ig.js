@@ -5505,13 +5505,35 @@
                 t("g22c8c30", "If these notes are rated Helpful by enough contributors, including those who typically disagree in their past ratings, they start showing publicly with the post as added context."),
                 t("jf04b084", "These notes are added by contributors who believe the post isn’t misleading and does not need additional context."),
                 t("g5a72e98", "These are only visible in Community Notes as additional information to raters, and are not shown as context with the post, even if they earn the status of Helpful."),
-                t("h53cb7de", "What do you think about this post?"),
-                t("dc3bfc82", "What, if anything, do you like about this post?"),
-                t("b4704bf4", "What, if anything, do you not like about this post?"),
+                t("b8719c22", "Help identify whether posts are liked by people from different perspectives."),
+                t("jcdf97d4", "What do you like about the post?"),
+                t("d4d7b67e", "What don’t you like about the post?"),
                 t("ed5156fa", "Enwere mperi ịchekwa ogo gị, biko nwaa ọzọ."),
-                t("d5f9fb42", "You rated this community boost"),
+                t("d0ed3636", "You rated this post"),
                 t("j6aa6172", "Hichapụ ọkwa?"),
                 t("i4112750", "Enweghị ike ịmegharị nke a."),
+                t("i6f6191a", "Daalụ!"),
+                t("h5575012", "Agree and submit"),
+                t("f9171e52", "This post got some likes from people who normally disagree, but input so far is limited."),
+                t("j0f9919a", "Your rating won’t negatively impact a post, but can help positively recognize posts that are widely liked."),
+                t("b3af830c", "Your input:"),
+                t("d0b29562", "Rate more posts now"),
+                t("i36ea87a", "I agree with it"),
+                t("d5befc34", "I learned something interesting"),
+                t("je26ecf2", "It makes a meaningful point"),
+                t("e4e331aa", "It’s unifying on a topic that’s often polarizing"),
+                t("ed61ff2a", "It’s heartwarming or endearing"),
+                t("gc3104d8", "It’s inspiring or exciting"),
+                t("j8c4400e", "It’s funny"),
+                t("j4738406", "N/A: There’s nothing I like about it"),
+                t("d93d1666", "I don’t agree with it"),
+                t("d6130466", "There is no meaningful substance to it"),
+                t("d96835b6", "It doesn’t interest me"),
+                t("b7ba4150", "N/A: There’s nothing I dislike about it"),
+                t("g0402b3b", "liked by people from different perspectives"),
+                t("ged62c2b", "spotlight"),
+                t("b5d5f7f1", "Shapes the direction"),
+                t("a42fef87", "Learn more"),
                 t("bd7eb888", "See all notes on this post"),
                 t("i97b83f6", "Enwere mperi ịtinye akwụkwọ mkpesa gị, biko nwaa ọzọ."),
                 t("a038ab9a", "Translate note"),
@@ -5862,8 +5884,8 @@
                 t("e41c9b4f", function (e) {
                     return "Echekwara na " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Hichapụ Foldà"),
-                t("f4ea967a", "Ehichapụla foldà"),
+                t("h18f86a4", "Hichapụ Foldà");
+            t("f4ea967a", "Ehichapụla foldà"),
                 t("b670aa62", "Aha Foldà"),
                 t("aece5462", "Emelitela aha foldà nke ọma"),
                 t("e3299b94", "Ọ nwere ihe na-agaghị nke ọma. Gbalịa imelite folda ahụ ọzọ n'otu nkeji."),
@@ -5894,8 +5916,8 @@
                     return "Ended " + e.timestamp;
                 }),
                 t("daca8a2c", "Open in Dock"),
-                t("e3aac82a", "Na-ebugo Mgbasa-ozi");
-            t("i0ed3f4e", "Onyonyo omume"),
+                t("e3aac82a", "Na-ebugo Mgbasa-ozi"),
+                t("i0ed3f4e", "Onyonyo omume"),
                 t("cbae35fa", "Nye Mkpesa Banyere Mgbasa-ozi"),
                 t("fd12ab58", "Collection posts"),
                 t("a226497c", "Mepụta Ọgbakọ ọhụrụ"),
@@ -6866,8 +6888,8 @@
                 t("b925c18c", "Salary Type"),
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
-                t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
+                t("b8cbb51a", "Job Summary");
+            t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Ihuọha Profaịlụ"),
                 t("j2dd3686", "Highlight featured jobs above my posts."),
@@ -6892,8 +6914,8 @@
                 t("c0195168", "Change your app icon and navigation options"),
                 t("b6b5dc94", "Become verified"),
                 t("b06db848", "Stand out from others on the platform"),
-                t("e3e3a97c", "Earn a share of revenue from your posts");
-            t("f15bc24e", "Increased Grok limits"),
+                t("e3e3a97c", "Earn a share of revenue from your posts"),
+                t("f15bc24e", "Increased Grok limits"),
                 t("c4666e1c", "More usage of Grok 3, our latest model"),
                 t("he74ae7a", "Highest Grok usage limits"),
                 t("f5732cd4", "Plus, expanded access to DeepSearch & Think"),
@@ -7844,35 +7866,7 @@
                 t("c29e3a88", "Select affiliates"),
                 t("j8318d57", function (e) {
                     return e.number + " affiliate" + i(e.number, "", "s");
-                }),
-                t("bf809ec0", "Select Affiliates"),
-                t("b719e224", "Enweghị nsonaazụ"),
-                t("c9938100", "Chọọ nsonaazụ"),
-                t("d1a35ec6", "Gbakwunye akaụntụ gasi"),
-                t("b437adda", "Upgrade to paid"),
-                t("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
-                t("b02156b8", "Invitations"),
-                t("gd67d29b", function (e) {
-                    return "Invitations (" + e.count + ")";
-                }),
-                t("daf646e6", "Please note: you must label accounts appropriately."),
-                t("i3895c32", "Your account is under review because you changed your X @handle"),
-                t("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
-                t("e9e663ac", "Your payment is past due."),
-                t("c3ddd22c", "terms"),
-                t("c9729d8a", "terms"),
-                t("cdcd1d2c", "Add affiliations to your organization"),
-                t("d30ea6f3", function (e) {
-                    return "Are you sure you want to remove @" + e.name + "?";
-                }),
-                t("c2dfbb86", "Yes, do it"),
-                t("ba047f76", "Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
-                t("j26dee0e", "Remove affiliate"),
-                t("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
-                t("j3115ce8", "Individual"),
-                t("d8bb1d84", "Organization");
+                });
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7911,9 +7905,37 @@
                     c(e, a)
                 );
             }
-            t("e970bdbd", function (e) {
-                return e.count + " invites remaining";
-            }),
+            t("bf809ec0", "Select Affiliates"),
+                t("b719e224", "Enweghị nsonaazụ"),
+                t("c9938100", "Chọọ nsonaazụ"),
+                t("d1a35ec6", "Gbakwunye akaụntụ gasi"),
+                t("b437adda", "Upgrade to paid"),
+                t("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                t("b02156b8", "Invitations"),
+                t("gd67d29b", function (e) {
+                    return "Invitations (" + e.count + ")";
+                }),
+                t("daf646e6", "Please note: you must label accounts appropriately."),
+                t("i3895c32", "Your account is under review because you changed your X @handle"),
+                t("i5f8b628", "You cannot modify your affiliates until your account is reviewed."),
+                t("e9e663ac", "Your payment is past due."),
+                t("c3ddd22c", "terms"),
+                t("c9729d8a", "terms"),
+                t("cdcd1d2c", "Add affiliations to your organization"),
+                t("d30ea6f3", function (e) {
+                    return "Are you sure you want to remove @" + e.name + "?";
+                }),
+                t("c2dfbb86", "Yes, do it"),
+                t("ba047f76", "Removing an affiliation immediately removes their checkmark and affiliation badge. You will continue to be billed until the end of the month."),
+                t("j26dee0e", "Remove affiliate"),
+                t("e30cbdf0", "This affiliate is a Verified Organizations subscriber and must remain an Organization. They cannot be changed to Individual."),
+                t("j3115ce8", "Individual"),
+                t("d8bb1d84", "Organization"),
+                t("e970bdbd", function (e) {
+                    return e.count + " invites remaining";
+                }),
                 t("id67d953", function (e) {
                     return "Something went wrong while retrieving your Stripe checkout details. Please contact " + e.supportEmail + " if this problem continues.";
                 }),
@@ -8886,8 +8908,8 @@
                 t("ha3efce4", "Auto"),
                 t("hd8d044d", function (e) {
                     return "Auto (" + e.quality + ")";
-                }),
-                t("a7bf9962", "Download video"),
+                });
+            t("a7bf9962", "Download video"),
                 t("ccc97152", "Playback speed"),
                 t("h531ade0", "Video quality"),
                 t("e8b5757c", "0.25x"),
@@ -8918,8 +8940,8 @@
                 t("c1658fc6", "The media could not be played."),
                 t("h519ae04", "Agbanyụrụ usoro mgbasa ozi n'ihi ikike nwebiisinka nke."),
                 t("ce871584", "This broadcast has ended."),
-                t("c101eb96", "This broadcast is not available.");
-            t("gb24a514", "This media has been disabled in response to a report by the copyright owner."),
+                t("c101eb96", "This broadcast is not available."),
+                t("gb24a514", "This media has been disabled in response to a report by the copyright owner."),
                 t("hcaf3e63", function (e) {
                     return "This media has been disabled due to a copyright claim by " + e.holder + ".";
                 }),
@@ -11494,6 +11516,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Helps find posts "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Won’t hurt posts but could help ", " widely liked ones"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " of this experimental feature"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["As the post author, you can "];
@@ -13310,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.6d93f3da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.6ae0d8fa.js.map

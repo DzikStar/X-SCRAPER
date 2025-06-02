@@ -1028,7 +1028,7 @@
             a.d(t, { C: () => c });
             var i = a(202784),
                 r = a(325686),
-                n = a(680714),
+                n = a(492470),
                 o = a(278065);
             const l = [
                     "accessibility_alt",
@@ -1831,4 +1831,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.LiveEvent~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders-2c7fc7-a1e43017.f9646dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.LiveEvent~loader.JetfuelFrame~loader.TimelineFrameHandler~loader.PremiumLoaders-2c7fc7-a1e43017.21dca53a.js.map

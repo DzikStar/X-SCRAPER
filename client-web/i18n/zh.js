@@ -5501,13 +5501,35 @@
                 f("g22c8c30", "如果这些附注被足够多的贡献者评为有帮助，包括那些在过去的评价中通常表示不同意的用户，它们就会开始作为额外的背景信息随帖子一起公开显示。"),
                 f("jf04b084", "这些附注是由那些认为帖子不具有误导性，不需要额外背景信息的贡献者所添加的。"),
                 f("g5a72e98", "要创建附注，请在任何帖子的菜单中选择社群附注图标。你创建的附注将显示在这里。"),
-                f("h53cb7de", "你对这个帖子有什么看法？"),
-                f("dc3bfc82", "如果有的话，你喜欢这个帖子的哪一点？"),
-                f("b4704bf4", "如果有的话，你不喜欢这个帖子的哪一点？"),
+                f("b8719c22", "帮助确定不同观点的人是否为帖子点赞。"),
+                f("jcdf97d4", "你喜欢这个帖子的哪一点？"),
+                f("d4d7b67e", "你不喜欢这个帖子的哪一点？"),
                 f("ed5156fa", "保存你的评分时出错，请重试。"),
-                f("d5f9fb42", "你对这个社群推广进行了评价"),
+                f("d0ed3636", "你评价了这个帖子"),
                 f("j6aa6172", "删除评论？"),
                 f("i4112750", "这是不能撤销的。"),
+                f("i6f6191a", "谢谢！"),
+                f("h5575012", "Agree and submit"),
+                f("f9171e52", "这个帖子得到了一些通常持不同意见的用户的点赞，但目前的意见数量还很有限。"),
+                f("j0f9919a", "您的评价不会对帖子产生负面影响，反而有助于主动确定广受欢迎的帖子。"),
+                f("b3af830c", "你的意见："),
+                f("d0b29562", "立即评价更多帖子"),
+                f("i36ea87a", "我同意"),
+                f("d5befc34", "我学到了一些有趣的东西"),
+                f("je26ecf2", "它提出了一个有意义的观点"),
+                f("e4e331aa", "它在一个常引发观点两极分化的话题上达成了共识"),
+                f("ed61ff2a", "温暖人心或令人喜爱"),
+                f("gc3104d8", "鼓舞人心或令人振奋"),
+                f("j8c4400e", "有趣"),
+                f("j4738406", "不适用：没什么是我喜欢的"),
+                f("d93d1666", "我不同意"),
+                f("d6130466", "它没有任何有意义的实质内容"),
+                f("d96835b6", "我对它不感兴趣"),
+                f("b7ba4150", "不适用：没什么是我不喜欢的"),
+                f("g0402b3b", "被不同观点的人点赞的"),
+                f("ged62c2b", "聚焦"),
+                f("b5d5f7f1", "确定此实验性功能的方向"),
+                f("a42fef87", "Learn more"),
                 f("bd7eb888", "查看此帖子上所有附注"),
                 f("i97b83f6", "提交申述时遇到错误，请重试。"),
                 f("a038ab9a", "翻译笔记"),
@@ -5858,8 +5880,8 @@
                 f("e41c9b4f", function (e) {
                     return "已保存至 " + e.bookmarkFolderName;
                 }),
-                f("h18f86a4", "删除文件夹"),
-                f("f4ea967a", "文件夹已被删除"),
+                f("h18f86a4", "删除文件夹");
+            f("f4ea967a", "文件夹已被删除"),
                 f("b670aa62", "文件夹名称"),
                 f("aece5462", "文件夹名称已成功更新"),
                 f("e3299b94", "出错了！请稍后再尝试更新该文件夹。"),
@@ -5890,8 +5912,8 @@
                     return e.timestamp + "已结束";
                 }),
                 f("daca8a2c", "在悬浮窗中打开"),
-                f("e3aac82a", "正在加载播客");
-            f("i0ed3f4e", "事件图片"),
+                f("e3aac82a", "正在加载播客"),
+                f("i0ed3f4e", "事件图片"),
                 f("cbae35fa", "举报播客"),
                 f("fd12ab58", "贴文集"),
                 f("a226497c", "创建新社群"),
@@ -6862,8 +6884,8 @@
                 f("b925c18c", "薪资类型"),
                 f("j3d242ce", "无效范围"),
                 f("f4d07bd2", "包含可让候选人更容易通过搜索发现相关职位的可选详细信息。"),
-                f("b8cbb51a", "工作摘要"),
-                f("bda6881e", "这个工作机会已从你的申请人跟踪系统 (ATS) 导入。请注意，只有特定字段可修改。"),
+                f("b8cbb51a", "工作摘要");
+            f("bda6881e", "这个工作机会已从你的申请人跟踪系统 (ATS) 导入。请注意，只有特定字段可修改。"),
                 f("b075c68a", "编辑工作机会"),
                 f("d4b6a6e0", "个人资料聚焦"),
                 f("j2dd3686", "在我的帖子上方突出显示精选工作机会。"),
@@ -6888,8 +6910,8 @@
                 f("c0195168", "更改你的应用图标和导航选项"),
                 f("b6b5dc94", "通过认证"),
                 f("b06db848", "在平台上脱颖而出"),
-                f("e3e3a97c", "通过你的帖子赚取收入分成");
-            f("f15bc24e", "提高 Grok 限额"),
+                f("e3e3a97c", "通过你的帖子赚取收入分成"),
+                f("f15bc24e", "提高 Grok 限额"),
                 f("c4666e1c", "更多使用我们的最新模型 Grok 3。"),
                 f("he74ae7a", "最高的 Grok 使用限额"),
                 f("f5732cd4", "此外，已扩大 DeepSearch 和思考功能的使用范围"),
@@ -7206,16 +7228,16 @@
                 f("hd80bd3e", "推广帖子"),
                 f("fe2b0008", "了解如何使用 X"),
                 f("h257d4aa", "选择要推广的帖子"),
-                f("fe946974", "Your trial of X without ads"),
-                f("f6c50ec0", "Your ad-free trial has ended"),
-                f("b1319404", "Ads avoided"),
-                f("baa4acae", "You’re seeing more personalized content."),
-                f("c00e8600", "Estimated time saved"),
-                f("ic073e4e", "Your time is valuable."),
-                f("eb866e88", "Estimated 1-year time savings"),
-                f("aa77b70c", "Based on your usage."),
-                f("c534c6b4", "We’re crunching the numbers..."),
-                f("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                f("fe946974", "你的免广告 X 试用"),
+                f("f6c50ec0", "你的免广告试用已结束"),
+                f("b1319404", "广告已屏蔽"),
+                f("baa4acae", "你将看到更多个性化内容。"),
+                f("c00e8600", "预计节省时间"),
+                f("ic073e4e", "你的时间很宝贵。"),
+                f("eb866e88", "预计 1 年可节省的时间"),
+                f("aa77b70c", "根据你的使用情况。"),
+                f("c534c6b4", "我们正在计算数字..."),
+                f("i57332f0", "继续浏览，稍后再查看你屏蔽了多少广告，以及节省了多少时间"),
                 f("cc10f019", function (e) {
                     return e.minutes + " 分钟";
                 }),
@@ -7231,11 +7253,11 @@
                 f("be88be23", function (e) {
                     return "你的 " + e.durationInDays + " 天免广告试用已激活";
                 }),
-                f("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                f("ae3f3b0e", "Enjoy!"),
-                f("cdac8dc4", "See your new feed"),
-                f("dec99336", "无广告"),
-                f("i95803fa", "Unfortunately, you are not eligible at this time."),
+                f("a4413462", "在整个试用过程中，你可以查看统计信息，了解为你屏蔽了多少广告，以及帮你节省了多少时间。"),
+                f("ae3f3b0e", "尽情使用！"),
+                f("cdac8dc4", "查看你的新推送"),
+                f("dec99336", "免广告"),
+                f("i95803fa", "很遗憾，你目前不符合条件。"),
                 f("d28a1d72", '通过 Radar 抢先发现趋势"'),
                 f("fb70427a", "推出 X 上功能最强大的搜索工具。"),
                 f("i54bf620", "监控关键词"),
@@ -7840,35 +7862,7 @@
                 f("c29e3a88", "选择附属账号"),
                 f("j8318d57", function (e) {
                     return e.number + " 附属账号";
-                }),
-                f("bf809ec0", "选择附属账号"),
-                f("b719e224", "未找到结果"),
-                f("c9938100", "搜索结果"),
-                f("d1a35ec6", "添加账号"),
-                f("b437adda", "升级为付费"),
-                f("f1f6c88b", function (e) {
-                    return "账号 (" + e.count + ")";
-                }),
-                f("b02156b8", "邀请"),
-                f("gd67d29b", function (e) {
-                    return "邀请 (" + e.count + ")";
-                }),
-                f("daf646e6", "请注意：你必须对账号进行相应的标记。"),
-                f("i3895c32", "你的账号正在接受审查，因为你更改了自己的 X @用户名"),
-                f("i5f8b628", "你无法在账号被审查之前修改自己的附属账号。"),
-                f("e9e663ac", "你的付款已过期。"),
-                f("c3ddd22c", "条款"),
-                f("c9729d8a", "条款"),
-                f("cdcd1d2c", "为你的组织添加附属关系"),
-                f("d30ea6f3", function (e) {
-                    return "你确定要删除 @" + e.name + " 吗？";
-                }),
-                f("c2dfbb86", "是，删除"),
-                f("ba047f76", "删除附属关系后会立即删除他们的对号标记和附属关系徽章。在月末之前，你将继续收到帐单。"),
-                f("j26dee0e", "删除附属账号"),
-                f("e30cbdf0", "这个附属账号是一个认证组织订阅者并且必须保持组织身份。不能将它们更改为个人。"),
-                f("j3115ce8", "个人"),
-                f("d8bb1d84", "组织");
+                });
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7907,9 +7901,37 @@
                     r(e, c)
                 );
             }
-            f("e970bdbd", function (e) {
-                return "剩余 " + e.count + " 次邀请";
-            }),
+            f("bf809ec0", "选择附属账号"),
+                f("b719e224", "未找到结果"),
+                f("c9938100", "搜索结果"),
+                f("d1a35ec6", "添加账号"),
+                f("b437adda", "升级为付费"),
+                f("f1f6c88b", function (e) {
+                    return "账号 (" + e.count + ")";
+                }),
+                f("b02156b8", "邀请"),
+                f("gd67d29b", function (e) {
+                    return "邀请 (" + e.count + ")";
+                }),
+                f("daf646e6", "请注意：你必须对账号进行相应的标记。"),
+                f("i3895c32", "你的账号正在接受审查，因为你更改了自己的 X @用户名"),
+                f("i5f8b628", "你无法在账号被审查之前修改自己的附属账号。"),
+                f("e9e663ac", "你的付款已过期。"),
+                f("c3ddd22c", "条款"),
+                f("c9729d8a", "条款"),
+                f("cdcd1d2c", "为你的组织添加附属关系"),
+                f("d30ea6f3", function (e) {
+                    return "你确定要删除 @" + e.name + " 吗？";
+                }),
+                f("c2dfbb86", "是，删除"),
+                f("ba047f76", "删除附属关系后会立即删除他们的对号标记和附属关系徽章。在月末之前，你将继续收到帐单。"),
+                f("j26dee0e", "删除附属账号"),
+                f("e30cbdf0", "这个附属账号是一个认证组织订阅者并且必须保持组织身份。不能将它们更改为个人。"),
+                f("j3115ce8", "个人"),
+                f("d8bb1d84", "组织"),
+                f("e970bdbd", function (e) {
+                    return "剩余 " + e.count + " 次邀请";
+                }),
                 f("id67d953", function (e) {
                     return "在检索你的 Stripe 结账详细信息时遇到问题。如果该问题始终存在，请联系 " + e.supportEmail + "。";
                 }),
@@ -8882,8 +8904,8 @@
                 f("ha3efce4", "自动"),
                 f("hd8d044d", function (e) {
                     return "自动 (" + e.quality + ")";
-                }),
-                f("a7bf9962", "下载视频"),
+                });
+            f("a7bf9962", "下载视频"),
                 f("ccc97152", "播放速度"),
                 f("h531ade0", "视频质量"),
                 f("e8b5757c", "0.25x"),
@@ -8914,8 +8936,8 @@
                 f("c1658fc6", "无法播放该媒体。"),
                 f("h519ae04", "由于版权声明，此媒体已被禁用。"),
                 f("ce871584", "此播客已结束。"),
-                f("c101eb96", "此播客不可用。");
-            f("gb24a514", "该媒体已因版权所有方的举报而被禁用。"),
+                f("c101eb96", "此播客不可用。"),
+                f("gb24a514", "该媒体已因版权所有方的举报而被禁用。"),
                 f("hcaf3e63", function (e) {
                     return "由于 " + e.holder + " 声称拥有版权，此媒体已被禁用。";
                 }),
@@ -11493,6 +11515,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["帮助找出", "帖子"];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["不会损害帖子，反而有助于", "广受欢迎的帖子"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return [""];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["作为帖子作者，你可以"];
@@ -12083,7 +12129,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% 费用，最低 "];
                             },
                         },
                         {
@@ -13309,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.6d6ec21a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.3963437a.js.map

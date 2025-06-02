@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Live", "bundle.AudioSpaceDetail", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["bundle.Live", "bundle.AudioSpaceDetail"],
     {
         651930: (e, t, a) => {
             a.d(t, { Z: () => d });
@@ -38,11 +38,11 @@
                 h = a(257166),
                 p = a(919022);
             const b = (e, t) => !(!t.allowPromptForPush || !h.selectShouldPromptBrowserPush(e)),
-                g = (0, u.Z)()
+                f = (0, u.Z)()
                     .propsFromState(() => ({ shouldPromptPush: b }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                f = l().bdba3e1a,
+                g = l().bdba3e1a,
                 D = l().c4da7d28,
                 w = l().j87c21f4,
                 y = l().iebc30ca,
@@ -52,7 +52,7 @@
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(n.ZP, { "aria-label": D, hoverLabel: { label: y }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": f, hoverLabel: { label: w }, icon: r.createElement(d.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(n.ZP, { "aria-label": D, hoverLabel: { label: y }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": g, hoverLabel: { label: w }, icon: r.createElement(d.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -81,7 +81,7 @@
                     t.scribeAction(e);
                 }
             }
-            const v = g(E);
+            const v = f(E);
         },
         652904: (e, t, a) => {
             a.d(t, { Z: () => c });
@@ -138,8 +138,8 @@
                 h = a(376180),
                 p = a(502940),
                 b = a(70962),
-                g = a(933340),
-                f = a(321264),
+                f = a(933340),
+                g = a(321264),
                 D = a(208340),
                 w = a(707305),
                 y = a(748138),
@@ -153,7 +153,7 @@
                 C = { label: T },
                 I = m().a8ab3d08,
                 x = m().d740d2d9,
-                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(g.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(f.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(D.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(w.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
+                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(D.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(w.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
             function A({ style: e, userId: t }) {
                 const a = (0, E.I0)(),
                     [s, c] = r.useState(!1),
@@ -304,7 +304,7 @@
                 s = (e) => r.createElement(n.ql, null, ...((e) => i(e).map(d))(e));
         },
         679180: (e, t, a) => {
-            a.d(t, { H: () => g });
+            a.d(t, { H: () => f });
             var r = a(202784),
                 n = a(325686),
                 o = a(154003),
@@ -318,10 +318,10 @@
                 h = a(741810),
                 p = a(782642);
             const b = { cancel: c().cfd2f35e, defaultTitle: c().jceadc3e, edit: c().abd845fe, save: c().i2209530, toastSuccessMessage: c().d39d46c4, toastErrorMessage: c().ef4602ec };
-            function g(e) {
+            function f(e) {
                 const { broadcastId: t, canEdit: a, remoteTitle: d } = e,
                     [s, c] = r.useState({ currentTitle: d, draftTitle: d, isEditing: !1 }),
-                    g = (0, p.p)();
+                    f = (0, p.p)();
                 r.useEffect(() => {
                     c((e) => ({ ...e, currentTitle: d, draftTitle: d }));
                 }, [d]);
@@ -334,25 +334,25 @@
                     E = r.useCallback(() => {
                         Promise.resolve(h.E.replayBroadcastEdit(t, { replay_edited_title: s.draftTitle }))
                             .then(() => {
-                                c((e) => ({ ...e, currentTitle: s.draftTitle, isEditing: !1 })), g({ text: b.toastSuccessMessage });
+                                c((e) => ({ ...e, currentTitle: s.draftTitle, isEditing: !1 })), f({ text: b.toastSuccessMessage });
                             })
                             .catch(() => {
-                                c((e) => ({ ...e, draftTitle: e.currentTitle })), g({ text: b.toastErrorMessage });
+                                c((e) => ({ ...e, draftTitle: e.currentTitle })), f({ text: b.toastErrorMessage });
                             });
-                    }, [t, s.draftTitle, g]),
+                    }, [t, s.draftTitle, f]),
                     v = r.useCallback(() => {
                         c((e) => ({ ...e, draftTitle: e.currentTitle, isEditing: !1 }));
                     }, []),
-                    M = () => r.createElement(n.Z, { style: f.buttonContainer }, r.createElement(o.ZP, { onPress: v, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: y, onPress: E, size: "small", type: "primaryFilled" }, b.save));
+                    M = () => r.createElement(n.Z, { style: g.buttonContainer }, r.createElement(o.ZP, { onPress: v, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: y, onPress: E, size: "small", type: "primaryFilled" }, b.save));
                 return r.createElement(
                     n.Z,
-                    { style: f.broadcastTitleRow },
+                    { style: g.broadcastTitleRow },
                     s.isEditing
-                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: f.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: _, onSubmitEditing: y ? void 0 : E, placeholder: b.defaultTitle, rightContent: r.createElement(M, null), styleType: "selection", value: s.draftTitle })
+                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: g.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: _, onSubmitEditing: y ? void 0 : E, placeholder: b.defaultTitle, rightContent: r.createElement(M, null), styleType: "selection", value: s.draftTitle })
                         : r.createElement(
                               n.Z,
-                              { style: f.broadcastTitleRow },
-                              r.createElement(i.Z, { displayTextRange: w, entities: D, linkify: !0, size: "headline1", style: f.broadcastTitleText, text: s.currentTitle, weight: "bold" }),
+                              { style: g.broadcastTitleRow },
+                              r.createElement(i.Z, { displayTextRange: w, entities: D, linkify: !0, size: "headline1", style: g.broadcastTitleText, text: s.currentTitle, weight: "bold" }),
                               a &&
                                   r.createElement(o.ZP, {
                                       "aria-label": b.edit,
@@ -367,7 +367,7 @@
                           ),
                 );
             }
-            const f = d.default.create((e) => ({ buttonContainer: { flexDirection: "row", gap: e.spaces.space8 }, titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, broadcastTitleRow: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%" }, broadcastTitleText: { flex: 1 } }));
+            const g = d.default.create((e) => ({ buttonContainer: { flexDirection: "row", gap: e.spaces.space8 }, titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, broadcastTitleRow: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%" }, broadcastTitleText: { flex: 1 } }));
         },
         386592: (e, t, a) => {
             a.d(t, { N8: () => r, rZ: () => n });
@@ -390,8 +390,8 @@
                 h = a(879113),
                 p = a(111677),
                 b = a.n(p),
-                g = a(123751),
-                f = a(615656),
+                f = a(123751),
+                g = a(615656),
                 D = a(545457),
                 w = a(651930),
                 y = a(572067),
@@ -409,8 +409,8 @@
                 A = a(679180),
                 S = a(386592),
                 N = a(807896),
-                L = a(666305);
-            const F = r.memo(({ ...e }) => {
+                F = a(666305);
+            const L = r.memo(({ ...e }) => {
                     const { ref: t, style: a } = z(),
                         n = r.useMemo(() => [a, e.style], [a, e.style]);
                     return r.createElement(o.Z, (0, N.Z)({ ref: t }, e, { style: n }));
@@ -432,10 +432,10 @@
                             a = t?.parentElement;
                         if (t && a)
                             return (
-                                L.Z.observe(t, n),
-                                L.Z.observe(a, n),
+                                F.Z.observe(t, n),
+                                F.Z.observe(a, n),
                                 () => {
-                                    L.Z.unobserve(t, n), L.Z.unobserve(a, n);
+                                    F.Z.unobserve(t, n), F.Z.unobserve(a, n);
                                 }
                             );
                     }, [n]);
@@ -451,9 +451,9 @@
                     return { widthConstrained: { ...t, width: "100%", height: "auto" }, heightConstrained: { ...t, height: "100%", width: "auto" } };
                 });
             var O = a(400752),
-                W = a(107267),
-                j = a(154003),
-                H = a(978053),
+                H = a(107267),
+                W = a(154003),
+                j = a(978053),
                 V = a(673510),
                 $ = a(366635),
                 q = a(360816),
@@ -472,27 +472,27 @@
                 le = b().daca8a2c,
                 ie = r.memo(({ broadcast: e, broadcastId: t, broadcaster: a, isLive: n }) => {
                     const { featureSwitches: i, viewerUserId: d } = (0, _.QZ)(),
-                        s = (0, W.useHistory)(),
+                        s = (0, H.useHistory)(),
                         c = (0, Q.I0)(),
                         m = (0, O.b9)(te.Tc),
                         h = r.useCallback(() => {
                             t && (m(t), c(X.bi(ee.N.EXPANDED)), s.goBack());
                         }, [t, c, s, m]),
-                        p = r.useCallback(() => r.createElement(j.ZP, { "aria-label": le, hoverLabel: { label: le }, icon: r.createElement(q.default, null), onPress: h, type: "primaryOutlined" }), [h]),
+                        p = r.useCallback(() => r.createElement(W.ZP, { "aria-label": le, hoverLabel: { label: le }, icon: r.createElement(q.default, null), onPress: h, type: "primaryOutlined" }), [h]),
                         b = r.useCallback((e) => {
                             const t = new Date(),
                                 a = new Date(e);
-                            return t.getTime() - a.getTime() > 2592e6 ? ae(a) : H.default.formatTimeSinceDate(a);
+                            return t.getTime() - a.getTime() > 2592e6 ? ae(a) : j.default.formatTimeSinceDate(a);
                         }, []),
-                        g = r.useMemo(() => {
+                        f = r.useMemo(() => {
                             const t = e?.end_time ?? e?.timedout_time ?? e?.start_time;
                             if (!t) return null;
                             const a = b(t);
                             return r.createElement(u.ZP, { color: "gray700", size: "subtext1" }, n ? re({ timestamp: a }) : ne({ timestamp: a }));
                         }, [e, b, n]),
-                        f = r.useCallback(() => (!a || d === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: de.userActionsWrapper }, r.createElement(p, null), i.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(J.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: i.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, i, d]),
-                        D = r.useMemo(() => (a ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement(V.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: f(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: de.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement($.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [f, a]);
-                    return r.createElement(o.Z, { style: de.header }, D, r.createElement(o.Z, { style: de.timeAndShareWrapper }, g, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
+                        g = r.useCallback(() => (!a || d === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: de.userActionsWrapper }, r.createElement(p, null), i.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(J.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: i.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, i, d]),
+                        D = r.useMemo(() => (a ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement(V.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: g(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: de.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement($.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [g, a]);
+                    return r.createElement(o.Z, { style: de.header }, D, r.createElement(o.Z, { style: de.timeAndShareWrapper }, f, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
                 }),
                 de = m.default.create((e) => ({ header: { flexDirection: "column", gap: e.spaces.space12, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, marginBottom: e.spaces.space48 }, userCell: { paddingHorizontal: 0, paddingVertical: 0, width: "100%" }, userActionsWrapper: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space8 }, userNameWrapper: { alignItems: "flex-start", flex: 1, justifyContent: "center" }, timeAndShareWrapper: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } }));
             var se = a(71620),
@@ -502,41 +502,41 @@
                 he = a(919022),
                 pe = a(312771);
             const be = (0, ce.cI)("t"),
-                ge = (e, t) => {
+                fe = (e, t) => {
                     const a = t.match.params.screenName;
                     if (a) return a;
                     const r = we(e, t);
                     return r?.user_results?.result?.core?.screen_name || "";
                 },
-                fe = (e, t) => {
+                ge = (e, t) => {
                     const a = t.match.params.broadcastId;
                     if (a) return a;
                     const r = De(e, t);
                     return r?.latest_broadcast?.broadcast_id;
                 },
                 De = (e, t) => {
-                    const a = ge(e, t);
+                    const a = fe(e, t);
                     if (a) return he.ZP.selectByScreenName(e, a);
                     const r = we(e, t);
                     return r?.user ? he.ZP.select(e, r.user) : void 0;
                 },
                 we = (e, t) => {
-                    const a = fe(e, t);
+                    const a = ge(e, t);
                     return a ? ue.Z.select(e, a) : void 0;
                 },
                 ye = (e, t) => he.ZP.selectViewerUser(e),
                 _e = (e, t) => {
-                    const a = ge(e, t);
+                    const a = fe(e, t);
                     return ue.Z.selectLatestBroadcastFetched(e, a);
                 },
                 Ee = (e, t) => {
                     const a = we(e, t),
                         r = _e(e, t),
-                        n = fe(e, t);
+                        n = ge(e, t);
                     return a || (!n && r) ? pe.ZP.LOADED : pe.ZP.LOADING;
                 },
                 ve = (0, me.Z)()
-                    .propsFromState(() => ({ broadcast: we, broadcastId: fe, broadcaster: De, fetchStatus: Ee, latestBroadcastFetched: _e, screenName: ge, timecode: be, viewerUser: ye }))
+                    .propsFromState(() => ({ broadcast: we, broadcastId: ge, broadcaster: De, fetchStatus: Ee, latestBroadcastFetched: _e, screenName: fe, timecode: be, viewerUser: ye }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, se.zr)("LIVE_SCREEN"), fetchBroadcast: ue.Z.fetchOneIfNeeded, fetchLatestBroadcast: ue.Z.fetchLatestBroadcast })),
                 Me = 16 / 9,
                 Ze = { objectFitVideo: "contain" },
@@ -549,22 +549,22 @@
                 Ae = b().ac4c73d8,
                 Se = b().i9028824,
                 Ne = { page: "broadcast" },
-                Le = { url: "https://pbs.twimg.com/lex/placeholder_live_nomargin.png", width: 1920, height: 1080 },
-                Fe = (e, t) => (0, l.ju)(`https://x.com/i/broadcasts/${e}${t ? `?t=${t}` : ""}`);
+                Fe = { url: "https://pbs.twimg.com/lex/placeholder_live_nomargin.png", width: 1920, height: 1080 },
+                Le = (e, t) => (0, l.ju)(`https://x.com/i/broadcasts/${e}${t ? `?t=${t}` : ""}`);
             function Be(e) {
-                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: x, fetchLatestBroadcast: N, fetchStatus: L, latestBroadcastFetched: B, screenName: z, timecode: U } = e,
+                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: x, fetchLatestBroadcast: N, fetchStatus: F, latestBroadcastFetched: B, screenName: z, timecode: U } = e,
                     R = r.useContext(_.rC),
                     { viewerUserId: O } = R,
-                    W = l?.id_str === O,
-                    j = (0, i.Zx)(Pe),
-                    H = (0, C.ZP)();
+                    H = l?.id_str === O,
+                    W = (0, i.Zx)(Pe),
+                    j = (0, C.ZP)();
                 (0, D.ph)(),
                     (0, D.hB)(),
                     r.useEffect(() => {
                         z && N(z);
                     }, [N, z]);
                 const V = r.useCallback(() => {
-                    a && x(a).catch(p({ [f.ZP.GenericNotFound]: { customAction: T.vv } }));
+                    a && x(a).catch(p({ [g.ZP.GenericNotFound]: { customAction: T.vv } }));
                 }, [a, p, x]);
                 r.useEffect(() => {
                     V();
@@ -596,17 +596,17 @@
                         return a ? r.createElement(o.Z, { style: ze.labelOverlay }, r.createElement(d.ZP, null, a)) : null;
                     }, [t, Y, q]),
                     K = r.useCallback(() => {
-                        const e = t && t.pre_live_slate_url ? { url: t.pre_live_slate_url, width: 600, height: 337 } : Le;
+                        const e = t && t.pre_live_slate_url ? { url: t.pre_live_slate_url, width: 600, height: 337 } : Fe;
                         return r.createElement(o.Z, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: e.url, property: "og:image" }), r.createElement("meta", { content: e.width, property: "og:image:width" }), r.createElement("meta", { content: e.height, property: "og:image:height" })), r.createElement(s.Z, { "aria-label": Ae, aspectMode: c.Z.exact(m.default.theme.aspectRatios.landscape), image: e, previewMode: !1 }), G());
                     }, [t, G]),
                     J = r.useMemo(() => {
                         const e = t && t.media_key,
                             i = !a && l && B,
                             d = Te(t);
-                        return t && t.state === S.N8.NotStarted ? K() : i ? r.createElement(o.Z, { style: ze.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, ke({ screenName: z }))) : t && l && a && d && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: d.url, property: "og:image" }), r.createElement("meta", { content: d.width, property: "og:image:width" }), r.createElement("meta", { content: d.height, property: "og:image:height" })), r.createElement(P.Z, { "aria-label": Ae, aspectRatio: Me, displayOptions: Ze, poster: d, source: { variants: [], videoId: g.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
+                        return t && t.state === S.N8.NotStarted ? K() : i ? r.createElement(o.Z, { style: ze.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, ke({ screenName: z }))) : t && l && a && d && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: d.url, property: "og:image" }), r.createElement("meta", { content: d.width, property: "og:image:width" }), r.createElement("meta", { content: d.height, property: "og:image:height" })), r.createElement(P.Z, { "aria-label": Ae, aspectRatio: Me, displayOptions: Ze, poster: d, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
                     }, [t, a, l, B, K, z]),
                     Q = r.useMemo(() => r.createElement(o.Z, { style: ze.chat }, r.createElement(M.Z, { broadcastId: a ?? "", defaultChatNotice: ke({ screenName: z }) })), [a, z]),
-                    X = r.useCallback(() => r.createElement(Z.aM, null, r.createElement(o.Z, { style: [ze.container, H ? ze.navBorder : void 0] }, r.createElement(o.Z, { style: ze.videoContainer }, r.createElement(F, null, J), a && r.createElement(o.Z, { style: ze.title }, r.createElement(A.H, { broadcastId: a, canEdit: W, remoteTitle: $ })), r.createElement(ie, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), j && Q)), [Q, J, t, a, l, W, j, H, $]);
+                    X = r.useCallback(() => r.createElement(Z.aM, null, r.createElement(o.Z, { style: [ze.container, j ? ze.navBorder : void 0] }, r.createElement(o.Z, { style: ze.videoContainer }, r.createElement(L, null, J), a && r.createElement(o.Z, { style: ze.title }, r.createElement(A.H, { broadcastId: a, canEdit: H, remoteTitle: $ })), r.createElement(ie, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), W && Q)), [Q, J, t, a, l, H, W, j, $]);
                 return r.createElement(
                     I.nO,
                     { namespace: Ne },
@@ -616,12 +616,12 @@
                         ((e) => {
                             const n = l?.name,
                                 o = `twitter://broadcasts/${a || ""}`,
-                                i = Fe(a || ""),
-                                d = Fe(a || "", U);
+                                i = Le(a || ""),
+                                d = Le(a || "", U);
                             return l ? r.createElement(r.Fragment, null, r.createElement(y.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(w.Z, { deepLink: o }), r.createElement(k.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: U, title: e, url: d })) : null;
                         })($),
                         r.createElement(E.Z, { title: $, withMeta: !1 }),
-                        r.createElement(h.Z, { "aria-label": Se, fetchStatus: L, onRequestRetry: V, render: X }),
+                        r.createElement(h.Z, { "aria-label": Se, fetchStatus: F, onRequestRetry: V, render: X }),
                     ),
                 );
             }
@@ -705,10 +705,10 @@
                     return !(!t && !a) || !o()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: a, fetchStatus: n, icon: o, loadingMessage: l, onRequestRetry: c, render: h, renderFailure: p, retryMessage: b, retryable: g } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: a, fetchStatus: n, icon: o, loadingMessage: l, onRequestRetry: c, render: h, renderFailure: p, retryMessage: b, retryable: f } = this.props;
                     switch (n) {
                         case s:
-                            return g ? r.createElement(i.Z, { icon: o, onRequestRetry: c, retryMessage: b }) : a ? r.createElement(d.m, { failureMessage: a }) : p();
+                            return f ? r.createElement(i.Z, { icon: o, onRequestRetry: c, retryMessage: b }) : a ? r.createElement(d.m, { failureMessage: a }) : p();
                         case m:
                             return r.createElement(d.J, { "aria-label": e, color: t, loadingMessage: l });
                         case u:
@@ -733,7 +733,7 @@
             i.metadata = { width: 24, height: 24 };
             const d = i;
         },
-        70962: (e, t, a) => {
+        748138: (e, t, a) => {
             a.r(t), a.d(t, { default: () => d });
             var r = a(202784),
                 n = a(890601),
@@ -741,12 +741,12 @@
                 l = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M11.749 1.072c.072-.046.157-.07.243-.072.089-.001.176.022.251.068.076.045.136.11.175.189l6.494 10.018.014.021.002.004.003.004.022.038v.003h.002l.012.03.005.012.004.01.01.034v.001l.008.039v.005l.003.029.002.027v.045l-.005.035-.008.042-.001.003-.001.002-.01.031-.003.01-.004.01-.014.034-.022.036v.003h-.002c-.008.014-.016.026-.025.038l-.03.034c-.01.01-.019.02-.029.028l-.005.005-.002.002-.028.02-.007.005-.009.007-.03.018-.01.006-6.468 3.629c-.082.063-.184.097-.288.097-.105 0-.206-.036-.288-.099l-6.474-3.632-.008-.004v-.001c-.027-.015-.052-.034-.075-.054-.012-.01-.022-.021-.032-.033l-.017-.02-.014-.016-.025-.038-.022-.04-.017-.043-.004-.013c-.007-.022-.013-.044-.016-.067l-.002-.009L5 11.557c0-.03.001-.06.007-.09.005-.031.013-.06.024-.09l.018-.04.001-.001c.01-.017.019-.033.03-.049l6.5-10.027c.037-.077.096-.142.169-.188z" }), r.createElement("path", { d: "M18.301 13.435c.072-.04.153-.062.235-.061.086 0 .17.024.244.069.073.045.132.109.17.184.04.076.056.16.048.245-.007.084-.039.165-.09.233l-6.503 8.663c-.04.07-.1.13-.17.17-.072.04-.153.062-.236.062-.083 0-.164-.022-.235-.063-.071-.04-.13-.1-.17-.17L5.09 14.105c-.051-.07-.082-.15-.09-.236-.006-.085.011-.17.051-.247.04-.076.101-.14.176-.183.075-.044.16-.066.248-.064.078.001.155.022.222.06L12 16.97l6.301-3.535z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const d = i;
         },
-        246492: (e, t, a) => {
+        74514: (e, t, a) => {
             a.r(t), a.d(t, { default: () => d });
             var r = a(202784),
                 n = a(890601),
@@ -754,46 +754,7 @@
                 l = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const d = i;
-        },
-        264171: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => d });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const d = i;
-        },
-        98440: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => d });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const d = i;
-        },
-        262009: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => d });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const d = i;
@@ -811,6 +772,19 @@
             i.metadata = { width: 24, height: 24 };
             const d = i;
         },
+        707305: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => d });
+            var r = a(202784),
+                n = a(890601),
+                o = a(783427),
+                l = a(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.1 4c.62 1.02.9 2.072.9 3.4 0 4.235-3.629 9.737-6.574 13.6H6.698L4 4.927l5.89-.557 1.427 11.437c1.333-2.163 2.978-5.563 2.978-7.88 0-1.27-.218-2.134-.56-2.845L19.1 4z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const d = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.e4f3fdfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Live.d728948a.js.map

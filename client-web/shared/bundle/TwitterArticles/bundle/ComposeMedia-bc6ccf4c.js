@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.ComposeMedia-bc6ccf4c", "icons/IconFilm-js"],
+    ["shared~bundle.TwitterArticles~bundle.ComposeMedia-bc6ccf4c"],
     {
         403556: (e, t, r) => {
             r.d(t, { Z: () => T });
@@ -61,9 +61,9 @@
                         { location: T } = this.state,
                         P = R ? this._getMemoizedLink(R, C) : void 0,
                         w = c ? c(R) : T?.pathname === P?.pathname,
-                        E = y.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? _.pillHoverStyle.backgroundColor : void 0 }),
-                        k = g ? "medium" : w ? "bold" : "medium";
-                    return a.createElement(b.Z, { "aria-label": t, "aria-selected": w, focusable: !!w, interactiveStyles: E, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [_.pillStyle] : [_.link]), ...(p && w ? [_.pillActiveStyle] : []), d ? (p ? _.compactPill : _.compactLink) : null, h ? _.roundedRect : null, x], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && _.flexGrow }, a.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [_.text, { color: this._getTextColor(w, c, g, p) }, d && _.compactText, g && t && _.focusedText, p && _.pillTextStyle, p && w && _.pillActiveTextStyle, p && c && _.pillHoverTextStyle], weight: k }, e && a.createElement(e, { style: _.icon }), i, g || p ? null : a.createElement(l.Z, { style: w && [_.border, { backgroundColor: o.default.theme.colors[n] }] })), r ? a.createElement(m.Z, { count: r, standalone: !0, style: [_.badge, r >= 10 && _.multiDigitBadge, r >= 20 && _.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: f, withBorder: !1 }) : s ? a.createElement(m.Z, { pip: !0, standalone: !0, style: _.badgePip, textColor: "red500", unreadCountLabel: S, withBorder: !1 }) : null));
+                        k = y.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? _.pillHoverStyle.backgroundColor : void 0 }),
+                        E = g ? "medium" : w ? "bold" : "medium";
+                    return a.createElement(b.Z, { "aria-label": t, "aria-selected": w, focusable: !!w, interactiveStyles: k, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [_.pillStyle] : [_.link]), ...(p && w ? [_.pillActiveStyle] : []), d ? (p ? _.compactPill : _.compactLink) : null, h ? _.roundedRect : null, x], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && _.flexGrow }, a.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [_.text, { color: this._getTextColor(w, c, g, p) }, d && _.compactText, g && t && _.focusedText, p && _.pillTextStyle, p && w && _.pillActiveTextStyle, p && c && _.pillHoverTextStyle], weight: E }, e && a.createElement(e, { style: _.icon }), i, g || p ? null : a.createElement(l.Z, { style: w && [_.border, { backgroundColor: o.default.theme.colors[n] }] })), r ? a.createElement(m.Z, { count: r, standalone: !0, style: [_.badge, r >= 10 && _.multiDigitBadge, r >= 20 && _.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: f, withBorder: !1 }) : s ? a.createElement(m.Z, { pip: !0, standalone: !0, style: _.badgePip, textColor: "red500", unreadCountLabel: S, withBorder: !1 }) : null));
                 }
             }
             (C.contextType = g.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -305,14 +305,14 @@
             var P = r(731708),
                 w = r(879891);
             r(136728);
-            function E(e) {
+            function k(e) {
                 const t = Math.round(e / 1e3);
                 if (t < 10) return `0:0${t}`;
                 if (t < 60) return `0:${t}`;
                 const r = Math.floor(t / 60);
                 return `${r}:${("" + (t - 60 * r)).padStart(2, "0")}`;
             }
-            const k = (e, t) =>
+            const E = (e, t) =>
                     e.map((e) =>
                         ((e, t) => {
                             if ("tenths" === t) {
@@ -320,7 +320,7 @@
                                     r = t % 10;
                                 return `0:${("" + (t - r) / 10).padStart(2, "0")}.${r}`;
                             }
-                            return E(e);
+                            return k(e);
                         })(e, t),
                     ),
                 Z = (e, t) => {
@@ -338,7 +338,7 @@
                         for (; o < e; ) n.push(o), (o += r);
                         return { intervalsMs: n, precision: s, numSubintervals: a, numIntervals: Number((e / r).toFixed(1)) };
                     })(e, t);
-                    return { intervalStrings: k(r, i), numSubintervals: a, numIntervals: s };
+                    return { intervalStrings: E(r, i), numSubintervals: a, numIntervals: s };
                 };
             const A = p.default.create((e) => ({ root: { flexDirection: "column", width: "100%", position: "absolute", height: "65%", bottom: 0, overflow: "hidden" }, intervalRow: { flexDirection: "row" }, intervalRowStrings: { paddingBottom: e.spaces.space2, userSelect: "none" }, intervalRowTicks: { flexGrow: 1, overflow: "hidden" }, borderLeft: { borderStartColor: e.colors.gray700, borderStartWidth: 1 }, borderRight: { borderEndColor: e.colors.gray700, borderEndWidth: 1 }, bigTicks: { flexDirection: "row", alignItems: "flex-end" }, smallTicks: { flexGrow: 1, height: "50%" }, intervalStrings: { display: "flex", justifyContent: "center" } })),
                 D = function ({ duration: e, trimmerWidth: t }) {
@@ -367,21 +367,21 @@
                         ),
                     );
                 };
-            var M = r(165010),
-                W = r(301049);
+            var W = r(165010),
+                M = r(301049);
             const B = f().a394f905,
-                z = f().f42c0c80,
-                V = f().i667afe8,
-                H = f().c0bdd345;
-            class I extends s.Component {
+                I = f().f42c0c80,
+                z = f().i667afe8,
+                V = f().c0bdd345;
+            class F extends s.Component {
                 constructor(...e) {
                     super(...e),
                         (this._panResponders = y.Z.create({ onStartShouldSetPanResponder: () => !0, onMoveShouldSetPanResponder: () => !0, onPanResponderGrant: () => this.props.onMoveStart(this.props.side), onPanResponderMove: (e, { dx: t }) => this.props.onMoveChange(t, this.props.side), onPanResponderRelease: (e, { dx: t }) => this.props.onMoveEnd(t, this.props.side), onPanResponderTerminate: (e, { dx: t }) => this.props.onMoveEnd(t, this.props.side), onPanResponderTerminationRequest: () => !0 })),
                         (this._handleOnKeyDown = (e, t) => {
                             const { onKeyDown: r } = this.props,
                                 { key: s } = e,
-                                a = s === W.Z.ArrowUp || s === W.Z.ArrowRight,
-                                i = s === W.Z.ArrowDown || s === W.Z.ArrowLeft;
+                                a = s === M.Z.ArrowUp || s === M.Z.ArrowRight,
+                                i = s === M.Z.ArrowDown || s === M.Z.ArrowLeft;
                             if (a || i) {
                                 e.preventDefault();
                                 r(a ? x : _, t);
@@ -390,23 +390,23 @@
                         (this._handleOnKeyUp = (e) => {
                             const { onKeyUp: t } = this.props,
                                 { key: r } = e;
-                            [W.Z.ArrowDown, W.Z.ArrowLeft, W.Z.ArrowRight, W.Z.ArrowUp].includes(r) && t();
+                            [M.Z.ArrowDown, M.Z.ArrowLeft, M.Z.ArrowRight, M.Z.ArrowUp].includes(r) && t();
                         }),
                         (this._generateBorderStyles = (e) => {
                             const { side: t } = this.props,
                                 r = "rtl" === e;
-                            return t === R ? (r ? F.rightScrubberRadius : F.leftScrubberRadius) : t === T ? (r ? F.leftScrubberRadius : F.rightScrubberRadius) : void 0;
+                            return t === R ? (r ? H.rightScrubberRadius : H.leftScrubberRadius) : t === T ? (r ? H.leftScrubberRadius : H.rightScrubberRadius) : void 0;
                         });
                 }
                 render() {
                     const { currentValue: e, maxValue: t, minValue: r, side: i, style: n } = this.props;
-                    return s.createElement(C.ZP.Consumer, null, ({ direction: o }) => s.createElement(c.Z, (0, g.Z)({ "aria-label": i === R ? V : z, "aria-valuemax": parseFloat(H(t / 1e3)), "aria-valuemin": parseFloat(H(r / 1e3)), "aria-valuenow": parseFloat(H(e / 1e3)), "aria-valuetext": B({ seconds: H(e / 1e3) }), focusable: !0, interactiveStyles: l.Z.generate({ backgroundColor: p.default.theme.colors.primary, color: p.default.theme.colors.primary, customFocusBackgroundColor: p.default.theme.colors.primary, customHoverBackgroundColor: p.default.theme.colors.primary, customPressedBackgroundColor: p.default.theme.colors.primary, insetFocusRing: !0 }), onKeyDown: (e) => this._handleOnKeyDown(e, i), onKeyUp: (e) => this._handleOnKeyUp(e), role: "adjustable", style: [F.root, this._generateBorderStyles(o), n] }, (0, M.dW)(this._panResponders.panHandlers)), ({ isFocused: e, isHovered: t, isPressed: r }) => s.createElement(s.Fragment, null, s.createElement(a.Z, { style: [F.trimmerScrubberGrips, (e || t || r) && F.trimmerScrubberGripsOpacity] }), s.createElement(a.Z, { style: [F.trimmerScrubberGrips, (e || t || r) && F.trimmerScrubberGripsOpacity] }))));
+                    return s.createElement(C.ZP.Consumer, null, ({ direction: o }) => s.createElement(c.Z, (0, g.Z)({ "aria-label": i === R ? z : I, "aria-valuemax": parseFloat(V(t / 1e3)), "aria-valuemin": parseFloat(V(r / 1e3)), "aria-valuenow": parseFloat(V(e / 1e3)), "aria-valuetext": B({ seconds: V(e / 1e3) }), focusable: !0, interactiveStyles: l.Z.generate({ backgroundColor: p.default.theme.colors.primary, color: p.default.theme.colors.primary, customFocusBackgroundColor: p.default.theme.colors.primary, customHoverBackgroundColor: p.default.theme.colors.primary, customPressedBackgroundColor: p.default.theme.colors.primary, insetFocusRing: !0 }), onKeyDown: (e) => this._handleOnKeyDown(e, i), onKeyUp: (e) => this._handleOnKeyUp(e), role: "adjustable", style: [H.root, this._generateBorderStyles(o), n] }, (0, W.dW)(this._panResponders.panHandlers)), ({ isFocused: e, isHovered: t, isPressed: r }) => s.createElement(s.Fragment, null, s.createElement(a.Z, { style: [H.trimmerScrubberGrips, (e || t || r) && H.trimmerScrubberGripsOpacity] }), s.createElement(a.Z, { style: [H.trimmerScrubberGrips, (e || t || r) && H.trimmerScrubberGripsOpacity] }))));
                 }
             }
-            const F = p.default.create((e) => ({ root: { backgroundColor: e.colors.primary, cursor: "grab", flexDirection: "row", height: e.spaces.space48, justifyContent: "space-between", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space12, width: `calc(${e.spaces.space4} * 2 + ${e.spaces.space2} * 3)` }, leftScrubberRadius: { borderBottomStartRadius: e.borderRadii.small, borderTopStartRadius: e.borderRadii.small }, rightScrubberRadius: { borderBottomEndRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, trimmerScrubberGrips: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, height: "100%", width: e.spaces.space2 }, trimmerScrubberGripsOpacity: { opacity: 0.8 } })),
-                L = I,
-                j = f().af2a65d9,
-                G = f().d46781af,
+            const H = p.default.create((e) => ({ root: { backgroundColor: e.colors.primary, cursor: "grab", flexDirection: "row", height: e.spaces.space48, justifyContent: "space-between", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space12, width: `calc(${e.spaces.space4} * 2 + ${e.spaces.space2} * 3)` }, leftScrubberRadius: { borderBottomStartRadius: e.borderRadii.small, borderTopStartRadius: e.borderRadii.small }, rightScrubberRadius: { borderBottomEndRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, trimmerScrubberGrips: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, height: "100%", width: e.spaces.space2 }, trimmerScrubberGripsOpacity: { opacity: 0.8 } })),
+                L = F,
+                G = f().af2a65d9,
+                j = f().d46781af,
                 $ = f().e8733ed9,
                 U = f().j3d49e93,
                 O = (e, t) => (e / t) * 100 + "%";
@@ -421,10 +421,10 @@
                             const { endTime: e, startTime: t } = this.props,
                                 r = e - t;
                             if (r >= 6e4) {
-                                const e = E(r);
+                                const e = k(r);
                                 return U({ timestamp: e });
                             }
-                            return r < 4e3 ? G(Math.floor((10 * r) / 1e3) / 10) : $(Math.floor(r / 1e3));
+                            return r < 4e3 ? j(Math.floor((10 * r) / 1e3) / 10) : $(Math.floor(r / 1e3));
                         }),
                         (this._getTrimmerScrubberWidth = () => 2 * p.default.theme.spacesPx.space4 + 3 * p.default.theme.spacesPx.space2),
                         (this._handleKeyDown = (e, t) => {
@@ -455,7 +455,7 @@
                                 n = "rtl" === this._languageDirection,
                                 o = n ? "marginEnd" : "marginStart",
                                 l = n ? "marginStart" : "marginEnd";
-                            return s.createElement(a.Z, { style: [N.labelWrapper, { [o]: O(i, t), [l]: O(t - r, t), width: O(r - i, t) }] }, s.createElement(v.ZP, { background: "maskColor", style: [N.label, !e && N.visibilityHidden] }, j({ timestamp: this._generateTimestampLabelString() })));
+                            return s.createElement(a.Z, { style: [N.labelWrapper, { [o]: O(i, t), [l]: O(t - r, t), width: O(r - i, t) }] }, s.createElement(v.ZP, { background: "maskColor", style: [N.label, !e && N.visibilityHidden] }, G({ timestamp: this._generateTimestampLabelString() })));
                         }),
                         (this._setRootRef = (e) => {
                             e && (this._removeTouchMoveToScrollListener = (0, S.O)(e, this._handleTouchMoveToScroll, !1));
@@ -581,19 +581,6 @@
             const Q = p.default.create((e) => ({ root: { flex: 1 }, overlay: { ...p.default.absoluteFillObject, alignItems: "center", justifyContent: "center" }, video: { alignItems: "center", flex: 1, justifyContent: "center", width: "100%" }, videoContainer: { alignItems: "center", backgroundColor: e.colors.gray0, flex: 1, padding: e.spaces.space20, width: "100%" } })),
                 X = Y;
         },
-        926981: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var s = r(202784),
-                a = r(890601),
-                i = r(783427),
-                n = r(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M18.5 2h-13C4.12 2 3 3.12 3 4.5v15C3 20.88 4.12 22 5.5 22h13c1.38 0 2.5-1.12 2.5-2.5v-15C21 3.12 19.88 2 18.5 2zM7 20H5.5c-.28 0-.5-.22-.5-.5v-2h2V20zm0-4.5H5V13h2v2.5zM7 11H5V8.5h2V11zm0-4.5H5v-2c0-.28.22-.5.5-.5H7v2.5zM15 20H9v-7h6v7zm0-9H9V4h6v7zm4 8.5c0 .28-.22.5-.5.5H17v-2.5h2v2zm0-4h-2V13h2v2.5zm0-4.5h-2V8.5h2V11zm0-4.5h-2V4h1.5c.28 0 .5.22.5.5v2z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const l = o;
-        },
         452693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var s = r(202784),
@@ -613,4 +600,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-bc6ccf4c.0741231a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-bc6ccf4c.5bf92d8a.js.map

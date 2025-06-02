@@ -5501,13 +5501,35 @@
                 n("g22c8c30", 'Bu notlar, önceki değerlendirmelerinde genellikle aynı düşüncede olmayanlar dahil, yeterli sayıda katkıda bulunan tarafından "Yardımcı Oldu" olarak değerlendirildiğinde, ek bağlam olarak gönderiyle birlikte herkese açık olarak gösterilir.'),
                 n("jf04b084", "Bu notlar, gönderinin yanıltıcı olmadığını ve ek bağlam gerekmediğini düşünen katkıda bulunanlar tarafından eklenir."),
                 n("g5a72e98", 'Bu notlar, değerlendirme yapan kullanıcılara ek bilgi olarak yalnızca Topluluk Notları\'nda gösterilir ve "Yardımcı Oldu" durumunu kazansa bile gönderiyle birlikte bağlam olarak gösterilmez.'),
-                n("h53cb7de", "Bu gönderi hakkında ne düşünüyorsun?"),
-                n("dc3bfc82", "Bu gönderiyle ilgili neleri beğendin?"),
-                n("b4704bf4", "Bu gönderiyle ilgili neleri beğenmedin?"),
+                n("b8719c22", "Gönderilerin farklı bakış açılarına sahip kişiler tarafından beğenilip beğenilmediğinin belirlenmesine yardımcı ol."),
+                n("jcdf97d4", "Gönderide neyi beğendin?"),
+                n("d4d7b67e", "Gönderide neyi beğenmedin?"),
                 n("ed5156fa", "Değerlendirmeni kaydederken bir sorun oluştu. Lütfen tekrar dene."),
-                n("d5f9fb42", "Bu topluluk öne çıkarmayı değerlendirdin"),
+                n("d0ed3636", "Bu gönderiyi değerlendirdin"),
                 n("j6aa6172", "Değerlendirme silinsin mi?"),
                 n("i4112750", "Bu işlem geri alınamaz."),
+                n("i6f6191a", "Teşekkür ederiz!"),
+                n("h5575012", "Agree and submit"),
+                n("f9171e52", "Bu gönderi, normal koşullarda aynı fikirde olmayan bazı kişilerden beğeni aldı ancak şu ana kadar giriş sayısı sınırlı."),
+                n("j0f9919a", "Değerlendirmen gönderiyi olumsuz etkilemeyecek ancak geniş kitlelerce beğenilen gönderileri olumlu şekilde belirlemeye yardımcı olabilir."),
+                n("b3af830c", "Girişin:"),
+                n("d0b29562", "Hemen daha fazla gönderiyi değerlendir"),
+                n("i36ea87a", "Katılıyorum"),
+                n("d5befc34", "İlgi çekici bir şeyler öğrendim"),
+                n("je26ecf2", "Anlamlı bir noktaya değiniyor"),
+                n("e4e331aa", "Genellikle kutuplaştırıcı olan bir konuda birleştirici"),
+                n("ed61ff2a", "Yürekleri ısıtan ve sevecen"),
+                n("gc3104d8", "İlham verici veya heyecanlandırıcı"),
+                n("j8c4400e", "Eğlenceli"),
+                n("j4738406", "Yok: Bununla ilgili sevdiğim hiçbir şey yok"),
+                n("d93d1666", "Katılmıyorum"),
+                n("d6130466", "Anlamlı bir yönü yok"),
+                n("d96835b6", "İlgimi çekmiyor"),
+                n("b7ba4150", "Yok: Bununla ilgili sevmediğim hiçbir şey yok"),
+                n("g0402b3b", "Farklı bakış açılarına sahip kişiler tarafından beğenilen"),
+                n("ged62c2b", "tespit edilmesine"),
+                n("b5d5f7f1", "gidişatını şekillendirir"),
+                n("a42fef87", "Learn more"),
                 n("bd7eb888", "Bu gönderideki tüm notları gör"),
                 n("i97b83f6", "İtirazın gönderilirken bir sorun oluştu. Lütfen tekrar dene."),
                 n("a038ab9a", "Notu çevir"),
@@ -5858,8 +5880,8 @@
                 n("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " içeriğine kaydedildi";
                 }),
-                n("h18f86a4", "Klasörü sil"),
-                n("f4ea967a", "Klasör silindi"),
+                n("h18f86a4", "Klasörü sil");
+            n("f4ea967a", "Klasör silindi"),
                 n("b670aa62", "Klasör Adı"),
                 n("aece5462", "Klasör adı başarıyla güncellendi"),
                 n("e3299b94", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü güncellemeyi tekrar dene."),
@@ -5890,8 +5912,8 @@
                     return "Bitiş: " + e.timestamp;
                 }),
                 n("daca8a2c", "Dock'ta aç"),
-                n("e3aac82a", "Yayın yükleniyor");
-            n("i0ed3f4e", "Etkinlik görseli"),
+                n("e3aac82a", "Yayın yükleniyor"),
+                n("i0ed3f4e", "Etkinlik görseli"),
                 n("cbae35fa", "Yayını Bildir"),
                 n("fd12ab58", "Koleksiyon gönderileri"),
                 n("a226497c", "Yeni bir Topluluk oluştur"),
@@ -6862,8 +6884,8 @@
                 n("b925c18c", "Maaş Türü"),
                 n("j3d242ce", "Geçersiz aralık"),
                 n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle."),
-                n("b8cbb51a", "İş Özeti"),
-                n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
+                n("b8cbb51a", "İş Özeti");
+            n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
                 n("b075c68a", "İlanı düzenle"),
                 n("d4b6a6e0", "Profil Spotlight'ı"),
                 n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula."),
@@ -6888,8 +6910,8 @@
                 n("c0195168", "Uygulama simgeni ve gezinme seçeneklerini değiştir"),
                 n("b6b5dc94", "Onaylı hesap sahibi ol"),
                 n("b06db848", "Platformdaki diğer kişiler arasında öne çık"),
-                n("e3e3a97c", "Gönderilerinden gelir payı kazan");
-            n("f15bc24e", "Daha yüksek Grok limitlerinden yararlan"),
+                n("e3e3a97c", "Gönderilerinden gelir payı kazan"),
+                n("f15bc24e", "Daha yüksek Grok limitlerinden yararlan"),
                 n("c4666e1c", "En yeni modelimiz Grok 3 için daha yüksek kullanım limitleri elde et"),
                 n("he74ae7a", "En yüksek Grok kullanım limitlerine sahip ol"),
                 n("f5732cd4", "DeepSearch ve Düşünme için daha geniş erişimden yararlan"),
@@ -7206,16 +7228,16 @@
                 n("hd80bd3e", "Bir gönderi tanıt"),
                 n("fe2b0008", "X'i nasıl kullanacağını öğren"),
                 n("h257d4aa", "Tanıtmak için bir gönderi seç"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
-                n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("fe946974", "Reklamsız X denemen"),
+                n("f6c50ec0", "Reklamsız deneme süren sona erdi"),
+                n("b1319404", "Önlenen reklam sayısı"),
+                n("baa4acae", "Sana daha fazla kişiselleştirilmiş içerik gösteriliyor."),
+                n("c00e8600", "Tasarruf edilen tahmini süre"),
+                n("ic073e4e", "Zamanın değerli."),
+                n("eb866e88", "Tasarruf edilen 1 yıllık tahmini süre"),
+                n("aa77b70c", "Kullanımın temel alınmıştır."),
+                n("c534c6b4", "Rakamları hazırlıyoruz..."),
+                n("i57332f0", "Kaydırmaya devam et ve daha sonra tekrar kontrol ederek kaç reklamın önlendiğini ve zamandan ne kadar tasarruf ettiğini öğren"),
                 n("cc10f019", function (e) {
                     return e.minutes + " dakika";
                 }),
@@ -7231,11 +7253,11 @@
                 n("be88be23", function (e) {
                     return e.durationInDays + " günlük reklamsız deneme sürümün etkinleştirildi";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("a4413462", "Deneme süresinde, sana gösterilmeyen reklam sayısı ve tasarruf ettiğin süreyle ilgili istatistikleri görebilirsin."),
+                n("ae3f3b0e", "Keyfini çıkar."),
+                n("cdac8dc4", "Yeni akışını görüntüle"),
                 n("dec99336", "Reklamsız"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("i95803fa", "Maalesef şu anda uygun değilsin."),
                 n("d28a1d72", "Radar ile gündemleri ilk sen keşfet"),
                 n("fb70427a", "X'teki en güçlü arama aracıyla tanış."),
                 n("i54bf620", "Anahtar kelimeleri izle"),
@@ -7840,35 +7862,7 @@
                 n("c29e3a88", "İlişkili hesapları seç"),
                 n("j8318d57", function (e) {
                     return e.number + " ilişkili hesap";
-                }),
-                n("bf809ec0", "İlişkili Hesapları Seç"),
-                n("b719e224", "Sonuç yok"),
-                n("c9938100", "Arama sonuçları"),
-                n("d1a35ec6", "Hesap ekle"),
-                n("b437adda", "Ücretli aboneliğe yükselt"),
-                n("f1f6c88b", function (e) {
-                    return "Hesaplar (" + e.count + ")";
-                }),
-                n("b02156b8", "Davetler"),
-                n("gd67d29b", function (e) {
-                    return "Davetler (" + e.count + ")";
-                }),
-                n("daf646e6", "Hesapları uygun şekilde etiketlemen gerektiğini lütfen unutma."),
-                n("i3895c32", "X @kullanıcıadı değiştirildiği için hesabın inceleniyor"),
-                n("i5f8b628", "Hesabın incelenene kadar ilişkili hesaplarını değiştiremezsin."),
-                n("e9e663ac", "Ödemenin son tarihi geçti."),
-                n("c3ddd22c", "şartlarımız"),
-                n("c9729d8a", "şartlarımız"),
-                n("cdcd1d2c", "Kuruluşuna ilişkili hesap ekle"),
-                n("d30ea6f3", function (e) {
-                    return "@" + e.name + " adlı kullanıcıyı kaldırmak istediğinden emin misin?";
-                }),
-                n("c2dfbb86", "Evet, kaldır"),
-                n("ba047f76", "Bir ilişki kaldırıldığında, ilgili hesabın onay işareti ve ilişki hesap rozeti hemen kaldırılır. Ay sonuna kadar faturalandırılmaya devam edersin."),
-                n("j26dee0e", "İlişkili hesabı kaldır"),
-                n("e30cbdf0", "Bu ilişkili hesap bir Onaylı Kuruluşlar abonesi ve bir Kuruluş olarak kalması gerekiyor. Kişi hesabı olarak ayarlanamaz."),
-                n("j3115ce8", "Kişi"),
-                n("d8bb1d84", "Kuruluş");
+                });
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7907,9 +7901,37 @@
                     t(e, a)
                 );
             }
-            n("e970bdbd", function (e) {
-                return e.count + " davet kaldı";
-            }),
+            n("bf809ec0", "İlişkili Hesapları Seç"),
+                n("b719e224", "Sonuç yok"),
+                n("c9938100", "Arama sonuçları"),
+                n("d1a35ec6", "Hesap ekle"),
+                n("b437adda", "Ücretli aboneliğe yükselt"),
+                n("f1f6c88b", function (e) {
+                    return "Hesaplar (" + e.count + ")";
+                }),
+                n("b02156b8", "Davetler"),
+                n("gd67d29b", function (e) {
+                    return "Davetler (" + e.count + ")";
+                }),
+                n("daf646e6", "Hesapları uygun şekilde etiketlemen gerektiğini lütfen unutma."),
+                n("i3895c32", "X @kullanıcıadı değiştirildiği için hesabın inceleniyor"),
+                n("i5f8b628", "Hesabın incelenene kadar ilişkili hesaplarını değiştiremezsin."),
+                n("e9e663ac", "Ödemenin son tarihi geçti."),
+                n("c3ddd22c", "şartlarımız"),
+                n("c9729d8a", "şartlarımız"),
+                n("cdcd1d2c", "Kuruluşuna ilişkili hesap ekle"),
+                n("d30ea6f3", function (e) {
+                    return "@" + e.name + " adlı kullanıcıyı kaldırmak istediğinden emin misin?";
+                }),
+                n("c2dfbb86", "Evet, kaldır"),
+                n("ba047f76", "Bir ilişki kaldırıldığında, ilgili hesabın onay işareti ve ilişki hesap rozeti hemen kaldırılır. Ay sonuna kadar faturalandırılmaya devam edersin."),
+                n("j26dee0e", "İlişkili hesabı kaldır"),
+                n("e30cbdf0", "Bu ilişkili hesap bir Onaylı Kuruluşlar abonesi ve bir Kuruluş olarak kalması gerekiyor. Kişi hesabı olarak ayarlanamaz."),
+                n("j3115ce8", "Kişi"),
+                n("d8bb1d84", "Kuruluş"),
+                n("e970bdbd", function (e) {
+                    return e.count + " davet kaldı";
+                }),
                 n("id67d953", function (e) {
                     return "Stripe ödeme bilgilerin getirilirken bir sorun oluştu. Sorun devam ederse lütfen " + e.supportEmail + " adresiyle iletişime geç.";
                 }),
@@ -8882,8 +8904,8 @@
                 n("ha3efce4", "Otomatik"),
                 n("hd8d044d", function (e) {
                     return "Otomatik (" + e.quality + ")";
-                }),
-                n("a7bf9962", "Videoyu indir"),
+                });
+            n("a7bf9962", "Videoyu indir"),
                 n("ccc97152", "Oynatma hızı"),
                 n("h531ade0", "Video kalitesi"),
                 n("e8b5757c", "0,25x"),
@@ -8914,8 +8936,8 @@
                 n("c1658fc6", "Medya oynatılamadı."),
                 n("h519ae04", "Medya, telif hakkı iddiası nedeniyle devre dışı bırakıldı."),
                 n("ce871584", "Bu yayın sona ermiş."),
-                n("c101eb96", "Bu yayın kullanılamıyor.");
-            n("gb24a514", "Telif hakkı sahibinden gelen bildirim nedeniyle bu medya devre dışı bırakıldı."),
+                n("c101eb96", "Bu yayın kullanılamıyor."),
+                n("gb24a514", "Telif hakkı sahibinden gelen bildirim nedeniyle bu medya devre dışı bırakıldı."),
                 n("hcaf3e63", function (e) {
                     return "Bu medya, " + e.holder + " adlı kişinin telif hakkı iddiası nedeniyle devre dışı bırakıldı.";
                 }),
@@ -11487,6 +11509,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["", " gönderilerin bulunmasına yardımcı olur"];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Gönderilere zarar vermez fakat daha geniş kitlelerce beğenilenlerin ", " yardımcı olabilir"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["Bu deneysel özelliğin "];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Gönderi yazarı olarak "];
@@ -12077,7 +12123,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["%", " Ücret, Min. "];
                             },
                         },
                         {
@@ -13303,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.ea074d7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.e6070a1a.js.map

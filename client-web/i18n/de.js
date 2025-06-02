@@ -5502,13 +5502,35 @@
                 t("g22c8c30", "Wenn diese Anmerkungen von genug Mitwirkenden als hilfreich bewertet werden, u. a. von Personen, die in der Vergangenheit oft unterschiedliche Bewertungen abgegeben haben, werden sie als zusätzlicher Kontext öffentlich mit dem Post angezeigt."),
                 t("jf04b084", "Diese Anmerkungen werden von Mitwirkenden hinzugefügt, die der Meinung sind, dass der Post nicht irreführend ist und keinen zusätzlichen Kontext erfordert."),
                 t("g5a72e98", "Sie sind nur in Kollektive Anmerkungen sichtbar, wo sie Personen, die Bewertungen abgeben, als Zusatzinformationen dienen. Sie werden nicht als Kontext mit dem Post angezeigt, selbst wenn sie den Status „Hilfreich“ erhalten."),
-                t("h53cb7de", "Was hältst du von diesem Post?"),
-                t("dc3bfc82", "Was gefällt dir an diesem Post?"),
-                t("b4704bf4", "Was gefällt dir nicht an diesem Post?"),
+                t("b8719c22", "Hilf mit zu identifizieren, ob Posts von Leuten mit verschiedenen Sichtweisen mit „Gefällt mir“ markiert werden."),
+                t("jcdf97d4", "Was gefällt dir an dem Post?"),
+                t("d4d7b67e", "Was gefällt dir nicht an dem Post?"),
                 t("ed5156fa", "Beim Speichern deiner Bewertung ist ein Fehler aufgetreten. Bitte versuche es noch einmal."),
-                t("d5f9fb42", "Du hast diesen Community-Boost bewertet"),
+                t("d0ed3636", "Du hast diesen Post bewertet"),
                 t("j6aa6172", "Bewertung löschen?"),
                 t("i4112750", "Dies kann nicht rückgängig gemacht werden."),
+                t("i6f6191a", "Vielen Dank!"),
+                t("h5575012", "Agree and submit"),
+                t("f9171e52", "Dieser Post hat „Gefällt mir“-Markierungen von Leuten erhalten, die normalerweise anderer Meinung sind, aber bisher liegen nur wenig Daten vor."),
+                t("j0f9919a", "Deine Bewertung hat keine negativen Auswirkungen auf einen Post, kann aber positiv helfen, Posts zu erkennen, die weithin Gefallen finden."),
+                t("b3af830c", "Dein Beitrag:"),
+                t("d0b29562", "Jetzt weitere Posts bewerten"),
+                t("i36ea87a", "Ich stimme zu"),
+                t("d5befc34", "Ich habe etwas Interessantes gelernt"),
+                t("je26ecf2", "Argumentiert sinnvoll"),
+                t("e4e331aa", "Versöhnend bei einem Thema, das oft polarisiert"),
+                t("ed61ff2a", "Herzerwärmend oder liebenswert"),
+                t("gc3104d8", "Inspirierend oder spannend"),
+                t("j8c4400e", "Lustig"),
+                t("j4738406", "N. z.: Es gab nichts, was mir daran gefallen hat"),
+                t("d93d1666", "Ich stimme nicht zu"),
+                t("d6130466", "Enthält keine sinnvolle Aussage"),
+                t("d96835b6", "Interessiert mich nicht"),
+                t("b7ba4150", "N. z.: Es gab nichts, was mir daran nicht gefallen hat"),
+                t("g0402b3b", "die von Leuten mit verschiedenen Sichtweisen mit „Gefällt mir“ markiert wurden"),
+                t("ged62c2b", "hervorzuheben"),
+                t("b5d5f7f1", "Beeinflusst die Entwicklung"),
+                t("a42fef87", "Learn more"),
                 t("bd7eb888", "Alle Anmerkungen zu diesem Post ansehen"),
                 t("i97b83f6", "Beim Übermitteln deines Einspruchs ist ein Fehler aufgetreten. Bitte versuche es erneut."),
                 t("a038ab9a", "Text übersetzen"),
@@ -5859,8 +5881,8 @@
                 t("e41c9b4f", function (e) {
                     return "Gespeichert in " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Ordner löschen"),
-                t("f4ea967a", "Ordner wurde gelöscht"),
+                t("h18f86a4", "Ordner löschen");
+            t("f4ea967a", "Ordner wurde gelöscht"),
                 t("b670aa62", "Ordnername"),
                 t("aece5462", "Ordnername wurde erfolgreich aktualisiert"),
                 t("e3299b94", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu aktualisieren."),
@@ -5891,8 +5913,8 @@
                     return "Beendet " + e.timestamp;
                 }),
                 t("daca8a2c", "In Dock öffnen"),
-                t("e3aac82a", "Live-Video wird geladen");
-            t("i0ed3f4e", "Ereignisbild"),
+                t("e3aac82a", "Live-Video wird geladen"),
+                t("i0ed3f4e", "Ereignisbild"),
                 t("cbae35fa", "Live-Video melden"),
                 t("fd12ab58", "Sammlungs-Posts"),
                 t("a226497c", "Neue Community erstellen"),
@@ -6863,8 +6885,8 @@
                 t("b925c18c", "Gehaltstyp"),
                 t("j3d242ce", "Ungültiger Bereich"),
                 t("f4d07bd2", "Nimm optionale Details auf, damit Kandidat*innen ihre Rollen mit der Suche leichter entdecken können."),
-                t("b8cbb51a", "Jobzusammenfassung"),
-                t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
+                t("b8cbb51a", "Jobzusammenfassung");
+            t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
                 t("b075c68a", "Job bearbeiten"),
                 t("d4b6a6e0", "Profil-Spotlight"),
                 t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen."),
@@ -6889,8 +6911,8 @@
                 t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
                 t("b6b5dc94", "Lass dich verifizieren"),
                 t("b06db848", "Heb dich von anderen auf der Plattform ab"),
-                t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts");
-            t("f15bc24e", "Höhere Grok-Limits"),
+                t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
+                t("f15bc24e", "Höhere Grok-Limits"),
                 t("c4666e1c", "Mehr Nutzung von Grok 3, unserem neuesten Modell"),
                 t("he74ae7a", "Höchste Grok-Nutzungslimits"),
                 t("f5732cd4", "Plus erweiterter Zugriff auf DeepSearch und Denken"),
@@ -7841,35 +7863,7 @@
                 t("c29e3a88", "Verbundene Accounts auswählen"),
                 t("j8318d57", function (e) {
                     return e.number + " verbundene" + r(e.number, "r Account", " Accounts");
-                }),
-                t("bf809ec0", "Verbundene Accounts auswählen"),
-                t("b719e224", "Keine Ergebnisse"),
-                t("c9938100", "Suchergebnisse"),
-                t("d1a35ec6", "Accounts hinzufügen"),
-                t("b437adda", "Upgrade auf „bezahlt“"),
-                t("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
-                t("b02156b8", "Einladungen"),
-                t("gd67d29b", function (e) {
-                    return "Einladungen (" + e.count + ")";
-                }),
-                t("daf646e6", "Zur Beachtung: Du musst Accounts angemessen kennzeichnen."),
-                t("i3895c32", "Dein Account wird zurzeit geprüft, weil du deinen X @Nutzernamen geändert hast"),
-                t("i5f8b628", "Du kannst deine verbundenen Accounts erst ändern, wenn dein Account geprüft wurde."),
-                t("e9e663ac", "Deine Zahlung ist überfällig."),
-                t("c3ddd22c", "Geschäftsbedingungen"),
-                t("c9729d8a", "Geschäftsbedingungen"),
-                t("cdcd1d2c", "Füge deiner Organisation verbundene Accounts hinzu"),
-                t("d30ea6f3", function (e) {
-                    return "Möchtest du @" + e.name + " wirklich entfernen?";
-                }),
-                t("c2dfbb86", "Ja, wirklich"),
-                t("ba047f76", "Wenn du eine Verbindung entfernst, werden das zugehörige Häkchen und das Verbindungsabzeichen sofort entfernt. Deine Rechnung erhältst du noch bis Ende des Monats."),
-                t("j26dee0e", "Verbundenen Account entfernen"),
-                t("e30cbdf0", "Dieser verbundene Account ist ein Abonnent von Verifizierte Organisationen und muss eine Organisation bleiben. Er kann nicht in eine Person geändert werden."),
-                t("j3115ce8", "Person"),
-                t("d8bb1d84", "Organisation");
+                });
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7908,9 +7902,37 @@
                     d(e, n)
                 );
             }
-            t("e970bdbd", function (e) {
-                return "Noch " + e.count + " Einladungen";
-            }),
+            t("bf809ec0", "Verbundene Accounts auswählen"),
+                t("b719e224", "Keine Ergebnisse"),
+                t("c9938100", "Suchergebnisse"),
+                t("d1a35ec6", "Accounts hinzufügen"),
+                t("b437adda", "Upgrade auf „bezahlt“"),
+                t("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                t("b02156b8", "Einladungen"),
+                t("gd67d29b", function (e) {
+                    return "Einladungen (" + e.count + ")";
+                }),
+                t("daf646e6", "Zur Beachtung: Du musst Accounts angemessen kennzeichnen."),
+                t("i3895c32", "Dein Account wird zurzeit geprüft, weil du deinen X @Nutzernamen geändert hast"),
+                t("i5f8b628", "Du kannst deine verbundenen Accounts erst ändern, wenn dein Account geprüft wurde."),
+                t("e9e663ac", "Deine Zahlung ist überfällig."),
+                t("c3ddd22c", "Geschäftsbedingungen"),
+                t("c9729d8a", "Geschäftsbedingungen"),
+                t("cdcd1d2c", "Füge deiner Organisation verbundene Accounts hinzu"),
+                t("d30ea6f3", function (e) {
+                    return "Möchtest du @" + e.name + " wirklich entfernen?";
+                }),
+                t("c2dfbb86", "Ja, wirklich"),
+                t("ba047f76", "Wenn du eine Verbindung entfernst, werden das zugehörige Häkchen und das Verbindungsabzeichen sofort entfernt. Deine Rechnung erhältst du noch bis Ende des Monats."),
+                t("j26dee0e", "Verbundenen Account entfernen"),
+                t("e30cbdf0", "Dieser verbundene Account ist ein Abonnent von Verifizierte Organisationen und muss eine Organisation bleiben. Er kann nicht in eine Person geändert werden."),
+                t("j3115ce8", "Person"),
+                t("d8bb1d84", "Organisation"),
+                t("e970bdbd", function (e) {
+                    return "Noch " + e.count + " Einladungen";
+                }),
                 t("id67d953", function (e) {
                     return "Beim Abrufen deiner Stripe-Kaufabschlussdetails ist ein Problem aufgetreten. Bitte wende dich an " + e.supportEmail + ", wenn dieses Problem weiterhin auftritt.";
                 }),
@@ -8883,8 +8905,8 @@
                 t("ha3efce4", "Automatisch"),
                 t("hd8d044d", function (e) {
                     return "Automatisch (" + e.quality + ")";
-                }),
-                t("a7bf9962", "Video herunterladen"),
+                });
+            t("a7bf9962", "Video herunterladen"),
                 t("ccc97152", "Wiedergabegeschwindigkeit"),
                 t("h531ade0", "Videoqualität"),
                 t("e8b5757c", "0,25 x"),
@@ -8915,8 +8937,8 @@
                 t("c1658fc6", "Das Medium konnte nicht abgespielt werden."),
                 t("h519ae04", "Die Medien wurden wegen eines Urheberrechtsanspruchs deaktiviert."),
                 t("ce871584", "Dieses Live-Video ist beendet."),
-                t("c101eb96", "Dieses Live-Video ist nicht verfügbar.");
-            t("gb24a514", "Diese Medien wurden aufgrund einer Meldung des Urheberrechtsinhabers deaktiviert."),
+                t("c101eb96", "Dieses Live-Video ist nicht verfügbar."),
+                t("gb24a514", "Diese Medien wurden aufgrund einer Meldung des Urheberrechtsinhabers deaktiviert."),
                 t("hcaf3e63", function (e) {
                     return "Diese Medien wurden wegen eines Urheberrechtsanspruchs von " + e.holder + " deaktiviert.";
                 }),
@@ -11491,6 +11513,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["Hilft bei der Suche nach Posts, "];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["Schadet Posts nicht, könnte aber helfen, weithin beliebte Posts "];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["", " dieser experimentellen Funktion"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["Als Post-Autor*in kannst du "];
@@ -13308,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.1faac98a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.3b255bea.js.map

@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: r, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: g, secondaryBar: y, style: k, subtitle: h, title: f, titleDomId: b, titleIconCell: _, titleIconCellSize: T, withBackground: w, withWideContainer: S } = this.props,
-                        { isModal: E } = this.context,
-                        F = i ? d : n.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        B = (function (e, t, a) {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: r, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: g, secondaryBar: y, style: k, subtitle: h, title: f, titleDomId: b, titleIconCell: _, titleIconCellSize: w, withBackground: T, withWideContainer: S } = this.props,
+                        { isModal: v } = this.context,
+                        E = i ? d : n.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        F = (function (e, t, a) {
                             return e && !(t && a);
-                        })(!!w, E, !!y);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: a, isFullWidth: l, isLarge: c, leftControl: F, middleControl: m, position: u(p, E, r), rightControl: g, style: k, subtitle: h, title: f, titleDomId: b, titleIconCell: _, titleIconCellSize: T, withBackground: B, withWideContainer: S }), y || null);
+                        })(!!T, v, !!y);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: a, isFullWidth: l, isLarge: c, leftControl: E, middleControl: m, position: u(p, v, r), rightControl: g, style: k, subtitle: h, title: f, titleDomId: b, titleIconCell: _, titleIconCellSize: w, withBackground: F, withWideContainer: S }), y || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -290,22 +290,22 @@
                 f = a.n(h),
                 b = a(187669),
                 _ = a(323265),
-                T = a(727828),
-                w = a(665979);
+                w = a(727828),
+                T = a(665979);
             const S = f().cc10f019,
-                E = f().f9b6b7d3,
-                F = f().a9af8753,
-                B = f().b93d00e5,
-                v = (e) => {
+                v = f().f9b6b7d3,
+                E = f().a9af8753,
+                F = f().b93d00e5,
+                B = (e) => {
                     const t = Math.floor((e ?? 0) / 60);
                     if (t < 60) return S({ minutes: t });
                     const a = Math.floor(t / 60);
-                    if (t < 1440) return E({ hours: a });
+                    if (t < 1440) return v({ hours: a });
                     const n = Math.floor(a / 24),
                         r = a - 24 * n;
-                    return n > 2 ? B({ days: n }) : F({ days: n, hours: r });
+                    return n > 2 ? F({ days: n }) : E({ days: n, hours: r });
                 },
-                C = ({ estimatedViewCount: e, estimatedViewTimeSeconds: t, lookbackDays: a }) => ({ viewCount: (0, w.uf)(e ?? 0), timeSpent: v(t ?? 0), timeSpentAnnualized: v(((t ?? 0) / a) * 365), lookbackDays: a }),
+                C = ({ estimatedViewCount: e, estimatedViewTimeSeconds: t, lookbackDays: a }) => ({ viewCount: (0, T.uf)(e ?? 0), timeSpent: B(t ?? 0), timeSpentAnnualized: B(((t ?? 0) / a) * 365), lookbackDays: a }),
                 Z = (e) => {
                     const t = 0.25 * e + "s";
                     return o.default.create(() => ({ fadeAnimation: { animationDuration: "0.75s", animationIterationCount: "once", animationDelay: t, animationKeyframes: [{ from: { opacity: 0, transform: "translateY(15px)" }, to: { opacity: 1, transform: "translateY(0px)" } }], animationTimingFunction: "ease-in-out", animationFillMode: "forwards" } })).fadeAnimation;
@@ -360,15 +360,15 @@
                     const t = (0, P.A)(M, { lookback_days: e }, { fetchPolicy: "network-only" }).data;
                     return { estimatedViewCount: t.viewer_v2?.ads_stats_for_viewer?.estimated_view_counts ?? null, estimatedViewTimeSeconds: t.viewer_v2?.ads_stats_for_viewer?.estimated_view_time_in_seconds ?? null, lookbackDays: e };
                 },
-                A = f().fe946974,
-                W = f().f6c50ec0,
-                z = f().b1319404,
+                z = f().fe946974,
+                A = f().f6c50ec0,
+                W = f().b1319404,
                 Q = f().baa4acae,
                 q = f().c00e8600,
-                O = f().ic073e4e,
-                V = f().eb866e88,
-                R = f().aa77b70c,
-                H = f().c534c6b4,
+                V = f().ic073e4e,
+                O = f().eb866e88,
+                H = f().aa77b70c,
+                R = f().c534c6b4,
                 U = f().i57332f0,
                 N = f().j24c37b2,
                 $ = ({ adStats: e, trialStatus: t }) => {
@@ -382,12 +382,12 @@
                             n.scribe({ action: "impression" });
                         });
                     const o = "Ended" === t,
-                        s = r.useMemo(() => r.createElement(y.ZP, { size: "title2", style: [X.title, Z(0)], weight: "bold" }, o ? W : A), [o]),
+                        s = r.useMemo(() => r.createElement(y.ZP, { size: "title2", style: [X.title, Z(0)], weight: "bold" }, o ? A : z), [o]),
                         c = r.useMemo(() => {
                             const { timeSpent: t, timeSpentAnnualized: a, viewCount: n } = C(e);
-                            return r.createElement(i.Z, { style: X.metricCards }, r.createElement(i.Z, { style: [X.metricCard, Z(1)], testID: "ads_not_seen_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, z), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, Q), r.createElement("div", { style: X.metricTextBlue }, n)), r.createElement(i.Z, { style: [X.metricCard, Z(2)], testID: "time_saved_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, q), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, O), r.createElement("div", { style: X.metricTextYellow }, t)), r.createElement(i.Z, { style: [X.metricCard, Z(3)], testID: "time_saved_annualized_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, V), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, R), r.createElement("div", { style: X.metricTextGreen }, a)));
+                            return r.createElement(i.Z, { style: X.metricCards }, r.createElement(i.Z, { style: [X.metricCard, Z(1)], testID: "ads_not_seen_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, W), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, Q), r.createElement("div", { style: X.metricTextBlue }, n)), r.createElement(i.Z, { style: [X.metricCard, Z(2)], testID: "time_saved_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, q), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, V), r.createElement("div", { style: X.metricTextYellow }, t)), r.createElement(i.Z, { style: [X.metricCard, Z(3)], testID: "time_saved_annualized_metric" }, r.createElement(y.ZP, { size: "headline1", weight: "bold" }, O), r.createElement(y.ZP, { color: "gray700", weight: "medium" }, H), r.createElement("div", { style: X.metricTextGreen }, a)));
                         }, [e]),
-                        u = r.useMemo(() => r.createElement(i.Z, { style: X.footer }, r.createElement(i.Z, { style: X.gradient }), r.createElement(T.Z, { variant: "AdFreeTrial", wrapperStyles: [X.button, X.buttonAnimation] })), []);
+                        u = r.useMemo(() => r.createElement(i.Z, { style: X.footer }, r.createElement(i.Z, { style: X.gradient }), r.createElement(w.Z, { variant: "AdFreeTrial", wrapperStyles: [X.button, X.buttonAnimation] })), []);
                     return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: a ? X.containerSmall : X.containerLarge }, s, c), u);
                 },
                 j = () => {
@@ -396,7 +396,7 @@
                     return r.createElement(
                         i.Z,
                         { style: [Z(0), e ? X.containerSmall : X.containerLarge] },
-                        r.createElement(y.ZP, { size: "title2", style: X.title, weight: "bold" }, H),
+                        r.createElement(y.ZP, { size: "title2", style: X.title, weight: "bold" }, R),
                         r.createElement(y.ZP, null, U),
                         r.createElement(
                             k.ZP,
@@ -457,8 +457,8 @@
                     const h = r.useCallback(() => {
                             o && s((0, re.Z)((0, ne.ZP)({ userId: o }))), l.push("/home");
                         }, [l, o, s]),
-                        T = r.useMemo(() => Math.floor(e / 60 / 24), [e]);
-                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: a ? oe.containerSmall : oe.containerLarge }, r.createElement(i.Z, { style: oe.successContent }, r.createElement(i.Z, { style: [oe.adFreePill, Z(0)] }, r.createElement(y.ZP, { size: "title3", weight: "medium" }, r.createElement(ee.default, { style: oe.adFreePillIcon }), c.pillText)), r.createElement(i.Z, { style: [oe.animationGroup, Z(1)] }, r.createElement(y.ZP, { size: "title2", style: oe.title, weight: "bold" }, c.title({ durationInDays: T })), r.createElement(y.ZP, { size: "headline2" }, c.description), r.createElement(y.ZP, { size: "headline2" }, c.descriptionExtra)), r.createElement(k.ZP, { onClick: h, size: "xLarge", style: [oe.gotItButton, Z(2)], type: "primaryFilled" }, c.buttonText))));
+                        w = r.useMemo(() => Math.floor(e / 60 / 24), [e]);
+                    return r.createElement(r.Fragment, null, r.createElement(i.Z, { style: a ? oe.containerSmall : oe.containerLarge }, r.createElement(i.Z, { style: oe.successContent }, r.createElement(i.Z, { style: [oe.adFreePill, Z(0)] }, r.createElement(y.ZP, { size: "title3", weight: "medium" }, r.createElement(ee.default, { style: oe.adFreePillIcon }), c.pillText)), r.createElement(i.Z, { style: [oe.animationGroup, Z(1)] }, r.createElement(y.ZP, { size: "title2", style: oe.title, weight: "bold" }, c.title({ durationInDays: w })), r.createElement(y.ZP, { size: "headline2" }, c.description), r.createElement(y.ZP, { size: "headline2" }, c.descriptionExtra)), r.createElement(k.ZP, { onClick: h, size: "xLarge", style: [oe.gotItButton, Z(2)], type: "primaryFilled" }, c.buttonText))));
                 },
                 le = (e) => r.createElement(u.nO, { namespace: { component: "activated" } }, r.createElement(ie, e)),
                 oe = o.default.create((e) => ({ containerSmall: { padding: e.spaces.space20, paddingBottom: e.spaces.space24 }, containerLarge: { paddingHorizontal: e.spaces.space40, paddingBottom: e.spaces.space24 }, title: { marginBottom: e.spaces.space20 }, successContent: { gap: e.spaces.space12 }, adFreePill: { paddingVertical: e.spaces.space8, paddingStart: e.spaces.space24, paddingEnd: e.spaces.space28, borderRadius: e.borderRadii.infinite, borderColor: e.colors.gray500, borderWidth: e.borderWidths.medium, flexDirection: "row", marginRight: "auto", alignItems: "center", gap: e.spaces.space8, marginBottom: e.spaces.space32, opacity: 0 }, adFreePillIcon: { color: e.colors.green500 }, gotItButton: { marginTop: e.spaces.space40, opacity: 0 }, animationGroup: { opacity: 0 } })),
@@ -544,10 +544,10 @@
             fe.hash = "d7a3939996be7be4b7d04c8107e31044";
             const be = fe;
             var _e = a(351743),
-                Te = a.n(_e);
-            const we = be,
+                we = a.n(_e);
+            const Te = be,
                 Se = () => {
-                    const [e, t] = Te()(we);
+                    const [e, t] = we()(Te);
                     return [
                         r.useCallback(
                             ({ productId: t }) =>
@@ -565,7 +565,7 @@
                         t,
                     ];
                 };
-            var Ee = (function () {
+            var ve = (function () {
                 var e = [
                     {
                         alias: null,
@@ -609,10 +609,10 @@
                 ];
                 return { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useEligibleQuickFreeTrialsQuery", selections: e, type: "Query", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useEligibleQuickFreeTrialsQuery", selections: e }, params: { id: "ADznLYmcEKpMit4BgoKZJg", metadata: {}, name: "useEligibleQuickFreeTrialsQuery", operationKind: "query", text: null } };
             })();
-            Ee.hash = "b5502426b1e24be79c8ac8022f604d68";
-            const Fe = Ee,
-                Be = () => (0, P.A)(Fe, {}).data;
-            var ve = (function () {
+            ve.hash = "b5502426b1e24be79c8ac8022f604d68";
+            const Ee = ve,
+                Fe = () => (0, P.A)(Ee, {}).data;
+            var Be = (function () {
                 var e = [{ kind: "Literal", name: "s", value: "4721" }],
                     t = {
                         alias: null,
@@ -631,13 +631,13 @@
                     n = { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null };
                 return { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useListQuickFreeTrialsQuery", selections: [{ alias: null, args: e, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "QuickFreeTrialSubscription", kind: "LinkedField", name: "list_quick_free_trials_subscriptions", plural: !0, selections: [t, a, n], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }], type: "Query", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useListQuickFreeTrialsQuery", selections: [{ alias: null, args: e, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "QuickFreeTrialSubscription", kind: "LinkedField", name: "list_quick_free_trials_subscriptions", plural: !0, selections: [t, a, n, { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] }, params: { id: "-C_h3io7Su8VA1rQ97z1bw", metadata: {}, name: "useListQuickFreeTrialsQuery", operationKind: "query", text: null } };
             })();
-            ve.hash = "20d3245f434315a6098e5e01121358e9";
-            const Ce = ve,
+            Be.hash = "20d3245f434315a6098e5e01121358e9";
+            const Ce = Be,
                 Ze = () => (0, P.A)(Ce, {}).data,
                 xe = Object.freeze({ NoAds: "no-ads-quick-free-trial" }),
                 De = ({ quickFreeTrialProductType: e, setHideBackButton: t }) => {
                     const a = (0, m.Z)(),
-                        n = Be(),
+                        n = Fe(),
                         [i] = Se(),
                         o = Ze(),
                         [s, c] = r.useState(!1),
@@ -671,6 +671,19 @@
                     const t = "light" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgb(52 147 239 / 30%) 0%, rgb(255, 255, 255) 100%)" : "dark" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgba(52, 147, 239, 0.3) 0%, rgb(21 32 44) 100%)" : "radial-gradient(56.15141888052253% 56.15141888052254% at 49.97201160183933% 38.95898881943194%,#273649 0%,rgba(0,0,0,1) 100%)";
                     return { appBar: { backgroundColor: e.colors.transparent }, backgroundShadow: { position: "absolute", top: -300 * e.scaleMultiplier, left: -100 * e.scaleMultiplier, start: -150, minHeight: 650 * e.scaleMultiplier, width: "100%", backgroundImage: t } };
                 });
+        },
+        748138: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => s });
+            var n = a(202784),
+                r = a(890601),
+                i = a(783427),
+                l = a(347101);
+            const o = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const s = o;
         },
         130724: (e, t, a) => {
             var n = a(23103),
@@ -721,4 +734,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.959113ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.QuickFreeTrial.1797754a.js.map

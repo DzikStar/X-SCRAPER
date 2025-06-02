@@ -5501,13 +5501,35 @@
                 n("g22c8c30", "如果這些備註被足夠多的貢獻者 (包括那些在過去的評價中通常表示不同意的貢獻者) 評價為有幫助，它們就會開始作為附加的相關內容隨貼文一起公開顯示。"),
                 n("jf04b084", "這些備註是由那些認為貼文沒有誤導性且不需要加入相關內容的貢獻者所加入。"),
                 n("g5a72e98", "這些備註只會在社群備註中作為附加資訊向評價者顯示，即使它們獲得「有幫助」狀態，也不會作為相關內容隨貼文一起顯示。"),
-                n("h53cb7de", "你對此貼文有何看法？"),
-                n("dc3bfc82", "你喜歡此貼文的哪些方面 (若有的話)？"),
-                n("b4704bf4", "你不喜歡此貼文的哪些方面 (若有的話)？"),
+                n("b8719c22", "協助辨識貼文是否受到持有不同觀點者的喜歡。"),
+                n("jcdf97d4", "你喜歡此貼文的什麼地方？"),
+                n("d4d7b67e", "你不喜歡此貼文的什麼地方？"),
                 n("ed5156fa", "儲存你的評價時發生錯誤，請再試一次。"),
-                n("d5f9fb42", "你已評價此社群提升"),
+                n("d0ed3636", "你已評價此貼文"),
                 n("j6aa6172", "要刪除評價嗎？"),
                 n("i4112750", "此動作無法復原。"),
+                n("i6f6191a", "謝謝你！"),
+                n("h5575012", "Agree and submit"),
+                n("f9171e52", "此貼文獲得了一些通常持反對意見者的喜歡，但目前發表的意見數量有限。"),
+                n("j0f9919a", "你的評價不會對貼文造成負面影響，而是能協助積極地辨識廣受喜歡的貼文。"),
+                n("b3af830c", "你的意見："),
+                n("d0b29562", "立即評價更多貼文"),
+                n("i36ea87a", "我同意"),
+                n("d5befc34", "我學到了一些有趣的知識"),
+                n("je26ecf2", "它提出了有意義的觀點"),
+                n("e4e331aa", "它在經常引起兩極化意見的主題上達成了統一"),
+                n("ed61ff2a", "令人暖心或喜愛"),
+                n("gc3104d8", "鼓舞人心或令人興奮"),
+                n("j8c4400e", "搞笑有趣"),
+                n("j4738406", "不適用：我沒有喜歡的地方"),
+                n("d93d1666", "我不同意"),
+                n("d6130466", "它沒有任何有意義的內容"),
+                n("d96835b6", "我對它不感興趣"),
+                n("b7ba4150", "不適用：我沒有不喜歡的地方"),
+                n("g0402b3b", "受到持有不同觀點者喜歡"),
+                n("ged62c2b", "聚焦"),
+                n("b5d5f7f1", "指引方向"),
+                n("a42fef87", "Learn more"),
                 n("bd7eb888", "查看此貼文的所有備註"),
                 n("i97b83f6", "提交你的申訴時發生錯誤，請再試一次。"),
                 n("a038ab9a", "翻譯備註"),
@@ -5858,8 +5880,8 @@
                 n("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "刪除資料夾"),
-                n("f4ea967a", "資料夾已刪除"),
+                n("h18f86a4", "刪除資料夾");
+            n("f4ea967a", "資料夾已刪除"),
                 n("b670aa62", "資料夾名稱"),
                 n("aece5462", "資料夾名稱已更新成功"),
                 n("e3299b94", "發生錯誤。請稍後再嘗試更新該資料夾。"),
@@ -5890,8 +5912,8 @@
                     return "結束時間：" + e.timestamp;
                 }),
                 n("daca8a2c", "在停駐列中開啟"),
-                n("e3aac82a", "正在載入廣播");
-            n("i0ed3f4e", "活動圖片"),
+                n("e3aac82a", "正在載入廣播"),
+                n("i0ed3f4e", "活動圖片"),
                 n("cbae35fa", "檢舉廣播"),
                 n("fd12ab58", "貼文收集"),
                 n("a226497c", "建立新的社群"),
@@ -6862,8 +6884,8 @@
                 n("b925c18c", "薪資類型"),
                 n("j3d242ce", "無效範圍"),
                 n("f4d07bd2", "包括選擇性的詳細資料，以便應徵者更輕鬆地透過搜尋找到你的職位。"),
-                n("b8cbb51a", "工作摘要"),
-                n("bda6881e", "此工作已從你的應徵者追蹤系統 (ATS) 匯入。請注意，只能修改特定欄位。"),
+                n("b8cbb51a", "工作摘要");
+            n("bda6881e", "此工作已從你的應徵者追蹤系統 (ATS) 匯入。請注意，只能修改特定欄位。"),
                 n("b075c68a", "編輯工作"),
                 n("d4b6a6e0", "用戶檔案焦點"),
                 n("j2dd3686", "在我的貼文上方重點展示精選工作。"),
@@ -6888,8 +6910,8 @@
                 n("c0195168", "變更你的應用程式圖示和導覽選項"),
                 n("b6b5dc94", "獲得認證"),
                 n("b06db848", "在此平台上脫穎而出"),
-                n("e3e3a97c", "透過你的貼文來賺取收益分成");
-            n("f15bc24e", "提高的 Grok 配額"),
+                n("e3e3a97c", "透過你的貼文來賺取收益分成"),
+                n("f15bc24e", "提高的 Grok 配額"),
                 n("c4666e1c", "我們最新模型 Grok 3 的更多使用配額"),
                 n("he74ae7a", "最高的 Grok 使用配額"),
                 n("f5732cd4", "加上，DeepSearch 和「思考」的擴充存取權"),
@@ -7206,16 +7228,16 @@
                 n("hd80bd3e", "推廣貼文"),
                 n("fe2b0008", "了解如何使用 X"),
                 n("h257d4aa", "選取要推廣的貼文"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
-                n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("fe946974", "你的 X 無廣告試用"),
+                n("f6c50ec0", "你的無廣告試用已結束"),
+                n("b1319404", "避免的廣告數"),
+                n("baa4acae", "你會看到更個人化的內容。"),
+                n("c00e8600", "預估的節省時間"),
+                n("ic073e4e", "你的時間相當寶貴。"),
+                n("eb866e88", "預估一年的節省時間"),
+                n("aa77b70c", "根據你的使用情況。"),
+                n("c534c6b4", "我們正在進行數據統計…"),
+                n("i57332f0", "請繼續瀏覽並稍後回來查看，看看你避免了多少廣告及節省了多少時間"),
                 n("cc10f019", function (e) {
                     return e.minutes + " 分鐘";
                 }),
@@ -7231,11 +7253,11 @@
                 n("be88be23", function (e) {
                     return "你的 " + e.durationInDays + " 天無廣告試用已啟動";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("a4413462", "在整個試用期間，你可以查看統計資料，了解你避免了多少廣告及節省了多少時間。"),
+                n("ae3f3b0e", "盡情享用！"),
+                n("cdac8dc4", "查看你的新摘要"),
                 n("dec99336", "無廣告"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("i95803fa", "很遺憾，你目前不符合資格。"),
                 n("d28a1d72", "透過 Radar，成為第一個掌握趨勢的人"),
                 n("fb70427a", "隆重介紹 X 上最強大的搜尋工具。"),
                 n("i54bf620", "監控關鍵字"),
@@ -7840,35 +7862,7 @@
                 n("c29e3a88", "選取附屬帳戶"),
                 n("j8318d57", function (e) {
                     return e.number + " 個附屬帳戶";
-                }),
-                n("bf809ec0", "選取附屬帳戶"),
-                n("b719e224", "沒有結果"),
-                n("c9938100", "搜尋結果"),
-                n("d1a35ec6", "加入帳戶"),
-                n("b437adda", "升級至付費"),
-                n("f1f6c88b", function (e) {
-                    return "帳戶 (" + e.count + ")";
-                }),
-                n("b02156b8", "邀請"),
-                n("gd67d29b", function (e) {
-                    return "邀請 (" + e.count + ")";
-                }),
-                n("daf646e6", "請注意：你必須適當地標示帳戶。"),
-                n("i3895c32", "你的帳戶正在審核中，因為你變更了 X 推號"),
-                n("i5f8b628", "在帳戶完成審核之前，你無法修改附屬帳戶。"),
-                n("e9e663ac", "你的款項逾期未付。"),
-                n("c3ddd22c", "條款"),
-                n("c9729d8a", "條款"),
-                n("cdcd1d2c", "將附屬帳戶加入你的組織"),
-                n("d30ea6f3", function (e) {
-                    return "你確定要移除 @" + e.name + " 嗎？";
-                }),
-                n("c2dfbb86", "請執行"),
-                n("ba047f76", "若移除附屬帳戶，將會立即移除他們的勾號及附屬帳戶徽章。你將繼續支付費用至該月結束。"),
-                n("j26dee0e", "移除附屬帳戶"),
-                n("e30cbdf0", "此附屬帳戶是一個已認證組織的訂閱者，因此必須保持組織身分。他們不能變更為個人身分。"),
-                n("j3115ce8", "個人"),
-                n("d8bb1d84", "組織");
+                });
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7907,9 +7901,37 @@
                     r(e, c)
                 );
             }
-            n("e970bdbd", function (e) {
-                return "還剩 " + e.count + " 個邀請";
-            }),
+            n("bf809ec0", "選取附屬帳戶"),
+                n("b719e224", "沒有結果"),
+                n("c9938100", "搜尋結果"),
+                n("d1a35ec6", "加入帳戶"),
+                n("b437adda", "升級至付費"),
+                n("f1f6c88b", function (e) {
+                    return "帳戶 (" + e.count + ")";
+                }),
+                n("b02156b8", "邀請"),
+                n("gd67d29b", function (e) {
+                    return "邀請 (" + e.count + ")";
+                }),
+                n("daf646e6", "請注意：你必須適當地標示帳戶。"),
+                n("i3895c32", "你的帳戶正在審核中，因為你變更了 X 推號"),
+                n("i5f8b628", "在帳戶完成審核之前，你無法修改附屬帳戶。"),
+                n("e9e663ac", "你的款項逾期未付。"),
+                n("c3ddd22c", "條款"),
+                n("c9729d8a", "條款"),
+                n("cdcd1d2c", "將附屬帳戶加入你的組織"),
+                n("d30ea6f3", function (e) {
+                    return "你確定要移除 @" + e.name + " 嗎？";
+                }),
+                n("c2dfbb86", "請執行"),
+                n("ba047f76", "若移除附屬帳戶，將會立即移除他們的勾號及附屬帳戶徽章。你將繼續支付費用至該月結束。"),
+                n("j26dee0e", "移除附屬帳戶"),
+                n("e30cbdf0", "此附屬帳戶是一個已認證組織的訂閱者，因此必須保持組織身分。他們不能變更為個人身分。"),
+                n("j3115ce8", "個人"),
+                n("d8bb1d84", "組織"),
+                n("e970bdbd", function (e) {
+                    return "還剩 " + e.count + " 個邀請";
+                }),
                 n("id67d953", function (e) {
                     return "擷取你的 Stripe 結帳詳細資料時發生錯誤。如果此問題持續存在，請聯絡 " + e.supportEmail + "。";
                 }),
@@ -8882,8 +8904,8 @@
                 n("ha3efce4", "自動"),
                 n("hd8d044d", function (e) {
                     return "自動 (" + e.quality + ")";
-                }),
-                n("a7bf9962", "下載影片"),
+                });
+            n("a7bf9962", "下載影片"),
                 n("ccc97152", "播放速度"),
                 n("h531ade0", "影片畫質"),
                 n("e8b5757c", "0.25 倍"),
@@ -8914,8 +8936,8 @@
                 n("c1658fc6", "無法播放媒體。"),
                 n("h519ae04", "由於著作權聲明的緣故，此媒體已遭到停用。"),
                 n("ce871584", "此廣播已結束。"),
-                n("c101eb96", "此廣播無法觀看。");
-            n("gb24a514", "為了回應著作權所有人的檢舉，此媒體已停用。"),
+                n("c101eb96", "此廣播無法觀看。"),
+                n("gb24a514", "為了回應著作權所有人的檢舉，此媒體已停用。"),
                 n("hcaf3e63", function (e) {
                     return "由於 " + e.holder + " 提出的著作權聲明，此媒體已遭到停用。";
                 }),
@@ -11487,6 +11509,30 @@
                             },
                         },
                         {
+                            key: "a7eaa695",
+                            get: function () {
+                                return ["協助找出", "的貼文"];
+                            },
+                        },
+                        {
+                            key: "f863bea7",
+                            get: function () {
+                                return ["不會對貼文造成損害，而是能協助", "在廣受喜歡的貼文"];
+                            },
+                        },
+                        {
+                            key: "e59bfa27",
+                            get: function () {
+                                return ["為此試驗功能"];
+                            },
+                        },
+                        {
+                            key: "ffd3d1a1",
+                            get: function () {
+                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                            },
+                        },
+                        {
                             key: "bd9cf141",
                             get: function () {
                                 return ["身為貼文作者，你可以"];
@@ -12077,7 +12123,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% 手續費，最低 "];
                             },
                         },
                         {
@@ -12962,8 +13008,8 @@
                 y = (m._currencyNameFormat, m._currencyFormatterFn),
                 k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 p = (m._dateFormat, m._dateFormatterFn),
-                l = m._relativeTimeFormatterFn,
-                j = m._unitFormatterFn;
+                j = m._relativeTimeFormatterFn,
+                l = m._unitFormatterFn;
             (m.a1844743793 = h(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { other: "0" }, 4: { other: "0萬" }, 5: { other: "00萬" }, 6: { other: "000萬" }, 7: { other: "0000萬" }, 8: { other: "0億" }, 9: { other: "00億" }, 10: { other: "000億" }, 11: { other: "0000億" }, 12: { other: "0兆" }, 13: { other: "00兆" }, 14: { other: "000兆" }, maxExponent: 14 }], m("zh-Hant").pluralGenerator({}))),
                 (m.a1393757629 = h(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (m.a917643357 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13162,23 +13208,23 @@
                 (m.b166302607 = p(m("zh-Hant").dateToPartsFormatter({ date: "medium" }))),
                 (m.a883642277 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (m.a2136887717 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "EEEE" }))),
-                (m.a913265705 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
-                (m.a1728784644 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
-                (m.b158178652 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
-                (m.b1120716236 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
-                (m.a901064517 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
-                (m.a5535973 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
-                (m.b1575113611 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
-                (m.b313558257 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "{0}/天" } })),
-                (m.a266069838 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "每天 {0}" } })),
-                (m.b1088937037 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "{0}/月" } })),
-                (m.a1883138290 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "每月 {0}" } })),
-                (m.b170551218 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "{0}/年" } })),
-                (m.a360073293 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "每年 {0}" } })),
-                (m.b508927224 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
-                (m.a1124752744 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
-                (m.a1350858712 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
-                (m.b197980252 = j(m("zh-Hant").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a913265705 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
+                (m.a1728784644 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
+                (m.b158178652 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
+                (m.b1120716236 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
+                (m.a901064517 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a5535973 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
+                (m.b1575113611 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
+                (m.b313558257 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "{0}/天" } })),
+                (m.a266069838 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "每天 {0}" } })),
+                (m.b1088937037 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "{0}/月" } })),
+                (m.a1883138290 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "每月 {0}" } })),
+                (m.b170551218 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "{0}/年" } })),
+                (m.a360073293 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "每年 {0}" } })),
+                (m.b508927224 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a1124752744 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
+                (m.a1350858712 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
+                (m.b197980252 = l(m("zh-Hant").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
                 n("d58baa7f", m.a1844743793),
                 n("ia24dc8d", m.a1393757629),
                 n("iab73d4b", m.a917643357),
@@ -13303,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.a2ac637a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.cc6016ea.js.map
