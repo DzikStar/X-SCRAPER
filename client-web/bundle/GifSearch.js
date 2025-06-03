@@ -63,10 +63,10 @@
                     const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: o, hideBackButton: d, isFullWidth: n, isLarge: i, leftControl: c, middleControl: u, position: m, rightControl: p, secondaryBar: D, style: g, subtitle: y, title: f, titleDomId: M, titleIconCell: b, titleIconCellSize: w, withBackground: S, withWideContainer: _ } = this.props,
                         { isModal: k } = this.context,
                         I = d ? c : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        A = (function (e, a, t) {
+                        C = (function (e, a, t) {
                             return e && !(a && t);
                         })(!!S, k, !!D);
-                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: a, centeredLogo: t, isFullWidth: n, isLarge: i, leftControl: I, middleControl: u, position: h(m, k, o), rightControl: p, style: g, subtitle: y, title: f, titleDomId: M, titleIconCell: b, titleIconCellSize: w, withBackground: A, withWideContainer: _ }), D || null);
+                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: a, centeredLogo: t, isFullWidth: n, isLarge: i, leftControl: I, middleControl: u, position: h(m, k, o), rightControl: p, style: g, subtitle: y, title: f, titleDomId: M, titleIconCell: b, titleIconCellSize: w, withBackground: C, withWideContainer: _ }), D || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -550,21 +550,21 @@
                 _ = t(704279),
                 k = t(798538),
                 I = t(497294),
-                A = t(632960);
-            const C = [],
+                C = t(632960);
+            const A = [],
                 P = (e, { module: a, query: t }) => a.selectInitialFetchStatus(e, t),
                 Z = (e, { module: a, query: t }) => a.selectItems(e, t),
                 E = (e, { module: a, query: t }) => a.selectNextFetchStatus(e, t),
-                v = (e) => {
+                x = (e) => {
                     const { tweetComposer: a } = e,
                         t = a?.activeParentKey,
-                        r = A.E_(e, t),
+                        r = C.E_(e, t),
                         o = a[t],
                         d = o.composerData[r]?.mediaIds;
-                    return Array.isArray(d) ? d : C;
+                    return Array.isArray(d) ? d : A;
                 },
-                x = (0, S.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: P, items: Z, nextFetchStatus: E, oldMediaIds: v }))
+                v = (0, S.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: P, items: Z, nextFetchStatus: E, oldMediaIds: x }))
                     .adjustStateProps(({ initialFetchStatus: e, items: a, nextFetchStatus: t, oldMediaIds: r }) => ({ initialFetchStatus: e, items: Array.isArray(a) ? (0, w.Z)(a, (e) => (e.url ? { ...e, thumbnail_images: [...e.thumbnail_images].sort((e, a) => a.height * a.width - e.height * e.width) } : void 0)) : void 0, nextFetchStatus: t, oldMediaIds: r }))
                     .propsFromActions(({ history: e, module: a }) => {
                         return {
@@ -579,7 +579,7 @@
                             fetchInitialIfNeeded: a.fetchInitialIfNeeded,
                             fetchNextIfNeeded: a.fetchNextIfNeeded,
                             scribeAction: _.n,
-                            updateSingleComposerV2: A.zi,
+                            updateSingleComposerV2: C.zi,
                         };
                         var t;
                     });
@@ -605,16 +605,16 @@
                 O = i().a723aefa,
                 K = i().a6ecfa0a,
                 U = (e) => e.map((e) => e.id).join("-"),
-                H = (0, c.Z)(null),
-                V = [];
-            class W extends r.Component {
+                W = (0, c.Z)(null),
+                H = [];
+            class Q extends r.Component {
                 constructor(e, a) {
                     super(e, a),
                         (this._rootNode = null),
                         (this._render = () => {
                             const { items: e, query: a } = this.props,
                                 { width: t } = this.state,
-                                o = e ? this._brickLayout(e, 150, t) : V;
+                                o = e ? this._brickLayout(e, 150, t) : H;
                             return t > 0 ? r.createElement(p.Z, { assumedItemHeight: 150, cacheKey: `gifSearchCategory/${a}`, footer: this._getRenderFooter(), identityFunction: U, items: o, noItemsRenderer: this._renderEmptyItem, onNearEnd: this._handleFetchNext, renderer: this._getRowRenderer() }) : null;
                         }),
                         (this._getMemoizedRowRenderer = (0, h.Z)((e, a, t) => (o) => {
@@ -623,7 +623,7 @@
                             let s = 0;
                             return r.createElement(
                                 d.Z,
-                                { style: [Q.imageRow, { height: n }] },
+                                { style: [V.imageRow, { height: n }] },
                                 o.map((a, d) => {
                                     const {
                                             thumbnail_images: [i],
@@ -662,7 +662,7 @@
                             l({ page: o, section: "gif_search", element: "category", action: r ? "search" : "select" }), d?.go(-2);
                         }),
                         (this._renderEmptyItem = () => r.createElement(n.Z, { header: O, message: K })),
-                        (this._getRenderMemoizedFooter = (0, h.Z)((e, a) => r.createElement(m.Z, { fetchStatus: e, onRequestRetry: a, render: H }))),
+                        (this._getRenderMemoizedFooter = (0, h.Z)((e, a) => r.createElement(m.Z, { fetchStatus: e, onRequestRetry: a, render: W }))),
                         (this._getRenderFooter = () => {
                             const { nextFetchStatus: e } = this.props;
                             return this._getRenderMemoizedFooter(e, this._handleFetchNext);
@@ -698,12 +698,12 @@
                     return r.createElement("div", { "data-testid": q, ref: this._setRootNode }, r.createElement(m.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, ref: this._setRootNode, render: this._render }));
                 }
             }
-            (W.contextType = D.rC), (W.defaultProps = { fromSearch: !1 });
-            const Q = l.default.create((e) => ({ emptyItem: { display: "inline-block", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space32 }, imageRow: { flexDirection: "row", marginBottom: 2 } })),
-                $ = x(W);
+            (Q.contextType = D.rC), (Q.defaultProps = { fromSearch: !1 });
+            const V = l.default.create((e) => ({ emptyItem: { display: "inline-block", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space32 }, imageRow: { flexDirection: "row", marginBottom: 2 } })),
+                $ = v(Q);
         },
         16569: (e, a, t) => {
-            t.r(a), t.d(a, { GifSearchPaths: () => x, GifSearchScreen: () => N, default: () => B });
+            t.r(a), t.d(a, { GifSearchPaths: () => v, GifSearchScreen: () => N, default: () => B });
             t(136728);
             var r = t(202784),
                 o = t(325686),
@@ -728,19 +728,19 @@
                 _ = t(659773);
             const k = (e, a) => (0, S.l4)(e).shouldAutoPlayGif,
                 I = (0, w.Z)().propsFromState(() => ({ shouldAutoPlayGif: k, isDataSaverEnabled: S.IX, effectiveAutoplayOption: _.AP }));
-            var A = t(74938),
-                C = t(663194);
+            var C = t(74938),
+                A = t(663194);
             const P = c().a50ba822,
                 Z = c().a9ae1e78,
                 E = (0, M.p)(
                     () =>
                         Promise.all([
                             t.e("icons.0"),
+                            t.e("icons.13"),
+                            t.e("icons.22"),
+                            t.e("icons.29"),
                             t.e("icons.5"),
-                            t.e("icons.12"),
-                            t.e("icons.20"),
-                            t.e("icons.2"),
-                            t.e("icons.21"),
+                            t.e("icons.15"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -749,7 +749,7 @@
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                            t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                            t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -783,15 +783,15 @@
                         ]).then(t.bind(t, 558969)),
                     { shouldMigrateToX: !1 },
                 ),
-                v = (0, M.p)(
+                x = (0, M.p)(
                     () =>
                         Promise.all([
                             t.e("icons.0"),
+                            t.e("icons.13"),
+                            t.e("icons.22"),
+                            t.e("icons.29"),
                             t.e("icons.5"),
-                            t.e("icons.12"),
-                            t.e("icons.20"),
-                            t.e("icons.2"),
-                            t.e("icons.21"),
+                            t.e("icons.15"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -800,7 +800,7 @@
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                            t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                            t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -834,7 +834,7 @@
                         ]).then(t.bind(t, 800708)),
                     { shouldMigrateToX: !1 },
                 ),
-                x = { category: "/i/foundmedia/category", search: "/i/foundmedia/search" };
+                v = { category: "/i/foundmedia/category", search: "/i/foundmedia/search" };
             class N extends r.Component {
                 constructor(e, a) {
                     super(e, a),
@@ -850,8 +850,8 @@
                         }),
                         (this._handleClear = () => {
                             const { history: e, isDataSaverEnabled: a, location: t } = this.props,
-                                r = t.pathname.startsWith(x.category),
-                                o = t.pathname === x.search && t.state && t.state.query;
+                                r = t.pathname.startsWith(v.category),
+                                o = t.pathname === v.search && t.state && t.state.query;
                             !a && (r || o) ? e.goBack() : a && this.setState({ searchDisabled: !0 });
                         }),
                         (this._handleSubmit = () => {
@@ -864,10 +864,10 @@
                         }),
                         (this._goToQuery = (e) => {
                             const { history: a, isDataSaverEnabled: t, location: r } = this.props,
-                                o = { pathname: x.search },
+                                o = { pathname: v.search },
                                 d = r.state && r.state.query,
-                                n = r.pathname === x.search && !d,
-                                l = r.pathname.startsWith(x.category) || (r.pathname === x.search && d),
+                                n = r.pathname === v.search && !d,
+                                l = r.pathname.startsWith(v.category) || (r.pathname === v.search && d),
                                 s = !t && l,
                                 i = r.state && r.state.dmConversationId;
                             e ? ((o.state = { dmConversationId: i, query: e }), n ? a.push(o) : a.replace(o)) : s && a.goBack();
@@ -881,11 +881,11 @@
                         o = this._gifSearchKey;
                     if (!o) return r.createElement(y.Z, { to: "/" });
                     const n = { gifSearchKey: o, history: e, location: a, searchBox: this._renderSearchBox(), shouldAutoPlayGif: t };
-                    return r.createElement(g.nO, { namespace: this._getScribeNamespace(o) }, r.createElement(d.Switch, null, r.createElement(d.Route, { exact: !0, path: x.search }, r.createElement(E, n)), r.createElement(d.Route, { exact: !0, path: `${x.category}/${f.kM}` }, r.createElement(v, n)), r.createElement(d.Route, { component: b.default })));
+                    return r.createElement(g.nO, { namespace: this._getScribeNamespace(o) }, r.createElement(d.Switch, null, r.createElement(d.Route, { exact: !0, path: v.search }, r.createElement(E, n)), r.createElement(d.Route, { exact: !0, path: `${v.category}/${f.kM}` }, r.createElement(x, n)), r.createElement(d.Route, { component: b.default })));
                 }
                 _getShouldAutoPlayGif() {
                     const { effectiveAutoplayOption: e, isDataSaverEnabled: a, shouldAutoPlayGif: t } = this.props;
-                    return (0, C.r)(t, a, e);
+                    return (0, A.r)(t, a, e);
                 }
                 _getGifSearchKey() {
                     const {
@@ -903,7 +903,7 @@
                 _renderSearchBox() {
                     const { searchDisabled: e } = this.state,
                         a = this._getQueryOrCategory();
-                    return r.createElement(o.Z, { style: R.searchContainer }, r.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: P, ref: this._setTextInputRef, style: R.searchInput, testID: A.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : r.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: R.searchButton, type: "brandFilled" }, Z));
+                    return r.createElement(o.Z, { style: R.searchContainer }, r.createElement(n.Z, { Icon: h.default, autoFocus: !0, defaultValue: a, key: a, onChange: this._handleChange, onClear: this._handleClear, onSubmitEditing: this._handleSearch, placeholder: P, ref: this._setTextInputRef, style: R.searchInput, testID: C.Z.gifSearchSearchInput, withClearButton: !0 }), this._shouldRenderResultsOnChange ? null : r.createElement(l.ZP, { disabled: e, onPress: this._handleSubmit, size: "small", style: R.searchButton, type: "brandFilled" }, Z));
                 }
             }
             N.contextType = p.rC;
@@ -995,7 +995,7 @@
             }
             m.defaultProps = { renderFailure: n.Z, retryable: !0 };
         },
-        748138: (e, a, t) => {
+        41065: (e, a, t) => {
             t.r(a), t.d(a, { default: () => s });
             var r = t(202784),
                 o = t(890601),
@@ -1003,11 +1003,11 @@
                 n = t(347101);
             const l = (e = {}) => {
                 const { direction: a } = (0, d.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: a });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.954fadea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.323743ea.js.map

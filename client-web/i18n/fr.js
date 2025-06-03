@@ -3579,7 +3579,7 @@
                 n("hbe4f99e", "Coucou ! Trop hâte de partager du contenu top secret et d'apprendre à vous connaître encore mieux :)"),
                 n("fb278c82", "Qu'est-ce que cet aperçu ?"),
                 n("j6cab6ec", "Voici ce que les utilisateurs voient avant d'acheter une Souscription. Modifiez vos descriptions jusqu'à ce qu'elles vous conviennent."),
-                n("i22beaa4", "Partage de données"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Supprimer l'historique des conversations"),
                 n("ebc4fda0", "Vous êtes sur le point de supprimer l'historique de vos conversations Grok. Vous ne pourrez plus accéder à ces conversations."),
                 n("c90fe716", "Voulez-vous supprimer vos conversations ?"),
@@ -13344,4 +13344,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.a48a5a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.c9114bda.js.map

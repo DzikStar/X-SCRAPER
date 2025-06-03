@@ -3574,7 +3574,7 @@
                 o("hbe4f99e", "¡Hola! Me muero por compartir contenidos exclusivos contigo y conocerte un poco mejor :)"),
                 o("fb278c82", "¿Qué hay en esta vista previa?"),
                 o("j6cab6ec", "Esto es lo que ven las personas antes de suscribirse a ti. Modifica y edita tus descripciones hasta que te convenzan."),
-                o("i22beaa4", "Intercambio de datos"),
+                o("f2b1e83e", "Grok & Third-Party Collaborators"),
                 o("e110a46c", "Eliminar historial de conversaciones"),
                 o("ebc4fda0", "Estás a punto de eliminar tu historial de conversaciones con Grok. No podrás volver a acceder a estas conversaciones."),
                 o("c90fe716", "¿Quieres eliminar tus conversaciones?"),
@@ -13352,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.b97c035a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.a9e2050a.js.map

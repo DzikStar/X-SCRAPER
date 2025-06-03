@@ -32,7 +32,7 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("APPLICATIONS"), clearConversations: v.H }))
                     .withAnalytics({ page: "settings", section: "subscriptions" }),
                 I = u().i9028824,
-                k = u().i22beaa4,
+                k = u().f2b1e83e,
                 A = u().e110a46c,
                 T = u().ebc4fda0,
                 R = u().c90fe716,
@@ -316,4 +316,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.c68208fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.df81332a.js.map

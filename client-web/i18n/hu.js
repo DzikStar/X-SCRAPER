@@ -3574,7 +3574,7 @@
                 s("hbe4f99e", "Helló! Már alig várom, hogy megoszthassak pár szupertitkos tartalmat, és hogy jobban megismerhesselek :)"),
                 s("fb278c82", "Mi ez az előnézet?"),
                 s("j6cab6ec", "Ezt látják az emberek, mielőtt előfizetnek a tartalmaidra. Alakítsd addig a leírásokat, amíg tökéletesek nem lesznek."),
-                s("i22beaa4", "Adatmegosztás"),
+                s("f2b1e83e", "Grok & Third-Party Collaborators"),
                 s("e110a46c", "Beszélgetési előzmények törlése"),
                 s("ebc4fda0", "Törölni fogod a Grokkal folytatott beszélgetéseid előzményeit. A törlést követően nem férhetsz hozzá többé ezekhez a beszélgetésekhez."),
                 s("c90fe716", "Törölni szeretnéd a beszélgetési előzményeket?"),
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.577c7e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.ca85727a.js.map

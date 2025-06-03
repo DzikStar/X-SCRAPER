@@ -3,33 +3,29 @@
     ["ondemand.XChat-cbcead99"],
     {
         38891: (e, s, t) => {
-            t.d(s, { zo: () => i });
+            t.d(s, { z: () => i });
             t(552322);
             var n = t(202784);
-            const a = (0, n.createContext)(
-                new (class {
+            const a = (0, n.createContext)({
+                featureSwitches: new (class {
                     features;
-                    constructor(e) {
-                        this.features = e?.config ?? {};
-                    }
-                    getValue(e, s = null) {
-                        const t = this.features[e];
-                        return t ? t.value : s;
+                    constructor(e = { defaults: {} }) {
+                        this.features = { ...(e.defaults ?? {}), ...(e.features ?? {}) };
                     }
                     getArrayValue(e, s = []) {
-                        const t = this.getValue(e);
+                        const t = this.features[e];
                         return Array.isArray(t) ? t : s;
                     }
                     getNumberValue(e, s = 0) {
-                        const t = this.getValue(e);
+                        const t = this.features[e];
                         return "number" == typeof t ? t : s;
                     }
                     getStringValue(e, s = "") {
-                        const t = this.getValue(e);
+                        const t = this.features[e];
                         return "string" == typeof t ? t : s;
                     }
                     isTrue(e) {
-                        return !0 === this.getValue(e);
+                        return !0 === this.features[e];
                     }
                     allTrue(e) {
                         return e.every((e) => this.isTrue(e));
@@ -38,21 +34,23 @@
                         return e.some((e) => this.isTrue(e));
                     }
                 })(),
-            );
+                isInitialized: !1,
+            });
             function i() {
-                return (0, n.useContext)(a);
+                const { featureSwitches: e, isInitialized: s } = (0, n.useContext)(a);
+                return e;
             }
         },
         125550: (e, s, t) => {
             t.d(s, { M: () => u });
             var n = t(552322),
                 a = t(159603),
-                i = t(455091),
+                i = t(263033),
                 r = t(702024),
                 l = t(436059),
                 o = t(407250),
                 c = t(202784),
-                d = t(368301),
+                d = t(155369),
                 m = t(379342),
                 x = t(533476);
             const u = ({ groupId: e, token: s }) => {
@@ -119,7 +117,7 @@
                 c = t(887390),
                 d = t(921879),
                 m = t(202784),
-                x = t(368301),
+                x = t(155369),
                 u = t(533476),
                 p = t(658358),
                 h = t(466285),
@@ -208,7 +206,7 @@
                 };
         },
         707513: (e, s, t) => {
-            t.d(s, { P: () => N });
+            t.d(s, { P: () => C });
             var n = t(552322),
                 a = t(159603),
                 i = t(289752),
@@ -222,29 +220,32 @@
             function u({ post: e, onEvent: s, className: t }) {
                 return e.postState instanceof m.NeedsResolution ? (s(new x.ResolvePost(e.postId)), (0, n.jsx)(c.C, {})) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: t }) : (0, n.jsxs)(r.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(l.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(o.Z, {}) })] });
             }
-            var p = t(702024);
-            const h = a.com.x.dms.model.MessageItemAttachment,
-                f = a.com.x.dms.chat.DmEvent;
-            function g({ urlCard: e, onEvent: s }) {
-                e instanceof h.UrlCard.NeedsResolving && !e.showTapToLoadPrompt && s(new f.ResolveUrlCard(e, !1));
+            var p = t(702024),
+                h = t(530361);
+            const f = a.com.x.dms.model.MessageItemAttachment,
+                g = a.com.x.dms.chat.DmEvent;
+            function v({ urlCard: e, onEvent: s }) {
+                e instanceof f.UrlCard.NeedsResolving && !e.showTapToLoadPrompt && s(new g.ResolveUrlCard(e, !1));
                 let t = null;
-                return e instanceof h.UrlCard.Resolved && (t = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "max-w-[320px] max-h-[400px] rounded-t-2xl rounded-b-none border border-gray-200 shadow-md" })), e instanceof h.UrlCard.Loading && (t = (0, n.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, n.jsx)(p.P, {}) })), (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100", onClick: () => window.open(e.urlToOpen, "_blank"), children: [t, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4 hover:bg-gray-50/50", children: [e.displayTitle && (0, n.jsx)(l.x, { weight: "medium", children: e.displayTitle }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(l.x, { color: "gray900", size: "subtext2", children: e.displayHostname }), (0, n.jsx)(o.Z, { className: "text-gray-500 size-4" })] })] })] });
+                e instanceof f.UrlCard.Resolved && (t = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "w-full h-full object-cover" })), e instanceof f.UrlCard.Loading && (t = (0, n.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, n.jsx)(p.P, {}) }));
+                const a = (0, h.decode)(e.displayTitle || "");
+                return (0, n.jsxs)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm", onClick: () => window.open(e.urlToOpen, "_blank"), children: [t, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4 hover:bg-gray-50/50", children: [a && (0, n.jsx)(l.x, { weight: "medium", children: a }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(l.x, { color: "gray900", size: "subtext2", children: e.displayHostname }), (0, n.jsx)(o.Z, { className: "text-gray-500 size-4" })] })] })] });
             }
-            var v = t(83083),
-                j = t(858108);
-            const y = a.com.x.dms.model.MessageItemAttachment,
-                w = a.com.x.dms.chat.DmEvent,
+            var j = t(83083),
+                y = t(858108);
+            const w = a.com.x.dms.model.MessageItemAttachment,
+                N = a.com.x.dms.chat.DmEvent,
                 b = a.com.x.dms.model.MediaUriState;
-            function N({ attachment: e, isReceived: s, onEvent: t, className: r }) {
-                if (e instanceof y.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
-                if (e instanceof y.UrlCard) return (0, n.jsx)(g, { urlCard: e, onEvent: t });
-                if (e instanceof y.Media) {
-                    if (e instanceof y.Media.FromServer) {
-                        if ((e.uriState instanceof b.AttachmentNeedsResolving && !(0, j.G)() && t(new w.ResolveAttachment(e.uriState)), e.uriState instanceof b.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
+            function C({ attachment: e, isReceived: s, onEvent: t, className: r }) {
+                if (e instanceof w.Post) return (0, n.jsx)(u, { isReceived: s, post: e, onEvent: t, className: r });
+                if (e instanceof w.UrlCard) return (0, n.jsx)(v, { urlCard: e, onEvent: t });
+                if (e instanceof w.Media) {
+                    if (e instanceof w.Media.FromServer) {
+                        if ((e.uriState instanceof b.AttachmentNeedsResolving && !(0, y.G)() && t(new N.ResolveAttachment(e.uriState)), e.uriState instanceof b.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
                         if (e.uriState instanceof b.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
                         if (e.uriState === b.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
                     }
-                    if (e instanceof y.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
+                    if (e instanceof w.Media.Pending) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(j.Q, { filename: e.filename, fileSize: e.fileSize, className: r }) : (0, n.jsx)(i._9, { dimensions: e.dimensions });
                 }
                 return null;
             }
@@ -255,7 +256,7 @@
                 a = t(941204),
                 i = t(461222),
                 r = t(1357),
-                l = t(455091),
+                l = t(263033),
                 o = t(796309),
                 c = t(509597);
             function d({ filename: e, fileType: s = "Document", fileSize: t, uriToLoad: d, className: m }) {
@@ -286,19 +287,19 @@
                 o = t(796309),
                 c = t(202784),
                 d = t(697597);
-            function m({ src: e, type: s, dimensions: t, className: a }) {
-                const { width: r, height: l } = p(t),
-                    [m, x] = (0, c.useState)(!1),
-                    u = [{ type: "Video" === s.name ? "video" : "Gif" === s.name ? "animated_gif" : "image", src: e, previewImage: e }];
+            function m({ src: e, type: s, dimensions: t, className: a, showAsStatic: r = !1 }) {
+                const { width: l, height: m } = p(t),
+                    [x, u] = (0, c.useState)(!1),
+                    h = [{ type: "Video" === s.name ? "video" : "Gif" === s.name ? "animated_gif" : "image", src: e, previewImage: e }];
                 return (0, n.jsxs)(n.Fragment, {
                     children: [
-                        "Video" === s.name ? (0, n.jsx)("div", { style: { width: `${r}px`, height: `${l}px` }, className: a, children: (0, n.jsx)(d.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0 }) }) : (0, n.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: (0, o.cn)("max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50 border border-gray-200 shadow-md", a), style: { width: `${r}px`, height: `${l}px` }, onClick: () => x(!0) }),
+                        "Video" === s.name && r ? (0, n.jsx)("video", { src: e, preload: "metadata", width: `${l}px`, height: `${m}px`, className: a }) : "Video" === s.name ? (0, n.jsx)("div", { style: { width: `${l}px`, height: `${m}px` }, className: a, children: (0, n.jsx)(d.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0 }) }) : (0, n.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: (0, o.cn)("max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50 border border-gray-200 shadow-md", a), style: { width: `${l}px`, height: `${m}px` }, onClick: () => u(!0) }),
                         (0, n.jsx)(i.e, {
-                            mediaItems: u,
+                            mediaItems: h,
                             initialIndex: 0,
-                            isOpen: m,
+                            isOpen: x,
                             onClose: () => {
-                                x(!1);
+                                u(!1);
                             },
                         }),
                     ],
@@ -333,4 +334,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.0d40469a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.e98a090a.js.map

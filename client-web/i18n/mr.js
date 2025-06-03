@@ -3575,7 +3575,7 @@
                 n("hbe4f99e", "अहो! काही लोकप्रिय गुप्तमजकूर शेअर करण्यासाठी आणि आपणास आणखी चांगल्या प्रकारे जाणून घेण्यासाठी वाट पाहू शकत नाही :)"),
                 n("fb278c82", "हे पूर्वावलोकन काय आहे?"),
                 n("j6cab6ec", "आपली सदस्यता घेण्यापूर्वी लोक हेच पाहतात. जोपर्यंत आपली वर्णने बरोबर मिळत नाहीत तोपर्यंत ती बदला आणि संपादित करा."),
-                n("i22beaa4", "डेटा शेअर करणे"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "कॉन्व्हर्सशन हटवायची आहे"),
                 n("ebc4fda0", "तुम्ही तुमची Grok संभाषण हिस्टरी हटविण्याच्या जवळ आहात. तुम्ही या संभाषणांमध्ये पुन्हा प्रवेश करू शकणार नाही."),
                 n("c90fe716", "तुम्हाला तुमचे संभाषण हटवायचे आहे का?"),
@@ -7231,12 +7231,12 @@
                 n("h257d4aa", "प्रमोट करण्यासाठी पोस्ट निवडा"),
                 n("fe946974", "Your trial of X without ads"),
                 n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
+                n("b1319404", "जाहिराती टाळल्या"),
                 n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
+                n("c00e8600", "अंदाजे वेळ वाचला"),
                 n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
+                n("eb866e88", "अंदाजे 1 वर्ष वेळेची बचत"),
+                n("aa77b70c", "तुमच्या वापरावर आधारित."),
                 n("c534c6b4", "We’re crunching the numbers..."),
                 n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
                 n("cc10f019", function (e) {
@@ -13347,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.82b302ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.12c3751a.js.map

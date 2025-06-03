@@ -3574,7 +3574,7 @@
                 f("hbe4f99e", "大家好！我想和你们分享一些不为人知的内容，同时更好地了解大家 :)"),
                 f("fb278c82", "这个预览是什么？"),
                 f("j6cab6ec", "这就是用户在向你订阅之前会看到的内容。调整并编辑你的描述，直到你觉得它们已经准确无误。"),
-                f("i22beaa4", "数据共享"),
+                f("f2b1e83e", "Grok & Third-Party Collaborators"),
                 f("e110a46c", "删除对话历史记录"),
                 f("ebc4fda0", "你即将删除自己的 grok 对话历史记录。你将无法再访问这些对话。"),
                 f("c90fe716", "你要删除对话吗？"),
@@ -13355,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.3963437a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.9d83244a.js.map

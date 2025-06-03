@@ -3574,7 +3574,7 @@
                 i("hbe4f99e", "Halo! Tidak sabar untuk membagikan beberapa konten rahasia dan mengenal Anda lebih baik :)"),
                 i("fb278c82", "Apa arti pratinjau ini?"),
                 i("j6cab6ec", "Ini adalah pesan yang akan orang lihat sebelum mereka mengikuti Langganan dari Anda. Edit dan sesuaikan menurut keinginan Anda."),
-                i("i22beaa4", "Berbagi Data"),
+                i("f2b1e83e", "Grok & Third-Party Collaborators"),
                 i("e110a46c", "Hapus riwayat percakapan"),
                 i("ebc4fda0", "Anda akan menghapus riwayat percakapan Anda dengan Grok. Percakapan ini tidak akan dapat Anda akses lagi."),
                 i("c90fe716", "Apakah Anda ingin menghapus percakapan Anda?"),
@@ -13339,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.446fc5ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.9758042a.js.map

@@ -3575,7 +3575,7 @@
                 t("hbe4f99e", "Hola! Estic impacient per compartir contingut confidencial i anar-nos coneixent millor :)"),
                 t("fb278c82", "Què és aquesta previsualització?"),
                 t("j6cab6ec", "Això és el que els altres usuaris veuran abans de subscriure's al teu contingut. Ajusta i edita les descripcions fins a tenir-les a punt."),
-                t("i22beaa4", "Compartició de dades"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Esborra l'historial de converses"),
                 t("ebc4fda0", "Estàs a punt de suprimir el teu historial de converses de Grok. No podràs tornar a accedir a aquestes converses."),
                 t("c90fe716", "Vols suprimir les converses?"),
@@ -13341,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.34ebfe9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.757c343a.js.map

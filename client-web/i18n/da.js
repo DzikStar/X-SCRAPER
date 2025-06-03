@@ -3575,7 +3575,7 @@
                 t("hbe4f99e", "Hejsa! Jeg glæder mig til at dele noget tophemmeligt indhold og lære jer endnu bedre at kende :)"),
                 t("fb278c82", "Hvad er denne forhåndsvisning?"),
                 t("j6cab6ec", "Dette er hvad folk kan se inden din abonner på dig. Tilpas og redigerer din beskrivelse indtil den er perfekt."),
-                t("i22beaa4", "Deling af data"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Slet samtalehistorik"),
                 t("ebc4fda0", "Du er ved at slette din Grok-samtalehistorik. Du vil ikke kunne få adgang til disse samtaler igen."),
                 t("c90fe716", "Vil du slette dine samtaler?"),
@@ -13343,4 +13343,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.233180aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.ddd4fd9a.js.map

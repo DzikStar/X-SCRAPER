@@ -3575,7 +3575,7 @@
                 n("hbe4f99e", "আছেন! কিছু সেরা গোপনীয় সামগ্রী শেয়ার করতে এবং আপনাকে আরও ভালোভাবে জানার জন্য অপেক্ষা করতে পারছি না :)"),
                 n("fb278c82", "এই পূর্বরূপটি কী?"),
                 n("j6cab6ec", "আপনাকে সাবস্ক্রাইব করার আগে লোকেরা এটা দেখে। আপনি আপনার বর্ণনাগুলিকে ঠিকঠাক না করা পর্যন্ত টুইক ও সম্পাদনা করে যেতে পারেন।"),
-                n("i22beaa4", "ডেটা শেয়ারিং"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "কথা-বার্তার ইতিহাস মুছুন"),
                 n("ebc4fda0", "আপনি আপনার Grok কথাবার্তার ইতিহাস মুছতে চলেছেন। আপনি আর এই কথা-বার্তাগুলিতে অ্যাক্সেস করতে পারবেন না।"),
                 n("c90fe716", "আপনি কী আপনার কথা-বার্তা মুছতে চান?"),
@@ -13356,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.0162130a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.c3234eca.js.map

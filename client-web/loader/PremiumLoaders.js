@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.PremiumLoaders", "icons/IconDrafts-js"],
+    ["loader.PremiumLoaders"],
     {
         96768: (e, a, r) => {
             r.d(a, { Z: () => s });
@@ -40,7 +40,7 @@
             const s = l;
         },
         587510: (e, a, r) => {
-            r.d(a, { Z: () => g });
+            r.d(a, { Z: () => _ });
             var n,
                 i,
                 t,
@@ -203,7 +203,7 @@
                     params: { id: "5UotOgLcDoewXEKftGMiuQ", metadata: {}, name: "useMonetizationCreatorSettingsQuery", operationKind: "query", text: null },
                 };
             p.hash = "abb37d549229c3883d2d50c7a98d76a1";
-            const g = p;
+            const _ = p;
         },
         380327: (e, a, r) => {
             r.d(a, { Z: () => u });
@@ -237,7 +237,7 @@
             };
         },
         127939: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => V });
+            r.r(a), r.d(a, { default: () => I });
             var n = r(202784),
                 i = r(400752),
                 t = r(325686),
@@ -249,8 +249,8 @@
                 d = r.n(c),
                 m = r(841972),
                 p = r(647174),
-                g = r(530813),
-                _ = r(420182),
+                _ = r(530813),
+                g = r(420182),
                 f = r(443781),
                 y = r(56851),
                 v = r(736063),
@@ -260,9 +260,9 @@
                 w = r(738124),
                 F = r(643426),
                 S = r(293115),
-                Z = r(725405),
-                E = r(620243);
-            const C = d().f0701753,
+                C = r(725405),
+                Z = r(620243);
+            const E = d().f0701753,
                 K = d().j7d0e836,
                 T = d().d227d19e,
                 P = { isCollapsed: !1 },
@@ -270,9 +270,9 @@
                     (0, b.E)();
                     const { featureSwitches: a } = (0, f.QZ)(),
                         r = a.isTrue("rweb_sourcemap_migration"),
-                        o = (0, Z.Z)(),
+                        o = (0, C.Z)(),
                         [u, c] = n.useState(!1),
-                        d = (0, i.Dv)(_.lZ),
+                        d = (0, i.Dv)(g.lZ),
                         [v, k] = n.useState(null);
                     n.useEffect(() => {
                         d.get("rweb.premiumModule").then((e) => {
@@ -281,9 +281,9 @@
                     }, [d]);
                     let S = "/premium/module";
                     v?.isCollapsed && (S += "?collapsed=true");
-                    const E = (0, h._3)(S, { refreshTimeMs: 1e4 });
+                    const Z = (0, h._3)(S, { refreshTimeMs: 1e4 });
                     if (!v) return null;
-                    if (!E) return n.createElement(y.Z, null);
+                    if (!Z) return n.createElement(y.Z, null);
                     const L = () => {
                             c(!u);
                         },
@@ -295,26 +295,26 @@
                             const e = { isCollapsed: !v.isCollapsed };
                             k(e), d.set("rweb.premiumModule", e), c(!1);
                         };
-                    return E.jfResponse?.root.value
+                    return Z.jfResponse?.root.value
                         ? n.createElement(
                               F.b.Provider,
                               { value: { dismiss: L } },
                               n.createElement(
                                   t.Z,
-                                  { style: r ? I.containerRedesign : I.container },
+                                  { style: r ? V.containerRedesign : V.container },
                                   u
                                       ? n.createElement(l.Z, {
                                             items: [
                                                 { onClick: A, text: v.isCollapsed ? K : T, Icon: v.isCollapsed ? m.default : p.default },
-                                                { onClick: R, text: C({ number: 7 }), Icon: g.default },
+                                                { onClick: R, text: E({ number: 7 }), Icon: _.default },
                                             ],
                                             onCloseRequested: L,
                                         })
                                       : null,
-                                  E.jfResponse?.root.value ? n.createElement(w.Z, { payload: E.jfResponse.root.value }) : null,
+                                  Z.jfResponse?.root.value ? n.createElement(w.Z, { payload: Z.jfResponse.root.value }) : null,
                               ),
                           )
-                        : n.createElement(s.Z, { onRetry: null, title: E.error });
+                        : n.createElement(s.Z, { onRetry: null, title: Z.error });
                 },
                 R = () => {
                     const { dismiss: e, impress: a, shouldShow: r } = (0, k.ZP)({ key: "premium_module_v1", dismissForMsec: k.IZ, showForMsec: null, reappearAfterMsec: null });
@@ -326,16 +326,16 @@
                     );
                 },
                 A = () => {
-                    const { verified_program_application_status: e, verified_program_eligibility: a, verified_user_profiles: r } = (0, E.Z)(),
+                    const { verified_program_application_status: e, verified_program_eligibility: a, verified_user_profiles: r } = (0, Z.Z)(),
                         { featureSwitches: i } = (0, f.QZ)(),
                         t = r?.ad_revenue_sharing_user_profile?.is_active;
                     if ((t || (0 === a?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && i.isTrue("subscriptions_premium_module_enabled")) return n.createElement(n.Suspense, { fallback: n.createElement(o.J, null) }, n.createElement(R, null));
                 },
-                V = () => {
+                I = () => {
                     const { featureSwitches: e, userClaims: a } = (0, f.QZ)();
                     return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? n.createElement(v.H, { errorConfig: { context: "premium_module" } }, n.createElement(A, null)) : null;
                 },
-                I = u.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } }));
+                V = u.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } }));
         },
         293605: (e, a, r) => {
             r.r(a), r.d(a, { default: () => S });
@@ -350,15 +350,15 @@
                 d = r(443781),
                 m = r(736063),
                 p = r(177210),
-                g = r(782826),
-                _ = r(725405),
+                _ = r(782826),
+                g = r(725405),
                 f = r(199232);
             const y = u().fbf83158,
                 v = u().jadeb4da,
                 k = u().bce3726a,
                 b = ({ entryPoint: e, originProduct: a }) => {
-                    const r = (0, _.Z)(),
-                        { origin: s } = g.ZP.get(),
+                    const r = (0, g.Z)(),
+                        { origin: s } = _.ZP.get(),
                         o = (0, p.Z)({ returnUrl: `${s}/i/profile`, originProduct: a }),
                         u = `payment_failure_alert_card_${e}_sidebar`;
                     n.useEffect(() => {
@@ -391,8 +391,8 @@
                 d = r(191796),
                 m = r(187669),
                 p = r(399398),
-                g = r(177210),
-                _ = r(337394),
+                _ = r(177210),
+                g = r(337394),
                 f = r(147595),
                 y = r(811574),
                 v = r(293115),
@@ -402,15 +402,15 @@
                 w = c().h293aa52,
                 F = c().j1923668,
                 S = c().ac7e97ee,
-                Z = { PremiumBasic: c().f70c69b4, BlueVerified: c().f4cec4d2, BlueVerifiedPlus: c().f4cec4d2 },
-                E = ({ activeRestId: e }) => {
+                C = { PremiumBasic: c().f70c69b4, BlueVerified: c().f4cec4d2, BlueVerifiedPlus: c().f4cec4d2 },
+                Z = ({ activeRestId: e }) => {
                     const a = (0, k.Z)(),
                         [r, o] = n.useState(!1);
                     (0, m.q)(() => {
                         a.scribeAction("impression");
                     });
-                    const u = (0, g.Z)({ returnUrl: `https://${window.location.host}/home`, originProduct: "TwitterBlue" }),
-                        c = _.v5.premium[e ?? ""];
+                    const u = (0, _.Z)({ returnUrl: `https://${window.location.host}/home`, originProduct: "TwitterBlue" }),
+                        c = g.v5.premium[e ?? ""];
                     return n.createElement(
                         p.g,
                         { testID: "renew-subscription-module" },
@@ -418,7 +418,7 @@
                             i.Z,
                             { "aria-label": h, role: "complementary", style: T.root },
                             n.createElement(t.ZP, { size: "headline1", weight: "heavy" }, w),
-                            n.createElement(t.ZP, null, F, " ", Z[c]),
+                            n.createElement(t.ZP, null, F, " ", C[c]),
                             n.createElement(
                                 l.ZP,
                                 {
@@ -433,16 +433,16 @@
                         ),
                     );
                 },
-                C = () => {
+                E = () => {
                     const { featureSwitches: e } = (0, b.QZ)(),
                         a = (0, y.Z)();
                     if (!a) return null;
                     const r = (0, f.R)(a);
-                    return r && "Stripe" === r.payment_source && "Expire" === r.state && e.isTrue("subscriptions_management_renew_module_enabled") ? n.createElement(v.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, n.createElement(E, { activeRestId: r?.product?.rest_id })) : null;
+                    return r && "Stripe" === r.payment_source && "Expire" === r.state && e.isTrue("subscriptions_management_renew_module_enabled") ? n.createElement(v.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, n.createElement(Z, { activeRestId: r?.product?.rest_id })) : null;
                 },
                 K = () => {
                     const { featureSwitches: e, userClaims: a } = (0, b.QZ)();
-                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && a.isAnyPremiumSubscriber() && !a.isAnyVerifiedOrgOrAffiliate() ? n.createElement(C, null) : null;
+                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && a.isAnyPremiumSubscriber() && !a.isAnyVerifiedOrgOrAffiliate() ? n.createElement(E, null) : null;
                 },
                 T = o.default.create((e) => ({ root: { position: "relative", alignItems: "flex-start", gap: 10, flexDirection: "column", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }));
         },
@@ -540,7 +540,7 @@
             }
             const s = t.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
-        266151: (e, a, r) => {
+        41065: (e, a, r) => {
             r.r(a), r.d(a, { default: () => o });
             var n = r(202784),
                 i = r(890601),
@@ -548,20 +548,7 @@
                 l = r(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        748138: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => o });
-            var n = r(202784),
-                i = r(890601),
-                t = r(783427),
-                l = r(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
@@ -576,4 +563,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PremiumLoaders.fe2e10ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PremiumLoaders.28aaa51a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DMRichTextCompose", "ondemand.RichText"],
+    ["bundle.DMRichTextCompose", "ondemand.RichText", "icons/IconTicket-js"],
     {
         468032: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -149,14 +149,14 @@
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
                     const { SideNavButton: t, TabBar: n, appBarStyle: r, backLocation: s, documentTitle: a, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: f, screenType: b, searchBoxOptions: C, secondaryBar: v, showSubtitleOnRoot: k, showSubtitleOnWideDetail: x, subtitle: w, title: S, titleIconCell: T, titleIconCellSize: E, withDetailOpen: _, withSearchBox: Z, withTweetButton: I, withWideContainer: B } = this.props,
-                        D = "root" === b,
-                        L = "secondaryRoot" === b,
+                        L = "root" === b,
+                        D = "secondaryRoot" === b,
                         P = "primaryDetail" === b,
-                        F = (P && x) || (D && k),
-                        R = D || (P && e),
-                        M = D ? d.ey : P ? d.vX : void 0,
+                        F = (P && x) || (L && k),
+                        R = L || (P && e),
+                        M = L ? d.ey : P ? d.vX : void 0,
                         O = o.createElement(i.Z, { style: y.appBarContainer }, o.createElement(p.ZP, { backLocation: s, fixed: !1, hideBackButton: R, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: f, secondaryBar: v, style: r, subtitle: F ? w : void 0, title: S, titleDomId: M, titleIconCell: T, titleIconCellSize: E, withWideContainer: B })),
-                        A = D || (L && _) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: l, middleControl: m, onBackClick: g, rightControl: f, searchBoxOptions: C, subtitle: w, title: S, withSearchBox: Z, withTweetButton: I });
+                        A = L || (D && _) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: l, middleControl: m, onBackClick: g, rightControl: f, searchBoxOptions: C, subtitle: w, title: S, withSearchBox: Z, withTweetButton: I });
                     return o.createElement(o.Fragment, null, A, O);
                 }
             }
@@ -404,24 +404,24 @@
                 Z = n(731708),
                 I = n(154003),
                 B = n(392237),
-                D = n(111677),
-                L = n.n(D),
+                L = n(111677),
+                D = n.n(L),
                 P = n(913313),
                 F = n(201787),
                 R = n(253493),
                 M = n(952793),
                 O = n(10656),
                 A = n(198506),
-                N = n(275365),
-                W = n(503115),
-                z = n(356738),
-                K = n(255534),
-                H = n(276032),
+                z = n(275365),
+                N = n(503115),
+                W = n(356738),
+                H = n(255534),
+                K = n(276032),
                 U = n(164383);
-            const V = L().d4986f86,
-                q = L().e3e58b6e,
-                j = L().a9ddbb94,
-                J = L().dd4779a0,
+            const V = D().d4986f86,
+                q = D().e3e58b6e,
+                j = D().a9ddbb94,
+                J = D().dd4779a0,
                 G = 8,
                 $ = 3;
             function Q(e) {
@@ -437,24 +437,24 @@
                         return o.createElement(S.Z, { style: X.facePile }, o.createElement(E.Z, { userAvatarSize: "large", userAvatarUrls: n }));
                     },
                     u = (e) => {
-                        const t = s && s.participants.length ? (0, K.E)({ conversation: s, perspective: l }) : a ? (0, K.E)({ newConversationParticipants: a, perspective: l }) : V,
-                            n = s?.participants.length ? o.createElement(K.Z, { conversation: s, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(K.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, V),
+                        const t = s && s.participants.length ? (0, H.E)({ conversation: s, perspective: l }) : a ? (0, H.E)({ newConversationParticipants: a, perspective: l }) : V,
+                            n = s?.participants.length ? o.createElement(H.Z, { conversation: s, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(H.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, V),
                             r = s && l ? (0, A.Z)(s, l) : void 0,
                             c = (0, b.NL)(i);
                         let u = "large",
-                            p = l ? o.createElement(W.Z, { conversation: s, perspective: l, size: u, withLock: c }) : void 0;
-                        return r && s?.type === N.eD.GROUP && void 0 === s?.avatar && ((p = ((e) => o.createElement(_.ZP, null, ({ containerWidth: t }) => (O.Z.isTwoColumnLayout(t) ? d(e, G) : d(e, $))))(r)), (u = "custom")), { ...(e && { titleIconCell: p, titleIconCellSize: u }), title: n, documentTitle: t };
+                            p = l ? o.createElement(N.Z, { conversation: s, perspective: l, size: u, withLock: c }) : void 0;
+                        return r && s?.type === z.eD.GROUP && void 0 === s?.avatar && ((p = ((e) => o.createElement(_.ZP, null, ({ containerWidth: t }) => (O.Z.isTwoColumnLayout(t) ? d(e, G) : d(e, $))))(r)), (u = "custom")), { ...(e && { titleIconCell: p, titleIconCellSize: u }), title: n, documentTitle: t };
                     },
                     p = () => {
-                        const e = s?.type === N.eD.GROUP,
+                        const e = s?.type === z.eD.GROUP,
                             t = n?.state?.position || 0;
-                        return i ? o.createElement(S.Z, { style: X.rightControlStyles }, o.createElement(U.fK, { conversationId: i }), r && o.createElement(H.Z, { conversationId: i }, o.createElement(I.ZP, { "aria-haspopup": "menu", "aria-label": J, hoverLabel: { label: J }, icon: o.createElement(P.default, null), size: "small", style: X.infoButton, type: "primaryText" })), o.createElement(F.Z, { "aria-label": e ? j : q, conversationId: i, link: { pathname: `/messages/${i}/info`, state: { position: t } }, style: X.infoButton })) : void 0;
+                        return i ? o.createElement(S.Z, { style: X.rightControlStyles }, o.createElement(U.fK, { conversationId: i }), r && o.createElement(K.Z, { conversationId: i }, o.createElement(I.ZP, { "aria-haspopup": "menu", "aria-label": J, hoverLabel: { label: J }, icon: o.createElement(P.default, null), size: "small", style: X.infoButton, type: "primaryText" })), o.createElement(F.Z, { "aria-label": e ? j : q, conversationId: i, link: { pathname: `/messages/${i}/info`, state: { position: t } }, style: X.infoButton })) : void 0;
                     };
                 return o.createElement(
                     R.Z,
                     (() => {
                         const t = u(e.showTitle);
-                        return { backLocation: "/messages", onBackClick: c, rightControl: p(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(z.Z, null) : void 0, ...t };
+                        return { backLocation: "/messages", onBackClick: c, rightControl: p(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(W.Z, null) : void 0, ...t };
                     })(),
                     e.children,
                 );
@@ -898,7 +898,7 @@
                     ),
                 );
         },
-        314948: (e, t, n) => {
+        391366: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -906,7 +906,20 @@
                 i = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        913313: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                s = n(783427),
+                i = n(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.77 6.34l-.7.71c-.59.59-1.54.59-2.12 0-.59-.59-.59-1.54 0-2.12l.7-.71L13.76.33.33 13.77l3.89 3.89.7-.71c.59-.59 1.54-.59 2.13 0 .58.59.58 1.54 0 2.12l-.71.71 3.89 3.89 13.43-13.44-3.89-3.89zM6.34 9.88l1.42-1.41 1.76 1.76-1.41 1.42-1.77-1.77zm3 3l1.42-1.41 1.77 1.77-1.42 1.41-1.77-1.77zm4.78 4.78l-1.77-1.77 1.42-1.41 1.76 1.77-1.41 1.41z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -942,4 +955,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.38c781da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.e855795a.js.map

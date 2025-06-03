@@ -7,6 +7,18 @@
             var l = s(552322);
             const r = (e) => (0, l.jsxs)("svg", { viewBox: "0 0 14 14", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, l.jsx)("path", { d: "M2.16256 1.33754C1.93475 1.10974 1.56541 1.10974 1.3376 1.33754C1.1098 1.56535 1.1098 1.93469 1.3376 2.1625L2.7855 3.6104C2.46865 4.16466 2.25919 4.78916 2.18754 5.45796L1.76493 8.89949C1.67952 9.595 2.22216 10.2084 2.9229 10.2084H9.38346L11.8376 12.6625C12.0654 12.8903 12.4348 12.8903 12.6626 12.6625C12.8904 12.4347 12.8904 12.0653 12.6626 11.8375L2.16256 1.33754Z" }), (0, l.jsx)("path", { d: "M12.2351 8.89949C12.2932 9.37206 12.0613 9.8067 11.6868 10.0368L3.92014 2.27011C4.76367 1.57863 5.84199 1.16669 7.00002 1.16669C9.45456 1.16669 11.551 3.0174 11.8125 5.45797L12.2351 8.89949Z" }), (0, l.jsx)("path", { d: "M4.32604 11.0834C4.77612 12.1135 5.804 12.8334 7.00002 12.8334C8.19604 12.8334 9.22392 12.1135 9.67399 11.0834H4.32604Z" })] });
         },
+        741321: (e, t, s) => {
+            "use strict";
+            s.d(t, { Z: () => r });
+            var l = s(552322);
+            const r = (e) => (0, l.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", fill: "currentColor", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, l.jsxs)("g", { children: [(0, l.jsx)("clipPath", { id: "clip", children: (0, l.jsx)("path", { d: "M13 0h10v10H13z" }) }), (0, l.jsx)("path", { clipPath: "url(#clip)", d: "M18 0.729c-0.845 0-1.67 0.251-2.373 0.72-0.702 0.469-1.249 1.136-1.573 1.917-0.323 0.78-0.408 1.639-0.243 2.467 0.165 0.829 0.572 1.59 1.169 2.187 0.597 0.597 1.358 1.004 2.187 1.169 0.828 0.165 1.687 0.08 2.468-0.243 0.78-0.323 1.447-0.871 1.916-1.573 0.469-0.703 0.72-1.528 0.72-2.373 0-1.133-0.45-2.219-1.251-3.02-0.801-0.801-1.887-1.251-3.02-1.251zm-0.337 6.117l-1.709-1.363 0.521-0.654 1.029 0.825 1.654-2.279 0.675 0.492-2.17 2.979z" })] }), (0, l.jsx)("path", { d: "M20.2 11.9V11h2v0.2c0 2.9-1.3 5.6-3.8 7.1L10.2 23v-4H10c-4.4 0-8-3.6-8-8s3.6-8 8-8h1.2v2H10c-3.3 0-6 2.7-6 6s2.7 6 6 6h2.2v2.5l5.2-3c1.7-1 2.6-2.7 2.8-4.6z" })] });
+        },
+        9001: (e, t, s) => {
+            "use strict";
+            s.d(t, { Z: () => r });
+            var l = s(552322);
+            const r = (e) => (0, l.jsxs)("svg", { xmlns: "http://www.w3.org/2000/svg", fill: "currentColor", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, l.jsx)("path", { d: "M13.5 5a4 4 0 1 1 8 0 4 4 0 1 1-8 0" }), (0, l.jsx)("path", { d: "M20.2 11.9V11h2v0.2c0 2.9-1.3 5.6-3.8 7.1L10.2 23v-4H10c-4.4 0-8-3.6-8-8s3.6-8 8-8h1.2v2H10c-3.3 0-6 2.7-6 6s2.7 6 6 6h2.2v2.5l5.2-3c1.7-1 2.6-2.7 2.8-4.6z" })] });
+        },
         242782: (e, t, s) => {
             "use strict";
             s.d(t, { Z: () => r });
@@ -191,18 +203,19 @@
                 d = s(857378),
                 a = s(252021),
                 v = s(234622),
-                w = (s(434882), s(952793));
-            const m = n.default.create((e) => ({ root: { width: "100%", display: "block" } })),
+                w = (s(434882), s(134760)),
+                m = s(952793);
+            const x = n.default.create((e) => ({ root: { width: "100%", display: "block" } })),
                 g = (e) => {
                     const t = (0, c.useHistory)(),
                         s = (0, c.useLocation)(),
-                        n = (0, w.hC)("rweb_xchat_debug_enabled"),
+                        n = (0, m.hC)("rweb_xchat_debug_enabled"),
                         g = (0, o.yu)(),
-                        x = !("/i/chat/" === s.pathname || "/i/chat" === s.pathname),
-                        C = g && !x ? d.h$ : 0,
-                        p = (0, w.hC)("rweb_xchat_logs"),
-                        u = (0, w.hC)("rweb_xchat_new_db_worker_enabled");
-                    return l.createElement(v.i, null, l.createElement(a.Z, { headerless: g && x, history: t, isFullWidth: !0, primaryContent: () => l.createElement(h.Z, { style: m.root }, l.createElement(r.H, { settings: { path: "/i/chat", showDebugOptions: n, bottomBarHeight: C, logLevel: p ? i.B$.INFO : i.B$.ERROR, newDBWorker: u } })), sidebarContent: null }));
+                        p = !("/i/chat/" === s.pathname || "/i/chat" === s.pathname),
+                        C = g && !p ? d.h$ : 0,
+                        u = (0, m.hC)("rweb_xchat_logs"),
+                        f = (0, m.hC)("rweb_xchat_new_db_worker_enabled");
+                    return l.createElement(v.i, null, l.createElement(a.Z, { headerless: g && p, history: t, isFullWidth: !0, primaryContent: () => l.createElement(h.Z, { style: x.root }, l.createElement(r.H, { settings: { path: "/i/chat", showDebugOptions: n, bottomBarHeight: C, logLevel: u ? i.B$.INFO : i.B$.ERROR, newDBWorker: f, rwebElements: { dashMenuButton: l.createElement(w.Z, null) } } })), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, s) => {
@@ -246,4 +259,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.d89d3fba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.c829f52a.js.map

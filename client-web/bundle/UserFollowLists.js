@@ -3,7 +3,7 @@
     ["bundle.UserFollowLists"],
     {
         333241: (e, o, t) => {
-            t.d(o, { Z: () => v });
+            t.d(o, { Z: () => P });
             t(136728);
             var r = t(202784),
                 n = t(638236),
@@ -24,11 +24,11 @@
                 g = "share",
                 y = l().j7bb1a43,
                 D = l().hef5960c,
-                v = (0, m.M)((e) => {
+                P = (0, m.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: t, onClose: a, onMute: l, onRemoveFollower: m, onReportUser: v, onShare: P, onUnblock: E, onUnmute: S, user: I } = e,
-                        M = [],
-                        Z = (o, t) => {
+                        { onBlock: t, onClose: a, onMute: l, onRemoveFollower: m, onReportUser: P, onShare: v, onUnblock: S, onUnmute: E, user: I } = e,
+                        C = [],
+                        M = (o, t) => {
                             const { confirm: r, onClose: n } = e;
                             if (o) {
                                 const { label: e, ...s } = o;
@@ -41,48 +41,48 @@
                         !I.protected &&
                         !I.blocking &&
                         !I.blocked_by &&
-                        M.push({
+                        C.push({
                             Icon: n.Z,
                             onClick: () => {
-                                a(), P();
+                                a(), v();
                             },
                             testID: g,
                             text: D,
                         });
                     !I.blocking &&
-                        M.push({
+                        C.push({
                             ...(0, p.N1)(
                                 I,
                                 () => {
                                     a(), l();
                                 },
                                 () => {
-                                    a(), S();
+                                    a(), E();
                                 },
                             ),
                             testID: w,
                         });
                     I.followed_by &&
-                        M.push({
+                        C.push({
                             ...(0, h.l)({
                                 removeFollowerAction: (e) => {
-                                    Z(e, m);
+                                    M(e, m);
                                 },
                                 user: I,
                             }),
                             testID: b,
                         }),
-                        M.push((0, u.op)({ blockAction: (e) => Z(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => Z(e, E), user: I })),
-                        M.push({
+                        C.push((0, u.op)({ blockAction: (e) => M(e, t), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => M(e, S), user: I })),
+                        C.push({
                             Icon: i.default,
                             onClick: () => {
-                                a(), v();
+                                a(), P();
                             },
                             testID: _,
                             text: y({ screenName: I.screen_name }),
                         });
-                    const C = M.map(({ Icon: e, onClick: o, testID: t, text: r }) => ({ text: r, onClick: o, Icon: e, testID: t }));
-                    return r.createElement(s.Z, { items: C, onCloseRequested: a });
+                    const Z = C.map(({ Icon: e, onClick: o, testID: t, text: r }) => ({ text: r, onClick: o, Icon: e, testID: t }));
+                    return r.createElement(s.Z, { items: Z, onCloseRequested: a });
                 });
         },
         864479: (e, o, t) => {
@@ -107,7 +107,7 @@
                 d = n.memo(i);
         },
         293988: (e, o, t) => {
-            t.d(o, { Z: () => P });
+            t.d(o, { Z: () => v });
             var r = t(202784),
                 n = t(154003),
                 s = t(111677),
@@ -130,7 +130,7 @@
                 g = a().j87c21f4,
                 y = a().iebc30ca,
                 D = a().dc740eb2;
-            class v extends r.PureComponent {
+            class P extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -164,7 +164,7 @@
                     o.scribeAction(e);
                 }
             }
-            const P = w(v);
+            const v = w(P);
         },
         652904: (e, o, t) => {
             t.d(o, { Z: () => c });
@@ -220,7 +220,7 @@
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -544,7 +544,7 @@
                 };
         },
         589992: (e, o, t) => {
-            t.r(o), t.d(o, { FollowersScreen: () => j, default: () => q });
+            t.r(o), t.d(o, { FollowersScreen: () => q, default: () => V });
             var r = t(202784),
                 n = t(457311),
                 s = t(111677),
@@ -564,8 +564,8 @@
                 g = t(750085),
                 y = t(962741),
                 D = t(919022),
-                v = t(218951);
-            const P = (e) => (o, t) => {
+                P = t(218951);
+            const v = (e) => (o, t) => {
                 const r = t(),
                     n = e.selectEntries(r).filter((e) => {
                         if (!e.content || e.type !== y.ZP.User) return !1;
@@ -575,64 +575,64 @@
                     });
                 o(n.map((o) => e.removeEntry(o.entryId)));
             };
-            var E = t(615027),
-                S = t(984915),
+            var S = t(615027),
+                E = t(984915),
                 I = t(71620),
-                M = t(668214),
-                Z = t(882122),
-                C = t(390387);
+                C = t(668214),
+                M = t(882122),
+                Z = t(390387);
             const k = (e, o) => o.match.params.screenName,
                 x = (e, o) => D.ZP.selectByScreenName(e, k(0, o)),
                 F = (e, o) => D.ZP.selectFetchStatusByScreenName(e, k(0, o)),
-                L = (e, o) => {
+                A = (e, o) => {
                     const t = ((e, o) => D.ZP.selectIdByScreenName(e, k(0, o)))(e, o);
-                    return t ? Z.lP(e, t) : void 0;
+                    return t ? M.lP(e, t) : void 0;
                 },
-                A = (e, o) => o.match.params.followersSubroute || o.match.params.creatorSubscriptionsSubroute,
-                O = (0, M.Z)()
-                    .propsFromState(() => ({ fetchStatus: F, isActiveCreator: C.WM, mode: A, screenName: k, user: x, viewerUserId: C._h, knownFollowersCount: L }))
-                    .propsFromActions(() => ({ cleanupOwnFollowersList: P, createLocalApiErrorHandler: (0, I.zr)("USER_PROFILE_FOLLOWERS"), fetchOneUserByScreenNameIfNeeded: D.ZP.fetchOneByScreenNameIfNeeded, fetchKnownFollowersIfNeeded: Z.Hq }));
+                L = (e, o) => o.match.params.followersSubroute || o.match.params.creatorSubscriptionsSubroute,
+                O = (0, C.Z)()
+                    .propsFromState(() => ({ fetchStatus: F, isActiveCreator: Z.WM, mode: L, screenName: k, user: x, viewerUserId: Z._h, knownFollowersCount: A }))
+                    .propsFromActions(() => ({ cleanupOwnFollowersList: v, createLocalApiErrorHandler: (0, I.zr)("USER_PROFILE_FOLLOWERS"), fetchOneUserByScreenNameIfNeeded: D.ZP.fetchOneByScreenNameIfNeeded, fetchKnownFollowersIfNeeded: M.Hq }));
             var T = t(269011),
                 N = t(335632),
                 R = t(240089);
             const U = a().fe9d3afa,
                 B = a().fbce8dbe,
-                H = { superfollowers: a().ab7fc3ef, followers_you_follow: a().j0d17377, followers: a().fa9e827f, following: a().ha979be5, subscribers: a().d28be573, subscriptions: a().g9da3853, verified_followers: a().cfd952a1 },
-                W = { superfollowers: a().d52a1caa, followers_you_follow: a().i099d32e, followers: a().c64974fc, following: a().d960b55c, subscribers: a().d52a1caa, subscriptions: a().d7b51c68, verified_followers: a().fecc696e },
-                $ = { superfollowers: a().g0a2fbbe, followers_you_follow: a().g65f4bac, followers: a().c36cfddc, following: a().h0c94842, subscribers: a().g0a2fbbe, subscriptions: a().j7f5c6aa, verified_followers: a().fd275c1a },
-                z = { superfollowers: a().e08bd098, followers_you_follow: a().j029a4dc, followers: a().b2b2c6ce, following: a().cb1a15c8, subscribers: a().e08bd098, subscriptions: a().i967b954, verified_followers: a().a44e403e },
-                G = { followers_you_follow: a().d74ee2e3, followers: a().c36cfddc, following: a().ae5749c7, verified_followers: a().b5099e33 },
+                W = { superfollowers: a().ab7fc3ef, followers_you_follow: a().j0d17377, followers: a().fa9e827f, following: a().ha979be5, subscribers: a().d28be573, subscriptions: a().g9da3853, verified_followers: a().cfd952a1 },
+                $ = { superfollowers: a().d52a1caa, followers_you_follow: a().i099d32e, followers: a().c64974fc, following: a().d960b55c, subscribers: a().d52a1caa, subscriptions: a().d7b51c68, verified_followers: a().fecc696e },
+                H = { superfollowers: a().g0a2fbbe, followers_you_follow: a().g65f4bac, followers: a().c36cfddc, following: a().h0c94842, subscribers: a().g0a2fbbe, subscriptions: a().j7f5c6aa, verified_followers: a().fd275c1a },
+                G = { superfollowers: a().e08bd098, followers_you_follow: a().j029a4dc, followers: a().b2b2c6ce, following: a().cb1a15c8, subscribers: a().e08bd098, subscriptions: a().i967b954, verified_followers: a().a44e403e },
+                z = { followers_you_follow: a().d74ee2e3, followers: a().c36cfddc, following: a().ae5749c7, verified_followers: a().b5099e33 },
                 K = { followers_you_follow: a().ec251f36, followers: a().b2b2c6ce, following: a().f8af4f48, verified_followers: a().fd0aad94 },
-                V = {
-                    superfollowers: (e) => (0, v.Z)({ timelineId: `superFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchSuperFollowers, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_SUPER_FOLLOWERS", perfKey: "superFollowersGraphQL", formatResponse: g.Z }),
-                    followers_you_follow: (e) => (0, v.Z)({ timelineId: `followersYouKnowGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowersYouKnow, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS_YOU_KNOW", perfKey: "followersYouKnowGraphQL", formatResponse: g.Z }),
-                    followers: (e) => (0, v.Z)({ timelineId: `followersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS", perfKey: "followersGraphQL", formatResponse: g.Z }),
-                    following: (e) => (0, v.Z)({ timelineId: `followingGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowing, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWING", perfKey: "followingGraphQL", formatResponse: g.Z }),
-                    subscribers: (e) => (0, v.Z)({ timelineId: `UserCreatorSubscribers-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscribers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIBERS", perfKey: "userCreatorSubscribersGraphQL", formatResponse: g.Z }),
-                    subscriptions: (e) => (0, v.Z)({ timelineId: `UserCreatorSubscription-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscriptions, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIPTIONS", perfKey: "userCreatorSubscriptionsGraphQL", formatResponse: g.Z }),
-                    verified_followers: (e) => (0, v.Z)({ timelineId: `verifiedFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchVerifiedFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_VERIFIED_FOLLOWERS", perfKey: "verifiedFollowersGraphQL", formatResponse: g.Z }),
+                Q = {
+                    superfollowers: (e) => (0, P.Z)({ timelineId: `superFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchSuperFollowers, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_SUPER_FOLLOWERS", perfKey: "superFollowersGraphQL", formatResponse: g.Z }),
+                    followers_you_follow: (e) => (0, P.Z)({ timelineId: `followersYouKnowGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowersYouKnow, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS_YOU_KNOW", perfKey: "followersYouKnowGraphQL", formatResponse: g.Z }),
+                    followers: (e) => (0, P.Z)({ timelineId: `followersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWERS", perfKey: "followersGraphQL", formatResponse: g.Z }),
+                    following: (e) => (0, P.Z)({ timelineId: `followingGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchFollowing, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_FOLLOWING", perfKey: "followingGraphQL", formatResponse: g.Z }),
+                    subscribers: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscribers-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscribers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIBERS", perfKey: "userCreatorSubscribersGraphQL", formatResponse: g.Z }),
+                    subscriptions: (e) => (0, P.Z)({ timelineId: `UserCreatorSubscription-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchCreatorSubscriptions, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_CREATOR_SUBSCRIPTIONS", perfKey: "userCreatorSubscriptionsGraphQL", formatResponse: g.Z }),
+                    verified_followers: (e) => (0, P.Z)({ timelineId: `verifiedFollowersGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchVerifiedFollowers, getEndpointParams: ({ count: o, cursor: t }) => ({ count: o, cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_VERIFIED_FOLLOWERS", perfKey: "verifiedFollowersGraphQL", formatResponse: g.Z }),
                 },
-                Q = (0, l.Z)((e, o, t, s) => () => {
+                j = (0, l.Z)((e, o, t, s) => () => {
                     const a = o === e;
                     if (!a && "superfollowers" === s) return (0, w.ZP)("Unexpected rendering of superfollowers empty state"), null;
                     const l = a && "following" === s ? B : void 0,
                         i = a && "following" === s ? "/i/connect_people" : void 0;
-                    let d = a ? $[s] : G[s],
-                        c = a ? z[s] : K[s];
+                    let d = a ? H[s] : z[s],
+                        c = a ? G[s] : K[s];
                     return "function" == typeof d && (d = d({ screenName: t })), "function" == typeof c && (c = c({ screenName: t })), r.createElement(n.Z, { buttonLink: i, buttonText: l, header: d, message: c });
                 });
-            class j extends r.Component {
+            class q extends r.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._getMemoizeModule = (0, l.Z)((e, o) => e && V[o](e))),
+                        (this._getMemoizeModule = (0, l.Z)((e, o) => e && Q[o](e))),
                         (this._render = () => {
                             const { mode: e, screenName: o, user: t, viewerUserId: n } = this.props,
                                 s = this._getMemoizeModule(t?.id_str, e),
-                                a = Q(n, t?.id_str, o, e),
+                                a = j(n, t?.id_str, o, e),
                                 l = this._isOwnProfile() && "followers" === e,
                                 i = this._canViewSubscribersPage(),
                                 d = this._canViewSubscriptionsPage();
-                            return ("subscribers" === e && !i) || ("subscriptions" === e && !d) ? r.createElement(E.Z, { to: `/${o}` }) : s ? r.createElement(m.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(l), loadingAccessibilityLabel: U, module: s, renderEmptyState: a, title: W[e] }) : null;
+                            return ("subscribers" === e && !i) || ("subscriptions" === e && !d) ? r.createElement(S.Z, { to: `/${o}` }) : s ? r.createElement(m.Z, { entryConfiguration: this._getMemoizedEntryConfiguration(l), loadingAccessibilityLabel: U, module: s, renderEmptyState: a, title: $[e] }) : null;
                         }),
                         (this._getMemoizedEntryConfiguration = (0, l.Z)((e) => (({ withFollowerActionMenu: e = !1 }) => ({ ...(0, N.G)({}), [y.ZP.User]: (0, T.Z)({ decoration: e ? R.C_ : void 0 }) }))({ withFollowerActionMenu: e }))),
                         (this._handleFetchUser = () => {
@@ -661,14 +661,14 @@
                 render() {
                     const { fetchStatus: e, history: o, knownFollowersCount: t, mode: n, screenName: s, user: a, viewerUserId: l } = this.props,
                         { id_str: p, name: m = "" } = a || {},
-                        f = H[n]({ screenName: s, fullName: m }),
+                        f = W[n]({ screenName: s, fullName: m }),
                         w = this._isOwnProfile(),
                         _ = !a || (0, b.n5)({ isOwnProfile: w, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: a }),
                         g = this._canViewSubscribersPage(),
                         y = this._canViewSubscriptionsPage();
-                    if ("superfollowers" === n) return r.createElement(E.Z, { to: `/${s}/creator-subscriptions/subscribers` });
-                    const D = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: W.verified_followers }, a && l !== a.id_str && t ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: W.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: W.followers }, { key: "following", to: `/${s}/following`, label: W.following }, g ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: W.subscribers } : null, y ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: W.subscriptions } : null];
-                    return _ ? r.createElement(S.Z, { scribeSection: n, userId: p }, r.createElement(h.Z, null, r.createElement(c.Z, { backLocation: `/${s}`, documentTitle: f, history: o, primaryContent: r.createElement(d.Z, { "aria-label": U, fetchStatus: e, onRequestRetry: this._handleFetchUser, render: this._render }), secondaryBar: r.createElement(u.Z, { links: D }), sidebarContent: r.createElement(i.Z, null), subtitle: `@${s}`, title: m }))) : r.createElement(E.Z, { to: `/${s}` });
+                    if ("superfollowers" === n) return r.createElement(S.Z, { to: `/${s}/creator-subscriptions/subscribers` });
+                    const D = [{ key: "verified_followers", to: `/${s}/verified_followers`, label: $.verified_followers }, a && l !== a.id_str && t ? { key: "followers_you_follow", to: `/${s}/followers_you_follow`, label: $.followers_you_follow } : null, { key: "followers", to: `/${s}/followers`, label: $.followers }, { key: "following", to: `/${s}/following`, label: $.following }, g ? { key: "subscribers", to: `/${s}/creator-subscriptions/subscribers`, label: $.subscribers } : null, y ? { key: "subscriptions", to: `/${s}/creator-subscriptions/subscriptions`, label: $.subscriptions } : null];
+                    return _ ? r.createElement(E.Z, { scribeSection: n, userId: p }, r.createElement(h.Z, null, r.createElement(c.Z, { backLocation: `/${s}`, documentTitle: f, history: o, primaryContent: r.createElement(d.Z, { "aria-label": U, fetchStatus: e, onRequestRetry: this._handleFetchUser, render: this._render }), secondaryBar: r.createElement(u.Z, { links: D }), sidebarContent: r.createElement(i.Z, null), subtitle: `@${s}`, title: m }))) : r.createElement(S.Z, { to: `/${s}` });
                 }
                 _fetchKnownFollowersIfNeeded() {
                     const { createLocalApiErrorHandler: e, fetchKnownFollowersIfNeeded: o, user: t, viewerUserId: r } = this.props,
@@ -687,8 +687,8 @@
                     }
                 }
             }
-            j.contextType = p.rC;
-            const q = O(j);
+            q.contextType = p.rC;
+            const V = O(q);
         },
         984915: (e, o, t) => {
             t.d(o, { Z: () => i });
@@ -716,7 +716,7 @@
             i.contextType = s.rC;
         },
         403556: (e, o, t) => {
-            t.d(o, { Z: () => S });
+            t.d(o, { Z: () => E });
             var r = t(807896),
                 n = t(202784),
                 s = t(194504),
@@ -770,17 +770,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": o, badgeCount: t, badgePip: r, children: s, color: a, isActive: d, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: f, retainScrollPosition: D, style: P, to: E } = this.props,
-                        { location: S } = this.state,
-                        I = E ? this._getMemoizedLink(E, D) : void 0,
-                        M = d ? d(E) : S?.pathname === I?.pathname,
-                        Z = w.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? v.pillHoverStyle.backgroundColor : void 0 }),
-                        C = f ? "medium" : M ? "bold" : "medium";
-                    return n.createElement(b.Z, { "aria-label": o, "aria-selected": M, focusable: !!M, interactiveStyles: Z, link: I, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [v.pillStyle] : [v.link]), ...(u && M ? [v.pillActiveStyle] : []), c ? (u ? v.compactPill : v.compactLink) : null, p ? v.roundedRect : null, P], withoutInteractiveStyles: f }, ({ isFocused: o, isHovered: d }) => n.createElement(i.Z, { style: u && v.flexGrow }, n.createElement(h.ZP, { size: f ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(M, d, f, u) }, c && v.compactText, f && o && v.focusedText, u && v.pillTextStyle, u && M && v.pillActiveTextStyle, u && d && v.pillHoverTextStyle], weight: C }, e && n.createElement(e, { style: v.icon }), s, f || u ? null : n.createElement(i.Z, { style: M && [v.border, { backgroundColor: l.default.theme.colors[a] }] })), t ? n.createElement(m.Z, { count: t, standalone: !0, style: [v.badge, t >= 10 && v.multiDigitBadge, t >= 20 && v.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: _, withBorder: !1 }) : r ? n.createElement(m.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: g, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": o, badgeCount: t, badgePip: r, children: s, color: a, isActive: d, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: f, retainScrollPosition: D, style: v, to: S } = this.props,
+                        { location: E } = this.state,
+                        I = S ? this._getMemoizedLink(S, D) : void 0,
+                        C = d ? d(S) : E?.pathname === I?.pathname,
+                        M = w.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? P.pillHoverStyle.backgroundColor : void 0 }),
+                        Z = f ? "medium" : C ? "bold" : "medium";
+                    return n.createElement(b.Z, { "aria-label": o, "aria-selected": C, focusable: !!C, interactiveStyles: M, link: I, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [P.pillStyle] : [P.link]), ...(u && C ? [P.pillActiveStyle] : []), c ? (u ? P.compactPill : P.compactLink) : null, p ? P.roundedRect : null, v], withoutInteractiveStyles: f }, ({ isFocused: o, isHovered: d }) => n.createElement(i.Z, { style: u && P.flexGrow }, n.createElement(h.ZP, { size: f ? "headline2" : void 0, style: [P.text, { color: this._getTextColor(C, d, f, u) }, c && P.compactText, f && o && P.focusedText, u && P.pillTextStyle, u && C && P.pillActiveTextStyle, u && d && P.pillHoverTextStyle], weight: Z }, e && n.createElement(e, { style: P.icon }), s, f || u ? null : n.createElement(i.Z, { style: C && [P.border, { backgroundColor: l.default.theme.colors[a] }] })), t ? n.createElement(m.Z, { count: t, standalone: !0, style: [P.badge, t >= 10 && P.multiDigitBadge, t >= 20 && P.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: _, withBorder: !1 }) : r ? n.createElement(m.Z, { pip: !0, standalone: !0, style: P.badgePip, textColor: "red500", unreadCountLabel: g, withBorder: !1 }) : null));
                 }
             }
             (D.contextType = f.Z), (D.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const v = l.default.create((e) => ({
+            const P = l.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -803,9 +803,9 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                P = D,
-                E = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                S = ({ alignFirstItem: e, "aria-label": o, isCompact: t, isPillLink: l, isRoundedRect: i, links: d, style: c, visibleItemIndex: u }) => {
+                v = D,
+                S = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                E = ({ alignFirstItem: e, "aria-label": o, isCompact: t, isPillLink: l, isRoundedRect: i, links: d, style: c, visibleItemIndex: u }) => {
                     const p = d
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -815,15 +815,15 @@
                         f = n.useMemo(
                             () =>
                                 d.filter(Boolean).map(({ label: o, viewType: s, ...a }, d) => {
-                                    const c = m ? [E.linkRedesign, 0 === d && E.firstLinkRedesign, e && 0 === d && E.withNoPaddingStart] : void 0;
-                                    return n.createElement(P, (0, r.Z)({ viewType: s }, a, { isCompact: t, isPillLink: l, isRoundedRect: i, isWebRedesign: m, style: c }), o);
+                                    const c = m ? [S.linkRedesign, 0 === d && S.firstLinkRedesign, e && 0 === d && S.withNoPaddingStart] : void 0;
+                                    return n.createElement(v, (0, r.Z)({ viewType: s }, a, { isCompact: t, isPillLink: l, isRoundedRect: i, isWebRedesign: m, style: c }), o);
                                 }),
                             [e, t, l, i, m, d],
                         );
-                    return n.createElement(s.Z, { "aria-label": o, buttonsContainerStyle: l && E.gap, childrenStyle: !m && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, m && E.leftAligned, c], visibleItemIndex: u }, f);
+                    return n.createElement(s.Z, { "aria-label": o, buttonsContainerStyle: l && S.gap, childrenStyle: !m && S.flexGrow, key: p, style: [l ? null : S.segmentedControl, m && S.leftAligned, c], visibleItemIndex: u }, f);
                 };
         },
-        748138: (e, o, t) => {
+        41065: (e, o, t) => {
             t.r(o), t.d(o, { default: () => i });
             var r = t(202784),
                 n = t(890601),
@@ -831,12 +831,12 @@
                 a = t(347101);
             const l = (e = {}) => {
                 const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
-        74514: (e, o, t) => {
+        98440: (e, o, t) => {
             t.r(o), t.d(o, { default: () => i });
             var r = t(202784),
                 n = t(890601),
@@ -844,24 +844,11 @@
                 a = t(347101);
             const l = (e = {}) => {
                 const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: o });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const i = l;
-        },
-        155353: (e, o, t) => {
-            t.r(o), t.d(o, { default: () => i });
-            var r = t(202784),
-                n = t(890601),
-                s = t(783427),
-                a = t(347101);
-            const l = (e = {}) => {
-                const { direction: o } = (0, s.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.d014a1da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.6a69633a.js.map

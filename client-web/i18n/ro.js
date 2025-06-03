@@ -3586,7 +3586,7 @@
                 t("hbe4f99e", "Salut! Abia aștept să împărtășesc conținut secret cu voi, dar și să vă cunosc mai bine :)"),
                 t("fb278c82", "Ce este previzualizarea?"),
                 t("j6cab6ec", "Iată ce văd oamenii înainte de a se abona la contul tău. Alege și editează descrierile tale până când le faci perfecte."),
-                t("i22beaa4", "Partajare date"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Șterge istoricul conversației"),
                 t("ebc4fda0", "Urmează să ștergi istoricul de conversații cu Grok. Nu vei putea niciodată să accesezi din nou aceste conversații."),
                 t("c90fe716", "Ștergi conversațiile?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.0accebfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.399b6bca.js.map

@@ -3574,7 +3574,7 @@
                 n("hbe4f99e", "哈囉！等不及想與你分享一些絕密內容，讓我們進一步了解彼此 :)"),
                 n("fb278c82", "這個預覽畫面是什麼？"),
                 n("j6cab6ec", "這是人們在訂閱你之前所看到的畫面。請調整並編輯你的描述，直到你滿意為止。"),
-                n("i22beaa4", "資料分享"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "刪除對話記錄"),
                 n("ebc4fda0", "你即將刪除 Grok 對話記錄。你將無法再存取這些對話。"),
                 n("c90fe716", "你想要刪除對話嗎？"),
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.cc6016ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.b659c2ca.js.map

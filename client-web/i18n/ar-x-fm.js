@@ -3588,7 +3588,7 @@
                 n("hbe4f99e", "مرحبًا! لا يمكنني الانتظار لمشاركة بعض المحتويات بالغة السرية والتعرّف عليك بشكلٍ أفضل :)"),
                 n("fb278c82", "ما هذه المعاينة؟"),
                 n("j6cab6ec", "تظهر هذه الرسالة للأشخاص قبل أن يشتركوا لديكِ. يمكنكِ إدخال تعديلات على الأوصاف لديكِ بما يناسبكِ."),
-                n("i22beaa4", "مشاركة البيانات"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "حذف سجل المحادثات"),
                 n("ebc4fda0", "أنتِ على وشك حذف سجل محادثاتكِ على grok. لن تتمكني من الوصول إلى هذه المحادثات مرة أخرى."),
                 n("c90fe716", "هل ترغبين في حذف محادثاتكِ؟"),
@@ -13355,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.65322c8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.4461234a.js.map

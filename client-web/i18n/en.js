@@ -3575,7 +3575,7 @@
                 a("hbe4f99e", "Hey there! Can’t wait to share some top secret content and get to know you even better :)"),
                 a("fb278c82", "What’s this preview?"),
                 a("j6cab6ec", "This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right."),
-                a("i22beaa4", "Data Sharing"),
+                a("f2b1e83e", "Grok & Third-Party Collaborators"),
                 a("e110a46c", "Delete conversation history"),
                 a("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 a("c90fe716", "Do you want to delete your conversations?"),
@@ -13341,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.2b3ce34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.599719ea.js.map

@@ -3579,7 +3579,7 @@
                 o("hbe4f99e", "اے دوست! کچھ خفیہ ترین مواد شیئر کرنے اور آپ کے بارے میں مزید جاننے کا شدت سے انتظار ہے :)"),
                 o("fb278c82", "یہ کس چیز کا پیش منظر ہے؟"),
                 o("j6cab6ec", "آپ کو سبسکرائب کرنے سے پہلے لوگ یہی دیکھتے ہیں۔ اپنی وضاحتوں کو اس وقت تک تبدیل کریں اور ان میں ترمیم کریں جب تک کہ آپ ان کو بالکل ٹھیک کر لیں۔"),
-                o("i22beaa4", "Data Sharing"),
+                o("f2b1e83e", "Grok & Third-Party Collaborators"),
                 o("e110a46c", "Delete conversation history"),
                 o("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 o("c90fe716", "Do you want to delete your conversations?"),
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.1fc45a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.4ded14ba.js.map

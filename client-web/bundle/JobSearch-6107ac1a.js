@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.JobSearch-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconEye-js"],
+    ["bundle.JobSearch-6107ac1a", "icons/IconDoubleChevronUp-js"],
     {
         771741: (e, l, a) => {
             a.d(l, { Z: () => g });
@@ -1353,6 +1353,84 @@
             var n = { kind: "InlineDataFragment", name: "parseUserEntities_userEntities", hash: "16101b38cee4e401a6aa44e1c860d74f" };
             const i = n;
         },
+        594695: (e, l, a) => {
+            a.d(l, { Z: () => d });
+            var n,
+                i,
+                r,
+                s,
+                t,
+                u,
+                o = {
+                    fragment: {
+                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "consented" }), (i = { defaultValue: null, kind: "LocalArgument", name: "matchingCriteria" }), (r = { defaultValue: null, kind: "LocalArgument", name: "recommendationsEnabled" }), (s = { defaultValue: null, kind: "LocalArgument", name: "remoteWorkAllowed" }), (t = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePutMatchingProfileMutation",
+                        selections: (u = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "consented", variableName: "consented" },
+                                    { kind: "Variable", name: "matching_criteria", variableName: "matchingCriteria" },
+                                    { kind: "Variable", name: "recommendations_enabled", variableName: "recommendationsEnabled" },
+                                    { kind: "Variable", name: "remote_work_allowed", variableName: "remoteWorkAllowed" },
+                                    { kind: "Literal", name: "s", value: "84b0" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "PutMatchingProfileResult",
+                                kind: "LinkedField",
+                                name: "put_matching_profile",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [t, n, r, s, i], kind: "Operation", name: "usePutMatchingProfileMutation", selections: u },
+                    params: { id: "2jaLJJQhearTWZhqu89gBQ", metadata: {}, name: "usePutMatchingProfileMutation", operationKind: "mutation", text: null },
+                };
+            o.hash = "b23a8c052c25cec3489865df8f18d46d";
+            const d = o;
+        },
+        488248: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var n,
+                i,
+                r = {
+                    fragment: {
+                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useRefreshJobRecommendationsMutation",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Literal", name: "s", value: "84b0" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ],
+                                concreteType: "RefreshJobRecommendationsResult",
+                                kind: "LinkedField",
+                                name: "refresh_job_recommendations",
+                                plural: !1,
+                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "recommendation_count", storageKey: null }],
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "useRefreshJobRecommendationsMutation", selections: i },
+                    params: { id: "NjDhjn_53KnOmYAcoyxqew", metadata: {}, name: "useRefreshJobRecommendationsMutation", operationKind: "mutation", text: null },
+                };
+            r.hash = "492b79a53d8f9fbe4f7ba82e23dbab65";
+            const s = r;
+        },
         420412: (e, l, a) => {
             a.d(l, { Z: () => u });
             var n = a(202784),
@@ -1384,7 +1462,11 @@
             const u = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 o = t;
         },
-        988227: (e, l, a) => {
+        183806: (e, l, a) => {
+            a.d(l, { Z: () => n });
+            const n = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        },
+        377782: (e, l, a) => {
             a.r(l), a.d(l, { default: () => u });
             var n = a(202784),
                 i = a(890601),
@@ -1392,7 +1474,7 @@
                 s = a(347101);
             const t = (e = {}) => {
                 const { direction: l } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2.59l9.46 9.45-1.42 1.42L12 5.41l-8.04 8.05-1.42-1.42L12 2.59zm0 7l9.46 9.45-1.42 1.42L12 12.41l-8.04 8.05-1.42-1.42L12 9.59z" })) }, { writingDirection: l });
             };
             t.metadata = { width: 24, height: 24 };
             const u = t;
@@ -1431,4 +1513,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.fdd08bda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.784c04ca.js.map

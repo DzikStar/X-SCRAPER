@@ -70,7 +70,7 @@
         86781: (e, t, r) => {
             r.d(t, { J: () => i });
             var n = r(552322),
-                s = r(927382);
+                s = r(254600);
             const a = (0, r(110929).j)("bg-background z-50 overflow-hidden shadow-md outline-none", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } });
             function i({ borderRadius: e = "medium", children: t, open: r, onOpenChange: i, trigger: o, withArrow: l, ...c }) {
                 return (0, n.jsxs)(s.fC, { open: r, onOpenChange: i, children: [(0, n.jsx)(s.xz, { asChild: !0, children: o }), (0, n.jsx)(s.h_, { children: (0, n.jsxs)(s.VY, { ...c, className: a({ borderRadius: e }), children: [t, l && (0, n.jsx)(s.Eh, { className: "fill-background" })] }) })] });
@@ -349,4 +349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763.7283471a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763.371bd68a.js.map

@@ -3575,7 +3575,7 @@
                 a("hbe4f99e", "Hallo daar! Ik kan niet wachten om supergeheime content te delen en je nog beter te leren kennen :)"),
                 a("fb278c82", "Waar gaat deze voorvertoning over?"),
                 a("j6cab6ec", "Dit is wat mensen zien voordat ze zich op jou abonneren. Tweak en bewerk je beschrijvingen tot je ze precies goed hebt."),
-                a("i22beaa4", "Gegevens delen"),
+                a("f2b1e83e", "Grok & Third-Party Collaborators"),
                 a("e110a46c", "Gespreksgeschiedenis verwijderen"),
                 a("ebc4fda0", "Je staat op het punt om je Grok-gespreksgeschiedenis te verwijderen. Je zal geen toegang meer hebben tot deze gesprekken."),
                 a("c90fe716", "Wil je je gesprekken verwijderen?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.9244682a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.1a15bd8a.js.map

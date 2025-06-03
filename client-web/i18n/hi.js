@@ -3579,7 +3579,7 @@
                 n("hbe4f99e", "सुनिए! कुछ टॉप सीक्रेट सामग्री को शेयर करने और आपको और भी बेहतर तरीके से जानने के लिए इंतजार नहीं कर सकता :)"),
                 n("fb278c82", "यह प्रीव्यू क्या है?"),
                 n("j6cab6ec", "यह लोग आपको सब्सक्राइब करने से पहले देखेंगे. अपने विवरणों को तब तक ट्वीक करें और संपादित करें, जब तक कि आप उन्हें एकदम ठीक न कर लें."),
-                n("i22beaa4", "डेटा शेयर करना"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "बातचीत इतिहास मिटायें"),
                 n("ebc4fda0", "आप अपना Grok बातचीत इतिहास हटाने वाले हैं. आप इन बातचीत तक दोबारा नहीं पहुंच पाएंगे."),
                 n("c90fe716", "क्या आप अपनी बातचीत हटाना चाहते हैं?"),
@@ -7233,16 +7233,16 @@
                 n("hd80bd3e", "पोस्ट का प्रचार करें"),
                 n("fe2b0008", "X को इस्तेमाल करने का तरीका जानें"),
                 n("h257d4aa", "प्रचार करने के लिए एक पोस्ट चुनें"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
-                n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("fe946974", "विज्ञापनों के बिना X का आपका ट्रायल"),
+                n("f6c50ec0", "आपका विज्ञापन-मुक्त ट्रायल समाप्त हो गया है"),
+                n("b1319404", "विज्ञापनों से परहेज किया गया"),
+                n("baa4acae", "आप ज़्यादा वैयक्तिकृत सामग्री देख रहे हैं."),
+                n("c00e8600", "अनुमानित समय की बचत हुई"),
+                n("ic073e4e", "आपका समय बहुमूल्य है."),
+                n("eb866e88", "अनुमानित 1 वर्ष में समय की बचत"),
+                n("aa77b70c", "आपके उपयोग के आधार पर."),
+                n("c534c6b4", "हम संख्याओं पर विचार कर रहे हैं..."),
+                n("i57332f0", "स्क्रॉल करते रहें और बाद में फिर से जाँच करके देखें कि आपने कितने विज्ञापनों से परहेज किया और आपने कितना समय बचाया"),
                 n("cc10f019", function (e) {
                     return e.minutes + " मिनट";
                 }),
@@ -7258,11 +7258,11 @@
                 n("be88be23", function (e) {
                     return "आपका " + e.durationInDays + "-दिन का विज्ञापन-मुक्त ट्रायल सक्रिय हो गया है";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("a4413462", "परीक्षण के दौरान आप यह देख सकते हैं कि आपने कितने विज्ञापन नहीं देखे हैं और आपने कितना समय बचाया है."),
+                n("ae3f3b0e", "आनंद लें!"),
+                n("cdac8dc4", "अपनी नयी फ़ीड देखें"),
                 n("dec99336", "विज्ञापन-मुक्त"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("i95803fa", "दुर्भाग्यवश, आप इस समय पात्र नहीं हैं."),
                 n("d28a1d72", "Radar के साथ रुझानों का पता लगाने वाले सबसे पहले व्यक्ति बनें"),
                 n("fb70427a", "पेश है X पर सबसे शक्तिशाली खोज खोज टूल"),
                 n("i54bf620", "कीवर्ड मॉनिटर करें"),
@@ -12122,7 +12122,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% शुल्क, न्यनतम "];
                             },
                         },
                         {
@@ -13348,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.4ba6de2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.51a2c1ba.js.map

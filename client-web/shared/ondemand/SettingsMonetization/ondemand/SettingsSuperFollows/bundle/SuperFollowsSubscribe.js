@@ -21,15 +21,15 @@
             const b = c.default.create((e) => ({ root: { border: "none", backgroundColor: e.colors.gray300, borderRadius: e.borderRadii.infinite, height: c.default.theme.spaces.space40, width: c.default.theme.spaces.space40 } })),
                 g = () => r.createElement(p.Z, { ratio: 1, style: b.root }),
                 h = [100],
-                w = c.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4, height: 20 } })),
-                f = (e) => {
+                f = c.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4, height: 20 } })),
+                w = (e) => {
                     const { wordHeightPx: t } = e;
-                    return r.createElement(a.Z, { style: w.root }, r.createElement(d.Z, { color: "text", maxWidthPx: 28, withBorderRadius: !0, wordHeightPx: t, wordPercentWidths: h }), r.createElement(d.Z, { color: "gray700", maxWidthPx: 64, withBorderRadius: !0, wordHeightPx: t, wordPercentWidths: h }));
+                    return r.createElement(a.Z, { style: f.root }, r.createElement(d.Z, { color: "text", maxWidthPx: 28, withBorderRadius: !0, wordHeightPx: t, wordPercentWidths: h }), r.createElement(d.Z, { color: "gray700", maxWidthPx: 64, withBorderRadius: !0, wordHeightPx: t, wordPercentWidths: h }));
                 },
                 y = c.default.create((e) => ({ root: { flexDirection: "row", marginBottom: e.spaces.space2, overflow: "hidden", padding: e.spaces.space16 }, content: { flexGrow: 1, gap: e.spaces.space4, marginStart: e.spaces.space12 } })),
                 E = (e) => {
                     const { wordPercentWidths: t } = e;
-                    return r.createElement(a.Z, { style: y.root }, r.createElement(g, null), r.createElement(a.Z, { style: y.content }, r.createElement(f, { wordHeightPx: 3 }), r.createElement(m, { wordHeightPx: 3, wordPercentWidths: t })));
+                    return r.createElement(a.Z, { style: y.root }, r.createElement(g, null), r.createElement(a.Z, { style: y.content }, r.createElement(w, { wordHeightPx: 3 }), r.createElement(m, { wordHeightPx: 3, wordPercentWidths: t })));
                 };
             var C = o(823161),
                 Z = o(366635),
@@ -37,7 +37,7 @@
             const k = c.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge, boxShadow: e.boxShadows.medium, display: "flex", flexDirection: "row", overflow: "hidden", padding: e.spaces.space16, width: "100%" }, content: { flexGrow: 1, gap: e.spaces.space4, marginStart: e.spaces.space12 }, indicator: { alignSelf: "flex-start" } })),
                 x = (e) => {
                     const { imageUrl: t, isBlueVerified: o, isProtected: n, isVerified: i, name: c, screenName: l, wordPercentWidths: s } = e;
-                    return r.createElement(a.Z, { style: k.root }, t ? r.createElement(C.default, { focusable: !1, size: "xLarge", uri: t }) : r.createElement(g, null), r.createElement(a.Z, { style: k.content }, c && l ? r.createElement(Z.Z, { isBlueVerified: o, isProtected: n, isVerified: i, name: c, nameSize: "body", screenName: l, screenNameSize: "body" }) : r.createElement(f, { wordHeightPx: 4 }), r.createElement(v.Z, { style: k.indicator, type: "superFollower" }), r.createElement(m, { wordHeightPx: 4, wordPercentWidths: s })));
+                    return r.createElement(a.Z, { style: k.root }, t ? r.createElement(C.default, { focusable: !1, size: "xLarge", uri: t }) : r.createElement(g, null), r.createElement(a.Z, { style: k.content }, c && l ? r.createElement(Z.Z, { isBlueVerified: o, isProtected: n, isVerified: i, name: c, nameSize: "body", screenName: l, screenNameSize: "body" }) : r.createElement(w, { wordHeightPx: 4 }), r.createElement(v.Z, { style: k.indicator, type: "superFollower" }), r.createElement(m, { wordHeightPx: 4, wordPercentWidths: s })));
                 },
                 S = [12, 8, 6, 12],
                 P = [13, 8, 5, 19, 8, 6],
@@ -75,13 +75,13 @@
                 g = d().f0c99eff,
                 h = (e) => {
                     const { imageUrl: t, screenName: o, style: a } = e;
-                    return n.createElement(r.Z, { style: [w.signature, a] }, n.createElement(i.ZP, { color: "gray700", weight: "bold" }, g({ screenName: o ?? b })), t ? n.createElement(u.default, { size: "medium", uri: t }) : n.createElement(m.Z, { Icon: p.default, size: "medium" }));
+                    return n.createElement(r.Z, { style: [f.signature, a] }, n.createElement(i.ZP, { color: "gray700", weight: "bold" }, g({ screenName: o ?? b })), t ? n.createElement(u.default, { size: "medium", uri: t }) : n.createElement(m.Z, { Icon: p.default, size: "medium" }));
                 },
-                w = l.default.create((e) => ({ signature: { display: "inline-flex", alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
-                f = d().a329ce88,
+                f = l.default.create((e) => ({ signature: { display: "inline-flex", alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
+                w = d().a329ce88,
                 y = (e, t) => {
                     const { autoFocus: o, imageUrl: l, onChange: s, screenName: d, style: u, value: m, valueMaxLength: p } = e;
-                    return n.createElement(r.Z, { style: [C.root, u] }, s ? n.createElement(a.Z, { autoFocus: o, inputStyle: C.descriptionInput, isCompact: !0, leftAligned: !0, maxNumberOfLines: Number.MAX_SAFE_INTEGER, multiline: !0, name: "description", numberOfLines: 1, onChange: s, placeholder: f, ref: t, style: C.description, value: m }) : n.createElement(i.ZP, { color: "gray700", style: C.description }, m), n.createElement(r.Z, { style: C.signatureWrapper }, n.createElement(h, { imageUrl: l, screenName: d, style: [C.signature, !m && C.visibilityHidden] }), s && p && n.createElement(c.Z, { count: m?.length ?? 0, maxCount: p, warningCount: p - 10 })));
+                    return n.createElement(r.Z, { style: [C.root, u] }, s ? n.createElement(a.Z, { autoFocus: o, inputStyle: C.descriptionInput, isCompact: !0, leftAligned: !0, maxNumberOfLines: Number.MAX_SAFE_INTEGER, multiline: !0, name: "description", numberOfLines: 1, onChange: s, placeholder: w, ref: t, style: C.description, value: m }) : n.createElement(i.ZP, { color: "gray700", style: C.description }, m), n.createElement(r.Z, { style: C.signatureWrapper }, n.createElement(h, { imageUrl: l, screenName: d, style: [C.signature, !m && C.visibilityHidden] }), s && p && n.createElement(c.Z, { count: m?.length ?? 0, maxCount: p, warningCount: p - 10 })));
                 },
                 E = n.forwardRef(y),
                 C = l.default.create((e) => ({ root: { display: "inline-flex", alignItems: "start", flexDirection: "column" }, description: { borderRadius: 0, borderColor: "transparent", minHeight: 0, width: "100%" }, descriptionInput: { color: e.colors.gray700, minHeight: 0, paddingBottom: 0, paddingStart: 0, paddingEnd: 0, paddingTop: 0 }, signatureWrapper: { alignItems: "center", flexDirection: "row", marginTop: e.spaces.space12, width: "100%" }, signature: { flex: 1 }, visibilityHidden: { visibility: "hidden" } }));
@@ -102,8 +102,8 @@
                 b = o(990804),
                 g = o(215337),
                 h = o(491831),
-                w = o(443781);
-            const f = [17, 7, 14, 11, 8, 12, 4, 11],
+                f = o(443781);
+            const w = [17, 7, 14, 11, 8, 12, 4, 11],
                 y = [0, 0.25, 0.75, 1],
                 E = [0, 0.5, 0.75, 1],
                 C = r.createElement(d().I18NFormatMessage, { $i18n: "ge990f4f" }, r.createElement(c.ZP, { size: "subtext3" }, d().f324fb6c)),
@@ -112,9 +112,9 @@
                 k = ({ style: e }) => {
                     const t = (e) => `${l.default.theme.colors.cellBackground}${e || ""}`,
                         o = l.default.theme.colors.transparent,
-                        { featureSwitches: n } = r.useContext(w.rC),
+                        { featureSwitches: n } = r.useContext(f.rC),
                         i = n.isTrue("super_follow_tweet_label_redesign_enabled");
-                    return r.createElement(a.Z, { style: [v.root, e] }, r.createElement(a.Z, { style: v.mockTweet }, r.createElement(a.Z, { style: v.fakeBodyCopy }, r.createElement(u.Z, { wordPercentWidths: f })), r.createElement(a.Z, { style: v.educationCallout }, i ? r.createElement(m.ZP, { background: "gray0" }, C) : r.createElement(p.Z.Custom, { Icon: h.default, backgroundColor: "plum0", style: v.maxWidth, text: Z, withColoredIcon: !0 })), r.createElement(a.Z, { style: v.tweetActionBarStyle }, r.createElement(b.Z, { bookmarkCount: 0, displayStyle: "block", isLiked: !1, isPresentational: !0, isRetweeted: !1, likeCount: 0, replyCount: 0, retweetCount: 0, tweetLink: "" }))), r.createElement(g.Z, { colors: [t(), t(), t(50), o], locations: y, style: v.gradient }), r.createElement(g.Z, { colors: [t(), t(99), t(50), o], locations: E, style: v.gradient }));
+                    return r.createElement(a.Z, { style: [v.root, e] }, r.createElement(a.Z, { style: v.mockTweet }, r.createElement(a.Z, { style: v.fakeBodyCopy }, r.createElement(u.Z, { wordPercentWidths: w })), r.createElement(a.Z, { style: v.educationCallout }, i ? r.createElement(m.ZP, { background: "gray0" }, C) : r.createElement(p.Z.Custom, { Icon: h.default, backgroundColor: "plum0", style: v.maxWidth, text: Z, withColoredIcon: !0 })), r.createElement(a.Z, { style: v.tweetActionBarStyle }, r.createElement(b.Z, { bookmarkCount: 0, displayStyle: "block", isLiked: !1, isPresentational: !0, isRetweeted: !1, likeCount: 0, replyCount: 0, retweetCount: 0, tweetLink: "" }))), r.createElement(g.Z, { colors: [t(), t(), t(50), o], locations: y, style: v.gradient }), r.createElement(g.Z, { colors: [t(), t(99), t(50), o], locations: E, style: v.gradient }));
                 };
             var x = o(439412);
             const S = d().da48ebf6,
@@ -173,7 +173,7 @@
             var n = o(357770);
         },
         397377: (e, t, o) => {
-            o.d(t, { Z: () => w });
+            o.d(t, { Z: () => f });
             var n = o(202784),
                 r = o(325686),
                 a = o(708852),
@@ -188,12 +188,12 @@
                 b = o(520913);
             const g = p().a4ed9072,
                 h = (e, t) => {
-                    const { autoFocus: o, imageUrl: u, onChange: m, style: p, value: h, valueMaxLength: w } = e,
+                    const { autoFocus: o, imageUrl: u, onChange: m, style: p, value: h, valueMaxLength: f } = e,
                         y = (0, a.$u)();
-                    return n.createElement(r.Z, { style: [f.root, p] }, u ? n.createElement(i.default, { size: y ? "xxxLarge" : "xLarge", uri: u }) : n.createElement(c.Z, { Icon: b.default }), m ? n.createElement(n.Fragment, null, n.createElement(l.Z, { autoFocus: o, inputStyle: [f.creatorIntroInput, !!w && f.creatorIntroInputWithCountdownCircle], isCompact: !0, leftAligned: !0, maxNumberOfLines: Number.MAX_SAFE_INTEGER, multiline: !0, name: "creatorIntro", numberOfLines: 1, onChange: m, placeholder: g, ref: t, style: f.creatorIntro, value: h }), w && n.createElement(r.Z, { style: f.countdownCircle }, n.createElement(s.Z, { count: h?.length ?? 0, maxCount: w, warningCount: w - 10 }))) : n.createElement(d.ZP, { style: [f.creatorIntro, f.creatorIntroReadOnly] }, h));
+                    return n.createElement(r.Z, { style: [w.root, p] }, u ? n.createElement(i.default, { size: y ? "xxxLarge" : "xLarge", uri: u }) : n.createElement(c.Z, { Icon: b.default }), m ? n.createElement(n.Fragment, null, n.createElement(l.Z, { autoFocus: o, inputStyle: [w.creatorIntroInput, !!f && w.creatorIntroInputWithCountdownCircle], isCompact: !0, leftAligned: !0, maxNumberOfLines: Number.MAX_SAFE_INTEGER, multiline: !0, name: "creatorIntro", numberOfLines: 1, onChange: m, placeholder: g, ref: t, style: w.creatorIntro, value: h }), f && n.createElement(r.Z, { style: w.countdownCircle }, n.createElement(s.Z, { count: h?.length ?? 0, maxCount: f, warningCount: f - 10 }))) : n.createElement(d.ZP, { style: [w.creatorIntro, w.creatorIntroReadOnly] }, h));
                 },
-                w = n.forwardRef(h),
-                f = u.default.create((e) => ({ root: { display: "inline-flex", alignItems: "start", flexDirection: "row", gap: e.spaces.space12 }, creatorIntro: { backgroundColor: e.colors.cellBackground, borderBottomStartRadius: e.borderRadii.large, borderBottomEndRadius: e.borderRadii.large, borderTopStartRadius: 0, borderTopEndRadius: e.borderRadii.large, boxShadow: e.boxShadows.small, width: "100%" }, creatorIntroReadOnly: { padding: e.spaces.space24 }, creatorIntroInput: { minHeight: 0, paddingBottom: e.spaces.space24, paddingStart: e.spaces.space24, paddingEnd: e.spaces.space24, paddingTop: e.spaces.space24 }, creatorIntroInputWithCountdownCircle: { paddingBottom: e.spaces.space40 }, countdownCircle: { position: "absolute", bottom: e.spaces.space8, end: e.spaces.space8 } }));
+                f = n.forwardRef(h),
+                w = u.default.create((e) => ({ root: { display: "inline-flex", alignItems: "start", flexDirection: "row", gap: e.spaces.space12 }, creatorIntro: { backgroundColor: e.colors.cellBackground, borderBottomStartRadius: e.borderRadii.large, borderBottomEndRadius: e.borderRadii.large, borderTopStartRadius: 0, borderTopEndRadius: e.borderRadii.large, boxShadow: e.boxShadows.small, width: "100%" }, creatorIntroReadOnly: { padding: e.spaces.space24 }, creatorIntroInput: { minHeight: 0, paddingBottom: e.spaces.space24, paddingStart: e.spaces.space24, paddingEnd: e.spaces.space24, paddingTop: e.spaces.space24 }, creatorIntroInputWithCountdownCircle: { paddingBottom: e.spaces.space40 }, countdownCircle: { position: "absolute", bottom: e.spaces.space8, end: e.spaces.space8 } }));
         },
         144861: (e, t, o) => {
             o.d(t, { Z: () => p });
@@ -266,12 +266,12 @@
                     const { count: t, maxCount: o, formatNumber: i = p, warningCount: c } = e,
                         g = o - t,
                         h = g >= 0 ? m({ count: i(g) }) : u({ count: i(t - o) }),
-                        w = t >= c ? n.createElement(r.Z, { "aria-atomic": !0, "aria-live": "polite", style: d.default.visuallyHidden }, h) : null,
-                        f = (0, l.Z)(g, o),
+                        f = t >= c ? n.createElement(r.Z, { "aria-atomic": !0, "aria-live": "polite", style: d.default.visuallyHidden }, h) : null,
+                        w = (0, l.Z)(g, o),
                         y = t >= o ? "red500" : t >= c ? "yellow500" : "primary",
-                        E = n.createElement(s.Z, { color: y, progress: f, size: t >= c ? 30 : 20, style: [b.progressCircle, g <= -10 && b.hide] }),
+                        E = n.createElement(s.Z, { color: y, progress: w, size: t >= c ? 30 : 20, style: [b.progressCircle, g <= -10 && b.hide] }),
                         C = t >= c ? n.createElement(r.Z, { style: [b.text, g > 0 ? b.gray700 : b.red500] }, i(g)) : null;
-                    return n.createElement(a.Z, { style: [b.root, b.center], testID: "countdown-circle" }, w, E, n.createElement(a.Z, { style: [d.default.absoluteFill, b.center] }, C));
+                    return n.createElement(a.Z, { style: [b.root, b.center], testID: "countdown-circle" }, f, E, n.createElement(a.Z, { style: [d.default.absoluteFill, b.center] }, C));
                 };
         },
         776588: (e, t, o) => {
@@ -310,19 +310,19 @@
                 b = o(40644),
                 g = o(439481);
             const h = c().d636ebc6,
-                w = c().eb3a8b0c,
-                f = c().j472ecfc,
+                f = c().eb3a8b0c,
+                w = c().j472ecfc,
                 y = c().a0af935c,
                 E = c().dac92b0d,
                 C = c().aa650427;
             function Z(e = new Error("TweetActionLike.onError")) {
                 m.Z.report(e);
             }
-            function v({ actionMenuDescription: e, activeColor: t = "magenta500", color: o, count: i, enableActionMenu: c = !1, enableKeyboardShortcuts: m, iconSize: v, isDisabled: k, isFaded: x, isLiked: S, isPresentational: P, likeActionIconContainerRef: A, likeTransitionAnimation: R, link: I, onAnimationStart: D, onError: W = Z, onLikeActionSelect: T, onMenuCancel: B, onPress: M, style: z, testIDs: H, withCount: L }) {
-                const N = L && "number" == typeof i;
-                let V = S ? y : h;
-                const F = r.useMemo(() => ({ label: S ? w : h }), [S]);
-                N && (V = S ? C({ count: i }) : E({ count: i }));
+            function v({ actionMenuDescription: e, activeColor: t = "magenta500", color: o, count: i, enableActionMenu: c = !1, enableKeyboardShortcuts: m, iconSize: v, isDisabled: k, isFaded: x, isLiked: S, isPresentational: P, likeActionIconContainerRef: A, likeTransitionAnimation: R, link: I, onAnimationStart: D, onError: W = Z, onLikeActionSelect: T, onMenuCancel: B, onPress: M, style: z, testIDs: L, withCount: H }) {
+                const N = H && "number" == typeof i;
+                let F = S ? y : h;
+                const V = r.useMemo(() => ({ label: S ? f : h }), [S]);
+                N && (F = S ? C({ count: i }) : E({ count: i }));
                 const K = (function ({ isLiked: e, likeTransitionAnimation: t }) {
                     const [o, n] = r.useState(!1),
                         a = r.useRef(e);
@@ -337,11 +337,11 @@
                     (t) => {
                         const o = [
                             {
-                                text: f,
+                                text: w,
                                 onClick() {
                                     t(), T?.();
                                 },
-                                testID: H?.like,
+                                testID: L?.like,
                                 Icon: l.default,
                             },
                         ];
@@ -353,7 +353,7 @@
                             },
                         });
                     },
-                    [e, T, B, H?.like],
+                    [e, T, B, L?.like],
                 );
                 return r.createElement(
                     b.ZP,
@@ -362,11 +362,11 @@
                         Icon: l.default,
                         actionIconContainerRef: A,
                         activeColor: t,
-                        "aria-label": V,
+                        "aria-label": F,
                         color: o,
                         count: i,
                         enableKeyboardShortcuts: m,
-                        hoverLabel: F,
+                        hoverLabel: V,
                         iconSize: v,
                         isActive: S,
                         isDisabled: k,
@@ -381,7 +381,7 @@
                         },
                         renderMenu: c ? U : void 0,
                         style: z,
-                        testID: H && (S ? H.unlike : H.like),
+                        testID: L && (S ? L.unlike : L.like),
                         withCount: N,
                     }),
                 );
@@ -403,8 +403,8 @@
                 b = a().fd1e5446,
                 g = a().bb5c5864,
                 h = a().f65198c2;
-            function w(e) {
-                const t = (function ({ excludeRetweetAction: e = !1, excludeRetweetWithCommentAction: t = !1, excludeViewQuotesRetweetsAction: o = !1, isRetweeted: r, onMenuCancel: a, onQuoteTweetActionSelect: i, onRetweetActionSelect: l, onUnretweetActionSelect: s, onViewEngagementsActionSelect: m, retweetActionSubText: w, retweetWithCommentLink: f, testIDs: y, viewQuotesRetweetsLink: E }) {
+            function f(e) {
+                const t = (function ({ excludeRetweetAction: e = !1, excludeRetweetWithCommentAction: t = !1, excludeViewQuotesRetweetsAction: o = !1, isRetweeted: r, onMenuCancel: a, onQuoteTweetActionSelect: i, onRetweetActionSelect: l, onUnretweetActionSelect: s, onViewEngagementsActionSelect: m, retweetActionSubText: f, retweetWithCommentLink: w, testIDs: y, viewQuotesRetweetsLink: E }) {
                         const C = y?.retweetConfirm,
                             Z = y?.unretweetConfirm;
                         return n.useMemo(() => {
@@ -414,7 +414,7 @@
                                     e ||
                                     n.push({
                                         text: p,
-                                        subText: w,
+                                        subText: f,
                                         onClick() {
                                             a?.(), l?.();
                                         },
@@ -437,7 +437,7 @@
                                             a?.(), i?.();
                                         },
                                         Icon: d.default,
-                                        link: f,
+                                        link: w,
                                     }),
                                 o ||
                                     n.push({
@@ -450,7 +450,7 @@
                                     }),
                                 n
                             );
-                        }, [e, t, o, r, a, i, l, s, m, w, f, C, Z, E]);
+                        }, [e, t, o, r, a, i, l, s, m, f, w, C, Z, E]);
                     })(e),
                     { onMenuCancel: o } = e,
                     r = n.useCallback(() => {
@@ -458,21 +458,21 @@
                     }, [o]);
                 return n.createElement(m.Z, { description: e.actionMenuDescription, items: t, onCloseRequested: r });
             }
-            const f = a().f2919fb8,
+            const w = a().f2919fb8,
                 y = a().fd1e5446,
                 E = a().b8c465e2,
                 C = a().dfad425d,
                 Z = a().a386dc55,
                 v = { RETWEET: "retweet", UNRETWEET: "unretweet", QUOTE: "quote", VIEW_ENGAGEMENTS: "view_engagements" };
             function k({ actionMenuDescription: e, activeColor: t = "green500", color: o, count: r, enableActionMenu: a = !1, enableKeyboardShortcuts: d, excludeRetweetAction: u, excludeRetweetWithCommentAction: m, excludeViewQuotesRetweetsAction: p, iconSize: b, isDisabled: g, isFaded: h, isPresentational: v, isRetweeted: k, onMenuCancel: x, onPress: S, onQuoteTweetActionSelect: P, onRetweetActionSelect: A, onUnretweetActionSelect: R, onViewEngagementsActionSelect: I, retweetActionSubText: D, retweetWithCommentLink: W, style: T, testIDs: B, viewQuotesRetweetsLink: M, withCount: z }) {
-                const H = z && "number" == typeof r;
-                let L = k ? E : f;
-                H && (L = k ? Z({ count: r }) : C({ count: r }));
-                const N = n.useMemo(() => ({ label: k ? y : f }), [k]),
-                    V = n.useMemo(() => ({ retweetConfirm: B?.retweetConfirm, unretweetConfirm: B?.unretweetConfirm }), [B?.retweetConfirm, B?.unretweetConfirm]),
-                    F = n.useCallback(
+                const L = z && "number" == typeof r;
+                let H = k ? E : w;
+                L && (H = k ? Z({ count: r }) : C({ count: r }));
+                const N = n.useMemo(() => ({ label: k ? y : w }), [k]),
+                    F = n.useMemo(() => ({ retweetConfirm: B?.retweetConfirm, unretweetConfirm: B?.unretweetConfirm }), [B?.retweetConfirm, B?.unretweetConfirm]),
+                    V = n.useCallback(
                         (t) =>
-                            n.createElement(w, {
+                            n.createElement(f, {
                                 actionMenuDescription: e,
                                 excludeRetweetAction: u,
                                 excludeRetweetWithCommentAction: m,
@@ -487,12 +487,12 @@
                                 onViewEngagementsActionSelect: I,
                                 retweetActionSubText: D,
                                 retweetWithCommentLink: W,
-                                testIDs: V,
+                                testIDs: F,
                                 viewQuotesRetweetsLink: M,
                             }),
-                        [e, u, m, p, k, x, P, A, R, I, D, V, W, M],
+                        [e, u, m, p, k, x, P, A, R, I, D, F, W, M],
                     );
-                return n.createElement(s.ZP, { ActiveIcon: i.default, Icon: c.default, activeColor: t, "aria-label": L, color: o, count: r, enableKeyboardShortcuts: d, hoverLabel: N, iconSize: b, isActive: k, isDisabled: g, isFaded: h, isPresentational: v, keyboardShortcut: l.Z.shortcuts.retweet, onPress: S, renderMenu: a ? F : void 0, style: T, testID: k ? B?.unretweet : B?.retweet, withCount: H });
+                return n.createElement(s.ZP, { ActiveIcon: i.default, Icon: c.default, activeColor: t, "aria-label": H, color: o, count: r, enableKeyboardShortcuts: d, hoverLabel: N, iconSize: b, isActive: k, isDisabled: g, isFaded: h, isPresentational: v, keyboardShortcut: l.Z.shortcuts.retweet, onPress: S, renderMenu: a ? V : void 0, style: T, testID: k ? B?.unretweet : B?.retweet, withCount: L });
             }
         },
         990804: (e, t, o) => {
@@ -514,8 +514,8 @@
                 b = o(40644);
             const g = { label: i().f2849136 },
                 h = i().f206e970,
-                w = { label: i().b05a39b2 },
-                f = i().c7073f5b;
+                f = { label: i().b05a39b2 },
+                w = i().c7073f5b;
             o(571372);
             var y = o(900664),
                 E = o(73416),
@@ -538,28 +538,28 @@
                 M = i().c9940955;
             function z({ activeColor: e, color: t, count: o, enableKeyboardShortcuts: r, iconSize: a, isDisabled: i, isFaded: c, isPresentational: l, link: s, onPress: d, renderWrapper: u, style: m, testID: p, withCount: g }) {
                 const h = g && "number" == typeof o,
-                    w = h ? M({ count: o }) : T;
-                return n.createElement(b.ZP, { Icon: W.default, activeColor: e, "aria-label": w, color: t, count: o, enableKeyboardShortcuts: r, hoverLabel: B, iconSize: a, isDisabled: i, isFaded: c, isPresentational: l, keyboardShortcut: k.Z.shortcuts.reply, link: s, onPress: d, renderWrapper: u, style: m, testID: p, withCount: h });
+                    f = h ? M({ count: o }) : T;
+                return n.createElement(b.ZP, { Icon: W.default, activeColor: e, "aria-label": f, color: t, count: o, enableKeyboardShortcuts: r, hoverLabel: B, iconSize: a, isDisabled: i, isFaded: c, isPresentational: l, keyboardShortcut: k.Z.shortcuts.reply, link: s, onPress: d, renderWrapper: u, style: m, testID: p, withCount: h });
             }
-            const H = n.memo(z);
-            var L = o(15342),
+            const L = n.memo(z);
+            var H = o(15342),
                 N = o(744610),
-                V = o(137937),
-                F = o(461756),
+                F = o(137937),
+                V = o(461756),
                 K = o(811176),
                 U = o(638236);
             const j = { label: i().dc63da16 },
                 _ = i().cee0585c,
-                G = V.Z.bezier(0.45, 0, 0, 1);
+                G = F.Z.bezier(0.45, 0, 0, 1);
             const $ = function ({ activeColor: e, color: t, count: o, iconSize: r, isDisabled: a, isFaded: i, isPresentational: c, onPress: l, style: s, tweetLink: d, withCount: u }) {
                     const m = u && void 0 !== o;
-                    return n.createElement(b.ZP, { Icon: p.default, activeColor: e, "aria-label": m ? f({ count: o }) : h, color: t, count: o, hoverLabel: m ? w : g, iconSize: r, isDisabled: a, isFaded: i, isPresentational: c, link: !d || a || i ? void 0 : `${d}/analytics`, onPress: l, style: s, withCount: m });
+                    return n.createElement(b.ZP, { Icon: p.default, activeColor: e, "aria-label": m ? w({ count: o }) : h, color: t, count: o, hoverLabel: m ? f : g, iconSize: r, isDisabled: a, isFaded: i, isPresentational: c, link: !d || a || i ? void 0 : `${d}/analytics`, onPress: l, style: s, withCount: m });
                 },
                 Q = D.Z,
-                O = H,
+                O = L,
                 q = function ({ actionItems: e, actionMenuDescription: t, activeColor: o, color: r, enableKeyboardShortcuts: a, iconSize: i, isDisabled: c, isFaded: l, isPresentational: s, onMenuCancel: d, onPress: u, shouldAnimatePrompt: m, style: p, withCount: g }) {
                     const h = n.useRef({ wiggle: new N.Z.Value(0), scale: new N.Z.Value(1) }).current,
-                        w = n.useCallback(
+                        f = n.useCallback(
                             (o) =>
                                 n.createElement(K.Z, {
                                     description: t,
@@ -572,30 +572,30 @@
                             [e, t, d],
                         );
                     n.useEffect(() => {
-                        m && !F.Z.reducedMotionEnabled && N.Z.parallel([N.Z.timing(h.wiggle, { toValue: 4, duration: 500, useNativeDriver: !1 }), N.Z.sequence([N.Z.timing(h.scale, y({ toValue: 1.45 })), N.Z.timing(h.scale, y({ toValue: 1 }))])]).start();
+                        m && !V.Z.reducedMotionEnabled && N.Z.parallel([N.Z.timing(h.wiggle, { toValue: 4, duration: 500, useNativeDriver: !1 }), N.Z.sequence([N.Z.timing(h.scale, y({ toValue: 1.45 })), N.Z.timing(h.scale, y({ toValue: 1 }))])]).start();
                     }, [h.scale, m, h.wiggle]);
-                    const f = h.wiggle.interpolate({ inputRange: [0, 1, 2, 3, 4], outputRange: ["0deg", "15deg", "-15deg", "15deg", "0deg"] });
+                    const w = h.wiggle.interpolate({ inputRange: [0, 1, 2, 3, 4], outputRange: ["0deg", "15deg", "-15deg", "15deg", "0deg"] });
                     function y(e) {
                         return { ...e, useNativeDriver: !1, easing: G, duration: 250 };
                     }
-                    const E = n.useRef([{}, { transform: [{ rotate: f }, { scale: h.scale }, { translate3d: "0, 0, 0" }], justifyContent: "inherit", display: "inline-grid" }]);
-                    return n.createElement(N.Z.View, { style: E.current }, n.createElement(b.ZP, { Icon: U.Z, activeColor: o, "aria-label": _, color: r, enableKeyboardShortcuts: a, hoverLabel: j, iconSize: i, isDisabled: c, isFaded: l, isPresentational: s, keyboardShortcut: k.Z.shortcuts.share, onPress: u, renderMenu: l ? void 0 : w, style: p, withCount: g }));
+                    const E = n.useRef([{}, { transform: [{ rotate: w }, { scale: h.scale }, { translate3d: "0, 0, 0" }], justifyContent: "inherit", display: "inline-grid" }]);
+                    return n.createElement(N.Z.View, { style: E.current }, n.createElement(b.ZP, { Icon: U.Z, activeColor: o, "aria-label": _, color: r, enableKeyboardShortcuts: a, hoverLabel: j, iconSize: i, isDisabled: c, isFaded: l, isPresentational: s, keyboardShortcut: k.Z.shortcuts.share, onPress: u, renderMenu: l ? void 0 : f, style: p, withCount: g }));
                 },
                 Y = function ({ activeColor: e, color: t, count: o, enableKeyboardShortcuts: r, iconSize: a, isDisabled: i, isFaded: c, isBookmarked: l, isPresentational: s, onError: d = I, onPress: u, style: m, testIDs: p, withCount: g }) {
                     const h = g && "number" == typeof o;
-                    let w = l ? P : x;
-                    const f = n.useMemo(() => ({ label: l ? S : x }), [l]);
+                    let f = l ? P : x;
+                    const w = n.useMemo(() => ({ label: l ? S : x }), [l]);
                     return (
-                        h && (w = l ? R({ count: o }) : A({ count: o })),
+                        h && (f = l ? R({ count: o }) : A({ count: o })),
                         n.createElement(b.ZP, {
                             ActiveIcon: E.default,
                             Icon: C.default,
                             activeColor: e,
-                            "aria-label": w,
+                            "aria-label": f,
                             color: t,
                             count: o,
                             enableKeyboardShortcuts: r,
-                            hoverLabel: f,
+                            hoverLabel: w,
                             iconSize: a,
                             isActive: l,
                             isDisabled: i,
@@ -622,15 +622,15 @@
                 ae = (e) => n.createElement(le.ActionShare, e),
                 ie = (e) => n.createElement(le.ActionBookmark, e),
                 ce = [];
-            function le({ actionSize: e = "normal", activeColor: t, bookmarkCount: o, color: a = "gray700", displayStyle: s, enableKeyboardShortcuts: u = !0, isDisabled: m = !1, isBookmarked: p = !1, isFocalTweet: b = !1, isFromProtectedAccount: g, isLiked: h, isRetweeted: w, isPresentational: f, likeCount: y, id: E, renderAnalyticsAction: C = te, renderLikeAction: Z = oe, renderReplyAction: v = ne, renderRetweetAction: k = re, renderShareAction: x = ae, renderBookmarkAction: S = ie, replyCount: P, retweetCount: A, style: R, tweetLink: I, viewCount: D, viewState: W, withAnalytics: T = !1, withCount: B = !1, withBookmark: M = !1 }) {
+            function le({ actionSize: e = "normal", activeColor: t, bookmarkCount: o, color: a = "gray700", displayStyle: s, enableKeyboardShortcuts: u = !0, isDisabled: m = !1, isBookmarked: p = !1, isFocalTweet: b = !1, isFromProtectedAccount: g, isLiked: h, isRetweeted: f, isPresentational: w, likeCount: y, id: E, renderAnalyticsAction: C = te, renderLikeAction: Z = oe, renderReplyAction: v = ne, renderRetweetAction: k = re, renderShareAction: x = ae, renderBookmarkAction: S = ie, replyCount: P, retweetCount: A, style: R, tweetLink: I, viewCount: D, viewState: W, withAnalytics: T = !1, withCount: B = !1, withBookmark: M = !1 }) {
                 const z = n.useRef(null),
-                    H = l.ZP.useProps(),
-                    L = H.tweetViewCountsEnabled(),
-                    N = H.testViewCountShow(),
-                    V = L || N,
-                    F = T && V,
-                    K = T && !F,
-                    U = V ? "EnabledWithCount" === W && B : B,
+                    L = l.ZP.useProps(),
+                    H = L.tweetViewCountsEnabled(),
+                    N = L.testViewCountShow(),
+                    F = H || N,
+                    V = T && F,
+                    K = T && !V,
+                    U = F ? "EnabledWithCount" === W && B : B,
                     j = n.useMemo(() => {
                         if (!B) return;
                         const e = i().b03835c7,
@@ -638,23 +638,23 @@
                             n = i().e089b42d,
                             r = i().e0a8fe39,
                             a = i().c58b2ab7;
-                        return (0, c.Z)([P ? e({ replyCount: P }) : null, A ? t({ retweetCount: A }) : null, w ? J : null, y ? n({ likeCount: y }) : null, h ? X : null, p && M ? ee : null, o ? r({ bookmarkCount: o }) : null, D ? a({ viewCount: D }) : null].filter(Boolean), !0);
-                    }, [o, p, h, w, y, P, A, D, B, M]),
+                        return (0, c.Z)([P ? e({ replyCount: P }) : null, A ? t({ retweetCount: A }) : null, f ? J : null, y ? n({ likeCount: y }) : null, h ? X : null, p && M ? ee : null, o ? r({ bookmarkCount: o }) : null, D ? a({ viewCount: D }) : null].filter(Boolean), !0);
+                    }, [o, p, h, f, y, P, A, D, B, M]),
                     _ = n.useMemo(() => ({ color: a, iconSize: e, isDisabled: m }), [a, e, m]),
-                    G = n.useMemo(() => v({ ..._, activeColor: t, count: P, enableKeyboardShortcuts: u, isPresentational: f, withCount: B }), [_, t, P, u, f, B, v]),
-                    $ = n.useMemo(() => k({ ..._, activeColor: t, count: A, enableKeyboardShortcuts: u, isFromProtectedAccount: g, isRetweeted: w, isPresentational: f, withCount: B }), [_, t, A, u, g, w, f, B, k]),
-                    Q = n.useMemo(() => Z({ ..._, activeColor: t, count: y, enableKeyboardShortcuts: u, isLiked: h, isPresentational: f, withCount: B }), [_, t, y, u, h, f, B, Z]),
-                    O = n.useMemo(() => (F ? C({ ..._, count: D, isPresentational: f, tweetLink: I, withCount: U }) : null), [F, _, D, f, I, U, C]),
-                    q = n.useMemo(() => (M ? S({ ..._, activeColor: t, count: o, enableKeyboardShortcuts: u, isPresentational: f, isBookmarked: p, withCount: B }) : null), [M, _, t, o, u, f, p, B, S]),
-                    Y = n.useMemo(() => (K ? C({ ..._, isPresentational: f, tweetLink: I }) : null), [K, _, f, I, C]),
-                    le = n.useMemo(() => x({ ..._, actionItems: ce, activeColor: t, enableKeyboardShortcuts: u, isPresentational: f, withCount: B && K }), [_, t, u, f, K, B, x]);
+                    G = n.useMemo(() => v({ ..._, activeColor: t, count: P, enableKeyboardShortcuts: u, isPresentational: w, withCount: B }), [_, t, P, u, w, B, v]),
+                    $ = n.useMemo(() => k({ ..._, activeColor: t, count: A, enableKeyboardShortcuts: u, isFromProtectedAccount: g, isRetweeted: f, isPresentational: w, withCount: B }), [_, t, A, u, g, f, w, B, k]),
+                    Q = n.useMemo(() => Z({ ..._, activeColor: t, count: y, enableKeyboardShortcuts: u, isLiked: h, isPresentational: w, withCount: B }), [_, t, y, u, h, w, B, Z]),
+                    O = n.useMemo(() => (V ? C({ ..._, count: D, isPresentational: w, tweetLink: I, withCount: U }) : null), [V, _, D, w, I, U, C]),
+                    q = n.useMemo(() => (M ? S({ ..._, activeColor: t, count: o, enableKeyboardShortcuts: u, isPresentational: w, isBookmarked: p, withCount: B }) : null), [M, _, t, o, u, w, p, B, S]),
+                    Y = n.useMemo(() => (K ? C({ ..._, isPresentational: w, tweetLink: I }) : null), [K, _, w, I, C]),
+                    le = n.useMemo(() => x({ ..._, actionItems: ce, activeColor: t, enableKeyboardShortcuts: u, isPresentational: w, withCount: B && K }), [_, t, u, w, K, B, x]);
                 return n.createElement(r.Z, { ref: z }, n.createElement(d, { "aria-label": j, displayStyle: s, id: E, style: R }, G, $, Q, O, q, Y, le));
             }
             (le.ActionAnalytics = $),
                 (le.ActionLike = Q),
                 (le.ActionReply = O),
                 (le.ActionRetweet = function ({ isFromProtectedAccount: e = !1, ...t }) {
-                    return n.createElement(L.Z, (0, m.Z)({}, t, { excludeRetweetAction: t.excludeRetweetAction || e, excludeRetweetWithCommentAction: t.excludeRetweetWithCommentAction || e, isDisabled: t.isDisabled || (!t.isRetweeted && e) }));
+                    return n.createElement(H.Z, (0, m.Z)({}, t, { excludeRetweetAction: t.excludeRetweetAction || e, excludeRetweetWithCommentAction: t.excludeRetweetWithCommentAction || e, isDisabled: t.isDisabled || (!t.isRetweeted && e) }));
                 }),
                 (le.ActionShare = q),
                 (le.ActionBookmark = Y);
@@ -669,7 +669,7 @@
             }
             o.d(t, { Z: () => n });
         },
-        748138: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 r = o(890601),
@@ -677,20 +677,7 @@
                 i = o(347101);
             const c = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
-        },
-        155353: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var n = o(202784),
-                r = o(890601),
-                a = o(783427),
-                i = o(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
             const l = c;
@@ -711,4 +698,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~bundle.SuperFollowsSubscribe.735c276a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~bundle.SuperFollowsSubscribe.0f9a053a.js.map

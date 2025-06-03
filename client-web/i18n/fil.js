@@ -3575,7 +3575,7 @@
                 i("hbe4f99e", "Kumusta? Excited na akong magbahagi ng mga top secret content at mas makilala ka :)"),
                 i("fb278c82", "Ano ang preview na ito?"),
                 i("j6cab6ec", "Ito ang mga nakikita ng mga tao bago sila mag-Subscribe sa iyo. Baguhin at i-edit ang iyong mga paglalarawan hanggang sa makuha mo ito ng tama."),
-                i("i22beaa4", "Pagbabahagi ng Data"),
+                i("f2b1e83e", "Grok & Third-Party Collaborators"),
                 i("e110a46c", "I-delete ang history ng usapan"),
                 i("ebc4fda0", "Ide-delete mo ang history ng pakikipag-usap mo sa grok. Hindi mo na ulit maa-access ang mga usapan na ito."),
                 i("c90fe716", "Gusto mo bang i-delete ang mga usapan mo?"),
@@ -13353,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b4515b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.3bdca9ca.js.map

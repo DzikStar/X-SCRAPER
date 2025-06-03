@@ -3574,7 +3574,7 @@
                 f("hbe4f99e", "こんにちは！秘密のコンテンツをシェアしますね。皆さんと交流できるのも楽しみです^^"),
                 f("fb278c82", "このプレビューについて"),
                 f("j6cab6ec", "他のユーザーがあなたをサブスクライブする前に表示される内容です。希望どおりの内容になるまで説明をカスタマイズしましょう。"),
-                f("i22beaa4", "データ共有"),
+                f("f2b1e83e", "Grok & Third-Party Collaborators"),
                 f("e110a46c", "会話履歴を削除"),
                 f("ebc4fda0", "Grokの会話履歴を削除しようとしています。削除すると、これらの会話にはアクセスできなくなります。"),
                 f("c90fe716", "会話を削除しますか？"),
@@ -7237,7 +7237,7 @@
                 f("eb866e88", "1年間に節約できる時間（推定）"),
                 f("aa77b70c", "使用状況にもとづきます。"),
                 f("c534c6b4", "数字を分析中です..."),
-                f("i57332f0", "しばらくしてから確認しなおしてください。表示されなかった広告の数や節約した時間がここに表示されます"),
+                f("i57332f0", "しばらく閲覧してからここを確認してください。表示されなかった広告の数や節約した時間が表示されます"),
                 f("cc10f019", function (e) {
                     return e.minutes + " 分";
                 }),
@@ -13346,4 +13346,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.696bc72a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.ea7d4eea.js.map

@@ -64,7 +64,7 @@
             const p = (0, r.ZP)(l(s));
         },
         805137: (e, t, n) => {
-            n.d(t, { B: () => v });
+            n.d(t, { B: () => y });
             var a = n(807896),
                 r = (n(136728), n(202784)),
                 o = n(555874),
@@ -79,12 +79,12 @@
                 h = n(755988),
                 g = n(22492),
                 f = n(109808);
-            function v() {
+            function y() {
                 const e = u.ZM.getAppBarHeight(),
                     t = { minHeight: (0, c.iv)().height - e, paddingBottom: e },
                     n = (0, f.e)(),
                     s = n?.threads || [];
-                if (!s.length) return r.createElement(i.Z, { header: _.Nothing_to_see_here });
+                if (!s.length) return r.createElement(i.Z, { header: v.Nothing_to_see_here });
                 const p = [];
                 return (
                     s.forEach((e) => {
@@ -93,11 +93,11 @@
                             p.push({ audioSpaceId: t });
                         }
                     }),
-                    r.createElement(l.Z, { withGutter: !0 }, r.createElement(o.Z, (0, a.Z)({}, E, { data: p, style: [t, y.flatList] })), r.createElement(E.ItemSeparatorComponent, null))
+                    r.createElement(l.Z, { withGutter: !0 }, r.createElement(o.Z, (0, a.Z)({}, _, { data: p, style: [t, E.flatList] })), r.createElement(_.ItemSeparatorComponent, null))
                 );
             }
-            const y = s.default.create((e) => ({ flatList: { scrollbarWidth: "none" } })),
-                E = {
+            const E = s.default.create((e) => ({ flatList: { scrollbarWidth: "none" } })),
+                _ = {
                     getItemLayout: function (e, t) {
                         const n = p.default.getMinHeight(!1);
                         return { index: t, length: n, offset: n * t };
@@ -113,7 +113,7 @@
                     },
                     windowSize: 2,
                 },
-                _ = { Nothing_to_see_here: d().e9f1fbcc };
+                v = { Nothing_to_see_here: d().e9f1fbcc };
         },
         22492: (e, t, n) => {
             n.d(t, { L: () => c });
@@ -148,40 +148,40 @@
             function f(e, t, n) {
                 return (0, r.cn)(null, (0, g.Z)(e, t, n));
             }
-            var v = n(390387);
-            const y = (0, d.K9)((e) => e(s.dd).withEndpoint(l.Z).spacebar()),
-                E = (0, c.xu)((e) =>
+            var y = n(390387);
+            const E = (0, d.K9)((e) => e(s.dd).withEndpoint(l.Z).spacebar()),
+                _ = (0, c.xu)((e) =>
                     f(
                         (e, t) => {
-                            t(y);
+                            t(E);
                         },
                         e,
                         { leading: !0, trailing: !1 },
                     ),
                 ),
-                _ = (0, r.cn)((e) => {
-                    const t = e(y.resolved)?.refresh_delay_secs;
-                    return t ? E(t) : (0, r.cn)(null, () => {});
+                v = (0, r.cn)((e) => {
+                    const t = e(E.resolved)?.refresh_delay_secs;
+                    return t ? _(t) : (0, r.cn)(null, () => {});
                 }),
                 b = f((e, t) => {
-                    t(y);
+                    t(E);
                 }, 1e4),
                 w = (0, h.W)((e, t) => {
-                    t(e(_));
+                    t(e(v));
                     const n = setInterval(() => {
-                        t(e(_));
+                        t(e(v));
                     }, 3e5);
                     return () => {
                         clearInterval(n);
                     };
                 }),
                 Z = (0, h.W)((e, t) => {
-                    const n = (0, v._h)(e(s.qc).getState());
+                    const n = (0, y._h)(e(s.qc).getState());
                     if (!n) return i.Z;
                     const a = `/live_content/${n}`;
                     return (0, p.Cg)({ topic: a, featureSwitches: e(s.f0), onTopic: () => t(b) });
                 }),
-                S = (0, r.cn)((e) => (e(y), e(y.resolved)));
+                S = (0, r.cn)((e) => (e(E), e(E.resolved)));
             function I() {
                 const e = (0, o.Dv)(S),
                     t = (0, o.b9)(w);
@@ -195,7 +195,7 @@
                 );
             }
         },
-        748138: (e, t, n) => {
+        41065: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var a = n(202784),
                 r = n(890601),
@@ -203,11 +203,11 @@
                 c = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const l = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacebarScreen.615f91da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacebarScreen.982c026a.js.map

@@ -3574,7 +3574,7 @@
                 n("hbe4f99e", "สวัสดี! แทบรอไม่ไหวที่จะแบ่งปันเนื้อหาที่เป็นความลับสุดยอดและทำความรู้จักกับคุณให้ดียิ่งขึ้น :)"),
                 n("fb278c82", "การแสดงตัวอย่างนี้คืออะไร"),
                 n("j6cab6ec", "นี่คือสิ่งที่ผู้คนเห็นก่อนที่พวกเขาจะสมัครสมาชิกเพื่อติดตามคุณ ปรับแต่งและแก้ไขคำอธิบายของคุณจนกว่าคุณจะได้คำอธิบายที่เหมาะสม"),
-                n("i22beaa4", "การแชร์ข้อมูล"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "ลบประวัติบทสนทนา"),
                 n("ebc4fda0", "คุณกำลังจะลบประวัติบทสนทนา Grok ของคุณ คุณจะไม่สามารถเข้าถึงบทสนทนาเหล่านี้ได้อีก"),
                 n("c90fe716", "คุณต้องการลบบทสนทนาของคุณหรือไม่"),
@@ -13339,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.9b5c33da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.1adcc4da.js.map

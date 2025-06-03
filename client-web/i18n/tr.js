@@ -3574,7 +3574,7 @@
                 n("hbe4f99e", "Selam! Seninle gizli içerikler paylaşmak ve seni daha yakından tanımak için sabırsızlanıyorum :)"),
                 n("fb278c82", "Bu önizleme nedir?"),
                 n("j6cab6ec", "İnsanlara sana Abone Olmadan önce bu içerik gösterilir. Açıklamalarını içine sinene kadar değiştirebilir ve düzenleyebilirsin."),
-                n("i22beaa4", "Veri Paylaşımı"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Sohbet geçmişini sil"),
                 n("ebc4fda0", "Grok sohbet geçmişini silmek üzeresin. Bu sohbetlere daha sonra erişemeyeceksin."),
                 n("c90fe716", "Sohbetlerini silmek istiyor musun?"),
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.e6070a1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.ae1c2faa.js.map

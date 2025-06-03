@@ -8,7 +8,7 @@
                 o = s(702024),
                 i = s(202784),
                 u = s(889906),
-                r = s(607499),
+                r = s(134877),
                 n = s(290953),
                 c = s(149184),
                 l = s(82143),
@@ -240,7 +240,7 @@
             var a = s(552322),
                 o = s(202784),
                 i = s(889906),
-                u = s(607499);
+                u = s(134877);
             const r = 3,
                 n = 12;
             function c(e, t = 0) {
@@ -355,4 +355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5751b0cc.461dbffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5751b0cc.2d8b308a.js.map

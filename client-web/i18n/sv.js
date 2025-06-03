@@ -3575,7 +3575,7 @@
                 t("hbe4f99e", "Hej! Jag kan knappt bärga mig tills jag får berätta något topphemligt och lära känna dig ännu bättre :)"),
                 t("fb278c82", "Vad är den här förhandsgranskningen?"),
                 t("j6cab6ec", "Detta är vad folk ser innan de börjar Prenumerera på dig. Justera och redigera beskrivningarna tills du är helt nöjd."),
-                t("i22beaa4", "Datadelning"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Radera samtalshistoriken"),
                 t("ebc4fda0", "Du är på väg att radera din samtalshistorik med Grok. Du kommer inte att kunna komma åt dessa samtal igen."),
                 t("c90fe716", "Vill du radera dina samtal?"),
@@ -13341,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.0754d04a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.c9371a6a.js.map

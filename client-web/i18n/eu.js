@@ -3578,7 +3578,7 @@
                 o("hbe4f99e", "Kaixo! Ezin dut itxaron sekretu handiko eduki batzuk partekatzeko eta oraindik hobeto elkar ezagutzeko :)"),
                 o("fb278c82", "Zer da aurrebista hau?"),
                 o("j6cab6ec", "This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right."),
-                o("i22beaa4", "Data Sharing"),
+                o("f2b1e83e", "Grok & Third-Party Collaborators"),
                 o("e110a46c", "Delete conversation history"),
                 o("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 o("c90fe716", "Do you want to delete your conversations?"),
@@ -13347,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.353f082a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.0e2ec4aa.js.map

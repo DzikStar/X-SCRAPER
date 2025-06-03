@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~ondemand.SettingsRevamp", "icons/IconUndo-js"],
+    ["shared~bundle.Communities~ondemand.SettingsRevamp"],
     {
         947135: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -187,23 +187,21 @@
                     return o.createElement(i.Z, { style: d.container }, o.createElement(s.Z, (0, r.Z)({}, u, { interactiveStyles: h, style: d.root }), o.createElement(a.ZP, { align: e, color: t }, n)));
                 };
         },
-        775042: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
+        98440: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 o = n(890601),
                 i = n(783427),
-                a = n(717683),
-                l = n(347101);
-            const s = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: n } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.29 2.29l1.42 1.42L5.41 6H15c3.87 0 7 3.13 7 7s-3.13 7-7 7H8v-2h7c2.76 0 5-2.24 5-5s-2.24-5-5-5H5.41l2.3 2.29-1.42 1.42L1.59 7l4.7-4.71z" })) }, { writingDirection: n });
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
         716042: (e, t, n) => {
-            n.d(t, { JN: () => Q, W8: () => ne, JV: () => U });
+            n.d(t, { JN: () => Q, W8: () => ne, JV: () => z });
             var r = n(807896);
             var o = n(759147);
             function i(e, t) {
@@ -413,14 +411,14 @@
                         : W(e.parentNode)
                     : null;
             }
-            var H = 27,
-                j = 32,
+            var j = 27,
+                H = 32,
                 _ = 37,
                 B = 38,
                 K = 39,
                 G = 40,
                 F = { Anchor: "A", Button: "BUTTON", Canvas: "CANVAS", Input: "INPUT", Option: "OPTION", Textarea: "TEXTAREA", Select: "SELECT" };
-            function U(e) {
+            function z(e) {
                 var t,
                     n,
                     o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : { withRef: !1 };
@@ -463,7 +461,7 @@
                     n
                 );
             }
-            function z(e) {
+            function U(e) {
                 return null != e.sortableHandle;
             }
             var V = (function () {
@@ -515,7 +513,7 @@
                 );
             })();
             var X = { axis: b().oneOf(["x", "y", "xy"]), contentWindow: b().any, disableAutoscroll: b().bool, distance: b().number, getContainer: b().func, getHelperDimensions: b().func, helperClass: b().string, helperContainer: b().oneOfType([b().func, "undefined" == typeof HTMLElement ? b().any : b().instanceOf(HTMLElement)]), hideSortableGhost: b().bool, keyboardSortingTransitionDuration: b().number, lockAxis: b().string, lockOffset: b().oneOfType([b().number, b().string, b().arrayOf(b().oneOfType([b().number, b().string]))]), lockToContainerEdges: b().bool, onSortEnd: b().func, onSortMove: b().func, onSortOver: b().func, onSortStart: b().func, pressDelay: b().number, pressThreshold: b().number, keyCodes: b().shape({ lift: b().arrayOf(b().number), drop: b().arrayOf(b().number), cancel: b().arrayOf(b().number), up: b().arrayOf(b().number), down: b().arrayOf(b().number) }), shouldCancelStart: b().func, transitionDuration: b().number, updateBeforeSortStart: b().func, useDragHandle: b().bool, useWindowAsScrollContainer: b().bool },
-                q = { lift: [j], drop: [j], cancel: [H], up: [B, _], down: [G, K] },
+                q = { lift: [H], drop: [H], cancel: [j], up: [B, _], down: [G, K] },
                 Y = {
                     axis: "y",
                     disableAutoscroll: !1,
@@ -570,7 +568,7 @@
                                                     s = l.index,
                                                     c = l.collection;
                                                 if (l.disabled) return;
-                                                if (a && !I(e.target, z)) return;
+                                                if (a && !I(e.target, U)) return;
                                                 (t.manager.active = { collection: c, index: s }),
                                                     (function (e) {
                                                         return (e.touches && e.touches.length) || (e.changedTouches && e.changedTouches.length);
@@ -827,7 +825,7 @@
                                             o = I(r, function (e) {
                                                 return null != e.sortableInfo;
                                             });
-                                        return o && o.sortableInfo && !o.sortableInfo.disabled && (n ? z(r) : r.sortableInfo);
+                                        return o && o.sortableInfo && !o.sortableInfo.disabled && (n ? U(r) : r.sortableInfo);
                                     });
                                 var r = new w();
                                 return (
@@ -1149,4 +1147,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.428792aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~ondemand.SettingsRevamp.9403920a.js.map

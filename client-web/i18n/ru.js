@@ -3584,7 +3584,7 @@
                 n("hbe4f99e", "Привет! Я рада возможности познакомиться с тобой поближе и поделиться сверхсекретным контентом :)"),
                 n("fb278c82", "Что показывает этот предварительный просмотр?"),
                 n("j6cab6ec", "Ниже показано, что будут видеть пользователи Twitter, прежде чем стать вашими подписчиками. Отредактируйте текст, чтобы он соответствовал вашим намерениям."),
-                n("i22beaa4", "Предоставление данных"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Удалить историю переписки"),
                 n("ebc4fda0", "Вы собираетесь удалить свою историю переписки с Grok. У вас больше не будет доступа к этим разговорам."),
                 n("c90fe716", "Удалить переписку?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.8ce8473a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.a42dfc2a.js.map

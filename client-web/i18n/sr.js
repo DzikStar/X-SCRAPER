@@ -3582,7 +3582,7 @@
                 n("hbe4f99e", "Здраво! Једва чекам да поделим са тобом поверљиви садржај и да те још боље упознам :)"),
                 n("fb278c82", "Какав је ово преглед?"),
                 n("j6cab6ec", "Ово људи виде пре него што се претплате на твој налог. Подешавај и мењај описе док не буду баш како треба."),
-                n("i22beaa4", "Дељење података"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Избриши историју разговора"),
                 n("ebc4fda0", "Ускоро ћеш избрисати историју Grok разговора. Нећеш моћи поново да им приступиш."),
                 n("c90fe716", "Желиш ли да избришеш своје разговоре?"),
@@ -13355,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.de8869fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.99bcb59a.js.map

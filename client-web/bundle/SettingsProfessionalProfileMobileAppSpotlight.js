@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfessionalProfileMobileAppSpotlight", "icons/IconEye-js"],
+    ["bundle.SettingsProfessionalProfileMobileAppSpotlight"],
     {
         202407: (e, t, n) => {
             n.r(t), n.d(t, { default: () => I });
@@ -12,101 +12,101 @@
                 s = n(779610),
                 c = n(392237),
                 d = n(111677),
-                u = n.n(d),
-                p = n(509875),
+                p = n.n(d),
+                u = n(509875),
                 m = n(980407),
                 b = n(800536),
-                h = n(855488),
-                g = n(731708),
-                f = n(521219);
-            const y = u().b772cd66,
-                v = u().g4098f78,
-                E = u().b949cdc6;
-            function C(e) {
+                f = n(855488),
+                h = n(731708),
+                g = n(521219);
+            const y = p().b772cd66,
+                k = p().g4098f78,
+                C = p().b949cdc6;
+            function E(e) {
                 const [t, n] = o.useState(e.values.url),
-                    a = o.useMemo(() => t && (0, f.Z)(t), [t]),
-                    { helpLink: l, inputLabel: s, onCancel: c, onChange: d, title: u } = e;
-                function p() {
+                    a = o.useMemo(() => t && (0, g.Z)(t), [t]),
+                    { helpLink: l, inputLabel: s, onCancel: c, onChange: d, title: p } = e;
+                function u() {
                     a || d(t);
                 }
                 return o.createElement(
                     m.Z,
-                    { "aria-hidden": !1, backButtonType: "back", onBackClick: c, rightControl: o.createElement(i.ZP, { disabled: !t || !!a, onPress: p }, y), title: u },
+                    { "aria-hidden": !1, backButtonType: "back", onBackClick: c, rightControl: o.createElement(i.ZP, { disabled: !t || !!a, onPress: u }, y), title: p },
                     o.createElement(
                         r.Z,
-                        { style: k.container },
-                        o.createElement(h.Z, {
+                        { style: v.container },
+                        o.createElement(f.Z, {
                             autoFocus: !0,
                             errorText: a,
                             invalid: !!a,
                             label: s,
-                            maxLength: f.c,
+                            maxLength: g.c,
                             name: "url",
                             onChange: function (e) {
                                 n(e.target.value);
                             },
-                            onSubmitEditing: p,
+                            onSubmitEditing: u,
                             value: t,
                         }),
-                        o.createElement(g.ZP, { link: l, style: k.text, weight: "bold", withUnderline: !0 }, v),
-                        o.createElement(g.ZP, { align: "center", color: "red500", style: k.removeApp }, E),
+                        o.createElement(h.ZP, { link: l, style: v.text, weight: "bold", withUnderline: !0 }, k),
+                        o.createElement(h.ZP, { align: "center", color: "red500", style: v.removeApp }, C),
                     ),
                 );
             }
-            const k = c.default.create((e) => ({ container: { paddingBottom: e.spaces.space64 }, removeApp: { padding: e.spaces.space16, paddingTop: e.spaces.space40 }, text: { paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                S = u().b91d1394,
-                Z = u().i2209530,
-                w = Object.freeze({ IOS: "ios", ANDROID: "android" }),
-                P = [
-                    { key: w.IOS, label: u().aab2fae0, placeholder: u().af40a8e0, component: C, constants: { title: u().d3cd1160, helpLink: "", inputLabel: u().f2124008 } },
-                    { key: w.ANDROID, label: u().f7d1a8e0, placeholder: u().af40a8e0, component: C, constants: { title: u().dc0d9d6a, helpLink: "", inputLabel: u().dd1605f0 } },
+            const v = c.default.create((e) => ({ container: { paddingBottom: e.spaces.space64 }, removeApp: { padding: e.spaces.space16, paddingTop: e.spaces.space40 }, text: { paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                S = p().b91d1394,
+                P = p().i2209530,
+                Z = Object.freeze({ IOS: "ios", ANDROID: "android" }),
+                w = [
+                    { key: Z.IOS, label: p().aab2fae0, placeholder: p().af40a8e0, component: E, constants: { title: p().d3cd1160, helpLink: "", inputLabel: p().f2124008 } },
+                    { key: Z.ANDROID, label: p().f7d1a8e0, placeholder: p().af40a8e0, component: E, constants: { title: p().dc0d9d6a, helpLink: "", inputLabel: p().dd1605f0 } },
                 ],
                 A = Object.freeze({ APPLE_APP_STORE: 1, GOOGLE_PLAY_STORE: 2 });
             function I(e) {
                 const t = (0, l.useHistory)(),
                     [n, c] = o.useState(),
                     d = { isDirty: !1, hasAllRequiredValues: !1, values: { appStoreListings: [] } },
-                    u = o.useCallback(() => {
+                    p = o.useCallback(() => {
                         t.goBack({ backLocation: b.V5 });
                     }, [t]);
-                function h() {}
-                function g(e, t = !1) {
+                function f() {}
+                function h(e, t = !1) {
                     let n;
-                    if (e.key === w.IOS) {
+                    if (e.key === Z.IOS) {
                         const e = d?.values?.appStoreListings?.find((e) => e.appStore === A.APPLE_APP_STORE);
                         n = e?.url;
-                    } else if (e.key === w.ANDROID) {
+                    } else if (e.key === Z.ANDROID) {
                         const e = d?.values?.appStoreListings?.find((e) => e.appStore === A.GOOGLE_PLAY_STORE);
                         n = e?.url;
                     }
                     return !n && t ? e.placeholder : n;
                 }
-                function f() {
+                function g() {
                     c(void 0);
                 }
                 if (n) {
                     const e = n.component,
-                        t = { url: g(n) };
-                    return o.createElement(e, (0, a.Z)({ onCancel: f, onChange: f, values: t }, n.constants));
+                        t = { url: h(n) };
+                    return o.createElement(e, (0, a.Z)({ onCancel: g, onChange: g, values: t }, n.constants));
                 }
                 return o.createElement(
                     m.Z,
                     {
                         "aria-hidden": !1,
                         backButtonType: "back",
-                        onBackClick: u,
+                        onBackClick: p,
                         rightControl: (function () {
                             const e = !d.isDirty || !d.hasAllRequiredValues || false;
-                            return o.createElement(i.ZP, { disabled: e, onPress: h }, Z);
+                            return o.createElement(i.ZP, { disabled: e, onPress: f }, P);
                         })(),
                         title: S,
                     },
                     o.createElement(
                         r.Z,
                         { style: L.container },
-                        P.map((e) => {
+                        w.map((e) => {
                             return o.createElement(s.Z, {
-                                description: g(e, !0),
+                                description: h(e, !0),
                                 key: e.key,
                                 label: e.label,
                                 onPress:
@@ -114,7 +114,7 @@
                                     (e) => {
                                         e.preventDefault(), c(t);
                                     }),
-                                thumbnail: o.createElement(p.default, { style: L.addIcon }),
+                                thumbnail: o.createElement(u.default, { style: L.addIcon }),
                                 thumbnailSize: "medium",
                             });
                             var t;
@@ -144,33 +144,20 @@
                 s = n(952428),
                 c = n(392237);
             const d = (e) => {
-                    const { decoration: t, description: n, disabled: d = !1, isActive: p = !1, label: m, link: b, onPress: h, paddingHorizontal: g, renderRightContent: f, role: y = "tab", styleOverride: v, testID: E = "pivot", thumbnail: C, thumbnailSize: k, withoutArrow: S = !1 } = e,
-                        Z = [u.thumbnailContainer, "medium" === k && u.thumbnailContainerMedium],
-                        w = "string" == typeof m ? a.createElement(i.ZP, null, m) : m,
-                        P = "object" == typeof b && b.external && !b.openInSameFrame,
-                        A = n ? ("string" == typeof n ? a.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, n) : n) : null,
-                        I = a.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? c.default.theme.spaces[g] : c.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? p : null, disabled: d, link: d ? void 0 : b, onPress: h, role: y, style: [u.root, I, d && u.disabled, v], testID: E, withInteractiveStyling: !!b || !!h }, a.createElement(o.Z, { style: u.contentContainer }, C ? a.createElement(o.Z, { style: Z }, C) : null, a.createElement(o.Z, { style: u.content }, w, A), f ? f() : null, (!b && !h) || d || S ? null : P ? a.createElement(r.default, { style: u.icon }) : a.createElement(l.default, { style: u.icon })), t);
+                    const { decoration: t, description: n, disabled: d = !1, isActive: u = !1, label: m, link: b, onPress: f, paddingHorizontal: h, renderRightContent: g, role: y = "tab", styleOverride: k, testID: C = "pivot", thumbnail: E, thumbnailSize: v, withoutArrow: S = !1 } = e,
+                        P = [p.thumbnailContainer, "medium" === v && p.thumbnailContainerMedium],
+                        Z = "string" == typeof m ? a.createElement(i.ZP, null, m) : m,
+                        w = "object" == typeof b && b.external && !b.openInSameFrame,
+                        A = n ? ("string" == typeof n ? a.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
+                        I = a.useMemo(() => ("space0" === h ? { paddingHorizontal: 0 } : { paddingHorizontal: h ? c.default.theme.spaces[h] : c.default.theme.componentDimensions.gutterHorizontal }), [h]);
+                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : b, onPress: f, role: y, style: [p.root, I, d && p.disabled, k], testID: C, withInteractiveStyling: !!b || !!f }, a.createElement(o.Z, { style: p.contentContainer }, E ? a.createElement(o.Z, { style: P }, E) : null, a.createElement(o.Z, { style: p.content }, Z, A), g ? g() : null, (!b && !f) || d || S ? null : w ? a.createElement(r.default, { style: p.icon }) : a.createElement(l.default, { style: p.icon })), t);
                 },
-                u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
+                p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
         183806: (e, t, n) => {
             n.d(t, { Z: () => a });
             const a = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        988227: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var a = n(202784),
-                o = n(890601),
-                r = n(783427),
-                l = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileMobileAppSpotlight.771099ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileMobileAppSpotlight.f751b51a.js.map

@@ -3578,7 +3578,7 @@
                 t("hbe4f99e", "Ndewo nu! Enweghị m ike ichere ịkekọrịta ụfọdụ ọdịnaya nzuzo wee mata gị nke ọma :)"),
                 t("fb278c82", "Gịnị bụ ịhụchalụ a?"),
                 t("j6cab6ec", "Nke a bụ ihe ndị mmadụ na-ahụ tupu ha Edebanye aha n'aka gị. Meziwanye ma dezie nkọwa gị ruo mgbe ị nwetara ha nke ọma."),
-                t("i22beaa4", "Data Sharing"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Delete conversation history"),
                 t("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 t("c90fe716", "Do you want to delete your conversations?"),
@@ -13356,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.6ae0d8fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.fe2123ba.js.map

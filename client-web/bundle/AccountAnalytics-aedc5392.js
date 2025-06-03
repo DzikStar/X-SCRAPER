@@ -455,7 +455,7 @@
                 });
             }
             var b = a(889906),
-                j = a(607499);
+                j = a(134877);
             function k({ children: e, timeRange: t, selectedMetric: a, showFollowersChart: s = !1 }) {
                 return (0, l.jsx)(j.S, { children: (0, l.jsx)(n.Suspense, { fallback: (0, l.jsx)("div", { className: "pt-16", children: (0, l.jsx)(c.P, { size: "large" }) }), children: (0, l.jsx)(w, { timeRange: t, selectedMetric: a, showFollowersChart: s, children: e }) }) });
             }
@@ -872,4 +872,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-aedc5392.0b77d35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-aedc5392.abb5927a.js.map

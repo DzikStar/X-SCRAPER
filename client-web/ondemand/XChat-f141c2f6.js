@@ -73,7 +73,7 @@
                 c = n(796309);
             function u({ post: e, url: a, className: n }) {
                 const u = e.post;
-                return (0, t.jsxs)(r.r, { href: a, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, t.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, t.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: "external", shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, t.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, t.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: "external", screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, t.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, t.jsx)("div", { className: "shrink-0", children: (0, t.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, t.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities })] });
+                return (0, t.jsxs)(r.r, { href: a, target: "_blank", className: (0, c.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n), children: [(0, t.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, t.jsx)(s.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: !1, shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, t.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, t.jsx)(l.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: !1, screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, t.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, t.jsx)("div", { className: "shrink-0", children: (0, t.jsx)(i.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, t.jsx)(o.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities })] });
             }
         },
         537335: (e, a, n) => {
@@ -133,11 +133,11 @@
                 d = n(264531),
                 m = n(718278),
                 g = n(664147),
-                h = n(173399);
-            const p = () =>
+                p = n(173399);
+            const h = () =>
                     (0, t.jsx)(l.z, {
                         onClick: () => {
-                            (0, h.O)()
+                            (0, p.O)()
                                 .then(() => {
                                     location.reload();
                                 })
@@ -147,7 +147,7 @@
                     }),
                 y = () => (0, t.jsx)(l.z, { onClick: () => window.dispatchEvent(new Event("xchat_database_backup_event")), children: "Backup" });
             function f() {
-                return (0, t.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, t.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, t.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, t.jsx)(p, {}), (0, t.jsx)(m.o, {})] }), (0, t.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, t.jsx)(g.i, {}) }), (0, t.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, t.jsx)(y, {}) })] });
+                return (0, t.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, t.jsx)(c.x, { children: "Please close all other tabs with XChat before hitting Reset" }), (0, t.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, t.jsx)(h, {}), (0, t.jsx)(m.o, {})] }), (0, t.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, t.jsx)(g.i, {}) }), (0, t.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, t.jsx)(y, {}) })] });
             }
             const x = () => {
                 const [e, a] = (0, u.useState)(!1),
@@ -203,17 +203,17 @@
             n.d(a, { A: () => y });
             var t = n(552322),
                 r = n(446368),
-                s = n(455091),
+                s = n(263033),
                 l = n(668781),
                 i = n(202784),
                 o = n(107267),
-                c = n(607499),
+                c = n(134877),
                 u = n(968025),
                 d = n(727071),
                 m = n(768246),
                 g = n(264531),
-                h = n(368301),
-                p = n(173399);
+                p = n(155369),
+                h = n(173399);
             const y = ({ children: e, settings: a }) => {
                 const n = (0, o.useLocation)(),
                     y = (0, o.useHistory)(),
@@ -226,9 +226,9 @@
                 const b = (0, i.useMemo)(() => ({ push: (e, a) => y.push(e, a) }), [y]);
                 return (
                     (0, i.useEffect)(() => {
-                        (0, p.z)();
+                        (0, h.z)();
                     }, []),
-                    (0, t.jsx)(c.S, { message: w("Something went wrong while loading Chat. Please try again later."), children: (0, t.jsx)(u.p, { router: b, children: (0, t.jsx)(r.ng, { children: (0, t.jsx)(d.d, { useParams: () => v, children: (0, t.jsx)(m.x, { searchParams: f, children: (0, t.jsx)(g.mp, { settings: a, children: (0, t.jsxs)(h.U, { children: [e, (0, t.jsx)(l.x, {})] }) }) }) }) }) }) })
+                    (0, t.jsx)(c.S, { message: w("Something went wrong while loading Chat. Please try again later."), children: (0, t.jsx)(u.p, { router: b, children: (0, t.jsx)(r.ng, { children: (0, t.jsx)(d.d, { useParams: () => v, children: (0, t.jsx)(m.x, { searchParams: f, children: (0, t.jsx)(g.mp, { settings: a, children: (0, t.jsxs)(p.U, { children: [e, (0, t.jsx)(l.x, {})] }) }) }) }) }) }) })
                 );
             };
         },
@@ -238,15 +238,15 @@
                 r = n(139802),
                 s = n(159603),
                 l = n(202784),
-                i = n(368301),
+                i = n(155369),
                 o = n(702024),
                 c = n(941204),
                 u = n(533476),
-                d = n(455091),
+                d = n(263033),
                 m = n(788452),
                 g = n(469745),
-                h = n(671889);
-            const p = s.com.x.dms.pin.PinEntryTitle,
+                p = n(671889);
+            const h = s.com.x.dms.pin.PinEntryTitle,
                 y = s.com.x.dms.pin.PinEntrySubtitle,
                 f = s.com.x.dms.pin.PinEntryError;
             function x({ component: e }) {
@@ -258,8 +258,8 @@
                     i.current && i.current.focus();
                 }, []);
                 return r.isProcessing
-                    ? (0, t.jsx)(h.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, t.jsx)(o.P, {}) })
-                    : (0, t.jsxs)(h.g, {
+                    ? (0, t.jsx)(p.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, t.jsx)(o.P, {}) })
+                    : (0, t.jsxs)(p.g, {
                           className: `flex flex-col min-h-dvh md:h-dvh w-full ${n ? "items-start" : "items-center"} flex-grow gap-4 py-12 px-12`,
                           onClick: () => {
                               i.current && i.current.focus();
@@ -271,16 +271,16 @@
                                   weight: "bold",
                                   children: (function (e) {
                                       switch (e) {
-                                          case p.Create:
+                                          case h.Create:
                                               return a("Create a 4-digit passcode");
-                                          case p.CreateConfirm:
+                                          case h.CreateConfirm:
                                               return a("Confirm your passcode");
-                                          case p.Recover:
-                                          case p.Verify:
+                                          case h.Recover:
+                                          case h.Verify:
                                               return a("Enter your passcode");
-                                          case p.Forgot:
+                                          case h.Forgot:
                                               return a("Create a new passcode");
-                                          case p.ForgotConfirm:
+                                          case h.ForgotConfirm:
                                               return a("Confirm your new passcode");
                                       }
                                       return "Create a 4-digit passcode";
@@ -368,7 +368,7 @@
                 b = n(18671),
                 k = n(867400),
                 _ = n(231037);
-            const j = s.com.x.navigation.PinEntryMode;
+            const j = s.com.x.dms.pin.PinEntryMode;
             function S({ mode: e }) {
                 const [a, n] = (0, l.useState)(null),
                     r = (0, i.n)(),
@@ -392,9 +392,14 @@
                                             return new j.Verify(!!a, !!n);
                                     }
                                 })(e, d, m),
-                                new s.com.x.dms.pin.DmPinEntryCallbacks(() => {
-                                    o.toInbox();
-                                }),
+                                new s.com.x.dms.pin.DmPinEntryCallbacks(
+                                    () => {
+                                        o.toClassicInbox();
+                                    },
+                                    () => {
+                                        o.toInbox();
+                                    },
+                                ),
                                 a,
                             );
                         return (
@@ -434,7 +439,7 @@
                 };
         },
         686524: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => p });
+            n.r(a), n.d(a, { default: () => h });
             const t = {
                 fragment: {
                     argumentDefinitions: (r = [{ defaultValue: null, kind: "LocalArgument", name: "id" }]),
@@ -566,7 +571,7 @@
                                                                                     storageKey: null,
                                                                                 }),
                                                                                 (g = { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }),
-                                                                                (h = {
+                                                                                (p = {
                                                                                     alias: null,
                                                                                     args: null,
                                                                                     concreteType: "HighlightedUserLabelResponse",
@@ -620,12 +625,12 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, h, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
+                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [o, c, u, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [l, { kind: "InlineFragment", selections: [u, d, m, g, p, c], type: "User", abstractKey: null }], storageKey: null }, c], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, c], storageKey: null }] },
                 params: { id: "BrdmgaNbXWZa4D4KLY-hCA", metadata: {}, name: "fetchPostQuery", operationKind: "query", text: null },
             };
-            var r, s, l, i, o, c, u, d, m, g, h;
+            var r, s, l, i, o, c, u, d, m, g, p;
             t.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
-            const p = t;
+            const h = t;
         },
         84504: (e, a, n) => {
             n.d(a, { n5: () => r });
@@ -963,4 +968,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.4912abea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.8e114faa.js.map

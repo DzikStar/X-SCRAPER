@@ -3575,7 +3575,7 @@
                 n("hbe4f99e", "هی سلام! بی‌صبرانه منتظر هم‌رسانی مقداری محتوای به‌کلی سرّی و آشنایی بیشتر با شما هستم :)"),
                 n("fb278c82", "این پیش‌نمایش چیست؟"),
                 n("j6cab6ec", "این چیزی است که افراد پیش‌از اینکه «مشترک» شما شوند می‌بینند. توضیحات خودتان را آن‌قدر دستکاری و ویرایش کنید تا همان چیزی شود که می‌خواهید."),
-                n("i22beaa4", "هم‌رسانی داده‌ها"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "حذف سابقه گفت‌وگو"),
                 n("ebc4fda0", "به‌زودی سابقه گفت‌وگوی شما را در Grok حذف می‌کنیم. دیگر نخواهید توانست به این گفت‌وگوها دسترسی پیدا کنید."),
                 n("c90fe716", "می‌خواهید گفت‌وگویتان را حذف کنید؟"),
@@ -13347,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.7e6d7e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.8044ed4a.js.map

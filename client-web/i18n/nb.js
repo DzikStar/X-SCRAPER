@@ -3574,7 +3574,7 @@
                 t("hbe4f99e", "Hallaien! Jeg brenner etter å dele litt topphemmelig innhold og bli enda bedre kjent med deg :)"),
                 t("fb278c82", "Hva er denne forhåndsvisningen?"),
                 t("j6cab6ec", "Dette er det folk ser før de abonnerer på deg. Finpuss og rediger beskrivelsene til du er helt fornøyd."),
-                t("i22beaa4", "Datadeling"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Slett samtalehistorikken"),
                 t("ebc4fda0", "Du er i ferd med å slette samtalene du har hatt med Grok. Du vil ikke kunne få tilgang til disse samtalene igjen."),
                 t("c90fe716", "Vil du slette samtalene dine?"),
@@ -13339,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.d9593d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.e1f003ca.js.map

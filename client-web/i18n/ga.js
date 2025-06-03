@@ -3590,7 +3590,7 @@
                 n("hbe4f99e", "Hé! Táim ar bís le hinneachar ardrúnda a roinnt libh agus aithne níos fearr fós a chur oraibh :)"),
                 n("fb278c82", "Cad é an réamhamharc seo?"),
                 n("j6cab6ec", "This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right."),
-                n("i22beaa4", "Data Sharing"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Delete conversation history"),
                 n("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 n("c90fe716", "Do you want to delete your conversations?"),
@@ -13357,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.4f81491a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.0d968d3a.js.map

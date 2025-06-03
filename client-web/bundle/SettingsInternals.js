@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: o, hideBackButton: a, isFullWidth: s, isLarge: c, leftControl: d, middleControl: h, position: p, rightControl: m, secondaryBar: g, style: b, subtitle: f, title: C, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: _, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: o, hideBackButton: a, isFullWidth: s, isLarge: c, leftControl: d, middleControl: h, position: p, rightControl: m, secondaryBar: g, style: b, subtitle: C, title: f, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: _, withWideContainer: w } = this.props,
                         { isModal: Z } = this.context,
                         L = a ? d : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         B = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!_, Z, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: L, middleControl: h, position: u(p, Z, o), rightControl: m, style: b, subtitle: f, title: C, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: B, withWideContainer: w }), g || null);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: L, middleControl: h, position: u(p, Z, o), rightControl: m, style: b, subtitle: C, title: f, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: B, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -79,13 +79,13 @@
                 m = n(655543),
                 g = n(715601),
                 b = n(392237);
-            const f = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class C extends r.Component {
+            const C = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class f extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: f.fill }, r.createElement(g.Z, { style: f.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: C.fill }, r.createElement(g.Z, { style: C.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
@@ -100,20 +100,20 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: C, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: v, withSearchBox: k, withTweetButton: T, withWideContainer: I } = this.props,
-                        x = "root" === C,
-                        F = "secondaryRoot" === C,
-                        A = "primaryDetail" === C,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: v, withSearchBox: k, withTweetButton: T, withWideContainer: I } = this.props,
+                        x = "root" === f,
+                        F = "secondaryRoot" === f,
+                        A = "primaryDetail" === f,
                         D = (A && _) || (x && S),
                         P = x || (A && e),
                         R = x ? d.ey : A ? d.vX : void 0,
-                        N = r.createElement(s.Z, { style: f.appBarContainer }, r.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, secondaryBar: E, style: o, subtitle: D ? w : void 0, title: Z, titleDomId: R, titleIconCell: L, titleIconCellSize: B, withWideContainer: I })),
+                        N = r.createElement(s.Z, { style: C.appBarContainer }, r.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, secondaryBar: E, style: o, subtitle: D ? w : void 0, title: Z, titleDomId: R, titleIconCell: L, titleIconCellSize: B, withWideContainer: I })),
                         U = x || (F && v) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: k, withTweetButton: T });
                     return r.createElement(r.Fragment, null, U, N);
                 }
             }
-            (C.contextType = m.Z), (C.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const y = (0, u.ZP)(C),
+            (f.contextType = m.Z), (f.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
+            const y = (0, u.ZP)(f),
                 E = (e) => {
                     const t = (0, o.useHistory)();
                     return (0, a.HD)(t) ? e.children || null : r.createElement(y, e);
@@ -377,20 +377,20 @@
                 m = n(71620),
                 g = n(224504),
                 b = n(668214),
-                f = n(576025),
-                C = n(558369),
+                C = n(576025),
+                f = n(558369),
                 y = n(390387),
                 E = n(38562);
             const S = [],
                 _ = (e) => {
-                    const t = (0, C.FG)(e, "account_country_setting_countries_whitelist"),
-                        n = (0, f.Lf)(e);
+                    const t = (0, f.FG)(e, "account_country_setting_countries_whitelist"),
+                        n = (0, C.Lf)(e);
                     return Array.isArray(t) ? (0, g.t)(t, n) : S;
                 },
                 w = (e, t) => t.location?.query?.flow_status,
                 Z = (0, b.Z)()
                     .propsFromState(() => ({ countryCode: E.eV, countryList: _, changeCountryFlowStatus: w, lang: y.VT }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("SETTINGS_COUNTRY_SCREEN"), fetchCountryNamesIfNeeded: f.Po, updateSettings: E.VP, fetchSettings: E.wv }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("SETTINGS_COUNTRY_SCREEN"), fetchCountryNamesIfNeeded: C.Po, updateSettings: E.VP, fetchSettings: E.wv }))
                     .withAnalytics({ page: "settings", section: "country" }),
                 L = "Settings_Country_Selector",
                 B = d().c21037d0,
@@ -438,14 +438,14 @@
                 m = n(661461),
                 g = n(390387),
                 b = n(38562);
-            const f = l().cef33711,
-                C = (0, p.Z)()
+            const C = l().cef33711,
+                f = (0, p.Z)()
                     .propsFromState(() => ({ languageCode: g.VT, languageList: m.Nr }))
                     .adjustStateProps(({ languageCode: e, languageList: t }) => ({
                         languageCode: (0, u.o)(e).toLowerCase(),
                         languageList: t.map((e) => {
                             const { code: t, local_name: n, name: r, status: o } = e,
-                                a = "beta" === o ? f({ languageName: r }) : r;
+                                a = "beta" === o ? C({ languageName: r }) : r;
                             return { label: r === n ? a : `${a} - ${n}`, value: t };
                         }),
                     }))
@@ -487,7 +487,7 @@
                     );
                 },
                 Z = s.default.create((e) => ({ languageSelector: { margin: e.spaces.space20 } })),
-                L = C(w);
+                L = f(w);
         },
         264922: (e, t, n) => {
             n.d(t, { Z: () => S });
@@ -507,8 +507,8 @@
             const b = (0, p.Z)()
                     .propsFromState(() => ({ fetchStatus: m.UD, viewerUser: g.ZP.selectViewerUser }))
                     .propsFromActions(() => ({ fetchSettingsIfNeeded: m.Sb, createLocalApiErrorHandler: (0, h.zr)("SETTINGS_LOADER") })),
-                f = "settingsDetailSave",
-                C = c().i2209530;
+                C = "settingsDetailSave",
+                f = c().i2209530;
             class y extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -518,7 +518,7 @@
                         }),
                         (this._render = () => {
                             const { children: e, onSubmit: t, submitDisabled: n, submitLabel: i, submitType: l, withMarginBottom: c } = this.props;
-                            return r.createElement(o.Z, { style: [E.contentRoot, c && E.withMarginBottom] }, e, t ? r.createElement(r.Fragment, null, r.createElement(a.Z, null), r.createElement(o.Z, { style: E.buttonContainer }, r.createElement(s.ZP, { disabled: n, onPress: t, style: E.button, testID: f, type: l }, i))) : null);
+                            return r.createElement(o.Z, { style: [E.contentRoot, c && E.withMarginBottom] }, e, t ? r.createElement(r.Fragment, null, r.createElement(a.Z, null), r.createElement(o.Z, { style: E.buttonContainer }, r.createElement(s.ZP, { disabled: n, onPress: t, style: E.button, testID: C, type: l }, i))) : null);
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
@@ -540,7 +540,7 @@
                     return r.createElement(u.Z, { backLocation: l, onBackClick: e, rightControl: t, screenType: n, secondaryBar: o, showSubtitleOnWideDetail: !1, subtitle: c, title: a, withBottomBorder: i }, s ? this._renderWithFetchSettings() : this._render());
                 }
             }
-            y.defaultProps = { submitLabel: C, submitType: "brandFilled", withMarginBottom: !0 };
+            y.defaultProps = { submitLabel: f, submitType: "brandFilled", withMarginBottom: !0 };
             const E = i.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${i.default.iPhoneOffsetBottom})` } })),
                 S = b(y);
         },
@@ -610,7 +610,7 @@
                 c = i;
         },
         466818: (e, t, n) => {
-            n.d(t, { ZP: () => f });
+            n.d(t, { ZP: () => C });
             var r = n(202784),
                 o = n(325686),
                 a = n(487552),
@@ -651,7 +651,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: m, options: g, style: f, testID: C, value: y, withEmptyOption: E } = this.props,
+                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: m, options: g, style: C, testID: f, value: y, withEmptyOption: E } = this.props,
                         { isFocused: S } = this.state,
                         _ = l.ZP.getLanguage(),
                         w = void 0 === c ? !!n : c,
@@ -665,11 +665,11 @@
                             const l = "ja" === _ ? u.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(_) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 o.Z,
-                                { style: [i.Z.border, b.container, t && i.Z.disabled, S && i.Z.focusedBorderValid, w && i.Z.invalidBorderColor, S && w && i.Z.focusedBorderInvalid, f] },
+                                { style: [i.Z.border, b.container, t && i.Z.disabled, S && i.Z.focusedBorderValid, w && i.Z.invalidBorderColor, S && w && i.Z.focusedBorderInvalid, C] },
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": L, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: l }, t && i.Z.disabled], testID: C || "", value: y },
+                                    { "aria-describedby": L, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: l }, t && i.Z.disabled], testID: f || "", value: y },
                                     E ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     g.map((e) => {
                                         const { disabled: t, label: n, value: o } = e;
@@ -697,13 +697,13 @@
             }
             g.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
             const b = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                f = g;
+                C = g;
         },
         183806: (e, t, n) => {
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        748138: (e, t, n) => {
+        41065: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var r = n(202784),
                 o = n(890601),
@@ -711,11 +711,11 @@
                 s = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const l = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.6bb4146a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.7a4a2faa.js.map

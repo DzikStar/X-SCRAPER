@@ -3579,7 +3579,7 @@
                 t("hbe4f99e", "Ola! Teño moitas ganas de compartir contido inédito convosco e coñecervos mellor :)"),
                 t("fb278c82", "Que é esta vista previa?"),
                 t("j6cab6ec", "This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right."),
-                t("i22beaa4", "Data Sharing"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Delete conversation history"),
                 t("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 t("c90fe716", "Do you want to delete your conversations?"),
@@ -13345,4 +13345,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.02f77f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.320011da.js.map

@@ -184,9 +184,9 @@
                     return s || !r;
                 },
                 v = (e, t) => (e.entities?.user_mentions || []).filter((n) => b(e, n.id_str, t)).map((e) => e.id_str) || [],
-                S = (e, t) => t.focalTweetId,
-                E = (0, g.Z)()
-                    .propsFromState(() => ({ focalTweetId: S, viewerUserId: h._h, tweetMap: f.Z.selectAll, users: y.ZP.selectAll }))
+                E = (e, t) => t.focalTweetId,
+                S = (0, g.Z)()
+                    .propsFromState(() => ({ focalTweetId: E, viewerUserId: h._h, tweetMap: f.Z.selectAll, users: y.ZP.selectAll }))
                     .adjustStateProps(({ focalTweetId: e, tweetMap: t, users: n, viewerUserId: s }) => {
                         const r = e && t[e];
                         if (!r) return { participantIds: [] };
@@ -204,7 +204,7 @@
                 })(e);
                 return t.length > 0 ? s.createElement(p, { headerText: w, participantIds: t }) : null;
             }
-            const T = E(I);
+            const T = S(I);
         },
         527969: (e, t, n) => {
             "use strict";
@@ -389,19 +389,19 @@
                 k = n(154003),
                 b = n(708852),
                 v = n(392237),
-                S = n(111677),
-                E = n.n(S),
+                E = n(111677),
+                S = n.n(E),
                 w = n(293723),
                 I = n(399398),
                 T = n(822502),
                 Z = n(910113),
                 L = n(535338),
                 C = n(736063);
-            const F = E().fb15ec28,
-                P = E().ece910f0,
-                R = E().jd08bc14,
-                U = E().de0a4a72,
-                x = E().fc5bfd96,
+            const F = S().fb15ec28,
+                P = S().ece910f0,
+                R = S().jd08bc14,
+                U = S().de0a4a72,
+                x = S().fc5bfd96,
                 A = u,
                 D = () => m.createElement(p.Z, null, m.createElement(y.Z, { text: F }), m.createElement(p.Z, { style: K.content }, m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, P)), m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, R)), m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, U)), m.createElement(k.ZP, { link: "/jobs/get-recommendations", size: "small", type: "brandFilled" }, x))),
                 O = ({ recommendation: e, recommendationId: t, recommendationIndex: n }) => {
@@ -469,14 +469,14 @@
                 k = n(668214),
                 b = n(919022);
             const v = (e, t) => t.userIds,
-                S = (e, t) => {
+                E = (e, t) => {
                     const { filterPredicate: n = (e) => !!e, userIds: s } = t;
                     return s.filter((t) => {
                         const s = b.ZP.select(e, t);
                         return !!s && n(s);
                     });
                 },
-                E = (e, t) => {
+                S = (e, t) => {
                     const { userIds: n } = t;
                     return n.reduce((t, n) => {
                         const s = b.ZP.selectFetchStatus(e, n);
@@ -485,8 +485,8 @@
                 },
                 w = (0, k.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, _.Z)(S, (e) => e),
-                        fetchStatus: (0, _.Z)(S, E, v, (e, t, n) => {
+                        availableUserIds: (0, _.Z)(E, (e) => e),
+                        fetchStatus: (0, _.Z)(E, S, v, (e, t, n) => {
                             let s = f.ZP.LOADED;
                             for (let r = 0; r < n.length; r++) {
                                 const i = n[r];
@@ -547,7 +547,7 @@
         },
         912937: (e, t, n) => {
             "use strict";
-            n.r(t), n.d(t, { WhoToFollowContainer: () => j, default: () => z });
+            n.r(t), n.d(t, { WhoToFollowContainer: () => j, default: () => q });
             var s = n(202784),
                 r = n(325686),
                 i = n(392237),
@@ -642,12 +642,12 @@
                     d)
                 )
                     return null;
-                const p = [S.adContainer, !i && S.emptyContainer];
-                return s.createElement(r.Z, { style: p }, s.createElement(r.Z, { id: t, style: [S.adSlot, "primary" !== i && S.hiddenSlot] }), s.createElement(r.Z, { id: e, style: [S.adSlot, "fallback" !== i && S.hiddenSlot] }));
+                const p = [E.adContainer, !i && E.emptyContainer];
+                return s.createElement(r.Z, { style: p }, s.createElement(r.Z, { id: t, style: [E.adSlot, "primary" !== i && E.hiddenSlot] }), s.createElement(r.Z, { id: e, style: [E.adSlot, "fallback" !== i && E.hiddenSlot] }));
             }
-            const S = i.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
-                E = function (e) {
-                    return s.createElement(h.Z, { style: S.root }, s.createElement(s.Suspense, { fallback: s.createElement(r.Z, { style: S.emptyContainer }) }, s.createElement(y, e)));
+            const E = i.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
+                S = function (e) {
+                    return s.createElement(h.Z, { style: E.root }, s.createElement(s.Suspense, { fallback: s.createElement(r.Z, { style: E.emptyContainer }) }, s.createElement(y, e)));
                 },
                 w = o().a526aa66,
                 I = o().ef625010,
@@ -656,7 +656,7 @@
                     const a = (0, m.hC)("rweb_ssp_ads_enabled"),
                         o = `/i/connect_people?user_id=${t}`,
                         l = n.length > 0;
-                    return s.createElement(r.Z, { "aria-label": w, role: "complementary" }, s.createElement(c.Z, { text: i ? I : w }), s.createElement(u.Z, { displayMode: p.Z.UserCompact, userIds: n }), a && l && s.createElement(E, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), l && s.createElement(d.Z, { link: o, text: T, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
+                    return s.createElement(r.Z, { "aria-label": w, role: "complementary" }, s.createElement(c.Z, { text: i ? I : w }), s.createElement(u.Z, { displayMode: p.Z.UserCompact, userIds: n }), a && l && s.createElement(S, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), l && s.createElement(d.Z, { link: o, text: T, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
                 });
             var L = n(967977),
                 C = n(942893),
@@ -715,7 +715,7 @@
                 }
                 render() {
                     const { fetchStatus: e, style: t } = this.props;
-                    return e === F.ZP.FAILED || this._hasEmptySuggestionList() ? null : s.createElement(r.Z, { style: [q.root, t] }, s.createElement(l.Z, { "aria-label": H, fetchStatus: e, render: this._renderContent }));
+                    return e === F.ZP.FAILED || this._hasEmptySuggestionList() ? null : s.createElement(r.Z, { style: [z.root, t] }, s.createElement(l.Z, { "aria-label": H, fetchStatus: e, render: this._renderContent }));
                 }
                 _fetchRecommendations(e) {
                     const { createLocalApiErrorHandler: t, fetchRecommendationsIfNeeded: n, userId: s } = e;
@@ -726,12 +726,12 @@
                     return e === F.ZP.LOADED && 0 === t.length;
                 }
             }
-            const q = i.default.create((e) => ({ root: { minHeight: "15rem" } })),
-                z = N(j);
+            const z = i.default.create((e) => ({ root: { minHeight: "15rem" } })),
+                q = N(j);
         },
         376293: (e, t, n) => {
             "use strict";
-            n.d(t, { $f: () => w, KV: () => y, LI: () => C, SC: () => E, Vt: () => b, ed: () => F, op: () => I });
+            n.d(t, { $f: () => w, KV: () => y, LI: () => C, SC: () => S, Vt: () => b, ed: () => F, op: () => I });
             var s = n(202784),
                 r = n(190286),
                 i = n(111677),
@@ -751,24 +751,24 @@
                 k = a().c9623eeb,
                 b = a().e133be4e,
                 v = a().he43bca4,
-                S = a().f5f01af6,
-                E = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                E = a().f5f01af6,
+                S = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 w = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: g, text: t ? f({ screenName: e }) : h({ screenName: e }) }),
                 I = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: s, testID: r, unblockAction: i, unblockSubtext: a, user: o }) => {
                     let l,
                         u = c.Z;
                     const m = C(o, n);
                     switch (s) {
-                        case E.PROFILE:
-                        case E.LIST_DETAIL:
-                        case E.FOLLOWERS_LIST:
+                        case S.PROFILE:
+                        case S.LIST_DETAIL:
+                        case S.FOLLOWERS_LIST:
                             u = () => {
                                 o.blocking ? i(m) : e(m);
                             };
                             break;
-                        case E.TWEET:
-                        case E.TWEET_CARET:
-                        case E.RICH_FEEDBACK:
+                        case S.TWEET:
+                        case S.TWEET_CARET:
+                        case S.RICH_FEEDBACK:
                             (l = d.uq.block),
                                 (u = () => {
                                     o.blocking ? i(m) : e(m);
@@ -779,7 +779,7 @@
                 T = (e) => (e ? l.default : o.default),
                 Z = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
                 L = (e) => (e.blocking ? k({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: b, text: t ? S : v }))(e.screen_name, t) : w(e.screen_name, t)),
+                C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: b, text: t ? E : v }))(e.screen_name, t) : w(e.screen_name, t)),
                 F = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: i, headline: a, label: o, text: l } = e;
                     return s.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: o, confirmButtonType: i, headline: a, onCancel: n, onConfirm: t, text: l });
@@ -917,8 +917,8 @@
                 k = n(312771),
                 b = n(56519);
             const v = "recommendations",
-                S = 30,
-                E = "rweb/recommendations/FETCH_REQUEST",
+                E = 30,
+                S = "rweb/recommendations/FETCH_REQUEST",
                 w = "rweb/recommendations/FETCH_SUCCESS",
                 I = "rweb/recommendations/FETCH_FAILURE",
                 T = {},
@@ -927,7 +927,7 @@
                 [v]: function (e = T, t) {
                     if (!t?.meta) return e;
                     switch (t.type) {
-                        case E: {
+                        case S: {
                             const n = Z(t.meta);
                             return { ...e, [n]: { ...e[n], fetchStatus: k.ZP.LOADING } };
                         }
@@ -967,9 +967,9 @@
                               (
                                   (e) =>
                                   (t, n, { api: s, featureSwitches: r }) => {
-                                      const { displayLocation: i, itsInterests: a, limit: o = S, similarToUserId: l } = e,
+                                      const { displayLocation: i, itsInterests: a, limit: o = E, similarToUserId: l } = e,
                                           c = "profile_accounts_sidebar" === i && r.isTrue("rweb_recommendations_sidebar_graphql_enabled");
-                                      return (0, _._O)(t, { request: c ? s.withEndpoint(f).fetchSidebarUserRecommendations : s.withEndpoint(f).fetch, params: { display_location: i, itsInterests: a, limit: o, user_id: l } })({ actionTypes: { REQUEST: E, SUCCESS: w, FAILURE: I }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: i, similarToUserId: l } }, (e) => {
+                                      return (0, _._O)(t, { request: c ? s.withEndpoint(f).fetchSidebarUserRecommendations : s.withEndpoint(f).fetch, params: { display_location: i, itsInterests: a, limit: o, user_id: l } })({ actionTypes: { REQUEST: S, SUCCESS: w, FAILURE: I }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: i, similarToUserId: l } }, (e) => {
                                           if (e && e.entities) return [(0, b.dP)(e.entities)];
                                       });
                                   }
@@ -1023,7 +1023,7 @@
                     return s.createElement(i.Z, { link: t, onPress: n, style: [a.root, c && a.withBottomRadius], withDarkerInteractiveBackground: d }, s.createElement(r.ZP, { align: e, color: "primary", weight: l }, o));
                 };
         },
-        314948: (e, t, n) => {
+        391366: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => l });
             var s = n(202784),
@@ -1032,7 +1032,7 @@
                 a = n(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const l = o;
@@ -1053,4 +1053,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.eb28ae4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.e3451f5a.js.map

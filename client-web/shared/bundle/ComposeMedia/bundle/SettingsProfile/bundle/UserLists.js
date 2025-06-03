@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists", "icons/IconCropSquare-js", "icons/IconEye-js"],
+    ["shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists", "icons/IconCropOriginal-js", "icons/IconSearchPlusStroke-js"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => p });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: s, hideBackButton: a, isFullWidth: n, isLarge: h, leftControl: c, middleControl: p, position: u, rightControl: m, secondaryBar: g, style: _, subtitle: v, title: f, titleDomId: y, titleIconCell: b, titleIconCellSize: S, withBackground: w, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: s, hideBackButton: a, isFullWidth: n, isLarge: h, leftControl: c, middleControl: p, position: u, rightControl: m, secondaryBar: g, style: _, subtitle: f, title: v, titleDomId: y, titleIconCell: S, titleIconCellSize: b, withBackground: w, withWideContainer: C } = this.props,
                         { isModal: M } = this.context,
                         x = a ? c : i.createElement(r.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         B = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!w, M, !!g);
-                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: h, leftControl: x, middleControl: p, position: d(u, M, s), rightControl: m, style: _, subtitle: v, title: f, titleDomId: y, titleIconCell: b, titleIconCellSize: S, withBackground: B, withWideContainer: C }), g || null);
+                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: h, leftControl: x, middleControl: p, position: d(u, M, s), rightControl: m, style: _, subtitle: f, title: v, titleDomId: y, titleIconCell: S, titleIconCellSize: b, withBackground: B, withWideContainer: C }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: r, history: l, isFullWidth: d, isLarge: p, middleControl: u, onBackClick: g, rightControl: _, secondaryBar: v, subtitle: f, title: y } = this.props,
-                                { isModal: b } = this.context;
-                            return i.createElement(s.Z, { style: b ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, i.createElement(c.ZP, { backButtonType: o || (b ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !b, hideBackButton: r, history: l, isFullWidth: d, isLarge: p, middleControl: u, onBackClick: g, ref: e, rightControl: _, secondaryBar: v, style: [b && m.appBarModal, t], subtitle: f, title: y, titleDomId: h.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: r, history: l, isFullWidth: d, isLarge: p, middleControl: u, onBackClick: g, rightControl: _, secondaryBar: f, subtitle: v, title: y } = this.props,
+                                { isModal: S } = this.context;
+                            return i.createElement(s.Z, { style: S ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, i.createElement(c.ZP, { backButtonType: o || (S ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !S, hideBackButton: r, history: l, isFullWidth: d, isLarge: p, middleControl: u, onBackClick: g, ref: e, rightControl: _, secondaryBar: f, style: [S && m.appBarModal, t], subtitle: v, title: y, titleDomId: h.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -73,9 +73,9 @@
                 }
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: r, isFullWidth: h, isLarge: c, renderHeader: u, title: g, withoutBottomBarMobile: _ } = this.props,
-                        { isModal: v } = this.context,
-                        f = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return i.createElement(l.Z, null, i.createElement(d.Z.Configure, { documentTitle: r, headerless: !0, title: g }), i.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, v && m.rootModal] }, !v && f, i.createElement(a.Z, { isFullWidth: h, isLarge: c, style: [m.container, v && m.containerModal, n] }, v ? i.createElement(p.Z, { style: m.viewport }, f, o) : o), t ? i.createElement(s.Z, { style: [m.bottomBarModal, !v && !_ && m.bottomBarMobile] }, i.createElement(a.Z, { isFullWidth: h, isLarge: c }, t)) : null));
+                        { isModal: f } = this.context,
+                        v = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return i.createElement(l.Z, null, i.createElement(d.Z.Configure, { documentTitle: r, headerless: !0, title: g }), i.createElement(s.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, f && m.rootModal] }, !f && v, i.createElement(a.Z, { isFullWidth: h, isLarge: c, style: [m.container, f && m.containerModal, n] }, f ? i.createElement(p.Z, { style: m.viewport }, v, o) : o), t ? i.createElement(s.Z, { style: [m.bottomBarModal, !f && !_ && m.bottomBarMobile] }, i.createElement(a.Z, { isFullWidth: h, isLarge: c }, t)) : null));
                 }
             }
             (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = n.Z);
@@ -179,11 +179,11 @@
                 m = o(154003),
                 g = o(992942),
                 _ = o(782578),
-                v = o(173739),
-                f = o(392237),
+                f = o(173739),
+                v = o(392237),
                 y = o(393058);
-            const b = f.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
-                S = ({ circle: e, height: t, width: o }) => i.createElement(a.Z, { pointerEvents: "none", style: [b.mask, { width: o, height: t }, e && b.circle] });
+            const S = v.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
+                b = ({ circle: e, height: t, width: o }) => i.createElement(a.Z, { pointerEvents: "none", style: [S.mask, { width: o, height: t }, e && S.circle] });
             var w = o(807896),
                 C = o(151624),
                 M = o(933895);
@@ -247,9 +247,9 @@
             }
             const B = x,
                 k = r().d85bc1b8,
-                Z = r().f596ace8,
-                E = r().df031fca,
-                P = r().b40332c6,
+                P = r().f596ace8,
+                Z = r().df031fca,
+                E = r().b40332c6,
                 R = r().e547b368,
                 D = r().f7571204,
                 L = r().e6e16812,
@@ -271,7 +271,7 @@
                                 { aspectRatio: o } = this.state,
                                 s = e.width / e.height,
                                 n = this._shouldShowZoomControl();
-                            return t || n ? i.createElement(a.Z, { style: W.controlsContainer }, t ? i.createElement(a.Z, { style: W.ratioContainer }, i.createElement(m.ZP, { "aria-label": Z, borderColor: "transparent", color: o === s ? "primary" : "gray700", hoverLabel: { label: R }, icon: i.createElement(l.default, null), onPress: this._setAspectRatio(s), size: "medium" }), i.createElement(m.ZP, { "aria-label": E, borderColor: "transparent", color: o === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: D }, icon: i.createElement(h.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), i.createElement(m.ZP, { "aria-label": P, borderColor: "transparent", color: 1 === o ? "primary" : "gray700", hoverLabel: { label: L }, icon: i.createElement(c.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, n ? i.createElement(a.Z, { style: W.zoomContainer }, i.createElement(v.Z, { "aria-label": k, max: this._maxScale, maxIcon: i.createElement(d.default, { style: W.icon }), min: 0, minIcon: i.createElement(p.default, { style: W.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
+                            return t || n ? i.createElement(a.Z, { style: W.controlsContainer }, t ? i.createElement(a.Z, { style: W.ratioContainer }, i.createElement(m.ZP, { "aria-label": P, borderColor: "transparent", color: o === s ? "primary" : "gray700", hoverLabel: { label: R }, icon: i.createElement(l.default, null), onPress: this._setAspectRatio(s), size: "medium" }), i.createElement(m.ZP, { "aria-label": Z, borderColor: "transparent", color: o === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: D }, icon: i.createElement(h.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), i.createElement(m.ZP, { "aria-label": E, borderColor: "transparent", color: 1 === o ? "primary" : "gray700", hoverLabel: { label: L }, icon: i.createElement(c.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, n ? i.createElement(a.Z, { style: W.zoomContainer }, i.createElement(f.Z, { "aria-label": k, max: this._maxScale, maxIcon: i.createElement(d.default, { style: W.icon }), min: 0, minIcon: i.createElement(p.default, { style: W.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
                         }),
                         (this._handleScaleChange = (e) => {
                             this.setState({ imageScale: e });
@@ -361,7 +361,7 @@
                         { height: n, width: r } = this._getImageDimensions(),
                         { height: l, width: h } = this._getMaskDimensions(),
                         c = this.state.containerWidth && this.state.containerHeight;
-                    return i.createElement(a.Z, { style: W.container }, i.createElement(B, { onLayout: this._handleLayout, onPanEnd: this._handlePanEnd, onPanMove: this._handlePanMove, onPinchMove: o ? this._handlePinchMove : void 0, onWheel: o ? this._handleWheel : void 0, style: W.root }, c ? i.createElement(i.Fragment, null, i.createElement(g.Z, { source: { uri: t.src, width: r, height: n }, style: [W.image, s] }), i.createElement(S, { circle: e, height: l, width: h })) : null), c ? this._renderControls() : null);
+                    return i.createElement(a.Z, { style: W.container }, i.createElement(B, { onLayout: this._handleLayout, onPanEnd: this._handlePanEnd, onPanMove: this._handlePanMove, onPinchMove: o ? this._handlePinchMove : void 0, onWheel: o ? this._handleWheel : void 0, style: W.root }, c ? i.createElement(i.Fragment, null, i.createElement(g.Z, { source: { uri: t.src, width: r, height: n }, style: [W.image, s] }), i.createElement(b, { circle: e, height: l, width: h })) : null), c ? this._renderControls() : null);
                 }
                 componentDidUpdate(e, t) {
                     this._updateStyles(), this._adjustToInBounds();
@@ -374,14 +374,14 @@
                 }
             }
             I.defaultProps = { circle: !1, withZoomControl: !0 };
-            const W = f.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
+            const W = v.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
                 z = I;
         },
         183806: (e, t, o) => {
             o.d(t, { Z: () => i });
             const i = o(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        390587: (e, t, o) => {
+        553007: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 s = o(890601),
@@ -389,12 +389,12 @@
                 n = o(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3 7.5C3 6.119 4.119 5 5.5 5h13C19.881 5 21 6.119 21 7.5v9c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 19 3 17.881 3 16.5v-9zM5.5 7c-.276 0-.5.224-.5.5v9c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-9c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const l = r;
         },
-        988227: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 s = o(890601),
@@ -402,12 +402,12 @@
                 n = o(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const l = r;
         },
-        748138: (e, t, o) => {
+        158910: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 s = o(890601),
@@ -415,11 +415,11 @@
                 n = o(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm8-1V7.5h2V10h2.5v2H12v2.5h-2V12H7.5v-2H10z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const l = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists.764953ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ComposeMedia~bundle.SettingsProfile~bundle.UserLists.bead6eca.js.map

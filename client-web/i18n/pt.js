@@ -3575,7 +3575,7 @@
                 s("hbe4f99e", "Olá! Não vejo a hora de mostrar o conteúdo que estou guardando a sete chaves e conhecer você ainda melhor :)"),
                 s("fb278c82", "O que é esta pré-visualização?"),
                 s("j6cab6ec", "É isso que as pessoas veem antes de embarcar no recurso Assinaturas com você. Edite suas descrições até deixá-las bem do jeitinho que você quer."),
-                s("i22beaa4", "Compartilhamento de dados"),
+                s("f2b1e83e", "Grok & Third-Party Collaborators"),
                 s("e110a46c", "Excluir histórico da conversa"),
                 s("ebc4fda0", "Você está prestes a excluir seu histórico de conversas do Grok. Você não poderá acessar essas conversas novamente."),
                 s("c90fe716", "Deseja excluir suas conversas?"),
@@ -13341,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.7ea3849a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.0970279a.js.map

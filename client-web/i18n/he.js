@@ -3584,7 +3584,7 @@
                 n("hbe4f99e", "היי! אני מחכה ומצפה לשתף איתכם תוכן סודי וללמוד להכיר אתכם טוב יותר :)"),
                 n("fb278c82", "מהי התצוגה המקדימה?"),
                 n("j6cab6ec", "זה מה שאנשים יראו לפני שהם יירשמו כמנויים שלך. תוכל לשנות ולערוך את התיאורים שלך בהתאם לרצונך."),
-                n("i22beaa4", "שיתוף נתונים"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "מחיקת היסטוריית שיחות"),
                 n("ebc4fda0", "אתה עומד למחוק את היסטוריית שיחות Grok שלך. לאחר ביצוע הפעולה, לא תוכל לקבל גישה לשיחות האלה."),
                 n("c90fe716", "האם ברצונך למחוק את השיחות שלך?"),
@@ -7238,16 +7238,16 @@
                 n("hd80bd3e", "קדם פוסט"),
                 n("fe2b0008", "למד איך להשתמש ב-X"),
                 n("h257d4aa", "בחר פוסט שברצונך לקדם"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
-                n("b1319404", "Ads avoided"),
-                n("baa4acae", "You’re seeing more personalized content."),
-                n("c00e8600", "Estimated time saved"),
-                n("ic073e4e", "Your time is valuable."),
-                n("eb866e88", "Estimated 1-year time savings"),
-                n("aa77b70c", "Based on your usage."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("fe946974", "תקופת ההתנסות של X ללא מודעות"),
+                n("f6c50ec0", "תקופת ההתנסות של החוויה ללא מודעות הסתיימה"),
+                n("b1319404", "מודעות שנמנעו"),
+                n("baa4acae", "אתה רואה תוכן שמותאם יותר עבורך."),
+                n("c00e8600", "הזמן המשוער שנחסך"),
+                n("ic073e4e", "הזמן שלך יקר."),
+                n("eb866e88", "הזמן המשוער שנחסך במשך שנה"),
+                n("aa77b70c", "על פי אופי השימוש שלך."),
+                n("c534c6b4", "אנחנו מחשבים את המספרים..."),
+                n("i57332f0", "המשך לגלול וחזור מאוחר יותר כדי לבדוק כמה מודעות נמנעו וכמה זמן חסכת"),
                 n("cc10f019", function (e) {
                     return e.minutes + " דק" + t(e.minutes, "ות", "ה", "ות", "ות");
                 }),
@@ -7263,11 +7263,11 @@
                 n("be88be23", function (e) {
                     return "תקופת הניסיון בת " + e.durationInDays + " הימים שלך הופעלה";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("a4413462", "במהלך תקופת ההתנסות, תוכל לראות נתונים סטטיסטיים לגבי מספר המודעות שלא הוצגו ומשך הזמן שחסכת."),
+                n("ae3f3b0e", "אנחנו מקווים שתיהנה!"),
+                n("cdac8dc4", "צפה בהזנה החדשה שלך"),
                 n("dec99336", "ללא מודעות"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("i95803fa", "למרבה הצער, בשלב זה אינך זכאי."),
                 n("d28a1d72", "Radar יאפשר לך להיות הראשון שמזהה נושאים חמים"),
                 n("fb70427a", "אנחנו גאים להציג את כלי החיפוש העוצמתי ביותר ב-X."),
                 n("i54bf620", "ניטור מילות חיפוש"),
@@ -12123,7 +12123,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["‎", "%‎ עמלה, מינימום "];
                             },
                         },
                         {
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.1696626a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.f2873b2a.js.map

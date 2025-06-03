@@ -2,10 +2,10 @@
     ["modules.audio-6107ac1a"],
     {
         581364: (e) => {
-            e.exports = { queryId: "F1MPYUwL__ABe5ZgbEhQ1A", operationName: "AudioSpaceAddSharing", operationType: "mutation", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "lMB8ztMF7kFIMh7sxGkguA", operationName: "AudioSpaceAddSharing", operationType: "mutation", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         8890: (e) => {
-            e.exports = { queryId: "cfmRiOlMlZezlssjDnQ8aA", operationName: "AudioSpaceById", operationType: "query", metadata: { featureSwitches: ["spaces_2022_h2_spaces_communities", "spaces_2022_h2_clipping", "creator_subscriptions_tweet_preview_api_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "GLUTgy_3AIBjLSDIM25idA", operationName: "AudioSpaceById", operationType: "query", metadata: { featureSwitches: ["spaces_2022_h2_spaces_communities", "spaces_2022_h2_clipping", "creator_subscriptions_tweet_preview_api_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         212618: (e) => {
             e.exports = { queryId: "YMbfLMTUUEzEEMibvvR26Q", operationName: "AudioSpaceDeleteSharing", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -76,8 +76,8 @@
                         return a;
                     })(o),
                     w = p(a.creator_results?.result),
-                    f = w?.screen_name,
-                    D = w?.profile_image_extensions_media_color?.palette,
+                    D = w?.screen_name,
+                    f = w?.profile_image_extensions_media_color?.palette,
                     { cohosts: y, host: g } = (function (e, a) {
                         let t;
                         const o = [];
@@ -87,8 +87,8 @@
                               })
                             : (t = e.admins[0]);
                         return { host: t, cohosts: o };
-                    })(h, f);
-                return n()(g, "host is required"), { ...r, ...a, rest_id: i, state: d, host: g, hostPalette: D, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
+                    })(h, D);
+                return n()(g, "host is required"), { ...r, ...a, rest_id: i, state: d, host: g, hostPalette: f, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
             }
             function m(e, a) {
                 return e
@@ -113,8 +113,8 @@
             }
             var b = t(581364),
                 w = t.n(b),
-                f = t(8890),
-                D = t.n(f),
+                D = t(8890),
+                f = t.n(D),
                 y = t(212618),
                 g = t.n(y),
                 M = t(320378),
@@ -134,9 +134,9 @@
                             d = n.isMetatagsQuery || !1;
                         return e
                             .graphQL(
-                                D(),
+                                f(),
                                 { id: i, isMetatagsQuery: d, ...(0, r.d)(a), withReplays: !0, withListeners: !0 },
-                                L(
+                                R(
                                     s,
                                     i,
                                     (e, a) => (
@@ -145,23 +145,22 @@
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
                                                     t.e("icons.0"),
+                                                    t.e("icons.13"),
+                                                    t.e("icons.22"),
+                                                    t.e("icons.29"),
                                                     t.e("icons.5"),
-                                                    t.e("icons.12"),
-                                                    t.e("icons.20"),
-                                                    t.e("icons.2"),
-                                                    t.e("icons.21"),
-                                                    t.e("icons.28"),
+                                                    t.e("icons.7"),
+                                                    t.e("icons.1"),
+                                                    t.e("icons.25"),
                                                     t.e("icons.10"),
-                                                    t.e("icons.17"),
-                                                    t.e("icons.9"),
-                                                    t.e("icons.23"),
+                                                    t.e("icons.20"),
+                                                    t.e("icons.14"),
+                                                    t.e("icons.11"),
                                                     t.e("modules.common-e907d115"),
                                                     t.e("modules.common-e019dbda"),
-                                                    t.e("icons.22"),
                                                     t.e("icons.24"),
-                                                    t.e("icons.25"),
-                                                    t.e("icons.14"),
-                                                    t.e("icons.13"),
+                                                    t.e("icons.16"),
+                                                    t.e("icons.17"),
                                                     t.e("modules.audio-6107ac1a"),
                                                     t.e("modules.audio-b953418a"),
                                                     t.e("modules.audio-7c51e6a7"),
@@ -173,16 +172,17 @@
                                                     t.e("modules.audio-262c94d4"),
                                                     t.e("modules.audio-c6fe4ea4"),
                                                     t.e("icons.6"),
+                                                    t.e("icons.23"),
+                                                    t.e("icons.26"),
                                                     t.e("icons.3"),
-                                                    t.e("icons.4"),
-                                                    t.e("icons.1"),
+                                                    t.e("icons.8"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -236,17 +236,17 @@
                     },
                     subscribeToScheduledSpaceById(a) {
                         const t = "subscribeToScheduledSpaceById";
-                        return e.graphQL(I(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
+                        return e.graphQL(I(), { id: a }, R(t, a)).catch(C(t)).then(z(t));
                     },
                     unsubscribeFromScheduledSpaceById(a) {
                         const t = "unsubscribeFromScheduledSpaceById";
-                        return e.graphQL(S(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
+                        return e.graphQL(S(), { id: a }, R(t, a)).catch(C(t)).then(z(t));
                     },
                     fetchTopics: () => e.graphQL(T(), {}),
                     search(a, t) {
                         const o = "spacesSearch";
                         return e
-                            .graphQL(v(), { query: a, filter: t }, L(o, a))
+                            .graphQL(v(), { query: a, filter: t }, R(o, a))
                             .catch(C(o))
                             .then((e) =>
                                 e?.search_by_raw_query?.audio_spaces_grouped_by_section
@@ -270,8 +270,8 @@
                                     : { sections: [] },
                             );
                     },
-                    addSharing: (a, t) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: t } } }, L("addSharing", a)),
-                    deleteSharing: (a, t) => e.graphQL(g(), { audio_space_id: a, sharing_id: t }, L("deleteSharing", a)),
+                    addSharing: (a, t) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: t } } }, R("addSharing", a)),
+                    deleteSharing: (a, t) => e.graphQL(g(), { audio_space_id: a, sharing_id: t }, R("deleteSharing", a)),
                 }),
                 q = (e, a) => `GQL: AudioSpaces.${e} [${a}]`;
             function C(e) {
@@ -285,15 +285,15 @@
                     throw new Error(q(e, "404"));
                 };
             }
-            const R = (e, a) => !1;
-            function L(e, a, t = R) {
+            const L = (e, a) => !1;
+            function R(e, a, t = L) {
                 return function (r, i) {
                     let n = !1;
                     if (r.length) {
                         const [t] = r,
                             { code: i, message: s, path: d } = t;
                         let l;
-                        const c = V.find(({ matches: e }) => e(s));
+                        const c = U.find(({ matches: e }) => e(s));
                         if (c?.message) l = q(e, c.message);
                         else if (Array.isArray(d)) {
                             const a = d.map(Z).join(".");
@@ -307,7 +307,7 @@
             function Z(e) {
                 return "number" == typeof e ? "#" : e;
             }
-            const V = ["Overcapacity: Unspecified", "Timeout: Unspecified"].map((e) => ({ matches: (a) => a && e.toLowerCase() === a.toLowerCase(), message: e }));
+            const U = ["Overcapacity: Unspecified", "Timeout: Unspecified"].map((e) => ({ matches: (a) => a && e.toLowerCase() === a.toLowerCase(), message: e }));
         },
         787210: (e, a, t) => {
             "use strict";
@@ -459,7 +459,7 @@
                 return 1 + a.circleMinimumScale + o * (a.circleMaximumScale - a.circleMinimumScale);
             }
         },
-        503195: (e, a, t) => {
+        409600: (e, a, t) => {
             "use strict";
             t.r(a), t.d(a, { default: () => d });
             var o = t(202784),
@@ -468,7 +468,7 @@
                 n = t(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "#0f141a", strokeWidth: "2" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const d = s;
@@ -504,4 +504,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.8e7c369a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.c3d86bda.js.map

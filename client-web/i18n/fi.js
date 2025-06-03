@@ -3575,7 +3575,7 @@
                 e("hbe4f99e", "Heippa! Olisipa hauska päästä jakamaan salaisuuksiani sinulle ja tutustua paremmin :)"),
                 e("fb278c82", "Mikä esittelyn idea on?"),
                 e("j6cab6ec", "Ennen kuin ihmiset ryhtyvät Tilaajiksesi, he näkevät tämän. Tee muokkauksia kuvauksiin, kunnes ne tuntuvat omilta."),
-                e("i22beaa4", "Datan hyödyntäminen"),
+                e("f2b1e83e", "Grok & Third-Party Collaborators"),
                 e("e110a46c", "Poista keskusteluhistoria"),
                 e("ebc4fda0", "Olet poistamassa Grok-keskusteluhistoriasi. Et tämän jälkeen pääse enää näihin keskusteluihin."),
                 e("c90fe716", "Haluatko poistaa käymäsi keskustelut?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.67fc857a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.87bcf3ca.js.map

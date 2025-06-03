@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ExtendedUserProfile"],
+    ["bundle.ExtendedUserProfile", "icons/IconPlusCircle-js"],
     {
         163015: (e, t, l) => {
             l.d(t, { Z: () => s });
@@ -57,22 +57,22 @@
                 };
             var y = l(301503),
                 k = l(989272),
-                f = l(524496),
-                b = l(925873),
+                b = l(524496),
+                f = l(925873),
                 E = l(731708),
-                _ = l(757483),
-                h = l(187669),
+                h = l(757483),
+                _ = l(187669),
                 Z = l(478414),
-                F = l(949626);
-            const v = ({ content: e }) => (
-                    (0, h.q)(() => {
+                v = l(949626);
+            const F = ({ content: e }) => (
+                    (0, _.q)(() => {
                         (0, k.fH)((0, Z.yW)(Z.Hx, Z.K), Z.Hx);
                     }),
-                    n.createElement(n.Fragment, null, e && e.hasText() && n.createElement(F.Z, { className: Z.Hx }, n.createElement(r.Z, { style: x.richText }, n.createElement(f.Z, { contentState: (0, y.convertToRaw)(e) }))))
+                    n.createElement(n.Fragment, null, e && e.hasText() && n.createElement(v.Z, { className: Z.Hx }, n.createElement(r.Z, { style: x.richText }, n.createElement(b.Z, { contentState: (0, y.convertToRaw)(e) }))))
                 ),
                 x = a.default.create((e) => {
-                    const t = _.Z.hexToCss(e.colors.gray0, 0),
-                        l = _.Z.hexToCss(e.colors.gray0, 0.9);
+                    const t = h.Z.hexToCss(e.colors.gray0, 0),
+                        l = h.Z.hexToCss(e.colors.gray0, 0.9);
                     return { richText: { color: e.colors.text }, link: { cursor: "pointer", marginTop: e.spaces.space8 }, previewContainer: { overflow: "hidden" }, fade: { position: "absolute", top: "50%", bottom: 0, start: `-${e.spaces.space16}`, end: `-${e.spaces.space16}`, backgroundImage: e.highContrastEnabled ? void 0 : `linear-gradient(to bottom, ${t}, ${l})` } };
                 }),
                 I = ({ content: e, previewHeight: t, shouldTruncate: l = !0 }) => {
@@ -84,7 +84,7 @@
                         d.current && 0 === a && s(d.current.offsetHeight);
                     }, [a]);
                     const m = n.useMemo(() => {
-                            const t = b.Z.getContentStateFromRaw(e);
+                            const t = f.Z.getContentStateFromRaw(e);
                             return t ? (0, y.convertFromRaw)(t) : null;
                         }, [e]),
                         p = n.useMemo(() => l && a > t, [l, t, a]);
@@ -101,7 +101,7 @@
                                       ref: d,
                                       style: p && !c ? { ...x.previewContainer, maxHeight: t } : void 0,
                                   },
-                                  n.createElement(v, { content: m }),
+                                  n.createElement(F, { content: m }),
                                   p && !c ? n.createElement(r.Z, { style: x.fade }) : null,
                               ),
                               p && n.createElement(E.ZP, { color: "link", onPress: () => u(!c), size: "subtext1", style: x.link, withInteractiveStyling: !0 }, c ? "Show less" : "Show more"),
@@ -191,15 +191,15 @@
                 k = ({ onCompleted: e, useIconButton: t }) => {
                     const { blockCount: l, sectionQueryId: s } = (0, u.eF)(),
                         { blockId: i, blockQueryId: o } = (0, u._L)(),
-                        { userId: k, userQueryId: f } = (0, u.se)(),
-                        [b, E] = n.useState(!1),
-                        _ = n.useCallback(() => {
+                        { userId: k, userQueryId: b } = (0, u.se)(),
+                        [f, E] = n.useState(!1),
+                        h = n.useCallback(() => {
                             E(!1);
                         }, []),
-                        h = n.useCallback(() => {
+                        _ = n.useCallback(() => {
                             E(!0);
                         }, []);
-                    return n.createElement(n.Fragment, null, t ? n.createElement(r.Z, { style: y.iconButton }, n.createElement(a.ZP, { disabled: !i || !k, icon: n.createElement(c.default, null), onClick: h, size: "xSmall", type: "destructiveText" })) : n.createElement(a.ZP, { disabled: !i || !k, onClick: h, size: "large", type: "destructiveText" }, g), b && i && k ? n.createElement(d.Z, { blockId: i, headline: m, onClose: _, onCompleted: e, queryId: l > 1 ? o : s || f, subtext: p, userId: k }) : null);
+                    return n.createElement(n.Fragment, null, t ? n.createElement(r.Z, { style: y.iconButton }, n.createElement(a.ZP, { disabled: !i || !k, icon: n.createElement(c.default, null), onClick: _, size: "xSmall", type: "destructiveText" })) : n.createElement(a.ZP, { disabled: !i || !k, onClick: _, size: "large", type: "destructiveText" }, g), f && i && k ? n.createElement(d.Z, { blockId: i, headline: m, onClose: h, onCompleted: e, queryId: l > 1 ? o : s || b, subtext: p, userId: k }) : null);
                 };
         },
         485822: (e, t, l) => {
@@ -219,11 +219,11 @@
                 g = l(982866),
                 y = l(952793),
                 k = l(462166),
-                f = l(873302),
-                b = l(96702),
+                b = l(873302),
+                f = l(96702),
                 E = l(991617),
-                _ = l(736993);
-            const h = p().b721eb38,
+                h = l(736993);
+            const _ = p().b721eb38,
                 Z = ({ blocks: e, isEditing: t = !1 }) => {
                     const { sectionId: l, sectionVisibility: a } = (0, E.eF)(),
                         { userId: s, userQueryId: m } = (0, E.se)(),
@@ -231,20 +231,20 @@
                         Z = n.useCallback(() => {
                             p.push("/settings/bio/new/about");
                         }, [p]),
-                        v = (0, y.hC)("xprofile_section_visibility_enabled"),
+                        F = (0, y.hC)("xprofile_section_visibility_enabled"),
                         x = o.Z.generate({ backgroundColor: "transparent", color: c.default.theme.colors.text });
                     if (!t && !e?.length) return null;
                     const I = s === m,
-                        S = (0, f.Kh)(e?.slice(), k.GL);
-                    return n.createElement(r.Z, { style: F.root }, n.createElement(r.Z, { style: F.header }, n.createElement(u.ZP, { size: "title4", weight: "bold" }, h), v && I && n.createElement(u.ZP, { hoverLabel: { label: (0, _.Q)(a) } }, n.createElement(_.K3, { style: F.visibilityIcon, visibility: a })), v && t && n.createElement(_.ZP, { currentVisibility: a, sectionId: l })), n.createElement(r.Z, null, e?.length ? n.createElement(b.Z, { blocks: S, isEditing: t }) : n.createElement(n.Fragment, null, t ? n.createElement(d.Z, { interactiveStyles: x, onClick: Z, style: F.container }, n.createElement(u.ZP, null, "Tell us about yourself"), n.createElement(g.default, null)) : null)));
+                        S = (0, b.Kh)(e?.slice(), k.GL);
+                    return n.createElement(r.Z, { style: v.root }, n.createElement(r.Z, { style: v.header }, n.createElement(u.ZP, { size: "title4", weight: "bold" }, _), F && I && n.createElement(u.ZP, { hoverLabel: { label: (0, h.Q)(a) } }, n.createElement(h.K3, { style: v.visibilityIcon, visibility: a })), F && t && n.createElement(h.ZP, { currentVisibility: a, sectionId: l })), n.createElement(r.Z, null, e?.length ? n.createElement(f.Z, { blocks: S, isEditing: t }) : n.createElement(n.Fragment, null, t ? n.createElement(d.Z, { interactiveStyles: x, onClick: Z, style: v.container }, n.createElement(u.ZP, null, "Tell us about yourself"), n.createElement(g.default, null)) : null)));
                 },
-                F = c.default.create((e) => ({ root: { padding: e.spaces.space16, gap: e.spaces.space8 }, container: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium, padding: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, visibilityIcon: { color: e.colors.gray600 } })),
-                v = ({ isEditing: e = !1, section: t }) => {
+                v = c.default.create((e) => ({ root: { padding: e.spaces.space16, gap: e.spaces.space8 }, container: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium, padding: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, visibilityIcon: { color: e.colors.gray600 } })),
+                F = ({ isEditing: e = !1, section: t }) => {
                     const l = s()(k.C_, t),
                         r = l?.result?.profile_blocks?.items_results;
                     return l?.result?.id ? n.createElement(Z, { blocks: r, isEditing: e }) : null;
                 },
-                x = ({ isEditing: e = !1, section: t }) => (t && t.id ? n.createElement(v, { isEditing: e, section: t }) : n.createElement(Z, { isEditing: e }));
+                x = ({ isEditing: e = !1, section: t }) => (t && t.id ? n.createElement(F, { isEditing: e, section: t }) : n.createElement(Z, { isEditing: e }));
         },
         164349: (e, t, l) => {
             l.d(t, { Z: () => x });
@@ -263,11 +263,11 @@
                 g = l(982866),
                 y = l(952793),
                 k = l(462166),
-                f = l(873302),
-                b = l(96702),
+                b = l(873302),
+                f = l(96702),
                 E = l(991617),
-                _ = l(736993);
-            const h = p().a622dfcc,
+                h = l(736993);
+            const _ = p().a622dfcc,
                 Z = ({ blocks: e, isEditing: t = !1 }) => {
                     const { sectionId: l, sectionVisibility: a } = (0, E.eF)(),
                         { userId: s, userQueryId: m } = (0, E.se)(),
@@ -275,24 +275,24 @@
                         Z = n.useCallback(() => {
                             l ? p.push(`/settings/bio/new/${l}/work_experience`) : p.push("/settings/bio/new/work_experience");
                         }, [p, l]),
-                        v = (0, y.hC)("xprofile_section_visibility_enabled"),
+                        F = (0, y.hC)("xprofile_section_visibility_enabled"),
                         x = o.Z.generate({ backgroundColor: "transparent", color: c.default.theme.colors.text });
                     if (!t && !e?.length) return null;
                     const I = s === m,
-                        S = (0, f.Kh)(e?.slice(), k.lw),
-                        w = (0, f.s1)(S);
-                    return n.createElement(r.Z, { style: F.root }, n.createElement(r.Z, { style: F.headerSection }, n.createElement(u.ZP, { size: "title4", weight: "bold" }, h), v && I && n.createElement(u.ZP, { hoverLabel: { label: (0, _.Q)(a) } }, n.createElement(_.K3, { style: F.visibilityIcon, visibility: a })), v && t && n.createElement(_.ZP, { currentVisibility: a, sectionId: l })), n.createElement(r.Z, { style: F.blocksList }, w && w.length > 0 ? n.createElement(b.Z, { blocks: w, isEditing: t }) : null, n.createElement(n.Fragment, null, t ? n.createElement(d.Z, { interactiveStyles: x, onClick: Z, style: F.container }, n.createElement(u.ZP, null, "Add experience"), n.createElement(g.default, null)) : null)));
+                        S = (0, b.Kh)(e?.slice(), k.lw),
+                        w = (0, b.s1)(S);
+                    return n.createElement(r.Z, { style: v.root }, n.createElement(r.Z, { style: v.headerSection }, n.createElement(u.ZP, { size: "title4", weight: "bold" }, _), F && I && n.createElement(u.ZP, { hoverLabel: { label: (0, h.Q)(a) } }, n.createElement(h.K3, { style: v.visibilityIcon, visibility: a })), F && t && n.createElement(h.ZP, { currentVisibility: a, sectionId: l })), n.createElement(r.Z, { style: v.blocksList }, w && w.length > 0 ? n.createElement(f.Z, { blocks: w, isEditing: t }) : null, n.createElement(n.Fragment, null, t ? n.createElement(d.Z, { interactiveStyles: x, onClick: Z, style: v.container }, n.createElement(u.ZP, null, "Add experience"), n.createElement(g.default, null)) : null)));
                 },
-                F = c.default.create((e) => ({ root: { padding: e.spaces.space16, gap: e.spaces.space8 }, container: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium, padding: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, headerSection: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, blocksList: { gap: e.spaces.space8 }, visibilityIcon: { color: e.colors.gray600 } })),
-                v = ({ isEditing: e = !1, section: t }) => {
+                v = c.default.create((e) => ({ root: { padding: e.spaces.space16, gap: e.spaces.space8 }, container: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium, padding: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, headerSection: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, blocksList: { gap: e.spaces.space8 }, visibilityIcon: { color: e.colors.gray600 } })),
+                F = ({ isEditing: e = !1, section: t }) => {
                     const l = s()(k.C_, t),
                         r = l?.result?.profile_blocks?.items_results;
                     return l?.result?.id ? n.createElement(Z, { blocks: r, isEditing: e }) : null;
                 },
-                x = ({ isEditing: e = !1, section: t }) => (t && t.id ? n.createElement(v, { isEditing: e, section: t }) : n.createElement(Z, { isEditing: e }));
+                x = ({ isEditing: e = !1, section: t }) => (t && t.id ? n.createElement(F, { isEditing: e, section: t }) : n.createElement(Z, { isEditing: e }));
         },
         736993: (e, t, l) => {
-            l.d(t, { K3: () => _, Q: () => F, ZP: () => v });
+            l.d(t, { K3: () => h, Q: () => v, ZP: () => F });
             var n = l(163015),
                 r = l(202784),
                 a = l(400752),
@@ -307,33 +307,33 @@
                 g = l.n(p),
                 y = l(14284),
                 k = l(468670),
-                f = l(520385),
-                b = l(991617);
+                b = l(520385),
+                f = l(991617);
             const E = n.Z,
-                _ = ({ style: e, visibility: t }) => (t === f.pR.PUBLIC ? r.createElement(y.default, { style: e }) : t === f.pR.PRIVATE ? r.createElement(k.default, { style: e }) : void r.Fragment),
-                h = g().baffe39a,
+                h = ({ style: e, visibility: t }) => (t === b.pR.PUBLIC ? r.createElement(y.default, { style: e }) : t === b.pR.PRIVATE ? r.createElement(k.default, { style: e }) : void r.Fragment),
+                _ = g().baffe39a,
                 Z = g().je07e266,
-                F = (e) => (e === f.pR.PUBLIC ? h : e === f.pR.PRIVATE ? Z : ""),
-                v = ({ currentVisibility: e, sectionId: t }) => {
-                    const l = (0, a.b9)(b.j7),
-                        [n, i] = r.useState(e ?? f.pR.PUBLIC),
+                v = (e) => (e === b.pR.PUBLIC ? _ : e === b.pR.PRIVATE ? Z : ""),
+                F = ({ currentVisibility: e, sectionId: t }) => {
+                    const l = (0, a.b9)(f.j7),
+                        [n, i] = r.useState(e ?? b.pR.PUBLIC),
                         [m, p] = r.useState(!1),
-                        [h] = o()(E),
+                        [_] = o()(E),
                         Z = r.useCallback(
                             (e) => {
                                 t &&
                                     (i(e),
                                     p(!1),
-                                    h({
+                                    _({
                                         variables: { sectionId: t, visibility: e },
                                         onCompleted: () => {
                                             l(!0);
                                         },
                                     }));
                             },
-                            [h, t, l],
+                            [_, t, l],
                         );
-                    return r.createElement(s.Z, null, r.createElement(s.Z, { onClick: () => p(!0), style: x.target }, r.createElement(_, { style: x.icon, visibility: n }), r.createElement(c.ZP, { style: x.targetText }, F(n))), m && r.createElement(u.default, { isFixed: !0, onDismiss: () => p(!1), preferredHorizontalOrientation: "right", preferredVerticalOrientation: "down" }, r.createElement(d.Z, { Icon: y.default, actionText: g().baffe39a, onClick: () => Z(f.pR.PUBLIC) }), r.createElement(d.Z, { Icon: k.default, actionText: g().je07e266, onClick: () => Z(f.pR.PRIVATE) })));
+                    return r.createElement(s.Z, null, r.createElement(s.Z, { onClick: () => p(!0), style: x.target }, r.createElement(h, { style: x.icon, visibility: n }), r.createElement(c.ZP, { style: x.targetText }, v(n))), m && r.createElement(u.default, { isFixed: !0, onDismiss: () => p(!1), preferredHorizontalOrientation: "right", preferredVerticalOrientation: "down" }, r.createElement(d.Z, { Icon: y.default, actionText: g().baffe39a, onClick: () => Z(b.pR.PUBLIC) }), r.createElement(d.Z, { Icon: k.default, actionText: g().je07e266, onClick: () => Z(b.pR.PRIVATE) })));
                 },
                 x = m.default.create((e) => ({ target: { flex: 1, flexDirection: "row", alignItems: "center", gap: e.spaces.space4, cursor: "pointer" }, targetText: { marginStart: e.spaces.space2, marginEnd: e.spaces.space8, color: e.colors.link }, icon: { color: e.colors.link } }));
         },
@@ -598,7 +598,7 @@
             const g = o().j7bb1a43,
                 y = o().h63a5c3c,
                 k = n.createElement(c.default, null),
-                f = ({ onClose: e, user: t }) => {
+                b = ({ onClose: e, user: t }) => {
                     const l = (0, p.z)(),
                         s = (0, r.useHistory)(),
                         { featureSwitches: i } = (0, d.QZ)(),
@@ -618,12 +618,12 @@
                         });
                     return n.createElement(a.Z, { items: [o()], onCloseRequested: e });
                 },
-                b = ({ user: e }) => {
-                    const t = n.useCallback((t) => n.createElement(f, { onClose: t, user: e }), [e]),
+                f = ({ user: e }) => {
+                    const t = n.useCallback((t) => n.createElement(b, { onClose: t, user: e }), [e]),
                         l = n.useMemo(() => ({ label: y }), []);
                     return n.createElement(s.ZP, { "aria-label": y, hoverLabel: l, icon: k, renderMenu: t, type: "primaryOutlined" });
                 },
-                E = n.memo(b);
+                E = n.memo(f);
         },
         695431: (e, t, l) => {
             l.d(t, { Z: () => m });
@@ -657,14 +657,14 @@
                 g = l(238225),
                 y = l(535338),
                 k = l(416699),
-                f = l(484163),
-                b = l(972796),
+                b = l(484163),
+                f = l(972796),
                 E = l(21437),
-                _ = l(220544),
-                h = l(695431),
+                h = l(220544),
+                _ = l(695431),
                 Z = l(990229),
-                F = (l(571372), l(301503)),
-                v = l(325686),
+                v = (l(571372), l(301503)),
+                F = l(325686),
                 x = l(277660),
                 I = l.n(x),
                 S = l(989272),
@@ -689,7 +689,7 @@
                         (0, C.q)(() => {
                             (0, S.fH)((0, B.yW)(B.Hx, B.K), B.Hx);
                         }),
-                        r.createElement(v.Z, { style: K.root }, a && (0, F.convertFromRaw)(a).hasText() ? r.createElement(T.Z, { className: B.Hx }, r.createElement(v.Z, { style: K.richText }, r.createElement(w.Z, { contentState: a, paragraphFontSizeOverride: B.K.paragraphFontSize }))) : null)
+                        r.createElement(F.Z, { style: K.root }, a && (0, v.convertFromRaw)(a).hasText() ? r.createElement(T.Z, { className: B.Hx }, r.createElement(F.Z, { style: K.richText }, r.createElement(w.Z, { contentState: a, paragraphFontSizeOverride: B.K.paragraphFontSize }))) : null)
                     );
                 },
                 K = P.default.create((e) => ({ root: { paddingVertical: e.spaces.space20 }, flexRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16 }, flexCol: { display: "flex", flexDirection: "column" }, flexOne: { flex: 1 }, avatar: { width: 90, height: 90 }, richText: { color: e.colors.text, padding: e.spaces.space16 } })),
@@ -712,13 +712,13 @@
                     return t && a ? r.createElement(M, (0, n.Z)({ hasProfileBlocks: s, profileBlocksRef: a }, e)) : null;
                 },
                 H = { context: "EXTENDED_USER_PROFILE" },
-                U = (0, h.Z)((e) => {
+                U = (0, _.Z)((e) => {
                     const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: l, isNotFound: n, isSuspended: a, screenName: s, suspendMessage: i, user: o, viewerUserId: c } = e;
                     return (
                         r.useEffect(() => {
                             s && l(s).catch(t(m.F));
                         }, [t, l, s]),
-                        s && o ? (a ? r.createElement(_.i, { screenName: s, suspendMessage: i }) : o.blocked_by ? r.createElement(b.T, { screenName: s }) : !o.protected || (o && c === o.id_str) || o.following ? (n ? r.createElement(f.Y, { screenName: s }) : r.createElement(d.H, { errorConfig: H }, r.createElement(D, e))) : r.createElement(E.X, { screenName: s })) : null
+                        s && o ? (a ? r.createElement(h.i, { screenName: s, suspendMessage: i }) : o.blocked_by ? r.createElement(f.T, { screenName: s }) : !o.protected || (o && c === o.id_str) || o.following ? (n ? r.createElement(b.Y, { screenName: s }) : r.createElement(d.H, { errorConfig: H }, r.createElement(D, e))) : r.createElement(E.X, { screenName: s })) : null
                     );
                 });
         },
@@ -738,14 +738,14 @@
                 g = l(485822),
                 y = l(164349),
                 k = l(252021),
-                f = l(736063),
-                b = l(666670),
+                b = l(736063),
+                f = l(666670),
                 E = l(72130),
-                _ = l(520385),
-                h = l(462166),
+                h = l(520385),
+                _ = l(462166),
                 Z = l(873302),
-                F = l(535338),
-                v = l(416699),
+                v = l(535338),
+                F = l(416699),
                 x = l(484163),
                 I = l(972796),
                 S = l(21437),
@@ -756,24 +756,24 @@
                     r.useEffect(() => {
                         i?.id_str && e.scribe({ ...(0, E.Zi)(i?.id_str, { version: 2 }) });
                     }, [e, i?.id_str]);
-                    const f = t?.result?.profile_sections?.items_results,
-                        b = (0, Z.uR)(f, _.NB.ABOUT),
-                        h = (0, Z.uR)(f, _.NB.WORK_EXPERIENCE),
-                        F = (0, Z.hW)(b),
-                        x = (0, Z.hW)(h),
+                    const b = t?.result?.profile_sections?.items_results,
+                        f = (0, Z.uR)(b, h.NB.ABOUT),
+                        _ = (0, Z.uR)(b, h.NB.WORK_EXPERIENCE),
+                        v = (0, Z.hW)(f),
+                        x = (0, Z.hW)(_),
                         I = r.useCallback(() => {
                             e.scribe({ ...(0, E.he)({ version: 2 }) });
                         }, [e]);
-                    return r.createElement(k.Z, { backLocation: `/${s}`, history: n, primaryContent: i ? (l ? r.createElement(a.Z, { style: B.root }, r.createElement(d.Fo.Provider, { value: { userId: c, userQueryId: i.id_str } }, r.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: F, hasWorkHistorySection: x, sectionId: b?.rest_id?.section_id, sectionType: _.NB.ABOUT, blockCount: b?.result?.profile_blocks?.total_count || 0, sectionQueryId: b?.id, sectionVisibility: b?.result?.core?.visibility } }, r.createElement(g.Z, { isEditing: !1, section: b })), r.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: F, hasWorkHistorySection: x, sectionId: h?.rest_id?.section_id, sectionType: _.NB.WORK_EXPERIENCE, blockCount: h?.result?.profile_blocks?.total_count || 0, sectionQueryId: h?.id, sectionVisibility: h?.result?.core?.visibility } }, r.createElement(y.Z, { isEditing: !1, section: h })))) : r.createElement(v.Z, { header: "This user does not have an expanded bio", message: "Try searching for another.", screenName: s })) : null, rightControl: i?.id_str === c ? r.createElement(o.ZP, { link: "/settings/bio", onClick: I, size: "xSmall", type: "primaryOutlined" }, "Edit") : i ? r.createElement(C.Z, { user: i }) : null, sidebarContent: r.createElement(u.Z, null), subtitle: `@${s}`, title: (0, m.Z)(i), titleIconCell: (0, p.Z)(i) });
+                    return r.createElement(k.Z, { backLocation: `/${s}`, history: n, primaryContent: i ? (l ? r.createElement(a.Z, { style: B.root }, r.createElement(d.Fo.Provider, { value: { userId: c, userQueryId: i.id_str } }, r.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: v, hasWorkHistorySection: x, sectionId: f?.rest_id?.section_id, sectionType: h.NB.ABOUT, blockCount: f?.result?.profile_blocks?.total_count || 0, sectionQueryId: f?.id, sectionVisibility: f?.result?.core?.visibility } }, r.createElement(g.Z, { isEditing: !1, section: f })), r.createElement(d.bQ.Provider, { value: { ...d.Y_, hasAboutSection: v, hasWorkHistorySection: x, sectionId: _?.rest_id?.section_id, sectionType: h.NB.WORK_EXPERIENCE, blockCount: _?.result?.profile_blocks?.total_count || 0, sectionQueryId: _?.id, sectionVisibility: _?.result?.core?.visibility } }, r.createElement(y.Z, { isEditing: !1, section: _ })))) : r.createElement(F.Z, { header: "This user does not have an expanded bio", message: "Try searching for another.", screenName: s })) : null, rightControl: i?.id_str === c ? r.createElement(o.ZP, { link: "/settings/bio", onClick: I, size: "xSmall", type: "primaryOutlined" }, "Edit") : i ? r.createElement(C.Z, { user: i }) : null, sidebarContent: r.createElement(u.Z, null), subtitle: `@${s}`, title: (0, m.Z)(i), titleIconCell: (0, p.Z)(i) });
                 },
                 B = c.default.create((e) => ({ root: { marginBottom: e.componentDimensions.appBarHeightPx } })),
                 N = ({ expandedProfile: e, hasProfileBlocks: t, ...l }) => {
-                    const a = i()(h.cH, e);
+                    const a = i()(_.cH, e);
                     return a ? r.createElement(T, (0, n.Z)({ expandedProfile: a, hasProfileBlocks: t }, l)) : null;
                 },
                 R = (e) => {
                     const { screenName: t } = e,
-                        { user_result_by_screen_name: l } = (0, F.p)(h.Sp, { screenName: t }),
+                        { user_result_by_screen_name: l } = (0, v.p)(_.Sp, { screenName: t }),
                         a = !!l?.result?.has_profile_blocks,
                         s = l?.result?.expanded_profile_results;
                     return t && s ? r.createElement(N, (0, n.Z)({ expandedProfile: s, hasProfileBlocks: a }, e)) : null;
@@ -783,9 +783,9 @@
                     const { createLocalApiErrorHandler: t, fetchOneUserByScreenNameIfNeeded: l, isNotFound: n, isSuspended: a, screenName: s, suspendMessage: i, user: o, viewerUserId: c } = e;
                     return (
                         r.useEffect(() => {
-                            s && l(s).catch(t(b.F));
+                            s && l(s).catch(t(f.F));
                         }, [t, l, s]),
-                        s && o ? (a ? r.createElement(w.i, { screenName: s, suspendMessage: i }) : o.blocked_by ? r.createElement(I.T, { screenName: s }) : !o.protected || (o && c === o.id_str) || o.following ? (n ? r.createElement(x.Y, { screenName: s }) : r.createElement(f.H, { errorConfig: K }, r.createElement(R, e))) : r.createElement(S.X, { screenName: s })) : null
+                        s && o ? (a ? r.createElement(w.i, { screenName: s, suspendMessage: i }) : o.blocked_by ? r.createElement(I.T, { screenName: s }) : !o.protected || (o && c === o.id_str) || o.following ? (n ? r.createElement(x.Y, { screenName: s }) : r.createElement(b.H, { errorConfig: K }, r.createElement(R, e))) : r.createElement(S.X, { screenName: s })) : null
                     );
                 });
         },
@@ -877,7 +877,7 @@
                 m = n.memo(d);
         },
         524496: (e, t, l) => {
-            l.d(t, { Z: () => _ });
+            l.d(t, { Z: () => h });
             l(136728);
             var n = l(202784),
                 r = l(301503),
@@ -893,29 +893,42 @@
                 g = l(786475),
                 y = l(392237),
                 k = l(135904);
-            const f = { [c.P7.atomic]: { element: "section" }, [c.P7.header1]: { element: "h1", wrapper: n.createElement(o.ZP, null) }, [c.P7.header2]: { element: "h2", wrapper: n.createElement(o.ZP, null) } },
-                b = (0, s.Z)(f).reduce((e, [t, l]) => e.set(t, l), r.DefaultDraftBlockRenderMap);
+            const b = { [c.P7.atomic]: { element: "section" }, [c.P7.header1]: { element: "h1", wrapper: n.createElement(o.ZP, null) }, [c.P7.header2]: { element: "h2", wrapper: n.createElement(o.ZP, null) } },
+                f = (0, s.Z)(b).reduce((e, [t, l]) => e.set(t, l), r.DefaultDraftBlockRenderMap);
             let E = !1;
-            const _ = n.memo(function (e) {
+            const h = n.memo(function (e) {
                     const { componentByType: t, contentState: l, onScribeEvent: s, paragraphFontSizeOverride: o } = e;
                     n.useEffect(() => {
                         E || (d.fH(k.c, k.n), (E = !0));
                     }, []);
                     const y = [(0, p.ez)(s, o), p.aF, p.RU];
                     e.disable_entityLinkDecorator || y.push((0, p.NA)(s, o));
-                    const f = m.Z.initEditorState(l, { decorators: y });
-                    let _ = i.Z;
+                    const b = m.Z.initEditorState(l, { decorators: y });
+                    let h = i.Z;
                     return (
                         t &&
-                            (_ = (e) => {
+                            (h = (e) => {
                                 const l = e.getType();
                                 return t[l] || null;
                             }),
-                        n.createElement(u.ZP, null, ({ containerWidth: e }) => n.createElement(a.Z, { style: h.fontFamily }, n.createElement(r.Editor, { blockRenderMap: b, blockRendererFn: _, blockStyleFn: (0, c.su)(g.Z.isNarrowScreenWidth(e)), editorState: f, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        n.createElement(u.ZP, null, ({ containerWidth: e }) => n.createElement(a.Z, { style: _.fontFamily }, n.createElement(r.Editor, { blockRenderMap: f, blockRendererFn: h, blockStyleFn: (0, c.su)(g.Z.isNarrowScreenWidth(e)), editorState: b, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                h = y.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                _ = y.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+        },
+        982866: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => o });
+            var n = l(202784),
+                r = l(890601),
+                a = l(783427),
+                s = l(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25s3.69 8.25 8.25 8.25 8.25-3.69 8.25-8.25S16.56 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12zM11 11V8h2v3h3v2h-3v3h-2v-3H8v-2h3z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExtendedUserProfile.0240f02a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExtendedUserProfile.7cccdf0a.js.map

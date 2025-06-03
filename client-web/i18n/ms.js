@@ -3574,7 +3574,7 @@
                 i("hbe4f99e", "Hei di sana! Saya tidak sabar untuk berkongsi beberapa kandungan rahsia dan mengenali anda dengan lebih baik :)"),
                 i("fb278c82", "Apakah pratonton ini?"),
                 i("j6cab6ec", "Ini perkara yang orang lihat sebelum mereka mendaftar Langganan anda. Ubah suai dan edit perihalan anda sehingga menjadi seperti yang anda mahu."),
-                i("i22beaa4", "Perkongsian Data"),
+                i("f2b1e83e", "Grok & Third-Party Collaborators"),
                 i("e110a46c", "Padam sejarah perbualan"),
                 i("ebc4fda0", "Anda akan memadamkan sejarah perbualan Grok anda. Anda tidak akan dapat mengakses perbualan ini lagi."),
                 i("c90fe716", "Adakah anda ingin memadamkan perbualan anda?"),
@@ -13339,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.56947a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.0ebacb3a.js.map

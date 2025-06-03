@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose", "icons/IconEye-js"],
+    ["shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose"],
     {
         164918: (e) => {
             e.exports = { queryId: "QEMLEzEMzoPNbeauKCCLbg", operationName: "SetDefault", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -47,21 +47,21 @@
                 s = o(814142),
                 l = o.n(s),
                 d = o(903860),
-                g = o.n(d),
-                p = o(859096),
-                _ = o.n(p),
+                p = o.n(d),
+                g = o(859096),
+                _ = o.n(g),
                 m = o(356886),
                 y = o.n(m),
                 b = o(891742),
                 h = o.n(b),
-                E = o(39022),
-                A = o.n(E),
+                A = o(39022),
+                E = o.n(A),
                 f = o(720584),
                 k = o.n(f),
                 P = o(127498),
                 S = o.n(P),
-                v = o(959909),
-                w = o.n(v);
+                w = o(959909),
+                v = o.n(w);
             const C = ({ apiClient: e, featureSwitches: t }) => ({
                     getQuickPromoteEligibility: (t) =>
                         e.graphQL(S(), t).then((e) => {
@@ -69,7 +69,7 @@
                             return "Tweet" === t?.__typename ? t.quick_promote_eligibility?.eligibility : "TweetWithVisibilityResults" === t?.__typename ? t.tweet.quick_promote_eligibility?.eligibility : void 0;
                         }),
                     getCoupons: (t) =>
-                        e.graphQL(A(), t).then((e) => {
+                        e.graphQL(E(), t).then((e) => {
                             const t = e.viewer?.user_results?.result,
                                 o = "User" === t?.__typename ? t.professional?.quick_promote_coupons_v2 : void 0,
                                 r = (function (e) {
@@ -131,13 +131,13 @@
                     setDefaultPaymentMethod: (t) => e.graphQL(i(), t),
                     createPromotion: (t) => e.graphQL(k(), t),
                     enrollCoupon: (t) =>
-                        e.graphQL(w(), t).then((e) => {
+                        e.graphQL(v(), t).then((e) => {
                             const t = e.quick_promote_enroll_coupons;
                             return t?.available_balance && (t.available_balance = t.available_balance.map(({ currency_code: e, total_amount: t }) => ({ currency_code: e, total_amount: t ? t / 1e6 : 0 }))), t?.enrolled_coupon && t.enrolled_coupon.total_amount && (t.enrolled_coupon.total_amount = t.enrolled_coupon.total_amount / 1e6), t?.enrolled_coupon_v2 && t.enrolled_coupon_v2.spend_amount && (t.enrolled_coupon_v2.spend_amount = t.enrolled_coupon_v2.spend_amount / 1e6), t?.enrolled_coupon_v2 && t.enrolled_coupon_v2.credit_amount && (t.enrolled_coupon_v2.credit_amount = t.enrolled_coupon_v2.credit_amount / 1e6), e;
                         }),
                     getAdAccounts: (t) =>
                         e.graphQL(
-                            g(),
+                            p(),
                             t,
                             (0, n.kj)(() => !1, "GQL AdAccounts: Failed to fetch ad accounts"),
                         ),
@@ -156,7 +156,7 @@
         },
         852657: (e, t, o) => {
             "use strict";
-            o.d(t, { $L: () => d.$L, A_: () => le, Co: () => ve, DA: () => qe, DY: () => J, Dg: () => ie, E6: () => d.E6, Ek: () => d.Ek, Ik: () => Se, Jk: () => d.Jk, Ku: () => we, LK: () => d.LK, L_: () => W, P6: () => oe, PU: () => Ae, QE: () => j, Uc: () => ee, Um: () => Ee, WK: () => $, WS: () => d.WS, XJ: () => Y, Yv: () => ae, _B: () => fe, au: () => re, b2: () => ge, br: () => d.br, ch: () => de, e3: () => X, fN: () => d.fN, g_: () => me, gp: () => d.gp, hI: () => ce, hs: () => te, k6: () => ne, kb: () => d.kb, kn: () => ke, l$: () => se, mS: () => Ce, ni: () => pe, oA: () => he, oE: () => d.oE, oo: () => H, pY: () => be, p_: () => _e, qA: () => Pe, qL: () => d.qL, rS: () => ye, rb: () => Te, sN: () => d.sN, yW: () => d.c7, zu: () => ue });
+            o.d(t, { $L: () => d.$L, A_: () => le, Co: () => we, DA: () => qe, DY: () => J, Dg: () => ie, E6: () => d.E6, Ek: () => d.Ek, Ik: () => Se, Jk: () => d.Jk, Ku: () => ve, LK: () => d.LK, L_: () => W, P6: () => oe, PU: () => Ee, QE: () => j, Uc: () => ee, Um: () => Ae, WK: () => $, WS: () => d.WS, XJ: () => Y, Yv: () => ae, _B: () => fe, au: () => re, b2: () => pe, br: () => d.br, ch: () => de, e3: () => X, fN: () => d.fN, g_: () => me, gp: () => d.gp, hI: () => ce, hs: () => te, k6: () => ne, kb: () => d.kb, kn: () => ke, l$: () => se, mS: () => Ce, ni: () => ge, oA: () => he, oE: () => d.oE, oo: () => H, pY: () => be, p_: () => _e, qA: () => Pe, qL: () => d.qL, rS: () => ye, rb: () => Te, sN: () => d.sN, yW: () => d.c7, zu: () => ue });
             var r = o(744531),
                 n = o(401388),
                 a = o(321099),
@@ -166,21 +166,21 @@
                 s = o(390387),
                 l = o(315032),
                 d = o(813604);
-            const g = { account: { adsAccount: null, accountDataFetchStatus: u.ZP.NONE, fundingInstruments: [], selectedFundingInstrument: null, campaigns: null }, targeting: { initialTargetedLocationsFetchStatus: u.ZP.NONE, targetedLocations: [], locationQuery: "", ageBucket: l.s.AGE_OVER_18, gender: l.Y0.Any, keywords: [], contextualKeywords: [] }, budget: { errorMessage: null, dailyBudget: 100, durationDays: 5, availableBudgets: null, availableBudgetsFetchStatus: u.ZP.NONE, currency: null }, eligibility: {}, coupons: void 0, couponsFetchStatus: u.ZP.NONE, enrollCouponStatus: u.ZP.NONE, enrollCouponErrorCode: null, firstLoad: !1, paymentMethods: [], selectedPaymentMethod: null, paymentMethodsFetchStatus: u.ZP.NONE, promoteStatus: u.ZP.NONE, promoteErrorCode: null, objective: l.CH.Engagements },
-                p = "quickPromote",
+            const p = { account: { adsAccount: null, accountDataFetchStatus: u.ZP.NONE, fundingInstruments: [], selectedFundingInstrument: null, campaigns: null }, targeting: { initialTargetedLocationsFetchStatus: u.ZP.NONE, targetedLocations: [], locationQuery: "", ageBucket: l.s.AGE_OVER_18, gender: l.Y0.Any, keywords: [], contextualKeywords: [] }, budget: { errorMessage: null, dailyBudget: 100, durationDays: 5, availableBudgets: null, availableBudgetsFetchStatus: u.ZP.NONE, currency: null }, eligibility: {}, coupons: void 0, couponsFetchStatus: u.ZP.NONE, enrollCouponStatus: u.ZP.NONE, enrollCouponErrorCode: null, firstLoad: !1, paymentMethods: [], selectedPaymentMethod: null, paymentMethodsFetchStatus: u.ZP.NONE, promoteStatus: u.ZP.NONE, promoteErrorCode: null, objective: l.CH.Engagements },
+                g = "quickPromote",
                 _ = "rweb/quickPromote/reset",
                 m = "rweb/quickPromote/account/set",
                 y = "rweb/quickPromote/account/setAdsAccount",
                 b = "rweb/quickPromote/account/setFundingInstruments",
                 h = "rweb/quickPromote/account/setCampaigns",
-                E = "rweb/quickPromote/account/setSelectedFundingInstrument",
-                A = "rweb/quickPromote/account/setAccountDataFetchStatus",
+                A = "rweb/quickPromote/account/setSelectedFundingInstrument",
+                E = "rweb/quickPromote/account/setAccountDataFetchStatus",
                 f = "rweb/quickPromote/targeting/set",
                 k = "rweb/quickPromote/targeting/setLocationQuery",
                 P = "rweb/quickPromote/targeting/setInitialTargetedLocationsFetchStatus",
                 S = "rweb/quickPromote/targeting/setTargetedLocations",
-                v = "rweb/quickPromote/targeting/setTargetedAgeBucket",
-                w = "rweb/quickPromote/targeting/setTargetedGender",
+                w = "rweb/quickPromote/targeting/setTargetedAgeBucket",
+                v = "rweb/quickPromote/targeting/setTargetedGender",
                 C = "rweb/quickPromote/targeting/setTargetedKeywords",
                 q = "rweb/quickPromote/targeting/setTargetedContextualKeywords",
                 T = "rweb/quickPromote/budget/set",
@@ -240,16 +240,16 @@
                 te = (e) => ({ type: y, payload: { adsAccount: e } }),
                 oe = (e) => ({ type: h, payload: { campaigns: e } }),
                 re = (e) => ({ type: b, payload: { fundingInstruments: e } }),
-                ne = (e) => ({ type: E, payload: { selectedFundingInstrument: e } }),
-                ae = (e) => ({ type: A, payload: { fetchStatus: e } }),
+                ne = (e) => ({ type: A, payload: { selectedFundingInstrument: e } }),
+                ae = (e) => ({ type: E, payload: { fetchStatus: e } }),
                 ie = (e) => ({ type: P, payload: { fetchStatus: e } }),
                 ce = (e) => ({ type: S, payload: { targetedLocations: e } }),
                 ue = (e) => ({ type: k, payload: { locationQuery: e } }),
-                se = (e) => ({ type: v, payload: { ageBucket: e } }),
-                le = (e) => ({ type: w, payload: { gender: e } }),
+                se = (e) => ({ type: w, payload: { ageBucket: e } }),
+                le = (e) => ({ type: v, payload: { gender: e } }),
                 de = (e) => ({ type: q, payload: { contextualKeywords: e } }),
-                ge = (e) => ({ type: I, payload: { fetchStatus: e } }),
-                pe = (e, t) => ({ type: L, payload: { availableBudgets: e, currency: t } }),
+                pe = (e) => ({ type: I, payload: { fetchStatus: e } }),
+                ge = (e, t) => ({ type: L, payload: { availableBudgets: e, currency: t } }),
                 _e = (e) => ({ type: O, payload: { dailyBudget: e } }),
                 me = (e) => ({ type: D, payload: { durationDays: e } }),
                 ye = (e) => ({ type: G, payload: { errorMessage: e } }),
@@ -260,14 +260,14 @@
             function he() {
                 return { type: _ };
             }
-            const Ee = (e, t) => ({ type: F, payload: { eligibility: t, tweetId: e } }),
-                Ae = (e) => ({ type: B, payload: { fetchStatus: e } }),
+            const Ae = (e, t) => ({ type: F, payload: { eligibility: t, tweetId: e } }),
+                Ee = (e) => ({ type: B, payload: { fetchStatus: e } }),
                 fe = (e) => ({ type: M, payload: { coupons: e } }),
                 ke = (e) => ({ type: U, payload: { enrollCouponStatus: e } }),
                 Pe = (e) => ({ type: R, payload: { enrollCouponErrorCode: e } }),
                 Se = (e) => ({ type: Z, payload: { promoteFetchStatus: e } }),
-                ve = (e) => ({ type: x, payload: { promoteErrorCode: e } }),
-                we =
+                we = (e) => ({ type: x, payload: { promoteErrorCode: e } }),
+                ve =
                     (e) =>
                     (t, o, { api: r }) =>
                         (0, c._O)(t, { request: r.withEndpoint(a.Z).createPromotion, params: e })({ actionTypes: V, context: "FETCH_PROMOTE" }),
@@ -275,11 +275,11 @@
                 qe = (e) => ({ type: Q, payload: { paymentMethods: e } }),
                 Te = (e) => ({ type: z, payload: { fetchStatus: e } });
             i.Z.register({
-                [p]: (e = g, t) => {
+                [g]: (e = p, t) => {
                     if (!t) return e;
                     switch (t.type) {
                         case _:
-                            return g;
+                            return p;
                         case m:
                             if (t.payload) {
                                 const { account: o } = t.payload;
@@ -316,13 +316,13 @@
                                 return { ...e, account: { ...e.account, fundingInstruments: o } };
                             }
                             break;
-                        case E:
+                        case A:
                             if (t.payload) {
                                 const { selectedFundingInstrument: o } = t.payload;
                                 return { ...e, account: { ...e.account, selectedFundingInstrument: o } };
                             }
                             break;
-                        case A:
+                        case E:
                             if (t.payload) {
                                 const { fetchStatus: o } = t.payload;
                                 return { ...e, account: { ...e.account, accountDataFetchStatus: o } };
@@ -346,13 +346,13 @@
                                 return { ...e, targeting: { ...e.targeting, targetedLocations: o } };
                             }
                             break;
-                        case v:
+                        case w:
                             if (t.payload) {
                                 const { ageBucket: o } = t.payload;
                                 return { ...e, targeting: { ...e.targeting, ageBucket: o } };
                             }
                             break;
-                        case w:
+                        case v:
                             if (t.payload) {
                                 const { gender: o } = t.payload;
                                 return { ...e, targeting: { ...e.targeting, gender: o } };
@@ -513,19 +513,19 @@
                             .then(([e]) => [{ ...e, locations: e.locations.filter((e) => u.has(e.country_code)) }]),
                 });
             var d = o(321099),
-                g = o(163889),
-                p = o(323265);
+                p = o(163889),
+                g = o(323265);
             function _() {
-                const e = p.ZP.getTwitterAppVersion(),
-                    t = /TwitterAndroid/.test(p.ZP.userAgent);
+                const e = g.ZP.getTwitterAppVersion(),
+                    t = /TwitterAndroid/.test(g.ZP.userAgent);
                 return !!(!t && e && e.major >= 8 && e.minor >= 84) || !!(t && e && e.major >= 9 && e.minor >= 13) || !e;
             }
             var m = o(441408),
                 y = o(363895),
                 b = o(312771),
                 h = o(118717),
-                E = o(499627),
-                A = o(917799);
+                A = o(499627),
+                E = o(917799);
             const f = Object.freeze({});
             function k(e, t) {
                 const o = { REQUEST: `${(r = "rweb/ads/typeahead")}/${(n = e)}/REQUEST`, SUCCESS: `${r}/${n}/SUCCESS`, FAILURE: `${r}/${n}/FAILURE` };
@@ -537,7 +537,7 @@
                         (a, i, { api: c }) => {
                             const u = i().ads.typeahead[e][r];
                             if (u?.result) return Promise.resolve(u.result);
-                            return (0, A._O)(a, { request: t(c), params: n })({ actionTypes: o, context: `ADS_TYPEAHEAD_${e}`, meta: { query: r } });
+                            return (0, E._O)(a, { request: t(c), params: n })({ actionTypes: o, context: `ADS_TYPEAHEAD_${e}`, meta: { query: r } });
                         },
                     reducer: (e = f, t) => {
                         if (!t) return e;
@@ -568,12 +568,12 @@
             }
             const P = "ads",
                 S = k("targetingLocation", (e) => e.withEndpoint(l).getQueriedTargetableLocations),
-                v = k("forecastAudience", (e) => e.withEndpoint(d.Z).getAudienceEstimate),
-                w = k("forecastAudience", (e) => e.withEndpoint(d.Z).getBoostAudienceEstimate),
-                C = { targetingLocation: S.reducer, forecastAudience: v.reducer },
+                w = k("forecastAudience", (e) => e.withEndpoint(d.Z).getAudienceEstimate),
+                v = k("forecastAudience", (e) => e.withEndpoint(d.Z).getBoostAudienceEstimate),
+                C = { targetingLocation: S.reducer, forecastAudience: w.reducer },
                 q = { typeahead: (0, h.UY)(C) },
                 T = (0, h.UY)(q);
-            E.Z.register({ [P]: T });
+            A.Z.register({ [P]: T });
             var I = o(390387),
                 L = o(601576),
                 O = o(836255),
@@ -598,30 +598,30 @@
                                 session: { user_id: d },
                                 quickPromote: {
                                     targeting: {
-                                        ageBucket: g,
-                                        gender: p,
+                                        ageBucket: p,
+                                        gender: g,
                                         keywords: _,
                                         targetedLocations: [{ targeting_value: b }],
                                     },
-                                    budget: { currency: h, dailyBudget: E, durationDays: A },
+                                    budget: { currency: h, dailyBudget: A, durationDays: E },
                                     account: { selectedFundingInstrument: f },
                                     objective: k,
                                     coupons: P,
                                 },
                             } = c(),
                             S = c().quickPromote.account.adsAccount?.country_code,
-                            v = c().quickPromote.account.adsAccount?.id,
-                            w = f?.id;
+                            w = c().quickPromote.account.adsAccount?.id,
+                            v = f?.id;
                         if (K.includes(c().quickPromote.promoteStatus)) return Promise.resolve();
-                        if (!v || !d) return (0, y.hq)(e)(y.Ur.promotionError("Unauthorized")), i((0, a.Co)("Unauthorized")), Promise.resolve();
-                        if (!w) return (0, y.hq)(e)(y.Ur.promotionError("MissingFundingInstrument")), i((0, a.Co)("MissingFundingInstrument")), Promise.resolve();
+                        if (!w || !d) return (0, y.hq)(e)(y.Ur.promotionError("Unauthorized")), i((0, a.Co)("Unauthorized")), Promise.resolve();
+                        if (!v) return (0, y.hq)(e)(y.Ur.promotionError("MissingFundingInstrument")), i((0, a.Co)("MissingFundingInstrument")), Promise.resolve();
                         i((0, a.Co)(null));
-                        const C = Math.round(1e6 * E),
-                            q = C * A,
+                        const C = Math.round(1e6 * A),
+                            q = C * E,
                             T = !!P?.existing_balance.length;
                         return (
-                            (0, y.hq)(e)(y.Ur.promotionCall({ dailyBudgetMicros: C, totalBudgetMicros: q, ageBucket: g, gender: p, keywords: _, location: b, objective: k, withCoupon: T })),
-                            (0, m.zk)("fetchPromote", i((0, a.Ku)({ userId: d, adsAccountId: v, fundingInstrumentId: w, tweetId: n, budget: { daily_local_micros: `${C}`, total_local_micros: `${q}` }, targeting: l, objective: k })))
+                            (0, y.hq)(e)(y.Ur.promotionCall({ dailyBudgetMicros: C, totalBudgetMicros: q, ageBucket: p, gender: g, keywords: _, location: b, objective: k, withCoupon: T })),
+                            (0, m.zk)("fetchPromote", i((0, a.Ku)({ userId: d, adsAccountId: w, fundingInstrumentId: v, tweetId: n, budget: { daily_local_micros: `${C}`, total_local_micros: `${q}` }, targeting: l, objective: k })))
                                 .catch(() => (t && i((0, L.fz)({ text: Q })), i((0, a.Co)(z)), (0, y.hq)(e)(y.Ur.promotionError(z)), { type: "fail" }))
                                 .then((t) => {
                                     if ("fail" !== t.type) {
@@ -645,19 +645,19 @@
                             l = o().quickPromote.account.adsAccount?.id,
                             {
                                 ageBucket: d,
-                                gender: g,
-                                keywords: p,
+                                gender: p,
+                                keywords: g,
                                 targetedLocations: [{ targeting_value: _ }],
                             } = o().quickPromote.targeting;
                         if (K.includes(o().ads.typeahead.forecastAudience[u]?.fetchStatus) || !s || !d) return Promise.resolve();
                         const b = Math.round(1e6 * c),
                             h = b,
-                            E = $(o());
+                            A = $(o());
                         return (
-                            (0, y.hq)(t)(y.Ur.audienceEstimateCall({ dailyBudgetMicros: b, totalBudgetMicros: h, ageBucket: d, gender: g, keywords: p, location: _, objective: n })),
-                            (0, m.zk)("forecastAudience", e(w.getTypeaheadResults(u, { userId: s, adAccountId: parseInt(l, 10).toString(36), dailyBudgetMicros: `${b}`, totalBudgetMicros: `${h}`, currency: i ?? "USD", targeting: E, objective: n }))).then(() => {
+                            (0, y.hq)(t)(y.Ur.audienceEstimateCall({ dailyBudgetMicros: b, totalBudgetMicros: h, ageBucket: d, gender: p, keywords: g, location: _, objective: n })),
+                            (0, m.zk)("forecastAudience", e(v.getTypeaheadResults(u, { userId: s, adAccountId: parseInt(l, 10).toString(36), dailyBudgetMicros: `${b}`, totalBudgetMicros: `${h}`, currency: i ?? "USD", targeting: A, objective: n }))).then(() => {
                                 const e = o().ads.typeahead.forecastAudience[u]?.result?.estimatedImpressions;
-                                e ? (0, y.hq)(t)(y.Ur.audienceEstimateSuccess({ dailyBudgetMicros: b, totalBudgetMicros: h, ageBucket: d, gender: g, keywords: p, location: _, estimatedImpressions: e, objective: n })) : (0, y.hq)(t)(y.Ur.audienceEstimateFail({ dailyBudgetMicros: b, totalBudgetMicros: h, ageBucket: d, gender: g, keywords: p, location: _, objective: n }));
+                                e ? (0, y.hq)(t)(y.Ur.audienceEstimateSuccess({ dailyBudgetMicros: b, totalBudgetMicros: h, ageBucket: d, gender: p, keywords: g, location: _, estimatedImpressions: e, objective: n })) : (0, y.hq)(t)(y.Ur.audienceEstimateFail({ dailyBudgetMicros: b, totalBudgetMicros: h, ageBucket: d, gender: p, keywords: g, location: _, objective: n }));
                             })
                         );
                     },
@@ -672,9 +672,9 @@
                             { ageBucket: l } = o().quickPromote.targeting;
                         if (K.includes(o().ads.typeahead.forecastAudience[c]?.fetchStatus) || !u || !l) return Promise.resolve();
                         const d = Math.round(1e6 * e),
-                            g = d,
-                            p = $(o());
-                        return (0, m.zk)("forecastAudience", t(w.getTypeaheadResults(c, { userId: u, adAccountId: parseInt(s, 10).toString(36), dailyBudgetMicros: `${d}`, totalBudgetMicros: `${g}`, currency: i ?? "USD", targeting: p, objective: n }))).then(() => {});
+                            p = d,
+                            g = $(o());
+                        return (0, m.zk)("forecastAudience", t(v.getTypeaheadResults(c, { userId: u, adAccountId: parseInt(s, 10).toString(36), dailyBudgetMicros: `${d}`, totalBudgetMicros: `${p}`, currency: i ?? "USD", targeting: g, objective: n }))).then(() => {});
                     };
             function $(e) {
                 const { ageBucket: t, contextualKeywords: o, gender: r, keywords: n, targetedLocations: a } = e.quickPromote.targeting;
@@ -687,9 +687,9 @@
                             {
                                 budget: { currency: a, dailyBudget: i, durationDays: c },
                                 objective: u,
-                                targeting: { ageBucket: s, gender: l, keywords: d, targetedLocations: g },
+                                targeting: { ageBucket: s, gender: l, keywords: d, targetedLocations: p },
                             } = n;
-                        return r.set("rweb.quickPromoteRedirectBack", e ? { platformType: e, ageBucket: s, gender: l, keywords: d, targetedLocations: g, dailyBudget: i, durationDays: c, objective: u, lastPersisted: new Date().getTime(), currency: a } : null);
+                        return r.set("rweb.quickPromoteRedirectBack", e ? { platformType: e, ageBucket: s, gender: l, keywords: d, targetedLocations: p, dailyBudget: i, durationDays: c, objective: u, lastPersisted: new Date().getTime(), currency: a } : null);
                     },
                 H =
                     (e, t, o) =>
@@ -723,9 +723,9 @@
                                     (0, y.hq)(c)(y.Ur.professionalAccountsEligible());
                                 }
                                 if (d && d.platformType && d.lastPersisted && new Date().getTime() - d.lastPersisted < 36e5) {
-                                    const { ageBucket: o, currency: r, dailyBudget: i, durationDays: c, gender: l, keywords: g, objective: p, platformType: _, targetedLocations: m } = d,
+                                    const { ageBucket: o, currency: r, dailyBudget: i, durationDays: c, gender: l, keywords: p, objective: g, platformType: _, targetedLocations: m } = d,
                                         { currency: b } = s().quickPromote.budget;
-                                    u((0, a.mS)(p)), u((0, a.e3)({ ageBucket: o, gender: l, keywords: g, targetedLocations: m })), r === b ? (u((0, a.Uc)({ dailyBudget: i, durationDays: c })), n.replace((0, y.WS)(e, t, _, y.MN.BudgetSelect))) : (u((0, a.Uc)({ errorMessage: Z })), n.replace((0, y.WS)(e, t, _, y.MN.BudgetSelect)));
+                                    u((0, a.mS)(g)), u((0, a.e3)({ ageBucket: o, gender: l, keywords: p, targetedLocations: m })), r === b ? (u((0, a.Uc)({ dailyBudget: i, durationDays: c })), n.replace((0, y.WS)(e, t, _, y.MN.BudgetSelect))) : (u((0, a.Uc)({ errorMessage: Z })), n.replace((0, y.WS)(e, t, _, y.MN.BudgetSelect)));
                                 } else {
                                     const a = l.isTrue("responsive_web_qp_two_screens_enabled") ? y.MN.Targeting : y.MN.Intro;
                                     r !== a && n.replace((0, y.WS)(e, t, r ? o : y.ZV.Rweb, a));
@@ -812,7 +812,7 @@
                                     .then((o) => {
                                         if (!o.length) {
                                             const e = Error("Could not find targetable country for US!");
-                                            throw ((0, g.ZP)(e), e);
+                                            throw ((0, p.ZP)(e), e);
                                         }
                                         if (t().quickPromote.targeting.targetedLocations.length) return Promise.resolve();
                                         e((0, a.hI)(o)), e((0, a.Dg)(b.ZP.LOADED));
@@ -969,20 +969,6 @@
                 i = Object.freeze({ 18: { 24: n.AGE_18_TO_24, 34: n.AGE_18_TO_34, 49: n.AGE_18_TO_49, 54: n.AGE_18_TO_54, over: n.AGE_OVER_18 }, 21: { 34: n.AGE_21_TO_34, 49: n.AGE_21_TO_49, 54: n.AGE_21_TO_54, over: n.AGE_OVER_21 }, 25: { 49: n.AGE_25_TO_49, 54: n.AGE_25_TO_54, over: n.AGE_OVER_25 }, 35: { 49: n.AGE_35_TO_49, 54: n.AGE_35_TO_54, over: n.AGE_OVER_35 }, 50: { over: n.AGE_OVER_50 } }),
                 c = Object.freeze({ Engagements: "Engagements", Followers: "Followers", WebsiteClicks: "WebsiteClicks" });
         },
-        988227: (e, t, o) => {
-            "use strict";
-            o.r(t), o.d(t, { default: () => u });
-            var r = o(202784),
-                n = o(890601),
-                a = o(783427),
-                i = o(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const u = c;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose.80ec824a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose.37d3a41a.js.map

@@ -3584,7 +3584,7 @@
                 n("hbe4f99e", "Здоровенькі були! Дуже хочу поділитися з вами надсекретними матеріалами та познайомитися з вами ще ближче :)"),
                 n("fb278c82", "Що це за попередній перегляд?"),
                 n("j6cab6ec", "Ось що люди побачать, перш ніж оформлять Передплату на вас. Налаштовуйте й редагуйте свої описи, доки не доведете їх до досконалості."),
-                n("i22beaa4", "Надання даних"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Видалити історію розмов"),
                 n("ebc4fda0", "Ви збираєтеся видалити історію своїх розмов із Grok. Ви більше не матимете до них доступу."),
                 n("c90fe716", "Видалити розмови?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.62f11a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.db0ae48a.js.map

@@ -3578,7 +3578,7 @@
                 t("hbe4f99e", "Sannu! Muna farin ciki don raba wasu manyan abubuwa na sirri kuma mu san ka sosai :)"),
                 t("fb278c82", "Mene ne wannan fara gani?"),
                 t("j6cab6ec", "Wannan shi ne abin da mutane ke gani kafin su yi Rijista da kai. Daidaita kuma gyara bayananka har sai sun yi maka daidai."),
-                t("i22beaa4", "Data Sharing"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Delete conversation history"),
                 t("ebc4fda0", "You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 t("c90fe716", "Do you want to delete your conversations?"),
@@ -13343,4 +13343,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.f1f449ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.5dbdb0ba.js.map

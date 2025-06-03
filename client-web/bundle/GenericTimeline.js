@@ -89,21 +89,21 @@
                 l = n(810641),
                 d = n(725516),
                 p = n(615027),
-                h = n(611423);
-            const m = { ...(0, n(335632).G)({ withMuteConversation: !0 }) },
-                u = o().a6d5b010,
+                m = n(611423);
+            const u = { ...(0, n(335632).G)({ withMuteConversation: !0 }) },
+                h = o().a6d5b010,
                 g = (e) => {
                     const { history: t, location: n } = e,
                         r = ((e) => e.state && e.state.urtUrl)(n),
                         o = r?.urtEndpointOptions,
-                        d = o ? o.title : u,
+                        d = o ? o.title : h,
                         g = o ? o.subtitle : void 0,
-                        f = i.useMemo(() => r && (0, h.Z)({ urtUrl: r, timelinePrefix: "generic-" }), [r]);
-                    return f ? i.createElement(c.Z, null, i.createElement(s.Z, { backLocation: "/", history: t, primaryContent: i.createElement(l.Z, { entryConfiguration: m, module: f, title: d }), sidebarContent: i.createElement(a.Z, { withWhoToFollow: !1 }), subtitle: g, title: d })) : i.createElement(p.Z, { to: "/" });
+                        f = i.useMemo(() => r && (0, m.Z)({ urtUrl: r, timelinePrefix: "generic-" }), [r]);
+                    return f ? i.createElement(c.Z, null, i.createElement(s.Z, { backLocation: "/", history: t, primaryContent: i.createElement(l.Z, { entryConfiguration: u, module: f, title: d }), sidebarContent: i.createElement(a.Z, { withWhoToFollow: !1 }), subtitle: g, title: d })) : i.createElement(p.Z, { to: "/" });
                 },
                 f = (0, d.Z)(g, { page: "generic_timeline" });
         },
-        748138: (e, t, n) => {
+        41065: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var i = n(202784),
                 r = n(890601),
@@ -111,11 +111,11 @@
                 a = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const c = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GenericTimeline.a2996aaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GenericTimeline.db143cea.js.map

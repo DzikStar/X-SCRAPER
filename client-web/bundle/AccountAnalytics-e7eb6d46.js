@@ -237,7 +237,7 @@
                 u = a(524145),
                 p = a(808106),
                 x = a(703383),
-                y = a(607499),
+                y = a(134877),
                 f = a(321910),
                 g = a(598705);
             const h = ["Engagements", "Impressions", "ProfileVisits", "Follows", "Replies", "Likes", "Retweets", "Bookmark", "Share", "UrlClicks", "CreateTweet", "CreateQuote", "Unfollows", "CreateReply"],
@@ -443,4 +443,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e7eb6d46.4d0a769a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e7eb6d46.910801aa.js.map

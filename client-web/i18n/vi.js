@@ -3574,7 +3574,7 @@
                 t("hbe4f99e", "Xin chào! Tôi háo hức muốn chia sẻ một số nội dung bí mật hàng đầu và hiểu rõ hơn về bạn :)"),
                 t("fb278c82", "Xem trước này là gì?"),
                 t("j6cab6ec", "Đây là những gì mọi người nhìn thấy trước khi họ đăng ký theo dõi bạn. Hãy thêm bớt và chỉnh sửa mô tả của bạn cho đến khi bạn thấy ổn."),
-                t("i22beaa4", "Chia sẻ dữ liệu"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Xóa nhật ký cuộc trò chuyện"),
                 t("ebc4fda0", "Bạn sắp xóa nhật ký cuộc trò chuyện với grok. Bạn sẽ không truy cập được các cuộc trò chuyện này nữa."),
                 t("c90fe716", "Bạn có muốn xóa các cuộc trò chuyện của mình không?"),
@@ -13339,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.58b6281a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.b3039a1a.js.map

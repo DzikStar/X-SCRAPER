@@ -3582,7 +3582,7 @@
                 o("hbe4f99e", "Pozdrav! Jedva čekam s tobom podijeliti tajni sadržaj i bolje te upoznati :)"),
                 o("fb278c82", "Što je ovaj pregled?"),
                 o("j6cab6ec", "Ovo korisnici vide prije nego što se pretplate na vaš sadržaj. Prilagođavajte i uređujte opise dok ne budete u potpunosti zadovoljni."),
-                o("i22beaa4", "Dijeljenje podataka"),
+                o("f2b1e83e", "Grok & Third-Party Collaborators"),
                 o("e110a46c", "Izbriši povijest razgovora"),
                 o("ebc4fda0", "Upravo ćete izbrisati povijesti razgovora značajke Grok. Više nećete moći pristupiti tim razgovorima."),
                 o("c90fe716", "Želite li izbrisati svoje razgovore?"),
@@ -13362,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.d44e57ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.c73d132a.js.map

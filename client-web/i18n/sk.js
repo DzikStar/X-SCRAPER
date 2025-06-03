@@ -3584,7 +3584,7 @@
                 n("hbe4f99e", "Ahoj! Už teraz sa teším, ako sa s vami podelím o svoj prísne tajný obsah a lepšie vás spoznám. :)"),
                 n("fb278c82", "Čo zobrazuje táto ukážka?"),
                 n("j6cab6ec", "Toto sa používateľom zobrazí predtým, ako sa vás rozhodnú predplatiť. Vycibrite svoje popisy do dokonalosti."),
-                n("i22beaa4", "Zdieľanie údajov"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "Odstrániť históriu konverzácií"),
                 n("ebc4fda0", "Chystáte sa odstrániť svoju históriu konverzácií s Grokom. K týmto konverzáciám už nebudete mať prístup."),
                 n("c90fe716", "Chcete odstrániť svoje konverzácie?"),
@@ -13356,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.cdb52ada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.b9c4721a.js.map

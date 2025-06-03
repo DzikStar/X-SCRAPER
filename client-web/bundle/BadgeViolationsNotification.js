@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.BadgeViolationsNotification", "icons/IconErrorCircleFillWhite-js"],
+    ["bundle.BadgeViolationsNotification"],
     {
         980407: (e, t, o) => {
             o.d(t, { Z: () => b, w: () => m });
@@ -18,9 +18,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, rightControl: g, secondaryBar: B, subtitle: f, title: y } = this.props,
-                                { isModal: E } = this.context;
-                            return r.createElement(i.Z, { style: E ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (E ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !E, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: g, secondaryBar: B, style: [E && u.appBarModal, t], subtitle: f, title: y, titleDomId: d.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, rightControl: B, secondaryBar: g, subtitle: y, title: f } = this.props,
+                                { isModal: x } = this.context;
+                            return r.createElement(i.Z, { style: x ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (x ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !x, hideBackButton: l, history: s, isFullWidth: h, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: B, secondaryBar: g, style: [x && u.appBarModal, t], subtitle: y, title: f, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -29,10 +29,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: l, isFullWidth: d, isLarge: c, renderHeader: m, title: b, withoutBottomBarMobile: g } = this.props,
-                        { isModal: B } = this.context,
-                        f = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(s.Z, null, r.createElement(h.Z.Configure, { documentTitle: l, headerless: !0, title: b }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, B && u.rootModal] }, !B && f, r.createElement(a.Z, { isFullWidth: d, isLarge: c, style: [u.container, B && u.containerModal, n] }, B ? r.createElement(p.Z, { style: u.viewport }, f, o) : o), t ? r.createElement(i.Z, { style: [u.bottomBarModal, !B && !g && u.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: d, isLarge: c }, t)) : null));
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: l, isFullWidth: d, isLarge: c, renderHeader: m, title: b, withoutBottomBarMobile: B } = this.props,
+                        { isModal: g } = this.context,
+                        y = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(s.Z, null, r.createElement(h.Z.Configure, { documentTitle: l, headerless: !0, title: b }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, g && u.rootModal] }, !g && y, r.createElement(a.Z, { isFullWidth: d, isLarge: c, style: [u.container, g && u.containerModal, n] }, g ? r.createElement(p.Z, { style: u.viewport }, y, o) : o), t ? r.createElement(i.Z, { style: [u.bottomBarModal, !g && !B && u.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: d, isLarge: c }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = n.Z);
@@ -40,7 +40,7 @@
                 b = m;
         },
         244071: (e, t, o) => {
-            o.r(t), o.d(t, { BadgeViolations: () => w, default: () => k });
+            o.r(t), o.d(t, { BadgeViolations: () => w, default: () => _ });
             var r = o(202784),
                 i = o(325686),
                 a = o(731708),
@@ -54,18 +54,18 @@
                 m = o(980407),
                 u = o(686689),
                 b = o(316325),
-                g = o(312771),
-                B = o(71620),
-                f = o(668214),
-                y = o(946194);
-            const E = (0, f.Z)()
-                    .propsFromState(() => ({ badgeViolations: y.XC, fetchStatus: y.Sb }))
-                    .adjustStateProps(({ badgeViolations: e, fetchStatus: t }) => ({ badgeViolations: e, fetchStatus: t === g.ZP.NONE ? g.ZP.LOADING : t }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, B.zr)("ACCOUNT_VERIFICATION_NOTIFICATION_SCREEN"), fetchBadgeViolations: y.pD }))
+                B = o(312771),
+                g = o(71620),
+                y = o(668214),
+                f = o(946194);
+            const x = (0, y.Z)()
+                    .propsFromState(() => ({ badgeViolations: f.XC, fetchStatus: f.Sb }))
+                    .adjustStateProps(({ badgeViolations: e, fetchStatus: t }) => ({ badgeViolations: e, fetchStatus: t === B.ZP.NONE ? B.ZP.LOADING : t }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("ACCOUNT_VERIFICATION_NOTIFICATION_SCREEN"), fetchBadgeViolations: f.pD }))
                     .withAnalytics(),
-                x = "/notifications",
-                C = c().fc2a5c92,
-                v = (e) => null;
+                C = "/notifications",
+                E = c().fc2a5c92,
+                k = (e) => null;
             class w extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -87,7 +87,7 @@
                                     violation_modal_title: l,
                                     violations: s,
                                 } = e,
-                                d = () => t.goBack({ backLocation: x }),
+                                d = () => t.goBack({ backLocation: C }),
                                 c = r.createElement(u.Z, { entities: i, text: a }),
                                 h =
                                     s && s.length
@@ -110,14 +110,14 @@
                 }
                 render() {
                     const { fetchStatus: e, history: t } = this.props,
-                        o = e === g.ZP.LOADED;
-                    return r.createElement(m.Z, { backLocation: x, containerStyle: !o && Z.loading, history: t, renderHeader: o ? v : void 0 }, r.createElement(l.Z, { fetchStatus: e, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: C, retryable: !0 }));
+                        o = e === B.ZP.LOADED;
+                    return r.createElement(m.Z, { backLocation: C, containerStyle: !o && Z.loading, history: t, renderHeader: o ? k : void 0 }, r.createElement(l.Z, { fetchStatus: e, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: E, retryable: !0 }));
                 }
             }
             const Z = s.default.create((e) => ({ contentContainer: { marginVertical: e.spaces.space16, justifyContent: "center" }, listItem: { flexDirection: "row", paddingVertical: e.spaces.space20, width: "100%" }, withBottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" }, icon: { flexShrink: 0, fontSize: e.fontSizes.headline1, marginEnd: e.spaces.space12 }, itemContent: { flexShrink: 1, flexGrow: 1 }, itemTitle: { marginBottom: e.spaces.space2 }, loading: { paddingBottom: e.spaces.space48 }, green: { color: e.colors.green500 }, red: { color: e.colors.magenta500 } })),
-                k = E(w);
+                _ = x(w);
         },
-        350506: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 i = o(890601),
@@ -125,24 +125,11 @@
                 n = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75C6.339 1.75 1.75 6.339 1.75 12S6.339 22.25 12 22.25 22.25 17.661 22.25 12 17.661 1.751 12 1.75z" }), r.createElement("path", { d: "M13.25 7L13 12.7c-.32-.121-.658-.189-1-.2-.342.011-.68.079-1 .2L10.75 7h2.5zM12 17c-.828 0-1.5-.672-1.5-1.5S11.172 14 12 14s1.5.672 1.5 1.5S12.828 17 12 17z", fill: "#fff" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        748138: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                i = o(890601),
-                a = o(783427),
-                n = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BadgeViolationsNotification.79ef320a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BadgeViolationsNotification.dcebadaa.js.map

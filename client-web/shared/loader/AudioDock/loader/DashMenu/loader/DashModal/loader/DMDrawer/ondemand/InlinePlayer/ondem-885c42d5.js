@@ -811,7 +811,7 @@
                     (e, n, t) => {
                         if (!t) return r.Z;
                         const s = e(Qn(t));
-                        return s
+                        return s && e(k.f)
                             ? (0, S.y)(s, ({ normLevel: e }) => {
                                   e > 0.5 && n(Yn, t);
                               })
@@ -1091,4 +1091,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5.ecef0bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5.998978aa.js.map

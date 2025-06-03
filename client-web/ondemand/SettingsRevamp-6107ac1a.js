@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.SettingsRevamp-6107ac1a", "icons/IconAccessibilityAlt-js", "icons/IconLayersStroke-js", "icons/IconNotificationsSecurityAlert-js"],
+    ["ondemand.SettingsRevamp-6107ac1a", "icons/IconActivity-js", "icons/IconDeviceLaptop-js", "icons/IconDeviceUnknown-js"],
     {
         520512: (e, a, n) => {
             n.d(a, { Z: () => r });
@@ -1313,13 +1313,13 @@
                 o = n(952428),
                 d = n(392237);
             const u = (e) => {
-                    const { decoration: a, description: n, disabled: u = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: F, testID: b = "pivot", thumbnail: v, thumbnailSize: K, withoutArrow: h = !1 } = e,
+                    const { decoration: a, description: n, disabled: u = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: v, thumbnailSize: K, withoutArrow: h = !1 } = e,
                         S = [c.thumbnailContainer, "medium" === K && c.thumbnailContainerMedium],
                         w = "string" == typeof g ? l.createElement(s.ZP, null, g) : g,
                         T = "object" == typeof p && p.external && !p.openInSameFrame,
-                        L = n ? ("string" == typeof n ? l.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${b}-description` }, n) : n) : null,
+                        L = n ? ("string" == typeof n ? l.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${F}-description` }, n) : n) : null,
                         R = l.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? d.default.theme.spaces[k] : d.default.theme.componentDimensions.gutterHorizontal }), [k]);
-                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: u, link: u ? void 0 : p, onPress: y, role: _, style: [c.root, R, u && c.disabled, F], testID: b, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, v ? l.createElement(i.Z, { style: S }, v) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || u || h ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), a);
+                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: u, link: u ? void 0 : p, onPress: y, role: _, style: [c.root, R, u && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, v ? l.createElement(i.Z, { style: S }, v) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || u || h ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), a);
                 },
                 c = d.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${d.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1337,13 +1337,13 @@
                     k = (0, r.F)(),
                     f = ((_ = u), d.default.theme.colors[_?.color || "blue900"]);
                 var _;
-                const F = (function (e) {
+                const b = (function (e) {
                         return { borderRadius: d.default.theme.borderRadii[e?.borderRadii || "medium"] };
                     })(u),
-                    b = (function (e) {
+                    F = (function (e) {
                         return { borderRadius: d.default.theme.borderRadii[e?.borderRadii || "medium"], height: d.default.theme.spaces[e?.height || "space8"], backgroundColor: d.default.theme.colors.gray50 };
                     })(u);
-                return l.createElement(i.Z, { style: c.root }, l.createElement(i.Z, { style: c.decoration }, a), l.createElement(i.Z, { style: c.title }, l.createElement(t.ZP, { size: "subtext2", weight: "medium" }, g)), l.createElement(i.Z, { id: k, style: c.valueLabel }, m.value ? l.createElement(o.Z, null, l.createElement(o.Z.Value, null, m.value), l.createElement(o.Z.Label, null, m.label)) : l.createElement(t.ZP, { weight: "bold" }, m.label)), l.createElement(i.Z, { style: n ? c.progressBarContainerCompact : c.progressBarContainer, testID: "progressBarStats-progressBarContainer" }, l.createElement(s.Z, { "aria-describedby": k, "aria-valuemax": y, colorValue: f, progress: p / y, progressStyle: F, style: b })));
+                return l.createElement(i.Z, { style: c.root }, l.createElement(i.Z, { style: c.decoration }, a), l.createElement(i.Z, { style: c.title }, l.createElement(t.ZP, { size: "subtext2", weight: "medium" }, g)), l.createElement(i.Z, { id: k, style: c.valueLabel }, m.value ? l.createElement(o.Z, null, l.createElement(o.Z.Value, null, m.value), l.createElement(o.Z.Label, null, m.label)) : l.createElement(t.ZP, { weight: "bold" }, m.label)), l.createElement(i.Z, { style: n ? c.progressBarContainerCompact : c.progressBarContainer, testID: "progressBarStats-progressBarContainer" }, l.createElement(s.Z, { "aria-describedby": k, "aria-valuemax": y, colorValue: f, progress: p / y, progressStyle: b, style: F })));
             };
             const c = d.default.create((e) => ({ root: { display: "grid", gridTemplateRows: "auto auto", gridTemplateColumns: "min-content auto auto", marginBottom: e.spaces.space16 }, decoration: { gridRow: "1/3", gridColumn: "1/2", fontSize: "30px" }, title: { display: "flex", alignItems: "flex-start" }, valueLabel: { display: "flex", alignItems: "flex-end" }, progressBarContainer: { gridRow: "2/3", gridColumn: "2/4", marginTop: e.spaces.space8 }, progressBarContainerCompact: { gridRow: "2/3", gridColumn: "2/4" } })),
                 m = l.memo(u);
@@ -1416,7 +1416,7 @@
             const m = o.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 g = c;
         },
-        516330: (e, a, n) => {
+        546351: (e, a, n) => {
             n.r(a), n.d(a, { default: () => o });
             var l = n(202784),
                 i = n(890601),
@@ -1424,12 +1424,12 @@
                 r = n(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M14.828 9.172c-1.315-1.315-3.326-1.522-4.86-.618L3.707 2.293 2.293 3.707l2.428 2.429c-2.478 2.421-3.606 5.376-3.658 5.513L.932 12l.131.351C1.196 12.704 4.394 21 12 21c2.063 0 3.989-.622 5.737-1.849l2.556 2.556 1.414-1.414-6.261-6.261c.904-1.534.698-3.545-.618-4.86zm-1.414 1.414c.522.522.695 1.264.518 1.932l-2.449-2.449c.669-.177 1.409-.005 1.931.517zM3.085 11.999c.107-.24.272-.588.497-1.002l7.993 7.992c-5.14-.279-7.85-5.563-8.489-6.989zm13.21 5.71c-.695.448-1.422.781-2.175.996L4.672 9.258c.412-.57.899-1.158 1.464-1.708l10.16 10.16h-.001zm6.772-5.71l-.131.352c-.062.164-.801 2.055-2.33 4.027l-1.438-1.438c.917-1.217 1.494-2.378 1.746-2.941-.658-1.467-3.5-7-8.915-7-.712 0-1.376.1-2 .27V3.223c.633-.131 1.291-.223 2-.223 7.605 0 10.804 8.296 10.937 8.648l.131.352z" })) }, { writingDirection: a });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M9.53 4c.41.01.77.28.91.66l4.14 11.6L16.84 11H22v2h-3.84l-2.74 6.39c-.16.38-.54.62-.95.61s-.77-.28-.91-.66L9.42 7.74 7.16 13H2v-2h3.84l2.74-6.39c.16-.38.54-.62.95-.61z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        720526: (e, a, n) => {
+        762863: (e, a, n) => {
             n.r(a), n.d(a, { default: () => o });
             var l = n(202784),
                 i = n(890601),
@@ -1437,12 +1437,12 @@
                 r = n(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M19.5 2C20.88 2 22 3.12 22 4.5v11c0 1.21-.86 2.22-2 2.45V4.5c0-.28-.22-.5-.5-.5H6.05c.23-1.14 1.24-2 2.45-2h11zm-4 4C16.88 6 18 7.12 18 8.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C3.12 22 2 20.88 2 19.5v-11C2 7.12 3.12 6 4.5 6h11zM4 19.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-11c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5v11z" })) }, { writingDirection: a });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M21 16V4.5C21 3.12 19.88 2 18.5 2h-13C4.12 2 3 3.12 3 4.5V16H1v4c0 1.103.897 2 2 2h18c1.103 0 2-.897 2-2v-4h-2zM5 4.5c0-.28.22-.5.5-.5h13c.28 0 .5.22.5.5V16H5V4.5zM3 20v-2h18v2H3z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        503089: (e, a, n) => {
+        932466: (e, a, n) => {
             n.r(a), n.d(a, { default: () => o });
             var l = n(202784),
                 i = n(890601),
@@ -1450,7 +1450,7 @@
                 r = n(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M23.098 17.97l-8.62-14.93c-.54-.94-1.51-1.5-2.6-1.5h-.02c-1.09 0-2.06.58-2.6 1.53L.888 18c-.53.94-.52 2.06.03 2.99.54.92 1.49 1.47 2.55 1.47h17.07c1.06 0 2.02-.55 2.56-1.48.54-.94.54-2.07 0-3.01z", fill: "#F4212E" }), l.createElement("path", { d: "M11.998 18.89c-.76 0-1.38-.62-1.38-1.38s.62-1.37 1.38-1.37 1.37.61 1.37 1.37-.61 1.38-1.37 1.38zm1.72-9.03l-.93 4.39c-.07.38-.4.64-.79.64s-.71-.26-.8-.64l-.93-4.39c-.1-.52.03-1.06.36-1.47.67-.83 2.07-.83 2.74 0 .33.41.46.95.35 1.47z", fill: "#FFF" })) }, { writingDirection: a });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13zm6.07 6.96l.99-.79c.33-.26.56-.53.7-.8.15-.27.22-.57.22-.91 0-.41-.12-.74-.38-.97s-.62-.35-1.09-.35-.85.12-1.13.37c-.26.25-.4.59-.4 1.03 0 .2.03.42.08.65l-2.07-.15c-.06-.29-.09-.55-.09-.79 0-.84.33-1.51.98-2.01.67-.49 1.55-.74 2.66-.74 1.17 0 2.07.24 2.71.73.63.48.95 1.16.95 2.04 0 .98-.47 1.86-1.4 2.65l-.87.73c-.17.15-.29.28-.36.4-.06.11-.09.26-.09.45v.46h-2.1v-.67c0-.3.06-.55.17-.75.12-.2.29-.39.52-.58zm-.52 5.17c.24.25.56.37.93.37.39 0 .7-.12.94-.37.25-.25.37-.56.37-.94 0-.39-.12-.7-.37-.95-.24-.25-.55-.37-.94-.37-.37 0-.69.12-.93.37s-.36.56-.36.95c0 .38.12.69.36.94z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
@@ -1486,4 +1486,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.f1ec5afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.c7b6b41a.js.map

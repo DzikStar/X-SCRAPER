@@ -3575,7 +3575,7 @@
                 n("hbe4f99e", "હેય! કેટલીક અત્યંત ગુપ્ત સામગ્રીને શેર કરવા અને તમને હજુ વધુ સારી રીતે જાણવા માટે આતુર છું :)"),
                 n("fb278c82", "આ પૂર્વાવલોકન શેનું છે?"),
                 n("j6cab6ec", "લોકો તમને સબ્સ્ક્રાઇબ કરશે તે પહેલાં તેઓને આ દેખાય છે. જ્યાં સુધી તમને તમારાં વર્ણનો એકદમ બરાબર સ્વરૂપમાં ન જણાય ત્યાં સુધી તેમાં ફેરફારો કરો અને તેને સંપાદિત કરો."),
-                n("i22beaa4", "ડેટા શેરિંગ"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "વાર્તાલાપનો ઇતિહાસ કાઢી નાખો"),
                 n("ebc4fda0", "તમે તમારો Grok વાર્તાલાપ ઇતિહાસ કાઢી નાખવા જઈ રહ્યા છો. તમે આ વાર્તાલાપોને ફરીથી ઍક્સેસ નહીં કરી શકો."),
                 n("c90fe716", "તમારે તમારા વાર્તાલાપો કાઢી નાખવા છે?"),
@@ -13356,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.8e96a9da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.66c870ea.js.map

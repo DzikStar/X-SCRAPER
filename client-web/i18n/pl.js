@@ -3584,7 +3584,7 @@
                 i("hbe4f99e", "Cześć! Chcę Cię lepiej poznać i podzielić się z Tobą tajnymi treściami dla wybranych :)"),
                 i("fb278c82", "Co widać na tym podglądzie?"),
                 i("j6cab6ec", "Użytkownicy, którzy jeszcze nie są Twoimi subskrybentami, widzą tę stronę. Możesz edytować swój opis dowolną liczbę razy – aż będziesz z niego zadowolony/a."),
-                i("i22beaa4", "Udostępnianie danych"),
+                i("f2b1e83e", "Grok & Third-Party Collaborators"),
                 i("e110a46c", "Usuń historię rozmów"),
                 i("ebc4fda0", "Zamierzasz usunąć historię swoich rozmów z Grokiem. Jeśli to zrobisz, nie będziesz już mieć możliwości uzyskania dostępu do tych rozmów."),
                 i("c90fe716", "Czy chcesz usunąć swoje rozmowy?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.2ccf62da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.45803bba.js.map

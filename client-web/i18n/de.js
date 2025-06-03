@@ -3575,7 +3575,7 @@
                 t("hbe4f99e", "Hallo! Ich kann es kaum erwarten, meinen Top-Secret-Content mit euch zu teilen und euch noch besser kennenzulernen :)"),
                 t("fb278c82", "Wofür ist diese Vorschau?"),
                 t("j6cab6ec", "Das sehen die Nutzer*innen, bevor sie dich abonnieren. Passe deine Beschreibungen an, bis alles perfekt ist."),
-                t("i22beaa4", "Datenfreigabe"),
+                t("f2b1e83e", "Grok & Third-Party Collaborators"),
                 t("e110a46c", "Konversationsprotokoll löschen"),
                 t("ebc4fda0", "Du löschst jetzt dein Grok-Konversationsprotokoll. Du kannst dann nicht mehr auf diese Konversationen zugreifen."),
                 t("c90fe716", "Möchtest du deine Konversationen löschen?"),
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.3b255bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.6d82b82a.js.map

@@ -3578,7 +3578,7 @@
                 n("hbe4f99e", "안녕하세요! 어서 빨리 여러분을 만나 뵙고 그동안 아무에게도 하지 않았던 얘기들을 나누고 싶어요 :)"),
                 n("fb278c82", "무엇에 대한 미리보기인가요?"),
                 n("j6cab6ec", "다른 사람이 나를 구독하기 전에 보게 되는 페이지입니다. 자기 소개글이 마음에 들 때까지 다듬고 수정할 수 있습니다."),
-                n("i22beaa4", "데이터 공유"),
+                n("f2b1e83e", "Grok & Third-Party Collaborators"),
                 n("e110a46c", "대화 내역 삭제하기"),
                 n("ebc4fda0", "Grok 대화 내역을 삭제하려 합니다. 이 대화에 다시 액세스할 수 없게 됩니다."),
                 n("c90fe716", "대화를 삭제하시겠어요?"),
@@ -13359,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.2a30b71a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.e4ed7b4a.js.map

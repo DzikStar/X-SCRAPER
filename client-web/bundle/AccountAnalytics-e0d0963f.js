@@ -385,7 +385,7 @@
                 D = a(596017),
                 T = a(178016),
                 C = a(889906),
-                V = a(607499);
+                V = a(134877);
             const _ = ["Playback25", "Playback50", "Playback75", "PlaybackComplete", "PlaybackStart", "VideoView", "WatchTime"];
             function R({ children: e, timeRange: t, estimatedRevenueEnabled: a = !1 }) {
                 return (0, s.jsx)(V.S, { children: (0, s.jsx)(l.Suspense, { fallback: (0, s.jsx)("div", { className: "pt-16", children: (0, s.jsx)(N.P, { size: "large" }) }), children: (0, s.jsx)(F, { timeRange: t, estimatedRevenueEnabled: a, children: e }) }) });
@@ -602,4 +602,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.35f2041a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.be982e8a.js.map

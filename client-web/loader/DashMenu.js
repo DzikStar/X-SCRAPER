@@ -126,11 +126,11 @@
                 v = r(105131),
                 Z = r(206962),
                 A = r(71620),
-                S = r(668214),
-                P = r(454319),
+                P = r(668214),
+                S = r(454319),
                 I = r(956817);
-            const x = (0, S.Z)()
-                    .propsFromState(() => ({ multiAccountUsers: P.$4, showMultiAccountOverflowPip: P.Zt, delegateUser: E.sy }))
+            const x = (0, P.Z)()
+                    .propsFromState(() => ({ multiAccountUsers: S.$4, showMultiAccountOverflowPip: S.Zt, delegateUser: E.sy }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, A.zr)("DASH_MENU_ACCOUNT_SWITCH"), switchAccount: I.y })),
                 T = d().da4691aa,
                 U = d().c7e55ccf,
@@ -176,7 +176,7 @@
                 W = s.default.create((e) => ({ root: { alignSelf: "flex-start", flexDirection: "row" }, link: { borderRadius: e.borderRadii.infinite, marginEnd: e.spaces.space4 } })),
                 V = (0, v.P3)(x(n.memo(L)));
             var O = r(659773);
-            const R = (0, S.Z)()
+            const R = (0, P.Z)()
                 .propsFromState(() => ({ viewerUser: y.ZP.selectViewerUser }))
                 .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: O.MJ }))
                 .withAnalytics({ page: "dash" });
@@ -213,28 +213,29 @@
                 loader: () =>
                     Promise.all([
                         r.e("icons.0"),
+                        r.e("icons.13"),
+                        r.e("icons.22"),
+                        r.e("icons.29"),
                         r.e("icons.5"),
-                        r.e("icons.12"),
-                        r.e("icons.20"),
-                        r.e("icons.2"),
-                        r.e("icons.21"),
-                        r.e("icons.28"),
+                        r.e("icons.7"),
+                        r.e("icons.1"),
+                        r.e("icons.15"),
+                        r.e("icons.25"),
                         r.e("icons.10"),
-                        r.e("icons.17"),
-                        r.e("icons.9"),
+                        r.e("icons.20"),
+                        r.e("icons.11"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.22"),
-                        r.e("icons.25"),
-                        r.e("icons.14"),
-                        r.e("icons.6"),
+                        r.e("icons.24"),
+                        r.e("icons.16"),
+                        r.e("icons.9"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -261,7 +262,6 @@
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
@@ -646,4 +646,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.ea8c518a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.d2ea63da.js.map
