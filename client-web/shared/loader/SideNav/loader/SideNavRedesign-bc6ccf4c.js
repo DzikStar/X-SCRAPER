@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c", "icons/IconPlus-js"],
+    ["shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c", "icons/IconFeedback-js"],
     {
         642153: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -232,8 +232,8 @@
                 T = r(731708),
                 _ = r(642153),
                 Z = r(879891),
-                I = r(392237),
-                F = r(54606);
+                F = r(392237),
+                I = r(54606);
             const P = i().ae408b76,
                 S = i().j355f008,
                 k = i().habf9678,
@@ -250,13 +250,13 @@
                               const t = n.createElement(N, { text: e });
                               return n.createElement(i().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
-                B = I.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
-                D = I.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                B = F.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
+                D = F.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
                 R = ({ contextType: e, iconColor: t, iconSize: r, link: o, retweetData: i, text: T, topicData: Z, userAvatarUrls: P }) => {
                     const { isSelfRetweet: R, name: U, screenName: M } = i || {},
                         H = ((e, t, r, o = []) => {
                             const i = B[t],
-                                T = [r ? { color: I.default.theme.colors[r] } : D.colorDeepGray, i],
+                                T = [r ? { color: F.default.theme.colors[r] } : D.colorDeepGray, i],
                                 Z = n.createElement(a.default, { style: T }),
                                 P = n.createElement(s.default, { style: T }),
                                 S = n.createElement(l.default, { style: T }),
@@ -270,67 +270,67 @@
                                 M = n.createElement(f.default, { style: T }),
                                 H = n.createElement(w.default, { style: T }),
                                 W = n.createElement(y.default, { style: T }),
-                                G = n.createElement(b.default, { style: T }),
-                                z = n.createElement(E.default, { style: T }),
+                                z = n.createElement(b.default, { style: T }),
+                                G = n.createElement(E.default, { style: T }),
                                 V = n.createElement(v.default, { style: T }),
                                 j = n.createElement(C.default, { style: T }),
                                 Q = n.createElement(_.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
                                 $ = n.createElement(x.default, { style: T });
                             switch (e) {
-                                case F.Q.Pin:
-                                case F.Q.ReplyPin:
+                                case I.Q.Pin:
+                                case I.Q.ReplyPin:
                                     return Z;
-                                case F.Q.Retweet:
+                                case I.Q.Retweet:
                                     return P;
-                                case F.Q.Like:
+                                case I.Q.Like:
                                     return S;
-                                case F.Q.Follow:
+                                case I.Q.Follow:
                                     return k;
-                                case F.Q.Moment:
+                                case I.Q.Moment:
                                     return L;
-                                case F.Q.NewTweets:
+                                case I.Q.NewTweets:
                                     return A;
-                                case F.Q.Reply:
-                                case F.Q.Conversation:
+                                case I.Q.Reply:
+                                case I.Q.Conversation:
                                     return N;
-                                case F.Q.Feedback:
+                                case I.Q.Feedback:
                                     return O;
-                                case F.Q.Topic:
+                                case I.Q.Topic:
                                     return R;
-                                case F.Q.List:
+                                case I.Q.List:
                                     return U;
-                                case F.Q.Location:
+                                case I.Q.Location:
                                     return M;
-                                case F.Q.Community:
+                                case I.Q.Community:
                                     return H;
-                                case F.Q.Spaces:
+                                case I.Q.Spaces:
                                     return W;
-                                case F.Q.Sparkle:
-                                    return G;
-                                case F.Q.SocialProof:
-                                case F.Q.FollowFollowed:
-                                    return j;
-                                case F.Q.FollowMutual:
-                                    return V;
-                                case F.Q.FollowFollowing:
+                                case I.Q.Sparkle:
                                     return z;
-                                case F.Q.Facepile:
+                                case I.Q.SocialProof:
+                                case I.Q.FollowFollowed:
+                                    return j;
+                                case I.Q.FollowMutual:
+                                    return V;
+                                case I.Q.FollowFollowing:
+                                    return G;
+                                case I.Q.Facepile:
                                     return Q;
-                                case F.Q.Bird:
+                                case I.Q.Bird:
                                     return $;
-                                case F.Q.TextOnly:
+                                case I.Q.TextOnly:
                                 default:
                                     return null;
                             }
                         })(e, r, t, P);
                     switch (e) {
-                        case F.Q.Retweet:
+                        case I.Q.Retweet:
                             return { Icon: H, text: T || O(U, R), link: M ? `https://twitter.com/${M}` : void 0 };
-                        case F.Q.Pin:
+                        case I.Q.Pin:
                             return { Icon: H, text: T || S };
-                        case F.Q.ReplyPin:
+                        case I.Q.ReplyPin:
                             return { Icon: H, text: k };
-                        case F.Q.Topic:
+                        case I.Q.Topic:
                             return { Icon: H, "aria-label": "Recommendation" === Z?.functionalityType || "RecWithEducation" === Z?.functionalityType ? A({ topicName: T }) : L({ topicName: T }), text: T ? n.createElement(N, { text: T }) : null, link: o };
                         default:
                             return { Icon: H, text: T ? n.createElement(N, { text: T }) : null, link: o };
@@ -354,9 +354,9 @@
                 render() {
                     const { avatarSize: e, bottomControl: t, iconStyle: r, id: l, onLayout: c, rightControl: d, style: h, testID: m, textColor: g, textSize: f, topControl: w, weight: y, withBottomBorder: b, withLeftPadding: E, withTextCentered: v, ...C } = this.props,
                         { Icon: x, "aria-label": T, link: _, text: Z } = (0, u.Z)(C),
-                        I = n.createElement(i.ZP, { "aria-label": T, color: g, id: l, numberOfLines: 2, size: f, testID: m, weight: y, withoutTwemojiAndHashflags: !0 }, Z),
-                        { cellStyle: F, viewStyle: P } = this._getStyles();
-                    return Z ? n.createElement(s.ZP.UseProps, null, (i) => n.createElement(n.Fragment, null, w || null, n.createElement(o.Z, { onLayout: c, style: [h, P, i.socialContextRefreshEnabled() && !E && p.socialContextRefresh] }, n.createElement(a.Z, { avatarCell: x || (E ? null : void 0), avatarCellStyle: [r, p.socialContextIconColumn, !E && p.unsetIconWidth, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshIcon], avatarSize: e, cellStyle: F }, n.createElement(o.Z, { style: p.cellWrapper }, n.createElement(o.Z, { style: [p.socialContextTextColumn, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshTextColumn] }, _ ? this._renderLink(_, I) : I), d || null)), t || null))) : null;
+                        F = n.createElement(i.ZP, { "aria-label": T, color: g, id: l, numberOfLines: 2, size: f, testID: m, weight: y, withoutTwemojiAndHashflags: !0 }, Z),
+                        { cellStyle: I, viewStyle: P } = this._getStyles();
+                    return Z ? n.createElement(s.ZP.UseProps, null, (i) => n.createElement(n.Fragment, null, w || null, n.createElement(o.Z, { onLayout: c, style: [h, P, i.socialContextRefreshEnabled() && !E && p.socialContextRefresh] }, n.createElement(a.Z, { avatarCell: x || (E ? null : void 0), avatarCellStyle: [r, p.socialContextIconColumn, !E && p.unsetIconWidth, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshIcon], avatarSize: e, cellStyle: I }, n.createElement(o.Z, { style: p.cellWrapper }, n.createElement(o.Z, { style: [p.socialContextTextColumn, i.socialContextRefreshEnabled() && !E && p.socialContextRefreshTextColumn] }, _ ? this._renderLink(_, F) : F), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: r, id: o, onClick: a, retweetData: s, textColor: l, topicData: u } = this.props,
@@ -727,7 +727,7 @@
             r.d(t, { H: () => n });
             const n = ({ description: e, entities: t, withheldDescription: r, withheldEntities: n }) => (r ? { description: r, entities: n } : { description: e, entities: t });
         },
-        379327: (e, t, r) => {
+        790093: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 o = r(890601),
@@ -735,7 +735,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -1205,4 +1205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c.6aca9b7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-bc6ccf4c.4bbbfe7a.js.map

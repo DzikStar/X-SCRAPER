@@ -67,7 +67,7 @@
             const l = (0, o.Z)(a);
         },
         22371: (e, t, s) => {
-            s.r(t), s.d(t, { EmptyState: () => qe, TimelineRenderer: () => $e, default: () => je });
+            s.r(t), s.d(t, { EmptyState: () => qe, TimelineRenderer: () => je, default: () => $e });
             var n = s(807896),
                 i = (s(136728), s(202784)),
                 r = s(400752),
@@ -92,8 +92,8 @@
                 S = s(144256),
                 T = s(993547),
                 I = s(666536);
-            const k = { threshold: [0.01, 0.5] };
-            const R = class {
+            const R = { threshold: [0.01, 0.5] };
+            const k = class {
                 constructor(e) {
                     (this._itemsUnderObservation = {}),
                         (this._lingerCandidates = new Map()),
@@ -161,7 +161,7 @@
                             window.clearTimeout(this._reactivityCandidates.get(e)), this._reactivityCandidates.delete(e);
                         }),
                         e?.root && e.root === window.document && (e.root = null);
-                    const t = { ...k, ...e };
+                    const t = { ...R, ...e };
                     (this._onEventsTriggeredCallback = e?.onEventsTriggeredCallback), (this._observer = new window.IntersectionObserver(this._processIntersectionEntries, t)), (this._reactivityCallback = (e && e.reactivityCallback) || o.Z);
                 }
                 observe(e, t) {
@@ -249,17 +249,17 @@
             var F = s(325686),
                 M = s(530525),
                 O = s(439592),
-                U = s(529356),
-                H = s(392237),
+                H = s(529356),
+                U = s(392237),
                 V = s(520913),
                 W = s(946409),
                 z = s(947992);
             const G = Object.freeze({ Icon: "Icon", IconSmall: "IconSmall", FullWidth: "FullWidth" });
             var q = s(500002),
-                $ = s(686689),
-                j = s(668214),
+                j = s(686689),
+                $ = s(668214),
                 K = s(601576);
-            const Y = (0, j.Z)()
+            const Y = (0, $.Z)()
                 .propsFromActions(() => ({ addToast: K.fz }))
                 .withAnalytics();
             class X extends i.PureComponent {
@@ -310,18 +310,18 @@
                 }
                 render() {
                     const { details: e, dismissInfo: t, displayType: s, image: n, imageDisplayType: r, primaryCta: a, primaryText: l, secondaryCta: c, secondaryText: h, type: d } = this.props,
-                        p = i.createElement($.Z, { entities: l.entities, text: l.text }),
-                        u = h ? i.createElement($.Z, { entities: h.entities, text: h.text }) : null,
+                        p = i.createElement(j.Z, { entities: l.entities, text: l.text }),
+                        u = h ? i.createElement(j.Z, { entities: h.entities, text: h.text }) : null,
                         { graphic: m, graphicDisplayMode: _, graphicStyle: g } = this._getGraphicProps(n, r);
                     if (d === z.Z.Full) {
-                        const n = e ? i.createElement($.Z, { entities: e.entities, text: e.text }) : null;
-                        return i.createElement(U.Z, { actionLabel: a.text, footer: n, graphic: m, graphicDisplayMode: _, graphicStyle: g, headline: p, isFullHeightOnMobile: !t && "CenterCover" !== s, onAction: this._handlePrimaryCtaClick, onClose: this._handleDismiss, onTertiaryAction: this._handleSecondaryCtaClick, subtext: u, tertiaryActionLabel: c && c.text, withCloseButton: !!t });
+                        const n = e ? i.createElement(j.Z, { entities: e.entities, text: e.text }) : null;
+                        return i.createElement(H.Z, { actionLabel: a.text, footer: n, graphic: m, graphicDisplayMode: _, graphicStyle: g, headline: p, isFullHeightOnMobile: !t && "CenterCover" !== s, onAction: this._handlePrimaryCtaClick, onClose: this._handleDismiss, onTertiaryAction: this._handleSecondaryCtaClick, subtext: u, tertiaryActionLabel: c && c.text, withCloseButton: !!t });
                     }
-                    return i.createElement(U.Z, { actionLabel: a.text, graphic: m, graphicDisplayMode: r === G.FullWidth ? _ : "none", graphicStyle: g, headline: p, onAction: this._handlePrimaryCtaClick, onClose: o.Z, onSecondaryAction: this._handleSecondaryCtaClick, secondaryActionLabel: c && c.text, subtext: u, withCloseButton: !1 });
+                    return i.createElement(H.Z, { actionLabel: a.text, graphic: m, graphicDisplayMode: r === G.FullWidth ? _ : "none", graphicStyle: g, headline: p, onAction: this._handlePrimaryCtaClick, onClose: o.Z, onSecondaryAction: this._handleSecondaryCtaClick, secondaryActionLabel: c && c.text, subtext: u, withCloseButton: !1 });
                 }
             }
             X.defaultProps = { imageDisplayType: G.Icon };
-            const J = H.default.create((e) => ({ fullWidthNoBleedTop: { width: "100%", height: "auto" } })),
+            const J = U.default.create((e) => ({ fullWidthNoBleedTop: { width: "100%", height: "auto" } })),
                 Q = (0, q.ZP)(Y(X));
             var ee = s(370006),
                 te = s(731708),
@@ -429,21 +429,21 @@
                 _renderSettings(e) {
                     return i.createElement(
                         F.Z,
-                        { style: { marginBottom: H.default.theme.spaces.space20 } },
+                        { style: { marginBottom: U.default.theme.spaces.space20 } },
                         e.map((e, t) => i.createElement(F.Z, { key: t }, this._renderSettingValue(e))),
                     );
                 }
                 _renderFooter({ branchInfo: e, clientEventInfo: t, icon: s, primaryText: n }) {
                     const { entities: r, text: o } = n,
                         a = e?.enable_branch,
-                        l = re.Z.generate({ backgroundColor: "transparent", color: H.default.theme.colors.primary });
+                        l = re.Z.generate({ backgroundColor: "transparent", color: U.default.theme.colors.primary });
                     return i.createElement(oe.Z, { interactive: !!a, onClick: a ? this._handleSwitchToApp({ clientEventInfo: t }) : void 0, style: ye.footer }, ({ isFocused: e, isHovered: n, isPressed: c }) => {
                         const h = [l.transitionStyle, n && l.hoverStyle, c && l.pressedStyle, e && l.focusedStyle];
-                        return i.createElement(F.Z, { style: h }, i.createElement(te.ZP, { align: "left", size: "body", weight: "bold" }, s && this._renderIcon(s), i.createElement(se.Z, { entities: r, onEntityClick: a ? void 0 : this._handleRichTextEntityClick({ clientEventInfo: t }), style: { marginStart: H.default.theme.spaces.space12 }, text: o })));
+                        return i.createElement(F.Z, { style: h }, i.createElement(te.ZP, { align: "left", size: "body", weight: "bold" }, s && this._renderIcon(s), i.createElement(se.Z, { entities: r, onEntityClick: a ? void 0 : this._handleRichTextEntityClick({ clientEventInfo: t }), style: { marginStart: U.default.theme.spaces.space12 }, text: o })));
                     });
                 }
                 _renderIcon(e) {
-                    if (e === pe.Z.LOGO) return i.createElement(V.default, { style: { color: H.default.theme.colors.primary } });
+                    if (e === pe.Z.LOGO) return i.createElement(V.default, { style: { color: U.default.theme.colors.primary } });
                 }
                 _renderAppBarCloseButton(e) {
                     return e ? i.createElement(ae.Z, { leftControl: this._renderCloseButton(), withBackground: !0 }) : null;
@@ -453,19 +453,19 @@
                         a = !!e,
                         l = !e && "HalfCover" !== t;
                     return i.createElement(le.ZP, null, ({ windowHeight: e, windowWidth: t }) => {
-                        const c = t > H.default.theme.breakpoints.medium,
+                        const c = t > U.default.theme.breakpoints.medium,
                             h = c;
                         return i.createElement(ce.Z, { enableMaskForDismiss: !0, onMaskClick: a ? r : void 0, style: c && fe.roundedBorders, type: l ? "full" : "bottom", withMask: !0 }, i.createElement(F.Z, { style: [fe.root, h && fe.withBottomPadding, !a && (h ? fe.appBarReplacementSpacer : fe.appBarReplacementSpacerThin)] }, this._renderAppBarCloseButton(a), i.createElement(F.Z, { style: fe.contentContainer }, i.createElement(F.Z, { style: fe.centeredContent }, i.createElement(F.Z, { style: [fe.content, !!s && fe.contentWithFooter] }, n && this._renderHeading(n), o && this._renderSettings(o))))), s && this._renderFooter(s));
                     });
                 }
             }
             ge.contextType = C.rC;
-            const ve = H.default.create((e) => ({ button: { width: "100%", margin: "auto", marginVertical: e.spaces.space12 }, ssoButton: { width: _e.fI, height: e.spaces.space40 } })),
-                fe = H.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, overflow: "auto", paddingBottom: e.spaces.space12 }, roundedBorders: { borderRadius: e.borderRadii.xLarge }, withBottomPadding: { paddingBottom: e.spaces.space48 }, appBarReplacementSpacer: { paddingTop: e.spaces.space48 }, appBarReplacementSpacerThin: { paddingTop: e.spaces.space20 }, contentWithFooter: { marginBottom: 0 }, content: { maxWidth: `calc((${e.spaces.space80} * 5) - ${e.spaces.space36})`, margin: e.spaces.space32, paddingHorizontal: e.spaces.space32 }, contentContainer: { alignItems: "center", flexGrow: 1 }, centeredContent: { width: "100%", flexGrow: 1, alignItems: "center", justifyContent: "center" } })),
-                ye = H.default.create((e) => ({ footer: { width: "100%", maxWidth: `calc((${e.spaces.space80} * 5)`, paddingVertical: e.spaces.space48, borderTopStyle: "solid", borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, alignItems: "center" } })),
-                be = H.default.create((e) => ({ headingContainer: { marginVertical: e.spaces.space20 }, content: { marginBottom: e.spaces.space32, justifyContent: "center" }, headline: { marginBottom: e.spaces.space8 }, imageContainer: { marginHorizontal: "auto", height: "initial", width: "initial" } })),
-                we = H.default.create((e) => ({ separatorContainer: { width: "100%" }, separatorColumn: { flex: 1, justifyContent: "center" }, separator: { width: "100%", height: e.spaces.space1, backgroundColor: e.colors.gray200, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, separatorText: { "flex-basis": "auto" } })),
-                Ee = H.default.create((e) => ({ container: { marginTop: e.spaces.space20 } })),
+            const ve = U.default.create((e) => ({ button: { width: "100%", margin: "auto", marginVertical: e.spaces.space12 }, ssoButton: { width: _e.fI, height: e.spaces.space40 } })),
+                fe = U.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, overflow: "auto", paddingBottom: e.spaces.space12 }, roundedBorders: { borderRadius: e.borderRadii.xLarge }, withBottomPadding: { paddingBottom: e.spaces.space48 }, appBarReplacementSpacer: { paddingTop: e.spaces.space48 }, appBarReplacementSpacerThin: { paddingTop: e.spaces.space20 }, contentWithFooter: { marginBottom: 0 }, content: { maxWidth: `calc((${e.spaces.space80} * 5) - ${e.spaces.space36})`, margin: e.spaces.space32, paddingHorizontal: e.spaces.space32 }, contentContainer: { alignItems: "center", flexGrow: 1 }, centeredContent: { width: "100%", flexGrow: 1, alignItems: "center", justifyContent: "center" } })),
+                ye = U.default.create((e) => ({ footer: { width: "100%", maxWidth: `calc((${e.spaces.space80} * 5)`, paddingVertical: e.spaces.space48, borderTopStyle: "solid", borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small, alignItems: "center" } })),
+                be = U.default.create((e) => ({ headingContainer: { marginVertical: e.spaces.space20 }, content: { marginBottom: e.spaces.space32, justifyContent: "center" }, headline: { marginBottom: e.spaces.space8 }, imageContainer: { marginHorizontal: "auto", height: "initial", width: "initial" } })),
+                we = U.default.create((e) => ({ separatorContainer: { width: "100%" }, separatorColumn: { flex: 1, justifyContent: "center" }, separator: { width: "100%", height: e.spaces.space1, backgroundColor: e.colors.gray200, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, separatorText: { "flex-basis": "auto" } })),
+                Ee = U.default.create((e) => ({ container: { marginTop: e.spaces.space20 } })),
                 Ce = (0, q.ZP)((0, b.Z)(ge)),
                 Se = { component: "cover", action: "impression" },
                 Te = ({ activeCover: e, clearActiveCover: t, processCallback: s }) => {
@@ -498,12 +498,12 @@
                     var a;
                 };
             var Ie = s(459643),
-                ke = s(143778),
-                Re = s(414939),
+                Re = s(143778),
+                ke = s(414939),
                 Ze = s(290402);
-            const Pe = (0, Ie.Z)(i.createElement(Re.Z, null)),
-                xe = ({ bottomFetchStatus: e, onBottomRetry: t, withEndOfContent: s }) => i.createElement(F.Z, { style: s && Ae.footer }, i.createElement(Ze.Z, { fetchStatus: e, onRequestRetry: t, render: s ? Pe : ke.Z })),
-                Ae = H.default.create((e) => ({ footer: { height: 10 * e.lineHeightsPx.body } })),
+            const Pe = (0, Ie.Z)(i.createElement(ke.Z, null)),
+                xe = ({ bottomFetchStatus: e, onBottomRetry: t, withEndOfContent: s }) => i.createElement(F.Z, { style: s && Ae.footer }, i.createElement(Ze.Z, { fetchStatus: e, onRequestRetry: t, render: s ? Pe : Re.Z })),
+                Ae = U.default.create((e) => ({ footer: { height: 10 * e.lineHeightsPx.body } })),
                 Le = i.memo(xe);
             var Be = s(726499);
             function De({ children: e, entries: t, getScroller: s, withFasterCellEntrance: n = !1 }) {
@@ -514,7 +514,7 @@
                             [n, r] = i.useState(Oe);
                         if (e > t) {
                             s(e);
-                            Math.max(Me - Ue * e, 0);
+                            Math.max(Me - He * e, 0);
                             r(Math.min(Oe));
                         } else 0 === e && 0 !== t && s(0);
                         return n;
@@ -563,8 +563,8 @@
             });
             const Me = 8e3,
                 Oe = 1e3,
-                Ue = 200;
-            const He = (e) => e.entryId,
+                He = 200;
+            const Ue = (e) => e.entryId,
                 Ve = (e) => e.sortIndex;
             const We = new Map(),
                 ze = new Map(),
@@ -586,7 +586,7 @@
                     t()
                 );
             }
-            class $e extends i.PureComponent {
+            class je extends i.PureComponent {
                 constructor(e, t) {
                     var s;
                     super(e, t),
@@ -595,8 +595,8 @@
                         (this._renderScroller = (e) => {
                             const { anchoring: t, handlerRegistry: s, header: n, isInitialFocusEntry: r, module: o, nearStartProximityRatio: a, scroller: l, timelineId: c, withKeyboardShortcuts: h, withoutHeadroom: d } = this.props,
                                 p = this._getInitialFocusedEntry(e, r),
-                                u = p && m.X(He(p));
-                            return i.createElement(l, { anchoring: t, assumedItemHeight: Ge, cacheKey: c, footer: this._renderFooter(), header: n, identityFunction: He, initialAnchor: u, items: e, nearStartProximityRatio: a, onAtEnd: this._handleAtBottom, onAtStart: this._handleAtTop, onItemsRendered: this._handleItemsRendered, onKeyboardRefresh: this._handleKeyboardRefresh, onNearEnd: this._handleNearBottom, onNearStart: this._handleNearTop, onPositionRestored: this._handlePositionRestored, ref: this._setScroller, renderer: this._getCellRenderer(s, o), sortIndexFunction: Ve, withKeyboardShortcuts: h, withoutHeadroom: d });
+                                u = p && m.X(Ue(p));
+                            return i.createElement(l, { anchoring: t, assumedItemHeight: Ge, cacheKey: c, footer: this._renderFooter(), header: n, identityFunction: Ue, initialAnchor: u, items: e, nearStartProximityRatio: a, onAtEnd: this._handleAtBottom, onAtStart: this._handleAtTop, onItemsRendered: this._handleItemsRendered, onKeyboardRefresh: this._handleKeyboardRefresh, onNearEnd: this._handleNearBottom, onNearStart: this._handleNearTop, onPositionRestored: this._handlePositionRestored, ref: this._setScroller, renderer: this._getCellRenderer(s, o), sortIndexFunction: Ve, withKeyboardShortcuts: h, withoutHeadroom: d });
                         }),
                         (this._isAtNewest = () => this._scroller?.isAtNewest() ?? !0),
                         (this._scrollViewportToTopAndUpdate = () => {
@@ -745,7 +745,7 @@
                         (this._setScroller = (e) => {
                             this._scroller = e;
                         }),
-                        (this._newImpressionTrackerV2 = () => (window.IntersectionObserver ? new R({ onEventsTriggeredCallback: this._impressionTrackerRefactorEnabled ? this._handleOnEventsTriggeredCallback : void 0, root: this.props.viewport.getViewport(), rootMargin: this.props.viewport.getRootMargin(), reactivityCallback: this._handleOnLingerEvent }) : void 0)),
+                        (this._newImpressionTrackerV2 = () => (window.IntersectionObserver ? new k({ onEventsTriggeredCallback: this._impressionTrackerRefactorEnabled ? this._handleOnEventsTriggeredCallback : void 0, root: this.props.viewport.getViewport(), rootMargin: this.props.viewport.getRootMargin(), reactivityCallback: this._handleOnLingerEvent }) : void 0)),
                         performance?.mark?.(`${e.perfKey}-initial-render-start`),
                         (this._impressionTrackerRefactorEnabled = t.featureSwitches.isTrue("responsive_web_impression_tracker_refactor_enabled")),
                         (this._streamScribeCancelCallbacks = []),
@@ -862,10 +862,10 @@
                     this._streamScribeCancelCallbacks.forEach((e) => e());
                 }
             }
-            ($e.contextType = C.rC), ($e.defaultProps = { impressionCache: We, lingerCache: ze, onBottomRetry: o.Z, onNearBottom: o.Z, onNearTop: o.Z, onRefresh: o.Z, refreshControl: S.Z, scroller: u.C, newTweetsPill: _.Z, withoutHeadroom: !1, showLoadingFooter: !0, withKeyboardShortcuts: !0 });
-            const je = (0, T.Z)(
+            (je.contextType = C.rC), (je.defaultProps = { impressionCache: We, lingerCache: ze, onBottomRetry: o.Z, onNearBottom: o.Z, onNearTop: o.Z, onRefresh: o.Z, refreshControl: S.Z, scroller: u.C, newTweetsPill: _.Z, withoutHeadroom: !1, showLoadingFooter: !0, withKeyboardShortcuts: !0 });
+            const $e = (0, T.Z)(
                 (0, b.Z)(
-                    ((Ke = $e),
+                    ((Ke = je),
                     i.forwardRef((e, t) => {
                         const s = (0, r.oR)();
                         return i.createElement(Ke, (0, n.Z)({}, e, { jotaiStore: s }));
@@ -960,38 +960,6 @@
             }
             (C.contextType = m.rC), (C.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
             const S = (0, u.ZP)((0, _.Z)(C));
-        },
-        951790: (e, t, s) => {
-            s.d(t, { Z: () => o });
-            var n = s(323265);
-            const i = {
-                    setLocation(e) {
-                        document.location = e;
-                    },
-                    getAppStoreURLs(e = "rwoiah") {
-                        const t = r(e),
-                            s = [t.android, t.ios],
-                            n = s.find((e) => e.matches());
-                        return n ? [n] : s;
-                    },
-                    getiOSAppStoreLink(e) {
-                        const t = r(e);
-                        return t.ios.matches() ? t.ios.url : t.ios.webUrl;
-                    },
-                    getAndroidAppStoreLink(e) {
-                        const t = r(e);
-                        return t.android.matches() ? t.android.url : t.android.webUrl;
-                    },
-                    goToAppStore(e) {
-                        const t = this.getAppStoreURLs(e);
-                        t[0] && i.setLocation(t[0].url);
-                    },
-                    openApp(e = "twitter://timeline") {
-                        i.setLocation(e);
-                    },
-                },
-                r = (e = "rwoiah") => ({ android: { platform: "android", matches: () => n.ZP.isAndroid(), url: `market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}`, webUrl: `https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}` }, ios: { platform: "ios", matches: () => n.ZP.isIOS(), url: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8`, webUrl: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8` } }),
-                o = i;
         },
         23679: (e, t, s) => {
             s.d(t, { K: () => n });
@@ -1176,4 +1144,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineRenderer.23626f0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineRenderer.9974c76a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.PremiumHub", "icons/IconBookStrokeOn-js"],
+    ["bundle.PremiumHub", "icons/IconBookmarkCollectionsStroke-js", "icons/IconDocument-js", "icons/IconWriteStroke-js"],
     {
         252021: (e, l, n) => {
             n.d(l, { Z: () => i });
@@ -89,13 +89,13 @@
                 f = n(392237),
                 F = n(952793),
                 S = n(125363),
-                _ = n(215929);
+                _ = n(691213);
             const E = s().d7eebb60,
-                P = s().h707b180,
-                C = s().a452ab68,
+                C = s().h707b180,
+                P = s().a452ab68,
                 K = s().g61ed8a4,
-                H = s().a905eac6,
-                T = ({ tierSwitchTarget: e, tierSwitchType: l }) => {
+                v = s().a905eac6,
+                Z = ({ tierSwitchTarget: e, tierSwitchType: l }) => {
                     const { userClaims: n } = (0, o.QZ)(),
                         [r, i] = a.useState("loading"),
                         u = (0, S.I0)(),
@@ -114,24 +114,24 @@
                             clearInterval(r);
                         };
                     }, [e, n, u, c, l, f, d]);
-                    const T = a.useMemo(() => (l && "loaded" === r && d ? P : E), [l, r, d]),
-                        v = a.useMemo(() => ("loading" === r ? a.createElement(m.Z, { style: Z.fullWidth }, a.createElement(g.ZP, null, C), a.createElement(y.Z, { style: Z.marginTop })) : "failed" === r ? a.createElement(m.Z, { style: [Z.marginTop, Z.fullWidth] }, a.createElement(p.Z.Danger, { headline: K, text: a.createElement(s().I18NFormatMessage, { $i18n: "b88304a3" }, a.createElement(g.ZP, { link: (0, k.ju)("https://x.com/premium") }, s().b3bad3b2)) })) : "loaded" === r && l && d ? a.createElement(m.Z, null, a.createElement(b.ZP, { onClick: f, size: "large", style: Z.exploreHubButton, type: "primaryFilled" }, H)) : null), [r, f, l, d]);
-                    return a.createElement(h.Z, { graphicDisplayMode: "none", headline: T, onAction: () => {}, subtext: v, withCloseButton: !1 });
+                    const Z = a.useMemo(() => (l && "loaded" === r && d ? C : E), [l, r, d]),
+                        L = a.useMemo(() => ("loading" === r ? a.createElement(m.Z, { style: H.fullWidth }, a.createElement(g.ZP, null, P), a.createElement(y.Z, { style: H.marginTop })) : "failed" === r ? a.createElement(m.Z, { style: [H.marginTop, H.fullWidth] }, a.createElement(p.Z.Danger, { headline: K, text: a.createElement(s().I18NFormatMessage, { $i18n: "b88304a3" }, a.createElement(g.ZP, { link: (0, k.ju)("https://x.com/premium") }, s().b3bad3b2)) })) : "loaded" === r && l && d ? a.createElement(m.Z, null, a.createElement(b.ZP, { onClick: f, size: "large", style: H.exploreHubButton, type: "primaryFilled" }, v)) : null), [r, f, l, d]);
+                    return a.createElement(h.Z, { graphicDisplayMode: "none", headline: Z, onAction: () => {}, subtext: L, withCloseButton: !1 });
                 },
-                Z = f.default.create((e) => ({ marginTop: { marginTop: e.spaces.space24 }, fullWidth: { width: "100%" }, exploreHubButton: { marginTop: e.spaces.space16 } }));
-            var v,
-                L,
+                H = f.default.create((e) => ({ marginTop: { marginTop: e.spaces.space24 }, fullWidth: { width: "100%" }, exploreHubButton: { marginTop: e.spaces.space16 } }));
+            var L,
+                T,
                 x,
                 w,
                 B,
                 R,
-                I,
+                z,
                 D,
-                z = n(537392),
-                A = n(698891),
-                M = n(252021),
-                O = n(10656),
-                Q = n(725516),
+                I = n(537392),
+                M = n(698891),
+                A = n(252021),
+                Q = n(10656),
+                O = n(725516),
                 V = (n(136728), n(277660)),
                 N = n.n(V),
                 U = {
@@ -157,8 +157,8 @@
                                         name: "content",
                                         plural: !1,
                                         selections: [
-                                            { alias: null, args: null, concreteType: "PremiumHubConfigSection", kind: "LinkedField", name: "primary", plural: !0, selections: (L = [(v = { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null }), { args: null, kind: "FragmentSpread", name: "PremiumHubQuery_section" }]), storageKey: null },
-                                            { alias: null, args: null, concreteType: "PremiumHubConfigSection", kind: "LinkedField", name: "secondary", plural: !0, selections: L, storageKey: null },
+                                            { alias: null, args: null, concreteType: "PremiumHubConfigSection", kind: "LinkedField", name: "primary", plural: !0, selections: (T = [(L = { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null }), { args: null, kind: "FragmentSpread", name: "PremiumHubQuery_section" }]), storageKey: null },
+                                            { alias: null, args: null, concreteType: "PremiumHubConfigSection", kind: "LinkedField", name: "secondary", plural: !0, selections: T, storageKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -199,7 +199,7 @@
                                                 name: "primary",
                                                 plural: !0,
                                                 selections: (D = [
-                                                    v,
+                                                    L,
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -213,7 +213,7 @@
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
-                                                                    v,
+                                                                    L,
                                                                     (B = {
                                                                         alias: null,
                                                                         args: null,
@@ -238,13 +238,13 @@
                                                                     { alias: null, args: null, concreteType: "PremiumHubConfigTextLink", kind: "LinkedField", name: "text_link", plural: !1, selections: [(R = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null }), w], storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "card_block_type", storageKey: null },
-                                                                    (I = { alias: null, args: null, kind: "ScalarField", name: "heading", storageKey: null }),
+                                                                    (z = { alias: null, args: null, kind: "ScalarField", name: "heading", storageKey: null }),
                                                                     { alias: null, args: null, kind: "ScalarField", name: "subheading", storageKey: null },
                                                                 ],
                                                                 type: "PremiumHubConfigCardBlock",
                                                                 abstractKey: null,
                                                             },
-                                                            { kind: "InlineFragment", selections: [v, { alias: null, args: null, kind: "ScalarField", name: "color", storageKey: null }, I, { alias: null, args: null, kind: "ScalarField", name: "icon", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "link_block_type", storageKey: null }, { alias: null, args: null, concreteType: "PremiumHubConfigPill", kind: "LinkedField", name: "pill", plural: !1, selections: [R, { alias: null, args: null, kind: "ScalarField", name: "pill_type", storageKey: null }], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "subtext", storageKey: null }, w], type: "PremiumHubConfigLinkBlock", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [L, { alias: null, args: null, kind: "ScalarField", name: "color", storageKey: null }, z, { alias: null, args: null, kind: "ScalarField", name: "icon", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "link_block_type", storageKey: null }, { alias: null, args: null, concreteType: "PremiumHubConfigPill", kind: "LinkedField", name: "pill", plural: !1, selections: [R, { alias: null, args: null, kind: "ScalarField", name: "pill_type", storageKey: null }], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "subtext", storageKey: null }, w], type: "PremiumHubConfigLinkBlock", abstractKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -264,8 +264,8 @@
                     params: { id: "ZSf-h40cwVaFsNHK_PiHUw", metadata: {}, name: "PremiumHubQuery", operationKind: "query", text: null },
                 };
             U.hash = "af1bf05e9a6a9c643edfc3d0ab1e0895";
-            const q = U;
-            var W = {
+            const W = U;
+            var q = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -279,7 +279,7 @@
                 abstractKey: null,
                 hash: "d02fbfd13f031b00c03e0a3189cf2fe0",
             };
-            const j = W;
+            const j = q;
             var G = (function () {
                 var e = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
                     l = { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null },
@@ -371,11 +371,11 @@
             const Y = J,
                 ee = $,
                 le = j,
-                ne = q;
+                ne = W;
             var ae = n(530525),
                 te = n(439592);
             const re = ({ buttonText: e, heading: l, imageUrl: n, isPrimarySection: t, subheading: r, textLink: i, type: s, url: o }) => {
-                    const u = (0, Q.z)();
+                    const u = (0, O.z)();
                     return a.createElement(
                         m.Z,
                         { style: se.cardBlock },
@@ -414,7 +414,7 @@
                 ge = n(693510);
             const ye = { Warning: "orange50", Info: "blue500" },
                 pe = ({ blockKey: e, color: l, heading: n, icon: t, isFirst: r, isLast: i, isPrimarySection: s, pill: o, subtext: u, type: c, url: d }) => {
-                    const y = (0, Q.z)(),
+                    const y = (0, O.z)(),
                         {
                             id: p,
                             link: k,
@@ -429,7 +429,7 @@
                     r && S.push(be.isFirst), i && S.push(be.isLast);
                     const _ = h || (!s && !h),
                         E = { backgroundColor: l ? f.default.theme.colors[l] : null },
-                        P = a.useMemo(() => (o ? a.createElement(oe.ZP, { background: ye[o.pill_type] }, o.text) : null), [o]);
+                        C = a.useMemo(() => (o ? a.createElement(oe.ZP, { background: ye[o.pill_type] }, o.text) : null), [o]);
                     return a.createElement(
                         ue.Z,
                         {
@@ -440,7 +440,7 @@
                             },
                             style: [be.linkBlock, _ ? [be.backgroundGray, S] : null],
                         },
-                        a.createElement(m.Z, { style: [be.inner, !i && _ ? be.divider : null] }, t ? a.createElement(ce.Z, { Icon: (0, me.U)(t), shape: "square", size: "large", style: E }) : null, a.createElement(g.ZP, { style: be.heading }, n), a.createElement(m.Z, { style: be.rightContent }, u ? a.createElement(g.ZP, { color: "gray700" }, u) : null, P, a.createElement(de.default, { style: be.chevron }))),
+                        a.createElement(m.Z, { style: [be.inner, !i && _ ? be.divider : null] }, t ? a.createElement(ce.Z, { Icon: (0, me.U)(t), shape: "square", size: "large", style: E }) : null, a.createElement(g.ZP, { style: be.heading }, n), a.createElement(m.Z, { style: be.rightContent }, u ? a.createElement(g.ZP, { color: "gray700" }, u) : null, C, a.createElement(de.default, { style: be.chevron }))),
                     );
                 },
                 ke = a.memo(pe),
@@ -466,19 +466,19 @@
                             return a.createElement(fe, { blockRef: e, isFirst: r, isLast: i, isPrimarySection: n, key: `block-${l}` });
                         }),
                         o = [];
-                    return e && o.push(Ce.isFirst), e || o.push(Ce.isNotFirst), l && o.push(Ce.isLast), a.createElement(m.Z, { style: o }, i, s);
+                    return e && o.push(Pe.isFirst), e || o.push(Pe.isNotFirst), l && o.push(Pe.isLast), a.createElement(m.Z, { style: o }, i, s);
                 },
-                Pe = a.memo(Ee),
-                Ce = f.default.create((e) => ({ isNotFirst: { marginTop: e.spaces.space16 }, isFirst: { marginTop: e.spaces.space8 }, isLast: { marginBottom: e.spaces.space64 } }));
+                Ce = a.memo(Ee),
+                Pe = f.default.create((e) => ({ isNotFirst: { marginTop: e.spaces.space16 }, isFirst: { marginTop: e.spaces.space8 }, isLast: { marginBottom: e.spaces.space64 } }));
             var Ke = n(664064);
-            const He = () => (!(0, t.useLocation)().state && document.referrer.includes("premium_signup_nux_flow") ? a.createElement(m.Z, { style: Te.confetti }, a.createElement(Ke.Z, { autoplay: !0, count: 40, duration: 4e3, image_url: "light" === f.default.theme.paletteName ? "https://abs.twimg.com/responsive-web/client-web/X_logo_black.00ba8bfa.png" : "https://abs.twimg.com/responsive-web/client-web/X_logo_white.22c1baea.png", type: "image" })) : null),
-                Te = f.default.create((e) => ({ confetti: { pointerEvents: "none", position: "fixed", width: "100%", height: "100%", top: 0, start: 0, zIndex: 3 } })),
-                Ze = s().f75d1806,
-                ve = s().bb081ea2,
-                Le = ({ data: e }) => {
+            const ve = () => (!(0, t.useLocation)().state && document.referrer.includes("premium_signup_nux_flow") ? a.createElement(m.Z, { style: Ze.confetti }, a.createElement(Ke.Z, { autoplay: !0, count: 40, duration: 4e3, image_url: "light" === f.default.theme.paletteName ? "https://abs.twimg.com/responsive-web/client-web/X_logo_black.00ba8bfa.png" : "https://abs.twimg.com/responsive-web/client-web/X_logo_white.22c1baea.png", type: "image" })) : null),
+                Ze = f.default.create((e) => ({ confetti: { pointerEvents: "none", position: "fixed", width: "100%", height: "100%", top: 0, start: 0, zIndex: 3 } })),
+                He = s().f75d1806,
+                Le = s().bb081ea2,
+                Te = ({ data: e }) => {
                     const l = (0, t.useHistory)(),
-                        n = (0, Q.z)(),
-                        r = (0, z.Zx)(({ containerWidth: e }) => O.Z.isTwoColumnLayout(e));
+                        n = (0, O.z)(),
+                        r = (0, I.Zx)(({ containerWidth: e }) => Q.Z.isTwoColumnLayout(e));
                     a.useEffect(() => {
                         n.scribeAction("impression");
                     }, [n]);
@@ -492,7 +492,7 @@
                                 .map((e, l, n) => {
                                     const t = 0 === l,
                                         r = l === n.length - 1;
-                                    return a.createElement(c.nO, { key: `primary-section-${l}`, namespace: { section: e.key } }, a.createElement(Pe, { isFirst: t, isLast: r, isPrimarySection: !0, sectionRef: e }));
+                                    return a.createElement(c.nO, { key: `primary-section-${l}`, namespace: { section: e.key } }, a.createElement(Ce, { isFirst: t, isLast: r, isPrimarySection: !0, sectionRef: e }));
                                 }),
                         ),
                         u = a.createElement(
@@ -501,27 +501,27 @@
                             i?.secondary?.map((e, l, n) => {
                                 const t = 0 === l,
                                     r = l === n.length - 1;
-                                return a.createElement(c.nO, { key: `secondary-section-${l}`, namespace: { section: e.key } }, a.createElement(Pe, { isFirst: t, isLast: r, isPrimarySection: !1, sectionRef: e }));
+                                return a.createElement(c.nO, { key: `secondary-section-${l}`, namespace: { section: e.key } }, a.createElement(Ce, { isFirst: t, isLast: r, isPrimarySection: !1, sectionRef: e }));
                             }),
                         ),
-                        d = a.createElement(b.ZP, { "aria-label": ve, icon: a.createElement(A.default, null), link: "/settings/premium", type: "primaryText" });
-                    return a.createElement(a.Fragment, null, a.createElement(M.Z, { headerless: !1, history: l, primaryContent: o, rightControl: d, sidebarContent: u, title: Ze }), a.createElement(He, null));
+                        d = a.createElement(b.ZP, { "aria-label": Le, icon: a.createElement(M.default, null), link: "/settings/premium", type: "primaryText" });
+                    return a.createElement(a.Fragment, null, a.createElement(A.Z, { headerless: !1, history: l, primaryContent: o, rightControl: d, sidebarContent: u, title: He }), a.createElement(ve, null));
                 },
-                xe = a.memo(Le),
+                xe = a.memo(Te),
                 we = f.default.create((e) => ({ primaryContent: { paddingStart: e.spaces.space16, paddingEnd: e.spaces.space24 }, secondaryContent: { paddingTop: e.spaces.space32 } })),
                 Be = s().a0b4541c,
                 Re = (0, u.z)(ne, { errorConfig: { context: "PREMIUM_HUB_SCREEN" } }),
-                Ie = () => {
+                ze = () => {
                     const { userClaims: e } = (0, o.QZ)(),
                         l = (0, t.useLocation)(),
                         n = l.state?.tierSwitchTarget,
                         i = l.state?.tierSwitchType;
-                    return n || !e.isAnyPremiumSubscriber() ? a.createElement(T, { tierSwitchTarget: n, tierSwitchType: i }) : a.createElement(c.nO, { namespace: { page: "premium_hub" } }, a.createElement(Re, { render: ({ data: e, fetchStatus: l, retry: n }) => (l === u.i.FAILED ? a.createElement(r.Z, { onRequestRetry: n, retryMessage: Be }) : l === u.i.LOADED ? (e ? a.createElement(xe, { data: e }) : a.createElement(d.Z, { to: "/home" })) : null), variables: {} }));
+                    return n || !e.isAnyPremiumSubscriber() ? a.createElement(Z, { tierSwitchTarget: n, tierSwitchType: i }) : a.createElement(c.nO, { namespace: { page: "premium_hub" } }, a.createElement(Re, { render: ({ data: e, fetchStatus: l, retry: n }) => (l === u.i.FAILED ? a.createElement(r.Z, { onRequestRetry: n, retryMessage: Be }) : l === u.i.LOADED ? (e ? a.createElement(xe, { data: e }) : a.createElement(d.Z, { to: "/home" })) : null), variables: {} }));
                 },
-                De = a.memo(Ie);
+                De = a.memo(ze);
         },
         498514: (e, l, n) => {
-            n.d(l, { U: () => T });
+            n.d(l, { U: () => Z });
             n(202784);
             var a = n(521058),
                 t = n(847988),
@@ -544,11 +544,11 @@
                 S = n(254944),
                 _ = n(465072),
                 E = n(189700),
-                P = n(520489),
-                C = n(297938),
+                C = n(520489),
+                P = n(297938),
                 K = n(136483),
-                H = n(457566);
-            const T = (e) => {
+                v = n(457566);
+            const Z = (e) => {
                 switch (e) {
                     case "Fire":
                         return a.default;
@@ -571,7 +571,7 @@
                     case "NotesStroke":
                         return m.default;
                     case "Grok":
-                        return H.x1;
+                        return v.x1;
                     case "MoneyStroke":
                         return g.default;
                     case "BarChart":
@@ -595,9 +595,9 @@
                     case "Document":
                         return E.default;
                     case "RadarStroke":
-                        return P.default;
-                    case "SearchPersonStroke":
                         return C.default;
+                    case "SearchPersonStroke":
+                        return P.default;
                     case "CircleFill":
                         return K.default;
                     default:
@@ -605,7 +605,7 @@
                 }
             };
         },
-        847988: (e, l, n) => {
+        28862: (e, l, n) => {
             n.r(l), n.d(l, { default: () => o });
             var a = n(202784),
                 t = n(890601),
@@ -613,11 +613,39 @@
                 i = n(347101);
             const s = (e = {}) => {
                 const { direction: l } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.2 4c-1.2 0-2.4.5-3.2 1.3-.8-.8-2-1.3-3.2-1.3H1v16h8.2c.8 0 1.4.4 1.8 1.1l.2.3H13c.5-.9 1.1-1.5 2-1.5h8V4h-7.8zM11 18.5c-.6-.3-1.2-.5-1.8-.5H3V6h5.8c.9 0 1.8.5 2.2 1.3v11.2zm10-.5h-6.1c-.7 0-1.3.2-1.9.5V7.3c.5-.8 1.3-1.3 2.2-1.3H21v12zm-2-5v2h-4v-2h4zm0-4v2h-4V9h4zM9 9v2H5V9h4zm0 4v2H5v-2h4z" })) }, { writingDirection: l });
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M2.998 8.5c0-1.38 1.119-2.5 2.5-2.5h9c1.381 0 2.5 1.12 2.5 2.5v14.12l-7-3.5-7 3.5V8.5zm2.5-.5c-.276 0-.5.22-.5.5v10.88l5-2.5 5 2.5V8.5c0-.28-.224-.5-.5-.5h-9zM18.5 2H8.998c-1.105 0-2 .9-2 2H18.5c.276 0 .5.22.5.5v9.82l-.002-.01v2.28L21 17.68V4.5C21 3.12 19.881 2 18.5 2z" })) }, { writingDirection: l });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
+        189700: (e, l, n) => {
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M8 11h8v2H8zm0-4h5v2H8z" }), a.createElement("path", { d: "M17.5 2h-11C5.12 2 4 3.12 4 4.5v15C4 20.88 5.12 22 6.5 22h6c4.14 0 7.5-3.36 7.5-7.5v-10C20 3.12 18.88 2 17.5 2zm-2.52 17.41c.01-.1.02-.21.02-.32v-1.27c0-.48.32-.82.84-.82h1.28c.09 0 .19 0 .29-.01-.53 1.04-1.39 1.89-2.43 2.42zM18 14c0 .58-.46 1-.88 1h-1.28C14.26 15 13 16.19 13 17.82v1.27c0 .46-.43.91-.97.91H6.5c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h11c.27 0 .5.22.5.5V14z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        376021: (e, l, n) => {
+            n.r(l), n.d(l, { default: () => u });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(717683),
+                s = n(347101);
+            const o = (e = {}) => {
+                const l = a.useContext(i.Z),
+                    { direction: n } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, l && s.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: n });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const u = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumHub.050be52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumHub.cc52152a.js.map

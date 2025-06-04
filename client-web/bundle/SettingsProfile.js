@@ -443,7 +443,7 @@
             var se = i(124964),
                 le = i(523561),
                 de = i(195560);
-            const ce = (0, le.Z)({ loader: () => Promise.all([i.e("icons.1"), i.e("icons.20"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
+            const ce = (0, le.Z)({ loader: () => Promise.all([i.e("icons.28"), i.e("ondemand.EditBirthdate")]).then(i.bind(i, 416482)), renderPlaceholder: (e, t) => r.createElement(de.Z, { hasError: e, onRetry: t }) }),
                 he = C().c119dee8,
                 pe = C().cfd2f35e,
                 ue = C().bbf0afc8,
@@ -891,4 +891,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.252f5e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfile.945502ea.js.map

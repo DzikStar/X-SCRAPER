@@ -191,7 +191,7 @@
                 f = n(71620),
                 h = n(668214),
                 b = n(365265),
-                g = n(215929),
+                g = n(691213),
                 _ = n(919022);
             const E = (0, h.Z)()
                     .propsFromState(() => ({ viewerUser: _.ZP.selectViewerUser, userClaimsFetchStatus: g.uD, subscription: (e) => (0, b.dF)(e) }))
@@ -352,7 +352,7 @@
                 g = n(466441),
                 _ = n(264922),
                 E = n(668214),
-                y = n(215929);
+                y = n(691213);
             const Z = (0, E.Z)()
                     .propsFromState(() => ({ userClaimsFetchStatus: y.uD }))
                     .withAnalytics({ page: "settings", section: "subscriptions" }),
@@ -1047,7 +1047,7 @@
                 g = n(668214),
                 _ = n(38562),
                 E = n(936572),
-                y = n(215929);
+                y = n(691213);
             const Z = (0, g.Z)()
                 .propsFromState(() => ({ undoTweetSettings: E.zD, userClaimsFetchStatus: y.uD }))
                 .propsFromActions(() => ({ updateSettings: _.VP }))
@@ -1189,4 +1189,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-1bcddef9.52538a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-1bcddef9.04fad39a.js.map

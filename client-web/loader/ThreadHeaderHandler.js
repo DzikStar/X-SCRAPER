@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.ThreadHeaderHandler"],
+    ["loader.ThreadHeaderHandler", "icons/IconFeedback-js"],
     {
         79056: (e, t, r) => {
             r.r(t), r.d(t, { default: () => u });
@@ -98,7 +98,7 @@
             const g = c.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row" }, icon: { color: e.colors.gray700, height: "1em", marginEnd: e.spaces.space4, flexShrink: 0 }, gray700: { color: e.colors.gray700 }, white: { color: e.colors.white } }));
         },
         537439: (e, t, r) => {
-            r.d(t, { Z: () => N });
+            r.d(t, { Z: () => H });
             var o = r(202784),
                 a = r(111677),
                 n = r.n(a),
@@ -127,8 +127,8 @@
                 F = r(54606);
             const T = n().ae408b76,
                 I = n().j355f008,
-                B = n().habf9678,
-                L = n().db0798ed,
+                L = n().habf9678,
+                B = n().db0798ed,
                 R = n().dc716ec9,
                 Q = ({ text: e }) => {
                     const { direction: t } = (0, S.Z)();
@@ -142,29 +142,29 @@
                               return o.createElement(n().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
                           })(e),
                 _ = P.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
-                H = P.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                N = ({ contextType: e, iconColor: t, iconSize: r, link: a, retweetData: n, text: Z, topicData: S, userAvatarUrls: T }) => {
-                    const { isSelfRetweet: N, name: W, screenName: z } = n || {},
+                N = P.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                H = ({ contextType: e, iconColor: t, iconSize: r, link: a, retweetData: n, text: Z, topicData: S, userAvatarUrls: T }) => {
+                    const { isSelfRetweet: H, name: W, screenName: z } = n || {},
                         A = ((e, t, r, a = []) => {
                             const n = _[t],
-                                Z = [r ? { color: P.default.theme.colors[r] } : H.colorDeepGray, n],
+                                Z = [r ? { color: P.default.theme.colors[r] } : N.colorDeepGray, n],
                                 S = o.createElement(i.default, { style: Z }),
                                 T = o.createElement(l.default, { style: Z }),
                                 I = o.createElement(s.default, { style: Z }),
-                                B = o.createElement(c.default, { style: Z }),
-                                L = o.createElement(d.default, { style: Z }),
-                                R = o.createElement(u.default, { style: H.circle }),
+                                L = o.createElement(c.default, { style: Z }),
+                                B = o.createElement(d.default, { style: Z }),
+                                R = o.createElement(u.default, { style: N.circle }),
                                 Q = o.createElement(m.default, { style: Z }),
                                 D = o.createElement(p.default, { style: Z }),
-                                N = o.createElement(h.default, { style: Z }),
+                                H = o.createElement(h.default, { style: Z }),
                                 W = o.createElement(f.default, { style: Z }),
                                 z = o.createElement(y.default, { style: Z }),
                                 A = o.createElement(g.default, { style: Z }),
                                 M = o.createElement(b.default, { style: Z }),
                                 U = o.createElement(w.default, { style: Z }),
-                                V = o.createElement(C.default, { style: Z }),
-                                $ = o.createElement(x.default, { style: Z }),
-                                j = o.createElement(v.default, { style: Z }),
+                                j = o.createElement(C.default, { style: Z }),
+                                V = o.createElement(x.default, { style: Z }),
+                                $ = o.createElement(v.default, { style: Z }),
                                 O = o.createElement(k.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: a }),
                                 G = o.createElement(E.default, { style: Z });
                             switch (e) {
@@ -176,9 +176,9 @@
                                 case F.Q.Like:
                                     return I;
                                 case F.Q.Follow:
-                                    return B;
-                                case F.Q.Moment:
                                     return L;
+                                case F.Q.Moment:
+                                    return B;
                                 case F.Q.NewTweets:
                                     return R;
                                 case F.Q.Reply:
@@ -187,7 +187,7 @@
                                 case F.Q.Feedback:
                                     return D;
                                 case F.Q.Topic:
-                                    return N;
+                                    return H;
                                 case F.Q.List:
                                     return W;
                                 case F.Q.Location:
@@ -200,11 +200,11 @@
                                     return U;
                                 case F.Q.SocialProof:
                                 case F.Q.FollowFollowed:
-                                    return j;
-                                case F.Q.FollowMutual:
                                     return $;
-                                case F.Q.FollowFollowing:
+                                case F.Q.FollowMutual:
                                     return V;
+                                case F.Q.FollowFollowing:
+                                    return j;
                                 case F.Q.Facepile:
                                     return O;
                                 case F.Q.Bird:
@@ -216,13 +216,13 @@
                         })(e, r, t, T);
                     switch (e) {
                         case F.Q.Retweet:
-                            return { Icon: A, text: Z || D(W, N), link: z ? `https://twitter.com/${z}` : void 0 };
+                            return { Icon: A, text: Z || D(W, H), link: z ? `https://twitter.com/${z}` : void 0 };
                         case F.Q.Pin:
                             return { Icon: A, text: Z || I };
                         case F.Q.ReplyPin:
-                            return { Icon: A, text: B };
+                            return { Icon: A, text: L };
                         case F.Q.Topic:
-                            return { Icon: A, "aria-label": "Recommendation" === S?.functionalityType || "RecWithEducation" === S?.functionalityType ? R({ topicName: Z }) : L({ topicName: Z }), text: Z ? o.createElement(Q, { text: Z }) : null, link: a };
+                            return { Icon: A, "aria-label": "Recommendation" === S?.functionalityType || "RecWithEducation" === S?.functionalityType ? R({ topicName: Z }) : B({ topicName: Z }), text: Z ? o.createElement(Q, { text: Z }) : null, link: a };
                         default:
                             return { Icon: A, text: Z ? o.createElement(Q, { text: Z }) : null, link: a };
                     }
@@ -464,6 +464,19 @@
             r.d(t, { H: () => o });
             const o = ({ description: e, entities: t, withheldDescription: r, withheldEntities: o }) => (r ? { description: r, entities: o } : { description: e, entities: t });
         },
+        790093: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => s });
+            var o = r(202784),
+                a = r(890601),
+                n = r(783427),
+                i = r(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
         98440: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var o = r(202784),
@@ -477,19 +490,6 @@
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        452693: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var o = r(202784),
-                a = r(890601),
-                n = r(783427),
-                i = r(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
         465233: (e, t, r) => {
             r.d(t, { Z: () => a });
             var o = r(716406);
@@ -499,4 +499,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ThreadHeaderHandler.ece8511a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ThreadHeaderHandler.ccc621fa.js.map

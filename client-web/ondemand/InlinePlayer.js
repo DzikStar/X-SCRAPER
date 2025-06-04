@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "loader.AudioOnlyVideoPlayer"],
+    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "loader.AudioOnlyVideoPlayer", "icons/IconFeedback-js"],
     {
         541837: (e, t, i) => {
             i.d(t, { Z: () => o });
@@ -255,8 +255,8 @@
                 _ = i(392237),
                 y = i(640290),
                 m = i(908478),
-                g = i(323265),
-                f = i(791632),
+                f = i(323265),
+                g = i(791632),
                 b = i(443781),
                 P = i(931162),
                 v = i(993547),
@@ -264,11 +264,11 @@
                 E = i(954300),
                 A = i(870976),
                 C = i(992720),
-                w = i(325686);
-            const T = (e) => {
+                T = i(325686);
+            const w = (e) => {
                     e.stopPropagation();
                 },
-                S = ({ children: e, testID: t }) => a.createElement(w.Z, { onClick: T, style: _.default.absoluteFill, testID: t }, e);
+                S = ({ children: e, testID: t }) => a.createElement(T.Z, { onClick: w, style: _.default.absoluteFill, testID: t }, e);
             var k = i(90890),
                 R = i(97837);
             const L = "videoPlayer",
@@ -296,19 +296,19 @@
                                     mediaAvailability: _,
                                     noAuthHttpClient: y,
                                     playerId: m,
-                                    publisherId: g,
-                                    source: { contentId: f, eventId: b, videoId: v, vmapUrl: I },
+                                    publisherId: f,
+                                    source: { contentId: g, eventId: b, videoId: v, vmapUrl: I },
                                     timecode: E,
                                     twitterAuthedHttpClient: A,
                                     uiStack: C,
-                                    videoEl: w,
-                                    videoPlayer: T,
+                                    videoEl: T,
+                                    videoPlayer: w,
                                     viewCount: S,
                                     viewCountGraphData: k,
                                 } = this.props,
                                 R = this.context.featureSwitches.isTrue("rweb_video_pip_enabled"),
                                 L = this.context.featureSwitches.isTrue("rweb_live_broadcast_rewind_enabled");
-                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(u.Z, (0, r.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: i, "aria-label": o, aspectRatio: n, basePlayerClass: T, configType: "static", contentId: f, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: p, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: g, requestedTimecode: E, twitterAuthedHttpClient: A, videoEl: w, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), C));
+                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(u.Z, (0, r.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: i, "aria-label": o, aspectRatio: n, basePlayerClass: w, configType: "static", contentId: g, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: p, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: f, requestedTimecode: E, twitterAuthedHttpClient: A, videoEl: T, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), C));
                         }),
                         (this._setPlayerApi = (e) => {
                             const { customOverlay: t, onMuteChange: i, onSetPlayerApi: r } = this.props;
@@ -368,7 +368,7 @@
                         (this._handleFullscreenChange = (e) => {
                             const { viewport: t } = this.props;
                             if (((this._isPlayerFullscreen = e.isPlayerFullscreen), t)) {
-                                if ((t.temporarilySuppressScrollListeners(2e3), g.ZP.isChrome() || g.ZP.isSafari()))
+                                if ((t.temporarilySuppressScrollListeners(2e3), f.ZP.isChrome() || f.ZP.isSafari()))
                                     if (this._isPlayerFullscreen) this._savedScrollPosition = { y: t.scrollY(), x: t.scrollX() };
                                     else if (this._savedScrollPosition) {
                                         const { x: e, y: i } = this._savedScrollPosition;
@@ -427,7 +427,7 @@
                         });
                     const { autoplay: i, disableAutoplay: o, forwardPivotInfo: n } = e,
                         { history: s } = t;
-                    (this._disableHls = !(g.ZP.isDesktopOS() || (g.ZP.isAndroid() && this.context.featureSwitches.isTrue("web_video_hls_android_mse_enabled")))), (this._shouldAutoplay = !(0, f.HD)(s) && !o && (0, C.Z)(i, n));
+                    (this._disableHls = !(f.ZP.isDesktopOS() || (f.ZP.isAndroid() && this.context.featureSwitches.isTrue("web_video_hls_android_mse_enabled")))), (this._shouldAutoplay = !(0, g.HD)(s) && !o && (0, C.Z)(i, n));
                 }
                 componentDidUpdate(e) {
                     const { heightsReady: t, playbackPriority: i } = this.props;
@@ -514,20 +514,20 @@
                     o = "broadcast" === e.source.videoId.type && !!t.viewerUserId && t.featureSwitches.isTrue("rweb_video_logged_in_analytics_enabled");
                 (0, n.Dv)(o ? ee : te);
                 const { createLocalApiErrorHandler: u, getTwitterAuthedHttpClient: h, playbackPriority: _, tweetAdProvider: y, ...m } = e,
-                    g = (t) => {
+                    f = (t) => {
                         const { createLocalApiErrorHandler: i } = e;
                         e.logPromotedVideoEvent(t).catch(i());
                     },
-                    f = (t) => {
+                    g = (t) => {
                         const { category: i, data: r, namespace: a } = t,
                             { analytics: o } = e;
                         a?.action && o.scribe({ ...a, data: { ...r, _category_: i } });
                     },
                     P = a.useMemo(() => h(), [h]),
                     v = ((i) => {
-                        const r = { log: f },
+                        const r = { log: g },
                             { analytics: a } = e,
-                            n = { log: t.featureSwitches.isTrue("responsive_web_video_promoted_logging_enabled") ? g : c.Z },
+                            n = { log: t.featureSwitches.isTrue("responsive_web_video_promoted_logging_enabled") ? f : c.Z },
                             s = a.contextualScribeNamespace,
                             l = a.contextualScribeData,
                             u = Array.isArray(l.items)
@@ -640,8 +640,8 @@
                 _ = i(615656),
                 y = i(71620),
                 m = i(917799);
-            const g = "FETCH_PREROLLS",
-                f = (0, m.dg)(l.A7, g),
+            const f = "FETCH_PREROLLS",
+                g = (0, m.dg)(l.A7, f),
                 b = 10;
             function P(e) {
                 const t = {},
@@ -675,8 +675,8 @@
                                 const o = { eligibleTweets: e, prerollDisplayLocation: a };
                                 t && (o.trigger_preroll = t);
                                 const n = (0, m._O)(i, { request: r.withEndpoint(h.Z).fetch, params: o }),
-                                    s = i((0, y.zr)(g)({ showToast: !1, [_.ZP.AccessDeniedByBouncer]: { customAction: u.Z } }));
-                                return n({ actionTypes: f, context: "FETCH_PREROLLS" }).catch(s);
+                                    s = i((0, y.zr)(f)({ showToast: !1, [_.ZP.AccessDeniedByBouncer]: { customAction: u.Z } }));
+                                return n({ actionTypes: g, context: "FETCH_PREROLLS" }).catch(s);
                             })(e, t, i, r, a),
                         ),
                     ).then((e) => {
@@ -693,9 +693,9 @@
                 E = "rweb/instreamVideo/DYNAMIC_RESET",
                 A = "rweb/instreamVideo/STORE_METADATA",
                 C = "rweb/instreamVideo/DYNAMIC_STORE",
-                w = { [l.Nw.OTHER]: I };
+                T = { [l.Nw.OTHER]: I };
             o.Z.register({
-                [l.Yf]: function (e = w, t) {
+                [l.Yf]: function (e = T, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case A:
@@ -722,7 +722,7 @@
                     return e;
                 },
             });
-            const T = (e, t) => e[l.Yf][t] || I;
+            const w = (e, t) => e[l.Yf][t] || I;
             function S(e, t = l.Nw.OTHER) {
                 return (i, r, { api: o, featureSwitches: n }) => {
                     if (!Array.isArray(e)) throw new Error("unable to fetch prerolls without timeline entries");
@@ -760,7 +760,7 @@
             function k(e, t = l.Nw.OTHER) {
                 return (i, a, { api: o, featureSwitches: n }) => {
                     if (e) {
-                        const n = T(a(), t),
+                        const n = w(a(), t),
                             { dynamicIVCollection: s, eligibleTweets: l, prerollEligibilityCollection: c, prerollMetadataCollection: d, promotedMetadataCollection: p } = n,
                             u = s[e],
                             h = p[e],
@@ -823,7 +823,7 @@
             }
         },
         694180: (e, t, i) => {
-            i.d(t, { cM: () => m, dS: () => y, iY: () => g });
+            i.d(t, { cM: () => m, dS: () => y, iY: () => f });
             var r = i(370751),
                 a = i(399896),
                 o = i(663550),
@@ -854,12 +854,12 @@
                             y = `${i}-${t ?? "undefined"}-${u ?? "undefined"}-${d ?? "undefined"}`;
                         if (p.has(d) && _(n(), y)) return Promise.resolve();
                         const m = e && "earned" === e.toLowerCase() ? "1" : null,
-                            g = { ...r, earned: m, epoch_ms: Date.now() };
-                        return (0, s._O)(o, { params: g, request: l.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: g }, (e, t) => {
+                            f = { ...r, earned: m, epoch_ms: Date.now() };
+                        return (0, s._O)(o, { params: f, request: l.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, t) => {
                             if (!t && p.has(d)) return [h(y)];
                         });
                     },
-                g =
+                f =
                     (e) =>
                     (t, i, { api: r }) =>
                         (0, s._O)(t, { params: e, request: r.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -906,7 +906,7 @@
             const l = n.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = s;
         },
-        41065: (e, t, i) => {
+        790093: (e, t, i) => {
             i.r(t), i.d(t, { default: () => l });
             var r = i(202784),
                 a = i(890601),
@@ -914,7 +914,7 @@
                 n = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -928,19 +928,6 @@
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
                 return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        452693: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -991,29 +978,29 @@
                         p = 6 === e,
                         u = 7 === e,
                         h = 5 === e || p;
-                    return function (_, y, m, g) {
-                        for (var f, b, P = n(_), v = o(P), I = r(y, m), E = s(v), A = 0, C = g || l, w = t ? C(_, E) : i || u ? C(_, 0) : void 0; E > A; A++)
-                            if ((h || A in v) && ((b = I((f = v[A]), A, P)), e))
-                                if (t) w[A] = b;
+                    return function (_, y, m, f) {
+                        for (var g, b, P = n(_), v = o(P), I = r(y, m), E = s(v), A = 0, C = f || l, T = t ? C(_, E) : i || u ? C(_, 0) : void 0; E > A; A++)
+                            if ((h || A in v) && ((b = I((g = v[A]), A, P)), e))
+                                if (t) T[A] = b;
                                 else if (b)
                                     switch (e) {
                                         case 3:
                                             return !0;
                                         case 5:
-                                            return f;
+                                            return g;
                                         case 6:
                                             return A;
                                         case 2:
-                                            c(w, f);
+                                            c(T, g);
                                     }
                                 else
                                     switch (e) {
                                         case 4:
                                             return !1;
                                         case 7:
-                                            c(w, f);
+                                            c(T, g);
                                     }
-                        return p ? -1 : a || d ? d : w;
+                        return p ? -1 : a || d ? d : T;
                     };
                 };
             e.exports = { forEach: d(0), map: d(1), filter: d(2), some: d(3), every: d(4), find: d(5), findIndex: d(6), filterReject: d(7) };
@@ -1209,7 +1196,7 @@
                     );
                 })
                     ? function (e, t) {
-                          for (var i = d(e), a = arguments.length, n = 1, u = l.f, h = c.f; a > n; ) for (var y, m = p(arguments[n++]), g = u ? _(s(m), u(m)) : s(m), f = g.length, b = 0; f > b; ) (y = g[b++]), (r && !o(h, m, y)) || (i[y] = m[y]);
+                          for (var i = d(e), a = arguments.length, n = 1, u = l.f, h = c.f; a > n; ) for (var y, m = p(arguments[n++]), f = u ? _(s(m), u(m)) : s(m), g = f.length, b = 0; g > b; ) (y = f[b++]), (r && !o(h, m, y)) || (i[y] = m[y]);
                           return i;
                       }
                     : u;
@@ -1291,7 +1278,7 @@
                 _ = u("slice"),
                 y = p("species"),
                 m = Array,
-                g = Math.max;
+                f = Math.max;
             r(
                 { target: "Array", proto: !0, forced: !_ },
                 {
@@ -1301,10 +1288,10 @@
                             p,
                             u = c(this),
                             _ = l(u),
-                            f = s(e, _),
+                            g = s(e, _),
                             b = s(void 0 === t ? _ : t, _);
-                        if (a(u) && ((i = u.constructor), ((o(i) && (i === m || a(i.prototype))) || (n(i) && null === (i = i[y]))) && (i = void 0), i === m || void 0 === i)) return h(u, f, b);
-                        for (r = new (void 0 === i ? m : i)(g(b - f, 0)), p = 0; f < b; f++, p++) f in u && d(r, p, u[f]);
+                        if (a(u) && ((i = u.constructor), ((o(i) && (i === m || a(i.prototype))) || (n(i) && null === (i = i[y]))) && (i = void 0), i === m || void 0 === i)) return h(u, g, b);
+                        for (r = new (void 0 === i ? m : i)(f(b - g, 0)), p = 0; g < b; g++, p++) g in u && d(r, p, u[g]);
                         return (r.length = p), r;
                     },
                 },
@@ -1325,8 +1312,8 @@
                 _ = i(992066),
                 y = i(824229),
                 m = i(778151).f,
-                g = i(997933).f,
-                f = i(931787).f,
+                f = i(997933).f,
+                g = i(931787).f,
                 b = i(890143),
                 P = i(1017).trim,
                 v = "Number",
@@ -1334,8 +1321,8 @@
                 E = s[v],
                 A = I.prototype,
                 C = n.TypeError,
-                w = l("".slice),
-                T = l("".charCodeAt),
+                T = l("".slice),
+                w = l("".charCodeAt),
                 S = function (e) {
                     var t,
                         i,
@@ -1348,10 +1335,10 @@
                         c = _(e, "number");
                     if (h(c)) throw new C("Cannot convert a Symbol value to a number");
                     if ("string" == typeof c && c.length > 2)
-                        if (((c = P(c)), 43 === (t = T(c, 0)) || 45 === t)) {
-                            if (88 === (i = T(c, 2)) || 120 === i) return NaN;
+                        if (((c = P(c)), 43 === (t = w(c, 0)) || 45 === t)) {
+                            if (88 === (i = w(c, 2)) || 120 === i) return NaN;
                         } else if (48 === t) {
-                            switch (T(c, 1)) {
+                            switch (w(c, 1)) {
                                 case 66:
                                 case 98:
                                     (r = 2), (a = 49);
@@ -1363,7 +1350,7 @@
                                 default:
                                     return +c;
                             }
-                            for (n = (o = w(c, 2)).length, s = 0; s < n; s++) if ((l = T(o, s)) < 48 || l > a) return NaN;
+                            for (n = (o = T(c, 2)).length, s = 0; s < n; s++) if ((l = w(o, s)) < 48 || l > a) return NaN;
                             return parseInt(o, r);
                         }
                     return +c;
@@ -1389,7 +1376,7 @@
                 };
             (R.prototype = A), k && !a && (A.constructor = R), r({ global: !0, constructor: !0, wrap: !0, forced: k }, { Number: R });
             var L = function (e, t) {
-                for (var i, r = o ? m(t) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,isFinite,isInteger,isNaN,isSafeInteger,parseFloat,parseInt,fromString,range".split(","), a = 0; r.length > a; a++) d(t, (i = r[a])) && !d(e, i) && f(e, i, g(t, i));
+                for (var i, r = o ? m(t) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,isFinite,isInteger,isNaN,isSafeInteger,parseFloat,parseInt,fromString,range".split(","), a = 0; r.length > a; a++) d(t, (i = r[a])) && !d(e, i) && g(e, i, f(t, i));
             };
             a && E && L(s[v], E), (k || a) && L(s[v], I);
         },
@@ -1419,4 +1406,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.0e37dd7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.16e9abfa.js.map

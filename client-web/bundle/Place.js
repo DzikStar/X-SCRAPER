@@ -167,7 +167,7 @@
                 };
         },
         230558: (e, t, o) => {
-            o.r(t), o.d(t, { PlaceScreen: () => q, default: () => D });
+            o.r(t), o.d(t, { PlaceScreen: () => M, default: () => W });
             var r = o(202784),
                 i = o(325686),
                 a = o(154003),
@@ -202,20 +202,20 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("PLACE_SCREEN"), fetchPlaceIfNeeded: w.fetchOneIfNeeded }))
                     .withAnalytics({ page: "place" }),
                 L = c().jaaa8984,
-                z = c().fa4e68ca,
-                B = c().add55c98,
-                M = c().f4a654a4,
-                $ = (e) => {
+                $ = c().fa4e68ca,
+                q = c().add55c98,
+                B = c().f4a654a4,
+                H = (e) => {
                     let t = {};
                     "foursquare" === e.vendor &&
                         (t = ((e) => {
                             const { venue_id: t } = e.data;
-                            return { attributionDetails: r.createElement(d.default, { style: H.icon }), href: `https://foursquare.com/v/${t}`, buttonText: M };
+                            return { attributionDetails: r.createElement(d.default, { style: D.icon }), href: `https://foursquare.com/v/${t}`, buttonText: B };
                         })(e));
                     const { attributionDetails: o, buttonText: s, href: n } = t;
-                    return r.createElement(i.Z, { style: H.attribution }, r.createElement(i.Z, { style: H.attributionDetails }, o), r.createElement(a.ZP, { link: n, size: "xSmall", type: "brandOutlined" }, s));
+                    return r.createElement(i.Z, { style: D.attribution }, r.createElement(i.Z, { style: D.attributionDetails }, o), r.createElement(a.ZP, { link: n, size: "xSmall", type: "brandOutlined" }, s));
                 },
-                q = (e) => {
+                M = (e) => {
                     const { createLocalApiErrorHandler: t, fetchPlaceIfNeeded: o, history: a, location: n, place: l, placeFetchStatus: c, placeId: d } = e,
                         _ = l ? l.full_name : L;
                     r.useEffect(() => {
@@ -225,13 +225,13 @@
                             if (!l) return null;
                             const { attributes: e, vendor_info: t } = l,
                                 { street_address: o } = e;
-                            return r.createElement(i.Z, { style: H.locationDetails }, r.createElement(s.ZP, { size: "headline1", weight: "bold" }, l.full_name), o ? r.createElement(s.ZP, { color: "gray700", size: "body" }, o) : null, t ? $(t) : null);
+                            return r.createElement(i.Z, { style: D.locationDetails }, r.createElement(s.ZP, { size: "headline1", weight: "bold" }, l.full_name), o ? r.createElement(s.ZP, { color: "gray700", size: "body" }, o) : null, t ? H(t) : null);
                         },
                         C = () => "media" === (n.query && n.query.f),
                         k = () => {
                             const e = [
-                                { isActive: E, key: z, retainScrollPosition: !1, to: n.pathname, label: z },
-                                { isActive: C, key: B, retainScrollPosition: !1, to: { query: { f: "media" }, pathname: n.pathname }, label: B },
+                                { isActive: E, key: $, retainScrollPosition: !1, to: n.pathname, label: $ },
+                                { isActive: C, key: q, retainScrollPosition: !1, to: { query: { f: "media" }, pathname: n.pathname }, label: q },
                             ];
                             return r.createElement(m.Z, { links: e });
                         },
@@ -241,10 +241,10 @@
                         },
                         E = () => "media" !== (n.query && n.query.f),
                         v = (0, y.hx)();
-                    return r.createElement(g.Z, null, r.createElement(h.Z, { backLocation: v ? void 0 : "/home", documentTitle: _, history: a, primaryContent: r.createElement(r.Fragment, null, r.createElement(i.Z, { style: H.header }, r.createElement(u.Z, { fetchStatus: c, render: S }), k()), x()), sidebarContent: r.createElement(p.Z, null), title: v ? null : L }));
+                    return r.createElement(g.Z, null, r.createElement(h.Z, { backLocation: v ? void 0 : "/home", documentTitle: _, history: a, primaryContent: r.createElement(r.Fragment, null, r.createElement(i.Z, { style: D.header }, r.createElement(u.Z, { fetchStatus: c, render: S }), k()), x()), sidebarContent: r.createElement(p.Z, null), title: v ? null : L }));
                 },
-                H = n.default.create((e) => ({ header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex }, locationDetails: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, icon: { color: e.colors.gray700 }, attribution: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginTop: e.spaces.space12 }, attributionDetails: { flexShrink: 1, marginEnd: e.spaces.space12 } })),
-                D = R((0, _.Z)(q));
+                D = n.default.create((e) => ({ header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex }, locationDetails: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, icon: { color: e.colors.gray700 }, attribution: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginTop: e.spaces.space12 }, attributionDetails: { flexShrink: 1, marginEnd: e.spaces.space12 } })),
+                W = R((0, _.Z)(M));
         },
         403556: (e, t, o) => {
             o.d(t, { Z: () => v });
@@ -354,19 +354,6 @@
                     return i.createElement(a.Z, { "aria-label": t, buttonsContainerStyle: n && E.gap, childrenStyle: !m && E.flexGrow, key: u, style: [n ? null : E.segmentedControl, m && E.leftAligned, d], visibleItemIndex: p }, g);
                 };
         },
-        41065: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                i = o(890601),
-                a = o(783427),
-                s = o(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            n.metadata = { width: 24, height: 24 };
-            const l = n;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Place.42277d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Place.1247fe7a.js.map

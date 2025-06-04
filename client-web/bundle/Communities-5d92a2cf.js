@@ -494,7 +494,7 @@
                     return i.createElement(m.ZP, { "aria-label": d, icon: p, renderMenu: u, style: vt.shareButton, type: "primaryOutlined" });
                 }),
                 xt = i.memo(It);
-            var kt = n(970187),
+            var kt = n(723587),
                 wt = n(516951);
             const Mt = { follow: y().b171d7c4, following: y().aa7ae3f6, unfollow: y().bb1d57b6 },
                 Pt = ({ communityId: e, communityName: t }) => {
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-5d92a2cf.53a2c72a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-5d92a2cf.9f41fe9a.js.map

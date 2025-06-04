@@ -3575,7 +3575,7 @@
                 a("hbe4f99e", "[[243623]] Hey there! Can’t wait to share some top secret content and get to know you even better :)"),
                 a("fb278c82", "[[243648]] What’s this preview?"),
                 a("j6cab6ec", "[[272370]] This is what people see before they Subscribe to you. Tweak and edit your descriptions until you’ve got them just right."),
-                a("f2b1e83e", "Grok & Third-Party Collaborators"),
+                a("f2b1e83e", "[[296010]] Grok & Third-Party Collaborators"),
                 a("e110a46c", "[[286048]] Delete conversation history"),
                 a("ebc4fda0", "[[286051]] You’re about to delete your grok conversation history. You will not be able to access these conversations again."),
                 a("c90fe716", "[[286049]] Do you want to delete your conversations?"),
@@ -5510,7 +5510,7 @@
                 a("j6aa6172", "[[228428]] Delete rating?"),
                 a("i4112750", "[[228475]] This can’t be undone."),
                 a("i6f6191a", "[[273398]] Thank you!"),
-                a("h5575012", "Agree and submit"),
+                a("h5575012", "[[295982]] Agree and submit"),
                 a("f9171e52", "[[295597]] This post got some likes from people who normally disagree, but input so far is limited."),
                 a("j0f9919a", "[[295601]] Your rating won’t negatively impact a post, but can help positively recognize posts that are widely liked."),
                 a("b3af830c", "[[295626]] Your input:"),
@@ -11520,7 +11520,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["[[295983]] Ratings are anonymized and publicly available to the public for transparency. "];
                             },
                         },
                         {
@@ -13341,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.10786f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.6da8e1ea.js.map

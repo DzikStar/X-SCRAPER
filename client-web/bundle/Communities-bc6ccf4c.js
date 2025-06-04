@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Communities-bc6ccf4c", "icons/IconCropOriginal-js", "icons/IconMediumTrashcanStroke-js", "icons/IconModeratorClose-js", "icons/IconPersonArrowLeft-js", "icons/IconSearchPlusStroke-js", "icons/IconStarStroke-js"],
+    ["bundle.Communities-bc6ccf4c", "icons/IconChevronDown-js", "icons/IconFollowPlus-js", "icons/IconHashStroke-js", "icons/IconSearchMinusStroke-js"],
     {
         738545: (e, t, o) => {
             o.d(t, { ZP: () => w });
@@ -22,24 +22,24 @@
                 y = r().c5a9f921,
                 v = (e) => {
                     const { label: t, popover: o } = e;
-                    return t ? i.createElement(a.Z, { style: S.labelBar }, i.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), o ? i.createElement(u.Z, { label: t, popover: o }) : null) : null;
+                    return t ? i.createElement(a.Z, { style: x.labelBar }, i.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), o ? i.createElement(u.Z, { label: t, popover: o }) : null) : null;
                 },
                 _ = (e) => {
                     const { style: t, unit: o } = e;
-                    return o ? i.createElement(d.ZP, { color: "gray700", style: [S.unitText, t], weight: "medium" }, o) : null;
+                    return o ? i.createElement(d.ZP, { color: "gray700", style: [x.unitText, t], weight: "medium" }, o) : null;
                 },
                 C = (e) => {
                     let t,
                         o,
                         { trendValue: s } = e;
-                    return void 0 === s ? null : (Math.abs(s) < 0.1 ? ((s = Math.round(1e3 * s) / 1e3), (t = g(s))) : ((s = Math.round(100 * s) / 100), (t = m(s))), (o = ((e, t) => (e < 0 ? f({ trendValueNegativePercent: t }) : 0 === e ? b : y({ trendValuePositivePercent: t })))(s, t)), s < 0 ? i.createElement(a.Z, { style: S.trendBar, testID: "trendLabel" }, i.createElement(n.default, { "aria-label": o, style: S.trendIconNeg }), i.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === s ? i.createElement(a.Z, { style: S.trendBar, testID: "trendLabel" }, i.createElement(l.default, { "aria-label": o, style: S.trendIconZero }), i.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : i.createElement(a.Z, { style: S.trendBar, testID: "trendLabel" }, i.createElement(c.default, { "aria-label": o, style: S.trendIconPos }), i.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                    return void 0 === s ? null : (Math.abs(s) < 0.1 ? ((s = Math.round(1e3 * s) / 1e3), (t = g(s))) : ((s = Math.round(100 * s) / 100), (t = m(s))), (o = ((e, t) => (e < 0 ? f({ trendValueNegativePercent: t }) : 0 === e ? b : y({ trendValuePositivePercent: t })))(s, t)), s < 0 ? i.createElement(a.Z, { style: x.trendBar, testID: "trendLabel" }, i.createElement(n.default, { "aria-label": o, style: x.trendIconNeg }), i.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === s ? i.createElement(a.Z, { style: x.trendBar, testID: "trendLabel" }, i.createElement(l.default, { "aria-label": o, style: x.trendIconZero }), i.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : i.createElement(a.Z, { style: x.trendBar, testID: "trendLabel" }, i.createElement(c.default, { "aria-label": o, style: x.trendIconPos }), i.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
-                S = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
+                x = p.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
                 w = (e) => {
                     const { animated: t, count: o, label: s, popover: r, size: n, subTextList: l, trendValue: c, unit: p, value: u } = e,
-                        m = p || void 0 !== c ? S.textWithMargin : void 0,
-                        g = void 0 !== c ? S.textWithMargin : void 0;
-                    return i.createElement(a.Z, { style: S.dataPoint }, i.createElement(v, { label: s, popover: r }), i.createElement(a.Z, { style: S.valueBar }, t ? i.createElement(h.ZP, { count: o, size: n, style: m, weight: "bold" }, u) : i.createElement(d.ZP, { size: n, style: m, weight: "bold" }, u), i.createElement(_, { style: g, unit: p }), i.createElement(C, { trendValue: c })), l);
+                        m = p || void 0 !== c ? x.textWithMargin : void 0,
+                        g = void 0 !== c ? x.textWithMargin : void 0;
+                    return i.createElement(a.Z, { style: x.dataPoint }, i.createElement(v, { label: s, popover: r }), i.createElement(a.Z, { style: x.valueBar }, t ? i.createElement(h.ZP, { count: o, size: n, style: m, weight: "bold" }, u) : i.createElement(d.ZP, { size: n, style: m, weight: "bold" }, u), i.createElement(_, { style: g, unit: p }), i.createElement(C, { trendValue: c })), l);
                 };
         },
         635998: (e, t, o) => {
@@ -109,7 +109,7 @@
                 c = n;
         },
         548485: (e, t, o) => {
-            o.d(t, { Z: () => W });
+            o.d(t, { Z: () => L });
             var i = o(202784),
                 a = o(928316),
                 s = o(325686),
@@ -129,9 +129,9 @@
                 v = o(393058);
             const _ = y.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
                 C = ({ circle: e, height: t, width: o }) => i.createElement(s.Z, { pointerEvents: "none", style: [_.mask, { width: o, height: t }, e && _.circle] });
-            var S = o(807896),
+            var x = o(807896),
                 w = o(151624),
-                x = o(933895);
+                S = o(933895);
             class E extends i.Component {
                 constructor(e) {
                     super(e),
@@ -143,7 +143,7 @@
                         (this._setRef = (e) => {
                             const { onPanEnd: t, onPanMove: o, onPinchMove: i, onWheel: a } = this.props;
                             if (e) {
-                                (o || t || i) && (this._removeTouchMoveToScrollListener = (0, x.O)(e, this._preventDefaultEvent, !1)), a && (this._removeScrollToScaleListener = (0, x.Y)(e, this._preventDefaultEvent, !1));
+                                (o || t || i) && (this._removeTouchMoveToScrollListener = (0, S.O)(e, this._preventDefaultEvent, !1)), a && (this._removeScrollToScaleListener = (0, S.Y)(e, this._preventDefaultEvent, !1));
                                 const s = e.getBoundingClientRect();
                                 this._centerPosition = { x: s.width / 2 + s.left, y: s.height / 2 + s.top };
                             }
@@ -184,7 +184,7 @@
                 }
                 render() {
                     const { children: e, onPanEnd: t, onPanMove: o, onPinchMove: a, onWheel: r, ...n } = this.props;
-                    return i.createElement(s.Z, (0, S.Z)({}, n, { onWheel: this._handleWheel, ref: this._setRef }, this._panResponder.panHandlers), this.props.children);
+                    return i.createElement(s.Z, (0, x.Z)({}, n, { onWheel: this._handleWheel, ref: this._setRef }, this._panResponder.panHandlers), this.props.children);
                 }
                 componentWillUnmount() {
                     this._removeTouchMoveToScrollListener && this._removeTouchMoveToScrollListener(), this._removeScrollToScaleListener && this._removeScrollToScaleListener(), this._removeSelectStartListener();
@@ -198,12 +198,12 @@
                 M = n().e547b368,
                 I = n().f7571204,
                 T = n().e6e16812,
-                z =
+                B =
                     Math.log2 ||
                     function (e) {
                         return Math.log(e) * Math.LOG2E;
                     };
-            class B extends i.Component {
+            class W extends i.Component {
                 constructor(e) {
                     var t;
                     super(e),
@@ -216,7 +216,7 @@
                                 { aspectRatio: o } = this.state,
                                 a = e.width / e.height,
                                 r = this._shouldShowZoomControl();
-                            return t || r ? i.createElement(s.Z, { style: L.controlsContainer }, t ? i.createElement(s.Z, { style: L.ratioContainer }, i.createElement(m.ZP, { "aria-label": k, borderColor: "transparent", color: o === a ? "primary" : "gray700", hoverLabel: { label: M }, icon: i.createElement(l.default, null), onPress: this._setAspectRatio(a), size: "medium" }), i.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: o === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: I }, icon: i.createElement(c.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), i.createElement(m.ZP, { "aria-label": D, borderColor: "transparent", color: 1 === o ? "primary" : "gray700", hoverLabel: { label: T }, icon: i.createElement(d.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, r ? i.createElement(s.Z, { style: L.zoomContainer }, i.createElement(b.Z, { "aria-label": P, max: this._maxScale, maxIcon: i.createElement(h.default, { style: L.icon }), min: 0, minIcon: i.createElement(p.default, { style: L.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
+                            return t || r ? i.createElement(s.Z, { style: z.controlsContainer }, t ? i.createElement(s.Z, { style: z.ratioContainer }, i.createElement(m.ZP, { "aria-label": k, borderColor: "transparent", color: o === a ? "primary" : "gray700", hoverLabel: { label: M }, icon: i.createElement(l.default, null), onPress: this._setAspectRatio(a), size: "medium" }), i.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: o === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: I }, icon: i.createElement(c.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), i.createElement(m.ZP, { "aria-label": D, borderColor: "transparent", color: 1 === o ? "primary" : "gray700", hoverLabel: { label: T }, icon: i.createElement(d.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, r ? i.createElement(s.Z, { style: z.zoomContainer }, i.createElement(b.Z, { "aria-label": P, max: this._maxScale, maxIcon: i.createElement(h.default, { style: z.icon }), min: 0, minIcon: i.createElement(p.default, { style: z.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
                         }),
                         (this._handleScaleChange = (e) => {
                             this.setState({ imageScale: e });
@@ -243,7 +243,7 @@
                             const { width: o } = this._getImageDimensions(),
                                 { width: i } = this._getMaskDimensions(),
                                 a = o / t.width,
-                                s = z(i / (e.width * a));
+                                s = B(i / (e.width * a));
                             this.setState({ imageScale: s });
                             const { left: r, top: n } = this._getUnscaledCropData();
                             (this._panStyles.top = n - e.top * a * Math.pow(2, s)), (this._previousTop = this._panStyles.top), (this._panStyles.left = r - e.left * a * Math.pow(2, s)), (this._previousLeft = this._panStyles.left), this._updateStyles();
@@ -298,7 +298,7 @@
                             this.setState({ aspectRatio: e });
                         }),
                         (this.state = { aspectRatio: e.defaultAspectRatio || e.image.width / e.image.height, imageScale: 0, containerHeight: 0, containerWidth: 0 }),
-                        (this._maxScale = ((t = e.image), Math.max(Math.min(z(t.width / 150), z(t.height / 150), 3), 0.5)));
+                        (this._maxScale = ((t = e.image), Math.max(Math.min(B(t.width / 150), B(t.height / 150), 3), 0.5)));
                 }
                 render() {
                     const { circle: e, image: t, withZoomControl: o } = this.props,
@@ -306,7 +306,7 @@
                         { height: r, width: n } = this._getImageDimensions(),
                         { height: l, width: c } = this._getMaskDimensions(),
                         d = this.state.containerWidth && this.state.containerHeight;
-                    return i.createElement(s.Z, { style: L.container }, i.createElement(Z, { onLayout: this._handleLayout, onPanEnd: this._handlePanEnd, onPanMove: this._handlePanMove, onPinchMove: o ? this._handlePinchMove : void 0, onWheel: o ? this._handleWheel : void 0, style: L.root }, d ? i.createElement(i.Fragment, null, i.createElement(g.Z, { source: { uri: t.src, width: n, height: r }, style: [L.image, a] }), i.createElement(C, { circle: e, height: l, width: c })) : null), d ? this._renderControls() : null);
+                    return i.createElement(s.Z, { style: z.container }, i.createElement(Z, { onLayout: this._handleLayout, onPanEnd: this._handlePanEnd, onPanMove: this._handlePanMove, onPinchMove: o ? this._handlePinchMove : void 0, onWheel: o ? this._handleWheel : void 0, style: z.root }, d ? i.createElement(i.Fragment, null, i.createElement(g.Z, { source: { uri: t.src, width: n, height: r }, style: [z.image, a] }), i.createElement(C, { circle: e, height: l, width: c })) : null), d ? this._renderControls() : null);
                 }
                 componentDidUpdate(e, t) {
                     this._updateStyles(), this._adjustToInBounds();
@@ -318,9 +318,9 @@
                     return { aspectRatio: this.state.aspectRatio, top: Math.round(t * o.top), left: Math.round(t * o.left), width: Math.round(t * o.width), height: Math.round(t * o.height) };
                 }
             }
-            B.defaultProps = { circle: !1, withZoomControl: !0 };
-            const L = y.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
-                W = B;
+            W.defaultProps = { circle: !1, withZoomControl: !0 };
+            const z = y.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
+                L = W;
         },
         30183: (e, t, o) => {
             o.d(t, { Z: () => n });
@@ -469,17 +469,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: i, children: s, color: r, isActive: c, isCompact: d, isPillLink: h, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: C, style: w, to: x } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: i, children: s, color: r, isActive: c, isCompact: d, isPillLink: h, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: C, style: w, to: S } = this.props,
                         { location: E } = this.state,
-                        Z = x ? this._getMemoizedLink(x, C) : void 0,
-                        P = c ? c(x) : E?.pathname === Z?.pathname,
-                        k = f.Z.generate({ backgroundColor: "transparent", color: n.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: h ? S.pillHoverStyle.backgroundColor : void 0 }),
+                        Z = S ? this._getMemoizedLink(S, C) : void 0,
+                        P = c ? c(S) : E?.pathname === Z?.pathname,
+                        k = f.Z.generate({ backgroundColor: "transparent", color: n.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: h ? x.pillHoverStyle.backgroundColor : void 0 }),
                         R = g ? "medium" : P ? "bold" : "medium";
-                    return a.createElement(b.Z, { "aria-label": t, "aria-selected": P, focusable: !!P, interactiveStyles: k, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(h ? [S.pillStyle] : [S.link]), ...(h && P ? [S.pillActiveStyle] : []), d ? (h ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, w], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: h && S.flexGrow }, a.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(P, c, g, h) }, d && S.compactText, g && t && S.focusedText, h && S.pillTextStyle, h && P && S.pillActiveTextStyle, h && c && S.pillHoverTextStyle], weight: R }, e && a.createElement(e, { style: S.icon }), s, g || h ? null : a.createElement(l.Z, { style: P && [S.border, { backgroundColor: n.default.theme.colors[r] }] })), o ? a.createElement(m.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: y, withBorder: !1 }) : i ? a.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
+                    return a.createElement(b.Z, { "aria-label": t, "aria-selected": P, focusable: !!P, interactiveStyles: k, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(h ? [x.pillStyle] : [x.link]), ...(h && P ? [x.pillActiveStyle] : []), d ? (h ? x.compactPill : x.compactLink) : null, p ? x.roundedRect : null, w], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: h && x.flexGrow }, a.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [x.text, { color: this._getTextColor(P, c, g, h) }, d && x.compactText, g && t && x.focusedText, h && x.pillTextStyle, h && P && x.pillActiveTextStyle, h && c && x.pillHoverTextStyle], weight: R }, e && a.createElement(e, { style: x.icon }), s, g || h ? null : a.createElement(l.Z, { style: P && [x.border, { backgroundColor: n.default.theme.colors[r] }] })), o ? a.createElement(m.Z, { count: o, standalone: !0, style: [x.badge, o >= 10 && x.multiDigitBadge, o >= 20 && x.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: y, withBorder: !1 }) : i ? a.createElement(m.Z, { pip: !0, standalone: !0, style: x.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
                 }
             }
             (C.contextType = g.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const S = n.default.create((e) => ({
+            const x = n.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -503,7 +503,7 @@
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
                 w = C,
-                x = n.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                S = n.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 E = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: n, isRoundedRect: l, links: c, style: d, visibleItemIndex: h }) => {
                     const p = c
                             .filter(Boolean)
@@ -514,15 +514,15 @@
                         g = a.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: s, ...r }, c) => {
-                                    const d = m ? [x.linkRedesign, 0 === c && x.firstLinkRedesign, e && 0 === c && x.withNoPaddingStart] : void 0;
+                                    const d = m ? [S.linkRedesign, 0 === c && S.firstLinkRedesign, e && 0 === c && S.withNoPaddingStart] : void 0;
                                     return a.createElement(w, (0, i.Z)({ viewType: s }, r, { isCompact: o, isPillLink: n, isRoundedRect: l, isWebRedesign: m, style: d }), t);
                                 }),
                             [e, o, n, l, m, c],
                         );
-                    return a.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: n && x.gap, childrenStyle: !m && x.flexGrow, key: p, style: [n ? null : x.segmentedControl, m && x.leftAligned, d], visibleItemIndex: h }, g);
+                    return a.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: n && S.gap, childrenStyle: !m && S.flexGrow, key: p, style: [n ? null : S.segmentedControl, m && S.leftAligned, d], visibleItemIndex: h }, g);
                 };
         },
-        553007: (e, t, o) => {
+        123588: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 a = o(890601),
@@ -530,12 +530,12 @@
                 r = o(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3 7.5C3 6.119 4.119 5 5.5 5h13C19.881 5 21 6.119 21 7.5v9c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 19 3 17.881 3 16.5v-9zM5.5 7c-.276 0-.5.224-.5.5v9c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-9c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 3.59l7.457 7.45-1.414 1.42L13 7.41V21h-2V7.41l-5.043 5.05-1.414-1.42L12 3.59z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
         },
-        565421: (e, t, o) => {
+        487552: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 a = o(890601),
@@ -543,25 +543,12 @@
                 r = o(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 32 32", children: i.createElement("g", null, i.createElement("path", { d: "M20 23h-2v-8h2v8zm-6-8h-2v8h2v-8zm14-5h-1.713l-1.111 15.577C25.038 27.496 23.424 29 21.5 29H10.486c-1.915 0-3.522-1.496-3.66-3.405L5.699 10H4V8h7V6c0-1.654 1.346-3 3-3h4c1.654 0 3 1.346 3 3v2h7v2zM13 8h6V6c0-.551-.449-1-1-1h-4c-.551 0-1 .449-1 1v2zm11.281 2H7.705l1.117 15.451c.062.869.793 1.549 1.665 1.549H21.5c.88 0 1.619-.688 1.681-1.565L24.282 10z" })) }, { writingDirection: t });
-            };
-            n.metadata = { width: 32, height: 32 };
-            const l = n;
-        },
-        762410: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var i = o(202784),
-                a = o(890601),
-                s = o(783427),
-                r = o(347101);
-            const n = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M17.584 4l-2.043-2.043L16.955.543l2.043 2.043L21.041.543l1.414 1.414L20.412 4l2.043 2.043-1.414 1.414-2.043-2.043-2.043 2.043-1.414-1.414L17.584 4zm-11.4-.949C7.734 2.534 9.849 2 12 2v2c-1.849 0-3.734.465-5.184.949-.719.24-1.318.479-1.735.658L5 5.642v6.377c0 1.565.445 3.066 1.291 4.269 1.467-1.484 3.429-2.287 5.715-2.287s4.241.801 5.708 2.279C18.557 15.079 19 13.581 19 12.019V11h2v1.019c0 2.407-.852 4.792-2.575 6.514-.282.282-.587.545-.914.787-.86.636-1.821 1.288-2.742 1.785-.882.476-1.879.895-2.768.895s-1.886-.42-2.768-.895c-.922-.497-1.882-1.149-2.742-1.785-.324-.24-.626-.5-.905-.778-1.729-1.723-2.584-4.112-2.584-6.523V4.382l.553-.276.447.894-.447-.894h.002l.004-.003.012-.006.04-.02.146-.069c.126-.059.308-.141.537-.24.458-.196 1.109-.457 1.89-.717h-.002zM16.32 17.713C15.234 16.605 13.783 16 12.007 16s-3.232.608-4.318 1.719c.82.606 1.692 1.193 2.493 1.625.844.455 1.463.656 1.819.656s.975-.2 1.819-.656c.804-.433 1.678-1.023 2.5-1.631zM12 8c-.828 0-1.5.672-1.5 1.5S11.172 11 12 11s1.5-.672 1.5-1.5S12.828 8 12 8zM8.5 9.5C8.5 7.567 10.067 6 12 6s3.5 1.567 3.5 3.5S13.933 13 12 13s-3.5-1.567-3.5-3.5z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
         },
-        410418: (e, t, o) => {
+        787657: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 a = o(890601),
@@ -569,12 +556,12 @@
                 r = o(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M21 5v3h3v2h-3v3h-2v-3h-3V8h3V5h2zM10 2C7.791 2 6 3.79 6 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4zm0 9c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
         },
-        158910: (e, t, o) => {
+        721569: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 a = o(890601),
@@ -582,12 +569,12 @@
                 r = o(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm8-1V7.5h2V10h2.5v2H12v2.5h-2V12H7.5v-2H10z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M10.09 3.098L9.72 7h5.99l.39-4.089 1.99.187L17.72 7h3.78v2h-3.97l-.56 6h3.53v2h-3.72l-.38 4.089-1.99-.187.36-3.902H8.78l-.38 4.089-1.99-.187L6.77 17H2.5v-2h4.46l.56-6H3.5V7h4.21l.39-4.089 1.99.187zM14.96 15l.56-6H9.53l-.56 6h5.99z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
         },
-        106186: (e, t, o) => {
+        614991: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var i = o(202784),
                 a = o(890601),
@@ -595,7 +582,7 @@
                 r = o(347101);
             const n = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M23.426 9.29L15.54 8.15 12.013 1 8.486 8.15.6 9.29l5.707 5.56-1.348 7.86L12.013 19l7.053 3.71-1.347-7.86 5.707-5.56zm-11.413 7.45l-4.397 2.31.84-4.89-3.558-3.47 4.916-.72 2.199-4.45 2.198 4.45 4.917.72-3.558 3.47.84 4.89-4.397-2.31z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm12.5 1h-7v-2h7v2z" })) }, { writingDirection: t });
             };
             n.metadata = { width: 24, height: 24 };
             const l = n;
@@ -633,4 +620,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-bc6ccf4c.7cf263aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-bc6ccf4c.caea6d2a.js.map

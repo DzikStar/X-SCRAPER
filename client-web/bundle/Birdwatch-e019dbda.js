@@ -134,31 +134,30 @@
                     }
                 }
             }
-            const O = f((0, T.Z)(R));
-            var g = n(912021),
+            const g = f((0, T.Z)(R));
+            var O = n(912021),
                 U = n(383675),
                 L = n(611423),
                 M = n(443781);
             const y = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        n.e("icons.23"),
                         n.e("icons.0"),
-                        n.e("icons.13"),
-                        n.e("icons.22"),
-                        n.e("icons.29"),
-                        n.e("icons.5"),
-                        n.e("icons.7"),
-                        n.e("icons.1"),
-                        n.e("icons.25"),
+                        n.e("icons.2"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
                         n.e("icons.10"),
-                        n.e("icons.20"),
-                        n.e("icons.14"),
-                        n.e("icons.11"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.24"),
-                        n.e("icons.16"),
-                        n.e("icons.17"),
+                        n.e("icons.11"),
+                        n.e("icons.26"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -169,20 +168,21 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.23"),
-                        n.e("icons.26"),
-                        n.e("icons.3"),
-                        n.e("icons.28"),
-                        n.e("icons.9"),
                         n.e("icons.8"),
+                        n.e("icons.4"),
+                        n.e("icons.14"),
+                        n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
+                        n.e("icons.18"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -212,9 +212,9 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                         n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
-                        n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
@@ -276,7 +276,7 @@
                             }
                             return e.contextualScribeNamespace;
                         }),
-                        (this._getModule = (0, g.Z)((e, t, n, o) => {
+                        (this._getModule = (0, O.Z)((e, t, n, o) => {
                             if (e?.id !== t) {
                                 if (e?.urtEndpoint) return (0, L.Z)({ urtUrl: e?.urtEndpoint, timelinePrefix: o });
                                 if (e?.graphQLTimelineId) return (0, U.R)(e.graphQLTimelineId);
@@ -375,7 +375,7 @@
                 Se = i().e9f1fbcc,
                 me = o.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: S, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: I, onBackClick: A, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: g, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: G } = e,
+                    const { TabBar: t, backLocation: n, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: S, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: I, onBackClick: A, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: O, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: G } = e,
                         x = (0, r.tj)(),
                         Q = o.useMemo(() => ({ ...d, ...(0, k.Z)({ isLegacy: !0, isWide: x }) }), [d, x]),
                         [W, q] = o.useState(!0),
@@ -395,8 +395,8 @@
                         te = B ? u.Z : o.Fragment,
                         ne = o.createElement(o.Fragment, null, X, o.createElement(te, null, o.createElement(H, { entryConfiguration: Q, initialModule: I, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, selectedTabId: U, timelinePrefix: M, title: y, withoutHeadroom: !0 }))),
                         oe = i ? o.createElement(E.Z, { component: s.Z, fab: i }, ne) : ne,
-                        ae = c && S ? o.createElement(O, { getTabLink: c, module: I, selectedTabId: U }) : void 0;
-                    return o.createElement(b.nO, { namespace: J }, o.createElement(p.Z, null, o.createElement(_.Z, { TabBar: t, backLocation: n, documentTitle: a, history: m, logoButton: C, onBackClick: A, primaryContent: oe, rightControl: ee || g, secondaryBar: ae, sidebarContent: L, subtitle: j, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: G })));
+                        ae = c && S ? o.createElement(g, { getTabLink: c, module: I, selectedTabId: U }) : void 0;
+                    return o.createElement(b.nO, { namespace: J }, o.createElement(p.Z, null, o.createElement(_.Z, { TabBar: t, backLocation: n, documentTitle: a, history: m, logoButton: C, onBackClick: A, primaryContent: oe, rightControl: ee || O, secondaryBar: ae, sidebarContent: L, subtitle: j, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: G })));
                 };
             we.defaultProps = { entryConfiguration: (0, G.G)({}), renderEmptyState: () => o.createElement(a.Z, { header: Se }), sidebarContent: me, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const Te = te(we);
@@ -537,7 +537,7 @@
             const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, n) => {
-            n.d(t, { $e: () => Ie, BG: () => ee, Bb: () => Me, Bs: () => ne, EW: () => Te, HO: () => ce, JL: () => se, Jn: () => _e, Kc: () => fe, Ld: () => Le, Lt: () => Y, OV: () => X, PL: () => oe, Pi: () => he, Qg: () => x, SZ: () => Pe, V0: () => ge, Wk: () => $, X3: () => Re, _T: () => He, _b: () => Fe, aZ: () => Ne, ap: () => re, cS: () => te, dw: () => j, eD: () => ae, eY: () => Se, et: () => z, f3: () => ue, f_: () => Oe, gH: () => le, gP: () => Ze, jm: () => W, kT: () => Ue, kX: () => Be, lC: () => Ae, lW: () => de, lw: () => Ce, mZ: () => ve, mv: () => pe, oV: () => ke, pN: () => we, qm: () => De, r9: () => Q, sz: () => K, tk: () => V, vF: () => be, w6: () => ie, wK: () => ye, wd: () => Ee, ww: () => me });
+            n.d(t, { $e: () => Ie, BG: () => ee, Bb: () => Me, Bs: () => ne, EW: () => Te, HO: () => ce, JL: () => se, Jn: () => _e, Kc: () => fe, Ld: () => Le, Lt: () => Y, OV: () => X, PL: () => oe, Pi: () => he, Qg: () => x, SZ: () => Pe, V0: () => Oe, Wk: () => $, X3: () => Re, _T: () => He, _b: () => Fe, aZ: () => Ne, ap: () => re, cS: () => te, dw: () => j, eD: () => ae, eY: () => Se, et: () => z, f3: () => ue, f_: () => ge, gH: () => le, gP: () => Ze, jm: () => W, kT: () => Ue, kX: () => Be, lC: () => Ae, lW: () => de, lw: () => Ce, mZ: () => ve, mv: () => pe, oV: () => ke, pN: () => we, qm: () => De, r9: () => Q, sz: () => K, tk: () => V, vF: () => be, w6: () => ie, wK: () => ye, wd: () => Ee, ww: () => me });
             var o = n(744531),
                 a = n(401388),
                 r = n(106067),
@@ -563,8 +563,8 @@
                 D = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_FAILURE" }),
                 f = Object.freeze({ REQUEST: "rweb/birdwatchNotes/ADMIT_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/ADMIT_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/ADMIT_USER_FAILURE" }),
                 R = Object.freeze({ REQUEST: "rweb/birdwatchNotes/REMOVE_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/REMOVE_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/REMOVE_USER_FAILURE" }),
-                O = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_FAILURE" }),
-                g = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_FAILURE" }),
+                g = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_FAILURE" }),
+                O = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_FAILURE" }),
                 U = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_FAILURE" }),
                 L = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_FAILURE" }),
                 M = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_NOTE_FAILURE" }),
@@ -622,7 +622,7 @@
                             const n = t.meta?.noteId;
                             return n ? { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], noteTranslation: { fetchStatus: c.ZP.FAILED } } } } : e;
                         }
-                        case g.SUCCESS: {
+                        case O.SUCCESS: {
                             const n = t.payload;
                             return { ...e, signupEligibility: n?.birdwatch_sign_up_eligibility?.eligible };
                         }
@@ -703,7 +703,7 @@
                             }
                             return n ? { ...e, contributor: { ...e.contributor, [n]: { ...e.contributor[n], fetchStatus: c.ZP.FAILED } } } : e;
                         }
-                        case O.SUCCESS: {
+                        case g.SUCCESS: {
                             const n = t.payload;
                             return { ...e, contributor: { ...e.contributor, notificationSettings: n?.notification_settings?.needs_your_help_frequency, ownAlias: n?.alias, canWriteNotes: n?.can_write_notes, enrollmentStatus: n?.user_enrollment, isTopWriter: n?.is_top_writer, showMobileNavigationSettings: n?.user_settings?.show_in_app_navigation } };
                         }
@@ -948,11 +948,11 @@
                 Ie =
                     () =>
                     (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: g, context: "FETCH_SIGNUP_ELIGIBILITY" }),
+                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: O, context: "FETCH_SIGNUP_ELIGIBILITY" }),
                 Ae =
                     () =>
                     (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: O, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
+                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: g, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
                 Ne =
                     () =>
                     (e, t, { api: n }) =>
@@ -969,8 +969,8 @@
                     () =>
                     (e, t, { api: n }) =>
                         (0, l._O)(e, { request: n.withEndpoint(r.Z).acknowledgeEarnOut, params: {} })({ actionTypes: Z, context: "PROFILE_ACKNOWLEDGE_EARN_OUT", meta: {} }),
-                Oe = (e) => ({ meta: { note_id: e }, type: b.SUCCESS }),
-                ge =
+                ge = (e) => ({ meta: { note_id: e }, type: b.SUCCESS }),
+                Oe =
                     (e) =>
                     (t, n, { api: o }) =>
                         (0, l._O)(t, { request: o.withEndpoint(r.Z).deleteBirdwatchBatSignal, params: { tweet_id: e } })({ actionTypes: C, context: "DELETE_BIRDWATCH_BATSIGNAL", meta: { tweet_id: e } }),
@@ -1108,4 +1108,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.f9bb720a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.3f1be18a.js.map

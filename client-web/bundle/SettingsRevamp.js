@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsRevamp", "icons/IconDeviceNotification-js"],
+    ["bundle.SettingsRevamp"],
     {
         129270: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -253,7 +253,7 @@
                         (0, o.Vg)(t, { params: e, request: r.withEndpoint(a.Z).markDataAsDownloaded })("MARK_DATA_AS_DOWNLOADED");
         },
         702091: (e, t, n) => {
-            n.r(t), n.d(t, { AccountInformation: () => Ke, default: () => Ye });
+            n.r(t), n.d(t, { AccountInformation: () => je, default: () => Ye });
             n(136728);
             var a = n(202784),
                 r = n(325686),
@@ -275,13 +275,13 @@
                 _ = n(593866),
                 Z = n(138099),
                 w = n(786998),
-                C = n(370006),
-                P = n(520913),
+                P = n(370006),
+                C = n(520913),
                 S = n(323265),
                 k = n(668214);
-            const v = (0, k.Z)().withAnalytics();
-            var I = n(392237);
-            const A = I.default.create((e) => ({ headerIcon: { color: e.colors.brandColor, height: e.spacesPx.space28, width: e.spacesPx.space28 }, curvedHeader: { clipPath: "ellipse(100% 100% at 38% 0%)", backgroundColor: e.colors.teal600, paddingBottom: e.spacesPx.space40, width: "100%" }, footer: { width: "100%", padding: e.spacesPx.space24 }, image1: { aspectRatio: "1.31", height: "100%", width: "100%", maxHeight: "249px", maxWidth: "327px" }, image2: { aspectRatio: "1.88", height: "100%", width: "100%", maxHeight: "175px", maxWidth: "329px" }, topContent: { paddingStart: e.spacesPx.space32, paddingEnd: e.spacesPx.space32 }, learnMoreContainer: { paddingTop: e.spacesPx.space8, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space28 }, modalContent: { paddingTop: e.spacesPx.space28, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space28 }, modalImageContainer: { alignItems: "center", backgroundColor: e.colors.teal0, height: "auto", justifyContent: "center", marginTop: e.spacesPx.space28 }, modalTitle: { paddingBottom: e.spacesPx.space8 }, numberCircle: { alignItems: "center", backgroundColor: e.colors.buttonBlack, borderRadius: e.borderRadii.infinite, height: e.spacesPx.space48, justifyContent: "center", marginEnd: e.spacesPx.space16, width: e.spacesPx.space48 }, scrollable: { flexGrow: 1, flexShrink: 1, overflowY: "auto" }, sheet: { height: "75%", maxHeight: "700px", minHeight: "480px", overflowY: "auto" }, stepListContainer: { paddingTop: e.spacesPx.space16, paddingEnd: e.spacesPx.space28 }, stepTitle: { paddingBottom: e.spacesPx.space2 } })),
+            const I = (0, k.Z)().withAnalytics();
+            var v = n(392237);
+            const A = v.default.create((e) => ({ headerIcon: { color: e.colors.brandColor, height: e.spacesPx.space28, width: e.spacesPx.space28 }, curvedHeader: { clipPath: "ellipse(100% 100% at 38% 0%)", backgroundColor: e.colors.teal600, paddingBottom: e.spacesPx.space40, width: "100%" }, footer: { width: "100%", padding: e.spacesPx.space24 }, image1: { aspectRatio: "1.31", height: "100%", width: "100%", maxHeight: "249px", maxWidth: "327px" }, image2: { aspectRatio: "1.88", height: "100%", width: "100%", maxHeight: "175px", maxWidth: "329px" }, topContent: { paddingStart: e.spacesPx.space32, paddingEnd: e.spacesPx.space32 }, learnMoreContainer: { paddingTop: e.spacesPx.space8, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space28 }, modalContent: { paddingTop: e.spacesPx.space28, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space28 }, modalImageContainer: { alignItems: "center", backgroundColor: e.colors.teal0, height: "auto", justifyContent: "center", marginTop: e.spacesPx.space28 }, modalTitle: { paddingBottom: e.spacesPx.space8 }, numberCircle: { alignItems: "center", backgroundColor: e.colors.buttonBlack, borderRadius: e.borderRadii.infinite, height: e.spacesPx.space48, justifyContent: "center", marginEnd: e.spacesPx.space16, width: e.spacesPx.space48 }, scrollable: { flexGrow: 1, flexShrink: 1, overflowY: "auto" }, sheet: { height: "75%", maxHeight: "700px", minHeight: "480px", overflowY: "auto" }, stepListContainer: { paddingTop: e.spacesPx.space16, paddingEnd: e.spacesPx.space28 }, stepTitle: { paddingBottom: e.spacesPx.space2 } })),
                 D = "https://abs.twimg.com/images/automation-onboard-1_s.png",
                 x = "https://abs.twimg.com/images/automation-onboard-2_s.png",
                 L = [
@@ -309,8 +309,8 @@
                 T = c().g2a9bd3e,
                 O = c().dd9b3aae,
                 R = c().b80bdc40,
-                M = c().a01ac9b6,
-                U = c().b989e1fe,
+                U = c().a01ac9b6,
+                M = c().b989e1fe,
                 z = a.createElement(c().I18NFormatMessage, { $i18n: "j31f2f97" }, a.createElement(o.ZP, { color: "text", link: F, weight: "bold", withUnderline: !0 }, c().a18d6a7d)),
                 B = c().i2d599aa,
                 H = [
@@ -327,7 +327,7 @@
                             const t = L[e];
                             return a.createElement(f.Z, { "aria-label": "", aspectMode: y.Z.exact(t.aspectRatio), customVariants: t.variants, image: t.default });
                         }),
-                        (this._renderContent = () => a.createElement(r.Z, null, a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { size: "title4", style: A.modalTitle, weight: "heavy" }, O), a.createElement(o.ZP, { color: "gray700", size: "body" }, R)), a.createElement(r.Z, { style: A.modalImageContainer }, a.createElement(r.Z, { style: A.image1 }, this._renderAdaptiveImageFromSource(0))), a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { color: "gray700", size: "body" }, M)), a.createElement(r.Z, { style: A.modalImageContainer }, a.createElement(r.Z, { style: A.image2 }, this._renderAdaptiveImageFromSource(1))), a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { size: "title4", style: A.modalTitle, weight: "heavy" }, U), a.createElement(o.ZP, { color: "gray700", size: "body" }, z)), a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { size: "title4", style: A.modalTitle, weight: "heavy" }, B)), a.createElement(r.Z, { style: A.stepListContainer }, this._renderSteps()), a.createElement(r.Z, { style: A.learnMoreContainer }, a.createElement(o.ZP, { color: "gray700", size: "body" }, this._renderLearnMoreLabel())))),
+                        (this._renderContent = () => a.createElement(r.Z, null, a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { size: "title4", style: A.modalTitle, weight: "heavy" }, O), a.createElement(o.ZP, { color: "gray700", size: "body" }, R)), a.createElement(r.Z, { style: A.modalImageContainer }, a.createElement(r.Z, { style: A.image1 }, this._renderAdaptiveImageFromSource(0))), a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { color: "gray700", size: "body" }, U)), a.createElement(r.Z, { style: A.modalImageContainer }, a.createElement(r.Z, { style: A.image2 }, this._renderAdaptiveImageFromSource(1))), a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { size: "title4", style: A.modalTitle, weight: "heavy" }, M), a.createElement(o.ZP, { color: "gray700", size: "body" }, z)), a.createElement(r.Z, { style: A.modalContent }, a.createElement(o.ZP, { size: "title4", style: A.modalTitle, weight: "heavy" }, B)), a.createElement(r.Z, { style: A.stepListContainer }, this._renderSteps()), a.createElement(r.Z, { style: A.learnMoreContainer }, a.createElement(o.ZP, { color: "gray700", size: "body" }, this._renderLearnMoreLabel())))),
                         (this._renderFooter = () => a.createElement(r.Z, { style: A.footer }, a.createElement(E.ZP, { backgroundColor: "teal600", color: "white", onClick: this.props.onConfirm, size: "xLarge" }, V))),
                         (this._renderLearnMoreLabel = () => a.createElement(c().I18NFormatMessage, { $i18n: "ed8f77d3" }, a.createElement(o.ZP, { color: "text", link: N, onClick: this.props.onFaqClick, weight: "bold", withUnderline: !0 }, c().e9965c14))),
                         (this._renderStepLabel = (e) => a.createElement(o.ZP, { size: "headline2", style: A.stepTitle, weight: "bold" }, e)),
@@ -338,18 +338,18 @@
                         });
                 }
                 render() {
-                    return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: this.props.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(P.default, { style: A.headerIcon }), leftControl: a.createElement(C.Z, { backButtonType: "close", onClick: this.props.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, this._renderHeader(), this._renderContent()), this._renderFooter()));
+                    return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: this.props.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(C.default, { style: A.headerIcon }), leftControl: a.createElement(P.Z, { backButtonType: "close", onClick: this.props.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, this._renderHeader(), this._renderContent()), this._renderFooter()));
                 }
             }
-            const $ = v(G),
+            const $ = I(G),
                 q = c().a67dbd0a,
                 W = [
                     { title: c().ee78c192, desc: c().c3f35e0c },
                     { title: c().d019b5fa, desc: c().dd04f24e },
                     { title: c().hb0f8bbc, desc: c().g69acc5c },
                 ],
-                j = c().j24c37b2;
-            function K() {
+                K = c().j24c37b2;
+            function j() {
                 return a.createElement(r.Z, { style: A.curvedHeader }, a.createElement(r.Z, { style: [A.topContent, { paddingTop: S.ZP.isMobileOS() ? "26px" : "36px" }] }, a.createElement(o.ZP, { color: "white", size: "title2", weight: "bold" }, q)));
             }
             function Y() {
@@ -364,10 +364,10 @@
                 );
             }
             function J({ onConfirm: e }) {
-                return a.createElement(r.Z, { style: A.footer }, a.createElement(E.ZP, { backgroundColor: "teal600", color: "white", onClick: e, size: "xLarge" }, j));
+                return a.createElement(r.Z, { style: A.footer }, a.createElement(E.ZP, { backgroundColor: "teal600", color: "white", onClick: e, size: "xLarge" }, K));
             }
             const X = function (e) {
-                return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: e.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(P.default, { style: A.headerIcon }), leftControl: a.createElement(C.Z, { backButtonType: "close", onClick: e.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, a.createElement(K, null), a.createElement(Q, null)), a.createElement(J, { onConfirm: e.onConfirm })));
+                return a.createElement(Z.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: e.onClose, type: "full", withMask: !0 }, a.createElement(w.Z, { centeredLogo: a.createElement(C.default, { style: A.headerIcon }), leftControl: a.createElement(P.Z, { backButtonType: "close", onClick: e.onClose }), withBackground: !0 }), a.createElement(r.Z, { style: S.ZP.isMobileOS() ? null : A.sheet }, a.createElement(r.Z, { style: A.scrollable }, a.createElement(j, null), a.createElement(Q, null)), a.createElement(J, { onConfirm: e.onConfirm })));
             };
             var ee = n(609848),
                 te = n(264922),
@@ -394,19 +394,19 @@
                 be = (0, k.Z)()
                     .propsFromState(() => ({ countryName: he, email: se.selectFirstEmail, fetchStatus: pe, viewerUser: ue.ZP.selectViewerUser, managingAccount: re.MB, phone: se.selectFirstPhoneNumber, ages: le.LJ, birthdate: le.ZS, gender: le.VU, languages: le.VT, languageCode: ce.VT, signupDetails: le.Hb, verificationAccess: oe.kD }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, ae.zr)("SETTINGS_ACCOUNT_INFORMATION_SCREEN"), fetchAccountVerificationAccess: oe.$J, fetchDevices: se.fetchDevices, fetchData: le.nJ, fetchPreferences: le.CP, fetchCountryNamesIfNeeded: ie.Po, fetchUserAccountLabel: re.cs })),
-                ge = I.default.create((e) => ({ helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, infoItem: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: "1px" } })),
+                ge = v.default.create((e) => ({ helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, infoItem: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: "1px" } })),
                 fe = c().f15bfdb4,
                 ye = c().d0a77c9b,
                 Ee = c().jade381b,
                 _e = c().d1f6d336,
                 Ze = c().a3841918,
                 we = c().f70cd5ee,
-                Ce = c().ib6f1694,
-                Pe = c().a8d0108e,
+                Pe = c().ib6f1694,
+                Ce = c().a8d0108e,
                 Se = c().de323650,
                 ke = c().b6ab31be,
-                ve = c().c21037d0,
-                Ie = c().h3290872,
+                Ie = c().c21037d0,
+                ve = c().h3290872,
                 Ae = c().d12d42dc,
                 De = c().hbd12156,
                 xe = c().b7ec04f4,
@@ -416,8 +416,8 @@
                 Te = c().a67dbd0a,
                 Oe = c().a3db727e,
                 Re = c().i62a03aa,
-                Me = c().c119dee8,
-                Ue = c().eacf1990,
+                Ue = c().c119dee8,
+                Me = c().eacf1990,
                 ze = c().a3bf1262,
                 Be = c().bf96fda4,
                 He = c().d495680e,
@@ -426,8 +426,8 @@
                 $e = a.createElement(c().I18NFormatMessage, { $i18n: "ce6f73c7" }, a.createElement(o.ZP, { link: "/settings/account/personalization" }, c().i0d81ddb)),
                 qe = c().i859a9d4,
                 We = { page: "settings", section: "account_information" },
-                je = { page: "account_type_landing" };
-            class Ke extends a.Component {
+                Ke = { page: "account_type_landing" };
+            class je extends a.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this.combinedFetches = () => {
@@ -451,11 +451,11 @@
                                 m ? a.createElement(i.Z, { description: s, label: Ze, link: "/settings/email" }) : null,
                                 m ? this._renderVerified() : null,
                                 m ? a.createElement(i.Z, { description: m.protected ? xe : Re, label: Ve, link: "/settings/audience_and_tagging" }) : null,
-                                m ? a.createElement(r.Z, { style: [ge.infoItem, ge.bottomBorder], testID: "account-creation" }, a.createElement(o.ZP, null, Ce), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, ye(new Date(m.created_at))), u.creation_ip && u.country ? a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, `${u.creation_ip} (${u.country})`) : null) : null,
-                                m ? a.createElement(i.Z, { description: n, label: ve, link: "/settings/country" }) : null,
+                                m ? a.createElement(r.Z, { style: [ge.infoItem, ge.bottomBorder], testID: "account-creation" }, a.createElement(o.ZP, null, Pe), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, ye(new Date(m.created_at))), u.creation_ip && u.country ? a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, `${u.creation_ip} (${u.country})`) : null) : null,
+                                m ? a.createElement(i.Z, { description: n, label: Ie, link: "/settings/country" }) : null,
                                 a.createElement(i.Z, { description: f, label: He, link: "/settings/languages" }),
-                                a.createElement(i.Z, { description: this._renderGender(l.value), label: Pe, link: "/settings/your_twitter_data/gender" }),
-                                m ? a.createElement(i.Z, { description: a.createElement(a.Fragment, null, a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, g), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, t ? ze : Ue)), label: Me, link: "/settings/profile" }) : null,
+                                a.createElement(i.Z, { description: this._renderGender(l.value), label: Ce, link: "/settings/your_twitter_data/gender" }),
+                                m ? a.createElement(i.Z, { description: a.createElement(a.Fragment, null, a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, g), a.createElement(o.ZP, { color: "gray700", style: ge.helpText }, t ? ze : Me)), label: Ue, link: "/settings/profile" }) : null,
                                 a.createElement(i.Z, { description: b, label: Be, link: "/settings/your_twitter_data/age" }),
                                 m ? this._renderAutomation() : null,
                                 m ? this._renderParodyManage() : null,
@@ -473,7 +473,7 @@
                             }
                         }),
                         (this._renderVerified = () => {
-                            const e = a.createElement(s.Z, { label: Ie, learnMoreLabel: qe, learnMoreLink: "https://help.x.com/managing-your-account/about-twitter-verified-accounts", subtext: this.props.viewerUser?.verified || this.props.viewerUser?.is_blue_verified ? Le : Fe });
+                            const e = a.createElement(s.Z, { label: ve, learnMoreLabel: qe, learnMoreLink: "https://help.x.com/managing-your-account/about-twitter-verified-accounts", subtext: this.props.viewerUser?.verified || this.props.viewerUser?.is_blue_verified ? Le : Fe });
                             if (this.context.featureSwitches.isTrue("identity_verification_intake_enabled")) {
                                 let t, n;
                                 switch (this.props.verificationAccess.status) {
@@ -486,17 +486,17 @@
                                     default:
                                         (t = De), (n = Fe);
                                 }
-                                return a.createElement(s.Z, { label: Ie, learnMoreLabel: t, learnMoreLink: "/settings/account/request_verification", subtext: n });
+                                return a.createElement(s.Z, { label: ve, learnMoreLabel: t, learnMoreLink: "/settings/account/request_verification", subtext: n });
                             }
                             return e;
                         }),
                         (this._handleAutomationOnPress = () => {
                             const { analytics: e } = this.props;
-                            e.scribe({ ...We, element: "automation", action: "click" }), this.props.managingAccount || (e.scribe({ ...je, action: "impression" }), this.setState({ showAutomationOnboardingModal: !0 }));
+                            e.scribe({ ...We, element: "automation", action: "click" }), this.props.managingAccount || (e.scribe({ ...Ke, action: "impression" }), this.setState({ showAutomationOnboardingModal: !0 }));
                         }),
                         (this._handleParodyOnPress = () => {
                             const { analytics: e } = this.props;
-                            e.scribe({ ...We, element: "parody", action: "click" }), (this.props.viewerUser?.parody_commentary_fan_label && "None" !== this.props.viewerUser?.parody_commentary_fan_label) || (e.scribe({ ...je, action: "impression" }), this.setState({ showParodyOnboardingModal: !0 }));
+                            e.scribe({ ...We, element: "parody", action: "click" }), (this.props.viewerUser?.parody_commentary_fan_label && "None" !== this.props.viewerUser?.parody_commentary_fan_label) || (e.scribe({ ...Ke, action: "impression" }), this.setState({ showParodyOnboardingModal: !0 }));
                         }),
                         (this._handleCloseAutomationModal = () => {
                             this.setState({ showAutomationOnboardingModal: !1 });
@@ -506,15 +506,15 @@
                         }),
                         (this._handleConfirmAutomationModal = () => {
                             const { analytics: e, history: t } = this.props;
-                            e.scribe({ ...je, element: "call_to_action", action: "click" }), t.push("/settings/account/automation");
+                            e.scribe({ ...Ke, element: "call_to_action", action: "click" }), t.push("/settings/account/automation");
                         }),
                         (this._handleConfirmParodyModal = () => {
                             const { analytics: e, history: t } = this.props;
-                            e.scribe({ ...je, element: "call_to_action", action: "click" }), t.push("/settings/account/parody");
+                            e.scribe({ ...Ke, element: "call_to_action", action: "click" }), t.push("/settings/account/parody");
                         }),
                         (this._handleFaqClick = () => {
                             const { analytics: e } = this.props;
-                            e.scribe({ ...je, component: "link", element: "help_faqs", action: "click" });
+                            e.scribe({ ...Ke, component: "link", element: "help_faqs", action: "click" });
                         }),
                         (this._renderAutomation = () => {
                             const { managingAccount: e } = this.props,
@@ -536,8 +536,8 @@
                     return a.createElement(p.nO, { namespace: We }, a.createElement(u.Z, null, a.createElement(te.Z, { location: t, title: fe }, a.createElement(ee.Z, { fetch: this.combinedFetches, fetchStatus: e, render: () => this._render() }))));
                 }
             }
-            Ke.contextType = d.rC;
-            const Ye = (0, h.Z)(be(Ke));
+            je.contextType = d.rC;
+            const Ye = (0, h.Z)(be(je));
         },
         450028: (e, t, n) => {
             n.r(t), n.d(t, { ArchiveUnavailable: () => J, YourTwitterData: () => te, default: () => ne });
@@ -561,15 +561,15 @@
                 _ = n(264922),
                 Z = n(569291),
                 w = n(71620),
-                C = n(668214),
-                P = n(601576);
-            const S = (0, C.Z)()
+                P = n(668214),
+                C = n(601576);
+            const S = (0, P.Z)()
                 .propsFromState(() => ({ fetchStatus: E.UD, downloads: E.NK, isUserDataUnavailable: E.c }))
-                .propsFromActions(() => ({ addToast: P.fz, createDataDownload: E.fm, createLocalApiErrorHandler: (0, w.zr)("DOWNLOAD_YOUR_DATA"), fetchDownloads: E._d }))
+                .propsFromActions(() => ({ addToast: C.fz, createDataDownload: E.fm, createLocalApiErrorHandler: (0, w.zr)("DOWNLOAD_YOUR_DATA"), fetchDownloads: E._d }))
                 .withAnalytics({ page: "settings", section: "account", component: "download_your_data" });
             const k = n(392237).default.create((e) => ({ description: { flexShrink: 1 }, helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, errorText: { marginEnd: e.spaces.space20 }, floatingLink: { paddingStart: e.spaces.space20 }, labelContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", width: "100%" }, narrowButton: { alignSelf: "center", marginStart: e.spaces.space12, paddingStart: e.spaces.space20 }, narrowButtonRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, noShrink: { flexShrink: 0 } })),
-                v = "/settings/your_twitter_data/data",
-                I = "https://pscp.tv/account/your-data",
+                I = "/settings/your_twitter_data/data",
+                v = "https://pscp.tv/account/your-data",
                 A = (0, o.ju)("https://help.x.com/managing-your-account/accessing-your-twitter-data"),
                 D = (0, o.ju)("https://help.x.com/forms/feature_report?feature=emails&subtopic=email_twitter_archive&was_redirect=true"),
                 x = h().f56af9cc,
@@ -579,8 +579,8 @@
                 T = h().b708417c,
                 O = h().jbf5843e,
                 R = h().ea886c6e,
-                M = h().cdcc2ad4,
-                U = h().dbeff87a,
+                U = h().cdcc2ad4,
+                M = h().dbeff87a,
                 z = h().ce5d2c46,
                 B = h().b2ed92c4,
                 H = h().gee8110e,
@@ -589,17 +589,17 @@
                 $ = h().c2254084,
                 q = h().f62d1d9e,
                 W = h().i859a9d4,
-                j = a.createElement(h().I18NFormatMessage, { $i18n: "efc1de65" }, a.createElement(i.ZP, { link: D }, h().db40dfcf)),
-                K = h().b221ca4c,
+                K = a.createElement(h().I18NFormatMessage, { $i18n: "efc1de65" }, a.createElement(i.ZP, { link: D }, h().db40dfcf)),
+                j = h().b221ca4c,
                 Y = { page: "settings", section: "account", component: "download_your_data" },
                 Q = Object.freeze({ ...E.n$, UNAVAILABLE: "UNAVAILABLE" }),
                 J = () => a.createElement(a.Fragment, null, a.createElement(s.Z, null), a.createElement(l.Z, { label: V, withBottomBorder: !0 }), a.createElement(c.Z, { description: G })),
                 X = (e) => {
                     switch (e) {
                         case Q.NONE:
-                            return U;
-                        case Q.FAILED:
                             return M;
+                        case Q.FAILED:
+                            return U;
                         case Q.COMPLETE:
                             return H;
                         case Q.UNAVAILABLE:
@@ -613,7 +613,7 @@
                         case Q.NONE:
                             return null;
                         case Q.FAILED:
-                            return j;
+                            return K;
                         case Q.COMPLETE:
                             return q;
                         case Q.UNAVAILABLE:
@@ -624,15 +624,15 @@
                 };
             function te(e) {
                 const { viewerUserId: t } = a.useContext(g.rC),
-                    { addToast: n, analytics: o, createDataDownload: l, createLocalApiErrorHandler: p, downloads: h, fetchDownloads: w, fetchStatus: C, isUserDataUnavailable: P, location: S } = e,
+                    { addToast: n, analytics: o, createDataDownload: l, createLocalApiErrorHandler: p, downloads: h, fetchDownloads: w, fetchStatus: P, isUserDataUnavailable: C, location: S } = e,
                     D = !!t,
-                    M = !D,
-                    U = P,
-                    z = !P && D;
+                    U = !D,
+                    M = C,
+                    z = !C && D;
                 function B() {
                     o.scribe({ element: "request_button", action: "click" }),
                         l()
-                            .then(() => n({ text: K }))
+                            .then(() => n({ text: j }))
                             .catch(p());
                 }
                 return a.createElement(
@@ -648,7 +648,7 @@
                             z
                                 ? a.createElement(Z.Z, {
                                       fetch: () => w(),
-                                      fetchStatus: C,
+                                      fetchStatus: P,
                                       renderChildren: () =>
                                           a.createElement(
                                               a.Fragment,
@@ -668,17 +668,17 @@
                                                           u = n === E.n$.COMPLETE && !o,
                                                           m = u ? Q.UNAVAILABLE : n,
                                                           p = n === E.n$.NONE ? B : b.Z,
-                                                          g = () => a.createElement(d.ZP, { disabled: s || c || u, link: l ? v : void 0, onPress: p, size: "small", style: k.narrowButton, type: "brandFilled" }, X(m));
+                                                          g = () => a.createElement(d.ZP, { disabled: s || c || u, link: l ? I : void 0, onPress: p, size: "small", style: k.narrowButton, type: "brandFilled" }, X(m));
                                                       return a.createElement(r.Z, { style: [k.narrowButtonRow, k.labelContainer] }, a.createElement(r.Z, { style: k.description }, a.createElement(i.ZP, null, N), a.createElement(i.ZP, { color: "gray700", style: [k.errorText, k.helpText] }, ee(m))), a.createElement(r.Z, { style: k.noShrink }, a.createElement(g, null)));
                                                   })(),
                                               ),
                                               a.createElement(s.Z, null),
-                                              a.createElement(r.Z, null, a.createElement(u.Z, { text: O }), a.createElement(m.Z, { label: R, link: { external: !0, pathname: I } })),
+                                              a.createElement(r.Z, null, a.createElement(u.Z, { text: O }), a.createElement(m.Z, { label: R, link: { external: !0, pathname: v } })),
                                           ),
                                   })
                                 : null,
-                            M && a.createElement(m.Z, { label: H, link: "/settings/your_twitter_data/request_data" }),
-                            U && a.createElement(J, null),
+                            U && a.createElement(m.Z, { label: H, link: "/settings/your_twitter_data/request_data" }),
+                            M && a.createElement(J, null),
                         ),
                     ),
                 );
@@ -686,7 +686,7 @@
             const ne = S(te);
         },
         374989: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => I });
+            n.r(t), n.d(t, { default: () => v });
             var a = n(202784),
                 r = n(325686),
                 o = n(943401),
@@ -707,24 +707,24 @@
                 _ = s().idca4742,
                 Z = s().b6ded35e,
                 w = s().ab1f7ee0,
-                C = s().f56af9cc,
-                P = s().cce24bf4,
+                P = s().f56af9cc,
+                C = s().cce24bf4,
                 S = s().hfb92b14,
                 k = s().i203df96,
-                v = { page: "settings", section: "account" },
-                I = ({ location: e }) => {
+                I = { page: "settings", section: "account" },
+                v = ({ location: e }) => {
                     const t = a.useMemo(
                         () => [
                             { description: _, label: E, link: "/settings/your_twitter_data/account", Icon: l.default },
                             { description: Z, label: w, link: "/settings/password", Icon: c.default },
-                            { description: P, label: C, link: "/settings/download_your_data", Icon: d.default },
+                            { description: C, label: P, link: "/settings/download_your_data", Icon: d.default },
                             { description: k, label: S, link: "/settings/deactivate", Icon: u.default },
                         ],
                         [],
                     );
                     return a.createElement(
                         h.nO,
-                        { namespace: v },
+                        { namespace: I },
                         a.createElement(
                             p.Z,
                             null,
@@ -765,8 +765,8 @@
                 _ = n(293115),
                 Z = n(125363),
                 w = n(919022),
-                C = n(264922),
-                P = {
+                P = n(264922),
+                C = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "parodyProfileLabel" }]),
                         kind: "Fragment",
@@ -797,8 +797,8 @@
                     operation: { argumentDefinitions: a, kind: "Operation", name: "AccountParodyScreenImplV2ParodyLabelMutation", selections: [{ alias: null, args: r, concreteType: null, kind: "LinkedField", name: "update_parody_label", plural: !1, selections: [o, { kind: "InlineFragment", selections: [i], type: "PCFLabelUpdateError", abstractKey: null }, { kind: "InlineFragment", selections: [s], type: "PCFLabelSettings", abstractKey: null }], storageKey: null }] },
                     params: { id: "73OvlPaHKjWcU21X1w9SKA", metadata: {}, name: "AccountParodyScreenImplV2ParodyLabelMutation", operationKind: "mutation", text: null },
                 };
-            P.hash = "808e0b00a04d3c0255492c2f267b77e2";
-            const S = P;
+            C.hash = "808e0b00a04d3c0255492c2f267b77e2";
+            const S = C;
             var k = (function () {
                 var e = [
                     {
@@ -820,9 +820,9 @@
                 return { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "AccountParodyScreenImplV2ParodyLabelSettingQuery", selections: e, type: "Query", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "AccountParodyScreenImplV2ParodyLabelSettingQuery", selections: e }, params: { id: "v5QRfeK5uuWULVGXyMLwyA", metadata: {}, name: "AccountParodyScreenImplV2ParodyLabelSettingQuery", operationKind: "query", text: null } };
             })();
             k.hash = "a39c6860aa951232fde54fef0202e66c";
-            const v = k;
+            const I = k;
             n(585488);
-            var I = n(101890),
+            var v = n(101890),
                 A = n(731708),
                 D = n(88656),
                 x = n(240666),
@@ -832,8 +832,8 @@
                 T = b().dbcf3a1a,
                 O = b().hf019b20,
                 R = b().ce62c8c2,
-                M = b().a14080ce,
-                U = b().db6796f6,
+                U = b().a14080ce,
+                M = b().db6796f6,
                 z = b().c700b6be,
                 B = b().e68b09b4,
                 H = b().h3701ffe,
@@ -842,19 +842,19 @@
                 $ = b().h70c602c,
                 q = "AccountParody",
                 W = { page: "settings", section: "account_information", component: "parody" },
-                j = [
+                K = [
                     { label: (0, x.U)("None"), value: "None" },
                     { label: (0, x.U)("Parody"), value: "Parody" },
                     { label: (0, x.U)("Commentary"), value: "Commentary" },
                     { label: (0, x.U)("Fan"), value: "Fan" },
                 ],
-                K = v,
+                j = I,
                 Y = S;
             function Q({ user: e }) {
                 const t = e.parody_commentary_fan_label ?? "None",
                     n = (0, Z.I0)(),
                     a = (0, E.n7)(q),
-                    r = (0, F.p)(K, {}),
+                    r = (0, F.p)(j, {}),
                     o = r.get_parody_label_settings?.is_label_update_disabled ?? !1,
                     i = r.get_parody_label_settings?.update_disabled_reason,
                     [s, c] = d()(Y),
@@ -883,10 +883,10 @@
                         f.Z,
                         null,
                         l.createElement(
-                            C.Z,
+                            P.Z,
                             { title: T },
                             l.createElement(u.Z, { description: O, learnMoreLabel: V, learnMoreLink: N }),
-                            l.createElement(I.Z, {
+                            l.createElement(v.Z, {
                                 disabled: o,
                                 label: G,
                                 name: "profile_label",
@@ -897,11 +897,11 @@
                                         onConfirm: () => {
                                             h(void 0), g(t);
                                         },
-                                        title: n ? M : R,
-                                        desc: n ? z : U,
+                                        title: n ? U : R,
+                                        desc: n ? z : M,
                                     });
                                 },
-                                options: j,
+                                options: K,
                                 value: t,
                             }),
                             o && l.createElement(u.Z, { description: l.createElement(A.ZP, { color: "red500" }, i) }),
@@ -959,7 +959,7 @@
                         f.Z,
                         null,
                         l.createElement(
-                            C.Z,
+                            P.Z,
                             { title: te },
                             l.createElement(u.Z, { description: ne }),
                             l.createElement(m.Z, {
@@ -985,7 +985,7 @@
             }
         },
         780709: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => P });
+            n.r(t), n.d(t, { default: () => C });
             var a = n(807896),
                 r = n(202784),
                 o = n(325686),
@@ -1006,11 +1006,11 @@
                 _ = l().bcd81cac,
                 Z = l().da867c58,
                 w = { page: "settings", section: "notification" },
-                C = [
+                P = [
                     { description: E, label: y, link: "/settings/notifications/filters", Icon: c.default, testID: "testIconFilter" },
                     { description: Z, label: _, link: "/settings/notifications/preferences", Icon: d.default, testID: "testIconDeviceNotification" },
                 ],
-                P = ({ location: e }) =>
+                C = ({ location: e }) =>
                     r.createElement(
                         p.nO,
                         { namespace: w },
@@ -1024,7 +1024,7 @@
                                     o.Z,
                                     { testID: b },
                                     r.createElement(i.Z, { description: f }),
-                                    C.map((e) => r.createElement(u.H, (0, a.Z)({}, e, { key: e.link }))),
+                                    P.map((e) => r.createElement(u.H, (0, a.Z)({}, e, { key: e.link }))),
                                 ),
                             ),
                         ),
@@ -1052,14 +1052,14 @@
                 _ = n(267966),
                 Z = n(71620),
                 w = n(668214),
-                C = n(673110);
-            const P = (0, w.Z)()
-                    .propsFromState(() => ({ verifyPasswordFetchStatus: C.UD }))
-                    .propsFromActions(() => ({ verifyPassword: C.Gv, createLocalApiErrorHandler: (0, Z.zr)("PASSWORD_GATEWAY") })),
+                P = n(673110);
+            const C = (0, w.Z)()
+                    .propsFromState(() => ({ verifyPasswordFetchStatus: P.UD }))
+                    .propsFromActions(() => ({ verifyPassword: P.Gv, createLocalApiErrorHandler: (0, Z.zr)("PASSWORD_GATEWAY") })),
                 S = p().fe36fe10,
                 k = p().dec3c9b8,
-                v = p().hccd9dbe,
-                I = p().d1091f50,
+                I = p().hccd9dbe,
+                v = p().d1091f50,
                 A = p().g9677c6e,
                 D = p().c8cb0b4c;
             class x extends a.Component {
@@ -1108,8 +1108,8 @@
                 _renderPasswordPrompt() {
                     const { titleHeader: e } = this.props,
                         { passwordError: t } = this.state,
-                        n = a.createElement(o.ZP, { link: { pathname: (0, i.ju)("https://x.com/i/flow/password_reset"), external: !0, openInSameFrame: !0 } }, I);
-                    return a.createElement(a.Fragment, null, e ? a.createElement(s.Z, { text: e }) : null, a.createElement(r.Z, { style: [_.Z.viewItem, _.Z.bottomBorder] }, a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, v)), a.createElement(l.Z, { errorText: t, helperText: n, invalid: !!t, label: k, name: "current_password", onChange: this._handleChange, onSubmitEditing: this._handlePasswordSubmit, type: "password", value: this.state.password }), a.createElement(c.Z, { style: L.buttonContainer }, a.createElement(d.ZP, { disabled: !1, onPress: this._handlePasswordSubmit, style: L.button, type: "brandFilled" }, A)));
+                        n = a.createElement(o.ZP, { link: { pathname: (0, i.ju)("https://x.com/i/flow/password_reset"), external: !0, openInSameFrame: !0 } }, v);
+                    return a.createElement(a.Fragment, null, e ? a.createElement(s.Z, { text: e }) : null, a.createElement(r.Z, { style: [_.Z.viewItem, _.Z.bottomBorder] }, a.createElement(o.ZP, { color: "gray700", size: "subtext2" }, I)), a.createElement(l.Z, { errorText: t, helperText: n, invalid: !!t, label: k, name: "current_password", onChange: this._handleChange, onSubmitEditing: this._handlePasswordSubmit, type: "password", value: this.state.password }), a.createElement(c.Z, { style: L.buttonContainer }, a.createElement(d.ZP, { disabled: !1, onPress: this._handlePasswordSubmit, style: L.button, type: "brandFilled" }, A)));
                 }
                 render() {
                     const { fetchStatus: e, location: t, render: n } = this.props,
@@ -1120,7 +1120,7 @@
             }
             (x.contextType = g.rC), (x.defaultProps = { titleHeader: S });
             const L = u.default.create((e) => ({ buttonContainer: { flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingBottom: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal } })),
-                F = P(x),
+                F = C(x),
                 N = (0, f.ZP)(F);
         },
         569291: (e, t, n) => {
@@ -1264,19 +1264,6 @@
             n.d(t, { Z: () => a });
             const a = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        744649: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var a = n(202784),
-                r = n(890601),
-                o = n(783427),
-                i = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M7 17h6v2H7v-2zm7.5-15C15.88 2 17 3.12 17 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-9C4.12 22 3 20.88 3 19.5v-15C3 3.12 4.12 2 5.5 2h9zM5 19.5c0 .28.22.5.5.5h9c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-9c-.28 0-.5.22-.5.5v15zm15.74-3.49l1.64 1.15C23.4 15.7 24 13.92 24 12s-.6-3.7-1.62-5.16l-1.64 1.15C21.53 9.13 22 10.51 22 12s-.47 2.87-1.26 4.01zm-.82-7.45l-1.64 1.15c.45.65.72 1.43.72 2.29 0 .85-.27 1.64-.72 2.29l1.64 1.15C20.6 14.47 21 13.28 21 12s-.4-2.47-1.08-3.44z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
         143095: (e, t, n) => {
             n.d(t, { O: () => r });
             var a = n(202784);
@@ -1296,4 +1283,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.17f197aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp.deca251a.js.map

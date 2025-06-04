@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DirectMessages-bfd49e49", "bundle.UserAvatar-2291c9da"],
+    ["bundle.DirectMessages-bfd49e49"],
     {
         507990: (e, t, s) => {
             s.d(t, { Y: () => r });
@@ -576,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-bfd49e49.6c7d9a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-bfd49e49.9bc81bea.js.map

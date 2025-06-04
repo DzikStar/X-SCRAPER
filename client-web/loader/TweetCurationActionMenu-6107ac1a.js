@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconReplyOff-js", "loader.FeedbackSheet"],
+    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconMegaphoneStroke-js", "icons/IconWriteStroke-js", "loader.FeedbackSheet"],
     {
         805020: (e) => {
             e.exports = { queryId: "O0g5XB4pxcFfCH2bB2tQnQ", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -32,8 +32,8 @@
             "use strict";
             i.d(t, { Z: () => o });
             var n,
-                l,
                 a,
+                l,
                 r,
                 s = {
                     fragment: {
@@ -44,7 +44,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: (l = [
+                                args: (a = [
                                     { kind: "Variable", name: "rest_id", variableName: "tweet_id" },
                                     { kind: "Literal", name: "s", value: "b6cb" },
                                 ]),
@@ -52,7 +52,7 @@
                                 kind: "LinkedField",
                                 name: "tweet_result_by_rest_id",
                                 plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(a = { alias: null, args: null, concreteType: "TweethighlightsInfo", kind: "LinkedField", name: "highlights_info", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "highlighted", storageKey: null }], storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }],
+                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(l = { alias: null, args: null, concreteType: "TweethighlightsInfo", kind: "LinkedField", name: "highlights_info", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "highlighted", storageKey: null }], storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }],
                                 storageKey: null,
                             },
                         ],
@@ -67,7 +67,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: l,
+                                args: a,
                                 concreteType: "TweetResults",
                                 kind: "LinkedField",
                                 name: "tweet_result_by_rest_id",
@@ -82,7 +82,7 @@
                                         plural: !1,
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                            { kind: "InlineFragment", selections: [a, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null },
+                                            { kind: "InlineFragment", selections: [l, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null },
                                         ],
                                         storageKey: null,
                                     },
@@ -99,10 +99,10 @@
         },
         484636: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => T });
+            i.d(t, { Z: () => E });
             var n = i(506899),
-                l = i(414742);
-            const a = new n.fK.Entity("articleEntities", {}, { idAttribute: "rest_id" });
+                a = i(414742);
+            const l = new n.fK.Entity("articleEntities", {}, { idAttribute: "rest_id" });
             var r = i(805020),
                 s = i.n(r),
                 o = i(803386),
@@ -122,38 +122,38 @@
                 C = i(446405),
                 k = i.n(C),
                 I = i(934309);
-            const T = ({ apiClient: e, featureSwitches: t }) => ({
+            const E = ({ apiClient: e, featureSwitches: t }) => ({
                 createDraftArticle(t) {
-                    const { content_state: i, title: l } = t;
-                    return e.graphQL(_(), { content_state: i, title: l }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, a));
+                    const { content_state: i, title: a } = t;
+                    return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l));
                 },
                 fetchArticleEntity(t) {
                     const { articleEntityId: i } = t;
-                    return e.graphQL(b(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.article_result_by_rest_id?.result, a));
+                    return e.graphQL(b(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.article_result_by_rest_id?.result, l));
                 },
                 deleteArticleEntity(t) {
                     const { articleEntityId: i } = t;
                     return e.graphQL(c(), { articleEntityId: i }).then((e) => e.articleentity_delete);
                 },
                 updateArticleEntityContent(t) {
-                    const { articleEntityId: i, content_state: l } = t;
-                    return e.graphQL(g(), { content_state: l, article_entity: i }).then((e) => (0, n.Fv)(e.articleentity_update_content_state, a));
+                    const { articleEntityId: i, content_state: a } = t;
+                    return e.graphQL(g(), { content_state: a, article_entity: i }).then((e) => (0, n.Fv)(e.articleentity_update_content_state, l));
                 },
                 updateArticleEntityCoverMedia(t) {
-                    const { articleEntityId: i, mediaCategory: l, mediaId: r } = t;
-                    return e.graphQL(w(), { articleEntityId: i, coverMedia: r && l ? { media_id: r, media_category: l } : void 0 }).then((e) => (0, n.Fv)(e.articleentity_update_cover_media, a));
+                    const { articleEntityId: i, mediaCategory: a, mediaId: r } = t;
+                    return e.graphQL(w(), { articleEntityId: i, coverMedia: r && a ? { media_id: r, media_category: a } : void 0 }).then((e) => (0, n.Fv)(e.articleentity_update_cover_media, l));
                 },
                 updateArticleEntityTitle(t) {
-                    const { articleEntityId: i, title: l } = t;
-                    return e.graphQL(k(), { articleEntityId: i, title: l }).then((e) => (0, n.Fv)(e.articleentity_update_title, a));
+                    const { articleEntityId: i, title: a } = t;
+                    return e.graphQL(k(), { articleEntityId: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_update_title, l));
                 },
                 publishArticleEntity(t) {
-                    const { articleEntityId: i, conversationControl: l, visibilitySetting: r } = t;
-                    return e.graphQL(u(), { articleEntityId: i, visibilitySetting: r, ...(l && { conversationControl: { mode: l } }) }).then((e) => (0, n.Fv)(e.articleentity_publish?.article_entity_results?.result, a));
+                    const { articleEntityId: i, conversationControl: a, visibilitySetting: r } = t;
+                    return e.graphQL(u(), { articleEntityId: i, visibilitySetting: r, ...(a && { conversationControl: { mode: a } }) }).then((e) => (0, n.Fv)(e.articleentity_publish?.article_entity_results?.result, l));
                 },
                 unpublishArticleEntity(t) {
                     const { articleEntityId: i } = t;
-                    return e.graphQL(y(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.articleentity_unpublish?.article_entity_results?.result, a));
+                    return e.graphQL(y(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.articleentity_unpublish?.article_entity_results?.result, l));
                 },
                 fetchArticleEntitiesSlice: (t) =>
                     t && t.lifecycle
@@ -161,7 +161,7 @@
                               .graphQL(
                                   s(),
                                   t,
-                                  (0, l.kj)((e) => !e?.user?.result?.articles_article_mixer_slice, "GQL ArticleEntities: Failed to fetch Articles Slice"),
+                                  (0, a.kj)((e) => !e?.user?.result?.articles_article_mixer_slice, "GQL ArticleEntities: Failed to fetch Articles Slice"),
                               )
                               .then((e) => {
                                   const t = e?.user.result;
@@ -169,11 +169,11 @@
                                       const e = t?.articles_article_mixer_slice;
                                       if (e) {
                                           const { items: t, slice_info: i } = e,
-                                              { entities: l, result: r } = (0, n.Fv)(
+                                              { entities: a, result: r } = (0, n.Fv)(
                                                   t?.map((e) => e.article_entity_results?.result),
-                                                  [a],
+                                                  [l],
                                               );
-                                          return { entities: l, result: r, slice_info: i };
+                                          return { entities: a, result: r, slice_info: i };
                                       }
                                   }
                                   return I.d;
@@ -185,8 +185,8 @@
             "use strict";
             i.d(t, { Z: () => F });
             var n = i(807896),
-                l = i(202784),
-                a = i(157130),
+                a = i(202784),
+                l = i(157130),
                 r = i(30899),
                 s = i(325686),
                 o = i(731708),
@@ -206,76 +206,76 @@
                 C = i(459660);
             const k = m().g6185a9e,
                 I = m().i00051cc,
-                T = m().baffe39a,
-                E = m().i9000126,
+                E = m().baffe39a,
+                T = m().i9000126,
                 x = m().dcaede8a,
                 A = m().ad85cd2e,
                 L = m().f19e4bfc,
                 S = m().bf994ab2,
                 q = m().e7b4b30a,
-                R = m().cfd2f35e,
-                B = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
-                Z = (e) => {
-                    const { dismiss: t, isModal: i, midConversationTweet: n, value: a } = e,
-                        { featureSwitches: r, userClaims: p } = l.useContext(w.rC),
+                Z = m().cfd2f35e,
+                R = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
+                B = (e) => {
+                    const { dismiss: t, isModal: i, midConversationTweet: n, value: l } = e,
+                        { featureSwitches: r, userClaims: p } = a.useContext(w.rC),
                         u = (t) => () => {
                             e.onChange(t), e.dismiss();
                         },
-                        Z = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
+                        B = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
                         F = !!n,
-                        Q = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
-                    let M = x;
+                        M = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
+                    let Q = x;
                     return (
-                        Q ? (M = S) : F && (M = q),
-                        l.createElement(
+                        M ? (Q = S) : F && (Q = q),
+                        a.createElement(
                             s.Z,
-                            { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [B.root, i ? B.modal : B.popover] },
-                            l.createElement(s.Z, { style: B.title }, l.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), l.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
-                            l.createElement(
+                            { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [R.root, i ? R.modal : R.popover] },
+                            a.createElement(s.Z, { style: R.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
+                            a.createElement(
                                 s.Z,
                                 null,
-                                l.createElement(c.Z, { Icon: b.default, actionText: T, isSelected: C.k.all === a, onClick: u(C.k.all), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                l.createElement(c.Z, { Icon: h.default, actionText: E, isSelected: C.k.community === a, onClick: u(C.k.community), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                e.isActiveCreator && l.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === a, onClick: u(C.k.subscribers), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                l.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === a, onClick: u(C.k.verified), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                l.createElement(c.Z, { Icon: Q ? g.default : v.default, actionText: M, isSelected: C.k.by_invitation === a, onClick: u(C.k.by_invitation), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                Z &&
+                                a.createElement(c.Z, { Icon: b.default, actionText: E, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: h.default, actionText: T, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: M ? g.default : v.default, actionText: Q, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: R.menuRow, withIconAsThumbnail: !0 }),
+                                B &&
                                     !n &&
-                                    l.createElement(d.Z, {
+                                    a.createElement(d.Z, {
                                         checked: e.disallowedReplyControls.includes(C.m.Links),
                                         label: m().ca6500a8,
                                         onChange:
-                                            ((P = C.m.Links),
+                                            ((z = C.m.Links),
                                             () => {
-                                                if (e.disallowedReplyControls.includes(P)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== P));
+                                                if (e.disallowedReplyControls.includes(z)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== z));
                                                 else {
                                                     const t = new Set([...e.disallowedReplyControls]);
-                                                    t.add(P), e.setDisallowedReplyControls([...t]);
+                                                    t.add(z), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
-                                        style: B.disallowLinkRepliesCheck,
+                                        style: R.disallowLinkRepliesCheck,
                                     }),
-                                e.isModal ? l.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: B.cancelButton, type: "primaryOutlined" }, R) : null,
+                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: R.cancelButton, type: "primaryOutlined" }, Z) : null,
                             ),
                         )
                     );
-                    var P;
+                    var z;
                 },
                 F = (e) => {
                     const { children: t, controlled: i = !1, disabled: s } = e,
-                        [o, c] = l.useState(!1),
-                        d = l.useCallback(() => c(!0), []),
-                        _ = l.useCallback(() => c(!1), []),
-                        p = i ? (o ? a.Z.VISIBILITY_BEHAVIOR.forceVisible : a.Z.VISIBILITY_BEHAVIOR.forceHidden) : void 0,
+                        [o, c] = a.useState(!1),
+                        d = a.useCallback(() => c(!0), []),
+                        _ = a.useCallback(() => c(!1), []),
+                        p = i ? (o ? l.Z.VISIBILITY_BEHAVIOR.forceVisible : l.Z.VISIBILITY_BEHAVIOR.forceHidden) : void 0,
                         u = "function" == typeof t ? t({ openPopover: d, closePopover: _ }) : t;
-                    return l.createElement(
+                    return a.createElement(
                         r.Z,
                         {
                             disabled: s,
                             onDismiss: _,
                             renderContent: (t, i) => {
-                                const { children: a, controlled: r, ...s } = e;
-                                return l.createElement(Z, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
+                                const { children: l, controlled: r, ...s } = e;
+                                return a.createElement(B, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
                             },
                             visibilityBehavior: p,
                         },
@@ -287,17 +287,17 @@
             "use strict";
             i.d(t, { Z: () => c });
             var n = i(202784),
-                l = i(111677),
-                a = i.n(l),
+                a = i(111677),
+                l = i.n(a),
                 r = i(459660);
-            const s = Object.freeze({ all: a().baffe39a, community: a().i9000126, by_invitation: a().e7b4b30a, subscribers: a().ad85cd2e, verified: a().f19e4bfc }),
-                o = a().bf994ab2,
+            const s = Object.freeze({ all: l().baffe39a, community: l().i9000126, by_invitation: l().e7b4b30a, subscribers: l().ad85cd2e, verified: l().f19e4bfc }),
+                o = l().bf994ab2,
                 c = (e, t) => {
                     let i = s[t];
                     if (t === r.k.by_invitation) {
                         !e.entities?.user_mentions?.some((t) => t.id_str !== e.user.id_str) && (i = o);
                     }
-                    return n.createElement(a().I18NFormatMessage, { $i18n: "f8ea2809", selection: i });
+                    return n.createElement(l().I18NFormatMessage, { $i18n: "f8ea2809", selection: i });
                 };
         },
         774426: (e, t, i) => {
@@ -305,8 +305,8 @@
             i.r(t), i.d(t, { default: () => _ });
             i(136728);
             var n = i(202784),
-                l = i(811176),
-                a = i(190286),
+                a = i(811176),
+                l = i(190286),
                 r = i(111677),
                 s = i.n(r),
                 o = i(912021);
@@ -325,14 +325,14 @@
                             this.state.activeConfirmation && this.state.activeConfirmation.cancelCallback?.(), this.setState({ activeConfirmation: null });
                         }),
                         (this._getMemoizedProcessedActionItems = (0, o.Z)((e, t, i, n) =>
-                            e.reduce((e, { Icon: l, confirmation: a, disabled: r, excludeFromActionMenu: s, isEmphasized: o, link: c, onClick: d, subText: _, testID: p, text: u, withCancelButton: m }, b) => {
+                            e.reduce((e, { Icon: a, confirmation: l, disabled: r, excludeFromActionMenu: s, isEmphasized: o, link: c, onClick: d, subText: _, testID: p, text: u, withCancelButton: m }, b) => {
                                 if (!s) {
                                     const s = d
                                         ? () => {
-                                              a ? (a.render ? n({ cancelCallback: a.onCancel, confirmCallback: d, render: a.render }) : n({ cancelCallback: a.onCancel, confirmCallback: d, text: a.text, headline: a.headline, label: a.label, confirmButtonType: a.confirmButtonType, withCancelButton: a.withCancelButton })) : (d(), i());
+                                              l ? (l.render ? n({ cancelCallback: l.onCancel, confirmCallback: d, render: l.render }) : n({ cancelCallback: l.onCancel, confirmCallback: d, text: l.text, headline: l.headline, label: l.label, confirmButtonType: l.confirmButtonType, withCancelButton: l.withCancelButton })) : (d(), i());
                                           }
                                         : i;
-                                    e.push({ disabled: r, Icon: l, isEmphasized: o, testID: p, subText: _, text: u, onClick: s, link: c, withBottomBorder: t && t.includes(b) });
+                                    e.push({ disabled: r, Icon: a, isEmphasized: o, testID: p, subText: _, text: u, onClick: s, link: c, withBottomBorder: t && t.includes(b) });
                                 }
                                 return e;
                             }, []),
@@ -341,13 +341,13 @@
                 render() {
                     const { onClose: e } = this.props,
                         { activeConfirmation: t } = this.state;
-                    return t ? this._renderConfirmation(t) : n.createElement(l.Z, { cancelButtonLabel: c, items: this._getProcessedActionItems(), onCloseRequested: e });
+                    return t ? this._renderConfirmation(t) : n.createElement(a.Z, { cancelButtonLabel: c, items: this._getProcessedActionItems(), onCloseRequested: e });
                 }
                 _renderConfirmation(e) {
                     if (e && e.render) return e.render(this._handleConfirmed, this._handleCancelConfirm);
                     {
-                        const { confirmButtonType: t, headline: i, label: l, text: r, withCancelButton: s } = e || {};
-                        return n.createElement(a.Z, { confirmButtonLabel: l, confirmButtonType: t, headline: i, onCancel: this._handleCancelConfirm, onConfirm: this._handleConfirmed, text: r, withCancelButton: s });
+                        const { confirmButtonType: t, headline: i, label: a, text: r, withCancelButton: s } = e || {};
+                        return n.createElement(l.Z, { confirmButtonLabel: a, confirmButtonType: t, headline: i, onCancel: this._handleCancelConfirm, onConfirm: this._handleConfirmed, text: r, withCancelButton: s });
                     }
                 }
                 _getProcessedActionItems() {
@@ -361,31 +361,47 @@
             "use strict";
             i.d(t, { Z: () => u });
             var n = i(202784),
-                l = i(392237),
-                a = i(154003),
+                a = i(392237),
+                l = i(154003),
                 r = i(111677),
                 s = i.n(r),
                 o = i(837020);
             const c = s().e839db3a,
                 d = { label: c },
-                _ = l.default.create((e) => ({ closeIcon: { color: e.colors.gray700 }, button: { position: "absolute", end: 0 } })),
+                _ = a.default.create((e) => ({ closeIcon: { color: e.colors.gray700 }, button: { position: "absolute", end: 0 } })),
                 p = n.createElement(o.default, { style: _.closeIcon }),
-                u = ({ onClick: e }) => n.createElement(a.ZP, { "aria-label": c, borderColor: "transparent", color: "gray1100", hoverLabel: d, icon: p, onClick: e, pullRight: !0, size: "small", style: _.button, type: "brandText" });
+                u = ({ onClick: e }) => n.createElement(l.ZP, { "aria-label": c, borderColor: "transparent", color: "gray1100", hoverLabel: d, icon: p, onClick: e, pullRight: !0, size: "small", style: _.button, type: "brandText" });
         },
-        883437: (e, t, i) => {
+        730873: (e, t, i) => {
             "use strict";
             i.r(t), i.d(t, { default: () => o });
             var n = i(202784),
-                l = i(890601),
-                a = i(783427),
+                a = i(890601),
+                l = i(783427),
                 r = i(347101);
             const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.503 6.745c.475 1.032.748 2.176.748 3.385 0 2.955-1.608 5.68-4.196 7.11l-8.054 4.459v-3.452l2-2v2.06l5.086-2.816c1.952-1.079 3.164-3.133 3.164-5.36 0-.644-.101-1.264-.286-1.847l1.538-1.538zM3.71 21.71l-1.414-1.414 3.401-3.401C3.34 15.5 1.751 12.935 1.751 10c0-4.411 3.591-8 8.005-8h4.366c1.818 0 3.494.608 4.849 1.62l1.325-1.325 1.414 1.414-18 18.001zm3.462-6.29L17.545 5.047C16.567 4.386 15.389 4 14.123 4H9.757c-3.311 0-6.005 2.691-6.005 6 0 2.389 1.401 4.451 3.421 5.42z" })) }, { writingDirection: t });
+                const { direction: t } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M22 2.63v17.74l-7.05-2.27c-.29 1.65-1.72 2.9-3.45 2.9C9.57 21 8 19.43 8 17.5v-1.63l-1.15-.37H4.5C3.12 15.5 2 14.38 2 13v-3c0-1.38 1.12-2.5 2.5-2.5h2.35L22 2.63zM6 9.5H4.5c-.27 0-.5.22-.5.5v3c0 .28.23.5.5.5H6v-4zm2 4.27l12 3.86V5.37L8 9.23v4.54zm2 2.74v.99c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-.02l-3-.97z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
+        376021: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => c });
+            var n = i(202784),
+                a = i(890601),
+                l = i(783427),
+                r = i(717683),
+                s = i(347101);
+            const o = (e = {}) => {
+                const t = n.useContext(r.Z),
+                    { direction: i } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: i });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.b4041d9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.4c3065aa.js.map

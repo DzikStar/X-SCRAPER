@@ -184,9 +184,9 @@
                     return s || !r;
                 },
                 v = (e, t) => (e.entities?.user_mentions || []).filter((n) => b(e, n.id_str, t)).map((e) => e.id_str) || [],
-                E = (e, t) => t.focalTweetId,
-                S = (0, g.Z)()
-                    .propsFromState(() => ({ focalTweetId: E, viewerUserId: h._h, tweetMap: f.Z.selectAll, users: y.ZP.selectAll }))
+                S = (e, t) => t.focalTweetId,
+                E = (0, g.Z)()
+                    .propsFromState(() => ({ focalTweetId: S, viewerUserId: h._h, tweetMap: f.Z.selectAll, users: y.ZP.selectAll }))
                     .adjustStateProps(({ focalTweetId: e, tweetMap: t, users: n, viewerUserId: s }) => {
                         const r = e && t[e];
                         if (!r) return { participantIds: [] };
@@ -204,7 +204,7 @@
                 })(e);
                 return t.length > 0 ? s.createElement(p, { headerText: w, participantIds: t }) : null;
             }
-            const T = S(I);
+            const T = E(I);
         },
         527969: (e, t, n) => {
             "use strict";
@@ -389,25 +389,25 @@
                 k = n(154003),
                 b = n(708852),
                 v = n(392237),
-                E = n(111677),
-                S = n.n(E),
+                S = n(111677),
+                E = n.n(S),
                 w = n(293723),
                 I = n(399398),
                 T = n(822502),
-                Z = n(910113),
-                L = n(535338),
-                C = n(736063);
-            const F = S().fb15ec28,
-                P = S().ece910f0,
-                R = S().jd08bc14,
-                U = S().de0a4a72,
-                x = S().fc5bfd96,
+                L = n(910113),
+                Z = n(535338),
+                F = n(736063);
+            const C = E().fb15ec28,
+                P = E().ece910f0,
+                R = E().jd08bc14,
+                U = E().de0a4a72,
+                x = E().fc5bfd96,
                 A = u,
-                D = () => m.createElement(p.Z, null, m.createElement(y.Z, { text: F }), m.createElement(p.Z, { style: K.content }, m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, P)), m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, R)), m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, U)), m.createElement(k.ZP, { link: "/jobs/get-recommendations", size: "small", type: "brandFilled" }, x))),
-                O = ({ recommendation: e, recommendationId: t, recommendationIndex: n }) => {
+                O = () => m.createElement(p.Z, null, m.createElement(y.Z, { text: C }), m.createElement(p.Z, { style: K.content }, m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, P)), m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, R)), m.createElement(p.Z, { style: K.bulletRow }, m.createElement(_.ZP, null, m.createElement(w.default, null)), m.createElement(_.ZP, { size: "subtext1" }, U)), m.createElement(k.ZP, { link: "/jobs/get-recommendations", size: "small", type: "brandFilled" }, x))),
+                D = ({ recommendation: e, recommendationId: t, recommendationIndex: n }) => {
                     const s = (0, b.Ji)(),
                         r = (0, f.useHistory)(),
-                        i = h()(Z.KM, e),
+                        i = h()(L.KM, e),
                         a = i?.core,
                         o = i?.user_results?.result,
                         l = i?.company_profile_results?.result,
@@ -419,8 +419,8 @@
                     return i && a ? m.createElement(T.Z, { actions: [], companyProfile: l, job: a, jobId: t, jobIndex: n, onClick: u, relayId: c, user: o, userSentiment: d, withBottomBorder: !1 }) : null;
                 },
                 K = v.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
-                M = ({ isSidebarModule: e }) => {
-                    const t = (0, L.p)(A, {}),
+                N = ({ isSidebarModule: e }) => {
+                    const t = (0, Z.p)(A, {}),
                         n = t?.viewer_v2.user_results.result.matching_profile,
                         s = t?.viewer_v2.user_results.result.job_recommendations_results;
                     if (!t || (n?.consented_at && !s?.length)) return null;
@@ -428,23 +428,23 @@
                     return m.createElement(
                         r,
                         null,
-                        n?.consented_at ? null : m.createElement(D, null),
+                        n?.consented_at ? null : m.createElement(O, null),
                         n?.consented_at && s?.length && s.length > 0
                             ? m.createElement(
                                   p.Z,
                                   null,
                                   m.createElement(y.Z, { text: "Recommended jobs" }),
-                                  s.map((e, t) => (e.result ? m.createElement(O, { key: e.rest_id, recommendation: e.result, recommendationId: e.rest_id, recommendationIndex: t }) : null)),
+                                  s.map((e, t) => (e.result ? m.createElement(D, { key: e.rest_id, recommendation: e.result, recommendationId: e.rest_id, recommendationIndex: t }) : null)),
                               )
                             : null,
                     );
                 },
-                N = { context: "JobRecommendationsModule" },
-                H = (e) => m.createElement(C.H, { errorConfig: N }, m.createElement(M, e));
+                M = { context: "JobRecommendationsModule" },
+                H = (e) => m.createElement(F.H, { errorConfig: M }, m.createElement(N, e));
         },
         62857: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => Z });
+            n.d(t, { Z: () => L });
             var s = n(807896),
                 r = n(202784),
                 i = n(476984),
@@ -469,14 +469,14 @@
                 k = n(668214),
                 b = n(919022);
             const v = (e, t) => t.userIds,
-                E = (e, t) => {
+                S = (e, t) => {
                     const { filterPredicate: n = (e) => !!e, userIds: s } = t;
                     return s.filter((t) => {
                         const s = b.ZP.select(e, t);
                         return !!s && n(s);
                     });
                 },
-                S = (e, t) => {
+                E = (e, t) => {
                     const { userIds: n } = t;
                     return n.reduce((t, n) => {
                         const s = b.ZP.selectFetchStatus(e, n);
@@ -485,8 +485,8 @@
                 },
                 w = (0, k.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, _.Z)(E, (e) => e),
-                        fetchStatus: (0, _.Z)(E, S, v, (e, t, n) => {
+                        availableUserIds: (0, _.Z)(S, (e) => e),
+                        fetchStatus: (0, _.Z)(S, E, v, (e, t, n) => {
                             let s = f.ZP.LOADED;
                             for (let r = 0; r < n.length; r++) {
                                 const i = n[r];
@@ -543,11 +543,11 @@
                     );
                 }
             }
-            const Z = w(T);
+            const L = w(T);
         },
         912937: (e, t, n) => {
             "use strict";
-            n.r(t), n.d(t, { WhoToFollowContainer: () => j, default: () => q });
+            n.r(t), n.d(t, { WhoToFollowContainer: () => j, default: () => W });
             var s = n(202784),
                 r = n(325686),
                 i = n(392237),
@@ -642,35 +642,35 @@
                     d)
                 )
                     return null;
-                const p = [E.adContainer, !i && E.emptyContainer];
-                return s.createElement(r.Z, { style: p }, s.createElement(r.Z, { id: t, style: [E.adSlot, "primary" !== i && E.hiddenSlot] }), s.createElement(r.Z, { id: e, style: [E.adSlot, "fallback" !== i && E.hiddenSlot] }));
+                const p = [S.adContainer, !i && S.emptyContainer];
+                return s.createElement(r.Z, { style: p }, s.createElement(r.Z, { id: t, style: [S.adSlot, "primary" !== i && S.hiddenSlot] }), s.createElement(r.Z, { id: e, style: [S.adSlot, "fallback" !== i && S.hiddenSlot] }));
             }
-            const E = i.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
-                S = function (e) {
-                    return s.createElement(h.Z, { style: E.root }, s.createElement(s.Suspense, { fallback: s.createElement(r.Z, { style: E.emptyContainer }) }, s.createElement(y, e)));
+            const S = i.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space12, borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, adContainer: { minHeight: 250, minWidth: 300, width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "transparent", position: "relative" }, emptyContainer: { minHeight: 0, height: 0, overflow: "hidden" }, adSlot: { width: "100%", height: "100%", position: "absolute", top: 0, start: 0, end: 0, minWidth: 300, minHeight: 250 }, hiddenSlot: { display: "none" } })),
+                E = function (e) {
+                    return s.createElement(h.Z, { style: S.root }, s.createElement(s.Suspense, { fallback: s.createElement(r.Z, { style: S.emptyContainer }) }, s.createElement(y, e)));
                 },
                 w = o().a526aa66,
                 I = o().ef625010,
                 T = o().d228a9a0,
-                Z = (0, g.Z)(({ isInSidebar: e, userId: t, userIds: n, withProfileHeaderText: i }) => {
+                L = (0, g.Z)(({ isInSidebar: e, userId: t, userIds: n, withProfileHeaderText: i }) => {
                     const a = (0, m.hC)("rweb_ssp_ads_enabled"),
                         o = `/i/connect_people?user_id=${t}`,
                         l = n.length > 0;
-                    return s.createElement(r.Z, { "aria-label": w, role: "complementary" }, s.createElement(c.Z, { text: i ? I : w }), s.createElement(u.Z, { displayMode: p.Z.UserCompact, userIds: n }), a && l && s.createElement(S, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), l && s.createElement(d.Z, { link: o, text: T, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
+                    return s.createElement(r.Z, { "aria-label": w, role: "complementary" }, s.createElement(c.Z, { text: i ? I : w }), s.createElement(u.Z, { displayMode: p.Z.UserCompact, userIds: n }), a && l && s.createElement(E, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), l && s.createElement(d.Z, { link: o, text: T, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
                 });
-            var L = n(967977),
-                C = n(942893),
-                F = n(312771),
+            var Z = n(967977),
+                F = n(942893),
+                C = n(312771),
                 P = n(71620),
                 R = n(973572),
                 U = n(668214),
                 x = n(994305),
                 A = n(919022);
-            const D = "profile_accounts_sidebar",
-                O = (e, t) => x.Ic(e, { displayLocation: D, similarToUserId: t.userId }),
-                K = (e, t) => x.UD(e, { displayLocation: D, similarToUserId: t.userId }),
-                M = (e, t) => {
-                    const n = O(e, t),
+            const O = "profile_accounts_sidebar",
+                D = (e, t) => x.Ic(e, { displayLocation: O, similarToUserId: t.userId }),
+                K = (e, t) => x.UD(e, { displayLocation: O, similarToUserId: t.userId }),
+                N = (e, t) => {
+                    const n = D(e, t),
                         s = [];
                     return (
                         n.forEach(({ user_id: t }) => {
@@ -680,8 +680,8 @@
                         s
                     );
                 },
-                N = (0, U.Z)()
-                    .propsFromState(() => ({ fetchStatus: K, recommendations: O, users: (0, R.Z)(M, (e) => e) }))
+                M = (0, U.Z)()
+                    .propsFromState(() => ({ fetchStatus: K, recommendations: D, users: (0, R.Z)(N, (e) => e) }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, P.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: x.yY }))
                     .withAnalytics({ component: "suggest_who_to_follow" }),
                 H = o().fd6473fa,
@@ -692,15 +692,15 @@
                         (this._renderContent = () => {
                             const { recommendations: e, userId: t, withProfileHeaderText: n } = this.props,
                                 r = e && e.map((e) => e.user_id);
-                            return s.createElement(Z, { userId: t, userIds: r, withProfileHeaderText: n });
+                            return s.createElement(L, { userId: t, userIds: r, withProfileHeaderText: n });
                         }),
                         (this._handleImpression = (e) => {
                             const { analytics: t, users: n } = this.props,
-                                s = e && e.map((e) => ({ ...C.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
+                                s = e && e.map((e) => ({ ...F.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
                             t.scribe({ ...B, data: { items: s } }),
                                 n &&
                                     n.map((e) => {
-                                        const n = e ? [C.Z.forUser(e.id_str)] : [];
+                                        const n = e ? [F.Z.forUser(e.id_str)] : [];
                                         e.following ? t.scribe({ element: "followed_user", action: "impression", data: { items: n } }) : e.muting ? t.scribe({ element: "muted_user", action: "impression", data: { items: n } }) : e.blocking && t.scribe({ element: "blocked_user", action: "impression", data: { items: n } });
                                     });
                         });
@@ -715,23 +715,23 @@
                 }
                 render() {
                     const { fetchStatus: e, style: t } = this.props;
-                    return e === F.ZP.FAILED || this._hasEmptySuggestionList() ? null : s.createElement(r.Z, { style: [z.root, t] }, s.createElement(l.Z, { "aria-label": H, fetchStatus: e, render: this._renderContent }));
+                    return e === C.ZP.FAILED || this._hasEmptySuggestionList() ? null : s.createElement(r.Z, { style: [q.root, t] }, s.createElement(l.Z, { "aria-label": H, fetchStatus: e, render: this._renderContent }));
                 }
                 _fetchRecommendations(e) {
                     const { createLocalApiErrorHandler: t, fetchRecommendationsIfNeeded: n, userId: s } = e;
-                    n({ limit: 3, displayLocation: D, similarToUserId: s }).catch(t(L.C));
+                    n({ limit: 3, displayLocation: O, similarToUserId: s }).catch(t(Z.C));
                 }
                 _hasEmptySuggestionList() {
                     const { fetchStatus: e, recommendations: t } = this.props;
-                    return e === F.ZP.LOADED && 0 === t.length;
+                    return e === C.ZP.LOADED && 0 === t.length;
                 }
             }
-            const z = i.default.create((e) => ({ root: { minHeight: "15rem" } })),
-                q = N(j);
+            const q = i.default.create((e) => ({ root: { minHeight: "15rem" } })),
+                W = M(j);
         },
         376293: (e, t, n) => {
             "use strict";
-            n.d(t, { $f: () => w, KV: () => y, LI: () => C, SC: () => S, Vt: () => b, ed: () => F, op: () => I });
+            n.d(t, { $f: () => w, KV: () => y, LI: () => F, SC: () => E, Vt: () => b, ed: () => C, op: () => I });
             var s = n(202784),
                 r = n(190286),
                 i = n(111677),
@@ -751,36 +751,36 @@
                 k = a().c9623eeb,
                 b = a().e133be4e,
                 v = a().he43bca4,
-                E = a().f5f01af6,
-                S = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                S = a().f5f01af6,
+                E = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 w = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: g, text: t ? f({ screenName: e }) : h({ screenName: e }) }),
                 I = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: n, source: s, testID: r, unblockAction: i, unblockSubtext: a, user: o }) => {
                     let l,
                         u = c.Z;
-                    const m = C(o, n);
+                    const m = F(o, n);
                     switch (s) {
-                        case S.PROFILE:
-                        case S.LIST_DETAIL:
-                        case S.FOLLOWERS_LIST:
+                        case E.PROFILE:
+                        case E.LIST_DETAIL:
+                        case E.FOLLOWERS_LIST:
                             u = () => {
                                 o.blocking ? i(m) : e(m);
                             };
                             break;
-                        case S.TWEET:
-                        case S.TWEET_CARET:
-                        case S.RICH_FEEDBACK:
+                        case E.TWEET:
+                        case E.TWEET_CARET:
+                        case E.RICH_FEEDBACK:
                             (l = d.uq.block),
                                 (u = () => {
                                     o.blocking ? i(m) : e(m);
                                 });
                     }
-                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: T(o.blocking), text: L(o), subText: Z({ user: o, blockSubtext: t, unblockSubtext: a }) };
+                    return { confirmation: m, onClick: u, testID: r, shortcutKey: l, Icon: T(o.blocking), text: Z(o), subText: L({ user: o, blockSubtext: t, unblockSubtext: a }) };
                 },
                 T = (e) => (e ? l.default : o.default),
-                Z = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
-                L = (e) => (e.blocking ? k({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: b, text: t ? E : v }))(e.screen_name, t) : w(e.screen_name, t)),
-                F = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
+                L = ({ blockSubtext: e, unblockSubtext: t, user: n }) => (!n.blocking && e ? e(n.screen_name) : n.blocking ? t : void 0),
+                Z = (e) => (e.blocking ? k({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                F = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: b, text: t ? S : v }))(e.screen_name, t) : w(e.screen_name, t)),
+                C = ({ confirmation: e, handleConfirm: t, onClose: n }) => {
                     const { confirmButtonType: i, headline: a, label: o, text: l } = e;
                     return s.createElement(r.Z, { cancelButtonLabel: u, confirmButtonLabel: o, confirmButtonType: i, headline: a, onCancel: n, onConfirm: t, text: l });
                 };
@@ -878,7 +878,7 @@
         },
         994305: (e, t, n) => {
             "use strict";
-            n.d(t, { yY: () => R, UD: () => P, Ic: () => F });
+            n.d(t, { yY: () => R, UD: () => P, Ic: () => C });
             var s = n(360917),
                 r = n.n(s),
                 i = n(506899),
@@ -917,28 +917,28 @@
                 k = n(312771),
                 b = n(56519);
             const v = "recommendations",
-                E = 30,
-                S = "rweb/recommendations/FETCH_REQUEST",
+                S = 30,
+                E = "rweb/recommendations/FETCH_REQUEST",
                 w = "rweb/recommendations/FETCH_SUCCESS",
                 I = "rweb/recommendations/FETCH_FAILURE",
                 T = {},
-                Z = ({ displayLocation: e, similarToUserId: t }) => e + (t ? `_${t}` : "");
+                L = ({ displayLocation: e, similarToUserId: t }) => e + (t ? `_${t}` : "");
             y.Z.register({
                 [v]: function (e = T, t) {
                     if (!t?.meta) return e;
                     switch (t.type) {
-                        case S: {
-                            const n = Z(t.meta);
+                        case E: {
+                            const n = L(t.meta);
                             return { ...e, [n]: { ...e[n], fetchStatus: k.ZP.LOADING } };
                         }
                         case I: {
-                            const n = Z(t.meta);
+                            const n = L(t.meta);
                             return { ...e, [n]: { ...e[n], fetchStatus: k.ZP.FAILED } };
                         }
                         case w: {
-                            const n = Z(t.meta),
+                            const n = L(t.meta),
                                 s = t.payload && t.payload.entities ? t.payload.entities : { recommendations: r() },
-                                i = (t.payload && t.payload.result ? t.payload.result : C).map((e) => s.recommendations[e]);
+                                i = (t.payload && t.payload.result ? t.payload.result : F).map((e) => s.recommendations[e]);
                             return { ...e, [n]: { ...e[n], fetchStatus: k.ZP.LOADED, recommendations: i } };
                         }
                         default:
@@ -946,20 +946,20 @@
                     }
                 },
             });
-            const L = [],
-                C = [],
-                F = (e, { displayLocation: t, similarToUserId: n }) => {
-                    const s = e[v][Z({ displayLocation: t, similarToUserId: n })];
-                    return s && s.recommendations ? s.recommendations : L;
+            const Z = [],
+                F = [],
+                C = (e, { displayLocation: t, similarToUserId: n }) => {
+                    const s = e[v][L({ displayLocation: t, similarToUserId: n })];
+                    return s && s.recommendations ? s.recommendations : Z;
                 },
                 P = (e, { displayLocation: t, similarToUserId: n }) => {
-                    const s = e[v][Z({ displayLocation: t, similarToUserId: n })];
+                    const s = e[v][L({ displayLocation: t, similarToUserId: n })];
                     return s ? s.fetchStatus : k.ZP.NONE;
                 },
                 R = (e) => (t, n, s) => {
                     const i = n(),
                         { displayLocation: a, similarToUserId: o } = e,
-                        l = F(i, { displayLocation: a, similarToUserId: o }),
+                        l = C(i, { displayLocation: a, similarToUserId: o }),
                         c = P(i, { displayLocation: a, similarToUserId: o }) === k.ZP.LOADED;
                     return l && c
                         ? Promise.resolve(r())
@@ -967,9 +967,9 @@
                               (
                                   (e) =>
                                   (t, n, { api: s, featureSwitches: r }) => {
-                                      const { displayLocation: i, itsInterests: a, limit: o = E, similarToUserId: l } = e,
+                                      const { displayLocation: i, itsInterests: a, limit: o = S, similarToUserId: l } = e,
                                           c = "profile_accounts_sidebar" === i && r.isTrue("rweb_recommendations_sidebar_graphql_enabled");
-                                      return (0, _._O)(t, { request: c ? s.withEndpoint(f).fetchSidebarUserRecommendations : s.withEndpoint(f).fetch, params: { display_location: i, itsInterests: a, limit: o, user_id: l } })({ actionTypes: { REQUEST: S, SUCCESS: w, FAILURE: I }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: i, similarToUserId: l } }, (e) => {
+                                      return (0, _._O)(t, { request: c ? s.withEndpoint(f).fetchSidebarUserRecommendations : s.withEndpoint(f).fetch, params: { display_location: i, itsInterests: a, limit: o, user_id: l } })({ actionTypes: { REQUEST: E, SUCCESS: w, FAILURE: I }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: i, similarToUserId: l } }, (e) => {
                                           if (e && e.entities) return [(0, b.dP)(e.entities)];
                                       });
                                   }
@@ -1023,34 +1023,6 @@
                     return s.createElement(i.Z, { link: t, onPress: n, style: [a.root, c && a.withBottomRadius], withDarkerInteractiveBackground: d }, s.createElement(r.ZP, { align: e, color: "primary", weight: l }, o));
                 };
         },
-        391366: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => l });
-            var s = n(202784),
-                r = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const l = o;
-        },
-        452693: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => l });
-            var s = n(202784),
-                r = n(890601),
-                i = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const l = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.e3451f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout.ebd940ea.js.map

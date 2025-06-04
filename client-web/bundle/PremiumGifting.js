@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.PremiumGifting"],
+    ["bundle.PremiumGifting", "icons/IconChevronDown-js"],
     {
         310456: (e, a, t) => {
             t.d(a, { p: () => r });
@@ -33,12 +33,12 @@
                 }
                 _renderContent() {
                     const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: h, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: B, withWideContainer: P } = this.props,
-                        { isModal: S } = this.context,
-                        F = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        { isModal: F } = this.context,
+                        S = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         C = (function (e, a, t) {
                             return e && !(a && t);
-                        })(!!B, S, !!h);
-                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), h || null);
+                        })(!!B, F, !!h);
+                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: S, middleControl: p, position: u(m, F, n), rightControl: g, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -480,8 +480,8 @@
                 v = t(731708),
                 B = t(466818),
                 P = t(392237),
-                S = t(111677),
-                F = t.n(S),
+                F = t(111677),
+                S = t.n(F),
                 C = t(310456),
                 T = t(615656),
                 Z = t(980407),
@@ -563,14 +563,14 @@
             var V = t(685731),
                 A = t(293115),
                 N = t(725516),
-                z = t(412876),
-                O = t(553660),
-                U = t(615027),
-                H = t(688715),
-                W = t(847579);
-            const G = (0, H.ju)("https://legal.x.com/purchaser-terms"),
-                $ = (0, H.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(W.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
+                O = t(412876),
+                U = t(553660),
+                W = t(615027),
+                z = t(688715),
+                H = t(847579);
+            const G = (0, z.ju)("https://legal.x.com/purchaser-terms"),
+                $ = (0, z.ju)("https://help.x.com/using-x/x-premium/gifting"),
+                Q = () => m.createElement(H.Z, { withoutBorder: !0 }, m.createElement(S().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, S().f3fddc98), m.createElement(v.ZP, { link: $ }, S().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -627,13 +627,13 @@
                     ];
                 },
                 ae = () => ((0, x.hC)("subscriptions_stripe_testing") ? D.Qo : D.eq),
-                te = F().haad225c,
-                re = F().b84f6df1,
-                ne = F().cfcac293,
-                ie = F().d7a73450,
+                te = S().haad225c,
+                re = S().b84f6df1,
+                ne = S().cfcac293,
+                ie = S().d7a73450,
                 le = { page: "premium_gifting" },
-                se = F().ef4602ec,
-                oe = F().hbd2c24e,
+                se = S().ef4602ec,
+                oe = S().hbd2c24e,
                 ce = p,
                 de = (e) => {
                     const a = (0, b.useParams)().screenName || "",
@@ -647,40 +647,40 @@
                         { origin: u } = K.ZP.get(),
                         p = (0, L.p)(),
                         [h, P] = ee({ successUrl: `${u}/${a}/gift-premium/success`, cancelUrl: `${u}/${a}/gift-premium` }),
-                        S = i[l],
-                        E = M(S).web_subscription_product_details_by_rest_id,
+                        F = i[l],
+                        E = M(F).web_subscription_product_details_by_rest_id,
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        H = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
-                        W = m.useCallback(() => {
+                        z = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        H = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
                         G = d?.user?.result,
                         $ = G?.rest_id,
                         j = m.useCallback(() => {
                             $ &&
-                                S &&
+                                F &&
                                 (r.scribe({ component: "purchase_button", action: "click" }),
                                 c(!0),
-                                h({ receiverId: $, productId: S })
+                                h({ receiverId: $, productId: F })
                                     .then((e) => K.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
                                             t = a === T.ZP.GenericAccessDenied ? oe : se;
                                         p({ text: t, withClearButton: !0, withAutoDismiss: !0 }), c(!1);
                                     }));
-                        }, [p, h, $, S, r]),
+                        }, [p, h, $, F, r]),
                         q = t ? me.paddingWide : me.paddingNarrow,
                         Y = m.useMemo(() => {
                             const e = o || P,
                                 a = !l || e;
-                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: H })), m.createElement(Q, null));
-                        }, [H, j, P, o, q, l]),
+                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: z })), m.createElement(Q, null));
+                        }, [z, j, P, o, q, l]),
                         X = m.useCallback((e) => s(C.p[e]), [s]),
                         J = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
                         le = D.St[l];
-                    return J && a && G && H && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: W }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(z.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(O.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(U.Z, { to: "/home" });
+                    return J && a && G && z && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: H }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: X, options: J, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(S().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: z }))))) : m.createElement(W.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -766,9 +766,9 @@
                         { isFocused: v } = this.state,
                         B = o.ZP.getLanguage(),
                         P = void 0 === c ? !!t : c,
-                        S = new Set();
-                    t && S.add(this._errorID), e && S.add(e), g && S.add(this._helperID);
-                    const F = S.size ? [...S].join(" ") : void 0;
+                        F = new Set();
+                    t && F.add(this._errorID), e && F.add(e), g && F.add(this._helperID);
+                    const S = F.size ? [...F].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
                         null,
@@ -780,7 +780,7 @@
                                 this._renderLabel(),
                                 r.createElement(
                                     p,
-                                    { "aria-describedby": F, "aria-invalid": P, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, a && s.Z.disabled], testID: _ || "", value: y },
+                                    { "aria-describedby": S, "aria-invalid": P, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, a && s.Z.disabled], testID: _ || "", value: y },
                                     k ? r.createElement(m, { disabled: !0, style: f.option, value: "" }) : null,
                                     h.map((e) => {
                                         const { disabled: a, label: t, value: n } = e;
@@ -814,7 +814,7 @@
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        41065: (e, a, t) => {
+        487552: (e, a, t) => {
             t.r(a), t.d(a, { default: () => o });
             var r = t(202784),
                 n = t(890601),
@@ -822,11 +822,11 @@
                 l = t(347101);
             const s = (e = {}) => {
                 const { direction: a } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: a });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.30e22d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.0a27acca.js.map

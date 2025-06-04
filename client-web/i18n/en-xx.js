@@ -3575,7 +3575,7 @@
                 s("hbe4f99e", "[Héêy théêréê! Cåän’t wåäïít töø shåäréê söøméê töøp séêcréêt cöøntéênt åänd géêt töø knöøw yöøü éêvéên béêttéêr :)]"),
                 s("fb278c82", "[Whåät’s thïís préêvïíéêw?]"),
                 s("j6cab6ec", "[Thïís ïís whåät péêöøpléê séêéê béêföøréê théêy Sübscrïíbéê töø yöøü. Twéêåäk åänd éêdïít yöøür déêscrïíptïíöøns üntïíl yöøü’véê göøt théêm jüst rïíght.]"),
-                s("f2b1e83e", "Grok & Third-Party Collaborators"),
+                s("f2b1e83e", "[Gröøk & Thïírd-Påärty Cöøllåäböøråätöørs]"),
                 s("e110a46c", "[Déêléêtéê cöønvéêrsåätïíöøn hïístöøry]"),
                 s("ebc4fda0", "[Yöøü’réê åäböøüt töø déêléêtéê yöøür gröøk cöønvéêrsåätïíöøn hïístöøry. Yöøü wïíll nöøt béê åäbléê töø åäccéêss théêséê cöønvéêrsåätïíöøns åägåäïín.]"),
                 s("c90fe716", "[Döø yöøü wåänt töø déêléêtéê yöøür cöønvéêrsåätïíöøns?]"),
@@ -5510,7 +5510,7 @@
                 s("j6aa6172", "[Déêléêtéê råätïíng?]"),
                 s("i4112750", "[Thïís cåän’t béê ündöønéê.]"),
                 s("i6f6191a", "[Thåänk yöøü!]"),
-                s("h5575012", "Agree and submit"),
+                s("h5575012", "[Agréêéê åänd sübmïít]"),
                 s("f9171e52", "[Thïís pöøst göøt söøméê lïíkéês fröøm péêöøpléê whöø nöørmåälly dïísåägréêéê, büt ïínpüt söø fåär ïís lïímïítéêd.]"),
                 s("j0f9919a", "[Yöøür råätïíng wöøn’t néêgåätïívéêly ïímpåäct åä pöøst, büt cåän héêlp pöøsïítïívéêly réêcöøgnïízéê pöøsts thåät åäréê wïídéêly lïíkéêd.]"),
                 s("b3af830c", "[Yöøür ïínpüt:]"),
@@ -5530,7 +5530,7 @@
                 s("g0402b3b", "lïíkéêd by péêöøpléê fröøm dïífféêréênt péêrspéêctïívéês"),
                 s("ged62c2b", "spöøtlïíght"),
                 s("b5d5f7f1", "Shåäpéês théê dïíréêctïíöøn"),
-                s("a42fef87", "Learn more"),
+                s("a42fef87", "Léêåärn möøréê"),
                 s("bd7eb888", "[Séêéê åäll nöøtéês öøn thïís pöøst]"),
                 s("i97b83f6", "[Théêréê wåäs åän éêrröør sübmïíttïíng yöøür åäppéêåäl, pléêåäséê try åägåäïín.]"),
                 s("a038ab9a", "[Tråänslåätéê nöøtéê]"),
@@ -11520,7 +11520,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["[Råätïíngs åäréê åänöønymïízéêd åänd püblïícly åävåäïílåäbléê töø théê püblïíc föør tråänspåäréêncy. ", "]"];
                             },
                         },
                         {
@@ -13341,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.9a45010a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.71ff85da.js.map

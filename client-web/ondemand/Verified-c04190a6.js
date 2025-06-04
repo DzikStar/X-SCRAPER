@@ -196,7 +196,7 @@
                 b = a(725516),
                 f = a(615027),
                 v = a(668214),
-                h = a(215929);
+                h = a(691213);
             const E = (0, v.Z)()
                     .propsFromActions(() => ({ fetchUserClaims: h.rS }))
                     .withAnalytics({ page: "verified", section: "registering" }),
@@ -606,7 +606,7 @@
                 Q = a(154003),
                 X = a(167630),
                 ee = a(293115),
-                te = a(215929),
+                te = a(691213),
                 ae = a(481326),
                 ie = a(96545),
                 ne = a(990738),
@@ -853,4 +853,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-c04190a6.4a83a4aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-c04190a6.0dd69bda.js.map

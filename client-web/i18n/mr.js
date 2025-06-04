@@ -7229,16 +7229,16 @@
                 n("hd80bd3e", "पोस्ट प्रमोट करा"),
                 n("fe2b0008", " X कसे वापरावे ते शिका"),
                 n("h257d4aa", "प्रमोट करण्यासाठी पोस्ट निवडा"),
-                n("fe946974", "Your trial of X without ads"),
-                n("f6c50ec0", "Your ad-free trial has ended"),
+                n("fe946974", "जाहिरातींशिवाय X ची तुमची चाचणी"),
+                n("f6c50ec0", "तुमची जाहिरातमुक्त चाचणी संपली आहे"),
                 n("b1319404", "जाहिराती टाळल्या"),
-                n("baa4acae", "You’re seeing more personalized content."),
+                n("baa4acae", "तुम्हाला अधिक वैयक्तिकृत सामग्री दिसत आहे."),
                 n("c00e8600", "अंदाजे वेळ वाचला"),
-                n("ic073e4e", "Your time is valuable."),
+                n("ic073e4e", "तुमचा वेळ मौल्यवान आहे."),
                 n("eb866e88", "अंदाजे 1 वर्ष वेळेची बचत"),
                 n("aa77b70c", "तुमच्या वापरावर आधारित."),
-                n("c534c6b4", "We’re crunching the numbers..."),
-                n("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                n("c534c6b4", "आम्ही आकडे मोजत आहोत..."),
+                n("i57332f0", "स्क्रोल करत रहा आणि तुम्ही किती जाहिराती टाळल्या आहेत आणि तुमचा किती वेळ वाचला आहे हे पाहण्यासाठी नंतर परत तपासा."),
                 n("cc10f019", function (e) {
                     return e.minutes + " मिनिट" + f(e.minutes, "", "े");
                 }),
@@ -7254,11 +7254,11 @@
                 n("be88be23", function (e) {
                     return "आपली " + e.durationInDays + "-दिवसाची जाहिरात-मुक्त चाचणी सक्रिय केली आहे";
                 }),
-                n("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                n("ae3f3b0e", "Enjoy!"),
-                n("cdac8dc4", "See your new feed"),
+                n("a4413462", "संपूर्ण चाचणी दरम्यान तुम्ही किती जाहिराती पाहिल्या नाहीत आणि किती वेळ वाचवला याबद्दलची आकडेवारी पाहू शकता."),
+                n("ae3f3b0e", "आनंद घ्या!"),
+                n("cdac8dc4", "तुमचे नवीन फीड पहा"),
                 n("dec99336", "जाहिरात-मुक्त"),
-                n("i95803fa", "Unfortunately, you are not eligible at this time."),
+                n("i95803fa", "दुर्दैवाने, यावेळी तुम्ही पात्र नाही."),
                 n("d28a1d72", "Radar प्रचलन शोधणारे सर्वप्रथम व्हा"),
                 n("fb70427a", "X वरील सर्वात पॉवरफूल शोध टूल सादर करत आहे."),
                 n("i54bf620", "कीवर्ड्सचे निरीक्षण करा"),
@@ -12121,7 +12121,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", "% शुल्क, किमान "];
                             },
                         },
                         {
@@ -13347,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.12c3751a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.45a72efa.js.map

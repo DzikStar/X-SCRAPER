@@ -82,24 +82,22 @@
             const p = (0, l.p)(
                     () =>
                         Promise.all([
+                            a.e("icons.23"),
                             a.e("icons.0"),
-                            a.e("icons.13"),
-                            a.e("icons.22"),
-                            a.e("icons.29"),
-                            a.e("icons.5"),
-                            a.e("icons.7"),
-                            a.e("icons.1"),
-                            a.e("icons.15"),
-                            a.e("icons.25"),
+                            a.e("icons.2"),
+                            a.e("icons.16"),
+                            a.e("icons.19"),
                             a.e("icons.10"),
-                            a.e("icons.20"),
-                            a.e("icons.14"),
-                            a.e("icons.11"),
+                            a.e("icons.13"),
+                            a.e("icons.24"),
+                            a.e("icons.7"),
+                            a.e("icons.22"),
+                            a.e("icons.27"),
+                            a.e("icons.17"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.24"),
-                            a.e("icons.16"),
-                            a.e("icons.17"),
+                            a.e("icons.11"),
+                            a.e("icons.26"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -110,20 +108,21 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.6"),
-                            a.e("icons.23"),
-                            a.e("icons.26"),
-                            a.e("icons.3"),
-                            a.e("icons.28"),
-                            a.e("icons.9"),
                             a.e("icons.8"),
+                            a.e("icons.4"),
+                            a.e("icons.14"),
+                            a.e("icons.28"),
+                            a.e("icons.21"),
+                            a.e("icons.3"),
+                            a.e("icons.1"),
+                            a.e("icons.18"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -146,6 +145,7 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSp"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -154,9 +154,9 @@
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                             a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
-                            a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                            a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                             a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
@@ -313,8 +313,8 @@
                 v = m().jfe6a3a0,
                 N = m().add55c98,
                 L = m().e8c72272,
-                B = m().dba2cdd2,
-                R = m().d070244e,
+                R = m().dba2cdd2,
+                B = m().d070244e,
                 O = m().icfa5e8c,
                 F = m().ae41b002,
                 z = m().h9d1cfae,
@@ -353,7 +353,7 @@
                         h = window.matchMedia && window.matchMedia("(prefers-reduced-motion)").matches,
                         m = this._showAltTextPromptPreferenceSetting,
                         g = d ?? (0, S.i)();
-                    return n.createElement(D.Z, null, n.createElement(E.Z, { location: r, screenType: "secondaryDetail", title: I }, n.createElement(o.Z, { testID: P }, n.createElement(s.Z, { description: T }), n.createElement(i.Z, { text: x }), n.createElement(c.Z, { checked: a, helpText: B, label: L, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: v }), n.createElement(c.Z, { checked: l || h, disabled: h, helpText: h ? F : O, label: R, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: y.Z[g], disabled: t, label: V, link: "/settings/autoplay" })) : null, m ? n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: N }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === f.f.Prompt, helpText: H, label: z, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: U }), n.createElement(b.b, { label: G, link: j }))));
+                    return n.createElement(D.Z, null, n.createElement(E.Z, { location: r, screenType: "secondaryDetail", title: I }, n.createElement(o.Z, { testID: P }, n.createElement(s.Z, { description: T }), n.createElement(i.Z, { text: x }), n.createElement(c.Z, { checked: a, helpText: R, label: L, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: v }), n.createElement(c.Z, { checked: l || h, disabled: h, helpText: h ? F : O, label: B, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: y.Z[g], disabled: t, label: V, link: "/settings/autoplay" })) : null, m ? n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: N }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === f.f.Prompt, helpText: H, label: z, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: U }), n.createElement(b.b, { label: G, link: j }))));
                 }
             }
             W.contextType = g.rC;
@@ -528,8 +528,8 @@
                 v = i().ce5d2c46,
                 N = i().bed6a87c,
                 L = i().b24b4768,
-                B = i().a0c3f812,
-                R = i().ba2e82a1,
+                R = i().a0c3f812,
+                B = i().ba2e82a1,
                 O = i().eea30bb5,
                 F = i().f2cde471,
                 z = i().b7ce9dbf,
@@ -558,13 +558,13 @@
                     return n.createElement(A.Z, { location: a, title: T }, n.createElement(k.Z, { fetch: e, fetchStatus: t, renderChildren: this._render }));
                 }
                 _renderEmptyState() {
-                    return n.createElement(o.Z, { style: U.emptyState }, n.createElement(r.ZP, { size: "title4" }, N), n.createElement(r.ZP, { color: "gray700", style: U.emptyStateDescription }, B), n.createElement(l.ZP, { link: "/settings/download_your_data", size: "small", style: b.Z.narrowButton, type: "brandFilled" }, L));
+                    return n.createElement(o.Z, { style: U.emptyState }, n.createElement(r.ZP, { size: "title4" }, N), n.createElement(r.ZP, { color: "gray700", style: U.emptyStateDescription }, R), n.createElement(l.ZP, { link: "/settings/download_your_data", size: "small", style: b.Z.narrowButton, type: "brandFilled" }, L));
                 }
                 _renderDownloadButtons(e, t, a, l) {
                     const d = a + 1,
                         s = l.length,
                         i = !!t?.url;
-                    return n.createElement(o.Z, { key: `${d}`, style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(o.Z, null, n.createElement(r.ZP, { weight: "bold" }, H({ currentIndex: d, count: s })), e.generated ? n.createElement(r.ZP, { color: "gray700" }, O({ date: R(new Date(e.generated)) })) : null, e.expires ? n.createElement(r.ZP, { color: "gray700" }, F({ date: R(new Date(e.expires)) })) : null, t.size_b ? n.createElement(r.ZP, { color: "gray700" }, z({ size: _.getSizeLabel(t.size_b) })) : null), n.createElement(_, { disabled: !i, onConfirm: this._handleConfirm(t), url: t }));
+                    return n.createElement(o.Z, { key: `${d}`, style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(o.Z, null, n.createElement(r.ZP, { weight: "bold" }, H({ currentIndex: d, count: s })), e.generated ? n.createElement(r.ZP, { color: "gray700" }, O({ date: B(new Date(e.generated)) })) : null, e.expires ? n.createElement(r.ZP, { color: "gray700" }, F({ date: B(new Date(e.expires)) })) : null, t.size_b ? n.createElement(r.ZP, { color: "gray700" }, z({ size: _.getSizeLabel(t.size_b) })) : null), n.createElement(_, { disabled: !i, onConfirm: this._handleConfirm(t), url: t }));
                 }
                 _renderUnavailableButton(e) {
                     return n.createElement(o.Z, { style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(r.ZP, { weight: "bold" }, H({ currentIndex: 1, count: 1 })), n.createElement(l.ZP, { disabled: !0, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, "INPROGRESS" === e.status ? x : v));
@@ -794,8 +794,8 @@
                 v = h().b92a21d9,
                 N = h().c170a564,
                 L = h().ba8f6f82,
-                B = { component: "search", element: "result" },
-                R = 500,
+                R = { component: "search", element: "result" },
+                B = 500,
                 O = 100;
             function F(e) {
                 const { isSearching: t, onChange: a, searchIndex: o } = e,
@@ -808,8 +808,8 @@
                     D = n.useMemo(
                         () =>
                             (0, k.Z)((e) => {
-                                l.scribe({ ...B, action: e ? "show" : "empty" });
-                            }, R),
+                                l.scribe({ ...R, action: e ? "show" : "empty" });
+                            }, B),
                         [l],
                     ),
                     f = s.toLocaleLowerCase().trim(),
@@ -861,7 +861,7 @@
                     onItemClick: (e) => {
                         if ("setting" === e.type || "setting_group" === e.type) {
                             const t = "string" == typeof e.data.location ? e.data.location : e.data.location.pathname;
-                            l.scribe({ ...B, action: "click" }), d.push(t, { backLocation: window.location.pathname });
+                            l.scribe({ ...R, action: "click" }), d.push(t, { backLocation: window.location.pathname });
                         }
                     },
                     onQueryChange: H,
@@ -1020,4 +1020,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-8ed0fac5.63f7780a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-8ed0fac5.8a3b4a9a.js.map

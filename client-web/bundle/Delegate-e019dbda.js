@@ -149,7 +149,7 @@
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: l, headerless: s, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, screenType: g, searchBoxOptions: f, secondaryBar: B, showSubtitleOnRoot: w, showSubtitleOnWideDetail: k, subtitle: x, title: Z, titleIconCell: v, titleIconCellSize: _, withDetailOpen: E, withSearchBox: I, withTweetButton: L, withWideContainer: T } = this.props,
+                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: i, documentTitle: l, headerless: s, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, screenType: g, searchBoxOptions: f, secondaryBar: B, showSubtitleOnRoot: w, showSubtitleOnWideDetail: k, subtitle: x, title: Z, titleIconCell: v, titleIconCellSize: _, withDetailOpen: I, withSearchBox: E, withTweetButton: L, withWideContainer: T } = this.props,
                         S = "root" === g,
                         F = "secondaryRoot" === g,
                         D = "primaryDetail" === g,
@@ -157,7 +157,7 @@
                         P = S || (D && e),
                         U = S ? d.ey : D ? d.vX : void 0,
                         O = n.createElement(a.Z, { style: C.appBarContainer }, n.createElement(p.ZP, { backLocation: i, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: B, style: r, subtitle: M ? x : void 0, title: Z, titleDomId: U, titleIconCell: v, titleIconCellSize: _, withWideContainer: T })),
-                        R = S || (F && E) ? null : n.createElement(h.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: l, headerless: s, middleControl: m, onBackClick: b, rightControl: y, searchBoxOptions: f, subtitle: x, title: Z, withSearchBox: I, withTweetButton: L });
+                        R = S || (F && I) ? null : n.createElement(h.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: i, documentTitle: l, headerless: s, middleControl: m, onBackClick: b, rightControl: y, searchBoxOptions: f, subtitle: x, title: Z, withSearchBox: E, withTweetButton: L });
                     return n.createElement(n.Fragment, null, R, O);
                 }
             }
@@ -179,24 +179,24 @@
             const c = a().j24c37b2,
                 d = ({ Content: e, contentStyle: t, actionLabel: o = c, flag: i, graphic: a, graphicDisplayMode: d, headline: u, isFullHeightOnMobile: p, enableMaskForDismiss: h, onAction: m, onClose: b, onSecondaryAction: y, secondaryActionLabel: C, supportUrl: g, subtext: f, withCloseButton: B, shouldShowForLoggedOut: w = !1, shouldAddEducationFlagOnClose: k = !0, shouldAddEducationFlagOnSecondary: x = !0, shouldAddEducationFlagOnPrimary: Z = !0 }) => {
                     const { loggedInUserId: v } = n.useContext(s.rC),
-                        [_, E] = (0, l.m)(i),
-                        I = n.useCallback(
+                        [_, I] = (0, l.m)(i),
+                        E = n.useCallback(
                             (e) => {
-                                Z && E(), m && m(e);
+                                Z && I(), m && m(e);
                             },
-                            [E, m, Z],
+                            [I, m, Z],
                         ),
                         L = n.useCallback(() => {
-                            k && E(), b && b();
-                        }, [E, k, b]),
+                            k && I(), b && b();
+                        }, [I, k, b]),
                         T = n.useCallback(
                             (e) => {
-                                x && E(), y && y(e);
+                                x && I(), y && y(e);
                             },
-                            [E, y, x],
+                            [I, y, x],
                         );
                     if (!_ || (!v && !w)) return null;
-                    return n.createElement(r.Z, { actionLabel: o, contentStyle: t, enableMaskForDismiss: h, graphic: a, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: I, onClose: L, onSecondaryAction: T, secondaryActionLabel: C, subtext: f, supportUrl: g, withCloseButton: B }, e ? n.createElement(e, null) : null);
+                    return n.createElement(r.Z, { actionLabel: o, contentStyle: t, enableMaskForDismiss: h, graphic: a, graphicDisplayMode: d || "none", headline: u, isFullHeightOnMobile: p, onAction: E, onClose: L, onSecondaryAction: T, secondaryActionLabel: C, subtext: f, supportUrl: g, withCloseButton: B }, e ? n.createElement(e, null) : null);
                 },
                 u = n.memo(d);
         },
@@ -338,7 +338,7 @@
             }
         },
         943245: (e, t, o) => {
-            o.d(t, { It: () => d, mD: () => c, sE: () => l });
+            o.d(t, { It: () => u, mD: () => d, sE: () => l, t: () => s });
             var n = o(899492),
                 r = o(733357);
             const i = ["da", "de", "en", "en-gb", "es", "et", "eu", "fi", "fil", "fr", "ga", "gl", "ht", "hu", "id", "it", "lt", "lv", "nl", "no", "ms", "pl", "pt", "sk", "sl", "sv", "tr", "vi"],
@@ -348,11 +348,14 @@
                     return a[t] || t;
                 },
                 s = (e, t) => {
+                    if (t) return new Intl.DisplayNames([e], { type: "language" }).of(t);
+                },
+                c = (e, t) => {
                     const o = l(e);
                     return !(i.indexOf(o) > -1 && t < 20) && !("und" === e);
                 },
-                c = ({ displayTextRange: e, entities: t, language: o, text: i }) => {
-                    if (!e || !s(o, e[1] - e[0])) return !1;
+                d = ({ displayTextRange: e, entities: t, language: o, text: i }) => {
+                    if (!e || !c(o, e[1] - e[0])) return !1;
                     const a = ((e, t) => {
                             let o = n.Z.getTwemojiEntities(e).map((e) => e.indices);
                             for (const e in t) o = o.concat(t[e].map((e) => e.indices));
@@ -362,9 +365,9 @@
                             const { accText: n, lastIndex: r } = o.reduce(({ accText: o, lastIndex: n }, r) => (r[1] <= n || t[1] <= r[0] ? { lastIndex: n, accText: o } : { accText: o + e.slice(n, r[0]), lastIndex: r[1] }), { accText: "", lastIndex: t[0] });
                             return n + e.slice(r, t[1]);
                         })(i, e, a);
-                    return !(0, r.Z)(l) && s(o, l.length);
+                    return !(0, r.Z)(l) && c(o, l.length);
                 },
-                d = (e) => {
+                u = (e) => {
                     if (e.includes("-")) return e;
                     if (navigator.language && navigator.language.startsWith(e)) return navigator.language;
                     if (window.Intl && window.Intl.Locale) {
@@ -380,4 +383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.2f7aa3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e019dbda.704d178a.js.map

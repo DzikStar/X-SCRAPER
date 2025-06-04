@@ -7229,16 +7229,16 @@
                 t("hd80bd3e", "Einen Post sponsern"),
                 t("fe2b0008", "Lerne, wie du X verwendest"),
                 t("h257d4aa", "Post auswählen, der gesponsert werden soll"),
-                t("fe946974", "Your trial of X without ads"),
-                t("f6c50ec0", "Your ad-free trial has ended"),
-                t("b1319404", "Ads avoided"),
-                t("baa4acae", "You’re seeing more personalized content."),
-                t("c00e8600", "Estimated time saved"),
-                t("ic073e4e", "Your time is valuable."),
-                t("eb866e88", "Estimated 1-year time savings"),
-                t("aa77b70c", "Based on your usage."),
-                t("c534c6b4", "We’re crunching the numbers..."),
-                t("i57332f0", "Keep scrolling and check back later to see how many ads you’ve avoided and how much you’ve time saved"),
+                t("fe946974", "Dein Probezeitraum auf X ohne Anzeigen"),
+                t("f6c50ec0", "Dein werbefreier Probezeitraum ist beendet"),
+                t("b1319404", "Vermiedene Anzeigen"),
+                t("baa4acae", "Angezeigte Inhalte werden stärker personalisiert."),
+                t("c00e8600", "Geschätzte Zeitersparnis"),
+                t("ic073e4e", "Deine Zeit ist kostbar."),
+                t("eb866e88", "Geschätzte Zeitersparnis in 1 Jahr"),
+                t("aa77b70c", "Basierend auf deiner Nutzung."),
+                t("c534c6b4", "Wir werten die Zahlen aus ..."),
+                t("i57332f0", "Scrolle weiter und komm später nochmal vorbei, um zu sehen, wie viele Anzeigen du vermieden und wie viel Zeit du gespart hast."),
                 t("cc10f019", function (e) {
                     return e.minutes + " Minute" + r(e.minutes, "", "n");
                 }),
@@ -7254,11 +7254,11 @@
                 t("be88be23", function (e) {
                     return "Aktiviert: " + e.durationInDays + " Tage ohne Werbung zur Probe";
                 }),
-                t("a4413462", "Throughout the trial you can see stats about how many ads you haven’t seen and how much time you’ve saved."),
-                t("ae3f3b0e", "Enjoy!"),
-                t("cdac8dc4", "See your new feed"),
+                t("a4413462", "Während des gesamten Probezeitraums kannst du Statistiken anzeigen und erfahren, wie viele Anzeigen du nicht gesehen und wie viel Zeit du gespart hast."),
+                t("ae3f3b0e", "Viel Spaß!"),
+                t("cdac8dc4", "Neuen Feed ansehen"),
                 t("dec99336", "Werbefrei"),
-                t("i95803fa", "Unfortunately, you are not eligible at this time."),
+                t("i95803fa", "Leider erfüllst du die Teilnahmevoraussetzungen zurzeit nicht."),
                 t("d28a1d72", "Sei bei den Ersten, die mit Radar Trends entdecken"),
                 t("fb70427a", "Das leistungsstärkste Suchtool auf X."),
                 t("i54bf620", "Schlagwörter überwachen"),
@@ -12127,7 +12127,7 @@
                         {
                             key: "b5648ffb",
                             get: function () {
-                                return ["", "% Fee, Min. "];
+                                return ["", " % Gebühr, Min. "];
                             },
                         },
                         {
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.6d82b82a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.552650ca.js.map

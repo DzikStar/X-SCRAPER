@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountVerification-6107ac1a"],
+    ["bundle.AccountVerification-6107ac1a", "icons/IconDraggable-js"],
     {
         290402: (e, t, r) => {
             r.d(t, { Z: () => u });
@@ -387,7 +387,7 @@
                 w = r(304059),
                 x = r(751170);
             const P = ["application/pdf", "image/bmp", "image/jpeg", "image/png", "image/tiff"];
-            class F extends o.Component {
+            class D extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleDragDrop = (e) => {
@@ -397,7 +397,7 @@
                         }),
                         (this._renderDragDropTarget = () => {
                             const { "aria-label": e, onChange: t } = this.props;
-                            return o.createElement(I.Z, { acceptGifs: !1, acceptImages: !1, acceptVideo: !1, "aria-label": e, customMimeTypes: P, icon: o.createElement(k.default, { style: D.mediaPickerIcon }), onChange: t, size: "small", style: D.mediaPicker, withIcon: !0 });
+                            return o.createElement(I.Z, { acceptGifs: !1, acceptImages: !1, acceptVideo: !1, "aria-label": e, customMimeTypes: P, icon: o.createElement(k.default, { style: F.mediaPickerIcon }), onChange: t, size: "small", style: F.mediaPicker, withIcon: !0 });
                         }),
                         (this._getResizeIfNeeded = (e) => {
                             const t = e.externalMediaDetails && e.externalMediaDetails.height / e.externalMediaDetails.width;
@@ -405,30 +405,30 @@
                         }),
                         (this._renderPreview = (e) => {
                             const { onRemove: t } = this.props;
-                            return o.createElement(w.Z, { borderRadius: x.A.MEDIUM, mediaItem: e, onRemove: t, resizeIfNeeded: this._getResizeIfNeeded(e), style: D.mediaPreview, withCloseButton: !0 });
+                            return o.createElement(w.Z, { borderRadius: x.A.MEDIUM, mediaItem: e, onRemove: t, resizeIfNeeded: this._getResizeIfNeeded(e), style: F.mediaPreview, withCloseButton: !0 });
                         });
                 }
                 render() {
                     const { mediaItem: e, title: t } = this.props,
                         r = e ? this._renderPreview(e) : this._renderDragDropTarget();
-                    return o.createElement(a.Z, { style: D.dragDropContainer }, o.createElement(n.ZP, { weight: "bold" }, t), o.createElement(v.ZP, { onFilesAdded: this._handleDragDrop, style: D.dragDropComponent }, r));
+                    return o.createElement(a.Z, { style: F.dragDropContainer }, o.createElement(n.ZP, { weight: "bold" }, t), o.createElement(v.ZP, { onFilesAdded: this._handleDragDrop, style: F.dragDropComponent }, r));
                 }
             }
-            const D = s.default.create((e) => ({ dragDropContainer: { flex: 1, marginTop: e.spaces.space16, maxWidth: "50%", minWidth: `calc(${e.spaces.space80} + ${e.spaces.space48})` }, dragDropComponent: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: e.borderWidths.small, boxSizing: "border-box", flexGrow: 0, height: 135, marginVertical: e.spaces.space8, overflow: "hidden" }, mediaPicker: { borderStyle: "none", borderRadius: "none", flex: "auto" }, mediaPickerIcon: { color: e.colors.primary }, mediaPreview: { justifyContent: "center", flex: 1 } })),
-                S = F;
+            const F = s.default.create((e) => ({ dragDropContainer: { flex: 1, marginTop: e.spaces.space16, maxWidth: "50%", minWidth: `calc(${e.spaces.space80} + ${e.spaces.space48})` }, dragDropComponent: { borderColor: e.colors.borderColor, borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: e.borderWidths.small, boxSizing: "border-box", flexGrow: 0, height: 135, marginVertical: e.spaces.space8, overflow: "hidden" }, mediaPicker: { borderStyle: "none", borderRadius: "none", flex: "auto" }, mediaPickerIcon: { color: e.colors.primary }, mediaPreview: { justifyContent: "center", flex: 1 } })),
+                S = D;
             var T = r(326437);
             const B = "verification-checkbox-label",
                 R = d().ff1d68f8,
                 A = o.createElement(d().I18NFormatMessage, { $i18n: "bfb355fb" }, o.createElement(n.ZP, { link: u.LT }, d().d20f76cb)),
-                M = d().bdada5a6,
-                N = d().edfed0f6,
+                N = d().bdada5a6,
+                M = d().edfed0f6,
                 L = d().def5015d({ back_of_document: "" }),
                 O = d().b09aade6,
-                z = d().b40ed190,
-                W = d().c6650b56,
+                W = d().b40ed190,
+                z = d().c6650b56,
                 U = d().d171ed16,
-                $ = o.createElement(d().I18NFormatMessage, { $i18n: "d65a41c3" }, o.createElement(n.ZP, { link: u.vW }, d().b8deb156)),
-                V = d().c1df579e;
+                V = o.createElement(d().I18NFormatMessage, { $i18n: "d65a41c3" }, o.createElement(n.ZP, { link: u.vW }, d().b8deb156)),
+                $ = d().c1df579e;
             class j extends o.Component {
                 constructor(...e) {
                     super(...e),
@@ -480,7 +480,7 @@
                         }),
                         (this._renderCheckbox = () => {
                             const { isConfirmed: e } = this.props;
-                            return o.createElement(a.Z, { style: [b.Z.contentContainer, b.Z.checkboxContainer] }, o.createElement(a.Z, { style: b.Z.checkbox }, o.createElement(i.Z, { "aria-labelledby": B, checked: e, onChange: this._handleCheckboxChange })), o.createElement(a.Z, { id: B, style: b.Z.checkboxText }, o.createElement(n.ZP, { color: "gray700" }, U), o.createElement(n.ZP, { color: "gray700", style: b.Z.text }, $)));
+                            return o.createElement(a.Z, { style: [b.Z.contentContainer, b.Z.checkboxContainer] }, o.createElement(a.Z, { style: b.Z.checkbox }, o.createElement(i.Z, { "aria-labelledby": B, checked: e, onChange: this._handleCheckboxChange })), o.createElement(a.Z, { id: B, style: b.Z.checkboxText }, o.createElement(n.ZP, { color: "gray700" }, U), o.createElement(n.ZP, { color: "gray700", style: b.Z.text }, V)));
                         }),
                         (this._needsBackside = () => {
                             const { documentFormats: e, idCountry: t, idType: r } = this.props;
@@ -489,8 +489,8 @@
                         (this._renderUploadTargets = () => {
                             const { backImage: e, frontImage: t } = this.props,
                                 r = this._needsBackside(),
-                                n = r ? N : W,
-                                i = r ? M : z;
+                                n = r ? M : z,
+                                i = r ? N : W;
                             return o.createElement(a.Z, { "aria-labelledby": h.Q_, role: "group", style: Q.gridContainer }, o.createElement(S, { "aria-label": n, mediaItem: t, onChange: this._handleAddFrontMedia, onRemove: this._handleRemoveFrontID, title: i }), r && o.createElement(S, { "aria-label": O, mediaItem: e, onChange: this._handleAddBackMedia, onRemove: this._handleRemoveBackID, title: L }));
                         });
                 }
@@ -518,7 +518,7 @@
                 _render() {
                     const { backID: e, frontID: t, isConfirmed: r, isNarrow: i } = this.props,
                         s = (this._needsBackside() && !e) || !t || !r || this._isUploading();
-                    return o.createElement(a.Z, { style: [b.Z.container, i && b.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: h.Q_, role: "heading", size: "title4", style: b.Z.header, weight: "heavy" }, R), o.createElement(a.Z, { style: b.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, A), this._renderUploadTargets(), this._renderCheckbox()), o.createElement(l.ZP, { disabled: s, onPress: this._handleSubmit, style: b.Z.buttonFixed, type: "brandFilled" }, V));
+                    return o.createElement(a.Z, { style: [b.Z.container, i && b.Z.narrowContainer] }, o.createElement(n.ZP, { "aria-level": 1, id: h.Q_, role: "heading", size: "title4", style: b.Z.header, weight: "heavy" }, R), o.createElement(a.Z, { style: b.Z.scrollableContainer }, o.createElement(n.ZP, { color: "gray700" }, A), this._renderUploadTargets(), this._renderCheckbox()), o.createElement(l.ZP, { disabled: s, onPress: this._handleSubmit, style: b.Z.buttonFixed, type: "brandFilled" }, $));
                 }
                 render() {
                     return this._isErrorState() ? this._renderError() : this._render();
@@ -703,7 +703,7 @@
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        41065: (e, t, r) => {
+        678773: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var o = r(202784),
                 a = r(890601),
@@ -711,11 +711,11 @@
                 i = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.845bcb6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.e769573a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a", "icons/IconMediumTrashcanStroke-js"],
+    ["shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a", "icons/IconNotificationsOff-js"],
     {
         705414: (e, l, n) => {
             n.d(l, { Z: () => D });
@@ -21,8 +21,8 @@
                 _,
                 h,
                 F,
-                v,
                 b,
+                v,
                 K,
                 f,
                 S,
@@ -127,8 +127,8 @@
                                                                         ],
                                                                         storageKey: null,
                                                                     },
-                                                                    { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [s, r, (k = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), c, (_ = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "last_read_event_id", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "join_time_millis", storageKey: null }), (v = { alias: null, args: null, kind: "ScalarField", name: "join_conversation_event_id", storageKey: null })], storageKey: null },
-                                                                    (b = { alias: null, args: null, concreteType: "PerspectivalConversationMetadata", kind: "LinkedField", name: "perspectival_conversation_metadata", plural: !1, selections: [h, { alias: null, args: null, kind: "ScalarField", name: "low_quality", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted_due_to_muted_user", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "read_only", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "trusted", storageKey: null }], storageKey: null }),
+                                                                    { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [s, r, (k = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), c, (_ = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "last_read_event_id", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "join_time_millis", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "join_conversation_event_id", storageKey: null })], storageKey: null },
+                                                                    (v = { alias: null, args: null, concreteType: "PerspectivalConversationMetadata", kind: "LinkedField", name: "perspectival_conversation_metadata", plural: !1, selections: [h, { alias: null, args: null, kind: "ScalarField", name: "low_quality", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted_due_to_muted_user", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "read_only", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "trusted", storageKey: null }], storageKey: null }),
                                                                 ],
                                                                 storageKey: null,
                                                             },
@@ -188,7 +188,7 @@
                                                 kind: "LinkedField",
                                                 name: "items",
                                                 plural: !0,
-                                                selections: [{ alias: null, args: null, concreteType: "DMConversation", kind: "LinkedField", name: "dm_convo_search", plural: !1, selections: [s, r, { alias: null, args: null, concreteType: "ConversationInfo", kind: "LinkedField", name: "legacy", plural: !1, selections: [o, { alias: null, args: null, concreteType: "ConversationMetadata", kind: "LinkedField", name: "metadata", plural: !1, selections: [o, u, d, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "created_by_user_results", plural: !1, selections: (T = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, g], storageKey: null }, s]), storageKey: null }, p, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "admin_user_results", plural: !1, selections: T, storageKey: null }, { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "avatar", plural: !1, selections: [s, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "media_info", plural: !1, selections: [L, y], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, { kind: "InlineFragment", selections: [s, r, k, c, _, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }, h, F, v], storageKey: null }, b], storageKey: null }], storageKey: null }, K],
+                                                selections: [{ alias: null, args: null, concreteType: "DMConversation", kind: "LinkedField", name: "dm_convo_search", plural: !1, selections: [s, r, { alias: null, args: null, concreteType: "ConversationInfo", kind: "LinkedField", name: "legacy", plural: !1, selections: [o, { alias: null, args: null, concreteType: "ConversationMetadata", kind: "LinkedField", name: "metadata", plural: !1, selections: [o, u, d, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "created_by_user_results", plural: !1, selections: (T = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, g], storageKey: null }, s]), storageKey: null }, p, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "admin_user_results", plural: !1, selections: T, storageKey: null }, { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "avatar", plural: !1, selections: [s, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "media_info", plural: !1, selections: [L, y], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, { kind: "InlineFragment", selections: [s, r, k, c, _, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }, h, F, b], storageKey: null }, v], storageKey: null }], storageKey: null }, K],
                                                 storageKey: null,
                                             },
                                             f,
@@ -226,8 +226,8 @@
                 _,
                 h,
                 F,
-                v,
                 b,
+                v,
                 K,
                 f,
                 S,
@@ -332,8 +332,8 @@
                                                                         ],
                                                                         storageKey: null,
                                                                     },
-                                                                    { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [s, r, (k = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), c, (_ = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "last_read_event_id", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "join_time_millis", storageKey: null }), (v = { alias: null, args: null, kind: "ScalarField", name: "join_conversation_event_id", storageKey: null })], storageKey: null },
-                                                                    (b = { alias: null, args: null, concreteType: "PerspectivalConversationMetadata", kind: "LinkedField", name: "perspectival_conversation_metadata", plural: !1, selections: [h, { alias: null, args: null, kind: "ScalarField", name: "low_quality", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted_due_to_muted_user", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "read_only", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "trusted", storageKey: null }], storageKey: null }),
+                                                                    { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [s, r, (k = { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null }), c, (_ = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "last_read_event_id", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "join_time_millis", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "join_conversation_event_id", storageKey: null })], storageKey: null },
+                                                                    (v = { alias: null, args: null, concreteType: "PerspectivalConversationMetadata", kind: "LinkedField", name: "perspectival_conversation_metadata", plural: !1, selections: [h, { alias: null, args: null, kind: "ScalarField", name: "low_quality", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muted_due_to_muted_user", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "read_only", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "trusted", storageKey: null }], storageKey: null }),
                                                                 ],
                                                                 storageKey: null,
                                                             },
@@ -393,7 +393,7 @@
                                                 kind: "LinkedField",
                                                 name: "items",
                                                 plural: !0,
-                                                selections: [{ alias: null, args: null, concreteType: "DMConversation", kind: "LinkedField", name: "dm_convo_search", plural: !1, selections: [s, r, { alias: null, args: null, concreteType: "ConversationInfo", kind: "LinkedField", name: "legacy", plural: !1, selections: [o, { alias: null, args: null, concreteType: "ConversationMetadata", kind: "LinkedField", name: "metadata", plural: !1, selections: [o, u, d, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "created_by_user_results", plural: !1, selections: (T = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, g], storageKey: null }, s]), storageKey: null }, p, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "admin_user_results", plural: !1, selections: T, storageKey: null }, { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "avatar", plural: !1, selections: [s, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "media_info", plural: !1, selections: [L, y], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, { kind: "InlineFragment", selections: [s, r, k, c, _, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }, h, F, v], storageKey: null }, b], storageKey: null }], storageKey: null }, K],
+                                                selections: [{ alias: null, args: null, concreteType: "DMConversation", kind: "LinkedField", name: "dm_convo_search", plural: !1, selections: [s, r, { alias: null, args: null, concreteType: "ConversationInfo", kind: "LinkedField", name: "legacy", plural: !1, selections: [o, { alias: null, args: null, concreteType: "ConversationMetadata", kind: "LinkedField", name: "metadata", plural: !1, selections: [o, u, d, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "created_by_user_results", plural: !1, selections: (T = [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, g], storageKey: null }, s]), storageKey: null }, p, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "admin_user_results", plural: !1, selections: T, storageKey: null }, { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "avatar", plural: !1, selections: [s, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "media_info", plural: !1, selections: [L, y], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "ParticipantConversationMetadata", kind: "LinkedField", name: "participants_metadata", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [L, { kind: "InlineFragment", selections: [s, r, k, c, _, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null }, h, F, b], storageKey: null }, v], storageKey: null }], storageKey: null }, K],
                                                 storageKey: null,
                                             },
                                             f,
@@ -413,7 +413,7 @@
             const D = C;
         },
         189736: (e, l, n) => {
-            n.d(l, { Z: () => b });
+            n.d(l, { Z: () => v });
             var a,
                 i,
                 t,
@@ -431,7 +431,7 @@
                 _,
                 h,
                 F,
-                v = {
+                b = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "label" }]),
                         kind: "Fragment",
@@ -642,8 +642,8 @@
                     },
                     params: { id: "H1gNKY5yTT_nhHkt003HzA", metadata: { sliceInfoPath: ["labeled_conversation_collection_timeline", "slice_info"] }, name: "DMLabelFilteredInboxQuery", operationKind: "query", text: null },
                 };
-            v.hash = "277feee0d8d7bdabb98b2eaee749cc1e";
-            const b = v;
+            b.hash = "277feee0d8d7bdabb98b2eaee749cc1e";
+            const v = b;
         },
         95539: (e, l, n) => {
             n.d(l, { Z: () => s });
@@ -740,7 +740,7 @@
             const s = t;
         },
         131271: (e, l, n) => {
-            n.d(l, { Z: () => b });
+            n.d(l, { Z: () => v });
             var a,
                 i,
                 t,
@@ -758,7 +758,7 @@
                 _,
                 h,
                 F,
-                v = {
+                b = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "label" }]),
                         kind: "Fragment",
@@ -913,8 +913,8 @@
                     },
                     params: { id: "6NaRBnlZU8y-hcqwUfNf6w", metadata: { sliceInfoPath: ["labeled_conversation_slice", "slice_info"] }, name: "DMPinnedInboxQuery", operationKind: "query", text: null },
                 };
-            v.hash = "7535becec7453f5541385f772c2b6812";
-            const b = v;
+            b.hash = "7535becec7453f5541385f772c2b6812";
+            const v = b;
         },
         392027: (e, l, n) => {
             n.d(l, { Z: () => o });
@@ -942,13 +942,13 @@
                 o = n(952428),
                 u = n(392237);
             const d = (e) => {
-                    const { decoration: l, description: n, disabled: d = !1, isActive: g = !1, label: m, link: p, onPress: y, paddingHorizontal: k, renderRightContent: _, role: h = "tab", styleOverride: F, testID: v = "pivot", thumbnail: b, thumbnailSize: K, withoutArrow: f = !1 } = e,
+                    const { decoration: l, description: n, disabled: d = !1, isActive: g = !1, label: m, link: p, onPress: y, paddingHorizontal: k, renderRightContent: _, role: h = "tab", styleOverride: F, testID: b = "pivot", thumbnail: v, thumbnailSize: K, withoutArrow: f = !1 } = e,
                         S = [c.thumbnailContainer, "medium" === K && c.thumbnailContainerMedium],
                         L = "string" == typeof m ? a.createElement(r.ZP, null, m) : m,
                         T = "object" == typeof p && p.external && !p.openInSameFrame,
-                        C = n ? ("string" == typeof n ? a.createElement(r.ZP, { color: "gray700", size: "subtext2", testID: `${v}-description` }, n) : n) : null,
+                        C = n ? ("string" == typeof n ? a.createElement(r.ZP, { color: "gray700", size: "subtext2", testID: `${b}-description` }, n) : n) : null,
                         D = a.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? u.default.theme.spaces[k] : u.default.theme.componentDimensions.gutterHorizontal }), [k]);
-                    return a.createElement(o.Z, { "aria-selected": "tab" === h ? g : null, disabled: d, link: d ? void 0 : p, onPress: y, role: h, style: [c.root, D, d && c.disabled, F], testID: v, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, b ? a.createElement(i.Z, { style: S }, b) : null, a.createElement(i.Z, { style: c.content }, L, C), _ ? _() : null, (!p && !y) || d || f ? null : T ? a.createElement(t.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
+                    return a.createElement(o.Z, { "aria-selected": "tab" === h ? g : null, disabled: d, link: d ? void 0 : p, onPress: y, role: h, style: [c.root, D, d && c.disabled, F], testID: b, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, v ? a.createElement(i.Z, { style: S }, v) : null, a.createElement(i.Z, { style: c.content }, L, C), _ ? _() : null, (!p && !y) || d || f ? null : T ? a.createElement(t.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1099,8 +1099,8 @@
                 _ = n(530732);
             const h = d().d2414d31,
                 F = () => d().ce4e85ae,
-                v = d().fb9f6f39;
-            class b extends i.Component {
+                b = d().fb9f6f39;
+            class v extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizedLink = (0, c.Z)((e, l) => {
@@ -1135,16 +1135,16 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": l, badgeCount: n, badgePip: a, children: t, color: s, isActive: u, isCompact: d, isPillLink: c, isRoundedRect: g, isWebRedesign: y, retainScrollPosition: b, style: f, to: S } = this.props,
+                    const { Icon: e, "aria-label": l, badgeCount: n, badgePip: a, children: t, color: s, isActive: u, isCompact: d, isPillLink: c, isRoundedRect: g, isWebRedesign: y, retainScrollPosition: v, style: f, to: S } = this.props,
                         { location: L } = this.state,
-                        T = S ? this._getMemoizedLink(S, b) : void 0,
+                        T = S ? this._getMemoizedLink(S, v) : void 0,
                         C = u ? u(S) : L?.pathname === T?.pathname,
                         D = k.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: c ? K.pillHoverStyle.backgroundColor : void 0 }),
                         M = y ? "medium" : C ? "bold" : "medium";
-                    return i.createElement(_.Z, { "aria-label": l, "aria-selected": C, focusable: !!C, interactiveStyles: D, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(c ? [K.pillStyle] : [K.link]), ...(c && C ? [K.pillActiveStyle] : []), d ? (c ? K.compactPill : K.compactLink) : null, g ? K.roundedRect : null, f], withoutInteractiveStyles: y }, ({ isFocused: l, isHovered: u }) => i.createElement(o.Z, { style: c && K.flexGrow }, i.createElement(m.ZP, { size: y ? "headline2" : void 0, style: [K.text, { color: this._getTextColor(C, u, y, c) }, d && K.compactText, y && l && K.focusedText, c && K.pillTextStyle, c && C && K.pillActiveTextStyle, c && u && K.pillHoverTextStyle], weight: M }, e && i.createElement(e, { style: K.icon }), t, y || c ? null : i.createElement(o.Z, { style: C && [K.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(p.Z, { count: n, standalone: !0, style: [K.badge, n >= 10 && K.multiDigitBadge, n >= 20 && K.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: h, withBorder: !1 }) : a ? i.createElement(p.Z, { pip: !0, standalone: !0, style: K.badgePip, textColor: "red500", unreadCountLabel: F, withBorder: !1 }) : null));
+                    return i.createElement(_.Z, { "aria-label": l, "aria-selected": C, focusable: !!C, interactiveStyles: D, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(c ? [K.pillStyle] : [K.link]), ...(c && C ? [K.pillActiveStyle] : []), d ? (c ? K.compactPill : K.compactLink) : null, g ? K.roundedRect : null, f], withoutInteractiveStyles: y }, ({ isFocused: l, isHovered: u }) => i.createElement(o.Z, { style: c && K.flexGrow }, i.createElement(m.ZP, { size: y ? "headline2" : void 0, style: [K.text, { color: this._getTextColor(C, u, y, c) }, d && K.compactText, y && l && K.focusedText, c && K.pillTextStyle, c && C && K.pillActiveTextStyle, c && u && K.pillHoverTextStyle], weight: M }, e && i.createElement(e, { style: K.icon }), t, y || c ? null : i.createElement(o.Z, { style: C && [K.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(p.Z, { count: n, standalone: !0, style: [K.badge, n >= 10 && K.multiDigitBadge, n >= 20 && K.truncatedCountBadge], truncatedCountFormatter: b, unreadCountLabel: h, withBorder: !1 }) : a ? i.createElement(p.Z, { pip: !0, standalone: !0, style: K.badgePip, textColor: "red500", unreadCountLabel: F, withBorder: !1 }) : null));
                 }
             }
-            (b.contextType = y.Z), (b.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            (v.contextType = y.Z), (v.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
             const K = r.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
@@ -1168,7 +1168,7 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                f = b,
+                f = v,
                 S = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 L = ({ alignFirstItem: e, "aria-label": l, isCompact: n, isPillLink: r, isRoundedRect: o, links: u, style: d, visibleItemIndex: c }) => {
                     const g = u
@@ -1188,7 +1188,7 @@
                     return i.createElement(t.Z, { "aria-label": l, buttonsContainerStyle: r && S.gap, childrenStyle: !p && S.flexGrow, key: g, style: [r ? null : S.segmentedControl, p && S.leftAligned, d], visibleItemIndex: c }, y);
                 };
         },
-        565421: (e, l, n) => {
+        165243: (e, l, n) => {
             n.r(l), n.d(l, { default: () => o });
             var a = n(202784),
                 i = n(890601),
@@ -1196,9 +1196,9 @@
                 s = n(347101);
             const r = (e = {}) => {
                 const { direction: l } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 32 32", children: a.createElement("g", null, a.createElement("path", { d: "M20 23h-2v-8h2v8zm-6-8h-2v8h2v-8zm14-5h-1.713l-1.111 15.577C25.038 27.496 23.424 29 21.5 29H10.486c-1.915 0-3.522-1.496-3.66-3.405L5.699 10H4V8h7V6c0-1.654 1.346-3 3-3h4c1.654 0 3 1.346 3 3v2h7v2zM13 8h6V6c0-.551-.449-1-1-1h-4c-.551 0-1 .449-1 1v2zm11.281 2H7.705l1.117 15.451c.062.869.793 1.549 1.665 1.549H21.5c.88 0 1.619-.688 1.681-1.565L24.282 10z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M20.29 2.29l-2.34 2.34C16.47 3.01 14.34 2 12 2 7.93 2 4.51 5.02 4 9.05L2.87 18h1.72l-2.3 2.29 1.42 1.42 18-18-1.42-1.42zM6.59 16H5.13l.85-6.7C6.36 6.27 8.94 4 12 4c1.79 0 3.42.78 4.54 2.05L6.59 16zM12 22c-1.57 0-2.98-.73-3.89-1.86l1.42-1.43c.55.78 1.45 1.29 2.47 1.29 1.31 0 2.42-.83 2.83-2H12v-2h6.86l-.74-5.87 1.76-1.76c.05.22.08.44.11.67L21.14 18H16.9c-.46 2.28-2.48 4-4.9 4z" })) }, { writingDirection: l });
             };
-            r.metadata = { width: 32, height: 32 };
+            r.metadata = { width: 24, height: 24 };
             const o = r;
         },
         900664: (e, l, n) => {
@@ -1217,4 +1217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a.3b2d34ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a.8f9df10a.js.map

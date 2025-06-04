@@ -508,11 +508,11 @@
                 render() {
                     const { Icon: e, "aria-label": t, badgeCount: l, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: k, style: C, to: P } = this.props,
                         { location: T } = this.state,
-                        w = P ? this._getMemoizedLink(P, k) : void 0,
-                        x = c ? c(P) : T?.pathname === w?.pathname,
+                        x = P ? this._getMemoizedLink(P, k) : void 0,
+                        w = c ? c(P) : T?.pathname === x?.pathname,
                         E = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
-                        L = g ? "medium" : x ? "bold" : "medium";
-                    return n.createElement(f.Z, { "aria-label": t, "aria-selected": x, focusable: !!x, interactiveStyles: E, link: w, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && x ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, C], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => n.createElement(o.Z, { style: u && S.flexGrow }, n.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(x, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && x && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: L }, e && n.createElement(e, { style: S.icon }), i, g || u ? null : n.createElement(o.Z, { style: x && [S.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? n.createElement(m.Z, { count: l, standalone: !0, style: [S.badge, l >= 10 && S.multiDigitBadge, l >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : a ? n.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
+                        L = g ? "medium" : w ? "bold" : "medium";
+                    return n.createElement(f.Z, { "aria-label": t, "aria-selected": w, focusable: !!w, interactiveStyles: E, link: x, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && w ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, C], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => n.createElement(o.Z, { style: u && S.flexGrow }, n.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(w, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && w && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: L }, e && n.createElement(e, { style: S.icon }), i, g || u ? null : n.createElement(o.Z, { style: w && [S.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? n.createElement(m.Z, { count: l, standalone: !0, style: [S.badge, l >= 10 && S.multiDigitBadge, l >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : a ? n.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = g.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -598,19 +598,6 @@
             var a = l(202784);
             const n = (0, l(523561).Z)({ loader: () => Promise.all([l.e("modules.audio-6107ac1a"), l.e("modules.audio-b953418a"), l.e("modules.audio-7c51e6a7"), l.e("modules.audio-04db59e9"), l.e("modules.audio-76583d6c"), l.e("modules.audio-b7a8a5fb"), l.e("modules.audio-51f6e793"), l.e("modules.audio-e019dbda"), l.e("modules.audio-262c94d4"), l.e("modules.audio-c6fe4ea4"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI"), l.e("loaders.video.VideoPlayerEventsUI")]).then(l.bind(l, 374749)), renderPlaceholder: () => a.createElement("div", null) });
         },
-        41065: (e, t, l) => {
-            l.r(t), l.d(t, { default: () => o });
-            var a = l(202784),
-                n = l(890601),
-                i = l(783427),
-                s = l(347101);
-            const r = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            r.metadata = { width: 24, height: 24 };
-            const o = r;
-        },
         411240: (e, t, l) => {
             l.d(t, { Z: () => a });
             const a = (e, t) => {
@@ -635,4 +622,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.1b89b1ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.dc6c0c8a.js.map

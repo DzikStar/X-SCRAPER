@@ -3575,7 +3575,7 @@
                 e("hbe4f99e", "Heippa! Olisipa hauska päästä jakamaan salaisuuksiani sinulle ja tutustua paremmin :)"),
                 e("fb278c82", "Mikä esittelyn idea on?"),
                 e("j6cab6ec", "Ennen kuin ihmiset ryhtyvät Tilaajiksesi, he näkevät tämän. Tee muokkauksia kuvauksiin, kunnes ne tuntuvat omilta."),
-                e("f2b1e83e", "Grok & Third-Party Collaborators"),
+                e("f2b1e83e", "Grok ja ulkopuoliset yhteistyökumppanit"),
                 e("e110a46c", "Poista keskusteluhistoria"),
                 e("ebc4fda0", "Olet poistamassa Grok-keskusteluhistoriasi. Et tämän jälkeen pääse enää näihin keskusteluihin."),
                 e("c90fe716", "Haluatko poistaa käymäsi keskustelut?"),
@@ -5510,7 +5510,7 @@
                 e("j6aa6172", "Poistetaanko arvio?"),
                 e("i4112750", "Tätä ei voi perua."),
                 e("i6f6191a", "Kiitos!"),
-                e("h5575012", "Agree and submit"),
+                e("h5575012", "Hyväksy ja lähetä"),
                 e("f9171e52", "Tästä julkaisuista tykkäsivät ihmiset, jotka yleensä ovat eri kannoilla. Näkemyksiä tarvitaan lisää."),
                 e("j0f9919a", "Arviollasi ei ole julkaisuun negatiivista vaikutusta, mutta se voi nostaa julkaisuja, joista moni jo tykkää."),
                 e("b3af830c", "Kirjoittamasi arvio:"),
@@ -5530,7 +5530,7 @@
                 e("g0402b3b", "vetoavat eri näkökantojen edustajiin"),
                 e("ged62c2b", "nostamaan"),
                 e("b5d5f7f1", "Muokkaa suuntaa"),
-                e("a42fef87", "Learn more"),
+                e("a42fef87", "Lue lisää"),
                 e("bd7eb888", "Näytä kaikki tämän julkaisun huomautukset"),
                 e("i97b83f6", "Muutoshakemustasi lähetettäessä tapahtui virhe. Yritä uudelleen."),
                 e("a038ab9a", "Käännä huomautus"),
@@ -11533,7 +11533,7 @@
                         {
                             key: "ffd3d1a1",
                             get: function () {
-                                return ["Ratings are anonymized and publicly available to the public for transparency. "];
+                                return ["Arviot anonymisoidaan ja annetaan yleisön saataville. "];
                             },
                         },
                         {
@@ -13354,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.87bcf3ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.65c3bc0a.js.map

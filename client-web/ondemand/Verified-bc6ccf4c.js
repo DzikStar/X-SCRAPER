@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Verified-bc6ccf4c"],
+    ["ondemand.Verified-bc6ccf4c", "loader.AudioContextVoiceMedia"],
     {
         13720: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -87,7 +87,7 @@
                 u = ({ accordionItemId: e = "", children: t, headerStyles: r, icon: u, iconColor: m, iconImage: g, iconSide: h, isExpanded: b = !1, onClick: f, onToggle: y, testID: C, title: E, titleColor: w, titleStyles: Z }) => {
                     const k = s.Z.generate({ backgroundColor: "transparent", color: d.default.theme.colors.primary, customFocusBackgroundColor: d.default.theme.colors.gray0, customHoverBackgroundColor: d.default.theme.colors.gray0, customPressedBackgroundColor: d.default.theme.colors.gray0, insetFocusRing: !0 }),
                         x = h || "AfterTitle",
-                        v = () =>
+                        D = () =>
                             u
                                 ? ((e, t) => {
                                       const r = "BeforeTitle" === t ? p.iconBefore : p.iconAfter;
@@ -110,7 +110,7 @@
                                 style: r || p.header,
                                 testID: C,
                             },
-                            o.createElement(n.Z, { style: p.title }, "BeforeTitle" === x ? v() : null, o.createElement(i.ZP, { color: w && w, style: Z, testID: "title", weight: "bold" }, E), "AfterTitle" === x ? v() : null),
+                            o.createElement(n.Z, { style: p.title }, "BeforeTitle" === x ? D() : null, o.createElement(i.ZP, { color: w && w, style: Z, testID: "title", weight: "bold" }, E), "AfterTitle" === x ? D() : null),
                             (() => {
                                 const e = [p.chevronMargin, b && p.chevronExpanded, !l.Z.reducedMotionEnabled && p.chevronAnimation];
                                 return w && !b ? e.push({ color: d.default.theme.colors[w] }) : w || b || e.push({ color: d.default.theme.colors.text }), o.createElement(a.default, { style: e, testID: "accordion-chevron" });
@@ -210,11 +210,11 @@
             const d = (e) => {
                     const { decoration: t, description: r, disabled: d = !1, isActive: u = !1, label: m, link: g, onPress: h, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: C, testID: E = "pivot", thumbnail: w, thumbnailSize: Z, withoutArrow: k = !1 } = e,
                         x = [p.thumbnailContainer, "medium" === Z && p.thumbnailContainerMedium],
-                        v = "string" == typeof m ? o.createElement(i.ZP, null, m) : m,
-                        D = "object" == typeof g && g.external && !g.openInSameFrame,
+                        D = "string" == typeof m ? o.createElement(i.ZP, null, m) : m,
+                        v = "object" == typeof g && g.external && !g.openInSameFrame,
                         I = r ? ("string" == typeof r ? o.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, r) : r) : null,
-                        z = o.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return o.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : g, onPress: h, role: y, style: [p.root, z, d && p.disabled, C], testID: E, withInteractiveStyling: !!g || !!h }, o.createElement(n.Z, { style: p.contentContainer }, w ? o.createElement(n.Z, { style: x }, w) : null, o.createElement(n.Z, { style: p.content }, v, I), f ? f() : null, (!g && !h) || d || k ? null : D ? o.createElement(a.default, { style: p.icon }) : o.createElement(l.default, { style: p.icon })), t);
+                        R = o.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
+                    return o.createElement(s.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : g, onPress: h, role: y, style: [p.root, R, d && p.disabled, C], testID: E, withInteractiveStyling: !!g || !!h }, o.createElement(n.Z, { style: p.contentContainer }, w ? o.createElement(n.Z, { style: x }, w) : null, o.createElement(n.Z, { style: p.content }, D, I), f ? f() : null, (!g && !h) || d || k ? null : v ? o.createElement(a.default, { style: p.icon }) : o.createElement(l.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -346,36 +346,23 @@
                 m = r(392237);
             const g = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 h = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: o, dedicatedPillRow: a, description: m, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: C, illustration: E, infoLabel: w, infoLabelType: Z, inlineCallout: k, label: x, name: v, onChange: D, pillText: I, pillType: z, reverseLabels: R, secondaryContent: S, secondaryDescription: _, switchStyle: P, testID: T }) => {
+                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: o, dedicatedPillRow: a, description: m, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: C, illustration: E, infoLabel: w, infoLabelType: Z, inlineCallout: k, label: x, name: D, onChange: v, pillText: I, pillType: R, reverseLabels: S, secondaryContent: _, secondaryDescription: z, switchStyle: P, testID: T }) => {
                     const M = (0, u.b)(),
                         B = (0, u.b)(),
                         H = (0, u.b)(),
                         $ = n.createElement(c.ZP, { color: P ? (o ? "text" : "gray800") : "text", id: M, role: "label", size: P ? "body" : "headline2", testID: "headline-label", weight: P ? "normal" : "bold" }, x),
-                        G = !!m && n.createElement(c.ZP, { color: "gray700", id: B, size: "subtext1", style: I ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
-                        A = n.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, _),
-                        F = I ? n.createElement(d.ZP, { style: a ? g.pill : g.inlinePill, type: z }, I) : null,
-                        j = n.createElement(n.Fragment, null, a ? F : null, n.createElement(l.Z, { style: [g.row, w && g.marginBottom8] }, R ? G : $, a ? null : F), n.createElement(l.Z, { style: [g.row, R && g.marginTop4] }, R ? $ : G), S || (_ ? A : void 0)),
+                        A = !!m && n.createElement(c.ZP, { color: "gray700", id: B, size: "subtext1", style: I ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
+                        G = n.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, z),
+                        F = I ? n.createElement(d.ZP, { style: a ? g.pill : g.inlinePill, type: R }, I) : null,
+                        j = n.createElement(n.Fragment, null, a ? F : null, n.createElement(l.Z, { style: [g.row, w && g.marginBottom8] }, S ? A : $, a ? null : F), n.createElement(l.Z, { style: [g.row, S && g.marginTop4] }, S ? $ : A), _ || (z ? G : void 0)),
                         L = P ? "unset" : (r ? 100 / r : 100) + "%",
                         V = P ? [g.padding8, g.borderRadiusLarge, o ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, o ? g.checked : null, g.backgroundDefault];
-                    return n.createElement(n.Fragment, null, n.createElement(p.Z, { disabled: b, style: [g.root, ...V, C ? { maxWidth: L, ...g.grow } : null, 1 === t || C ? null : g.withMarginTop, t !== r && C && !P && g.withMarginEnd, !b && g.interactive], testID: T, withInteractiveStyling: !P }, !!E && n.createElement(l.Z, { style: g.iconContainer, testID: "illustration" }, E), n.createElement(l.Z, { style: [g.labelContainer, P && g.alignCenter] }, !!w && n.createElement(l.Z, { style: g.info }, n.createElement(d.ZP, { background: "green" === Z ? "green500" : "red" === Z ? "magenta500" : "yellow" === Z ? "orange50" : "gray500" }, n.createElement(c.ZP, { color: "yellow" === Z ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, w)), "red" !== Z && "yellow" !== Z && n.createElement(i.default, { style: g.infoIcon, testID: "infoIcon" })), j, o && !!k && n.createElement(l.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!y && n.createElement(l.Z, { style: g.endContentContainer, testID: "endContent" }, n.createElement(c.ZP, { id: H, size: "subtext1", weight: "bold" }, y)), n.createElement("input", { "aria-describedby": `${B} ${H}`, "aria-label": e, "aria-labelledby": M, "aria-posinset": t, "aria-setsize": r, checked: o, disabled: b, name: v, onChange: o ? s.Z : D, style: h, type: "radio" })), b && f ? f : null);
+                    return n.createElement(n.Fragment, null, n.createElement(p.Z, { disabled: b, style: [g.root, ...V, C ? { maxWidth: L, ...g.grow } : null, 1 === t || C ? null : g.withMarginTop, t !== r && C && !P && g.withMarginEnd, !b && g.interactive], testID: T, withInteractiveStyling: !P }, !!E && n.createElement(l.Z, { style: g.iconContainer, testID: "illustration" }, E), n.createElement(l.Z, { style: [g.labelContainer, P && g.alignCenter] }, !!w && n.createElement(l.Z, { style: g.info }, n.createElement(d.ZP, { background: "green" === Z ? "green500" : "red" === Z ? "magenta500" : "yellow" === Z ? "orange50" : "gray500" }, n.createElement(c.ZP, { color: "yellow" === Z ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, w)), "red" !== Z && "yellow" !== Z && n.createElement(i.default, { style: g.infoIcon, testID: "infoIcon" })), j, o && !!k && n.createElement(l.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!y && n.createElement(l.Z, { style: g.endContentContainer, testID: "endContent" }, n.createElement(c.ZP, { id: H, size: "subtext1", weight: "bold" }, y)), n.createElement("input", { "aria-describedby": `${B} ${H}`, "aria-label": e, "aria-labelledby": M, "aria-posinset": t, "aria-setsize": r, checked: o, disabled: b, name: D, onChange: o ? s.Z : v, style: h, type: "radio" })), b && f ? f : null);
                 },
                 f = (e) => {
                     const t = n.useCallback(({ value: e, ...t }) => n.createElement(b, (0, o.Z)({}, t, { key: e })), []);
                     return n.createElement(a.Z, (0, o.Z)({}, e, { renderSelector: t }));
                 };
-        },
-        452693: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var o = r(202784),
-                n = r(890601),
-                a = r(783427),
-                l = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
         },
         662678: (e, t, r) => {
             r.d(t, { G: () => n, Z: () => o });
@@ -395,4 +382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-bc6ccf4c.151bfa2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-bc6ccf4c.b3f91d7a.js.map

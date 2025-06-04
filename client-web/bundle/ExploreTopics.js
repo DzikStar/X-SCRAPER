@@ -38,17 +38,17 @@
             const h = i.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${i.default.iPhoneOffsetBottom} - ${d.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 b = (e) => {
                     const { "aria-label": t, label: o, onPress: b, scribeComponent: g, ...f } = e,
-                        { loggedInUserId: Z } = n.useContext(u.rC),
-                        y = (0, m.z)(),
+                        { loggedInUserId: y } = n.useContext(u.rC),
+                        Z = (0, m.z)(),
                         E = n.useCallback(
                             (e) => {
-                                y.scribe({ component: g, action: "click" }), b && b(e);
+                                Z.scribe({ component: g, action: "click" }), b && b(e);
                             },
-                            [y, b, g],
+                            [Z, b, g],
                         ),
                         w = d.ZM.useCollapsibleNavBars(),
                         x = [...d.Ah({ elementPosition: "bottom" }), w && h.fabStaysAboveSafeArea];
-                    return Z
+                    return y
                         ? n.createElement(
                               s.Z.FloatingAction,
                               null,
@@ -170,7 +170,7 @@
             const p = (0, n.ZP)(i(l));
         },
         849078: (e, t, o) => {
-            o.r(t), o.d(t, { ExploreTopicsScreen: () => T, default: () => F });
+            o.r(t), o.d(t, { ExploreTopicsScreen: () => D, default: () => F });
             var a = o(202784),
                 n = o(457311),
                 r = o(108362),
@@ -186,43 +186,43 @@
                 b = o(163889),
                 g = o(519896),
                 f = o(24949),
-                Z = o(668214),
-                y = o(644829),
+                y = o(668214),
+                Z = o(644829),
                 E = o(218951);
             const w = { news: "url", sim_cluster: "cluster_id", ttt: "ttt_id", semantic_core: "entity_id" };
             var x = o(312771);
             const P = c().fcf3e54c,
                 _ = (e, t) => t.match.params.topicId,
                 C = (e, t) => t.match.params.taxonomy,
-                v = (0, f.P1)(_, C, (e, t) => (({ taxonomy: e, topicId: t }) => (0, E.Z)({ timelineId: `guide-${t}-${e}-topic`, network: { getEndpoint: (e) => e.withEndpoint(y.Z).fetchExploreTopic, getEndpointParams: (o) => ({ [w[e]]: t, ...o }) }, context: "FETCH_EXPLORE_TOPIC", perfKey: "guide-topic" }))({ topicId: e, taxonomy: t })),
+                v = (0, f.P1)(_, C, (e, t) => (({ taxonomy: e, topicId: t }) => (0, E.Z)({ timelineId: `guide-${t}-${e}-topic`, network: { getEndpoint: (e) => e.withEndpoint(Z.Z).fetchExploreTopic, getEndpointParams: (o) => ({ [w[e]]: t, ...o }) }, context: "FETCH_EXPLORE_TOPIC", perfKey: "guide-topic" }))({ topicId: e, taxonomy: t })),
                 I = (e, t) => {
                     const o = v(e, t);
                     if (o.selectInitialFetchStatus(e, t) !== x.ZP.LOADED) return "";
                     const { title: a = P } = o.selectMetadata(e);
                     return a;
                 },
-                k = (0, Z.Z)()
+                k = (0, y.Z)()
                     .propsFromState(() => ({ module: v, topicId: _, taxonomy: C, title: I }))
                     .withAnalytics({ page: "guide", section: "topic" });
-            const S = { ...(0, o(335632).G)({ withMessageGaps: !1 }) },
-                B = c().a2a3824a,
-                M = c().ed827af6,
-                L = () => a.createElement(m.Z, null),
-                A = () => a.createElement(n.Z, { message: M }),
-                D = ["news", "ttt", "semantic_core", "sim_cluster"];
-            function T(e) {
+            const B = { ...(0, o(335632).G)({ withMessageGaps: !1 }) },
+                S = c().a2a3824a,
+                L = c().ed827af6,
+                A = () => a.createElement(m.Z, null),
+                M = () => a.createElement(n.Z, { message: L }),
+                T = ["news", "ttt", "semantic_core", "sim_cluster"];
+            function D(e) {
                 const { history: t, title: o } = e,
                     n = a.createElement(d.Z, { history: t }),
                     s = () => {
                         const { taxonomy: t } = e;
-                        return D.indexOf(t) >= 0;
+                        return T.indexOf(t) >= 0;
                     };
                 return a.createElement(
                     u.Z,
                     null,
                     a.createElement(p.Z, {
                         backLocation: "/explore",
-                        documentTitle: B,
+                        documentTitle: S,
                         history: t,
                         primaryContent: a.createElement(
                             l.Z,
@@ -230,11 +230,11 @@
                             (() => {
                                 if (s()) {
                                     const { module: t } = e;
-                                    return a.createElement(h.Z, { entryConfiguration: S, module: t, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: L, renderUnavailable: A, title: B });
+                                    return a.createElement(h.Z, { entryConfiguration: B, module: t, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: A, renderUnavailable: M, title: S });
                                 }
                                 {
                                     const { taxonomy: t, topicId: o } = e;
-                                    return t && o ? (0, b.ZP)(`Unexpected guide topic: Taxonomy '${t}' requested with topicId '${o}'`) : (0, b.ZP)("Missing taxonomy and/or topic id for guide topic:"), L();
+                                    return t && o ? (0, b.ZP)(`Unexpected guide topic: Taxonomy '${t}' requested with topicId '${o}'`) : (0, b.ZP)("Missing taxonomy and/or topic id for guide topic:"), A();
                                 }
                             })(),
                         ),
@@ -243,7 +243,7 @@
                     }),
                 );
             }
-            const F = k(T);
+            const F = k(D);
         },
         392027: (e, t, o) => {
             o.d(t, { Z: () => i });
@@ -261,19 +261,6 @@
             const c = r.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 i = s;
         },
-        41065: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => i });
-            var a = o(202784),
-                n = o(890601),
-                r = o(783427),
-                s = o(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const i = c;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExploreTopics.571b398a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ExploreTopics.c6addd1a.js.map

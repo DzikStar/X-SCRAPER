@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsProfessionalProfileLocationSpotlight-bc6ccf4c"],
+    ["bundle.SettingsProfessionalProfileLocationSpotlight-bc6ccf4c", "icons/IconChevronDown-js"],
     {
         661810: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -24,11 +24,11 @@
             const d = (e) => {
                     const { decoration: t, description: r, disabled: d = !1, isActive: u = !1, label: h, link: m, onPress: b, paddingHorizontal: g, renderRightContent: f, role: y = "tab", styleOverride: v, testID: C = "pivot", thumbnail: _, thumbnailSize: E, withoutArrow: Z = !1 } = e,
                         x = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
-                        k = "string" == typeof h ? o.createElement(i.ZP, null, h) : h,
-                        w = "object" == typeof m && m.external && !m.openInSameFrame,
+                        w = "string" == typeof h ? o.createElement(i.ZP, null, h) : h,
+                        k = "object" == typeof m && m.external && !m.openInSameFrame,
                         I = r ? ("string" == typeof r ? o.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, r) : r) : null,
                         T = o.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? c.default.theme.spaces[g] : c.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return o.createElement(l.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : m, onPress: b, role: y, style: [p.root, T, d && p.disabled, v], testID: C, withInteractiveStyling: !!m || !!b }, o.createElement(a.Z, { style: p.contentContainer }, _ ? o.createElement(a.Z, { style: x }, _) : null, o.createElement(a.Z, { style: p.content }, k, I), f ? f() : null, (!m && !b) || d || Z ? null : w ? o.createElement(n.default, { style: p.icon }) : o.createElement(s.default, { style: p.icon })), t);
+                    return o.createElement(l.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : m, onPress: b, role: y, style: [p.root, T, d && p.disabled, v], testID: C, withInteractiveStyling: !!m || !!b }, o.createElement(a.Z, { style: p.contentContainer }, _ ? o.createElement(a.Z, { style: x }, _) : null, o.createElement(a.Z, { style: p.content }, w, I), f ? f() : null, (!m && !b) || d || Z ? null : k ? o.createElement(n.default, { style: p.icon }) : o.createElement(s.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -153,7 +153,7 @@
                         Z = void 0 === c ? !!r : c,
                         x = new Set();
                     r && x.add(this._errorID), e && x.add(e), m && x.add(this._helperID);
-                    const k = x.size ? [...x].join(" ") : void 0;
+                    const w = x.size ? [...x].join(" ") : void 0;
                     return o.createElement(
                         o.Fragment,
                         null,
@@ -165,7 +165,7 @@
                                 this._renderLabel(),
                                 o.createElement(
                                     u,
-                                    { "aria-describedby": k, "aria-invalid": Z, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [g.select, { fontFamily: l }, t && i.Z.disabled], testID: y || "", value: v },
+                                    { "aria-describedby": w, "aria-invalid": Z, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [g.select, { fontFamily: l }, t && i.Z.disabled], testID: y || "", value: v },
                                     C ? o.createElement(h, { disabled: !0, style: g.option, value: "" }) : null,
                                     b.map((e) => {
                                         const { disabled: t, label: r, value: a } = e;
@@ -413,7 +413,7 @@
             r.d(t, { Z: () => o });
             const o = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        452693: (e, t, r) => {
+        487552: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var o = r(202784),
                 a = r(890601),
@@ -421,7 +421,7 @@
                 s = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const l = i;
@@ -444,4 +444,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-bc6ccf4c.40f24ada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileLocationSpotlight-bc6ccf4c.38c3727a.js.map

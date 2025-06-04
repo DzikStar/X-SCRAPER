@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f", "bundle.UserAvatar-2291c9da"],
+    ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"],
     {
         192464: (e, t, s) => {
             s.d(t, { Z: () => i });
@@ -515,8 +515,8 @@
                         F = [],
                         D = "",
                         P = !1,
-                        v = 0,
-                        L = !1,
+                        L = 0,
+                        v = !1,
                         G = !1;
                     const K = async ({ method: r, requestParams: n }) => {
                             const l = (function ({ method: e, requestParams: t }) {
@@ -553,7 +553,7 @@
                                         clearTimeout(_),
                                         (async function t({ done: n, value: _ }) {
                                             if (n) {
-                                                L = !1;
+                                                v = !1;
                                                 if ((!b.length || b.every((e) => "" === e)) && !P) {
                                                     const t = `add-response failed to reach the network${h}`;
                                                     return N.isDeepsearch && p({ messageStepAccumulator: N, analytics: e, dispatch: s, errorMessage: t, grokModule: g, resumabilityQueue: O, method: r }), s(g.grokResponseError(c.NE)), (0, a.Uk)(e, t), void T.record("network-error");
@@ -646,7 +646,7 @@
                                     );
                                 })
                                 .catch(async (t) => {
-                                    L = !1;
+                                    v = !1;
                                     if (t instanceof window.DOMException && "AbortError" === t.name) "STARTED" === N.state && N.isDeepsearch && (0, a.YI)(e, { durationMs: N.getStreamDuration(), messageTagCounts: N.debugMessageTagCount }), O.abortQueue(), T.record("abort");
                                     else {
                                         if (x()) return void (await H(t.message));
@@ -658,10 +658,10 @@
                         x = () => {
                             const e = E(),
                                 t = Boolean(S.isDeepsearch) || Boolean(S.isReasoning);
-                            return !L && v < (m?.numRetries || 0) && !!D && !!e && t && "POST" === _;
+                            return !v && L < (m?.numRetries || 0) && !!D && !!e && t && "POST" === _;
                         },
                         H = async (t) => {
-                            f.abort(), v++, (L = !0), (0, a.mm)(e, v, t), (f = new AbortController()), await s(g.setAbortController(f)), K({ method: "GET", requestParams: { ...R, conversationId: E(), responseToChatItemId: D, streamInitialChunkWhole: !1 } });
+                            f.abort(), L++, (v = !0), (0, a.mm)(e, L, t), (f = new AbortController()), await s(g.setAbortController(f)), K({ method: "GET", requestParams: { ...R, conversationId: E(), responseToChatItemId: D, streamInitialChunkWhole: !1 } });
                         };
                     return K({ method: _, requestParams: R });
                 };
@@ -809,13 +809,13 @@
                         F = (0, o.bD)(t);
                     let D = F.selectConversationId(U());
                     const P = r.ZP.isAndroid(),
-                        v = r.ZP.isIOS();
+                        L = r.ZP.isIOS();
                     if ((null != F.selectCurrentResponseMessage(U()) && (await T((0, c.I)({ analytics: e, conversationKey: t }))), (D ??= await (0, l.X)({ analytics: e, api: y, dispatch: T, grokModule: F, analysisEntityId: s })), !D)) return void (0, n.Uk)(e, "conversation couln't be found or created");
-                    let L;
+                    let v;
                     const G = N.isTrue("responsive_web_grok_location_enabled");
                     if (G) {
                         const e = (0, a.fw)(U())?.position;
-                        e && (L = { latitude: e.coords.latitude, longitude: e.coords.longitude, accuracy: e.coords.accuracy });
+                        e && (v = { latitude: e.coords.latitude, longitude: e.coords.longitude, accuracy: e.coords.accuracy });
                     }
                     const K = E ?? F.selectMode(U()),
                         x = (0, o.F9)(U()),
@@ -831,7 +831,7 @@
                     if (!(R || (u && 0 !== u.length))) return Promise.resolve();
                     const Q = { message: R ?? "", sender: i.CI.HUMAN, promptSource: w ?? "", ...(s ? { postIds: [s] } : void 0) };
                     u && (Q.fileAttachments = u), O && (Q.isDeepsearch = O), A && (Q.isReasoning = A);
-                    const Z = { responses: H.concat(Q), systemPromptName: K, grokModelOptionId: x, conversationId: D, returnSearchResults: _, returnCitations: m, promptMetadata: g, imageGenerationCount: I, requestFeatures: S, ...(s ? { analysisEntityId: s } : void 0), geoLocation: L, enableSideBySide: !("GROK_ANALYZE" === g.promptSource || h || v || P || O || A), toolOverrides: j, isDeepsearch: O, isReasoning: A, personalityId: C, deepsearchArgs: k ?? (O ? B?.deepsearchArgs : void 0) };
+                    const Z = { responses: H.concat(Q), systemPromptName: K, grokModelOptionId: x, conversationId: D, returnSearchResults: _, returnCitations: m, promptMetadata: g, imageGenerationCount: I, requestFeatures: S, ...(s ? { analysisEntityId: s } : void 0), geoLocation: v, enableSideBySide: !("GROK_ANALYZE" === g.promptSource || h || L || P || O || A), toolOverrides: j, isDeepsearch: O, isReasoning: A, personalityId: C, deepsearchArgs: k ?? (O ? B?.deepsearchArgs : void 0) };
                     T(F.setPromptSource(w || "")), T(F.setUsingExperiment(!1)), T(F.userSendMessage(Q, g)), (0, n.pv)(e, { conversationLength: H.length, isFileAttached: Boolean(Q.fileAttachments?.length), isDeepsearch: Z.isDeepsearch || void 0, isReasoning: Z.isReasoning || void 0 }), p?.();
                     const V = N.isTrue("responsive_web_grok_enable_add_response_keepalive") && (O || A),
                         W = N.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
@@ -865,7 +865,7 @@
                         });
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ae, A0: () => ge, BA: () => se, BS: () => N, CH: () => F, CR: () => Y, Cr: () => w, DX: () => W, Dh: () => S, Dn: () => M, En: () => d, FF: () => H, FV: () => U, Gy: () => C, HF: () => m, IK: () => o, JO: () => Z, Jt: () => re, KH: () => I, L0: () => $, Lc: () => a, OW: () => y, Oj: () => b, P9: () => Q, Q_: () => n, Qg: () => L, Qh: () => J, Sv: () => i, TY: () => v, Tv: () => q, UN: () => O, VK: () => c, WK: () => te, Ws: () => l, Xg: () => z, Xi: () => G, Y8: () => u, Yb: () => h, Yf: () => r, Yx: () => E, ZN: () => V, _i: () => ce, ar: () => B, cA: () => me, cw: () => ne, dK: () => p, dO: () => R, dZ: () => P, dw: () => Ee, f1: () => ue, fH: () => Re, ip: () => x, j$: () => _e, lQ: () => ee, lh: () => g, lm: () => _, mq: () => Se, my: () => A, nK: () => k, o$: () => D, px: () => ie, qd: () => j, ru: () => pe, ub: () => f, vc: () => K, vi: () => T, wG: () => oe, x5: () => X, yB: () => le, z2: () => de });
+            s.d(t, { $t: () => ae, A0: () => ge, BA: () => se, BS: () => N, CH: () => F, CR: () => Y, Cr: () => w, DX: () => W, Dh: () => S, Dn: () => M, En: () => d, FF: () => H, FV: () => U, Gy: () => C, HF: () => m, IK: () => o, JO: () => Z, Jt: () => re, KH: () => I, L0: () => $, Lc: () => a, OW: () => y, Oj: () => b, P9: () => Q, Q_: () => n, Qg: () => v, Qh: () => J, Sv: () => i, TY: () => L, Tv: () => q, UN: () => O, VK: () => c, WK: () => te, Ws: () => l, Xg: () => z, Xi: () => G, Y8: () => u, Yb: () => h, Yf: () => r, Yx: () => E, ZN: () => V, _i: () => ce, ar: () => B, cA: () => me, cw: () => ne, dK: () => p, dO: () => R, dZ: () => P, dw: () => Ee, f1: () => ue, fH: () => Re, ip: () => x, j$: () => _e, lQ: () => ee, lh: () => g, lm: () => _, mq: () => Se, my: () => A, nK: () => k, o$: () => D, px: () => ie, qd: () => j, ru: () => pe, ub: () => f, vc: () => K, vi: () => T, wG: () => oe, x5: () => X, yB: () => le, z2: () => de });
             const r = "grok",
                 o = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 n = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -899,8 +899,8 @@
                 F = "rweb/grok/GROK_RESPONSE_FEEDBACK_LABELS",
                 D = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTIONS",
                 P = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTED_MODE",
-                v = "rweb/grok/GROK_RESPONSE_CHAT_RESPONSE_ANNOTATIONS",
-                L = "rweb/grok/GROK_RESPONSE_UPSELL",
+                L = "rweb/grok/GROK_RESPONSE_CHAT_RESPONSE_ANNOTATIONS",
+                v = "rweb/grok/GROK_RESPONSE_UPSELL",
                 G = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENT",
                 K = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENTS",
                 x = "rweb/grok/GROK_RESPONSE_MESSAGE_STEP_ACCUMULATOR_UPDATE",
@@ -964,4 +964,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f.3d2daf6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f.672eb9ba.js.map

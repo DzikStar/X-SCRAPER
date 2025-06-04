@@ -240,23 +240,22 @@
             const Z = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        n.e("icons.23"),
                         n.e("icons.0"),
-                        n.e("icons.13"),
-                        n.e("icons.22"),
-                        n.e("icons.29"),
-                        n.e("icons.5"),
-                        n.e("icons.7"),
-                        n.e("icons.1"),
-                        n.e("icons.25"),
+                        n.e("icons.2"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
                         n.e("icons.10"),
-                        n.e("icons.20"),
-                        n.e("icons.14"),
-                        n.e("icons.11"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.24"),
-                        n.e("icons.16"),
-                        n.e("icons.17"),
+                        n.e("icons.11"),
+                        n.e("icons.26"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -267,20 +266,21 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.23"),
-                        n.e("icons.26"),
-                        n.e("icons.3"),
-                        n.e("icons.28"),
-                        n.e("icons.9"),
                         n.e("icons.8"),
+                        n.e("icons.4"),
+                        n.e("icons.14"),
+                        n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
+                        n.e("icons.18"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -310,9 +310,9 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                         n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
-                        n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
@@ -351,15 +351,15 @@
                         n.e("loader.ExploreNews"),
                     ]).then(n.bind(n, 568527)),
             });
-            var B = n(810641);
-            const _ = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
+            var _ = n(810641);
+            const B = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
                 R = (e, t) => {
                     const n = t.selectedTabId,
-                        a = _(e, t);
+                        a = B(e, t);
                     return a && a.tabs && a.tabs.tabs.find((e) => e.id === n);
                 },
                 L = (0, C.Z)()
-                    .propsFromState(() => ({ pageConfiguration: _, selectedTab: R }))
+                    .propsFromState(() => ({ pageConfiguration: B, selectedTab: R }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, M.zr)("RICH_SEGMENTED_TIMELINE") }))
                     .withAnalytics();
             class G extends a.Component {
@@ -397,15 +397,15 @@
                     const p = this._getModule(i, n?.tabs?.initialTabId, t, s),
                         m = this._getRefreshIntervalSecForCurrentTab(),
                         b = m ? 1e3 * m : void 0;
-                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(B.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
+                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(_.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
                 }
             }
             G.contextType = P.rC;
             const H = L(G);
             var F = n(929482),
-                z = n(335632),
-                W = n(325686),
-                O = n(392237),
+                W = n(335632),
+                O = n(325686),
+                z = n(392237),
                 U = n(950708),
                 $ = n(187669),
                 j = n(725516),
@@ -427,9 +427,9 @@
                         onHeaderVisible: l,
                     } = e,
                     { data: i, namespace: s } = V(d, t);
-                return a.createElement(W.Z, { style: K.root }, a.createElement(h.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
+                return a.createElement(O.Z, { style: K.root }, a.createElement(h.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
             }
-            const K = O.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
+            const K = z.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
             var Y = n(24949);
             const J = (e, t) => t.module.selectPageConfiguration(e),
                 X = (e, t) => t.module.selectInitialFetchStatus(e),
@@ -453,7 +453,7 @@
                 pe = (e) => (0, ne.ju)(`https://x.com/i/topics/${e}`),
                 me = (e) => `twitter://topics_timeline?id=${e}`,
                 he = i().ed88e742;
-            const be = O.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
+            const be = z.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
                 ge = ue(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
                         {
@@ -468,14 +468,14 @@
                         u = c.isTrue("topic_landing_page_share_enabled"),
                         { data: p, namespace: m } = V(t, o),
                         b = (0, s.Z)({}, r, m);
-                    return d ? a.createElement(h.nO, { data: p, namespace: b }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(W.Z, { style: be.rightControl }, a.createElement(W.Z, { style: be.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: he, scribeNamespace: b, url: pe(t) }) : null))) : null;
+                    return d ? a.createElement(h.nO, { data: p, namespace: b }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(O.Z, { style: be.rightControl }, a.createElement(O.Z, { style: be.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: he, scribeNamespace: b, url: pe(t) }) : null))) : null;
                 }),
                 fe = i().e9f1fbcc,
                 De = a.createElement(c.Z, null),
                 ye = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: y, initialPageNamespace: w, logoButton: M, module: C, onBackClick: E, pageConfiguration: S, prerollDisplayLocation: I, renderEmptyState: A, renderUnavailable: k, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: P, title: Z, withAppLinks: B, withBottomLoginSignupBar: _, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: z } = e,
-                        W = (0, r.tj)(),
-                        O = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: W }) }), [l, W]),
+                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: y, initialPageNamespace: w, logoButton: M, module: C, onBackClick: E, pageConfiguration: S, prerollDisplayLocation: I, renderEmptyState: A, renderUnavailable: k, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: P, title: Z, withAppLinks: _, withBottomLoginSignupBar: B, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: W } = e,
+                        O = (0, r.tj)(),
+                        z = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: O }) }), [l, O]),
                         [U, $] = a.useState(!0),
                         { header: j, navBar: q, subtitle: V, title: K } = S || {},
                         Y = y === b.Z.LOADED ? K || Z : "",
@@ -489,14 +489,14 @@
                             return (0, s.Z)({}, n, r, u);
                         })(x, S, w),
                         X = j ? a.createElement(Q, { header: j, onHeaderVisible: $ }) : null,
-                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: B, withOpenGraphMeta: L }) : null,
+                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: _, withOpenGraphMeta: L }) : null,
                         te = R ? u.Z : a.Fragment,
-                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: O, initialModule: C, prerollDisplayLocation: I, renderEmptyState: A, renderUnavailable: k, selectedTabId: x, timelinePrefix: P, title: Z, withoutHeadroom: !0 }))),
+                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: z, initialModule: C, prerollDisplayLocation: I, renderEmptyState: A, renderUnavailable: k, selectedTabId: x, timelinePrefix: P, title: Z, withoutHeadroom: !0 }))),
                         ae = i ? a.createElement(p.Z, { component: d.Z, fab: i }, ne) : ne,
                         oe = c && f ? a.createElement(T, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
-                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: E, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? Z : Y, withBottomLoginSignupBar: _, withSearchBox: G, withTweetButton: z })));
+                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: E, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? Z : Y, withBottomLoginSignupBar: B, withSearchBox: G, withTweetButton: W })));
                 };
-            ye.defaultProps = { entryConfiguration: (0, z.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
+            ye.defaultProps = { entryConfiguration: (0, W.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const we = te(ye);
         },
         337455: (e, t, n) => {
@@ -670,19 +670,6 @@
                     return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && S.gap, childrenStyle: !h && S.flexGrow, key: p, style: [l ? null : S.segmentedControl, h && S.leftAligned, c], visibleItemIndex: u }, b);
                 };
         },
-        41065: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => i });
-            var a = n(202784),
-                o = n(890601),
-                r = n(783427),
-                d = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [d.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const i = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.1f9f1bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.e4f6f19a.js.map

@@ -1,14 +1,14 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.ListHandler", "icons/IconPlus-js"],
+    ["loader.ListHandler", "icons/IconDraggable-js"],
     {
-        631449: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => B });
-            var n = a(459643),
-                r = a(942893),
-                i = a(351322),
-                s = a(807896),
-                l = {
+        631449: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => I });
+            var n = o(459643),
+                i = o(942893),
+                l = o(351322),
+                a = o(807896),
+                s = {
                     argumentDefinitions: [{ kind: "RootArgument", name: "isListMemberTargetUserId" }],
                     kind: "Fragment",
                     metadata: null,
@@ -32,102 +32,102 @@
                     abstractKey: null,
                     hash: "7e7a19762022f1028b747f9ce5709ceb",
                 };
-            const o = l;
-            var c = a(202784),
-                d = (a(585488), a(277660)),
-                m = a.n(d),
-                u = a(952793),
-                h = a(576469),
-                g = a(281743),
-                v = a(53821),
-                p = a(668214),
-                b = a(709318),
-                f = a(38562),
-                y = a(919022),
-                Z = a(510588);
-            const w = (e, t) => (t.listId ? h.Z.select(e, t.listId) : void 0),
+            const r = s;
+            var d = o(202784),
+                c = (o(585488), o(277660)),
+                u = o.n(c),
+                m = o(952793),
+                h = o(576469),
+                p = o(281743),
+                b = o(53821),
+                f = o(668214),
+                w = o(709318),
+                g = o(38562),
+                y = o(919022),
+                C = o(510588);
+            const v = (e, t) => (t.listId ? h.Z.select(e, t.listId) : void 0),
                 S = (e, t) => {
-                    const a = w(e, t),
-                        n = a?.user;
+                    const o = v(e, t),
+                        n = o?.user;
                     return n ? y.ZP.select(e, n) : void 0;
                 },
-                k = (e, t) => Z.tt(e, t.listId);
-            const M = (0, p.Z)().propsFromState(() => ({ list: w, author: S, dataSaverMode: f.IX, pinnedTimelinesCount: b.Hm, media: k }))(function (e) {
-                    const { list: t, onClick: a } = e;
-                    return t ? c.createElement(v.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls, followersContext: t.followers_context, isFollowing: Boolean(t.following), isListPinned: t.pinning, isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode, media: e.media, memberCount: t.member_count, membersContext: t.members_context, mode: e.mode, name: t.name, onClick: a, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: e.author, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe }) : null;
+                F = (e, t) => C.tt(e, t.listId);
+            const _ = (0, f.Z)().propsFromState(() => ({ list: v, author: S, dataSaverMode: g.IX, pinnedTimelinesCount: w.Hm, media: F }))(function (e) {
+                    const { list: t, onClick: o } = e;
+                    return t ? d.createElement(b.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: t.facepile_urls, followersContext: t.followers_context, isFollowing: Boolean(t.following), isListPinned: t.pinning, isSelected: e.isMember, listId: t.id_str, listVisibility: t.mode, media: e.media, memberCount: t.member_count, membersContext: t.members_context, mode: e.mode, name: t.name, onClick: o, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: e.author, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe }) : null;
                 }),
-                _ = c.memo(M);
-            var E = a(269950),
-                C = a(379873);
-            const I = ({ entry: e, feedbackItems: t, module: a, renderEntry: n, shouldDisplayPin: r, ...i }) => {
-                    const l = r ? E.H.Pinning : void 0;
-                    return e.itemContentRef ? c.createElement(L, (0, s.Z)({}, i, { itemContentRef: e.itemContentRef, mode: l })) : c.createElement(z, (0, s.Z)({}, i, { itemContent: e.content, mode: l }));
+                T = d.memo(_);
+            var B = o(269950),
+                k = o(379873);
+            const Z = ({ entry: e, feedbackItems: t, module: o, renderEntry: n, shouldDisplayPin: i, ...l }) => {
+                    const s = i ? B.H.Pinning : void 0;
+                    return e.itemContentRef ? d.createElement(M, (0, a.Z)({}, l, { itemContentRef: e.itemContentRef, mode: s })) : d.createElement(E, (0, a.Z)({}, l, { itemContent: e.content, mode: s }));
                 },
-                P = c.memo(I),
-                x = o,
-                L = ({ itemContentRef: e, shouldDisplayPin: t, ...a }) => {
-                    const n = m()(x, e);
-                    return c.createElement(C.ZP, (0, s.Z)({}, a, { isMember: n.list.isMember ?? void 0, listRef: n.list }));
+                x = d.memo(Z),
+                L = r,
+                M = ({ itemContentRef: e, shouldDisplayPin: t, ...o }) => {
+                    const n = u()(L, e);
+                    return d.createElement(k.ZP, (0, a.Z)({}, o, { isMember: n.list.isMember ?? void 0, listRef: n.list }));
                 },
-                z = ({ itemContent: e, mode: t, shouldDisplayPin: a, ...n }) => {
-                    const r = (0, u.hC)("responsive_web_redux_use_fragment_enabled"),
-                        i = c.useMemo(() => (0, g.D9)(C.Dx, h.Z, e.id), [e.id]);
-                    return r ? c.createElement(C.ZP, (0, s.Z)({ isMember: e.isMember, listRef: i, mode: t }, n)) : c.createElement(_, (0, s.Z)({ isMember: e.isMember, listId: e.id, mode: t }, n));
+                E = ({ itemContent: e, mode: t, shouldDisplayPin: o, ...n }) => {
+                    const i = (0, m.hC)("responsive_web_redux_use_fragment_enabled"),
+                        l = d.useMemo(() => (0, p.D9)(k.Dx, h.Z, e.id), [e.id]);
+                    return i ? d.createElement(k.ZP, (0, a.Z)({ isMember: e.isMember, listRef: l, mode: t }, n)) : d.createElement(T, (0, a.Z)({ isMember: e.isMember, listId: e.id, mode: t }, n));
                 },
-                B = (e) =>
-                    i
+                I = (e) =>
+                    l
                         .iH({
-                            component: P,
+                            component: x,
                             isFocusable: (0, n.Z)(!0),
                             getScribeDataItem(e) {
                                 const { id: t } = e.content;
-                                return r.Z.forList(t);
+                                return i.Z.forList(t);
                             },
                         })
                         .getHandler(() => ({ ...e }));
         },
-        690344: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => U });
-            var n = a(459643),
-                r = a(942893),
-                i = a(351322),
-                s = a(202784),
-                l = a(952793),
-                o = a(576469),
-                c = a(281743),
-                d = a(325686),
-                m = a(952428),
-                u = a(731708),
-                h = a(392237),
-                g = a(111677),
-                v = a.n(g),
-                p = a(121791),
-                b = a(346252),
-                f = a(878162),
-                y = a(725516);
-            const Z = v().j681933e,
-                w = (e) => {
-                    const { dataSaverMode: t, isPrivate: a, listId: n, media: r, name: i } = e,
-                        l = (0, y.z)(),
-                        o = `/i/lists/${n}`,
-                        c = s.useCallback(() => {
-                            l.scribeAction("click");
-                        }, [l]);
-                    return s.createElement(f.Z, { basePath: o, listId: n }, s.createElement(m.Z, { link: o, onPress: c, style: S.root }, s.createElement(b.Z, { cropCandidates: r.crop, dataSaverMode: t, icon: "lists", image: r.image }), s.createElement(d.Z, { style: S.name }, s.createElement(u.ZP, { align: "center", numberOfLines: 1, size: "subtext2" }, i ? i.trim() : null), a ? s.createElement(p.default, { "aria-label": Z, style: S.iconLock }) : null)));
+        690344: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => K });
+            var n = o(459643),
+                i = o(942893),
+                l = o(351322),
+                a = o(202784),
+                s = o(952793),
+                r = o(576469),
+                d = o(281743),
+                c = o(325686),
+                u = o(952428),
+                m = o(731708),
+                h = o(392237),
+                p = o(111677),
+                b = o.n(p),
+                f = o(121791),
+                w = o(346252),
+                g = o(878162),
+                y = o(725516);
+            const C = b().j681933e,
+                v = (e) => {
+                    const { dataSaverMode: t, isPrivate: o, listId: n, media: i, name: l } = e,
+                        s = (0, y.z)(),
+                        r = `/i/lists/${n}`,
+                        d = a.useCallback(() => {
+                            s.scribeAction("click");
+                        }, [s]);
+                    return a.createElement(g.Z, { basePath: r, listId: n }, a.createElement(u.Z, { link: r, onPress: d, style: S.root }, a.createElement(w.Z, { cropCandidates: i.crop, dataSaverMode: t, icon: "lists", image: i.image }), a.createElement(c.Z, { style: S.name }, a.createElement(m.ZP, { align: "center", numberOfLines: 1, size: "subtext2" }, l ? l.trim() : null), o ? a.createElement(f.default, { "aria-label": C, style: S.iconLock }) : null)));
                 },
                 S = h.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.cellBackground, padding: e.spaces.space12 }, name: { alignSelf: "stretch", paddingTop: e.spaces.space4, flexDirection: "row", justifyContent: "center", width: e.spaces.space80 }, iconLock: { color: e.colors.text, marginHorizontal: e.spaces.space4 } })),
-                k = s.memo(w);
-            var M = a(668214),
-                _ = a(38562),
-                E = a(510588);
-            const C = (e, t) => t.entry.content.id,
-                I = (e, t) => o.Z.select(e, C(0, t)),
-                P = (e, t) => E.tt(e, C(0, t)),
-                x = (0, M.Z)()
-                    .propsFromState(() => ({ listId: C, list: I, dataSaverMode: _.IX, media: P }))
-                    .adjustStateProps(({ dataSaverMode: e, list: t, listId: a, media: n }) => ({ name: t?.name, isPrivate: "private" === t?.mode, listId: a, dataSaverMode: e, media: n }))
+                F = a.memo(v);
+            var _ = o(668214),
+                T = o(38562),
+                B = o(510588);
+            const k = (e, t) => t.entry.content.id,
+                Z = (e, t) => r.Z.select(e, k(0, t)),
+                x = (e, t) => B.tt(e, k(0, t)),
+                L = (0, _.Z)()
+                    .propsFromState(() => ({ listId: k, list: Z, dataSaverMode: T.IX, media: x }))
+                    .adjustStateProps(({ dataSaverMode: e, list: t, listId: o, media: n }) => ({ name: t?.name, isPrivate: "private" === t?.mode, listId: o, dataSaverMode: e, media: n }))
                     .withAnalytics();
-            var L = {
+            var M = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -142,258 +142,480 @@
                 abstractKey: null,
                 hash: "542fe456d2a5eac6598eb3b9371343be",
             };
-            const z = L;
-            var B = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "relayListTile", selections: [{ alias: null, args: null, concreteType: "List", kind: "LinkedField", name: "list", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "relayListTile_list" }], storageKey: null }], type: "TimelineTwitterList", abstractKey: null, hash: "b432c27a6feadb4a3b7e46cb313a950d" };
-            const D = B;
-            a(585488);
-            var T = a(277660),
-                F = a.n(T),
-                R = a(161082);
-            const H = D,
-                A = ({ dataSaverMode: e, listRef: t }) => {
-                    const a = F()(H, t).list;
-                    return s.createElement(j, { dataSaverMode: e, list: a });
+            const E = M;
+            var I = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "relayListTile", selections: [{ alias: null, args: null, concreteType: "List", kind: "LinkedField", name: "list", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "relayListTile_list" }], storageKey: null }], type: "TimelineTwitterList", abstractKey: null, hash: "b432c27a6feadb4a3b7e46cb313a950d" };
+            const D = I;
+            o(585488);
+            var P = o(277660),
+                H = o.n(P),
+                R = o(161082);
+            const N = D,
+                z = ({ dataSaverMode: e, listRef: t }) => {
+                    const o = H()(N, t).list;
+                    return a.createElement(W, { dataSaverMode: e, list: o });
                 },
-                K = s.memo(A),
-                N = z,
+                U = a.memo(z),
+                O = E,
+                W = (e) => {
+                    const t = H()(O, e.list),
+                        o = (0, R.u)(t);
+                    return a.createElement(F, { dataSaverMode: e.dataSaverMode, isPrivate: "Private" === t.mode, listId: t.id_str, media: o, name: t.name || "" });
+                },
                 j = (e) => {
-                    const t = F()(N, e.list),
-                        a = (0, R.u)(t);
-                    return s.createElement(k, { dataSaverMode: e.dataSaverMode, isPrivate: "Private" === t.mode, listId: t.id_str, media: a, name: t.name || "" });
-                },
-                V = (e) => {
-                    const { dataSaverMode: t, entry: a, listId: n } = e,
-                        { itemContentRef: r } = a,
-                        i = (0, l.hC)("responsive_web_redux_use_fragment_enabled"),
-                        d = s.useMemo(() => (0, c.D9)(N, o.Z, n), [n]);
-                    if (r) return s.createElement(K, { dataSaverMode: t, listRef: r });
-                    if (i) return s.createElement(j, { dataSaverMode: t, list: d });
+                    const { dataSaverMode: t, entry: o, listId: n } = e,
+                        { itemContentRef: i } = o,
+                        l = (0, s.hC)("responsive_web_redux_use_fragment_enabled"),
+                        c = a.useMemo(() => (0, d.D9)(O, r.Z, n), [n]);
+                    if (i) return a.createElement(U, { dataSaverMode: t, listRef: i });
+                    if (l) return a.createElement(W, { dataSaverMode: t, list: c });
                     {
-                        const { isPrivate: a, media: r, name: i } = e;
-                        return s.createElement(k, { dataSaverMode: t, isPrivate: a, listId: n, media: r, name: i });
+                        const { isPrivate: o, media: i, name: l } = e;
+                        return a.createElement(F, { dataSaverMode: t, isPrivate: o, listId: n, media: i, name: l });
                     }
                 },
-                $ = x(s.memo(V)),
-                U = i
+                A = L(a.memo(j)),
+                K = l
                     .iH({
-                        component: $,
+                        component: A,
                         isFocusable: (0, n.Z)(!0),
                         getScribeDataItem(e) {
                             const { id: t } = e.content;
-                            return r.Z.forList(t);
+                            return i.Z.forList(t);
                         },
                         shouldDisplayBorder: (0, n.Z)(!1),
                     })
                     .getHandler();
         },
-        286e3: (e, t, a) => {
-            a.d(t, { Rc: () => u, nx: () => c });
-            var n = a(499627),
-                r = a(576469),
-                i = a(390387);
-            const s = "rweb.channelsTimelineBehavior",
-                l = "channelsTimelineBehavior",
-                o = Object.freeze({});
-            const c = (e) => e[l],
-                d = "rweb/channelsTimelineBehavior/UPDATE_LIST_RANKINGS",
-                m = (e) => ({ payload: e, type: d }),
-                u =
+        286e3: (e, t, o) => {
+            o.d(t, { Rc: () => m, nx: () => d });
+            var n = o(499627),
+                i = o(576469),
+                l = o(390387);
+            const a = "rweb.channelsTimelineBehavior",
+                s = "channelsTimelineBehavior",
+                r = Object.freeze({});
+            const d = (e) => e[s],
+                c = "rweb/channelsTimelineBehavior/UPDATE_LIST_RANKINGS",
+                u = (e) => ({ payload: e, type: c }),
+                m =
                     ({ listId: e, useRanked: t }) =>
-                    (a, n, { userPersistence: i }) => {
-                        const l = n(),
-                            o = { ...c(l), [e]: { useRanked: t } };
-                        a(m(o));
-                        const d = r.Z.select(l, e);
-                        return d && d.following ? i.get(s).then((a) => i.set(s, { ...a, [e]: { useRanked: t } })) : Promise.resolve();
+                    (o, n, { userPersistence: l }) => {
+                        const s = n(),
+                            r = { ...d(s), [e]: { useRanked: t } };
+                        o(u(r));
+                        const c = i.Z.select(s, e);
+                        return c && c.following ? l.get(a).then((o) => l.set(a, { ...o, [e]: { useRanked: t } })) : Promise.resolve();
                     };
             n.Z.register(
                 {
-                    [l]: function (e = o, t) {
-                        return t && t.type === d ? { ...t.payload } : e;
+                    [s]: function (e = r, t) {
+                        return t && t.type === c ? { ...t.payload } : e;
                     },
                 },
                 () =>
-                    (e, t, { userPersistence: a }) =>
-                        (0, i.Qb)(t())
-                            ? a.get(s).then((t) => {
-                                  t && e(m(t));
+                    (e, t, { userPersistence: o }) =>
+                        (0, l.Qb)(t())
+                            ? o.get(a).then((t) => {
+                                  t && e(u(t));
                               })
                             : Promise.resolve(),
             );
         },
-        510588: (e, t, a) => {
-            a.d(t, { $5: () => m, By: () => b, DV: () => w, Fz: () => v, Ge: () => y, Ns: () => _, Wy: () => g, _g: () => k, ax: () => f, cx: () => p, l1: () => S, tt: () => M, xh: () => h });
-            var n = a(614983),
-                r = a.n(n),
-                i = a(842799),
-                s = a(286e3),
-                l = a(576469),
-                o = a(919022),
-                c = a(312771);
-            const d = { url: "https://pbs.twimg.com/media/EXZ2rMvVAAAAfrN.png", width: 1125, height: 375 },
-                m = (e, t) => {
-                    const a = g(e, t),
-                        n = f(e, t),
-                        r = y(e, t);
-                    return a ? `/i/lists/${a}` : n && r ? `/${n}/lists/${r}` : "";
+        510588: (e, t, o) => {
+            o.d(t, { $5: () => u, By: () => w, DV: () => v, Fz: () => b, Ge: () => y, Ns: () => T, Wy: () => p, _g: () => F, ax: () => g, cx: () => f, l1: () => S, tt: () => _, xh: () => h });
+            var n = o(614983),
+                i = o.n(n),
+                l = o(842799),
+                a = o(286e3),
+                s = o(576469),
+                r = o(919022),
+                d = o(312771);
+            const c = { url: "https://pbs.twimg.com/media/EXZ2rMvVAAAAfrN.png", width: 1125, height: 375 },
+                u = (e, t) => {
+                    const o = p(e, t),
+                        n = g(e, t),
+                        i = y(e, t);
+                    return o ? `/i/lists/${o}` : n && i ? `/${n}/lists/${i}` : "";
                 },
-                u = (e, t) => t.match.params.listId || void 0,
+                m = (e, t) => t.match.params.listId || void 0,
                 h = (e, t) => {
-                    const a = t.match.params.listId;
-                    return r()(a, "listId should always be specified"), a;
+                    const o = t.match.params.listId;
+                    return i()(o, "listId should always be specified"), o;
                 },
-                g = (e, t) =>
-                    u(0, t) ||
+                p = (e, t) =>
+                    m(0, t) ||
                     ((e, t) => {
-                        const a = v(e, t);
-                        return a && a.id_str;
+                        const o = b(e, t);
+                        return o && o.id_str;
                     })(e, t),
-                v = (e, t) => {
-                    const a = u(0, t);
-                    return a ? l.Z.select(e, a) : l.Z.selectByKey(e, Z(e, t));
-                },
-                p = (e, t) => {
-                    const a = v(e, t);
-                    return a && a.following;
-                },
                 b = (e, t) => {
-                    const a = v(e, t);
-                    return a && a.name;
+                    const o = m(0, t);
+                    return o ? s.Z.select(e, o) : s.Z.selectByKey(e, C(e, t));
                 },
                 f = (e, t) => {
-                    const a = u(0, t);
-                    return t.match.params.screenName || void 0 || (a && l.Z.selectListAuthorScreenName(e, a));
-                },
-                y = (e, t) => {
-                    const a = v(e, t);
-                    return t.match.params.slug || (a && a.slug);
-                },
-                Z = (e, t) => {
-                    const a = t.match.params.slug,
-                        n = t.match.params.screenName;
-                    return a && n ? (0, i.Z)(n, a) : "";
+                    const o = b(e, t);
+                    return o && o.following;
                 },
                 w = (e, t) => {
-                    const a =
-                        g(e, t) ||
+                    const o = b(e, t);
+                    return o && o.name;
+                },
+                g = (e, t) => {
+                    const o = m(0, t);
+                    return t.match.params.screenName || void 0 || (o && s.Z.selectListAuthorScreenName(e, o));
+                },
+                y = (e, t) => {
+                    const o = b(e, t);
+                    return t.match.params.slug || (o && o.slug);
+                },
+                C = (e, t) => {
+                    const o = t.match.params.slug,
+                        n = t.match.params.screenName;
+                    return o && n ? (0, l.Z)(n, o) : "";
+                },
+                v = (e, t) => {
+                    const o =
+                        p(e, t) ||
                         ((e, t) => {
-                            const a = y(e, t),
-                                n = f(e, t);
-                            return a && n ? (0, i.Z)(n, a) : "";
+                            const o = y(e, t),
+                                n = g(e, t);
+                            return o && n ? (0, l.Z)(n, o) : "";
                         })(e, t);
-                    return l.Z.selectFetchStatus(e, a) || c.ZP.NONE;
+                    return s.Z.selectFetchStatus(e, o) || d.ZP.NONE;
                 },
                 S = (e, t) => {
-                    const a = f(e, t);
-                    return a ? o.ZP.selectByScreenName(e, a) : void 0;
+                    const o = g(e, t);
+                    return o ? r.ZP.selectByScreenName(e, o) : void 0;
                 },
-                k = (e, t) => {
-                    const a = g(e, t),
-                        n = (0, s.nx)(e);
-                    return (a && n[a] && n[a].useRanked) || !1;
-                },
-                M = (e, t) => {
-                    const a = l.Z.select(e, t);
-                    if (a) {
-                        const e = a.customBanner;
-                        return e || a.defaultBanner;
-                    }
-                    return { crop: [], image: d };
+                F = (e, t) => {
+                    const o = p(e, t),
+                        n = (0, a.nx)(e);
+                    return (o && n[o] && n[o].useRanked) || !1;
                 },
                 _ = (e, t) => {
-                    const a = v(e, t);
-                    return a?.mode;
+                    const o = s.Z.select(e, t);
+                    if (o) {
+                        const e = o.customBanner;
+                        return e || o.defaultBanner;
+                    }
+                    return { crop: [], image: c };
+                },
+                T = (e, t) => {
+                    const o = b(e, t);
+                    return o?.mode;
                 };
         },
-        642153: (e, t, a) => {
-            a.d(t, { Z: () => l });
-            var n = a(202784),
-                r = a(325686),
-                i = a(392237),
-                s = a(823161);
-            const l = (e) => {
-                    const { borderColor: t = "cellBackground", borderWidth: a = "small", style: l, userAvatarSize: c = "medium", userAvatarUrls: d, withIncreasedSpacing: m } = e,
-                        u = d.length,
+        642153: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            var n = o(202784),
+                i = o(325686),
+                l = o(392237),
+                a = o(823161);
+            const s = (e) => {
+                    const { borderColor: t = "cellBackground", borderWidth: o = "small", style: s, userAvatarSize: d = "medium", userAvatarUrls: c, withIncreasedSpacing: u } = e,
+                        m = c.length,
                         h = "transparent" === t;
                     return n.createElement(
-                        r.Z,
-                        { style: [o.root, l, { height: s.default.getSizeStyle(c)?.height }] },
-                        d.map((e, r) => n.createElement(s.default, { backgroundColor: t, borderColor: t, borderWidth: h ? "none" : a, key: r, size: c, style: [0 !== r && { marginStart: -1 * i.default.theme.spacesPx[m ? "space4" : "space12"] }, { zIndex: u - r }], uri: e })),
+                        i.Z,
+                        { style: [r.root, s, { height: a.default.getSizeStyle(d)?.height }] },
+                        c.map((e, i) => n.createElement(a.default, { backgroundColor: t, borderColor: t, borderWidth: h ? "none" : o, key: i, size: d, style: [0 !== i && { marginStart: -1 * l.default.theme.spacesPx[u ? "space4" : "space12"] }, { zIndex: m - i }], uri: e })),
                     );
                 },
-                o = i.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
+                r = l.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
         },
-        470397: (e, t, a) => {
-            a.d(t, { Z: () => l });
-            a(136728);
-            var n = a(202784),
-                r = a(325686),
-                i = a(124964),
-                s = a(392237);
-            const l = ({ children: e, color: t = "gray700", size: a, style: s }) => {
-                    const l = [];
+        723587: (e, t, o) => {
+            o.d(t, { Z: () => me });
+            var n = o(202784),
+                i = o(614983),
+                l = o.n(i),
+                a = o(111677),
+                s = o.n(a),
+                r = o(516951),
+                d = o(616894),
+                c = o(235902),
+                u = o(305098);
+            const m = s().i8cfb6e6,
+                h = s().ea100d6a,
+                p = s().fe40537f,
+                b = s().ab7c3460,
+                f = s().i58d8718,
+                w = n.createElement(d.default, null),
+                g = ({ disabled: e, displayMode: t, onUnblock: o, showRelationshipChangeConfirmation: i, size: l, style: a, testID: s, userScreenName: r }) => n.createElement(u.Z, { buttonDefaultLabel: m, buttonHoverLabel: h, buttonType: "destructiveFilled", confirmationSheetConfirmLabel: h, confirmationSheetHeadline: p({ screenName: r }), confirmationSheetText: c.ZP.useProps().isSoftBlockEnabled() ? f : b, disabled: e, displayMode: t, icon: w, onClick: o, showRelationshipChangeConfirmation: i, size: l, style: a, testID: s });
+            var y = o(466999),
+                C = o(76388),
+                v = o(911373),
+                S = o(733357),
+                F = o(352924),
+                _ = o(392237);
+            const T = s().ee05e96b,
+                B = s().f238ba1d,
+                k = s().aeb6f0a0,
+                Z = s().a77a27c0,
+                x = s().b4397192,
+                L = (e) => ({ customButtonColor: "white", customButtonBorderColor: e ? "transparent" : "plum500", customButtonBackgroundColor: "plum500", customButtonHoverColor: "white", customButtonHoverBorderColor: "plum500" }),
+                M = (e) => ({ customButtonColor: "plum500", customButtonBorderColor: e ? "transparent" : "plum500", customButtonBackgroundColor: "transparent", customButtonHoverColor: "white", customButtonHoverBorderColor: "gray700", customButtonHoverBackgroundColor: "gray700" }),
+                E = _.default.create((e) => ({ hidden: { display: "none" } })),
+                I = ({ "aria-describedby": e, buttonType: t, disabled: o, displayMode: i, id: l, isSuperFollowEligible: a, isSuperFollowing: s, isTransparent: r, name: d, onSuperFollow: c, onUnSuperFollow: m, size: h, style: p, testID: b }) => {
+                    const f = n.useCallback(() => {
+                            s ? m() : a && c();
+                        }, [a, s, c, m]),
+                        w = void 0 !== d ? `@${String(d)}` : "",
+                        g = s ? Z : k,
+                        C = w.length > 0 && void 0 !== g ? B({ followType: g, screenName: w }) : "",
+                        v = s ? x : k,
+                        _ = s ? M(r) : t ? void 0 : L(r),
+                        I = n.useMemo(() => (void 0 !== e ? e : (0, F.F)()), [e]),
+                        D = n.useCallback(() => {
+                            const e = s ? Z : a ? T({ followType: k, screenName: d }) : null;
+                            return e && !(0, S.Z)(e) ? n.createElement(y.Z, { id: I, style: E.hidden }, e) : null;
+                        }, [s, a, I, d]);
+                    return n.createElement(n.Fragment, null, n.createElement(u.Z, { "aria-describedby": I, "aria-label": C, buttonDefaultLabel: g, buttonHoverLabel: v, buttonType: t, customButtonConfig: _, disabled: o, displayMode: i, id: l, onClick: f, size: h, style: p, testID: b }), void 0 === e ? D() : null);
+                },
+                D = Object.freeze({ user: "user", topic: "topic", list: "list", community: "community", spaces: "spaces" }),
+                P = s().cda66545,
+                H = s().ee05e96b,
+                R = s().a8d77a25,
+                N = s().d0f4f3d9,
+                z = s().f238ba1d,
+                U = s().j6161cab,
+                O = s().i4bb9ef7,
+                W = s().ge753264,
+                j = s().b837c0e8,
+                A = n.createElement(C.default, null),
+                K = n.createElement(v.default, null),
+                $ = s().ddac1f1d,
+                J = s().j8e33c40;
+            class V extends n.Component {
+                constructor(e, t) {
+                    super(e, t),
+                        (this._getDescribedById = () => {
+                            const { "aria-describedby": e } = this.props;
+                            return void 0 !== e ? e : (0, F.F)();
+                        }),
+                        (this._renderDescribedBy = (e, t) => {
+                            const o = this._getDescribedByText();
+                            return (0, S.Z)(o) ? null : n.createElement(y.Z, { id: e, style: { display: "none" } }, o);
+                        }),
+                        (this._getDescribedByText = () => {
+                            const { buttonText: e, isFollowing: t, isSuperFollowEligible: o, isSuperFollowing: n, name: i, type: l } = this.props;
+                            let a = "";
+                            const s = void 0 === i ? "" : i;
+                            switch (l) {
+                                case D.user:
+                                case D.topic:
+                                case D.list:
+                                    n && e.unSuperFollow ? (a = e.unSuperFollow) : t ? (a = o ? H({ followType: e.superFollow, screenName: s }) : P({ followType: e.unfollow, screenName: s })) : t || (a = P({ followType: e.follow, screenName: s }));
+                                    break;
+                                case D.community:
+                                    a = t ? R({ screenName: s }) : P({ followType: e.follow, screenName: s });
+                                    break;
+                                case D.spaces:
+                                    t ? (a = P({ followType: e.unfollow, screenName: s })) : t || (a = P({ followType: e.follow, screenName: s }));
+                                    break;
+                                default:
+                                    a = "";
+                            }
+                            return a;
+                        }),
+                        (this._getText = () => {
+                            const { buttonText: e, name: t, type: o } = this.props,
+                                n = void 0 !== t ? t : "",
+                                i = O({ title: t }),
+                                l = { [D.user]: { ariaFollowName: void 0 !== t ? `@${String(t)}` : "", confirmationHeadline: U({ screenName: t }), confirmationSheetText: W }, [D.topic]: { ariaFollowName: n, confirmationHeadline: i, confirmationSheetText: j }, [D.list]: { ariaFollowName: n, confirmationHeadline: i, confirmationSheetText: void 0 }, [D.community]: { ariaFollowName: n, confirmationHeadline: $({ communityName: t }), confirmationSheetText: J }, [D.spaces]: { ariaFollowName: void 0 !== t ? `@${String(t)}` : "", confirmationHeadline: U({ screenName: t }), confirmationSheetText: W } };
+                            return { ariaFollowName: l[o].ariaFollowName, followLabel: e.follow, followBackLabel: e.followBack, followingLabel: e.following, unfollowLabel: e.unfollow, superFollowLabel: e.superFollow, superFollowingLabel: e.superFollowing, unSuperFollowLabel: e.unSuperFollow, confirmationHeadline: e.confirmationHeadline || l[o].confirmationHeadline, confirmationSheetText: e.confirmationSheetText || l[o].confirmationSheetText };
+                        }),
+                        (this._handlePress = () => {
+                            const { isFollowing: e, isSuperFollowEligible: t, isSuperFollowing: o, onFollow: n, onSuperFollow: i, onUnSuperFollow: l, onUnfollow: a } = this.props;
+                            o ? l() : e ? (t ? i() : a()) : (n(), this.setState({ hasJustFollowed: !0 }));
+                        }),
+                        (this._handleHoverOut = () => {
+                            this.state.hasJustFollowed && this.setState({ hasJustFollowed: !1 });
+                        }),
+                        (this.state = { hasJustFollowed: !1 });
+                }
+                render() {
+                    const { "aria-describedby": e, buttonIcons: t, disabled: o, displayMode: i, id: l, isFollowed: a, isFollowing: s, isSuperFollowEligible: r, isSuperFollowing: d, isTransparent: c, showRelationshipChangeConfirmation: m, size: h, style: p, testID: b, type: f, withConfirmationSheetText: w } = this.props,
+                        { ariaFollowName: g, confirmationHeadline: y, confirmationSheetText: C, followBackLabel: v, followLabel: S, followingLabel: F, superFollowLabel: _, superFollowingLabel: T, unSuperFollowLabel: B, unfollowLabel: k } = this._getText(),
+                        { hasJustFollowed: Z } = this.state,
+                        x = (t && t.followIcon) || K,
+                        E = (t && t.followingIcon) || A,
+                        I = "only-text" !== i ? (s ? E : x) : void 0;
+                    let P = s ? F : S;
+                    a && !s && v && (P = v);
+                    let H = N;
+                    (d || (s && r)) && (d && T ? ((H = z), (P = T)) : r && _ && ((H = z), (P = _)));
+                    const R = g.length > 0 && void 0 !== P ? H({ followType: P, screenName: g }) : "",
+                        U = "primaryFilled";
+                    let O, W, j, $;
+                    const J = c ? "brandText" : U,
+                        V = c ? "destructiveText" : "destructiveOutlined",
+                        G = !d && (!s || !r) && s,
+                        X = s ? "onMediaWhiteFilled" : "onMediaOutlined",
+                        q = s ? "onMediaOutlined" : "onMediaWhiteFilled";
+                    f === D.community ? (O = s ? k : S) : f === D.spaces ? ((O = s ? k : S), (W = X), (j = q)) : d && B ? (($ = M(c)), (O = B)) : s ? ((O = Z ? F : k), (W = Z ? J : V), (j = c ? "brandText" : "primaryOutlined"), r && _ && (($ = L(c)), (O = _), (j = void 0), (W = void 0))) : ((O = a && v ? v : S), (W = c ? "brandText" : U), (j = c ? "brandText" : U));
+                    const Q = this._getDescribedById();
+                    return n.createElement(n.Fragment, null, n.createElement(u.Z, { "aria-describedby": Q, "aria-label": R, buttonDefaultLabel: P, buttonHoverLabel: O, buttonHoverType: W, buttonType: j, confirmationSheetConfirmLabel: k, confirmationSheetHeadline: y, confirmationSheetText: w ? C : void 0, customButtonConfig: $, disabled: o, displayMode: i, icon: I, id: l, onClick: this._handlePress, onHoverOut: this._handleHoverOut, showRelationshipChangeConfirmation: G && m, size: h, style: p, testID: b }), void 0 === e ? this._renderDescribedBy(Q) : null);
+                }
+            }
+            const G = V;
+            var X = o(311687);
+            const q = s().f305840e,
+                Q = s().e23b20a0,
+                Y = s().fe04d89a,
+                ee = s().i036327c,
+                te = s().j95e3097,
+                oe = n.createElement(X.default, null),
+                ne = ({ disabled: e, displayMode: t, onCancelPendingFollow: o, showRelationshipChangeConfirmation: i, size: l, style: a, testID: s, userScreenName: r }) => n.createElement(u.Z, { buttonDefaultLabel: q, buttonHoverLabel: Q, buttonType: "primaryOutlined", confirmationSheetCancelLabel: Q, confirmationSheetConfirmLabel: Y, confirmationSheetHeadline: ee, confirmationSheetText: te({ screenName: r }), disabled: e, displayMode: t, icon: oe, onClick: o, showRelationshipChangeConfirmation: i, size: l, style: a, testID: s }),
+                ie = Object.freeze({ follow: "follow", subscribe: "subscribe" }),
+                le = s().ec72e2f8,
+                ae = s().a5f7ce12,
+                se = s().c3befdbe,
+                re = s().d3029dbc,
+                de = s().aeb6f0a0,
+                ce = s().a77a27c0,
+                ue = s().b4397192;
+            class me extends n.Component {
+                constructor(e) {
+                    super(e), this._validateProps();
+                }
+                componentDidUpdate() {
+                    this._validateProps();
+                }
+                render() {
+                    const { "aria-describedby": e, buttonIcons: t, buttonText: o, buttonType: i, disabled: l, displayMode: a, id: s, isBlocking: r, isFollowRequestSent: d, isFollowed: c, isFollowing: u, isSuperFollowEligible: m, isSuperFollowing: h, isTransparent: p, name: b, onCancelPendingFollow: f, onFollow: w, onSuperFollow: y, onUnSuperFollow: C, onUnblock: v, onUnfollow: S, relationshipMode: F, showRelationshipChangeConfirmation: _, size: T, style: B, testIDs: k, type: Z, withConfirmationSheetText: x } = this.props,
+                        L = r,
+                        M = d,
+                        E = F === ie.subscribe && (m || h);
+                    return L ? n.createElement(g, { disabled: l, displayMode: a, onUnblock: v, showRelationshipChangeConfirmation: _, size: T, style: B, testID: k?.unblock, userScreenName: b }) : M ? n.createElement(ne, { disabled: l, displayMode: a, onCancelPendingFollow: f, showRelationshipChangeConfirmation: _, size: T, style: B, testID: k?.cancel, userScreenName: b }) : E ? n.createElement(I, { "aria-describedby": e, buttonType: i, disabled: l, displayMode: a, id: s, isSuperFollowEligible: m, isSuperFollowing: h, isTransparent: p, name: b, onSuperFollow: y, onUnSuperFollow: C, size: T, style: B, testID: h ? k?.manageSubscription : k?.subscribe }) : n.createElement(G, { "aria-describedby": e, buttonIcons: t, buttonText: o, disabled: l, displayMode: a, id: s, isFollowed: c, isFollowing: u, isSuperFollowEligible: m, isSuperFollowing: h, isTransparent: p, name: b, onFollow: w, onSuperFollow: y, onUnSuperFollow: C, onUnfollow: S, showRelationshipChangeConfirmation: _, size: T, style: B, testID: u ? k?.unfollow : k?.follow, type: Z, withConfirmationSheetText: x });
+                }
+                _validateProps() {
+                    const { name: e, showRelationshipChangeConfirmation: t } = this.props,
+                        o = t && "string" == typeof e,
+                        n = !t;
+                    l()(o || n, "When showRelationshipChangeConfirmation is true, name must be defined.");
+                }
+            }
+            me.defaultProps = { buttonText: { follow: le, followBack: ae, following: se, unfollow: re, superFollow: de, superFollowing: ce, unSuperFollow: ue }, displayMode: "only-text", relationshipMode: "follow", isBlocking: !1, isFollowRequestSent: !1, isTransparent: !1, onCancelPendingFollow: r.Z, onSuperFollow: r.Z, onUnblock: r.Z, onUnSuperFollow: r.Z, showRelationshipChangeConfirmation: !0, withConfirmationSheetText: !0 };
+        },
+        470397: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            o(136728);
+            var n = o(202784),
+                i = o(325686),
+                l = o(124964),
+                a = o(392237);
+            const s = ({ children: e, color: t = "gray700", size: o, style: a }) => {
+                    const s = [];
                     return (
                         n.Children.forEach(e, (e) => {
-                            const r = l.length;
-                            e && (r > 0 && l.push(n.createElement(i.Z, { color: t, key: `middot-${r}`, size: a })), l.push(e));
+                            const i = s.length;
+                            e && (i > 0 && s.push(n.createElement(l.Z, { color: t, key: `middot-${i}`, size: o })), s.push(e));
                         }),
-                        l.length ? n.createElement(r.Z, { style: [o.middotGroup, s] }, l) : null
+                        s.length ? n.createElement(i.Z, { style: [r.middotGroup, a] }, s) : null
                     );
                 },
-                o = s.default.create((e) => ({ middotGroup: { alignItems: "baseline", flexDirection: "row", flexShrink: 1 } }));
+                r = a.default.create((e) => ({ middotGroup: { alignItems: "baseline", flexDirection: "row", flexShrink: 1 } }));
         },
-        41065: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var n = a(202784),
-                r = a(890601),
-                i = a(783427),
-                s = a(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const o = l;
+        305098: (e, t, o) => {
+            o.d(t, { Z: () => c });
+            var n = o(807896),
+                i = o(202784),
+                l = o(325686),
+                a = o(154003),
+                s = o(190286),
+                r = o(466792);
+            Object.freeze({ iconText: "icon-text", onlyIcon: "only-icon", onlyText: "only-text" });
+            class d extends i.Component {
+                constructor(e) {
+                    super(e),
+                        (this._minWidth = 0),
+                        (this._isMounted = !0),
+                        (this._handleLabelMeasure = (e = !1) => {
+                            setTimeout(() => {
+                                const t = this._containerRef?.getBoundingClientRect().width,
+                                    o = this._containerRef?.offsetWidth;
+                                let n = 0;
+                                t && o && (n = o ? t : o), (this._minWidth = Math.ceil(Math.max(this._minWidth, n))), e && this._isMounted && this.forceUpdate();
+                            }, 0);
+                        }),
+                        (this._getCustomButtonProps = (e) => {
+                            const { customButtonConfig: t } = this.props;
+                            if (!t) return;
+                            const { customButtonBackgroundColor: o, customButtonBorderColor: n, customButtonColor: i, customButtonHoverBackgroundColor: l, customButtonHoverBorderColor: a, customButtonHoverColor: s } = t,
+                                r = { color: i, backgroundColor: o, borderColor: n };
+                            return e && ((r.color = s || i), (r.backgroundColor = l || o), (r.borderColor = a || n)), r;
+                        }),
+                        (this._handleButtonPress = (e) => {
+                            e.preventDefault(), this.props.showRelationshipChangeConfirmation ? this.setState({ showConfirmation: !0 }) : ((this._minWidth = 0), this.forceUpdate(), this.props.onClick());
+                        }),
+                        (this._handleConfirm = (e) => {
+                            (this._minWidth = 0), this.setState({ showConfirmation: !1 }), this.props.onClick(), this._buttonRef?.focus();
+                        }),
+                        (this._handleCancel = () => {
+                            this.setState({ showConfirmation: !1 }), this._buttonRef?.focus();
+                        }),
+                        (this._handleHoverIn = () => {
+                            this._handleLabelMeasure(!0);
+                        }),
+                        (this._setButtonRef = (e) => {
+                            this._buttonRef = e;
+                        }),
+                        (this._setContainerRef = (e) => {
+                            (this._containerRef = e), this._handleLabelMeasure();
+                        }),
+                        (this.state = { showConfirmation: !1 });
+                }
+                componentWillUnmount() {
+                    this._isMounted = !1;
+                }
+                componentDidUpdate(e) {
+                    e.buttonDefaultLabel !== this.props.buttonDefaultLabel && this._handleLabelMeasure();
+                }
+                render() {
+                    const { "aria-describedby": e, "aria-label": t, buttonDefaultLabel: o, buttonHoverLabel: d, buttonHoverType: c, buttonType: u, confirmationSheetCancelLabel: m, confirmationSheetConfirmLabel: h, confirmationSheetHeadline: p, confirmationSheetPrimaryButtonType: b, confirmationSheetText: f, disabled: w, displayMode: g, icon: y, id: C, onHoverOut: v, size: S, style: F, testID: _ } = this.props,
+                        T = [F, { minWidth: this._minWidth }];
+                    return i.createElement(
+                        l.Z,
+                        { ref: this._setContainerRef, style: T },
+                        i.createElement(r.Z, { onHoverIn: this._handleHoverIn, onHoverOut: v }, ({ isHovered: l }) => {
+                            const s = l ? d : o,
+                                r = l && c ? c : u,
+                                m = this._getCustomButtonProps(l);
+                            return i.createElement(a.ZP, (0, n.Z)({ "aria-describedby": e, "aria-label": "only-icon" === g ? s : t, disabled: w, icon: "only-text" !== g ? y : void 0, id: C, onPress: this._handleButtonPress, ref: this._setButtonRef, size: S, testID: _, type: r }, m), "only-icon" === g ? void 0 : s);
+                        }),
+                        this.state.showConfirmation ? i.createElement(s.Z, { cancelButtonLabel: m, confirmButtonLabel: h, confirmButtonType: b, headline: p, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: f }) : null,
+                    );
+                }
+            }
+            d.defaultProps = { showRelationshipChangeConfirmation: !1 };
+            const c = d;
         },
-        379327: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var n = a(202784),
-                r = a(890601),
-                i = a(783427),
-                s = a(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
+        678773: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => r });
+            var n = o(202784),
+                i = o(890601),
+                l = o(783427),
+                a = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const o = l;
+            s.metadata = { width: 24, height: 24 };
+            const r = s;
         },
-        98440: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var n = a(202784),
-                r = a(890601),
-                i = a(783427),
-                s = a(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+        98440: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => r });
+            var n = o(202784),
+                i = o(890601),
+                l = o(783427),
+                a = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const o = l;
-        },
-        452693: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var n = a(202784),
-                r = a(890601),
-                i = a(783427),
-                s = a(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const o = l;
+            s.metadata = { width: 24, height: 24 };
+            const r = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.9c0c5b7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.e303460a.js.map

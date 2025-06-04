@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.MultiAccount"],
+    ["bundle.MultiAccount", "icons/IconFeedback-js"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => h });
@@ -158,8 +158,8 @@
                 x = o(390387);
             const M = h().c61eea74,
                 L = h().b7dc3885,
-                U = h().d86bbf0f,
-                I = h().h6beb5fb,
+                I = h().d86bbf0f,
+                U = h().h6beb5fb,
                 T = ({ accountUsers: e, activeUser: t, handleMultiAccountSwitch: o, isUpdatedManageAccounts: n, renderUserDecoration: d, userTestId: u, withBadges: h }) => {
                     const p = (0, y.v9)(x.BP),
                         m = !0,
@@ -178,7 +178,7 @@
                                 }),
                             [o, b, d, u, h, n],
                         ),
-                        k = r.useMemo(() => r.createElement(a.Z, { style: D.facePileContainer }, r.createElement(A.Z, { userAvatarSize: "large", userAvatarUrls: b.map((e) => e.avatar_image_url) }), C > 0 ? r.createElement(i.Z, { count: C, standalone: !0, truncatedCountFormatter: I, unreadCountLabel: U }) : null), [b, C]);
+                        k = r.useMemo(() => r.createElement(a.Z, { style: D.facePileContainer }, r.createElement(A.Z, { userAvatarSize: "large", userAvatarUrls: b.map((e) => e.avatar_image_url) }), C > 0 ? r.createElement(i.Z, { count: C, standalone: !0, truncatedCountFormatter: U, unreadCountLabel: I }) : null), [b, C]);
                     return b.length > 0 ? r.createElement(r.Fragment, null, !n && _, n || g || void 0 === p || 0 === p ? w : k) : null;
                 },
                 D = d.default.create((e) => ({ personalAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
@@ -191,10 +191,10 @@
                 const { accountSwitch: t, accountUsers: o, activeUser: d, clearDelegateUser: u, delegateAccountCount: h, delegateUser: _, isDelegateEnabled: w, isUpdatedManageAccounts: k, onDelegateSwitch: A, onUserSwitch: S, userTestId: v, withBadges: x = !1 } = e,
                     M = !!_,
                     L = o.some((e) => e.user_id === d.id_str) || (h && h > 0) || M,
-                    U = r.useCallback(() => {
+                    I = r.useCallback(() => {
                         u && u();
                     }, [u]),
-                    I = r.useCallback(
+                    U = r.useCallback(
                         ({ hasBadge: e, isProtected: o, userId: r }) =>
                             () => {
                                 t({ hasBadge: e, isProtected: o, userId: r }), S?.();
@@ -236,9 +236,9 @@
                     G = r.useCallback(({ badgeCount: e, isActiveUser: t, withBadges: o }) => (t ? (w ? r.createElement(m.default, { style: [N.IconCheckmarkCircleFill, N.userDecoration] }) : r.createElement(f.default, { style: [N.iconCheckMark, N.userDecoration] })) : e && o ? r.createElement(i.Z, { count: e, standalone: !0, style: N.userDecoration, truncatedCountFormatter: H, unreadCountLabel: z }) : void 0), [w]),
                     j = r.useMemo(() => (k ? V : G), [k, G, V]),
                     q = r.useMemo(() => r.createElement(Z.ZP, { activeUserId: d.id_str, delegateUser: _, isUpdatedManageAccounts: k, key: 0, onDelegateSwitch: A ?? b.Z, renderUserDecoration: j }), [d.id_str, _, k, A, j]),
-                    O = r.useMemo(() => r.createElement(P, { accountUsers: o, activeUser: d, handleMultiAccountSwitch: I, isUpdatedManageAccounts: !!k, key: 1, renderUserDecoration: j, userTestId: v, withBadges: x }), [o, d, I, k, j, v, x]),
+                    O = r.useMemo(() => r.createElement(P, { accountUsers: o, activeUser: d, handleMultiAccountSwitch: U, isUpdatedManageAccounts: !!k, key: 1, renderUserDecoration: j, userTestId: v, withBadges: x }), [o, d, U, k, j, v, x]),
                     J = [];
-                return !k && w && J.push(q), J.push(O), k && w && J.push(q), r.createElement(r.Fragment, null, k && w && r.createElement(a.Z, { style: N.personalAccountsLabel }, r.createElement(c.ZP, { color: "gray700", weight: "bold" }, R)), L ? r.createElement(r.Fragment, null, r.createElement(s.ZP, { affiliateBadgeInfo: d.highlightedLabel, avatarDecoration: k && r.createElement(E, { notificationCount: T + D }), avatarUri: d.profile_image_url_https, badgeContext: "account", decoration: j({ withBadges: x, isActiveUser: !_, isLoggedInUser: !0 }), displayMode: "UserCompact", isBlueVerified: d.is_blue_verified, isProtected: d.protected, isVerified: d.verified, name: d.name, onCellClick: M ? U : void 0, screenName: d.screen_name, testID: v, userId: d.id_str, verifiedType: d.verified_type, withLink: !1 }), k && r.createElement(l.Z, { style: N.accountDivider })) : null, J, !k && (L || h || o.length) ? r.createElement(l.Z, { spacing: "space12" }) : null);
+                return !k && w && J.push(q), J.push(O), k && w && J.push(q), r.createElement(r.Fragment, null, k && w && r.createElement(a.Z, { style: N.personalAccountsLabel }, r.createElement(c.ZP, { color: "gray700", weight: "bold" }, R)), L ? r.createElement(r.Fragment, null, r.createElement(s.ZP, { affiliateBadgeInfo: d.highlightedLabel, avatarDecoration: k && r.createElement(E, { notificationCount: T + D }), avatarUri: d.profile_image_url_https, badgeContext: "account", decoration: j({ withBadges: x, isActiveUser: !_, isLoggedInUser: !0 }), displayMode: "UserCompact", isBlueVerified: d.is_blue_verified, isProtected: d.protected, isVerified: d.verified, name: d.name, onCellClick: M ? I : void 0, screenName: d.screen_name, testID: v, userId: d.id_str, verifiedType: d.verified_type, withLink: !1 }), k && r.createElement(l.Z, { style: N.accountDivider })) : null, J, !k && (L || h || o.length) ? r.createElement(l.Z, { spacing: "space12" }) : null);
             }
             const N = d.default.create((e) => ({ iconCheckMark: { color: e.colors.primary, flexShrink: 0 }, IconCheckmarkCircleFill: { color: e.colors.green500, flexShrink: 0, marginEnd: e.spaces.space8 }, updatedIconCheckmarkCircleFill: { color: e.colors.green500, flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, IconExiting: { color: e.colors.red500, flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, IconChevronRight: { color: "inherit", flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, decorationsContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space12 }, accountDivider: { marginHorizontal: e.spaces.space16 }, userDecoration: { marginStart: e.spaces.space12 }, personalAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 } }));
         },
@@ -321,8 +321,8 @@
                     .propsFromActions(() => ({ clearDelegateUser: S.YJ, fetchMultiAccountListIfNeeded: E.s2, createLocalApiErrorHandler: (0, w.zr)("ACCOUNT_SWITCHER_MULTI_LIST_FETCH"), logout: v.Z, logoutAll: v.d, sendAllPreviews: A.MH, switchAccount: Z.y }))
                     .withAnalytics({ page: "account_switcher" }),
                 L = "AccountSwitcher_Add_Button",
-                U = "AccountSwitcher_Switch_Button",
-                I = p().b8e1d524,
+                I = "AccountSwitcher_Switch_Button",
+                U = p().b8e1d524,
                 T = p().e69b7e02,
                 D = p().j0a8da6e,
                 P = p().b6bd6ae4,
@@ -358,7 +358,7 @@
                         (this._renderUsers = () => {
                             const { clearDelegateUser: e, delegateAccountCount: t, delegateUser: o, loggedInUser: a, users: n, withBadges: i = !1 } = this.props;
                             if (!a) return null;
-                            const c = { accountSwitch: this._handleSwitchAccount, accountUsers: n, activeUser: a, clearDelegateUser: e, delegateAccountCount: t, delegateUser: o, isDelegateEnabled: !0, userTestId: U, withBadges: i, isUpdatedManageAccounts: this.isUpdatedManageAccounts };
+                            const c = { accountSwitch: this._handleSwitchAccount, accountUsers: n, activeUser: a, clearDelegateUser: e, delegateAccountCount: t, delegateUser: o, isDelegateEnabled: !0, userTestId: I, withBadges: i, isUpdatedManageAccounts: this.isUpdatedManageAccounts };
                             return r.createElement(C.a, c);
                         }),
                         (this._renderCurrentUserCheckmark = () => r.createElement(m.default, { "aria-label": P, style: Q.iconCheckMark })),
@@ -392,7 +392,7 @@
                     const { fetchStatus: e, history: t } = this.props,
                         { spinner: o } = this.state,
                         a = this.context.featureSwitches.isTrue("rweb_sourcemap_migration");
-                    return (this.isUpdatedManageAccounts = a && this.context.featureSwitches.isTrue("rweb_sourcemap_migration_updated_manage_accounts")), r.createElement(b.Z, { appBarStyle: this.isUpdatedManageAccounts && Q.updatedAppBarStyle, containerStyle: this.isUpdatedManageAccounts && Q.updatedModalStyle, history: t, title: this.isUpdatedManageAccounts ? T : I }, r.createElement(f.Z, { fetchStatus: o ? _.ZP.LOADING : e, onRequestRetry: this._handleFetch, render: this._render }));
+                    return (this.isUpdatedManageAccounts = a && this.context.featureSwitches.isTrue("rweb_sourcemap_migration_updated_manage_accounts")), r.createElement(b.Z, { appBarStyle: this.isUpdatedManageAccounts && Q.updatedAppBarStyle, containerStyle: this.isUpdatedManageAccounts && Q.updatedModalStyle, history: t, title: this.isUpdatedManageAccounts ? T : U }, r.createElement(f.Z, { fetchStatus: o ? _.ZP.LOADING : e, onRequestRetry: this._handleFetch, render: this._render }));
                 }
             }
             K.contextType = y.rC;
@@ -479,7 +479,7 @@
             const s = i.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 l = c;
         },
-        41065: (e, t, o) => {
+        790093: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -487,7 +487,7 @@
                 i = o(347101);
             const c = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
             c.metadata = { width: 24, height: 24 };
             const s = c;
@@ -507,4 +507,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MultiAccount.b59b815a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MultiAccount.68b587ea.js.map

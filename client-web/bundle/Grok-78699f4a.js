@@ -16,8 +16,8 @@
                 c = d.n(u),
                 h = d(666536),
                 m = d(403808),
-                p = d(420182),
-                b = d(952793),
+                b = d(420182),
+                p = d(952793),
                 D = d(246851),
                 f = d(782642),
                 M = d(725516),
@@ -28,16 +28,16 @@
                 C = d(309373),
                 A = d(327597),
                 I = d(620988),
-                E = d(305442),
-                S = d(962379),
+                S = d(305442),
+                E = d(962379),
                 v = d(623494),
                 P = d(976021),
                 B = d(246277),
                 R = d(335785),
                 x = d(988290),
                 Z = d(186794),
-                _ = d(3144),
-                T = d(276411),
+                T = d(3144),
+                _ = d(276411),
                 F = d(454875),
                 N = d(928831),
                 K = d(795388),
@@ -53,22 +53,22 @@
                 const te = (0, g.I0)(),
                     re = (0, M.z)(),
                     le = (0, r.useHistory)(),
-                    { clearFilterKey: se, hasValue: ie, isCreateImageEnabled: ue, isFileInputDisabled: ce, isImageEditEnabled: he, isInputCompact: me, isInputFocused: pe, isInputMobile: be, isInputMobileSize: De, isReasoningEnabled: fe, isResearchEnabled: Me, setFocused: ge, setHasValue: we, setPendingModeButtonFilterKey: ye } = (0, N.w)(),
+                    { clearFilterKey: se, hasValue: ie, isCreateImageEnabled: ue, isFileInputDisabled: ce, isImageEditEnabled: he, isInputCompact: me, isInputFocused: be, isInputMobile: pe, isInputMobileSize: De, isReasoningEnabled: fe, isResearchEnabled: Me, setFocused: ge, setHasValue: we, setPendingModeButtonFilterKey: ye } = (0, N.w)(),
                     { isGrokDrawer: ke } = (0, x.ZP)(),
                     Ce = (0, w.bD)(a),
                     Ae = (0, g.v9)(Ce.selectEditingMessageId);
                 let Ie = (0, g.v9)(Ce.selectEditingMessage);
-                const Ee = (0, g.v9)(Ce.selectInputPrefill),
-                    Se = n.useRef(null),
+                const Se = (0, g.v9)(Ce.selectInputPrefill),
+                    Ee = n.useRef(null),
                     { showInputEdit: ve } = (0, z.u)();
                 Ie = ve ? Ie : void 0;
-                const Pe = (0, b.hC)("responsive_web_grok_file_upload_enabled"),
-                    Be = (0, b.hC)("responsive_web_grok_show_citations"),
-                    Re = (0, b.hC)("responsive_web_grok_personality_button_enabled"),
-                    xe = (0, b.hC)("responsive_web_grok_new_home_layout"),
-                    [Ze, _e] = n.useState(!1),
-                    { loading: Te } = (0, S.Z)(),
-                    Fe = n.useRef(Te),
+                const Pe = (0, p.hC)("responsive_web_grok_file_upload_enabled"),
+                    Be = (0, p.hC)("responsive_web_grok_show_citations"),
+                    Re = (0, p.hC)("responsive_web_grok_personality_button_enabled"),
+                    xe = (0, p.hC)("responsive_web_grok_new_home_layout"),
+                    [Ze, Te] = n.useState(!1),
+                    { loading: _e } = (0, E.Z)(),
+                    Fe = n.useRef(_e),
                     Ne = n.useRef(null),
                     { clearSelectedFile: Ke, onFileSelected: Ge, onGrokFileSelected: Oe, selectedFiles: Le } = (0, I.ZP)(),
                     ze = n.useMemo(() => Object.keys(Le), [Le]),
@@ -76,7 +76,7 @@
                     je = Object.keys(Le).some((e) => Le[e]?.isUploading),
                     He = Object.keys(Le).some((e) => Le[e]?.isPendingAutomaticPromptSend),
                     [Ue, We] = n.useState(""),
-                    Ve = (0, o.Dv)(p.dd),
+                    Ve = (0, o.Dv)(b.dd),
                     Xe = 0 === Ue.length,
                     [Je, Qe] = n.useState(null);
                 n.useEffect(() => {
@@ -87,7 +87,7 @@
                     !qe && X && he && se();
                 }, [qe, X, he, se]);
                 const Ye = (function (e, a, d) {
-                        const t = (0, o.Dv)(p.lZ),
+                        const t = (0, o.Dv)(b.lZ),
                             r = (0, g.v9)(a.selectConversationId),
                             l = n.useMemo(() => r || (d ? "" : $), [r, d]),
                             s = n.useMemo(
@@ -133,7 +133,7 @@
                     la = n.useCallback(() => {
                         Ne.current?.blur(), ge(!1);
                     }, [ge]),
-                    sa = (0, E.Z)("grok_input"),
+                    sa = (0, S.Z)("grok_input"),
                     ia = (function (e, a) {
                         const d = {};
                         return a && e.length ? { promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: e[0].url } } } : d;
@@ -147,7 +147,7 @@
                                     mode: q,
                                     returnCitations: Be,
                                     onStart: () => {
-                                        _e(!1),
+                                        Te(!1),
                                             ze.forEach((e) => {
                                                 Ke(e);
                                             }),
@@ -161,7 +161,7 @@
                                 });
                             else if (u) {
                                 const e = await (0, k.X)({ analytics: re, api: Ve, dispatch: te, grokModule: Ce, fromShareId: u });
-                                e ? (_e(!1), ze.forEach((e) => Ke(e)), We(""), le.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ue)}`)) : $e({ text: H });
+                                e ? (Te(!1), ze.forEach((e) => Ke(e)), We(""), le.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ue)}`)) : $e({ text: H });
                             } else
                                 Ae
                                     ? Ie &&
@@ -174,7 +174,7 @@
                                               mode: q,
                                               imageGenerationCount: sa,
                                               onStart: () => {
-                                                  _e(!1),
+                                                  Te(!1),
                                                       ze.forEach((e) => {
                                                           Ke(e);
                                                       }),
@@ -194,7 +194,7 @@
                                               isGrokDrawer: ke,
                                               promptMetadata: ia.promptMetadata,
                                               onStart: () => {
-                                                  _e(!1),
+                                                  Te(!1),
                                                       ze.forEach((e) => {
                                                           Ke(e);
                                                       }),
@@ -210,7 +210,7 @@
                         } catch (e) {
                             $e({ text: H });
                         } finally {
-                            _e(!1);
+                            Te(!1);
                         }
                     });
                 n.useEffect(() => {
@@ -231,9 +231,9 @@
                 }, [Ie]);
                 const ca = n.useCallback(
                     (e) => {
-                        e?.preventDefault(), e?.stopPropagation(), _e(!0);
+                        e?.preventDefault(), e?.stopPropagation(), Te(!0);
                     },
-                    [_e],
+                    [Te],
                 );
                 n.useEffect(() => {
                     !Ze || je || He || ua();
@@ -250,13 +250,13 @@
                         },
                         [Ge, re, Pe],
                     ),
-                    pa = n.useCallback(
-                        (e) => {
-                            be || "Enter" !== e.key || e.shiftKey || (e.preventDefault(), na && ca());
-                        },
-                        [be, na, ca],
-                    ),
                     ba = n.useCallback(
+                        (e) => {
+                            pe || "Enter" !== e.key || e.shiftKey || (e.preventDefault(), na && ca());
+                        },
+                        [pe, na, ca],
+                    ),
+                    pa = n.useCallback(
                         (e) => {
                             "Backspace" === e.key && 0 === Ue.length && (ue || he) && se();
                         },
@@ -290,7 +290,7 @@
                                 }),
                             );
                     }, [Le, ze, Ke, Da, he, se]),
-                    Ma = !Te,
+                    Ma = !_e,
                     ga = c && (!De || !Ze) && !He,
                     wa = { color: Ue ? l.default.theme.colors.brandColor : l.default.theme.colors.gray700 };
                 n.useEffect(() => {
@@ -309,12 +309,12 @@
                                         n.createElement(
                                             n.Fragment,
                                             null,
-                                            n.createElement(F.Z, { disabled: ce, fadeIn: Fe.current, focused: pe, isInputCompact: me, label: "", useButtonsForExpandedInput: !0 }),
+                                            n.createElement(F.Z, { disabled: ce, fadeIn: Fe.current, focused: be, isInputCompact: me, label: "", useButtonsForExpandedInput: !0 }),
                                             n.createElement(K.Z, {
                                                 disabled: null !== Je,
                                                 fadeIn: Fe.current,
-                                                focused: pe,
-                                                onClick: () => clearTimeout(Se.current),
+                                                focused: be,
+                                                onClick: () => clearTimeout(Ee.current),
                                                 onHomeScreen: X,
                                                 onShowDegradedModal: (e) => {
                                                     Je || Qe(e || U);
@@ -322,30 +322,30 @@
                                             }),
                                         ),
                                 ),
-                                n.createElement(t.Z, { style: [V.contentBelowRight, (me || ke) && V.compactContentBelowRight] }, Re && n.createElement(O.t, { conversationKey: a, disabled: J, fadeIn: Fe.current, focused: pe, inputAtBottom: W, inputAtHome: X }), !1, me && !ke ? (0 === Ue.length && Q && !aa ? n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }) : ya) : n.createElement(n.Fragment, null, n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }), ya)),
+                                n.createElement(t.Z, { style: [V.contentBelowRight, (me || ke) && V.compactContentBelowRight] }, Re && n.createElement(O.t, { conversationKey: a, disabled: J, fadeIn: Fe.current, focused: be, inputAtBottom: W, inputAtHome: X }), !1, me && !ke ? (0 === Ue.length && Q && !aa ? n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }) : ya) : n.createElement(n.Fragment, null, n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }), ya)),
                             ),
-                        [ke, me, Ma, !0, ce, pe, Je, Re, a, J, W, X, Ue, ya, Q, aa],
+                        [ke, me, Ma, !0, ce, be, Je, Re, a, J, W, X, Ue, ya, Q, aa],
                     );
                 return (
                     n.useEffect(() => {
                         ta.length > 0 && ra();
                     }, [ra, ta]),
                     n.useEffect(() => {
-                        if ((Ee.text.length > 0 && We(Ee.text), Ee.attachments.length > 0)) for (const e of Ee.attachments) Oe(e);
-                        Ee.modeButtonFilterKey && (ye(Ee.modeButtonFilterKey), Da()), (Ee.text.length > 0 || Ee.attachments.length > 0 || Ee.modeButtonFilterKey) && te((0, w.Uo)(a, { text: "", attachments: [] }));
-                    }, [Ee, a, te, Oe, Da, ye]),
+                        if ((Se.text.length > 0 && We(Se.text), Se.attachments.length > 0)) for (const e of Se.attachments) Oe(e);
+                        Se.modeButtonFilterKey && (ye(Se.modeButtonFilterKey), Da()), (Se.text.length > 0 || Se.attachments.length > 0 || Se.modeButtonFilterKey) && te((0, w.Uo)(a, { text: "", attachments: [] }));
+                    }, [Se, a, te, Oe, Da, ye]),
                     oe
                         ? n.createElement(
                               t.Z,
                               { style: V.outerContainer },
-                              xe && n.createElement(T.Z, null),
+                              xe && n.createElement(_.Z, null),
                               n.createElement(
                                   t.Z,
                                   { style: V.deprecatedContainer },
                                   n.createElement(
                                       P.P,
                                       { direction: s.Z.getTextDirection(Ue) },
-                                      n.createElement(_.z, null),
+                                      n.createElement(T.z, null),
                                       n.createElement(
                                           t.Z,
                                           { style: V.inputOuterContainer },
@@ -361,7 +361,7 @@
                                               numberOfLines: 1,
                                               onChange: ea,
                                               onFilesAdded: ma,
-                                              onKeyPress: pa,
+                                              onKeyPress: ba,
                                               placeholder: ee,
                                               ref: (e) => {
                                                   (Ne.current = e), e && Y?.(e);
@@ -378,14 +378,14 @@
                         : n.createElement(
                               t.Z,
                               { style: V.outerContainer },
-                              xe && n.createElement(T.Z, null),
+                              xe && n.createElement(_.Z, null),
                               n.createElement(
                                   t.Z,
                                   { onClick: Da, style: V.container },
                                   n.createElement(
                                       P.P,
                                       { direction: s.Z.getTextDirection(Ue) },
-                                      n.createElement(_.z, null),
+                                      n.createElement(T.z, null),
                                       n.createElement(
                                           t.Z,
                                           { style: V.inputOuterContainer },
@@ -403,8 +403,8 @@
                                               onChange: ea,
                                               onFilesAdded: ma,
                                               onFocus: () => ge(!0),
-                                              onKeyDown: ba,
-                                              onKeyPress: pa,
+                                              onKeyDown: pa,
+                                              onKeyPress: ba,
                                               placeholder: ee,
                                               ref: (e) => {
                                                   (Ne.current = e), e && Y?.(e);
@@ -492,7 +492,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -523,6 +523,7 @@
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                        d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
@@ -544,4 +545,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.4ac881ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.34b5583a.js.map

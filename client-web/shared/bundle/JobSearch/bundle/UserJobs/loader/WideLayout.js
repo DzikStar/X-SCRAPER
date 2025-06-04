@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout", "icons/IconStarStroke-js"],
+    ["shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"],
     {
         822502: (e, l, a) => {
-            a.d(l, { Z: () => x });
+            a.d(l, { Z: () => E });
             var n,
                 t,
                 r,
@@ -18,47 +18,47 @@
                 y = a(725405),
                 g = a(535338),
                 p = a(665971),
-                b = (a(136728), a(107267)),
-                k = a(731708),
+                k = (a(136728), a(107267)),
+                b = a(731708),
                 f = a(519172),
-                v = a(601413),
-                _ = a(952428),
-                h = a(823161),
-                S = a(757483),
-                F = a(457458),
+                _ = a(601413),
+                v = a(952428),
+                S = a(823161),
+                F = a(757483),
+                h = a(457458),
                 I = a(412876),
                 K = a(910113);
             const L = ({ fallbackName: e, user: l }) => {
                     const a = d()(K.fR, l);
-                    return a && a.core && a.core.name && a.core.screen_name ? o.createElement(k.ZP, { size: "subtext2", style: w.userName }, o.createElement(u.Z, { style: w.name }, o.createElement(k.ZP, { numberOfLines: 1 }, a.core.name), o.createElement(f.Z, { isVerified: a.verification?.verified ?? !1, verifiedType: a.verification?.verified_type ?? void 0 })), o.createElement(v.Z, { screenName: a.core.screen_name, size: "subtext2" })) : e ? o.createElement(k.ZP, { size: "subtext2", weight: "normal" }, e) : null;
+                    return a && a.core && a.core.name && a.core.screen_name ? o.createElement(b.ZP, { size: "subtext2", style: w.userName }, o.createElement(u.Z, { style: w.name }, o.createElement(b.ZP, { numberOfLines: 1 }, a.core.name), o.createElement(f.Z, { isVerified: a.verification?.verified ?? !1, verifiedType: a.verification?.verified_type ?? void 0 })), o.createElement(_.Z, { screenName: a.core.screen_name, size: "subtext2" })) : e ? o.createElement(b.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
-                w = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: S.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
+                w = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: F.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
                 j = ({ companyProfile: e, formattedSalary: l, jobId: a, jobLocation: n, jobTitle: t, onClick: r, renderActions: i, salaryInterval: s, user: c, withBottomBorder: d = !0 }) => {
-                    const { jobId: m } = (0, b.useParams)(),
+                    const { jobId: m } = (0, k.useParams)(),
                         y = o.useMemo(() => ({ label: t }), [t]),
                         g = o.useMemo(() => {
                             const e = [w.listContainer];
                             return m === a ? e.push(w.activeItem) : d && e.push(w.inactiveItem), e;
                         }, [m, a, d]);
-                    return o.createElement(_.Z, { onClick: r, role: "listitem", style: g }, o.createElement(u.Z, { style: w.itemRow }, c ? o.createElement(I.Y, { size: "xLarge", user: c }) : o.createElement(h.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(u.Z, { style: w.items }, o.createElement(k.ZP, { hoverLabel: y, numberOfLines: 2, size: "subtext1", weight: "bold" }, t), o.createElement(L, { fallbackName: e?.core?.name, user: c }), o.createElement(k.ZP, { color: "gray700", size: "subtext2" }, n), l ? o.createElement(k.ZP, { color: "gray700", size: "subtext2" }, (0, F.M)(l, s)) : null)), i && o.createElement(u.Z, null, i()));
+                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: g }, o.createElement(u.Z, { style: w.itemRow }, c ? o.createElement(I.Y, { size: "xLarge", user: c }) : o.createElement(S.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(u.Z, { style: w.items }, o.createElement(b.ZP, { hoverLabel: y, numberOfLines: 2, size: "subtext1", weight: "bold" }, t), o.createElement(L, { fallbackName: e?.core?.name, user: c }), o.createElement(b.ZP, { color: "gray700", size: "subtext2" }, n), l ? o.createElement(b.ZP, { color: "gray700", size: "subtext2" }, (0, h.M)(l, s)) : null)), i && o.createElement(u.Z, null, i()));
                 },
                 C = s,
-                E = m.default.create((e) => ({ actions: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, marginStart: e.spaces.space56, marginTop: e.spaces.space12 } })),
-                x = ({ actions: e, companyProfile: l, job: a, jobId: n, jobIndex: t, onClick: r, relayId: i, user: s, userSentiment: c, withBottomBorder: m = !0 }) => {
-                    const b = (0, y.Z)(),
-                        { viewer: k } = (0, g.p)(C, {}),
+                x = m.default.create((e) => ({ actions: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, marginStart: e.spaces.space56, marginTop: e.spaces.space12 } })),
+                E = ({ actions: e, companyProfile: l, job: a, jobId: n, jobIndex: t, onClick: r, relayId: i, user: s, userSentiment: c, withBottomBorder: m = !0 }) => {
+                    const k = (0, y.Z)(),
+                        { viewer: b } = (0, g.p)(C, {}),
                         f = d()(K.qV, a),
-                        v = d()(K.dB, l),
-                        _ = k?.user_results?.result?.__id,
-                        h = o.useCallback(() => {
-                            b.scribe({ action: "click", component: "job_search_list_item", element: "job", data: { items: [{ id: n, position: t }] } }), r();
-                        }, [b, n, t, r]),
-                        S = o.useCallback(() => o.createElement(u.Z, { style: E.actions }, o.createElement(p.ZP, { actions: e, jobId: n, relayId: i, userRelayId: _, userSentiment: c })), [e, n, i, _, c]);
-                    return f && f.title && f.location ? o.createElement(j, { companyProfile: v, formattedSalary: f.formatted_salary, jobId: n, jobLocation: f.location, jobTitle: f.title, onClick: h, renderActions: S, salaryInterval: f.salary_interval, user: s, withBottomBorder: m }) : null;
+                        _ = d()(K.dB, l),
+                        v = b?.user_results?.result?.__id,
+                        S = o.useCallback(() => {
+                            k.scribe({ action: "click", component: "job_search_list_item", element: "job", data: { items: [{ id: n, position: t }] } }), r();
+                        }, [k, n, t, r]),
+                        F = o.useCallback(() => o.createElement(u.Z, { style: x.actions }, o.createElement(p.ZP, { actions: e, jobId: n, relayId: i, userRelayId: v, userSentiment: c })), [e, n, i, v, c]);
+                    return f && f.title && f.location ? o.createElement(j, { companyProfile: _, formattedSalary: f.formatted_salary, jobId: n, jobLocation: f.location, jobTitle: f.title, onClick: S, renderActions: F, salaryInterval: f.salary_interval, user: s, withBottomBorder: m }) : null;
                 };
         },
         910113: (e, l, a) => {
-            a.d(l, { ZP: () => I, dB: () => h, KM: () => F, qV: () => _, fR: () => S });
+            a.d(l, { ZP: () => I, dB: () => S, KM: () => h, qV: () => v, fR: () => F });
             a(136728);
             var n,
                 t,
@@ -192,19 +192,19 @@
             var y = a(202784),
                 g = (a(585488), a(277660)),
                 p = a.n(g),
-                b = a(107267),
-                k = a(708852),
+                k = a(107267),
+                b = a(708852),
                 f = a(822502),
-                v = a(318178);
-            const _ = m,
-                h = c,
-                S = o,
-                F = i,
+                _ = a(318178);
+            const v = m,
+                S = c,
+                F = o,
+                h = i,
                 I = ({ item: e, itemId: l, itemIndex: a }) => {
-                    const n = (0, k.Ji)(),
-                        t = (0, b.useHistory)(),
-                        r = (0, b.useLocation)(),
-                        i = p()(F, e),
+                    const n = (0, b.Ji)(),
+                        t = (0, k.useHistory)(),
+                        r = (0, k.useLocation)(),
+                        i = p()(h, e),
                         s = i?.core,
                         o = i?.user_results?.result,
                         u = i?.company_profile_results?.result,
@@ -213,11 +213,11 @@
                         m = y.useCallback(() => {
                             n ? t.push({ pathname: `/jobs/${l}`, query: r.query }) : t.push({ pathname: `/m/jobs/${l}`, query: r.query });
                         }, [t, n, l, r.query]);
-                    return i && s ? y.createElement(f.Z, { actions: [v.h5], companyProfile: u, job: s, jobId: l, jobIndex: a, onClick: m, relayId: c, user: o, userSentiment: d }) : null;
+                    return i && s ? y.createElement(f.Z, { actions: [_.h5], companyProfile: u, job: s, jobId: l, jobIndex: a, onClick: m, relayId: c, user: o, userSentiment: d }) : null;
                 };
         },
         318178: (e, l, a) => {
-            a.d(l, { pN: () => K, h5: () => I, ZP: () => j, tv: () => F });
+            a.d(l, { pN: () => K, h5: () => I, ZP: () => j, tv: () => h });
             var n,
                 t,
                 r,
@@ -262,17 +262,17 @@
                 y = a.n(m),
                 g = a(530732),
                 p = a(731708),
-                b = a(392237),
-                k = a(106186),
+                k = a(392237),
+                b = a(106186),
                 f = a(258292),
-                v = a(616894),
-                _ = a(443781),
-                h = a(292546);
-            const S = u,
-                F = (e, l, a) => {
-                    const { viewerUserId: n } = (0, _.QZ)(),
-                        [t] = y()(S),
-                        [r] = (0, h.Z)(),
+                _ = a(616894),
+                v = a(443781),
+                S = a(292546);
+            const F = u,
+                h = (e, l, a) => {
+                    const { viewerUserId: n } = (0, v.QZ)(),
+                        [t] = y()(F),
+                        [r] = (0, S.Z)(),
                         i = r.get("twclid") || null,
                         s = c.useCallback(
                             (e, n) => {
@@ -301,9 +301,9 @@
                         c.createElement(g.Z, { interactiveStyles: null, onClick: (e) => i(s, e), style: w.sentimentActionContainer }, ({ isHovered: a }) => c.createElement(c.Fragment, null, t ? c.createElement(l, { style: o(a) }) : c.createElement(e, { style: o(a) }), c.createElement(p.ZP, { size: "subtext2", style: { ...o(a) } }, r))),
                     );
                 },
-                w = b.default.create((e) => ({ sentimentActionContainer: { display: "flex", flexDirection: "row", flex: 1, gap: 6, alignItems: "center", cursor: "pointer" }, sentimentActionText: { marginTop: e.spaces.space4 }, likeActive: { color: e.colors.blue500 }, likeHover: { color: e.colors.blue700 }, dislikeActive: { color: e.colors.red500 }, dislikeHover: { color: e.colors.red700 } })),
+                w = k.default.create((e) => ({ sentimentActionContainer: { display: "flex", flexDirection: "row", flex: 1, gap: 6, alignItems: "center", cursor: "pointer" }, sentimentActionText: { marginTop: e.spaces.space4 }, likeActive: { color: e.colors.blue500 }, likeHover: { color: e.colors.blue700 }, dislikeActive: { color: e.colors.red500 }, dislikeHover: { color: e.colors.red700 } })),
                 j = ({ jobId: e, relayId: l, type: a, userRelayId: n, userSentiment: t }) => {
-                    const r = F(e, l, n),
+                    const r = h(e, l, n),
                         i = c.useCallback(
                             (e, l) => {
                                 l.stopPropagation();
@@ -311,7 +311,7 @@
                             },
                             [r, t],
                         );
-                    return a === I ? c.createElement(L, { Icon: k.default, SelectedIcon: f.default, activeStyle: w.likeActive, hoverStyle: w.likeHover, isSelected: t === I, label: "Save job", onClick: i, sentiment: I }) : a === K ? c.createElement(L, { Icon: v.default, SelectedIcon: v.default, activeStyle: w.dislikeActive, hoverStyle: w.dislikeHover, isSelected: t === K, label: "Not interested", onClick: i, sentiment: K }) : null;
+                    return a === I ? c.createElement(L, { Icon: b.default, SelectedIcon: f.default, activeStyle: w.likeActive, hoverStyle: w.likeHover, isSelected: t === I, label: "Save job", onClick: i, sentiment: I }) : a === K ? c.createElement(L, { Icon: _.default, SelectedIcon: _.default, activeStyle: w.dislikeActive, hoverStyle: w.dislikeHover, isSelected: t === K, label: "Not interested", onClick: i, sentiment: K }) : null;
                 };
         },
         292546: (e, l, a) => {
@@ -337,7 +337,7 @@
             };
         },
         665971: (e, l, a) => {
-            a.d(l, { r1: () => f, ZP: () => _ });
+            a.d(l, { r1: () => f, ZP: () => v });
             var n,
                 t,
                 r,
@@ -388,19 +388,19 @@
             var y = a(202784),
                 g = (a(585488), a(318178)),
                 p = a(952793),
-                b = a(535338);
-            const k = m,
+                k = a(535338);
+            const b = m,
                 f = ({ actions: e, jobId: l }) => {
-                    const { jobData: a, viewer: n } = (0, b.p)(k, { jobId: l }),
+                    const { jobData: a, viewer: n } = (0, k.p)(b, { jobId: l }),
                         t = a?.result?.id ?? "",
                         r = a?.result?.user_sentiment;
-                    return y.createElement(v, { actions: e, jobId: l, relayId: t, userRelayId: n?.user_results?.result?.__id, userSentiment: r });
+                    return y.createElement(_, { actions: e, jobId: l, relayId: t, userRelayId: n?.user_results?.result?.__id, userSentiment: r });
                 },
-                v = ({ actions: e, jobId: l, relayId: a, userRelayId: n, userSentiment: t }) => {
+                _ = ({ actions: e, jobId: l, relayId: a, userRelayId: n, userSentiment: t }) => {
                     const r = (0, p.hC)("recruiting_job_recommendations_enabled");
                     return e && 0 !== e.length && r ? y.createElement(y.Fragment, null, e.includes(g.pN) && y.createElement(g.ZP, { jobId: l, relayId: a, type: g.pN, userRelayId: n, userSentiment: t }), e.includes(g.h5) && y.createElement(g.ZP, { jobId: l, relayId: a, type: g.h5, userRelayId: n, userSentiment: t })) : null;
                 },
-                _ = v;
+                v = _;
         },
         89217: (e, l, a) => {
             a.d(l, { Ju: () => m, Qw: () => y, eo: () => u });
@@ -438,32 +438,6 @@
                         } catch (e) {}
                 };
         },
-        41065: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => o });
-            var n = a(202784),
-                t = a(890601),
-                r = a(783427),
-                i = a(347101);
-            const s = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: l });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        106186: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => o });
-            var n = a(202784),
-                t = a(890601),
-                r = a(783427),
-                i = a(347101);
-            const s = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23.426 9.29L15.54 8.15 12.013 1 8.486 8.15.6 9.29l5.707 5.56-1.348 7.86L12.013 19l7.053 3.71-1.347-7.86 5.707-5.56zm-11.413 7.45l-4.397 2.31.84-4.89-3.558-3.47 4.916-.72 2.199-4.45 2.198 4.45 4.917.72-3.558 3.47.84 4.89-4.397-2.31z" })) }, { writingDirection: l });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.dc295a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.8060c85a.js.map

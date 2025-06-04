@@ -8,7 +8,7 @@
             const i = (e, t) => `e${(0, a.Z)(e, t)}`;
         },
         943245: (e, t, s) => {
-            s.d(t, { It: () => d, mD: () => c, sE: () => o });
+            s.d(t, { It: () => m, mD: () => d, sE: () => o, t: () => u });
             var a = s(899492),
                 i = s(733357);
             const n = ["da", "de", "en", "en-gb", "es", "et", "eu", "fi", "fil", "fr", "ga", "gl", "ht", "hu", "id", "it", "lt", "lv", "nl", "no", "ms", "pl", "pt", "sk", "sl", "sv", "tr", "vi"],
@@ -18,11 +18,14 @@
                     return r[t] || t;
                 },
                 u = (e, t) => {
+                    if (t) return new Intl.DisplayNames([e], { type: "language" }).of(t);
+                },
+                c = (e, t) => {
                     const s = o(e);
                     return !(n.indexOf(s) > -1 && t < 20) && !("und" === e);
                 },
-                c = ({ displayTextRange: e, entities: t, language: s, text: n }) => {
-                    if (!e || !u(s, e[1] - e[0])) return !1;
+                d = ({ displayTextRange: e, entities: t, language: s, text: n }) => {
+                    if (!e || !c(s, e[1] - e[0])) return !1;
                     const r = ((e, t) => {
                             let s = a.Z.getTwemojiEntities(e).map((e) => e.indices);
                             for (const e in t) s = s.concat(t[e].map((e) => e.indices));
@@ -32,9 +35,9 @@
                             const { accText: a, lastIndex: i } = s.reduce(({ accText: s, lastIndex: a }, i) => (i[1] <= a || t[1] <= i[0] ? { lastIndex: a, accText: s } : { accText: s + e.slice(a, i[0]), lastIndex: i[1] }), { accText: "", lastIndex: t[0] });
                             return a + e.slice(i, t[1]);
                         })(n, e, r);
-                    return !(0, i.Z)(o) && u(s, o.length);
+                    return !(0, i.Z)(o) && c(s, o.length);
                 },
-                d = (e) => {
+                m = (e) => {
                     if (e.includes("-")) return e;
                     if (navigator.language && navigator.language.startsWith(e)) return navigator.language;
                     if (window.Intl && window.Intl.Locale) {
@@ -343,4 +346,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.2f3e155a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.8fd8003a.js.map

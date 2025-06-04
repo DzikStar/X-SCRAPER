@@ -383,7 +383,7 @@
             };
             var Qt = i(883437),
                 Yt = i(523561);
-            const Jt = (0, Yt.Z)({ loader: () => Promise.all([i.e("icons.23"), i.e("icons.28"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) }),
+            const Jt = (0, Yt.Z)({ loader: () => Promise.all([i.e("icons.8"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) }),
                 ei = _().bb16cc76,
                 ti = _().de21174c,
                 ii = (e, t) => o.createElement(Jt, { onCancel: t, onConfirm: e });
@@ -1169,4 +1169,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e019dbda.1448ad1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e019dbda.8a44013a.js.map

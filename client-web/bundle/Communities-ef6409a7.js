@@ -415,20 +415,20 @@
                 lt = tt.Z,
                 ct = et.Z,
                 it = (e) => {
-                    const { communityId: t, isAlreadyReverted: n, isRevertLog: r, logIdentifier: o, onRevertError: m, userId: l, userScreenName: c } = e,
-                        [i] = G()(lt),
-                        s = a.useCallback(() => {
-                            i({ variables: { communityId: t, userId: l, logIdentifier: o }, onError: m });
-                        }, [i, t, l, o, m]);
-                    return r || n ? a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { icon: a.createElement(q.default, null), size: "small", style: dt.button, type: "secondaryFilled" }, ot), a.createElement(W.ZP, { link: `/i/communities/${t}/search/?q=(from:${c})`, size: "small", style: dt.button, type: "primaryOutlined" }, mt)) : a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { onPress: s, size: "small", style: dt.button, type: "primaryOutlined" }, at), a.createElement(W.ZP, { link: `/i/communities/${t}/search/?q=(from:${c})`, size: "small", style: dt.button, type: "primaryOutlined" }, mt));
+                    const { communityId: t, isAlreadyReverted: n, isRevertLog: r, logIdentifier: o, onRevertError: m, userScreenName: l } = e,
+                        [c] = G()(lt),
+                        i = a.useCallback(() => {
+                            c({ variables: { logIdentifier: o }, onError: m });
+                        }, [c, o, m]);
+                    return r || n ? a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { icon: a.createElement(q.default, null), size: "small", style: dt.button, type: "secondaryFilled" }, ot), a.createElement(W.ZP, { link: `/i/communities/${t}/search/?q=(from:${l})`, size: "small", style: dt.button, type: "primaryOutlined" }, mt)) : a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { onPress: i, size: "small", style: dt.button, type: "primaryOutlined" }, at), a.createElement(W.ZP, { link: `/i/communities/${t}/search/?q=(from:${l})`, size: "small", style: dt.button, type: "primaryOutlined" }, mt));
                 },
                 st = (e) => {
-                    const { communityId: t, isAlreadyReverted: n, isRevertLog: r, logIdentifier: o, onRevertError: m, userId: l, userScreenName: c } = e,
-                        [i] = G()(ct),
-                        s = a.useCallback(() => {
-                            i({ variables: { communityId: t, userId: l, logIdentifier: o }, onError: m });
-                        }, [i, t, l, o, m]);
-                    return r || n ? a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { icon: a.createElement(q.default, null), size: "small", style: dt.button, type: "secondaryFilled" }, rt), a.createElement(W.ZP, { link: `/i/communities/${t}/search/?q=(from:${c})`, size: "small", style: dt.button, type: "primaryOutlined" }, mt)) : a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { onPress: s, size: "small", style: dt.button, type: "primaryOutlined" }, nt));
+                    const { communityId: t, isAlreadyReverted: n, isRevertLog: r, logIdentifier: o, onRevertError: m, userScreenName: l } = e,
+                        [c] = G()(ct),
+                        i = a.useCallback(() => {
+                            c({ variables: { logIdentifier: o }, onError: m });
+                        }, [c, o, m]);
+                    return r || n ? a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { icon: a.createElement(q.default, null), size: "small", style: dt.button, type: "secondaryFilled" }, rt), a.createElement(W.ZP, { link: `/i/communities/${t}/search/?q=(from:${l})`, size: "small", style: dt.button, type: "primaryOutlined" }, mt)) : a.createElement(k.Z, { style: dt.buttons }, a.createElement(W.ZP, { onPress: i, size: "small", style: dt.button, type: "primaryOutlined" }, nt));
                 },
                 ut = (e) => {
                     const { communityId: t, userScreenName: n } = e;
@@ -963,4 +963,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-ef6409a7.f9c04e2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-ef6409a7.e030d86a.js.map

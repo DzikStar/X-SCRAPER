@@ -57,13 +57,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: r, badgePip: s, children: i, color: n, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: h, isWebRedesign: g, retainScrollPosition: C, style: x, to: R } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: r, badgePip: s, children: i, color: n, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: h, isWebRedesign: g, retainScrollPosition: C, style: R, to: x } = this.props,
                         { location: T } = this.state,
-                        P = R ? this._getMemoizedLink(R, C) : void 0,
-                        w = c ? c(R) : T?.pathname === P?.pathname,
+                        P = x ? this._getMemoizedLink(x, C) : void 0,
+                        w = c ? c(x) : T?.pathname === P?.pathname,
                         k = y.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? _.pillHoverStyle.backgroundColor : void 0 }),
                         E = g ? "medium" : w ? "bold" : "medium";
-                    return a.createElement(b.Z, { "aria-label": t, "aria-selected": w, focusable: !!w, interactiveStyles: k, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [_.pillStyle] : [_.link]), ...(p && w ? [_.pillActiveStyle] : []), d ? (p ? _.compactPill : _.compactLink) : null, h ? _.roundedRect : null, x], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && _.flexGrow }, a.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [_.text, { color: this._getTextColor(w, c, g, p) }, d && _.compactText, g && t && _.focusedText, p && _.pillTextStyle, p && w && _.pillActiveTextStyle, p && c && _.pillHoverTextStyle], weight: E }, e && a.createElement(e, { style: _.icon }), i, g || p ? null : a.createElement(l.Z, { style: w && [_.border, { backgroundColor: o.default.theme.colors[n] }] })), r ? a.createElement(m.Z, { count: r, standalone: !0, style: [_.badge, r >= 10 && _.multiDigitBadge, r >= 20 && _.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: f, withBorder: !1 }) : s ? a.createElement(m.Z, { pip: !0, standalone: !0, style: _.badgePip, textColor: "red500", unreadCountLabel: S, withBorder: !1 }) : null));
+                    return a.createElement(b.Z, { "aria-label": t, "aria-selected": w, focusable: !!w, interactiveStyles: k, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [_.pillStyle] : [_.link]), ...(p && w ? [_.pillActiveStyle] : []), d ? (p ? _.compactPill : _.compactLink) : null, h ? _.roundedRect : null, R], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => a.createElement(l.Z, { style: p && _.flexGrow }, a.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [_.text, { color: this._getTextColor(w, c, g, p) }, d && _.compactText, g && t && _.focusedText, p && _.pillTextStyle, p && w && _.pillActiveTextStyle, p && c && _.pillHoverTextStyle], weight: E }, e && a.createElement(e, { style: _.icon }), i, g || p ? null : a.createElement(l.Z, { style: w && [_.border, { backgroundColor: o.default.theme.colors[n] }] })), r ? a.createElement(m.Z, { count: r, standalone: !0, style: [_.badge, r >= 10 && _.multiDigitBadge, r >= 20 && _.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: f, withBorder: !1 }) : s ? a.createElement(m.Z, { pip: !0, standalone: !0, style: _.badgePip, textColor: "red500", unreadCountLabel: S, withBorder: !1 }) : null));
                 }
             }
             (C.contextType = g.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -90,8 +90,8 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                x = C,
-                R = o.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                R = C,
+                x = o.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 T = ({ alignFirstItem: e, "aria-label": t, isCompact: r, isPillLink: o, isRoundedRect: l, links: c, style: d, visibleItemIndex: p }) => {
                     const h = c
                             .filter(Boolean)
@@ -102,12 +102,12 @@
                         g = a.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: i, ...n }, c) => {
-                                    const d = m ? [R.linkRedesign, 0 === c && R.firstLinkRedesign, e && 0 === c && R.withNoPaddingStart] : void 0;
-                                    return a.createElement(x, (0, s.Z)({ viewType: i }, n, { isCompact: r, isPillLink: o, isRoundedRect: l, isWebRedesign: m, style: d }), t);
+                                    const d = m ? [x.linkRedesign, 0 === c && x.firstLinkRedesign, e && 0 === c && x.withNoPaddingStart] : void 0;
+                                    return a.createElement(R, (0, s.Z)({ viewType: i }, n, { isCompact: r, isPillLink: o, isRoundedRect: l, isWebRedesign: m, style: d }), t);
                                 }),
                             [e, r, o, l, m, c],
                         );
-                    return a.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: o && R.gap, childrenStyle: !m && R.flexGrow, key: h, style: [o ? null : R.segmentedControl, m && R.leftAligned, d], visibleItemIndex: p }, g);
+                    return a.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: o && x.gap, childrenStyle: !m && x.flexGrow, key: h, style: [o ? null : x.segmentedControl, m && x.leftAligned, d], visibleItemIndex: p }, g);
                 };
         },
         738584: (e, t, r) => {
@@ -176,9 +176,9 @@
                 }
                 render() {
                     const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: i } = this.state,
-                        { additionalBadges: o, aspectRatio: d, basePlayerClass: p, children: h, includeDisputeLinkInCopyrightErrorMessage: u, isFullScreen: y, objectFitVideo: b, onApiReady: f, onScroll: S, onStateUpdate: v, playerId: C, size: _, ...x } = this.props,
-                        R = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
-                        T = { ...R, playerState: i };
+                        { additionalBadges: o, aspectRatio: d, basePlayerClass: p, children: h, includeDisputeLinkInCopyrightErrorMessage: u, isFullScreen: y, objectFitVideo: b, onApiReady: f, onScroll: S, onStateUpdate: v, playerId: C, size: _, ...R } = this.props,
+                        x = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
+                        T = { ...x, playerState: i };
                     return a.createElement(
                         n.Z,
                         { isFullScreen: y, onScroll: S, ratio: d, style: [g.root, g[_]] },
@@ -189,8 +189,8 @@
                                   { value: T },
                                   a.createElement(
                                       m.PeriodicContext.Provider,
-                                      { value: R },
-                                      a.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => a.createElement(p, (0, s.Z)({}, x, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: b }, setPlayerApi: this._handlePlayerApi(e) }))),
+                                      { value: x },
+                                      a.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => a.createElement(p, (0, s.Z)({}, R, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: b }, setPlayerApi: this._handlePlayerApi(e) }))),
                                   ),
                               ),
                     );
@@ -299,8 +299,8 @@
                 v = r(868634),
                 C = r(224162);
             const _ = "decrease",
-                x = "increase",
-                R = "left",
+                R = "increase",
+                x = "left",
                 T = "right";
             var P = r(731708),
                 w = r(879891);
@@ -372,8 +372,8 @@
             const B = f().a394f905,
                 I = f().f42c0c80,
                 z = f().i667afe8,
-                V = f().c0bdd345;
-            class F extends s.Component {
+                F = f().c0bdd345;
+            class L extends s.Component {
                 constructor(...e) {
                     super(...e),
                         (this._panResponders = y.Z.create({ onStartShouldSetPanResponder: () => !0, onMoveShouldSetPanResponder: () => !0, onPanResponderGrant: () => this.props.onMoveStart(this.props.side), onPanResponderMove: (e, { dx: t }) => this.props.onMoveChange(t, this.props.side), onPanResponderRelease: (e, { dx: t }) => this.props.onMoveEnd(t, this.props.side), onPanResponderTerminate: (e, { dx: t }) => this.props.onMoveEnd(t, this.props.side), onPanResponderTerminationRequest: () => !0 })),
@@ -384,7 +384,7 @@
                                 i = s === M.Z.ArrowDown || s === M.Z.ArrowLeft;
                             if (a || i) {
                                 e.preventDefault();
-                                r(a ? x : _, t);
+                                r(a ? R : _, t);
                             }
                         }),
                         (this._handleOnKeyUp = (e) => {
@@ -395,17 +395,17 @@
                         (this._generateBorderStyles = (e) => {
                             const { side: t } = this.props,
                                 r = "rtl" === e;
-                            return t === R ? (r ? H.rightScrubberRadius : H.leftScrubberRadius) : t === T ? (r ? H.leftScrubberRadius : H.rightScrubberRadius) : void 0;
+                            return t === x ? (r ? V.rightScrubberRadius : V.leftScrubberRadius) : t === T ? (r ? V.leftScrubberRadius : V.rightScrubberRadius) : void 0;
                         });
                 }
                 render() {
                     const { currentValue: e, maxValue: t, minValue: r, side: i, style: n } = this.props;
-                    return s.createElement(C.ZP.Consumer, null, ({ direction: o }) => s.createElement(c.Z, (0, g.Z)({ "aria-label": i === R ? z : I, "aria-valuemax": parseFloat(V(t / 1e3)), "aria-valuemin": parseFloat(V(r / 1e3)), "aria-valuenow": parseFloat(V(e / 1e3)), "aria-valuetext": B({ seconds: V(e / 1e3) }), focusable: !0, interactiveStyles: l.Z.generate({ backgroundColor: p.default.theme.colors.primary, color: p.default.theme.colors.primary, customFocusBackgroundColor: p.default.theme.colors.primary, customHoverBackgroundColor: p.default.theme.colors.primary, customPressedBackgroundColor: p.default.theme.colors.primary, insetFocusRing: !0 }), onKeyDown: (e) => this._handleOnKeyDown(e, i), onKeyUp: (e) => this._handleOnKeyUp(e), role: "adjustable", style: [H.root, this._generateBorderStyles(o), n] }, (0, W.dW)(this._panResponders.panHandlers)), ({ isFocused: e, isHovered: t, isPressed: r }) => s.createElement(s.Fragment, null, s.createElement(a.Z, { style: [H.trimmerScrubberGrips, (e || t || r) && H.trimmerScrubberGripsOpacity] }), s.createElement(a.Z, { style: [H.trimmerScrubberGrips, (e || t || r) && H.trimmerScrubberGripsOpacity] }))));
+                    return s.createElement(C.ZP.Consumer, null, ({ direction: o }) => s.createElement(c.Z, (0, g.Z)({ "aria-label": i === x ? z : I, "aria-valuemax": parseFloat(F(t / 1e3)), "aria-valuemin": parseFloat(F(r / 1e3)), "aria-valuenow": parseFloat(F(e / 1e3)), "aria-valuetext": B({ seconds: F(e / 1e3) }), focusable: !0, interactiveStyles: l.Z.generate({ backgroundColor: p.default.theme.colors.primary, color: p.default.theme.colors.primary, customFocusBackgroundColor: p.default.theme.colors.primary, customHoverBackgroundColor: p.default.theme.colors.primary, customPressedBackgroundColor: p.default.theme.colors.primary, insetFocusRing: !0 }), onKeyDown: (e) => this._handleOnKeyDown(e, i), onKeyUp: (e) => this._handleOnKeyUp(e), role: "adjustable", style: [V.root, this._generateBorderStyles(o), n] }, (0, W.dW)(this._panResponders.panHandlers)), ({ isFocused: e, isHovered: t, isPressed: r }) => s.createElement(s.Fragment, null, s.createElement(a.Z, { style: [V.trimmerScrubberGrips, (e || t || r) && V.trimmerScrubberGripsOpacity] }), s.createElement(a.Z, { style: [V.trimmerScrubberGrips, (e || t || r) && V.trimmerScrubberGripsOpacity] }))));
                 }
             }
-            const H = p.default.create((e) => ({ root: { backgroundColor: e.colors.primary, cursor: "grab", flexDirection: "row", height: e.spaces.space48, justifyContent: "space-between", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space12, width: `calc(${e.spaces.space4} * 2 + ${e.spaces.space2} * 3)` }, leftScrubberRadius: { borderBottomStartRadius: e.borderRadii.small, borderTopStartRadius: e.borderRadii.small }, rightScrubberRadius: { borderBottomEndRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, trimmerScrubberGrips: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, height: "100%", width: e.spaces.space2 }, trimmerScrubberGripsOpacity: { opacity: 0.8 } })),
-                L = F,
-                G = f().af2a65d9,
+            const V = p.default.create((e) => ({ root: { backgroundColor: e.colors.primary, cursor: "grab", flexDirection: "row", height: e.spaces.space48, justifyContent: "space-between", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space12, width: `calc(${e.spaces.space4} * 2 + ${e.spaces.space2} * 3)` }, leftScrubberRadius: { borderBottomStartRadius: e.borderRadii.small, borderTopStartRadius: e.borderRadii.small }, rightScrubberRadius: { borderBottomEndRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, trimmerScrubberGrips: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, height: "100%", width: e.spaces.space2 }, trimmerScrubberGripsOpacity: { opacity: 0.8 } })),
+                G = L,
+                H = f().af2a65d9,
                 j = f().d46781af,
                 $ = f().e8733ed9,
                 U = f().j3d49e93,
@@ -429,7 +429,7 @@
                         (this._getTrimmerScrubberWidth = () => 2 * p.default.theme.spacesPx.space4 + 3 * p.default.theme.spacesPx.space2),
                         (this._handleKeyDown = (e, t) => {
                             const { trimmerWidth: r } = this.state;
-                            1 === this._keyPressValueDelta && this._handlePanResponderGrant(t), (this._keyPressAccumulatedDistance += this._keyPressValueDelta * (e === x ? 1 : -1)), this._handlePanResponderChange(this._keyPressAccumulatedDistance, t);
+                            1 === this._keyPressValueDelta && this._handlePanResponderGrant(t), (this._keyPressAccumulatedDistance += this._keyPressValueDelta * (e === R ? 1 : -1)), this._handlePanResponderChange(this._keyPressAccumulatedDistance, t);
                             const s = 0.05 * r;
                             this._keyPressValueDelta = Math.min(1.4 * this._keyPressValueDelta, s);
                         }),
@@ -447,7 +447,7 @@
                         }),
                         (this._handlePanResponderGrant = (e) => {
                             const { endTime: t, startTime: r } = this.props;
-                            (this._baseTime = e === R ? r : t), this.setState({ isActive: !0 });
+                            (this._baseTime = e === x ? r : t), this.setState({ isActive: !0 });
                         }),
                         (this._renderTimestampLabel = () => {
                             const { isActive: e } = this.state,
@@ -455,7 +455,7 @@
                                 n = "rtl" === this._languageDirection,
                                 o = n ? "marginEnd" : "marginStart",
                                 l = n ? "marginStart" : "marginEnd";
-                            return s.createElement(a.Z, { style: [N.labelWrapper, { [o]: O(i, t), [l]: O(t - r, t), width: O(r - i, t) }] }, s.createElement(v.ZP, { background: "maskColor", style: [N.label, !e && N.visibilityHidden] }, G({ timestamp: this._generateTimestampLabelString() })));
+                            return s.createElement(a.Z, { style: [N.labelWrapper, { [o]: O(i, t), [l]: O(t - r, t), width: O(r - i, t) }] }, s.createElement(v.ZP, { background: "maskColor", style: [N.label, !e && N.visibilityHidden] }, H({ timestamp: this._generateTimestampLabelString() })));
                         }),
                         (this._setRootRef = (e) => {
                             e && (this._removeTouchMoveToScrollListener = (0, S.O)(e, this._handleTouchMoveToScroll, !1));
@@ -475,9 +475,9 @@
                             const { duration: r, endTime: s, onScrub: a, startTime: i } = this.props,
                                 n = this._baseTime + this._scaleDistanceByTrimmerWidth(e),
                                 o = 1e3;
-                            if (t === R) {
+                            if (t === x) {
                                 let e = n;
-                                n <= 0 ? (e = 0) : s - o <= n && (e = s - o), a(R, e);
+                                n <= 0 ? (e = 0) : s - o <= n && (e = s - o), a(x, e);
                             }
                             if (t === T) {
                                 let e = n;
@@ -497,7 +497,7 @@
                         const d = "rtl" === this._languageDirection,
                             p = d ? "marginEnd" : "marginStart",
                             h = d ? "marginStart" : "marginEnd";
-                        return s.createElement(a.Z, (0, g.Z)({ ref: this._setRootRef, style: [N.root, n && N.cursorGrab] }, this._panResponderTermination.panHandlers), this._renderTimestampLabel(), s.createElement(a.Z, { onLayout: this._handleLayout, style: N.trimmerWrapper }, s.createElement(a.Z, { style: N.intervalsContainer }, s.createElement(D, { duration: e, trimmerWidth: o })), s.createElement(s.Fragment, null, s.createElement(a.Z, { style: [N.discardArea, N.transition, { width: O(i, e) }] }), s.createElement(a.Z, { style: N.keepArea }, s.createElement(L, { currentValue: i, maxValue: t, minValue: 0, onKeyDown: this._handleKeyDown, onKeyUp: this._handleKeyUp, onMoveChange: this._handlePanResponderChange, onMoveEnd: this._handlePanResponderEnd, onMoveStart: this._handlePanResponderGrant, side: R, style: [N.trimmerScrubber, { [p]: `-${l}px` }] }), s.createElement(a.Z, { style: N.keepAreaCenter }, n ? null : s.createElement(a.Z, { style: [N.playBarArea, N.transition, { width: O(r, t - i) }] })), s.createElement(L, { currentValue: t, maxValue: e, minValue: i, onKeyDown: this._handleKeyDown, onKeyUp: this._handleKeyUp, onMoveChange: this._handlePanResponderChange, onMoveEnd: this._handlePanResponderEnd, onMoveStart: this._handlePanResponderGrant, side: T, style: [N.trimmerScrubber, { [h]: `-${l}px` }] })), s.createElement(a.Z, { style: [N.discardArea, N.transition, { width: `calc(100% - ${O(t, e)})` }] }))));
+                        return s.createElement(a.Z, (0, g.Z)({ ref: this._setRootRef, style: [N.root, n && N.cursorGrab] }, this._panResponderTermination.panHandlers), this._renderTimestampLabel(), s.createElement(a.Z, { onLayout: this._handleLayout, style: N.trimmerWrapper }, s.createElement(a.Z, { style: N.intervalsContainer }, s.createElement(D, { duration: e, trimmerWidth: o })), s.createElement(s.Fragment, null, s.createElement(a.Z, { style: [N.discardArea, N.transition, { width: O(i, e) }] }), s.createElement(a.Z, { style: N.keepArea }, s.createElement(G, { currentValue: i, maxValue: t, minValue: 0, onKeyDown: this._handleKeyDown, onKeyUp: this._handleKeyUp, onMoveChange: this._handlePanResponderChange, onMoveEnd: this._handlePanResponderEnd, onMoveStart: this._handlePanResponderGrant, side: x, style: [N.trimmerScrubber, { [p]: `-${l}px` }] }), s.createElement(a.Z, { style: N.keepAreaCenter }, n ? null : s.createElement(a.Z, { style: [N.playBarArea, N.transition, { width: O(r, t - i) }] })), s.createElement(G, { currentValue: t, maxValue: e, minValue: i, onKeyDown: this._handleKeyDown, onKeyUp: this._handleKeyUp, onMoveChange: this._handlePanResponderChange, onMoveEnd: this._handlePanResponderEnd, onMoveStart: this._handlePanResponderGrant, side: T, style: [N.trimmerScrubber, { [h]: `-${l}px` }] })), s.createElement(a.Z, { style: [N.discardArea, N.transition, { width: `calc(100% - ${O(t, e)})` }] }))));
                     });
                 }
             }
@@ -514,7 +514,7 @@
                                 {
                                     video: { duration: i },
                                 } = this.props,
-                                n = t === R;
+                                n = t === x;
                             if (e) {
                                 const t = n ? r : a,
                                     o = n ? s : r;
@@ -581,23 +581,10 @@
             const Q = p.default.create((e) => ({ root: { flex: 1 }, overlay: { ...p.default.absoluteFillObject, alignItems: "center", justifyContent: "center" }, video: { alignItems: "center", flex: 1, justifyContent: "center", width: "100%" }, videoContainer: { alignItems: "center", backgroundColor: e.colors.gray0, flex: 1, padding: e.spaces.space20, width: "100%" } })),
                 X = Y;
         },
-        452693: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var s = r(202784),
-                a = r(890601),
-                i = r(783427),
-                n = r(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const l = o;
-        },
         614425: (e, t, r) => {
             r.d(t, { Y7: () => s });
             const s = r(795897).default;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-bc6ccf4c.5bf92d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-bc6ccf4c.3edfbe7a.js.map

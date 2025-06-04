@@ -26,7 +26,7 @@
                 S = n(71620),
                 C = n(668214),
                 v = n(122743),
-                w = n(215929);
+                w = n(691213);
             const L = (0, C.Z)()
                     .propsFromState(() => ({ userClaimsFetchStatus: w.uD }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("APPLICATIONS"), clearConversations: v.H }))
@@ -316,4 +316,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.df81332a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-32bb1570.9f0928da.js.map

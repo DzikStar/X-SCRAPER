@@ -656,7 +656,7 @@
                 b = r(125363),
                 w = r(116868),
                 E = r(668214),
-                P = r(215929);
+                P = r(691213);
             const v = (0, E.Z)()
                     .propsFromActions(() => ({ fetchUserClaims: P.rS }))
                     .withAnalytics({ page: "premium", section: "registering" }),
@@ -781,4 +781,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.cbdfef2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.94344a4a.js.map
